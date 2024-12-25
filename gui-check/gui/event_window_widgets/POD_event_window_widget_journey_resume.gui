@@ -1,0 +1,48 @@
+
+scrollbox = {
+	name = "POD_event_window_widget_journey_resume"
+	layoutpolicy_vertical = expanding
+	layoutpolicy_horizontal = expanding
+	size = { 0 250 }
+
+	# blockoverride "scrollbox_background" {}
+	# blockoverride "scrollbox_background_fade" {}
+	# blockoverride "scrollbox_margins" {}
+
+	blockoverride "scrollbox_content" {
+		vbox = {
+			name = "resumable_journeys"
+			datamodel = "[GetPlayer.MakeScope.GetList('paused_journeys')]"
+			layoutpolicy_horizontal = expanding
+			spacing = 8
+			#bottomtotop = yes
+
+			item = {
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					visible = "[StoryGuiIsValid('POD_journey_is_travel_ready')]"
+					
+					datamodel = "[EventWindow.AccessEventWindowData.GetOptions]"
+					
+					item = {
+						button_journey_entry = {
+							layoutpolicy_horizontal = expanding
+
+							blockoverride "totalprogress" {}
+							
+							enabled = "[StoryGuiIsValid('POD_journey_requirements')]"
+							
+							onclick = "[StoryGuiExecute('POD_resume_travel_ready_journey')]"
+							# Close event window
+							onclick = "[EventOption.Select]"
+							
+							clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_start_game"
+							
+							tooltip = "POD_travel_ready_journey_GUI_tooltip"
+						}
+					}
+				}
+			}
+		}
+	}
+}

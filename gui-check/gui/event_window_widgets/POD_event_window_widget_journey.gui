@@ -1,0 +1,188 @@
+
+vbox = {
+	name = "POD_event_window_widget_journey"
+	layoutpolicy_horizontal = expanding
+	margin_bottom = 26 # no idea why the spacing got messed up after RTP
+
+	state = {
+		name = init
+		trigger_on_create = yes
+		# Set coterie status
+		on_start = "[PlayerGuiExecute('POD_set_coterie_status_sgui')]"
+		# Generic ending SGUI
+		on_start = "[PlayerGuiExecute('POD_journey_on_end')]"
+		# Select the right SGUI and call it
+		on_start = "[PlayerGuiExecute( Concatenate( PlayerJourneyID, '_on_end' ) )]"
+	}
+	
+	# Default Event Widget (any Journey besides hunt_in_capital)
+	vbox = {
+		margin_left = 64
+		margin_right = 64
+		#margin_bottom = 36
+		margin_bottom = 24
+		layoutpolicy_horizontal = expanding
+		
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			visible = "[GetPlayer.MakeScope.Var('current_journey').Var('destination').IsSet]"
+			
+			button_normal = {
+				name = "journey_icon_button"
+				onclick = "[GetVariableSystem.Set('pod_sidebar', 'journey')]"
+				size = { 45 45 }
+				
+				pod_journey_icon = {
+					datacontext = "[GetPlayer.MakeScope.Var('current_journey')]"
+					
+					tooltip = "BOTTOMBAR_JOURNEY_TOOLTIP"
+				}
+			}
+			
+			widget = { min_width = 8 }
+			
+			button_standard = {
+				name = "journey_title_button"
+				datacontext = "[PlayerJourneyDestination.GetCounty.GetTitle]"
+				
+				layoutpolicy_horizontal = expanding
+				size = { 0 50 }
+				
+				onclick = "[DefaultOnCoatOfArmsClick(Title.GetID)]"
+				tooltipwidget = { using = LandedTitleTooltip }
+				using = State_Title_MouseEntry
+
+				hbox = {
+					margin_left = 16
+					#margin_top = 3
+					#expand = {}
+					
+					coa_title_tiny = {
+					}
+
+					text_single = {
+						margin_left = 8
+						#margin_top = 4
+						margin_bottom = 3
+						default_format = "#V"
+						text = "[PlayerJourneyDestination.GetCounty.GetTitle.GetNameNoTooltip]"
+					}
+					
+					expand = {}
+				}
+			}
+		}
+		
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			margin_top = 8
+			
+			expand = {}
+			
+			text_multi = {
+				visible = "[Not( PlayerGuiIsValid('POD_can_travel_with_coterie_sgui') )]"
+				align = top|hcenter
+				autoresize = yes
+				maximumsize = { 360 -1 }
+				layoutpolicy_horizontal = expanding
+				text = "[GetPlayer.Custom('PODCoterieTravelStatusGUI')]"
+			}
+			
+			text_single = {
+				visible = "[PlayerGuiIsValid('POD_can_travel_with_coterie_sgui')]"
+				margin_bottom = 5
+				text = "[GetPlayer.Custom('PODCoterieTravelStatusGUI')]"
+			}
+			
+			widget = {
+				visible = "[PlayerGuiIsValid('POD_can_travel_with_coterie_sgui')]"
+				min_width = 6
+			}
+			
+			button_checkbox = {
+				visible = "[PlayerGuiIsValid('POD_can_travel_with_coterie_sgui')]"
+				size = { 24 24 }
+				checked = "[GetPlayer.MakeScope.Var('traveling_with_coterie').IsSet]"
+				onclick = "[PlayerGuiExecute('POD_toggle_coterie_travel')]"
+				tooltip = "POD_journey_coterie_checkbox_tt"
+			}
+			
+			expand = {}
+		}
+
+		widget = {
+			layoutpolicy_horizontal = expanding
+			min_height = 24
+
+			hbox = {
+				margin_top = 8
+				visible = "[And( PlayerGuiIsValid('POD_journey_can_move_camp_sgui'), PlayerGuiIsValid('POD_can_start_travel_phase_sgui') )]"
+				layoutpolicy_horizontal = expanding
+	
+				expand = {}
+	
+				text_single = {
+					#visible = "[And( PlayerGuiIsValid('POD_journey_can_move_camp_sgui'), PlayerGuiIsValid('POD_can_start_travel_phase_sgui') )]"
+					margin_bottom = 5
+					text = "POD_journey_move_camp"
+				}
+	
+				widget = {
+					#min_height = 24
+					min_width = 6
+				}
+				
+				button_checkbox = {
+					#visible = "[And( PlayerGuiIsValid('POD_journey_can_move_camp_sgui'), PlayerGuiIsValid('POD_can_start_travel_phase_sgui') )]"
+					size = { 24 24 }
+					checked = "[GetPlayer.MakeScope.Var('journey_moves_camp').IsSet]"
+					onclick = "[PlayerGuiExecute('POD_toggle_journey_moving_camp')]"
+					tooltip = "POD_journey_move_camp_tt"
+				}
+			
+				expand = {}
+			}
+		}
+	}
+	
+	# Fake event button (generic events)
+	pod_journey_travel_phase_button = {
+		visible = "[Or( IsManuallyPaused, Not( PlayerGuiIsValid('POD_should_pause_on_travel_phase_sgui') ) )]"
+	}
+	pod_journey_travel_phase_button = {
+		visible = "[And( Not(IsManuallyPaused), PlayerGuiIsValid('POD_should_pause_on_travel_phase_sgui') )]"
+		blockoverride "pause_onclick" { onclick = "[OnPause]" }
+	}
+}
+
+types PODJourneyTypes
+{
+	type pod_journey_travel_phase_button = vbox
+	{
+		layoutpolicy_horizontal = expanding
+		margin_bottom = 1
+		
+		datamodel = "[EventWindow.AccessEventWindowData.GetOptions]"
+		
+		item = {
+			pod_fake_event_button = {
+				name = "journey_fake_confirm_button"
+				layoutpolicy_horizontal = expanding
+				
+				enabled = "[PlayerGuiIsValid('POD_can_start_travel_phase_sgui')]"
+				
+				onclick = "[GetVariableSystem.Clear('pod_sidebar')]"
+				onclick = "[PlayerGuiExecute(Concatenate(PlayerJourneyID,'_travel_phase'))]"
+				onclick = "[EventOption.Select]"
+				block "pause_onclick" {}
+				
+				blockoverride "button_text" {
+					text = "[Localize(Concatenate(PlayerJourneyID,'_planning_confirm'))]"
+				}
+				blockoverride "button_tooltip" {
+					tooltip = "POD_journey_maintenance.1.option.a.tt"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+widget = {
+	name = "resource_bars_hud"
+	layer = bottom
+	visible = "[And( And( Not( IsPauseMenuShown ), IsDefaultGUIMode ), GetPlayer.IsValid)]"
+	size = { 100% 100% }
+	
+	flowcontainer = {
+		#visible = "[Not(GetVariableSystem.Exists( 'hide_bottom_left_HUD'))]"
+		visible = "[IsMapMode('realms')]"
+		
+		parentanchor = bottom|hcenter
+		position = { -66 -8 }
+
+		ignoreinvisible = yes
+		alwaystransparent = no
+
+		vbox = {
+			set_parent_size_to_minimum = yes
+			
+			pod_resource_bar_glamour = {
+				visible = "[PlayerGuiIsShown('glamour_meters_show')]"
+			}
+			
+			pod_resource_bar_pathos = {
+				visible = "[PlayerGuiIsShown('pathos_meters_show')]"
+			}
+			
+			pod_resource_bar_angst = {
+				visible = "[PlayerGuiIsShown('angst_meters_show')]"
+			}
+			
+			pod_resource_bar_sekhem = {
+				visible = "[PlayerGuiIsShown('sekhem_meters_show')]"
+			}
+			
+			pod_resource_bar_resolve = {
+				visible = "[PlayerGuiIsShown('resolve_meters_show')]"
+			}
+			
+			pod_resource_bar_yin = {
+				visible = "[PlayerGuiIsShown('yin_meters_show')]"
+			}
+			
+			pod_resource_bar_yang = {
+				visible = "[PlayerGuiIsShown('yang_meters_show')]"
+			}
+			
+			pod_resource_bar_gnosis = {
+				visible = "[PlayerGuiIsShown('gnosis_meters_show')]"
+			}
+			
+			pod_resource_bar_rage = {
+				visible = "[PlayerGuiIsShown('rage_meters_show')]"
+			}
+			
+			pod_resource_bar_masquerade = {
+				visible = "[PlayerGuiIsShown('masquerade_bar_gui')]"
+			}
+			
+			pod_resource_bar_blood = {
+				visible = "[PlayerGuiIsShown('blood_hunger_show')]"
+			}
+		}
+	}
+}

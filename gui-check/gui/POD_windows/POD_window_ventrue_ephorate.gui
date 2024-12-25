@@ -1,0 +1,275 @@
+window = {
+	name = "ventrue_ephorate"
+	#position = { 0 0 }
+	parentanchor = center
+
+	layer = windows_layer
+	size = { 1500 1060 }
+	
+	#state = {
+	#	name = _show
+	#	using = Animation_FadeIn_Quick
+	#	using = Sound_WindowShow_Standard
+	#}
+	
+	#state = {
+	#	name = _hide
+	#	using = Animation_FadeOut_Quick
+	#	using = Sound_WindowHide_Standard
+	#}
+	using = Window_Background
+	using = Window_Decoration_Spike
+
+	visible = "[GetVariableSystem.Exists( 'ventrue_ephorate_open' )]"
+	
+	background = {	
+	texture = "gfx/interface/illustrations/tremere_council.dds"
+	}
+	
+	vbox = {
+		layoutpolicy_horizontal = expanding
+		#margin_left = 10
+		#margin_bottom = 20
+		#position = { 0 0}
+		#spacer = {
+		#	size = { 0 14 }
+		#}
+		header_pattern_interaction = {
+			layoutpolicy_horizontal = expanding
+			#position = { 0 0 }
+			blockoverride "header_text"
+			{
+				text = ventrue_ephorate_tab_tt
+			}
+			
+			blockoverride "button_close"
+			{
+				onclick = "[GetVariableSystem.Toggle('ventrue_ephorate_open')]"
+			}
+		}
+		hbox = {
+			text_multi = {
+				text = ventrue_ephorate_intro
+				align = center
+				#margin_right = 20
+				using = Font_Size_Small
+				minimumsize = { 1200 -1 }
+				maximumsize = { 1400 -1 }
+				autoresize = yes
+			}			
+		}
+		vbox_character_list = {
+			layoutpolicy_vertical = expanding
+			layoutpolicy_horizontal = expanding
+			max_width = 1440
+
+			blockoverride "sort_buttons" {}
+			blockoverride "character_count" {}
+			blockoverride "scrollbox_margins" {
+				margin_right = 10
+				margin_top = 6
+			}
+			blockoverride "scrollbox_empty_visibility" {}
+
+
+			blockoverride "container_implementation" {
+				dynamicgridbox = {
+					name = "characters_grid"
+
+					datamodel = "[GetGlobalList('ventrue_ephorate_list')]"
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					ignoreinvisible = yes
+					datamodel_wrap = 3
+					flipdirection = yes	
+					#spacing = 10
+					
+					item = {
+					
+						widget = {
+							size = { 480 150 } 
+							#visible = "[Or(GetVariableSystem.Exists( 'web_out_of_range_chars' ),GetScriptedGui('web_of_knives_list_gui_dip_range').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('target', Scope.GetCharacter.MakeScope ).End) )]"
+							datacontext = "[Scope.GetCharacter]"
+							hbox = {
+								layoutpolicy_horizontal = expanding
+								margin_right = 10
+								spacing = 5
+
+								vbox = {
+									margin_left = 10
+									#text_single = {
+									#	text = WoK_target_loc
+									#	
+									#	using = Font_Size_Medium
+									#}
+									portrait_shoulders = {}
+									
+								}
+								
+								vbox = {
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = expanding
+									vbox = {
+										layoutpolicy_horizontal = expanding
+										text_single = {
+											name = "name"
+											layoutpolicy_horizontal = expanding
+											text = "[Character.GetFirstNameNoTooltip|UV]"
+											using = Font_Size_Medium
+											align = nobaseline
+											fontsize_min = 14
+											margin_left = 20
+										}
+
+										text_single = {
+											name = "nick"
+											layoutpolicy_horizontal = expanding
+											text = "[Localize('pod_gui_nick')]"
+											using = Font_Size_Medium
+											align = nobaseline
+											fontsize_min = 14
+											margin_left = 20
+										}
+					
+										text_single = {
+											text = "[Character.Custom('ventrue_ephorate_support')]"		
+											layoutpolicy_horizontal = expanding
+											align = nobaseline
+											using = Font_Size_Medium
+											margin_bottom = -5
+											margin_left = 20
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+
+		
+	}
+
+	hbox = {
+		#layoutpolicy_horizontal = expanding
+		position = { 0 450 }
+		text_single = {
+			text = eternal_senate_gui_loc
+			using = Font_Size_Medium
+			margin_left = -250
+		}									
+		text_single = {
+		    text = "[GetGlobalVariable('support_senate_var').GetValue|0]"		
+			#text = ashen_knights_gui_loc
+			#text = 2
+			using = Font_Size_Big
+			#margin_bottom = -5
+			margin_left = -700
+		}
+		#layoutpolicy_vertical = expanding
+	}
+	
+	hbox = {
+		#layoutpolicy_horizontal = expanding
+		position = { 0 400 }
+		text_single = {
+			text = sinner_rome_gui_loc
+			using = Font_Size_Medium
+			margin_left = -250
+		}									
+		text_single = {
+		    text = "[GetGlobalVariable('support_eternal_var').GetValue|0]"			
+			#text = ashen_knights_gui_loc
+			#text = 2
+			using = Font_Size_Big
+			#margin_bottom = -5
+			margin_left = -700
+		}		
+		#layoutpolicy_vertical = expanding
+	}
+	
+	hbox = {
+		#layoutpolicy_horizontal = expanding
+		position = { 0 350 }
+		text_single = {
+			text = merchant_princes_gui_loc
+			using = Font_Size_Medium
+			margin_left = -250
+		}									
+		text_single = {
+		    text = "[GetGlobalVariable('support_merchants_var').GetValue|0]"		
+			#text = ashen_knights_gui_loc
+			#text = 2
+			using = Font_Size_Big
+			#margin_bottom = -5
+			margin_left = -700
+		}	
+		layoutpolicy_vertical = expanding
+	}
+	
+	hbox = {
+		#layoutpolicy_horizontal = expanding
+		position = { 0 300 }
+		text_single = {
+			text = patricians_gui_loc
+			using = Font_Size_Medium
+			margin_left = -250
+		}									
+		text_single = {
+		    text = "[GetGlobalVariable('support_patricians_var').GetValue|0]"			
+			#text = ashen_knights_gui_loc
+			#text = 2
+			using = Font_Size_Big
+			#margin_bottom = -5
+			margin_left = -700
+		}		
+		layoutpolicy_vertical = expanding
+	}
+
+	hbox = {
+		#layoutpolicy_horizontal = expanding
+		position = { 0 250 }
+		text_single = {
+			text = ashen_knights_gui_loc
+			using = Font_Size_Medium
+			margin_left = -250
+		}									
+		text_single = {
+		    text = "[GetGlobalVariable('support_knights_var').GetValue|0]"					
+			#text = ashen_knights_gui_loc
+			#text = 2
+			using = Font_Size_Big
+			#margin_bottom = -5
+			margin_left = -700
+		}		
+	}
+
+	hbox = {
+		#layoutpolicy_horizontal = expanding
+		position = { 0 310 }
+		margin_left = 460
+		text_single = {
+			text = ephorate_support_gui_loc
+			using = Font_Size_Big
+			minimumsize = { 1200 -1 }
+		}
+	}
+	button_normal = {
+		size = { 345 80 }
+		#parentanchor = left|bottom
+		position = { 475 950 }
+		texture = "gfx/interface/buttons/button_hold_court_bg.dds"
+		text = "[Localize('Learn_Ephorate')]"
+		tooltip = "[Localize('window_learn_ephorate_tooltip')]"
+		#enabled = "[GetScriptedGui('council_session').IsValid(GuiScope.SetRoot(Character.MakeScope).AddScope('player',GetPlayer.MakeScope).End)]"
+		#onclick = "[GetScriptedGui('council_session').Execute(GuiScope.SetRoot(Character.MakeScope).AddScope('player',GetPlayer.MakeScope).End)]"
+		onclick = "[GetScriptedGui('learn_factions_event').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+		alwaystransparent = no
+		layoutpolicy_vertical = expanding
+	}		
+}	
+	
+
+

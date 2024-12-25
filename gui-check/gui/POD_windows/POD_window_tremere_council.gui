@@ -1,0 +1,169 @@
+window = {
+	name = "tremere_council"
+	#position = { 0 0 }
+	parentanchor = center
+
+	layer = windows_layer
+	size = { 1440 800 }
+	
+	#state = {
+	#	name = _show
+	#	using = Animation_FadeIn_Quick
+	#	using = Sound_WindowShow_Standard
+	#}
+	
+	#state = {
+	#	name = _hide
+	#	using = Animation_FadeOut_Quick
+	#	using = Sound_WindowHide_Standard
+	#}
+	using = Window_Background
+	using = Window_Decoration_Spike
+
+	visible = "[GetVariableSystem.Exists( 'tremere_council_open' )]"
+	
+	background = {	
+	texture = "gfx/interface/illustrations/tremere_council.dds"
+	}
+	
+	vbox = {
+		layoutpolicy_horizontal = expanding
+		#margin_left = 10
+		#margin_bottom = 20
+		#position = { 0 0}
+		#spacer = {
+		#	size = { 0 14 }
+		#}
+		header_pattern_interaction = {
+			layoutpolicy_horizontal = expanding
+			max_width = 1440
+			#position = { 0 0 }
+			blockoverride "header_text"
+			{
+				text = tremere_council_tab_tt
+			}
+			
+			blockoverride "button_close"
+			{
+				onclick = "[GetVariableSystem.Toggle('tremere_council_open')]"
+			}
+		}
+		hbox = {
+			text_multi = {
+				text = tremere_council_intro
+				align = center
+				#margin_right = 20
+				using = Font_Size_Medium
+				minimumsize = { 1000 -1 }
+				maximumsize = { 1400 -1 }
+				autoresize = yes
+			}
+		}
+		vbox_character_list = {
+			layoutpolicy_vertical = expanding
+			layoutpolicy_horizontal = expanding
+			max_width = 1440
+			blockoverride "sort_buttons" {}
+			blockoverride "character_count" {}
+			blockoverride "scrollbox_margins" {
+				margin_right = 10
+				margin_top = 6
+			}
+			blockoverride "scrollbox_empty_visibility" {}
+
+			blockoverride "container_implementation" {
+				dynamicgridbox = {
+					name = "characters_grid"
+					datamodel = "[GetGlobalList('tremere_council_list')]"
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					ignoreinvisible = yes
+					datamodel_wrap = 4
+					flipdirection = yes	
+					#spacing = 10
+					item = {
+						widget = {
+							size = { 360 250 } 
+							datacontext = "[Scope.GetCharacter]"
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								margin_right = 10
+								spacing = 5
+								
+								portrait_shoulders = {}
+								
+								text_single = {
+									name = "name"
+									layoutpolicy_horizontal = expanding
+									autoresize = no
+									text = "[Character.GetFirstNameNoTooltip|UV]"
+									using = Font_Size_Medium
+									align = center
+									fontsize_min = 14
+									#margin_bottom = 20
+									#max_width = 400
+									#min_width = 400
+								}
+
+								text_single = {
+									name = "nick"
+									layoutpolicy_horizontal = expanding
+									autoresize = no
+									text = "[Localize('pod_gui_nick')]"
+									using = Font_Size_Medium
+									align = center
+									fontsize_min = 14
+									#margin_bottom = 20
+									#max_width = 400
+									#min_width = 400
+								}
+								
+								text_single = {
+									text = "[Localize('council_influence_loc')] [Character.MakeScope.Var('influence_inner_council').GetValue|0V]"
+									using = Font_Size_Medium
+									#margin_left = 500
+									align = center
+								}	
+							}
+						}
+					}
+				}
+				
+			}
+			
+		}
+	}
+	button_normal = {
+		size = { 345 80 }
+		parentanchor = left|bottom
+		position = { 550 -50 }
+		texture = "gfx/interface/buttons/button_hold_court_bg.dds"
+		text = "[Localize('Council_Session')]"
+		tooltip = "window_council_session_tooltip"
+		datacontext = "[GetScriptedGui( 'council_session' )]"
+		enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+		onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+		alwaystransparent = no
+		layoutpolicy_vertical = expanding
+	}	
+	button_round = {
+		size = { 50 50 }
+		parentanchor = left|bottom
+		position = { 895 -65 }
+		default_format = "#high"
+		datacontext = "[GetScriptedGui('tremere_doctrine_elector_initiate')]"	
+		enabled = "[And(Not(GetPlayer.MakeScope.GetVariable('faith_to_change_doctrine').IsSet), ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End))]"
+		onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"	
+		tooltip = "FAITH_DOCTRINE_CHANGE_WINDOW_TITLE"
+		alwaystransparent = no
+		layoutpolicy_vertical = expanding
+
+		button_change = {
+			alwaystransparent = yes
+			parentanchor = center
+		}
+	}
+}	
+	
+
+

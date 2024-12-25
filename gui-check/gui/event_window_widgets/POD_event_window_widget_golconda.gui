@@ -1,0 +1,38 @@
+
+vbox = {
+	name = "POD_event_window_widget_golconda"
+	layoutpolicy_horizontal = expanding
+	
+	vbox = {
+		visible = "[PlayerGuiIsShown('POD_toggle_golconda')]"
+
+		margin_bottom = 12
+		layoutpolicy_horizontal = expanding
+		
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			
+			tooltip = "golconda_widget_tt"
+			
+			expand = {}
+			
+			text_single = {
+				margin_bottom = 5
+				text = "golconda_widget_desc"
+			}
+			
+			widget = {
+				min_width = 6
+			}
+			
+			button_checkbox = {
+				size = { 24 24 }
+				checked = "[GetPlayer.MakeScope.Var('continue_golconda').IsSet]"
+				onclick = "[PlayerGuiExecute('POD_toggle_golconda')]"
+			}
+			
+			expand = {}
+			
+		}
+	}
+}
