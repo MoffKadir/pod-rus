@@ -1,0 +1,13 @@
+﻿l_russian:
+ POD_custom_nickname.10.t: "Собсвенное прозвище"
+ POD_custom_nickname.10.desc: "Многие обитатели Мира Тьмы известны не только по именам; являетесь ли вы одним из них или вам еще предстоит заслужить такую честь?"
+ POD_custom_nickname.10.a: "Да, позвольте мне выбрать, как меня будут называть"
+ POD_custom_nickname.10.b: "Нет, у меня пока нет прозвища"
+  
+ POD_custom_nickname.100.t: "Собсвенное прозвище"
+ POD_custom_nickname.100.desc: "Необходимо принять важное решение: как бы вы хотели, чтобы вас называли? \n\nЕсли вы примете неверное решение, то вам придется жить с этим очень долго."
+ POD_custom_nickname.100.a: "Отныне меня будут знать как..."
+    #Both of these are needed for the custom nickname to work properly. 
+ nick_POD_custom_nickname1: "[ROOT.Char.GetLocalizedText('POD_custom_nickname_text')]"
+ nick_POD_custom_nickname2: "[CHARACTER.Custom('PODCustomNickname')]"
+ nick_POD_custom_nickname_default: "Упокоенный дух"
