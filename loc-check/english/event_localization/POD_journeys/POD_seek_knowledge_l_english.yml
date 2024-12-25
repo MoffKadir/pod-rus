@@ -1,0 +1,50 @@
+﻿l_english:
+
+ POD_seek_knowledge.2.t: "Meeting the Mentor"
+ POD_seek_knowledge.2.desc.coterie_member: "It turns out I didn't have to look very hard.\n\n[recipient.GetFirstNameNicknamed] already has the knowledge I seek, and as a member of $POD_player_coterie$, [recipient.GetSheHe] is glad to share it with me.\n\nWe spend some time reminiscing about our shared adventures, then the conversation turns to more practical matters."
+ POD_seek_knowledge.2.desc: "After arriving in [ROOT.Var('current_journey').Var('destination').Province.GetCounty.GetTitle.GetNameNoTier], I start making inquiries about the whereabouts of my prospective teacher.\n\n"
+ POD_seek_knowledge.2.desc.local_ruler: "It turns out it's none other than the ruler of the local domain, [recipient.GetNameNicknamed]."
+ POD_seek_knowledge.2.desc.wanderer: "In a dingy inn, I eventually meet the person I was looking for: a wanderer named [recipient.GetFirstName]."
+ POD_seek_knowledge.2.desc.ghoul: "In a run-down tavern at the edge of town, I meet the person I was looking for: an independent [GetTrait('ghoul').GetName(recipient)] named [recipient.GetFirstName]. It seems [recipient.GetSheHe] recently broke free from the blood bond, and is now giving away [recipient.GetHerHis] former master's secrets as a means of revenge."
+ POD_seek_knowledge.2.desc.gargoyle: "In a hidden alleyway at the edge of town, I meet the person I was looking for: a lone [GetTrait('gargoyle').GetName(recipient)] named [recipient.GetFirstName]."
+ POD_seek_knowledge.2.desc.fae: "In an abandoned park at the edge of town, I meet the person I was looking for: a mysterious fae named [recipient.GetFirstName]."
+ POD_seek_knowledge.2.desc.mortal: "In a dingy inn, I eventually meet the person I was looking for: an enigmatic mortal named [recipient.GetFirstName]."
+ POD_seek_knowledge.2.desc.2: "\n\nWe exchange some initial pleasantries, then the conversation turns to more practical matters."
+ POD_seek_knowledge.2.option.a: "I'm ready to learn."
+ POD_seek_knowledge.2.option.a.tt: "You will proceed with learning this new ability."
+ POD_seek_knowledge.2.option.b: "We're ready to learn."
+ POD_seek_knowledge.2.option.b.tt: "Because you're traveling together, the other members of $POD_player_coterie$ will also learn this ability (if they're eligible)."
+
+ POD_seek_knowledge.100.t: "Class Dismissed"
+ POD_seek_knowledge.100.desc: "After a long period of studying and practice, my understanding is finally complete.\n\n"
+ POD_seek_knowledge.100.desc.tutor: "I couldn't have done it without my [GetCourtPositionType('court_tutor_court_position').GetName()], [court_tutor.GetNameNicknamed]."
+ POD_seek_knowledge.100.option.a: "My hard work has paid off."
+
+
+ #############DEMONS LORE 
+
+ POD_demon_lore_learning_events.1.t: "Learning New House Lore" # Lore is no demonic, playble elohim start will all lore
+ POD_demon_lore_learning_events.1.desc: "Lores are the remnants of the divine abilities that demons possessed as Elohim. A Celestial House's Lore is nothing less than the collected secrets of the universe, evocations that encompass the foundations of reality and govern the forces that keep it in motion. Prior to the Fall, each House had its own specific sets of Lore that reflected its duties within the angelic hierarchy. These evocations were considered the heart of each House, and they were guarded jealously as a matter of pragmatism, and many among the Fallen exchanged bits of their Lore with one another to gain whatever advantage they could against their more hidebound foes."
+ POD_demon_lore_learning_events.1.a: "That much closer to my original power."
+
+ learnt_celestials_lore: "Learn Lore of Celestials"
+ learnt_flame_lore: "Learn Lore of Flame"
+ learnt_radiance_lore: "Learn Lore of Radiance"
+ learnt_awakening_lore: "Learn Lore of Awakening"
+ learnt_firmament_lore: "Learn Lore of Firmament"
+ learnt_winds_lore: "Learn Lore of Winds"
+ learnt_earth_lore: "Learn Lore of Earth"
+ learnt_paths_lore: "Learn Lore of Paths"
+ learnt_forge_lore: "Learn Lore of Forge"
+ learnt_light_lore: "Learn Lore of Light"
+ learnt_patterns_lore: "Learn Lore of Patterns"
+ learnt_portals_lore: "Learn Lore of Portals"
+ learnt_longing_lore: "Learn Lore of Longing"
+ learnt_storms_lore: "Learn Lore of Storms"
+ learnt_transfiguration_lore: "Learn Lore of Transfiguration"
+ learnt_beast_lore: "Learn Lore of Beast"
+ learnt_flesh_lore: "Learn Lore of Flesh"
+ learnt_wild_lore: "Learn Lore of Wild"
+ learnt_death_lore: "Learn Lore of Death"
+ learnt_spirit_lore: "Learn Lore of Spirit"
+ learnt_realms_lore: "Learn Lore of Realms"

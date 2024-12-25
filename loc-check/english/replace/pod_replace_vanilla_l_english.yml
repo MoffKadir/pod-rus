@@ -1,0 +1,340 @@
+﻿l_english: 
+ # Remove dynasty from character name localization (fix for "Odin Odin")
+ CHARACTER_FIRST_NAME_AND_DYNASTY: "$NAME$"
+ CHARACTER_FULL_NAME_UNLANDED: "$NAME$"
+ CHARACTER_FIRST_NAME_AND_DYNASTY_NICKNAMED: "$NAME$ '$NICK$'"
+ CHARACTER_FULL_NAME_NICKNAMED_PREFIX: "$NICK$ $TIER$ $NAME$ of $TITLE$"
+ CHARACTER_FULL_NAME_UNLANDED_NICKNAMED: "$NAME$ '$NICK$'"
+ CHARACTER_FULL_NAME_UNLANDED_NICKNAMED_PREFIX: "$NICK$ $NAME$"
+ CHARACTER_FIRST_NAME_AND_DYNASTY_PATRONYM: "$NAME$"
+ CHARACTER_FULL_NAME_UNLANDED_PATRONYM: "$NAME$ $PATRONYM$"
+ CHARACTER_FULL_NAME_NICKNAMED_PATRONYM: "$TIER$ $NAME$ '$NICK$' of $TITLE$"
+ CHARACTER_FULL_NAME_NICKNAMED_PREFIX_PATRONYM: "$NICK$ $TIER$ $NAME$ of $TITLE$"
+ CHARACTER_FULL_NAME_UNLANDED_NICKNAMED_PATRONYM: "$NAME$ '$NICK$'"
+ CHARACTER_FULL_NAME_UNLANDED_NICKNAMED_PREFIX_PATRONYM: "$NICK$ $NAME$"
+
+ # Vanilla fix for crashes when hovering over artifact requirements
+ ARTIFACT_EFFECT_HAS_CAN_BENEFIT: "#S If you fulfill the requirements:#!\n"
+ POD_ARTIFACT_EFFECT_HAS_CAN_BENEFIT: "#L #S Artifact Requirements:#! #weak (see tooltip)#!#!"
+
+ # Vassal obligation nested tooltip
+ VASSAL_CONTRACT_OBLIGATION_LEVEL_EFFECT_TOOLTIP: "$NAME|S$ #weak (see tooltip for details)#!"
+
+ # Replace perks loca
+ planned_cultivation_perk_name: "Worldly"
+ DOMESTIC_AFFAIRS_EFFICIENCY_BONUS: "[domestic_affairs|E] Efficiency: #P +[EmptyScope.ScriptValue('chains_of_loyalty_percentage')|0]%#!\nUnlocks the [buy_artifact_claim_interaction|E]"
+ # Replace religion_core_tenets loca
+ doctrine_parameter_piety_from_feasts_active: "Hosting a [GetActivityType('activity_feast').GetName] or an Elysium earns [piety|E]"
+ # Replace holy order requirement loca
+ I_HAVE_TWO_CASTLE_COUNTY: "You have a [barony|E] that can be leased out as the Holy Order's Headquarters"
+ # Replace Gamerule loca
+ setting_on_empire_obscurity_requirement_desc: "[de_jure|E] [empires|E] will be destroyed unless the holder controls at least 10% of its De Jure [counties|E]."
+ setting_1453_end_date: "2200"
+ setting_1453_end_date_desc: "The game will end in 2200."
+
+ # Replace Court Amenities loca
+ court_food_quality: "Training Grounds"
+ court_food_quality_default: "No Training Grounds"
+ court_food_quality_modest: "Small Training Grounds"
+ court_food_quality_decent: "Decent Training Grounds"
+ court_food_quality_lavish: "Spacious Training Grounds"
+ court_food_quality_exotic: "Grand Training Grounds"
+ court_food_quality_default_desc: "The guards of this court lodge with the servants, being sometimes difficult to distinguish from one another."
+ court_food_quality_modest_desc: "Proper quarters for the court's guards, not much to look at though."
+ court_food_quality_decent_desc: "Proper quarters, and some space for training for the court's guards."
+ court_food_quality_lavish_desc: "Proper quarters and solid training grounds. Many local champions come here to train."
+ court_food_quality_exotic_desc: "Renowned throughout the land, those military quarters are the dream of every aspiring champion."
+ # Age hack
+ CHARACTER_DEAD_TOOLTIP_DATE_INFO: "[Character.GetDeathDate.GetString|V] #weak at age#! #V [Character.MakeScope.ScriptValue('true_age')]#! (born [SelectLocalization( Or(LessThanOrEqualTo_int32( Character.GetDeathDate.GetYear, '(int32)150' ), GreaterThanOrEqualTo_int32( Character.GetAge, '(int32)999' )), 'TrueBirthDate', 'DefaultBirthDate')])"
+ TrueBirthDate: "[Character.GetBirthDate.GetStringShortNoYear|V], [Character.MakeScope.ScriptValue('true_birth_age')|V0]"
+ DefaultBirthDate: "[Character.GetBirthDate.GetString|V]"
+ SteleCommemoratesAncestors_Gluttonous: "$SteleCommemoratesAncestors_Intro$. Not once in [second.MakeScope.Var('stele_container').Char.MakeScope.ScriptValue('true_age')] did [second.MakeScope.Var('stele_container').Char.GetSheHe] skip a meal. $SteleCommemoratesCarver$."
+ CHARACTER_TT_NAME_AGE: "[Character.GetUINameNotMeNoTooltip]#medium , [Character.MakeScope.ScriptValue('true_age')|0]#!"
+ CHARACTER_TT_AGE: "[Character.MakeScope.ScriptValue('true_age')|0] years old"
+ LEGACY_NAME: "[LegacyItem.GetCharacter.GetShortUINameNotMeNoTooltip], [SelectLocalization(EqualTo_int32(LegacyItem.GetCharacter.GetAge, '(int32)0'), 'POD_num0', 'LEGACY_NAME_TRUEAGE')]" # SELECT LOCALIZATION NECESARY DUE TO VANILLA BUG
+ LEGACY_NAME_TRUEAGE: "[LegacyItem.GetCharacter.MakeScope.ScriptValue('true_age')]"
+ OUTLINER_PINNED_CHARACTER: "[Character.GetShortUINameNotMeNoTooltip]#medium , [Character.MakeScope.ScriptValue('true_age')]#!"
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_1: "[ROOT.Char.GetFullNameNoTooltip] has given up the ghost at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_2: "[ROOT.Char.GetFullNameNoTooltip] has abandoned [ROOT.Char.GetHerHis] mortal coil at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_3: "[ROOT.Char.GetFullNameNoTooltip] has passed on at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_4: "[ROOT.Char.GetFullNameNoTooltip] has left this world at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_5: "[ROOT.Char.GetFullNameNoTooltip] has passed on at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age and [ROOT.Char.Custom('GetAfterLifeDestination')]."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_PIOUS: "[ROOT.Char.GetFullNamePossessiveNoTooltip] spirit has flown to [ROOT.Char.GetFaith.PositiveAfterLife] at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_WICKED: "[ROOT.Char.GetFullNamePossessiveNoTooltip] soul has finally been cast to [ROOT.Char.GetFaith.NegativeAfterLife] at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_WOUNDED: "[ROOT.Char.GetFullNameNoTooltip] has finally found peace at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_CHRISTIANITY_1: "[ROOT.Char.GetFullNameNoTooltip] has found peace in Christ's embrace at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_CHRISTIANITY_2: "[ROOT.Char.GetFullNameNoTooltip] rests in the arms of the Lord at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_ISLAM_1: "[ROOT.Char.GetFullNameNoTooltip] has left the transient house at the call of the True One at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_ISLAM_2: "[ROOT.Char.GetFullNameNoTooltip] has abandoned this transient world​ and flown to [ROOT.Char.GetFaith.PositiveAfterLife] at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_ISLAM_3: "[ROOT.Char.GetFullNameNoTooltip] has passed on to eternity at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_NORSE_1: "[ROOT.Char.GetFullNameNoTooltip] has joined the feast in [ROOT.Char.GetFaith.PositiveAfterLife] at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_HELLENIC_1: "[ROOT.Char.GetFullNameNoTooltip] has crossed the River Styx at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_EASTERN_1: "[ROOT.Char.GetFullNameNoTooltip] has transcended [ROOT.Char.GetHerHis] material form at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_TRIBAL_1: "[ROOT.Char.GetFullNameNoTooltip] has crossed the door to the world of spirits at [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
+ # Replace struggle loca
+ 
+ DYNASTY_VIEW_LEGACY_EXPLANATION: "All members of the #high [Dynasty.GetBaseNameNoTooltip]#! Dynasty gain the benefits of these [dynasty_perks|E]. Acquiring new [dynasty_perks|E] becomes harder and harder as the cost increases by [dynasty_prestige_i]#V 1000#! each time"
+ culture_parameter_archer_era_improvement: "The [GetMaA('longbowmen').GetName] [men_at_arms|E] get increasingly better every [era|E] up to (and including) the Late Medieval era."
+ 
+ #Remove bookmark age
+ 
+ BOOKMARK_CHARACTER_AGE: ""
+ BOOKMARK_CHARACTER_INFO: "#high;bold [BookmarkCharacter.GetName]#!"
+ BOOKMARK_CHARACTER_AGE_DATA: ""
+ 
+ #Replace court tutor loca
+ 
+ court_tutor_court_position_desc: "The $court_tutor_court_position$ is in charge of the [education|E] of all at court, and their skill will influence how much they influence the students."
+ 
+ #Diarchies replacement 
+ 
+ dismissal_requires_gift: "Diarch can be given a gift to try and dismiss them"
+ regency_free_end_below_this_point: "The Power Struggle needs the Diarch consent to be dismissed"
+ diarch_attempt_to_overthrow_liege.tt.majority_powerful_vassal_support: "You currently have [SCOPE.ScriptValue('pv_overthrow_tally_display_value')|0] eligible [powerful_vassal|E] supporters #weak (including yourself)#! in your conspiracy, out of a required [SCOPE.ScriptValue('pv_overthrow_threshold_display_value')|0].\nYou can recruit conspirators to your coup via a [character_interaction|E] on the powerful vassals in your realm or directly on your co diarch."
+ regency_cant_be_ended_above_this_point: "[lieges|E] can't try to dismiss their diarch"    
+
+ #Vanilla inefficiency
+ has_province_modifier_trigger: "Has province modifier: $MODIFIER$"
+
+ #Missing custom_description
+ NOT_THEY_HAVE_OPINION: "[CHARACTER.GetShortUIName|U] has less than $NUM|V$ [opinion|E] of [TARGET_CHARACTER.GetShortUIName]"
+ 
+ #Sunny day is too sunny
+ warhorse.1101.t: "[ROOT.Char.Custom('WarhorseStoryName')|U]: Beautiful Night"
+ warhorse.1101.b: "The night is too fine to not be appreciated properly!"
+ bp1_yearly.7100.desc: "One moment I was enjoying a nice walk around the [owned_county.GetName] and the next I am covered in excrement and wallowing in the mud. Once I have furiously wiped the excreta from my [ROOT.Char.Custom('EyeEyes')], I find the culprit with ease.\n\n"[potential_nemesis.GetTitledFirstName] sends [potential_nemesis.GetHerHis] regards!" The peasant hanging out of the window screams before fleeing the scene.\n\nPathetically, I try washing one fur I particularly treasure in a nearby stream, but it's clear that it is beyond saving."
+ 
+ #Accolade succession is disabled but scripted in UI
+ find_suitable_accolade_successor_interaction_desc: "Your character can't look for an accolade successor automatically."
+ 
+ #Hastiluder trait is replaced for broader use
+ # EP2
+ trait_tourney_participant: "Contestant"
+ trait_tourney_participant_desc: "This character has participated in organized games, sharpening their skills in the process."
+ trait_tourney_participant_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has participated in organized games, sharpening their skills in the process."
+ trait_track_foot: "Physical"
+
+ #Drunk stuff
+ bp1_yearly.9010.desc.drunk: ", clearly not feeling well. [bp1_yearly_9007_doppelganger.GetSheHe|U] staggers towards me with fury in [bp1_yearly_9007_doppelganger.GetHerHis] eyes.\n\n"Imposter! That *#EMP hic#!*"
+ bp1_yearly.9010.desc.stoner: ", clearly not feeling well. [bp1_yearly_9007_doppelganger.GetHerHis|U] drifting bloody eyes scowl at the area around my head as [bp1_yearly_9007_doppelganger.GetSheHe] lazily staggers towards me, cackling like a mad[bp1_yearly_9007_doppelganger.GetWomanMan] all the way.\n\n"Imposter! That *#EMP cough#!*"
+ bp1_yearly.9010.desc.outro: "[ROOT.Char.Custom('InsultAdjective')] [ROOT.Char.Custom('InsultNoun')] is not [ROOT.Char.GetNameNoTooltip]! I am the real [ROOT.Char.GetNameNoTooltip]!"\n\nThough an obvious lie, my court seems somehow very amused that my true identity is thrown into dispute! As [bp1_yearly_9007_doppelganger.GetNameNoTooltip] draws [bp1_yearly_9007_doppelganger.GetHerHis] weapon, it becomes clear violence is the only answer."
+ 
+ # Grand City stuff
+ # Gruesome Festival (Colosseum)
+ gruesomefestivalname_spectacle: "Spectacle"
+ gruesomefestivalname_spectacles: "Spectacles"
+ fp1_other_decisions.0002.b: "Bring forth a beast for every [blotter.Custom('WomanManPerson_GenderPreference')]!"
+ fp1_other_decisions.0003.desc.intro.colosseum_small: "Though the gathering in the Colosseum is small, the atmosphere at the [blotter.Custom('GruesomeFestivalName')] is enthusiastic. The audience is jostling and jeering as"
+ fp1_other_decisions.0003.desc.intro.colosseum_medium: "About half the seats in the Colosseum are filled with happy, cheering people, all roaring as"
+ fp1_other_decisions.0003.desc.intro.colosseum_large: "The guests at the [blotter.Custom('GruesomeFestivalName')] are so numerous that they managed to fill the Colosseum to capacity, sending up a cacophonous roar as"
+ fp1_other_decisions.0003.desc.colosseum_animals.regular: "a pack of ferocious wolves is herded into the arena.\n\n"
+ fp1_other_decisions.0003.desc.colosseum_animals.magnificent: "a magnificent pride of lions is herded into the arena.\n\n"
+ fp1_other_decisions.0003.desc.colosseum_humans.regular.sans_chief: "a gaggle of prisoners are marched into the arena, handed weapons, and let loose on our wolves.\n\n"
+ fp1_other_decisions.0003.desc.colosseum_humans.magnificent.sans_chief: "a pack of fearsome-looking gladiators enter the arena, followed by a magnificent pride of lions.\n\n"
+ fp1_other_decisions.0003.desc.colosseum_humans.regular.plus_chief: "[sacrifice.GetFirstName] is ushered into the arena, completely unarmed, and left to fend against a horde of prisoners and wolves.\n\n"
+ fp1_other_decisions.0003.desc.colosseum_humans.magnificent.plus_chief: "[sacrifice.GetFirstName] is ushered into the arena, completely unarmed, and left to fend against a horde of gladiators and lions.\n\n"
+ fp1_other_decisions.0003.desc.sacrifice.named.colosseum: "The neverending onslaught wears [sacrifice.GetHerHim|l] down eventually. After a truly ludicrous amount of violence and bloodshed, [sacrifice.GetFirstName] expires, prompting a deafening cheer from the audience."
+ fp1_other_decisions.0003.desc.sacrifice.unnamed.colosseum: "Some of the gladiators are trained in combat, some are not. It doesn't matter. In the end, none of them are left standing."
+ fp1_other_decisions.0003.desc.sacrifice.animal.colosseum: "Many of the starving beasts tear each other to pieces, then our trained hunters make short work of the rest."
+ fp1_other_decisions.0003.desc.outro.colosseum: "\n\nThis grand display will be the talk of my court for months to come."
+ fp1_other_decisions.0003.g: "This seems an excellent opportunity to impress the nobility."
+ fp1_other_decisions.0003.h: "Time to rub shoulders with the common muck!"
+ 
+ # Vanilla CK3 typo fix :|
+ activity_pulse_action_local_baron_tax: "[first.GetShortUIName|U] Coerced into Paying Tax"
+ county_opinion: "County Opinion: $NUM|=V$"
+ msg_house_unity_change_stage_desc: "Your [house_unity|E] has changed Level to $HOUSE_UNITY_STAGE_NAME|U$"
+ 
+ # Meditation activity
+ religious_decision.0201.basilica: "The basilica in San Michele's."
+ religious_decision.0211.desc.beginning.basilica: "Retreating to a secluded chapel in San Michele's Basilica, I began an extended period of fasting and meditation.\n\nThe eclectic architecture and religious art in the chapel are an inspiring sight. There's no other place on God's Earth where I can feel as close to Him."
+ religious_decision.0211.desc.result.medium_stress: "\n\nThe inaccessible location was a significant boon, giving me a welcome reprieve from the daily problems I typically have to deal with at court."
+ religious_decision.0211.desc.result.major_stress: "\n\nIsolated as I was, I found that the troubles which had burdened me at court no longer had any weight to them. For the first time in far too long, I was at peace."
+ 
+ # Crown authority
+ crown_authority_3_effects: "$EFFECT_LIST_BULLET$Rulers can designate their [heir|E]\n$EFFECT_LIST_BULLET$During a defensive war, Ducal and Kingdom vassals bordering (land only) the attacker's realm will be called as participants."
+ tribal_authority_3_effects: "$EFFECT_LIST_BULLET$Vassals can't declare any wars without a hook on their liege."   
+ tribal_authority_1_effects: "$EFFECT_LIST_BULLET$[characters|E] can be [imprisoned|E]"
+
+ # Golconda warnings for schemes
+ MURDER_SUCCESS_DESC: "[AddTextIf(GetScriptedGui('is_on_golconda_gui').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), Concatenate(Localize('POD_golconda_murder_alert'),'\n'))][TARGET_CHARACTER.GetShortUIName|U] is killed"
+ STEAL_BACK_ARTIFACT_SUCCESS_DESC: "[AddTextIf(GetScriptedGui('is_on_golconda_gui').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), Concatenate(Localize('POD_golconda_theft_alert'),'\n'))]You will steal an artifact from [TARGET_CHARACTER.GetShortUIName] that you have a claim on"
+
+ #Tax stuff
+ TAX_JURISDICTIONS_BUTTON: "#T Vassal Contracts#!"
+ 
+ # "DLC" button
+ DLC_BUTTON_TOOLTIP: "#T [DlcItem.GetDlc.GetName]#!\n[DlcItem.GetDlc.GetDesc]\n\n#low [SelectLocalization( Or( DlcItem.GetDlc.IsEnabled, EqualTo_string(DlcItem.GetDlc.GetName, Localize('dlc_POD') ) ), 'DLC_ENABLED', 'DLC_NOT_ENABLED' )]#![AddTextIf( Not( EqualTo_string(DlcItem.GetDlc.GetName, Localize('dlc_POD') ) ), '\n#I Click to visit store#!' )]"
+ 
+ #Non commitment 
+ culture_parameter_gain_gold_from_battles: "Gain more [gold|E][gold_i] from [battles|E]"
+ LEGACY_GOLD_FROM_BATTLES: "Gain more [gold|E][gold_i] from [battles|E]"
+
+ #War dec contract refactored
+ war_declaration_rights_allowed: "Revoked $war_declaration_rights$"
+ war_declaration_rights_allowed_desc: "#emphasis #bold Vassals can't declare any wars without a hook on their liege.#!#!"
+ war_declaration_rights_allowed_short: "Revoked"
+  
+ #We broaden vanilla macedonian to represent post alexander pre rome greeks
+ macedonian: "Hellenic"
+ macedonian_prefix: "Hellenistic"
+ macedonian_collective_noun: "Hellenes" 
+
+ # Changed vanilla mechanics
+ doctrine_parameter_invasion_cb_enabled: "Prestigious [rulers|E] can use an Invasion [casus_belli|E] once every #V 100#! years"
+ BEFRIEND_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUIName|U] might become your [friend|E]\n#weak You can only use this interaction as long as you have fewer than $POD_player_befriend_limit$ friends#!"
+ CREATE_FAITH_WINDOW_TITLE_TOOLTIP: "#T $CREATE_FAITH_WINDOW_TITLE$#!\n#X Creating a new faith is barely supported in PoD. You might lose access to important pieces of content or break some scripts. You have been warned.#!\nCreate a new [faith|E] by choosing [core_tenets|E] and [doctrines|E]"
+ can_recruit_character_to_court_trigger.tt.laamps_invitation_restrictions: "[adventurers|E] may only invite their [player_heir|E], [soulmate|E], [best_friend|E], or [spouses|E] to their [camp|E]\n\nIn [princes_of_darkness|E], you can also invite:\n$EFFECT_LIST_BULLET$[coterie|E] members\n$EFFECT_LIST_BULLET$Characters who have a subservient relationship with you (Herd, Dreamer, Thrall, Host, Bound Wraith, or Bound Demon)\n$EFFECT_LIST_BULLET$Characters you have certain supernatural hooks on ($strong_bloodoath_hook$, $soul_bond_hook$, $true_name_hook$, or $conditioning_hook$)\n$EFFECT_LIST_BULLET$Your Clones and #TOOLTIP:GAME_TRAIT,automaton,[GetNullCharacter] #L Automata#!#!"
+ adventurer_stalwart_leader_perk_effect: "[adventurer_i] Can use #V $contact_list_request_interaction$#! to make [count|E]-[rank|E] [rulers|E] or higher start a [GetActivityType('activity_tournament').GetTextIcon][GetActivityType('activity_tournament').GetName] or [GetActivityType('activity_brujah_panegyra').GetTextIcon][GetActivityType('activity_brujah_panegyra').GetName] #weak (if the [activity|E] is valid for both characters)#!"
+
+ # Additional options for vanilla interactions
+ request_panegyra: "For a [GetActivityType('activity_brujah_panegyra').GetTextIcon][GetActivityType('activity_brujah_panegyra').GetName]"
+ contact_list_request_interaction.request_panegyra: "[recipient.GetShortUIName] will start a [GetActivityType('activity_brujah_panegyra').GetTextIcon][GetActivityType('activity_brujah_panegyra').GetName] as soon as possible #weak (within 1-2 years)#!"
+ contact_list_request_interaction.request_panegyra_cooldown: "Cannot request another #color_white [GetActivityType( 'activity_brujah_panegyra' ).GetName]#! until [GetCurrentDateWithDiff( GetVarTimeRemaining( actor.MakeScope, 'laamp_recently_requested_panegyra') )|V]"
+
+ #Epidemics are named after rulers, so those are needed to not have "Mithras' flu" or "Horus passing stomach ache" as names of diseases
+ #... or "Courts of Love's ergotism" or "Shadow Curtain's dysentery" or "Helena's lover pox"
+ #You wouldn't believe the horrors I saw
+ 
+ epidemic_ruler_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]"
+ epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]"
+ epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]"
+ epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]"
+ epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetAdjectiveNoTooltip|U]"
+ epidemic_devils_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetAdjectiveNoTooltip|U]"
+ epidemic_random_saint_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetAdjectiveNoTooltip|U]"
+ epidemic_rulers_plague: "$epidemic_province_loc$ Plague"
+ epidemic_plague_of_ruler: "$epidemic_province_loc$ Plague"
+ epidemic_realm_plague: "$epidemic_province_loc$ Plague"
+ epidemic_realm_pox: "$epidemic_province_loc$ Pox"
+ epidemic_holder_pox: "$epidemic_province_loc$ Pox"
+ epidemic_culture_pox: "$epidemic_province_loc$ Pox"
+ epidemic_rulers_pox: "$epidemic_province_loc$ Pox"
+ epidemic_titled_rulers_pox: "$epidemic_province_loc$ Pox"
+
+ epidemic_realm_boils: "$epidemic_province_loc$ Boils"
+ epidemic_rulers_boils: "$epidemic_province_loc$ Boils"
+ epidemic_titled_rulers_boils: "$epidemic_province_loc$ Boils"
+ epidemic_holder_boils: "$epidemic_province_loc$ Boils"
+ epidemic_culture_boils: "$epidemic_province_loc$ Boils"
+ epidemic_rulers_fever: "$epidemic_province_loc$ Fever"
+ epidemic_titled_rulers_fever: "$epidemic_province_loc$ Fever"
+ epidemic_realm_fever: "$epidemic_province_loc$ Fever"
+ epidemic_culture_sweats: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetTerrain.GetNameNoTooltip|U] Sweats"
+ epidemic_devils_fever: "Devil's Fever"
+ epidemic_titles_evil: "Mankind's Evil"
+ epidemic_realm_flu: "$epidemic_province_loc$ Flu"
+ epidemic_titled_ruler_flu: "$epidemic_province_loc$ Flu"
+ epidemic_ruler_flu: "$epidemic_province_loc$ Flu"
+ epidemic_ruler_coughs: "$epidemic_province_loc$ Coughs"
+ epidemic_holder_flu: "$epidemic_province_loc$ Flu"
+ epidemic_holder_coughs: "$epidemic_province_loc$ Coughs"
+ epidemic_realm_coughs: "$epidemic_province_loc$ Coughs"
+ epidemic_random_saint_plague: "Gabriel's Plague"
+ epidemic_evil_god_pestilence: "Devil's Pestilence"
+ epidemic_realm_flux: "$epidemic_province_loc$ Flux"
+ epidemic_ruler_flux: "$epidemic_province_loc$ Flux"
+ epidemic_titled_ruler_flux: "$epidemic_province_loc$ Flux"
+ epidemic_culture_flux: "$epidemic_province_loc$ Flux"
+ epidemic_location_flux: "$epidemic_province_loc$ Flux"
+ epidemic_evil_god_flux: "Devil's Flux"
+ epidemic_holder_flux: "$epidemic_province_loc$ Flux"
+ epidemic_realm_dancing_plague: "The Dancing Plague"
+ epidemic_culture_dancing_plague: "$epidemic_province_loc$ Dancing Plague"
+ epidemic_location_dancing_plague: "$epidemic_province_loc$ Dancing Plague"
+ epidemic_realm_fire: "$epidemic_province_loc$ Fire"
+ epidemic_ruler_fire: "$epidemic_province_loc$ Fire"
+ epidemic_culture_fire: "$epidemic_province_loc$ Fire"
+ epidemic_location_fire: "$epidemic_province_loc$ Fire"
+ epidemic_evil_god_fire: "$epidemic_province_loc$ Fire"
+ epidemic_random_saint_fire: "$epidemic_province_loc$ Fire"
+ epidemic_holder_fire: "$epidemic_province_loc$ Fire"
+ epidemic_culture_plague: "$epidemic_province_loc$ Plague"
+ epidemic_location_plague: "$epidemic_province_loc$ Plague"
+ epidemic_ruler_plague: "$epidemic_province_loc$ Plague"
+ epidemic_titled_ruler_plague: "$epidemic_province_loc$ Plague"
+
+ #We use saint for more broad stuff than just christianity
+ 
+ trait_saint_desc: "A towering figure inspiring worship and zeal."
+ 
+ #Modern heresy
+ 
+ fp3_yearly.8002.desc: "My [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('concerned_person'))] [concerned_person.GetFirstName] has learnt concerning news about the soldiers manning the forts in the [frontier_fort_county.GetName].\n\n"They have surreptitiously converted to a vile heresy!", [concerned_person.GetSheHe] tells me in a quavering voice. "Though I do not know who their leader is, I fear if something is not done, they might soon take up the arms #italic you#! have paid for, and try to overthrow you.""
+
+ #New MaA system
+ 
+ onager: "Engineers"
+ mangonel: "Saboteurs"
+ trebuchet: "Sappers"
+ bombard: "Petards"
+ onager_flavor: "#F A specialized crew of soldiers able to conduct demolition missions. #!"
+ mangonel_flavor: "#F Trained to operate behind enemy lines, these experts can open gates and lower bridges at just the right time.#!"
+ trebuchet_flavor: "#F Sappers are those elite few knowing precisely where the weakness of the enemy defense system lies, and how to exploit it.#!"
+ bombard_flavor: "#F Using the terrible power of gunpowder, these men carry (often suicide) missions to breach the most fortified of defenses.#!"
+
+ #Replace only the strong for Enochian
+ tradition_only_the_strong_name: "The First City"
+ tradition_only_the_strong_desc: "The place where it all began, a legacy of the greatest warriors, statesmen and philosophers who guided humanity's tentative first steps under Caine's watchful gaze."
+ 
+ # House Customization (for Coteries)
+ CUSTOMIZE_HOUSE_HEADER: "Customize [AddTextIf(Not(DynastyHouse.GetHeadOfHouse.MakeScope.Var('is_coa_dummy').IsSet), 'House ')][Select_CString( Not(DynastyHouse.GetHeadOfHouse.MakeScope.Var('is_coa_dummy').IsSet), DynastyHouse.GetBaseNameNoTooltip, GetPlayer.Custom('PODGetCoterieName') )]"
+
+ #Adventurers DLC
+ wolves: "Wolves"
+ defenders: "Defenders"
+ wyverns: "Wyverns"
+ crocodiles: "Crocodiles"
+ bears: "Bears"
+ lions: "Lions"
+ bulls: "Bulls"
+ camels: "Camels"
+ stags: "Stags"
+ boars: "Boars"
+ cats: "Cats"
+ foxes: "Foxes"
+ ravens: "Ravens"
+ guardians: "Guardians"
+ wraiths: "Wraiths"
+ giants: "Giants"
+ dragons: "Dragons"
+ dogs: "Dogs"
+ harbingers: "Harbingers"
+ seekers: "Seekers"
+ akritai: "Akritai"
+ oracles: "Oracles"
+ outlaws: "Outlaws"
+ trait_immortal: "Immortal"
+ trait_immortal_desc: "By some magical means, this character can't die from natural causes anymore."
+ seasoned_visitor_decision: "The Travels of [ROOT.Char.GetFirstNameNoTooltip]"
+ zealous_missionary_prep_decision_desc: "The continued existence of vile heretics and misguided heathens is an offense to any good [ROOT.Char.GetFaith.GetAdherentNameNoTooltip]!"
+ camp_cook_camp_officer: "Supply Officer"
+ camp_cook_camp_officer_desc: "The $camp_cook_camp_officer$ makes sure everyone is given their fair share for the road ahead. Or at least what they think is their fair share."
+ government_is_tribal:0 "" #Otherwise says that MaA cost prestige, which is false in PoD
+ adventurer_religious_icon_perk_effect: "[adventurer_i] You now gain #P [piety_i]+0.4#!/month for every [follower|E] of your [faith|E] when [camp_temperament|E] is #P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#! (5 max)"
+ adventurer_apostate_perk_effect: "[adventurer_i] You now gain #P [diplomacy_i][intrigue_i][stewardship_i][martial_i][learning_i]+1#! for every three unique [faiths|E] your [followers|E] have when [camp_temperament|E] is #P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#! (3 maximum bonus stats)"
+ msg_house_unity_change_stage_desc: "Your [house_unity|E] has changed Level to [Localize('$HOUSE_UNITY_STAGE_NAME|q$')]" #Doesn't work properly in its vanilla form for some strange reason
+ adventurer_honored_to_serve_perk_effect: "[adventurer_i] Bonus [modifiers|E] from the #P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#! [camp_temperament|E] now also scale by number of [followers|E] #weak (1 per 5 Followers, maximum 3 times)#!"
+ adventurer_writing_history_perk_effect: "[adventurer_i] #P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#! [camp_temperament|E] now also grants a scaling [personal|E] [scheme_speed|E] bonus of #P 5#! (25 max)"
+
+ # Visit local settlement
+ local_holding_type_concept_grand_city_holding: "[grand_city_holding|E]"
+ local_holding_type_grand_city_holding: "$game_concept_grand_city$ holding"
+ local_holding_type_capitalized_grand_city_holding: "$game_concept_grand_city$ Holding"
+ 
+ # Fae using FP2 stuff
+ game_concept_iberian_reclamation:0 "Reclamation"
+ game_concept_iberian_reclaiming:0 "Reclaiming"
+ game_concept_iberian_reclamations:0 "Reclamations"
+ game_concept_iberian_reclamation_desc:2 "This is a special type of [war|E] available to [struggle_involved|E] [rulers|E].\n\nThe attacker aims to conquer a [duchy|E] which contains any [struggle_involved|E] [counties|E] held by an [struggle_interloper|E] or [struggle_uninvolved|E] [ruler|E], or [vassalize|E] them if they hold no land outside that Duchy."
+ fp2_struggle_compromise_house_reward_modifier_desc:0 "This house led their realm out of the struggle."
+
+ # BP3
+ know_your_land_know_your_people_perk_effect: ""
+ far_and_wide_perk_effect: "Increase [prestige_experience_i|E][prestige_experience|E] by #P 1#! for every visited [holding|E]"
+ gracious_host_impeccable_guest_perk_4_effect: "[court_position|E] [aptitude|E] Increased by #p +1#! per known [language|E]"
+ activity_journey_host_desc: "#indent_newline:8 $BULLET_WITH_TAB$[intrigue_i|E][diplomacy_i|E][martial_i|E][learning_i|E][stewardship_i|E]#V Lifestyle experience.#!\n#weak (Lifestyle rewards are based on the visited [special_building|E])#!#!\n$BULLET_WITH_TAB$[prestige_i|E][prestige|E]\n\n#weak You will bring your [children|E] and [spouses|E] with you in the [entourage|E].#!"
+
+ 
+ 
+ 

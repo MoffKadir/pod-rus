@@ -1,0 +1,33 @@
+﻿l_english:
+
+ POD_gargoyle.100.desc: "Your new construct is created. What shall you name it?"
+ POD_gargoyle.100.option.a: "Serve me well."
+ event_window_widget_name_gargoyle_random_faith_name: "A good Gargoyle name"
+ event_window_widget_name_gargoyle_random_cultural_name: "A good [Character.GetCulture.GetNameNoTooltip] name"
+ POD_gargoyle.200.t: "A Flyaway"
+ POD_gargoyle.200.desc: "$POD_gargoyle.200.desc.start$[GetPlayer.Custom('PODGargoyle200')]$POD_gargoyle.200.desc.join$"
+ POD_gargoyle.200.desc.start: "A new applicant appears in your court. A gargoyle by the name of [new_gargoyle_aspirant.GetFirstName] claims to have fled the Tremere. [new_gargoyle_aspirant.GetSheHe|U] was able to escape when [new_gargoyle_aspirant.GetHerHis] master, [destroyed_tremere_master.GetFullName], was destroyed "
+ POD_gargoyle.200.desc.hunters: "by mortal hunters. "
+ POD_gargoyle.200.desc.tzimisce: "by the Tzimisce. "
+ POD_gargoyle.200.desc.lupines: "by a pack of lupines. "
+ POD_gargoyle.200.desc.gangrel: "by a vengeful Gangrel. "
+ POD_gargoyle.200.desc.nosferatu: "by a scheme of the Nosferatu. "
+ POD_gargoyle.200.desc.banuhaqim: "by an assassin of the Banu Haqim. "
+ POD_gargoyle.200.desc.ritual: "by a botched magical ritual. "
+ POD_gargoyle.200.desc.hermetic: "by a Hermetic mage. "
+ POD_gargoyle.200.desc.certamen: "by a rival Tremere in a Certamen duel. "
+ POD_gargoyle.200.desc.demon: "by a summoned demon. "
+ POD_gargoyle.200.desc.dragon: "by a dragon. "
+ POD_gargoyle.200.desc.earthquake: "by an earthquake. "
+ POD_gargoyle.200.desc.fire: "by a fire. "
+ POD_gargoyle.200.desc.gargoyle: "[new_gargoyle_aspirant.GetFirstName], [new_gargoyle_aspirant.GetHerselfHimself]. "
+ POD_gargoyle.200.desc.peasants: "by a peasant mob armed with pitchforks and torches. "
+ POD_gargoyle.200.desc.umbra: "when travelling in the [umbra|E]. "
+ POD_gargoyle.200.desc.join: "[new_gargoyle_aspirant.GetFirstName] wishes to join your court. "
+ POD_gargoyle.200.desc.gold: "[new_gargoyle_aspirant.GetSheHe|U] offers a gift of gold. "
+ 
+ 
+ POD_gargoyle.200.option.a: "Welcome to my realm, [new_gargoyle_aspirant.GetFirstName]"
+ POD_gargoyle.200.option.b: "Begone [new_gargoyle_aspirant.GetFirstName]! You are not welcome here!"
+ POD_gargoyle.200.option.c: "Sieze [new_gargoyle_aspirant.GetHerHim] and throw [new_gargoyle_aspirant.GetHerHim] in the dungeon!"
+ 
