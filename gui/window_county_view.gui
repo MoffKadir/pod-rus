@@ -10,14 +10,7 @@ window = {
 	movable = no
 	layer = windows_layer
 	size = { 625 645 }
-	#Cfv
-	datacontext = "[HoldingView.GetHolding]"
-	datacontext = "[HoldingView.GetProvince]"
-	datacontext = "[HoldingView.GetHolder]"
-	datacontext = "[Province.GetCounty]"
-	window_local_umbra = {}
-	#Cfv end
-	
+
 	background = {
 		texture = "gfx/interface/component_tiles/tile_window_background_subwindow.dds"
 		spriteType = Corneredtiled
@@ -64,7 +57,11 @@ window = {
 		name = "window_content"
 		margin_right = 40
 		margin_top = 35
-		#Cfv
+
+		datacontext = "[HoldingView.GetHolding]"
+		datacontext = "[HoldingView.GetProvince]"
+		datacontext = "[HoldingView.GetHolder]"
+		datacontext = "[Province.GetCounty]"
 
 		hbox = {
 			name = "county_header"
@@ -118,6 +115,8 @@ window = {
 						margin_left = 2
 						margin_bottom = 4
 						using = Font_Size_Small
+						fontsize_min = 10
+						max_width = 420
 					}
 
 					text_single = {
@@ -128,6 +127,8 @@ window = {
 						margin_left = 5
 						margin_bottom = 4
 						using = Font_Size_Small
+						fontsize_min = 10
+						max_width = 420
 					}
 
 					text_single = {
@@ -138,6 +139,8 @@ window = {
 						margin_left = 5
 						margin_bottom = 4
 						using = Font_Size_Small
+						fontsize_min = 10
+						max_width = 420
 					}
 				}
 			}
@@ -197,8 +200,8 @@ window = {
 
 		hbox = {
 			layoutpolicy_horizontal = expanding
-			margin = { 10 2 }
-			spacing = 6
+			margin = { 10 0 }
+			spacing = 5
 
 			hbox = {
 				datamodel = "[HoldingView.GetDeJureLieges]"
@@ -218,44 +221,77 @@ window = {
 
 			expand = {}
 
-			hbox = {
-				name = "county_modifiers_grid"
-				datamodel = "[HoldingView.GetCountyModifiers]"
+			widget = {
+				size = { 300 50 }
+				scissor = yes
 
-				item = {
-					modifier_item_icon = {
-						size = { 30 30 }
+				hbox = {
+					name = "county_modifiers_grid"
+					datamodel = "[HoldingView.GetCountyModifiers]"
 
-						blockoverride "icon_data" {
-							using = tooltip_ne
+					button_round = {
+						name = "move_domcicle_button"
+						datacontext = "[GetPlayer.GetDomicile]"
+						datacontext = "[HoldingView.GetProvince]"
+						visible = "[IsLandlessAdventurer( GetPlayer )]"
+						widgetid = "move_domcicle_button"
+						size = { 50 50 }
+
+						enabled = "[Domicile.CanMoveTo( Province.Self )]"
+						onclick = "[OpenGameViewData( 'move_domicile_planner', Province.Self )]"
+
+						tooltip = "[Domicile.GetType.GetMoveTooltip( Character.Self )]"
+						tooltip_when_disabled = "[Domicile.GetMoveToTooltip( Province.Self )]"
+						using = tooltip_ne
+
+						button_icon = {
+							alwaystransparent = yes
+							parentanchor = center
+							size = { 30 30 }
+							texture = "gfx/interface/icons/flat_icons/move_camp.dds"
 						}
 					}
-				}
-			}
 
-			hbox = {
-				layoutpolicy_vertical = expanding
-				visible = [County.IsFullyOccupied]
-				datacontext = [County.GetCountyOccupant]
+					expand = {}
 
-				widget = {
-					size = { 52 52 }
-
-					icon = {
-						size = { 70 70 }
-						name = "war_icon"
-						texture = "gfx/interface/icons/war_status/war_icon.dds"
-						parentanchor = center
+					spacer = {
+						visible = "[Or( IsLandlessAdventurer( GetPlayer ), County.IsFullyOccupied )]"
+						size = { 8 0 }
 					}
 
-					coa_realm_small = {
-						position = { 1 0 }
-						blockoverride "coa_button" {
-							tooltip = "COUNTY_OCCUPIER_TOOLTIP"
-							onclick = "[DefaultOnRealmFlagClick(Character.GetID)]"
-							onrightclick = "[DefaultOnCharacterRightClick(Character.GetID)]"
-							button_ignore = none
-							tooltip_visible = "[Not(IsInteractionMenuOpenForCharacter(Character.GetID))]"
+					item = {
+						modifier_item_icon = {
+							size = { 30 30 }
+
+							blockoverride "icon_data" {
+								using = tooltip_ne
+							}
+						}
+					}
+
+					widget = {
+						datacontext = [County.GetCountyOccupant]
+						visible = [County.IsFullyOccupied]
+						size = { 50 50 }
+
+						icon = {
+							size = { 50 50 }
+							name = "war_icon"
+							texture = "gfx/interface/icons/war_status/war_icon.dds"
+							parentanchor = center
+						}
+
+						coa_realm_tiny = {
+							parentanchor = center
+
+							blockoverride "coa_button" {
+								onclick = "[DefaultOnRealmFlagClick(Character.GetID)]"
+								onrightclick = "[DefaultOnCharacterRightClick(Character.GetID)]"
+								button_ignore = none
+								
+								tooltip_visible = "[Not(IsInteractionMenuOpenForCharacter(Character.GetID))]"
+								tooltip = "COUNTY_OCCUPIER_TOOLTIP"
+							}
 						}
 					}
 				}
@@ -380,7 +416,7 @@ window = {
 								datacontext = "[HoldingView.GetCountyTitle.GetHolder]"
 								visible = "[And(Character.HasRelationTo( GetPlayer ), Not(Character.IsPlayer))]"
 								layoutpolicy_horizontal = expanding
-								max_width = 187
+								max_width = 160
 								text = "[Character.GetRelationToString( GetPlayer )]"
 								tooltip = "EXTENDED_RELATIONS_TOOLTIP"
 								autoresize = yes
@@ -390,7 +426,7 @@ window = {
 						text_multi = {
 							datacontext = "[HoldingView.GetCountyTitle.GetHolder]"
 							layoutpolicy_horizontal = expanding
-							max_width = 188
+							max_width = 160
 							text = "[Character.GetShortUINameNoTooltip|U]"
 							default_format = "#high"
 							autoresize = yes
@@ -407,7 +443,7 @@ window = {
 				margin = { 10 10 }
 				margin_right = 15
 				min_width = 260
-				
+
 				datacontext = "[HoldingView.GetProvince.GetCounty]"
 				datacontext = "[HoldingView.AccessCountyBreakdowns]"
 
@@ -447,7 +483,7 @@ window = {
 						tooltipwidget = {
 							widget_value_breakdown_tooltip = {}
 						}
-                    }
+					}
 				}
 
 				hbox = {
@@ -462,16 +498,16 @@ window = {
 
 					text_single = {
 						visible = "[GovernmentType.IsAffectedByDevelopment]"
-                        text = "[County.GetDevelopmentLevel]"
+						text = "[County.GetDevelopmentLevel]"
 
-                        default_format = "#high"
+						default_format = "#high"
 
 						margin = { 5 0 }
 
-                        tooltipwidget = {
-                            county_development_tooltip_container = {}
-                        }
-  					}
+						tooltipwidget = {
+							county_development_tooltip_container = {}
+						}
+					}
 
 					text_single = {
 						visible = "[Not( GovernmentType.IsAffectedByDevelopment )]"
@@ -502,7 +538,7 @@ window = {
 								}
 							}
 						}
-                    }
+					}
 				}
 
 				hbox = {
@@ -531,6 +567,7 @@ window = {
 
 						tooltip_visible = "[ValueBreakdown.HasTooltip]"
 
+						max_width = 160
 						margin = { 5 0 }
 
 						tooltipwidget = {
@@ -552,12 +589,12 @@ window = {
 					}
 
 					text_single = {
-                        visible = "[NotEqualTo_uint32(Culture.GetID, GetPlayer.GetCulture.GetID)]"
-                        text = "COUNTY_CULTURE_ACCEPTANCE_DIFF_CULTURE"
-                        margin_right = 5
-
-                        tooltip = "CULTURE_ACCEPTANCE_TOOLTIP"
-                    }
+						visible = "[NotEqualTo_uint32(Culture.GetID, GetPlayer.GetCulture.GetID)]"
+						text = "COUNTY_CULTURE_ACCEPTANCE_DIFF_CULTURE"
+						margin_right = 5
+						max_width = 160
+						tooltip = "CULTURE_ACCEPTANCE_TOOLTIP"
+					}
 
 					button_group = {
 						# shortcut = "innovations_window"
@@ -567,6 +604,7 @@ window = {
 							text = "CULTURE_COUNTY_WINDOW"
 							default_format = "#high"
 							margin = { 5 0 }
+							max_width = 120
 
 							background = {
 								visible = "[And( NotEqualTo_uint32(Culture.GetID, GetPlayer.GetCulture.GetID), EqualTo_CFixedPoint( Culture.GetAcceptance( GetPlayer.GetCulture ), '(CFixedPoint)100') )]"
@@ -587,19 +625,19 @@ window = {
 							}
 						}
 
-                        tooltipwidget = {
-                            culture_tooltip = {
-                                blockoverride "extra_info"
-                                {
-                                    text_single = {
-                                        fonttintcolor = "[TooltipInfo.GetTintColor]"
-                                        using = DefaultTooltipText
-                                        visible = "[Not( ObjectsEqual( Culture.Self, GetPlayer.GetCulture ) )]"
-                                        text = "COUNTY_NOT_YOUR_CULTURE"
-                                    }
-                                }
-                            }
-                        }
+						tooltipwidget = {
+							culture_tooltip = {
+								blockoverride "extra_info"
+								{
+									text_single = {
+										fonttintcolor = "[TooltipInfo.GetTintColor]"
+										using = DefaultTooltipText
+										visible = "[Not( ObjectsEqual( Culture.Self, GetPlayer.GetCulture ) )]"
+										text = "COUNTY_NOT_YOUR_CULTURE"
+									}
+								}
+							}
+						}
 					}
 				}
 
@@ -651,19 +689,21 @@ window = {
 							margin_right = 5
 							text = "WINDOW_COUNTY_FAITH_NAME"
 							default_format = "#high"
+							max_width = 160
 						}
 
 						text_single = {
 							visible = "[NotEqualTo_uint32(Faith.GetID, GetPlayer.GetFaith.GetID)]"
-                            text = "WINDOW_COUNTY_FAITH_NAME"
-                            default_format = "#high"
-                            margin = { 5 0 }
+							text = "WINDOW_COUNTY_FAITH_NAME"
+							default_format = "#high"
+							margin = { 5 0 }
+							max_width = 160
 
-                            background = {
-                                margin = { 5 0 }
-                                using = Status_Bad
-                            }
-                        }
+							background = {
+								margin = { 5 0 }
+								using = Status_Bad
+							}
+						}
 					}
 				}
 			}
@@ -1091,7 +1131,7 @@ window = {
 
 						button_standard = {
 							name = "toggle_find_vassal"
-							visible = "[And( ObjectsEqual( HoldingView.GetTitle.GetHolder, GetPlayer ), Not(HoldingView.GetTitle.IsLeasedOut) )]"
+							visible = "[And(And( ObjectsEqual( HoldingView.GetTitle.GetHolder, GetPlayer ), Not(HoldingView.GetTitle.IsLeasedOut) ), Not(HoldingView.GetProvince.IsRealmCapital))]"
 							enabled = "[HoldingView.CanGrantTitle]"
 							text = "FIND_VASSAL_HEADER"
 							onclick = "[HoldingView.ToggleFindVassalListWindow]"
@@ -1122,7 +1162,7 @@ window = {
 
 							hbox = {
 								layoutpolicy_horizontal = expanding
-								
+
 								hbox = {
 									datacontext = "[HoldingView.GetTitle]"
 									visible = "[Title.IsUnderTheocraticLease]"
@@ -1137,7 +1177,7 @@ window = {
 
 									expand = {}
 								}
-								
+
 								container = {
 									name = "revoke_lease_button"
 									datacontext = "[HoldingView.GetTitle]"
@@ -1226,6 +1266,161 @@ window = {
 					}
 				}
 			}
+			
+			# Cfv
+			widget = {
+				allow_outside = yes
+				parentanchor = center
+				position = { 76 -45 }
+
+				button_round  = {
+					datacontext = "[HoldingView.GetGUIHoldingBuilding]"
+					datacontext = "[HoldingView.GetTitle]"
+					datacontext = "[HoldingView.GetHolder]"
+					visible = "[And( Character.IsLocalPlayer, Character.IsPlayerInteractionShownAndCanPickTitle('feudalize_city_holding_interaction', Title.Self) )]"
+					enabled = "[Character.IsPlayerInteractionWithTargetTitleValid('feudalize_city_holding_interaction', Title.Self)]"
+					tooltip = "[Character.GetPlayerInteractionWithTargetTitleTooltip('feudalize_city_holding_interaction', Title.Self)]"
+					oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
+					clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
+					onclick = "[Character.OpenPlayerInteractionWithTargetTitle('feudalize_city_holding_interaction', Title.Self)]"
+
+					button_feudalize_tribe = {
+						size = { 25 25 }
+						parentanchor = center
+						alwaystransparent = yes
+					}
+				}
+			}
+			
+			widget = {
+				allow_outside = yes
+				parentanchor = center
+				position = { 76 5 }
+
+				button_round  = {
+					datacontext = "[HoldingView.GetGUIHoldingBuilding]"
+					datacontext = "[HoldingView.GetTitle]"
+					datacontext = "[HoldingView.GetHolder]"
+					visible = "[And( Character.IsLocalPlayer, Character.IsPlayerInteractionShownAndCanPickTitle('theocratize_city_holding_interaction', Title.Self) )]"
+					enabled = "[Character.IsPlayerInteractionWithTargetTitleValid('theocratize_city_holding_interaction', Title.Self)]"
+					tooltip = "[Character.GetPlayerInteractionWithTargetTitleTooltip('theocratize_city_holding_interaction', Title.Self)]"
+					oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
+					clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
+					onclick = "[Character.OpenPlayerInteractionWithTargetTitle('theocratize_city_holding_interaction', Title.Self)]"
+
+					button_icon = {
+						framesize = { 70 60 }
+						texture = "gfx/interface/icons/flat_icons/theocratize.dds"
+						size = { 25 25 }
+						parentanchor = center
+						alwaystransparent = yes
+					}
+				}
+			}
+			
+			widget = {
+				allow_outside = yes
+				parentanchor = center
+				position = { 76 -45 }
+
+				button_round  = {
+					datacontext = "[HoldingView.GetGUIHoldingBuilding]"
+					datacontext = "[HoldingView.GetTitle]"
+					datacontext = "[HoldingView.GetHolder]"
+					visible = "[And( Character.IsLocalPlayer, Character.IsPlayerInteractionShownAndCanPickTitle('feudalize_church_holding_interaction', Title.Self) )]"
+					enabled = "[Character.IsPlayerInteractionWithTargetTitleValid('feudalize_church_holding_interaction', Title.Self)]"
+					tooltip = "[Character.GetPlayerInteractionWithTargetTitleTooltip('feudalize_church_holding_interaction', Title.Self)]"
+					oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
+					clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
+					onclick = "[Character.OpenPlayerInteractionWithTargetTitle('feudalize_church_holding_interaction', Title.Self)]"
+
+					button_feudalize_tribe = {
+						size = { 25 25 }
+						parentanchor = center
+						alwaystransparent = yes
+					}
+				}
+			}
+				
+			widget = {
+				allow_outside = yes
+				parentanchor = center
+				position = { 76 5 }
+
+				button_round  = {
+					datacontext = "[HoldingView.GetGUIHoldingBuilding]"
+					datacontext = "[HoldingView.GetTitle]"
+					datacontext = "[HoldingView.GetHolder]"
+					visible = "[And( Character.IsLocalPlayer, Character.IsPlayerInteractionShownAndCanPickTitle('republicanise_church_holding_interaction', Title.Self) )]"
+					enabled = "[Character.IsPlayerInteractionWithTargetTitleValid('republicanise_church_holding_interaction', Title.Self)]"
+					tooltip = "[Character.GetPlayerInteractionWithTargetTitleTooltip('republicanise_church_holding_interaction', Title.Self)]"
+					oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
+					clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
+					onclick = "[Character.OpenPlayerInteractionWithTargetTitle('republicanise_church_holding_interaction', Title.Self)]"
+
+					button_icon = {
+						framesize = { 70 60 }
+						texture = "gfx/interface/icons/flat_icons/republicanise.dds"
+						size = { 25 25 }
+						parentanchor = center
+						alwaystransparent = yes
+					}
+				}
+			}
+		
+			widget = {
+				allow_outside = yes
+				parentanchor = center
+				position = { 76 -45 }
+
+				button_round  = {
+					datacontext = "[HoldingView.GetGUIHoldingBuilding]"
+					datacontext = "[HoldingView.GetTitle]"
+					datacontext = "[HoldingView.GetHolder]"
+					visible = "[And( Character.IsLocalPlayer, Character.IsPlayerInteractionShownAndCanPickTitle('republicanise_castle_holding_interaction', Title.Self) )]"
+					enabled = "[Character.IsPlayerInteractionWithTargetTitleValid('republicanise_castle_holding_interaction', Title.Self)]"
+					tooltip = "[Character.GetPlayerInteractionWithTargetTitleTooltip('republicanise_castle_holding_interaction', Title.Self)]"
+					oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
+					clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
+					onclick = "[Character.OpenPlayerInteractionWithTargetTitle('republicanise_castle_holding_interaction', Title.Self)]"
+
+					button_icon = {
+						framesize = { 70 60 }
+						texture = "gfx/interface/icons/flat_icons/republicanise.dds"
+						size = { 25 25 }
+						parentanchor = center
+						alwaystransparent = yes
+					}
+				}
+			}
+			
+			widget = {
+				allow_outside = yes
+				parentanchor = center
+				position = { 76 5 }
+
+				button_round  = {
+					datacontext = "[HoldingView.GetGUIHoldingBuilding]"
+					datacontext = "[HoldingView.GetTitle]"
+					datacontext = "[HoldingView.GetHolder]"
+					visible = "[And( Character.IsLocalPlayer, Character.IsPlayerInteractionShownAndCanPickTitle('theocratize_castle_holding_interaction', Title.Self) )]"
+					enabled = "[Character.IsPlayerInteractionWithTargetTitleValid('theocratize_castle_holding_interaction', Title.Self)]"
+					tooltip = "[Character.GetPlayerInteractionWithTargetTitleTooltip('theocratize_castle_holding_interaction', Title.Self)]"
+					oversound = "event:/SFX/UI/Generic/sfx_ui_generic_pointer_over"
+					clicksound = "event:/SFX/UI/Generic/sfx_ui_generic_select"
+					onclick = "[Character.OpenPlayerInteractionWithTargetTitle('theocratize_castle_holding_interaction', Title.Self)]"
+
+					button_icon = {
+						framesize = { 70 60 }
+						texture = "gfx/interface/icons/flat_icons/theocratize.dds"
+						size = { 25 25 }
+						parentanchor = center
+						alwaystransparent = yes
+					}
+				}
+			}
+			
+			# Cfv end
 
 			### BOTTOM LEFT
 			hbox = {
@@ -1253,11 +1448,13 @@ window = {
 							container = {
 								icon = {
 									name = "terrain"
+									datacontext = "[HoldingView.GetProvince]"
+									tooltip = "HOLDING_TERRAIN_TOTAL_TOOLTIP"
+
 									visible = "[HoldingStatus.IsTerrainType]"
 									datacontext = "[HoldingStatus.GetTerrainType]"
 									texture = "[Terrain.GetIcon]"
 									size = { 35 35 }
-									tooltip = "HOLDING_TERRAIN_TOOLTIP"
 								}
 
 								button_round = {
@@ -1269,7 +1466,7 @@ window = {
 									visible = "[HoldingStatus.IsMAAOriginHere]"
 
 									tooltip = "VIEW_MAA_ORIGIN_TT"
-									
+
 									onclick = "[OpenGameView( 'military' )]"
 									onclick = "[OpenGameViewData( 'men_at_arms', Regiment.GetID )]"
 
@@ -1280,7 +1477,7 @@ window = {
 										size = { 35 35 }
 									}
 								}
-								
+
 								icon = {
 									visible = "[HoldingStatus.IsMAATypeOriginHere]"
 									datacontext = "[HoldingStatus.GetMAATypeOriginHere]"
@@ -1321,14 +1518,14 @@ window = {
 								container = {
 									visible = "[HoldingStatus.IsEpidemic]"
 									datacontext = "[HoldingStatus.GetEpidemic]"
-									
+
 									button_epidemic = {
 										blockoverride "extra_data"
 										{
 											datacontext = "[Epidemic.GetInfectionLevelIn( HoldingView.GetProvince )]"
 
 											spacer = { size = { 0 16 } }
-											
+
 											cooltip_paragraph = {
 												visible = "[EpidemicInfectionLevel.HasRealmModifier]"
 												text = "[EpidemicInfectionLevel.GetRealmModifierDesc]"
@@ -1510,6 +1707,7 @@ window = {
 							layoutpolicy_horizontal = expanding
 							text = "SUPPLY_LIMIT"
 							default_format = "#high"
+							max_width = 140
 						}
 
 						text_single = {
@@ -1518,7 +1716,7 @@ window = {
 						}
 					}
 
-					
+
 					### Plague Resistance
 					hbox = {
 						datacontext = "[Holding.GetProvince]"
@@ -1542,8 +1740,8 @@ window = {
 
 						tooltip_visible = "[ValueBreakdown.HasTooltip]"
 						tooltipwidget = {
-                            widget_value_breakdown_tooltip = {}
-                        }
+							widget_value_breakdown_tooltip = {}
+						}
 					}
 
 					expand = {}
@@ -1695,20 +1893,35 @@ window = {
 					parentanchor = right
 					ignoreinvisible = yes
 					margin_right = -3
+					
+					# Cfv
+					scrollarea = {
+						maximumsize = { 464 -1 }
+						
+						autoresizescrollarea = yes
+						
+						scrollbarpolicy_vertical = always_off
+						scrollbar_horizontal = {
+							using = Scrollbar_Horizontal
+						}
 
-					# Upgrade buildings
-					flowcontainer = {
-						name = "buildings_grid"
-						datamodel = "[HoldingView.GetBuildings]"
-						ignoreinvisible = yes
-						spacing = 3
-						margin_right = 3
-						righttoleft = yes
+						scrollwidget = {
+							# Upgrade buildings
+							flowcontainer = {
+								name = "buildings_grid"
+								datamodel = "[HoldingView.GetBuildings]"
+								ignoreinvisible = yes
+								spacing = 3
+								margin_right = 3
+								righttoleft = yes
 
-						item = {
-							widget_building_item = {}
+								item = {
+									widget_building_item = {}
+								}
+							}
 						}
 					}
+					# Cfv end
 
 					flowcontainer = {
 						visible = "[Or(HoldingView.HasDuchyCapitalBuildingSlot, HoldingView.HasSpecialBuildingSlot )]"
@@ -1897,7 +2110,7 @@ window = {
 													vbox = {
 														spacing = 5
 														layoutpolicy_horizontal = expanding
-														
+
 														text_single = {
 															layoutpolicy_horizontal = expanding
 															text = "[GUIPotentialBuildingItem.GetBuilding.GetTypeName]"
@@ -2219,8 +2432,32 @@ window = {
 											tooltip_offset = { 40 0 }
 
 											background = {
+												visible = "[Not(GUITrackItem.IsConstructingReplacement)]"
 												texture = "gfx/interface/window_county/building_status_circle.dds"
 												framesize = { 120 120 }
+												using = Master_Button_Modify_Texture
+
+												blockoverride "master_color_frame" {
+													frame = 3
+												}
+											}
+
+											background = {
+												visible = "[GUITrackItem.IsConstructingReplacement]"
+												texture = "gfx/interface/window_county/building_status_circle.dds"
+												framesize = { 120 120 }
+												alpha = 0.5
+												using = Master_Button_Modify_Texture
+
+												blockoverride "master_color_frame" {
+													frame = 3
+												}
+											}
+											background = {
+												visible = "[GUITrackItem.IsConstructingReplacement]"
+												texture = "gfx/interface/window_county/building_status_circle.dds"
+												framesize = { 120 120 }
+												frame = 2
 												using = Master_Button_Modify_Texture
 
 												blockoverride "master_color_frame" {
@@ -2284,7 +2521,7 @@ window = {
 											tooltip_offset = { 40 0 }
 
 											background = {
-												visible = "[GUITrackItem.IsConstructing]"
+												visible = "[And(GUITrackItem.IsConstructing, Not(GUITrackItem.IsConstructingReplacement))]"
 												texture = "gfx/interface/window_county/building_status_circle.dds"
 												framesize = { 120 120 }
 												frame = 2
@@ -2768,9 +3005,9 @@ window = {
 	parentanchor = bottom|hcenter
 	position = { 40 -50 }
 	using = Animation_ShowHide_Quick
-	
+
 	using = Window_Background_Subwindow
-	
+
 	vbox = {
 		set_parent_size_to_minimum = yes
 		margin = { 4 4 }
@@ -2889,7 +3126,7 @@ types CountyViewTypes
 				name = "building_icon"
 				visible = "[Not( GUIBuildingItem.CanUpgrade )]"
 				parentanchor = center
-				size = { 40 40 }
+				size = { 45 40 }
 				texture = "[GUIBuildingItem.GetCurrentOrConstrucingBuilding.GetTypeIcon]"
 			}
 
@@ -2897,7 +3134,7 @@ types CountyViewTypes
 				name = "building_icon_can_upgrade"
 				visible = "[GUIBuildingItem.CanUpgrade]"
 				parentanchor = center
-				size = { 40 40 }
+				size = { 45 40 }
 				texture = "[GUIBuildingItem.GetCurrentOrConstrucingBuilding.GetTypeIcon]"
 			}
 

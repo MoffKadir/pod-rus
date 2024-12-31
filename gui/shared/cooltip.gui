@@ -48,6 +48,14 @@ container = {
 	}
 }
 
+container = {
+
+	alwaystransparent = no
+	name = "GlossaryTooltip"
+	using = GlossaryTooltipWidget
+}
+
+
 template character_opinion_tooltip {
 	widget = {
 		using = GeneralTooltipSetup
@@ -231,7 +239,6 @@ template character_trait_tooltip {
 
 							vbox = {
 								layoutpolicy_horizontal = expanding
-
 								spacing = 5
 
 								text_single = {
@@ -455,20 +462,8 @@ types GameTooltipTypes
 				spacing = 10
 
 				background = {
-					name = "header"
-					texture = "gfx/interface/component_tiles/tile_title_big_top_01.dds"
-					spriteType = Corneredstretched
+					using = Background_Header_Tall
 					margin = { 15 0 }
-					texture_density = 2
-
-					modify_texture = {
-						name = "mask"
-						texture = "gfx/interface/component_masks/mask_title_big_top.dds"
-						spriteType = Corneredstretched
-						spriteborder = { 160 0 }
-						blend_mode = alphamultiply
-						alpha = 0.5
-					}
 				}
 
 				block "header_tt" {
@@ -609,11 +604,11 @@ types GameTooltipTypes
 		icon = {
 			size = { 32 32 }
 			tintcolor = "[TooltipInfo.GetTintColor]"
-			
+
 			block "header_texture"
 			{
 			}
-		}	
+		}
 	}
 
 	type cooltip_type = widget {
@@ -1323,6 +1318,7 @@ template maa_type_container_tooltip
 						}
 						expand = {}
 					}
+
 					hbox = {
 						layoutpolicy_horizontal = expanding
 
@@ -1332,12 +1328,21 @@ template maa_type_container_tooltip
 						expand = {}
 					}
 
-
 					hbox = {
 						layoutpolicy_horizontal = expanding
 
 						text_single = {
 							text = "[MenAtArmsType.GetFullStrengthMaintenanceCostForPlayerString]"
+						}
+						expand = {}
+					}
+
+					hbox = {
+						visible = "[IsLandlessAdventurer( GetPlayer )]"
+						layoutpolicy_horizontal = expanding
+
+						text_single = {
+							text = "[Regiment.GetProvisionsCostString]"
 						}
 						expand = {}
 					}
@@ -1419,7 +1424,7 @@ widget = {
 		}
 
 		widget = {
-			minimumsize = { 294 174 }
+			minimumsize = { 352 208 }
 			layoutpolicy_horizontal = expanding
 
 			vbox = {
@@ -1481,6 +1486,7 @@ widget = {
 					}
 					expand = {}
 				}
+
 				hbox = {
 					layoutpolicy_horizontal = expanding
 
@@ -1490,7 +1496,6 @@ widget = {
 					expand = {}
 				}
 
-
 				hbox = {
 					layoutpolicy_horizontal = expanding
 
@@ -1498,6 +1503,16 @@ widget = {
 						text = "[MenAtArmsType.GetFullStrengthMaintenanceCostForPlayerString]"
 					}
 
+					expand = {}
+				}
+
+				hbox = {
+					visible = "[IsLandlessAdventurer( GetPlayer )]"
+					layoutpolicy_horizontal = expanding
+
+					text_single = {
+						text = "[MenAtArmsType.GetProvisionsCostString]"
+					}
 					expand = {}
 				}
 			}
@@ -1578,8 +1593,10 @@ template regiment_container_tooltip
 						using = Font_Size_Big
 
 					}
-					spacer = {
-						size = { 40 40 }
+
+					coa_title_small = {
+						datacontext = "[Regiment.GetOwningTitle]"
+						visible = "[Title.IsValid]"
 					}
 				}
 			}
@@ -1679,6 +1696,12 @@ template regiment_container_tooltip
 						layoutpolicy_horizontal = expanding
 						text = "MAA_MAINTENANCE"
 					}
+
+					text_single = {
+						visible = "[IsLandlessAdventurer( GetPlayer )]"
+						layoutpolicy_horizontal = expanding
+						text = "[MenAtArmsType.GetProvisionsCostString]"
+					}
 				}
 
 				divider_light = {
@@ -1752,8 +1775,10 @@ template regiment_container_text_tooltip
 						using = Font_Size_Big
 
 					}
-					spacer = {
-						size = { 40 40 }
+
+					coa_title_small = {
+						datacontext = "[Regiment.GetOwningTitle]"
+						visible = "[Title.IsValid]"
 					}
 				}
 			}
@@ -1838,6 +1863,12 @@ template regiment_container_text_tooltip
 						layoutpolicy_horizontal = expanding
 						text = "MAA_MAINTENANCE"
 					}
+
+					text_single = {
+						visible = "[IsLandlessAdventurer( GetPlayer )]"
+						layoutpolicy_horizontal = expanding
+						text = "[Regiment.GetProvisionsCostString]"
+					}
 				}
 
 				divider_light = {
@@ -1911,6 +1942,7 @@ template unit_icon_item_tooltip {
 				}
 				expand = {}
 			}
+
 			hbox = {
 				name = "troop_breakdown"
 				layoutpolicy_vertical = expanding
@@ -2017,6 +2049,7 @@ template unit_icon_item_tooltip {
 					align = nobaseline
 				}
 			}
+
 			hbox = {
 				visible = "[UnitItem.HasDisembarkPenalty]"
 				layoutpolicy_horizontal = expanding
@@ -2050,7 +2083,7 @@ template unit_icon_item_tooltip {
 			}
 
 			# #--------------------------------------
-			# |  ¤ Attrition: 1%/month
+			# |  Â¤ Attrition: 1%/month
 			# |  & Well supplied (100) -10/month
 			# | -> Province, 17 days left (29 May yyyy)
 			# | () Movement locked
@@ -2060,6 +2093,7 @@ template unit_icon_item_tooltip {
 				visible = "[Not(Army.IsNeutralToPlayer)]"
 				layoutpolicy_horizontal = expanding
 				spacing = 4
+
 				hbox = {
 					name = "involved_army_attrition_warning"
 					visible = "[Army.IsArmySufferingFromAttrition]"
@@ -2071,6 +2105,7 @@ template unit_icon_item_tooltip {
 						texture = "gfx/interface/icons/map_icons/attrition_icon.dds"
 						size = { 24 24 }
 					}
+
 					text_single = {
 						layoutpolicy_horizontal = expanding
 						name = "attrition"
@@ -2097,17 +2132,20 @@ template unit_icon_item_tooltip {
 					visible = "[Army.IsMoving]"
 					layoutpolicy_horizontal = expanding
 					margin_left = 4
+
 					icon = {
 						name = "unit_retreating"
 						visible = "[UnitItem.IsRetreating]"
 						texture = "gfx/interface/icons/map_icons/army_icon_retreating.dds"
 					}
+
 					icon = {
 						name = "unit_moving"
 						visible = "[Not(UnitItem.IsRetreating)]"
 						texture = "gfx/interface/icons/combat_effects/moving_army.dds"
 						size = { 24 24 }
 					}
+
 					text_single = {
 						layoutpolicy_horizontal = expanding
 						text = "[Army.GetMovementInfoForTooltip]"
@@ -2154,7 +2192,6 @@ template unit_icon_item_tooltip {
 						align = nobaseline
 					}
 				}
-
 
 				text_single = {
 					layoutpolicy_horizontal = expanding
@@ -2348,29 +2385,7 @@ types HoldingTooltips
 				margin = { 0 4 }
 
 				background = {
-					name = "header"
-					texture = "gfx/interface/component_tiles/tile_title_big_top_01.dds"
-					spriteType = Corneredstretched
-					align = vcenter|left
-					texture_density = 2
-					margin = { 4 4 }
-
-					modify_texture = {
-						name = "mask"
-						texture = "gfx/interface/component_masks/mask_title_big_top.dds"
-						spriteType = Corneredstretched
-						spriteborder = { 160 0 }
-						blend_mode = alphamultiply
-						alpha = 0.5
-					}
-
-					modify_texture = {
-						name = "overlay"
-						texture = "gfx/interface/component_overlay/overlay_title_big_top.dds"
-						spriteType = Corneredstretched
-						spriteborder = { 0 0 }
-						blend_mode = overlay
-					}
+					using = Background_Header
 				}
 
 				hbox = {
@@ -2505,28 +2520,7 @@ types FaithTooltips
 				margin = { 0 4 }
 
 				background = {
-					name = "header"
-					texture = "gfx/interface/component_tiles/tile_title_big_top_01.dds"
-					spriteType = Corneredstretched
-					texture_density = 2
-					margin = { 15 0 }
-
-					modify_texture = {
-						name = "mask"
-						texture = "gfx/interface/component_masks/mask_title_big_top.dds"
-						spriteType = Corneredstretched
-						spriteborder = { 160 0 }
-						blend_mode = alphamultiply
-						alpha = 0.5
-					}
-
-					modify_texture = {
-						name = "overlay"
-						texture = "gfx/interface/component_overlay/overlay_title_big_top.dds"
-						spriteType = Corneredstretched
-						spriteborder = { 0 0 }
-						blend_mode = overlay
-					}
+					using = Background_Header_Tall
 				}
 
 				hbox = {
@@ -2543,7 +2537,7 @@ types FaithTooltips
 						text_single = {
 							layoutpolicy_horizontal = expanding
 							name = "header"
-							text = "FAITH_COOLTIP_GETNAME"
+							text = "[Faith.GetAdjectiveNoTooltip]"
 							align = top
 							using = Font_Type_Flavor
 							using = Font_Size_Big
@@ -2839,6 +2833,20 @@ container = {
 		blockoverride "description_text" {
 			text = "BUILDING_TOOLTIP_TEXT"
 		}
+		blockoverride "header_additions" {
+			hbox = {
+				margin_right = 10
+				margin_top = 8
+				margin_left = -4
+
+				icon = {
+					texture = "[Building.GetTypeIcon]"
+					size = { 75 65 }
+
+					using = Master_Button_Modify_Texture
+				}
+			}
+		}
 	}
 }
 
@@ -2954,7 +2962,7 @@ container = {
 	object_tooltip_pop_out = {
 		blockoverride "title_text" {
 			margin = { 0 8 }
-			text = "[GovernmentType.GetNameNoTooltip]"
+			text = "[GovernmentType.GetNameWithIcon]"
 		}
 
 		blockoverride "concept_link" {
@@ -2977,12 +2985,18 @@ container = {
 		}
 
 		blockoverride "concept_link" {
-			text = [contract|E]
+			text = [vassal_contract|E]
 		}
 
 		blockoverride "description_text" {
 			text = "[ObligationLevel.GetEffectText]"
 		}
+
+		# CfV POD: Vassal Obligation level flavor text (vanilla got rid of them)
+		blockoverride "input_info_text" {
+			text = "[ObligationLevel.GetDesc]"
+		}
+		# CfV
 	}
 }
 
@@ -2999,6 +3013,7 @@ types StaticModifierTooltipTypes
 					size = { 32 32 }
 					texture = "[StaticModifier.GetIcon]"
 					tintcolor = "[TooltipInfo.GetTintColor]"
+					visible = "[StaticModifier.HasValidIcon]"
 				}
 			}
 		}
@@ -3117,11 +3132,19 @@ types LawTooltipTypes
 
 		icon = {
 			size = { 60 60 }
-			visible = "[Law.HasIcon]"
+			visible = "[And(Law.HasIcon,Not( IsLandlessAdventurer( GetPlayer ) ))]"
 			texture = "[Law.GetIcon]"
+
 			using = Master_Button_Modify_Texture
 			tintcolor = "[TooltipInfo.GetTintColor]"
 		}
+
+		icon = {
+			size = { 60 60 }
+			visible = "[And(Law.HasIcon, IsLandlessAdventurer( GetPlayer ))]"
+			texture = "[Law.GetIcon]"
+		}
+
 	}
 
 	type pass_law_tooltip = container {
@@ -3142,7 +3165,9 @@ types LawTooltipTypes
 			}
 
 			blockoverride "concept_link" {
-				text = [law|E]
+				block "concept_link" {
+					text = "[law|E]"
+				}
 			}
 
 			blockoverride "extra_data" {
@@ -3255,6 +3280,7 @@ template dynasty_house_tooltip {
 			text = [house|E]
 		}
 		blockoverride "extra_data" {
+
 			cooltip_paragraph = {
 				name = "my_house"
 				visible = "[DynastyHouse.IsPlayerMember]"
@@ -3278,12 +3304,12 @@ template dynasty_house_tooltip {
 				name = "dynasty_level"
 				text = "DYNASTY_HOUSE_TT_DYNASTY_LEVEL"
 			}
-			
+
 			hbox = {
 				layoutpolicy_horizontal = expanding
 
 				datacontext = "[DynastyHouse.GetCurrentHouseUnityStage]"
-				
+
 				visible = "[DynastyHouse.HasHouseUnity]"
 
 				spacing = 5
@@ -3893,30 +3919,9 @@ types CultureTooltips
 				margin_bottom = 12
 
 				background = {
-					name = "header"
-					texture = "gfx/interface/component_tiles/tile_title_big_top_01.dds"
-					spriteType = Corneredstretched
-					align = vcenter|left
-					margin = { 15 0 }
-					texture_density = 2
-
-					modify_texture = {
-						name = "mask"
-						texture = "gfx/interface/component_masks/mask_title_big_top.dds"
-						spriteType = Corneredstretched
-						spriteborder = { 160 0 }
-						blend_mode = alphamultiply
-						alpha = 0.5
-					}
-
-					modify_texture = {
-						name = "overlay"
-						texture = "gfx/interface/component_overlay/overlay_title_big_top.dds"
-						spriteType = Corneredstretched
-						spriteborder = { 0 0 }
-						blend_mode = overlay
-					}
+					using = Background_Header_Tall
 				}
+
 				hbox = {
 					layoutpolicy_horizontal = expanding
 
@@ -4209,29 +4214,7 @@ types CultureTooltips
 				margin_bottom = 12
 
 				background = {
-					name = "header"
-					texture = "gfx/interface/component_tiles/tile_title_big_top_01.dds"
-					spriteType = Corneredstretched
-					align = vcenter|left
-					margin = { 15 0 }
-					texture_density = 2
-
-					modify_texture = {
-						name = "mask"
-						texture = "gfx/interface/component_masks/mask_title_big_top.dds"
-						spriteType = Corneredstretched
-						spriteborder = { 160 0 }
-						blend_mode = alphamultiply
-						alpha = 0.5
-					}
-
-					modify_texture = {
-						name = "overlay"
-						texture = "gfx/interface/component_overlay/overlay_title_big_top.dds"
-						spriteType = Corneredstretched
-						spriteborder = { 0 0 }
-						blend_mode = overlay
-					}
+					using = Background_Header_Tall
 				}
 
 				hbox = {
@@ -4937,29 +4920,7 @@ types InventoryTooltips
 				margin_bottom = 12
 
 				background = {
-					name = "header"
-					texture = "gfx/interface/component_tiles/tile_title_big_top_01.dds"
-					spriteType = Corneredstretched
-					align = vcenter|left
-					margin = { 15 0 }
-					texture_density = 2
-
-					modify_texture = {
-						name = "mask"
-						texture = "gfx/interface/component_masks/mask_title_big_top.dds"
-						spriteType = Corneredstretched
-						spriteborder = { 160 0 }
-						blend_mode = alphamultiply
-						alpha = 0.5
-					}
-
-					modify_texture = {
-						name = "overlay"
-						texture = "gfx/interface/component_overlay/overlay_title_big_top.dds"
-						spriteType = Corneredstretched
-						spriteborder = { 0 0 }
-						blend_mode = overlay
-					}
+					using = Background_Header_Tall
 				}
 
 				hbox = {
@@ -5036,6 +4997,16 @@ types InventoryTooltips
 						layoutpolicy_vertical = expanding
 						spacing = 5
 
+						# POD CfV: Vanilla fix for CTDs when checking artifact requirements
+						text_single = {
+							layoutpolicy_horizontal = expanding
+							visible = "[Not( Artifact.CanBenefitPlayer )]"
+							text = "POD_ARTIFACT_EFFECT_HAS_CAN_BENEFIT"
+							tooltip = "ARTIFACT_EFFECT_REQUIREMENT_TT"
+							margin_bottom = 5
+						}
+						# CfV end
+
 						hbox = {
 							name = "modifiers"
 							layoutpolicy_horizontal = expanding
@@ -5100,6 +5071,8 @@ types InventoryTooltips
 
 					hbox = {
 						layoutpolicy_horizontal = expanding
+						# POD CfV: Hide source of Charon's artifacts
+						visible = "[GetScriptedGui('should_display_artifact_owner').IsShown(GuiScope.SetRoot(Artifact.MakeScope).End)]"
 						text_single = {
 							name = "owner"
 							text = "ARTIFACT_CURRENT_HOLDER"
@@ -5110,7 +5083,8 @@ types InventoryTooltips
 
 					hbox = {
 						name = "artifact_creator"
-						visible = "[Artifact.HasCreator()]"
+						# POD CfV: Hide source of Charon's artifacts
+						visible = "[And( Artifact.HasCreator(), GetScriptedGui('should_display_artifact_creator').IsShown(GuiScope.SetRoot(Artifact.MakeScope).End) )]"
 						layoutpolicy_horizontal = expanding
 
 						text_single = {
@@ -5127,6 +5101,13 @@ types InventoryTooltips
 						visible = "[Title.IsValid]"
 						layoutpolicy_horizontal = expanding
 
+						# POD CfV: Hide source of Charon's artifacts
+						# (nested hboxes to prevent datafunction error spam)
+						hbox = {
+						visible = "[Not( GetScriptedGui('title_belongs_to_storyteller').IsShown(GuiScope.SetRoot(Title.MakeScope).End) )]"
+						layoutpolicy_horizontal = expanding
+						# CfV end
+
 						coa_title_tiny_crown = {
 							size = { 40 50 }
 							blockoverride "coa_tooltip" {}
@@ -5141,6 +5122,9 @@ types InventoryTooltips
 							text = "ARTIFACT_TITLE_ASSOCIATION"
 						}
 						expand = {}
+						# POD CfV
+						}
+						# CfV end
 					}
 
 					text_multi = {
@@ -5720,7 +5704,7 @@ container = {
 		}
 
 		blockoverride "concept_link" {
-			text = "[SelectLocalization(SchemeType.IsHostile, hostile_scheme, personal_scheme)|E]"
+			text = "[SchemeType.GetCategoryName|E]"
 		}
 
 		blockoverride "header_additions" {
@@ -5736,6 +5720,26 @@ container = {
 					tintcolor = "[TooltipInfo.GetTintColor]"
 				}
 			}
+		}
+	}
+}
+
+container = {
+	name = "SchemeAgentSlotTypeTooltip"
+	alwaystransparent = no
+
+	object_tooltip_pop_out = {
+		blockoverride "title_text" {
+			margin = { 0 8 }
+			text = "[AgentSlotType.GetNameNoTooltip]"
+		}
+
+		blockoverride "description_text" {
+			text = "[AgentSlotType.GetDesc]"
+		}
+
+		blockoverride "concept_link" {
+			text = "[agent|E]"
 		}
 	}
 }
@@ -5855,7 +5859,7 @@ types StruggleTooltipTypes {
 							}
 
 							spacer = {
-								size { 10 0 }
+								size = { 10 0 }
 							}
 
 							text_single = {
@@ -6372,7 +6376,7 @@ template struggle_tooltip {
 					}
 
 					spacer = {
-						size { 0 2 }
+						size = { 0 2 }
 					}
 
 					hbox = {
@@ -6526,7 +6530,7 @@ types StrugglePhaseTypes
 					layoutpolicy_horizontal = expanding
 					spacing = 5
 					margin = { 5 5 }
-					
+
 					background = {
 						using = Background_Area_Light
 						tintcolor = { 0.8 0.5 0.5 2.0 }
@@ -6574,10 +6578,10 @@ types StrugglePhaseTypes
 						}
 
 						text_single = {
-						text = STRUGGLE_ENDING_PHASE_EFFECTS_TITLE
-						max_width = 400
-						fonttintcolor = "[TooltipInfo.GetTintColor]"
-						alwaystransparent = no
+							text = STRUGGLE_ENDING_PHASE_EFFECTS_TITLE
+							max_width = 400
+							fonttintcolor = "[TooltipInfo.GetTintColor]"
+							alwaystransparent = no
 						}
 					}
 
@@ -6590,7 +6594,7 @@ types StrugglePhaseTypes
 						text = "[Struggle.GetEndingPhaseEffectDesc( StrugglePhase.Self, Character.Self )]"
 						fonttintcolor = "[TooltipInfo.GetTintColor]"
 						alwaystransparent = no
-					}			
+					}
 				}
 			}
 
@@ -6855,7 +6859,7 @@ container = {
 template activity_locale_tooltip {
 	container = {
 		alwaystransparent = no
-		
+
 		object_tooltip_pop_out = {
 			blockoverride "title_text" {
 				margin = { 0 8 }
@@ -6886,7 +6890,9 @@ template travel_option_tooltip {
 
 		object_tooltip_pop_out = {
 
-			blockoverride "concept_link" {}
+			blockoverride "concept_link" {
+				text = "[travel_option|E]"
+			}
 
 			blockoverride "title_text" {
 				margin = { 0 8 }
@@ -7585,7 +7591,7 @@ template epidemic_tooltip {
 						autoresize = yes
 						fontsize_min = 14
 						using = Font_Size_Small
-						
+
 						align = left
 						text = "[Epidemic.GetIntensityName]"
 						default_format = "#weak"
@@ -7598,7 +7604,7 @@ template epidemic_tooltip {
 						autoresize = yes
 						fontsize_min = 14
 						using = Font_Size_Small
-						
+
 						align = right
 						text = "[Epidemic.GetType.GetName]"
 						default_format = "#weak"
@@ -7609,7 +7615,7 @@ template epidemic_tooltip {
 				}
 			}
 
-			blockoverride "main_description" 
+			blockoverride "main_description"
 			{
 				vbox = {
 					layoutpolicy_horizontal = expanding
@@ -7655,7 +7661,7 @@ template epidemic_tooltip {
 							}
 							visible = "[Not( GetPlayer.HasInfection( Epidemic.Self ) )]"
 						}
-						
+
 						cooltip_paragraph = {
 							text = "EPIDEMIC_TOOLTIP_OUTBREAK"
 						}
@@ -7722,13 +7728,13 @@ template legend_tooltip {
 			{
 				hbox = {
 					layoutpolicy_horizontal = expanding
-					
+
 					text_single = {
 						layoutpolicy_horizontal = expanding
 						autoresize = yes
 						fontsize_min = 14
 						using = Font_Size_Small
-						
+
 						align = left
 						text = "[Legend.GetQualityLevel]"
 						default_format = "#weak"
@@ -7741,7 +7747,7 @@ template legend_tooltip {
 						autoresize = yes
 						fontsize_min = 14
 						using = Font_Size_Small
-						
+
 						align = right
 						text = "[Legend.GetType.GetName]"
 						default_format = "#weak"
@@ -7810,7 +7816,7 @@ template legend_tooltip {
 			blockoverride "concept_link" {
 				text = "[legend|E]"
 			}
-			
+
 			blockoverride "input_info_text" {
 				text = "CLICK_TO_VIEW"
 			}
@@ -7843,3 +7849,221 @@ container = {
 	using = legend_tooltip
 }
 
+template task_contract_tooltip {
+	container = {
+		alwaystransparent = no
+
+		object_tooltip_pop_out = {
+			blockoverride "title_text" {
+				margin = { 0 8 }
+				raw_text = "[TaskContract.GetNameNoTooltip]"
+				default_format = "#T"
+			}
+
+			blockoverride "description_text" {
+				text = "TASK_CONTRACT_TOOLTIP_DESC"
+			}
+
+			blockoverride "concept_link" {
+				text = "[task_contract|E]"
+			}
+		}
+	}
+}
+
+container = {
+	alwaystransparent = no
+	name = "TaskContractTooltip"
+	using = task_contract_tooltip
+}
+
+template domicile_building_tooltip {
+	container = {
+		alwaystransparent = no
+
+		object_tooltip_pop_out = {
+			blockoverride "header_additions"
+			{
+				hbox = {
+					margin_right = 10
+					margin_top = 8
+					margin_left = -4
+
+					icon_building = {
+						datacontext = "[DomicileBuilding.GetRandomAsset]"
+						size = { 52 52 }
+
+						texture = "[DomicileBuildingAsset.GetIcon]"
+					}
+				}
+			}
+
+			blockoverride "title_text"
+			{
+				margin = { 0 8 }
+				text = "[DomicileBuilding.GetNameAndLevel]"
+				default_format = "#T"
+			}
+
+			blockoverride "concept_link" {
+				text = "[domicile_building|E]"
+			}
+
+			blockoverride "description_text"
+			{
+				text = "[DomicileBuilding.GetSingleBuildingTooltip]"
+			}
+		}
+	}
+}
+
+container = {
+	alwaystransparent = no
+	name = "DomicileBuildingTooltip"
+	using = domicile_building_tooltip
+}
+
+template title_troops_tooltip {
+	container = {
+		alwaystransparent = yes
+		position = { 25 25 }
+		visible = "[SelectTitleTroopAssignmentView.IsHoveringValidTitle]"
+		datacontext = "[SelectTitleTroopAssignmentView.GetHoveredTitle]"
+
+		object_tooltip_pop_out = {
+			alwaystransparent = yes
+
+			visible = "[SelectTitleTroopAssignmentView.IsAdministrativeTitle]"
+			blockoverride "progress" {}
+
+			blockoverride "header_additions" {
+				margin_top = -4
+
+				coa_title_small_crown = {
+					size = { 40 50 }
+					blockoverride "coa_tooltip" {}
+					blockoverride "coa_hover_glow_visible"
+					{
+						visible = no
+					}
+				}
+			}
+
+			blockoverride "title_text" {
+				text = "[Title.GetNameWithUnderlyingNoTooltip|U]"
+			}
+
+			blockoverride "subheading" {
+				text_single = {
+					layoutpolicy_horizontal = expanding
+					text = "TITLE_TROOPS_MAPMODE_TOOLTIP_STATUS"
+				}
+			}
+
+			blockoverride "concept_link" {}
+
+			blockoverride "main_description" {
+				text_single = {
+					layoutpolicy_horizontal = expanding
+					text = "TITLE_TROOPS_MAPMODE_TOOLTIP_CURRENT_ARMY_SIZE"
+				}
+
+				text_single = {
+					visible = "[Not(IsDataModelEmpty(SelectTitleTroopAssignmentView.GetHiredTitles))]"
+					layoutpolicy_horizontal = expanding
+					text = "TITLE_TROOPS_MAPMODE_TOOLTIP_TROOPS_FROM"
+					default_format = "#weak"
+				}
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					hbox = {
+						layoutpolicy_horizontal = shrinking
+						datamodel = "[SelectTitleTroopAssignmentView.GetHiredTitles]"
+
+						item = {
+							coa_title_tiny_crown = {
+								blockoverride "coa_hover_glow_visible"
+								{
+									visible = no
+								}
+
+								icon = {
+									parentanchor = top|right
+									position = { 5 9 }
+									size = { 16 16 }
+									texture = "gfx/interface/icons/currencies/icon_influence_01.dds"
+									visible = "[Title.HasDiscountedTitleMaa(GetPlayer.Self)]"
+
+									glow = {
+										color = { 0 0 0 0.8 }
+										glow_radius = 3
+										using = Glow_Standard
+									}
+								}
+							}
+						}
+					}
+
+					expand = {}
+				}
+
+				vbox = {
+					visible = "[Title.HasHolder]"
+					layoutpolicy_horizontal = expanding
+
+					text_single = {
+						visible = "[Not( SelectTitleTroopAssignmentView.IsSelectingTitleForTransfer )]"
+						layoutpolicy_horizontal = expanding
+						text = "TITLE_TROOPS_MAPMODE_TOOLTIP_CLICK"
+						margin = { 0 10 }
+					}
+
+					vbox = {
+						visible = "[SelectTitleTroopAssignmentView.IsSelectingTitleForTransfer]"
+						layoutpolicy_horizontal = expanding
+
+						text_single = {
+							visible = "[Not( IsGameViewOpen( 'hired_troop_detail_view' ) )]"
+							layoutpolicy_horizontal = expanding
+							text = "TITLE_TROOPS_ASSIGNMENT_GUIMODE_REASSIGNMENT_TOOLTIP_CLICK"
+							margin = { 0 10 }
+						}
+
+						text_single = {
+							visible = "[IsGameViewOpen( 'hired_troop_detail_view' )]"
+							layoutpolicy_horizontal = expanding
+							text = "TITLE_TROOPS_ASSIGNMENT_GUIMODE_TOOLTIP_CLICK"
+							margin = { 0 10 }
+						}
+					}
+				}
+
+				text_single = {
+					visible = "[Not( Title.HasHolder )]"
+					layoutpolicy_horizontal = expanding
+					text = "TITLE_TROOPS_ASSIGNMENT_GUIMODE_NOT_CREATED"
+					margin = { 0 10 }
+				}
+			}
+		}
+
+		text_single = {
+			using = DefaultTooltipBackground
+			using = DefaultTooltipText
+			margin = { 20 10 }
+			margin_bottom = 20
+			visible = "[Not( SelectTitleTroopAssignmentView.IsAdministrativeTitle )]"
+			text = "TITLE_TROOPS_ASSIGNMENT_GUIMODE_NOT_ADMIN"
+		}
+	}
+}
+
+# Widget name referenced in code. Do not change!
+container = {
+	alwaystransparent = yes
+	filter_mouse = none
+	name = "TitleTroopsTooltip"
+	visible = "[IsMapMode( 'title_troops' )]"
+	using = title_troops_tooltip
+}
