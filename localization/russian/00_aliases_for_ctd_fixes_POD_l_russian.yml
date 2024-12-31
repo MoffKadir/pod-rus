@@ -1,39 +1,54 @@
 ﻿l_russian:
- # This localization replaces aliases from common\game_concepts\00_POD_game_concepts.txt 
- # After Roads to Power, they started leading to CTDs. 
- # So far, it is unclear why. Probably some obscure reason like hash collisions or race conditions. 
- # Until we figure out the real reason, this is our workaround. 
-  
- # To revert these, first uncomment the alias lines in common\game_concepts\00_POD_game_concepts.txt 
- # Then go through these one by one. 
- # To revert: Search&replace $pod_masquerade_exposure$ -> [masquerade_exposure|E] 
- pod_masquerade_exposure: "[Concept('the_masquerade','Masquerade Exposure')]"
- # To revert: Search&replace $pod_masquerade_exposure_with_icon$ -> [masquerade_exposure_with_icon|E] 
- pod_masquerade_exposure_with_icon: "[Concept('the_masquerade','@masquerade_icon! Masquerade Exposure')]"
- # To revert: Search&replace $pod_cainites$ -> [cainites|E] 
- pod_cainites: "[Concept('cainite','Cainites')]"
- # To revert: Search&replace $pod_diablerize$ -> [diablerize|E] 
- pod_diablerize: "[Concept('diablerie','Diablerize')]"
- # To revert: Search&replace $pod_diablerized$ -> [diablerized|E] 
- pod_diablerized: "[Concept('diablerie','Diablerized')]"
- # To revert: Search&replace $pod_diablerizing$ -> [diablerizing|E] 
- pod_diablerizing: "[Concept('diablerie','Diablerizing')]"
+ # This localization replaces aliases from common\game_concepts\00_POD_game_concepts.txt
+ # After Roads to Power, they started leading to CTDs.
+ # So far, it is unclear why. Probably some obscure reason like hash collisions or race conditions.
+ # Until we figure out the real reason, this is our workaround.
+
+ # To revert these, first uncomment the alias lines in common\game_concepts\00_POD_game_concepts.txt
+ # Then go through these one by one.
+
+ # To revert: Search&replace $pod_masquerade_exposure$ -> [masquerade_exposure|E]
+ pod_masquerade_exposure: "[Concept('the_masquerade','Раскрыт')]"
+
+ # To revert: Search&replace $pod_masquerade_exposure_with_icon$ -> [masquerade_exposure_with_icon|E]
+ pod_masquerade_exposure_with_icon: "[Concept('the_masquerade','@masquerade_icon! Раскрыт')]"
+
+ # To revert: Search&replace $pod_cainites$ -> [cainites|E]
+ pod_cainites: "[Concept('cainite','Каинит')]"
+
+ # To revert: Search&replace $pod_diablerize$ -> [diablerize|E]
+ pod_diablerize: "[Concept('diablerie','Диаблери')]"
+ # To revert: Search&replace $pod_diablerized$ -> [diablerized|E]
+
+ pod_diablerized: "[Concept('diablerie','Диаблери')]"
+
+ # To revert: Search&replace $pod_diablerizing$ -> [diablerizing|E]
+ pod_diablerizing: "[Concept('diablerie','Диаблери')]"
+
  # To revert: Search&replace $pod_diablerist$ -> [diablerist|E] 
- pod_diablerist: "[Concept('diablerie','Diablerist')]"
+ pod_diablerist: "[Concept('diablerie','Диаблери')]"
+
  # To revert: Search&replace $pod_torpid$ -> [torpid|E] 
- pod_torpid: "[Concept('torpor','torpid')]"
- # To revert: Search&replace $pod_Sires$ -> [Sires|E] 
- pod_Sires: "[Concept('Sire','Sires')]"
- # To revert: Search&replace $pod_Embraced$ -> [Embraced|E] 
- pod_Embraced: "[Concept('Embrace','Embraced')]"
- # To revert: Search&replace $pod_disciplines$ -> [disciplines|E] 
- pod_disciplines: "[Concept('discipline','Disciplines')]"
- # To revert: Search&replace $pod_Clans$ -> [Clans|E] 
- pod_Clans: "[Concept('Clan','Clans')]"
+ pod_torpid: "[Concept('torpor','торпор')]"
+
+ # To revert: Search&replace $pod_Sires$ -> [Sires|E]
+ pod_Sires: "[Concept('Sire','Сир')]"
+
+ # To revert: Search&replace $pod_Embraced$ -> [Embraced|E]
+ pod_Embraced: "[Concept('Embrace','Объят')]"
+
+ # To revert: Search&replace $pod_disciplines$ -> [disciplines|E]
+ pod_disciplines: "[Concept('discipline','Дисциплин')]"
+
+ # To revert: Search&replace $pod_Clans$ -> [Clans|E]
+ pod_Clans: "[Concept('Clan','Клан')]"
+
  # To revert: Search&replace $pod_antediluvians$ -> [antediluvians|E] 
- pod_antediluvians: "[Concept('antediluvian','Antediluvians')]"
+ pod_antediluvians: "[Concept('antediluvian','Допотопн')]"
+
  # To revert: Search&replace $pod_ghouls$ -> [ghouls|E] 
- pod_ghouls: "[Concept('ghoul','Ghouls')]"
+ pod_ghouls: "[Concept('ghoul','Гул')]"
+
  # To revert: Search&replace $pod_revenants$ -> [revenants|E] 
  pod_revenants: "[Concept('revenant','Revenants')]"
  # To revert: Search&replace $pod_splats$ -> [splats|E] 
@@ -52,8 +67,10 @@
  pod_possess: "[Concept('possession','possess')]"
  # To revert: Search&replace $pod_thralls$ -> [thralls|E] 
  pod_thralls: "[Concept('thrall','Thralls')]"
+
  # To revert: Search&replace $pod_Fetters$ -> [Fetters|E] 
- pod_Fetters: "[Concept('Fetter','Fetters')]"
+ pod_Fetters: "[Concept('Fetter','Оков')]"
+
  # To revert: Search&replace $pod_grace_i$ -> [grace_i] 
  pod_grace_i: "[Concept('grace','@grace_icon!')]"
  # To revert: Search&replace $pod_st_peters_city$ -> [st_peters_city|E] 
