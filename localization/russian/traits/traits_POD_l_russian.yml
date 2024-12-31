@@ -1,41 +1,52 @@
 ﻿l_russian:
- trait_use_ingame_chargen: "Use In-game Character Creator"
- trait_use_ingame_chargen_desc: "Recommended for new players.\n\nUpon entering the game, you will go through a series of events where you can pick a [splat|E] and all the necessary supernatural traits and modifiers get set up automatically."
-  
- trait_unusual: "Необычный"
- trait_unusual_desc: "С этим человеком что-то не так"
+ trait_use_ingame_chargen: "Внутриигровой редактор персонажей"
+ trait_use_ingame_chargen_desc: "Рекомендовано для новых игроков.\n\nПри входе в игру вы пройдете через серию событий, в которых вы можете выбрать [Concept('splat', 'вид')|E] и все нужные сверхъестественные свойства и модификаторы будут заданы автоматически."
+
+ trait_unusual: "Необычность"
+ trait_unusual_desc: "В этом персонаже есть нечто странное."
+
  trait_vampire: "Вампир"
- trait_vampire_desc: "Этот персонаж - один из неживых"
+ trait_vampire_desc: "Этот персонаж относится к нежити."
+
  trait_diablerist: "Диаблерист"
- trait_diablerist_desc: "Этот персонаж совершил [diablerie|El], выпив кровь из сердца другого вампира и поглотил его душу."
- trait_cultist: "Demonic Cultist"
- trait_cultist_desc: "This character has made a pact with a demonic power for infernal investments."
+ trait_diablerist_desc: "Этот персонаж совершил [diablerie|El], выпив кровь из сердца другого вампира и пожрав его душу."
+
+ trait_cultist: "Демонический культист"
+ trait_cultist_desc: "Этот персонаж заключил договор с демонической силой ради демонических даров."
+
  trait_infernalist: "Инферналист"
- trait_infernalist_desc: "Этот персонаж заключил договор с демонической силой ради темных знаний."
+ trait_infernalist_desc: "Этот персонаж связался с темными богами, демонами, существами из пустоты и еще бог знает с кем."
+
  trait_ghoul: "Гуль"
- trait_ghoul_desc: "Смертный, который выпил кровь вампира, в результате чего испытывает потребность в большем количестве и (большую часть времени) добровольно становится рабом своего хозяина."
+ trait_ghoul_desc: "Смертный, поглотивший кровь вампира, что приводит к потребности в большем количестве и (чаще всего) к готовности стать рабом своего хозяина."
+
  trait_szlachta: "Шляхта"
- trait_szlachta_desc: "Смертный, который выпил кровь вампира, а затем был преобразован Дисциплиной Изменчивости."
+ trait_szlachta_desc: "Смертный, поглотивший кровь вампира, а затем преобразованный [Concept('discipline', 'дисциплиной')|E] Изменчивости."
+
  trait_mortal: "Смертный"
  trait_mortal_desc: "Обычное человеческое существо. С такой короткой жизнью..."
+
  trait_werewolf: "Оборотень"
- trait_werewolf_desc: "Сверхъестественные существа способные менять форму. Они зовут себя "Гару"."
- trait_track_werewolf: "Rank"
- trait_track_werewolf_desc: "#bold Level 2:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Level 3:#! [umbra_aptitude|E]: [grace_i]#P +25%#!\n#bold Level 4:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Level 5:#! [umbra_aptitude|E]: [grace_i]#P +50%#!\n#bold Level 6:#! [umbra_aptitude|E]: [grace_i]#P +75%#!\n#italic Rank is a fundamental part of Garou society, and the fullest manifestation of the hierarchical nature of werewolves.#!"
+ trait_werewolf_desc: "Сверхъестественные существа, меняющие облик. Они называют себя «Гару»."
+ trait_track_werewolf: "Ранг"
+ trait_track_werewolf_desc: "#bold Уровень 2:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Уровень 3:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Уровень 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Уровень 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Уровень 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +75%#!\n#italic Ранг - фундаментальная часть общества Гару и самое полное проявление иерархической природы оборотней.#!"
+
  trait_mage: "Маг"
- trait_mage_desc: "Люди с пробужденными аватарами, которые позволяют им владеть истинной магией и изменять структуру реальности."
+ trait_mage_desc: "Люди с пробужденными аватарами, которые позволяют им владеть истинной магией и изменять ткань реальности."
+
  trait_wraith: "Призрак"
  trait_wraith_desc: "Мертвая душа, возвращенная в мир смертных темной магией или привязанностью к чему-то, что она оставила при жизни."
- trait_gaunt: "Gaunt"
- trait_gaunt_desc: "A Gaunt is an older wraith who has resolved one or more of its [Fetters|E] and still maintains them."
- trait_domem: "Domem"
- trait_domem_desc: "A Domem is a wraith whose [Fetters|E] are all destroyed, preventing them from staying in the [shadowlands|E] for any period of time - while Domemhood generally implies age, a wraith can become a Domem while still very young, all it requires is that their [Fetters|E] be destroyed."
- trait_enfant: "Enfants"
- trait_enfant_desc: "Self-aware wraiths begin as Enfants; when a person dies, its soul is reborn in the [underworld|E] covered in a layer of plasm called a caul."
- trait_track_fetter: "Fetter"
+ trait_gaunt: "Привидение"
+ trait_gaunt_desc: "Привидение - это старый призрак, который избавился от одних или нескольких [Concept('Fetters', 'оков')|E] и всё ещё хранит их."
+ trait_domem: "Домем"
+ trait_domem_desc: "Домем - это призрак, все [Concept('Fetters', 'оковы')|E] которого разрушены, что не позволяет ему оставаться в [UmbraGlossaryLocalized('shadowlands','Загробном мире')] в течение какого-либо периода времени - хотя статус домема обычно подразумевает возраст, призрак может стать домемом, будучи ещё очень молодым, для этого нужно лишь разрушить его [Concept('Fetters', 'оковы')|E]."
+ trait_enfant: "Анфан"
+ trait_enfant_desc: "Самосознающие призраки начинают как анфаны; когда кто-то умирает, его душа возрождается в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], покрытая слоем плазмы, называемом оболочкой."
+ trait_track_fetter: "Оковы"
  trait_track_fetter_desc: "$game_concept_Fetter_desc$"
- trait_track_fetter_resolved: "Fetter Resolved"
- trait_track_fetter_resolved_desc: "[Fetters|E] can also be resolved, meaning a wraith gains the strength to say goodbye to the things and people they loved in life. A wraith who manages to Resolve all of his [Fetters|E] can remain in the [shadowlands|E] indefinitely, but if such success bestows this benefit, it is rare to the point of myth."
+ trait_track_fetter_resolved: "Снятые оковы"
+ trait_track_fetter_resolved_desc: "[Fetters|E] can also be resolved, meaning a wraith gains the strength to say goodbye to the things and people they loved in life. A wraith who manages to Resolve all of his [Fetters|E] can remain in the [UmbraGlossaryLocalized('shadowlands','Загробном мире')] indefinitely, but if such success bestows this benefit, it is rare to the point of myth."
+
  trait_spirit: "Spirit"
  trait_spirit_desc: "Spirits are disembodied entities that originate in, and usually dwell in, the Umbra - for that reason, some mages call them the "Umbrood"."
  trait_wight: "Вихт"
