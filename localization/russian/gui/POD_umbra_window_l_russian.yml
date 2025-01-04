@@ -22,8 +22,8 @@
  I_GAIN_UMBRA_PROGRESS: "Вы получаете прогресс $VALUE|+0$"
  I_GAINED_UMBRA_PROGRESS: "Вы получили прогресс $VALUE|+0$"
 
- UMBRA_RECRUIT_BYGONE: "Позволяет найти случайного ушедшего в [Concept('umbra_expedition', 'экспедиции в Умбру')|E]."
- UMBRA_DISCOVERY_FETISH: "Позволяет найти случайный фетиш в [Concept('umbra_expedition', 'экспедиции в Умбру')|E]. #Weak (Если у вас есть гносис)#!"
+ UMBRA_RECRUIT_BYGONE: "Позволяет найти случайного Ушедшего в ходе [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
+ UMBRA_DISCOVERY_FETISH: "Позволяет найти случайный фетиш в ходе [Concept('umbra_expedition', 'путешествия в Умбру')|E]. #Weak (Если у вас есть гносис)#!"
 
  UMBRA_INVESTMENTS_OF_SOUL: "Получит достоинство «Инвеститура души». (или получит #V 1#! очко пути инвеституры)"
 
@@ -63,10 +63,10 @@
  has_any_special_mine_tt: "В текущем местоположении есть [Concept('special_building', 'особая постройка')|E] шахты ([GetPlayer.GetCurrentLocation.GetTitle.GetNameNoTier])"
  appoint_explorer_tt: "Назначить исследователя, который будет искать открытия"
 
- umbra_expedition_memory: "завершение экспедиции в [Concept('umbra', 'Умбру')|E]"
- umbra_expedition_memory_desc: "я [Select_CString(ROOT.Char.IsFemale, 'завершила', 'завершил' )] экспедицию в [Concept('umbra', 'Умбру')|E]"
- umbra_expedition_memory_desc_second_perspective: "вы завершили экспедицию в [Concept('umbra', 'Умбру')|E]"
- umbra_expedition_memory_desc_third_perspective: "[owner.GetFirstName] [Select_CString(owner.IsFemale, 'завершила', 'завершил' )] экспедицию в [Concept('umbra', 'Умбру')|E]"
+ umbra_expedition_memory: "завершение путешествия в [Concept('umbra', 'Умбру')|E]"
+ umbra_expedition_memory_desc: "я [Select_CString(ROOT.Char.IsFemale, 'завершила', 'завершил' )] путешествие в [Concept('umbra', 'Умбру')|E]"
+ umbra_expedition_memory_desc_second_perspective: "вы завершили путешествие в [Concept('umbra', 'Умбру')|E]"
+ umbra_expedition_memory_desc_third_perspective: "[owner.GetFirstName] [Select_CString(owner.IsFemale, 'завершила', 'завершил' )] путешествие в [Concept('umbra', 'Умбру')|E]"
 
  umbra_discovery_memory: "обнаружение открытия в [Concept('umbra', 'Умбре')|E]"
  umbra_discovery_memory_desc: "я [Select_CString(ROOT.Char.IsFemale, 'обнаружила', 'обнаружил' )] открытие в [Concept('umbra', 'Умбре')|E]"
@@ -298,10 +298,10 @@
  umbra_retreat_tt: "Успешное отступление"
 
  coterie_spirit_travel_desc: "[GetPlayer.Custom('PODCoterie')] отправится с вами?"
- coterie_spirit_travel_tt: "[GetPlayer.Custom('PODCoterie')] задействует свои навыки в [Concepr('umbra_expedition', 'экспедиции в Умбру')|E]"
+ coterie_spirit_travel_tt: "[GetPlayer.Custom('PODCoterie')] задействует свои навыки в [Concepr('umbra_expedition', 'путешествии в Умбру')|E]"
 
  physical_spirit_travel_desc: "Путешествовать в своём теле?"
- physical_spirit_travel_tt: "Путешествовать телом, а не проецировать душу, что даст вам иммунитет к убийству, но вы будете получать раны вместо стресса во время [Concepr('umbra_expedition', 'экспедиции в Умбру')|E]."
+ physical_spirit_travel_tt: "Путешествовать телом, а не проецировать душу, что даст вам иммунитет к убийству, но вы будете получать раны вместо стресса во время [Concepr('umbra_expedition', 'путешествия в Умбру')|E]."
 
  # Umbra Action
  umbra_exploration_valid_tooltip: "Вы уже исследовали это место в этом месяце."
@@ -415,8 +415,8 @@
  umbra_dancing_loom_of_shantar_choose_tt: "Вы получите [GetGlobalVariable('dancing_loom_of_shantar_link').Artifact.GetName]"
  umbra_whispering_ankh_of_meros_choose_tt: "Вы получите [GetGlobalVariable('whispering_ankh_of_meros_link').Artifact.GetName]"
 
- umbra_expedition_tooltip: "Начать [Concepr('umbra_expedition', 'экспедицию в Умбру')|E]"
- umbra_expedition_confirm: "[Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagName))]: экспедиция"
+ umbra_expedition_tooltip: "Начать [Concepr('umbra_expedition', 'путешествие в Умбру')|E]"
+ umbra_expedition_confirm: "[Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagName))]: путешествие"
 
  sekhem_regen_upgrade: "Sekhem recovery when stationed in this realm #P +1#!"
  search_invention_unlocked: "Unlock Search Invention action"

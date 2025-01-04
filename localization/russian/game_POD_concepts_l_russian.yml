@@ -1,15 +1,18 @@
 ﻿l_russian:
- game_concept_princes_of_darkness: "Князья Тьмы"
- game_concept_princes_of_darkness_desc: "Мод для Crusader Kings 3 , который сфокусирован на сверхестественных существах  кампании White Wolf и их вселенной '[world_of_darkness|E]'. Вы играете в него прямо сейчас![prince|E] это главный титул для [GetTrait('vampire').GetName( GetNullCharacter )] ,что управляет государством, эквивалентно к  [duchy|E]. Что есть Тьма? Найдите этот ответ внутри себя."
-  
+ game_concept_princes_of_darkness: "Princes of Darkness"
+ game_concept_princes_of_darkness_desc: "Мод для Crusader Kings 3, посвящённый сверхестественным существам из вселенной «[world_of_darkness|E]» компании White Wolf. Вы играете в него прямо сейчас! [prince|E] - это основной землевладельческий титул для #L [GetTrait('vampire').GetName( GetNullCharacter )|l]а#!, который правит доменом, эквивалентным [Concept('duchy', 'герцогству')|E] из CK3. Что есть Тьма? Найдите этот ответ внутри себя."
+
  game_concept_world_of_darkness: "Мир Тьмы"
  game_concept_WoD: "МТ"
- game_concept_world_of_darkness_desc: "Мир Тьмы это вселенная, которой уже более 30 лет с сотнями книг и другими формами медиа, посвященными ей. Главная идея в том,что в нашем мире, существует множество видов свехъестественных существ,которые оказывают на него влияние,создавая параллельную вселенную полную интриг и захватывающих историй."
+ game_concept_world_of_darkness_desc: "Мир Тьмы - это вселенная, которой уже более 30 лет, и о которой написаны сотни книг и других материалов. Основная идея заключается в том, что в нашем мире незримо взаимодействуют несколько фракций свехъестественных существ, создавая скрытый мир, полный интриг и захватывающих историй."
+
  game_concept_prince: "Князь"
  game_concept_princes: "Князья"
- game_concept_prince_desc: "$Князь$ это главный титул [GetTrait('vampire').GetName( GetNullCharacter )] что управляет этой землей, эквивалентно CK3 [duchy|E]."
- game_concept_blood_potency: "$game_concept_bloodpotency$"
+ game_concept_prince_desc: "Князь - это основной землевладельческий титул для #L [GetTrait('vampire').GetName( GetNullCharacter )|l]а#!, который правит доменом, эквивалентным [Concept('duchy', 'герцогству')|E] из CK3."
+
+ game_concept_blood_potency: "Сила крови"
  game_concept_blood_potency_desc: "Blood Potency is the inherent power of a [GetTrait('vampire').GetName( GetNullCharacter )]'s blood that grows slowly overtime and is limited by the [vampgeneration|E] of the [GetTrait('vampire').GetName( GetNullCharacter )]. Blood Potency decreases slowly in [torpor|E]. It can increase more quickly by diablerizing $POD_splat_vampire_plural$ with higher blood potency. Blood Potency impacts how quickly [discipline|E] usage increases hunger and how impactful your [GetTrait('vampire').GetName( GetNullCharacter )] powers like $pod_disciplines$ are."
+
  game_concept_vampgeneration: "Поколение"
  game_concept_vampgeneration_desc: "Согласно [Concept('cainites', 'каинитам')|E], это дистанция крови [GetTrait('vampire').GetName( GetNullCharacter )]а от отца всех [GetTrait('vampire').GetName( GetNullCharacter )]ов - Каина. Каин [GetTrait('vampgeneration1').GetName( GetNullCharacter )].  Вампиры [GetTrait('vampgeneration14').GetName( GetNullCharacter )] или выше  'слабокровные' практически люди и почти полностью утратили черты вампиров. Вампиры, которые не верят, что Каин является прародителем, часто прослеживают своё [vampgeneration|El] от какого-то другого мистического основателя. Вампиры могут уменьшить своё [vampgeneration|El], и таким образом увеличить свою потенциальную мощь, совершив [diablerie|El] на вампире более низкого [Concept('vampgeneration', 'поколения')|E] чем своё собственное."
  game_concept_bloodbond: "Узы Крови"
