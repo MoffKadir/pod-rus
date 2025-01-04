@@ -9,7 +9,7 @@
  UMBRA_WINDOW_GAUNTLET: "Gauntlet: #V [GetPlayer.MakeScope.ScriptValue('location_gauntlet_level')|0]#!"
  UMBRA_WINDOW_SHROUD: "Shroud: #V [GetPlayer.MakeScope.ScriptValue('location_shroud_level')|0]#!"
  UMBRA_WINDOW_COMMUNE: "Commune"
-  
+ 
  UMBRA_WINDOW_NOT_EXPEDITION: "#weak There are no [Concept('umbra_expedition','Expeditions')|E] available#!"
  UMBRA_WINDOW_NOT_EXPLORER: "#weak There are no hired explorer#!"
  UMBRA_WINDOW_DANGER: "@alert_icon! #alert_trial An explorer stationed here will be unable to use [interactions|E] on other characters#!"
@@ -19,21 +19,28 @@
  UMBRA_WINDOW_WYRM_TRAP: "@warning_icon! #X Explorer has a chance of being trapped and quarterly gain [stress|E] in this realm. #Weak (Unless they are serving the Wyrm)#!#!"
  UMBRA_WINDOW_DEMON_TRAP: "@warning_icon! #X Explorer has a chance of being trapped and quarterly gain [stress|E] in this realm. #Weak (Unless they are serving demons)#!#!"
  UMBRA_WINDOW_YAMA_TRAP: "@warning_icon! #X Explorer has a chance of being trapped and quarterly gain [stress|E] in this realm. #Weak (Unless they are serving the Yama Kings)#!#!"
+ 
  umbra_action_tooltip: "#T [Localize(Concatenate(Scope.GetFlagName,'_confirm'))]#![Localize('line_break')][ScriptedGui.BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('explorer', Character.MakeScope).End)]"
  umbra_action_cooldown_tooltip: "You already used this action this month."
  umbra_action_no_explorer_tooltip: "You need a stationed explorer to enable this action."
  umbra_action_locked_tooltip: "You need to finish the corresponding [umbra_expedition|E] to unlock this action."
+ 
  umbra_ongoing_tt: "You are on a [umbra_expedition|E]."
- shadow_realm_tt: "You are on a [shadow_realm|E]."
+ shadow_realm_tt: "You are on a [UmbraGlossary('shadow_realm')]."
+ 
  silentstrider_objective_decision_finished: "You finished the $silentstrider_objective_decision$ [decision|E]."
  breakdown_the_abyss_objective_decision_finished: "You finished the $breakdown_the_abyss_objective_decision$ [decision|E]."
- stationed_on_dreaming_tt: "Is stationed on [dreaming|E]."
+ stationed_on_dreaming_tt: "Is stationed on [UmbraGlossary('dreaming')]."
+ 
  known_neighboring_realm_tt: "You now have knowledge of these neighboring realms:"
+ 
  umbra_level_tt: "[AddLocalizationIf( Scope.Var('explorer').IsSet, 'umbra_progress_tt' )]Progress: [Scope.ScriptValue('umbra_realm_progress')|V0]/[Scope.ScriptValue('umbra_realm_size')|V0] towards the next discovery"
  umbra_progress_tt: "Monthly Progress Gain: #P +[Scope.Var('explorer').GetCharacter.MakeScope.ScriptValue('umbra_aptitude')|P0]#!\n"
- umbra_realm_title: "[Localize(Concatenate('game_concept_', Scope.Var('name').GetFlagName))]"
+ 
+ umbra_realm_title: "[Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagName))]"
  umbra_realm_desc: "[Localize(Concatenate(Scope.Var('name').GetFlagName ,'_effect_desc'))]"
- umbra_realm_tooltip: "#T [Localize(Concatenate('game_concept_', Scope.Var('name').GetFlagName))]#!\n[Localize(Concatenate(Concatenate('game_concept_', Scope.Var('name').GetFlagName),'_desc'))]"
+ umbra_realm_tooltip: "#T [Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagName))]#!\n[Localize(Concatenate(Concatenate('umbra_realm_', Scope.Var('name').GetFlagName),'_desc'))]"
+ 
  toggle_realm_with_actions_desc: "Realms with Actions"
  umbra_filter_all: "All"
  umbra_filter_discovery: "With Discoveries"
