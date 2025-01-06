@@ -304,36 +304,36 @@
  akritai: "Акриты"
  oracles: "Оракулы"
  outlaws: "Грабители"
- trait_immortal: "Бессмертный"
- trait_immortal_desc: "Из-за магического воздействия этот персонаж больше не может умереть от старости."
- seasoned_visitor_decision: "The Travels of [ROOT.Char.GetFirstNameNoTooltip]"
- zealous_missionary_prep_decision_desc: "The continued existence of vile heretics and misguided heathens is an offense to any good [ROOT.Char.GetFaith.GetAdherentNameNoTooltip]!"
- camp_cook_camp_officer: "Supply Officer"
- camp_cook_camp_officer_desc: "The $camp_cook_camp_officer$ makes sure everyone is given their fair share for the road ahead. Or at least what they think is their fair share."
+ trait_immortal: "Бессмертие"
+ trait_immortal_desc: "Каким-то магическим образом этот персонаж больше не может умереть от естественных причин."
+ seasoned_visitor_decision: "[ROOT.Char.GetFirstNameNoTooltip] и [Select_CString(ROOT.Char.IsFemale, 'её','его' )] странствия"
+ zealous_missionary_prep_decision_desc: "Ни один добрый [ROOT.Char.GetFaith.GetAdherentNameNoTooltip|l] не потерпит существования гнусных еретиков и заблудших язычников!"
+ camp_cook_camp_officer: "Офицер снабжения"
+ camp_cook_camp_officer_desc: "$camp_cook_camp_officer$ следит за тем, чтобы каждый получал свою долю на дорогу. Или, по крайней мере, то, что они считают своей долей."
  government_is_tribal:0 "" #Otherwise says that MaA cost prestige, which is false in PoD
- adventurer_religious_icon_perk_effect: "[adventurer_i] You now gain #P [piety_i]+0.4#!/month for every [follower|E] of your [faith|E] when [camp_temperament|E] is #P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#! (5 max)"
- adventurer_apostate_perk_effect: "[adventurer_i] You now gain #P [diplomacy_i][intrigue_i][stewardship_i][martial_i][learning_i]+1#! for every three unique [faiths|E] your [followers|E] have when [camp_temperament|E] is #P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#! (3 maximum bonus stats)"
- msg_house_unity_change_stage_desc: "Your [house_unity|E] has changed Level to [Localize('$HOUSE_UNITY_STAGE_NAME|q$')]" #Doesn't work properly in its vanilla form for some strange reason
- adventurer_honored_to_serve_perk_effect: "[adventurer_i] Bonus [modifiers|E] from the #P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#! [camp_temperament|E] now also scale by number of [followers|E] #weak (1 per 5 Followers, maximum 3 times)#!"
- adventurer_writing_history_perk_effect: "[adventurer_i] #P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#! [camp_temperament|E] now also grants a scaling [personal|E] [scheme_speed|E] bonus of #P 5#! (25 max)"
+ adventurer_religious_icon_perk_effect: "[adventurer_i] Теперь вы получаете #P [piety_i]+0.4#!/месяц за каждого [Concept('follower','последователя')|E] вашей [Concept('faith','конфессии')|E], когда [Concept('camp_temperament','настроение в лагере')|E] — «#P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#!» (максимум 5)"
+ adventurer_apostate_perk_effect: "[adventurer_i] Теперь вы получаете #P +1[diplomacy_i][intrigue_i][stewardship_i][martial_i][learning_i]#! за каждые три уникальные [Concept('faith','конфессии')|E], представленные среди ваших [Concept('follower','последователей')|E], когда [Concept('camp_temperament','настроение в лагере')|E] — «#P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#!» (максимум 3 бонуса к навыкам)"
+ msg_house_unity_change_stage_desc: "[Concept( 'house_unity', 'Единство' )|E] вашего дома сдвинулось на уровень «[Localize('$HOUSE_UNITY_STAGE_NAME|q$')]»" #Doesn't work properly in its vanilla form for some strange reason
+ adventurer_honored_to_serve_perk_effect: "[adventurer_i] Бонусные [Concept('modifiers','модификаторы')|E] от [Concept('camp_temperament','настроения в лагере')|E] «#P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#!» теперь также зависят от количества [Concept('followers','последователей')|E] #weak (1 за 5 последователей, максимум 3 раза)#!"
+ adventurer_writing_history_perk_effect: "[adventurer_i] [Concept('camp_temperament','Настроение в лагере')|E] «#P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#!» теперь также дает растущий бонус в #P 5#! к [Concept( 'scheme_speed', 'скорости' )|E] [Concept( 'personal', 'личных происков' )|E] (максимум 25)"
 
  # Visit local settlement
  local_holding_type_concept_grand_city_holding: "[grand_city_holding|E]"
- local_holding_type_grand_city_holding: "$game_concept_grand_city$ holding"
- local_holding_type_capitalized_grand_city_holding: "$game_concept_grand_city$ Holding"
+ local_holding_type_grand_city_holding: "$game_concept_grand_city$"
+ local_holding_type_capitalized_grand_city_holding: "$game_concept_grand_city$"
 
  # Fae using FP2 stuff
- game_concept_iberian_reclamation:0 "Reclamation"
- game_concept_iberian_reclaiming:0 "Reclaiming"
- game_concept_iberian_reclamations:0 "Reclamations"
- game_concept_iberian_reclamation_desc:2 "This is a special type of [war|E] available to [struggle_involved|E] [rulers|E].\n\nThe attacker aims to conquer a [duchy|E] which contains any [struggle_involved|E] [counties|E] held by an [struggle_interloper|E] or [struggle_uninvolved|E] [ruler|E], or [vassalize|E] them if they hold no land outside that Duchy."
- fp2_struggle_compromise_house_reward_modifier_desc:0 "This house led their realm out of the struggle."
+ game_concept_iberian_reclamation:0 "Рекламация"
+ game_concept_iberian_reclaiming:0 "Возвращение"
+ game_concept_iberian_reclamations:0 "Рекламации"
+ game_concept_iberian_reclamation_desc:2 "Особый тип [Concept('war','войны')|E], доступный [Concept('struggle_involved','вовлеченным')|E] в борьбу [Concept('rulers','правителям')|E].\n\nАтакующий старается завоевать [duchy|El], где присутствуют любые [Concept('struggle_involved','вовлеченные')|E] [counties|El], которыми владеет [ruler|El], [Concept('struggle_interloper','вмешивающийся в борьбу')|E], или [Concept('struggle_uninvolved','не вовлеченный в нее')|E]. Также атакующий может попытаться сделать правителя своим [Concept('vassalize','вассалом')|E], если не владеет землями за пределами герцогства."
+ fp2_struggle_compromise_house_reward_modifier_desc:0 "Держава под началом этого дома вышла из борьбы."
 
  # BP3
  know_your_land_know_your_people_perk_effect: ""
- far_and_wide_perk_effect: "Increase [prestige_experience_i|E][prestige_experience|E] by #P 1#! for every visited [holding|E]"
- gracious_host_impeccable_guest_perk_4_effect: "[court_position|E] [aptitude|E] Increased by #p +1#! per known [language|E]"
- activity_journey_host_desc: "#indent_newline:8 $BULLET_WITH_TAB$[intrigue_i|E][diplomacy_i|E][martial_i|E][learning_i|E][stewardship_i|E]#V Lifestyle experience.#!\n#weak (Lifestyle rewards are based on the visited [special_building|E])#!#!\n$BULLET_WITH_TAB$[prestige_i|E][prestige|E]\n\n#weak You will bring your [children|E] and [spouses|E] with you in the [entourage|E].#!"
+ far_and_wide_perk_effect: "Увеличение [prestige_experience_i|E][Concept('prestige_experience','репутации')|E] на #P 1#! за каждое посещенное [Concept('holding','владение')|E]"
+ gracious_host_impeccable_guest_perk_4_effect: "[Concept('aptitude','Пригодность')|E] к [Concept('court_position','придворной должности')|E] увеличивается на #p +1#! за известный [Concept('language','язык')|E]"
+ activity_journey_host_desc: "#indent_newline:8 $BULLET_WITH_TAB$#V Опыт путей#! [intrigue_i|E][diplomacy_i|E][martial_i|E][learning_i|E][stewardship_i|E].\n#weak (Награды жизненного пути зависят от вида посещенной [Concept('special_building', 'особой постройки')|E])#!#!\n$BULLET_WITH_TAB$[prestige_i|E][prestige|E]\n\n#weak Ваши [Concept('children','дети')|E] и [Concept('spouses','супруги')|E] войдут в вашу [Concept('entourage','свиту')|E].#!"
 
  #Надстройка Extensive
  LIFESTYLE_WINDOW_TITLE: "[Concept('lifestyle','Путь')|E] [AddTextIf(EqualTo_string('Дипломатия', Lifestyle.GetNameNoTooltip), Concatenate(Localize('дипломатии'), ''))][AddTextIf(EqualTo_string('Странствия', Lifestyle.GetNameNoTooltip), Concatenate(Localize('странствий'), ''))][AddTextIf(EqualTo_string('Интриги', Lifestyle.GetNameNoTooltip), Concatenate(Localize('интриг'), ''))][AddTextIf(EqualTo_string('Управление', Lifestyle.GetNameNoTooltip), Concatenate(Localize('управления'), ''))][AddTextIf(EqualTo_string('Военное дело', Lifestyle.GetNameNoTooltip), Concatenate(Localize('военного дела'), ''))][AddTextIf(EqualTo_string('Ученость', Lifestyle.GetNameNoTooltip), Concatenate(Localize('учености'), ''))][AddTextIf(EqualTo_string('Холерик', Lifestyle.GetNameNoTooltip), Concatenate(Localize('холерика'), ''))][AddTextIf(EqualTo_string('Меланхолик', Lifestyle.GetNameNoTooltip), Concatenate(Localize('меланхолика'), ''))][AddTextIf(EqualTo_string('Флегматик', Lifestyle.GetNameNoTooltip), Concatenate(Localize('флегматика'), ''))][AddTextIf(EqualTo_string('Сангвиник', Lifestyle.GetNameNoTooltip), Concatenate(Localize('сангвиника'), ''))][AddTextIf(EqualTo_string('Истинная вера', Lifestyle.GetNameNoTooltip), Concatenate(Localize('Истинной веры'), ''))][AddTextIf(EqualTo_string('Убеждение', Lifestyle.GetNameNoTooltip), Concatenate(Localize('Убеждения'), ''))][AddTextIf(EqualTo_string('Алхимия', Lifestyle.GetNameNoTooltip), Concatenate(Localize('алхимии'), ''))][AddTextIf(EqualTo_string('Амулеты', Lifestyle.GetNameNoTooltip), Concatenate(Localize('амулетов'), ''))][AddTextIf(EqualTo_string('Небеса', Lifestyle.GetNameNoTooltip), Concatenate(Localize('Небес'), ''))][AddTextIf(EqualTo_string('Эффигия', Lifestyle.GetNameNoTooltip), Concatenate(Localize('Эффигий'), ''))][AddTextIf(EqualTo_string('Некромантия', Lifestyle.GetNameNoTooltip), Concatenate(Localize('Некромантии'), ''))][AddTextIf(EqualTo_string('Онимика', Lifestyle.GetNameNoTooltip), Concatenate(Localize('Онимики'), ''))][AddTextIf(EqualTo_string('Знания', Lifestyle.GetNameNoTooltip), Concatenate(Localize('Знаний'), ''))][AddTextIf(EqualTo_string('Животный', Lifestyle.GetNameNoTooltip), Concatenate(Localize('животного'), ''))][AddTextIf(EqualTo_string('Магия крови', Lifestyle.GetNameNoTooltip), Concatenate(Localize('магии'), ''))]"

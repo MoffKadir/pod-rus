@@ -21,7 +21,7 @@
  coterie_row_header: "[CharacterWindow.GetCharacter.Custom('PODCoterie')]: [CharacterWindow.GetCharacter.Custom('PODGetCoterieName')] #weak ([GuiScope.SetRoot(CharacterWindow.GetCharacter.MakeScope).ScriptValue('coterie_size')]/[EmptyScope.ScriptValue('coterie_max_size')])#!"
  ghouls_row_header: "Гули #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'ghoul_thrall' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_ghoul_cap')|0])#!"
  herd_row_header: "Стадо #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'herd_member' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_herd_cap')|0])#!"
- dreamer_row_header: "Грёзы #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'dreamer_member' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_herd_cap')|0])#!"
+ dreamer_row_header: "Мечтатель #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'dreamer_member' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_herd_cap')|0])#!"
  bound_wraiths_row_header: "Привязанные призраки #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'bound_wraith' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_wraith_cap')|0])#!"
  thrall_row_header: "Рабы #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'demonic_thrall' ) ))]/[CharacterWindow.GetCharacter.MakeScope.ScriptValue('max_thrall_cap')|0])#!"
  bound_demons_row_header: "Привязанные демоны #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'bound_demon' ) ))])#!"
@@ -45,7 +45,7 @@
 
  ghouls_row_header_expanded: "Гули #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'ghoul_thrall' ) ))])#!"
  herd_row_header_expanded: "Стадо #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'herd_member' ) ))])#!"
- dreamer_row_header_expanded: "Грёзы #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'dreamer_member' ) ))])#!"
+ dreamer_row_header_expanded: "Мечтатель #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'dreamer_member' ) ))])#!"
  bound_wraiths_row_header_expanded: "Привязанные призраки #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'bound_wraith' ) ))])#!"
  bound_demons_row_header_expanded: "Привязанные демоны #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'bound_demon' ) ))])#!"
  stolen_hearts_row_header_expanded: "Украденные сердца #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'heart_of_darkness_heartless' ) ))])#!"
