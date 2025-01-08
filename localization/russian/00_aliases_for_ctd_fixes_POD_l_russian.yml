@@ -62,7 +62,7 @@
  pod_hunger_i: "[Concept('hunger','@blood_icon!')]"
 
  # To revert: Search&replace $pod_hunger_with_icon$ -> [hunger_with_icon|E]
- pod_hunger_with_icon: "[Concept('hunger','@blood_icon!Голод!')]"
+ pod_hunger_with_icon: "[Concept('hunger','@blood_icon!Голод')]"
 
  # To revert: Search&replace $pod_the_beast$ -> [the_beast|E]
  pod_the_beast: "[Concept('beast','Звер')]"
@@ -123,7 +123,7 @@
  pod_storyteller_mode_with_icon: "[Concept('storyteller_mode','@wod_icon! Режим')]"
 
  # To revert: Search&replace $pod_loyalty_with_icon$ -> [loyalty_with_icon|E]
- pod_loyalty_with_icon: "[Concept('loyalty','@knight_icon!Верност')]"
+ pod_loyalty_with_icon: "[Concept('loyalty','@knight_icon!Предан')]"
 
  # To revert: Search&replace $pod_wan_xian$ -> [wan_xian|E]
  pod_wan_xian: "[Concept('kuei_jin','Вон Ксан')]"
