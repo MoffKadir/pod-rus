@@ -1,13 +1,15 @@
 ﻿l_russian:
- POD_custom_nickname.10.t: "Собсвенное прозвище"
- POD_custom_nickname.10.desc: "Многие обитатели Мира Тьмы известны не только по именам; являетесь ли вы одним из них или вам еще предстоит заслужить такую честь?"
+ POD_custom_nickname.10.t: "Пользовательское прозвище"
+ POD_custom_nickname.10.desc: "Многие обитатели Мира Тьмы известны не только под своим именем. Вы [Select_CString(ROOT.Char.IsFemale, 'одна', 'один' )] из них или вам еще предстоит заслужить такую честь?"
  POD_custom_nickname.10.a: "Да, позвольте мне выбрать, как меня будут называть"
  POD_custom_nickname.10.b: "Нет, у меня пока нет прозвища"
-  
- POD_custom_nickname.100.t: "Собсвенное прозвище"
- POD_custom_nickname.100.desc: "Необходимо принять важное решение: как бы вы хотели, чтобы вас называли? \n\nЕсли вы примете неверное решение, то вам придется жить с этим очень долго."
- POD_custom_nickname.100.a: "Отныне меня будут знать как..."
-    #Both of these are needed for the custom nickname to work properly. 
+
+ POD_custom_nickname.100.t: "Пользовательское прозвище"
+ POD_custom_nickname.100.desc: "Вам предстоит принять важное решение: как вы хотите, чтобы вас называли? \n\nЕсли вы примете неверное решение, то вам придется жить с ним очень долго."
+ POD_custom_nickname.100.a: "Отныне я буду называться..."
+
+ #Both of these are needed for the custom nickname to work properly.
  nick_POD_custom_nickname1: "[ROOT.Char.GetLocalizedText('POD_custom_nickname_text')]"
  nick_POD_custom_nickname2: "[CHARACTER.Custom('PODCustomNickname')]"
- nick_POD_custom_nickname_default: "Упокоенный дух"
+
+ nick_POD_custom_nickname_default: "[Select_CString(CHARACTER.IsFemale, 'Покойная', 'Покойный' )]"

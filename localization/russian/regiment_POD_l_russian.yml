@@ -1,53 +1,75 @@
 ﻿l_russian:
-  
+
  POD_animals_maa: "[POD_animals_maa|E]"
+
  POD_legendary_maa: "[POD_legendary_maa|E]"
+
  POD_demonic_maa: "[POD_demonic_maa|E]"
+
  POD_spirit_maa: "[POD_spirit_maa|E]"
+
  POD_shapeshifter_maa: "[POD_shapeshifter_maa|E]"
+
  POD_gargoyle_maa: "[POD_gargoyle_maa|E]"
+
  POD_ghoul_maa: "[POD_ghoul_maa|E]"
+
  POD_plasmic_maa: "[POD_plasmic_maa|E]"
+
  POD_wraith_maa: "[POD_wraith_maa|E]"
+
  POD_vampire_maa: "[POD_vampire_maa|E]"
+
  POD_construct_maa: "[POD_construct_maa|E]"
+
  POD_faerie_maa: "[POD_faerie_maa|E]"
+
  POD_chimera_maa: "[POD_chimera_maa|E]"
+
  POD_bygones_maa: "[POD_bygones_maa|E]"
- ZMEI_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('zmei').GetName] as [men_at_arms|E]"
- DEMONS_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('demons').GetName] as [men_at_arms|E]"
- DEMONIC_THRALLS_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('demonic_thralls').GetName] as [men_at_arms|E]"
- WOLVES_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('wolves').GetName] as [men_at_arms|E]"
- INSECTS_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('insects').GetName] as [men_at_arms|E]"
- SZLACHTA_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('szlachta').GetName] as [men_at_arms|E]"
- VOZHD_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('vozhd').GetName] as [men_at_arms|E]"
- GARGOYLES_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('gargoyle_warriors').GetName], [GetMaA('gargoyle_sentinels').GetName], [GetMaA('gargoyle_scouts').GetName] and [GetMaA('gargoyle_razorbats').GetName] as [men_at_arms|E]"
- SHADES_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('shades').GetName] as [men_at_arms|E]"
- RATS_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('rats').GetName] as [men_at_arms|E]"
- ELITE_SWORDSMEN_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('elite_swordsmen').GetName] as [men_at_arms|E]"
- GHOULED_CAVALRY_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('ghouled_cavalry').GetName] as [men_at_arms|E]"
- GUARDS_GUARDS_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('guards_guards').GetName] as [men_at_arms|E]"
- BRIGANDS_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('brigands').GetName] as [men_at_arms|E]"
- CULTISTS_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('cultists').GetName] as [men_at_arms|E]"
- SNAKES_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('snakes').GetName] as [men_at_arms|E]"
- THINBLOODS_LEGACY_PERK_UNLOCK_DESC: "Можно нанимать [GetMaA('thinbloods').GetName] as [men_at_arms|E]"
- NEED_MASSREGNANT_TO_UNLOCK_MAA_TEXT: "#Weak Вам нужно использовать [character_interaction|E] «Разблокировать [men_at_arms|E]»  чтобы открыть [POD_ghoul_maa|E].#!"
- NEED_MASSSIRE_TO_UNLOCK_MAA_TEXT: "#Weak Вам нужно использовать [character_interaction|E] «Разблокировать [men_at_arms|E]»  чтобы открыть новообращенных [men_at_arms|E].#!"
- ghouls: "Гули"
- ghouls_flavor: "#F Кровожадные рабы вампиров. #!"
+
+ ZMEI_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('zmei').GetName]"
+ DEMONS_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('demons').GetName]"
+ DEMONIC_THRALLS_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('demonic_thralls').GetName]"
+ WOLVES_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('wolves').GetName]"
+ INSECTS_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('insects').GetName]"
+ SZLACHTA_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('szlachta').GetName]"
+ VOZHD_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('vozhd').GetName]"
+ GARGOYLES_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('gargoyle_warriors').GetName], [GetMaA('gargoyle_sentinels').GetName], [GetMaA('gargoyle_scouts').GetName] и [GetMaA('gargoyle_razorbats').GetName]"
+ SHADES_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('shades').GetName]"
+ RATS_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('rats').GetName]"
+ ELITE_SWORDSMEN_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('elite_swordsmen').GetName]"
+ GHOULED_CAVALRY_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('ghouled_cavalry').GetName]"
+ GUARDS_GUARDS_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('guards_guards').GetName]"
+ BRIGANDS_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('brigands').GetName]"
+ CULTISTS_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('cultists').GetName]"
+ SNAKES_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('snakes').GetName]"
+ THINBLOODS_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('thinbloods').GetName]"
+ NEED_MASSREGNANT_TO_UNLOCK_MAA_TEXT: "#Weak Чтобы открыть профессионалов типа «[POD_ghoul_maa|E]», вам нужно сперва воспользоваться [Concept('character_interaction', 'взаимодействием персонажа')|E] «Открыть [Concept('men_at_arms', 'профессионалов')|E]».#!"
+ NEED_MASSSIRE_TO_UNLOCK_MAA_TEXT: "#Weak Чтобы открыть профессионалов-вампиров, вам нужно сперва воспользоваться [Concept('character_interaction', 'взаимодействием персонажа')|E] «Открыть [Concept('men_at_arms', 'профессионалов')|E]».#!"
+
+ ghouls: "Отборные гули"
+ ghouls_flavor: "#F Гули, ставшие рабами уз крови вампиров, наделены огромной силой и выносливостью. В сочетании с бессмертием (хотя и зависящим от вампирской крови) из них получаются искусные воины.#!"
+
  szlachta: "Шляхта"
- szlachta_flavor: "#F Гули, чья плоть была \"улучшена\" Изменчивостью, чтобы увеличить их боевой потенциал. Хотя этот процесс делает их более мощными, они также ужасно деформируются. #!"
+ szlachta_flavor: "#F Гули, чья плоть была изваяна Изменчивостью, чтобы повысить их боевую мощь. Хотя этот процесс делает их более могущественными, они также ужасно деформируются.#!"
+
  vozhd: "Вождь"
- vozhd_flavor: "#F Около дюжины лоботомированных гулей объединяются с помощью магии колдовства и Изменчивости, в результате чего получается ходячее биологическое оружие высотой 15 футов. Мешанина живых существ, слившихся воедино в монстра размером со слона, с множеством конечностей. #!"
- zmei: "Змеи"
- zmei_flavor: "#F Страшные существа, обладающие огромной силой, некогда служившие Вирму, теперь связаны с Бабой Ягой, Маленькой бабушкой. #!"
- massvampires: "Массово обращенные вампиры"
- massvampires_flavor: "#F Стая вампиров-неонатов, произведенных массовым [Embrace|E]м. Кровь сделала их сильнее смертных, но они не владеют в своими силами. #!"
+ vozhd_flavor: "#F Около дюжины лоботомированных гулей объединяются с помощью магии Колдовства и Изменчивости, в результате чего получается ходячее биологическое оружие высотой 15 футов. Мешанина из живых существ, слившихся воедино в монстра размером со слона, с множеством конечностей.#!"
+
+ zmei: "Змей"
+ zmei_flavor: "#F Страшные существа огромной силы, когда-то служившие Вирму, теперь связаны с Бабой Ягой, Маленькой бабушкой.#!"
+
+ massvampires: "Обращённые вампиры"
+ massvampires_flavor: "#F Стая новообращённых вампиров, появившихся на свет в результате массовых [Concept('Embrace', 'Объятий')|E]. Кровь сделала их сильнее смертных, но они только начинают осваивать свои способности.#!"
+
  werewolfpack: "Стая оборотней"
- werewolf_pack_flavor: "#F Люпины, ликаны, сущий ужас! #!"
- werewolf_pack: "Werewolf Pack"
- witchhunters: "Witch-Hunters"
- witchhunters_flavor: "#F Mortals who specialize in hunting monsters. #!"
+ werewolf_pack_flavor: "#F Люпины, ликаны, сущий ужас!#!"
+ werewolf_pack: "Стая оборотней"
+
+ witchhunters: "Охотники на ведьм"
+ witchhunters_flavor: "#F Смертные, специализирующиеся в охоте на монстров.#!"
+
  wolves_flavor: "#F Мало найдется звуков в природе более леденящих душу, чем волчий вой. Каким-то образом она включает в себя все, чего человечество боится в дикой природе, а также все, к чему мы стремимся.#!"
  bats: "Летучие мыши"
  bats_flavor: "#F Неземные и неприступные, летучие мыши проводят свои дни, спя вниз головой на деревьях и в пещерах, а ночи летают в поисках пищи из насекомых, фруктов и иногда человеческой крови.#!"
