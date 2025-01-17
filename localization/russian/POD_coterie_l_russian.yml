@@ -1,70 +1,102 @@
 ﻿l_russian:
-  
-  #################### 
-  ##### Coteries ##### 
-  ##### COTERIE GUI TAB 
- POD_create_a_new_coterie: "Создать новую группу: [GetPlayer.Custom('PODCoterieNoTooltip')]"
- POD_rename_your_coterie: "Переименовать вашу группу [GetPlayer.Custom('PODCoterieNoTooltip')]"
- POD_disband_your_coterie: "Распустить вашу группу [GetPlayer.Custom('PODGetCoterieName')]"
- POD_edit_coterie_coa_tt: "Click to edit the Coat of Arms of $POD_player_coterie$"
+
+ ####################
+ ##### Coteries #####
+ ####################
+
+ ##### COTERIE GUI TAB
+
+ POD_create_a_new_coterie: "[GetPlayer.Custom('PODCoterieNoTooltip')]: создать"
+ POD_rename_your_coterie: "[GetPlayer.Custom('PODCoterieNoTooltip')]: переименовать"
+ POD_disband_your_coterie: "[GetPlayer.Custom('PODGetCoterieName')]: распустить вашу группу"
+
+ POD_edit_coterie_coa_tt: "$POD_player_coterie$: кликните для редактирования герба"
+
  POD_coterie_gui_members: "Члены #weak ([GuiScope.SetRoot(GetPlayer.MakeScope).ScriptValue('coterie_size')]/[EmptyScope.ScriptValue('coterie_max_size')])#!"
-  ##### Opinion modifiers 
+
+
+ ##### Opinion modifiers
+
  kicked_from_coterie_opinion: "Изгнание"
-  ##### Tooltips 
+
+
+ ##### Tooltips
+
  POD_player_coterie: "#TOOLTIP:POD_player_coterie_tooltip #E;L [GetPlayer.Custom('PODGetCoterieName')]#!#!"
  POD_player_coterie_tooltip: "[GetPlayer.Custom('PODGetCoterieBreakdown')]"
+
  POD_COTERIE_BREAKDOWN: "#T [ROOT.Char.Custom('PODCoterie')]: [ROOT.Char.Custom('PODGetCoterieName')]#!\n@skill_diplomacy_icon![diplomacy|E]: [SCOPE.ScriptValue('coterie_diplomacy_gui')]\n@skill_martial_icon![martial|E]: [SCOPE.ScriptValue('coterie_martial_gui')]\n@skill_stewardship_icon![stewardship|E]: [SCOPE.ScriptValue('coterie_stewardship_gui')]\n@skill_intrigue_icon![intrigue|E]: [SCOPE.ScriptValue('coterie_intrigue_gui')]\n@skill_learning_icon![learning|E]: [SCOPE.ScriptValue('coterie_learning_gui')]\n@skill_prowess_icon![prowess|E]: [SCOPE.ScriptValue('coterie_prowess_gui')]"
-  ##### Interface toasts 
- POD_joined_coterie_title: "Вступает в [GetPlayer.Custom('PODCoterie')]"
- POD_joined_coterie_tt: "[ROOT.Char.GetFirstNameNicknamed] присоединяется к $POD_player_coterie$"
- POD_new_coterie_member_title: "Новый член [GetPlayer.Custom('PODCoterie', 'группы')]"
- POD_new_coterie_member_tt: "[new_coterie_member.GetFirstNameNicknamed] присоединяется $POD_player_coterie$"
- POD_coterie_member_left_title: "Персонаж покидает [GetPlayer.Custom('PODCoterie','группу')]"
- POD_coterie_member_left_tt: "[old_coterie_member.GetFirstNameNicknamed] больше не входит в $POD_player_coterie$"
- POD_coterie_disbanded_title: "[GetPlayer.Custom('PODCoterie')] изгоняется"
- POD_coterie_disbanded_tt: "Вы больше не являетесь частью [GetPlayer.Custom('PODCoterie', 'группы')]"
-  ##### Effects 
- POD_leave_coterie_tt: "Больше не будет частью $POD_player_coterie$"
- POD_leave_coterie_recipient_tt: "Will no longer be a member of [recipient.Custom('PODGetCoterieName')]"
-  ##### showing_failures_only triggers 
- POD_has_coterie_trigger_tt: "Вам нужно иметь группу: [GetPlayer.Custom('PODCoterie')]"
- POD_has_coterie_members_trigger_tt: "Вам нужно иметь групу: [GetPlayer.Custom('PODCoterie')] с хотя бы одним членом"
- POD_coterie_disabled_on_travel_phase_tt: "Вы не можете управлять группой: [GetPlayer.Custom('PODCoterie')] пока вы в [Concept('travel_phase', 'фазе путешествия')|E] вашего [Concept('journey', 'странствий')|E]"
-  ##### Custom loc 
+
+
+ ##### Interface toasts
+
+ POD_joined_coterie_title: "[GetPlayer.Custom('PODCoterie')]: вступление"
+ POD_joined_coterie_tt: "$POD_player_coterie$: [ROOT.Char.GetFirstNameNicknamed] присоединяется"
+
+ POD_new_coterie_member_title: "[GetPlayer.Custom('PODCoterie')]: новый член"
+ POD_new_coterie_member_tt: "$POD_player_coterie$: [new_coterie_member.GetFirstNameNicknamed] присоединяется"
+
+ POD_coterie_member_left_title: "[GetPlayer.Custom('PODCoterie')]: персонаж покидает группу"
+ POD_coterie_member_left_tt: "$POD_player_coterie$: [old_coterie_member.GetFirstNameNicknamed] больше не входит в группу"
+
+ POD_coterie_disbanded_title: "[GetPlayer.Custom('PODCoterie')]: роспуск"
+ POD_coterie_disbanded_tt: "[GetPlayer.Custom('PODCoterie')]: вы больше не являетесь частью группы"
+
+
+ ##### Effects
+
+ POD_leave_coterie_tt: "$POD_player_coterie$: больше не член группы"
+ POD_leave_coterie_recipient_tt: "[recipient.Custom('PODGetCoterieName')]: больше не член группы"
+
+
+ ##### showing_failures_only triggers
+
+ POD_has_coterie_trigger_tt: "Вам необходима [GetPlayer.Custom('PODCoterie')]"
+ POD_has_coterie_members_trigger_tt: "Вам необходима [GetPlayer.Custom('PODCoterie')] с хотя бы одним членом"
+ POD_coterie_disabled_on_travel_phase_tt: "[GetPlayer.Custom('PODCoterie')]: вы не можете управлять группой, пока вы в [Concept('travel_phase', 'фазе путешествия')|E] вашего [Concept('journey', 'странствия')|E]"
+
+
+ ##### Custom loc
+
  POD_coterie_concept: "[Concept('coterie',ROOT.Char.Custom('PODCoterieNoTooltip'))|E]"
- POD_coterieloc_harem: "[coterie_harem|E]"
- POD_coterieloc_sabbat: "[coterie_sabbat|E]"
- POD_coterieloc_tmr: "[coterie_tmr|E]"
- POD_coterieloc_anarch: "[coterie_anarch|E]"
- POD_coterieloc_baali_hyron: "[coterie_baali_hyron|E]"
- POD_coterieloc_beastcourts: "[coterie_beastcourts|E]"
- POD_coterieloc_werewolf: "[coterie_werewolf|E]"
- POD_coterieloc_nagah: "[coterie_nagah|E]"
- POD_coterieloc_kitsune: "[coterie_kitsune|E]"
- POD_coterieloc_ratkin: "[coterie_ratkin|E]"
- POD_coterieloc_hunter: "[coterie_hunter|E]"
- POD_coterieloc_demon: "[coterie_demon|E]"
- POD_coterieloc_mage: "[coterie_mage|E]"
- POD_coterieloc_redcap: "[coterie_redcap|E]"
- POD_coterieloc_fae: "[coterie_fae|E]"
- POD_coterieloc_wraith: "[coterie_wraith|E]"
- POD_coterieloc_spectre: "[coterie_spectre|E]"
- POD_coterieloc_kueijin: "[coterie_kueijin|E]"
- POD_coterieloc_mummy: "[coterie_mummy|E]"
- POD_coterieloc_baali: "[coterie_baali|E]"
- POD_coterieloc_bastet: "[coterie_bastet|E]"
- POD_coterieloc_vampire: "[coterie|E]"
- POD_coterieloc_entomos: "[coterie_entomos|E]"
- POD_coterieloc_generic: "[coterie_generic|E]"
- POD_coteriename_error: "Ошибка имени группы"
+
+ POD_coterieloc_harem: "Гарем"
+ POD_coterieloc_sabbat: "Стая"
+ POD_coterieloc_tmr: "Колонна"
+ POD_coterieloc_anarch: "Банда"
+ POD_coterieloc_baali_hyron: "Гнездо"
+ POD_coterieloc_beastcourts: "Сэнтай"
+ POD_coterieloc_werewolf: "Стая"
+ POD_coterieloc_nagah: "Гнездо"
+ POD_coterieloc_kitsune: "Сэнтай"
+ POD_coterieloc_ratkin: "Стая крыс"
+ POD_coterieloc_hunter: "Ячейка"
+ POD_coterieloc_demon: "Заговор"
+ POD_coterieloc_mage: "Кабал"
+ POD_coterieloc_redcap: "Корби"
+ POD_coterieloc_fae: "Выводок"
+ POD_coterieloc_wraith: "Круг"
+ POD_coterieloc_spectre: "Стая"
+ POD_coterieloc_kueijin: "Ву"
+ POD_coterieloc_mummy: "Ковенант" # fanon
+ POD_coterieloc_baali: "Ковен"
+ POD_coterieloc_bastet: "Прайд"
+ POD_coterieloc_vampire: "Котерия"
+ POD_coterieloc_entomos: "Скопление"
+ POD_coterieloc_generic: "Отряд"
+
+ POD_coteriename_error: "COTERIE NAME ERROR"
  POD_coteriename_custom: "[ROOT.Var('coterie').Var('root_char').Char.GetLocalizedText('POD_coterie_name_text')]"
  POD_coteriename_canon: "[ROOT.Var('coterie').Story.Custom('PODGetCanonCoterieName')]"
- POD_coteriename_default: "[ROOT.Var('root_char').Char.GetFirstNamePossessiveNoTooltip] [ROOT.Var('root_char').Char.Custom('PODCoterieNoTooltip')]"
+ POD_coteriename_default: "[ROOT.Var('coterie').Var('root_char').Char.GetFirstNamePossessiveNoTooltip] [ROOT.Var('coterie').Var('root_char').Char.Custom('PODCoterieNoTooltip')]"
+
  POD_coteriename_custom_story: "[ROOT.Var('root_char').Char.GetLocalizedText('POD_coterie_name_text')]"
  POD_coteriename_canon_story: "[ROOT.Story.Custom('PODGetCanonCoterieName')]"
  POD_coteriename_default_story: "[ROOT.Var('root_char').Char.GetFirstNamePossessiveNoTooltip] [ROOT.Var('root_char').Char.Custom('PODCoterieNoTooltip')]"
-  ##### Karde: this is where canon coterie names are defined in the loc 
+
+ ##### Karde: this is where canon coterie names are defined in the loc
  #POD_coteriename_camilla: "Camilla's Party Boys"
+
  POD_coteriename_camilla: "#TOOLTIP:POD_coteriename_camilla_tt #L Первые грешники#!#!"
  POD_coteriename_mithras: "#TOOLTIP:POD_coteriename_mithras_tt #L Преторианцы Митры#!#!"
  POD_coteriename_alencourt: "#TOOLTIP:POD_coteriename_alencourt_tt #L Лионская знать#!#!"
@@ -72,27 +104,28 @@
  POD_coteriename_sophoniba: "#TOOLTIP:POD_coteriename_sophoniba_tt #L Возрождение Туниса#!#!"
  POD_coteriename_augustus: "#TOOLTIP:POD_coteriename_augustus_tt #L Семья Джованни#!#!"
  POD_coteriename_hardestadt: "#TOOLTIP:POD_coteriename_hardestadt_tt #L Основатели Германии#!#!"
- POD_coteriename_julia: "#TOOLTIP:POD_coteriename_julia_tt #L Сенат Франкфурта#!#!"
+ POD_coteriename_julia: "#TOOLTIP:POD_coteriename_julia_tt #L Сенаторы Франкфурта#!#!"
  POD_coteriename_jurgen: "#TOOLTIP:POD_coteriename_jurgen_tt #L Рыцари Черного креста#!#!"
  POD_coteriename_silent_fury: "#TOOLTIP:POD_coteriename_silent_fury_tt #L Тихая ярость#!#!"
  POD_coteriename_nordic_ventrue: "#TOOLTIP:POD_coteriename_nordic_ventrue_tt #L Скандинавские Вентру#!#!"
  POD_coteriename_bar_sinister: "#TOOLTIP:POD_coteriename_bar_sinister_tt #L Темное клеймо#!#!"
- POD_coteriename_ferals_livonia: "#TOOLTIP:POD_coteriename_ferals_livonia_tt #L Дикари Ливонии#!#!"
+ POD_coteriename_ferals_livonia: "#TOOLTIP:POD_coteriename_ferals_livonia_tt #L Ливонские дикари#!#!"
  POD_coteriename_redemption: "#TOOLTIP:POD_coteriename_redemption_tt #L Искупление Праги#!#!"
  POD_coteriename_andreas: "#TOOLTIP:POD_coteriename_andreas_tt #L Караван Андреаса#!#!"
  POD_coteriename_gabriella: "#TOOLTIP:POD_coteriename_gabriella_tt #L Доблестные латиняне#!#!"
- POD_coteriename_anadja: "#TOOLTIP:POD_coteriename_anadja_tt #L Наследники Эноха#!#!"
+ POD_coteriename_anadja: "#TOOLTIP:POD_coteriename_anadja_tt #L Наследники Еноха#!#!"
  POD_coteriename_suleiman: "#TOOLTIP:POD_coteriename_suleiman_tt #L Первая Аширра#!#!"
  POD_coteriename_erinyes: "#TOOLTIP:POD_coteriename_erinyes_tt #L Эринии#!#!"
  POD_coteriename_carnival: "#TOOLTIP:POD_coteriename_carnival_tt #L Карнавал Мориенди#!#!"
- POD_coteriename_fratres: "#TOOLTIP:POD_coteriename_fratres_tt #L Братья Чумы#!#!"
- POD_coteriename_red_thor: "#TOOLTIP:POD_coteriename_red_thor_tt #L Экипаж "Красного Тора"#!#!"
+ POD_coteriename_fratres: "#TOOLTIP:POD_coteriename_fratres_tt #L Fratres Plaga#!#!"
+ POD_coteriename_red_thor: "#TOOLTIP:POD_coteriename_red_thor_tt #L Команда Красного Тора#!#!"
  POD_coteriename_horus: "#TOOLTIP:POD_coteriename_horus_tt #L Хопеш мстителя#!#!"
- POD_coteriename_leopold: "#TOOLTIP:POD_coteriename_leopold_tt #L Меч Божий#!#!"
+ POD_coteriename_leopold: "#TOOLTIP:POD_coteriename_leopold_tt #L Gladius Dei#!#!"
  POD_coteriename_field: "#TOOLTIP:POD_coteriename_field_tt #L Поле звезд#!#!"
  POD_coteriename_crescent: "#TOOLTIP:POD_coteriename_crescent_tt #L Полумесяц#!#!"
  POD_coteriename_bright: "#TOOLTIP:POD_coteriename_bright_tt #L Яркое обещание#!#!"
  POD_coteriename_sun_glory: "#TOOLTIP:POD_coteriename_sun_glory_tt #L Слава солнца#!#!"
+
  POD_coteriename_camilla_tt: "Танитбаал-Сахар указал им путь. Даже крах империи не смог поколебать их убеждений."
  POD_coteriename_mithras_tt: "Избранные Богом защитники, посвященные в его доверие и, возможно, даже в его секреты."
  POD_coteriename_alencourt_tt: "Семейные узы могут вынести все, даже смерть."
