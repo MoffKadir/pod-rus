@@ -1,40 +1,54 @@
 ﻿l_russian:
-  
- POD_worldgen.1.t: "A World of Darkness"
- POD_worldgen.1.desc: "What kind of world is this?"
- POD_worldgen.1.option.a: "Supernatural"
- POD_worldgen.1.option.a.tt: "The supernatural world is depicted, with all landed title characters being supernatural or hunters.."
- POD_worldgen.1.option.b: "Majority Mortal"
- POD_worldgen.1.option.b.tt: "Most characters with landed title are mortals, only a 10% minority are secretly supernatural."
- POD_worldgen.1.option.c: "I am a mere mortal!"
- POD_worldgen.1.option.c.tt: "Your character starts as a mortal, only 5% of the characters with landed title are supernatural."
- POD_worldgen.2.t: "The Supernatural World"
- POD_worldgen.2.desc: "Does a particular type of supernatural have dominance?"
- POD_worldgen.2.option.a: "Vampires"
- POD_worldgen.2.option.b: "Werewolves"
- POD_worldgen.2.option.c: "Mages"
- POD_worldgen.2.option.d: "Fae"
- POD_worldgen.2.option.e: "Demons"
- POD_worldgen.2.option.f: "Hunters"
- POD_worldgen.2.option.g: "Vampires and Werewolves Struggle for Dominance"
- POD_worldgen.2.option.h: "It is a varied World of Darkness"
- guest_description.learning_physician_trait.desc: "Learning Physician Trait"
- guest_description.learning_mystic_trait.desc: "Learning Mystic Trait"
- POD_maintenance.18.t: "Imperial Ambition"
- POD_maintenance.18.desc: "Your influence has grown to tremendous extremes lately with your word carrying great weight over vast stretches of land. Perhaps a little too much however as you can't be everywhere at once, resulting in many cases of corruption, misinterpreted orders or border territories not even caring to pay proper homage. This has to change before reaching worrying proportions and, as such, you have put forth a plan to reorganize your realm's administration, mostly centered around using a new caste of trusted officials tasked with relaying your orders to your vassals."
- POD_maintenance.18.a: "The bureaucracy expands."
- POD_move_imperial_gov_tt: "Your realm will adopt an Imperial Administration government type.\nThis will result in growing pains, with a duration dictated by your Stewardship."
+
+ POD_worldgen.1.t: "Мир Тьмы"
+ POD_worldgen.1.desc: "Каким будет этот мир?"
+ POD_worldgen.1.option.a: "Сверхъестественный"
+ POD_worldgen.1.option.a.tt: "Мир изображается сверхъестественным, где все персонажи с титулами являются либо сверхъестественными существами, либо охотниками."
+ POD_worldgen.1.option.b: "Большинство смертных"
+ POD_worldgen.1.option.b.tt: "Большинство персонажей с титулами — смертные, только 10% из них тайно являются сверхъестественными существами."
+ POD_worldgen.1.option.c: "Я всего лишь смертный!"
+ POD_worldgen.1.option.c.tt: "Ваш персонаж начинает как смертный, и только 5% персонажей с титулами являются сверхъестественными существами."
+
+
+ POD_worldgen.2.t: "Сверхъестественный мир"
+ POD_worldgen.2.desc: "Имеет ли определенный тип сверхъестественных существ доминирование?"
+ POD_worldgen.2.option.a: "Вампиры"
+ POD_worldgen.2.option.b: "Оборотни"
+ POD_worldgen.2.option.c: "Маги"
+ POD_worldgen.2.option.d: "Феи"
+ POD_worldgen.2.option.e: "Демоны"
+ POD_worldgen.2.option.f: "Охотники"
+ POD_worldgen.2.option.g: "Борьба за доминирование между вампирами и оборотнями"
+ POD_worldgen.2.option.h: "Это разнообразный Мир Тьмы"
+
+
+ guest_description.learning_physician_trait.desc: "Изучение черты Врачевания"
+ guest_description.learning_mystic_trait.desc: "Изучение черты Мистика"
+
+
+ POD_maintenance.18.t: "Имперские амбиции"
+ POD_maintenance.18.desc: "Управление империей, скрытой от взоров смертных правителей, — задача не из легких. Несмотря на то, что лишь ваше слово несет огромный вес, вы не можете быть повсюду одновременно, и по мере расширения вам приходится все больше полагаться на подчиненных, что может привлечь обеспокоенное внимание ваших могущественных соперников. Напротив, небольшое владение менее могущественно, но более эффективно, извлекая больше из каждого из своих членов.\nВаш текущий уровень перенапряжения изменился, что означает необходимость реорганизации некоторых частей вашей внутренней бюрократии."
+ POD_maintenance.18.a: "Давайте пересмотрим нашу ситуацию."
+ POD_move_imperial_gov_tt: "Ваше владение увеличилось или уменьшилось до размеров, требующих изменения уровня перенапряжения. Вы можете проверить детали в панели Владений."
+
+
  #imperial_overextension_modifier_desc: "Your realm is (painfully) getting accustomed to a new form of governance."
  #imperial_overextension_modifier: "Growing Imperial Administration"
+ 
  #POD_maintenance.19.t: "Imperial Decay"
  #POD_maintenance.19.desc: "Your realm, administrated for a while following the principles of an imperial caste of subordinates, has shrunk to size significantly lately. Such a large apparatus isn't needed anymore and your dealings with your vassals have naturally reverted to a more personal approach."
  #POD_maintenance.19.a: "I preferred the personal touch anyway."
- POD_maintenance.21.t: "A New Era"
- POD_maintenance.21.desc: "As the World of Darkness follows its course in the shadows, the mortals do not wait. Entering a new era is a moment of both wonder and dread. Mortals have proved time and time again their capacity to surprise the often jaded and set in their ways supernatural creatures of the world. As they reach for their potential, influencing them become more difficult and costly and creatures who were once a reality pass on to the realm of myths.\n\n#X Each era increases the cost of buildings, mercenaries and reduce the efficiency of bygone creatures. These effects can be reviewed in the innovations culture screen if you hover over the eras.#!"
- POD_maintenance.21.a: "Let us review our situation."
- POD_maintenance.24.desc: "Once, Constantinople dreamed it was Heaven. Then it fell, and imagined it was Hell. Tonight, it wakes up and takes its place beside its earthly brethren. Cainites who spent centuries carried on the wings of Michael the Patriarch’s daydream recover now from their crash landing and look for a future amidst the rubble.\nFor the childer of Caine, two Constantinoples rise behind nigh-impregnable walls. The fabled wonderland that bestows riches, influence, and mystical might upon the worthy is the Megalopolis of the Dream, a flame, the embers of which refuse to fully die. But the sobering reality is that of a decadent fallen utopia where blood and sharks mingle in the water and faith struggles for expression.\nThe city — #italic the city #! to so many — toils to recover day by day, but wonders and terrors escape through the cracks between its rulers fingers.\nIt is time for the once glorious city to reinvent itself or be washed away by the sands of history."
- POD_maintenance.24.a: "Dreams truly die it seems."
- POD_maintenance.25.t: "Dreaming Anew"
- POD_maintenance.25.desc: "Byzantium has changed hands many times since its humble beginnings as a trading village. Each mortal culture who occupied this place made its own mark on the history of the city and today is no different. With your recent change of outlook, you could encourage another turn of the wheel for Constantinople, promoting your new goals on its inhabitants. Of course, you could also simply let history continue its course unaltered.\n #N Choosing to change will reset Constantinople to a new type of Grand City, removing your current buildings in the process.#!"
- POD_maintenance.25.a: "I won't interfere."
- POD_maintenance.25.b: "Time to change."
+ 
+ POD_maintenance.21.t: "Новая эра"
+ POD_maintenance.21.desc: "Пока Мир Тьмы продолжает свой путь в тени, смертные не стоят на месте. Вступление в новую эру — это одновременно момент удивления и страха. Смертные снова и снова доказывали свою способность удивлять зачастую закостенелых в своих привычках сверхъестественных существ мира. По мере того как они достигают своего потенциала, влиять на них становится сложнее и дороже, а существа, некогда реальность, переходят в область мифов.\n\n#X Каждая эра увеличивает стоимость зданий, наемников и снижает эффективность устаревших существ. Эти эффекты можно просмотреть на экране культуры в разделе инноваций, наведя курсор на эры.#!"
+ POD_maintenance.21.a: "Давайте пересмотрим нашу ситуацию."
+
+
+ POD_maintenance.24.desc: "Когда-то Константинополь мечтал быть Небесами. Затем он пал и представлял себя Адом. Сегодня он пробуждается и занимает место среди своих земных собратьев. Каиниты, которые веками носились на крыльях грез Михаила Патриарха, теперь оправляются после их крушения и ищут будущее среди руин.\nДля детей Каина два Константинополя возвышаются за почти неприступными стенами. Легендарная мегаполис-мечта, дарующая богатства, влияние и мистическую мощь достойным, — это пламя, угли которого отказываются полностью угаснуть. Но отрезвляющая реальность — это декадентская павшая утопия, где кровь и акулы смешиваются в воде, а вера борется за выражение.\nГород — #italic именно город #! для столь многих — изо дня в день трудится над восстановлением, но чудеса и ужасы ускользают сквозь трещины между пальцами его правителей.\nПришло время некогда славному городу переосмыслить себя или исчезнуть под песками истории."
+ POD_maintenance.24.a: "Кажется, мечты действительно умирают."
+
+
+ POD_maintenance.25.t: "Возрождение грез"
+ POD_maintenance.25.desc: "Византия много раз переходила из рук в руки с тех пор, как начиналась как скромная торговая деревня. Каждая смертная культура, занимавшая это место, оставила свой след в истории города, и сегодня не исключение. С вашим недавним изменением взглядов вы могли бы способствовать еще одному повороту колеса для Константинополя, продвигая свои новые цели среди его жителей. Конечно, вы также можете просто позволить истории идти своим чередом.\n #N Выбор изменений сбросит Константинополь в новый тип Великого города, удалив текущие здания в процессе.#!"
+ POD_maintenance.25.a: "Я не буду вмешиваться."
+ POD_maintenance.25.b: "Время перемен."

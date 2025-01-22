@@ -1,55 +1,80 @@
 ﻿l_russian:
  shadow_twin_master: "[shadow_twin_master|E]"
  shadow_twin_servant: "[shadow_twin_servant|E]"
-  
- mirror_duplicate_master: "Original"
- mirror_duplicate_servant: "Mirror Duplicate"
- darkling_mirror_master: "Remain Body"
- darkling_mirror_servant: "Split P'o"
- shadowy_duplicate_master: "Original"
- shadowy_duplicate_servant: "Shadowy Duplicate"
- phantom_shadow_master: "Original"
- phantom_shadow_servant: "Phantom Shadow"
- separated_khaibit_master: "Creator"
- separated_khaibit_servant: "Separated Khaibit"
- separated_shadow_master: "Psyche"
- separated_shadow_servant: "Shadow"
- unspeakable_servitor_master: "Possessor "
- unspeakable_servitor_servant: "Host Body"
- divided_version_master: "Main Version"
- divided_version_servant: "Divided Version"
+
+ mirror_duplicate_master: "Оригинал"
+ mirror_duplicate_servant: "Зеркальный двойник"
+
+ darkling_mirror_master: "Остаток тел"
+ darkling_mirror_servant: "Разделённое П'о"
+
+ shadowy_duplicate_master: "Оригинал"
+ shadowy_duplicate_servant: "Теневой двойник"
+
+ phantom_shadow_master: "Оригинал"
+ phantom_shadow_servant: "Призрачная тень"
+
+ separated_khaibit_master: "Создатель"
+ separated_khaibit_servant: "Отделённый хайбит"
+
+ separated_shadow_master: "Психея"
+ separated_shadow_servant: "Тень"
+
+ unspeakable_servitor_master: "Хозяин"
+ unspeakable_servitor_servant: "Сосуд"
+
+ divided_version_master: "Главная версия"
+ divided_version_servant: "Разделённая версия"
+
  ghoul_domitor: "[domitor|E]"
- ghoul_thrall: "[Ghoul|E]"
- herd_owner: "Owner"
+ ghoul_thrall: "[ghoul|E]"
+
+ herd_owner: "Владелец"
  herd_member: "Скот"
- worshipped_reborn: "Idol"
+
+ worshipped_reborn: "Идол"
  worshipping_neteru: "[neteru|E]"
- effigy_creator: "Creator"
- effigy_character: "Effigy"
- animantis_creator: "Creator"
- animantis_character: "Animantis"
- manifestation_creator: "Creator"
- manifestation_character: "Manifestation"
- possessesing_wraith: "Puppeteer"
- possessed_target: "Puppet"
+
+ effigy_creator: "Создатель"
+ effigy_character: "Эффигия"
+
+ animantis_creator: "Создатель"
+ animantis_character: "Анимантис"
+
+ manifestation_creator: "Создатель"
+ manifestation_character: "Манифестация"
+
+ possessesing_wraith: "Кукловод"
+ possessed_target: "Марионетка"
+
  necromancer: "Некромант"
- bound_wraith: "Bound Wraith"
- demonic_master: "Master"
+ bound_wraith: "Связанный призрак"
+
+ demonic_master: "Повелитель"
  demonic_thrall: "[thrall|E]"
- worshipped_demon: "Demon"
- worshipping_cultist: "Cultist"
- diabolist: "Diabolist"
- bound_demon: "Bound Demon"
- life_warden: "Life Warden"
- warded_patient: "Warded Patient"
- dreamer_owner: "Muse"
+
+ worshipped_demon: "Демон"
+ worshipping_cultist: "Культист"
+
+ diabolist: "Демонист"
+ bound_demon: "Связанный демон"
+
+ life_warden: "Страж жизни"
+ warded_patient: "Подопечный"
+
+ dreamer_owner: "Муза"
  dreamer_member: "[dreamer|E]"
- umbra_employer: "Employer"
- umbra_explorer: "Исследователь"
- coterie_member: "Член [GetPlayer.Custom('PODCoterie')]"
- human_companion: "Human Companion"
- spirit_companion: "Spirit Companion"
- dominate_owner: "Dominate Master"
- dominate_target: "Dominate Puppet"
- fascinate_owner: "Fascinate Master"
- fascinate_target: "Fascinate Puppet"
+
+ umbra_employer: "Наниматель"
+ umbra_explorer: "$pod_grace_i$Исследователь [Concept('umbra', 'Умбры')|E]"
+
+ coterie_member: "[GetPlayer.Custom('PODCoterie')]: член"
+
+ human_companion: "Человек-компаньон"
+ spirit_companion: "Дух-компаньон"
+
+ dominate_owner: "Мастер Доминирования"
+ dominate_target: "Марионетка Доминирования"
+
+ fascinate_owner: "Мастер Очарования"
+ fascinate_target: "Марионетка Очарования"
