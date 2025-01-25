@@ -1,20 +1,22 @@
 ﻿l_russian:
-  
+
  GENERIC_DISCOVERY_DESC: "Вас раскрыли и происки закончены."
+
  # investigate: "Investigate Scheme"
  # investigate_action: "Investigate"
  # investigate_interaction: "Investigate #weak (Scheme)#!"
- # investigate_desc: "Through inquiry, the lore of [SCHEME.GetTarget.GetShortUINameNoTooltip] may be revealed! You will get relevant bonus based on your learning."
+ # investigate_desc: "Through inquiry, the lore of [SCHEME.GetTargetCharacter.GetShortUINameNoTooltip] may be revealed! You will get relevant bonus based on your learning."
  # investigate_desc_general: "Research an individual."
  # scheme_interaction_tt_investigate_approved: "Investigate the lore about [recipient.GetFirstName]. You will know more and perhaps uncover some useful dirt if you have sufficient learning."
  # INVESTIGATE_SUCCESS_DESC: "Lore about [TARGET_CHARACTER.GetShortUIName] will become known to you! And perhaps even hooks..."
  # investigate_my_learning: "Your Learning: $VALUE|=+0$"
- # investigate_same_religion: 
- # investigate_same_faith: 
+ # investigate_same_religion: ""
+ # investigate_same_faith: ""
+
  PODentrance: "Очарование"
- PODentrance_action: "Очаровать"
+ PODentrance_action: "Очарование"
  POD_entrance_interaction: "Очаровать #weak (происки)#!"
- POD_entrance_interaction_desc: "С помощью [Concept('discipline', 'Дисциплины')|E] Присутствия, используйте силу крови, чтобы очаровать кого-либо ."
+ POD_entrance_interaction_desc: "Заставить существо полюбить вас, используя силу крови [Concept('discipline', 'дисциплины')|E] Присутствия."
  PODentrance_desc: "С помощью очарования, я заставлю [SCHEME.GetTarget.GetShortUINameNoTooltip] относится ко мне лучше!"
  PODentrance_desc_general: " $PODentrance$ - это [Concept('personal_scheme', 'личные происки')|E], которые направлены на то, чтобы привлечь к вашему двору других персонажей. В случае успеха персонаж переедет в вашу столицу. Эта сила доступна, если вы изучите [perks|El] [Concept('discipline', 'Дисциплины')|E], известной среди сородичей как [GetTrait('presence').GetName( GetNullCharacter )]. Эта сила работает исключительно на безземельных персонажах."
  scheme_interaction_tt_PODentrance_approved: "Очаровать [recipient.GetFirstName]. \nПо окончанию происков произойдет дуэль между вашей дипломатией и интригой цели.\nЕсли успешно, жертва улучшит свое мнение о вас."
