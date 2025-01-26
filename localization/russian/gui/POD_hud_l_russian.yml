@@ -9,8 +9,8 @@
  POD_hint_masquerade_invalid_cooldown: "#X Взаимодействие, чтобы скрыть [the_masquerade|E], в настоящее время недоступно.#!"
 
  POD_hint_chi: "\n\n#I Нажмите на эту панель, чтобы показать различные способы восстановления Ци.#!"
- POD_hint_yangvirtue: "\n\nПоскольку у вас есть [GetPlayer.Custom('PODYangVirtue')], ваша Ци Ян не может превышать [GetPlayer.MakeScope.ScriptValue('yang_cap')|V0]."
- POD_hint_yinvirtue: "\n\nПоскольку у вас есть [GetPlayer.Custom('PODYinVirtue')], ваша Ци Инь не может превышать [GetPlayer.MakeScope.ScriptValue('yin_cap')|V0]."
+ POD_hint_yangvirtue: "\n\nПоскольку у вас есть [GetPlayer.Custom('PODYangVirtue')], ваша Ци Ян не может превышать [GetPlayer.MakeScope.ScriptValue('yang_cap')|V0] ед."
+ POD_hint_yinvirtue: "\n\nПоскольку у вас есть [GetPlayer.Custom('PODYinVirtue')], ваша Ци Инь не может превышать [GetPlayer.MakeScope.ScriptValue('yin_cap')|V0] ед."
 
  POD_hint_rage: "\n\nКаждый месяц у вас есть шанс в $POD_player_rage_growth_chance$ получить ярость."
  POD_hint_gnosis: "\n\nКаждый месяц у вас есть шанс в $POD_player_gnosis_regen_chance$ шанс восстановить гносис."
@@ -18,8 +18,8 @@
  POD_hint_glamour: "\n\n#I Нажмите на эту панель, чтобы показать различные способы восстановления гламура.#!"
  POD_hint_sekhem: "\n\n#I Нажмите на эту панель, чтобы показать различные способы восстановления сехема.#!"
  POD_hint_resolve: "\n\n#I Нажмите на эту панель, чтобы показать различные способы восстановления решимости.#!"
- POD_hint_window_hunger: "Голод"
 
+ POD_hint_window_hunger: "Голод"
  POD_hint_window_fae: "[GetPlayer.Custom('PODFaeResource')]"
  POD_hint_window_glamour: "Гламур"
  POD_hint_window_chi: "Ци"
@@ -29,35 +29,36 @@
 
  POD_hint_window_prison: "Показать пленников"
 
- POD_hunger_window_hunt_in_capital: "Как вампир, вы можете отправиться в [Concept('journey', 'странствие')|E], чтобы охотиться на смертных в своей столице."
+ POD_hunger_window_hunt_in_capital: "Будучи вампиром, вы можете отправиться в [Concept('journey', 'странствие')|E], чтобы охотиться на смертных в своей столице."
  POD_hunger_window_hunt_in_capital_inprogress: "#help Вы уже охотитесь на смертных в своей столице.#!"
  POD_hunger_window_regen: "[GetPlayer.Custom('PODBloodRegenHint')]"
  POD_hunger_window_regen_revenant: "Поскольку у вас имеется свойство «[GetTrait('revenant').GetName(GetPlayer)]», вы автоматически теряете #V 1#! #L $pod_hunger_with_icon$а#! в месяц."
  POD_hunger_window_regen_dhampir: "Поскольку у вас имеется свойство «[GetTrait('dhampir').GetName(GetPlayer)]», вы автоматически теряете #V 1#! #L $pod_hunger_with_icon$а#! в месяц."
- POD_hunger_window_herd_drink: "Вы можете питаться членом стада, [GetPlayer.MakeScope.Var('suggested_herdmember').Char.GetShortUINameNoTooltip]."
+ POD_hunger_window_herd_drink: "Вы можете питаться членом стада, персонажем [GetPlayer.MakeScope.Var('suggested_herdmember').Char.GetShortUINameNoTooltip]."
  POD_hunger_window_herd_drink_noblood: "#help Ни у кого из членов вашего стада не осталось крови. Подождите, пока они восстановятся.#!"
  POD_hunger_window_herdify: "Вы можете добавить одного из своих [Concept('courtiers', 'придворных')|E] к своему стаду."
  POD_hunger_window_herdify_invalid: "[GetPlayer.Custom('PODHerdifyHint')]"
 
- POD_hunger_window_herdify_revenant: "#help Как ревенант, вы можете добавить вампиров к своему стаду.\n\n$POD_hunger_window_herdify_suffix$#!"
- POD_hunger_window_herdify_ghoul: "#help Как гуль, вы можете добавить вампиров к своему стаду.\n\n$POD_hunger_window_herdify_suffix$#!"
- POD_hunger_window_herdify_dhampir: "#help Как [GetTrait('dhampir').GetName(GetPlayer)|l], вы можете добавить вампиров к своему стаду.\n\n$POD_hunger_window_herdify_suffix$#!"
+ POD_hunger_window_herdify_revenant: "#help Будучи ревенантом, вы можете добавить вампиров к своему стаду.\n\n$POD_hunger_window_herdify_suffix$#!"
+ POD_hunger_window_herdify_ghoul: "#help Будучи гулем, вы можете добавить вампиров к своему стаду.\n\n$POD_hunger_window_herdify_suffix$#!"
+ POD_hunger_window_herdify_dhampir: "#help Будчи #L [GetTrait('dhampir').GetName(GetPlayer)|l]ом#!, вы можете добавить вампиров к своему стаду.\n\n$POD_hunger_window_herdify_suffix$#!"
  POD_hunger_window_herdify_suffix: "Выберите любого безземельного вампира и начните [Concept('scheme', 'происки')|E] «Добавить к стаду» через [character_interaction|El]."
  POD_hunger_window_herdify_vampire: "#help При вашем дворе нет потенциальных членов стада. Попробуйте поохотиться на смертных в своей столице.#!"
 
- POD_hunger_window_prisoners_invalid: "#help На данный момент у вас нет пленников, которых можно обескровить или добавить к стаду.#!"
- POD_hunger_window_prisoners: "У вас есть пленники.\n#help Возможно, вы можете выпить их кровь или пополнить ими своё стадо.#!"
+ POD_hunger_window_prisoners_invalid: "#help В данный момент у вас нет пленников, которых можно обескровить или добавить к стаду.#!"
+ POD_hunger_window_prisoners: "У вас есть пленники.\n#help Возможно, вы можете осушить их кровь или добавить их к своему стаду.#!"
 
  POD_hunger_window_artifacts: "У вас есть [artifacts|El], в которых можно хранить кровь."
 
  POD_glamour_window_regen: "[GetPlayer.Custom('PODGlamourRegenHint')]"
  POD_glamour_window_regen_fae: "Поскольку у вас имеется свойство «[GetTrait('fae').GetName(GetPlayer)]», вы восстанавливаете #V 1#! [GetPlayer.Custom('PODFaeResource')] в месяц."
  POD_glamour_window_regen_changeling: "Поскольку у вас имеется свойство «[GetTrait('changeling').GetName(GetPlayer)]», вы восстанавливаете #V 1#! [GetPlayer.Custom('PODFaeResource')] в месяц."
- POD_glamour_window_regen_building: "#help У вас имеется шанс с #V [GetPlayer.MakeScope.ScriptValue('chance_for_extra_glamour_regen')]%#! восстановить дополнительно  [GetPlayer.Custom('PODFaeResource')] от постройки #TOOLTIP:BUILDING,glade_freehold_01 #L Поляна#!#! в вашей столице.#!"
+ POD_glamour_window_regen_building: "#help У вас имеется #V [GetPlayer.MakeScope.ScriptValue('chance_for_extra_glamour_regen')]%#! шанс восстановить дополнительно  [GetPlayer.Custom('PODFaeResource')] от постройки #TOOLTIP:BUILDING,glade_freehold_01 #L Поляна#!#! в вашей столице.#!"
  POD_glamour_window_dreamer: "You can add one of your [courtiers|E] as a Dreamer."
  POD_glamour_window_dreamer_help: "#help Dreamers will grant you [lifestyle_experience|E] and have a small chance to regenerate your [GetPlayer.Custom('PODFaeResource')].#!"
  POD_glamour_window_reverie: "You gain #V 2#! [GetPlayer.Custom('PODFaeResource')] through Reverie every time you complete a [GetScheme('sway').GetTypeName()], [GetScheme('befriend').GetTypeName()], or [GetScheme('courting').GetTypeName()] [scheme|E]."
  POD_glamour_window_artifacts: "You have [artifacts|E] that can store Glamour."
+ 
  POD_chi_window_hunt: "As a [GetTrait('kueijin').GetName(GetPlayer)], you can replenish Chi by drinking blood.\n#help Right-click an unlanded character to start the Hunt [journey|E].#!"
  POD_chi_window_prisoners_invalid: "#help You currently have no prisoners whose Chi you could devour.#!"
  POD_chi_window_prisoners: "You have prisoners.\n#help You might be able to devour their Chi.#!"
@@ -70,6 +71,7 @@
  POD_chi_window_regen_wutian: "Because you are a [GetTrait('wutian').GetName(GetPlayer)], you regenerate #V 1#! Chi per month.\nYou may regenerate #V 1#! additional Chi per month more with [GetDynastyPerk('wutian_mummy_legacy_5').GetName]."
  POD_chi_window_regen_wukuei: "Because you are a [GetTrait('wukuei').GetName(GetPlayer)], you regenerate #V 1#! Chi per month."
  POD_chi_window_artifacts: "You have [artifacts|E] that can store Chi."
+
  POD_sekhem_window_regen: "[GetPlayer.Custom('PODSekhemRegenHint')]"
  POD_sekhem_window_regen_shemsuheru: "Вы восстанавливайте #V 1#! Сехем в месяц, потому что вы [GetTrait('shemsuheru').GetName(GetPlayer)] в регионе [GetGeographicalRegion('pod_lands_of_faith').GetName]."
  POD_sekhem_window_regen_shemsuheru_buildings: "Вы [GetTrait('shemsuheru').GetName(GetPlayer)] за пределами региона [GetGeographicalRegion('pod_lands_of_faith').GetName].\n#help Основываясь на здании герцогства в вашей столице, у вас есть #V [GetPlayer.MakeScope.ScriptValue('shemsuheru_sekhem_regen_chance')]%#! шанс восстановить Сехем каждый месяц.#!"
