@@ -1,7 +1,7 @@
 ﻿l_russian:
-  
+
  POD_disciplinetrain.100.t: "Тренировка [Concept('discipline', 'Дисциплины')|E]"
- POD_disciplinetrain.100.desc: "Если у ваших протеже есть вампирская кровь в [disciplinetrainee.GetHerHis] венах, но им не известны Дисциплины, которыми вы уже владеете, вы можете обучить их новым Дисциплинам. Это не простой процесс: вы должны будете поделиться своей кровью  с учеником и что более важно вы потратите свой опыт резонанса. Некоторые Дисциплины более сложны в обучении, чем другие. Так же обучаение другого персонажа вызовет у вас стресс. Вы обучите [disciplinetrainee.GetFirstName] ..."
+ POD_disciplinetrain.100.desc: "Если в жилах вашего вассала течёт вампирская кровь, но [disciplinetrainee.GetHerHis] не обладает [Concept('discipline', 'дисциплиной')|E], которой владеете вы, вы можете обучить [disciplinetrainee.GetHerHis] этой [Concept('discipline', 'дисциплине')|E]. Этот процесс не предоставляется бесплатно: вам придётся поделиться кровью с учеником. Более того, вам нужно будет поделиться своим опытом и накопленным резонансом крови. Некоторые [Concept('discipline', 'дисциплины')|E] сложнее выучить, чем другие, и поэтому они истощат вашу силу воли и вызовут стресс. Вы обучите [disciplinetrainee.GetFirstName]..."
  POD_disciplinetrain.100.desc_mass: "Если в жилах ваших вассалов течёт вампирская кровь, но они не владеют [Concept('discipline', 'дисциплиной')|E], которой владеете вы, вы можете обучить их этой [Concept('discipline', 'дисциплине')|E]. Этот процесс не предоставляется бесплатно: вам придётся поделиться кровью с ними. Более того, вам нужно будет поделиться своим опытом и накопленным резонансом крови. Некоторые [Concept('discipline', 'дисциплины')|E] сложнее обучить, чем другие, и поэтому они истощат вашу силу воли и вызовут стресс. Вы обучите их..."
  POD_disciplinetrain.100.option.a: "Использовать огромную силу"
  POD_disciplinetrain.100.option.b: "Двигаться со скоростью стрелы"
@@ -26,25 +26,26 @@
  POD_disciplinetrain.100.option.u: "Безумию"
  POD_disciplinetrain.100.option.v: "Голосу"
  POD_disciplinetrain.100.option.w: "Животному Духу"
- POD_disciplinetrain.100.option.x: "Силе Третьего Глаза"
+ POD_disciplinetrain.100.option.x: "Силе Третьего глаза"
  POD_disciplinetrain.100.option.y: "Манипуляции кровью"
  POD_disciplinetrain.100.option.z: "Силам, присущим феям"
  POD_disciplinetrain.100.option.bardo: "Отвержение зверя"
  POD_disciplinetrain.100.option.end: "Ничему в этот раз"
 
- POD_disciplinetrain.100.option.l.koldunic: "Я обучу [disciplinetrainee.GetHerHim] колдунской магии"
- POD_disciplinetrain.100.option.l.sadhana: "Я обучу [disciplinetrainee.GetHerHim] садхане"
- POD_disciplinetrain.100.option.l.akhu: "Я обучу [disciplinetrainee.GetHerHim] ахху"
- POD_disciplinetrain.100.option.l.duranki: "Я обучу [disciplinetrainee.GetHerHim] дур-ан-ки"
- POD_disciplinetrain.100.option.l.thaumaturgy: "Я обучу [disciplinetrainee.GetHerHim] тауматургии"
- POD_disciplinetrain.100.option.l.abyssal_mysticism: "Я обучу [disciplinetrainee.GetHerHim] мистицизму Бездны"
+ POD_disciplinetrain.100.option.l.koldunic: "Я обучу [disciplinetrainee.GetHerHis] Колдовству"
+ POD_disciplinetrain.100.option.l.sadhana: "Я обучу [disciplinetrainee.GetHerHis] Садхане"
+ POD_disciplinetrain.100.option.l.akhu: "Я обучу [disciplinetrainee.GetHerHis] Акху"
+ POD_disciplinetrain.100.option.l.duranki: "Я обучу [disciplinetrainee.GetHerHis] Дур-ан-ки"
+ POD_disciplinetrain.100.option.l.thaumaturgy: "Я обучу [disciplinetrainee.GetHerHis] Тауматургии"
+ POD_disciplinetrain.100.option.l.abyssal_mysticism: "Я обучу [disciplinetrainee.GetHerHis] Мистицизму Бездны"
 
- POD_disciplinetrain.100.option.q.giovanni: "Я расскрою [disciplinetrainee.GetHerHim] секреты Путя Некромантии Джованни"
- POD_disciplinetrain.100.option.q.cappadocian: "Я расскрою [disciplinetrainee.GetHerHim] секреты Путя Некромантии Каппадокийцев"
- POD_disciplinetrain.100.option.q.harbinger: "Я расскрою [disciplinetrainee.GetHerHim] секреты Путя Некромантии Предвестников"
- POD_disciplinetrain.100.option.q.lamia: "Я расскрою [disciplinetrainee.GetHerHim] секреты Путя Некромантии Ламий"
- POD_disciplinetrain.100.option.q.nagaraja: "Я расскрою [disciplinetrainee.GetHerHim] секреты Путя Некромантии Нагараджа"
- POD_disciplinetrain.100.option.q.impundulu: "Я расскрою [disciplinetrainee.GetHerHim] секреты Путя Некромантии Импудулу"
+ POD_disciplinetrain.100.option.q.giovanni: "Я обучу [disciplinetrainee.GetHerHis] некромантии Джованни"
+ POD_disciplinetrain.100.option.q.cappadocian: "Я обучу [disciplinetrainee.GetHerHis] некромантии Каппадокийцев"
+ POD_disciplinetrain.100.option.q.harbinger: "Я обучу [disciplinetrainee.GetHerHis] некромантии Вестников"
+ POD_disciplinetrain.100.option.q.lamia: "Я обучу [disciplinetrainee.GetHerHis] некромантии Ламий"
+ POD_disciplinetrain.100.option.q.nagaraja: "Я обучу [disciplinetrainee.GetHerHis] некромантии Нагараджа"
+ POD_disciplinetrain.100.option.q.impundulu: "Я обучу [disciplinetrainee.GetHerHis] некромантии Импундулу"
+
  POD_disciplinetrain.110.t: "Обучение искусству"
  POD_disciplinetrain.110.desc: "Каждый новый вампир должен найти наставника и получить инструкции. Молодой вампир, который сам не выбрал учителя, обычно получает его в принудительном порядке — и часто это происходит самым жёстким образом. Наставники подвергают своих учеников множеству форм обучения; методы варьируются от учителя к учителю и от дисциплины к дисциплине, но ни один из них не является лёгким. Вы обучите [disciplinetrainee.GetFirstName] искусству..."
  POD_disciplinetrain.110.desc_mass: "Каждый новый вампир должен найти наставника и получить инструкции. Молодой вампир, который сам не выбрал учителя, обычно получает его в принудительном порядке — и часто это происходит самым жёстким образом. Наставники подвергают своих учеников множеству форм обучения; методы варьируются от учителя к учителю и от дисциплины к дисциплине, но ни один из них не является лёгким. Вы обучите их искусству..."
@@ -69,8 +70,8 @@
  POD_disciplinetrain.110.option.s: "Искусству Железной Горы"
  POD_disciplinetrain.110.option.t: "Искусству Кияя"
  POD_disciplinetrain.110.option.u: "Плетению Ада"
- POD_disciplinetrain.110.option.v: "Искусству Техник Иня"
- POD_disciplinetrain.110.option.w: "Искусству Техник Яна"
+ POD_disciplinetrain.110.option.v: "Искусству Техник Инь"
+ POD_disciplinetrain.110.option.w: "Искусству Техник Ян"
  POD_disciplinetrain.110.option.x: "Искусству Поглощения Молитвы"
  POD_disciplinetrain.110.option.y: "Искусству Внутреннего Пути"
  POD_disciplinetrain.110.option.z: "Искусству Бури Внутреннего Фокуса"
@@ -79,8 +80,6 @@
  POD_disciplinetrain.110.option.watergodbody: "Искусству Божественного Тела Воды"
  POD_disciplinetrain.110.option.firegodbody: "Искусству Божественного Тела Огня"
  POD_disciplinetrain.110.option.earthgodbody: "Искусству Божественного Тела Земли"
-
-
 
 
  POD_disciplinetrain.120.t: "Обучение Цяо"
@@ -96,7 +95,6 @@
  POD_disciplinetrain.120.option.h: "Мэн"
  POD_disciplinetrain.120.option.i: "Чжу Мао"
 
-
  POD_disciplinetrain.130.t: "Обучение Хекау"
  POD_disciplinetrain.130.desc: "Мумии должны смириться с вечностью и принять её. Вместо того чтобы видеть в бессмертии проклятие, мумия должна научиться воспринимать его как возможность обрести мудрость. Вместо того чтобы быть подавленным опытом или оказаться неподготовленным к превратностям мира, мумия получает возможность учить, выживать и получать все преимущества возраста без его недостатков. Вы обучите [disciplinetrainee.GetFirstName] Хекау..."
  POD_disciplinetrain.130.option.a: "Алхимии"
@@ -107,9 +105,8 @@
  POD_disciplinetrain.130.option.f: "Номенклатуре"
  POD_disciplinetrain.130.option.g: "Тану"
 
-
  POD_disciplinetrain.140.t: "Обучение Дару"
- POD_disciplinetrain.140.desc: "Иногда Гароу могут обучать другие Гароу своим дарам, но этот процесс обычно занимает несколько недель (или месяцев) и сопряжён с опасностью, так как ученик практикуется с новой силой. Некоторые родственники могут изучать дары, но такие случаи крайне редки. Большинство родственников не знают даров. Даже самые опытные из них, как правило, знают один или два. Вы обучите [disciplinetrainee.GetFirstName] Дару..."
+ POD_disciplinetrain.140.desc: "Иногда Гару могут обучать другие Гароу своим дарам, но этот процесс обычно занимает несколько недель (или месяцев) и сопряжён с опасностью, так как ученик практикуется с новой силой. Некоторые родственники могут изучать дары, но такие случаи крайне редки. Большинство родственников не знают даров. Даже самые опытные из них, как правило, знают один или два. Вы обучите [disciplinetrainee.GetFirstName] Дару..."
  POD_disciplinetrain.140.option.a: "Обычных Даров"
  POD_disciplinetrain.140.option.b: "Даров Породы"
  POD_disciplinetrain.140.option.c: "Даров Аспекта"
@@ -124,8 +121,7 @@
  POD_disciplinetrain.140.option.l: "Даров Хенгейокай"
  POD_disciplinetrain.140.option.m: "Планетарных Даров"
 
-
- POD_disciplinetrain.150.t: "Обучение Кантипам"
+ POD_disciplinetrain.150.t: "Обучение Колдовству"
  POD_disciplinetrain.150.desc: "Освоение совершенно нового навыка, знания, искусства или области требует учебы и наставничества. Это обучение может быть простым (несколько дней тренировок с другом, чтобы выучить основы владения оружием) или невероятно сложным (поход в [UmbraGlossary('near_dreaming')] для изучения принципов Искусства Онейромантии), но оно всегда должно быть завершено. Наличие Наставника помогает, но даже наставник может учить только тому, что знает сам. Вы обучите [disciplinetrainee.GetFirstName] Области или Искусству..."
  POD_disciplinetrain.150.desc_mass: "Освоение совершенно нового навыка, знания, искусства или области требует учебы и наставничества. Это обучение может быть простым (несколько дней тренировок с другом, чтобы выучить основы владения оружием) или невероятно сложным (поход в [UmbraGlossary('near_dreaming')] для изучения принципов Искусства Онейромантии), но оно всегда должно быть завершено. Наличие Наставника помогает, но даже наставник может учить только тому, что знает сам. Вы обучите их Области или Искусству..."
  POD_disciplinetrain.150.option.a: "Области"
