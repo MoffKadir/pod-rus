@@ -136,11 +136,11 @@
  elemental_form_perk_name: "Облик элементаля"
  summon_elemental_perk_name: "Призыв элементаля"
 
- ELEMENTAL_STRENGTH_PERK_EFFECT: "#weak Draw greater strength and resilience from the earth.#!"
- WOODEN_TONGUES_PERK_EFFECT: "#weak Speak with the spirit of an inanimate object.#!"
- ANIMATE_THE_UNMOVING_PERK_EFFECT: "Unlock Golems as [men_at_arms|E].\n#weak Cause an object to move within the limits of its form.#!"
- ELEMENTAL_FORM_PERK_EFFECT: "Unlock Elemental shapeshifts.\n#weak The caster transforms into an inanimate object.#!"
- SUMMON_ELEMENTAL_PERK_EFFECT: "Unlock Elemental [men_at_arms|E].\n#weak Conjure and possibly command a spirit of one of the classical elements.#!"
+ ELEMENTAL_STRENGTH_PERK_EFFECT: "#weak Черпайте силу и стойкость из земли.#!"
+ WOODEN_TONGUES_PERK_EFFECT: "#weak Общение с духом неодушевлённых предметов.#!"
+ ANIMATE_THE_UNMOVING_PERK_EFFECT: "Доступны [men_at_arms|El] - големы.\n#weak Заставьте объект двигаться в пределах его формы.#!"
+ ELEMENTAL_FORM_PERK_EFFECT: "Открывает стихийную смену облика.\n#weak Заклинатель превращается в неодушевленный предмет.#!"
+ SUMMON_ELEMENTAL_PERK_EFFECT: "Доступны [men_at_arms|El] - элементали.\n#weak Заклинайте и, возможно, повелевайте духом одного из классических элементов#!"
 
  bs_a_taste_for_blood_perk_name: "Вкус крови"
  blood_rage_perk_name: "Неистовство крови"
@@ -148,8 +148,8 @@
  bs_theft_of_vitae_perk_name: "Кража витэ"
  bs_cauldron_of_blood_perk_name: "Котёл крови"
 
- BS_A_TASTE_FOR_BLOOD_PERK_EFFECT: "As a $pod_bs_spell$, find out if your target is a $pod_diablerist$.\n#weak Gather a variety of information from a blood sample#!"
- BLOOD_RAGE_PERK_EFFECT: "As a $pod_bs_spell$, force your target to use Blood Surge.\n#weak Force a target to expend their vitae to raise Attributes#!"
+ BS_A_TASTE_FOR_BLOOD_PERK_EFFECT: "Вы можете узнать, является ли ваша цель #L $pod_diablerist|l$стом#!, применив это #L $pod_bs_spell|l$ие#!.\n#weak Получение разнообразной информации из образца крови#!"
+ BLOOD_RAGE_PERK_EFFECT: "Вы можете заставить вашу цель использовать вливание крови, применив это #L $pod_bs_spell|l$ие#!.\n#weak Принуждение цели тратить свою витэ для повышения атрибутов#!"
  BS_BLOOD_OF_POTENCY_PERK_EFFECT: "As a $pod_bs_spell$, temporarily increase [blood_potency|E] by 1.\n#weak Temporarily lower your generation#!"
  BS_THEFT_OF_VITAE_PERK_EFFECT: "As a $pod_bs_spell$, steal vitae from another $POD_splat_vampire$.\n#weak Steal blood from a target at a distance#!"
  BS_CAULDRON_OF_BLOOD_PERK_EFFECT: "Give [GetModifier('cauldron_of_blood_modifier').GetNameWithTooltip] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E].\n#weak Cause a victim's blood to burn them from within#!"
