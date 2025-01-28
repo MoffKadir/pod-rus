@@ -521,14 +521,14 @@
 
  # Umbra Tooltip
  paying_for_spirit_travel_toast: "Вы заплатили золото, чтобы приобрести [true_jade|El]"
- paying_for_spirit_travel_notification_yin: "Without the [GetPerk('semblance_of_the_ebon_dragon_perk').GetName( GetPlayer )] [perk|E], you must use a [true_jade|E] to perform a ritual to enter the [UmbraGlossaryLocalized('shadowlands','Yin World')]"
- paying_for_spirit_travel_notification_yang: "Without the [GetPerk('semblance_of_the_scalet_queen_perk').GetName( GetPlayer )] [perk|E], you must use a [true_jade|E] to perform a ritual to enter the [yang_world|E]"
- stepping_sideways_toast: "Stepping Sideways"
- stepping_sideways_tooltip: "You spend Gnosis to enter the [umbra|E]"
- passing_gauntlet_toast: "Passing the Gauntlet"
- passing_gauntlet_tooltip: "You spend resources to pass the Gauntlet"
- passing_shroud_toast: "Passing the Shroud"
- passing_shroud_tooltip: "You spend resources to pass the Shroud"
+ paying_for_spirit_travel_notification_yin: "Без [Concept('perk', 'достоинства')|E] [GetPerk('semblance_of_the_ebon_dragon_perk').GetName( GetPlayer )] вы должны использовать [true_jade|El] для проведения ритуала, чтобы войти в [UmbraGlossaryLocalized('shadowlands','мир Инь')]"
+ paying_for_spirit_travel_notification_yang: "Без [Concept('perk', 'достоинства')|E] [GetPerk('semblance_of_the_scalet_queen_perk').GetName( GetPlayer )] вы должны использовать [true_jade|El] для проведения ритуала, чтобы войти в [Concept('yang_world', 'мир Ян')|E]"
+ stepping_sideways_toast: "Шаг в сторону"
+ stepping_sideways_tooltip: "Вы тратите гнозис, чтобы войти в [Concept('umbra', 'Умбру')|E]"
+ passing_gauntlet_toast: "Прохождение Перчатки"
+ passing_gauntlet_tooltip: "Вы тратите ресурсы, чтобы пройти Перчатку"
+ passing_shroud_toast: "Прохождение Завесы"
+ passing_shroud_tooltip: "Вы тратите ресурсы, чтобы пройти Завесу"
 
  has_gauntlet1_modifier_tooltip: "Провинция имеет модификатор: [GetModifier( 'gauntlet1_modifier' ).GetNameWithTooltip|L]"
  has_gauntlet2_modifier_tooltip: "Провинция имеет модификатор: [GetModifier( 'gauntlet2_modifier' ).GetNameWithTooltip|L]"
@@ -536,169 +536,169 @@
  has_gauntlet4_modifier_tooltip: "Провинция имеет модификатор: [GetModifier( 'gauntlet4_modifier' ).GetNameWithTooltip|L]"
  has_gauntlet5_modifier_tooltip: "Провинция имеет модификатор: [GetModifier( 'gauntlet5_modifier' ).GetNameWithTooltip|L]"
 
- SPIRIT_TRAVELING_TOOLTIP: "Escaping..."
- SPIRIT_EXPLORING_TOOLTIP: "Exploring..."
- spirit_travel_arrived_title: "[umbra|E] Reached"
- spirit_travel_arrived_desc: "You have reached the [umbra|E]."
- 
- shadowlands_fetter_maintenance_tooltip: "You pay the cost of staying in the [UmbraGlossary('shadowlands')] without $pod_Fetters$."
- 
- is_in_umbra_tooltip: "You are in the [umbra|E]."
- is_in_dreaming_tooltip: "You are in the [UmbraGlossary('dreaming')]."
- umbra_realm_known_tooltip: "Found the [UmbraGlossary(Scope.GetFlagName)] in the [umbra|E]"
- 
+ SPIRIT_TRAVELING_TOOLTIP: "Бегство..."
+ SPIRIT_EXPLORING_TOOLTIP: "Исследование..."
+ spirit_travel_arrived_title: "[umbra|E] достигнута"
+ spirit_travel_arrived_desc: "Вы достигли [Concept('umbra', 'Умбры')|E]."
+
+ shadowlands_fetter_maintenance_tooltip: "Вы платите цену за пребывание в [UmbraGlossaryLocalized('shadowlands','Загробном мире')] без $pod_Fetters|l$."
+
+ is_in_umbra_tooltip: "Вы находитесь в [Concept('umbra', 'Умбре')|E]."
+ is_in_dreaming_tooltip: "Вы находитесь в [UmbraGlossaryLocalized('dreaming','Грёзах')]."
+ umbra_realm_known_tooltip: "Находка в [Concept('umbra', 'Умбре')|E]: [UmbraGlossary(Scope.GetFlagName)]"
+
  # Umbra Place
- umbra_place_glen_confirm: "Rest in a Glen"
- umbra_place_hellhole_confirm: "Rest in a Hellhole"
- umbra_place_haunt_confirm: "Rest in a Haunt"
- umbra_place_veinous_stair_confirm: "Sneak into the Veinous Stair"
- umbra_place_onyx_tower_confirm: "Bow at the Onyx Tower"
- umbra_place_broken_mirror_confirm: "Passing the Broken Mirror"
- umbra_place_periphery_confirm: "Catching the Periphery"
- umbra_place_blight_confirm: "Training in Blight"
- umbra_place_broken_lands_confirm: "Explore the Broken Lands"
- umbra_place_vista_confirm: "View the Vista"
- umbra_place_oblivion_confirm: "Suicide in Oblivion"
- umbra_place_earth_confirm: "Return to Earth"
- umbra_place_shadowlands_confirm: "Stay in Shadowlands"
- umbra_place_dark_kingdom_confirm: "Return to [dark_kingdom|E]"
- umbra_place_seat_confirm: "Visit the Seats"
- umbra_place_seat_of_fate_confirm: "Visit the Seat of Fate"
- umbra_place_jade_palace_confirm: "Visit the Jade Palace"
- umbra_place_memory_tower_confirm: "Visit the Memory Tower"
- 
- umbra_place_earth_tooltip: "Unbound [GetTrait('wraith').GetName( GetNullCharacter )] that are not [GetTrait('risen').GetName( GetPlayer )] gain #N 40#! [stress|E] every year to maintain themselves on [skinlands|E]."
- umbra_place_shadowlands_tooltip: "[GetTrait('wraith').GetName( GetNullCharacter )] without $pod_Fetters$ gains medium [stress|E] every year to maintain themselves in the [UmbraGlossary('shadowlands')]. (10% of chance per every unassigned or lost [Fetter|E])"
- umbra_place_dark_kingdom_tooltip: "Stay in the [dark_kingdom|E] so you won't gain [stress|E] due to lack of $pod_Fetters$"
- 
- broken_mirror_valid_tooltip: "You do #bold not#! have [GetPerk('the_red_bridge_perk').GetName(GetPlayer)] perk, or [GetPlayer.GetCurrentLocation.GetName] does #bold not#! have [GetBuilding('nest_corrupt_01').GetName], [GetBuilding('wyrm_taint_01').GetName] or [faith|E] that accept infernalism."
- labyrinth_progress_effect_tooltip: "You gain #V 100#! exploration progress in [UmbraGlossary('pod_realm_labyrinth')] (If stationed)."
- 
- glen_desc: "A Glen is an area of the [UmbraGlossary('penumbra')] saturated with the energies of the Wyld. Glens are usually tied to areas of unspoiled wilderness in the material world (making them increasingly rare and inaccessible)."
- hellhole_desc: "A Hellhole is an area of the [UmbraGlossary('penumbra')] saturated with Wyrmish energies, usually due to something particularly destructive or toxic existing on the material side of the Gauntlet. Hellholes are profoundly destructive to everything around them, and breeding grounds for powerful Banes."
- veinous_stair_desc: "The Veinous Stair is a passage from Stygia directly into the [UmbraGlossary('pod_realm_labyrinth')]. The most stable place in the [UmbraGlossary('shadowlands')], the Stair is composed of black stone of an unknown type."
- onyx_tower_desc: "The Onyx Tower is the dwelling of Charon, the once and future Emperor of Stygia. The tallest building in Stygia, it represents Charon's power and his ability to oversee the [UmbraGlossary('dark_kingdom_of_iron')]."
- periphery_desc: "The Periphery, sometimes also called the "Soft Umbra", is a place - or a state of mind, as many Fera would point out - between the [UmbraGlossary('penumbra')] and the Material World."
- broken_mirror_desc: "Broken Mirrors are places where the boundaries between the Material World and [UmbraGlossary('yomi_wan')] have been loosened by massive amounts of mortal suffering, Tainted Chi and desolate spirits."
- blight_desc: "A Blight is an area of the [UmbraGlossary('penumbra')] damaged by the struggle between the Weaver and the Wyrm. These urban areas are thick with Banes and choked with the Weaver's webs; in some ways they represent all the negative aspects of a city, reified and squeezed down into a small area."
- broken_lands_desc: "A Broken Land is something right out of a tall tale. You hear tell of people finding a fork in a trail where there wasn’t one before, or a cave opening in a cliff that was solid two days ago. Horses don’t want to go down that path, and get real nervous the closer they get. Sometimes the path leads to a strange patch of wilderness where the animals don’t behave quite right — jackrabbits hunt coyotes, spiders spin webs out of silver, vultures eat the bones out of corpses without damaging the flesh. The sun might not come up for days, or the moon may shine green or red."
- vista_desc: "Vistas are areas within the [umbra|E] that open up a kind of performance reflecting one of four themes: Death, Stasis, Chaos, or Origin.\n\nVistas cannot be interacted with and simply show the entity encountering them a vision of some alternative when or where informed by one of its themes. Scenes depicted show a world where something big has happened like the creation of the universe or stultifying levels of order. These Umbral scenescapes spread across your entire field of view, as if whatever was happening was right in front of you. They seem more like events than like theatres, and affect all a traveler's senses."
- 
+ umbra_place_glen_confirm: "Отдохнуть в Лощине"
+ umbra_place_hellhole_confirm: "Отдохнуть Адской яме"
+ umbra_place_haunt_confirm: "Отдохнуть в Пристанище"
+ umbra_place_veinous_stair_confirm: "Пробраться на Венозную лестницу"
+ umbra_place_onyx_tower_confirm: "Поклониться Ониксовой башне"
+ umbra_place_broken_mirror_confirm: "Пройти Разбитое зеркало"
+ umbra_place_periphery_confirm: "Поймать Периферию"
+ umbra_place_blight_confirm: "Тренироваться в Омрачении"
+ umbra_place_broken_lands_confirm: "Исследовать Заброшенные земли"
+ umbra_place_vista_confirm: "Осмотреть Висту"
+ umbra_place_oblivion_confirm: "Покончить с жизнью в Забвении"
+ umbra_place_earth_confirm: "Вернуться на Землю"
+ umbra_place_shadowlands_confirm: "Остаться в Загробном мире"
+ umbra_place_dark_kingdom_confirm: "Вернуться в [dark_kingdom|E]"
+ umbra_place_seat_confirm: "Посетить Троны"
+ umbra_place_seat_of_fate_confirm: "Посетить Трон судьбы"
+ umbra_place_jade_palace_confirm: "Посетить Нефритовый дворец"
+ umbra_place_memory_tower_confirm: "Посетить Башню памяти"
+
+ umbra_place_earth_tooltip: "Непривязанный [GetTrait('wraith').GetName( GetNullCharacter )|l] без свойства «[GetTrait('risen').GetName( GetPlayer )]» получает #N 40#! [Concept('stress', 'стресса')|E] каждый год, поддерживая себя в [Concept('skinlands', 'Землях Плоти')|E]."
+ umbra_place_shadowlands_tooltip: "[GetTrait('wraith').GetName( GetNullCharacter )] без $pod_Fetters$ получает умеренный [stress|El] каждый год, поддерживая себя в [UmbraGlossaryLocalized('shadowlands','Загробном мире')]. (10% вероятности за каждые неразрешённые или потерянные [Concept('Fetter', 'Оковы')|E])"
+ umbra_place_dark_kingdom_tooltip: "Оставайтесь в [Concept('dark_kingdom', 'Тёмном королевстве')|E], чтобы не получить [stress|El] из-за отсутствия $pod_Fetters|l$"
+
+ broken_mirror_valid_tooltip: "У вас #bold нет#! достоинства [GetPerk('the_red_bridge_perk').GetName(GetPlayer)], или во владении [GetPlayer.GetCurrentLocation.GetName] #bold нет#! построек [GetBuilding('nest_corrupt_01').GetName], [GetBuilding('wyrm_taint_01').GetName] или [Concept('faith', 'конфессии')|E], которая принимает инфернализм."
+ labyrinth_progress_effect_tooltip: "Вы получаете #V 100#! прогресса в исследовании [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринта')] (При расположении)."
+
+ glen_desc: "Лощина - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], насыщенная энергиями Вильда. Лощины обычно связаны с участками нетронутой дикой природы в материальном мире (что делает их все более редкими и недоступными)."
+ hellhole_desc: "Адская яма - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], насыщенная энергиями Вирма, обычно из-за чего-то особенно разрушительного или токсичного, существующего на материальной стороне Перчатки. Адские ямы глубоко разрушительны для всего, что их окружает, и являются питательной средой для могущественных бэйнов."
+ veinous_stair_desc: "Венозная лестница - это проход из Стигии прямо в [UmbraGlossary('pod_realm_labyrinth')]. Лестница - самое стабильное место в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], она сложена из черного камня неизвестного типа."
+ onyx_tower_desc: "Ониксовая башня - жилище Харона, вечного императора Стигии. Самое высокое здание в Стигии, оно олицетворяет власть Харона и его способность присматривать за [UmbraGlossaryLocalized('dark_kingdom_of_iron','Тёмным королевством Железа')]."
+ periphery_desc: "Периферия, иногда называемая также «Мягкой Умброй», - это место - или состояние ума, как отмечают многие фера, - между [UmbraGlossaryLocalized('penumbra','Пенумброй')] и материальным миром."
+ broken_mirror_desc: "Разбитые зеркала - это места, где границы между материальным миром и [UmbraGlossary('yomi_wan')] были ослаблены огромным количеством смертных страданий, осквернённой Ци и духами запустения."
+ blight_desc: "Омрачение - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], поврежденная в результате борьбы между Ткачихой и Вирмом. Эти городские районы кишат бэйнами и затянуты паутиной Ткачихи; в некотором смысле они представляют собой все негативные стороны города, обобщенные и спрессованные в небольшой район."
+ broken_lands_desc: "Заброшенная земля - это что-то из небылиц. Вы слышите рассказы о том, как люди находят развилку тропы там, где ее раньше не было, или пещеру в скале, которая еще два дня назад была твердой. Лошади не хотят идти по этому пути и начинают нервничать, чем ближе к нему. Иногда тропа ведет в странный уголок дикой природы, где животные ведут себя не совсем правильно: шакалы охотятся на койотов, пауки плетут паутину из серебра, стервятники выгрызают кости из трупов, не повреждая плоть. Солнце может не всходить несколько дней, а луна - светить зеленым или красным."
+ vista_desc: "Висты - это области внутри [Concept('umbra', 'Умбры')|E] которые открывают своего рода представление, отражающее одну из четырех идей: Смерть, Застой, Хаос или Происхождение.\n\nС вистами нельзя взаимодействовать, они просто показывают сущности, сталкивающиеся с ними, видение некоего альтернативного времени или места, продиктованного одной из тем. Изображенные сцены показывают мир, в котором произошло нечто грандиозное, например, создание вселенной или застывший уровень порядка. Умбральные сцены разворачиваются по всему полю зрения, как будто все происходящее находится прямо перед вами. Они больше похожи на события, чем на театры, и воздействуют на все органы чувств путешественника."
+
  # Umbra Commune
- umbra_commune_charon_confirm: "Commune with Charon"
- umbra_commune_yuhuang_confirm: "Commune with Yu Huang"
- umbra_commune_eshtarra_confirm: "Commune with Eshtarra"
- umbra_commune_sokhta_confirm: "Commune with Sokhta"
- umbra_commune_katanka_sonnak_confirm: "Commune with Katanka-Sonnak"
- umbra_commune_mitanu_confirm: "Commune with Mitanu"
- umbra_commune_hakahe_confirm: "Commune with Hakahe"
- umbra_commune_tambiyah_confirm: "Commune with Tambiyah"
- umbra_commune_nerigal_confirm: "Commune with Nerigal"
- umbra_commune_rorg_confirm: "Commune with Rorg"
- umbra_commune_zarok_confirm: "Commune with Zarok"
- umbra_commune_lu_bat_confirm: "Commune with Lu-Bat"
- umbra_commune_ruatma_confirm: "Commune with Ruatma"
- umbra_commune_shantar_confirm: "Commune with Shantar"
- umbra_commune_meros_confirm: "Commune with Meros"
- 
+ umbra_commune_charon_confirm: "Поговорить с Хароном"
+ umbra_commune_yuhuang_confirm: "Поговорить с Юй Хуан"
+ umbra_commune_eshtarra_confirm: "Поговорить с Эштаррой"
+ umbra_commune_sokhta_confirm: "Поговорить с Сохтой"
+ umbra_commune_katanka_sonnak_confirm: "Поговорить с Катанка-Соннак"
+ umbra_commune_mitanu_confirm: "Поговорить с Митану"
+ umbra_commune_hakahe_confirm: "Поговорить с Хакахе"
+ umbra_commune_tambiyah_confirm: "Поговорить с Тамбией"
+ umbra_commune_nerigal_confirm: "Поговорить с Неригалом"
+ umbra_commune_rorg_confirm: "Поговорить с Роргом"
+ umbra_commune_zarok_confirm: "Поговорить с Зароком"
+ umbra_commune_lu_bat_confirm: "Поговорить с Лу-Батом"
+ umbra_commune_ruatma_confirm: "Поговорить с Руатмой"
+ umbra_commune_shantar_confirm: "Поговорить с Шантаром"
+ umbra_commune_meros_confirm: "Поговорить с Меросом"
+
  # Umbra Location
- 
- umbra_realm_earth: "Earth"
+
+ umbra_realm_earth: "Земля"
  umbra_realm_earth_desc: "The material world. Among the worlds of “solid” reality within the Tellurian, Earth is often referred to as “the Realm” implying its primacy. The planet's celestine is, of course, Gaia, and Earth's shadow is called [UmbraGlossary('penumbra')].\n\n$POD_splat_werewolf_plural$ and other shapechangers refer as the "[gaia_realm|E]", in honor of Gaia, the spirit of the Earth.\n\n$POD_splat_wraith_plural$ call this realm [skinlands|E], in contrast with the [UmbraGlossary('shadowlands')] (the Dark Penumbra) that connects to the [UmbraGlossaryLocalized('shadowlands','Underworld')] (the Dark Umbra).\n\nIn the Common Parlance of the #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L Kithain#!#!, the Waking World is Earth... the part of Earth that is not in the Umbras or the [UmbraGlossary('dreaming')]. Also called the Autumn World, the Land of Unfulfilled Dreams, and the World of Flesh."
  earth_effect_desc: ""
 
- umbra_realm_penumbra: "Penumbra"
+ umbra_realm_penumbra: "Пенумбра"
  umbra_realm_penumbra_desc: "Penumbra, also known as Earth’s Shadow, is the [spirit_world|E] directly surrounding the physical world. Many, but not all, terrain features have reflections there."
- 
- umbra_realm_astral_reaches: "Astral Reaches"
- game_concept_high_umbra: "High Umbra"
- game_concept_astral_umbra: "Astral Umbra"
+
+ umbra_realm_astral_reaches: "Астральные рубежи"
+ game_concept_high_umbra: "Высокая Умбра"
+ game_concept_astral_umbra: "Астральная Умбра"
  umbra_realm_astral_reaches_desc: "The Astral Reaches, also called the Astral Umbra, the High Umbra, or the Upper Umbra are the realms of thought, of idea, of concept."
- 
- umbra_realm_dreaming: "Dreaming"
+
+ umbra_realm_dreaming: "Грёзы"
  umbra_realm_dreaming_desc: "Like a picture postcard of a vacation, when humanity began to put more faith in cold hard facts (and cold hard iron) over whim and fancy, the mythic parts of the world branched off to an overlapping level of reality called The Dreaming."
 
- umbra_realm_underworld: "Underworld"
- game_concept_yin_world: "Yin World"
- game_concept_dark_umbra: "Dark Umbra"
+ umbra_realm_underworld: "Загробный мир"
+ game_concept_yin_world: "Мир Инь"
+ game_concept_dark_umbra: "Тёмная Умбра"
  umbra_realm_underworld_desc: "The Underworld, also known as the Dark Umbra or the Contrarium, is the domain of the dead and memories."
- 
- umbra_realm_paradox_realms: "Paradox Realm"
+
+ umbra_realm_paradox_realms: "Мир Парадокса"
  umbra_realm_paradox_realms_desc: "Paradox Realms are private realms created by the paradox accumulated in a particularly vulgar mage. Paradox realms often take on forms related to the offense that triggered them; a Mage exiled for throwing a fireball might find themselves on the shore of a lake of eternal fire, or in a matchstick city."
  paradox_realms_effect_desc: ""
- 
- umbra_realm_heaven: "Paradise"
+
+ umbra_realm_heaven: "Рай"
  umbra_realm_heaven_desc: "Heaven, is the otherworldly, ethereal abode of God and the Elohim. It was the home of the Fallen before the Rebellion.\nSince the end of the War of Wrath, no contact with Heaven has been established and the hand of the Creator has mostly distanced itself from the fallen creation.\n\nA reflection of Heaven still exists in the [umbra|E], named Paradise by its inhabitants. It is modeled more after mankind's perception of Heaven than truly comparing to the original one."
  heaven_effect_desc: ""
- 
- umbra_realm_dreamtime: "Dreamtime"
+
+ umbra_realm_dreamtime: "Время снов"
  umbra_realm_dreamtime_desc: "The Dreamtime is a Shallow Realm, a rare Realms on the very surface of the [umbra|E], right between the Gauntlet and the beginning of the [umbra|E], found only in Australia."
  dreamtime_effect_desc: ""
- 
- umbra_realm_chimare: "Chimare"
+
+ umbra_realm_chimare: "Химар"
  umbra_realm_chimare_desc: "Some Garou believe that every dream has a Chimare representation. This is not true; [UmbraGlossary('penumbra')] isn't big enough. They’re also not representative of every dream, but they do occur any time a dream reaches a degree of prominence in the cultural subconscious. Popular variations receive their own Chimares as well. An entire cluster of Chimares represents variations on “performing while naked” and “falling” dreams."
  chimare_effect_desc: ""
- 
- umbra_realm_demesne: "Demesne"
+
+ umbra_realm_demesne: "Поместье"
  umbra_realm_demesne_desc: "A Demesne is a mage's personal space within the [UmbraGlossary('dreaming')].\n\nIn order to reach it, a special connection to one's dreams is necessary that can rarely be taught, although a Shallowing can be useful. Powerful mages usually have full control over their dreamland, while lesser mages occasionally have visitors from their subconsciousness."
  demesne_effect_desc: ""
- 
- umbra_realm_near_dreaming: "Near Dreaming"
+
+ umbra_realm_near_dreaming: "Ближние Грёзы"
  umbra_realm_near_dreaming_desc: "The Near Dreaming is the part of the [UmbraGlossary('dreaming')] closest to the Mundane World."
  near_dreaming_effect_desc: ""
- 
- umbra_realm_far_dreaming: "Far Dreaming"
+
+ umbra_realm_far_dreaming: "Дальние Грёзы"
  umbra_realm_far_dreaming_desc: "The Far Dreaming is the part of the [UmbraGlossary('dreaming')] corresponding to the collective dreams of humanity."
  far_dreaming_effect_desc: ""
- 
- umbra_realm_deep_dreaming: "Deep Dreaming"
+
+ umbra_realm_deep_dreaming: "Глубокие Грёзы"
  umbra_realm_deep_dreaming_desc: "The Deep Dreaming is the part of the [UmbraGlossary('dreaming')] furthest from the Waking World."
  deep_dreaming_effect_desc: ""
- 
- umbra_realm_arcadia: "Arcadia"
+
+ umbra_realm_arcadia: "Аркадия"
  umbra_realm_arcadia_desc: "Arcadia is the original home of the fae."
  arcadia_effect_desc: ""
- 
- umbra_realm_kingdom_of_dan: "Kingdom of Dán"
+
+ umbra_realm_kingdom_of_dan: "Королевство Дан"
  umbra_realm_kingdom_of_dan_desc: "The Kingdom of [dan|E] is one of the [oneiric_realms|E] of the [UmbraGlossary('deep_dreaming')].\n\nIn a world without constant borders, there are two hypothetical lines by which some dream cartographers measure the extant of the Known [UmbraGlossary('dreaming')]: The Axle and the Equinoctial. The first measures the [UmbraGlossary('dreaming')] from top to bottom. The second traverses the [UmbraGlossary('dreaming')]'s horizontal median, acting as a rough equator. As with any measurements in the [UmbraGlossary('dreaming')], this is largely an intellectual conceit designed to give some sense of order to an otherwise chaotic universe. At the top of this fictitious Axle lies the Kingdom of [dan|E]."
  kingdom_of_dan_effect_desc: ""
- 
- umbra_realm_kureksarra: "Kureksarra"
+
+ umbra_realm_kureksarra: "Курексарра"
  umbra_realm_kureksarra_desc: "Kureksarra, known as the Red Plains, is a [hearts_realm|E] in the [UmbraGlossary('dreaming')].\n\nDominion of war without end, Kureksarra is the homeland of dreams of struggle, competition, victory, and revenge. A vast plain dotted with the ruins of fortified installations, Kureksarra was once a green realm of gentle landscapes and placid manor houses. Now, all that endures is a land so littered with bones and broken weapons that the ground refuses to give birth to anything living. Only the withered old oak trees remain, dripping blood like red sap when it rains. The trods leading in and our of Kureksarra are paths of blades and rivers of razors. The once-elegant Twin Capitals of the realm are broken ruins filled with bones and the smell of blood in the dust."
  kureksarra_effect_desc: "Max $material_magic_herb$ Reserve: #P +5#!\nMontly $material_magic_herb$ Income: #P +1#! #weak (If stationed)#!"
- 
- umbra_realm_rubezhal: "Rubezhal"
+
+ umbra_realm_rubezhal: "Рубежал"
  umbra_realm_rubezhal_desc: "Rubezhal is a [hearts_realm|E] in the [UmbraGlossary('dreaming')].\n\nHidden just under the surface of the [UmbraGlossary('dreaming')], in tunnels and caverns and enchanted hollows beneath the hills, the dominion of Rubezhal is nearly a world in itself. The faeries built many of their most ornate realms here among the roots of the Dream and the mountains, realms woven with gems and precious metals and lit by cleverly wrought interior suns and moons."
  rubezhal_effect_desc: ""
  
- umbra_realm_capecia: "Capecia"
+ umbra_realm_capecia: "Капеция"
  umbra_realm_capecia_desc: "Capecia, the City of Clocks, is a [hearts_realm|E] in the [UmbraGlossary('dreaming')].\n\nThe Glamour of Capecia is about the victory of artifice over nature. Here, in the City of Clocks, enslaved changelings and their human allies have created a realm ruled by tin toys and automata, puppets and paper dolls. The skills of the craftsmen have conquered time by building not in flesh, but in more durable materials: bronze and plastic, wire and leather, heartwood and rubber. Everything in this bustling city is not only artificial but automated. It is a world where meat changelings drift like bewildered ghosts. The mannequins fill the moving sidewalks and hurry along on their stiff-jointed legs as they dance their dance that never ends. Above, the puppet people stare with their glass eyes through office windows, while others chatter on about whatever comes into their newspaper-stuffed heads. The tin dog chases the tin cat which chases the tin mouse endlessly."
  capecia_effect_desc: ""
- 
- umbra_realm_irrgarten: "Irrgarten"
+
+ umbra_realm_irrgarten: "Ирргартен"
  umbra_realm_irrgarten_desc: "Irrgarten is a [hearts_realm|E] in the [UmbraGlossary('dreaming')] associated with wandering.\n\nWhere the winding trods cross and come together, there you find Irrgarten. This realm is the source and center of dreams of wandering along tangled, branching paths. Whether those paths are the corridors of a stony labyrinth, the threads of a cat's cradle, or the overgrown trails of the forest bramble, they are all faces of the Irrgarten. All who come here intentionally to seek trodcraft or other wisdom must face the possibility that they may never find their way out again. Individuals unlucky enough to find their way here accidentally are doomed, unless they have both luck and wit on their side."
  irrgarten_effect_desc: ""
- 
- umbra_realm_arike: "Ariké"
+
+ umbra_realm_arike: "Арикэ"
  umbra_realm_arike_desc: "Ariké, the Empire of Regret, is a [hearts_realm|E] in the [UmbraGlossary('dreaming')].\n\nWhatever you have lost is here. The friends and lovers you will not see again, the roads you will never walk, the moments you would pay much to live again... all are here. This is Ariké, where dreams of what was and what could have been are born."
  arike_effect_desc: ""
- 
- umbra_realm_myrmitown: "Myrmitown"
+
+ umbra_realm_myrmitown: "Мирмиград"
  umbra_realm_myrmitown_desc: "Myrmitown is a [home_realm|E] of the Boggans.\n\nThe most startling things about Myrmitown are the architecture and the giant chimerical ants the boggans use as beasts of burden. These ants are utilized for everything from food to transportation. The boggans here are so adept at breeding such chimera that they have a different type of ant for each type of work."
  myrmitown_effect_desc: ""
- 
- umbra_realm_the_tunnels: "The Tunnels"
+
+ umbra_realm_the_tunnels: "Туннели"
  umbra_realm_the_tunnels_desc: "The Tunnels are a [home_realm|E] for the Sluagh.\n\nThe Tunnels are a labyrinthine underground network. It is very easy to get lost here; there is little to no light, and their are vast chasms that have opened up on the ground recently. Even sluagh familiar with the area sometimes get lost, as formerly traversable passages become impassable because of a gorge or a rockfall. There are also many dangerous chimerical inhabitants. Most are friendly to the sluagh, but occasionally attacks against the sluagh by insane chimera are not unknown."
  the_tunnels_effect_desc: "Max $material_magic_mineral$ Reserve: #P +5#!\nMontly $material_magic_mineral$ Income: #P +1#! #weak (If stationed)#!"
- 
- umbra_realm_balloon: "Balloon"
+
+ umbra_realm_balloon: "Воздушный шар"
  umbra_realm_balloon_desc: "Balloon is a [home_realm|E] of the Pooka.\n\nThere are several entrances into Balloon, each with testing-traps along the way and frequent visitor traffic coming and going. Just about everyone is welcome, except for individuals of a more violent bent (an Unseelie redcap rolling into Balloon looking for supper is likely to be humiliated, bruised, and finally bounced out, with his body beaten in a thousand places, if he lives through the bouncing). Even sidhe are welcome and sometimes accepted if they don't try to lord over everyone they see and do maintain an air of "fun." Of course, none of the entrance-traps or usual social gags can make any sidhe look ridiculous, but it doesn't stop most Balloonians from trying."
  balloon_effect_desc: ""
- 
- umbra_realm_vale_of_mists: "Vale of Mists"
+
+ umbra_realm_vale_of_mists: "Долина туманов"
  umbra_realm_vale_of_mists_desc: "The Vale of Mists is the mystic barrier separating the [UmbraGlossary('near_dreaming')] from the [UmbraGlossary('far_dreaming')] and the [UmbraGlossary('deep_dreaming')], where the Mists of Forgetfulness are strongest."
  vale_of_mists_effect_desc: ""
- 
+
  umbra_realm_fields_behind: "Fields Behind"
  umbra_realm_fields_behind_desc: "The Fields Behind is a transitional realm between the Near and [UmbraGlossary('far_dreaming')], within the [UmbraGlossary('vale_of_mists')] and part of the larger Fields."
  fields_behind_effect_desc: ""
