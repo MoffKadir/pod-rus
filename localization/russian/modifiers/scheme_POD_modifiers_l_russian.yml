@@ -1,24 +1,29 @@
 ﻿l_russian:
- MOD_HOSTILE_SCHEME_RESISTANCE_ADD: "Scheme Resistance"
-  
- max_PODsummon_schemes_add: "Max [GetScheme('PODsummon').GetTypeName] [schemes|E]"
- max_befriend_schemes_add: "Max [GetScheme('befriend').GetTypeName] [schemes|E]"
- max_seduce_schemes_add: "Max [GetScheme('seduce').GetTypeName] [schemes|E]"
- max_abduct_schemes_add: "Max [GetScheme('abduct').GetTypeName] [schemes|E]"
- max_steal_back_artifact_schemes_add: "Max [GetScheme('steal_back_artifact').GetTypeName] [schemes|E]"
- steal_back_artifact_scheme_phase_duration_add: "[GetScheme('steal_back_artifact').GetTypeName] [scheme_speed_single|E]"
- fabricate_hook_scheme_phase_duration_add: "[GetScheme('fabricate_hook').GetTypeName] Scheme Phase Length"
- PODbloodbond_scheme_phase_duration_add: "[GetScheme('PODbloodbond').GetTypeName] [scheme_speed_single|E]"
- diablerize_scheme_phase_duration_add: "[GetScheme('diablerize').GetTypeName] [scheme_speed_single|E]" #NT!
- PODentrance_scheme_phase_duration_add: "[GetScheme('PODentrance').GetTypeName] [scheme_speed_single|E]" #NT!
- PODsummon_scheme_phase_duration_add: "[GetScheme('PODsummon').GetTypeName] [scheme_speed_single|E]" #NT!
- POD_discover_true_name_scheme_phase_duration_add: "[GetScheme('POD_discover_true_name').GetTypeName] [scheme_speed_single|E]"
- abduct_enemy_scheme_phase_duration_add: "Enemy [GetScheme('abduct').GetTypeName] [scheme_speed|E]"
- murder_enemy_scheme_phase_duration_add: "Enemy [GetScheme('murder').GetTypeName] [scheme_speed|E]"
- sway_enemy_scheme_phase_duration_add: "Enemy [GetScheme('abduct').GetTypeName] Scheme Phase Length"
- seduce_enemy_scheme_phase_duration_add: "Enemy [GetScheme('seduce').GetTypeName] [scheme_speed|E]" #NT!
- PODbloodbond_enemy_scheme_phase_duration_add: "Enemy [GetScheme('PODbloodbond').GetTypeName] Scheme Phase Length"
- diablerize_enemy_scheme_phase_duration_add: "Enemy [GetScheme('diablerize').GetTypeName] [scheme_speed|E]"
- POD_discover_true_name_enemy_scheme_phase_duration_add: "Enemy [GetScheme('POD_discover_true_name').GetTypeName] [scheme_speed_single|E]"
- scheme_phase_duration_against_lover_add: "[scheme_speed|E] against [lovers|E]" #NT!
- scheme_phase_duration_against_soulmate_add: "[scheme_speed|E] against [soulmates|E]" #NT!
+ MOD_HOSTILE_SCHEME_RESISTANCE_ADD: "Сопротивление проискам"
+
+ max_PODsummon_schemes_add: "Максимум [Concept('schemes', 'происков')|E] «[GetScheme('PODsummon').GetTypeName]»"
+ max_befriend_schemes_add: "Максимум [Concept('schemes', 'происков')|E] «[GetScheme('befriend').GetTypeName]»"
+ max_seduce_schemes_add: "Максимум [Concept('schemes', 'происков')|E] «[GetScheme('seduce').GetTypeName]»"
+ max_abduct_schemes_add: "Максимум [Concept('schemes', 'происков')|E] «[GetScheme('abduct').GetTypeName]»"
+ max_steal_back_artifact_schemes_add: "Максимум [Concept('schemes', 'происков')|E] «[GetScheme('steal_back_artifact').GetTypeName]»"
+
+ steal_back_artifact_scheme_phase_duration_add: "[Concept('scheme_speed_single', 'Скорость происков')|E] «[GetScheme('steal_back_artifact').GetTypeName]»"
+ fabricate_hook_scheme_phase_duration_add: "[Concept('scheme_speed_single', 'Скорость происков')|E] «[GetScheme('fabricate_hook').GetTypeName]»"
+
+ PODbloodbond_scheme_phase_duration_add: "[Concept('scheme_speed_single', 'Скорость происков')|E] «[GetScheme('PODbloodbond').GetTypeName]»"
+ diablerize_scheme_phase_duration_add: "[Concept('scheme_speed_single', 'Скорость происков')|E] «[GetScheme('diablerize').GetTypeName]»"
+ PODentrance_scheme_phase_duration_add: "[Concept('scheme_speed_single', 'Скорость происков')|E] «[GetScheme('PODentrance').GetTypeName]»"
+ PODsummon_scheme_phase_duration_add: "[Concept('scheme_speed_single', 'Скорость происков')|E] «[GetScheme('PODsummon').GetTypeName]»"
+ POD_discover_true_name_scheme_phase_duration_add: "[Concept('scheme_speed_single', 'Скорость происков')|E] «[GetScheme('POD_discover_true_name').GetTypeName]»"
+
+ abduct_enemy_scheme_phase_duration_add: "[Concept('scheme_speed', 'Скорость')|E] вражеских происков «[GetScheme('abduct').GetTypeName]»"
+ murder_enemy_scheme_phase_duration_add: "[Concept('scheme_speed', 'Скорость')|E] вражеских происков «[GetScheme('murder').GetTypeName]»"
+ sway_enemy_scheme_phase_duration_add: "[Concept('scheme_speed', 'Скорость')|E] вражеских происков «[GetScheme('abduct').GetTypeName]»"
+ seduce_enemy_scheme_phase_duration_add: "[Concept('scheme_speed', 'Скорость')|E] вражеских происков «[GetScheme('seduce').GetTypeName]»"
+
+ PODbloodbond_enemy_scheme_phase_duration_add: "[Concept('scheme_speed', 'Скорость')|E] вражеских происков «[GetScheme('PODbloodbond').GetTypeName]»"
+ diablerize_enemy_scheme_phase_duration_add: "[Concept('scheme_speed', 'Скорость')|E] вражеских происков «[GetScheme('diablerize').GetTypeName]»"
+ POD_discover_true_name_enemy_scheme_phase_duration_add: "[Concept('scheme_speed', 'Скорость')|E] вражеских происков «[GetScheme('POD_discover_true_name').GetTypeName]»"
+
+ scheme_phase_duration_against_lover_add: "[Concept('scheme_speed', 'Скорость происков')|E] против [Concept('lovers', 'любовников')|E]"
+ scheme_phase_duration_against_soulmate_add: "[Concept('scheme_speed', 'Скорость происков')|E] против [Concept('soulmates', 'родственных душ')|E]"
