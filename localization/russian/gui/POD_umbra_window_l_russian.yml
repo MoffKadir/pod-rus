@@ -556,7 +556,7 @@
  umbra_place_broken_mirror_confirm: "Пройти Разбитое зеркало"
  umbra_place_periphery_confirm: "Поймать Периферию"
  umbra_place_blight_confirm: "Тренироваться в Погибели"
- umbra_place_broken_lands_confirm: "Исследовать Заброшенные земли"
+ umbra_place_broken_lands_confirm: "Исследовать Разрушенные земли"
  umbra_place_vista_confirm: "Осмотреть Вереницу"
  umbra_place_oblivion_confirm: "Покончить с жизнью в Забвении"
  umbra_place_earth_confirm: "Вернуться на Землю"
@@ -581,7 +581,7 @@
  periphery_desc: "Периферия, иногда называемая также «Мягкой Умброй», - это место - или состояние ума, как отмечают многие фера, - между [UmbraGlossaryLocalized('penumbra','Пенумброй')] и материальным миром."
  broken_mirror_desc: "Разбитые зеркала - это места, где границы между материальным миром и [UmbraGlossary('yomi_wan')] были ослаблены огромным количеством смертных страданий, осквернённой Ци и духами запустения."
  blight_desc: "Погибель - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], поврежденная в результате борьбы между Ткачихой и Вирмом. Эти городские районы кишат бэйнами и затянуты паутиной Ткачихи; в некотором смысле они представляют собой все негативные стороны города, обобщенные и спрессованные в небольшой район."
- broken_lands_desc: "Заброшенная земля - это что-то из небылиц. Вы слышите рассказы о том, как люди находят развилку тропы там, где ее раньше не было, или пещеру в скале, которая еще два дня назад была твердой. Лошади не хотят идти по этому пути и начинают нервничать, чем ближе к нему. Иногда тропа ведет в странный уголок дикой природы, где животные ведут себя не совсем правильно: шакалы охотятся на койотов, пауки плетут паутину из серебра, стервятники выгрызают кости из трупов, не повреждая плоть. Солнце может не всходить несколько дней, а луна - светить зеленым или красным."
+ broken_lands_desc: "Разрушенная земля - это что-то из небылиц. Вы слышите рассказы о том, как люди находят развилку тропы там, где ее раньше не было, или пещеру в скале, которая еще два дня назад была твердой. Лошади не хотят идти по этому пути и начинают нервничать, чем ближе к нему. Иногда тропа ведет в странный уголок дикой природы, где животные ведут себя не совсем правильно: шакалы охотятся на койотов, пауки плетут паутину из серебра, стервятники выгрызают кости из трупов, не повреждая плоть. Солнце может не всходить несколько дней, а луна - светить зеленым или красным."
  vista_desc: "Вереница - это области внутри [Concept('umbra', 'Умбры')|E] которые открывают своего рода представление, отражающее одну из четырех идей: Смерть, Застой, Хаос или Происхождение.\n\nС вистами нельзя взаимодействовать, они просто показывают сущности, сталкивающиеся с ними, видение некоего альтернативного времени или места, продиктованного одной из тем. Изображенные сцены показывают мир, в котором произошло нечто грандиозное, например, создание вселенной или застывший уровень порядка. Умбральные сцены разворачиваются по всему полю зрения, как будто все происходящее находится прямо перед вами. Они больше похожи на события, чем на театры, и воздействуют на все органы чувств путешественника."
 
  # Umbra Commune
@@ -855,7 +855,7 @@
  umbra_realm_city_of_brass_desc: "The City of Brass has the shape of a gigantic city with eight great streets made out of various shades of brass and copper. It acts as an economic center between the Djinn pashas of the Invisible World and sorcerers who want to gain the Djinn’s aid without needlessly angering them by using the Solomonic Code to force them into servitude."
  city_of_brass_effect_desc: "$UMBRA_DISCOVERY_FETISH$"
 
- umbra_realm_spires: "Spires"
+ umbra_realm_spires: "Шпили"
  umbra_realm_spires_desc: "Cosmologists believe that the Spires are the result of many minds concentrating on the same idea, causing it to be elevated from the [UmbraGlossary('vulgate')] into a higher realm."
  spires_effect_desc: "Higher reward/requirement for intrigue lifestyle training unlocked."
 
@@ -874,21 +874,21 @@
  umbra_realm_the_court_of_the_muses: "The Court of the Muses"
  umbra_realm_the_court_of_the_muses_desc: "The Court of the Muses has suffered a great deal with the almost complete extinction of Classical Hellenic belief. Still, while their realm gets smaller every day, the nine daughters of Zeus still practice their art, hoping that their passion will stave off Oblivion for a little longer."
  the_court_of_the_muses_effect_desc: "$UMBRA_DISCOVERY_FETISH$"
- 
- umbra_realm_shadowlands: "Shadowlands"
+
+ umbra_realm_shadowlands: "Загробные миры"
  umbra_realm_shadowlands_desc: "The Shadowlands are a mirror 'skin' of reality, with every location in the breathing realm having a corresponding location in the Shadowlands which, for the most part, obey conventional rules of distance. It is where wraiths dwell, waiting for salvation or, most likely, [UmbraGlossary('oblivion')]."
 
  shadowlands_effect_desc: "Unlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to the Shadowlands so it won't cause more stress to maintain."
  
- umbra_realm_river_of_death: "River of Death"
+ umbra_realm_river_of_death: "Река смерти"
  umbra_realm_river_of_death_desc: "The River of Death is a waterway in the [UmbraGlossary('tempest')] that serves as the primary Byway from Stygia to the [UmbraGlossary('shadowlands')] and other [dark_kingdoms|E]."
  river_of_death_effect_desc: "Max $material_magic_water$ Reserve: #P +5#!\nMontly $material_magic_water$ Income: #P +1#! #weak (If stationed)#!"
  
- umbra_realm_sunless_sea: "Sunless Sea"
+ umbra_realm_sunless_sea: "Сумрачное море"
  umbra_realm_sunless_sea_desc: "Named because the sky above it is always dark, light in the Sunless Sea from sources such as ships and beacons can be seen for miles because it scatters off the surface of the water."
  sunless_sea_effect_desc: "Max $material_magic_water$ Reserve: #P +5#!\nMontly $material_magic_water$ Income: #P +1#! #weak (If stationed)#!"
- 
- umbra_realm_far_shore: "Far Shore"
+
+ umbra_realm_far_shore: "Далёкий берег"
  umbra_realm_far_shore_desc: "The Far Shores are a mysterious territory in the [UmbraGlossaryLocalized('shadowlands','Underworld')] controlled by pythian entities called Shining Ones. To modern Stygians, the Far Shores are territories controlled by Heretics, and not to be trusted."
  far_shore_effect_desc: ""
  
