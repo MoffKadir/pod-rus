@@ -490,8 +490,8 @@
  NOT_HAS_DEEP_UMBRA_ACCESS: "#bold Не имеет#! $deep_umbra_access|l$"
 
  # Gauntlet Change
- umbra_manipulate_the_gauntlet_confirm: "Манипулировать Перчаткой"
- umbra_manipulate_the_gauntlet_tooltip: "Вы будете манипулировать значением Перчатки в вашем текущем местоположении ([GetPlayer.GetCurrentLocation.GetTitle.GetNameNoTier])"
+ umbra_manipulate_the_gauntlet_confirm: "Манипулировать Барьером"
+ umbra_manipulate_the_gauntlet_tooltip: "Вы будете манипулировать значением Барьера в вашем текущем местоположении ([GetPlayer.GetCurrentLocation.GetTitle.GetNameNoTier])"
  umbra_manipulate_the_shroud_confirm: "Манипулировать Завесой"
  umbra_manipulate_the_shroud_tooltip: "Вы будете манипулировать значением Завесы в вашем текущем местоположении ([GetPlayer.GetCurrentLocation.GetTitle.GetNameNoTier])"
  umbra_manipulate_the_wall_confirm: "Манипулировать Барьером"
@@ -525,8 +525,8 @@
  paying_for_spirit_travel_notification_yang: "Без [Concept('perk', 'достоинства')|E] [GetPerk('semblance_of_the_scalet_queen_perk').GetName( GetPlayer )] вы должны использовать [true_jade|El] для проведения ритуала, чтобы войти в [Concept('yang_world', 'мир Ян')|E]"
  stepping_sideways_toast: "Шаг в сторону"
  stepping_sideways_tooltip: "Вы тратите гнозис, чтобы войти в [Concept('umbra', 'Умбру')|E]"
- passing_gauntlet_toast: "Прохождение Перчатки"
- passing_gauntlet_tooltip: "Вы тратите ресурсы, чтобы пройти Перчатку"
+ passing_gauntlet_toast: "Прохождение Барьера"
+ passing_gauntlet_tooltip: "Вы тратите ресурсы, чтобы пройти Барьер"
  passing_shroud_toast: "Прохождение Завесы"
  passing_shroud_tooltip: "Вы тратите ресурсы, чтобы пройти Завесу"
 
@@ -575,7 +575,7 @@
  labyrinth_progress_effect_tooltip: "Вы получаете #V 100#! прогресса в исследовании [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринта')] (При расположении)."
 
  glen_desc: "Лощина - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], насыщенная энергиями Вильда. Лощины обычно связаны с участками нетронутой дикой природы в материальном мире (что делает их все более редкими и недоступными)."
- hellhole_desc: "Адская яма - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], насыщенная энергиями Вирма, обычно из-за чего-то особенно разрушительного или токсичного, существующего на материальной стороне Перчатки. Адские ямы глубоко разрушительны для всего, что их окружает, и являются питательной средой для могущественных бэйнов."
+ hellhole_desc: "Адская яма - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], насыщенная энергиями Вирма, обычно из-за чего-то особенно разрушительного или токсичного, существующего на материальной стороне Барьера. Адские ямы глубоко разрушительны для всего, что их окружает, и являются питательной средой для могущественных бэйнов."
  veinous_stair_desc: "Венозная лестница - это проход из Стигии прямо в [UmbraGlossary('pod_realm_labyrinth')]. Лестница - самое стабильное место в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], она сложена из черного камня неизвестного типа."
  onyx_tower_desc: "Ониксовая башня - жилище Харона, вечного императора Стигии. Самое высокое здание в Стигии, оно олицетворяет власть Харона и его способность присматривать за [UmbraGlossaryLocalized('dark_kingdom_of_iron','Тёмным королевством Железа')]."
  periphery_desc: "Периферия, иногда называемая также «Мягкой Умброй», - это место - или состояние ума, как отмечают многие фера, - между [UmbraGlossaryLocalized('penumbra','Пенумброй')] и материальным миром."
