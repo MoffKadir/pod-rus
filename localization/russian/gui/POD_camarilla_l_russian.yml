@@ -12,7 +12,7 @@
  CAMARILLA_WINDOW_CLAN_STATUS: "Статус клана: #V [GetPlayer.Custom('CamarillaClanStatus')]#!"
  CAMARILLA_WINDOW_MEMBER_CLAN: "Члены"
 
- CAMARILLA_WINDOW_JUSTICARS_CLAN: "[Trait.GetName( Character.Self )] [Character.Custom('CamarillaStatus')]"
+ CAMARILLA_WINDOW_JUSTICARS_CLAN: "[Character.Custom('CamarillaStatus')] [Trait.GetName( Character.Self )]"
 
  CAMARILLA_WINDOW_RED_LIST_TROPHY_CLAN: "Трофей клана: [Trait.GetName( Character.Self )]"
  CAMARILLA_WINDOW_RED_LIST_MEMBER_BOUNTY: "Награда: #V [Character.MakeScope.ScriptValue('anathema_bounty_value')|0]#!, [Character.Custom('RedListTrophyModifier')]"
@@ -44,7 +44,7 @@
  custom_camarilla_status_recognized: "#TOOLTIP:GAME_TRAIT,ghoul,[GetNullCharacter] #L Признанный#!#!"
  custom_camarilla_status_sabbat: "Шабаш"
 
- custom_camarilla_clan_status_justicar: "Уважаемый"
+ custom_camarilla_clan_status_justicar: "Уважение"
  custom_camarilla_clan_status_member: "Членство"
  custom_camarilla_clan_status_accepted: "Принятие"
  custom_camarilla_clan_status_shunned: "Осуждение"
