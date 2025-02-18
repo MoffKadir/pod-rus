@@ -192,25 +192,25 @@
  POD_coterietravel_yes_flavor: "Наконец-то пришло время группе $POD_player_coterie$ отправиться в это [Concept('journey', 'странствие')|E]."
  POD_coterietravel_no_flavor: "Наконец-то пришло время отправиться в [Concept('journey', 'странствие')|E]. Остальные члены группы $POD_player_coterie$ остались позади, чтобы позволить мне пройти этот путь в одиночку."
 
- POD_coterieflavor_ambitious_1: "[ROOT.Char.GetFirstNameNicknamed] is walking with a brisk sense of purpose, seemingly eager to surmount any obstacle and meet any challenge on [ROOT.Char.GetHerHis|l] path."
- 
- POD_coterieflavor_arbitrary_1: "[ROOT.Char.GetFirstNameNicknamed] cracks [ROOT.Char.GetHerHis|l] knuckles in anticipation of this journey, ready to break some rules."
- 
- POD_coterieflavor_arrogant_1: "[ROOT.Char.GetFirstNameNicknamed] is strutting ahead of our group, chin held high, looking as though the success of our journey was a foregone conclusion."
- POD_coterieflavor_arrogant_2: "[ROOT.Char.GetFirstNameNicknamed] lets out a hearty laugh. "Don't look so glum, [GetPlayer.GetFirstName]", [ROOT.Char.GetSheHe|l] says. "$POD_player_coterie$ will prevail, as we always do. We're the best, after all." [ROOT.Char.GetSheHe|U] winks."
- 
- POD_coterieflavor_brave_1: "[ROOT.Char.GetFirstNameNicknamed] is at the front of our group. [ROOT.Char.GetSheHe|U] moves with utter confidence, ready to meet any danger and laugh in its face."
- 
- POD_coterieflavor_callous_1: "[ROOT.Char.GetFirstNameNicknamed] paces alongside our group, not a hint of emotion on [ROOT.Char.GetHerHis|l] face."
- 
- POD_coterieflavor_calm_1: "[ROOT.Char.GetFirstNameNicknamed] looks ahead with a serene look on [ROOT.Char.GetHerHis|l] face. I've never once seen [ROOT.Char.GetHerHim|l] rattled, and I wonder if this journey will be the first time."
- 
- POD_coterieflavor_chaste_1: "[ROOT.Char.GetFirstNameNicknamed] walks alongside our group absentmindedly, seemingly lost in some kind of fantasy. Definitely not a sordid one, knowing [ROOT.Char.GetHerHim|l]."
- 
- POD_coterieflavor_compassionate_1: "[ROOT.Char.GetFirstNameNicknamed] looks at the rest of us with genuine warmth in [ROOT.Char.GetHerHis|l] eyes, always happy to help others on their endeavors."
- 
- POD_coterieflavor_content_1: "[ROOT.Char.GetFirstNameNicknamed] is walking with the group at an easy pace. [ROOT.Char.GetSheHe|U] looks genuinely happy to go along with anything, whether this journey will be a success or a failure."
- 
+ POD_coterieflavor_ambitious_1: "[ROOT.Char.GetFirstNameNicknamed] идёт бодро и целеустремленно, казалось бы, стремясь преодолеть любое препятствие и справиться с любой задачей на своём пути."
+
+ POD_coterieflavor_arbitrary_1: "[ROOT.Char.GetFirstNameNicknamed] хрустит костяшками пальцев в предвкушении этого странствия, [Select_CString(ROOT.Char.IsFemale, 'готовая', 'готовый' )] нарушить некоторые правила."
+
+ POD_coterieflavor_arrogant_1: "[ROOT.Char.GetFirstNameNicknamed] вышагивает впереди нашей группы, высоко подняв подбородок, с таким видом, будто успех нашего странствия предрешен."
+ POD_coterieflavor_arrogant_2: "[ROOT.Char.GetFirstNameNicknamed] [Select_CString(ROOT.Char.IsFemale, 'разразилась', 'разразился' )] искренним смехом. «Не смотри так хмуро, [GetPlayer.GetFirstName]», - говорит [ROOT.Char.GetSheHe|l]. «$POD_player_coterie$ одержит верх, как мы всегда делаем. Мы лучшие, в конце концов», - подмигивает [ROOT.Char.GetSheHe|U]."
+
+ POD_coterieflavor_brave_1: "[ROOT.Char.GetFirstNameNicknamed] находится в первых рядах нашей группы. [ROOT.Char.GetSheHe|U] движется с полной уверенностью, [Select_CString(ROOT.Char.IsFemale, 'готовая', 'готовый' )] встретить любую опасность и рассмеяться ей в лицо."
+
+ POD_coterieflavor_callous_1: "[ROOT.Char.GetFirstNameNicknamed] шагает рядом с нашей группой, на [ROOT.Char.GetHerHis|l] лице нет ни намека на эмоции."
+
+ POD_coterieflavor_calm_1: "[ROOT.Char.GetFirstNameNicknamed] смотрит вперед с безмятежным выражением на лице. Я ни разу не [Select_CString(GetPlayer.IsFemale, 'видела', 'видел' )] [ROOT.Char.GetHerHis|l] [Select_CString(ROOT.Char.IsFemale, 'взволнованной', 'взволнованным' )], и мне интересно, станет ли это путешествие первым."
+
+ POD_coterieflavor_chaste_1: "[ROOT.Char.GetFirstNameNicknamed] рассеянно идет рядом с нашей группой, похоже, погрузившись в какие-то фантазии. Зная [ROOT.Char.GetHerHis|l], это точно не гнусная фантазия."
+
+ POD_coterieflavor_compassionate_1: "[ROOT.Char.GetFirstNameNicknamed] смотрит на остальных с искренней теплотой в глазах, всегда [Select_CString(ROOT.Char.IsFemale, 'рада', 'рад' )] помочь другим в их начинаниях."
+
+ POD_coterieflavor_content_1: "[ROOT.Char.GetFirstNameNicknamed] идёт с группой в легком темпе. [ROOT.Char.GetSheHe|U] выглядит искренне [Select_CString(ROOT.Char.IsFemale, 'счастливой, готовой', 'счастливым, готовым' )] согласиться на все, независимо от того, будет ли это странствие успешным или неудачным."
+
  POD_coterieflavor_craven_1: "[ROOT.Char.GetFirstNameNicknamed] looks a bit tense at the prospect of going on this journey. [ROOT.Char.GetSheHe|U] has a reputation for cowardice, but this journey might be a chance for [ROOT.Char.GetHerHim|l] to prove [ROOT.Char.GetHerselfHimself|l]."
  
  POD_coterieflavor_cynical_1: "[ROOT.Char.GetFirstNameNicknamed] has a knowing smirk on [ROOT.Char.GetHerHis|l] face, ready to go along with any endeavor as long as it gives [ROOT.Char.GetHerHim|l] an opportunity to spite the gods."

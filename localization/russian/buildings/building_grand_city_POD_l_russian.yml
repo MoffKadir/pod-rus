@@ -2,38 +2,43 @@
  grand_city_holding: "Великий город"
  grand_city_holding_concept_key: "[grand_city|E]"
  building_type_grand_city_01: "Великий город"
- building_type_grand_city_01_desc: "Крупный населенный пункт, имеющий огромное значение как для смертного мира, так и для сверхъестественного."
+ building_type_grand_city_01_desc: "Крупный населенный пункт, имеющий огромное значение как для смертного, так и для сверхъестественного мира."
  building_grand_city_01: "Где люди собираются"
- building_grand_city_01_desc: "С его большим населением смертных, этот город представляет собой огромный, неиспользованный потенциал. Все, чего не хватает, - это предприимчивого правителя, который осмелится захватить его."
+ building_grand_city_01_desc: "Этот город с его многочисленным смертным населением представляет собой чистый, неиспользованный потенциал. Не хватает только предприимчивого правителя, который осмелится им воспользоваться."
  building_grand_city_02: "Где люди процветают"
- building_grand_city_02_desc: "Этот город известен во всем мире как место возможностей. Смертные стекаются сюда толпами в поисках лучшей жизни. И там, где они процветают, преуспеваете и вы."
- building_grand_city_03: "Где создается культура"
- building_grand_city_03_desc: "Этот всемирно известный город является родиной множества инноваций и тенденций, бросающих большую тень на остальную цивилизацию."
+ building_grand_city_02_desc: "Этот город известен на весь мир как место, где открываются новые возможности. Смертные толпами стекаются сюда в поисках лучшей жизни. А где процветают они, процветаете и вы."
+ building_grand_city_03: "Где формируется культура"
+ building_grand_city_03_desc: "Этот всемирно известный город является местом рождения инноваций и трендов, отбрасывающих большую тень на остальную цивилизацию."
  building_grand_city_04: "Где творится история"
  building_grand_city_04_desc: "Монументальные события, происходящие в этом городе, гарантируют, что его название никогда не будет забыто."
-  
-  ############################# 
-  ##### Rome for Vampires ##### 
+
+
+ #############################
+ ##### Rome for Vampires #####
+ #############################
+
  building_type_rome_roma_aeterna_01: "Roma Aeterna"
- building_type_rome_roma_aeterna_01_desc: "#F Рим был таким же центром [Concept('cainite', 'каинитского')|E] мира, как и человеческого. Восстановление его неживого величия было бы огромным достижением.#!"
+ building_type_rome_roma_aeterna_01_desc: "#F Рим был центром как [Concept('cainite', 'каинитского')|E], так и человеческого мира. Восстановление его неживого величия было бы огромным достижением.#!"
  building_rome_roma_aeterna_01: "Roma Dividua"
- building_rome_roma_aeterna_01_desc: "Святые люди бродят по улицам, оспаривая любую попытку прямого контроля над центром европейского мира. На данном этапе титул "Рим" является престижным для его обладателя, но и опасным."
+ building_rome_roma_aeterna_01_desc: "Святые люди бродят по улицам, оспаривая любую попытку прямого контроля над центром европейского мира. На данном этапе титул Рим - престижный для его владельца, но и опасный."
  building_rome_roma_aeterna_02: "Roma Invicta"
  building_rome_roma_aeterna_02_desc: "Постепенно вера Рима ослабевает, и вампиры снова могут использовать свое тонкое влияние на благо князя."
  building_rome_roma_aeterna_03: "Roma Aeterna"
- building_rome_roma_aeterna_03_desc: "Наконец-то Рим снова в руках вампиров. Святые люди прячутся в темноте, пока дети Каина поют хвалу великому правителю, завоевавшему святой город."
- POD_rome_ventrue_desc: "Здесь находится почтенный Римский форум, который в незапамятные времена служил бьющимся сердцем города. Его разрушенный внешний вид скрывает удобные, красивые помещения."
- POD_rome_ventrue_bonus: "#P Владение этим районом открывает [sell_titles_decision|E] и делает его дешевле в использовании.#!"
+ building_rome_roma_aeterna_03_desc: "Наконец-то Рим снова в руках вампиров. Святые люди прячутся в темноте, а дети Каина воспевают хвалу великому правителю, завоевавшему священный город."
+
+ POD_rome_ventrue_desc: "Здесь находится почтенный Римский форум, служивший сердцем города в давно минувшие века. За его разрушенным внешним видом скрываются уютные и красивые покои."
+ POD_rome_ventrue_bonus: "#P Владение этим кварталом открывает [sell_titles_decision|El] и снижает его стоимость.#!"
  building_type_rome_ventrue_01: "Montium et Biberatice"
- building_type_rome_ventrue_01_desc: "Исторический район [Concept('roma_aeterna', 'Вечного Рима')|E] доверенный клану [GetTrait('ventrue').GetName(GetNullCharacter)].\n\n$POD_rome_ventrue_desc$"
+ building_type_rome_ventrue_01_desc: "Исторический квартал $pod_roma_aeterna$, вверенный клану [GetTrait('ventrue').GetName(GetNullCharacter)].\n\n$POD_rome_ventrue_desc$"
  building_rome_ventrue_01: "Montium et Biberatice"
- building_rome_ventrue_01_desc: "Исторический район [Concept('roma_aeterna', 'Вечного Рима')|E] доверенный клану [GetTrait('ventrue').GetName(GetNullCharacter)].\n\n$POD_rome_ventrue_desc$\n\n#X Если вы хотите улучшить этот район, вы должны быть королем или нанять [GetCourtPositionType('ventrue_primogen_court_position').GetName()].#!"
+ building_rome_ventrue_01_desc: "Исторический квартал $pod_roma_aeterna$, доверенный клану [GetTrait('ventrue').GetName(GetNullCharacter)].\n\n$POD_rome_ventrue_desc$\n\n#X Если вы хотите улучшить этот квартал, у вас должен быть нанят [GetCourtPositionType('ventrue_primogen_court_position').GetName()] и вы должны владеть титулом [Concept('king', 'королевского')|E] уровня.#!"
  building_rome_ventrue_02: "Montium et Biberatice"
- building_rome_ventrue_02_desc: "Исторический район [Concept('roma_aeterna', 'Вечного Рима')|E] доверенный [Concept('primogen', 'примогену')|E] [GetTrait('ventrue').GetName(GetPlayer)] .\n\n$POD_rome_ventrue_desc$\n\n#X Если вы хотите улучшить этот район, вы должны нанять [GetCourtPositionType('ventrue_primogen_court_position').GetName()] с [Concept('ventrue_primogen','хорошей пригодностью')|E] или выше.#!"
+ building_rome_ventrue_02_desc: "Исторический квартал $pod_roma_aeterna$, доверенный [Concept('primogen', 'примогену')|E] [GetTrait('ventrue').GetName(GetPlayer)].\n\n$POD_rome_ventrue_desc$\n\n#X Если вы хотите улучшить этот квартал, у вас должен быть нанят [GetCourtPositionType('ventrue_primogen_court_position').GetName()] с [Concept('ventrue_primogen','хорошей пригодностью')|E] или выше.#!"
  building_rome_ventrue_03: "Montium et Biberatice"
- building_rome_ventrue_03_desc: "Исторический район [Concept('roma_aeterna', 'Вечного Рима')|E] доверенный уважаемому [Concept('primogen', 'примогену')|E] [GetTrait('ventrue').GetName(GetNullCharacter)].\n\n$POD_rome_ventrue_bonus$\n\n$POD_rome_ventrue_desc$\n\n#X Если вы хотите улучшить этот район, вы должны нанять [GetCourtPositionType('ventrue_primogen_court_position').GetName()] с [Concept('ventrue_primogen','Отличной пригодностью')|E].#!"
+ building_rome_ventrue_03_desc: "Исторический квартал $pod_roma_aeterna$, доверенный уважаемому [Concept('primogen', 'примогену')|E] [GetTrait('ventrue').GetName(GetNullCharacter)].\n\n$POD_rome_ventrue_desc$\n\n#X Если вы хотите улучшить этот квартал, у вас должен быть нанят [GetCourtPositionType('ventrue_primogen_court_position').GetName()] с [Concept('ventrue_primogen','отличной пригодностью')|E].#!"
  building_rome_ventrue_04: "Montium et Biberatice"
- building_rome_ventrue_04_desc: "Исторический район [Concept('roma_aeterna', 'Вечного Рима')|E] доверенный могущественному [Concept('primogen', 'примогену')|E] [GetTrait('ventrue').GetName(GetNullCharacter)].\n\n$POD_rome_ventrue_bonus$\n\n$POD_rome_ventrue_desc$"
+ building_rome_ventrue_04_desc: "Исторический квартал $pod_roma_aeterna$, доверенный могущественному [Concept('primogen', 'примогену')|E] [GetTrait('ventrue').GetName(GetNullCharacter)].\n\n$POD_rome_ventrue_desc$" #ТУТ
+
  POD_rome_brujah_desc: "Это местоположение Via Lata, великой дороги императоров, что шествовали по ней во время своих триумфов. Здесь также находится последний из действующих акведуков, Aqua Virgo, место, где смертные собираются в огромном количестве."
  POD_rome_brujah_bonus: "#P Владение этим районом разблокирует [activity|El] [GetActivityType('activity_brujah_panegyra').GetName()].#!"
  building_type_rome_brujah_01: "Trivii et Vie Late"
