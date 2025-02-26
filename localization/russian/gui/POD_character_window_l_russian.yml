@@ -1,5 +1,5 @@
 ﻿l_russian:
- HERD: "Стадо"
+ HERD: "[Concept('herd', 'Стадо')|E]"
  GHOULS: "Гули"
  WRAITHS: "Призраки"
  MINIONS_tab: "Прислужники"
@@ -31,7 +31,8 @@
  stolen_hearts_row_header: "Украденные сердца #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'heart_of_darkness_heartless' ) ))])#!"
  effigies_row_header: "Эффигии #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'effigy_character' ) ))])#!" 
  animantis_row_header: "Анимантис #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'animantis_character' ) ))])#!" 
- manifestation_row_header: "Манифестация #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'manifestation_character' ) ))])#!" 
+ manifestation_row_header: "Манифестация #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'manifestation_character' ) ))])#!"
+ fetter_row_header: "#L $pod_Fetters$ы#! #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'fetter' ) ))])#!"
  shadow_twin_row_header: "Тень-двойник"
  mirror_duplicate_row_header: "Зеркальный двойник"
  darkling_mirror_row_header: "Отколовшаяся П'о"
