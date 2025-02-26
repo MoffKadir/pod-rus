@@ -29,10 +29,91 @@ JominiMultiplayerLobby = {
 
 	blockoverride "left_panel_properties"
 	{
-		size = { 390 100% }
+		size = { 390 0 }
 		widgetid = "left"
 		visible = "[GameIsMultiplayer]"
 	}
+
+	blockoverride "left_panel_attachment"
+	{
+		# DLCs
+
+		vbox = {
+			name = "dlc_collection"
+			layoutpolicy_vertical = expanding
+
+			margin = { 5 5 }
+
+			datacontext = "[GetLobbyHelper]"
+			datacontext = "[LobbyHelperWindow.GetDlcCollection]"
+
+			spacing = 5
+
+			text_label_left = {
+				text = "DLC"
+				margin_left = 4
+			}
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+
+				vbox = {
+					spacing = 5
+					margin = { 0 4 }
+
+					background = {
+						using = Background_Area_Dark
+						margin = { 8 4 }
+
+						using = Mask_Rough_Edges
+
+						modify_texture = {
+							name = "mask"
+							texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+							blend_mode = alphamultiply
+							alpha = 0.5
+						}
+
+
+						modify_texture = {
+							name = "mask"
+							texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+							spriteType = Corneredstretched
+							blend_mode = alphamultiply
+							spriteborder_bottom = 100
+							
+						}
+					}
+
+
+
+					vbox = {
+						datamodel = "[DataModelFirst( DlcCollection.GetDlcs, '(int32)15' )]]"
+						spacing = 5
+
+						item = {
+							dlc_button = {
+								using = tooltip_es
+							}				
+						}
+					}
+
+					button_show_dlc_list = {
+						using = tooltip_es
+					}
+				}
+
+				expand = {}	
+			}
+
+			
+
+			expand = {}		
+		}
+	}
+
+
+	
 
 	blockoverride "lobby_view_back_onclick" {
 		onclick = "[ReturnToMenu]"
@@ -706,13 +787,13 @@ JominiMultiplayerLobby = {
 			state = {
 				name = _show
 				on_start = "[LobbyHelperWindow.SetLandlessTabSelected( '(bool)yes' )]"
-				on_start = "[SetMapMode('landless_rulers')]"
+				#on_start = "[SetMapMode('landless_rulers')]" # CfV POD: massive lag caused by this map mode
 			}
 
 			state = {
 				name = _hide
 				on_start = "[LobbyHelperWindow.SetLandlessTabSelected( '(bool)no' )]"
-				on_start = "[SetMapMode('realms')]"
+				#on_start = "[SetMapMode('realms')]" # CfV POD: massive lag caused by this map mode
 			}
 
 			blockoverride "scrollbox_margins"
@@ -898,28 +979,29 @@ JominiMultiplayerLobby = {
 					onclick = "[TryStartRulerDesigning( Character.Self, '(bool)no' )]"
 				}
 
-				#button_standard = {
-				#	name = "create_adventurer"
-				#	size = { 380 45 }
-				#	visible = "[And( IsPreparationLobby, LobbyView.CanMakeLandlessCharacter )]"
-				#	datacontext = "[LobbyView.GetSelectedPlayable.GetCharacter]"
-				#
-				#	button_icon = {
-				#		size = { 30 30 }
-				#		parentanchor = left|vcenter
-				#		position = { 5 0 }
-				#		alwaystransparent = yes
-				#		texture = "gfx/interface/icons/flat_icons/adventurer.dds"
-				#	}
-				#
-				#	enabled = "[LobbyView.CanTryStartRulerDesigning( Character.Self )]"
-				#
-				#	tooltip = "[LobbyView.GetTryStartLandlessDesigningDesc( Character.Self )]"
-				#	text = RULER_DESIGNER_OPEN_LANDLESS
-				#
-				#	onclick = "[TryStartRulerDesigning( Character.Self, '(bool)yes' )]"
-				#	onclick = "[LobbyView.UnReady]"
-				#}
+				button_standard = {
+					name = "create_adventurer"
+					datacontext = "[GetLobbyHelper]"
+					datacontext = "[LobbyView.GetSelectedPlayable.GetCharacter]"
+					visible = "[And( IsPreparationLobby, LobbyView.CanMakeLandlessCharacter )]"
+					size = { 380 45 }
+				
+					button_icon = {
+						size = { 30 30 }
+						parentanchor = left|vcenter
+						position = { 5 0 }
+						alwaystransparent = yes
+						texture = "gfx/interface/icons/flat_icons/adventurer.dds"
+					}
+				
+					enabled = "[LobbyView.HasSelectedPlayable]"
+				
+					tooltip = "[LobbyHelperWindow.GetTryStartLandlessDesigningDesc( LobbyView.HasSelectedPlayable )]"
+					text = RULER_DESIGNER_OPEN_LANDLESS
+				
+					onclick = "[TryStartRulerDesigning( Character.Self, '(bool)yes' )]"
+					onclick = "[LobbyView.UnReady]"
+				}
 
 				vbox = {
 					layoutpolicy_horizontal = expanding
@@ -1017,6 +1099,8 @@ JominiMultiplayerLobby = {
 		}
 	}
 
+
+
 	### MAPMODES, OBSERVE MODE ###
 	widget = {
 		parentanchor = bottom
@@ -1102,6 +1186,13 @@ JominiMultiplayerLobby = {
 			}
 		}
 	}
+
+	# DLC list, be as far in front as possible so we overlay rest of UI
+	widget_dlc_list_with_overlay = {
+		datacontext = "[GetLobbyHelper]"
+		datacontext = "[LobbyHelperWindow.GetDlcCollection]"
+	}
+
 
 	error_horse = {
 		parentanchor = bottom|left
