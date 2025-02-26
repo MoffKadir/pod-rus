@@ -3,11 +3,15 @@
  # Other useful keys from vanilla CK3:
  # - ELLIPSIS:
  # - blank_line:
+ # - double_line_break: "\n\n"
+
  POD_shared_loca_success: "Успех!"
  POD_shared_loca_failure: "Провал!"
-
+ POD_shared_loca_critical_success: "Критический успех!"
+ POD_shared_loca_critical_failure: "Критический провал!"
 
 
  # Useful datafunctions
  POD_saved_tooltip: "[Localize(SCOPE.GetFlagName('saved_tooltip'))]"
  POD_saved_tooltip_weak: "#weak [Localize(SCOPE.GetFlagName('saved_tooltip'))]#!"
+ pod_display_number: "[SCOPE.GetValue('number')|0]"

@@ -79,7 +79,7 @@
 
  POD_journey_coterie_checkbox_tt: "Выберите, хотите ли вы, чтобы [GetPlayer.Custom('PODCoterie')] присоединилась к вам."
  POD_journey_move_camp: "Перенести свой [Concept('camp', 'лагерь')|E]?" # TODO RTP: apply PODDomicile customloc
- POD_journey_move_camp_tt: "Потратить [Concept('provisions', 'провизию')|E], чтобы переместить ваш [Concept('camp', 'лагерь')|E] к месту назначения этого [Concept('journey', 'странствия')|E]."
+ POD_journey_move_camp_tt: "Потратить [Concept('provisions', 'провизию')|E], чтобы переместить ваш [Concept('camp', 'лагерь')|E] к месту назначения [Concept('traveling', 'путешествия')|E]."
 
  POD_journey_instant: "Моментально"
 
@@ -168,3 +168,9 @@
  POD_start_trait_study_journey_tt: "Вы получили некоторое представление о [Concept('trait', 'свойстве')|E] «[journey_trait.GetName(GetPlayer)]». Чтобы полностью понять его, вам нужно изучить его в [Concept('journey', 'странствии')|E], которое вы только что открыли."
  POD_start_anatomy_study_journey_tt: "Вы начнете [Concept('journey', 'странствие')|E] для полного понимания анатомии персонажей со свойством «[journey_trait.GetName(GetPlayer)]»."
  POD_start_true_name_study_journey_tt: "Вы начнете [Concept('journey', 'странствие')|E] за [Concept('trait', 'свойством')|E] истинного имени «[journey_trait.GetName(GetPlayer)]»."
+
+
+ ##### Interface messages
+ POD_journey_abandoned_title: "Journey Abandoned"
+ POD_journey_abandoned_desc_trait: "Since you now possess a new ability, all your $pod_journeys$ for learning it have ended"
+ POD_journey_abandoned_desc_artifact: "You no longer need to go on an $pod_infiltration_mission$ for [artifact.Custom('ColorizedArtifactName')] since you already own it"
