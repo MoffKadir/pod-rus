@@ -71,6 +71,6 @@
  artifact_princely_chattel_name: "Благородные реликты"
  artifact_chattel_description: "#Bold Позволяет скопировать экипированный артефакт (за исключением аксессуаров) во время использования [Concept('character_interaction', 'взаимодействия персонажа')|E] «Активировать эффигию».#!\nМодель простого обычного предмета, который при активации превращается в полноразмерный функциональный элемент."
  artifact_sekhem_vessel_name: "Сосуд сехема"
- artifact_greater_sekhem_vessel_name: "Крупный сосуд сехема #Weak ([vessel_artifact.MakeScope.GetVariable('stored_sekhem').GetValue|0]/20)#!"
- artifact_active_greater_sekhem_vessel_name: "Большой сосуд сехема #Weak ([vessel_artifact.MakeScope.GetVariable('stored_sekhem').GetValue|0]/20)#!"
+ artifact_greater_sekhem_vessel_name: "Крупный сосуд сехема"
+ artifact_active_greater_sekhem_vessel_name: "Большой сосуд сехема #Weak ([vessel_artifact.MakeScope.GetVariable('energy_stored').GetValue|0]/20)#!"
  artifact_sekhem_vessel_description: "#Bold Позволяет при необходимости траты сехема, сперва израсходовать сехем, хранящийся в этом сосуде для сехема.#!\nПредмет, на котором начертаны слова силы и который обладает способностью хранить сехем."

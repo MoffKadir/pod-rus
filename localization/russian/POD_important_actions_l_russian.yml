@@ -208,22 +208,22 @@
  craft_conclusion_desc: "На этом экскурс в ремесло подходит к концу.\n\nСмело пробуйте все, что вам понравится."
 
 
- reactive_advice_fetters_and_passions: "Fetters, Passions and [oblivion_pull|E]"
- action_reactive_advice_fetters_and_passions: "Advice: Fetters, Passions and [oblivion_pull|E]"
- action_reactive_advice_fetters_and_passions_desc: "Quick introduction to the main [GetTrait('wraith').GetName(GetNullCharacter)] mechanics"
+ reactive_advice_fetters_and_passions: "Оковы, страсти и [oblivion_pull|El]"
+ action_reactive_advice_fetters_and_passions: "Совет: Оковы, страсти и [oblivion_pull|El]"
+ action_reactive_advice_fetters_and_passions_desc: "Быстрое знакомство с основными механиками #L [GetTrait('wraith').GetName(GetNullCharacter)|l]ов#!"
  action_reactive_advice_fetters_and_passions_click: "$click_to_open_lesson$"
- fetters_and_passions: "Fetters, Passions and [oblivion_pull|E]"
- lesson_fetters_and_passions: "Fetters, Passions and [oblivion_pull|E]"
- lesson_fetters_and_passions_desc: "First thing to know is the existence of [oblivion_pull|E] that you need to closely monitor to not fall into [GetTrait('shadow').GetName(GetNullCharacter)]. To decrease it you need $pod_Fetters$, each non assigned [Fetter|E] point means one additional [stress|E] every month."
- 
- fetters_and_passions2: "Losing Stress"
- lesson_fetters_and_passions2: "Losing Stress"
- lesson_fetters_and_passions2_desc: "$POD_splat_wraith_plural$ cannot lose [stress|E] except when triggering a passion. To trigger a passion you need to perform specific actions detailed in the description of the [Fetter|E] modifier. Each type of [Fetter|E] have different triggers, like 'HATRED' triggers after committing a murder and 'LOVE' triggers every year a chosen character stays alive.\n\nThe level of a [Fetter|E] is an important measure for passions, as it is a factor for how much stress you will be able to lose using it and how much Pathos you will gain."
- 
- fetters_and_passions3: "Mental Breakdowns"
- lesson_fetters_and_passions3: "Mental Breakdowns"
- lesson_fetters_and_passions3_desc: "For [GetTrait('wraith').GetName(GetNullCharacter)], #N NOT#! suffering a mental breakdowns is very dangerous as each breakdown empowers the [GetTrait('shadow').GetName(GetNullCharacter)] by giving you random [thorn_lifestyle|E] [lifestyle|E] [perk|E] that will make the game harder.\nAt #N mental breakdown level 2#!, the [GetTrait('shadow').GetName(GetNullCharacter)] will try to overthrow you asthe  main personality. If successful in this endeavor you will become a [GetTrait('shadow').GetName(GetNullCharacter)] with all that it entails.\nAt #N level 3 mental breakdown#! your [GetTrait('shadow').GetName(GetNullCharacter)] will try to erase you from existence, if successful you will become a [GetTrait('spectre').GetName(GetNullCharacter)] and your game will be over"
- 
- fetters_and_passions4: "Arcanoi"
- lesson_fetters_and_passions4: "Arcanoi"
- lesson_fetters_and_passions4_desc: "Despite not being at ease in the world of the living, a [GetTrait('wraith').GetName(GetNullCharacter)] is not defenseless as they have access to [arcanoi_lifestyle|E], the powers of the dead.\n\nTo use them you will need to learn them, there are two ways to do that: First is to learn it from a [friend|E] or other positive relationship. Second is, while exploring the [umbra|E], encounter another [GetTrait('wraith').GetName(GetNullCharacter)] willing to teach you one of them.\n\nEach arcanoi require Pathos to use, and pathos is gained via passions as explained before.\n\nEach arcanoi also unlocks [domicile_building|E] giving more bonuses."
+ fetters_and_passions: "Оковы, страсти и [oblivion_pull|E]"
+ lesson_fetters_and_passions: "Оковы, страсти и [oblivion_pull|El]"
+ lesson_fetters_and_passions_desc: "Первое, что необходимо знать, - это наличие [Concept('oblivion_pull', 'притяжения Забвения')|E], за которым нужно внимательно следить, чтобы не впасть в [GetTrait('shadow').GetName(GetNullCharacter)|l]. Чтобы снизить его, вам нужны #L $pod_Fetters|l$ы#!, каждая не назначенная единица [Concept('Fetter', 'оков')|E] приводит к одной дополнительной единице [Concept('stress', 'стресса')|E] ежемесячно."
+
+ fetters_and_passions2: "Снижение стресса"
+ lesson_fetters_and_passions2: "Снижение стресса"
+ lesson_fetters_and_passions2_desc: "Призраки не могут терять [Concept('stress', 'стресс')|E], кроме как при активации страстей. Чтобы вызвать страсти, нужно выполнить определённые действия, указанные в описании модификатора [Concept('Fetter', 'оков')|E]. У каждого типа [Concept('Fetter', 'оков')|E] свои катализаторы, например «Ненависть» - срабатывает после совершения убийств, а «Любовь» - ежегодно, когда выбранный персонаж остаётся в живых.\n\nУровень [Concept('Fetter', 'оков')|E] является важным показателем для страстей, так как от него зависит, сколько стресса вы можете потерять, используя его, и сколько пафоса вы получите."
+
+ fetters_and_passions3: "Нервные срывы"
+ lesson_fetters_and_passions3: "Нервные срывы"
+ lesson_fetters_and_passions3_desc: "#N Отсутствие#! нервных срывов для #L [GetTrait('wraith').GetName(GetNullCharacter)|l]ов#! очень опасно, так как каждый срыв усиливает [GetTrait('shadow').GetName(GetNullCharacter)], давая вам случайные [Concept('perk', 'достоинства')|E] [Concept('lifestyle', 'образа жизни')|E] «[thorn_lifestyle|E]», которые сделают игру сложнее.\nНа #N втором уровне нервного срыва#!, [GetTrait('shadow').GetName(GetNullCharacter)] попытается перехватить контроль в качестве главной личности. В случае успеха вы станете #L [GetTrait('shadow').GetName(GetNullCharacter)|l]ю#! со всеми вытекающими последствиями.\nНа #N третьем уровне нервного срыва#! ваша [GetTrait('shadow').GetName(GetNullCharacter)] попытается стереть вас из существования, в случае успеха вы станете #L [GetTrait('spectre').GetName(GetNullCharacter)|l]#! и ваша игра подойдёт к концу."
+
+ fetters_and_passions4: "Арканой"
+ lesson_fetters_and_passions4: "Арканой"
+ lesson_fetters_and_passions4_desc: "Несмотря на то, что в мире живых они не чувствуют себя спокойно, #L [GetTrait('wraith').GetName(GetNullCharacter)|l]#! не беззащитны, так как имеют доступ к [Concept('arcanoi_lifestyle', 'Арканоям')|E], силам мёртвых.\n\nЧтобы использовать их, вам нужно изучить их, есть два способа сделать это: первый - обучиться им из [Concept('friend', 'дружеских')|E] или других положительных отношений. Второй - во время исследования [Concept('umbra', 'Умбры')|E], встретив другого #L [GetTrait('wraith').GetName(GetNullCharacter)|l]а#!, готового обучить вас одному из них.\n\nДля использования каждого арканоя требуется пафос, а пафос приобретается через страсти, как объяснялось ранее.\n\nКаждый арканой также открывает [Concept('domicile_building', 'постройки')|E], дающие больше бонусов."
