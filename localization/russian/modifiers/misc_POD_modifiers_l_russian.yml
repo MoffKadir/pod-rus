@@ -68,7 +68,7 @@
  restored_autorithy_modifier: "Восстановленный авторитет"
  restored_autorithy_modifier_desc: "[Clan|E] Ласомбра больше не может отрицать ваше лидерство."
  targeted_by_baali_modifier: "Мерзкие слухи"
- targeted_by_baali_modifier_desc: "Вы являетесь объектом жестокой кампании дезинформации, вероятно, организованной мстительными дамасскими Баали"
+ targeted_by_baali_modifier_desc: "Вы являетесь объектом жестокой кампании дезинформации."
  black_spiraled_modifier: "Безумие Спирали"
  black_spiraled_modifier_desc: "Вы видели вещи, которые ни один смертный или вампир никогда не должен был видеть."
  black_spiraled_good_modifier: "Сила Спирали"
@@ -177,8 +177,6 @@
 
  #Forgotten Quietus modifiers
 
- scorpions_touch_perk_modifier: "[battle_modifier|E]: Касание скорпиона"
- scorpions_curse_perk_modifier: "[battle_modifier|E]: Проклятие скорпиона"
  baals_caress_perk_modifier: "[battle_modifier|E]: Ласка Баала"
  thin_blood_perk_modifier: "Слабая кровь"
  thin_blood_perk_modifier_desc: "Этот персонаж не может исцелить себя, пока присутствует этот модификатор."
@@ -294,3 +292,8 @@
  soultaker_stress_gain_modifier: "Покорение голоду Легиона"
 
  beatific_xp_gain_mult: "Прирост [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] «[GetTrait('beatific').GetName( GetNullCharacter )]»"
+
+ #energy_vessel_modifier: "[Artifact.GetOwner.Custom('PODEnergySplat')] Vessel"
+ POD_terrain_energy_vessel_min_combat_roll: "Maximum Possible [Artifact.GetOwner.Custom('PODEnergySplat')] Stored"
+ POD_terrain_energy_vessel_advantage: "Stored [Artifact.GetOwner.Custom('PODEnergySplat')]"
+ pod_no_levies_modifier: "No Levies"
