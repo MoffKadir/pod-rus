@@ -130,8 +130,8 @@
  trait_nosferatu: "Носферату"
  trait_nosferatu_desc: "Преследователи. Скрытные, сильные и наводящие ужас."
 
- trait_nosferatu_ashirra: "Бэй'т Муташарид"
- trait_nosferatu_ashirra_desc: "Носферату на территориях [Concept('ashirra', 'Аширры')|E] пережили своего рода раскол после того, как ислам стал доминирующей силой. Бэй'т Муташарид - это те Носферату, которые отказались принять ислам или отказаться от своей древней роли охотников или страшилищ."
+ trait_nosferatu_ashirra: "Хадж"
+ trait_nosferatu_ashirra_desc: "Nosferatu that converted to Islam became quickly respected figures. Seeing in Islam a promise of redemption even for wretched creatures as themselves, they quickly became a pillar of the [ashirra|E] sect.\nA key figure for their success was Tarique al-Hajj, a Nosferatu blood sorcerer who helped to ward off the most disastrous effects of the Keening. For this, he and his brood were renamed the Hajj, the guardians of Islam's holiest places."
 
  trait_nosferatu_laibon: "Гурухи"
  trait_nosferatu_laibon_desc: "Получив своё название от гамбийского бога, от которого, как они утверждают, они происходят, гурухи считают себя хозяевами Африки, законными правителями ее земель и народов."
@@ -274,7 +274,7 @@
 
  trait_necromancyadvanced: "Мастерство некромантии"
 
- necromancy_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] обладает знаниями об этих путях некромантии:[AddTextIf(GetScriptedGui('has_cappadocian_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@cappadocian_icon! Каппадокийцы')][AddTextIf(GetScriptedGui('has_giovanni_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@giovanni_icon! Джованни')][AddTextIf(GetScriptedGui('has_harbinger_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@harbinger_icon! Предвестники')][AddTextIf(GetScriptedGui('has_impundulu_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@impundulu_icon! Импундулу')][AddTextIf(GetScriptedGui('has_lamia_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@lamia_icon! Ламии')][AddTextIf(GetScriptedGui('has_nagaraja_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@nagaraja_icon! Нагараджа')]#!"
+ necromancy_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] обладает знаниями об этих путях некромантии:[AddTextIf(GetScriptedGui('has_cappadocian_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@cappadocian_icon! Каппадокийцы')][AddTextIf(GetScriptedGui('has_giovanni_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@giovanni_icon! Джованни')][AddTextIf(GetScriptedGui('has_harbinger_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@harbinger_icon! Предвестники')][AddTextIf(GetScriptedGui('has_impundulu_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@impundulu_icon! Импундулу')][AddTextIf(GetScriptedGui('has_lamia_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@lamia_icon! Ламии')][AddTextIf(GetScriptedGui('has_nagaraja_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@nagaraja_icon! Нагараджа')][AddTextIf(GetScriptedGui('has_rosselini_necromancy_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@giovanni_icon! Росселини')]#!"
 
  trait_obeah: "Обеах"
  trait_obeah_desc: "Обеах - уникальная [discipline|El] Салюбри, также известная как Валерен: Путь целителя.\n\nОбеах возникло благодаря Саулоту, который во время своих путешествий по Востоку научился у [GetTrait('kueijin').GetName( GetNullCharacter )] использованию Драконьей жемчужины. При изучении Обеах в середине лба появляется третий глаз."
@@ -306,7 +306,7 @@
  trait_presenceadvanced: "Мастерство присутствия"
  trait_presenceadvanced_desc: "Присутствие - это [discipline|El] сверхъестественного обаяния и эмоционального манипулирования, позволяющая сородичам привлекать, очаровывать и контролировать толпу.\n\nПрисутствие смягчило божье проклятие, наложенное на #L $pod_cainites|l$ов#! тем, что позволяет вампиру стать центром внимания. Либо очаровывая, соблазняя или запугивая тех, кто находится рядом."
 
- TRAIT_FLAG_DESC_can_intensify_herd_resonance: "Можно менять интенсивность [Concept('resonance', 'резонанса')|E] членов своего стада"
+ TRAIT_FLAG_DESC_can_intensify_herd_resonance: "Можно менять интенсивность [Concept('resonance', 'резонанса')|E] членов своего [Concept('herd', 'стада')|E]"
 
  trait_protean: "Превращение"
  trait_protean_desc: "Превращение - это [discipline|El], которая даёт вампирам возможность менять форму, от отращивания звериных когтей до испарения в облаке тумана.\n\nПревращение - часть божьего проклятия, наложенного на Каина в том смысле, что оно срывает маску человечности, которую должен поддерживать каждый вампир, обнажая #L $pod_the_beast$я#! в его душе."
@@ -666,7 +666,7 @@
  trait_beatific_desc: "Ходячее воплощение избранного им бога, этот персонаж - чудотворец, образец [Concept('true_faith', 'истинной веры')|E] в мире тьмы. Это дает ему доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров."
  trait_beatific_character_desc: "Ходячее воплощение избранного [Select_CString(ROOT.Char.IsFemale, 'ей', 'им' )] бога, [ROOT.Char.GetFirstNameNoTooltip] - [Select_CString(ROOT.Char.IsFemale, 'чудотворица', 'чудотворец' )], образец [Concept('true_faith', 'истинной веры')|E] в мире тьмы. Это дает [ROOT.Char.GetHerHim] доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров."
  trait_track_beatific: "Чудотворство"
- trait_track_beatific_desc: "#bold Уровень 1:#! Делает [Concept('decision', 'решение')|E] $POD_demon_unearthbound_decision$ бесплатным. Позволяет изгнать призрака/демона в [Concept('dark_kingdom', 'Тёмное королевство')|E]/[UmbraGlossaryLocalized('abyss','Бездну')] через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Открывает особую постройку [GetBuilding('sanctified_area_01').GetName]. \n#bold Уровень 2:#! Позволяет через ремесло улучшения благословить артефакт. Даёт иммунитет к убийству. Даёт иммунитет к делириуму. Вы больше не можете быть одержимы #L [GetTrait('wraith').GetName( GetNullCharacter )|l]ом#!.\n#bold Уровень 3:#! Цели всегда будут принимать требования об обращении.\n#bold Уровень 4:#! Позволяет снять все [Concept('Fetter', 'оковы')|E] у призраков через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Позволяет убить сверхъестественное существо за малое количество благочестия через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Вам больше не нужно влияние, чтобы изгнать духа.\n#bold Уровень 5:#! Позволяет вам снова сделать вампира смертным или достичь Голконды через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Доступны [men_at_arms|El] - [GetMaA('minion_of_the_divine').GetName]. Позволяет тратить силу воли вместо получения ран. Позволяет не умирать от ран.\n#italic Самое сильное орудие в руках верующих - это сила истинных чудес. Целые религии рождаются из таких проявлений истинной веры.#!"
+ trait_track_beatific_desc: "#bold Уровень 1:#! Делает [Concept('decision', 'решение')|E] $POD_demon_unearthbound_decision$ бесплатным. Позволяет изгнать призрака/демона в [Concept('dark_kingdom', 'Тёмное королевство')|E]/[UmbraGlossaryLocalized('abyss','Бездну')] через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Открывает особую постройку [GetBuilding('sanctified_area_01').GetName]. \n#bold Уровень 2:#! Unlocks a [crafting_node|E] that adds [GetModifier('bless_modifier').GetNameWithTooltip] as well [modifier|E] based on [artifact|E] type. Даёт иммунитет к убийству. Даёт иммунитет к делириуму. Вы больше не можете быть одержимы #L [GetTrait('wraith').GetName( GetNullCharacter )|l]ом#!.\n#bold Уровень 3:#! Цели всегда будут принимать требования об обращении.\n#bold Уровень 4:#! Позволяет снять все [Concept('Fetter', 'оковы')|E] у призраков через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Позволяет убить сверхъестественное существо за малое количество благочестия через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Вам больше не нужно влияние, чтобы изгнать духа.\n#bold Уровень 5:#! Позволяет вам снова сделать вампира смертным или достичь Голконды через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Доступны [men_at_arms|El] - [GetMaA('minion_of_the_divine').GetName]. Позволяет тратить силу воли вместо получения ран. Позволяет не умирать от ран.\n#italic Самое сильное орудие в руках верующих - это сила истинных чудес. Целые религии рождаются из таких проявлений истинной веры.#!"
 
  trait_holy_seal: "Святая печать"
  trait_holy_seal_desc: "Реликвии и артефакты божественной силы, жестоко, но умело вживлённые в раны этого несчастного создания, не дают им затянуться."
@@ -962,6 +962,7 @@
 
  trait_risen: "Восставший"
  trait_risen_desc: "Восставший - термин, используемый для описания призрака, которому удалось вернуться в свое тело, чтобы ходить среди живых в [Concept('skinlands', 'Землях Плоти')|E]."
+ TRAIT_FLAG_DESC_cannot_resolve_fetters: "Cannot resolve $pod_Fetters$"
 
  trait_spectre: "Спектр"
  trait_spectre_desc: "Спектры - это призраки, что отдались своей Тени. Когда дух накапливает слишком много темных эмоций, его Тень окончательно берёт верх, и он становится спектром."
@@ -1052,8 +1053,12 @@
  trait_barghest_desc: "Баргесты, также называемые ищейками, - это призраки, которые были преобразованы в чудовищные формы и «лоботомированы» путем прикрепления к их [Concept('Corpus', 'корпусу')|E] специально подготовленной морды из стигийского железа.."
  trait_ferryman: "Паромщик"
  trait_ferryman_desc: "С помощью ритуала Разделения Тень и Разум этого персонажа навсегда разделены, создавая Пасифаю."
+ TRAIT_FLAG_DESC_lose_shadow: "No longer possess a shadow"
+ TRAIT_FLAG_DESC_restore_possibility_to_reduce_stress_normal_way: "Can lose stress via normal ways, no longer bound by passions"
+ TRAIT_FLAG_DESC_cannot_access_skinlands: "Lose all ability to access [skinlands|E]"
  trait_shadow: "Тень"
  trait_shadow_desc: "Тень - это термин, используемый для описания того аспекта личности призрака, который хочет, чтобы тот потерпел неудачу, перестал бороться и поддался [UmbraGlossaryLocalized('oblivion','Забвению')]."
+ TRAIT_FLAG_DESC_deteriorating_fetters: "Every year level of random [Fetter|E] will decrease by #N 1#!"
  trait_pasiphae: "Пасифая"
  trait_pasiphae_desc: "Пасифаи, так называемые Паромщики [UmbraGlossaryLocalized('oblivion','Забвения')] или Путники [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринта')], часто принимаются за генералов Поглощённых Тенью невежественными спустившимися в ад и немногими другими безрассудными призраками, которые отваживаются войти в [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринт')]."
  trait_khaibit: "Хайбит"
@@ -1260,7 +1265,7 @@
 
  trait_anathema: "Анафема"
  trait_anathema_desc: "Анафемы - это вампиры или другие существа, на которых ведётся Кровавая охота. Иногда этот термин используется для обозначения тринадцати «наиболее разыскиваемых» анафем, составляющих Красный список."
- trait_anathema_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] - вампир или другое существо, на которое ведётся [Concept('blood_hunt', 'Кровавая охота')|E]. Иногда этот термин используется для обозначения тринадцати «наиболее разыскиваемых» анафем, составляющих Красный список."
+ trait_anathema_character_desc: "Анафема - вампир или другое существо, на которое ведётся [Concept('blood_hunt', 'Кровавая охота')|E]. Иногда этот термин используется для обозначения тринадцати «наиболее разыскиваемых» анафем, составляющих Красный список."
 
  TRAIT_FLAG_DESC_anathema_trait_flag: "Может стать целью [Concept('blood_hunt', 'Кровавой охоты')|E]"
 
@@ -1338,3 +1343,40 @@
 
  trait_zombu: "Зомбу"
  trait_zombu_desc: "Труп, оживленный с помощью некромантической магии. Эти существа не знают страха, не испытывают усталости и полностью послушны. Их часто используют в качестве рабочих или солдат. Некоторые из них настолько разложились, что выглядят как бродячие скелеты."
+
+ trait_pod_crafter_1: "Craftsman"
+ trait_pod_crafter_2: "Expert Craftsman"
+ trait_pod_crafter_3: "Master Craftsman"
+ trait_pod_crafter_1_desc: "This character has some experience in crafting"
+ trait_pod_crafter_1_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has some experience in crafting"
+ trait_pod_crafter_2_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is an expert in their craft"
+ trait_pod_crafter_3_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is an master in their craft"
+
+ trait_track_forging: "Forging"
+ trait_track_forging_desc: "Experience in Forging, the higher it is, the better the [artifacts|E] crafted"
+ POD_terrain_crafting_forging_advantage: "Additional [crafting_complexity|E] actions during the Forging process"
+ trait_track_brewing: "Brewing"
+ trait_track_brewing_desc: "Experience in Brewing, the higher it is, the better the [artifacts|E] crafted"
+ POD_terrain_crafting_brewing_advantage: "Additional [crafting_complexity|E] actions during the Brewing process"
+ trait_track_enhancing: "Enhancing"
+ trait_track_enhancing_desc: "Experience in Enhancing, the higher it is, the better the [artifacts|E] crafted"
+ POD_terrain_crafting_enhancing_advantage: "Additional [crafting_complexity|E] actions during the Enhancing process"
+
+ POD_terrain_crafting_forging_min_combat_roll: "[crafting_potential|E]"
+ 
+ trait_ashen_adventurer: "Ashen Adventurer"
+ trait_ashen_adventurer_desc: "A wandering adventurer driven by the search for riches, fame and blood."
+ trait_track_ashen_ambassador: "[ashen_ambassador|E]"
+ trait_track_ashen_ambassador_desc: "#bold You can gain experience in this trait track by using the Ambassadorial Visit character interaction.#! \n Sworn to a foreign ruler, this diplomat roams the land to find opportunities to benefit their patron."
+ POD_terrain_ashen_ambassador_improved_advantage: "Landless only: Higher success chances in Ambassadorial Duties options"
+ POD_terrain_ashen_ambassador_request_improved_advantage: "Landless only: Using the Support from your Patron character interaction will cost you less Ashen Ambassador trait experience"
+ trait_track_ashen_grandmaster: "[ashen_grandmaster|E]"
+ trait_track_ashen_grandmaster_desc: "#bold This experience can be used to improve your military order as a landless character. It can be gained by completing martial or war landless contracts.#! \nThis character leads a band of soldiers that are formalized into an organization with enough structure and common purpose to be considered a military order."
+ trait_track_ashen_caravan: "[ashen_caravan|E]"
+ trait_track_ashen_caravan_desc: "#bold This experience can be gained by completing transport contracts.#! \nAshen Caravan Masters are those few characters that truly know how to navigate the deadly roads of the World of Darkness, and sell their expertise for those in need."
+ POD_terrain_ashen_ambassador_request_improved_min_combat_roll: "Landless only: New camp positions unlocked"    
+ POD_terrain_ashen_ambassador_request_improved_max_combat_roll: "Your travel options costs are divided by"    
+ trait_track_ashen_cult: "[ashen_cult|E]"
+ trait_track_ashen_cult_desc: "#bold You can improve this trait track by using the decision of the same name. It allows you to interact with the county your domicile is stationed in various ways via an event.#! \n Prophets, heresiarchs, miracles workers... the World of Darkness is full of people, be they mortals or not, that are looking to the truth and willing to believe in a charismatic individual delivering (their version of) it."
+ POD_terrain_ashen_ambassador_improved_min_combat_roll: "Your maximum number of [ghoul|E]s is increased by"
+ POD_terrain_ashen_ambassador_improved_max_combat_roll: "Your maximum number of [herd|E] is increased by"
