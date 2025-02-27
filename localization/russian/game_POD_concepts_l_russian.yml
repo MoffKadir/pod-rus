@@ -401,8 +401,8 @@
  game_concept_Corpus: "Корпус"
  game_concept_Corpus_desc: "Тело призрака в [UmbraGlossaryLocalized('shadowlands','Загробном мире')] называется корпусом. Вместо того чтобы иметь сложные биологические системы, оно сделано из материала, называемого плазмой, который, по большому счету, является сырьем для загробной жизни."
 
- game_concept_oblivion_pull: "Oblivion Pull"
- game_concept_oblivion_pull_desc: "#bold Oblivion Pull#! is a measure of how strongly the [UmbraGlossary('oblivion')] pulls on a $POD_splat_wraith$, and how shaky is their existence.\n\nEvery month #italic player#! $POD_splat_wraith$ will get [stress|E] from #N +10#! to #P -10#! based on their [UmbraGlossary('oblivion')] Pull.\n\nMatters affecting [oblivion_pull|E]:\n$TAB$$POD_splat_wraith$: #N +10#!\n$TAB$Each allocated [Fetter|E] point: #P -1#!\n$TAB$Each Resolved [Fetter|E] point: #P -2#!\n\nAmount of [oblivion_pull|E] is shown in $POD_splat_wraith$"
+ game_concept_oblivion_pull: "Притяжение Забвения"
+ game_concept_oblivion_pull_desc: "#bold Притяжение Забвения#! - это показатель того, насколько сильно [UmbraGlossary('oblivion')] тянет к себе призраков, и насколько шатким является их существование.\n\nКаждый месяц #italic игрок#!-призрак будет получать [Concept('stress', 'стресс')|E] от #N +10#! до #P -10#! в зависимости от значения притяжения [UmbraGlossaryLocalized('oblivion','Забвения')].\n\nФакторы, влияющие на [oblivion_pull|E]:\n$TAB$$POD_splat_wraith$: #N +10#!\n$TAB$Каждое распределённое очко [Concept('Fetter', 'оков')|E]: #P -1#!\n$TAB$Каждое очко разрешённых [Concept('Fetter', 'оков')|E]: #P -2#!\n\nЗначение [Concept('oblivion_pull', 'притяжения Забвения')|E] отображается на призраке."
 
  game_concept_POD_animals_maa: "Звери"
  game_concept_POD_animals_maa_desc: "Звери - это [Concept('men_at_arms', 'профессионалы')|E], которые могут быть наняты различными способами, такими как Анимализм.\n\nИм противостоят [Concept('archers', 'лучники')|E]."
@@ -664,29 +664,29 @@
  game_concept_bs_rituals: "Ритуалы"
  game_concept_bloodmagic_ritual_desc: "#bold Ритуалы#! - это мощные #L $pod_bs_spells|l$ия#!. Они часто имеют меньший шанс провала, но требуют больше времени и дополнительных ресурсов, таких как [gold|El] или [piety|El].\n\nРитуалы связаны с #L $pod_bs_traditions|l$иями#!. Более мощные ритуалы открываются при получении [Concept('perks', 'достоинств')|E] в любой #L $pod_bs_path|l$е#! этой традиции.\n\nВ моде [princes_of_darkness|E], ритуалы - это #L $pod_journeys|l$ия#!. Вы не можете [Concept('travel', 'путешествовать')|E] или участвовать в [Concept('activities', 'занятиях')|E], планируя ритуал."
 
- game_concept_curia_support: "Curia Support"
- game_concept_curia_support_desc: "As a landless inquisitor, you have a value (that you can check in the decision of the same name) called Curia Support that shows how much the Church values your actions.\n\nYou can improve your Curia Support by achieving specific contracts or winning wars against supernaturals. You can spend Curia Support to ask for various boons (via a decision) that can speed up reaching your final objective: Europe and the Holy Land free of the minions of Hell.\n\nTake notice that each time a new Pope is elected by the cardinals, a Papal Legate will be send to your camp to assess your zeal. He will be displeased if he learns that you use unsanctioned knowledge such as Sorcery or Demonology. If you go a step further, such as becoming an infernalist or immortal by any means, you will be excommunicated."
- 
- game_concept_crafting_node: "Crafting Node"
- game_concept_crafting_node_desc: "Crafting Nodes are the main way by which to create or upgrade an artifact. Some perks can upgrade the effects these nodes provide and others can unlock new ones. Each node has some requirements that must be fulfilled to use it. Nodes for alchemy/brewing can also execute effects on their own.\nSee also [crafting_complexity|E]"
- 
- game_concept_crafting_complexity: "Crafting Complexity"
- game_concept_crafting_complexity_desc: "Complexity represents the number of actions you have at your disposal when creating/upgrading an artifact before you are forced to stop. This number is based on the character's craftman trait that improve by one point for each node used.\nSee also [crafting_potential|E] and [crafting_rerolls|E]"
- 
- game_concept_crafting_potential: "Crafting Potential"
- game_concept_crafting_potential_desc: "Crafting Potential represents the size of the crafting minigame map used when creating/upgrading an artifact. Bigger ones offer more opportunities. Crafting potential is based on [GetTrait('pod_crafter').GetName(GetPlayer)] [trait_level_track_xp|E]"
- 
- game_concept_crafting_rerolls: "Crafting Rerolls"
- game_concept_crafting_rerolls_desc: "Crafting Rerolls, like the name suggests, allows you to reroll the minigame map to potentially get better [crafting_node|E]s. It is based on your [learning|E] and is the only crafting stat that is directly linked to a [skill|E]."
- 
- game_concept_ashen_ambassador: "Ashen Ambassador"
- game_concept_ashen_ambassador_desc: "Ambassadors are landless characters that work (mostly) for the benefit of another landed character, the Ambassadorial Patron.\nTheir main tool is a character interaction named Ambassadorial Visit where they can use different actions to influence the local ruler and gain experience. They can also use the Support from your Patron interaction on their benefactor to request various resources.\nAn Ambassador can only have one Patron at a time and will lose access to their features if they become landed. They however keep the experience and buildings unlocked thus far."
-  
- game_concept_ashen_grandmaster: "Ashen Grandmaster"
- game_concept_ashen_grandmaster_desc: "Grandmasters are landless characters that lead a (formal or not) military order.\nThey can customize and improve their organization (via a decision) by spending Ashen Grandmaster trait experience, said experience being acquired by completing martial and war landless contracts."
+ game_concept_curia_support: "Поддержка курии"
+ game_concept_curia_support_desc: "Будучи безземельным инквизитором, вы имеете показатель (который можно проверить в одноименном решении) под названием «Поддержка курии», который отражает, насколько церковь ценит ваши действия.\n\nВы можете повысить уровень поддержки курии, выполняя определенные договоры или побеждая в войнах против сверхъестественных существ. Вы можете потратить поддержку курии, чтобы попросить различные дары (через решение), которые могут ускорить достижение вашей конечной цели: освобождение Европы и Святой земли от приспешников Ада.\n\nУчтите, что каждый раз, когда кардиналы избирают нового Папу, в ваш лагерь будет прибывать папский легат, чтобы оценить ваше рвение. Он будет недоволен, если узнает, что вы используете нечествие знания, такие как колдовство или демонология. Если вы пойдете еще дальше, например станете инферналистом или обретёте бессмертие любым способом, вас отлучат от церкви."
 
- game_concept_ashen_caravan: "Ashen Caravan Master"
- game_concept_ashen_caravan_desc: "Ashen Caravan Masters are those few characters that truly know how to navigate the deadly roads of the World of Darkness, and sell their expertise for those in need.\nYou gain experience for this trait track by completing transport contracts. It unlocks new landless court positions and reduce the cost of using travel options."
- 
- game_concept_ashen_cult: "Ashen Cult Master"
- game_concept_ashen_cult_desc: "Prophets, heresiarchs, miracles workers... the World of Darkness is full of people, be they mortals or not, that are looking to the truth and willing to believe in a charismatic individual delivering (their version of) it.\nYou can improve this trait track by using the decision of the same name. It allows you to interact with the county your domicile is stationed in various ways via an event."
+ game_concept_crafting_node: "Узел ремесла"
+ game_concept_crafting_node_desc: "Узлы ремесла - это основной способ создания или улучшения артефакта. Некоторые достоинства могут улучшить эффекты, которые дают эти узлы, а другие - открыть новые. У каждого узла есть определенные требования, которые необходимо выполнить, чтобы использовать его. Узлы для алхимии/создания отваров также могут самостоятельно выполнять эффекты.\nСм. также «[crafting_complexity|E]»."
+
+ game_concept_crafting_complexity: "Сложность ремесла"
+ game_concept_crafting_complexity_desc: "Сложность представляет собой количество действий, которые вы можете использовать при создании/улучшении артефакта, прежде чем будете вынуждены остановиться. Это число основано на свойстве ремесла персонажа, которая улучшается на одно очко за каждый использованный узел.\nСм. также «[crafting_potential|E]» и «[crafting_rerolls|E]»."
+
+ game_concept_crafting_potential: "Потенциал ремесла"
+ game_concept_crafting_potential_desc: "Потенциал ремесла представляет собой размер карты мини-игры, используемой при создании/улучшении артефакта. Большие карты дают больше возможностей. Потенциал ремесла основан на [Concept('trait_level_track_xp', 'опыте пути развития свойства')|E] «[GetTrait('pod_crafter').GetName(GetPlayer)]»."
+
+ game_concept_crafting_rerolls: "Обновление ремесла"
+ game_concept_crafting_rerolls_desc: "Обновление ремесла, как следует из названия, позволяет вам повторно пройти карту мини-игры, чтобы потенциально получить лучшие [Concept('crafting_node', 'узлы ремесла')|E]. Этот показатель зависит от вашей [Concept('learning', 'учёности')|E] и является единственным значением ремесла, которая напрямую связана с [Concept('skill', 'навыком')|E]."
+
+ game_concept_ashen_ambassador: "Пепельный посол"
+ game_concept_ashen_ambassador_desc: "Послы - это безземельные персонажи, которые работают (в основном) на благо другого персонажа - покровителя послов.\nИх главный инструмент - взаимодействие персонажа под названием «Посольский визит», где они могут использовать различные действия, чтобы повлиять на местного правителя и получить опыт. Они также могут использовать взаимодействие «Поддержка от покровителя» на своего благодетеля, чтобы запросить различные ресурсы.\nПосол может одновременно иметь только одного покровителя и потеряет доступ к его возможностям, если получит титул. Однако они сохраняют опыт и постройки, открытые до этого."
+
+ game_concept_ashen_grandmaster: "Пепельный магистр"
+ game_concept_ashen_grandmaster_desc: "Магистры - это безземельные персонажи, возглавляющие (формально или нет) военный орден.\nОни могут настраивать и улучшать свою организацию (через решение), тратя опыт свойства «Пепельный магистр», который приобретается за выполнение военных и боевых контрактов авантюристов."
+
+ game_concept_ashen_caravan: "Пепельный хозяин каравана"
+ game_concept_ashen_caravan_desc: "Пепельные хозяева каравана - те немногие персонажи, которые действительно знают, как ориентироваться на смертельно опасных дорогах Мира Тьмы, и предлагают свои услуги тем, кто в нем нуждается.\nВы получаете опыт за этот путь развития, выполняя контракты на перевозку. Он открывает новые должности безземельных придворных и снижает стоимость использования вариантов путешествий."
+
+ game_concept_ashen_cult: "Пепельный владыка культа"
+ game_concept_ashen_cult_desc: "Пророки, ересиархи, чудотворцы... Мир Тьмы полон людей, будь то смертные или нет, которые ищут истину и готовы поверить в харизматичную личность, доносящую ее (свою версию).\nВы можете улучшить этот путь развития свойства, используя одноименное решение. Оно позволяет вам взаимодействовать с графством, в котором находится ваш лагерь, различными способами через событие."

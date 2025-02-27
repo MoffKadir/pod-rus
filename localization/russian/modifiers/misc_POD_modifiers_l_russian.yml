@@ -294,6 +294,6 @@
  beatific_xp_gain_mult: "Прирост [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] «[GetTrait('beatific').GetName( GetNullCharacter )]»"
 
  #energy_vessel_modifier: "[Artifact.GetOwner.Custom('PODEnergySplat')] Vessel"
- POD_terrain_energy_vessel_min_combat_roll: "Maximum Possible [Artifact.GetOwner.Custom('PODEnergySplat')] Stored"
- POD_terrain_energy_vessel_advantage: "Stored [Artifact.GetOwner.Custom('PODEnergySplat')]"
- pod_no_levies_modifier: "No Levies"
+ POD_terrain_energy_vessel_min_combat_roll: "[Artifact.GetOwner.Custom('PODEnergySplat')]: максимальный запас"
+ POD_terrain_energy_vessel_advantage: "[Artifact.GetOwner.Custom('PODEnergySplat')]: запас"
+ pod_no_levies_modifier: "Без ополчения"
