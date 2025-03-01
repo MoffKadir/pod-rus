@@ -2,37 +2,37 @@
  #####################################
  ####### Contracts for Slayers #######
  #####################################
- POD_assault_lair_contract: "Assault an Exposed Lair"
- POD_assault_lair_desc_title: "An opportunity presents itself..."
- POD_assault_lair_desc: "We learned the location of a lone fiend lurking in this domain. If we strike fast, we can yet get the drop on them."
- POD_assault_lair_request: "This [task_contract|E] requires you to travel to [TaskContract.GetLocation.GetName]. You can then use the skills of your [GetPlayer.Custom('PODCoterie')] to deal with your quarry.\n\n$POD_contract_show_time_remaining$"
- POD_assault_lair_contract_success_tt: "You will gain [prestige_i][prestige|E], [piety_i][piety|E], [dynasty_prestige_i][dynasty_prestige|E], and [true_faith|E] [lifestyle_experience|E]. The rewards are based on the [task_contract_tier|E] and whether you succeeded at the hunt cleanly."
+ POD_assault_lair_contract: "Напасть на раскрытое логово"
+ POD_assault_lair_desc_title: "Представилась возможность..."
+ POD_assault_lair_desc: "Мы узнали о местонахождении притаившегося в этих владениях одинокого чудовища. Если мы нанесем быстрый удар, то сможем одолеть его."
+ POD_assault_lair_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы отправились во владение [TaskContract.GetLocation.GetName]. [GetPlayer.Custom('PODCoterie')] может помочь вам справиться с добычей благодаря навыкам.\n\n$POD_contract_show_time_remaining$"
+ POD_assault_lair_contract_success_tt: "Вы получите [prestige_i][Concept('prestige', 'престиж')|E], [piety_i][Concept('piety', 'благочестие')|E], [dynasty_prestige_i][Concept('dynasty_prestige', 'признание')|E] и [Concept('lifestyle_experience', 'опыт пути')|E] [Concept('true_faith', 'истинной веры')|E]. Награда зависит от [Concept('task_contract_tier', 'уровня контракта')|E] и от того, насколько чисто вы справитесь с охотой."
 
- task_contract_reward_effect_failure_abandoned_hunt_desc: "#N You abandon the hunt:#!"
- task_contract_reward_effect_failure_failed_hunt_desc: "#N The fiend gets the better of you:#!"
+ task_contract_reward_effect_failure_abandoned_hunt_desc: "#N Вы отказываетесь от охоты:#!"
+ task_contract_reward_effect_failure_failed_hunt_desc: "#N Чудовище берёт верх над вами:#!"
 
 
  ##################################
  ####### Scripted Contracts #######
  ##################################
- POD_natural_disaster_contract: "Natural Disaster"
+ POD_natural_disaster_contract: "Природное бедствие"
  POD_natural_disaster_desc_title: "[TaskContract.MakeScope.Var('disaster_loc').GetFlagName]"
- POD_natural_disaster_desc: "A great [TaskContract.MakeScope.Var('disaster_type').GetFlagName|l] is going to strike [TaskContract.MakeScope.Var('target_title').Title.GetNameNoTierNoTooltip]. It's not yet too late to prevent it... or perhaps, make it worse?"
- POD_natural_disaster_request: "This [task_contract|E] requires you to travel to [TaskContract.GetLocation.GetName]. You can then decide what to do about the impending disaster, based on the abilities of your [GetPlayer.Custom('PODCoterie')].\n\n$POD_contract_show_time_remaining$"
+ POD_natural_disaster_desc: "На владение [TaskContract.MakeScope.Var('target_title').Title.GetNameNoTierNoTooltip] надвигается [TaskContract.MakeScope.Var('disaster_type').GetFlagName|l]. Это ещё не поздно предотвратить... или, может быть, сделать ещё хуже?"
+ POD_natural_disaster_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы отправились во владение [TaskContract.GetLocation.GetName]. Затем вы сможете решить, что делать с надвигающимся бедствием. [GetPlayer.Custom('PODCoterie')] может помочь вам с этим.\n\n$POD_contract_show_time_remaining$"
 
- task_contract_reward_effect_success_prevented_disaster_desc: "#P You prevent the disaster:#!"
- task_contract_reward_effect_success_turned_disaster_into_prosperity_desc: "#P You prevent the disaster #bold and#! improve the climate:#!"
- task_contract_reward_effect_success_provided_relief_desc: "#P You provide disaster relief to the mortals:#!"
- task_contract_reward_effect_success_provided_great_relief_desc: "#P You provide #bold great#! disaster relief to the mortals:#!"
- task_contract_reward_effect_success_made_disaster_worse_desc: "#P You make the disaster#! #N;bold worse:#!"
- task_contract_reward_effect_failure_do_nothing_desc: "#N You do nothing:#!"
+ task_contract_reward_effect_success_prevented_disaster_desc: "#P Вы предотвращаете катастрофу:#!"
+ task_contract_reward_effect_success_turned_disaster_into_prosperity_desc: "#P Вы предотвращаете катастрофу #bold и#! улучшаете климат:#!"
+ task_contract_reward_effect_success_provided_relief_desc: "#P Вы оказываете смертным помощь:#!"
+ task_contract_reward_effect_success_provided_great_relief_desc: "#P Вы оказываете #bold огромную#! помощь смертным:#!"
+ task_contract_reward_effect_success_made_disaster_worse_desc: "#P Вы делаете бедствие#! #N;bold хуже:#!"
+ task_contract_reward_effect_failure_do_nothing_desc: "#N Вы ничего не делаете:#!"
 
  # Event options
- POD_accept_contract: "I'll travel there right away."
- POD_accept_contract_tt: "You will open the [travel|E] planner and make your way to [task_contract.GetLocation.GetName]"
- POD_postpone_contract: "I'll think about it."
- POD_abandon_contract: "I'm not interested in this contract."
- POD_abandon_contract_tt: "This contract will be abandoned"
+ POD_accept_contract: "Я немедленно отправлюсь туда."
+ POD_accept_contract_tt: "Вы откроете планировщик [Concept('travel', 'путешествия')|E] и отправитесь во владение [task_contract.GetLocation.GetName]"
+ POD_postpone_contract: "Я подумаю над этим."
+ POD_abandon_contract: "Меня не интересует этот договор."
+ POD_abandon_contract_tt: "Этот договор будет отменен"
 
  # Variable display
- POD_contract_show_time_remaining: "This contract will expire in #bold [GetGameTimeDifferenceForDiffDays(GetVarTimeRemaining(TaskContract.MakeScope,'time_remaining'))]#! #italic ([GetCurrentDateWithDiff(GetVarTimeRemaining(TaskContract.MakeScope,'time_remaining'))])#!"
+ POD_contract_show_time_remaining: "Этот договор истечёт через #bold [GetGameTimeDifferenceForDiffDays(GetVarTimeRemaining(TaskContract.MakeScope,'time_remaining'))]#! дней #italic ([GetCurrentDateWithDiff(GetVarTimeRemaining(TaskContract.MakeScope,'time_remaining'))])#!"
