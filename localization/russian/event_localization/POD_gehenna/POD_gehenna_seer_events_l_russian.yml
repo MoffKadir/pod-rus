@@ -1,23 +1,23 @@
 ﻿l_russian:
 
  POD_gehenna_seer.100.t: "Странные слухи"
- POD_gehenna_seer.100.desc.1: "Ваш $court_seer_court_position$ [Select_CString(gehenna_seer.IsFemale, 'ворвалась', 'ворвался')] в главный зал, бормоча:\n\"В, э-э, последние дни...\n... кровь повсюду...\n... тень... что-то...\"\n\nЗатем [gehenna_seer.GetSheHe] [Select_CString(gehenna_seer.IsFemale, 'упала', 'упал')] без сознания."
- POD_gehenna_seer.100.desc.2: "Начинается переполох, когда вашего $court_seer_court_position$ [Select_CString(gehenna_seer.IsFemale, 'находят', 'находят')] без сознания с кровавой пеной у [gehenna_seer.GetHerHis] рта. По-видимому, [gehenna_seer.GetSheHe] [Select_CString(gehenna_seer.IsFemale, 'испытала', 'испытал')] какое-то зловещее видение, которое оказалось слишком тяжёлым для [gehenna_seer.GetHerHim]."
- POD_gehenna_seer.100.desc.3: "Ваш $court_seer_court_position$ громко [Select_CString(gehenna_seer.IsFemale, 'провозглашает', 'провозглашает')]:\n\n'Слова крови!\nДуши Тринадцати разорвут сердца!\nОтец золотого-жирного!'\n\nЭто не имеет никакого смысла."
- POD_gehenna_seer.100.a: "Мне нужен [Select_CString(gehenna_seer.IsFemale, 'более достойная', 'более достойный')] $court_seer_court_position$."
- POD_gehenna_seer.100.b: "Дайте этому [gehenna_seer.GetWomanMan] ещё больше одурманенных сосудов!"
- POD_gehenna_seer.100.c: "Эти пророчества о гибели — полная чушь."
+ POD_gehenna_seer.100.desc.1: "Ваш $court_seer_court_position$, спотыкаясь, входит в большой зал, бормоча:\n«В... последние дни...\n...повсюду кровь...\n...тень... что-то...»\n\nЗатем [gehenna_seer.GetSheHe] теряет сознание."
+ POD_gehenna_seer.100.desc.2: "Начинается переполох, когда ваш $court_seer_court_position$ обнаружен без сознания с кровавой пеной у [gehenna_seer.GetHerHis] рта. Видимо, у н[gehenna_seer.GetHerHis] было какое-то зловещее видение, которое оказалось слишком тяжёлым для н[gehenna_seer.GetHerHis], чтобы с ним справиться."
+ POD_gehenna_seer.100.desc.3: "Ваш $court_seer_court_position$ громко провозглашает:\n\n«Слова крови!\nДуши Тринадцати вырвут сердца!\nОтец златокудрый!»\n\nЭто бессмысленно."
+ POD_gehenna_seer.100.a: "Мне нужен $court_seer_court_position$ получше."
+ POD_gehenna_seer.100.b: "Подайте [Select_CString(gehenna_seer.IsFemale, 'этой женщине', 'этому мужчине' )] ещё больше сосудов дурмана!"
+ POD_gehenna_seer.100.c: "Все эти предсказания судьбы — полная чушь."
 
-#generic loc for Gehenna Seer prophecies
+ #generic loc for Gehenna Seer prophecies
  POD_gehenna_seer.gen.t: "Пророчество Геенны"
  POD_gehenna_seer.gen.a: "Принять пророчество!"
  POD_gehenna_seer.gen.b: "Отвергнуть пророчество!"
 
-#not generic locs for Gehenna Seer prophecies
- POD_gehenna_seer.300.desc: "[gehenna_seer.GetTitledFirstName] [Select_CString(gehenna_seer.IsFemale, 'объявляет', 'объявляет')] ужасное пророчество вашему двору: «И Тёмная Мать сама явится, и там, в долине Еноха, будет битва, поединок Тёмного Отца и Тёмной Матери. Демоническая Королева укусит глубоко, Проклятый Король укусит ещё глубже»."
- POD_gehenna_seer.400.desc: "[gehenna_seer.GetTitledFirstName] [Select_CString(gehenna_seer.IsFemale, 'указывает', 'указывает')] на признаки Геенны: «Заметьте тень, которая летит, заметьте дракона, который восстаёт, заметьте тьму, которая движется, заметьте тень луны»."
- POD_gehenna_seer.500.desc: "[gehenna_seer.GetTitledFirstName] [Select_CString(gehenna_seer.IsFemale, 'погружается', 'погружается')] в транс, бормоча: «Вы узнаете эти времена, когда чёрная рука поднимется и задушит всех тех, кто ей противостоит, и те, кто пьёт кровь сердца, процветут, и Киндред будут тесниться каждый для себя, а вита станет такой же редкой, как бриллианты»."
- POD_gehenna_seer.600.desc: "[gehenna_seer.GetTitledFirstName] [Select_CString(gehenna_seer.IsFemale, 'постигает', 'постигает')] откровение: «Придёт время, когда головы трёх Принцев будут наблюдать за рассветом на белой колонне»."
+ #not generic locs for Gehenna Seer prophecies
+ POD_gehenna_seer.300.desc: "[gehenna_seer.GetTitledFirstName] объявляет вашему двору ужасное пророчество:\n\n«И сама Тёмная мать\nбудет вызвана на свет,\nи там, в долине Еноха, состоится битва,\nпоединок Тёмного отца и Тёмной матери.\nКоролева демонов укусит глубоко,\nПроклятый король укусит ещё глубже»."
+ POD_gehenna_seer.400.desc: "[gehenna_seer.GetTitledFirstName] указывает на приметы Геенны:\n\n«Заметьте\nтень, которая\nлетит,\nзаметьте дракона,\nкоторый восстаёт,\nзаметьте тьму,\nкоторая движется,\nзаметьте тень\nлуны»."
+ POD_gehenna_seer.500.desc: "[gehenna_seer.GetTitledFirstName] впадает в транс, бормоча:\n\n«Вы узнаете эти времена, ибо чёрная\nрука поднимется и задушит всех,\nкто ей противостоит,\nи те, кто питается кровь сердца, будут\nпроцветать,\nи сородичи будут тесниться каждый\nк своему, и витэ станет столь же редкой, как\nалмазы»."
+ POD_gehenna_seer.600.desc: "[gehenna_seer.GetTitledFirstName] обретает откровение:\n\n«Настанет время,\nкогда головы трёх князей\nбудут наблюдать за горением зари\nна белой колонне»."
  POD_gehenna_seer.700.desc: "[gehenna_seer.GetTitledFirstName] [Select_CString(gehenna_seer.IsFemale, 'даёт', 'даёт')] пророческое предупреждение: «И вы узнаете эти последние времена по Времени Тонкой Крови, которое будет отмечать вампиров, которые не могут порождать, вы узнаете их по Безклановым, которые придут к власти»."
  POD_gehenna_seer.800.desc: "[gehenna_seer.GetTitledFirstName] [Select_CString(gehenna_seer.IsFemale, 'открывает', 'открывает')], что надежда придёт от смертных: «последняя Дочь Евы, и в ней будет решена судьба всех. И вы не узнаете эту женщину, кроме как по отметине Луны на ней, и она столкнётся с предательством, ненавистью и болью, но в ней — последняя надежда»."
  POD_gehenna_seer.900.desc: "[gehenna_seer.GetTitledFirstName] [Select_CString(gehenna_seer.IsFemale, 'предупреждает', 'предупреждает')] о пришествии пожирающей матери: «Придёт время, когда древний голод пробудится глубоко в северных лесах и поглотит всех своих детей»."
