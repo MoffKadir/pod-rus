@@ -1,9 +1,10 @@
 ﻿l_russian:
  coraxgifts_visible: "Corax Gifts"
  tengugifts_visible: "Tengu Gifts"
-  
+ 
  has_doctrine_triat_alignment_wyrm: "@warning_icon!#X Your [faith|E] has the [GetDoctrine('doctrine_triat_alignment_wyrm').GetName(GetPlayer.GetFaith.Self)] doctrine#!"
  NOT_has_doctrine_triat_alignment_wyrm: "@warning_icon!#X Your [faith|E] does #bold not#! have the [GetDoctrine('doctrine_triat_alignment_wyrm').GetName(GetPlayer.GetFaith.Self)] doctrine#!"
+ 
  ravens_gleaning_perk_name: "Raven's Gleaning"
  word_beyond_perk_name: "Word Beyond"
  skys_beneficence_perk_name: "Sky's Beneficence"
@@ -23,13 +24,15 @@
  targeted_heave_perk_name: "Targeted Heave"
  poisoned_flesh_perk_name: "Poisoned Flesh"
  plague_feather_perk_name: "Plague Feather"
- WORD_BEYOND_PERK_EFFECT: "[vassal|E] and [courtier|E] Monthly Umbra Exploration Progress: [grace_i]#P +5#!"
+ 
+ WORD_BEYOND_PERK_EFFECT: "[vassal|E] and [courtier|E] [umbra_aptitude|E]: $pod_grace_i$#P +25%#!"
  SUNS_GUARD_PERK_EFFECT: "No longer gain wound from fire."
  MOMENTS_OF_ECLIPSE_PERK_EFFECT: "Allow friendly interactions with $POD_splat_vampire_plural$."
- THEFT_OF_STARS_PERK_EFFECT: "Give [GetModifier('theft_of_stars_perk_modifier').GetNameWithTooltip] modifier to enemy [knights|E] in war as a commander or to foe in [single_combat_duel|E].\nGive [GetModifier('theft_of_stars_perk_modifier').GetNameWithTooltip] modifier to enemy commanders in war as a commander."
+ THEFT_OF_STARS_PERK_EFFECT: "Give [GetModifier('theft_of_stars_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E].\nGive [GetModifier('theft_of_stars_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [commanders|E] when acting as a [commander|E] during the [combat_phase|E]."
  GIFT_OF_EYES_PERK_EFFECT: "As a [character_interaction|E], allow you to reveal the killer of target's family or consort."
- TARGETED_HEAVE_PERK_EFFECT: "Give [GetModifier('targeted_heave_perk_modifier').GetNameWithTooltip] modifier to enemy [knights|E] in war as a commander or to foe in [single_combat_duel|E]."
- POISONED_FLESH_PERK_EFFECT: "Give [GetModifier('poisoned_flesh_perk_modifier').GetNameWithTooltip] modifier to enemy commanders in war as a commander."
+ TARGETED_HEAVE_PERK_EFFECT: "Give [GetModifier('targeted_heave_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
+ POISONED_FLESH_PERK_EFFECT: "When a war is started, the highest prowess champion of your enemy will be wounded."
+ 
  cranes_wisdom_perk_name: "Crane's Wisdom"
  sweet_words_perk_name: "Sweet Words"
  shoulder_cracker_perk_name: "Shoulder Cracker"
@@ -38,4 +41,5 @@
  bloody_feather_storm_perk_name: "Bloody Feather Storm"
  deceptive_demise_perk_name: "Deceptive Demise"
  thieving_talons_of_the_magpie_perk_name: "Thieving Talons of the Magpie"
+ 
  CRANES_WISDOM_PERK_BONUS_VALUE: "[GetPerk('cranes_wisdom_perk').GetName(GetPlayer)]"

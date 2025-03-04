@@ -207,14 +207,17 @@
  POD_predatorstories_consensualist.1160.g.toast: "Все они поглибли чтобы пожалеть о нападении на одного из ваших добровольных доноров крови"
  POD_predatorstories_familias.1160.g.toast: "Все они поглибли чтобы пожалеть о нападении на одного члена из вашей избранной семьи"
  POD_predatorstories_cultist.1160.g.toast: "Все они поглибли чтобы пожалеть о нападении на одного из ваших культистов"
-  #Victim hires or performs attempted exorcism on vampire 
+
+ #Victim hires or performs attempted exorcism on vampire
  POD_predatorstories.1170.t: "Любительский экзорцизм"
  POD_predatorstories.1170.desc: "Одна из ваших обычных жертв подходит к вам и пытается провести экзорцизм, чтобы попытаться вылечить вас; Вас это забавляло, вплоть до того момента, когда вы узнали, что они упоминали вас по имени нескольким людям для помощи в лечении. У вас есть список имен, как вы решите этот вопрос, прежде чем пойдут слухи?"
  POD_predatorstories.1170.a: "Слухи безобидны"
  POD_predatorstories.1170.b: "К сожалению, те, кому рассказали, должны умереть"
  POD_predatorstories.1170.c: "Какие слухи?"
-  #Vampire attacks on your cult/family/consensual partners 
+
+ #Vampire attacks on your cult/family/consensual partner
  POD_predatorstories_consensualist.1180.t: "Вампир нападает на добровольного донора крови"
+ POD_predatorstories.1180.desc: "Most vampires respect your authority and know that your [herd|E] is strictly off-limits. "Most" however doesn't mean all. One such miscreant has recently, either by defiance or idiocy, taken blood from your mortals. An example has to be made."
  POD_predatorstories_familias.1180.t: "Вампир нападает на семью, с которой вы кормитесь"
  POD_predatorstories_cultist.1180.t: "Вампир нападает на ваш культ"
  POD_predatorstories_consensualist.1180.desc: "Вампир оспорил вашу власть, осмелившись питаться кровью вашего добровольного донора. Как вы отреагируете на это оскорбление?"
@@ -282,7 +285,7 @@
  POD_predatorstories.1193.c: "Отвлечь их иллюзией, чтобы вы могли уйти"
   #Family member would like a wife 
  POD_predatorstories.1200.t: "Член семьи хотел бы завести жену"
- POD_predatorstories.1200.desc: "Один из членов семьи, от которой вы кормитесь, действительно хотел бы жениться. Однако у него нет золота, необходимого для оплаты приданого."
+ POD_predatorstories.1200.desc: "Один из членов семьи, от которой вы кормитесь, действительно хотел бы жениться. Однако у него нет золота, необходимого для оплаты приданого. As the unsaid patron of his folk, he turns to you for help.\nHaving to listen to petty requests like this is one of the downside of feeding from a knowing [herd|E] but nobody forces you to accept at least."
  POD_predatorstories.1200.a: "Дать ему золото"
  POD_predatorstories.1200.b: "Отказать в выдаче золота"
  POD_predatorstories.1200.c: "Вы знаете девушку, которая отчаянно хочет выйти замуж и ей не потребуется приданое"
@@ -293,6 +296,7 @@
  POD_predatorstories.1210.b: "У меня нет на это времени"
   #Victim tries to cure you of vampirism with a potion 
  POD_predatorstories.1220.t: "Смертный хочет вылечить вас"
+ POD_predatorstories.1220.desc: "One member of your [herd|E] comes to you with a strange proposal. They have bought a potion that they think will cure you of vampirism. The notion is obviously ludicrous but they seem quite proud of themselves for acquiring such a "miracle cure". Perhaps you could humor them."
  POD_predatorstories_consensualist.1220.desc: "Один из ваших добровольных доноров крови верит, что приобретенная им святая вода может вылечить вас от вампиризма. Вы будете пить ее?"
  POD_predatorstories_familias.1220.desc: "Один из ваших добровольных доноров крови верит, что приобретенная им святая вода может вылечить вас от вампиризма. Вы будете пить ее?"
  POD_predatorstories_cultist.1220.desc: "Один из ваших добровольных доноров крови верит, что приобретенная им святая вода может вылечить вас от вампиризма. Вы будете пить ее?"
@@ -464,8 +468,10 @@
  POD_predatorstories.1375.a.success.toast: "Вы сразили кролика"
  POD_predatorstories.1375.a.failure: "Вы побеждены кроликом"
  POD_predatorstories.1375.a.failure.toast: "Вас жестоко изувечили, но вам удалось сбежать"
-  #Victim needs gold to purchase new cattle 
+
+ #Victim needs gold to purchase new cattle
  POD_predatorstories.1380.t: "Жертва нуждается в золоте"
+ POD_predatorstories.1380.desc: "As you feed from people who understand (at least part of) your nature, they have come to see you as a potential benefactor for their family in exchange for their blood. This leads to various requests for help that can get tedious but ensure the prosperity of your [herd|E] in the future. One such request has come, while you didn't care to remember the specifics, it amounts to them needing gold for some farming endeavor."
  POD_predatorstories_consensualist.1380.desc: "Одному из ваших добровольных доноров крови требуется золото для покупки скота. Если он в ближайшее время не получит новый скот, он наверняка пострадает и, возможно, погибнет."
  POD_predatorstories_familias.1380.desc: "Одному из членов семьи, с которой вы кормитесь требуется золото для покупки скота. Если они в ближайшее время не получат новый скот, они наверняка пострадают и, возможно, погибнут."
  POD_predatorstories_cultist.1380.desc: "Одному из членов вашего культа требуется золото для покупки скота. Если он в ближайшее время не получит новый скот, он наверняка пострадает и, возможно, погибнет."

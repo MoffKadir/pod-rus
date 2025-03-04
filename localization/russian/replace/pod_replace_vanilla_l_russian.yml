@@ -20,6 +20,11 @@
  # Vassal obligation nested tooltip
  VASSAL_CONTRACT_OBLIGATION_LEVEL_EFFECT_TOOLTIP: "$NAME|S$ #weak (подробности см. в подсказке)#!"
 
+ # Difficulty settings for bookmarks
+ BOOKMARK_CHARACTER_DIFFICULTY_HARD: "#difficulty_hard Тяжёлая#!"
+ BOOKMARK_CHARACTER_DIFFICULTY_VERY_HARD: "#bold;color:{1,0.24,0.32};glow_color:{0,0,0,1} Очень тяжёлая#!"
+ BOOKMARK_CHARACTER_DIFFICULTY_EXTREMELY_HARD: "#bold;color:{0,0,0};glow_color:{1,0,0,1} Невозможная...?#!"
+
  # Replace perks loca
  planned_cultivation_perk_name: "Житейство"
  DOMESTIC_AFFAIRS_EFFICIENCY_BONUS: "Эффективность [Concept('domestic_affairs', 'внутренних дел')|E]: #P +[EmptyScope.ScriptValue('chains_of_loyalty_percentage')|0]%#!\nОткрывает [buy_artifact_claim_interaction|El]"
@@ -316,6 +321,64 @@
  msg_house_unity_change_stage_desc: "[Concept( 'house_unity', 'Единство' )|E] вашего дома сдвинулось на уровень «[Localize('$HOUSE_UNITY_STAGE_NAME|q$')]»" #Doesn't work properly in its vanilla form for some strange reason
  adventurer_honored_to_serve_perk_effect: "[adventurer_i] Бонусные [Concept('modifiers','модификаторы')|E] от [Concept('camp_temperament','настроения в лагере')|E] «#P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#!» теперь также зависят от количества [Concept('followers','последователей')|E] #weak (1 за 5 последователей, максимум 3 раза)#!"
  adventurer_writing_history_perk_effect: "[adventurer_i] [Concept('camp_temperament','Настроение в лагере')|E] «#P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#!» теперь также дает растущий бонус в #P 5#! к [Concept( 'scheme_speed', 'скорости' )|E] [Concept( 'personal', 'личных происков' )|E] (максимум 25)"
+ journey_knowledge_hoarding_intent_desc: "У вас в жизни лишь одна цель: накопить как можно больше знаний. Вы можете попытаться получить дополнительный опыт образа жизни за счет повышения [Concept('stress','стресса')|E]."
+ duke_landless_adventurer_camp_wanderers: "" #Master/Mistress is kind of silly for our landless, nothing at all is better
+ spouse_landless_adventurer_male: ""
+ spouse_landless_adventurer_holder_female: ""
+
+ # Contract GUI
+ DECISIONS_BUTTON_CONTAINER: "#T Решения и $TASK_CONTRACT_CONTRACT_PLURAL$#!"
+ GOVERNANCE_ISSUE: "[task_contract|E]"
+ GOVERNANCE_ISSUE_TIER: "[task_contract_tier|E]"
+ TASK_CONTRACT_ISSUE: "$TASK_CONTRACT_CONTRACT$"
+ TASK_CONTRACT_ISSUE_PLURAL: "$TASK_CONTRACT_CONTRACT_PLURAL$"
+ TASK_CONTRACT_ISSUE_POSSESSIVE: "$TASK_CONTRACT_CONTRACT_POSSESSIVE$"
+ TASK_CONTRACT_ISSUE_POSSESSIVE_PLURAL: "$TASK_CONTRACT_CONTRACT_POSSESSIVE_PLURAL$"
+ TASK_CONTRACT_NAME: "#T [TaskContract.GetType.GetName]#!\n[AddTextIf( And( CHARACTER.IsValid, Not(TaskContract.MakeScope.Var('hide_employer').IsSet) ), Concatenate3(Concatenate3('#E ',Concept('contractor',Localize('game_concept_contractor')),'#!: '),CHARACTER.GetShortUIName,'\n') )]$TASK_CONTRACT_TIER$: #V [Select_CString( TaskContract.IsHard, '3', Select_CString( TaskContract.IsMedium, '2', '1'))]#!\n\n[TaskContract.GetTaskContractRequest]\n\n#weak [TaskContract.GetTaskContractDescription]#!"
+
+ # Domicile flags (temporary)
+ # Other flags (need to test):
+ #  camp_infection_chance_buff_1
+ #  camp_infection_chance_buff_2
+ #  camp_infection_chance_buff_3
+ #  camp_infection_chance_buff_4
+ #  camp_infection_chance_buff_5
+ #  camp_infection_chance_buff_6
+ #  camp_improved_court_physician_aptitude
+ #  camp_unlocks_forward_scouts
+ #  camp_improved_musician_scheme_agent
+ #  camp_more_likely_to_become_poet
+ #  camp_improved_poet_scheme_agent
+ #  camp_recruit_fool_events
+ #  camp_recruit_locals_events
+ #  camp_unlocks_poisoner_scheme_agents
+ #  camp_improved_learning_contract_rewards
+ #  camp_reduced_prisoner_escape_chance
+ pod_only_if_unlanded: "#weak (только для авантюристов)#!"
+ domicile_building_parameter_camp_unlocks_second_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('second_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_master_of_arms_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('master_of_arms_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_light_cavalry_captain_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('light_cavalry_captain_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_heavy_cavalry_captain_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('heavy_cavalry_captain_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_master_of_spoils_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('master_of_spoils_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_improved_entice_local_mercenaries: "Более умелые кандидаты благодаря #high завлечению местных наемников#! $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_archer_captain_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('archer_captain_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_heavy_infantry_captain_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('heavy_infantry_captain_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_light_infantry_captain_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('light_infantry_captain_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_pike_captain_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('pike_captain_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_quartermaster_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('quartermaster_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_torture_interaction: "Можно [Concept('torture', 'пытать')|E] [Concept('prisoners', 'узников')|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_fireside_chat_intent_unlock: "Открывает доступ к [Concept( 'intent', 'намерению' )|E] «Беседа у костра» во время [Concept('activity','занятия')|E] «[GetActivityType('activity_camp_party').GetName]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_master_bard_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('master_bard_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_improves_stooge_officer: "Улучшает базовую [Concept('aptitude','пригодность')|E] любого [Concept('officer','подручного')|E] типа «[GetCourtPositionType('stooge_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_camp_cook_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('camp_cook_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_improves_gather_provisions_decision: "Значительно улучшает [Concept('decision','решение')|E] «[GetDecisionWithKey('gather_provisions_decision').GetName]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_camp_party_food_option: "Открывает дополнительные возможности в [Concept('activity','занятии')|E] «[GetActivityType('activity_camp_party').GetName]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_improved_camp_party_activity_gains: "Улучшает результаты [Concept('activity','занятия')|E] «[GetActivityType( 'activity_camp_party').GetName]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_chief_forager_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('chief_forager_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_improves_gather_provisions_foraging: "Получить [EmptyScope.ScriptValue('camp_improves_gather_provisions_foraging_loc_value')|=+0%] [provisions_i][Concept('provisions','припасов')|E] во время фуражировки с помощью [Concept('decision','решения')|E] «[GetDecisionWithKey('gather_provisions_decision').GetName]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_chief_engineer_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('chief_engineer_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_chief_engineer_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('chief_engineer_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_camp_priest_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('camp_priest_camp_officer').GetName()]» $pod_only_if_unlanded$"
 
  # Visit local settlement
  local_holding_type_concept_grand_city_holding: "[grand_city_holding|E]"
@@ -334,3 +397,7 @@
  far_and_wide_perk_effect: "Увеличение [prestige_experience_i|E][Concept('prestige_experience','репутации')|E] на #P 1#! за каждое посещенное [Concept('holding','владение')|E]"
  gracious_host_impeccable_guest_perk_4_effect: "[Concept('aptitude','Пригодность')|E] к [Concept('court_position','придворной должности')|E] увеличивается на #p +1#! за известный [Concept('language','язык')|E]"
  activity_journey_host_desc: "#indent_newline:8 $BULLET_WITH_TAB$#V Опыт путей#! [intrigue_i|E][diplomacy_i|E][martial_i|E][learning_i|E][stewardship_i|E].\n#weak (Награды жизненного пути зависят от вида посещенной [Concept('special_building', 'особой постройки')|E])#!#!\n$BULLET_WITH_TAB$[prestige_i|E][prestige|E]\n\n#weak Ваши [Concept('children','дети')|E] и [Concept('spouses','супруги')|E] войдут в вашу [Concept('entourage','свиту')|E].#!"
+
+ # Disabled building flags
+ building_funeral_effect_desc: ""
+ tower_of_london_pacification_effect: ""

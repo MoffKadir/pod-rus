@@ -265,9 +265,11 @@
  POD_lore_auto_resurrection_interaction: "Ward against Death"
  POD_lore_auto_resurrection_interaction_desc: "Automatically bring a person back that has recently got killed, at a massive piety cost."
  POD_lore_auto_resurrection_interaction_options_heading: "Which people shall I prevent to die from accidental death?"
- POD_call_sin_dragon_to_war_interaction: "Call Sin Dragon"
- POD_call_sin_dragon_to_war_interaction_desc: "Call your Sin Dragon to war."
- POD_call_sin_dragon_to_war_interaction_tt: "You have already called your Sin Dragon to [GetPlayer.MakeScope.GetVariable('sin_dragon_summon').War.GetName]."
+
+ #POD_call_sin_dragon_to_war_interaction: "Call Sin Dragon"
+ #POD_call_sin_dragon_to_war_interaction_desc: "Call your Sin Dragon to war."
+ #POD_call_sin_dragon_to_war_interaction_tt: "You have already called your Sin Dragon to [GetPlayer.MakeScope.GetVariable('sin_dragon_summon').War.GetName]."
+
  POD_scry_interaction: "Scry"
  POD_scry_interaction_desc: "Use your evocation to observe of every secret and scheme of [recipient.GetFirstName]."
  POD_scry_interaction_tt: "You have any artifact that [recipient.GetFirstName] has claim on it."
@@ -309,9 +311,11 @@
  POD_alter_path_interaction.tt.defender: "You will unleash [GetModifier('alter_path_defender_modifier').GetNameWithTooltip] [modifier|E] over the targeted realm"
  POD_alter_path_interaction.tt.supply: "You will unleash [GetModifier('alter_path_supply_modifier').GetNameWithTooltip] [modifier|E] over the targeted realm"
  POD_alter_path_interaction.tt.no_supply: "You will unleash [GetModifier('alter_path_no_supply_modifier').GetNameWithTooltip] [modifier|E] over the targeted realm"
- POD_call_the_unnamable_to_war_interaction: "Call Outsider"
- POD_call_the_unnamable_to_war_interaction_desc: "Call Outsider to war."
- POD_call_the_unnamable_to_war_interaction_tt: "You have already called Outsider to [GetPlayer.MakeScope.GetVariable('outsider_summon').War.GetName]."
+
+ #POD_call_the_unnamable_to_war_interaction: "Call Outsider"
+ #POD_call_the_unnamable_to_war_interaction_desc: "Call Outsider to war."
+ #POD_call_the_unnamable_to_war_interaction_tt: "You have already called Outsider to [GetPlayer.MakeScope.GetVariable('outsider_summon').War.GetName]."
+
  POD_twist_time_decision_interaction: "Twist Time #Weak (Decision Cooldown)#!"
  POD_twist_time_decision_interaction_desc: "Remove decision cooldown."
  POD_twist_time_scheme_cooldown_interaction: "Twist Time #Weak (Scheme Cooldown)#!"
@@ -361,7 +365,7 @@
  POD_demand_lore_teaching_paths_lore: "Lore of Paths"
  POD_demand_lore_teaching_forge_lore: "Lore of Forge"
  POD_demand_lore_teaching_light_lore: "Lore of Light"
- POD_demand_lore_teaching_patterns_lore: "Lore of Petterns"
+ POD_demand_lore_teaching_patterns_lore: "Lore of Patterns"
  POD_demand_lore_teaching_portals_lore: "Lore of Portals"
  POD_demand_lore_teaching_longing_lore: "Lore of Longing"
  POD_demand_lore_teaching_storms_lore: "Lore of Storms"

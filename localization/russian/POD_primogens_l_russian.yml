@@ -66,7 +66,7 @@
  lasombra_primogen_court_position_desc: "Повелители теней - полезные союзники, но гораздо более опасные враг, если переступить им дорогу.\n\n#help Требования к [Concept('aptitude', 'пригодности')|E] см. в «[lasombra_primogen|E]».#!"
  toreador_primogen_court_position: "Примоген Тореадоров"
  toreador_primogen_court_position_desc: "Каждый уважающий себя двор располагает талантливым тореадором для проведения сборищ. Хотя определение «талантливый» порой может быть спорным.\n\n#help Требования к [Concept('aptitude', 'пригодности')|E] см. в «[toreador_primogen|E]».#!"
- tzimisce_primogen_court_position: "Примоген Цимисхов"
+ tzimisce_primogen_court_position: "Примоген Цимисхи"
  tzimisce_primogen_court_position_desc: "Когда гостю больше не рады, но вам всё ещё нужно, чтобы он ответил на несколько вопросов... вы знаете, к кому обратиться.\n\n#help Требования к [Concept('aptitude', 'пригодности')|E] см. в «[tzimisce_primogen|E]».#!"
  ventrue_primogen_court_position: "Примоген Вентру"
  ventrue_primogen_court_position_desc: "Так называемые правители ночи ожидают, что на них возложат много власти и обязанностей, даже если они этого не заслуживают.\n\n#help Требования к [Concept('aptitude', 'пригодности')|E] см. в «[ventrue_primogen|E]».#!"
@@ -145,10 +145,10 @@
  minister_of_the_garden_court_position_desc: "Министр сада следит за региональными проблемами смертных от имени местного тайного министра, пока тайный министр не сочтет ситуацию достаточно серьезной, чтобы потребовать его личного внимания."
  yin_ambassador_court_position: "Посол Инь"
  yin_ambassador_court_position_desc: "Посол Инь служит местной прародительнице как связующее звено с местным [UmbraGlossaryLocalized('shadowlands','миром Инь')] и его пугающими царствами."
- yin_ambassador_employer_custom_effect_description: "Все при дворе:\n[umbra_aptitude|E]: от $pod_grace_i$#P +10%#! д $pod_grace_i$#P +50%#! (в зависимости от [Concept('aptitude', 'пригодности')|E])"
+ yin_ambassador_employer_custom_effect_description: "Все при дворе:\n[umbra_aptitude|E]: от $pod_grace_i$#P +10%#! д $pod_grace_i$#P +50%#! (исходя из [Concept('aptitude', 'пригодности')|E])"
  yang_ambassador_court_position: "Посол Ян"
  yang_ambassador_court_position_desc: "Посол Ян - это аналог посла Инь, обеспечивающий мост к динамичному и живому [Concept('yang_world', 'миру Ян')|E]."
- yang_ambassador_employer_custom_effect_description: "Все при дворе:\n[umbra_aptitude|E]: от $pod_grace_i$#P +10%#! до $pod_grace_i$#P +50%#! (в зависимости от [Concept('aptitude', 'пригодности')|E])"
+ yang_ambassador_employer_custom_effect_description: "Все при дворе:\n[umbra_aptitude|E]: от $pod_grace_i$#P +10%#! до $pod_grace_i$#P +50%#! (исходя из [Concept('aptitude', 'пригодности')|E])"
  first_oni_court_position: "Первый Они"
  first_oni_court_position_desc: "Первые Они сродни военачальникам, они следят за безопасностью региона, защищают от влияния акума [UmbraGlossaryLocalized('yomi_wan','йоми')] и обычно возглавляют санкционированные походы против врагов."
  infant_devil_civilizer_court_position: "Цивилизатор демонов-младенцев"
@@ -188,13 +188,13 @@
 
  underworld_ambassador_court_position: "Посол Загробного мира"
  underworld_ambassador_court_position_desc: "Посол [UmbraGlossaryLocalized('shadowlands','Загробного мира')] служит местному правителю в качестве связующего звена с местными измерениями [UmbraGlossaryLocalized('shadowlands','Загробного мира')]."
- underworld_ambassador_employer_custom_effect_description: "Все при дворе:\n[umbra_aptitude|E]: от $pod_grace_i$#P +5%#! до $pod_grace_i$#P +25%#! (в зависимости от [Concept('aptitude', 'пригодности')|E])"
+ underworld_ambassador_employer_custom_effect_description: "Все при дворе:\n[umbra_aptitude|E]: от $pod_grace_i$#P +5%#! до $pod_grace_i$#P +25%#! (исходя из [Concept('aptitude', 'пригодности')|E])"
  umbra_ambassador_court_position: "Посол [Concept('umbra', 'Умбры')|E]"
  umbra_ambassador_court_position_desc: "Посол [Concept('umbra', 'Умбры')|E] служит местному правителю в качестве связующего звена с местными измерениями [Concept('umbra', 'Умбры')|E]."
- umbra_ambassador_employer_custom_effect_description: "Все при дворе:\n[umbra_aptitude|E]: от $pod_grace_i$#P +5%#! до $pod_grace_i$#P +25%#! (в зависимости от [Concept('aptitude', 'пригодности')|E])"
+ umbra_ambassador_employer_custom_effect_description: "Все при дворе:\n[umbra_aptitude|E]: от $pod_grace_i$#P +5%#! до $pod_grace_i$#P +25%#! (исходя из [Concept('aptitude', 'пригодности')|E])"
  trod_wayfarer_court_position: "Обходчик тродов"
  trod_wayfarer_court_position_desc: "Троды - ближайшая связь фей с [UmbraGlossaryLocalized('dreaming','Грёзами')] и [UmbraGlossaryLocalized('arcadia','Аркадией')] извне. Они также являются могуществом. Те, кто управляет тродами, имеют огромный контроль над обществом фей."
- trod_wayfarer_employer_custom_effect_description: "Все при дворе:\n[umbra_aptitude|E]: от $pod_grace_i$#P +5%#! до $pod_grace_i$#P +25%#! (в зависимости от [Concept('aptitude', 'пригодности')|E])"
+ trod_wayfarer_employer_custom_effect_description: "Все при дворе:\n[umbra_aptitude|E]: от $pod_grace_i$#P +5%#! до $pod_grace_i$#P +25%#! (исходя из [Concept('aptitude', 'пригодности')|E])"
 
  touchstones_court_position: "Опора"
  touchstones_court_position_desc: "Опоры - это связь вампира со смертным миром, представляющая собой образ мышления, в котором он себя ценит. Опорой должен быть один живой человек. Это может быть выживший партнер или член семьи, родственник того, кого вампир убил в начале своей нежизни, или просто человек, с которым он регулярно сталкивается.\nНекоторые сородичи, в силу своей оторванности от мира смертных, могут даже выбрать себе Опору, которая не знает об их существовании, предпочитая преследовать и следить за человеком, чтобы сохранить свою связь с человечеством."
@@ -215,7 +215,7 @@
 
  oathsworn_mount_court_position: "Клятвенный скакун"
  oathsworn_mount_court_position_desc: "[GetTrait('pooka').GetName( GetPlayer )] (со сродством с крупным животным) или [courtier|El]-[GetTraitGroup('shapeshifter').GetName()|l], присягнувший сюзерену-фее, может служить ему разумным скакуном."
- oathsworn_mount_employer_custom_effect_description: "Увеличение скорости передвижения и армии в зависимости от [Concept('aptitude', 'пригодности')|E]."
+ oathsworn_mount_employer_custom_effect_description: "Увеличение скорости передвижения и армии исходя из [Concept('aptitude', 'пригодности')|E]."
 
  strategoi_court_position: "Стратег"
  strategoi_court_position_desc: "Стратеги эффективно управляют повседневными делами Эфората. Каждый из них отвечает за определенную часть владений Эфората. С ночи до утра стратег следит за делами и политикой Вентру в своем регионе, а также заботится о собственных нуждах и достоинствах."
@@ -294,4 +294,4 @@
 
  ratcatcher_court_position: "Крысолов"
  ratcatcher_court_position_desc: "$ratcatcher_court_position$ должен пасти крыс, следить за тем, чтобы они были съедобными, и загонять их в угол, чтобы они служили источником витэ для менее удачливых вампиров при дворе."
- ratcatcher_employer_custom_effect_description: "$BULLET$Улучшает [character_interaction|El] «Осушить животное»"
+ #ratcatcher_employer_custom_effect_description: "$BULLET$Улучшает [character_interaction|El] «Осушить животное»"

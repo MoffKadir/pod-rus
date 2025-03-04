@@ -83,3 +83,4 @@
  death_experiment: "[Select_CString(CHARACTER.IsFemale, 'была убита', 'был убит' )] во время эксперимента"
  death_experiment_killer: "[Select_CString(CHARACTER.IsFemale, 'была убита', 'был убит' )] во время эксперимента [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажем ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'им персонажем', '' )]"
  death_sargon_cappadocious: "[Select_CString(CHARACTER.IsFemale, 'достигла', 'достиг' )] непостижимого состояния бытия"
+ death_wolves_killer: "[Select_CString(CHARACTER.IsFemale, 'была растерзана', 'был растерзан' )] волками по приказу [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"

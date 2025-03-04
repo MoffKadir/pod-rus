@@ -1,19 +1,27 @@
 ﻿l_russian:
  POD_natural_disasters.0003.t: "Знак Погоды"
- POD_natural_disasters.0003.desc: "Согласно знакам погоды, в [target_title.GetNameNoTierNoTooltip] произойдет опасная катастрофа, что вы собираетесь делать?"
- POD_natural_disasters.0003.a: "Я должен остановить это!"
- POD_natural_disasters.0003.c: "Просто не обращайте внимания."
-  
- POD_natural_disasters.0005.t: "Магия Стихий"
- POD_natural_disasters.0005.desc: "Владея стихиями, вы можете либо препятствовать негативным последствиям стихийных бедствий, либо усиливать их для еще большего хаоса."
- POD_natural_disasters.0005.a: "Я должен остановить это!"
- POD_natural_disasters.0005.b: "Я сделаю последствия ещё ужасней!"
+ POD_natural_disasters.0003.desc: "Согласно знакам погоды, в [task_contract.MakeScope.Var('target_title').Title.GetName] в [GetGameTimeDifferenceForDiffDays(GetVarTimeRemaining(task_contract.MakeScope,'time_remaining'))] произойдет опасная катастрофа, что вы собираетесь делать?"
+ POD_natural_disasters.0003.desc.coterie: "Your [GetPlayer.Custom('PODCoterieNoTooltip')] member [coterie_member.GetFirstNameNicknamed] arrives with news.\n\n[coterie_member.GetHerHis|U] weather sight has predicted that there will be a dangerous disaster in the [task_contract.MakeScope.Var('target_title').Title.GetName] in [GetGameTimeDifferenceForDiffDays(GetVarTimeRemaining(task_contract.MakeScope,'time_remaining'))].\n\nWill you intervene?"
+
+ POD_natural_disasters.0003.tt: "A #bold [task_contract.GetType.GetName]#! [task_contract|E] has been created in [task_contract.GetLocation.GetName]"
+
+ POD_natural_disasters.0005.t: "Impending Doom"
+ POD_natural_disasters.0005.desc: "You arrive in [task_contract.GetLocation.GetName].\n\nIf you don't do anything, the incoming [task_contract.MakeScope.Var('disaster_type').GetFlagName|l] will cause great damage to the whole [task_contract.MakeScope.Var('target_title').Title.GetName].\n\nNow what to do?"
+ POD_natural_disasters.0005.a: "I will stop the [task_contract.MakeScope.Var('disaster_type').GetFlagName|l] with weather magic."
+ POD_natural_disasters.0005.b: "I will exert myself to #P improve#! the weather instead!"
+ POD_natural_disasters.0005.c: "I'll make the [task_contract.MakeScope.Var('disaster_type').GetFlagName|l] #X;bold even worse!#!"
+ POD_natural_disasters.0005.d: "I will provide relief to the mortals."
+ POD_natural_disasters.0005.e: "I'll go above and beyond to #P support#! the mortals."
+ POD_natural_disasters.0005.f: "I changed my mind."
+
+ # these are unused
  POD_natural_disasters.0101.t_602: "602 Землетрясение у Моностыря Сурб Карапет"
  POD_natural_disasters.0101.t_632: "632 Землетрясение в Армении"
  POD_natural_disasters.0101.t_735: "735 Землетрясение в Вайоцдзорской о́бласти"
  POD_natural_disasters.0101.t_740: "740 Землетрясение в Константинополе"
  POD_natural_disasters.0101.t_743: "743 Землетрясение в Каспийских воротах"
  POD_natural_disasters.0101.t_749: "749 Землетрясение в Галилее"
+
  POD_natural_disasters.0101.t_881: "881 Землетрясение в Акре"
  POD_natural_disasters.0101.t_893_a: "893 Землетрясение в Ардебиле"
  POD_natural_disasters.0101.t_893_b: "893 Землетрясение в Двине"
@@ -68,10 +76,14 @@
  POD_natural_disasters.0101.t_1570_b: "1570 Землетрясение в Ферраре"
  POD_natural_disasters.0101.t_1580: "1580 Землетрясение в Дуврском проливе"
  POD_natural_disasters.0101.t_1590: "1590 Землетрясение в Нойленгбахе"
+
+ POD_natural_disasters.0101.t: "[Localize(SCOPE.GetFlagName('disaster_loc'))]"
  POD_natural_disasters.0101.desc_flood: "Значительные части [target_title.GetNameNoTierNoTooltip] были сметены водой."
  POD_natural_disasters.0101.desc_earthquake: "Значительные части [target_title.GetNameNoTierNoTooltip] были разрушены в результате землетрясения."
  POD_natural_disasters.0101.desc_storm: "Ураган обрушился на [target_title.GetNameNoTierNoTooltip]."
- POD_natural_disasters.0101.desc_stopped: "Внезапно возникшая опасность была предотвращена, прежде чем она успела нанести дополнительный ущерб. Погибло лишь несколько смертных."
+ POD_natural_disasters.0101.desc_great_relief: "No lives were lost, and rebuilding efforts are proceeding without a hitch, thanks to a generous benefactor."
+ POD_natural_disasters.0101.desc_relief: "Most of the mortals managed to relocate in time, and the damage to infrastructure was minimal."
+ POD_natural_disasters.0101.desc_stopped: "Luckily, someone's weather magic managed to contain the disaster before it could claim any lives."
  POD_natural_disasters.0101.desc_aggraved: "Внезапно угроза стала ещё более серьёзной, чем была раньше. Никто не может сосчитать число погибших."
  POD_natural_disasters.0101.desc_default: "Так много людей погибло в этой катастрофе."
  POD_natural_disasters.0101.option.a: "О, природа!"

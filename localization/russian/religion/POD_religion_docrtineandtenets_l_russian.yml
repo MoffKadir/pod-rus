@@ -1082,7 +1082,7 @@
  tenet_way_of_zhong_kuei_desc: "Методика уничтонения демонов-нежити, разработанная Чжун Куэем. Те, кто следует этому пути, умеют «находить логова» вампиров."
 
  special_doctrine_garou_nation_name: "Нация Гару"
- special_doctrine_garou_nation_desc: "Это племя или лагерь следует Литании и является принятой частью народа Гару."
+ special_doctrine_garou_nation_desc: "Это племя или лагерь следует Литании и является принятой частью нации Гару."
  doctrine_parameter_hostility_override_special_doctrine_garou_nation: "Другие [faiths|El] гару с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_garou_nation').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
 
  special_doctrine_beast_courts_name: "Звериные дворы"
@@ -1424,3 +1424,13 @@
  tenet_eyes_of_gaia_name: "Глаза Геи"
  tenet_eyes_of_gaia_desc: "Каждое племя Бастет не имеет определенного предназначения, а пытается заполнить пробел, который не успели заполнить другие. Гару (и некоторые другие) называют их Глазами Геи за их любовь к тайным знаниям."
  doctrine_parameter_access_rush_schemes: "Вы получаете доступ к второстепенному решению «Ускорить происки»."
+ tenet_kind_warriors_name: "Добрые воины"
+ tenet_kind_warriors_desc: "Гурали - защитники и целители среди меняющихся пород и изначальные защитники Геи. Хотя они известны своей мягкостью и медлительностью, даже смерть не может помешать им исполнить свой долг."
+ doctrine_parameter_raiding_forbidden: "Нельзя устраивать [Concept('raid', 'набеги')|E]"
+
+ gaian_decree_name: "Наказ Геи"
+ special_doctrine_gaian_decree_name: "Гея, Мать всего сущего"
+ special_doctrine_gaian_decree_desc: "Гея наконец-то закрепилась среди человечества. Почитание Матери всего сущего уже распространяется, давая надежду на новую эру человечества."
+ holy_gaia_name: "Жрецы Геи"
+ special_doctrine_holy_gaia_name: "Стражи Геи"
+ special_doctrine_holy_gaia_desc: "Гару - благословенные защитники жизни, рассматриваемые как часть защиты Богом самого творения."
