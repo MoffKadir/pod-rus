@@ -1,155 +1,200 @@
 ﻿l_russian:
- tab_achievement: "#T Mod Achievements#!"
- ACHIEVEMENT: "Achievements: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_total_achievements_unlocked'), EmptyScope.ScriptValue('POD_total_achievements') ), '#P', '#medium' )] [EmptyScope.ScriptValue('POD_total_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_total_achievements')]#!"
- cross_save_tt: "#I You need to enable tutorials in the settings to make achievements cross save compatible!#!"
- POD_achievement_gained: "Achievement Gained"
- POD_hidden_achievement_gained: "Hidden Achievement Gained"
-  
- POD_very_easy_achievements_title: "Very Easy: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_very_easy_achievements_unlocked'), EmptyScope.ScriptValue('POD_very_easy_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_very_easy_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_very_easy_achievements_total')])#!"
- POD_easy_achievements_title: "Easy: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_easy_achievements_unlocked'), EmptyScope.ScriptValue('POD_easy_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_easy_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_easy_achievements_total')])#!"
- POD_medium_achievements_title: "Medium: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_medium_achievements_unlocked'), EmptyScope.ScriptValue('POD_medium_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_medium_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_medium_achievements_total')])#!"
- POD_hard_achievements_title: "Hard: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_hard_achievements_unlocked'), EmptyScope.ScriptValue('POD_hard_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_hard_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_hard_achievements_total')])#!"
- POD_very_hard_achievements_title: "Very Hard: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_very_hard_achievements_unlocked'), EmptyScope.ScriptValue('POD_very_hard_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_very_hard_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_very_hard_achievements_total')])#!"
- POD_hidden_achievements_title: "Hidden:"
- ##### Very Easy Achievements 
+ tab_achievement: "#T Достижения модификации#!"
+ ACHIEVEMENT: "Достижения: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_total_achievements_unlocked'), EmptyScope.ScriptValue('POD_total_achievements') ), '#P', '#medium' )] [EmptyScope.ScriptValue('POD_total_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_total_achievements')]#!"
+ cross_save_tt: "#I Вам нужно включить обучающие подсказки в настройках, чтобы достижения были совместимы между разными сохранениями!#!"
+ POD_achievement_gained: "Получено достижение"
+ POD_hidden_achievement_gained: "Получено скрытое достижение"
+
+ POD_very_easy_achievements_title: "Очень лёгкие: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_very_easy_achievements_unlocked'), EmptyScope.ScriptValue('POD_very_easy_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_very_easy_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_very_easy_achievements_total')])#!"
+ POD_easy_achievements_title: "Лёгкие: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_easy_achievements_unlocked'), EmptyScope.ScriptValue('POD_easy_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_easy_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_easy_achievements_total')])#!"
+ POD_medium_achievements_title: "Средние: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_medium_achievements_unlocked'), EmptyScope.ScriptValue('POD_medium_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_medium_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_medium_achievements_total')])#!"
+ POD_hard_achievements_title: "Сложные: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_hard_achievements_unlocked'), EmptyScope.ScriptValue('POD_hard_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_hard_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_hard_achievements_total')])#!"
+ POD_very_hard_achievements_title: "Очень сложные: [Select_CString( EqualTo_CFixedPoint( EmptyScope.ScriptValue('POD_very_hard_achievements_unlocked'), EmptyScope.ScriptValue('POD_very_hard_achievements_total') ), '#P', '#low' )] ([EmptyScope.ScriptValue('POD_very_hard_achievements_unlocked')]/[EmptyScope.ScriptValue('POD_very_hard_achievements_total')])#!"
+ POD_hidden_achievements_title: "Скрытые:"
+
+
+ ##### Very Easy Achievements
+
  lesson_achiev_vamptutorial: "$POD_achievement_gained$"
- lesson_achiev_vamptutorial_desc: "You obtained the achievement: $achiev_vamptutorial$"
- achiev_vamptutorial: "True Blood"
- achiev_vamptutorial_tt: "As a $POD_splat_vampire$, add someone with acute [resonance|E] to your [herd|E]."
+ lesson_achiev_vamptutorial_desc: "Вы получили достижение: $achiev_vamptutorial$"
+ achiev_vamptutorial: "Истинная кровь"
+ achiev_vamptutorial_tt: "Добавить в своё [Concept('herd', 'стадо')|E] персонажа с острейшим [Concept('resonance', 'резонансом')|E] за вампира."
 
  lesson_achiev_feratutorial: "$POD_achievement_gained$"
- lesson_achiev_feratutorial_desc: "You obtained the achievement: $achiev_feratutorial$"
- achiev_feratutorial: "Respect My Authority"
- achiev_feratutorial_tt: "As any shapeshifter, increase your Rank."
+ lesson_achiev_feratutorial_desc: "Вы получили достижение: $achiev_feratutorial$"
+ achiev_feratutorial: "Уважай мой авторитет"
+ achiev_feratutorial_tt: "Повысить свой ранг за любого перевёртыша."
+
  lesson_achiev_mummytutorial: "$POD_achievement_gained$"
- lesson_achiev_mummytutorial_desc: "You obtained the achievement: $achiev_mummytutorial$"
+ lesson_achiev_mummytutorial_desc: "Вы получили достижение: $achiev_mummytutorial$"
  achiev_mummytutorial: "DIY"
- achiev_mummytutorial_tt: "As a $POD_splat_mummy$, successfully craft something via the crafting menu."
+ achiev_mummytutorial_tt: "Успешно создать что-либо в меню ремесла за мумию."
+
  lesson_achiev_demontutorial: "$POD_achievement_gained$"
- lesson_achiev_demontutorial_desc: "You obtained the achievement: $achiev_demontutorial$"
- achiev_demontutorial: "Master of Puppets"
- achiev_demontutorial_tt: "As a $POD_splat_demon$, corrupt a ruler of at least [kingdom|E]-rank."
+ lesson_achiev_demontutorial_desc: "Вы получили достижение: $achiev_demontutorial$"
+ achiev_demontutorial: "Повелитель марионеток"
+ achiev_demontutorial_tt: "Развратить правителя не ниже [Concept('kingdom', 'королевского')|E] ранга за демона."
+
  lesson_achiev_coterietutorial: "$POD_achievement_gained$"
- lesson_achiev_coterietutorial_desc: "You obtained the achievement: $achiev_coterietutorial$"
- achiev_coterietutorial: "By Our Powers Combined..."
- achiev_coterietutorial_tt: "Found a new [coterie|E] and invite 4 other members."
+ lesson_achiev_coterietutorial_desc: "Вы получили достижение: $achiev_coterietutorial$"
+ achiev_coterietutorial: "Объединив наши силы..."
+ achiev_coterietutorial_tt: "Основать новую [Concept('coterie', 'котерию')|E] и пригласить в неё 4 других участников."
+
  lesson_achiev_heisttutorial: "$POD_achievement_gained$"
- lesson_achiev_heisttutorial_desc: "You obtained the achievement: $achiev_heisttutorial$"
- achiev_heisttutorial: "What's Yours Is Mine"
- achiev_heisttutorial_tt: "Steal at least 200 gold during a single [infiltration_mission|E]."
- ##### Easy Achievements 
+ lesson_achiev_heisttutorial_desc: "Вы получили достижение: $achiev_heisttutorial$"
+ achiev_heisttutorial: "Было ваше, стало наше"
+ achiev_heisttutorial_tt: "Украсть не менее 200 золотых в ходе одной #L миссии $pod_infiltration_mission|l$ия#!."
+
+
+ ##### Easy Achievements
+
  lesson_achiev_lucita: "$POD_achievement_gained$"
- lesson_achiev_lucita_desc: "You obtained the achievement: $achiev_lucita$"
- achiev_lucita: "A Killer and a Saint"
- achiev_lucita_tt: "As Lucita de Aragon, fulfill your ambitions by completing the "Lucita's Destiny" decision."
+ lesson_achiev_lucita_desc: "Вы получили достижение: $achiev_lucita$"
+ achiev_lucita: "Убийца и святой"
+ achiev_lucita_tt: "Реализовать амбиции Люситы де Арагон, приняв решение «Судьба Люситы»."
+
  lesson_achiev_mithras: "$POD_achievement_gained$"
- lesson_achiev_mithras_desc: "You obtained the achievement: $achiev_mithras$"
- achiev_mithras: "Snake Charmer"
- achiev_mithras_tt: "As Mithras, complete the "Assuming Control" decision after getting back with Kemintiri."
+ lesson_achiev_mithras_desc: "Вы получили достижение: $achiev_mithras$"
+ achiev_mithras: "Заклинатель змей"
+ achiev_mithras_tt: "Выполнить решение «Вернуть контроль» после воссоединения с Кеминтири за Митру."
+
  lesson_achiev_helena1: "$POD_achievement_gained$"
- lesson_achiev_helena1_desc: "You obtained the achievement: $achiev_helena1$"
- achiev_helena1: "A Fitting End for this Story"
- achiev_helena1_tt: "As either Helena or Menele, kill your Nemesis."
+ lesson_achiev_helena1_desc: "Вы получили достижение: $achiev_helena1$"
+ achiev_helena1: "Достойный конец этой истории"
+ achiev_helena1_tt: "Убить своего заклятого врага за Елену или Менелая."
+
  lesson_achiev_helena2: "$POD_achievement_gained$"
- lesson_achiev_helena2_desc: "You obtained the achievement: $achiev_helena2$"
- achiev_helena2: "A Fitting Start for this Fanfiction"
- achiev_helena2_tt: "As either Helena or Menele, become Lovers with your Nemesis."
+ lesson_achiev_helena2_desc: "Вы получили достижение: $achiev_helena2$"
+ achiev_helena2: "Достойное начало для этой выдумки"
+ achiev_helena2_tt: "Стать любовником своего заклятого врага за Елену или Менелая."
+
  lesson_achiev_camilla: "$POD_achievement_gained$"
- lesson_achiev_camilla_desc: "You obtained the achievement: $achiev_camilla$"
- achiev_camilla: "All Roads Lead To Me"
- achiev_camilla_tt: "As Camilla, upgrade any of the districts of Rome to the maximum."
- ##### Medium Achievements 
+ lesson_achiev_camilla_desc: "Вы получили достижение: $achiev_camilla$"
+ achiev_camilla: "Все дороги ведут ко мне"
+ achiev_camilla_tt: "Максимально улучшить любой из кварталов Рима за Камилла."
+
+
+ ##### Medium Achievements
+
  lesson_achiev_4thgenhunt: "$POD_achievement_gained$"
- lesson_achiev_4thgenhunt_desc: "You obtained the achievement: $achiev_4thgenhunt$"
- achiev_4thgenhunt: "Legendary Hero"
- achiev_4thgenhunt_tt: "As a $POD_splat_hunter$, kill a 4th [generation|E] $POD_splat_vampire$ of at least [kingdom|E]-rank with a Find Lair interaction."
+ lesson_achiev_4thgenhunt_desc: "Вы получили достижение: $achiev_4thgenhunt$"
+ achiev_4thgenhunt: "Легендарный герой"
+ achiev_4thgenhunt_tt: "Убить вампира четвёртого [Concept('vampgeneration', 'поколения')|E] не ниже [Concept('kingdom', 'королевского')|E] ранга с помощью взаимодействия «Найти логово» за охотника."
+
  lesson_achiev_visceratika: "$POD_achievement_gained$"
- lesson_achiev_visceratika_desc: "You obtained the achievement: $achiev_visceratika$"
- achiev_visceratika: "Stone Cold Stunner"
- achiev_visceratika_tt: "As either Virstania or Rock Lord, create a new [discipline|E]."
+ lesson_achiev_visceratika_desc: "Вы получили достижение: $achiev_visceratika$"
+ achiev_visceratika: "Потрясающий камень"
+ achiev_visceratika_tt: "Создать новую [Concept('discipline', 'дисциплину')|E] за Вирстанию или Каменного владыку."
+
  lesson_achiev_rusenko: "$POD_achievement_gained$"
- lesson_achiev_rusenko_desc: "You obtained the achievement: $achiev_rusenko$"
- achiev_rusenko: "Wait, Wrong Demon!"
- achiev_rusenko_tt: "As Bela Rusenko, be possessed by Drakonskyr at the end of the Sword of Nul event chain."
+ lesson_achiev_rusenko_desc: "Вы получили достижение: $achiev_rusenko$"
+ achiev_rusenko: "Постой, не тот демон!"
+ achiev_rusenko_tt: "Стать одержимым Драконскиром в конце цепочки событий «Меч Нула»."
+
  lesson_achiev_schrekt: "$POD_achievement_gained$"
- lesson_achiev_schrekt_desc: "You obtained the achievement: $achiev_schrekt$"
- achiev_schrekt: "No Canon Ending for Me"
- achiev_schrekt_tt: "As hunter Karl Schrekt, kill Lotharius with a Find Lair interaction."
+ lesson_achiev_schrekt_desc: "Вы получили достижение: $achiev_schrekt$"
+ achiev_schrekt: "Никакой каноничной концовки для меня"
+ achiev_schrekt_tt: "Убить Лотария с помощью взаимодействия «Найти логово» за охотника Карла Шректа."
+
  lesson_achiev_javaniel: "$POD_achievement_gained$"
- lesson_achiev_javaniel_desc: "You obtained the achievement: $achiev_javaniel$"
- achiev_javaniel: "The Truth about Saulot?"
- achiev_javaniel_tt: "Using the Ivory Tablets, Javaniel's journal and key, learn the truth about Saulot... or one part of it, at least."
+ lesson_achiev_javaniel_desc: "Вы получили достижение: $achiev_javaniel$"
+ achiev_javaniel: "Правда о Саулоте?"
+ achiev_javaniel_tt: "Используя Скрижаль из слоновой кости, дневник и ключ Джаваниэля, узнать правду о Саулоте... или, по крайней мере, одну её часть."
+
  lesson_achiev_myprecious: "$POD_achievement_gained$"
- lesson_achiev_myprecious_desc: "You obtained the achievement: $achiev_myprecious$"
- achiev_myprecious: "My Precious"
- achiev_myprecious_tt: "Playing as a non-Mummy, be soulmates with a $POD_splat_mummy$ and have them craft a Philosopher's Stone for you."
+ lesson_achiev_myprecious_desc: "Вы получили достижение: $achiev_myprecious$"
+ achiev_myprecious: "Моя прелесть"
+ achiev_myprecious_tt: "Стать родственной душой с мумией и попросить её изготовить для вас философский камень за не-мумию."
+
  lesson_achiev_aristotle: "$POD_achievement_gained$"
- lesson_achiev_aristotle_desc: "You obtained the achievement: $achiev_aristotle$"
- achiev_aristotle: "Ambition Erudition"
- achiev_aristotle_tt: "Employ Aristotle as your Court Tutor."
- ##### Hard Achievements 
+ lesson_achiev_aristotle_desc: "Вы получили достижение: $achiev_aristotle$"
+ achiev_aristotle: "Амбициозная эрудиция"
+ achiev_aristotle_tt: "Назначить Аристотеля придворным наставником."
+
+
+ ##### Hard Achievements
+
  #  lesson_achiev_grail: "$POD_achievement_gained$"
- #  lesson_achiev_grail_desc: "You obtained the achievement: $achiev_grail$"
+ #  lesson_achiev_grail_desc: "Вы получили достижение: $achiev_grail$"
  #  achiev_grail: "The Latest Crusade"
  #  achiev_grail_tt: "As Montrovant, successfully drink from the Grail."
+
  lesson_achiev_alexander: "$POD_achievement_gained$"
- lesson_achiev_alexander_desc: "You obtained the achievement: $achiev_alexander$"
- achiev_alexander: "Somehow, he has returned"
- achiev_alexander_tt: "In the Dark Ages: Vampire bookmark, as Alexander, end the French struggle using the France Restored decision."
+ lesson_achiev_alexander_desc: "Вы получили достижение: $achiev_alexander$"
+ achiev_alexander: "Каким-то образом он вернулся"
+ achiev_alexander_tt: "В закладке Тёмные века: Вампиры» завершить французскую борьбу, используя решение «Восстановить Францию» за Александра."
+
  lesson_achiev_nomnom: "$POD_achievement_gained$"
- lesson_achiev_nomnom_desc: "You obtained the achievement: $achiev_nomnom$"
- achiev_nomnom: "Ate My Way Up The Ladder"
- achiev_nomnom_tt: "Starting as a 13th [generation|E] $POD_splat_vampire$, [diablerize|E] your way to the 4th generation."
+ lesson_achiev_nomnom_desc: "Вы получили достижение: $achiev_nomnom$"
+ achiev_nomnom: "Я прогрызу свой путь вверх по лестнице"
+ achiev_nomnom_tt: "Стать представителем четвёртого [Concept('vampgeneration', 'поколения')|E] через #L $pod_diablerize|l$зацию#!, начав за вампира тринадцатого поколения."
+
  lesson_achiev_noddist: "$POD_achievement_gained$"
- lesson_achiev_noddist_desc: "You obtained the achievement: $achiev_noddist$"
- achiev_noddist: "I Dream Of The First Times"
- achiev_noddist_tt: "As a $POD_splat_vampire$, adopt Enochian [culture|E] by assembling the Book of Nod."
+ lesson_achiev_noddist_desc: "Вы получили достижение: $achiev_noddist$"
+ achiev_noddist: "Я мечтаю о начале времён"
+ achiev_noddist_tt: "Принять енохианскую [Concept('culture', 'культуру')|E], собрав Книгу Нод за вампира."
+
  lesson_achiev_elohim: "$POD_achievement_gained$"
- lesson_achiev_elohim_desc: "You obtained the achievement: $achiev_elohim$"
- achiev_elohim: "Stairway to Heaven"
- achiev_elohim_tt: "Finish the $POD_splat_demon$ decisions by achieving the secret Redemption ending."
+ lesson_achiev_elohim_desc: "Вы получили достижение: $achiev_elohim$"
+ achiev_elohim: "Лестница в небеса"
+ achiev_elohim_tt: "Завершить решения демонов, получив секретную концовку «Искупление»."
+
  lesson_achiev_lamb: "$POD_achievement_gained$"
- lesson_achiev_lamb_desc: "You obtained the achievement: $achiev_lamb$"
- achiev_lamb: "Nah, I'd Win"
- achiev_lamb_tt: "Be killed by the Lamb during the Vatican [journey|E]."
+ lesson_achiev_lamb_desc: "Вы получили достижение: $achiev_lamb$"
+ achiev_lamb: "Не, я бы победил"
+ achiev_lamb_tt: "Погибнуть от руки Агнца во время [Concept('journey', 'странствия')|E] Ватикана."
+
  lesson_achiev_qawiyya: "$POD_achievement_gained$"
- lesson_achiev_qawiyya_desc: "You obtained the achievement: $achiev_qawiyya$"
- achiev_qawiyya: "Make Peace, not War"
- achiev_qawiyya_tt: "As Qawiyya el-Ghaduba, achieve Golconda."
+ lesson_achiev_qawiyya_desc: "Вы получили достижение: $achiev_qawiyya$"
+ achiev_qawiyya: "Занимайтесь миром, а не войной"
+ achiev_qawiyya_tt: "Достигнуть Голконды за Кавийю эль-Гадуба."
+
  lesson_achiev_horus: "$POD_achievement_gained$"
- lesson_achiev_horus_desc: "You obtained the achievement: $achiev_horus$"
- achiev_horus: "Gods of Egypt II"
- achiev_horus_tt: "As Horus, achieve your vengeance by completing "The Avenger" decision."
+ lesson_achiev_horus_desc: "Вы получили достижение: $achiev_horus$"
+ achiev_horus: "Боги Египта II"
+ achiev_horus_tt: "Отомстить в роли Гора, выполнив решение «Мститель»."
+
  lesson_achiev_simba: "$POD_achievement_gained$"
- lesson_achiev_simba_desc: "You obtained the achievement: $achiev_simba$"
- achiev_simba: "The True Lion King"
- achiev_simba_tt: "As a Simba, unite the Bastet Nation."
- ##### Very Hard Achievements 
+ lesson_achiev_simba_desc: "Вы получили достижение: $achiev_simba$"
+ achiev_simba: "Истинный Король-лев"
+ achiev_simba_tt: "Объединить нацию Бастет за симба."
+
+
+ ##### Very Hard Achievements
+
  lesson_achiev_kemintiri: "$POD_achievement_gained$"
- lesson_achiev_kemintiri_desc: "You obtained the achievement: $achiev_kemintiri$"
- achiev_kemintiri: "Isis' Revenge"
- achiev_kemintiri_tt: "As Kemintiri, achieve her unique character content by choosing the redemption path, then successfully diablerize Set during the Antediluvian Hunt."
+ lesson_achiev_kemintiri_desc: "Вы получили достижение: $achiev_kemintiri$"
+ achiev_kemintiri: "Месть Исиды"
+ achiev_kemintiri_tt: "Выполнить уникальный контент Кеминтири, выбрав путь искупления, а затем удачно диаблеризировать Сета в ходе Охоты на Допотопных."
+
  lesson_achiev_baybars: "$POD_achievement_gained$"
- lesson_achiev_baybars_desc: "You obtained the achievement: $achiev_baybars$"
- achiev_baybars: "Very Alternate History"
- achiev_baybars_tt: "Defeat and imprison Baybars during his purge of the supernatural in Egypt."
+ lesson_achiev_baybars_desc: "Вы получили достижение: $achiev_baybars$"
+ achiev_baybars: "Очень альтернативная история"
+ achiev_baybars_tt: "Победить и заключить в темницу Бейбарса во время его чистки сверхъестественных существ в Египте."
+
  lesson_achiev_santa: "$POD_achievement_gained$"
- lesson_achiev_santa_desc: "You obtained the achievement: $achiev_santa$"
- achiev_santa: "Clausewitz Engine"
- achiev_santa_tt: "As Ilmarinen, become Santa Claus."
- # Congratulations! You found the hidden achievements. 
- # Consider this a reward for reading the code. It'll be our little secret. 
- # Since these are insanely difficult, they won't count against your number of completed achievements. 
+ lesson_achiev_santa_desc: "Вы получили достижение: $achiev_santa$"
+ achiev_santa: "Движок Clausewitz"
+ achiev_santa_tt: "Стать Санта Клаусом за Ильмаринен."
+
+
+
+ # Congratulations! You found the hidden achievements.
+ # Consider this a reward for reading the code. It'll be our little secret.
+ # Since these are insanely difficult, they won't count against your number of completed achievements.
+
  lesson_achiev_wolfmas: "$POD_hidden_achievement_gained$"
- lesson_achiev_wolfmas_desc: "You obtained the achievement: $achiev_wolfmas$"
- achiev_wolfmas: "Gaia's Secret Plan"
- achiev_wolfmas_tt: "Become Santa Claus as a Werewolf. (Cannot be unlocked if you used the Ruler Designer)"
+ lesson_achiev_wolfmas_desc: "Вы получили достижение: $achiev_wolfmas$"
+ achiev_wolfmas: "Тайный план Геи"
+ achiev_wolfmas_tt: "Стать Санта Клаусом за оборотня. (Невозможно открыть, если вы использовали редактор персонажа)"
+
  lesson_achiev_absalon: "$POD_hidden_achievement_gained$"
- lesson_achiev_absalon_desc: "You obtained the achievement: $achiev_absalon$"
- achiev_absalon: "Getting Crowded In Here"
- achiev_absalon_tt: "As Absalon, be possessed by Svantevit, Shemaziel, Drakonskyr, a Bane, and an Antediluvian at the same time."
- achiev_absalon_button: "We Understand"
+ lesson_achiev_absalon_desc: "Вы получили достижение: $achiev_absalon$"
+ achiev_absalon: "Здесь становится тесно"
+ achiev_absalon_tt: "Стать одновременно одержимым Свантевитом, Шемазиэль, Драконскиром, Бэйном и Допотопным за Абсалона."
+ achiev_absalon_button: "Мы понимаем"
+
  lesson_achiev_redlist: "$POD_hidden_achievement_gained$"
- lesson_achiev_redlist_desc: "You obtained the achievement: $achiev_redlist$"
- achiev_redlist: "Bragging Rights"
- achiev_redlist_tt: "With the Inquisition set to \"Apocalyptic\", survive the Vatican Journey, finish the Destroy the Masquerade objective before the Council of Thorns, and become a founder of the Camarilla."
+ lesson_achiev_redlist_desc: "Вы получили достижение: $achiev_redlist$"
+ achiev_redlist: "Хвастовство"
+ achiev_redlist_tt: "В условиях апокалиптичной Инквизиции выжить в ходе странствия Ватикана, выполнить задачу «Уничтожить Маскарад» до Торнского совета и стать основателем Камарильи."
