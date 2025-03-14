@@ -65,6 +65,12 @@
  setting_pod_numina_on_birth_unrestricted: "#high @haight_icon! Не ограничено#!"
  setting_pod_numina_on_birth_unrestricted_desc: "Все персонажи могут получить свойства «[GetTrait('lament').GetName(GetNullCharacter)]» или «[GetTrait('psychic').GetName(GetNullCharacter)]» при рождении."
 
+ rule_pod_sorcery_availability: "$POD_gamerule$ Availability of #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Sorcery#!#!"
+ setting_pod_sorcery_availability_restricted: "Restricted"
+ setting_pod_sorcery_availability_restricted_desc: "Only $POD_splat_bastet$ and human-like $pod_splats$ like $POD_splat_hunter_plural$, $POD_splat_ghoul_plural$ or [GetTrait('kinfolk').GetName(GetNullCharacter)] can learn #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Sorcery#!#!.\nUpon the [Embrace|E], it turns into [GetTrait('bloodsorcery').GetName(GetNullCharacter)]."
+ setting_pod_sorcery_availability_unrestricted: "#high @haight_icon! Unrestricted#!"
+ setting_pod_sorcery_availability_unrestricted_desc: "Any [splat|E] can learn #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Sorcery#!#!.\nThe trait is kept after the [Embrace|E]."
+
  rule_pod_splat_mixing: "$POD_gamerule$ Смешение видов"
  setting_pod_splat_mixing_default: "По умолчанию"
  setting_pod_splat_mixing_default_desc: "Стандартные ограничения на смешение #L $pod_splats|l$ов#!."
@@ -283,12 +289,6 @@
  setting_pod_levies_default_desc: "Армии в основном состоят из ополчения, как в оригинальной CK3."
  setting_pod_levies_disabled: "#high Без ополчения#!"
  setting_pod_levies_disabled_desc: "Все персонажи получают модификатор [GetModifier('pod_no_levies_modifier').GetNameWithTooltip].\n\nМожет потребоваться подождать 1 день в игре, чтобы модификатор был применен правильно. Ополчение по-прежнему будут присутствовать в составе войск наёмников или особых войск."
-
- rule_pod_medieval_monuments: "$POD_gamerule$ #clickable Экспериментально:#! Medieval Monuments"
- setting_pod_medieval_monuments_disabled: "Отключено"
- setting_pod_medieval_monuments_disabled_desc: "Новые особые постройки из DLC Medieval Monuments не будут присутствовать на карте."
- setting_pod_medieval_monuments_enabled: "#high Включено#!"
- setting_pod_medieval_monuments_enabled_desc: "На карте появятся новые особые постройки из DLC Medieval Monuments. Обратите внимание, что они ещё не сбалансированы и не протестированы.\n\nВы должны включить это игровое правило до загрузки карты, иначе оно не вступит в силу."
 
  rule_pod_sorcery_6th_perk_requirements: "$POD_gamerule$ Шестое достоинство в чародействе"
  setting_pod_sorcery_6th_perk_requirements_always_unlocked: "#high Всегда открыто#!"
