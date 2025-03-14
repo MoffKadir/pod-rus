@@ -65,11 +65,11 @@
  setting_pod_numina_on_birth_unrestricted: "#high @haight_icon! Не ограничено#!"
  setting_pod_numina_on_birth_unrestricted_desc: "Все персонажи могут получить свойства «[GetTrait('lament').GetName(GetNullCharacter)]» или «[GetTrait('psychic').GetName(GetNullCharacter)]» при рождении."
 
- rule_pod_sorcery_availability: "$POD_gamerule$ Availability of #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Sorcery#!#!"
- setting_pod_sorcery_availability_restricted: "Restricted"
- setting_pod_sorcery_availability_restricted_desc: "Only $POD_splat_bastet$ and human-like $pod_splats$ like $POD_splat_hunter_plural$, $POD_splat_ghoul_plural$ or [GetTrait('kinfolk').GetName(GetNullCharacter)] can learn #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Sorcery#!#!.\nUpon the [Embrace|E], it turns into [GetTrait('bloodsorcery').GetName(GetNullCharacter)]."
- setting_pod_sorcery_availability_unrestricted: "#high @haight_icon! Unrestricted#!"
- setting_pod_sorcery_availability_unrestricted_desc: "Any [splat|E] can learn #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Sorcery#!#!.\nThe trait is kept after the [Embrace|E]."
+ rule_pod_sorcery_availability: "$POD_gamerule$ Доступность #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейства#!#!"
+ setting_pod_sorcery_availability_restricted: "Ограничено"
+ setting_pod_sorcery_availability_restricted_desc: "Только бастет и человекоподобные виды, такие как охотники, гули или [GetTrait('kinfolk').GetName(GetNullCharacter)] могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nПосле [Concept('Embrace', 'Объятий')|E] оно превращается в [GetTrait('bloodsorcery').GetName(GetNullCharacter)|l]."
+ setting_pod_sorcery_availability_unrestricted: "#high @haight_icon! Без ограничений#!"
+ setting_pod_sorcery_availability_unrestricted_desc: "Все [Concept('splat', 'виды')|E] могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nСвойство сохраняется после [Concept('Embrace', 'Объятий')|E]."
 
  rule_pod_splat_mixing: "$POD_gamerule$ Смешение видов"
  setting_pod_splat_mixing_default: "По умолчанию"
