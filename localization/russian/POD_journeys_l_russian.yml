@@ -896,62 +896,62 @@
  realm_mastery_prop_travel_desc: "$realm_mastery_generic_travel_desc$"
  realm_mastery_prop_travel_confirm: "$POD_journey_travel_confirm_realm_mastery$"
 
- realm_mastery_nature_name: "Achieve [GetTrait('realm_nature').GetName(GetNullCharacter)]"
- realm_mastery_nature_desc: "The #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L Nature Realm#!#! is the $pod_fae_realm$ of natural objects. A $POD_splat_fae$ with poor knowledge of this $pod_fae_realm$ can't affect natural phenomena at all. Mastery is required if one wants to cast $pod_cantrips$ that create natural disasters."
- realm_mastery_nature_effects: "Вы отправитесь во фригольд и попросите [Select_CString( DidShatteringHappen, 'Потерянных', 'Благородных' )] даровать вам знания о сфере #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L Nature#!#! $pod_fae_realm$. В случае успеха вы получите [Concept('trait', 'свойство')|E] «[GetTrait('realm_nature').GetName(GetNullCharacter)]», которое позволит вам разблокировать последнее достоинство [Concept('lifestyle', 'образа жизни')|E] #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L Nature#!#! [lifestyle|E]."
- realm_mastery_nature_isvalid: "$EFFECT_LIST_BULLET$You have the [GetPerk('realm_nature_4_perk').GetName(GetPlayer)] [perk|E]\n$realm_mastery_generic_isvalid$"
- realm_mastery_nature_tt: "Meteors, storms and floods: Obey my command!"
- realm_mastery_nature_planning_title: "The Quest for Realm Nature Mastery"
- realm_mastery_nature_planning_desc: "Хотя я [Select_CString(GetPlayer.IsFemale, 'пыталась', 'пытался' )] освободить своё воображение, оно всё ещё ограничено в некоторых аспектах.\n\nЕсли я хочу получить полное представление о #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L Nature Realm#!#!, мне придётся обратиться за помощью к [Select_CString( DidShatteringHappen, 'Потерянным', 'Благородным' )], которые овладели им.\n\nЯ [Select_CString(GetPlayer.IsFemale, 'готова', 'готов' )] выступить в одном из фригольдов."
+ realm_mastery_nature_name: "Достичь #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L мастерства сферы Природы#!#!"
+ realm_mastery_nature_desc: "#TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L Королевство Природы#!#! - это сфера природных объектов. Фея с плохим знанием этого королевства не может влиять на природные явления. Мастерство требуется, если вы хотите накладывать #L $pod_cantrips|l$ия#!, создающие природные катастрофы."
+ realm_mastery_nature_effects: "Вы отправитесь во фригольд и попросите [Select_CString( DidShatteringHappen, 'Потерянных', 'Благородных' )] даровать вам знания о сфере #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L Природы#!#!. В случае успеха вы получите [Concept('trait', 'свойство')|E] «[GetTrait('realm_nature').GetName(GetNullCharacter)]», которое позволит вам разблокировать последнее достоинство [Concept('lifestyle', 'образа жизни')|E] #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L Природа#!#!."
+ realm_mastery_nature_isvalid: "$EFFECT_LIST_BULLET$У вас есть [Concept('perk', 'достоинство')|E] «[GetPerk('realm_nature_4_perk').GetName(GetPlayer)]»\n$realm_mastery_generic_isvalid$"
+ realm_mastery_nature_tt: "Метеоры, бури и наводнения: Повинуйтесь моей воле!"
+ realm_mastery_nature_planning_title: "В поисках мастерства сферы Природы"
+ realm_mastery_nature_planning_desc: "Хотя я [Select_CString(GetPlayer.IsFemale, 'пыталась', 'пытался' )] освободить своё воображение, оно всё ещё ограничено в некоторых аспектах.\n\nЕсли я хочу получить полное представление о #TOOLTIP:GAME_TRAIT,realm_nature,[GetNullCharacter] #L сфере Природы#!#!, мне придётся обратиться за помощью к [Select_CString( DidShatteringHappen, 'Потерянным', 'Благородным' )], которые овладели им.\n\nЯ [Select_CString(GetPlayer.IsFemale, 'готова', 'готов' )] выступить в одном из фригольдов."
  realm_mastery_nature_planning_confirm: "$POD_journey_planning_confirm_default$"
  realm_mastery_nature_planning_decline: "$POD_journey_planning_decline_default$"
  realm_mastery_nature_travel_title: "$POD_journey_travel_title_realm_mastery$"
  realm_mastery_nature_travel_desc: "$realm_mastery_generic_travel_desc$"
  realm_mastery_nature_travel_confirm: "$POD_journey_travel_confirm_realm_mastery$"
- 
- realm_mastery_scene_name: "Achieve [GetTrait('realm_scene').GetName(GetNullCharacter)]"
- realm_mastery_scene_desc: "The #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L Scene Realm#!#! is the $pod_fae_realm$ of space. A $POD_splat_fae$ with poor knowledge of this $pod_fae_realm$ can only cast $pod_cantrips$ on targets in the same location as them. Mastery is required if one wants to cast $pod_cantrips$ over global distances."
- realm_mastery_scene_effects: "Вы отправитесь во фригольд и попросите [Select_CString( DidShatteringHappen, 'Потерянных', 'Благородных' )] даровать вам знания о сфере #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L Scene#!#! $pod_fae_realm$. В случае успеха вы получите [Concept('trait', 'свойство')|E] «[GetTrait('realm_scene').GetName(GetNullCharacter)]», которое позволит вам разблокировать последнее достоинство [Concept('lifestyle', 'образа жизни')|E] #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L Scene#!#! [lifestyle|E]."
- realm_mastery_scene_isvalid: "$EFFECT_LIST_BULLET$You have the [GetPerk('realm_scene_4_perk').GetName(GetPlayer)] [perk|E]\n$realm_mastery_generic_isvalid$"
- realm_mastery_scene_tt: "My magic will engulf the whole world."
- realm_mastery_scene_planning_title: "The Quest for Realm Scene Mastery"
- realm_mastery_scene_planning_desc: "Хотя я [Select_CString(GetPlayer.IsFemale, 'пыталась', 'пытался' )] освободить своё воображение, оно всё ещё ограничено в некоторых аспектах.\n\nЕсли я хочу получить полное представление о #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L Scene Realm#!#!, мне придётся обратиться за помощью к [Select_CString( DidShatteringHappen, 'Потерянным', 'Благородным' )], которые овладели им.\n\nЯ [Select_CString(GetPlayer.IsFemale, 'готова', 'готов' )] выступить в одном из фригольдов."
+
+ realm_mastery_scene_name: "Достичь #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L мастерства сферы Сцены#!#!"
+ realm_mastery_scene_desc: "#TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L Королевство Сцены#!#! - это сфера пространства. Фея с плохим знанием этого королевства может накладывать #L $pod_cantrips|l$ия#! только на цели, находящиеся в том же месте. Если вы хотите накладывать #L $pod_cantrips|l$ия#! в глобальных расстояниях, требуется мастерство."
+ realm_mastery_scene_effects: "Вы отправитесь во фригольд и попросите [Select_CString( DidShatteringHappen, 'Потерянных', 'Благородных' )] даровать вам знания о сфере #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L Сцены#!#!. В случае успеха вы получите [Concept('trait', 'свойство')|E] «[GetTrait('realm_scene').GetName(GetNullCharacter)]», которое позволит вам разблокировать последнее достоинство [Concept('lifestyle', 'образа жизни')|E] #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L Сцена#!#!."
+ realm_mastery_scene_isvalid: "$EFFECT_LIST_BULLET$У вас есть [Concept('perk', 'достоинство')|E] «[GetPerk('realm_scene_4_perk').GetName(GetPlayer)]»\n$realm_mastery_generic_isvalid$"
+ realm_mastery_scene_tt: "Моя магия охватит весь мир."
+ realm_mastery_scene_planning_title: "В поисках мастерства сферы Сцены"
+ realm_mastery_scene_planning_desc: "Хотя я [Select_CString(GetPlayer.IsFemale, 'пыталась', 'пытался' )] освободить своё воображение, оно всё ещё ограничено в некоторых аспектах.\n\nЕсли я хочу получить полное представление о #TOOLTIP:GAME_TRAIT,realm_scene,[GetNullCharacter] #L королевстве Сцены#!#!, мне придётся обратиться за помощью к [Select_CString( DidShatteringHappen, 'Потерянным', 'Благородным' )], которые овладели им.\n\nЯ [Select_CString(GetPlayer.IsFemale, 'готова', 'готов' )] выступить в одном из фригольдов."
  realm_mastery_scene_planning_confirm: "$POD_journey_planning_confirm_default$"
  realm_mastery_scene_planning_decline: "$POD_journey_planning_decline_default$"
  realm_mastery_scene_travel_title: "$POD_journey_travel_title_realm_mastery$"
  realm_mastery_scene_travel_desc: "$realm_mastery_generic_travel_desc$"
  realm_mastery_scene_travel_confirm: "$POD_journey_travel_confirm_realm_mastery$"
- 
- realm_mastery_time_name: "Achieve [GetTrait('realm_time').GetName(GetNullCharacter)]"
- realm_mastery_time_desc: "The #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L Time Realm#!#! is the $pod_fae_realm$ of temporal understanding. A $POD_splat_fae$ with poor knowledge of this $pod_fae_realm$ will find their $pod_cantrips$ fizzle out in a matter of months. Mastery is required if one wants to cast $pod_cantrips$ that last forever."
- realm_mastery_time_effects: "Вы отправитесь во фригольд и попросите [Select_CString( DidShatteringHappen, 'Потерянных', 'Благородных' )] даровать вам знания о сфере #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L Time#!#! $pod_fae_realm$. В случае успеха вы получите [Concept('trait', 'свойство')|E] «[GetTrait('realm_time').GetName(GetNullCharacter)]», которое позволит вам разблокировать последнее достоинство [Concept('lifestyle', 'образа жизни')|E] #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L Time#!#! [lifestyle|E]."
- realm_mastery_time_isvalid: "$EFFECT_LIST_BULLET$You have the [GetPerk('realm_time_4_perk').GetName(GetPlayer)] [perk|E]\n$realm_mastery_generic_isvalid$"
- realm_mastery_time_tt: "Never-ending Glamour."
- realm_mastery_time_planning_title: "The Quest for Realm Time Mastery"
- realm_mastery_time_planning_desc: "Хотя я [Select_CString(GetPlayer.IsFemale, 'пыталась', 'пытался' )] освободить своё воображение, оно всё ещё ограничено в некоторых аспектах.\n\nЕсли я хочу получить полное представление о #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L Time Realm#!#!, мне придётся обратиться за помощью к [Select_CString( DidShatteringHappen, 'Потерянным', 'Благородным' )], которые овладели им.\n\nЯ [Select_CString(GetPlayer.IsFemale, 'готова', 'готов' )] выступить в одном из фригольдов."
+
+ realm_mastery_time_name: "Достичь #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L мастерства сферы Времени#!#!"
+ realm_mastery_time_desc: "#TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L Королевство Времени#!#! - это сфера временного понимания. Если фея плохо разбирается в этом королевстве, то её #L $pod_cantrips|l$ия#! сходят на нет в считанные месяцы. Мастерство требуется, чтобы наложенные #L $pod_cantrips|l$ия#! длились вечно."
+ realm_mastery_time_effects: "Вы отправитесь во фригольд и попросите [Select_CString( DidShatteringHappen, 'Потерянных', 'Благородных' )] даровать вам знания о сфере #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L Времени#!#!. В случае успеха вы получите [Concept('trait', 'свойство')|E] «[GetTrait('realm_time').GetName(GetNullCharacter)]», которое позволит вам разблокировать последнее достоинство [Concept('lifestyle', 'образа жизни')|E] #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L Время#!#!."
+ realm_mastery_time_isvalid: "$EFFECT_LIST_BULLET$У вас есть [Concept('perk', 'достоинство')|E] «[GetPerk('realm_time_4_perk').GetName(GetPlayer)]»\n$realm_mastery_generic_isvalid$"
+ realm_mastery_time_tt: "Нескончаемый гламур."
+ realm_mastery_time_planning_title: "В поисках мастерства сферы Времени"
+ realm_mastery_time_planning_desc: "Хотя я [Select_CString(GetPlayer.IsFemale, 'пыталась', 'пытался' )] освободить своё воображение, оно всё ещё ограничено в некоторых аспектах.\n\nЕсли я хочу получить полное представление о #TOOLTIP:GAME_TRAIT,realm_time,[GetNullCharacter] #L сфере Времени#!#!, мне придётся обратиться за помощью к [Select_CString( DidShatteringHappen, 'Потерянным', 'Благородным' )], которые овладели им.\n\nЯ [Select_CString(GetPlayer.IsFemale, 'готова', 'готов' )] выступить в одном из фригольдов."
  realm_mastery_time_planning_confirm: "$POD_journey_planning_confirm_default$"
  realm_mastery_time_planning_decline: "$POD_journey_planning_decline_default$"
  realm_mastery_time_travel_title: "$POD_journey_travel_title_realm_mastery$"
  realm_mastery_time_travel_desc: "$realm_mastery_generic_travel_desc$"
  realm_mastery_time_travel_confirm: "$POD_journey_travel_confirm_realm_mastery$"
- 
- 
- find_artifact_name: "Search for an Artifact"
- find_artifact_desc: "Select an [artifact|E] to search for."
- find_artifact_tt: "This treasure should belong to me."
- 
- assemble_artifact_name: "Assemble an Artifact"
- assemble_artifact_desc: "Select an [artifact|E] to search for."
- assemble_artifact_tt: "Knowledge has its price."
- assemble_artifact_planning_title: "Another Piece of the Puzzle"
- assemble_artifact_planning_desc: "At last, my scouts have returned to me with good news. They found out where another chapter of the Book of Nod can be found. Retrieving it would bring me one step closer to completing the volume.\n\nI can only hope that whoever currently holds it can be... persuaded to part with it."
+
+
+ find_artifact_name: "Поиск артефакта"
+ find_artifact_desc: "Выбрать [Concept('artifact', 'артефакт')|E] для поиска."
+ find_artifact_tt: "Это сокровище должно принадлежать мне."
+
+ assemble_artifact_name: "Сборка артефакта"
+ assemble_artifact_desc: "Выбрать [Concept('artifact', 'артефакт')|E] для поиска."
+ assemble_artifact_tt: "Знания имеют свою цену."
+ assemble_artifact_planning_title: "Еще один кусочек головоломки"
+ assemble_artifact_planning_desc: "Наконец-то мои разведчики вернулись ко мне с хорошими новостями. Они выяснили, где можно найти еще одну главу Книги Нод. Получив ее, я еще на шаг приближусь к завершению книги.\n\nОстаётся только надеяться, что того, у кого она сейчас находится, удастся... убедить расстаться с ней."
  assemble_artifact_planning_confirm: "$POD_journey_planning_confirm_default$"
  assemble_artifact_planning_decline: "$POD_journey_planning_decline_default$"
  assemble_artifact_travel_title: ""
  assemble_artifact_travel_desc: ""
  assemble_artifact_travel_confirm: ""
 
- golconda_1_name: "Научиться управлять своим Зверем" #ТУТ
+ golconda_1_name: "Научиться управлять своим Зверем"
  golconda_1_desc: "Ходят слухи о вампирах, которым удалось навсегда побороть #L $pod_the_beast$я#!, достигнув состояния, когда им больше не нужно пить уровь. Это звучит слишком хорошо, чтобы быть правдой, но если есть ответы, их стоит найти."
  golconda_1_effects: "Вы узнаете, где находится учитель, который может наставить вас на путь истинный."
  golconda_1_tt: "Возможен ли внутренний покой?"
@@ -1016,84 +1016,97 @@
  provoke_vatican_caelestius_planning_decline: "$provoke_vatican_planning_decline$"
  provoke_vatican_caelestius_travel_title: "$provoke_vatican_travel_title$"
  provoke_vatican_caelestius_travel_desc: "$provoke_vatican_travel_desc$"
- provoke_vatican_caelestius_travel_confirm: "$provoke_vatican_travel_confirm$" #ТУТ
+ provoke_vatican_caelestius_travel_confirm: "$provoke_vatican_travel_confirm$"
 
- siochain_1_name: "The Legend of Balance: Grey World"
- siochain_1_desc: "Whether through deliberate study or the impending horror of death, you've come to a realization. Perfect balance between your mortal and your faerie selves is possible. Getting there, however, means gaining a full understanding of both Glamour and Banality. An uphill battle, if there ever was one."
- siochain_1_effects: "You will meditate upon Banality, and come one step closer to perfection."
- siochain_1_isvalid: "$EFFECT_LIST_BULLET$You have the [GetPerk('realm_fae_5_perk').GetName(GetPlayer)] [perk|E]"
- siochain_1_tt: "The Autumn World holds the answers."
- siochain_1_planning_title: "Seeking Balance"
- siochain_1_planning_desc: "I've immersed myself in the world of mortals, strangled by their stifling rules and rigid rituals.\n\nEven as Banality would threaten to choke me, I took it as a lesson. And there have been many of these lessons, as of late.\n\nHas it been enough?"
- siochain_1_planning_confirm: "Time to think upon what I've learned."
- siochain_1_planning_decline: "It's not time yet."
- siochain_2_name: "The Legend of Balance: Colorful World"
- siochain_2_desc: "I've immersed myself in Banality and came out unscathed, but that was only the first step. Next, I'll need to get in touch with my faerie self."
- siochain_2_effects: "You will meditate upon Glamour, and come one step closer to perfection."
- #siochain_2_isvalid: 
- siochain_2_tt: "Questions that only the Dreaming can answer."
- siochain_2_planning_title: "Seeking Balance"
- siochain_2_planning_desc: "I've meditated while submerged in storms of Glamour. I've let the raw stuff of the Dreaming drench me until there was nothing of me left, no separation, no inside and outside.\n\nCan this chaos crystallize into real understanding?"
- siochain_2_planning_confirm: "Time to think upon what I've learned."
- siochain_2_planning_decline: "It's not time yet."
- siochain_3_name: "The Legend of Balance: Confluence of Worlds"
- siochain_3_desc: "There seems to be no way to reconcile my understanding of Glamour and Banality. They're opposites. Obviously. That's just common sense. But when has common sense ever stopped a Changeling?"
- siochain_3_effects: "You will attempt the risky endeavor of merging Banality and Glamour within yourself."
- siochain_3_isvalid: "$EFFECT_LIST_BULLET$You are not [GetModifier('POD_disconected_from_dreaming').GetNameWithTooltip]"
- siochain_3_tt: "Finding balance among the contradictions."
- siochain_3_planning_title: "Achieving Balance"
- siochain_3_planning_desc: "Banality and Glamour go together like oil and water. No one has succeeded at mixing them.\n\nYet.\n\nI've prepared for this long enough. Practice will only get me so far. I need to take the plunge."
- siochain_3_planning_confirm: "It's now or never."
- siochain_3_planning_decline: "This sounds stressful, I'll do it some other time."
-  ############################# 
-  ##### Targeted Journeys ##### 
+ siochain_1_name: "Легенда равновесия: Серый мир"
+ siochain_1_desc: "Благодаря целенаправленному обучению или надвигающемуся ужасу смерти, вы пришли к пониманию. Идеальный баланс между вашей сущностями [Select_CString(GetPlayer.IsFemale, 'смертной', 'смертного' )] и феи возможен. Однако для этого нужно полностью понять как гламур, так и банальность. Нелегкая битва, если таковая вообще возможна."
+ siochain_1_effects: "Вы будете медитировать над банальностью и еще на один шаг приблизитесь к совершенству."
+ siochain_1_isvalid: "$EFFECT_LIST_BULLET$У вас есть [Concept('perk', 'достоинство')|E] «[GetPerk('realm_fae_5_perk').GetName(GetPlayer)]»"
+ siochain_1_tt: "Осенний мир хранит ответы."
+ siochain_1_planning_title: "В поисках равновесия"
+ siochain_1_planning_desc: "Я [Select_CString(GetPlayer.IsFemale, 'погрузилась', 'погрузился' )] в мир смертных, захлебнувшись их удушающими правилами и жесткими ритуалами.\n\nДаже когда банальность грозила задушить меня, я [Select_CString(GetPlayer.IsFemale, 'воспринимала', 'воспринимал' )] это как урок. И таких уроков за последнее время было немало.\n\nДостаточно ли этого?"
+ siochain_1_planning_confirm: "Время подумать над тем, что я [Select_CString(GetPlayer.IsFemale, 'узнала', 'узнал' )]."
+ siochain_1_planning_decline: "Время ещё не пришло."
+
+ siochain_2_name: "Легенда равновесия: Красочный мир"
+ siochain_2_desc: "Я [Select_CString(GetPlayer.IsFemale, 'погрузилась', 'погрузился' )] в банальность и [Select_CString(GetPlayer.IsFemale, 'вышла', 'вышел' )] оттуда [Select_CString(GetPlayer.IsFemale, 'невредимой', 'невредимым' )], но это был лишь первый шаг. Далее мне нужно будет наладить контакт со своей сущностью феи."
+ siochain_2_effects: "Вы будете медитировать над гламуром и станете на шаг ближе к совершенству."
+ #siochain_2_isvalid: ""
+ siochain_2_tt: "Вопросы, на которые может ответить только Грёзы."
+ siochain_2_planning_title: "В поисках равновесия"
+ siochain_2_planning_desc: "Я [Select_CString(GetPlayer.IsFemale, 'медитировала', 'медитировал' )], погружаясь в шторм гламура. Я [Select_CString(GetPlayer.IsFemale, 'позволяла', 'позволял' )] сырости Грёз заливать меня до тех пор, пока от меня не оставалось ничего, никакого разделения, никакого внутреннего и внешнего.\n\nМожет ли этот хаос кристаллизоваться в настоящее понимание?"
+ siochain_2_planning_confirm: "Время подумать над тем, что я [Select_CString(GetPlayer.IsFemale, 'узнала', 'узнал' )]."
+ siochain_2_planning_decline: "Время ещё не пришло."
+
+ siochain_3_name: "Легенда равновесия: Слияние миров"
+ siochain_3_desc: "Кажется, нет способа примирить моё понимание гламура и банальности. Они противоположны. Очевидно. Это просто здравый смысл. Но когда здравый смысл останавливал подменышей?"
+ siochain_3_effects: "Вам предстоит рискованная попытка соединить в себе банальность и гламур."
+ siochain_3_isvalid: "$EFFECT_LIST_BULLET$У вас нет модификатор [GetModifier('POD_disconected_from_dreaming').GetNameWithTooltip]"
+ siochain_3_tt: "Поиск баланса среди противоречий."
+ siochain_3_planning_title: "Достижение равновесия"
+ siochain_3_planning_desc: "Банальность и гламур сочетаются как масло и вода. Никому еще не удавалось их смешать.\n\nДо сих пор.\n\nЯ [Select_CString(GetPlayer.IsFemale, 'готовилась', 'готовился' )] к этому достаточно долго. Мне поможет только практика. Мне нужно решиться."
+ siochain_3_planning_confirm: "Сейчас или никогда."
+ siochain_3_planning_decline: "Это звучит напряжённо, я займусь этим в другой раз."
+
+ #############################
+ ##### Targeted Journeys #####
+ #############################
+
  hunt_target_name: "Охота"
- #hunt_target_desc: 
- #hunt_target_effects: 
- hunt_target_tt: "Время утолить мой голод."
- hunt_target_planning_title: "на охоте"
- hunt_target_planning_desc: "Охота на [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetFirstNameNicknamed] начинается всерьез"
+ #hunt_target_desc: ""
+ #hunt_target_effects: ""
+ hunt_target_tt: "Пора утолить жажду."
+ hunt_target_planning_title: "На охоте"
+ hunt_target_planning_desc: "Охота на персонажа [PlayerJourneyTarget.GetFirstNameNicknamed] теперь может начаться всерьёз."
  hunt_target_planning_confirm: "$POD_journey_planning_confirm_default$"
  hunt_target_planning_decline: "$POD_journey_planning_decline_default$"
  hunt_target_travel_title: "Охота начинается"
- hunt_target_travel_desc: "Обычно я невыезжаю за пределы [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetBaseNameNoTier] для охоты, но думаю, что на этот раз оно того стоит. [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetFirstNameNicknamed] не сможет спрятаться от меня."
- hunt_target_travel_confirm: "Какова на вкус [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetHerHis|l] кровь?"
+ hunt_target_travel_desc: "Обычно я не покидаю пределов владения [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetBaseNameNoTier], чтобы поохотиться, но в этот раз [Select_CString(GetPlayer.IsFemale, 'решила', 'решил' )], что стоит это сделать. [PlayerJourneyTarget.GetFirstNameNicknamed] не сможет долго скрываться от меня."
+ hunt_target_travel_confirm: "Какова на вкус [PlayerJourneyTarget.GetHerHis|l] кровь?"
+
+
  wake_from_torpor_name: "Пробуждение"
- #wake_from_torpor_desc: 
- #wake_from_torpor_effects: 
- wake_from_torpor_tt: "Я разбужу спящего."
- wake_from_torpor_planning_title: "Пробуждение спящего"
- wake_from_torpor_planning_desc: "Я узнаю все, что могу, о местонахождении тела [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetFirstNameNicknamedPossessive], что находится в состоянии, что мы называем [GetTrait('torpor').GetName(GetPlayer.MakeScope.Var('current_journey').Var('target').Char)].\n\nТеперь я знаю [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetHerHis|l] примерно местонахождение, но мне придется более тщательно прочесать провинцию, если я хочу найти [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetHerHis|l] точное расположение."
+ #wake_from_torpor_desc: ""
+ #wake_from_torpor_effects: ""
+ wake_from_torpor_tt: "Я разбужу [Select_CString(PlayerJourneyTarget.IsFemale, 'спящую', 'спящего' )]."
+ wake_from_torpor_planning_title: "Пробуждение [Select_CString(PlayerJourneyTarget.IsFemale, 'спящей', 'спящего' )]"
+ wake_from_torpor_planning_desc: "Я [Select_CString(GetPlayer.IsFemale, 'узнала', 'узнал' )] как можно больше о местонахождении тела персонажа [PlayerJourneyTarget.GetFirstNameNicknamedPossessive], которое сейчас находится в состоянии #L [GetTrait('torpor').GetName(PlayerJourneyTarget)|l]а#!.\n\nТеперь я знаю [PlayerJourneyTarget.GetHerHis|l] примерное местоположение, но мне придётся прочесать провинцию более тщательно, если я хочу найти [PlayerJourneyTarget.GetHerHis|l] настоящее убежище."
  wake_from_torpor_planning_confirm: "$POD_journey_planning_confirm_default$"
  wake_from_torpor_planning_decline: "$POD_journey_planning_decline_default$"
- wake_from_torpor_travel_title: "Путешествие за спящим"
- wake_from_torpor_travel_desc: "Как только мы найдем [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetFirstNameNicknamed], [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetSheHe|l] будет полностью в моей власти, тем не менее, все еще осознавая [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetHerHis|l] положение. Ужасающая вещь для созерцания. Интересно, как бы поступил такой вампир как [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetSheHe|l], если бы мы поменялись местами в этой ситуации."
- wake_from_torpor_travel_confirm: "Мы просто должны найти [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetHerHis|l] убежище первыми."
- assault_lair_name: "Штурм убежища"
- #assault_lair_desc: 
- #assault_lair_effects: 
- assault_lair_tt: "Одним монстром в этом мире стало меньше."
+ wake_from_torpor_travel_title: "Путешествие за [Select_CString(PlayerJourneyTarget.IsFemale, 'спящей', 'спящим' )]"
+ wake_from_torpor_travel_desc: "Как только мы найдём персонажа [PlayerJourneyTarget.GetFirstNameNicknamed], [PlayerJourneyTarget.GetSheHe|l] окажется полностью в моей власти, но при этом будет знать, что [PlayerJourneyTarget.GetHerHis|l] окружает. Ужасающая мысль. Интересно, как бы [PlayerJourneyTarget.GetSheHe|l] [Select_CString(PlayerJourneyTarget.IsFemale, 'поступила', 'поступил' )], если бы мы поменялись местами."
+ wake_from_torpor_travel_confirm: "Только сначала нужно найти [PlayerJourneyTarget.GetHerHis|l] логово."
+
+
+ assault_lair_name: "Штурм логова"
+ #assault_lair_desc: ""
+ #assault_lair_effects: ""
+ assault_lair_tt: "Одним монстром в этом мире меньше."
  assault_lair_planning_title: "Готовность к штурму"
- assault_lair_planning_desc: "Мое трепение было вознаграждено.\n\nЭто заняло некоторое время, но моя сеть шпионов и информаторов наконец принесла мне точное местоположение убежища [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetFirstNamePossessive].\n\nКонечно, самая опасная часть этого [Concept('journey', 'странствия')|E] все еще впереди..."
+ assault_lair_planning_desc: "Моё терпение было вознаграждено.\n\nПрошло немало времени, но моя сеть шпионов и информаторов наконец-то принесла мне то, что я [Select_CString(GetPlayer.IsFemale, 'искала', 'искал' )]: точное местоположение логова, в котором скрывается [PlayerJourneyTarget.GetFirstNamePossessive].\n\nКонечно, самая опасная часть этого [Concept('journey', 'странствия')|E] ещё впереди..."
  assault_lair_planning_confirm: "$POD_journey_planning_confirm_default$"
  assault_lair_planning_decline: "$POD_journey_planning_decline_default$"
  assault_lair_travel_title: "Охота началась"
- assault_lair_travel_desc: "Противостояние такому дьяволу как [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetFirstName] на [GetPlayer.MakeScope.Var('current_journey').Var('target').Char.GetHerHis] домашняя игра - всегда рискованное предприятие, но на нашей стороне преимущество внезапности. Этого будет достаточно? При охоте на такого рода добычу малейший неверный шаг может означать смерть."
+ assault_lair_travel_desc: "Противостоять такому чудовищу, как [PlayerJourneyTarget.GetFirstName], на [PlayerJourneyTarget.GetHerHis] родной территории всегда рискованно, но на нашей стороне преимущество внезапности. Будет ли этого достаточно? При охоте на такую добычу малейшая оплошность может означать смерть."
  assault_lair_travel_confirm: "Я не проявлю милосердия."
- gold_heist_name: "Steal Gold from"
- #gold_heist_desc: 
- #gold_heist_effects: 
- gold_heist_tt: "Это золото будет моим."
+
+
+ gold_heist_name: "Кража золота"
+ #gold_heist_desc: ""
+ #gold_heist_effects: ""
+ gold_heist_tt: "Это золото должно быть моим."
  gold_heist_planning_title: "Ограбление сокровищницы"
- gold_heist_planning_desc: "Теперь мне известно все, что может происходить при дворе [PlayerJourneyTarget.GetShortUINamePossessive].\n\nПришло время использовать эти знания для реализации следующего шага плана: [Concept('infiltration', 'проникновения')|E]."
+ gold_heist_planning_desc: "Я [Select_CString(GetPlayer.IsFemale, 'узнала', 'узнал' )] как можно больше о том, что может происходить при дворе, которым правит [PlayerJourneyTarget.GetShortUINamePossessive].\n\nПора использовать эти знания, чтобы привести в действие следующий шаг плана: [Concept('infiltration', 'проникновение')|E]."
  gold_heist_planning_confirm: "$POD_journey_planning_confirm_default$"
  gold_heist_planning_decline: "$POD_journey_planning_decline_default$"
  gold_heist_travel_title: "$POD_journey_travel_title_heist$"
- gold_heist_travel_desc: "Если все пройдет по плану, я смогу проникнуть внутрь, найти комнату, в которой находится хранилище [Concept('gold', 'золота')|E] [PlayerJourneyTarget.GetShortUINamePossessive], и украсть сокровище без привлечения [PlayerJourneyTarget.GetHerHis] [Concept('suspicion', 'внимания')|E]."
+ gold_heist_travel_desc: "Если всё пройдёт по плану, я смогу проникнуть внутрь, найти комнату, в которой [PlayerJourneyTarget.GetShortUINamePossessive] хранит [Concept('gold', 'золото')|E], и украсть столько, сколько смогу, не вызвав [PlayerJourneyTarget.GetHerHis] [Concept('suspicion', 'подозрений')|E]."
  gold_heist_travel_confirm: "$POD_journey_travel_confirm_heist$"
+
+
  unstoppable_warrior_name: "Great Quest of Warrior Incarna: Kill"
- #unstoppable_warrior_desc: 
- #unstoppable_warrior_effects: 
+ #unstoppable_warrior_desc: ""
+ #unstoppable_warrior_effects: ""
  unstoppable_warrior_tt: "Time to finish the quest."
  unstoppable_warrior_planning_title: "On the Quest"
  unstoppable_warrior_planning_desc: "The quest for [PlayerJourneyTarget.GetFirstNameNicknamed] can now begin in earnest."
@@ -1115,8 +1128,8 @@
  ritual_blood_sorcery_casting_travel_title: "Journey to the $pod_bs_ritual$"
  ritual_blood_sorcery_casting_travel_desc: "No matter how many times I perform these rites, they evoke a distant sense of dread. Our greatest scholars are nowhere near understanding the great [beast|E] that slumbers in our blood, rousing whenever we have need of its powers. Underneath all the artifice, all the procedures and ceremonies and theatrics, we are but children trying to harness a force of nature."
  #ritual_casting_travel_desc: "Over centuries of experimentation, Kindred sorcerers have expanded their arts in a myriad of different fashions. With each step they take, another path tantalizingly opens up ahead of them, beckoning the way to yet greater feats of magic. Thaumaturgy was developed by Kindred from Hermetic rituals to control and focus these powerful forces.\nOther Kindred created a wide range of Sorceries that they have drawn from the beliefs of the mortals across the world. Some have blurred the line between religion and power to create an ever-increasing number of ritae. Others have even used their blood to command the spirits of the dead, to make contact with entities in realms beyond comprehension, and to sell their souls to beings that dwell in the darkest reaches of all creation. In the end however, all rituals require discipline and mental fortitude to prepare. Any mistake could be the last one a careless sorcerer would ever make.\nAfter careful preparation, $pod_bs_ritual$ is finally ready. Now I only need the right time and place to cast it." 
- ritual_blood_sorcery_casting_travel_confirm: "Onwards, to the $pod_bs_ritual$'s location." 
- 
+ ritual_blood_sorcery_casting_travel_confirm: "Onwards, to the $pod_bs_ritual$'s location."
+
  ritual_necromagic_casting_name: "" # localization applied by customloc
  #ritual_casting_desc: ""
  #ritual_casting_effects: ""
@@ -1127,11 +1140,13 @@
  ritual_necromagic_casting_planning_decline: "$POD_journey_planning_decline_default$"
  ritual_necromagic_casting_travel_title: "Journey to the $pod_bs_ritual$"
  ritual_necromagic_casting_travel_desc: "No matter how many times I perform these rites, they evoke a distant sense of dread. Our greatest scholars are nowhere near understanding the great [beast|E] that slumbers in our blood, rousing whenever we have need of its powers. Underneath all the artifice, all the procedures and ceremonies and theatrics, we are but children trying to harness a force of nature."
- #ritual_casting_travel_desc: "Over centuries of experimentation, Kindred sorcerers have expanded their arts in a myriad of different fashions. With each step they take, another path tantalizingly opens up ahead of them, beckoning the way to yet greater feats of magic. Thaumaturgy was developed by Kindred from Hermetic rituals to control and focus these powerful forces.\nOther Kindred created a wide range of Sorceries that they have drawn from the beliefs of the mortals across the world. Some have blurred the line between religion and power to create an ever-increasing number of ritae. Others have even used their blood to command the spirits of the dead, to make contact with entities in realms beyond comprehension, and to sell their souls to beings that dwell in the darkest reaches of all creation. In the end however, all rituals require discipline and mental fortitude to prepare. Any mistake could be the last one a careless sorcerer would ever make.\nAfter careful preparation, [bs_ritual|E] is finally ready. Now I only need the right time and place to cast it."
+ #ritual_casting_travel_desc: "Over centuries of experimentation, Kindred sorcerers have expanded their arts in a myriad of different fashions. With each step they take, another path tantalizingly opens up ahead of them, beckoning the way to yet greater feats of magic. Thaumaturgy was developed by Kindred from Hermetic rituals to control and focus these powerful forces.\nOther Kindred created a wide range of Sorceries that they have drawn from the beliefs of the mortals across the world. Some have blurred the line between religion and power to create an ever-increasing number of ritae. Others have even used their blood to command the spirits of the dead, to make contact with entities in realms beyond comprehension, and to sell their souls to beings that dwell in the darkest reaches of all creation. In the end however, all rituals require discipline and mental fortitude to prepare. Any mistake could be the last one a careless sorcerer would ever make.\nAfter careful preparation, $pod_bs_ritual$ is finally ready. Now I only need the right time and place to cast it." 
  ritual_necromagic_casting_travel_confirm: "Onwards, to the $pod_bs_ritual$'s location."
 
-  ################################ 
-  ##### Trait-based Journeys ##### 
+ ################################
+ ##### Trait-based Journeys #####
+ ################################
+
  study_trait_name: "Изучать:"
  #study_trait_desc: 
  #study_trait_effects: 
