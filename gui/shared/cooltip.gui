@@ -4192,7 +4192,7 @@ template culture_era_tooltip {
 			text_single = {
 				visible = "[Not(CultureEra.IsActive)]"
 				text = "CULTURE_ERA_BLOCKED_BLOCKED_TILE"
-					fonttintcolor = "[TooltipInfo.GetTintColor]"
+				fonttintcolor = "[TooltipInfo.GetTintColor]"
 			}
 
 			container = {
@@ -5421,7 +5421,7 @@ types InventoryTooltips
 								#format_override = { S low }
 								fonttintcolor = "[TooltipInfo.GetTintColor]"
 							}
-
+							
 							# POD CfV: Effects for crafted consumables
 							text_multi = {
 								visible = "[GetScriptedGui('POD_crafting_brewing_effects_show').IsShown(GuiScope.SetRoot(Artifact.MakeScope).AddScope('character', GetPlayer.MakeScope).End)]"
