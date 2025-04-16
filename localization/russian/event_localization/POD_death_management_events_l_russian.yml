@@ -1,16 +1,19 @@
 ﻿l_russian:
-  
- ghoul_death_notification_title: "Ваш [Ghoul|El] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Умер"
- death_management.ghoul.desc: "Ваш [Ghoul|E], [dead_character.GetTitledFirstName], умер."
- domitor_death_notification_title: "Ваш домитор #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Умер"
- death_management.domitor.desc: "Ваш домитор, [dead_character.GetTitledFirstName], умер."
 
- herd_death_notification_title: "Член вашего [Concept('herd', 'стада')|E] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Умер"
- death_management.herd.desc: "Член вашего [Concept('herd', 'стада')|E], [dead_character.GetTitledFirstName], умер."
+ ghoul_death_notification_title: "Ваш [Concept('ghoul', 'гуль')|E] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
+ death_management.ghoul.desc: "Ваш [Concept('ghoul', 'гуль')|E], [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
 
- dreamer_death_notification_title: "Your Dreamer #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Died"
- death_management.dreamer.desc: "Your Dreamer, [dead_character.GetTitledFirstName], died."
- host_death_notification_title: "Ваш Хост #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Умер"
- death_management.host.desc: "Ваш Хост,  [dead_character.GetTitledFirstName], умер."
- thrall_death_notification_title: "Your [thrall|E] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! Died"
- death_management.thrall.desc: "Your [thrall|E],  [dead_character.GetTitledFirstName], died."
+ domitor_death_notification_title: "Ваш домитор #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
+ death_management.domitor.desc: "Ваш домитор, [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
+
+ herd_death_notification_title: "Член вашего [Concept('herd', 'стада')|E] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
+ death_management.herd.desc: "Член вашего [Concept('herd', 'стада')|E], [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
+
+ dreamer_death_notification_title: "[Select_CString(LEFT_CHARACTER.IsFemale, 'Ваша мечтательница', 'Ваш мечтатель' )] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
+ death_management.dreamer.desc: "[Select_CString(dead_character.IsFemale, 'Ваша мечтательница', 'Ваш мечтатель' )], [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
+
+ host_death_notification_title: "Ваш сосуд #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
+ death_management.host.desc: "Ваш сосуд, [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
+
+ thrall_death_notification_title: "Ваш [Concept('thrall', 'раб')|E] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
+ death_management.thrall.desc: "Ваш [Concept('thrall', 'раб')|E], [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
