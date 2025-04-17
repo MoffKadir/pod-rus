@@ -1,35 +1,35 @@
 ﻿l_russian:
- necro_magic_lifestyle_name: "Necromancy"
- necro_magic_lifestyle_desc: "Focus on the powers that use the inherent magic in Vitae to control death"
- monthly_necro_magic_lifestyle_xp_gain_mult: "Monthly Necromancy [lifestyle|E] [experience|E]"
- 
- necro_magic_focus: "Necromancy Focus"
+ necro_magic_lifestyle_name: "Некромантия"
+ necro_magic_lifestyle_desc: "Фокус на силах, которые используют магию, присущую витэ, чтобы контролировать смерть"
+ monthly_necro_magic_lifestyle_xp_gain_mult: "Ежемесячный прирост опыта на [Concept('lifestyle', 'пути')|E] некромантии"
+
+ necro_magic_focus: "Некромантия"
  necro_magic_focus_modifier: "[GetFocus('necro_magic_focus').GetName]"
- necro_magic_focus_desc: "Necromancy Magic"
- necro_magic_focus_effect_desc: "Focusing on Necromancy grants:"
- 
- necro_magic_sepulchre_path_visible: "Sepulchre Path"
- necro_magic_ash_path_visible: "Ash Path"
- necro_magic_bone_path_visible: "Bone Path"
- necro_magic_cenotaph_path_visible: "Cenotaph Path"
- necro_magic_corpse_in_the_monster_visible: "Corpse in the Monster"
- necro_magic_graves_decay_visible: "Grave's Decay"
- necro_magic_vitreous_path_visible: "Vitreous Path"
- necro_magic_path_of_the_twilight_garden_visible: "Path of the Twilight Garden"
- necro_magic_skull_path_visible: "Skull path"
- necro_magic_nightshade_path_visible: "Nightshade Path"
- necro_magic_path_of_haunting_visible: "Path of Haunting"
- necro_magic_path_of_woe_visible: "Path of Woe"
+ necro_magic_focus_desc: "Магия некромантии."
+ necro_magic_focus_effect_desc: "Сосредоточившись на некромантии, персонаж получает:"
 
- necro_magic_shared_ritual_perk_effect: "Unlock $pod_bs_path$ specific $pod_bs_rituals$"
+ necro_magic_sepulchre_path_visible: "Путь склепа"
+ necro_magic_ash_path_visible: "Путь праха"
+ necro_magic_bone_path_visible: "Путь кости"
+ necro_magic_cenotaph_path_visible: "Путь кенотафа"
+ necro_magic_corpse_in_the_monster_visible: "Путь превращения труп в чудовище"
+ necro_magic_graves_decay_visible: "Путь могильного гниения"
+ necro_magic_vitreous_path_visible: "Стекловидный путь"
+ necro_magic_path_of_the_twilight_garden_visible: "Путь Сумеречного сада"
+ necro_magic_skull_path_visible: "Путь черепа"
+ necro_magic_nightshade_path_visible: "Путь ночной тени"
+ necro_magic_path_of_haunting_visible: "Путь преследования"
+ necro_magic_path_of_woe_visible: "Путь скорби"
 
- ns_peering_across_the_shroud_perk_name: "Peering Across The Shroud"
- ns_summon_soul_perk_name: "Summon Soul"
- ns_compel_soul_perk_name: "Compel Soul"
- ns_haunting_perk_name: "Haunting"
- ns_torment_perk_name: "Torment"
+ necro_magic_shared_ritual_perk_effect: "Разблокирует особые #L $pod_bs_rituals|l$ы#! этой #L $pod_bs_path|l$ы#!"
 
- ns_sepulchre_path_rituals_perk_name: "$necro_magic_sepulchre_path_visible$ $pod_bs_rituals$"
+ ns_peering_across_the_shroud_perk_name: "Взгляд сквозь Саван"
+ ns_summon_soul_perk_name: "Призыв души"
+ ns_compel_soul_perk_name: "Принуждение души"
+ ns_haunting_perk_name: "Вселение"
+ ns_torment_perk_name: "Мучение"
+
+ ns_sepulchre_path_rituals_perk_name: "$necro_magic_sepulchre_path_visible$: #L $pod_bs_rituals$ы#!"
 
  NS_PEERING_ACROSS_THE_SHROUD_PERK_EFFECT: "If any of your relatives or friends are murdered in mysterious circumstances, you will know their murderer's identity.\n#flavor The dead walk among us unseen and unheard. To command them, a necromancer must be able to perceive them.#!"
  NS_SUMMON_SOUL_PERK_EFFECT: "Unlocks the [summon_wraith_on_death_interaction|E]\n#flavor Summon Soul allows a necromancer to summon a ghost back from the [UmbraGlossaryLocalized('shadowlands','Underworld')] .#!"
@@ -210,4 +210,3 @@
  NS_PURGE_THE_APOSTATES_SOUL_PERK_EFFECT: "Makes it easier to bind a [GetTrait('wraith').GetName( GetNullCharacter )] via the Bind Wraith [character_interaction|E].\n#flavor Deal aggravated damage to a [GetTrait('wraith').GetName( GetNullCharacter )], producing a puddle of plasm#!" 
  
  NS_PATH_OF_WOE_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
- 
