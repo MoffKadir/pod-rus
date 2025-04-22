@@ -31,37 +31,37 @@
 
  ns_sepulchre_path_rituals_perk_name: "$necro_magic_sepulchre_path_visible$: #L $pod_bs_rituals$ы#!"
 
- NS_PEERING_ACROSS_THE_SHROUD_PERK_EFFECT: "If any of your relatives or friends are murdered in mysterious circumstances, you will know their murderer's identity.\n#flavor The dead walk among us unseen and unheard. To command them, a necromancer must be able to perceive them.#!"
- NS_SUMMON_SOUL_PERK_EFFECT: "Unlocks the [summon_wraith_on_death_interaction|E]\n#flavor Summon Soul allows a necromancer to summon a ghost back from the [UmbraGlossaryLocalized('shadowlands','Underworld')] .#!"
- NS_COMPEL_SOUL_PERK_EFFECT: "Unlocks the [bind_wraith_interaction|E].\nMax number of bound wraiths: #P +3#!.\n#flavor Using this power, a vampire can bend a ghost to her will for a short time. This ability requires supreme confidence, as a failure of resolve can lead to disastrous consequences for a necromancer.#!"
- NS_HAUNTING_PERK_EFFECT: "As a $pod_bs_spell$, give target's current location [GetModifier('spell_haunting_modifier').GetNameWithTooltip] for 5 years\nMakes it easier to bind a [GetTrait('wraith').GetName( GetNullCharacter )] via the Bind Wraith [character_interaction|E].\n#flavor A necromancer uses the power of her blood to bind a ghost into an object or location.#!"
- NS_TORMENT_PERK_EFFECT: "You can imprison, torture, execute or physically hurt spirits during [single_combat_duel_plural|E].\n#flavor With use of Torment, a necromancer may strike at a ghost’s incorporeal body as if he himself were a ghost.#!"
- 
+ NS_PEERING_ACROSS_THE_SHROUD_PERK_EFFECT: "Если кто-то из ваших родственников или друзей будет убит при загадочных обстоятельствах, вы узнаете личность убийцы.\n#flavor Мёртвые ходят среди нас невидимые и неслышимые. Чтобы повелевать ими, некромант должен уметь их воспринимать.#!"
+ NS_SUMMON_SOUL_PERK_EFFECT: "Открывает взаимодействие «[summon_wraith_on_death_interaction|E]»\n#flavor Призыв души позволяет некроманту призвать призрака из [UmbraGlossaryLocalized('shadowlands','Загробного мира')].#!"
+ NS_COMPEL_SOUL_PERK_EFFECT: "Открывает взаимодействие «[bind_wraith_interaction|E]».\nМаксимальное количество связанных призраков: #P +3#!.\n#flavor Используя эту способность, вампир может на короткое время подчинить призрака своей воле. Эта способность требует огромной уверенности в себе, так как провал в решимости может привести к катастрофическим последствиям для некроманта.#!"
+ NS_HAUNTING_PERK_EFFECT: "Используя это #L $pod_bs_spell|l$ие#!, вы можете наслать на текущую локацию цели модификатор [GetModifier('spell_haunting_modifier').GetNameWithTooltip] на 5 лет\nУпрощает связывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E] «Связать призрака».\n#flavor Некромант использует силу своей крови, чтобы привязать призрака к предмету или месту.#!"
+ NS_TORMENT_PERK_EFFECT: "Вы можете пленить, пытать, казнить или наносить физические повреждения духам во время [Concept('single_combat_duel_plural', 'поединков')|E].\n#flavor Используя муки, некромант может нанести удар по бесплотному телу призрака, как если бы он сам был призраком.#!"
+
  NS_SEPULCHRE_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
- 
- ns_shroudsight_perk_name: "Shroudsight"
- ns_tongue_of_the_dark_kingdoms_perk_name: "Tongue of the Dark Kingdoms"
- ns_touch_of_the_nether_perk_name: "Touch of The Nether"
+
+ ns_shroudsight_perk_name: "Взгляд за покров"
+ ns_tongue_of_the_dark_kingdoms_perk_name: "Язык Тёмных королевств"
+ ns_touch_of_the_nether_perk_name: "Прикосновение к пустоте"
  ns_ex_nihilo_perk_name: "Ex Nihilo"
- ns_shroud_mastery_perk_name: "Shroud Mastery"
+ ns_shroud_mastery_perk_name: "Власть над покровом"
 
- ns_ash_path_rituals_perk_name: "$necro_magic_ash_path_visible$ $pod_bs_rituals$"
+ ns_ash_path_rituals_perk_name: "$necro_magic_ash_path_visible$: #L $pod_bs_rituals$ы#!"
 
- NS_SHROUDSIGHT_PERK_EFFECT: "Unlock Find Wraith [character_interaction|E].\n#flavor Shroudsight allows a vampire to gaze directly into the [UmbraGlossaryLocalized('shadowlands','Underworld')].#!"
- NS_TONGUE_OF_THE_DARK_KINGDOMS_PERK_EFFECT: "Unlocks the [command_wraith_interaction|E].\nMakes it easier to bind a [GetTrait('wraith').GetName( GetNullCharacter )] via the Bind Wraith [character_interaction|E].\n#flavor When uttering the Tongue of the [dark_kingdoms|E], a necromancer can converse with ghosts in the [UmbraGlossaryLocalized('shadowlands','Underworld')].#!"
- NS_TOUCH_OF_THE_NETHER_PERK_EFFECT: "Allows you to interact with beings of the [umbra|E] when you are in the material world.\n#flavor While invoking Touch the Nether, a necromancer may stand on both sides of the Shroud; she manifests physically in the [UmbraGlossaryLocalized('shadowlands','Underworld')] while remaining corporeal in the lands of the living.#!"
- NS_EX_NIHILO_PERK_EFFECT: "Gain access to the [UmbraGlossaryLocalized('shadowlands','Underworld')] during spiritual travels.\n#flavor Ex Nihilo allows a necromancer to physically enter the [UmbraGlossaryLocalized('shadowlands','Underworld')]. While in the [UmbraGlossaryLocalized('shadowlands','Underworld')], she appears as a particularly solid ghost.#!"
- NS_SHROUD_MASTERY_PERK_EFFECT: "Unlock Manipulate the Shroud option in [umbra|E].\n#flavor With this power, the necromancer can greatly aid or hinder the ability of ghosts to function in the living world.#!"
-  
+ NS_SHROUDSIGHT_PERK_EFFECT: "Разблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E] «Найти призрака».\n#flavor Взгляд за покров позволяет вампира заглянуть прямо в [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
+ NS_TONGUE_OF_THE_DARK_KINGDOMS_PERK_EFFECT: "Разблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E] «[command_wraith_interaction|E]».\nУпрощает связывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E] «Связать призрака».\n#flavor Говоря на языке [Concept('dark_kingdoms', 'Тёмных королевств')|E], некромант может общаться с призраками в [UmbraGlossaryLocalized('shadowlands','Загробном мире')].#!"
+ NS_TOUCH_OF_THE_NETHER_PERK_EFFECT: "Позволяет вам взаимодействовать с существами [Concept('umbra', 'Умбры')|E], когда вы находитесь в материальном мире.\n#flavor Взывая к Прикосновению к пустоте, некромант может находиться по обе стороны Барьера; он физически проявляется в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], оставаясь телесным в землях живых.#!"
+ NS_EX_NIHILO_PERK_EFFECT: "Даёт доступ к [UmbraGlossaryLocalized('shadowlands','Загробному миру')] во время духовных путешествий.\n#flavor Ex Nihilo позволяет некроманту физически войти в [UmbraGlossaryLocalized('shadowlands','Загробный мир')]. Находясь в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], он появляется в виде очень плотного призрака.#!"
+ NS_SHROUD_MASTERY_PERK_EFFECT: "Разблокирует опцию «Манипулировать Барьером» в [Concept('umbra', 'Умбре')|E].\n#flavor С помощью этой способности некромант может значительно помочь или помешать призракам существовать в мире живых.#!"
+
  NS_ASH_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
- 
- ns_seal_of_abamixtra_perk_name: "Seal of Abamixtra"
- ns_awaken_the_homuncular_servant_perk_name: "Awaken the Homuncular Servant"
- ns_shambling_hordes_perk_name: "Shambling Hordes"
- ns_baleful_exorcism_perk_name: "Baleful Exorcism"
- ns_daemonic_possession_perk_name: "Daemonic Possession"
 
- ns_bone_path_rituals_perk_name: "$necro_magic_bone_path_visible$ $pod_bs_rituals$"
+ ns_seal_of_abamixtra_perk_name: "Печать Абамикстры"
+ ns_awaken_the_homuncular_servant_perk_name: "Пробуждение слуги-гомункула"
+ ns_shambling_hordes_perk_name: "Шаркающие орды"
+ ns_baleful_exorcism_perk_name: "Зловещий экзорцизм"
+ ns_daemonic_possession_perk_name: "Дьявольская одержимость"
+
+ ns_bone_path_rituals_perk_name: "$necro_magic_bone_path_visible$: #L $pod_bs_rituals$ы#!"
 
  NS_SEAL_OF_ABAMIXTRA_PERK_EFFECT: "As a $pod_bs_spell$, summon a small army of [GetMaA('shambler').GetName] while at war.\n#flavor By invoking the Seal of Abamixtra, a necromancer can raise a corpse or group of corpses to perform a simple task.#!"
  NS_AWAKEN_THE_HOMUNCULAR_SERVANT_PERK_EFFECT: "Improve [GetPerk('ns_seal_of_abamixtra_perk').GetName(GetPlayer)] $pod_bs_spell$ by increasing the number of [GetMaA('shambler').GetName] spawned.\n#flavor With this power, a necromancer can take a small piece of a corpse and transform it into a grotesque sort of familiar.#!"
@@ -77,7 +77,7 @@
  ns_death_knell_perk_name: "Death Knell"
  ns_ephemeral_binding_perk_name: "Ephemeral Binding"
 
- ns_cenotaph_path_rituals_perk_name: "$necro_magic_cenotaph_path_visible$ $pod_bs_rituals$"
+ ns_cenotaph_path_rituals_perk_name: "$necro_magic_cenotaph_path_visible$: #L $pod_bs_rituals$ы#!"
 
  NS_A_TOUCH_OF_DEATH_PERK_EFFECT: "#flavor The necromancer is attuned to the residual energy left by a ghost’s passage or touch, allowing her to determine if an object, person, or area had been touched or influenced by a ghost.#!"
  NS_REVEAL_THE_CATENE_PERK_EFFECT: "Makes it easier to bind a [GetTrait('wraith').GetName( GetNullCharacter )] via the Bind Wraith [character_interaction|E].\nDecrease [stress|E] cost of bound [GetTrait('wraith').GetName( GetNullCharacter )] in the material world.\n#flavor The necromancer recognizes the ashen mark left on objects by the dead, allowing her to distinguish between ghostly playthings and $pod_Fetters$.#!"
@@ -93,7 +93,7 @@
  ns_benedicto_mortem_perk_name: "Benedicto Mortem"
  ns_benedicto_vitae_perk_name: "Benedicto Vitae"
 
- ns_corpse_in_the_monster_rituals_perk_name: "$necro_magic_corpse_in_the_monster_visible$ $pod_bs_rituals$"
+ ns_corpse_in_the_monster_rituals_perk_name: "$necro_magic_corpse_in_the_monster_visible$: #L $pod_bs_rituals$ы#!"
 
  NS_MORTUUS_IN_VULTUS_PERK_EFFECT: "#flavor A Cainite can make herself appear as if she was a long-dead corpse.#!"
  NS_ALGOR_MORTIS_PERK_EFFECT: "#flavor With the use of Algor Mortis, a vampire is able to transform herself into a cool, melancholy creature, unmoved by mortal pain or emotional manipulation.#!"
@@ -109,7 +109,7 @@
  ns_gift_of_melancholia_perk_name: "Gift of Melancholia"
  ns_dust_to_dust_perk_name: "Dust to Dust"
 
- ns_graves_decay_rituals_perk_name: "$necro_magic_graves_decay_visible$ $pod_bs_rituals$"
+ ns_graves_decay_rituals_perk_name: "$necro_magic_graves_decay_visible$: #L $pod_bs_rituals$ы#!"
 
  NS_ASHES_TO_ASHES_PERK_EFFECT: "Reduces the risk of $pod_masquerade_exposure_with_icon$ and improves the Cover Masquerade [character_interaction|E].\n#flavor While some Cainites slaughter indiscriminately and fear no consequences for their actions, other Cainites feel the need to be a bit more discreet. Use of this power turns a human corpse into a pile of unremarkable ash roughly one-fifth the weight of the original body.#!"
  NS_RIGOR_MORTIS_PERK_EFFECT: "When a war is started, the highest prowess champion of your enemy will be wounded.\n#flavor With this power, the necromancer can make any target as stiff and still as a corpse.#!"
@@ -125,7 +125,7 @@
  ns_curse_of_the_maelstrom_perk_name: "Curse of the Mealstrom"
  ns_night_cry_perk_name: "Night Cry"
 
- ns_vitreous_path_rituals_perk_name: "$necro_magic_vitreous_path_visible$ $pod_bs_rituals$"
+ ns_vitreous_path_rituals_perk_name: "$necro_magic_vitreous_path_visible$: #L $pod_bs_rituals$ы#!"
 
  NS_EYES_OF_THE_WRAITH_PERK_EFFECT: "#flavor By invoking this power, the necromancer can see the world the way that the Restless Dead do.#!"
  NS_AURA_OF_DECAY_PERK_EFFECT: "Give [GetModifier('aura_of_decay_modifier').GetNameWithTooltip] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E].\n#flavor This power hastens the inevitable fate of any inanimate object caught within the necromancer’s dreadful aura, allowing the vampire to cause any object to decay into a ruined heap.#!"
@@ -141,7 +141,7 @@
  ns_caul_of_the_neverborn_perk_name: "Caul of the Neverborn"
  ns_lament_of_dhainu_perk_name: "Lament of D'hainu"
 
- ns_path_of_the_twilight_garden_rituals_perk_name: "$necro_magic_path_of_the_twilight_garden_visible$ $pod_bs_rituals$"
+ ns_path_of_the_twilight_garden_rituals_perk_name: "$necro_magic_path_of_the_twilight_garden_visible$: #L $pod_bs_rituals$ы#!"
 
  NS_WHISPERS_TO_THE_SOUL_PERK_EFFECT: "As a $pod_bs_spell$, give the target 25 [stress|E].\n#flavor Merely hearing a whisper of the true name of the Dark Mother is enough to drive mortals mad, and fill the hearts of the Cainites with terror#!"
  NS_KISS_OF_THE_DARK_MOTHER_PERK_EFFECT: "The Bite [single_combat_duel|E] move becomes more powerful.\n#flavor The Lilin bites her tongue and fills her mouth with a foul, acrid mix of black bile and vitae. Her bite becomes even more terrible, and she can devour the life from her victims with ease#!"
@@ -169,7 +169,7 @@
  ns_wails_and_whispers_perk_name: "Wails and Whispers"
  ns_chthonic_womb_perk_name: "Chthonic Womb"
 
- ns_nightshade_path_rituals_perk_name: "$necro_magic_nightshade_path_visible$ $pod_bs_rituals$"
+ ns_nightshade_path_rituals_perk_name: "$necro_magic_nightshade_path_visible$: #L $pod_bs_rituals$ы#!"
 
  NS_TEND_THE_BODY_GARDEN_PERK_EFFECT: "Reduces the risk of $pod_masquerade_exposure_with_icon$ and improves the Cover Masquerade [character_interaction|E].\n#flavor A necromancer with this power can speed up or slow the process of decay, turning a dead mortal into a bloated host for flies in seconds or nullifying the decay of Final Death.#!"
  NS_WITCHS_FRUIT_PERK_EFFECT: "#flavor Every plant relies on death to grow. Rotting things enrich the soil, and the trees, vines, and grasses drink up necrotic echoes along with vital nutrients. A necromancer can awaken this death aura by exposing their fruits to her blood.#!"
@@ -185,7 +185,7 @@
  ns_phantasms_perk_name: "Phantasm"
  ns_h_torment_perk_name: "Torment"
 
- ns_path_of_haunting_rituals_perk_name: "$necro_magic_path_of_haunting_visible$ $pod_bs_rituals$"
+ ns_path_of_haunting_rituals_perk_name: "$necro_magic_path_of_haunting_visible$: #L $pod_bs_rituals$ы#!"
 
  NS_SONG_OF_THE_DEAD_PERK_EFFECT: "As a $pod_bs_spell$, give target 25 [static_stress|E] at the cost of [static_stress|E] on yourself.\n#flavor The vampire chants, weaving unheard words into the song and instilling an unhealthy fascination with death in his listener.#!"
  NS_SUMMON_WISP_PERK_EFFECT: "#flavor The vampire infuses droplets of his blood with the ephemeral energy of the [UmbraGlossaryLocalized('shadowlands','Underworld')], summoning a sphere of flickering lights. The wisp may lure unsuspecting mortals into a trap or provide a clever distraction.#!"
@@ -201,7 +201,7 @@
  ns_cursed_eucharist_perk_name: "Cursed Eucharist"
  ns_purge_the_apostates_soul_perk_name: "Purge the Apostate's Soul"
 
- ns_path_of_woe_rituals_perk_name: "$necro_magic_path_of_woe_visible$ $pod_bs_rituals$"
+ ns_path_of_woe_rituals_perk_name: "$necro_magic_path_of_woe_visible$: #L $pod_bs_rituals$ы#!"
 
  NS_FINDING_THE_LOCUS_PERK_EFFECT: "Makes it easier to bind a [GetTrait('wraith').GetName( GetNullCharacter )] via the Bind Wraith [character_interaction|E].\n#flavor etermine if an object is a fetter#!"
  NS_EXPURGATE_THE_DAMNED_PERK_EFFECT: "Makes it easier to bind a [GetTrait('wraith').GetName( GetNullCharacter )] via the Bind Wraith [character_interaction|E].\n#flavor Force a [GetTrait('wraith').GetName( GetNullCharacter )] to appear at a location the necromancer has marked before#!"
