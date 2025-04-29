@@ -1,0 +1,29 @@
+﻿l_russian:
+ rule_pod_april_fools: "$POD_gamerule$ Первоапрельский режим"
+ setting_pod_april_fools_disabled: "Отключено"
+ setting_pod_april_fools_disabled_desc: "Мир таков, каким он должен быть."
+ setting_pod_april_fools_2025: "#high Кошмар Горатрикса#!"
+ setting_pod_april_fools_2025_desc: "Мир стал более скользким. #weak (Первое апреля 2025)#!"
+
+ Wetrius: "Ветриус"
+ Wetrius_Prime: "Ветриус Прайм"
+ Cainetrius: "Каинетриус"
+
+ POD_april_fools.2.t: "Вот как выглядит пик производительности"
+ POD_april_fools.2.desc: "Что-то случилось с миром.\n\nВы не можете понять, что именно. Он всегда был таким. Не так ли?\n\nНу, наверное, ничего важного.\n\nВозможно."
+ POD_april_fools.2.a: "Мои соседи всегда выглядели так?"
+ POD_april_fools.2.tt: "У вас появилась новая цель - разобраться в происходящем."
+
+ POD_april_fools.3.t: "Он возвращается"
+ POD_april_fools.3.desc: "И вот раздался раскат грома. И из почвы покинутой Богом Земли восстал прародитель всего рода Ветриусов, пришедший отомстить за своих детей.\n\nПосле этого больше нет целей. Больше делать нечего.\n\nСдавайтесь сейчас или продолжайте жить в обречённом мире, который сами и создали."
+ POD_april_fools.3.a: "Вот чёрт."
+
+ POD_wetrius_objective: "Ветриусокалипсис"
+ POD_wetrius_objective_desc: "Неужели никто не собирается положить конец этим скользким мерзавцам?\nКто-то должен послать им весточку."
+ POD_wetrius_objective_tooltip: "Они намазывают себя детским кремом каждый закат или что?"
+ POD_wetrius_objective_confirm: "Прочь, жирные маменькины сынки!"
+ POD_wetrius_objective_is_valid: "Вы лично убили [EmptyScope.ScriptValue('POD_wetrius_kill_requirement')|V0] ветриев #weak (текущий счёт убийств: [GetPlayer.MakeScope.ScriptValue('POD_wetrius_killcount')|0])#!"
+ POD_wetrius_objective_is_valid_2: "#V [GetScriptedCharacterByHistoryID('505084').GetFirstName]#! мёртв"
+ POD_wetrius_objective_effect: "Что-то хорошее обязательно случится"
+
+ wetrius_event_troops: "Рыцари Грааля"
