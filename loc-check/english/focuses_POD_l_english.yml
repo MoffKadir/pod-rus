@@ -195,6 +195,12 @@
  animal_spiritus_focus_desc: "Interact with animal spirits."
  animal_spiritus_focus_effect_desc: "Focusing on Spiritus grants:"
  animal_spiritus_visible: "Spiritus"
+
+ animal_flight_focus: "Flight Focus"
+ animal_flight_focus_modifier: "[GetFocus('animal_flight_focus').GetName]"
+ animal_flight_focus_desc: "Be at one with the sky."
+ animal_flight_focus_effect_desc: "Focusing on Flight grants:"
+ animal_flight_visible: "Flight"
  
  animal_abombwe_focus: "Abombwe Focus"
  animal_abombwe_focus_modifier: "[GetFocus('animal_abombwe_focus').GetName]"
@@ -236,41 +242,41 @@
  blessings_visible: "Blessings"
  
  #godbodies
- godbodies_lifestyle_name: "Godbodies"
- godbodies_lifestyle_desc: "Focus on the powers that come from Chi energy."
- godbodies_lifestyle_highlight_desc: "Because of your Dharma, you gain #P [GetPlayer.Custom('GetDharmaLifestylePercentageBoost')]#! more [experience|E] in this Lifestyle."
- monthly_godbodies_lifestyle_xp_gain_mult: "Monthly Godbodies [lifestyle|E] [experience|E]"
- 
- godbodies_metal_focus: "Metal Godbody Focus"
- godbodies_metal_focus_modifier: "[GetFocus('godbodies_metal_focus').GetName]"
- godbodies_metal_focus_desc: "The transformation of self into inhumanity, exchanging mortal weakness and frailty for purity and hardiness."
- godbodies_metal_focus_effect_desc: "Focusing on Metal Godbody grants:"
- 
- godbodies_wood_focus: "Wood Godbody Focus"
- godbodies_wood_focus_modifier: "[GetFocus('godbodies_wood_focus').GetName]"
- godbodies_wood_focus_desc: "The pruning of one's self and the cultivation of the $pod_wan_kuei$'s body, treating it like a garden."
- godbodies_wood_focus_effect_desc: "Focusing on Wood Godbody grants:"
- 
- godbodies_water_focus: "Water Godbody Focus"
- godbodies_water_focus_modifier: "[GetFocus('godbodies_water_focus').GetName]"
- godbodies_water_focus_desc: "The breakdown of barriers between the user and the self, opening the $pod_wan_kuei$ to change, while allowing him to remain fundamentally himself."
- godbodies_water_focus_effect_desc: "Focusing on Water Godbody grants:"
- 
- godbodies_fire_focus: "Fire Godbody Focus"
- godbodies_fire_focus_modifier: "[GetFocus('godbodies_fire_focus').GetName]"
- godbodies_fire_focus_desc: "The nature of flames to rise and consume without regard for its own survival."
- godbodies_fire_focus_effect_desc: "Focusing on Fire Godbody grants:"
- 
- godbodies_earth_focus: "Earth Godbody Focus"
- godbodies_earth_focus_modifier: "[GetFocus('godbodies_earth_focus').GetName]"
- godbodies_earth_focus_desc: "The balanced nature of earth, aiming to bring the various pulls and currents within a $pod_wan_kuei$'s soul into a harmonious centered equilibrium."
- godbodies_earth_focus_effect_desc: "Focusing on Earth Godbody grants:"
- 
- metalgodbody_visible: "Metal"
- woodgodbody_visible: "Wood"
- watergodbody_visible: "Water"
- firegodbody_visible: "Fire"
- earthgodbody_visible: "Earth"
+ #godbodies_lifestyle_name: "Godbodies"
+ #godbodies_lifestyle_desc: "Focus on the powers that come from Chi energy."
+ #godbodies_lifestyle_highlight_desc: "Because of your Dharma, you gain #P [GetPlayer.Custom('GetDharmaLifestylePercentageBoost')]#! more [experience|E] in this Lifestyle."
+ #monthly_godbodies_lifestyle_xp_gain_mult: "Monthly Godbodies [lifestyle|E] [experience|E]"
+ #
+ #godbodies_metal_focus: "Metal Godbody Focus"
+ #godbodies_metal_focus_modifier: "[GetFocus('godbodies_metal_focus').GetName]"
+ #godbodies_metal_focus_desc: "The transformation of self into inhumanity, exchanging mortal weakness and frailty for purity and hardiness."
+ #godbodies_metal_focus_effect_desc: "Focusing on Metal Godbody grants:"
+ #
+ #godbodies_wood_focus: "Wood Godbody Focus"
+ #godbodies_wood_focus_modifier: "[GetFocus('godbodies_wood_focus').GetName]"
+ #godbodies_wood_focus_desc: "The pruning of one's self and the cultivation of the $pod_wan_kuei$'s body, treating it like a garden."
+ #godbodies_wood_focus_effect_desc: "Focusing on Wood Godbody grants:"
+ #
+ #godbodies_water_focus: "Water Godbody Focus"
+ #godbodies_water_focus_modifier: "[GetFocus('godbodies_water_focus').GetName]"
+ #godbodies_water_focus_desc: "The breakdown of barriers between the user and the self, opening the $pod_wan_kuei$ to change, while allowing him to remain fundamentally himself."
+ #godbodies_water_focus_effect_desc: "Focusing on Water Godbody grants:"
+ #
+ #godbodies_fire_focus: "Fire Godbody Focus"
+ #godbodies_fire_focus_modifier: "[GetFocus('godbodies_fire_focus').GetName]"
+ #godbodies_fire_focus_desc: "The nature of flames to rise and consume without regard for its own survival."
+ #godbodies_fire_focus_effect_desc: "Focusing on Fire Godbody grants:"
+ #
+ #godbodies_earth_focus: "Earth Godbody Focus"
+ #godbodies_earth_focus_modifier: "[GetFocus('godbodies_earth_focus').GetName]"
+ #godbodies_earth_focus_desc: "The balanced nature of earth, aiming to bring the various pulls and currents within a $pod_wan_kuei$'s soul into a harmonious centered equilibrium."
+ #godbodies_earth_focus_effect_desc: "Focusing on Earth Godbody grants:"
+ #
+ #metalgodbody_visible: "Metal"
+ #woodgodbody_visible: "Wood"
+ #watergodbody_visible: "Water"
+ #firegodbody_visible: "Fire"
+ #earthgodbody_visible: "Earth"
  
  #shintai
  shintai_lifestyle_name: "Shintai"
@@ -425,50 +431,6 @@
  ironmountain_visible: "Iron Mountain"
  kiai_visible: "Kiai"
  hellweaving_visible: "Hellweaving"
- 
- #alternate techniques
- alternate_techniques_lifestyle_name: "Techniques"
- alternate_techniques_lifestyle_desc: "Focus on the alternate techniques from your Dharma."
- alternate_techniques_lifestyle_highlight_desc: "Because of your Dharma, you gain #P [GetPlayer.Custom('GetDharmaLifestylePercentageBoost')]#! more [experience|E] in this Lifestyle."
- monthly_alternate_techniques_lifestyle_xp_gain_mult: "Monthly Alternate Techniques [lifestyle|E] [experience|E]"
- 
- 
- alternate_techniques_combination_focus: "Combination Techniques Focus"
- alternate_techniques_combination_focus_modifier: "[GetFocus('alternate_techniques_combination_focus').GetName]"
- alternate_techniques_combination_focus_desc: "Discipline combination powers."
- alternate_techniques_combination_focus_effect_desc: "Focusing on Combination Techniques grants:"
- 
- alternate_techniques_yin_focus: "Yin Techniques Focus"
- alternate_techniques_yin_focus_modifier: "[GetFocus('alternate_techniques_yin_focus').GetName]"
- alternate_techniques_yin_focus_desc: "Alternate techniques of Bone Flowers."
- alternate_techniques_yin_focus_effect_desc: "Focusing on Yin Techniques grants:"
- 
- alternate_techniques_yang_focus: "Yang Techniques Focus"
- alternate_techniques_yang_focus_modifier: "[GetFocus('alternate_techniques_yang_focus').GetName]"
- alternate_techniques_yang_focus_desc: "Alternate techniques of Thrashing Dragons."
- alternate_techniques_yang_focus_effect_desc: "Focusing on Yang Techniques grants:"
- 
- alternate_techniques_prayer_eating_focus: "Prayer-Eating Focus"
- alternate_techniques_prayer_eating_focus_modifier: "[GetFocus('alternate_techniques_prayer_eating_focus').GetName]"
- alternate_techniques_prayer_eating_focus_desc: "Discipline commonly associated with the heretical Face of the Gods Dharma."
- alternate_techniques_prayer_eating_focus_effect_desc: "Focusing on Prayer-Eating grants:"
- 
- alternate_techniques_inward_way_focus: "Inward Way Focus"
- alternate_techniques_inward_way_focus_modifier: "[GetFocus('alternate_techniques_inward_way_focus').GetName]"
- alternate_techniques_inward_way_focus_desc: "Special Discipline developed by the followers of Tempest of Inward Focus Dharma."
- alternate_techniques_inward_way_focus_effect_desc: "Focusing on Inward Way grants:"
- 
- alternate_techniques_tempest_of_inward_focus_focus: "Tempest of Inward Focus Focus"
- alternate_techniques_tempest_of_inward_focus_focus_modifier: "[GetFocus('alternate_techniques_tempest_of_inward_focus_focus').GetName]"
- alternate_techniques_tempest_of_inward_focus_focus_desc: "Martial art form developed by the heretical Dharma of the Seekers of the Inward Way."
- alternate_techniques_tempest_of_inward_focus_focus_effect_desc: "Focusing on Tempest of Inward Focus grants:"
- 
- combination_techniques_visible: "Combination Techniques"
- yin_techniques_visible: "Yin Techniques"
- yang_techniques_visible: "Yang Techniques"
- prayer_eating_visible: "Prayer-Eating"
- inward_way_visible: "Inward Way"
- tempest_of_inward_focus_visible: "Tempest of Inward Focus"
  
  #Qiao
  qiao_lifestyle_name: "Qiao"

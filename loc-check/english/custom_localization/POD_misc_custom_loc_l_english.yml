@@ -13,7 +13,8 @@
  THIS_IS_YOU_REDEMPTION: "This is you... but at what cost?"
  THIS_IS_YOU_CRINOS: "This is you, and you are ready for #italic carnage#!"
  THIS_IS_YOU_VICISSITUDE: "This is the perfect version of you"
- THIS_IS_YOU_DEMON: "This is your true form"
+ THIS_IS_YOU_DEMON_HIGH: "This is finally you, all of you"
+ THIS_IS_YOU_DEMON: "This is you, or at least part of you"
  
  
  POD_splat_spirit: "[GetTrait('spirit').GetName(GetNullCharacter)]"
@@ -82,7 +83,9 @@
  POD_domicile_werewolf: "caern"
  POD_domicile_fae: "freehold"
  POD_domicile_mummy: "tomb"
- POD_domicile_generic: "lair"
+ POD_domicile_generic: "hideout"
+
+ POD_domicile_title: "[holder.GetFirstNamePossessiveNoTooltip] [holder.Custom('PODDomicile')|U]"
 
  POD_gamemode_icon_samuel_haight: "#TOOLTIP:POD_gamemode_icon_samuel_haight_tt @haight_icon!#! "
  POD_gamemode_icon_samuel_haight_tt: "$pod_samuel_haight_mode_with_icon$ is active"
