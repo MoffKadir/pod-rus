@@ -37,9 +37,9 @@
 
  rule_pod_losing_golconda: "$POD_gamerule$ Потеря Голконды"
  setting_pod_losing_golconda_default: "Правила по умолчанию"
- setting_pod_losing_golconda_default_desc: "Вы потеряете состояние [Concept('golconda', 'Голконды')|E], если впадёте в буйство или совершите убийство, воровство и отвратительные поступки."
+ setting_pod_losing_golconda_default_desc: "Вы потеряете состояние [Concept('golconda', 'Голконды')|E], если впадёте в буйство или совершите убийство, воровство и отвратительные поступки. 'Crisis of Dharma' mental break for $POD_splat_kueijin$ will trigger only at level 4 mental breakdown"
  setting_pod_losing_golconda_harsher: "#high @wod_icon! Более строгие правила#!"
- setting_pod_losing_golconda_harsher_desc: "В дополнение к правилам по умолчанию, вы также потеряете состояние [Concept('golconda', 'Голконды')|E] при объявлении наступательных войн или при даровании [Concept('Embrace', 'Объятий')|E], создавших дитя."
+ setting_pod_losing_golconda_harsher_desc: "В дополнение к правилам по умолчанию, вы также потеряете состояние [Concept('golconda', 'Голконды')|E] при объявлении наступательных войн или при даровании [Concept('Embrace', 'Объятий')|E], создавших дитя. 'Crisis of Dharma' mental break for $POD_splat_kueijin$ will also trigger at level 3 mental breakdown."
 
  rule_pod_seek_knowledge_cost_increase: "$POD_gamerule$ Стоимость изучения новых способностей"
  setting_pod_seek_knowledge_cost_increase_enabled: "Увеличивается"
@@ -76,6 +76,23 @@
  setting_pod_splat_mixing_default_desc: "Стандартные ограничения на смешение #L $pod_splats|l$ов#!."
  setting_pod_splat_mixing_haight_mode: "#high @haight_icon! Режим Сэмюеля Хайта#!"
  setting_pod_splat_mixing_haight_mode_desc: "Многие ограничения на смешение #L $pod_splats|l$ов#! ослаблены (см. подробнее #L $pod_samuel_haight_mode_with_icon$ь Хайт#!)."
+
+ rule_pod_fog_of_war: "$POD_gamerule$ Fog of War"
+ setting_pod_fog_of_war_disabled: "Disabled"
+ setting_pod_fog_of_war_disabled_desc: "You have perfect knowledge about random outcomes and other characters, like in vanilla CK3."
+ setting_pod_fog_of_war_enabled: "#high Enabled#!"
+ setting_pod_fog_of_war_enabled_desc: "Many instances of meta-knowledge are now hidden by the game. #clickable This feature is WIP, and more content will be added in the future. For the time being, it is recommended to pick the \"Custom\" setting instead.#!"
+ #setting_pod_fog_of_war_enabled_desc: "Many instances of meta-knowledge are now hidden by the game, and you won't know anything about other characters until you gather more information first."
+ setting_pod_fog_of_war_custom: "#high Custom#!"
+ setting_pod_fog_of_war_custom_desc: "You get to customize what kind of meta-knowledge is hidden."
+
+ rule_pod_random_outcomes: "$POD_gamerule$ Fog of War: Random Outcomes"
+ setting_pod_random_outcomes_percentages: "Percentages"
+ setting_pod_random_outcomes_percentages_desc: "Random outcomes are shown as percentages, like in vanilla CK3."
+ setting_pod_random_outcomes_immersive: "#high Immersive#!"
+ setting_pod_random_outcomes_immersive_desc: "Random outcomes are shown as a rough estimate, e.g. \"Unlikely to happen\" or \"Likely to happen\"."
+ setting_pod_random_outcomes_uncertain: "#high Uncertain#!"
+ setting_pod_random_outcomes_uncertain_desc: "You don't get any info on the likelihood of random outcomes."
 
  rule_pod_endgame_delay: "$POD_gamerule$ Отсрочка конца игры"
  setting_pod_endgame_delay_canon: "Канонично"
@@ -290,6 +307,14 @@
  setting_pod_levies_disabled: "#high Без ополчения#!"
  setting_pod_levies_disabled_desc: "Все персонажи получают модификатор [GetModifier('pod_no_levies_modifier').GetNameWithTooltip].\n\nМожет потребоваться подождать 1 день в игре, чтобы модификатор был применен правильно. Ополчение по-прежнему будут присутствовать в составе войск наёмников или особых войск."
 
+ rule_pod_conqueror_ai: "$POD_gamerule$ #clickable Experimental:#! Conqueror AI"
+ setting_pod_conqueror_ai_disabled: "Disabled"
+ setting_pod_conqueror_ai_disabled_desc: "AI characters will behave like normal, and make decisions according to their personalities."
+ setting_pod_conqueror_ai_enabled: "#high Conqueror AI#!"
+ setting_pod_conqueror_ai_enabled_desc: "All non-player characters get the Conqueror AI.\n\nThis doesn't literally give them the [GetTrait('conqueror').GetName( GetNullCharacter )] trait or make them declare wars more frequently. They will, however, spend less money on frivolous things and invest into war as much as they can."
+ setting_pod_conqueror_ai_bloodthirsty: "#high Bloodthirsty AI#!"
+ setting_pod_conqueror_ai_bloodthirsty_desc: "All non-player characters get the Conqueror AI. In addition, they get a hidden modifier that greatly increases their desire for war."
+
  rule_pod_sorcery_6th_perk_requirements: "$POD_gamerule$ Шестое достоинство в чародействе"
  setting_pod_sorcery_6th_perk_requirements_always_unlocked: "#high Всегда открыто#!"
  setting_pod_sorcery_6th_perk_requirements_always_unlocked_desc: "Вы можете выбрать чародейские способности с 6 точками, как и любое другое достоинство, без необходимости завершать [Concept('journey', 'странствие')|E]."
@@ -313,3 +338,11 @@
  setting_pod_tournament_restrictions_fewer_desc: "Все [Concept('splat', 'виды')|E], которые могут есть человеческую пищу и ходить под солнечным светом, могут участвовать в #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#!."
  setting_pod_tournament_restrictions_none: "#high Без ограничений#!"
  setting_pod_tournament_restrictions_none_desc: "Все [Concept('splat', 'виды')|E] могут участвовать в #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#!. Это приведёт к #N бессмысленным#! событиям."
+
+ rule_POD_wheel_of_ages_speed: "$POD_gamerule$ Wheel of Ages Speed"
+ setting_POD_wheel_of_ages_speed_slow: "#high Slow#!"
+ setting_POD_wheel_of_ages_speed_slow_desc: "The Wheel of Ages speed is halved."
+ setting_POD_wheel_of_ages_speed_normal: "Normal"
+ setting_POD_wheel_of_ages_speed_normal_desc: "The Wheel of Ages progresses at normal speed."
+ setting_POD_wheel_of_ages_speed_fast: "#high Fast#!"
+ setting_POD_wheel_of_ages_speed_fast_desc: "The Wheel of Ages speed is doubled."
