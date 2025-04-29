@@ -1,5 +1,8 @@
 ﻿l_russian:
-  
+
+ POD_demon_maintenance.1.t: "Devil's Due"
+ POD_demon_maintenance.1.desc: "Every year your power grows from the worship of your cultists."
+
  POD_demon_maintenance.10.t: "Сосуд"
  POD_demon_maintenance.10.desc: "Чтобы оставаться в Творении, демон должен обитать в каком-то физическом сосуде. Демоны ненавидят свои сосуды - оболочки, внутри которых они вынуждены прятаться в никчемном мире Бога; хотя это и лучше, чем неизбежное небытие Бездны, это всё же является своего рода тюрьмой, и каждое мгновение, проведённое в физическом теле, является ещё одной причиной ненавидеть Бога. Они с нетерпением ждут того времени, когда смогут поджечь весь материальный мир, наблюдая за великолепным разрушением, не выходя из своего отвратительного духовного царства.\n#X С точки зрения игры, Привязанные действительно бессмертны, но их душа должна находиться в какой-то части материального мира. Это может быть их столица, в результате чего они не могут возглавить армию, перемещать свою столицу и будут отброшены обратно в тюрьму Бездны, если потеряют её. Или они могут быть привязаны к реликварию - артефакту, который дает им больше мобильности, но также гораздо более хрупок. Если реликвария будет уничтожена, Демон снова попадет в Бездну, а побег из неё обходится очень дорого.#!"
  POD_demon_maintenance.10.option.a: "Я завладел человеком-носителем."
@@ -34,6 +37,17 @@
  POD_demon_maintenance.70.option.a: "It was an honest mistake!"
  POD_demon_arcana.100.t: "Приобрести Оружие Зверя"
  POD_demon_arcana.100.desc: "Приобритение нового звериного оружия."
+ POD_demon_arcana.100.a: "[GetModifier('arsenal_of_the_beast_claws_modifier').GetNameWithTooltip]"
+ POD_demon_arcana.100.b: "[GetModifier('arsenal_of_the_beast_fangs_modifier').GetNameWithTooltip]"
+ POD_demon_arcana.100.c: "[GetModifier('arsenal_of_the_beast_gaping_maw_modifier').GetNameWithTooltip]"
+ POD_demon_arcana.100.d: "[GetModifier('arsenal_of_the_beast_horns_modifier').GetNameWithTooltip]"
+ POD_demon_arcana.100.e: "[GetModifier('arsenal_of_the_beast_lashing_tail_modifier').GetNameWithTooltip]"
+ POD_demon_arcana.100.f: "[GetModifier('arsenal_of_the_beast_poison_modifier').GetNameWithTooltip]"
+ POD_demon_arcana.100.g: "[GetModifier('arsenal_of_the_beast_venom_spit_modifier').GetNameWithTooltip]"
+ POD_demon_arcana.100.h: "[GetModifier('arsenal_of_the_beast_spines_modifier').GetNameWithTooltip]"
+ POD_demon_arcana.100.i: "[GetModifier('arsenal_of_the_beast_tentacles_modifier').GetNameWithTooltip]"
+ POD_demon_arcana.100.j: "[GetModifier('arsenal_of_the_beast_wings_modifier').GetNameWithTooltip]"
+
  POD_demon_arcana.201.t: "Чудовищный Служитель"
  POD_demon_arcana.201.desc: "С твоими Знаниями Нечистоты вы можете попытаться создать статую, которую затем можно будет использовать в качестве временного тела-носителя."
  POD_demon_arcana.201.option.a: "Идеальное искусственное тело."
@@ -123,14 +137,15 @@
  POD_demon_flavor.5.t: "Воспоминания: Ад на Земле"
  POD_demon_flavor.5.desc: "Вы были одним из немногих счастливчиков, которых в конечном итоге вызвали из Бездны, что позволило вам сбежать в мир смертных после тысячелетних мучений вместе с вашими собратьями-мятежниками. Мир сильно изменился со времени вашего заключения. Повсюду войны и отчаяние, свирепствуют болезни, а рай, который был Эдемом, на данный момент кажется мифом. Человечество всё ещё поклоняется Богу, но в разных формах, и борется за то, какая форма лучше.\nВозможно, он действительно отвернулся от Земли, возможно, из-за восстания Люцифера или неудач человечества. В любом случае, какой была ваша первая реакция, когда вы впервые увидели этот новый мир?"
  POD_demon_flavor.5.a: "Его нужно очистить!"
- demonic_objective_final_war_unlock: "Unlock #s $final_war_objective_decision$ Objective#!"
+ demonic_objective_final_war_unlock: "Unlock #s $POD_demon_final_war_objective_decision$ Objective#! if you have completed the previous objectives"
  POD_demon_flavor.5.b: "Так много потенциальных последователей!"
- demonic_objective_overthrow_unlock: "Unlock #s $overthrow_heaven_objective_decision$ Objective#!"
+ demonic_objective_overthrow_unlock: "Unlock #s $POD_new_genesis_objective_decision$ Objective#! if you have completed the previous objectives"
  POD_demon_flavor.5.c: "Может быть, где-то есть слабая надежда на искупление."
- chance_of_redemption_unlock: "Unlock #s $demon_redemption_objective_decision$ Objective#!"
+ chance_of_redemption_unlock: "Unlock #s $POD_demon_redemption_objective_decision$ Objective#!"
  POD_demon_flavor.5.d: "I must find answers to the Divine question."
- demonic_objective_knowledge_unlock: "Unlock #s $demonic_knowledge_objective_decsion$ Objective#!"
-  # demon demand 
+ demonic_objective_knowledge_unlock: "Unlock #s $demonic_knowledge_objective_decsion$ Objective#! if you have completed the previous objectives"
+
+ # demon demand
  POD_demon_demand.101.t: "[demon.GetFirstName]'s Demand"
  POD_demon_demand.101.desc: "Infernalism is a double edged sword. While your master gives you untold powers, they also ask much of you. For your relationship to remain mutually beneficial and not anger your powerful patron, you will have to comply sooner rather than later.\nThis time, your unholy partner asked that you offer them direct control over some of your territory."
  POD_demon_demand.100.a: "Yes, my lord."
