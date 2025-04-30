@@ -25,6 +25,9 @@
  BOOKMARK_CHARACTER_DIFFICULTY_VERY_HARD: "#bold;color:{1,0.24,0.32};glow_color:{0,0,0,1} Очень тяжёлая#!"
  BOOKMARK_CHARACTER_DIFFICULTY_EXTREMELY_HARD: "#bold;color:{0,0,0};glow_color:{1,0,0,1} Невозможная...?#!"
 
+ # Knight button in character window
+ CHARACTER_WINDOW_MILITARY_STRENGTH_TOOLTIP: "[CharacterWindow.GetMilitaryStrengthTooltip][AddLocalizationIf(Not(StringIsEmpty(CharacterWindow.GetMenAtArmsSubjectRecruitmentPotentialTooltip)),'MAA_SUBJECT_ACCESS_POTENTIAL')][Localize('pod_knight_window_hint')]"
+
  # Replace perks loca
  planned_cultivation_perk_name: "Житейство"
  DOMESTIC_AFFAIRS_EFFICIENCY_BONUS: "Эффективность [Concept('domestic_affairs', 'внутренних дел')|E]: #P +[EmptyScope.ScriptValue('chains_of_loyalty_percentage')|0]%#!\nОткрывает [buy_artifact_claim_interaction|El]"
@@ -332,11 +335,29 @@
  DECISIONS_BUTTON_CONTAINER: "#T Решения и $TASK_CONTRACT_CONTRACT_PLURAL$#!"
  GOVERNANCE_ISSUE: "[task_contract|E]"
  GOVERNANCE_ISSUE_TIER: "[task_contract_tier|E]"
+ SETTLEMENT_ISSUE: "[task_contract|E]"
+ SETTLEMENT_ISSUE_TIER: "[task_contract_tier|E]"
  TASK_CONTRACT_ISSUE: "$TASK_CONTRACT_CONTRACT$"
  TASK_CONTRACT_ISSUE_PLURAL: "$TASK_CONTRACT_CONTRACT_PLURAL$"
  TASK_CONTRACT_ISSUE_POSSESSIVE: "$TASK_CONTRACT_CONTRACT_POSSESSIVE$"
  TASK_CONTRACT_ISSUE_POSSESSIVE_PLURAL: "$TASK_CONTRACT_CONTRACT_POSSESSIVE_PLURAL$"
+ TASK_CONTRACT_SETTLEMENT_ISSUE: "$TASK_CONTRACT_CONTRACT$"
+ TASK_CONTRACT_SETTLEMENT_ISSUE_PLURAL: "$TASK_CONTRACT_CONTRACT_PLURAL$"
+ TASK_CONTRACT_SETTLEMENT_ISSUE_POSSESSIVE: "$TASK_CONTRACT_CONTRACT_POSSESSIVE$"
+ TASK_CONTRACT_SETTLEMENT_ISSUE_POSSESSIVE_PLURAL: "$TASK_CONTRACT_CONTRACT_POSSESSIVE_PLURAL$"
  TASK_CONTRACT_NAME: "#T [TaskContract.GetType.GetName]#!\n[AddTextIf( And( CHARACTER.IsValid, Not(TaskContract.MakeScope.Var('hide_employer').IsSet) ), Concatenate3(Concatenate3('#E ',Concept('contractor',Localize('game_concept_contractor')),'#!: '),CHARACTER.GetShortUIName,'\n') )]$TASK_CONTRACT_TIER$: #V [Select_CString( TaskContract.IsHard, '3', Select_CString( TaskContract.IsMedium, '2', '1'))]#!\n\n[TaskContract.GetTaskContractRequest]\n\n#weak [TaskContract.GetTaskContractDescription]#!"
+
+ # Domicile types
+ camp_domicile_type: "$haven_landed_domicile_type$"
+ camp_domicile_type_tooltip: "$haven_landed_domicile_type_tooltip$"
+ camp_domicile_type_possessive: "$haven_landed_domicile_type_possessive$"
+ camp_domicile_title: "$haven_landed_domicile_title$ персонажа [CHARACTER.GetFirstNamePossessiveNoTooltip]"
+
+ camp_main_01_domicile_building: "Убежище"
+ camp_main_01_domicile_building_desc: "В этом убежище живут такие люди, как стражники, слуги и дипломаты. Даже если бы резиденцию пришлось покинуть, люди, находящиеся в ней, последовали бы за своим лидером куда угодно - верные до конца."
+
+ domicile_name: "[CHARACTER.Custom('PODDomicile')|U] персонажа [CHARACTER.GetFirstNameNoTooltip]"
+ domicile_name_possessive: "[CHARACTER.Custom('PODDomicile')|U] персонажа [CHARACTER.GetFirstNameNoTooltip]"
 
  # Domicile flags (temporary)
  # Other flags (need to test):
@@ -381,6 +402,7 @@
  domicile_building_parameter_camp_unlocks_chief_engineer_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('chief_engineer_camp_officer').GetName()]» $pod_only_if_unlanded$"
  domicile_building_parameter_camp_unlocks_chief_engineer_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('chief_engineer_camp_officer').GetName()]» $pod_only_if_unlanded$"
  domicile_building_parameter_camp_unlocks_camp_priest_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('camp_priest_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_better_scout_for_talent: "Используйте «[GetTravelOption('adventurers_scout_for_talent_option').GetName]», чтобы найти больше [Concept( 'officers', 'подручных' )|E] $pod_only_if_unlanded$"
 
  # Visit local settlement
  local_holding_type_concept_grand_city_holding: "[grand_city_holding|E]"

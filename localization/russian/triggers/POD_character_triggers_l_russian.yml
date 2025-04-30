@@ -7,9 +7,6 @@
  CHARACTER_IS_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "[CHARACTER.GetShortUIName|U] #bold не#! [Select_CString( CHARACTER.IsLocalPlayer, 'являетесь', 'является')] [Concept('courtier', 'придворным')|E] или [Concept('direct_vassal', 'прямым вассалом')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  I_AM_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "Вы #bold не#! являетесь [Concept('courtier', 'придворным')|E] или [Concept('direct_vassal', 'прямым вассалом')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
- has_full_true_name_hook: "Имеет [Concept('strong_hooks', 'сильное влияние')|E] #weak ($true_name_hook$)#! на персонажа [TARGET_CHARACTER.GetName]"
- not_has_full_true_name_hook: "Не имеет [Concept('strong_hooks', 'сильного влияния')|E] #weak ($true_name_hook$)#! на персонажа [TARGET_CHARACTER.GetName]"
-
  NOT_POD_permanent_scarred: "[trait|E] «[GetTrait('scarred').GetName( GetPlayer )]» [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] не может быть исцелено"
  NOT_POD_permanent_disfigured: "[trait|E] «[GetTrait('disfigured').GetName( GetPlayer )]» [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] не может быть исцелено"
  NOT_POD_permanent_blind: "[trait|E] «[GetTrait('blind').GetName( GetPlayer )]» [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] не может быть исцелено"
