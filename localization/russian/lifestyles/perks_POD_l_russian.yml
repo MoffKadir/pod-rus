@@ -392,6 +392,20 @@
  spiritusadvanced_perk_name: "Мастерство Шаманизма"
  the_spirit_beast_perk_name: "Духовный зверь"
 
+ #Animal: Flight
+
+ flight_1_perk_name: "Полёт 25км/ч"
+ flight_2_perk_name: "Полёт 50км/ч"
+ flight_3_perk_name: "Полёт 70км/ч"
+ flight_4_perk_name: "Полёт 95км/ч"
+ flightadvanced_perk_name: "Мастерство Полёта"
+ flight_6_perk_name: "Полёт 150км/ч"
+ flight_7_perk_name: "Полёт 180км/ч"
+ flight_8_perk_name: "Полёт 210км/ч"
+ flight_9_perk_name: "Полёт 240км/ч"
+ flight_10_perk_name: "Полёт 270км/ч"
+ flight_11_perk_name: "Полёт 300км/ч"
+
  #Animal: Abombwe
 
  predators_communion_perk_name: "Общение хищника"
@@ -565,337 +579,19 @@
  red_fortunes_perk_name: "Судьбы войны"
  red_forge_perk_name: "Кузница Бога"
 
- #Godbody: Metal
- the_bright_metal_sheet_perk_name: "Яркий металлический лист"
- metal_within_perk_name: "Металл в себе"
- dark_metal_self_perk_name: "Душа из тёмного металла"
- metal_rain_perk_name: "Металлический дождь"
- yin_metal_soul_perk_name: "Металлическая душа Инь"
-
- #Godbody: Wood
- pruning_the_self_perk_name: "Подрезание лепестков"
- transplanting_the_self_perk_name: "Пересадка сознания"
- the_world_garden_perk_name: "Сад мира"
- the_vital_command_perk_name: "Важнейший приказ"
- the_spark_of_life_perk_name: "Искра жизни"
-
- #Godbody: Water
- command_the_flow_in_self_perk_name: "Управление потоком сознания"
- command_the_flow_in_others_perk_name: "Управление чужими потоками"
- the_self_of_water_perk_name: "Сознание воды"
- the_water_lash_perk_name: "Водный хлыст"
- the_soul_tide_perk_name: "Прилив души"
-
- #Godbody: Fire
- fire_in_the_eye_perk_name: "Огонь в глазах"
- fire_in_the_hand_perk_name: "Огонь в руке"
- self_in_the_fire_perk_name: "Сознание огня"
- draining_the_fire_perk_name: "Иссушение огня"
- the_tempered_soul_perk_name: "Закалённая душа"
-
- #Godbody: Earth
- understanding_with_the_earth_perk_name: "Взаимопонимание земли"
- harmony_with_the_earth_perk_name: "Гармония земли"
- unity_with_the_earth_perk_name: "Единство с землёй"
- moving_with_the_earth_perk_name: "Движение с землёй"
- the_elemental_self_perk_name: "Сознание стихий"
-
- #Shintai: Bone
- corpse_skin_perk_name: "Кожа трупа"
- white_tiger_corpse_perk_name: "Труп белого тигра"
- bone_obedience_perk_name: "Послушание костей"
- five_poison_cloud_perk_name: "Облако пяти ядов"
- ching_shih_perk_name: "Ц'инь Ши"
- ikehone_perk_name: "Композиция кости"
- skeletal_sculpting_perk_name: "Лепка скелета"
- corpse_awakening_perk_name: "Пробуждение трупа"
- form_of_infernal_favor_perk_name: "Адский лик"
-
- #Shintai: Flesh
- long_neck_perk_name: "Длинная шея"
- detach_limb_perk_name: "Отделяя конечность"
- lotus_breath_perk_name: "Дыхание лотоса"
- pelesit_perk_name: "Палесит"
- ten_thousand_forms_perk_name: "Десять тысяч форм"
- body_of_the_mouse_perk_name: "Тело мыши"
- body_of_the_serpent_perk_name: "Тело змеи"
- bloat_perk_name: "Вздутие"
- unchaining_the_form_perk_name: "Освобождение формы"
-
- #Shintai: Blood
- permeate_perk_name: "Пропитка"
- blood_atemi_perk_name: "Кровь атеми/Кровавый плевок"
- flow_like_blood_perk_name: "Поток крови"
- bloodlash_perk_name: "Кровоток"
- blood_awakening_perk_name: "Пробуждение крови"
- blood_blade_perk_name: "Кровавый клинок"
- blood_of_the_scorpion_perk_name: "Кровь скорпиона"
- corruption_of_the_blood_perk_name: "Кровавая порча"
- blood_leeching_perk_name: "Кровавая пиявка"
-
- #Shintai: Ghost-Flame
- goblin_face_perk_name: "Призрачный лик"
- goblin_spark_perk_name: "Призрачная вспышка"
- goblin_shapes_perk_name: "Призрачные фигуры"
- goblin_scorch_perk_name: "Призрачный ожог"
- goblin_lantern_perk_name: "Призрачный фонарь"
- goblin_sword_perk_name: "Призрачный меч"
- goblin_portal_perk_name: "Призрачные врата"
- goblin_call_perk_name: "Призрачный зов"
- mantle_of_the_flame_emperor_perk_name: "Мантия императора Пламени"
-
- #Shintai: Jade
- stand_upon_the_dragons_back_perk_name: "Вставая на спину дракона"
- tread_the_thrashing_dragons_tail_perk_name: "Шагая по хвосту бьющегося дракона"
- placate_the_earth_dragon_perk_name: "Милость дракона земли"
- harnessing_the_dragons_breath_perk_name: "Запрягая дыхание дракона"
- jade_servant_of_the_august_personage_perk_name: "Нефритовый служитель императора"
- stone_fish_perk_name: "Каменная рыба"
- blade_of_stone_perk_name: "Каменный клинок"
- taste_of_jade_perk_name: "Вкус нефрита"
- augment_perk_name: "Дополнение"
-
- #Chi arts: Yin prana
- shrouded_moon_perk_name: "Скрытая луна"
- yin_mantle_perk_name: "Мантия Инь"
- bone_dance_perk_name: "Танец кости"
- eightfold_yin_mantle_perk_name: "Восьмислойная мантия Инь"
- semblance_of_the_ebon_dragon_perk_name: "Лик эбенового дракона"
- yin_shield_perk_name: "Щит Инь"
- yin_nihilus_perk_name: "Нихилус Инь"
- touch_of_rust_perk_name: "Прикосновение коррозии"
- iron_corpse_perk_name: "Железный труп"
-
- #Chi arts: Yang prana
- principle_of_motion_perk_name: "Рождение движения"
- yang_mantle_perk_name: "Мантия Ян"
- dragon_dance_perk_name: "Танец дракона"
- eightfold_yang_mantle_perk_name: "Восьмислойная мантия Ян"
- semblance_of_the_scalet_queen_perk_name: "Лик алой королевы"
- yang_shield_perk_name: "Щит Ян"
- yang_phoenix_perk_name: "Феникс Ян"
- touch_of_corruption_perk_name: "Прикосновение порчи"
- oaken_corpse_perk_name: "Дубовый труп"
-
- #Chi arts: Equilibrium
- master_flow_perk_name: "Управление потоком"
- adjust_balance_perk_name: "Коррекция баланса"
- shift_the_balance_perk_name: "Изменение баланса"
- chi_interrupt_perk_name: "Нарушение течения"
- chi_mastery_perk_name: "Власть над Ци"
- soothing_the_soul_perk_name: "Умиротворение души"
- accentuate_chi_perk_name: "Усиление Ци"
- opening_the_gates_perk_name: "Открытие врат"
- adjust_the_true_balance_perk_name: "Обретение истинного баланса"
-
- #Chi arts: Tapestry
- spirit_call_perk_name: "Призыв духа"
- chi_ward_perk_name: "Стена Ци"
- chi_shaping_perk_name: "Лепка Ци"
- ride_the_dragon_perk_name: "Верхом на драконе"
- chi_rift_perk_name: "Разрыв Ци"
- celestial_needle_perk_name: "Небесная игла"
- dragon_chariot_perk_name: "Колесница драконов"
- chi_castle_perk_name: "Дворец Ци"
- the_dragons_rapine_perk_name: "Драконий бросок"
-
- #Chi arts: Feng Shui
- wind_water_eye_perk_name: "Око ветра и воды"
- broom_of_heaven_perk_name: "Метла небес"
- hand_of_darkness_perk_name: "Рука тьмы"
- inharmonious_aligment_perk_name: "Нарушение гармонии"
- fengshui_chi_ward_perk_name: "Стена Ци"
- beneficent_celestial_mirror_perk_name: "Великое небесное зеркало"
- dancing_spirits_perk_name: "Танец духов"
- veil_of_defilement_perk_name: "Сосуд скверны"
- transcendend_portal_perk_name: "Великие врата"
-
- #Soul arts: Chi'iu Muh
- rasa_perk_name: "Раса"
- chi_sight_perk_name: "Зрение Ци"
- dragon_ward_perk_name: "Стена драконов"
- purification_perk_name: "Очищение"
- spirit_eating_perk_name: "Пожирание души"
- shield_of_the_soul_perk_name: "Щит души"
- banking_the_fire_calming_the_waves_perk_name: "Затухание огня, успокоение волн"
- soul_taint_perk_name: "Запятнанная душа"
- soul_exchange_perk_name: "Обмен душ"
-
- #Soul arts: Cultivation
- scrutinize_perk_name: "Изучение"
- cleave_the_demon_perk_name: "Отсечение демона"
- lash_the_demon_perk_name: "Хлестание демона"
- yoke_the_demon_perk_name: "Обуздание демона"
- two_become_one_perk_name: "Двое становятся одним"
- evocation_of_madness_perk_name: "Пробуждение безумия"
- degradation_perk_name: "Падение"
- strengthening_the_demon_perk_name: "Пробуждение демона"
- darkling_mirror_perk_name: "Тёмное отражение"
-
- #Soul arts: Internalize
- no_mind_perk_name: "Неразумие"
- blood_yoga_perk_name: "Йога крови"
- distant_death_kata_perk_name: "Ката направленной смерти"
- iron_soul_perk_name: "Железная душа"
- harmony_with_the_all_perk_name: "Гармония со вселенной"
- reaping_the_dragons_road_perk_name: "Энергия путей дракона"
- steel_soul_perk_name: "Стальная душа"
- armor_of_enlightenment_perk_name: "Щит просветлённости"
- holding_the_green_demon_at_bay_perk_name: "Удержание зелёного дракона на привязи"
-
- #Soul arts: Obligation
- evaluate_perk_name: "Оценка"
- soul_bridge_perk_name: "Связь душ"
- authority_perk_name: "Величие"
- thousand_hell_stare_perk_name: "Взгляд тысячи преисподен"
- soul_shackles_perk_name: "Оковы души"
- taming_the_fire_perk_name: "Укрощение огня"
- corrupt_the_will_perk_name: "Извращение воли"
- voice_of_the_emperor_perk_name: "Глас императора"
- divine_fetters_perk_name: "Божественные оковы"
-
- #Soul arts: Mibasham
- the_lens_of_the_self_perk_name: "Внутренняя линза"
- porsdan_perk_name: "Порс'дан"
- stepping_stones_perk_name: "Камни брода"
- a_stumble_on_the_path_perk_name: "Помеха на пути"
- riddle_of_maya_perk_name: "Загадки Майи"
- veil_of_maya_perk_name: "Вуаль Майи"
- bakus_quandary_perk_name: "Замешательство Баку"
- beyond_the_door_perk_name: "Шаг за дверь"
- revisionist_reality_perk_name: "Изменение пути"
-
- #Soul arts: Tzu Wei
- fate_of_the_one_perk_name: "Судьба одного"
- joss_weaving_perk_name: "Кружева удачи"
- fate_of_the_wu_perk_name: "Судьба семьи"
- grand_dukes_theorem_perk_name: "Помощь великого князя"
- realigning_the_stars_perk_name: "Подстановка звёзд"
- pantheon_of_ancestors_perk_name: "Наследие прошлых жизней"
- fate_of_the_court_perk_name: "Судьба двора"
- celestial_curse_perk_name: "Проклятие небес"
- substitution_of_the_twelve_perk_name: "Перерождение"
-
- #Demon arts: Black Wind
- black_wind_1_perk_name: "Чёрный ветер 1"
- black_wind_2_perk_name: "Чёрный ветер 2"
- black_wind_3_perk_name: "Чёрный ветер 3"
- black_wind_4_perk_name: "Чёрный ветер 4"
- black_wind_5_perk_name: "Чёрный ветер 5"
- a_thousand_cuts_perk_name: "Тысяча ударо"
- treading_the_tide_dragons_back_perk_name: "Бег по спине водного дракона"
- divine_whirlwind_perk_name: "Божественный вихрь"
- transcending_po_perk_name: "Ограничение П'о"
-
- #Demon arts: Demon Shintai
- demon_shintai_1_perk_name: "Синтай демона 1"
- demon_shintai_2_perk_name: "Синтай демона 2"
- demon_shintai_3_perk_name: "Синтай демона 3"
- demon_shintai_4_perk_name: "Синтай демона 4"
- demon_shintai_5_perk_name: "Синтай демона 5"
- flesh_mastery_of_the_demon_form_perk_name: "Плоть демона"
- bone_mastery_of_the_demon_form_perk_name: "Кость демона"
- blood_mastery_of_the_demon_form_perk_name: "Кровь демона"
- jade_mastery_of_the_demon_form_perk_name: "Нефритовый демон"
-
- #Demon arts: Iron Mountain
- iron_mountain_1_perk_name: "Железная гора 1"
- iron_mountain_2_perk_name: "Железная гора 2"
- iron_mountain_3_perk_name: "Железная гора 3"
- iron_mountain_4_perk_name: "Железная гора 4"
- iron_mountain_5_perk_name: "Железная гора 5"
- flaying_the_demon_perk_name: "Бичевание демона"
- torturous_transcendence_perk_name: "Великолепие боли"
- striking_the_fire_perk_name: "Огнеупорность"
- exalted_resilience_of_the_heavenly_perk_name: "Стойкость небесной нефритовой горы"
-
- #Demon arts: Kiai
- focusing_shout_perk_name: "Фокусирующий крик"
- aspect_of_the_timid_sparrow_perk_name: "Стиль пугливого воробья"
- ngilai_perk_name: "Нгилай"
- the_song_of_the_tormented_soul_perk_name: "Песня страдающей души"
- greater_ngilai_perk_name: "Великий нгилай"
- cry_of_blood_perk_name: "Крик крови"
- tigers_roar_perk_name: "Рык тигра"
- cry_of_the_phantasm_perk_name: "Вопль фантазма"
- shout_opening_the_way_to_heaven_perk_name: "Крик, открывающий путь к небесам"
-
- #Demon arts: Hellweaving
- glimpse_of_yomi_perk_name: "Образы йоми"
- razor_winds_perk_name: "Рвущие ветра"
- favour_of_the_yama_kings_perk_name: "Благосклонность повелителей Яма"
- remembrance_of_yomi_perk_name: "Воспоминания о йоми"
- weaving_the_yomi_world_perk_name: "Кружева миров йоми"
- flood_of_wickedness_perk_name: "Источник порока"
- yomi_portal_perk_name: "Врата йоми"
- gift_of_po_perk_name: "П'о в дар"
- the_red_bridge_perk_name: "Красный мост"
-
- #Alternate Techniques: Combo
- taking_the_face_perk_name: "Принимая лик"
- blush_of_life_restored_perk_name: "Румянец возрожденной жизни"
- the_fire_which_illuminates_perk_name: "Озаряющий огонь"
- clothed_in_life_perk_name: "Одеяние жизни"
-
- #Alternate Techniques: Boneflowers
- gentle_yielding_perk_name: "Мягкая уступчивость"
- taking_what_is_given_perk_name: "Принимая то, что дано"
- spiders_blessing_perk_name: "Благословение паука"
- bitter_yin_caress_perk_name: "Горькая ласка Инь"
- bitter_yin_cloud_perk_name: "Горькое облако Инь"
- dance_of_shiva_perk_name: "Танец Шивы"
-
- #Alternate Techniques: Thrashing Dragons
- gender_change_perk_name: "Смена пола"
- fur_and_fangs_perk_name: "Мех и клыки"
- thousand_lice_spies_perk_name: "Тысяча вшей-шпионов"
- polong_perk_name: "Полонг"
- animal_form_dragon_dance_perk_name: "Звериный танец дракона"
- eightfold_yang_barrier_perk_name: "Восьмислойный барьер Ян"
-
- #Alternate Techniques: Prayer-Eating
- hear_prayer_perk_name: "Слух молитв"
- prayer_appraisal_perk_name: "Оценка молитв"
- fulfill_prayer_perk_name: "Исполнение молитв"
- prayer_eating_perk_name: "Пожирание молитв"
- unbreakable_soul_bonds_perk_name: "Нерушимые узы души"
-
- #Alternate Techniques: Inward Way
- inner_balance_perk_name: "Внутренний баланс"
- rest_upon_the_blade_perk_name: "Покой на лезвии"
- scales_of_need_perk_name: "Весы нужды"
- feed_the_soul_perk_name: "Пища для души"
- flowing_with_the_down_perk_name: "Протекая вниз"
-
- #Alternate Techniques: Tempest of Inward Focus
- swirling_winds_style_perk_name: "Стиль вихревых ветров"
- meditations_of_metal_perk_name: "Медитации металла"
- kata_of_mountain_fury_perk_name: "Ката ярости горы"
- fighting_cloud_style_perk_name: "Стиль боевого облака"
- illusion_shattering_strike_perk_name: "Разящий удар иллюзий"
-
  #Sanguine: Daimonion
  sense_the_sin_perk_name: "Чувство греха"
- fear_of_the_void_perk_name: "Страх бездны"
- whispers_from_the_dark_perk_name: "Шёпот во тьме"
- tormented_essence_perk_name: "Измученная сущность"
- blood_of_a_demon_perk_name: "Кровь демона"
- devilish_charm_perk_name: "Дьявольское очарование"
- as_below_so_above_perk_name: "Как внизу, так и вверху"
+ fear_of_the_void_perk_name: "Страх глубинной бездны"
+ conflagration_perk_name: "Пожар"
  psychomachia_perk_name: "Психомахия"
- poisoned_virtue_perk_name: "Отравленная добродетель"
- kneel_before_my_throne_perk_name: "Преклонение перед троном"
- face_hell_perk_name: "Встреча с Адом"
- dark_allure_perk_name: "Темное очарование"
+ condemnation_perk_name: "Осуждение"
  advanceddaimonion_perk_name: "Мастерство демонизма"
- adramelechs_wrath_perk_name: "Гнев Адрамелеха"
- master_of_subversion_perk_name: "Мастер низвержения"
  lure_diabolik_perk_name: "Дьявольская приманка"
- devils_hide_perk_name: "Шкура дьявола"
-
- hell_lord_perk_name: "Повелитель Ада"
- investure_perk_name: "Инвеститура"
+ hell_born_investiture_perk_name: "Адское одеяние"
  bring_the_plague_perk_name: "Насылая чуму"
+ the_re_embrace_perk_name: "Повторное обращение"
+ adramelechs_wrath_perk_name: "Гнев Адрамелеха"
+ spew_wide_the_pit_perk_name: "Извержение ямы"
 
  #Animal: Serpentis
  enchanting_gaze_perk_name: "Чарующий взгляд"
