@@ -8,11 +8,12 @@
  gukutsushigifts_visible: "Gukutsushi Gifts"
  kataribegifts_visible: "Kataribe Gifts"
  ju_fugifts_visible: "Ju-Fu Gifts"
-  
+ 
  NEEDS_DOSHI_TEXT: "@warning_icon!#X Requires the [GetTrait('doshi').GetName( GetPlayer )] [traits|E] to buy perks in this tree.#!"
  NEEDS_EJI_TEXT: "@warning_icon!#X Requires the [GetTrait('eji').GetName( GetPlayer )] [traits|E] to buy perks in this tree.#!"
  NEEDS_GUKUTSUSHI_TEXT: "@warning_icon!#X Requires the [GetTrait('gukutsushi').GetName( GetPlayer )] [traits|E] to buy perks in this tree.#!"
  NEEDS_KATARIBE_TEXT: "@warning_icon!#X Requires the [GetTrait('kataribe').GetName( GetPlayer )] [traits|E] to buy perks in this tree.#!"
+ 
  chi_sense_perk_name: "Chi Sense"
  ishin_denshin_perk_name: "Ishin Denshin"
  moon_dance_perk_name: "Moon Dance"
@@ -20,10 +21,12 @@
  puppeteers_secret_perk_name: "Puppeteer's Secret"
  ghost_speech_perk_name: "Ghost Speech"
  shadow_fan_flowers_perk_name: "Shadow-Fan-Flowers"
- possession_perk_name: "Одержимость"
+ possession_perk_name: "Possession"
+ 
  MOON_DANCE_PERK_EFFECT: "Allow shapeshift to [GetModifier( 'POD_shapeshift_form_invisible_modifier' ).GetNameWithTooltip|L]."
- SHADOW_FAN_FLOWERS_PERK_EFFECT: "Give enemy side war participant [GetModifier('shadow_fan_flowers_perk_modifier').GetNameWithTooltip] modifier when in war as a war participant."
- POSSESSION_PERK_EFFECT: "When a body grows old, sometimes the best recourse is to simply abandon it and move on to the next. This power allows just that - the mage can take over the body of another character. Such a transference is never without a cost, however."
+ SHADOW_FAN_FLOWERS_PERK_EFFECT: "Inflict every ruler on the opposing side with [GetModifier('shadow_fan_flowers_perk_modifier').GetNameWithTooltip] when joining a [war|E]."
+ POSSESSION_PERK_EFFECT: "Unlock Possess [character_interaction|E], allow gaining a hook on the target and making them gain a part of your attribute."
+ 
  seduction_perk_name: "Seduction"
  smell_of_man_perk_name: "Smell of Man"
  silver_tongue_perk_name: "Silver Tongue"
@@ -32,7 +35,9 @@
  forgetfulness_perk_name: "Forgetfulness"
  kitsune_spirit_ward_perk_name: "Spirit Ward"
  call_to_allies_perk_name: "Call to Allies"
- DISQUIET_PERK_EFFECT: "Give [GetModifier('disquiet_perk_modifier').GetNameWithTooltip] modifier to enemy [knights|E] in war as a commander or to foe in [single_combat_duel|E]."
+ 
+ DISQUIET_PERK_EFFECT: "Give [GetModifier('disquiet_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
+ 
  burrow_perk_name: "Burrow"
  hares_leap_perk_name: "Hare's Leap"
  ten_chi_perk_name: "Ten Chi"
@@ -41,10 +46,12 @@
  carrion_clothes_perk_name: "Carrion Clothes"
  kitsune_elemental_gift_perk_name: "Elemental Gift"
  song_of_the_great_beast_perk_name: "Song of the Great Beast"
- TEN_CHI_PERK_EFFECT: "Monthly Umbra Exploration Progress: [grace_i]#P +10#!"
- BLIND_PERK_EFFECT: "Give [GetModifier('blind_modifier').GetNameWithTooltip] modifier to enemy [knights|E] in war as a commander or to foe in [single_combat_duel|E]."
+ 
+ TEN_CHI_PERK_EFFECT: "[umbra_aptitude|E]: $pod_grace_i$#P +50%#!"
+ BLIND_PERK_EFFECT: "Give [GetModifier('blind_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
  ELEMENTAL_GIFT_PERK_EFFECT: "Can recruit [GetMaA('earth_elemental').GetName], [GetMaA('water_elemental').GetName], [GetMaA('fire_elemental').GetName] and [GetMaA('air_elemental').GetName] as [men_at_arms|E]."
  SONG_OF_THE_GREAT_BEAST_PERK_EFFECT: "Can recruit [GetMaA('plesiosaurs').GetName], [GetMaA('pterosaurs').GetName], [GetMaA('carnosaurs').GetName] and [GetMaA('herbosaurs').GetName] as [men_at_arms|E]."
+ 
  flow_of_aura_perk_name: "Flow of Aura"
  imperial_authority_perk_name: "Imperial Authority"
  past_whispers_perk_name: "Past Whispers"
@@ -53,8 +60,10 @@
  scent_of_beyond_perk_name: "Scent of Beyond"
  imperial_obligation_perk_name: "Imperial Obligation"
  marionette_perk_name: "Marionette"
- SCENT_OF_BEYOND_PERK_EFFECT: "Umbra Escaping Time: #P -15%#!\nMonthly Umbra Exploration Progress: [grace_i]#P +5#!"
- MARIONETTE_PERK_EFFECT: "As a [character_interaction|E], allow you to gain a hook over target."
+
+ SCENT_OF_BEYOND_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +15%#!\n[umbra_aptitude|E]: $pod_grace_i$#P +25%#!"
+ MARIONETTE_PERK_EFFECT: "As a [character_interaction|E], allows you to gain a hook on the target."
+ 
  blessing_the_blade_perk_name: "Blessing the Blade"
  breath_of_yu_chiang_perk_name: "Breath of Yu-Chiang"
  blood_omen_perk_name: "Blood Omen"
@@ -63,7 +72,9 @@
  by_the_light_of_the_moon_perk_name: "By the Light of the Moon"
  the_malleable_spirit_perk_name: "The Malleable Spirit"
  seal_of_inari_perk_name: "Seal of Inari"
- BLESSING_THE_BLADE_PERK_EFFECT: "As a [character_interaction|E], allow you to upgrade an artifact modifier or give it a new modifier."
+ 
+ BLESSING_THE_BLADE_PERK_EFFECT: "As an enhance craft, allows you to upgrade an artifact modifier."
+ 
  sense_hostility_perk_name: "Sense Hostility"
  kitsune_bolt_perk_name: "Bolt"
  enduring_warrior_perk_name: "Enduring Warrior"
@@ -72,9 +83,11 @@
  elemental_meld_perk_name: "Elemental Meld"
  sorcerous_bite_perk_name: "Sorcerous Bite"
  dragon_ally_perk_name: "Dragon Ally"
- SONG_OF_FEAR_PERK_EFFECT: "Give [GetModifier('song_of_fear_perk_modifier').GetNameWithTooltip] modifier to enemy [knights|E] in war as a commander or to foe in [single_combat_duel|E]."
+ 
+ SONG_OF_FEAR_PERK_EFFECT: "Give [GetModifier('song_of_fear_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
  ELEMENTAL_MELD_PERK_EFFECT: "Allow shapeshift to the four elements."
  DRAGON_ALLY_PERK_EFFECT: "Can recruit [GetMaA('element_dragon').GetName] as [men_at_arms|E]."
+
  blur_of_the_milky_eye_perk_name: "Blur of the Milky Eye"
  open_seal_perk_name: "Open Seal"
  fan_shadow_robe_perk_name: "Fan-Shadow-Robe"
@@ -83,7 +96,9 @@
  moon_fan_face_shadow_perk_name: "Moon-Fan-Face-Shadow"
  kitsune_madness_perk_name: "Madness"
  violation_perk_name: "Violation"
- VIOLATION_PERK_EFFECT: "Give [GetModifier('violation_perk_modifier').GetNameWithTooltip] modifier to enemy [knights|E] in war as a commander or to foe in [single_combat_duel|E]."
+ 
+ VIOLATION_PERK_EFFECT: "Give [GetModifier('violation_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
+
  fable_perk_name: "Fable"
  lore_perk_name: "Lore"
  centipedes_beckoning_perk_name: "Centipede’s Beckoning"
@@ -92,8 +107,10 @@
  uzume_sings_perk_name: "Uzume Sings"
  kuei_dance_perk_name: "Kuei Dance"
  fabric_of_the_mind_perk_name: "Fabric of the Mind"
- UZUME_SINGS_PERK_EFFECT: "Give [GetModifier('uzume_sings_perk_modifier').GetNameWithTooltip] modifier to enemy [knights|E] in war as a commander or to foe in [single_combat_duel|E]."
+ 
+ UZUME_SINGS_PERK_EFFECT: "Give [GetModifier('uzume_sings_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
  FABRIC_OF_THE_MIND_PERK_EFFECT: "Can recruit [POD_chimera_maa|E] as [men_at_arms|E]."
+ 
  element_child_perk_name: "Element Child"
  lantern_perk_name: "Lantern"
  paper_speech_perk_name: "Paper Speech"
@@ -108,7 +125,8 @@
  walk_perk_name: "Walk"
  kidnap_perk_name: "Kidnap"
  paper_flesh_perk_name: "Paper Flesh"
+
  LABYRINTH_PERK_EFFECT: "Unlock an event option when a powerful character tries to resist being imprisoned.\nYour prisoners have less chance of escaping from your prison."
- BANISHMENT_PERK_EFFECT: "Make $POD_demon_unearthbound_decision$ [decision|E] free.\nAs a [character_interaction|E], allows you banishing a wraith character to the [dark_kingdom|E].\nAs a [character_interaction|E], allows you banishing a demon character to the [abyss|E].\nAs a [character_interaction|E], allows you banishing a fae character to the [arcadia|E]."
+ BANISHMENT_PERK_EFFECT: "Make $POD_demon_unearthbound_decision$ [decision|E] free.\nAs a [character_interaction|E], allows you banishing a wraith character to the [dark_kingdom|E].\nAs a [character_interaction|E], allows you banishing a demon character to the [UmbraGlossary('abyss')].\nAs a [character_interaction|E], allows you banishing a fae character to the [UmbraGlossary('arcadia')]."
  BEAST_SHAPE_PERK_EFFECT: "Allow shapeshift to several animal forms."
- WALK_PERK_EFFECT: "Umbra Escaping Time: #P -10%#!\nMonthly Umbra Exploration Progress: [grace_i]#P +10#!"
+ WALK_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +10%#!\n[umbra_aptitude|E]: $pod_grace_i$#P +50%#!"

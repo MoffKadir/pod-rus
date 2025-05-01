@@ -1,0 +1,14 @@
+﻿l_russian:
+ # Random Outcomes
+ POD_random_outcome_percentage: "[SCOPE.GetValue('value')|0]%"
+ POD_random_outcome_uncertain: "$POD_random_outcome_medium$"
+ POD_random_outcome_low: "Маловероятно"
+ POD_random_outcome_medium: "Вероятно"
+ POD_random_outcome_high: "Скорее всего"
+
+ # Character skills
+ POD_SKILL_YOU_LOSE: "#bold ?#!"
+ #POD_SKILL_YOU_LOSE: "@death_icon:color_yellow!"
+ POD_SKILL_YOU_LOSE_TT: "#beast;size:18 ВЫ ПРОИГРАЛИ#!"
+ POD_SKILL_VANILLA: "[SCOPE.GetValue('value')|0]"
+ POD_SKILL_VANILLA_TT: ""

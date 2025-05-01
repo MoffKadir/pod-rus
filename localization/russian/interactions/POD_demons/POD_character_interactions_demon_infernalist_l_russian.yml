@@ -1,0 +1,67 @@
+﻿l_english:
+ POD_bind_demon_interaction: "Связать демона"
+ POD_bind_demon_interaction_desc: "Свяжите [recipient.GetFirstName] с помощью [recipient.GetHerHis] истинного имени."
+
+ POD_request_pact_interaction: "Договор"
+ POD_request_pact_interaction_desc: "Заключить договор с [recipient.GetFirstName], чтобы получить демоническую силу."
+
+ POD_request_enthrall_interaction: "Request Enthrall"
+ POD_request_enthrall_interaction_desc: "Become [recipient.GetFirstNamePossessive] [thrall|E] to gain a arcana acess."
+
+ POD_infernalist_sacrifice_prisoner_interaction: "Принести в жертву #Weak (узник)#!"
+ POD_infernalist_sacrifice_prisoner_interaction_desc: "Принесте в жертву всех своих узников [actor.Custom('GreatDemonName')], продолжительность действия модификатора будет зависеть от количества заключённых (по-настоящему бессмертные заключённые не учитываются)."
+ POD_infernalist_sacrifice_holding_interaction: "Принести в жертву #Weak (владение)#!"
+ POD_infernalist_sacrifice_holding_interaction_desc: "Принести в жертву владение и всё его население [actor.Custom('GreatDemonName')], продолжительность действия модификатора будет зависеть от общего уровня застройки этого владения."
+ POD_infernalist_sacrifice_region_interaction: "Принести в жертву #Weak (регион)#!"
+ POD_infernalist_sacrifice_region_interaction_desc: "Принести в жертву целый регион и всё его население [actor.Custom('GreatDemonName')], продолжительность действия модификатора будет зависеть от общего уровня развития этого титула."
+ lesser_abaddon_buff_modifier: "#Weak (Малый)#! Дар Абаддона"
+ greater_abaddon_buff_modifier: "#Weak (Значительный)#! Дар Абаддона"
+ potent_abaddon_buff_modifier: "#Weak (Могущественный)#! Дар Абаддона"
+ lesser_asmodeus_buff_modifier: "#Weak (Малый)#! Дар Асмодея"
+ greater_asmodeus_buff_modifier: "#Weak (Значительный)#! Дар Асмодея"
+ potent_asmodeus_buff_modifier: "#Weak (Могущественный)#! Дар Асмодея"
+ lesser_azrael_buff_modifier: "#Weak (Малый)#! Дар Азраила"
+ greater_azrael_buff_modifier: "#Weak (Значительный)#! Дар Азраила"
+ potent_azrael_buff_modifier: "#Weak (Могущественный)#! Дар Азраила"
+ lesser_belial_buff_modifier: "#Weak (Малый)#! Дар Белиала"
+ greater_belial_buff_modifier: "#Weak (Значительный)#! Дар Белиала"
+ potent_belial_buff_modifier: "#Weak (Могущественный)#! Дар Белиала"
+ lesser_dagon_buff_modifier: "#Weak (Малый)#! Дар Дагона"
+ greater_dagon_buff_modifier: "#Weak (Значительный)#! Дар Дагона"
+ potent_dagon_buff_modifier: "#Weak (Могущественный)#! Дар Дагона"
+ POD_infernalist_sacrifice_holding_interaction_custom: "Все постройки в [target.GetNameNoTier] были уничтожены."
+ POD_infernalist_sacrifice_region_interaction_custom: "Все постройки в [target.GetNameNoTier] были уничтожены."
+ NOT_POD_infernalist_sacrifice_prisoner_interaction_valid: "У тебя #bold нет#! ни одного смертного узника."
+ NOT_POD_infernalist_sacrifice_region_interaction_valid: "У тебя #bold нет#! ни одного титула с достаточным развитием."
+
+ POD_emotion_projection_interaction: "Эмоциональная проекция"
+
+ POD_life_leech_interaction: "Высасывание жизни"
+ POD_life_leech_interaction_desc: "Поглотить силу воли [recipient.GetFirstName], чтобы получить жизненную силу."
+
+ POD_teleportation_interaction: "Телепортироваться"
+ POD_teleportation_interaction_desc: "Телепортироваться в локакцию [recipient.GetFirstNamePossessive]."
+ 
+ POD_turn_to_toad_interaction: "Превратить в жабу"
+ POD_turn_to_toad_interaction_desc: "Превратить [recipient.GetFirstName] в жабу."
+
+ POD_mammons_gift_interaction: "Дар Маммона"
+ POD_mammons_gift_interaction_desc: "Превратите один маленький предмет в золото."
+
+#  POD_command_demon_interaction: "Command Demon"
+#  POD_command_demon_interaction_desc: "Command your bound demon."
+#  POD_command_demon_interaction_option_assist_arcana: "Assist Arcana training"
+#  POD_command_demon_interaction_option_assist_lore: "Assist Lore training"
+#  POD_command_demon_interaction_option_assist_investiture: "Provide more Investiture"
+#  POD_command_demon_interaction_option_cancel: "Cancel Task"
+#  bound_demon_assist_arcana_modifier: "Assisted Arcana Training"
+ bound_demon_assist_investiture_modifier: "Увеличенное получение опыта Инвеституры"
+
+ POD_banish_demon_interaction: "Изгнать демона"
+ POD_banish_demon_interaction_desc: "Изгнать [recipient.GetFirstName] в Бездну."
+
+ POD_initiate_demonology_interaction: "Приобщить к Демонологии"
+ POD_initiate_demonology_interaction_desc: "Обучить [recipient.GetFirstName] Демонологии."
+
+ POD_black_whispers_interaction: "Black Whispers"
+ POD_black_whispers_interaction_desc: "Purchase knowledge from Yama Kings, allow you learn every secret and scheme of [recipient.GetFirstName]."

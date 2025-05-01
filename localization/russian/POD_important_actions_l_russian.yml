@@ -17,7 +17,7 @@
  action_can_add_herd_alert: "Вы можете включить смертного в стадо"
  action_can_add_herd_alert_label: "Вы можете включить смертного в стадо"
  action_can_add_herd_alert_desc: "Вам следует включить смертного в стадо, чтобы получать больше опыта резонанса."
- action_can_add_herd_alert_click: "#I Нажмите, чтобы включить смертного в [Concept('herd', 'стадо')|E]#!"
+ action_can_add_herd_alert_click: "#I Нажмите, чтобы включить смертного в [Concept('POD_herd', 'стадо')|E]#!"
 
  action_can_add_dreamer_alert: "Вы можете зачаровать смертного"
  action_can_add_dreamer_alert_label: "Вы можете зачаровать смертного"
@@ -109,7 +109,7 @@
  action_reactive_advice_gain_resolve_desc: "Вы можете восстановить решимость разными способами. Узнайте больше о том, как это сделать."
  action_reactive_advice_gain_resolve_click: "$click_to_open_lesson$"
  lesson_gain_resolve: "Прирост решимости"
- lesson_gain_resolve_desc: "Решимость - это топливо для ваших демонических сил, вы можете получить его одним из следующих способов: Через [Concept('character_interaction', 'взаимодействие персонажа')|E] «Откровение» (сперва примите демоническую форму с помощью смены формы, затем явите свою истинную форму окружающим), [Concept('character_interaction', 'взаимодействие персонажа')|E] «Пожирание греха» (открывается при наличии достоинства «[GetPerk( 'arcana_sin_eating_perk' ).GetName( GetPlayer )]») или выбрав вариант казни «$EXECUTION_DEVOUR_SOUL$»."
+ lesson_gain_resolve_desc: "Решимость - это топливо для ваших демонических сил, вы можете получить его через [Concept('character_interaction', 'взаимодействие персонажа')|E], открываемое через [Concept('arcana_lifestyle', 'путь арканы')|E]"
 
  reactive_advice_gain_pathos: "Прирост пафоса"
  action_reactive_advice_gain_pathos: "Совет: Прирост пафоса"

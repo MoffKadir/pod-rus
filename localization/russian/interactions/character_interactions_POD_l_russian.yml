@@ -55,6 +55,8 @@
  POD_ask_reweave_interaction_desc: "Попросить персонажа [recipient.GetFirstName] переплести части артефакта, собранные в Вихре."
  NOT_POD_has_equipped_artifact_pieces: "В слоте безделушек экипировано два или более артефакта."
 
+ POD_is_valid_for_court_position_no_scope: "Этот персонаж #bold не#! является недоступным или лишённым разума"
+
  POD_do_not_disturb_text: "Этот персонаж может быть пробужден только в результате апокалиптических событий."
  POD_ruler_not_imprisoned_vicissic_text: "Вы не можете трансмогрифицировать правителя, если он не находится в вашей темнице."
  POD_overpower_vicissic_tt: "Вы начнете поединок с персонажем [recipient.GetFirstNameNoTooltip], чтобы одолеть [recipient.GetHerHis] и совершить трансмогрификацию"
@@ -131,7 +133,6 @@
  POD_mass_demand_payment_interaction_exclude_partial_payments: "Исключить персонажей, которые не могут оплатить всю сумму"
  POD_mass_demand_payment_interaction_strong_hooks_only: "Задействовать только [Concept('strong_hooks', 'сильное влияние')|E]"
  POD_mass_demand_payment_interaction_exclude_house_members: "Исключить членов вашего [Concept('house', 'дома')|E]"
- POD_mass_demand_payment_interaction_exclude_weak_true_name_hooks: "Исключить рычаги воздействия #italic $partial_true_name_hook$#!"
  POD_mass_demand_payment_interaction_exclude_necromancy_bind_hooks: "Исключить рычаги воздействия #italic $necromancy_bind_hook$#!"
  POD_mass_demand_payment_interaction_exclude_mesmerize_hooks: "Исключить рычаги воздействия #italic $mesmerize_hook$#!"
  POD_mass_demand_payment_gold: "Вы получите $VALUE|0V$[gold_i|E]."
@@ -165,25 +166,6 @@
 
  any_secret_is_known_by_actor: "Любой из секретов [Select_CString(recipient.IsLocalPlayer, '', 'персонажа ' )][recipient.GetShortUINamePossessive][Select_CString(recipient.IsLocalPlayer, 'его персонажа', '' )], известный [Select_CString(actor.IsLocalPlayer, '', 'персонажу ' )][actor.GetShortUINamePossessive][Select_CString(actor.IsLocalPlayer, 'ему персонажу', '' )]"
  NOT_any_secret_is_known_by_actor: "Любой из секретов [Select_CString(recipient.IsLocalPlayer, '', 'персонажа ' )][recipient.GetShortUINamePossessive][Select_CString(recipient.IsLocalPlayer, 'его персонажа', '' )], #bold не#! известный [Select_CString(actor.IsLocalPlayer, '', 'персонажу ' )][actor.GetShortUINamePossessive][Select_CString(actor.IsLocalPlayer, 'ему персонажу', '' )]"
-
- feudalize_city_holding_interaction: "Феодализировать город"
- feudalize_city_holding_interaction_desc: "Уничтожить все [Concept('buildings', 'постройки')|E] в этом [Concept('holding', 'владении')|E] и сделать его [Concept('feudal', 'феодальным')|E]"
- feudalize_city_holding_interaction_notification: "Город феодализирован"
- feudalize_church_holding_interaction: "Феодализировать храм"
- feudalize_church_holding_interaction_desc: "Уничтожить все [Concept('buildings', 'постройки')|E] в этом [Concept('holding', 'владении')|E] и сделать его [Concept('feudal', 'феодальным')|E]"
- feudalize_church_holding_interaction_notification: "Храм феодализирован"
- republicanise_castle_holding_interaction: "Превратить замок в республику"
- republicanise_castle_holding_interaction_desc: "Уничтожить все [Concept('buildings', 'постройки')|E] в этом [Concept('holding', 'владении')|E] и сделать его [Concept('republic', 'республиканским')|E]"
- republicanise_castle_holding_interaction_notification: "Замок превращён в республику"
- republicanise_church_holding_interaction: "Превратить храм в республику"
- republicanise_church_holding_interaction_desc: "Уничтожить все [Concept('buildings', 'постройки')|E] в этом [Concept('holding', 'владении')|E] и сделать его [Concept('republic', 'республиканским')|E]"
- republicanise_church_holding_interaction_notification: "Храм превращён в республику"
- theocratize_castle_holding_interaction: "Теократизировать замок"
- theocratize_castle_holding_interaction_desc: "Уничтожить все [Concept('buildings', 'постройки')|E] в этом [Concept('holding', 'владении')|E] и сделать его [Concept('theocracy', 'теократическим')|E]"
- theocratize_castle_holding_interaction_notification: "Замок теократизирован"
- theocratize_city_holding_interaction: "Теократизировать город"
- theocratize_city_holding_interaction_desc: "Уничтожить все [Concept('buildings', 'постройки')|E] в этом [Concept('holding', 'владении')|E] и сделать его [Concept('theocracy', 'теократическим')|E]"
- theocratize_city_holding_interaction_notification: "Город теократизирован"
 
  RECIPIENT_CRIMINAL_REASON: "[splat|E] [Select_CString(recipient.IsLocalPlayer, '', 'персонажа ' )][recipient.GetShortUINamePossessive][Select_CString(recipient.IsLocalPlayer, 'его персонажа', '' )] считается преступлением для [Select_CString(actor.IsLocalPlayer, '', 'персонажа ' )][actor.GetShortUINamePossessive][Select_CString(actor.IsLocalPlayer, 'его персонажа', '' )]: $VALUE|+0$"
  RECIPIENT_SHUNNED_REASON: "[splat|E] [Select_CString(recipient.IsLocalPlayer, '', 'персонажа ' )][recipient.GetShortUINamePossessive][Select_CString(recipient.IsLocalPlayer, 'его персонажа', '' )] подвергается порицанию [Select_CString(actor.IsLocalPlayer, '', 'персонажем ' )][actor.GetShortUINamePossessive][Select_CString(actor.IsLocalPlayer, 'им персонажем', '' )]: $VALUE|+0$"
@@ -224,6 +206,7 @@
  ACTOR_VAMPIRE_REASON: "[actor.GetShortUIName] имеет свойство «[GetTrait('vampire').GetName( GetNullCharacter )]»: $VALUE|+0$"
  SPIRIT_OPINION_REASON: "Уровень модификатора мнения духов: $VALUE|+0$"
  PLASMIC_OPINION_REASON: "Уровень модификатора мнения призраков: $VALUE|+0$"
+ WE_ARE_NOT_FRIENDS: "Мы не являемся [Concept('friends', 'друзьями')|E]: $VALUE|+0$"
 
  FACTION_REASON_INCOMPATIBLE: "Несовместимый [Concept('splat', 'вид')|E]: $VALUE|0+=$"
  FACTION_REASON_NETERU: "Не является [neteru|El]: $VALUE|0+=$"
@@ -236,3 +219,27 @@
  VAMPIRE_IS_CRIME: "Свойство «[GetTrait('vampire').GetName( GetPlayer )]» считается преступлением: $VALUE|+0$"
  SHIFTER_IS_SHUNNED: "Свойство «[GetTraitGroup('shapeshifter').GetName()]» порицается: $VALUE|+0$"
  SHIFTER_IS_CRIME: "Свойство «[GetTraitGroup('shapeshifter').GetName()]» считается преступлением: $VALUE|+0$"
+
+
+ POD_choose_sire_interaction: "Выбрать [Concept('Sire', 'сира')|E]"
+ POD_choose_sire_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала', 'стал' )] вашим [Concept('Sire', 'сиром')|E]."
+
+ POD_choose_sifu_interaction: "Выбрать сифу"
+ POD_choose_sifu_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала', 'стал' )] вашим сифу."
+
+ POD_forced_to_frenzy.tt: "Жертва немедленно впадёт в неистовство."
+
+ POD_kueijin_spy.duel.success: "Вы успешно использовали способность"
+ POD_kueijin_spy_interaction_evaluate: "Оценка"
+ POD_kueijin_spy_interaction_scrutinize: "Изучение"
+ POD_kueijin_spy.duel.tt.evaluate: "Вы осмотрели [Select_CString(recipient.IsFemale, 'свою противницу', 'своего противника' )] и обнаружили [recipient.GetHerHis] слабые места."
+ POD_kueijin_spy.duel.tt.scrutinize: "Вы узнали тёмный замысел [Select_CString(recipient.IsFemale, 'своей противницы', 'своего противника' )]."
+ POD_kueijin_spy.duel.failure: "Вы не смогли использовать способность"
+ POD_kueijin_spy.duel.tt.attacker_lost: "Вы потерпели неудачу"
+ POD_soul_bridge_interaction_desc: "[recipient.GetFirstName] получает от вас безмолвные простые побуждения, эмоции достаточно сильны, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'была вынуждена', 'был вынужден' )] действовать в соответствии с ними."
+
+ POD_mind_rape_interaction_desc: "С помощью призывания раскрыть все секреты и происки персонажа [recipient.GetFirstName]."
+
+ POD_learn_true_name_interaction: "Узнать истинное имя"
+ POD_learn_true_name_interaction_desc: "Начать [Concept('journey', 'странствие')|E], чтобы узнать истинное имя персонажа [recipient.GetShortUIName]."
+ POD_learn_true_name_interaction_tt: "[Concept('planning_speed', 'Скорость планирования')|E] [Concept('journey', 'странствия')|E] зависит от вашей [Concept('learning', 'учёности')|E], суммы [Concept('skills', 'навыков')|E] вашей цели и определённых [Concept('perks', 'достоинств')|E] обоих персонажей."

@@ -789,6 +789,8 @@
  special_doctrine_ashirra_pillars_kindred_name: "Столпы Аширры"
  special_doctrine_ashirra_pillars_kindred_desc: "Хотя те, кто шел по стопам ислама, были выходцами из самых разных кланов и сословий, все они верили в нечто большее, чем они сами."
  doctrine_parameter_hostility_override_special_doctrine_ashirra_pillars_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_ashirra_pillars_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_evil_tooltippable$"
+ doctrine_parameter_ashirra_khitta_building_province_bonuses: "Связанные с Аширрой [Concept('khittas', 'хитты')|E] в [Concept('holy_cairo', 'Священном Каире')|E] предоставляют дополнительные налоги, если Каир исповедует эту конфессию"
+ doctrine_parameter_ashirra_khitta_building_character_bonuses: "Связанные с Аширрой [Concept('khittas', 'хитты')|E] в [Concept('holy_cairo', 'Священном Каире')|E] предоставляют благочестие, если владелец исповедует эту конфессию"
 
  special_doctrine_lilith_pillars_kindred_name: "Столпы Лилим"
  special_doctrine_lilith_pillars_kindred_desc: "Лилит жаждет мести детям Каина. Но в случае необходимости она примет жаждущих новообращенных или полезных пешек."
@@ -820,19 +822,19 @@
  doctrine_parameter_hostility_override_ignorance_hostility_doctrine: "Невежественные [faiths|El], такие как Невинность смертных, не считают сверхъестественных существ мира Тьмы угрозой. Конфессии, желающие держать смертных в неведении, воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$ или $hostility_evil_tooltippable$"
 
  special_doctrine_fivefold_path_kindred_name: "Пятикратный путь"
- special_doctrine_fivefold_path_kindred_desc: "Пять традиционных дхарм, созданных первым архатом, [GetScriptedCharacterByHistoryID('791111').GetFirstName]. Последователи Пятикратного пути считают еретические дхармы болезненно заблуждающимися глупцами или опасными предателями, которых необходимо уничтожить навсегда."
+ special_doctrine_fivefold_path_kindred_desc: "Пять традиционных дхарм, созданных первым архатом, [GetScriptedCharacterByHistoryID('791111').GetFirstName]. Они составляют традиционное ядро общества [Concept('kuei_jin', 'куэй-дзин')|E].\nПоследователи Пятикратного пути считают еретические дхармы болезненно заблуждающимися глупцами или опасными предателями, которых необходимо уничтожить навсегда."
  doctrine_parameter_hostility_override_special_doctrine_fivefold_path_kindred: "Другие [faiths|El] [GetTrait('kueijin').GetName( GetNullCharacter )] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_fivefold_path_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как #V враждебные#!"
 
  anda_hostility_name: "Отношение к Анда"
  special_doctrine_is_anda_faith_name: "Анда"
- special_doctrine_is_anda_faith_desc: "[Concept('faiths', 'Конфессии')|E] Анда, союзники акума при дворе Черной черепахи, являются врагами лоялистов $pod_wan_kuei$."
+ special_doctrine_is_anda_faith_desc: "[Concept('faiths', 'Конфессии')|E] Анда, союзники [Concept('akuma', 'акума')|E] при дворе Черной черепахи, являются врагами лоялистов $pod_wan_kuei$."
  doctrine_parameter_hostility_override_special_doctrine_is_anda_faith: "[faiths|El] Анда воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]."
  doctrine_parameter_is_anda_faith_opinion_active: "" # Make loca empty to hidden this like vanilla
  doctrine_parameter_opinion_of_is_anda_faith_opinion_active: "[Concept('opinion', 'Мнение')|E] к [Concept('faiths', 'конфессиям')|E] Анда: $VALUE|+=0$"
  is_anda_faith_opinion_active_county_opinion_name: "Анда"
  is_anda_faith_opinion_active_opinion_name: "Монгольское нашествие"
  special_doctrine_allied_to_anda_hostility_name: "Акума-оппортунисты"
- special_doctrine_allied_to_anda_hostility_desc: "Акума из Двора Черной черепахи и Анда - союзники монгольской армии."
+ special_doctrine_allied_to_anda_hostility_desc: "Акума рассматривают Анда как благодатную почву для проникновения и помогают им разрушить традиционные дворы."
  doctrine_parameter_allied_to_anda_opinion_active: "" # Make loca empty to hidden this like vanilla
  doctrine_parameter_opinion_of_allied_to_anda_opinion_active: "$VALUE|+=0$ Бонус к [Concept('opinion', 'мнению')|E] с [Concept('faiths', 'конфессиями')|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_allied_to_anda_hostility').GetBaseName]»"
  doctrine_parameter_hostility_override_special_doctrine_allied_to_anda_hostility: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_allied_to_anda_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"

@@ -37,9 +37,9 @@
 
  rule_pod_losing_golconda: "$POD_gamerule$ Потеря Голконды"
  setting_pod_losing_golconda_default: "Правила по умолчанию"
- setting_pod_losing_golconda_default_desc: "Вы потеряете состояние [Concept('golconda', 'Голконды')|E], если впадёте в буйство или совершите убийство, воровство и отвратительные поступки."
+ setting_pod_losing_golconda_default_desc: "Вы потеряете состояние [Concept('golconda', 'Голконды')|E], если впадёте в буйство или совершите убийство, воровство и отвратительные поступки. Событие нервного срыва «Кризис дхармы» для куэй-дзин произойдёт только при нервном срыве 4-го уровня."
  setting_pod_losing_golconda_harsher: "#high @wod_icon! Более строгие правила#!"
- setting_pod_losing_golconda_harsher_desc: "В дополнение к правилам по умолчанию, вы также потеряете состояние [Concept('golconda', 'Голконды')|E] при объявлении наступательных войн или при даровании [Concept('Embrace', 'Объятий')|E], создавших дитя."
+ setting_pod_losing_golconda_harsher_desc: "В дополнение к правилам по умолчанию, вы также потеряете состояние [Concept('golconda', 'Голконды')|E] при объявлении наступательных войн или при даровании [Concept('Embrace', 'Объятий')|E], создавших дитя. Событие нервного срыва «Кризис дхармы» для куэй-дзин также произойдёт при нервном срыве 3-го уровня."
 
  rule_pod_seek_knowledge_cost_increase: "$POD_gamerule$ Стоимость изучения новых способностей"
  setting_pod_seek_knowledge_cost_increase_enabled: "Увеличивается"
@@ -76,6 +76,23 @@
  setting_pod_splat_mixing_default_desc: "Стандартные ограничения на смешение #L $pod_splats|l$ов#!."
  setting_pod_splat_mixing_haight_mode: "#high @haight_icon! Режим Сэмюеля Хайта#!"
  setting_pod_splat_mixing_haight_mode_desc: "Многие ограничения на смешение #L $pod_splats|l$ов#! ослаблены (см. подробнее #L $pod_samuel_haight_mode_with_icon$ь Хайт#!)."
+
+ rule_pod_fog_of_war: "$POD_gamerule$ Туман войны"
+ setting_pod_fog_of_war_disabled: "Отключено"
+ setting_pod_fog_of_war_disabled_desc: "Вы прекрасно знаете о случайных исходах и других персонажах, как в оригинальной CK3."
+ setting_pod_fog_of_war_enabled: "#high Включено#!"
+ setting_pod_fog_of_war_enabled_desc: "Многие случаи мета-знаний теперь скрыты игрой. #clickable Эта функция является WIP, и в будущем будет добавлено больше контента. На данный момент рекомендуется выбрать опцию «Пользовательский».#!"
+ #setting_pod_fog_of_war_enabled_desc: "Many instances of meta-knowledge are now hidden by the game, and you won't know anything about other characters until you gather more information first."
+ setting_pod_fog_of_war_custom: "#high Пользовательский#!"
+ setting_pod_fog_of_war_custom_desc: "Вы сами определяете, какие мета-знания будут скрыты."
+
+ rule_pod_random_outcomes: "$POD_gamerule$ Туман войны: Случайные исходы"
+ setting_pod_random_outcomes_percentages: "Проценты"
+ setting_pod_random_outcomes_percentages_desc: "Случайные исходы отображаются в процентах, как в оригинальном CK3."
+ setting_pod_random_outcomes_immersive: "#high Иммерсивно#!"
+ setting_pod_random_outcomes_immersive_desc: "Случайные исходы отображены в виде приблизительной оценки, например, «Маловероятно» или «Вероятно»."
+ setting_pod_random_outcomes_uncertain: "#high Неопределённо#!"
+ setting_pod_random_outcomes_uncertain_desc: "Вы не получаете никакой информации о вероятности случайных исходов."
 
  rule_pod_endgame_delay: "$POD_gamerule$ Отсрочка конца игры"
  setting_pod_endgame_delay_canon: "Канонично"
@@ -290,6 +307,14 @@
  setting_pod_levies_disabled: "#high Без ополчения#!"
  setting_pod_levies_disabled_desc: "Все персонажи получают модификатор [GetModifier('pod_no_levies_modifier').GetNameWithTooltip].\n\nМожет потребоваться подождать 1 день в игре, чтобы модификатор был применен правильно. Ополчение по-прежнему будут присутствовать в составе войск наёмников или особых войск."
 
+ rule_pod_conqueror_ai: "$POD_gamerule$ #clickable Экспериментально:#! ИИ завоевателей"
+ setting_pod_conqueror_ai_disabled: "Отключено"
+ setting_pod_conqueror_ai_disabled_desc: "Персонажи ИИ будут вести себя как обычно и принимать решения в соответствии со своей личностью."
+ setting_pod_conqueror_ai_enabled: "#high ИИ завоевателей#!"
+ setting_pod_conqueror_ai_enabled_desc: "Все неигровые персонажи получат ИИ завоевателя.\n\nЭто не даст им свойство «[GetTrait('conqueror').GetName( GetNullCharacter )]» и не заставляет их чаще объявлять войны. Однако они будут тратить меньше денег на несерьёзные вещи и вкладывать в войну столько, сколько смогут."
+ setting_pod_conqueror_ai_bloodthirsty: "#high Кровожадный ИИ#!"
+ setting_pod_conqueror_ai_bloodthirsty_desc: "Все неигровые персонажи получают ИИ завоевателя. Кроме того, они получают скрытый модификатор, который значительно увеличивает их стремление к войне."
+
  rule_pod_sorcery_6th_perk_requirements: "$POD_gamerule$ Шестое достоинство в чародействе"
  setting_pod_sorcery_6th_perk_requirements_always_unlocked: "#high Всегда открыто#!"
  setting_pod_sorcery_6th_perk_requirements_always_unlocked_desc: "Вы можете выбрать чародейские способности с 6 точками, как и любое другое достоинство, без необходимости завершать [Concept('journey', 'странствие')|E]."
@@ -313,3 +338,11 @@
  setting_pod_tournament_restrictions_fewer_desc: "Все [Concept('splat', 'виды')|E], которые могут есть человеческую пищу и ходить под солнечным светом, могут участвовать в #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#!."
  setting_pod_tournament_restrictions_none: "#high Без ограничений#!"
  setting_pod_tournament_restrictions_none_desc: "Все [Concept('splat', 'виды')|E] могут участвовать в #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#!. Это приведёт к #N бессмысленным#! событиям."
+
+ rule_POD_wheel_of_ages_speed: "$POD_gamerule$ Скорость Колеса эпох"
+ setting_POD_wheel_of_ages_speed_slow: "#high Медленно#!"
+ setting_POD_wheel_of_ages_speed_slow_desc: "Скорость Колеса эпох снижается вдвое."
+ setting_POD_wheel_of_ages_speed_normal: "Нормально"
+ setting_POD_wheel_of_ages_speed_normal_desc: "Колесо эпох крутится с обычной скоростью."
+ setting_POD_wheel_of_ages_speed_fast: "#high Быстро#!"
+ setting_POD_wheel_of_ages_speed_fast_desc: "Скорость Колеса эпох удваивается."

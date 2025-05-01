@@ -196,6 +196,12 @@
  animal_spiritus_focus_effect_desc: "Сосредоточившись на шаманстве, персонаж получает:"
  animal_spiritus_visible: "Шаманство"
 
+ animal_flight_focus: "Полёт"
+ animal_flight_focus_modifier: "[GetFocus('animal_flight_focus').GetName]"
+ animal_flight_focus_desc: "Единство с небом."
+ animal_flight_focus_effect_desc: "Сосредоточившись на полёте, персонаж получает:"
+ animal_flight_visible: "Полёт"
+
  animal_abombwe_focus: "Абомбве"
  animal_abombwe_focus_modifier: "[GetFocus('animal_abombwe_focus').GetName]"
  animal_abombwe_focus_desc: "Воспользуйтесь первобытной тьмой и доблестью хищника."
@@ -236,41 +242,41 @@
  blessings_visible: "Благословения"
 
  #godbodies
- godbodies_lifestyle_name: "Божественные тела"
- godbodies_lifestyle_desc: "Фокус на силе, исходящей от энергии Ци."
- godbodies_lifestyle_highlight_desc: "Из-за вашей дхармы ваш прирост [Concept('experience', 'опыта')|El] для этого образа жизни увеличен на #P [GetPlayer.Custom('GetDharmaLifestylePercentageBoost')]#!."
- monthly_godbodies_lifestyle_xp_gain_mult: "Ежемесячный прирост опыта на [Concept('lifestyle','пути')E] божественных тел"
+ #godbodies_lifestyle_name: "Божественные тела"
+ #godbodies_lifestyle_desc: "Фокус на силе, исходящей от энергии Ци."
+ #godbodies_lifestyle_highlight_desc: "Из-за вашей дхармы ваш прирост [Concept('experience', 'опыта')|El] для этого образа жизни увеличен на #P [GetPlayer.Custom('GetDharmaLifestylePercentageBoost')]#!."
+ #monthly_godbodies_lifestyle_xp_gain_mult: "Ежемесячный прирост опыта на [Concept('lifestyle','пути')E] божественных тел"
 
- godbodies_metal_focus: "Металлическое божественное тело"
- godbodies_metal_focus_modifier: "[GetFocus('godbodies_metal_focus').GetName]"
- godbodies_metal_focus_desc: "Превращение себя в нечеловеческую сущность, обмен смертной слабости и хрупкости на чистоту и твердость."
- godbodies_metal_focus_effect_desc: "Сосредоточившись на металлическом божественном теле, персонаж получает:"
+ #godbodies_metal_focus: "Металлическое божественное тело"
+ #godbodies_metal_focus_modifier: "[GetFocus('godbodies_metal_focus').GetName]"
+ #godbodies_metal_focus_desc: "Превращение себя в нечеловеческую сущность, обмен смертной слабости и хрупкости на чистоту и твердость."
+ #godbodies_metal_focus_effect_desc: "Сосредоточившись на металлическом божественном теле, персонаж получает:"
 
- godbodies_wood_focus: "Деревянное божественное тело"
- godbodies_wood_focus_modifier: "[GetFocus('godbodies_wood_focus').GetName]"
- godbodies_wood_focus_desc: "Возделывание себя и ухода за телом $pod_wan_kuei$, отношение к нему как к саду."
- godbodies_wood_focus_effect_desc: "Сосредоточившись на деревянном божественном теле, персонаж получает:"
+ #godbodies_wood_focus: "Деревянное божественное тело"
+ #godbodies_wood_focus_modifier: "[GetFocus('godbodies_wood_focus').GetName]"
+ #godbodies_wood_focus_desc: "Возделывание себя и ухода за телом $pod_wan_kuei$, отношение к нему как к саду."
+ #godbodies_wood_focus_effect_desc: "Сосредоточившись на деревянном божественном теле, персонаж получает:"
 
- godbodies_water_focus: "Водное божественное тело"
- godbodies_water_focus_modifier: "[GetFocus('godbodies_water_focus').GetName]"
- godbodies_water_focus_desc: "Разрушение барьеров между собой и пользователем, открывающее $pod_wan_kuei$ для изменений, но при этом позволяющее ему оставаться самим собой."
- godbodies_water_focus_effect_desc: "Сосредоточившись на водном божественном теле, персонаж получает:"
+ #godbodies_water_focus: "Водное божественное тело"
+ #godbodies_water_focus_modifier: "[GetFocus('godbodies_water_focus').GetName]"
+ #godbodies_water_focus_desc: "Разрушение барьеров между собой и пользователем, открывающее $pod_wan_kuei$ для изменений, но при этом позволяющее ему оставаться самим собой."
+ #godbodies_water_focus_effect_desc: "Сосредоточившись на водном божественном теле, персонаж получает:"
 
- godbodies_fire_focus: "Огненное божественное тело"
- godbodies_fire_focus_modifier: "[GetFocus('godbodies_fire_focus').GetName]"
- godbodies_fire_focus_desc: "Природа пламени - подниматься и поглощать, не заботясь о собственном выживании."
- godbodies_fire_focus_effect_desc: "Сосредоточившись на огненном божественном теле, персонаж получает:"
+ #godbodies_fire_focus: "Огненное божественное тело"
+ #godbodies_fire_focus_modifier: "[GetFocus('godbodies_fire_focus').GetName]"
+ #godbodies_fire_focus_desc: "Природа пламени - подниматься и поглощать, не заботясь о собственном выживании."
+ #godbodies_fire_focus_effect_desc: "Сосредоточившись на огненном божественном теле, персонаж получает:"
 
- godbodies_earth_focus: "Земляное божественное тело"
- godbodies_earth_focus_modifier: "[GetFocus('godbodies_earth_focus').GetName]"
- godbodies_earth_focus_desc: "Уравновешенная природа земли, направленная на то, чтобы привести различные влечения и течения внутри души $pod_wan_kuei$ в гармоничное равновесие."
- godbodies_earth_focus_effect_desc: "Сосредоточившись на земляном божественном теле, персонаж получает:"
+ #godbodies_earth_focus: "Земляное божественное тело"
+ #godbodies_earth_focus_modifier: "[GetFocus('godbodies_earth_focus').GetName]"
+ #godbodies_earth_focus_desc: "Уравновешенная природа земли, направленная на то, чтобы привести различные влечения и течения внутри души $pod_wan_kuei$ в гармоничное равновесие."
+ #godbodies_earth_focus_effect_desc: "Сосредоточившись на земляном божественном теле, персонаж получает:"
 
- metalgodbody_visible: "Металл"
- woodgodbody_visible: "Дерево"
- watergodbody_visible: "Вода"
- firegodbody_visible: "Огонь"
- earthgodbody_visible: "Земля"
+ #metalgodbody_visible: "Металл"
+ #woodgodbody_visible: "Дерево"
+ #watergodbody_visible: "Вода"
+ #firegodbody_visible: "Огонь"
+ #earthgodbody_visible: "Земля"
 
  #shintai
  shintai_lifestyle_name: "Синтай"
@@ -425,50 +431,6 @@
  ironmountain_visible: "Железная Гора"
  kiai_visible: "Киаи"
  hellweaving_visible: "Адские Кружева"
-
- #alternate techniques
- alternate_techniques_lifestyle_name: "Альтернативные техники"
- alternate_techniques_lifestyle_desc: "Фокус на альтернативных техниках из вашей дхармы."
- alternate_techniques_lifestyle_highlight_desc: "Из-за вашей дхармы ваш прирост [Concept('experience', 'опыта')|El] для этого образа жизни увеличен на #P [GetPlayer.Custom('GetDharmaLifestylePercentageBoost')]#!."
- monthly_alternate_techniques_lifestyle_xp_gain_mult: "Ежемесячный прирост опыта на [Concept('lifestyle','пути')E] альтернативных техник"
-
-
- alternate_techniques_combination_focus: "Комбинированные техники"
- alternate_techniques_combination_focus_modifier: "[GetFocus('alternate_techniques_combination_focus').GetName]"
- alternate_techniques_combination_focus_desc: "Дисциплинарные комбинированные способности."
- alternate_techniques_combination_focus_effect_desc: "Сосредоточившись на комбинированных техниках, персонаж получает:"
-
- alternate_techniques_yin_focus: "Техники Инь"
- alternate_techniques_yin_focus_modifier: "[GetFocus('alternate_techniques_yin_focus').GetName]"
- alternate_techniques_yin_focus_desc: "Альтернативные техники Костяных Цветов."
- alternate_techniques_yin_focus_effect_desc: "Сосредоточившись на техниках Инь, персонаж получает:"
-
- alternate_techniques_yang_focus: "Техники Ян"
- alternate_techniques_yang_focus_modifier: "[GetFocus('alternate_techniques_yang_focus').GetName]"
- alternate_techniques_yang_focus_desc: "Альтернативные техники Бьющихся Драконов."
- alternate_techniques_yang_focus_effect_desc: "Сосредоточившись на техниках Ян, персонаж получает:"
-
- alternate_techniques_prayer_eating_focus: "Поглощение молитв"
- alternate_techniques_prayer_eating_focus_modifier: "[GetFocus('alternate_techniques_prayer_eating_focus').GetName]"
- alternate_techniques_prayer_eating_focus_desc: "Дисциплина, обычно ассоциирующаяся с еретической дхармой Лика Богов."
- alternate_techniques_prayer_eating_focus_effect_desc: "Сосредоточившись на поглощении молитв, персонаж получает:"
-
- alternate_techniques_inward_way_focus: "Внутренний Путь"
- alternate_techniques_inward_way_focus_modifier: "[GetFocus('alternate_techniques_inward_way_focus').GetName]"
- alternate_techniques_inward_way_focus_desc: "Специальная дисциплина, разработанная последователями дхармы Бури Внутреннего Фокуса."
- alternate_techniques_inward_way_focus_effect_desc: "Сосредоточившись на Внутреннем Пути, персонаж получает:"
-
- alternate_techniques_tempest_of_inward_focus_focus: "Буря Внутреннего Фокуса"
- alternate_techniques_tempest_of_inward_focus_focus_modifier: "[GetFocus('alternate_techniques_tempest_of_inward_focus_focus').GetName]"
- alternate_techniques_tempest_of_inward_focus_focus_desc: "Форма боевого искусства, разработанная еретической дхармой Искателей Внутреннего Пути."
- alternate_techniques_tempest_of_inward_focus_focus_effect_desc: "Сосредоточившись на Буре Внутреннего Фокуса, персонаж получает:"
-
- combination_techniques_visible: "Комбинированные техники"
- yin_techniques_visible: "Техники Инь"
- yang_techniques_visible: "Техники Ян"
- prayer_eating_visible: "Поглощение молитв"
- inward_way_visible: "Внутренний Путь"
- tempest_of_inward_focus_visible: "Буря Внутреннего Фокуса"
 
  #Qiao
  qiao_lifestyle_name: "Цяо"

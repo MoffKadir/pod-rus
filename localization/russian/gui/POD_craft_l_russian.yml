@@ -821,10 +821,10 @@
 
 
  #NEW CRAFTING SYSTEM
- CRAFTING_GUI_TITLE: "Ремесло"
+ CRAFTING_GUI_TITLE: "[crafting|E]"
  CRAFTING_GUI_CRAFTERS: "Возможные ремесленники"
  POD_CRAFTING_MINIGAME_TITLE: "Мастерская"
- POD_CRAFTING_MINIGAME_SACRIFICE_TITLE: "Sacrifice Pool"
+ POD_CRAFTING_MINIGAME_SACRIFICE_TITLE: "Доступная жертва"
  CRAFTING_GUI_CHOOSEN_SACRIFICE: "Выбранная жертва"
  CRAFTING_GUI_EXECUTE_SACRIFICE_GUI: "Подтвердить"
  CRAFTING_GUI_MATERIALS: "Материалы"
@@ -835,10 +835,10 @@
  POD_CRAFTING_MINIGAME_MOVES_LEFT: "Доступная [Concept('crafting_complexity', 'сложность ремесла')|E]:"
  POD_CRAFTING_MINIGAME_CRAFT: "Ремесло"
  POD_CRAFTING_MINIGAME_POTENTIAL: "[crafting_potential|E] ремесленника: [GetPlayer.MakeScope.GetVariable('crafting_minigame').GetVariable('crafter').GetCharacter.Custom('PODCraftsmanPotential')]"
- POD_CRAFTING_MINIGAME_UNLOCKED_FORGE_NODES: "Открытые кузнечные узлы ремесленника:"
- POD_CRAFTING_MINIGAME_UNLOCKED_BREW_NODES: "Открытые узлы отваров ремесленника:"
- POD_CRAFTING_MINIGAME_UNLOCKED_ENHANCE_NODES: "Открытые узлы улучшения ремесленника:"
- CRAFTING_GUI_NO_NODES: "У ремесленника нет ни одного открытого узла!"
+ POD_CRAFTING_MINIGAME_UNLOCKED_FORGE_NODES: "Открытые кузнечные [Concept('crafting_nodes', 'узлы')|E] ремесленника:"
+ POD_CRAFTING_MINIGAME_UNLOCKED_BREW_NODES: "Открытые [Concept('crafting_nodes', 'узлы')|E] отваров ремесленника:"
+ POD_CRAFTING_MINIGAME_UNLOCKED_ENHANCE_NODES: "Открытые [Concept('crafting_nodes', 'узлы')|E] улучшения ремесленника:"
+ CRAFTING_GUI_NO_NODES: "У ремесленника нет ни одного открытого [Concept('crafting_nodes', 'узла')|E]!"
 
  PODCraftsmanPotential_exelent: "#B;bold Превосходный#!"
  PODCraftsmanPotential_good: "#Y Хороший#!"
@@ -852,6 +852,7 @@
  POD_already_used_moves: "[crafting_complexity|E] уже использована"
  crafting_minigame_moves_crafter: "[Concept('trait_level_track_xp', 'Опыт пути развития свойства')|E] «[GetTrait('pod_crafter').GetName(GetPlayer)]»"
 
+ POD_already_used_reloads: "Обновления использованы"
  POD_crafting_minigame_all_rerolls_used: "Вы использовали все обновления!"
  POD_crafting_minigame_used_all_moves: "Вы использовали все доступные движения, основываясь на [Concept('crafting_complexity', 'сложности ремесла')|E]!"
  POD_crafting_minigame_node_is_starting: "Вы должны начать с узла, на котором есть тип [Concept('artifact', 'артефакта')|E]!"
@@ -862,7 +863,7 @@
  POD_cannot_end_without_starting: "Вы должны выбрать хотя бы один узел!"
  POD_crafting_minigame_choose_sacrifice: "Вы должны выбрать жертву!"
  POD_cannot_start_without_ending: "Вы не можете создавать два предмета одновременно!"
- POD_crafting_minigame_fleshcraft_requirement: "У вас должен быть как минимум 1 нематериальный [Concept('prisoner', 'пленник')|E], например вампир, оборотень и т.д."
+ POD_crafting_minigame_fleshcraft_requirement: "У вас должен быть как минимум 1 материальный [Concept('prisoner', 'пленник')|E], например вампир, оборотень и т.д."
  POD_crafting_minigame_soulforge_requirement: "У вас должен быть хотя бы 1 [Concept('prisoner', 'пленник')|E]-призрак"
  POD_crafting_minigame_fetishsmith_requirement: "У вас должен быть хотя бы 1 [Concept('prisoner', 'пленник')|E]-дух"
  POD_crafting_minigame_imbue_object_requirement: "У вас должен быть хотя бы 1 [Concept('prisoner', 'пленник')|E]"
@@ -881,28 +882,28 @@
  CRAFTING_GUI_TABS_BREWING: "Создание отваров"
  CRAFTING_GUI_TABS_ENHANCING: "Улучшение"
 
- CRAFTING_GUI_FORGE_TITLE: "Ковка"
- CRAFTING_GUI_FORGE_DESC: "Ковка - это процесс создания [Concept('artifact', 'артефактов')|E] из сырья...\n\n...\n\n...\n\nСм. также [crafting_complexity|El], [crafting_potential|El] и [crafting_rerolls|El]"
+ CRAFTING_GUI_FORGE_TITLE: "[crafting_forging|E]"
+ CRAFTING_GUI_FORGE_DESC: "Создание новых [Concept('artifact', 'артефактов')|E] из сырья."
  CRAFTING_GUI_START_FORGE: "Начать ковку"
  CRAFTING_GUI_FORGE_COOLDOWN: "#I Ковка восстановится через #V 5 лет#!#!"
  CRAFTING_GUI_FORGE_COOLDOWN_CHECKBOX_TT: "Вы получите уведомление, когда ковка восстановится"
  CRAFTING_GUI_FORGE_COOLDOWN_CHECKBOX: "Включить уведомление восстановления ковки?"
 
- CRAFTING_GUI_BREWING_TITLE: "Создание отваров"
- CRAFTING_GUI_BREWING_DESC: "Создание отваров - процесс создания алхимических зелий...\n\n...\n\n...\n\nСм. также [crafting_complexity|El], [crafting_potential|El] и [crafting_rerolls|El]"
+ CRAFTING_GUI_BREWING_TITLE: "[crafting_brewing|E]"
+ CRAFTING_GUI_BREWING_DESC: "Создание алхимических отваров или зелий."
  CRAFTING_GUI_START_BREWING: "Начать создание отваров"
  CRAFTING_GUI_BREWING_COOLDOWN: "#I Создание отваров восстановится через #V 5 лет#!#!"
  CRAFTING_GUI_BREW_COOLDOWN_CHECKBOX_TT: "Вы получите уведомление, когда создание отваров восстановится"
  CRAFTING_GUI_BREW_COOLDOWN_CHECKBOX: "Включить уведомление восстановления создания отваров?"
 
- CRAFTING_GUI_ENHANCING_TITLE: "Улучшение"
- CRAFTING_GUI_ENHANCING_DESC: "Улучшение - это процесс улучшения [Concept('artifact', 'артефактов')|E] с помощью сверхъестественных средств...\n\n...\n\n...\n\nСм. также [crafting_complexity|El], [crafting_potential|El] и [crafting_rerolls|El]"
+ CRAFTING_GUI_ENHANCING_TITLE: "[crafting_enhancing|E]"
+ CRAFTING_GUI_ENHANCING_DESC: "Улучшение существующих [Concept('artifact', 'артефактов')|E] с помощью сверхъестественных средств."
  CRAFTING_GUI_START_ENHANCING: "Начать улучшение"
  CRAFTING_GUI_ENHANCING_COOLDOWN: "#I Улучшение восстановится через #V 10 лет#!#!"
  CRAFTING_GUI_ENHANCE_COOLDOWN_CHECKBOX_TT: "Вы получите уведомление, когда улучшение восстановится"
  CRAFTING_GUI_ENHANCE_COOLDOWN_CHECKBOX: "Включить уведомление восстановления улучшения?"
 
- CRAFTING_GUI_ONGOING_CRAFTING: "В настоящее время уже ведётся создание!"
+ CRAFTING_GUI_ONGOING_CRAFTING: "Процесс создания уже начат!"
  CRAFTING_GUI_CONTINUE_ONGOING_CRAFTING: "Продолжить заниматься ремеслом"
 
  CRAFTING_GUI_CHOOSEN_CRAFTER: "Выбранный ремесленник"
@@ -1010,6 +1011,7 @@
  has_brew_cooldown: "Создание отваров восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'brew_cooldown') )]" 
  has_enhance_cooldown: "Улучшение восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'enhance_cooldown') )]" 
 
+ POD_artifact_can_be_enhanced: "Этот [Concept('artifact', 'артефакт')|E] достиг [Concept('crafting_enhance_limit', 'предела возможных улучшений')|E]."
 
  node_fleshcraft_loca: "Ваяние плоти"
  node_soulforge_loca: "Ковка душ"
@@ -1025,7 +1027,7 @@
  node_reweave_masterwork_loca: "Мастерское переплетение"
  node_reweave_famed_loca: "Известное переплетение"
  node_reweave_illustrious_loca: "Великолепное переплетение"
- node_enchant_object_loca: "Зачарование объекта"
+ node_create_object_loca: "Создание объекта"
  node_ectoplasmic_artifact_loca: "Эктоплазмический артефакт"
  node_mummy_ward_loca: "Оберег"
  node_mummy_talisman_loca: "Талисман"
@@ -1052,7 +1054,7 @@
  node_empower_jade_loca: "Усиление нефрита"
  node_conforma_loca: "Конформа"
  node_imbue_object_loca: "Вселение"
- node_enchantment_enhance_prowess_loca: "Улучшение [Concept('prowess', 'доблести')|E]"
+ node_enchantment_enhance_general_improvment_loca: "Общее улучшение"
  node_enchantment_enhance_durability_loca: "Улучшение прочности"
  node_enchantment_enhance_attribute_loca: "Улучшение [Concept('skill', 'навыков')|E]"
  node_mild_poison_loca: "Яд"
@@ -1075,7 +1077,15 @@
  node_alchemy_kinain_loca: "Трофей Грёз"
  node_alchemy_health_loca: "Лекарственные травы"
 
+ kinfolk_kinain_warning: "#X Это зелье вызывает мгновенную смерть при употреблении!#!"
+
  POD_give_one_time_boost_to: "Наделить #V [SCOPE.GetValue('value_loca')]#!, единовременное улучшение ремесла [Localize(Concatenate('boost_name_',SCOPE.GetFlagName('type_loca')))]"
  boost_name_forge: "Ковка"
  boost_name_brew: "Создание отваров"
  boost_name_enhance: "Улучшение"
+
+
+
+ unlock_forging_node: "Открыть [Concept('crafting_node', 'узел')|E] [Concept('crafting_forging', 'ковки')|E]:"
+ unlock_brewing_node: "Открыть [Concept('crafting_node', 'узел')|E] [Concept('crafting_brewing', 'создания отваров')|E]:"
+ unlock_enhancing_node: "Открыть [Concept('crafting_node', 'узел')|E] [Concept('crafting_enhancing', 'улучшения')|E]:"
