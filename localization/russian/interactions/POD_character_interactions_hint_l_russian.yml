@@ -1,21 +1,21 @@
 ﻿l_russian:
- POD_hint_fog_of_war_interaction: "#difficulty_hard Unknown Character#!"
- POD_hint_fog_of_war_interaction_desc: "You don't know this character, not even by reputation." # TODO: explain fog of war mechanics
+ POD_hint_fog_of_war_interaction: "#difficulty_hard Неизвестный персонаж#!"
+ POD_hint_fog_of_war_interaction_desc: "Вы не знаете этого персонажа, даже по репутации." # TODO: explain fog of war mechanics
 
- POD_hint_apocalyptic_interaction: "#difficulty_hard Eternal Slumber#!"
- POD_hint_apocalyptic_interaction_desc: "No one knows [recipient.GetShortUINamePossessive] whereabouts. [recipient.GetSheHe|U] is, for all intents and purposes, lost forever."
+ POD_hint_apocalyptic_interaction: "#difficulty_hard Вечный сон#!"
+ POD_hint_apocalyptic_interaction_desc: "Никто не знает о местонахождении [Select_CString(recipient.IsLocalPlayer, '', 'персонажа ' )][recipient.GetShortUINamePossessive][Select_CString(recipient.IsLocalPlayer, 'его персонажа', '' )]. Для всех намерений и целей [recipient.GetSheHe] [Select_CString(recipient.IsFemale, 'потеряна', 'потерян' )] навсегда."
 
- POD_hint_torpor_interaction: "#difficulty_hard Slumbering#!"
- POD_hint_torpor_interaction_desc: "[recipient.GetShortUIName] is in a catatonic state, making almost all interactions impossible."
+ POD_hint_torpor_interaction: "#difficulty_hard Сон#!"
+ POD_hint_torpor_interaction_desc: "[recipient.GetShortUIName] находится в кататоническом состоянии, что делает невозможным почти все взаимодействия."
 
- POD_hint_umbra_interaction: "#difficulty_hard Across the Shroud#!"
- POD_hint_umbra_interaction_desc: "Either you or [recipient.GetShortUIName] are in the [umbra|E], making communication impossible.\n\nYou could circumvent this limitation if both of you had a way to communicate with beings on the other side."
+ POD_hint_umbra_interaction: "#difficulty_hard По ту сторону Савана#!"
+ POD_hint_umbra_interaction_desc: "Либо вы, либо [recipient.GetShortUIName] находитесь в [Concept('umbra', 'Умбре')|E], что делает общение невозможным.\n\nВы могли бы обойти это ограничение, если бы у вас обоих был способ общаться с существами на другой стороне."
 
- POD_hint_wight_interaction: "#difficulty_hard Feral#!"
- POD_hint_wight_interaction_desc: "[recipient.GetShortUIName] has lost [recipient.GetHerHis] mind completely. All [recipient.GetSheHe] can do now is act on pure animalistic instinct."
+ POD_hint_wight_interaction: "#difficulty_hard Неистовство#!"
+ POD_hint_wight_interaction_desc: "[recipient.GetShortUIName] полностью [Select_CString(recipient.IsFemale, 'потеряла', 'потерял' )] рассудок. Все, что [recipient.GetSheHe] может сейчас делать, - это действовать на основе чисто животного инстинкта."
 
- POD_hint_robotic_interaction: "#difficulty_hard Artificial Construct#!"
- POD_hint_robotic_interaction_desc: "This being was animated through some form of magic. It can perform simple tasks and follow orders, but not much else."
+ POD_hint_robotic_interaction: "#difficulty_hard Искусственный конструкт#!"
+ POD_hint_robotic_interaction_desc: "Это существо было оживлено с помощью какой-то формы магии. Оно может выполнять простые задачи и следовать приказам, но не более того."
 
- POD_hint_hostile_splat_interaction: "#difficulty_hard Hostile Splat#!"
- POD_hint_hostile_splat_interaction_desc: "This character considers your [splat|E] their mortal enemy. They have no interest in diplomatic dealings with your kind."
+ POD_hint_hostile_splat_interaction: "#difficulty_hard Враждебный вид#!"
+ POD_hint_hostile_splat_interaction_desc: "Этот персонаж считает ваш [Concept('splat', 'вид')|E] своими смертельными врагами. Они не заинтересованы в дипломатических отношениях с вам подобными."
