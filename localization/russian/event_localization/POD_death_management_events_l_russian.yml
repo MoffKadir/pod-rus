@@ -6,8 +6,8 @@
  domitor_death_notification_title: "Ваш домитор #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
  death_management.domitor.desc: "Ваш домитор, [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
 
- herd_death_notification_title: "Член вашего [Concept('herd', 'стада')|E] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
- death_management.herd.desc: "Член вашего [Concept('herd', 'стада')|E], [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
+ herd_death_notification_title: "Член вашего [Concept('POD_herd', 'стада')|E] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
+ death_management.herd.desc: "Член вашего [Concept('POD_herd', 'стада')|E], [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
 
  dreamer_death_notification_title: "[Select_CString(LEFT_CHARACTER.IsFemale, 'Ваша мечтательница', 'Ваш мечтатель' )] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
  death_management.dreamer.desc: "[Select_CString(dead_character.IsFemale, 'Ваша мечтательница', 'Ваш мечтатель' )], [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."

@@ -1,0 +1,77 @@
+﻿l_russian:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ####Court Positions####
+ ashirra_imam_court_position: "Имам"
+ ashirra_imam_court_position_desc: "Имам - духовный лидер каждой общины Аширры. Он защищает верующих, обеспечивая безопасность и процветание общины, и следит за соблюдением законов ислама. В его обязанности также входит содержание мечети для городских аширритов, которая является одновременно духовным сердцем общины и убежищем, куда любой каинит может спокойно прийти и высказать свои сожаления."
+ ashirra_ulama_court_position: "Улем"
+ ashirra_ulama_court_position_desc: "Улемы - это учёные, изучающие Коран и хадисы. Они служат уважаемыми мудрецами в общине. Аширриты, которые стремятся к религиозным знаниям, служат улемами в своей ночной общине. Многие из этих аширритов запомнили эти священные тексты и в некоторых случаях провели сотни лет, размышляя и обсуждая смысл учений Пророка."
+ ashirra_qadi_court_position: "Кади"
+ ashirra_qadi_court_position_desc: "Кади - это правоведы исламской веры, изучающие законы, установленные Мухаммедом, и толкующие их в спорах или преступлениях, совершённых среди верующих. Каждый судья должен быть сведущ как в законах, изложенных в Коране, так и в сотнях предыдущих решений и прецедентов, созданных правоведами на протяжении всей истории ислама. Этот судья консультирует имама, султана и других вампиров по вопросам, касающимся правовых споров, и рекомендует подходящие наказания за нарушение исламского закона."
+ ashirra_mullah_court_position: "Мулла"
+ ashirra_mullah_court_position_desc: "Самые уважаемые учёные Аширры известны как муллы. Хотя любой аширрит может стремиться стать учёным по священным текстам, звание муллы может быть получено только через годы преданного изучения и приобщения к секте нынешними муллами. Во всем мусульманском мире лишь немногие вампиры претендуют на это звание."
+ ashirra_mullah_court_position_requirement_tooltip: "Имеет свойство «[GetTrait('theologian').GetName(GetNullCharacter)]» или «[GetTrait('scholar').GetName(GetNullCharacter)]»"
+
+
+
+ ####Court Position Tasks####
+ POD_imam_sadaqah: "Раздавать общественную садаку"
+ POD_imam_sadaqah_desc: "Ваш имам будет раздавать милостыню бедным и обездоленным в ваших владениях от вашего имени."
+ POD_imam_sanctuary: "Предоставить убежище"
+ POD_imam_sanctuary_desc: "$ashirra_imam_court_position$ будет выслушивать сетования простых каинитов."
+ POD_qadi_judge: "Вершить правосудие"
+ POD_qadi_judge_desc: "$ashirra_qadi_court_position$ будет вершить правосудие от вашего имени."
+ POD_ulama_teachings: "Советовать султану"
+ POD_ulama_teachings_desc: "$ashirra_ulama_court_position$ будет давать советы султану, используя свои обширные познания."
+ POD_ulama_teachings_requirement: "Вы #bold не#! являетесь [Concept('cultural_head', 'культурным идеологом')|E]"
+ POD_ulama_learning: "Искать новые знания"
+ POD_ulama_learning_desc: "Путь к становлению муллой долог. $ashirra_ulama_court_position$ посвятит своё время тому, чтобы стать им."
+ POD_ulama_learning_tooltip_requirement: "#bold Не#! имеет свойств «[GetTrait('theologian').GetName(GetNullCharacter)]» и «[GetTrait('scholar').GetName(GetNullCharacter)]»"
+ POD_ulama_learning_tooltip: "Каждый год у этого персонажа есть возможность получить [Concept('perk', 'достоинство')|E] в [Concept('learning_lifestyle', 'пути учёности')|E] «[GetTrait('theologian').GetName(GetNullCharacter)]» и «[GetTrait('scholar').GetName(GetNullCharacter)]», пока у него не появятся оба свойства. Этот шанс повышается за счёт его [Concept('aptitude', 'пригодности')|E]."
+ court_ulama_study_theology_title: "Улем добивается успехов"
+ POD_mullah_warriors: "Призвать верующих"
+ POD_mullah_warriors_desc: "Многие члены [Concept('ashirra', 'Аширры')|E] готовы сразиться с врагами Аллаха. Они не отвергнут призыв муллы."
+ POD_mullah_zealots: "Возглавить набожных"
+ POD_mullah_zealots_desc: "$ashirra_mullah_court_position$ пользуется большим уважением в рядах [Concept('ashirra', 'Аширры')|E]. Его слова могут поколебать даже самых циничных верующих. Те, кто поддерживает его, поддержат и вас."
+
+
+ ####Cairo related####
+ POD_mullah_zealots_cairo_tooltip: "Каждый год этот персонаж может удалить свойство «[GetTrait('cynical').GetName(GetNullCharacter)]» у своего [Concept('liege', 'сюзерена')|E], его [Concept('courtiers', 'придворных')|E] или [Concept('vassals', 'вассалов')|E]. Этот шанс повышается за счёт его [Concept('aptitude', 'пригодности')|E]."
+ court_mullah_zealots_cairo_effect_title: "Мулла развеивает сомнения"
+ cairo_mullah_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_lama_04').GetName]"
+
+ POD_qadi_judge_cairo_tooltip: "Каждый год этот персонаж может ускорить [de_jure_drift|El] в державе. Этот шанс повышается за счёт его [Concept('aptitude', 'пригодности')|E]."
+ court_qadi_judge_cairo_effect_title: "Кади ускоряет интеграцию"
+ cairo_qadi_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_yashkur_04').GetName]"
+
+ POD_imam_sadaqah_cairo_tooltip: "Каждый год этот персонаж может обратить в вашу [Concept('faith', 'конфессию')|E] не-аширритские графства. Этот шанс повышается за счёт его [Concept('aptitude', 'пригодности')|E]."
+ court_imam_sadaqah_cairo_effect_title: "Имам обращает графство"
+ cairo_imam_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_hajj_04').GetName]"
+
+ POD_ulama_teachings_cairo_tooltip: "Каждый год этот персонаж может удалить одно из ваших [Concept('fame_trait','свойств репутации')|E] от [Concept('mental_break', 'нервных срывов')|E]. Этот шанс повышается за счёт его [Concept('aptitude', 'пригодности')|E]."
+ court_ulama_teachings_cairo_effect_title: "Алим предлагает новый взгляд на жизнь"
+ cairo_ulama_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_fen_04').GetName]"
+
+ ####Misc####
+ has_only_one_ashirra_court_position_tooltip: "Этот персонаж #bold не#! занимает другую [Concept('court_position', 'придворную должность')|E] [Concept('ashirra', 'Аширры')|E]"

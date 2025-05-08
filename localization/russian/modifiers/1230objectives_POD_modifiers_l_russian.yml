@@ -135,9 +135,9 @@
  support_from_von_murnau_modifier: "Поддержка дома Мурнау"
 
  decani_boon_modifier: "Благословение Декани"
- decani_boon_modifier_desc: "Открывает доступ к [Concept('lifestyle', 'пути')|E] [Concept('arcana_lifestyle', 'Арканы')|E]\n#weak Этот персонаж был наделен частичкой силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#! Декани.#!"
+ decani_boon_modifier_desc: "Открывает доступ к [Concept('lifestyle', 'пути')|E] [Concept('investiture_lifestyle', 'инвеституры')|E]\n#weak Этот персонаж был наделен частичкой силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#! Декани.#!"
  decani_modifier: "Декани"
- decani_modifier_desc: "Открывает доступ к [Concept('lifestyle', 'путям')|E] [Concept('arcana_lifestyle', 'Арканы')|E] и [Concept('lore_lifestyle', 'Знаний')|E]\n#weak Этот персонаж присвоил себе силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#!, пожрав душу Декани.#!"
+ decani_modifier_desc: "Открывает доступ к [Concept('lifestyle', 'пути')|E] [Concept('arcana_lifestyle', 'Арканы')|E]\n#weak Этот персонаж присвоил себе силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#!, пожрав душу Декани.#!"
 
  cappadocius_boon_modifier: "Благословение Каппадокия"
 
@@ -158,3 +158,6 @@
 
  MODIFIER_DEFINITION_VALUE_PER_MALKAVIAN_DEMON_FRIEND_SCALE: "#weak Значение зависит от принесённых в жертву узников#!"
  malkavian_demon_friend_modifier_powerup_tt: "Сила [Concept('modifier', 'модификатора')|E] союзника демонов возрастает!"
+
+ yama_king_modifier: "Повелитель Яма"
+ yama_king_modifier_desc: "Открывает доступ к [Concept('arcana_lifestyle', 'пути Арканы')|E].\n#weak Этот персонаж - повелитель Яма, могущественное демоническое существо, контролирующее часть проклятого мира Йоми.#!"

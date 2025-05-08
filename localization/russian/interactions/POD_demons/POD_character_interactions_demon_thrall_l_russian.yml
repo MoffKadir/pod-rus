@@ -1,0 +1,49 @@
+﻿l_russian:
+ POD_set_thrall_interaction: "Поработить"
+ POD_set_thrall_interaction_desc: "Поработить персонажа [recipient.GetFirstName], сделав [Concept('thrall', 'рабом')|E] у вас на службе."
+ POD_set_thrall_interaction_extra_icon: "$hook_extra_icon$"
+
+ POD_remove_thrall_interaction: "Отменить договор"
+ POD_remove_thrall_interaction_desc: "Отменить договор, освободив персонажа [recipient.GetFirstName] от [Concept('thrall', 'рабства')|E]."
+ POD_enthrall_interaction_limit: "Thrall size is capped! (3 plus 1 per [intrigue_i]#V 8#! [intrigue|E] plus any bonuses from other sources)"
+ 
+ POD_set_cultist_interaction: "Признать культиста"
+ POD_set_cultist_interaction_desc: "Признайте [recipient.GetFirstName] В качестве вашего культиста."
+ POD_set_cultist_interaction_extra_icon: "$hook_extra_icon$"
+ POD_set_cultist_vassal_requirement: "Needs to be your [courtier|E], your [direct_vassal|E], or the [direct_vassal|E] of your [thrall|E]"
+
+ POD_remove_cultist_interaction: "Отвергнуть культиста"
+ POD_remove_cultist_interaction_desc: "Отвергните почитание [recipient.GetFirstNamePossessive], отверните [recipient.GetHerHis] как вашего культиста."
+
+ POD_summon_demon_interaction: "Призвать демона"
+ POD_summon_demon_interaction_desc: "Вселить [GetTrait('demon').GetName( GetPlayer )] в [recipient.GetFirstName]."
+
+ SAME_FAITH: "Ты принадлежишь к той же вере：$VALUE|+0$"
+
+ POD_command_thrall_gold_interaction: "Приказ [Concept( 'thrall', 'рабу' )|E] #Weak (золото)#!"
+ POD_command_thrall_gold_interaction_desc: "Предложить дар силы, чтобы заставить [recipient.GetFirstName] заплатить тебе золото."
+ POD_command_thrall_gold_interaction_option_minor_gold: "Немного золота"
+ POD_command_thrall_gold_interaction_option_medium_gold: "Среднее количество золота"
+ POD_command_thrall_gold_interaction_option_major_gold: "Большое количество золота"
+ POD_command_thrall_gold_interaction_option_massive_gold: "Огромное количество золота"
+ POD_command_thrall_gold_interaction_option_monumental_gold: "Грандиозное количество золота"
+ POD_command_thrall_gold_interaction_option_excessive_gold: "Избыточное количество золота"
+ POD_command_thrall_gold_interaction_option_omega_gold: "Невероятное количество золота"
+
+ POD_command_thrall_artifact_interaction: "Приказ [Concept( 'thrall', 'рабу' )|E] #Weak (артефакт)#!"
+ POD_command_thrall_artifact_interaction_desc: "Предложить дар силы, чтобы заставить [recipient.GetFirstName] подарить тебе артефакт."
+
+ POD_command_thrall_title_interaction: "Приказ [Concept( 'thrall', 'рабу' )|E] #Weak (владение)#!"
+ POD_command_thrall_title_interaction_desc: "Предложить дар силы, чтобы заставить [recipient.GetFirstName] владение (но не основное) тебе."
+
+ POD_command_thrall_vassal_interaction: "Приказ [Concept( 'thrall', 'рабу' )|E] #Weak (вассал)#!"
+ POD_command_thrall_vassal_interaction_desc: "Предложить дар силы, чтобы заставить [recipient.GetFirstName] передать тебе вассала."
+ recipient_secondary_POD_command_thrall_vassal_interaction: "Вассал"
+
+ POD_command_thrall_war_interaction: "Приказ [Concept( 'thrall', 'рабу' )|E] #Weak (война)#!"
+ POD_command_thrall_war_interaction_desc: "Предложить дар силы, чтобы заставить [recipient.GetFirstName] начать войну против соседнего правителя."
+ recipient_secondary_POD_command_thrall_war_interaction: "Цель войны"
+
+ demon_demand_tt: "You may receive a demand from your demon master at the start of the year. An unfinished demand will give you stress every #V 3#! months."
+ POD_demon_demand_unfinished: "Unfinished demand"
+ POD_demon_demand_unfinished.tt: "You gain stress due to an unfinished demand of your demon master."

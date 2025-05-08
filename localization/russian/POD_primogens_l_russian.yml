@@ -14,10 +14,8 @@
  culture_era_gothic_victorian_salary_mod: "[era|E]: #V $culture_era_gothic_victorian$#!"
  culture_era_final_nights_salary_mod: "[era|E]: #V $culture_era_final_nights$#!"
 
- court_position_wrathful_trait: "[GetTrait('wrathful').GetName( ROOT.Char )]"
- court_position_arrogant_trait: "[GetTrait('arrogant').GetName( ROOT.Char )]"
- court_position_ambitious_trait: "[GetTrait('ambitious').GetName( ROOT.Char )]"
  court_position_vengeful_trait: "[GetTrait('vengeful').GetName( ROOT.Char )]"
+ court_position_cynical_trait: "[GetTrait('cynical').GetName( ROOT.Char )]"
  court_position_dull_trait: "[GetTrait('dull').GetName( ROOT.Char )]"
  court_position_hunter_trait: "[GetTrait('lifestyle_hunter').GetName( ROOT.Char )]"
  court_position_intellect_bad_3_trait: "[GetTrait('intellect_bad_3').GetName( ROOT.Char )]"
@@ -57,6 +55,13 @@
  court_position_lover_relation: "[ROOT.Char.GetSheHe|U] - [Select_CString(ROOT.Char.IsFemale, 'ваша [Concept('lover', 'любовница')|E]', 'ваш любовник' )]"
  court_position_soulmate_relation: "[ROOT.Char.GetSheHe|U] - ваша [soulmate|El]"
  court_position_lifestyle_traveler_trait: "[GetTrait('lifestyle_traveler').GetName( ROOT.Char )]"
+ court_position_golconda_seeker_trait: "[GetTrait('golconda_seeker').GetName( ROOT.Char )]"
+ court_position_golconda_trait: "[GetTrait('golconda').GetName( ROOT.Char )]"
+ court_position_truefaith_trait: "[GetTrait('truefaith').GetName( ROOT.Char )]"
+ court_position_beatific_trait: "[GetTrait('beatific').GetName( ROOT.Char )]"
+ court_position_younger_than_100: "Возраст ниже #bold 100#!"
+ court_position_younger_than_50: "Возраст ниже #bold 50#!"
+ cairo_brujah_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_raya_04').GetName]"
 
  brujah_primogen_court_position: "Примоген Бруха"
  brujah_primogen_court_position_desc: "$brujah_primogen_court_position$ традиционно отвечает за военную стратегию в ваших владениях, хотя иногда они могут заниматься и наукой, оставаясь верными своему прозвищу «воинов-учёных».\n\n#help Требования к [Concept('aptitude', 'пригодности')|E] см. в «[brujah_primogen|E]».#!"
@@ -265,6 +270,7 @@
  POD_organize_faerie: "Организовать фей"
  POD_organize_faerie_desc: "Этот персонаж помогает набирать и управлять войсками фей своего сюзерена."
 
+
  imperial_envoy_court_position: "Имперский посланник"
  imperial_envoy_court_position_desc: "$imperial_envoy_court_position$ представляет своего сюзерена на дальних рубежах державы, напоминая местным, что они должны платить дань, даже если находятся далеко."
  imperial_chancellor_court_position: "Имперский канцлер"
@@ -283,14 +289,6 @@
  guardian_yava_court_position: "Хранитель явы"
  guardian_yava_court_position_desc: "Ява - это тайна племени, скрытая от всех посторонних, которая, если ее узнать, якобы дает другому существу власть над вами. Наиболее тщательно охраняемый из всех секретов бастет, он раскрывается только при самых крайних обстоятельствах, если вообще раскрывается."
 
- imam_court_position: "Имам"
- imam_court_position_desc: "Исламский религиозный лидер, возглавляющий молитву; в секте Аширры имам - вампир, осуществляющий религиозное руководство местной общиной каинитов."
- ulama_court_position: "Улем"
- ulama_court_position_desc: "Мудрецы и другие религиозные ученые из общества Аширры."
- mullah_court_position: "Мулла"
- mullah_court_position_desc: "Самые уважаемые религиозные ученые Аширры."
- qadi_court_position: "Кади"
- qadi_court_position_desc: "Судьи и блюстители закона общества Аширры."
 
  ratcatcher_court_position: "Крысолов"
  ratcatcher_court_position_desc: "$ratcatcher_court_position$ должен пасти крыс, следить за тем, чтобы они были съедобными, и загонять их в угол, чтобы они служили источником витэ для менее удачливых вампиров при дворе."
