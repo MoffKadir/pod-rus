@@ -221,25 +221,25 @@
  SHIFTER_IS_CRIME: "Свойство «[GetTraitGroup('shapeshifter').GetName()]» считается преступлением: $VALUE|+0$"
 
 
- POD_choose_sire_interaction: "Choose [Sire|E]"
- POD_choose_sire_interaction_desc: "You want [recipient.GetFirstName] to become your [Sire|E]."
- 
- POD_choose_sifu_interaction: "Choose Sifu"
- POD_choose_sifu_interaction_desc: "You want [recipient.GetFirstName] to become your Sifu."
+ POD_choose_sire_interaction: "Выбрать [Concept('Sire', 'сира')|E]"
+ POD_choose_sire_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала', 'стал' )] вашим [Concept('Sire', 'сиром')|E]."
 
- POD_forced_to_frenzy.tt: "The victim immediately frenzies."
+ POD_choose_sifu_interaction: "Выбрать сифу"
+ POD_choose_sifu_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала', 'стал' )] вашим сифу."
 
- POD_kueijin_spy.duel.success: "You successfully used the power"
- POD_kueijin_spy_interaction_evaluate: "Evaluate"
- POD_kueijin_spy_interaction_scrutinize: "Scrutinize"
- POD_kueijin_spy.duel.tt.evaluate: "You scanned your opponent and discerned [recipient.GetHerHis] weaknesses."
- POD_kueijin_spy.duel.tt.scrutinize: "You know the dark plan of your opponent."
- POD_kueijin_spy.duel.failure: "You fail to use the power"
- POD_kueijin_spy.duel.tt.attacker_lost: "You fail"
- POD_soul_bridge_interaction_desc: "Your silently transmit simple urges to [recipient.GetFirstName], the emotion is strong enough that [recipient.GetFirstName] is forced to act on it." 
+ POD_forced_to_frenzy.tt: "Жертва немедленно впадёт в неистовство."
 
- POD_mind_rape_interaction_desc: "Use your evocation to learn of every secret and scheme of [recipient.GetFirstName]."
+ POD_kueijin_spy.duel.success: "Вы успешно использовали способность"
+ POD_kueijin_spy_interaction_evaluate: "Оценка"
+ POD_kueijin_spy_interaction_scrutinize: "Изучение"
+ POD_kueijin_spy.duel.tt.evaluate: "Вы осмотрели [Select_CString(recipient.IsFemale, 'свою противницу', 'своего противника' )] и обнаружили [recipient.GetHerHis] слабые места."
+ POD_kueijin_spy.duel.tt.scrutinize: "Вы узнали тёмный замысел [Select_CString(recipient.IsFemale, 'своей противницы', 'своего противника' )]."
+ POD_kueijin_spy.duel.failure: "Вы не смогли использовать способность"
+ POD_kueijin_spy.duel.tt.attacker_lost: "Вы потерпели неудачу"
+ POD_soul_bridge_interaction_desc: "[recipient.GetFirstName] получает от вас безмолвные простые побуждения, эмоции достаточно сильны, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'была вынуждена', 'был вынужден' )] действовать в соответствии с ними."
 
- POD_learn_true_name_interaction: "Learn True Name"
- POD_learn_true_name_interaction_desc: "Start a [journey|E] to lean the True Name of [recipient.GetShortUIName]."
- POD_learn_true_name_interaction_tt: "The [journey|E] will have a [planning_speed|E] based on your [learning|E], the sum of your target's [skills|E], and certain [perks|E] on both characters."
+ POD_mind_rape_interaction_desc: "С помощью призывания раскрыть все секреты и происки персонажа [recipient.GetFirstName]."
+
+ POD_learn_true_name_interaction: "Узнать истинное имя"
+ POD_learn_true_name_interaction_desc: "Начать [Concept('journey', 'странствие')|E], чтобы узнать истинное имя персонажа [recipient.GetShortUIName]."
+ POD_learn_true_name_interaction_tt: "[Concept('planning_speed', 'Скорость планирования')|E] [Concept('journey', 'странствия')|E] зависит от вашей [Concept('learning', 'учёности')|E], суммы [Concept('skills', 'навыков')|E] вашей цели и определённых [Concept('perks', 'достоинств')|E] обоих персонажей."
