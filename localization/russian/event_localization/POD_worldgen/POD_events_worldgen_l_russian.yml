@@ -47,7 +47,7 @@
  POD_maintenance.25.a: "Я не буду вмешиваться."
  POD_maintenance.25.b: "Время перемен."
 
- POD_maintenance.28.t: "Artisanal Nosferatu"
- POD_maintenance.28.desc: "Upon the [Embrace|E], every [GetTrait('nosferatu').GetName(GetNullCharacter)] is left hideously deformed thanks to their [Clan|E] curse.\n\n[ROOT.Char.GetTitledFirstName] is from the Ruler Designer, so [ROOT.Char.GetSheHe|l] has been spared this fate... for now. But [ROOT.Char.GetSheHe|l] cannot escape it.\n\nYou can now let the game add some #bold random#! Nosferatu looks automatically. Or, if you're satisfied with the way this character looks, you can skip this step."
- POD_maintenance.28.a: "Make [ROOT.Char.GetFirstNameNoTooltip] more hideous."
- POD_maintenance.28.b: "[ROOT.Char.GetFirstNameNoTooltip] is perfect the way [ROOT.Char.GetSheHe|l] is."
+ POD_maintenance.28.t: "Авторский Носферату"
+ POD_maintenance.28.desc: "После [Concept('embrace','Обръятия')|E] каждый [GetTrait('nosferatu').GetName(GetNullCharacter)] становится ужасно обезображенным из-за проклятия своего [Concept('clan','клана')|E].\n\n[ROOT.Char.GetTitledFirstName] создан[Select_CString(ROOT.Char.IsFemale, 'а', '')] через Конструктора правителей, поэтому [Select_CString(ROOT.Char.IsFemale, 'она', 'он')] был[Select_CString(ROOT.Char.IsFemale, 'а', '')] пощажён[Select_CString(ROOT.Char.IsFemale, 'а', '')] этой судьбой... пока что. Но избежать её всё равно не удастся.\n\nТеперь вы можете позволить игре автоматически добавить немного #bold случайной#! внешности Носферату. Или, если вас устраивает внешний вид этого персонажа, можете пропустить этот шаг."
+ POD_maintenance.28.a: "Сделать [ROOT.Char.GetFirstNameNoTooltip] ещё уродливее."
+ POD_maintenance.28.b: "[ROOT.Char.GetFirstNameNoTooltip] совершенен[Select_CString(ROOT.Char.IsFemale, 'а', '')] как [Select_CString(ROOT.Char.IsFemale, 'она', 'он')] есть."
