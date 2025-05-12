@@ -86,10 +86,10 @@
  perfect_clarity_perk_name: "Совершенная ясность"
 
  READINESS_PERK_EFFECT: "Вы можете дать цели модификатор [GetModifier('readiness_1_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#weak Получает набор кубиков для добавления к броскам, связанным с мудростью, или инициативой#!"
- CENTERING_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! достоинства [GetPerk('readiness_perk').GetName(GetPlayer)] до [GetModifier('readiness_2_modifier').GetNameWithTooltip].\n#weak Заставляет субъекта игнорировать любой эффект, уменьшающий количество кубиков; дает бонус к сопротивлению буйству#!"
+ CENTERING_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! достоинства [GetPerk('readiness_perk').GetName(GetPlayer)] до [GetModifier('readiness_2_modifier').GetNameWithTooltip].\n#weak Заставляет субъекта игнорировать любой эффект, уменьшающий количество кубиков; дает бонус к сопротивлению неистовству#!"
  ONE_TRACKED_MIND_PERK_EFFECT: "Вы можете дать цели модификатор [GetModifier('one_tracked_mind_diplomacy_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#weak Делает субъекта неспособным разделить выполнение нескольких действий#!"
  DUAL_THOUGHT_PERK_EFFECT: "Вы можете дать цели модификатор [GetModifier('dual_thought_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#weak Дополнительное ментальное действие в раунд, включая еще одно использование дисциплины#!"
- PERFECT_CLARITY_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! достоинства [GetPerk('dual_thought_perk').GetName(GetPlayer)] до [GetModifier('perfect_clarity_modifier').GetNameWithTooltip].\n#weak Снижает сложность всех действий, получает иммунитет к буйству и становится устойчивым к ментальному воздействию#!"
+ PERFECT_CLARITY_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! достоинства [GetPerk('dual_thought_perk').GetName(GetPlayer)] до [GetModifier('perfect_clarity_modifier').GetNameWithTooltip].\n#weak Снижает сложность всех действий, получает иммунитет к неистовству и становится устойчивым к ментальному воздействию#!"
 
  warcry_perk_name: "Боевой клич"
  strike_true_perk_name: "Истинный удар"
@@ -381,13 +381,13 @@
  ENEMY_PERK_EFFECT: "Вы можете заставить случайного соседнего правителя/члена совета/придворного стать [Concept('rival', 'соперником')|E] цели, применив это #L $pod_bs_spell|l$#!.\n#flavor Заставляет жертву потерять союзников#!"
  THE_EYE_THAT_WOUNDS_PERK_EFFECT: "#flavor Нанесение урона цели#!"
 
- ravages_of_the_beast_perk_name: "Буйство Зверя"
+ ravages_of_the_beast_perk_name: "Неистовство Зверя"
  weight_of_the_sun_perk_name: "Бремя солнца"
  abated_tooth_perk_name: "Притуплённый зуб"
  treacherous_bonds_perk_name: "Предательские узы"
  the_withering_of_ages_perk_name: "Слабость веков"
 
- RAVAGES_OF_THE_BEAST_PERK_EFFECT: "Вы можете вызвать у цели-вампира буйство, если это возможно, применив это #L $pod_bs_spell|l$#!.\n#flavor Вызывает у цели неистовство#!"
+ RAVAGES_OF_THE_BEAST_PERK_EFFECT: "Вы можете вызвать у цели-вампира неистовство, если это возможно, применив это #L $pod_bs_spell|l$#!.\n#flavor Вызывает у цели неистовство#!"
  WEIGHT_OF_THE_SUN_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('weight_of_the_sun_modifier').GetNameWithTooltip] на 2 года, применив это #L $pod_bs_spell|l$#!.\n#flavor Заставляет вампира почувствовать эффект бодрствования в течение дня#!"
  ABATED_TOOTH_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('abated_tooth_modifier').GetNameWithTooltip] на 3 года, применив это #L $pod_bs_spell|l$#!.\n#flavor Предотвращает выдвижение клыков вампира#!"
  TREACHEROUS_BONDS_PERK_EFFECT: "Вы можете заставить одного случайного гуля цели ненавидеть её, применив это #L $pod_bs_spell|l$#!.\n#flavor Временно разрушает кровные узы, превращая любовь в ненависть#!"

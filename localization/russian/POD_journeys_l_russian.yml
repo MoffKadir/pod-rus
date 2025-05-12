@@ -965,7 +965,7 @@
 
  golconda_2_name: "Примириться со своим Зверем"
  golconda_2_desc: "Теперь, когда я знаю о пути [Concept('golconda', 'Голконды')|E], передо мной стоит сложная задача - обрести глубокое понимание своего [Concept('beast', 'Зверя')|E]. Многие, кто был до меня, потратили на это столетия, но ничего не добились, кроме разочарования. Смогу ли я преуспеть там, где они потерпели неудачу?"
- golconda_2_effects: "Вы получите [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] «[GetTrait('golconda_seeker').GetName(GetPlayer)]». Вы также получите [Concept('trait', 'свойство')|E], если у вас его ещё нет.\n\nЧем больше у вас [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E], тем выше ваши шансы получить откровение.\n\n#X Весь прогресс этого [Concept('journey', 'странствия')|E] теряется при впадении в буйство, а также при совершении убийства или кражи.#!"
+ golconda_2_effects: "Вы получите [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] «[GetTrait('golconda_seeker').GetName(GetPlayer)]». Вы также получите [Concept('trait', 'свойство')|E], если у вас его ещё нет.\n\nЧем больше у вас [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E], тем выше ваши шансы получить откровение.\n\n#X Весь прогресс этого [Concept('journey', 'странствия')|E] теряется при впадении в неистовство, а также при совершении убийства или кражи.#!"
  golconda_2_isvalid: "$EFFECT_LIST_BULLET$У вас нет [Concept('men_at_arms', 'профессионалов')|E], созданных в результате чудовищных действий #weak ([GetMaA('szlachta').GetName] или [GetMaA('vozhd').GetName])#!"
  golconda_2_trigger: "Вам нужно распустить всех [Concept('men_at_arms', 'профессионалов')|E], созданных в результате чудовищных действий #weak ([GetMaA('szlachta').GetName] или [GetMaA('vozhd').GetName])#!"
  golconda_2_tt: "Путешествие в тысячу шагов."
@@ -995,7 +995,7 @@
 
  provoke_vatican_name: "Раскрыть себя Ватикану"
  provoke_vatican_desc: "Я [Select_CString(GetPlayer.IsFemale, 'устала', 'устал' )] всегда прятаться в тени, всегда трусить в страхе перед смертными, всегда заботиться о том, чтобы наше существование оставалось скрытым. Довольно! Я покажу им, что наш род заслуживает уважения. Я покажу им всем..."
- provoke_vatican_effects: "Вам предстоит отправиться в Рим и раскрыть свою сверхъестественную природу во время буйства, спровоцировав ответные меры со стороны инквизиции.\n\n$provoke_vatican_warning$"
+ provoke_vatican_effects: "Вам предстоит отправиться в Рим и раскрыть свою сверхъестественную природу во время неистовства, спровоцировав ответные меры со стороны инквизиции.\n\n$provoke_vatican_warning$"
  provoke_vatican_isvalid: "$EFFECT_LIST_BULLET$У вас имеется свойство «[GetTrait('arrogant').GetName(GetPlayer)]»\n$EFFECT_LIST_BULLET$Ваша [Concept('capital', 'столица')|E] находится в регионе [GetGeographicalRegion('world_europe').GetName]\n$EFFECT_LIST_BULLET$Вы исповедуете [Concept('religion', 'религию')|E], связанную с христианством #italic ([GetReligionByKey('roadofheaven_religion').GetAdjective] или [GetReligionByKey('bloodgnosticism_religion').GetAdjective])#!"
  provoke_vatican_religion_tt: "Вы должны исповедовать религию, связанную с христианством #italic ([GetReligionByKey('roadofheaven_religion').GetAdjective] или [GetReligionByKey('bloodgnosticism_religion').GetAdjective])#!"
  provoke_vatican_tt: "Я войду в историю."

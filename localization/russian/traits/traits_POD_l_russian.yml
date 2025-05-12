@@ -1006,7 +1006,7 @@
  trait_manifestation: "Манифестация"
  trait_manifestation_desc: "Отвратительные пародии на человеческий облик. В качестве примера можно привести лица, вытекающие из лужи крови, руки, сделанные из саранчи, или язык, сформированный из личинок. Физически форма не зависит от призрака и не обладает тонкой моторикой. С другой стороны, созданные проявления столь же сильны, как и создавший их призрак, и могут отвечать на простые приказы, такие как бить, кусать, биться в судорогах и так далее."
  trait_golem: "Голем"
- trait_golem_desc: "Големы - крупные гуманоидные автоматы, созданные с помощью колдовства, известные своей нестабильностью и склонностью к буйству."
+ trait_golem_desc: "Големы - крупные гуманоидные автоматоны, созданные с помощью колдовства, известные своей нестабильностью и склонностью к неистовству."
 
  trait_risen: "Восставший"
  trait_risen_desc: "Восставший - термин, используемый для описания призрака, которому удалось вернуться в свое тело, чтобы ходить среди живых в [Concept('skinlands', 'Землях Плоти')|E]."
@@ -1335,16 +1335,16 @@
  trait_golconda_seeker_desc: "Этот персонаж находится на долгом пути к #L $pod_enlightenment|l$ению#!."
  trait_golconda_seeker_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] находится на долгом пути к #L $pod_enlightenment|l$ению#!."
  trait_track_golconda_seeker: "Проницательность"
- trait_track_golconda_seeker_desc: "\nВаш [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] представляет собой процент успеха на последних этапах [Concept('journey', 'пути')|E] к Голконде ([GetTrait('golconda').GetName(GetNullCharacter)]).\n\n#X Весь прогресс теряется при впадении в буйство, а также при совершении убийства или кражи.#!"
+ trait_track_golconda_seeker_desc: "\nВаш [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] представляет собой процент успеха на последних этапах [Concept('journey', 'пути')|E] к Голконде ([GetTrait('golconda').GetName(GetNullCharacter)]).\n\n#X Весь прогресс теряется при впадении в неистовство, а также при совершении убийства или кражи.#!"
 
  TRAIT_FLAG_DESC_elder_perk_flag: "Может изучать [Concept('elder_perk','достоинства Старейшин')|E] независимо от [Concept('vampgeneration','поколения')|E]"
  TRAIT_FLAG_DESC_hungerless_flag: "[Concept('hungerless','Больше не страдает от жажды крови')|E]"
- TRAIT_FLAG_DESC_immune_to_frenzy_flag: "Не впадает в буйство"
+ TRAIT_FLAG_DESC_immune_to_frenzy_flag: "Не впадает в неистовство"
  TRAIT_FLAG_DESC_perks_for_piety_flag: "Может обменять [Concept('piety', 'благочестие')|E] на [Concept('perks', 'достоинства')|E] [Concept('resonance', 'резонанса')|E]"
  TRAIT_FLAG_DESC_humanity_feast_flag: "Может устраивать #TOOLTIP:ACTIVITY_TYPE,activity_feast #L пиры#!#! и получать за это [Concept('piety', 'благочестие')|E]"
  TRAIT_FLAG_DESC_golconda_mentoring_flag: "Может наставлять других на пути к [Concept('golconda', 'Голконде')]"
  TRAIT_FLAG_DESC_warning_golconda_flag: "\n#X Это свойство теряется при совершении убийства или кражи#!"
- TRAIT_FLAG_DESC_warning_golconda_seeker_flag: "\n#X Весь [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] теряется при впадении в буйство, а также при совершении убийства или кражи#!"
+ TRAIT_FLAG_DESC_warning_golconda_seeker_flag: "\n#X Весь [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] теряется при впадении в неистовство, а также при совершении убийства или кражи#!"
 
  trait_alien: "Пришелец"
  trait_alien_desc: "Внеземная жизнь."
