@@ -309,11 +309,11 @@
  tempest_riders_canceleer_perk_name: "Покоритель всадника Бури"
  arcanoi_oubliette_perk_name: "Темница"
  ENSHROUD_PERK_EFFECT: "Больше не нужно было приносить жертвы, чтобы получить доступ к Буре.\n[umbra_sense|E]: $pod_grace_i$#P +5%#!\n#F Предвестник может манипулировать мембраной между Землями Теней и Бурей, позволяя  входить в Бурю, не открывая Нигил, или использовать Бурю для сокрытия.#!"
- WEATHER_EYE_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +2%#!\n[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\nAllow predicting natural hazards.\n#F A Harbinger is always aware of current conditions in the nearby [UmbraGlossary('tempest')], and can take shortcuts between two [UmbraGlossary('shadowlands')] locations.#!"
- PHANTOM_WINGS_PERK_EFFECT: "[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#F A Harbinger can grow wings to glide through the [UmbraGlossary('tempest')] and [UmbraGlossary('shadowlands')].#!"
- RETURN_PERK_EFFECT: "As [character_interaction|E], can teleport to [UmbraGlossary('shadowlands')]\n#F A Harbinger may travel from any location in the [UmbraGlossary('tempest')] to their home by the fastest route possible.#!"
- FLICKER_PERK_EFFECT: "[umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#F A Harbinger may bend the [UmbraGlossary('tempest')] to teleport themselves to another location.#!"
- STORMREADER_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +10%#!\n[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\nYou will no longer get lost in the [UmbraGlossary('tempest')].\n#F A Harbinger gains an intuitive sense of the [UmbraGlossary('tempest')], allowing them to cut travel times when traveling to or from a location in the [UmbraGlossary('tempest')], and to navigate so as to avoid a Maelstrom or mitigate its effects.#!"
+ WEATHER_EYE_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +2%#!\n[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\nAllow predicting natural hazards.\n#F A Harbinger is always aware of current conditions in the nearby [UmbraGlossary('pod_realm_tempest')], and can take shortcuts between two [UmbraGlossary('shadowlands')] locations.#!"
+ PHANTOM_WINGS_PERK_EFFECT: "[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#F A Harbinger can grow wings to glide through the [UmbraGlossary('pod_realm_tempest')] and [UmbraGlossary('shadowlands')].#!"
+ RETURN_PERK_EFFECT: "As [character_interaction|E], can teleport to [UmbraGlossary('shadowlands')]\n#F A Harbinger may travel from any location in the [UmbraGlossary('pod_realm_tempest')] to their home by the fastest route possible.#!"
+ FLICKER_PERK_EFFECT: "[umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#F A Harbinger may bend the [UmbraGlossary('pod_realm_tempest')] to teleport themselves to another location.#!"
+ STORMREADER_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +10%#!\n[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\nYou will no longer get lost in the [UmbraGlossary('pod_realm_tempest')].\n#F A Harbinger gains an intuitive sense of the [UmbraGlossary('pod_realm_tempest')], allowing them to cut travel times when traveling to or from a location in the [UmbraGlossary('pod_realm_tempest')], and to navigate so as to avoid a Maelstrom or mitigate its effects.#!"
  TEMPEST_RIDERS_CANCELEER_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +3%#!\n[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#F A Harbinger can grow metallic black wings, allowing them to glide, attack, and protect others.#!"
  ARCANOI_OUBLIETTE_PERK_EFFECT: "Разблокируйте опцию [Concept('executions', 'казни')|E] $EXECUTION_BANISH_TO_TEMPEST$.\n#F Предвестник может послать другого призрака прямо в Бурю.#!"
   # Castigate 
@@ -883,11 +883,11 @@
  favored_flotsom_perk_name: "Favored Flotsom"
  carve_the_chaos_perk_name: "Carve the Chaos"
  
- WORMHOLE_PERK_EFFECT: "#F This allows a Spectre to use [GetModifier('nihil_modifier').GetNameWithTooltip]s to travel between the [UmbraGlossary('tempest')] and the [UmbraGlossary('shadowlands')].#!"
+ WORMHOLE_PERK_EFFECT: "#F This allows a Spectre to use [GetModifier('nihil_modifier').GetNameWithTooltip]s to travel between the [UmbraGlossary('pod_realm_tempest')] and the [UmbraGlossary('shadowlands')].#!"
  RIDE_THE_SOUL_STORM_PERK_EFFECT: "#F A Spectre can harness the winds of a Maelstrom to travel.#!"
- GRASP_THE_PASSING_PERK_EFFECT: "#F A Spectre can pull a random object, including memories, out of the [UmbraGlossary('tempest')].#!"
+ GRASP_THE_PASSING_PERK_EFFECT: "#F A Spectre can pull a random object, including memories, out of the [UmbraGlossary('pod_realm_tempest')].#!"
  FAVORED_FLOTSOM_PERK_EFFECT: "#F Similar to Grasp the Passing, except a Spectre can influence the item pulled so it is one useful to them.#!"
- CARVE_THE_CHAOS_PERK_EFFECT: "#F The Spectre can shape the [UmbraGlossary('tempest')] into a form they desire, such creating "sets" for Harrowings.#!"
+ CARVE_THE_CHAOS_PERK_EFFECT: "#F The Spectre can shape the [UmbraGlossary('pod_realm_tempest')] into a form they desire, such creating "sets" for Harrowings.#!"
  
  # Tempestos
  tempestos_visible: "Tempestos"
@@ -898,10 +898,10 @@
  tempest_fury_perk_name: "Tempest Fury"
  maelstrom_cauldron_perk_name: "Maelstrom Cauldron"
  
- STORM_SEEKER_PERK_EFFECT: "#F This allows a Spectre to become adrift in the [UmbraGlossary('tempest')] and attract them to the nearest storm.#!"
+ STORM_SEEKER_PERK_EFFECT: "#F This allows a Spectre to become adrift in the [UmbraGlossary('pod_realm_tempest')] and attract them to the nearest storm.#!"
  RIDE_THE_NIGHTWIND_PERK_EFFECT: "#F A Spectre may fly at the same speeds and direction as the Maelstrom winds.#!"
  DUST_DEVIL_PERK_EFFECT: "#F A Spectre can call up minor squalls and [GetModifier('nihil_modifier').GetNameWithTooltip]s to use as propulsion.#!"
- TEMPEST_FURY_PERK_EFFECT: "#F Spectres can call on the power of the [UmbraGlossary('tempest')] to bring destruction in a limited fashion.#!"
+ TEMPEST_FURY_PERK_EFFECT: "#F Spectres can call on the power of the [UmbraGlossary('pod_realm_tempest')] to bring destruction in a limited fashion.#!"
  MAELSTROM_CAULDRON_PERK_EFFECT: "#F The Spectre can summon a full-strength localized Maelstrom.#!"
  
  # Fascinate

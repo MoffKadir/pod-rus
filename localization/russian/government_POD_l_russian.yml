@@ -5,30 +5,44 @@
  traditions_government_realm: "[Concept('cainite', 'Каинитская')|E] держава"
  traditions_government_vassals_label: "[Concept('cainite', 'Каинитские')|E] [Concept('obligations','обязательства')|E] определяются [Concept('feudal_contract', 'договором')|E] каждого [Concept('vassal','вассала')|E]"
  traditions_government_desc: "Подавляющее большинство вампирских держав следует Традициям Каина - несколько грубоватому кодексу поведения в кругу смертных и другими сородичей."
+ traditions_government_filter_option: "$traditions_government$"
+ traditions_government_filter_option_desc: "Только персонажи с #L  [GetGovernment( 'traditions_government' ).GetAdjective|l]ым#! [Concept('government','правительством')|E]"
+
  inquisition_government: "Орден инквизиции"
  inquisition_government_with_icon: "$inquisition_government$" # TODO RTP
  inquisition_government_adjective: "Инквизиторск"
  inquisition_government_realm: "Орден инквизиции"
  inquisition_government_vassals_label: "Инквизиторские [Concept('obligations','обязательства')|E] определяются [Concept('opinion', 'мнением')|E]"
  inquisition_government_desc: "Ячейка инквизиторов, уничтожающих сверхъестественное влияние везде, где они его находят."
+ inquisition_government_filter_option: "$inquisition_government$"
+ inquisition_government_filter_option_desc: "Только персонажи с #L  [GetGovernment( 'inquisition_government' ).GetAdjective|l]им#! [Concept('government','правительством')|E]"
+
  august_court_government: "Августейший двор"
  august_court_government_with_icon: "$august_court_government$" # TODO RTP
  august_court_government_adjective: "Августейш"
  august_court_government_realm: "Августейший двор"
  august_court_government_vassals_label: "[Concept('obligations','Обязательства')|E] августейшего двора определяются [Concept('feudal_contract', 'договором')|E] каждого [Concept('vassal','вассала')|E]"
  august_court_government_desc: "Самые ранние организованные социальные структуры Ван-гуй в Срединном царстве."
+ august_court_government_filter_option: "$august_court_government$"
+ august_court_government_filter_option_desc: "Только персонажи с #L  [GetGovernment( 'august_court_government' ).GetAdjective|l]им#! [Concept('government','правительством')|E]"
+
  cult_government: "Культ мумий" # TODO RTP
  cult_government_with_icon: "$cult_government$"
  cult_government_adjective: "Культистск"
  cult_government_realm: "Культ мумий"
  cult_government_vassals_label: "[Concept('obligations','Обязательства')|E] культа мумий  определяются [Concept('piety_level', 'уровнем набожности')|E] [Concept('liege', 'сюзерена')|E]"
  cult_government_desc: "С древнейших времен Возрожденные командовали преданными группами смертных, которые служили им. Даже во время их долгого сна культы продолжают свою работу, передавая тайны и обязанности следующему поколению и присматривая за гробницами своих хозяев."
+
  cell_government: "Ячейка охотников"
  cell_government_with_icon: "$cell_government$" # TODO RTP
  cell_government_adjective: "Охотническ"
  cell_government_realm: "Ячейка охотников"
  cell_government_vassals_label: "[Concept('obligations','Обязательства')|E] ячейки определяются [Concept('opinion', 'мнением')|E]"
  cell_government_desc: "Ячейка охотников, уничтожающих сверхъестественное влияние, где бы они его ни обнаружили."
+ cell_government_filter_option: "$cell_government$"
+ cell_government_filter_option_desc: "Только персонажи с #L  [GetGovernment( 'cell_government' ).GetAdjective|l]им#! [Concept('government','правительством')|E]"
+ cult_government_filter_option: "$cult_government$"
+ cult_government_filter_option_desc: "Только персонажи с #L  [GetGovernment( 'cult_government' ).GetAdjective|l]им#! [Concept('government','правительством')|E]"
 
  legacy_rights: "#BLOODRED Первая традиция: Договор#!"
  legacy_rights_none: "Религиозная беззащитность"
@@ -126,25 +140,35 @@
  litany_government_realm: "Племя перевёртышей"
  litany_government_vassals_label: "[Concept('obligations', 'Обязательства')|E] Литании определяются [Concept('opinion', 'мнением')|E]"
  litany_government_desc: "Литания, или Тёмная литания для слуг Вирма, - это свод законов, которых придерживаются фера. У каждой фракции перевёртышей свой взгляд на этот вопрос, но все согласны с важностью этого элемента общества."
+ litany_government_filter_option: "$litany_government$"
+ litany_government_filter_option_desc: "Только персонажи с #L  [GetGovernment( 'litany_government' ).GetAdjective|l]им#! [Concept('government','правительством')|E]"
 
  dark_kingdom_government: "Тёмное королевство"
  dark_kingdom_government_with_icon: "$dark_kingdom_government$" # TODO RTP
  dark_kingdom_government_adjective: "Тёмно-королевск"
  dark_kingdom_government_realm: "Тёмное королевство"
  dark_kingdom_government_vassals_label: "[Concept('obligations','Обязательства')|E] [Concept('dark_kingdom','Тёмного королевства')|E] определяются [Concept('feudal_contract', 'договором')|E] каждого [Concept('vassal','вассала')|E]"
- dark_kingdom_government_desc: "Тёмные королевства - это очаги стабильной реальности в пределах [UmbraGlossaryLocalized('tempest','Бури')] [UmbraGlossaryLocalized('shadowlands','Загробного мира')]. Каждое из этих королевств претендует на власть над призраками определенного географического региона."
+ dark_kingdom_government_desc: "Тёмные королевства - это очаги стабильной реальности в пределах [UmbraGlossaryLocalized('pod_realm_tempest','Бури')] [UmbraGlossaryLocalized('shadowlands','Загробного мира')]. Каждое из этих королевств претендует на власть над призраками определенного географического региона."
+ dark_kingdom_government_filter_option: "$dark_kingdom_government$"
+ dark_kingdom_government_filter_option_desc: "Только персонажи с #L  [GetGovernment( 'dark_kingdom_government' ).GetAdjective|l]им#! [Concept('government','правительством')|E]"
+
  infernal_court_government: "Инфернальный двор"
  infernal_court_government_with_icon: "$infernal_court_government$" # TODO RTP
  infernal_court_government_adjective: "Придворск"
  infernal_court_government_realm: "Инфернальный двор"
  infernal_court_government_vassals_label: "[Concept('obligations', 'Обязательства')|E] Инфернального двора определяются [Concept('feudal_contract', 'договором')|E] каждого [Concept('vassal','вассала')|E]"
  infernal_court_government_desc: "Демоны, вернувшиеся из Бездны, обычно объединяются в дворы, - пережитки Эпохи Гнева, когда Падшие правили своими бастионами в войне с Небесами."
+ infernal_court_government_filter_option: "$infernal_court_government$"
+ infernal_court_government_filter_option_desc: "Только персонажи с #L  [GetGovernment( 'infernal_court_government' ).GetAdjective|l]им#! [Concept('government','правительством')|E]"
+
  household_government: "Домашний очаг"
  household_government_with_icon: "$household_government$" # TODO RTP
  household_government_adjective: "Очагск"
  household_government_realm: "Домашний очаг"
  household_government_vassals_label: "[Concept('obligations', 'Обязательства')|E] Домашнего очага определяются [Concept('feudal_contract', 'договором')|E] каждого [Concept('vassal','вассала')|E]"
  household_government_desc: "Домашний очаг - это группа подменышей, привязанных к территории, которые служат местному правителю в качестве вассалов или слуг."
+ household_government_filter_option: "$household_government$"
+ household_government_filter_option_desc: "Только персонажи с #L  [GetGovernment( 'household_government' ).GetAdjective|l]им#! [Concept('government','правительством')|E]"
 
  legion_religion_modifier: "[Concept('religion', 'Религия')|E] Легиона даёт бонус к снижению [Concept('stress', 'стресса')|E]."
  guild_religion_modifier: "[Concept('religion', 'Религия')|E] Гильдии даёт бонус к [Concept('experience', 'опыту')|E] [Concept('lifestyle', 'образа жизни')|E] Арканой."
