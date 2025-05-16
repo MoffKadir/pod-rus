@@ -1,5 +1,5 @@
 ﻿l_russian:
- #POD_blood_of_a_werewolf_modifier: "Кровь оборотня"
+ #POD_blood_of_a_werewolf_modifier: "Blood of a Werewolf"
  POD_rage_0_modifier: "Ярость: 0"
  POD_rage_1_modifier: "Ярость: 1"
  POD_rage_2_modifier: "Ярость: 2"
@@ -12,21 +12,25 @@
  POD_gnosis_3_modifier: "Гнозис: 3"
  POD_gnosis_4_modifier: "Гнозис: 4"
  POD_gnosis_5_modifier: "Гнозис: 5"
-  
- POD_delirium_modifier: "Делирий"
- POD_delirium_modifier_desc: "Делирий - это непреодолимый инстинктивный страх, который охватывает людей, когда они видят оборотней и некоторых других Фера в их боевых формах."
- POD_reduced_delirium_modifier: "Уменьшеный Делирий"
- POD_reduced_delirium_modifier_desc: "Делирий - это непреодолимый инстинктивный страх, который охватывает людей, когда они видят оборотней и некоторых других Фера в их боевых формах."
-  ################# 
-  # Forms 
+
+ POD_delirium_modifier: "[battle_modifier|E]: Делириум"
+ POD_delirium_modifier_desc: "Делириум - это непреодолимый инстинктивный страх, который охватывает людей, когда они видят оборотней и некоторых других фера в их боевых формах."
+ POD_reduced_delirium_modifier: "[battle_modifier|E]: Сниженный делириум"
+ POD_reduced_delirium_modifier_desc: "Делириум - это непреодолимый инстинктивный страх, который охватывает людей, когда они видят оборотней и некоторых других фера в их боевых формах."
+
+ #################
+ # Forms
+ #################
+
  POD_werewolf_form_crinos_modifier: "Форма Кринос"
- POD_werewolf_form_crinos_modifier_desc: "Наложите модификатор [GetModifier('POD_delirium_modifier').GetNameWithTooltip] на вражеских рыцарей в войне, когда вы командир или на противника в поединке на вражеских рыцарей в войне, когда вы командир или на противника в поединке\n«Боевая форама», ужасающий гибрид человека и волка с невероятной силой."
+ POD_werewolf_form_crinos_modifier_desc: "«Боевая форма», ужасающий гибрид человека и волка с невероятной силой.\n#weak Вражеские [Concept('knights', 'рыцари')|E], выступающие как [Concept('commander', 'командиры')|E] во время [Concept('combat_phase', 'фазы боя')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_delirium_modifier').GetNameWithTooltip]#!"
  POD_werewolf_form_glabro_modifier: "Форма Глабро"
  POD_werewolf_form_glabro_modifier_desc: "Примерно похожа на человека, но имеет слишком много звериных черт, чтобы быть им."
  POD_werewolf_form_hispo_modifier: "Форма Хиспо"
- POD_werewolf_form_hispo_modifier_desc: "Доисторический ужасающий волк."
+ POD_werewolf_form_hispo_modifier_desc: "Доисторический лютоволк."
  POD_werewolf_form_lupus_modifier: "Форма Люпус"
- POD_werewolf_form_lupus_modifier_desc: "Неотличима от обычного волка, но обладает превосходной скоростью."
+ POD_werewolf_form_lupus_modifier_desc: "Неотличима от обычного волка, но обладает превосходной скоростью." #ТУТЪ
+
  POD_ajaba_form_crinos_modifier: "Форма Кринос"
  POD_ajaba_form_crinos_modifier_desc: "Наложите модификатор [GetModifier('POD_delirium_modifier').GetNameWithTooltip] на вражеских рыцарей в войне, когда вы командир или на противника в поединке.\n«Боевая форма»; немного меньше и не такая разрушительная, как у Гару, но немного крепче."
  POD_ajaba_form_anthros_modifier: "Форма Антрос"
