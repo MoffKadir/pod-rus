@@ -62,8 +62,8 @@
  prodigal_objective_decision_giza: "Вы [Concept('completely_control', 'полностью контролируете')|E] Долину царей ([GetTitleByKey('c_giza').GetNameNoTier]), родину некрополей фараонов и Великой пирамиды."
  prodigal_objective_decision_khotan: "Вы [Concept('completely_control', 'полностью контролируете')|E] [GetTitleByKey('c_khotan').GetNameNoTier], столицу королевства Сянь"
  pod1230objectives_fae.100.t: "Пророчество крысы"
- pod1230objectives_fae.100.desc: "В начале тринадцатого века зимы стали длинными и холодными, а дожди шли с продолжительностью, подобной муссонам. Посевы утонули. Дороги превратились в грязные болота. Голод и холод способствовали заполнению кладбищ. Существуют пророческие сны о катаклизме в будущем, который убьет миллионы мечтателей. Подробности туманны, но, похоже, речь идет о полчищах крыс, появляющихся с восходом солнца, грудах горящих трупов, танцующих скелетах, почерневших пальцах рук и ног. Некоторые феии убеждены, что раткины и их больные вирмские союзники должны быть уничтожены.\nВаши провидцы говорят, что они видели темное будущее, худшее, чем Раскол, - Пророчество крысы. Вам следует сосредоточиться на исцелении в следующем столетии, чтобы этого не случилось."
- pod1230objectives_fae.100.a: "Раткины и их принадлежности!"
+ pod1230objectives_fae.100.desc: "В начале тринадцатого века зимы стали длинными и холодными, а дожди шли с продолжительностью, подобной муссонам. Посевы утонули. Дороги превратились в грязные болота. Голод и холод способствовали заполнению кладбищ. Существуют пророческие сны о катаклизме в будущем, который убьет миллионы мечтателей. Подробности туманны, но, похоже, речь идет о полчищах крыс, появляющихся с восходом солнца, грудах горящих трупов, танцующих скелетах, почерневших пальцах рук и ног. Некоторые феи убеждены, что раткины и их больные вирмские союзники должны быть уничтожены.\nВаши провидцы говорят, что они видели темное будущее, худшее, чем Раскол, - Пророчество крысы. Вам следует сосредоточиться на исцелении в следующем столетии, чтобы этого не случилось."
+ pod1230objectives_fae.100.a: "Раткины и их прихвостни!"
  pod1230objectives_fae.100.b: "Чтобы остановить крыс, нам нужны кошки!"
  unlock_convert_to_catlover_scheme: "Открывает [Concept('interaction', 'взаимодействие')|E] «$POD_convert_to_catlover_interaction$»."
  pod1230objectives_fae.100.c: "Во всем виновата монгольская орда!"
@@ -187,7 +187,7 @@
  underbridge_empire_objective_decision_confirm: "None shall cross without my permission"
  underbridge_empire_objective_decision_custom: "Every riverside county taken using the Bridge War [casus_belli|E] will become [de_jure|E] [counties|E] of [GetTitleByKey('e_underbridge').GetNameNoTier]"
  underbridge_empire_objective_decision_riverside_county_contol_tt: "You [completely_control|E] every riverside [counties|E] of [GetTitleByKey('e_shadow_curtain').GetNameNoTier] ([SCOPE.ScriptValue('underbridge_empire_controlled_riverside_county_value')|0]/[SCOPE.ScriptValue('underbridge_empire_total_riverside_county_value')|0])"
- underbridge_empire_objective_decision_artifact_cauldron_of_fear: "You must have the [GetPODArtifact('cauldron_of_fear_link').Artifact.GetName]"
+ underbridge_empire_objective_decision_artifact_cauldron_of_fear: "You must have the [GetPODArtifact('cauldron_of_fear_link').GetName]"
  underbridge_emperor_modifier: "High King of Underbridge"
  
  pod1230objectives_fae.150.t: "King of Underbridge"
@@ -255,7 +255,7 @@
  pod1230objectives_fae.164.t.king: "The True King Crowned"
  pod1230objectives_fae.164.t.queen: "The True Queen Crowned"
  pod1230objectives_fae.164.desc.king: "Through heroic efforts, House Gwydion with your leadership has proven itself to be the most noble of all the Sidhe. Who else could quest to find and wield the thunderbolt — the Sword of Light — the peace-maker's blade — [GetPODArtifact('caliburn_link').GetName], but you, the True King! All fae must bow before your majesty and acknowledge you ultimate sovereignty."
- pod1230objectives_fae.164.desc.queen: "Through heroic efforts, House Gwydion with your leadership has proven itself to be the most noble of all the Sidhe. Who else could quest to find and wield the thunderbolt — the Sword of Light — the peace-maker's blade — [GetPODArtifact('caliburn_link').GetName], but you, the True King! All fae must bow before your majesty and acknowledge you ultimate sovereignty."
+ pod1230objectives_fae.164.desc.queen: "Through heroic efforts, House Gwydion with your leadership has proven itself to be the most noble of all the Sidhe. Who else could quest to find and wield the thunderbolt — the Sword of Light — the peace-maker's blade — [GetPODArtifact('caliburn_link').GetName], but you, the True King! All fae must bow before your majesty and acknowledge you ultimate sovereignty." 
  pod1230objectives_fae.164.a: "All may now pay obeisance"
  
  sidhe_house_dominance_liam_objective_decision: "Mortal Song"
@@ -370,7 +370,7 @@
  sidhe_house_dominance_danaan_objective_decision_confirm: "Two paths diverged in the mists, and I took the one less traveled"
  danaan_victory_modifier: "Seek out the Dreaming Guard"
  sidhe_house_dominance_danaan_objective_decision_traits: "You are an [GetTrait('eshu').GetName( GetPlayer )], [GetTrait('lifestyle_traveler').GetName( GetPlayer )], [GetTrait('pilgrim').GetName( GetPlayer )] or an [GetTrait('adventurer').GetName( GetPlayer )]."
- sidhe_house_dominance_danaan_objective_decision_mount: "Have a mount:  [GetPODArtifact('ship_of_the_four_quarters_link').GetName], [GetPODArtifact('nightmare_horse_link').GetName], [GetPODArtifact('sorn_link').GetName], [GetPODArtifact('vozhd_palanquin_link').GetName], [GetPODArtifact('sorel_link').GetName], horse, wolf, bear, lion, or tiger"
+ sidhe_house_dominance_danaan_objective_decision_mount: "Have a mount:  [GetPODArtifact('ship_of_the_four_quarters_link').GetName], [GetPODArtifact('nightmare_horse_link').GetName], [GetPODArtifact('sorn_link').GetName], [GetPODArtifact('vozhd_palanquin_link').GetName], [GetPODArtifact('sorel_link').GetName], horse, wolf, bear, lion, or tiger" 
 
  sidhe_house_dominance_danaan_objective_decision_artifact: "Have a treasure useful for a traveler: Trail Dust, [GetPODArtifactNameWithFallback('pegasus_bridle_link',Localize('artifact_pegasus_bridle_name'))], $artifact_eye_of_opening_name$, [GetPODArtifact('dreamstone_of_madoc_link').GetName], [GetPODArtifactNameWithFallback('havens_compass_link',Localize('artifact_havens_compass_name'))], [GetPODArtifactNameWithFallback('broach_of_scrying_link',Localize('artifact_broach_of_scrying_name'))] or [GetPODArtifact('tapestry_of_fate_link').GetName]."
 

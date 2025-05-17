@@ -54,10 +54,10 @@
  umbra_expedition_event_tooltip: "Может произойти случайное событие..."
  umbra_cooldown_title: "Вернуться в материальный мир"
  umbra_cooldown_text: "[SelectLocalization( GetScriptedGui('umbra_expedition_cooldown').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), 'umbra_cooldown_desc', '')]"
- umbra_cooldown_desc: "@alert_icon! #alert_trial [umbra_expedition|E] будет недоступна #high [GetPlayer.MakeScope.ScriptValue('umbra_cooldown_value')|0]#! месяцев#!"
- umbra_cooldown_tt: "[umbra_expedition|E] не может быть начата #weak (Осталось [GetPlayer.MakeScope.ScriptValue('next_umbra_expedition_date')|0] дней)#!"
- umbra_cooldown_end_toast: "[umbra_expedition|E] доступна"
- umbra_cooldown_end_tooltip: "[umbra_expedition|E] снова доступна"
+ umbra_cooldown_desc: "@alert_icon! #alert_trial [Concept('umbra_expedition', 'Путешествие в Умбру')|E] будет недоступно #high [GetPlayer.MakeScope.ScriptValue('umbra_cooldown_value')|0]#! месяцев#!"
+ umbra_cooldown_tt: "[Concept('umbra_expedition', 'Путешествие в Умбру')|E] не может быть начато #weak (Осталось [GetPlayer.MakeScope.ScriptValue('next_umbra_expedition_date')|0] дней)#!"
+ umbra_cooldown_end_toast: "[Concept('umbra_expedition', 'Путешествие в Умбру')|E] доступно"
+ umbra_cooldown_end_tooltip: "[Concept('umbra_expedition', 'Путешествие в Умбру')|E] снова доступно"
  umbra_discovery_remove_tt: "Целевое открытие будет удалено"
  demon_umbra_travel_tt: "Демоны должны овладеть сосудом, остающимся на [UmbraGlossaryLocalized('earth','Земле')], чтобы не оказаться в ловушке [UmbraGlossaryLocalized('abyss','Бездны')]"
  has_any_special_mine_tt: "В текущем местоположении есть [Concept('special_building', 'особая постройка')|E] шахты ([GetPlayer.GetCurrentLocation.GetTitle.GetNameNoTier])"
@@ -133,13 +133,13 @@
  umbra_discovery_muse_expedition: "Двор муз"
  umbra_discovery.muse_expedition.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'обнаружили', Select_CString(this_character.IsFemale, 'обнаружила', 'обнаружил' ))] сказочное измерение fabled $umbra_discovery_region$. Вас пригласили сами музы - факт, достойный [Concept('umbra_expedition', 'путешествия в Умбру')|E]"
  umbra_discovery_elemental_court_armor_expedition: "Доспех стихий"
- umbra_discovery.elemental_court_armor_expedition.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'обнаружили', Select_CString(this_character.IsFemale, 'обнаружила', 'обнаружил' ))] сказочное измерение $umbra_discovery_region$. Обнаружив интересный артефакт при Дворе стихии Земли, $umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'просите', 'просит')] начать соответствующее [Concept('umbra_expedition', 'путешествие в Умбру')|E] для исследования."
+ umbra_discovery.elemental_court_armor_expedition.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'обнаружили', Select_CString(this_character.IsFemale, 'обнаружила', 'обнаружил' ))] сказочное измерение $umbra_discovery_region$. Обнаружив интересный артефакт при Дворе стихии Земли, $umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'просите', 'просит')] начать соответствующее [Concept('umbra_expedition', 'Путешествие в Умбру')|E] для исследования."
  umbra_discovery_elemental_court_armor_expedition2: "Доспех стихий"
- umbra_discovery.elemental_court_armor_expedition2.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'обнаружили', Select_CString(this_character.IsFemale, 'обнаружила', 'обнаружил' ))] сказочное измерение $umbra_discovery_region$, точнее, Двор стихии Огня. [umbra_expedition|E] для улучшения доспеха стихий может стать хорошей перспективой."
+ umbra_discovery.elemental_court_armor_expedition2.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'обнаружили', Select_CString(this_character.IsFemale, 'обнаружила', 'обнаружил' ))] сказочное измерение $umbra_discovery_region$, точнее, Двор стихии Огня. [Concept('umbra_expedition', 'Путешествие в Умбру')|E] для улучшения доспеха стихий может стать хорошей перспективой."
  umbra_discovery_elemental_court_armor_expedition3: "Доспех стихий"
- umbra_discovery.elemental_court_armor_expedition3.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'обнаружили', Select_CString(this_character.IsFemale, 'обнаружила', 'обнаружил' ))] сказочное измерение $umbra_discovery_region$, точнее, Двор стихии Воды. [umbra_expedition|E] для улучшения доспеха стихий может стать хорошей перспективой."
+ umbra_discovery.elemental_court_armor_expedition3.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'обнаружили', Select_CString(this_character.IsFemale, 'обнаружила', 'обнаружил' ))] сказочное измерение $umbra_discovery_region$, точнее, Двор стихии Воды. [Concept('umbra_expedition', 'Путешествие в Умбру')|E] для улучшения доспеха стихий может стать хорошей перспективой."
  umbra_discovery_elemental_court_armor_expedition4: "Доспех стихий"
- umbra_discovery.elemental_court_armor_expedition4.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'обнаружили', Select_CString(this_character.IsFemale, 'обнаружила', 'обнаружил' ))] сказочное измерение $umbra_discovery_region$, точнее, Двор стихии Воздуха. [umbra_expedition|E] для улучшения доспеха стихий может стать хорошей перспективой."
+ umbra_discovery.elemental_court_armor_expedition4.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'обнаружили', Select_CString(this_character.IsFemale, 'обнаружила', 'обнаружил' ))] сказочное измерение $umbra_discovery_region$, точнее, Двор стихии Воздуха. [Concept('umbra_expedition', 'Путешествие в Умбру')|E] для улучшения доспеха стихий может стать хорошей перспективой."
  umbra_discovery_grand_hall_expedition: "Умбральный исследователь"
  umbra_discovery.grand_hall_expedition.desc: "Во время исследования запутанного измерения $umbra_discovery_region$ к [Select_CString(this_character.IsLocalPlayer, '', 'персонажу ' )][this_character.GetShortUINamePossessive][Select_CString(this_character.IsLocalPlayer, 'ему персонажу', '' )] обратился дружелюбный дух, предложивший свои услуги для дальнейшего исследования. Это предложение может быть достойно [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
  umbra_discovery_heaven_expedition: "Лестница в небеса"
@@ -281,37 +281,37 @@
  umbra_discovery_gods_arrow: "Стрела Бога"
  umbra_discovery.gods_arrow.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] в измерении $umbra_discovery_region$ подсказку о расположении Башни памяти, в которой находится таинственная «Стрела Бога». Это может быть достойно [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
  umbra_discovery_argos: "Argos"
- umbra_discovery.argos.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_argos').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.argos.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_argos').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_castigate: "castigate"
- umbra_discovery.castigate.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_castigate').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.castigate.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_castigate').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_embody: "embody"
- umbra_discovery.embody.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_embody').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.embody.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_embody').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_fatalism: "fatalism"
- umbra_discovery.fatalism.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_fatalism').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.fatalism.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_fatalism').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_flux: "flux"
- umbra_discovery.flux.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_flux').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.flux.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_flux').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_inhabit: "inhabit"
- umbra_discovery.inhabit.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_inhabit').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.inhabit.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_inhabit').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_intimation: "intimation"
- umbra_discovery.intimation.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_intimation').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.intimation.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_intimation').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_keening: "keening"
- umbra_discovery.keening.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_keening').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.keening.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_keening').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_lifeweb: "lifeweb"
- umbra_discovery.lifeweb.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_lifeweb').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.lifeweb.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_lifeweb').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_mnemosynis: "mnemosynis"
- umbra_discovery.mnemosynis.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_mnemosynis').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.mnemosynis.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_mnemosynis').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_moliate: "moliate"
- umbra_discovery.moliate.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_moliate').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.moliate.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_moliate').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_outrage: "outrage"
- umbra_discovery.outrage.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_outrage').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.outrage.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_outrage').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_pandemonium: "pandemonium"
- umbra_discovery.pandemonium.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_pandemonium').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.pandemonium.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_pandemonium').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_phantasm: "phantasm"
- umbra_discovery.phantasm.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_phantasm').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.phantasm.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_phantasm').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_puppetry: "puppetry"
- umbra_discovery.puppetry.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_puppetry').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.puppetry.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_puppetry').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
  umbra_discovery_usury: "usury"
- umbra_discovery.usury.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_usury').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery.usury.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_usury').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [Concept('umbra_expedition', 'Путешествие в Умбру')|E]"
 
  umbra_crisis.title: "Кризис [Concept('umbra', 'Умбры')|E]: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagName))]"
  umbra_discovery_wyrmish_summoning: "Призыв Вирма"
@@ -690,7 +690,7 @@
  arcadia_effect_desc: ""
 
  umbra_realm_kingdom_of_dan: "Королевство Дан"
- umbra_realm_kingdom_of_dan_desc: "Королевство [dan|E] - один из [Concept('oneiric_realms', 'миров снов')|E] [UmbraGlossaryLocalized('deep_dreaming','Глубоких Грёз')].\n\nВ мире, не имеющем постоянных границ, есть две гипотетические линии, которыми некоторые картографы грёз измеряют протяжённость известных [UmbraGlossaryLocalized('dreaming','Грёз')]: Ось и Эквинокций. Первая измеряет [UmbraGlossaryLocalized('dreaming','Грёзы')] сверху вниз. Вторая проходит через горизонтальную середину [UmbraGlossaryLocalized('dreaming','Грёз')], выступая в качестве грубого экватора. Как и все измерения в [UmbraGlossaryLocalized('dreaming','Грёзах')], это в значительной степени интеллектуальный замысел, призванный придать некий порядок хаотичной в целом вселенной. На вершине этой вымышленной оси находится королевство [dan|E]."
+ umbra_realm_kingdom_of_dan_desc: "Королевство [Concept('dan', 'Дан')|E] - один из [Concept('oneiric_realms', 'миров снов')|E] [UmbraGlossaryLocalized('deep_dreaming','Глубоких Грёз')].\n\nВ мире, не имеющем постоянных границ, есть две гипотетические линии, которыми некоторые картографы грёз измеряют протяжённость известных [UmbraGlossaryLocalized('dreaming','Грёз')]: Ось и Эквинокций. Первая измеряет [UmbraGlossaryLocalized('dreaming','Грёзы')] сверху вниз. Вторая проходит через горизонтальную середину [UmbraGlossaryLocalized('dreaming','Грёз')], выступая в качестве грубого экватора. Как и все измерения в [UmbraGlossaryLocalized('dreaming','Грёзах')], это в значительной степени интеллектуальный замысел, призванный придать некий порядок хаотичной в целом вселенной. На вершине этой вымышленной оси находится королевство [Concept('dan', 'Дан')|E]."
  kingdom_of_dan_effect_desc: ""
 
  umbra_realm_kureksarra: "Курексарра"
@@ -726,131 +726,131 @@
  balloon_effect_desc: ""
 
  umbra_realm_vale_of_mists: "Долина туманов"
- umbra_realm_vale_of_mists_desc: "The Vale of Mists is the mystic barrier separating the [UmbraGlossary('near_dreaming')] from the [UmbraGlossary('far_dreaming')] and the [UmbraGlossary('deep_dreaming')], where the Mists of Forgetfulness are strongest."
+ umbra_realm_vale_of_mists_desc: "Долина туманов - это мистический барьер, отделяющий [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')] от [UmbraGlossaryLocalized('far_dreaming','Дальних Грёз')] и [UmbraGlossaryLocalized('deep_dreaming','Глубоких Грёз')], где Туманы забытья наиболее сильны."
  vale_of_mists_effect_desc: ""
 
- umbra_realm_fields_behind: "Fields Behind"
- umbra_realm_fields_behind_desc: "The Fields Behind is a transitional realm between the Near and [UmbraGlossary('far_dreaming')], within the [UmbraGlossary('vale_of_mists')] and part of the larger Fields."
+ umbra_realm_fields_behind: "Запредельные поля"
+ umbra_realm_fields_behind_desc: "Запредельные поля - переходное измерение между Ближними и [UmbraGlossaryLocalized('far_dreaming','Дальними Грёзами')], внутри [UmbraGlossaryLocalized('vale_of_mists','Долины туманов')] и часть больших Полей."
  fields_behind_effect_desc: ""
- 
- umbra_realm_bullydale_wastes: "Bullydale Wastes"
- umbra_realm_bullydale_wastes_desc: "The Bullydale Wastes is a [nightmare_realm|E] in the [UmbraGlossary('dreaming')].\n\nPast the [UmbraGlossary('fields_behind')], the trods grow treacherous, becoming less like roads and more like goat-paths or hunting trails. The faerie villages grow smaller and less common, thinning out until the traveler is alone but for a rude cottage here and there. The cottagers themselves grow increasingly strange, and this is a region of cannibals, inverts, bandits, and witches."
+
+ umbra_realm_bullydale_wastes: "Задиристые пустоши"
+ umbra_realm_bullydale_wastes_desc: "Задиристые пустоши - это [Concept('nightmare_realm', 'царство кошмаров')|E] а [UmbraGlossaryLocalized('dreaming','Грёзах')].\n\nПосле [UmbraGlossaryLocalized('fields_behind','Запредельных полей')], троды становятся всё более коварными, все меньше похожими на дороги и всё больше на козьи тропы или охотничьи тропы. Деревни фей становятся всё меньше и реже, редеют, пока путешественник не остаётся один, за исключением захудалого домика тут и там. Сами жители становятся всё более странными, и это уже край каннибалов, извращенцев, бандитов и ведьм."
  bullydale_wastes_effect_desc: ""
- 
- umbra_realm_low_dukedoms: "Low Dukedoms"
- umbra_realm_low_dukedoms_desc: "The Low Dukedoms of Quox and Mux are [dream_realms|E] near the [UmbraGlossary('vale_of_mists')].\n\nToward the limits of the [UmbraGlossary('bullydale_wastes')], the petty selfishness and violence becomes more mindless; the schemes increasingly more outrageous. The usual rules bend and finally collapse into absurdity. Once totally absurd behavior is the rule, then the traveler has arrived in the Low Dukedoms, the heart of trickery and slapstick comedy in the [UmbraGlossary('dreaming')]."
+
+ umbra_realm_low_dukedoms: "Низшие герцогства"
+ umbra_realm_low_dukedoms_desc: "Низшие герцогства Квокс и Мукс - это [Concept('dream_realms', 'миры Грёз')|E] вблизи [UmbraGlossaryLocalized('vale_of_mists','Долины туманов')].\n\nУ пределов [UmbraGlossaryLocalized('bullydale_wastes','Задиристых пустошей')] мелкий эгоизм и насилие становятся всё более бездумными, а происки - все более возмутительными. Привычные правила искажаются и в конце концов рушатся до абсурда. Если абсурдное поведение становится правилом, значит, путешественник прибыл в Низшие герцогства, сердце хитрости и комедии в [UmbraGlossaryLocalized('dreaming','Грёзах')]."
  low_dukedoms_effect_desc: ""
- 
- umbra_realm_blotkeldur: "Blotkeldur"
- umbra_realm_blotkeldur_desc: "The Blotkeldur is a [nightmare_realm|E] in the [UmbraGlossary('near_dreaming')].\n\nThe nomadic acheri have never had a [home_realm|E], but if they did, some say the Blotkeldur would suit them. Cold, wet, and dismal, the Blotkeldur is an endless morass of poisoned marshes, shallow meandering rivers, and sickly scrub. Deep in the darkest regions of the realm are vast, cyclopean cities built from the denuded ivory bones of behemoths long extinct in all but the deepest [UmbraGlossary('dreaming')]."
+
+ umbra_realm_blotkeldur: "Блоткелдур"
+ umbra_realm_blotkeldur_desc: "Блоткелдур - это [Concept('nightmare_realm', 'царство кошмаров')|E] в [UmbraGlossaryLocalized('near_dreaming','Ближних Грёзах')].\n\nУ кочевых ачери никогда не было [Concept('home_realm', 'родного мира')|E], но если бы он был, некоторые говорят, что Блоткелдур им бы подошёл. Холодный, сырой и мрачный Блоткелдур - это бескрайние болота с ядовитой водой, мелководные реки и тошнотворный кустарник. Глубоко в самых тёмных областях королевства находятся огромные циклопические города, построенные из обглоданных слоновых костей чудищ, давно вымерших во всех уголках мира, кроме самых глубоких [UmbraGlossaryLocalized('dreaming','Грёз')]."
  blotkeldur_effect_desc: ""
- 
- umbra_realm_wastelands: "Wastelands"
- umbra_realm_wastelands_desc: "The Wastelands are a [nightmare_realm|E] in the [UmbraGlossary('deep_dreaming')] and home of the Pool of Counted Sorrows.\n\nThe Wastelands is a dark, miserable place where nightmares hold eternal sway. In this endless [nightmare_realm|E], the more twisted passions and fears of mortals fester and grow. Forests of toadstools and valleys filled with moist, poisonous lichen cover lands which once held palaces to rival [UmbraGlossary('arcadia')]. In this place, the darkness is complete and the Thallain hold undeniable reign over the land. No sane changeling wold dare visit this place, save for one simple fact: the Pool of Counted Sorrows rests in the center of the Wastelands. The Pool is said to reveal all of the past to anyone who can stand to gaze into its depths. Many changelings in the Deep Realms claim to have visions of the Pool. It may only be a lie created by the rulers of the [nightmare_realms|E], or it may be something more. Some claim it is a possible way toward for all Kithain."
+
+ umbra_realm_wastelands: "Пустоши"
+ umbra_realm_wastelands_desc: "Пустоши - это [Concept('nightmare_realm', 'царство кошмаров')|E] в [UmbraGlossaryLocalized('deep_dreaming','Глубоких Грёзах')] и дом Пруда Сосчитанных печалей.\n\nПустоши - мрачное, убогое место, где вечно властвуют кошмары. В этом бесконечном [Concept('nightmare_realm', 'царстве кошмаров')|E] гноятся и растут самые извращённые страсти и страхи смертных. Леса из жаб и долины, заполненные влажным ядовитым лишайником, покрывают земли, на которых когда-то стояли дворцы, не уступающие [UmbraGlossaryLocalized('arcadia','Аркадии')]. В этом месте царит кромешная тьма, и таллэйн неоспоримо властвуют над землёй. Ни один здравомыслящий подменыш не осмелится посетить это место, если бы не один простой факт: в центре Пустошей находится Пруд Сосчитанных печалей. Считается, что пруд открывает всё прошлое каждому, кто сможет заглянуть в его глубины. Многие подменыши в Глубинных мирах утверждают, что у них были видения пруда. Возможно, это всего лишь ложь, созданная правителями [Concept('nightmare_realm', 'царства кошмаров')|E], а может быть, и нечто большее. Некоторые утверждают, что это возможный путь для всех китэйн."
  wastelands_effect_desc: ""
- 
- umbra_realm_hieronymus_continuum: "Hieronymus Continuum"
- umbra_realm_hieronymus_continuum_desc: "The Hieronymus Continuum is a [dream_realm|E] in the Far or [UmbraGlossary('deep_dreaming')] said, by some, to be the birthplace of the Nockers.\n\nThe realm's actual appearance and dimensions are a subject of much debate among nocker physicists. Some legends hold that the first nockers came from this Dreamrealm and traveled to Earth in a giant mechanical egg. Few nockers support this tale, privately recognizing [UmbraGlossary('arcadia')] as their true home, but almost all of them will whip out the tale like a switchblade in an argument as "proof" of their superiority to the other fae. Some claim the continuum is more than just another dreamrealm but is part of an altogether different dimension that exists outside the [UmbraGlossary('dreaming')] in a fold of the space-time continuum. Nockers who have reached this realm and returned always do so with profound insights into invention. The only known way to reach it is through rift anomalies in the [UmbraGlossary('far_dreaming')] and with a Delta-Wave Helmet."
+
+ umbra_realm_hieronymus_continuum: "Континуум Иеронима"
+ umbra_realm_hieronymus_continuum_desc: "Континуум Иеронима - это [Concept('dream_realm', 'мир Грёз')|E] в Дальних или [UmbraGlossaryLocalized('deep_dreaming','Глубоких Грёзах')], которая, по мнению некоторых, является местом рождения нокеров.\n\nРеальный вид и размеры мира являются предметом долгих споров среди физиков-нокеров. Некоторые легенды гласят, что первые нокеры прибыли из этого мира Грёз и отправились на Землю в гигантском механическом яйце. Немногие нокеры поддерживают эту легенду, в частном порядке признавая [UmbraGlossaryLocalized('arcadia','Аркадию')] своим истинным домом, но почти все из них выхватят эту легенду, как клинок в споре, в качестве «доказательства» своего превосходства над другими феями. Некоторые утверждают, что континуум - это не просто еще одно царство снов, а часть совершенно иного измерения, существующего за пределами [UmbraGlossaryLocalized('dreaming','Грёз')] в складке пространственно-временного континуума. Нокеры, достигшие этого царства и вернувшиеся обратно, всегда делают это с глубокими познаниями в области изобретений. Единственный известный способ попасть туда - через аномалии разлома в [UmbraGlossaryLocalized('far_dreaming','Дальних Грёзах')] и с помощью Шлема дельта-волн."
  hieronymus_continuum_effect_desc: ""
- 
- umbra_realm_wyldweir: "Wyldweir"
- umbra_realm_wyldweir_desc: "The Wyldweir is a [dream_realm|E] of the [UmbraGlossary('near_dreaming')].\n\nFormerly an Arcadian protectorate, this forested mountain region fell to several Denizen groups during the Miririm."
+
+ umbra_realm_wyldweir: "Вильдвейр"
+ umbra_realm_wyldweir_desc: "Вильдвейр - это [Concept('dream_realm', 'мир Грёз')|E] из [UmbraGlossaryLocalized('near_dreaming','Ближних Грёз')].\n\nБывший аркадийский протекторат, этот лесистый горный регион перешел под власть нескольких групп Обитателей во время Миририма."
  wyldweir_effect_desc: ""
- 
- umbra_realm_brobdingnag: "Brobdingnag"
- umbra_realm_brobdingnag_desc: "The [dream_realm|E] of Brobdingnag is populated by otherwise normal giants who are so large that no traveler to the Realm has yet caught their attention: visitors are ignored or inadvertently squashed."
- brobdingnag_effect_desc: "Allows recruiting [GetMaA('giants').GetName] as [men_at_arms|E] (as an [umbra_expedition|E])"
- 
- umbra_realm_arawns_forge: "Arawn's Forge"
- umbra_realm_arawns_forge_desc: "Arawn's Forge is a [stable_point|E] of the [UmbraGlossary('far_dreaming')].\n\nThere's a solitary mountain, black as a fomorian's heart, where once Arawn held his court. The sides of the mountain are as slick as wet glass and the winds howling around the peaks prevent even dragons from flying close enough to land. The air is bitter cold, and a thick frost rime covers the surrounding lands. But in the darkness of night, there comes a glow from the center of the mountain that spills forth from a deep pit at the very pinnacle, countless leagues above the ground. The glow is bright enough to turn the bottoms of the clouds that always surround the loathsome place a bloody red."
+
+ umbra_realm_brobdingnag: "Бробдингнаг"
+ umbra_realm_brobdingnag_desc: "[Concept('dream_realm', 'Мир Грёз')|E] Бробдингнаг населён обычными великанами, которые настолько огромны, что ни один путешественник в королевстве ещё не привлёк их внимания: гостей игнорируют или нечаянно раздавливают."
+ brobdingnag_effect_desc: "Доступны [men_at_arms|El] - [GetMaA('giants').GetName] (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])"
+
+ umbra_realm_arawns_forge: "Кузня Аравна"
+ umbra_realm_arawns_forge_desc: "Кузня Аравна - это [Concept('stable_point', 'стабильная точка')|E] в [UmbraGlossaryLocalized('far_dreaming','Дальних Грёзах')].\n\nТам есть одинокая гора, чёрная, как сердце фомора, где когда-то Аравн держал свой двор. Склоны горы скользкие, как мокрое стекло, а ветер, воющий вокруг вершин, не позволяет даже драконам подлететь достаточно близко, чтобы приземлиться. Воздух холоден, а окружающие земли покрыты густым инеем. Но в ночной темноте из центра горы появляется сияние, которое льется из глубокой ямы на самой вершине, на бесчисленные лиги над землей. Свечение это достаточно ярко, чтобы окрасить в кроваво-красный цвет нижние части облаков, которые всегда окружают это отвратительное место."
  arawns_forge_effect_desc: ""
- 
- umbra_realm_great_dream_forest: "Great Dream Forest"
- umbra_realm_great_dream_forest_desc: "The Great Dream Forest , also called the Forest of [dan|E] or the Milderwood, is the forest that is all forests in the [UmbraGlossary('far_dreaming')].\n\nThere is only one Forest in the [UmbraGlossary('far_dreaming')]. Ancient, majestic, and often filled with danger, the Great Forest spans areas larger than any continent of the waking world. Every imaginable type of tree, both "real" and otherwise, exists here. The Great Forest even runs beneath the [UmbraGlossary('slumbering_oceans')] and into other lands far beyond the sight of most Kithain."
+
+ umbra_realm_great_dream_forest: "Великий лес снов"
+ umbra_realm_great_dream_forest_desc: "Великий лес снов, также называемый Лесом [Concept('dan', 'Дан')|E] или Мягким лесом, - это лес, который является всеми лесами в [UmbraGlossaryLocalized('far_dreaming','Дальних Грёзах')].\n\nВ [UmbraGlossaryLocalized('far_dreaming','Дальних Грёзах')]. есть только один лес. Древний, величественный и часто полный опасностей, Великий лес занимает территорию, превышающую любой континент мира бодрствования. Здесь растут все мыслимые и немыслимые виды деревьев, как «настоящих», так и иных. Великий лес пролегает даже под [UmbraGlossaryLocalized('slumbering_oceans','Дремлющими океанами')] и в других землях, далеко за пределами видимости большинства китэйн."
  great_dream_forest_effect_desc: ""
- 
- umbra_realm_discordant_woods: "Discordant Woods"
- umbra_realm_discordant_woods_desc: "The Discordant Woods is part of the [UmbraGlossary('great_dream_forest')] and one of the relatively [stable_points|E] of the [UmbraGlossary('far_dreaming')].\n\nThough the fruit of the trees is sweet and nutritious, Though the loam of the forest makes a comfortable bed, Though the game in the woods is in plenty, The Discordant Woods bring a silent dread. The Discordant Woods are lovely."
+
+ umbra_realm_discordant_woods: "Диссонирующий лес"
+ umbra_realm_discordant_woods_desc: "Диссонирующий лес является частью [UmbraGlossaryLocalized('great_dream_forest','Великого леса снов')] и одной из относительно [Concept('stable_points', 'стабильных точек')|E] [UmbraGlossaryLocalized('far_dreaming','Дальних Грёз')].\n\nХотя плоды деревьев сладки и питательны, Хотя лесной суглинок - удобная постель, Хотя дичи в лесу много, Диссонирующий лес навевает тихий ужас. Диссонирующий лес прекрасен."
  discordant_woods_effect_desc: ""
- 
- umbra_realm_sea_of_sorrow: "Sea of Sorrow"
- umbra_realm_sea_of_sorrow_desc: "The Sea of Sorrow is a [stable_points|E] of the [UmbraGlossary('far_dreaming')].\n\nFar from the Great Forest lies a place where sand as fine as powder blows across a barren land and swallows all who dare try to cross its expanse. There is one trod that winds across this ocean of dust, stretching its Silver Path through the constant turbulence that often swallows the trod completely, before allowing it to shine again. The great sand waves are said to shred flesh with ease, leaving so little behind that even vultures can find no morsels worth noticing. The Sea of Sorrow holds its secrets well. No one has ever followed the Silver Path across this wasteland and returned to tell of what rests on the other side."
+
+ umbra_realm_sea_of_sorrow: "Море печали"
+ umbra_realm_sea_of_sorrow_desc: "The Sea of Sorrow is a [Concept('stable_points', 'стабильная точка')|E] of the [UmbraGlossaryLocalized('far_dreaming','Дальние Грёзы')].\n\nFar from the Great Forest lies a place where sand as fine as powder blows across a barren land and swallows all who dare try to cross its expanse. There is one trod that winds across this ocean of dust, stretching its Silver Path through the constant turbulence that often swallows the trod completely, before allowing it to shine again. The great sand waves are said to shred flesh with ease, leaving so little behind that even vultures can find no morsels worth noticing. The Sea of Sorrow holds its secrets well. No one has ever followed the Silver Path across this wasteland and returned to tell of what rests on the other side."
  sea_of_sorrow_effect_desc: ""
- 
- umbra_realm_great_chasm: "Great Chasm"
- umbra_realm_great_chasm_desc: "The Great Chasm is a [stable_point|E] of the [UmbraGlossary('near_dreaming')].\n\nOccupying the same location that the Grand Canyon does in the mundane world, the Great Chasm is a bottomless crack across the face of the [UmbraGlossary('near_dreaming')]. Few Kithain are bold or foolish enough to journey into its depths, for here be mysteries."
+
+ umbra_realm_great_chasm: "Великая пропасть"
+ umbra_realm_great_chasm_desc: "The Great Chasm is a [Concept('stable_point', 'Стабильная точка')|E] of the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')].\n\nOccupying the same location that the Grand Canyon does in the mundane world, the Great Chasm is a bottomless crack across the face of the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')]. Few Kithain are bold or foolish enough to journey into its depths, for here be mysteries."
  great_chasm_effect_desc: ""
  
  umbra_realm_great_engine: "Great Engine"
- umbra_realm_great_engine_desc: "The Great Engine is a [stable_point|E] of the [UmbraGlossary('deep_dreaming')].\n\nBeyond the barren ice fields of Endless Night, where the ice giants dwell and use trolls as their personal slaves, there is a machine of extraordinary size. The Great Engine has always been where it rests. The Firchlis does not change the shape of the towering ruin, and the passage of eons has not caused the massive structure any harm. The Great Engine rests as an angle, motionless and silent. No wind blows where the machine waits. No living thing dwells in its shadow."
+ umbra_realm_great_engine_desc: "The Great Engine is a [Concept('stable_point', 'Стабильная точка')|E] of the [UmbraGlossaryLocalized('deep_dreaming','Глубокие Грёзы')].\n\nBeyond the barren ice fields of Endless Night, where the ice giants dwell and use trolls as their personal slaves, there is a machine of extraordinary size. The Great Engine has always been where it rests. The Firchlis does not change the shape of the towering ruin, and the passage of eons has not caused the massive structure any harm. The Great Engine rests as an angle, motionless and silent. No wind blows where the machine waits. No living thing dwells in its shadow."
  great_engine_effect_desc: ""
  
  umbra_realm_lake_of_sorrows: "Lake of Sorrows"
- umbra_realm_lake_of_sorrows_desc: "The Lake of Sorrows is a [stable_point|E] of the [UmbraGlossary('near_dreaming')].\n\nWhere the Great Salt Lake rests in the Kingdom of the Burning Sun, the Lake of Sorrows is mirrored in the [UmbraGlossary('near_dreaming')]. The Lake holds within its depths a city of incredible beauty and unspeakable majesty. Towers rise beneath the waters and come within inches of the air; occasionally, an individual sees the inhabitants of this city looking up at them, even as they peer down into the deeps. Treasures beyond the scope of mortal imagination gleam brightly in the depths, sometimes held in hands and sometimes resting on the mother-of-pearl-colored cobblestones in the deeps of the lake. This city thrives, filled with Kithain both familiar and unknown to changelings. Despite their powers and fabulous abilities, however, they cannot reach the city beneath the surface."
+ umbra_realm_lake_of_sorrows_desc: "The Lake of Sorrows is a [Concept('stable_point', 'Стабильная точка')|E] of the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')].\n\nWhere the Great Salt Lake rests in the Kingdom of the Burning Sun, the Lake of Sorrows is mirrored in the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')]. The Lake holds within its depths a city of incredible beauty and unspeakable majesty. Towers rise beneath the waters and come within inches of the air; occasionally, an individual sees the inhabitants of this city looking up at them, even as they peer down into the deeps. Treasures beyond the scope of mortal imagination gleam brightly in the depths, sometimes held in hands and sometimes resting on the mother-of-pearl-colored cobblestones in the deeps of the lake. This city thrives, filled with Kithain both familiar and unknown to changelings. Despite their powers and fabulous abilities, however, they cannot reach the city beneath the surface."
  lake_of_sorrows_effect_desc: ""
  
  umbra_realm_rivers_of_phantasia: "Rivers of Phantasia"
- umbra_realm_rivers_of_phantasia_desc: "The Rivers of Phantasia are [stable_points|E] in the [UmbraGlossary('near_dreaming')].\n\nThe Rivers of Phantasia cover the North American continent in the [UmbraGlossary('near_dreaming')], just as the Colorado, Mississippi, and Rio Grande cover the North America. Although only a few Kingdoms are blessed by these waters, their influence is always felt when changelings manage to find them. The waters of these rivers are as pure and sweet as the finest dreams. Drinking from them is enough to soothe any hunger and can even cure wounds, both real and chimerical. At certain points, the Rivers of Phantasia are allegedly capable of erasing the years from a changeling. Grumps who drink from the waters can grow younger, even to the point of becoming mere childlings once more. While no memories are lost as a result of these changes in age, outlooks are reversed: it's not only the body that grows younger but the soul as well."
+ umbra_realm_rivers_of_phantasia_desc: "The Rivers of Phantasia are [Concept('stable_points', 'стабильная точка')|E] in the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')].\n\nThe Rivers of Phantasia cover the North American continent in the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')], just as the Colorado, Mississippi, and Rio Grande cover the North America. Although only a few Kingdoms are blessed by these waters, their influence is always felt when changelings manage to find them. The waters of these rivers are as pure and sweet as the finest dreams. Drinking from them is enough to soothe any hunger and can even cure wounds, both real and chimerical. At certain points, the Rivers of Phantasia are allegedly capable of erasing the years from a changeling. Grumps who drink from the waters can grow younger, even to the point of becoming mere childlings once more. While no memories are lost as a result of these changes in age, outlooks are reversed: it's not only the body that grows younger but the soul as well."
  rivers_of_phantasia_effect_desc: ""
  
  umbra_realm_seas_of_dream: "Seas of Dream"
- umbra_realm_seas_of_dream_desc: "The Seas of Dream are [stable_points|E] in the [UmbraGlossary('near_dreaming')] corresponding to the oceans of the Earth.\n\nThe [UmbraGlossary('near_dreaming')] has oceans, just as the waking world has oceans. While they reflect the placement of the mundane seas, the Seas of Dream are collective wonders unto themselves. Somewhere in the depths of the oceans, Atlantis still rests and the merfolk make their homes. Great leviathans sleep here, waiting until the proper time to make their presence known and dreaming dreams beyond even Kithain comprehension. Cities float beneath the waves, some still thriving, some long abandoned, all waiting to reveal their secrets to any curious and brave enough to explore them."
+ umbra_realm_seas_of_dream_desc: "The Seas of Dream are [Concept('stable_points', 'стабильная точка')|E] in the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')] corresponding to the oceans of the Earth.\n\nThe [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')] has oceans, just as the waking world has oceans. While they reflect the placement of the mundane seas, the Seas of Dream are collective wonders unto themselves. Somewhere in the depths of the oceans, Atlantis still rests and the merfolk make their homes. Great leviathans sleep here, waiting until the proper time to make their presence known and dreaming dreams beyond even Kithain comprehension. Cities float beneath the waves, some still thriving, some long abandoned, all waiting to reveal their secrets to any curious and brave enough to explore them."
  seas_of_dream_effect_desc: ""
- 
- umbra_realm_slumbering_oceans: "Slumbering Oceans"
- umbra_realm_slumbering_oceans_desc: "The Slumbering Oceans are [stable_points|E] of the [UmbraGlossary('far_dreaming')].\n\nThe great oceans of the [UmbraGlossary('far_dreaming')] connect with both the Near Realms and the [UmbraGlossary('deep_dreaming')]. The waters here are murky, too deep and dark to reveal their secrets. These great oceans stretch to other lands in the [UmbraGlossary('dreaming')], mysterious realms where no Kithain has ever gone. Some claim the Tuatha de Danaan took their ships and sailed across the Slumbering Oceans to return to the place whence the came, before the [UmbraGlossary('dreaming')] was truly formed."
+
+ umbra_realm_slumbering_oceans: "Дремлющие океаны"
+ umbra_realm_slumbering_oceans_desc: "The Slumbering Oceans are [Concept('stable_points', 'стабильная точка')|E] of the [UmbraGlossaryLocalized('far_dreaming','Дальние Грёзы')].\n\nThe great oceans of the [UmbraGlossaryLocalized('far_dreaming','Дальние Грёзы')] connect with both the Near Realms and the [UmbraGlossaryLocalized('deep_dreaming','Глубокие Грёзы')]. The waters here are murky, too deep and dark to reveal their secrets. These great oceans stretch to other lands in the [UmbraGlossaryLocalized('dreaming','Грёзы')], mysterious realms where no Kithain has ever gone. Some claim the Tuatha de Danaan took their ships and sailed across the Slumbering Oceans to return to the place whence the came, before the [UmbraGlossaryLocalized('dreaming','Грёзы')] was truly formed."
  slumbering_oceans_effect_desc: ""
  
  umbra_realm_splintered_mountains: "Splintered Mountains"
- umbra_realm_splintered_mountains_desc: "The Splintered Mountains are one of the relatively [stable_points|E] of the [UmbraGlossary('far_dreaming')].\n\nThe Splintered Mountains range across a thousand leagues and cut a bold path through the Dark Lands of the [UmbraGlossary('far_dreaming')]. Here, the giants of legend and the monsters of yore make their homes and seek as sustenance any foolish enough to enter their domain. Harpies ride the frigid winds of the stone canyons, eager for changelings to torture, and basilisks lurk in the shadows of the broken towers. A great many Kithain have met their deaths in the Splintered Mountains, where once Tuatha de Danaan rules in the time before the Shattering. There are treasures hidden away in the caves of the mountains, and some believe the way to [UmbraGlossary('arcadia')] can only be found by seeking those treasures that the Tuatha de Danaan abandoned when they left their now-ruined palaces. This may be a lie or may be the truth, but all of the sidhe remember passing through the range of treacherous, thrusting stone towers on their way back to the Waking World."
+ umbra_realm_splintered_mountains_desc: "The Splintered Mountains are one of the relatively [Concept('stable_points', 'стабильная точка')|E] of the [UmbraGlossaryLocalized('far_dreaming','Дальние Грёзы')].\n\nThe Splintered Mountains range across a thousand leagues and cut a bold path through the Dark Lands of the [UmbraGlossaryLocalized('far_dreaming','Дальние Грёзы')]. Here, the giants of legend and the monsters of yore make their homes and seek as sustenance any foolish enough to enter their domain. Harpies ride the frigid winds of the stone canyons, eager for changelings to torture, and basilisks lurk in the shadows of the broken towers. A great many Kithain have met their deaths in the Splintered Mountains, where once Tuatha de Danaan rules in the time before the Shattering. There are treasures hidden away in the caves of the mountains, and some believe the way to [UmbraGlossaryLocalized('arcadia','Аркадия')] can only be found by seeking those treasures that the Tuatha de Danaan abandoned when they left their now-ruined palaces. This may be a lie or may be the truth, but all of the sidhe remember passing through the range of treacherous, thrusting stone towers on their way back to the Waking World."
  splintered_mountains_effect_desc: ""
  
  umbra_realm_middlemarch: "Middlemarch"
- umbra_realm_middlemarch_desc: "The Middlemarch is a Realm of the [UmbraGlossary('near_dreaming')].\n\nFoothills of the great [UmbraGlossary('splintered_mountains')], the arid stonelands of the Middlemarch constitute some of the harshest realms in the [UmbraGlossary('near_dreaming')]."
+ umbra_realm_middlemarch_desc: "The Middlemarch is a Realm of the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')].\n\nFoothills of the great [UmbraGlossary('splintered_mountains')], the arid stonelands of the Middlemarch constitute some of the harshest realms in the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')]."
  middlemarch_effect_desc: ""
  
  umbra_realm_chakravada: "Chakravada"
- umbra_realm_chakravada_desc: "Chakravada is the greatest of all mountains in the [UmbraGlossary('dreaming')].\n\nFound in the [UmbraGlossary('splintered_mountains')], Mount Chakravada, greatest of all mountains, is also the center of all worlds, and, at least within dreams, it is alive."
+ umbra_realm_chakravada_desc: "Chakravada is the greatest of all mountains in the [UmbraGlossaryLocalized('dreaming','Грёзы')].\n\nFound in the [UmbraGlossary('splintered_mountains')], Mount Chakravada, greatest of all mountains, is also the center of all worlds, and, at least within dreams, it is alive."
  chakravada_effect_desc: ""
  
  umbra_realm_goblin_market: "Goblin Market"
- umbra_realm_goblin_market_desc: "The Goblin Market is a Faerie Market in the [UmbraGlossary('deep_dreaming')].\n\nAlong the [UmbraGlossary('mistweir')] in the [UmbraGlossary('deep_dreaming')], and a hundred leagues away from the thorpe of [UmbraGlossary('fin_bheara')], stands a collection of tents and pavilions called the Goblin Market. Treasures of incredible power and rarity are for sale in the Market, as are delights and secrets beyond mortal understanding. The Goblin Market is ruled over by a dozen goblins and their redcap enforcers. All are welcome to enter the Market, so long as they have money or wares to trade."
+ umbra_realm_goblin_market_desc: "The Goblin Market is a Faerie Market in the [UmbraGlossaryLocalized('deep_dreaming','Глубокие Грёзы')].\n\nAlong the [UmbraGlossary('mistweir')] in the [UmbraGlossaryLocalized('deep_dreaming','Глубокие Грёзы')], and a hundred leagues away from the thorpe of [UmbraGlossary('fin_bheara')], stands a collection of tents and pavilions called the Goblin Market. Treasures of incredible power and rarity are for sale in the Market, as are delights and secrets beyond mortal understanding. The Goblin Market is ruled over by a dozen goblins and their redcap enforcers. All are welcome to enter the Market, so long as they have money or wares to trade."
  goblin_market_effect_desc: ""
  
  umbra_realm_distant_cities: "Distant Cities"
- umbra_realm_distant_cities_desc: "Distant Cities are a phenomenon of the [UmbraGlossary('near_dreaming')].\n\nOne common phenomenon in the [UmbraGlossary('near_dreaming')] is called Distant Cities. These strange places are inevitably beautiful and almost always unreachable. They are places seen on the horizon, places of wonder and glory that shine bright as the sun on the first true day of spring. Sometimes, they appear to be only a few miles away, and other times they seem a hundred leagues away. But always, they are mesmerizing, filled with crystalline towers and bridges of gold, colorful banners and music that haunts the region of whispers. Even miles away, people see the inhabitants of the Distant Cities and long to meet them, for surely anyone that beautiful must know the way to [UmbraGlossary('arcadia')]."
+ umbra_realm_distant_cities_desc: "Distant Cities are a phenomenon of the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')].\n\nOne common phenomenon in the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')] is called Distant Cities. These strange places are inevitably beautiful and almost always unreachable. They are places seen on the horizon, places of wonder and glory that shine bright as the sun on the first true day of spring. Sometimes, they appear to be only a few miles away, and other times they seem a hundred leagues away. But always, they are mesmerizing, filled with crystalline towers and bridges of gold, colorful banners and music that haunts the region of whispers. Even miles away, people see the inhabitants of the Distant Cities and long to meet them, for surely anyone that beautiful must know the way to [UmbraGlossaryLocalized('arcadia','Аркадия')]."
  distant_cities_effect_desc: ""
  
  umbra_realm_fin_bheara: "Fin Bheara"
- umbra_realm_fin_bheara_desc: "Fin Bheara is a True Fae Boggan and the Faerie Thorpe name after him in the [UmbraGlossary('deep_dreaming')].\n\nAlong the great barrier, hamlets and towns of all sizes have cropped up over the centuries, peopled by commoner fae who claim they left [UmbraGlossary('arcadia')] for places away from the sidhe. The greatest of these towns is called Fin Bheara, after the boggan who settled the land. Fin Bheara comprises all sorts of Kithain, even many sidhe who claim [UmbraGlossary('arcadia')] was barred to them at the time of the Shattering."
+ umbra_realm_fin_bheara_desc: "Fin Bheara is a True Fae Boggan and the Faerie Thorpe name after him in the [UmbraGlossaryLocalized('deep_dreaming','Глубокие Грёзы')].\n\nAlong the great barrier, hamlets and towns of all sizes have cropped up over the centuries, peopled by commoner fae who claim they left [UmbraGlossaryLocalized('arcadia','Аркадия')] for places away from the sidhe. The greatest of these towns is called Fin Bheara, after the boggan who settled the land. Fin Bheara comprises all sorts of Kithain, even many sidhe who claim [UmbraGlossaryLocalized('arcadia','Аркадия')] was barred to them at the time of the Shattering."
  fin_bheara_effect_desc: ""
  
  umbra_realm_mistweir: "Mistweir"
- umbra_realm_mistweir_desc: "The Mistweir is the final barrier between the [UmbraGlossary('far_dreaming')] and the [UmbraGlossary('deep_dreaming')]. The Mistweir completely surrounds the [UmbraGlossary('deep_dreaming')] and is a barrier between the mundane and the fantastic."
+ umbra_realm_mistweir_desc: "The Mistweir is the final barrier between the [UmbraGlossaryLocalized('far_dreaming','Дальние Грёзы')] and the [UmbraGlossaryLocalized('deep_dreaming','Глубокие Грёзы')]. The Mistweir completely surrounds the [UmbraGlossaryLocalized('deep_dreaming','Глубокие Грёзы')] and is a barrier between the mundane and the fantastic."
  mistweir_effect_desc: ""
  
  umbra_realm_dream_burrow: "Dream-Burrow"
- umbra_realm_dream_burrow_desc: "A Dream-Burrow is a pocket realm in the [UmbraGlossary('near_dreaming')] dug by a Pooka changeling to hide from Banality.\n\nMany different Dream-burrows house diverse pooka in varying numbers. Isolated from one another, they have each evolved in their own special way. The burrows range in size from small havens for single families of rabbit pooka, to fantastic forests of varying species. Each has its own unique flavor and landscape, depending on the changeling or changelings that dreamed it into being. Many still exist, hidden and thriving, even after all this time."
+ umbra_realm_dream_burrow_desc: "A Dream-Burrow is a pocket realm in the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')] dug by a Pooka changeling to hide from Banality.\n\nMany different Dream-burrows house diverse pooka in varying numbers. Isolated from one another, they have each evolved in their own special way. The burrows range in size from small havens for single families of rabbit pooka, to fantastic forests of varying species. Each has its own unique flavor and landscape, depending on the changeling or changelings that dreamed it into being. Many still exist, hidden and thriving, even after all this time."
  dream_burrow_effect_desc: ""
  
  umbra_realm_madness_realm: "Madness Realm"
- umbra_realm_madness_realm_desc: "A Madness Realm is a place in the [UmbraGlossary('near_dreaming')] where the madness of human Dreamers can sometimes cause serious dilemmas for the Kithain.\n\nMadness Realms are, perhaps, the most dangerous areas of the [UmbraGlossary('near_dreaming')]. In these places, the dreams of mortals who've surrendered their sanity are often realized. Mad dreams are extremely powerful and can catch an unwary traveler in their twisted realities for extended periods."
+ umbra_realm_madness_realm_desc: "A Madness Realm is a place in the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')] where the madness of human Dreamers can sometimes cause serious dilemmas for the Kithain.\n\nMadness Realms are, perhaps, the most dangerous areas of the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')]. In these places, the dreams of mortals who've surrendered their sanity are often realized. Mad dreams are extremely powerful and can catch an unwary traveler in their twisted realities for extended periods."
  madness_realm_effect_desc: ""
  
  umbra_realm_meridianus: "Meridianus"
- umbra_realm_meridianus_desc: "Meridianus is a void-like realm of violent winds and shadow chimera left by the Tuatha de Danaan to guard against the Denizens.\n\nDenizens who make the journey to the Autumn World quickly discover that reaching Earth is far easier than turning back. Earth exerts a dark and heavy psychic undertow which the ephemeral Dark-Kin have a difficult time escaping. This "undertow" manifests itself in several ways. Most important of these is a region of the [UmbraGlossary('near_dreaming')] that exists just beyond the Mists. Called the Meridianus, this region is an ancient defense left by the Tuatha to help enforce the Silver Ban. A realm of howling storms and little substance, it is almost impossible to navigate and is haunted by dangerous chimera. Called Dream-Shadows, these black, shadowy masses attack any visiting Dark-kin, dissolving their chimerical substance. Denizens only encounter this strange aspect of the region on the way out of the waking world, not upon entering it."
+ umbra_realm_meridianus_desc: "Meridianus is a void-like realm of violent winds and shadow chimera left by the Tuatha de Danaan to guard against the Denizens.\n\nDenizens who make the journey to the Autumn World quickly discover that reaching Earth is far easier than turning back. Earth exerts a dark and heavy psychic undertow which the ephemeral Dark-Kin have a difficult time escaping. This "undertow" manifests itself in several ways. Most important of these is a region of the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')] that exists just beyond the Mists. Called the Meridianus, this region is an ancient defense left by the Tuatha to help enforce the Silver Ban. A realm of howling storms and little substance, it is almost impossible to navigate and is haunted by dangerous chimera. Called Dream-Shadows, these black, shadowy masses attack any visiting Dark-kin, dissolving their chimerical substance. Denizens only encounter this strange aspect of the region on the way out of the waking world, not upon entering it."
  meridianus_effect_desc: ""
  
  umbra_realm_sea_of_silver: "Sea of Silver"
- umbra_realm_sea_of_silver_desc: "The Sea of Silver is the great ocean of the [UmbraGlossary('deep_dreaming')].\n\nThe limitless ocean of light, twilight, and shadows that becomes the [UmbraGlossary('deep_dreaming')], and the Black Court of the Fomorians; the Sea that has a thousand names, one for every heart that dreams; these infinite reaches divide the [UmbraGlossary('far_dreaming')] from the [UmbraGlossary('deep_dreaming')]. Call it the Depthless Sea, or the Sea of Eventide, or the Twilight Sea, or the Ocean of Dream, or even the Tempest. All journeys that hope to take leave of the Far Dream must take leave, also of the clearly marked boundaries of the Silver Path and all other comfortable guideposts and trial markings."
+ umbra_realm_sea_of_silver_desc: "The Sea of Silver is the great ocean of the [UmbraGlossaryLocalized('deep_dreaming','Глубокие Грёзы')].\n\nThe limitless ocean of light, twilight, and shadows that becomes the [UmbraGlossaryLocalized('deep_dreaming','Глубокие Грёзы')], and the Black Court of the Fomorians; the Sea that has a thousand names, one for every heart that dreams; these infinite reaches divide the [UmbraGlossaryLocalized('far_dreaming','Дальние Грёзы')] from the [UmbraGlossaryLocalized('deep_dreaming','Глубокие Грёзы')]. Call it the Depthless Sea, or the Sea of Eventide, or the Twilight Sea, or the Ocean of Dream, or even the Tempest. All journeys that hope to take leave of the Far Dream must take leave, also of the clearly marked boundaries of the Silver Path and all other comfortable guideposts and trial markings."
  sea_of_silver_effect_desc: ""
  
  umbra_realm_snail_graveyards: "Snail Graveyards"
- umbra_realm_snail_graveyards_desc: "The Snail Graveyards are six known sites in the [UmbraGlossary('dreaming')] to which the snails travel when they realize they are dying.\n\nBecause the way is difficult and dying snails travel slowly, most never make it to the graveyards and die somewhere along the way. In fact, one of the easiest ways for changeling to find the way to the nearest Snail Graveyard is to follow the fragmentary trail of snail shells underfoot. As one was, the shells grow gradually thicker on the ground and eventually one is in a Snail Graveyard. The oldest and strongest snails go to [UmbraGlossary('arike')] to die."
+ umbra_realm_snail_graveyards_desc: "The Snail Graveyards are six known sites in the [UmbraGlossaryLocalized('dreaming','Грёзы')] to which the snails travel when they realize they are dying.\n\nBecause the way is difficult and dying snails travel slowly, most never make it to the graveyards and die somewhere along the way. In fact, one of the easiest ways for changeling to find the way to the nearest Snail Graveyard is to follow the fragmentary trail of snail shells underfoot. As one was, the shells grow gradually thicker on the ground and eventually one is in a Snail Graveyard. The oldest and strongest snails go to [UmbraGlossary('arike')] to die."
  snail_graveyards_effect_desc: ""
  
  umbra_realm_spawning_fields: "Spawning Fields"
- umbra_realm_spawning_fields_desc: "Spawning Fields are places where the dreams of mortals pour directly into the [UmbraGlossary('dreaming')].\n\nSpawning Fields are dangerous under the best of circumstances. They are chaotic oceans of pure Glamour and direct, one-way connections between the [UmbraGlossary('dreaming')] and the Autumn World. Chimera are born constantly within these fountains of power and often die quickly. Spawning Fields appear seemingly at random with the [UmbraGlossary('near_dreaming')] and vanish just as capriciously"
+ umbra_realm_spawning_fields_desc: "Spawning Fields are places where the dreams of mortals pour directly into the [UmbraGlossaryLocalized('dreaming','Грёзы')].\n\nSpawning Fields are dangerous under the best of circumstances. They are chaotic oceans of pure Glamour and direct, one-way connections between the [UmbraGlossaryLocalized('dreaming','Грёзы')] and the Autumn World. Chimera are born constantly within these fountains of power and often die quickly. Spawning Fields appear seemingly at random with the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')] and vanish just as capriciously"
  spawning_fields_effect_desc: ""
  
  umbra_realm_tenebrous_realm: "Tenebrous Realm"
@@ -858,15 +858,15 @@
  tenebrous_realm_effect_desc: ""
  
  umbra_realm_winterweir: "Winterweir"
- umbra_realm_winterweir_desc: "The Winterweir is a Realm of the [UmbraGlossary('far_dreaming')].\n\nSituated in the Winter portion of the [UmbraGlossary('forest_of_lies')] along a Nearward tributary of the [UmbraGlossary('sea_of_silver')], the Winterweir is a cool, misty place shrouded in mystery. Home of the fuaths, few parts of the Forest are as thick and wild as the Winterweir... or as dangerous. The fuaths who live in this realm are suspicious of strangers and generally drive them away unless properly propitiated. Some do this merely to ensure their solitude while others are actively malevolent. The former have good cause for suspicion, especially given recent fir-bholg raids and the activities of the second category."
+ umbra_realm_winterweir_desc: "The Winterweir is a Realm of the [UmbraGlossaryLocalized('far_dreaming','Дальние Грёзы')].\n\nSituated in the Winter portion of the [UmbraGlossary('forest_of_lies')] along a Nearward tributary of the [UmbraGlossary('sea_of_silver')], the Winterweir is a cool, misty place shrouded in mystery. Home of the fuaths, few parts of the Forest are as thick and wild as the Winterweir... or as dangerous. The fuaths who live in this realm are suspicious of strangers and generally drive them away unless properly propitiated. Some do this merely to ensure their solitude while others are actively malevolent. The former have good cause for suspicion, especially given recent fir-bholg raids and the activities of the second category."
  winterweir_effect_desc: ""
  
  umbra_realm_forest_of_lies: "Forest of Lies"
- umbra_realm_forest_of_lies_desc: "The Forest of Lies is part of the [UmbraGlossary('great_dream_forest')] and one of the relatively [stable_points|E] of the [UmbraGlossary('far_dreaming')].\n\nThe Forest of Lies runs in patterns too complex for most to comprehend. It always borders the division of the [UmbraGlossary('far_dreaming')] and the [UmbraGlossary('deep_dreaming')]. It was in the Forest of Lies that Asterlan and his entourage did battle with the spiders of the Sighing Chasm. There is nothing good within the Forest of Lies. Everything here is dark and brooding, likely spawned by human fears of the forest primeval. The fruits borne by the ancient, gnarled trees of the forest are bitter and often poisonous to Kithain. The animals here are all predatory, and most grow to sizes that would make an army of trolls hesitate."
+ umbra_realm_forest_of_lies_desc: "The Forest of Lies is part of the [UmbraGlossaryLocalized('great_dream_forest','Великий лес снов')] and one of the relatively [Concept('stable_points', 'стабильная точка')|E] of the [UmbraGlossaryLocalized('far_dreaming','Дальние Грёзы')].\n\nThe Forest of Lies runs in patterns too complex for most to comprehend. It always borders the division of the [UmbraGlossaryLocalized('far_dreaming','Дальние Грёзы')] and the [UmbraGlossaryLocalized('deep_dreaming','Глубокие Грёзы')]. It was in the Forest of Lies that Asterlan and his entourage did battle with the spiders of the Sighing Chasm. There is nothing good within the Forest of Lies. Everything here is dark and brooding, likely spawned by human fears of the forest primeval. The fruits borne by the ancient, gnarled trees of the forest are bitter and often poisonous to Kithain. The animals here are all predatory, and most grow to sizes that would make an army of trolls hesitate."
  forest_of_lies_effect_desc: ""
  
  umbra_realm_maharaurava: "Mahâraurava"
- umbra_realm_maharaurava_desc: "Mahâraurava is the [home_realm|E] of the Naraka in the [UmbraGlossary('near_dreaming')].\n\nGreatest victim of Ravana's death, the naraka [home_realm|E]'s former beauty has forever disappeared. Situated in the [UmbraGlossary('near_dreaming')] realm which corresponds to Northwestern India, Mahâraurava was at ground zero when the Hidden Ones deployed their spirit-bomb. Few other creatures have ever visited this realm with the possible exception of the acheri. Changeling legends claim the region was once the most beautiful and cruel of realms, consisting of great jeweled mountains where even the smallest stone was worth a duke's ransom. The naraka, part of a faerie race called the Asuras, lived in civilized, if cruel, splendor, residing in vast palaces carved into the gleaming mountains, lolling in their fruited gardens perfecting the arts of music, love-making, and pain. It was their job, so say the legends, to punish wicked human souls, boiling them in the region's rivers of molten copper."
+ umbra_realm_maharaurava_desc: "Mahâraurava is the [Concept('home_realm', 'Родной мир')|E] of the Naraka in the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')].\n\nGreatest victim of Ravana's death, the naraka [Concept('home_realm', 'Родной мир')|E]'s former beauty has forever disappeared. Situated in the [UmbraGlossaryLocalized('near_dreaming','Ближние Грёзы')] realm which corresponds to Northwestern India, Mahâraurava was at ground zero when the Hidden Ones deployed their spirit-bomb. Few other creatures have ever visited this realm with the possible exception of the acheri. Changeling legends claim the region was once the most beautiful and cruel of realms, consisting of great jeweled mountains where even the smallest stone was worth a duke's ransom. The naraka, part of a faerie race called the Asuras, lived in civilized, if cruel, splendor, residing in vast palaces carved into the gleaming mountains, lolling in their fruited gardens perfecting the arts of music, love-making, and pain. It was their job, so say the legends, to punish wicked human souls, boiling them in the region's rivers of molten copper."
  maharaurava_effect_desc: ""
  
  umbra_realm_astral_plane: "Astral Plane"
@@ -889,9 +889,9 @@
  umbra_realm_spires_desc: "Cosmologists believe that the Spires are the result of many minds concentrating on the same idea, causing it to be elevated from the [UmbraGlossary('vulgate')] into a higher realm."
  spires_effect_desc: "Higher reward/requirement for intrigue lifestyle training unlocked."
 
- umbra_realm_inventium: "Inventium"
+ umbra_realm_inventium: "Изобретариум"
  umbra_realm_inventium_desc: "The Inventium is a Realm of the [UmbraGlossary('astral_reaches')] full of every invention humankind has ever dreamed of. These inventions manifest with an audible popping sound and drop gently into massive piles that fill the Realm in all directions."
- inventium_effect_desc: "Search Invention action won't give stress when failing anymore. (as an [umbra_expedition|E])\nInvention Searching action will give gold when fail. (as an [umbra_expedition|E])\nInnovation Searching action won't give stress when fail. (as an [umbra_expedition|E])"
+ inventium_effect_desc: "Search Invention action won't give stress when failing anymore. (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])\nInvention Searching action will give gold when fail. (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])\nInnovation Searching action won't give stress when fail. (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])"
 
  umbra_realm_epiphamy: "Epiphamy"
  umbra_realm_epiphamy_desc: "Epiphamies embody concepts of complete abstraction, such as "Nature's Laws" or "True Love". They are marked as colorful clouds in the umbral sky of the [UmbraGlossary('vulgate')] that can give the visitor hints about the concept they embody."
@@ -904,7 +904,7 @@
  umbra_realm_the_court_of_the_muses: "The Court of the Muses"
  umbra_realm_the_court_of_the_muses_desc: "The Court of the Muses has suffered a great deal with the almost complete extinction of Classical Hellenic belief. Still, while their realm gets smaller every day, the nine daughters of Zeus still practice their art, hoping that their passion will stave off Oblivion for a little longer."
  the_court_of_the_muses_effect_desc: "$UMBRA_DISCOVERY_FETISH$"
-
+ 
  umbra_realm_shadowlands: "Загробные миры"
  umbra_realm_shadowlands_desc: "The Shadowlands are a mirror 'skin' of reality, with every location in the breathing realm having a corresponding location in the Shadowlands which, for the most part, obey conventional rules of distance. It is where wraiths dwell, waiting for salvation or, most likely, [UmbraGlossary('oblivion')]."
 
@@ -917,7 +917,7 @@
  umbra_realm_sunless_sea: "Сумрачное море"
  umbra_realm_sunless_sea_desc: "Named because the sky above it is always dark, light in the Sunless Sea from sources such as ships and beacons can be seen for miles because it scatters off the surface of the water."
  sunless_sea_effect_desc: ""
-
+ 
  umbra_realm_far_shore: "Далёкий берег"
  umbra_realm_far_shore_desc: "The Far Shores are a mysterious territory in the [UmbraGlossaryLocalized('shadowlands','Underworld')] controlled by pythian entities called Shining Ones. To modern Stygians, the Far Shores are territories controlled by Heretics, and not to be trusted."
  far_shore_effect_desc: ""
@@ -944,7 +944,7 @@
  
  umbra_realm_dark_kingdom_of_ivory: "Dark Kingdom of Ivory"
  umbra_realm_dark_kingdom_of_ivory_desc: "The Bush of Ghosts, which also goes by the [dark_kingdom|E] of Ivory, is the [UmbraGlossary('shadowlands')] for the abambo, or the wraiths of Africa."
- dark_kingdom_of_ivory_effect_desc: "Unlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to this [dark_kingdom|E] so it has a chance of learning new [Arcanoi|E].\nIf you are a wraith, gain access to Behest tree of [misc_arcanoi_lifestyle|E]. (as an [umbra_expedition|E])"
+ dark_kingdom_of_ivory_effect_desc: "Unlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to this [dark_kingdom|E] so it has a chance of learning new [Arcanoi|E].\nIf you are a wraith, gain access to Behest tree of [misc_arcanoi_lifestyle|E]. (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])"
  
  umbra_realm_dark_kingdom_of_jade: "Dark Kingdom of Jade"
  umbra_realm_dark_kingdom_of_jade_desc: "The Yellow Springs, also called the [dark_kingdom|E] of Jade, is a part of the [UmbraGlossaryLocalized('shadowlands','Underworld')] dedicated to and controlled by the dead of Asia."
@@ -960,7 +960,7 @@
  
  umbra_realm_dark_kingdom_of_sand: "Dark Kingdom of Sand"
  umbra_realm_dark_kingdom_of_sand_desc: "Amenti, the [dark_kingdom|E] of Sand, is the [dark_kingdom|E] of the Undying in the [UmbraGlossaryLocalized('shadowlands','Underworld')]. It's not populated by wraiths, but by Immortals, who died and found themselves back in the [UmbraGlossary('shadowlands')]."
- dark_kingdom_of_sand_effect_desc: "Stationed Amenti [GetTrait('mummy').GetName( GetPlayer )] gain #P 1#! to #P 10#! Sekhem every #V 3#! months. (as an [umbra_expedition|E])\nUnlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to this [dark_kingdom|E] so it has a chance of learning new [Arcanoi|E]."
+ dark_kingdom_of_sand_effect_desc: "Stationed Amenti [GetTrait('mummy').GetName( GetPlayer )] gain #P 1#! to #P 10#! Sekhem every #V 3#! months. (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])\nUnlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to this [dark_kingdom|E] so it has a chance of learning new [Arcanoi|E]."
  
  umbra_realm_swar: "Swar"
  umbra_realm_swar_desc: "Swar (or Svarga), the City of Delights, is the city of the dead of India, Swar serves as the head city of Bhuvar, the Indian [UmbraGlossary('shadowlands')]."
@@ -1010,19 +1010,19 @@
  
  umbra_realm_sea_of_shadow: "Sea of Shadows"
  umbra_realm_sea_of_shadow_desc: "Sea of Shadows is a term used by Wraiths to describe the "bottom" layer of the [UmbraGlossary('pod_realm_tempest')] which flows around and into the [UmbraGlossary('pod_realm_labyrinth')] and [UmbraGlossary('oblivion')]."
- sea_of_shadow_effect_desc: "Allow you to find a random whistimmu as an [umbra_expedition|E].\nGain [POD_plasmic_maa|E] as an [umbra_expedition|E], which allows recruiting [POD_plasmic_maa|E] as [men_at_arms|E]."
+ sea_of_shadow_effect_desc: "Allows you to find a random whistimmu as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E].\nGain [POD_plasmic_maa|E] as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E], which allows recruiting [POD_plasmic_maa|E] as [men_at_arms|E]."
  
  umbra_realm_pod_realm_tempest: "Tempest"
  umbra_realm_pod_realm_tempest_desc: "The Tempest is a perpetually swirling maelstrom of energy, memories and #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L Spectres#!#! issuing from the [UmbraGlossary('pod_realm_labyrinth')] and continuously raining plasma and materials on both the [UmbraGlossary('shadowlands')] and [dark_kingdoms|E]."
- tempest_effect_desc: "Allow you to find a random whistimmu as an [umbra_expedition|E].\nGain [POD_plasmic_maa|E] as an [umbra_expedition|E], which allows recruiting [POD_plasmic_maa|E] as [men_at_arms|E]."
+ tempest_effect_desc: "Allows you to find a random whistimmu as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E].\nGain [POD_plasmic_maa|E] as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E], which allows recruiting [POD_plasmic_maa|E] as [men_at_arms|E]."
  
  umbra_realm_stormwall: "Stormwall"
  umbra_realm_stormwall_desc: "The Stormwall is a metaphysical barrier between the worlds of the living and the dead."
- stormwall_effect_desc: "Allow you to find a random whistimmu as an [umbra_expedition|E].\nGain [POD_plasmic_maa|E] as an [umbra_expedition|E], which allows recruiting [POD_plasmic_maa|E] as [men_at_arms|E]."
+ stormwall_effect_desc: "Allows you to find a random whistimmu as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E].\nGain [POD_plasmic_maa|E] as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E], which allows recruiting [POD_plasmic_maa|E] as [men_at_arms|E]."
  
  umbra_realm_island_below_the_sea: "Island Below the Sea"
  umbra_realm_island_below_the_sea_desc: "In the middle of the [UmbraGlossary('abyss')], between the [UmbraGlossary('mirrorlands')] and [UmbraGlossary('oblivion')], is the Island Below the Sea, which serves as the home of the Les Mystéres and a base of operations for the Loa."
- island_below_the_sea_effect_desc: "If you are a wraith, gain access to Connaissance tree of [misc_arcanoi_lifestyle|E]. (as an [umbra_expedition|E])"
+ island_below_the_sea_effect_desc: "If you are a wraith, gain access to Connaissance tree of [misc_arcanoi_lifestyle|E]. (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])"
  
  umbra_realm_mirrorlands: "Mirrorlands"
  umbra_realm_mirrorlands_desc: "The Mirrorlands are the name for the [UmbraGlossary('shadowlands')] reflections of the Caribbean islands, given to them by the wraiths known as Les Invisibles."
@@ -1031,7 +1031,7 @@
  umbra_realm_pod_realm_labyrinth: "Labyrinth"
  umbra_realm_pod_realm_labyrinth_desc: "The Labyrinth has relatively little structure, and no map could make sense of it; what landmarks do exist are prone to movement."
 
- pod_realm_labyrinth_effect_desc: "Unlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to the Labyrinth so it might return as a [GetModifier('doomslayer_modifier').GetNameWithTooltip].\nIf you are a wraith, gain [GetModifier('doomslayer_modifier').GetNameWithTooltip] modifier. (as an [umbra_expedition|E])"
+ pod_realm_labyrinth_effect_desc: "Unlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to the Labyrinth so it might return as a [GetModifier('doomslayer_modifier').GetNameWithTooltip].\nIf you are a wraith, gain [GetModifier('doomslayer_modifier').GetNameWithTooltip] modifier. (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])"
  
  umbra_realm_well_of_the_void: "Well of the Void"
  umbra_realm_well_of_the_void_desc: "The Well of the Void is the physical manifestation of [UmbraGlossary('oblivion')], located at the center and bottom of the [UmbraGlossary('pod_realm_labyrinth')]."
@@ -1187,7 +1187,7 @@
 
  umbra_realm_pangaea: "Pangaea"
  umbra_realm_pangaea_desc: "Pangaea is a reflection of primal Earth, showing the world as it was before civilization, human history, and even the Impergium."
- pangaea_effect_desc: "Gain dinosaurs as an [umbra_expedition|E], which allows recruiting dinosaurs as [men_at_arms|E]\nGain [GetModifier('paleontologist_modifier').GetNameWithTooltip] modifier (as an [umbra_expedition|E])\n$UMBRA_RECRUIT_BYGONE$"
+ pangaea_effect_desc: "Gain dinosaurs as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E], which allows recruiting dinosaurs as [men_at_arms|E]\nGain [GetModifier('paleontologist_modifier').GetNameWithTooltip] modifier (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])\n$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_scar: "Scar"
  umbra_realm_scar_desc: "Scar is one of the Near Realms of the [umbra|E]. It is a manifestation of the industrial revolution corrupted into a soul grinding oppression under a rusted prosperity ideal."
@@ -1203,7 +1203,7 @@
 
  umbra_realm_umi: "Umi"
  umbra_realm_umi_desc: "One of the mightiest Umbral realms of the Middle Kingdom, the domain of Umi claims the entire Pacific as its purview, though certain Polynesian and Indonesian spirit realms beg to differ."
- umi_effect_desc: ""
+ umi_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_wolfhome: "Wolfhome"
  umbra_realm_wolfhome_desc: "Wolfhome is one of the Near Realms, located in Earth's Near Umbra. It is frequented by Garou. This realm is a vast expanse of pristine wilderness. Answers to primal mysteries are hidden here."
@@ -1217,79 +1217,79 @@
  umbra_realm_court_of_eshtarra_desc: "$umbra_realm_eshtarra_desc$"
  umbra_realm_eshtarra: "Eshtarra"
  umbra_realm_eshtarra_desc: "Eshtarra, the Songteller, is the Planetary Incarna of Earth according to Garou Astrology."
- court_of_eshtarra_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
+ court_of_eshtarra_effect_desc: "Can gain the corresponding planetary gift perks as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_sokhta: "Court of Sokhta"
  umbra_realm_court_of_sokhta_desc: "$umbra_realm_sokhta_desc$"
  umbra_realm_sokhta: "Sokhta"
  umbra_realm_sokhta_desc: "Sokhta is an aspect of Luna, the Celestine who is the patron of the Garou and many other Changing Breeds, and her court is home to many Lunes and other spirits sympathetic to the Garou Nation."
- court_of_sokhta_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
+ court_of_sokhta_effect_desc: "Can gain the corresponding planetary gift perks as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_katanka_sonnak: "Court of Katanka-Sonnak"
  umbra_realm_court_of_katanka_sonnak_desc: "$umbra_realm_katanka_sonnak_desc$"
  umbra_realm_katanka_sonnak: "Katanka-Sonnak"
  umbra_realm_katanka_sonnak_desc: "Katanka-Sonnak, the Wind Rider, is the Planetary Incarna of the Sun in Garou Astrology."
- court_of_katanka_sonnak_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
+ court_of_katanka_sonnak_effect_desc: "Can gain the corresponding planetary gift perks as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_mitanu: "Court of Mitanu"
  umbra_realm_court_of_mitanu_desc: "$umbra_realm_mitanu_desc$"
  umbra_realm_mitanu: "Mitanu"
  umbra_realm_mitanu_desc: "Mitanu, the Clever Rogue, is known in Garou astrology as the Planetary Incarna of Mercury. He is both a trickster and a lover of comedy."
- court_of_mitanu_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
+ court_of_mitanu_effect_desc: "Can gain the corresponding planetary gift perks as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_hakahe: "Court of Hakahe"
  umbra_realm_court_of_hakahe_desc: "$umbra_realm_hakahe_desc$"
  umbra_realm_hakahe: "Hakahe"
  umbra_realm_hakahe_desc: "Hakahe is the Incarna of Vulcan, the planet closer to the sun than Mercury, and is credited with forging the souls of newborn Garou."
- court_of_hakahe_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
+ court_of_hakahe_effect_desc: "Can gain the corresponding planetary gift perks as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_tambiyah: "Court of Tambiyah"
  umbra_realm_court_of_tambiyah_desc: "$umbra_realm_tambiyah_desc$"
  umbra_realm_tambiyah: "Tambiyah"
  umbra_realm_tambiyah_desc: "Tambiyah, the Veiled Mother, is the Planetary Incarna of the Venus in Garou Astrology."
- court_of_tambiyah_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
+ court_of_tambiyah_effect_desc: "Can gain the corresponding planetary gift perks as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_nerigal: "Court of Nerigal"
  umbra_realm_court_of_nerigal_desc: "$umbra_realm_nerigal_desc$"
  umbra_realm_nerigal: "Nerigal"
  umbra_realm_nerigal_desc: "Nerigal, the Ice Warrior, is the Planetary Incarna of Mars according to Garou Astrology."
- court_of_nerigal_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
+ court_of_nerigal_effect_desc: "Can gain the corresponding planetary gift perks as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_rorg: "Court of Rorg"
  umbra_realm_court_of_rorg_desc: "$umbra_realm_rorg_desc$"
  umbra_realm_rorg: "Rorg"
  umbra_realm_rorg_desc: "Rorg, the Many-Taloned Hunter, is the Incarna of Turog, a destroyed planet that forms the Asteroid Belt, according to Garou astrology."
- court_of_rorg_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
+ court_of_rorg_effect_desc: "Can gain the corresponding planetary gift perks as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_zarok: "Court of Zarok"
  umbra_realm_court_of_zarok_desc: "$umbra_realm_zarok_desc$"
  umbra_realm_zarok: "Zarok"
  umbra_realm_zarok_desc: "Zarok, the Crowned Ruler, is the Planetary Incarna of the Jupiter in Garou Astrology."
- court_of_zarok_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
+ court_of_zarok_effect_desc: "Can gain the corresponding planetary gift perks as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_lu_bat: "Court of Lu-Bat"
  umbra_realm_court_of_lu_bat_desc: "$umbra_realm_lu_bat_desc$"
  umbra_realm_lu_bat: "Lu-Bat"
  umbra_realm_lu_bat_desc: "Lu-Bat, the Peaceful Counselor, is the Planetary Incarna of the Saturn in Garou Astrology."
- court_of_lu_bat_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
+ court_of_lu_bat_effect_desc: "Can gain the corresponding planetary gift perks as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_ruatma: "Court of Ruatma"
  umbra_realm_court_of_ruatma_desc: "$umbra_realm_ruatma_desc$"
  umbra_realm_ruatma: "Ruatma"
  umbra_realm_ruatma_desc: "Ruatma, the Shadowed One, is the Incarna of Uranus."
- court_of_ruatma_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
+ court_of_ruatma_effect_desc: "Can gain the corresponding planetary gift perks as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_shantar: "Court of Shantar"
  umbra_realm_court_of_shantar_desc: "$umbra_realm_shantar_desc$"
  umbra_realm_shantar: "Shantar"
  umbra_realm_shantar_desc: "Shantar, the Loom Maker, is the Incarna of Neptune."
- court_of_shantar_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
+ court_of_shantar_effect_desc: "Can gain the corresponding planetary gift perks as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_meros: "Court of Meros"
  umbra_realm_court_of_meros_desc: "$umbra_realm_meros_desc$"
  umbra_realm_meros: "Meros"
  umbra_realm_meros_desc: "Meros, the Wanderer, is the Incarna of Pluto."
- court_of_meros_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
+ court_of_meros_effect_desc: "Can gain the corresponding planetary gift perks as an [Concept('umbra_expedition', 'Путешествие в Умбру')|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_weaver_reaches: "Weaver Reaches"
  umbra_realm_weaver_reaches_desc: "The Weaver Reaches are strands of calcified reality, similar to an astronomer’s computerized map. The web’s intersecting nodes lock cold stars and frozen planets to an unnatural symmetry. No signs of life exist. Colossal Weaver spirits such as ‘star spiders’ patrol and maintain the web and ensure everything remains in its ordained place."
@@ -1587,16 +1587,16 @@
 
  umbra_realm_dark_kingdom_of_hades: "Dark Kingdom of Hades"
  umbra_realm_dark_kingdom_of_hades_desc: "Hades, is the [dark_kingdom|E] of the Undying in the [UmbraGlossaryLocalized('shadowlands','Underworld')]. It's not populated by wraiths, but by Immortals who broke away from their Ancient Egyptian lineage and who died and found themselves back in the [UmbraGlossary('shadowlands')]."
- dark_kingdom_of_hades_effect_desc: "Stationed Amenti [GetTrait('mummy').GetName( GetPlayer )] gain #P 1#! to #P 10#! Sekhem every #V 3#! months. (as an [umbra_expedition|E])\n"
+ dark_kingdom_of_hades_effect_desc: "Stationed Amenti [GetTrait('mummy').GetName( GetPlayer )] gain #P 1#! to #P 10#! Sekhem every #V 3#! months. (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])\n"
  
  umbra_realm_dark_kingdom_of_hellheim: "Dark Kingdom of Hellheim"
  umbra_realm_dark_kingdom_of_hellheim_desc: "Hellheim, is the [dark_kingdom|E] of the Undying in the [UmbraGlossaryLocalized('shadowlands','Underworld')]. It's not populated by wraiths, but by Immortals who broke away from their Ancient Egyptian lineage and who died and found themselves back in the [UmbraGlossary('shadowlands')]."
- dark_kingdom_of_hellheim_effect_desc: "Stationed Amenti [GetTrait('mummy').GetName( GetPlayer )] gain #P 1#! to #P 10#! Sekhem every #V 3#! months. (as an [umbra_expedition|E])\n"
+ dark_kingdom_of_hellheim_effect_desc: "Stationed Amenti [GetTrait('mummy').GetName( GetPlayer )] gain #P 1#! to #P 10#! Sekhem every #V 3#! months. (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])\n"
 
  umbra_realm_dark_kingdom_of_yomi: "Dark Kingdom of Yomi"
  umbra_realm_dark_kingdom_of_yomi_desc: "Yomi, is the [dark_kingdom|E] of the Undying in the [UmbraGlossaryLocalized('shadowlands','Underworld')]. It's not populated by wraiths, but by Immortals who broke away from their Ancient Egyptian lineage and who died and found themselves back in the [UmbraGlossary('shadowlands')]."
- dark_kingdom_of_yomi_effect_desc: "Stationed Amenti [GetTrait('mummy').GetName( GetPlayer )] gain #P 1#! to #P 10#! Sekhem every #V 3#! months. (as an [umbra_expedition|E])\n"
+ dark_kingdom_of_yomi_effect_desc: "Stationed Amenti [GetTrait('mummy').GetName( GetPlayer )] gain #P 1#! to #P 10#! Sekhem every #V 3#! months. (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])\n"
 
  umbra_realm_dark_kingdom_of_hell: "Dark Kingdom of Hell"
  umbra_realm_dark_kingdom_of_hell_desc: "Hell, is the [dark_kingdom|E] of the Undying in the [UmbraGlossaryLocalized('shadowlands','Underworld')]. It's not populated by wraiths, but by Immortals who broke away from their Ancient Egyptian lineage and who died and found themselves back in the [UmbraGlossary('shadowlands')]."
- dark_kingdom_of_hell_effect_desc: "Stationed Amenti [GetTrait('mummy').GetName( GetPlayer )] gain #P 1#! to #P 10#! Sekhem every #V 3#! months. (as an [umbra_expedition|E])\n"
+ dark_kingdom_of_hell_effect_desc: "Stationed Amenti [GetTrait('mummy').GetName( GetPlayer )] gain #P 1#! to #P 10#! Sekhem every #V 3#! months. (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])\n"
