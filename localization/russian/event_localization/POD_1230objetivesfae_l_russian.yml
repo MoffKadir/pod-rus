@@ -182,22 +182,22 @@
  underbridge_king_modifier: "Король Подземного моста"
 
  underbridge_empire_objective_decision: "[Select_CString(ROOT.Char.IsFemale, 'Верховная королева', 'Верховный король' )] Подземного моста"
- underbridge_empire_objective_decision_desc: "When the rivers through out Eastern Europe fall under your control, the frightening space beneath so many bridges will be your great dominion. None may move over the roaring waters without your consent. All will pay their due to you, while you can easily move creatures of pure nightmare into the world as easily as a pleasant stroll."
+ underbridge_empire_objective_decision_desc: "Когда реки Восточной Европы перейдут под ваш контроль, пугающее пространство под множеством мостов станет вашим великим владением. Никто не сможет перебраться через ревущие воды без вашего согласия. Все будут платить вам дань, в то время как вы сможете легко перемещать в этот мир порождения чистого кошмара так же легко, как совершать приятную прогулку."
  underbridge_empire_objective_decision_tooltip: "Вы станете [Select_CString(ROOT.Char.IsFemale, 'верховной королевой', 'верховным королём' )] Подземного моста."
  underbridge_empire_objective_decision_confirm: "Никто не пройдёт без моего дозволения."
- underbridge_empire_objective_decision_custom: "Every riverside county taken using the Bridge War [Concept('casus_belli', 'казус белли')|E] will become [de_jure|E] [Concept('counties', 'графства')|E] of [GetTitleByKey('e_underbridge').GetNameNoTier]"
- underbridge_empire_objective_decision_riverside_county_contol_tt: "You [Concept('completely_control', 'полностью контролируете')|E] every riverside [Concept('counties', 'графства')|E] of [GetTitleByKey('e_shadow_curtain').GetNameNoTier] ([SCOPE.ScriptValue('underbridge_empire_controlled_riverside_county_value')|0]/[SCOPE.ScriptValue('underbridge_empire_total_riverside_county_value')|0])"
+ underbridge_empire_objective_decision_custom: "Все приречные графства, захваченные с помощью [Concept('casus_belli', 'казус белли')|E] «Война за мост» станут [Concept('de_jure', 'де-юре')|E] [Concept('counties', 'графствами')|E] державы [GetTitleByKey('e_underbridge').GetNameNoTier]"
+ underbridge_empire_objective_decision_riverside_county_contol_tt: "Вы [Concept('completely_control', 'полностью контролируете')|E] все приречные [Concept('counties', 'графства')|E] державы [GetTitleByKey('e_shadow_curtain').GetNameNoTier] ([SCOPE.ScriptValue('underbridge_empire_controlled_riverside_county_value')|0]/[SCOPE.ScriptValue('underbridge_empire_total_riverside_county_value')|0])"
  underbridge_empire_objective_decision_artifact_cauldron_of_fear: "[GetPODArtifact('cauldron_of_fear_link').Artifact.GetName] принадлежит вам"
  underbridge_emperor_modifier: "Верховный король Подземного моста"
 
- pod1230objectives_fae.150.t: "King of Underbridge"
- pod1230objectives_fae.150.desc: "I have secured more and more bridges, and  expanded my realm of Underbridge to a powerful kingdom. I will have my due. Pity the poor traveler who can not pay my tolls. Uneelie fae and terrible monsters flock to my banners and the dark current."
- pod1230objectives_fae.150.a: "None shall cross without my permission"
- 
- pod1230objectives_fae.151.t: "High King of Underbridge"
- pod1230objectives_fae.151.desc: "With the rivers through out Eastern Europe having fallen under your control, the frightening space beneath so many bridges will be your greater dominion. None may move over the roaring waters without your consent. All will pay their due to you, while you can easily move creatures of pure nightmare into the world as easily as a pleasant stroll."
- pod1230objectives_fae.151.a: "None shall cross without my permission"
- 
+ pod1230objectives_fae.150.t: "[Select_CString(ROOT.Char.IsFemale, 'Королева', 'Король' )] Подземного моста"
+ pod1230objectives_fae.150.desc: "Я [Select_CString(ROOT.Char.IsFemale, 'захватила', 'захватил' )] всё больше и больше мостов и [Select_CString(ROOT.Char.IsFemale, 'превратила', 'превратил' )] своё королевство Подземного моста в могущественную державу. Я получу свою плату. Горе бедному путнику, который не сможет заплатить за проезд. Неблагие феи и ужасные чудовища стекаются под мои знамёна и к тёмному течению."
+ pod1230objectives_fae.150.a: "Никто не пройдёт без моего дозволения."
+
+ pod1230objectives_fae.151.t: "[Select_CString(ROOT.Char.IsFemale, 'Верховная королева', 'Верховный король' )] Подземного моста"
+ pod1230objectives_fae.151.desc: "После того как реки Восточной Европы перешли под ваш контроль, пугающее пространство под множеством мостов станет вашим владением. Никто не сможет перебраться через ревущие воды без вашего согласия. Все будут платить вам дань, в то время как вы сможете перемещать в этот мир порождения чистого кошмара так же легко, как на приятную прогулку."
+ pod1230objectives_fae.151.a: "Никто не пройдёт без моего дозволения."
+
  sidhe_house_dominance_beaumayn_objective_decision: "The Brother's War"
  sidhe_house_dominance_beaumayn_objective_decision_desc: "House Beaumayn has been divided by a bitter clandestine feud by the brothers [GetScriptedCharacterByHistoryID('POD_fae_character_53').GetFirstName] and [GetScriptedCharacterByHistoryID('POD_fae_character_54').GetFirstName]. All members with the house are obsessed with the fatal final prophecy of Duke [GetScriptedCharacterByHistoryID('POD_fae_character_52').GetFirstName]: does the Road of Iron promise salvation or destruction? The House will determine its path through a secret war."
  sidhe_house_dominance_beaumayn_objective_decision_tooltip: "You will defeat the other side's argument — permanently."
@@ -406,7 +406,7 @@
  rhineland_duchy_objective_decision_tooltip: "Secure the ancient capital of Old Burgundy"
  rhineland_duchy_objective_decision_confirm: "Reclaim Borbetomagus"
 # rhineland_duchy_objective_borbetomagus: "You [Concept('completely_control', 'полностью контролируете')|E] the ancient capital of Borbetomagus, now called [GetTitleByKey('c_worms').GetNameNoTier], as well as [GetTitleByKey('c_speyer').GetNameNoTier] and [GetTitleByKey('c_kaiserslautern').GetNameNoTier]"
- rhineland_duchy_objective_rhineland_dejure: "[GetTitleByKey('d_rhineland').GetName] becomes [de_jure|E] liege of [GetTitleByKey('c_worms').GetNameNoTier], [GetTitleByKey('c_speyer').GetNameNoTier] and [GetTitleByKey('c_kaiserslautern').GetNameNoTier]"
+ rhineland_duchy_objective_rhineland_dejure: "[GetTitleByKey('d_rhineland').GetName] becomes [Concept('de_jure', 'де-юре')|E] liege of [GetTitleByKey('c_worms').GetNameNoTier], [GetTitleByKey('c_speyer').GetNameNoTier] and [GetTitleByKey('c_kaiserslautern').GetNameNoTier]"
  rhineland_duchy_objective_rhineland_county_claims: "Gain [unpressed_claims|E] upon the Oberrhein ([GetTitleByKey('d_alsace').GetName] and [Concept('counties', 'графства')|E] of  [GetTitleByKey('c_breisgau').GetNameNoTier], [GetTitleByKey('c_sundgau').GetNameNoTier], [GetTitleByKey('c_colmar').GetNameNoTier], [GetTitleByKey('c_strassburg').GetNameNoTier], [GetTitleByKey('c_baden').GetNameNoTier], [GetTitleByKey('c_erbach').GetNameNoTier], [GetTitleByKey('c_frankfurt').GetNameNoTier] and [GetTitleByKey('c_mainz').GetNameNoTier]) and some of the Mittelrhein ([GetTitleByKey('c_koblenz').GetNameNoTier] and [GetTitleByKey('c_sayn').GetNameNoTier])."
  
  pod1230objectives_fae.1100.t: "Borbetomagus Reclaimed!"
@@ -433,7 +433,7 @@
  rhineland_empire_objective_decision_confirm: "All of the Rhine!"
  rhineland_empire_objective_dead_stiffs: "Prominent vampires with claims upon the Rhineland must be dead or in [torpor|E] — [GetScriptedCharacterByHistoryID('505050').GetFirstName], [GetScriptedCharacterByHistoryID('505096').GetFirstName], [GetScriptedCharacterByHistoryID('505086').GetFirstName] and [GetScriptedCharacterByHistoryID('505121').GetFirstName]"
 # rhineland_empire_objective_duchies: "You [Concept('completely_control', 'полностью контролируете')|E] the [GetTitleByKey('k_rhineland').GetName] and all the [duchies|E] of the Rhine river — [GetTitleByKey('d_currezia').GetNameNoTier], [GetTitleByKey('d_augsburg').GetNameNoTier], [GetTitleByKey('d_swabia').GetNameNoTier], [GetTitleByKey('d_alsace').GetNameNoTier], [GetTitleByKey('d_west_franconia').GetNameNoTier], [GetTitleByKey('d_lower_lorraine').GetNameNoTier], [GetTitleByKey('d_julich').GetNameNoTier], [GetTitleByKey('d_gelre').GetNameNoTier], [GetTitleByKey('d_brabant').GetNameNoTier] and [GetTitleByKey('d_holland').GetNameNoTier]."
- rhineland_empire_objective_dejure_done: "[GetTitleByKey('k_rhineland').GetName] becomes [de_jure|E] liege of the [duchies|e] of the Rhine river — [GetTitleByKey('d_currezia').GetNameNoTier], [GetTitleByKey('d_augsburg').GetNameNoTier], [GetTitleByKey('d_swabia').GetNameNoTier], [GetTitleByKey('d_alsace').GetNameNoTier], [GetTitleByKey('d_west_franconia').GetNameNoTier], [GetTitleByKey('d_lower_lorraine').GetNameNoTier], [GetTitleByKey('d_julich').GetNameNoTier], [GetTitleByKey('d_gelre').GetNameNoTier], [GetTitleByKey('d_brabant').GetNameNoTier] and [GetTitleByKey('d_holland').GetNameNoTier]."
+ rhineland_empire_objective_dejure_done: "[GetTitleByKey('k_rhineland').GetName] becomes [Concept('de_jure', 'де-юре')|E] liege of the [duchies|e] of the Rhine river — [GetTitleByKey('d_currezia').GetNameNoTier], [GetTitleByKey('d_augsburg').GetNameNoTier], [GetTitleByKey('d_swabia').GetNameNoTier], [GetTitleByKey('d_alsace').GetNameNoTier], [GetTitleByKey('d_west_franconia').GetNameNoTier], [GetTitleByKey('d_lower_lorraine').GetNameNoTier], [GetTitleByKey('d_julich').GetNameNoTier], [GetTitleByKey('d_gelre').GetNameNoTier], [GetTitleByKey('d_brabant').GetNameNoTier] and [GetTitleByKey('d_holland').GetNameNoTier]."
  
  pod1230objectives_fae.1300.t: "Empire of the Rhine!"
  pod1230objectives_fae.1300.desc: "Having secured every Duchy along the Rhine and with the Rhinegold securely in your treasury, none may contest your right to rule the Rhine."
