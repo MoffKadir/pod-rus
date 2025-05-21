@@ -151,7 +151,7 @@
  AIRITECHS_DAUGHTERS_PERK_EFFECT: "Позволяет заставить выбранного смертного принять временную форму [GetModifier('POD_werewolf_form_crinos_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
  FOG_ON_THE_MOOR_PERK_EFFECT: "Позволяет принимать форму [GetModifier( 'POD_shapeshift_form_mist_modifier' ).GetNameWithTooltip|L]."
  FORMS_OF_CERNUNNOS_PERK_EFFECT: "Позволяет принимать различные звериные формы."
- SLEEP_OF_THE_HERO_PERK_EFFECT: "You will gain [GetTrait('torpor').GetName( GetPlayer )] and be deposed if you die from unnatural causes.\n#F This powerful Gift has been invoked many times in Fianna history. When a great hero dies in battle, the Fianna take the body and dedicate it to the land. This Gift forms a bond between the Fianna and the land and the spirit of the hero. The champion’s life returns, but he remains in a deep sleep, not to awaken until the Apocalypse. The target must be placed somewhere in the earth, such as a cave, or within a burial mound. During this sleep, the hero is unaffected by the elements and does not need to breathe.#!"
+ SLEEP_OF_THE_HERO_PERK_EFFECT: "Вы получите свойство «[GetTrait('torpor').GetName( GetPlayer )]» и будете свергнуты, если умрёте из-за неестественных причин.\n#F This powerful Gift has been invoked many times in Fianna history. When a great hero dies in battle, the Fianna take the body and dedicate it to the land. This Gift forms a bond between the Fianna and the land and the spirit of the hero. The champion’s life returns, but he remains in a deep sleep, not to awaken until the Apocalypse. The target must be placed somewhere in the earth, such as a cave, or within a burial mound. During this sleep, the hero is unaffected by the elements and does not need to breathe.#!"
  SLEEP_OF_THE_HERO_REQUIREMENT: "@warning_icon!#X You need to finish a quest from Fianna ancestor spirits (station an explorer in any realm of [Concept('umbra', 'Умбра')|E] to find a clue about the location and start an [Concept('umbra_expedition', 'путешествие в Умбру')|E] to reach them and then receive a quest) to unlock this perk.#!"
 
  safe_haven_perk_name: "Safe Haven"
@@ -280,9 +280,9 @@
  white_fire_perk_name: "White Fire"
  howl_of_healing_perk_name: "Howl of Healing"
 
- HAUNTING_HOWL_PERK_EFFECT: "Give [GetModifier('haunting_howl_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
+ HAUNTING_HOWL_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('haunting_howl_perk_modifier').GetNameWithTooltip]."
  PAIN_STRENGTH_PERK_EFFECT: "Gain [GetModifier('pain_strength_perk_modifier').GetNameWithTooltip] modifier when wounded."
  BLOODING_FURY_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to damage yourself to gain maximum Rage."
- MADDENING_HOWL_PERK_EFFECT: "Give [GetModifier('maddening_howl_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
+ MADDENING_HOWL_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('maddening_howl_perk_modifier').GetNameWithTooltip]."
  WHITE_FIRE_PERK_EFFECT: "Wound enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
  HOWL_OF_HEALING_PERK_EFFECT: "Heal the wounds of ally [knights|E] when acting as a [commander|E] during the [combat_phase|E] or to yourself during [single_combat_duel_plural|E]."
