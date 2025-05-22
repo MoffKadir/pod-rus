@@ -32,6 +32,8 @@
  cult_government_realm: "Культ мумий"
  cult_government_vassals_label: "[Concept('obligations','Обязательства')|E] культа мумий  определяются [Concept('piety_level', 'уровнем набожности')|E] [Concept('liege', 'сюзерена')|E]"
  cult_government_desc: "С древнейших времен Возрожденные командовали преданными группами смертных, которые служили им. Даже во время их долгого сна культы продолжают свою работу, передавая тайны и обязанности следующему поколению и присматривая за гробницами своих хозяев."
+ cult_government_filter_option: "$cult_government$"
+ cult_government_filter_option_desc: "Только персонажи с #L  [GetGovernment( 'cult_government' ).GetAdjective|l]им#! [Concept('government','правительством')|E]"
 
  cell_government: "Ячейка охотников"
  cell_government_with_icon: "$cell_government$" # TODO RTP
@@ -41,8 +43,6 @@
  cell_government_desc: "Ячейка охотников, уничтожающих сверхъестественное влияние, где бы они его ни обнаружили."
  cell_government_filter_option: "$cell_government$"
  cell_government_filter_option_desc: "Только персонажи с #L  [GetGovernment( 'cell_government' ).GetAdjective|l]им#! [Concept('government','правительством')|E]"
- cult_government_filter_option: "$cult_government$"
- cult_government_filter_option_desc: "Только персонажи с #L  [GetGovernment( 'cult_government' ).GetAdjective|l]им#! [Concept('government','правительством')|E]"
 
  legacy_rights: "#BLOODRED Первая традиция: Договор#!"
  legacy_rights_none: "Религиозная беззащитность"

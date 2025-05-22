@@ -311,9 +311,9 @@
  setting_pod_conqueror_ai_disabled: "Отключено"
  setting_pod_conqueror_ai_disabled_desc: "Персонажи ИИ будут вести себя как обычно и принимать решения в соответствии со своей личностью."
  setting_pod_conqueror_ai_enabled: "#high ИИ завоевателей#!"
- setting_pod_conqueror_ai_enabled_desc: "Все неигровые персонажи получат ИИ завоевателя.\n\nЭто не даст им свойство «[GetTrait('conqueror').GetName( GetNullCharacter )]» и не заставляет их чаще объявлять войны. Однако они будут тратить меньше денег на несерьёзные вещи и вкладывать в войну столько, сколько смогут."
+ setting_pod_conqueror_ai_enabled_desc: "Все #bold независимые#! неигровые персонажи получат ИИ завоевателя.\n\nЭто не даст им свойство «[GetTrait('conqueror').GetName( GetNullCharacter )]» и не заставляет их чаще объявлять войны. Однако они будут тратить меньше денег на несерьёзные вещи, планировать свой бюджет, готовясь к войне, и затевать убийства своих соседей."
  setting_pod_conqueror_ai_bloodthirsty: "#high Кровожадный ИИ#!"
- setting_pod_conqueror_ai_bloodthirsty_desc: "Все неигровые персонажи получают ИИ завоевателя. Кроме того, они получают скрытый модификатор, который значительно увеличивает их стремление к войне."
+ setting_pod_conqueror_ai_bloodthirsty_desc: "Все #bold независимые#! неигровые персонажи получают ИИ завоевателя. Кроме того, они автоматически объявляют войны, как это сделал бы персонаж со свойством «[GetTrait('conqueror').GetName( GetNullCharacter )]»."
 
  rule_pod_sorcery_6th_perk_requirements: "$POD_gamerule$ Шестое достоинство в чародействе"
  setting_pod_sorcery_6th_perk_requirements_always_unlocked: "#high Всегда открыто#!"
