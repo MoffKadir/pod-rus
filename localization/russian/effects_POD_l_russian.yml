@@ -1080,30 +1080,34 @@
 
  # Visceratika #
 
- SKINOFCHAMELEON_PERK_EFFECT: "[Concept('character_interaction', 'взаимодействие персонажа')|E], что позволяет сменить форму, слившись с окружением:, добавляет бонусы к проискам и защите от них."
- SCRYTHEHEARTHSTONE_PERK_EFFECT: "Вы знаете кто и где находится внутри здания, что дает вам бонусную защиту от враждебных происков."
- BONDWITHTHEMOUNTAIN_PERK_EFFECT: "Позволяет частично сливаться с камнем или цементом, что дает вам еще больше защиты от происков."
- ARMOROFTERRA_PERK_EFFECT: "Укрепите вашу кожу, чтобы она гораздо легче впитывала повреждения. Вдобавок улучшается защита от происков, а так же увеличивается доблесть во время боя."
- FLOWWITHTHEMOUNTAIN_PERK_EFFECT: "Проходите сквозь камень или цемент. Позволяет легко покидать тюрьму."
- DARKSTATUE_PERK_EFFECT: "Солнечный свет физически не воздействует на вас до тех пор, пока вы не двигаетесь."
- ROCKHEART_PERK_EFFECT: "Ваши внутренности кальцифицируются, уменьшая урон от пробивания брони и делая протыкание практически невозможным. Вас невозможно проткнуть."
- CRAWLINGCHAMBER_PERK_EFFECT: "Вы можете оживлять, наделять ограниченным сознанием и управлять (в определенной степени) камнем объемом 10 кубических футов. Дает бонус к укреплению."
-  # Temporis # 
- TIME_SENSE_PERK_EFFECT: "#F Have a perfect internal clock#!"
- INTERNAL_RECURSION_PERK_EFFECT: "Наложите [GetModifier('internal_recursion_perk_modifier').GetNameWithTooltip] модификатор на вражеских рыцарей во время битвы как командир или на врага в дуэли."
- RAMBLE_ON_PERK_EFFECT: "Наложите [GetModifier('ramble_on_perk_modifier').GetNameWithTooltip] модификатор на вражеских рыцарей во время битвы как командир или на врага в дуэли."
- LAPSE_PERK_EFFECT: "Наложите на вражеских командиров [GetModifier('lapse_perk_modifier').GetNameWithTooltip] модификатор во время битвы как командир."
- COWALKER_PERK_EFFECT: "#F Stop time for a moment in order to appear in two places at once#!"
- SUBJECTIVE_SUSPENSION_PERK_EFFECT: "Наложите на вражеских командиров [GetModifier('subjective_suspension_perk_modifier').GetNameWithTooltip] модификатор во время битвы как командир."
- CLOTHOS_GIFT_PERK_EFFECT: "#F Accelerate your time frame in order to take several actions a round#!"
- FROZEN_OBJECT_PERK_EFFECT: "#F Stop time for an inanimate object#!"
- TEMPORIS_INSIGHT_PERK_EFFECT: "#F Step forward in time to see how your next actions are going to turn out#!"
- KISS_OF_LACHESIS_PERK_EFFECT: "Новое [Concept('character_interaction', 'взаимодействие персонажа')|E]: теперь вы можете менять физический возраст цели(не влияет на фертильность)."
- HALL_OF_HADES_COURT_PERK_EFFECT: "#F Alter the flow of time in an area, making hours pass as minutes or minutes as hours#!"
- CLIOS_KISS_PERK_EFFECT: "Новое [Concept('character_interaction', 'взаимодействие персонажа')|E]: теперь вы можете возвращать титул к его предыдущему врадельцу."
- TEMPORAL_UNDERSTANDING_PERK_EFFECT: "#F Step forward in time to see the long term consequences of your actions#!"
- SUMMON_HISTORY_PERK_EFFECT: "Получите доступ к случайным, ушедшим в прошлое [men_at_arms|E] и эху исторического артифакта каждые of historical artifact every #V 3#! года."
-  # Dementation # 
+ SKINOFCHAMELEON_PERK_EFFECT: "Позволяет сменить форму через опции [Concept('shapeshift', 'смены облика')|E], слившись с окружением, даёт бонусы к проискам и защите от них."
+ SCRYTHEHEARTHSTONE_PERK_EFFECT: "#flavor Вы знаете, где в строении находятся люди.#!"
+ BONDWITHTHEMOUNTAIN_PERK_EFFECT: "#flavor Частичное слияние с камнем.#!"
+ ARMOROFTERRA_PERK_EFFECT: "#flavor Кожа становится жесткой и легче переносит повреждения.#!"
+ FLOWWITHTHEMOUNTAIN_PERK_EFFECT: "Повышает шанс успеха [Concept('decision', 'решения')|E] «Бежать из темницы».\n#flavor Пройти сквозь камень.#!"
+ DARKSTATUE_PERK_EFFECT: "Неуязвимость к убийству огнём и солнцем.\n#flavor Солнечный свет не оказывает на вас физического воздействия, пока вы не двигаетесь.#!"
+ ROCKHEART_PERK_EFFECT: "Теперь вы неуязвимы к пронзанию.\n#flavor Ваши внутренности кальцинируются, уменьшая урон от пронзания и делая практически невозможным нанесение ударов.#!"
+ CRAWLINGCHAMBER_PERK_EFFECT: "#flavor Вы можете одушевлять, наделять ограниченной разумностью и повелевать (в определенной степени) камнем объемом 10 кубических футов.#!"
+
+ # Temporis #
+
+ TIME_SENSE_PERK_EFFECT: "#F У вас идеальные внутренние часы.#!"
+ INTERNAL_RECURSION_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('internal_recursion_perk_modifier').GetNameWithTooltip].\n#F Заставьте цель повторять набор действий снова и снова.#!"
+ RAMBLE_ON_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('ramble_on_perk_modifier').GetNameWithTooltip].\n#F Заставьте цель неосознанно повторить простое действие.#!"
+ LAPSE_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('lapse_perk_modifier').GetNameWithTooltip].\n#F Заставьте цель двигаться медленнее во времени.#!"
+ COWALKER_PERK_EFFECT: "#F На мгновение остановить время, чтобы появиться в двух местах одновременно.#!"
+ SUBJECTIVE_SUSPENSION_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('subjective_suspension_perk_modifier').GetNameWithTooltip].\n#F Временно приостановить объект вне времени.#!"
+ CLOTHOS_GIFT_PERK_EFFECT: "#F Ускорьте свой временной интервал, чтобы совершать несколько действий за раунд.#!"
+ FROZEN_OBJECT_PERK_EFFECT: "#F Остановить время для неодушевленного предмета.#!"
+ TEMPORIS_INSIGHT_PERK_EFFECT: "#F Сделайте шаг вперед во времени, чтобы увидеть, чем обернутся ваши дальнейшие действия.#!"
+ KISS_OF_LACHESIS_PERK_EFFECT: "Вы можете менять физический возраст цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Изменение официального возраста цели.#!"
+ HALL_OF_HADES_COURT_PERK_EFFECT: "#F Изменяйте течение времени в области, заставляя часы проходить как минуты или минуты как часы.#!"
+ CLIOS_KISS_PERK_EFFECT: "Вы можете вернуть выбранный [Concept('title', 'титул')|E] его предыдущему владельцу через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Привнести что-то или кого-то из прошлого в настоящее.#!"
+ TEMPORAL_UNDERSTANDING_PERK_EFFECT: "#F Шагните вперед во времени, чтобы увидеть долгосрочные последствия своих действий.#!"
+ SUMMON_HISTORY_PERK_EFFECT: "Даёт доступ к случайному отголоску исторического артефакта каждые #V 3#! года.\n#F Перенесите определенное время в настоящее.#!"
+
+ # Dementation #
+
  INCUBUS_PASSION_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] 'Помешательство', позволяет наложить негативный модификатор в зависимости от резонанса цели."
  PASSION_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] 'Помешательство', позволяет наложить [GetModifier('passion_perk_modifier').GetNameWithTooltip]."
  THE_HAUNTING_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] 'Помешательство', позволяет наложить [GetModifier('the_haunting_perk_modifier').GetNameWithTooltip]."
