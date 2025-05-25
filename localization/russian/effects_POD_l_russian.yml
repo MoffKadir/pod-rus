@@ -1059,25 +1059,27 @@
 
  # Serpentis #
 
- ENCHANTING_GAZE_PERK_EFFECT: "Эта сила делает вампира пресловутым пламенем для мотылька. Он приобретает соблазнительные, чарующие черты, такие как золотые глаза змеи или перламутровый блеск ее кожи. Вампир может парализовать одним взглядом, и смертные, находящиеся поблизости, подобно мотылькам, слетаются к свету глаз змеи"
+ ENCHANTING_GAZE_PERK_EFFECT: "#flavor Эта сила превращает вампира в пресловутое пламя для мотылька. Он приобретает манящие, чарующие черты, такие как золотые змеиные глаза или перламутровый блеск кожи. Он может парализовать одним взглядом, и смертные, оказавшиеся поблизости, чувствуют влечение к нему.#!"
  SERPENTS_FLESH_PERK_EFFECT: "Разблокирует способность «[serpents_flesh|E]»."
- TYPHONIC_MAW_PERK_EFFECT: "Челюсть вампира становится свирепой, податливой штукой, которую он может контролировать различными способами. Челюсть вытягивается к груди, клыки вырастают до размеров маленьких кинжалов, язык раздваивается на кончике и достигает метровой длины, а горло расширяется, чтобы проглотить все, что попадется ей в рот."
+ TYPHONIC_MAW_PERK_EFFECT: "Открывает движение в [Concept('single_combat_duel', 'поединке')|E].\n\n#flavor Челюсть вампира превращается в свирепую, податливую штуку, которой он может управлять самыми разными способами. Его челюсть расширяется до груди, клыки вырастают до размеров небольших кинжалов, язык на кончике становится вилкой и вытягивается на метр в длину, а горло расширяется, чтобы поглотить всё, что попадется под руку.#!"
  MASTER_OF_SNAKES_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('snakes').GetName]."
  SMOOTH_SCALES_PERK_EFFECT: "Улучшает способность «[serpents_flesh|E]»."
- FORM_OF_THE_SNAKE_PERK_EFFECT: "Позволяет трансформироваться в гигантскую и маленькую змею с помощью  [Concept('character_interaction', 'взаимодействия перснажа')|E]."
+ FORM_OF_THE_SNAKE_PERK_EFFECT: "Позволяет трансформироваться в гигантскую и маленькую змею через [Concept('character_interaction', 'взаимодействие персонажа')|E] смены облика."
  TYPHONIC_AVATAR_PERK_EFFECT: "Разблокирует способность «[typhonic_avatar|E]»."
- SERPENT_EYES_PERK_EFFECT: "Разблокирует силу [serpent_eyes|E]."
- MOTHER_OF_MONSTERS_PERK_EFFECT: "Позволяет нанимать [GetMaA('serpentis_monsters').GetName] как [men_at_arms|E]."
- FORM_OF_THE_STORM_PERK_EFFECT: "Улучшает [typhonic_avatar|E]."
- ECHIDNAS_VENOM_PERK_EFFECT: "На этом уровне укус вампира становится ядовитым, как у смертоносной гадюки."
- THE_HEART_OF_DARKNESS_PERK_EFFECT: "Разблокирует силу [heart_of_darkness|E]."
- COBRA_FANGS_PERK_EFFECT: "Клыки вампира становятся ядовитыми."
- APOPHIS_PERK_EFFECT: "Еще больше усиливает [typhonic_avatar|E]."
- HEART_THIEF_PERK_EFFECT: "Улучшает [heart_of_darkness|E], позволяет красть сердца у других персонажей в качестве происков или у заключенных в качестве простого [Concept('character_interaction', 'взаимодействия перснажа')|E]. Если у вас есть чье-то сердце, его легко убить или погрузить в оцепенение."
- TEMPTATION_PERK_EFFECT: "Вампиру становится чрезвычайно трудно сопротивляться."
- BREATH_OF_THE_BASILISK_PERK_EFFECT: "Вампир может выдыхать отравляющий и разъедающий туман."
- GODHEAD_PERK_EFFECT: "Разблокирует силу [godhead|E]."
-  # Visceratika # 
+ SERPENT_EYES_PERK_EFFECT: "Разблокирует способность «[serpent_eyes|E]»."
+ MOTHER_OF_MONSTERS_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('serpentis_monsters').GetName]."
+ FORM_OF_THE_STORM_PERK_EFFECT: "Улучшает способность «[typhonic_avatar|E]»."
+ ECHIDNAS_VENOM_PERK_EFFECT: "#flavor На этом уровне укус вампира становится ядовитым, как у смертоносной гадюки.#!"
+ THE_HEART_OF_DARKNESS_PERK_EFFECT: "Разблокирует способность «[heart_of_darkness|E]»."
+ COBRA_FANGS_PERK_EFFECT: "#flavor Клыки вампира становятся ядовитыми.#!"
+ APOPHIS_PERK_EFFECT: "Еще больше улучшает способность «[typhonic_avatar|E]»."
+ HEART_THIEF_PERK_EFFECT: "Улучшает способность «[heart_of_darkness|E]», позволяя красть сердца у других персонажей через происки или у пленников через простое [Concept('character_interaction', 'взаимодействие персонажа')|E]. Если у вас есть чье-то сердце, его легко убить или погрузить в торпор."
+ TEMPTATION_PERK_EFFECT: "#flavor Вампиру становится очень трудно сопротивляться.#!"
+ BREATH_OF_THE_BASILISK_PERK_EFFECT: "#flavor Вампир может выдыхать отравляющий и едкий туман.#!"
+ GODHEAD_PERK_EFFECT: "Разблокирует способность «[godhead|E]»."
+
+ # Visceratika #
+
  SKINOFCHAMELEON_PERK_EFFECT: "[Concept('character_interaction', 'взаимодействие персонажа')|E], что позволяет сменить форму, слившись с окружением:, добавляет бонусы к проискам и защите от них."
  SCRYTHEHEARTHSTONE_PERK_EFFECT: "Вы знаете кто и где находится внутри здания, что дает вам бонусную защиту от враждебных происков."
  BONDWITHTHEMOUNTAIN_PERK_EFFECT: "Позволяет частично сливаться с камнем или цементом, что дает вам еще больше защиты от происков."
