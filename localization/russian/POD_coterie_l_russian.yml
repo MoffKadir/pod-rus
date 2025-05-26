@@ -87,11 +87,11 @@
 
  POD_coteriename_error: "COTERIE NAME ERROR"
  POD_coteriename_custom: "[ROOT.Var('coterie').Var('root_char').Char.GetLocalizedText('POD_coterie_name_text')]"
- POD_coteriename_canon: "[ROOT.Var('coterie').Story.Custom('PODGetCanonCoterieName')]"
+ POD_coteriename_canon: "[ROOT.Var('coterie').Var('canon_coterie').GetFlagName]"
  POD_coteriename_default: "[ROOT.Var('coterie').Var('root_char').Char.GetFirstNamePossessiveNoTooltip] [ROOT.Var('coterie').Var('root_char').Char.Custom('PODCoterieNoTooltip')]"
 
  POD_coteriename_custom_story: "[ROOT.Var('root_char').Char.GetLocalizedText('POD_coterie_name_text')]"
- POD_coteriename_canon_story: "[ROOT.Story.Custom('PODGetCanonCoterieName')]"
+ POD_coteriename_canon_story: "[ROOT.Var('canon_coterie').GetFlagName]"
  POD_coteriename_default_story: "[ROOT.Var('root_char').Char.GetFirstNamePossessiveNoTooltip] [ROOT.Var('root_char').Char.Custom('PODCoterieNoTooltip')]"
 
  ##### Karde: this is where canon coterie names are defined in the loc
@@ -201,6 +201,18 @@
  POD_coteriename_golden_jade_wu_tt: "Когда у тебя есть сердце всего мира, чего еще желать, кроме мужчины, который им правит?"
  POD_coteriename_horns_ice_wu: "#TOOLTIP:POD_coteriename_horns_ice_wu_tt #L Ледяные рога#!#!"
  POD_coteriename_horns_ice_wu_tt: "Некогда столпы двора Белого тигра, Ледяные рога вынуждены воссоздать себя после самоизгнания их основателя."
+ POD_coteriename_demons_zhongdu_wu: "#TOOLTIP:POD_coteriename_demons_zhongdu_wu_tt #L Демоны Чжунду#!#!"
+ POD_coteriename_demons_zhongdu_wu_tt: "В пламени они были отправлены в ад, а в железных цепях их выковали заново."
+ POD_coteriename_entwined_serpents: "#TOOLTIP:POD_coteriename_entwined_serpents_tt #L Сплетённые змеи#!#!"
+ POD_coteriename_entwined_serpents_tt: "В бледном змеином честолюбии те, кого презирает мир, стремятся поставить его на колени."
+ POD_coteriename_amber_wren: "#TOOLTIP:POD_coteriename_amber_wren_tt #L Янтарный крапивник#!#!"
+ POD_coteriename_amber_wren_tt: "Империя живёт на словах и слухах. А при дворе Жёлтого императора информация имеет янтарный оттенок."
+ POD_coteriename_illustrious_scribes: "#TOOLTIP:POD_coteriename_illustrious_scribes_tt #L Прославленные писцы#!#!"
+ POD_coteriename_illustrious_scribes_tt: "Драгоценные и освящённые тексты Ван Куэй не пишутся сами по себе. И во всех направлениях струится перо."
+ POD_coteriename_bronze_pennant: "#TOOLTIP:POD_coteriename_bronze_pennant_tt #L Бронзовый вымпел#!#!"
+ POD_coteriename_bronze_pennant_tt: "В трудные времена нет конца проклятым и нечестивым, и нет причин, которые могли бы их оспорить."
+ POD_coteriename_warriors_hebei: "#TOOLTIP:POD_coteriename_warriors_hebei_tt #L Воины Хэбэй#!#!"
+ POD_coteriename_warriors_hebei_tt: "С севера приходят дьяволы, которые стремятся разорвать ублюдков земли."
 
  POD_coterietravel_none: "$EFFECT_LIST_BULLET$$POD_coterietravel_gui_none$"
  POD_coterietravel_empty: "$EFFECT_LIST_BULLET$$POD_coterietravel_gui_empty$"
