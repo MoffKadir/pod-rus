@@ -62,7 +62,7 @@
  power_over_life_perk_name: "Власть над жизнью"
 
  SUMMON_THE_SIMPLEST_FORM_PERK_EFFECT: "Вы можете призвать 1 материал ремесла через #L $pod_bs_spell|l$ие#!.\n#weak Временное создание очень простого объекта (из одного материала, без движущихся частей#!"
- BLOOD_PERMANENCY_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('summon_the_simplest_form_perk').GetName(GetPlayer)]», вы можете призвать 2 материала ремесла одновременным.\n#weak Сотворенным предметам может быть придано постоянное существование#!"
+ BLOOD_PERMANENCY_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('summon_the_simplest_form_perk').GetName(GetPlayer)]», вы можете призвать 2 материала ремесла одновременно.\n#weak Сотворенным предметам может быть придано постоянное существование#!"
  MAGIC_OF_THE_SMITH_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('blood_permanency_perk').GetName(GetPlayer)]», вы можете призвать 4 материала ремесла одновременно.\nВы можете призвать обычный [artifact|El] через $pod_bs_spell|l$ие#!.\n#weak Сотворение сложных объектов (несколько материалов, движущиеся части)#!"
  REVERSE_CONJURATION_PERK_EFFECT: "Снижает стоимость #L $pod_bs_spells|l$ий#! этой [Concept('bloodmagic_path', 'тропы магии крови')|E].\nУлучшает #L $pod_bs_spell|l$ие#! «[GetPerk('magic_of_the_smith_perk').GetName(GetPlayer)]», вы можете призвать мастерский [artifact|El] вместо обычного.\n#weak Изгнание предметов, созданных с помощью этого пути#!"
  POWER_OVER_LIFE_PERK_EFFECT: "Вы можете призвать армию случайных [Concept('men_at_arms', 'профессионалов')|E], использовав это #L $pod_bs_spell|l$ие#!.\nУлучшает #L $pod_bs_spell|l$ие#! «[GetPerk('reverse_conjuration_perk').GetName(GetPlayer)]», вы можете призвать знаменитый [artifact|El] вместо мастерского.\n#weak Временное сотворение живых (хотя и бездумных) существ#!"
@@ -351,11 +351,11 @@
  past_lives_perk_name: "Прошлые жизни"
  master_of_samsara_perk_name: "Мастер Самсары"
  
- THREADS_OF_THE_PAST_PERK_EFFECT: "Позволяет раскрыть случайный секрет цели, применив это #L $pod_bs_spell|l$#!.\n#flavor Получить видение из прошлого цели#!"
- WEAVE_OF_THE_FUTURE_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('weave_of_the_future_modifier').GetNameWithTooltip] на 5 лет, применив это #L $pod_bs_spell|l$#!.\n#flavor Получить предзнаменования грядущих событий#!"
- CERTAIN_FATE_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('certain_fate_modifier').GetNameWithTooltip] на 5 лет, применив это #L $pod_bs_spell|l$#!.\n#flavor Получить определённое видение грядущего события#!"
- PAST_LIVES_PERK_EFFECT: "Вы можете наделить цель [Concept('modifier', 'модификатором')|E], дающим +4 к случайному [Concept('skill', 'навыку')|E] ([GetModifier('past_lives_diplomacy_modifier').GetNameWithTooltip]) на 10 лет, применив это #L $pod_bs_spell|l$#!.\n#flavor Получить умеренно подробную биографию вашего предыдущего воплощения#!"
- MASTER_OF_SAMSARA_PERK_EFFECT: "Вы можете улучшить случайный [Concept('skill', 'навык')|E] на 1 ценой постоянного [Concept('modifier', 'модификатора')|E] ([GetModifier('master_of_samsara_penality_modifier').GetNameWithTooltip]), применив это #L $pod_bs_spell|l$#!.\nВаш убийца получит модификатор [GetModifier('master_of_samsara_modifier').GetNameWithTooltip] на 50 лет.\n#flavor Получить ограниченную власть над будущим воплощением цели#!"
+ THREADS_OF_THE_PAST_PERK_EFFECT: "Позволяет раскрыть случайный секрет цели, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Получить видение из прошлого цели#!"
+ WEAVE_OF_THE_FUTURE_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('weave_of_the_future_modifier').GetNameWithTooltip] на 5 лет, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Получить предзнаменования грядущих событий#!"
+ CERTAIN_FATE_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('certain_fate_modifier').GetNameWithTooltip] на 5 лет, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Получить определённое видение грядущего события#!"
+ PAST_LIVES_PERK_EFFECT: "Вы можете наделить цель [Concept('modifier', 'модификатором')|E], дающим +4 к случайному [Concept('skill', 'навыку')|E] ([GetModifier('past_lives_diplomacy_modifier').GetNameWithTooltip]) на 10 лет, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Получить умеренно подробную биографию вашего предыдущего воплощения#!"
+ MASTER_OF_SAMSARA_PERK_EFFECT: "Вы можете улучшить случайный [Concept('skill', 'навык')|E] на 1 ценой постоянного [Concept('modifier', 'модификатора')|E] ([GetModifier('master_of_samsara_penality_modifier').GetNameWithTooltip]), применив это #L $pod_bs_spell|l$ие#!.\nВаш убийца получит модификатор [GetModifier('master_of_samsara_modifier').GetNameWithTooltip] на 50 лет.\n#flavor Получить ограниченную власть над будущим воплощением цели#!"
 
  hand_of_ptah_perk_name: "Длань Пта"
  hand_of_khnum_perk_name: "Длань Хнума"
@@ -363,7 +363,7 @@
  hand_of_thoth_perk_name: "Длань Анубиса"
  hand_of_heka_perk_name: "Длань Хеки"
 
- HAND_OF_PTAH_PERK_EFFECT: "Вы можете повредить случайный [artifact|El] цели, применив это #L $pod_bs_spell|l$#!. Если накладывается на себя, чинит артефакт.\n#flavor Повредить или починить объект весом 90 кг или менее на расстоянии#!"
+ HAND_OF_PTAH_PERK_EFFECT: "Вы можете повредить случайный [artifact|El] цели, применив это #L $pod_bs_spell|l$ие#!. Если накладывается на себя, чинит артефакт.\n#flavor Повредить или починить объект весом 90 кг или менее на расстоянии#!"
  HAND_OF_KHNUM_PERK_EFFECT: "Вы можете наделить #TOOLTIP:GAME_TRAIT,mortal,[GetNullCharacter] #L смертную#!#! цель свойством «[GetTrait('maimed').GetName(GetNullCharacter)]» или «[GetTrait('wounded_3').GetName(GetNullCharacter)]».\n#flavor Повредить или починить животное, смертного или предмет весом 453 кг или менее на расстоянии#!"
  HAND_OF_ANUBIS_PERK_EFFECT: "Улучшает достоинство «[GetPerk('hand_of_khnum_perk').GetName(GetPlayer)]», позволяя выбирать целью виды, обладающие материальными телами.\n#flavor Повредить или починить телесное сверхъестественное существо или предмет весом не более 2 тонн на расстоянии#!"
  HAND_OF_THOTH_PERK_EFFECT: "Улучшает достоинство «[GetPerk('hand_of_khnum_perk').GetName(GetPlayer)]», снимая ограничения [Concept('character', 'персонажей')|E]\n#flavor Повредить или починить бесплотное сверхъестественное существо или предмет весом не более 9 тонн на расстоянии#!"
@@ -375,10 +375,10 @@
  enemy_perk_name: "Враг"
  the_eye_that_wounds_perk_name: "Калечащий глаз"
 
- HUMILIATION_PERK_EFFECT: "Позволяет наделить цель модификатором [GetModifier('humiliation_modifier').GetNameWithTooltip] на 5 лет, применив это #L $pod_bs_spell|l$#!.\n#flavor Вызвать у жертвы невезение в следующем действии#!"
- LOSS_PERK_EFFECT: "Вы можете уничтожить случайный не уникальный [Concept('artifact', 'артефакт')|E] цели, применив это #L $pod_bs_spell|l$#!.\n#flavor Вызывает у жертвы потерю ценного имущества#!"
- PERIL_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('peril_modifier').GetNameWithTooltip] на 5 лет, применив это #L $pod_bs_spell|l$#!.\n#flavor Вызвать у жертвы опасный несчастный случай#!"
- ENEMY_PERK_EFFECT: "Вы можете заставить случайного соседнего правителя/члена совета/придворного стать [Concept('rival', 'соперником')|E] цели, применив это #L $pod_bs_spell|l$#!.\n#flavor Заставляет жертву потерять союзников#!"
+ HUMILIATION_PERK_EFFECT: "Позволяет наделить цель модификатором [GetModifier('humiliation_modifier').GetNameWithTooltip] на 5 лет, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Вызвать у жертвы невезение в следующем действии#!"
+ LOSS_PERK_EFFECT: "Вы можете уничтожить случайный не уникальный [Concept('artifact', 'артефакт')|E] цели, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Вызывает у жертвы потерю ценного имущества#!"
+ PERIL_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('peril_modifier').GetNameWithTooltip] на 5 лет, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Вызвать у жертвы опасный несчастный случай#!"
+ ENEMY_PERK_EFFECT: "Вы можете заставить случайного соседнего правителя/члена совета/придворного стать [Concept('rival', 'соперником')|E] цели, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Заставляет жертву потерять союзников#!"
  THE_EYE_THAT_WOUNDS_PERK_EFFECT: "#flavor Нанесение урона цели#!"
 
  ravages_of_the_beast_perk_name: "Неистовство Зверя"
@@ -387,10 +387,10 @@
  treacherous_bonds_perk_name: "Предательские узы"
  the_withering_of_ages_perk_name: "Слабость веков"
 
- RAVAGES_OF_THE_BEAST_PERK_EFFECT: "Вы можете вызвать у цели-вампира неистовство, если это возможно, применив это #L $pod_bs_spell|l$#!.\n#flavor Вызывает у цели неистовство#!"
- WEIGHT_OF_THE_SUN_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('weight_of_the_sun_modifier').GetNameWithTooltip] на 2 года, применив это #L $pod_bs_spell|l$#!.\n#flavor Заставляет вампира почувствовать эффект бодрствования в течение дня#!"
- ABATED_TOOTH_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('abated_tooth_modifier').GetNameWithTooltip] на 3 года, применив это #L $pod_bs_spell|l$#!.\n#flavor Предотвращает выдвижение клыков вампира#!"
- TREACHEROUS_BONDS_PERK_EFFECT: "Вы можете заставить одного случайного гуля цели ненавидеть её, применив это #L $pod_bs_spell|l$#!.\n#flavor Временно разрушает кровные узы, превращая любовь в ненависть#!"
+ RAVAGES_OF_THE_BEAST_PERK_EFFECT: "Вы можете вызвать у цели-вампира неистовство, если это возможно, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Вызывает у цели неистовство#!"
+ WEIGHT_OF_THE_SUN_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('weight_of_the_sun_modifier').GetNameWithTooltip] на 2 года, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Заставляет вампира почувствовать эффект бодрствования в течение дня#!"
+ ABATED_TOOTH_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('abated_tooth_modifier').GetNameWithTooltip] на 3 года, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Предотвращает выдвижение клыков вампира#!"
+ TREACHEROUS_BONDS_PERK_EFFECT: "Вы можете заставить одного случайного гуля цели ненавидеть её, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Временно разрушает кровные узы, превращая любовь в ненависть#!"
  THE_WITHERING_OF_AGES_PERK_EFFECT: "Вы можете наделить цель [Concept('modifier', 'модификатором')|E], снижающим её [Concept('prowess', 'доблесть')|E] за каждые 10 лет жизни (продолжительность 2 года).\n#flavor Заставляет вампира разложиться до своего истинного возраста#!"
 
  force_bolt_perk_name: "Силовой снаряд"
@@ -425,7 +425,7 @@
 
  SIGHT_OF_THE_JACKAL_PERK_EFFECT: "Можно взаимодействовать с персонажами по ту сторону Барьера.\n#flavor Осознание присутствия призраков#!"
  WEIGH_THE_VIRTUES_PERK_EFFECT: "Вы можете наделить пленённую цель-призрака модификатором [GetModifier('weigh_the_virtues_modifier').GetNameWithTooltip], позволяющим в дальнейшем использовать #L $pod_bs_spells|l$ия#! из этой #L $pod_bs_path|l$ы#!.\n#flavor Узнать о преступлениях или героических поступках мёртвых или нежити#!"
- PHARAOHS_SENTRY_PERK_EFFECT: "Позволяет принести в жертву цель-призрака с модификатором [GetModifier('weigh_the_virtues_modifier').GetNameWithTooltip], чтобы призвать армию профессионалов - [GetMaA('pharaohs_sentry').GetName], применив это #L $pod_bs_spell|l$#!.\n#flavor Привязать фрагмент призрака к трупу, чтобы он выполнял одну единственную команду.#!"
+ PHARAOHS_SENTRY_PERK_EFFECT: "Позволяет принести в жертву цель-призрака с модификатором [GetModifier('weigh_the_virtues_modifier').GetNameWithTooltip], чтобы призвать армию профессионалов - [GetMaA('pharaohs_sentry').GetName], применив это #L $pod_bs_spell|l$ие#!.\n#flavor Привязать фрагмент призрака к трупу, чтобы он выполнял одну единственную команду.#!"
  IMBUE_WITH_THE_GRACE_OF_ANUBIS_PERK_EFFECT: "#flavor Оживить труп и наделить его особой целью, связанной с его добродетельными или злодейскими поступками#!"
  THE_SORCERY_OF_LIFE_PERK_EFFECT: "Превращает цель-призрака с модификатором [GetModifier('weigh_the_virtues_modifier').GetNameWithTooltip] из призрака в проклятую мумию, ценой модификатора [GetModifier('the_sorcery_of_life_modifier').GetNameWithTooltip] на 20 лет и огромной потерей [Concept('piety', 'благочестия')|E], если ваша [Concept('faith', 'конфессия')|E] не принимает демонов.\n#flavor Уменьшенная версия обряда проклятия, колдун создаёт своего рода прото-проклятую мумию.#!"
 
@@ -435,10 +435,10 @@
  cycle_of_the_midgard_serpent_perk_name: "Цикл змея Мидгарда"
  apeps_transformation_perk_name: "Преображение Апопа"
 
- BESTOWMENT_OF_SCALES_PERK_EFFECT: "Вы можете наделить цель - члена [Concept('POD_herd', 'стада')|E] модификатором [GetModifier('bestowment_of_scales_modifier').GetNameWithTooltip] на 20 лет, применив это #L $pod_bs_spell|l$#!.\n#flavor Вылечить гуля быстрее, нарастив на его ранах чешуйчатую кожу#!"
- SUFFER_FOR_JORMUNGANDR_PERK_EFFECT: "Вы можете наделить цель свойством «[GetTrait('scaly').GetName(GetNullCharacter)]» и модификатором [GetModifier('suffer_for_jormungandr_modifier').GetNameWithTooltip], также увеличив случайный [Concept('skill', 'навык')|E] на 5, применив это #L $pod_bs_spell|l$#!.\n#flavor Придать гулю рептильные черты#!"
- SWALLOW_THE_TAIL_PERK_EFFECT: "Вы можете получить случайное количество от 1 до 4 ед. крови, нанеся раны всему [Concept('court', 'двору')|E], применив это #L $pod_bs_spell|l$#!.\n#flavor Притянуть к себе пролитую кровь из окружающих вас людей#!"
+ BESTOWMENT_OF_SCALES_PERK_EFFECT: "Вы можете наделить цель - члена [Concept('POD_herd', 'стада')|E] модификатором [GetModifier('bestowment_of_scales_modifier').GetNameWithTooltip] на 20 лет, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Вылечить гуля быстрее, нарастив на его ранах чешуйчатую кожу#!"
+ SUFFER_FOR_JORMUNGANDR_PERK_EFFECT: "Вы можете наделить цель свойством «[GetTrait('scaly').GetName(GetNullCharacter)]» и модификатором [GetModifier('suffer_for_jormungandr_modifier').GetNameWithTooltip], также увеличив случайный [Concept('skill', 'навык')|E] на 5, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Придать гулю рептильные черты#!"
+ SWALLOW_THE_TAIL_PERK_EFFECT: "Вы можете получить случайное количество от 1 до 4 ед. крови, нанеся раны всему [Concept('court', 'двору')|E], применив это #L $pod_bs_spell|l$ие#!.\n#flavor Притянуть к себе пролитую кровь из окружающих вас людей#!"
  CYCLE_OF_THE_MIDGARD_SERPENT_PERK_EFFECT: "Снижает затраты [Concept('lifestyle_experience', 'опыта образа жизни')|E] для изучения дисциплин на #p -100%#!\n#flavor Наделите гуля способностью использовать ваши дисциплины#!"
 
  cycle_of_the_midgard_serpent_perk_tt: "Изучение [Concept('discipline', 'дисциплины')|E] не требует затрат из-за наличия достоинства «[GetPerk('cycle_of_the_midgard_serpent_perk').GetName(GetPlayer)]»!"
- APEPS_TRANSFORMATION_PERK_EFFECT: "Вы можете принести в жертву вашего гуля, чтобы получить складывающийся модификатор [GetModifier('apeps_transformation_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$#!.\n#flavor Превратить гуля в огромную змею, способную понимать человеческую речь#!"
+ APEPS_TRANSFORMATION_PERK_EFFECT: "Вы можете принести в жертву вашего гуля, чтобы получить складывающийся модификатор [GetModifier('apeps_transformation_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#flavor Превратить гуля в огромную змею, способную понимать человеческую речь#!"
