@@ -1,6 +1,6 @@
 ﻿l_russian:
- POD_REQUIRE_DHARMA_TOOLTIP_EFFECT: "#X @warning_icon! You don't have [GetTrait('dharma$VALUE|0q$').GetName(GetPlayer)] or higher#!"
- POD_GIVE_DHARMA_XP_EFFECT: "You gain #P $VALUE$#! [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] in the [CHARACTER.Custom('PODCurrentDharma')] [Concept('trait', 'свойство')|E]"
+ POD_REQUIRE_DHARMA_TOOLTIP_EFFECT: "#X @warning_icon! У вас нет свойства «[GetTrait('dharma$VALUE|0q$').GetName(GetPlayer)]» или выше#!"
+ POD_GIVE_DHARMA_XP_EFFECT: "Вы получите #P $VALUE$#! [Concept('trait_level_track_xp', 'опыта пути развития')|E] [Concept('trait', 'свойства')|E] «[CHARACTER.Custom('PODCurrentDharma')]»"
  POD_dharma1: "[GetTrait('dharma1').GetName(GetPlayer)]"
  POD_dharma2: "[GetTrait('dharma2').GetName(GetPlayer)]"
  POD_dharma3: "[GetTrait('dharma3').GetName(GetPlayer)]"
@@ -13,15 +13,15 @@
  POD_dharma10: "[GetTrait('dharma10').GetName(GetPlayer)]"
 
  #Shintai: Bone
- corpse_skin_perk_name: "Corpse Skin"
- white_tiger_corpse_perk_name: "White Tiger Corpse"
- bone_obedience_perk_name: "Bone Obedience"
- five_poison_cloud_perk_name: "Five Poison Cloud"
- ching_shih_perk_name: "Ch'ing Shih"
- ikehone_perk_name: "Ikehone"
- skeletal_sculpting_perk_name: "Skeletal Sculpting"
- corpse_awakening_perk_name: "Corpse Awakening"
- form_of_infernal_favor_perk_name: "Form of Infernal Favor"
+ corpse_skin_perk_name: "Мёртвая кожа"
+ white_tiger_corpse_perk_name: "Труп белого тигра"
+ bone_obedience_perk_name: "Управление костью"
+ five_poison_cloud_perk_name: "Облако пяти ядов"
+ ching_shih_perk_name: "Ц'ин Ши"
+ ikehone_perk_name: "Композиция кости"
+ skeletal_sculpting_perk_name: "Лепка скелета"
+ corpse_awakening_perk_name: "Пробуждение трупа"
+ form_of_infernal_favor_perk_name: "Адский лик"
 
  CORPSE_SKIN_PERK_EFFECT: "#flavor The body of the Kuei-jin becomes more corpse-like, offering improved protection against physical attacks#!"
  WHITE_TIGER_CORPSE_PERK_EFFECT: "Can Shapeshift into [GetModifier('POD_shapeshift_form_invisible_modifier').GetNameWithTooltip]\n#flavor The body of the Kuei-jin becomes transparent, although this does not affect clothing unless the Kuei-jin expends more Yin chi. Kuei-jin using this power can occasionally be detected by the palpable chill they radiate#!"
