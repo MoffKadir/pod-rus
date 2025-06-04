@@ -1,19 +1,19 @@
 ﻿l_russian:
 
  POD_skuldfulfilled.001.t: "Скульд исполнен"
- POD_skuldfulfilled.001.desc: "Вы пытаетесь лишить вечной силы крови жалкого не-[Concept('cainite', 'кайнита' )|E], которым и является [defender.GetFirstName], вновь превращая [defender.GetHerHis] в простого человека. Если [defender.GetSheHe] достаточно стар[Select_CString(defender.IsFemale, 'а', '')], ваши манипуляции могут убить [defender.GetHerHis]."
+ POD_skuldfulfilled.001.desc: "Вы пытаетесь отнять вечную силу крови у [Select_CString(defender.IsFemale, 'ничтожной', 'ничтожного' )] не-[Concept('cainite', Select_CString(defender.IsFemale, 'каинитки', 'каинита' ))|E], [Select_CString(defender.IsFemale, 'которой', 'которым' )] является [defender.GetFirstName], и снова сделать [defender.GetHerHis] простым человеком. Если [defender.GetSheHe] достаточно [Select_CString(defender.IsFemale, 'стара', 'стар')], ваши манипуляции могут убить [defender.GetHerHis]."
  POD_skuldfulfilled.001.option.a: "[defender.GetSheHe|U] не заслуживает такой силы!"
- POD_skuldfulfilled.001.option.a.tt: "Вы попытаетесь забрать силу крови у [defender.GetHerHis]"
- POD_skuldfulfilled.option.001.a.desc: "Вы используете свои мистические познания в Обливионе"
+ POD_skuldfulfilled.001.option.a.tt: "Вы попытаетесь отнять [defender.GetHerHis] силу крови"
+ POD_skuldfulfilled.option.001.a.desc: "Вы используете свои мистические знания о Забвении"
  POD_skuldfulfilled.001.option.success: "[defender.GetFirstName] становится обычным человеком"
- POD_skuldfulfilled.001.option.a.tt.attacker_wins: "Вам удалось добиться успеха"
+ POD_skuldfulfilled.001.option.a.tt.attacker_wins: "Вы добились успеха"
  POD_skuldfulfilled.001.option.failure: "Ваших знаний оказалось недостаточно"
  POD_skuldfulfilled.001.option.a.tt.attacker_lost: "[defender.GetFirstName] сопротивляется"
  POD_skuldfulfilled.001.option.b: "Сейчас не время..."
- POD_skuldfulfilled.001.option.b.tt: "Вы отказываетесь от попытки украсть силу крови у [defender.GetFirstName]"
+ POD_skuldfulfilled.001.option.b.tt: "Вы отказываетесь от попытки украсть силу крови у персонажа [defender.GetFirstName]"
 
 
  POD_skuldfulfilled.002.t: "Скульд исполнен"
- POD_skuldfulfilled.002.desc: "Кто-то с помощью тёмных сил Обливиона лишил [defender.GetFirstName] силы вашей крови! Теперь [defender.GetSheHe] больше не связан[Select_CString(defender.IsFemale, 'а', '')] с вами кровными узами..."
- POD_skuldfulfilled.002.option.a: "Я должен что-то предпринять"
- POD_skuldfulfilled.002.option.a.tt: "[defender.GetFirstName] больше не ваш раб"
+ POD_skuldfulfilled.002.desc: "Кто-то использовал тёмные силы Забвения, и [defender.GetFirstName] [Select_CString(defender.IsFemale, 'лишена', 'лишён' )] силы вашей крови! Теперь [defender.GetSheHe] больше не [Select_CString(defender.IsFemale, 'связана', 'связан')] с вами узами крови..."
+ POD_skuldfulfilled.002.option.a: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] что-то предпринять."
+ POD_skuldfulfilled.002.option.a.tt: "[defender.GetFirstName] больше не [Select_CString(defender.IsFemale, 'ваша рабыня', 'ваш раб' )]"
