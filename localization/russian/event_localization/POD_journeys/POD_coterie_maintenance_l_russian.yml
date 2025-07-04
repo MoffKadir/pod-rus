@@ -29,7 +29,7 @@
  POD_coterie_maintenance.20.option.g: "Просто остаться в группе [ROOT.Char.Custom('PODGetCoterieName')]."
 
  POD_coterie_maintenance.30.t: "Назревающее недовольство"
- POD_coterie_maintenance.30.desc: "Это правда, что [potential_rival.GetFirstNameNicknamed] и я были не в лучших отношениях\n\nПрошлой ночью [potential_rival.GetSheHe] [Select_CString(potential_rival.IsFemale, 'вступила', 'вступила' )] со мной в перепалку, заявив, что если всё продолжится в том же духе, [potential_rival.GetSheHe] покинет группу $POD_player_coterie$."
+ POD_coterie_maintenance.30.desc: "Это правда, что [potential_rival.GetFirstNameNicknamed] и я были не в лучших отношениях\n\nПрошлой ночью [potential_rival.GetSheHe] [Select_CString(potential_rival.IsFemale, 'вступила', 'вступил' )] со мной в перепалку, заявив, что если всё продолжится в том же духе, [potential_rival.GetSheHe] покинет группу $POD_player_coterie$."
  POD_coterie_maintenance.30.option.a: "Ещё не слишком поздно уладить наши разногласия."
  POD_coterie_maintenance.30.option.a.tt: "Если [Concept('opinion', 'мнение')|E] персонажа [potential_rival.GetFirstName] о вашем персонаже будет ниже #N [EmptyScope.ScriptValue('coterie_rivalry_opinion')]#! в течение #V 3 месяцев#!, [potential_rival.GetSheHe] покинет группу $POD_player_coterie$ и станет вашим [Concept('rival', 'соперником')|E]."
  POD_coterie_maintenance.30.option.b: "Хочешь уйти? Тогда уходи."
