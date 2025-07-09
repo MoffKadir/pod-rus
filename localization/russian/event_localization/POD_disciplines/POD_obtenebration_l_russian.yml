@@ -1,6 +1,6 @@
 ﻿l_russian:
 
- POD_drain_the_life.001.t: "Оттенение жизни"
+ POD_drain_the_life.001.t: "Высасывание жизни"
  POD_drain_the_life.001.desc: "С вашим текущим уровнем власти над Тенями вы можете утопить столицу персонажа [target.GetFirstName] во тьме. Но такая сила имеет цену."
  POD_drain_the_life.001.desc.ahrimans_demesne: "Вы - [Select_CString(ROOT.Char.IsFemale, 'повелительница', 'повелитель' )] тьмы. С вашим великим мастерством Бездны, вы можете погрузить всю державу, которой правит [target.GetFirstName], во тьму, пожирающую все, чего она коснется. Но такая сила имеет цену, и [target.GetFirstName] не будет этому [Select_CString(target.IsFemale, 'рада', 'рад' )]."
  POD_drain_the_life.001.option.a: "С моим невероятным контролем над Бездной, Я погружу все земли [target.GetHerHis] во тьму!"
