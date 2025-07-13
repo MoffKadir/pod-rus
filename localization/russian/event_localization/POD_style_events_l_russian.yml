@@ -1,7 +1,7 @@
 ﻿l_russian:
- POD_style.1.t: "новый стиль"
+ POD_style.1.t: "Новый стиль"
  POD_style.1.a: "Пока что закончим с выбором цвета."
-  
+
  POD_style_current_clothing_colors: "Текущая цветовая схема: [EventWindowWidget.GetScope.Custom('PODClothingColors')]"
 
  POD_style_clear_tt: "Очистить все цвета"
@@ -31,9 +31,9 @@
  # colors are in common\scripted_effects\POD_style_effects.txt
  POD_set_color_black_tt: "#color:{0.03,0.03,0.03,1};glow_color:{1,1,1,0.7};bold Чёрный#!"
  POD_set_color_white_tt: "#color:{0.99,0.99,0.99,1};glow_color:{0,0,0,1};bold Белый#!"
- POD_set_color_silver_tt: "#color:{0.8,0.79,0.78,1};glow_color:{0,0,0,1};bold Серебро#!"
+ POD_set_color_silver_tt: "#color:{0.8,0.79,0.78,1};glow_color:{0,0,0,1};bold Серебряный#!"
  POD_set_color_grey_tt: "#color:{0.5,0.5,0.5,1};glow_color:{0,0,0,1};bold Серый#!"
- POD_set_color_gold_tt: "#color:{0.75,0.5,0.21,1};glow_color:{0,0,0,1};bold Золото#!"
+ POD_set_color_gold_tt: "#color:{0.75,0.5,0.21,1};glow_color:{0,0,0,1};bold Золотой#!"
  POD_set_color_yellow_light_tt: "#color:{1,0.68,0.2,1};glow_color:{0,0,0,1};bold Светло-жёлтый#!"
  POD_set_color_red_tt: "#color:{0.5,0.015,0.02,1};glow_color:{0,0,0,1};bold Красный#!"
  POD_set_color_sanguine_tt: "#color:{0.75,0,0,1};glow_color:{0,0,0,1};bold Кровавый#!"
@@ -54,7 +54,7 @@
 
  POD_style_hint: "Выберите пресет или настройте оттенок, чтобы начать"
 
-# space in front to give breathing room to the texticons
+ # space in front to give breathing room to the texticons
  POD_clothing_colors: " #color:{[PODClothingColor('1','r')],[PODClothingColor('1','g')],[PODClothingColor('1','b')],[PODClothingColorAlpha('1')]} @color_display:inherit_color!#! #color:{[PODClothingColor('2','r')],[PODClothingColor('2','g')],[PODClothingColor('2','b')],[PODClothingColorAlpha('2')]} @color_display:inherit_color!#! #color:{[PODClothingColor('3','r')],[PODClothingColor('3','g')],[PODClothingColor('3','b')],[PODClothingColorAlpha('3')]} @color_display:inherit_color!#! #color:{[PODClothingColor('4','r')],[PODClothingColor('4','g')],[PODClothingColor('4','b')],[PODClothingColorAlpha('4')]} @color_display:inherit_color!#! #color:{[PODClothingColor('5','r')],[PODClothingColor('5','g')],[PODClothingColor('5','b')],[PODClothingColorAlpha('5')]} @color_display:inherit_color!#! #color:{[PODClothingColor('6','r')],[PODClothingColor('6','g')],[PODClothingColor('6','b')],[PODClothingColorAlpha('6')]} @color_display:inherit_color!#! #color:{[PODClothingColor('7','r')],[PODClothingColor('7','g')],[PODClothingColor('7','b')],[PODClothingColorAlpha('7')]} @color_display:inherit_color!#!"
  POD_clothing_colors_none: "#weak (Не задано)#"
  POD_clothing_colors_coterie: "[GuiScope.AddScope('color_root',ROOT.Var('coterie').Story.MakeScope).Custom('PODClothingColors')]"

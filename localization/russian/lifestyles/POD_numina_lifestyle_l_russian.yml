@@ -227,11 +227,11 @@
  PRECOGNITION_4_PERK_EFFECT: "#weak The psychic can see what immediate reaction an action would have.#!"
  PRECOGNITION_5_PERK_EFFECT: "Вы можете раскрыть через [Concept('character_interaction', 'взаимодействие персонажа')|E] все враждебные происки, нацеленные на вас, и сорвать те, которые уже раскрыты.\n#weak The psychic can see the most probable future at the moment.#!"
 
- psychic_hypnosis_1_perk_name: "Trance State"
- psychic_hypnosis_2_perk_name: "Sideshow Suggestion"
- psychic_hypnosis_3_perk_name: "Delayed Action"
- psychic_hypnosis_4_perk_name: "Fast Trance"
- psychic_hypnosis_5_perk_name: "Manchurian Candidate"
+ psychic_hypnosis_1_perk_name: "Трансовое состояние"
+ psychic_hypnosis_2_perk_name: "Побочное внушение"
+ psychic_hypnosis_3_perk_name: "Отложенное действие"
+ psychic_hypnosis_4_perk_name: "Мгновенный транс"
+ psychic_hypnosis_5_perk_name: "Манчжурский кандидат"
 
  PSYCHIC_HYPNOSIS_1_PERK_EFFECT: "As a [character_interaction|E] give a target [GetModifier('psi_hypnosis_stress_buff').GetNameWithTooltip] for 5 years. Available only if the target has #V 0+#! opinion of the psychic and is in the same location.\n#weak The psychic can implant orders and suggestions into their target by sending them into a trance and then hypnotizing them.\nThe psychic can send a target into a hypnotic trance.#!"
  PSYCHIC_HYPNOSIS_2_PERK_EFFECT: "The [character_interaction|E] from [GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )] now also lets you increase the target's opinion of you with a diplomacy duel.\n#weak The psychic can make a minor suggestion while the target is in trance.#!"
@@ -239,11 +239,11 @@
  PSYCHIC_HYPNOSIS_4_PERK_EFFECT: "The [character_interaction|E] from [GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )] now also lets you heal most mental issues.\nIncreases the chance of succeeding at hypnosis.\n#weak The psychic can send a target into a trance with a mere glance.#!"
  PSYCHIC_HYPNOSIS_5_PERK_EFFECT: "Can use [GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )] [character_interaction|E] without the target having 0+ opinion of you. Increases the chance of success and can upgrade the hook gained by hypnosis to a strong hook.\n#weak The psychic can deep-program a target while it is in trance, even affecting their memory.#!"
 
- psychic_invisibility_1_perk_name: "Hide"
- psychic_invisibility_2_perk_name: "Slow Movement"
- psychic_invisibility_3_perk_name: "Invisibility"
- psychic_invisibility_4_perk_name: "Selective Invisibility"
- psychic_invisibility_5_perk_name: "Forget You Ever Saw Me"
+ psychic_invisibility_1_perk_name: "Прятка"
+ psychic_invisibility_2_perk_name: "Медленное движение"
+ psychic_invisibility_3_perk_name: "Невидимость"
+ psychic_invisibility_4_perk_name: "Избирательная невидимость"
+ psychic_invisibility_5_perk_name: "Забудь, что когда-нибудь меня видел"
 
  PSYCHIC_INVISIBILITY_1_PERK_EFFECT: "#weak Similar to the vampiric Discipline of Obfuscate, the psychic can mask their presence, not registrating in the eyes of onlookers.\nThe psychic is not noticed as long as they stand perfectly still.#!"
  PSYCHIC_INVISIBILITY_2_PERK_EFFECT: "#weak The psychic is not noticed as long as they move slowly enough.#!"

@@ -1027,13 +1027,13 @@
  POD_capital_county_maelstrom_cursed_toast: "[attacker.GetFirstName] [Select_CString(attacker.IsFemale, 'призвала', 'призвал' )] спектров, чтобы посеять хаос в вашей столице!"
  POD_maelstrom_cursed_enemy_realm_toast: "Спектры бесчинствуют в столице персонажа [target.GetFirstName]"
 
- POD_wails_and_whispers_interaction: "Вопли и шёпот"
+ POD_wails_and_whispers_interaction: "Плач и шёпот"
  POD_wails_and_whispers_interaction_desc: "Снижает сопротивление цели к проискам убийства"
  POD_wails_and_whispers_interaction.tt: "Используя свои способности к некромантии, вы можете сделать цель более уязвимой для происков убийства на 5 лет"
  POD_wails_and_whispers_actor_toast.desc: "[recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала более уязвима', 'стал более уязвим' )] для враждебных происков"
  POD_wails_and_whispers_enemy_toast: "Отчаяние!"
- POD_wails_and_whispers_enemy_toast.desc: "[actor.GetFirstName] [Select_CString(actor.IsFemale, 'прокляла', 'проклял' )] вас, используя «Вопли и шёпот»!"
- POD_wails_and_whispers_failure_toast.desc: "Вы не смогли использовать «Вопли и шёпот» на персонаже [recipient.GetFirstName]!"
+ POD_wails_and_whispers_enemy_toast.desc: "[actor.GetFirstName] [Select_CString(actor.IsFemale, 'прокляла', 'проклял' )] вас, используя «Плач и шёпот»!"
+ POD_wails_and_whispers_failure_toast.desc: "Вы не смогли использовать «Плач и шёпот» на персонаже [recipient.GetFirstName]!"
 
  POD_cthonic_womb_perk_effect.tt: "[victim.GetFirstName] восстанет из мертвых в виде #L [GetTrait('wraith').GetName( GetPlayer )|l]а#!"
 
@@ -1057,13 +1057,13 @@
  POD_gift_of_melancholia_interaction_success: "Болезнь вспыхнет в местоположении персонажа [target.GetFirstName] и со временем распространится оттуда"
  POD_gift_of_melancholia_interaction_failure: "Болезни не удается распространиться"
 
- POD_witchs_fruit_interaction: "Плод ведьмы"
+ POD_witchs_fruit_interaction: "Ведьмин фрукт"
  POD_witchs_fruit_interaction_desc: "Использовать интриги, чтобы обманом заставить смертное существо съесть съедобную растительную массу, подвергшуюся воздействию некротических энергий"
  POD_witchs_fruit_interaction.tt: "Использовать интриги, чтобы обманом заставить смертное существо съесть съедобную растительную массу, подвергшуюся воздействию некротических энергий"
  POD_witchs_fruit_actor_toast.desc: "Как тебе яблоки, [recipient.GetFirstName]?"
  POD_witchs_fruit_enemy_toast: "Путаница!"
  POD_witchs_fruit_enemy_toast.desc: "Вы съели что-то, что вам не стоило"
- POD_witchs_fruit_failure_toast.desc: "[recipient.GetFirstName] не пробует плод ведьмы"
+ POD_witchs_fruit_failure_toast.desc: "[recipient.GetFirstName] не пробует ведьмин фрукт"
 
  POD_raise_the_green_one_interaction: "Поднять зелёного телохранителя"
  POD_raise_the_green_one_interaction_desc: "Поднять труп, связанный и укреплённый растительной массой."

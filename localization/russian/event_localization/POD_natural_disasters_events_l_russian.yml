@@ -1,23 +1,23 @@
 ﻿l_russian:
- POD_natural_disasters.0003.t: "Знак Погоды"
- POD_natural_disasters.0003.desc: "Согласно знакам погоды, в [task_contract.MakeScope.Var('target_title').Title.GetName] в [GetGameTimeDifferenceForDiffDays(GetVarTimeRemaining(task_contract.MakeScope,'time_remaining'))] произойдет опасная катастрофа, что вы собираетесь делать?"
- POD_natural_disasters.0003.desc.coterie: "Член вашей [GetPlayer.Custom('PODCoterieNoTooltip')] — [coterie_member.GetFirstNameNicknamed] — приходит с новостями.\n\n[coterie_member.GetHerHis|U] предвидение погоды предсказывает, что в [task_contract.MakeScope.Var('target_title').Title.GetName] через [GetGameTimeDifferenceForDiffDays(GetVarTimeRemaining(task_contract.MakeScope,'time_remaining'))] случится опасное бедствие.\n\nВы вмешаетесь?"
+ POD_natural_disasters.0003.t: "Знаки погоды"
+ POD_natural_disasters.0003.desc: "Согласно знакам погоды, во владении [task_contract.MakeScope.Var('target_title').Title.GetName] в [GetGameTimeDifferenceForDiffDays(GetVarTimeRemaining(task_contract.MakeScope,'time_remaining'))] произойдёт опасная катастрофа.\n\nВмешаетесь ли вы?"
+ POD_natural_disasters.0003.desc.coterie: "[coterie_member.GetFirstNameNicknamed], [Select_CString(coterie_member.IsFemale, 'которая', 'который' )] входит в группу [GetPlayer.Custom('PODCoterieNoTooltip')], приходит с новостями.\n\nСогласно [coterie_member.GetHerHis] предсказанию погоды, во владении [task_contract.MakeScope.Var('target_title').Title.GetName] в [GetGameTimeDifferenceForDiffDays(GetVarTimeRemaining(task_contract.MakeScope,'time_remaining'))] произойдёт опасная катастрофа.\n\nВмешаетесь ли вы?"
 
- POD_natural_disasters.0003.tt: "#bold [task_contract.GetType.GetName]#! — [Concept('task_contract', 'задание')|E] создано в [task_contract.GetLocation.GetName]"
+ POD_natural_disasters.0003.tt: "Во владении [task_contract.GetLocation.GetName] создан [Concept('task_contract', 'контракт')|E] — #bold [task_contract.GetType.GetName]#!"
 
- POD_natural_disasters.0005.t: "Грядущая погибель"
- POD_natural_disasters.0005.desc: "Вы прибываете в [task_contract.GetLocation.GetName].\n\nЕсли вы не предпримете никаких действий, надвигающаяся [task_contract.MakeScope.Var('disaster_type').GetFlagName|l] нанесёт огромный ущерб всей [task_contract.MakeScope.Var('target_title').Title.GetName].\n\nЧто делать?"
+ POD_natural_disasters.0005.t: "Надвигающаяся гибель"
+ POD_natural_disasters.0005.desc: "Вы прибываете во владение [task_contract.GetLocation.GetName].\n\nЕсли вы не предпримете никаких действий, [task_contract.MakeScope.Var('disaster_type').GetFlagName|l] нанесёт огромный ущерб всему владению [task_contract.MakeScope.Var('target_title').Title.GetName].\n\nЧто же теперь делать?"
  POD_natural_disasters.0005.a: "Я остановлю [task_contract.MakeScope.Var('disaster_type').GetFlagName|l] с помощью погодной магии."
  POD_natural_disasters.0005.b: "Я изо всех сил постараюсь #P улучшить#! погоду!"
  POD_natural_disasters.0005.c: "Я сделаю [task_contract.MakeScope.Var('disaster_type').GetFlagName|l] #X;bold ещё хуже#!"
  POD_natural_disasters.0005.d: "Я окажу помощь смертным."
  POD_natural_disasters.0005.e: "Я приложу максимум усилий, чтобы #P поддержать#! смертных."
- POD_natural_disasters.0005.f: "Я передумал[Select_CString(ROOT.Char.IsFemale, 'а', '')]."
+ POD_natural_disasters.0005.f: "Я [Select_CString(ROOT.Char.IsFemale, 'передумала', 'передумал')]."
 
  # these are unused
- POD_natural_disasters.0101.t_602: "602 Землетрясение у Моностыря Сурб Карапет"
- POD_natural_disasters.0101.t_632: "632 Землетрясение в Армении"
- POD_natural_disasters.0101.t_735: "735 Землетрясение в Вайоцдзорской о́бласти"
+ POD_natural_disasters.0101.t_602: "Землетрясение у монастыря Сурб Карапет 602 года"
+ POD_natural_disasters.0101.t_632: "Армянское землетрясение 632 года"
+ POD_natural_disasters.0101.t_735: "Землетрясение в провинции Вайоцдзор 735 года"
  POD_natural_disasters.0101.t_740: "740 Землетрясение в Константинополе"
  POD_natural_disasters.0101.t_743: "743 Землетрясение в Каспийских воротах"
  POD_natural_disasters.0101.t_749: "749 Землетрясение в Галилее"

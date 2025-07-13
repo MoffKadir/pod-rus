@@ -17,7 +17,7 @@
  POD_debug_gain_trait_xp_interaction_desc: "Повысить уровень сверхъестественного свойства персонажа [recipient.GetShortUIName]"
 
  POD_debug_umbra_discovery_interaction: "Получить открытие [Concept('umbra', 'Умбры')|E]"
- POD_debug_umbra_discovery_interaction_desc: "Вы сможете начать [Concept('umbra_expedition', 'путешествие в Умбру'|E] в измерение #bold [Localize(Concatenate('game_concept_', recipient.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName))]#!"
+ POD_debug_umbra_discovery_interaction_desc: "Вы сможете начать [Concept('umbra_expedition', 'путешествие в Умбру')|E] в измерение #bold [Localize(Concatenate('game_concept_', recipient.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName))]#!"
 
  POD_debug_show_real_prowess_interaction: "Показать настоящую доблесть"
  POD_debug_show_real_prowess_interaction_desc: "Показать ваш реальный навык [Concept('prowess', 'доблести')|E], который используется в некоторых событиях в модификации «[princes_of_darkness|E]»."
