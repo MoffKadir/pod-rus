@@ -1420,8 +1420,8 @@
 
  POD_charjoin.200.t: "Ваш [Concept('Sire', 'сир')|E]"
  POD_charjoin.200.desc: "Вы уверены, что хотите быть потомком персонажа [vampiresire.GetFirstName]?\n\nПосле первых двух опций нет пути назад."
- POD_charjoin.200.option.a: "Да и [vampiresire.GetSheHe] [Select_CString(vampiresire.IsFemale, 'моя', 'мой')] [Concept('Sire', Select_CString(vampiresire.IsFemale, 'дама', 'сир' ))|E]!"
- POD_charjoin.200.option.b: "Да и [vampiresire.GetSheHe] [Select_CString(vampiresire.IsFemale, 'моя', 'мой')] [Concept('Sire', Select_CString(vampiresire.IsFemale, 'дама', 'сир' ))|E]! Но я создам собственную линию крови."
+ POD_charjoin.200.option.a: "Да, и [vampiresire.GetSheHe] [Select_CString(vampiresire.IsFemale, 'моя', 'мой')] [Concept('Sire', Select_CString(vampiresire.IsFemale, 'дама', 'сир' ))|E]!"
+ POD_charjoin.200.option.b: "Да, и [vampiresire.GetSheHe] [Select_CString(vampiresire.IsFemale, 'моя', 'мой')] [Concept('Sire', Select_CString(vampiresire.IsFemale, 'дама', 'сир' ))|E]! Но я создам собственную линию крови."
  POD_charjoin.200.option.b.t: "Вы создадите свой младший дом династии [vampiresire.GetDynasty.GetBaseName]."
  POD_charjoin.200.option.c: "Да, но [vampiresire.GetSheHe] - не [Select_CString(vampiresire.IsFemale, 'моя', 'мой')] [Concept('Sire', Select_CString(vampiresire.IsFemale, 'дама', 'сир' ))|E]!."
  POD_charjoin.200.option.c.t: "Вы сможете выбрать любое поколение, удалённое хотя бы на два от персонажа [vampiresire.GetFirstName]."
