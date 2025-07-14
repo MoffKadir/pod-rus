@@ -1,7 +1,7 @@
 ﻿l_russian:
 
  POD_coterie_maintenance.1.t: "[ROOT.Char.Custom('PODCoterieNoTooltip')]: Основание"
- POD_coterie_maintenance.1.desc: "В последнее время я размышляю о преимуществах работы в команде.\n\nДоверие - весьма редкая вещь в  [Concept('world_of_darkness', 'Мире Тьмы')|E], но значит ли это, что я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] провести остаток своего существования в роли [Select_CString(ROOT.Char.IsFemale, 'одинокой волчицы', 'одинокого волка' )], не имея никого, кто бы сражался на моей стороне или поддерживал мои начинания?\n\nЕсли мной будет создана [ROOT.Char.Custom('PODCoterie')] из единомышленников, мы могли бы объединить наши навыки и ресурсы для будущих #L $pod_journeys|l$ий#!."
+ POD_coterie_maintenance.1.desc: "В последнее время я размышляю о преимуществах работы в команде.\n\nДоверие - весьма редкая вещь в [Concept('world_of_darkness', 'Мире Тьмы')|E], но значит ли это, что я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] провести остаток своего существования в роли [Select_CString(ROOT.Char.IsFemale, 'одинокой волчицы', 'одинокого волка' )], не имея никого, кто бы сражался на моей стороне или поддерживал мои начинания?\n\nЕсли мной будет создана [ROOT.Char.Custom('PODCoterie')] из единомышленников, мы могли бы объединить наши навыки и ресурсы для будущих #L $pod_journeys|l$ий#!."
  POD_coterie_maintenance.1.option.a: "Я создам новую группу ([ROOT.Char.Custom('PODCoterieNoTooltip')])."
  POD_coterie_maintenance.1.option.b: "В данный момент мне не нужна [ROOT.Char.Custom('PODCoterieNoTooltip')]."
 

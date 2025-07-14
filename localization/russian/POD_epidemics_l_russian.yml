@@ -72,7 +72,7 @@
  POD_epidemic.1302.t: "[SCOPE.Custom('EventTitleDisease')]: бегство от смерти"
  POD_epidemic.1302.desc: "Хотя шрамы могут оставаться как на моей коже, так и в моем сознании, кажется, что болезнь покинула мое тело. Я выживу. Время еще есть."
  POD_epidemic.1302.a: "Славься, [ROOT.Char.GetFaith.HealthGodName]! Я [Select_CString(ROOT.Char.IsFemale, 'здорова', 'здоров' )]!"
- POD_epidemic.1302.a.tt: "Теперь я [Select_CString(ROOT.Char.IsFemale, 'невосприимчива', 'невосприимчив' )] к такой хвори, как  [GetTrait('gift_of_melancholia').GetName( GetNullCharacter )]"
+ POD_epidemic.1302.a.tt: "Теперь я [Select_CString(ROOT.Char.IsFemale, 'невосприимчива', 'невосприимчив' )] к такой хвори, как [GetTrait('gift_of_melancholia').GetName( GetNullCharacter )]"
 
  epidemic_flaying_plague: "Свежующая чума"
  disease_flaying_plague: "свежующей чумой."
