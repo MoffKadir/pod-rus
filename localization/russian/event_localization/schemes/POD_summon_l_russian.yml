@@ -1,12 +1,13 @@
 ﻿l_russian:
-  
+
  POD_summon.10.desc: "Вы чувствуете, как ваша мистическая энергия касается разума [target.GetTitledFirstName]. \n Использование призыва - это агрессивная сила. Если только вы уже не в дружеских отношениях с [target.GetFirstNameNoTooltip], они будут возмущены тем, что dы применилb к ним силу крови. В случае успеха вам нужно будет продолжить вызов до тех пор, пока [target.GetFirstNameNoTooltip] не прибудет."
  POD_summon.10.option.a: "Иди ко мне!"
- POD_summon.10.crit_success.desc: "[target.GetFirstNameNoTooltip] поспешит к вам. Цель будет делать все, чтобы вас достичь."
+ POD_summon.10.crit_success.desc: "[target.GetFirstNameNoTooltip] поспешит к вам, делая всё возможное, чтобы добраться до вас."
  POD_summon.10.success_desc: "[target.GetFirstNameNoTooltip] прибудет к вам с разумной скоростью"
- POD_summon.10.failure_desc: "[target.GetFirstNameNoTooltip] будет сопротивляться вашему вызову, и вы не сможете повторить попытку [target.GetHerHim] вызова в течение 10 лет"
- POD_summon.10.botch_desc: "Ваш призыв потерпит критическую неудачу, вы не сможете повторить попытку [target.GetHerHim] вызова в течение 50 лет"
- POD_summon.10.option.b: "Я больше не хочу призывать [target.GetHerHis]"
+ POD_summon.10.failure_desc: "[target.GetFirstNameNoTooltip] сопротивляется вашему призову, и вы не сможете повторно призвать [target.GetHerHis] в течение 10 лет"
+ POD_summon.10.botch_desc: "Ваш призыв потерпит критическую неудачу, что лишит вас возможности повторно призвать [target.GetHerHis] в течение 50 лет"
+ POD_summon.10.option.b: "Я больше не хочу призывать [target.GetHerHis]."
+
  POD_summon.11.desc.crit_success: "Ваш призыв имел критический успех. [target.GetFirstNameNoTooltip] делает все, что в их силах, чтобы добраться до вас как можно скорее."
  POD_summon.11.desc.success: "[target.GetFirstNameNoTooltip] приближается к вам в разумном темпе."
  POD_summon.11.desc: "Вам нужно будет продолжать тратить очки крови, чтобы продвигать призыв до тех пор, пока [target.GetSheHe] прибывает."

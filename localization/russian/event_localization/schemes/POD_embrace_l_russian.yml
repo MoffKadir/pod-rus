@@ -75,7 +75,7 @@
  POD_embrace.420.t: "Творец монстров"
  POD_embrace.420.desc: "Через некоторое время [target.GetFirstName] открывает свои глаза. Вы видите гримасу ужаса на [target.GetHerHis] лице, и в этот момент к вам приходит ужасное осознание... Вы добились успеха, вы создали монстра, мерзость, которая теперь является вашим дитя."
  POD_embrace.420.option.a: "Наконец-то успех."
- POD_embrace.420.option.a.tt: "[target.GetFirstName] перестаёт быть перевёртышем и становится  [Concept('abomination', 'мерзостью')|E]."
+ POD_embrace.420.option.a.tt: "[target.GetFirstName] перестаёт быть перевёртышем и становится [Concept('abomination', 'мерзостью')|E]."
 
  POD_embrace.430.t: "Провалившиеся Объятия"
  POD_embrace.430.desc: "Несмотря на все ваши попытки, [target.GetFirstName] [Select_CString(target.IsFemale, 'умерла', 'умер' )]. Вы слышали только крики агонии, когда [target.GetHerHis] тело и душа яростно отвергали вашу кровь. И теперь [target.GetFirstName] действительно [Select_CString(target.IsFemale, 'умерла', 'умер' )]. Может быть, [target.GetHerHim] всё-таки повезло?"
@@ -172,7 +172,7 @@
  POD_embrace_ongoing.1030.diplomacy_bonus.desc: "Вы обнаружили, что с кем бы [target.GetSheHe] ни [Select_CString(target.IsFemale, 'встречалась', 'встречался' )], [target.GetSheHe] умеет поддержать светскую беседу, чтобы сделать собеседника уступчивым и податливым. Талант, который только усилится после Объятий."
  POD_embrace_ongoing.1030.martial_bonus.desc: "[target.GetFirstName] - прирождённый лидер. Вы обнаружили, что другие тяготеют к [Select_CString(target.IsFemale, 'ней', 'нему' )] и легко подчиняются [Select_CString(target.IsFemale, 'ей', 'ему' )]."
  POD_embrace_ongoing.1030.stewardship_bonus.desc: "Несмотря на трудности, [Select_CString(target.IsFemale, 'ей', 'ему' )] удаётся поддерживать свои финансы в порядке. [target.GetFirstName] легко освоит деловую сторону жизни."
- POD_embrace_ongoing.1030.intrigue_bonus.desc: "[target.GetSheHe|U] [Select_CString(target.IsFemale, 'поняла', 'понял' )], что коварство - полезный инструмент для выживания в человеческих отношениях.  Это вдвойне верно в мире нежити."
+ POD_embrace_ongoing.1030.intrigue_bonus.desc: "[target.GetSheHe|U] [Select_CString(target.IsFemale, 'поняла', 'понял' )], что коварство - полезный инструмент для выживания в человеческих отношениях. Это вдвойне верно в мире нежити."
  POD_embrace_ongoing.1030.learning_bonus.desc: "Немногие по-настоящему учатся понимать, что «Знание - сила». Однако [target.GetFirstName] [Select_CString(target.IsFemale, 'начала', 'начал' )] этот путь со склонности к чтению."
  POD_embrace_ongoing.1030.option.a: "Хорошее начало."
 

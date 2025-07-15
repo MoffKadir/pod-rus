@@ -91,8 +91,8 @@
  
  learn_true_name_monthly_num_current: "#TOOLTIP:learn_true_name_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('learn_true_name_progress')|1]%#!#!"
  learn_true_name_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('learn_true_name_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('learn_true_name_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('learn_true_name_progress')]"
- 
-  
+
+
  demon_temp_journey_monthly_num: "#TOOLTIP:demon_temp_journey_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('demon_temp_journey_progress')|1]%#!#!"
  demon_temp_journey_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('demon_temp_journey_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('demon_temp_journey_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('demon_temp_journey_progress')]"
  

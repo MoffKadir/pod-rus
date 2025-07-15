@@ -82,7 +82,7 @@
  # Replace struggle loca
 
  DYNASTY_VIEW_LEGACY_EXPLANATION: "Эти [dynasty_perks|El] влияют на всех членов династии #high [Dynasty.GetBaseNameNoTooltip]#!. Открывать новые [Concept( 'dynasty_perks', 'наследия' )|E] сложнее, поскольку каждый раз их стоимость увеличивается на [dynasty_prestige_i]#V 1000#!"
- culture_parameter_archer_era_improvement: "[men_at_arms|E] [GetMaA('longbowmen').GetName]  становятся лучше с каждой новой [Concept('era', 'эпохой')|E] вплоть до Позднего Средневековья."
+ culture_parameter_archer_era_improvement: "[men_at_arms|E] [GetMaA('longbowmen').GetName] становятся лучше с каждой новой [Concept('era', 'эпохой')|E] вплоть до Позднего Средневековья."
 
  #Remove bookmark age
 
@@ -361,22 +361,22 @@
 
  # Domicile flags (temporary)
  # Other flags (need to test):
- #  camp_infection_chance_buff_1
- #  camp_infection_chance_buff_2
- #  camp_infection_chance_buff_3
- #  camp_infection_chance_buff_4
- #  camp_infection_chance_buff_5
- #  camp_infection_chance_buff_6
- #  camp_improved_court_physician_aptitude
- #  camp_unlocks_forward_scouts
- #  camp_improved_musician_scheme_agent
- #  camp_more_likely_to_become_poet
- #  camp_improved_poet_scheme_agent
- #  camp_recruit_fool_events
- #  camp_recruit_locals_events
- #  camp_unlocks_poisoner_scheme_agents
- #  camp_improved_learning_contract_rewards
- #  camp_reduced_prisoner_escape_chance
+ # camp_infection_chance_buff_1
+ # camp_infection_chance_buff_2
+ # camp_infection_chance_buff_3
+ # camp_infection_chance_buff_4
+ # camp_infection_chance_buff_5
+ # camp_infection_chance_buff_6
+ # camp_improved_court_physician_aptitude
+ # camp_unlocks_forward_scouts
+ # camp_improved_musician_scheme_agent
+ # camp_more_likely_to_become_poet
+ # camp_improved_poet_scheme_agent
+ # camp_recruit_fool_events
+ # camp_recruit_locals_events
+ # camp_unlocks_poisoner_scheme_agents
+ # camp_improved_learning_contract_rewards
+ # camp_reduced_prisoner_escape_chance
  pod_only_if_unlanded: "#weak (только для авантюристов)#!"
  domicile_building_parameter_camp_unlocks_second_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('second_camp_officer').GetName()]» $pod_only_if_unlanded$"
  domicile_building_parameter_camp_unlocks_master_of_arms_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('master_of_arms_camp_officer').GetName()]» $pod_only_if_unlanded$"
@@ -440,7 +440,7 @@
  journey_skilled_scribes_desc: "#indent_newline:8 $BULLET_WITH_TAB$ К свите присоединятся два очень искусных персонажа со свойством «[GetTrait('devoted').GetName( GetNullCharacter )]». По завершении [Concept('activity', 'занятия')|E] они останутся у вас [Concept('courtiers', 'при дворе')|E], а вы получите [Concept('hooks', 'влияние')|E] «#EMP Обязательство#!» на них, которое снизит их жалование на [Concept('court_positions', 'придворных должностях')|E].#!\n\n#flavor Помощь извне никогда не бывает лишней — в конце концов, не могу же я в одиночку предусмотреть #EMP всё#!.#!"
  journey_skill_desc: "#weak Шанс дополнительного повышения опыта образа жизни по завершении: #V [Activity.MakeScope.Var('skill_chance').GetValue|0]%#!#!"
  extra_skill_gained_tt: "Вы получили дополнительный опыт образа жизни #weak (шанс - [activity.MakeScope.Var( 'skill_chance' ).GetValue|0]%)#!"
- no_extra_skill_gained_tt: "Вы не получили дополнительного опыта образа жизни  #weak (шанс - [activity.MakeScope.Var( 'skill_chance' ).GetValue|0]%)#!"
+ no_extra_skill_gained_tt: "Вы не получили дополнительного опыта образа жизни #weak (шанс - [activity.MakeScope.Var( 'skill_chance' ).GetValue|0]%)#!"
  scribes_skill_tt: "Выбранные [Concept('activity_options', 'параметры занятия')|E] принесли дополнительный опыт образа жизни"
  increase_skill_chance_25: "Шанс дополнительного повышения опыта образа жизни по завершении: #P +25%#!"
  increase_skill_chance_20: "Шанс дополнительного повышения опыта образа жизни по завершении: #P +20%#!"

@@ -1,15 +1,19 @@
 ﻿l_russian:
-  
-  ################### 
-  ####### GUI ####### 
- POD_heist_setup_suspicion_tt: "Вы начнете миссию [Concept('infiltration', 'проникновения')|E] в [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier]"
- POD_heist_suspicion: "[suspicion_with_icon|E]: [CurrentHeist.Var('suspicion').GetValue]"
- POD_heist_coterie: "Ваша группа [GetPlayer.Custom('PODCoterie')]: $POD_player_coterie$"
- POD_heist_coterie_member_absent: "@warning_icon!#X [Scope.Char.GetFirstNameNicknamed] #bold не#! участвует в этом [Concept('infiltration', 'проникновении')|E]#!"
- POD_heist_raise_suspicion_desc: "[suspicion_with_icon|E] #N увеличится#! на $VALUE|V0$"
- POD_heist_raise_suspicion_desc_past: "[suspicion_with_icon|E] #N понизится#! на $VALUE|V0$"
- POD_heist_trigger_suspicion_event_desc: "@warning_icon!#X Сложность вырастет на #bold $VALUE|V0$#! подозрения#!"
- POD_heist_trigger_suspicion_event_desc_past: "#N Так как [suspicion_with_icon|El] достигло #bold $VALUE|V0$#!, возникло осложнение#!"
+
+ ###################
+ ####### GUI #######
+ ###################
+
+ POD_heist_setup_suspicion_tt: "Вы начнёте миссию [Concept('infiltration', 'проникновения')|E] во владение [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier]"
+
+ POD_heist_suspicion: "#L $pod_suspicion_with_icon$ие#!: [CurrentHeist.Var('suspicion').GetValue]"
+ POD_heist_coterie: "Ваша [GetPlayer.Custom('PODCoterie')]: $POD_player_coterie$"
+ POD_heist_coterie_member_absent: "@warning_icon!#X [Scope.Char.GetFirstNameNicknamed] #bold не#! присутствует при этом [Concept('infiltration', 'проникновении')|E]#!"
+
+ POD_heist_raise_suspicion_desc: "#L $pod_suspicion_with_icon$ие#! #N возрастёт#! на $VALUE|V0$"
+ POD_heist_raise_suspicion_desc_past: "#L $pod_suspicion_with_icon$ие#! #N возросло#! на $VALUE|V0$"
+ POD_heist_trigger_suspicion_event_desc: "@warning_icon!#X Осложнение возникнет при #bold $VALUE|V0$#! ед. подозрения#!"
+ POD_heist_trigger_suspicion_event_desc_past: "#N Поскольку #L $pod_suspicion_with_icon|l$ие#! достигло #bold $VALUE|V0$#! ед., возникло осложнение#!" #ТУТЪ
  POD_heist_trigger_suspicion_event_hint: "#N Будущие проверки [Concept('skill', 'навыков')|E] в этом [Concept('infiltration', 'проникновении')|E] будут сложнее.#!"
  POD_heist_maximum_suspicion_desc: "@warning_icon!#X Вы провалите проникновение на уровне подозрения#! #bold [EmptyScope.ScriptValue('suspicion_max')|V0]#!"
  POD_heist_maximum_suspicion_desc_past: "#N Так как[suspicion_with_icon|E] достигло #bold [EmptyScope.ScriptValue('suspicion_max')|V0]#!, вы провалили это [infiltration|El].#!"
