@@ -198,14 +198,14 @@
  pod1230objectives_fae.151.desc: "После того как реки Восточной Европы перешли под ваш контроль, пугающее пространство под множеством мостов станет вашим владением. Никто не сможет перебраться через ревущие воды без вашего согласия. Все будут платить вам дань, в то время как вы сможете перемещать в этот мир порождения чистого кошмара так же легко, как на приятную прогулку."
  pod1230objectives_fae.151.a: "Никто не пройдёт без моего дозволения."
 
- sidhe_house_dominance_beaumayn_objective_decision: "The Brother's War"
- sidhe_house_dominance_beaumayn_objective_decision_desc: "House Beaumayn has been divided by a bitter clandestine feud by the brothers [GetScriptedCharacterByHistoryID('POD_fae_character_53').GetFirstName] and [GetScriptedCharacterByHistoryID('POD_fae_character_54').GetFirstName]. All members with the house are obsessed with the fatal final prophecy of Duke [GetScriptedCharacterByHistoryID('POD_fae_character_52').GetFirstName]: does the Road of Iron promise salvation or destruction? The House will determine its path through a secret war."
- sidhe_house_dominance_beaumayn_objective_decision_tooltip: "You will defeat the other side's argument — permanently."
- sidhe_house_dominance_beaumayn_objective_decision_confirm: "Settle the debate, once and for all"
- brandell_victory_modifier: "Escheat Holder"
- markesh_victory_modifier: "Harbingers of Exodus"
- sidhe_house_dominance_beaumayn_objective_decision_custom: "[TARGET_CHARACTER.GetFirstName] must be dead"
- 
+ sidhe_house_dominance_beaumayn_objective_decision: "Братская война"
+ sidhe_house_dominance_beaumayn_objective_decision_desc: "Дом Бомейн был разделён из-за ожесточённой негласной вражды между братьями - #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('POD_fae_character_53').GetID] #L Бранделлом#!#! и #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('POD_fae_character_54').GetID] #L Маркешом#!#!. Все члены дома одержимы роковым финальным пророчеством герцога #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('POD_fae_character_52').GetID] #L Геремина#!#!: сулит ли Железная дорога спасение или разрушение? Дому предстоит определить свой путь в тайной войне."
+ sidhe_house_dominance_beaumayn_objective_decision_tooltip: "Вы окончательно опровергнете доводы другой стороны."
+ sidhe_house_dominance_beaumayn_objective_decision_confirm: "Раз и навсегда уладить спор."
+ brandell_victory_modifier: "Хранители Закона"
+ markesh_victory_modifier: "Предвестники Исхода"
+ sidhe_house_dominance_beaumayn_objective_decision_custom: "[TARGET_CHARACTER.GetFirstName] должен быть мёртв"
+
  pod1230objectives_fae.160.t: "Iron Schism"
  pod1230objectives_fae.160.desc: "The debate on Duke [GetScriptedCharacterByHistoryID('POD_fae_character_52').GetFirstName]'s final fatal prophecy is settled by the destruction of the other side of the argument. Through blood the unity of the house has been restored, and your leadership of the Beaumayn is unquestioned."
  pod1230objectives_fae.160.a: "The followers of [GetScriptedCharacterByHistoryID('POD_fae_character_53').GetFirstName] are victorious and will enforce the Eschet!"
@@ -376,26 +376,26 @@
 
  pod1230objectives_fae.181.t: "Dreaming Guard"
  pod1230objectives_fae.181.desc: "As the leader of House Danaan, you have roamed the many paths through the [UmbraGlossaryLocalized('dreaming','Грёзы')]. You now guard its trods and blaze new trails. You have acted as a guide to many dreamers. By your Oath to the Dragon you have gained the favor of many Chimera. You have raised an impressive horde of Chimera who await your commands, willing to even invade the Autumn world at your call."
- pod1230objectives_fae.181.a: "For Defense of the Trods to Arcadia!"  
- 
+ pod1230objectives_fae.181.a: "For Defense of the Trods to Arcadia!"
 
- become_santa_objective_decision: "Become Santa"
- become_santa_objective_decision_desc: "You have one particular mad plan to avoid the loss of immortality that is coming with the Shattering. By regularly distributing chimerical toys to countless children every Yule, you will live eternally because of their belief in you. They'll write letters to you requesting aid. They will honor the old ways and leave out offerings to satisfy your bottomless hunger."
- become_santa_objective_decision_before_last_date: "You must become Santa before the Black Death and the Shattering!"
- become_santa_objective_decision_winter_capital: "It must be winter in your capital"
- become_santa_objective_decision_court_antiquarian_excellent: "You must employ a [GetTrait('boggan').GetName( GetPlayer )] or [GetTrait('nocker').GetName( GetPlayer )] [GetCourtPositionType('antiquarian_court_position').GetName()] with good [aptitude|E]"
- become_santa_objective_decision_tooltip: "You will become immortal by distributing chimerical toys to countless children every Yule"
- become_santa_objective_decision_deer_pooka: "You need at least one [GetTrait('pooka').GetName( GetPlayer )] courtier with a [GetModifier('POD_pooka_deer_affinity_modifier').GetNameWithTooltip]. Santa needs a reindeer!"
- become_santa_objective_decision_elves: "You need at least three [GetTrait('nocker').GetName( GetPlayer )] and three [GetTrait('boggan').GetName( GetPlayer )] courtiers. Santa's workshop needs 'elves'."
- become_santa_objective_decision_confirm: "I will become Santa, the Bringer of Presents"
- become_santa_objective_decision_louhi: "[GetScriptedCharacterByHistoryID('790633').GetFirstName] the Wicked may try to prevent your ascension, she needs to be dead or in [torpor|E]" 
- become_santa: "You become Santa!"
- pod1230objectives_fae.1000.t: "Santa Eternal!"
- pod1230objectives_fae.1000.desc: "It is done! Countless children have been delivered chimerical presents. Countless children believe in you! Their dreams fill you with an unending font of glamour! The world can be racked with bloody wars, horrific plagues, dreadful inquisitions and soul-crushing banality—but you will endure!\n\n #EMP 'On this day earth shall ring \nwith the song children sing \nto the Lord, Christ our King, \nborn on earth to save us; \nhim the Father gave us.\n\nHis the doom, ours the mirth; \nwhen he came down to earth, \nBethlehem saw his birth; \nox and ass beside him \nfrom the cold would hide him.\n\n God's bright star, o'er his head, \nWise Men three to him led; \nkneel they low by his bed, \nlay their gifts before him, \npraise him and adore him. \n\nOn this day angels sing; \nwith their song earth shall ring, \npraising Christ, heaven's King, \nborn on earth to save us; \npeace and love he gave us. \n\nIdeo, o, o, Ideo, o, o, \nideo gloria in excelsis Deo!'#!" 
- 
-# The Latin text is probably a musical parody of an earlier 12th century song beginning "intonent hodie voces ecclesie", written in honour of Saint Nicholas, the patron saint of Russia, sailors and children – to whom he traditionally brings gifts on his feast day, 6 December. https://en.wikipedia.org/wiki/Personent_hodie
- 
- pod1230objectives_fae.1000.a: "Ho ho ho!"
+
+ become_santa_objective_decision: "Стать Сантой"
+ become_santa_objective_decision_desc: "У вас есть один безумный план, как избежать потери бессмертия, которая наступит вместе с Расколом. Регулярно раздавая химерические игрушки бесчисленному количеству детей на каждый Йоль, вы будете жить вечно, потому что они будут верить в вас. Они будут писать вам письма с просьбой о помощи. Они будут чтить старые обычаи и оставят подношения, чтобы утолить ваш безграничный голод."
+ become_santa_objective_decision_before_last_date: "Вы должны стать Сантой до того, как придёт Чёрная смерть и наступит Раскол!"
+ become_santa_objective_decision_winter_capital: "В вашей столице должна быть зима"
+ become_santa_objective_decision_court_antiquarian_excellent: "У вас должен быть нанят [GetCourtPositionType('antiquarian_court_position').GetName()] со свойством «[GetTrait('boggan').GetName( GetPlayer )]» или «[GetTrait('nocker').GetName( GetPlayer )]» с хорошей [Concept('aptitude', 'пригодностью')|E]"
+ become_santa_objective_decision_tooltip: "Вы обретёте бессмертие, раздавая химерические игрушки бесчисленному количеству детей на каждый Йоль"
+ become_santa_objective_decision_deer_pooka: "У вас должен быть один придворный со свойством «[GetTrait('pooka').GetName( GetPlayer )]» с модификатором [GetModifier('POD_pooka_deer_affinity_modifier').GetNameWithTooltip]. Санте нужен северный олень!"
+ become_santa_objective_decision_elves: "У вас должны быть три придворных со свойством «[GetTrait('nocker').GetName( GetPlayer )]» и три придворных со свойством «[GetTrait('boggan').GetName( GetPlayer )]». Мастерской Санты нужны «эльфы»."
+ become_santa_objective_decision_confirm: "Я стану Сантой, [Select_CString(ROOT.Char.IsFemale, 'приносящей', 'приносящим' )] подарки."
+ become_santa_objective_decision_louhi: "Злая [GetScriptedCharacterByHistoryID('790633').GetFirstName] может попытаться помешать вашему вознесению, она должна быть мертва или находиться в [Concept('torpor', 'торпоре')|E]"
+ become_santa: "Вы становитесь Сантой!"
+ pod1230objectives_fae.1000.t: "Вечный Санта!"
+ pod1230objectives_fae.1000.desc: "Свершилось! Бесчисленному множеству детей были вручены химерические подарки. Бесчисленное множество детей верят в вас! Их мечты наполняют вас бесконечным гламуром! Мир может быть охвачен кровопролитными войнами, ужасающими эпидемиями, ужасными инквизициями и душераздирающей банальностью — но вы выстоите!\n\n #EMP «В этот день земля зазвонит \nс песней поют дети \nГосподу, Христу, Царю нашему, \nрожден на земле, чтобы спасти нас; \nЕго Отец даровал его нам нам. \nИтак, слава в вышних Богу \nЕго смерть будет нашим искуплением; \nкогда он спустился на землю, \nВифлеем увидел его рождение; \nкорова и ослица рядом с ним \nот холода скроет его. \nИтак, слава в вышних Богу\nБожественная звезда сияет у него над головой, \nТрое волхвов пришли к нему; \nпреклонить колени у его кровати, \nони кладут перед ним свои дары, \nхвалите его и обожайте его. \nИтак, слава в вышних Богу \nВ этот день поют ангелы; \nот их песни земля звенит, \nвосхваляя Христа, Царя небес, \nрожденного на земле, чтобы спасти нас; \nмир и любовь он дал нам».#!"
+
+ # The Latin text is probably a musical parody of an earlier 12th century song beginning "intonent hodie voces ecclesie", written in honour of Saint Nicholas, the patron saint of Russia, sailors and children – to whom he traditionally brings gifts on his feast day, 6 December. https://en.wikipedia.org/wiki/Personent_hodie
+
+ pod1230objectives_fae.1000.a: "Хо-хо-хо!"
 
  POD_region_borbetomagus: "Borbetomagus"
  POD_region_rhineland: "The Rhineland"
