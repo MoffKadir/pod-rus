@@ -1592,140 +1592,174 @@
  PODcanon_chars.58.b: "Я [Select_CString(ROOT.Char.IsFemale, 'сама', 'сам' )] себе [Select_CString(ROOT.Char.IsFemale, 'хозяйка', 'хозяин' )]!"
  hardestadt_takeover_tt: "Вы станете Хардештадтом, получите его свойства, потеряете свои и даже станете [Select_CString(ROOT.Char.IsFemale, 'похожей', 'похожим' )] на него."
 
- podintroductions.219.desc: "Cunning lady, you are one of the Shih, the inheritors of the infamous Celestial Army. The fall of this great alliance has disorganized your kind and you now hunt alone. You have already proven quite adept at this game, using your clueless husband connections among the nobles to track down then dispatch unsuspecting supernaturals foes.\nStill, there is a greater prize at stake. The fall of the Celestial Army saw their most prized artifacts scattered to the four winds, now used as trophies (or worse, weapons) by the undeserving. Your powerful mystical fans already serve you well but you dream of what you would be able to accomplish if you were able to recover these treasures. They are formidable relics on their own for sure, but it would also lend much prestige to their owner, perhaps putting you on the path of reforming the Celestial Army if you so wished."
- podintroductions.219.a: "I have tracked them down, now to acquire them..."
+ podintroductions.219.desc: "Хитрая леди, вы - одна из ши, наследниц печально известного Небесного воинства. Падение этого великого альянса дезорганизовало ваш род, и теперь вы охотитесь в одиночку. Вы уже показали себя весьма искусной в этой игре, используя свои невежественные связи мужа среди знати, чтобы выслеживать, а затем уничтожать ничего не подозревающих сверхъестественных врагов.\nТем не менее, на кону стоит более ценный приз. После падения Небесного воинства их самые ценные артефакты разлетелись по всем четырём ветрам, и теперь их используют в качестве трофеев (или, что ещё хуже, оружия) недостойные. Ваши могущественные мистические поклонники уже хорошо служат вам, но вы мечтаете о том, чего бы вы смогли достичь, если бы смогли вернуть эти сокровища. Конечно, они сами по себе являются грозными реликвиями, но это также придало бы большой престиж их владельцу, возможно, направив вас на путь реформирования Небесного воинства, если бы вы того пожелали."
+ podintroductions.219.a: "Я разыскала их, чтобы ныне возглавить..."
 
  PODcanon_chars.59.t: "Наследие Монкады"
- PODcanon_chars.59.desc: "Леди Люсита, несколько лет назад вы одержали победу над вашим обвиняемым сиром Монкадой, но эта победа начинает казаться пустой. Вы посвятили все свои силы тому, чтобы уничтожить его, и теперь дело сделано... вы бесцельны, переходите от одного дела к другому в надежде найти новую движущую цель своего существования.\nХуже того, у вас возникает неприятное ощущение, что Монкада предсказал такой исход и этот самый момент. Действительно, ваш [Concept('Sire', 'сир')|E] часто говорил о своем святом долге и вашем предназначении следовать по его стопам, хотите вы этого или нет. В то время это звучало как угроза, но сейчас... возможно, больше как пророчество. Возможно, он был прав, и, возможно, его долг с самого начала должен был стать вашим долгом.\nКажется, не так-то просто избежать своей судьбы."
+ PODcanon_chars.59.desc: "Леди Люсита, несколько лет назад вы одержали победу над вашим обвиняемым сиром, Монкадой, но эта победа начинает казаться пустой. Вы посвятили все свои силы тому, чтобы уничтожить его, и теперь дело сделано... вы бесцельны, блуждаете от одного дела к другому в надежде найти новую движущую цель своего существования.\nХуже того, у вас возникает неприятное ощущение, что Монкада предсказал этот исход и этот самый момент. Действительно, ваш [Concept('Sire', 'сир')|E] часто говорил о своём святом долге и вашем предназначении следовать по его стопам, хотели вы этого или нет. В то время это звучало как угроза, но сейчас... возможно, больше похоже на пророчество. Возможно, он был прав, и, возможно, его долг с самого начала должен был стать вашим долгом.\nКажется, не так-то просто избежать своей судьбы."
  PODcanon_chars.59.a: "Теперь я понимаю."
  PODcanon_chars.59.b: "Я не могу позволить ему победить!"
 
- PODcanon_chars.93.desc: "Lady Lucita, your [Sire|E] has been most pleased with your growth. Whether you worked for him or not didn't really matter to him in the end as everything he did was for you. In his (deluded?) mind, he was just the messenger having to pave the way for your ascension as the Queen of the Night.\nIt is an ambition you never had before and a frightening prospect but as Moncada offers to step down and gives you everything he has, the prospect is still enticing. It won't be freedom, not really, but power is its own form of liberation. At least, that is what Moncada and his teachings said and perhaps for the first time in your existence, you can see the allure of this philosophy.\nPerhaps your story was never one of rebellion but one of coming of age and finally embracing your grand destiny."
- lucita_landless_transfer_tt: "You will inherit all titles held by Ambrosio Luis Moncada"
+ PODcanon_chars.93.desc: "Леди Люсита, ваш [Concept('Sire', 'сир')|E] был очень доволен вашим возвышением. В конечном счете, для него не имело значения, работали вы на него или нет, поскольку всё, что он делал, было для вас. В его (заблуждении?) мнениях, он был всего лишь посланником, который должен был проложить путь к вашему восхождению в качестве Королевы ночи.\nЭто амбиции, которых у вас никогда раньше не было, и пугающая перспектива, но поскольку Монкада предлагает уступить и отдаёт вам всё, что у него есть, перспектива по-прежнему заманчива. Это не будет свободой, не совсем, но власть - это сама по себе форма освобождения. По крайней мере, так гласил Монкада и его учение, и, возможно, впервые за все время вашего существования вы можете ощутить всю привлекательность этой философии.\nВозможно, ваша история никогда не была историей бунта, а историей взросления и окончательного принятия своего великого предназначения."
+ lucita_landless_transfer_tt: "Вы унаследуете все титулы Амбросио Луиса Монкады"
 
  podintroductions.220.t: "Ваша история" #НИЖЕ НЕ ПРОВЕРЕНО, МАММИ
  podintroductions.220.desc: "Могучий Гор, ваша легендарная война против вашего чудовищного дяди Сета должна продолжаться. Вы не станете отрицать, что были и неудачи, и Змеиное отродье в Египте по-прежнему сильно. Но это не имеет значения, потому что вы мститель. Осирис и Исида наблюдают за вами из потустороннего мира, с нетерпением ожидая момента, когда вы, наконец, отправите этого трусливого змея, вопящего, обратно в бездну, которая его породила.\nСоберите своих верных воинов и готовьтесь к походу на север. Пришло время покончить с этим раз и навсегда."
  podintroductions.220.a: "Я иду за тобой, дядя..."
  horus_intro_tooltip: "Как Хорус вы обладаете специальной целью достижения возмездия."
+
  horus_decision: "Мститель"
  horus_decision_tooltip: "Скоро я буду сниться тебе в кошмарах, дядя."
  horus_decision_desc: "Если вы хотите найти убежище Сета, вам сначала нужно подорвать силу его сектантов и уничтожить его самых надежных последователей."
  horus_decision_confirm: "Where is he?!"
- horus_custom_decision_1: "[TARGET_CHARACTER.GetFirstName], любимый сын сета, должен быть мертв."
- horus_custom_decision_2: "[TARGET_CHARACTER.GetFirstName], опора культа Сета, должна быть мертва."
- horus_custom_decision_3: "[TARGET_CHARACTER.GetFirstName], наложница Сета, должна быть мертва."
- horus_custom_decision_4: "[TARGET_CHARACTER.GetFirstName], чемпион Сета, должен быть мертв."
+ horus_custom_decision_1: "[GetScriptedCharacterByHistoryID('505094').GetFirstName], любимый сын Сета, должен быть мертв"
+ horus_custom_decision_2: "[GetScriptedCharacterByHistoryID('790126').GetFirstName], опора культа Сета, должна быть мертва"
+ horus_custom_decision_3: "[GetScriptedCharacterByHistoryID('790128').GetFirstName], наложница Сета, должна быть мертва"
+ horus_custom_decision_4: "[GetScriptedCharacterByHistoryID('790988').GetFirstName], чемпион Сета, должен быть мертв"
  horus_decision_effect_tooltip: "Ваша месть свершится."
+
  horus_the_avenger_modifier: "Гор, мститель"
  horus_the_avenger_modifier_desc: "Живой фараон, Бессмертный сын, Хер-неди-теф-эф, Вернувшийся царь, Одноглазый царь, Первый среди возрожденных и много-много других титулов... но прежде всего, Проклятие Сета."
  PODcanon_chars.60.custom.tt: "Все остальные Сетиты будут лишены своих земель."
  horus_first_modifier: "Гор, первый"
  horus_first_modifier_desc: "Гор был мумифицирован собственной матерью, Исидой. Таким образом, он сохранил гораздо больше своей изначальной силы, чем любой другой бессмертный."
+
  PODcanon_chars.60.t: "Обезглавливание змеи"
  PODcanon_chars.60.desc: "Разочаровывающе.\nПосле того, как вы разрушил его культ до основания и убил его самых доверенных советников, вы ожидали, что он предложит вам славную финальную битву, чтобы отпраздновать вашу победу. Правда, вам пришлось пробиваться сквозь сотни обезумевших фанатиков, чтобы добраться до фундамента этой пирамиды, и теперь вы весь в крови, но это была всего лишь разминка. И вот вы стоите перед саркофагом вашего дяди, в котором спит этот глупец, и время от времени двигаясь, возможно, отчасти осознавая, какая судьба уготована ему.\nВы начинаете с того, что самозабвенно кромсаете его труп, пока от него не остаются лишь кусочки. Затем вы выходите на улицу, позволяя божественному Ра сжечь останки дотла. Кроме его глаза, который вы бросаете проходящему мимо падальщику в память о своей собственной погибели.\nИ тогда, только тогда, вы падаете на колени и позволяешь песку смыть вас, пока вы не возродитесь снова, впервые за многие века освободившись от жажды мести."
  PODcanon_chars.60.a: "Отец, мать, покойтесь с миром."
+
  podintroductions.221.t: "Ваша история"
  podintroductions.221.desc: "Благословенная царица Египта, вы мудро дистанцировались от глупого крестового похода Гора. Вместо этого вы озабочены более важными делами, такими как сохранение величия Древнего Египта в сознании смертных. Поистине, это огромная задача, даже для такой преданной своему делу и влиятельной личности, как вы.\nОднако у вас нет выбора, поскольку Хорус одержим жаждой войны, а порочные последователи Сета развращают вашу любимую родину, и только вы можете помнить, что когда-то делало Египет таким особенным и могущественным местом. Ваш долг - поддерживать это пламя."
  podintroductions.221.a: "Единственное, что достойно наследия Исиды - это сам Египет"
  neferukhayt_intro_tooltip: "Как Неферукхайт, вы не можешь изменить культуру.\nОднако ваша задача по продвижению культуры более значительна."
+
  socialite_queen_egypt_modifier: "Королева общества"
  socialite_queen_egypt_modifier_desc: "Неферухайт - воплощение величия Древнего Египта. Разговаривая с ней, начинаешь чувствовать, что Кхем действительно вечен."
+
  NEFERUKHAYT_CULTURE_BONUS: "Страсть Неферукхайт"
+
  podintroductions.222.t: "Ваша история"
  podintroductions.222.desc: "Великолепный Хемхемти, вы - одна из семи Проклятых мумий, созданных самим Сетом. И, насколько вы можете судить, вы единственный компетентный из этой жалкой компании (за исключением Амама, который, по крайней мере, очень приятный собеседник). Таким образом, вы должны взять на себя инициативу и позаботиться о том, чтобы ваша божественная миссия разрушения была выполнена.\nОчевидно, что от остальных шестерых вы ожидаете только полного повиновения и готовности расстаться со своим золотом в любой момент, если вам это понадобится. Вы всегда любили золото, даже будучи простым смертным, и, очевидно, оно лучше помещается в ваших объемистых карманах, чем в их скудных сокровищницах. А если у них под рукой окажется недостаточно золота? Что ж, может быть, они могли бы стать почетными гостями на одном из ваших знаменитых банкетов..."
  podintroductions.222.a: "Что может быть лучше, чем сытый желудок и полная казна?"
  hemhemti_intro_tooltip: "Как Хемхемти, вы имеете прямой доступ к решению вымогательства. Это уникальное решение также снимает стресс."
+
  hunted_down_eternity_modifier: "Вечно преследуемый"
  hunted_down_eternity_modifier_desc: "Хорус и его Шемсу-Херу никогда не перестанут охотиться на вас. Сет и его Проклятые мумии тоже не перестанут. И каждый жадный маг или вампир, желающий истинного бессмертия, тоже отправится в погоню.\nТакова ваша судьба."
  cabirus_intro_tooltip: "Вы сохраните доступ к Заклинанию жизни и возможность создавать новых мумий, но за вами будут постоянно охотиться люди, которые хотят заполучить это Заклинание для себя."
  cabirus_intro_giveup_tooltip: "Вы отказываетесь от своих знаний о Заклинании жизни, что лишает вас возможности создавать новых мумий в будущем."
+
  podintroductions.223.t: "Ваша история"
  podintroductions.223.desc: "Мастер Кабир, вы совершили невозможное: изучили Заклинание жизни и вырвали истинное бессмертие из рук Богов... но боги разгневаны. С того славного дня, когда вы превратились в мумию, за вами охотилось множество людей, которые хотели заполучить это Заклинание для себя.\nЕдинственный выход (кроме медленной и мучительной смерти), который вам когда-либо был дан, - это сам Гор, попросивший вас позволить ему стереть Заклинание жизни из вашей памяти. Это, безусловно, остановило бы ваших преследователей, но в то же время означало бы, что вы никогда больше не сможете создать новую мумию. А бессмертие можно быть мучительно долгим, если его переносить в одиночестве..."
  podintroductions.223.a: "Я не могу быть в бегах всю свою бессмертную жизнь!"
  podintroductions.223.b: "Я выдержу, как и всегда"
+
  helen_internal_modifier: "Внутренние вопросы"
  helen_internal_modifier_desc: "Вы сосредоточены на внутренних делах, стараясь как можно быстрее укрепить свою новообретенную власть над Септом Славы Солнца."
+
  shaky_helen_modifier: "Оспариваемое право"
  shaky_helen_modifier_desc: "Вы захватили эту Септу прямо под носом у ее жителей, гару. Они не забыли этого факта."
+
  podintroductions.225.t: "Ваша история"
  podintroductions.225.desc: "Отважная Хелен, своими решительными действиями и огромной силой воли ты добилась власти в престижном Септе Славы Солнца. К сожалению, большая часть Септа пока еще не признает ваш приход к власти, и эта разобщенность может стать благоприятной возможностью для многочисленных врагов Септа. Вы должен действовать.\nВы могли бы сделать вид, что прислушиваетесь к их опасениям, или же вместо этого могли бы обратиться за помощью к своим сестрам, чтобы по-настоящему превратить Солнечную Славу в септу Черных фурий. Очевидно, что такой выбор был бы непопулярен среди нынешних жителей Септы."
  podintroductions.225.a: "I will listen to your concerns."
  podintroductions.225.b: "Sisters, we will remake this land!"
  podintroductions.225.c: "I don't need any help!"
+
  lucille_intro_tooltip: "As Lucille, you start with more gold thanks to your previous exploits. You also have unique access to the Purchase Truce [Concept('character_interaction', 'взаимодействие персонажа')|E]."
+
  podintroductions.226.t: "Ваша история"
  podintroductions.226.desc: "Crafty Lucille, the Field of Stars Sept has been decimated after a pyrrhic victory against the nearby Inquisitors. With most of their leadership gone, you had little difficulty in becoming the last hope of the beleaguered defenders. You know that bravery and force of arms won't be enough to win the day against your powerful foes however.\nSince many of your neighbors think you weak or insignificant, you might be able to convince a few of them to look the other way for a while for the promise of a bag of coins. And, as fate will have it, you have several of those bag of coins laying around from your previous adventures."
  podintroductions.226.a: "Who doesn't like gold?"
+
  timno_intro_tooltip: "As Timno, each child you personally tutor will gain 5 stewardship and 5 diplomacy once they come of age."
+
  podintroductions.227.t: "Ваша история"
  podintroductions.227.desc: "Wise Timno, your Sept sits at the crossroads of many powerful realms. You will have to be careful about your powerful vampiric neighbors of the Free State and the Shadow Curtain. Making contact with the Get of Fenris of Sweden or the Silver Fangs of Russia could be of help.\nIn any case, you know that the fight for Gaia will continue long after your passing. As such, you have vowed to prepare the next generation as best as you can for the trials that await them. This might be the key to the ultimate victory against the Apocalypse."
  podintroductions.227.a: "They will be ready."
+
  podintroductions.228.t: "Ваша история"
  podintroductions.228.desc: "Отважный Бладдуд, после множества приключений ты вернулся из изгнания, чтобы возглавить Фианну Британских Островов в их трудное время. Твой харизматичный характер и продуманные стратегии спасли их от худшего, но впереди еще много работы.\nТем не менее, есть еще одна проблема, о которой нужно подумать - более личная. Твой предок был опозорен за свои связи с вампиром по имени Стефания, что привело к изгнанию твоего рода. Хотя ты доказал свою доблесть, Стефания все еще на свободе и играет с тобой в свои игры. Были намеки, предупреждения и даже пророчества: тебе предстоит встретиться с ней в будущем. Возможно, ты победишь, возможно, нет, но важно то, что ты будешь сражаться с ней, держа в руках меч, смывая позор, который до сих пор омрачает твой род."
  podintroductions.228.a: "Мне не избежать моей судьбы."
  bladdud_intro_tooltip: "Если вы оба еще живы, Стефания придет за вами через 10 лет."
+
  podintroductions.229.t: "Схватка судьбы"
  podintroductions.229.desc: "Она здесь. Та, что обманула вашего предка и с тех пор преследует вашу семью. Она не торопилась, но злодей наконец-то закончил играть с тобой.\nВы доказали, что ваша душа непорочна, поэтому она приходит не с обещаниями или предложениями, а с обнаженными клыками.\nВы не подчинитесь. Вы не отступите. Ваши предки наблюдают за вами, надеясь, что вы будете тем, кто отомстит за их позор. Пришло время встретить свою судьбу, Бладдад."
  podintroductions.229.a: "Гея смотрит на меня!"
  podintroductions.229.effect.success.desc: "Стефания повергнута!"
  podintroductions.229.critical.failure.effect.desc: "Одной храбрости было не достаточно."
+
  podintroductions.230.t: "Триумф над судьбой"
  podintroductions.230.desc: "Вы сделали это, король Бладдуд. Стефания теперь не более чем прах у ваших ног, последние следы позора вашего рода развеяны ветром. Вас охватывает огромное облегчение, потому что, хотя вам все еще предстоит вести Фианну к их будущему, вы знаете, что чертоги ваших предков снова чисты и готовы принять вас, как только придет время.\nВы уходите с поля боя, готовые вернуться к своему народу. Это время празднования, и барды захотят услышать все об этой дуэли, чтобы убедиться, что ваша история будет рассказана у походных костров до самого Апокалипсиса."
  podintroductions.230.a: "Победа на вкус почти такая же сладкая, как эль."
+
  podintroductions.231.t: "Встреча с судьбой"
  podintroductions.231.desc: "Никто не может избежать своей судьбы, король Бладдад, даже вы. Как и было предсказано в пророчествах, Стефания еще долго будет омрачать и проклинать ваш род. Когда вы, истекая кровью, лежите на земле, вы понимаете, что все же одержали победу. Ваше племя надолго запомнит смерть с мечом в руке против такого могущественного врага, а позорное прошлое вашего рода будет прощено.\nМожет быть, когда-нибудь один из ваших потомков отомстит за вас и, наконец, положит конец этой вражде. Но до тех пор вы закрываете глаза в последний раз, надеясь, что Гея примет своего павшего защитника в свои объятия."
  podintroductions.231.a: "Я умру, как и жил."
+
  depopulated_fenris_modifier: "Lost Generation"
  depopulated_fenris_modifier_desc: "Too many brave Fenrir and their kinfolk died during the war against Odin. It will take time for the Caerns to repopulate."
+
  podintroductions.232.t: "Ваша история"
  podintroductions.232.desc: "Lady Yvonne, you were away in a mission in England when the climatic fight against Odin happened. While the brave warriors returned victorious, the cost was way too high. Too many experimented Fenrir and their devoted kinfolk died during that campaign. So many in fact that you were suddenly the most likely choice for leadership among the remaining Jarls.\nYou can't say it out loud, but you know the situation is dire. An entire generation was lost for, in the end, little gain against the accursed spawns of Odin. You will have to rely on quick raids until the Fenrir have recuperated their strength enough to resume the war."
  podintroductions.232.a: "We must lick our wounds."
+
  podintroductions.233.t: "Ваша история"
  podintroductions.233.desc: "Crafty Stains-Glass, you earned your nickname and your fame for your daring raids and tricks against the followers of the White Cross but the time of carelessness is ending. From the east come a new breed of invaders, men living with their horses, trampling both humans and wolves under their hooves. These are dangerous foes, and you can feel the scent of the accursed vampires among them.\nYou are respected among the local packs, and they now look to you to lead them in more daring raids. This time however, these will be raids of blood, to remind these easterners that the steppes are a land for wolves and no one else."
  podintroductions.233.a: "We hunt. They die."
  stains_intro_tooltip: "Each time Stains Glass's army loots a barony, she gets additional prestige."
+
  podintroductions.234.t: "Ваша история"
  podintroductions.234.desc: "Lady Elizaveta, the Shadow Lords of the Night Sky face a dire situation. The recent attacks against the hated Tzimisce haven't been successful and only their war against the Tremere distracts them from pitting their full might against you.\nThe nearby Silver Fangs of the Crescent Moon, taking their duties as rulers of the Garou Nation seriously, have offered their aid. This is a tempting offer, but even considering this option makes your proud Shadow Lord's blood boils. Accepting their claim for leadership would be shameful in the eyes of many of your tribes-mates, but maybe pride must take a backseat this time."
  podintroductions.234.a: "We proudly stand alone!"
  podintroductions.234.b: "Some help would be welcome."
  podintroductions.234.c: "They are our Kings. For now."
+
  podintroductions.235.t: "Ваша история"
  podintroductions.235.desc: "Wise Wepauwet, the Silent Striders once again look up to you to lead them in their forced exile. You are the last one to remember Old Egypt, and they hope that you will oneday lead them back to your homeland.\nTruly, you are one of a kind. As one of Horus' earliest supporters, you were given the Spell of Life and almost became a Mummy but Owl, the guardien spirit of your tribe, intervened. With his blessing you are now... something else: immortal, part mummy but still fully werewolf as well. Use this considerable boon to help your stranded people finally find purpose once more."
  podintroductions.235.a: "I'm the bridge between worlds."
  wepauwet_intro_tooltip: "As Wepauwet, you are immortal, get access to some Mummy abilities but still retain the full Werewolf capabilities as well."
+
  podintroductions.236.t: "Ваша история"
  podintroductions.236.desc: "Wise Chakal, you have been leading the Stargazers as a respected mentor for a while now and will hopefully do so for the coming future.\nDuring those times you befriended your strange neighbor, the vampire Milarepa, a mysterious but wise fellow that seems to enjoy very much conversing with your people about many spiritual topics. He has been a friend to your people since his help protecting the Caern against a fearsome Nexus Crawler a century ago. This kind of friendship between vampire and werewolf is almost unheard of but you still treasure it. Such an old and knowledgeable creature doesn't come around that often and there is still much you wish to understand about him and his view on the world."
  podintroductions.236.a: "I'm the bridge between worlds."
  chakal_intro_tooltip: "As long as both you and Milarepa are still best friends, he will regularly come over to converse with you, offering several boons."
+
  podintroductions.237.t: "Odd Friend"
  podintroductions.237.desc: "Milarepa has recently came down from his mountain refuge to your court, hoping to spend some time among your people and converse with them. While many are still wary of a vampire's presence in this sacred hold, you know Milarepa to be harmless and show the way by being the first to greet him and ask him about his current prospects."
  podintroductions.237.a: "An old book? Do tell."
  podintroductions.237.b: "The spirits? We know a thing or two about them."
  podintroductions.237.c: "The Gaiadharma? Where to begin..."
+
  tvarivich_twins_modifier: "The Fated Twins"
  tvarivich_twins_modifier_desc: "The Tvarivich twins have much to accomplish. As long as they are together, they are unstoppable."
+
  podintroductions.238.t: "Ваша история"
  podintroductions.238.desc: "Bold Yuri, you are the rightful King of the Silver Fangs and, as such, of all the Garou Nation. Despite your already great adventures and many claims of fame, there are those that still dispute this fact. You will prove them wrong.\nFor this endeavor, you can keep on the undying support of your twin Sophia. You have already proven many times that, together, you can accomplish pretty much anything. Lean on her, as she will lean on you, and go forth to bring the Silver Fangs to even greater heights!"
  podintroductions.238.a: "Sister, we will triumph!"
  yuri_intro_tooltip: "As long as you and Sophia are alive, you will enjoy a powerful modifier. If one of you dies, the other will suffer negative consequences."
+
  PODcanon_chars.61.t: "The End of your World"
  PODcanon_chars.61.desc: "Sophia has died. It seems that fate waits for no one, even the fabled Tvarivich twins. Long ago, in happier times, you promised to each other that you would die together as much as possible, for what is the point of continuing otherwise? But you are King of the Silver Fangs, and you might not even have the luxury to fulfill that promise, for you have many duties.\nMaybe Sophia will understand if she has to wait a little longer before seeing you once again, but can you really carry on without her?"
  PODcanon_chars.61.a: "Sister, just wait a little longer."
  PODcanon_chars.61.b: "I have a promise to fulfill."
+
  podintroductions.239.t: "Ваша история"
  podintroductions.239.desc: "Lady Isabeau, you have achieved control over the Sept of the Bright Promise by ensnaring the last rulers in a web of blackmail before striking.\nThis ruthless approach served you well time and time again, especially when seizing control of the lands of your noble family back in France. These estates now serve little purpose as you are well entrenched in the Crusader States, but you could use those minor titles for some quick gold. After all, in your experience, if blackmail is not enough to acquire what you want, gold usually is."
  podintroductions.239.a: "Time to profit."
  isabeau_intro_tooltip: "As Isabeau, you have access to the Sell Titles minor decision. It is also less costly prestige wise."
+
  podintroductions.240.t: "Ваша история"
  podintroductions.240.desc: "Sister Worm, the Wyrm calls to you, as it always does. They all think you mad, including your brother (though he is dead, so he was the mad one clearly) but you know the truth : the Wyrm loves you.\nThat's why he guided you here to help one of its greatest servants, a Hag of some sort. It's pleased now as it tells you that you might want to commit yourself to one of its aspects to fully prepare for your divine mission. The Worm has many heads as everyone knows. You just have to pat one. Metaphorically of course.\nYou aren't an idiot like your brother was."
  podintroductions.240.a: "Roar like a Beast-of-War!"
  podintroductions.240.b: "Eating Souls sounds fun"
  podintroductions.240.c: "I'm the great Deceiver!"
  podintroductions.240.d: "The Wyrm loves me just as I am!"
+
  podintroductions.241.t: "Ваша история"
  podintroductions.241.desc: "Fearless Adisa, you fought well, and Freya was impressed enough to give you access to your revenge. But with that now out of the way, there are new pressing concerns.\nIn each of your travels, you saw bowing women, their feminine spirit enslaved to the will of tyrants like that cursed Ahriman. They need a champion, someone that will lift them up to the incredible heights they can achieve. That someone can only be you.\nIt is time to make your divine mother proud once again."
  podintroductions.241.a: "Rise, Valkyries of Freya!"
  adisa_intro_tooltip: "As Adisa, you can only [Embrace|E] women. Your childer will also get a special education event."
+
  podintroductions.242.t: "Ваша история"
  podintroductions.242.desc: "Верховный Вассаго, один из ваших мастерски разработанных планов скоро воплотится в жизнь.\nВы давным-давно предвидели ослабление вашего джайнского культа в Голконде и поэтому решили разделить свою сущность на множество более мелких артефактов, а затем заставить своих приверженцев разбросать их по всему миру. Одна из этих вещиц, серьга, нашла достойного владельца. Могущественная чародейка Тремер по имени Виорика уже некоторое время пляшет под вашу дудку, распространяя вашу славу по далекой Европе. Это было забавным развлечением, но теперь, когда вы готовитесь к своему следующему шагу, перед вами стоит выбор.\nВы хотите заманить Виорику в Индию и полностью развратить ее как потенциально полезную служанку, используя серьгу? Или вы хотите подтолкнуть ее пожертвовать собой ради вашей славы, придав вашему артефакту больше силы в процессе?"
  podintroductions.242.a: "Иди ко мне, ведьма!"
@@ -1735,70 +1769,86 @@
  podintroductions.243.desc: "Гротескный Оробас, вы не могли проснуться в лучшую эпоху.\nСмертные голодны, и ограничивающая Церковь отказывает им в их законных желаниях. Вашим долгом, нет, вашим удовольствием, будет освободить их от цепей и позволить им потакать всем без исключения темным желаниям, которые они с таким сожалением подавляют.\nОднако пока вы все еще слабы, и вам может понадобиться помощь ваших любимых питомцев, чтобы укрепить свои позиции. Вам всегда нравились паразиты, ползающие вокруг после зрелищных пиршеств, которыми вы славитесь. Эти маленькие поклонники обжорства, возможно, и не дадут вам реальной власти, но сила в количестве..."
  podintroductions.243.a: "Какое радостное время мы все проведем!"
  orobas_intro_tt: "У Оробаса есть уникальный доступ к множеству мелких животных в качестве профессионалов"
+
  babayaga_bound_bezariel_modifier: "Договор с Бабой Ягой"
  babayaga_bound_bezariel_modifier_desc: "Ведьма содержит в себе вашу истинную силу, чтобы держать вас в узде, но само ее присутствие рядом с вами делает вас еще более ужасным."
+
  podintroductions.244.t: "Ваша история"
  podintroductions.244.desc: "Совершенный Безариэль, ваше возвращение в мир смертных до сих пор было трудным делом.\nВы были вызваны и связаны могущественным вампиром, известным как Баба-Яга, которая намерена использовать вас в качестве генерала в своих армиях. Хотя вы благодарны ей за помощь в побеге из тюрьмы Бездны и за положение у власти, вы знаете, что судьба никого не ждет, и даже такому могущественному существу, как Ведьма, однажды ночью придется встретиться лицом к лицу со своей судьбой. Вам нужно будет подготовиться к этому событию и тем временем создать условия для захвата власти.\nВы всегда были предназначены для великих свершений, и даже Люцифер остановился бы, если бы увидел истинную степень вашего потенциала. Как бывший ангел судьбы, пришло время создать свою собственную и заставить трепетать Небеса и Ад!"
  podintroductions.244.a: "Я переживу Ведьму, Люцифера и даже самого Бога!"
  bezariel_intro_tt: "У Безариэля есть уникальный доступ к решению, позволяющему вам пересмотреть свою лояльность Бабе Яге."
+
  bezariel_decision: "Вознесение Кровавого ангела"
  bezariel_decision_tooltip: "Ведьма - полезный союзник, но..."
  bezariel_decision_desc: "Баба-Яга призвала вас для своей собственной цели. Но если бы вы стали сильнее, несмотря на ее цепи, вы могли бы "пересмотреть" свое соглашение..."
  bezariel_decision_effect_tooltip: "Вы переосмыслите свое партнерство с Ведьмой."
  bezariel_decision_confirm: "Визит Бабушке..."
+
  PODcanon_chars.62.t: "Кровь и железо"
  PODcanon_chars.62.desc: "Железная ведьма, Баба-Яга, сыграла важную роль в освобождении вас из тюрьмы Бездны. В некотором смысле, вы обязаны ей своей свободой, но она также была достаточно благоразумна, чтобы наложить некоторые ограничения на то, сколько вашей ангельской силы вы действительно можете использовать.\nНесмотря на этот недостаток, вам удалось набраться сил и достичь наивысшего авторитета в Теневом занавесе, очевидно, помимо самой Бабушки. Это может стать прекрасной возможностью пересмотреть условия вашего предыдущего соглашения в вашу пользу..."
  PODcanon_chars.62.a: "Мы все еще можем работать вместе..."
  PODcanon_chars.62.b: "Я ни перед кем не отчитываюсь!"
  bezariel_loyal_tt: "Баба Яга даст вам доступ к змеям, очень могущественной группе оскверненных драконов, представленных в виде профессионалов."
  bezariel_disloyal_tt: "Все персонажи веры Via Tantabus обратятся в вашу веру."
+
  babayaga_allied_bezariel_modifier: "Желез и кровь"
  babayaga_allied_bezariel_modifier_desc: "Кровавый ангел вступает в союз с Железной ведьмой. Сам Бог должен задуматься над таким поворотом событий."
  bezariel_unleashed_modifier: "Вознесение крови"
  bezariel_unleashed_modifier_desc: "Нет такой надежной тюрьмы, чтобы остановить его. Нет таких крепких цепей, чтобы удержать его. Его вознесение началось."
+
  ares_war_modifier: "Бог воинов"
  ares_war_modifier_desc: "Бог войны презирает так называемых солдат этой эпохи, которые едва ли больше, чем крестьяне. Он заслуживает того, чтобы ему служили только те, кто по-настоящему предан войне!"
  podintroductions.245.t: "Ваша история"
  podintroductions.245.desc: "Гневный Арес, вы далеко ушли от своего расцвета в славной Древней Греции.\nВам больше не поклоняются как богу отважные гоплиты Эллады или неудержимые легионы Рима. Ваша власть значительно ослабла, поскольку войну теперь ведут слабаки, призванные на военную службу крестьяне, которые поклоняются христианскому богу, а не вам. Тем не менее, ваша история еще не закончена. В этом мире все еще есть настоящие воины, в том числе те, кто должным образом уважает Бога войны во многих его проявлениях. Возможно, это немного, но вам этого будет достаточно, чтобы возродить в человечестве любовь к битвам и кровопролитию.\nВ конце концов, война никогда не меняется."
  podintroductions.245.a: "Мир - это иллюзия."
+
  podintroductions.246.t: "Ваша история"
  podintroductions.246.desc: "Леди Ламашту, ваше восхождение от мелкого демона к божественному господству до сих пор было долгим и трудным.\nВаша победа над Тиамат была хорошей отправной точкой, но затем вы боролись за создание и поддержание достаточно сильного культа последователей, чтобы подняться дальше. Персы разрушили ваше место упокоения до того, как его удалось полностью обезопасить, и вы были вынуждены проспать несколько столетий. Случайная встреча пробудила вас, и вы все еще можете чувствовать отголосок силы, которую вы потеряли во время своего первого поражения в городе, ныне известном как Акра. Если бы вы восстановили контроль над ним, вы могли бы, наконец, завершить этот важный ритуал. Важный первый шаг к вашей окончательной победе."
  podintroductions.246.a: "Я выстояла, теперь я одержу победу!"
  lamashtu_intro_tt: "У Ламашту есть уникальный доступ к решению, позволяющему вам обновить Сердце Ламашту после восстановления Акры."
+
  gabriel_trumpet_modifier: "Проклятие Завета"
  lamashtu_decision: "Завершение Завета"
  lamashtu_decision_tooltip: "Забота о незаконченных делах."
  lamashtu_decision_desc: "Ваши реликварии были почти закончены перед нападением персов. Если бы вы вернули Акру, ее блуждающая мощь снова стала бы частью вашей силы."
  lamashtu_decision_confirm: "Мое сердце снова цельно!"
+
  podintroductions.247.t: "Ваша история"
  podintroductions.247.desc: "Всепоглощающий Мамона, ваше восхождение к господству начинается.\nЖадность - мощная эмоция, которую нужно контролировать, и когда-то вы были убеждены, что никто не сможет вас остановить. Однако вы оказались неправы, когда пришли ранние христиане. Используя свою проповедь бедности и благочестивой жизни, они значительно ослабили ваш культ, пока, наконец, не погрузили вас в сон.\nТаким образом, для вас было большой радостью видеть, что ваше пробуждение произошло благодаря этим самым христианам, которые теперь, наконец, ценят роскошь и золото так, как должны ценить все остальные. Однако вы все еще восстанавливаетесь, и было бы разумно постепенно наращивать свою мощь, по одному новому поклоннику за раз. Каждое существо жаждет большего, чем то, что у него есть, и вы будете счастливы предоставить это. Но у всего есть своя цена..."
  podintroductions.247.a: "Чего вы на самом деле желаете?"
  mammon_intro_tt: "Как Мамона, вы можете использовать [Concept('character_interaction', 'взаимодействие персонажа')|E] "Послать подарок", чтобы с некоторой вероятностью сделать другого персонажа жадным, что откроет вам возможности дальнейшего развращения."
+
  podintroductions.248.t: "Ваша история"
  podintroductions.248.desc: "Мудрый Никануурану, ваш внезапный побег из Тюрьмы Бездны был самым неожиданным даже для тебя самого.\nМожет быть, Бог сжалился над вами? Он не отвечает, но вы оказались привязаны к скромному замку Хунедоара на этой истерзанной войной земле Венгрии. У вас мало амбиций, кроме ожидания Судного дня, но вы не глупец. Если вы не найдете источник поклонников достаточно скоро, вас вернут обратно в ужасную тюрьму. К счастью, у вас есть идея: предоставить кров и защиту тем, кто стремится удалиться от мира, возможно, ища созерцания и покоя.\nСкоро будет заключен пакт, и у вас есть на примете идеальные кандидаты..."
  podintroductions.248.a: "Врата сокрытого убежища отворяются..."
  niku_intro_tt: "Никануурану получит возможность привязать к Пакту некоторых конкретных вампиров."
+
  PODcanon_chars.63.t: "Пакт: Воины"
  PODcanon_chars.63.desc: "Возможно, устав от войны, потерпев поражение от своих врагов или просто ища передышки, вы определили группу потенциальных кандидатов, которые были бы готовы подписать пакт, который связал бы их с Хунедоарой. Они были бы полезными слугами и хорошим источником полезных слуг, чтобы обеспечить ваше длительное пребывание на плане смертных."
  PODcanon_chars.63.a: "Добро пожаловать в новый дом."
  PODcanon_chars.63.b: "Они не подойдут."
+
  PODcanon_chars.64.t: "Пакт: Ученые"
  PODcanon_chars.65.t: "Пакт: Дворяне"
  PODcanon_chars.66.t: "Пакт: Путешественники"
- podintroductions.249.t: "Секреты Персии"
- podintroductions.249.desc: "Владыка Митра, вы скрываете потенциально разрушительную тайну. Вы всегда утверждали, что Веддхартха - ваш [Concept('Sire', 'сир')|E], и это правда, но все считают это имя псевдонимом самого Вентру, что неправда. Давным-давно вы исполнили ужасное [diablerie|El] над забытым вампиром, и именно так вы по-настоящему стали могущественным представителем 4-го поколения. Если бы кто-то узнал правду, вероятность кризиса была бы велика.\nК счастью, это диаблери было так давно, что большинство свидетельств было похоронено временем. Тем не менее, некоторые следы могут быть обнаружены любознательными соперниками, и вы подумываете о том, чтобы избавиться от всего, что могло бы привести их к этому преступлению, пока не стало слишком поздно."
+
+ podintroductions.249.t: "Тайны Персии" #ВЫШЕ НЕ ПРОВЕРЕНО, ДЕМОНЫ
+ podintroductions.249.desc: "Лорд Митра, вы скрываете потенциально разрушительную тайну. Вы всегда утверждали, что Веддартха - ваш [Concept('Sire', 'сир')|E], и это правда, но все считают, что это псевдоним самого Вентру, что не соответствует действительности. Давным-давно вы совершили ужасное [Concept('diablerie', 'диаблери')|E] над забытым вампиром, и именно так вы действительно стали могущественным представителем четвёртого поколения. Если бы кто-то узнал правду, вероятность кризиса была бы велика.\nК счастью, это диаблери было так давно, что время стёрло большую часть улик. Тем не менее, некоторые следы могут быть обнаружены любознательными соперниками, и вы подумываете о том, чтобы избавиться от всего, что могло бы привести их к этому преступлению, пока не стало слишком поздно."
  podintroductions.249.a: "Они никогда не должны узнать об этом."
  podintroductions.249.b: "Мои секреты и так достаточно скрыты."
+
  PODcanon_chars.67.t: "Следующий шаг"
  PODcanon_chars.67.desc: "Леди Кеминтири, разобравшись с последователями вашего заклятого врага, вы теперь свободны пересмотреть тревожные события вашего прошлого. Сет пытал вас за то, что вы узнали о Заклинании жизни, могущественной магии Исиды, которая позволила ей создавать мумии для войны против своего сводного брата. Ты был непоколебим в эти темные ночи и никогда не выдавал своей тайны. К сожалению, ваша психика была разрушена этим событием, и вы помните только фрагменты этого сложного ритуала.\nТеперь, когда последователи Сета потерпели поражение и ваш разум стал более спокойным, вы могли бы попытаться найти способ восстановить Заклинание жизни. Знания, необходимые для создания мумий, станут мощным подспорьем в ваших будущих начинаниях, какими бы они ни были."
  PODcanon_chars.67.a: "Мой разум наконец исцелился."
- kemintiri_phasetwo_tt: "У вас есть доступ к новому решению."
- kemintiri_second_decision: "Воспоминание жизни"
+ kemintiri_phasetwo_tt: "Вы получите доступ к новому решению."
+
+ kemintiri_second_decision: "Воспоминания о жизни"
  kemintiri_second_decision_tooltip: "В глубине души вы знаете один из самых важных секретов, которые только существуют. Вы просто должны помнить."
  kemintiri_second_decision_desc: "Вы многое пережили, чтобы защитить Заклинание жизни Исиды. Если бы вы, наконец, отчетливо вспомнили это, вы смогли бы снова создать легендарных Мумий."
  kemintiri_second_decision_confirm: "Я достоина наследия Исиды."
  kemintiri_second_decision_custom: "[TARGET_CHARACTER.GetFirstName] знает Заклинание жизни. Если бы вы смогли показать ему свою преданность Исиде, он мог бы помочь.\nЭто условие будет достигнуто, если он станет вашим другом, возлюбленным или родственной душой."
  kemintiri_second_decision_effect_tooltip: "Вы сможете использовать [Concept('character_interaction', 'взаимодействие персонажа')|E] на смертных, чтобы сделать их вашими последователями известными как Нетеру.\nВы получите доступ к Заклинанию жизни как [Concept('character_interaction', 'взаимодействие персонажа')|E] на Нетеру, позволяя вам превратить их в мумии."
+
  PODcanon_chars.68.t: "Дочь Исиды"
  PODcanon_chars.68.desc: "Леди Кеминтири, наконец-то после стольких лет вы вспомнили все. Твоя преданность делу божественного Осириса. Прекрасная улыбка Исиды, когда она учила вас Заклинанию жизни. Вечная война с Великим врагом. Сет подвергал вас многовековым пыткам, чтобы вытянуть тайну, которую он так желал.\nНо вы также помните самую страшную боль из всех, понимая, что тогда никто не собирался вас спасать. Что Гор и его преданные забыли о вас или, что еще хуже, подумали, что вы добровольно присоединились к Сету. Вы помнишь истории, которые они рассказывали о вас, о том, что вас уже нельзя спасти, некоторые из ваших самых старых друзей даже спорили с Гором о вашем уничтожении.\nВпервые с тех пор вы помните достаточно, чтобы сделать выбор, который может изменить вашу вечную нежизнь. Прощение никогда не было вашей сильной стороной, но, возможно, вы сможешь научиться."
  PODcanon_chars.68.a: "Наконец-то я дома, Исида."
