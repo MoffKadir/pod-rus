@@ -1,14 +1,14 @@
 ﻿l_russian:
-  
- POD_predators_mastery.100.t: "Мастерство Хищника"
- POD_predators_mastery.100.desc: "Вы готовитесь использовать вашего Зверя, чтобы заставить [recipient.GetFirstNameNoTooltip] слушаться ваших приказов."
- POD_predators_mastery.100.option.a: "Пробудите кровь, чтобы доминировать над [recipient.GetHerHim]."
+
+ POD_predators_mastery.100.t: "Мастерство хищника"
+ POD_predators_mastery.100.desc: "Вы готовитесь использовать своего Зверя, чтобы заставить персонажа [recipient.GetFirstNameNoTooltip] слушаться ваших приказов."
+ POD_predators_mastery.100.option.a: "Пробудить кровь, чтобы доминировать над [Select_CString(recipient.IsFemale, 'ней', 'ним' )]."
  POD_predators_mastery.100.option.a.tt: ""
  POD_predators_mastery.100.option.a.success.desc: "[recipient.GetFirstNameNoTooltip] склоняется перед вами."
- POD_predators_mastery.100.option.a.failure.desc: "[recipient.GetFirstNameNoTooltip] не впечатлен."
- POD_predators_mastery.100.option.b: "Пробудить кровь и использовать всю волю. [recipient.GetSheHe|U] склонится предо мной!"
+ POD_predators_mastery.100.option.a.failure.desc: "[recipient.GetFirstNameNoTooltip] не [Select_CString(recipient.IsFemale, 'впечатлена', 'впечатлён' )]."
+ POD_predators_mastery.100.option.b: "Пробудить кровь и напрячь волю. [recipient.GetSheHe|U] будет повиноваться!"
  POD_predators_mastery.100.option.b.tt: ""
  POD_predators_mastery.100.option.b.success.desc: "[recipient.GetFirstNameNoTooltip] склоняется перед вами."
- POD_predators_mastery.100.option.b.failure.desc: "[recipient.GetFirstNameNoTooltip] не впечатлен."
+ POD_predators_mastery.100.option.b.failure.desc: "[recipient.GetFirstNameNoTooltip] не [Select_CString(recipient.IsFemale, 'впечатлена', 'впечатлён' )]."
  POD_predators_mastery.100.option.c: "Неважно, забросить этот замысел."
- POD_predators_mastery.100.option.c.tt: "Вы отказываетесь пытаться доминировать над [recipient.GetFirstNameNoTooltip]"
+ POD_predators_mastery.100.option.c.tt: "Вы отказываетесь от своей попытки доминировать над персонажем [recipient.GetFirstNameNoTooltip]"
