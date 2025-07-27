@@ -54,7 +54,7 @@
  natural_state_perk_name: "Natural State"
  
  CAJOLE_PERK_BONUS_VALUE: "[GetPerk('cajole_perk').GetName(GetPlayer)]"
- TRACKLESS_WASTE_PERK_EFFECT: "Give [GetModifier('trackless_waste_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [commanders|E] when acting as a [commander|E] during the [combat_phase|E]."
+ TRACKLESS_WASTE_PERK_EFFECT: "Give [GetModifier('trackless_waste_perk_modifier').GetNameWithTooltip] Вражеские [Concept('commanders', 'командиры')|E] в [Concept('combat_phase', 'бою')|E] получат [Concept('modifier', 'модификатор')|E]."
  HUMILIATE_PERK_EFFECT: "Give [GetModifier('humiliate_perk_modifier').GetNameWithTooltip] Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы боя')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E]."
 
  ultimatum_perk_name: "Ultimatum"
@@ -66,7 +66,7 @@
  engulf_the_prey_perk_name: "Engulf the Prey"
  rage_of_the_mother_bear_perk_name: "Rage of the Mother Bear"
  
- ULTIMATUM_PERK_EFFECT: "Give [GetModifier('ultimatum_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [commanders|E] when acting as a [commander|E] during the [combat_phase|E]."
+ ULTIMATUM_PERK_EFFECT: "Give [GetModifier('ultimatum_perk_modifier').GetNameWithTooltip] Вражеские [Concept('commanders', 'командиры')|E] в [Concept('combat_phase', 'бою')|E] получат [Concept('modifier', 'модификатор')|E]."
 
  stone_sight_perk_name: "Stone Sight"
  eyes_of_the_soul_perk_name: "Eyes of the Soul"

@@ -126,7 +126,7 @@
  whispered_dreams_perk_name: "Whispered Dreams"
  legendary_form_perk_name: "Legendary Form"
  
- WHISPERED_DREAMS_PERK_EFFECT: "Give [GetModifier('whispered_dreams_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [commanders|E] when acting as a [commander|E] during the [combat_phase|E]."
+ WHISPERED_DREAMS_PERK_EFFECT: "Give [GetModifier('whispered_dreams_perk_modifier').GetNameWithTooltip] Вражеские [Concept('commanders', 'командиры')|E] в [Concept('combat_phase', 'бою')|E] получат [Concept('modifier', 'модификатор')|E]."
  LEGENDARY_FORM_PERK_EFFECT: "Allow shapeshift to several bygone forms, such as [GetModifier( 'POD_shapeshift_form_dragon_modifier' ).GetNameWithTooltip|L]."
  
  resist_pain_perk_name: "Resist Pain"
@@ -162,7 +162,7 @@
  inflict_pain_perk_name: "Inflict Pain"
  epidemic_contagion_perk_name: "Epidemic Contagion"
  
- POISON_FOOD_PERK_EFFECT: "Give [GetModifier('poison_food_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [commanders|E] when acting as a [commander|E] during the [combat_phase|E]."
+ POISON_FOOD_PERK_EFFECT: "Give [GetModifier('poison_food_perk_modifier').GetNameWithTooltip] Вражеские [Concept('commanders', 'командиры')|E] в [Concept('combat_phase', 'бою')|E] получат [Concept('modifier', 'модификатор')|E]."
  BLUR_OF_THE_WEEPING_EYES_PERK_EFFECT: "Give [GetModifier('blur_of_the_weeping_eyes_perk_modifier').GetNameWithTooltip] Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы боя')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E]."
  DREDGE_THE_SPIRIT_WORLD_PERK_EFFECT: "Can recruit [GetMaA('wraiths').GetName] as [men_at_arms|E]."
  CATGUT_PERK_EFFECT: "$unlock_forging_node$ Sacrifice a [prisoner|E] to improve the [artifact|E] based on the sacrifice's [traits|E]"
