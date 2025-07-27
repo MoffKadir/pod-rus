@@ -38,7 +38,7 @@
  seas_winds_perk_name: "Sea's Winds"
  
  FIRST_FEELING_PERK_EFFECT: "Give [GetModifier('first_feeling_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [commanders|E] when acting as a [commander|E] during the [combat_phase|E]."
- BENDS_PERK_EFFECT: "Give [GetModifier('bends_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
+ BENDS_PERK_EFFECT: "Give [GetModifier('bends_perk_modifier').GetNameWithTooltip] Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы боя')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E]."
  SCHOOLS_FEAR_PERK_EFFECT: "Give [GetModifier('schools_fear_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [commanders|E] when acting as a [commander|E] during the [combat_phase|E]."
  PAIN_OF_THE_WOUND_PERK_EFFECT: "Wound enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
  SEAS_WINDS_PERK_EFFECT: "Wound enemy [knights|E] and [commanders|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E], if they are vampires (or other supernaturals that fear the sun)."
@@ -60,7 +60,7 @@
  leviathan_perk_name: "Leviathan"
  wound_undersea_perk_name: "Wound Undersea"
  
- CRUSHING_DEPTHS_PERK_EFFECT: "Give [GetModifier('crushing_depths_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
+ CRUSHING_DEPTHS_PERK_EFFECT: "Give [GetModifier('crushing_depths_perk_modifier').GetNameWithTooltip] Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы боя')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E]."
  ROKEA_DROWN_PERK_EFFECT: "Give [GetModifier('rokea_drown_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [commanders|E] when acting as a [commander|E] during the [combat_phase|E]."
  LURE_PERK_EFFECT: "Give [GetModifier('lure_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [commanders|E] when acting as a [commander|E] during the [combat_phase|E]."
  OVERSEAS_WRATH_PERK_EFFECT: "As a [character_interaction|E], allows you to make a target traveling at sea suffer a sea accident, wounding or drowning them."
@@ -86,11 +86,11 @@
  pall_perk_name: "Pall"
  cets_shell_perk_name: "C'et's Shell"
  
- CHILL_PERK_EFFECT: "Give [GetModifier('chill_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
+ CHILL_PERK_EFFECT: "Give [GetModifier('chill_perk_modifier').GetNameWithTooltip] Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы боя')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E]."
  ENTER_SEAS_SOUL_PERK_EFFECT: "[umbra_aptitude|E]: $pod_grace_i$#P +50%#!"
- PIERCING_SHRIEK_PERK_EFFECT: "Give [GetModifier('piercing_shriek_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
+ PIERCING_SHRIEK_PERK_EFFECT: "Give [GetModifier('piercing_shriek_perk_modifier').GetNameWithTooltip] Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы боя')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E]."
  SUMMON_SCUTTLERS_PERK_EFFECT: "Can recruit [GetMaA('scuttlers').GetName] as [men_at_arms|E]."
- HUNGER_OF_THE_TRENCH_PERK_EFFECT: "Give [GetModifier('hunger_of_the_trench_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
+ HUNGER_OF_THE_TRENCH_PERK_EFFECT: "Give [GetModifier('hunger_of_the_trench_perk_modifier').GetNameWithTooltip] Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы боя')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E]."
  PALL_PERK_EFFECT: "More likely to [imprison|E] [characters|E] after a successful [siege|E] or [raid|E].\nYour prisoners have less chance of escaping from your prison."
  CETS_SHELL_PERK_EFFECT: "Give [GetModifier('cets_shell_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [commanders|E] when acting as a [commander|E] during the [combat_phase|E].\nLike a spirit, can't be imprisoned without some specific powers."
  

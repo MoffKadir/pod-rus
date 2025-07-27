@@ -55,7 +55,7 @@
  
  CAJOLE_PERK_BONUS_VALUE: "[GetPerk('cajole_perk').GetName(GetPlayer)]"
  TRACKLESS_WASTE_PERK_EFFECT: "Give [GetModifier('trackless_waste_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [commanders|E] when acting as a [commander|E] during the [combat_phase|E]."
- HUMILIATE_PERK_EFFECT: "Give [GetModifier('humiliate_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
+ HUMILIATE_PERK_EFFECT: "Give [GetModifier('humiliate_perk_modifier').GetNameWithTooltip] Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы боя')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E]."
 
  ultimatum_perk_name: "Ultimatum"
  mangis_strong_arms_perk_name: "Mangi's Strong Arms"
