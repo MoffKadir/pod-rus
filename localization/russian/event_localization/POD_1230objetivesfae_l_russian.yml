@@ -138,7 +138,7 @@
  destroy_order_of_reason_objective_decision_grimgroth: "[GetScriptedCharacterByHistoryID('505107').GetFirstName], Бич Мистриджа, должен быть мёртв или находиться в [Concept('torpor', 'торпоре')|E]"
 
  pod1230objectives_fae.130.t: "За гранью разумного"
- pod1230objectives_fae.130.desc: "Происки ордена Разума сорваны. Их замыслы связать мир Разумом и Наукой потерпели крах. Их стальные мастерские замолкли. Тремеры уничтожены, война Массасы с орденом Гермеса закончилась поражением неживых колдунов-узурпаторов.  Объединенные герметические дома могли обратить все свое внимание и гнев за разрушение Мистриджа на ремесленников и их тайный союз с единомышленниками-учеными, скупердяями, ханжами-богоборцами и прочими распространителями банальностей. Без «рациональных» философов человечество уже возвращается к своим старым верованиям и старым договорам с феями, чтобы понять смысл фантастического мира и выжить в нем."
+ pod1230objectives_fae.130.desc: "Происки ордена Разума сорваны. Их замыслы связать мир Разумом и Наукой потерпели крах. Их стальные мастерские замолкли. Тремеры уничтожены, война Массасы с орденом Гермеса закончилась поражением неживых колдунов-узурпаторов. Объединенные герметические дома могли обратить все свое внимание и гнев за разрушение Мистриджа на ремесленников и их тайный союз с единомышленниками-учеными, скупердяями, ханжами-богоборцами и прочими распространителями банальностей. Без «рациональных» философов человечество уже возвращается к своим старым верованиям и старым договорам с феями, чтобы понять смысл фантастического мира и выжить в нем."
  pod1230objectives_fae.130.a: "На небе и на земле существует больше вещей, чем можно представить в вашей философии."
 
  inert_cold_iron_objective_decision: "Инертное холодное железо"
@@ -298,35 +298,35 @@
  pod1230objectives_fae.171.desc: "Благодаря вашим навыкам интриги и дипломатии, вам удалось положить конец ужасному конфликту, который так долго разделял фей. Под вашим руководством дом Эйлиль поднялся над всеми мелкими дрязгами других домов ши. Теперь, благодаря превосходству вашего дома, усилия фей могут быть сосредоточены на возобновлении древних договоров с человечеством. Они поверят снова и навсегда."
  pod1230objectives_fae.171.a: "Время войны и время мира."
 
- sidhe_house_dominance_balor_objective_decision: "Heritage of the Fomorians"
- sidhe_house_dominance_balor_objective_decision_desc: "House Balor trace their ancestry back to a line of sidhe who mixed their blood with that of the Fomorians. They believe that the Endless Winter is almost here, and that a strong hand needs to guide the helm to steer the fae through it. Through their connection to the Wyrm, they seek alliances between the Unseelie with Black Spiral Dancers and the Fomori. Given the ancestral tie between House Balor and the Fomorians, it may be possible with a potent ritual to merge a Fae with a powerful bane spirit to create a Fae-Fomori hybrid — a Fomarch."
- sidhe_house_dominance_balor_objective_decision_tooltip: "Merge with a Bane spirit to become a Fae-Fomori Hybrid"
- sidhe_house_dominance_balor_objective_decision_confirm: "Summon the Nexus Crawler"
- balor_victory_modifier: "Fomorian"
- sidhe_house_dominance_balor_objective_decision_artifacts: "You must possess one of these Balor artifacts: [GetPODArtifact('steaming_spear_of_vengeance_link').GetName], [GetPODArtifact('cauldron_of_fear_link').GetName] or Blood Dross"
+ sidhe_house_dominance_balor_objective_decision: "Наследие фоморов"
+ sidhe_house_dominance_balor_objective_decision_desc: "Дом Балор ведёт свою родословную от линии ши, которые смешали свою кровь с кровью фоморов. Они верят, что Бесконечная зима уже почти наступила, и что нужна сильная рука, направляющая фей, чтобы пережить её. Благодаря своей связи с Вирмом, они стремятся к союзу между Неблагими, Танцорами Чёрной спирали и фоморами. Учитывая родственные связи между домом Балор и фоморами, возможно, с помощью мощного ритуала можно объединить фею с могущественным духом-бэйном, чтобы создать гибрид феи и фомора - фомарха."
+ sidhe_house_dominance_balor_objective_decision_tooltip: "Слиться с духом-бэйном, чтобы стать гибридом феи и фомора"
+ sidhe_house_dominance_balor_objective_decision_confirm: "Призвать нексусного ползуна."
+ balor_victory_modifier: "Фомор"
+ sidhe_house_dominance_balor_objective_decision_artifacts: "Вы должны владеть одним из этих артефактов дома Балор: [GetPODArtifact('steaming_spear_of_vengeance_link').GetName], [GetPODArtifact('cauldron_of_fear_link').GetName] или Кровавый дросс"
 
- pod1230objectives_fae.172.t: "Fomorian Forever"
- pod1230objectives_fae.172.desc.start: "House Balor has traced your ancestry back to a line of sidhe who mixed their blood with that of the Fomorians. The Endless Winter is almost here, and you need to guide fae through it, whether they consent to your rule or not. You have prepared the ritual to merge your Fae self with a powerful bane spirit to create a Fae-Fomori hybrid — a Fomarch. Balor's Crystal Eye glows a dull red and radiates a great heat."
- pod1230objectives_fae.172.desc.steaming_spear_of_vengeance: "Hefting the [GetPODArtifact('steaming_spear_of_vengeance_link').GetName], you lick hot blood from its blade feeling your self filled with rage."
- pod1230objectives_fae.172.desc.cauldron_of_fear: "Having prepared the foul, mystical concoction — you drink deeply from the [GetPODArtifact('cauldron_of_fear_link').GetName]."
- pod1230objectives_fae.172.desc.blood_dross: "Crushing the crystallized sugar tiny vial, you drink the vampiric blood contained within the Blood Dross and are filled with dark glamour."
- pod1230objectives_fae.172.desc.end: "You open a trod to the [umbra|E] to call forth the Nexus Crawler.\nA black shimmer appears in the air along with a warbling vibrato moan. You have a feeling on your skin like fingernails scraped across a blackboard. The air stinks of a miasmic scent reminiscent of a cancerous illness. The Wyrm spirit manifests into a loathsome and horrifying avatar. Its claws and fangs rip open your flesh and it violently thrusts itself into your chest cavity. You are filled with excruciating pain. And then...\nWe are united. Forever."
- 
- pod1230objectives_fae.172.a: "We are the Fomarch!"
+ pod1230objectives_fae.172.t: "Вечные фоморы"
+ pod1230objectives_fae.172.desc.start: "Дом Балор проследил вашу родословную до линии ши, которые смешали свою кровь с кровью фоморов. Близится Бесконечная зима, и вам нужно провести через неё фей, независимо от того, согласны они с вашим правлением или нет. Вы подготовили ритуал слияния вашей сущности феи с могущественным духом-бэйном, чтобы создать гибрид феи и фомора - фомарха. Хрустальный глаз Балора светится тускло-красным и излучает сильный жар."
+ pod1230objectives_fae.172.desc.steaming_spear_of_vengeance: "Подняв [GetPODArtifact('steaming_spear_of_vengeance_link').GetName], вы слизываете горячую кровь с его лезвия, чувствуя, как вас переполняет ярость."
+ pod1230objectives_fae.172.desc.cauldron_of_fear: "Используя [GetPODArtifact('cauldron_of_fear_link').GetName], вы сварили отвратительное, мистическое варево и испиваете его до дна."
+ pod1230objectives_fae.172.desc.blood_dross: "Раздавив крошечный флакончик с кристаллизованным сахаром, вы пьёте вампирскую кровь, содержащуюся в нём, и наполняетесь тёмным гламуром."
+ pod1230objectives_fae.172.desc.end: "Вы открываете трод в [Concept('umbra', 'Умбру')|E], чтобы призвать нексусного ползуна.\nВ воздухе появляется чёрное мерцание, сопровождаемое пронзительным вибрирующим стоном. У вас на коже возникает ощущение, будто ногти царапают классную доску. Воздух пропитан миазматическим запахом, напоминающим о раковой болезни. Дух Вирма проявляется в виде отвратительного и ужасающего существа. Его когти и клыки разрывают вашу плоть, и он яростно вонзается в вашу грудную клетку. Вы испытываете мучительную боль. И затем...\nМы едины. Навсегда."
 
- sidhe_house_dominance_daireann_objective_decision: "Healer-Warrior"
- sidhe_house_dominance_daireann_objective_decision_desc: "The House gained their noble station by [GetScriptedCharacterByHistoryID('POD_fae_character_21').GetFirstName] healing a Gwydion lord, but they gained their true respect by the valor of their warrior [GetScriptedCharacterByHistoryID('POD_fae_character_88').GetFirstName]. The Daireann know very well that the hand that can heal can also harm. A cup can hold both poison or an antidote. A blade can be used to heal, and it can be used to sever the thread of a life."
- sidhe_house_dominance_daireann_objective_decision_martial: "You have a [martial|E] [education|E]"
- sidhe_house_dominance_daireann_objective_decision_martial_prowess: "You have a Martial [prowess|E] [education|E]"
- 
- sidhe_house_dominance_daireann_objective_decision_tooltip: "Develop both your ability with warfare and healthcare"
- sidhe_house_dominance_daireann_objective_decision_confirm: "To Everything There Is a Season"
- daireann_victory_modifier: "Healer-Warrior"
- 
- pod1230objectives_fae.173.t: "Healer-Warrior"
- pod1230objectives_fae.173.desc: "As leader of House Daireann, you have endeavored to exemplify the dual nature of healer and warrior. Your hand can heal and your hand can harm. You are like a cup that can hold both poison or an antidote, like a blade can be used to heal or to sever the thread of a life."
- pod1230objectives_fae.173.a: "Healer-Warrior" 
- 
+ pod1230objectives_fae.172.a: "Мы - фомарх!"
+
+ sidhe_house_dominance_daireann_objective_decision: "Воин-целитель"
+ sidhe_house_dominance_daireann_objective_decision_desc: "Дом обрёл своё высокое положение благодаря тому, что [GetScriptedCharacterByHistoryID('POD_fae_character_21').GetFirstName] исцелил лорда Гвидиона, но истинное уважение они завоевали благодаря доблести своего воина #L [GetScriptedCharacterByHistoryID('POD_fae_character_88').GetFirstName]а#!. Дайреанн очень хорошо знают, что рука, способная исцелять, может также причинять вред. В чаше может быть как яд, так и противоядие. Клинок можно использовать для исцеления, а можно и для того, чтобы оборвать нить жизни."
+ sidhe_house_dominance_daireann_objective_decision_martial: "У вас [Concept('martial', 'военное')|E] [Concept('education', 'образование')|E]"
+ sidhe_house_dominance_daireann_objective_decision_martial_prowess: "У вас военное [Concept('education', 'образование')|E] [Concept('prowess', 'доблести')|E]"
+
+ sidhe_house_dominance_daireann_objective_decision_tooltip: "Развить способности как в военном деле, так и в врачевательстве"
+ sidhe_house_dominance_daireann_objective_decision_confirm: "Всему своё время."
+ daireann_victory_modifier: "Воин-целитель"
+
+ pod1230objectives_fae.173.t: "[Select_CString(ROOT.Char.IsFemale, 'Воительница-целительница', 'Воин-целитель' )]"
+ pod1230objectives_fae.173.desc: "Как глава дома Дайреанн, вы стремились показать двойственную природу целителей и воинов. Ваша рука может исцелять, а может и вредить. Вы подобны чаше, в которой может содержаться как яд, так и противоядие, подобно лезвию, которое можно использовать для исцеления или для того, чтобы оборвать нить жизни."
+ pod1230objectives_fae.173.a: "[Select_CString(ROOT.Char.IsFemale, 'Воительница-целительница', 'Воин-целитель' )]"
+
  sidhe_house_dominance_leanhaun_objective_decision: "Leanhaun's Curse"
  sidhe_house_dominance_leanhaun_objective_decision_desc: "The secret curse upon [GetScriptedCharacterByHistoryID('POD_fae_character_15').GetFirstName] extends to her entire House and causes its members to rapidly age without rhapsodizing mortals. It is prophesied not to end 'until the stars weep blood and the very earth grows cold beneath your feet', which seems unlikely to occur any time soon. Usually, the Leanhaun #TOOLTIP:GAME_TRAIT,enchanted,[GetNullCharacter] #L enchant#!#! and rhapsodize one mortal victim at a time. It is speculated that if enough dreamers are being cultivated and the glamour of those dreamers is of great quantity, the impact of the curse may be lessened if not eliminated."
  sidhe_house_dominance_leanhaun_objective_decision_tooltip: "Lessen the curse by exploiting a stable of Dreamers"
@@ -370,7 +370,7 @@
  sidhe_house_dominance_danaan_objective_decision_confirm: "Two paths diverged in the mists, and I took the one less traveled"
  danaan_victory_modifier: "Seek out the Dreaming Guard"
  sidhe_house_dominance_danaan_objective_decision_traits: "You are an [GetTrait('eshu').GetName( GetPlayer )], [GetTrait('lifestyle_traveler').GetName( GetPlayer )], [GetTrait('pilgrim').GetName( GetPlayer )] or an [GetTrait('adventurer').GetName( GetPlayer )]."
- sidhe_house_dominance_danaan_objective_decision_mount: "Have a mount:  [GetPODArtifact('ship_of_the_four_quarters_link').GetName], [GetPODArtifact('nightmare_horse_link').GetName], [GetPODArtifact('sorn_link').GetName], [GetPODArtifact('vozhd_palanquin_link').GetName], [GetPODArtifact('sorel_link').GetName], horse, wolf, bear, lion, or tiger"
+ sidhe_house_dominance_danaan_objective_decision_mount: "Have a mount: [GetPODArtifact('ship_of_the_four_quarters_link').GetName], [GetPODArtifact('nightmare_horse_link').GetName], [GetPODArtifact('sorn_link').GetName], [GetPODArtifact('vozhd_palanquin_link').GetName], [GetPODArtifact('sorel_link').GetName], horse, wolf, bear, lion, or tiger"
 
  sidhe_house_dominance_danaan_objective_decision_artifact: "Have a treasure useful for a traveler: Trail Dust, [GetPODArtifactNameWithFallback('pegasus_bridle_link',Localize('artifact_pegasus_bridle_name'))], $artifact_eye_of_opening_name$, [GetPODArtifact('dreamstone_of_madoc_link').GetName], [GetPODArtifactNameWithFallback('havens_compass_link',Localize('artifact_havens_compass_name'))], [GetPODArtifactNameWithFallback('broach_of_scrying_link',Localize('artifact_broach_of_scrying_name'))] or [GetPODArtifact('tapestry_of_fate_link').GetName]."
 
@@ -407,7 +407,7 @@
  rhineland_duchy_objective_decision_confirm: "Reclaim Borbetomagus"
 # rhineland_duchy_objective_borbetomagus: "You [Concept('completely_control', 'полностью контролируете')|E] the ancient capital of Borbetomagus, now called [GetTitleByKey('c_worms').GetNameNoTier], as well as [GetTitleByKey('c_speyer').GetNameNoTier] and [GetTitleByKey('c_kaiserslautern').GetNameNoTier]"
  rhineland_duchy_objective_rhineland_dejure: "[GetTitleByKey('d_rhineland').GetName] becomes [Concept('de_jure', 'де-юре')|E] liege of [GetTitleByKey('c_worms').GetNameNoTier], [GetTitleByKey('c_speyer').GetNameNoTier] and [GetTitleByKey('c_kaiserslautern').GetNameNoTier]"
- rhineland_duchy_objective_rhineland_county_claims: "Gain [unpressed_claims|E] upon the Oberrhein ([GetTitleByKey('d_alsace').GetName] and [Concept('counties', 'графства')|E] of  [GetTitleByKey('c_breisgau').GetNameNoTier], [GetTitleByKey('c_sundgau').GetNameNoTier], [GetTitleByKey('c_colmar').GetNameNoTier], [GetTitleByKey('c_strassburg').GetNameNoTier], [GetTitleByKey('c_baden').GetNameNoTier], [GetTitleByKey('c_erbach').GetNameNoTier], [GetTitleByKey('c_frankfurt').GetNameNoTier] and [GetTitleByKey('c_mainz').GetNameNoTier]) and some of the Mittelrhein ([GetTitleByKey('c_koblenz').GetNameNoTier] and [GetTitleByKey('c_sayn').GetNameNoTier])."
+ rhineland_duchy_objective_rhineland_county_claims: "Gain [unpressed_claims|E] upon the Oberrhein ([GetTitleByKey('d_alsace').GetName] and [Concept('counties', 'графства')|E] of [GetTitleByKey('c_breisgau').GetNameNoTier], [GetTitleByKey('c_sundgau').GetNameNoTier], [GetTitleByKey('c_colmar').GetNameNoTier], [GetTitleByKey('c_strassburg').GetNameNoTier], [GetTitleByKey('c_baden').GetNameNoTier], [GetTitleByKey('c_erbach').GetNameNoTier], [GetTitleByKey('c_frankfurt').GetNameNoTier] and [GetTitleByKey('c_mainz').GetNameNoTier]) and some of the Mittelrhein ([GetTitleByKey('c_koblenz').GetNameNoTier] and [GetTitleByKey('c_sayn').GetNameNoTier])."
  
  pod1230objectives_fae.1100.t: "Borbetomagus Reclaimed!"
  pod1230objectives_fae.1100.desc: "The ancestral seat of Old Burgundy is now part of your realm."

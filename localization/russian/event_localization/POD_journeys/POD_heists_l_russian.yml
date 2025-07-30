@@ -147,7 +147,7 @@
  POD_heist_effect_node_map: "Вы раскроете каждый узел этого [Concept('infiltration', 'проникновения')|E]."
 
  POD_heist_title_node_prisoners: "Темница"
- POD_heist_desc_node_prisoners: "Здесь содержатся узники, которых держит при себе [CurrentHeistTarget.GetFirstNameNicknamed].\nВы можете освободить их, если пожелаете, но это повысит  [Concept('suspicion', 'подозрение')|E]."
+ POD_heist_desc_node_prisoners: "Здесь содержатся узники, которых держит при себе [CurrentHeistTarget.GetFirstNameNicknamed].\nВы можете освободить их, если пожелаете, но это повысит [Concept('suspicion', 'подозрение')|E]."
  POD_heist_release_prisoner_desc: "Вы подойдёте к тюремной камере, в которой сидит [CHARACTER.GetNameNicknamed] и решите, что с [Select_CString(CHARACTER.IsFemale, 'ней', 'ним' )] делать."
 
 
@@ -418,7 +418,7 @@
  POD_heists.1051.b: "Не будем испытывать судьбу."
 
  POD_heists.1052.t: "Осложнение: Трепет"
- POD_heists.1052.desc: "Напряжении вокруг группы $POD_player_coterie$ нарастает, но это только делает ситуацию более захватывающей. Подозревает ли кто-нибудь при дворе во владении [ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier] что что-то затевается? Имеет ли это значение? Они всё равно нас никогда не поймают.\n\nПодобные свершения - это то, что укрепит группу $POD_player_coterie$ и каждый узнает, что [ROOT.Char.Custom('PODCoterie')] будет воспеваться в легендах."
+ POD_heists.1052.desc: "Напряжение вокруг группы $POD_player_coterie$ нарастает, но это только делает ситуацию более захватывающей. Подозревает ли кто-нибудь при дворе во владении [ROOT.Char.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier] что что-то затевается? Имеет ли это значение? Они всё равно нас никогда не поймают.\n\nПодобные свершения - это то, что укрепит группу $POD_player_coterie$ и каждый узнает, что [ROOT.Char.Custom('PODCoterie')] будет воспеваться в легендах."
  POD_heists.1052.a: "Дома они будут рассказывать истории о наших уловках."
  POD_heists.1052.b: "Лучше не зазнаваться и держать это в секрете."
 
@@ -435,7 +435,7 @@
  #POD_heists.1061.desc.coterie: "It seems the court we're trying to infiltrate is currently in a war footing. It's unclear if it's just a very involved training regimen or a genuine preparation for something bigger... but we have been caught off guard.\nOur courtly clothing is clashing quite a lot in the sea of weapons and armors that are currently on display. This has caught some unwanted attention."
  #POD_heists.1061.desc.nocoterie: "It seems the court I'm trying to infiltrate is currently in a war footing. It's unclear if it's just a very involved training regimen or a genuine preparation for something bigger... but I have been caught off guard.\nMy courtly clothing is clashing quite a lot in the sea of weapons and armors that are currently on display. This has caught some unwanted attention."
  #POD_heists.1061.a: "You see, the appearance of weakness is a strength."
- #POD_heists.1061.a.success: "Sure, I can tell you more"  #Bullshit roll, intrigue, stuff like presence possibly
+ #POD_heists.1061.a.success: "Sure, I can tell you more" #Bullshit roll, intrigue, stuff like presence possibly
  #POD_heists.1061.a.failure: "No, I'm not trying to mislead you"
  #POD_heists.1061.b: "I'm portraying the fleeing noble. Time to flee!"
 
