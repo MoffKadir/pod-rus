@@ -1,39 +1,54 @@
 ﻿l_russian:
-  
+
  POD_provoke_inquisition_effect_tt: "#N;bold Мир необратимо изменился из-за вас.#!"
- POD_provoke_inquisition_effect_tt_2: "Святой Престол принял к сведению ваши действия, и Инквизиция начала мобилизацию. Примерно в #V [EmptyScope.ScriptValue('premature_inquisition_delay')]#! спустя годы они обрушат свои армии на [Concept('world_of_darkness','Мир Тьмы')|E], и никто не знает, какими будут последствия этого события..."
- POD_vatican_coterie_duel_success_tt: "[prowess_duelist.GetFirstNameNicknamed] побеждает [adversary.GetFirstName]"
- POD_vatican_coterie_duel_failure_tt: "[prowess_duelist.GetFirstNameNicknamed] и [adversary.GetFirstName] оба погибают от своих ран"
- POD_vatican_coterie_duel_critfail_tt: "[prowess_duelist.GetFirstNameNicknamed] полностью уничтожен"
+ POD_provoke_inquisition_effect_tt_2: "Святой Престол принял к сведению ваши действия, и инквизиция приступила к мобилизации. Примерно через #V [EmptyScope.ScriptValue('premature_inquisition_delay')]#! лет они обрушат свои войска на [Concept('world_of_darkness','Мир Тьмы')|E], и никто не знает, какими будут последствия этого события..."
+
+ POD_vatican_coterie_duel_success_tt: "[prowess_duelist.GetFirstNameNicknamed] побеждает персонажа [adversary.GetFirstName]"
+ POD_vatican_coterie_duel_failure_tt: "[prowess_duelist.GetFirstNameNicknamed] и [adversary.GetFirstName] погибают от полученных ран"
+ POD_vatican_coterie_duel_critfail_tt: "[prowess_duelist.GetFirstNameNicknamed] [Select_CString(prowess_duelist.IsFemale, 'была', 'был' )] полностью [Select_CString(prowess_duelist.IsFemale, 'уничтожена', 'уничтожен' )]"
+
+
  POD_psalm23_translated: "#TOOLTIP:POD_psalm23_translation #V;L $POD_psalm23_latin$#!#!"
  POD_psalm23_untranslated: "#TOOLTIP:POD_verses_notranslation #V;L $POD_psalm23_latin$#!#!"
  POD_psalm94_translated: "#TOOLTIP:POD_psalm94_translation #V;L $POD_psalm94_latin$#!#!"
  POD_psalm94_untranslated: "#TOOLTIP:POD_verses_notranslation #V;L $POD_psalm94_latin$#!#!"
  POD_lordsprayer_translated: "#TOOLTIP:POD_lordsprayer_translation #V;L $POD_lordsprayer_latin$#!#!"
  POD_lordsprayer_untranslated: "#TOOLTIP:POD_verses_notranslation #V;L $POD_lordsprayer_latin$#!#!"
+
  POD_verses_notranslation: "[GetPlayer.GetFirstNameNoTooltip] #bold не#! говорит на латыни"
- POD_psalm23_latin: "«Nam et si ambulavero in medio umbrae mortis, non timebo mala, quoniam tu mecum es. Virga tua, et baculus tuus, ipsa me consolata sunt.»"
-  # Psalm 23: KJV 
- POD_psalm23_translation: "#italic Да, хотя я иду по долине смертной тени, я не убоюсь зла, ибо ты со мной. Твой жезл и твой посох - они утешают меня.#!"
- POD_psalm94_latin: "\«Et factus est mihi Dominus in refugium, et Deus meus in adjutorium spei meae. Et reddet illis iniquitatem ipsorum, et in malitia eorum disperdet eos: disperdet illos Dominus Deus noster.\»"
-  # Psalm 94:2-23 KJV 
- POD_psalm94_translation: "#italic Но ГОСПОДЬ - моя защита, и мой Бог - скала моего прибежища. И он наведёт на них их собственное беззаконие и истребит их в их собственном нечестии; да, Господь, Бог наш, истребит их.#!"
- POD_lordsprayer_latin: "«Pater noster, qui es in caelis, sanctificetur nomen tuum. Adveniat regnum tuum. Fiat voluntas tua, sicut in caelo et in terra.»"
-  # Matthew 6:0-13 KJV 
+
+ POD_psalm23_latin: "«Nam et si ambulavero in medio umbrae mortis, non timebo mala, quoniam tu mecum es. Virga tua, et baculus tuus, ipsa me consolata sunt»."
+ # Psalm 23: KJV
+ POD_psalm23_translation: "#italic Если я пойду и долиною смертной тени, не убоюсь зла, потому что Ты со мной; Твой жезл и Твой посох — они успокаивают меня.#!"
+
+ POD_psalm94_latin: "«Et factus est mihi Dominus in refugium, et Deus meus in adjutorium spei meae. Et reddet illis iniquitatem ipsorum, et in malitia eorum disperdet eos: disperdet illos Dominus Deus noster»."
+ # Psalm 94:2-23 KJV
+ POD_psalm94_translation: "#italic Но Господь — защита моя, и Бог мой — твердыня убежища моего, и обратит на них беззаконие их, и злодейством их истребит их, истребит их Господь Бог наш.#!"
+
+ POD_lordsprayer_latin: "«Pater noster, qui es in caelis, sanctificetur nomen tuum. Adveniat regnum tuum. Fiat voluntas tua, sicut in caelo et in terra»."
+ # Matthew 6:0-13 KJV
  POD_lordsprayer_translation: "#italic Отче наш, сущий на небесах, да святится имя Твоё. Да приидёт царствие Твоё, да будет воля Твоя на земле, как на небе.#!"
- POD_faith_vulnerability_demon_tt: "Те, кто якшается с демонами, особенно уязвимы для [GetTrait('truefaith').GetName(GetNullCharacter)]..."
- POD_faith_vulnerability_wraith_tt: "Призраки особенно уязвимы для [GetTrait('truefaith').GetName(GetNullCharacter)]..."
+
+
+ POD_faith_vulnerability_demon_tt: "Те, кто якшается с демонами, особенно уязвимы для [Concept('true_faith', 'истинной веры')|E]..."
+ POD_faith_vulnerability_wraith_tt: "Призраки особенно уязвимы для [Concept('true_faith', 'истинной веры')|E]..."
+
  POD_provoke_vatican_escape_tt: "Вы продолжаете свой побег из города..."
- POD_provoke_vatican_escape_complete_tt: "Вам наконец-то удалось сбежать от Инквизиторов, которые охотились за вами."
+ POD_provoke_vatican_escape_complete_tt: "Вам наконец-то удалось сбежать от инквизиторов, которые охотились за вами."
+
+
  POD_progenitor_caine: "[GetScriptedCharacterByHistoryID('505001').GetFirstNameNicknamed]"
  POD_progenitor_lilith: "[GetScriptedCharacterByHistoryID('505002').GetFirstNameNicknamed]"
  POD_progenitor_set: "[GetScriptedCharacterByHistoryID('505012').GetFirstName]"
  POD_progenitor_odin: "[GetScriptedCharacterByHistoryID('505055').GetFirstName]"
  POD_progenitor_zapathasura: "[GetScriptedCharacterByHistoryID('505020').GetFirstNameNicknamed]"
+
+
  POD_provoke_vatican.1.t: "Торжественный въезд"
- POD_provoke_vatican.1.desc: "Теперь я стою на пороге Вечного Города.\n\nСцена готова. Актёры собраны. Занавес опущен, и великая пьеса вот-вот развернётся. Что осталось? Ах, да. Пленённая публика.\n\nВокруг нет никого, кто мог бы поприветствовать меня. Что странно, поскольку слухи о моём начинании уже распространились среди мне подобных. Они не ценят то, что я собираюсь сделать.\n\nДействительно, непробиваемая толпа. Я действительно настолько оторван от жизни?"
+ POD_provoke_vatican.1.desc: "И вот я стою на пороге Вечного города.\n\nСцена готова. Актёры собраны. Занавес опущен, и великая пьеса вот-вот начнётся. Что осталось? Ах, да. Завороженная публика.\n\nВокруг нет никого, кто мог бы поприветствовать меня. Что странно, поскольку слухи о моём начинании уже распространились среди таких, как я. Они не ценят то, что я собираюсь сделать.\n\nДействительно, это суровая публика. Неужели я действительно настолько [Select_CString(ROOT.Char.IsFemale, 'оторвана', 'оторван' )] от мира?"
  POD_provoke_vatican.1.option.a: "Нет, это все остальные ошибаются."
- POD_provoke_vatican.1.option.a.tt: "Вы отправляетесь дальше в город..."
+ POD_provoke_vatican.1.option.a.tt: "Вы отправитесь дальше в город..." #ТУТЪ
+
  POD_provoke_vatican.2.t: "Во въезде отказано"
  POD_provoke_vatican.2.desc: "Когда я пытаюсь въехать в город, [adversary.GetFirstName] преграждает мне путь.\n\n"
  POD_provoke_vatican.2.desc.vampire: "\"Немедленно откажись от этой глупой затеи, [ROOT.Char.GetFirstNameNoTooltip]. Неужели ты не понимаешь последствий того, что собираешься сделать? Благополучие всех детей Каина требует, чтобы ты был остановлены.\»"

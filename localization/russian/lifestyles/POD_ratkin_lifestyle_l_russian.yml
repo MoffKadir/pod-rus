@@ -28,7 +28,7 @@
  perfect_poison_perk_name: "Perfect Poison"
  plague_bite_perk_name: "Plague Bite"
  
- SNITCH_PERK_EFFECT: "[espionage|E] Progress Speed: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!"
+ SNITCH_PERK_EFFECT: "Скорость прогресса [Concept('espionage', 'шпионажа')|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!"
  SNITCH_PERK_BONUS_VALUE: "[GetPerk('snitch_perk').GetName(GetPlayer)]"
  BACKBITE_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +5%#!"
  BOLT_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +5%#!"
