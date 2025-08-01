@@ -1,12 +1,12 @@
 ﻿l_russian:
- POD_wraith_binding.100.t: "Путы магии и воли."
- POD_wraith_binding.100.desc: "Занимаясь своими обычными делами в качестве призрака, вы чувствуете мощное притяжение к неизвестному месту. Кто-то вмешивается в вашу связь с миром смертных!\n Прибыв в комнату призыва, вы встречаете своего призывателя - некроманта по имени [actor.GetFirstNameNoTooltip]. Ритуал связывания уже начинает влиять на вас и деформировать ваше сущность."
+ POD_wraith_binding.100.t: "Путы магии и воли"
+ POD_wraith_binding.100.desc: "Занимаясь своими обычными делами в качестве призрака, вы чувствуете мощное притяжение к неизвестному месту. Кто-то вмешивается в вашу связь с миром смертных!\nПрибыв в комнату призыва, вы встречаете [Select_CString(actor.IsFemale, 'свою призывательницу', 'своего призывателя' )] - некроманта по имени [actor.GetFirstNameNoTooltip]. Ритуал связывания уже начинает влиять на вас и деформировать ваше сущность."
  POD_wraith_binding.100.option.a: "МЕНЯ. НЕ. БУДУТ. КОНТРОЛИРОВАТЬ!"
  POD_wraith_binding.100.option.b: "Конечно же сопротивляться."
  POD_wraith_binding.100.option.c: "Сопротивление бесполезно... Но в будущем я отомщу."
-  
- POD_wraith_binding.200.t: "Путы магии и воли."
- POD_wraith_binding.200.desc: "Ритуальная площадка готова, вы призываете темную магию бездны и притягиваете выбранного призрака к подготовленному вами кругу. \n Через дыру в смертной реальности приходит [recipient.GetFirstNameNoTooltip], чье лицо исказилось от боли и ярости. Теперь, когда призрак здесь, пришло время для связывания."
+
+ POD_wraith_binding.200.t: "Путы магии и воли"
+ POD_wraith_binding.200.desc: "Ритуальная площадка готова, вы призываете тёмную магию бездны и притягиваете выбранного призрака к подготовленному вами кругу.\nЧерез дыру в смертной реальности приходит [recipient.GetFirstNameNoTooltip], чьё лицо исказилось от боли и ярости. Теперь, когда призрак здесь, пришло время для связывания."
  POD_wraith_binding.200.wp: "Продолжить в любом случае."
  POD_wraith_binding.200.wp.tt_willpower: "[recipient.GetFirstNameNoTooltip] прилагает все усилия, чтобы мне воспротивиться."
  POD_wraith_binding.200.blood.tt_success: "Успех"
@@ -15,25 +15,33 @@
  POD_wraith_binding.200.wp.failure.desc: "Поражение"
  POD_wraith_binding.200.blood.tt_failure: "Провал"
  POD_wraith_binding.200.wp.tt_failure: "[recipient.GetTitledFirstName] сопротивляется моей попытке привязывания."
- POD_wraith_binding.200.option.wp: "Напрячь мою волю. Я буду [recipient.GetHerHis] хозяином!"
+ POD_wraith_binding.200.option.wp: "Напрячь мою волю. Я буду [recipient.GetHerHis] [Select_CString(ROOT.Char.IsFemale, 'хозяйкой', 'хозяином' )]!"
  POD_wraith_binding.200.blood: "Напрячь мою волю и кровь. Бездна дарует мне силу над смертью и мертвецами."
+
  POD_wraith_binding.200.option.c: "Забросить это дело, Я больше не желаю подчинять [recipient.GetHerHis]."
  POD_wraith_binding.200.option.c.tt: "Попытка завершится неудачей."
- POD_wraith_binding.300.t: "[recipient.GetFirstNameNoTooltip] [Select_CString(recipient.IsFemale, 'привязана', 'привязан' )].."
- POD_wraith_binding.300.desc: "У меня получилось успешно использовать ужасные силы Забвения, чтобы заставить [recipient.GetTitledFirstName] служить мне. Теперь вопрос в том, насколько сильна привязка?"
- POD_wraith_binding.300.option.a: "Все так, как и должно быть."
+
+
+ POD_wraith_binding.300.t: "[recipient.GetFirstNameNoTooltip] [Select_CString(recipient.IsFemale, 'привязана', 'привязан' )]"
+ POD_wraith_binding.300.desc: "Я успешно [Select_CString(ROOT.Char.IsFemale, 'призвала', 'призвал' )] страшные силы Забвения, чтобы [recipient.GetTitledFirstName] [Select_CString(recipient.IsFemale, 'служила', 'служил' )] мне. Вопрос в том, насколько прочна привязка?"
+ POD_wraith_binding.300.option.a: "Всё так, как и должно быть."
  POD_wraith_binding.300.twolevels: "Сила привязки будет увеличена на два уровня!"
  POD_wraith_binding.300.threelevels: "Сила привязки будет увеличена на три уровня!"
+
  POD_wraith_binding.400.t: "Оковы!"
- POD_wraith_binding.400.desc: "Несмотря на ваши усилия по борьбе с темными силами, магия [actor.GetTitledFirstName] заставляет вас стать [actor.GetHerHis] слугой."
- POD_wraith_binding.400.option.a: "Моя независимость потеряна."
- POD_wraith_binding.500.t: "Проваленное связывание"
- POD_wraith_binding.500.desc: "[recipient.GetTitledFirstName] удалось преодолеть мои попытки подчинить [recipient.GetHerHis]."
+ POD_wraith_binding.400.desc: "Несмотря на ваши усилия по борьбе с тёмными силами, с помощью которых [actor.GetTitledFirstName] удерживает вас, магия заставила вас стать [actor.GetHerHis] [Select_CString(ROOT.Char.IsFemale, 'невольной рабыней', 'невольным рабом' )]."
+ POD_wraith_binding.400.option.a: "Моя независимость..."
+
+ POD_wraith_binding.500.t: "Провальное связывание"
+ POD_wraith_binding.500.desc: "[recipient.GetTitledFirstName] [Select_CString(recipient.IsFemale, 'воспротивилась', 'воспротивился' )] моим попыткам связать [recipient.GetHerHis]."
  POD_wraith_binding.500.option.a: "Провал!"
- POD_wraith_binding.600.t: "Сорванное подчинение"
- POD_wraith_binding.600.desc: "[actor.GetTitledFirstName] решает забросить [actor.GetTitledHerHis] попытки вынудать вас служить [actor.GetTitledHerHim]."
- POD_wraith_binding.600.option.a: "Я не слуга!"
+
+
+ POD_wraith_binding.600.t: "Сорванное связывание"
+ POD_wraith_binding.600.desc: "[actor.GetTitledFirstName] [Select_CString(actor.IsFemale, 'забросила', 'забросил' )] свои попытки вынудить вас служить [actor.GetTitledHerHim]."
+ POD_wraith_binding.600.option.a: "Моя независимость в безопасности!"
+
  POD_wraith_binding.1000.t: "Помеченный призрак прибыл"
- POD_wraith_binding.1000.desc: "Вы дождались смерти [wraith.GetTitledFirstName] и теперь жертва прибыла к вашему двору в качестве гостя. Если вы ничего не предпримите, призрак уйдет в [underworld|E] через 7 дней."
- POD_wraith_binding.1000.option.a: "Мне следует немедленно привязать [wraith.GetHerHis]."
- POD_wraith_binding.1000.option.b: "Пока ничего не буду делать."
+ POD_wraith_binding.1000.desc: "[wraith.GetTitledFirstName] [Select_CString(wraith.IsFemale, 'умерла и прибыла', 'умер и прибыл' )] к вашему двору в качестве [Select_CString(wraith.IsFemale, 'гостьи', 'гостя' )]. Если вы ничего не предпримете, [wraith.GetSheHe] отправится в [UmbraGlossaryLocalized('shadowlands','Загробный мир')] через 7 дней."
+ POD_wraith_binding.1000.option.a: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] немедленно привязать [wraith.GetHerHis]."
+ POD_wraith_binding.1000.option.b: "Я ничего не буду делать."
