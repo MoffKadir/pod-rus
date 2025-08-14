@@ -1,38 +1,50 @@
 ﻿l_russian:
-  
+
  POD_wraith_possession.100.t: "[possession|E]"
- POD_wraith_possession.100.desc: "[actor.GetTitledFirstName] пытается [Concept('possession', 'одержать')] вас. Вы замечаете, что части вашего тела двигаются сами по себе, а в голове появляются чужие мысли. Может, стоит позвать экзорциста?"
- POD_wraith_possession.100.option.a: "Собраться с силой воли и побороться за своё тело"
- POD_wraith_possession.100.option.b: "Сопротивляться захватчику"
- POD_wraith_possession.100.option.c: "Принять [Concept('possession', 'одержимость"
- POD_wraith_possession.200.t: "[Concept('possession', 'Одержимость')|E] [recipient.GetFirstNameNoTooltip]"
- POD_wraith_possession.200.desc: "Пришло время завладеть телом [recipient.GetTitledFirstName], но [Select_CString(recipient.IsFemale, 'она', 'он')] сопротивляется."
- POD_wraith_possession.200.option.a: "Всё равно продолжить."
- POD_wraith_possession.200.a.tt_willpower: "[recipient.GetFirstNameNoTooltip] проявил[Select_CString(recipient.IsFemale, 'а', '')] силу воли и сопротивляет[Select_CString(recipient.IsFemale, 'ся', 'ся')] вашему вторжению."
- POD_wraith_possession.200.a.tt_fortitude: "[recipient.GetFirstNameNoTooltip] владеет [Concept('discipline', 'дисциплиной')|E] Стойкость и сопротивляет[Select_CString(recipient.IsFemale, 'ся', 'ся')] вашему контролю."
+ POD_wraith_possession.100.desc: "[actor.GetTitledFirstName] пытается [Concept('possession', 'вселиться')] в вас. Вы замечаете, что части вашего тела двигаются сами по себе, а в голове появляются чужие мысли. Может, стоит позвать экзорциста?"
+ POD_wraith_possession.100.option.a: "Собраться с силой воли и побороться за своё тело."
+ POD_wraith_possession.100.option.b: "Сопротивляться [Select_CString(actor.IsFemale, 'захватчице', 'захватчику')]."
+ POD_wraith_possession.100.option.c: "Принять [Concept('possession', 'одержимость')|E]"
+
+ POD_wraith_possession.200.t: "[recipient.GetFirstNameNoTooltip]: одержимость"
+ POD_wraith_possession.200.desc: "Пришло время завладеть телом персонажа [recipient.GetTitledFirstName], но [recipient.GetSheHe] сопротивляется."
+ POD_wraith_possession.200.option.a: "Продолжить в любом случае."
+ POD_wraith_possession.200.a.tt_willpower: "[recipient.GetFirstNameNoTooltip] напрягает силу воли и сопротивляется вашему вторжению."
+ POD_wraith_possession.200.a.tt_fortitude: "[recipient.GetFirstNameNoTooltip] владеет [Concept('discipline', 'дисциплиной')|E] Стойкости и сопротивляется вашим манипуляциям."
  POD_wraith_possession.200.a.success.desc: "Победа"
- POD_wraith_possession.200.a.tt_success: "Тело [recipient.GetTitledFirstName] будет моим!"
+ POD_wraith_possession.200.a.tt_success: "Тело персонажа [recipient.GetTitledFirstName] будет моим!"
  POD_wraith_possession.200.a.failure.desc: "Поражение"
- POD_wraith_possession.200.a.tt_failure: "[recipient.GetTitledFirstName] устоял[Select_CString(recipient.IsFemale, 'а', '')] перед моей попыткой [Concept('possession', 'одержать')] [actor.GetHerHis]."
+ POD_wraith_possession.200.a.tt_failure: "[recipient.GetTitledFirstName] сопротивляется моей попытке [Concept('possession', 'вселиться')] в н[actor.GetHerHis]."
+
  POD_wraith_possession.200.option.b: "Навязать свою волю. Все смертные — мои марионетки."
- POD_wraith_possession.200.option.c: "[Select_CString(recipient.IsFemale, 'Отказаться от этого плана, я больше не желаю завладевать её телом.', 'Отказаться от этого плана, я больше не желаю завладевать его телом.')]"
- POD_wraith_possession.200.option.c.tt: "[Concept('possession', 'Одержимость')|E] не удастся."
- POD_wraith_possession.300.t: "Тело [recipient.GetFirstNameNoTooltip] одержано"
- POD_wraith_possession.300.desc: "Вы усилили свой контроль над телом [recipient.GetTitledFirstName]. Эта кукла теперь принадлежит вам."
+ POD_wraith_possession.200.option.c: "Отказаться от этой затеи, я больше не хочу завладевать [recipient.GetHerHis] телом."
+ POD_wraith_possession.200.option.c.tt: "[Concept('possession', 'Одержимость')|E] провалится."
+
+
+ POD_wraith_possession.300.t: "[recipient.GetFirstNameNoTooltip]: одержимость тела"
+ POD_wraith_possession.300.desc: "Вы усилили свой контроль над телом персонажа [recipient.GetTitledFirstName]. Эта кукла теперь принадлежит вам."
  POD_wraith_possession.300.option.a: "Так и должно быть."
- POD_wraith_possession.400.t: "Вас [Concept('possession', 'одержали')]"
- POD_wraith_possession.400.desc: "Проиграв битву воль с [actor.GetTitledFirstName], вы теряете ещё большую часть контроля над собой в пользу [actor.GetHerHis]."
- POD_wraith_possession.400.option.a: "[Select_CString(ROOT.Char.IsFemale, 'Моё тело больше мне не принадлежит.', 'Моё тело больше мне не принадлежит.')]"
- POD_wraith_possession.500.t: "[Concept('possession', 'Одержимость')|E] отражена"
- POD_wraith_possession.500.desc: "[recipient.GetTitledFirstName] устоял[Select_CString(recipient.IsFemale, 'а', '')] перед моей попыткой [Concept('possession', 'одержать')] [recipient.GetHerHis]."
+
+
+ POD_wraith_possession.400.t: "В вас вселились"
+ POD_wraith_possession.400.desc: "Проиграв битву воли с персонажем [actor.GetTitledFirstName], вы теряете ещё большую часть контроля над собой в [actor.GetHerHis] пользу."
+ POD_wraith_possession.400.option.a: "Моё тело больше не принадлежит мне."
+
+ POD_wraith_possession.500.t: "Сопротивление [Concept('possession', 'одержимости')|E]"
+ POD_wraith_possession.500.desc: "[recipient.GetTitledFirstName] [Select_CString(recipient.IsFemale, 'устояла', 'устоял')] перед моей попыткой [Concept('possession', 'вселиться')] в н[recipient.GetHerHis]."
  POD_wraith_possession.500.option.a: "Провал!"
- POD_wraith_possession.600.t: "[Concept('possession', 'Одержимость')|E] отражена"
- POD_wraith_possession.600.desc: "[actor.GetTitledFirstName] отказал[Select_CString(actor.IsFemale, 'ась', 'ся')] от попытки вторгнуться в ваше тело."
- POD_wraith_possession.600.option.a: "[Select_CString(ROOT.Char.IsFemale, 'Моё тело принадлежит только мне!', 'Моё тело принадлежит только мне!')]"
+
+
+ POD_wraith_possession.600.t: "Сопротивление [Concept('possession', 'одержимости')|E]"
+ POD_wraith_possession.600.desc: "[actor.GetTitledFirstName] [Select_CString(actor.IsFemale, 'отказалась', 'отказался')] от попытки вторгнуться в ваше тело."
+ POD_wraith_possession.600.option.a: "Моё тело принадлежит только мне!"
+
  POD_wraith_possession.1000.t: "Никто без тела"
- POD_wraith_possession.1000.desc: "Ваше исходное тело погибло, и вы больше не можете в него вернуться.\nЗвучит довольно плохо... вероятно, потому что так оно и есть. Пора стать новым собой?"
- POD_wraith_possession.1000.option.a: "[Select_CString(ROOT.Char.IsFemale, 'Я навсегда заперта в этом теле?', 'Я навсегда заперт в этом теле?')]"
- POD_wraith_possession_toast_title: "Одержимость удалась!"
- POD_wraith_possession_toast_text: "Ваш призрак смог [Concept('possession', 'одержать')] цель, дав вам определённый контроль над ней и наделив её силой."
- POD_wraith_possession.toast.fail: "Одержимость провалена!"
- POD_wraith_possession.toast.fail.desc: "Ваша цель устоял[Select_CString(recipient.IsFemale, 'а', '')] перед [Concept('possession', 'одержимостью')|E] призрака."
+ POD_wraith_possession.1000.desc: "Ваше исходное тело погибло, и вы больше не можете в него вернуться.\nЗвучит довольно плохо... вероятно, потому что так оно и есть. Пора стать [Select_CString(ROOT.Char.IsFemale, 'новой?', 'новым?')] собой?"
+ POD_wraith_possession.1000.option.a: "Я навсегда [Select_CString(ROOT.Char.IsFemale, 'заперта', 'заперт')] в этом теле?"
+
+ POD_wraith_possession_toast_title: "Успех призрака!"
+ POD_wraith_possession_toast_text: "Ваш призрак смог [Concept('possession', 'вселиться')] в цель, дав вам определённый контроль над ней и наделив её силой."
+
+ POD_wraith_possession.toast.fail: "Провал призрака!"
+ POD_wraith_possession.toast.fail.desc: "Ваша цель устояла перед [Concept('possession', 'одержимостью')|E] призрака."
