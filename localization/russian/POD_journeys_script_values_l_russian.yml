@@ -134,7 +134,7 @@
  golconda_2_monthly_num_current: "#TOOLTIP:golconda_2_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('golconda_2_progress')|1]%#!#!"
  golconda_2_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('golconda_2_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('golconda_2_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('golconda_2_progress')]\n\n$POD_journey_progress_golconda_2_gui$"
 
- POD_journey_progress_golconda_2_gui: "#help For hints on how to further increase planning speed, see [golconda_planning_speed|E].#!"
+ POD_journey_progress_golconda_2_gui: "#help Для подсказок о том, как ещё больше увеличить скорость планирования, см. «[golconda_planning_speed|E]».#!"
 
 
  siochain_1_monthly_num: "#TOOLTIP:siochain_1_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('siochain_1_progress')|1]%#!#!"
