@@ -95,15 +95,15 @@
  POD_predatorstories.1061.a.failure.toast: "Что за бардак"
 
  #Vampire poaches prey
- POD_predatorstories.1070.t: "[Select_CString(vampire.IsFemale, 'Браконьерша', 'Браконьер' )]-нежить"
- POD_predatorstories.1070.desc: "Как [Select_CString(ROOT.Char.IsFemale, 'хозяйка', 'хозяин' )] своих владений, вы ожидаете, что новички представятся вам, прежде чем охотиться на ваших пастбищах. Хотя у большинства хватает здравого смысла поступать именно так, всегда находятся высокомерные (или глупые) дураки, которые думают, что могут просто игнорировать вас.\n[Select_CString(vampire.IsFemale, 'Такая негодяйка была замечена', 'Такой негодяй был замечен' )], и вы решаете разобраться с [Select_CString(vampire.IsFemale, 'ней', 'ним' )] сами, вбив немного хороших манер в тупую башку [Select_CString(vampire.IsFemale, 'этой незваной гостьи', 'этого незваного гостя' )]."
+ POD_predatorstories.1070.t: "Браконьер-нежить"
+ POD_predatorstories.1070.desc: "Как [Select_CString(ROOT.Char.IsFemale, 'хозяйка', 'хозяин' )] своих владений, вы ожидаете, что новички представятся вам, прежде чем охотиться на ваших пастбищах. Хотя у большинства хватает здравого смысла поступать именно так, всегда находятся высокомерные (или глупые) дураки, которые думают, что могут просто игнорировать вас.\nТакой негодяй был замечен, и вы решаете разобраться с ним сами, вбив немного хороших манер в тупую башку этого незваного гостя."
  POD_predatorstories.1070.a: "Знай своё место."
  POD_predatorstories.1070.b: "Хех, мне всё равно."
 
  POD_predatorstories.1070.a.success: "Можешь преклонить колено"
  POD_predatorstories.1070.a.success.toast: "Низкий поклон"
  POD_predatorstories.1070.a.failure: "Как ты смеешь!"
- POD_predatorstories.1070.a.failure.toast: "Как [Select_CString(vampire.IsFemale, 'она посмела', 'он посмел' )]!"
+ POD_predatorstories.1070.a.failure.toast: "Как он посмел!"
 
  #Victim wants to be lover
  POD_predatorstories.1080.t: "Сумеречный роман"
