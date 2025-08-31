@@ -1316,18 +1316,18 @@
  RESTORATION_PERK_EFFECT: "Позволяет вам исцелять раны и негативные ментальные свойства через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Если вы уже можете использовать другой источник, вместо этого снижает затраты.\n#F Инквизитор достигает особой склонности к чуду исцеления, он может возлагать руки на больных товарищей чаще и с меньшими затратами.#!"
  JUDGEMENT_OF_HEAVEN_PERK_EFFECT: "Позволяет [Concept('imprison', 'заключить')|E] цель в темницу через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Инквизитор может заключить сверхъестественное существо в земном царстве, где оно не сможет избежать своего окончательного приговора.#!"
 
- # Alchemy # НИЖЕ НЕ ПРОВЕРЕНО, МУМИИ
+ # Alchemy
 
- ANALYZE_MATERIAL_PERK_EFFECT: "Бонус к шансу на успех идентификации в практике алхимии.\n#F Мумия может получить информацию о составе того или иного предмета.#!"
- CLOUD_OF_SMOKE_PERK_EFFECT: "Разблокируйте формулу [GetModifier('cloud_of_smoke_modifier').GetNameWithTooltip].\n#F Мумия заставляет огонь испускать густое облако черного дыма, бросая в него заранее приготовленный порошок.#!"
- DRINK_OF_SEVEN_DAYS_REST_PERK_EFFECT: "Разблокируйте формулу [GetModifier('drink_of_seven_days_rest_modifier').GetNameWithTooltip].\n#F Это зелье избавляет того, кто его пьет, от любой усталости, исцеляя его от незначительных повреждений.#!"
- MILD_POISON_PERK_EFFECT: "Разблокируйте формулу [GetModifier('mild_poison_modifier').GetNameWithTooltip].\n#F Мумия выделяет слабый яд, который может быть весьма смертельным.#!"
- POTION_OF_RESILIENCE_PERK_EFFECT: "Разблокируйте формулу [GetModifier('potion_of_resilience_modifier').GetNameWithTooltip].\n#F Это зелье действует как сверхъестественное обезболивающее.#!"
- SIMPLE_ELIXIR_PERK_EFFECT: "Разблокируйте формулу простого эликсира, что дает случайный бонус к характеристикам.\n#F Мумия создает эликсир, небольшое зелье, которое увеличивает один атрибут на некоторое время.#!"
- SIMPLE_PHILTRE_PERK_EFFECT: "Разблокируйте формулу [GetModifier('simple_philtre_modifier').GetNameWithTooltip].\n#F Мумия создает зелье, незначительное вещество, которое вызывает определенные эмоции у своей жертвы.#!"
- SIMPLE_TONIC_PERK_EFFECT: "Разблокируйте формулу [GetModifier('simple_tonic_modifier').GetNameWithTooltip].\n#F У мумии получается целебная мазь или зелье.#!"
- STASIS_PERK_EFFECT: "Разблокируйте опцию стазиса в алхимической практике.\n#F Мумия предохраняет один-единственный материал от изменения внешними силами.#!"
- BLOOD_OF_THE_SNAKE_PERK_EFFECT: "Разблокируйте формулу [GetModifier('blood_of_the_snake_modifier').GetNameWithTooltip].\n#F Мумия создает противоядие, которое защищает от любого природного яда или излечивает повреждения, нанесенные ядом.#!"
+ ANALYZE_MATERIAL_PERK_EFFECT: "Продолжительность действия зелья: #P +1#!\n#F Мумия может получить информацию о составе того или иного предмета.#!"
+ CLOUD_OF_SMOKE_PERK_EFFECT: "#F Мумия заставляет огонь испускать густое облако чёрного дыма, бросая в него заранее приготовленный порошок.#!"
+ DRINK_OF_SEVEN_DAYS_REST_PERK_EFFECT: "$unlock_brewing_node$ [GetModifier('drink_of_seven_days_rest_modifier').GetNameWithTooltip].\n#F Это зелье избавляет того, кто его пьет, от любой усталости, исцеляя его от незначительных повреждений.#!"
+ MILD_POISON_PERK_EFFECT: "$unlock_brewing_node$ [GetModifier('mild_poison_modifier').GetNameWithTooltip].\n#F Мумия создаёт слабый яд, который может быть весьма смертельным.#!"
+ POTION_OF_RESILIENCE_PERK_EFFECT: "$unlock_brewing_node$ [GetModifier('potion_of_resilience_modifier').GetNameWithTooltip].\n#F Это зелье действует как сверхъестественное обезболивающее.#!"
+ SIMPLE_ELIXIR_PERK_EFFECT: "$unlock_brewing_node$ [GetModifier('simple_elixir_diplomacy_modifier').GetNameWithTooltip]\n#F Мумия создает эликсир, небольшое зелье, которое увеличивает один атрибут на некоторое время.#!"
+ SIMPLE_PHILTRE_PERK_EFFECT: "$unlock_brewing_node$ [GetModifier('simple_philtre_modifier').GetNameWithTooltip].\n#F Мумия создает отвар, незначительное вещество, которое вызывает определенные эмоции у своей жертвы.#!"
+ SIMPLE_TONIC_PERK_EFFECT: "$unlock_brewing_node$ [GetModifier('simple_tonic_modifier').GetNameWithTooltip].\n#F Мумия создаёт целебную мазь или зелье.#!"
+ STASIS_PERK_EFFECT: "Прочность [Concept('artifact', 'артефакта')|E]-зелья: #P +5#!\n#F Мумия оберегает один-единственный материал от изменения внешними силами.#!"
+ BLOOD_OF_THE_SNAKE_PERK_EFFECT: "Улучшает достоинство «[GetPerk('potion_of_resilience_perk').GetName(GetPlayer)]», заменяя модификатор [GetModifier('potion_of_resilience_modifier').GetNameWithTooltip] модификатором [GetModifier('blood_of_the_snake_modifier').GetNameWithTooltip].\n#F Мумия создает противоядие, которое защищает от любого природного яда или излечивает повреждения, нанесенные ядом.#!" #ТУТ
  COBRA_SPIT_PERK_EFFECT: "Разблокируйте формулу [GetModifier('cobra_spit_modifier').GetNameWithTooltip].\n#F Мумия образует кислую жидкость, которая разрушительно воздействует на живые ткани.#!"
  ESSENCE_LONGING_PERK_EFFECT: "Разблокируйте формулу [GetModifier('essence_longing_modifier').GetNameWithTooltip].\n#F Мумия создает аромат, который действует как легкий афродизиак.#!"
  EYES_OF_THE_KA_PERK_EFFECT: "Разблокируйте формулу [GetModifier('eyes_of_the_ka_modifier').GetNameWithTooltip].\n#F Мумия создает мазь, которая при нанесении на глаза и уши позволяет увидеть Земли Теней.#!"
