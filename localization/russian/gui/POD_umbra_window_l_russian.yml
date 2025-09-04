@@ -292,7 +292,7 @@
  umbra_discovery.flux.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] в измерении $umbra_discovery_region$ наставника арканоса «[GetTrait('arcanos_flux').GetName( GetPlayer )]», достойного [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
  umbra_discovery_inhabit: "Вселение"
  umbra_discovery.inhabit.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] в измерении $umbra_discovery_region$ наставника арканоса «[GetTrait('arcanos_inhabit').GetName( GetPlayer )]», достойного [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
- umbra_discovery_intimation: "Интимация"
+ umbra_discovery_intimation: "Указание"
  umbra_discovery.intimation.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] в измерении $umbra_discovery_region$ наставника арканоса «[GetTrait('arcanos_intimation').GetName( GetPlayer )]», достойного [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
  umbra_discovery_keening: "Песнопение"
  umbra_discovery.keening.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] в измерении $umbra_discovery_region$ наставника арканоса «[GetTrait('arcanos_keening').GetName( GetPlayer )]», достойного [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
