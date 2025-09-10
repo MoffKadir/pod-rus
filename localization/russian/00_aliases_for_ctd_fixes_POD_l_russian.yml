@@ -1,165 +1,95 @@
 ﻿l_russian:
- # This localization replaces aliases from common\game_concepts\00_POD_game_concepts.txt
- # After Roads to Power, they started leading to CTDs.
- # So far, it is unclear why. Probably some obscure reason like hash collisions or race conditions.
- # Until we figure out the real reason, this is our workaround.
+ # Hash collisions in game_concepts can lead to inconsistent crashes to desktop on startup.
+ # In order to keep the number of game_concepts down, we do not use aliases in POD.
+ # Instead, we use these loc strings that can be inserted into other loc.
+ # So e.g. instead of [splats|E], it's $pod_splats$
 
- # To revert these, first uncomment the alias lines in common\game_concepts\00_POD_game_concepts.txt
- # Then go through these one by one.
-
- # To revert: Search&replace $pod_masquerade_exposure$ -> [masquerade_exposure|E]
  pod_masquerade_exposure: "[Concept('the_masquerade','Раскрыт')]"
-
- # To revert: Search&replace $pod_masquerade_exposure_with_icon$ -> [masquerade_exposure_with_icon|E]
  pod_masquerade_exposure_with_icon: "[Concept('the_masquerade','@masquerade_icon! Раскрыт')]"
 
- # To revert: Search&replace $pod_cainites$ -> [cainites|E]
  pod_cainites: "[Concept('cainite','Каинит')]"
-
- # To revert: Search&replace $pod_diablerize$ -> [diablerize|E]
  pod_diablerize: "[Concept('diablerie','Диаблери')]"
-
- # To revert: Search&replace $pod_diablerized$ -> [diablerized|E]
  pod_diablerized: "[Concept('diablerie','Диаблери')]"
-
- # To revert: Search&replace $pod_diablerizing$ -> [diablerizing|E]
  pod_diablerizing: "[Concept('diablerie','Диаблери')]"
-
- # To revert: Search&replace $pod_diablerist$ -> [diablerist|E]
  pod_diablerist: "[Concept('diablerie','Диаблери')]"
-
- # To revert: Search&replace $pod_torpid$ -> [torpid|E] 
  pod_torpid: "[Concept('torpor','торпор')]"
-
- # To revert: Search&replace $pod_Sires$ -> [Sires|E]
  pod_Sires: "[Concept('Sire','Сир')]"
-
- # To revert: Search&replace $pod_Embraced$ -> [Embraced|E]
  pod_Embraced: "[Concept('Embrace','Объят')]"
-
- # To revert: Search&replace $pod_disciplines$ -> [disciplines|E]
  pod_disciplines: "[Concept('discipline','Дисциплин')]"
-
- # To revert: Search&replace $pod_Clans$ -> [Clans|E]
  pod_Clans: "[Concept('Clan','Клан')]"
-
- # To revert: Search&replace $pod_antediluvians$ -> [antediluvians|E] 
  pod_antediluvians: "[Concept('antediluvian','Допотопн')]"
 
- # To revert: Search&replace $pod_ghouls$ -> [ghouls|E] 
  pod_ghouls: "[Concept('ghoul','Гул')]"
-
- # To revert: Search&replace $pod_revenants$ -> [revenants|E]
  pod_revenants: "[Concept('revenant','Ревенант')]"
 
- # To revert: Search&replace $pod_splats$ -> [splats|E]
  pod_splats: "[Concept('splat','Вид')]"
 
- # To revert: Search&replace $pod_princes$ -> [princes|E]
  pod_princes: "[Concept('prince','Княз')]"
 
- # To revert: Search&replace $pod_hunger_i$ -> [hunger_i|E]
  pod_hunger_i: "[Concept('hunger','@blood_icon!')]"
-
- # To revert: Search&replace $pod_hunger_with_icon$ -> [hunger_with_icon|E]
  pod_hunger_with_icon: "[Concept('hunger','@blood_icon!Голод')]"
 
- # To revert: Search&replace $pod_the_beast$ -> [the_beast|E]
  pod_the_beast: "[Concept('beast','Звер')]"
-
- # To revert: Search&replace $pod_beasts$ -> [beasts|E]
  pod_beasts: "[Concept('beast','Звер')]"
 
- # To revert: Search&replace $pod_possess$ -> [possess|E]
  pod_possess: "[Concept('possession','одержим')]"
 
- # To revert: Search&replace $pod_thralls$ -> [thralls|E]
  pod_thralls: "[Concept('thrall','Раб')]"
 
- # To revert: Search&replace $pod_Fetters$ -> [Fetters|E]
  pod_Fetters: "[Concept('Fetter','Оков')]"
 
- # To revert: Search&replace $pod_grace_i$ -> [grace_i]
  pod_grace_i: "[Concept('grace','@grace_icon!')]"
 
- # To revert: Search&replace $pod_st_peters_city$ -> [st_peters_city|E]
  pod_st_peters_city: "[Concept('eternal_rome',Localize('pod_st_peters_city_loc'))]"
  pod_st_peters_city_loc: "Город Святого Петра"
 
- # To revert: Search&replace $pod_roma_aeterna$ -> [roma_aeterna|E]
  pod_roma_aeterna: "[Concept('eternal_rome','Roma Aeterna')]"
 
- # To revert: Search&replace $pod_journeys$ -> [journeys|E]
  pod_journeys: "[Concept('journey','Странств')]"
 
- # To revert: Search&replace $pod_feeding_restrictions$ -> [feeding_restrictions|E]
  pod_feeding_restrictions: "[Concept('ventrue_clan_curse','Ограничен')]"
 
- # To revert: Search&replace $pod_anathema$ -> [anathema|E]
  pod_anathema: "[Concept('blood_hunt','Анафем')]"
 
- # To revert: Search&replace $pod_enlightenment$ -> [enlightenment|E]
  pod_enlightenment: "[Concept('golconda','Просветл')]"
 
- # To revert: Search&replace $pod_cantrips$ -> [cantrips|E]
  pod_cantrips: "[Concept('cantrip','Заклят')]"
-
- # To revert: Search&replace $pod_fae_realm$ -> [fae_realm|E]
  pod_fae_realm: "[Concept('cantrip','Измерен')]"
 
- # To revert: Search&replace $pod_infiltration_mission$ -> [infiltration_mission|E]
  pod_infiltration_mission: "[Concept('infiltration','Проникновен')]"
-
- # To revert: Search&replace $pod_infiltration_missions$ -> [infiltration_missions|E]
  pod_infiltration_missions: "[Concept('infiltration','Проникновен')]"
-
- # To revert: Search&replace $pod_suspicion_with_icon$ -> [suspicion_with_icon|E] 
  pod_suspicion_with_icon: "[Concept('suspicion','@masquerade_icon:color_goldy_yellow! Подозрен')]"
 
- # To revert: Search&replace $pod_samuel_haight_mode_with_icon$ -> [samuel_haight_mode_with_icon|E]
  pod_samuel_haight_mode_with_icon: "[Concept('samuel_haight_mode','@haight_icon! Сэмюел')]"
-
- # To revert: Search&replace $pod_storyteller_mode_with_icon$ -> [storyteller_mode_with_icon|E]
  pod_storyteller_mode_with_icon: "[Concept('storyteller_mode','@wod_icon! Режим')]"
 
- # To revert: Search&replace $pod_loyalty_with_icon$ -> [loyalty_with_icon|E]
  pod_loyalty_with_icon: "[Concept('loyalty','@knight_icon!Предан')]"
 
- # To revert: Search&replace $pod_wan_xian$ -> [wan_xian|E]
  pod_wan_xian: "[Concept('kuei_jin','Вон Ксан')]"
-
- # To revert: Search&replace $pod_wan_kuei$ -> [wan_kuei|E]
  pod_wan_kuei: "[Concept('kuei_jin','Ван Куэй')]"
-
- # To revert: Search&replace $pod_hungry_dead$ -> [hungry_dead|E]
  pod_hungry_dead: "[Concept('kuei_jin','Голод')]"
-
- # To revert: Search&replace $pod_asuratizayya$ -> [asuratizayya|E]
  pod_asuratizayya: "[Concept('kuei_jin','Асуратизайя')]"
 
- # To revert: Search&replace $pod_bs_spell$ -> [bs_spell|E]
  pod_bs_spell: "[Concept('bloodmagic_spell','Заклинан')]"
-
- # To revert: Search&replace $pod_bs_spells$ -> [bs_spells|E]
  pod_bs_spells: "[Concept('bloodmagic_spell','Заклинан')]"
-
- # To revert: Search&replace $pod_bs_tradition$ -> [bs_tradition|E]
  pod_bs_tradition: "[Concept('bloodmagic_tradition','Традиц')]"
-
- # To revert: Search&replace $pod_bs_traditions$ -> [bs_traditions|E]
  pod_bs_traditions: "[Concept('bloodmagic_tradition','Традиц')]"
-
- # To revert: Search&replace $pod_bs_path$ -> [bs_path|E]
  pod_bs_path: "[Concept('bloodmagic_path','Троп')]"
-
- # To revert: Search&replace $pod_bs_paths$ -> [bs_paths|E]
  pod_bs_paths: "[Concept('bloodmagic_path','Троп')]"
-
- # To revert: Search&replace $pod_bs_ritual$ -> [bs_ritual|E]
  pod_bs_ritual: "[Concept('bloodmagic_ritual','Ритуал')]"
-
- # To revert: Search&replace $pod_bs_rituals$ -> [bs_rituals|E]
  pod_bs_rituals: "[Concept('bloodmagic_ritual','Ритуал')]"
 
- # To revert: Search&replace $pod_cultists$ -> [cultists|E]
  pod_cultists: "[Concept('cultist','Культ')|E]"
+
+ # This has a space in front of the icon since the icon is pretty big otherwise
+ pod_superficial_damage_with_box: "[Concept('POD_superficial_damage',' @health_track_damage_icon! Урон')|E]"
+ # This has a space in front of the icon since the icon is pretty big otherwise
+ pod_aggravated_damage_with_box: "[Concept('POD_aggravated_damage',' @health_track_aggravated_damage_icon! Урон')|E]"
+
+ pod_fetishes: "[Concept('fetish','Фетиш')|E]"
+ pod_fetish_artifact_icon: "[Concept('fetish','@gnosis_icon!')]"
+ pod_spirit_companions: "[Concept('spirit_companion','Дух')|E]"
+ pod_spirit_pact: "[Concept('spirit_companion','Дух')|E]"
+ pod_spirit_pacts: "[Concept('spirit_companion','Дух')|E]"
+ pod_ancestral_tongue: "[Concept('spirit_language','Предк')|E]"
+ pod_ancestor_spirits: "[Concept('ancestor_spirit','Предк')|E]"
