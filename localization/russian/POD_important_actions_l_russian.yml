@@ -24,11 +24,6 @@
  action_can_add_dreamer_alert_desc: "Вам нужно зачаровать смертного, чтобы получать больше опыта колдовства."
  action_can_add_dreamer_alert_click: "#I Нажмите, чтобы зачаровать смертного и сделать его мечтателем#!"
 
- #action_can_enchant_alert: "You should get [GetTrait('enchanted').GetName( GetPlayer )]"
- #action_can_enchant_alert_label: "You should get [GetTrait('enchanted').GetName( GetPlayer )]"
- #action_can_enchant_alert_desc: "You should get [GetTrait('enchanted').GetName( GetPlayer )] to prevent your equipped treasure from getting disabled."
- #action_can_enchant_alert_click: "#I Click to get [GetTrait('enchanted').GetName( GetPlayer )]#!"
-
  action_can_call_pet_to_war_alert: "Вы можете призвать своего питомца на войну"
  action_can_call_pet_to_war_alert_label: "Вы можете призвать своего питомца на войну"
  action_can_call_pet_to_war_alert_desc: "Вы можете призвать своего питомца на войну, чтобы получить преимущество."
@@ -95,15 +90,6 @@
  action_can_demand_mass_payment_desc: "У вас есть [hooks|El] на двух и более персонажей, у которых есть лишнее [gold|El]."
  action_can_demand_mass_payment_click: "#I Нажмите, чтобы открыть [character_interaction|El] для требования выплат со всех персонажей, на которых у вас имеются рычаги влияния.#!"
 
- reactive_advice_gain_sekhem: "Прирост сехема"
- action_reactive_advice_gain_sekhem: "Совет: Прирост сехема"
- action_reactive_advice_gain_sekhem_desc: "Вы можете восстановить сехем разными способами. Узнайте больше о том, как это сделать."
- action_reactive_advice_gain_sekhem_click: "$click_to_open_lesson$"
- lesson_gain_sekhem_basic: "Прирост сехема"
- lesson_gain_sekhem_basic_desc: "Вы используете сехем для подпитки ваших техник хекау, и каждый тип мумий восстанавливает его по-разному: [GetTrait('shemsuheru').GetName( GetPlayer )] со временем (1 ед./мес. если вы находитесь в регионе [GetGeographicalRegion('pod_lands_of_faith').GetName], иначе будет 25% шанс получить сехем в зависимости от уровня постройки Пристанище Маат). [GetTrait('cabiri').GetName( GetPlayer )] восстанавливают его с помощью [Concept('character_interaction', 'взаимодействия персонажа')|E] «Восстановление пневмы». [GetTrait('banemummy').GetName( GetPlayer )] восстанавливают сехем, казня [Concept('prisoners', 'узников')|E] через вариант казни «$EXECUTION_DEVOUR$»."
- lesson_gain_sekhem_advanced: "Прирост сехема"
- lesson_gain_sekhem_advanced_desc: "На поздних стадиях игры вы сможете использовать [character_interaction|El] «Извлечь сехем» (открывается при наличии достоинства «[GetPerk( 'name_of_sekhem_perk' ).GetName( GetPlayer )]») или отправиться в Аменти через панель [Concept('umbra', 'Умбры')|E], чтобы восстановить сехем."
-
  reactive_advice_gain_resolve: "Прирост решимости"
  action_reactive_advice_gain_resolve: "Совет: Прирост решимости"
  action_reactive_advice_gain_resolve_desc: "Вы можете восстановить решимость разными способами. Узнайте больше о том, как это сделать."
@@ -154,7 +140,7 @@
 
  pod_alert_can_hunt_in_capital: "#T Вы можете отправиться в странствие#!\nПоскольку вы - вампир, вы можете #bold $hunt_in_capital_name$#!, чтобы утолить ваш $pod_hunger_with_icon$ и получить [Concept('lifestyle_experience', 'опыт пути')|E].\n\nОхота на #bold крестьян#! бесплатна.\n\n#I Нажмите, чтобы открыть окно [Concept('journey', 'странствия')|E].#!\n$RIGHT_CLICK_DISMISS$"
 
- pod_alert_can_train_with_pack: "#T Вы можете отправиться в странствие#!\nПоскольку вы - оборотень, вы можете #bold $werewolf_training_name$#!, чтобы получить [Concept('lifestyle_experience', 'опыт пути')|E] и понизить [development|El] вашей столицы.\n\n#I Нажмите, чтобы открыть окно [Concept('journey', 'странствия')|E].#!\n$RIGHT_CLICK_DISMISS$"
+ pod_alert_can_train_with_pack: "#T Вы можете отправиться в странствие#!\nПоскольку вы - $glossary_fera$, вы можете #bold $fera_training_name$#!, чтобы улучшить способности группы [GetPlayer.Custom('PODCoterie')] и свои собственные, или получить другие награды.\n\n#I Нажмите, чтобы открыть окно [Concept('journey', 'странствия')|E].#!\n$RIGHT_CLICK_DISMISS$"
 
  pod_alert_can_go_on_umbra_expedition: "#T Вы можете отправиться в [Concept('umbra_expedition', 'экспедицию Умбры')|E]#!\nИсследование глубин [Concept('umbra', 'Умбры')|E] может быть как опасным, так и полезным.\n\n#I Нажмите, чтобы открыть окно [Concept('umbra', 'Умбры')|E].#!\n$RIGHT_CLICK_DISMISS$"
 
@@ -231,3 +217,8 @@
  action_can_craft_alert: "Ремесло восстановилось!"
  action_can_craft_alert_desc: "Ремесло восстановилось!"
  action_can_craft_alert_click: ""
+
+ action_can_weaken_or_bind_wraith_alert: "Вы можете усилить узы призрака"
+ action_can_weaken_or_bind_wraith_alert_label: "Вы можете усилить узы призрака"
+ action_can_weaken_or_bind_wraith_alert_desc: "Вы можете усилить узы призрака, чтобы повысить их качество!"
+ action_can_weaken_or_bind_wraith_alert_click: "#I Нажмите, чтобы усилить или ослабить оковы призрака!#!"

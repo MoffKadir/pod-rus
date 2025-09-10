@@ -79,11 +79,18 @@
  assault_lair_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('assault_lair_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('assault_lair_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('assault_lair_progress')]"
 
 
- werewolf_training_monthly_num: "#TOOLTIP:werewolf_training_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('werewolf_training_progress')|1]%#!#!"
- werewolf_training_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('werewolf_training_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('werewolf_training_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('werewolf_training_progress')]"
+ fera_training_monthly_num: "#TOOLTIP:fera_training_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('fera_training_progress')|1]%#!#!"
+ fera_training_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('fera_training_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('fera_training_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('fera_training_progress')]"
 
- werewolf_training_monthly_num_current: "#TOOLTIP:werewolf_training_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('werewolf_training_progress')|1]%#!#!"
- werewolf_training_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('werewolf_training_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('werewolf_training_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('werewolf_training_progress')]"
+ fera_training_monthly_num_current: "#TOOLTIP:fera_training_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('fera_training_progress')|1]%#!#!"
+ fera_training_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('fera_training_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('fera_training_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('fera_training_progress')]"
+
+
+ fera_spirit_quest_monthly_num: "#TOOLTIP:fera_spirit_quest_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('fera_spirit_quest_progress')|1]%#!#!"
+ fera_spirit_quest_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('fera_spirit_quest_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('fera_spirit_quest_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('fera_spirit_quest_progress')]"
+ 
+ fera_spirit_quest_monthly_num_current: "#TOOLTIP:fera_spirit_quest_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('fera_spirit_quest_progress')|1]%#!#!"
+ fera_spirit_quest_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('fera_spirit_quest_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('fera_spirit_quest_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('fera_spirit_quest_progress')]"
 
 
  learn_true_name_monthly_num: "#TOOLTIP:learn_true_name_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('learn_true_name_progress')|1]%#!#!"
@@ -207,6 +214,14 @@
  POD_sorcery_legendary_studying_progress_0_stress: "У вас нет 0 [Concept('stress', 'стресса')|E] или [Concept('stress_level', 'уровня стресса')|E]"
  POD_sorcery_legendary_studying_progress_10_lasombra_in_prison: "У вас нет 10 [Concept('prisoner', 'пленников')|E] со свойством «[GetTrait('lasombra').GetName(GetNullCharacter)]»"
  POD_sorcery_legendary_studying_progress_furry_friend: "У вас нет [Concept('friend', 'дружеских')|E] или других подобных [Concept('relation', 'отношений')|E] с оборотнем"
+
+
+ study_true_name_journey_monthly_num: "#TOOLTIP:study_true_name_journey_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('study_true_name_journey_progress')|1]%#!#!"
+ study_true_name_journey_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('study_true_name_journey_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('study_true_name_journey_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('study_true_name_journey_progress')]"
+ 
+ study_true_name_journey_monthly_num_current: "#TOOLTIP:study_true_name_journey_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('study_true_name_journey_progress')|1]%#!#!"
+ study_true_name_journey_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('study_true_name_journey_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('study_true_name_journey_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('study_true_name_journey_progress')]"
+
  # Text starts here
 
  instant_monthly_num: "Мгновенно"
@@ -252,6 +267,8 @@
  POD_journey_progress_court_tutor_2: "Ваш [GetCourtPositionType('court_tutor_court_position').GetName()] обладает надлежащей [Concept('aptitude', 'пригодностью')|E]"
  POD_journey_progress_court_tutor_3: "Ваш [GetCourtPositionType('court_tutor_court_position').GetName()] обладает хорошей [Concept('aptitude', 'пригодностью')|E]"
  POD_journey_progress_court_tutor_4: "Ваш [GetCourtPositionType('court_tutor_court_position').GetName()] обладает отличной [Concept('aptitude', 'пригодностью')|E]"
+
+ POD_journey_progress_eyes_of_a_thief: "У вас есть достоинство «[GetPerk('eyes_of_a_thief_perk').GetName(GetPlayer)]»"
 
  POD_journey_progress_antiquarian_none: "У вас отсутствует [GetCourtPositionType('antiquarian_court_position').GetName()]"
  POD_journey_progress_antiquarian_1: "Ваш [GetCourtPositionType('antiquarian_court_position').GetName()] обладает слабой [Concept('aptitude', 'пригодностью')|E]"
@@ -330,18 +347,19 @@
  POD_journey_progress_ambrogino: "Вы являетесь персонажем [GetPlayer.GetFirstName]"
 
  POD_journey_progress_target_invocation_of_name_perk: "[PlayerJourneyTarget.GetFirstName] имеет достоинство «[GetPerk('arcana_invocation_of_name_perk').GetName(PlayerJourneyTarget)]» #weak (-20%)#!"
- POD_journey_progress_target_cloud_the_name_perk: "[PlayerJourneyTarget.GetFirstName] имеет достоинство «[GetPerk('cloud_the_name_perk').GetName(PlayerJourneyTarget)]» #weak (-20%)#!"
- POD_journey_progress_target_via_geniorum_5_perk: "[PlayerJourneyTarget.GetFirstName] имеет достоинство «[GetPerk('via_geniorum_5_perk').GetName(PlayerJourneyTarget)]» #weak (-20%)#!"
  POD_journey_progress_target_house_eater_modifier: "[PlayerJourneyTarget.GetFirstName] имеет достоинство «[GetModifier('house_eater_modifier').GetNameWithTooltip]» #weak (-20%)#!"
- POD_journey_progress_umbra_demon_binding_modifier: "У вас есть достоинство «[GetModifier('umbra_demon_binding_modifier').GetNameWithTooltip]» #weak (+20%)#!"
  POD_journey_progress_speaking_all_names_perk: "У вас есть достоинство «[GetPerk('speaking_all_names_perk').GetName(GetPlayer)]» #weak (+20%)#!"
- POD_journey_progress_nian_shun_modifier: "У вас есть модификатор «[GetModifier('nian_shun_modifier').GetNameWithTooltip]» #weak (+20%)#!"
+ POD_journey_progress_nian_shun_modifier: "У вас есть модификатор «[GetModifier('nian_shun_modifier').GetNameWithTooltip]» #weak (+50%)#!"
+ echo_the_lesser_name_perk_bonus_value: "У вас есть достоинство «[GetPerk('echo_the_lesser_name_perk').GetName(GetPlayer)]» #weak (+50%)#!"
+ echo_the_greater_name_perk_bonus_value: "У вас есть достоинство «[GetPerk('echo_the_greater_name_perk').GetName(GetPlayer)]» #weak (+100%)#!"
 
  POD_journey_progress_demonologiest_100: "У вас есть 100+ [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] «[GetTrait('demonology').GetName(GetPlayer)]» #weak (+30%)#!"
  POD_journey_progress_demonologiest_50: "У вас есть 50+ [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] «[GetTrait('demonology').GetName(GetPlayer)]» #weak (+20%)#!"
  POD_journey_progress_demonologiest_5: "У вас есть 5+ [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] «[GetTrait('demonology').GetName(GetPlayer)]» #weak (+10%)#!"
 
  POD_journey_progress_target_lore_revelation_perk: "У вас есть достоинство «[GetPerk('lore_revelation_perk').GetName(GetPlayer)]» #weak (+100%)#!"
+ POD_journey_progress_target_echo_the_lesser_name_perk: "У вас есть достоинство «[GetPerk('echo_the_lesser_name_perk').GetName(GetPlayer)]» #weak (+12.5%)#!"
+ POD_journey_progress_target_echo_the_greater_name_perk: "У вас есть достоинство «[GetPerk('echo_the_greater_name_perk').GetName(GetPlayer)]» #weak (+25%)#!"
 
  POD_journey_progress_target_opinion: "Мнение персонажа [PlayerJourneyTarget.GetFirstNamePossessive] о вас"
 
@@ -349,6 +367,14 @@
  POD_journey_progress_compel_sin_perk: "У вас есть достоинство «[GetPerk('arcana_compel_sin_perk').GetName(PlayerJourneyTarget)]» #weak (+50%)#!"
 
  POD_journey_progress_not_demon: "Вы не являетесь демоном"
+
+ POD_journey_progress_fera_pack_size: "[GetPlayer.Custom('PODCoterie')] - размер"
+
+
+ POD_journey_progress_prestige_level: "[prestige_level|E]"
+ POD_journey_progress_piety_level: "[piety_level|E]"
+
+ POD_journey_progress_spirit_companions: "#L $pod_spirit_companions$овные спутники#!"
 
  ##### Value breakdown formats
 

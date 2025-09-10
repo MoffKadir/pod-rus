@@ -4,6 +4,11 @@
  ##### Journeys #####
  ####################
 
+ POD_JOURNEY_PROGRESS_INCREASE_GLOBAL: "#bold Прогресс странствия [CHARACTER.MakeScope.Var('current_journey').Story.Custom('PODShowJourneyName')]#! увеличивается на #P $VALUE|1$%#!"
+ POD_JOURNEY_PROGRESS_INCREASE_GLOBAL_PAST: "#bold Прогресс странствия [CHARACTER.MakeScope.Var('current_journey').Story.Custom('PODShowJourneyName')]#! увеличился на #P $VALUE|1$%#!"
+ POD_JOURNEY_PROGRESS_INCREASE_GLOBAL_NEG: "#bold Прогресс странствия [CHARACTER.MakeScope.Var('current_journey').Story.Custom('PODShowJourneyName')]#! снижается на #N $VALUE|1$%#!"
+ POD_JOURNEY_PROGRESS_INCREASE_GLOBAL_NEG_PAST: "#bold Прогресс странствия [CHARACTER.MakeScope.Var('current_journey').Story.Custom('PODShowJourneyName')]#! снизился на #N $VALUE|1$%#!"
+
  POD_journey_planning_confirm_default: "Я начну прямо сейчас!"
  POD_journey_planning_decline_default: "Сейчас есть более насущные вопросы."
 
@@ -45,17 +50,27 @@
  cthonic_womb_widget_desc: "Превратить персонажа [EventWindowWidget.GetScope.sC('victim').GetShortUINameNoTooltip] в #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! после [EventWindowWidget.GetScope.sC('victim').GetHerHis] убийства?"
  cthonic_womb_widget_tt: "#help Это сработает только в том случае, если вы полностью осушите свою жертву.#!"
 
- werewolf_training_name: "[GetPlayer.Custom('PODCoterieNoTooltip')]: общая тренировка"
- werewolf_training_desc: "Ваши товарищи по стае - это не просто друзья, а те, кто всегда прикроет вас в самой сложной ситуации. Вы должны быть готовы ко всему как команда."
- werewolf_training_effects: "Вы просмотрите свою стаю и решите, на какой форме обучения сосредоточиться."
- werewolf_training_isvalid: "$EFFECT_LIST_BULLET$У вас должна быть [GetPlayer.Custom('PODCoterie')], в которой есть как минимум #V 1#! другой участник."
- werewolf_training_tt: "[GetPlayer.GetFaith.HighGodName] нуждается в сильных воинах."
- werewolf_training_planning_title: "Оттачивание когтей и клыков"
- werewolf_training_planning_desc: "Члены стаи $POD_player_coterie$ нашли время, чтобы собраться вместе для очередной тренировки.\n\nЭто поможет нам лучше работать как команда и выполнять работу, которую требует [GetPlayer.GetFaith.HighGodName]."
- werewolf_training_planning_confirm: "Мы начнем тренировку прямо сейчас!"
- werewolf_training_planning_decline: "$POD_journey_planning_decline_default$"
- werewolf_training_widget_desc: "[GetPlayer.Custom('PODCoterie')]: продолжить совместную тренировку?"
- werewolf_training_widget_tt: "Вы немедленно начнете ещё одно [Concept('journey', 'странствие')|E], чтобы потренироваться с вашей стаей."
+ fera_training_name: "[GetPlayer.Custom('PODCoterieNoTooltip')]: общая тренировка"
+ fera_training_desc: "Ваши товарищи по стае - это не просто друзья, а те, кто всегда прикроет вас в самой сложной ситуации. Вы должны быть готовы ко всему как команда."
+ fera_training_effects: "Вы просмотрите свою стаю и решите, на какой форме обучения сосредоточиться."
+ fera_training_isvalid: "$EFFECT_LIST_BULLET$У вас должна быть [GetPlayer.Custom('PODCoterie')], в которой есть как минимум #V 1#! другой участник."
+ fera_training_tt: "[GetPlayer.GetFaith.HighGodName] нуждается в сильных воинах."
+ fera_training_planning_title: "Оттачивание когтей и клыков"
+ fera_training_planning_desc: "Члены стаи $POD_player_coterie$ нашли время, чтобы собраться вместе для очередной тренировки.\n\nЭто поможет нам лучше работать как команда и выполнять работу, которую требует [GetPlayer.GetFaith.HighGodName]."
+ fera_training_planning_confirm: "Мы начнем тренировку прямо сейчас!"
+ fera_training_planning_decline: "$POD_journey_planning_decline_default$"
+ fera_training_widget_desc: "[GetPlayer.Custom('PODCoterie')]: продолжить совместную тренировку?"
+ fera_training_widget_tt: "Вы немедленно начнете ещё одно [Concept('journey', 'странствие')|E], чтобы потренироваться с вашей стаей."
+
+ fera_spirit_quest_name: "Embark on a Spirit Quest" #ТУТ
+ fera_spirit_quest_desc: "Spirits are the teachers of the $glossary_fera$ world, but learning their gifts comes at a price. A Spirit Quest will take you on a journey filled with diverse encounters."
+ fera_spirit_quest_effects: "You will be able to pick from a list of rewards at the end of your quest:\n$EFFECT_LIST_BULLET$$glossary_fera$ [lifestyle_experience|E]\n$EFFECT_LIST_BULLET$Fetish [artifacts|El]\n$EFFECT_LIST_BULLET$Lifestyle or Fame [traits|E]\n$EFFECT_LIST_BULLET$A friendly [GetTrait('spirit').GetName(GetNullCharacter)]\n\nWhat rewards are available as well as their quality or quality depend on your chosen quest's difficulty, your [learning|E], and [piety_level|E]."
+ fera_spirit_quest_tt: "Heed their pleas, and learn their powers."
+ fera_spirit_quest_planning_title: "Quest Complete"
+ fera_spirit_quest_planning_desc: "Your Spirit Quest is at an end. It is time to commune with the Spirits and claim your rewards."
+ fera_spirit_quest_planning_confirm: "My task is complete."
+ fera_spirit_quest_planning_decline: "$POD_journey_planning_decline_default$"
+
 
  # GUI only
  seek_knowledge_name: "Изучить новые способности"
@@ -206,6 +221,18 @@
  seek_knowledge_bardo_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('bardo').GetName(GetNullCharacter)]. #L $pod_the_beast$ь#! неумолим. Дай ему палец и он откусит всю руку. Отдохнуть от него, пусть даже временно, жаждет каждый [Concept('cainite', 'каинит')|E]."
  seek_knowledge_bardo_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
+ seek_knowledge_kai_name: "Learn Rare Discipline ([GetTrait('kai').GetName(GetNullCharacter)])" #ТУТ
+ seek_knowledge_kai_desc: "[GetTrait('kai').GetName(GetNullCharacter)] is the [discipline|E] practised by the [GetTrait('bushi').GetName(GetNullCharacter)], vampires native to Japan to have learned to draw power from sheer conviction and control. By mastering power of will through sheer fearlessness and devotion to one's sense of self, they can harness the power of blood in unique ways."
+ seek_knowledge_kai_effects: "You will learn the location of a teacher who knows [GetTrait('kai').GetName(GetNullCharacter)]. After traveling there, you can acquire the [discipline|E] [trait|E], which lets you unlock [perks|E] in the [GetTrait('kai').GetName(GetNullCharacter)] [lifestyle|E]."
+ seek_knowledge_kai_tt: "Strength and Honour."
+ seek_knowledge_kai_planning_title: "The Quest for Kai"
+ seek_knowledge_kai_planning_desc: "I have roused my blood and prepared myself to the best of my ability, but the finer points of [GetTrait('kai').GetName(GetNullCharacter)] still elude me.\n\nIf I want to master this [discipline|E] all the way, I will need a teacher.\n\nLuckily, my scouts have told me where just such a person can be found."
+ seek_knowledge_kai_planning_confirm: "$POD_journey_planning_confirm_default$"
+ seek_knowledge_kai_planning_decline: "$POD_journey_planning_decline_default$"
+ seek_knowledge_kai_travel_title: "$POD_journey_travel_title_seek_knowledge$"
+ seek_knowledge_kai_travel_desc: "I'm excited to get a chance to learn [GetTrait('kai').GetName(GetNullCharacter)]. With it I will be able to harness great power from within myself and bring out the honour in others."
+ seek_knowledge_kai_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
+
  #seek_knowledge_bloodsorcery_name: "Learn Rare Discipline ([GetTrait('bloodsorcery').GetName(GetNullCharacter)])"
  #seek_knowledge_bloodsorcery_desc: "[GetTrait('bloodsorcery').GetName(GetNullCharacter)] is a mysterious [discipline|E] most commonly associated with the [GetTrait('tremere').GetName(GetNullCharacter)], but practiced by various different $pod_Clans$. It lets the practicioner use their blood for a diverse array of magical rituals: focusing one's mind, improving one's armies, cursing one's enemies... and many more."
  #seek_knowledge_bloodsorcery_effects: "Вы изучите the location of a teacher who knows [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. Отправившись туда, вы сможете получить [Concept('trait', 'свойство')|E] «[discipline|E] [trait|E]. It not only lets you unlock [perks|E] in the [GetTrait('bloodsorcery').GetName(GetNullCharacter)] [lifestyle|E], but also unlocks the [bloodsorcery|E] [character_interaction|E], which lets you cast various beneficial and harmful spells."
@@ -301,6 +328,18 @@
  seek_knowledge_quietus_travel_title: "$POD_journey_travel_title_seek_knowledge$"
  seek_knowledge_quietus_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('quietus').GetName(GetNullCharacter)]. #L $pod_cainites$ы#! рождаются от крови, развиваются от крови и разлагаются от крови. Бойтесь того, кто управляет кровью."
  seek_knowledge_quietus_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
+
+ seek_knowledge_rift_name: "Learn Rare Discipline ([GetTrait('rift').GetName(GetNullCharacter)])" #ТУТ
+ seek_knowledge_rift_desc: "[GetTrait('rift').GetName(GetNullCharacter)] is an unnerving [discipline|E] practiced by the [GetTrait('kizoku').GetName( GetNullCharacter )]. It allows the user to manifest dimensional rifts leading to their own personal nightmares, typically in ways that bring great misfortune to others but also for innocent purposes such as telepathic communication and transport."
+ seek_knowledge_rift_effects: "You will learn the location of a teacher who knows [GetTrait('rift').GetName(GetNullCharacter)]. After traveling there, you can acquire the [discipline|E] [trait|E], which lets you unlock [perks|E] in the [GetTrait('rift').GetName(GetNullCharacter)] [lifestyle|E]."
+ seek_knowledge_rift_tt: "I will become one with nightmares."
+ seek_knowledge_rift_planning_title: "The Quest for Rift"
+ seek_knowledge_rift_planning_desc: "I have roused my blood and prepared myself to the best of my ability, but the finer points of [GetTrait('rift').GetName(GetNullCharacter)] still elude me.\n\nIf I want to master this [discipline|E] all the way, I will need a teacher.\n\nLuckily, my scouts have told me where just such a person can be found."
+ seek_knowledge_rift_planning_confirm: "$POD_journey_planning_confirm_default$"
+ seek_knowledge_rift_planning_decline: "$POD_journey_planning_decline_default$"
+ seek_knowledge_rift_travel_title: "$POD_journey_travel_title_seek_knowledge$"
+ seek_knowledge_rift_travel_desc: "I'm excited to get a chance to learn [GetTrait('rift').GetName(GetNullCharacter)]. If the sins and regrets of my damned existence haunt my nightmares no matter what, I might as well share this experience with my enemies."
+ seek_knowledge_rift_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  seek_knowledge_serpentis_name: "Изучить редкую дисциплину ([GetTrait('serpentis').GetName(GetNullCharacter)])"
  seek_knowledge_serpentis_desc: "[GetTrait('serpentis').GetName(GetNullCharacter)] - это [Concept('discipline', 'дисциплина')|E], которую практикует [Concept('Clan', 'клан')|E] #TOOLTIP:GAME_TRAIT,setite,[GetNullCharacter] #L Сетитов#!#!. Обладатель может [Concept('shapeshift', 'превращаться')|E] в различные змеиные формы, кульминацией которых является [GetModifier('POD_shapeshift_form_apophis_modifier').GetNameWithTooltip]. Заклинателю также может призывать профессионалов - [GetMaA('snakes').GetName()] и [GetMaA('serpentis_monsters').GetName()], а также проводить ритуал [Concept('heart_of_darkness', 'Сердца тьмы')|E]."
@@ -772,20 +811,80 @@
  seek_knowledge_nei_tan_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('art_nei_tan').GetName(GetNullCharacter)|l]. Позволит ли овладение этим искусством оставить этот мир позади?"
  seek_knowledge_nei_tan_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
- seek_knowledge_lament_name: "Изучить нумину ([GetTrait('lament').GetName(GetNullCharacter)])"
- seek_knowledge_lament_desc: "[GetTrait('lament').GetName(GetNullCharacter)] - это техника, с помощью которой пользователь может отделить свой дух от тела. Практикующий может войти в [UmbraGlossaryLocalized('shadowlands','Загробный мир')] и использовать различные способности, обычно ассоциируемые с призраками, кульминацией которых являются такие способности, как [GetPerk('storm_gloam_perk').GetName(GetPlayer)] или [GetPerk('eschers_corkscrew_perk').GetName(GetPlayer)]."
- seek_knowledge_lament_effects: "Вы узнаете местонахождение наставника, который знает, что такое [GetTrait('lament').GetName(GetNullCharacter)]. Отправившись туда, вы сможете получить [Concept('trait', 'свойство')|E] «[GetTrait('lament').GetName(GetPlayer)]», которое позволит вам открыть [Concept('perks', 'достоинства')|E] в [Concept('lifestyle', 'образе жизни')|E] #TOOLTIP:GAME_TRAIT,lament,[GetNullCharacter] #L Ужас#!#!."
- seek_knowledge_lament_tt: "Душа и тело, движущиеся слаженно."
- seek_knowledge_lament_planning_title: "В поисках Проекции"
- seek_knowledge_lament_planning_desc: "После изучения эзотерических томов и прочтения различных трактатов по #TOOLTIP:GAME_TRAIT,lament,[GetNullCharacter] #L проекции#!#! я уже неплохо разбираюсь в теории.\n\nОднако практика - это совсем другое дело. Мне понадобится наставник, прежде чем я смогу всерьез назвать себя #TOOLTIP:GAME_TRAIT,lament,[GetNullCharacter] #L элегией#!#!.\n\nМои разведчики рассказали мне, где можно найти такого наставника."
- seek_knowledge_lament_planning_confirm: "$POD_journey_planning_confirm_default$"
- seek_knowledge_lament_planning_decline: "$POD_journey_planning_decline_default$"
- seek_knowledge_lament_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- seek_knowledge_lament_travel_desc: "Я с нетерпением жду возможности изучить #TOOLTIP:GAME_TRAIT,lament,[GetNullCharacter] #L элегию#!#!. После этого странствия я буду по-настоящему [Select_CString(GetPlayer.IsFemale, 'освобождена', 'освобождён' )] от оков, и никакая физическая или метафизическая тюрьма больше не будет удерживать мой дух."
- seek_knowledge_lament_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
+ seek_knowledge_feng_shui_name: "Learn Chi Art ([GetTrait('chi_art_feng_shui').GetName(GetNullCharacter)])" #ТУТ
+ seek_knowledge_feng_shui_desc: "Feng Shui is an ancient geomantic art that specializes in the proper and auspicious alignment of buildings, graves, and interiors, in accordance with heavenly emanations and earthly configurations, allowing the Chi to flow freely in order to harmonize individuals with their surrounding environment."
+ seek_knowledge_feng_shui_effects: "You will learn the location of a teacher who knows [GetTrait('chi_art_feng_shui').GetName(GetNullCharacter)]. After traveling there, you can acquire the [GetTrait('chi_art_feng_shui').GetName(GetPlayer)] [trait|E], which lets you unlock [perks|E] in the [GetTrait('chi_art_feng_shui').GetName(GetNullCharacter)] [lifestyle|E]."
+ seek_knowledge_feng_shui_tt: "Harmony in all things."
+ seek_knowledge_feng_shui_planning_title: "The Quest for Feng Shui"
+ seek_knowledge_feng_shui_planning_desc: "I have circulated my Chi and prepared myself to the best of my ability, but the finer points of [GetTrait('chi_art_feng_shui').GetName(GetNullCharacter)] still elude me.\n\nIf I want to master this Art all the way, I will need a teacher.\n\nLuckily, my scouts have told me where just such a person can be found."
+ seek_knowledge_feng_shui_planning_confirm: "$POD_journey_planning_confirm_default$"
+ seek_knowledge_feng_shui_planning_decline: "$POD_journey_planning_decline_default$"
+ seek_knowledge_feng_shui_travel_title: "$POD_journey_travel_title_seek_knowledge$"
+ seek_knowledge_feng_shui_travel_desc: "I'm excited to get a chance to learn [GetTrait('chi_art_feng_shui').GetName(GetNullCharacter)]. When one cultivates harmony in one's surroundings, inner harmony is sure to follow."
+ seek_knowledge_feng_shui_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
+ 
+ seek_knowledge_obligation_name: "Learn Chi Art ([GetTrait('chi_art_obligation').GetName(GetNullCharacter)])"
+ seek_knowledge_obligation_desc: "Obligation is an art that allows a [kuei_jin|E] to exert control over others. It is a callback to the glory of the ancient Wan Xian and their authority that stemmed from a mandate from the [Glossary('August Personage of Jade','podgloss.augustpersonageofjade')] himself. While they have lost this favor, some still manage to inspire or dominate the spirits of those around them."
+ seek_knowledge_obligation_effects: "You will learn the location of a teacher who knows [GetTrait('chi_art_obligation').GetName(GetNullCharacter)]. After traveling there, you can acquire the [GetTrait('chi_art_obligation').GetName(GetPlayer)] [trait|E], which lets you unlock [perks|E] in the [GetTrait('chi_art_obligation').GetName(GetNullCharacter)] [lifestyle|E]."
+ seek_knowledge_obligation_tt: "Speak softly, and carry a big stick."
+ seek_knowledge_obligation_planning_title: "The Quest for Obligation"
+ seek_knowledge_obligation_planning_desc: "I have circulated my Chi and prepared myself to the best of my ability, but the finer points of [GetTrait('chi_art_obligation').GetName(GetNullCharacter)] still elude me.\n\nIf I want to master this Art all the way, I will need a teacher.\n\nLuckily, my scouts have told me where just such a person can be found."
+ seek_knowledge_obligation_planning_confirm: "$POD_journey_planning_confirm_default$"
+ seek_knowledge_obligation_planning_decline: "$POD_journey_planning_decline_default$"
+ seek_knowledge_obligation_travel_title: "$POD_journey_travel_title_seek_knowledge$"
+ seek_knowledge_obligation_travel_desc: "I'm excited to get a chance to learn [GetTrait('chi_art_obligation').GetName(GetNullCharacter)]. Once, the Ten Thousand Heroes carried themselves with the authority of Heaven itself. The Age of Legends may be long past, but who says I couldn't take on their legacy?"
+ seek_knowledge_obligation_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
+ 
+ seek_knowledge_tapestry_name: "Learn Chi Art ([GetTrait('chi_art_tapestry').GetName(GetNullCharacter)])"
+ seek_knowledge_tapestry_desc: "Tapestry is the chi art of using dragon lines to their full potential. Through practice of Tapestry, the vampire attunes himself to Yin and Yang forces in the wind, water, and soil, then manipulates those forces for a variety of efforts."
+ seek_knowledge_tapestry_effects: "You will learn the location of a teacher who knows [GetTrait('chi_art_tapestry').GetName(GetNullCharacter)]. After traveling there, you can acquire the [GetTrait('chi_art_tapestry').GetName(GetPlayer)] [trait|E], which lets you unlock [perks|E] in the [GetTrait('chi_art_tapestry').GetName(GetNullCharacter)] [lifestyle|E]."
+ seek_knowledge_tapestry_tt: "Diverting great rivers of chi."
+ seek_knowledge_tapestry_planning_title: "The Quest for Tapestry"
+ seek_knowledge_tapestry_planning_desc: "I have circulated my Chi and prepared myself to the best of my ability, but the finer points of [GetTrait('chi_art_tapestry').GetName(GetNullCharacter)] still elude me.\n\nIf I want to master this Art all the way, I will need a teacher.\n\nLuckily, my scouts have told me where just such a person can be found."
+ seek_knowledge_tapestry_planning_confirm: "$POD_journey_planning_confirm_default$"
+ seek_knowledge_tapestry_planning_decline: "$POD_journey_planning_decline_default$"
+ seek_knowledge_tapestry_travel_title: "$POD_journey_travel_title_seek_knowledge$"
+ seek_knowledge_tapestry_travel_desc: "I'm excited to get a chance to learn [GetTrait('chi_art_tapestry').GetName(GetNullCharacter)]. The Chi'n Ta and Hengeyokai guard their places of power jealously. A host of secrets, just waiting to be unlocked by someone ambitious enough to force them open."
+ seek_knowledge_tapestry_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
+ 
+ seek_knowledge_prana_name: "Learn Chi Art ([GetTrait('chi_art_prana').GetName(GetNullCharacter)])"
+ seek_knowledge_prana_desc: "Prana is the chi art of using both sides of Chi, Yin and Yang. A practicioner can attune themselves to the energies of death and life respectively, or use their confluence to heal wounds."
+ seek_knowledge_prana_effects: "You will learn the location of a teacher who knows [GetTrait('chi_art_prana').GetName(GetNullCharacter)]. After traveling there, you can acquire the [GetTrait('chi_art_prana').GetName(GetPlayer)] [trait|E], which lets you unlock [perks|E] in the [GetTrait('chi_art_prana').GetName(GetNullCharacter)] [lifestyle|E]."
+ seek_knowledge_prana_tt: "Dichotomies united."
+ seek_knowledge_prana_planning_title: "The Quest for Prana"
+ seek_knowledge_prana_planning_desc: "I have circulated my Chi and prepared myself to the best of my ability, but the finer points of [GetTrait('chi_art_prana').GetName(GetNullCharacter)] still elude me.\n\nIf I want to master this Art all the way, I will need a teacher.\n\nLuckily, my scouts have told me where just such a person can be found."
+ seek_knowledge_prana_planning_confirm: "$POD_journey_planning_confirm_default$"
+ seek_knowledge_prana_planning_decline: "$POD_journey_planning_decline_default$"
+ seek_knowledge_prana_travel_title: "$POD_journey_travel_title_seek_knowledge$"
+ seek_knowledge_prana_travel_desc: "I'm excited to get a chance to learn [GetTrait('chi_art_prana').GetName(GetNullCharacter)]. The Hungry Dead are defined by contradictions: Dead and alive, Hun and P'o, always striving for Heaven while being hounded by the Hells. The first step, it seems, is to find unity in this disparity."
+ seek_knowledge_prana_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
+ 
+ seek_knowledge_kiai_name: "Learn Chi Art ([GetTrait('chi_art_kiai').GetName(GetNullCharacter)])"
+ seek_knowledge_kiai_desc: "Kiai is the chi art of channeling the wrath of the Demon through the voice, an imposing technique that has a variety of applications on the battlefield."
+ seek_knowledge_kiai_effects: "You will learn the location of a teacher who knows [GetTrait('chi_art_kiai').GetName(GetNullCharacter)]. After traveling there, you can acquire the [GetTrait('chi_art_kiai').GetName(GetPlayer)] [trait|E], which lets you unlock [perks|E] in the [GetTrait('chi_art_kiai').GetName(GetNullCharacter)] [lifestyle|E]."
+ seek_knowledge_kiai_tt: "Shout, shout, let it all out."
+ seek_knowledge_kiai_planning_title: "The Quest for Kiai"
+ seek_knowledge_kiai_planning_desc: "I have circulated my Chi and prepared myself to the best of my ability, but the finer points of [GetTrait('chi_art_kiai').GetName(GetNullCharacter)] still elude me.\n\nIf I want to master this Art all the way, I will need a teacher.\n\nLuckily, my scouts have told me where just such a person can be found."
+ seek_knowledge_kiai_planning_confirm: "$POD_journey_planning_confirm_default$"
+ seek_knowledge_kiai_planning_decline: "$POD_journey_planning_decline_default$"
+ seek_knowledge_kiai_travel_title: "$POD_journey_travel_title_seek_knowledge$"
+ seek_knowledge_kiai_travel_desc: "I'm excited to get a chance to learn [GetTrait('chi_art_kiai').GetName(GetNullCharacter)]. The stories tell of great heroes who scattered armies and leveled entire battlefields with nothing but their voice."
+ seek_knowledge_kiai_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
+ 
+ seek_knowledge_tzu_wei_name: "Learn Chi Art ([GetTrait('chi_art_tzu_wei').GetName(GetNullCharacter)])"
+ seek_knowledge_tzu_wei_desc: "Tzu Wei is the chi art of reading and manipulating horoscopes. When [kuei_jin|E] practice Tzu Wei, they can shape destiny itself and bend the forces of luck to their will."
+ seek_knowledge_tzu_wei_effects: "You will learn the location of a teacher who knows [GetTrait('chi_art_tzu_wei').GetName(GetNullCharacter)]. After traveling there, you can acquire the [GetTrait('chi_art_tzu_wei').GetName(GetPlayer)] [trait|E], which lets you unlock [perks|E] in the [GetTrait('chi_art_tzu_wei').GetName(GetNullCharacter)] [lifestyle|E]."
+ seek_knowledge_tzu_wei_tt: "No luck, just skill... resulting in luck."
+ seek_knowledge_tzu_wei_planning_title: "The Quest for Tzu Wei"
+ seek_knowledge_tzu_wei_planning_desc: "I have circulated my Chi and prepared myself to the best of my ability, but the finer points of [GetTrait('chi_art_tzu_wei').GetName(GetNullCharacter)] still elude me.\n\nIf I want to master this Art all the way, I will need a teacher.\n\nLuckily, my scouts have told me where just such a person can be found."
+ seek_knowledge_tzu_wei_planning_confirm: "$POD_journey_planning_confirm_default$"
+ seek_knowledge_tzu_wei_planning_decline: "$POD_journey_planning_decline_default$"
+ seek_knowledge_tzu_wei_travel_title: "$POD_journey_travel_title_seek_knowledge$"
+ seek_knowledge_tzu_wei_travel_desc: "I'm excited to get a chance to learn [GetTrait('chi_art_tzu_wei').GetName(GetNullCharacter)]. Fate must be like an open book to one who knows how to read it in the stars."
+ seek_knowledge_tzu_wei_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  seek_knowledge_sorcery_name: "Изучить нумину (#TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Чародейство#!#!)"
- seek_knowledge_sorcery_desc: "#TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Чародейство#!#! - это простая форма магии, которой могут научиться даже непробуждённые смертные. Оно включает в себя большое разнообразие магических способностей: [GetPerk('numina_conveyance_1_perk').GetName(GetPlayer)], [GetPerk('numina_conjuration_1_perk').GetName(GetPlayer)], [GetPerk('numina_divination_1_perk').GetName(GetPlayer)], [GetPerk('numina_enchantment_1_perk').GetName(GetPlayer)] и многие другие. Опытный практик может даже использовать такие способности, как [GetPerk('numina_alchemy_5_perk').GetName(GetPlayer)] или [GetPerk('numina_healing_6_perk').GetName(GetPlayer)] для достижения бессмертия."
+ seek_knowledge_sorcery_desc: "#TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Чародейство#!#! - это простая форма магии, которой могут научиться даже непробуждённые смертные. Оно включает в себя большое разнообразие магических способностей: #TOOLTIP:PERK,numina_conveyance_5_perk #L перемещение#!#!, #TOOLTIP:PERK,numina_conjuration_4_perk #L призыв#!#!, #TOOLTIP:PERK,numina_divination_5_perk #L прорицание#!#!, #TOOLTIP:PERK,numina_enchantment_2_perk #L зачарование#!#! и многие другие. Опытный практик может даже использовать такие способности, как [GetPerk('numina_alchemy_5_perk').GetName(GetPlayer)] или [GetPerk('numina_healing_6_perk').GetName(GetPlayer)] для достижения бессмертия."
  seek_knowledge_sorcery_effects: "Вы узнаете местонахождение наставника, который знает, что такое #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!. Отправившись туда, вы сможете получить [Concept('trait', 'свойство')|E] «[GetTrait('sorcerer').GetName(GetPlayer)]», которое позволит вам открыть [Concept('perks', 'достоинства')|E] в ветке «Чародей» [Concept('lifestyle', 'образа жизни')|E] #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Чародейство#!#!."
  seek_knowledge_sorcery_isvalid: "$EFFECT_LIST_BULLET$Ваша [Concept('faith', 'конфессия')|E] не должна считать #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_magicraft_crime #L магию#!#! [Concept('crime', 'преступлением')|E]."
  seek_knowledge_sorcery_tt: "Я узнаю секреты линейной магии."
@@ -798,7 +897,7 @@
  seek_knowledge_sorcery_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  seek_knowledge_theurgy_name: "Изучить нумину (#TOOLTIP:GAME_TRAIT,theurgist,[GetNullCharacter] #L Теургия#!#!)"
- seek_knowledge_theurgy_desc: "#TOOLTIP:GAME_TRAIT,theurgist,[GetNullCharacter] #L Теургия#!#! - это форма магии, изначально практиковавшаяся еврейскими мистиками и недавно заново открытая христианскими учеными. Она была формализована в несколько путей, таких как [GetPerk('via_medicamenti_1_perk').GetName(GetPlayer)], [GetPerk('via_oraculi_1_perk').GetName(GetPlayer)] или [GetPerk('via_necromantiae_1_perk').GetName(GetPlayer)]."
+ seek_knowledge_theurgy_desc: "#TOOLTIP:GAME_TRAIT,theurgist,[GetNullCharacter] #L Теургия#!#! - это форма магии, изначально практиковавшаяся еврейскими мистиками и недавно заново открытая христианскими учеными. Она была формализована в несколько путей, таких как #TOOLTIP:PERK,numina_via_medicamenti_1_perk #L Via Medicamenti#!#!, #TOOLTIP:PERK,numina_via_oraculi_5_perk #L Via Oraculi#!#! или #TOOLTIP:PERK,numina_via_necromantiae_1_perk #L Via Necromantiae#!#!."
  seek_knowledge_theurgy_effects: "Вы узнаете местонахождение наставника, который знает, что такое #TOOLTIP:GAME_TRAIT,theurgist,[GetNullCharacter] #L теургия#!#!. Отправившись туда, вы сможете получить [Concept('trait', 'свойство')|E] «[GetTrait('theurgist').GetName(GetPlayer)]», которое позволит вам открыть [Concept('perks', 'достоинства')|E] в ветке «Теургия» [Concept('lifestyle', 'образа жизни')|E] #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Чародейство#!#!."
  seek_knowledge_theurgy_isvalid: "$EFFECT_LIST_BULLET$Ваша [Concept('faith', 'конфессия')|E] не должна считать #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_magicraft_crime #L магию#!#! [Concept('crime', 'преступлением')|E].\n#help $EFFECT_LIST_BULLET$Это ограничение не учитывается, если ваша вера уходит корнями в авраамические религии ([GetReligionByKey('roadofheaven_religion').GetAdjective], [GetReligionByKey('ashirra_religion').GetAdjective|l], [GetReligionByKey('bloodgnosticism_religion').GetAdjective|l], [GetReligionByKey('roadofblood_religion').GetAdjective|l], [GetReligionByKey('calomenasforsaken_religion').GetAdjective|l], [GetReligionByKey('fishers_religion').GetAdjective|l], [GetFaithByKey('shadowinquisition').GetAdjective|l], [GetFaithByKey('akritai').GetAdjective|l], [GetFaithByKey('ikhwan_al_safa').GetAdjective|l], [GetFaithByKey('judge').GetAdjective|l], [GetFaithByKey('crestofthehorn').GetAdjective|l], [GetFaithByKey('orderofourmercifulmother').GetAdjective|l] или доктрина «[GetDoctrine('tenet_constantinian').GetBaseName]»).#!"
  seek_knowledge_theurgy_tt: "Я буду воплощать свое высшее Я."
@@ -811,7 +910,7 @@
  seek_knowledge_theurgy_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  seek_knowledge_psychic_name: "Изучить нумину (#TOOLTIP:GAME_TRAIT,psychic,[GetNullCharacter] #L Ментальные способности#!#!)"
- seek_knowledge_psychic_desc: "Некоторые смертные способны проявлять #TOOLTIP:GAME_TRAIT,psychic,[GetNullCharacter] #L ментальные феномены#!#!. Они включают в себя большое количество способностей, таких как [GetPerk('astral_projection_1_perk').GetName(GetPlayer)], [GetPerk('psychometry_1_perk').GetName(GetPlayer)], [GetPerk('animal_psi_1_perk').GetName(GetPlayer)] и многие другие. Считается, что ментальные способности являются врождёнными, но, возможно, есть способы заставить свой разум открыться..."
+ seek_knowledge_psychic_desc: "Некоторые смертные способны проявлять #TOOLTIP:GAME_TRAIT,psychic,[GetNullCharacter] #L ментальные феномены#!#!. Они включают в себя большое количество способностей, таких как #TOOLTIP:PERK,astral_projection_1_perk #L астральная проекция#!#!, #TOOLTIP:PERK,psychometry_1_perk #L психометрия#!#!, #TOOLTIP:PERK,animal_psi_3_perk #L звериное пси#!#! и многие другие. Считается, что ментальные способности являются врождёнными, но, возможно, есть способы заставить свой разум открыться..."
  seek_knowledge_psychic_effects: "Вы узнаете местонахождение наставника, который знает, что такое #TOOLTIP:GAME_TRAIT,psychic,[GetNullCharacter] #L ментальные способности#!#!. Отправившись туда, вы сможете получить [Concept('trait', 'свойство')|E] «[GetTrait('psychic').GetName(GetPlayer)]», которое позволит вам открыть [Concept('perks', 'достоинства')|E] в [Concept('lifestyle', 'образе жизни')|E] #TOOLTIP:GAME_TRAIT,psychic,[GetNullCharacter] #L Пси#!#!."
  seek_knowledge_psychic_tt: "Я пробужу силу своего разума."
  seek_knowledge_psychic_planning_title: "В поисках ментальных способностей"
@@ -1219,7 +1318,7 @@
  # ####### Lore Journeys #######
  # #############################
 
- seek_knowledge_lore_of_herald_name: "Изучение знаний Вестника у"
+ seek_knowledge_lore_of_herald_name: "Изучение знаний Вестника"
  seek_knowledge_lore_of_herald_tt: "Пусть божественное пламя очистит их."
  seek_knowledge_lore_of_herald_planning_title: "Поиски новых знаний домов"
  seek_knowledge_lore_of_herald_planning_desc: "Я [Select_CString(GetPlayer.IsFemale, 'подготовилась', 'подготовился' )], насколько это было в моих силах, но тонкости этих знаний всё ещё ускользают от меня.\n\nЕсли я хочу полностью овладеть этими знаниями, я [Select_CString(GetPlayer.IsFemale, 'должна', 'должен' )] убедить своего «наставника» поделиться своими драгоценными секретами."
@@ -1229,7 +1328,7 @@
  seek_knowledge_lore_of_herald_travel_desc: "Это странствие приблизит меня к моей прежней небесной силе, несправедливо украденной у меня."
  seek_knowledge_lore_of_herald_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
- seek_knowledge_lore_of_life_bringer_name: "Изучение знаний Приносящих жизнь у"
+ seek_knowledge_lore_of_life_bringer_name: "Изучение знаний Приносящих жизнь"
  seek_knowledge_lore_of_life_bringer_tt: "Дыхание жизни в моём распоряжении."
  seek_knowledge_lore_of_life_bringer_planning_title: "Поиски новых знаний домов"
  seek_knowledge_lore_of_life_bringer_planning_desc: "Я [Select_CString(GetPlayer.IsFemale, 'подготовилась', 'подготовился' )], насколько это было в моих силах, но тонкости этих знаний всё ещё ускользают от меня.\n\nЕсли я хочу полностью овладеть этими знаниями, я [Select_CString(GetPlayer.IsFemale, 'должна', 'должен' )] убедить своего «наставника» поделиться своими драгоценными секретами."
@@ -1239,7 +1338,7 @@
  seek_knowledge_lore_of_life_bringer_travel_desc: "Это странствие приблизит меня к моей прежней небесной силе, несправедливо украденной у меня."
  seek_knowledge_lore_of_life_bringer_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
- seek_knowledge_lore_of_creation_name: "Изучение знаний Сотворения у"
+ seek_knowledge_lore_of_creation_name: "Изучение знаний Сотворения"
  seek_knowledge_lore_of_creation_tt: "Тайны небесных зодчих."
  seek_knowledge_lore_of_creation_planning_title: "Поиски новых знаний домов"
  seek_knowledge_lore_of_creation_planning_desc: "Я [Select_CString(GetPlayer.IsFemale, 'подготовилась', 'подготовился' )], насколько это было в моих силах, но тонкости этих знаний всё ещё ускользают от меня.\n\nЕсли я хочу полностью овладеть этими знаниями, я [Select_CString(GetPlayer.IsFemale, 'должна', 'должен' )] убедить своего «наставника» поделиться своими драгоценными секретами."
@@ -1249,7 +1348,7 @@
  seek_knowledge_lore_of_creation_travel_desc: "Это странствие приблизит меня к моей прежней небесной силе, несправедливо украденной у меня."
  seek_knowledge_lore_of_creation_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
- seek_knowledge_lore_of_seer_name: "Изучение знаний Провидцев у"
+ seek_knowledge_lore_of_seer_name: "Изучение знаний Провидцев"
  seek_knowledge_lore_of_seer_tt: "Созерцая Творение."
  seek_knowledge_lore_of_seer_planning_title: "Поиски новых знаний домов"
  seek_knowledge_lore_of_seer_planning_desc: "Я [Select_CString(GetPlayer.IsFemale, 'подготовилась', 'подготовился' )], насколько это было в моих силах, но тонкости этих знаний всё ещё ускользают от меня.\n\nЕсли я хочу полностью овладеть этими знаниями, я [Select_CString(GetPlayer.IsFemale, 'должна', 'должен' )] убедить своего «наставника» поделиться своими драгоценными секретами."
@@ -1259,7 +1358,7 @@
  seek_knowledge_lore_of_seer_travel_desc: "Это странствие приблизит меня к моей прежней небесной силе, несправедливо украденной у меня."
  seek_knowledge_lore_of_seer_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
- seek_knowledge_lore_of_beauty_name: "Изучение знаний Красоты у"
+ seek_knowledge_lore_of_beauty_name: "Изучение знаний Красоты"
  seek_knowledge_lore_of_beauty_tt: "Сотворим человека по нашему образу и подобию."
  seek_knowledge_lore_of_beauty_planning_title: "Поиски новых знаний домов"
  seek_knowledge_lore_of_beauty_planning_desc: "Я [Select_CString(GetPlayer.IsFemale, 'подготовилась', 'подготовился' )], насколько это было в моих силах, но тонкости этих знаний всё ещё ускользают от меня.\n\nЕсли я хочу полностью овладеть этими знаниями, я [Select_CString(GetPlayer.IsFemale, 'должна', 'должен' )] убедить своего «наставника» поделиться своими драгоценными секретами."
@@ -1269,7 +1368,7 @@
  seek_knowledge_lore_of_beauty_travel_desc: "Это странствие приблизит меня к моей прежней небесной силе, несправедливо украденной у меня."
  seek_knowledge_lore_of_beauty_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
- seek_knowledge_lore_of_living_name: "Изучение знаний Жизни у"
+ seek_knowledge_lore_of_living_name: "Изучение знаний Жизни"
  seek_knowledge_lore_of_living_tt: "Владычество над каждым зверем на земле."
  seek_knowledge_lore_of_living_planning_title: "Поиски новых знаний домов"
  seek_knowledge_lore_of_living_planning_desc: "Я [Select_CString(GetPlayer.IsFemale, 'подготовилась', 'подготовился' )], насколько это было в моих силах, но тонкости этих знаний всё ещё ускользают от меня.\n\nЕсли я хочу полностью овладеть этими знаниями, я [Select_CString(GetPlayer.IsFemale, 'должна', 'должен' )] убедить своего «наставника» поделиться своими драгоценными секретами."
@@ -1279,7 +1378,7 @@
  seek_knowledge_lore_of_living_travel_desc: "Это странствие приблизит меня к моей прежней небесной силе, несправедливо украденной у меня."
  seek_knowledge_lore_of_living_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
- seek_knowledge_lore_of_ethereal_name: "Изучение знаний Эфира у"
+ seek_knowledge_lore_of_ethereal_name: "Изучение знаний Эфира"
  seek_knowledge_lore_of_ethereal_tt: "И тьма была над ликом бездны."
  seek_knowledge_lore_of_ethereal_planning_title: "Поиски новых знаний домов"
  seek_knowledge_lore_of_ethereal_planning_desc: "Я [Select_CString(GetPlayer.IsFemale, 'подготовилась', 'подготовился' )], насколько это было в моих силах, но тонкости этих знаний всё ещё ускользают от меня.\n\nЕсли я хочу полностью овладеть этими знаниями, я [Select_CString(GetPlayer.IsFemale, 'должна', 'должен' )] убедить своего «наставника» поделиться своими драгоценными секретами."
@@ -1291,7 +1390,7 @@
 
  seek_knowledge_thaumaturgy_name: "Изучить #TOOLTIP:GAME_TRAIT,bloodsorcery,[GetNullCharacter] #L кровавое чародейство#!#! (Тауматургия)"
  seek_knowledge_thaumaturgy_desc: "#TOOLTIP:GAME_TRAIT,bloodsorcery,[GetNullCharacter] #L Кровавое чародейство#!#! - таинственная [Concept('discipline', 'дисциплина')|E], чаще всего ассоциируемая с #TOOLTIP:GAME_TRAIT,tremere,[GetNullCharacter] #L тремерами#!#!, но практикуемая различными [Concept('Clan', 'кланами')|E]. Она позволяет чародею практикующему использовать свою кровь для различных магических ритуалов: сосредоточения разума, улучшения армии, проклятия врагов... и многого другого.\nТауматурги часто имеют пугающую репутацию, которую они используют в своих интересах. Их врагам трудно правильно оценить, чего можно ожидать от прямого конфликта. Непосвящённые слабо представляют себе масштабы и величину силы, которой может обладать тауматург, и иногда их воображение берёт верх."
- seek_knowledge_thaumaturgy_effects: "Вы узнаете местонахождение наставника, который знает #TOOLTIP:GAME_TRAIT,bloodsorcery,[GetNullCharacter] #L кровавое чародейство#!#!. Отправившись туда, вы сможете получить [Concept('trait', 'свойство')|E] [Concept('discipline', 'дисциплины')|E], которое позволит вам открыть [Concept('perks', 'достоинства')|E] в [Concept('lifestyle', 'образе жизни')|E] «[GetTrait('bloodsorcery').GetName(GetNullCharacter)]», но также открывает [Concept('character_interaction', 'взаимодействия персонажа')|E] [Concept('bloodsorcery', 'кровавого чародейства')|E], позволяющие накладывать различные полезные и вредные заклинания."
+ seek_knowledge_thaumaturgy_effects: "Вы узнаете местонахождение наставника, который знает #TOOLTIP:GAME_TRAIT,bloodsorcery,[GetNullCharacter] #L кровавое чародейство#!#!. Отправившись туда, вы сможете получить [Concept('trait', 'свойство')|E] [Concept('discipline', 'дисциплины')|E], которое позволит вам открыть [Concept('perks', 'достоинства')|E] в [Concept('lifestyle', 'образе жизни')|E] «[GetTrait('bloodsorcery').GetName(GetNullCharacter)]», но также открывает [Concept('character_interaction', 'взаимодействия персонажа')|E] [Concept('bloodsorcery', 'кровавого чародейства')|E], позволяющие накладывать различные полезные и вредные заклинания.\n\n#warning Изучение тауматургии навсегда лишит вас возможности изучить сихр.#!"
  seek_knowledge_thaumaturgy_tt: "Я открою самые глубокие тайны витэ."
  seek_knowledge_thaumaturgy_planning_title: "В поисках тауматургии"
  seek_knowledge_thaumaturgy_planning_desc: "Я [Select_CString(GetPlayer.IsFemale, 'пробудила', 'пробудил' )] свою кровь и [Select_CString(GetPlayer.IsFemale, 'подготовилась', 'подготовился' )] как следует, но тонкости #TOOLTIP:GAME_TRAIT,bloodsorcery,[GetNullCharacter] #L кровавого чародейства#!#! всё ещё ускользают от меня.\n\nЕсли я хочу овладеть этой [Concept('discipline', 'дисциплиной')|E] до конца, мне нужен наставник.\n\nК счастью, мои разведчики подсказали мне, где можно найти такого наставника."
@@ -1300,6 +1399,8 @@
  seek_knowledge_thaumaturgy_travel_title: "$POD_journey_travel_title_seek_knowledge$"
  seek_knowledge_thaumaturgy_travel_desc: "Я с нетерпением жду возможности изучить #TOOLTIP:GAME_TRAIT,bloodsorcery,[GetNullCharacter] #L кровавое чародейство#!#!. Её секреты ревностно охраняются не просто так. Когда я открою их, неизвестно, на что я окажусь [Select_CString(GetPlayer.IsFemale, 'способна', 'способен' )].\nГоворят, что истинная сила тауматурга заключается в умении подготовиться к опасным ситуациям и использовать ритуалы, которые на первый взгляд могут показаться не очень сильными. Хороший тауматург готов к любым ситуациям и может высвободить собранные им силы в случае необходимости. Боевые тауматурги сравнивают свои приготовления с тем, как если бы у них были дополнительные боеприпасы на случай, если битва пойдёт наперекосяк."
  seek_knowledge_thaumaturgy_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
+ seek_knowledge_thaumaturgy_isvalid: "$EFFECT_LIST_BULLET$#bold Не#! знает сихр"
+
  seek_knowledge_dur_an_ki_name: "Изучить #TOOLTIP:GAME_TRAIT,bloodsorcery,[GetNullCharacter] #L кровавое чародейство#!#! (Дур-ан-ки)"
  seek_knowledge_dur_an_ki_desc: "Колдовство Ассамитов зародилось во Втором городе, когда смертные маги были приняты в клан с обещанием силы и вечной жизни. Эти неживые колдуны выступали в роли дознавателей и охотников на демонов во время войн с Баали. После падения Второго города колдуны использовались для облегчения магической связи на больших расстояниях, поддерживая единство и организованность клана. Кроме того, они использовали свои искусства для защиты стад, которые выращивал клан. Они выращивали урожай, который поддерживал стадо, и продолжали наносить удары по силам, угрожавшим клану.\nВпоследствии эти колдуны обратились к искусству Дур-ан-ки (в переводе с шумерского означает «Владыка неба и земли»), чтобы помочь им в их деле. Эта форма магии зародилась в древней Месопотамии, но за тысячелетия она обросла атрибутами многочисленных мифов и религий со всего Ближнего Востока. По сути, Дур-ан-ки позволяет заключать заветы между духами и колдунами (известными как ашипу)."
  seek_knowledge_dur_an_ki_effects: "Вы узнаете местонахождение наставника, который знает #TOOLTIP:GAME_TRAIT,bloodsorcery,[GetNullCharacter] #L кровавое чародейство#!#!. Отправившись туда, вы сможете получить [Concept('trait', 'свойство')|E] [Concept('discipline', 'дисциплины')|E], которое позволит вам открыть [Concept('perks', 'достоинства')|E] в [Concept('lifestyle', 'образе жизни')|E] «[GetTrait('bloodsorcery').GetName(GetNullCharacter)]», но также открывает [Concept('character_interaction', 'взаимодействия персонажа')|E] [Concept('bloodsorcery', 'кровавого чародейства')|E], позволяющие накладывать различные полезные и вредные заклинания."
@@ -1314,7 +1415,6 @@
 
  seek_knowledge_akhu_name: "Изучить #TOOLTIP:GAME_TRAIT,bloodsorcery,[GetNullCharacter] #L кровавое чародейство#!#! (Акху)"
  seek_knowledge_akhu_desc: "Колдовство сетитов - любопытное магическое явление. В нём присутствуют элементы из всего магического спектра, хотя его применение имеет в основном ритуальный, религиозный формат. Тем не менее, «колдовство сетитов» - это немного неправильное название. Термин подразумевает единичную практику, но «чародейство сетитов» было бы более правильным, так как на самом деле это собрание различных практик последователей Сета по всему миру. В эпоху расцвета Египта, до его обращения в христианство под влиянием Римской империи, магия была обычным делом, ей занимались и смертные, и вампиры. У египтян было несколько слов для обозначения магии. Сетиты использовали хеку (буквально «магия») для обозначения смертной магии, а ахку («заклинания») - для магии крови. На сегодняшний день это самый известный вариант «колдовства сетитов»."
-
  seek_knowledge_akhu_effects: "Вы узнаете местонахождение наставника, который знает #TOOLTIP:GAME_TRAIT,bloodsorcery,[GetNullCharacter] #L кровавое чародейство#!#!. Отправившись туда, вы сможете получить [Concept('trait', 'свойство')|E] [Concept('discipline', 'дисциплины')|E], которое позволит вам открыть [Concept('perks', 'достоинства')|E] в [Concept('lifestyle', 'образе жизни')|E] «[GetTrait('bloodsorcery').GetName(GetNullCharacter)]», но также открывает [Concept('character_interaction', 'взаимодействия персонажа')|E] [Concept('bloodsorcery', 'кровавого чародейства')|E], позволяющие накладывать различные полезные и вредные заклинания."
  seek_knowledge_akhu_tt: "Я открою самые глубокие тайны витэ."
  seek_knowledge_akhu_planning_title: "В поисках Акху"
@@ -1349,6 +1449,21 @@
  seek_knowledge_koldunic_travel_desc: "Колдовство похоже на тауматургию по идее, но сильно отличается от неё на практике. Основные отличия заключаются в том, что колдовство требует служения духам природы, а не заученных наизусть обрядов и ритуалов, колдовство гораздо тоньше тауматургии на низших уровнях, а колдовство требует не столько проявления воли, сколько владения самим материалом, которым хочет манипулировать нечисть."
  seek_knowledge_koldunic_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
+
+ seek_knowledge_sihr_name: "Learn [GetTrait('bloodsorcery').GetName(GetNullCharacter)] (Sihr)" #ТУТ
+ seek_knowledge_sihr_desc: "This form of blood magic practiced by the few [ashirra|E] sorcerors originates with the Mutasharid([GetTrait('nosferatu').GetName(GetNullCharacter)]) Tarique al-Hajji in the ninth Century. Tarique built contacts with the [GetTrait('assamite').GetName(GetNullCharacter)], including Khalid al-Munir, a prominent member of that clan's sorceror caste. Together they developed the paths of Sihr, its strength originating as much with the caster's faith as with the power of their blood.\n\nWhile Thaumaturgy and other forms of blood magic are considered to be blasphemy in Islam (as they seek a power other than God's to aid someone), many of the practitioners of Sihr believe that Sihr's power comes through God only. Casting spells usually relies on prayers that are used as incantations."
+ seek_knowledge_sihr_effects: "You will learn the location of a teacher who knows [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. After traveling there, you can acquire the [discipline|E] [trait|E]. It not only lets you unlock [perks|E] in the [GetTrait('bloodsorcery').GetName(GetNullCharacter)] [lifestyle|E], but also unlocks the [bloodsorcery|E] [character_interaction|E], which lets you cast various beneficial and harmful spells.\n\n#warning Learning Sihr means you can never learn Thaumaturgy.#!"
+ seek_knowledge_sihr_tt: "I shall unlock the deepest secrets of vitae." 
+ seek_knowledge_sihr_planning_title: "The Quest for Sihr"
+ seek_knowledge_sihr_planning_desc: "I have roused my blood and prepared myself to the best of my ability, but the finer points of [GetTrait('bloodsorcery').GetName(GetNullCharacter)] still elude me.\n\nIf I want to master this [discipline|E] all the way, I will need a teacher.\n\nLuckily, my scouts have told me where just such a person can be found."
+ seek_knowledge_sihr_planning_confirm: "$POD_journey_planning_confirm_default$"
+ seek_knowledge_sihr_planning_decline: "$POD_journey_planning_decline_default$"
+ seek_knowledge_sihr_travel_title: "$POD_journey_travel_title_seek_knowledge$"
+ seek_knowledge_sihr_travel_desc:  "Unlike other paths of blood magic, Sihr is mainly casted through prayer instead of arcane incantations and symbols. Many spells and rituals require intense prayer and focus from its practitioners and thus only the truly devoted may succeed at using them."
+ seek_knowledge_sihr_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
+ seek_knowledge_sihr_isvalid: "$EFFECT_LIST_BULLET$Only vampires following an [GetReligionByKey('ashirra_religion').GetName] [faith|El] or the [GetFaithByKey('tariqelhaqim').GetName] can learn Sihr"
+
+
  seek_knowledge_abyssal_mysticism_name: "Изучить #TOOLTIP:GAME_TRAIT,obtenebration,[GetNullCharacter] #L Власть над Тенью#!#! (Мистицизм Бездны)"
  seek_knowledge_abyssal_mysticism_desc: "Погружённые в неустанное изучение силы, превосходящей и в конечном итоге противостоящей всему свету и жизни, мистики Бездны мало интересуются человечностью и смертными заповедями добра и зла.\nМистики клана Ласомбра проникают в тёмные места в поисках секретов, ответов и, возможно, ещё больших вопросов. Для этих целеустремленных душ обычная Власть над Тенью - это только начало. Применив к Власти над Тенью принципы тауматургии, мистики Ласомбра в Тёмные века разработали ритуалы, позволяющие открыть скрытые силы тени и призвать безымянные первобытные ужасы Бездны, тем самым фактически расширив Власть над Тенью до формы кровавого чародейства."
  seek_knowledge_abyssal_mysticism_effects: "Вы узнаете местонахождение наставника, который знает мистицизм Бездны. Отправившись туда, вы сможете получить [Concept('trait', 'свойство')|E] [Concept('discipline', 'дисциплины')|E], которое позволит вам открыть [Concept('perks', 'достоинства')|E] в [Concept('lifestyle', 'образе жизни')|E] «[GetTrait('bloodsorcery').GetName(GetNullCharacter)]», но также открывает [Concept('character_interaction', 'взаимодействия персонажа')|E] [Concept('bloodsorcery', 'кровавого чародейства')|E], позволяющие накладывать различные полезные и вредные заклинания."
@@ -1360,6 +1475,11 @@
  seek_knowledge_abyssal_mysticism_travel_title: "$POD_journey_travel_title_seek_knowledge$"
  seek_knowledge_abyssal_mysticism_travel_desc: "Магия Бездны призывает духов из другого измерения, напоминающего тёмное чистилище. Такие практики порабощают и контролируют духов, но эти духи не похожи ни на что другое в творении и, кажется, не имеют воспоминаний или связей с настоящими демоническими сущностями."
  seek_knowledge_abyssal_mysticism_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
+
+
+ thaumaturgy_sihr_incompatible: "#warning Thaumatury and Sihr are incompatible#!" #ТУТ
+ can_learn_sihr_bloodmagic_trigger_ashirra_tooltip: "#warning Only vampires following an [GetReligionByKey('ashirra_religion').GetName] [faith|El] or the [GetFaithByKey('tariqelhaqim').GetName] can learn Sihr#!"
+
 
  azhi_dahaka_1_name: "Изучение Ажи-Дахаки"
  azhi_dahaka_1_desc: "Стать (или даже понять состояние Ажи-Дахаки) - задача не из легких. Сначала нужно учиться на достижениях и ошибках своих предшественников, чтобы снизить риск неудачи."
@@ -1868,3 +1988,15 @@
  shih_training_hunt_travel_title: "$shih_training_knowledge_travel_title$"
  shih_training_hunt_travel_desc: "$shih_training_knowledge_travel_desc$"
  shih_training_hunt_travel_confirm: "$shih_training_knowledge_travel_confirm$"
+
+ study_true_name_journey_name: "Study True Names"
+ study_true_name_journey_desc: "True names are, at least to some, the foundation of reality, and knowing the true name of something is having full control over it. True names are always changing however making learning them a long and arduous process."
+ study_true_name_journey_effects: "You will learn the True Name of a random material, animal or plant."
+ study_true_name_journey_isvalid: ""
+ study_true_name_journey_tt: "Naming our reality."
+ 
+ study_true_name_trait_journey_name: "Study the True Name of"
+ study_true_name_trait_journey_desc: "True names are, at least to some, the foundation of reality, and the knowing true name of something is having full control over it. True names are always changing however making learning them a long and arduous process."
+ study_true_name_trait_journey_effects: "You will learn the True Name of a random material, animal or plant."
+ study_true_name_trait_journey_isvalid: ""
+ study_true_name_trait_journey_tt: "Naming our reality."

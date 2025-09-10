@@ -155,7 +155,7 @@
  first_oni_court_position: "Первый Они"
  first_oni_court_position_desc: "Первые Они сродни военачальникам, они следят за безопасностью региона, защищают от влияния [Concept('akuma', 'акума')|E] и [UmbraGlossaryLocalized('yomi_wan','ада Йоми')] и обычно возглавляют санкционированные походы против врагов."
  infant_devil_civilizer_court_position: "Цивилизатор демонов-младенцев"
- infant_devil_civilizer_court_position_desc: "Есть время и место для мягкого родительского убеждения, но во время укрощения дикого чин-мэй - не такое время. В этой роли выступает цивилизатор демонов-младенцев, контролирующий усилия различных местных обществ по цивилизации демонов-младенцев по возвращению диких чин-мэй."
+ infant_devil_civilizer_court_position_desc: "Для мягкого родительского убеждения есть время и место, но во время укрощения дикого [Concept('kuei_jin', 'куэй-дзин')|E], только что вернувшегося из [UmbraGlossaryLocalized('yomi_wan','ада Йоми')], такое время не подходит. В этой роли выступает цивилизатор демонов-младенцев, наблюдающий за усилиями различных местных обществ, занимающихся приведения к цивилизации демонов-младенцев, по возвращению, подчинению и сопровождению этих вернувшихся душ в ближайший двор."
 
  master_rite_court_position: "Мастер обряда"
  master_rite_court_position_desc: "$master_rite_court_position$ отвечает за духовное благополучие каэрна. Все проводимые ритуалы должны получить их одобрение."
@@ -191,13 +191,10 @@
 
  underworld_ambassador_court_position: "Посол Загробного мира"
  underworld_ambassador_court_position_desc: "Посол [UmbraGlossaryLocalized('shadowlands','Загробного мира')] служит местному правителю в качестве связующего звена с местными измерениями [UmbraGlossaryLocalized('shadowlands','Загробного мира')]."
- underworld_ambassador_employer_custom_effect_description: "Все при дворе:\n[umbra_aptitude|E]: от $pod_grace_i$#P +5%#! до $pod_grace_i$#P +25%#! (исходя из [Concept('aptitude', 'пригодности')|E])"
  umbra_ambassador_court_position: "Посол [Concept('umbra', 'Умбры')|E]"
  umbra_ambassador_court_position_desc: "Посол [Concept('umbra', 'Умбры')|E] служит местному правителю в качестве связующего звена с местными измерениями [Concept('umbra', 'Умбры')|E]."
- umbra_ambassador_employer_custom_effect_description: "Все при дворе:\n[umbra_aptitude|E]: от $pod_grace_i$#P +5%#! до $pod_grace_i$#P +25%#! (исходя из [Concept('aptitude', 'пригодности')|E])"
  trod_wayfarer_court_position: "Обходчик тродов"
  trod_wayfarer_court_position_desc: "Троды - ближайшая связь фей с [UmbraGlossaryLocalized('dreaming','Грёзами')] и [UmbraGlossaryLocalized('arcadia','Аркадией')] извне. Они также являются могуществом. Те, кто управляет тродами, имеют огромный контроль над обществом фей."
- trod_wayfarer_employer_custom_effect_description: "Все при дворе:\n[umbra_aptitude|E]: от $pod_grace_i$#P +5%#! до $pod_grace_i$#P +25%#! (исходя из [Concept('aptitude', 'пригодности')|E])"
 
  touchstones_court_position: "Опора"
  touchstones_court_position_desc: "Опоры - это связь вампира со смертным миром, представляющая собой образ мышления, в котором он себя ценит. Опорой должен быть один живой человек. Это может быть выживший партнер или член семьи, родственник того, кого вампир убил в начале своей нежизни, или просто человек, с которым он регулярно сталкивается.\nНекоторые сородичи, в силу своей оторванности от мира смертных, могут даже выбрать себе Опору, которая не знает об их существовании, предпочитая преследовать и следить за человеком, чтобы сохранить свою связь с человечеством."
@@ -217,7 +214,7 @@
  quaesitor_court_position_desc: "Квезиторы - это ветвь архонтов, почти полностью состоящая из вампиров-тремеров. Они удовлетворяют все колдовские потребности Камарильи, будь то борьба с колдунами Шабаша, магами или охота на тремеров-изгоев."
 
  oathsworn_mount_court_position: "Клятвенный скакун"
- oathsworn_mount_court_position_desc: "[GetTrait('pooka').GetName( GetPlayer )] (со сродством с крупным животным) или [courtier|El]-[GetTraitGroup('shapeshifter').GetName()|l], присягнувший сюзерену-фее, может служить ему разумным скакуном."
+ oathsworn_mount_court_position_desc: "[GetTrait('pooka').GetName( GetPlayer )] (со сродством с крупным животным) или [courtier|El]-[GetTraitGroup('fera').GetName()|l], присягнувший сюзерену-фее, может служить ему разумным скакуном."
  oathsworn_mount_employer_custom_effect_description: "Увеличение скорости передвижения и армии исходя из [Concept('aptitude', 'пригодности')|E]."
 
  strategoi_court_position: "Стратег"
@@ -291,3 +288,27 @@
  ratcatcher_court_position: "Крысолов"
  ratcatcher_court_position_desc: "$ratcatcher_court_position$ должен пасти крыс, следить за тем, чтобы они были съедобными, и загонять их в угол, чтобы они служили источником витэ для менее удачливых вампиров при дворе."
  #ratcatcher_employer_custom_effect_description: "$BULLET$Улучшает [character_interaction|El] «Осушить животное»"
+
+ scarlet_screen_family_court_position: "Алая ширма семьи"
+ scarlet_screen_family_court_position_desc: "Самая важная алая ширма. Такие [Glossary('дхармы','podgloss.dharma')], как Костяные цветы, обязывают защищать семью. Кроме того, смертная семья куэй-дзин часто входит в число его самых преданных сторонников.\n\n#help [Concept('aptitude', 'Пригодность')|E] этой [Concept('court_position', 'придворной должности')|E] зависит от семейных уз."
+
+ scarlet_screen_inugumi_court_position: "Алая ширма инугуми"
+ scarlet_screen_inugumi_court_position_desc: "Солдаты - это наиболее заметная алая ширма, часто используемая в виде преступных группировок или людей, которые снабжают куэй-дзин оружием и подобными товарами.\nОни делятся на три типа, включая «Собачьи банды» (инугуми), которые более лояльны и иногда даже вступают в контакт со сверхъестественным.\n\n#help [Concept('aptitude', 'Пригодность')|E] этой [Concept('court_position', 'придворной должности')|E] зависит от уровня [Concept('martial', 'военного')|E] [Concept('education', 'образования')|E]."
+
+ scarlet_screen_ryugumi_court_position: "Алая ширма рюгуми"
+ scarlet_screen_ryugumi_court_position_desc: "Солдаты - это наиболее заметная алая ширма, часто используемая в виде преступных группировок или людей, которые снабжают куэй-дзин оружием и подобными товарами.\nОни делятся на три типа, включая «Воинов дракона» (рюгуми), которые обучаются именно с целью борьбы с серьёзными угрозами для их хозяев куэй-дзин.\n\n#help [Concept('aptitude', 'Пригодность')|E] этой [Concept('court_position', 'придворной должности')|E] зависит от уровня [Concept('education', 'образования')|E] [Concept('prowess', 'доблести')|E]."
+
+ scarlet_screen_artisans_court_position: "Алая ширма искусства"
+ scarlet_screen_artisans_court_position_desc: "Ремесленники работают над тем, чтобы усилить влияние своего хозяина в городе с помощью гражданских средств (противопоставляя их деяниям солдат), а также вдохновляют другие ширмы своими знаниями.\n\n#help [Concept('aptitude', 'Пригодность')|E] этой [Concept('court_position', 'придворной должности')|E] зависит от уровня [Concept('education', 'образования')|E] [Concept('learning', 'учёности')|E]."
+
+ scarlet_screen_peasants_court_position: "Алая ширма крестьян"
+ scarlet_screen_peasants_court_position_desc: "Крестьяне, ответственные за сохранность куэй-дзин. В [Concept('fifth_age', 'Пятой эпохе')|E] местные политические группы также стали классифицироваться как «крестьяне».\n\n#help [Concept('aptitude', 'Пригодность')|E] этой [Concept('court_position', 'придворной должности')|E] зависит от уровня [Concept('education', 'образования')|E] [Concept('diplomacy', 'дипломатии')|E]."
+
+ scarlet_screen_spies_court_position: "Алая ширма шпионов"
+ scarlet_screen_spies_court_position_desc: "Шпионы делятся на две группы.\nОбычные шпионы используются для сбора разведданных.\n\n#help [Concept('aptitude', 'Пригодность')|E] этой [Concept('court_position', 'придворной должности')|E] зависит от уровня [Concept('education', 'образования')|E] [Concept('intrigue', 'интриг')|E]."
+
+ scarlet_screen_merchants_court_position: "Алая ширма купцов"
+ scarlet_screen_merchants_court_position_desc: "Шпионы делятся на две группы.\nКупцы заботятся о финансовых нуждах куэй-дзин.\n\n#help [Concept('aptitude', 'Пригодность')|E] этой [Concept('court_position', 'придворной должности')|E] зависит от уровня [Concept('education', 'образования')|E] [Concept('stewardship', 'управления')|E]."
+
+ cult_leader_court_position: "Глава культа"
+ cult_leader_court_position_desc: "Лидер и гуру личного культа демона, собирающего веру. Эти культисты занимают особое положение в культе своего хозяина и выполняют повседневные задачи, позволяя демону сосредоточиться на более важных делах.\n#help [Concept('aptitude', 'Пригодность')|E] этой [Concept('court_position', 'придворной должности')|E] зависит от навыков [Concept('stewardship', 'управления')|E], [Concept('intrigue', 'интриг')|E] и [learning[Concept('aptitude', 'учёности')|E], а также [Concept('traits', 'свойств')|E] «[GetTrait('schemer').GetName(GetNullCharacter)]» и «[GetTrait('diligent').GetName(GetNullCharacter)]»."
