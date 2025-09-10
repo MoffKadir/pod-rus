@@ -33,6 +33,8 @@
  blood_magic_awakening_of_the_steel_visible: "Awakening of The Steel"
  blood_magic_covenant_of_nergal_visible: "Covenant of Nergal"
  blood_magic_abyssal_mysticism_visible: "Abyssal Mysticism"
+ blood_magic_hedayat_iman_visible: "Hedayat Iman"
+ blood_magic_hedayat_qalb_visible: "Hedayat el-Qalb"
  
  blood_magic_path_of_karma_visible: "Path of Karma"
  blood_magic_divine_hand_visible: "Divine Hand"
@@ -65,7 +67,7 @@
  BLOOD_PERMANENCY_PERK_EFFECT: "Improves the [GetPerk('summon_the_simplest_form_perk').GetName(GetPlayer)] $pod_bs_spell$, letting you summon 2 crafting materials at once.\n#weak Conjured objects may be given permanent existence#!"
  MAGIC_OF_THE_SMITH_PERK_EFFECT: "Improves the [GetPerk('blood_permanency_perk').GetName(GetPlayer)] $pod_bs_spell$, letting you summon 4 crafting materials at once.\nAs a $pod_bs_spell$, summon a common [artifact|E].\n#weak Conjure a complex object (multiple materials, moving parts)#!"
  REVERSE_CONJURATION_PERK_EFFECT: "Decrease the cost of $pod_bs_spells$ of this [bloodmagic_path|E].\nImproves the [GetPerk('magic_of_the_smith_perk').GetName(GetPlayer)] $pod_bs_spell$ by summoning a masterwork [artifact|E] instead of a common one.\n#weak Banish objects conjured with this path#!"
- POWER_OVER_LIFE_PERK_EFFECT: "As $pod_bs_spell$, summon an army of random [men_at_arms|E].\nImproves the [GetPerk('reverse_conjuration_perk').GetName(GetPlayer)] $pod_bs_spell$ by summoning a famed [artifact|E] instead of a masterwork one.\n#weak Temporarily conjure a living (though mindless) being#!"
+ POWER_OVER_LIFE_PERK_EFFECT: "As a $pod_bs_spell$, summon an army of random [men_at_arms|E].\nImproves the [GetPerk('reverse_conjuration_perk').GetName(GetPlayer)] $pod_bs_spell$ by summoning a famed [artifact|E] instead of a masterwork one.\n#weak Temporarily conjure a living (though mindless) being#!"
  
  contradict_perk_name: "Contradict"
  subvert_perk_name: "Subvert"
@@ -109,11 +111,11 @@
  entrap_ephemera_perk_name: "Entrap Ephemera"
  duality_perk_name: "Duality"
 
- HERMETIC_SIGHT_PERK_EFFECT: "Can use fetish [artifacts|E].\n#weak See into the spirit world#!"
- ASTRAL_CHANT_PERK_EFFECT: "Can interact with characters on the other side of the Gauntlet.\n#weak Be able to communicate with all spirits.#!"
- VOICE_OF_COMMAND_PERK_EFFECT: "$POD_splat_spirit_plural$ are more willing to become your companions.\n#weak Force a spirit to obey your commands.#!"
- ENTRAP_EPHEMERA_PERK_EFFECT: "$unlock_enhancing_node$ Sacrifice a $POD_splat_spirit$ [prisoner|E] to improve an [artifact|E] based on the sacrifice's [traits|E]\n#weak Bind a spirit into an object to create a fetish.#!"
- DUALITY_PERK_EFFECT: "Can imprison, torture, execute or physically hurt spirits during [single_combat_duel_plural|E].\n#weak Exist in both the material and spiritual world#!"
+ HERMETIC_SIGHT_PERK_EFFECT: "Can interact with characters on the other side of the Gauntlet.\n#weak See into the spirit world#!"
+ ASTRAL_CHANT_PERK_EFFECT: "Can learn #V 1#! additional [language|E] without any penalties\n#weak Be able to communicate with all spirits.#!"
+ VOICE_OF_COMMAND_PERK_EFFECT: "#weak Force a spirit to obey your commands.#!"
+ ENTRAP_EPHEMERA_PERK_EFFECT: "Can use $pod_fetishes$.\n#weak Bind a spirit into an object to create a fetish.#!"
+ DUALITY_PERK_EFFECT: "#weak Exist in both the material and spiritual world#!"
 
  vertigo_perk_name: "Vertigo"
  contortion_perk_name: "Contortion"
@@ -283,7 +285,7 @@
  AEGIS_ALIGHIERI_PERK_EFFECT: "Improves the modifier from the [GetPerk('heed_the_hell_bound_heart_perk').GetName(GetPlayer)] $pod_bs_spell$ to [GetModifier('demonic_knowledge_3_modifier').GetNameWithTooltip].\n#weak Shields the koldun from attacks through demonic entities through the use of an amulet soaked in his own blood.#!"
  HEAVE_THE_HOST_OF_HELL_PERK_EFFECT: "Improves the modifier from the [GetPerk('aegis_alighieri_perk').GetName(GetPlayer)] $pod_bs_spell$ to [GetModifier('demonic_knowledge_4_modifier').GetNameWithTooltip].\n#weak Dispels any traces of the infernal within the koldun's domain.#!" 
  #\nAs a spell, send [GetTrait('demon').GetName(GetPlayer)] to the [UmbraGlossary('abyss')] if the caster has more learning and prowess than the target.
- REAP_THE_WELL_PERK_EFFECT: "Improves the modifier from the [GetPerk('heave_the_host_of_hell_perk').GetName(GetPlayer)] $pod_bs_spell$ to [GetModifier('demonic_knowledge_5_modifier').GetNameWithTooltip].\nCan learn the true name of [GetTrait('demon').GetName(GetPlayer)] and bind them.\n#weak Allows the koldun to enslave a demonic entity.#!"
+ REAP_THE_WELL_PERK_EFFECT: "Improves the modifier from the [GetPerk('heave_the_host_of_hell_perk').GetName(GetPlayer)] $pod_bs_spell$ to [GetModifier('demonic_knowledge_5_modifier').GetNameWithTooltip].\nCan learn the true name of $POD_splat_demon_plural$ and bind them.\n#weak Allows the koldun to enslave a demonic entity.#!"
 
  shroud_of_oblivion_perk_name: "Shroud of Oblivion"
  spectral_cloak_perk_name: "Spectral Cloak"
@@ -292,7 +294,7 @@
  hunger_of_the_void_perk_name: "Hunger of the Void"
 
  SHROUD_OF_OBLIVION_PERK_EFFECT: "#weak Shedding his own skin, the koldun may cloak himself into a portable piece of the Shroud, lessening the dangers of sunlight.#!"
- SPECTRAL_CLOAK_PERK_EFFECT: "Can physically enter the [UmbraGlossary('shadowlands')], potentially protecting one from hostile interactions.\nCan interact with characters on the other side of the Shroud.\n#weak Hides the koldun within the Shadowlands, making him invisible for those who cannot see ghosts.#!"
+ SPECTRAL_CLOAK_PERK_EFFECT: "Can interact with characters on the other side of the Shroud.\n#weak Hides the koldun within the Shadowlands, making him invisible for those who cannot see ghosts.#!"
  POND_OF_MALEVOLENT_DREAD_PERK_EFFECT: "As a $pod_bs_spell$, summon an army of Spectres, with an additional cost of wounding the caster.\n#weak Eviscerating himself, the koldun may channel the depths of the Sea of Shadows into a ring of wailing spectres to grasp at anyone in their reach.#!"
  WRATH_OF_THE_TEMPEST_PERK_EFFECT: "As a $pod_bs_spell$, give your current location [GetModifier('mass_harrowing_modifier').GetNameWithTooltip].\n#weak Allows the koldun to bring a piece of the Tempest into living world, conjuring a violent storm that throws anyone trapped within into a Harrowing.#!"
  HUNGER_OF_THE_VOID_PERK_EFFECT: "As a $pod_bs_spell$, give your current location [GetModifier('bs_nihil_modifier').GetNameWithTooltip], with an additional cost of 200 [stress|E].\n#weak By pulling out his own soul and tormenting it relentlessly, the koldun transforms it into a Nihil that sucks everything in its vicinity into it.#!"
@@ -442,3 +444,26 @@
 
  cycle_of_the_midgard_serpent_perk_tt: "Thanks to [GetPerk('cycle_of_the_midgard_serpent_perk').GetName(GetPlayer)], teaching [discipline|E] is free!"
  APEPS_TRANSFORMATION_PERK_EFFECT: "As a $pod_bs_spell$, sacrifice your $POD_splat_ghoul$ to gain stacking [GetModifier('apeps_transformation_modifier').GetNameWithTooltip]\n#flavor Transform a ghoul of yours into a great serpent capable of understanding human speech#!"
+
+
+ saut_allah_perk_name: "Saut Allah"
+ SAUT_ALLAH_PERK_EFFECT: "As a $pod_bs_spell$, reduce a targets stress and give them [GetModifier('saut_allah_modifier').GetNameWithTooltip] for 10 years.\n\n#weak The caster fortifies his fellow Ashirra for the rigors ahead.#!"
+ nuzra_allah_perk_name: "Nuzra Allah"
+ NUZRA_ALLAH_PERK_EFFECT: "Give [GetModifier('nuzra_allah_modifier').GetNameWithTooltip] to your foe during [single_combat_duel_plural|E].\n\n#weak A defensive power that shields the caster from visible harm.#!"
+ ruh_allah_perk_name: "Ruh Allah"
+ RUH_ALLAH_PERK_EFFECT: "[vassal|E] [faction_commitment|E]: #P -20#!\n\n#weak The Ruh Allah aids a Cainite in regaining control in themselves and those around them.#!"
+ ghadub_allah_perk_name: "Ghadub Allah"
+ GHADUB_ALLAH_PERK_EFFECT: "Inflict every ruler on the opposing side with [GetModifier('ghadub_allah_modifier').GetNameWithTooltip] when starting a [war|E] as the primary attacker or defender.\nAs a $pod_bs_spell$, force a [white_peace|E] between the yourself and the target.\n\n#weak Allows the halting of attacks without the need for eye contact.#!"
+ kubda_allah_perk_name: "Kubda Allah"
+ KUBDA_ALLAH_PERK_EFFECT: "As a $pod_bs_spell$, gain a [strong_hook|E] on the target and wound them if you fail.\n\n#weak Crush the unlife out of an opponent and force them to submit. The caster must be sufficiently restrained to use the power for good.#!"
+
+ hikma_allah_perk_name: "Hikma min Allah"
+ HIKMA_ALLAH_PERK_EFFECT: "#weak By means of a prolonged introspection, the Ashirra is able to focus their mind on solving problems.#!"
+ idrak_allah_perk_name: "Idrak' min Allah"
+ IDRAK_ALLAH_PERK_EFFECT: "As a $pod_bs_spell$, learn all [schemes|E] and [secrets|E] of a character.\n\n#weak Through the power of prayer, gain insights into your foes.#!"
+ sultat_nabi_perk_name: "Sultat el-Nabi"
+ SULTAT_NABI_PERK_EFFECT: "As a $pod_bs_spell$, force a character to randomly give you @gold_icon!, @prestige_icon!, a Common [inventory_artifact|E], or a Famed [inventory_artifact|E].\n\n#weak Compel the subject to obey a short phrase comprising no more than ten words.#!"
+ sawt_nabi_perk_name: "Sawt el-Nabi"
+ SAWT_NABI_PERK_EFFECT: "#weak The caster may communicate with any Cainite known to them irrespective of the distance.#!"
+ nar_iman_perk_name: "Nar el-Iman"
+ NAR_IMAN_PERK_EFFECT: "As a $pod_bs_spell$, wound a character 3 times and give them [GetModifier('nar_iman_modifier').GetNameWithTooltip] for 10 years.\n\n#weak Exploit the inherent weakness of vampires in matters of faith, undermining the target's resolve and inflicting both mental and physical injury.#!"

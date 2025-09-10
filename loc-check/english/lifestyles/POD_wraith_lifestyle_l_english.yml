@@ -19,7 +19,7 @@
  
  dark_arcanoi_lifestyle_name: "Dark Arcanoi"
  dark_arcanoi_lifestyle_desc: "Focus on the specialized Arcanos fueled by Angst and [UmbraGlossary('oblivion')]."
- dark_arcanoi_lifestyle_highlight_desc: "Because of your Caste, you gain #P [GetPlayer.Custom('GetCasteLifestylePercentageBoost')]#! more [experience|E] in this Lifestyle."
+ dark_arcanoi_lifestyle_highlight_desc: "Because of your Caste, you gain #P [GetPlayer.MakeScope.ScriptValue('spectre_caste_lifestyle_xp_mult')|%0]#! more [experience|E] in this Lifestyle."
  monthly_dark_arcanoi_lifestyle_xp_gain_mult: "Monthly Dark Arcanoi [lifestyle|E] [experience|E]"
  
  misc_arcanoi_lifestyle_name: "Misc. Arcanoi"
@@ -375,13 +375,13 @@
  tempest_riders_canceleer_perk_name: "Tempest-Rider's Canceler"
  arcanoi_oubliette_perk_name: "Oubliette"
 
- ENSHROUD_PERK_EFFECT: "No longer needed to make a sacrifice to access the [UmbraGlossary('pod_realm_tempest')].\n[umbra_sense|E]: $pod_grace_i$#P +5%#!\n#F A Harbinger can manipulate the membrane between the [UmbraGlossary('shadowlands')] and [UmbraGlossary('pod_realm_tempest')], allowing them to enter the [UmbraGlossary('pod_realm_tempest')] without opening a [GetModifier('nihil_modifier').GetNameWithTooltip] or use the [UmbraGlossary('pod_realm_tempest')] for concealment.#!"
- WEATHER_EYE_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +2%#!\n[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\nAllow predicting natural hazards.\n#F A Harbinger is always aware of current conditions in the nearby [UmbraGlossary('pod_realm_tempest')], and can take shortcuts between two [UmbraGlossary('shadowlands')] locations.#!"
- PHANTOM_WINGS_PERK_EFFECT: "[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#F A Harbinger can grow wings to glide through the [UmbraGlossary('pod_realm_tempest')] and [UmbraGlossary('shadowlands')].#!"
- RETURN_PERK_EFFECT: "As [character_interaction|E], can teleport to [UmbraGlossary('shadowlands')]\n#F A Harbinger may travel from any location in the [UmbraGlossary('pod_realm_tempest')] to their home by the fastest route possible.#!"
- FLICKER_PERK_EFFECT: "[umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#F A Harbinger may bend the [UmbraGlossary('pod_realm_tempest')] to teleport themselves to another location.#!"
- STORMREADER_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +10%#!\n[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\nYou will no longer get lost in the [UmbraGlossary('pod_realm_tempest')].\n#F A Harbinger gains an intuitive sense of the [UmbraGlossary('pod_realm_tempest')], allowing them to cut travel times when traveling to or from a location in the [UmbraGlossary('pod_realm_tempest')], and to navigate so as to avoid a Maelstrom or mitigate its effects.#!"
- TEMPEST_RIDERS_CANCELEER_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +3%#!\n[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#F A Harbinger can grow metallic black wings, allowing them to glide, attack, and protect others.#!"
+ ENSHROUD_PERK_EFFECT: "No longer needed to make a sacrifice to access the [UmbraGlossary('pod_realm_tempest')].\n#F A Harbinger can manipulate the membrane between the [UmbraGlossary('shadowlands')] and [UmbraGlossary('pod_realm_tempest')], allowing them to enter the [UmbraGlossary('pod_realm_tempest')] without opening a [GetModifier('nihil_modifier').GetNameWithTooltip] or use the [UmbraGlossary('pod_realm_tempest')] for concealment.#!"
+ WEATHER_EYE_PERK_EFFECT: "Allow predicting natural hazards.\n#F A Harbinger is always aware of current conditions in the nearby [UmbraGlossary('pod_realm_tempest')], and can take shortcuts between two [UmbraGlossary('shadowlands')] locations.#!"
+ PHANTOM_WINGS_PERK_EFFECT: "#F A Harbinger can grow wings to glide through the [UmbraGlossary('pod_realm_tempest')] and [UmbraGlossary('shadowlands')].#!"
+ RETURN_PERK_EFFECT: "As a [character_interaction|E], can teleport to [UmbraGlossary('shadowlands')]\n#F A Harbinger may travel from any location in the [UmbraGlossary('pod_realm_tempest')] to their home by the fastest route possible.#!"
+ FLICKER_PERK_EFFECT: "#F A Harbinger may bend the [UmbraGlossary('pod_realm_tempest')] to teleport themselves to another location.#!"
+ STORMREADER_PERK_EFFECT: "You will no longer get lost in the [UmbraGlossary('pod_realm_tempest')].\n#F A Harbinger gains an intuitive sense of the [UmbraGlossary('pod_realm_tempest')], allowing them to cut travel times when traveling to or from a location in the [UmbraGlossary('pod_realm_tempest')], and to navigate so as to avoid a Maelstrom or mitigate its effects.#!"
+ TEMPEST_RIDERS_CANCELEER_PERK_EFFECT: "#F A Harbinger can grow metallic black wings, allowing them to glide, attack, and protect others.#!"
  ARCANOI_OUBLIETTE_PERK_EFFECT: "Unlock $EXECUTION_BANISH_TO_TEMPEST$ [execution|E] option for [GetTrait('wraith').GetName( GetNullCharacter )] prisoner.\n#F A Harbinger may send another wraith directly into the [UmbraGlossary('pod_realm_tempest')].#!"
  
  # Castigate
@@ -396,7 +396,7 @@
  shadow_wrack_perk_name: "Shadow Wrack"
 
  COAX_PERK_EFFECT: "Resisting Shadow is more likely to succeed\n#F A Pardoner may call on their Shadow at decreased risk.#!"
- BULWARK_PERK_EFFECT: "[umbra_sense|E]: $pod_grace_i$#P +5%#!\nLess chance of gaining [stress|E] in the Adventure into Maelstroms [umbra|E] action.\n#F A Pardoner can temporarily shield themselves or others from a Maelstrom.#!"
+ BULWARK_PERK_EFFECT: "Less chance of gaining [stress|E] in the Adventure into Maelstroms [umbra|E] action.\n#F A Pardoner can temporarily shield themselves or others from a Maelstrom.#!"
  TRANSFER_ANGST_PERK_EFFECT: "As a [character_interaction|E], can store 50 [static_stress|E] for 5 years, after which you will get 80 [static_stress|E]\n#F A Pardoner can temporarily hold Angst in themselves until it can be transferred to an appropriate storage place.#!"
  TRIMMING_THE_BLACK_ROSE_PERK_EFFECT: "As a [character_interaction|E], remove 1 [thorn_lifestyle|E] [perk|E], or lose 50 [static_stress|E]\n#F A Pardoner may prevent a Shadow from using its Thorns.#!"
  COOLING_THE_BLOOD_PERK_EFFECT: "Number of dark passions: #P -1#!\n#F A Pardoner can weaken a Shadow's Dark Passions.#!"
@@ -415,7 +415,7 @@
  materialize_perk_name: "Materialize"
  harrow_the_mortal_flesh_perk_name: "Harrow the Mortal Flesh"
  
- WHISPERS_PERK_EFFECT: "As [character_interaction|E], get ability to interact with [skinlands|E] for 5 years, at cost of 3 pathos.\n#F A Proctor may whisper through the Shroud.#!"
+ WHISPERS_PERK_EFFECT: "As a [character_interaction|E], get ability to interact with [skinlands|E] for 5 years, at cost of 3 pathos.\n#F A Proctor may whisper through the Shroud.#!"
  CACHE_PERK_EFFECT: "Allow gifting [artifact|E] and gold to the Quick of the [skinlands|E].\n#F A Proctor can temporarily move a relic into the [skinlands|E].#!"
  PHANTOM_PERK_EFFECT: "Decrease cost of [GetPerk('whispers_perk').GetName(GetPlayer)] [character_interaction|E] from 3 to 2 pathos\n#F A Proctor can materialize in a hazy, intangible form.#!"
  STATUE_PERK_EFFECT: "Decrease cost of [GetPerk('whispers_perk').GetName(GetPlayer)] [character_interaction|E] from 2 to 1 pathos\n#F A Proctor can materialize into a solid form, but cannot move while in it.#!"
@@ -440,10 +440,10 @@
  DISTANT_VISIONS_PERK_EFFECT: "#F An Oracle may clearly see what relevant events are happening elsewhere.#!"
  FORESHADOW_PERK_EFFECT: "You will receive notification if someone intends to murder your friends or family.\nYou will receive notification if someone intends to seduce your lovers or consorts.\nYour prisoner has less chance of escaping from your prison.\n#F An Oracle can detect impending danger.#!"
  READING_THE_BONES_PERK_EFFECT: "Unlock $deceitful_progress_hostile_schemes_decision$ [decision|E].\n#F An Oracle can see a person or object's future, save for their own.#!"
- FATES_HAND_APPARENT_PERK_EFFECT: "Unlocks the [summon_wraith_on_death_interaction|E].\n#F An Oracle can detect the death of a mortal that Fate has chosen.#!"
+ FATES_HAND_APPARENT_PERK_EFFECT: "$POD_can_summon_on_death_trigger_loca$\n#F An Oracle can detect the death of a mortal that Fate has chosen.#!"
  SIDESTEP_PERK_EFFECT: "#F The Oracle can foretell forthcoming attacks, allowing them to prepare a defense, or place themselves in the way of an attack meant for someone else.#!"
  BREATHING_THE_MISTS_PERK_EFFECT: "Unlock $impatient_rushing_all_schemes_decision$ [decision|E].\n#F An Oracle's foresight allows them to prepare for future events.#!"
- ENSNARE_PERK_EFFECT: "Unlocks the [bind_wraith_interaction|E].\nUnlocks the [command_wraith_interaction|E].\nMax number of bound $POD_splat_wraith_plural$: #P +3#!.\n#F An Oracle can tangle a wraith's threads to the point they no longer control their own destiny, instead serving another's ends.#!"
+ ENSNARE_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n$POD_can_command_wraith_trigger_loca$\n#F An Oracle can tangle a wraith's threads to the point they no longer control their own destiny, instead serving another's ends.#!"
 
  # Inhabit
  inhabit_visible: "[CharacterLifestyleWindow.GetCharacter.Custom( 'inhabit_custom_name' )]" 
@@ -479,8 +479,8 @@
  MOOD_MUSIC_PERK_EFFECT: "As a [character_interaction|E], can improve target's opinion of you.\n#F A Chanteur can inspire both positive and negative emotions in their listeners.#!"
  SATIRE_PERK_EFFECT: "As a [character_interaction|E], allows you to downgrade random relation of target\n#F A Chanteur can ruin a wraith's social standing with a story or song.#!"
  SIREN_SONG_PERK_EFFECT: "As a [character_interaction|E], allows you to gain a hook over the target.\n#F A Chanteur can enthrall a victim, making it easy for them to submit to the Chanteur's influence.#!"
- CRESCENDO_PERK_EFFECT: "Unlock [single_combat_duel|E] moves.\n#F A Chanteur can physically damage wraiths with a scream. If Embodied, they can terrify the Quick to the point of harm.#!"
- SPECTRE_SONG_PERK_EFFECT: "Unlock [single_combat_duel|E] moves.\n#F A Chanteur can imitate a Spectre’s moans and screams.#!"
+ CRESCENDO_PERK_EFFECT: "Unlocks new [single_combat_duel|E] moves.\n#F A Chanteur can physically damage wraiths with a scream. If Embodied, they can terrify the Quick to the point of harm.#!"
+ SPECTRE_SONG_PERK_EFFECT: "Unlocks new [single_combat_duel|E] moves.\n#F A Chanteur can imitate a Spectre’s moans and screams.#!"
  REQUIEM_PERK_EFFECT: "As a [character_interaction|E], allows you upgrade a existent relation.\n#F A Chanteur can fill someone with a completely overwhelming emotion.#!"
  
  # Lifeweb
@@ -580,10 +580,10 @@
  SLEEPSENSE_PERK_EFFECT: "#F A Sandman can observe a mortal or Slumbering wraith's dreams, and can tell what stage of sleep a mortal has reached.#!"
  LINGUA_PERK_EFFECT: "#F A Sandman can communicate through a dream, regardless of language.#!"
  DREAM_SEQUENCE_PERK_EFFECT: "#F A Sandman can cloud the mind of a mortal who's seen through the Fog, convincing them it was a dream. Powerful Sandmen can use this power to convince a supernatural they didn't see something they did.#!"
- MORPHEAN_EMBRACE_PERK_EFFECT: "As [character_interaction|E], allows you to slowly subdue target eventually leading to [GetTrait('torpor').GetName( GetPlayer )].\n#F A Sandman may bestow sleep and dreams on a wraith.#!"
+ MORPHEAN_EMBRACE_PERK_EFFECT: "As a [character_interaction|E], allows you to slowly subdue target eventually leading to [GetTrait('torpor').GetName( GetPlayer )].\n#F A Sandman may bestow sleep and dreams on a wraith.#!"
  INCUBUS_PERK_EFFECT: "Unlock Drain Energy [character_interaction|E], allow using the target's resource to gain pathos.\n#F A Sandman can drain energy from a mortal as Pathos.#!"
- AGON_PERK_EFFECT: "Unlocks the #italic $EXECUTION_CONVERT_TO_WRAITH$#! [execution|E] option.\n#F A Sandman may rip a mortal’s soul from their body.#!"
- ONEIRATAXIA_PERK_EFFECT: "As [character_interaction|E], allows you make target leave [GetTrait('torpor').GetName( GetPlayer )].\n#F Allows a Sandman to prevent a mortal from sleeping, prevent a wraith from Slumbering, stop a sleeper from waking up, or stop a mortal from dreaming.#!"
+ AGON_PERK_EFFECT: "$POD_can_covert_to_wraith_trigger_loca$\n#F A Sandman may rip a mortal’s soul from their body.#!"
+ ONEIRATAXIA_PERK_EFFECT: "As a [character_interaction|E], allows you make target leave [GetTrait('torpor').GetName( GetPlayer )].\n#F Allows a Sandman to prevent a mortal from sleeping, prevent a wraith from Slumbering, stop a sleeper from waking up, or stop a mortal from dreaming.#!"
  
  # Puppetry
  puppetry_visible: "Puppetry" 

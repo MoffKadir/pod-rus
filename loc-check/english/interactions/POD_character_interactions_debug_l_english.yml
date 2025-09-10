@@ -2,6 +2,9 @@
  POD_debug_squared_distance_interaction: "#P;bold Show Squared Distance#!"
  POD_debug_squared_distance_interaction_desc: "The #P;bold Squared Distance#! between [actor.GetShortUIName] and [recipient.GetShortUIName] is #V;bold [SCOPE.ScriptValue('POD_debug_squared_distance')]#!"
 
+ POD_debug_pod_death_interaction: "Kill Character"
+ POD_debug_pod_death_interaction_desc: "Kill [recipient.GetShortUIName]. If [recipient.GetSheHe|l] has a resurrection ability, it will trigger (unlike the #V $slay_character_interaction$#! [character_interaction|E] from Vanilla CK3, which kills permanently)"
+
  POD_debug_force_into_prison_interaction: "Force into Prison"
  POD_debug_force_into_prison_interaction_desc: "Force a character into prison, skipping the duel event that normally happens in [princes_of_darkness|E]"
  POD_debug_become_laamp_interaction_imprison_recipient: "You imprison this character"
@@ -15,6 +18,7 @@
 
  POD_debug_gain_trait_xp_interaction: "Add Trait Experience"
  POD_debug_gain_trait_xp_interaction_desc: "Level up a supernatural trait of [recipient.GetShortUIName]"
+ POD_reduce_trait_xp: "Reduce experience instead"
  
  POD_debug_umbra_discovery_interaction: "Gain [umbra|E] Discovery"
  POD_debug_umbra_discovery_interaction_desc: "You'll be able to start an [umbra_expedition|E] in the #bold [Localize(Concatenate('umbra_realm_', recipient.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName))]#!"
@@ -35,6 +39,9 @@
 
  POD_debug_vicissitude_face_interaction: "Vicissitude Portrait Editor"
  POD_debug_vicissitude_face_interaction_desc: "Opens a window that lets you edit certain characteristics of [recipient.GetShortUIName], like muscularity or height"
+
+ POD_debug_add_halfsplat_interaction: "Add Half-Splat"
+ POD_debug_add_halfsplat_interaction_desc: "Give [recipient.GetShortUIName] a Half-[splat|E] trait, along with the necessary initialization effects"
 
  POD_debug_teach_spell_of_life_interaction: "Teach the Spell of Life"
  POD_debug_teach_spell_of_life_interaction_desc: "Teach [recipient.GetShortUIName] the Spell of Life, which allows creating $POD_splat_mummy_plural$"

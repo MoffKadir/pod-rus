@@ -24,11 +24,6 @@
  action_can_add_dreamer_alert_desc: "You should muse a mortal to gain more cantrip xp."
  action_can_add_dreamer_alert_click: "#I Click to muse a mortal as your dreamer#!"
  
- #action_can_enchant_alert: "You should get [GetTrait('enchanted').GetName( GetPlayer )]"
- #action_can_enchant_alert_label: "You should get [GetTrait('enchanted').GetName( GetPlayer )]"
- #action_can_enchant_alert_desc: "You should get [GetTrait('enchanted').GetName( GetPlayer )] to prevent your equipped treasure from getting disabled."
- #action_can_enchant_alert_click: "#I Click to get [GetTrait('enchanted').GetName( GetPlayer )]#!"
- 
  action_can_call_pet_to_war_alert: "You should call your pet to war"
  action_can_call_pet_to_war_alert_label: "You should call your pet to war"
  action_can_call_pet_to_war_alert_desc: "You can call your pet to war to gain an edge."
@@ -94,15 +89,6 @@
  action_can_demand_mass_payment_label: "@gold_icon! You can Demand Payments for multiple Hooks at once"
  action_can_demand_mass_payment_desc: "You hold [hooks|E] on two or more characters who have [gold|E] to spend."
  action_can_demand_mass_payment_click: "#I Click to open the Demand Payment for all Hooks [character_interaction|E].#!"
- 
- reactive_advice_gain_sekhem: "Gain Sekhem"
- action_reactive_advice_gain_sekhem: "Advice: Gain Sekhem"
- action_reactive_advice_gain_sekhem_desc: "You have several ways to recover Sekhem. Open this to learn more about what that means for you."
- action_reactive_advice_gain_sekhem_click: "$click_to_open_lesson$"
- lesson_gain_sekhem_basic: "Gain Sekhem"
- lesson_gain_sekhem_basic_desc: "You use Sekhem to fuel your Hekau techniques, and each type of Mummy recovers it differently: [GetTrait('shemsuheru').GetName( GetPlayer )] by time (1 point/1 months if you are in the [GetGeographicalRegion('pod_lands_of_faith').GetName], otherwise it will be a 25% chance of gaining them depending of the level of Ma'at's Haven building). [GetTrait('cabiri').GetName( GetPlayer )] restore it by activating the 'Pneuma Restoration' personal [character_interaction|E]. [GetTrait('banemummy').GetName( GetPlayer )] regain it by executing [prisoners|E] using $EXECUTION_DEVOUR$ option."
- lesson_gain_sekhem_advanced: "Gain Sekhem"
- lesson_gain_sekhem_advanced_desc: "In later gameplay, you can use the Draw Sekhem [character_interaction|E] (Unlocked by [GetPerk( 'name_of_sekhem_perk' ).GetName( GetPlayer )]) or travel to Amenti in the [umbra|E] Panel to recover Sekhem as well."
 
  reactive_advice_gain_resolve: "Gain Resolve"
  action_reactive_advice_gain_resolve: "Advice: Gain Resolve"
@@ -154,7 +140,7 @@
 
  pod_alert_can_hunt_in_capital: "#T You can go on a Journey#!\nSince you are a $POD_splat_vampire$, you can #bold $hunt_in_capital_name$#! to slake your $pod_hunger_with_icon$ and gain [lifestyle_experience|E].\n\nHunting #bold Peasants#! is free.\n\n#I Click to open the [journey|E] window.#!\n$RIGHT_CLICK_DISMISS$"
 
- pod_alert_can_train_with_pack: "#T You can go on a Journey#!\nSince you are a $POD_splat_werewolf$, you can #bold $werewolf_training_name$#! to gain [lifestyle_experience|E] and lower the [development|E] of your capital.\n\n#I Click to open the [journey|E] window.#!\n$RIGHT_CLICK_DISMISS$"
+ pod_alert_can_train_with_pack: "#T You can go on a Journey#!\nSince you are a $glossary_fera$, you can #bold $fera_training_name$#! to improve both your own and your [GetPlayer.Custom('PODCoterie')]'s abilities, or other rewards.\n\n#I Click to open the [journey|E] window.#!\n$RIGHT_CLICK_DISMISS$"
 
  pod_alert_can_go_on_umbra_expedition: "#T You can go on an [umbra_expedition|E]#!\nExploring the depths of the [umbra|E] can be both dangerous and rewarding.\n\n#I Click to open the [umbra|E] window.#!\n$RIGHT_CLICK_DISMISS$"
 
@@ -231,3 +217,8 @@
  action_can_craft_alert: "Crafting cooldown is over!"
  action_can_craft_alert_desc: "Cooldown for crafting is over!"
  action_can_craft_alert_click: ""
+
+ action_can_weaken_or_bind_wraith_alert: "You can further your bind on Wraith"
+ action_can_weaken_or_bind_wraith_alert_label: "You can further your bind on Wraith"
+ action_can_weaken_or_bind_wraith_alert_desc: "You can further your bind on wraith to increase their quality!"
+ action_can_weaken_or_bind_wraith_alert_click: "#I Click to either bind or weaken fetter of wraith!#!"

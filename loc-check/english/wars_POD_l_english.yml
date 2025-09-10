@@ -6,7 +6,9 @@
  hunter_war: "Inquisition Attack"
  HUNTER_WAR_NAME: "Inquisition Attack"
  declared_major_religious_war_flag_POD_tt: "You may only attempt one major religious war per 50 years"
+ declared_major_religious_war_flag_POD_tt_2: "You may only attempt one major religious war per 25 years"
  major_religious_war_warning_POD_desc: "\n\n#X You may only attempt one [holy_war|E] against a [kingdom|E]-tier [title|E] per 50 years#!"
+ major_religious_war_warning_POD_desc_2: "\n\n#X You may only attempt one [holy_war|E] against a [kingdom|E]-tier [title|E] per 25 years#!"
  invasion_war_warning_POD_desc: "\n\n#X You may only attempt one invasion [war|E] against a [kingdom|E]-tier [title|E] per 100 years#!"
 
  CB_ATTACKER_DYNASTY_SALUBRI: "[GetDynastyPerk( 'salubri_legacy_5' ).GetName]"
@@ -140,7 +142,7 @@
  
  POD_overthrow_akuma_name: "$ORDER$ [ATTACKER.GetFirstNamePossessive] Crusade against the [akuma|E]"
  POD_overthrow_akuma_name_base: "[ATTACKER.GetFirstName][DEFENDER.GetPrimaryTitle.GetName]"
- POD_overthrow_akuma: "Overthrow the Akuma"
+ POD_overthrow_akuma: "Overthrow the [akuma|E]"
  POD_overthrow_akuma_victory_desc: "[attacker.GetShortUIName|U] will give the conquered territory to a new character of [defender.GetShortUIName] culture."
  POD_overthrow_akuma_defeat_desc_attacker: "[defender.GetShortUIName|U] keeps [defender.GetHerHis] titles. You lose [piety|E]."
  POD_overthrow_akuma_defeat_desc_defender: "You keep your titles and gain [piety|E]."
@@ -151,5 +153,5 @@
  POD_dismantle_anda_horde_name_base: "[ATTACKER.GetFirstName][DEFENDER.GetPrimaryTitle.GetName]"
  POD_dismantle_anda_horde: "Dismantle [GetTitleByKey('e_anda').GetNameNoTier]"
  POD_dismantle_anda_horde_victory_desc: "[GetTitleByKey('e_anda').GetNameNoTier] will be dismantled, all vampires and [akuma|E] inside will be [deposed|E], and the Wheel of ages will turn towards the [first_age|E]."
- POD_dismantle_anda_horde_defeat_desc: "[GetTitleByKey('e_anda').GetNameNoTier] won't be dismantled, the attacker will lose [piety|E], and the Wheel of ages will turn towards the [sixth_age|E]."
+ POD_dismantle_anda_horde_defeat_desc: "[GetTitleByKey('e_anda').GetNameNoTier] won't be dismantled, the attacker will lose [piety|E], and the [Glossary('Wheel of Ages','podgloss.wheelofages')] will turn towards the [sixth_age|E]."
  msg_POD_dismantle_anda_horde_invalidated_message: "The [war.GetName] has ended: [defender.GetShortUIName] no longer control the title of [GetTitleByKey('e_anda').GetNameNoTier]."

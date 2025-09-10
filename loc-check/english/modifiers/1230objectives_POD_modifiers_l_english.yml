@@ -29,8 +29,8 @@
  eternal_consul_modifier_desc: "The ruler of Sinner Rome is a charming creature, who needs only a whisper to make most people darkest desires come true."
  lasombra_chronicles_modifier: "Lasombra Chronicles"
  lasombra_chronicles_modifier_desc: "The conclusive volume about the rise of the savior of [Clan|E] Lasombra, the bane of the [ashirra|E]."
- eternal_caliph_modifier: "Eternal Caliph"
- eternal_caliph_modifier_desc: "The victorious Eternal Caliph of the [ashirra|E] is a being of immense spiritual and temporal authority."
+ eternal_mullah_modifier: "Eternal Mullah"
+ eternal_mullah_modifier_desc: "The victorious Eternal Mullah of the [ashirra|E] is a being of immense spiritual and temporal authority."
  ashirra_castle_modifier: "[ashirra|E] Castel del Ombro"
  ashirra_castle_modifier_desc: "As [Clan|E] Lasombra comes to be dominated by the [ashirra|E], a new, more fitting, headquarters is being built."
  impressed_westerner_opinion: "Impressed Western Gangrel"             
@@ -160,4 +160,30 @@
  malkavian_demon_friend_modifier_powerup_tt: "Potency of the Demonic Ally [modifier|E] increases!"
 
  yama_king_modifier: "Yama King"
- yama_king_modifier_desc: "Gives access to [arcana_lifestyle|E].\n#weak This character is a Yama King, a powerful demonic being controlling a part of the cursed Yomi realm.#!"
+ yama_king_modifier_desc: "Gives access to [arcana_lifestyle|E].\nCharacter uses [dread|E] to fuel their abilities.\n#weak This character is a [Glossary('Yama King','podgloss.yamaking')], a powerful demonic being controlling a part of the cursed Yomi realm.#!"
+
+ land_of_faith_modifier: "Ma'at Personified"
+ land_of_faith_modifier_desc: "Increase acceptance chance for [faith|E] conversion by #P +50#!"
+ LAND_OF_FAITH_MODIFIER_REASON: "You are in the [GetModifier('land_of_faith_modifier').GetNameWithTooltip]: $VALUE|=P0$"
+
+ oblivions_most_loved_modifier: "[UmbraGlossary('oblivion')]'s Favorite"
+ oblivions_most_hated_modifier: "[UmbraGlossary('oblivion')]'s Bane"
+
+ cabiri_secured_future_modifier: "Secured Future"
+ pneuma_foci_modifier: "Pneuma Foci"
+
+ wutian_protector_of_knowledge_modifier: "Protector of Knowledge"
+ wutian_protector_of_knowledge_modifier_desc: "You no longer pay extra [static_stress|E] when getting [perks|E] from the opposite Tan tree."
+
+ wutian_protector_of_people_modifier: "Protector of the People"
+ wutian_protector_of_people_modifier_desc: "You no longer pay extra [static_stress|E] when getting [perks|E] from the opposite Tan tree."
+
+ wutian_protector_of_shen_modifier: "Protector of the Shen"
+ wutian_protector_of_shen_modifier_desc: "Increase Offer [vassalization|E] Acceptance: #P +50#!\nYou no longer pay extra [static_stress|E] when getting [perks|E] from the opposite Tan tree."
+ wutian_protector_of_shen_modifier_tt: "You are the [GetModifier('wutian_protector_of_shen_modifier').GetNameWithTooltip]: $VALUE|=+0$"
+
+ wutian_ninth_immortal: "Ninth Immortal"
+ wutian_ninth_immortal_desc: "Summoned Spirits will be more powerful.\nThis character ascended to the position of the Ninth Immortal, unlocking new powerful knowledge in the process."
+
+ nomenclature_master_modifier: "Master of Nomenclature"
+ nomenclature_master_modifier_desc: "Though unsuccessful in achieving Ra-Hekau, this character achieved something close.\nCan change any basic [trait|E] via 'Become the Person'"

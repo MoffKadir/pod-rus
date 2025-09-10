@@ -23,7 +23,7 @@
  is_a_akuma: "is an [akuma|E]"
  NOT_is_a_akuma: "is #Bold not#! an [akuma|E]"
  is_a_diablerist: "is a diablerist"
- is_a_thinblood: "is an thinblood"
+ is_a_thinblood: "is a thinblood"
  NOT_is_a_thinblood: "is #Bold not#! an thinblood"
  is_a_sorcerer: "is a sorcerer"
  wall_weak_enough_trigger_tooltip: "The wall must be weak enough"
@@ -111,16 +111,16 @@
  ANY_KILLED_CHARACTER_COUNT: "$PARAMETERS$ of killed character:"
  NOT_MY_STRESS_LEVEL_IS_AT_LEAST: "Your [stress_level|E] is #bold not#! [stress_i]$NUM|V0$ or above"
  
- worshipped_reborn_dynasty_prestige_level_1_trigger: "[holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] have a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)1' )] (#V 1#!)"
- worshipped_reborn_dynasty_prestige_level_2_trigger: "[holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] have a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)2' )] (#V 2#!)"
- worshipped_reborn_dynasty_prestige_level_3_trigger: "[holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] have a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)3' )] (#V 3#!)"
- worshipped_reborn_dynasty_prestige_level_4_trigger: "[holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] have a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)4' )] (#V 4#!)"
- worshipped_reborn_dynasty_prestige_level_5_trigger: "[holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] have a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)5' )] (#V 5#!)"
- worshipped_reborn_dynasty_prestige_level_6_trigger: "[holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] have a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)6' )] (#V 6#!)"
- worshipped_reborn_dynasty_prestige_level_7_trigger: "[holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] have a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)7' )] (#V 7#!)"
- worshipped_reborn_dynasty_prestige_level_8_trigger: "[holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] have a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)8' )] (#V 8#!)"
- worshipped_reborn_dynasty_prestige_level_9_trigger: "[holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] have a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)9' )] (#V 9#!)"
- worshipped_reborn_dynasty_prestige_level_10_trigger: "[holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] have a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)10' )] (#V 10#!)"
+ worshipped_reborn_dynasty_prestige_level_1_trigger: "The [holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] has a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)1' )] (#V 1#!)"
+ worshipped_reborn_dynasty_prestige_level_2_trigger: "The [holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] has a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)2' )] (#V 2#!)"
+ worshipped_reborn_dynasty_prestige_level_3_trigger: "The [holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] has a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)3' )] (#V 3#!)"
+ worshipped_reborn_dynasty_prestige_level_4_trigger: "The [holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] has a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)4' )] (#V 4#!)"
+ worshipped_reborn_dynasty_prestige_level_5_trigger: "The [holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] has a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)5' )] (#V 5#!)"
+ worshipped_reborn_dynasty_prestige_level_6_trigger: "The [holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] has a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)6' )] (#V 6#!)"
+ worshipped_reborn_dynasty_prestige_level_7_trigger: "The [holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] has a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)7' )] (#V 7#!)"
+ worshipped_reborn_dynasty_prestige_level_8_trigger: "The [holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] has a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)8' )] (#V 8#!)"
+ worshipped_reborn_dynasty_prestige_level_9_trigger: "The [holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] has a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)9' )] (#V 9#!)"
+ worshipped_reborn_dynasty_prestige_level_10_trigger: "The [holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] has a [dynasty_prestige_level|E] greater or equal to [GetDynastyPrestigeLevelName( '(int32)10' )] (#V 10#!)"
  
  #worshipped_reborn_has_pharaoh_mummy_legacy_1_trigger: "[holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] have [GetDynastyPerk('pharaoh_mummy_legacy_1').GetName] [dynasty_perk|E]"
  #worshipped_reborn_has_pharaoh_mummy_legacy_2_trigger: "[holder|E]'s [GetTrait('mummy').GetName( GetNullCharacter )] idol's [dynasty|E] have [GetDynastyPerk('pharaoh_mummy_legacy_2').GetName] [dynasty_perk|E]"
@@ -171,22 +171,17 @@
  NOT_current_year_trigger: "Current Year is #bold not#! $COMPARATOR$ $NUM|V$"
  days_of_continuous_peace: "Days of Continuous Peace is $COMPARATOR$ $NUM|V$"
 
+ POD_character_is_defeated_third: "[CHARACTER.GetFirstName] must be dead"
+ POD_character_is_defeated_third_not: "[CHARACTER.GetFirstName] is #bold not#! dead"
+
+ POD_vampire_is_defeated_third: "[CHARACTER.GetFirstName] must be dead or in [torpor|E]"
+ POD_vampire_is_defeated_third_not: "[CHARACTER.GetFirstName] is #bold not#! dead or in [torpor|E]"
+ #POD_vampire_is_defeated_third: "[CHARACTER.GetFirstName] is defeated #weak (dead or in [GetTrait('torpor').GetName(CHARACTER.Self)])#!"
+ #POD_vampire_is_defeated_third_not: "[CHARACTER.GetFirstName] is #bold not#! yet defeated #weak (dead or in [GetTrait('torpor').GetName(CHARACTER.Self)])#!"
+
  NOT_send_option_selected: "An option must be selected."
 
-
- HAS_TOTAL_BLOOD_RESERVES_GLOBAL: "Has at least #bold $VALUE|V0$#!$pod_hunger_i$Blood"
- HAS_TOTAL_BLOOD_RESERVES_FIRST: "You have at least #bold $VALUE|V0$#!$pod_hunger_i$Blood"
- HAS_TOTAL_BLOOD_RESERVES_THIRD: "[CHARACTER.GetShortUIName] has at least #bold $VALUE|V0$#!$pod_hunger_i$Blood"
- HAS_TOTAL_BLOOD_RESERVES_GLOBAL_NOT: "Has less than #bold $VALUE|V0$#!$pod_hunger_i$Blood"
- HAS_TOTAL_BLOOD_RESERVES_FIRST_NOT: "You have less than #bold $VALUE|V0$#!$pod_hunger_i$Blood"
- HAS_TOTAL_BLOOD_RESERVES_THIRD_NOT: "[CHARACTER.GetShortUIName] has less than #bold $VALUE|V0$#!$pod_hunger_i$Blood"
-
- HAS_TOTAL_PATHOS_RESERVES_GLOBAL: "Has at least #bold $VALUE|V0$#! Pathos"
- HAS_TOTAL_PATHOS_RESERVES_FIRST: "You have at least #bold $VALUE|V0$#! Pathos"
- HAS_TOTAL_PATHOS_RESERVES_THIRD: "[CHARACTER.GetShortUIName] has at least #bold $VALUE|V0$#! Pathos"
- HAS_TOTAL_PATHOS_RESERVES_GLOBAL_NOT: "Has less than #bold $VALUE|V0$#! Pathos"
- HAS_TOTAL_PATHOS_RESERVES_FIRST_NOT: "You have less than #bold $VALUE|V0$#! Pathos"
- HAS_TOTAL_PATHOS_RESERVES_THIRD_NOT: "[CHARACTER.GetShortUIName] has less than #bold $VALUE|V0$#! Pathos"
+ POD_title_cannot_receive_county_modifiers: "This title can't receive county modifiers"
 
  HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_GLOBAL: "Is at least [vampgeneration|E] #bold $VALUE|V0$#!"
  HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_FIRST: "You are at least [vampgeneration|E] #bold $VALUE|V0$#!"
@@ -197,14 +192,30 @@
 
  has_abyssal_mysticism_bloodmagic_trigger_flag: "Must complete the [journey|E] to unlock Abyssal Mysticism"
 
- HAS_TOTAL_RESOLVE_RESERVES_GLOBAL: "Has at least #bold $VALUE|V0$#!@demon_icon!Resolve"
- HAS_TOTAL_RESOLVE_RESERVES_FIRST: "You have at least #bold $VALUE|V0$#!@demon_icon!Resolve"
- HAS_TOTAL_RESOLVE_RESERVES_THIRD: "[CHARACTER.GetShortUIName] has at least #bold $VALUE|V0$#!@demon_icon!Resolve"
- HAS_TOTAL_RESOLVE_RESERVES_GLOBAL_NOT: "Has less than #bold $VALUE|V0$#!@demon_icon!Resolve"
- HAS_TOTAL_RESOLVE_RESERVES_FIRST_NOT: "You have less than #bold $VALUE|V0$#!@demon_icon!Resolve"
- HAS_TOTAL_RESOLVE_RESERVES_THIRD_NOT: "[CHARACTER.GetShortUIName] has less than #bold $VALUE|V0$#!@demon_icon!Resolve"
-
  COUNCILLOR_WITH_POSITION_SKILL_GLOBAL: "Has a [skill|E] of at least $VALUE|V0$ in their council position"
  COUNCILLOR_WITH_POSITION_SKILL_GLOBAL_NOT: "Does #N NOT#! have a [skill|E] of at least $VALUE|V0$ in their council position"
  
  any_councillor: "Any Councillor:"
+ any_powerful_vassal_all: "All [powerful_vassals|E]:"
+
+ POD_KNOWS_TRUE_NAME_OF_TRAIT_TRIGGER: "You have to know the True Name for [TRAIT.GetName(GetNullCharacter)]"
+ POD_KNOWS_TRUE_NAME_OF_TRIGGER: "You have to know the True Name for #V [Localize(Concatenate('POD_truename_', SCOPE.GetFlagName('true_name_scope')))]#!"
+ POD_know_all_nonstandard_true_names_trigger: "You know the True Names of [EmptyScope.ScriptValue('total_nonstandard_true_names_number')|V0] Flora, Animals and Metals #weak ([GetPlayer.MakeScope.ScriptValue('known_nonstandard_true_names_number')])#!"
+
+ PROVINCE_IS_IN_MIDDLE_KINGDOM: "[PROVINCE.GetName] must be inside the Middle Kingdom, or that limit must have been lifted"
+
+ NOT_game_concept_stress: "Your [stress|E] is above [stress_i]$NUM|V0$"
+
+ POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_GLOBAL: "Suffers from at least #V 1#! $pod_superficial_damage_with_box$"
+ POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_FIRST: "You suffer from at least #V 1#! $pod_superficial_damage_with_box$"
+ POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_THIRD: "[CHARACTER.GetShortUIName] suffers from at least #V 1#! $pod_superficial_damage_with_box$"
+ POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_GLOBAL_NOT: "Does #bold not#! suffer from at least #V 1#! $pod_superficial_damage_with_box$"
+ POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_FIRST_NOT: "You #bold don't#! suffer from at least #V 1#! $pod_superficial_damage_with_box$"
+ POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_THIRD_NOT: "[CHARACTER.GetShortUIName] does #bold not#! suffer from at least #V 1#! $pod_superficial_damage_with_box$"
+
+ POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_GLOBAL: "Suffers from at least #V 1#! $pod_aggravated_damage_with_box$"
+ POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_FIRST: "You suffer from at least #V 1#! $pod_aggravated_damage_with_box$"
+ POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_THIRD: "[CHARACTER.GetShortUIName] suffers from at least #V 1#! $pod_aggravated_damage_with_box$"
+ POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_GLOBAL_NOT: "This character does #bold not#! suffer from at least #V 1#! $pod_aggravated_damage_with_box$"
+ POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_FIRST_NOT: "You #bold don't#! suffer from at least #V 1#! $pod_aggravated_damage_with_box$"
+ POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_THIRD_NOT: "[CHARACTER.GetShortUIName] does #bold not#! suffer from at least #V 1#! $pod_aggravated_damage_with_box$"

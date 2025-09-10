@@ -26,10 +26,6 @@
  trait_mortal: "Mortal"
  trait_mortal_desc: "An ordinary human being. Such short lives..."
  
- trait_werewolf: "Werewolf"
- trait_werewolf_desc: "A shapechanging supernatural creature. They call themselves 'Garou'."
- trait_track_werewolf: "Rank"
- trait_track_werewolf_desc: "#bold Level 2:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 3:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +75%#!\n#italic Rank is a fundamental part of Garou society, and the fullest manifestation of the hierarchical nature of werewolves.#!"
  
  trait_mage: "Mage"
  trait_mage_desc: "Humans with awakened avatars that allow them to wield true magick and alter the fabric of reality."
@@ -47,8 +43,6 @@
  trait_track_fetter_resolved: "Fetter Resolved"
  trait_track_fetter_resolved_desc: "$pod_Fetters$ can also be resolved, meaning a wraith gains the strength to say goodbye to the things and people they loved in life. A wraith who manages to Resolve all of his $pod_Fetters$ can remain in the [UmbraGlossary('shadowlands')] indefinitely, but if such success bestows this benefit, it is rare to the point of myth."
  
- trait_spirit: "Spirit"
- trait_spirit_desc: "Spirits are disembodied entities that originate in, and usually dwell in, the [umbra|E] - for that reason, some mages call them the "Umbrood"."
  
  trait_wight: "Wight"
  trait_wight_desc: "A wight is a vampire who have lost the entirety of their morals. They are, for all intents and purposes, $pod_the_beast$ within themselves. A character who has fallen to Wassail can never be saved or again played."
@@ -78,6 +72,9 @@
  
  trait_caitiff: "Caitiff"
  trait_caitiff_desc: "Known as the clanless, are $pod_cainites$ that do not belong to any [Clan|E]."
+
+ trait_caitiff_laibon: "Nyayo"
+ trait_caitiff_laibon_desc: "Less a Lineage than a Classification, the Nyayo trace their origins to Mombasa as peerless warriors untethered to lineage, often dedicated to walking the same path as the Old Man."
  
  trait_cappadocian: "Cappadocian"
  trait_cappadocian_desc: "Detached scholars obsessed with the mysteries of death and the soul."
@@ -199,11 +196,57 @@
  
  trait_ventrue_raktasadhus: "Danava"
  trait_ventrue_raktasadhus_desc: "The Danava are a bloodline of the Ventrue [Clan|E] that is centered around the Indian subcontinent. Regal sages, ascetics and priests, the Danava are among the most respected vampires within the Caste system of the Indian Damned."
+
+ trait_chibo: "Chibo"
+ trait_chibo_desc: "The occultist and priest lineage of the [GetTrait('tzimisce').GetName(GetNullCharacter)] of [Glossary('Mikaboshi','podgloss.mikaboshi')], the Chibo are the bloody stars of magic."
+
+ trait_monomi: "Monomi"
+ trait_monomi_desc: "The warriors of the [GetTrait('tzimisce').GetName(GetNullCharacter)] of [Glossary('Mikaboshi','podgloss.mikaboshi')], the Monomi are the bloody stars of the sword."
+
+ trait_kishu: "Kishu"
+ trait_kishu_desc: "The assassins of the [GetTrait('tzimisce').GetName(GetNullCharacter)] of [Glossary('Mikaboshi','podgloss.mikaboshi')], the Kishu are the bloody stars of the dagger."
+
+ trait_kizoku: "Kizoku"
+ trait_kizoku_desc: "Born from a storyteller and plagued by nightmares, the Kizoku are the Kindred of the Rifts."
+
+ trait_bushi: "Bushi"
+ trait_bushi_desc: "Claiming to be the blood-bathed children of the Storm God of the Amatsukami, the Bushi are willful warriors without compare."
+
+ trait_kuntilanak: "Kuntilanak"
+ trait_kuntilanak_desc: "The curse of isolation manifesting as being stuck between the worlds of the living and the dead, the Kuntilanak are ghostly necromancers."
+
+ trait_sangun: "Sangun"
+ trait_sangun_desc: "The lords in the mountains of Korea, the Sangun are sovereigns that take beastly shapes."
+
+ trait_anh: "Anh"
+ trait_anh_desc: "Divergent from the [GetTrait('gangrel').GetName(GetNullCharacter)] but distinct from the Mariners, the Anh are the hidden stalkers of the oceans around Indonesia, Indochina, and Malaysia."
+
+ trait_banpaia: "Banpaia"
+ trait_banpaia_desc: "The progeny of a lost [GetTrait('tremere').GetName(GetNullCharacter)] expedition to the East, the Banpaia have found themselves as a new presence in East Asia's night world."
+
+ TRAIT_FLAG_DESC_can_create_gargoyles: "Can create #TOOLTIP:GAME_TRAIT,gargoyle,[GetNullCharacter] #L Gargoyles#!#!"
+
+ # Clan curse flags
+ TRAIT_FLAG_DESC_clan_curse_anh: "$glossary_clan_curse$: [domain|E] [counties|E] without a neighboring river or sea tile gain [GetModifier('POD_anh_clan_curse_modifier').GetNameWithTooltip]"
+ TRAIT_FLAG_DESC_clan_curse_brujah: "$glossary_clan_curse$: [Concept('beast','Frenzy')|E] is harder to resist"
+ TRAIT_FLAG_DESC_clan_curse_bushi: "$glossary_clan_curse$: Wounds from fire and sunlight are doubled"
+ #TRAIT_FLAG_DESC_clan_curse_chibo: "" # implement after asia map expansion
+ TRAIT_FLAG_DESC_clan_curse_gangrel: "$glossary_clan_curse$: Gain a bestial appearance upon [Concept('beast','Frenzy')|E]"
+ TRAIT_FLAG_DESC_clan_curse_kishu: "$glossary_clan_curse$: Cannot feed on animals"
+ TRAIT_FLAG_DESC_clan_curse_kuntilanak: "$glossary_clan_curse$: Cannot start [personal_schemes|E] with mortals"
+ TRAIT_FLAG_DESC_clan_curse_malkavian: "$glossary_clan_curse$: Permanent insanity traits"
+ TRAIT_FLAG_DESC_clan_curse_monomi: "$glossary_clan_curse$: Penalties from $pod_hunger_with_icon$ are tripled"
+ TRAIT_FLAG_DESC_clan_curse_sangun: "$glossary_clan_curse$: Forever [GetTrait('shy').GetName(GetNullCharacter)]"
+ TRAIT_FLAG_DESC_clan_curse_setite: "$glossary_clan_curse$: Wounds from sunlight are doubled"
+ TRAIT_FLAG_DESC_clan_curse_toreador: "$glossary_clan_curse$: Becomes [GetModifier('POD_toreador_bane_modifier').GetNameWithTooltip] on rare occasions"
+ TRAIT_FLAG_DESC_clan_curse_tremere: "$glossary_clan_curse$: Immediate [strong_hook|E] when [Concept('bloodbond','Blood Bound')|E]" # shared with banpaia
+ TRAIT_FLAG_DESC_clan_curse_ventrue: "$glossary_clan_curse$: $pod_feeding_restrictions$"
+ 
  
  trait_wanxian: "Wan Xian"
  trait_wankuei: "Wan Kuei"
  trait_kueijin: "Kuei-jin"
- trait_kueijin_desc: "Also called the Wan Kuei, Gui Ren, asuratizayya (in India), the "Hungry Dead" or simply the "Eastern Vampires".\nIt is said that the Kuei-jin are the corrupted descendants of the Wan Xian, the "Ten Thousand Heroes" chosen by the August Personage of Jade to guide and protect the universe in ancient history. The Wan Xian were originally chosen by tests of skill and courage, and fed on the ambient chi of the universe. However, they fell from grace, learning to feed off of the chi of living beings and corrupting the tests of worthiness." 
+ trait_kueijin_desc: "Also called the Wan Kuei, Gui Ren, asuratizayya (in India), the "Hungry Dead" or simply the "Eastern Vampires".\n\nIt is said that the Kuei-jin are the corrupted descendants of the Wan Xian, the "Ten Thousand Heroes" chosen by the [Glossary('August Personage of Jade','podgloss.augustpersonageofjade')] to guide and protect the universe in ancient history. The Wan Xian were originally chosen by tests of skill and courage, and fed on the ambient chi of the universe. However, they fell from grace, learning to feed off of the chi of living beings and corrupting the tests of worthiness.\n\nA Kuei-jin is "born" when their soul escapes from a [UmbraGlossaryLocalized('yomi_wan','Yomi Hell')] after their death. They organize themselves around political Courts and follow a [Glossary('Dharma','podgloss.dharma')] to find a way back to the Heavens." 
   
  trait_animalism: "Animalism"
  trait_animalism_desc: "A [discipline|E] that brings the vampire closer to their animalistic nature. This not only allows them to communicate with and gain dominance over creatures of nature, but gives them influence over $pod_the_beast$ itself.\n\nAnimalism is particularly common among the clans that are most removed from humanity, though many of its powers specifically target the Beasts of mortals and $pod_cainites$."
@@ -306,6 +349,12 @@
  trait_presenceadvanced: "Presence Advanced" 
  trait_presenceadvanced_desc: "Presence is the [discipline|E] of supernatural allure and emotional manipulation which allows Kindred to attract, sway, and control crowds.\n\nPresence softened God's curse upon $pod_cainites$ in that it makes the vampire become the center of attention. Either be fascinating, seducing, or intimidating those in close vicinity."
 
+ trait_kai: "Kai"
+ trait_kai_desc: "Kai is a [discipline|E] of inner power based around honour fostered within the users.\n\nThe user of Kai focuses their inner power and resolve into a weapon both martial and coercive."
+
+ trait_kaiadvanced: "Kai Advanced" 
+ trait_kaiadvanced_desc: "Kai is a [discipline|E] of inner power based around honour fostered within the users.\n\nThe user of Kai focuses their inner power and resolve into a weapon both martial and coercive."
+
  TRAIT_FLAG_DESC_can_intensify_herd_resonance: "Can change the intensity of their [POD_herd|E] members' [resonance|E]"
 
  trait_protean: "Protean"
@@ -320,6 +369,12 @@
  trait_quietusadvanced: "Quietus Advanced"
  trait_quietusadvanced_desc: "Quietus is the signature [discipline|E] of the Assamites that grants them influence over the blood of others.\n\nThough each of the Assamite castes possesses Quietus as an in-[Clan|E] [discipline|E], it is primarily known for being an assassin's tool in the hands of the Warrior caste, and the lower level powers are largely geared towards that end."
  
+ trait_rift: "Rift"
+ trait_rift_desc: "Rift is a [discipline|E] primarily practised by the [GetTrait('kizoku').GetName( GetNullCharacter )] that allows them to use their nightmares to manipulate reality in such ways that heavily benefit their own mobility and subterfuge."
+
+ trait_riftadvanced: "Rift Advanced" 
+ trait_riftadvanced_desc: "Rift is a [discipline|E] primarily practised by the [GetTrait('kizoku').GetName( GetNullCharacter )] that allows them to use their nightmares to manipulate reality in such ways that heavily benefit their own mobility and subterfuge."
+
  trait_serpentis: "Serpentis"
  trait_serpentis_desc: "Serpentis is the trademark [discipline|E] of the Followers of Set [Clan|E]. It primarily provides shapechanging abilities, though it also encompasses corruption and other characteristics associated with snakes.\n\nSerpentis has a near religious significance to the [Clan|E], although Kindred scientists presume a relation to the shape-shifting powers of Protean."
  
@@ -368,7 +423,7 @@
  trait_bloodsorcery_desc: "[bloodsorcery|E] refers to the magic performed by vampires, fueled by religious or occult practices and the power of [cainite|E] vitae.\n\nThrough the practice of [bloodsorcery|E], a [cainite|E] can summon fire, control the weather, and do many other things which are unnatural even by vampiric standards."
  trait_bloodsorcery_character_desc: "$bloodmagic_paths_display$\n\n$trait_bloodsorcery_desc$"
 
- bloodmagic_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] has knowledge of these $pod_bs_traditions$:[AddTextIf(GetScriptedGui('has_thaumaturgy_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tremere_icon! Thaumaturgy')][AddTextIf(GetScriptedGui('has_dur_an_ki_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@assamite_icon! Dur-An-Ki')][AddTextIf(GetScriptedGui('has_akhu_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@setite_icon! Akhu')][AddTextIf(GetScriptedGui('has_sadhana_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@ravnos_icon! Sadhana')][AddTextIf(GetScriptedGui('has_koldunic_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tzimisce_icon! Koldunic')]#!"
+ bloodmagic_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] has knowledge of these $pod_bs_traditions$:[AddTextIf(GetScriptedGui('has_thaumaturgy_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tremere_icon! Thaumaturgy')][AddTextIf(GetScriptedGui('has_dur_an_ki_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@assamite_icon! Dur-An-Ki')][AddTextIf(GetScriptedGui('has_akhu_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@setite_icon! Akhu')][AddTextIf(GetScriptedGui('has_sadhana_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@ravnos_icon! Sadhana')][AddTextIf(GetScriptedGui('has_koldunic_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tzimisce_icon! Koldunic')][AddTextIf(GetScriptedGui('has_sihr_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@sihr_icon! Sihr')]#!"
  
  TRAIT_FLAG_DESC_unlock_incorporeal_form: "Can shapeshift into an [GetModifier( 'POD_shapeshift_form_incorporeal_modifier' ).GetNameWithTooltip|L]"
 
@@ -386,7 +441,7 @@
  
  trait_sihr: "Sihr"
  trait_sihradvanced: "Sihr Advanced"
- trait_sihr_desc: "$bloodmagic_paths_display$\n\nSihr (meaning 'spell' in Arabic) is a [discipline|E] of [bloodsorcery|E] practiced widely in the Islamic world. In the Dark Ages, its difference with other forms of [bloodsorcery|E] was that its user needed to have a high Road rating in the Path of Community or Road of Heaven to perform the magic."
+ trait_sihr_desc: "$bloodmagic_paths_display$\n\nSihr is believed to be the only [bloodsorcery|E] tradition in line with Allah's will. It is different from other forms of [bloodsorcery|E] in that its power is derived from the caster's faith. Sihr is only taught to the [ashirra|E] and the [GetTrait('assamite').GetName( GetNullCharacter )] Muslims."
  
  trait_abyssmysticism: "Abyss Mysticism"
  trait_abyssmysticismadvanced: "Abyss Mysticism Advanced"
@@ -478,9 +533,11 @@
  trait_obfuscatediscipline: "Obfuscate"
  trait_obtenebrationdiscipline: "Obtenebration"
  trait_potencediscipline: "Potence"
- trait_presencediscipline: "Presence" 
+ trait_presencediscipline: "Presence"
+ trait_kaidiscipline: "Kai" 
  trait_proteandiscipline: "Protean"
  trait_quietusdiscipline: "Quietus"
+ trait_riftdiscipline: "Rift" 
  trait_serpentisdiscipline: "Serpentis"
  trait_spiritusdiscipline: "Spiritus"
  trait_temporisdiscipline: "Temporis"
@@ -627,7 +684,7 @@
  trait_gangrel_greek_desc: "The Greek Gangrel were an offshoot which began in the Dark Ages.\n\nGangrel have been hiding in the cities of man even before Babylon. As the centuries have passed, these Gangrel have focused on surviving in a different environment – one fraught with its own unique dangers."
 
  trait_anda: "Anda"
- trait_anda_desc: "The Anda are a bloodline of the Gangrel who exist among the Mongols. They themselves believe they are scions of Itugen, the earth goddess of Mongolian religion."
+ trait_anda_desc: "The Anda are a [cainite|E] bloodline of the Gangrel who exist among the Mongols. They themselves believe they are scions of Itugen, the earth goddess of Mongolian religion.\nTheir regional proximity to the [kuei_jin|E] has often resulted in skirmishes though the mortal Mongol conquests threaten to make the situation much worse."
   
  trait_ahrimane: "Ahrimane"
  trait_ahrimane_desc: "The Ahrimanes are a rare, all-female bloodline of Kindred that originally existed during the Dark Ages, headed by a woman called Adisa.\n\nThe story of the Ahrimanes, as they would tell it, begins with Adisa, a Valkyrje and daughter of Freyja, the Norse goddess."
@@ -638,23 +695,7 @@
  trait_harbringersofskulls: "Harbingers of Skulls"
  trait_harbringersofskulls_desc: ""
  
- trait_kinfolk: "Kinfolk"
- trait_kinfolk_desc: "Kinfolk, sometimes called Gallain or just Kin, are those humans and wild animals who are related to the Fera and are not prone to the Delirium, but who are not actual shapeshifters themselves."
- trait_werewolf_kinfolk: "Garou Kinfolk"
- trait_werewolf_kinfolk_desc: "Wolf-blooded, a descendant of the Garou."
- trait_gurahl_kinfolk: "Gurahl Kinfolk"
- trait_mokole_kinfolk: "Mokolé Kinfolk"
- trait_ajaba_kinfolk: "Ajaba Kinfolk"
- trait_bastet_kinfolk: "Bastet Kinfolk"
- trait_rokea_kinfolk: "Rokea Kinfolk"
- trait_corax_kinfolk: "Corax Kinfolk"
- trait_kitsune_kinfolk: "Kitsune Kinfolk"
- trait_ratkin_kinfolk: "Ratkin Kinfolk"
- trait_nagah_kinfolk: "Nagah Kinfolk"
- trait_nuwisha_kinfolk: "Nuwisha Kinfolk"
- trait_apis_kinfolk: "Apis Kinfolk"
- trait_camazotz_kinfolk: "Camazotz Kinfolk"
- trait_grondr_kinfolk: "Grondr Kinfolk"
+
  
  trait_true_faith: "True Faith"
  trait_truefaith: "True Faith"
@@ -665,7 +706,7 @@
  trait_beatific_desc: "A walking embodiment of their chosen God, this character is a miracle worker, a paragon of [true_faith|E] in a world of darkness. It gives them access to abilities some may call unnatural. But beware, sinful individuals can eventually be stripped of their divine gifts."
  trait_beatific_character_desc: "A walking embodiment of [ROOT.Char.GetHerHis] chosen God, [ROOT.Char.GetFirstNameNoTooltip] is a miracle worker, a paragon of [true_faith|E] in a world of darkness. It gives [ROOT.Char.GetHerHim] access to abilities some may call unnatural. But beware, sinful individuals can eventually be stripped of their divine gifts."
  trait_track_beatific: "Miracles"
- trait_track_beatific_desc: "#bold Level 1:#! Make $POD_demon_unearthbound_decision$ [decision|E] free. As a [character_interaction|E], allows you to banish a wraith/demon character to the [dark_kingdom|E]/[UmbraGlossary('abyss')]. Unlocks a special [GetBuilding('sanctified_area_01').GetName] building. \n#bold Level 2:#! Unlocks a [crafting_node|E] that adds [GetModifier('bless_modifier').GetNameWithTooltip] as well as a [modifier|E] based on [artifact|E] type. Gain immunity to murder. Gain immunity to delirium. You can no longer be possessed by [GetTrait('wraith').GetName( GetNullCharacter )].\n#bold Level 3:#! Targets will always accept faith conversion demands.\n#bold Level 4:#! As a [character_interaction|E], allows you to resolve every [Fetter|E] of a wraith. As a [character_interaction|E], allows you to kill a supernatural with low piety. You no longer need a hook to banish a spirit.\n#bold Level 5:#! As a [character_interaction|E], allows you to make a vampire mortal again or achieve Golconda. Can recruit [GetMaA('minion_of_the_divine').GetName] as [men_at_arms|E]. Allows you to spend willpower instead of taking wounds. Allows you to not die by wounds.\n#italic The strongest tool in the hands of the Faithful is the power of true Miracles. Entire religions are born from such displays of True Faith.#!"
+ trait_track_beatific_desc: "#bold Level 1:#! Make $POD_demon_unearthbound_decision$ [decision|E] free. As a [character_interaction|E], allows you to banish a wraith/demon character to the [dark_kingdom|E]/[UmbraGlossary('abyss')]. Unlocks a special [GetBuilding('sanctified_area_01').GetName] building. \n#bold Level 2:#! Unlocks a [crafting_node|E] that adds [GetModifier('bless_modifier').GetNameWithTooltip] as well as a [modifier|E] based on the [artifact|E]'s type. Gain immunity to murder. Gain immunity to delirium. You can no longer be possessed by $POD_splat_wraith_plural$.\n#bold Level 3:#! Targets will always accept faith conversion demands.\n#bold Level 4:#! As a [character_interaction|E], allows you to resolve every [Fetter|E] of a wraith. As a [character_interaction|E], allows you to kill a supernatural with low piety. You no longer need a hook to banish a spirit.\n#bold Level 5:#! As a [character_interaction|E], allows you to make a vampire mortal again or achieve Golconda. Can recruit [GetMaA('minion_of_the_divine').GetName] as [men_at_arms|E]. Allows you to spend willpower instead of taking wounds. Allows you to not die by wounds.\n#italic The strongest tool in the hands of the Faithful is the power of true Miracles. Entire religions are born from such displays of True Faith.#!"
 
  trait_holy_seal: "Holy Seal"
  trait_holy_seal_desc: "Relics and artifacts of divine power brutally, but expertly lodged into this miserable individual's wounds prevent them from healing."
@@ -827,9 +868,8 @@
  trait_yang_imbalanced_desc: "You turn to light and life."
  
  trait_dharma: "Dharma"
- trait_track_dharma_desc: "[SelectLocalization( IsInGame, 'trait_track_dharma_desc_in_game', 'trait_track_dharma_desc_in_wiki' )]"
- trait_track_dharma_desc_in_wiki: "You gain experience by completing faith unique quests"
- trait_track_dharma_desc_in_game: "#Bold You #weak (player)#! get [GetPlayer.MakeScope.ScriptValue('POD_kueijin_dharma_xp_passive')|1V] Dharma [trait_level_track_xp|E] every #V 2#! years (#underline #TOOLTIP:trait_track_dharma_desc_in_game_tt Breakdown#!#!)#!\nInsight is a measure of how close you are to advancing your Dharma. When the [trait_level_track_xp|E] reaches the first level, your dharma level increases with the exception of dharma 10.\n\nInsight can be gained by doing certain actions based on your [faith|E] or [religion|E] #X #underline;TOOLTIP:trait_track_dharma_desc_insight_active Visible Here#! #! #bold or#! every #V 2#! years based on passive dharma insight gain #X #underline;TOOLTIP:trait_track_dharma_desc_insight_passive Visible Here#! #! ."
+ trait_dharma_player_desc: "#medium #V [ROOT.Char.GetFirstNamePossessiveNoTooltip]#! [Glossary('Dharma','podgloss.dharma')] is [ROOT.Char.GetFaith.GetName].#!\n\n#medium;italic #V You#! gain [Glossary('Dharma','podgloss.dharma')] [trait_level_track_xp|E] from these sources:#!\n[GetPlayer.MakeScope.GetScriptValueDesc('POD_kueijin_dharma_xp_active_loca')]\n\n#medium;italic #V You#! also gain #V passive#! [Glossary('Dharma','podgloss.dharma')] [trait_level_track_xp|E] every #V 2#! years:#!\nPassive experience: #TOOLTIP:trait_track_dharma_desc_in_game_tt #L;P +[GetPlayer.MakeScope.ScriptValue('POD_kueijin_dharma_xp_passive')|2]#! #L (see tooltip)#!#!\n#TOOLTIP:trait_track_dharma_desc_insight_passive #L All potential sources of passive experience (see tooltip)#!#!"
+ trait_track_dharma_desc: "Insight is a measure of how close you are to advancing your [Glossary('Dharma','podgloss.dharma')]. When the [trait_level_track_xp|E] reaches the first level, your dharma level increases with the exception of dharma 10."
  trait_track_dharma_desc_in_game_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('POD_kueijin_dharma_xp_passive')]"
  DHARMA_PASSIVE_BOUND_WRAITHS: "Bound $POD_splat_wraith_plural$ #weak (1 per each)#!"
  DHARMA_PASSIVE_DREAD_ABOVE_50: "[dread|E] above 50"
@@ -848,7 +888,6 @@
  DHARMA_PASSIVE_KNOWLEDGE_OF_THOUSAND_CRANES_MOTHER: "You have [GetModifier('knowledge_of_thousand_cranes_mother_modifier').GetNameWithTooltip]"
  DHARMA_PASSIVE_WISDOM_OF_BLACK_PEARL_MISTRESS: "You have [GetModifier('wisdom_of_black_pearl_mistress_modifier').GetNameWithTooltip]"
  DHARMA_PASSIVE_GODBODIES: "You have [GetModifier('godbodies_modifier').GetNameWithTooltip]"
- DHARMA_PASSIVE_REVISIONIST_REALITY: "You have [GetPerk('revisionist_reality_perk').GetName(GetPlayer)]"
  DHARMA_PASSIVE_DAH: "You have [GetModifier('dah_modifier').GetNameWithTooltip]"
  DHARMA_PASSIVE_WAN_XIAN: "The $pod_wan_kuei$ have been redeemed"
  DHARMA_PASSIVE_HUN_AND_PO: "You have [GetTrait('hun_and_po').GetName(GetPlayer)]"
@@ -857,6 +896,43 @@
  DHARMA_PASSIVE_DHARMA9: "You have [GetTrait('dharma9').GetName(GetPlayer)]"
  DHARMA_PASSIVE_HARDER: "Due to the [fifth_age|E], advancing dharma is much harder"
  DHARMA_PASSIVE_IMPOSSIBLE: "Due to the [sixth_age|E], advancing dharma is impossible"
+ DHARMA_PASSIVE_DEVIL_FIST_STACKS: "You have [GetPlayer.MakeScope.ScriptValue('demon_arts_devil_fist_modifier_stacks')] [GetModifier('demon_arts_devil_fist_modifier').GetNameWithTooltip]"
+ DHARMA_PASSIVE_BLACK_WIND_STACKS: "You have [GetPlayer.MakeScope.ScriptValue('demon_arts_black_wind_modifier_stacks')] [GetModifier('demon_arts_black_wind_modifier').GetNameWithTooltip]"
+ DHARMA_PASSIVE_IRON_MOUNTAIN_STACKS: "You have [GetPlayer.MakeScope.ScriptValue('demon_arts_iron_mountain_modifier_stacks')] [GetModifier('demon_arts_iron_mountain_modifier').GetNameWithTooltip]"
+ DHARMA_PASSIVE_DEMON_REGALIA_STACKS: "You have [GetPlayer.MakeScope.ScriptValue('demon_arts_demon_regalia_modifier_stacks')] [GetModifier('demon_arts_demon_regalia_modifier').GetNameWithTooltip]"
+ DHARMA_PASSIVE_SOUL_ARTS_JOYFUL_SPARK_OF_UNION_PERK: "You have [GetPerk('soul_arts_joyful_spark_of_union_perk').GetName(GetPlayer)]"
+ DHARMA_PASSIVE_SOUL_ARTS_FLOWING_CANAL_OF_HELL_PERK: "You have [GetPerk('soul_arts_flowing_canal_of_hell_perk').GetName(GetPlayer)]"
+ DHARMA_PASSIVE_SOUL_ARTS_WAX_SEAL_OF_THE_DEMON_KING_PERK: "You have [GetPerk('soul_arts_wax_seal_of_the_demon_king_perk').GetName(GetPlayer)]"
+ DHARMA_PASSIVE_SOUL_ARTS_DARK_CULTIVATION_PERK: "You have [GetPerk('soul_arts_dark_cultivation_perk').GetName(GetPlayer)]"
+ DHARMA_PASSIVE_SOUL_ARTS_INFERNAL_ROAD_PERK: "You have [GetPerk('soul_arts_infernal_road_perk').GetName(GetPlayer)]"
+ DHARMA_PASSIVE_SOUL_ARTS_BREAKING_THE_DRAGONS_NECK_PERK: "You have [GetPerk('soul_arts_breaking_the_dragons_neck_perk').GetName(GetPlayer)]"
+
+ #TODO reactivate and clean for Asia culture
+ DHARMA_PASSIVE_AINU_HIGH_DEVELOPMENT: "#warning This part is waiting for All Under Heaven DLC for proper activation.#! Total [development|E] of Ainu culture provinces in your [realm|E] exceeds #V 50#!"
+ DHARMA_PASSIVE_HIGH_DEVELOPMENT: "Total [development|E] of provinces in your [realm|E] exceeds #V 100#!"
+ DHARMA_PASSIVE_ILL_COURTIER: "At least one of your courtiers is sick"
+ DHARMA_PASSIVE_LOW_LEGITIMACY: "Your legitimacy is either #V $legitimacy_level_0_name$#! or #V $legitimacy_level_1_name$#!"
+ DHARMA_PASSIVE_HAVE_TYRANNY: "You have at least 1 [tyranny|E]"
+ DHARMA_PASSIVE_COASTAL_CAPITAL: "Your capital is on the coast"
+ DHARMA_PASSIVE_HAN_HIGH_DEVELOPMENT: "Total [development|E] of [GetCultureByKey('han').GetName] provinces in your [realm|E] exceeds #V 50#!"
+
+ DHARMA_PASSIVE_GARDEN_OF_SAMCHOK_01: "You have [GetBuilding('garden_of_samchok_01').GetName]"
+ DHARMA_PASSIVE_TEMPLE_OF_THE_LOTUS_POND_IN_WINTER_01: "You have [GetBuilding('temple_of_the_lotus_pond_in_winter_01').GetName]"
+
+ DHARMA_PASSIVE_KI_CHUAN: "You have the [GetPODArtifactName('ki_chuan')]"
+ DHARMA_PASSIVE_RED_BOOK_OF_THE_IRON_BRIDGE: "You have the [GetPODArtifactName('red_book_of_the_iron_bridge')]"
+ DHARMA_PASSIVE_THE_BLOOD_SUTRAS: "You have [GetPODArtifactName('the_blood_sutras')]"
+ DHARMA_PASSIVE_THE_MIDNIGHT_JEWEL: "You have [GetPODArtifactName('the_midnight_jewel')]"
+ DHARMA_PASSIVE_THE_HOLLOW_REED: "You have [GetPODArtifactName('the_hollow_reed')]"
+ DHARMA_PASSIVE_BOOK_OF_THE_NINTH_IMMORTAL: "You have the [GetPODArtifactName('book_of_the_ninth_immortal')]"
+ DHARMA_PASSIVE_THE_CELESTIAL_NAIL: "You have [GetPODArtifactName('the_celestial_nail')]"
+ DHARMA_PASSIVE_SEVEN_SCRIPTURES_OF_IMMORTAL_INIQUITY: "You have the [GetPODArtifactName('seven_scriptures_of_immortal_iniquity')]"
+ DHARMA_PASSIVE_DELECTATIONS_OF_THE_FLOWERS_OF_BLOOD: "You have [GetPODArtifactName('delectations_of_the_flowers_of_blood')]"
+
+ DHARMA_PASSIVE_BLACK_LOTUS_TEMPLE_01: "You have [GetBuilding('black_lotus_temple_01').GetName]"
+ DHARMA_PASSIVE_MT_MERU_01: "You have [GetBuilding('mt_meru_01').GetName]"
+
+ DHARMA_XP_DOMICILE_MULT: "Due to your [domicile_buildings|E] #weak (multiplicative)#!"
 
  trait_track_dharma_desc_insight_active: "[GetPlayer.MakeScope.GetScriptValueDesc('POD_kueijin_dharma_xp_active_loca')]"
  trait_track_dharma_desc_insight_passive: "[GetPlayer.MakeScope.GetScriptValueDesc('POD_kueijin_dharma_xp_passive_loca')]"
@@ -865,8 +941,9 @@
  DHARMA_ACTIVE_DISCOVER_SECRET: "Discover a [secret|E]"
  DHARMA_ACTIVE_TORTURE: "Torture someone"
  DHARMA_ACTIVE_DECLEAR_WAR: "Declare a War"
- DHARMA_ACTIVE_COMMIT_HEINOUS_ACT: "Commit an heinous act (torture for example)"
+ DHARMA_ACTIVE_COMMIT_HEINOUS_ACT: "Commit a heinous act (torture for example)"
  DHARMA_ACTIVE_ADOPT_NEW_KJ: "Adopt a newly awakened $POD_splat_kueijin$"
+ DHARMA_ACTIVE_DRINK_BLOOD: "Drinking blood"
  DHARMA_ACTIVE_MEDITATE: "Meditate"
  DHARMA_ACTIVE_LOSE_RELATION: "Lose a [relation|E]"
  DHARMA_ACTIVE_KILL_RELATION: "Kill a character you have a [relation|E] with"
@@ -875,56 +952,84 @@
  DHARMA_ACTIVE_FEAST: "Start a feast"
  DHARMA_ACTIVE_FORM_PACT: "Form a pact with a $POD_splat_spirit$"
  DHARMA_ACTIVE_WIN_A_WAR: "Win a war"
- DHARMA_ACTIVE_SPEND_PERK_POINT: "Spend a [perk|E] point via an unique [decision|E]"
+ DHARMA_ACTIVE_SPEND_PERK_POINT: "Spend a [perk|E] point via a unique [decision|E]"
  DHARMA_ACTIVE_KILL: "Kill someone"
- DHARMA_ACTIVE_SPEND_5_BLOOD: "Spend 5 blood points via an unique [decision|E]"
- DHARMA_ACTIVE_SPEND_1000_PIETY: "Spend 1000 [piety|E] via an unique [decision|E]"
+ DHARMA_ACTIVE_SPEND_5_BLOOD: "Spend 5 blood points via a unique [decision|E]"
+ DHARMA_ACTIVE_SPEND_1000_PIETY: "Spend 1000 [piety|E] via a unique [decision|E]"
+
+ DHARMA_ACTIVE_KILL_MALE_JAPANESE: "#warning This part is waiting for All Under Heaven DLC for proper activation.#! Kill a [kuei_jin|E] male character with Yamato [culture|E]"
+ DHARMA_ACTIVE_SEDUCE_FEMALE_JAPANESE: "#warning This part is waiting for All Under Heaven DLC for proper activation.#! Seduce a [kuei_jin|E] female character with Yamato [culture|E]"
+ DHARMA_ACTIVE_IMPROVE_DUCAL_BUILDING: "Build or improve a [duchy_building|E]"
+ DHARMA_ACTIVE_KILL_RAVNOS: "Kill a [GetTrait('ravnos').GetName(GetNullCharacter)] $POD_splat_vampire$"
+ DHARMA_ACTIVE_CONVERT_HENGEYOKAI: "#warning This part is waiting for proper activation and isn't available yet.#! Convert an Hengeyokai ($glossary_fera$)."
+ DHARMA_ACTIVE_UNLEASH_EPIDEMIC: "Unleash an [epidemic|E] #weak Starting one with Poxes Shintai count.#!"
+ DHARMA_ACTIVE_DECLEAR_WAR_AGAINST_KJ: "Declare a war against a $POD_splat_kueijin$"
+ DHARMA_ACTIVE_TORTURE_KJ: "Torture a $POD_splat_kueijin$"
+ DHARMA_ACTIVE_CONVERT_ANDA: "#warning This part is waiting for proper activation and isn't available yet.#! Convert a [GetFaithByKey('viayasaq').GetName] character."
+ DHARMA_ACTIVE_DECLEAR_WAR_AGAINST_OTHER_AKUMA: "Declare a war against an [akuma|E] of a different [faith|E]"
+ DHARMA_ACTIVE_TORTURE_OTHER_AKUMA: "Torture an [akuma|E] of a different [faith|E]"
+ DHARMA_ACTIVE_UNLOCK_OR_USE_STORM_SHINTAI: "Unlock Storm Shintai [perks|E] or use them"
+ DHARMA_ACTIVE_CONVERT_NAGAH: "#warning This part is waiting for proper activation and isn't available yet.#! Convert a [GetTrait('nagah').GetName(GetNullCharacter)]"
+ DHARMA_ACTIVE_DECLEAR_WAR_AGAINST_PENANGALLAN: "Declare a war against a #TOOLTIP:PENANGALLAN_EXPLANATION Penangallan#!"
+ PENANGALLAN_EXPLANATION: "Character of [GetReligionByKey('thrashingdragons_religion').GetName] [religion] or [GetFaithByKey('brillant_coals').GetName] [faith|E]"
+ DHARMA_ACTIVE_CONVERT_SORCERER_OR_MAGE: "#warning This part is waiting for proper activation and isn't available yet.#! Convert a [GetTrait('mage').GetName(GetNullCharacter)] or [GetTrait('sorcerer').GetName(GetNullCharacter)]"
+ DHARMA_ACTIVE_HUNT: "Start an hunt"
  
  trait_dharma10: "Dharma 10"
- trait_dharma10_desc: "Who transcended their Dharma and reached the door of the Hundred Clouds."
- trait_dharma10_stayed_desc: "Called as Arhat, who reached the final step on the Road Back, and gained Enlightenment. Many don't hesitate and enter the Hundred Clouds the moment they are able to, but this one handful linger on in the mortal world."
- 
+ trait_dharma10_desc: "One who transcended their [Glossary('Dharma','podgloss.dharma')] and reached the door of the [Glossary('Hundred Clouds','podgloss.hundredclouds')]."
+ trait_dharma10_stayed_desc: "Also called [Glossary('Arhat','podgloss.arhat')], one who reached the final step on the Road Back, and gained Enlightenment. Many don't hesitate and enter the [Glossary('Hundred Clouds','podgloss.hundredclouds')] the moment they are able to, but a handful linger on in the mortal world."
+ TRAIT_FLAG_DESC_warning_dharma10_flag: "\n#X Will downgrade to [GetTrait('dharma9').GetName(GetNullCharacter)] on any [mental_break|E]#!"
+
  trait_dharma9: "Dharma 9"
- trait_dharma9_desc: "Called as Bodhisattvas, who reached the final stages of their chosen Dharmas, usually needing 1000 years to achieve this state. Can feed from the ambient Chi."
+ trait_dharma9_player_desc: "$trait_dharma_player_desc$\n\n\n$trait_dharma9_desc$"
+ trait_dharma9_desc: "Also called [Glossary('Bodhisattvas','podgloss.bodhisattva')], who reached the final stages of their chosen [Glossary('Dharma','podgloss.dharma')], usually needing 1000 years to achieve this state. Can feed from the ambient Chi."
  trait_track_dharma9: "Insight"
  trait_track_dharma9_desc: "$trait_track_dharma_desc$"
  
  trait_dharma8: "Dharma 8"
+ trait_dharma8_player_desc: "$trait_dharma_player_desc$\n\n\n$trait_dharma8_desc$"
  trait_dharma8_desc: "Mostly taking the role of Ancestor, usually needing 500 years to achieve this state. Can feed from the ambient Chi."
  trait_track_dharma8: "Insight"
  trait_track_dharma8_desc: "$trait_track_dharma_desc$"
  
  trait_dharma7: "Dharma 7"
+ trait_dharma7_player_desc: "$trait_dharma_player_desc$\n\n\n$trait_dharma7_desc$"
  trait_dharma7_desc: "Mostly taking the role of Mandarin (Or Brahmin for Hindu [GetTrait('kueijin').GetName( GetNullCharacter )]), also the minimal prerequisite to be an Ancestor, usually needing 250 years to achieve this state. Can feed from the ambient Chi."
  trait_track_dharma7: "Insight"
  trait_track_dharma7_desc: "$trait_track_dharma_desc$"
  
  trait_dharma6: "Dharma 6"
+ trait_dharma6_player_desc: "$trait_dharma_player_desc$\n\n\n$trait_dharma6_desc$"
  trait_dharma6_desc: "Mostly taking the role of Jina (Or Ksatriya for Hindu [GetTrait('kueijin').GetName( GetNullCharacter )]) or Mandarin (Or Brahmin for Hindu [GetTrait('kueijin').GetName( GetNullCharacter )]), usually needing 100 years to achieve this state. Can feed from the ambient Chi."
  trait_track_dharma6: "Insight"
  trait_track_dharma6_desc: "$trait_track_dharma_desc$"
  
  trait_dharma5: "Dharma 5"
+ trait_dharma5_player_desc: "$trait_dharma_player_desc$\n\n\n$trait_dharma5_desc$"
  trait_dharma5_desc: "Mostly taking the role of Jina (Or Ksatriya for Hindu [GetTrait('kueijin').GetName( GetNullCharacter )]), usually needing 25 years to achieve this state. Can feed on Chi by breath."
  trait_track_dharma5: "Insight"
  trait_track_dharma5_desc: "$trait_track_dharma_desc$"
  
  trait_dharma4: "Dharma 4"
+ trait_dharma4_player_desc: "$trait_dharma_player_desc$\n\n\n$trait_dharma4_desc$"
  trait_dharma4_desc: "Mostly taking the role of Jina (Or Ksatriya for Hindu [GetTrait('kueijin').GetName( GetNullCharacter )]), usually needing 5 years to achieve this state. Feeding on Chi by blood."
  trait_track_dharma4: "Insight"
  trait_track_dharma4_desc: "$trait_track_dharma_desc$"
  
  trait_dharma3: "Dharma 3"
+ trait_dharma3_player_desc: "$trait_dharma_player_desc$\n\n\n$trait_dharma3_desc$"
  trait_dharma3_desc: "Disciple (Or Vaisya for Hindu [GetTrait('kueijin').GetName( GetNullCharacter )]) with low dharma, usually needing 3 years to achieve this state. Feeding on Chi by blood."
  trait_track_dharma3: "Insight"
  trait_track_dharma3_desc: "$trait_track_dharma_desc$"
  
  trait_dharma2: "Dharma 2"
+ trait_dharma2_player_desc: "$trait_dharma_player_desc$\n\n\n$trait_dharma2_desc$"
  trait_dharma2_desc: "Disciple (Or Vaisya for Hindu [GetTrait('kueijin').GetName( GetNullCharacter )]) with low dharma, usually needing 1 year to achieve this state. Feeding on Chi by blood."
  trait_track_dharma2: "Insight"
  trait_track_dharma2_desc: "$trait_track_dharma_desc$"
  
  trait_dharma1: "Dharma 1"
+ trait_dharma1_player_desc: "$trait_dharma_player_desc$\n\n\n$trait_dharma1_desc$"
  trait_dharma1_desc: "Disciple (Or Vaisya for Hindu [GetTrait('kueijin').GetName( GetNullCharacter )]) with low dharma. Feeding on Chi by blood."
  trait_track_dharma1: "Insight"
  trait_track_dharma1_desc: "$trait_track_dharma_desc$"
@@ -936,6 +1041,19 @@
  trait_chihmei_desc: "A barely sentient creature dominated by its hunger for Chi and forced to live on flesh. A character who has fallen to chih-mei can't be played."
  trait_chihmei_dharma_desc: "By using a ritual, a Chih-mei can be restored to the Dharmic Balance and civilized, reawakening their higher consciousness (Hun) and turned into productive undead under a true Dharma."
  
+ trait_chi_art_feng_shui: "Feng Shui"
+ trait_chi_art_feng_shui_desc: "The Chi Arts are different from other arts, newly developed as an advanced use of pure Chi. They are also the furthest from the Hungry Dead's existence; to cultivate them requires a mentor.\n\nFeng Shui is an ancient geomantic art that specializes in the proper and auspicious alignment of buildings, graves, and interiors, in accordance with heavenly emanations and earthly configurations, allowing the Chi to flow freely in order to harmonize individuals with their surrounding environment."
+ trait_chi_art_obligation: "Obligation"
+ trait_chi_art_obligation_desc: "The Chi Arts are different from other arts, newly developed as an advanced use of pure Chi. They are also the furthest from the Hungry Dead's existence; to cultivate them requires a mentor.\n\nObligation is an art that allows a [kuei_jin|E] to exert control over others. It is a callback to the glory of the ancient Wan Xian and their authority that stemmed from a mandate from the [Glossary('August Personage of Jade','podgloss.augustpersonageofjade')] himself. While they have lost this favor, some still manage to inspire or dominate the spirits of those around them."
+ trait_chi_art_tapestry: "Tapestry"
+ trait_chi_art_tapestry_desc: "The Chi Arts are different from other arts, newly developed as an advanced use of pure Chi. They are also the furthest from the Hungry Dead's existence; to cultivate them requires a mentor.\n\nTapestry is the chi art of using dragon lines to their full potential. Through practice of Tapestry, the vampire attunes himself to Yin and Yang forces in the wind, water, and soil, then manipulates those forces for a variety of efforts."
+ trait_chi_art_prana: "Prana"
+ trait_chi_art_prana_desc: "The Chi Arts are different from other arts, newly developed as an advanced use of pure Chi. They are also the furthest from the Hungry Dead's existence; to cultivate them requires a mentor.\n\nPrana is the chi art of using both sides of Chi, Yin and Yang. A practicioner can attune themselves to the energies of death and life respectively, or use their confluence to heal wounds."
+ trait_chi_art_kiai: "Kiai"
+ trait_chi_art_kiai_desc: "The Chi Arts are different from other arts, newly developed as an advanced use of pure Chi. They are also the furthest from the Hungry Dead's existence; to cultivate them requires a mentor.\n\nKiai is the chi art of channeling the wrath of the Demon through the voice, an imposing technique that has a variety of applications on the battlefield."
+ trait_chi_art_tzu_wei: "Tzu Wei"
+ trait_chi_art_tzu_wei_desc: "The Chi Arts are different from other arts, newly developed as an advanced use of pure Chi. They are also the furthest from the Hungry Dead's existence; to cultivate them requires a mentor.\n\nTzu Wei is the chi art of reading and manipulating horoscopes. When [kuei_jin|E] practice Tzu Wei, they can shape destiny itself and bend the forces of luck to their will."
+
  trait_shih: "Shih"
  trait_shih_desc: "Legends claim that the origins of the Shih lie within Yi in the Shang Dynasty. They walk alone in darkness, combating the forces of the Thousand Hells with nothing but the power of their hands and their will. Over 3,000 years ago, Shih first stepped forward to do battle with the shen. Though the proud houses of the Shih are no more, their traditions live on and the telling of their beginnings is one of their most revered tales."
  
@@ -975,10 +1093,12 @@
  trait_vampire_ill: "Vampiric Ill"
  
  trait_akuma: "Akuma"
- trait_akuma_desc: "The Akuma, or Devil-eaten, are individuals who have abandoned virtue and have cast their lot in with the Yama Kings. See also [akuma|E]"
+ trait_akuma_desc: "The Akuma, or Devil-eaten, are individuals who have abandoned virtue and have cast their lot in with the [Glossary('Yama Kings','podgloss.yamaking')]. See also [akuma|E]"
  
  trait_mummy: "Mummy"
  trait_mummy_desc: "Mummies, also called the Undying or Reborn, are immortals whose bodies have been ritualistically preserved."
+ trait_track_mummy: "Memories"
+ trait_track_mummy_desc: "To gain memories, you either have to be in your [POD_homeland|E] or construct specific [domicile_buildings|E]"
  
  trait_shemsuheru: "Shemsu-Heru"
  trait_shemsuheru_desc: "There has to be a first, and among Immortals that honour is accorded to the Shemsu-Heru, the friends or companions of Horus. Created by Isis and her sister, originally to follow and serve her son Horus, they are the oldest Undying in the world."
@@ -990,11 +1110,17 @@
  trait_wutian: "Wu T'ian"
  trait_wutian_desc: "The Wu T'ian, the Family of Heaven, were students of great sages, received the elixir of eternal life from the Eight Immortals in return for their eternal service to the Tao."
  trait_wukuei: "Wu Kuei"
- trait_wukuei_desc: "The Wu Kuei, the Family of Demons, are the immortals of [UmbraGlossaryLocalized('yomi_wan','Yomi')], renegade Wu T’ian that sold their souls to hell for safety in the dawning [sixth_age|E]."
+ trait_wukuei_desc: "The Wu Kuei, the Family of Demons, are the immortals of [UmbraGlossaryLocalized('yomi_wan','Yomi Hell')], renegade Wu T’ian that sold their souls to hell for safety in the dawning [sixth_age|E]."
  
  trait_asekh_sen: "Asekh-Sen"
  trait_asekh_sen_desc: "Not full immortals, these beings usually resemble shambling corpses possessed by a Bane that fills the reanimated being with seething hatred for all life."
  
+ trait_integrity: "Integrity"
+ trait_integrity_desc: "Integrity is a generalized measure of how well a Mummy aligns with their judges' wishes. Mummies with low integrity can be judged quite harshly (or worse) when they enter the [UmbraGlossary('shadowlands')] to prepare for their next life."
+ trait_track_integrity: "Integrity"
+ trait_track_integrity_desc: "#medium Integrity is a virtue type system.\n\n#bold Gain Integrity by:#!\n$BULLET_WITH_TAB$Killing with a valid reason: #P +1#!\n$BULLET_WITH_TAB$Giving gifts: #P +2#!\n$BULLET_WITH_TAB$Healing: #P +3#!\n\n#bold Lose Integrity by:#!\n$BULLET_WITH_TAB$Killing without a valid reason: #N -3#!\n$BULLET_WITH_TAB$Committing a heinous act (e.g. torture): #N -2#!\n$BULLET_WITH_TAB$Committing theft: #N -1#!#!"
+ 
+
  trait_automaton: "Automaton"
  trait_automaton_desc: "An artificial humanoid body."
  trait_effigy: "Effigy"
@@ -1038,8 +1164,10 @@
  trait_haint_desc: "Haints enter the [UmbraGlossary('shadowlands')] with their Shadows in control, much like Mortwights do. Unlike Mortwights, Haints are defined, not by their death, but by their life. Before their death, they had been reduced to an almost inhuman lifestyle while still among the Quick."
  
  trait_dhampyr: "Dhampyr"
- trait_dhampyr_desc: "Dhampyrs, also called Shade Walker or Twilight Children, are the children of [GetTrait('kueijin').GetName( GetNullCharacter )]."
-  
+ trait_dhampyr_desc: "Dhampyrs, also called Shade Walkers or Twilight Children, are the (rare) children of [GetTrait('kueijin').GetName( GetNullCharacter )]. Blessed with long lives and uncanny luck, they are however hampered by their constant state of half death and the expectations of service put upon them by their [kuei_jin|E] parent."
+ trait_golden_children: "Golden Child"
+ trait_golden_children_desc: "The Golden Children (or Jin Hai) were once the spiritually blessed children of the Ten Thousand Warriors of legend. As they were mortals, they were heroes of the people until they were massacred by their corrupt [kuei_jin|E] parents and reduced to the state of dhampyr."
+    
  trait_arcanos_argos: "Argos"
  trait_arcanos_argos_desc: "Users of Argos can manipulate, navigate, and travel through the [UmbraGlossary('pod_realm_tempest')]." 
  
@@ -1091,12 +1219,6 @@
  trait_arcanos_kinesis: "Kinesis"
  trait_arcanos_kinesis_desc: "Wraiths gifted with Kinesis can manipulate and control inanimate objects."
 
- trait_lament: "Lament"
- trait_lament_desc: "A Lament is the method that a person uses to project their spirit, determining exactly how a character comes into contact with the world of ghosts."
- trait_projector: "Projector"
- trait_projector_desc: "Projectors are living humans that, through one method or another, can throw off their flesh and become ghosts."
- trait_ghost: "Ghost"
- trait_ghost_desc: "The dead who haven't reached the [UmbraGlossaryLocalized('shadowlands','Underworld')]."
  trait_barghest: "Barghest"
  trait_barghest_desc: "Barghests, also called bloodhounds, are wraiths who have been transformed into monstrous shapes and “lobotomised” by the grafting of a specially prepared muzzle of Stygian iron to their [Corpus|E]."
  trait_ferryman: "Ferryman"
@@ -1116,101 +1238,7 @@
  trait_kuei: "Kuei"
  trait_kuei_desc: "A Kuei is a wraith from the [UmbraGlossary('dark_kingdom_of_jade')] that has not been buried with the proper rites and traditions of the area. They become, for want of a better term, walking Shadows. These wraiths are highly dangerous and wander the [UmbraGlossary('shadowlands')] aimlessly, hunting for Pathos like a starving animal hunts for food."
  
- #Trait Groups
- trait_shapeshifter: "Shapeshifter"
 
- trait_ajaba: "Ajaba"
- trait_ajaba_desc: "The werehyenas are Gaia's warriors in Africa, a continent without a wolf population. While the War of Rage did not reach Africa, the Ajaba were all but destroyed by infighting and their rivalry with the Bastet."
- trait_track_ajaba: "Rank"
- trait_track_ajaba_desc: "#bold Level 2:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 3:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +75%#!\n#italic The Ajaba have always recognized Cunning and Ferocity as forms of renown, but they also value Infamy, something that many of their members are concerned about the long term impact of.#!"
- trait_bastet: "Bastet"
- trait_bastet_desc: "The werecats have many different tribes, like the Garou, though each claims a different species of wild cat. They are obsessed with secret knowledge and are always pursuing and hoarding it. Many are great magicians, others are great warriors, but they are rarely pack animals and generally work alone. Some of their tribes suffered greatly during the War of Rage."
- trait_track_bastet: "Rank"
- trait_track_bastet_desc: "#bold Level 2:#! Gain access to the [UmbraGlossary('spirit_wilds')] for non Swara.\n#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Bastet recognize a hierarchy. It does not denote absolute authority as it would among the Garou, but rather polite deferment and acknowledgment of experience. Bastet titles always have a social meaning outside of their rank.#!"
- trait_corax: "Corax"
- trait_corax_desc: "The wereravens are Gaia's messengers, spies and scouts who patrol the skies, always on the lookout for danger. They are terrible chatterboxes and will tell what they have seen to any who care to listen. They escaped persecution in the War of Rage by aiding the Garou, and maintain the most cordial relations with the werewolves of all Fera."
- trait_track_corax: "Rank"
- trait_track_corax_desc: "#bold Level 1:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 2:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 3:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +75%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +100%#!\n#italic Corax gain renown as Ragabash Garou, though they tend to favor their particular brand of Wisdom. Glory is often neglected by the fragile Corax.#!"
- trait_gurahl: "Gurahl"
- trait_gurahl_desc: "The werebears are Gaia's healers, tied to the Earth with a stronger bond than any other Fera. Many Garou believe the Gurahl are extinct, killed during the War of Rage when they would not give up the secret of restoring life to the dead."
- trait_track_gurahl: "Rank"
- trait_track_gurahl_desc: "#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Gurahl recognize three types of renown: Honor, for devotion and respect; Succor, for acts of healing, purification or giving aide to others; and Wisdom, for restoring, preserving or uncovering knowledge or gaining a deeper understanding of oneself.#!"
- trait_kitsune: "Kitsune"
- trait_kitsune_desc: "The werefoxes are magicians and politicians, holding together the society of Asian shapeshifters. Unique among the Fera, the Kitsune are found only in the Beast Courts of the Middle Kingdom, living mostly in China and Japan. With Luna's blessing, the Kitsune also acted as assassins of the corrupt authorities in mortal society, as court wizards and thieves in order to protect the Heavenly Mandate."
- trait_track_kitsune: "Tails"
- trait_track_kitsune_desc: "#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 7:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 8:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 9:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Kitsune all start with one tail. Gaia grants them an additional one each time they gain rank. Kitsune with nine tails have achieved immortality, and are respected for their power and virtue.#!"
- trait_mokole: "Mokolé"
- trait_mokole_desc: "The werecrocodiles remember the age of the Dragon Kings, when terrible reptiles ruled the earth. They remember everything that has ever happened and keep that knowledge to themselves, only speaking to the properly respectful. Their Crinos forms more closely resemble dinosaurs or dragons than crocodiles, sometimes leading to them being called weredragons."
- trait_track_mokole: "Rank"
- trait_track_mokole_desc: "#bold Level 2:#! Gain access to the [UmbraGlossary('spirit_wilds')].\n#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Mokolé use the same Renown system as the Garou, revering the Tenets of Honor, Wisdom, and Glory. The degree to which an individual Mokolé follows each tenet is determined entirely by their Aspect (Auspice).#!"
- trait_nagah: "Nagah"
- trait_nagah_desc: "Weresnakes that originated in India. Most (if not all) of the other changing breeds believe them to be dead, but they are very much still around. Serving as the "Judges of Gaia," the Nagah fill the role of both silent judges and hidden executioners for the Changing Breeds."
- trait_track_nagah: "Rank"
- trait_track_nagah_desc: "#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Because the nests are nomadic, Nagah have to search for the Seshas to gain renown from them. The Sesha, after hearing of the deeds of the nest, decides which points of renown are given to them. This decides the rank and, in turn, the gifts a Nagah will learn. The renown systems uses Glory, Honor and Wisdom.#!"
- trait_nuwisha: "Nuwisha"
- trait_nuwisha_desc: "The werecoyotes are Gaia's teachers, though like their totem, Old Man Coyote, they prefer to teach exclusively through pranks. Thanks to a prank they pulled on Luna, they no longer have any Rage, though they have a closer affinity with the [umbra|E] than any other Fera."
- trait_track_nuwisha: "Rank"
- trait_track_nuwisha_desc: "#bold Level 1:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 2:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 3:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +75%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +100%#!\n#italic Unlike most Fera, who achieve Rank through honor and the favor of their Tribe, Nuwisha gain Renown through teaching. Instead of Honor, they have Humor - and the more humorous they prove to their deity, a form of Coyote incarnate, the more Renown they obtain.#!"
- trait_ratkin: "Ratkin"
- trait_ratkin_desc: "The wererats once watched over humanity, keeping their numbers from ever becoming too great. However, the Garou usurped that role, and the Ratkin have hated them ever since. They fight firmly for the Wyld and take every opportunity to undermine technology."
- trait_track_ratkin: "Rank"
- trait_track_ratkin_desc: "#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Ratkin colonies have a strict internal hierarchy. A Rat King rules the colony, attended by packs of courtiers — usually all rodens Ratkin. Below the courtiers, rodens wererats have priority. Metis hold the middle ground, acting as guards and wardens and hoping to one day become courtiers.#!"
- trait_rokea: "Rokea"
- trait_rokea_desc: "Even the sea has its protectors. The weresharks patrol the depths of the sea and are rarely seen by land dwellers."
- trait_track_rokea: "Rank"
- trait_track_rokea_desc: "#bold Level 2:#! Gain access to the [UmbraGlossary('spirit_wilds')].\n#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Rokea accept three forms of Renown: Valor, referring to a wereshark's fighting prowess and courage in defense of a Grotto; Harmony, meaning the ability of a wereshark to accept his place in the world and act in accordance with it, and Innovation, which is awarded to weresharks who, through new ideas, help the race defend the Sea and fight off Qyrl's brood.#!"
- trait_apis: "Apis"
- trait_apis_desc: "Wereaurochs or "Moon-bulls", the Apis were in charge of cultivation and agriculture, and known as the "Matchmakers of Gaia." They were driven to extinction by the Garou in the War of Rage."
- trait_track_apis: "Rank"
- trait_track_apis_desc: "#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic The Apis were relatively social creatures who lived in herds of between six and twenty-four individuals. A mighty bull ruled each herd and defended his title against all challengers. This bull was in charge of protecting the herd and leading it in battle.#!"
- trait_camazotz: "Camazotz"
- trait_camazotz_desc: "The Camazotz were werebats, Gaia's nocturnal and southern hemisphere messengers, counterparts to the Corax."
- trait_track_camazotz: "Rank"
- trait_track_camazotz_desc: "#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic The Camazotz were a highly social Breed who lived in egalitarian swarms of between a dozen and a hundred members. They often lived in caverns alongside their bat Kinfolk. While inclined to secrecy, they attempted to maintain friendly and open relations with other shapeshifters.#!"
- trait_grondr: "Grondr"
- trait_grondr_desc: "The wereboars were located in Northern Europe. Their task was to cleanse land; they were called Gaia's groomers. They were driven to extinction by the Garou during the War of Rage; their ancestor-spirits fell to the Wyrm and became the monstrous Skull Pigs."
- trait_track_grondr: "Rank"
- trait_track_grondr_desc: "#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic The Grondr were an active and aggressive breed. They lived in pack-like groups called Sounders, each lead by a king or queen who held their title by defeating all who challenged them in ritual combat. Each Sounder ruler was equal to all others; they had no hierarchy beyond individual Sounders.#!"
-#  trait_ananasi: "Ananasi"
-#  trait_ananasi_desc: "The werespiders are not children of Gaia, but rather children of Queen Ananasa, a powerful spirit child of the Weaver. They are considered alien and disturbing by other Fera, and not without reason: their animal form is a horde of creeping spiders, they possess no Rage, and they fuel their powers with blood stolen from humans. Their name is drawn from the West African trickster/god Anansi."
-#  trait_track_ananasi: "Rank"
-#  trait_track_ananasi_desc: "#bold Level 4:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 5:#! [umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#bold Level 6:#! [umbra_aptitude|E]: $pod_grace_i$#P +35%#!\n#italic Ananasi may gain renown in three categories, which correspond to the three members of the Triat; they try to follow all three, no matter their faction, to gain a deeper understanding of the "Great Web" of existence. The categories are Cunning (for the Wyrm), Obedience (for the Weaver) and Wisdom (for the Wyld).#!"
- 
- trait_hakken: "Hakken"
- trait_hakken_desc: "The werewolves of Japan, who uphold the philosophies of bushido."
- trait_kumo: "Kumo"
- trait_kumo_desc: "The werespiders who have fallen into the thrall of the Wyrm."
- trait_tengu: "Tengu"
- trait_tengu_desc: "The wereravens of the Far East, who serve as scouts and heralds of the Beast Courts."
- trait_okuma: "Okuma"
- trait_okuma_desc: "The Okuma were a tribe of Gurahl who lived in southeast Asia, including the northern parts of India and as far East as Japan. Their animal Kinfolk included sun bears, moon bears, and giant pandas. Unlike other Gurahl tribes, who worship Gaia as their mother and Luna as the source of their shapeshifting powers, the Okuma also had a special relationship with Helios. Each Okuma’s fur was marked with patches of bright color."
- trait_zhong_lung: "Zhong Lung"
- trait_zhong_lung_desc: "Distant cousins of the Mokolé, the weredragons believe themselves to be the great descendants of the Ebon Dragon and the Scarlet Queen."
- trait_nezumi: "Nezumi"
- trait_nezumi_desc: "The wererats of Asia, who are running a Low War against humanity."
- trait_same_bito: "Same-Bito"
- trait_same_bito_desc: "The weresharks, who consider themselves far more refined than the Rokea."
- 
- trait_ozuzo: "Ozuzo"
- trait_ozuzo_desc: "The Ozuzo are Ajaba that have fallen to the Wyrm."
- trait_histpah: "Histpah"
- trait_histpah_desc: "Histpah are Liar-Kings, Wyrm-corrupted Bastet."
- trait_buzzards: "Buzzards"
- trait_buzzards_desc: "Buzzards are Lost Children, Wyrm-tainted Corax."
- trait_purgers: "Purgers"
- trait_purgers_desc: "The Purgers are fallen Gurahl."
- trait_mnetics: "Mnetics"
- trait_mnetics_desc: "Mnetics are Eaters of Secrets, Fallen Mokolé."
- trait_nokhomi: "Nokhomi"
- trait_nokhomi_desc: "Nokhomi also called the Bitter-Grins are the fallen Nuwisha."
- trait_mad_destroyers: "Mad Destroyers"
- trait_mad_destroyers_desc: "Mad Destroyers are the fallen Ratkin."
- trait_balefire_sharks: "Balefire Sharks"
- trait_balefire_sharks_desc: "Balefire Sharks are Wyrm tainted Rokea."
- trait_xibalan: "Xibalan"
- trait_xibalan_desc: "The Xibalan were Camazotz that had dedicated themselves to the Wyrm through the tainted aspect of their patron, Bat."
- trait_skull_pig: "Skull Pig"
- trait_skull_pig_desc: "Skull Pigs are a kind of creature associated the Wyrm that were created from Grondr Kin that turned to its service in order to survive the War of Rage."
  
  trait_psychic: "Psychic"
  trait_psychic_desc: "This character possesses one or more psychic powers (also referred to as psychic phenomena or simply psychic abilities)."
@@ -1219,7 +1247,7 @@
  trait_sorcerer: "Sorcerer"
  trait_sorceress: "Sorceress"
  trait_rune_wise: "Rune Mage"
- trait_sorcerer_desc: "This character uses the linear paths of hedge magic."
+ trait_sorcerer_desc: "This character uses the linear paths of hedge magic.\nSorcerers work within the confines of reality's rules to make great things happen but they are still a far cry from Mages, those willworkers that can shape reality itself."
  trait_theurgist: "Theurgist"
  trait_theurgist_desc: "This character practices a specific branch of sorcery based on Jewish mysticism or the teachings of Esoteric Christianity."
  
@@ -1269,36 +1297,16 @@
  trait_demonology_kueijin_desc: "Demonology is the summoning and mastery of Banes, Spectres and other wicked spirits. Many [GetTrait('kueijin').GetName( GetNullCharacter )] practice this to some extent or another. Such practice is even one of the specialties of the Devil-Tiger Dharma. Who consider it a natural part of their religious practice, and who have produced a literature on the practical aspects of this subject as extensive in its own specialized way as the magical libraries of the Wu Lung and the Order of Hermes. Demonology is perfectly legal, though it is often considered in exceedingly poor taste outside of Devil Tiger circles."
 
  trait_hun_and_po: "Hun and P'o"
- trait_hun_and_po_desc: "Rumor says that one or more Salubri actually awakened their Hun and Po to become full-fledged $pod_wan_kuei$..."
+ trait_hun_and_po_desc: "Rumor says that one or more Salubri actually awakened their Hun and Po to become full-fledged $pod_wan_kuei$... though it is contested and very much turned to derision by the [kuei_jin|E] themselves.\nIf it turns out to be true however, there might be a way for [cainite|E]s to learn the powers of their Eastern cousins."
 
  TRAIT_FLAG_DESC_immortality: "#P @goodhealth_icon!Immortal#!"
+ TRAIT_FLAG_DESC_cannot_heal_naturaly: "#N @neardeath_icon!Cannot heal naturally#!"
+ TRAIT_FLAG_DESC_torpor_heal: "Every 2 years, either convert [POD_aggravated_damage|E] into [POD_superficial_damage|E] or heal [POD_superficial_damage|E]"
  
- TRAIT_FLAG_DESC_can_hurt_spirit: "Can imprison, torture, execute or physically hurt spirits during [single_combat_duel_plural|E]"
- TRAIT_FLAG_DESC_may_hurt_spirit: "Can imprison, torture, execute or physically hurt spirits during [single_combat_duel_plural|E] #weak (with [umbra|E] travel cost)#!"
- TRAIT_FLAG_DESC_is_spirit: "As a spirit, can't be imprisoned, tortured, executed or physically hurt without some specific powers"
- HAS_TRAIT_WITH_IS_SPIRIT_FLAG_TRIGGER: "Is a spirit, can't be imprisoned, tortured, executed or physically hurt without some specific powers"
- NOT_HAS_TRAIT_WITH_IS_SPIRIT_FLAG_TRIGGER: "Is #bold not#! a spirit, can be imprisoned, tortured, executed or physically hurt"
- I_HAVE_TRAIT_WITH_IS_SPIRIT_FLAG_TRIGGER: "You a spirit, can't be imprisoned, tortured, executed or physically hurt without some specific powers"
- NOT_I_HAVE_TRAIT_WITH_IS_SPIRIT_FLAG_TRIGGER: "You are #bold not#! a spirit, can be imprisoned, tortured, executed or physically hurt"
- THEY_HAVE_TRAIT_WITH_IS_SPIRIT_FLAG_TRIGGER: "[CHARACTER.GetShortUIName|V] is a spirit, can't be imprisoned, tortured, executed or physically hurt without some specific powers"
- NOT_THEY_HAVE_TRAIT_WITH_IS_SPIRIT_FLAG_TRIGGER: "[CHARACTER.GetShortUIName|V] is #bold not#! a spirit, can be imprisoned, tortured, executed or physically hurt"
+
  
  TRAIT_FLAG_DESC_yin_imbalanced: "Allows you to devour more Yin Chi than the Yin Virtue limit without negative effects"
  TRAIT_FLAG_DESC_yang_imbalanced: "Allows you to devour more Yang Chi than the Yang Virtue limit without negative effects"
- TRAIT_FLAG_DESC_umbra_aptitude_15: "[umbra_aptitude|E]: $pod_grace_i$#P +75%#!"
- TRAIT_FLAG_DESC_umbra_aptitude_10: "[umbra_aptitude|E]: $pod_grace_i$#P +50%#!"
- TRAIT_FLAG_DESC_umbra_aptitude_9: "[umbra_aptitude|E]: $pod_grace_i$#P +45%#!"
- TRAIT_FLAG_DESC_umbra_aptitude_8: "[umbra_aptitude|E]: $pod_grace_i$#P +40%#!"
- TRAIT_FLAG_DESC_umbra_aptitude_7: "[umbra_aptitude|E]: $pod_grace_i$#P +35%#!"
- TRAIT_FLAG_DESC_umbra_aptitude_6: "[umbra_aptitude|E]: $pod_grace_i$#P +30%#!"
- TRAIT_FLAG_DESC_umbra_aptitude_5: "[umbra_aptitude|E]: $pod_grace_i$#P +25%#!"
- TRAIT_FLAG_DESC_umbra_aptitude_4: "[umbra_aptitude|E]: $pod_grace_i$#P +20%#!"
- TRAIT_FLAG_DESC_umbra_aptitude_3: "[umbra_aptitude|E]: $pod_grace_i$#P +15%#!"
- TRAIT_FLAG_DESC_umbra_aptitude_2: "[umbra_aptitude|E]: $pod_grace_i$#P +10%#!"
- TRAIT_FLAG_DESC_umbra_aptitude_1: "[umbra_aptitude|E]: $pod_grace_i$#P +5%#!"
- TRAIT_FLAG_DESC_umbra_sense_10: "[umbra_sense|E]: $pod_grace_i$#P +10#!"
- TRAIT_FLAG_DESC_umbra_sense_7: "[umbra_sense|E]: $pod_grace_i$#P +7#!"
- TRAIT_FLAG_DESC_umbra_sense_5: "[umbra_sense|E]: $pod_grace_i$#P +5#!"
  
  trait_permanent_maimed: "Permanent Maimed"
  trait_permanent_one_eyed: "Permanent One-Eyed"
@@ -1365,18 +1373,15 @@
  trait_track_scourge_desc: "Scourge Severity"
  TRAIT_FLAG_DESC_bypass_mental_defenses: "Can bypass strong mental defenses"
 
- TRAIT_FLAG_DESC_immunity_to_the_delirium: "Immunity to the Delirium"
- TRAIT_FLAG_DESC_regeneration: "Remove all wounds and maims every three months"
+ TRAIT_FLAG_DESC_immunity_to_the_delirium: "Immune to the Delirium"
+ TRAIT_FLAG_DESC_regeneration: "Heal every year instead of every 2 years. Every 3 months, heal all maims."
  TRAIT_FLAG_DESC_resurrection: "Allows resurrection if character dies from unnatural causes"
  
  TRAIT_FLAG_DESC_capture_immunity: "You can't be imprisoned during [sieges|E] or [raids|E] anymore"
  TRAIT_FLAG_DESC_avoid_combat_wound: "Less chance of gaining wounds or being killed in combat."
  TRAIT_FLAG_DESC_strong_mental_defenses: "Immune to hostile mental [character_interaction|E]."
 
- trait_judge_of_maat: "Judge of Ma'at"
- trait_judge_of_maat_desc: "The Judges of Ma'at are a group of beings that enforce the cosmic principle of Ma'at and judge the advancement of Balance of a Mummy when they die and return to Anubis who then guides the mummy towards the Judges."
- TRAIT_FLAG_DESC_access_to_charms: "Gains access to [charms_lifestyle|E]"
- TRAIT_FLAG_DESC_access_to_planetarygifts: "Gains access to [planetarygifts_lifestyle|E]"
+ TRAIT_FLAG_DESC_cannot_shapeshift: "#X @warning_icon! Cannot shapeshift#!"
 
  trait_azhi_dahaka_scholar: "Azhi Dahaka Scholar"
  trait_azhi_dahaka_scholar_desc: "This character seeks insight into Azhi Dahaka, an enlightened and ultimate state of being possibly brought on by extensive use of the discipline Vicissitude."
@@ -1401,33 +1406,103 @@
  trait_pod_crafter_3_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is an master of the crafting arts."
  trait_track_forging: "Forging"
  trait_track_forging_desc: "Experience in Forging, the higher it is, the better the [artifacts|E] crafted"
- POD_terrain_crafting_forging_advantage: "Additional [crafting_complexity|E] actions during the Forging process"
  trait_track_brewing: "Brewing"
  trait_track_brewing_desc: "Experience in Brewing, the higher it is, the better the [artifacts|E] crafted"
- POD_terrain_crafting_brewing_advantage: "Additional [crafting_complexity|E] actions during the Brewing process"
  trait_track_enhancing: "Enhancing"
  trait_track_enhancing_desc: "Experience in Enhancing, the higher it is, the better the [artifacts|E] crafted"
- POD_terrain_crafting_enhancing_advantage: "Additional [crafting_complexity|E] actions during the Enhancing process"
-
- POD_terrain_crafting_forging_min_combat_roll: "[crafting_potential|E]"
  
  trait_ashen_adventurer: "Ashen Adventurer"
  trait_ashen_adventurer_desc: "A wandering adventurer driven by the search for riches, fame and blood."
  trait_track_ashen_ambassador: "[ashen_ambassador|E]"
  trait_track_ashen_ambassador_desc: "#bold You can gain experience in this trait track by using the Ambassadorial Visit character interaction.#! \n Sworn to a foreign ruler, this diplomat roams the land to find opportunities to benefit their patron."
- POD_terrain_ashen_ambassador_improved_advantage: "Landless only: Higher success chances in Ambassadorial Duties options"
- POD_terrain_ashen_ambassador_request_improved_advantage: "Landless only: Using the Support from your Patron character interaction will cost you less Ashen Ambassador trait experience"
+ 
  trait_track_ashen_grandmaster: "[ashen_grandmaster|E]"
- trait_track_ashen_grandmaster_desc: "#bold This experience can be used to improve your military order as a landless character. It can be gained by completing martial or war landless contracts.#! \nThis character leads a band of soldiers that are formalized into an organization with enough structure and common purpose to be considered a military order."
+ trait_track_ashen_grandmaster_desc: "#bold This experience can be used to improve your military order as a landless vampire or your strategies as a landless [kuei_jin|E]. It can be gained by completing martial or war landless contracts.#! \nCainites have a tradition of soldiers bands that are formalized into an organization with enough structure and common purpose to be considered a military order.\nIn the east, [kuei_jin|E] are more dedicated to improve their martial mastery in a strategical sense."
  trait_track_ashen_caravan: "[ashen_caravan|E]"
  trait_track_ashen_caravan_desc: "#bold This experience can be gained by completing transport contracts.#! \nAshen Caravan Masters are those few characters that truly know how to navigate the deadly roads of the World of Darkness, and sell their expertise for those in need."
- POD_terrain_ashen_ambassador_request_improved_min_combat_roll: "Landless only: New camp positions unlocked"    
- POD_terrain_ashen_ambassador_request_improved_max_combat_roll: "Your travel options costs are divided by"    
+ 
  trait_track_ashen_cult: "[ashen_cult|E]"
  trait_track_ashen_cult_desc: "#bold You can improve this trait track by using the decision of the same name. It allows you to interact with the county your domicile is stationed in various ways via an event.#! \n Prophets, heresiarchs, miracles workers... the World of Darkness is full of people, be they mortals or not, that are looking to the truth and willing to believe in a charismatic individual delivering (their version of) it."
- POD_terrain_ashen_ambassador_improved_min_combat_roll: "Your maximum number of [ghoul|E]s is increased by"    
- POD_terrain_ashen_ambassador_improved_max_combat_roll: "Your maximum number of [POD_herd|E] is increased by"    
  
+
+ trait_POD_wounded_shared_desc: "[POD_health_track|E]:\n$POD_trait_health_track$\n"
+ # 4 empty health track boxes for NullCharacter tooltips since that's the minimum
+ trait_POD_wounded_nocharacter_shared_desc: "[POD_health_track|E]:\n$POD_undamaged_box$ $POD_undamaged_box$ $POD_undamaged_box$ $POD_undamaged_box$\n"
+ POD_trait_health_track: "[TraitWoundBox('(CFixedPoint)1')] [TraitWoundBox('(CFixedPoint)2')] [TraitWoundBox('(CFixedPoint)3')] [TraitWoundBox('(CFixedPoint)4')] [TraitWoundBox('(CFixedPoint)5')] [TraitWoundBox('(CFixedPoint)6')] [TraitWoundBox('(CFixedPoint)7')] [TraitWoundBox('(CFixedPoint)8')] [TraitWoundBox('(CFixedPoint)9')] [TraitWoundBox('(CFixedPoint)10')] [TraitWoundBox('(CFixedPoint)11')] [TraitWoundBox('(CFixedPoint)12')] [TraitWoundBox('(CFixedPoint)13')] [TraitWoundBox('(CFixedPoint)14')] [TraitWoundBox('(CFixedPoint)15')] [TraitWoundBox('(CFixedPoint)16')] [TraitWoundBox('(CFixedPoint)17')] [TraitWoundBox('(CFixedPoint)18')] [TraitWoundBox('(CFixedPoint)19')] [TraitWoundBox('(CFixedPoint)20')]"
+ POD_character_health_track_line1: "[CharacterWoundBox('(CFixedPoint)1')][CharacterWoundBox('(CFixedPoint)2')][CharacterWoundBox('(CFixedPoint)3')][CharacterWoundBox('(CFixedPoint)4')][CharacterWoundBox('(CFixedPoint)5')][CharacterWoundBox('(CFixedPoint)6')][CharacterWoundBox('(CFixedPoint)7')][CharacterWoundBox('(CFixedPoint)8')][CharacterWoundBox('(CFixedPoint)9')][CharacterWoundBox('(CFixedPoint)10')]"
+ POD_character_health_track_line2: "[CharacterWoundBox('(CFixedPoint)11')][CharacterWoundBox('(CFixedPoint)12')][CharacterWoundBox('(CFixedPoint)13')][CharacterWoundBox('(CFixedPoint)14')][CharacterWoundBox('(CFixedPoint)15')][CharacterWoundBox('(CFixedPoint)16')][CharacterWoundBox('(CFixedPoint)17')][CharacterWoundBox('(CFixedPoint)18')][CharacterWoundBox('(CFixedPoint)19')][CharacterWoundBox('(CFixedPoint)20')]"
+ POD_damage_box: "[Concept('POD_superficial_damage','@health_track_damage_icon!')]"
+ POD_aggravated_damage_box: "[Concept('POD_aggravated_damage','@health_track_aggravated_damage_icon!')]"
+ POD_undamaged_box: "[Concept('POD_health_track','@health_track_empty_icon!')]"
+
+# V20 - Healing and Health
+# (trait xp thresholds 0, 20, 40, 60, 80, 100)
+
+ trait_POD_wounded_0: "Bruised"
+ trait_POD_wounded_0_none_desc: "This character has received some scrapes, but they're not physically impaired yet.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
+ trait_POD_wounded_0_desc: "[ROOT.Char.GetFirstNameNoTooltip] has received some scrapes, but [ROOT.Char.GetSheHe]'s not physically impaired yet.\n\n$trait_POD_wounded_shared_desc$"
+
+ trait_POD_wounded_1: "Hurt"
+ trait_POD_wounded_1_none_desc: "This character has received some superficial wounds.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
+ trait_POD_wounded_1_desc: "[ROOT.Char.GetFirstNameNoTooltip] has received some superficial wounds.\n\n$trait_POD_wounded_shared_desc$"
+
+ trait_POD_wounded_2: "Injured"
+ trait_POD_wounded_2_none_desc: "This character suffers from various injuries.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
+ trait_POD_wounded_2_desc: "[ROOT.Char.GetFirstNameNoTooltip] suffers from various injuries.\n\n$trait_POD_wounded_shared_desc$"
+
+ trait_POD_wounded_3: "Wounded"
+ trait_POD_wounded_3_none_desc: "This character suffers significant damage.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
+ trait_POD_wounded_3_desc: "[ROOT.Char.GetFirstNameNoTooltip] suffers significant damage.\n\n$trait_POD_wounded_shared_desc$"
+ 
+ trait_POD_wounded_4: "Mauled"
+ trait_POD_wounded_4_none_desc: "This character is badly injured and can barely function.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
+ trait_POD_wounded_4_desc: "[ROOT.Char.GetFirstNameNoTooltip] is badly injured and can barely function.\n\n$trait_POD_wounded_shared_desc$"
+
+ trait_POD_wounded_5: "Crippled"
+ trait_POD_wounded_5_none_desc: "This character is catastrophically injured. It's a miracle they're standing at all.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
+ trait_POD_wounded_5_desc: "[ROOT.Char.GetFirstNameNoTooltip] is catastrophically injured. It's a miracle [ROOT.Char.GetSheHe]'s standing at all.\n\n$trait_POD_wounded_shared_desc$"
+ 
+ trait_track_POD_wounded: "Impairment"
+ trait_track_POD_wounded_desc: "Impairment is based on the percentage of filled boxes in your health track."
+ trait_track_wounded_1: "$trait_track_POD_wounded$"
+ trait_track_wounded_1_desc: "$trait_track_POD_wounded_desc$"
+ trait_track_wounded_2: "$trait_track_POD_wounded$"
+ trait_track_wounded_2_desc: "$trait_track_POD_wounded_desc$"
+ trait_track_wounded_3: "$trait_track_POD_wounded$"
+ trait_track_wounded_3_desc: "$trait_track_POD_wounded_desc$"
+
+
+ trait_mod_guardian: "Mod Guardian"
+ trait_mod_guardian_desc: "[ROOT.Char.GetFirstNameNoTooltip] needs to exist in order to make some of the scripts in this mod work. If you see [ROOT.Char.GetHerHim] in your court, just smile and wave. [ROOT.Char.GetSheHe|U] will disappear shortly."
   
  
+ 
+
+ 
+ trait_midnight_warrior: "Midnight Warrior"
+ trait_midnight_warrior_desc: "A term used to distinguish a practitioner of the ancestral [kuei_jin|E] Midnight Wars, ritualized wars following strict protocols and strategies. Building upon millennia of warfare traditions, these individuals are feared generals who have mastered a wide variety of tactics."
+ trait_midnight_warrior_1: "Midnight Warrior"
+ trait_midnight_warrior_2: "Midnight General"
+ trait_midnight_warrior_3: "Midnight Master"
+ trait_track_midnight_warrior: "Midnight Warrior"
+ trait_track_midnight_warrior_desc: "#help You gain experience in this track by being landless and using your [ashen_grandmaster|E] xp on it.#!"
+
+ trait_twilight_warrior: "Twilight Warrior"
+ trait_twilight_warrior_desc: "Twilight Wars are small, non lethal, conflicts strictly regulated in [kuei_jin|E] society and used to arbitrate escalating hostilities. They tend to teach in depth, though not always practical, tactics and strategies used for "real" warfare later on."
+ trait_twilight_warrior_1: "Twilight Warrior"
+ trait_twilight_warrior_2: "Twilight General"
+ trait_twilight_warrior_3: "Twilight Master"
+ trait_track_twilight_warrior: "Twilight Warrior"
+ trait_track_twilight_warrior_desc: "#help You gain experience in this track by being landless and using your [ashen_grandmaster|E] xp on it.#!"
+
+ trait_wayang_kulit: "Wayang Kulit"
+ trait_wayang_kulit_desc: "A warfare style created by the [Glossary('Penangallan','podgloss.penangallan')] of Southeast Asia. Named after Javanese shadow plays, it makes extensive use of Flesh Shintai to confuse the enemy."
+ trait_wayang_kulit_1: "Wayang Kulit Disciple"
+ trait_wayang_kulit_2: "Wayang Kulit Mistress"
+ trait_wayang_kulit_3: "Wayang Kulit Penangallan"
+ trait_track_wayang_kulit: "Wayang Kulit Disciple"
+ trait_track_wayang_kulit_desc: "#help You gain experience in this track by being landless and using your [ashen_grandmaster|E] experience on it.#!"
+
+ trait_angered_malkav: "Angered Madness Network"
+ trait_angered_malkav_desc: "You have angered the Madness Network and all those connected to it. Some say you have even angered something or someone within the Network itself. You can already feel its many, many claws sinking into your mind."
  

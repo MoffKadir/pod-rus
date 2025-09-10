@@ -19,7 +19,7 @@
  UMBRA_WINDOW_OBLIVION_TRAP: "@warning_icon! #X Explorer has a chance of being trapped and quarterly gain [stress|E] in this realm. #Weak (Unless they are serving the Oblivion)#!#!"
  UMBRA_WINDOW_WYRM_TRAP: "@warning_icon! #X Explorer has a chance of being trapped and quarterly gain [stress|E] in this realm. #Weak (Unless they are serving the Wyrm)#!#!"
  UMBRA_WINDOW_DEMON_TRAP: "@warning_icon! #X Explorer has a chance of being trapped and quarterly gain [stress|E] in this realm. #Weak (Unless they are serving demons)#!#!"
- UMBRA_WINDOW_YAMA_TRAP: "@warning_icon! #X Explorer has a chance of being trapped and quarterly gain [stress|E] in this realm. #Weak (Unless they are serving the Yama Kings)#!#!"
+ UMBRA_WINDOW_YAMA_TRAP: "@warning_icon! #X Explorer has a chance of being trapped and quarterly gain [stress|E] in this realm. #Weak (Unless they are serving the [Glossary('Yama Kings','podgloss.yamaking')])#!#!"
  
  umbra_action_tooltip: "#T [Localize(Concatenate(Scope.GetFlagName,'_confirm'))]#![Localize('line_break')][ScriptedGui.BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('explorer', Character.MakeScope).End)]"
  umbra_action_cooldown_tooltip: "You already used this action this month."
@@ -29,6 +29,7 @@
  umbra_ongoing_tt: "You are on a [umbra_expedition|E]."
  shadow_realm_tt: "You are on a [UmbraGlossary('shadow_realm')]."
  
+ bastet_spirit_wilds_access_tooltip: "Non-[GetFaithByKey('swara').GetName] [GetTrait('bastet').GetName( GetPlayer )] must be Rank 2 in their [trait_level_track|E]."
  silentstrider_objective_decision_finished: "You finished the $silentstrider_objective_decision$ [decision|E]."
  breakdown_the_abyss_objective_decision_finished: "You finished the $breakdown_the_abyss_objective_decision$ [decision|E]."
  stationed_on_dreaming_tt: "Is stationed on [UmbraGlossary('dreaming')]."

@@ -1,12 +1,12 @@
 ﻿l_english: 
 
  #Common Mummies Localization
- amenti_religion: "Amenti"
+ amenti_religion: "@mummy_icon! Amenti"
  amenti_religion_adj: "Amenti"
  amenti_religion_adherent: "Amentie"
  amenti_religion_adherent_plural: "Amenties"
  amenti_religion_desc: "Rules and guidelines of the Amenties, the Mummies created by the Egyptian Spell of Life."
- wutian_religion: "Wu T'ian"
+ wutian_religion: "@mummy_icon! Wu T'ian"
  wutian_religion_adj: "Wu T'ian"
  wutian_religion_adherent: "Wu T'ian"
  wutian_religion_adherent_plural: "Wu T'ians"
@@ -98,13 +98,13 @@
  ten_mandates_of_heaven_adj: "Mandates"
  ten_mandates_of_heaven_adherent: "Wu T'ian"
  ten_mandates_of_heaven_adherent_plural: "Wu T'ian"
- ten_mandates_of_heaven_desc: "The Ten Mandates of Heaven are rules and guidelines for the Wu T'ian, set down by the Eight Immortals under the stewardship of the August Personage of Jade. Each Mandate is equally important and each immortal has his own priority list to follow them, depending on his character and personal strengths."
+ ten_mandates_of_heaven_desc: "The Ten Mandates of Heaven are rules and guidelines for the Wu T'ian, set down by the Eight Immortals under the stewardship of the [Glossary('August Personage of Jade','podgloss.augustpersonageofjade')]. Each Mandate is equally important and each immortal has his own priority list to follow them, depending on his character and personal strengths."
 
  ten_mandates_of_hell: "Slaves of the Yama Kings"
  ten_mandates_of_hell_adj: "Slaves"
  ten_mandates_of_hell_adherent: "Wu Kuei"
  ten_mandates_of_hell_adherent_plural: "Wu Kuei"
- ten_mandates_of_hell_desc: "Rumors said the Yama Kings have created their own Undying slaves to oppose the Family of Heaven."
+ ten_mandates_of_hell_desc: "Rumors said the [Glossary('Yama Kings','podgloss.yamaking')] have created their own Undying slaves to oppose the Family of Heaven."
 
  holy_order_hand_of_thoth: "Hand of Thoth"
  holy_order_judges_of_maat: "Judges of Ma'at"  
@@ -118,33 +118,3 @@
  holy_order_white_lotus_society: "White Lotus Society"  
  holy_order_twilight_scholars: "Twilight Scholars"
  holy_order_jade_sentinels: "Jade Sentinels"
-
-
- mummy_special_kingdom_name: "Mummy Dark Kingdom"
- mummy_special_kingdom_hades_doctrine_name: "Hades"
- mummy_special_kingdom_hades_doctrine_desc: "Hades, the Underworld in Greek Mythology, is now also a home for Mummies"
- mummy_special_kingdom_hellheim_doctrine_name: "Hellheim"
- mummy_special_kingdom_hellheim_doctrine_desc: "Hellheim, the Underworld in Norse Mythology, is now also a home for Mummies"
- mummy_special_kingdom_yomi_doctrine_name: "Yomi"
- mummy_special_kingdom_yomi_doctrine_desc: "Yomi, the Underworld in some Eastern Mythologies, is now also a home for Mummies"
- mummy_special_kingdom_hell_doctrine_name: "Hell"
- mummy_special_kingdom_hell_doctrine_desc: "Hell, the Underworld in Christian Mythology, is now also a home for Mummies"
-
- doctrine_parameter_mummy_special_kingdom_basic: "Gain access to this [dark_kingdom|E] in the [umbra|E], and unlock special actions in it"
-
- doctrine_parameter_mummy_special_kingdom_easier_wraith_binding: "As an action in your unique [dark_kingdom|E], gain a modifier increasing the odds of successfully binding a [GetTrait('wraith').GetName( GetNullCharacter )]"
- doctrine_parameter_mummy_special_kingdom_cheaper_wraith_maintenance: "As an action in your unique [dark_kingdom|E], gain a modifier decreasing the cost of maintaining $POD_splat_wraith_plural$ in the Skinlands"
- doctrine_parameter_mummy_special_kingdom_double_wraith_limit: "As an action in your unique [dark_kingdom|E], gain a modifier doubling your bound [GetTrait('wraith').GetName( GetNullCharacter )] limit"
- 
- doctrine_parameter_mummy_special_kingdom_cheaper_army: "As an action in your unique [dark_kingdom|E], gain a modifier reducing army maintenance by #p -25%#!"
- doctrine_parameter_mummy_special_kingdom_better_army: "As an action in your unique [dark_kingdom|E], gain a modifier increasing all army stats by #p +50%#!"
-
- doctrine_parameter_mummy_special_kingdom_middle_kingdom: "Is considered a middle kingdom [splat|E]"
- doctrine_parameter_mummy_special_kingdom_control_wu_kuei: "As an action in your unique [dark_kingdom|E], spawn a [GetTrait('wukuei').GetName( GetNullCharacter )]"
- doctrine_parameter_mummy_special_kingdom_control_akuma_kueijin: "All characters of this faith gain powerful interactions to command [GetTrait('wukuei').GetName( GetNullCharacter )] and [GetTrait('kueijin').GetName( GetNullCharacter )] [GetTrait('cultist').GetName( GetNullCharacter )]"
- #doctrine_parameter_mummy_special_kingdom_can_corrupt_kueijin: "As [character_interaction|E] can corrupt [GetTrait('kueijin').GetName( GetNullCharacter )] to become [GetTrait('cultist').GetName( GetNullCharacter )]" I REALLY don't won't to do this...
-
- doctrine_parameter_mummy_special_kingdom_demon_spawn: "As an action in your unique [dark_kingdom|E], spawn a [GetTrait('demon').GetName( GetNullCharacter )] in your court"
- doctrine_parameter_mummy_special_kingdom_demonic_army: "As an action in your unique [dark_kingdom|E], gain a modifier which grants access to demonic [men_at_arms|E]"
- doctrine_parameter_mummy_special_kingdom_demon_binding: "As an action in your unique [dark_kingdom|E], gain a modifier increasing the speed and success chance of demonic binding"
-

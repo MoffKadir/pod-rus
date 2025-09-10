@@ -15,7 +15,7 @@
  helpful_steward_childe_modifier: "Helpful Steward Childe"
  helpful_steward_childe_modifier_desc: "Your childe has several extension projects for new courts that could be of use."
  helpful_intrigue_childe_modifier: "Helpful Schemer Childe"
- helpful_intrigue_childe_modifier_desc: "Your childe is like the second version of you, plotting for your own benefit."
+ helpful_intrigue_childe_modifier_desc: "Your childe is like a second version of you, plotting for your own benefit."
  exemplar_childe_modifier: "Rule by Fear"
  exemplar_childe_modifier_desc: "This character has proved that there are very few lines he would not cross for keeping power."
  martial_mentor_modifier: "Strategy Mentor"
@@ -84,13 +84,6 @@
  lamia_bodyguard_modifier_desc: "This individual has employed a member of the fearsome Lamia bloodline as their bodyguard" 
  web_of_knives_membership_modifier: "Web Of Knives Fee"
 
- attuned_to_yin_modifier: "Attuned to Yin"
- attuned_to_yin_modifier_desc: "A mortal or vampire attuned to Yin becomes lethargic and melancholic."
- attuned_to_yang_modifier: "Attuned to Yang"
- attuned_to_yang_modifier_desc: "A mortal or vampire attuned to Yang becomes feverish and manic."
- temporary_yin_imbalance_modifier: "Temporary Yin Imbalance"
- temporary_yang_imbalance_modifier: "Temporary Yang Imbalance"
-
  prowess_from_pain_1_modifier: "Prowess from Pain"
  prowess_from_pain_2_modifier: "Prowess from Pain"
  prowess_from_pain_3_modifier: "Prowess from Pain"
@@ -104,7 +97,6 @@
  wepauwet_modifier: "Second Chance"
  wepauwet_modifier_desc: "Horus himself couldn't give Wepauwet true immortality, but he still ended up pretty close to it. The memory of the Silent Striders lives on."
  nian_shun_modifier: "Nian Shun"
- nian_shun_modifier_desc: "Unlocks the Nomenclature [lifestyle|E]"
 
  internal_recursion_perk_modifier: "[battle_modifier|E]: Internal Recursion"
  ramble_on_perk_modifier: "[battle_modifier|E]: Ramble On"
@@ -243,6 +235,8 @@
  save_real_learning_negate_modifier: ""
 
  flandre_scarlet_modifier: "Flandre Scarlet"
+
+ visited_arcadia_modifier: "Visited Arcadia"
  
  sabbat_hand_wazir_3_modifier: "Sabbat Manipulation: High"
  sabbat_hand_wazir_2_modifier: "Sabbat Manipulation: Medium"
@@ -265,9 +259,11 @@
 
  POD_recently_swung_scales_modifier: "Recently Swung the Scales"
  POD_recently_swung_scales_modifier_desc: "Swinging the [scales_of_power|E] is #V 5#! times more expensive."
+ POD_swing_scales_warning: "@warning_icon!#N Because you [GetModifier('POD_recently_swung_scales_modifier').GetNameWithTooltip], it is [EmptyScope.ScriptValue('POD_swing_scales_during_cooldown_cost_mult')|V0] times more expensive#! #low (until [GetCurrentDateWithDiff( GetVarTimeRemaining( actor.MakeScope, 'POD_recently_swung_scales') )])#!"
 
  uncursed_nosferatu_modifier: "Unaffected by Nosferatu Clan Curse"
  uncursed_tzimisce_modifier: "Unaffected by Tzimisce Clan Curse"
+ uncursed_kizoku_modifier: "Unaffected by Kizoku Clan Curse"
 
  biblia_negra_curse_modifier: "Wisdom of the Ancients"
  soultaker_stress_loss_modifier: "Fed Legion's Hunger"
@@ -275,25 +271,87 @@
  
  beatific_xp_gain_mult: "[GetTrait('beatific').GetName( GetNullCharacter )] [trait_level_track_xp|E] Gain"
 
- #energy_vessel_modifier: "[Artifact.GetOwner.Custom('PODEnergySplat')] Vessel"
- POD_terrain_energy_vessel_min_combat_roll: "Maximum Possible [Artifact.GetOwner.Custom('PODEnergySplat')] Stored"
- POD_terrain_energy_vessel_advantage: "Stored [Artifact.GetOwner.Custom('PODEnergySplat')]"
  pod_no_levies_modifier: "No Levies"
 
- joyous_age_modifier: "Joyous Age"
+ #joyous_age_modifier: "Joyous Age"
  godbodies_modifier: "Godbodies"
- godbodies_modifier_desc: "#X This modifier can be lost if the current Age changes! Consult the Wheel of Ages decision for more information. #! \n #flavor In this current Age, the [kuei_jin|E] are still more attuned to the elemental powers they once wielded as the Ten Thousands Immortals.#!"
- akuma_debuff_modifier: "Infernal Taint"
- yama_debuff_modifier: "Yomi Taint"
- akuma_buff_modifier: "Infernal Allure"
- yama_buff_modifier: "Yomi Allure"
+ godbodies_modifier_desc: "#X This modifier will be lost in 1350. Some objectives can prevent this loss.#!\n#flavor In this current Age, the [kuei_jin|E] are still more attuned to the elemental powers they once wielded as the Ten Thousand Immortals.#!"
+ #akuma_debuff_modifier: "Infernal Taint"
+ #yama_debuff_modifier: "Yomi Taint"
+ #akuma_buff_modifier: "Infernal Allure"
+ #yama_buff_modifier: "Yomi Allure"
  akuma_huge_buff_modifier: "Infernal Majesty"
+ akuma_huge_buff_modifier_desc: "The turn of the wheel heralds the coming of the end. The forces of the [Glossary('Demon Emperor','podgloss.demonemperor')] are emboldened to prepare his way to the throne."
  yama_huge_buff_modifier: "Yomi Majesty"
+ yama_huge_buff_modifier_desc: "The turn of the wheel heralds the coming of the end. The forces of the [Glossary('Demon Emperor','podgloss.demonemperor')] are emboldened to prepare his way to the throne."
  kj_harder_dharma_modifier: "Yama Influence"
  kj_imposible_dharma_modifier: "Yama Barrier"
- POD_terrain_dharma_xp_gain_advantage: "Dharma gain mult"
-
- POD_terrain_true_name_journey_speed_max_combat_roll: "Enemy Learn True Name [journey|E] speed"
- POD_terrain_true_name_journey_speed_advantage: "Learn True Name [journey|E] speed"
 
  cairo_canton_djedi_modifier: "Merryment"
+
+
+
+
+ 
+
+
+ weather_magic_flow_modifier: "Flow"
+ weather_magic_flow_modifier_desc: "This area is damaged by a landslide, avalanche, mudflow or debris flow."
+ weather_magic_meteor_shower_modifier: "Meteor Shower"
+ weather_magic_meteor_shower_modifier_desc: "This area is damaged by a meteor."
+ weather_magic_storm_modifier: "Storm"
+ weather_magic_storm_modifier_desc: "This area is damaged by a hurricane, tornado, blizzard, thunderstorm or sandstorm."
+ weather_magic_earthquake_modifier: "Earthquake"
+ weather_magic_earthquake_modifier_desc: "This area is damaged by earthquakes."
+ weather_magic_plague_modifier: "Plague"
+ weather_magic_plague_modifier_desc: "This area is damaged by frogs, lice, flies, pestilence, boils or locusts."
+ weather_magic_flood_modifier: "Flood"
+ weather_magic_flood_modifier_desc: "This area is damaged by inundations."
+ weather_magic_greater_flood_modifier: "Greater Flood"
+ weather_magic_greater_flood_modifier_desc: "This area is damaged by great inundations."
+ weather_magic_drought_modifier: "Drought"
+ weather_magic_drought_modifier_desc: "This area is damaged by droughts."
+
+ weather_magic_mummy_cycle_of_ra_modifier: "Cycle of Ra"
+
+ weather_magic_fertile_land_modifier: "Fertile Land"
+
+ pod_negative_ai_boldness_modifier: "Boldness Decrease"
+ pod_negative_ai_compassion_modifier: "Compassion Decrease"
+ pod_negative_ai_energy_modifier: "Energy Decrease"
+ pod_negative_ai_greed_modifier: "Greed Decrease"
+ pod_negative_ai_honor_modifier: "Honor Decrease"
+ pod_negative_ai_rationality_modifier: "Rationality Decrease"
+ pod_negative_ai_sociability_modifier: "Sociability Decrease"
+ pod_negative_ai_vengefulness_modifier: "Vengefulness Decrease"
+ pod_negative_ai_zeal_modifier: "Zeal Decrease"
+
+ pod_positive_ai_boldness_modifier: "Boldness Increase"
+ pod_positive_ai_compassion_modifier: "Compassion Increase"
+ pod_positive_ai_energy_modifier: "Energy Increase"
+ pod_positive_ai_greed_modifier: "Greed Increase"
+ pod_positive_ai_honor_modifier: "Honor Increase"
+ pod_positive_ai_rationality_modifier: "Rationality Increase"
+ pod_positive_ai_sociability_modifier: "Sociability Increase"
+ pod_positive_ai_vengefulness_modifier: "Vengefulness Increase"
+ pod_positive_ai_zeal_modifier: "Zeal Increase"
+ 
+ pod_negative_ai_boldness_modifier_desc: "Boldness determines how much the character is affected by dread."
+ pod_negative_ai_compassion_modifier_desc: "Compassion determines how the character will treat its prisoners."
+ pod_negative_ai_energy_modifier_desc: "Energy determines how often the character will consider a decision."
+ pod_negative_ai_greed_modifier_desc: "Greed determines how easily the character will spend gold."
+ pod_negative_ai_honor_modifier_desc: "Honor determines how often the character will honor relationships and alliances as well as how often they will become agents."
+ pod_negative_ai_rationality_modifier_desc: "Rationality determines how strong a character's army has to be before declaring war."
+ pod_negative_ai_sociability_modifier_desc: "Sociability determines how often the character will consider a [character_interaction|E]."
+ pod_negative_ai_vengefulness_modifier_desc: "Vengefulness determines how much the character will seek to punish transgressions."
+ pod_negative_ai_zeal_modifier_desc: "Zeal determines how often the character will join holy wars."
+ 
+ pod_positive_ai_boldness_modifier_desc: "Boldness determines how much the character is affected by dread."
+ pod_positive_ai_compassion_modifier_desc: "Compassion determines how the character will treat its prisoners."
+ pod_positive_ai_energy_modifier_desc: "Energy determines how often the character will consider a decision."
+ pod_positive_ai_greed_modifier_desc: "Greed determines how easily the character will spend gold."
+ pod_positive_ai_honor_modifier_desc: "Honor determines how often the character will honor relationships and alliances as well as how often they will become agents."
+ pod_positive_ai_rationality_modifier_desc: "Rationality determines how strong a character's army has to be before declaring war."
+ pod_positive_ai_sociability_modifier_desc: "Sociability determines how often the character will consider a [character_interaction|E]."
+ pod_positive_ai_vengefulness_modifier_desc: "Vengefulness determines how much the character will seek to punish transgressions."
+ pod_positive_ai_zeal_modifier_desc: "Zeal determines how often the character will join holy wars."

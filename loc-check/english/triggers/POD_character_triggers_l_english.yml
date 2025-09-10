@@ -7,14 +7,6 @@
  CHARACTER_IS_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "[CHARACTER.GetShortUIName|U] is #bold not#! [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] or [direct_vassal|E]"
  I_AM_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "You are #bold not#! [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] or [direct_vassal|E]"
  
- NOT_POD_permanent_scarred: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('scarred').GetName( GetPlayer )] [trait|E] can't be cured"
- NOT_POD_permanent_disfigured: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('disfigured').GetName( GetPlayer )] [trait|E] can't be cured"
- NOT_POD_permanent_blind: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('blind').GetName( GetPlayer )] [trait|E] can't be cured"
- NOT_POD_permanent_one_eyed: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('one_eyed').GetName( GetPlayer )] [trait|E] can't be cured"
- NOT_POD_permanent_maimed: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('maimed').GetName( GetPlayer )] [trait|E] can't be cured"
- NOT_POD_permanent_one_legged: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('one_legged').GetName( GetPlayer )] [trait|E] can't be cured"
- NOT_POD_permanent_eunuch: "[TARGET_CHARACTER.GetShortUINamePossessive] [GetTrait('eunuch').GetName( GetPlayer )] [trait|E] can't be cured"
- 
  NUM_OF_RELATION_DEMONIC_MASTER_TARGET_TRIGGER: "Number of demonic masters is $COMPARATOR$ $NUM|V0$"   
  NUM_OF_RELATION_DEMONIC_THRALL_TARGET_TRIGGER: "Number of demonic thralls is $COMPARATOR$ $NUM|V0$"   
  NUM_OF_RELATION_SHADOW_TWIN_SERVANT_TRIGGER: "Number of Shadow Twins is $COMPARATOR$ $NUM|V0$"
@@ -25,19 +17,17 @@
  NUM_OF_RELATION_SEPARATED_KHAIBIT_SERVANT_TRIGGER: "Number of Separated Khaibits is $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_SEPARATED_SHADOW_SERVANT_TRIGGER: "Number of Separated Shadows is $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_UNSPEAKABLE_SERVITOR_SERVANT_TRIGGER: "Number of Unspeakable Servitors is $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_shadow_self_SERVANT_TRIGGER: "Number of Shadow Selves is $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_POSSESSED_TARGET_TRIGGER: "Number of Puppets is $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_EFFIGY_CHARACTER_TARGET_TRIGGER: "Number of Effigies is $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_DREAMER_MEMBER_TARGET_TRIGGER: "Number of Dreamers is $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_WORSHIPPING_CULTIST_TARGET_TRIGGER: "Number of Cultists is $COMPARATOR$ $NUM|V0$"   
- NUM_OF_RELATION_DIVIDED_VERSION_TARGET_TRIGGER: "Number of Divided Versions is $COMPARATOR$ $NUM|V0$"   
+ NUM_OF_RELATION_WORSHIPPING_CULTIST_TARGET_TRIGGER: "Number of Cultists is $COMPARATOR$ $NUM|V0$"      
  NUM_OF_RELATION_SPIRIT_COMPANION_TARGET_TRIGGER: "Number of Spirit Companions is $COMPARATOR$ $NUM|V0$" 
  NUM_OF_RELATION_GHOUL_THRALL_TARGET_TRIGGER: "Number of Enthralled Ghouls is $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_BOUND_DEMON_TARGET_TRIGGER: "Number of Bound Demons is $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_BOUND_WRAITH_TARGET_TRIGGER: "Number of Bound Wraiths is $COMPARATOR$ $NUM|V0$"
  
  effigy_on_task: "You already have an effigy on task."
- can_hurt_spirit: "You does #bold not#! have any power to hurt spirits."
- can_imprison_spirit: "You does #bold not#! have any power to imprison a spirit."
  lost_in_umbra: "[CHARACTER.GetShortUIName|U] is #bold not#! stationed in a dangerous [umbra|E] realm"
  NOT_lost_in_umbra: "[CHARACTER.GetShortUIName|U] is stationed in a dangerous [umbra|E] realm"
  
@@ -46,7 +36,7 @@
  kueijin_cant_follow_you_faith_tooltip: "[GetTrait('kueijin').GetName( GetNullCharacter )] can't follow [GetPlayer.GetFaith.GetAdjective]!"
  vamp_cant_follow_you_faith_tooltip: "[GetTrait('vampire').GetName( GetNullCharacter )] can't follow [GetPlayer.GetFaith.GetAdjective]!"
  ghoul_cant_follow_you_faith_tooltip: "[GetTrait('ghoul').GetName( GetNullCharacter )]/[GetTrait('revenant').GetName( GetNullCharacter )] can't follow [GetPlayer.GetFaith.GetAdjective]!"
- shapeshifter_cant_follow_you_faith_tooltip: "[GetTraitGroup('shapeshifter').GetName()] can't follow [GetPlayer.GetFaith.GetAdjective]!"
+ fera_cant_follow_you_faith_tooltip: "[GetTraitGroup('fera').GetName()] can't follow [GetPlayer.GetFaith.GetAdjective]!"
  hunter_cant_follow_you_faith_tooltip: "[GetTrait('supehunter').GetName( GetNullCharacter )] can't follow [GetPlayer.GetFaith.GetAdjective]!"
  mortal_cant_follow_you_faith_tooltip: "[GetTrait('mortal').GetName( GetNullCharacter )] can't follow [GetPlayer.GetFaith.GetAdjective]!"
  mummy_cant_follow_you_faith_tooltip: "[GetTrait('mummy').GetName( GetNullCharacter )] can't follow [GetPlayer.GetFaith.GetAdjective]!"
@@ -87,6 +77,11 @@
  ferryman_cant_follow_you_faith_tooltip: "[GetTrait('ferryman').GetName( GetNullCharacter )] can't follow [GetPlayer.GetFaith.GetAdjective]!"
  
  bastet_cant_convert_tooltip: "[GetTrait('bastet').GetName( GetNullCharacter )] can't be converted!"
+ spirit_cant_convert_tooltip: "[GetTrait('spirit').GetName( GetNullCharacter )] can't be converted!"
  viaservilis_cant_convert_tooltip: "[GetFaithByKey('viaservilis').GetName] can't be converted!"
  
  can_add_stress_trait_tooltip: "Must have a fitting trait, relation, or faith."
+
+ POD_splat_has_landless_mechanics: "Your [splat|E] has [POD_landless_mechanics|E]"
+
+ POD_IS_TRAIT_PERMANENT: "[TRAIT.GetName(GetPlayer)] cannot be cured."
