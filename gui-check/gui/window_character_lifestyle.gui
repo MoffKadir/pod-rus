@@ -108,6 +108,11 @@ window = {
 					#gfxtype = propstretchedicongfx
 					#shaderfile = "gfx/FX/pdxgui_default.shader"
 
+					# CfV PoD: make sure backgrounds are centered instead of stretched
+					pod_lifestyle_background_nonstretchy = {
+					blockoverride "texture" {
+					# CfV end
+					
 					texture = "[Lifestyle.GetBackground]"
 
 					modify_texture = {
@@ -116,6 +121,11 @@ window = {
 						spriteType = Corneredstretched
 						spriteborder = { 30 30 }
 					}
+					
+					# CfV PoD
+					}
+					}
+					# CfV end
 
 					button = {
 						size = { 100% 100% }
@@ -198,9 +208,14 @@ window = {
 
 							text_single = {
 								text = "[Lifestyle.GetNameNoTooltip]"
-								default_format = "#high"
+								#default_format = "#high" # CfV
 								using = Font_Type_Flavor
 								fontsize = 25
+								
+								# CfV PoD: make this easier to read
+								default_format = "#high;glow_color:{0,0,0,0.65}"
+								background = { using = pod_lifestyle_title_bg }
+								# CfV end
 							}
 
 							text_multi = {
@@ -209,6 +224,11 @@ window = {
 								align = top|hcenter
 								layoutpolicy_horizontal = expanding
 								margin = { 5 0 }
+								
+								# CfV PoD: make this easier to read
+								default_format = "#high;glow_color:{0,0,0,0.65}"
+								background = { using = pod_lifestyle_desc_bg }
+								# CfV end
 							}
 
 							text_multi = {
@@ -231,7 +251,7 @@ window = {
 							text_single = {
 								visible = "[GreaterThan_int32( Character.GetPerkPoints( Lifestyle.Self ), '(int32)0' )]"
 								text = "LIFESTYLE_POINTS_TO_USE_TEXT"
-								default_format = "#low"
+								default_format = "#high;glow_color:{0,0,0,0.65}" # CfV
 								max_width = 280
 
 								# animation_attention = {}
@@ -994,6 +1014,8 @@ window = {
 									layoutpolicy_vertical = expanding
 
 									background = {
+										# CfV POD: make sure perk tree backgrounds don't get stretched
+										fittype = centercrop
 										visible = "[Not(PerkGuiTree.IsCompleted)]"
 										texture = "[PerkGuiTree.GetBackground]"
 										alpha = 0.15
@@ -1134,7 +1156,8 @@ window = {
 																autoresize = yes
 
 																text = "[Perk.GetNameNoTooltip( Character.Self )]"
-																default_format = "#high"
+																# CfV PoD: make this easier to read
+																default_format = "#high;glow_color:{0,0,0,1}"
 																align = top|hcenter
 
 																background = {
@@ -1153,7 +1176,8 @@ window = {
 																autoresize = yes
 
 																text = "[Perk.GetNameNoTooltip( Character.Self )]"
-																default_format = "#low"
+																# CfV PoD: make this easier to read
+																default_format = "#low;glow_color:{0,0,0,1}"
 																align = top|hcenter
 
 																background = {
@@ -1198,6 +1222,8 @@ window = {
 																autoresize = yes
 
 																text = "[Perk.GetNameNoTooltip( Character.Self )]"
+																# CfV PoD: make this easier to read
+																default_format = "#glow_color:{0,0,0,1}"
 																align = top|hcenter
 
 																background = {
@@ -1258,7 +1284,8 @@ window = {
 																size = { 115 50 }
 
 																text = "[Perk.GetNameNoTooltip( Character.Self )]"
-																default_format = "#high"
+																# CfV PoD: make this easier to read
+																default_format = "#high;glow_color:{0,0,0,1}"
 																align = center
 
 																background = {
@@ -1275,7 +1302,8 @@ window = {
 																size = { 115 50 }
 
 																text = "[Perk.GetNameNoTooltip( Character.Self )]"
-																default_format = "#low"
+																# CfV PoD: make this easier to read
+																default_format = "#low;glow_color:{0,0,0,1}"
 																align = center
 
 																background = {

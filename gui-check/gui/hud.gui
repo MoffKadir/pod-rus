@@ -67,7 +67,7 @@ widget = {
 
 	error_horse = {
 		parentanchor = bottom|left
-		position = { 850 -10 }
+		position = { 610 -10 } # CfV
 		visible = "[And( Not(IsGameViewOpen('barbershop')), And( Not( IsPauseMenuShown ), Not(ReleaseMode) ) )]"
 	}
 	loaded_mods_icon = {
@@ -710,23 +710,23 @@ widget = {
 						down = "[GetVariableSystem.HasValue('pod_sidebar', 'sabbat')]"
 					}
 				}
-				widget_hud_main_tab = {
-					name = "tab_ashirra"
+				# widget_hud_main_tab = {
+				# 	name = "tab_ashirra"
 
-					visible = "[And(Or(Not(IsObserver), GetPlayer.IsValid), ObjectsEqual( GetPlayer.GetFaith.GetReligion, GetReligionByKey( 'ashirra_religion' ).Self ))]"
+				# 	visible = "[And(Or(Not(IsObserver), GetPlayer.IsValid), ObjectsEqual( GetPlayer.GetFaith.GetReligion, GetReligionByKey( 'ashirra_religion' ).Self ))]"
 
-					blockoverride "maintab_button"
-					{
-						texture = "gfx/interface/skinned/hud_maintab/maintab_ashirra.dds"
+				# 	blockoverride "maintab_button"
+				# 	{
+				# 		texture = "gfx/interface/skinned/hud_maintab/maintab_ashirra.dds"
 
-						onclick = "[ToggleGameView('decisions')]"
-						onclick = "[CloseGameView('decisions')]"
-						onclick = "[GetVariableSystem.SetOrToggle('pod_sidebar', 'ashirra')]"
+				# 		onclick = "[ToggleGameView('decisions')]"
+				# 		onclick = "[CloseGameView('decisions')]"
+				# 		onclick = "[GetVariableSystem.SetOrToggle('pod_sidebar', 'ashirra')]"
 
-						tooltip = "tab_ashirra"
-						down = "[GetVariableSystem.HasValue('pod_sidebar', 'ashirra')]"
-					}
-				}
+				# 		tooltip = "tab_ashirra"
+				# 		down = "[GetVariableSystem.HasValue('pod_sidebar', 'ashirra')]"
+				# 	}
+				# }
 				widget_hud_main_tab = {
 					name = "tab_talmahera"
 
@@ -763,26 +763,26 @@ widget = {
 						down = "[GetVariableSystem.HasValue('pod_sidebar', 'patron_council')]"
 					}
 				}
-				widget_hud_main_tab = {
-					name = "tab_quincunx"
+				# widget_hud_main_tab = {
+				# 	name = "tab_quincunx"
 
-					datacontext = "[GetScriptedGui('quincunx_enable')]"
-					visible = "[And(Or(Not(IsObserver), GetPlayer.IsValid), ScriptedGui.IsShown(GuiScope.AddScope('player',GetPlayer.MakeScope).End))]"
-					enabled = "[ScriptedGui.IsValid(GuiScope.AddScope('player',GetPlayer.MakeScope).End)]"
+				# 	datacontext = "[GetScriptedGui('quincunx_enable')]"
+				# 	visible = "[And(Or(Not(IsObserver), GetPlayer.IsValid), ScriptedGui.IsShown(GuiScope.AddScope('player',GetPlayer.MakeScope).End))]"
+				# 	enabled = "[ScriptedGui.IsValid(GuiScope.AddScope('player',GetPlayer.MakeScope).End)]"
 
-					blockoverride "maintab_button"
-					{
-						texture = "gfx/interface/skinned/hud_maintab/maintab_quincunx.dds"
+				# 	blockoverride "maintab_button"
+				# 	{
+				# 		texture = "gfx/interface/skinned/hud_maintab/maintab_quincunx.dds"
 
-						onclick = "[ToggleGameView('decisions')]"
-						onclick = "[CloseGameView('decisions')]"
-						onclick = "[GetVariableSystem.SetOrToggle('pod_sidebar', 'quincunx')]"
-						onclick = "[ScriptedGui.Execute(GuiScope.AddScope('player',GetPlayer.MakeScope).End)]"
+				# 		onclick = "[ToggleGameView('decisions')]"
+				# 		onclick = "[CloseGameView('decisions')]"
+				# 		onclick = "[GetVariableSystem.SetOrToggle('pod_sidebar', 'quincunx')]"
+				# 		onclick = "[ScriptedGui.Execute(GuiScope.AddScope('player',GetPlayer.MakeScope).End)]"
 
-						tooltip = "[Localize('tab_quincunx')][Localize('line_break')][ScriptedGui.BuildTooltip(GuiScope.AddScope('player',GetPlayer.MakeScope).End)]"
-						down = "[GetVariableSystem.HasValue('pod_sidebar', 'quincunx')]"
-					}
-				}
+				# 		tooltip = "[Localize('tab_quincunx')][Localize('line_break')][ScriptedGui.BuildTooltip(GuiScope.AddScope('player',GetPlayer.MakeScope).End)]"
+				# 		down = "[GetVariableSystem.HasValue('pod_sidebar', 'quincunx')]"
+				# 	}
+				# }
 			}
 			#CfV end	
 		}
@@ -953,7 +953,8 @@ widget = {
 ### Time Controls
 icon = {
 	name = "timeline_widget"
-	visible = "[And(And( Not(IsGameViewOpen('barbershop')), And( And( Not( IsPauseMenuShown ), TimelineWidget.ShouldBeVisible ), Not(GetVariableSystem.Exists('royal_court_screenshot_window')))), Not( GreaterThan_CFixedPoint( GetPlayer.MakeScope.Var('hide_ui_timeline').GetValue, '(CFixedPoint)0' ) ))]"
+	# CfV POD: hide in lifestyle window so that it doesn't block the scrollbar
+	visible = "[And(And( And(Not(IsGameViewOpen('barbershop')), Not(IsGameViewOpen('lifestyle'))), And( And( Not( IsPauseMenuShown ), TimelineWidget.ShouldBeVisible ), Not(GetVariableSystem.Exists('royal_court_screenshot_window')))), Not( GreaterThan_CFixedPoint( GetPlayer.MakeScope.Var('hide_ui_timeline').GetValue, '(CFixedPoint)0' ) ))]"
 	size = { 649 65 }
 	parentanchor = bottom|right
 	filter_mouse = all
@@ -2184,7 +2185,7 @@ widget = {
 					}
 
 					icon = {
-						visible = "[EqualTo_int32(GetPlayer.GetStressLevel, '(int32)2')]"
+						visible = "[EqualTo_int32(PODGetStressLevel, '(int32)2')]" # CfV PoD
 						size = { 100% 100% }
 						texture = "gfx/interface/colors/white.dds"
 						color = { 1 0.1 0.1 0.2 }
@@ -2215,10 +2216,10 @@ widget = {
 						widget = {
 							layoutpolicy_horizontal = expanding
 							layoutpolicy_vertical = expanding
-							layoutstretchfactor_horizontal = "[GetProgressBarValueMaxScaled( GetPlayer.GetStressProgress, '(float)100', '(int32)60' )]"
+							layoutstretchfactor_horizontal = "[GetProgressBarValueMaxScaled( PODGetStressProgress, '(float)100', '(int32)60' )]" # CfV PoD
 
 							progressbar_hud_stress = {
-								visible = "[GreaterThanOrEqualTo_int32(GetPlayer.GetStressLevel, '(int32)3')]"
+								visible = "[GreaterThanOrEqualTo_int32(PODGetStressLevel, '(int32)3')]" # CfV PoD
 								visible_at_creation = no
 								size = { 100% 100% }
 
@@ -2237,7 +2238,7 @@ widget = {
 							}
 
 							progressbar_hud_stress = {
-								visible = "[EqualTo_int32(GetPlayer.GetStressLevel, '(int32)2')]"
+								visible = "[EqualTo_int32(PODGetStressLevel, '(int32)2')]" # CfV PoD
 								visible_at_creation = no
 								size = { 100% 100% }
 
@@ -2256,7 +2257,7 @@ widget = {
 							}
 
 							progressbar_hud_stress = {
-								visible = "[EqualTo_int32(GetPlayer.GetStressLevel, '(int32)1')]"
+								visible = "[EqualTo_int32(PODGetStressLevel, '(int32)1')]" # CfV PoD
 								visible_at_creation = no
 								size = { 100% 100% }
 
@@ -2275,7 +2276,7 @@ widget = {
 							}
 
 							progressbar_hud_stress = {
-								visible = "[EqualTo_int32(GetPlayer.GetStressLevel, '(int32)0')]"
+								visible = "[EqualTo_int32(PODGetStressLevel, '(int32)0')]" # CfV PoD
 								size = { 100% 100% }
 
 								using = Animation_ShowHide_Standard
@@ -2296,7 +2297,7 @@ widget = {
 						widget = {
 							layoutpolicy_horizontal = expanding
 							layoutpolicy_vertical = expanding
-							layoutstretchfactor_horizontal = "[GetProgressBarValueMaxOtherScaled( GetPlayer.GetStressProgress, '(float)100', '(int32)60' )]"
+							layoutstretchfactor_horizontal = "[GetProgressBarValueMaxOtherScaled( PODGetStressProgress, '(float)100', '(int32)60' )]" # CfV PoD
 						}
 					}
 				}
@@ -2332,7 +2333,7 @@ widget = {
 					}
 
 					progressbar_hud_stress_glow = {
-						visible = "[EqualTo_int32(GetPlayer.GetStressLevel, '(int32)3')]"
+						visible = "[EqualTo_int32(PODGetStressLevel, '(int32)3')]" # CfV PoD
 						texture = "gfx/interface/hud/hud_stress_glow_red.dds"
 
 						blockoverride "animation_trigger_1" {
@@ -2495,10 +2496,10 @@ widget = {
 
 							texture = "gfx/interface/icons/stress/icon_stress_level.dds"
 							framesize = { 70 70 }
-							frame = "[IntToFrameIndex( GetPlayer.GetStressLevel )]"
+							frame = "[IntToFrameIndex( PODGetStressLevel )]" # CfV PoD
 
 							modify_texture = {
-								visible = "[GreaterThanOrEqualTo_int32(GetPlayer.GetStressLevel, '(int32)2')]"
+								visible = "[GreaterThanOrEqualTo_int32(PODGetStressLevel, '(int32)2')]" # CfV PoD
 								name = "lvl3_glow"
 								texture = "gfx/interface/colors/gold.dds"
 								blend_mode = colordodge
@@ -4060,7 +4061,7 @@ types HUD
 		}
 
 		modify_texture = {
-			visible = "[GreaterThanOrEqualTo_int32(GetPlayer.GetStressLevel, '(int32)2')]"
+			visible = "[GreaterThanOrEqualTo_int32(PODGetStressLevel, '(int32)2')]" # CfV PoD
 			name = "lvl3_glow"
 			texture = "gfx/interface/colors/gold.dds"
 			blend_mode = colordodge

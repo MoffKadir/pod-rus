@@ -168,55 +168,13 @@ template pod_lifestyle_progressbar_backgrounds {
 	}
 
 	background = {
-		visible = "[EqualTo_string( Lifestyle.GetKey, 'auspicegifts_lifestyle' )]"
+		visible = "[EqualTo_string( Lifestyle.GetKey, 'lunar_auspicegifts_lifestyle' )]"
 		texture = "gfx/interface/progressbars/progress_brown.dds"
 		alpha = 0.4
 	}
 
 	background = {
-		visible = "[EqualTo_string( Lifestyle.GetKey, 'gurahlauspicegifts_lifestyle' )]"
-		texture = "gfx/interface/progressbars/progress_brown.dds"
-		alpha = 0.4
-	}
-
-	background = {
-		visible = "[EqualTo_string( Lifestyle.GetKey, 'pathgifts_lifestyle' )]"
-		texture = "gfx/interface/progressbars/progress_brown.dds"
-		alpha = 0.4
-	}
-
-	background = {
-		visible = "[EqualTo_string( Lifestyle.GetKey, 'mokoleauspicegifts_lifestyle' )]"
-		texture = "gfx/interface/progressbars/progress_brown.dds"
-		alpha = 0.4
-	}
-
-	background = {
-		visible = "[EqualTo_string( Lifestyle.GetKey, 'nagahauspicegifts_lifestyle' )]"
-		texture = "gfx/interface/progressbars/progress_brown.dds"
-		alpha = 0.4
-	}
-
-	background = {
-		visible = "[EqualTo_string( Lifestyle.GetKey, 'aspectgifts_lifestyle' )]"
-		texture = "gfx/interface/progressbars/progress_brown.dds"
-		alpha = 0.4
-	}
-
-	background = {
-		visible = "[EqualTo_string( Lifestyle.GetKey, 'rokeaauspicegifts_lifestyle' )]"
-		texture = "gfx/interface/progressbars/progress_brown.dds"
-		alpha = 0.4
-	}
-
-	background = {
-		visible = "[EqualTo_string( Lifestyle.GetKey, 'tribegifts_lifestyle' )]"
-		texture = "gfx/interface/progressbars/progress_brown.dds"
-		alpha = 0.4
-	}
-
-	background = {
-		visible = "[EqualTo_string( Lifestyle.GetKey, 'bastettribegifts_lifestyle' )]"
+		visible = "[EqualTo_string( Lifestyle.GetKey, 'tribalgifts_lifestyle' )]"
 		texture = "gfx/interface/progressbars/progress_brown.dds"
 		alpha = 0.4
 	}
@@ -230,12 +188,6 @@ template pod_lifestyle_progressbar_backgrounds {
 	background = {
 		visible = "[EqualTo_string( Lifestyle.GetKey, 'planetarygifts_lifestyle' )]"
 		texture = "gfx/interface/progressbars/progress_brown.dds"
-		alpha = 0.4
-	}
-
-	background = {
-		visible = "[EqualTo_string( Lifestyle.GetKey, 'charms_lifestyle' )]"
-		texture = "gfx/interface/progressbars/progress_gray.dds"
 		alpha = 0.4
 	}
 
@@ -259,12 +211,6 @@ template pod_lifestyle_progressbar_backgrounds {
 
 	background = {
 		visible = "[EqualTo_string( Lifestyle.GetKey, 'misc_arcanoi_lifestyle' )]"
-		texture = "gfx/interface/progressbars/progress_purple.dds"
-		alpha = 0.4
-	}
-	
-	background = {
-		visible = "[EqualTo_string( Lifestyle.GetKey, 'horror_lifestyle' )]"
 		texture = "gfx/interface/progressbars/progress_purple.dds"
 		alpha = 0.4
 	}
@@ -511,7 +457,7 @@ types PODVanillaLifestyleTypes
 		}
 
 		progressbar_lifestyle_xp = {
-			visible = "[EqualTo_string( Lifestyle.GetKey, 'auspicegifts_lifestyle' )]"
+			visible = "[EqualTo_string( Lifestyle.GetKey, 'lunar_auspicegifts_lifestyle' )]"
 			progresstexture = "gfx/interface/progressbars/progress_brown.dds"
 			noprogresstexture = "gfx/interface/progressbars/progress_brown_bg.dds"
 		}
@@ -553,13 +499,7 @@ types PODVanillaLifestyleTypes
 		}
 
 		progressbar_lifestyle_xp = {
-			visible = "[EqualTo_string( Lifestyle.GetKey, 'tribegifts_lifestyle' )]"
-			progresstexture = "gfx/interface/progressbars/progress_brown.dds"
-			noprogresstexture = "gfx/interface/progressbars/progress_brown_bg.dds"
-		}
-
-		progressbar_lifestyle_xp = {
-			visible = "[EqualTo_string( Lifestyle.GetKey, 'bastettribegifts_lifestyle' )]"
+			visible = "[EqualTo_string( Lifestyle.GetKey, 'tribalgifts_lifestyle' )]"
 			progresstexture = "gfx/interface/progressbars/progress_brown.dds"
 			noprogresstexture = "gfx/interface/progressbars/progress_brown_bg.dds"
 		}
@@ -574,12 +514,6 @@ types PODVanillaLifestyleTypes
 			visible = "[EqualTo_string( Lifestyle.GetKey, 'planetarygifts_lifestyle' )]"
 			progresstexture = "gfx/interface/progressbars/progress_brown.dds"
 			noprogresstexture = "gfx/interface/progressbars/progress_brown_bg.dds"
-		}
-
-		progressbar_lifestyle_xp = {
-			visible = "[EqualTo_string( Lifestyle.GetKey, 'charms_lifestyle' )]"
-			progresstexture = "gfx/interface/progressbars/progress_gray.dds"
-			noprogresstexture = "gfx/interface/progressbars/progress_gray_bg.dds"
 		}
 
 		progressbar_lifestyle_xp = {
@@ -602,12 +536,6 @@ types PODVanillaLifestyleTypes
 
 		progressbar_lifestyle_xp = {
 			visible = "[EqualTo_string( Lifestyle.GetKey, 'misc_arcanoi_lifestyle' )]"
-			progresstexture = "gfx/interface/progressbars/progress_purple.dds"
-			noprogresstexture = "gfx/interface/progressbars/progress_purple_bg.dds"
-		}
-
-		progressbar_lifestyle_xp = {
-			visible = "[EqualTo_string( Lifestyle.GetKey, 'horror_lifestyle' )]"
 			progresstexture = "gfx/interface/progressbars/progress_purple.dds"
 			noprogresstexture = "gfx/interface/progressbars/progress_purple_bg.dds"
 		}
@@ -824,7 +752,7 @@ types PODVanillaLifestyleTypes
 		}
 		
 		icon_lifestyle_unspent_points = {
-			visible = "[EqualTo_string( Lifestyle.GetKey, 'auspicegifts_lifestyle' )]"
+			visible = "[EqualTo_string( Lifestyle.GetKey, 'lunar_auspicegifts_lifestyle' )]"
 			texture = "gfx/interface/icons/lifestyles_perks/node_wanderer.dds" # brown
 		}
 		
@@ -859,12 +787,7 @@ types PODVanillaLifestyleTypes
 		}
 		
 		icon_lifestyle_unspent_points = {
-			visible = "[EqualTo_string( Lifestyle.GetKey, 'tribegifts_lifestyle' )]"
-			texture = "gfx/interface/icons/lifestyles_perks/node_wanderer.dds" # brown
-		}
-		
-		icon_lifestyle_unspent_points = {
-			visible = "[EqualTo_string( Lifestyle.GetKey, 'bastettribegifts_lifestyle' )]"
+			visible = "[EqualTo_string( Lifestyle.GetKey, 'tribalgifts_lifestyle' )]"
 			texture = "gfx/interface/icons/lifestyles_perks/node_wanderer.dds" # brown
 		}
 		
@@ -876,11 +799,6 @@ types PODVanillaLifestyleTypes
 		icon_lifestyle_unspent_points = {
 			visible = "[EqualTo_string( Lifestyle.GetKey, 'planetarygifts_lifestyle' )]"
 			texture = "gfx/interface/icons/lifestyles_perks/node_wanderer.dds" # brown
-		}
-		
-		icon_lifestyle_unspent_points = {
-			visible = "[EqualTo_string( Lifestyle.GetKey, 'charms_lifestyle' )]"
-			texture = "gfx/interface/icons/lifestyles_perks/node_learning.dds" # gray
 		}
 		
 		icon_lifestyle_unspent_points = {
@@ -900,11 +818,6 @@ types PODVanillaLifestyleTypes
 		
 		icon_lifestyle_unspent_points = {
 			visible = "[EqualTo_string( Lifestyle.GetKey, 'misc_arcanoi_lifestyle' )]"
-			texture = "gfx/interface/icons/lifestyles_perks/node_intrigue.dds" # purple
-		}
-		
-		icon_lifestyle_unspent_points = {
-			visible = "[EqualTo_string( Lifestyle.GetKey, 'horror_lifestyle' )]"
 			texture = "gfx/interface/icons/lifestyles_perks/node_intrigue.dds" # purple
 		}
 		
@@ -962,5 +875,46 @@ types PODVanillaLifestyleTypes
 			visible = "[EqualTo_string( Lifestyle.GetKey, 'wu_tan_lifestyle' )]"
 			texture = "gfx/interface/icons/lifestyles_perks/node_wanderer.dds" # yellow (brown as a placeholder)
 		}
+	}
+	
+	type pod_lifestyle_background_nonstretchy = widget
+	{
+		size = { 100% 100% }
+		
+		background = {
+			fittype = centercrop
+			
+			block "texture" {
+				texture = "[Lifestyle.GetBackground]"
+
+				modify_texture = {
+					texture = "gfx/interface/window_lifestyles/lifestyles_illustration_mask.dds"
+					blend_mode = alphamultiply
+					spriteType = Corneredstretched
+					spriteborder = { 30 30 }
+				}
+			}
+		}
+	}
+}
+
+template pod_lifestyle_title_bg {
+	using = Background_Title
+	margin_left = 24
+	margin_right = 24
+	margin_bottom = 4
+	margin_top = -2
+	alpha = 0.8
+}
+
+template pod_lifestyle_desc_bg {
+	using = Background_Title
+	margin_left = 20
+	margin_right = 20
+	margin_top = 6
+	margin_bottom = 40
+	modify_texture = {
+		texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+		blend_mode = alphamultiply
 	}
 }
