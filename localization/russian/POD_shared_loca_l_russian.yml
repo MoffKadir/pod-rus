@@ -82,17 +82,17 @@
  pod_display_number: "[SCOPE.GetValue('number')|0]"
 
  POD_trait_tooltip: "[GetTrait(SCOPE.GetFlagName('trait_tt')).GetName(GetPlayer)]"
- POD_trait_reason_tooltip: "#help Because you are [GetTrait(SCOPE.GetFlagName('trait_reason')).GetName(GetPlayer)]:#!"
+ POD_trait_reason_tooltip: "#help Из-за того, что у вас имеется свойство «[GetTrait(SCOPE.GetFlagName('trait_reason')).GetName(GetPlayer)]»:#!"
 
  POD_LOCALIZED_FLAG_WITH_TICKED_CHECKBOX: "$TAB$@trigger_pass! #high [Localize(SCOPE.GetFlagName('saved_tooltip'))]#!"
  POD_LOCALIZED_FLAG_WITH_UNTICKED_CHECKBOX: "$TAB$@trigger_fail_inactive! #low [Localize(SCOPE.GetFlagName('saved_tooltip'))]#!"
 
 
  # OFTEN USE OLD MUMMY LOCA
- POD_weather_magic_interaction_options_heading: "Which natural hazard shall I invoke?"
- POD_weather_magic.duel.success: "You successfully used weather magic"
- POD_weather_magic.duel.tt.attacker_wins: "The target region suffers from the selected natural hazard depending on your level of weather magic."
- POD_weather_magic.duel.failure: "You fail to use the weather magic"
- POD_weather_magic.duel.tt.attacker_lost: "You couldn't release the selected natural hazard over the target region"
- POD_weather_magic_from_enemy_toast: "Hazard!"
- POD_weather_magic_from_enemy.tt: "A natural hazard was released on your realm by [actor.GetFirstName]"
+ POD_weather_magic_interaction_options_heading: "Какое природное бедствие мне призвать?"
+ POD_weather_magic.duel.success: "Вы успешно использовали погодную магию"
+ POD_weather_magic.duel.tt.attacker_wins: "Выбранный регион подвергнется воздействию стихийного бедствия в зависимости от вашего уровня владения погодной магией."
+ POD_weather_magic.duel.failure: "Вам не удалось использовать погодную магию"
+ POD_weather_magic.duel.tt.attacker_lost: "Вы не сумели наслать выбранное стихийное бедствие на выбранный регион"
+ POD_weather_magic_from_enemy_toast: "Бедствие!"
+ POD_weather_magic_from_enemy.tt: "[actor.GetFirstName] [Select_CString(actor.IsFemale, 'вызвала', 'вызвал' )] стихийное бедствие в вашей державе"
