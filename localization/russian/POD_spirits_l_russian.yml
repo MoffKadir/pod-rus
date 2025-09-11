@@ -1,78 +1,78 @@
 ﻿l_russian:
 
 
- cannot_hurt_spirit_tt: "You do #bold not#! have any power to hurt Spirits."
- POD_spawn_random_spirit_effect_tooltip: "A [GetTrait('spirit').GetName( GetNullCharacter )] will appear"
- POD_spawn_friendly_spirit_effect_tooltip: "A #P friendly#! [GetTrait('spirit').GetName( GetNullCharacter )] will appear"
- POD_spawn_hostile_spirit_effect_tooltip: "A #N hostile#! [GetTrait('spirit').GetName( GetNullCharacter )] will appear"
- POD_spawn_gaia_spirit_effect_tooltip: "A #V Gaian#! [GetTrait('spirit').GetName( GetNullCharacter )] will appear"
- POD_spawn_ancestor_spirit_effect_tooltip: "An #V [ancestor_spirit|E]#! will appear"
- POD_spawn_wyrm_spirit_effect_tooltip: "A #N Wyrm#! [GetTrait('spirit').GetName( GetNullCharacter )] will appear"
+ cannot_hurt_spirit_tt: "У вас #bold нет#! способностей, позволяющих навредить духам."
+ POD_spawn_random_spirit_effect_tooltip: "Появится [GetTrait('spirit').GetName( GetNullCharacter )|l]"
+ POD_spawn_friendly_spirit_effect_tooltip: "Появится #P дружелюбный#! [GetTrait('spirit').GetName( GetNullCharacter )|l]"
+ POD_spawn_hostile_spirit_effect_tooltip: "Появится #N враждебный#! [GetTrait('spirit').GetName( GetNullCharacter )|l]"
+ POD_spawn_gaia_spirit_effect_tooltip: "Появится [GetTrait('spirit').GetName( GetNullCharacter )|l] #V Геи#!"
+ POD_spawn_ancestor_spirit_effect_tooltip: "Появится #V [Concept('ancestor_spirit', 'дух предка')|E]#!"
+ POD_spawn_wyrm_spirit_effect_tooltip: "Появится [GetTrait('spirit').GetName( GetNullCharacter )|l] #N Вирма#!"
 
- spirit_relative_became_ancestor: "[ancestor_spirit.GetName] has died and became an [ancestor_spirit|E]."
-
-
-
-
- spirit_message_title: "Spirits"
- POD_spawn_spirit_effect_desc: "A [GetTrait('spirit').GetName( GetNullCharacter )] has appeared"
-
- language_harmonys_melody_name: "Harmony's Melody"
- language_conflicts_drum_name: "Conflict's Drum"
- language_artisans_anthem_name: "Artisan's Anthem"
- language_seditions_lullaby_name: "Sedition's Lullaby"
- language_wisdoms_hymn_name: "Wisdom's Hymn"
- language_chaos_threnody_name: "Chaos' Threnody"
-
- language_ancestor_werewolf_name: "Primal Tongue"
- language_ancestor_bastet_name: "Kheuar"
- language_ancestor_mokole_name: "Dragon Tongue"
+ spirit_relative_became_ancestor: "[ancestor_spirit.GetName] [Select_CString(ancestor_spirit.IsFemale, 'умерла и стала', 'умер и стал' )] [Concept('ancestor_spirit', 'духом предка')|E]."
 
 
 
 
- spirit_language_cannot_learn_ancestor: "You cannot learn "
+ spirit_message_title: "Духи"
+ POD_spawn_spirit_effect_desc: "Появился [GetTrait('spirit').GetName( GetNullCharacter )|l]"
 
- learn_language_outcome_success.spirits.desc: "Spiritual languages are as whimsical as their speakers. Some use recognizable patterns, some don't. Luckily, the most widespread ones tend to have undergone the same journey than mortals ones do, leading to them being streamlined to be used by non spiritual entities.\nAfter all, spirits need to be understood when they bargain with visitors. Though it's likely that the most crafty ones will also use the intricacies of their language to try to get the upper hand in negotiations.\nThis is why you took precautions to learn what could be considered more niche vocabulary, hopefully avoiding you the fate of misunderstanding a spiritual contract in the future."
+ language_harmonys_melody_name: "Мелодия гармонии"
+ language_conflicts_drum_name: "Барабан конфликта"
+ language_artisans_anthem_name: "Гимн ремесленника"
+ language_seditions_lullaby_name: "Колыбельная мятежа"
+ language_wisdoms_hymn_name: "Гимн мудрости"
+ language_chaos_threnody_name: "Музыка хаоса"
 
- learn_language_outcome_failure.spirits.desc: ""After lots of hard work... nothing! It is #EMP impossible#! to learn this spiritual language. No matter how hard I try, I speak like a barely-weaned babe and blabber like a fool!\n\nBah! This was a waste of time...""
-
- learn_spirit_language_complete: "You have learned [target.GetShortUINamePossessiveNoTooltip] [spirit_language|E]"
-
-
-
- spirit_short_chiminage_modifier: "Short Chiminage"
- spirit_medium_chiminage_modifier: "Chiminage"
- spirit_long_chiminage_modifier: "Long Chiminage"
-
-
+ language_ancestor_werewolf_name: "Первобытный"
+ language_ancestor_bastet_name: "Кьюарский"
+ language_ancestor_mokole_name: "Драконий"
 
 
- spirit_rabbit_pact_modifier: "Pact: Rabbit"
- spirit_deer_pact_modifier: "Pact: Deer"
- spirit_bat_pact_modifier: "Pact: Bat"
- spirit_rooster_pact_modifier: "Pact: Rooster"
- spirit_tiger_pact_modifier: "Pact: Tiger"
- spirit_rhino_pact_modifier: "Pact: Rhino"
- spirit_bear_pact_modifier: "Pact: Bear"
- spirit_porcupine_pact_modifier: "Pact: Porcupine"
- spirit_ant_pact_modifier: "Pact: Ant"
- spirit_bull_pact_modifier: "Pact: Bull"
- spirit_vulture_pact_modifier: "Pact: Vulture"
- spirit_stone_pact_modifier: "Pact: Stone"
- spirit_fox_pact_modifier: "Pact: Fox"
- spirit_mouse_pact_modifier: "Pact: Mouse"
- spirit_chameleon_pact_modifier: "Pact: Chameleon"
- spirit_raccoon_pact_modifier: "Pact: Raccoon"
- spirit_crow_pact_modifier: "Pact: Crow"
- spirit_monkey_pact_modifier: "Pact: Monkey"
- spirit_toad_pact_modifier: "Pact: Toad"
- spirit_tree_pact_modifier: "Pact: Tree"
- spirit_werewolf_pact_modifier: "Pact: Werewolf"
- spirit_bastet_pact_modifier: "Pact: Bastet"
- spirit_mokole_pact_modifier: "Pact: Mokolé"
- spirit_formless_pact_modifier: "Pact: Formless"
- spirit_shadow_pact_modifier: "Pact: Shadow"
- spirit_balefire_pact_modifier: "Pact: Balefire"
- spirit_nightmare_pact_modifier: "Pact: Nightmare"
- spirit_human_pact_modifier: "Spirit Pact"
+
+
+ spirit_language_cannot_learn_ancestor: "Вы не можее выучить "
+
+ learn_language_outcome_success.spirits.desc: "Духовные языки столь же причудливы, как и их носители. Некоторые используют узнаваемые шаблоны, некоторые - нет. К счастью, наиболее распространенные из них, как правило, прошли тот же путь, что и обычные языки, что привело к их упрощению для использования недуховными сущностями.\nВ конце концов, духов нужно понимать, когда они торгуются с посетителями. Хотя, вполне вероятно, что самые хитроумные из них также будут использовать тонкости своего языка, чтобы попытаться одержать верх в переговорах.\nВот почему вы приняли меры предосторожности, чтобы выучить то, что можно было бы считать более узкоспециализированной лексикой, что, возможно, позволит вам избежать участи неправильно понимать духовный договор в будущем."
+
+ learn_language_outcome_failure.spirits.desc: "«После кучи кропотливой работы... ничего! Этот духовный язык #EMP невозможно#! выучить. Как бы я ни [Select_CString(ROOT.Char.IsFemale, 'старалась', 'старался' )], я говорю как младенец, которого только отняли от груди, и болтаю как [Select_CString(ROOT.Char.IsFemale, 'дура', 'дурак' )]!\n\nБа! Это была пустая трата времени...»"
+
+ learn_spirit_language_complete: "Вы выучили [Concept('spirit_language', 'духовный язык')|E] персонажа [target.GetShortUINamePossessiveNoTooltip]"
+
+
+
+ spirit_short_chiminage_modifier: "Короткий шиминаж"
+ spirit_medium_chiminage_modifier: "Шиминаж"
+ spirit_long_chiminage_modifier: "Долгий шиминаж"
+
+
+
+
+ spirit_rabbit_pact_modifier: "Договор: Кролик"
+ spirit_deer_pact_modifier: "Договор: Олень"
+ spirit_bat_pact_modifier: "Договор: Летучая мышь"
+ spirit_rooster_pact_modifier: "Договор: Петух"
+ spirit_tiger_pact_modifier: "Договор: Тигр"
+ spirit_rhino_pact_modifier: "Договор: Носорог"
+ spirit_bear_pact_modifier: "Договор: Медведь"
+ spirit_porcupine_pact_modifier: "Договор: Дикобраз"
+ spirit_ant_pact_modifier: "Договор: Муравей"
+ spirit_bull_pact_modifier: "Договор: Бык"
+ spirit_vulture_pact_modifier: "Договор: Стервятник"
+ spirit_stone_pact_modifier: "Договор: Камень"
+ spirit_fox_pact_modifier: "Договор: Лиса"
+ spirit_mouse_pact_modifier: "Договор: Мышь"
+ spirit_chameleon_pact_modifier: "Договор: Хамелеон"
+ spirit_raccoon_pact_modifier: "Договор: Енот"
+ spirit_crow_pact_modifier: "Договор: Ворон"
+ spirit_monkey_pact_modifier: "Договор: Обезьяна"
+ spirit_toad_pact_modifier: "Договор: Жаба"
+ spirit_tree_pact_modifier: "Договор: Дерево"
+ spirit_werewolf_pact_modifier: "Договор: Оборотень"
+ spirit_bastet_pact_modifier: "Договор: Бастет"
+ spirit_mokole_pact_modifier: "Договор: Моколе"
+ spirit_formless_pact_modifier: "Договор: Бесформенность"
+ spirit_shadow_pact_modifier: "Договор: Тень"
+ spirit_balefire_pact_modifier: "Договор: Губительный огонь"
+ spirit_nightmare_pact_modifier: "Договор: Кошмар"
+ spirit_human_pact_modifier: "Духовный договор"
