@@ -2,3 +2,18 @@
  POD_learn_true_name.1.t: "Истинное имя"
  POD_learn_true_name.1.desc: "Истинное имя существа - это одновременно и его существование, и его история, и его идентичность. Человек может рассматривать его как платоновскую схему существа. Это слово охватывает каждую часть его объекта, от внутренних органов до самой души.\n\nЧем разумнее существо, тем сложнее его истинное имя. У животных сравнительно простые имена, в то время как имя человека может меняться в зависимости от жизненного опыта.\n\nПоиск истинных имён сам по себе является мучительной задачей и требует глубокого психологического понимания цели. Если кто-то знает своё истинное имя, он может защитить его от магов, которые могут использовать его против него, записав его с помощью тайных рун и магических оберегов."
  POD_learn_true_name.1.a: "И вот теперь [PlayerJourneyTarget.GetFirstName] [Select_CString(PlayerJourneyTarget.IsFemale, 'обнажена', 'обнажен' )]."
+
+ POD_learn_true_name.2.t: "True Name for [Localize(Concatenate('POD_truename_', GetPlayer.MakeScope.Var('true_name_variable').GetFlagName))]"
+ POD_learn_true_name.2.desc: "My contemplation has borne fruit.\n\nI've gained complete understanding of a new true name: #V [Localize(Concatenate('POD_truename_', GetPlayer.MakeScope.Var('true_name_variable').GetFlagName))]#!."
+ POD_learn_true_name.2.a: "My mind expands. But I am not done yet."
+ POD_learn_true_name.2.a.tt: "You will immediately start another [journey|E] to learn new true name.\nCost: [piety_i]250"
+ POD_learn_true_name.2.b: "My mind expands. And with it, the possibilities."
+ 
+ POD_learn_true_name.3.t: "True Names within"
+ POD_learn_true_name.3.desc: "Which [traits|E] do you want to study?"
+ POD_learn_true_name.3.a: "Study these traits."
+ POD_learn_true_name.3.b: "Nevermind."
+ 
+ POD_learn_true_name.4.t: "[GetPlayer.MakeScope.Var('current_journey').Var('target_trait').Trait.GetName(GetPlayer)] Insights"
+ POD_learn_true_name.4.desc: "My contemplation has borne fruit.\n\nI've gained complete understanding of a new true name: [GetPlayer.MakeScope.Var('current_journey').Var('target_trait').Trait.GetName(GetPlayer)]."
+ POD_learn_true_name.4.a: "My mind expands. And with it, the possibilities."

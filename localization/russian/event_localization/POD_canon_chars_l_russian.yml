@@ -624,7 +624,7 @@
  silver_attacks_modifier_desc: "Люпины в этой провинции беспокойны и постоянно испытывают пределы вашего контроля."
 
  podintroductions.150.t: "Ваша история"
- podintroductions.150.desc: "Леди Апация, ваш приемный народ в опасности. Ваш контроль над Сибирским ханством оспаривают стаи бешеных люпинов Серебряных клыков, разгневанных вашим присутствием на территории, которую они считают своей родиной. Вы могли бы сразиться с ними, но это будет долгий и трудный процесс, а ваше положение в регионе и так небезопасно.\nОднако появляется другое решение: Анда, вампиры из монгольской культуры, быстро захватывают Степи. Их лидер недавно прислал послание, в котором просит вас о верности его Орде в обмен на защиту от мародерствующих люпинов. Возможно, временная потеря независимости стоит безопасности вашего народа?"
+ podintroductions.150.desc: "Леди Апация, ваш приемный народ в опасности. Ваш контроль над Сибирским ханством оспаривают стаи бешеных люпинов Серебряных клыков, разгневанных вашим присутствием на территории, которую они считают своей родиной. Вы могли бы сразиться с ними, но это будет долгий и трудный процесс, а ваше положение в регионе и так небезопасно.\nОднако появляется другое решение: [Glossary('Анда','podgloss.anda')], вампиры из монгольской культуры, быстро захватывают Степи. Их лидер недавно прислал послание, в котором просит вас о верности его Орде в обмен на защиту от мародерствующих люпинов. Возможно, временная потеря независимости стоит безопасности вашего народа?"
  podintroductions.150.a: "Мне не нужна помощь!"
  podintroductions.150.b: "Степи объединяются."
 
@@ -680,6 +680,7 @@
  yorak_intro_tooltip: "Йораку доступен особый способ казни, который позволяет вам подпитывать Собор до тех пор, пока вы его контролируете"
 
  EXECUTION_YORAK: "Скормить Собору"
+ EXECUTION_SHOU: "Пожирание огня"
 
  cathedral_famished_modifier: "Изголодавшийся собор"
  cathedral_famished_modifier_desc: "После недавней подпитки Собору хочется ещё. Гораздо больше."
@@ -770,9 +771,6 @@
  podintroductions.163.desc: "Лорд Ахмед, вы участвовали в создании Оливкового собора, надеясь на установление прочного мира в регионе, но у вас всё ещё есть некоторые сомнения. Возможно, вам придётся найти другой способ, который мог бы побудить вас к более активным действиям.\nК сожалению, ваша вера изолировала вас от остального [Concept('Clan', 'клана')|E]. Таким образом, вам, возможно, придётся полагаться на поиск перспективных кандидатов и знакомить их с вашей уникальной философией. Это будет долгая задача, но ради мира на Святой земле? Оно того стоит."
  podintroductions.163.a: "Самые важные задачи из всех."
  ahmed_intro_tooltip: "Ахмед всегда будет преуспевать в наставлении детям своей конфессии, пока следует Via Christi."
-
- POD_education_events.100.option.d: "Прислушайся к словам Господа."
- POD_education_events.100.ahmed: "Ахмеду доступна эта опция, чтобы убедиться, что ваше дитя будет исповедовать вашу религию. Она будет доступна до тех пор, пока вы следуете Via Christi."
 
  podintroductions.164.t: "Ваша история"
  podintroductions.164.desc: "Лорд Тетмес, за последнее время вы добились значительного прогресса. Бану Хаким разделены сильнее, чем когда-либо, а это означает, что ваша Паутина кинжалов может оказывать гораздо большее влияние, чем раньше. Тем не менее, предстоит проделать ещё много работы, прежде чем [Concept('Clan', 'клан')|E] будет готов к возвращению вашего хозяина.\nОбратите внимание на другие фракции вокруг вас и быстро уничтожьте их. Вы не можете позволить другому старейшине возглавить Бану Хаким. Как только ваши собратья полностью захватят Аламут, вы можете быть уверены, что Чёрный пастырь щедро вознаградит вас, ибо разве вы не его самый верный слуга?"
@@ -1429,7 +1427,7 @@
  PODcanon_chars.54.c: "Так многому нужно научиться!"
 
  podintroductions.208.t: "Ваша история"
- podintroductions.208.desc: "Лорд Чинхай, ваш долг - защищать Анда. Однако степи огромны, и вам приходится много странствовать, чтобы решать различные проблемы, возникающие ночь за ночью.\nСитуация ухудшилась с тех пор, как ваш народ стал обращаться к вам как к высшей инстанции в разршении споров и других мелких конфликтов. Как неофициальный «Судья степей», вы обладаете огромной властью, властью, которую начинаете понимать в достаточной степени, чтобы использовать её на благо своих собратьев. Знают они об этом или нет."
+ podintroductions.208.desc: "Лорд Чинхай, ваш долг - защищать [Glossary('Анда','podgloss.anda')]. Однако степи огромны, и вам приходится много странствовать, чтобы решать различные проблемы, возникающие ночь за ночью.\nСитуация ухудшилась с тех пор, как ваш народ стал обращаться к вам как к высшей инстанции в разршении споров и других мелких конфликтов. Как неофициальный «Судья степей», вы обладаете огромной властью, властью, которую начинаете понимать в достаточной степени, чтобы использовать её на благо своих собратьев. Знают они об этом или нет."
  podintroductions.208.a: "Судья и полководец."
  chinkhai_intro_tooltip: "У Чинхая есть особое [Concept('character_interaction', 'взаимодействие персонажа')|E], позволяющее вершить правосудие среди ваших вассалов."
 
@@ -1437,7 +1435,7 @@
  POD_chinkhai_interaction_desc: "Я нахожусь на заседании."
 
  PODcanon_chars.55.t: "Суд"
- PODcanon_chars.55.desc: "Как высший авторитет в Орде Анда, вы совершенно вольны начинать и заканчивать любое судебное разбирательство по своему усмотрению. Однако вам необходимо поддерживать репутацию, и излишняя снисходительность может быть расценена как слабость."
+ PODcanon_chars.55.desc: "Как высший авторитет в Орде [Glossary('Анда','podgloss.anda')], вы совершенно вольны начинать и заканчивать любое судебное разбирательство по своему усмотрению. Однако вам необходимо поддерживать репутацию, и излишняя снисходительность может быть расценена как слабость."
  PODcanon_chars.55.a: "[Select_CString(recipient.IsFemale, 'Невиновна', 'Невиновен' )]!"
  PODcanon_chars.55.b: "[Select_CString(recipient.IsFemale, 'Виновна', 'Виновен' )]!"
  PODcanon_chars.55.c: "Это дело неубедительно."
@@ -1484,8 +1482,8 @@
  deverra_custom_decision3: "Вы или ваш сюзерен полностью контролируете герцогство [GetTitleByKey('d_prussia').GetNameNoTier]"
 
  podintroductions.212.t: "Ваша история"
- podintroductions.212.desc: "Леди Дьянанг, ваш двор силён. Благодаря вашему союзу со свирепым народом джунглей Дайвьета и Ангкора, ваши восточные границы в безопасности. Сейчас вашего внимания требует запад.\nИндию всегда было трудно усмирить, поскольку еретики из двора Бесконечного грома и так называемые #L $pod_cainites|l$ы#! вызывали проблемы. Возможно, ваши восточные друзья могли бы предоставить свои когти и клыки, чтобы помочь вам усмирить этот непокорный регион?"
- podintroductions.212.a: "Алый феникс парит высоко."
+ podintroductions.212.desc: "Lady Dyanang, your Court stands divided.\nInfernalist [akuma|E] are rising from seemingly everywhere, regionalist Ancestors are ignoring your summons and your once student Piyau Payung is apparently preparing some form of grand retribution. All is not lost however.\nThanks to your alliance with the Ferocious People of the jungles of Dai Viet and Angkor, you still have a powerful ace up your sleeve. Numerous favors and pacts bind them to you and, while you would be cautious to ask too much of these capricious shapeshifters, they should be happy to lend aid against the most devious of your foes. Their help should hopefully be enough to restore order to your Court."
+ podintroductions.212.a: "The Scarlet Phoenix isn't ready for rebirth yet."
  dyanang_intro_tooltip: "У Дьянанг есть особое незначительное решение, позволяющее нанять профессионалов-оборотней."
 
  dyanang_decision: "Свирепый народ"
@@ -1495,7 +1493,7 @@
  dyanang_decision_effect_tooltip: "У вас будет выбор, сколько профессионалов-оборотней создать."
 
  PODcanon_chars.56.t: "Помощь из джунглей"
- PODcanon_chars.56.desc: "Грозные хенгейокай были вашими надёжными союзниками с тех пор, как в 1210 году Золотой плащаница Ву бескорыстно спас жизнь Чжун Луну, дракону-перевёртышу, известному как Нонгкхай. Этой дружбой было бы неразумно злоупотреблять, но вы всё равно можете рассчитывать на их помощь в трудную минуту."
+ PODcanon_chars.56.desc: "Грозные хенгейокай были вашими надёжными союзниками с тех пор, как в 1210 году Золотой плащаница [Glossary('Ву','podgloss.wu')] бескорыстно спас жизнь Чжун Луну, дракону-перевёртышу, известному как Нонгкхай. Этой дружбой было бы неразумно злоупотреблять, но вы всё равно можете рассчитывать на их помощь в трудную минуту."
  PODcanon_chars.56.a: "Одного сентай хватит."
  PODcanon_chars.56.b: "Нужны два сентая."
  PODcanon_chars.56.c: "Вся помощь, которую вы сможете получить."
@@ -1915,7 +1913,6 @@
  constancia_decision_confirm: "Пророчества не сбудутся."
  constancia_decision_custom: "[GetScriptedCharacterByHistoryID('790537').GetFirstName] должна быть мертва, находиться в [Concept('torpor', 'торпоре')|E], быть вашим вассалом или вассалом державы [GetTitleByKey('k_erciyes').GetNameNoTier]"
  constancia_decision_custom2: "[GetScriptedCharacterByHistoryID('710502').GetFirstName], главный лейтенант #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('710501').GetID] #L Лазаря#!#!, должна быть мертва, находиться в [Concept('torpor', 'торпоре')|E]"
- constancia_decision_custom3: "[GetScriptedCharacterByHistoryID('710501').GetFirstName] должен быть мёртв, или находиться в [Concept('torpor', 'торпоре')|E]"
  constancia_decision_custom4: "[Concept('title', 'Титул')|E] [GetTitleByKey('k_giovanni').GetNameNoTier] не должен существовать"
 
  lucretia_reckless_modifier: "Безрассудная Лукреция"
@@ -2211,7 +2208,7 @@
 
  podintroductions.277.desc: "Таинственный Инаухатен, вы неуклонно продвигаетесь к своим целям. Вы заручились поддержкой могущественной секты Тал'махе'Ра, некоторые даже сказали бы, что вы её истинный вдохновитель. В любом случае, это укрепляет ваше положение в обозримом будущем.\nВам нужно продолжать улучшать положение Тал'махе'Ра в Индии, поскольку вы знаете, что ваши судьбы переплетены. К счастью, теперь вы в совершенстве владеете сехемом из самого Загробного мира, что делает вас гораздо более гибкими, чем те мумии, связанные с Египтом. Это сила, которую вы намерены использовать в полной мере."
  podintroductions.277.a: "Из Египта в Енох..."
- inauhaten_intro_tt: "У Инаухатена есть доступ к цели «Начало конца».\nУ вас также есть доступ к уникальным герцогским зданиям, которые позволят пассивно восстановить ваш сехем."
+ inauhaten_intro_tt: "У Инаухатена есть доступ к цели «Начало конца».\nУ вас также есть доступ к уникальным герцогским зданиям."
 
  podintroductions.278.desc: "Лорд Астрохен, бессмертие не так велико, как вы думали. Да, вам больше не нужно беспокоиться о смерти, но теперь вам придётся беспокоиться о проклятии, наложенном на вас Гором. Эта сокровищница артефактов, переданная вам на хранение, была тяжким бременем на протяжении тысячелетий. На протяжении веков вы использовали множество культов, доверенных лиц и другие группы глупых смертных, чтобы помочь вам в выполнении вашей задачи, и всё шло хорошо... до Кли Кодеша.\nЭтот несносный шутник манипулировал орденом Храма и несколькими вампирами-авантюристами, чтобы они совершили набег на ваши сокровища, воспользовавшись хаосом битвы, чтобы сбежать с вашими ценными артефактами ... прежде чем рассеять их по всему миру.\nВы никогда не знали подробностей проклятия Гора, но боитесь, что время пошло. Вам нужно вернуть их, одно за другим, если потребуется, пока само бессмертие, за которое вы так упорно боролись, не оказалось под угрозой."
  podintroductions.278.a: "Им место в моём музее!"
@@ -2445,3 +2442,150 @@
  podintroductions.321.desc: "Бена была одной из первых, кто стал гулем на службе у Станислава, краковского вампира, возглавлявшего культ как «святой», и она быстро стала одной из его любимиц. Она постоянно следовала за ним и отходила от него только тогда, когда ей приказывали, и своей преданностью вскоре заслужила [Concept('Embrace', 'Объятия')|E]. По мере того как культ рос и все больше верующих приносили свою кровь «святому», вернувшемуся из мертвых, Станислав постепенно становился всё более ленивым и надменным, погружённым в мысли о собственной значимости. В результате Бена взяла на себя большую часть ночных дел. Она научилась обчищать карманы, чтобы наполнить их казну, и заманивать потенциальных приверженцев культа в подземные пещеры, мастерски разыгрывая роль испуганной маленькой девочки, и превратила растущий культ в сильную, сплочённую группу.\nВ последние годы Станислав, по сообщениям, впал в [Concept('torpor', 'торпор')|E]. Причина этого неизвестна, и Бена молчит. Сейчас она открыто руководит культом, хотя и делает это осторожно, и число его членов значительно выросло с тех пор, как Станислав перестал появляться на публике. Конечно, Бена, похоже, верит в своего сира сейчас так же сильно, как и до того, как её обратили, но обстоятельства его исчезновения наводят на мысль, что за этой историей может скрываться нечто большее, и она была более чем готова взять на себя управление культом."
  podintroductions.321.a: "Я поведу их в новые страны."
  podintroductions.321.b: "Польша останется нашим домом."
+
+ junius_alim_modifier: "Alim"
+ junius_alim_modifier_desc: "Junius has an unmatched knowledge of Islamic law and tradition outside the Ashirra. This has earned him a great deal of respect among the Islamic [cainite|E] world."
+
+ podintroductions.322.t: "Turning the Tortoise"
+ podintroductions.322.desc: "Northeast Asia has traditionally been the domain of the Black Tortoise Court of the [kuei_jin|E]. Heavily influenced by the nomads it dwelt with, this Court has been having border conflicts with the Chinese Yellow Emperor Court for centuries, even more so since the Jurchen Jin dynasty started pushing south.\nThe heavily decentralized nature of the Black Tortoise is proving to be his downfall as the [Glossary('Yama Kings','podgloss.yamaking')]' influence has been growing steadily for a long while and [akuma|E] are now running rampant in the steppes. The $pod_cainites$ [Glossary('Anda','podgloss.anda')] following the Mongols proved to be the last nail on the coffin. The Black Tortoise Court now lies shattered, its center of power seemingly oblivious to its crumbling as it continues its petty skirmishes with the Yellow Emperor Court.\n\nThe main question remaining is which power will ultimately end the Tortoise's agony and rise to control the region?"
+ podintroductions.322.a: "A once great court's slow downfall."
+  
+ podintroductions.323.t: "Daimyos of the Night"
+ podintroductions.323.desc: "On paper, Japan is part of the Azure Dragon Court of mainland [kuei_jin|E]. De facto however, it has been doing its own thing for several centuries now.\nJapan vampires call themselves "Gaki" and are divided by clans, the Bishamon lead by Miura Yasutami being the dominant one at the moment. It also has the largest concentration of $pod_cainites$ in Asia though their political relevance is basically non existent.\n\nThe nightly rulers of Japan have been observing the collapse of the mainland courts with interest. Miura Yasutami is an advocate of waiting for their downfall to formally cut ties with them while others would like a more aggressive split. Whatever the method they end up choosing, Japanese [kuei_jin|E] seem poised to soon build their own court and become a considerable force in their own right.\nIt remains to be seen if the rival clans (and the estranged $pod_cainites$) will stay united after achieving this common goal."
+ podintroductions.323.a: "Amaterasu's domain rises."
+    
+ podintroductions.324.t: "The Sleeping Dragon"
+ podintroductions.324.desc: "Korea is the heart of the Azure Dragon Court, a political entity that is supposed to also oversee Japan. De facto, this hasn't been the case for centuries now and the Court has been sidelined as a dependent of the more powerful Chinese Yellow Emperor Court. Xiao, the latest Emperor "suggested" by the Chinese, is a shining example of a line of barely competent pawns.\n\nTimes are changing however as the Yellow Emperor Court falls more and more into decline. Ambitious Korean [kuei_jin|E] such as the (unrecognized) Ancestor of P'yong'yang Wang Kyu and the mysterious Soo-kyung Ahn are bidding their time and gathering strength. Xiao's time on the throne is likely to be short-lived but it remains unclear what will emerge from the Azure Dragon's fall and under which leadership."
+ podintroductions.324.a: "At the crossroads."
+    
+ podintroductions.325.t: "The Bloody Fall of the Phoenix"
+ podintroductions.325.desc: "Southeast Asia was once home to the only Court rivaling China's Yellow Emperor Court, the Scarlet Phoenix. While said Court still technically exists, it has been reduced to very little because of centuries of indolence and a good dose of infighting. This power vacuum has let Akumas take hold in most of the area and the Scarlet Phoenix Court now enjoys the dubious reputation of being an infernalist infested hellhole.\nThe Yellow Emperor Court itself has pondered direct intervention, something the fiercely independent [kuei_jin|E] of the region would likely not allow easily.\n\nWhile most already consider the Scarlet Phoenix Court lost, rumors abound of a reclusive [Glossary('Bodhisattva','podgloss.bodhisattva')] named Piyau Payung recently coming out of the jungles to set things right.\nKnowing Piyau's "unique" philosophy however, most are wondering if the cure will be worse to endure than the disease..."
+ podintroductions.325.a: "A bloody reckoning is coming..."
+ 
+ podintroductions.326.t: "All is Well Under Heaven"
+ podintroductions.326.desc: "To the outside eye, the Yellow Emperor Court is still the pinnacle of the [kuei_jin|E] courts. It is unified under a wise leadership that promotes regional innovations, is unconcerned by mortal struggles and is running like a remainder of better days.\nThe truth, as always, is more complicated.\n\nThe Yellow Emperor is reclusive at best, a madman at worst. His incompetent sycophants are running the realm in his stead. The Jurchen courts of the North and the Song courts of the South are quietly plotting a schism. The [Glossary('Anda','podgloss.anda')] $pod_cainites$ are waiting for the right moment to follow their mortal counterparts' conquests. New heresies, some dangerously close to infernalism, are appearing unchecked everywhere.\n\nIt will take very little for Heaven to come crashing down on the fragile hegemon of China."
+ podintroductions.326.a: "Long united..."
+ 
+ podintroductions.327.desc: "Ambitious Wang Kyu, your bold schemes to take over Korea during your mortal life didn't bear fruit. Still, your death was merely a step in your inevitable ascension it seems. Returning as a [kuei_jin|E], you lost no time looking for opportunities to climb the immortal ladder.\nThe current chaos in P'yong'yang has claimed the life of the previous Ancestor and, before the Azure Dragon Court could react, you rose to the occasion and took the throne. While they haven't confirmed you, you have little concerns about the Court's reaction as, during your time there, you noticed that they are indolent and slow to react.\nThe true threat to your reign is much closer by, the self proclaimed rebel Hojil, burned to hell alongside his mentor Myoch'ong in 1136, came back and used his prestige to gather a following and claim P'yong'yang as his own.\nThis is your first hurdle to overcome and Hojil's removal will hopefully be a good first step to earn some legitimacy."
+ podintroductions.327.a: "I'm here to stay."
+ wang_kyu_intro_tt: "As Wang Kyu, you start with very low legitimacy, something that can be solved by an unique decision."
+ 
+ wang_kyu_decision: "Fated Master of Korea"
+ wang_kyu_decision_desc: "Since your death the rules have changed but the goal hasn't. Korea will be yours, come what may. Securing your rule over P'yong'yang is the first step."
+ wang_kyu_decision_tooltip: "Looking ahead."
+ wang_kyu_decision_confirm: "P'yong'yang, and Korea, are mine."
+ wang_kyu_custom_decision: "[GetScriptedCharacterByHistoryID('795047').GetFirstName] must be dead."
+
+ podintroductions.328.desc: "Lady Ahn, you have no memories of your mortal life and you awakened as a [kuei_jin|E] alongside some beautiful flowers. You have used this mysterious aura and your natural charisma to great effect so far and earned an enviable reputation among Korea's vampires. Still, the mystery of your past intrigues you.\nThe flowers, clearly magical in nature, are without a doubt the key to something deeper. Studying them as they flourish in your garden could be a solution to your conundrum."
+ podintroductions.328.a: "Of Ebon and Scarlet..."
+ soo_kyung_intro_tt: "As Soo-kyung Ahn, you have an unique decision to improve your starting flowers artifact, as long as you hold it of course."
+ 
+ soo_kyung_decision: "Of Ebon and Scarlet"
+ soo_kyung_decision_desc: "The flowers you found next to you as you awakened as a [kuei_jin|E] hold a deeper meaning. Time to uncover their secrets."
+ soo_kyung_decision_tooltip: "The key to my past or to my future?"
+ soo_kyung_decision_confirm: "Tell me more, queens of my garden..."
+ soo_kyung_decision_tt: "You will upgrade the flowers artifact to a higher rarity and choose a new modifier to give it."
+
+ PODcanon_chars.97.desc: "The flowers that accompanied you for as long as you can remember are seemingly tied to the Ebon Dragon and Scarlet Queen, two of the most powerful godlike entities of the Asian supernaturals.\nWere they a gift? A remainder? A promise? There is no way to know but even the uninitiated can feel the magical power residing within them. As the masterpieces of your famed garden, they seem to grow and flourish alongside your own understanding of yourself and the world surrounding you."
+ PODcanon_chars.97.a: "Their magic is expanding."	
+ PODcanon_chars.97.b: "They are attuned to my [Glossary('Dharma','podgloss.dharma')]."
+ PODcanon_chars.97.c: "They brim with Chi."
+ PODcanon_chars.97.d: "They whisper secrets..."
+ artifact_magic_amulet_modifier: "Magical Resonance"
+ the_celestial_nail_modifier: "Dharmic Enlightenment"
+ the_three_books_modifier: "Chi Font"
+ artifact_learning_per_piety_level_modifier: "Tools of Learning"
+
+ podintroductions.329.desc: "Empress Zetian, your arrival in the [kuei_jin|E] world has been a tremendous event for this jaded supernatural community. While no one of them would say it to your face, it is clear that they are watching your every move, wondering if you will make as much of an impact here as you did as Empress of China. For your part, you have been content learning about this strange August Court system, so different from mortal China and yet so close.\nFrom the confines of the Shaolin Monastery where you have been trained, you have heard the rumors of nomadic invaders from the north and infernalists from the inside threatening the seemingly endless peace of the Yellow Emperor Court. If a time of chaos is at hand, it is likely that the eyes watching you will be drawn elsewhere and then... well, then it might be time to choose your own destiny and ambition for your second life."
+ podintroductions.329.a: "An immortal dynasty at hand?"
+ wu_zetian_modifier: "Heavenly Empress"
+ wu_zetian_modifier_desc: "People remember Wu Zetian's reign. Her claim to rule has transcended her very death.\n #warning -50% cost to create titles. #! \n #warning The fabricate claim action of your Chancellor is 50% faster #!"
+
+ podintroductions.330.desc: "Brazen Shou, you have been, rightfully, the most feared [akuma|E] infernalist active in Asia for a long while. Despite many (short lived) alliances between the Yellow Emperor and Scarlet Phoenix Courts to destroy you, you are still there while they crumble under their own weakness.\nWhile this gives you an unique opportunity to expand your domain without the major courts being able to intervene, this also makes things... boring. Being worshiped by small villages and band of pirates will soon lose its luster if you have no "righteous hero" to burn to death from time to time. You will have to find an alternative source of "volunteers" as you wouldn't want to lose your nickname of Flame-Eater after all..."
+ podintroductions.330.a: "Burning the way for the [Glossary('Demon Emperor','podgloss.demonemperor')]."
+ shou_intro_tt: "Shou has access to an unique execution method, Flame-Eating, that gives lifestyle experience and stress relief."
+ 
+ podintroductions.331.desc: "Cunning Tashimoto, your rise to fame as the best undead Japanese general has been quick and impressive by all accounts. For many of your detractors, this might be the sign of a dark secret fueling this unprecedented event.\n\nTo be honest, they are actually right.\n\nBy all accounts, you are actually an infernalist [akuma|E] as you have sold your soul to [Glossary('Emma-O','podgloss.emmao')] in exchange for your improved prowess and masterful new powers. The thing is, in war and in dealing with demons, you never intend to play fair. As Japan is singing your praise and [Glossary('Emma-O','podgloss.emmao')] is rejoicing in having enticed you to his service, you are planning perhaps the greatest heist of history. It will take time to plan it out thoroughly. You wouldn't want to rush things.\n\nAfter all, your very soul is at stake."
+ podintroductions.331.a: "They will never see it coming."
+ tashimoto_intro_tt: "In 20 years, Tashimoto will start his plan. This event will have serious repercussions (and rewards)."
+  
+ hunted_emmao_modifier: "Hunted by [Glossary('Emma-O','podgloss.emmao')]"
+ hunted_emmao_modifier_desc: "The most powerful of the [Glossary('Yama Kings','podgloss.yamaking')] has taken a personal, obsessive and furious interest in your demise. The promise of power to anyone offering information about you is very very flattering to your ego."
+ PODcanon_chars.98.t: "Stealing Your Own Soul"
+ PODcanon_chars.98.desc: "The heist is ready.\nUsing [Glossary('Emma-O','podgloss.emmao')]'s carelessness and your growing reputation in Japan, you are confident that you will be able to pull it off, stealing back the soul you sold to the demon for power. Still, there are repercussions to consider.\nYou could go all out, stealing back your soul alongside [Glossary('Emma-O','podgloss.emmao')]'s treasury. A rewarding but bold move that will reveal to everyone that you were an [akuma|E]... and also angers the powerful [Glossary('Yama King','podgloss.yamaking')] to no end.\nAnother option is to just steal your soul. Still will ostracize your from other [kuei_jin|E] but should mitigate [Glossary('Emma-O','podgloss.emmao')]'s wrath.\nFinally, you could do nothing at all, but this would mean truly belonging to the master of [Glossary('Kakuri','podgloss.kakuri')] for all eternity..."
+ PODcanon_chars.98.a: "Go big or go home!"	
+ PODcanon_chars.98.b: "My soul is reward enough."
+ PODcanon_chars.98.c: "It is too risky..."
+  
+ podintroductions.332.desc: "Fearless Yukio, you are one of the most respected pupils of Kuro-sama, the legendary master of [kuei_jin|E] assassins. Your training is far from over however and your focus is pulled from it by your desire for revenge against [Glossary('Emma-O','podgloss.emmao')] and your duties to the Koga clan.\nYou will need to balance all of those to fulfill your great potential. The peak of the mountain is still far but you don't plan on deviating from your journey."
+ podintroductions.332.a: "Focus and patience."
+ yukio_intro_tt: "Yukio has access to a special character interaction on Kuro-sama to ask for training. This will give her prowess up until 40. Then, she will complete her training."
+ 
+ pod_exhausted_modifier: "Exhausted"
+ POD_yukio_interaction: "Training with Sensei"
+ POD_yukio_interaction_desc: "A (grueling) training session to master the ways of the assassin."
+ 
+ PODcanon_chars.99.t: "The Last Climb"
+ PODcanon_chars.99.desc: "You have conquered Daisetsuzan. The desolate mountain peak where Kuro-sama trains his pupils is now a friend and no longer a stern teacher. Kuro-sama taught you every thing he knows about murder, from the planning of the act to the cold and calculated moment where your dagger pierces the heart of your target.\nSensei has always been cold and difficult to read and tonight is no exception. You face off against each other one last time as Kuro-sama evaluates your form and swordsplay, a mere formality at this point. After this duel, you are coldly sent off and said to never return to Daisetsuzan.\nYou bow your head and prepare to leave when, perhaps for the first time in all those years, Kuro-sama shows a hint of a proud smile as he says that he looks forward to hear about the day you fulfill your revenge.\n\nThen it is done, and you leave the mountain, no longer a student..."
+ PODcanon_chars.99.a: "...but a ninja instead."	
+ 
+ podintroductions.333.desc: "General Ma, despite your young age for an immortal, you have already garnered quite the reputation. While your sternly disciplined mind has earned you praise from your elders, they are less fond of your critics of the Court system and thus have sent you to the frontline with the Black Tortoise Court.\nFrankly, it's a pointless assignment as you know that much bigger threats than inter Court warfare are lurking. Still, this is a good opportunity for you to hone your Heaven and Hell Legion, a disciplined force composed of other [kuei_jin|E] believing like you do in an orderly change of era by military might.\nIn this time of growing uncertainty, you are darkly confident that they will have more than enough time to prove themselves."
+ podintroductions.333.a: "I will bring order, come what may."
+ ma_hai_lan_intro_tt: "Ma has access to a unique Men-at-Arms, the Heaven and Hell Legion."
+ 
+ podintroductions.334.desc: "General Li, times are changing. You were content living as a recluse far from the Court politics until a few decades back and now you are somehow the leader of a resistance group against [Glossary('Dokhor-Khan','podgloss.dokhorkhan')]'s influence on the steppes.\nYou never asked for this and the youngsters can be really annoying with their pestering but, if you are honest with yourself, you are intrigued to see if you can win this and have your name known for something offer than petty cruelty and repeated political blunders.\nDokhor-Khan's forces are strong however and the Black Tortoise Court is eating on the palm of his hand. If you want to survive, let alone triumph, with the ragtag group of refugees under your command, you will have to think differently, pick your fights, raid and ambush when needed.\n\nGood thing fighting dirty has always been your strong suit."
+ podintroductions.334.a: "At least no Guo Si this time."
+ li_jue_intro_tt: "Li Jue can always raid as long as his faith doesn't disallow it."
+  
+ podintroductions.335.desc: "Fearless Piyau, you have achieved enlightenment during your time as a jungle recluse when observing a mantis devour her mate. The strength of the feminine essence is the only truth and extolling it to its monstrous extremes is the way to redemption for the [kuei_jin|E].\nAs you leave your jungle and see the Scarlet Phoenix Court in shambles, plagued by infernalist [akuma|E] and corrupt officials, you know what you have to do. Your fury, and the fury of your scorned sisters, will save the world. Those that submit and embrace the feminine essence will be spared. Those that don't will be gored, devoured or left to rot in the wake of your purge.\n\nIt is time. Time to remake the world in your image, in a tide of blood, lust and mayhem."
+ podintroductions.335.a: "We will bathe in the blood of men."
+ piyau_intro_tt: "Piyau's content starts with an unique decision allowing her to gain the Conqueror trait."
+    
+ piyau_first_decision: "Piyau's Awakening"
+ piyau_first_decision_desc: "Your tide of blood has first to gain momentum. Gorging yourself on Malaysia's infernalists will be a good appetizer."
+ piyau_first_decision_tooltip: "From the jungles..."
+ piyau_first_decision_confirm: "They die. We grow stronger."
+ piyau_first_decision_tt: "Unlock the next decision for Piyau's content."
+
+ PODcanon_chars.100.desc: "Fearsome Piyau, your first conquests are going well and more and more converts are gleefully joining the Passion Bloodflowers. This has showcased a growing issue however.\nWhile the [Glossary('Dharma','podgloss.dharma')] you created appears very simple on the outside, its tenets of indulgence and brazen disregard for rules can easily be misinterpreted and lead to useless rampage and Dharmic collapse. Thankfully, you are here to explain and teach these newcomers.\n\n #italicThe Passion Bloodflowers exalt femininity to liberate themselves and the next generations. They indulge in their every need because a need unsatisfied will leave one vulnerable to envy and doubt. Fight with all your might against the infernalist and the ones that want to subdue you and destroy this world. You live here, if it perishes, you perish as well.\nMake the [Glossary('Yama Kings','podgloss.yamaking')] see your rage and passion and quake in fear. Welcome the [Glossary('Demon Emperor','podgloss.demonemperor')] with fangs, claws, tooth and nails until he is dead or you are.\n\nThis is the wisdom in life. If you need any more than that, you are walking the wrong road. Sew your cunt shut and go become a Crane if you think that way.\nThe thunder knows only one word and that word shakes the entire world. When you have learned to live as thunder speaks, then you will know something. #!"
+ PODcanon_chars.100.a: "Exalt your hunger."	
+ PODcanon_chars.100.b: "Exalt your carnal needs."	
+ PODcanon_chars.100.c: "Exalt your glory."	
+
+ piyau_second_decision: "Piyau's Dance"
+ piyau_second_decision_desc: "The tide is rising but Southeast Asia is still shackled by indolent officials and infernalists. Their blood will nourish your ravenous and rampaging flowers."
+ piyau_second_decision_tooltip: "...rise a tide of blood..."
+ piyau_second_decision_confirm: "Paint the jungles red."
+ piyau_second_decision_tt: "You and your coterie members will get bonus stats.\nYou will get a Bloodflower Fleshpit in every held county not already having a special building.\nYou will pick a new house modifier."
+
+ house_penangallan_improved_modifier: "House Blood Flowers"
+ house_penangallan_improved_modifier_desc: "Femininity will be exalted in the gory remains of its enemies."
+ house_penangallan_run_modifier: "Crafty Flowers"
+ house_penangallan_run_modifier_desc: "#italic When in danger, run. When cornered, fight. Do not fight battles that will hurt you, the crippled tiger cannot fight tomorrow. If you cannot run or win the fight, then die.#!"
+ house_penangallan_protect_modifier: "Protective Flowers"
+ house_penangallan_protect_modifier_desc: "#italic Protect the Tapestry, because there are many that would tear and destroy it. Defend it even unto death, for you live inside the world, and if it perishes, you perish as well. Against these enemies, you are always cornered.#!"
+
+ PODcanon_chars.101.t: "The Dragon Dance"  
+ PODcanon_chars.101.desc: "Victorious Piyau, your latest triumphs on the battlefield have caused quite a stupor in the northern Courts that foolishly thought of you and your armies as a band of deranged lunatics with no appreciation for warfare. They forgot that you are the Red Dragon.\n\nThis title has been given to you after your complete mastery of the Dragon Dance, a Yang-laden battle trance that forms a graceful yet furious martial art. While you are the only one to have truly mastered it, your [Glossary('Wu','podgloss.wu')], the Flayed Monkeys, aren't very far behind and are all skilled combatants in their own rights.\n\nPersonal prowess isn't your only strong suit. While you scoff at the complicated "rules of warfare" of the northerners, your own philosophy proves as simple as it is effective.\nIf you can win, win quickly and decisively. If you cannot win, run. If you cannot run, fight as a cornered tiger.\nWhile the sophisticated Chinese Courts once laughed at these tenets, they are growing more and more silent as you are killing more infernalists in decades than they ever did in centuries. Concerned whispers are rising that your purge of Southeast Asia might only be the beginning of your ambitions.\n\nGood. If they fear you, you have already won."
+ PODcanon_chars.101.a: "Perfect the Dragon Dance."	
+ PODcanon_chars.101.b: "If they are too strong, run..."	
+ PODcanon_chars.101.c: "...but always fight against the true enemy."	
+ 
+ piyau_third_decision: "Piyau's Purge"
+ piyau_third_decision_desc: "There will be no half measures. It is time for Southeast Asia to be reborn in blood and ruled by the life giving feminine essence."
+ piyau_third_decision_tooltip: "...that will cleanse the world."
+ piyau_third_decision_confirm: "Sisters, drink, eat and fuck, for we have won."
+ piyau_third_decision_tt: "Non zealous, non infernalist female ruler [kuei_jin|E] with less than [Glossary('Dharma','podgloss.dharma')] 7 will convert to the Passion Bloodflowers faith.\nCharacters (with the same restriction as above) are also more likely to accept your demand for conversion.\nPassion Bloodflowers character will now always accept demand of vassalization from Piyau.\nAll of your held counties convert to Passion Bloodflowers."
+ 
+ PODcanon_chars.102.t: "Tides of Blood and Femininity"  
+ PODcanon_chars.102.desc: "Heavenly Piyau, your victories know no bounds. Scores of [akuma|E] and indolent officials have fallen in your wake, making room for a new age of exalted femininity.\nSome would call your new Court an hellhole of savage and sadistic women but you know better. This is the true wisdom in life, the vision of sheer glory that will bring back Heaven's favor on its once misguided daughters.\nOnce you were merely an handful of devoted sisters and now entire realms follow your philosophy, tearing apart the corrupt patriarchy and replacing it with boundless hunger, lust and drive for bloodshed.\nAlready your triumph has reached the ears of far away August Courts and the Passion Bloodflowers are spreading farther than your wildest dreams ever imagined... and you are known for very wild dreams indeed.\n\nAs your sisters and daughters sing your name while triumphing from one battlefield to another, it makes you wonder. Why stop there?\n\nWhy not liberate the whole world?"
+ PODcanon_chars.102.a: "Eternal bloodshed to the Heavens."	
+ 
+ podintroductions.336.desc: "Lady Sun, long gone from memories is your unfortunate encounter with Sun Tzu. You are now rightfully praised as the most skilled strategist the [kuei_jin|E] world has ever seen. Ancestors from the most exalted Courts would kill to have you as their general but you have been refusing each and every offer. Instead you wander the world, learning and teaching as you go. Your books are all a mandatory read for every disciple willing to embrace the art of war though, obviously, you keep the best tactics to yourself.\nNo time to rest on your laurels however, warfare is an ever evolving art after all and you wouldn't want to be left behind. The auspicious sword hasn't made her last surprising appearance on a distant battlefield."
+ podintroductions.336.a: "Where is the next war?"
+ sun_li_intro_tt: "As Sun Li, you have an unique decision to spend your [ashen_grandmaster|E] experience to increase your martial skill directly."
+  
+ sun_li_decision: "The Artist of War"
+ sun_li_decision_desc: "There is always more to learn about your favorite subject. What better way to spite Sun Tzu than to continually outdo his knowledge for all eternity?"
+ sun_li_decision_tooltip: "Painted by the blood of men."
+ sun_li_decision_confirm: "An ever changing tapestry of blood."

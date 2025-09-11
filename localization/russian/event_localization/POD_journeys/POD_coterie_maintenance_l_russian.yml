@@ -8,7 +8,7 @@
  POD_coterie_maintenance.2.t: "[ROOT.Char.Custom('PODCoterieNoTooltip')]: Название"
  POD_coterie_maintenance.2.desc: "Какое название получит [ROOT.Char.Custom('PODCoterie')]?\n\nВы сможете изменить его в любой момент."
  POD_coterie_maintenance.2.option.a: "Выбрать это название."
- POD_coterie_maintenance.2.option.b: "Оставить стандартное название #italic ($POD_coteriename_canon$)#!."
+ POD_coterie_maintenance.2.option.b: "Оставить стандартное название #italic ([ROOT.Char.Custom('PODGetDefaultCoterieName')])#!."
 
  POD_coterie_maintenance.10.t: "Ещё [Select_CString(dead_member.IsFemale, 'одна повержена', 'один повержен' )] в прах"
  POD_coterie_maintenance.10.desc: "$POD_player_coterie$ теряет товарища.\n\n[dead_member.GetFirstNameNicknamed] [dead_member.GetDeathReason]."

@@ -13,6 +13,7 @@
  POD_imprison.002.option.e: "[attacker_marshal.GetFirstName] наверняка знает, как ловить таких исчадий!"
  POD_imprison.002.option.f: "[targetdefender.GetShortUIName] столкнётся с тяжестью своих грехов."
  POD_imprison.002.option.g: "Сейчас неподходящее время."
+ POD_imprison.002.option.h: "Мои кошмары разлома составят [targetdefender.GetHerHim] компанию, пока я не решу, что с [Select_CString(targetdefender.IsFemale, 'ней', 'ним' )] делать."
  POD_imprison.002.option.success: "[attacker.GetFirstName] побеждает"
 
 
@@ -43,6 +44,7 @@
  POD_imprison.002.option.e.tt.attacker_lost: "[targetdefender.GetFirstName] ускользает"
  POD_imprison.002.option.f.tt: "[targetdefender.GetFirstName] увидит в ваших глазах глубину своей вины, которая отразится для н[targetdefender.GetHerHis] с ошеломляющей ясностью."
  POD_imprison.002.option.g.tt: "Вы больше не будете пытаться заключить персонажа [targetdefender.GetFirstName] в темницу."
+ POD_imprison.002.option.h.tt: "[targetdefender.GetFirstName] не сможет сопротивляться вечному заточению в вашем разломе"
 
  POD_imprison.102.title: "[Select_CString(targetdefender.IsFemale, 'Новая узница', 'Новый узник' )]"
  POD_imprison.102.desc.dominate: "Вам удалось успешно подчинить разум персонажа [targetdefender.GetFirstName] своей воле, теперь [targetdefender.GetSheHe] добровольно пойдёт в вашу темницу."
