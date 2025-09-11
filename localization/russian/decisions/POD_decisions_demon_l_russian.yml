@@ -3,7 +3,7 @@
  POD_demon_demand_kill_pure_decision_tooltip: "Ваш повелитель требует. Вы должны подчиниться."
  POD_demon_demand_kill_pure_decision_desc: "Чистота — это анафема для демонов. Ваш повелитель требует, чтобы вы доказали свою преданность, избавив мир от носителя света."
  POD_demon_demand_kill_pure_decision_confirm: "Да будет воля твоя, повелитель."
- POD_demon_demand_kill_pure_decision_condition: "Убить охотника, вампира со свойством Голконды или [GetTrait('kueijin').GetName( GetNullCharacter )|l] с высокой дхармой."
+ POD_demon_demand_kill_pure_decision_condition: "Убить охотника, вампира со свойством Голконды или [GetTrait('kueijin').GetName( GetNullCharacter )|l] с высокой [Glossary('дхармой','podgloss.dharma')]."
 
  POD_demon_demand_banish_rival_decision: "Требование: изгнать соперника"
  POD_demon_demand_banish_rival_decision_tooltip: "Ваш повелитель требует. Вы должны подчиниться."
@@ -74,6 +74,7 @@
  demonic_knowledge_objective_decsion_desc: "Время, проведенное в тюрьме Бездны, заставило вас остро осознать ограниченность своих знаний. Божий замысел, похоже, оказался гораздо сложнее, чем вы предполагали. С тех пор вас мучает жажда узнать больше. Пришло время удовлетворить эту жажду."
  demonic_knowledge_objective_decsion_tooltip: "Могу ли я по-настоящему понять божественное?"
  demonic_knowledge_objective_decsion_confirm: "Запретный плод съеден."
+ demonic_knowledge_objective_decsion_custom1: "Вы должны открыть все [Concept('perks', 'достоинства')|E] в [Concept('lifestyle', 'пути')|E] [Concept('lore_lifestyle', 'знаний')|E]."
 
  restore_babylon_objective_decision: "Восстановить Вавилон"
  restore_babylon_objective_decision_tooltip: "Развесить свои сады."

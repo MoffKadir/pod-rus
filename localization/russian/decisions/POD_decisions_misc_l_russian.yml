@@ -91,10 +91,14 @@
  visceratika_tremere_decision_tooltip: "Раскрыть свой внутренний потенциал"
  visceratika_tremere_decision_confirm: "Висцератика высвобождена!"
 
- warrior_gargoyles_created: "Создана одна или несколько гаргулий касты воинов \n(Пример: Гангрел+Цимисхи)"
- scout_gargoyles_created: "Создана одна или несколько гаргулий касты разведчиков \n(Пример: Гангрел+Носферату)"
- sentinel_gargoyles_created: "Создана одна или несколько гаргулий касты стражей \n(Пример: Цимисхи+Носферату)"
- special_gargoyles_created: "Создана одна или несколько гаргулий нестандартной касты (не воин, разведчик, или страж)"
+ warrior_gargoyles_created: "Создана гаргулья касты воинов \n(Пример: Гангрел+Цимисхи)"
+ scout_gargoyles_created: "Создана гаргулья касты разведчиков \n(Пример: Гангрел+Носферату)"
+ sentinel_gargoyles_created: "Создана гаргулья касты стражей \n(Пример: Цимисхи+Носферату)"
+ kintsugi_gargoyles_created: "Created a Kintsugi caste Gargoyle #weak (Ravnos + Caitiff)#!"
+ rogata_gargoyles_created: "Created a Rogata caste Gargoyle #weak (Caitiff + Tzimisce)#!"
+ totai_gargoyles_created: "Created a Totai caste Gargoyle #weak (Tzimisce + Ravnos)#!"
+ bingmayong_gargoyles_created: "Created a Bingmayong caste Gargoyle #weak (Kuei-Jin + Kuei-Jin)#!"
+ special_gargoyles_created: "Created a Gargoyle of a rare caste #weak (any not covered by the above)#!"
  virstania_bypass: "Вы - [GetScriptedCharacterByHistoryID('790870').GetFirstName]"
  visceratika_decision_effect_tooltip: "Каждая [GetTrait('gargoyle').GetName( GetPlayer )|l] выучит дисциплину [GetTrait('visceratika').GetName(GetNullCharacter)], и новые созданные гаргульи будут владеть ей сразу."
 

@@ -1182,7 +1182,7 @@
  building_cairo_temple_osiris_03_desc: "Сет вернулся, но, в отличие от Осириса, он полностью принял вампирическое проклятие и стал добровольным Змеем Апофиса. С помощью обмана Сету удалось заманить Осириса в ловушку и расчленить его на 14 частей. Тёмная кровь Осириса пролилась на пески и попала в Нил, навсегда связав Черную землю с Царством мёртвых."
  building_cairo_temple_osiris_04: "Великий храм Осириса"
  building_cairo_temple_osiris_04_desc: "Верные последователи Осириса собрали его останки, пролили свою кровь и с помощью магии воскресили Осириса. Осирис преодолел свое проклятие и стал первым Бессмертным. Сет услышал об этом и решил поразить ослабевшего Осириса, окутав его огненной пеленой и обратив в пепел, который развеялся по ветру, когда его душа вернулась в Дуат. Теперь Осирис обитает в Подземном мире, наблюдая за Аменти, Тёмным царством Песка."
- POD_cairo_temple_osiris_bonus: "#help Если у вас уже есть доступ к [Concept('hekau_necromancy_lifestyle', 'некромантии хекау')|E]:#!\n[bind_wraith_interaction|E] будет всегда успешно\n\n#help Если же нет:#!\nДаёт доступ к [Concept('hekau_necromancy_lifestyle', 'пути некромантии хекау')|E]"
+ POD_cairo_temple_osiris_bonus: "#help Если у вас уже есть доступ к [Concept('hekau_necromancy_lifestyle', 'некромантии хекау')|E]:#!\nСвязанные #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраки#! больше не требуют [Concept('stress', 'стресса')|E] для поддержания\n\n#help Если же нет:#!\nДаёт доступ к [Concept('hekau_necromancy_lifestyle', 'пути некромантии хекау')|E]"
 
  building_type_cairo_temple_isis_01: "Храм Исиды"
  building_type_cairo_temple_isis_01_desc: "#F Исида, Верет-хекау, Великая волшебница, и Мут-Нетджер, мать богов. Она - создательница Заклинания жизни.#!"
@@ -1219,7 +1219,7 @@
  building_cairo_temple_bast_03_desc: "Вместе с проклятием мерзкие Сетиты захватили кошачью родню Бубасти, кифурских котов, и либо убили их, либо накормили кровью, чтобы превратить в чудовищ-отступников."
  building_cairo_temple_bast_04: "Великий храм Баст"
  building_cairo_temple_bast_04_desc: "С возвращением Каира и изгнанием сетитов кифурские коты снова стали свободными. Теперь бубасти воюют против сетитов с новой силой."
- POD_cairo_temple_bast_bonus: "#help Если у вас есть свойство «[GetTrait('bastet').GetName(GetNullCharacter)]»:#!\nМиссии #L $pod_infiltration_missions|l$ия#! начинаются с [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] ед. #L $pod_suspicion_with_icon|l$ия#!\n\n#help Если же нет:#!\nБубасти вернутся в Египет"
+ POD_cairo_temple_bast_bonus: "#help Если у вас есть свойство «[GetTrait('bastet').GetName(GetNullCharacter)]» или «[GetTrait('werewolf').GetName(GetNullCharacter)]»:#!\nМиссии #L $pod_infiltration_missions|l$ия#! начинаются с [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] ед. #L $pod_suspicion_with_icon|l$ия#!\n\n#help Если же нет:#!\nБубасти вернутся в Египет"
 
 
  building_type_cairo_temple_sobek_01: "Храм Собека"
