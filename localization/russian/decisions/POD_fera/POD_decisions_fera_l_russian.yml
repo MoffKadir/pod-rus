@@ -2,26 +2,26 @@
 
 
  fera_advance_rank_decision: "Повысить свой ранг"
- fera_advance_rank_decision_desc: "Renown and Rank are a measure of a shapeshifter's place in their society. The more Renown they have, the more weight their words carry. The different $glossary_fera$ each use a different set of three renown types.\n\nYou gain Renown from:\n"
+ fera_advance_rank_decision_desc: "Известность и ранг являются мерой положения перевёртыша в обществе. Чем больше у него известности, тем больший вес имеют его слова. Различные фера используют различный набор из трёх типов известности.\n\nВы получаете известность:\n"
  fera_advance_rank_decision_tooltip: "Продвижение по иерархии фера требует времени и целеустремленности."
  fera_advance_rank_decision_confirm: "Моя слава растёт!"
 
- fera_advance_rank_renown_glory: "#clickable $POD_fera_renown_glory$:#!\n#medium $BULLET_WITH_TAB$Winning wars against Wyrm aligned rulers if you are a Gaian faith.\n$BULLET_WITH_TAB$Winning wars against Gaia aligned rulers if you are a Wyrm faith.\n$BULLET_WITH_TAB$Killing Wyrm aligned characters if you are a Gaian faith.\n$BULLET_WITH_TAB$Killing Gaia aligned characters if you are a Wyrm faith.#!\n"
+ fera_advance_rank_renown_glory: "#clickable $POD_fera_renown_glory$:#!\n#medium $BULLET_WITH_TAB$Побеждая в войнах с правителями, служащими Вирму, если вы исповедуете конфессию Геи.\n$BULLET_WITH_TAB$Побеждая в войнах с правителями, служащими Гее, если вы исповедуете конфессию Вирму.\n$BULLET_WITH_TAB$Убивая персонажей, служащих Вирму, если вы исповедуете конфессию Геи.\n$BULLET_WITH_TAB$Убивая персонажей, служащих Гее, если вы исповедуете конфессию Вирма.#!\n"
 
- fera_advance_rank_renown_honor: "#clickable $POD_fera_renown_honor$:#!\n#medium $BULLET_WITH_TAB$Abandoning a [grudge|E], ending a [rivalry|E], or losing a [nemesis|E].\n$BULLET_WITH_TAB$Granting [duchies|E] or higher titles to another $glossary_fera$.\n$BULLET_WITH_TAB$Upgrading a Caern to its maximum level.\n$BULLET_WITH_TAB$Increasing your [piety_level|E].#!\n"
+ fera_advance_rank_renown_honor: "#clickable $POD_fera_renown_honor$:#!\n#medium $BULLET_WITH_TAB$Отказываясь от [Concept('grudge', 'обиды')|E], прекращая [Concept('rivalry', 'соперничество')|E] или теряя [Concept('nemesis', 'заклятых врагов')|E].\n$BULLET_WITH_TAB$Даруя [Concept('duchies', 'герцогства')|E] или титулы более высокого уровня другим фера.\n$BULLET_WITH_TAB$Улучшая уровень каэрна до максимального.\n$BULLET_WITH_TAB$Повышая свой [Concept('piety_level', 'уровень набожности')|E].#!\n"
 
- fera_advance_rank_renown_wisdom: "#clickable $POD_fera_renown_wisdom$:#!\n#medium $BULLET_WITH_TAB$Finishing Umbra Expeditions.\n$BULLET_WITH_TAB$Obtaining the last [perk|E] of a $glossary_fera$ lifestyle tree.\n$BULLET_WITH_TAB$Finishing a Spirit Quest [journey|E].#!\n"
+ fera_advance_rank_renown_wisdom: "#clickable $POD_fera_renown_wisdom$:#!\n#medium $BULLET_WITH_TAB$Завершая экспедиции Умбры.\n$BULLET_WITH_TAB$Получив последнее [Concept('perk', 'достоинство')|E] из древа образа жизни $glossary_fera$.\n$BULLET_WITH_TAB$Завершая [Concept('journey', 'странствие')|E] духовных поисков.#!\n"
 
- fera_advance_rank_renown_power: "#clickable $POD_fera_renown_power$:#!\n#medium $BULLET_WITH_TAB$Winning wars.\n$BULLET_WITH_TAB$Winning duels.\n$BULLET_WITH_TAB$Increasing your [prestige_level|E].#!\n"
+ fera_advance_rank_renown_power: "#clickable $POD_fera_renown_power$:#!\n#medium $BULLET_WITH_TAB$Побеждая в войнах.\n$BULLET_WITH_TAB$Побеждая в поединках.\n$BULLET_WITH_TAB$Повышая свой [Concept('prestige_level', 'уровень престижа')|E].#!\n"
 
- fera_advance_rank_renown_cunning: "#clickable $POD_fera_renown_cunning$:#!\n#medium $BULLET_WITH_TAB$Succeeding in an [infiltration|E].\n$BULLET_WITH_TAB$[blackmailing|E] another character.\n$BULLET_WITH_TAB$Succeeding in [GetScheme('abduct').GetTypeName] [schemes|E].#!\n"
+ fera_advance_rank_renown_cunning: "#clickable $POD_fera_renown_cunning$:#!\n#medium $BULLET_WITH_TAB$Успешно проводя [Concept('infiltration', 'проникновение')|E].\n$BULLET_WITH_TAB$[Concept('blackmailing', 'Шантажируя')|E] других персонажей.\n$BULLET_WITH_TAB$Успешно выполнив [Concept('schemes', 'происки')|E] «[GetScheme('abduct').GetTypeName]».#!\n"
 
- fera_advance_rank_renown_ferocity: "#clickable $POD_fera_renown_ferocity$:#!\n#medium $BULLET_WITH_TAB$Returning to your land with at least #P 50#! [raid|E] [raid_loot|E].\n$BULLET_WITH_TAB$Gaining [trait_level_track_xp|E] in any [GetTrait('lifestyle_hunter').GetName(GetNullCharacter)] [trait_level_track|E].\n$BULLET_WITH_TAB$Training with your [GetPlayer.Custom('PODCoterie')].#!\n"
+ fera_advance_rank_renown_ferocity: "#clickable $POD_fera_renown_ferocity$:#!\n#medium $BULLET_WITH_TAB$Возвращаясь в свои владения, набрав не менее #P 50#! [Concept('raid', 'добычи')|E] в [Concept('raid_loot', 'набеге')|E].\n$BULLET_WITH_TAB$Получая [Concept('trait_level_track_xp', 'опыт')|E] в любом [Concept('trait_level_track', 'пути развития')|E] свойства «[GetTrait('lifestyle_hunter').GetName(GetNullCharacter)]».\n$BULLET_WITH_TAB$Тренируясь с вашей группой [GetPlayer.Custom('PODCoterie')].#!\n"
 
- fera_advance_rank_renown_infamy: "#clickable $POD_fera_renown_infamy$:#!\n#medium $BULLET_WITH_TAB$Succeeding in [GetScheme('fabricate_hook').GetTypeName] [schemes|E].\n$BULLET_WITH_TAB$Executing your own vassals of Duchy [title_rank|E] or higher without an [execute_reason|E].\n$BULLET_WITH_TAB$Usurping titles of Kingdom [rank|E] or higher.\n$BULLET_WITH_TAB$Breaking truces.#!\n"
+ fera_advance_rank_renown_infamy: "#clickable $POD_fera_renown_infamy$:#!\n#medium $BULLET_WITH_TAB$Успешно завершив [Concept('schemes', 'происки')|E] «[GetScheme('fabricate_hook').GetTypeName]».\n$BULLET_WITH_TAB$Казнив вассалов с титулом [Concept('title_rank', 'ранга')|E] герцогства или выше без [Concept('execute_reason', 'повода')|E].\n$BULLET_WITH_TAB$Узурпировав титулы королевского [Concept('rank', 'ранга')|E] или выше.\n$BULLET_WITH_TAB$Нарушая перемирия.#!\n"
 
 
- fera_advance_rank_renown_bonuses: "\n#clickable Your [GetPlayer.Custom('PODFeraAuspiceType')] gives a bonus to [GetPlayer.Custom('PODFeraAuspiceRenownBoost')].#!"
+ fera_advance_rank_renown_bonuses: "\n#clickable [GetPlayer.Custom('PODFeraAuspiceType')] даёт вам бонус на [GetPlayer.Custom('PODFeraAuspiceRenownBoost')].#!"
 
- POD_fera_advance_to_next_rank_desc: "You advance to Rank #bold $VALUE|0V$#! in the [TRAIT.GetName(GetPlayer)] [trait|E]"
- fera_advance_rank_decision_requirement_tributaries: "You have 2 or more [tributaries|E] of at least Kingdom [rank|E]"
+ POD_fera_advance_to_next_rank_desc: "Вы повышаете свой ранг до #bold $VALUE|0V$#! в [Concept('trait', 'свойстве')|E] «[TRAIT.GetName(GetPlayer)]»"
+ fera_advance_rank_decision_requirement_tributaries: "У вас есть 2 или более [Concept('tributaries', 'данников')|E] с титулом как минимум королевского [Concept('rank', 'ранга')|E]"
