@@ -11,12 +11,7 @@
 
  POD_vamphunt.11.t: "Ци!"
  POD_vamphunt.11.desc: "Вы выследили свою добычу. Что вы поглотите?"
- POD_vamphunt.11.tt: "Количество [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] «[GetPlayer.Custom('PODCurrentDharma')]» зависит от вашей Тропы."
  POD_vamphunt.11.option.a: "Ничего не поглощать. Позволить [target.GetHerHim] уйти [Select_CString(target.IsFemale, 'невредимой', 'невредимым' )]."
- POD_vamphunt.11.option.b: "Немного. Всего лишь глоток."
- POD_vamphunt.11.option.c: "Несколько глотков. [target.GetSheHe|U] ослабнет, но будет в порядке."
- POD_vamphunt.11.option.d: "Выпью много, ранив [target.GetHerHis]."
- POD_vamphunt.11.option.e: "Выпью всё, [target.GetFirstName] умрёт, а я полностью утолю свой голод."
 
  POD_vamphunt.21.t: "Кровь и плоть!"
  POD_vamphunt.21.desc: "Вы выследили свою добычу. Сколько крови и плоти вы отведаете?"
