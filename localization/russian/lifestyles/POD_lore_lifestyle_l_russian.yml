@@ -139,8 +139,8 @@
  lore_anchor_the_soul_perk_name: "Якорь душ"
  lore_pierce_the_barrier_perk_name: "Пронзание барьера"
 
- LORE_COMMAND_THE_DEAD_PERK_EFFECT: "Может связывать и повелевать призраками.\nМаксимальное количество связанных призраков: #P +3#!.\nДоступны призрачные и мёртвые профессионалы.\n#flavor Падшие могут повелевать бесплотными существами, находящимися за пределами Савана.#!"
- LORE_STEP_BEYOND_THE_VEIL_PERK_EFFECT: "Даёт доступ ко всем мирам [Concept('umbra', 'Умбры')|E].\n[umbra_aptitude|E]: $pod_grace_i$#P +100%#!\nСохраняет облик при путешествии по [Concept('umbra', 'Умбре')|E].\n#flavor Падшие могут становиться бесплотными и перемещаться за пределы.#!"
+ LORE_COMMAND_THE_DEAD_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n$POD_can_command_wraith_trigger_loca$\nДоступны призрачные и мёртвые профессионалы.\n#flavor Падшие могут повелевать бесплотными существами, находящимися за пределами Савана.#!"
+ LORE_STEP_BEYOND_THE_VEIL_PERK_EFFECT: "Сохраняет облик при путешествии по [Concept('umbra', 'Умбре')|E].\n#flavor Падшие могут становиться бесплотными и перемещаться за пределы.#!"
  LORE_EXTINGUISH_LIFE_PERK_EFFECT: "Накладывает на каждого правителя противоположной стороны модификатор [GetModifier('lore_extinguish_life_modifier').GetNameWithTooltip] при начале [Concept('war', 'войны')|E] в качестве основного атакующего или защитника.\n#flavor Падшие могут заставить других существ столкнуться с понятием смерти.#!"
- LORE_ANCHOR_THE_SOUL_PERK_EFFECT: "Максимальное количество связанных призраков: #P +6#!.\n#flavor Падшие могут привязывать бесплотных существ к реальности.#!"
- LORE_PIERCE_THE_BARRIER_PERK_EFFECT: "Можно манипулировать Барьером и Латной рукавицей.\n[umbra_aptitude|E]: $pod_grace_i$#P +100%#!\n#flavor Падшие могут пробивать барьеры между реальностями.#!"
+ LORE_ANCHOR_THE_SOUL_PERK_EFFECT: "#flavor Падшие могут привязывать бесплотных существ к реальности.#!"
+ LORE_PIERCE_THE_BARRIER_PERK_EFFECT: "Можно манипулировать Барьером и Латной рукавицей.#flavor Падшие могут пробивать барьеры между реальностями.#!"

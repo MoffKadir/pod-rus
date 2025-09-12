@@ -33,6 +33,8 @@
  blood_magic_awakening_of_the_steel_visible: "Пробуждение стали"
  blood_magic_covenant_of_nergal_visible: "Ковен Нергала"
  blood_magic_abyssal_mysticism_visible: "Мистицизм Бездны"
+ blood_magic_hedayat_iman_visible: "Hedayat Iman"
+ blood_magic_hedayat_qalb_visible: "Hedayat el-Qalb"
 
  blood_magic_path_of_karma_visible: "Путь Кармы"
  blood_magic_divine_hand_visible: "Длань божья"
@@ -109,11 +111,11 @@
  entrap_ephemera_perk_name: "Ловля духа"
  duality_perk_name: "Двойственность"
 
- HERMETIC_SIGHT_PERK_EFFECT: "Вы можете использовать [Concept('artifacts', 'артефакты')|E]-фетиши.\n#weak Загляните в мир духов#!"
- ASTRAL_CHANT_PERK_EFFECT: "Вы можете взаимодействовать с персонажами по ту сторону Барьера.\n#weak Умение общаться со всеми духами.#!"
- VOICE_OF_COMMAND_PERK_EFFECT: "Духи охотнее становятся вашими спутниками.\n#weak Заставляет духа повиноваться вашим приказам.#!"
- ENTRAP_EPHEMERA_PERK_EFFECT: "$unlock_enhancing_node$, который позволяет принести в жертву [Concept('prisoner', 'пленника')|E]-духа, чтобы улучшить [artifact|El] в зависимости от [Concept('traits', 'свойств')|E] жертвы.\n#weak Связывание духа с предметом для создания фетиша.#!"
- DUALITY_PERK_EFFECT: "Вы можете пленить, пытать, казнить или физически ранить духов в [Concept('single_combat_duel_plural', 'поединках')|E].\n#weak Существуют как в материальном, так и в духовном мире#!"
+ HERMETIC_SIGHT_PERK_EFFECT: "Can interact with characters on the other side of the Gauntlet.\n#weak Загляните в мир духов#!"
+ ASTRAL_CHANT_PERK_EFFECT: "Can learn #V 1#! additional [language|E] without any penalties\n#weak Умение общаться со всеми духами.#!"
+ VOICE_OF_COMMAND_PERK_EFFECT: "#weak Заставляет духа повиноваться вашим приказам.#!"
+ ENTRAP_EPHEMERA_PERK_EFFECT: "Can use $pod_fetishes$.\n#weak Связывание духа с предметом для создания фетиша.#!"
+ DUALITY_PERK_EFFECT: "#weak Существуют как в материальном, так и в духовном мире#!"
 
  vertigo_perk_name: "Головокружение"
  contortion_perk_name: "Искажение"
@@ -283,7 +285,7 @@
  AEGIS_ALIGHIERI_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! [GetPerk('heed_the_hell_bound_heart_perk').GetName(GetPlayer)] до [GetModifier('demonic_knowledge_3_modifier').GetNameWithTooltip].\n#weak Защищает колдуна от нападений демонических сущностей с помощью амулета, пропитанного его собственной кровью.#!"
  HEAVE_THE_HOST_OF_HELL_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! [GetPerk('aegis_alighieri_perk').GetName(GetPlayer)] до [GetModifier('demonic_knowledge_4_modifier').GetNameWithTooltip].\n#weak Рассеивает любые следы инфернального воздействия в пределах владений колдуна.#!" 
  #\nAs a spell, send [GetTrait('demon').GetName(GetPlayer)] to the [UmbraGlossary('abyss')] if the caster has more learning and prowess than the target.
- REAP_THE_WELL_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! [GetPerk('heave_the_host_of_hell_perk').GetName(GetPlayer)] до [GetModifier('demonic_knowledge_5_modifier').GetNameWithTooltip].\nВы можете узнать истинное имя #L [GetTrait('demon').GetName(GetPlayer)|l]а#! и связать его.\n#weak Позволяет колдуну поработить демоническую сущность.#!"
+ REAP_THE_WELL_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! [GetPerk('heave_the_host_of_hell_perk').GetName(GetPlayer)] до [GetModifier('demonic_knowledge_5_modifier').GetNameWithTooltip].\nВы можете узнать истинное имя демонов и связать их.\n#weak Позволяет колдуну поработить демоническую сущность.#!"
 
  shroud_of_oblivion_perk_name: "Саван Забвения"
  spectral_cloak_perk_name: "Призрачная накидка"
@@ -292,7 +294,7 @@
  hunger_of_the_void_perk_name: "Голод пустоты"
 
  SHROUD_OF_OBLIVION_PERK_EFFECT: "#weak Сбросив свою кожу, колдун может облачиться в портативную часть Савана, уменьшая опасность солнечного света.#!"
- SPECTRAL_CLOAK_PERK_EFFECT: "Можно физически входит в [UmbraGlossary('shadowlands')], потенциально защищаясь от враждебных взаимодействий.\nМожно взаимодействовать с персонажами по ту сторону Савана.\n#weak Прячет колдуна в Загробном мире, делая его невидимым для тех, кто не может видеть призраков.#!"
+ SPECTRAL_CLOAK_PERK_EFFECT: "Можно взаимодействовать с персонажами по ту сторону Савана.\n#weak Прячет колдуна в Загробном мире, делая его невидимым для тех, кто не может видеть призраков.#!"
  POND_OF_MALEVOLENT_DREAD_PERK_EFFECT: "Вы можете призвать армию спектров, заклинатель получит ранение, применив это #L $pod_bs_spell|l$ие#!.\n#weak Нанеся себе рану, колдун может направить глубины Моря Теней в кольцо воющих призраков, чтобы те схватили любого, кто попадется им под руку.#!"
  WRATH_OF_THE_TEMPEST_PERK_EFFECT: "Вы можете наложить на вашу текущую локацию модификатор [GetModifier('mass_harrowing_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#weak Позволяет колдуну принести частичку Бури в живой мир, вызывая сильный шторм, который повергает в ужас всех, кто оказался в ловушке Страдания.#!"
  HUNGER_OF_THE_VOID_PERK_EFFECT: "Вы можете наложить на вашу текущую локацию модификатор [GetModifier('bs_nihil_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!, получив 200 [Concept('stress', 'стресса')|E] в процессе.\n#weak Вырвав собственную душу и безжалостно терзая ее, колдун превращает ее в нихиль, который засасывает в себя все, что находится поблизости.#!"
@@ -442,3 +444,26 @@
 
  cycle_of_the_midgard_serpent_perk_tt: "Изучение [Concept('discipline', 'дисциплины')|E] не требует затрат из-за наличия достоинства «[GetPerk('cycle_of_the_midgard_serpent_perk').GetName(GetPlayer)]»!"
  APEPS_TRANSFORMATION_PERK_EFFECT: "Вы можете принести в жертву вашего гуля, чтобы получить складывающийся модификатор [GetModifier('apeps_transformation_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#flavor Превратить гуля в огромную змею, способную понимать человеческую речь#!"
+
+
+ saut_allah_perk_name: "Saut Allah"
+ SAUT_ALLAH_PERK_EFFECT: "As a $pod_bs_spell$, reduce a targets stress and give them [GetModifier('saut_allah_modifier').GetNameWithTooltip] for 10 years.\n\n#weak The caster fortifies his fellow Ashirra for the rigors ahead.#!"
+ nuzra_allah_perk_name: "Nuzra Allah"
+ NUZRA_ALLAH_PERK_EFFECT: "Give [GetModifier('nuzra_allah_modifier').GetNameWithTooltip] to your foe during [single_combat_duel_plural|E].\n\n#weak A defensive power that shields the caster from visible harm.#!"
+ ruh_allah_perk_name: "Ruh Allah"
+ RUH_ALLAH_PERK_EFFECT: "[vassal|E] [faction_commitment|E]: #P -20#!\n\n#weak The Ruh Allah aids a Cainite in regaining control in themselves and those around them.#!"
+ ghadub_allah_perk_name: "Ghadub Allah"
+ GHADUB_ALLAH_PERK_EFFECT: "Inflict every ruler on the opposing side with [GetModifier('ghadub_allah_modifier').GetNameWithTooltip] when starting a [war|E] as the primary attacker or defender.\nAs a $pod_bs_spell$, force a [white_peace|E] between the yourself and the target.\n\n#weak Allows the halting of attacks without the need for eye contact.#!"
+ kubda_allah_perk_name: "Kubda Allah"
+ KUBDA_ALLAH_PERK_EFFECT: "As a $pod_bs_spell$, gain a [strong_hook|E] on the target and wound them if you fail.\n\n#weak Crush the unlife out of an opponent and force them to submit. The caster must be sufficiently restrained to use the power for good.#!"
+
+ hikma_allah_perk_name: "Hikma min Allah"
+ HIKMA_ALLAH_PERK_EFFECT: "#weak By means of a prolonged introspection, the Ashirra is able to focus their mind on solving problems.#!"
+ idrak_allah_perk_name: "Idrak' min Allah"
+ IDRAK_ALLAH_PERK_EFFECT: "As a $pod_bs_spell$, learn all [schemes|E] and [secrets|E] of a character.\n\n#weak Through the power of prayer, gain insights into your foes.#!"
+ sultat_nabi_perk_name: "Sultat el-Nabi"
+ SULTAT_NABI_PERK_EFFECT: "As a $pod_bs_spell$, force a character to randomly give you @gold_icon!, @prestige_icon!, a Common [inventory_artifact|E], or a Famed [inventory_artifact|E].\n\n#weak Compel the subject to obey a short phrase comprising no more than ten words.#!"
+ sawt_nabi_perk_name: "Sawt el-Nabi"
+ SAWT_NABI_PERK_EFFECT: "#weak The caster may communicate with any Cainite known to them irrespective of the distance.#!"
+ nar_iman_perk_name: "Nar el-Iman"
+ NAR_IMAN_PERK_EFFECT: "As a $pod_bs_spell$, wound a character 3 times and give them [GetModifier('nar_iman_modifier').GetNameWithTooltip] for 10 years.\n\n#weak Exploit the inherent weakness of vampires in matters of faith, undermining the target's resolve and inflicting both mental and physical injury.#!"

@@ -2,6 +2,9 @@
  POD_debug_squared_distance_interaction: "#P;bold Показать квадрат расстояния#!"
  POD_debug_squared_distance_interaction_desc: "#P;bold Квадрат расстояния#! между персонажами [actor.GetShortUIName] и [recipient.GetShortUIName] составляет #V;bold [SCOPE.ScriptValue('POD_debug_squared_distance')]#!"
 
+ POD_debug_pod_death_interaction: "Kill Character"
+ POD_debug_pod_death_interaction_desc: "Kill [recipient.GetShortUIName]. If [recipient.GetSheHe|l] has a resurrection ability, it will trigger (unlike the #V $slay_character_interaction$#! [character_interaction|E] from Vanilla CK3, which kills permanently)"
+
  POD_debug_force_into_prison_interaction: "Заключить в темницу"
  POD_debug_force_into_prison_interaction_desc: "Заключить персонажа в темницу, пропустив поединок, который обычно происходит в модификации «[princes_of_darkness|E]»"
  POD_debug_become_laamp_interaction_imprison_recipient: "Вы заключаете этого персонажа в темницу"
@@ -15,6 +18,7 @@
 
  POD_debug_gain_trait_xp_interaction: "Добавить опыт свойства"
  POD_debug_gain_trait_xp_interaction_desc: "Повысить уровень сверхъестественного свойства персонажа [recipient.GetShortUIName]"
+ POD_reduce_trait_xp: "Reduce experience instead"
 
  POD_debug_umbra_discovery_interaction: "Получить открытие [Concept('umbra', 'Умбры')|E]"
  POD_debug_umbra_discovery_interaction_desc: "Вы сможете начать [Concept('umbra_expedition', 'путешествие в Умбру')|E] в измерение #bold [Localize(Concatenate('game_concept_', recipient.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName))]#!"
@@ -35,6 +39,9 @@
 
  POD_debug_vicissitude_face_interaction: "Редактор портрета Изменчивости"
  POD_debug_vicissitude_face_interaction_desc: "Открывает окно, позволяющее редактировать определённые характеристики персонажа [recipient.GetShortUIName], например мускулистость или рост."
+
+ POD_debug_add_halfsplat_interaction: "Add Half-Splat"
+ POD_debug_add_halfsplat_interaction_desc: "Give [recipient.GetShortUIName] a Half-[splat|E] trait, along with the necessary initialization effects"
 
  POD_debug_teach_spell_of_life_interaction: "Научить заклинанию Жизни"
  POD_debug_teach_spell_of_life_interaction_desc: "Научить персонажа [recipient.GetShortUIName] заклинанию Жизни, которое позволяет создавать мумий"

@@ -1,0 +1,26 @@
+﻿l_russian:
+
+ POD_learn_spirit_language_interaction: "Learn [spirit_language|E]"
+ POD_learn_spirit_language_interaction_desc: "Learn the [spirit_language|E] of [recipient.GetFirstName]."
+ POD_learn_spirit_language_interaction_req: "You cannot learn an $pod_ancestral_tongue$"
+
+ POD_summon_spirit_interaction: "Summon Spirit"
+ POD_summon_spirit_interaction_desc: "Summon a [GetTrait('spirit').GetName( GetNullCharacter )] character at your location."
+ POD_summon_spirit_interaction_random: "Random Spirit"
+ POD_summon_spirit_interaction_friendly: "Friendly Spirit"
+ POD_summon_spirit_interaction_gaian: "Gaian Spirit"
+ POD_summon_spirit_interaction_wyrm: "Wyrm Spirit"
+
+
+ POD_spirit_pact_interaction: "Spiritual Pact"
+ POD_spirit_pact_interaction_desc: "Create a $pod_spirit_pact$ with [recipient.GetFirstName]."
+ POD_spirit_pact_interaction_tooltip: "Is busy"
+
+ POD_spirit_chiminage_interaction: "Perform Chiminage"
+ POD_spirit_chiminage_interaction_desc: "Performing Chiminage will strengthen [recipient.GetFirstName]'s spiritual powers and your $pod_spirit_pact$."
+ POD_spirit_chiminage_interaction_short: "Short Chiminage"
+ POD_spirit_chiminage_interaction_medium: "Regular Chiminage"
+ POD_spirit_chiminage_interaction_long: "Long Chiminage"
+
+ POD_spirit_bane_empowerment_interaction: "Empower Bane"
+ POD_spirit_bane_empowerment_interaction_desc: "Perform a sacrifice to empower the Bane Spirit"
