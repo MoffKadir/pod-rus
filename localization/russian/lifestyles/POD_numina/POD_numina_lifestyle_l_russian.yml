@@ -5,12 +5,9 @@
  game_concept_psi_lifestyle: "Ментальный феномен"
  game_concept_psi_lifestyle_desc: "Категория [Concept('numina', 'нумины')|E]. Способность изменять (или наблюдать удалённо) реальность, напрямую связанная с сознанием/разумом персонажа."
 
- game_concept_theurgy_lifestyle: "Теургия"
- game_concept_theurgy_lifestyle_desc: "Теургия похожа на низшую магию, но суеверия и жертвоприношения, питающие эту [Concept('numina', 'нумину')|E], соответствуют идиомам христианской Церкви."
-
  psi_lifestyle_name: "Псионика"
  psi_lifestyle_desc: "Фокус на силе, исходящей из ментального феномена."
- psi_lifestyle_highlight_desc: "Из-за вашего [Concept('trait','свойства')|E] интеллекта, ваш прирост [Concept('experience', 'опыта')|E] для этого образа жизни увеличен на #P [GetPlayer.Custom('GetIntelligentLifestylePercentageBoost')]#!."
+ psi_lifestyle_highlight_desc: "Из-за вашего [Concept('trait','свойства')|E] интеллекта, ваш прирост [Concept('experience', 'опыта')|E] для этого образа жизни увеличен на #P [GetPlayer.MakeScope.ScriptValue('intellect_psi_lifestyle_xp_mult')|%0]#!."
  monthly_psi_lifestyle_xp_gain_mult: "Ежемесячный прирост [Concept('experience', 'опыта')|E] на [Concept('lifestyle', 'пути')|E] псионики"
 
  theurgy_lifestyle_name: "Теургия"
@@ -113,11 +110,11 @@
  astral_projection_4_perk_name: "Астральная проекция 4"
  astral_projection_5_perk_name: "Астральная проекция 5"
 
- ASTRAL_PROJECTION_1_PERK_EFFECT: "Даёт доступ в [UmbraGlossaryLocalized('astral_reaches','Астральные рубежи')] и [UmbraGlossaryLocalized('deep_umbra','Глубокую Умбру')]\n#weak Психик может отделить свой дух от тела и странствовать по астральному измерению.\nПсихик может перенести свои чувства в астральное пространство, воспринимая это царство как накладывающееся поверх мира смертных.#!"
- ASTRAL_PROJECTION_2_PERK_EFFECT: "Даёт доступ к [UmbraGlossaryLocalized('spirit_wilds','Духовные дебри')] и [UmbraGlossaryLocalized('dreaming','Грёзы')]\n#weak Психик может покидать свое тело на несколько минут. В астральном мире он ограничен видением.#!"
- ASTRAL_PROJECTION_3_PERK_EFFECT: "Даёт доступ в [UmbraGlossaryLocalized('shadowlands','Загробный мир')]\n#weak Психик может покидать своё тело на несколько минут. В астральном мире он может слышать, видеть и быстро покидать своё тело.#!"
- ASTRAL_PROJECTION_4_PERK_EFFECT: "[umbra_aptitude|E]: $pod_grace_i$#P +25%#!\n#weak Психик может покидать свое тело на несколько часов, удаляясь от него на большой скорости. Они также могут проявляться в физической форме в полупрозрачной форме, хотя и не способны к устному общению.#!"
- ASTRAL_PROJECTION_5_PERK_EFFECT: "[umbra_aptitude|E]: $pod_grace_i$#P +50%#!\n#weak Находясь в астральном пространстве, психик может путешествовать в любую точку мира, использовать весь свой набор органов чувств и может говорить, находясь в проявленном состоянии.#!"
+ ASTRAL_PROJECTION_1_PERK_EFFECT: "#weak Психик может отделить свой дух от тела и странствовать по астральному измерению.\nПсихик может перенести свои чувства в астральное пространство, воспринимая это царство как накладывающееся поверх мира смертных.#!"
+ ASTRAL_PROJECTION_2_PERK_EFFECT: "#weak Психик может покидать свое тело на несколько минут. В астральном мире он ограничен видением.#!"
+ ASTRAL_PROJECTION_3_PERK_EFFECT: "#weak Психик может покидать своё тело на несколько минут. В астральном мире он может слышать, видеть и быстро покидать своё тело.#!"
+ ASTRAL_PROJECTION_4_PERK_EFFECT: "#weak Психик может покидать свое тело на несколько часов, удаляясь от него на большой скорости. Они также могут проявляться в физической форме в полупрозрачной форме, хотя и не способны к устному общению.#!"
+ ASTRAL_PROJECTION_5_PERK_EFFECT: "#weak Находясь в астральном пространстве, психик может путешествовать в любую точку мира, использовать весь свой набор органов чувств и может говорить, находясь в проявленном состоянии.#!"
 
  biocontrol_1_perk_name: "Самоконтроль"
  biocontrol_2_perk_name: "Самоисцеление"
@@ -125,9 +122,9 @@
  biocontrol_4_perk_name: "Игнорирование болевых реакций"
  biocontrol_5_perk_name: "Разум превыше материи"
 
- BIOCONTROL_1_PERK_EFFECT: "Разблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E] смены облика.\nРазблокирует косметические опции смены облика.\nКаждый месяц есть #P 33%#! шанс снизить уровень ранения на 1\n#weak Психик может управлять своим собственным телом.\nПсихик может контролировать незначительные функции своего тела, такие как задержка дыхания, входя в транс.#!"
- BIOCONTROL_2_PERK_EFFECT: "Позволяет мгновенно вылечить свойство «[GetTrait('ill').GetName( GetNullCharacter )]» через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nПовышает шанс исцеления достоинства «[GetPerk('biocontrol_1_perk').GetName( GetNullCharacter )]» с #N 33%#! до #P 66%#!\n#weak Психик может ускорить свой собственный процесс исцеления с помощью медитации.#!"
- BIOCONTROL_3_PERK_EFFECT: "Позволяет мгновенно залечивать раны через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nПовышает шанс исцеления достоинства «[GetPerk('biocontrol_1_perk').GetName( GetNullCharacter )]» с #N 66%#! до #P 100%#!\n#weak Взяв под контроль свои адреналиновые железы, психик может войти в период повышенной силы и скорости.#!"
+ BIOCONTROL_1_PERK_EFFECT: "Разблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E] смены облика.\nРазблокирует косметические опции смены облика.\n#weak Психик может управлять своим собственным телом.\nПсихик может контролировать незначительные функции своего тела, такие как задержка дыхания, входя в транс.#!"
+ BIOCONTROL_2_PERK_EFFECT: "Позволяет мгновенно вылечить свойство «[GetTrait('ill').GetName( GetNullCharacter )]» через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#weak Психик может ускорить свой собственный процесс исцеления с помощью медитации.#!"
+ BIOCONTROL_3_PERK_EFFECT: "Позволяет мгновенно залечивать раны через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#weak Взяв под контроль свои адреналиновые железы, психик может войти в период повышенной силы и скорости.#!"
  BIOCONTROL_4_PERK_EFFECT: "Позволяет мгновенно излечивать смертные хвори через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#weak Психик может стереть боль из своего сознания.#!"
  BIOCONTROL_5_PERK_EFFECT: "Позволяет мгновенно излечивать любые хвори через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#weak Психик может приказать своему собственному сердцебиению остановиться, если это необходимо, напрямую регулировать свою иммунную систему и принимать неестественные позы.#!"
 
@@ -137,11 +134,11 @@
  necro_psi_4_perk_name: "Паранекротизм 4"
  necro_psi_5_perk_name: "Паранекротизм 5"
 
- NECRO_PSI_1_PERK_EFFECT: "Позволяет призвать к вашему двору #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! со свойством «[GetTrait('lament').GetName( GetNullCharacter )]» через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#weak Паранекротизм, также называемый направлением, - это способность, которая позволяет психику вступать в контакт с призраками умерших.\nПсихик может слышать любых призраков поблизости.#!"
- NECRO_PSI_2_PERK_EFFECT: "Позволяет взаимодействовать с существами из [Concept('umbra', 'Умбры')|E], пока вы находитесь в материальном мире.\nРазблокирует взаимодействие персонажа «[summon_wraith_on_death_interaction|E]».\nРазблокирует взаимодействие персонажа «[bind_wraith_interaction|E]».\n#weak Психик может общаться с призраками в районе.#!"
- NECRO_PSI_3_PERK_EFFECT: "Разблокирует взаимодействие персонажа «[command_wraith_interaction|E]».\nВы можете позволить связанному призраку направлять вас, увеличив все атрибуты на 2, получив при этом свойство «[GetTrait('possessed_1').GetName( GetNullCharacter )]», через [Concept('character_interaction', 'взаимодействие персонажа')|E]\n#weak Психик может заглянуть в [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
+ NECRO_PSI_1_PERK_EFFECT: "Позволяет призвать к вашему двору #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#weak Паранекротизм, также называемый направлением, - это способность, которая позволяет психику вступать в контакт с призраками умерших.\nПсихик может слышать любых призраков поблизости.#!"
+ NECRO_PSI_2_PERK_EFFECT: "Позволяет взаимодействовать с существами из [Concept('umbra', 'Умбры')|E], пока вы находитесь в материальном мире.\n$POD_can_summon_on_death_trigger_loca$\n$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n#weak Психик может общаться с призраками в районе.#!"
+ NECRO_PSI_3_PERK_EFFECT: "$POD_can_command_wraith_trigger_loca$\nВы можете позволить связанному призраку направлять вас, увеличив все атрибуты на 2, получив при этом свойство «[GetTrait('possessed_1').GetName( GetNullCharacter )]», через [Concept('character_interaction', 'взаимодействие персонажа')|E]\n#weak Психик может заглянуть в [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
  NECRO_PSI_4_PERK_EFFECT: "Вы можете позволить связанному призраку направлять вас, увеличив все атрибуты на 2, не получив свойство «[GetTrait('possessed_1').GetName( GetNullCharacter )]», через [Concept('character_interaction', 'взаимодействие персонажа')|E]\n#weak Психик становится маяком для духов, которых он привлекает. Когда в него вселяется призрак, он может соперничать с ним за контроль.#!"
- NECRO_PSI_5_PERK_EFFECT: "Максимальное количество связанных призраков: #P +2#!\nПозволяет получить направление двух призраков вместо одного от [Concept('character_interaction', 'взаимодействия персонажа')|E] достоинств «[GetPerk('necro_psi_3_perk').GetName( GetNullCharacter )]» и «[GetPerk('necro_psi_4_perk').GetName( GetNullCharacter )]»\n#weak Психик может свободно общаться с призраками и направлять двоих одновременно.#!"
+ NECRO_PSI_5_PERK_EFFECT: "Позволяет получить направление двух призраков вместо одного от [Concept('character_interaction', 'взаимодействия персонажа')|E] достоинств «[GetPerk('necro_psi_3_perk').GetName( GetNullCharacter )]» и «[GetPerk('necro_psi_4_perk').GetName( GetNullCharacter )]»\n#weak Психик может свободно общаться с призраками и направлять двоих одновременно.#!"
 
  clairvoyance_1_perk_name: "Ясновидение 1"
  clairvoyance_2_perk_name: "Ясновидение 2"
@@ -346,74 +343,3 @@
  TELEPATHY_3_PERK_EFFECT: "Позволяет начать поединок навыка дипломатии против цели через [Concept('character_interaction', 'взаимодействие персонажа')|E], чтобы получить на неё слабое влияние.\n#weak Психик может читать недавние воспоминания или планы на будущее, передавать сложные эмоции или идеи или совершать необычные действия.#!"
  TELEPATHY_4_PERK_EFFECT: "Новая опция для [Concept('character_interaction', 'взаимодействия персонажа')|E] телепатии, позволяющая получить сильное влияние вместо слабого.\n#weak Психик может читать глубокие мысли, посылать несколько предложений или временно захватывать контроль над телом цели.#!"
  TELEPATHY_5_PERK_EFFECT: "Новая опция для [Concept('character_interaction', 'взаимодействия персонажа')|E] телепатии, позволяющая получить вечное сильное влияние.\n#weak Психик может проникнуть в самые глубокие, подсознательные тайны цели, вести с ней беседу или полностью контролировать её тело, включая переписывание воспоминаний.#!"
-
- via_geniorum_visible: "Via Geniorum"
- via_ignis_visible: "Via Ignis"
- via_medicamenti_visible: "Via Medicamenti"
- via_necromantiae_visible: "Via Necromantiae"
- via_oraculi_visible: "Via Oraculi"
-
- via_geniorum_1_perk_name: "Ритуал откровения"
- via_geniorum_2_perk_name: "Ритуал защиты"
- via_geniorum_3_perk_name: "Ритуал изгнания"
- via_geniorum_4_perk_name: "Ритуал призыва"
- via_geniorum_5_perk_name: "Ритуал сковывания"
-
-
- via_ignis_1_perk_name: "Via Ignis 1"
- via_ignis_2_perk_name: "Via Ignis 2"
- via_ignis_3_perk_name: "Via Ignis 3"
- via_ignis_4_perk_name: "Via Ignis 4"
- via_ignis_5_perk_name: "Via Ignis 5"
-
-
- via_medicamenti_1_perk_name: "Via Medicamenti 1"
- via_medicamenti_2_perk_name: "Via Medicamenti 2"
- via_medicamenti_3_perk_name: "Via Medicamenti 3"
- via_medicamenti_4_perk_name: "Via Medicamenti 4"
- via_medicamenti_5_perk_name: "Via Medicamenti 5"
-
-
- via_necromantiae_1_perk_name: "Ритуал пробуждения"
- via_necromantiae_2_perk_name: "Ритуал оберега"
- via_necromantiae_3_perk_name: "Ритуал общения"
- via_necromantiae_4_perk_name: "Ритуал изгнания"
- via_necromantiae_5_perk_name: "Ритуал оживления"
-
-
- via_oraculi_1_perk_name: "Via Oraculi 1"
- via_oraculi_2_perk_name: "Via Oraculi 2"
- via_oraculi_3_perk_name: "Via Oraculi 3"
- via_oraculi_4_perk_name: "Via Oraculi 4"
- via_oraculi_5_perk_name: "Via Oraculi 5"
-
-
- VIA_GENIORUM_1_PERK_EFFECT: "Разблокирует [Concept('decision', 'решение')|E] «$seek_aid_of_the_spirits_decision$».\nПозволяет взаимодействовать с существами из [Concept('umbra', 'Умбры')|E], пока вы находитесь в материальном мире.\n#F Эта Via посвящена царству духов и демоническому миру. Знание истинного имени духа даёт человеку власть над ним. Via Geniorum - это сборник специальных ритуалов с различными уровнями силы.\nТеург не столько заглядывает в [Concept('spirit_world', 'мир духов')|E], сколько приказывает находящимся поблизости божественным существам раскрыть себя.#!"
- VIA_GENIORUM_2_PERK_EFFECT: "Вы больше не можете быть одержимы призраками.\nМожно узнать истинное имя персонажа через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Теург может нарисовать защитные символы на предметах, которые он носит с собой, или в небольшом круге вокруг себя.#!"
- VIA_GENIORUM_3_PERK_EFFECT: "[Concept('decision', 'Решение')|E] «$POD_demon_unearthbound_decision$» становится бесплатным.\nПозволяет изгнать персонажа-демона в [UmbraGlossaryLocalized('abyss','Бездну')] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nПозволяет изгнать персонажа-фею в [UmbraGlossaryLocalized('arcadia','Аркадию')] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Теург может отправить дух обратно в его родной мир.#!"
- VIA_GENIORUM_4_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('materialized_spirits').GetName] и [GetMaA('imps').GetName].\n#F Теург может вызывать духовных существ.#!"
- VIA_GENIORUM_5_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('jagglings').GetName] и [GetMaA('lucifergia').GetName].\n#F Теург может обратить духа в рабство.#!"
-
- VIA_IGNIS_1_PERK_EFFECT: "#F Эта Via позволяет Проклятым испытать пламя Ада перед их окончательной смертью. Это Via призывает то, что кажется обычным огнём, но оно обжигает даже тех, кто защищён от обычного пламени.\nТеург может вызвать пламя свечи Священного огня.#!"
- VIA_IGNIS_2_PERK_EFFECT: "#F Теург может вызвать небольшой Священный огонь.#!"
- VIA_IGNIS_3_PERK_EFFECT: "#F Теург может разжечь жаровню Священного огня.#!"
- VIA_IGNIS_4_PERK_EFFECT: "#F Теург может разжечь костёр Священного огня.#!"
- VIA_IGNIS_5_PERK_EFFECT: "#F Теург может вызвать вспышку Священного огня.#!"
-
- VIA_MEDICAMENTI_1_PERK_EFFECT: "Позволяет наделить цель модификатором [GetModifier('theurgy_soothe_pain_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Те, кто практикует эту Via, также называемый Путём исцеления, являются целителями. Via Medicamenti сращивает кости, останавливает кровотечение и фактически устраняет нанесённый ущерб.\nВы можете облегчить незначительные боли.#!"
- VIA_MEDICAMENTI_2_PERK_EFFECT: "Позволяет исцелять шрамы через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Растяжения связок и незначительные инфекции заживают быстрее под вашим присмотром.#!"
- VIA_MEDICAMENTI_3_PERK_EFFECT: "Позволяет исцелять раны через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Все травмы, вплоть до увечий, заживают в два раза быстрее, чем обычно, без риска заражения.#!"
- VIA_MEDICAMENTI_4_PERK_EFFECT: "Позволяет исцелять базовые хвори через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Вы можете вылечить хронические заболевания, такие как астма или артрит, но это требует времени и усилий.#!"
- VIA_MEDICAMENTI_5_PERK_EFFECT: "Позволяет совершать чудесные исцеления через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Вы можете вылечить даже смертельно опасные заболевания, но это отнимает у вас много сил и требует нескольких недель лечения.#!"
-
- VIA_NECROMANTIAE_1_PERK_EFFECT: "Разблокирует взаимодействие персонажа «[summon_wraith_on_death_interaction|E]».\n#F Via Necromantiae - это теургия, направленная на установление контакта с умершими или изгнание их из мира живых.\nТеург может приказать недавно умершему трупу пробудиться.#!"
- VIA_NECROMANTIAE_2_PERK_EFFECT: "Вы можете пленить, пытать, казнить или наносить физические повреждения духам во время [Concept('single_combat_duel_plural', 'поединков')|E].\nЗаключение в темницу, пытки, казнь или причинение физического вреда призраку/демону во время [Concept('single_combat_duel_plural', 'поединков')|E] больше не требуют затрат [Concept('gold', 'золота')|E].\n#F Теург может защитить область от вторжения призраков.#!"
- VIA_NECROMANTIAE_3_PERK_EFFECT: "Разблокирует взаимодействие персонажа «[bind_wraith_interaction|E]».\n#F Теург может вступать в контакт с умершими.#!"
- VIA_NECROMANTIAE_4_PERK_EFFECT: "Разблокирует взаимодействие персонажа «[command_wraith_interaction|E]».\nПозволяет изгонять призраков в [UmbraGlossaryLocalized('shadowlands','Загробный мир')] через [Concept('character_interaction', 'взаимодействие персонажа')|E], разбивая их узы в процессе.\n#F Теург может изгнать преследующего его призрака.#!"
- VIA_NECROMANTIAE_5_PERK_EFFECT: "Позволяет призвать случайного призрака из [UmbraGlossaryLocalized('shadowlands','Загробного мира')] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nДоступны [men_at_arms|El] - [GetMaA('hidden').GetName], [GetMaA('walker').GetName], [GetMaA('shambler').GetName] и [GetMaA('skeletons').GetName].\nМаксимальное количество связанных призраков: #P +1#!.\n#F Теург может заставить труп подняться.#!"
-
- VIA_ORACULI_1_PERK_EFFECT: "#F С помощью Via Oraculi теург может заглянуть в неизвестное будущее или увидеть незримое прошлое.\nТеург интерпретирует знаки или предупреждения о состоянии его непосредственных обстоятельств.#!"
- VIA_ORACULI_2_PERK_EFFECT: "Если кто-то из ваших родственников или друзей будет убит при загадочных обстоятельствах, вы узнаете личность убийцы.\n#F Теург устраняет возможные негативные последствия, предварительно сравнивая их.#!"
- VIA_ORACULI_3_PERK_EFFECT: "Позволяет принять [impatient_rushing_all_schemes_decision|El]\n#F Теург может улавливать закономерности случайностей, позволяющие ему собирать краткосрочную информацию, которая следует за принятием конкретных решений.#!"
- VIA_ORACULI_4_PERK_EFFECT: "Вы получите уведомление, если кто-то задумает убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то задумает соблазнить ваших любовников или консортов.\nУ ваших узников меньше шансов на побег из темницы.\n#F Теург способен предсказывать конкретные события в будущем.#!"
- VIA_ORACULI_5_PERK_EFFECT: "Позволяет принять [deceitful_progress_hostile_schemes_decision|El].\n#F Теург обретает способность воспринимать ясные и конкретные детали будущего и предсказывать конкретные события с достоверной уверенностью.#!"
