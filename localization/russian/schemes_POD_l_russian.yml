@@ -80,7 +80,7 @@
  banehunt_interaction: "Охотиться #weak (происки)#!"
  banehunt_desc: "Охотиться на персонажа [SCHEME.GetTargetCharacter.GetShortUINameNoTooltip] ради [SCHEME.GetTargetCharacter.GetHerHis] плоти."
  banehunt_desc_general: "$banehunt$ — [hostile_scheme|El], в рамках которых [GetTrait('banemummy').GetName( GetNullCharacter )|l] охотится на персонажей со свойством «[GetTrait('mortal').GetName( GetNullCharacter )]» ради их плоти. Эти происки в первую очередь основаны на ваших [Concept('intrigue', 'интригах')|E]. Происки могут расцениваться как [secret_scheme_single|El] и не требуют [Concept('agents', 'соучастников')|E]. При успехе [GetTrait('banemummy').GetName( GetNullCharacter )|l] осушит плоть жертвы. Эти происки не действуют на персонажей-[Concept('landed', 'землевладельцев')|E]. Потенциальная жертва должна находиться в вашем местоположении."
- scheme_interaction_tt_banehunt_approved: "Попытаться выследить персонажа [recipient.GetFirstName]. Вы сможете пожрать [recipient.GetHerHis] плоть, чтобы пополнить запасы сехема."
+ scheme_interaction_tt_banehunt_approved: "Попытаться выследить персонажа [recipient.GetFirstName]. Вы сможете пожрать [recipient.GetHerHis] плоть, чтобы пополнить запасы силы воли."
  BANEHUNT_SUCCESS_DESC: "Плоть персонажа [TARGET_CHARACTER.GetShortUIName] будет вашей."
  BANEHUNT_DISCOVERY_DESC: "@warning_icon! Ваша охота раскрыта."
  banehunt_my_intrigue: "Ваши интриги: $VALUE|=+0$"
@@ -311,14 +311,7 @@
  POD_discover_true_name_scheme_power_mult: "[scheme_power|E] «[GetScheme('POD_discover_true_name').GetTypeName]»"
  POD_discover_true_name_scheme_power_add: "[scheme_power|E] «[GetScheme('POD_discover_true_name').GetTypeName]»"
 
- POD_cast_hekau: "Колдовство хекау"
- POD_cast_hekau_action: "Колдовство хекау"
- POD_cast_hekau_desc: "Вы попытаетесь наложить колдовство хекау на свою цель."
- POD_cast_hekau_desc_general: "Колдовство хекау"
- POD_cast_hekau_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUIName] пострадает от магического эффекта."
  scheme_interaction_tt_POD_cast_hekau_approved: "Попытаться наложить колдовство хекау на персонажа [recipient.GetFirstName]."
- POD_cast_hekau_my_learning: "Ваш навык интриги: $VALUE|=+0$"
- POD_cast_hekau_my_rival: "Ваша жертва: $VALUE|=+0$"
 
  POD_project_negative_psychic_energy: "Проекция негативной психической энергии"
  POD_project_negative_psychic_energy_action: "Проекция негативной психической энергии"

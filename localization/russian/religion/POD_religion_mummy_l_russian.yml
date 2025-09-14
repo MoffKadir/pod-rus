@@ -2,12 +2,12 @@
 
  #Common Mummies Localization
  amenti_religion: "Аментийск"
- amenti_religion_adj: "Аменти"
+ amenti_religion_adj: "@mummy_icon! Аменти"
  amenti_religion_adherent: "Аменти"
  amenti_religion_adherent_plural: "Аменти"
  amenti_religion_desc: "Правила и наставления Аменти, мумий, созданных египетским Заклинанием жизни."
  wutian_religion: "Ву-т'яньск"
- wutian_religion_adj: "Ву Т'янь"
+ wutian_religion_adj: "@mummy_icon! Ву Т'янь"
  wutian_religion_adherent: "Ву Т'янь"
  wutian_religion_adherent_plural: "Ву Т'янь"
  wutian_religion_desc: "Правила и наставления Ву Т'янь."
@@ -98,13 +98,13 @@
  ten_mandates_of_heaven_adj: "Десять мандатов Неба"
  ten_mandates_of_heaven_adherent: "Ву Т'янь"
  ten_mandates_of_heaven_adherent_plural: "Ву Т'янь"
- ten_mandates_of_heaven_desc: "Десять мандатов Неба - это правила и наставления для Ву Т'янь, установленные восемью Бессмертными под руководством Великого нефритового императора. Каждый мандат одинаково важен, и у каждого бессмертного есть свой список приоритетов для следования им, в зависимости от его характера и личных достоинств."
+ ten_mandates_of_heaven_desc: "Десять мандатов Неба - это правила и наставления для Ву Т'янь, установленные восемью Бессмертными под руководством [Glossary('Нефритового императора','podgloss.augustpersonageofjade')]. Каждый мандат одинаково важен, и у каждого бессмертного есть свой список приоритетов для следования им, в зависимости от его характера и личных достоинств."
 
  ten_mandates_of_hell: "Рабск"
  ten_mandates_of_hell_adj: "Рабы повелителей Яма"
  ten_mandates_of_hell_adherent: "Ву-куэй"
  ten_mandates_of_hell_adherent_plural: "Ву-куэй"
- ten_mandates_of_hell_desc: "Ходили слухи, что повелители Яма создали собственных Бессмертных рабов, чтобы противостоять Небесной Семье."
+ ten_mandates_of_hell_desc: "Ходили слухи, что [Glossary('повелители Яма','podgloss.yamaking')] создали собственных Бессмертных рабов, чтобы противостоять Небесной Семье."
 
  holy_order_hand_of_thoth: "Длань Тота"
  holy_order_judges_of_maat: "Судьи Маат"
@@ -118,31 +118,3 @@
  holy_order_white_lotus_society: "Общество Белого Лотоса"
  holy_order_twilight_scholars: "Сумеречные ученые"
  holy_order_jade_sentinels: "Нефритовые стражи"
-
- mummy_special_kingdom_name: "Тёмное королевство мумий"
- mummy_special_kingdom_hades_doctrine_name: "Аид"
- mummy_special_kingdom_hades_doctrine_desc: "Аид, подземный мир в греческой мифологии, теперь также является домом для мумий."
- mummy_special_kingdom_hellheim_doctrine_name: "Хельхейм"
- mummy_special_kingdom_hellheim_doctrine_desc: "Хельхейм, подземный мир в скандинавской мифологии, теперь также является домом для мумий."
- mummy_special_kingdom_yomi_doctrine_name: "Ёми"
- mummy_special_kingdom_yomi_doctrine_desc: "Ёми, подземный мир в некоторых восточных мифологиях, теперь также является домом для мумий."
- mummy_special_kingdom_hell_doctrine_name: "Ад"
- mummy_special_kingdom_hell_doctrine_desc: "Ад, подземный мир в христианской мифологии, теперь также является домом для мумий."
-
- doctrine_parameter_mummy_special_kingdom_basic: "Даёт доступ к этому [Concept('dark_kingdom', 'тёмному королевству')|E] в [Concept('umbra', 'Умбре')|E] и открывает в нём особые действия."
-
- doctrine_parameter_mummy_special_kingdom_easier_wraith_binding: "Открывает действие в уникальном [Concept('dark_kingdom', 'тёмном королевстве')|E], дающее модификатор, увеличивающий вероятность успешного связывания #L [GetTrait('wraith').GetName( GetNullCharacter )|l]а#!"
- doctrine_parameter_mummy_special_kingdom_cheaper_wraith_maintenance: "Открывает действие в уникальном [Concept('dark_kingdom', 'тёмном королевстве')|E], дающее модификатор, снижающий стоимость содержания призраков в Землях Плоти"
- doctrine_parameter_mummy_special_kingdom_double_wraith_limit: "Открывает действие в уникальном [Concept('dark_kingdom', 'тёмном королевстве')|E], дающее модификатор, удваивающий предел связанных #L [GetTrait('wraith').GetName( GetNullCharacter )|l]ов#!"
-
- doctrine_parameter_mummy_special_kingdom_cheaper_army: "Открывает действие в уникальном [Concept('dark_kingdom', 'тёмном королевстве')|E], дающее модификатор, снижающий содержание армии на #p -25%#!"
- doctrine_parameter_mummy_special_kingdom_better_army: "Открывает действие в уникальном [Concept('dark_kingdom', 'тёмном королевстве')|E], дающее модификатор, увеличивающий все характеристики армии на #p +50%#!"
-
- doctrine_parameter_mummy_special_kingdom_middle_kingdom: "Считается [Concept('splat', 'видом')|E] Срединного царства"
- doctrine_parameter_mummy_special_kingdom_control_wu_kuei: "Открывает действие в уникальном [Concept('dark_kingdom', 'тёмном королевстве')|E], создающее [GetTrait('wukuei').GetName( GetNullCharacter )|l]"
- doctrine_parameter_mummy_special_kingdom_control_akuma_kueijin: "Все персонажи этой конфессии получают мощные взаимодействия для командования [GetTrait('wukuei').GetName( GetNullCharacter )|l] и демоническими культистами [GetTrait('kueijin').GetName( GetNullCharacter )|l]" #[GetTrait('cultist').GetName( GetNullCharacter )]
- #doctrine_parameter_mummy_special_kingdom_can_corrupt_kueijin: "As [character_interaction|E] can corrupt [GetTrait('kueijin').GetName( GetNullCharacter )] to become [GetTrait('cultist').GetName( GetNullCharacter )]" I REALLY don't won't to do this...
-
- doctrine_parameter_mummy_special_kingdom_demon_spawn: "Открывает действие в уникальном [Concept('dark_kingdom', 'тёмном королевстве')|E], создающее #L [GetTrait('demon').GetName( GetNullCharacter )|l]а#! при дворе"
- doctrine_parameter_mummy_special_kingdom_demonic_army: "Открывает действие в уникальном [Concept('dark_kingdom', 'тёмном королевстве')|E], дающее модификатор, открывающему доступ к демоническим [Concept('men_at_arms', 'профессионалам')|E]"
- doctrine_parameter_mummy_special_kingdom_demon_binding: "Открывает действие в уникальном [Concept('dark_kingdom', 'тёмном королевстве')|E], дающее модификатор, увеличивающий скорость и шанс успеха создания демонических уз"
