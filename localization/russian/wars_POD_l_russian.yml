@@ -6,7 +6,9 @@
  hunter_war: "Нападение инквизиции"
  HUNTER_WAR_NAME: "Нападение инквизиции"
  declared_major_religious_war_flag_POD_tt: "Вы можете объявить только одну крупную религиозную войну за 50 лет"
+ declared_major_religious_war_flag_POD_tt_2: "Вы можете объявить только одну крупную религиозную войну за 25 лет"
  major_religious_war_warning_POD_desc: "\n\n#X Вы можете объявить только одну [Concept('holy_war', 'священную войну')|E] за [Concept('title', 'титул')|El] уровня «[kingdom|El]» за 50 лет#!"
+ major_religious_war_warning_POD_desc_2: "\n\n#X Вы можете объявить только одну [Concept('holy_war', 'священную войну')|E] за [Concept('title', 'титул')|El] уровня «[kingdom|El]» за 25 лет#!"
  invasion_war_warning_POD_desc: "\n\n#X Вы можете объявить только одну [Concept('war', 'войну')|E] вторжения за [Concept('title', 'титул')|El] уровня «[kingdom|El]» за 100 лет#!"
 
  CB_ATTACKER_DYNASTY_SALUBRI: "[GetDynastyPerk( 'salubri_legacy_5' ).GetName]"
@@ -140,7 +142,7 @@
 
  POD_overthrow_akuma_name: "$ORDER$ Поход [Select_CString(ATTACKER.IsLocalPlayer, '', 'персонажа ' )][ATTACKER.GetShortUINamePossessive][Select_CString(ATTACKER.IsLocalPlayer, 'его персонажа', '' )] против [Concept('akuma', 'акума')|E]"
  POD_overthrow_akuma_name_base: "[ATTACKER.GetFirstName][DEFENDER.GetPrimaryTitle.GetName]"
- POD_overthrow_akuma: "Свержение акума"
+ POD_overthrow_akuma: "Свержение [Concept('akuma', 'акума')|E]"
  POD_overthrow_akuma_victory_desc: "[attacker.GetShortUIName|U] передаст завоёванные земли новому персонажу с культурой [Select_CString(defender.IsLocalPlayer, '', 'персонажа ' )][defender.GetShortUINamePossessive][Select_CString(defender.IsLocalPlayer, 'его персонажа', '' )]."
  POD_overthrow_akuma_defeat_desc_attacker: "[defender.GetShortUIName|U] [Select_CString(defender.IsLocalPlayer, 'сохранили', Select_CString(defender.IsFemale, 'сохранила', 'сохранил' ))] свои титулы. Вы теряете [Concept('piety', 'благочестие')|E]."
  POD_overthrow_akuma_defeat_desc_defender: "Вы сохраняете титулы, ваше [Concept('piety', 'благочестие')|E] растет."
@@ -151,5 +153,5 @@
  POD_dismantle_anda_horde_name_base: "[ATTACKER.GetFirstName][DEFENDER.GetPrimaryTitle.GetName]"
  POD_dismantle_anda_horde: "Уничтожить державу [GetTitleByKey('e_anda').GetNameNoTier]"
  POD_dismantle_anda_horde_victory_desc: "Держава [GetTitleByKey('e_anda').GetNameNoTier] будет уничтожена, все вампиры и [Concept('akuma', 'акума')|E] в её границах будут [Concept('deposed', 'свергнуты')|E], а Колесо эпох повернётся в сторону [Concept('first_age', 'Первой эпохи')|E]."
- POD_dismantle_anda_horde_defeat_desc: "[GetTitleByKey('e_anda').GetNameNoTier] останется нетронутой, нападающий теряет [Concept('piety', 'благочестие')|E], а Колесо эпох повернётся в сторону [Concept('sixth_age', 'Шестой эпохи')|E]."
+ POD_dismantle_anda_horde_defeat_desc: "[GetTitleByKey('e_anda').GetNameNoTier] останется нетронутой, нападающий теряет [Concept('piety', 'благочестие')|E], а [Glossary('Колесо эпох','podgloss.wheelofages')] повернётся в сторону [Concept('sixth_age', 'Шестой эпохи')|E]."
  msg_POD_dismantle_anda_horde_invalidated_message: "[war.GetName] подходит к концу: [defender.GetShortUIName] больше не [Select_CString( defender.IsLocalPlayer, 'контролируете', 'контролирует')] титул [GetTitleByKey('e_anda').GetNameNoTier]."

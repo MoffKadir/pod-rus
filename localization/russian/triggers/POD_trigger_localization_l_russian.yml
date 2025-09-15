@@ -171,22 +171,17 @@
  NOT_current_year_trigger: "Текущий год - #bold не#! $COMPARATOR$ $NUM|V$"
  days_of_continuous_peace: "Дни непрерывного мира - $COMPARATOR$ $NUM|V$"
 
+ POD_character_is_defeated_third: "[CHARACTER.GetFirstName] must be dead"
+ POD_character_is_defeated_third_not: "[CHARACTER.GetFirstName] is #bold not#! dead"
+
+ POD_vampire_is_defeated_third: "[CHARACTER.GetFirstName] must be dead or in [torpor|E]"
+ POD_vampire_is_defeated_third_not: "[CHARACTER.GetFirstName] is #bold not#! dead or in [torpor|E]"
+ #POD_vampire_is_defeated_third: "[CHARACTER.GetFirstName] is defeated #weak (dead or in [GetTrait('torpor').GetName(CHARACTER.Self)])#!"
+ #POD_vampire_is_defeated_third_not: "[CHARACTER.GetFirstName] is #bold not#! yet defeated #weak (dead or in [GetTrait('torpor').GetName(CHARACTER.Self)])#!"
+
  NOT_send_option_selected: "Необходимо выбрать один из вариантов."
 
-
- HAS_TOTAL_BLOOD_RESERVES_GLOBAL: "Имеет по крайней мере #bold $VALUE|V0$#! ед. $pod_hunger_i$крови"
- HAS_TOTAL_BLOOD_RESERVES_FIRST: "Вы имеете по крайней мере #bold $VALUE|V0$#! ед. $pod_hunger_i$крови"
- HAS_TOTAL_BLOOD_RESERVES_THIRD: "[CHARACTER.GetShortUIName] имеет по крайней мере #bold $VALUE|V0$#! ед. $pod_hunger_i$крови"
- HAS_TOTAL_BLOOD_RESERVES_GLOBAL_NOT: "Имеет менее #bold $VALUE|V0$#! ед. $pod_hunger_i$крови"
- HAS_TOTAL_BLOOD_RESERVES_FIRST_NOT: "Вы имеете менее #bold $VALUE|V0$#! ед. $pod_hunger_i$крови"
- HAS_TOTAL_BLOOD_RESERVES_THIRD_NOT: "[CHARACTER.GetShortUIName] имеет менее #bold $VALUE|V0$#! ед. $pod_hunger_i$крови"
-
- HAS_TOTAL_PATHOS_RESERVES_GLOBAL: "Имеет по крайней мере #bold $VALUE|V0$#! ед. пафоса"
- HAS_TOTAL_PATHOS_RESERVES_FIRST: "Вы имеете по крайней мере #bold $VALUE|V0$#! ед. пафоса"
- HAS_TOTAL_PATHOS_RESERVES_THIRD: "[CHARACTER.GetShortUIName] имеет по крайней мере #bold $VALUE|V0$#! ед. пафоса"
- HAS_TOTAL_PATHOS_RESERVES_GLOBAL_NOT: "Имеет менее #bold $VALUE|V0$#! ед. пафоса"
- HAS_TOTAL_PATHOS_RESERVES_FIRST_NOT: "Вы имеете менее #bold $VALUE|V0$#! ед. пафоса"
- HAS_TOTAL_PATHOS_RESERVES_THIRD_NOT: "[CHARACTER.GetShortUIName] имеет менее #bold $VALUE|V0$#! ед. пафоса"
+ POD_title_cannot_receive_county_modifiers: "This title can't receive county modifiers"
 
  HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_GLOBAL: "Принадлежит по крайней мере к #bold $VALUE|V0$#! [Concept('vampgeneration', 'поколению')|E]"
  HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_FIRST: "Вы принадлежите по крайней мере к #bold $VALUE|V0$#! [Concept('vampgeneration', 'поколению')|E]"
@@ -197,14 +192,30 @@
 
  has_abyssal_mysticism_bloodmagic_trigger_flag: "Необходимо завершить [journey|El], чтобы открыть мистицизм Бездны"
 
- HAS_TOTAL_RESOLVE_RESERVES_GLOBAL: "Имеет по крайней мере #bold $VALUE|V0$#!@demon_icon!решимости"
- HAS_TOTAL_RESOLVE_RESERVES_FIRST: "Вы имеете по крайней мере #bold $VALUE|V0$#!@demon_icon!решимости"
- HAS_TOTAL_RESOLVE_RESERVES_THIRD: "[CHARACTER.GetShortUIName] имеет по крайней мере #bold $VALUE|V0$#!@demon_icon!решимости"
- HAS_TOTAL_RESOLVE_RESERVES_GLOBAL_NOT: "Имеет меньше, чем #bold $VALUE|V0$#!@demon_icon!решимости"
- HAS_TOTAL_RESOLVE_RESERVES_FIRST_NOT: "Вы имеете меньше, чем #bold $VALUE|V0$#!@demon_icon!решимости"
- HAS_TOTAL_RESOLVE_RESERVES_THIRD_NOT: "[CHARACTER.GetShortUIName] имеет меньше, чем #bold $VALUE|V0$#!@demon_icon!решимости"
-
  COUNCILLOR_WITH_POSITION_SKILL_GLOBAL: "Имеет [Concept('skill', 'навык')|E] не ниже $VALUE|V0$ ед. в своей придворной должности"
  COUNCILLOR_WITH_POSITION_SKILL_GLOBAL_NOT: "#N Не#! имеет [Concept('skill', 'навык')|E] не ниже $VALUE|V0$ ед. в своей придворной должности"
 
  any_councillor: "Любой советник:"
+ any_powerful_vassal_all: "All [powerful_vassals|E]:"
+
+ POD_KNOWS_TRUE_NAME_OF_TRAIT_TRIGGER: "You have to know the True Name for [TRAIT.GetName(GetNullCharacter)]"
+ POD_KNOWS_TRUE_NAME_OF_TRIGGER: "You have to know the True Name for #V [Localize(Concatenate('POD_truename_', SCOPE.GetFlagName('true_name_scope')))]#!"
+ POD_know_all_nonstandard_true_names_trigger: "You know the True Names of [EmptyScope.ScriptValue('total_nonstandard_true_names_number')|V0] Flora, Animals and Metals #weak ([GetPlayer.MakeScope.ScriptValue('known_nonstandard_true_names_number')])#!"
+
+ PROVINCE_IS_IN_MIDDLE_KINGDOM: "[PROVINCE.GetName] must be inside the Middle Kingdom, or that limit must have been lifted"
+
+ NOT_game_concept_stress: "Your [stress|E] is above [stress_i]$NUM|V0$"
+
+ POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_GLOBAL: "Suffers from at least #V 1#! $pod_superficial_damage_with_box$"
+ POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_FIRST: "You suffer from at least #V 1#! $pod_superficial_damage_with_box$"
+ POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_THIRD: "[CHARACTER.GetShortUIName] suffers from at least #V 1#! $pod_superficial_damage_with_box$"
+ POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_GLOBAL_NOT: "Does #bold not#! suffer from at least #V 1#! $pod_superficial_damage_with_box$"
+ POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_FIRST_NOT: "You #bold don't#! suffer from at least #V 1#! $pod_superficial_damage_with_box$"
+ POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_THIRD_NOT: "[CHARACTER.GetShortUIName] does #bold not#! suffer from at least #V 1#! $pod_superficial_damage_with_box$"
+
+ POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_GLOBAL: "Suffers from at least #V 1#! $pod_aggravated_damage_with_box$"
+ POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_FIRST: "You suffer from at least #V 1#! $pod_aggravated_damage_with_box$"
+ POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_THIRD: "[CHARACTER.GetShortUIName] suffers from at least #V 1#! $pod_aggravated_damage_with_box$"
+ POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_GLOBAL_NOT: "This character does #bold not#! suffer from at least #V 1#! $pod_aggravated_damage_with_box$"
+ POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_FIRST_NOT: "You #bold don't#! suffer from at least #V 1#! $pod_aggravated_damage_with_box$"
+ POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_THIRD_NOT: "[CHARACTER.GetShortUIName] does #bold not#! suffer from at least #V 1#! $pod_aggravated_damage_with_box$"

@@ -7,14 +7,6 @@
  CHARACTER_IS_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "[CHARACTER.GetShortUIName|U] #bold не#! [Select_CString( CHARACTER.IsLocalPlayer, 'являетесь', 'является')] [Concept('courtier', 'придворным')|E] или [Concept('direct_vassal', 'прямым вассалом')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  I_AM_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "Вы #bold не#! являетесь [Concept('courtier', 'придворным')|E] или [Concept('direct_vassal', 'прямым вассалом')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
- NOT_POD_permanent_scarred: "[trait|E] «[GetTrait('scarred').GetName( GetPlayer )]» [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] не может быть исцелено"
- NOT_POD_permanent_disfigured: "[trait|E] «[GetTrait('disfigured').GetName( GetPlayer )]» [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] не может быть исцелено"
- NOT_POD_permanent_blind: "[trait|E] «[GetTrait('blind').GetName( GetPlayer )]» [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] не может быть исцелено"
- NOT_POD_permanent_one_eyed: "[trait|E] «[GetTrait('one_eyed').GetName( GetPlayer )]» [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] не может быть исцелено"
- NOT_POD_permanent_maimed: "[trait|E] «[GetTrait('maimed').GetName( GetPlayer )]» [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] не может быть исцелено"
- NOT_POD_permanent_one_legged: "[trait|E] «[GetTrait('one_legged').GetName( GetPlayer )]» [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] не может быть исцелено"
- NOT_POD_permanent_eunuch: "[trait|E] «[GetTrait('eunuch').GetName( GetPlayer )]» [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] не может быть исцелено"
-
  NUM_OF_RELATION_DEMONIC_MASTER_TARGET_TRIGGER: "Количество демонических хозяев - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_DEMONIC_THRALL_TARGET_TRIGGER: "Количество демонических рабов - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_SHADOW_TWIN_SERVANT_TRIGGER: "Количество теневых двойников - $COMPARATOR$ $NUM|V0$"
@@ -24,20 +16,18 @@
  NUM_OF_RELATION_PHANTOM_SHADOW_SERVANT_TRIGGER: "Количество фантомных теней $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_SEPARATED_KHAIBIT_SERVANT_TRIGGER: "Количество отделённых хайбитов - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_SEPARATED_SHADOW_SERVANT_TRIGGER: "Количество отделённых теней - $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_UNSPEAKABLE_SERVITOR_SERVANT_TRIGGER: "Количество чудовищных служителей $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_UNSPEAKABLE_SERVITOR_SERVANT_TRIGGER: "Количество чудовищных служителей - $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_shadow_self_SERVANT_TRIGGER: "Количество теней - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_POSSESSED_TARGET_TRIGGER: "Количество марионеток - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_EFFIGY_CHARACTER_TARGET_TRIGGER: "Количество эффигий $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_DREAMER_MEMBER_TARGET_TRIGGER: "Количество мечтателей - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_WORSHIPPING_CULTIST_TARGET_TRIGGER: "Количество культистов - $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_DIVIDED_VERSION_TARGET_TRIGGER: "Количество разделённых версий - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_SPIRIT_COMPANION_TARGET_TRIGGER: "Количество спутников-духов - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_GHOUL_THRALL_TARGET_TRIGGER: "Количество порабощённых гулей - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_BOUND_DEMON_TARGET_TRIGGER: "Количество связанных демонов - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_BOUND_WRAITH_TARGET_TRIGGER: "Количество связанных призраков - $COMPARATOR$ $NUM|V0$"
 
  effigy_on_task: "У вас уже есть эффигия на задании."
- can_hurt_spirit: "У вас #bold нет#! сил, способных причинить вред духам."
- can_imprison_spirit: "У вас #bold нет#! сил, способных пленить духов."
  lost_in_umbra: "[CHARACTER.GetShortUIName|U] #bold не#! [Select_CString( CHARACTER.IsLocalPlayer, 'находитесь', 'находится')] в опасном измерении [Concept('umbra', 'Умбры')|E]"
  NOT_lost_in_umbra: "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'находитесь', 'находится')] в опасном измерении [Concept('umbra', 'Умбры')|E]"
 
@@ -46,7 +36,7 @@
  kueijin_cant_follow_you_faith_tooltip: "[GetTrait('kueijin').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  vamp_cant_follow_you_faith_tooltip: "[GetTrait('vampire').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  ghoul_cant_follow_you_faith_tooltip: "[GetTrait('ghoul').GetName( GetNullCharacter )]/[GetTrait('revenant').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
- shapeshifter_cant_follow_you_faith_tooltip: "[GetTraitGroup('shapeshifter').GetName()] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
+ fera_cant_follow_you_faith_tooltip: "[GetTraitGroup('fera').GetName()] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  hunter_cant_follow_you_faith_tooltip: "[GetTrait('superhunter').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  mortal_cant_follow_you_faith_tooltip: "[GetTrait('mortal').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  mummy_cant_follow_you_faith_tooltip: "[GetTrait('mummy').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
@@ -87,6 +77,11 @@
  ferryman_cant_follow_you_faith_tooltip: "[GetTrait('ferryman').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
 
  bastet_cant_convert_tooltip: "[GetTrait('bastet').GetName( GetNullCharacter )] не может изменить конфессию!"
+ spirit_cant_convert_tooltip: "[GetTrait('spirit').GetName( GetNullCharacter )] не может изменить конфессию!"
  viaservilis_cant_convert_tooltip: "Персонаж, исповедующий [GetFaithByKey('viaservilis').GetAdjective|l], не может изменить конфессию!"
 
  can_add_stress_trait_tooltip: "Необходимо соответствующее свойство, отношение или конфессия."
+
+ POD_splat_has_landless_mechanics: "Ваш [Concept('splat', 'вид')|E] имеет [Concept('POD_landless_mechanics', 'механики авантюристов')|E]"
+
+ POD_IS_TRAIT_PERMANENT: "Свойство «[TRAIT.GetName(GetPlayer)]» не может быть исцелено."

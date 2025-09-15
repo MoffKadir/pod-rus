@@ -15,17 +15,20 @@
  POD_requirements_development_70: "#help Для строительства этого уровня требуется более #bold;L 70#! [Concept('development', 'развития')|E].#!"
  POD_requirements_development_80: "#help Для строительства этого уровня требуется более #bold;L 80#! [Concept('development', 'развития')|E].#!"
 
- POD_requirements_development_below_5: "#help Для строительства этого уровня требуется #bold;L 5 или меньше#! [Concept('development', 'развития')|E].#!"
- POD_requirements_development_below_10: "#help Для строительства этого уровня требуется #bold;L 10 или меньше#! [Concept('development', 'развития')|E].#!"
- POD_requirements_development_below_15: "#help Для строительства этого уровня требуется #bold;L 15 или меньше#! [Concept('development', 'развития')|E].#!"
 
- POD_requirements_development_below_3_ducal: "#help Для строительства этого уровня требуется #bold;L 3 или меньше#! [Concept('development', 'развития')|E].#!"
- POD_requirements_development_below_6_ducal: "#help Для строительства этого уровня требуется #bold;L 6 или меньше#! [Concept('development', 'развития')|E].#!"
- POD_requirements_development_below_9_ducal: "#help Для строительства этого уровня требуется #bold;L 9 или меньше#! [Concept('development', 'развития')|E].#!"
- POD_requirements_development_below_12_ducal: "#help Для строительства этого уровня требуется #bold;L 12 или меньше#! [Concept('development', 'развития')|E].#!"
- POD_requirements_development_below_15_ducal: "#help Для строительства этого уровня требуется #bold;L 15 или меньше#! [Concept('development', 'развития')|E].#!"
+ POD_fera_requirements_development_below_t1: "\n\n#help This level requires #bold;L 30 or less#! [development|E] to be built.#!$POD_requirements_fera_development_exception$"
+ POD_fera_requirements_development_below_t2: "\n\n#help This level requires #bold;L 20 or less#! [development|E] to be built.#!$POD_requirements_fera_development_exception$"
+ POD_fera_requirements_development_below_t3: "\n\n#help This level requires #bold;L 10 or less#! [development|E] to be built.#!$POD_requirements_fera_development_exception$"
 
- POD_requirements_werewolf_development_exception: "#help Если только ваша конфессия не связана с Ткачихой или это не [Concept('grand_city', 'великий город')|E].#!"
+ POD_fera_requirements_development_below_t2_ducal: "\n\n#help This level requires #bold;L 25 or less#! [development|E] to be built.#!$POD_requirements_fera_development_exception$"
+ POD_fera_requirements_development_below_t3_ducal: "\n\n#help This level requires #bold;L 20 or less#! [development|E] to be built.#!$POD_requirements_fera_development_exception$"
+ POD_fera_requirements_development_below_t4_ducal: "\n\n#help This level requires #bold;L 10 or less#! [development|E] to be built.#!$POD_requirements_fera_development_exception$"
+ POD_fera_requirements_development_below_t5_ducal: "\n\n#help This level requires #bold;L 5 or less#! [development|E] to be built.#!$POD_requirements_fera_development_exception$"
+
+ POD_requirements_fera_development_exception: "\n#help This requirement is ignored if any of these #TOOLTIP:POD_requirements_fera_development_exception_list #L conditions#!#! are true.#!"
+ POD_requirements_fera_development_exception_list: "$BULLET_WITH_TAB$Your Faith has the [GetFaithDoctrine('doctrine_fera_triat_alignment_weaver').GetBaseName] [doctrine|E]\n$BULLET_WITH_TAB$The [holding|E] is a [grand_city|E]\n$BULLET_WITH_TAB$You are a [GetTrait('bastet').GetName(GetNullCharacter)]"
+
+
 
  POD_requirements_development_5_splendor_1: "#help Для этого уровня требуется более #bold;L 5#! [Concept('development', 'развития')|E] и [Concept('dynasty_prestige_level', 'Уровень величия')|E] #bold [GetDynastyPrestigeLevelName('(int32)1')]#!, чтобы быть построенным и оставаться активным.#!"
  POD_requirements_development_10_splendor_1: "#help Для этого уровня требуется более #bold;L 10#! [Concept('development', 'развития')|E] и [Concept('dynasty_prestige_level', 'Уровень величия')|E] #bold [GetDynastyPrestigeLevelName('(int32)1')]#!, чтобы быть построенным и оставаться активным.#!"
@@ -37,7 +40,7 @@
  POD_requirements_carthage: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('brujah').GetName( GetPlayer )]» или «[GetTrait('truebrujah').GetName( GetPlayer )]» или исповедовать [GetFaithByKey('viaprometheus').GetAdjective|l]"
  POD_requirements_ombos: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('setite').GetName( GetPlayer )]» или исповедовать #L [GetReligionByKey('roadofset_religion').GetName|l]ую#! конфессию"
  POD_requirements_erciyes: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('cappadocian').GetName( GetPlayer )]», «[GetTrait('giovanni').GetName( GetPlayer )]» или «[GetTrait('malkavian').GetName( GetPlayer )]»"
- POD_requirements_cathedral_of_flesh: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('tzimisce').GetName( GetPlayer )]» или «[GetTrait('baali').GetName( GetPlayer )]»"
+ POD_requirements_cathedral_of_flesh: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('tzimisce').GetName( GetPlayer )]», «[GetTrait('banpaia').GetName( GetPlayer )]» или «[GetTrait('baali').GetName( GetPlayer )]»"
  POD_requirements_sherwood: "[Concept('holder', 'Владелец')|E] должен исповедовать конфессии [GetFaithByKey('viafurores').GetAdjective|l], [GetFaithByKey('freeanarch').GetAdjective|l], или [GetFaithByKey('camaanarchs').GetAdjective|l] или иметь свойство «[GetTrait('werewolf').GetName( GetPlayer )]»."
  POD_requirements_telyavel: "[Concept('holder', 'Владелец')|E] должен исповедовать #L [GetReligionByKey('roadofbeast_religion').GetName|l]ую#! конфессию или [GetFaithByKey('pathofthebeast').GetAdjective|l]"
  POD_requirements_giovanni_mausoleum: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('cappadocian').GetName( GetPlayer )]» или «[GetTrait('giovanni').GetName( GetPlayer )]»"
@@ -51,7 +54,7 @@
  POD_requirements_forsaken_or_gantenbein: "Принадлежит к династии [GetDynastyByID( 'dynn_gantenbein' ).GetBaseName] или исповедует #L [GetReligionByKey('calomenasforsaken_religion').GetName|l]ую#! конфессию"
 
  POD_requirements_isis: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('mummy').GetName( GetPlayer )]» или являться персонажем [GetScriptedCharacterByHistoryID('790512').GetFirstName]"
- POD_requirements_ceoris: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('demon').GetName( GetPlayer )]», «[GetTrait('tremere').GetName( GetPlayer )]» или «[GetTrait('mage').GetName( GetPlayer )]»"
+ POD_requirements_ceoris: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('demon').GetName( GetPlayer )]», «[GetTrait('tremere').GetName( GetPlayer )]», «[GetTrait('banpaia').GetName( GetPlayer )]» или «[GetTrait('mage').GetName( GetPlayer )]»"
  POD_requirements_iglesia: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('demon').GetName( GetPlayer )]» или «[GetTrait('lasombra').GetName( GetPlayer )]»"
  POD_requirements_influence_animals: "[Concept('holder', 'Владелец')|E] должен иметь [Concept('perk', 'достоинства')|E] «[GetPerk( 'call_of_the_wild_perk' ).GetName( GetPlayer )]», «[GetPerk( 'master_of_snakes_perk' ).GetName( GetPlayer )]» или «[GetPerk( 'mother_of_monsters_perk' ).GetName( GetPlayer )]» или [Concept('dynasty', 'династия')|E] [Concept('holder', 'владельца')|E] должна иметь [Concept('dynasty_perk', 'достоинства династии')|E] «[GetDynastyPerk('gangrel_legacy_1').GetName]», «[GetDynastyPerk('nosferatu_legacy_1').GetName]» или «[GetDynastyPerk('ravnos_legacy_1').GetName]»."
 
@@ -66,11 +69,13 @@
  POD_requirements_banemummy: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('banemummy').GetName( GetPlayer )]» или [neteru|El]"
  POD_requirements_inquisitor: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('supehunter').GetName( GetPlayer )]» или быть ребёнком со свойством «[GetTrait('mortal').GetName( GetPlayer )]» родителя со свойством «[GetTrait('supehunter').GetName( GetPlayer )]» или исповедовать конфессию Теневой инквизиции."
  POD_requirements_hunter: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('supehunter').GetName( GetPlayer )]» или быть ребёнком со свойством «[GetTrait('mortal').GetName( GetPlayer )]» родителя со свойством [GetTrait('supehunter').GetName( GetPlayer )] и не исповедовать конфессию Теневой инквизиции."
- POD_requirements_shih: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('shih').GetName( GetPlayer )]», быть ребёнком [GetTrait('shih').GetName( GetPlayer )|l] или иметь модификатор [GetModifier('life_bring_life_shih_modifier').GetNameWithTooltip]"
- POD_requirements_kj: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('kueijin').GetName( GetPlayer )]», «[GetTrait('dhampyr').GetName( GetPlayer )]» или иметь модификатор [GetModifier('life_bring_life_kueijin_modifier').GetNameWithTooltip]."
- POD_requirements_hengeyokai: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTraitGroup('shapeshifter').GetName()]», «[GetTrait('kinfolk').GetName( GetPlayer )]» или иметь модификатор [GetModifier('life_bring_life_hengeyokai_modifier').GetNameWithTooltip]."
- POD_requirements_ww: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('werewolf').GetName( GetPlayer )]» или «[GetTrait('kinfolk').GetName( GetPlayer )]»."
- POD_requirements_shifter: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTraitGroup('shapeshifter').GetName()]» или «[GetTrait('kinfolk').GetName( GetPlayer )]»."
+ POD_requirements_shih: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('shih').GetName( GetPlayer )]» или быть ребёнком [GetTrait('shih').GetName( GetPlayer )|l]"
+ POD_requirements_kj: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('kueijin').GetName( GetPlayer )]» или «[GetTrait('dhampyr').GetName( GetPlayer )]»"
+ POD_requirements_hengeyokai: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTraitGroup('fera').GetName()]» или «[GetTrait('kinfolk').GetName( GetPlayer )]»"
+ POD_requirements_werewolf: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('werewolf').GetName( GetPlayer )]» или «[GetTrait('kinfolk').GetName( GetPlayer )]»"
+ POD_requirements_bastet: "The [holder|E] must be [GetTrait('bastet').GetName( GetPlayer )] or Bastet breed [GetTrait('kinfolk').GetName( GetPlayer )]"
+ POD_requirements_caern: "The [holder|E] must either be a [GetTrait('werewolf').GetName( GetPlayer )], [GetTrait('bastet').GetName( GetPlayer )] or their [GetTrait('kinfolk').GetName( GetPlayer )]"
+ POD_requirements_kinfolk: "The [holder|E] must be [GetTraitGroup('fera').GetName()] or [GetTrait('kinfolk').GetName( GetPlayer )]"
 
  POD_requirements_rome_ventrue_02: "[Concept('holder', 'Владельцу')|E] необходим [GetCourtPositionType('ventrue_primogen_court_position').GetName()]"
  POD_requirements_rome_ventrue_03: "[Concept('holder', 'Владельцу')|E] необходим [GetCourtPositionType('ventrue_primogen_court_position').GetName()] с [Concept('ventrue_primogen','хорошей пригодностью')|E] или выше"
@@ -123,4 +128,7 @@
  POD_requirements_rome_aqueduct_02: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('architect').GetName(GetNullCharacter)]» или нанят [GetCourtPositionType('royal_architect_court_position').GetName()] с отличной [Concept('aptitude', 'пригодностью')|E]"
  POD_requirements_rome_pasquino_02: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('schemer').GetName(GetNullCharacter)]» или иметь [Concept('spymaster', 'тайного советника')|E] с навыком интриги 20 или выше в своём [Concept('council', 'совете')|E]"
 
- POD_requirements_bookshop: "[Concept('holder', 'Владелец')|E] должен быть частью Теневой инквизиции, а первый лидер Oculi Dei Айгнен ле либрер должен быть мёртв."
+ POD_requirements_bookshop: "[Concept('holder', 'Владелец')|E] должен быть частью Теневой инквизиции, а первый лидер Oculi Dei Айгнен ле Либрер должен быть мёртв"
+
+
+ POD_requirements_corrupted_dragon_nest: "The [holder|E] needs to be an [akuma|E], or be the one that corrupted this dragon nest"
