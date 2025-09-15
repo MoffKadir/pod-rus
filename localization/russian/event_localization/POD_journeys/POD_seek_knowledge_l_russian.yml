@@ -8,6 +8,7 @@
  POD_seek_knowledge.2.desc.ghoul: "В захудалой таверне на окраине города я встречаю [Select_CString(recipient.IsFemale, 'ту', 'того' )], кого [Select_CString(ROOT.Char.IsFemale, 'искала', 'искал' )]: независимого #TOOLTIP:GAME_TRAIT,ghoul,[recipient] #L гуля#!#! по имени [recipient.GetFirstName]. Похоже, [recipient.GetSheHe] недавно [Select_CString(recipient.IsFemale, 'освободилась', 'освободился' )] от уз крови, и теперь выдаёт секреты своего бывшего хозяина, чтобы отомстить."
  POD_seek_knowledge.2.desc.gargoyle: "В укромном переулке на окраине города я встречаю [Select_CString(recipient.IsFemale, 'ту', 'того' )], кого [Select_CString(ROOT.Char.IsFemale, 'искала', 'искал' )]: одинокую #TOOLTIP:GAME_TRAIT,gargoyle,[recipient] #L гаргулью#!#! по имени [recipient.GetFirstName]."
  POD_seek_knowledge.2.desc.fae: "В заброшенном парке на окраине города я встречаю [Select_CString(recipient.IsFemale, 'ту', 'того' )], кого [Select_CString(ROOT.Char.IsFemale, 'искала', 'искал' )]: таинственную фею по имени [recipient.GetFirstName]."
+ POD_seek_knowledge.2.desc.kueijin: "In an eerily quiet corner of the town, I meet the person I was looking for: an enigmatic [GetTrait('kueijin').GetName(recipient)] named [recipient.GetFirstName]."
  POD_seek_knowledge.2.desc.mortal: "В захудалом трактире я в конце концов встречаю [Select_CString(recipient.IsFemale, 'ту', 'того' )], кого [Select_CString(ROOT.Char.IsFemale, 'искала', 'искал' )]: [Select_CString(recipient.IsFemale, 'загадочную смертную', 'загадочного смертного' )] по имени [recipient.GetFirstName]."
  POD_seek_knowledge.2.desc.2: "\n\nМы обмениваемся первыми любезностями, а затем разговор переходит к более практическим вопросам."
  POD_seek_knowledge.2.option.a: "Я [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов' )] учиться."
@@ -22,14 +23,14 @@
 
 
  #############DEMONS LORE
- POD_demon_lore_learning_events.1.t: "Изучение новых знаний"
+ POD_demon_lore_learning_events.1.t: "Изучение новых знаний домов"
  POD_demon_lore_learning_events.1.desc: "Знания - это остатки божественных способностей, которыми демоны обладали, будучи элохим. Знания небесных домов - это не что иное, как собранные воедино секреты вселенной, заклинания, которые охватывают основы реальности и управляют силами, поддерживающими ее в движении. До Грехопадения у каждого дома был свой особый набор знаний, отражающий его обязанности в ангельской иерархии. Эти заклинания считались сердцем каждого дома, их ревностно охраняли из прагматизма, и многие из Падших обменивались друг с другом частичками своих знаний, чтобы получить хоть какое-то преимущество перед своими более скрытными врагами."
- POD_demon_lore_learning_events.1.a: "Это гораздо ближе к моей изначальной силе."
+ POD_demon_lore_learning_events.1.a: "Я намного ближе к своей изначальной силе."
 
- learnt_lore_of_herald: "Learn the Lore of the Herald"
- learnt_lore_of_life_bringer: "Learn the Lore of Life-Bringer"
- learnt_lore_of_creation: "Learn the Lore of Creation"
- learnt_lore_of_seer: "Learn the Lore of the Seer"
- learnt_lore_of_beauty: "Learn the Lore of Beauty"
- learnt_lore_of_living: "Learn the Lore of the Living"
- learnt_lore_of_ethereal: "Learn the Lore of the Ethereal"
+ learnt_lore_of_herald: "Вы изучаете знания Вестника"
+ learnt_lore_of_life_bringer: "Вы изучаете знания Приносящих жизнь"
+ learnt_lore_of_creation: "Вы изучаете знания Сотворения"
+ learnt_lore_of_seer: "Вы изучаете знания Провидцев"
+ learnt_lore_of_beauty: "Вы изучаете знания Красоты"
+ learnt_lore_of_living: "Вы изучаете знания Жизни"
+ learnt_lore_of_ethereal: "Вы изучаете знания Эфира"

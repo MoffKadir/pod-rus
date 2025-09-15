@@ -14,14 +14,14 @@
  POD_invite_to_coterie_interaction_mortal: "Вы не можете приглашать смертных в котерию ([GetPlayer.Custom('PODCoterie')])"
  POD_invite_to_coterie_interaction_mortal_cultist: "Вы не можете пригласить смертных в вашу котерию ([GetPlayer.Custom('PODCoterie')]), если они не являются вашими культистами"
  POD_invite_to_coterie_interaction_mortal_neteru: "Вы не можете пригласить смертных в вашу котерию ([GetPlayer.Custom('PODCoterie')]), если они не являются вашими [neteru|El]"
- POD_invite_to_coterie_interaction_packbond: "Помните, что перевёртыши связаны со своей котерией ([GetPlayer.Custom('PODCoterie')]) на всю жизнь, так что вы не сможете изгнать [recipient.GetHerHis] позже."
+ POD_invite_to_coterie_interaction_packbond: "Помните, что фера связаны со своей котерией ([GetPlayer.Custom('PODCoterie')]) на всю жизнь, так что вы не сможете изгнать [recipient.GetHerHis] позже."
  POD_invite_to_coterie_interaction_rivalry: "#help Членство в котерии ([GetPlayer.Custom('PODCoterie')]) считается обязательством. Вы сможете изгнать персонажа [recipient.GetShortUIName] позже, но [recipient.GetSheHe] станет вашим [Concept('rival', 'соперником')|E], если вы так поступите.#!"
 
  POD_kick_from_coterie_interaction: "[GetPlayer.Custom('PODGetCoterieName')]: изгнать"
  POD_kick_from_coterie_interaction_desc: "[recipient.GetShortUINameNoTooltip] больше не будет членом вашей котерии ([GetPlayer.Custom('PODCoterie')])."
- POD_kick_from_coterie_interaction_packbond: "Перевёртыши не могут выгонять членов, так как они связаны с котерией ([GetPlayer.Custom('PODCoterie')]) на всю жизнь"
+ POD_kick_from_coterie_interaction_packbond: "$glossary_fera$ не могут выгонять членов, так как они связаны с котерией ([GetPlayer.Custom('PODCoterie')]) на всю жизнь"
 
  POD_disband_coterie_interaction: "[GetPlayer.Custom('PODGetCoterieName')]: распустить"
  POD_disband_coterie_interaction_desc: "Распустить вашу котерию ([GetPlayer.Custom('PODCoterie')])."
  POD_disband_coterie_interaction_effect: "Ваша котерия ([GetPlayer.Custom('PODCoterie')]) $POD_player_coterie$ будет распущена."
- POD_disband_coterie_interaction_packbond: "Перевёртыши не могут распускать свои котерии ([GetPlayer.Custom('PODCoterie')]), пока в них есть хотя бы 1 член."
+ POD_disband_coterie_interaction_packbond: "$glossary_fera$ не могут распускать свои котерии ([GetPlayer.Custom('PODCoterie')]), пока в них есть хотя бы 1 член."

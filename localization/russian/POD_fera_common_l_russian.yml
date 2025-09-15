@@ -1,0 +1,105 @@
+﻿l_russian:
+
+ #File for common Fera localization
+
+ 
+ 
+
+ #Auspice types "PODFeraAuspiceType"
+ POD_fera_auspice: "Покровительство"
+ POD_fera_auspice_lunar: "Лунное покровительство"
+ POD_fera_auspice_aspect: "Аспект"
+ POD_fera_auspice_pryio: "Прийо"
+ POD_fera_auspice_path: "Путь"
+ POD_fera_auspice_solar: "Солнечное покровительство"
+ POD_fera_auspice_seasonal: "Покровительство времён года"
+ POD_fera_auspice_aquatic: "Водное покровительство"
+
+ #Renown types
+ POD_fera_renown_glory: "#bold Слава#!"
+ POD_fera_renown_honor: "#bold Честь#!"
+ POD_fera_renown_wisdom: "#bold Мудрость#!"
+ POD_fera_renown_power: "#bold Сила#!"
+ POD_fera_renown_cunning: "#bold Хитрость#!"
+ POD_fera_renown_ferocity: "#bold Свирепость#!"
+ POD_fera_renown_infamy: "#bold Бесчестие#!"
+
+
+
+ #Beastforms "PODFeraBeastform"
+ POD_beastform_werewolf: "Люпус"
+ POD_beastform_ajaba: "Гиенид"
+ POD_beastform_ananasi: "Ползун"
+ POD_beastform_apis: "Зубр"
+ POD_beastform_bastet: "Фелинид"
+ POD_beastform_camazotz: "Мегахироптер"
+ POD_beastform_corax: "Корвид"
+ POD_beastform_grondr: "Скрофа"
+ POD_beastform_gurahl: "Урус"
+ POD_beastform_kitsune: "Кьюби"
+ POD_beastform_mokole: "Сухид"
+ POD_beastform_nagah: "Васуки"
+ POD_beastform_nuwisha: "Латрани"
+ POD_beastform_ratkin: "Роденс"
+ POD_beastform_rokea: "Сквамус"
+
+ #Warforms "PODFeraWarform"
+ POD_warform_werewolf: "Кринос"
+ POD_warform_ajaba: "Кринос"
+ POD_warform_ananasi: "Лилиан"
+ POD_warform_apis: "Минотавр"
+ POD_warform_bastet: "Кринос"
+ POD_warform_camazotz: "Кринос"
+ POD_warform_corax: "Кринос"
+ POD_warform_grondr: "Кринос"
+ POD_warform_gurahl: "Кринос"
+ POD_warform_kitsune: "Кото"
+ POD_warform_mokole: "Архид"
+ POD_warform_nagah: "Ази Дахака"
+ POD_warform_nuwisha: "Манабожо"
+ POD_warform_ratkin: "Кринос"
+ POD_warform_rokea: "Гладиус"
+
+ #Primal Human forms "PODFeraPrimalHumanform"
+ POD_primalhumanform_werewolf: "Глабро"
+ POD_primalhumanform_ajaba: "Антрос"
+ POD_primalhumanform_bastet: "Сокто"
+ POD_primalhumanform_camazotz: "Аптерус"
+ POD_primalhumanform_grondr: "Апериус"
+ POD_primalhumanform_gurahl: "Артрен"
+ POD_primalhumanform_kitsune: "Самбу-хенд"
+ POD_primalhumanform_nagah: "Силкарам"
+ POD_primalhumanform_nuwisha: "Цицу"
+ POD_primalhumanform_rokea: "Грабрус"
+
+ #Primal Beast forms "PODFeraPrimalBeastform"
+ POD_primalbeastform_werewolf: "Хиспо"
+ POD_primalbeastform_ajaba: "Крокас"
+ POD_primalbeastform_ananasi: "Питус"
+ POD_primalbeastform_bastet: "Чатро"
+ POD_primalbeastform_grondr: "Даэдон"
+ POD_primalbeastform_gurahl: "Бьорнен"
+ POD_primalbeastform_kitsune: "Юко"
+ POD_primalbeastform_nagah: "Кали Дахака"
+ POD_primalbeastform_nuwisha: "Латрани"
+ POD_primalbeastform_rokea: "Чазмус"
+
+
+
+
+ POD_player_gnosis_regen_chance: "#TOOLTIP:POD_player_gnosis_regen_chance_tt #V;L [GetPlayer.MakeScope.ScriptValue('gnosis_regen_chance')|1]%#!#!"
+ POD_player_gnosis_regen_chance_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('gnosis_regen_chance')]"
+
+ POD_gnosis_regen_beast_born: "[GetTrait('beast_born').GetName(GetPlayer)]"
+ POD_gnosis_regen_piety_level: "[piety_level|E]"
+ POD_gnosis_regen_spirit_companions: "#L $pod_spirit_companions$овные спутники#!"
+ POD_gnosis_regen_stress: "[stress_level|E]"
+ POD_gnosis_regen_buildings: "От домена"
+ POD_gnosis_regen_spirit_ties: "[GetPerk('fomori_spirit_ties_perk').GetName(GetPlayer)]"
+ POD_gnosis_regen_fetish_upkeep: "Содержание [Concept('fetish', 'фетиша')|E]"
+
+
+ POD_gnosis_regen_kinfolk_cap: "У #TOOLTIP:GAME_TRAIT,kinfolk,[GetPlayer] #L родни#!#! может быть максимум #V 3#! ед. #L $POD_energy_gnosis|l$а#!"
+
+ POD_has_spendable_fera_renown_trigger_tooltip_max: "На максимальном ранге $glossary_fera$ тратится [Concept('prestige', 'престиж')|E], а не [Concept('trait_level_track_xp', 'опыт свойства')|E], и у вас меньше чем [SCOPE.GetValue('spent_xp')] [prestige_i]"
+ POD_has_spendable_fera_renown_trigger_tooltip: "У вас менее [SCOPE.GetValue('spent_xp')] ед. [Concept('trait_level_track_xp', 'опыта свойства')|E] $glossary_fera$, который можно потратить"

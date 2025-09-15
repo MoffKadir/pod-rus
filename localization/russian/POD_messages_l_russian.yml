@@ -3,5 +3,7 @@
  message_group_type_pod_general: "@pod_icon! Общие"
 
  # Message filter types
+ message_filter_pod_damage_taken: "@pod_icon! Получен урон"
+ message_filter_pod_damage_taken_desc: "Сообщения, связанные с вашим [Concept('POD_health_track', 'здоровьем')|E] (полученный [Concept('POD_superficial_damage', 'поверхностный')|E] или [Concept('POD_aggravated_damage', 'тяжёлый урон')|E], [Concept('soak_damage','впитывание')|E], повреждения или использование иммунитета к урону)"
  message_filter_pod_journey_abandoned: "@pod_icon! Странствие заброшено"
  message_filter_pod_journey_abandoned_desc: "[journey|E] было принудительно заброшено, так как оно больше недействительно (например, попытка выучить способность, которой вы уже обладаете)."

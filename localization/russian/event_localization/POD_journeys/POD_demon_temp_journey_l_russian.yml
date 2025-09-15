@@ -1,6 +1,6 @@
 ﻿l_russian:
- POD_demon_temp_journey.1.t: "Fall For Me"
- POD_demon_temp_journey.1.desc: "I've arranged for a social gathering that will let me sink my hooks into [PlayerJourneyTarget.GetShortUIName]."
- POD_demon_temp_journey.1.a: "A subtle nudge, and [PlayerJourneyTarget.GetFirstName] will fall."
- POD_demon_temp_journey.1.a.tt: "Doing this [journey|E] again will convert the target to your faith."
- POD_demon_temp_journey.1.b: "Honeyed words will bring [PlayerJourneyTarget.GetHerHim] to [PlayerJourneyTarget.GetHerHis] knees."
+ POD_demon_temp_journey.1.t: "Полюби меня"
+ POD_demon_temp_journey.1.desc: "Я [Select_CString(ROOT.Char.IsFemale, 'устроила', 'устроил' )] светскую встречу, благодаря которой [PlayerJourneyTarget.GetShortUIName] попадёт на мой крючок."
+ POD_demon_temp_journey.1.a: "Лёгкий толчок, и [PlayerJourneyTarget.GetFirstName] поддастся."
+ POD_demon_temp_journey.1.a.tt: "Повторное завершение этого [journey|E]странствия обратит цель в вашу конфессию."
+ POD_demon_temp_journey.1.b: "Сладострастные слова повергнут [PlayerJourneyTarget.GetHerHis] на колени."

@@ -40,6 +40,8 @@
  mass_harrowing_modifier: "Массовые страдания"
  bs_nihil_modifier: "Нихиль"
 
+ the_withering_of_ages_modifier: "The Withering of Ages"
+ MODIFIER_DEFINITION_VALUE_PER_AGE: "Per every year this character lived"
 
  ritual_encrypt_missive_modifier: "Зашифрованные послания"
  ritual_brand_of_the_paramour_modifier: "Клеймо возлюбленного"
@@ -136,3 +138,16 @@
  warded_womb_modifier: "Защищённая утроба"
  warded_womb_modifier_desc: "Дети этого персонажа не унаследуют сверхъестесственные свойства"
  transcendentally_satisfying_body_filling_modifier: "Трансцендентальное удовлетворение от наполнения тела"
+
+ saut_allah_modifier: "Саут Аллах"
+ nuzra_allah_modifier: "[battle_modifier|E]: Нузра Аллах"
+ ghadub_allah_modifier: "[battle_modifier|E]: Гадуб Аллах"
+ nar_iman_modifier: "Божественный гнев"
+ nar_iman_modifier_desc: "Этот персонаж не может исцелять себя, пока присутствует этот модификатор."
+ mask_of_allah_modifier: "Маска Аллаха"
+ mask_of_allah_modifier_desc: "Снижает вероятность #L $pod_masquerade_exposure_with_icon$ия Маскарада#! и улучшает [Concept('character_interaction', 'взаимодействие персонажа')|E] «Сокрыть Маскарад»."
+ ward_against_djinn_modifier: "Защита от джиннов"
+ ward_against_djinn_modifier_desc: "Наносит раны вражеским [Concept('knights', 'рыцарям')|E]-феям в [Concept('combat_phase', 'бою')|E] или вашим противникам во время [Concept('single_combat_duel_plural', 'поединков')|E]."
+ allahs_blessing_character_modifier: "Благословение Аллаха"
+ allahs_blessing_character_modifier_desc: "$MOD_TRAVEL_SAFETY$ во время [Concept('pilgrimages', 'паломничеств')|E]: #P $MOD_TRAVEL_SAFETY_PREFIX$+30#!\nНачальное благочестие [Concept('pilgrimages', 'паломничеств')|E]: #P +20#!"
+ allahs_blessing_travel_modifier: "Благословение Аллаха"

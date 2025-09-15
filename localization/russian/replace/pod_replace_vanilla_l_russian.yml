@@ -52,37 +52,39 @@
  court_food_quality_decent_desc: "Подходящие покои и место для тренировок придворных стражников."
  court_food_quality_lavish_desc: "Подходящие помещения и солидные тренировочные площадки. Сюда приезжают тренироваться многие местные поборники."
  court_food_quality_exotic_desc: "Известные по всей округе, эти военные казармы - мечта любого начинающего поборника."
+
  # Age hack
  CHARACTER_DEAD_TOOLTIP_DATE_INFO: "[Character.GetDeathDate.GetString|V] #weak в возрасте#! #V [Character.MakeScope.ScriptValue('true_age')]#! ([Select_CString(Character.IsFemale, 'родилась', 'родился' )] [SelectLocalization( Or(LessThanOrEqualTo_int32( Character.GetDeathDate.GetYear, '(int32)150' ), GreaterThanOrEqualTo_int32( Character.GetAge, '(int32)999' )), 'TrueBirthDate', 'DefaultBirthDate')])"
  TrueBirthDate: "[Character.GetBirthDate.GetStringShortNoYear|V], [Character.MakeScope.ScriptValue('true_birth_age')|V0]"
  DefaultBirthDate: "[Character.GetBirthDate.GetString|V]"
  SteleCommemoratesAncestors_Gluttonous: "$SteleCommemoratesAncestors_Intro$. За [second.MakeScope.Var('stele_container').Char.MakeScope.ScriptValue('true_age')] [second.MakeScope.Var('stele_container').Char.GetSheHe] не [Select_CString(second.MakeScope.Var('stele_container').Char.IsFemale, 'пропустила', 'пропустил' )] ни единой трапезы. $SteleCommemoratesCarver$."
- CHARACTER_TT_NAME_AGE: "[Character.GetUINameNotMeNoTooltip]#medium , [Character.MakeScope.ScriptValue('true_age')|0]#!"
- CHARACTER_TT_AGE: "Возраст: [Character.MakeScope.ScriptValue('true_age')|0]"
+ CHARACTER_TT_NAME_AGE: "[Character.GetUINameNotMeNoTooltip]#medium , [Character.Custom('PODCharacterAge')]#!"
+ CHARACTER_TT_AGE: "Возраст: [Character.Custom('PODCharacterAge')]"
  LEGACY_NAME: "[LegacyItem.GetCharacter.GetShortUINameNotMeNoTooltip], [SelectLocalization(EqualTo_int32(LegacyItem.GetCharacter.GetAge, '(int32)0'), 'POD_num0', 'LEGACY_NAME_TRUEAGE')]" # SELECT LOCALIZATION NECESARY DUE TO VANILLA BUG
- LEGACY_NAME_TRUEAGE: "[LegacyItem.GetCharacter.MakeScope.ScriptValue('true_age')]"
- OUTLINER_PINNED_CHARACTER: "[Character.GetShortUINameNotMeNoTooltip]#medium , [Character.MakeScope.ScriptValue('true_age')]#!"
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_1: "[ROOT.Char.GetFullNameNoTooltip] испускает дух в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_2: "[ROOT.Char.GetFullNameNoTooltip] покидает свою смертную оболочку в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_3: "[ROOT.Char.GetFullNameNoTooltip] уходит из жизни в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_4: "[ROOT.Char.GetFullNameNoTooltip] покидает этот мир в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_5: "[ROOT.Char.GetFullNameNoTooltip] уходит из жизни в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет и [ROOT.Char.Custom('GetAfterLifeDestination')]."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_PIOUS: "Дух персонажа [ROOT.Char.GetFullNameNoTooltip] отправляется в [ROOT.Char.GetFaith.PositiveAfterLife] в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_WICKED: "Дух персонажа [ROOT.Char.GetFullNameNoTooltip] отправляется в [ROOT.Char.GetFaith.NegativeAfterLife] в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_WOUNDED: "[ROOT.Char.GetFullNameNoTooltip] наконец обретает мир в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_CHRISTIANITY_1: "[ROOT.Char.GetFullNameNoTooltip] наконец обретает мир в объятиях Христа в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] years of age."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_CHRISTIANITY_2: "[ROOT.Char.GetFullNameNoTooltip] упокаивается в руках Господа в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_ISLAM_1: "Дух персонажа [ROOT.Char.GetFullNameNoTooltip] покидает преходящий мир по зову Единого в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_ISLAM_2: "Дух персонажа [ROOT.Char.GetFullNameNoTooltip] покидает преходящий мир и отправляется в [ROOT.Char.GetFaith.PositiveAfterLife] в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_ISLAM_3: "[ROOT.Char.GetFullNameNoTooltip] уходит в вечность в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_NORSE_1: "[ROOT.Char.GetFullNameNoTooltip] отправляется пировать в in [ROOT.Char.GetFaith.PositiveAfterLife] в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_HELLENIC_1: "[ROOT.Char.GetFullNameNoTooltip] пересекает реку Стикс в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_EASTERN_1: "[ROOT.Char.GetFullNameNoTooltip] возносится над своей материальной формой в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
- SUCCESSION_EVENT_WINDOW_DEAD_INTRO_TRIBAL_1: "[ROOT.Char.GetFullNameNoTooltip] пересекает дверь в мир духов в возрасте [ROOT.Char.MakeScope.ScriptValue('true_age')] лет."
+ LEGACY_NAME_TRUEAGE: "[LegacyItem.GetCharacter.Custom('PODCharacterAge')]"
+ OUTLINER_PINNED_CHARACTER: "[Character.GetShortUINameNotMeNoTooltip]#medium , [Character.Custom('PODCharacterAge')]#!"
+ lobby_landless_ruler_name: "[Character.GetNameNoTooltip|U] | [Character.Custom('PODCharacterAge')] [Select_CString( Not( EqualTo_int32( Character.GetHealthIconFrame, '(int32)4' ) ), Select_CString( Not( EqualTo_int32( Character.GetHealthIconFrame, '(int32)3' ) ), Select_CString( Not( EqualTo_int32( Character.GetHealthIconFrame, '(int32)2' ) ), '@health_icon_excellent!', '@health_icon!' ), '@health_icon_poor!' ), '@health_icon_dying!' )]"
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_1: "[ROOT.Char.GetFullNameNoTooltip] испускает дух в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_2: "[ROOT.Char.GetFullNameNoTooltip] покидает свою смертную оболочку в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_3: "[ROOT.Char.GetFullNameNoTooltip] уходит из жизни в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_4: "[ROOT.Char.GetFullNameNoTooltip] покидает этот мир в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_DEFAULT_5: "[ROOT.Char.GetFullNameNoTooltip] уходит из жизни в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет и [ROOT.Char.Custom('GetAfterLifeDestination')]."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_PIOUS: "Дух персонажа [ROOT.Char.GetFullNameNoTooltip] отправляется в [ROOT.Char.GetFaith.PositiveAfterLife] в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_WICKED: "Дух персонажа [ROOT.Char.GetFullNameNoTooltip] отправляется в [ROOT.Char.GetFaith.NegativeAfterLife] в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_WOUNDED: "[ROOT.Char.GetFullNameNoTooltip] наконец обретает мир в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_CHRISTIANITY_1: "[ROOT.Char.GetFullNameNoTooltip] наконец обретает мир в объятиях Христа в возрасте [ROOT.Char.Custom('PODCharacterAge')] years of age."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_CHRISTIANITY_2: "[ROOT.Char.GetFullNameNoTooltip] упокаивается в руках Господа в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_ISLAM_1: "Дух персонажа [ROOT.Char.GetFullNameNoTooltip] покидает преходящий мир по зову Единого в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_ISLAM_2: "Дух персонажа [ROOT.Char.GetFullNameNoTooltip] покидает преходящий мир и отправляется в [ROOT.Char.GetFaith.PositiveAfterLife] в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_ISLAM_3: "[ROOT.Char.GetFullNameNoTooltip] уходит в вечность в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_NORSE_1: "[ROOT.Char.GetFullNameNoTooltip] отправляется пировать в in [ROOT.Char.GetFaith.PositiveAfterLife] в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_HELLENIC_1: "[ROOT.Char.GetFullNameNoTooltip] пересекает реку Стикс в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_EASTERN_1: "[ROOT.Char.GetFullNameNoTooltip] возносится над своей материальной формой в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
+ SUCCESSION_EVENT_WINDOW_DEAD_INTRO_TRIBAL_1: "[ROOT.Char.GetFullNameNoTooltip] пересекает дверь в мир духов в возрасте [ROOT.Char.Custom('PODCharacterAge')] лет."
  # Replace struggle loca
 
  DYNASTY_VIEW_LEGACY_EXPLANATION: "Эти [dynasty_perks|El] влияют на всех членов династии #high [Dynasty.GetBaseNameNoTooltip]#!. Открывать новые [Concept( 'dynasty_perks', 'наследия' )|E] сложнее, поскольку каждый раз их стоимость увеличивается на [dynasty_prestige_i]#V 1000#!"
- culture_parameter_archer_era_improvement: "[men_at_arms|E] [GetMaA('longbowmen').GetName]  становятся лучше с каждой новой [Concept('era', 'эпохой')|E] вплоть до Позднего Средневековья."
+ culture_parameter_archer_era_improvement: "[men_at_arms|E] [GetMaA('longbowmen').GetName] становятся лучше с каждой новой [Concept('era', 'эпохой')|E] вплоть до Позднего Средневековья."
 
  #Remove bookmark age
 
@@ -121,6 +123,8 @@
  trait_tourney_participant_desc: "Этот персонаж участвовал в организованных играх, отточив свои навыки."
  trait_tourney_participant_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'участвовала', 'участвовал' )] в организованных играх, отточив свои навыки."
  trait_track_foot: "Физические состязания"
+
+ trait_historical_character: "Great Person"
 
  #Drunk stuff
  bp1_yearly.9010.desc.drunk: ", явно не в духе. [bp1_yearly_9007_doppelganger.GetSheHe|U] шатаясь идёт в мою сторону с яростью в глазах.\n\n«[Select_CString(bp1_yearly_9007_doppelganger.IsFemale, 'Самозванка', 'Самозванец' )]! [Select_CString(ROOT.Char.IsFemale, 'Эта', 'Этот' )] *#EMP ик#!*"
@@ -196,6 +200,7 @@
  CREATE_FAITH_WINDOW_TITLE_TOOLTIP: "#T $CREATE_FAITH_WINDOW_TITLE$#!\n#X Создание новой веры практически не поддерживается в PoD. Вы можете потерять доступ к важным частям контента или сломать некоторые скрипты. Вас предупреждали.#!\nБудет создана новая [faith|El]; выбрать [core_tenets|El] и [doctrines|El]"
  can_recruit_character_to_court_trigger.tt.laamps_invitation_restrictions: "[Concept('adventurers', 'Авантюристы')|E] могут приглашать в [Concept('camp', 'лагерь')|E] только [Concept('player_heir', 'наследника-игрока')|E], [Concept('soulmate', 'родственную душу')|E], [Concept('best_friend', 'лучшего друга')|E] или [Concept('spouses', 'супругов')|E]\n\nВ моде [princes_of_darkness|E] вы также можете пригласить:\n$EFFECT_LIST_BULLET$Членов [Concept('coterie', 'котерии')|E]\n$EFFECT_LIST_BULLET$Ваших бывших #TOOLTIP:GAME_TRAIT,adventurer_follower,[GetNullCharacter] #L последователей#!#!\n$EFFECT_LIST_BULLET$Персонажей, которые находятся с вами в подчиненных отношениях (Стадо, мечтатели, гули, рабы, одержимые, связанные призраки или связанные демоны)\n$EFFECT_LIST_BULLET$Персонажи, которые у вас на определенных сверхъестественных крючках ($strong_bloodoath_hook$, $soul_bond_hook$, $true_name_hook$ или $conditioning_hook$)\n$EFFECT_LIST_BULLET$Ваши клоны и #TOOLTIP:GAME_TRAIT,automaton,[GetNullCharacter] #L автоматоны#!#!"
  adventurer_stalwart_leader_perk_effect: "[adventurer_i] Можно использовать взаимодействие «#V $contact_list_request_interaction$#!», чтобы убедить [Concept('rulers','правителей')|E] в [Concept('rank','ранге')|E] [Concept('count','графа')|E] или выше начать [GetActivityType('activity_tournament').GetTextIcon][GetActivityType('activity_tournament').GetName] или [GetActivityType('activity_brujah_panegyra').GetTextIcon][GetActivityType('activity_brujah_panegyra').GetName] #weak (если [Concept('activity', 'занятие')|E] действительно для обоих персонажей)#!"
+ master_thief_camp_officer_employer_custom_effect_description: "$BULLET$Unlocks the [buy_artifact_claim_interaction|E]"
 
  # Additional options for vanilla interactions
  request_panegyra: "[GetActivityType('activity_brujah_panegyra').GetTextIcon][GetActivityType('activity_brujah_panegyra').GetName]"
@@ -317,10 +322,11 @@
  trait_immortal: "Бессмертие"
  trait_immortal_desc: "Каким-то магическим образом этот персонаж больше не может умереть от естественных причин."
  seasoned_visitor_decision: "[ROOT.Char.GetFirstNameNoTooltip] и [Select_CString(ROOT.Char.IsFemale, 'её','его' )] странствия"
+ seasoned_visitor_decision_reward_desc: "You will unlock new [lifestyle|E] [perks|E] #EMP or#! create a Book [artifact|E] that will increase the [lifestyle_experience|E] gain for future holders\n#i You will get increased rewards for visiting this many $game_concept_points_of_interest$: 50, 100, 200, 350#!"
  zealous_missionary_prep_decision_desc: "Ни один добрый [ROOT.Char.GetFaith.GetAdherentNameNoTooltip|l] не потерпит существования гнусных еретиков и заблудших язычников!"
  camp_cook_camp_officer: "Офицер снабжения"
  camp_cook_camp_officer_desc: "$camp_cook_camp_officer$ следит за тем, чтобы каждый получал свою долю на дорогу. Или, по крайней мере, то, что они считают своей долей."
- government_is_tribal:0 "" #Otherwise says that MaA cost prestige, which is false in PoD
+ government_is_tribal:0 "[POD_fera_maa|E] [men_at_arms|E] cost [prestige|E]" #Otherwise says that MaA cost prestige, which is false in PoD
  adventurer_religious_icon_perk_effect: "[adventurer_i] Теперь вы получаете #P [piety_i]+0.4#!/месяц за каждого [Concept('follower','последователя')|E] вашей [Concept('faith','конфессии')|E], когда [Concept('camp_temperament','настроение в лагере')|E] — «#P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#!» (максимум 5)"
  adventurer_apostate_perk_effect: "[adventurer_i] Теперь вы получаете #P +1[diplomacy_i][intrigue_i][stewardship_i][martial_i][learning_i]#! за каждые три уникальные [Concept('faith','конфессии')|E], представленные среди ваших [Concept('follower','последователей')|E], когда [Concept('camp_temperament','настроение в лагере')|E] — «#P $DOMICILE_WINDOW_BOOKMARK_FOLLOWERS_TEMPERAMENT_POSITIVE$#!» (максимум 3 бонуса к навыкам)"
  msg_house_unity_change_stage_desc: "[Concept( 'house_unity', 'Единство' )|E] вашего дома сдвинулось на уровень «[Localize('$HOUSE_UNITY_STAGE_NAME|q$')]»" #Doesn't work properly in its vanilla form for some strange reason
@@ -356,58 +362,78 @@
  camp_main_01_domicile_building: "Убежище"
  camp_main_01_domicile_building_desc: "В этом убежище живут такие люди, как стражники, слуги и дипломаты. Даже если бы резиденцию пришлось покинуть, люди, находящиеся в ней, последовали бы за своим лидером куда угодно - верные до конца."
 
+ camp_main_05_domicile_building: "$camp_main_01_domicile_building$"
+ camp_main_05_domicile_building_desc: "$camp_main_01_domicile_building_desc$"
+ camp_main_06_domicile_building: "$camp_main_01_domicile_building$"
+ camp_main_06_domicile_building_desc: "$camp_main_01_domicile_building_desc$"
+
  domicile_name: "[CHARACTER.Custom('PODDomicile')|U] персонажа [CHARACTER.GetFirstNameNoTooltip]"
  domicile_name_possessive: "[CHARACTER.Custom('PODDomicile')|U] персонажа [CHARACTER.GetFirstNameNoTooltip]"
 
  # Domicile flags (temporary)
  # Other flags (need to test):
- #  camp_infection_chance_buff_1
- #  camp_infection_chance_buff_2
- #  camp_infection_chance_buff_3
- #  camp_infection_chance_buff_4
- #  camp_infection_chance_buff_5
- #  camp_infection_chance_buff_6
- #  camp_improved_court_physician_aptitude
- #  camp_unlocks_forward_scouts
- #  camp_improved_musician_scheme_agent
- #  camp_more_likely_to_become_poet
- #  camp_improved_poet_scheme_agent
- #  camp_recruit_fool_events
- #  camp_recruit_locals_events
- #  camp_unlocks_poisoner_scheme_agents
- #  camp_improved_learning_contract_rewards
- #  camp_reduced_prisoner_escape_chance
+ # camp_infection_chance_buff_1
+ # camp_infection_chance_buff_2
+ # camp_infection_chance_buff_3
+ # camp_infection_chance_buff_4
+ # camp_infection_chance_buff_5
+ # camp_infection_chance_buff_6
+ # camp_improved_court_physician_aptitude
+ # camp_unlocks_forward_scouts
+ # camp_improved_musician_scheme_agent
+ # camp_more_likely_to_become_poet
+ # camp_improved_poet_scheme_agent
+ # camp_recruit_fool_events
+ # camp_recruit_locals_events
+ # camp_unlocks_poisoner_scheme_agents
+ # camp_improved_learning_contract_rewards
+ # camp_reduced_prisoner_escape_chance
  pod_only_if_unlanded: "#weak (только для авантюристов)#!"
+ # Camp Officers
  domicile_building_parameter_camp_unlocks_second_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('second_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_camp_priest_officer: "Unlocks the [GetCourtPositionType('camp_priest_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_quartermaster_officer: "Unlocks the [GetCourtPositionType('quartermaster_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_armorer_officer: "Unlocks the [GetCourtPositionType('armorer_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_chief_forager_officer: "Unlocks the [GetCourtPositionType('chief_forager_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_master_thief_officer: "Unlocks the [GetCourtPositionType('master_thief_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_head_porter_officer: "Unlocks the [GetCourtPositionType('head_porter_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_head_groom_officer: "Unlocks the [GetCourtPositionType('head_groom_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_huntperson_officer: "Unlocks the [GetCourtPositionType('huntperson_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_kennelperson_officer: "Unlocks the [GetCourtPositionType('kennelperson_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_chief_engineer_officer: "Unlocks the [GetCourtPositionType('chief_engineer_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_witness_officer: "Unlocks the [GetCourtPositionType('witness_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_person_haggler_officer: "Unlocks the [GetCourtPositionType('person_haggler_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_camp_cook_officer: "Unlocks the [GetCourtPositionType('camp_cook_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_master_bard_officer: "Unlocks the [GetCourtPositionType('master_bard_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
  domicile_building_parameter_camp_unlocks_master_of_arms_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('master_of_arms_camp_officer').GetName()]» $pod_only_if_unlanded$"
  domicile_building_parameter_camp_unlocks_light_cavalry_captain_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('light_cavalry_captain_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_camelry_captain_officer: "Unlocks the [GetCourtPositionType('camelry_captain_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_elephantry_captain_officer: "Unlocks the [GetCourtPositionType('elephantry_captain_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
  domicile_building_parameter_camp_unlocks_heavy_cavalry_captain_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('heavy_cavalry_captain_camp_officer').GetName()]» $pod_only_if_unlanded$"
- domicile_building_parameter_camp_unlocks_master_of_spoils_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('master_of_spoils_camp_officer').GetName()]» $pod_only_if_unlanded$"
- domicile_building_parameter_camp_improved_entice_local_mercenaries: "Более умелые кандидаты благодаря #high завлечению местных наемников#! $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_horse_archer_captain_officer: "Unlocks the [GetCourtPositionType('horse_archer_captain_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
  domicile_building_parameter_camp_unlocks_archer_captain_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('archer_captain_camp_officer').GetName()]» $pod_only_if_unlanded$"
  domicile_building_parameter_camp_unlocks_heavy_infantry_captain_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('heavy_infantry_captain_camp_officer').GetName()]» $pod_only_if_unlanded$"
  domicile_building_parameter_camp_unlocks_light_infantry_captain_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('light_infantry_captain_camp_officer').GetName()]» $pod_only_if_unlanded$"
  domicile_building_parameter_camp_unlocks_pike_captain_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('pike_captain_camp_officer').GetName()]» $pod_only_if_unlanded$"
- domicile_building_parameter_camp_unlocks_quartermaster_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('quartermaster_camp_officer').GetName()]» $pod_only_if_unlanded$"
+ domicile_building_parameter_camp_unlocks_master_of_spoils_officer: "Unlocks the [GetCourtPositionType('master_of_spoils_camp_officer').GetName()] [officer|E] $pod_only_if_unlanded$"
+ # Others
+ domicile_building_parameter_camp_improved_entice_local_mercenaries: "Improved recruitment from #high Entice Local Mercenaries#! $pod_only_if_unlanded$"
  domicile_building_parameter_camp_unlocks_torture_interaction: "Можно [Concept('torture', 'пытать')|E] [Concept('prisoners', 'узников')|E] $pod_only_if_unlanded$"
  domicile_building_parameter_fireside_chat_intent_unlock: "Открывает доступ к [Concept( 'intent', 'намерению' )|E] «Беседа у костра» во время [Concept('activity','занятия')|E] «[GetActivityType('activity_camp_party').GetName]» $pod_only_if_unlanded$"
- domicile_building_parameter_camp_unlocks_master_bard_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('master_bard_camp_officer').GetName()]» $pod_only_if_unlanded$"
  domicile_building_parameter_camp_improves_stooge_officer: "Улучшает базовую [Concept('aptitude','пригодность')|E] любого [Concept('officer','подручного')|E] типа «[GetCourtPositionType('stooge_camp_officer').GetName()]» $pod_only_if_unlanded$"
- domicile_building_parameter_camp_unlocks_camp_cook_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('camp_cook_camp_officer').GetName()]» $pod_only_if_unlanded$"
  domicile_building_parameter_camp_improves_gather_provisions_decision: "Значительно улучшает [Concept('decision','решение')|E] «[GetDecisionWithKey('gather_provisions_decision').GetName]» $pod_only_if_unlanded$"
  domicile_building_parameter_camp_unlocks_camp_party_food_option: "Открывает дополнительные возможности в [Concept('activity','занятии')|E] «[GetActivityType('activity_camp_party').GetName]» $pod_only_if_unlanded$"
  domicile_building_parameter_camp_improved_camp_party_activity_gains: "Улучшает результаты [Concept('activity','занятия')|E] «[GetActivityType( 'activity_camp_party').GetName]» $pod_only_if_unlanded$"
- domicile_building_parameter_camp_unlocks_chief_forager_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('chief_forager_camp_officer').GetName()]» $pod_only_if_unlanded$"
  domicile_building_parameter_camp_improves_gather_provisions_foraging: "Получить [EmptyScope.ScriptValue('camp_improves_gather_provisions_foraging_loc_value')|=+0%] [provisions_i][Concept('provisions','припасов')|E] во время фуражировки с помощью [Concept('decision','решения')|E] «[GetDecisionWithKey('gather_provisions_decision').GetName]» $pod_only_if_unlanded$"
- domicile_building_parameter_camp_unlocks_chief_engineer_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('chief_engineer_camp_officer').GetName()]» $pod_only_if_unlanded$"
- domicile_building_parameter_camp_unlocks_chief_engineer_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('chief_engineer_camp_officer').GetName()]» $pod_only_if_unlanded$"
- domicile_building_parameter_camp_unlocks_camp_priest_officer: "Позволяет нанимать [Concept( 'officer', 'подручного' )|E] «[GetCourtPositionType('camp_priest_camp_officer').GetName()]» $pod_only_if_unlanded$"
  domicile_building_parameter_camp_better_scout_for_talent: "Используйте «[GetTravelOption('adventurers_scout_for_talent_option').GetName]», чтобы найти больше [Concept( 'officers', 'подручных' )|E] $pod_only_if_unlanded$"
 
  # Visit local settlement
- local_holding_type_concept_grand_city_holding: "[grand_city_holding|E]"
+ local_holding_type_concept_grand_city_holding: "[grand_city|E]"
  local_holding_type_grand_city_holding: "$game_concept_grand_city$"
  local_holding_type_capitalized_grand_city_holding: "$game_concept_grand_city$"
+ ep3_laamp_decision_event.1000.c: "Let us have a look at [visiting_location.GetBaronyNameExplicitlyNoTooltip] castle."
+ ep3_laamp_decision_event.1000.c_second: "There were some unfinished business at the castle."
+ ep3_laamp_decision_event.1000.c.tt: "Go to the local castle grounds"
 
  # Fae using FP2 stuff
  game_concept_iberian_reclamation:0 "Рекламация"
@@ -425,3 +451,58 @@
  # Disabled building flags
  building_funeral_effect_desc: ""
  tower_of_london_pacification_effect: ""
+
+ # monuments
+ 
+ activity_journey_guest_help_text: "У [Concept('activity_guests', 'гостей занятия')|E] появляется шанс повысить опыт образа жизни. Это особенно полезно, если среди них есть важные для вас персонажи, например, [Concept('player_heir', 'наследник-игрок')|E]."
+ diplomacy_skill_focus_tt: "За этим [Concept('activity', 'занятием')|E] вы повысите опыт [diplomacy_i|E][Concept('diplomacy', 'дипломатии')|E]"
+ martial_skill_focus_tt: "За этим [Concept('activity', 'занятием')|E] вы повысите опыт [martial_i|E][Concept('martial', 'военного дела')|E]"
+ learning_skill_focus_tt: "За этим [Concept('activity', 'занятием')|E] вы повысите опыт [learning_i|E][Concept('learning', 'учености')|E]"
+ stewardship_skill_focus_tt: "За этим [Concept('activity', 'занятием')|E] вы повысите опыт [stewardship_i|E][Concept('stewardship', 'управления')|E]"
+ intrigue_skill_focus_tt: "За этим [Concept('activity', 'занятием')|E] вы повысите опыт [intrigue_i|E][Concept('intrigue', 'интриг')|E]"
+ journey_skill_gain_final_log_title: "Опыт повысился"
+ journey_skill_gain_final_log: "Опыт [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )|U][CHARACTER.GetShortUINamePossessive|U][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] повысился"
+ activity_journey_host_desc: "#indent_newline:8 $BULLET_WITH_TAB$[intrigue_i|E][diplomacy_i|E][martial_i|E][learning_i|E][stewardship_i|E]#V 1#! опыт образа жизни гарантировано, шанс получить #V 1#! очко опыта дополнительно\n#weak (Очки навыков зависят от вида посещенной [Concept('special_building', 'особой постройки')|E])#!#!\n$BULLET_WITH_TAB$[court_position_i]Претенденты на [Concept('court_positions', 'придворные должности')|E] с превосходным уровнем [Concept('aptitude', 'пригодности')|E] для этих должностей\n$BULLET_WITH_TAB$[prestige_i|E][Concept('prestige', 'Престиж')|E]\n\n#weak Ваши [Concept('children', 'дети')|E] и [Concept('spouses', 'супруги')|E] войдут в вашу [Concept('entourage', 'свиту')|E].#!"
+ journey_skilled_scribes_desc: "#indent_newline:8 $BULLET_WITH_TAB$ К свите присоединятся два очень искусных персонажа со свойством «[GetTrait('devoted').GetName( GetNullCharacter )]». По завершении [Concept('activity', 'занятия')|E] они останутся у вас [Concept('courtiers', 'при дворе')|E], а вы получите [Concept('hooks', 'влияние')|E] «#EMP Обязательство#!» на них, которое снизит их жалование на [Concept('court_positions', 'придворных должностях')|E].#!\n\n#flavor Помощь извне никогда не бывает лишней — в конце концов, не могу же я в одиночку предусмотреть #EMP всё#!.#!"
+ journey_skill_desc: "#weak Шанс дополнительного повышения опыта образа жизни по завершении: #V [Activity.MakeScope.Var('skill_chance').GetValue|0]%#!#!"
+ extra_skill_gained_tt: "Вы получили дополнительный опыт образа жизни #weak (шанс - [activity.MakeScope.Var( 'skill_chance' ).GetValue|0]%)#!"
+ no_extra_skill_gained_tt: "Вы не получили дополнительного опыта образа жизни #weak (шанс - [activity.MakeScope.Var( 'skill_chance' ).GetValue|0]%)#!"
+ scribes_skill_tt: "Выбранные [Concept('activity_options', 'параметры занятия')|E] принесли дополнительный опыт образа жизни"
+ increase_skill_chance_25: "Шанс дополнительного повышения опыта образа жизни по завершении: #P +25%#!"
+ increase_skill_chance_20: "Шанс дополнительного повышения опыта образа жизни по завершении: #P +20%#!"
+ increase_skill_chance_15: "Шанс дополнительного повышения опыта образа жизни по завершении: #P +15%#!"
+ increase_skill_chance_10: "Шанс дополнительного повышения опыта образа жизни по завершении: #P +10%#!"
+ increase_skill_chance_30: "Шанс дополнительного повышения опыта образа жизни по завершении: #P +30%#!"
+ increase_skill_chance_35: "Шанс дополнительного повышения опыта образа жизни по завершении: #P +35%#!"
+ increase_skill_chance_50: "Шанс дополнительного повышения опыта образа жизни по завершении: #P +50%#!"
+ increase_skill_chance_5: "Шанс дополнительного повышения опыта образа жизни по завершении: #P +5%#!"
+ increase_skill_chance_2: "Шанс дополнительного повышения опыта образа жизни по завершении: #P +2%#!"
+
+
+ # trait loss
+
+ GAIN_TRAIT_XP:0 "Gains $VALUE|V2$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ I_GAIN_TRAIT_XP:1 "You gain $VALUE|V2$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ THEY_GAIN_TRAIT_XP:0 "[CHARACTER.GetName] gains $VALUE|V2$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ GAINED_TRAIT_XP:0 "Gained $VALUE|V2$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ I_GAINED_TRAIT_XP:1 "You gained $VALUE|V2$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ THEY_GAINED_TRAIT_XP:1 "[CHARACTER.GetName] gained $VALUE|V2$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ LOSE_TRAIT_XP:0 "Loses $VALUE|V2$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ I_LOSE_TRAIT_XP:1 "You lose $VALUE|V2$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ THEY_LOSE_TRAIT_XP:0 "[CHARACTER.GetName] loses $VALUE|V2$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ LOST_TRAIT_XP:0 "Lost $VALUE|V2$ $TRACK_NAME$ [trait_level_track_xp|E] #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ I_LOST_TRAIT_XP:1 "You lost $VALUE|V2$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+ THEY_LOST_TRAIT_XP:0 "[CHARACTER.GetName] lost $VALUE|V2$ [trait_level_track_xp|E] in $TRACK_NAME$ #weak ([TRAIT.GetName( CHARACTER.Self )])#!"
+
+ GAIN_TRAIT_XP_SINGLE:1 "Gains $VALUE|2+$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ I_GAIN_TRAIT_XP_SINGLE:1 "You gain $VALUE|2+$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ THEY_GAIN_TRAIT_XP_SINGLE:1 "[CHARACTER.GetName] gains $VALUE|2$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ GAINED_TRAIT_XP_SINGLE:1 "Gained $VALUE|2+$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ I_GAINED_TRAIT_XP_SINGLE:1 "You gained $VALUE|2+$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ THEY_GAINED_TRAIT_XP_SINGLE:1 "[CHARACTER.GetName] gained $VALUE|2+$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ LOSE_TRAIT_XP_SINGLE:1 "Loses $VALUE|2-$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ I_LOSE_TRAIT_XP_SINGLE:1 "You lose $VALUE|2-$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ THEY_LOSE_TRAIT_XP_SINGLE:1 "[CHARACTER.GetName] loses $VALUE|2-$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ LOST_TRAIT_XP_SINGLE:1 "Lost $VALUE|2-$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ I_LOST_TRAIT_XP_SINGLE:1 "You lost $VALUE|2-$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"
+ THEY_LOST_TRAIT_XP_SINGLE:1 "[CHARACTER.GetName] lost $VALUE|2-$ [trait_level_track_xp|E] in the [TRAIT.GetName( CHARACTER.Self )] [trait|E]"

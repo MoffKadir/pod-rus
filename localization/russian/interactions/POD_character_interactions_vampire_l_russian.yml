@@ -25,6 +25,8 @@
  POD_blood_heal_scarred: "Шрамы"
  POD_blood_heal_disfigured: "Обезображенность"
 
+ POD_blood_heal_explanation: "#weak Because you have [THIS.Char.Custom('PODBloodPotency')], you can heal [THIS.ScriptValue('POD_blood_heal_value')|V0] [POD_superficial_damage|E] at once.#!"
+
  POD_find_mortals: "Поиск смертных"
  POD_find_mortals_action: "Поиск смертных"
  POD_find_mortals_interaction: "Найти смертных"
@@ -89,18 +91,18 @@
  POD_vampshapeshift_interaction_revertvicissitudeface: "Отменить лицо Изменчивости."
  POD_vampshapeshift_interaction_feralweapons: "Получить дикое оружие."
  POD_vampshapeshift_interaction_bonearmor: "Броня из костей."
- POD_vampshapeshift_interaction_wolf: "Обратиться в волка."
- POD_vampshapeshift_interaction_boar: "Обратиться в вепря."
- POD_vampshapeshift_interaction_lion: "Обратиться в льва."
- POD_vampshapeshift_interaction_giantserpent: "Обратиться в гигантскую змею."
- POD_vampshapeshift_interaction_rat: "Превратиться в крысу."
- POD_vampshapeshift_interaction_bat: "Превратиться в летучую мышь."
- POD_vampshapeshift_interaction_insect: "Превратиться в насекомое."
- POD_vampshapeshift_interaction_snake: "Превратиться в маленькую змею."
+ POD_vampshapeshift_interaction_wolf: "Волк"
+ POD_vampshapeshift_interaction_boar: "Вепрь"
+ POD_vampshapeshift_interaction_lion: "Лев"
+ POD_vampshapeshift_interaction_giantserpent: "Гигантская змея"
+ POD_vampshapeshift_interaction_rat: "Крыса"
+ POD_vampshapeshift_interaction_bat: "Летучую мышь"
+ POD_vampshapeshift_interaction_insect: "Насекомое"
+ POD_vampshapeshift_interaction_snake: "Маленькая змея"
  POD_vampshapeshift_interaction_blood: "Превратиться в разумную лужу крови."
- POD_vampshapeshift_interaction_mist: "Превратиться в туман."
- POD_vampshapeshift_interaction_shadow: "Стать тенью."
- POD_vampshapeshift_interaction_incorporeal: "Провести ритуал бестелестности."
+ POD_vampshapeshift_interaction_mist: "Туман"
+ POD_vampshapeshift_interaction_shadow: "Тень"
+ POD_vampshapeshift_interaction_incorporeal: "Стать бестелестностью"
  POD_vampshapeshift_interaction_chiropteran: "Трансформироваться в рукокрылого мародёра"
  POD_vampshapeshift_interaction_zulo: "Пробудить форму Зуло"
  POD_vampshapeshift_interaction_dracul: "Принять форму Дракона"
@@ -110,8 +112,8 @@
  POD_vampshapeshift_interaction_serpentsflesh: "Получить змеиную кожу"
  POD_vampshapeshift_interaction_typhonicavatar: "Принять тифоническую форму"
  POD_vampshapeshift_interaction_godhead: "Божественная голова"
- POD_vampshapeshift_interaction_reshapeface: "Изменить лицо."
- POD_vampshapeshift_interaction_revertreshapeface: "Отменить изменение лица."
+ POD_vampshapeshift_interaction_reshapeface: "Изменить лицо"
+ POD_vampshapeshift_interaction_revertreshapeface: "Отменить изменение лица"
  POD_vampshapeshift_interaction_skinofchameleon: "Кожа хамелеона."
  POD_vampshapeshift_interaction_purchase_aspect_of_the_beast: "Активировать аспект Зверя"
  POD_vampshapeshift_interaction_the_wild_beast: "Форма дикого зверя"
@@ -158,20 +160,9 @@
  POD_bind_famulus_interaction: "Привязать фамильяра"
  POD_bind_famulus_interaction_desc: "Найти животное и подчинить его узами крови для служения вашей воле."
  POD_bind_famulus_interaction_options_heading: "Какое животное мне следует подчинить в качестве фамильяра?"
- POD_bind_famulus_interaction_horse: "Лошадь"
  POD_bind_famulus_interaction_horse.tt: "Я куплю и подчиню узами крови лошадь."
- POD_bind_famulus_interaction_cat: "Кошка"
  POD_bind_famulus_interaction_cat.tt: "Я призову бездомную кошку и подчиню её узами крови."
- POD_bind_famulus_interaction_dog: "Собака"
  POD_bind_famulus_interaction_dog.tt: "Я призову бездомную собаку и подчиню её узами крови."
- POD_tame_animal: "Приручить животное"
- POD_tame_animal_interaction: "Приручить животное"
- POD_tame_animal_interaction_desc: "Найти животное и приручить его."
- POD_tame_animal_interaction_options_heading: "Какое животное мне следует приручить?"
- POD_tame_animal_interaction_cat: "Кошка"
- POD_tame_animal_interaction_cat.tt: "Я призову бездомную кошку и приручу её."
- POD_tame_animal_interaction_dog: "Собака"
- POD_tame_animal_interaction_dog.tt: "Я призову бездомную собаку и приручу её."
 
  POD_bond_prisoner_interaction: "Связать пленника узами крови"
  POD_bond_prisoner_interaction_desc: "Насильно насытить персонажа [recipient.GetFirstName] вашей вампирской витэ, создать между вами мистическую связь. Узы кровы заставят его почувствовать искусственную любовь и положительно относиться к вам. Если у него уже были частичные узы крови с вами, она будет заменена одержимостью."
@@ -359,7 +350,7 @@
  POD_mentoring_disciplines.60.a: "Нам не нужна вон та стена! Удар!"
 
  POD_mentoring_disciplines.61.t: "Ударная дипломатия"
- POD_mentoring_disciplines.61.desc: "Ваша новая сила, обретенная благодаря Могуществу, дала вам искаженное представление о том, как можно решить все проблемы, - очень сильно ударив по ним. К сожалению, есть предел, когда грубая сила может стать решением всех ваших проблем, и вы начинаете его преодолевать. Скоро вам придется вернуться к повседневной рутине заговоров, придворных интриг и скучной дипломатии, вместо того  чтобы бегать повсюду, ведя себя как команда подрывников."
+ POD_mentoring_disciplines.61.desc: "Ваша новая сила, обретенная благодаря Могуществу, дала вам искаженное представление о том, как можно решить все проблемы, - очень сильно ударив по ним. К сожалению, есть предел, когда грубая сила может стать решением всех ваших проблем, и вы начинаете его преодолевать. Скоро вам придется вернуться к повседневной рутине заговоров, придворных интриг и скучной дипломатии, вместо того чтобы бегать повсюду, ведя себя как команда подрывников."
  POD_mentoring_disciplines.61.a: "Ещё немного!"
  POD_mentoring_disciplines.61.b: "Пора вернуться в реальный мир."
 
@@ -538,7 +529,7 @@
  POD_mentoring_disciplines.241.a: "Теперь я вижу гораздо больше."
  POD_mentoring_disciplines.241.b: "Мне не нужна их болтовня о чепухе!"
 
- POD_mentoring_disciplines.242.t: "Магия  - это наука"
+ POD_mentoring_disciplines.242.t: "Магия - это наука"
  POD_mentoring_disciplines.242.desc: "Чародейство, известное магам как линейная магия или более пренебрежительно как низшая магия или низшее колдовство, - это форма магии, используемая не-магами. В отличие от истинной магии, для использования колдовства не нужно быть пробужденным (или просветленным). Таким образом, любой, обладающий достаточными способностями, может стать колдуном и использовать линейные пути низшей магии. В результате чародейство является самой распространенной формой магии в мире. В отличие от ментальных способностей, чародейство не является врожденной способностью, ему нужно учиться.\nМедленно, мучительно медленно, но учиться.\nВаш учитель завалил вас рекомендациями книг, которые вам придется приобрести, причем все они, очевидно, необходимы для того, чтобы продвинуться в освоении этого магического искусства. У вас нет выбора, кроме как погрузиться в работу."
 
  POD_mentoring_disciplines.243.t: "Знание - это магия"
@@ -606,6 +597,29 @@
  POD_mentoring_disciplines.255.desc: "Гаргульи часто овладевают Висцератикой совершенно естественно, используя ее мощные эффекты, чтобы оставаться совершенно неподвижными неделями, а то и месяцами. Большинству других вампиров это дается не так легко, и теперь ваш наставник хочет оценить вашу способность совершить этот подвиг... что звучит ужасно скучно.\nЗаметив ваше нежелание предаваться этой идее, наставник пригрозил забрать камень, который вы до сих пор использовали для экспериментов с Висцератикой и который вы повсюду носите с собой. Это не самая страшная угроза, которую вы когда-либо слышали, но вам очень нравится этот камень!"
  POD_mentoring_disciplines.255.a: "Вы ужасны, но вы победили."
  POD_mentoring_disciplines.255.b: "Я могу прожить без своего ручного камня."
+
+ POD_mentoring_disciplines.256.t: "Blood Sacrifice"
+ POD_mentoring_disciplines.256.desc: "You arrive to find your mentor sat beneath a tree in front of a bowl of oils.\n\n\"To find power and focus within yourself, you must find clarity when your [beast|E] is furiously gnawing at your mind\", [recipient.GetFirstName] explains as [recipient.GetSheHe] gestures for you to purge yourself of blood."
+ POD_mentoring_disciplines.256.a: "You fully drain your humours into the bowl."
+
+ POD_mentoring_disciplines.257.t: "Trial by Fire"
+ POD_mentoring_disciplines.257.desc: "[recipient.GetFirstNamePossessiveNoTooltip] determined gaze never leaves you as you're sat in silence, devoid of blood, wondering where this lesson is going.[AddTextIf( PlayerHasBeast, ' The hunger is almost unbearable.' )] Then, almost dispassionately, [recipient.GetSheHe] sets fire to the bowl of oils.\n\n\"Give in to fear, and the Beast will #beast control#! you. Overcome this fear, and the Beast will fear #italic you#!.\"\n\nYour mentor presents strong-looking wooden boards, sets them atop the bowls, and directs you to break them with your bare hands, all the while the merciless flames lick at them.\n\n\"Do not tamper with this test by using disciplines. Let your will alone reverberate. Spark the oils within the soul and let the flame burn bright.\""
+ POD_mentoring_disciplines.257.a: "And strike with all your might."
+ POD_mentoring_disciplines.257.b: "No challenge at all."
+
+ POD_mentoring_disciplines.258.t: "Ominous Surroundings"
+ POD_mentoring_disciplines.258.desc: "You approach the location designated by your mentor at midnight.\n\nBefore you is a brief path of stone slabs leading to what looks like an altar adorned with silk, with a large ornate basin atop it filled to the brim with blood.\n\nYou do not see your mentor, but a note in front of the basin reads:\n\n#italic Adorn your face in blood and I shall show you what you need to see.#!"
+ POD_mentoring_disciplines.258.a: "You do as your mentor instructs."
+
+ POD_mentoring_disciplines.259.t: "Nightmare Made Manifest"
+ POD_mentoring_disciplines.259.beast.desc: "For a moment nothing seems to be happening...\nbut you feel it, your #beast Beast#! urges, nay, #beast demands#! that you drink from the bowl."
+ POD_mentoring_disciplines.259.nobeast.desc: "For a moment nothing seems to be happening...\nbut you feel it, your #beast Beast#! has returned with a #beast vengeance#!, and it urges, nay, #beast demands#! that you drink from the bowl."
+ # final paragraph says "And thus the moment ends, with the world fading to black." with a transparency gradient
+ POD_mentoring_disciplines.259.desc: "\n\nUnable to resist, you launch yourself at the bowl of crimson liquid.\n\nTo your horror, the blood... recoils from you. It drains from the bowl and into the dirt.\n\nLamenting the blood's descent into the ground, you find yourself prone, languishing in your attempts to find even a single drop.\n\nIt is at this moment you feel the crushing weight of faith, the weight of any #beast wrong#!, any #beast sin#! you may have committed completely crippling you.\n\nAny powers you may have had are entirely absent as you feel a stake sink into your heart: a vampire hunter looms over you silently.\n\n[recipient.GetSheHe|U] looms with a loose grip upon a blazing torch, and your beast writhes impotently within you, trying its best to flee the fire.\n\nThe beast cannot help you.\n\nThe sun is beginning to dawn.\n\nFor a moment you feel confusion, how can this be? You thought there to be hours before the sunrise.\n\nFor a moment you think you see the hunter smile;\n\nFor a moment that stretches into excruciating eternity.\n\nYour mentor's fangs sink into your neck.\n\nAnd thus the m#color:{0.61,0.6,0.56,0.975} o#!#color:{0.61,0.6,0.56,0.95} m#!#color:{0.61,0.6,0.56,0.925} e#!#color:{0.61,0.6,0.56,0.9} n#!#color:{0.61,0.6,0.56,0.875} t#! #color:{0.61,0.6,0.56,0.85} e#!#color:{0.61,0.6,0.56,0.825} n#!#color:{0.61,0.6,0.56,0.8} d#!#color:{0.61,0.6,0.56,0.775} s#!#color:{0.61,0.6,0.56,0.75} ,#! #color:{0.61,0.6,0.56,0.725} w#!#color:{0.61,0.6,0.56,0.7} i#!#color:{0.61,0.6,0.56,0.675} t#!#color:{0.61,0.6,0.56,0.65} h#! #color:{0.61,0.6,0.56,0.625} t#!#color:{0.61,0.6,0.56,0.6} h#!#color:{0.61,0.6,0.56,0.575} e#! #color:{0.61,0.6,0.56,0.55} w#!#color:{0.61,0.6,0.56,0.525} o#!#color:{0.61,0.6,0.56,0.5} r#!#color:{0.61,0.6,0.56,0.475} l#!#color:{0.61,0.6,0.56,0.45} d#! #color:{0.61,0.6,0.56,0.425} f#!#color:{0.61,0.6,0.56,0.4} a#!#color:{0.61,0.6,0.56,0.375} d#!#color:{0.61,0.6,0.56,0.35} i#!#color:{0.61,0.6,0.56,0.325} n#!#color:{0.61,0.6,0.56,0.3} g#! #color:{0.61,0.6,0.56,0.275} t#!#color:{0.61,0.6,0.56,0.25} o#! #color:{0.61,0.6,0.56,0.225} b#!#color:{0.61,0.6,0.56,0.2} l#!#color:{0.61,0.6,0.56,0.175} a#!#color:{0.61,0.6,0.56,0.15} c#!#color:{0.61,0.6,0.56,0.125} k#!#color:{0.61,0.6,0.56,0.1} .#!"
+#POD_mentoring_disciplines.259.unused: "You recoil in terror, what was but mere moments felt like an eternity." 
+#most likely change if needed to due to complaints would be swapping the last line of the desc with the one in POD_mentoring_disciplines.259.a instead 
+ POD_mentoring_disciplines.259.a: "You feel your soul fading away."
+ POD_mentoring_disciplines.259.a.toast: "Still terrified, you now know it was a nightmare."
 
  POD_demon_tainted_modifier: "Адская порча"
  POD_demon_tainted_modifier_desc: "От этого персонажа несет инфернальностью и нечестивостью. Чистые духом отшатываются от его присутствия, нечистые боятся конкуренции."
@@ -742,7 +756,7 @@
  POD_ventrue_succor_interaction_desc: "[Clan|E] Вентру придерживается права на помощь - когда Вентру нуждаются в серьёзной помощи, другие Вентру обязаны им помочь. Однако за всё приходится платить."
 
  #POD_toreador_rumor_mill_interaction: "Rumor mill"
- #POD_toreador_rumor_mill_interaction_desc: "The Toreador [Clan|E] are experts in manipulating the social machine. By Utilising that skill, you can fabricate a scandalous claim - and make it true. Or at least, as  far as anyone else is concerned."
+ #POD_toreador_rumor_mill_interaction_desc: "The Toreador [Clan|E] are experts in manipulating the social machine. By Utilising that skill, you can fabricate a scandalous claim - and make it true. Or at least, as far as anyone else is concerned."
  #POD_toreador_rumor_mill_interaction_succ: "Success"
  #POD_toreador_rumor_mill_interaction_succ_ct: "You will prepare a false [secret|E] on the target, and make sure just enough people herd the rumor to back it up, but not enough to reveal the secret. "
  #POD_toreador_rumor_mill_interaction_succ_toast: "Triumph!"
@@ -818,7 +832,7 @@
 
  TOOMANYFRIENDS: "Вы больше не можете заводить друзей, если у вас уже есть $POD_player_befriend_limit$ друзей."
  FIFTHY_GHOULS: "Хищники не вступают в брак со скотом!: $VALUE|+0$"
- WRONG_SHAPESHIFTERS: "Не такой же вид перевёртыша!: $VALUE|+0$"
+ WRONG_FERA: "Не такой же вид фера!: $VALUE|+0$"
  BOTH_REVENANTS_REASON: "Мы оба - ревенанты: $VALUE|+0$"
  SAME_PATH_REASON: "Мы следуем по одному Пути: $VALUE|+0$"
 
@@ -897,6 +911,9 @@
  POD_create_gargoyle_interaction.gargoyle_experiment_success_fairy.tt: "Создана гаргулья из касты Фей"
  POD_create_gargoyle_interaction.gargoyle_experiment_success_onyx_cat.tt: "Создана гаргулья из касты Ониксовых котов"
  POD_create_gargoyle_interaction.gargoyle_experiment_success_golden_manticore.tt: "Создана гаргулья из касты Золотых мантикор"
+ POD_create_gargoyle_interaction.gargoyle_experiment_success_kintsugi.tt: "Kintsugi caste gargoyle created"
+ POD_create_gargoyle_interaction.gargoyle_experiment_success_rogata.tt: "Rogata caste gargoyle created"
+ POD_create_gargoyle_interaction.gargoyle_experiment_success_totai.tt: "Totai caste gargoyle created"
 
  POD_create_zombu_interaction: "Создать зомбу"
  POD_create_zombu_interaction_desc: "Провести некромантическую церемонию оживления трупа в зомбу путём принесения в жертву другого смертного."
@@ -922,7 +939,7 @@
  POD_dementation_interaction_fail: "Вам не удаётся наслать безумие."
 
  POD_lunatic_eruption_interaction: "Безумное извержение"
- POD_lunatic_eruption_interaction_desc: "Вызвать безумное буйство у всех разумных существ в радиусе до нескольких миль, чтобы притянуть их к персонажу [recipient.GetFirstName]."
+ POD_lunatic_eruption_interaction_desc: "Вызвать безумное неистовство у всех разумных существ в радиусе до нескольких миль, чтобы притянуть их к персонажу [recipient.GetFirstName]."
  POD_lunatic_summon.duel.success: "Вы успешно овладеваете силой призыва безумия."
  POD_lunatic_summon.duel.failure: "Вы не смогли использовать способность"
  lunatic_summon_modifier: "Безумное извержение"
@@ -1017,6 +1034,7 @@
 
  POD_masquerade_risk_decrease_necromancy_ashes_to_ashes_tt: "«Прах к праху» из моей [Concept('discipline', 'дисциплины')|E] некромантии снижает риск #L $pod_masquerade_exposure|l$ия Маскарада#!."
  POD_masquerade_risk_decrease_necromancy_tend_the_body_garden_tt: "«Забота о саде тела» из моей [Concept('discipline', 'дисциплины')|E] некромантии снижает риск #L $pod_masquerade_exposure|l$ия Маскарада#!."
+ POD_masquerade_risk_decrease_blood_magic_mask_of_allah_tt: "[GetModifier('mask_of_allah_modifier').GetNameWithTooltip] decreases my risk of $pod_masquerade_exposure$."
 
  POD_find_wraith_interaction: "Найти призрака"
  POD_find_wraith_interaction_desc: "Обыскать свои земли в поисках #L [GetTrait('wraith').GetName( GetPlayer )|l]а#!, уязвимого к вашим действиям."
@@ -1027,13 +1045,13 @@
  POD_capital_county_maelstrom_cursed_toast: "[attacker.GetFirstName] [Select_CString(attacker.IsFemale, 'призвала', 'призвал' )] спектров, чтобы посеять хаос в вашей столице!"
  POD_maelstrom_cursed_enemy_realm_toast: "Спектры бесчинствуют в столице персонажа [target.GetFirstName]"
 
- POD_wails_and_whispers_interaction: "Вопли и шёпот"
+ POD_wails_and_whispers_interaction: "Плач и шёпот"
  POD_wails_and_whispers_interaction_desc: "Снижает сопротивление цели к проискам убийства"
  POD_wails_and_whispers_interaction.tt: "Используя свои способности к некромантии, вы можете сделать цель более уязвимой для происков убийства на 5 лет"
  POD_wails_and_whispers_actor_toast.desc: "[recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала более уязвима', 'стал более уязвим' )] для враждебных происков"
  POD_wails_and_whispers_enemy_toast: "Отчаяние!"
- POD_wails_and_whispers_enemy_toast.desc: "[actor.GetFirstName] [Select_CString(actor.IsFemale, 'прокляла', 'проклял' )] вас, используя «Вопли и шёпот»!"
- POD_wails_and_whispers_failure_toast.desc: "Вы не смогли использовать «Вопли и шёпот» на персонаже [recipient.GetFirstName]!"
+ POD_wails_and_whispers_enemy_toast.desc: "[actor.GetFirstName] [Select_CString(actor.IsFemale, 'прокляла', 'проклял' )] вас, используя «Плач и шёпот»!"
+ POD_wails_and_whispers_failure_toast.desc: "Вы не смогли использовать «Плач и шёпот» на персонаже [recipient.GetFirstName]!"
 
  POD_cthonic_womb_perk_effect.tt: "[victim.GetFirstName] восстанет из мертвых в виде #L [GetTrait('wraith').GetName( GetPlayer )|l]а#!"
 
@@ -1057,13 +1075,13 @@
  POD_gift_of_melancholia_interaction_success: "Болезнь вспыхнет в местоположении персонажа [target.GetFirstName] и со временем распространится оттуда"
  POD_gift_of_melancholia_interaction_failure: "Болезни не удается распространиться"
 
- POD_witchs_fruit_interaction: "Плод ведьмы"
+ POD_witchs_fruit_interaction: "Ведьмин фрукт"
  POD_witchs_fruit_interaction_desc: "Использовать интриги, чтобы обманом заставить смертное существо съесть съедобную растительную массу, подвергшуюся воздействию некротических энергий"
  POD_witchs_fruit_interaction.tt: "Использовать интриги, чтобы обманом заставить смертное существо съесть съедобную растительную массу, подвергшуюся воздействию некротических энергий"
  POD_witchs_fruit_actor_toast.desc: "Как тебе яблоки, [recipient.GetFirstName]?"
  POD_witchs_fruit_enemy_toast: "Путаница!"
  POD_witchs_fruit_enemy_toast.desc: "Вы съели что-то, что вам не стоило"
- POD_witchs_fruit_failure_toast.desc: "[recipient.GetFirstName] не пробует плод ведьмы"
+ POD_witchs_fruit_failure_toast.desc: "[recipient.GetFirstName] не пробует ведьмин фрукт"
 
  POD_raise_the_green_one_interaction: "Поднять зелёного телохранителя"
  POD_raise_the_green_one_interaction_desc: "Поднять труп, связанный и укреплённый растительной массой."
@@ -1152,6 +1170,9 @@
  POD_train_spiritus: "Случайно выбранный ученик получит свойство «[GetTrait('spiritus').GetName(GetNullCharacter)]», если у него его ещё нет."
  POD_train_thinbloodalchemy: "Случайно выбранный ученик получит свойство «[GetTrait('thinbloodalchemy').GetName(GetNullCharacter)]», если у него его ещё нет."
  POD_train_oblivion: "Случайно выбранный ученик получит свойство «[GetTrait(oblivion).GetName(GetNullCharacter)]», если у него его ещё нет."
+ POD_train_flight: "A random chosen student will gain [GetTrait('flight').GetName(GetNullCharacter)] if they don't already have it."
+ POD_train_kai: "A random chosen student will gain [GetTrait('kai').GetName(GetNullCharacter)] if they don't already have it."
+ POD_train_rift: "A random chosen student will gain [GetTrait('rift').GetName(GetNullCharacter)] if they don't already have it."
 
  POD_embrace_prisoner_interaction: "[Concept('Embrace', 'Обратить')|E] пленника"
  POD_embrace_prisoner_interaction_desc: "Насильно превратить персонажа [recipient.GetFirstName] вашим дитя."
@@ -1160,7 +1181,7 @@
  embracerecommendation_interaction: "Предложить [Concept('Embrace', 'обращение')|E]"
  embracerecommendation_interaction_desc: "Предложить персонажу [recipient.GetFirstName] [Concept('embrace', 'обратить')|E] смертного из вашего или [recipient.GetHerHis] двора."
  recipient_secondary_embracerecommendation_interaction: "Предложенный смертный"
- liege_vassal_contract_forbids_progeny: "[feudal_contract|E] персонажа [recipient.GetFirstNamePossessive|U] запрещает [Concept('Embrace', 'обращения')|E]"
+ liege_vassal_contract_forbids_progeny: "[vassal_contract|E] персонажа [recipient.GetFirstNamePossessive|U] запрещает [Concept('Embrace', 'обращения')|E]"
 
  POD_create_homunculus_interaction: "Создать гомункула"
  POD_create_homunculus_interaction_desc: "Создать своего смертного клона."
@@ -1177,7 +1198,7 @@
  POD_mirror_duplicate_interaction: "Зеркальный двойник"
  POD_mirror_duplicate_interaction_desc: "Создать своего двойника."
  POD_sensory_deprivation_interaction: "Сенсорная депривация"
- POD_sensory_deprivation_interaction_desc: "Отнять у персонажа [recipient.GetFirstName]  способность использовать свои чувства."
+ POD_sensory_deprivation_interaction_desc: "Отнять у персонажа [recipient.GetFirstName] способность использовать свои чувства."
 
  POD_discern_the_aura_interaction: "Различие ауры"
  POD_discern_the_aura_interaction_desc: "Найти смертного с определёнными атрибутами."
@@ -1407,7 +1428,7 @@
 
  POD_heart_of_darkness_interaction: "Сердце тьмы"
  POD_heart_of_darkness_interaction_desc: "Извлечь своё сердце, взывая к темным дарам Сета"
- POD_heart_of_darkness_interaction.tt: "Вы извлечёте свое сердце, став невосприимчивыми к диаблери и менее склонными к буйству."
+ POD_heart_of_darkness_interaction.tt: "Вы извлечёте свое сердце, став невосприимчивыми к диаблери и менее склонными к неистовству."
 
  target_removed_their_heart: "Этот персонаж извлек свое собственное сердце!"
 
@@ -1437,6 +1458,23 @@
  POD_heart_of_darkness_kill_option.tt: "Вы разрушите сердце персонажа [secondary_recipient.GetFirstName], убив [secondary_recipient.GetHerHis]."
  POD_heart_of_darkness_forcetorpor_option.tt: "Используя силу Серпентиса, вы вогнали персонаңа [secondary_recipient.GetFirstName] в торпор."
  POD_heart_of_darkness_release_option.tt: "Вы вернули сердце персонаңа [secondary_recipient.GetFirstName], позволяя [secondary_recipient.GetHerHim] освободиться от вашего влияния."
+
+ POD_kai_elder_4_perk_interaction: "Raijinto"
+ POD_kai_elder_4_perk_interaction_desc: "Strike them down."
+ recipient_secondary_POD_kai_elder_4_perk_interaction: "Draw upon sacrificed life force to fuel your strike"
+ POD_kai_elder_5_perk_interaction: "Crimson Storm"
+ POD_kai_elder_5_perk_interaction_desc: "Unleash the storm."
+
+ POD_glimpse_of_the_pain_interaction: "Glimpse of the Pain"
+ POD_glimpse_of_the_pain_interaction_desc: "Unleash the pain of your nightmares, if only for a brief moment."
+
+ POD_passing_the_inner_realm_interaction: "Passing the Inner Realm"
+ POD_passing_the_inner_realm_interaction_desc: "Start (or stop) using rifts on a regular basis, improving your combat and intrigue at the cost of increased [stress|E]."
+ activate_passing_the_inner_realm_ct: "You will suffer mental unwellness caused by frequent rift usage to enhance your ability in combat."
+ deactivate_passing_the_inner_realm_ct: "By no longer frequently using your rifts, you will longer benefit from enhanced combat abilities but you will no longer suffer mental unwellness caused by it."
+
+ POD_doorway_to_hell_interaction: "Doorway to Hell"
+ POD_doorway_to_hell_interaction_desc: "Use an established rift gateway to immediately relocate yourself and those accompanying you to your capital."
 
  POD_fortitude_interaction: "Стойкость"
  POD_fortitude_interaction_desc: "Управлять силами, дарованными [Concept('discipline', 'дисциплиной')|E] Стойкости."
@@ -1482,7 +1520,7 @@
  POD_they_extract_blood: "[CHARACTER.GetShortUIName] потратит $VALUE|0V$ ед. собранной крови"
  POD_they_extracted_blood: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'потратила', 'потратил' )] $VALUE|0V$ ед. собранной крови"
  POD_store_blood: "Собрать $VALUE|0V$ ед. полученной крови"
- POD_stored_blood: "Собрано $VALUE|0V$  ед. полученной крови"
+ POD_stored_blood: "Собрано $VALUE|0V$ ед. полученной крови"
  POD_you_store_blood: "Вы соберёте $VALUE|0V$ ед. полученной крови"
  POD_you_stored_blood: "Вы собрали $VALUE|0V$ ед. полученной крови"
  POD_they_store_blood: "[CHARACTER.GetShortUIName] соберёт $VALUE|0V$ ед. полученной крови"
@@ -1527,8 +1565,8 @@
  POD_malkavian_book_eating_interaction_sucess: "Знания из книги переходят в ваш разум"
  POD_malkavian_book_eating_interaction_fail: "Все знания покидают ваш разум, как только попадают в него"
 
- POD_malkavian_force_frenzy_interaction: "Принудительное буйство"
- POD_malkavian_force_frenzy_interaction_desc: "Вызвать буйство, чтобы получить преимущества"
+ POD_malkavian_force_frenzy_interaction: "Принудительное неистовство"
+ POD_malkavian_force_frenzy_interaction_desc: "Вызвать неистовство, чтобы получить преимущества"
 
  POD_malkavian_sacrifice_interaction: "Жертвоприношение безумия"
  POD_malkavian_sacrifice_interaction_desc: "Принести [Concept('prisoner', 'узника')|E] в жертву демонам, или, может быть, это было ваше безумие?"

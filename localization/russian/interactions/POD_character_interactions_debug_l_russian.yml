@@ -1,41 +1,53 @@
 ﻿l_russian:
- POD_debug_squared_distance_interaction: "#P;bold Show Squared Distance#!"
- POD_debug_squared_distance_interaction_desc: "The #P;bold Squared Distance#! between [actor.GetShortUIName] and [recipient.GetShortUIName] is #V;bold [SCOPE.ScriptValue('POD_debug_squared_distance')]#!"
-  
- POD_debug_force_into_prison_interaction: "Force into Prison"
- POD_debug_force_into_prison_interaction_desc: "Force a character into prison, skipping the duel event that normally happens in [princes_of_darkness|E]"
- POD_debug_become_laamp_interaction_imprison_recipient: "You imprison this character"
- POD_debug_become_laamp_interaction_imprison_actor: "This character imprisons you"
+ POD_debug_squared_distance_interaction: "#P;bold Показать квадрат расстояния#!"
+ POD_debug_squared_distance_interaction_desc: "#P;bold Квадрат расстояния#! между персонажами [actor.GetShortUIName] и [recipient.GetShortUIName] составляет #V;bold [SCOPE.ScriptValue('POD_debug_squared_distance')]#!"
 
- POD_debug_teleport_interaction: "Teleport"
- POD_debug_teleport_interaction_desc: "wheeee"
+ POD_debug_pod_death_interaction: "Kill Character"
+ POD_debug_pod_death_interaction_desc: "Kill [recipient.GetShortUIName]. If [recipient.GetSheHe|l] has a resurrection ability, it will trigger (unlike the #V $slay_character_interaction$#! [character_interaction|E] from Vanilla CK3, which kills permanently)"
 
- POD_debug_instacomplete_journey_interaction: "Instantly complete current Journey"
- POD_debug_instacomplete_journey_interaction_desc: "Instantly complete your [journey|E] to #bold $POD_JOURNEY_GETNAME$#!"
+ POD_debug_force_into_prison_interaction: "Заключить в темницу"
+ POD_debug_force_into_prison_interaction_desc: "Заключить персонажа в темницу, пропустив поединок, который обычно происходит в модификации «[princes_of_darkness|E]»"
+ POD_debug_become_laamp_interaction_imprison_recipient: "Вы заключаете этого персонажа в темницу"
+ POD_debug_become_laamp_interaction_imprison_actor: "Этот персонаж заключает вас в темницу"
 
- POD_debug_gain_trait_xp_interaction: "Add Trait Experience"
- POD_debug_gain_trait_xp_interaction_desc: "Level up a supernatural trait of [recipient.GetShortUIName]"
+ POD_debug_teleport_interaction: "Телепортировать"
+ POD_debug_teleport_interaction_desc: "вжух"
 
- POD_debug_umbra_discovery_interaction: "Gain [umbra|E] Discovery"
- POD_debug_umbra_discovery_interaction_desc: "You'll be able to start an [umbra_expedition|E] in the #bold [Localize(Concatenate('game_concept_', recipient.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName))]#!"
+ POD_debug_instacomplete_journey_interaction: "Мгновенно завершить текущее странствие"
+ POD_debug_instacomplete_journey_interaction_desc: "Мгновенно завершить ваше [Concept('journey', 'странствие')|E] #bold $POD_JOURNEY_GETNAME$#!"
 
- POD_debug_show_real_prowess_interaction: "Show uncapped Prowess"
- POD_debug_show_real_prowess_interaction_desc: "Display your real [prowess|E] skill, which is used during certain events in [princes_of_darkness|E]."
+ POD_debug_gain_trait_xp_interaction: "Добавить опыт свойства"
+ POD_debug_gain_trait_xp_interaction_desc: "Повысить уровень сверхъестественного свойства персонажа [recipient.GetShortUIName]"
+ POD_reduce_trait_xp: "Reduce experience instead"
 
- POD_debug_edit_clothing_colors_interaction: "Edit Clothing Colors"
- POD_debug_edit_clothing_colors_interaction_desc: "Change the color scheme of [recipient.GetShortUIName]"
- POD_debug_edit_clothing_colors_personal: "Personal Colors"
- POD_debug_edit_clothing_colors_coterie: "Coterie Colors"
- POD_debug_edit_clothing_colors_house: "House Colors"
+ POD_debug_umbra_discovery_interaction: "Получить открытие [Concept('umbra', 'Умбры')|E]"
+ POD_debug_umbra_discovery_interaction_desc: "Вы сможете начать [Concept('umbra_expedition', 'путешествие в Умбру')|E] в измерение #bold [Localize(Concatenate('game_concept_', recipient.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName))]#!"
 
- POD_debug_portrait_shaders_interaction: "Portrait Shader Playground"
- POD_debug_portrait_shaders_interaction_desc: "Mess with the graphics of [recipient.GetShortUIName]."
+ POD_debug_show_real_prowess_interaction: "Показать настоящую доблесть"
+ POD_debug_show_real_prowess_interaction_desc: "Показать ваш реальный навык [Concept('prowess', 'доблести')|E], который используется в некоторых событиях в модификации «[princes_of_darkness|E]»."
 
- POD_debug_teach_spell_of_life_interaction: "Teach the Spell of Life"
- POD_debug_teach_spell_of_life_interaction_desc: "Teach [recipient.GetShortUIName] the Spell of Life, which allows creating $POD_splat_mummy_plural$"
+ POD_debug_edit_clothing_colors_interaction: "Изменить цвета одежды"
+ POD_debug_edit_clothing_colors_interaction_desc: "Изменить цветовую схему одежды персонажа [recipient.GetShortUIName]"
+ POD_debug_edit_clothing_colors_personal: "Личные цвета"
+ POD_debug_edit_clothing_colors_coterie: "Цвета котерии"
+ POD_debug_edit_clothing_colors_house: "Цвета дома"
 
- POD_debug_umbra_adventure_interaction: "Umbra Map Generation Prototype"
+ POD_debug_portrait_shaders_interaction: "Песочница шейдеров портрета"
+ POD_debug_portrait_shaders_interaction_desc: "Поиграться с графикой персонажа [recipient.GetShortUIName]."
 
- POD_debug_become_laamp_interaction: "Become Landless"
- POD_debug_become_laamp_interaction_desc: "Leave your holdings behind and become a landless adventurer"
- POD_debug_become_laamp_interaction_gallivanter: "Become a [GetTrait('gallivanter').GetName(GetPlayer)] #weak (prevents inheriting landed titles)#!"
+ POD_debug_event_shaders_interaction: "Тест шейдеров событий"
+
+ POD_debug_vicissitude_face_interaction: "Редактор портрета Изменчивости"
+ POD_debug_vicissitude_face_interaction_desc: "Открывает окно, позволяющее редактировать определённые характеристики персонажа [recipient.GetShortUIName], например мускулистость или рост."
+
+ POD_debug_add_halfsplat_interaction: "Add Half-Splat"
+ POD_debug_add_halfsplat_interaction_desc: "Give [recipient.GetShortUIName] a Half-[splat|E] trait, along with the necessary initialization effects"
+
+ POD_debug_teach_spell_of_life_interaction: "Научить заклинанию Жизни"
+ POD_debug_teach_spell_of_life_interaction_desc: "Научить персонажа [recipient.GetShortUIName] заклинанию Жизни, которое позволяет создавать мумий"
+
+ POD_debug_umbra_adventure_interaction: "Прототип генерации карты Умбры"
+
+ POD_debug_become_laamp_interaction: "Стать авантюристом"
+ POD_debug_become_laamp_interaction_desc: "Отказаться от своих владений и стать безземельным авантюристом"
+ POD_debug_become_laamp_interaction_gallivanter: "Получить свойство «[GetTrait('gallivanter').GetName(GetPlayer)]» #weak (не позволяет наследовать домен)#!"

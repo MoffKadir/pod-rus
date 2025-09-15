@@ -37,19 +37,35 @@
  POD_embrace.240.option.a: "Мне нужно время, чтобы подумать."
  POD_embrace.240.option.a.tt: "Вы глубоко взволнованы разговором."
 
- willing_embrace_opinion: "Желанные Объятия"
- unwilling_embrace_opinion: "Нежеланные Объятия"
 
- POD_embrace.301.t: "Желанные Объятия"
- POD_embrace.301.desc: "Ваша вера учит, что [Concept('Embrace', 'Объятия')|E] - дело мрачное и серьёзное. В конце концов, вы обрекаете другую душу на вечное проклятие. Поэтому вас учили никогда не даровать Объятия без разрешения. Вы потратили время на то, чтобы подробно поговорить с этим новым потенциальным дитя о том, что такое вампиризм, и что это ужасное проклятие может сделать с [Select_CString(target.IsFemale, 'её', 'его' )] душой. Настало время для ответа.\nВы вздохнули с облегчением (бесполезным, поскольку вы мертвы), когда ваше будущее дитя [Select_CString(target.IsFemale, 'сказала', 'сказал' )] вам, что [target.GetSheHe] [Select_CString(target.IsFemale, 'согласна', 'согласен' )]. Вы выполнили долг своей веры, и теперь можете перейти к самим Объятиям."
- POD_embrace.301.option.a: "Приступим."
+ POD_embrace.300.t: "Добровольные объятия"
+ POD_embrace.300.desc: "Ваша вера учит, что [Concept('Embrace', 'объятия')|E] - это мрачное и серьёзное дело. В конце концов, вы обрекаете другую душу на вечное проклятие. Таким образом, вас учили никогда не даровать становление насильно. Вы и [целью.getFirstName] договорились о встрече, но теперь вы должны решить, что вы хотите раскрыть."
+ POD_embrace.300.option.a: "Рассказать [target.GetHerHim] только то, что [target.GetHerHim] нужно знать."
+ POD_embrace.300.option.b: "[target.GetSheHe|U] [Select_CString(target.IsFemale, 'должна', 'должен' )] знать достаточно, чтобы принять правильное решение."
+ POD_embrace.300.option.c: "[target.GetSheHe|U] [Select_CString(target.IsFemale, 'должна', 'должен' )] знать всё!"
+ POD_embrace.300.option.d: "Я [Select_CString(ROOT.Char.IsFemale, 'передумала', 'передумал' )]."
 
- POD_embrace.302.t: "Нежеланные Объятия"
- POD_embrace.302.desc: "Ваша вера учит, что [Concept('Embrace', 'Объятия')|E] - дело мрачное и серьёзное. В конце концов, вы обрекаете другую душу на вечное проклятие. Поэтому вас учили никогда не даровать Объятия без разрешения. Вы потратили время на то, чтобы подробно поговорить с этим новым потенциальным дитя о том, что такое вампиризм, и что это ужасное проклятие может сделать с [Select_CString(target.IsFemale, 'её', 'его' )] душой. Настало время для ответа.\nПохоже, вы слишком сильно напугали [Select_CString(target.IsFemale, 'смертную', 'смертного' )], и [Select_CString(target.IsFemale, 'её', 'его' )] ответ будет отрицательным. Теперь вы должны, по общему мнению, позволить [Select_CString(target.IsFemale, 'ей', 'ему' )] уйти и прожить остаток своей короткой жизни в мире, но... никто не соблюдает свою веру постоянно."
- POD_embrace.302.option.a: "Я не потерплю отказа!"
- unwilling_embrace_tt: "Вы насильно даруете Объятия, независимо от [Select_CString(target.IsFemale, 'её', 'его' )] мнения."
- POD_embrace.302.option.b: "Ступай с миром."
- unwilling_embrace_tt2: "[Select_CString(target.IsFemale, 'Смертная', 'Смертный' )] исчезнет и растворится в истории."
+ POD_embrace.301.t: "Добровольные объятия"
+ POD_embrace.301.desc: "Вы потратили время на то, чтобы подробно разъяснить этому новому потенциальному дитя о том, что такое вампиризм на самом деле и что это ужасное проклятие может сделать с душой. [target.GetSheHe|U] до сих пор внимательно, если не со страхом, [Select_CString(target.IsFemale, 'слушала', 'слушал' )] всё, что вы сказали. [target.GetFirstName] просит вас оставить [Select_CString(target.IsFemale, 'её одну', 'его одного' )], чтобы [Select_CString(target.IsFemale, 'она могла', 'он мог' )] обдумать это."
+ POD_embrace.301.option.a: "Произнести пару напутственных слов."
+ POD_embrace.301.option.b: "Пусть примет решение."
+
+ POD_embrace.310.t: "Добровольные объятия"
+ POD_embrace.310.desc: "Настало время, чтобы [target.GetFirstName] [Select_CString(target.IsFemale, 'дала', 'дал' )] ответ.\nВы испускаете вздох облегчения (бесполезный, поскольку вы мертвы), когда ваше будущее дитя говорит вам, что [Select_CString(target.IsFemale, 'она согласна', 'он согласен' )]. Вы выполнили обязанности своей веры и теперь можете переходить к самим [Concept('Embrace', 'объятиям')|E]."
+ POD_embrace.310.option.a: "Радостный день."
+
+ POD_embrace.340.t: "Добровольные объятия"
+ POD_embrace.340.desc: "Настало время, чтобы [target.GetFirstName] [Select_CString(target.IsFemale, 'дала', 'дал' )] ответ.\nПохоже, вы слишком сильно напугали [Select_CString(target.IsFemale, 'эту смертную, и её', 'этого смертного, и его' )] ответ отрицательный. Теперь, по общему мнению, вам следовало бы позволить [Select_CString(target.IsFemale, 'ей', 'ему' )] уйти и прожить остаток их короткой жизни в мире, но... в конце концов, никто по-настоящему не соблюдает свою веру всё время."
+ POD_embrace.340.option.a: "Ступай с миром."
+ POD_embrace.340.option.b: "Забудь обо всём."
+ POD_embrace.340.option.c: "[target.GetWomanMan] не может говорить..."
+ POD_embrace.340.option.d: "Я не потерплю отказа!"
+ unwilling_embrace_tt: "Вы насильно даруете [Concept('Embrace', 'объятия')|E], независимо от мнения."
+
+ willing_embrace_fully_accept.tooltip: "[target.GetSheHe|U] полностью [Select_CString(target.IsFemale, 'убеждена', 'убеждён' )]"
+ willing_embrace_partial_accept.tooltip: "[target.GetSheHe|U] раздумывает над этим"
+ willing_embrace_failure.tooltip: "[target.GetSheHe|U] отказывается"
+
 
  POD_embrace.400.t: "Объятия"
  POD_embrace.400.desc: "Я [Select_CString(ROOT.Char.IsFemale, 'подстроила', 'подстроил' )] события так, что [target.GetFirstName] [Select_CString(target.IsFemale, 'попала', 'попал' )] в мои лапы. Теперь мне остаётся только сломить [target.GetHerHis] волю."
@@ -75,7 +91,7 @@
  POD_embrace.420.t: "Творец монстров"
  POD_embrace.420.desc: "Через некоторое время [target.GetFirstName] открывает свои глаза. Вы видите гримасу ужаса на [target.GetHerHis] лице, и в этот момент к вам приходит ужасное осознание... Вы добились успеха, вы создали монстра, мерзость, которая теперь является вашим дитя."
  POD_embrace.420.option.a: "Наконец-то успех."
- POD_embrace.420.option.a.tt: "[target.GetFirstName] перестаёт быть перевёртышем и становится  [Concept('abomination', 'мерзостью')|E]."
+ POD_embrace.420.option.a.tt: "[target.GetFirstName] перестаёт быть перевёртышем и становится [Concept('abomination', 'мерзостью')|E]."
 
  POD_embrace.430.t: "Провалившиеся Объятия"
  POD_embrace.430.desc: "Несмотря на все ваши попытки, [target.GetFirstName] [Select_CString(target.IsFemale, 'умерла', 'умер' )]. Вы слышали только крики агонии, когда [target.GetHerHis] тело и душа яростно отвергали вашу кровь. И теперь [target.GetFirstName] действительно [Select_CString(target.IsFemale, 'умерла', 'умер' )]. Может быть, [target.GetHerHim] всё-таки повезло?"
@@ -172,7 +188,7 @@
  POD_embrace_ongoing.1030.diplomacy_bonus.desc: "Вы обнаружили, что с кем бы [target.GetSheHe] ни [Select_CString(target.IsFemale, 'встречалась', 'встречался' )], [target.GetSheHe] умеет поддержать светскую беседу, чтобы сделать собеседника уступчивым и податливым. Талант, который только усилится после Объятий."
  POD_embrace_ongoing.1030.martial_bonus.desc: "[target.GetFirstName] - прирождённый лидер. Вы обнаружили, что другие тяготеют к [Select_CString(target.IsFemale, 'ней', 'нему' )] и легко подчиняются [Select_CString(target.IsFemale, 'ей', 'ему' )]."
  POD_embrace_ongoing.1030.stewardship_bonus.desc: "Несмотря на трудности, [Select_CString(target.IsFemale, 'ей', 'ему' )] удаётся поддерживать свои финансы в порядке. [target.GetFirstName] легко освоит деловую сторону жизни."
- POD_embrace_ongoing.1030.intrigue_bonus.desc: "[target.GetSheHe|U] [Select_CString(target.IsFemale, 'поняла', 'понял' )], что коварство - полезный инструмент для выживания в человеческих отношениях.  Это вдвойне верно в мире нежити."
+ POD_embrace_ongoing.1030.intrigue_bonus.desc: "[target.GetSheHe|U] [Select_CString(target.IsFemale, 'поняла', 'понял' )], что коварство - полезный инструмент для выживания в человеческих отношениях. Это вдвойне верно в мире нежити."
  POD_embrace_ongoing.1030.learning_bonus.desc: "Немногие по-настоящему учатся понимать, что «Знание - сила». Однако [target.GetFirstName] [Select_CString(target.IsFemale, 'начала', 'начал' )] этот путь со склонности к чтению."
  POD_embrace_ongoing.1030.option.a: "Хорошее начало."
 

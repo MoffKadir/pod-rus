@@ -1,45 +1,45 @@
-﻿l_english:
- POD_divine_potential_interaction: "Divine Potential"
- POD_divine_potential_interaction_desc: "Increase your [skills|E] beyond mortal limits"
+﻿l_russian:
+ POD_divine_potential_interaction: "Божественный потенциал"
+ POD_divine_potential_interaction_desc: "Увеличить свои [Concept('skills', 'навыки')|E] за пределы возможностей смертных"
 
- POD_ravage_interaction: "Ravage"
- POD_ravage_interaction_desc: "Restore your Resolve by consuming one of your Thralls"
+ POD_ravage_interaction: "Опустошить"
+ POD_ravage_interaction_desc: "Восстановить свою решимость, поглотив одного из своих рабов"
 
- POD_revelations_interaction: "Revelations"
- POD_revelations_interaction_desc: "Restore your Resolve by revealing your true form to mortals"
+ POD_revelations_interaction: "Откровение"
+ POD_revelations_interaction_desc: "Восстановить свою решимость, открыв смертным свой истинный облик"
 
- POD_twist_of_fate_interaction: "Twist of Fate"
- POD_twist_of_fate_interaction_desc: "Turn [arcana_lifestyle|E] perk points into resources via a stroke of luck"
+ POD_twist_of_fate_interaction: "Поворот судьбы"
+ POD_twist_of_fate_interaction_desc: "Превратить очки достоинств [Concept('arcana_lifestyle', 'пути Арканы')|E] в ресурсы благодаря удаче"
 
- POD_read_the_heart_interaction: "Tempt to Sin"
- POD_read_the_heart_interaction_desc: "Start a [journey|E] to tempt [recipient.GetShortUIName] to sin. If [recipient.GetSheHe] already has the [trait|E] corresponding to your sin, [recipient.GetSheHe] will instead convert to your [faith|E]"
- POD_read_the_heart_interaction_tt: "The [journey|E] will have a [planning_speed|E] based on the target's opinion of you, your [diplomacy|E], [intrigue|E] and [perks|E]."
+ POD_read_the_heart_interaction: "Склонить к греху"
+ POD_read_the_heart_interaction_desc: "Начать [Concept('journey', 'странствие')|E], чтобы склонить персонажа [recipient.GetShortUIName] к греху. Если [recipient.GetSheHe] уже имеет [Concept('trait', 'свойство')|E], соответствующее вашему греху, [recipient.GetSheHe] вместо этого обратится вашу [Concept('faith', 'конфессию')|E]"
+ POD_read_the_heart_interaction_tt: "[Concept('planning_speed', 'Скорость планирования')|E] [Concept('journey', 'странствия')|E] будет основана на мнении цели о вас, ваших навыках [Concept('diplomacy', 'дипломатии')|E], [Concept('intrigue', 'интриг')|E] и [Concept('perks', 'достоинствах')|E]."
 
- POD_contagion_mastery_interaction: "Contagion Mastery"
- POD_contagion_mastery_interaction_desc: "Infect [recipient.GetShortUIName] with an illness"
+ POD_contagion_mastery_interaction: "Мастерство заражения"
+ POD_contagion_mastery_interaction_desc: "Заразить персонажа [recipient.GetShortUIName] хворью"
 
- POD_healing_touch_interaction: "Исцеляющее касание"
- POD_healing_touch_interaction_desc: "Использовать силу Арканы, чтобы залечить раны [recipient.GetFirstName]."
- POD_healing_touch_interaction_no_damage: "There is nothing to heal!"
+ POD_healing_touch_interaction: "Целительное прикосновение"
+ POD_healing_touch_interaction_desc: "Излечить один из недугов персонажа [recipient.GetFirstName]."
+ POD_healing_touch_interaction_no_damage: "У этого персонажа нечего лечить!"
 
- POD_read_the_mind_interaction: "Read the Mind"
- POD_read_the_mind_interaction_desc: "Reveal the secrets and schemes of [recipient.GetShortUIName]"
+ POD_read_the_mind_interaction: "Прочитать мыслы"
+ POD_read_the_mind_interaction_desc: "Раскрыть секреты и происки персонажа [recipient.GetShortUIName]"
 
- POD_reshape_flesh_interaction: "Reshape Flesh"
- POD_reshape_flesh_interaction_desc: "Change the physical [traits|E] of [recipient.GetShortUIName]"
+ POD_reshape_flesh_interaction: "Перекроить плоть"
+ POD_reshape_flesh_interaction_desc: "Изменить физические [Concept('traits', 'свойства')|E] персонажа [recipient.GetShortUIName]"
 
- POD_command_the_ethereal_soul_interaction: "Command the Eternal Soul"
- POD_command_the_ethereal_soul_interaction_desc: "Compel [recipient.GetShortUIName] into submission"
+ POD_command_the_ethereal_soul_interaction: "Приказать бесплотной душе"
+ POD_command_the_ethereal_soul_interaction_desc: "Заставить персонажа [recipient.GetShortUIName] подчиниться"
 
- POD_portal_mastery_interaction: "Portal Mastery"
- POD_portal_mastery_interaction_desc: "Teleport to [recipient.GetShortUINamePossessive] location, or your next destination when [traveling|E]"
+ POD_portal_mastery_interaction: "Мастерство порталов"
+ POD_portal_mastery_interaction_desc: "Телепортироваться в локацию персонажа [recipient.GetFirstNamePossessive] или в ваш следующий пункт назначения [Concept('traveling', 'путешествия')|E]."
 
- POD_raise_the_dead_interaction: "Raise the Dead"
- POD_raise_the_dead_interaction_desc: "Turn [recipient.GetShortUIName] into a [GetTrait('risen').GetName(recipient)]"
+ POD_raise_the_dead_interaction: "Воскресить мертвеца"
+ POD_raise_the_dead_interaction_desc: "Превратить персонажа [recipient.GetShortUIName] в #TOOLTIP:GAME_TRAIT,risen,[GetName(recipient)] #L восставшего#!#!"
 
- POD_beyond_now_interaction: "Beyond Now"
- POD_beyond_now_interaction_desc: "Violate the laws of the cosmos and watch the time-stream as an outside observer for a short while"
+ POD_beyond_now_interaction: "За пределами настоящего"
+ POD_beyond_now_interaction_desc: "Нарушить законы космоса и понаблюдать за потоком времени в качестве стороннего наблюдателя на короткое время"
 
- POD_arcana_shapeshift_interaction: "Изменение формы"
- POD_arcana_shapeshift_interaction_desc: "Используйте свою Аркану, чтобы изменить свою форму."
- POD_shapeshift_interaction_purchase_arsenal_of_the_beast: "Приобрести Оружие зверя"
+ POD_arcana_shapeshift_interaction: "Изменить форму"
+ POD_arcana_shapeshift_interaction_desc: "Использовать свою решимость, чтобы изменить форму"
+ POD_shapeshift_interaction_purchase_arsenal_of_the_beast: "Получить оружие Зверя"

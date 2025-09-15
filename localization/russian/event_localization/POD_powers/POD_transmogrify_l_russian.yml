@@ -1,5 +1,5 @@
 ﻿l_russian:
-  
+
  POD_transmogrify.100.t: "Трансмогрификация"
  POD_transmogrify.100.desc: "Используя [Concept('discipline', 'Дисциплину')|E] изменчивости, я могу трансформировать испытуемого в красавицу или чудовище. [transmogrifiee.GetHerHis] плоть - моя глина, и я скульптор сухожилий, костей и крови. Есть шанс, что [transmogrifiee.GetFirstName] не переживет процедуру."
  POD_transmogrify.100.option.a: "Изменить [transmogrifiee.GetHerHis] лицо"
@@ -8,7 +8,9 @@
  POD_transmogrify.100.option.d: "Модифицировать [transmogrifiee.GetHerHis] органы чувств"
  POD_transmogrify.100.option.f: "Сделать [transmogrifiee.GetHerHim] на вид младше или старше"
  POD_transmogrify.100.option.e: "Не делать ничего"
+
  POD_transmogrify.experiment.desc: "Для определения успеха вам выпадет проверка на Ученость"
+
  POD_transmogrify.200.t: "Трансмогрификация: Податливый Облик"
  POD_transmogrify.200.desc: "Как мне следует изменить облик [transmogrifiee.GetFirstName]? Есть шанс, что [transmogrifiee.GetFirstName] не переживет процедуру."
  POD_transmogrify.200.option.k: "Проявить фантазию с Изменчивостью"
@@ -23,6 +25,7 @@
  POD_transmogrify.200.option.h: "Нанести чешую на [transmogrifiee.GetHerHis] кожу"
  POD_transmogrify.200.option.i: "Сделать так, чтобы жертва походила на меня"
  POD_transmogrify.200.option.j: "Не делать ничего"
+
  POD_transmogrify.300.t: "Трансмогрификация Смертной Глины"
  POD_transmogrify.300.desc: "Как мне следует изменить [transmogrifiee.GetHerHis] облик? Есть шанс, что [transmogrifiee.GetFirstName] не переживет процедуру."
  POD_transmogrify.300.option.a: "Трансформировать [transmogrifiee.GetHerHim] в гиганта"
@@ -39,6 +42,7 @@
  POD_transmogrify.300.option.l: "Удалить [transmogrifiee.GetHerHis] гениталии"
  #POD_transmogrify.300.option.m: "Profane Hieros Gamos"
  POD_transmogrify.300.option.n: "Не делать ничего"
+
  POD_transmogrify.350.t: "Трансмогрификация Чувств"
  POD_transmogrify.350.desc: "Как мне следует изменить органы чувств [transmogrifiee.GetFirstName]? Есть шанс, что [transmogrifiee.GetSheHe] не переживет процедуру."
  POD_transmogrify.350.option.a: "Дать [transmogrifiee.GetHerHim] новые глаза"
@@ -50,6 +54,7 @@
  POD_transmogrify.350.option.g: "Усилить нюх"
  POD_transmogrify.350.option.h: "Обычный нос"
  POD_transmogrify.350.option.i: "Не делать ничего"
+
  POD_transmogrify.400.t: "Трансмогрификация: Разрыв Костного каркаса"
  POD_transmogrify.400.desc: "Как мне следует изменить облик [transmogrifiee.GetFirstName]? Есть шанс, что [transmogrifiee.GetFirstName] не переживет процедуру."
  POD_transmogrify.400.option.a: "Наделить [transmogrifiee.GetHerHim] острыми когтями и зубами"
@@ -59,44 +64,54 @@
  POD_transmogrify.400.option.e: "Убрать броню из костей"
  POD_transmogrify.400.option.f: "Убрать рога"
  POD_transmogrify.400.option.g: "Не делать ничего"
+
  POD_transmogrify.greatsuccess: "Эксперимент увенчался большим успехом"
  POD_transmogrify.moderatesuccess: "Эксперимент увенчался умеренным успехом"
  POD_transmogrify.smallsuccess: "Эксперимент увенчался небольшим успехом"
  POD_transmogrify.failure: "Эксперимент провалился"
+
  POD_transmogrify.500.t: "Трансмогрификация"
  POD_transmogrify.500.desc: "[transmogrifiee.GetFirstName] подвергается трансформации."
  POD_transmogrify.500.option.a: "Продолжить эксперименты."
  POD_transmogrify.500.option.b: "Пока что достаточно."
+
  POD_transmogrify.600.t: "Трансмогрификация"
  POD_transmogrify.600.desc: "[transmogrifiee.GetFirstName] не удалось пережить метаморфозу."
  POD_transmogrify.600.option.a: "Таковы риски изменений для смертных"
+
  POD_transmogrify.700.t: "Избавляя "материал" от влияния времени"
  POD_transmogrify.700.desc: "Следует ли мне заставить жертву выглядеть моложе или старше?"
  POD_transmogrify.700.option.a: "Старше"
  POD_transmogrify.700.option.b: "Моложе"
  POD_transmogrify.700.option.c: "Не делать ничего"
- POD_transmogrify.701.desc: "Should I make [recipient.GetFirstName] look younger or older?" #NT!
- POD_transmogrify.701.widget: "Visual Age: [Character.MakeScope.ScriptValue('POD_effective_age')]" #NT!
+ POD_transmogrify.701.desc: "Сделать ли так, чтобы [recipient.GetFirstName] выглядел[Select_CString(recipient.IsFemale, 'а', '')] моложе или старше?"
+ POD_transmogrify.701.widget: "Визуальный возраст: [Character.MakeScope.ScriptValue('POD_effective_age')]"
+
  POD_transmorgify_ghoul.greatsuccess: "Эксперимент увенчался большим успехом."
- POD_transmogrify.1001.t: "Learning Anatomy: New anatomy learned"
- POD_transmogrify.1001.desc: "You have successfully learned the anatomy concerning [this_trait.GetName( GetPlayer.Self )], now you can use it for will over form."
- POD_transmogrify.1001.a: "I will continue studying."
- POD_transmogrify.1001.a.tt: "You will repeat the learn anatomy process next year."
- POD_transmogrify.1001.b: "I need a rest now."
- POD_transmogrify.1001.b.tt: "You won't repeat the learn anatomy process next year."
- POD_transmogrify.1002.t: "Learning Anatomy: Nothing left to Discover"
- POD_transmogrify.1002.desc: "You have learned all the anatomy that you could ever use."
- POD_transmogrify.1002.a: "I need a rest now."
- POD_transmogrify.1003.t: "Knowledge at any Price"
- POD_transmogrify.1003.desc: "Which [trait|E] do you want to study?"
- POD_transmogrify.1003.a: "I've made my choice."
- POD_transmogrify.1003.a.trigger: "You need to select a trait first"
- POD_transmogrify.1003.b: "I changed my mind. No experiments today."
- POD_transmogrify.1004.t: "[GetPlayer.MakeScope.Var('current_journey').Var('target_trait').Trait.GetName(GetPlayer)] Anatomy"
- POD_transmogrify.1004.desc: "It's been a while since I last practiced my craft in the dungeon, but my previous experiences have stayed with me.\n\nAfter some contemplation and study, I now understand how to apply my findings."
- POD_transmogrify.1004.a: "Now who wants to be my next test subject?"
- POD_transmogrify.1004.a.tt: "You gained an understanding of the [GetPlayer.MakeScope.Var('current_journey').Var('target_trait').Trait.GetName(GetPlayer)] [trait|E], which lets you use it in the Will over Form [character_interaction|E]."
- POD_transmogrify.1005.t: "Learning Anatomy: Failure!"
- POD_transmogrify.1005.desc: "You have failed to learn any additional knowledge useful for Will over Form."
- POD_transmogrify.1005.a: "Better luck next time"
- POD_transmogrify.1005.a.tt: "I need to improve my methods next time."
+
+ POD_transmogrify.1001.t: "Изучение анатомии: Открыта новая анатомия"
+ POD_transmogrify.1001.desc: "Вы успешно изучили анатомию, связанную с чертой [this_trait.GetName( GetPlayer.Self )], теперь вы можете использовать это знание для [Concept('will_over_form', 'господства воли над формой')|E]."
+ POD_transmogrify.1001.a: "Я продолжу обучение."
+ POD_transmogrify.1001.a.tt: "Вы повторите процесс изучения анатомии в следующем году."
+ POD_transmogrify.1001.b: "Сейчас мне нужен отдых."
+ POD_transmogrify.1001.b.tt: "Вы не будете повторять процесс изучения анатомии в следующем году."
+
+ POD_transmogrify.1002.t: "Изучение анатомии: Больше нечего открывать"
+ POD_transmogrify.1002.desc: "Вы изучили всю анатомию, которую только могли использовать."
+ POD_transmogrify.1002.a: "Сейчас мне нужен отдых."
+
+ POD_transmogrify.1003.t: "Знание любой ценой"
+ POD_transmogrify.1003.desc: "Какую [Concept('trait', 'черту')|E] вы хотите изучить?"
+ POD_transmogrify.1003.a: "Я сделал[Select_CString(ROOT.Char.IsFemale, 'а', '')] свой выбор."
+ POD_transmogrify.1003.a.trigger: "Сначала необходимо выбрать черту"
+ POD_transmogrify.1003.b: "Я передумал[Select_CString(ROOT.Char.IsFemale, 'а', '')]. Сегодня никаких экспериментов."
+
+ POD_transmogrify.1004.t: "Анатомия: [GetPlayer.MakeScope.Var('current_journey').Var('target_trait').Trait.GetName(GetPlayer)]"
+ POD_transmogrify.1004.desc: "Прошло уже некоторое время с тех пор, как вы в последний раз практиковались в подземелье, но прошлые опыты остались с вами.\n\nПосле размышлений и обучения вы теперь понимаете, как применить полученные знания."
+ POD_transmogrify.1004.a: "Кто станет моей следующей подопытной персоной?"
+ POD_transmogrify.1004.a.tt: "Вы получили понимание черты [GetPlayer.MakeScope.Var('current_journey').Var('target_trait').Trait.GetName(GetPlayer)] [Concept('trait', 'черты')|E], что позволяет использовать её во взаимодействии [Concept('will_over_form', 'Воля над формой')|E]."
+
+ POD_transmogrify.1005.t: "Изучение анатомии: Неудача!"
+ POD_transmogrify.1005.desc: "Вам не удалось получить дополнительные знания, полезные для [Concept('will_over_form', 'Воли над формой')|E]."
+ POD_transmogrify.1005.a: "Повезёт в следующий раз"
+ POD_transmogrify.1005.a.tt: "В следующий раз мне нужно будет улучшить свои методы."

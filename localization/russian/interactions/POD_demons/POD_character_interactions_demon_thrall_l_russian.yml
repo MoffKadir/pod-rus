@@ -1,27 +1,31 @@
 ﻿l_russian:
+ POD_demonic_submission_interaction: "Власть за троном"
+ POD_demonic_submission_interaction_desc: "Передать свой основной титул персонажу [recipient.GetFirstName] и присягнуть [recipient.GetHerHim] на верность."
+
  POD_set_thrall_interaction: "Поработить"
- POD_set_thrall_interaction_desc: "Поработить персонажа [recipient.GetFirstName], сделав [Concept('thrall', 'рабом')|E] у вас на службе."
+ POD_set_thrall_interaction_desc: "Поработить персонажа [recipient.GetFirstName], сделав [recipient.GetHerHis] [Concept('thrall', Select_CString(recipient.IsFemale, 'рабыней', 'рабом' ))|E] у вас на службе."
  POD_set_thrall_interaction_extra_icon: "$hook_extra_icon$"
 
  POD_remove_thrall_interaction: "Отменить договор"
  POD_remove_thrall_interaction_desc: "Отменить договор, освободив персонажа [recipient.GetFirstName] от [Concept('thrall', 'рабства')|E]."
- POD_enthrall_interaction_limit: "Thrall size is capped! (3 plus 1 per [intrigue_i]#V 8#! [intrigue|E] plus any bonuses from other sources)"
- 
+ POD_enthrall_interaction_limit: "Количество рабов ограничено! (3 плюс 1 за каждые [intrigue_i]#V 8#! навыков [Concept('intrigue', 'интриг')|E] и любые бонусы из других источников)"
+
  POD_set_cultist_interaction: "Признать культиста"
- POD_set_cultist_interaction_desc: "Признайте [recipient.GetFirstName] В качестве вашего культиста."
+ POD_set_cultist_interaction_desc: "Признать персонажа [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'своей культисткой', 'своим культистом' )]."
  POD_set_cultist_interaction_extra_icon: "$hook_extra_icon$"
- POD_set_cultist_vassal_requirement: "Needs to be your [courtier|E], your [direct_vassal|E], or the [direct_vassal|E] of your [thrall|E]"
+ POD_set_cultist_vassal_requirement: "Персонаж должен быть вашим [Concept('courtier', 'придворным')|E], [Concept('direct_vassal', 'прямым вассалом')|E] или [Concept('direct_vassal', 'прямым вассалом')|E] вашего [Concept('thrall', 'раба')|E]"
+ POD_set_cultist_interaction_effect: "[GetCourtPositionType('cult_leader_court_position').GetName()] приобщил нового [Concept('cultist', 'культиста')|E] в ваш культ!"
 
  POD_remove_cultist_interaction: "Отвергнуть культиста"
- POD_remove_cultist_interaction_desc: "Отвергните почитание [recipient.GetFirstNamePossessive], отверните [recipient.GetHerHis] как вашего культиста."
+ POD_remove_cultist_interaction_desc: "Отвергнуть почитание со стороны персонажа [recipient.GetFirstNamePossessive], перестав считать [recipient.GetHerHis] [Select_CString(recipient.IsFemale, 'своей', 'своим' )] [Concept('cultist', Select_CString(recipient.IsFemale, 'культисткой', 'культистом' ))|E]."
 
  POD_summon_demon_interaction: "Призвать демона"
- POD_summon_demon_interaction_desc: "Вселить [GetTrait('demon').GetName( GetPlayer )] в [recipient.GetFirstName]."
+ POD_summon_demon_interaction_desc: "Вселить #TOOLTIP:GAME_TRAIT,demon,[GetPlayer] #L демона#!#! в персонажа [recipient.GetFirstName]."
 
- SAME_FAITH: "Ты принадлежишь к той же вере：$VALUE|+0$"
+ SAME_FAITH: "Вы исповедуете ту же конфессию: $VALUE|+0$"
 
- POD_command_thrall_gold_interaction: "Приказ [Concept( 'thrall', 'рабу' )|E] #Weak (золото)#!"
- POD_command_thrall_gold_interaction_desc: "Предложить дар силы, чтобы заставить [recipient.GetFirstName] заплатить тебе золото."
+ POD_command_thrall_gold_interaction: "Приказать [Concept('thrall', 'рабу')|E] #Weak (золото)#!"
+ POD_command_thrall_gold_interaction_desc: "Предложить дар силы, чтобы заставить персонажа [recipient.GetFirstName] заплатить вам золото."
  POD_command_thrall_gold_interaction_option_minor_gold: "Немного золота"
  POD_command_thrall_gold_interaction_option_medium_gold: "Среднее количество золота"
  POD_command_thrall_gold_interaction_option_major_gold: "Большое количество золота"
@@ -30,20 +34,20 @@
  POD_command_thrall_gold_interaction_option_excessive_gold: "Избыточное количество золота"
  POD_command_thrall_gold_interaction_option_omega_gold: "Невероятное количество золота"
 
- POD_command_thrall_artifact_interaction: "Приказ [Concept( 'thrall', 'рабу' )|E] #Weak (артефакт)#!"
- POD_command_thrall_artifact_interaction_desc: "Предложить дар силы, чтобы заставить [recipient.GetFirstName] подарить тебе артефакт."
+ POD_command_thrall_artifact_interaction: "Приказать [Concept('thrall', 'рабу')|E] #Weak (артефакт)#!"
+ POD_command_thrall_artifact_interaction_desc: "Предложить дар силы, чтобы заставить персонажа [recipient.GetFirstName] подарить вам артефакт."
 
- POD_command_thrall_title_interaction: "Приказ [Concept( 'thrall', 'рабу' )|E] #Weak (владение)#!"
- POD_command_thrall_title_interaction_desc: "Предложить дар силы, чтобы заставить [recipient.GetFirstName] владение (но не основное) тебе."
+ POD_command_thrall_title_interaction: "Приказать [Concept('thrall', 'рабу')|E] #Weak (титул)#!"
+ POD_command_thrall_title_interaction_desc: "Предложить дар силы, чтобы заставить персонажа [recipient.GetFirstName] передать вам титул (кроме основного)."
 
- POD_command_thrall_vassal_interaction: "Приказ [Concept( 'thrall', 'рабу' )|E] #Weak (вассал)#!"
- POD_command_thrall_vassal_interaction_desc: "Предложить дар силы, чтобы заставить [recipient.GetFirstName] передать тебе вассала."
+ POD_command_thrall_vassal_interaction: "Приказать [Concept('thrall', 'рабу')|E] #Weak (вассал)#!"
+ POD_command_thrall_vassal_interaction_desc: "Предложить дар силы, чтобы заставить персонажа [recipient.GetFirstName] передать вам вассала."
  recipient_secondary_POD_command_thrall_vassal_interaction: "Вассал"
 
- POD_command_thrall_war_interaction: "Приказ [Concept( 'thrall', 'рабу' )|E] #Weak (война)#!"
- POD_command_thrall_war_interaction_desc: "Предложить дар силы, чтобы заставить [recipient.GetFirstName] начать войну против соседнего правителя."
+ POD_command_thrall_war_interaction: "Приказать [Concept('thrall', 'рабу')|E] #Weak (война)#!"
+ POD_command_thrall_war_interaction_desc: "Предложить дар силы, чтобы заставить персонажа [recipient.GetFirstName] начать войну против соседнего правителя."
  recipient_secondary_POD_command_thrall_war_interaction: "Цель войны"
 
- demon_demand_tt: "You may receive a demand from your demon master at the start of the year. An unfinished demand will give you stress every #V 3#! months."
- POD_demon_demand_unfinished: "Unfinished demand"
- POD_demon_demand_unfinished.tt: "You gain stress due to an unfinished demand of your demon master."
+ demon_demand_tt: "В начале года вы можете получить требование от своего демонического хозяина. Невыполненное требование будет вызывать у вас стресс каждые #V 3#! месяца."
+ POD_demon_demand_unfinished: "Невыполненное требование"
+ POD_demon_demand_unfinished.tt: "Вы получили стресс из-за невыполненного требования вашего демонического хозяина."

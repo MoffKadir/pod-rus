@@ -72,10 +72,10 @@
  POD_epidemic.1302.t: "[SCOPE.Custom('EventTitleDisease')]: бегство от смерти"
  POD_epidemic.1302.desc: "Хотя шрамы могут оставаться как на моей коже, так и в моем сознании, кажется, что болезнь покинула мое тело. Я выживу. Время еще есть."
  POD_epidemic.1302.a: "Славься, [ROOT.Char.GetFaith.HealthGodName]! Я [Select_CString(ROOT.Char.IsFemale, 'здорова', 'здоров' )]!"
- POD_epidemic.1302.a.tt: "Теперь я [Select_CString(ROOT.Char.IsFemale, 'невосприимчива', 'невосприимчив' )] к такой хвори, как  [GetTrait('gift_of_melancholia').GetName( GetNullCharacter )]"
+ POD_epidemic.1302.a.tt: "Теперь я [Select_CString(ROOT.Char.IsFemale, 'невосприимчива', 'невосприимчив' )] к такой хвори, как [GetTrait('gift_of_melancholia').GetName( GetNullCharacter )]"
 
- epidemic_flaying_plague: "Чума свежевателя"
- disease_flaying_plague: "чумой свежевателя."
+ epidemic_flaying_plague: "Свежующая чума"
+ disease_flaying_plague: "свежующей чумой."
  health.2101.flaying_plague_outbreak.desc: "Не со всеми врагами гару можно сражаться клыками и когтями. Зимой 1229 года оборотни в Литве стали жертвами лихорадки. Сначала она казалась странным побочным эффектом чахотки, потом появились нарывы, затем кожа стала мучительно отваливаться от костей. Все гару в регионе погибли, и хворь начала распространяться на запад. Сотни гару и родни погибли, а теурги, похоже, едва смогли её сдержать.\n\n И вот теперь она пришла, чтобы взять своё в вашей державе."
  health.2101.flaying_plague_spreads.desc: "Мы должны найти причину!"
 

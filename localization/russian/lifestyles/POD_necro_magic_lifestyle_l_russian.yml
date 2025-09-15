@@ -3,7 +3,7 @@
  necro_magic_lifestyle_desc: "Фокус на силах, которые используют магию, присущую витэ, чтобы контролировать смерть"
  monthly_necro_magic_lifestyle_xp_gain_mult: "Ежемесячный прирост опыта на [Concept('lifestyle', 'пути')|E] некромантии"
 
- necro_magic_focus: "Некромантия"
+ necro_magic_focus: "Некромагия"
  necro_magic_focus_modifier: "[GetFocus('necro_magic_focus').GetName]"
  necro_magic_focus_desc: "Магия некромантии."
  necro_magic_focus_effect_desc: "Сосредоточившись на некромантии, персонаж получает:"
@@ -12,7 +12,7 @@
  necro_magic_ash_path_visible: "Путь праха"
  necro_magic_bone_path_visible: "Путь кости"
  necro_magic_cenotaph_path_visible: "Путь кенотафа"
- necro_magic_corpse_in_the_monster_visible: "Путь превращения труп в чудовище"
+ necro_magic_corpse_in_the_monster_visible: "Путь превращения трупа в чудовище"
  necro_magic_graves_decay_visible: "Путь могильного гниения"
  necro_magic_vitreous_path_visible: "Стекловидный путь"
  necro_magic_path_of_the_twilight_garden_visible: "Путь Сумеречного сада"
@@ -32,10 +32,10 @@
  ns_sepulchre_path_rituals_perk_name: "$necro_magic_sepulchre_path_visible$: #L $pod_bs_rituals$ы#!"
 
  NS_PEERING_ACROSS_THE_SHROUD_PERK_EFFECT: "Если кто-то из ваших родственников или друзей будет убит при загадочных обстоятельствах, вы узнаете личность убийцы.\n#flavor Мёртвые ходят среди нас невидимые и неслышимые. Чтобы повелевать ими, некромант должен уметь их воспринимать.#!"
- NS_SUMMON_SOUL_PERK_EFFECT: "Открывает взаимодействие «[summon_wraith_on_death_interaction|E]»\n#flavor Призыв души позволяет некроманту призвать призрака из [UmbraGlossaryLocalized('shadowlands','Загробного мира')].#!"
- NS_COMPEL_SOUL_PERK_EFFECT: "Открывает взаимодействие «[bind_wraith_interaction|E]».\nМаксимальное количество связанных призраков: #P +3#!.\n#flavor Используя эту способность, вампир может на короткое время подчинить призрака своей воле. Эта способность требует огромной уверенности в себе, так как провал в решимости может привести к катастрофическим последствиям для некроманта.#!"
- NS_HAUNTING_PERK_EFFECT: "Используя это #L $pod_bs_spell|l$ие#!, вы можете наслать на текущую локацию цели модификатор [GetModifier('spell_haunting_modifier').GetNameWithTooltip] на 5 лет\nУпрощает связывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E] «Связать призрака».\n#flavor Некромант использует силу своей крови, чтобы привязать призрака к предмету или месту.#!"
- NS_TORMENT_PERK_EFFECT: "Вы можете пленить, пытать, казнить или наносить физические повреждения духам во время [Concept('single_combat_duel_plural', 'поединков')|E].\n#flavor Используя муки, некромант может нанести удар по бесплотному телу призрака, как если бы он сам был призраком.#!"
+ NS_SUMMON_SOUL_PERK_EFFECT: "$POD_can_summon_on_death_trigger_loca$\n#flavor Призыв души позволяет некроманту призвать призрака из [UmbraGlossaryLocalized('shadowlands','Загробного мира')].#!"
+ NS_COMPEL_SOUL_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n#flavor Используя эту способность, вампир может на короткое время подчинить призрака своей воле. Эта способность требует огромной уверенности в себе, так как провал в решимости может привести к катастрофическим последствиям для некроманта.#!"
+ NS_HAUNTING_PERK_EFFECT: "Используя это #L $pod_bs_spell|l$ие#!, вы можете наслать на текущую локацию цели модификатор [GetModifier('spell_haunting_modifier').GetNameWithTooltip] на 5 лет\n#flavor Некромант использует силу своей крови, чтобы привязать призрака к предмету или месту.#!"
+ NS_TORMENT_PERK_EFFECT: "#flavor Используя муки, некромант может нанести удар по бесплотному телу призрака, как если бы он сам был призраком.#!"
 
  NS_SEPULCHRE_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
 
@@ -47,10 +47,10 @@
 
  ns_ash_path_rituals_perk_name: "$necro_magic_ash_path_visible$: #L $pod_bs_rituals$ы#!"
 
- NS_SHROUDSIGHT_PERK_EFFECT: "Разблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E] «Найти призрака».\n#flavor Взгляд за покров позволяет вампира заглянуть прямо в [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
- NS_TONGUE_OF_THE_DARK_KINGDOMS_PERK_EFFECT: "Разблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E] «[command_wraith_interaction|E]».\nУпрощает связывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E] «Связать призрака».\n#flavor Говоря на языке [Concept('dark_kingdoms', 'Тёмных королевств')|E], некромант может общаться с призраками в [UmbraGlossaryLocalized('shadowlands','Загробном мире')].#!"
+ NS_SHROUDSIGHT_PERK_EFFECT: "$POD_can_summon_wraith_trigger_loca$\n#flavor Взгляд за покров позволяет вампира заглянуть прямо в [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
+ NS_TONGUE_OF_THE_DARK_KINGDOMS_PERK_EFFECT: "$POD_can_command_wraith_trigger_loca$#flavor Говоря на языке [Concept('dark_kingdoms', 'Тёмных королевств')|E], некромант может общаться с призраками в [UmbraGlossaryLocalized('shadowlands','Загробном мире')].#!"
  NS_TOUCH_OF_THE_NETHER_PERK_EFFECT: "Позволяет вам взаимодействовать с существами [Concept('umbra', 'Умбры')|E], когда вы находитесь в материальном мире.\n#flavor Взывая к Прикосновению к пустоте, некромант может находиться по обе стороны Барьера; он физически проявляется в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], оставаясь телесным в землях живых.#!"
- NS_EX_NIHILO_PERK_EFFECT: "Даёт доступ к [UmbraGlossaryLocalized('shadowlands','Загробному миру')] во время духовных путешествий.\n#flavor Ex Nihilo позволяет некроманту физически войти в [UmbraGlossaryLocalized('shadowlands','Загробный мир')]. Находясь в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], он появляется в виде очень плотного призрака.#!"
+ NS_EX_NIHILO_PERK_EFFECT: "#flavor Ex Nihilo позволяет некроманту физически войти в [UmbraGlossaryLocalized('shadowlands','Загробный мир')]. Находясь в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], он появляется в виде очень плотного призрака.#!"
  NS_SHROUD_MASTERY_PERK_EFFECT: "Разблокирует опцию «Манипулировать Барьером» в [Concept('umbra', 'Умбре')|E].\n#flavor С помощью этой способности некромант может значительно помочь или помешать призракам существовать в мире живых.#!"
 
  NS_ASH_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
@@ -66,7 +66,7 @@
  NS_SEAL_OF_ABAMIXTRA_PERK_EFFECT: "Применив это #L $pod_bs_spell|l$ие#!, вы можете призвать небольшую армию профессионалов ([GetMaA('shambler').GetName]) во время войны.\n#flavor Призвав Печать Абамикстры, некромант может поднять труп или группу трупов для выполнения простой задачи.#!"
  NS_AWAKEN_THE_HOMUNCULAR_SERVANT_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! [GetPerk('ns_seal_of_abamixtra_perk').GetName(GetPlayer)], повысив количество созданных профессионалов ([GetMaA('shambler').GetName]).\n#flavor С помощью этой способности некромант может взять небольшой кусочек трупа и превратить его в гротескное подобие фамильяра.#!"
  NS_SHAMBLING_HORDES_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! [GetPerk('ns_seal_of_abamixtra_perk').GetName(GetPlayer)] повысив количество созданных профессионалов ([GetMaA('shambler').GetName]).\n#flavor Используя эту способность, некромант может создать группу ходячих мертвецов, чтобы атаковать своих врагов.#!"
- NS_BALEFUL_EXORCISM_PERK_EFFECT: "Разблокирует [Concept('executions', 'вариант казни')|E] $EXECUTION_CONVERT_TO_WRAITH$.\n#flavor Одним словом и сильным жестом некромант может изгнать душу смертного из его собственного тела.#!"
+ NS_BALEFUL_EXORCISM_PERK_EFFECT: "$POD_can_covert_to_wraith_trigger_loca$\n#flavor Одним словом и сильным жестом некромант может изгнать душу смертного из его собственного тела.#!"
  NS_DAEMONIC_POSSESSION_PERK_EFFECT: "Применив это #L $pod_bs_spell|l$ие#!, можно обратить связанного #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! в [GetTrait('zombu').GetName(GetNullCharacter)|l].\n#flavor Дьявольская одержимость позволяет некроманту вселять душу в свежий труп.#!"
 
  NS_BONE_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
@@ -80,8 +80,8 @@
  ns_cenotaph_path_rituals_perk_name: "$necro_magic_cenotaph_path_visible$: #L $pod_bs_rituals$ы#!"
 
  NS_A_TOUCH_OF_DEATH_PERK_EFFECT: "#flavor Некромант настраивается на остаточную энергию, оставшуюся после прохождения или прикосновения призрака, что позволяет ему определить, был ли предмет, человек или область затронуты или подверглись влиянию призрака.#!"
- NS_REVEAL_THE_CATENE_PERK_EFFECT: "Упрощает связывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E] «Связать призрака».\nСнижает затраты [Concept('stress', 'стресса')|E] на привязывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! в материальном мире.\n#flavor Некромант распознает пепельный след, оставленный мертвецами на предметах, что позволяет ему отличать призрачные игрушки от $pod_Fetters$.#!"
- NS_TREAD_UPON_THE_GRAVE_PERK_EFFECT: "Упрощает связывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E] «Связать призрака».\nСнижает затраты [Concept('stress', 'стресса')|E] на привязывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! в материальном мире.\n#flavor Некромант чувствует, когда находится рядом с миром мертвых. Один некромант может использовать свое природное восприятие, другой - скарификацию, но оба чувствуют, где [UmbraGlossaryLocalized('shadowlands','Загробный мир')] соприкасается с миром живых.#!"
+ NS_REVEAL_THE_CATENE_PERK_EFFECT: "Снижает затраты [Concept('stress', 'стресса')|E] на привязывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! в материальном мире.\n#flavor Некромант распознает пепельный след, оставленный мертвецами на предметах, что позволяет ему отличать призрачные игрушки от $pod_Fetters$.#!"
+ NS_TREAD_UPON_THE_GRAVE_PERK_EFFECT: "Снижает затраты [Concept('stress', 'стресса')|E] на привязывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! в материальном мире.\n#flavor Некромант чувствует, когда находится рядом с миром мертвых. Один некромант может использовать свое природное восприятие, другой - скарификацию, но оба чувствуют, где [UmbraGlossaryLocalized('shadowlands','Загробный мир')] соприкасается с миром живых.#!"
  NS_DEATH_KNELL_PERK_EFFECT: "Если кто-то из ваших [Concept('courtier', 'придворных')|E] будет убит при загадочных обстоятельствах, вы узнаете личность убийцы.\n#flavor Некромант чувствует, когда находится рядом с миром мертвых. Один некромант может использовать свое природное восприятие, другой - скарификацию, но оба чувствуют, где [UmbraGlossaryLocalized('shadowlands','Загробный мир')] соприкасается с миром живых.#!"
  NS_EPHEMERAL_BINDING_PERK_EFFECT: "Связанный [GetTrait('wraith').GetName( GetNullCharacter )|l] в материальном мире не требует затрат [Concept('stress', 'стресса')|E] для поддержания.\n#flavor Наполнив предмет, человека или место своей пепельной энергией, некромант может создать искусственные #L $pod_Fetters$ы#!, а не полагаться на случайные поиски.#!"
 
@@ -131,7 +131,7 @@
  NS_AURA_OF_DECAY_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] во время [Concept('combat_phase', 'фазы боя')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат модификатор [GetModifier('aura_of_decay_modifier').GetNameWithTooltip].\n#flavor Эта способность ускоряет неизбежную участь любого неодушевленного предмета, попавшего в страшную ауру некроманта, позволяя вампиру заставить любой предмет разложиться в труху.#!"
  NS_PISCHACHAS_FEAST_PERK_EFFECT: "Можно пожирать #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#!.\n#flavor Пир Пишахи позволяет вампиру питаться энергией энтропии, пронизывающей места обитания призраков, или питаться непосредственно [Concept('Corpus', 'корпусом')|E] призрака.#!"
  NS_CURSE_OF_THE_MAELSTROM_PERK_EFFECT: "Применив это #L $pod_bs_spell|l$ие#!, вы можете заставить текущее местоположение цели потерять 3 ед. [Concept('development', 'развития')|E], а также наложить модификатор [GetModifier('spell_curse_of_the_maelstrom_modifier').GetNameWithTooltip] на 5 лет.\n#flavor Некромант может проклинать окружающее пространство, вызывая спектров, чтобы вызвать хаос и разрушения.#!"
- NS_NIGHT_CRY_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] во время [Concept('combat_phase', 'фазы боя')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат модификатор [GetModifier('night_cry_enemy_modifier').GetNameWithTooltip].\nСоюзные [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] во время [Concept('combat_phase', 'фазы боя')|E] или вы сами во время [Concept('single_combat_duel_plural', 'поединков')|E] получите модификатор  [GetModifier('night_cry_ally_modifier').GetNameWithTooltip].\n#flavor Используя «Вопль ночи», некромант может продемонстрировать своё мастерство владения силами энтропии. Он может либо направить её от своих союзников, чтобы помочь им, либо направить её прямо в своих врагов и помешать им.#!"
+ NS_NIGHT_CRY_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] во время [Concept('combat_phase', 'фазы боя')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат модификатор [GetModifier('night_cry_enemy_modifier').GetNameWithTooltip].\nСоюзные [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] во время [Concept('combat_phase', 'фазы боя')|E] или вы сами во время [Concept('single_combat_duel_plural', 'поединков')|E] получите модификатор [GetModifier('night_cry_ally_modifier').GetNameWithTooltip].\n#flavor Используя «Вопль ночи», некромант может продемонстрировать своё мастерство владения силами энтропии. Он может либо направить её от своих союзников, чтобы помочь им, либо направить её прямо в своих врагов и помешать им.#!"
 
  NS_VITREOUS_PATH_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
 
@@ -146,7 +146,7 @@
  NS_WHISPERS_TO_THE_SOUL_PERK_EFFECT: "Использовав это #L $pod_bs_spell|l$ие#!, вы можете вызвать у цели 25 ед. [Concept('stress', 'стресса')|E].\n#flavor Одного лишь шёпота об истинном имени Тёмной матери достаточно, чтобы свести смертных с ума, а сердца каинитов наполнить ужасом.#!"
  NS_KISS_OF_THE_DARK_MOTHER_PERK_EFFECT: "Движение [Concept('single_combat_duel', 'поединка')|E] «Укус» становится более мощным.\n#flavor Лилин прикусывает язык и наполняет рот едкой смесью чёрной желчи и витэ. Её укус становится ещё страшнее, и она с лёгкостью поглощает жизнь своих жертв.#!"
  NS_DARK_HUMORS_PERK_EFFECT: "#flavor Ламии известны своим атлетизмом и мастерским владением своим телом. Они способны не только совершать невероятные телодвижения, но и силой воли управлять балансом гуморов в своём теле.#!"
- NS_CAUL_OF_THE_NEVERBORN_PERK_EFFECT: "Разблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E] «Найти призрака».\n#flavor Используя эту способность, ламия укрепляет свою связь с чёрным сердцем Тёмной матери. Это даёт ей повышенную устойчивость и способность видеть в [UmbraGlossaryLocalized('shadowlands','Загробном мире')].#!"
+ NS_CAUL_OF_THE_NEVERBORN_PERK_EFFECT: "$POD_can_summon_wraith_trigger_loca$\n#flavor Используя эту способность, ламия укрепляет свою связь с чёрным сердцем Тёмной матери. Это даёт ей повышенную устойчивость и способность видеть в [UmbraGlossaryLocalized('shadowlands','Загробном мире')].#!"
  NS_LAMENT_OF_DHAINU_PERK_EFFECT: "#flavor Ламия воет в агонии, и сама земля дрожит. Миазмы клубящейся тьмы поднимаются из-под земли и захватывают её врагов. Те, кто попадает в плен тьмы, не связаны физически, но их сразу же охватывает эмоциональная боль, настолько сильная и грубая, что они стремятся покончить со своей жизнью наиболее целесообразным способом.#!"
 
  NS_PATH_OF_THE_TWILIGHT_GARDEN_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
@@ -191,7 +191,7 @@
  NS_SUMMON_WISP_PERK_EFFECT: "#flavor Вампир вливает в капли своей крови эфемерную энергию [UmbraGlossaryLocalized('shadowlands','Загробного мира')], вызывая сферу мерцающего света. Сфера может заманить ничего не подозревающих смертных в ловушку или ловко отвлечь внимание.#!"
  NS_HARROWING_PERK_EFFECT: "Улучшает достоинство [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)], повысив количество [Concept('static_stress', 'психического напряжения')|E] у цели до 50, а цену снижает до 13 ед. [Concept('static_stress', 'психического напряжения')|E].\n#flavor Ужас, вызванный «Песней мертвых», усиливается благодаря Жатве, преследуя её во сне и превращая ее сны в кошмарные видения ее собственной смерти.#!"
  NS_PHANTASMS_PERK_EFFECT: "Улучшает достоинство [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)], повысив количество [Concept('static_stress', 'психического напряжения')|E] у цели до 75.\n#flavor Вампир превращает энергию [UmbraGlossaryLocalized('shadowlands','Загробного мира')] в сложные галлюцинации, которые наводят ужас на живых.#!"
- NS_H_TORMENT_PERK_EFFECT: "Улучшает достоинство [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)], повысив количество [Concept('static_stress', 'психического напряжения')|E] у цели до 100.\nМаксимальное количество связанных призраков: #P +3#!.\n#flavor Вампир разрывает пелену между жизнью и [UmbraGlossaryLocalized('shadowlands','Загробным миром')] вокруг своей жертвы, вызывая злобных призраков, которые преследуют ее.#!"
+ NS_H_TORMENT_PERK_EFFECT: "Улучшает достоинство [GetPerk('ns_song_of_the_dead_perk').GetName(GetNullCharacter)], повысив количество [Concept('static_stress', 'психического напряжения')|E] у цели до 100.\n#flavor Вампир разрывает пелену между жизнью и [UmbraGlossaryLocalized('shadowlands','Загробным миром')] вокруг своей жертвы, вызывая злобных призраков, которые преследуют ее.#!"
 
  NS_PATH_OF_HAUNTING_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
 
@@ -203,10 +203,10 @@
 
  ns_path_of_woe_rituals_perk_name: "$necro_magic_path_of_woe_visible$: #L $pod_bs_rituals$ы#!"
 
- NS_FINDING_THE_LOCUS_PERK_EFFECT: "Упрощает связывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E] «Связать призрака».\n#flavor Определяет, является ли объект оковами.#!"
- NS_EXPURGATE_THE_DAMNED_PERK_EFFECT: "Упрощает связывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E] «Связать призрака».\n#flavor Заставляет #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! появиться в месте, которое некромант отметил ранее.#!"
- NS_BLOOD_SCOURGE_PERK_EFFECT: "Упрощает связывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E] «Связать призрака».\n#flavor Использование витэ для причинения #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраку#!#! мучительной боли.#!"
+ NS_FINDING_THE_LOCUS_PERK_EFFECT: "#flavor Определяет, является ли объект оковами.#!"
+ NS_EXPURGATE_THE_DAMNED_PERK_EFFECT: "#flavor Заставляет #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! появиться в месте, которое некромант отметил ранее.#!"
+ NS_BLOOD_SCOURGE_PERK_EFFECT: "#flavor Использование витэ для причинения #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраку#!#! мучительной боли.#!"
  NS_CURSED_EUCHARIST_PERK_EFFECT: "Применив это #L $pod_bs_spell|l$ие#!, вы можете использовать своего связанного #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#!, чтобы потерять 25 ед. [Concept('stress', 'стресса')|E].\n#flavor Некромант может попытаться питаться от #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#!, чтобы восстановить силу воли.#!"
- NS_PURGE_THE_APOSTATES_SOUL_PERK_EFFECT: "Упрощает связывание #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E] «Связать призрака».\n#flavor Нанесение усиленного урона #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраку#!#!, создав лужу плазмы.#!"
+ NS_PURGE_THE_APOSTATES_SOUL_PERK_EFFECT: "#flavor Нанесение усиленного урона #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраку#!#!, создав лужу плазмы.#!"
 
  NS_PATH_OF_WOE_RITUALS_PERK_EFFECT: "$necro_magic_shared_ritual_perk_effect$"
