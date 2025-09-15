@@ -852,7 +852,7 @@
  allied_to_anda_opinion_active_county_opinion_name: "Соратники"
  allied_to_anda_opinion_active_opinion_name: "Приспешники"
  special_doctrine_against_to_anda_hostility_name: "Мстительные $pod_wan_kuei$"
- special_doctrine_against_to_anda_hostility_desc: "Когда монгольские племена объединились, [Glossary('Анда','podgloss.anda')] последовали за ними, как буря, разрушив владения $pod_wan_kuei$ and starting a feud that only end with the death of one of them."
+ special_doctrine_against_to_anda_hostility_desc: "Когда монгольские племена объединились, [Glossary('Анда','podgloss.anda')] последовали за ними подобно вихрю, разрушив владения $pod_wan_kuei$ и начав вражду, которая закончится только с гибелью одной из сторон."
  doctrine_parameter_against_to_anda_opinion_active: "" # Make loca empty to hidden this like vanilla
  doctrine_parameter_opinion_of_against_to_anda_opinion_active: "$VALUE|+=0$ Штраф к [Concept('opinion', 'мнению')|E] с [Concept('faiths', 'конфессиями')|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_against_to_anda_hostility').GetBaseName]»"
  doctrine_parameter_hostility_override_special_doctrine_against_to_anda_hostility: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_against_to_anda_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
@@ -864,7 +864,7 @@
  special_doctrine_allied_to_yomi_wan_hostility_desc: "[Glossary('Повелители Яма','podgloss.yamaking')] - наши владыки. Те, кто не подчиняется им, будут уничтожены."
  doctrine_parameter_hostility_override_special_doctrine_allied_to_yomi_wan_hostility: "[faiths|E], почитающие [Glossary('повелителей Яма','podgloss.yamaking')], воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  special_doctrine_against_to_yomi_wan_hostility_name: "Враги [Glossary('повелителей Яма','podgloss.yamaking')]"
- special_doctrine_against_to_yomi_wan_hostility_desc: "Остерегайтесь союзников [Glossary('повелителей Яма','podgloss.yamaking')]. Они должны быть уничтожены with extreme diligence."
+ special_doctrine_against_to_yomi_wan_hostility_desc: "Остерегайтесь союзников [Glossary('повелителей Яма','podgloss.yamaking')]. Они должны быть уничтожены с предельным усердием."
  doctrine_parameter_hostility_override_special_doctrine_against_to_yomi_wan_hostility: "[faiths|E], выступающие против [UmbraGlossary('yomi_wan')], воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_wutian_hostility_doctrine: "[faiths|E] $trait_wutian$ воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_wutian_illegal: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('wutian').GetName( GetPlayer )]», — [criminals|El]."
@@ -1098,7 +1098,7 @@
 
  wyrm_tainted_name: "Порча Вирма"
  wyrm_tainted_doctrine_name: "Порча Вирма"
- wyrm_tainted_doctrine_desc: "Многие фера, почитающие Гею, обладают даром, позволяющим им чувствовать, как на других накладывает порчу Вирм. Дороги и пути просвещения многих вампиров считаются настолько порочными, что последователи этих верований по своей сути считаются запятнанными Вирмом."
+ wyrm_tainted_doctrine_desc: "Многие $glossary_fera$, почитающие Гею, обладают даром, позволяющим им чувствовать, как на других накладывает порчу Вирм. Дороги и пути просвещения многих вампиров считаются настолько порочными, что последователи этих верований по своей сути считаются запятнанными Вирмом."
  doctrine_parameter_hostility_override_wyrm_tainted_doctrine: "[faiths|E] с доктриной [GetFaithDoctrine('wyrm_tainted_doctrine').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  tenet_bacchanal_name: "Вакханалия"
@@ -1382,93 +1382,93 @@
  doctrine_parameter_raiding_forbidden: "Нельзя устраивать [Concept('raid', 'набеги')|E]"
 
 
- land_of_faith_controlled_name: "Land of Faith"
- special_doctrine_land_of_faith_controlled_name: "Land of Faith"
- special_doctrine_land_of_faith_controlled_desc: "The Land of Faith is under our control, and we greatly benefit from the Sekhem it gives."
+ land_of_faith_controlled_name: "Земля веры"
+ special_doctrine_land_of_faith_controlled_name: "Земля веры"
+ special_doctrine_land_of_faith_controlled_desc: "Земля веры находится под нашим контролем, и мы извлекаем огромную пользу из сехема, что она даёт."
 
- unproven_dharma_name: "Unproven [Glossary('Dharma','podgloss.dharma')]"
- special_doctrine_unproven_dharma_name: "Unproven [Glossary('Dharma','podgloss.dharma')]"
- special_doctrine_unproven_dharma_desc: "Not all [Glossary('Dharma','podgloss.dharma')] have proven to be a way to the [Glossary('Hundred Clouds','podgloss.hundredclouds')]. For those that never had a recorded ascension, the fear of being in a dead end is always a concern."
+ unproven_dharma_name: "Сомнительная [Glossary('дхарма','podgloss.dharma')]"
+ special_doctrine_unproven_dharma_name: "Сомнительная [Glossary('дхарма','podgloss.dharma')]"
+ special_doctrine_unproven_dharma_desc: "Не все [Glossary('дхармы','podgloss.dharma')] ведут к [Glossary('Сотне облаков','podgloss.hundredclouds')]. Для тех, у кого никогда не было зафиксированного вознесения, страх оказаться в тупике всегда вызывает беспокойство."
  doctrine_parameter_unproven_dharma_parameter: ""
  
- tenet_obeisance_to_devils_name: "Obeisance to Devils"
- tenet_obeisance_to_devils_desc: "We exist beneath Little Gods. We must be beneath notice, beyond scrutiny, lest we invite our annihilation."
- doctrine_parameter_hostility_override_tenet_obeisance_to_devils: "[faiths|E] that have the [GetFaithDoctrine('tenet_obeisance_to_devils').GetBaseName] [doctrine|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of #V Hostile#!" 
+ tenet_obeisance_to_devils_name: "Почитание дьяволов"
+ tenet_obeisance_to_devils_desc: "Мы существуем в тени Малых богов. Мы должны быть незаметны, вне контроля, чтобы не навлечь на себя уничтожение."
+ doctrine_parameter_hostility_override_tenet_obeisance_to_devils: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] [GetFaithDoctrine('tenet_obeisance_to_devils').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как #V враги#!" 
 
 
 
 
 
 
- doctrine_fera_triat_alignment_group_name: "Triat Alignment"
- 
- doctrine_fera_triat_alignment_balanced_name: "Balanced"
- doctrine_fera_triat_alignment_balanced_desc: "The Triat are three of the greatest entities in the spiritual hierarchy: the Wyld, the Weaver, and the Wyrm. The Wyld created raw matter, life, and spirit while the Weaver gave these creations form and function, and the Wyrm destroyed them to make room for new creations. Others insist that the Wyrm was once known as Balance, selectively destroying the creations of Wyld and Weaver to create harmony from the opposing forces of chaos and order. The Triat is no longer in balance, however many $glossary_fera$ still believe in the old order."
- doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_balanced: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_triat_alignment_balanced').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_fera_triat_alignment_group_name: "Приверженность Триады"
 
- doctrine_fera_triat_alignment_wyld_name: "Wyld"
- doctrine_fera_triat_alignment_wyld_desc: "The Wyld is one of the three spirits of the Triat. The Wyld is a generative force: it creates absolute Chaos, which is given order by the Weaver before it is destroyed and returned to chaos by the Wyrm. Where the other two of the Triat went insane, the Wyld is diminishing, being squashed out by the Weaver, and destroyed recklessly by the Wyrm. As a result of the threat of Wyrm and Weaver, most shapechangers revere the Wyld above the other members of the Triat, seeing it and Gaia in need of protection."
+ doctrine_fera_triat_alignment_balanced_name: "Равновесие"
+ doctrine_fera_triat_alignment_balanced_desc: "Триада - это три величайшие сущности в духовной иерархии: Вильд, Ткачиха и Вирм. Вильд создал сырую материю, жизнь и дух, в то время как Ткачиха придала этим творениям форму и функции, а Вирм уничтожал их, чтобы освободить место для новых творений. Другие настаивают на том, что Вирм когда-то был известен как Равновесие, выборочно разрушая творения Вильда и Ткачихи, чтобы создать гармонию из противоборствующих сил хаоса и порядка. Триада больше не находится в равновесии, однако многие $glossary_fera$ всё ещё верят в старый порядок."
+ doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_balanced: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_balanced').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
- doctrine_fera_triat_alignment_weaver_name: "Weaver"
- doctrine_fera_triat_alignment_weaver_desc: "The Weaver is one of the three great spirits of the Triat. Its function was thought to be to make order from the creations of the Wyld, giving them form and function for the duration of their existence before they were destroyed by the Wyrm, maintaining a balance between creation and destruction. Mankind is Weaver's adopted child, in order to bring order to the world and help her to end the chaos that her Celestine brethren constantly wrought upon creation."
- doctrine_parameter_ignore_fera_dev_requirements: "Low [development|E] requirements for $glossary_fera$ buildings are ignored"
- doctrine_parameter_no_fera_dev_reduction: "$glossary_fera$ buildings in provinces following this [faith|E] do not reduce [development|E]"
+ doctrine_fera_triat_alignment_wyld_name: "Вильд"
+ doctrine_fera_triat_alignment_wyld_desc: "Вильд - один из трёх духов Триады. Вильд - это порождающая сила: он создаёт абсолютный хаос, которому Ткачиха придаёт порядок, прежде чем он будет разрушен и возвращён в хаос Вирмом. В то время как двое других членов Триады сошли с ума, Вильд слабеет, его вытесняет Ткачиха и безрассудно уничтожает Вирм. Из-за угрозы, исходящей от Вирма и Ткачихи, большинство перевёртышей почитают Вильда выше других членов Триады, видя, что он и Гея нуждаются в защите."
 
- doctrine_fera_triat_alignment_wyrm_name: "Wyrm"
- doctrine_fera_triat_alignment_wyrm_desc: "The Wyrm is one of the higher Celestines. The Wyrm's purpose is the cleansing and rectification of Creation, furthering its descent into Entropy. He achieves this by eliminating that which the Wyld creates and the Weaver structures. The Wyrm was the second member of the Triat to go insane. Once the Weaver went mad and began encasing everything in Webs, the Wyrm was progressively constrained until he was driven mad as well, hellbent on destroying everything. Consequently, the Wyrm is now a spirit of destruction, chaos, darkness, and corruption, the essence of everything the Gaian $glossary_fera$ oppose." 
- doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_wyrm: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_triat_alignment_wyrm').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_fera_triat_alignment_weaver_name: "Ткачиха"
+ doctrine_fera_triat_alignment_weaver_desc: "Ткачиха - один из трёх великих духов Триады. Считается, что её функция заключается в наведении порядка в творениях Вильда, придании им формы и функций на протяжении всего их существования до того, как они будут уничтожены Вирмом, поддерживая баланс между созиданием и разрушением. Человечество - приёмное дитя Ткачихи, призванное навести порядок в мире и помочь ей покончить с хаосом, который её собратья-целестины постоянно вносили в мироздание."
+ doctrine_parameter_ignore_fera_dev_requirements: "Требования к низкому уровню [Concept('development', 'развития')|E] для зданий $glossary_fera$ игнорируются"
+ doctrine_parameter_no_fera_dev_reduction: "Постройки $glossary_fera$ в провинциях, следующих этой [Concept('faith', 'конфессии')|E], не снижают [Concept('development', 'развитие')|E]"
 
- doctrine_fera_triat_alignment_triatic_wyrm_name: "Triatic Wyrm"
- doctrine_fera_triat_alignment_triatic_wyrm_desc: "As part of a resultant dissociative identity disorder on a universal scale, the Wyrm has split itself into three main "heads,” each representing a different part of its dark personality. The three heads also represent the Triat and the original balance of creation, as they are little more than the Wyrm attempting to figure out what went wrong, and as such the main three heads are called the Triatic Wyrm."
- doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_triatic_wyrm: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_triat_alignment_triatic_wyrm').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_fera_triat_alignment_wyrm_name: "Вирм"
+ doctrine_fera_triat_alignment_wyrm_desc: "Вирм - один из высших целестинов. Цель Вирма - очищать и исправлять мироздание, способствуя его погружению в энтропию. Он достигает этого, уничтожая то, что создаёт Вильд и структурирует Ткачиха. Вирм стал вторым членом Триады, сошедшим с ума. Как только Ткачиха потеряла рассудок и начала опутывать всё вокруг паутиной, Вирма постепенно сковывали, пока он тоже не сошёл с ума, одержимый идеей всё разрушить. Следовательно, Вирм теперь является духом разрушения, хаоса, тьмы и разложения, сущностью всего, чему противостоят $glossary_fera$, служащие Гее." 
+ doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_wyrm: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_wyrm').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
-
- doctrine_fera_triat_alignment_gaia_name: "Gaia"
- doctrine_fera_triat_alignment_gaia_desc: "Gaia is one of the most powerful spirits known to exist – possibly the first, and most powerful. She is credited with creating the Garou and most of the Fera to serve as her warriors and agents both in the material and spirit worlds. She is Mother Nature, nurturing and full of life but also savage and callous when crossed."
- doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_gaia: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_triat_alignment_gaia').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_fera_triat_alignment_triatic_wyrm_name: "Триадический Вирм"
+ doctrine_fera_triat_alignment_triatic_wyrm_desc: "В результате диссоциативного расстройства личности вселенского масштаба Вирм разделился на три основные «головы», каждая из которых представляет собой отдельную часть его тёмной личности. Три головы также символизируют Триаду и изначальный баланс творения, поскольку они представляют собой не что иное, как Вирма, пытающегося понять, что пошло не так, и поэтому основные три головы называются Триадическим Вирмом."
+ doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_triatic_wyrm: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_triatic_wyrm').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
- doctrine_fera_litany_group_name: "Fera Laws"
-
- doctrine_fera_werewolf_litany_name: "Litany"
- doctrine_fera_werewolf_litany_desc: "The laws of the People are ancient. Their traditions vary from tribe to tribe, but all Garou must remember and hold to the central code of law called the Litany. In its full form, it is as much an epic poem as a legal code. While it takes the greatest scholars to master the entirety of the Litany, most werewolves learn it in the form of its basic precepts. Each precept has a practical basis, but not all of them are universally upheld as unquestionably moral."
- doctrine_parameter_hostility_override_doctrine_fera_werewolf_litany: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_werewolf_litany').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
-
- doctrine_fera_werewolf_dark_litany_name: "Dark Litany"
- doctrine_fera_werewolf_dark_litany_desc: "The Dark Litany is the Litany of the Wyrm, followed by the Black Spiral Dancers. Serve the Wyrm's Will. Respect the Strength of the Mighty. All that is not Forbidden is Permitted. Indulge your Desires. Despite the perception of the Black Spirals as a tribe of lawless chaos, their Litany is often more strictly upheld than that of the Garou Nations."
- doctrine_parameter_hostility_override_doctrine_fera_werewolf_dark_litany: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_werewolf_dark_litany').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
-
- doctrine_fera_bastet_karoush_name: "Karoush"
- doctrine_fera_bastet_karoush_desc: "Karoush is the werecat code of laws, similar to the Litany of the Garou. Handed down from their forebears, these laws are bigger than any Bastet and greater than any rank or title. These are their codes of honor, and the Bastet believe they separate them from the humanity, guarding them from human mistakes. The Karoush is the code their ancestors made, the Law of the Moon and the Sun, the Law of the Shaping of Secrets and the Law of the Change: Honor Yourself, Honor Your Word, Honor Your Kin and Kind, Honor Your Earth and Honor Your Silence."
- doctrine_parameter_hostility_override_doctrine_fera_bastet_karoush: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_bastet_karoush').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_fera_triat_alignment_gaia_name: "Гея"
+ doctrine_fera_triat_alignment_gaia_desc: "Гея – одна из самых могущественных духов, о существовании которых известно, возможно, первая и самая могущественная. Считается, что именно она создала гару и большинство фера, которые служили ей воинами и агентами как в материальном, так и в духовном мирах. Она - Мать-природа, заботливая и полная жизни, но в то же время дикая и бессердечная, когда ей перечат."
+ doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_gaia: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_gaia').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
- doctrine_fera_fallen_tribe_name: "Fallen Tribe"
- doctrine_fera_fallen_tribe_desc: "Some Fera tribes fall from their original purposes. It can be due to a variety of reasons, from ideological arguments to spiritual taints but the results are the same. Isolated (at best) or hunted down (at worst) by their parent tribe, these fallen lurk in the shadows in fear of those these once called their peers."
- doctrine_parameter_hostility_override_doctrine_fera_fallen_tribe: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_fallen_tribe').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_fera_litany_group_name: "Фера"
+
+ doctrine_fera_werewolf_litany_name: "Литания"
+ doctrine_fera_werewolf_litany_desc: "Законы этого народа очень древние. Их традиции варьируются от племени к племени, но все гару должны помнить и придерживаться главного свода законов, называемого Литанией. В своей полной форме это такая же эпическая поэма, как и юридический кодекс. Несмотря на то, что для полного усвоения Литании требуются величайшие ученые, большинство оборотней усваивают её в виде основных предписаний. Каждое предписание имеет практическую основу, но не все из них считаются бесспорно моральными."
+ doctrine_parameter_hostility_override_doctrine_fera_werewolf_litany: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_werewolf_litany').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+
+ doctrine_fera_werewolf_dark_litany_name: "Тёмная литания"
+ doctrine_fera_werewolf_dark_litany_desc: "Тёмная литания - это Литания Вирма, которой следуют Танцоры Чёрной спирали. Служите Воле Вирма. Уважайте силу могущественных. Всё, что не запрещено, разрешено. Потакайте своим желаниям. Несмотря на то, что Чёрная спираль воспринимается как племя беззаконного хаоса, их Литания зачастую соблюдается более строго, чем среди нации Гару."
+ doctrine_parameter_hostility_override_doctrine_fera_werewolf_dark_litany: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_werewolf_dark_litany').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
+
+ doctrine_fera_bastet_karoush_name: "Каруш"
+ doctrine_fera_bastet_karoush_desc: "Каруш - это свод законов оборотней-кошек, похожий на Литанию гару. Переданные от их предков, эти законы важнее, чем любой бастет, и значимее, чем любой ранг или титул. Таковы их кодексы чести, и бастет верят, что они отделяют их от человечества, оберегая от человеческих ошибок. Каруш - это кодекс, составленный их предками, закон Луны и Солнца, закон формирования тайн и закон перемен: Уважай себя, держи своё слово, уважай свой род, уважай свою землю и уважай своё молчание."
+ doctrine_parameter_hostility_override_doctrine_fera_bastet_karoush: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_bastet_karoush').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+
+
+ doctrine_fera_fallen_tribe_name: "Падшее племя"
+ doctrine_fera_fallen_tribe_desc: "Некоторые племена фера отступили от своих первоначальных целей. Это может быть вызвано различными причинами, от идеологических разногласий до духовных пороков, но результат один и тот же. Изолированные (в лучшем случае) или преследуемые (в худшем) своим родительским племенем, эти падшие прячутся в тени в страхе перед теми, кого они когда-то называли своими соплеменниками."
+ doctrine_parameter_hostility_override_doctrine_fera_fallen_tribe: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_fallen_tribe').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
 
 
- doctrine_fera_pact_group_name: "Fera Pacts"
+ doctrine_fera_pact_group_name: "Соглашения фера"
 
- doctrine_fera_werewolf_pact_name: "Garou Pacts"
- doctrine_fera_werewolf_pact_desc: "For one reason or another, the adherents of this faith have formed close bonds with the #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L Garou#!. The savage and brutal tribes aren't easy to befriend but take their oaths very seriously when they are."
- doctrine_parameter_hostility_override_doctrine_fera_werewolf_pact: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_werewolf_pact').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_fera_werewolf_pact_name: "Соглашения гару"
+ doctrine_fera_werewolf_pact_desc: "По той или иной причине приверженцы этой конфессии установили тесные связи с #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L гару#!. С дикими и жестокими племенами нелегко подружиться, но когда это происходит, они очень серьёзно относятся к своим клятвам."
+ doctrine_parameter_hostility_override_doctrine_fera_werewolf_pact: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_werewolf_pact').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
- doctrine_fera_bastet_pact_name: "Bastet Pacts"
- doctrine_fera_bastet_pact_desc: "For one reason or another, the adherents of this faith have formed close bonds with the [GetTrait('bastet').GetName( GetPlayer )]. The catfolk inquisitive nature have made them many unexpected friends... though some turned to not be trustworthy at all."
- doctrine_parameter_hostility_override_doctrine_fera_bastet_pact: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_bastet_pact').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_fera_bastet_pact_name: "Соглашения бастет"
+ doctrine_fera_bastet_pact_desc: "По той или иной причине приверженцы этой конфессии установили тесные связи с [GetTrait('bastet').GetName( GetPlayer )|l]. Любознательный характер кошачьего народа подарил им много неожиданных друзей... хотя некоторые из них вообще не заслуживают доверия."
+ doctrine_parameter_hostility_override_doctrine_fera_bastet_pact: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_bastet_pact').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
- doctrine_fera_wyrm_pact_name: "Wyrm Pacts"
- doctrine_fera_wyrm_pact_desc: "For some reason the adherents of this faith somewhat tolerate the followers of the Wyrm. Whether the reverse is true is up to the whims of others. There is only so much room to dance in the spiral after all."
- doctrine_parameter_hostility_override_doctrine_fera_wyrm_pact: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_wyrm_pact').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_fera_wyrm_pact_name: "Соглашения Вирма"
+ doctrine_fera_wyrm_pact_desc: "По какой-то причине приверженцы этой конфессии в некоторой степени терпимо относятся к последователям Вирма. Верно ли обратное, зависит от прихотей другой стороны. В конце концов, в спирали не так уж много места для танцев."
+ doctrine_parameter_hostility_override_doctrine_fera_wyrm_pact: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_wyrm_pact').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
- doctrine_fera_alliance_group_name: "Fera Alliance"
+ doctrine_fera_alliance_group_name: "Альянсы фера"
 
- doctrine_fera_beast_courts_name: "Beast Courts"
- doctrine_fera_beast_courts_desc: "Among $glossary_fera$, cross-species alliances are rare. The most notable exception are the Beast Courts, sworn to defend the Emerald Mother (Gaia). Within the Courts is a society similar to the imperial cultures of mythic Asia, complete with regents, courtiers, and common folk.  Any hengeyokai ($glossary_fera$) is free to join the Beast Courts, provided they swear to follow a communal system of honor and renown known as the Way of Emerald Virtue."
- doctrine_parameter_hostility_override_doctrine_fera_beast_courts: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_fera_beast_courts_name: "Звериные дворы"
+ doctrine_fera_beast_courts_desc: "Среди $glossary_fera$ межвидовые союзы редки. Наиболее заметным исключением являются Звериные дворы, поклявшиеся защищать Изумрудную мать (Гею). При дворах существует общество, похожее на имперские культуры мифической Азии, в котором есть регенты, придворные и простолюдины.  Любой хенгейокай ($glossary_fera$) может свободно присоединиться к Звериным дворам, при условии, что он поклянётся следовать общественной системе чести и известности, известной как Путь Изумрудной добродетели."
+ doctrine_parameter_hostility_override_doctrine_fera_beast_courts: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  bastet_nation_tolerance_name: ""
