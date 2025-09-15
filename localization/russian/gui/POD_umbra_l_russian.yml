@@ -29,7 +29,7 @@
  umbra_ongoing_tt: "Вы находитесь в [Concept('umbra_expedition', 'путешествии в Умбру')|E]."
  shadow_realm_tt: "Вы находитесь в [UmbraGlossaryLocalized('shadowlands','царстве Теней')]."
 
- bastet_spirit_wilds_access_tooltip: "Non-[GetFaithByKey('swara').GetName] [GetTrait('bastet').GetName( GetPlayer )] must be Rank 2 in their [trait_level_track|E]."
+ bastet_spirit_wilds_access_tooltip: "[GetTrait('bastet').GetName( GetPlayer )], не являющиеся [GetFaithByKey('swara').GetName|l] должны иметь 2 ранг в [Concept('trait_level_track', 'пути развития свойства')|E]."
  silentstrider_objective_decision_finished: "Вы приняли [Concept('decision', 'решение')|E] «$silentstrider_objective_decision$»."
  breakdown_the_abyss_objective_decision_finished: "Вы приняли [Concept('decision', 'решение')|E] «$breakdown_the_abyss_objective_decision$»."
  stationed_on_dreaming_tt: "Находится в [UmbraGlossaryLocalized('dreaming','Грёзах')]."

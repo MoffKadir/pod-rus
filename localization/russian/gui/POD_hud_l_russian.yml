@@ -62,11 +62,11 @@
 
  pod_saved_modifier_tooltip: "#T [GetModifier(SCOPE.GetFlagName('saved_tooltip')).GetName]#!\n[GetModifier(SCOPE.GetFlagName('saved_tooltip')).GetDescWithEffects]"
 
- pod_hunger_hud: "$pod_saved_modifier_tooltip$[GetPlayer.Custom('PODBloodPotencyHint')]\n\n#I Click this bar to show the various ways you can slake your $pod_hunger_with_icon$.#!"
+ pod_hunger_hud: "$pod_saved_modifier_tooltip$[GetPlayer.Custom('PODBloodPotencyHint')]\n\n#I Нажмите на эту шкалу, чтобы показать различные способы, которыми вы можете утолить свой $pod_hunger_with_icon$.#!"
  pod_masquerade_hud: "$pod_saved_modifier_tooltip$\n\n[GetPlayer.Custom('PODMasqueradeHint')]"
- pod_pathos_hud: "$pod_saved_modifier_tooltip$\n\n#I To gain pathos, trigger a passion from a [Fetter|E].#!"
- pod_glamour_hud: "$pod_saved_modifier_tooltip$\n\n#I Click this bar to show the various ways you can regenerate Glamour.#!"
- pod_gnosis_hud: "$pod_saved_modifier_tooltip$\n\nYou have a $POD_player_gnosis_regen_chance$ chance to regenerate $POD_energy_gnosis$ each month.\n\n#I Click this bar to shapeshift.#!"
+ pod_pathos_hud: "$pod_saved_modifier_tooltip$\n\n#I Для того, чтобы получить пафос, вызовите страсть из [Concept('Fetter', 'оков')|E].#!"
+ pod_glamour_hud: "$pod_saved_modifier_tooltip$\n\n#I Нажмите на эту шкалу, чтобы показать различные способы, которыми вы можете восстановить гламур.#!"
+ pod_gnosis_hud: "$pod_saved_modifier_tooltip$\n\nУ вас есть $POD_player_gnosis_regen_chance$ вероятность восстановить $POD_energy_gnosis$ каждый месяц.\n\n#I Нажмите на эту шкалу, чтобы сменить облик.#!"
 
  gauntletdesc0: "#T [GetModifier('gauntlet0_modifier').GetName]#!\n[GetModifier('gauntlet0_modifier').GetDescWithEffects]"
  gauntletdesc1: "#T [GetModifier('gauntlet1_modifier').GetName]#!\n[GetModifier('gauntlet1_modifier').GetDescWithEffects]"
@@ -116,7 +116,7 @@
  NON_FEUDAL_VASSAL_CONTRACT_OBLIGATIONS_TITLE_LEVIES:0 "Уровень ополчения"
 
  # Mummy ren display
- POD_ren_completion: "You know #V [GetPlayer.MakeScope.ScriptValue('known_nonstandard_true_names_number')]/[EmptyScope.ScriptValue('total_nonstandard_true_names_number')]#! True Names:"
- POD_ren_plants: "#bold Flora#!"
- POD_ren_animals: "#bold Animals#!"
- POD_ren_metals: "#bold Metals#!"
+ POD_ren_completion: "Вы знаете #V [GetPlayer.MakeScope.ScriptValue('known_nonstandard_true_names_number')]/[EmptyScope.ScriptValue('total_nonstandard_true_names_number')]#! истинных имён:"
+ POD_ren_plants: "#bold Флора#!"
+ POD_ren_animals: "#bold Животные#!"
+ POD_ren_metals: "#bold Металлы#!"

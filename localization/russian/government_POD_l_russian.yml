@@ -134,14 +134,14 @@
  type_of_courts_political_short: "Политический"
  type_of_courts_social_short: "Социальный"
 
- fera_tribe_government: "Fera Tribe"
+ fera_tribe_government: "Племя фера"
  fera_tribe_government_with_icon: "@fera_icon! $fera_tribe_government$"
- fera_tribe_government_adjective: "Tribal"
- fera_tribe_government_realm: "Fera Tribe"
- fera_tribe_government_vassals_label: "Tribal [obligations|E] are based on [opinion|E]"
- fera_tribe_government_desc: "Tribes are the largest social unit of the Fera. Tribe members are often bound by bloodlines, similar totems or Patrons, and lifestyles.\nThe various shapeshifters organize themselves differently in this broad categorization but all share this emphasis on sharing the same social ties and spiritual connections."
+ fera_tribe_government_adjective: "Племен"
+ fera_tribe_government_realm: "Племя фера"
+ fera_tribe_government_vassals_label: "Племенные [Concept('obligations', 'обязательства')|E] основаны на [Concept('opinion', 'мнении')|E]"
+ fera_tribe_government_desc: "Племена являются крупнейшей социальной единицей фера. Члены племени часто связаны кровными узами, сходными тотемами или покровителями, а также образом жизни.\nРазличные перевёртыши по-разному распределяются в этой широкой категории, но все они разделяют этот акцент на том, чтобы поддерживать одни и те же социальные и духовные связи."
  fera_tribe_government_filter_option: "$fera_tribe_government$"
- fera_tribe_government_filter_option_desc: "Only show characters with [GetGovernment( 'fera_tribe_government' ).GetName] [government|E]"
+ fera_tribe_government_filter_option_desc: "Только персонажи с #L [GetGovernment( 'fera_tribe_government' ).GetAdjective|l]ым#! [Concept('government','правительством')|E]"
 
  dark_kingdom_government: "Тёмное королевство"
  dark_kingdom_government_with_icon: "@wraith_icon! $dark_kingdom_government$" # TODO RTP
