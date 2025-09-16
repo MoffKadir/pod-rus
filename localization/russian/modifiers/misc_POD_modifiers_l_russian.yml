@@ -75,7 +75,7 @@
  black_spiraled_good_modifier: "Сила Спирали"
  black_spiraled_good_modifier_desc: "Вы пережили безумие Черной Спирали и вернулись оттуда более сильными"
 
- wisdom_of_hazimel_modifier: "Мудрость Хамизель"
+ wisdom_of_hazimel_modifier: "Мудрость Хазимеля"
  wisdom_of_hazimel_modifier_desc: "Этот персонаж пожертвовал частью своего собственного тела, чтобы обрести вечную мудрость"
 
  true_cross_hunt_modifier: "Обладатель Истинного Креста"
@@ -236,7 +236,7 @@
 
  flandre_scarlet_modifier: "Фландр Скарлет"
 
- visited_arcadia_modifier: "Visited Arcadia"
+ visited_arcadia_modifier: "Посещение Аркадии"
 
  sabbat_hand_wazir_3_modifier: "Манипуляции Шабаша: Высокие"
  sabbat_hand_wazir_2_modifier: "Манипуляции Шабаша: Средние"
@@ -259,11 +259,11 @@
 
  POD_recently_swung_scales_modifier: "Недавнее изменение равновесия"
  POD_recently_swung_scales_modifier_desc: "Изменение [Concept('scales_of_power', 'равновесия сил')|E] стоит в #V 5#! раз дороже."
- POD_swing_scales_warning: "@warning_icon!#N Because you [GetModifier('POD_recently_swung_scales_modifier').GetNameWithTooltip], it is [EmptyScope.ScriptValue('POD_swing_scales_during_cooldown_cost_mult')|V0] times more expensive#! #low (until [GetCurrentDateWithDiff( GetVarTimeRemaining( actor.MakeScope, 'POD_recently_swung_scales') )])#!"
+ POD_swing_scales_warning: "@warning_icon!#N Из-за того, что у вас имеется модификатор [GetModifier('POD_recently_swung_scales_modifier').GetNameWithTooltip], это обойдётся в [EmptyScope.ScriptValue('POD_swing_scales_during_cooldown_cost_mult')|V0] раз дороже#! #low (до [GetCurrentDateWithDiff( GetVarTimeRemaining( actor.MakeScope, 'POD_recently_swung_scales') )])#!"
 
  uncursed_nosferatu_modifier: "Неподверженность проклятию клана Носферату"
  uncursed_tzimisce_modifier: "Неподверженность проклятию клана Цимисхи"
- uncursed_kizoku_modifier: "Unaffected by Kizoku Clan Curse"
+ uncursed_kizoku_modifier: "Неподверженность проклятию клана Кидзоку"
 
  biblia_negra_curse_modifier: "Мудрость древних"
  soultaker_stress_loss_modifier: "Утоление голода Легиона"
@@ -275,15 +275,15 @@
 
  #joyous_age_modifier: "Эпоха радости"
  godbodies_modifier: "Божественные тела"
- godbodies_modifier_desc: "#X This modifier will be lost in 1350. Some objectives can prevent this loss.#!\n#flavor В текущей эпохе [Concept('kuei_jin', 'куэй-дзин')|E] всё ещё более приспособлены к стихийным силам, которыми они когда-то владели как Десять тысяч бессмертных.#!"
+ godbodies_modifier_desc: "#X Этот модификатор будет потерян в 1350 году. Некоторые цели могут предотвратить эту потерю.#!\n#flavor В текущей эпохе [Concept('kuei_jin', 'куэй-дзин')|E] всё ещё более приспособлены к стихийным силам, которыми они когда-то владели как Десять тысяч бессмертных.#!"
  #akuma_debuff_modifier: "Инфернальная скверна"
  #yama_debuff_modifier: "Скверна Йоми"
  #akuma_buff_modifier: "Инфернальный соблазн"
  #yama_buff_modifier: "Соблазн Йоми"
  akuma_huge_buff_modifier: "Инфернальное величие"
- akuma_huge_buff_modifier_desc: "The turn of the wheel heralds the coming of the end. The forces of the [Glossary('Demon Emperor','podgloss.demonemperor')] are emboldened to prepare his way to the throne."
+ akuma_huge_buff_modifier_desc: "Поворот колеса предвещает приближение конца. Силы [Glossary('Император демонов','podgloss.demonemperor')] набираются смелости, чтобы подготовить ему путь к трону."
  yama_huge_buff_modifier: "Величие Йоми"
- yama_huge_buff_modifier_desc: "The turn of the wheel heralds the coming of the end. The forces of the [Glossary('Demon Emperor','podgloss.demonemperor')] are emboldened to prepare his way to the throne."
+ yama_huge_buff_modifier_desc: "Поворот колеса предвещает приближение конца. Силы [Glossary('Император демонов','podgloss.demonemperor')] набираются смелости, чтобы подготовить ему путь к трону."
  kj_harder_dharma_modifier: "Влияние Яма"
  kj_imposible_dharma_modifier: "Барьер Яма"
 
@@ -295,21 +295,21 @@
 
 
 
- weather_magic_flow_modifier: "Flow"
- weather_magic_flow_modifier_desc: "This area is damaged by a landslide, avalanche, mudflow or debris flow."
- weather_magic_meteor_shower_modifier: "Meteor Shower"
- weather_magic_meteor_shower_modifier_desc: "This area is damaged by a meteor."
- weather_magic_storm_modifier: "Storm"
+ weather_magic_flow_modifier: "Поток"
+ weather_magic_flow_modifier_desc: "Этот район пострадал в результате оползня, лавины, селя или селевого потока."
+ weather_magic_meteor_shower_modifier: "Метеоритный дождь"
+ weather_magic_meteor_shower_modifier_desc: "Этот район повреждён метеоритом."
+ weather_magic_storm_modifier: "Шторм"
  weather_magic_storm_modifier_desc: "This area is damaged by a hurricane, tornado, blizzard, thunderstorm or sandstorm."
- weather_magic_earthquake_modifier: "Earthquake"
+ weather_magic_earthquake_modifier: "Землетрясение"
  weather_magic_earthquake_modifier_desc: "This area is damaged by earthquakes."
- weather_magic_plague_modifier: "Plague"
+ weather_magic_plague_modifier: "Чума"
  weather_magic_plague_modifier_desc: "This area is damaged by frogs, lice, flies, pestilence, boils or locusts."
- weather_magic_flood_modifier: "Flood"
+ weather_magic_flood_modifier: "Наводнение"
  weather_magic_flood_modifier_desc: "This area is damaged by inundations."
- weather_magic_greater_flood_modifier: "Greater Flood"
+ weather_magic_greater_flood_modifier: "Великое наводнение"
  weather_magic_greater_flood_modifier_desc: "This area is damaged by great inundations."
- weather_magic_drought_modifier: "Drought"
+ weather_magic_drought_modifier: "Засуха"
  weather_magic_drought_modifier_desc: "This area is damaged by droughts."
 
  weather_magic_mummy_cycle_of_ra_modifier: "Cycle of Ra"

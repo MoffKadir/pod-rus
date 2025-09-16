@@ -73,8 +73,8 @@
  trait_caitiff: "Каитифф"
  trait_caitiff_desc: "Известные как «лишённые клана», - это #L $pod_cainites|l$ы#!, которые не принадлежат ни к одному [Concept('Clan', 'клану')|E]."
 
- trait_caitiff_laibon: "Nyayo"
- trait_caitiff_laibon_desc: "Less a Lineage than a Classification, the Nyayo trace their origins to Mombasa as peerless warriors untethered to lineage, often dedicated to walking the same path as the Old Man."
+ trait_caitiff_laibon: "Ниайо"
+ trait_caitiff_laibon_desc: "Ниайо - это не столько родословная, сколько классификация, они ведут своё происхождение от Момбасы как несравненные воины, не привязанные к родословной, часто посвятившие себя тому, чтобы пройти тот же путь, что и Старик."
 
  trait_cappadocian: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Каппадокийка', 'Каппадокиец' )]"
  trait_cappadocian_desc: "Отстраненные ученые, одержимые тайнами смерти и души."
@@ -197,32 +197,32 @@
  trait_ventrue_raktasadhus: "Данава"
  trait_ventrue_raktasadhus_desc: "Данава - это линия крови [Concept('Clan', 'клана')|E] Вентру, сосредоточенный на Индийском субконтиненте. Царственные мудрецы, аскеты и священники, Данава - одни из самых уважаемых вампиров в кастовой системе индийских Проклятых."
 
- trait_chibo: "Chibo"
- trait_chibo_desc: "The occultist and priest lineage of the [GetTrait('tzimisce').GetName(GetNullCharacter)] of [Glossary('Mikaboshi','podgloss.mikaboshi')], the Chibo are the bloody stars of magic."
+ trait_chibo: "Чибо"
+ trait_chibo_desc: "Родословная [GetTrait('tzimisce').GetName(GetNullCharacter)] оккультистов и жрецов [Glossary('Микабоши','podgloss.mikaboshi')], Чибо - кровавые звёзды магии."
 
- trait_monomi: "Monomi"
- trait_monomi_desc: "The warriors of the [GetTrait('tzimisce').GetName(GetNullCharacter)] of [Glossary('Mikaboshi','podgloss.mikaboshi')], the Monomi are the bloody stars of the sword."
+ trait_monomi: "Мономи"
+ trait_monomi_desc: "Воины-[GetTrait('tzimisce').GetName(GetNullCharacter)|l] [Glossary('Микабоши','podgloss.mikaboshi')], Мономи - это кровавые звёзды меча."
 
- trait_kishu: "Kishu"
- trait_kishu_desc: "The assassins of the [GetTrait('tzimisce').GetName(GetNullCharacter)] of [Glossary('Mikaboshi','podgloss.mikaboshi')], the Kishu are the bloody stars of the dagger."
+ trait_kishu: "Кишу"
+ trait_kishu_desc: "Убийцы-[GetTrait('tzimisce').GetName(GetNullCharacter)|l] [Glossary('Микабоши','podgloss.mikaboshi')], Кишу - это кровавые звёзды кинжала."
 
- trait_kizoku: "Kizoku"
- trait_kizoku_desc: "Born from a storyteller and plagued by nightmares, the Kizoku are the Kindred of the Rifts."
+ trait_kizoku: "Кидзоку"
+ trait_kizoku_desc: "Рождённые от сказителей и страдающие от ночных кошмаров, Кидзоку являются сородичами Разломов."
 
- trait_bushi: "Bushi"
- trait_bushi_desc: "Claiming to be the blood-bathed children of the Storm God of the Amatsukami, the Bushi are willful warriors without compare."
+ trait_bushi: "Буси"
+ trait_bushi_desc: "Утверждая, что они - обагрённые кровью дети бога бури Амацуками, Буси - ни с кем не сравнимые своенравные воины."
 
- trait_kuntilanak: "Kuntilanak"
- trait_kuntilanak_desc: "The curse of isolation manifesting as being stuck between the worlds of the living and the dead, the Kuntilanak are ghostly necromancers."
+ trait_kuntilanak: "Кунтиланак"
+ trait_kuntilanak_desc: "Из-за проклятия изоляции, проявляющегося в том, что Кунтиланак застряли между мирами живых и мёртвых и являются призрачными некромантами."
 
- trait_sangun: "Sangun"
- trait_sangun_desc: "The lords in the mountains of Korea, the Sangun are sovereigns that take beastly shapes."
+ trait_sangun: "Сангун"
+ trait_sangun_desc: "Владыки корейских гор, Сангун, - это властелины, принимающие звериный облик."
 
- trait_anh: "Anh"
- trait_anh_desc: "Divergent from the [GetTrait('gangrel').GetName(GetNullCharacter)] but distinct from the Mariners, the Anh are the hidden stalkers of the oceans around Indonesia, Indochina, and Malaysia."
+ trait_anh: "Анх"
+ trait_anh_desc: "Происходя от #TOOLTIP:GAME_TRAIT,gangrel,[GetNullCharacter] #L гангрелов#!#!, но в то же время отличаясь от Мореплавателей, Анх являются скрытыми обитателями океанов вокруг Индонезии, Индокитая и Малайзии."
 
- trait_banpaia: "Banpaia"
- trait_banpaia_desc: "The progeny of a lost [GetTrait('tremere').GetName(GetNullCharacter)] expedition to the East, the Banpaia have found themselves as a new presence in East Asia's night world."
+ trait_banpaia: "Банпайя"
+ trait_banpaia_desc: "Банпайя, потомки пропавшей экспедиции #TOOLTIP:GAME_TRAIT,tremere,[GetNullCharacter] #L тремеров#!#!, отправившейся на Восток, стали новыми представителями ночного мира Восточной Азии."
 
  TRAIT_FLAG_DESC_can_create_gargoyles: "Можно создавать #TOOLTIP:GAME_TRAIT,gargoyle,[GetNullCharacter] #L гаргулий#!#!"
 
@@ -246,7 +246,7 @@
  trait_wanxian: "Ван Сянь"
  trait_wankuei: "Ван Куэй"
  trait_kueijin: "Куэй-дзин"
- trait_kueijin_desc: "Их также называют Ван Куэй, Куэй Жэнь, асуратизайя (в Индии), «Голодные мертвецы» или просто «Восточные вампиры».\n\nГоворят, что Куэй-дзин - это развращённые потомки Ван Сянь, «десяти тысяч героев», избранных [Glossary('Нефритовым императором','podgloss.augustpersonageofjade')] для руководства и защиты вселенной в древней истории. Изначально Ван Сянь выбирались путем испытаний на ловкость и смелость и питались ци вселенной. Однако они утратили благодать, научившись питаться ци живых существ и исказив испытания на достойность.\n\nA Kuei-jin is "born" when their soul escapes from a [UmbraGlossaryLocalized('yomi_wan','Yomi Hell')] after their death. They organize themselves around political Courts and follow a [Glossary('Dharma','podgloss.dharma')] to find a way back to the Heavens."
+ trait_kueijin_desc: "Их также называют Ван Куэй, Куэй Жэнь, асуратизайя (в Индии), «Голодные мертвецы» или просто «Восточные вампиры».\n\nГоворят, что Куэй-дзин - это развращённые потомки Ван Сянь, «десяти тысяч героев», избранных [Glossary('Нефритовым императором','podgloss.augustpersonageofjade')] для руководства и защиты вселенной в древней истории. Изначально Ван Сянь выбирались путем испытаний на ловкость и смелость и питались ци вселенной. Однако они утратили благодать, научившись питаться ци живых существ и исказив испытания на достойность.\n\nКуэй-дзин «рождаются», когда их душа покидает [UmbraGlossaryLocalized('yomi_wan','ад Йоми')] после смерти. Они объединяются вокруг политических дворов и следуют [Glossary('дхармам','podgloss.dharma')], чтобы найти путь обратно на Небеса."
 
  trait_animalism: "Анимализм"
  trait_animalism_desc: "[discipline|E], сближающая вампира с его звериной сущностью. Это не только позволяет им общаться с созданиями природы и добиваться над ними господства, но и дает им возможность влиять на самого #L $pod_the_beast$я#!.\n\nАнимализм особенно распространен среди кланов, наиболее удаленных от человечества, хотя многие его способности направлены именно на Зверей смертных и #L $pod_cainites|l$ов#!."
@@ -349,11 +349,11 @@
  trait_presenceadvanced: "Мастерство присутствия"
  trait_presenceadvanced_desc: "Присутствие - это [discipline|El] сверхъестественного обаяния и эмоционального манипулирования, позволяющая сородичам привлекать, очаровывать и контролировать толпу.\n\nПрисутствие смягчило божье проклятие, наложенное на #L $pod_cainites|l$ов#! тем, что позволяет вампиру стать центром внимания. Либо очаровывая, соблазняя или запугивая тех, кто находится рядом."
 
- trait_kai: "Kai"
- trait_kai_desc: "Kai is a [discipline|E] of inner power based around honour fostered within the users.\n\nThe user of Kai focuses their inner power and resolve into a weapon both martial and coercive."
+ trait_kai: "Кай"
+ trait_kai_desc: "Кай - это [Concept('discipline', 'дисциплина')|E] внутренней силы, основанная на чести, воспитываемой в пользователях.\n\nПользователь Кай превращает свою внутреннюю силу и решимость в оружие, как боевое, так и подневольное."
 
- trait_kaiadvanced: "Kai Advanced" 
- trait_kaiadvanced_desc: "Kai is a [discipline|E] of inner power based around honour fostered within the users.\n\nThe user of Kai focuses their inner power and resolve into a weapon both martial and coercive."
+ trait_kaiadvanced: "Мастерство Кай" 
+ trait_kaiadvanced_desc: "Кай - это [Concept('discipline', 'дисциплина')|E] внутренней силы, основанная на чести, воспитываемой в пользователях.\n\nПользователь Кай превращает свою внутреннюю силу и решимость в оружие, как боевое, так и подневольное."
 
  TRAIT_FLAG_DESC_can_intensify_herd_resonance: "Можно менять интенсивность [Concept('resonance', 'резонанса')|E] членов своего [Concept('POD_herd', 'стада')|E]"
 
@@ -369,11 +369,11 @@
  trait_quietusadvanced: "Мастерство смертоносности"
  trait_quietusadvanced_desc: "Смертоностность - это фирменная [discipline|El] ассамитов, которая дает им возможность влиять на кровь других.\n\nХотя каждая из каст ассамитов владеет смертносностью как внутренней [Concept('Clan', 'клановой')|E] [Concept('discipline', 'дисциплиной')|E], в первую очередь она известна как инструмент убийцы в руках касты воинов, и способности низшего уровня в основном направлены на это."
 
- trait_rift: "Rift"
- trait_rift_desc: "Rift is a [discipline|E] primarily practised by the [GetTrait('kizoku').GetName( GetNullCharacter )] that allows them to use their nightmares to manipulate reality in such ways that heavily benefit their own mobility and subterfuge."
+ trait_rift: "Разлом"
+ trait_rift_desc: "Разлом - это [Concept('discipline', 'дисциплина')|E], которую в основном практикуют [GetTrait('kizoku').GetName( GetNullCharacter )], которая позволяет им использовать свои ночные кошмары для манипулирования реальностью таким образом, который в значительной степени способствует их собственной мобильности и уловкам."
 
- trait_riftadvanced: "Rift Advanced" 
- trait_riftadvanced_desc: "Rift is a [discipline|E] primarily practised by the [GetTrait('kizoku').GetName( GetNullCharacter )] that allows them to use their nightmares to manipulate reality in such ways that heavily benefit their own mobility and subterfuge."
+ trait_riftadvanced: "Мастерство Разлома"
+ trait_riftadvanced_desc: "Разлом - это [Concept('discipline', 'дисциплина')|E], которую в основном практикуют [GetTrait('kizoku').GetName( GetNullCharacter )], которая позволяет им использовать свои ночные кошмары для манипулирования реальностью таким образом, который в значительной степени способствует их собственной мобильности и уловкам."
 
  trait_serpentis: "Серпентис"
  trait_serpentis_desc: "Серпентис - это фирменная [discipline|El] [Concept('Clan', 'клана')|E] Последователей Сета. В первую очередь она даёт способности к изменению формы, хотя также включает в себя соблазнение и другие характеристики, связанные со змеями.\n\nСерпентис имеет почти религиозное значение для [Concept('Clan', 'клана')|E], хотя ученые-сородичи предполагают, что он имеет отношение к меняющим форму способностям Превращения."
@@ -684,7 +684,7 @@
  trait_gangrel_greek_desc: "Греческие гангрелы были ответвлением, зародившимся в Темные века.\n\nГангрелы скрывались в человеческих городах еще до Вавилона. С течением веков эти гангрелы научились выживать в другой среде, таящей свои уникальные опасности."
 
  trait_anda: "Анда"
- trait_anda_desc: "Анда - это [Concept('cainite', 'каинитская')|E] линия крови Гангрелов, существующей среди монголов. Сами они считают себя потомками Итуген, богини земли в монгольской религии.\nTheir regional proximity to the [kuei_jin|E] has often resulted in skirmishes though the mortal Mongol conquests threaten to make the situation much worse."
+ trait_anda_desc: "Анда - это [Concept('cainite', 'каинитская')|E] линия крови Гангрелов, существующей среди монголов. Сами они считают себя потомками Итуген, богини земли в монгольской религии.\nИх региональная близость к [Concept('kuei_jin', 'куэй-дзин')|E] часто приводила к стычкам, хотя завоевания смертных монголов угрожают значительно ухудшить ситуацию."
 
  trait_ahrimane: "Аримейн"
  trait_ahrimane_desc: "Аримейн - редкая, полностью женская линия крови сородичей, существовавшая в Темные века под предводительством женщины по имени Адиса.\n\nИстория Аримейн, как они сами рассказывают, начинается с Адисы, валькирии и дочери Фрейи, скандинавской богини."
@@ -868,7 +868,7 @@
  trait_yang_imbalanced_desc: "Вы обратились к свету и жизни."
 
  trait_dharma: "Дхарма"
- trait_dharma_player_desc: "#medium #V [ROOT.Char.GetFirstNamePossessiveNoTooltip]#! [Glossary('Dharma','podgloss.dharma')] is [ROOT.Char.GetFaith.GetName].#!\n\n#medium;italic #V You#! gain [Glossary('Dharma','podgloss.dharma')] [trait_level_track_xp|E] from these sources:#!\n[GetPlayer.MakeScope.GetScriptValueDesc('POD_kueijin_dharma_xp_active_loca')]\n\n#medium;italic #V You#! also gain #V passive#! [Glossary('Dharma','podgloss.dharma')] [trait_level_track_xp|E] every #V 2#! years:#!\nPassive experience: #TOOLTIP:trait_track_dharma_desc_in_game_tt #L;P +[GetPlayer.MakeScope.ScriptValue('POD_kueijin_dharma_xp_passive')|2]#! #L (see tooltip)#!#!\n#TOOLTIP:trait_track_dharma_desc_insight_passive #L All potential sources of passive experience (see tooltip)#!#!"
+ trait_dharma_player_desc: "#medium [Glossary('Дхарма','podgloss.dharma')] персонажа #V [ROOT.Char.GetFirstNamePossessiveNoTooltip]#! - [ROOT.Char.GetFaith.GetAdjective].#!\n\n#medium;italic #V Вы#! получаете [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] [Glossary('дхармы','podgloss.dharma')] из следующих источников:#!\n[GetPlayer.MakeScope.GetScriptValueDesc('POD_kueijin_dharma_xp_active_loca')]\n\n#medium;italic #V Вы#! также получаете #V пассивный#! [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] [Glossary('дхармы','podgloss.dharma')] каждые #V 2#! года:#!\nПассивный опыт: #TOOLTIP:trait_track_dharma_desc_in_game_tt #L;P +[GetPlayer.MakeScope.ScriptValue('POD_kueijin_dharma_xp_passive')|2]#! #L (см. подсказку)#!#!\n#TOOLTIP:trait_track_dharma_desc_insight_passive #L Все потенциальные источники пассивного опыта (см. подсказку)#!#!"
  trait_track_dharma_desc: "Прозрение - это показатель того, насколько вы близки к продвижению по [Glossary('дхарме','podgloss.dharma')]. Когда [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] достигает первого уровня, уровень вашей дхармы повышается, за исключением 10 уровня."
  trait_track_dharma_desc_in_game_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('POD_kueijin_dharma_xp_passive')]"
  DHARMA_PASSIVE_BOUND_WRAITHS: "Связанные призраки #weak (1 за каждого)#!"
@@ -896,43 +896,43 @@
  DHARMA_PASSIVE_DHARMA9: "У вас есть свойство «[GetTrait('dharma9').GetName(GetPlayer)]»"
  DHARMA_PASSIVE_HARDER: "Из-за [Concept('fifth_age', 'Пятой эпохи')|E] продвигаться по дхарме гораздо труднее"
  DHARMA_PASSIVE_IMPOSSIBLE: "Из-за [Concept('sixth_age', 'Шестой эпохи')|E] продвигаться по дхарме невозможно"
- DHARMA_PASSIVE_DEVIL_FIST_STACKS: "You have [GetPlayer.MakeScope.ScriptValue('demon_arts_devil_fist_modifier_stacks')] [GetModifier('demon_arts_devil_fist_modifier').GetNameWithTooltip]"
- DHARMA_PASSIVE_BLACK_WIND_STACKS: "You have [GetPlayer.MakeScope.ScriptValue('demon_arts_black_wind_modifier_stacks')] [GetModifier('demon_arts_black_wind_modifier').GetNameWithTooltip]"
- DHARMA_PASSIVE_IRON_MOUNTAIN_STACKS: "You have [GetPlayer.MakeScope.ScriptValue('demon_arts_iron_mountain_modifier_stacks')] [GetModifier('demon_arts_iron_mountain_modifier').GetNameWithTooltip]"
- DHARMA_PASSIVE_DEMON_REGALIA_STACKS: "You have [GetPlayer.MakeScope.ScriptValue('demon_arts_demon_regalia_modifier_stacks')] [GetModifier('demon_arts_demon_regalia_modifier').GetNameWithTooltip]"
- DHARMA_PASSIVE_SOUL_ARTS_JOYFUL_SPARK_OF_UNION_PERK: "You have [GetPerk('soul_arts_joyful_spark_of_union_perk').GetName(GetPlayer)]"
- DHARMA_PASSIVE_SOUL_ARTS_FLOWING_CANAL_OF_HELL_PERK: "You have [GetPerk('soul_arts_flowing_canal_of_hell_perk').GetName(GetPlayer)]"
- DHARMA_PASSIVE_SOUL_ARTS_WAX_SEAL_OF_THE_DEMON_KING_PERK: "You have [GetPerk('soul_arts_wax_seal_of_the_demon_king_perk').GetName(GetPlayer)]"
- DHARMA_PASSIVE_SOUL_ARTS_DARK_CULTIVATION_PERK: "You have [GetPerk('soul_arts_dark_cultivation_perk').GetName(GetPlayer)]"
- DHARMA_PASSIVE_SOUL_ARTS_INFERNAL_ROAD_PERK: "You have [GetPerk('soul_arts_infernal_road_perk').GetName(GetPlayer)]"
- DHARMA_PASSIVE_SOUL_ARTS_BREAKING_THE_DRAGONS_NECK_PERK: "You have [GetPerk('soul_arts_breaking_the_dragons_neck_perk').GetName(GetPlayer)]"
+ DHARMA_PASSIVE_DEVIL_FIST_STACKS: "У вас есть модификатор [GetPlayer.MakeScope.ScriptValue('demon_arts_devil_fist_modifier_stacks')] [GetModifier('demon_arts_devil_fist_modifier').GetNameWithTooltip]"
+ DHARMA_PASSIVE_BLACK_WIND_STACKS: "У вас есть модификатор [GetPlayer.MakeScope.ScriptValue('demon_arts_black_wind_modifier_stacks')] [GetModifier('demon_arts_black_wind_modifier').GetNameWithTooltip]"
+ DHARMA_PASSIVE_IRON_MOUNTAIN_STACKS: "У вас есть модификатор [GetPlayer.MakeScope.ScriptValue('demon_arts_iron_mountain_modifier_stacks')] [GetModifier('demon_arts_iron_mountain_modifier').GetNameWithTooltip]"
+ DHARMA_PASSIVE_DEMON_REGALIA_STACKS: "У вас есть модификатор [GetPlayer.MakeScope.ScriptValue('demon_arts_demon_regalia_modifier_stacks')] [GetModifier('demon_arts_demon_regalia_modifier').GetNameWithTooltip]"
+ DHARMA_PASSIVE_SOUL_ARTS_JOYFUL_SPARK_OF_UNION_PERK: "У вас есть достоинство «[GetPerk('soul_arts_joyful_spark_of_union_perk').GetName(GetPlayer)]»"
+ DHARMA_PASSIVE_SOUL_ARTS_FLOWING_CANAL_OF_HELL_PERK: "У вас есть достоинство «[GetPerk('soul_arts_flowing_canal_of_hell_perk').GetName(GetPlayer)]»"
+ DHARMA_PASSIVE_SOUL_ARTS_WAX_SEAL_OF_THE_DEMON_KING_PERK: "У вас есть достоинство «[GetPerk('soul_arts_wax_seal_of_the_demon_king_perk').GetName(GetPlayer)]»"
+ DHARMA_PASSIVE_SOUL_ARTS_DARK_CULTIVATION_PERK: "У вас есть достоинство «[GetPerk('soul_arts_dark_cultivation_perk').GetName(GetPlayer)]»"
+ DHARMA_PASSIVE_SOUL_ARTS_INFERNAL_ROAD_PERK: "У вас есть достоинство «[GetPerk('soul_arts_infernal_road_perk').GetName(GetPlayer)]»"
+ DHARMA_PASSIVE_SOUL_ARTS_BREAKING_THE_DRAGONS_NECK_PERK: "У вас есть достоинство «[GetPerk('soul_arts_breaking_the_dragons_neck_perk').GetName(GetPlayer)]»"
 
  #TODO reactivate and clean for Asia culture
- DHARMA_PASSIVE_AINU_HIGH_DEVELOPMENT: "#warning This part is waiting for All Under Heaven DLC for proper activation.#! Total [development|E] of Ainu culture provinces in your [realm|E] exceeds #V 50#!"
- DHARMA_PASSIVE_HIGH_DEVELOPMENT: "Total [development|E] of provinces in your [realm|E] exceeds #V 100#!"
- DHARMA_PASSIVE_ILL_COURTIER: "At least one of your courtiers is sick"
- DHARMA_PASSIVE_LOW_LEGITIMACY: "Your legitimacy is either #V $legitimacy_level_0_name$#! or #V $legitimacy_level_1_name$#!"
- DHARMA_PASSIVE_HAVE_TYRANNY: "You have at least 1 [tyranny|E]"
- DHARMA_PASSIVE_COASTAL_CAPITAL: "Your capital is on the coast"
- DHARMA_PASSIVE_HAN_HIGH_DEVELOPMENT: "Total [development|E] of [GetCultureByKey('han').GetName] provinces in your [realm|E] exceeds #V 50#!"
+ DHARMA_PASSIVE_AINU_HIGH_DEVELOPMENT: "#warning Эта часть ожидает соответствующей активации в дополнении All Under Heaven.#! Общее [Concept('development', 'развитие')|E] провинций с айнской культурой в вашей [Concept('realm', 'державе')|E] превышает #V 50#!"
+ DHARMA_PASSIVE_HIGH_DEVELOPMENT: "Общее [Concept('development', 'развитие')|E] провинций в вашей [Concept('realm', 'державе')|E] превышает #V 100#!"
+ DHARMA_PASSIVE_ILL_COURTIER: "По крайней мере, один из ваших придворных болен"
+ DHARMA_PASSIVE_LOW_LEGITIMACY: "Ваш уровень легитимности - #V $legitimacy_level_0_name$#! или #V $legitimacy_level_1_name$#!"
+ DHARMA_PASSIVE_HAVE_TYRANNY: "У вас не менее 1 ед. [Concept('tyranny', 'тирании')|E]"
+ DHARMA_PASSIVE_COASTAL_CAPITAL: "Ваша столица расположена на побережье"
+ DHARMA_PASSIVE_HAN_HIGH_DEVELOPMENT: "Общее [Concept('development', 'развитие')|E] #L [GetCultureByKey('han').GetCollectiveNoun|l]их#! провинций в вашей [Concept('realm', 'державе')|E] превышает #V 50#!"
 
- DHARMA_PASSIVE_GARDEN_OF_SAMCHOK_01: "You have [GetBuilding('garden_of_samchok_01').GetName]"
- DHARMA_PASSIVE_TEMPLE_OF_THE_LOTUS_POND_IN_WINTER_01: "You have [GetBuilding('temple_of_the_lotus_pond_in_winter_01').GetName]"
+ DHARMA_PASSIVE_GARDEN_OF_SAMCHOK_01: "[GetBuilding('garden_of_samchok_01').GetName] находится под вашим контролем"
+ DHARMA_PASSIVE_TEMPLE_OF_THE_LOTUS_POND_IN_WINTER_01: "[GetBuilding('temple_of_the_lotus_pond_in_winter_01').GetName] находится под вашим контролем"
 
- DHARMA_PASSIVE_KI_CHUAN: "You have the [GetPODArtifactName('ki_chuan')]"
- DHARMA_PASSIVE_RED_BOOK_OF_THE_IRON_BRIDGE: "You have the [GetPODArtifactName('red_book_of_the_iron_bridge')]"
- DHARMA_PASSIVE_THE_BLOOD_SUTRAS: "You have [GetPODArtifactName('the_blood_sutras')]"
- DHARMA_PASSIVE_THE_MIDNIGHT_JEWEL: "You have [GetPODArtifactName('the_midnight_jewel')]"
- DHARMA_PASSIVE_THE_HOLLOW_REED: "You have [GetPODArtifactName('the_hollow_reed')]"
- DHARMA_PASSIVE_BOOK_OF_THE_NINTH_IMMORTAL: "You have the [GetPODArtifactName('book_of_the_ninth_immortal')]"
- DHARMA_PASSIVE_THE_CELESTIAL_NAIL: "You have [GetPODArtifactName('the_celestial_nail')]"
- DHARMA_PASSIVE_SEVEN_SCRIPTURES_OF_IMMORTAL_INIQUITY: "You have the [GetPODArtifactName('seven_scriptures_of_immortal_iniquity')]"
- DHARMA_PASSIVE_DELECTATIONS_OF_THE_FLOWERS_OF_BLOOD: "You have [GetPODArtifactName('delectations_of_the_flowers_of_blood')]"
+ DHARMA_PASSIVE_KI_CHUAN: "[GetPODArtifactName('ki_chuan')] принадлежит вам"
+ DHARMA_PASSIVE_RED_BOOK_OF_THE_IRON_BRIDGE: "[GetPODArtifactName('red_book_of_the_iron_bridge')] принадлежит вам"
+ DHARMA_PASSIVE_THE_BLOOD_SUTRAS: "[GetPODArtifactName('the_blood_sutras')] принадлежит вам"
+ DHARMA_PASSIVE_THE_MIDNIGHT_JEWEL: "[GetPODArtifactName('the_midnight_jewel')] принадлежит вам"
+ DHARMA_PASSIVE_THE_HOLLOW_REED: "[GetPODArtifactName('the_hollow_reed')] принадлежит вам"
+ DHARMA_PASSIVE_BOOK_OF_THE_NINTH_IMMORTAL: "[GetPODArtifactName('book_of_the_ninth_immortal')] принадлежит вам"
+ DHARMA_PASSIVE_THE_CELESTIAL_NAIL: "[GetPODArtifactName('the_celestial_nail')] принадлежит вам"
+ DHARMA_PASSIVE_SEVEN_SCRIPTURES_OF_IMMORTAL_INIQUITY: "[GetPODArtifactName('seven_scriptures_of_immortal_iniquity')] принадлежит вам"
+ DHARMA_PASSIVE_DELECTATIONS_OF_THE_FLOWERS_OF_BLOOD: "[GetPODArtifactName('delectations_of_the_flowers_of_blood')] принадлежит вам"
 
- DHARMA_PASSIVE_BLACK_LOTUS_TEMPLE_01: "You have [GetBuilding('black_lotus_temple_01').GetName]"
- DHARMA_PASSIVE_MT_MERU_01: "You have [GetBuilding('mt_meru_01').GetName]"
+ DHARMA_PASSIVE_BLACK_LOTUS_TEMPLE_01: "[GetBuilding('black_lotus_temple_01').GetName] находится под вашим контролем"
+ DHARMA_PASSIVE_MT_MERU_01: "[GetBuilding('mt_meru_01').GetName] находится под вашим контролем"
 
- DHARMA_XP_DOMICILE_MULT: "Due to your [domicile_buildings|E] #weak (multiplicative)#!"
+ DHARMA_XP_DOMICILE_MULT: "От ваших [Concept('domicile_buildings', 'построек поместья')|E] #weak (складывающееся значение)#!"
 
  trait_track_dharma_desc_insight_active: "[GetPlayer.MakeScope.GetScriptValueDesc('POD_kueijin_dharma_xp_active_loca')]"
  trait_track_dharma_desc_insight_passive: "[GetPlayer.MakeScope.GetScriptValueDesc('POD_kueijin_dharma_xp_passive_loca')]"
@@ -943,7 +943,7 @@
  DHARMA_ACTIVE_DECLEAR_WAR: "Объявить войну"
  DHARMA_ACTIVE_COMMIT_HEINOUS_ACT: "Совершить отвратительный поступок (например, пытки)"
  DHARMA_ACTIVE_ADOPT_NEW_KJ: "Усыновить только что пробудившегося $POD_splat_kueijin$"
- DHARMA_ACTIVE_DRINK_BLOOD: "Drinking blood"
+ DHARMA_ACTIVE_DRINK_BLOOD: "Пить кровь"
  DHARMA_ACTIVE_MEDITATE: "Медитировать"
  DHARMA_ACTIVE_LOSE_RELATION: "Потерять [Concept('relation', 'отношения')|E]"
  DHARMA_ACTIVE_KILL_RELATION: "Убить персонажа, как то [Concept('relation', 'связанного')|E] с вами"
@@ -957,28 +957,28 @@
  DHARMA_ACTIVE_SPEND_5_BLOOD: "Потратить 5 ед. крови через уникальное [Concept('decision', 'решение')|E]"
  DHARMA_ACTIVE_SPEND_1000_PIETY: "Потратить 1000 [Concept('piety', 'благочестия')|E] через уникальное [Concept('decision', 'решение')|E]"
 
- DHARMA_ACTIVE_KILL_MALE_JAPANESE: "#warning This part is waiting for All Under Heaven DLC for proper activation.#! Kill a [kuei_jin|E] male character with Yamato [culture|E]"
- DHARMA_ACTIVE_SEDUCE_FEMALE_JAPANESE: "#warning This part is waiting for All Under Heaven DLC for proper activation.#! Seduce a [kuei_jin|E] female character with Yamato [culture|E]"
- DHARMA_ACTIVE_IMPROVE_DUCAL_BUILDING: "Build or improve a [duchy_building|E]"
- DHARMA_ACTIVE_KILL_RAVNOS: "Kill a [GetTrait('ravnos').GetName(GetNullCharacter)] $POD_splat_vampire$"
- DHARMA_ACTIVE_CONVERT_HENGEYOKAI: "#warning This part is waiting for proper activation and isn't available yet.#! Convert an Hengeyokai ($glossary_fera$)."
- DHARMA_ACTIVE_UNLEASH_EPIDEMIC: "Unleash an [epidemic|E] #weak Starting one with Poxes Shintai count.#!"
- DHARMA_ACTIVE_DECLEAR_WAR_AGAINST_KJ: "Declare a war against a $POD_splat_kueijin$"
- DHARMA_ACTIVE_TORTURE_KJ: "Torture a $POD_splat_kueijin$"
- DHARMA_ACTIVE_CONVERT_ANDA: "#warning This part is waiting for proper activation and isn't available yet.#! Convert a [GetFaithByKey('viayasaq').GetName] character."
- DHARMA_ACTIVE_DECLEAR_WAR_AGAINST_OTHER_AKUMA: "Declare a war against an [akuma|E] of a different [faith|E]"
- DHARMA_ACTIVE_TORTURE_OTHER_AKUMA: "Torture an [akuma|E] of a different [faith|E]"
- DHARMA_ACTIVE_UNLOCK_OR_USE_STORM_SHINTAI: "Unlock Storm Shintai [perks|E] or use them"
- DHARMA_ACTIVE_CONVERT_NAGAH: "#warning This part is waiting for proper activation and isn't available yet.#! Convert a [GetTrait('nagah').GetName(GetNullCharacter)]"
- DHARMA_ACTIVE_DECLEAR_WAR_AGAINST_PENANGALLAN: "Declare a war against a #TOOLTIP:PENANGALLAN_EXPLANATION Penangallan#!"
- PENANGALLAN_EXPLANATION: "Character of [GetReligionByKey('thrashingdragons_religion').GetName] [religion] or [GetFaithByKey('brillant_coals').GetName] [faith|E]"
- DHARMA_ACTIVE_CONVERT_SORCERER_OR_MAGE: "#warning This part is waiting for proper activation and isn't available yet.#! Convert a [GetTrait('mage').GetName(GetNullCharacter)] or [GetTrait('sorcerer').GetName(GetNullCharacter)]"
- DHARMA_ACTIVE_HUNT: "Start an hunt"
+ DHARMA_ACTIVE_KILL_MALE_JAPANESE: "#warning Эта часть ожидает соответствующей активации в дополнении All Under Heaven.#! Убить [Concept('kuei_jin', 'куэй-дзин')|E] мужского пола с [Concept('culture', 'культурой')|E] ямато"
+ DHARMA_ACTIVE_SEDUCE_FEMALE_JAPANESE: "#warning Эта часть ожидает соответствующей активации в дополнении All Under Heaven.#! Соблазнить [Concept('kuei_jin', 'куэй-дзин')|E] женского пола с [Concept('culture', 'культурой')|E] ямато"
+ DHARMA_ACTIVE_IMPROVE_DUCAL_BUILDING: "Построить или улучшить [Concept('duchy_building', 'герцогскую постройку')|E]"
+ DHARMA_ACTIVE_KILL_RAVNOS: "Убить вампира-[GetTrait('ravnos').GetName(GetNullCharacter)|l]"
+ DHARMA_ACTIVE_CONVERT_HENGEYOKAI: "#warning Эта часть ожидает соответствующей активации и пока недоступна.#! Обратить хенгейокай ($glossary_fera$)."
+ DHARMA_ACTIVE_UNLEASH_EPIDEMIC: "Наслать [Concept('epidemic', 'поветрие')|E] #weak Начинает учитываться с синтай Оспы.#!"
+ DHARMA_ACTIVE_DECLEAR_WAR_AGAINST_KJ: "Объявить войну против $POD_splat_kueijin$"
+ DHARMA_ACTIVE_TORTURE_KJ: "Пытать $POD_splat_kueijin$"
+ DHARMA_ACTIVE_CONVERT_ANDA: "#warning Эта часть ожидает соответствующей активации и пока недоступна.#! Обратить #L [GetFaithByKey('viayasaq').GetName|l]ого#! персонажа."
+ DHARMA_ACTIVE_DECLEAR_WAR_AGAINST_OTHER_AKUMA: "Объявить войну против [Concept('akuma', 'акума')|E] с другой [Concept('faith', 'конфессией')|E]"
+ DHARMA_ACTIVE_TORTURE_OTHER_AKUMA: "Пытать [Concept('akuma', 'акума')|E] с другой [Concept('faith', 'конфессией')|E]"
+ DHARMA_ACTIVE_UNLOCK_OR_USE_STORM_SHINTAI: "Разблокировать [Concept('perks', 'достоинства')|E] синтай Шторма или использовать их"
+ DHARMA_ACTIVE_CONVERT_NAGAH: "#warning Эта часть ожидает соответствующей активации и пока недоступна.#! Обратить [GetTrait('nagah').GetName(GetNullCharacter)|l]"
+ DHARMA_ACTIVE_DECLEAR_WAR_AGAINST_PENANGALLAN: "Обратить войну против #TOOLTIP:PENANGALLAN_EXPLANATION пенангаллан#!"
+ PENANGALLAN_EXPLANATION: "Персонажи с #L [GetReligionByKey('thrashingdragons_religion').GetName|l]ой#! [Concept('religion', 'религией')|E] или #L [GetFaithByKey('brillant_coals').GetName|l]ой#! [Concept('faith', 'конфессией')|E]"
+ DHARMA_ACTIVE_CONVERT_SORCERER_OR_MAGE: "#warning Эта часть ожидает соответствующей активации и пока недоступна.#! Обратить #TOOLTIP:GAME_TRAIT,mage,[GetNullCharacter] #L мага#!#! или #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародея#!#!"
+ DHARMA_ACTIVE_HUNT: "Устроить охоту"
 
  trait_dharma10: "Дхарма 10"
  trait_dharma10_desc: "Тот, кто превзошёл свою [Glossary('дхарму','podgloss.dharma')] и достиг дверей [Glossary('Сотни облаков','podgloss.hundredclouds')]."
  trait_dharma10_stayed_desc: "[Glossary('Архатом','podgloss.arhat')] называют того, кто достиг последней ступени на Пути Назад и обрёл Просветление. Многие, не задумываясь, уходят в [Glossary('Сто облаков','podgloss.hundredclouds')], как только получают такую возможность, но эта горстка остаётся в мире смертных."
- TRAIT_FLAG_DESC_warning_dharma10_flag: "\n#X Will downgrade to [GetTrait('dharma9').GetName(GetNullCharacter)] on any [mental_break|E]#!"
+ TRAIT_FLAG_DESC_warning_dharma10_flag: "\n#X Понизится до «[GetTrait('dharma9').GetName(GetNullCharacter)]» при любом [Concept('mental_break', 'нервном срыве')|E]#!"
 
  trait_dharma9: "Дхарма 9"
  trait_dharma9_player_desc: "$trait_dharma_player_desc$\n\n\n$trait_dharma9_desc$"
@@ -1041,18 +1041,18 @@
  trait_chihmei_desc: "Едва разумное существо, над которым довлеет жажда Ци и которое вынуждено жить плотью. За персонажа, попавшего под власть чин-мэй, нельзя играть."
  trait_chihmei_dharma_desc: "С помощью ритуала чин-мэй могут быть возвращены к дхармическому балансу и цивилизованы, вновь пробудив свое высшее сознание (хунь) и превратившись в плодотворную нежить под действием истинной дхармы."
 
- trait_chi_art_feng_shui: "Feng Shui"
- trait_chi_art_feng_shui_desc: "The Chi Arts are different from other arts, newly developed as an advanced use of pure Chi. They are also the furthest from the Hungry Dead's existence; to cultivate them requires a mentor.\n\nFeng Shui is an ancient geomantic art that specializes in the proper and auspicious alignment of buildings, graves, and interiors, in accordance with heavenly emanations and earthly configurations, allowing the Chi to flow freely in order to harmonize individuals with their surrounding environment."
- trait_chi_art_obligation: "Obligation"
- trait_chi_art_obligation_desc: "The Chi Arts are different from other arts, newly developed as an advanced use of pure Chi. They are also the furthest from the Hungry Dead's existence; to cultivate them requires a mentor.\n\nObligation is an art that allows a [kuei_jin|E] to exert control over others. It is a callback to the glory of the ancient Wan Xian and their authority that stemmed from a mandate from the [Glossary('August Personage of Jade','podgloss.augustpersonageofjade')] himself. While they have lost this favor, some still manage to inspire or dominate the spirits of those around them."
- trait_chi_art_tapestry: "Tapestry"
- trait_chi_art_tapestry_desc: "The Chi Arts are different from other arts, newly developed as an advanced use of pure Chi. They are also the furthest from the Hungry Dead's existence; to cultivate them requires a mentor.\n\nTapestry is the chi art of using dragon lines to their full potential. Through practice of Tapestry, the vampire attunes himself to Yin and Yang forces in the wind, water, and soil, then manipulates those forces for a variety of efforts."
- trait_chi_art_prana: "Prana"
- trait_chi_art_prana_desc: "The Chi Arts are different from other arts, newly developed as an advanced use of pure Chi. They are also the furthest from the Hungry Dead's existence; to cultivate them requires a mentor.\n\nPrana is the chi art of using both sides of Chi, Yin and Yang. A practicioner can attune themselves to the energies of death and life respectively, or use their confluence to heal wounds."
- trait_chi_art_kiai: "Kiai"
- trait_chi_art_kiai_desc: "The Chi Arts are different from other arts, newly developed as an advanced use of pure Chi. They are also the furthest from the Hungry Dead's existence; to cultivate them requires a mentor.\n\nKiai is the chi art of channeling the wrath of the Demon through the voice, an imposing technique that has a variety of applications on the battlefield."
- trait_chi_art_tzu_wei: "Tzu Wei"
- trait_chi_art_tzu_wei_desc: "The Chi Arts are different from other arts, newly developed as an advanced use of pure Chi. They are also the furthest from the Hungry Dead's existence; to cultivate them requires a mentor.\n\nTzu Wei is the chi art of reading and manipulating horoscopes. When [kuei_jin|E] practice Tzu Wei, they can shape destiny itself and bend the forces of luck to their will."
+ trait_chi_art_feng_shui: "Фэн-шуй"
+ trait_chi_art_feng_shui_desc: "Искусства ци отличаются от других искусств, они были разработано недавно как усовершенствованное использование чистой ци. Они также являются самыми далёкими от существования Голодных мертвецов; для их развития требуется наставник.\n\nФэн-шуй - это древнее геомантическое искусство, которое специализируется на правильном и благоприятном расположении зданий, могил и интерьеров в соответствии с небесными излучениями и земными конфигурациями, позволяя ци свободно течь, чтобы гармонизировать людей с окружающей их средой."
+ trait_chi_art_obligation: "Обязательство"
+ trait_chi_art_obligation_desc: "Искусства ци отличаются от других искусств, они были разработано недавно как усовершенствованное использование чистой ци. Они также являются самыми далёкими от существования Голодных мертвецов; для их развития требуется наставник.\n\nОбязательство - это искусство, которое позволяет [Concept('kuei_jin', 'куэй-дзин')|E] осуществлять контроль над другими. Это напоминание о славе древних Ван Сянь и их авторитете, который проистекал из мандата самого [Glossary('Нефритового императора','podgloss.augustpersonageofjade')]. Несмотря на то, что они утратили эту благосклонность, некоторым все еще удается вдохновлять окружающих или доминировать над ними."
+ trait_chi_art_tapestry: "Ткачество"
+ trait_chi_art_tapestry_desc: "Искусства ци отличаются от других искусств, они были разработано недавно как усовершенствованное использование чистой ци. Они также являются самыми далёкими от существования Голодных мертвецов; для их развития требуется наставник.\n\nТкачество - это искусство ци, в котором драконьи линии используются в полной мере. Занимаясь Ткачеством, вампир настраивается на силы Инь и Ян в ветре, воде и почве, а затем манипулирует этими силами для различных целей."
+ trait_chi_art_prana: "Прана"
+ trait_chi_art_prana_desc: "Искусства ци отличаются от других искусств, они были разработано недавно как усовершенствованное использование чистой ци. Они также являются самыми далёкими от существования Голодных мертвецов; для их развития требуется наставник.\n\nПрана - это искусство использования обеих аспектов ци, Инь и Ян. Практикующий может настроить себя на энергии смерти и жизни соответственно или использовать их слияние для исцеления ран."
+ trait_chi_art_kiai: "Киаи"
+ trait_chi_art_kiai_desc: "Искусства ци отличаются от других искусств, они были разработано недавно как усовершенствованное использование чистой ци. Они также являются самыми далёкими от существования Голодных мертвецов; для их развития требуется наставник.\n\nКиаи - это искусство ци направлять гнев Демона с помощью голоса, впечатляющая техника, которая имеет множество применений на поле боя."
+ trait_chi_art_tzu_wei: "Цу Вэй"
+ trait_chi_art_tzu_wei_desc: "Искусства ци отличаются от других искусств, они были разработано недавно как усовершенствованное использование чистой ци. Они также являются самыми далёкими от существования Голодных мертвецов; для их развития требуется наставник.\n\nЦу Вэй - это искусство ци читать гороскопы и манипулировать ими. Когда [Concept('kuei_jin', 'куэй-дзин')|E] практикуют Цу Вэй, они могут формировать саму судьбу и подчинять силы удачи своей воле."
 
  trait_shih: "Ши"
  trait_shih_desc: "Легенды утверждают, что истоки ши лежат в И во времена династии Шань. Они ходят в одиночестве во тьме, сражаясь с силами Тысячи преисподен лишь силой своих рук и воли. Более 3 000 лет назад ши впервые вступили в бой с шэнь. Хотя гордых домов ши больше нет, их традиции живут, и рассказ об их происхождении - одна из самых почитаемых историй."
@@ -1097,8 +1097,8 @@
 
  trait_mummy: "Мумия"
  trait_mummy_desc: "Мумии, также называемые Вечными или Перерожденными, - бессмертные существа, чьи тела были сохранены ритуалом."
- trait_track_mummy: "Memories"
- trait_track_mummy_desc: "To gain memories, you either have to be in your [POD_homeland|E] or construct specific [domicile_buildings|E]"
+ trait_track_mummy: "Воспоминаний"
+ trait_track_mummy_desc: "Чтобы получить воспоминания, вы должны либо находиться в своей [Concept('POD_homeland', 'родине')|E], либо построить определённые [Concept('domicile_buildings', 'постройки поместья')|E]."
 
  trait_shemsuheru: "Шемсу-Геру"
  trait_shemsuheru_desc: "Всегда есть первые, и среди Бессмертных эта честь принадлежит Шемсу-Геру, друзьям или спутникам Гора. Созданные Исидой и её сестрой, изначально для того, чтобы служить Гору и следовать за ним, они являются древнейшими Вечными в мире."
@@ -1115,10 +1115,10 @@
  trait_asekh_sen: "Асех-Сен"
  trait_asekh_sen_desc: "Не являясь полноценными бессмертными, эти существа обычно напоминают неуклюжие трупы, одержимые проклятием, которое наполняет ожившее существо кипящей ненавистью ко всему живому."
 
- trait_integrity: "Integrity"
- trait_integrity_desc: "Integrity is a generalized measure of how well a Mummy aligns with their judges' wishes. Mummies with low integrity can be judged quite harshly (or worse) when they enter the [UmbraGlossary('shadowlands')] to prepare for their next life."
- trait_track_integrity: "Integrity"
- trait_track_integrity_desc: "#medium Integrity is a virtue type system.\n\n#bold Gain Integrity by:#!\n$BULLET_WITH_TAB$Killing with a valid reason: #P +1#!\n$BULLET_WITH_TAB$Giving gifts: #P +2#!\n$BULLET_WITH_TAB$Healing: #P +3#!\n\n#bold Lose Integrity by:#!\n$BULLET_WITH_TAB$Killing without a valid reason: #N -3#!\n$BULLET_WITH_TAB$Committing a heinous act (e.g. torture): #N -2#!\n$BULLET_WITH_TAB$Committing theft: #N -1#!#!"
+ trait_integrity: "Целостность"
+ trait_integrity_desc: "Целостность - это общий показатель того, насколько мумия соответствует пожеланиям судей. Мумии с низкой степенью целостности могут быть осуждены довольно сурово (или ещё хуже), когда они попадают в [UmbraGlossaryLocalized('shadowlands','Загробный мир')], чтобы подготовиться к своей следующей жизни."
+ trait_track_integrity: "Целостность"
+ trait_track_integrity_desc: "#medium Целостность - это система типа добродетели.\n\n#bold Целостность можно получить:#!\n$BULLET_WITH_TAB$Убивая по веской причине: #P +1#!\n$BULLET_WITH_TAB$Даря подарки: #P +2#!\n$BULLET_WITH_TAB$Исцеляя: #P +3#!\n\n#bold Целостность снижается:#!\n$BULLET_WITH_TAB$При убийствах без веской причины: #N -3#!\n$BULLET_WITH_TAB$При совершении отвратительных деяний (например, пытки): #N -2#!\n$BULLET_WITH_TAB$Совершая воровство: #N -1#!#!"
 
 
  trait_automaton: "Автоматон"
@@ -1164,9 +1164,9 @@
  trait_haint_desc: "Миражи попадают в [UmbraGlossaryLocalized('shadowlands','Загробный мир')], контролируя свои Тени, как это делают умертвия. В отличие от умертвий, Миражи определяются не своей смертью, а жизнью. До своей смерти они вели почти нечеловеческий образ жизни, оставаясь среди Скоротечных."
 
  trait_dhampyr: "Дампир"
- trait_dhampyr_desc: "Дампиры, которых также называют Ходящими в тени или Сумеречными детьми, - это (редкие) дети [GetTrait('kueijin').GetName( GetNullCharacter )|l]. Blessed with long lives and uncanny luck, they are however hampered by their constant state of half death and the expectations of service put upon them by their [kuei_jin|E] parent."
- trait_golden_children: "Golden Child"
- trait_golden_children_desc: "The Golden Children (or Jin Hai) were once the spiritually blessed children of the Ten Thousand Warriors of legend. As they were mortals, they were heroes of the people until they were massacred by their corrupt [kuei_jin|E] parents and reduced to the state of dhampyr."
+ trait_dhampyr_desc: "Дампиры, которых также называют Ходящими в тени или Сумеречными детьми, - это (редкие) дети [GetTrait('kueijin').GetName( GetNullCharacter )|l]. Им дарована долгая жизнь и невероятная удача, однако им мешает постоянное состояние полусмерти и ожидания служения, возлагаемые на них родителями [Concept('kuei_jin', 'куэй-дзин')|E]."
+ trait_golden_children: "Золотое дитя"
+ trait_golden_children_desc: "Золотые дети (или Цзинь Хай) когда-то были духовно благословленными детьми легендарных Десяти тысяч воинов. Будучи смертными, они были героями народа, пока не были убиты своими осквернёнными родителями и низведены до состояния дампиров."
 
  trait_arcanos_argos: "Аргос"
  trait_arcanos_argos_desc: "Пользователи Аргоса могут манипулировать, перемещаться и путешествовать по [UmbraGlossaryLocalized('pod_realm_tempest','Буре')]."
@@ -1247,7 +1247,7 @@
  trait_sorcerer: "Чародей"
  trait_sorceress: "Чародейка"
  trait_rune_wise: "Рунный маг"
- trait_sorcerer_desc: "Этот персонаж использует линейные пути низшей магии.\nSorcerers work within the confines of reality's rules to make great things happen but they are still a far cry from Mages, those willworkers that can shape reality itself."
+ trait_sorcerer_desc: "Этот персонаж использует линейные пути низшей магии.\nЧародеи работают в рамках правил реальности, чтобы свершать великие дела, но они всё ещё далеки от магов, тех волевых творцов, которые могут формировать саму реальность."
  trait_theurgist: "Теург"
  trait_theurgist_desc: "Этот персонаж практикует особую ветвь колдовства, основанную на иудейском мистицизме или учениях эзотерического христианства."
 
@@ -1297,16 +1297,16 @@
  trait_demonology_kueijin_desc: "Демонология - это призыв и власть над бэйнами, спектрами и другими злыми духами. Многие [GetTrait('kueijin').GetName( GetNullCharacter )|l] практикуют это в той или иной степени. Такая практика даже является одной из особенностей дхармы Тигра-дьявола. Они считают ее естественной частью своей религиозной практики и создали литературу по практическим аспектам этого предмета, столь же обширную в своем роде, как и магические библиотеки У Лун и Ордена Гермеса. Демонология вполне легальна, хотя за пределами кругов Тигра-дьявола она часто считается крайне дурной приметой"
 
  trait_hun_and_po: "Хунь и П'о"
- trait_hun_and_po_desc: "Ходят слухи, что один или несколько Салюбри на самом деле пробудили свои Хунь и По, чтобы стать полноценными $pod_wan_kuei$... though it is contested and very much turned to derision by the [kuei_jin|E] themselves.\nIf it turns out to be true however, there might be a way for [cainite|E]s to learn the powers of their Eastern cousins."
+ trait_hun_and_po_desc: "Ходят слухи, что один или несколько Салюбри на самом деле пробудили свои Хунь и По, чтобы стать полноценными $pod_wan_kuei$... хотя это оспаривается и во многом высмеивается самими [Concept('kuei_jin', 'куэй-дзин')|E].\nОднако, если это окажется правдой, у [Concept('cainite', 'каинитов')|E] может появиться способ изучить силы своих восточных собратьев."
 
  TRAIT_FLAG_DESC_immortality: "#P @goodhealth_icon!Бессмертие#!"
- TRAIT_FLAG_DESC_cannot_heal_naturaly: "#N @neardeath_icon!Cannot heal naturally#!"
- TRAIT_FLAG_DESC_torpor_heal: "Every 2 years, either convert [POD_aggravated_damage|E] into [POD_superficial_damage|E] or heal [POD_superficial_damage|E]"
+ TRAIT_FLAG_DESC_cannot_heal_naturaly: "#N @neardeath_icon!Не может исцеляться естественным путём#!"
+ TRAIT_FLAG_DESC_torpor_heal: "Преобразовывает [Concept('POD_aggravated_damage', 'серьёзный урон')|E] в [Concept('POD_superficial_damage', 'поверхностный')|E], либо исцеляет [Concept('POD_superficial_damage', 'поверхностный урон')|E] каждые 2 года"
 
 
 
- TRAIT_FLAG_DESC_yin_imbalanced: "Позволяет поглотить Ци Инь сверх предела добродетели Инь без негативных последствий"
- TRAIT_FLAG_DESC_yang_imbalanced: "Позволяет поглотить Ци Ян сверх предела добродетели Ян без негативных последствий"
+ TRAIT_FLAG_DESC_yin_imbalanced: "Позволяет поглотить ци Инь сверх предела добродетели Инь без негативных последствий"
+ TRAIT_FLAG_DESC_yang_imbalanced: "Позволяет поглотить ци Ян сверх предела добродетели Ян без негативных последствий"
 
  trait_permanent_maimed: "Необратимое увечье"
  trait_permanent_one_eyed: "Необратимое одноглазие"
@@ -1374,14 +1374,14 @@
  TRAIT_FLAG_DESC_bypass_mental_defenses: "Может прорвать сильную ментальную защиту"
 
  TRAIT_FLAG_DESC_immunity_to_the_delirium: "Иммунитет к делириуму"
- TRAIT_FLAG_DESC_regeneration: "Heal every year instead of every 2 years. Every 3 months, heal all maims."
+ TRAIT_FLAG_DESC_regeneration: "Исцеляет каждый год, а не каждые 2 года. Каждые 3 месяца исцеляет все увечья."
  TRAIT_FLAG_DESC_resurrection: "Позволяет воскрешать персонажа, если он умирает от неестественных причин"
 
  TRAIT_FLAG_DESC_capture_immunity: "Вас больше не смогут пленить во время [Concept('sieges', 'осад')|E] или [Concept('raids', 'налётов')|E]"
  TRAIT_FLAG_DESC_avoid_combat_wound: "Меньше шансов получить ранение или погибнуть в бою."
  TRAIT_FLAG_DESC_strong_mental_defenses: "Невосприимчивость к враждебным ментальным [Concept('character_interaction', 'взаимодействиям персонажа')|E]."
 
- TRAIT_FLAG_DESC_cannot_shapeshift: "#X @warning_icon! Cannot shapeshift#!"
+ TRAIT_FLAG_DESC_cannot_shapeshift: "#X @warning_icon! Нельзя сменить облик#!"
 
  trait_azhi_dahaka_scholar: "Учёный Ажи Дахака"
  trait_azhi_dahaka_scholar_desc: "Этот персонаж стремится познать Ажи Дахака, просветленное и высшее состояние бытия, которое может быть достигнуто в результате широкого использования дисциплины Изменчивости."
@@ -1417,7 +1417,7 @@
  trait_track_ashen_ambassador_desc: "#bold Вы можете получить опыт этого пути развития свойства, используя взаимодействие персонажа «Посольский визит».#!\n Присягнув на верность чужеземному правителю, этот дипломат путешествует по стране, чтобы найти возможности принести пользу своему покровителю."
 
  trait_track_ashen_grandmaster: "[ashen_grandmaster|E]"
- trait_track_ashen_grandmaster_desc: "#bold Этот опыт можно использовать для улучшения военного ордена безземельного вампира или ваших тактик за безземельного [Concept('kuei_jin', 'куэй-дзин')|E]. Его можно получить, выполняя военные или боевые контракты авантюристов.#!\nСреди каинитов существует традиция отрядов солдат, объединенных в организацию с достаточной структурой и общей целью, чтобы считаться военным орденом.\nIn the east, [kuei_jin|E] are more dedicated to improve their martial mastery in a strategical sense."
+ trait_track_ashen_grandmaster_desc: "#bold Этот опыт можно использовать для улучшения военного ордена безземельного вампира или ваших тактик за безземельного [Concept('kuei_jin', 'куэй-дзин')|E]. Его можно получить, выполняя военные или боевые контракты авантюристов.#!\nСреди каинитов существует традиция отрядов солдат, объединенных в организацию с достаточной структурой и общей целью, чтобы считаться военным орденом.\nНа востоке [Concept('kuei_jin', 'куэй-дзин')|E] больше стремятся улучшить своё боевое мастерство в стратегическом смысле."
  trait_track_ashen_caravan: "[ashen_caravan|E]"
  trait_track_ashen_caravan_desc: "#bold Этот опыт можно получить, выполняя транспортные контракты.#!\nПепельные хозяева караванов - те немногие персонажи, которые действительно знают, как ориентироваться на смертельно опасных дорогах Мира Тьмы, и предлагают свои услуги всем нуждающимся."
 
@@ -1435,35 +1435,35 @@
  POD_aggravated_damage_box: "[Concept('POD_aggravated_damage','@health_track_aggravated_damage_icon!')]"
  POD_undamaged_box: "[Concept('POD_health_track','@health_track_empty_icon!')]"
 
-# V20 - Healing and Health
-# (trait xp thresholds 0, 20, 40, 60, 80, 100)
+ # V20 - Healing and Health
+ # (trait xp thresholds 0, 20, 40, 60, 80, 100)
 
- trait_POD_wounded_0: "Bruised"
- trait_POD_wounded_0_none_desc: "This character has received some scrapes, but they're not physically impaired yet.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
- trait_POD_wounded_0_desc: "[ROOT.Char.GetFirstNameNoTooltip] has received some scrapes, but [ROOT.Char.GetSheHe]'s not physically impaired yet.\n\n$trait_POD_wounded_shared_desc$"
+ trait_POD_wounded_0: "Синяки"
+ trait_POD_wounded_0_none_desc: "Этот персонаж получил несколько царапин, но физически он ещё не пострадал.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
+ trait_POD_wounded_0_desc: "[ROOT.Char.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )] несколько царапин, но физически [ROOT.Char.GetSheHe] ещё не [Select_CString(ROOT.Char.IsFemale, 'пострадала', 'пострадал' )].\n\n$trait_POD_wounded_shared_desc$"
 
- trait_POD_wounded_1: "Hurt"
- trait_POD_wounded_1_none_desc: "This character has received some superficial wounds.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
- trait_POD_wounded_1_desc: "[ROOT.Char.GetFirstNameNoTooltip] has received some superficial wounds.\n\n$trait_POD_wounded_shared_desc$"
+ trait_POD_wounded_1: "Лёгкое ранение"
+ trait_POD_wounded_1_none_desc: "Этот персонаж получил несколько поверхностных ранений.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
+ trait_POD_wounded_1_desc: "[ROOT.Char.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )] несколько поверхностных ранений.\n\n$trait_POD_wounded_shared_desc$"
 
- trait_POD_wounded_2: "Injured"
- trait_POD_wounded_2_none_desc: "This character suffers from various injuries.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
- trait_POD_wounded_2_desc: "[ROOT.Char.GetFirstNameNoTooltip] suffers from various injuries.\n\n$trait_POD_wounded_shared_desc$"
+ trait_POD_wounded_2: "Ранение"
+ trait_POD_wounded_2_none_desc: "Этот персонаж страдает от различных ранений.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
+ trait_POD_wounded_2_desc: "[ROOT.Char.GetFirstNameNoTooltip] страдает от различных ранений.\n\n$trait_POD_wounded_shared_desc$"
 
- trait_POD_wounded_3: "Wounded"
- trait_POD_wounded_3_none_desc: "This character suffers significant damage.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
- trait_POD_wounded_3_desc: "[ROOT.Char.GetFirstNameNoTooltip] suffers significant damage.\n\n$trait_POD_wounded_shared_desc$"
- 
- trait_POD_wounded_4: "Mauled"
- trait_POD_wounded_4_none_desc: "This character is badly injured and can barely function.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
- trait_POD_wounded_4_desc: "[ROOT.Char.GetFirstNameNoTooltip] is badly injured and can barely function.\n\n$trait_POD_wounded_shared_desc$"
+ trait_POD_wounded_3: "Тяжёлое ранение"
+ trait_POD_wounded_3_none_desc: "Этот персонаж страдает от значительного урона.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
+ trait_POD_wounded_3_desc: "[ROOT.Char.GetFirstNameNoTooltip] страдает от значительного урона.\n\n$trait_POD_wounded_shared_desc$"
 
- trait_POD_wounded_5: "Crippled"
- trait_POD_wounded_5_none_desc: "This character is catastrophically injured. It's a miracle they're standing at all.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
- trait_POD_wounded_5_desc: "[ROOT.Char.GetFirstNameNoTooltip] is catastrophically injured. It's a miracle [ROOT.Char.GetSheHe]'s standing at all.\n\n$trait_POD_wounded_shared_desc$"
- 
- trait_track_POD_wounded: "Impairment"
- trait_track_POD_wounded_desc: "Impairment is based on the percentage of filled boxes in your health track."
+ trait_POD_wounded_4: "Травма"
+ trait_POD_wounded_4_none_desc: "Этот персонаж тяжело ранен и едва может функционировать.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
+ trait_POD_wounded_4_desc: "[ROOT.Char.GetFirstNameNoTooltip] тяжело [Select_CString(ROOT.Char.IsFemale, 'ранена', 'ранен' )] и едва может функционировать.\n\n$trait_POD_wounded_shared_desc$"
+
+ trait_POD_wounded_5: "Увечье"
+ trait_POD_wounded_5_none_desc: "Этот персонаж серьёзно ранен. Просто чудо, что он вообще держится на ногах.\n\n$trait_POD_wounded_nocharacter_shared_desc$"
+ trait_POD_wounded_5_desc: "[ROOT.Char.GetFirstNameNoTooltip] серьёзно [Select_CString(ROOT.Char.IsFemale, 'ранена', 'ранен' )]. Просто чудо, что [ROOT.Char.GetSheHe] вообще держится на ногах.\n\n$trait_POD_wounded_shared_desc$"
+
+ trait_track_POD_wounded: "Ухудшение"
+ trait_track_POD_wounded_desc: "Показатель ухудшения здоровья зависит от процента заполненных ячеек в вашей шкале здоровья."
  trait_track_wounded_1: "$trait_track_POD_wounded$"
  trait_track_wounded_1_desc: "$trait_track_POD_wounded_desc$"
  trait_track_wounded_2: "$trait_track_POD_wounded$"
@@ -1472,36 +1472,36 @@
  trait_track_wounded_3_desc: "$trait_track_POD_wounded_desc$"
 
 
- trait_mod_guardian: "Mod Guardian"
- trait_mod_guardian_desc: "[ROOT.Char.GetFirstNameNoTooltip] needs to exist in order to make some of the scripts in this mod work. If you see [ROOT.Char.GetHerHim] in your court, just smile and wave. [ROOT.Char.GetSheHe|U] will disappear shortly."
+ trait_mod_guardian: "Хранитель мода"
+ trait_mod_guardian_desc: "[ROOT.Char.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] существовать, чтобы некоторые скрипты в этом моде заработали. Если вы увидите [ROOT.Char.GetHerHis] при своём дворе, просто улыбнитесь и помашите рукой. [ROOT.Char.GetSheHe|U] скоро исчезнет."
 
 
 
 
  
- trait_midnight_warrior: "Midnight Warrior"
- trait_midnight_warrior_desc: "A term used to distinguish a practitioner of the ancestral [kuei_jin|E] Midnight Wars, ritualized wars following strict protocols and strategies. Building upon millennia of warfare traditions, these individuals are feared generals who have mastered a wide variety of tactics."
- trait_midnight_warrior_1: "Midnight Warrior"
- trait_midnight_warrior_2: "Midnight General"
- trait_midnight_warrior_3: "Midnight Master"
- trait_track_midnight_warrior: "Midnight Warrior"
- trait_track_midnight_warrior_desc: "#help You gain experience in this track by being landless and using your [ashen_grandmaster|E] xp on it.#!"
+ trait_midnight_warrior: "Воин полуночи"
+ trait_midnight_warrior_desc: "Термин, используемый для обозначения участников древних Полуночных войн [Concept('kuei_jin', 'куэй-дзин')|E], ритуализированных противостояний, которые ведутся в соответствии со строгими протоколами и стратегиями. Опираясь на тысячелетние военные традиции, эти люди являются внушающими страх полководцами, которые овладели широким спектром тактических приёмов."
+ trait_midnight_warrior_1: "Воин полуночи"
+ trait_midnight_warrior_2: "Генерал полуночи"
+ trait_midnight_warrior_3: "Владыка полуночи"
+ trait_track_midnight_warrior: "Воин полуночи"
+ trait_track_midnight_warrior_desc: "#help Вы получаете опыт этого пути, будучи безземельным и используя на нём свой опыт [Concept('ashen_grandmaster', 'пепельного магистра')|E].#!"
 
- trait_twilight_warrior: "Twilight Warrior"
- trait_twilight_warrior_desc: "Twilight Wars are small, non lethal, conflicts strictly regulated in [kuei_jin|E] society and used to arbitrate escalating hostilities. They tend to teach in depth, though not always practical, tactics and strategies used for "real" warfare later on."
- trait_twilight_warrior_1: "Twilight Warrior"
- trait_twilight_warrior_2: "Twilight General"
- trait_twilight_warrior_3: "Twilight Master"
- trait_track_twilight_warrior: "Twilight Warrior"
- trait_track_twilight_warrior_desc: "#help You gain experience in this track by being landless and using your [ashen_grandmaster|E] xp on it.#!"
+ trait_twilight_warrior: "Воин сумерек"
+ trait_twilight_warrior_desc: "Сумеречные войны - это небольшие, несмертельные конфликты, которые строго регулируются в обществе [Concept('kuei_jin', 'куэй-дзин')|E] и используются для урегулирования эскалации вражды. Они, как правило, подробно, хотя и не всегда практично, учат тактике и стратегиям, используемым в «реальной» войне в дальнейшем."
+ trait_twilight_warrior_1: "Воин сумерек"
+ trait_twilight_warrior_2: "Генерал сумерек"
+ trait_twilight_warrior_3: "Владыка сумерек"
+ trait_track_twilight_warrior: "Воин сумерек"
+ trait_track_twilight_warrior_desc: "#help Вы получаете опыт этого пути, будучи безземельным и используя на нём свой опыт [Concept('ashen_grandmaster', 'пепельного магистра')|E].#!"
 
- trait_wayang_kulit: "Wayang Kulit"
- trait_wayang_kulit_desc: "A warfare style created by the [Glossary('Penangallan','podgloss.penangallan')] of Southeast Asia. Named after Javanese shadow plays, it makes extensive use of Flesh Shintai to confuse the enemy."
- trait_wayang_kulit_1: "Wayang Kulit Disciple"
- trait_wayang_kulit_2: "Wayang Kulit Mistress"
- trait_wayang_kulit_3: "Wayang Kulit Penangallan"
- trait_track_wayang_kulit: "Wayang Kulit Disciple"
- trait_track_wayang_kulit_desc: "#help You gain experience in this track by being landless and using your [ashen_grandmaster|E] experience on it.#!"
+ trait_wayang_kulit: "Вайанг кулит"
+ trait_wayang_kulit_desc: "Стиль ведения боя, созданный [Glossary('пенангаллан','podgloss.penangallan')] в Юго-Восточной Азии. Названный в честь яванских игр теней, он широко использует синтай Плоти, чтобы сбить противника с толку."
+ trait_wayang_kulit_1: "Ученик Вайанг кулит"
+ trait_wayang_kulit_2: "Господин Вайанг кулит"
+ trait_wayang_kulit_3: "Пенангаллан Вайанг кулит"
+ trait_track_wayang_kulit: "Ученик Вайанг кулит"
+ trait_track_wayang_kulit_desc: "#help Вы получаете опыт этого пути, будучи безземельным и используя на нём свой опыт [Concept('ashen_grandmaster', 'пепельного магистра')|E].#!"
 
- trait_angered_malkav: "Angered Madness Network"
- trait_angered_malkav_desc: "You have angered the Madness Network and all those connected to it. Some say you have even angered something or someone within the Network itself. You can already feel its many, many claws sinking into your mind."
+ trait_angered_malkav: "Гнев Сети безумия"
+ trait_angered_malkav_desc: "Вы разозлили Сеть безумия и всех, кто с ней связан. Некоторые говорят, что вы даже разозлили что-то или кого-то в самой Сети. Вы уже чувствуете, как множество её когтей вонзается в ваш разум."
