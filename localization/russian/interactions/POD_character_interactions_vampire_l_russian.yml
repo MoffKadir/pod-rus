@@ -25,7 +25,7 @@
  POD_blood_heal_scarred: "Шрамы"
  POD_blood_heal_disfigured: "Обезображенность"
 
- POD_blood_heal_explanation: "#weak Because you have [THIS.Char.Custom('PODBloodPotency')], you can heal [THIS.ScriptValue('POD_blood_heal_value')|V0] [POD_superficial_damage|E] at once.#!"
+ POD_blood_heal_explanation: "#weak Поскольку у вас имеется [THIS.Char.Custom('PODBloodPotency')], вы можете сразу исцелить [THIS.ScriptValue('POD_blood_heal_value')|V0] ед. [Concept('POD_superficial_damage', 'поверхностного урона')|E].#!"
 
  POD_find_mortals: "Поиск смертных"
  POD_find_mortals_action: "Поиск смертных"
@@ -598,28 +598,28 @@
  POD_mentoring_disciplines.255.a: "Вы ужасны, но вы победили."
  POD_mentoring_disciplines.255.b: "Я могу прожить без своего ручного камня."
 
- POD_mentoring_disciplines.256.t: "Blood Sacrifice"
- POD_mentoring_disciplines.256.desc: "You arrive to find your mentor sat beneath a tree in front of a bowl of oils.\n\n\"To find power and focus within yourself, you must find clarity when your [beast|E] is furiously gnawing at your mind\", [recipient.GetFirstName] explains as [recipient.GetSheHe] gestures for you to purge yourself of blood."
- POD_mentoring_disciplines.256.a: "You fully drain your humours into the bowl."
+ POD_mentoring_disciplines.256.t: "Кровавое жертвоприношение"
+ POD_mentoring_disciplines.256.desc: "Прибыв на место, вы обнаруживаете, что [Select_CString(recipient.IsFemale, 'ваша наставница', 'ваш наставник' )] сидит под деревом перед чашей с маслами.\n\n«Чтобы обрести силу и сосредоточенность внутри себя, ты [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] обрести ясность, когда твой [Concept('beast', 'Зверь')|E] яростно грызёт твой разум», - объясняет [recipient.GetFirstName], жестом предлагая вам очистить себя от крови."
+ POD_mentoring_disciplines.256.a: "Вы полностью осушаете свои гуморы в чашу."
 
- POD_mentoring_disciplines.257.t: "Trial by Fire"
- POD_mentoring_disciplines.257.desc: "[recipient.GetFirstNamePossessiveNoTooltip] determined gaze never leaves you as you're sat in silence, devoid of blood, wondering where this lesson is going.[AddTextIf( PlayerHasBeast, ' The hunger is almost unbearable.' )] Then, almost dispassionately, [recipient.GetSheHe] sets fire to the bowl of oils.\n\n\"Give in to fear, and the Beast will #beast control#! you. Overcome this fear, and the Beast will fear #italic you#!.\"\n\nYour mentor presents strong-looking wooden boards, sets them atop the bowls, and directs you to break them with your bare hands, all the while the merciless flames lick at them.\n\n\"Do not tamper with this test by using disciplines. Let your will alone reverberate. Spark the oils within the soul and let the flame burn bright.\""
- POD_mentoring_disciplines.257.a: "And strike with all your might."
- POD_mentoring_disciplines.257.b: "No challenge at all."
+ POD_mentoring_disciplines.257.t: "Испытание огнём"
+ POD_mentoring_disciplines.257.desc: "[recipient.GetFirstNamePossessiveNoTooltip] не отрывает от вас решительный взгляд, пока вы сидите в тишине, [Select_CString(ROOT.Char.IsFemale, 'обескровленная', 'обескровленный' )], гадая, к чему приведёт этот урок.[AddTextIf( PlayerHasBeast, ' Голод почти невыносим.' )] Затем, почти бесстрастно, [recipient.GetSheHe] поджигает чашу с маслом.\n\n«Поддайся страху, и Зверь будет #beast управлять#! тобой. Преодолей этот страх, и Зверь будет бояться #italic тебя#!».\n\n[Select_CString(recipient.IsFemale, 'Ваша наставница', 'Ваш наставник' )] приносит прочные на вид деревянные доски, кладёт их поверх чаш и приказывает вам сломать их голыми руками, в то время как безжалостное пламя лижет их.\n\n«Не искажай это испытание, используя дисциплины. Позволь проявиться только своей воле. Разожги огонь в душе, и пусть пламя разгорится ярко»."
+ POD_mentoring_disciplines.257.a: "Ударить изо всех сил."
+ POD_mentoring_disciplines.257.b: "Это и есть испытание?"
 
- POD_mentoring_disciplines.258.t: "Ominous Surroundings"
- POD_mentoring_disciplines.258.desc: "You approach the location designated by your mentor at midnight.\n\nBefore you is a brief path of stone slabs leading to what looks like an altar adorned with silk, with a large ornate basin atop it filled to the brim with blood.\n\nYou do not see your mentor, but a note in front of the basin reads:\n\n#italic Adorn your face in blood and I shall show you what you need to see.#!"
- POD_mentoring_disciplines.258.a: "You do as your mentor instructs."
+ POD_mentoring_disciplines.258.t: "Зловещее окружение"
+ POD_mentoring_disciplines.258.desc: "В полночь вы подходите к месту, указанному [Select_CString(recipient.IsFemale, 'вашей наставницей', 'вашим наставником' )].\n\nПеред вами короткая дорожка из каменных плит, ведущая к чему-то похожему на алтарь, обтянутый шелком, на вершине которого стоит большой, богато украшенный сосуд, до краёв наполненный кровью.\n\nВы не видите [Select_CString(recipient.IsFemale, 'свою наставницу', 'своего наставника' )], но перед сосудом есть записка:\n\n#italic Обагри своё лицо кровью, и я покажу тебе то, что тебе нужно увидеть.#!"
+ POD_mentoring_disciplines.258.a: "Вы поступите так, как велит [Select_CString(recipient.IsFemale, 'ваша наставница', 'ваш наставник' )]."
 
- POD_mentoring_disciplines.259.t: "Nightmare Made Manifest"
- POD_mentoring_disciplines.259.beast.desc: "For a moment nothing seems to be happening...\nbut you feel it, your #beast Beast#! urges, nay, #beast demands#! that you drink from the bowl."
- POD_mentoring_disciplines.259.nobeast.desc: "For a moment nothing seems to be happening...\nbut you feel it, your #beast Beast#! has returned with a #beast vengeance#!, and it urges, nay, #beast demands#! that you drink from the bowl."
+ POD_mentoring_disciplines.259.t: "Воплощённый кошмар"
+ POD_mentoring_disciplines.259.beast.desc: "На мгновение кажется, что ничего не происходит...\nно вы чувствуете это, ваш #beast Зверь#! побуждает, нет, #beast требует#!, чтобы вы выпили из чаши."
+ POD_mentoring_disciplines.259.nobeast.desc: "На мгновение кажется, что ничего не происходит...\nно вы чувствуете это, ваш #beast Зверь#! вернулся с #beast удвоенной силой#!, и он настаивает, нет, #beast требует#!, чтобы вы выпили из чаши."
  # final paragraph says "And thus the moment ends, with the world fading to black." with a transparency gradient
- POD_mentoring_disciplines.259.desc: "\n\nUnable to resist, you launch yourself at the bowl of crimson liquid.\n\nTo your horror, the blood... recoils from you. It drains from the bowl and into the dirt.\n\nLamenting the blood's descent into the ground, you find yourself prone, languishing in your attempts to find even a single drop.\n\nIt is at this moment you feel the crushing weight of faith, the weight of any #beast wrong#!, any #beast sin#! you may have committed completely crippling you.\n\nAny powers you may have had are entirely absent as you feel a stake sink into your heart: a vampire hunter looms over you silently.\n\n[recipient.GetSheHe|U] looms with a loose grip upon a blazing torch, and your beast writhes impotently within you, trying its best to flee the fire.\n\nThe beast cannot help you.\n\nThe sun is beginning to dawn.\n\nFor a moment you feel confusion, how can this be? You thought there to be hours before the sunrise.\n\nFor a moment you think you see the hunter smile;\n\nFor a moment that stretches into excruciating eternity.\n\nYour mentor's fangs sink into your neck.\n\nAnd thus the m#color:{0.61,0.6,0.56,0.975} o#!#color:{0.61,0.6,0.56,0.95} m#!#color:{0.61,0.6,0.56,0.925} e#!#color:{0.61,0.6,0.56,0.9} n#!#color:{0.61,0.6,0.56,0.875} t#! #color:{0.61,0.6,0.56,0.85} e#!#color:{0.61,0.6,0.56,0.825} n#!#color:{0.61,0.6,0.56,0.8} d#!#color:{0.61,0.6,0.56,0.775} s#!#color:{0.61,0.6,0.56,0.75} ,#! #color:{0.61,0.6,0.56,0.725} w#!#color:{0.61,0.6,0.56,0.7} i#!#color:{0.61,0.6,0.56,0.675} t#!#color:{0.61,0.6,0.56,0.65} h#! #color:{0.61,0.6,0.56,0.625} t#!#color:{0.61,0.6,0.56,0.6} h#!#color:{0.61,0.6,0.56,0.575} e#! #color:{0.61,0.6,0.56,0.55} w#!#color:{0.61,0.6,0.56,0.525} o#!#color:{0.61,0.6,0.56,0.5} r#!#color:{0.61,0.6,0.56,0.475} l#!#color:{0.61,0.6,0.56,0.45} d#! #color:{0.61,0.6,0.56,0.425} f#!#color:{0.61,0.6,0.56,0.4} a#!#color:{0.61,0.6,0.56,0.375} d#!#color:{0.61,0.6,0.56,0.35} i#!#color:{0.61,0.6,0.56,0.325} n#!#color:{0.61,0.6,0.56,0.3} g#! #color:{0.61,0.6,0.56,0.275} t#!#color:{0.61,0.6,0.56,0.25} o#! #color:{0.61,0.6,0.56,0.225} b#!#color:{0.61,0.6,0.56,0.2} l#!#color:{0.61,0.6,0.56,0.175} a#!#color:{0.61,0.6,0.56,0.15} c#!#color:{0.61,0.6,0.56,0.125} k#!#color:{0.61,0.6,0.56,0.1} .#!"
-#POD_mentoring_disciplines.259.unused: "You recoil in terror, what was but mere moments felt like an eternity." 
-#most likely change if needed to due to complaints would be swapping the last line of the desc with the one in POD_mentoring_disciplines.259.a instead 
- POD_mentoring_disciplines.259.a: "You feel your soul fading away."
- POD_mentoring_disciplines.259.a.toast: "Still terrified, you now know it was a nightmare."
+ POD_mentoring_disciplines.259.desc: "\n\nНе в силах сопротивляться, вы бросаетесь к чаше с тёмно-красной жидкостью.\n\nК вашему ужасу, кровь... отскакивает от вас. Она стекает из чаши в грязь.\n\nСокрушаясь о том, что кровь стекает на землю, вы оказываетесь распростёртыми на земле, изнывая в попытках найти хотя бы одну каплю.\n\nИменно в этот момент вы чувствуете сокрушительный вес веры, тяжесть любого #beast проступка#!, любого #beast греха#!, который вы, возможно, совершили, полностью парализующий вас.\n\nВсе способности, которыми вы, возможно, обладали, полностью исчезли, когда вы почувствовали, как в ваше сердце вонзается кол: над вами безмолвно нависает [Select_CString(recipient.IsFemale, 'охотница', 'охотник' )] на вампиров.\n\n[recipient.GetSheHe|U] нависает над вами, сжимая в руке пылающий факел, и ваш зверь бессильно корчится внутри вас, изо всех сил пытаясь спастись от огня.\n\nЗверь не может вам помочь.\n\nСолнце начинает светать.\n\nНа мгновение вы испытываете замешательство, как такое может быть? Вам казалось, что до восхода солнца еще несколько часов.\n\nНа мгновение вам кажется, что вы видите улыбку [Select_CString(recipient.IsFemale, 'охотницы', 'охотника' )];\n\nНа мгновение, которое растягивается в мучительную вечность.\n\nКлыки [Select_CString(recipient.IsFemale, 'вашей наставницы', 'вашего наставника' )] впиваются в вашу шею.\n\nИ вот этот м#color:{0.61,0.6,0.56,0.975} о#!#color:{0.61,0.6,0.56,0.95} м#!#color:{0.61,0.6,0.56,0.925} е#!#color:{0.61,0.6,0.56,0.9} н#!#color:{0.61,0.6,0.56,0.875} т#! #color:{0.61,0.6,0.56,0.85} з#!#color:{0.61,0.6,0.56,0.825} а#!#color:{0.61,0.6,0.56,0.8} к#!#color:{0.61,0.6,0.56,0.775} а#!#color:{0.61,0.6,0.56,0.75} н#!#color:{0.61,0.6,0.56,0.725} ч#!#color:{0.61,0.6,0.56,0.7} и#!#color:{0.61,0.6,0.56,0.675} в#!#color:{0.61,0.6,0.56,0.65} а#! #color:{0.61,0.6,0.56,0.625} е#!#color:{0.61,0.6,0.56,0.6} т#!#color:{0.61,0.6,0.56,0.575} с#!#color:{0.61,0.6,0.56,0.55} я#! #color:{0.61,0.6,0.56,0.525} и#! #color:{0.61,0.6,0.56,0.5} м#!#color:{0.61,0.6,0.56,0.475} и#!#color:{0.61,0.6,0.56,0.45} р#! #color:{0.61,0.6,0.56,0.425} п#!#color:{0.61,0.6,0.56,0.4} о#!#color:{0.61,0.6,0.56,0.375} г#!#color:{0.61,0.6,0.56,0.35} р#!#color:{0.61,0.6,0.56,0.325} у#!#color:{0.61,0.6,0.56,0.3} ж#!#color:{0.61,0.6,0.56,0.275} а#!#color:{0.61,0.6,0.56,0.25} е#!#color:{0.61,0.6,0.56,0.225} т#!#color:{0.61,0.6,0.56,0.2} с#!#color:{0.61,0.6,0.56,0.175} я#! #color:{0.61,0.6,0.56,0.15} в#!#color:{0.61,0.6,0.56,0.125} о#!#color:{0.61,0.6,0.56,0.1} тьму.#!"
+ #POD_mentoring_disciplines.259.unused: "You recoil in terror, what was but mere moments felt like an eternity." 
+ #most likely change if needed to due to complaints would be swapping the last line of the desc with the one in POD_mentoring_disciplines.259.a instead 
+ POD_mentoring_disciplines.259.a: "Вы чувствуете, как ваша душа угасает."
+ POD_mentoring_disciplines.259.a.toast: "Всё ещё [Select_CString(ROOT.Char.IsFemale, 'напуганная', 'напуганный' )], теперь вы знаете, что это был кошмар."
 
  POD_demon_tainted_modifier: "Адская порча"
  POD_demon_tainted_modifier_desc: "От этого персонажа несет инфернальностью и нечестивостью. Чистые духом отшатываются от его присутствия, нечистые боятся конкуренции."
@@ -911,9 +911,9 @@
  POD_create_gargoyle_interaction.gargoyle_experiment_success_fairy.tt: "Создана гаргулья из касты Фей"
  POD_create_gargoyle_interaction.gargoyle_experiment_success_onyx_cat.tt: "Создана гаргулья из касты Ониксовых котов"
  POD_create_gargoyle_interaction.gargoyle_experiment_success_golden_manticore.tt: "Создана гаргулья из касты Золотых мантикор"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_kintsugi.tt: "Kintsugi caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_rogata.tt: "Rogata caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_totai.tt: "Totai caste gargoyle created"
+ POD_create_gargoyle_interaction.gargoyle_experiment_success_kintsugi.tt: "Создана гаргулья из касты Кинцуги"
+ POD_create_gargoyle_interaction.gargoyle_experiment_success_rogata.tt: "Создана гаргулья из касты Рогата"
+ POD_create_gargoyle_interaction.gargoyle_experiment_success_totai.tt: "Создана гаргулья из касты Тотай"
 
  POD_create_zombu_interaction: "Создать зомбу"
  POD_create_zombu_interaction_desc: "Провести некромантическую церемонию оживления трупа в зомбу путём принесения в жертву другого смертного."
@@ -1034,7 +1034,7 @@
 
  POD_masquerade_risk_decrease_necromancy_ashes_to_ashes_tt: "«Прах к праху» из моей [Concept('discipline', 'дисциплины')|E] некромантии снижает риск #L $pod_masquerade_exposure|l$ия Маскарада#!."
  POD_masquerade_risk_decrease_necromancy_tend_the_body_garden_tt: "«Забота о саде тела» из моей [Concept('discipline', 'дисциплины')|E] некромантии снижает риск #L $pod_masquerade_exposure|l$ия Маскарада#!."
- POD_masquerade_risk_decrease_blood_magic_mask_of_allah_tt: "[GetModifier('mask_of_allah_modifier').GetNameWithTooltip] decreases my risk of $pod_masquerade_exposure$."
+ POD_masquerade_risk_decrease_blood_magic_mask_of_allah_tt: "[GetModifier('mask_of_allah_modifier').GetNameWithTooltip] снижает риск #L $pod_masquerade_exposure|l$ия Маскарада#!."
 
  POD_find_wraith_interaction: "Найти призрака"
  POD_find_wraith_interaction_desc: "Обыскать свои земли в поисках #L [GetTrait('wraith').GetName( GetPlayer )|l]а#!, уязвимого к вашим действиям."
@@ -1170,9 +1170,9 @@
  POD_train_spiritus: "Случайно выбранный ученик получит свойство «[GetTrait('spiritus').GetName(GetNullCharacter)]», если у него его ещё нет."
  POD_train_thinbloodalchemy: "Случайно выбранный ученик получит свойство «[GetTrait('thinbloodalchemy').GetName(GetNullCharacter)]», если у него его ещё нет."
  POD_train_oblivion: "Случайно выбранный ученик получит свойство «[GetTrait(oblivion).GetName(GetNullCharacter)]», если у него его ещё нет."
- POD_train_flight: "A random chosen student will gain [GetTrait('flight').GetName(GetNullCharacter)] if they don't already have it."
- POD_train_kai: "A random chosen student will gain [GetTrait('kai').GetName(GetNullCharacter)] if they don't already have it."
- POD_train_rift: "A random chosen student will gain [GetTrait('rift').GetName(GetNullCharacter)] if they don't already have it."
+ POD_train_flight: "Случайно выбранный ученик получит свойство «[GetTrait('flight').GetName(GetNullCharacter)]», если у него его ещё нет."
+ POD_train_kai: "Случайно выбранный ученик получит свойство «[GetTrait('kai').GetName(GetNullCharacter)]», если у него его ещё нет."
+ POD_train_rift: "Случайно выбранный ученик получит свойство «[GetTrait('rift').GetName(GetNullCharacter)]», если у него его ещё нет."
 
  POD_embrace_prisoner_interaction: "[Concept('Embrace', 'Обратить')|E] пленника"
  POD_embrace_prisoner_interaction_desc: "Насильно превратить персонажа [recipient.GetFirstName] вашим дитя."
@@ -1459,22 +1459,22 @@
  POD_heart_of_darkness_forcetorpor_option.tt: "Используя силу Серпентиса, вы вогнали персонаңа [secondary_recipient.GetFirstName] в торпор."
  POD_heart_of_darkness_release_option.tt: "Вы вернули сердце персонаңа [secondary_recipient.GetFirstName], позволяя [secondary_recipient.GetHerHim] освободиться от вашего влияния."
 
- POD_kai_elder_4_perk_interaction: "Raijinto"
- POD_kai_elder_4_perk_interaction_desc: "Strike them down."
- recipient_secondary_POD_kai_elder_4_perk_interaction: "Draw upon sacrificed life force to fuel your strike"
- POD_kai_elder_5_perk_interaction: "Crimson Storm"
- POD_kai_elder_5_perk_interaction_desc: "Unleash the storm."
+ POD_kai_elder_4_perk_interaction: "Райдзинто"
+ POD_kai_elder_4_perk_interaction_desc: "Сразить врагов наповал."
+ recipient_secondary_POD_kai_elder_4_perk_interaction: "Использовать принесённую в жертву жизненную силу, чтобы усилить свой удар."
+ POD_kai_elder_5_perk_interaction: "Багровая буря"
+ POD_kai_elder_5_perk_interaction_desc: "Наслать бурю."
 
- POD_glimpse_of_the_pain_interaction: "Glimpse of the Pain"
- POD_glimpse_of_the_pain_interaction_desc: "Unleash the pain of your nightmares, if only for a brief moment."
+ POD_glimpse_of_the_pain_interaction: "Проблеск боли"
+ POD_glimpse_of_the_pain_interaction_desc: "Высвободить боль из своих кошмаров, хотя бы на мгновение."
 
- POD_passing_the_inner_realm_interaction: "Passing the Inner Realm"
- POD_passing_the_inner_realm_interaction_desc: "Start (or stop) using rifts on a regular basis, improving your combat and intrigue at the cost of increased [stress|E]."
- activate_passing_the_inner_realm_ct: "You will suffer mental unwellness caused by frequent rift usage to enhance your ability in combat."
- deactivate_passing_the_inner_realm_ct: "By no longer frequently using your rifts, you will longer benefit from enhanced combat abilities but you will no longer suffer mental unwellness caused by it."
+ POD_passing_the_inner_realm_interaction: "Переход через Внутреннее царство"
+ POD_passing_the_inner_realm_interaction_desc: "Начать (или прекратить) использовать разломы на регулярной основе, улучшая свои боевые навыки и интриги за счёт увеличения [Concept('stress', 'стресса')|E]."
+ activate_passing_the_inner_realm_ct: "Вы начнёте страдать от психического расстройства, вызванного частым использованием разлома для усиления ваших боевых способностей."
+ deactivate_passing_the_inner_realm_ct: "Поскольку вы больше не будете часто использовать свои разломы, вы больше не будете пользоваться улучшенными боевыми способностями, но и не будете страдать от психического расстройства, вызванного этим."
 
- POD_doorway_to_hell_interaction: "Doorway to Hell"
- POD_doorway_to_hell_interaction_desc: "Use an established rift gateway to immediately relocate yourself and those accompanying you to your capital."
+ POD_doorway_to_hell_interaction: "Дверь в ад"
+ POD_doorway_to_hell_interaction_desc: "Воспользоваться существующими вратами разлома, чтобы немедленно переместить себя и свою свиту в столицу."
 
  POD_fortitude_interaction: "Стойкость"
  POD_fortitude_interaction_desc: "Управлять силами, дарованными [Concept('discipline', 'дисциплиной')|E] Стойкости."

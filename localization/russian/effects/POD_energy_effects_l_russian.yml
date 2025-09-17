@@ -1,13 +1,13 @@
 ﻿l_russian:
 # Energy types
- POD_energy_angst: "@wraith_icon!Angst" # TODO: different icon?
- POD_energy_pathos: "@wraith_icon!Pathos"
- POD_energy_blood: "$pod_hunger_i$Blood"
- POD_energy_resolve: "@demon_icon!Resolve"
- POD_energy_gnosis: "@gnosis_icon!Gnosis"
- POD_energy_glamour: "@changeling_icon!Glamour"
- POD_energy_dread: "[Concept('dread','@dread_icon!Dread')|E]"
- POD_energy: "[Concept('static_stress','@stress_loss_icon!Willpower')|E]"
+ POD_energy_angst: "@wraith_icon!Ангст" # TODO: different icon?
+ POD_energy_pathos: "@wraith_icon!Пафос"
+ POD_energy_blood: "$pod_hunger_i$Кровь"
+ POD_energy_resolve: "@demon_icon!Решимость"
+ POD_energy_gnosis: "@gnosis_icon!Гнозис"
+ POD_energy_glamour: "@changeling_icon!Гламур"
+ POD_energy_dread: "[Concept('dread','@dread_icon!Ужас')|E]"
+ POD_energy: "[Concept('static_stress','@stress_loss_icon!Сила воли')|E]"
 
  POD_energy_angst_icon: "@wraith_icon!" # TODO: different icon?
  POD_energy_pathos_icon: "@wraith_icon!"
@@ -19,19 +19,19 @@
  # using the stress gain icon instead of stress loss since it makes more sense for energy costs
  POD_energy_icon: "[Concept('static_stress','@stress_gain_icon!')]"
 
- POD_splat_energy_cost: "$VALUE|0$ [CHARACTER.Custom('PODEnergySplatIcon')]"
+ POD_splat_energy_cost: "$VALUE|0$ ед. [CHARACTER.Custom('PODEnergySplatIcon')]"
 
-# Energy vessel maintenance
- POD_extract_energy_desc: "#bold [Multiply_CFixedPoint( SCOPE.GetValue('spent_energy_amount'), this_character.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]#! stored [this_character.Custom('PODEnergySplat')] from the [this_artifact.Custom('ColorizedArtifactName')] will be used"
- POD_store_energy_desc: "#bold [Multiply_CFixedPoint( SCOPE.GetValue('stored_energy_amount'), this_character.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]#! [this_character.Custom('PODEnergySplat')] will be stored in the [this_artifact.Custom('ColorizedArtifactName')]"
- POD_energy_vessel_add_max_effect: "Add Maximum Possible [GetPlayer.Custom('PODEnergySplat')] Stored: [Multiply_CFixedPoint( '(CFixedPoint)$VALUE|q$', GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]"
+ # Energy vessel maintenance
+ POD_extract_energy_desc: "Будет использовано #bold [Multiply_CFixedPoint( SCOPE.GetValue('spent_energy_amount'), this_character.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]#! ед. ресурса ([this_character.Custom('PODEnergySplat')]), собранного в [this_artifact.Custom('ColorizedArtifactName')]"
+ POD_store_energy_desc: "Будет собрано #bold [Multiply_CFixedPoint( SCOPE.GetValue('stored_energy_amount'), this_character.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]#! ед. ресурса ([this_character.Custom('PODEnergySplat')]) в [this_artifact.Custom('ColorizedArtifactName')]"
+ POD_energy_vessel_add_max_effect: "Добавить максимальное количество собранного ресурса ([GetPlayer.Custom('PODEnergySplat')]): [Multiply_CFixedPoint( '(CFixedPoint)$VALUE|q$', GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]"
 
-# custom_description loc
-# note that colors are reversed for hunger (increase is bad, decrease is good)
- POD_hunger_change_desc: "$pod_hunger_with_icon$ will #N increase#! by #bold $VALUE|0V$#!"
- POD_hunger_change_desc_past: "$pod_hunger_with_icon$ has #N increased#! by #bold $VALUE|0V$#!"
- POD_hunger_change_desc_neg: "$pod_hunger_with_icon$ will #P decrease#! by #bold $VALUE|0V$#!"
- POD_hunger_change_desc_past_neg: "$pod_hunger_with_icon$ has #P decreased#! by #bold $VALUE|0V$#!"
+ # custom_description loc
+ # note that colors are reversed for hunger (increase is bad, decrease is good)
+ POD_hunger_change_desc: "$pod_hunger_with_icon$ #N повысится#! на #bold $VALUE|0V$#!"
+ POD_hunger_change_desc_past: "$pod_hunger_with_icon$ #N повысился#! на #bold $VALUE|0V$#!"
+ POD_hunger_change_desc_neg: "$pod_hunger_with_icon$ #P снизится#! на #bold $VALUE|0V$#!"
+ POD_hunger_change_desc_past_neg: "$pod_hunger_with_icon$ #P снизился#! на #bold $VALUE|0V$#!"
 
  POD_angst_change_desc: "$POD_energy_angst$ will #P increase#! by #bold $VALUE|0V$#!"
  POD_angst_change_desc_past: "$POD_energy_angst$ has #P increased#! by #bold $VALUE|0V$#!"

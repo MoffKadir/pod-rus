@@ -1,6 +1,6 @@
 ﻿l_russian:
  I_MUST_BE_AT_THE_SAME_LOCATION_TRIGGER: "Вы должны находиться в одной локации с целью!"
- NOT_SAME_PLACE: "You must be at the same location as the target!"
+ NOT_SAME_PLACE: "Вы должны находиться в том же месте, что и ваша цель!"
  I_MUST_BE_WITHIN_A_SHORT_DISTANCE_TRIGGER: "Вы должны находиться на небольшом расстоянии от жертвы!" #150 map-pixels. Roughly one Wales away (top to bottom).
  I_MUST_BE_WITHIN_A_MEDIUM_DISTANCE_TRIGGER: "Вы должны находиться на среднем расстоянии от жертвы!" #250 map-pixels. Roughly one Ireland away (top to bottom).
  I_MUST_BE_WITHIN_A_LONG_DISTANCE_TRIGGER: "Вы должны находиться на значительном расстоянии от жертвы!" #650 map-pixels. Roughly one France away (top to bottom).
@@ -32,8 +32,8 @@
  EXECUTION_SACRIFICE_TO_DEMON: "Принести в жертву демоническому покровителю"
  EXECUTION_SOULTAKER: "Принести в жертву Похитителю душ"
  EXECUTION_COLOSSEUM: "Скормить диким животным в Колизее"
- EXECUTION_SIN_EATING: "Eat Sins"
- EXECUTION_CALL_KHAIBIT: "Call the Khaibit"
+ EXECUTION_SIN_EATING: "Пожрать грехи"
+ EXECUTION_CALL_KHAIBIT: "Воззвать хайбит"
  soultaker_betray: "Похититель душ предал вас: достаточно сильный разум втягивается в меч и запечатлевает свои собственные планы на безумном улье-разуме Легиона."
  used_spirit_eating: "#V Пожирание духа#! восстанавливается #weak (осталось [GetPlayer.MakeScope.ScriptValue('next_devore_mind_date')|0] дней)#!"
  execution_spirit_eating_tooltip: "#V Пожирание духа#! будет недоступно в течение #V [EmptyScope.ScriptValue('devore_mind_cooldown_value')|0]#! лет."
@@ -178,16 +178,16 @@
  SECONDARY_RECIPIENT_CRIMINAL_REASON: "[splat|E] [Select_CString(secondary_recipient.IsLocalPlayer, '', 'персонажа ' )][secondary_recipient.GetShortUINamePossessive][Select_CString(secondary_recipient.IsLocalPlayer, 'его персонажа', '' )] считается преступлением для [Select_CString(secondary_actor.IsLocalPlayer, '', 'персонажа ' )][secondary_actor.GetShortUINamePossessive][Select_CString(secondary_actor.IsLocalPlayer, 'его персонажа', '' )]: $VALUE|+0$"
  SECONDARY_ACTOR_CRIMINAL_REASON: "[splat|E] [Select_CString(secondary_actor.IsLocalPlayer, '', 'персонажа ' )][secondary_actor.GetShortUINamePossessive][Select_CString(secondary_actor.IsLocalPlayer, 'его персонажа', '' )] считается преступлением для [Select_CString(secondary_recipient.IsLocalPlayer, '', 'персонажа ' )][secondary_recipient.GetShortUINamePossessive][Select_CString(secondary_recipient.IsLocalPlayer, 'его персонажа', '' )]: $VALUE|+0$"
  
- ACTOR_KINFOLK_REASON: "[actor.GetFirstName] is a [GetTrait('kinfolk').GetName( actor )]: $VALUE|+=0$"
- ACTOR_FERA_REASON: "[actor.GetFirstName] is a $glossary_fera$: $VALUE|+=0$"
- ACTOR_FERA_RANK_REASON: "[actor.GetFirstName]'s $glossary_fera$ Rank: $VALUE|+=0$"
- ACTOR_POSSESSED_REASON: "[actor.GetFirstName] is a [GetTraitGroup('possessed').GetName()]: $VALUE|+=0$"
- ACTOR_TRUEPOSSESSED_REASON: "[actor.GetFirstName] is a [GetTraitGroup('truepossessed').GetName()]: $VALUE|+=0$"
- ACTOR_WRAITH_REASON: "[actor.GetFirstName] is a [GetTrait('wraith').GetName( GetNullCharacter )]: $VALUE|+=0$"
- ACTOR_VAMPIRE_REASON: "[actor.GetFirstName] is a [GetTrait('vampire').GetName( GetNullCharacter )]: $VALUE|+=0$"
- PLASMIC_OPINION_REASON: "Wraith Opinion Modifier Level: $VALUE|+=0$"
- WE_ARE_NOT_FRIENDS: "We are not [friends|E]: $VALUE|+=0$"
- NUM_OF_SPIRIT_PACTS: "Number of existing $pod_spirit_pacts$: $VALUE|+=0$"
+ ACTOR_KINFOLK_REASON: "[actor.GetFirstName] имеет свойство «[GetTrait('kinfolk').GetName( actor )]»: $VALUE|+=0$"
+ ACTOR_FERA_REASON: "[actor.GetFirstName] является $glossary_fera$: $VALUE|+=0$"
+ ACTOR_FERA_RANK_REASON: "Ранг $glossary_fera$ персонажа [actor.GetFirstName]: $VALUE|+=0$"
+ ACTOR_POSSESSED_REASON: "[actor.GetFirstName] имеет свойство «[GetTraitGroup('possessed').GetName()]»: $VALUE|+=0$"
+ ACTOR_TRUEPOSSESSED_REASON: "[actor.GetFirstName] имеет свойство «[GetTraitGroup('truepossessed').GetName()]»: $VALUE|+=0$"
+ ACTOR_WRAITH_REASON: "[actor.GetFirstName] имеет свойство «[GetTrait('wraith').GetName( GetNullCharacter )]»: $VALUE|+=0$"
+ ACTOR_VAMPIRE_REASON: "[actor.GetFirstName] имеет свойство «[GetTrait('vampire').GetName( GetNullCharacter )]»: $VALUE|+=0$"
+ PLASMIC_OPINION_REASON: "Уровень модификатора мнения призраков: $VALUE|+=0$"
+ WE_ARE_NOT_FRIENDS: "Мы не являемся [Concept('friends', 'друзьями')|E]: $VALUE|+=0$"
+ NUM_OF_SPIRIT_PACTS: "Количество текущих духовных договоров: $VALUE|+=0$"
 
  FACTION_REASON_INCOMPATIBLE: "Несовместимый [Concept('splat', 'вид')|E]: $VALUE|0+=$"
  FACTION_REASON_NETERU: "Не является [neteru|El]: $VALUE|0+=$"
@@ -198,8 +198,8 @@
 
  VAMPIRE_IS_SHUNNED: "Свойство «[GetTrait('vampire').GetName( GetPlayer )]» порицается: $VALUE|+0$"
  VAMPIRE_IS_CRIME: "Свойство «[GetTrait('vampire').GetName( GetPlayer )]» считается преступлением: $VALUE|+0$"
- FERA_IS_SHUNNED: "[GetTraitGroup('fera').GetName()] is Shunned: $VALUE|+0$"
- FERA_IS_CRIME: "[GetTraitGroup('fera').GetName()] is Crime: $VALUE|+0$"
+ FERA_IS_SHUNNED: "Свойство «[GetTraitGroup('fera').GetName()]» порицается: $VALUE|+0$"
+ FERA_IS_CRIME: "Свойство «[GetTraitGroup('fera').GetName()]» считается преступлением: $VALUE|+0$"
 
  VOICE_OF_COMMAND_REASON: "$voice_of_command_perk_name$: $VALUE|+=0$"
  NUMINA_EPHEMERA_2_REASON: "$numina_ephemera_2_perk_name$: $VALUE|+=0$"
@@ -234,7 +234,7 @@
  POD_learn_true_name_interaction_desc: "Начать [Concept('journey', 'странствие')|E], чтобы узнать истинное имя персонажа [recipient.GetShortUIName]."
  POD_learn_true_name_interaction_tt: "[Concept('planning_speed', 'Скорость планирования')|E] [Concept('journey', 'странствия')|E] зависит от вашей [Concept('learning', 'учёности')|E], суммы [Concept('skills', 'навыков')|E] вашей цели и определённых [Concept('perks', 'достоинств')|E] обоих персонажей."
 
- POD_study_true_name_trait_interaction: "Study True Names"
- POD_study_true_name_trait_interaction_desc: "Use your knowledge of [recipient.GetFirstNamePossessive] true name to study [recipient.GetHerHis] [traits|E]."
- POD_study_true_name_trait_interaction_requirement: "[recipient.GetShortUIName] does #bold not#! have a trait whose true name you can learn"
- POD_study_true_name_trait_interaction_select_traits_tt: "You will be able to pick and choose which of [recipient.GetShortUINamePossessive] [traits|E] to study"
+ POD_study_true_name_trait_interaction: "Изучить истинное имя"
+ POD_study_true_name_trait_interaction_desc: "Использовать знание истинного имени персонажа [recipient.GetFirstNamePossessive] чтобы изучить [recipient.GetHerHis] [Concept('traits', 'свойства')|E]."
+ POD_study_true_name_trait_interaction_requirement: "[recipient.GetShortUIName] #bold не#! имеет свойства, истинное имя которого вы можете узнать"
+ POD_study_true_name_trait_interaction_select_traits_tt: "Вы сможете выбрать, какие из [Concept('traits', 'свойств')|E] персонажа [recipient.GetShortUINamePossessive] изучить"
