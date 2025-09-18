@@ -329,7 +329,7 @@
  setting_pod_barons_enabled: "Включено"
  setting_pod_barons_enabled_desc: "У каждого [Concept('county', 'графства')|E] есть несколько дополнительных [Concept('holdings', 'владений')|E]-[Concept('barony', 'баронств')|E], которыми правят [Concept('barons', 'бароны')|E], как в оригинальном CK3."
  setting_pod_barons_disabled: "#high Отключено#!"
- setting_pod_barons_disabled_desc: "[Concept('baronies', 'Баронств')|E] не существует, новые [Concept('holdings', 'владения')|E] не могут быть построены."
+ setting_pod_barons_disabled_desc: "[Concept('baronies', 'Баронств')|E] не существует, новые [Concept('holdings', 'владения')|E] не могут быть построены.\n\n#N Эта настройка вступает в силу только в том случае, если вы включили её до загрузки карты. Изменить её после выбора «Начать игру за любого правителя» не получится.#!"
 
  rule_pod_conqueror_ai: "$POD_gamerule$ #clickable Экспериментально:#! ИИ завоевателей"
  setting_pod_conqueror_ai_disabled: "Отключено"
