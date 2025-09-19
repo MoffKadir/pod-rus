@@ -1,33 +1,33 @@
 ﻿l_russian:
 
 
- breedgifts_lifestyle_name: "Breed Gifts"
- breedgifts_lifestyle_desc: "Focus on the gifts that come with your natural breed form."
- breedgifts_lifestyle_highlight_desc: "Because of your $POD_energy_gnosis$, you gain #P [GetPlayer.MakeScope.ScriptValue('gnosis_lifestyle_xp_mult')|%0]#! more [experience|E] in this Lifestyle."
- monthly_breedgifts_lifestyle_xp_gain_mult: "Monthly Breed Gifts [lifestyle|E] [experience|E]"
- breedgifts_focus: "Breed Gifts Focus"
+ breedgifts_lifestyle_name: "Дары породы"
+ breedgifts_lifestyle_desc: "Фокус на дарах, присущих вашей естественной форме породы."
+ breedgifts_lifestyle_highlight_desc: "Из-за вашего #L $POD_energy_gnosis$а#! ваш прирост [Concept('experience', 'опыта')|E] для этого образа жизни увеличен на #P [GetPlayer.MakeScope.ScriptValue('gnosis_lifestyle_xp_mult')|%0]#!."
+ monthly_breedgifts_lifestyle_xp_gain_mult: "Ежемесячный прирост [Concept('experience','опыта')E] на [Concept('lifestyle','пути')E] даров пород"
+ breedgifts_focus: "Дары породы"
  breedgifts_focus_modifier: "[GetFocus('breedgifts_focus').GetName]"
- breedgifts_focus_desc: "[GetTrait('homid_born').GetName( GetNullCharacter )] and [GetTrait('beast_born').GetName( GetNullCharacter )] Gifts"
- breedgifts_focus_effect_desc: "Focusing on Gifts grants:"
- homidgifts_visible: "Homid"
- beastborngifts_werewolf_visible: "Lupus"
- homidgifts_bastet_visible: "Homid Gifts"
- beastborngifts_bastet_visible: "Feline Gifts"
+ breedgifts_focus_desc: "Дары #TOOLTIP:GAME_TRAIT,homid_born,[GetNullCharacter] #L хомидов#!#! и #TOOLTIP:GAME_TRAIT,beast_born,[GetNullCharacter] #L зверорождённых#!#!."
+ breedgifts_focus_effect_desc: "Сосредоточившись на дарах, персонаж получает:"
+ homidgifts_visible: "Хомид"
+ beastborngifts_werewolf_visible: "Люпус"
+ homidgifts_bastet_visible: "Дары хомидов"
+ beastborngifts_bastet_visible: "Кошачьи дары"
 
 
- NEEDS_HOMIDBORN_TEXT: "@warning_icon!#X Requires the [GetTrait('homid_born').GetName( GetPlayer )] [traits|E] to buy perks in this tree.#!"
- NEEDS_BEASTBORN_TEXT: "@warning_icon!#X Requires the [GetTrait('beast_born').GetName( GetPlayer )] [traits|E] to buy perks in this tree.#!"
+ NEEDS_HOMIDBORN_TEXT: "@warning_icon!#X Для разблокировки достоинств в этом древе требуются [Concept('traits', 'свойства')|E] «[GetTrait('homid_born').GetName( GetPlayer )]».#!"
+ NEEDS_BEASTBORN_TEXT: "@warning_icon!#X Для разблокировки достоинств в этом древе требуются [Concept('traits', 'свойства')|E] «[GetTrait('beast_born').GetName( GetPlayer )]».#!"
 
 
 
 
 
- commongifts_lifestyle_name: "Common Gifts"
- commongifts_lifestyle_desc: "Focus on the gifts that come with your changing breed."
- commongifts_lifestyle_highlight_desc: "Because of your $POD_energy_gnosis$, you gain #P [GetPlayer.MakeScope.ScriptValue('gnosis_lifestyle_xp_mult')|%0]#! more [experience|E] in this Lifestyle."
- monthly_commongifts_lifestyle_xp_gain_mult: "Monthly Common Gifts [lifestyle|E] [experience|E]"
- commongifts_focus: "Common Gifts Focus"
+ commongifts_lifestyle_name: "Общие дары"
+ commongifts_lifestyle_desc: "Фокус на дарах, присущих вашей меняющейся породе."
+ commongifts_lifestyle_highlight_desc: "Из-за вашего #L $POD_energy_gnosis$а#! ваш прирост [Concept('experience', 'опыта')|E] для этого образа жизни увеличен на #P [GetPlayer.MakeScope.ScriptValue('gnosis_lifestyle_xp_mult')|%0]#!."
+ monthly_commongifts_lifestyle_xp_gain_mult: "Ежемесячный прирост [Concept('experience','опыта')E] на [Concept('lifestyle','пути')E] общих даров"
+ commongifts_focus: "Общие дары"
  commongifts_focus_modifier: "[GetFocus('commongifts_focus').GetName]"
- commongifts_focus_desc: "The Changing Breed Gifts."
- commongifts_focus_effect_desc: "Focusing on Common Gifts grants:"
- commongifts_bastet_visible: "Bastet Gifts"
+ commongifts_focus_desc: "Дары Менющихся пород."
+ commongifts_focus_effect_desc: "Сосредоточившись на общих дарах, персонаж получает:"
+ commongifts_bastet_visible: "Дары бастет"

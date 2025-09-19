@@ -118,7 +118,7 @@
 
  doctrine_vampirediablerie_name: "[diablerie|E]"
  doctrine_vampirediablerie_crime_name: "Преступление"
- doctrine_vampirediablerie_crime_desc: "Поглощение души другого сородича - самое страшное преступление среди нашего вида.\n\nПрощание, запрещающее [diablerie|E]\n\nНе ищите крови своего старейшины, не ищите крови [Concept('Sire', 'сира')|E] вашего [Concept('Sire', 'сира')|E], не ищите того, кто сделал вас сородичем, ибо вы почувствуете погребальный костер, когда заплатите за свой бессмертный грех."
+ doctrine_vampirediablerie_crime_desc: "Поглощение души другого сородича - самое страшное преступление среди нашего вида.\n\nПрощание, запрещающее [diablerie|El]\n\nНе ищите крови своего старейшины, не ищите крови [Concept('Sire', 'сира')|E] вашего [Concept('Sire', 'сира')|E], не ищите того, кто сделал вас сородичем, ибо вы почувствуете погребальный костер, когда заплатите за свой бессмертный грех."
  doctrine_vampirediablerie_shunned_name: "Достойно порицания"
  doctrine_vampirediablerie_shunned_desc: "Когда вампиры почувствуют вкус крови других вампиров, что же их остановит?"
  doctrine_vampirediablerie_accepted_name: "Приемлемо"
@@ -839,7 +839,7 @@
  anda_hostility_name: "Отношение к [Glossary('Анда','podgloss.anda')]"
  special_doctrine_is_anda_faith_name: "[Glossary('Анда','podgloss.anda')]"
  special_doctrine_is_anda_faith_desc: "[Concept('faiths', 'Конфессии')|E] [Glossary('Анда','podgloss.anda')], союзники [Concept('akuma', 'акума')|E] при дворе Черной черепахи, являются врагами лоялистов $pod_wan_kuei$."
- doctrine_parameter_hostility_override_special_doctrine_is_anda_faith: "[faiths|El] [Glossary('Анда','podgloss.anda')] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]."
+ doctrine_parameter_hostility_override_special_doctrine_is_anda_faith: "[faiths|E] [Glossary('Анда','podgloss.anda')] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]."
  doctrine_parameter_is_anda_faith_opinion_active: "" # Make loca empty to hidden this like vanilla
  doctrine_parameter_opinion_of_is_anda_faith_opinion_active: "[Concept('opinion', 'Мнение')|E] к [Concept('faiths', 'конфессиям')|E] [Glossary('Анда','podgloss.anda')]: $VALUE|+=0$"
  is_anda_faith_opinion_active_county_opinion_name: "[Glossary('Анда','podgloss.anda')]"

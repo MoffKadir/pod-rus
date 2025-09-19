@@ -1,49 +1,49 @@
 ﻿l_russian:
 
 
- POD_freyjas_blessing_interaction: "Freyja's Blessing"
- POD_freyjas_blessing_interaction_desc: "Summons a fertility spirit into yourself. By laying your hands on [recipient.GetFirstNamePossessive] belly, you may pass the spirit into [recipient.GetFirstName]."
+ POD_freyjas_blessing_interaction: "Благословение Фрейи"
+ POD_freyjas_blessing_interaction_desc: "Призвать в себя духа плодородия. Возложив руки на живот персонажа [recipient.GetFirstNamePossessive], вы можете передать дух персонажу [recipient.GetFirstName]."
 
- POD_withering_stare_interaction: "Withering Stare"
- POD_withering_stare_interaction_desc: "Locks eyes with the target, and inflicts damage on [recipient.GetFirstName]."
+ POD_withering_stare_interaction: "Утомлённый взгляд"
+ POD_withering_stare_interaction_desc: "Перехватить взгляд цели и нанести урон персонажу [recipient.GetFirstName]."
 
- POD_deny_the_hungry_perk_interaction: "Deny the Hungry"
- POD_deny_the_hungry_perk_interaction_desc: "The target county gains [GetModifier( 'deny_the_hungry_perk_modifier' ).GetNameWithTooltip|L]."
- deny_the_hungry_perk_modifier: "Deny the Hungry"
+ POD_deny_the_hungry_perk_interaction: "Отвергнуть голод"
+ POD_deny_the_hungry_perk_interaction_desc: "Выбранное графство получит модификатор [GetModifier( 'deny_the_hungry_perk_modifier' ).GetNameWithTooltip|L]."
+ deny_the_hungry_perk_modifier: "Отвержение голода"
 
- POD_madness_perk_interaction: "Madness"
- POD_madness_perk_interaction_desc: "Use this power to give [recipient.GetFirstName] a negative mental trait."
- POD_madness_perk_interaction_options_heading: "What trait shall I give?"
- 
- POD_absorb_disease_interaction: "Absorb Disease"
- POD_absorb_disease_interaction_desc: "Absorb a disease from [recipient.GetFirstName] for later use."
- 
- POD_release_disease_interaction: "Release Disease"
- POD_release_disease_interaction_desc: "Release an owned disease in [recipient.GetFirstNamePossessive] court."
- POD_release_disease_interaction_options_heading: "What disease shall I release?"
+ POD_madness_perk_interaction: "Безумие"
+ POD_madness_perk_interaction_desc: "Использовать эту способность, чтобы наделить персонажа [recipient.GetFirstName] отрицательным ментальным свойством."
+ POD_madness_perk_interaction_options_heading: "Каким свойством я хочу наделить?"
 
- POD_ojas_surge_perk_interaction: "Ojas Surge"
- POD_ojas_surge_perk_interaction_desc: "Temporary boost an attribute."
- POD_ojas_surge_perk_interaction_options_heading: "Which attribute shall I boost?"
+ POD_absorb_disease_interaction: "Поглотить хворь"
+ POD_absorb_disease_interaction_desc: "Поглотить хворь персонажа [recipient.GetFirstName] для дальнейшего использования."
 
- POD_shadow_brethren_interaction: "Summons Shadowy Duplicate"
- POD_shadow_brethren_interaction_desc: "Summons up shadowy duplicates of yourself."
- POD_shadow_brethren_interaction.tt: "You will try to summons up shadowy duplicates of yourself."
+ POD_release_disease_interaction: "Высвободить хворь"
+ POD_release_disease_interaction_desc: "Высвободить поглощённую хворь при дворе персонажа [recipient.GetFirstNamePossessive]."
+ POD_release_disease_interaction_options_heading: "Какую хворь я высвобожу?"
 
- POD_rallying_challenge_perk_interaction: "Rallying Challenge"
- POD_rallying_challenge_perk_interaction_desc: "Temporary boost an attribute."
- POD_rallying_challenge_perk_interaction_options_heading: "Which attribute shall I boost?"
+ POD_ojas_surge_perk_interaction: "Волна Оджаса"
+ POD_ojas_surge_perk_interaction_desc: "Временно повысить атрибут."
+ POD_ojas_surge_perk_interaction_options_heading: "Какой атрибут мне улучшить?"
 
- POD_ghost_caress_perk_interaction: "Ghost Caress"
- POD_ghost_caress_perk_interaction_desc: "Cause harm from afar to [recipient.GetFirstName]."
+ POD_shadow_brethren_interaction: "Призвать тень-двойника"
+ POD_shadow_brethren_interaction_desc: "Призвать собственную тень-двойника."
+ POD_shadow_brethren_interaction.tt: "Вы попытаетесь призвать собственную тень-двойника."
 
- POD_mothers_blessing_curse_perk_interaction: "Mother's Blessing/Curse"
- POD_mothers_blessing_curse_perk_interaction_desc: "Give [GetModifier( 'mothers_blessing_perk_modifier' ).GetNameWithTooltip|L] or [GetModifier( 'mothers_curse_perk_modifier' ).GetNameWithTooltip|L] to [recipient.GetFirstName]."
- mothers_blessing_perk_modifier: "Mother's Blessing"
- mothers_curse_perk_modifier: "Mother's Curse"
+ POD_rallying_challenge_perk_interaction: "Объединяющий вызов"
+ POD_rallying_challenge_perk_interaction_desc: "Временно повысить атрибут."
+ POD_rallying_challenge_perk_interaction_options_heading: "Какой атрибут мне улучшить?"
 
- POD_the_madness_of_crowds_interaction: "The Madness of Crowds"
- POD_the_madness_of_crowds_interaction_desc: "Stir up the wild side of everyone nearby to do [recipient.GetFirstName] bidding."
+ POD_ghost_caress_perk_interaction: "Призрачная ласка"
+ POD_ghost_caress_perk_interaction_desc: "Причинить персонажу [recipient.GetFirstName] вред издалека."
 
- POD_reveal_scheme_interaction: "Reveal Scheme"
- POD_reveal_scheme_interaction_desc: "Learn of every scheme of [recipient.GetFirstName]."
+ POD_mothers_blessing_curse_perk_interaction: "Благословение/проклятие матери"
+ POD_mothers_blessing_curse_perk_interaction_desc: "Наделить персонажа [recipient.GetFirstName] модификатором [GetModifier( 'mothers_blessing_perk_modifier' ).GetNameWithTooltip|L] или [GetModifier( 'mothers_curse_perk_modifier' ).GetNameWithTooltip|L]."
+ mothers_blessing_perk_modifier: "Благословение матери"
+ mothers_curse_perk_modifier: "Проклятие матери"
+
+ POD_the_madness_of_crowds_interaction: "Безумие толпы"
+ POD_the_madness_of_crowds_interaction_desc: "Расшевелить дикую натуру всех в окружении персонажа [recipient.GetFirstName]."
+
+ POD_reveal_scheme_interaction: "Раскрыть происки"
+ POD_reveal_scheme_interaction_desc: "Раскрыть все происки персонажа [recipient.GetFirstName]."
