@@ -2,23 +2,23 @@
 
 
  POD_fera_pack.1.t: "Ваша [GetPlayer.Custom('PODCoterie')]"
- POD_fera_pack.1.desc: "The members of your [GetPlayer.Custom('PODCoterie')] have gathered. As the leader, you are entitled with choosing how to train for the coming years or which activity to focus on."
+ POD_fera_pack.1.desc: "Ваша [GetPlayer.Custom('PODCoterie')] собралась. Как их вожак, вы имеете право выбирать, как тренироваться в ближайшие годы или на каком занятии сосредоточиться."
 
  POD_fera_pack.1.option.a: "Мы должны ограничить рост человечества"
  POD_fera_pack.1.option.b: "Мы должны готовиться к войне!"
  POD_fera_pack.1.option.c: "Время для поединка!"
- POD_fera_pack.1.option.d: "[pack_diplomacy_teacher.GetFirstName]'s silver tongue is worthy of respect."
- POD_fera_pack.1.option.e: "We can all learn more strategies from [pack_martial_teacher.GetFirstName]."
- POD_fera_pack.1.option.f: "Studying [pack_stewardship_teacher.GetFirstName]'s administrative abilities will prove useful."
- POD_fera_pack.1.option.g: "[pack_intrigue_teacher.GetFirstName] will teach us to become one with shadows."
- POD_fera_pack.1.option.h: "[pack_learning_teacher.GetFirstName]'s wisdom can enlighten us."
+ POD_fera_pack.1.option.d: "[pack_diplomacy_teacher.GetFirstName] заслуживает уважения благодаря своему красноречию."
+ POD_fera_pack.1.option.e: "[pack_martial_teacher.GetFirstName] может научить нас стратегии."
+ POD_fera_pack.1.option.f: "Если [pack_stewardship_teacher.GetFirstName] поделится с нами своим знанием управленческих способностей, это окажется полезным."
+ POD_fera_pack.1.option.g: "[pack_intrigue_teacher.GetFirstName] научит нас становиться едиными с тенью."
+ POD_fera_pack.1.option.h: "[pack_learning_teacher.GetFirstName] просветит нас своей мудростью."
  POD_fera_pack.1.option.i: "Мы должны попросить духов об их благословении." 
  POD_fera_pack.1.option.z: "Пока ничего."
 
  fera_pack_coterie_rewards_tt: "Члены вашей группы ([GetPlayer.Custom('PODCoterie')]) также получат эту награду."
- fera_pack_teaching_rewards_tt: "All members of your [GetPlayer.Custom('PODCoterie')] except the teacher will improve their related [skill|E]."
- fera_pack_teaching_warning_tt: "@warning_icon!#X You have the highest [skill|E] among your [GetPlayer.Custom('PODCoterie')] and will not gain any rewards yourself.#!"
- fera_pack_totem_tt: "You will beseech a Totem for your [GetPlayer.Custom('PODCoterie')]\n@warning_icon!#X Your choice of totem is permanent.#!"
+ fera_pack_teaching_rewards_tt: "Все члены вашей группы ([GetPlayer.Custom('PODCoterie')]) кроме наставника улучшат свой связанный [Concept('skill', 'навык')|E]."
+ fera_pack_teaching_warning_tt: "@warning_icon!#X У вас наивысший [Concept('skill', 'навык')|E] среди членов вашей группы ([GetPlayer.Custom('PODCoterie')]), поэтому вы не получите никаких наград.#!"
+ fera_pack_totem_tt: "Вы обратитесь к тотему от имени вашей группы ([GetPlayer.Custom('PODCoterie')])\n@warning_icon!#X Ваш выбор тотема является постоянным.#!"
 
 
 
