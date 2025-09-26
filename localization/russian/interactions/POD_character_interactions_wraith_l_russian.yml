@@ -2,12 +2,12 @@
 
  # Necromancer #
 
- POD_weaken_fetter_interaction: "Weaken [Fetter|E]"
+ POD_weaken_fetter_interaction: "Ослабить [Concept('Fetter', 'оковы')|E]"
  POD_weaken_fetter_interaction_desc: "Binding a $POD_splat_wraith$ isn't an easy matter, to even start you need an opening. So why not create one?"
  POD_weaken_fetter_interaction_need_fetter: "There has to be a [Fetter|E] to weaken in the first place. Take notice that not all $pod_Fetters$ can be weakened."
  POD_weaken_fetter_interaction.success: "Your tampering will succeed!"
  POD_weaken_fetter_interaction.failure: "Your tampering will fail!"
- POD_weaken_fetter_interaction_effect: "A random [Fetter|E] will be weakened, or even destroyed."
+ POD_weaken_fetter_interaction_effect: "Случайные [Concept('Fetter', 'оковы')|E] будут ослаблены или даже уничтожены."
 
  POD_bind_interaction: "Привязать призрака"
  POD_bind_interaction_desc: "Свяжите сущность темной магией и чистой волей. Ей вряд ли понравится быть привязанным, и, скорее всего, он сильно обидится на вас за это. Повторные попытки могут усилить привязку."
@@ -30,13 +30,13 @@
  POD_command_wraith_recall_interaction: "Отзыв"
  POD_command_wraith_recall_interaction_desc: "[recipient.GetTitledFirstName] прибудет к вашему двору."
  POD_command_wraith_recall_interaction_extra_icon: "$hook_extra_icon$"
- POD_summon_wraith_on_death_interaction: "Wraith Summon on Death"
+ POD_summon_wraith_on_death_interaction: "Призвать призрака после смерти"
  POD_summon_wraith_on_death_interaction_desc: "If [recipient.GetFirstNamePossessive] dies within 10 years, summon [recipient.GetHerHim] to your court when [recipient.GetSheHe] dies, becoming a [GetTrait('wraith').GetName( GetNullCharacter )] in the process."
  marked_wraith_has_arrive: "Помеченный дух прибыл"
 
- POD_summon_wraith_interaction: "Summon Wraith"
- POD_summon_wraith_interaction_desc: "Search your territory for a [GetTrait('wraith').GetName( GetNullCharacter )] vulnerable to your actions."
- POD_summon_wraith_interaction_effect: "In about 10 days, there will apear new wraith [courtier|E] in your [court|E]."
+ POD_summon_wraith_interaction: "Призвать призрака"
+ POD_summon_wraith_interaction_desc: "Обыскать окрестности в поисках #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#!, уязвимого к ваших действиям."
+ POD_summon_wraith_interaction_effect: "Примерно через 10 дней при вашем [Concept('court', 'дворе')|E] появится новый [Concept('courtier', 'придворный')|E]-призрак."
 
  POD_reshape_the_lost_soul_interaction: "Преобразить потерянную душу"
  POD_reshape_the_lost_soul_interaction_desc: "Изменить страсть [recipient.GetFirstName]."
