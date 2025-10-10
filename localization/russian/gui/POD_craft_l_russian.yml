@@ -1003,9 +1003,9 @@
  custom_fetish_artifact_name: "$pod_fetish_artifact_icon$[artifact.GetType] персонажа [artifact.GetOwner.GetTitledFirstNamePossessive]"
  custom_artifact_desc: "[Concept('artifact', 'Артефакт')|E], созданный персонажем [artifact.MakeScope.GetVariable('crafter').GetCharacter.GetTitledFirstName] после многих дней и ночей работы"
 
- has_forge_cooldown: "Ковка восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'forge_cooldown') )]" 
- has_brew_cooldown: "Создание отваров восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'brew_cooldown') )]" 
- has_enhance_cooldown: "Улучшение восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'enhance_cooldown') )]" 
+ has_forge_cooldown: "Ковка восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'forge_cooldown') )]"
+ has_brew_cooldown: "Создание отваров восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'brew_cooldown') )]"
+ has_enhance_cooldown: "Улучшение восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'enhance_cooldown') )]"
 
  POD_artifact_can_be_enhanced: "Этот [Concept('artifact', 'артефакт')|E] уже достиг своего [Concept('crafting_enhance_limit', 'предела улучшений')|E]."
 

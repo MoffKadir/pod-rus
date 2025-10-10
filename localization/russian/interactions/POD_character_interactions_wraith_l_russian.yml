@@ -47,19 +47,19 @@
  POD_send_to_skinland_character_interaction: "Призвать в Земли Плоти"
  POD_send_to_skinland_character_interaction_desc: "Призовите [recipient.GetFirstName] в Земли Плоти, чтобы вы смогли отдавать [recipient.GetHerHim] приказы."
  POD_send_to_shadowland_character_interaction: "Отослать в Земли Теней"
- POD_send_to_shadowland_character_interaction_desc: "Отошлите [recipient.GetFirstName] в [underworld|E],  чтобы перестать тратить силу воли на [recipient.GetHerHis] поддержание в мире смертных."
+ POD_send_to_shadowland_character_interaction_desc: "Отошлите [recipient.GetFirstName] в [underworld|E], чтобы перестать тратить силу воли на [recipient.GetHerHis] поддержание в мире смертных."
  POD_send_to_dark_kingdom_character_interaction: "Отослать в Темное королевство"
  POD_send_to_dark_kingdom_character_interaction_desc: "Отошлите [recipient.GetFirstName] в любое [dark_kingdom|E] и тогда [recipient.GetFirstName] выучит новые [Arcanoi|E] (с риском получить свойство [GetTrait('spectre').GetName( GetPlayer )])."
  POD_send_to_dark_kingdom_character_interaction.random.tt: "Поскольку у вас нет достаточных знаний мира мертвых, чтобы знать, куда отслылать призрака, [recipient.GetFirstName] получит большой шанс заблудиться и стать спектром."
  POD_send_to_yomi_wan_character_interaction: "Отослать в Йоми"
  POD_send_to_yomi_wan_character_interaction_desc: "Отошлите [recipient.GetFirstName] в [yomi_wan|E], и [recipient.GetFirstName] получит возможность вернуться как [GetTrait('kueijin').GetName( GetPlayer )]."
  POD_send_to_labyrinth_character_interaction: "Отослать в Лабиринт"
- POD_send_to_labyrinth_character_interaction_desc: "Отошлите [recipient.GetFirstName] в [labyrinth|E], и  [recipient.GetFirstName] получит возможность вернуться как [GetModifier('doomslayer_modifier').GetNameWithTooltip]."
+ POD_send_to_labyrinth_character_interaction_desc: "Отошлите [recipient.GetFirstName] в [labyrinth|E], и [recipient.GetFirstName] получит возможность вернуться как [GetModifier('doomslayer_modifier').GetNameWithTooltip]."
  POD_banish_wraith_interaction: "Изгнать призрака"
  POD_banish_wraith_interaction_desc: "Изгоните [recipient.GetFirstName] в [dark_kingdom|E]."
  POD_offer_seeds_of_pomegranate_interaction: "Предложить Зерна граната"
  POD_offer_seeds_of_pomegranate_interaction_desc: "Сделайте так, что [recipient.GetFirstName] получит черту [GetTrait('risen').GetName( GetPlayer )]."
-  # Arcanoi # 
+ # Arcanoi #
  POD_possess_interaction: "Овладение"
  POD_possess_interaction_desc: "Захватите тело этого персонажа, получив контроль над [recipient.GetHerHis] действиями и наделяя [recipient.GetHerHis] частью призрачной силы. Последующие применения повышают уровень контроля и усиливают возможности, которые вы даете цели."
  POD_command_wraith_possess_interaction: "Овладеть #weak (Команда призраку)#!"
@@ -319,7 +319,7 @@
  
  POD_create_shadow_familiar_interaction: "Create Shadow Familiar"
  POD_create_shadow_familiar_interaction_desc: "Turn an animal into a Shadow Familiar."
- POD_create_shadow_familiar_interaction_options_heading: "What animal should I turn?" 
+ POD_create_shadow_familiar_interaction_options_heading: "What animal should I turn?"
  
  POD_siphon_angst_interaction: "Siphon Angst"
  POD_siphon_angst_interaction_desc: "Siphon Angst from [recipient.GetFirstName] for your own purposes."
@@ -624,7 +624,7 @@
  POD_usury_exchange_rate_interaction_corpus: "Turn Pathos into [Corpus|E]"
  POD_usury_exchange_rate_interaction_corpus_2: "Doing this would kill you!"
  POD_usury_exchange_rate_interaction_corpus_10: "You already have full [Corpus|E]"
-  
+
  POD_usury_create_pathos_vessel_interaction: "Create Pathos Vessel"
  POD_usury_create_pathos_vessel_interaction_desc: "Create an artifact to store Pathos"
 

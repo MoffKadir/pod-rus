@@ -62,12 +62,12 @@
  tan_lung_focus_effect_desc: "Сосредоточившись на Лун Тан, персонаж получает:"
  
  amulets_visible: "Амулеты"
- alchemy_visible: "Алхимия" 
- celestial_visible: "Небеса" 
- effigy_visible: "Эффигия" 
- necromancy_visible: "Некромантия" 
+ alchemy_visible: "Алхимия"
+ celestial_visible: "Небеса"
+ effigy_visible: "Эффигия"
+ necromancy_visible: "Некромантия"
  nomenclature_visible: "Онимика"
- fengtan_visible: "Фэн Тан" 
+ fengtan_visible: "Фэн Тан"
  lungtan_visible: "Лун Тан"
 
  POD_GET_HEKAU_LEVEL_EFFECT: "#X @warning_icon! Вам нужен как минимум $VALUE|0$ уровень в пути развития [Concept('trait', 'свойства')|E] воспоминаний мумии#!"
@@ -368,7 +368,7 @@
  ARCH_OF_NUIT_PERK_EFFECT: "#flavor Этот ритуал усиливает защитное влияние Нуит, препятствуя проникновению всей негативной духовной энергии.#!"
  CYCLE_OF_RA_PERK_EFFECT: "Разблокирует опцию #V Цикл Ра#! во [Concept('character_interaction', 'взаимодействии персонажа')|E] [GetPerk('simple_weather_magic_perk').GetName(GetPlayer)].\n#flavor Это заклинание заставляет мага сиять ослепительным светом Ра и быстро сменять день и ночь.#!"
  STAR_OF_THE_MESSIAH_PERK_EFFECT: "#flavor Этот ритуал предоставляет временный доступ к влиянию на смертных, им кажется, что маг каким-то образом является ключом к их надеждам и мечтам.#!"
- WHISPERS_OF_THE_TREE_OF_LIFE_PERK_EFFECT: "Вы можете наделить себя через [Concept('character_interaction', 'взаимодействие персонажа')|E]  модификатором [GetModifier('POD_hekau_whispers_of_the_tree_of_life_modifier').GetNameWithTooltip] на 2 года.\n#flavor Поток сехема разносит по всей вселенной шепот тайн, хранящихся в Древе жизни, и это заклинание позволяет мумии услышать их, просто подключившись к этому мистическому потоку.#!"
+ WHISPERS_OF_THE_TREE_OF_LIFE_PERK_EFFECT: "Вы можете наделить себя через [Concept('character_interaction', 'взаимодействие персонажа')|E] модификатором [GetModifier('POD_hekau_whispers_of_the_tree_of_life_modifier').GetNameWithTooltip] на 2 года.\n#flavor Поток сехема разносит по всей вселенной шепот тайн, хранящихся в Древе жизни, и это заклинание позволяет мумии услышать их, просто подключившись к этому мистическому потоку.#!"
  CROSSED_BY_THE_STARS_PERK_EFFECT: "Вы можете наделить через [Concept('character_interaction', 'взаимодействие персонажа')|E] свою цель модификатором [GetModifier('POD_hekau_crossed_by_the_stars_modifier').GetNameWithTooltip].\n#flavor Мастера небесного хекау учатся побеждать своих врагов, необъяснимым образом связывая их с дурными знаками, негативными влияниями и «злыми звездами».#!"
  
  # Effigy
@@ -703,7 +703,7 @@
  WALK_THE_BARRIERS_PERK_EFFECT: "#flavor Преодоление Барьера позволяет бессмертному перенести свою физическую форму в царство Ян.#!"
  PLAGUE_CURING_METHOD_PERK_EFFECT: "Улучшает достоинство «[GetPerk('body_mending_technique_perk').GetName(GetPlayer)]», снижая цену в три раза.\n#flavor С помощью этого заклинания Ву Тянь может перенести энергию Ян в тело пациента, понаблюдав за ним не менее 15 минут.#!"
  TEN_PACES_STRIKE_PERK_EFFECT: "#flavor Минуя обычную потребность в физическом контакте, Ву Тянь с помощью этого заклинания может невидимо проецировать силу одиночной атаки в боевых искусствах на значительное расстояние с помощью силы своей сфокусированной ци.#!"
- GODBODY_OF_THE_CELESTIAL_EMPEROR_PERK_EFFECT: "#flavor Напоминая о величии $pod_wan_xian$ до их грехопадения, Божественное тело Небесного императора окружает заклинателя ореолом серебристого света, который освещает путь перед Ву Тянь, погружает смертных в состояние, подобное Туману, и заставляет запятнанных сверхъестественных существ спасаться бегством.#!" 
+ GODBODY_OF_THE_CELESTIAL_EMPEROR_PERK_EFFECT: "#flavor Напоминая о величии $pod_wan_xian$ до их грехопадения, Божественное тело Небесного императора окружает заклинателя ореолом серебристого света, который освещает путь перед Ву Тянь, погружает смертных в состояние, подобное Туману, и заставляет запятнанных сверхъестественных существ спасаться бегством.#!"
  RESTORATION_OF_YOUTHS_VIGOR_PERK_EFFECT: "Вы можете наделить через [Concept('character_interaction', 'взаимодействие персонажа')|E] смертного или охотника модификатором [GetModifier('tan_restoration_of_youths_vigor_modifier').GetNameWithTooltip].\n#flavor Мастера Фэн Тан могут сотворить чудо возрождения феникса, чтобы отменить разрушительное воздействие времени и продлить молодость смертного.#!"
  TRANSCENDANT_LIVING_FLAME_PERK_EFFECT: "Вы можете наделить через [Concept('character_interaction', 'взаимодействие персонажа')|E] смертного или охотника модификатором [GetModifier('extra_life_1_modifier').GetNameWithTooltip], снизив свой [Concept('piety_level', 'уровень набожности')|E] на 1.\n#flavor С помощью этого заклинания последнего средства Ву Тянь может полностью восстановить здоровье себе или своему союзнику, учитывая, что Небеса считают ситуацию достаточно отчаянной.#!"
  GENTLE_TYPHOONS_PASSING_PERK_EFFECT: "#flavor Вызванный во время боя Проход мягкого тайфуна превращает мастера Фэн-Тан в око совершенного спокойствия в центре яростного вихря кулаков.#!"

@@ -21,7 +21,7 @@
 
  DEMON_ARTS_INFERNAL_MIGHT_PERK_EFFECT: "Вы можете добавить себе через [Concept('character_interaction', 'взаимодействие персонажа')|E] модификатор [GetModifier('demon_arts_infernal_might_modifier').GetNameWithTooltip] на 10 лет в обмен на #V 10#! [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] [Glossary('дхармы','podgloss.dharma')].\n#flavor Кульминацией искусства «Кулак дьявола» является то, что ваше тело становится оружием, подпитываемым вашей болью и страданиями, гарантируя, что ничто не устоит перед вами.#!"
  DEMON_ARTS_INFERNAL_MIGHT_PERK_COST_EFFECT: "#clickable Это достоинство стоит [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_might_perk_cost')|V0] оч. Каждое достоинство #high [GetPerk('demon_arts_devil_fist_perk').GetName(CHARACTER.Self)]#! снизит эту стоимость на #V 1#!#!"
- DEMON_ARTS_INFERNAL_MIGHT_PERK_COST_WARNING_EFFECT: "#X @warning_icon! У вас нет [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_might_perk_cost')] оч. [Concept('perk', 'достоинства')|E]!#!" 
+ DEMON_ARTS_INFERNAL_MIGHT_PERK_COST_WARNING_EFFECT: "#X @warning_icon! У вас нет [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_might_perk_cost')] оч. [Concept('perk', 'достоинства')|E]!#!"
  DEMON_ARTS_DEVIL_FIST_PERK_EFFECT: "#flavor Ваши мускулы вздуваются, костяшки пальцев каменеют. Вы превратите своих врагов в кровавый туман, ломая слабых о своё колено, как сухую ветку.#!"
 
  demon_arts_infernal_speed_perk_name: "Инфернальная скорость #low (Стоимость: [ROOT.Char.MakeScope.ScriptValue('demon_arts_infernal_speed_perk_cost')])#!"
@@ -29,7 +29,7 @@
 
  DEMON_ARTS_INFERNAL_SPEED_PERK_EFFECT: "Вы можете добавить себе через [Concept('character_interaction', 'взаимодействие персонажа')|E] модификатор [GetModifier('demon_arts_infernal_speed_modifier').GetNameWithTooltip] на 10 лет в обмен на #V 10#! [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] [Glossary('дхармы','podgloss.dharma')].\n#flavor Кульминация искусства Чёрного ветра - теперь ваша скорость превышает скорость звука, гарантируя, что от вас никто не убежит.#!"
  DEMON_ARTS_INFERNAL_SPEED_PERK_COST_EFFECT: "#clickable Это достоинство стоит [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_speed_perk_cost')|V0] оч. Каждое достоинство #high [GetPerk('demon_arts_black_wind_perk').GetName(CHARACTER.Self)]#! снизит эту стоимость на #V 1#!#!"
- DEMON_ARTS_INFERNAL_SPEED_PERK_COST_WARNING_EFFECT: "#X @warning_icon! У вас нет [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_speed_perk_cost')] оч. [Concept('perk', 'достоинства')|E]!#!" 
+ DEMON_ARTS_INFERNAL_SPEED_PERK_COST_WARNING_EFFECT: "#X @warning_icon! У вас нет [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_speed_perk_cost')] оч. [Concept('perk', 'достоинства')|E]!#!"
  DEMON_ARTS_BLACK_WIND_PERK_EFFECT: "#flavor Размытое пятно, затем фонтан крови, вы двигаетесь, как оборванная проволока, как смертоносная гадюка. В вашем танце насилия ни одно движение не пропадает даром.#!"
 
  demon_arts_infernal_fortitude_perk_name: "Инфернальная стойкость #low (Стоимость: [ROOT.Char.MakeScope.ScriptValue('demon_arts_infernal_fortitude_perk_cost')])#!"
@@ -37,7 +37,7 @@
 
  DEMON_ARTS_INFERNAL_FORTITUDE_PERK_EFFECT: "Вы можете добавить себе через [Concept('character_interaction', 'взаимодействие персонажа')|E] модификатор [GetModifier('demon_arts_infernal_fortitude_modifier').GetNameWithTooltip] на 5 лет в обмен на #V 10#! [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] [Glossary('дхармы','podgloss.dharma')].\n#flavor Кульминацией искусства Железной горы является то, что ваша плоть становится непробиваемой железной стеной, гарантирующей, что ничто не сможет пройти мимо вас.#!"
  DEMON_ARTS_INFERNAL_FORTITUDE_PERK_COST_EFFECT: "#clickable Это достоинство стоит [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_fortitude_perk_cost')|V0] оч. Каждое достоинство #high [GetPerk('demon_arts_iron_mountain_perk').GetName(CHARACTER.Self)]#! снизит эту стоимость на #V 1#!#!"
- DEMON_ARTS_INFERNAL_FORTITUDE_PERK_COST_WARNING_EFFECT: "#X @warning_icon! У вас нет [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_fortitude_perk_cost')] оч. [Concept('perk', 'достоинства')|E]!#!" 
+ DEMON_ARTS_INFERNAL_FORTITUDE_PERK_COST_WARNING_EFFECT: "#X @warning_icon! У вас нет [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_fortitude_perk_cost')] оч. [Concept('perk', 'достоинства')|E]!#!"
  DEMON_ARTS_IRON_MOUNTAIN_PERK_EFFECT: "#flavor Вы выдерживаете пламя, удары кулака, меча, и ваша кожа тверда, как сталь. Когда град атак наконец иссякает, вы улыбаетесь; теперь ваша очередь.#!"
 
  demon_arts_infernal_glory_perk_name: "Инфернальная слава #low (Стоимость: [ROOT.Char.MakeScope.ScriptValue('demon_arts_infernal_glory_perk_cost')])#!"
@@ -45,5 +45,5 @@
 
  DEMON_ARTS_INFERNAL_GLORY_PERK_EFFECT: "Вы можете добавить себе через [Concept('character_interaction', 'взаимодействие персонажа')|E] модификатор [GetModifier('demon_arts_infernal_glory_modifier').GetNameWithTooltip] на 5 лет в обмен на #V 10#! [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] [Glossary('дхармы','podgloss.dharma')].\n#flavor Кульминацией искусства Демонических регалий является то, что вы становитесь истинным потомком Десяти тысяч воинов, гарантируя, что одно ваше прикосновение причинит боль.#!"
  DEMON_ARTS_INFERNAL_GLORY_PERK_COST_EFFECT: "#clickable Это достоинство стоит [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_glory_perk_cost')|V0] оч. Каждое достоинство #high [GetPerk('demon_arts_demon_regalia_perk').GetName(CHARACTER.Self)]#! снизит эту стоимость на #V 1#!#!"
- DEMON_ARTS_INFERNAL_GLORY_PERK_COST_WARNING_EFFECT: "#X @warning_icon! У вас нет [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_glory_perk_cost')] оч. [Concept('perk', 'достоинства')|E]!#!" 
+ DEMON_ARTS_INFERNAL_GLORY_PERK_COST_WARNING_EFFECT: "#X @warning_icon! У вас нет [CHARACTER.MakeScope.ScriptValue('demon_arts_infernal_glory_perk_cost')] оч. [Concept('perk', 'достоинства')|E]!#!"
  DEMON_ARTS_DEMON_REGALIA_PERK_EFFECT: "Вы можете принять форму любой собранной демонической регалии через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nЗапускает событие, позволяющее выбрать новую демоническую регалию.\n#flavor Отвратительные, но прекрасные; смертоносные, но славные. Нечестивец, носи свою корону и меч с гордостью.#!"
