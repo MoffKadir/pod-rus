@@ -364,36 +364,36 @@
  full_displace_tooltip: "Вы получаете полное древо [Concept('Arcanoi', 'арканоя')|E] «Замена»."
 
  # Argos
- argos_visible: "Аргос" #ТУТ
+ argos_visible: "Аргос"
 
- enshroud_perk_name: "Окутывание"
+ enshroud_perk_name: "Закутывание"
  weather_eye_perk_name: "Глаз погоды"
- phantom_wings_perk_name: "Фантомные крылья"
+ phantom_wings_perk_name: "Призрачные крылья"
  return_perk_name: "Возвращение"
  flicker_perk_name: "Мерцание"
  stormreader_perk_name: "Буревестник"
  tempest_riders_canceleer_perk_name: "Покоритель всадника Бури"
  arcanoi_oubliette_perk_name: "Темница"
 
- ENSHROUD_PERK_EFFECT: "No longer needed to make a sacrifice to access the [UmbraGlossary('pod_realm_tempest')].\n#F A Harbinger can manipulate the membrane between the [UmbraGlossary('shadowlands')] and [UmbraGlossary('pod_realm_tempest')], allowing them to enter the [UmbraGlossary('pod_realm_tempest')] without opening a [GetModifier('nihil_modifier').GetNameWithTooltip] or use the [UmbraGlossary('pod_realm_tempest')] for concealment.#!"
+ ENSHROUD_PERK_EFFECT: "Для доступа к [UmbraGlossaryLocalized('pod_realm_tempest','Буре')] больше не требуется жертвоприношение.\n#F Предвестник может манипулировать мембраной между [UmbraGlossaryLocalized('shadowlands','Загробным миром')] и [UmbraGlossaryLocalized('pod_realm_tempest','Бурей')], чтобы войти в [UmbraGlossaryLocalized('pod_realm_tempest','Бурю')], не открывая [GetModifier('nihil_modifier').GetNameWithTooltip], или использовать [UmbraGlossaryLocalized('pod_realm_tempest','Бурю')] для сокрытия.#!"
  WEATHER_EYE_PERK_EFFECT: "Allow predicting natural hazards.\n#F A Harbinger is always aware of current conditions in the nearby [UmbraGlossary('pod_realm_tempest')], and can take shortcuts between two [UmbraGlossary('shadowlands')] locations.#!"
  PHANTOM_WINGS_PERK_EFFECT: "#F A Harbinger can grow wings to glide through the [UmbraGlossary('pod_realm_tempest')] and [UmbraGlossary('shadowlands')].#!"
  RETURN_PERK_EFFECT: "As a [character_interaction|E], can teleport to [UmbraGlossary('shadowlands')]\n#F A Harbinger may travel from any location in the [UmbraGlossary('pod_realm_tempest')] to their home by the fastest route possible.#!"
  FLICKER_PERK_EFFECT: "#F A Harbinger may bend the [UmbraGlossary('pod_realm_tempest')] to teleport themselves to another location.#!"
  STORMREADER_PERK_EFFECT: "You will no longer get lost in the [UmbraGlossary('pod_realm_tempest')].\n#F A Harbinger gains an intuitive sense of the [UmbraGlossary('pod_realm_tempest')], allowing them to cut travel times when traveling to or from a location in the [UmbraGlossary('pod_realm_tempest')], and to navigate so as to avoid a Maelstrom or mitigate its effects.#!"
  TEMPEST_RIDERS_CANCELEER_PERK_EFFECT: "#F A Harbinger can grow metallic black wings, allowing them to glide, attack, and protect others.#!"
- ARCANOI_OUBLIETTE_PERK_EFFECT: "Unlock $EXECUTION_BANISH_TO_TEMPEST$ [execution|E] option for [GetTrait('wraith').GetName( GetNullCharacter )] prisoner.\n#F A Harbinger may send another wraith directly into the [UmbraGlossary('pod_realm_tempest')].#!"
- 
+ ARCANOI_OUBLIETTE_PERK_EFFECT: "Разблокирована опция [Concept('execution', 'казни')|E] «$EXECUTION_BANISH_TO_TEMPEST$» для узников-#TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#!.\n#F Предвестник может послать другого призрака прямо в [UmbraGlossaryLocalized('pod_realm_tempest','Бурю')].#!"
+
  # Castigate
- castigate_visible: "Castigate"
- 
- coax_perk_name: "Coax"
- bulwark_perk_name: "Bulwark"
- transfer_angst_perk_name: "Transfer Angst"
- trimming_the_black_rose_perk_name: "Trimming the Black Rose"
- cooling_the_blood_perk_name: "Cooling the Blood"
- defiance_perk_name: "Defiance"
- shadow_wrack_perk_name: "Shadow Wrack"
+ castigate_visible: "Наказание"
+
+ coax_perk_name: "Лесть"
+ bulwark_perk_name: "Оплот"
+ transfer_angst_perk_name: "Передача ангста"
+ trimming_the_black_rose_perk_name: "Обрезка чёрной розы"
+ cooling_the_blood_perk_name: "Охлаждение крови"
+ defiance_perk_name: "Сопротивление"
+ shadow_wrack_perk_name: "Разрушение тени"
 
  COAX_PERK_EFFECT: "Resisting Shadow is more likely to succeed\n#F A Pardoner may call on their Shadow at decreased risk.#!"
  BULWARK_PERK_EFFECT: "Less chance of gaining [stress|E] in the Adventure into Maelstroms [umbra|E] action.\n#F A Pardoner can temporarily shield themselves or others from a Maelstrom.#!"
@@ -402,19 +402,19 @@
  COOLING_THE_BLOOD_PERK_EFFECT: "Number of dark passions: #P -1#!\n#F A Pardoner can weaken a Shadow's Dark Passions.#!"
  DEFIANCE_PERK_EFFECT: "Resisting Shadow is more likely to succeed\nReduce chance of losing control to shadow\n#F A Pardoner can beat back a powerful Shadow trying to take over a wraith.#!"
  SHADOW_WRACK_PERK_EFFECT: "Massively reduce chance of losing control to shadow\n#F A Pardoner may use this to strip a [GetTrait('spectre').GetName( GetNullCharacter )] of Angst and pull their Psyche to the fore of their personality.#!"
- 
+
  # Embody
- embody_visible: "Embody" 
- 
- whispers_perk_name: "Whisper"
- cache_perk_name: "Cache"
- phantom_perk_name: "Phantom"
- statue_perk_name: "Statue"
- life_in_death_perk_name: "Life-in-Death"
- shroudguide_perk_name: "Shroudguide"
- materialize_perk_name: "Materialize"
- harrow_the_mortal_flesh_perk_name: "Harrow the Mortal Flesh"
- 
+ embody_visible: "Воплощение"
+
+ whispers_perk_name: "Шёпот"
+ cache_perk_name: "Тайник"
+ phantom_perk_name: "Фантом"
+ statue_perk_name: "Статуя"
+ life_in_death_perk_name: "Жизнь-в-смерти"
+ shroudguide_perk_name: "Поводырь Заверсы"
+ materialize_perk_name: "Материализация"
+ harrow_the_mortal_flesh_perk_name: "Терзание смертной плоти"
+
  WHISPERS_PERK_EFFECT: "As a [character_interaction|E], get ability to interact with [skinlands|E] for 5 years, at cost of 3 pathos.\n#F A Proctor may whisper through the Shroud.#!"
  CACHE_PERK_EFFECT: "Allow gifting [artifact|E] and gold to the Quick of the [skinlands|E].\n#F A Proctor can temporarily move a relic into the [skinlands|E].#!"
  PHANTOM_PERK_EFFECT: "Decrease cost of [GetPerk('whispers_perk').GetName(GetPlayer)] [character_interaction|E] from 3 to 2 pathos\n#F A Proctor can materialize in a hazy, intangible form.#!"
@@ -423,19 +423,19 @@
  SHROUDGUIDE_PERK_EFFECT: "#F A Proctor can share the effects of Embody arts that allow manifestation in the [skinlands|E] with other wraiths.#!"
  MATERIALIZE_PERK_EFFECT: "Can travel to [skinlands|E], while gaining 'material' body.\n#F A Proctor can temporarily return to a lifelike state.#!"
  HARROW_THE_MORTAL_FLESH_PERK_EFFECT: "Allow gifting titles to other supernatural.\n#F A Proctor can bring a mortal or other supernatural into the [UmbraGlossary('shadowlands')].#!"
- 
+
  # Fatalism
- fatalism_visible: "Fatalism"
- 
- kismet_perk_name: "Kismet"
- distant_visions_perk_name: "Distant Visions"
- foreshadow_perk_name: "Foreshadow"
- reading_the_bones_perk_name: "Reading the Bones"
- fates_hand_apparent_perk_name: "Fate's Hand Apparent"
- sidestep_perk_name: "Sidestep"
- breathing_the_mists_perk_name: "Breathing the Mists"
- ensnare_perk_name: "Ensnare"
- 
+ fatalism_visible: "Фатализм"
+
+ kismet_perk_name: "Судьба"
+ distant_visions_perk_name: "Отдаленные видения"
+ foreshadow_perk_name: "Предчувствие"
+ reading_the_bones_perk_name: "Гадание по костям"
+ fates_hand_apparent_perk_name: "Отчетливость руки судьбы"
+ sidestep_perk_name: "Избегание"
+ breathing_the_mists_perk_name: "Вдох туманов"
+ ensnare_perk_name: "Ловушка"
+
  KISMET_PERK_EFFECT: "#F An Oracle can read the deathmarks on a wraith or mortal, and can also see that person's importance in Fate's plans.#!"
  DISTANT_VISIONS_PERK_EFFECT: "#F An Oracle may clearly see what relevant events are happening elsewhere.#!"
  FORESHADOW_PERK_EFFECT: "You will receive notification if someone intends to murder your friends or family.\nYou will receive notification if someone intends to seduce your lovers or consorts.\nYour prisoner has less chance of escaping from your prison.\n#F An Oracle can detect impending danger.#!"
@@ -561,7 +561,7 @@
 
  WEIRDNESS_PERK_EFFECT: "Unlock Haunt [character_interaction|E], which gives the target a negative modifier.\n#F A Haunter can cause a small, limited effect on a lone target.#!"
  BITE_ME_PERK_EFFECT: "#F A Haunter may create realistic-looking (but foul tasting) food with their [Corpus|E].#!"
- DARK_ETHER_PERK_EFFECT: "Give [GetModifier('dark_ether_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E].\n#F A Haunter can tamper with light or weather conditions in an area.#!"
+ DARK_ETHER_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в [Concept('combat_phase', 'бою')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('dark_ether_modifier').GetNameWithTooltip].\n#F A Haunter can tamper with light or weather conditions in an area.#!"
  ESCHERS_STAIR_PERK_EFFECT: "As a [character_interaction|E], allows you to teleport your army to your target's location, with a risk of getting lost in the [UmbraGlossary('pod_realm_labyrinth')].\n#F A Haunter can link two doorways or other portals via the [UmbraGlossary('pod_realm_labyrinth')].#!"
  FOUL_HUMOUR_PERK_EFFECT: "Give ally [knights|E] when acting as a [commander|E] during the [combat_phase|E] or yourself during [single_combat_duel_plural|E] [GetModifier('foul_humour_modifier').GetNameWithTooltip] [modifier|E] when acting as a [commander|E] during the [combat_phase|E].\n#F A Haunter can produce a strong, material effect through the Shroud.#!"
  STIGMATA_PERK_EFFECT: "#F A Haunter may create the appearance of bleeding wounds on their target.#!"
@@ -729,11 +729,11 @@
  FURTHER_REFLECTION_PERK_EFFECT: "As a [character_interaction|E], allows you make a potential relation with other.\n#F A Mnemos can project their memories into someone else's mind.#!"
  TABULA_RASA_PERK_EFFECT: "Bonus to $POD_erasure_interaction$ [character_interaction|E], now can erase prisioner memory as well.\n#F A Mnemos may permanently wipe a memory from another's mind.#!"
  CASTING_THE_SCENE_PERK_EFFECT: "#F A Mnemos can allow others in the area to see a flash of another’s memory.#!"
- PHANTOM_PAIN_PERK_EFFECT: "Give [GetModifier('phantom_pain_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E].\n#F A Mnemos can project their memories of injury into another wraith's mind, triggering psychosomatic wounds in the other wraith's [Corpus|E].#!"
+ PHANTOM_PAIN_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в [Concept('combat_phase', 'бою')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('phantom_pain_modifier').GetNameWithTooltip].\n#F A Mnemos can project their memories of injury into another wraith's mind, triggering psychosomatic wounds in the other wraith's [Corpus|E].#!"
  GRAY_MAN_PERK_EFFECT: "As a [character_interaction|E], allows you make target lose their relationship, consort and prestige.\n#F A Mnemos may erase someone from the collective memory of all who know them.#!"
 
  # Jade Arcanoi
- 
+
  emperor_visible: "Emperor"
  scholar_visible: "Scholar"
  farmer_visible: "Farmer"
@@ -814,10 +814,10 @@
  
  ILL_OMEN_PERK_EFFECT: "#F Divine clues about the fate of a person, location, or object.#!"
  SMALL_HOURS_PERK_EFFECT: "If any of your relatives or friends are murdered in mysterious circumstances, you will know their murderers.\n#F Induce visions related to past events.#!"
- CIMMERIAN_SHADE_PERK_EFFECT: "[espionage|E] Progress Speed: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#F Access secrets from the target's past in the form of a phantom voice.#!"
+ CIMMERIAN_SHADE_PERK_EFFECT: "Скорость прогресса [Concept('espionage', 'шпионажа')|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#F Access secrets from the target's past in the form of a phantom voice.#!"
  CIMMERIAN_SHADE_PERK_BONUS_VALUE: "[GetPerk('cimmerian_shade_perk').GetName(GetPlayer)]"
- HYPNOS_RECLINING_PERK_EFFECT: "You will receive a notification if someone intends to murder your friends or family.\nYou will receive a notification if someone intends to seduce your lovers or consorts.\n#F Learn information through dreams and prophecies.#!"
- GATES_OF_HORN_PERK_EFFECT: "Unlocks the [impatient_rushing_all_schemes_decision|E]\nUnlocks the [deceitful_progress_hostile_schemes_decision|E].\n#F Alter the target's fate.#!"
+ HYPNOS_RECLINING_PERK_EFFECT: "Вы получите уведомление, если кто-то задумает убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то задумает соблазнить ваших любовников или консортов.\n#F Learn information through dreams and prophecies.#!"
+ GATES_OF_HORN_PERK_EFFECT: "Позволяет принять [impatient_rushing_all_schemes_decision|El]\nПозволяет принять [deceitful_progress_hostile_schemes_decision|El].\n#F Alter the target's fate.#!"
  
  # Contaminate
  contaminate_visible: "Contaminate"
@@ -1017,11 +1017,11 @@
  murmur_perk_name: "Murmur"
  veer_perk_name: "Veer"
  
- DELVE_PERK_EFFECT: "[espionage|E] Progress Speed: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#F A Moriman can enter a trance and experience what a target has recently been through.#!" 
+ DELVE_PERK_EFFECT: "Скорость прогресса [Concept('espionage', 'шпионажа')|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\n#F A Moriman can enter a trance and experience what a target has recently been through.#!" 
  DELVE_PERK_BONUS_VALUE: "[GetPerk('delve_perk').GetName(GetPlayer)]"
  TRANCE_PERK_EFFECT: "#F By using a possession of the target or going to a place they have recently vacated, a Moriman can find their current location.#!"
  ARCANOI_SCRY_PERK_EFFECT: "Each $bound_wraith$ adds: [GetModifier( 'arcanoi_scry_perk_modifier' ).GetNameWithTooltip|L]. This is cumulative.\n#F A Moriman can perceive what another wraith currently sees.#!"
- DIVINE_PERK_EFFECT: "You will receive a notification if someone intends to murder your friends or family.\nYou will receive a notification if someone intends to seduce your lovers or consorts.\n#F A Moriman can see the future of themselves or another wraith.#!"
+ DIVINE_PERK_EFFECT: "Вы получите уведомление, если кто-то задумает убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то задумает соблазнить ваших любовников или консортов.\n#F A Moriman can see the future of themselves or another wraith.#!"
  ARCANOI_TWITCH_PERK_EFFECT: "Each $bound_wraith$ adds: [GetModifier( 'arcanoi_twitch_perk_modifier' ).GetNameWithTooltip|L]. This is cumulative.\n#F A Moriman can force small movements from a wraith.#!"
  MURMUR_PERK_EFFECT: "Each $bound_wraith$ adds: [GetModifier( 'murmur_perk_modifier' ).GetNameWithTooltip|L]. This is cumulative.\n#F A Moriman can speak through another wraith.#!"
  VEER_PERK_EFFECT: "Each $bound_wraith$ adds: [GetModifier( 'veer_perk_modifier' ).GetNameWithTooltip|L]. This is cumulative.\n#F A Moriman can create Puppetry-type control over another wraith.#!"
@@ -1038,8 +1038,8 @@
  marrer_baka_perk_name: "Marrer Baka"
  bonte_abyssale_perk_name: "Bonté Abyssale"
  
- RELER_BAKA_PERK_EFFECT: "Can recruit [GetMaA('spectres').GetName] as [men_at_arms|E].\n#F A Baka can be summoned by a Serviteur.#!"
- RENVOYER_BAKA_PERK_EFFECT: "Can recruit [GetMaA('shades').GetName] as [men_at_arms|E].\n#F A Serviteur uses this art to scare Baka away from themselves.#!"
+ RELER_BAKA_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('spectres').GetName].\n#F A Baka can be summoned by a Serviteur.#!"
+ RENVOYER_BAKA_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('shades').GetName].\n#F A Serviteur uses this art to scare Baka away from themselves.#!"
  ENGAGEMENT_PERK_EFFECT: "#F A Baka's mind can be manipulated through subtle suggestion.#!"
  RENFORCER_LES_CHAVEAUX_PERK_EFFECT: "#F A Serviteur may temporarily grant a mortal any Arcanoi they have that affect the [skinlands|E], as well as Potence, Celerity or Fortitude.#!"
  RELER_MYSTERE_PERK_EFFECT: "#F A Loa can access the vast information network guarded by Les Mysteres.#!"
