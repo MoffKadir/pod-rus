@@ -18,7 +18,12 @@
  lesson_achiev_vamptutorial: "$POD_achievement_gained$"
  lesson_achiev_vamptutorial_desc: "You obtained the achievement: $achiev_vamptutorial$"
  achiev_vamptutorial: "True Blood"
- achiev_vamptutorial_tt: "As a $POD_splat_vampire$, add someone with acute [resonance|E] to your [POD_herd|E]."
+ achiev_vamptutorial_tt: "As a $POD_splat_vampire$, add someone with acute $pod_resonance$ to your $pod_herd$."
+
+ lesson_achiev_kjtutorial: "$POD_achievement_gained$"
+ lesson_achiev_kjtutorial_desc: "You obtained the achievement: $achiev_kjtutorial$"
+ achiev_kjtutorial: "Head in the Clouds"
+ achiev_kjtutorial_tt: "As any $POD_splat_kueijin$, increase your Dharma [trait|E] to the next level."
 
  lesson_achiev_feratutorial: "$POD_achievement_gained$"
  lesson_achiev_feratutorial_desc: "You obtained the achievement: $achiev_feratutorial$"
@@ -38,7 +43,7 @@
  lesson_achiev_coterietutorial: "$POD_achievement_gained$"
  lesson_achiev_coterietutorial_desc: "You obtained the achievement: $achiev_coterietutorial$"
  achiev_coterietutorial: "By Our Powers Combined..."
- achiev_coterietutorial_tt: "Found a new [coterie|E] and invite 4 other members."
+ achiev_coterietutorial_tt: "Found a new $pod_coterie$ and invite 4 other members."
 
  lesson_achiev_heisttutorial: "$POD_achievement_gained$"
  lesson_achiev_heisttutorial_desc: "You obtained the achievement: $achiev_heisttutorial$"
@@ -73,18 +78,23 @@
  achiev_camilla: "All Roads Lead To Me"
  achiev_camilla_tt: "As Camilla, upgrade any of the districts of Rome to the maximum."
 
+ lesson_achiev_piyau: "$POD_achievement_gained$"
+ lesson_achiev_piyau_desc: "You obtained the achievement: $achiev_piyau$"
+ achiev_piyau: "The Blood of Women"
+ achiev_piyau_tt: "Complete Piyau Payung's objectives, culminating in Piyau's Purge."
+
 
 ##### Medium Achievements
 
  lesson_achiev_4thgenhunt: "$POD_achievement_gained$"
  lesson_achiev_4thgenhunt_desc: "You obtained the achievement: $achiev_4thgenhunt$"
  achiev_4thgenhunt: "Legendary Hero"
- achiev_4thgenhunt_tt: "As a $POD_splat_hunter$, kill a 4th [vampgeneration|E] $POD_splat_vampire$ of at least [kingdom|E]-rank with a Find Lair interaction."
+ achiev_4thgenhunt_tt: "As a $POD_splat_hunter$, kill a 4th [Glossary('Generation','game_concept_vampgeneration_desc')] $POD_splat_vampire$ of at least [kingdom|E]-rank with a Find Lair interaction."
 
  lesson_achiev_visceratika: "$POD_achievement_gained$"
  lesson_achiev_visceratika_desc: "You obtained the achievement: $achiev_visceratika$"
  achiev_visceratika: "Stone Cold Stunner"
- achiev_visceratika_tt: "As either Virstania or Rock Lord, create a new [discipline|E]."
+ achiev_visceratika_tt: "As either Virstania or Rock Lord, create a new $pod_discipline$."
 
  lesson_achiev_rusenko: "$POD_achievement_gained$"
  lesson_achiev_rusenko_desc: "You obtained the achievement: $achiev_rusenko$"
@@ -111,6 +121,16 @@
  achiev_aristotle: "Ambition Erudition"
  achiev_aristotle_tt: "Employ Aristotle as your Court Tutor."
 
+ lesson_achiev_macao: "$POD_achievement_gained$"
+ lesson_achiev_macao_desc: "You obtained the achievement: $achiev_macao$"
+ achiev_macao: "Am I Early?"
+ achiev_macao_tt: "As Veronique d'Orleans, be Prince of Macao ([GetTitleByKey('c_guangzhou_1').GetName])."
+
+ lesson_achiev_unprovendharma: "$POD_achievement_gained$"
+ lesson_achiev_unprovendharma_desc: "You obtained the achievement: $achiev_unprovendharma$"
+ achiev_unprovendharma: "Dharmic Explorer"
+ achiev_unprovendharma_tt: "Reach [GetTrait('dharma10').GetName(GetNullCharacter)] as an [GetDoctrine('special_doctrine_unproven_dharma').GetBaseName]."
+
 
 ##### Hard Achievements
   
@@ -127,7 +147,7 @@
  lesson_achiev_nomnom: "$POD_achievement_gained$"
  lesson_achiev_nomnom_desc: "You obtained the achievement: $achiev_nomnom$"
  achiev_nomnom: "Ate My Way Up The Ladder"
- achiev_nomnom_tt: "Starting as a 13th [vampgeneration|E] $POD_splat_vampire$, $pod_diablerize$ your way to the 4th generation."
+ achiev_nomnom_tt: "Starting as a 13th [Glossary('Generation','game_concept_vampgeneration_desc')] $POD_splat_vampire$, [Glossary('Diablerize','game_concept_diablerie_desc')] your way to the 4th generation."
 
  lesson_achiev_noddist: "$POD_achievement_gained$"
  lesson_achiev_noddist_desc: "You obtained the achievement: $achiev_noddist$"
@@ -142,7 +162,7 @@
  lesson_achiev_lamb: "$POD_achievement_gained$"
  lesson_achiev_lamb_desc: "You obtained the achievement: $achiev_lamb$"
  achiev_lamb: "Nah, I'd Win"
- achiev_lamb_tt: "Be killed by the Lamb during the Vatican [journey|E]."
+ achiev_lamb_tt: "Be killed by the Lamb during the Vatican $pod_journey$."
 
  lesson_achiev_qawiyya: "$POD_achievement_gained$"
  lesson_achiev_qawiyya_desc: "You obtained the achievement: $achiev_qawiyya$"
@@ -158,6 +178,16 @@
  lesson_achiev_simba_desc: "You obtained the achievement: $achiev_simba$"
  achiev_simba: "The True Lion King"
  achiev_simba_tt: "As a Simba, unite the Bastet Nation."
+
+ lesson_achiev_wheelofages: "$POD_achievement_gained$"
+ lesson_achiev_wheelofages_desc: "You obtained the achievement: $achiev_wheelofages$"
+ achiev_wheelofages: "Snag in the Wheel"
+ achiev_wheelofages_tt: "Accomplish all the Wheel of Ages objectives before the start of the Fifth Age in 1350."
+
+ lesson_achiev_anda: "$POD_achievement_gained$"
+ lesson_achiev_anda_desc: "You obtained the achievement: $achiev_anda$"
+ achiev_anda: "Racing the Clock"
+ achiev_anda_tt: "As an [GetDynastyHouseByID('house_anda').GetName], achieve all the Anda-related content, culminating in the full conquest of China."
 
 
 ##### Very Hard Achievements
@@ -176,6 +206,11 @@
  lesson_achiev_santa_desc: "You obtained the achievement: $achiev_santa$"
  achiev_santa: "Clausewitz Engine"
  achiev_santa_tt: "As Ilmarinen, become Santa Claus."
+
+ lesson_achiev_yukio: "$POD_achievement_gained$"
+ lesson_achiev_yukio_desc: "You obtained the achievement: $achiev_yukio$"
+ achiev_yukio: "Revenge of the Doll"
+ achiev_yukio_tt: "As Yukio, kill Emma-o during the Yama King hunt."
 
 
 
