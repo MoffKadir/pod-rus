@@ -250,6 +250,7 @@ types PODVanillaTypes
 			spriteborder = { 18 0 }
 			texture_density = 2
 			color = { 0.5 0.5 0.5 1.0 }
+			margin = { 10 0 }
 	
 			modify_texture = {
 				texture = "gfx/interface/component_overlay/overlay_effect.dds"
@@ -261,7 +262,7 @@ types PODVanillaTypes
 	type pod_mainmenu_letterbox_fg = widget
 	{
 		parentanchor = center
-		size = { 100% 82% }
+		size = { 100% 78% }
 
 		background = {
 			texture = "gfx/interface/component_tiles/tile_window_background.dds"
@@ -270,6 +271,7 @@ types PODVanillaTypes
 			texture_density = 2
 			#color = { 0.6 0.6 0.6 1.0 }
 			color = { 0.8 0.8 0.8 1.0 }
+			margin = { 10 0 }
 	
 			modify_texture = {
 				texture = "gfx/interface/component_overlay/overlay_effect.dds"
@@ -753,7 +755,7 @@ types PODVanillaTypes
 		clicksound = "event:/SFX/UI/Character/sfx_ui_character_portrait_select"
 		oversound = "event:/SFX/UI/Character/sfx_ui_character_portrait_pointer_over"
 		# environment_event_corridor
-		portrait_texture = "[Character.GetAnimatedPortrait('environment_event_corridor', 'camera_torso', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+		portrait_texture = "[Character.GetAnimatedPortrait('POD_environment_hud', 'camera_torso', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 		background_texture = "gfx/portraits/portrait_transparent.dds"
 		texture = "gfx/portraits/portrait_transparent.dds"
 		mask = "gfx/portraits/portrait_mask_blank.dds"

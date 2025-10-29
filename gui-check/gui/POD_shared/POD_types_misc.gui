@@ -310,6 +310,81 @@ types PODTypes
 			# }
 		}
 	}
+
+	type pod_sdf_shader_event_widget = widget {
+		size = { 100% 100% }
+		alwaystransparent = yes
+		
+		icon = {
+			size = { 100% 100% }
+			texture = "gfx/interface/illustrations/event_scenes/pod_velvet.dds"
+			
+			shaderfile = "gfx/FX/POD_shaders/POD_sdf_shaders.shader"
+			effectname = "PODSDFLoadingScreen"
+			
+			block "shader_properties" {
+				spriteborder_left = 1.0 # background (black) opacity
+
+				modify_texture = {
+					#texture = "gfx/interface/sdf/sdf_ankh.dds"
+					texture = "gfx/interface/sdf/sdf_wankuei.dds"
+					blend_mode = normal
+					rotate_uv = 0.9 # scale (SpriteTranslateRotateUVAndAlpha[1].z)
+					spriteborder_left = 0.42 # uv x offset (SpriteBorder[1].x)
+					spriteborder_top  = 0.06 # uv y offset (SpriteBorder[1].y)
+				}
+
+				modify_texture = {
+					#texture = "gfx/interface/sdf/sdf_ankh.dds"
+					texture = "gfx/interface/sdf/sdf_wanxian.dds"
+					blend_mode = normal
+					rotate_uv = 0.9 # scale (SpriteTranslateRotateUVAndAlpha[2].z)
+					spriteborder_left = 0.42 # uv x offset (SpriteBorder[2].x)
+					spriteborder_top  = 0.06 # uv y offset (SpriteBorder[2].y)
+				}
+			}
+
+			# modify_texture = {
+			# 	texture = "gfx/interface/component_masks/mask_scratches.dds"
+			# 	spriteType = Corneredtiled
+			# 	blend_mode = alphamultiply
+			# 	texture_density = 4
+			# 	alpha = 0.3
+			# }
+			
+			# Default mask from type event_window_background_widget in event_windows.gui
+			modify_texture = {
+				texture = "gfx/interface/window_event/mask_event_image_large.dds"
+				blend_mode = alphamultiply
+				loop = no
+			}
+			
+			# Default masks from fullscreen_event.gui
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_struggle_illustration.dds"
+				blend_mode = alphamultiply
+				alpha = 0.9
+			}
+
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_horizontal_short.dds"
+				mirror = horizontal
+				blend_mode = alphamultiply
+			}
+
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_textured_vertical_up.dds"
+				translate_uv = { 0 -0.05 }
+				blend_mode = alphamultiply
+			}
+
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_textured_vertical_down.dds"
+				translate_uv = { 0 0.05 }
+				blend_mode = alphamultiply
+			}
+		}
+	}
 	
 	type sect_symbol_big = button_group {
 		flowcontainer = {
@@ -637,6 +712,145 @@ types PODTypes
 					onclick = "[GetScriptedGui('pod_splat_map').Execute(GuiScope.End)]"
 				}
 			}
+		}
+	}
+	
+	type pod_ternary_graph = widget
+	{
+		# the Y value determines the triangle's height
+		# X value should the length of a side, meaning: height * ( 2 / sqrt(3) )
+		block "graph_size" { size = { 389 336 } }
+		
+		widget = {
+			# the triangle from the shader covers 75% of the texture's height
+			# so this widget gets extended past its parent to compensate
+			size = { 100% 133% }
+			parentanchor = top|hcenter
+			alwaystransparent = yes
+			
+			background = {
+				# color of the texture is irrelevant, this just needs to be an opaque pixel
+				# the actual color gets set by the shader, via the first modify_texture
+				texture = "gfx/interface/colors/black.dds"
+				shaderfile = "gfx/FX/POD_shaders/POD_shaders_with_inputs.shader"
+				effectname = "PODTernaryGraph"
+				
+				block "graph_properties" {
+					spriteborder_left   = 10 # number of divisions
+					spriteborder_top    = 0.006  # line thickness (as UV)
+					spriteborder_right  = 0.0025 # line feathering (as UV)
+					spriteborder_bottom = 1.0 # domainwarp strength
+					
+					modify_texture = {
+						color = { 1.0 0.9 0.8 0.85 } # color of lines
+						# should the lines in the center get thinner?
+						# (interpolation factor, 0.0 to turn off)
+						spriteborder_left = 0.75
+					}
+				}
+				
+				block "graph_alphamultiply" {
+					# further modify_texture blocks can add transparency
+					# (colors get discarded)
+					
+					modify_texture = {
+						texture = "gfx/interface/component_masks/mask_scratches.dds"
+						blend_mode = alphamultiply
+						spriteType = corneredTiled
+						texture_density = 2
+						#alpha = 0.6
+					}
+					
+					modify_texture = {
+						texture = "gfx/interface/component_masks/mask_clouds.dds"
+						blend_mode = alphamultiply
+						spriteType = corneredTiled
+						alpha = 0.3
+					}
+				}
+			}
+		}
+		
+		widget = {
+			size = { 100% 100% }
+			# scoot a bit so the nodes are centered
+			# this means the icons can't have proper tooltips
+			block "icon_offset" { position = { -20 -20 } }
+			
+			icon = {
+				position = { 50% 0.5% }
+				block "icon_n_texture" {
+					texture = "gfx/interface/_debug/icon_placeholder_02.dds"
+				}
+				block "icon_size" { size = { 40 40 } }
+				block "icon_tint" { color = { 0.15 0.15 0.15 0.85 } }
+				
+				glow = {
+					block "glowcolor" { color = { 1.0 0.9 0.8 0.65 } }
+					block "glowsize" { glow_radius = 6 }
+					glow_generation_rules = {
+						glow_alpha_mask = 0
+						glow_blur_passes = 1
+						glow_texture_downscale = 1.5f
+						glow_ignore_inside_pixels = no
+					}
+				}
+			}
+			
+			icon = {
+				position = { 0.5% 99.5% }
+				block "icon_sw_texture" {
+					texture = "gfx/interface/_debug/icon_placeholder_02.dds"
+				}
+				block "icon_size" { size = { 40 40 } }
+				block "icon_tint" { color = { 0.15 0.15 0.15 0.85 } }
+				
+				glow = {
+					block "glowcolor" { color = { 1.0 0.9 0.8 0.65 } }
+					block "glowsize" { glow_radius = 6 }
+					glow_generation_rules = {
+						glow_alpha_mask = 0
+						glow_blur_passes = 1
+						glow_texture_downscale = 1.5f
+						glow_ignore_inside_pixels = no
+					}
+				}
+			}
+			
+			icon = {
+				position = { 99.5% 99.5% }
+				block "icon_se_texture" {
+					texture = "gfx/interface/_debug/icon_placeholder_02.dds"
+				}
+				block "icon_size" { size = { 40 40 } }
+				block "icon_tint" { color = { 0.15 0.15 0.15 0.85 } }
+				
+				glow = {
+					block "glowcolor" { color = { 1.0 0.9 0.8 0.65 } }
+					block "glowsize" { glow_radius = 6 }
+					glow_generation_rules = {
+						glow_alpha_mask = 0
+						glow_blur_passes = 1
+						glow_texture_downscale = 1.5f
+						glow_ignore_inside_pixels = no
+					}
+				}
+			}
+		}
+	}
+	
+	# lazy fix for removed vanilla GUI element (remove if no longer needed)
+	type button_active_marker = icon {
+		parentanchor = top|hcenter
+		position = { 0 -5 }
+		texture = "gfx/interface/buttons/button_sort_toggle.dds"
+		framesize = { 36 36 }
+		size = { 24 24 }
+		frame = 1
+
+		using = Master_Button_Modify_Texture
+		blockoverride "master_color_frame" {
+			frame = 1
 		}
 	}
 }
