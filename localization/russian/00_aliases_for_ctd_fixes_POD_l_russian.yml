@@ -1,116 +1,116 @@
 ﻿l_russian:
-# Hash collisions in game_concepts can lead to inconsistent crashes to desktop on startup.
-# As more and more game_concepts got added to Vanilla CK3, this has gotten so bad that we're no longer using them.
-# Use these loc keys instead.
-# So e.g. instead of [splat|E], it's $pod_splat$
+ # Hash collisions in game_concepts can lead to inconsistent crashes to desktop on startup.
+ # As more and more game_concepts got added to Vanilla CK3, this has gotten so bad that we're no longer using them.
+ # Use these loc keys instead.
+ # So e.g. instead of [splat|E], it's $pod_splat$
 
 
-####### common/game_concepts/00_POD_game_concepts.txt
+ ####### common/game_concepts/00_POD_game_concepts.txt
  
- pod_the_masquerade: "#TOOLTIP:game_concept_the_masquerade_desc #E $game_concept_the_masquerade$#!#!"
- pod_masquerade_exposure: "#TOOLTIP:game_concept_the_masquerade_desc #E Masquerade Exposure#!#!"
- pod_masquerade_exposure_with_icon: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Masquerade Exposure#!#!"
- 
- pod_unconquered_soul: "#TOOLTIP:game_concept_unconquered_soul_desc #E $game_concept_unconquered_soul$#!#!"
+ pod_the_masquerade: "#TOOLTIP:game_concept_the_masquerade_desc #E Маскарад#!#!" #Маскарад
+ pod_masquerade_exposure: "#TOOLTIP:game_concept_the_masquerade_desc #E Раскрыт#!#!" #Раскрытие Маскарада
+ pod_masquerade_exposure_with_icon: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрыт#!#!" #Раскрытие Маскарада
 
- pod_ghoul: "#TOOLTIP:game_concept_ghoul_desc #E $game_concept_ghoul$#!#!"
- pod_ghouls: "#TOOLTIP:game_concept_ghoul_desc #E Ghouls#!#!"
- 
- pod_herd: "#TOOLTIP:game_concept_POD_herd_desc #E $game_concept_POD_herd$#!#!"
+ pod_unconquered_soul: "#TOOLTIP:game_concept_unconquered_soul_desc #E Непокорён#!#!" #Непокорённая душа
 
- pod_splat: "#TOOLTIP:game_concept_splat_desc #E $game_concept_splat$#!#!"
- pod_splats: "#TOOLTIP:game_concept_splat_desc #E Splats#!#!"
- pod_subsplat: "#TOOLTIP:game_concept_splat_desc #E Subsplat#!#!"
- 
- pod_landless_mechanics: "#TOOLTIP:game_concept_POD_landless_mechanics_desc #E $game_concept_POD_landless_mechanics$#!#!"
- 
- pod_ashen_ambassador: "#TOOLTIP:game_concept_ashen_ambassador_desc #E $game_concept_ashen_ambassador$#!#!"
- 
- pod_ashen_grandmaster: "#TOOLTIP:game_concept_ashen_grandmaster_desc #E $game_concept_ashen_grandmaster$#!#!"
- 
- pod_ashen_caravan: "#TOOLTIP:game_concept_ashen_caravan_desc #E $game_concept_ashen_caravan$#!#!"
- 
- pod_ashen_cult: "#TOOLTIP:game_concept_ashen_cult_desc #E $game_concept_ashen_cult$#!#!"
- 
- pod_battle_modifier: "#TOOLTIP:game_concept_battle_modifier_desc #E $game_concept_battle_modifier$#!#!"
+ pod_ghoul: "#TOOLTIP:game_concept_ghoul_desc #E Гул#!#!" #Гуль
+ pod_ghouls: "#TOOLTIP:game_concept_ghoul_desc #E Гул#!#!" #Гули
 
- pod_hunger: "#TOOLTIP:game_concept_hunger_desc #E $game_concept_hunger$#!#!"
+ pod_herd: "#TOOLTIP:game_concept_POD_herd_desc #E Стад#!#!" #Стадо
+
+ pod_splat: "#TOOLTIP:game_concept_splat_desc #E Вид#!#!" #Вид
+ pod_splats: "#TOOLTIP:game_concept_splat_desc #E Вид#!#!" #Виды
+ pod_subsplat: "#TOOLTIP:game_concept_splat_desc #E Подвид#!#!" #Подвид
+
+ pod_landless_mechanics: "#TOOLTIP:game_concept_POD_landless_mechanics_desc #E Механик#!#!" #Механики авантюристов
+
+ pod_ashen_ambassador: "#TOOLTIP:game_concept_ashen_ambassador_desc #E Пепел#!#!" #Пепельный посол
+
+ pod_ashen_grandmaster: "#TOOLTIP:game_concept_ashen_grandmaster_desc #E Пепел#!#!" #Пепельный магистр
+
+ pod_ashen_caravan: "#TOOLTIP:game_concept_ashen_caravan_desc #E Пепел#!#!" #Пепельный хозяин каравана
+
+ pod_ashen_cult: "#TOOLTIP:game_concept_ashen_cult_desc #E Пепел#!#!" #Пепельный владыка культа
+
+ pod_battle_modifier: "#TOOLTIP:game_concept_battle_modifier_desc #E Модификатор#!#!" #Модификатор боя
+
+ pod_hunger: "#TOOLTIP:game_concept_hunger_desc #E Голод#!#!" #Голод
  pod_hunger_i: "#TOOLTIP:game_concept_hunger_desc #E @blood_icon!#!#!"
- pod_hunger_with_icon: "#TOOLTIP:game_concept_hunger_desc #E @blood_icon!Hunger#!#!"
- 
- pod_blood_potency: "#TOOLTIP:game_concept_blood_potency_desc #E $game_concept_blood_potency$#!#!"
- 
- pod_resonance: "#TOOLTIP:game_concept_resonance_desc #E $game_concept_resonance$#!#!"
- pod_humorism: "#TOOLTIP:game_concept_resonance_desc #E Humorism#!#!"
- pod_humors: "#TOOLTIP:game_concept_resonance_desc #E Humors#!#!"
- 
- pod_shapeshift: "#TOOLTIP:game_concept_shapeshift_desc #E $game_concept_shapeshift$#!#!"
- 
- pod_bloodsorcery: "#TOOLTIP:game_concept_bloodsorcery_desc #E $game_concept_bloodsorcery$#!#!"
- pod_bloodsorcerer: "#TOOLTIP:game_concept_bloodsorcery_desc #E Blood Sorcerer#!#!"
- pod_thaumaturgy: "#TOOLTIP:game_concept_bloodsorcery_desc #E Thaumaturgy#!#!"
- 
- pod_necromancy: "#TOOLTIP:game_concept_necromancy_desc #E $game_concept_necromancy$#!#!"
+ pod_hunger_with_icon: "#TOOLTIP:game_concept_hunger_desc #E @blood_icon!Голод#!#!" #Голод
 
- pod_possession: "#TOOLTIP:game_concept_possession_desc #E $game_concept_possession$#!#!"
- pod_possess: "#TOOLTIP:game_concept_possession_desc #E possess#!#!"
- 
- pod_elder_perk: "#TOOLTIP:game_concept_elder_perk_desc #E $game_concept_elder_perk$#!#!"
- pod_elder_perks: "#TOOLTIP:game_concept_elder_perk_desc #E Elder Perks#!#!"
- 
- pod_neteru: "#TOOLTIP:game_concept_neteru_desc #E $game_concept_neteru$#!#!"
+ pod_blood_potency: "#TOOLTIP:game_concept_blood_potency_desc #E Сил#!#!" #Сила крови
 
- pod_thrall: "#TOOLTIP:game_concept_thrall_desc #E $game_concept_thrall$#!#!"
- pod_thralls: "#TOOLTIP:game_concept_thrall_desc #E Thralls#!#!"
+ pod_resonance: "#TOOLTIP:game_concept_resonance_desc #E Резонанс#!#!" #Резонанс
+ pod_humorism: "#TOOLTIP:game_concept_resonance_desc #E Гуморизм#!#!"
+ pod_humors: "#TOOLTIP:game_concept_resonance_desc #E Гумор#!#!" #Гуморы
 
- pod_cultist: "#TOOLTIP:game_concept_cultist_desc #E $game_concept_cultist$#!#!"
- pod_cultists: "#TOOLTIP:game_concept_cultist_desc #E Cultists#!#!"
+ pod_shapeshift: "#TOOLTIP:game_concept_shapeshift_desc #E Смен#!#!" #Смена облика
 
- pod_Fetter: "#TOOLTIP:game_concept_Fetter_desc #E $game_concept_Fetter$#!#!"
- pod_Fetters: "#TOOLTIP:game_concept_Fetter_desc #E $game_concept_Fetters$#!#!"
+ pod_bloodsorcery: "#TOOLTIP:game_concept_bloodsorcery_desc #E Кровав#!#!" #Кровавое чародейство
+ pod_bloodsorcerer: "#TOOLTIP:game_concept_bloodsorcery_desc #E Кровав#!#!" #Кровавый чародей
+ pod_thaumaturgy: "#TOOLTIP:game_concept_bloodsorcery_desc #E Тауматург#!#!" #Тауматургия
 
- pod_Corpus: "#TOOLTIP:game_concept_Corpus_desc #E $game_concept_Corpus$#!#!"
+ pod_necromancy: "#TOOLTIP:game_concept_necromancy_desc #E Некромант#!#!" #Некромантия
 
- pod_oblivion_pull: "#TOOLTIP:game_concept_oblivion_pull_desc #E $game_concept_oblivion_pull$#!#!"
+ pod_possession: "#TOOLTIP:game_concept_possession_desc #E Одержим#!#!" #Одержимость
+ pod_possess: "#TOOLTIP:game_concept_possession_desc #E овлад#!#!" #овладеть
 
- pod_grace: "#TOOLTIP:game_concept_grace_desc #E $game_concept_grace$#!#!"
+ pod_elder_perk: "#TOOLTIP:game_concept_elder_perk_desc #E Достоинств#!#!" #Достоинство старейшины
+ pod_elder_perks: "#TOOLTIP:game_concept_elder_perk_desc #E Достоинств#!#!" #Достоинства старейшины
+
+ pod_neteru: "#TOOLTIP:game_concept_neteru_desc #E Нетеру#!#!"
+
+ pod_thrall: "#TOOLTIP:game_concept_thrall_desc #E Раб#!#!"
+ pod_thralls: "#TOOLTIP:game_concept_thrall_desc #E Раб#!#!" #Рабы
+
+ pod_cultist: "#TOOLTIP:game_concept_cultist_desc #E Культист#!#!"
+ pod_cultists: "#TOOLTIP:game_concept_cultist_desc #E Культист#!#!" #Культисты
+
+ pod_Fetter: "#TOOLTIP:game_concept_Fetter_desc #E Оков#!#!" #Оковы
+ pod_Fetters: "#TOOLTIP:game_concept_Fetter_desc #E Оков#!#!" #Оковы
+
+ pod_Corpus: "#TOOLTIP:game_concept_Corpus_desc #E Корпус#!#!"
+
+ pod_oblivion_pull: "#TOOLTIP:game_concept_oblivion_pull_desc #E Притяжен#!#!" #Притяжение Забвения
+
+ pod_grace: "#TOOLTIP:game_concept_grace_desc #E Благосклон#!#!" #Благосклонность
  pod_grace_i: "#TOOLTIP:game_concept_grace_desc #E @grace_icon!#!#!"
 
- pod_bind_wraith_interaction: "#TOOLTIP:game_concept_bind_wraith_interaction_desc #E $game_concept_bind_wraith_interaction$#!#!"
+ pod_bind_wraith_interaction: "#TOOLTIP:game_concept_bind_wraith_interaction_desc #E Взаимодейств#!#!" #Взаимодействие «Привязать призрака»
 
- pod_command_wraith_interaction: "#TOOLTIP:game_concept_command_wraith_interaction_desc #E $game_concept_command_wraith_interaction$#!#!"
+ pod_command_wraith_interaction: "#TOOLTIP:game_concept_command_wraith_interaction_desc #E Взаимодейств#!#!" #Взаимодействие «Приказать призраку»
 
- pod_summon_wraith_on_death_interaction: "#TOOLTIP:game_concept_summon_wraith_on_death_interaction_desc #E $game_concept_summon_wraith_on_death_interaction$#!#!"
+ pod_summon_wraith_on_death_interaction: "#TOOLTIP:game_concept_summon_wraith_on_death_interaction_desc #E Взаимодейств#!#!" #Взаимодействие «Призвать призрака после смерти»
 
- pod_dreamer: "#TOOLTIP:game_concept_dreamer_desc #E $game_concept_dreamer$#!#!"
- pod_dreamers: "#TOOLTIP:game_concept_dreamer_desc #E Dreamers#!#!"
+ pod_dreamer: "#TOOLTIP:game_concept_dreamer_desc #E Мечтател#!#!" #Мечтатель
+ pod_dreamers: "#TOOLTIP:game_concept_dreamer_desc #E Мечтател#!#!" #Мечтатели
 
- pod_grand_city: "#TOOLTIP:game_concept_grand_city_desc #E $game_concept_grand_city$#!#!"
- pod_grand_cities: "#TOOLTIP:game_concept_grand_city_desc #E Grand Cities#!#!"
+ pod_grand_city: "#TOOLTIP:game_concept_grand_city_desc #E Велик#!#!" #Великий город
+ pod_grand_cities: "#TOOLTIP:game_concept_grand_city_desc #E Велик#!#!" #Великие города
 
- pod_eternal_rome: "#TOOLTIP:game_concept_eternal_rome_desc #E $game_concept_eternal_rome$#!#!"
- pod_st_peters_city: "#TOOLTIP:game_concept_eternal_rome_desc #E St. Peter's City#!#!"
+ pod_eternal_rome: "#TOOLTIP:game_concept_eternal_rome_desc #E Вечн#!#!" #Вечный Рим
+ pod_st_peters_city: "#TOOLTIP:game_concept_eternal_rome_desc #E Город#!#!" #Город святого Петра
  pod_roma_aeterna: "#TOOLTIP:game_concept_eternal_rome_desc #E Roma Aeterna#!#!"
 
- pod_journey: "#TOOLTIP:game_concept_journey_desc #E $game_concept_journey$#!#!"
- pod_journeys: "#TOOLTIP:game_concept_journey_desc #E $game_concept_journeys$#!#!"
+ pod_journey: "#TOOLTIP:game_concept_journey_desc #E Странств#!#!" #Странствие
+ pod_journeys: "#TOOLTIP:game_concept_journey_desc #E Странств#!#!" #Странствия
 
- pod_planning_phase: "#TOOLTIP:game_concept_planning_phase_desc #E $game_concept_planning_phase$#!#!"
+ pod_planning_phase: "#TOOLTIP:game_concept_planning_phase_desc #E Фаз#!#!" #Фаза планирования
 
- pod_planning_speed: "#TOOLTIP:game_concept_planning_speed_desc #E $game_concept_planning_speed$#!#!"
+ pod_planning_speed: "#TOOLTIP:game_concept_planning_speed_desc #E Скорост#!#!" #Скорость планирования
 
- pod_travel_phase: "#TOOLTIP:game_concept_travel_phase_desc #E $game_concept_travel_phase$#!#!"
+ pod_travel_phase: "#TOOLTIP:game_concept_travel_phase_desc #E Фаз#!#!" #Фаза путешествия
 
- pod_coterie: "#TOOLTIP:game_concept_coterie_desc #E $game_concept_coterie$#!#!"
- pod_coteries: "#TOOLTIP:game_concept_coterie_desc #E Coteries#!#!"
- pod_pack: "#TOOLTIP:game_concept_coterie_desc #E Pack#!#!"
- pod_pride: "#TOOLTIP:game_concept_coterie_desc #E Pride#!#!"
+ pod_coterie: "#TOOLTIP:game_concept_coterie_desc #E Котери#!#!" #Котерия
+ pod_coteries: "#TOOLTIP:game_concept_coterie_desc #E Котери#!#!" #Котерии
+ pod_pack: "#TOOLTIP:game_concept_coterie_desc #E Ста#!#!" #Стая
+ pod_pride: "#TOOLTIP:game_concept_coterie_desc #E Прайд#!#!"
 
- pod_ventrue_clan_curse: "#TOOLTIP:game_concept_ventrue_clan_curse_desc #E $game_concept_ventrue_clan_curse$#!#!"
- pod_feeding_restrictions: "#TOOLTIP:game_concept_ventrue_clan_curse_desc #E Feeding Restrictions#!#!"
+ pod_ventrue_clan_curse: "#TOOLTIP:game_concept_ventrue_clan_curse_desc #E Прокляти#!#!" #Проклятие клана Вентру
+ pod_feeding_restrictions: "#TOOLTIP:game_concept_ventrue_clan_curse_desc #E Ограничени#!#!" #Ограничения питания
 
- pod_blood_hunt: "#TOOLTIP:game_concept_blood_hunt_desc #E $game_concept_blood_hunt$#!#!"
- pod_anathema: "#TOOLTIP:game_concept_blood_hunt_desc #E Anathema#!#!"
+ pod_blood_hunt: "#TOOLTIP:game_concept_blood_hunt_desc #E Кровав#!#!" #Кровавая охота
+ pod_anathema: "#TOOLTIP:game_concept_blood_hunt_desc #E Анафем#!#!" #Анафема
 
  pod_golconda: "#TOOLTIP:game_concept_golconda_desc #E $game_concept_golconda$#!#!"
  pod_enlightenment: "#TOOLTIP:game_concept_golconda_desc #E Enlightenment#!#!"
