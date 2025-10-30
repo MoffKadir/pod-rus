@@ -31,9 +31,9 @@
 
  rule_pod_resonance_diminishing_returns: "$POD_gamerule$ Кривая опыта резонанса"
  setting_pod_resonance_diminishing_returns_disabled: "Отключено"
- setting_pod_resonance_diminishing_returns_disabled_desc: "Ваши достоинства [Concept('discipline', 'дисциплин')|E] не влияют на прирост опыта [Concept('resonance', 'резонанса')|E]."
+ setting_pod_resonance_diminishing_returns_disabled_desc: "Ваши достоинства [Glossary('дисциплин','game_concept_discipline_desc')] не влияют на прирост опыта [Concept('resonance', 'резонанса')|E]."
  setting_pod_resonance_diminishing_returns_enabled: "#high @wod_icon! Включено#!"
- setting_pod_resonance_diminishing_returns_enabled_desc: "Прирост опыта [Concept('resonance', 'резонанса')|E] будет снижаться по мере получения новых достоинств [Concept('discipline', 'дисциплин')|E]."
+ setting_pod_resonance_diminishing_returns_enabled_desc: "Прирост опыта [Concept('resonance', 'резонанса')|E] будет снижаться по мере получения новых достоинств [Glossary('дисциплин','game_concept_discipline_desc')]."
 
  rule_pod_losing_golconda: "$POD_gamerule$ Потеря Голконды"
  setting_pod_losing_golconda_default: "Правила по умолчанию"
@@ -173,9 +173,9 @@
 
  #rule_wod_rule_set: "$POD_gamerule$ WoD Rule Set"
  #setting_wod_rule_set_dav20: "DAV20"
- #setting_wod_rule_set_dav20_desc: "Dark Ages Vampire 20th Anniversary Edition. This may impact disciplines, [Clan|E] banes, trait symbols, etc..."
+ #setting_wod_rule_set_dav20_desc: "Dark Ages Vampire 20th Anniversary Edition. This may impact disciplines, [Glossary('Клан','game_concept_Clan_desc')] banes, trait symbols, etc..."
  #setting_wod_rule_set_v5: "#high V5#!"
- #setting_wod_rule_set_v5_desc: "Vampire:the Masquerade, Fifth Edition. This may impact $pod_disciplines$, [Clan|E] banes, trait symbols, etc..."
+ #setting_wod_rule_set_v5_desc: "Vampire:the Masquerade, Fifth Edition. This may impact $pod_disciplines$, [Glossary('Клан','game_concept_Clan_desc')] banes, trait symbols, etc..."
 
  rule_black_death: "$POD_gamerule$ Чёрная смерть"
  setting_black_death_default: "Черная смерть по умолчанию"
