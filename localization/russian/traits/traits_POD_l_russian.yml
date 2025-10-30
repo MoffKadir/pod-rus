@@ -642,16 +642,16 @@
  trait_something_unusual_desc: "Что-то в этом есть странное."
 
  trait_revenant: "Ревенант"
- trait_revenant_desc: "Независимый [Concept('ghoul', 'гуль')|E], рожденный с кровью вампира в жилах. Часто их считают нечестивыми гибридами вампиров и смертных, #L $pod_revenants|l$ы#! застряли между двумя мирами."
+ trait_revenant_desc: "Независимый #TOOLTIP:game_concept_ghoul_desc #E гуль#!#!, рожденный с кровью вампира в жилах. Часто их считают нечестивыми гибридами вампиров и смертных, #L $pod_revenants|l$ы#! застряли между двумя мирами."
 
  trait_zadruga: "Задруга"
- trait_zadruga_desc: "Термин Цимисхи для обозначения потомственных гулей. Из всех кланов Цимисхи вывели больше всего семей [Concept('ghoul', 'гулей')|Е]."
+ trait_zadruga_desc: "Термин Цимисхи для обозначения потомственных гулей. Из всех кланов Цимисхи вывели больше всего семей #TOOLTIP:game_concept_ghoul_desc #E гулей#!#!."
 
  trait_oathbreaker: "Клятвопреступник"
  trait_oathbreaker_desc: "Этот персонаж нарушил клятву."
 
  trait_regnant: "Регнант"
- trait_regnant_desc: "Этот персонаж создал [Concept('ghoul', 'гуля')|E]."
+ trait_regnant_desc: "Этот персонаж создал #TOOLTIP:game_concept_ghoul_desc #E гуля#!#!."
 
  trait_massregnant: "Массовый регнант"
  trait_massregnant_desc: "Этот персонаж создал множество гулей. Обычно это является нарушением [Concept('the_masquerade', 'маскарада')|E]."
@@ -892,7 +892,7 @@
  DHARMA_PASSIVE_WAN_XIAN: "$pod_wan_kuei$ были искуплены"
  DHARMA_PASSIVE_HUN_AND_PO: "У вас есть свойство «[GetTrait('hun_and_po').GetName(GetPlayer)]»"
  DHARMA_PASSIVE_5_HERD: "Есть 5 членов [Concept('POD_herd', 'стада')|E]"
- DHARMA_PASSIVE_5_GHOUL: "Есть 5 рабов-[Concept('ghoul', 'гулей')|E]"
+ DHARMA_PASSIVE_5_GHOUL: "Есть 5 рабов-#TOOLTIP:game_concept_ghoul_desc #E гулей#!#!"
  DHARMA_PASSIVE_DHARMA9: "У вас есть свойство «[GetTrait('dharma9').GetName(GetPlayer)]»"
  DHARMA_PASSIVE_HARDER: "Из-за [Concept('fifth_age', 'Пятой эпохи')|E] продвигаться по дхарме гораздо труднее"
  DHARMA_PASSIVE_IMPOSSIBLE: "Из-за [Concept('sixth_age', 'Шестой эпохи')|E] продвигаться по дхарме невозможно"

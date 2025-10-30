@@ -630,24 +630,24 @@
  POD_herdify_vampire_interaction: "Добавить к стаду #weak (Происки)#!"
  POD_herdify_vampire_interaction_desc: "Происки, направленные на то, чтобы заполучить этого сородича в качестве сосуда, из которого вы сможете безопасно питаться по своему желанию."
 
- POD_ghoul_choose: "Манипулировать [Concept('ghoul', 'гулями')|E]"
- POD_ghoul: "Манипулировать [Concept('ghoul', 'гулями')|E]"
+ POD_ghoul_choose: "Манипулировать #TOOLTIP:game_concept_ghoul_desc #E гулями#!#!"
+ POD_ghoul: "Манипулировать #TOOLTIP:game_concept_ghoul_desc #E гулями#!#!"
  recipient_secondary_POD_ghoul_choose: "[ghoul|E]-раб"
- POD_ghoul_choose_desc: "Выберите, что делать с вашими [Concept('ghoul', 'гулями')|E]-рабами."
+ POD_ghoul_choose_desc: "Выберите, что делать с вашими #TOOLTIP:game_concept_ghoul_desc #E гулями#!#!-рабами."
  POD_ghoulthrall_heal_option: "Исцелить раба"
  POD_ghoulthrall_goldreward_option: "Наградить раба"
  POD_ghoulthrall_demandgold_option: "Потребовать золота"
  POD_ghoulthrall_giveblood_option: "Поделиться кровью"
  POD_ghoulthrall_traindiscipline_option: "Тренировать [Concept('discipline', 'дисциплине')|E]"
  POD_ghoulthrall_transmogrify_option: "Плотетворение"
- POD_ghoulthrall_transmogrify_option.tt: "Использование Изменчивости для трансформации [Concept('ghoul', 'гуля')|E] может вызвать голод, напрячь вашу волю и привести к риску раскрытия Маскарада."
+ POD_ghoulthrall_transmogrify_option.tt: "Использование Изменчивости для трансформации #TOOLTIP:game_concept_ghoul_desc #E гуля#!#! может вызвать голод, напрячь вашу волю и привести к риску раскрытия Маскарада."
  POD_ghoulthrall_divorce_option: "Потребовать развода"
  POD_ghoulthrall_release_option: "Освободить раба"
 
- POD_ghoulify_mortal_interaction_limit: "Количество [Concept('ghoul', 'гулей')|E]-рабов ограничено! (3 плюс любые бонусы из других источников)"
+ POD_ghoulify_mortal_interaction_limit: "Количество #TOOLTIP:game_concept_ghoul_desc #E гулей#!#!-рабов ограничено! (3 плюс любые бонусы из других источников)"
  POD_ghoulify_mortal_interaction_bp_one: "Чтобы создать гуля, вампиры должны иметь силу крови не ниже 1 ед."
  POD_ghoulify_mortal_interaction: "Гулифицировать #weak (Происки)#!"
- POD_ghoulify_mortal_interaction_desc: "Происки, направленные на то, чтобы превратить этого смертного в [Concept('ghoul', 'гуля')|E]-раба, верного слугу.\nУчтите, что у гулей резко снижен резонанс, и они становятся плохими членами [Concept('POD_herd', 'стада')|E]."
+ POD_ghoulify_mortal_interaction_desc: "Происки, направленные на то, чтобы превратить этого смертного в #TOOLTIP:game_concept_ghoul_desc #E гуля#!#!-раба, верного слугу.\nУчтите, что у гулей резко снижен резонанс, и они становятся плохими членами [Concept('POD_herd', 'стада')|E]."
  POD_ghoul_ghoulify_interaction: "Предложить дар витэ #weak (Происки)#!"
  POD_ghoul_ghoulify_interaction_desc: "Предложить этому персонажу витэ сородича, отнятую у пленника по [recipient.GetHerHis] выбору."
  I_have_no_bloodbag: "В темнице нет вампира, у которого можно взять кровь."
@@ -711,7 +711,7 @@
  POD_awaketorpor.12.successb: "...Добро пожаловать"
  POD_awaketorpor.12.successc: "Пустая трата времени..."
  POD_awaketorpor.13.t: "Страж"
- POD_awaketorpor.13.desc: "На пути вашей жертвы осталось лишь одно препятствие - суровый на вид воин, защищающий спящего вампира. Возможно, это лишь [ghoul|El], но он очень хорошо обучен, и вы подозреваете, что рядом с ним в засаде сидят другие.\nПространство слишком узкое, чтобы начать штурм с армией, и вы не можете вернуться назад, иначе они перенесут тело своего хозяина. Так что вам придется сражаться в явно невыгодном положении, но вы чувствуете, как пульсирующая кровь вашей добычи зовет вас..."
+ POD_awaketorpor.13.desc: "На пути вашей жертвы осталось лишь одно препятствие - суровый на вид воин, защищающий спящего вампира. Возможно, это лишь #TOOLTIP:game_concept_ghoul_desc #E гуль#!#!, но он очень хорошо обучен, и вы подозреваете, что рядом с ним в засаде сидят другие.\nПространство слишком узкое, чтобы начать штурм с армией, и вы не можете вернуться назад, иначе они перенесут тело своего хозяина. Так что вам придется сражаться в явно невыгодном положении, но вы чувствуете, как пульсирующая кровь вашей добычи зовет вас..."
  POD_awaketorpor.13.option.a: "Я убью вас первыми. Затем настанет черёд вашего хозяина!"
  POD_awaketorpor.13.option.abis: "Вы меня не остановите!"
  POD_awaketorpor.13.option.aa.effect.success.desc: "Полная победа!"
@@ -846,7 +846,7 @@
  POD_charjoin_become_vampire_interaction: "Попросить Объятия"
  POD_charjoin_become_vampire_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала вашей [Concept('Sire', 'дамой')|E]', 'стал вашим [Concept('Sire', 'сиром')|E]')]."
 
- grant_title_to_ghouls_warning: "Для вампиров считается очень неподобающим дарование [Concept('ghoul', 'гулям')|E] чего-либо, кроме баронства. В конце концов, они - низшие существа."
+ grant_title_to_ghouls_warning: "Для вампиров считается очень неподобающим дарование #TOOLTIP:game_concept_ghoul_desc #E гулям#!#! чего-либо, кроме баронства. В конце концов, они - низшие существа."
 
  TOO_OLD_FOR_THIS: "Живёт слишком долго, чтобы соглашаться на эту чепуху: $VALUE|+0$"
 
@@ -859,7 +859,7 @@
 
  POD_ghoulify_prisoner_interaction: "Гулифицировать пленника"
  POD_ghoulify_prisoner_interaction_desc: "Насильно сделать персонажа [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'вашей бессмертной рабыней', 'вашим бессмертным рабом' )]."
- POD_ghoulify_prisoner_interaction.tt: "[recipient.GetFirstName] становится вашим [Concept('ghoul', 'гулем')|E]."
+ POD_ghoulify_prisoner_interaction.tt: "[recipient.GetFirstName] становится вашим #TOOLTIP:game_concept_ghoul_desc #E гулем#!#!."
 
  POD_herdify_prisoner_interaction: "Сделать пленника частью [Concept('POD_herd', 'стада')|E]"
  POD_herdify_prisoner_interaction_desc: "Насильно сделать персонажа [recipient.GetFirstName] частью вашего [Concept('POD_herd', 'стада')|E]."

@@ -3,7 +3,7 @@
  POD_ghoulify.100.t: "Верный слуга"
  POD_ghoulify.100.option.a: "Твоя служба будет вознаграждена."
  POD_ghoulify.100.option.b: "[Select_CString(target.IsFemale, 'Она не достойна', 'Он не достоин')]."
- POD_ghoulify.100.desc: "\nПосле тщательной подготовки и планирования вам удалось завербовать [Select_CString(target.IsFemale, 'эту смертную', 'этого смертного')] в качестве [Select_CString(target.IsFemale, 'своей рабыни', 'своего раба')]-[Concept('ghoul', 'гуля')|E].\n"
+ POD_ghoulify.100.desc: "\nПосле тщательной подготовки и планирования вам удалось завербовать [Select_CString(target.IsFemale, 'эту смертную', 'этого смертного')] в качестве [Select_CString(target.IsFemale, 'своей рабыни', 'своего раба')]-#TOOLTIP:game_concept_ghoul_desc #E гуля#!#!.\n"
  POD_ghoulify.200.t: "Очередной гурман"
  POD_ghoulify.200.option.a: "Отведай силу на вкус."
  POD_ghoulify.200.option.b: "Это неправильно."

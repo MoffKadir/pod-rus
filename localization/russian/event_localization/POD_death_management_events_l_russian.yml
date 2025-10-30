@@ -1,7 +1,7 @@
 ﻿l_russian:
 
- ghoul_death_notification_title: "Ваш [Concept('ghoul', 'гуль')|E] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
- death_management.ghoul.desc: "Ваш [Concept('ghoul', 'гуль')|E], [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
+ ghoul_death_notification_title: "Ваш #TOOLTIP:game_concept_ghoul_desc #E гуль#!#! #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
+ death_management.ghoul.desc: "Ваш #TOOLTIP:game_concept_ghoul_desc #E гуль#!#!, [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
 
  domitor_death_notification_title: "Ваш домитор #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
  death_management.domitor.desc: "Ваш домитор, [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
