@@ -197,7 +197,7 @@
  POD_embrace_ongoing.1040.option.a: "Я уже [Select_CString(ROOT.Char.IsFemale, 'потратила', 'потратил' )] время впустую!"
  POD_embrace_ongoing.1040.option.b: "[Select_CString(target.IsFemale, 'Новая служанка', 'Новый слуга' )] или игрушка?"
  POD_embrace_ongoing.1040.option.c: "Убить [target.GetHerHis]!"
- POD_embrace_ongoing.1040.option.c.duel_won.desc: "Вы быстро и без проблем расправились с [Select_CString(target.IsFemale, 'недостойной [Concept('cainite', 'каинитом')|E]', 'недостойным [Concept('cainite', 'каиниткой')|E]' )]."
+ POD_embrace_ongoing.1040.option.c.duel_won.desc: "Вы быстро и без проблем расправились с [Select_CString(target.IsFemale, 'недостойной [Glossary('каинитом','game_concept_cainite_desc')]', 'недостойным [Glossary('каиниткой','game_concept_cainite_desc')]' )]."
  POD_embrace_ongoing.1040.option.c.duel_won.t: "Победа в поединке"
  POD_embrace_ongoing.1040.option.c.duel_lost.desc: "Вы недооценили [target.GetHerHis]"
  POD_embrace_ongoing.duel_outcome.LOST.1043.t: "Королевство за коня!"

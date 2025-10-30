@@ -31,7 +31,7 @@
  look_for_contracts_planning_decline: "$POD_journey_planning_decline_default$"
 
  hunt_in_capital_name: "Охотиться в столице"
- hunt_in_capital_desc: "Всеми [Concept('cainite', 'каинитами')|E] движет жажда крови, и я не исключение. Домен [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier] станет моими охотничьими угодьями в ближайшие ночи.\n\n#help (Вы также можете охотиться на определенного персонажа, щелкнув на нём правой кнопкой мыши и выбрав [Concept('journey', 'странствие')|E] охоты через [Concept('character_interaction', 'взаимодействие персонажа')|E])#!"
+ hunt_in_capital_desc: "Всеми [Glossary('каинитами','game_concept_cainite_desc')] движет жажда крови, и я не исключение. Домен [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier] станет моими охотничьими угодьями в ближайшие ночи.\n\n#help (Вы также можете охотиться на определенного персонажа, щелкнув на нём правой кнопкой мыши и выбрав [Concept('journey', 'странствие')|E] охоты через [Concept('character_interaction', 'взаимодействие персонажа')|E])#!"
  #hunt_in_capital_effects: ""
  hunt_in_capital_tt: "Пора утолить жажду."
  hunt_in_capital_planning_title: "На охоте"
@@ -206,7 +206,7 @@
  seek_knowledge_abombwe_planning_confirm: "$POD_journey_planning_confirm_default$"
  seek_knowledge_abombwe_planning_decline: "$POD_journey_planning_decline_default$"
  seek_knowledge_abombwe_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- seek_knowledge_abombwe_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('abombwe').GetName(GetNullCharacter)]. Все #L $pod_cainites|l$ы#! ведут безуспешную внутреннюю борьбу со #L $pod_the_beast$ем#!. Возможно, лучшая стратегия - не бороться с ним."
+ seek_knowledge_abombwe_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('abombwe').GetName(GetNullCharacter)]. Все [Glossary('каиниты','game_concept_cainite_desc')] ведут безуспешную внутреннюю борьбу со #L $pod_the_beast$ем#!. Возможно, лучшая стратегия - не бороться с ним."
  seek_knowledge_abombwe_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  seek_knowledge_bardo_name: "Изучить редкую дисциплину ([GetTrait('bardo').GetName(GetNullCharacter)])"
@@ -218,7 +218,7 @@
  seek_knowledge_bardo_planning_confirm: "$POD_journey_planning_confirm_default$"
  seek_knowledge_bardo_planning_decline: "$POD_journey_planning_decline_default$"
  seek_knowledge_bardo_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- seek_knowledge_bardo_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('bardo').GetName(GetNullCharacter)]. #L $pod_the_beast$ь#! неумолим. Дай ему палец и он откусит всю руку. Отдохнуть от него, пусть даже временно, жаждет каждый [Concept('cainite', 'каинит')|E]."
+ seek_knowledge_bardo_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('bardo').GetName(GetNullCharacter)]. #L $pod_the_beast$ь#! неумолим. Дай ему палец и он откусит всю руку. Отдохнуть от него, пусть даже временно, жаждет каждый [Glossary('каинит','game_concept_cainite_desc')]."
  seek_knowledge_bardo_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  seek_knowledge_kai_name: "Изучить редкую дисциплину ([GetTrait('kai').GetName(GetNullCharacter)])"
@@ -326,7 +326,7 @@
  seek_knowledge_quietus_planning_confirm: "$POD_journey_planning_confirm_default$"
  seek_knowledge_quietus_planning_decline: "$POD_journey_planning_decline_default$"
  seek_knowledge_quietus_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- seek_knowledge_quietus_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('quietus').GetName(GetNullCharacter)]. #L $pod_cainites$ы#! рождаются от крови, развиваются от крови и разлагаются от крови. Бойтесь того, кто управляет кровью."
+ seek_knowledge_quietus_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('quietus').GetName(GetNullCharacter)]. [Glossary('каиниты','game_concept_cainite_desc')] рождаются от крови, развиваются от крови и разлагаются от крови. Бойтесь того, кто управляет кровью."
  seek_knowledge_quietus_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  seek_knowledge_rift_name: "Изучить редкую дисциплину ([GetTrait('rift').GetName(GetNullCharacter)])"
@@ -362,7 +362,7 @@
  seek_knowledge_spiritus_planning_confirm: "$POD_journey_planning_confirm_default$"
  seek_knowledge_spiritus_planning_decline: "$POD_journey_planning_decline_default$"
  seek_knowledge_spiritus_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- seek_knowledge_spiritus_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('spiritus').GetName(GetNullCharacter)]. Не многие #L $pod_cainites|l$#! могут похвастаться связями с [Concept('spirit_world', 'миром духов')|E]."
+ seek_knowledge_spiritus_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('spiritus').GetName(GetNullCharacter)]. Не многие [Glossary('каиниты','game_concept_cainite_desc')] могут похвастаться связями с [Concept('spirit_world', 'миром духов')|E]."
  seek_knowledge_spiritus_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  seek_knowledge_temporis_name: "Изучить редкую дисциплину ([GetTrait('temporis').GetName(GetNullCharacter)])"
@@ -460,7 +460,7 @@
  seek_knowledge_lamia_planning_confirm: "$POD_journey_planning_confirm_default$"
  seek_knowledge_lamia_planning_decline: "$POD_journey_planning_decline_default$"
  seek_knowledge_lamia_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- seek_knowledge_lamia_travel_desc: "Я с нетерпением жду возможности изучить #TOOLTIP:GAME_TRAIT,necromancy,[GetNullCharacter] #L некромантию#!#! Ламий. Любой старый [Concept('cainite', 'каинит')|E] может укусить, но к концу этого путешествия мой поцелуй станет предметом позора."
+ seek_knowledge_lamia_travel_desc: "Я с нетерпением жду возможности изучить #TOOLTIP:GAME_TRAIT,necromancy,[GetNullCharacter] #L некромантию#!#! Ламий. Любой старый [Glossary('каинит','game_concept_cainite_desc')] может укусить, но к концу этого путешествия мой поцелуй станет предметом позора."
  seek_knowledge_lamia_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  seek_knowledge_impundulu_name: "Изучить #TOOLTIP:GAME_TRAIT,necromancy,[GetNullCharacter] #L некромантию#!#! (Импундулу)"
@@ -1055,11 +1055,11 @@
  golconda_1_effects: "Вы узнаете, где находится учитель, который может наставить вас на путь истинный."
  golconda_1_tt: "Возможен ли внутренний покой?"
  golconda_1_planning_title: "Понимание внутреннего врага"
- golconda_1_planning_desc: "#beast Голод#! - это то, что каждый [Concept('cainite', 'каинит')|E] учится преодолевать... или потакать ему. Он становится фоновым шумом. Неизменным фактом нашего существования.\n\nНо должно ли это быть так?\n\nМои разведчики рассказали мне о месте, где я могу найти ответы."
+ golconda_1_planning_desc: "#beast Голод#! - это то, что каждый [Glossary('каинит','game_concept_cainite_desc')] учится преодолевать... или потакать ему. Он становится фоновым шумом. Неизменным фактом нашего существования.\n\nНо должно ли это быть так?\n\nМои разведчики рассказали мне о месте, где я могу найти ответы."
  golconda_1_planning_confirm: "$POD_journey_planning_confirm_default$"
  golconda_1_planning_decline: "$POD_journey_planning_decline_default$"
  golconda_1_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- golconda_1_travel_desc: "Должно быть, в ответах, которые я ищу, есть что-то сверхъестественное. Разве не каждый [Concept('cainite', 'каинит')|E] ищет избавления от #L $pod_the_beast$я#!? Тогда почему решения этой проблемы не стали более общеизвестными? Полагаю, скоро я узнаю, почему."
+ golconda_1_travel_desc: "Должно быть, в ответах, которые я ищу, есть что-то сверхъестественное. Разве не каждый [Glossary('каинит','game_concept_cainite_desc')] ищет избавления от #L $pod_the_beast$я#!? Тогда почему решения этой проблемы не стали более общеизвестными? Полагаю, скоро я узнаю, почему."
  golconda_1_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  golconda_2_name: "Примириться со своим Зверем"

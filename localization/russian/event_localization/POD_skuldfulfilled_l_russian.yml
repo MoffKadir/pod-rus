@@ -1,7 +1,7 @@
 ﻿l_russian:
 
  POD_skuldfulfilled.001.t: "Скульд исполнен"
- POD_skuldfulfilled.001.desc: "Вы пытаетесь отнять вечную силу крови у [Select_CString(defender.IsFemale, 'ничтожной', 'ничтожного' )] не-[Concept('cainite', Select_CString(defender.IsFemale, 'каинитки', 'каинита' ))|E], [Select_CString(defender.IsFemale, 'которой', 'которым' )] является [defender.GetFirstName], и снова сделать [defender.GetHerHis] простым человеком. Если [defender.GetSheHe] достаточно [Select_CString(defender.IsFemale, 'стара', 'стар')], ваши манипуляции могут убить [defender.GetHerHis]."
+ POD_skuldfulfilled.001.desc: "Вы пытаетесь отнять вечную силу крови у [Select_CString(defender.IsFemale, 'ничтожной', 'ничтожного' )] не-[Glossary('каинита','game_concept_cainite_desc')], [Select_CString(defender.IsFemale, 'которой', 'которым' )] является [defender.GetFirstName], и снова сделать [defender.GetHerHis] простым человеком. Если [defender.GetSheHe] достаточно [Select_CString(defender.IsFemale, 'стара', 'стар')], ваши манипуляции могут убить [defender.GetHerHis]."
  POD_skuldfulfilled.001.option.a: "[defender.GetSheHe|U] не заслуживает такой силы!"
  POD_skuldfulfilled.001.option.a.tt: "Вы попытаетесь отнять [defender.GetHerHis] силу крови"
  POD_skuldfulfilled.option.001.a.desc: "Вы используете свои мистические знания о Забвении"
