@@ -50,9 +50,9 @@
  has_4_level_of_sihr_trigger: "У вас должно быть любое достоинство четвёртого уровня #weak (ряда)#! #L $pod_bs_path|l$ы#! Сихр"
  has_5_level_of_sihr_trigger: "У вас должно быть любое достоинство пятого уровня #weak (ряда)#! #L $pod_bs_path|l$ы#! Сихр"
 
- POD_START_CASTING_RITUAL: "#!Вы начнёте [Concept('journey', 'странствие')|E], чтобы подготовиться к этому #L $pod_bs_ritual|l$у#!.\n@warning_icon! #X Если по завершении этого [Concept('journey', 'странствия')|E] у вас не будет необходимых ресурсов, $pod_bs_ritual|l$ завершится неудачей.#!\n"
+ POD_START_CASTING_RITUAL: "#!Вы начнёте #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы подготовиться к этому #L $pod_bs_ritual|l$у#!.\n@warning_icon! #X Если по завершении этого #TOOLTIP:game_concept_journey_desc #E странствия#!#! у вас не будет необходимых ресурсов, $pod_bs_ritual|l$ завершится неудачей.#!\n"
  POD_bloodmagic_ritual_start_tt: "Когда подготовка #L $pod_bs_ritual|l$а#! будет завершена: #g " # This #g Is for space
- POD_is_casting_ritual: "В данный момент вы проводите $pod_bs_ritual|l$. Откажитесь от [Concept('journey', 'странствия')|E] #L $pod_bs_ritual|l$а#!, или подождите, пока он не завершится."
+ POD_is_casting_ritual: "В данный момент вы проводите $pod_bs_ritual|l$. Откажитесь от #TOOLTIP:game_concept_journey_desc #E странствия#!#! #L $pod_bs_ritual|l$а#!, или подождите, пока он не завершится."
  POD_bloodmagic_ritual_fail: "#R Этот $pod_bs_ritual|l$ провалился, так как у вас не хватило ресурсов, когда подготовка была завершена!#!"
 
  bs_target_is_you: "Цель - #bold не#! #italic вы#!"

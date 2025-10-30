@@ -17,10 +17,10 @@
 
  UMBRA_APTITUDE_CONCEPT: "[umbra_aptitude|E]"
  UMBRA_SENSE_CONCEPT: "[umbra_sense|E]"
- SPLAT_VALUE: "[splat|E]"
+ SPLAT_VALUE: "#TOOLTIP:game_concept_splat_desc #E Вид#!#!"
 
  # Explore
- umbra_explorer_window: "Исследователь [Concept('umbra', 'Умбры')|E]"
+ umbra_explorer_window: "Исследователь #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
  local_umbra_explorer: "Местный исследователь"
  UMBRA_EXPLORER_WINDOW_CURRENTLY_APPOINTED: "Назначенный исследователь"
  UMBRA_EXPLORAITON_PROGRESS: "Прогресс: [GetPlayer.MakeScope.ScriptValue('local_umbra_progress')|V0]/[GetPlayer.MakeScope.ScriptValue('local_umbra_size')|V0] на пути к следующему открытию"
@@ -75,25 +75,25 @@
  has_any_special_mine_tt: "В текущем местоположении есть [Concept('special_building', 'особая постройка')|E] шахты ([GetPlayer.GetCurrentLocation.GetTitle.GetNameNoTier])"
  appoint_explorer_tt: "Назначить исследователя, который будет искать открытия"
 
- umbra_expedition_memory: "завершение путешествия в [Concept('umbra', 'Умбру')|E]"
- umbra_expedition_memory_desc: "я [Select_CString(ROOT.Char.IsFemale, 'завершила', 'завершил' )] путешествие в [Concept('umbra', 'Умбру')|E]"
- umbra_expedition_memory_desc_second_perspective: "вы завершили путешествие в [Concept('umbra', 'Умбру')|E]"
- umbra_expedition_memory_desc_third_perspective: "[owner.GetFirstName] [Select_CString(owner.IsFemale, 'завершила', 'завершил' )] путешествие в [Concept('umbra', 'Умбру')|E]"
+ umbra_expedition_memory: "завершение путешествия в #TOOLTIP:game_concept_umbra_desc #E Умбру#!#!"
+ umbra_expedition_memory_desc: "я [Select_CString(ROOT.Char.IsFemale, 'завершила', 'завершил' )] путешествие в #TOOLTIP:game_concept_umbra_desc #E Умбру#!#!"
+ umbra_expedition_memory_desc_second_perspective: "вы завершили путешествие в #TOOLTIP:game_concept_umbra_desc #E Умбру#!#!"
+ umbra_expedition_memory_desc_third_perspective: "[owner.GetFirstName] [Select_CString(owner.IsFemale, 'завершила', 'завершил' )] путешествие в #TOOLTIP:game_concept_umbra_desc #E Умбру#!#!"
 
- umbra_discovery_memory: "обнаружение открытия в [Concept('umbra', 'Умбре')|E]"
- umbra_discovery_memory_desc: "я [Select_CString(ROOT.Char.IsFemale, 'обнаружила', 'обнаружил' )] открытие в [Concept('umbra', 'Умбре')|E]"
- umbra_discovery_memory_desc_second_perspective: "вы обнаружили открытие в [Concept('umbra', 'Умбре')|E]"
- umbra_discovery_memory_desc_third_perspective: "[owner.GetFirstName] [Select_CString(owner.IsFemale, 'обнаружила', 'обнаружил' )] открытие в [Concept('umbra', 'Умбре')|E]"
+ umbra_discovery_memory: "обнаружение открытия в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!"
+ umbra_discovery_memory_desc: "я [Select_CString(ROOT.Char.IsFemale, 'обнаружила', 'обнаружил' )] открытие в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!"
+ umbra_discovery_memory_desc_second_perspective: "вы обнаружили открытие в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!"
+ umbra_discovery_memory_desc_third_perspective: "[owner.GetFirstName] [Select_CString(owner.IsFemale, 'обнаружила', 'обнаружил' )] открытие в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!"
 
  umbra_discovery_finder: "[Select_CString( this_character.IsLocalPlayer, 'Вы', this_character.GetFirstName )]"
  umbra_discovery_region: "[UmbraGlossary( this_character.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName )]"
- umbra_discovery.title: "Открытие [Concept('umbra', 'Умбры')|E]: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagName))]"
+ umbra_discovery.title: "Открытие #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagName))]"
  umbra_discovery_treasure: "Сокровище"
  umbra_discovery.treasure.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] сокровище в измерении $umbra_discovery_region$, достойном [Concept('umbra_expedition', 'путешествия в Умбру')|E]"
  umbra_discovery_neighboring_realm: "Соседнее измерение"
  umbra_discovery.neighboring_realm.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] пути ко всем соседним мирам в измерении $umbra_discovery_region$, достойном [Concept('umbra_expedition', 'путешествия в Умбру')|E]"
  umbra_discovery_grace: "Встреча"
- umbra_discovery.grace.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'добились', Select_CString(this_character.IsFemale, 'добилась', 'добился' ))] для вас аудиенции у местного правителя [Concept('umbra', 'Умбры')|E] в измерении $umbra_discovery_region$, достойном [Concept('umbra_expedition', 'путешествия в Умбру')|E]"
+ umbra_discovery.grace.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'добились', Select_CString(this_character.IsFemale, 'добилась', 'добился' ))] для вас аудиенции у местного правителя #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! в измерении $umbra_discovery_region$, достойном [Concept('umbra_expedition', 'путешествия в Умбру')|E]"
  umbra_discovery_unstoppable_warrior: "Инкарна-воин"
  umbra_discovery.unstoppable_warrior.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] подсказку о том, что в измерении $umbra_discovery_region$ находится инкарна-воин, достойный [Concept('umbra_expedition', 'путешествия в Умбру')|E]"
  umbra_discovery_storyteller: "Аватар Геи"
@@ -135,7 +135,7 @@
  umbra_discovery_aristotle: "Аристотель"
  umbra_discovery.aristotle.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'прослышали', Select_CString(this_character.IsFemale, 'прослышала', 'прослышал' ))] о том, что в измерении $umbra_discovery_region$ гостит знаменитый философ Аристотель, достойный [Concept('umbra_expedition', 'путешествия в Умбру')|E]"
  umbra_discovery_hypatia: "Гипатия"
- umbra_discovery.hypatia.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'прослышали', Select_CString(this_character.IsFemale, 'прослышала', 'прослышал' ))] о том, что в измерении $umbra_discovery_region$ гостит духовный лидер мусейона [Concept('umbra', 'Умбры')|E], достойная [Concept('umbra_expedition', 'путешествия в Умбру')|E]"
+ umbra_discovery.hypatia.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'прослышали', Select_CString(this_character.IsFemale, 'прослышала', 'прослышал' ))] о том, что в измерении $umbra_discovery_region$ гостит духовный лидер мусейона #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!, достойная [Concept('umbra_expedition', 'путешествия в Умбру')|E]"
  umbra_discovery_mahfuz_alam: "Махфуз Алам"
  umbra_discovery.mahfuz_alam.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'прослышали', Select_CString(this_character.IsFemale, 'прослышала', 'прослышал' ))] о том, что в измерении $umbra_discovery_region$ гостит прославленный воин-призрак Махфуз Алам, достойный [Concept('umbra_expedition', 'путешествия в Умбру')|E]"
  umbra_discovery_muse_expedition: "Двор муз"
@@ -321,7 +321,7 @@
  umbra_discovery_usury: "Ростовщичество"
  umbra_discovery.usury.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] в измерении $umbra_discovery_region$ наставника арканоса «[GetTrait('arcanos_usury').GetName( GetPlayer )]», достойного [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
 
- umbra_crisis.title: "Кризис [Concept('umbra', 'Умбры')|E]: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagName))]"
+ umbra_crisis.title: "Кризис #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagName))]"
  umbra_discovery_wyrmish_summoning: "Призыв Вирма"
  umbra_discovery.wyrmish_summoning.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'обнаружили', Select_CString(this_character.IsFemale, 'обнаружила', 'обнаружил' ))] в измерении $umbra_discovery_region$ след какого-то оборотня Вирма, пытающегося призвать разрушительного духа Вирма в вашу столицу. Это может быть достойно [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
  umbra_discovery_trapped_in_tempest: "В ловушке Бури"
@@ -351,7 +351,7 @@
  umbra_quarterly_action_end: "Завершить это ежеквартальное действие."
  umbra_yearly_action_start: "Начать это ежегодное действие."
  umbra_yearly_action_end: "Завершить это ежегодное действие."
- umbra_recruit_bygone_desc: "Некоторое время вы путешествовали по [Concept('umbra', 'Умбре')|E], пока не наткнулись на мифических зверей, Ушедших из легенд. Давно забытые умами смертных, эти легенды все еще живут в глубинах [Concept('umbra', 'Умбры')|E], выживая в снах и кошмарах смертных. Завербовав их, они наверняка принесут пользу."
+ umbra_recruit_bygone_desc: "Некоторое время вы путешествовали по #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!, пока не наткнулись на мифических зверей, Ушедших из легенд. Давно забытые умами смертных, эти легенды все еще живут в глубинах #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!, выживая в снах и кошмарах смертных. Завербовав их, они наверняка принесут пользу."
 
  umbra_gaia_possesion_confirm: "Воззвать к прикосновению Геи"
  umbra_gaia_possesion_tooltip: "Воззвать к Гее, чтобы она превратила вас в продолжение своей воли."
@@ -536,7 +536,7 @@
  # Umbra Tooltip
  paying_for_spirit_travel_toast: "Вы заплатили золото, чтобы приобрести [true_jade|El]"
  stepping_sideways_toast: "Шаг в сторону"
- stepping_sideways_tooltip: "Вы тратите $POD_energy_gnosis$, чтобы войти в [Concept('umbra', 'Умбру')|E]."
+ stepping_sideways_tooltip: "Вы тратите $POD_energy_gnosis$, чтобы войти в #TOOLTIP:game_concept_umbra_desc #E Умбру#!#!."
  passing_gauntlet_toast: "Прохождение Барьера"
  passing_gauntlet_tooltip: "Вы тратите ресурсы, чтобы пройти Барьер."
  passing_shroud_toast: "Прохождение Завесы"
@@ -550,14 +550,14 @@
 
  SPIRIT_TRAVELING_TOOLTIP: "Бегство..."
  SPIRIT_EXPLORING_TOOLTIP: "Исследование..."
- spirit_travel_arrived_title: "[Concept('umbra', 'Умбра')|E] достигнута"
- spirit_travel_arrived_desc: "Вы достигли [Concept('umbra', 'Умбры')|E]."
+ spirit_travel_arrived_title: "#TOOLTIP:game_concept_umbra_desc #E Умбра#!#! достигнута"
+ spirit_travel_arrived_desc: "Вы достигли #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!."
 
  shadowlands_fetter_maintenance_tooltip: "Вы платите цену за пребывание в [UmbraGlossaryLocalized('shadowlands','Загробном мире')] без $pod_Fetters|l$."
 
- is_in_umbra_tooltip: "Вы находитесь в [Concept('umbra', 'Умбре')|E]."
+ is_in_umbra_tooltip: "Вы находитесь в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!."
  is_in_dreaming_tooltip: "Вы находитесь в [UmbraGlossaryLocalized('dreaming','Грёзах')]."
- umbra_realm_known_tooltip: "Находка в [Concept('umbra', 'Умбре')|E]: [UmbraGlossary(Scope.GetFlagName)]"
+ umbra_realm_known_tooltip: "Находка в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!: [UmbraGlossary(Scope.GetFlagName)]"
 
  # Umbra Place
  umbra_place_glen_confirm: "Отдохнуть в Лощине"
@@ -594,7 +594,7 @@
  broken_mirror_desc: "Разбитые зеркала - это места, где границы между материальным миром и [UmbraGlossary('yomi_wan')] были ослаблены огромным количеством смертных страданий, осквернённой Ци и духами запустения."
  blight_desc: "Погибель - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], поврежденная в результате борьбы между Ткачихой и Вирмом. Эти городские районы кишат бэйнами и затянуты паутиной Ткачихи; в некотором смысле они представляют собой все негативные стороны города, обобщенные и спрессованные в небольшой район."
  broken_lands_desc: "Разрушенная земля - это что-то из небылиц. Вы слышите рассказы о том, как люди находят развилку тропы там, где ее раньше не было, или пещеру в скале, которая еще два дня назад была твердой. Лошади не хотят идти по этому пути и начинают нервничать, чем ближе к нему. Иногда тропа ведет в странный уголок дикой природы, где животные ведут себя не совсем правильно: шакалы охотятся на койотов, пауки плетут паутину из серебра, стервятники выгрызают кости из трупов, не повреждая плоть. Солнце может не всходить несколько дней, а луна - светить зеленым или красным."
- vista_desc: "Вереница - это области внутри [Concept('umbra', 'Умбры')|E] которые открывают своего рода представление, отражающее одну из четырех идей: Смерть, Застой, Хаос или Происхождение.\n\nС вистами нельзя взаимодействовать, они просто показывают сущности, сталкивающиеся с ними, видение некоего альтернативного времени или места, продиктованного одной из тем. Изображенные сцены показывают мир, в котором произошло нечто грандиозное, например, создание вселенной или застывший уровень порядка. Умбральные сцены разворачиваются по всему полю зрения, как будто все происходящее находится прямо перед вами. Они больше похожи на события, чем на театры, и воздействуют на все органы чувств путешественника."
+ vista_desc: "Вереница - это области внутри #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! которые открывают своего рода представление, отражающее одну из четырех идей: Смерть, Застой, Хаос или Происхождение.\n\nС вистами нельзя взаимодействовать, они просто показывают сущности, сталкивающиеся с ними, видение некоего альтернативного времени или места, продиктованного одной из тем. Изображенные сцены показывают мир, в котором произошло нечто грандиозное, например, создание вселенной или застывший уровень порядка. Умбральные сцены разворачиваются по всему полю зрения, как будто все происходящее находится прямо перед вами. Они больше похожи на события, чем на театры, и воздействуют на все органы чувств путешественника."
 
  # Umbra Commune
  umbra_commune_charon_confirm: "Поговорить с Хароном"
@@ -640,11 +640,11 @@
  paradox_realms_effect_desc: ""
 
  umbra_realm_heaven: "Небеса"
- umbra_realm_heaven_desc: "Небеса - это потусторонняя, бесплотная обитель Бога и элохим. До Восстания это был дом Падших.\nПосле окончания Войны Гнева связь с Небесами не поддерживается, и рука Творца в основном отдалилась от падшего творения.\n\nОтражение Небес все еще существует в [Concept('umbra', 'Умбре')|E], названное его жителями Раем. Он создан скорее по образцу человеческих представлений о рае, чем действительно сравним с оригиналом."
+ umbra_realm_heaven_desc: "Небеса - это потусторонняя, бесплотная обитель Бога и элохим. До Восстания это был дом Падших.\nПосле окончания Войны Гнева связь с Небесами не поддерживается, и рука Творца в основном отдалилась от падшего творения.\n\nОтражение Небес все еще существует в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!, названное его жителями Раем. Он создан скорее по образцу человеческих представлений о рае, чем действительно сравним с оригиналом."
  heaven_effect_desc: ""
 
  umbra_realm_dreamtime: "Время снов"
- umbra_realm_dreamtime_desc: "Время снов - это малое измерение, редкий мир на самой поверхности [Concept('umbra', 'Умбры')|E], прямо между Барьером и началом [Concept('umbra', 'Умбры')|E], встречающееся только в Австралии."
+ umbra_realm_dreamtime_desc: "Время снов - это малое измерение, редкий мир на самой поверхности #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!, прямо между Барьером и началом #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!, встречающееся только в Австралии."
  dreamtime_effect_desc: ""
 
  umbra_realm_chimare: "Химар"
@@ -986,7 +986,7 @@
 
  umbra_realm_yomi_wan: "Ад Йоми"
  umbra_realm_yomi: "Ад Йоми"
- umbra_realm_yomi_wan_desc: "Ад Йоми, также известный как Йоми Ван, что буквально означает «Тысяча преисподен», - это искусственные духовные измерения, созданные [Glossary('повелителями Яма','podgloss.yamaking')] из комбинации духовных миров [Concept('yang_world', 'мира Ян')|E] и [UmbraGlossaryLocalized('shadowlands','мира Инь')], чтобы служить их штаб-квартирой.\nОни разделены на узилища для мёртвых душ, каждая из которых посвящена своему правящему [Glossary('повелителю Яма','podgloss.yamaking')], и находятся в постоянном конфликте за господство над другими."
+ umbra_realm_yomi_wan_desc: "Ад Йоми, также известный как Йоми Ван, что буквально означает «Тысяча преисподен», - это искусственные духовные измерения, созданные [Glossary('повелителями Яма','podgloss.yamaking')] из комбинации духовных миров [Glossary('мира Ян','game_concept_yang_world_desc')] и [UmbraGlossaryLocalized('shadowlands','мира Инь')], чтобы служить их штаб-квартирой.\nОни разделены на узилища для мёртвых душ, каждая из которых посвящена своему правящему [Glossary('повелителю Яма','podgloss.yamaking')], и находятся в постоянном конфликте за господство над другими."
 
  yomi_wan_effect_desc: "Разблокирует взаимодействие, позволяющее отправить связанного #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! в [UmbraGlossary('yomi_wan')], откуда он вернётся как [GetTrait('kueijin').GetName( GetPlayer )|l]."
 
@@ -1033,7 +1033,7 @@
  dis_effect_desc: ""
 
  umbra_realm_spirit_wilds: "Духовные дебри"
- umbra_realm_spirit_wilds_desc: "Духовные дебри - это другое название Средней Умбры, особенно пространства между Ближними мирами. Эта часть [Concept('umbra', 'Умбры')|E] отражает природную среду, как в ее первозданном виде, так и израненную цивилизацией."
+ umbra_realm_spirit_wilds_desc: "Духовные дебри - это другое название Средней Умбры, особенно пространства между Ближними мирами. Эта часть #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! отражает природную среду, как в ее первозданном виде, так и израненную цивилизацией."
 
  spirit_wilds_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
@@ -1115,7 +1115,7 @@
  the_former_homeland_of_the_white_howlers_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_calumn: "Клевета"
- umbra_realm_calumn_desc: "Клевета - это владения Вирма в Ближней Умбре. Они возникают, когда особенно сильная негативная эмоция выражается в каком-то месте физического мира и оставляет отпечаток в [Concept('umbra', 'Умбре')|E]. Это магнит для бэйнов и духов, которые живут рядом с Клеветой, проявляют признаки соответствующей эмоции, и даже неодушевленные предметы становятся осквернёнными из-за близости."
+ umbra_realm_calumn_desc: "Клевета - это владения Вирма в Ближней Умбре. Они возникают, когда особенно сильная негативная эмоция выражается в каком-то месте физического мира и оставляет отпечаток в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!. Это магнит для бэйнов и духов, которые живут рядом с Клеветой, проявляют признаки соответствующей эмоции, и даже неодушевленные предметы становятся осквернёнными из-за близости."
 
  calumn_effect_desc: "$UMBRA_DISCOVERY_FETISH$\n$UMBRA_RECRUIT_BYGONE$"
 
@@ -1132,11 +1132,11 @@
  atrocity_realm_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_battleground: "Поле битвы"
- umbra_realm_battleground_desc: "Поле битвы, известное на востоке как Царство воюющих духов, - это ближнее измерение в пределах [Concept('umbra', 'Умбры')|E], содержащее все битвы, которые когда-либо происходили, от самых ранних конфликтов между неолитическими племенами против медведей и волков, Владычества и Войн Гнева до современных религиозных конфликтов в Иберии и на Ближнем Востоке."
+ umbra_realm_battleground_desc: "Поле битвы, известное на востоке как Царство воюющих духов, - это ближнее измерение в пределах #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!, содержащее все битвы, которые когда-либо происходили, от самых ранних конфликтов между неолитическими племенами против медведей и волков, Владычества и Войн Гнева до современных религиозных конфликтов в Иберии и на Ближнем Востоке."
  battleground_effect_desc: "Разблокирована более высокая награда/требования за обучение пути войны."
 
  umbra_realm_cyberrealm: "Киберсфера"
- umbra_realm_cyberrealm_desc: "Киберсфера - один из тринадцати Ближних миров в [Concept('umbra', 'Умбре')|E]. Это измерение представляет собой, возможно, вершину влияния Ткачихи в [Concept('umbra', 'Умбре')|E]. Маги называют его Дистопией."
+ umbra_realm_cyberrealm_desc: "Киберсфера - один из тринадцати Ближних миров в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!. Это измерение представляет собой, возможно, вершину влияния Ткачихи в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!. Маги называют его Дистопией."
  cyberrealm_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_digital_web: "Цифровая сеть"
@@ -1144,7 +1144,7 @@
  digital_web_effect_desc: ""
 
  umbra_realm_hollow_worlds: "Полые миры"
- umbra_realm_hollow_worlds_desc: "Существует не одна, а несколько версий теории о существовании Полой Земли. Внешне схожие с теми типами царств, которые наблюдаются в Средней Умбре, Полые миры примечательны тем, что до них могут добраться обычные люди, используя определенные подземные ходы, шахты и непримечательные лифты. Более того, некоторые утверждают, что Полые миры представляют собой совершенно иной тип [Concept('umbra', 'Умбры')|E], и называют его «Внутренней Умброй», утверждая, что если Земля - это театр, а мир за кулисами - это [Concept('umbra', 'Умбра')|E], то область за кулисами - это то место, где можно найти Полые миры. Как бы то ни было, попытки пройти через Барьер в Полые миры неизменно заканчиваются неудачей, что ставит в тупик большинство теоретиков умбральной топографии."
+ umbra_realm_hollow_worlds_desc: "Существует не одна, а несколько версий теории о существовании Полой Земли. Внешне схожие с теми типами царств, которые наблюдаются в Средней Умбре, Полые миры примечательны тем, что до них могут добраться обычные люди, используя определенные подземные ходы, шахты и непримечательные лифты. Более того, некоторые утверждают, что Полые миры представляют собой совершенно иной тип #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!, и называют его «Внутренней Умброй», утверждая, что если Земля - это театр, а мир за кулисами - это #TOOLTIP:game_concept_umbra_desc #E Умбра#!#!, то область за кулисами - это то место, где можно найти Полые миры. Как бы то ни было, попытки пройти через Барьер в Полые миры неизменно заканчиваются неудачей, что ставит в тупик большинство теоретиков умбральной топографии."
  hollow_worlds_effect_desc: ""
 
  umbra_realm_erebus: "Эребус"
@@ -1164,7 +1164,7 @@
  legendary_realm_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_mountains_of_heaven: "Небесные горы"
- umbra_realm_mountains_of_heaven_desc: "Небесные горы - это умбральное царство в пределах [Concept('yang_world', 'мира Ян')|E]. Царство проявляется как великая цепь гор, превосходящая даже могучие Гималаи, возвышающаяся над морем облаков."
+ umbra_realm_mountains_of_heaven_desc: "Небесные горы - это умбральное царство в пределах [Glossary('мира Ян','game_concept_yang_world_desc')]. Царство проявляется как великая цепь гор, превосходящая даже могучие Гималаи, возвышающаяся над морем облаков."
  mountains_of_heaven_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_pangaea: "Пангея"
@@ -1172,7 +1172,7 @@
  pangaea_effect_desc: "Можно найти динозавров во время [Concept('umbra_expedition', 'путешествия в Умбру')|E], что позволит нанимать их как [Concept('men_at_arms', 'профессионалов')|E]\nМожно получить модификатор [GetModifier('paleontologist_modifier').GetNameWithTooltip] (через [Concept('umbra_expedition', 'путешествие в Умбру')|E])\n$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_scar: "Шрам"
- umbra_realm_scar_desc: "Шрам - одно из Ближних царств [Concept('umbra', 'Умбры')|E]. Это проявление промышленной революции, развратившей душу угнетением под ржавым идеалом процветания."
+ umbra_realm_scar_desc: "Шрам - одно из Ближних царств #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!. Это проявление промышленной революции, развратившей душу угнетением под ржавым идеалом процветания."
  scar_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_summer_country: "Страна лета"
@@ -1180,7 +1180,7 @@
  summer_country_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_tiger_lands: "Земли тигров"
- umbra_realm_tiger_lands_desc: "Земли тигров - это мир Ян в восточной [Concept('umbra', 'Умбре')|E], который служит убежищем для духов животных, находящихся под угрозой исчезновения, и духов, потерявших свои дома в результате вырубки леса человеком."
+ umbra_realm_tiger_lands_desc: "Земли тигров - это мир Ян в восточной #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!, который служит убежищем для духов животных, находящихся под угрозой исчезновения, и духов, потерявших свои дома в результате вырубки леса человеком."
  tiger_lands_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_umi: "Уми"
@@ -1426,7 +1426,7 @@
  first_horizon_effect_desc: ""
 
  umbra_realm_true_horizon: "Истинный горизонт"
- umbra_realm_true_horizon_desc: "Истинный горизонт - это обширное пространство [Concept('umbra', 'Умбры')|E], расположенное между Ближней и Дальней Умброй. Для Спящих это пространство между Солнцем и поясом астероидов."
+ umbra_realm_true_horizon_desc: "Истинный горизонт - это обширное пространство #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!, расположенное между Ближней и Дальней Умброй. Для Спящих это пространство между Солнцем и поясом астероидов."
  true_horizon_effect_desc: ""
 
  umbra_realm_autochthonia: "Автохтония"
@@ -1442,7 +1442,7 @@
  gernsback_continuum_effect_desc: ""
 
  umbra_realm_midrealm: "Срединный мир"
- umbra_realm_midrealm_desc: "Срединный мир - это умбральный мир, находящийся в центре [Concept('umbra', 'Умбра')|E]. Здесь находится Ольховый ствол, изначальное Мировое древо, которое сформировало Теллуриан, и есть ложа, где обитатели Теней всех видов могут мирно встречаться.\n\nСрединный мир - это не только центр [Concept('umbra', 'Умбры')|E], но также может быть центром Реальности. Некоторые учёные полагают, что это может быть даже гора Каф и/или Точка связей."
+ umbra_realm_midrealm_desc: "Срединный мир - это умбральный мир, находящийся в центре #TOOLTIP:game_concept_umbra_desc #E Умбра#!#!. Здесь находится Ольховый ствол, изначальное Мировое древо, которое сформировало Теллуриан, и есть ложа, где обитатели Теней всех видов могут мирно встречаться.\n\nСрединный мир - это не только центр #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!, но также может быть центром Реальности. Некоторые учёные полагают, что это может быть даже гора Каф и/или Точка связей."
  midrealm_effect_desc: ""
 
  umbra_realm_moreauvia: "Моровия"
@@ -1519,7 +1519,7 @@
  mirror_zone_effect_desc: "[umbra_aptitude|E]: $pod_grace_i$#P +25%#!"
 
  umbra_realm_null_zone: "Тропы Древних"
- umbra_realm_null_zone_desc: "Тропы Древних представляют собой лабиринт узких тропинок, ведущих в большинство миров [Concept('umbra', 'Умбры')|E]. Ориентироваться здесь сложно, так как дороги постоянно меняются и выглядят одинаково."
+ umbra_realm_null_zone_desc: "Тропы Древних представляют собой лабиринт узких тропинок, ведущих в большинство миров #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!. Ориентироваться здесь сложно, так как дороги постоянно меняются и выглядят одинаково."
  null_zone_effect_desc: "[umbra_aptitude|E]: $pod_grace_i$#P +25%#!"
 
  umbra_realm_neter_khertet: "Нетер-кхертет"
@@ -1564,5 +1564,5 @@
  doissetep_effect_desc: ""
 
  umbra_realm_hive_realm: "Мир улья"
- umbra_realm_hive_realm_desc: "Миры улья возникли в результате Шторма аватаров. Шторм разорвал некоторые миры вдоль мембраны и соединил их с новыми, вызывающими беспокойство мирами, которые дополняют [Concept('umbra', 'Умбру')|E]. Каждый маг, пытающийся проникнуть в мир, имеет хорошие шансы вместо этого попасть в мир улья. Большинство из них состоят из кроваво-красного крошащегося камня и имеют очень разреженную атмосферу, из-за которой трудно дышать."
+ umbra_realm_hive_realm_desc: "Миры улья возникли в результате Шторма аватаров. Шторм разорвал некоторые миры вдоль мембраны и соединил их с новыми, вызывающими беспокойство мирами, которые дополняют #TOOLTIP:game_concept_umbra_desc #E Умбру#!#!. Каждый маг, пытающийся проникнуть в мир, имеет хорошие шансы вместо этого попасть в мир улья. Большинство из них состоят из кроваво-красного крошащегося камня и имеют очень разреженную атмосферу, из-за которой трудно дышать."
  hive_realm_effect_desc: ""

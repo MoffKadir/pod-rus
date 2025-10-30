@@ -5,7 +5,7 @@
  UMBRA_WINDOW_TAB_REALMS: "Измерения"
  UMBRA_WINDOW_TAB_DISCOVERIES: "Открытия"
  UMBRA_WINDOW_TAB_EXPLORERS: "Исследователи"
- UMBRA_WINDOW_ACTION_HINT: "#weak Вы можете выполнять действия в этом измерении [Concept('umbra', 'Умбры')|E].#!"
+ UMBRA_WINDOW_ACTION_HINT: "#weak Вы можете выполнять действия в этом измерении #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!.#!"
  UMBRA_WINDOW_GAUNTLET: "Барьер: #V [GetPlayer.MakeScope.ScriptValue('location_gauntlet_level')|0]#!"
  UMBRA_WINDOW_SHROUD: "Завеса: #V [GetPlayer.MakeScope.ScriptValue('location_shroud_level')|0]#!"
  UMBRA_WINDOW_COMMUNE: "Общение"

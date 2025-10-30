@@ -12,10 +12,10 @@
  POD_hint_torpor_interaction_desc: "[recipient.GetShortUIName] находится в кататоническом состоянии, что делает невозможным почти все взаимодействия."
 
  POD_hint_umbra_trapped_interaction: "#difficulty_hard В ловушке Умбры#!"
- POD_hint_umbra_trapped_interaction_desc: "[recipient.GetShortUIName] [Select_CString(recipient.IsFemale, 'застряла', 'застрял' )] в опасной части [Concept('umbra', 'Умбры')|E].\n\nОбщение невозможно, если только вам не удастся каким-либо образом вытащить [recipient.GetHerHis]."
+ POD_hint_umbra_trapped_interaction_desc: "[recipient.GetShortUIName] [Select_CString(recipient.IsFemale, 'застряла', 'застрял' )] в опасной части #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!.\n\nОбщение невозможно, если только вам не удастся каким-либо образом вытащить [recipient.GetHerHis]."
 
  POD_hint_umbra_interaction: "#difficulty_hard По ту сторону Савана#!"
- POD_hint_umbra_interaction_desc: "Либо вы, либо [recipient.GetShortUIName] находится в [Concept('umbra', 'Умбре')|E], что делает общение невозможным.\n\nВы могли бы обойти это ограничение, если бы у вас обоих был способ общаться с существами на другой стороне."
+ POD_hint_umbra_interaction_desc: "Либо вы, либо [recipient.GetShortUIName] находится в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!, что делает общение невозможным.\n\nВы могли бы обойти это ограничение, если бы у вас обоих был способ общаться с существами на другой стороне."
 
  POD_hint_wight_interaction: "#difficulty_hard Неистовство#!"
  POD_hint_wight_interaction_desc: "[recipient.GetShortUIName] полностью [Select_CString(recipient.IsFemale, 'потеряла', 'потерял' )] рассудок. Все, что [recipient.GetSheHe] может сейчас делать, - это действовать на основе чисто животного инстинкта."
@@ -24,4 +24,4 @@
  POD_hint_robotic_interaction_desc: "Это существо было оживлено с помощью какой-то формы магии. Оно может выполнять простые задачи и следовать приказам, но не более того."
 
  POD_hint_hostile_splat_interaction: "#difficulty_hard Враждебный вид#!"
- POD_hint_hostile_splat_interaction_desc: "Этот персонаж считает ваш [Concept('splat', 'вид')|E] своими смертельными врагами. Они не заинтересованы в дипломатических отношениях с вам подобными."
+ POD_hint_hostile_splat_interaction_desc: "Этот персонаж считает ваш #TOOLTIP:game_concept_splat_desc #E вид#!#! своими смертельными врагами. Они не заинтересованы в дипломатических отношениях с вам подобными."

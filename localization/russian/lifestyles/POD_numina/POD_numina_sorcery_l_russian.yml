@@ -88,7 +88,7 @@
  NUMINA_ALCHEMY_5_PERK_EFFECT: "Улучшает все [Concept('crafting_node','узлы')|E] достоинства «[GetPerk('numina_alchemy_4_perk').GetName(GetPlayer)]»\n$unlock_brewing_node$ #TOOLTIP:GAME_TRAIT,immortal,[GetNullCharacter] #L Бессмертие#!\n$unlock_brewing_node$ #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L Вампиризм#!\n#flavor Алхимик может создавать вещества, имитирующие действие сверхъестественных способностей среднего уровня. Однако эти зелья могут иметь неприятные побочные эффекты в зависимости от того, насколько сильнодействующим является их состав, и требуют изучения сверхъестественного предмета, а также получения из них реагентов. Для приготовления зелья используются такие материалы, как волчий мех, кровь вампира, кровь феи и т.д.#!"
  NUMINA_ALCHEMY_6_PERK_EFFECT: "Улучшает все [Concept('crafting_node','узлы')|E] достоинства «[GetPerk('numina_alchemy_5_perk').GetName(GetPlayer)]»\n$unlock_brewing_node$ [GetTrait('kinfolk').GetName(GetPlayer)]\n$unlock_brewing_node$ [GetTrait('kinain').GetName(GetPlayer)]\n#flavor Алхимик достиг вершины, став способным создавать философский камень, становиться бессмертным или преобразовывать один элемент в другой. Теоретически, можно даже создать смесь, способную превратить человека в вампира, оборотня или другое существо. Этот уровень также способен даровать алхимику пробуждение.#!"
 
- NUMINA_ALCHEMY_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Алхимия#!#!"
+ NUMINA_ALCHEMY_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Алхимия#!#!"
 
  numina_conjuration_1_perk_name: "Призыв: $numina_1_name$"
  numina_conjuration_2_perk_name: "Призыв: $numina_2_name$"
@@ -104,7 +104,7 @@
  NUMINA_CONJURATION_5_PERK_EFFECT: "Позволяет призвать персонажа со свойством «[GetTrait('mortal').GetName(GetPlayer)]» или добровольную сверхъестественную цель через #L $pod_bs_spell|l$ие#!.\nУлучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('numina_conjuration_4_perk').GetName(GetPlayer)]», позволяя призывать [Concept('artifact', 'артефакт')|E] #FAMEDBLUE знаменитого#! качества.\n#flavor Заклинатель может перемещать или зачаровать человека, при условии, что субъект этого хочет или находится в бессознательном состоянии. Объекты могут быть вызваны с расстояния 60 футов.#!"
  NUMINA_CONJURATION_6_PERK_EFFECT: "Позволяет призвать персонажа со свойством «[GetTrait('demon').GetName(GetPlayer)]» из Бездны через #L $pod_bs_spell|l$ие#!.\nУлучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('numina_conjuration_4_perk').GetName(GetPlayer)]», позволяя призывать [Concept('artifact', 'артефакт')|E] #ILLUSTRIOUSPURPLE великолепного#! качества.\nУлучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('numina_conjuration_5_perk').GetName(GetPlayer)]», позволяя накладывать на материальную цель.\n#flavor Заклинатель может создавать и перемещать объекты размером с грузовик, а также до трех форм жизни размером с человека в радиусе 100 миль.#!"
 
- NUMINA_CONJURATION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Призыв#!#!"
+ NUMINA_CONJURATION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Призыв#!#!"
 
  numina_conveyance_1_perk_name: "Перемещение: $numina_1_name$"
  numina_conveyance_2_perk_name: "Перемещение: $numina_2_name$"
@@ -120,7 +120,7 @@
  NUMINA_CONVEYANCE_5_PERK_EFFECT: "Вы можете телепортировать армию, которой командуете, к месту назначения через #L $pod_bs_spell|l$ие#!\n#flavor Пользователь может перенести себя и трех других пассажиров примерно на десять миль.#!"
  NUMINA_CONVEYANCE_6_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('numina_conveyance_5_perk').GetName(GetPlayer)]», снимая ограничения на телепортацию.\n#flavor Пользователь может перенести себя и еще пятерых пассажиров примерно на 100 миль.#!"
 
- NUMINA_CONVEYANCE_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Перемещение#!#!"
+ NUMINA_CONVEYANCE_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Перемещение#!#!"
 
  numina_divination_1_perk_name: "Прорицание: $numina_1_name$"
  numina_divination_2_perk_name: "Прорицание: $numina_2_name$"
@@ -136,7 +136,7 @@
  NUMINA_DIVINATION_5_PERK_EFFECT: "Позволяет раскрыть все враждебные [Concept('schemes', 'происки')|E] против цели через #L $pod_bs_spell|l$ие#!\n#flavor Загляните на протяжённость жизни в прошлое или будущее с огромной точностью.#!"
  NUMINA_DIVINATION_6_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('numina_divination_5_perk').GetName(GetPlayer)]», также прекращая все враждебные [Concept('schemes', 'происки')|E] против цели.\n#flavor Загляните как можно дальше в прошлое или будущее. Даже если предсказание неверно, в нём есть доля правды.#!"
 
- NUMINA_DIVINATION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Прорицание#!#!"
+ NUMINA_DIVINATION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Прорицание#!#!"
 
  numina_enchantment_1_perk_name: "Зачарование: $numina_1_name$"
  numina_enchantment_2_perk_name: "Зачарование: $numina_2_name$"
@@ -152,7 +152,7 @@
  NUMINA_ENCHANTMENT_5_PERK_EFFECT: "Улучшает базовые [Concept('crafting_nodes','узлы ремесла')|E] и их версии [Concept('crafting_enhancing','улучшения')|E]\nИзменяет ограничения достоинства «[GetPerk('numina_enchantment_4_perk').GetName(GetPlayer)]» с 1 до 2\n#flavor Чародей создает талисман, обладающий почти чудодейственной силой.#!"
  NUMINA_ENCHANTMENT_6_PERK_EFFECT: "Улучшает базовые [Concept('crafting_nodes','узлы ремесла')|E] и их версии [Concept('crafting_enhancing','улучшения')|E]\nСнимает ограничения достоинства «[GetPerk('numina_enchantment_4_perk').GetName(GetPlayer)]» для [Concept('crafting_forging','ковки')|E], и повышает их для [Concept('crafting_enhancing','улучшения')|E]\n#flavor Чародей создает легендарный артефакт.#!"
 
- NUMINA_ENCHANTMENT_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Зачарование#!#!"
+ NUMINA_ENCHANTMENT_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Зачарование#!#!"
 
  numina_ephemera_1_perk_name: "Эфемера: $numina_1_name$"
  numina_ephemera_2_perk_name: "Эфемера: $numina_2_name$"
@@ -168,7 +168,7 @@
  NUMINA_EPHEMERA_5_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('numina_ephemera_4_perk').GetName(GetPlayer)]», повышая вероятность до 100%\n#flavor Научитесь приказывать духам исполнять вашу волю.#!"
  NUMINA_EPHEMERA_6_PERK_EFFECT: "Отменяет плату за вход в [UmbraGlossaryLocalized('spirit_wilds','Духовные дебри')]\nВы получите [Concept('trait', 'свойство')|E] #V [GetTrait('immortal').GetName(GetPlayer)]#!\n#flavor Пройдите через Барьер в астральной форме.#!"
 
- NUMINA_EPHEMERA_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Эфемера#!#!"
+ NUMINA_EPHEMERA_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Эфемера#!#!"
 
  numina_fascination_1_perk_name: "Очарование: $numina_1_name$"
  numina_fascination_2_perk_name: "Очарование: $numina_2_name$"
@@ -184,7 +184,7 @@
  NUMINA_FASCINATION_5_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('numina_fascination_4_perk').GetName(GetPlayer)]», повышая вероятность до 100% и превратив его в [Concept('strong_hook', 'сильное влияние')|E]\n#flavor Заставьте людей быть очень преданными вам.#!"
  NUMINA_FASCINATION_6_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('numina_fascination_5_perk').GetName(GetPlayer)]», снимая ограничение на сильную ментальную защиту\n#flavor Заставьте людей стать вашими буквальными слугами.#!"
 
- NUMINA_FASCINATION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Очарование#!#!"
+ NUMINA_FASCINATION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Очарование#!#!"
 
  numina_fortune_1_perk_name: "Удача: $numina_1_name$"
  numina_fortune_2_perk_name: "Удача: $numina_2_name$"
@@ -200,7 +200,7 @@
  NUMINA_FORTUNE_5_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('numina_fortune_2_perk').GetName(GetPlayer)]», меняя ограничение с подвида на цели не старше 500 лет\nУлучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('numina_fortune_4_perk').GetName(GetPlayer)]», заменяя модификатор [GetModifier('numina_fortune_4_bless_modifier').GetNameWithTooltip] модификатором [GetModifier('numina_fortune_5_bless_modifier').GetNameWithTooltip]\n#flavor Смерть постигает человека, а также всех его родственников и друзей, или мощное благословение, которое может остановить смерть или даровать огромное богатство, которое может длиться годами.#!"
  NUMINA_FORTUNE_6_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('numina_fortune_2_perk').GetName(GetPlayer)]», меняя ограничение с целей не старше 500 лет до материальных (не-призрачных) видов\nУлучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('numina_fortune_5_perk').GetName(GetPlayer)]», заменяя модификатор [GetModifier('numina_fortune_5_bless_modifier').GetNameWithTooltip] модификатором [GetModifier('numina_fortune_6_bless_modifier').GetNameWithTooltip]\n#flavor Проклятие или благословение настолько могущественны, что могут сохраняться на протяжении многих поколений. Если и есть судьба хуже смерти или способ обмануть смерть навсегда, то это должно быть проклятие или благословение такого масштаба.#!"
 
- NUMINA_FORTUNE_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Удача#!#!"
+ NUMINA_FORTUNE_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Удача#!#!"
 
  numina_healing_1_perk_name: "Исцеление: $numina_1_name$"
  numina_healing_2_perk_name: "Исцеление: $numina_2_name$"
@@ -216,7 +216,7 @@
  NUMINA_HEALING_5_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('numina_healing_3_perk').GetName(GetPlayer)]», позволяя излечивать любые ранения и хвори\n#flavor Исцеление почти смертельных ран и исцеление таких болезней, как рак.#!"
  NUMINA_HEALING_6_PERK_EFFECT: "Вы получите [Concept('trait', 'свойство')|E] #V [GetTrait('immortal').GetName(GetPlayer)]#!\nВы получите модификатор [GetModifier('extra_life_4_modifier').GetNameWithTooltip]\n#flavor Возвращение к жизни человека, который недавно умер. Однако, если этому человеку не будет оказана немедленная медицинская помощь, он, скорее всего, просто умрет снова.#!"
 
- NUMINA_HEALING_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Исцеление#!#!"
+ NUMINA_HEALING_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Исцеление#!#!"
 
  numina_hellfire_1_perk_name: "Адское пламя: $numina_1_name$"
  numina_hellfire_2_perk_name: "Адское пламя: $numina_2_name$"
@@ -232,7 +232,7 @@
  NUMINA_HELLFIRE_5_PERK_EFFECT: "#flavor По слухам, адское пламя, возникающее в результате инфернальных сделок, наделяет заклинателя огромной разрушительной силой. Хотя обычно она вызывает огонь, были замечены варианты, которые вызывают молнию, мокрый снег, песчаные бури, землетрясения или дым. Путь Адского пламени не обладает индивидуальными способностями, дальнейшее продвижение позволяет лишь призвать ещё больше разрушительных сил.#!"
  NUMINA_HELLFIRE_6_PERK_EFFECT: "#flavor По слухам, адское пламя, возникающее в результате инфернальных сделок, наделяет заклинателя огромной разрушительной силой. Хотя обычно она вызывает огонь, были замечены варианты, которые вызывают молнию, мокрый снег, песчаные бури, землетрясения или дым. Путь Адского пламени не обладает индивидуальными способностями, дальнейшее продвижение позволяет лишь призвать ещё больше разрушительных сил.#!"
 
- NUMINA_HELLFIRE_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Адское пламя#!#!"
+ NUMINA_HELLFIRE_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Адское пламя#!#!"
 
  numina_illusion_1_perk_name: "Иллюзия: $numina_1_name$"
  numina_illusion_2_perk_name: "Иллюзия: $numina_2_name$"
@@ -247,7 +247,7 @@
  NUMINA_ILLUSION_5_PERK_EFFECT: "Улучшает достоинство «[GetPerk('numina_illusion_4_perk').GetName(GetPlayer)]», заменяя модификатор [GetModifier('numina_sorcery_illusion_4_modifier').GetNameWithTooltip] модификатором [GetModifier('numina_sorcery_illusion_5_modifier').GetNameWithTooltip]\n#flavor Одна из самых фундаментальных магических способностей - это способность обманывать других, заставляя их верить в то, чего хочет маг. Путь иллюзии вводит в заблуждение органы чувств, заставляя своих жертв воспринимать то, чего на самом деле нет, или изменяя их восприятие того, что есть. Большинство людей доверяют своим чувствам. «Увидеть - значит поверить», но когда рядом находится иллюзионист, эта старая пословица может убить вас.#!"
  NUMINA_ILLUSION_6_PERK_EFFECT: "Улучшает достоинство «[GetPerk('numina_illusion_5_perk').GetName(GetPlayer)]», заменяя модификатор [GetModifier('numina_sorcery_illusion_5_modifier').GetNameWithTooltip] модификатором [GetModifier('numina_sorcery_illusion_6_modifier').GetNameWithTooltip]\n#flavor Одна из самых фундаментальных магических способностей - это способность обманывать других, заставляя их верить в то, чего хочет маг. Путь иллюзии вводит в заблуждение органы чувств, заставляя своих жертв воспринимать то, чего на самом деле нет, или изменяя их восприятие того, что есть. Большинство людей доверяют своим чувствам. «Увидеть - значит поверить», но когда рядом находится иллюзионист, эта старая пословица может убить вас.#!"
 
- NUMINA_ILLUSION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Иллюзия#!#!"
+ NUMINA_ILLUSION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Иллюзия#!#!"
 
  numina_necromancy_1_perk_name: "Некромантия: $numina_1_name$"
  numina_necromancy_2_perk_name: "Некромантия: $numina_2_name$"
@@ -263,7 +263,7 @@
  NUMINA_NECROMANCY_5_PERK_EFFECT: "#flavor Некоторые вещи должны оставаться в тайне. Главные из них - мертвые. Но те, кто следует путем некромантии, видят всё немного по-другому. Как и адское пламя, некромантия имеет репутацию нечестивой, и ею занимаются только худшие из худших. В отличие от адского пламени, эта репутация, по крайней мере, в какой-то степени заслужена.#!"
  NUMINA_NECROMANCY_6_PERK_EFFECT: "#flavor Некоторые вещи должны оставаться в тайне. Главные из них - мертвые. Но те, кто следует путем некромантии, видят всё немного по-другому. Как и адское пламя, некромантия имеет репутацию нечестивой, и ею занимаются только худшие из худших. В отличие от адского пламени, эта репутация, по крайней мере, в какой-то степени заслужена.#!"
 
- NUMINA_NECROMANCY_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Некромантия#!#!"
+ NUMINA_NECROMANCY_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Некромантия#!#!"
 
  numina_oneiromancy_1_perk_name: "Онейромантия: $numina_1_name$"
  numina_oneiromancy_2_perk_name: "Онейромантия: $numina_2_name$"
@@ -279,7 +279,7 @@
  NUMINA_ONEIROMANCY_5_PERK_EFFECT: "Вы можете наделить цель 100 ед. [Concept('stress', 'стресса')|E], применив это #L $pod_bs_spell|l$ие#!\n#flavor Научитесь объединять несколько снов в один.#!"
  NUMINA_ONEIROMANCY_6_PERK_EFFECT: "Улучшает достоинство «[GetPerk('numina_oneiromancy_5_perk').GetName(GetPlayer)]», повышая прирост [Concept('stress', 'стресса')|E] и наделяя цель случайной ментальной хворью\n#flavor Сделайте существо из ваших снов реальным на ограниченный период времени.#!"
 
- NUMINA_ONEIROMANCY_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Онейромантия#!#!"
+ NUMINA_ONEIROMANCY_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Онейромантия#!#!"
 
  numina_quintessence_manipulation_1_perk_name: "Манипуляция квинтэссенцией: $numina_1_name$"
  numina_quintessence_manipulation_2_perk_name: "Манипуляция квинтэссенцией: $numina_2_name$"
@@ -295,7 +295,7 @@
  NUMINA_QUINTESSENCE_MANIPULATION_5_PERK_EFFECT: "Можно использовать магические [Concept('artifacts', 'артефакты')|E]\nВражеские [Concept('knights', 'рыцари')|E]-#TOOLTIP:GAME_TRAIT,mage,[GetPlayer] #L маги#!#!, выступающие как [Concept('commander', 'командиры')|E] во время [Concept('combat_phase', 'фазы боя')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('numina_sorcery_quintessence_manipulation_malus_modifier').GetNameWithTooltip].\n#flavor Почти все чародеи могут согласиться с одним фактом. Существует поток силы, который подпитывает их. Название этой силы имеет множество названий и философий: мана, ци, гнозис, шакти, сехем и многие другие. Каждый чародей может описать поток энергии, когда он воздействует своей волей на реальность. Он проходит через них, как заряд по линии электропередачи, его можно почувствовать, а для некоторых его можно использовать напрямую.#!"
  NUMINA_QUINTESSENCE_MANIPULATION_6_PERK_EFFECT: "Даёт сильную ментальную защиту, обеспечивающую иммунитет к большинству ментальных способностей.\nВражеские [Concept('knights', 'рыцари')|E], выступающие как [Concept('commander', 'командиры')|E] во время [Concept('combat_phase', 'фазы боя')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('numina_sorcery_quintessence_manipulation_6_malus_modifier').GetNameWithTooltip].\n#flavor Почти все чародеи могут согласиться с одним фактом. Существует поток силы, который подпитывает их. Название этой силы имеет множество названий и философий: мана, ци, гнозис, шакти, сехем и многие другие. Каждый чародей может описать поток энергии, когда он воздействует своей волей на реальность. Он проходит через них, как заряд по линии электропередачи, его можно почувствовать, а для некоторых его можно использовать напрямую.#!"
 
- NUMINA_QUINTESSENCE_MANIPULATION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Манипуляция квинтэссенцией#!#!"
+ NUMINA_QUINTESSENCE_MANIPULATION_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Манипуляция квинтэссенцией#!#!"
 
  numina_shadows_1_perk_name: "Тени: $numina_1_name$"
  numina_shadows_2_perk_name: "Тени: $numina_2_name$"
@@ -311,7 +311,7 @@
  NUMINA_SHADOWS_5_PERK_EFFECT: "#flavor Манипулируйте тенями, чтобы полностью скрыться от глаз смертных. Те, кто видит тени, могут сойти с ума от этого опыта.#!"
  NUMINA_SHADOWS_6_PERK_EFFECT: "#flavor Придайте теням физическую форму или погасите любой свет в радиусе 50 футов.#!"
 
- NUMINA_SHADOWS_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Тени#!#!"
+ NUMINA_SHADOWS_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Тени#!#!"
 
  numina_shapeshifting_1_perk_name: "Превращение: $numina_1_name$"
  numina_shapeshifting_2_perk_name: "Превращение: $numina_2_name$"
@@ -327,7 +327,7 @@
  NUMINA_SHAPESHIFTING_5_PERK_EFFECT: "Разблокирует вариант смены облика в животных\n#flavor Полная трансформация в животное.#!"
  NUMINA_SHAPESHIFTING_6_PERK_EFFECT: "Разблокирует вариант смены облика «Изменить физическое свойство»\nРазблокирует вариант смены облика в мифических животных\n#flavor Полная трансформация в мифическое животное.#!"
 
- NUMINA_SHAPESHIFTING_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Превращение#!#!"
+ NUMINA_SHAPESHIFTING_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Превращение#!#!"
 
  numina_weather_control_1_perk_name: "Управление погодой: $numina_1_name$"
  numina_weather_control_2_perk_name: "Управление погодой: $numina_2_name$"
@@ -343,4 +343,4 @@
  NUMINA_WEATHER_CONTROL_5_PERK_EFFECT: "Позволяет вызвать стихийные бедствия в державах размером менее 50 графств через #L $pod_bs_spell|l$ие#!\n#flavor Изменение климата на большей территории.#!"
  NUMINA_WEATHER_CONTROL_6_PERK_EFFECT: "Улучшает достоинство «[GetPerk('numina_weather_control_5_perk').GetName(GetPlayer)]», снимая ограничение на размер державы.\n#flavor Призыв разрушительных сил природы, такие как ураганы.#!"
 
- NUMINA_WEATHER_CONTROL_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить [Concept('journey', 'странствие')|E] #v Изучить низшее мастерство: Управление погодой#!#!"
+ NUMINA_WEATHER_CONTROL_6_PERK_FLAG_REQUIREMENT: "#X @warning_icon! Сначала вы должны завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! #v Изучить низшее мастерство: Управление погодой#!#!"

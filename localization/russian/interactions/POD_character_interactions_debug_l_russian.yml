@@ -14,13 +14,13 @@
  POD_debug_teleport_interaction_desc: "вжух"
 
  POD_debug_instacomplete_journey_interaction: "Мгновенно завершить текущее странствие"
- POD_debug_instacomplete_journey_interaction_desc: "Мгновенно завершить ваше [Concept('journey', 'странствие')|E] #bold $POD_JOURNEY_GETNAME$#!"
+ POD_debug_instacomplete_journey_interaction_desc: "Мгновенно завершить ваше #TOOLTIP:game_concept_journey_desc #E странствие#!#! #bold $POD_JOURNEY_GETNAME$#!"
 
  POD_debug_gain_trait_xp_interaction: "Добавить опыт свойства"
  POD_debug_gain_trait_xp_interaction_desc: "Повысить уровень сверхъестественного свойства персонажа [recipient.GetShortUIName]"
  POD_reduce_trait_xp: "Вместо этого снизить опыт"
 
- POD_debug_umbra_discovery_interaction: "Получить открытие [Concept('umbra', 'Умбры')|E]"
+ POD_debug_umbra_discovery_interaction: "Получить открытие #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
  POD_debug_umbra_discovery_interaction_desc: "Вы сможете начать [Concept('umbra_expedition', 'путешествие в Умбру')|E] в измерение #bold [Localize(Concatenate('game_concept_', recipient.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName))]#!"
 
  POD_debug_show_real_prowess_interaction: "Показать настоящую доблесть"
@@ -41,7 +41,7 @@
  POD_debug_vicissitude_face_interaction_desc: "Открывает окно, позволяющее редактировать определённые характеристики персонажа [recipient.GetShortUIName], например мускулистость или рост."
 
  POD_debug_add_halfsplat_interaction: "Добавить гибридный вид"
- POD_debug_add_halfsplat_interaction_desc: "Добавить персонажу [recipient.GetShortUIName] свойство гибридного [Concept('splat', 'вида')|E], а также необходимые эффекты инициализации."
+ POD_debug_add_halfsplat_interaction_desc: "Добавить персонажу [recipient.GetShortUIName] свойство гибридного #TOOLTIP:game_concept_splat_desc #E вида#!#!, а также необходимые эффекты инициализации."
 
  POD_debug_teach_spell_of_life_interaction: "Научить заклинанию Жизни"
  POD_debug_teach_spell_of_life_interaction_desc: "Научить персонажа [recipient.GetShortUIName] заклинанию Жизни, которое позволяет создавать мумий"

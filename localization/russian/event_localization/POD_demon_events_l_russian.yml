@@ -35,7 +35,7 @@
  #POD_demon_maintenance.20.option.a.tt: "You will play your designated vessel that will inherit your name, age, traits, perks..."
  POD_demon_maintenance.20.option.d: "Я вернусь в духовную форму."
 
- demon_without_host_tt: "Это опасный выбор. Без сосуда вы можете остаться в ловушке [Concept('umbra', 'Умбры')|E] на некоторое время."
+ demon_without_host_tt: "Это опасный выбор. Без сосуда вы можете остаться в ловушке #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! на некоторое время."
 
  POD_demon_maintenance.70.t: "Ты, [Select_CString(ROOT.Char.IsFemale, 'наглая рабыня', 'наглый раб' )]"
  POD_demon_maintenance.70.desc: "Как ты смеешь пытаться заточить в тюрьму [Select_CString(demon.IsFemale, 'свою законную хозяйку?! Владелицу', 'своего законного хозяина?! Владельца' )] своей души?!\nТвои неразумные амбиции дорого обойдутся тебе, и я с таким удовольствием заставлю тебя заплатить..."

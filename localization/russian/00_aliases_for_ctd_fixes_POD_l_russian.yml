@@ -2,7 +2,7 @@
  # Hash collisions in game_concepts can lead to inconsistent crashes to desktop on startup.
  # As more and more game_concepts got added to Vanilla CK3, this has gotten so bad that we're no longer using them.
  # Use these loc keys instead.
- # So e.g. instead of [splat|E], it's $pod_splat$
+ # So e.g. instead of #TOOLTIP:game_concept_splat_desc #E Вид#!#!, it's $pod_splat$
 
 
  ####### common/game_concepts/00_POD_game_concepts.txt

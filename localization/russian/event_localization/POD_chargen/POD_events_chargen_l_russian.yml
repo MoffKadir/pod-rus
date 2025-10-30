@@ -27,7 +27,7 @@
  POD_chargen.3.t: "Первое поколение"
  POD_chargen.3.desc: "Кто является прародителем вампиров?"
  POD_chargen.3.option.a: "Как было написано в Книге Нод: Каин был проклят Богом."
- POD_chargen.3.option.i: "[Concept('ashirra', 'Аширра')|E] говорит, что Каййун был проклят Аллахом."
+ POD_chargen.3.option.i: "[Glossary('Аширра','game_concept_ashirra_desc')] говорит, что Каййун был проклят Аллахом."
  POD_chargen.3.option.c: "В преданиях говорится, что вампиры происходят от Кагна."
  POD_chargen.3.option.b: "Тёмная мать говорит, что у вампиров много истоков."
  POD_chargen.3.option.h: "Сет, отомстивший Осирису."
@@ -599,7 +599,7 @@
  POD_chargen.710.option.j: "Дорога ночи"
  POD_chargen.710.option.k: "Дорога парадокса"
  POD_chargen.710.option.l: "Дорога Сета"
- POD_chargen.710.option.m: "[Concept('ashirra', 'Аширра')|E]"
+ POD_chargen.710.option.m: "[Glossary('Аширра','game_concept_ashirra_desc')]"
  POD_chargen.710.option.n: "Ракта-садху"
  POD_chargen.710.option.o: "$pod_wan_kuei$"
  POD_chargen.710.option.p: "Тал'махе'Ра"
@@ -619,7 +619,7 @@
  POD_chargen.720.option.e: "Via Vireo, тропа бодрости"
  POD_chargen.720.option.f: "Via Aeterna Senatus, Вечный сенат"
  POD_chargen.720.option.g: "Via Entelechia, тропа энтелехии"
- POD_chargen.720.option.h: "Тарик эль-Умма, [Concept('ashirra', 'аширритская')|E] тропа содружества"
+ POD_chargen.720.option.h: "Тарик эль-Умма, [Glossary('аширритская','game_concept_ashirra_desc')] тропа содружества"
  POD_chargen.720.option.z: "Выбрать другую Дорогу"
 
  POD_chargen.730.t: "Дорога королей"
@@ -647,7 +647,7 @@
  POD_chargen.740.option.j: "Via Archangeli, тропа архангела"
  POD_chargen.740.option.k: "Тропа небесной обители"
  POD_chargen.740.option.l: "Via Noctis, тропа ночи"
- POD_chargen.740.option.m: "Тарик эль-Сама, [Concept('ashirra', 'аширритские')|E] святые братья"
+ POD_chargen.740.option.m: "Тарик эль-Сама, [Glossary('аширритские','game_concept_ashirra_desc')] святые братья"
 
  POD_chargen.750.t: "Дорога греха"
  POD_chargen.750.desc: "Какую тропу греха вы выберете?"
@@ -682,7 +682,7 @@
  POD_chargen.760.option.f: "Via [Concept('einherjar', 'Einherjar')|E], тропа убитых"
  POD_chargen.760.option.g: "Via Yasaq, тропа Ясы"
  POD_chargen.760.option.h: "Ноадин Полку, тропа ноада"
- POD_chargen.760.option.i: "Тарик эль-Бедуин, [Concept('ashirra', 'аширритская')|E] тропа кочевника"
+ POD_chargen.760.option.i: "Тарик эль-Бедуин, [Glossary('аширритская','game_concept_ashirra_desc')] тропа кочевника"
 
  POD_chargen.770.t: "Дорога Лилит"
  POD_chargen.770.desc: "Какую тропу Лилит вы выберете?"
@@ -756,12 +756,12 @@
  POD_chargen.860.option.b: "Via Apep"
  POD_chargen.860.option.c: "Тропа субверсии"
 
- POD_chargen.870.t: "[Concept('ashirra', 'Аширра')|E]"
- POD_chargen.870.desc: "Какую тропу [Concept('ashirra', 'Аширры')|E] вы выберете?"
- POD_chargen.870.option.a: "Тарик эль-Сама, [Concept('ashirra', 'аширритские')|E] святые братья"
- POD_chargen.870.option.b: "Тарик эль-Умма, [Concept('ashirra', 'аширритская')|E] дорога содружества"
- POD_chargen.870.option.c: "Тарик эль-Харб, [Concept('ashirra', 'аширритская')|E] Тропа рыцарства"
- POD_chargen.870.option.d: "Тарик эль-Бедуин, [Concept('ashirra', 'аширритская')|E] Тропа кочевников"
+ POD_chargen.870.t: "[Glossary('Аширра','game_concept_ashirra_desc')]"
+ POD_chargen.870.desc: "Какую тропу [Glossary('Аширры','game_concept_ashirra_desc')] вы выберете?"
+ POD_chargen.870.option.a: "Тарик эль-Сама, [Glossary('аширритские','game_concept_ashirra_desc')] святые братья"
+ POD_chargen.870.option.b: "Тарик эль-Умма, [Glossary('аширритская','game_concept_ashirra_desc')] дорога содружества"
+ POD_chargen.870.option.c: "Тарик эль-Харб, [Glossary('аширритская','game_concept_ashirra_desc')] Тропа рыцарства"
+ POD_chargen.870.option.d: "Тарик эль-Бедуин, [Glossary('аширритская','game_concept_ashirra_desc')] Тропа кочевников"
  POD_chargen.870.option.e: "Тарик эль-Алаам"
  #POD_chargen.790.option.h: "Tariq el-Atham, Path of Bones"
 
@@ -1023,7 +1023,7 @@
  POD_chargen.1500.option.e: "Возможно, я не [Select_CString(ROOT.Char.IsFemale, 'охотница', 'охотник' )]..."
 
  POD_chargen.1620.t: "Дела при дворе"
- POD_chargen.1620.desc: "Дворы - руководящие органы [GetTrait('kueijin').GetName( GetNullCharacter )|l] в регионе. Многие дворы используют тайные общества, банды и бюрократические органы в качестве пешек и дымовой завесы, которые в совокупности называются «Алыми ширмами».\n\nТрадиционно основные дворы известны как Пять августейших дворов. Белый тигр правит Тибетом, Таримом и Гималаями, Алый феникс правит Юго-Восточной Азией, Жёлтый император правит Китаем, Черная черепаха скачет по степям, а Лазурный дракон управляет Кореей и Японией.\nСуществует ещё много второстепенных дворов, которые подражают своим более престижным аналогам. Даже те, которые отказываются от главенства Пяти, как правило, организованы подобным образом, настолько велико культурное влияние, которое они оказывали на [Concept('kuei_jin', 'куэй-дзин')|E] на протяжении веков."
+ POD_chargen.1620.desc: "Дворы - руководящие органы [GetTrait('kueijin').GetName( GetNullCharacter )|l] в регионе. Многие дворы используют тайные общества, банды и бюрократические органы в качестве пешек и дымовой завесы, которые в совокупности называются «Алыми ширмами».\n\nТрадиционно основные дворы известны как Пять августейших дворов. Белый тигр правит Тибетом, Таримом и Гималаями, Алый феникс правит Юго-Восточной Азией, Жёлтый император правит Китаем, Черная черепаха скачет по степям, а Лазурный дракон управляет Кореей и Японией.\nСуществует ещё много второстепенных дворов, которые подражают своим более престижным аналогам. Даже те, которые отказываются от главенства Пяти, как правило, организованы подобным образом, настолько велико культурное влияние, которое они оказывали на [Glossary('куэй-дзин','game_concept_kuei_jin_desc')] на протяжении веков."
  POD_chargen.1620.option.a: "Интересно."
  #POD_chargen.1620.option.b: "Возможно, я не служу августейшим дворам."
 
@@ -1328,10 +1328,10 @@
  POD_charjoin.1000.option.d: "Купала."
  POD_charjoin.1000.option.e: "Я [Select_CString(ROOT.Char.IsFemale, 'передумала', 'передумал' )]."
 
- chargen_hunter_tt: "Вторая стартовая дата, «Тёмные века: Инквизиция», рекомендована для игры этим [Concept('splat', 'видом')|E]."
- chargen_werewolf_tt: "Вторая стартовая дата, «Тёмные века: Оборотни», рекомендована для игры этим [Concept('splat', 'видом')|E]."
- chargen_fae_tt: "Третья стартовая дата, «Тёмные века: Феи», рекомендована для игры этим [Concept('splat', 'видом')|E]."
- chargen_mage_tt: "Четвёртая стартовая дата, «Тёмные века: Маги», рекомендована для игры этим [Concept('splat', 'видом')|E]."
+ chargen_hunter_tt: "Вторая стартовая дата, «Тёмные века: Инквизиция», рекомендована для игры этим #TOOLTIP:game_concept_splat_desc #E видом#!#!."
+ chargen_werewolf_tt: "Вторая стартовая дата, «Тёмные века: Оборотни», рекомендована для игры этим #TOOLTIP:game_concept_splat_desc #E видом#!#!."
+ chargen_fae_tt: "Третья стартовая дата, «Тёмные века: Феи», рекомендована для игры этим #TOOLTIP:game_concept_splat_desc #E видом#!#!."
+ chargen_mage_tt: "Четвёртая стартовая дата, «Тёмные века: Маги», рекомендована для игры этим #TOOLTIP:game_concept_splat_desc #E видом#!#!."
  chargen_mummy_tt: "Обратите внимание, что не рекомендуется играть за мумий за пределами Земли веры (Северная Африка, Восточная Африка, Ближний Восток и Древняя Персия), так как у вас не будет основного способа восстановить свои силы."
 
  POD_chargen.6000.t: "Выбор конфессии"
