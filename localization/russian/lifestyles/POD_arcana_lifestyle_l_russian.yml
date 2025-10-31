@@ -78,7 +78,7 @@
  ARCANA_SHIELD_OF_SPITE_PERK_EFFECT: "#flavor Разум демона настолько истерзан, что одна лишь попытка проникнуть в его сознание заставляет глупого нарушителя испытывать ужасную боль от отчаяния и внутреннего зла.#!"
  ARCANA_CONTAGION_MASTERY_PERK_EFFECT: "Вы можете заразить жертву выбранной хворью через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Обладая этой силой, демон постигает даже мельчайшие божественные формы жизни, способные очистить сосуд от болезни или, что еще хуже, поразить его ею.#!"
  ARCANA_SPIRIT_SIGHT_PERK_EFFECT: "$POD_can_summon_on_death_trigger_loca$\n#flavor Будучи духовными существами, даже неупокоенные мертвецы не могут укрыться от бдительного взора демона.#!"
- ARCANA_READ_THE_SIN_PERK_EFFECT: "Улучшает достоинство «[GetPerk('arcana_read_the_heart_perk').GetName(GetPlayer)]», увеличивая [Concept('planning_speed', 'скорость планирования')|E] и шанс успеха.\n#flavor Будучи порождением греха, демон может взглянуть на смертного и найти грех, который правит его сердцем.#!"
+ ARCANA_READ_THE_SIN_PERK_EFFECT: "Улучшает достоинство «[GetPerk('arcana_read_the_heart_perk').GetName(GetPlayer)]», увеличивая #TOOLTIP:game_concept_planning_speed_desc #E скорость планирования#!#! и шанс успеха.\n#flavor Будучи порождением греха, демон может взглянуть на смертного и найти грех, который правит его сердцем.#!"
  ARCANA_INCREASED_HEALTH_PERK_EFFECT: "[GetPerk('arcana_regeneration_perk').GetName(GetPlayer)] теперь происходит #V два#! раза в год.\n#flavor Зная особенности своего телосложения, демон может подтолкнуть свой сосуд к тому, что не под силу простым смертным.#!"
 
  arcana_incorporeal_form_perk_name: "Бесплотная форма"
@@ -98,7 +98,7 @@
  ARCANA_RESILIENCE_PERK_EFFECT: "#flavor Демона, владеющего этой арканой, гораздо сложнее ранить, его тело сверхъестественно устойчиво к повреждениям.#!"
  ARCANA_SPIRIT_STRIKE_PERK_EFFECT: "#flavor С помощью этой силы демон может использовать свою духовную форму, способную искалечить даже духов, и никто не спасется от его ярости.#!"
  ARCANA_HEALING_TOUCH_PERK_EFFECT: "Позволяет исцелять цель через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor С помощью силы веры смертных демон может исцелять живых, залечивая их тяжкие раны.#!"
- ARCANA_COMPEL_SIN_PERK_EFFECT: "Улучшает достоинство «[GetPerk('arcana_read_the_heart_perk').GetName(GetPlayer)]», увеличивая [Concept('planning_speed', 'скорость планирования')|E] и шанс успеха.\n#flavor С помощью этой силы демон может вселить свой грех в жертву, высвободив его из самой ее души.#!"
+ ARCANA_COMPEL_SIN_PERK_EFFECT: "Улучшает достоинство «[GetPerk('arcana_read_the_heart_perk').GetName(GetPlayer)]», увеличивая #TOOLTIP:game_concept_planning_speed_desc #E скорость планирования#!#! и шанс успеха.\n#flavor С помощью этой силы демон может вселить свой грех в жертву, высвободив его из самой ее души.#!"
  ARCANA_PRETERNATURAL_REFLEXES_PERK_EFFECT: "#flavor В этом состоянии силы демон обретает сверхъестественное восприятие о своем окружении и всегда готов вступить в бой.#!"
  ARCANA_SCRY_PERK_EFFECT: "Открывает [Concept('scheme', 'происки')|E] «[GetScheme('abduct').GetTypeName]»\n#flavor Сконцентрировавшись и назвав имя, демон может получить информацию об этом месте сосредоточения.#!"
  ARCANA_RELENTLESS_SOUL_PERK_EFFECT: "#flavor Когда демону нанесен смертельный удар, его врожденная сила может отвести от врат смерти его оболочку, «просто» лишив его сознания.#!"

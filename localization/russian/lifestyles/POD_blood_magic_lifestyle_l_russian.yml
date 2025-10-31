@@ -270,7 +270,7 @@
  DOMAIN_BREACH_PERK_EFFECT: "#weak Колдун сразу же узнает, если посторонний ступает в его владения.#!"
  FINGERS_OF_BIALOWIEZA_PERK_EFFECT: "#weak Колдун приказывает растениям заманивать в ловушку и преграждать путь незваным гостям.#!"
  GRONDRSKAS_IMPASSE_PERK_EFFECT: "#weak Колдун манипулирует растительностью, чтобы изменить путь через лес.#!"
- MOUTH_OF_DJABALEK_PERK_EFFECT: "+5 к [Concept('planning_speed', 'скорости планирования')|E] #L $pod_journeys|l$ий#! по охоте в столице.\n#weak Колдун может заманить жертву в подземную ловушку и выкачать ее кровь.#!"
+ MOUTH_OF_DJABALEK_PERK_EFFECT: "+5 к #TOOLTIP:game_concept_planning_speed_desc #E скорости планирования#!#! #TOOLTIP:game_concept_journey_desc #E странствий#!#! по охоте в столице.\n#weak Колдун может заманить жертву в подземную ловушку и выкачать ее кровь.#!"
  POD_journey_mouth_of_djabalek_perk: "У вас имеется достоинство [GetPerk('mouth_of_djabalek_perk').GetName(GetPlayer)]"
  THE_WHITE_TOWER_PERK_EFFECT: "#weak Создает белую башню из кости, которая будет служить персональным мобильным убежищем в пределах владений колдуна.#!"
 

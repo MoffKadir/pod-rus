@@ -1343,7 +1343,7 @@
  trait_golconda_seeker_desc: "Этот персонаж находится на долгом пути к #L $pod_enlightenment|l$ению#!."
  trait_golconda_seeker_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] находится на долгом пути к #L $pod_enlightenment|l$ению#!."
  trait_track_golconda_seeker: "Проницательность"
- trait_track_golconda_seeker_desc: "\nВаш [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] представляет собой процент успеха на последних этапах [Concept('journey', 'пути')|E] к Голконде ([GetTrait('golconda').GetName(GetNullCharacter)]).\n\n#X Весь прогресс теряется при впадении в неистовство, а также при совершении убийства или кражи.#!"
+ trait_track_golconda_seeker_desc: "\nВаш [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] представляет собой процент успеха на последних этапах #TOOLTIP:game_concept_journey_desc #E пути#!#! к Голконде ([GetTrait('golconda').GetName(GetNullCharacter)]).\n\n#X Весь прогресс теряется при впадении в неистовство, а также при совершении убийства или кражи.#!"
 
  TRAIT_FLAG_DESC_elder_perk_flag: "Может изучать [Concept('elder_perk','достоинства Старейшин')|E] независимо от [Concept('vampgeneration','поколения')|E]"
  TRAIT_FLAG_DESC_hungerless_flag: "[Concept('hungerless','Больше не страдает от жажды крови')|E]"
@@ -1387,7 +1387,7 @@
  trait_azhi_dahaka_scholar_desc: "Этот персонаж стремится познать Ажи Дахака, просветленное и высшее состояние бытия, которое может быть достигнуто в результате широкого использования дисциплины Изменчивости."
  trait_azhi_dahaka_scholar_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] стремится познать Ажи Дахака, просветленное и высшее состояние бытия, которое может быть достигнуто в результате широкого использования дисциплины Изменчивости."
  trait_track_azhi_dahaka_scholar: "Метаморфозис"
- trait_track_azhi_dahaka_scholar_desc: "\nВаш [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] представляет собой процент успеха на последних этапах [Concept('journey', 'пути')|E] к [GetTrait('azhi_dahaka').GetName(GetNullCharacter)]."
+ trait_track_azhi_dahaka_scholar_desc: "\nВаш [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] представляет собой процент успеха на последних этапах #TOOLTIP:game_concept_journey_desc #E пути#!#! к [GetTrait('azhi_dahaka').GetName(GetNullCharacter)]."
 
  trait_azhi_dahaka: "Ажи Дахака"
  trait_azhi_dahaka_desc: "Ажи Дахака - термин, используемый вампирами клана Цимисхи для описания просветленного и высшего состояния бытия, возможно, наступившего в результате длительного использования дисциплины Изменчивости."

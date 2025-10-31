@@ -236,7 +236,7 @@
  POD_journey_months: "месяцев"
 
 
- POD_journey_progress_base: "Базовая [planning_speed|El]"
+ POD_journey_progress_base: "Базовая #TOOLTIP:game_concept_planning_speed_desc #E скорость планирования#!#!"
 
  POD_journey_progress_diplomacy: "Ваши навыки [Concept('diplomacy', 'дипломатии')|E]"
  POD_journey_progress_diplomacy_coterie: "Навыки [Concept('diplomacy', 'дипломатии')|E]: $POD_player_coterie$"
@@ -306,7 +306,7 @@
 
  # Example text: "2 members of Brunhilde's Coterie know this ability"
  POD_journey_progress_seek_knowledge: "#V [GetPlayer.MakeScope.ScriptValue('seek_knowledge_coterie_member_count')]#! [Select_CString( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('seek_knowledge_coterie_member_count'), '(CFixedPoint)1' ), 'член', 'члена' )] котерии $POD_player_coterie$ [Select_CString( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('seek_knowledge_coterie_member_count'), '(CFixedPoint)1' ), 'знает', 'знают' )] эту способность"
- POD_journey_progress_seek_knowledge_gui: "#help [planning_speed|E] ещё больше увеличится за каждого члена вашей котерии [GetPlayer.Custom('PODCoterie')], который уже знает эту способность.#!"
+ POD_journey_progress_seek_knowledge_gui: "#help #TOOLTIP:game_concept_planning_speed_desc #E Скорость планирования#!#! ещё больше увеличится за каждого члена вашей котерии [GetPlayer.Custom('PODCoterie')], который уже знает эту способность.#!"
 
  POD_journey_progress_golconda_members: "#V [GetPlayer.MakeScope.ScriptValue('golconda_coterie_member_count')]#! [Select_CString( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('golconda_coterie_member_count'), '(CFixedPoint)1' ), 'член', 'члена' )] котерии $POD_player_coterie$ [Select_CString( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('golconda_coterie_member_count'), '(CFixedPoint)1' ), 'имеет', 'имеют' )] свойство «[GetTrait('golconda').GetName(GetNullCharacter)]»"
  POD_journey_progress_golconda_seeker_members: "#V [GetPlayer.MakeScope.ScriptValue('golconda_seeker_coterie_member_count')]#! [Select_CString( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('golconda_seeker_coterie_member_count'), '(CFixedPoint)1' ), 'член', 'члена' )] котерии $POD_player_coterie$ [SelectLocalization( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('golconda_seeker_coterie_member_count'), '(CFixedPoint)1' ), 'POD_golconda_seeker_singular', 'POD_golconda_seeker_plural' )]"

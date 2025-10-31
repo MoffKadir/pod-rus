@@ -136,7 +136,7 @@
 
  ### Custom alerts
 
- pod_alert_can_create_coterie: "#T Вы можете создать котерию ([GetPlayer.Custom('PODCoterieNoTooltip')])#!\nПринадлежность к котерии ([GetPlayer.Custom('PODCoterie')]) облегчит достижение успеха в ваших #L $pod_journeys|l$иях#!.\n\n#I Нажмите, чтобы создать котерию ([GetPlayer.Custom('PODCoterieNoTooltip')]) сейчас.#!\n$RIGHT_CLICK_DISMISS$"
+ pod_alert_can_create_coterie: "#T Вы можете создать котерию ([GetPlayer.Custom('PODCoterieNoTooltip')])#!\nПринадлежность к котерии ([GetPlayer.Custom('PODCoterie')]) облегчит достижение успеха в ваших #TOOLTIP:game_concept_journey_desc #E странствиях#!#!.\n\n#I Нажмите, чтобы создать котерию ([GetPlayer.Custom('PODCoterieNoTooltip')]) сейчас.#!\n$RIGHT_CLICK_DISMISS$"
 
  pod_alert_can_hunt_in_capital: "#T Вы можете отправиться в странствие#!\nПоскольку вы - вампир, вы можете #bold $hunt_in_capital_name$#!, чтобы утолить ваш $pod_hunger_with_icon$ и получить [Concept('lifestyle_experience', 'опыт пути')|E].\n\nОхота на #bold крестьян#! бесплатна.\n\n#I Нажмите, чтобы открыть окно #TOOLTIP:game_concept_journey_desc #E странствия#!#!.#!\n$RIGHT_CLICK_DISMISS$"
 
@@ -212,7 +212,7 @@
 
  fetters_and_passions4: "Арканой"
  lesson_fetters_and_passions4: "Арканой"
- lesson_fetters_and_passions4_desc: "Несмотря на то, что в мире живых они не чувствуют себя спокойно, #L [GetTrait('wraith').GetName(GetNullCharacter)|l]#! не беззащитны, так как имеют доступ к [Concept('arcanoi_lifestyle', 'Арканоям')|E], силам мёртвых.\n\nЧтобы использовать их, вам нужно изучить их, есть два способа сделать это: первый - обучиться им из [Concept('friend', 'дружеских')|E] или других положительных отношений. Второй - во время исследования #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!, встретив другого #L [GetTrait('wraith').GetName(GetNullCharacter)|l]а#!, готового обучить вас одному из них.\n\nДля использования каждого арканоя требуется пафос, а пафос приобретается через страсти, как объяснялось ранее.\n\nКаждый арканой также открывает [Concept('domicile_building', 'постройки')|E], дающие больше бонусов."
+ lesson_fetters_and_passions4_desc: "Несмотря на то, что в мире живых они не чувствуют себя спокойно, #L [GetTrait('wraith').GetName(GetNullCharacter)|l]#! не беззащитны, так как имеют доступ к #TOOLTIP:game_concept_arcanoi_lifestyle_desc #E арканоям#!#!, силам мёртвых.\n\nЧтобы использовать их, вам нужно изучить их, есть два способа сделать это: первый - обучиться им из [Concept('friend', 'дружеских')|E] или других положительных отношений. Второй - во время исследования #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!, встретив другого #L [GetTrait('wraith').GetName(GetNullCharacter)|l]а#!, готового обучить вас одному из них.\n\nДля использования каждого арканоя требуется пафос, а пафос приобретается через страсти, как объяснялось ранее.\n\nКаждый арканой также открывает [Concept('domicile_building', 'постройки')|E], дающие больше бонусов."
 
  action_can_craft_alert: "Ремесло восстановилось!"
  action_can_craft_alert_desc: "Ремесло восстановилось!"
