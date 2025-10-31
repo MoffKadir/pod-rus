@@ -177,10 +177,10 @@
 
  trait_tremere: "Тремер"
  trait_tremere_india: "Тримира"
- trait_tremere_desc: "[Glossary('Клан','game_concept_Clan_desc')] ученых, сосредоточенных на #TOOLTIP:game_concept_bloodsorcery_desc #E кровавом чародействе#!#!. Их порицают за их предполагаемое нападение на [Concept('antediluvian', 'Допотопного')|E] Саулота и боятся за сильную дисциплину и сплоченность [Glossary('клан','game_concept_Clan_desc')], неслыханную в других частях [Glossary('каинитского','game_concept_cainite_desc')] общества."
+ trait_tremere_desc: "[Glossary('Клан','game_concept_Clan_desc')] ученых, сосредоточенных на #TOOLTIP:game_concept_bloodsorcery_desc #E кровавом чародействе#!#!. Их порицают за их предполагаемое нападение на [Glossary('допотопного','game_concept_antediluvian_desc')] Саулота и боятся за сильную дисциплину и сплоченность [Glossary('клан','game_concept_Clan_desc')], неслыханную в других частях [Glossary('каинитского','game_concept_cainite_desc')] общества."
 
  trait_truebrujah: "Истинные Бруха"
- trait_truebrujah_desc: "Линия крови [Glossary('клан','game_concept_Clan_desc')] Бруха, утверждающая, что является потомками изначального [Concept('antediluvian', 'допотопного')|E] основателя клана, а не его #L $pod_diablerist|l$ста#!/ребёнка Троиль. Истинные Бруха отличаются спокойным, отрешённым поведением."
+ trait_truebrujah_desc: "Линия крови [Glossary('клан','game_concept_Clan_desc')] Бруха, утверждающая, что является потомками изначального [Glossary('допотопного','game_concept_antediluvian_desc')] основателя клана, а не его #L $pod_diablerist|l$ста#!/ребёнка Троиль. Истинные Бруха отличаются спокойным, отрешённым поведением."
 
  trait_tzimisce: "Цимисхи"
  trait_tzimisce_desc: "[Glossary('Клан','game_concept_Clan_desc')] феодального этикета и садистского формирования плоти."
@@ -326,10 +326,10 @@
  trait_obeahadvanced_desc: "Обеах - уникальная [discipline|El] Салюбри, также известная как Валерен: Путь целителя.\n\nОбеах возникло благодаря Саулоту, который во время своих путешествий по Востоку научился у [GetTrait('kueijin').GetName( GetNullCharacter )] использованию Драконьей жемчужины. При изучении Обеах в середине лба появляется третий глаз."
 
  trait_obfuscate: "Затемнение"
- trait_obfuscate_desc: "Затемнение - это [discipline|El], которая позволяет вампирам скрывать себя, обманывать разум других или заставлять их игнорировать то, что обладатель желает оставить невидимым.\n\nЗатемнение - это часть проклятия Каина, наложенного на #L $pod_antediluvians$ых#!, когда он вычеркнул их из творения."
+ trait_obfuscate_desc: "Затемнение - это [discipline|El], которая позволяет вампирам скрывать себя, обманывать разум других или заставлять их игнорировать то, что обладатель желает оставить невидимым.\n\nЗатемнение - это часть проклятия Каина, наложенного на [Glossary('допотопных','game_concept_antediluvian_desc')], когда он вычеркнул их из творения."
 
  trait_obfuscateadvanced: "Мастерство затемнения"
- trait_obfuscateadvanced_desc: "Затемнение - это [discipline|El], которая позволяет вампирам скрывать себя, обманывать разум других или заставлять их игнорировать то, что обладатель желает оставить невидимым.\n\nЗатемнение - это часть проклятия Каина, наложенного на #L $pod_antediluvians$ых#!, когда он вычеркнул их из творения. Частые пользователи [Glossary('дисциплины','game_concept_discipline_desc')] оказываются оторванными от общества, никогда не участвуя в социальных взаимодействиях, а только наблюдая."
+ trait_obfuscateadvanced_desc: "Затемнение - это [discipline|El], которая позволяет вампирам скрывать себя, обманывать разум других или заставлять их игнорировать то, что обладатель желает оставить невидимым.\n\nЗатемнение - это часть проклятия Каина, наложенного на [Glossary('допотопных','game_concept_antediluvian_desc')], когда он вычеркнул их из творения. Частые пользователи [Glossary('дисциплины','game_concept_discipline_desc')] оказываются оторванными от общества, никогда не участвуя в социальных взаимодействиях, а только наблюдая."
 
  trait_obtenebration: "Власть над Тенью"
  trait_obtenebration_desc: "Считается, что [obtenebration|E] ещё больше проклинает вампира, который его использует, еще больше отдаляя себя от Божьей благодати и погружаясь в темную тягу Бездны. По этой причине его сторонятся как животные, так и люди. Неестественная тьма, вызываемая Властью над Тенью, чрезвычайно пугает смертных, животных и даже других [Glossary('каинитов','game_concept_cainite_desc')], не привыкших к её использованию."
@@ -666,7 +666,7 @@
  trait_nagaraja_desc: "Нагараджа - причудливая линия крови плотоядных вампиров, которых боятся сородичи со всех сторон Джихада."
 
  trait_hecata: "Геката"
- trait_hecata_desc: "Они не являются полностью целостным [Glossary('кланом','game_concept_Clan_desc')], происходящим от одного [Concept('antediluvian', 'Допотопного')|E] и непрерывной линии крови, но состоят из Джованни и остатков старого [Glossary('клана','game_concept_Clan_desc')] Каппадокийцев и родственных им линий крови; а также Нагараджа, несмотря на отсутствие связи с [Concept('antediluvian', 'Допотопным')|E]."
+ trait_hecata_desc: "Они не являются полностью целостным [Glossary('кланом','game_concept_Clan_desc')], происходящим от одного [Glossary('допотопного','game_concept_antediluvian_desc')] и непрерывной линии крови, но состоят из Джованни и остатков старого [Glossary('клана','game_concept_Clan_desc')] Каппадокийцев и родственных им линий крови; а также Нагараджа, несмотря на отсутствие связи с [Glossary('допотопным','game_concept_antediluvian_desc')]."
 
  trait_impundulu: "Импундулу"
  trait_impundulu_desc: "Линия крови вампиров, связанная с ковеном смертных ведьм, считается одним из наследий Лайбон. В жизни Импундулу был могущественным некромантом, женатым на столь же могущественной колдунье по имени Бомкази."
@@ -1135,7 +1135,7 @@
  trait_golem_desc: "Големы - крупные гуманоидные автоматоны, созданные с помощью колдовства, известные своей нестабильностью и склонностью к неистовству."
 
  trait_risen: "Восставший"
- trait_risen_desc: "Восставший - термин, используемый для описания призрака, которому удалось вернуться в свое тело, чтобы ходить среди живых в [Concept('skinlands', 'Землях Плоти')|E]."
+ trait_risen_desc: "Восставший - термин, используемый для описания призрака, которому удалось вернуться в свое тело, чтобы ходить среди живых в [Glossary('землях Плоти','game_concept_skinlands_desc')]."
  TRAIT_FLAG_DESC_cannot_resolve_fetters: "Нельзя разрешать #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!"
 
  trait_spectre: "Спектр"
@@ -1155,7 +1155,7 @@
  trait_shade: "Оттенок"
  trait_shade_desc: "Среди самых могущественных спектров, оттенки - это бывшие призраки, которые были брошены в [UmbraGlossaryLocalized('pod_realm_tempest','Бурю')], попали в Вихрь или Великий вихрь или потеряли себе во время Страданий. Их хрупкие Разумы полностью уничтожаются [UmbraGlossaryLocalized('oblivion','Забвением')], оставляя лишь их тени, полные ненависти и темных страстей и постоянно контролирующие их. Их метод создания дал им прозвище - Дети [UmbraGlossaryLocalized('oblivion','Забвения')]."
  trait_apparition: "Видение"
- trait_apparition_desc: "Видение - это, за неимением лучшего термина, среднее звено спектров - доппельгангеры и умертвия, которые начали эволюционировать в нефраков. В результате их трудно разглядеть за вызванной [UmbraGlossaryLocalized('oblivion','Забвением')] мутацией. Учитывая, что этой личности уже давно нет, [Concept('Corpus', 'корпус')|E] отражает её саму."
+ trait_apparition_desc: "Видение - это, за неимением лучшего термина, среднее звено спектров - доппельгангеры и умертвия, которые начали эволюционировать в нефраков. В результате их трудно разглядеть за вызванной [UmbraGlossaryLocalized('oblivion','Забвением')] мутацией. Учитывая, что этой личности уже давно нет, #TOOLTIP:game_concept_Corpus_desc #E корпус#!#! отражает её саму."
  trait_doppelganger: "Доппельгангер"
  trait_doppelganger_desc: "Доппельгангеры, также известные как Поглощённые Тенью, выглядят так же, как и обычные призраки, только бледнее и тоньше. На их телах часто видны следы смерти, хотя использование Ваяния может скрыть это. Единственный признак, по которому можно догадаться, - это то, что в их глазах всегда каким-то образом видна Тень."
  trait_mortwight: "Умертвие"
@@ -1181,7 +1181,7 @@
  trait_arcanos_fatalism_desc: "Обладатели дара Фатализма способны заглянуть в чужое прошлое или будущее, а также прочитать конечную судьбу призрака."
 
  trait_arcanos_flux: "Поток"
- trait_arcanos_flux_desc: "Поток влияет на структуру и реакцию материи в [Concept('skinlands', 'Землях Плоти')|E], а также воздействует на функционирование реликвий призраков."
+ trait_arcanos_flux_desc: "Поток влияет на структуру и реакцию материи в [Glossary('землях Плоти','game_concept_skinlands_desc')], а также воздействует на функционирование реликвий призраков."
 
  trait_arcanos_inhabit: "Вселение"
  trait_arcanos_inhabit_desc: "Призраки, одаренные способностью Вселения, могут манипулировать неодушевленными предметами и управлять ими."
@@ -1199,7 +1199,7 @@
  trait_arcanos_mnemosynis_desc: "Пользователи Мнезиса могут отслеживать и читать воспоминания других."
 
  trait_arcanos_moliate: "Ваяние"
- trait_arcanos_moliate_desc: "Те, кто ваяют, способны изменять свой [Concept('Corpus', 'корпус')|E] и [Concept('Corpus', 'корпусы')|E] других, придавая им увлекательные, а иногда и ужасающие формы."
+ trait_arcanos_moliate_desc: "Те, кто ваяют, способны изменять свой #TOOLTIP:game_concept_Corpus_desc #E корпус#!#! и #TOOLTIP:game_concept_Corpus_desc #E корпусы#!#! других, придавая им увлекательные, а иногда и ужасающие формы."
 
  trait_arcanos_outrage: "Гнев"
  trait_arcanos_outrage_desc: "Гнев воздействует на [Concept('skinlands', 'Земли Плоти')|E], проявляя волю призрака в виде мощной силы."
@@ -1220,7 +1220,7 @@
  trait_arcanos_kinesis_desc: "Призраки, одаренные Кинетицизмом, могут манипулировать неодушевленными предметами и управлять ими."
 
  trait_barghest: "Баргест"
- trait_barghest_desc: "Баргесты, также называемые ищейками, - это призраки, которые были преобразованы в чудовищные формы и «лоботомированы» путем прикрепления к их [Concept('Corpus', 'корпусу')|E] специально подготовленной морды из стигийского железа.."
+ trait_barghest_desc: "Баргесты, также называемые ищейками, - это призраки, которые были преобразованы в чудовищные формы и «лоботомированы» путем прикрепления к их #TOOLTIP:game_concept_Corpus_desc #E корпусу#!#! специально подготовленной морды из стигийского железа.."
  trait_ferryman: "Паромщик"
  trait_ferryman_desc: "С помощью ритуала Разделения Тень и Разум этого персонажа навсегда разделены, создавая Пасифаю."
  TRAIT_FLAG_DESC_lose_shadow: "Больше не владеет тенью"
@@ -1301,7 +1301,7 @@
 
  TRAIT_FLAG_DESC_immortality: "#P @goodhealth_icon!Бессмертие#!"
  TRAIT_FLAG_DESC_cannot_heal_naturaly: "#N @neardeath_icon!Не может исцеляться естественным путём#!"
- TRAIT_FLAG_DESC_torpor_heal: "Преобразовывает [Concept('POD_aggravated_damage', 'серьёзный урон')|E] в [Concept('POD_superficial_damage', 'поверхностный')|E], либо исцеляет [Concept('POD_superficial_damage', 'поверхностный урон')|E] каждые 2 года"
+ TRAIT_FLAG_DESC_torpor_heal: "Преобразовывает #TOOLTIP:game_concept_POD_aggravated_damage_desc #E серьёзный урон#!#! в #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностный#!#!, либо исцеляет #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностный урон#!#! каждые 2 года"
 
 
 
@@ -1425,9 +1425,9 @@
  trait_track_ashen_cult_desc: "#bold Вы можете улучшить этот путь развития, используя одноименное решение. Оно позволяет вам взаимодействовать с графством, в котором находится ваш лагерь, различными способами через событие.#!\nПророки, ересиархи, чудотворцы... Мир Тьмы полон людей, будь то смертные или нет, которые ищут истину и готовы поверить в харизматичную личность, доносящую ее (свою версию)."
 
 
- trait_POD_wounded_shared_desc: "[POD_health_track|E]:\n$POD_trait_health_track$\n"
+ trait_POD_wounded_shared_desc: "#TOOLTIP:game_concept_POD_health_track_desc #E Состояние здоровья#!#!:\n$POD_trait_health_track$\n"
  # 4 empty health track boxes for NullCharacter tooltips since that's the minimum
- trait_POD_wounded_nocharacter_shared_desc: "[POD_health_track|E]:\n$POD_undamaged_box$ $POD_undamaged_box$ $POD_undamaged_box$ $POD_undamaged_box$\n"
+ trait_POD_wounded_nocharacter_shared_desc: "#TOOLTIP:game_concept_POD_health_track_desc #E Состояние здоровья#!#!:\n$POD_undamaged_box$ $POD_undamaged_box$ $POD_undamaged_box$ $POD_undamaged_box$\n"
  POD_trait_health_track: "[TraitWoundBox('(CFixedPoint)1')] [TraitWoundBox('(CFixedPoint)2')] [TraitWoundBox('(CFixedPoint)3')] [TraitWoundBox('(CFixedPoint)4')] [TraitWoundBox('(CFixedPoint)5')] [TraitWoundBox('(CFixedPoint)6')] [TraitWoundBox('(CFixedPoint)7')] [TraitWoundBox('(CFixedPoint)8')] [TraitWoundBox('(CFixedPoint)9')] [TraitWoundBox('(CFixedPoint)10')] [TraitWoundBox('(CFixedPoint)11')] [TraitWoundBox('(CFixedPoint)12')] [TraitWoundBox('(CFixedPoint)13')] [TraitWoundBox('(CFixedPoint)14')] [TraitWoundBox('(CFixedPoint)15')] [TraitWoundBox('(CFixedPoint)16')] [TraitWoundBox('(CFixedPoint)17')] [TraitWoundBox('(CFixedPoint)18')] [TraitWoundBox('(CFixedPoint)19')] [TraitWoundBox('(CFixedPoint)20')]"
  POD_character_health_track_line1: "[CharacterWoundBox('(CFixedPoint)1')][CharacterWoundBox('(CFixedPoint)2')][CharacterWoundBox('(CFixedPoint)3')][CharacterWoundBox('(CFixedPoint)4')][CharacterWoundBox('(CFixedPoint)5')][CharacterWoundBox('(CFixedPoint)6')][CharacterWoundBox('(CFixedPoint)7')][CharacterWoundBox('(CFixedPoint)8')][CharacterWoundBox('(CFixedPoint)9')][CharacterWoundBox('(CFixedPoint)10')]"
  POD_character_health_track_line2: "[CharacterWoundBox('(CFixedPoint)11')][CharacterWoundBox('(CFixedPoint)12')][CharacterWoundBox('(CFixedPoint)13')][CharacterWoundBox('(CFixedPoint)14')][CharacterWoundBox('(CFixedPoint)15')][CharacterWoundBox('(CFixedPoint)16')][CharacterWoundBox('(CFixedPoint)17')][CharacterWoundBox('(CFixedPoint)18')][CharacterWoundBox('(CFixedPoint)19')][CharacterWoundBox('(CFixedPoint)20')]"

@@ -18,8 +18,8 @@
 
 
  POD_terrain_health_advantage: "Исцеляет дополнительно"
- POD_terrain_health_advantage_suffix: " [Concept('POD_superficial_damage', 'поверхностный урон')|E] при естественном исцелении"
- POD_terrain_health_min_combat_roll: "Вероятность [Concept('soak_damage', 'впитывания')|E]"
+ POD_terrain_health_advantage_suffix: " #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностный урон#!#! при естественном исцелении"
+ POD_terrain_health_min_combat_roll: "Вероятность #TOOLTIP:game_concept_soak_damage_desc #E впитывания#!#!"
  POD_terrain_health_cancel_negative_supply: "Нельзя умереть от ран"
 
 

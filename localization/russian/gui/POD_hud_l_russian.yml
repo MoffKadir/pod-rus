@@ -1,8 +1,8 @@
 ﻿l_russian:
  POD_hint_bloodpotency: "\n\nВаша [blood_potency|El] - [GetPlayer.Custom('PODBloodPotency')]."
 
- POD_hint_masquerade_maximum: "#I Как только ваше #L $pod_masquerade_exposure_with_icon$ие Маскарада#! увеличится, вы можете нажать на эту шкалу, чтобы уменьшить его.#!"
- POD_hint_masquerade_valid: "#I Нажмите на эту шкалу, чтобы уменьшить своё #L $pod_masquerade_exposure_with_icon$ие Маскарада#!.#!"
+ POD_hint_masquerade_maximum: "#I Как только ваше #TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! увеличится, вы можете нажать на эту шкалу, чтобы уменьшить его.#!"
+ POD_hint_masquerade_valid: "#I Нажмите на эту шкалу, чтобы уменьшить своё #TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#!.#!"
  POD_hint_masquerade_invalid_no_masquerade: "#X $no_masquerade$#!"
  POD_hint_masquerade_invalid_cap: "#X $POD_cover_masquerade_interaction_cap$.#!"
  POD_hint_masquerade_invalid_cooldown: "#X Взаимодействие, чтобы скрыть #TOOLTIP:game_concept_the_masquerade_desc #E Маскарад#!#!, в настоящее время недоступно.#!"

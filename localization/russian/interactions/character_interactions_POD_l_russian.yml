@@ -70,8 +70,8 @@
  demand_conversion_government_interaction_desc: "Потребовать, чтобы [recipient.GetShortUINameNoTooltip] [Select_CString(recipient.IsFemale, 'приняла', 'принял' )] вашу [Concept('government', 'форму правления')|E]"
 
  POD_heal_scarred: "Шрамы"
- POD_heal_wounded: "$POD_damage_box$ [POD_superficial_damage|E]"
- POD_heal_aggravated_wound: "$POD_aggravated_damage_box$ [POD_aggravated_damage|E]"
+ POD_heal_wounded: "$POD_damage_box$ #TOOLTIP:game_concept_POD_superficial_damage_desc #E Поверхностный урон#!#!"
+ POD_heal_aggravated_wound: "$POD_aggravated_damage_box$ #TOOLTIP:game_concept_POD_aggravated_damage_desc #E Серьёзный урон#!#!"
  POD_heal_maimed: "Увечье"
  POD_heal_blind: "Слепота"
  POD_heal_one_eyed: "Частичная слепота"

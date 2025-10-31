@@ -1,32 +1,23 @@
 ﻿l_russian:
-
- POD_animals_maa: "[POD_animals_maa|E]"
-
- POD_legendary_maa: "[POD_legendary_maa|E]"
-
- POD_demonic_maa: "[POD_demonic_maa|E]"
-
- POD_spirit_maa: "[POD_spirit_maa|E]"
-
- POD_fera_maa: "[POD_fera_maa|E]"
-
- POD_gargoyle_maa: "[POD_gargoyle_maa|E]"
-
- POD_ghoul_maa: "[POD_ghoul_maa|E]"
-
- POD_plasmic_maa: "[POD_plasmic_maa|E]"
-
- POD_wraith_maa: "[POD_wraith_maa|E]"
-
- POD_vampire_maa: "[POD_vampire_maa|E]"
-
- POD_construct_maa: "[POD_construct_maa|E]"
-
- POD_faerie_maa: "[POD_faerie_maa|E]"
-
- POD_chimera_maa: "[POD_chimera_maa|E]"
-
- POD_bygones_maa: "[POD_bygones_maa|E]"
+ # Yes, these aren't real game_concepts.
+ # They're tooltips formatted to look like game_concepts.
+ # Send complaint letters to Paradox so they fix the CTDs from game_concept hash collisions.
+ # In the meantime, we're trying to keep game_concepts to a minimum to prevent these crashes, so #TOOLTIP it is.
+ # Let's be honest, no one reads these anyway.
+ POD_animals_maa: "#TOOLTIP:game_concept_POD_animals_maa_desc #E Звери#!#!"
+ POD_legendary_maa: "#TOOLTIP:game_concept_POD_legendary_maa_desc #E Легенды#!#!"
+ POD_demonic_maa: "#TOOLTIP:game_concept_POD_demonic_maa_desc #E Демоны#!#!"
+ POD_spirit_maa: "#TOOLTIP:game_concept_POD_spirit_maa_desc #E Духи#!#!"
+ POD_fera_maa: "#TOOLTIP:game_concept_POD_fera_maa_desc #E Фера#!#!"
+ POD_gargoyle_maa: "#TOOLTIP:game_concept_POD_gargoyle_maa_desc #E Гаргульи#!#!"
+ POD_ghoul_maa: "#TOOLTIP:game_concept_POD_ghoul_maa_desc #E Гули#!#!"
+ POD_plasmic_maa: "#TOOLTIP:game_concept_POD_plasmic_maa_desc #E Плазмоиды#!#!"
+ POD_wraith_maa: "#TOOLTIP:game_concept_POD_wraith_maa_desc #E Призраки#!#!"
+ POD_vampire_maa: "#TOOLTIP:game_concept_POD_vampire_maa_desc #E Вампиры#!#!"
+ POD_construct_maa: "#TOOLTIP:game_concept_POD_construct_maa_desc #E Конструкты#!#!"
+ POD_faerie_maa: "#TOOLTIP:game_concept_POD_faerie_maa_desc #E Феи#!#!"
+ POD_chimera_maa: "#TOOLTIP:game_concept_POD_chimera_maa_desc #E Оживлённая химера#!#!"
+ POD_bygones_maa: "#TOOLTIP:game_concept_POD_bygones_maa_desc #E Ушедшие#!#!"
 
  ZMEI_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('zmei').GetName]"
  DEMONS_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('demons').GetName]"
@@ -45,7 +36,7 @@
  CULTISTS_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('ghouled_cultists').GetName]"
  SNAKES_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('snakes').GetName]"
  THINBLOODS_LEGACY_PERK_UNLOCK_DESC: "Доступны [men_at_arms|El] — [GetMaA('thinbloods').GetName]"
- NEED_MASSREGNANT_TO_UNLOCK_MAA_TEXT: "#Weak Чтобы открыть профессионалов типа «[POD_ghoul_maa|E]», вам нужно сперва воспользоваться [Concept('character_interaction', 'взаимодействием персонажа')|E] «Открыть [Concept('men_at_arms', 'профессионалов')|E]».#!"
+ NEED_MASSREGNANT_TO_UNLOCK_MAA_TEXT: "#Weak Чтобы открыть профессионалов типа «#TOOLTIP:game_concept_POD_ghoul_maa_desc #E Гули#!#!», вам нужно сперва воспользоваться [Concept('character_interaction', 'взаимодействием персонажа')|E] «Открыть [Concept('men_at_arms', 'профессионалов')|E]».#!"
  NEED_MASSSIRE_TO_UNLOCK_MAA_TEXT: "#Weak Чтобы открыть профессионалов-вампиров, вам нужно сперва воспользоваться [Concept('character_interaction', 'взаимодействием персонажа')|E] «Открыть [Concept('men_at_arms', 'профессионалов')|E]».#!"
 
  ghouls: "Отборные гули"
@@ -471,7 +462,7 @@
  demon_jailer: "Демонические тюремщики"
  demon_jailer_flavor: "#F Тюремщики, мучители и надзиратели Ада использовали призрачную силу Ваяния, чтобы превратить себя в демонов из легенд.#!"
  phantasies: "Фантазии"
- phantasies_flavor: "#F Это существа, имеющие сильное сходство с живыми существами, такими как кит или птица. Фантазии могут быть достаточно разумны, чтобы общаться с ними, и иногда помогают призракам в [UmbraGlossaryLocalized('pod_realm_tempest','Буре')]. Как и животные в [Concept('skinlands', 'Землях Плоти')|E], некоторые животные враждебны к людям, некоторые дружелюбны, а некоторых лучше оставить в покое.#!"
+ phantasies_flavor: "#F Это существа, имеющие сильное сходство с живыми существами, такими как кит или птица. Фантазии могут быть достаточно разумны, чтобы общаться с ними, и иногда помогают призракам в [UmbraGlossaryLocalized('pod_realm_tempest','Буре')]. Как и животные в [Glossary('землях Плоти','game_concept_skinlands_desc')], некоторые животные враждебны к людям, некоторые дружелюбны, а некоторых лучше оставить в покое.#!"
  deliriums: "Делириумы"
  deliriums_flavor: "#F Плазмоиды, которые выглядят как модифицированные животные, например крылатые лошади или кошки с антеннами. Делириумы, как правило, более разумны и могущественны, чем фантазии.#!"
  legendaries: "Легендарии"
@@ -497,7 +488,7 @@
  mourners: "Плакальщики"
  mourners_flavor: "#F С первого взгляда Скорбящие напоминают замаскированные фигуры Паромщиков. Однако вместо фонарей и косы Скорбящие носят массу тяжелых цепей. Их лиц не видно, их окутывает тьма плащей. Они всегда путешествуют стаями, причем все Скорбящие в определенной группе прикованы к самому могущественному из них. В отличие от многих существ [UmbraGlossaryLocalized('pod_realm_tempest','Бури')], Скорбящие, похоже, всегда имеют конкретную цель, когда появляются, и идут из [UmbraGlossaryLocalized('pod_realm_tempest','Бури')] в [UmbraGlossaryLocalized('shadowlands','Земли теней')].#!"
  shroudrippers: "Терзатели Савана"
- shroudrippers_flavor: "#F Терзатели Савана - одни из самых неуловимых из Вистимму, их трудно заметить и почти невозможно поймать и изучить. Несмотря на то, что их еще предстоит детально изучить, по общему мнению, Терзатели Савана имеют маленькое, компактное тело и тонкую паутину, натянутую между десятью «пальцами», которые позволяют им летать. На перепонке также расположены небольшие струи, из которых может брызгать кислота, а пальцы заканчиваются очень острыми когтями. Однако Терзатели Савана очень хрупки: уничтоженные, чей [Concept('Corpus', 'корпус')|E] удалось восстановить, за несколько секунд превращаются в бесформенную кучу плазмы.#!"
+ shroudrippers_flavor: "#F Терзатели Савана - одни из самых неуловимых из Вистимму, их трудно заметить и почти невозможно поймать и изучить. Несмотря на то, что их еще предстоит детально изучить, по общему мнению, Терзатели Савана имеют маленькое, компактное тело и тонкую паутину, натянутую между десятью «пальцами», которые позволяют им летать. На перепонке также расположены небольшие струи, из которых может брызгать кислота, а пальцы заканчиваются очень острыми когтями. Однако Терзатели Савана очень хрупки: уничтоженные, чей #TOOLTIP:game_concept_Corpus_desc #E корпус#!#! удалось восстановить, за несколько секунд превращаются в бесформенную кучу плазмы.#!"
  tindelhounds: "Тиндельские гончие"
  tindelhounds_flavor: "#F Как видно из названия, Тиндельские гончие внешне напоминают собак. Однако из-за скверны [UmbraGlossaryLocalized('oblivion','Забвения')] у этих собак гораздо больше голов, ртов и глаз, чем у обычных собак; наиболее замечено десять ртов и пятнадцать глаз. Они также гораздо крупнее обычных собак - около 15 футов в плечах. Кроме пасти и размера, у них колючие крючья вместо шерсти, они испускают зеленый огонь из пасти и оставляют за собой копоть. Как будто этого недостаточно, Тиндельские гончие еще и довольно умны, они способны быстро адаптироваться к необычным ситуациям. К счастью для призраков, большинство из них избегают [UmbraGlossaryLocalized('shadowlands','Земель теней')], живя глубоко внутри [UmbraGlossaryLocalized('pod_realm_tempest','Бури')].#!"
  shadow_beasts: "Теневые звери"
@@ -732,7 +723,7 @@
  terracottan_guards_maa: "Терракотовые защитники"
  terracottan_guards_maa_flavor: "#F Лучшее из того, что когда-то было величайшей армией, когда-либо виденной, превратилось в фигурки, которыми владели по воле потомков Восьми бессмертных.#!"
  ravnos_kshatriya_maa: "Кшатрии Равнос"
- ravnos_kshatriya_maa_flavor: "#F Каста воинов Равнос была втянута в тотальную войну с $pod_asuratizayya$, сколько себя помнит. Это сделало их сильными и дисциплинированными бойцами.#!"
+ ravnos_kshatriya_maa_flavor: "#F Каста воинов Равнос была втянута в тотальную войну с [Glossary('Асуратизайя','game_concept_kuei_jin_desc')], сколько себя помнит. Это сделало их сильными и дисциплинированными бойцами.#!"
  lamia_warmaidens_maa: "Горгоны Ламий"
  lamia_warmaidens_maa_flavor: "#F Воительницы Лилит яростно сражаются, защищая своих подопечных из Каппадокийцев или во славу Темной Матери.#!"
  agitators_maa: "Подстрекатели Бруха"

@@ -25,7 +25,7 @@
  POD_blood_heal_scarred: "Шрамы"
  POD_blood_heal_disfigured: "Обезображенность"
 
- POD_blood_heal_explanation: "#weak Поскольку у вас имеется [THIS.Char.Custom('PODBloodPotency')], вы можете сразу исцелить [THIS.ScriptValue('POD_blood_heal_value')|V0] ед. [Concept('POD_superficial_damage', 'поверхностного урона')|E].#!"
+ POD_blood_heal_explanation: "#weak Поскольку у вас имеется [THIS.Char.Custom('PODBloodPotency')], вы можете сразу исцелить [THIS.ScriptValue('POD_blood_heal_value')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#!.#!"
 
  POD_find_mortals: "Поиск смертных"
  POD_find_mortals_action: "Поиск смертных"
@@ -173,7 +173,7 @@
 
  POD_cover_masquerade_interaction: "Сокрыть Маскарад"
  POD_cover_masquerade_interaction_desc: "Скрыть все ошибки или доказательства вашей вампирской сущности, используя свои [Glossary('дисциплины','game_concept_discipline_desc')], ресурсы или навыки."
- POD_cover_masquerade_interaction_cap: "Вы больше не можете снижать #L $pod_masquerade_exposure_with_icon$ие Маскарада#!"
+ POD_cover_masquerade_interaction_cap: "Вы больше не можете снижать #TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#!"
  POD_cover_masquerade_interaction_options_heading: "Как мне разобраться с осведомленными смертными?"
  POD_cover_masquerade_dominate: "Я заставлю их забыть."
  POD_cover_masquerade_presence: "Они не раскроют тайны своего божества!"
@@ -182,17 +182,17 @@
  POD_cover_masquerade_bloodsorcery: "Я запечатаю их разум силой своей магии."
  POD_cover_masquerade_layinglow: "Мне стоит залечь на дно на какое время."
 
- masquerade_increased_1: "#L $pod_masquerade_exposure_with_icon$ие Маскарада#! #N возрастёт#!."
- masquerade_increased_2: "#L $pod_masquerade_exposure_with_icon$ие Маскарада#! #N возрастёт#! на #V;bold 2#! ед."
- masquerade_increased_3: "#L $pod_masquerade_exposure_with_icon$ие Маскарада#! #N возрастёт#! на #V;bold 3#! ед."
- masquerade_increased_4: "#L $pod_masquerade_exposure_with_icon$ие Маскарада#! #N возрастёт#! на #V;bold 4#! ед."
- masquerade_increased_5: "#L $pod_masquerade_exposure_with_icon$ие Маскарада#! #N возрастёт#! на #V;bold 5#! ед."
+ masquerade_increased_1: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! #N возрастёт#!."
+ masquerade_increased_2: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! #N возрастёт#! на #V;bold 2#! ед."
+ masquerade_increased_3: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! #N возрастёт#! на #V;bold 3#! ед."
+ masquerade_increased_4: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! #N возрастёт#! на #V;bold 4#! ед."
+ masquerade_increased_5: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! #N возрастёт#! на #V;bold 5#! ед."
 
- masquerade_reduced_1: "#L $pod_masquerade_exposure_with_icon$ие Маскарада#! #P снизится#!."
- masquerade_reduced_2: "#L $pod_masquerade_exposure_with_icon$ие Маскарада#! #P снизится#! на #V;bold 2#! ед."
- masquerade_reduced_3: "#L $pod_masquerade_exposure_with_icon$ие Маскарада#! #P снизится#! на #V;bold 3#! ед."
- masquerade_reduced_4: "#L $pod_masquerade_exposure_with_icon$ие Маскарада#! #P снизится#! на #V;bold 4#! ед."
- masquerade_reduced_5: "#L $pod_masquerade_exposure_with_icon$ие Маскарада#! #P снизится#! на #V;bold 5#! ед."
+ masquerade_reduced_1: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! #P снизится#!."
+ masquerade_reduced_2: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! #P снизится#! на #V;bold 2#! ед."
+ masquerade_reduced_3: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! #P снизится#! на #V;bold 3#! ед."
+ masquerade_reduced_4: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! #P снизится#! на #V;bold 4#! ед."
+ masquerade_reduced_5: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! #P снизится#! на #V;bold 5#! ед."
 
  POD_cover_masquerade_interaction_bribe_beast: "#beast Но убийство человека навсегда закроет ему рот...#!"
  POD_cover_masquerade_interaction_murderspree_beast: "#beast Слабаки, как они смеют угрожать нам?#!"
@@ -1032,9 +1032,9 @@
  POD_transmogrify_interaction: "Трансмогрификация"
  POD_transmogrify_interaction_desc: "Используя [Glossary('дисциплину','game_concept_discipline_desc')] Изменчивости, вы можете трансформировать персонажа [recipient.GetFirstName] в [Select_CString(recipient.IsFemale, 'красавицу', 'красавца' )] или чудовище."
 
- POD_masquerade_risk_decrease_necromancy_ashes_to_ashes_tt: "«Прах к праху» из моей [Glossary('дисциплины','game_concept_discipline_desc')] некромантии снижает риск #L $pod_masquerade_exposure|l$ия Маскарада#!."
- POD_masquerade_risk_decrease_necromancy_tend_the_body_garden_tt: "«Забота о саде тела» из моей [Glossary('дисциплины','game_concept_discipline_desc')] некромантии снижает риск #L $pod_masquerade_exposure|l$ия Маскарада#!."
- POD_masquerade_risk_decrease_blood_magic_mask_of_allah_tt: "[GetModifier('mask_of_allah_modifier').GetNameWithTooltip] снижает риск #L $pod_masquerade_exposure|l$ия Маскарада#!."
+ POD_masquerade_risk_decrease_necromancy_ashes_to_ashes_tt: "«Прах к праху» из моей [Glossary('дисциплины','game_concept_discipline_desc')] некромантии снижает риск #TOOLTIP:game_concept_the_masquerade_desc #E раскрытия Маскарада#!#!."
+ POD_masquerade_risk_decrease_necromancy_tend_the_body_garden_tt: "«Забота о саде тела» из моей [Glossary('дисциплины','game_concept_discipline_desc')] некромантии снижает риск #TOOLTIP:game_concept_the_masquerade_desc #E раскрытия Маскарада#!#!."
+ POD_masquerade_risk_decrease_blood_magic_mask_of_allah_tt: "[GetModifier('mask_of_allah_modifier').GetNameWithTooltip] снижает риск #TOOLTIP:game_concept_the_masquerade_desc #E раскрытия Маскарада#!#!."
 
  POD_find_wraith_interaction: "Найти призрака"
  POD_find_wraith_interaction_desc: "Обыскать свои земли в поисках #L [GetTrait('wraith').GetName( GetPlayer )|l]а#!, уязвимого к вашим действиям."

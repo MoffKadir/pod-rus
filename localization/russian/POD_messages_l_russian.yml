@@ -4,6 +4,8 @@
 
  # Message filter types
  message_filter_pod_damage_taken: "@pod_icon! Получен урон"
- message_filter_pod_damage_taken_desc: "Сообщения, связанные с вашим [Concept('POD_health_track', 'здоровьем')|E] (полученный [Concept('POD_superficial_damage', 'поверхностный')|E] или [Concept('POD_aggravated_damage', 'тяжёлый урон')|E], [Concept('soak_damage','впитывание')|E], повреждения или использование иммунитета к урону)"
+ message_filter_pod_damage_taken_desc: "Сообщения, связанные с вашим #TOOLTIP:game_concept_POD_health_track_desc #E здоровьем#!#! (полученный #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностный#!#! или #TOOLTIP:game_concept_POD_aggravated_damage_desc #E тяжёлый урон#!#!, #TOOLTIP:game_concept_soak_damage_desc #E впитывание#!#!, повреждения или использование иммунитета к урону)"
+ message_filter_pod_grand_city: "@pod_icon! Великий город"
+ message_filter_pod_grand_city_desc: "Сообщения, связанные с #TOOLTIP:game_concept_grand_city_desc #E великими городами#!#!"
  message_filter_pod_journey_abandoned: "@pod_icon! Странствие заброшено"
  message_filter_pod_journey_abandoned_desc: "#TOOLTIP:game_concept_journey_desc #E Странствие#!#! было принудительно заброшено, так как оно больше недействительно (например, попытка выучить способность, которой вы уже обладаете)."

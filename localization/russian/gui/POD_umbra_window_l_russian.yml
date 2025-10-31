@@ -579,7 +579,7 @@
  umbra_place_jade_palace_confirm: "Посетить Нефритовый дворец"
  umbra_place_memory_tower_confirm: "Посетить Башню памяти"
 
- umbra_place_earth_tooltip: "Непривязанный [GetTrait('wraith').GetName( GetNullCharacter )|l] без свойства «[GetTrait('risen').GetName( GetPlayer )]» получает #N 40#! [Concept('stress', 'стресса')|E] каждый год, поддерживая себя в [Concept('skinlands', 'Землях Плоти')|E]."
+ umbra_place_earth_tooltip: "Непривязанный [GetTrait('wraith').GetName( GetNullCharacter )|l] без свойства «[GetTrait('risen').GetName( GetPlayer )]» получает #N 40#! [Concept('stress', 'стресса')|E] каждый год, поддерживая себя в [Glossary('землях Плоти','game_concept_skinlands_desc')]."
  umbra_place_shadowlands_tooltip: "[GetTrait('wraith').GetName( GetNullCharacter )] без #TOOLTIP:game_concept_Fetter_desc #E оков#!#! получает умеренный [stress|El] каждый год, поддерживая себя в [UmbraGlossaryLocalized('shadowlands','Загробном мире')]. (10% вероятности за каждые неразрешённые или потерянные #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!)"
  umbra_place_dark_kingdom_tooltip: "Оставайтесь в [Concept('dark_kingdom', 'Тёмном королевстве')|E], чтобы не получить [stress|El] из-за отсутствия #TOOLTIP:game_concept_Fetter_desc #E оков#!#!"
 
@@ -992,15 +992,15 @@
 
  umbra_realm_sea_of_shadow: "Море теней"
  umbra_realm_sea_of_shadow_desc: "Море теней - термин, используемый призраками для описания «нижнего» слоя [UmbraGlossaryLocalized('pod_realm_tempest','Бури')], который течёт вокруг и в [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринт')] и [UmbraGlossaryLocalized('oblivion','Забвение')]."
- sea_of_shadow_effect_desc: "Вы можете найти случайного вистимму во время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!.\nВо время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#! можно найти [Concept('POD_plasmic_maa', 'плазмоидов')|E] и нанять их как [Concept('men_at_arms', 'профессионалов')|E]."
+ sea_of_shadow_effect_desc: "Вы можете найти случайного вистимму во время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!.\nВо время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#! можно найти #TOOLTIP:game_concept_POD_plasmic_maa_desc #E плазмоидов#!#! и нанять их как [Concept('men_at_arms', 'профессионалов')|E]."
 
  umbra_realm_pod_realm_tempest: "Буря"
  umbra_realm_pod_realm_tempest_desc: "Буря - это вечно бурлящий водоворот энергии, воспоминаний и #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L спектров#!#!, вырывающийся из [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринта')] и непрерывно обрушивающий плазму и материалы как на [UmbraGlossaryLocalized('shadowlands','Загробные миры')], так и на [Concept('dark_kingdoms', 'Тёмные королевства')|E]."
- tempest_effect_desc: "Вы можете найти случайного вистимму во время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!.\nВо время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#! можно найти [Concept('POD_plasmic_maa', 'плазмоидов')|E] и нанять их как [Concept('men_at_arms', 'профессионалов')|E]."
+ tempest_effect_desc: "Вы можете найти случайного вистимму во время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!.\nВо время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#! можно найти #TOOLTIP:game_concept_POD_plasmic_maa_desc #E плазмоидов#!#! и нанять их как [Concept('men_at_arms', 'профессионалов')|E]."
 
  umbra_realm_stormwall: "Штормовая стена"
  umbra_realm_stormwall_desc: "Штормовая стена - это метафизический барьер между мирами живых и мёртвых."
- stormwall_effect_desc: "Вы можете найти случайного вистимму во время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!.\nВо время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#! можно найти [Concept('POD_plasmic_maa', 'плазмоидов')|E] и нанять их как [Concept('men_at_arms', 'профессионалов')|E]."
+ stormwall_effect_desc: "Вы можете найти случайного вистимму во время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!.\nВо время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#! можно найти #TOOLTIP:game_concept_POD_plasmic_maa_desc #E плазмоидов#!#! и нанять их как [Concept('men_at_arms', 'профессионалов')|E]."
 
  umbra_realm_island_below_the_sea: "Остров под морем"
  umbra_realm_island_below_the_sea_desc: "В центре [UmbraGlossaryLocalized('abyss','Бездны')], между [UmbraGlossaryLocalized('mirrorlands','Зеркальными землями')] и [UmbraGlossaryLocalized('oblivion','Забвением')], находится Остров под морем, который служит домом для Les Mystéres и базой для операций Лоа."

@@ -1,8 +1,8 @@
 ﻿l_russian:
 
- POD_learn_spirit_language_interaction: "Выучить [Concept('spirit_language','духовный язык')|E]"
- POD_learn_spirit_language_interaction_desc: "Выучить [Concept('spirit_language','духовный язык')|E] персонажа [recipient.GetFirstName]."
- POD_learn_spirit_language_interaction_req: "Вы не можете выучить [Concept('spirit_language','язык предков')|E]"
+ POD_learn_spirit_language_interaction: "Выучить #TOOLTIP:game_concept_spirit_language_desc #E духовный язык#!#!"
+ POD_learn_spirit_language_interaction_desc: "Выучить #TOOLTIP:game_concept_spirit_language_desc #E духовный язык#!#! персонажа [recipient.GetFirstName]."
+ POD_learn_spirit_language_interaction_req: "Вы не можете выучить #TOOLTIP:game_concept_spirit_language_desc #E язык предков#!#!"
 
  POD_summon_spirit_interaction: "Призвать духа"
  POD_summon_spirit_interaction_desc: "Призвать персонажа-#TOOLTIP:GAME_TRAIT,spirit,[GetNullCharacter] #L духа#!#! в ваше местоположение."
@@ -13,11 +13,11 @@
 
 
  POD_spirit_pact_interaction: "Духовный договор"
- POD_spirit_pact_interaction_desc: "Заключить [Concept('spirit_companion','духовный договор')|E] с персонажем [recipient.GetFirstName]."
+ POD_spirit_pact_interaction_desc: "Заключить #TOOLTIP:game_concept_spirit_companion_desc #E духовный договор#!#! с персонажем [recipient.GetFirstName]."
  POD_spirit_pact_interaction_tooltip: "Персонаж занят"
 
  POD_spirit_chiminage_interaction: "Совершить шиминаж"
- POD_spirit_chiminage_interaction_desc: "Совершение шиминажа усилить духовные способности персонажа [recipient.GetFirstName] и ваш [Concept('spirit_companion','духовный договор')|E]."
+ POD_spirit_chiminage_interaction_desc: "Совершение шиминажа усилит духовные способности персонажа [recipient.GetFirstName] и ваш #TOOLTIP:game_concept_spirit_companion_desc #E духовный договор#!#!."
  POD_spirit_chiminage_interaction_short: "Кратковременный шиминаж"
  POD_spirit_chiminage_interaction_medium: "Обычный шиминаж"
  POD_spirit_chiminage_interaction_long: "Долгий шиминаж"

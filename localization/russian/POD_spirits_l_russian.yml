@@ -6,10 +6,10 @@
  POD_spawn_friendly_spirit_effect_tooltip: "Появится #P дружелюбный#! [GetTrait('spirit').GetName( GetNullCharacter )|l]"
  POD_spawn_hostile_spirit_effect_tooltip: "Появится #N враждебный#! [GetTrait('spirit').GetName( GetNullCharacter )|l]"
  POD_spawn_gaia_spirit_effect_tooltip: "Появится [GetTrait('spirit').GetName( GetNullCharacter )|l] #V Геи#!"
- POD_spawn_ancestor_spirit_effect_tooltip: "Появится #V [Concept('ancestor_spirit', 'дух предка')|E]#!"
+ POD_spawn_ancestor_spirit_effect_tooltip: "Появится #V #TOOLTIP:game_concept_ancestor_spirit_desc #E дух предка#!#!#!"
  POD_spawn_wyrm_spirit_effect_tooltip: "Появится [GetTrait('spirit').GetName( GetNullCharacter )|l] #N Вирма#!"
 
- spirit_relative_became_ancestor: "[ancestor_spirit.GetName] [Select_CString(ancestor_spirit.IsFemale, 'умерла и стала', 'умер и стал' )] [Concept('ancestor_spirit', 'духом предка')|E]."
+ spirit_relative_became_ancestor: "[ancestor_spirit.GetName] [Select_CString(ancestor_spirit.IsFemale, 'умерла и стала', 'умер и стал' )] #TOOLTIP:game_concept_ancestor_spirit_desc #E духом предка#!#!."
 
 
 
@@ -37,7 +37,7 @@
 
  learn_language_outcome_failure.spirits.desc: "«После кучи кропотливой работы... ничего! Этот духовный язык #EMP невозможно#! выучить. Как бы я ни [Select_CString(ROOT.Char.IsFemale, 'старалась', 'старался' )], я говорю как младенец, которого только отняли от груди, и болтаю как [Select_CString(ROOT.Char.IsFemale, 'дура', 'дурак' )]!\n\nБа! Это была пустая трата времени...»"
 
- learn_spirit_language_complete: "Вы выучили [Concept('spirit_language', 'духовный язык')|E] персонажа [target.GetShortUINamePossessiveNoTooltip]"
+ learn_spirit_language_complete: "Вы выучили #TOOLTIP:game_concept_spirit_language_desc #E духовный язык#!#! персонажа [target.GetShortUINamePossessiveNoTooltip]"
 
 
 

@@ -97,7 +97,7 @@
  CHI_ARTS_YANG_MANTLE_PERK_EFFECT: "#flavor Совершенствующийся окутывает себя мантией ян, делая себя более привлекательным и могущественным.#!"
 
  chi_arts_accentuate_chi_perk_name: "Усиление ци"
- CHI_ARTS_ACCENTUATE_CHI_PERK_EFFECT: "Вы можете исцелить [EmptyScope.ScriptValue('POD_base_heal_value')|V0] ед. #L поверхностного $pod_superficial_damage_with_box$а#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Совершенствующийся может изменять поток ци в теле цели, заживляя раны.#!"
+ CHI_ARTS_ACCENTUATE_CHI_PERK_EFFECT: "Вы можете исцелить [EmptyScope.ScriptValue('POD_base_heal_value')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Совершенствующийся может изменять поток ци в теле цели, заживляя раны.#!"
 
  chi_arts_eightfold_yin_mantle_perk_name: "Восьмислойная мантия Инь"
  chi_arts_eightfold_yang_mantle_perk_name: "Восьмислойная мантия Ян"
@@ -105,7 +105,7 @@
  CHI_ARTS_EIGHTFOLD_YANG_MANTLE_PERK_EFFECT: "#flavor Совершенствующийся окутывает себя мантией чистой Ян, представая перед окружающими как облако чистого тепла и принятия.#!"
 
  chi_arts_soothing_soul_perk_name: "Успокоение души"
- CHI_ARTS_SOOTHING_SOUL_PERK_EFFECT: "Улучшает достоинство «[GetPerk('chi_arts_accentuate_chi_perk').GetName(GetPlayer)]», исцеляя [Multiply_CFixedPoint(EmptyScope.ScriptValue('POD_base_heal_value'),'(CFixedPoint)2')|V0] ед. #L поверхностного $pod_superficial_damage_with_box$а#!, а также снижая [Concept('stress', 'стресс')|E] цели на 25.\n#flavor Совершенствующийся успокаивает душу жертвы, ослабляя боль и облегчая заживление.#!"
+ CHI_ARTS_SOOTHING_SOUL_PERK_EFFECT: "Улучшает достоинство «[GetPerk('chi_arts_accentuate_chi_perk').GetName(GetPlayer)]», исцеляя [Multiply_CFixedPoint(EmptyScope.ScriptValue('POD_base_heal_value'),'(CFixedPoint)2')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#!, а также снижая [Concept('stress', 'стресс')|E] цели на 25.\n#flavor Совершенствующийся успокаивает душу жертвы, ослабляя боль и облегчая заживление.#!"
 
  chi_arts_yin_nihilus_perk_name: "Облако Инь"
  chi_arts_yang_phoenix_perk_name: "Феникс Ян"
@@ -113,7 +113,7 @@
  CHI_ARTS_YANG_PHOENIX_PERK_EFFECT: "Союзные [Concept('knights', 'рыцари')|E] в [Concept('combat_phase', 'бою')|E] или вы сами во время [Concept('single_combat_duel_plural', 'поединков')|E] получите модификатор [GetModifier('chi_arts_yang_phoenix_modifier').GetNameWithTooltip].\n#flavor Совершенствующийся может взорвать «бомбу» чистой ян, воздействуя на близлежащую жизнь с неестественной скоростью.#!"
 
  chi_arts_chi_mastery_perk_name: "Власть над ци"
- CHI_ARTS_CHI_MASTERY_PERK_EFFECT: "Вы можете исцелить [Multiply_CFixedPoint(EmptyScope.ScriptValue('POD_base_heal_value'),'(CFixedPoint)3')|V0] ед. #L поверхностного $pod_superficial_damage_with_box$а#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Совершенствующийся может свободно манипулировать ци в теле цели, чтобы залечить любые раны.#!"
+ CHI_ARTS_CHI_MASTERY_PERK_EFFECT: "Вы можете исцелить [Multiply_CFixedPoint(EmptyScope.ScriptValue('POD_base_heal_value'),'(CFixedPoint)3')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Совершенствующийся может свободно манипулировать ци в теле цели, чтобы залечить любые раны.#!"
 
 
  chi_arts_cry_of_yin_perk_name: "Голос, пронизанный Инь"
@@ -151,7 +151,7 @@
 
  chi_arts_cursing_the_star_perk_name: "Проклятие звёзд"
  chi_arts_read_the_stars_perk_name: "Чтение звёзд"
- CHI_ARTS_CURSING_THE_STAR_PERK_EFFECT: "Вы можете нанести [EmptyScope.ScriptValue('POD_wound_base_damage')|V0] ед. #L поверхностного $pod_superficial_damage_with_box$а#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Совершенствующийся может проклясть цель, чтобы ей не везло, что приведёт к какому-нибудь несчастному случаю.#!"
+ CHI_ARTS_CURSING_THE_STAR_PERK_EFFECT: "Вы можете нанести [EmptyScope.ScriptValue('POD_wound_base_damage')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Совершенствующийся может проклясть цель, чтобы ей не везло, что приведёт к какому-нибудь несчастному случаю.#!"
  CHI_ARTS_READ_THE_STARS_PERK_EFFECT: "#flavor Совершенствующийся может читать по звёздам, в какой-то степени предсказывая будущее.#!"
 
  chi_arts_reweaving_the_stars_perk_name: "Переплетение звёзд"
@@ -159,7 +159,7 @@
 
  chi_arts_celestial_curse_perk_name: "Проклятие небес"
  chi_arts_read_the_twelve_perk_name: "Чтение двенадцати"
- CHI_ARTS_CELESTIAL_CURSE_PERK_EFFECT: "Улучшает достоинство «[GetPerk('chi_arts_cursing_the_star_perk').GetName(GetPlayer)]», нанося [Multiply_CFixedPoint(EmptyScope.ScriptValue('POD_wound_base_damage'),'(CFixedPoint)2')|V0] ед. #L поверхностного $pod_superficial_damage_with_box$а#!.\n#flavor Совершенствующийся может наложить небесное проклятие на весь гороскоп цели.#!"
+ CHI_ARTS_CELESTIAL_CURSE_PERK_EFFECT: "Улучшает достоинство «[GetPerk('chi_arts_cursing_the_star_perk').GetName(GetPlayer)]», нанося [Multiply_CFixedPoint(EmptyScope.ScriptValue('POD_wound_base_damage'),'(CFixedPoint)2')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#!.\n#flavor Совершенствующийся может наложить небесное проклятие на весь гороскоп цели.#!"
  CHI_ARTS_READ_THE_TWELVE_PERK_EFFECT: "#flavor Совершенствующийся может с большой точностью предсказать будущее своей цели, используя для гадания весь её гороскоп целиком.#!"
 
  chi_arts_substitution_of_the_twelve_perk_name: "Перерождение"
