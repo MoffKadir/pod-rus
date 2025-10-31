@@ -108,7 +108,7 @@
  POD_diablerize.350.desc.success: "Глядя в [defender.GetHerHis] глаза, я просто поражаюсь тому, насколько [Select_CString(defender.IsFemale, 'прекрасна', 'прекрасен') ] [defender.GetFirstName]. [defender.GetSheHe|U] мне очень нравится. Я никогда не смогу причинить [defender.GetHerHim] вред. Зачем я вообще здесь, если не для того, чтобы греться в лучах [defender.GetHerHis] славы?"
  POD_diablerize.350.desc.failure: "[defender.GetFirstName] [Select_CString(defender.IsFemale, 'пыталась', 'пытался' )] обольстить меня, но мой разум не настолько слаб, чтобы поддаться на такую наглую уловку. Я заберу всю [defender.GetHerHis] кровь!"
  POD_diablerize.350.option.a.success: "Я так тебя люблю."
- POD_diablerize.350.option.a.success.tt: "Пока я [Select_CString(ROOT.Char.IsFemale, 'очарована', 'очарован') ] персонажем [defender.GetFirstName], я не смогу пытаться #L $pod_diablerize|l$зировать#! [defender.GetHerHis]."
+ POD_diablerize.350.option.a.success.tt: "Пока я [Select_CString(ROOT.Char.IsFemale, 'очарована', 'очарован') ] персонажем [defender.GetFirstName], я не смогу пытаться [Glossary('диаблеризировать','game_concept_diablerie_desc')] [defender.GetHerHis]."
  POD_diablerize.350.option.a.failure: "Ваши чары не производят на меня впечатления."
 
  #375 entrance duel notify defender
@@ -116,7 +116,7 @@
  POD_diablerize.375.desc.success: "Благодаря [Glossary('дисциплине','game_concept_discipline_desc')] Присутствия [attacker.GetFirstName] [Select_CString(attacker.IsFemale, 'очарована', 'очарован' )] мной. Под воздействием моих чар, [attacker.GetSheHe] не представляет для меня угрозы."
  POD_diablerize.375.desc.failure: "Я пытаюсь поймать [attacker.GetHerHis] взгляд и излучаю своё присутствие на н[attacker.GetHerHis], чтобы остановить нападенние. С невероятной скоростью и злостью [attacker.GetFirstName] приближается ко мне, похоже, мои чары не сработали."
  POD_diablerize.375.option.a.success: "Да, именно так. Я [Select_CString(ROOT.Char.IsFemale, 'та', 'тот' )], кого ты обожаешь."
- POD_diablerize.375.option.a.success.tt: "Пока [attacker.GetFirstName] [Select_CString(attacker.IsFemale, 'очарована', 'очарован' )] мной, [attacker.GetSheHe] не может больше пытаться #L $pod_diablerize|l$зировать#! меня."
+ POD_diablerize.375.option.a.success.tt: "Пока [attacker.GetFirstName] [Select_CString(attacker.IsFemale, 'очарована', 'очарован' )] мной, [attacker.GetSheHe] не может больше пытаться [Glossary('диаблеризировать','game_concept_diablerie_desc')] меня."
  POD_diablerize.375.option.a.failure: "Почему [attacker.GetSheHe] не любит меня!"
 
  # Dominate Duel
@@ -126,7 +126,7 @@
  POD_diablerize.425.desc.success: "Благодаря [Glossary('дисциплине','game_concept_discipline_desc')] Доминирования я подчиняю [attacker.GetHerHis] волю, как гончар ваяет глину. Сперва я отдаю короткий приказ: «Хватит!». Затем мы перейдём к более интересным приказам."
  POD_diablerize.425.desc.failure: "Я дотягиваюсь до [attacker.GetHerHis] разума. Он подобен крепости, в которую я не могу проникнуть. [attacker.GetSheHe|U] [Select_CString(attacker.IsFemale, 'глуха', 'глух' )] к моим повторяющимся приказам."
  POD_diablerize.425.option.a: "Покинь это место. И не возвращайся."
- POD_diablerize.425.option.a.tt: "Происки персонажа [attacker.GetFirstName] по вашей [Concept('diablerie', 'диаблеризации')|E] прекращены."
+ POD_diablerize.425.option.a.tt: "Происки персонажа [attacker.GetFirstName] по вашей [Glossary('диаблеризации','game_concept_diablerie_desc')] прекращены."
  POD_diablerize.425.option.b: "Ты окажешь мне важную услугу."
  POD_diablerize.425.option.b.tt: "Я получаю влияние на персонажа [attacker.GetFirstName]"
  POD_diablerize.425.option.e: "Теперь ты [Select_CString(attacker.IsFemale, 'моя пленница', 'мой пленник' )]."
@@ -190,7 +190,7 @@
  POD_diablerize.515.desc.success: "Битва была жестокой, но быстрой. Я [Select_CString(ROOT.Char.IsFemale, 'победила', 'победил' )], и [defender.GetFirstName] лежит у моих ног."
  POD_diablerize.515.desc.failure: "Я [Select_CString(ROOT.Char.IsFemale, 'думала', 'думал' )], что [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов' )], но [defender.GetFirstName] куда искуснее меня в бою. Я [Select_CString(ROOT.Char.IsFemale, 'потерпела', 'потерпел' )] поражение."
  POD_diablerize.515.option.a.success: "Что теперь делать с моим призом?"
- POD_diablerize.515.option.a.failure: "Я начинаю впадать в [Concept('torpor', 'торпор')|E], гадая, какая судьба меня ждёт."
+ POD_diablerize.515.option.a.failure: "Я начинаю впадать в [Glossary('торпор','game_concept_torpor_desc')], гадая, какая судьба меня ждёт."
 
  #525 notify defender of prowess duel result, pick fate of defeated $pod_diablerist$
  POD_diablerize.525.t: "Битва!"
@@ -200,7 +200,7 @@
  POD_diablerize.525.option.b.failure: "[attacker.GetSheHe] теперь [Select_CString(attacker.IsFemale, 'моя пленница', 'мой пленник' )]."
  POD_diablerize.525.option.c.failure: "Я просто уйду, победы достаточно."
  POD_diablerize.525.option.d.failure: "Я заберу кровь [attacker.GetHerHis] сердца!"
- POD_diablerize.525.option.e.success: "Я начинаю впадать в [Concept('torpor', 'торпор')|E], гадая, какая судьба меня ждёт."
+ POD_diablerize.525.option.e.success: "Я начинаю впадать в [Glossary('торпор','game_concept_torpor_desc')], гадая, какая судьба меня ждёт."
 
  #550 defeated attacker notified of victorious defender decision
  POD_diablerize.550.t: "Диаблери: Поражение"
@@ -216,7 +216,7 @@
  POD_diablerize.600.option.a: "Пожрать [victim.GetHerHis] душу!"
  POD_diablerize.600.option.a.tt: "[victim.GetTitledFirstName] [Select_CString(victim.IsFemale, 'уничтожена', 'уничтожен' )]!"
  POD_diablerize.600.option.a.tt.beast: "#beast ДА! СДЕЛАЙ ЭТО!#!"
- POD_diablerize.600.option.b: "[victim.GetFirstName] не станет жертвой $pod_diablerize|l$."
+ POD_diablerize.600.option.b: "[victim.GetFirstName] не станет жертвой [Glossary('диаблери','game_concept_diablerie_desc')]."
  POD_diablerize.600.option.b.tt.beast: "#beast Не дай [victim.GetHerHim] уйти! [victim.GetSheHe] не заслуживает крови! Мы заслуживаем!#!"
  POD_diablerize.600.option.c: "Просто убить [victim.GetHerHis], диаблери слишком опасно."
  POD_diablerize.600.option.c.tt.beast: "Обычное убийство, без риска для души. Но и сила не увеличится."
@@ -236,7 +236,7 @@
  #POD_diablerize.800.option.b: "Give in, and let [unconquered_soul.GetFirstName] take over."
  #
  #POD_diablerize.810.t: "Signs of an [unconquered_soul|E]"
- #POD_diablerize.810.desc: "One of your servants pointed out that you changed some of yours habits recently, something that doesn't happen frequently to your kind. This reminds you of the rumors about the terrible consequences of [diablerie|E] and its potential toll on your very soul.\nCould it be that your latest victim is trying to fight back? A worrying prospect indeed..."
+ #POD_diablerize.810.desc: "One of your servants pointed out that you changed some of yours habits recently, something that doesn't happen frequently to your kind. This reminds you of the rumors about the terrible consequences of [Glossary('Диаблери','game_concept_diablerie_desc')] and its potential toll on your very soul.\nCould it be that your latest victim is trying to fight back? A worrying prospect indeed..."
  #POD_diablerize.810.option.a.tt: "Something very bad will happen soon:"
  #POD_diablerize.810.option.a: "Something is very very wrong..."
  unconquered_soul_warning_tooltip: "@alert_icon! #alert_trial #high $VALUE|0$%#! вероятность [Concept('unconquered_soul', 'непокорённой души')|E]!#!"
@@ -253,7 +253,7 @@
 
  POD_diablerize.803.desc: "Почему у ваших ног лежит умирающий труп? Вы не можете вспомнить, что произошло, но, судя по крови на ваших руках, скорее всего, [Select_CString(ROOT.Char.IsFemale, 'виновницей', 'виновником' )] являетесь вы. Тем более что, похоже, двор почти не удивлён вашим поведением.\nВ последнее время с вами часто происходят подобные казусы, как будто кто-то другой внезапно завладел вашим телом и исполняет свои тёмные желания при каждом удобном случае. Может ли это быть... нет.\nВ любом случае, вам предстоит навести порядок, в прямом и переносном смысле."
  POD_diablerize.803.option.a: "Вы все живёте и умираете по моей воле!"
- unconquered_soul_in_progress_tt: "#N Ваше преступление [Concept('diablerie', 'диаблери')|E] преследует вас...#!"
+ unconquered_soul_in_progress_tt: "#N Ваше преступление [Glossary('диаблери','game_concept_diablerie_desc')] преследует вас...#!"
 
  POD_diablerize.804.desc: "С вами что-то не так. Вы подозревали это уже давно, но теперь у вас не осталось никаких сомнений. Ваше поведение, мягко говоря, нестабильно: от оскорбления вассалов до оказания им услуг (иногда и того и другого одновременно!), казалось бы, без всякой причины.\nКак будто кто-то другой контролирует ваши мысли и следует своим собственным планам, совершенно отличным от ваших, что и приводит к таким оплошностям в суждениях.\nУ вас закрадывается тревожное чувство, что вы, возможно, недооценили силу воли, которой [Select_CString(unconquered_soul.IsFemale, 'обладала', 'обладал' )] [unconquered_soul.GetFirstName]..."
  POD_diablerize.804.option.a: "Я одержу победу, как [Select_CString(ROOT.Char.IsFemale, 'одержала', 'одержал' )] её тогда!"
@@ -278,7 +278,7 @@
  POD_diablerize.810.desc: "[unconquered_soul.GetFirstName] как никогда борется за контроль над вашим телом. [Select_CString(unconquered_soul.IsFemale, 'Её', 'Его' )] вмешательство сильно ослабило ваше влияние на некоторые части вашей державы, из-за чего вы потеряли часть ценного золота, вложенного туда.\nЭтому нужно положить конец... так или иначе. Всё ещё есть шанс, что вы сможете противостоять более... постоянным изменениям и уйти, сохранив своё самосознание. Или, возможно, битва уже настолько истощила вашу силу воли, что вы готовы переродиться заново в теле [Select_CString(ROOT.Char.IsFemale, 'той', 'того' )], кто [Select_CString(ROOT.Char.IsFemale, 'была', 'был' )] настолько [Select_CString(ROOT.Char.IsFemale, 'глупа', 'глуп' )], что [Select_CString(ROOT.Char.IsFemale, 'решила', 'решил' )] убить вас.\nЕдинственный верный вопрос остаётся прежним: кто вы?"
 
  POD_diablerize.4000.t: "Происки диаблери провалились!"
- POD_diablerize.4000.desc: "По какому-то капризу судьбы, мои происки #L $pod_diablerize|l$зации#! персонажа [defender.GetFirstName] провалились."
+ POD_diablerize.4000.desc: "По какому-то капризу судьбы, мои происки [Glossary('диаблеризации','game_concept_diablerie_desc')] персонажа [defender.GetFirstName] провалились."
  POD_diablerize.4000.option.a: "Проклятие! [defender.GetFirstName], однажды ночью твоя кровь будет моей!"
 
  POD_diablerize.250.option.a.tt.defender_wins: "Жертва сбежала!"

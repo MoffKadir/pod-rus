@@ -994,7 +994,7 @@
 
  # Protean #
 
- EARTH_MELD_PERK_EFFECT: "#F Став единым целым с почвой, вампир погружается в землю. Если вампир не впадает в [Concept('torpor', 'торпор')|E], он снова поднимается следующей ночью.#!"
+ EARTH_MELD_PERK_EFFECT: "#F Став единым целым с почвой, вампир погружается в землю. Если вампир не впадает в [Glossary('торпор','game_concept_torpor_desc')], он снова поднимается следующей ночью.#!"
  EYES_OF_THE_BEAST_PERK_EFFECT: "Позволяет активировать [GetModifier('POD_shapeshift_form_beasteyes_modifier').GetNameWithTooltip] через опцию #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Вампир может придать своим глазам сверхъестественный красный отблеск, дающий зрение даже при полном отсутствии света.#!"
  FERAL_WEAPONS_PERK_EFFECT: "Вы можете превратить свои когти в [GetModifier('POD_shapeshift_form_feralweapons_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Вампир может расширить своё природное оружие до чудовищных размеров.#!"
  METAMORPHOSIS_PERK_EFFECT: "Вы теперь можете принимать более мелкие звериные формы через опции #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Ваша способность принимать облик животного возросла.#!"
@@ -1263,7 +1263,7 @@
  PARADOX_PERK_EFFECT: "Позволяет распустить через [Concept('character_interaction', 'взаимодействие персонажа')|E] случайную фракцию, нацеленную на вас.\n#F Произнесите слово, которое переполнит других блаженством и затруднит им причинение вам вреда.#!"
  BOON_OF_ANUBIS_PERK_EFFECT: "Позволяет наложить на цель модификатор [GetModifier('boon_of_anubis_perk_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Убедитесь в том, что смертный не может быть обращён и переживёт попытку.#!"
  BRING_FORTH_THE_DAWN_PERK_EFFECT: "#F Заставляет вампиров спать так, как будто сейчас день.#!"
- MUMMIFICATION_RITUAL_PERK_EFFECT: "Вы можете заставить цель впасть в [Concept('torpor', 'торпор')|E] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Введение гуля или каинита в длительный [Concept('torpor', 'торпор')|E].#!"
+ MUMMIFICATION_RITUAL_PERK_EFFECT: "Вы можете заставить цель впасть в [Glossary('торпор','game_concept_torpor_desc')] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Введение гуля или каинита в длительный [Glossary('торпор','game_concept_torpor_desc')].#!"
  RAS_BLESSING_PERK_EFFECT: "Вы больше не будете получать раны от способностей, создающих солнечный свет.\n#F Проведите ритуал, позволяющий Детям Осириса временно ходить при дневном свете.#!"
 
  # Thin-Blood Alchemy #

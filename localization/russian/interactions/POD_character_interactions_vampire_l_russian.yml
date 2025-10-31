@@ -632,7 +632,7 @@
 
  POD_ghoul_choose: "Манипулировать #TOOLTIP:game_concept_ghoul_desc #E гулями#!#!"
  POD_ghoul: "Манипулировать #TOOLTIP:game_concept_ghoul_desc #E гулями#!#!"
- recipient_secondary_POD_ghoul_choose: "[ghoul|E]-раб"
+ recipient_secondary_POD_ghoul_choose: "#TOOLTIP:game_concept_ghoul_desc #E Гуль#!#!-раб"
  POD_ghoul_choose_desc: "Выберите, что делать с вашими #TOOLTIP:game_concept_ghoul_desc #E гулями#!#!-рабами."
  POD_ghoulthrall_heal_option: "Исцелить раба"
  POD_ghoulthrall_goldreward_option: "Наградить раба"
@@ -844,7 +844,7 @@
  POD_charjoin_choose_ghoulbrosmentor_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала вашей наставницей', 'стал вашим наставником' )]."
 
  POD_charjoin_become_vampire_interaction: "Попросить Объятия"
- POD_charjoin_become_vampire_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала вашей [Concept('Sire', 'дамой')|E]', 'стал вашим [Concept('Sire', 'сиром')|E]')]."
+ POD_charjoin_become_vampire_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала', 'стал')] вашим [Glossary('сиром','game_concept_Sire_desc')]."
 
  grant_title_to_ghouls_warning: "Для вампиров считается очень неподобающим дарование #TOOLTIP:game_concept_ghoul_desc #E гулям#!#! чего-либо, кроме баронства. В конце концов, они - низшие существа."
 
@@ -1254,7 +1254,7 @@
  POD_boon_of_anubis_perk_interaction: "Благословление Анубиса"
  POD_boon_of_anubis_perk_interaction_desc: "Наложить на персонажа [recipient.GetFirstName] модификатор [GetModifier('boon_of_anubis_perk_modifier').GetNameWithTooltip]."
  POD_mummification_ritual_perk_interaction: "Ритуал мумификации"
- POD_mummification_ritual_perk_interaction_desc: "Заставить персонажа [recipient.GetFirstName] впасть в [Concept('torpor', 'торпор')|E]."
+ POD_mummification_ritual_perk_interaction_desc: "Заставить персонажа [recipient.GetFirstName] впасть в [Glossary('торпор','game_concept_torpor_desc')]."
 
  POD_thorns_caucus_interaction: "Договориться о голосовании #weak (фракция)#!"
  POD_thorns_caucus_interaction_desc: "Заставить персонажа [recipient.GetFirstName] выбрать ту же позицию голосования, что и вы."
@@ -1453,7 +1453,7 @@
  POD_heart_of_darkness_interaction_manage_hearts_desc: "Управляйте своей коллекцией сердец"
  recipient_secondary_POD_heart_of_darkness_manage_hearts_interaction: "Жертва"
  POD_heart_of_darkness_kill_option: "Уничтожить сердце"
- POD_heart_of_darkness_forcetorpor_option: "Вогнать в [Concept('torpor', 'торпор')|E]"
+ POD_heart_of_darkness_forcetorpor_option: "Вогнать в [Glossary('торпор','game_concept_torpor_desc')]"
  POD_heart_of_darkness_release_option: "Вернуть сердце"
  POD_heart_of_darkness_kill_option.tt: "Вы разрушите сердце персонажа [secondary_recipient.GetFirstName], убив [secondary_recipient.GetHerHis]."
  POD_heart_of_darkness_forcetorpor_option.tt: "Используя силу Серпентиса, вы вогнали персонаңа [secondary_recipient.GetFirstName] в торпор."

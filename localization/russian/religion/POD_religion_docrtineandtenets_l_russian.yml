@@ -116,9 +116,9 @@
  doctrine_parameter_demonic_shunned: "Персонажи, имеющие [Concept('trait', 'свойства')|E] «[GetTrait('demon').GetName( GetPlayer )]», «[GetTrait('baali').GetName( GetPlayer )]» или «[GetTrait('cultist').GetName( GetPlayer )]», — [shunned|El]."
  doctrine_parameter_demonic_accepted: "Персонажи, имеющие [Concept('trait', 'свойства')|E] «[GetTrait('demon').GetName( GetPlayer )]», «[GetTrait('baali').GetName( GetPlayer )]» или «[GetTrait('cultist').GetName( GetPlayer )]», принимаются обществом."
 
- doctrine_vampirediablerie_name: "[diablerie|E]"
+ doctrine_vampirediablerie_name: "[Glossary('Диаблери','game_concept_diablerie_desc')]"
  doctrine_vampirediablerie_crime_name: "Преступление"
- doctrine_vampirediablerie_crime_desc: "Поглощение души другого сородича - самое страшное преступление среди нашего вида.\n\nПрощание, запрещающее [diablerie|El]\n\nНе ищите крови своего старейшины, не ищите крови [Concept('Sire', 'сира')|E] вашего [Concept('Sire', 'сира')|E], не ищите того, кто сделал вас сородичем, ибо вы почувствуете погребальный костер, когда заплатите за свой бессмертный грех."
+ doctrine_vampirediablerie_crime_desc: "Поглощение души другого сородича - самое страшное преступление среди нашего вида.\n\nПрощание, запрещающее [Glossary('диаблери','game_concept_diablerie_desc')]\n\nНе ищите крови своего старейшины, не ищите крови [Glossary('сира','game_concept_Sire_desc')] вашего [Glossary('сира','game_concept_Sire_desc')], не ищите того, кто сделал вас сородичем, ибо вы почувствуете погребальный костер, когда заплатите за свой бессмертный грех."
  doctrine_vampirediablerie_shunned_name: "Достойно порицания"
  doctrine_vampirediablerie_shunned_desc: "Когда вампиры почувствуют вкус крови других вампиров, что же их остановит?"
  doctrine_vampirediablerie_accepted_name: "Приемлемо"
@@ -631,7 +631,7 @@
  tenet_vampiremasquerade_desc: "Молчание Крови. Вы не должны раскрывать свою истинную природу тем, кто не принадлежит к Крови. Поступивший так откажется от своих притязаний на Кровь."
 
  tenet_vampireprogeny_name: "Потомство"
- tenet_vampireprogeny_desc: "Вы можете стать [Concept('Sire', 'сиром')|E] другого только с разрешения своего старейшины. Если вы создадите другого сородича без разрешения, то и вы, и ваше потомство будут убиты."
+ tenet_vampireprogeny_desc: "Вы можете стать [Glossary('сиром','game_concept_Sire_desc')] другого только с разрешения своего старейшины. Если вы создадите другого сородича без разрешения, то и вы, и ваше потомство будут убиты."
 
  tenet_vampiredestruction_name: "Разрушение"
  tenet_vampiredestruction_desc: "Вам запрещено уничтожать себе подобных. Право на уничтожение принадлежит только вашему старейшине. Только старейшие среди вас могут объявлять Кровавую охоту."
@@ -655,10 +655,10 @@
  tenet_vampireauctoritasritae_desc: "Собрание тринадцати ритуалов, практикуемых всеми членами Шабаша."
 
  tenet_vampireamaranth_name: "Амарант"
- tenet_vampireamaranth_desc: "Практика [diablerie|El]"
+ tenet_vampireamaranth_desc: "Практика [Glossary('диаблери','game_concept_diablerie_desc')]"
 
  tenet_vampiremonomacy_name: "Мономахия"
- tenet_vampiremonomacy_desc: "Почетный поединок, который заканчивается [Concept('diablerie', 'диаблери')|E]. Ритуал Мономахии используется для разрешения споров между всеми Шабашами."
+ tenet_vampiremonomacy_desc: "Почетный поединок, который заканчивается [Glossary('диаблери','game_concept_diablerie_desc')]. Ритуал Мономахии используется для разрешения споров между всеми Шабашами."
 
  tenet_infernalism_name: "Инфернализм"
  tenet_infernalism_desc: "Демоническая инвеститура через договор с дьяволами."
@@ -677,7 +677,7 @@
  tenet_quiritare_desc: "Сопротивляться Зверю или пытаться умиротворить его невозможно, и потому отдайтесь ему полностью, исполняя его волю."
 
  tenet_legacyoftrinity_name: "Наследие Троицы"
- tenet_legacyoftrinity_desc: "Кодекс предписывает главенство трех основных кланов: Тореадоров, Цимисхи и Вентру. Члены других кланов должны обратиться к квезитору с просьбой стать чьим-либо [Concept('Sire', 'сиром')|E]; членам трех основных кланов разрешено становиться [Concept('Sire', 'сиром')|E] без позволения. Только члены трех основных кланов могут завещать домен другому вампиру, и каждый вампир в пределах этого домена обязан соблюдать Кодекс."
+ tenet_legacyoftrinity_desc: "Кодекс предписывает главенство трех основных кланов: Тореадоров, Цимисхи и Вентру. Члены других кланов должны обратиться к квезитору с просьбой стать чьим-либо [Glossary('сиром','game_concept_Sire_desc')]; членам трех основных кланов разрешено становиться [Glossary('сиром','game_concept_Sire_desc')] без позволения. Только члены трех основных кланов могут завещать домен другому вампиру, и каждый вампир в пределах этого домена обязан соблюдать Кодекс."
 
  tenet_legacyofashes_name: "Наследие пепла"
  tenet_legacyofashes_desc: "Согласно Кодексу, на каждого, кто убьет представителя трех основных кланов, будет объявлена Кровавая охота."
@@ -838,7 +838,7 @@
 
  anda_hostility_name: "Отношение к [Glossary('Анда','podgloss.anda')]"
  special_doctrine_is_anda_faith_name: "[Glossary('Анда','podgloss.anda')]"
- special_doctrine_is_anda_faith_desc: "[Concept('faiths', 'Конфессии')|E] [Glossary('Анда','podgloss.anda')], союзники #TOOLTIP:game_concept_akuma_desc #E акума#!#! при дворе Черной черепахи, являются врагами лоялистов $pod_wan_kuei$."
+ special_doctrine_is_anda_faith_desc: "[Concept('faiths', 'Конфессии')|E] [Glossary('Анда','podgloss.anda')], союзники #TOOLTIP:game_concept_akuma_desc #E акума#!#! при дворе Черной черепахи, являются врагами лоялистов [Glossary('Ван-куэй','game_concept_kuei_jin_desc')]."
  doctrine_parameter_hostility_override_special_doctrine_is_anda_faith: "[faiths|E] [Glossary('Анда','podgloss.anda')] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]."
  doctrine_parameter_is_anda_faith_opinion_active: "" # Make loca empty to hidden this like vanilla
  doctrine_parameter_opinion_of_is_anda_faith_opinion_active: "[Concept('opinion', 'Мнение')|E] к [Concept('faiths', 'конфессиям')|E] [Glossary('Анда','podgloss.anda')]: $VALUE|+=0$"
@@ -851,8 +851,8 @@
  doctrine_parameter_hostility_override_special_doctrine_allied_to_anda_hostility: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_allied_to_anda_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
  allied_to_anda_opinion_active_county_opinion_name: "Соратники"
  allied_to_anda_opinion_active_opinion_name: "Приспешники"
- special_doctrine_against_to_anda_hostility_name: "Мстительные $pod_wan_kuei$"
- special_doctrine_against_to_anda_hostility_desc: "Когда монгольские племена объединились, [Glossary('Анда','podgloss.anda')] последовали за ними подобно вихрю, разрушив владения $pod_wan_kuei$ и начав вражду, которая закончится только с гибелью одной из сторон."
+ special_doctrine_against_to_anda_hostility_name: "Мстительные [Glossary('Ван-куэй','game_concept_kuei_jin_desc')]"
+ special_doctrine_against_to_anda_hostility_desc: "Когда монгольские племена объединились, [Glossary('Анда','podgloss.anda')] последовали за ними подобно вихрю, разрушив владения [Glossary('Ван-куэй','game_concept_kuei_jin_desc')] и начав вражду, которая закончится только с гибелью одной из сторон."
  doctrine_parameter_against_to_anda_opinion_active: "" # Make loca empty to hidden this like vanilla
  doctrine_parameter_opinion_of_against_to_anda_opinion_active: "$VALUE|+=0$ Штраф к [Concept('opinion', 'мнению')|E] с [Concept('faiths', 'конфессиями')|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_against_to_anda_hostility').GetBaseName]»"
  doctrine_parameter_hostility_override_special_doctrine_against_to_anda_hostility: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_against_to_anda_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
@@ -1013,7 +1013,7 @@
 
  tenet_sanctioned_diableries_name: "Санкционированное диаблери"
  tenet_sanctioned_diableries_desc: "Дети Хакима должны вернуть кровь недостойных, но остерегайтесь поспешного приговора."
- doctrine_parameter_sanctioned_diableries: "Во время [diablerie|El], если ваша жертва - малодушна, прихотлива или исповедует религию, воспринимаемую как воплощённое зло, затраты благочестия будут уменьшены. Если жертва храбра, справедлива или принадлежит к праведной конфессии, затраты будут увеличены."
+ doctrine_parameter_sanctioned_diableries: "Во время [Glossary('диаблери','game_concept_diablerie_desc')], если ваша жертва - малодушна, прихотлива или исповедует религию, воспринимаемую как воплощённое зло, затраты благочестия будут уменьшены. Если жертва храбра, справедлива или принадлежит к праведной конфессии, затраты будут увеличены."
 
  COURT_CHAPLAIN_CONVERSION_SECRET_CULT_PENALTY: "Штраф за догмат «Тайный культ»."
 
@@ -1142,7 +1142,7 @@
  doctrine_parameter_hunter_hunting_wraith: "Штраф к [Concept('opinion', 'мнению')|E] о персонажах со [Concept('trait', 'свойством')|E] «[GetTrait('wraith').GetName( GetPlayer )]»: #N -100#!"
  doctrine_parameter_hunter_hunting_bane: "Штраф к [Concept('opinion', 'мнению')|E] о персонажах со [Concept('trait', 'свойством')|E] «[GetTrait('banemummy').GetName( GetPlayer )]»: #N -100#!"
  doctrine_parameter_hunter_hunting_cabiri: "Штраф к [Concept('opinion', 'мнению')|E] о персонажах со [Concept('trait', 'свойством')|E] «[GetTrait('cabiri').GetName( GetPlayer )]» #N -100#!"
- doctrine_parameter_hunter_hunting_ghoul: "Штраф к [Concept('opinion', 'мнению')|E] о персонажах со [Concept('trait', 'свойством')|E] «[ghoul|E]»: #N -100#!"
+ doctrine_parameter_hunter_hunting_ghoul: "Штраф к [Concept('opinion', 'мнению')|E] о персонажах со [Concept('trait', 'свойством')|E] «#TOOLTIP:game_concept_ghoul_desc #E Гуль#!#!»: #N -100#!"
  doctrine_parameter_hunter_hunting_fae: "Штраф к [Concept('opinion', 'мнению')|E] о персонажах со [Concept('trait', 'свойством')|E] «[GetTrait('fae').GetName( GetPlayer )]»: #N -100#!"
  hunter_hunting_name: "Охотники на охоте"
  hunter_hunting: "Сверхъестественное"

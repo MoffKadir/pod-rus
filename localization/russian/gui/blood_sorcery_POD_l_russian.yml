@@ -105,7 +105,7 @@
  path_of_blood_tooltip: "Путь крови"
  spell_a_taste_for_blood_name: "#L $pod_bs_spell$ие#!: Вкус крови"
  spell_a_taste_for_blood_cost: "[PlayerBloodValue('bs_a_taste_for_blood_cost')]"
- a_taste_for_blood_script_tooltip: "Если [target.GetShortUINameNotMe] является #L $pod_diablerist|l$стом#!, [target.GetHerHis] [Concept('secret', 'секрет')|E] будет раскрыт вам."
+ a_taste_for_blood_script_tooltip: "Если [target.GetShortUINameNotMe] является [Glossary('диаблеристом','game_concept_diablerie_desc')], [target.GetHerHis] [Concept('secret', 'секрет')|E] будет раскрыт вам."
  a_taste_for_blood_toast_failure: "[target.GetSheHe|U] не [Select_CString(target.IsFemale, 'совершала', 'совершал' )] диаблери"
  spell_blood_rage_name: "#L $pod_bs_spell$ие#!: Неистовство крови"
  spell_blood_rage_cost: "[PlayerBloodValue('bs_blood_rage_cost')]"

@@ -29,7 +29,7 @@
  POD_daimonion_events.5000.desc.victory: "Вы боролись с худшими сторонами себя - грехами, недостатками и тьмой. И вы победили. Тьма всё ещё внутри вас, но теперь она подчиняется вам.\n\nСила ваших грехов в вашем распоряжении."
  POD_daimonion_events.5000.desc.loss: "Всё это было так неожиданно - проявление появилось из ниоткуда и напало на вас с силой каждой неровной, ущербной части вашего существа. Это было безнадёжно....Как можно сражаться с существом, которое олицетворяет всё то, что делает вас [Select_CString(ROOT.Char.IsFemale, 'такой, такой слабой', 'таким, таким слабым' )]?\n\nВы не можете. Лучше сдаться."
  POD_daimonion_events.5000.loss.toast: "[recipient.GetFirstName] терпит поражение"
- POD_daimonion_events.5000.loss.toast.torpor: "[Select_CString(recipient.IsFemale, 'Она', 'Он' )] быстро впадает в [Concept('torpor', 'торпор')|E], чтобы уцелеть"
+ POD_daimonion_events.5000.loss.toast.torpor: "[Select_CString(recipient.IsFemale, 'Она', 'Он' )] быстро впадает в [Glossary('торпор','game_concept_torpor_desc')], чтобы уцелеть"
  POD_daimonion_events.5000.loss.toast.sins: "[Select_CString(recipient.IsFemale, 'Она', 'Он' )] поддаётся разврату"
  POD_daimonion_events.5000.victory.toasttitle: "[recipient.GetFirstName] побеждает"
  POD_daimonion_events.5000.victory.toast: "[recipient.GetFirstName] берёт верх над своими грехами"

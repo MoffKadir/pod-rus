@@ -17,7 +17,7 @@
  POD_train_perk_interaction: "Обучить навыку"
  POD_train_perk_interaction_desc: "Обучить персонажа [recipient.GetFirstName] одному из ваших навыков"
 
- EXECUTION_DIABLERIE: "[Concept('diablerie', 'Диаблеризировать')|E]"
+ EXECUTION_DIABLERIE: "[Glossary('Диаблеризировать','game_concept_diablerie_desc')]"
  EXECUTION_EXSANGUINATION: "Обескровить"
  EXECUTION_SPIRIT_EATING: "Пожрать дух"
  EXECUTION_CONVERT_TO_WRAITH: "Превратить в призрака"
@@ -211,8 +211,8 @@
  WUTIAN_NINTH_IMMORTAL_REASON: "$wutian_ninth_immortal$: $VALUE|+=0$"
 
 
- POD_choose_sire_interaction: "Выбрать [Concept('Sire', 'сира')|E]"
- POD_choose_sire_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала', 'стал' )] вашим [Concept('Sire', 'сиром')|E]."
+ POD_choose_sire_interaction: "Выбрать [Glossary('сира','game_concept_Sire_desc')]"
+ POD_choose_sire_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала', 'стал' )] вашим [Glossary('сиром','game_concept_Sire_desc')]."
 
  POD_choose_sifu_interaction: "Выбрать сифу"
  POD_choose_sifu_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала', 'стал' )] вашим сифу."

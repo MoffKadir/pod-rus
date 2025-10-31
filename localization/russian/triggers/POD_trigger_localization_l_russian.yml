@@ -6,7 +6,7 @@
  is_a_werewolf: "Является оборотнем"
  is_a_fae: "Является феей"
  is_a_ghoul: "Является гулем"
- is_a_revenant: "Является [Concept('revenant', 'ревенантом')|E]"
+ is_a_revenant: "Является [Glossary('ревенантом','game_concept_revenant_desc')]"
  is_a_demon: "Является демоном"
  is_a_supehunter: "Является охотником"
  is_a_mummy: "Является мумией"
@@ -174,8 +174,8 @@
  POD_character_is_defeated_third: "[CHARACTER.GetFirstName] [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )] быть [Select_CString(CHARACTER.IsFemale, 'мертва', 'мёртв' )]"
  POD_character_is_defeated_third_not: "[CHARACTER.GetFirstName] #bold не#! [Select_CString(CHARACTER.IsFemale, 'мертва', 'мёртв' )]"
 
- POD_vampire_is_defeated_third: "[CHARACTER.GetFirstName] [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )] быть [Select_CString(CHARACTER.IsFemale, 'мертва', 'мёртв' )] или находиться в [Concept('torpor', 'торпоре')|E]"
- POD_vampire_is_defeated_third_not: "[CHARACTER.GetFirstName] #bold не#! [Select_CString(CHARACTER.IsFemale, 'мертва', 'мёртв' )] или не находится в [Concept('torpor', 'торпоре')|E]"
+ POD_vampire_is_defeated_third: "[CHARACTER.GetFirstName] [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )] быть [Select_CString(CHARACTER.IsFemale, 'мертва', 'мёртв' )] или находиться в [Glossary('торпоре','game_concept_torpor_desc')]"
+ POD_vampire_is_defeated_third_not: "[CHARACTER.GetFirstName] #bold не#! [Select_CString(CHARACTER.IsFemale, 'мертва', 'мёртв' )] или не находится в [Glossary('торпоре','game_concept_torpor_desc')]"
  #POD_vampire_is_defeated_third: "[CHARACTER.GetFirstName] is defeated #weak (dead or in [GetTrait('torpor').GetName(CHARACTER.Self)])#!"
  #POD_vampire_is_defeated_third_not: "[CHARACTER.GetFirstName] is #bold not#! yet defeated #weak (dead or in [GetTrait('torpor').GetName(CHARACTER.Self)])#!"
 
