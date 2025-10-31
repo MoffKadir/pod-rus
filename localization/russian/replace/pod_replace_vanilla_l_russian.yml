@@ -428,7 +428,7 @@
  domicile_building_parameter_camp_better_scout_for_talent: "Используйте «[GetTravelOption('adventurers_scout_for_talent_option').GetName]», чтобы найти больше [Concept( 'officers', 'подручных' )|E] $pod_only_if_unlanded$"
 
  # Visit local settlement
- local_holding_type_concept_grand_city_holding: "[grand_city|E]"
+ local_holding_type_concept_grand_city_holding: "#TOOLTIP:game_concept_grand_city_desc #E Великий город#!#!"
  local_holding_type_grand_city_holding: "$game_concept_grand_city$"
  local_holding_type_capitalized_grand_city_holding: "$game_concept_grand_city$"
  ep3_laamp_decision_event.1000.c: "Замок во владении [visiting_location.GetBaronyNameExplicitlyNoTooltip] — вот где стоит побывать."

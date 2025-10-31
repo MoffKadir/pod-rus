@@ -2,7 +2,7 @@
  POD_realm_mastery.2.t: "[Select_CString( DidShatteringHappen, 'Призраки владения', 'Двор владения' )] [PlayerJourneyDestination.GetHolding.GetCurrentSpecialBuildingType.GetNameNoTooltip]"
  POD_realm_mastery.2.desc: "Гламур этого места просто осязаем. Кажется, что сам воздух наполнен творческим потенциалом, готовым воплотить грёзы в реальность.\n\n"
  POD_realm_mastery.2.desc.preshattering: "Феи-дворяне, живущие здесь, во владении [PlayerJourneyDestination.GetHolding.GetCurrentSpecialBuildingType.GetName], предоставили мне аудиенцию. Вокруг стоические лица, но не обязательно враждебные."
- POD_realm_mastery.2.desc.postshattering: "После [Concept('shattering', 'Раскола')|E] фригольд [PlayerJourneyDestination.GetHolding.GetCurrentSpecialBuildingType.GetName] предположительно был покинут. И всё же за мной явно наблюдает нечто могущественное - я чувствую его присутствие в [UmbraGlossaryLocalized('dreaming','Грёзах')]."
+ POD_realm_mastery.2.desc.postshattering: "После [Glossary('Раскола','game_concept_shattering_desc')] фригольд [PlayerJourneyDestination.GetHolding.GetCurrentSpecialBuildingType.GetName] предположительно был покинут. И всё же за мной явно наблюдает нечто могущественное - я чувствую его присутствие в [UmbraGlossaryLocalized('dreaming','Грёзах')]."
  POD_realm_mastery.2.desc.end: "Возникает чувство любопытного ожидания.\n\nКак мне изложить своё дело?"
  POD_realm_mastery.2.option.a: "Предложив бесценные сокровища."
  POD_realm_mastery.2.option.a.success: "[Select_CString( DidShatteringHappen, 'Потерянные', 'Дворяне' )] впечатлены"

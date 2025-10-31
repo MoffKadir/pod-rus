@@ -26,7 +26,7 @@
  POD_fera_requirements_development_below_t5_ducal: "\n\n#help Для строительства этого уровня требуется #bold;L 5 или меньше#! [Concept('development', 'развития')|E].#!$POD_requirements_fera_development_exception$"
 
  POD_requirements_fera_development_exception: "\n#help Это требование игнорируется, если выполняется какое-либо из этих #TOOLTIP:POD_requirements_fera_development_exception_list #L условия#!#!.#!"
- POD_requirements_fera_development_exception_list: "$BULLET_WITH_TAB$Ваша конфессия имеет [Concept('doctrine', 'доктрину')|E] [GetFaithDoctrine('doctrine_fera_triat_alignment_weaver').GetBaseName]\n$BULLET_WITH_TAB$[Concept('holding', 'Владение')|E] является [Concept('grand_city', 'великим городом')|E]\n$BULLET_WITH_TAB$У вас имеется свойство «[GetTrait('bastet').GetName(GetNullCharacter)]»"
+ POD_requirements_fera_development_exception_list: "$BULLET_WITH_TAB$Ваша конфессия имеет [Concept('doctrine', 'доктрину')|E] [GetFaithDoctrine('doctrine_fera_triat_alignment_weaver').GetBaseName]\n$BULLET_WITH_TAB$[Concept('holding', 'Владение')|E] является #TOOLTIP:game_concept_grand_city_desc #E великим городом#!#!\n$BULLET_WITH_TAB$У вас имеется свойство «[GetTrait('bastet').GetName(GetNullCharacter)]»"
 
 
 

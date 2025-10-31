@@ -49,7 +49,7 @@
 
  rule_pod_splat_hostility: "$POD_gamerule$ Враждебность видов"
  setting_pod_splat_hostility_default: "По умолчанию"
- setting_pod_splat_hostility_default_desc: "Некоторые #L $pod_splats|l$ы#! враждуют друг с другом, что препятствует большинству [Concept('interactions', 'взаимодействий')|E] между ними."
+ setting_pod_splat_hostility_default_desc: "Некоторые #TOOLTIP:game_concept_splat_desc #E виды#!#! враждуют друг с другом, что препятствует большинству [Concept('interactions', 'взаимодействий')|E] между ними."
  setting_pod_splat_hostility_disabled: "#high @haight_icon! Отключено#!"
  setting_pod_splat_hostility_disabled_desc: "#L $pod_splats$ы#! не лишены возможности взаимодействовать друг с другом (хотя на них по-прежнему распространяются наказания за мнение и доктрины преступлений)."
 
@@ -73,9 +73,9 @@
 
  rule_pod_splat_mixing: "$POD_gamerule$ Смешение видов"
  setting_pod_splat_mixing_default: "По умолчанию"
- setting_pod_splat_mixing_default_desc: "Стандартные ограничения на смешение #L $pod_splats|l$ов#!."
+ setting_pod_splat_mixing_default_desc: "Стандартные ограничения на смешение #TOOLTIP:game_concept_splat_desc #E видов#!#!."
  setting_pod_splat_mixing_haight_mode: "#high @haight_icon! Режим Сэмюеля Хайта#!"
- setting_pod_splat_mixing_haight_mode_desc: "Многие ограничения на смешение #L $pod_splats|l$ов#! ослаблены (см. подробнее #L $pod_samuel_haight_mode_with_icon$ь Хайт#!)."
+ setting_pod_splat_mixing_haight_mode_desc: "Многие ограничения на смешение #TOOLTIP:game_concept_splat_desc #E видов#!#! ослаблены (см. подробнее #L $pod_samuel_haight_mode_with_icon$ь Хайт#!)."
 
  rule_pod_fog_of_war: "$POD_gamerule$ Туман войны"
  setting_pod_fog_of_war_disabled: "Отключено"
@@ -249,11 +249,11 @@
  setting_pod_overextension_off: "#high Без сверхрасширения#!"
  setting_pod_overextension_off_desc: "Закон сверхрасширения державы не появится. Это сделает игру #N легче#!."
 
- rule_pod_grand_city_limit: "$POD_gamerule$ Лимит [Concept('grand_city', 'великих городов')|E]"
+ rule_pod_grand_city_limit: "$POD_gamerule$ Лимит #TOOLTIP:game_concept_grand_city_desc #E великих городов#!#!"
  setting_pod_grand_city_limit_enabled: "Один"
- setting_pod_grand_city_limit_enabled_desc: "Вы можете владеть только одним [Concept('grand_city', 'великим городом')|E] в своём личном домене."
+ setting_pod_grand_city_limit_enabled_desc: "Вы можете владеть только одним #TOOLTIP:game_concept_grand_city_desc #E великим городом#!#! в своём личном домене."
  setting_pod_grand_city_limit_disabled: "#high Без ограничений#!"
- setting_pod_grand_city_limit_disabled_desc: "Вы можете владеть неограниченным количеством [Concept('grand_city', 'великих городов')|E]. Это сделает игру #N легче#!."
+ setting_pod_grand_city_limit_disabled_desc: "Вы можете владеть неограниченным количеством #TOOLTIP:game_concept_grand_city_desc #E великих городов#!#!. Это сделает игру #N легче#!."
 
  rule_hunt_journey_speed: "$POD_gamerule$ Скорость #TOOLTIP:game_concept_journey_desc #E странствий#!#! охоты"
  setting_hunt_journey_speed_5: "#high 5 месяцев#!"

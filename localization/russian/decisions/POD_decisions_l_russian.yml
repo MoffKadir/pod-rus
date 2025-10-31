@@ -381,7 +381,7 @@
  occupy_san_michele_decision_tooltip: "Создать штаб-квартиру инквизиции"
  occupy_san_michele_decision_desc: "$pod_st_peters_city$ находится в рабстве. Если нам удастся освободить его, мы поселимся в одном из его монастырей, чтобы он мог служить штабом против сил тьмы."
  occupy_san_michele_decision_confirm: "Освободить святой город."
- occupy_san_michele_decision_effect_tooltip: "[grand_city|E] Рим получит 5 уникальных [Concept('buildings', 'построек')|E].\nВы сможете полностью улучшить их, когда поможете другим орденам инквизиции:\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_library_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_aedificium_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_reliquary_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_basilica_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_cloisters_03').GetName]"
+ occupy_san_michele_decision_effect_tooltip: "#TOOLTIP:game_concept_grand_city_desc #E Великий город#!#! Рим получит 5 уникальных [Concept('buildings', 'построек')|E].\nВы сможете полностью улучшить их, когда поможете другим орденам инквизиции:\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_library_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_aedificium_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_reliquary_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_basilica_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_cloisters_03').GetName]"
  restore_red_order: "Восстановить Красный орден"
  restore_red_order_tooltip: "Мы познали Ад. Мы приняли его нечестивое знание, чтобы дополнить слово божественного."
  restore_red_order_desc: "Падение наших основных владений не остановит наши исследования. Благодаря святому и нечестивому благословению мы вернем себе наши земли."
@@ -780,7 +780,7 @@
  toreador_grandeur_victory_objective_decision_desc: "Величайшие тореадоры - законодатели моды, которых уважают и которыми восхищаются во всем мире за их смелые художественные и научные изыскания. Вы должны стремиться стать [Select_CString(ROOT.Char.IsFemale, 'самой известной покровительницей', 'самым известным покровителем' )] мира нежити." #проверить
  toreador_grandeur_victory_objective_decision_effect_tooltip: "Вас будут уважать среди тореадоров как [Select_CString(ROOT.Char.IsFemale, 'ту', 'того' )], за кем нужно следовать, и величайшие умы этой эпохи будут стекаться в вашу державу." #проверить
  toreador_grandeur_victory_objective_decision_confirm: "Шедевр в процессе создания."
- toreador_grandeur_custom_decision: "Все доступные вам придворные должности [Concept('primogen', 'примогенов')|E] должны быть замещены персонажами с хорошей пригодностью или выше."
+ toreador_grandeur_custom_decision: "Все доступные вам придворные должности #TOOLTIP:game_concept_primogen_desc #E примогенов#!#! должны быть замещены персонажами с хорошей пригодностью или выше."
  toreador_grandeur_custom_decision2: "Величие вашего должно равняться 10."
 
  library_victory_objective_decision: "Вечное знание"

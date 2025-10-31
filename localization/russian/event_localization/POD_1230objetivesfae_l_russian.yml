@@ -1,6 +1,6 @@
 ﻿l_russian:
  black_death_prevented: "Событие Чёрной смерти не произойдёт в будущем."
- shattering_prevented: "Событие [Concept('shattering', 'Раскола')|E] не произойдёт в будущем."
+ shattering_prevented: "Событие [Glossary('Раскола','game_concept_shattering_desc')] не произойдёт в будущем."
  prevent_black_death_objective_decision_before_last_date: "Дата - 1.1.1347 или раньше"
 
  prevent_black_death_rat_objective_decision: "Козни раткинов"
@@ -98,18 +98,18 @@
  pod1230objectives_fae.121.a: "С возвращением."
 
  POD_fae_maintenance.21.t: "Раскол"
- POD_fae_maintenance.21.desc: "Вы не сумели предотвратить Пророчество.\nВ конце концов нити между миром смертных и [UmbraGlossaryLocalized('dreaming','Грёзами')] стали насколько тонкими, что начали рваться. Этот разрыв привёл к [Concept('shattering', 'Расколу')|E]. Он не только разрушил связи между [UmbraGlossaryLocalized('arcadia','Аркадией')] и Землёй, но и уничтожил надежды на то, что их можно обратить вспять.\nВы должны выбрать способ справиться с этим."
+ POD_fae_maintenance.21.desc: "Вы не сумели предотвратить Пророчество.\nВ конце концов нити между миром смертных и [UmbraGlossaryLocalized('dreaming','Грёзами')] стали насколько тонкими, что начали рваться. Этот разрыв привёл к [Glossary('Расколу','game_concept_shattering_desc')]. Он не только разрушил связи между [UmbraGlossaryLocalized('arcadia','Аркадией')] и Землёй, но и уничтожил надежды на то, что их можно обратить вспять.\nВы должны выбрать способ справиться с этим."
  POD_fae_maintenance.21.a: "Принять Путь подменыша и отказаться от бессмертия."
  POD_fae_maintenance.21.b: "Бежать в Аркадию."
  POD_fae_maintenance.21.c: "Перейти во фригольд." #Become a Lost One.
  POD_fae_maintenance.21.d: "Вы сами нашли свой путь к бессмертию."
  POD_fae_maintenance.21.d.tt: "Раскол не оказывает на вас лично никакого влияния."
  POD_fae_maintenance.22.t: "Раскол"
- POD_fae_maintenance.22.desc: "В конце концов нити, которые были так тонко натянуты между миром смертных и [UmbraGlossaryLocalized('dreaming','Грёзами')] начали рваться. Этот разрыв и есть [Concept('shattering', 'Раскол')|E]. Он не только разрушил связи между [UmbraGlossaryLocalized('arcadia','Аркадией')] и Землёй, но и уничтожил надежды на то, что их можно обратить вспять."
+ POD_fae_maintenance.22.desc: "В конце концов нити, которые были так тонко натянуты между миром смертных и [UmbraGlossaryLocalized('dreaming','Грёзами')] начали рваться. Этот разрыв и есть [Glossary('Раскол','game_concept_shattering_desc')]. Он не только разрушил связи между [UmbraGlossaryLocalized('arcadia','Аркадией')] и Землёй, но и уничтожил надежды на то, что их можно обратить вспять."
  POD_fae_maintenance.22.a: "Ура?"
 
  POD_fae_maintenance.31.t: "Междуцарствие"
- POD_fae_maintenance.31.desc: "Период, когда на Земле не было ни ши, ни истинных фей, а оставшиеся «разбавленные» подменыши вынуждены были сами добывать себе пропитание после окончательной агонии во время [Concept('shattering', 'Раскола')|E] около 1400 года, - это Междуцарствие, поскольку подменыши должны были пытаться выжить самостоятельно."
+ POD_fae_maintenance.31.desc: "Период, когда на Земле не было ни ши, ни истинных фей, а оставшиеся «разбавленные» подменыши вынуждены были сами добывать себе пропитание после окончательной агонии во время [Glossary('Раскола','game_concept_shattering_desc')] около 1400 года, - это Междуцарствие, поскольку подменыши должны были пытаться выжить самостоятельно."
  POD_fae_maintenance.31.a: "Наше время ушло."
  POD_fae_maintenance.31.b: "Наше время настало."
 
@@ -356,7 +356,7 @@
  sidhe_house_dominance_scathach_objective_decision_desc: "Начиная со #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('POD_fae_character_17').GetID] #L Скатаха#!#!, одержав победу над Октриаллахом, Белым королём фоморов, в Войне деревьев, морфейские оракулы стали определяющей силой в доме Скатах. Хотя эдикты морфейских оракулов не всегда имеют смысл для членов дома, дом единодушно следует им. Однако оракулы предвидели бедствие, если Меч Тетры попадёт в сердце [UmbraGlossaryLocalized('dreaming','Грёз')], и Скатах напал на Гвидиона, пытаясь сдвинуть его с места. Во время последовавшего кровопролития клинок исчез в окружающих Грёзах. Политические последствия битвы привели к тому, что Скатах стали домом изгнанников, и Благие стали избегать их. Тем не менее, члены дома следуют эдиктам оракулов. Несмотря на это единство, дом разделён между подменышами, которые остаются позади, поскольку большинство ши бегут в [UmbraGlossaryLocalized('arcadia','Аркадию')], и [GetScriptedCharacterByHistoryID('POD_fae_character_87').GetFirstName], и её последователями-первородными феями, ищущими [UmbraGlossaryLocalized('sea_of_silver','Море серебра')] в [UmbraGlossaryLocalized('deep_dreaming','Глубоких Грёзах')] для того, чтобы сохранить Осенний мир и победить фоморов."
  sidhe_house_dominance_scathach_objective_decision_tooltip: ""
  sidhe_house_dominance_scathach_objective_decision_confirm: "Сохранить пути."
- sidhe_house_dominance_scathach_objective_decision_custom: "[Concept('shattering', 'Раскол')|E] предотвращён"
+ sidhe_house_dominance_scathach_objective_decision_custom: "[Glossary('Раскол','game_concept_shattering_desc')] предотвращён"
  scathach_victory_modifier: "Эдикты морфейских оракулов"
 
  pod1230objectives_fae.180.t: "Эдикты морфейских оракулов"

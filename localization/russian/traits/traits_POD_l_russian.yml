@@ -642,7 +642,7 @@
  trait_something_unusual_desc: "Что-то в этом есть странное."
 
  trait_revenant: "Ревенант"
- trait_revenant_desc: "Независимый #TOOLTIP:game_concept_ghoul_desc #E гуль#!#!, рожденный с кровью вампира в жилах. Часто их считают нечестивыми гибридами вампиров и смертных, #L $pod_revenants|l$ы#! застряли между двумя мирами."
+ trait_revenant_desc: "Независимый #TOOLTIP:game_concept_ghoul_desc #E гуль#!#!, рожденный с кровью вампира в жилах. Часто их считают нечестивыми гибридами вампиров и смертных, [Glossary('ревенанты','game_concept_revenant_desc')] застряли между двумя мирами."
 
  trait_zadruga: "Задруга"
  trait_zadruga_desc: "Термин Цимисхи для обозначения потомственных гулей. Из всех кланов Цимисхи вывели больше всего семей #TOOLTIP:game_concept_ghoul_desc #E гулей#!#!."
@@ -1416,7 +1416,7 @@
  trait_track_ashen_ambassador: "[ashen_ambassador|E]"
  trait_track_ashen_ambassador_desc: "#bold Вы можете получить опыт этого пути развития свойства, используя взаимодействие персонажа «Посольский визит».#!\n Присягнув на верность чужеземному правителю, этот дипломат путешествует по стране, чтобы найти возможности принести пользу своему покровителю."
 
- trait_track_ashen_grandmaster: "[ashen_grandmaster|E]"
+ trait_track_ashen_grandmaster: "#TOOLTIP:game_concept_ashen_grandmaster_desc #E Пепельный магистр#!#!"
  trait_track_ashen_grandmaster_desc: "#bold Этот опыт можно использовать для улучшения военного ордена безземельного вампира или ваших тактик за безземельного [Glossary('куэй-дзин','game_concept_kuei_jin_desc')]. Его можно получить, выполняя военные или боевые контракты авантюристов.#!\nСреди каинитов существует традиция отрядов солдат, объединенных в организацию с достаточной структурой и общей целью, чтобы считаться военным орденом.\nНа востоке [Glossary('куэй-дзин','game_concept_kuei_jin_desc')] больше стремятся улучшить своё боевое мастерство в стратегическом смысле."
  trait_track_ashen_caravan: "[ashen_caravan|E]"
  trait_track_ashen_caravan_desc: "#bold Этот опыт можно получить, выполняя транспортные контракты.#!\nПепельные хозяева караванов - те немногие персонажи, которые действительно знают, как ориентироваться на смертельно опасных дорогах Мира Тьмы, и предлагают свои услуги всем нуждающимся."
@@ -1485,7 +1485,7 @@
  trait_midnight_warrior_2: "Генерал полуночи"
  trait_midnight_warrior_3: "Владыка полуночи"
  trait_track_midnight_warrior: "Воин полуночи"
- trait_track_midnight_warrior_desc: "#help Вы получаете опыт этого пути, будучи безземельным и используя на нём свой опыт [Concept('ashen_grandmaster', 'пепельного магистра')|E].#!"
+ trait_track_midnight_warrior_desc: "#help Вы получаете опыт этого пути, будучи безземельным и используя на нём свой опыт #TOOLTIP:game_concept_ashen_grandmaster_desc #E пепельного магистра#!#!.#!"
 
  trait_twilight_warrior: "Воин сумерек"
  trait_twilight_warrior_desc: "Сумеречные войны - это небольшие, несмертельные конфликты, которые строго регулируются в обществе [Glossary('куэй-дзин','game_concept_kuei_jin_desc')] и используются для урегулирования эскалации вражды. Они, как правило, подробно, хотя и не всегда практично, учат тактике и стратегиям, используемым в «реальной» войне в дальнейшем."
@@ -1493,7 +1493,7 @@
  trait_twilight_warrior_2: "Генерал сумерек"
  trait_twilight_warrior_3: "Владыка сумерек"
  trait_track_twilight_warrior: "Воин сумерек"
- trait_track_twilight_warrior_desc: "#help Вы получаете опыт этого пути, будучи безземельным и используя на нём свой опыт [Concept('ashen_grandmaster', 'пепельного магистра')|E].#!"
+ trait_track_twilight_warrior_desc: "#help Вы получаете опыт этого пути, будучи безземельным и используя на нём свой опыт #TOOLTIP:game_concept_ashen_grandmaster_desc #E пепельного магистра#!#!.#!"
 
  trait_wayang_kulit: "Вайанг кулит"
  trait_wayang_kulit_desc: "Стиль ведения боя, созданный [Glossary('пенангаллан','podgloss.penangallan')] в Юго-Восточной Азии. Названный в честь яванских игр теней, он широко использует синтай Плоти, чтобы сбить противника с толку."
@@ -1501,7 +1501,7 @@
  trait_wayang_kulit_2: "Господин Вайанг кулит"
  trait_wayang_kulit_3: "Пенангаллан Вайанг кулит"
  trait_track_wayang_kulit: "Ученик Вайанг кулит"
- trait_track_wayang_kulit_desc: "#help Вы получаете опыт этого пути, будучи безземельным и используя на нём свой опыт [Concept('ashen_grandmaster', 'пепельного магистра')|E].#!"
+ trait_track_wayang_kulit_desc: "#help Вы получаете опыт этого пути, будучи безземельным и используя на нём свой опыт #TOOLTIP:game_concept_ashen_grandmaster_desc #E пепельного магистра#!#!.#!"
 
  trait_angered_malkav: "Гнев Сети безумия"
  trait_angered_malkav_desc: "Вы разозлили Сеть безумия и всех, кто с ней связан. Некоторые говорят, что вы даже разозлили что-то или кого-то в самой Сети. Вы уже чувствуете, как множество её когтей вонзается в ваш разум."

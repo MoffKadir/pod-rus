@@ -56,19 +56,19 @@
  TARGET_GAINS_A_SANGUINE_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('sanguine_lifestyle', 'сангвинического резонанса')|E]"
  TARGET_GAINED_A_SANGUINE_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('sanguine_lifestyle', 'сангвинического резонанса')|E]"
 
- GAINS_ANIMAL_LIFESTYLE_XP: "[Concept('animal_lifestyle', 'Опыт животного резонанса')|E] увеличивается на $VALUE|V0$"
- GAINED_ANIMAL_LIFESTYLE_XP: "[Concept('animal_lifestyle', 'Опыт животного резонанса')|E] увеличен на $VALUE|V0$"
- I_GAIN_ANIMAL_LIFESTYLE_XP: "Ваш [Concept('animal_lifestyle', 'опыт животного резонанса')|E] увеличивается на $VALUE|V0$"
- I_GAINED_ANIMAL_LIFESTYLE_XP: "Ваш [Concept('animal_lifestyle', 'опыт животного резонанса')|E] увеличен на $VALUE|V0$"
- TARGET_GAINS_ANIMAL_LIFESTYLE_XP: "[Concept('animal_lifestyle', 'Опыт животного резонанса')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличивается на $VALUE|V0$"
- TARGET_GAINED_ANIMAL_LIFESTYLE_XP: "[Concept('animal_lifestyle', 'Опыт животного резонанса')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличен на $VALUE|V0$"
+ GAINS_ANIMAL_LIFESTYLE_XP: "#TOOLTIP:game_concept_animal_lifestyle_desc #E Опыт животного резонанса#!#! увеличивается на $VALUE|V0$"
+ GAINED_ANIMAL_LIFESTYLE_XP: "#TOOLTIP:game_concept_animal_lifestyle_desc #E Опыт животного резонанса#!#! увеличен на $VALUE|V0$"
+ I_GAIN_ANIMAL_LIFESTYLE_XP: "Ваш #TOOLTIP:game_concept_animal_lifestyle_desc #E опыт животного резонанса#!#! увеличивается на $VALUE|V0$"
+ I_GAINED_ANIMAL_LIFESTYLE_XP: "Ваш #TOOLTIP:game_concept_animal_lifestyle_desc #E опыт животного резонанса#!#! увеличен на $VALUE|V0$"
+ TARGET_GAINS_ANIMAL_LIFESTYLE_XP: "#TOOLTIP:game_concept_animal_lifestyle_desc #E Опыт животного резонанса#!#! [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличивается на $VALUE|V0$"
+ TARGET_GAINED_ANIMAL_LIFESTYLE_XP: "#TOOLTIP:game_concept_animal_lifestyle_desc #E Опыт животного резонанса#!#! [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличен на $VALUE|V0$"
 
- GAINS_A_ANIMAL_LIFESTYLE_PERKPOINT: "Получает $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('animal_lifestyle', 'животного резонанса')|E]"
- GAINED_A_ANIMAL_LIFESTYLE_PERKPOINT: "Получено $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('animal_lifestyle', 'животного резонанса')|E]"
- I_GAIN_A_ANIMAL_LIFESTYLE_PERKPOINT: "Вы получите $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('animal_lifestyle', 'животного резонанса')|E]"
- I_GAINED_A_ANIMAL_LIFESTYLE_PERKPOINT: "Вы получили $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('animal_lifestyle', 'животного резонанса')|E]"
- TARGET_GAINS_A_ANIMAL_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('animal_lifestyle', 'животного резонанса')|E]"
- TARGET_GAINED_A_ANIMAL_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('animal_lifestyle', 'животного резонанса')|E]"
+ GAINS_A_ANIMAL_LIFESTYLE_PERKPOINT: "Получает $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_animal_lifestyle_desc #E животного резонанса#!#!"
+ GAINED_A_ANIMAL_LIFESTYLE_PERKPOINT: "Получено $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_animal_lifestyle_desc #E животного резонанса#!#!"
+ I_GAIN_A_ANIMAL_LIFESTYLE_PERKPOINT: "Вы получите $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_animal_lifestyle_desc #E животного резонанса#!#!"
+ I_GAINED_A_ANIMAL_LIFESTYLE_PERKPOINT: "Вы получили $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_animal_lifestyle_desc #E животного резонанса#!#!"
+ TARGET_GAINS_A_ANIMAL_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_animal_lifestyle_desc #E животного резонанса#!#!"
+ TARGET_GAINED_A_ANIMAL_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_animal_lifestyle_desc #E животного резонанса#!#!"
 
  GAINS_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "Получает $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#!"
  GAINED_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "Получено $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#!"
@@ -692,7 +692,7 @@
  SUPERNAL_AWARENESS_PERK_EFFECT: "Вы получите уведомление, если кто-то собирается убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то попытается соблазнить ваших любовников или супругов.\nУ узников меньше шансов сбежать из вашей темницы.\n#F Ощущение событий и поступков в любой точке мира.#!"
  OMNISCIENCE_PERK_EFFECT: "Вы можете узнать все секреты цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Осознание личностей всех окружающих существ.#!"
  MASTER_OF_THE_DOM_PERK_EFFECT: "Автоматически создаёт (или улучшает) бесплатное здание в каждой провинции вашего столичного графства каждые #V 5#! лет.\n#F Слияние с землей и знание всего, что на ней происходит, а также получение власти над землей и ее жителями.#!"
- MASTER_OF_THE_DOM_PERK_WARNING_EFFECT: "@warning_icon!#X Неприменимо к постройкам [Concept('grand_city', 'великих городов')|E].#!"
+ MASTER_OF_THE_DOM_PERK_WARNING_EFFECT: "@warning_icon!#X Неприменимо к постройкам #TOOLTIP:game_concept_grand_city_desc #E великих городов#!#!.#!"
 
  # Blood Sorcery #
 
