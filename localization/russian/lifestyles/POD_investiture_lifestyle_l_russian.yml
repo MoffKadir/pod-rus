@@ -38,7 +38,7 @@
 
  NEEDS_BE_CHI_USER_FOR_FOCUS_TEXT: "@warning_icon!#X Вы использовать ци, чтобы выбрать этот фокус#!\n"
 
- NEEDS_COMMUNE_WITH_THE_YAMA_KINGS_TEXT: "@warning_icon!#X Чтобы разблокировать это достоинство, вам нужно пообщаться с [Glossary('повелителями Яма','podgloss.yamaking')], расположенными в [Concept('umbra', 'Умбре')|E] - [UmbraGlossary('yomi_wan')].#!"
+ NEEDS_COMMUNE_WITH_THE_YAMA_KINGS_TEXT: "@warning_icon!#X Чтобы разблокировать это достоинство, вам нужно пообщаться с [Glossary('повелителями Яма','podgloss.yamaking')], расположенными в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#! - [UmbraGlossary('yomi_wan')].#!"
 
  demonic_investment_visible: "Демонические дары"
  investments_of_soul_visible: "Дары души"
@@ -176,10 +176,10 @@
  touch_of_yama_kings_perk_name: "Касание [Glossary('повелителей Яма','podgloss.yamaking')]"
  unfolding_scarlet_lotus_perk_name: "Распустившийся алый лотос"
 
- MASK_OF_YOMI_PERK_EFFECT: "Свойство «[GetTrait('infernalist').GetName( GetPlayer )]» будет автоматически скрыто при раскрытии.\nОтменяет все принудительные изменения внешнего вида от даров.\n#F Дары персонажа больше не подают признаков. Никакие допытывания разума, исследования души или выведывание истины не смогут установить, что персонаж является [Concept('akuma', 'акума')|E], или заставить его выдать свою неправедную деятельность.#!"
- BLACK_WHISPERS_PERK_EFFECT: "Позволяет раскрыть все секреты и происки цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Шпионы [Glossary('повелителей Яма','podgloss.yamaking')] повсюду, и то, что не видят и не слышат [Concept('akuma', 'акума')|E], узнают их приспешники-духи.#!"
+ MASK_OF_YOMI_PERK_EFFECT: "Свойство «[GetTrait('infernalist').GetName( GetPlayer )]» будет автоматически скрыто при раскрытии.\nОтменяет все принудительные изменения внешнего вида от даров.\n#F Дары персонажа больше не подают признаков. Никакие допытывания разума, исследования души или выведывание истины не смогут установить, что персонаж является #TOOLTIP:game_concept_akuma_desc #E акума#!#!, или заставить его выдать свою неправедную деятельность.#!"
+ BLACK_WHISPERS_PERK_EFFECT: "Позволяет раскрыть все секреты и происки цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Шпионы [Glossary('повелителей Яма','podgloss.yamaking')] повсюду, и то, что не видят и не слышат #TOOLTIP:game_concept_akuma_desc #E акума#!#!, узнают их приспешники-духи.#!"
  EBON_FOUNTAIN_PERK_EFFECT: "Вы теряете 10 [Concept('stress', 'стресса')|E] каждый месяц.\n#F П'о персонажа связано с источником демонической силы.#!"
- LUCK_OF_YOMI_PERK_EFFECT: "Позволяет тратить очки инвеституры через [Concept('decision', 'решение')|E], чтобы получить золото и престиж. Если решение уже разблокировано, оно принесёт больше золота.\n#F Повелители Яма изменяют удачу персонажа, и в результате судьба становится благосклонней к [Concept('akuma', 'акума')|E].#!"
+ LUCK_OF_YOMI_PERK_EFFECT: "Позволяет тратить очки инвеституры через [Concept('decision', 'решение')|E], чтобы получить золото и престиж. Если решение уже разблокировано, оно принесёт больше золота.\n#F Повелители Яма изменяют удачу персонажа, и в результате судьба становится благосклонней к #TOOLTIP:game_concept_akuma_desc #E акума#!#!.#!"
  SAVAGE_KISS_PERK_EFFECT: "#F Душа персонажа подвергается ласкам Мукадэ.#!"
  UNION_OF_OPPOSITIONS_PERK_EFFECT: "#F [Glossary('Повелители Яма','podgloss.yamaking')] возложили на персонажа свои руки, и он был переделан.#!"
  IRON_HANDS_PERK_EFFECT: "#F Теперь персонаж движется, опираясь на мощь [Glossary('повелителей Яма','podgloss.yamaking')].#!"

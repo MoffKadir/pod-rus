@@ -20,8 +20,8 @@
  NOT_is_a_cultist: "#Bold Не#! является культистом"
  is_a_demonic: "Является демоном"
  NOT_is_a_demonic: "#Bold Не#! является демоном"
- is_a_akuma: "Является [Concept('akuma', 'акума')|E]"
- NOT_is_a_akuma: "#Bold Не#! является [Concept('akuma', 'акума')|E]"
+ is_a_akuma: "Является #TOOLTIP:game_concept_akuma_desc #E акума#!#!"
+ NOT_is_a_akuma: "#Bold Не#! является #TOOLTIP:game_concept_akuma_desc #E акума#!#!"
  is_a_diablerist: "Является диаблеристом"
  is_a_thinblood: "Является слабокровным"
  NOT_is_a_thinblood: "#Bold Не#! является слабокровным"
@@ -103,8 +103,8 @@
  HAS_RELATION_KNOWN_TRUE_NAME_BY_TARGET: "Знает истинное имя [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  NOT_HAS_RELATION_KNOWN_TRUE_NAME_BY_TARGET: "Не знает истинное имя [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
- POD_IS_IN_SAME_PLANE_TOOLTIP: "[TARGET_CHARACTER.GetFirstName] #bold не#! находится в [Concept('umbra', 'Умбре')|E]."
- NOT_POD_IS_IN_SAME_PLANE_TOOLTIP: "[TARGET_CHARACTER.GetFirstName] находится в [Concept('umbra', 'Умбре')|E], а [CHARACTER.GetFirstName] #bold не#! находится в [Concept('umbra', 'Умбре')|E]."
+ POD_IS_IN_SAME_PLANE_TOOLTIP: "[TARGET_CHARACTER.GetFirstName] #bold не#! находится в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!."
+ NOT_POD_IS_IN_SAME_PLANE_TOOLTIP: "[TARGET_CHARACTER.GetFirstName] находится в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!, а [CHARACTER.GetFirstName] #bold не#! находится в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!."
 
  DOMAIN_LIMIT_AVAILABLE_TRIGGER: "Имеет предел доменов - $COMPARATOR$ $NUM|V0$"
  NOT_HAS_DYNASTY_PERK_NONE: "[dynasty|E] #bold не#! имеет наследия «[DYNASTY_PERK.GetName]»"

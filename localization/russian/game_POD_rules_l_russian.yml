@@ -43,7 +43,7 @@
 
  rule_pod_seek_knowledge_cost_increase: "$POD_gamerule$ Стоимость изучения новых способностей"
  setting_pod_seek_knowledge_cost_increase_enabled: "Увеличивается"
- setting_pod_seek_knowledge_cost_increase_enabled_desc: "Каждый раз, когда вы начинаете [Concept('journey', 'странствие')|E], чтобы выучить новую способность, стоимость последующих путешествий увеличивается."
+ setting_pod_seek_knowledge_cost_increase_enabled_desc: "Каждый раз, когда вы начинаете #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы выучить новую способность, стоимость последующих путешествий увеличивается."
  setting_pod_seek_knowledge_cost_increase_disabled: "#high @haight_icon! Не увеличивается#!"
  setting_pod_seek_knowledge_cost_increase_disabled_desc: "Стоимость #L $pod_journeys|l$ий#! для изучения новых способностей не увеличивается."
 
@@ -55,9 +55,9 @@
 
  rule_pod_charjoin_decisions: "$POD_gamerule$ Решения по созданию персонажа"
  setting_pod_charjoin_decisions_disabled: "Отключено"
- setting_pod_charjoin_decisions_disabled_desc: "Решения и взаимодействия, изменяющие ваш [Concept('splat', 'вид')|E] (например, просьба [Concept('Embrace', 'Объятий')|E] или становление гулем, осушив пленника-вампира), не действуют, если вы не используете внутриигрового редактора персонажей."
+ setting_pod_charjoin_decisions_disabled_desc: "Решения и взаимодействия, изменяющие ваш #TOOLTIP:game_concept_splat_desc #E вид#!#! (например, просьба [Concept('Embrace', 'Объятий')|E] или становление гулем, осушив пленника-вампира), не действуют, если вы не используете внутриигрового редактора персонажей."
  setting_pod_charjoin_decisions_enabled: "#high @haight_icon! Включено#!"
- setting_pod_charjoin_decisions_enabled_desc: "Решения и взаимодействия, изменяющие ваш [Concept('splat', 'вид')|E] (например, просьба [Concept('Embrace', 'Объятий')|E] или становление гулем, осушив пленника-вампира), включены."
+ setting_pod_charjoin_decisions_enabled_desc: "Решения и взаимодействия, изменяющие ваш #TOOLTIP:game_concept_splat_desc #E вид#!#! (например, просьба [Concept('Embrace', 'Объятий')|E] или становление гулем, осушив пленника-вампира), включены."
 
  rule_pod_numina_on_birth: "$POD_gamerule$ Нумина при рождении"
  setting_pod_numina_on_birth_default: "Ограничено"
@@ -69,7 +69,7 @@
  setting_pod_sorcery_availability_restricted: "Ограничено"
  setting_pod_sorcery_availability_restricted_desc: "Только бастет и человекоподобные виды, такие как охотники, гули или [GetTrait('kinfolk').GetName(GetNullCharacter)] могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nПосле [Concept('Embrace', 'Объятий')|E] оно превращается в [GetTrait('bloodsorcery').GetName(GetNullCharacter)|l]."
  setting_pod_sorcery_availability_unrestricted: "#high @haight_icon! Без ограничений#!"
- setting_pod_sorcery_availability_unrestricted_desc: "Все [Concept('splat', 'виды')|E] могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nСвойство сохраняется после [Concept('Embrace', 'Объятий')|E]."
+ setting_pod_sorcery_availability_unrestricted_desc: "Все #TOOLTIP:game_concept_splat_desc #E виды#!#! могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nСвойство сохраняется после [Concept('Embrace', 'Объятий')|E]."
 
  rule_pod_splat_mixing: "$POD_gamerule$ Смешение видов"
  setting_pod_splat_mixing_default: "По умолчанию"
@@ -267,11 +267,11 @@
  setting_journey_cost_mult_0: "#high 0x#!"
  setting_journey_cost_mult_0_desc: "#L $pod_journeys$ия#! ничего не стоят."
  setting_journey_cost_mult_05: "#high 0.5x#!"
- setting_journey_cost_mult_05_desc: "Затраты на [Concept('journey', 'странствие')|E] снижаются вдвое."
+ setting_journey_cost_mult_05_desc: "Затраты на #TOOLTIP:game_concept_journey_desc #E странствие#!#! снижаются вдвое."
  setting_journey_cost_mult_1: "1x"
  setting_journey_cost_mult_1_desc: "#L $pod_journeys$ия#! стоят как обычно."
  setting_journey_cost_mult_2: "#high 2x#!"
- setting_journey_cost_mult_2_desc: "Расходы на [Concept('journey', 'странствия')|E] удваиваются."
+ setting_journey_cost_mult_2_desc: "Расходы на #TOOLTIP:game_concept_journey_desc #E странствия#!#! удваиваются."
 
  rule_journey_provoke_vatican_requirements: "$POD_gamerule$ [journey|E]: $provoke_vatican_name$"
  setting_journey_provoke_vatican_default: "Ограничения по умолчанию"
@@ -341,9 +341,9 @@
 
  rule_pod_sorcery_6th_perk_requirements: "$POD_gamerule$ Шестое достоинство в чародействе"
  setting_pod_sorcery_6th_perk_requirements_always_unlocked: "#high Всегда открыто#!"
- setting_pod_sorcery_6th_perk_requirements_always_unlocked_desc: "Вы можете выбрать чародейские способности с 6 точками, как и любое другое достоинство, без необходимости завершать [Concept('journey', 'странствие')|E]."
+ setting_pod_sorcery_6th_perk_requirements_always_unlocked_desc: "Вы можете выбрать чародейские способности с 6 точками, как и любое другое достоинство, без необходимости завершать #TOOLTIP:game_concept_journey_desc #E странствие#!#!."
  setting_pod_sorcery_6th_perk_requirements_unlockable: "Заблокировано"
- setting_pod_sorcery_6th_perk_requirements_unlockable_desc: "Вам нужно завершить долгое [Concept('journey', 'странствие')|E], прежде чем вы сможете выбрать чародейские способности с 6 точками."
+ setting_pod_sorcery_6th_perk_requirements_unlockable_desc: "Вам нужно завершить долгое #TOOLTIP:game_concept_journey_desc #E странствие#!#!, прежде чем вы сможете выбрать чародейские способности с 6 точками."
  setting_pod_sorcery_6th_perk_requirements_disabled: "#high Отключено#!"
  setting_pod_sorcery_6th_perk_requirements_disabled_desc: "Чародейские способности с 6 точками недоступны."
 
@@ -359,9 +359,9 @@
  setting_pod_tournament_restrictions_default: "По умолчанию"
  setting_pod_tournament_restrictions_default_desc: "В #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#! могут участвовать персонажи с кровью фей и независимые охотники."
  setting_pod_tournament_restrictions_fewer: "#high Меньше ограничений#!"
- setting_pod_tournament_restrictions_fewer_desc: "Все [Concept('splat', 'виды')|E], которые могут есть человеческую пищу и ходить под солнечным светом, могут участвовать в #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#!."
+ setting_pod_tournament_restrictions_fewer_desc: "Все #TOOLTIP:game_concept_splat_desc #E виды#!#!, которые могут есть человеческую пищу и ходить под солнечным светом, могут участвовать в #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#!."
  setting_pod_tournament_restrictions_none: "#high Без ограничений#!"
- setting_pod_tournament_restrictions_none_desc: "Все [Concept('splat', 'виды')|E] могут участвовать в #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#!. Это приведёт к #N бессмысленным#! событиям."
+ setting_pod_tournament_restrictions_none_desc: "Все #TOOLTIP:game_concept_splat_desc #E виды#!#! могут участвовать в #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#!. Это приведёт к #N бессмысленным#! событиям."
 
  #rule_POD_wheel_of_ages_speed: "$POD_gamerule$ Скорость Колеса эпох"
  #setting_POD_wheel_of_ages_speed_slow: "#high Медленно#!"

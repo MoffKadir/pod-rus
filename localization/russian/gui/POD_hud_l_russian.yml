@@ -15,7 +15,7 @@
 
  POD_hint_window_prison: "Показать пленников"
 
- POD_hunger_window_hunt_in_capital: "Являясь вампиром, вы можете отправиться в [Concept('journey', 'странствие')|E], чтобы охотиться на смертных в своей столице."
+ POD_hunger_window_hunt_in_capital: "Являясь вампиром, вы можете отправиться в #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы охотиться на смертных в своей столице."
  POD_hunger_window_hunt_in_capital_inprogress: "#help Вы уже охотитесь на смертных в своей столице.#!"
  POD_hunger_window_regen: "[GetPlayer.Custom('PODBloodRegenHint')]"
  POD_hunger_window_regen_revenant: "Поскольку у вас имеется свойство «[GetTrait('revenant').GetName(GetPlayer)]», вы автоматически теряете #V 1#! ед. #L $pod_hunger_with_icon$а#! в месяц."

@@ -97,7 +97,7 @@
  paleontologist_modifier_desc: "Этот персонаж - знаток доисторических существ."
 
  yin_portal_modifier: "Портал в [UmbraGlossaryLocalized('shadowlands','мир Инь')]"
- yang_portal_modifier: "Портал в [Concept('yang_world', 'мир Ян')|E]"
+ yang_portal_modifier: "Портал в [Glossary('мир Ян','game_concept_yang_world_desc')]"
 
  dragon_story_modifier: "Питомец-дракон"
  dragon_story_modifier_desc: "Этого персонажа сопровождает питомец - небольшой дракончик."
@@ -135,20 +135,20 @@
  doomslayer_modifier: "Палач Рока"
  doomslayer_modifier_desc: "Палач Рока - это призрак, избранный для службы в особой группе, занимающейся исследованием и сражениями в [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринте')]. У Палачей может быть любое число поручений, от простой разведки в [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринте')] до поимки конкретного спектра."
 
- umbra_explorer_cost_modifier: "Жалованье исследователя [Concept('umbra', 'Умбры')|E]"
- MODIFIER_DEFINITION_UMBRA_EXPLORER_SALARY: "\t#weak Жалованье за каждого исследователя [Concept('umbra', 'Умбры')|E] (на самом деле #N -2.5%#!)#!"
+ umbra_explorer_cost_modifier: "Жалованье исследователя #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
+ MODIFIER_DEFINITION_UMBRA_EXPLORER_SALARY: "\t#weak Жалованье за каждого исследователя #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! (на самом деле #N -2.5%#!)#!"
 
- umbra_action_diplomacy_train_modifier: "Дипломатическая тренировка [Concept('umbra', 'Умбры')|E]"
+ umbra_action_diplomacy_train_modifier: "Дипломатическая тренировка #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
  umbra_action_diplomacy_train_modifier_desc: "$POD_umbra_diplomacy.desc$"
- umbra_action_martial_train_modifier: "Военная тренировка [Concept('umbra', 'Умбры')|E]"
+ umbra_action_martial_train_modifier: "Военная тренировка #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
  umbra_action_martial_train_modifier_desc: "$POD_umbra_martial.desc$"
- umbra_action_stewardship_train_modifier: "Управленческая тренировка [Concept('umbra', 'Умбры')|E]"
+ umbra_action_stewardship_train_modifier: "Управленческая тренировка #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
  umbra_action_stewardship_train_modifier_desc: "$POD_umbra_stewardship.desc$"
- umbra_action_intrigue_train_modifier: "Интриганская тренировка [Concept('umbra', 'Умбры')|E]"
+ umbra_action_intrigue_train_modifier: "Интриганская тренировка #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
  umbra_action_intrigue_train_modifier_desc: "$POD_umbra_intrigue.desc$"
- umbra_action_learning_train_modifier: "Образованная тренировка [Concept('umbra', 'Умбры')|E]"
+ umbra_action_learning_train_modifier: "Образованная тренировка #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
  umbra_action_learning_train_modifier_desc: "$POD_umbra_learning.desc$"
- umbra_search_innovation_modifier: "Поиск инноваций [Concept('umbra', 'Умбры')|E]"
+ umbra_search_innovation_modifier: "Поиск инноваций #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
  umbra_search_innovation_modifier_desc: "Поиск [Concept('inventium', 'Изобретариума')|E]."
 
  seat_of_burning_waters_modifier: "Уроки Средоточия Горящих вод"
@@ -174,7 +174,7 @@
  memory_tower_modifier_desc: "Башни памяти - это огромные, непроницаемые объекты, разбросанные по всему [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринту')]. Они используются малфеанами для того, чтобы скрывать информацию от Разума улья, скрывая её от самих себя. Если никто в Разуме улья не знает о чём-то, этот факт отсутствует в сознании всего Разума улья, поэтому малфеане могут держать что-то в безопасности."
 
  gods_arrow_modifier: "Отслеживание Стрелы Бога"
- gods_arrow_modifier_desc: "Многие Башни памяти содержат заговоры, планы и тому подобное, а в других хранятся реликвии, которые, по мнению малфеан, слишком опасны или полезны, чтобы позволить другим обладать ими или даже знать об их существовании. У Бабушки есть Башня памяти, в которой хранится Стрела Бога. Малфеане не знают точной природы Стрелы Бога, но понимают, что она не хочет, чтобы кто-то приблизился к ней.\n#weak Теперь мы можете приступить к поискам Стрелы Бога при обнаружении открытия [Concept('umbra', 'Умбры')|E].#!"
+ gods_arrow_modifier_desc: "Многие Башни памяти содержат заговоры, планы и тому подобное, а в других хранятся реликвии, которые, по мнению малфеан, слишком опасны или полезны, чтобы позволить другим обладать ими или даже знать об их существовании. У Бабушки есть Башня памяти, в которой хранится Стрела Бога. Малфеане не знают точной природы Стрелы Бога, но понимают, что она не хочет, чтобы кто-то приблизился к ней.\n#weak Теперь мы можете приступить к поискам Стрелы Бога при обнаружении открытия #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!.#!"
  abel_modifier: "Авель"
  abel_modifier_desc: "Авель - второй сын Адама и Евы, который был убит своим братом Каином, что стало первым известным случаем убийства.\n#weak Позволяет убить выбранного персонажа через [Concept('character_interaction', 'взаимодействие персонажа')|E].#!"
 

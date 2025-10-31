@@ -752,7 +752,7 @@
  #Depending on where they stand on these two scales, their appearance and supernatural power fluctuates. This fundamental difference forever separates the Laibon from the 'typical' [cainite|E]."
  #Contrary to the Kindred, no Laibon follows the Path of Humanity, nor any other Path of Enlightenment for that matter. Instead,
  doctrine_enlightenment_virtues_direction_north_name: "Север"
- doctrine_enlightenment_virtues_direction_north_desc: "Стереотипно считающиеся суровыми, справедливыми и логичными, [GetTrait('kueijin').GetName( GetNullCharacter )|l] севера служат судьями и магистратами для своего рода, обычно разрешают споры и охотятся на преступников и [Concept('akuma', 'акума')|E]."
+ doctrine_enlightenment_virtues_direction_north_desc: "Стереотипно считающиеся суровыми, справедливыми и логичными, [GetTrait('kueijin').GetName( GetNullCharacter )|l] севера служат судьями и магистратами для своего рода, обычно разрешают споры и охотятся на преступников и #TOOLTIP:game_concept_akuma_desc #E акума#!#!."
  doctrine_enlightenment_virtues_direction_east_name: "Восток"
  doctrine_enlightenment_virtues_direction_east_desc: "Принято считать, что они наиболее комфортно чувствуют себя среди людей, а [GetTrait('kueijin').GetName( GetNullCharacter )|l] востока считаются фермерами, взращивая Алые ширмы и ухаживая за своим смертным стадом."
  doctrine_enlightenment_virtues_direction_south_name: "Юг"
@@ -833,19 +833,19 @@
  doctrine_parameter_hostility_override_ignorance_hostility_doctrine: "Невежественные [faiths|El], такие как Невинность смертных, не считают сверхъестественных существ мира Тьмы угрозой. Конфессии, желающие держать смертных в неведении, воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$ или $hostility_evil_tooltippable$"
 
  special_doctrine_fivefold_path_kindred_name: "Пятикратный путь"
- special_doctrine_fivefold_path_kindred_desc: "Пять традиционных [Glossary('дхарм','podgloss.dharma')], созданных первым [Glossary('архатом','podgloss.arhat')], [GetScriptedCharacterByHistoryID('791111').GetFirstName]. Они составляют традиционное ядро общества [Concept('kuei_jin', 'куэй-дзин')|E].\nПоследователи Пятикратного пути считают еретические [Glossary('дхармы','podgloss.dharma')] болезненно заблуждающимися глупцами или опасными предателями, которых необходимо уничтожить навсегда."
+ special_doctrine_fivefold_path_kindred_desc: "Пять традиционных [Glossary('дхарм','podgloss.dharma')], созданных первым [Glossary('архатом','podgloss.arhat')], [GetScriptedCharacterByHistoryID('791111').GetFirstName]. Они составляют традиционное ядро общества [Glossary('куэй-дзин','game_concept_kuei_jin_desc')].\nПоследователи Пятикратного пути считают еретические [Glossary('дхармы','podgloss.dharma')] болезненно заблуждающимися глупцами или опасными предателями, которых необходимо уничтожить навсегда."
  doctrine_parameter_hostility_override_special_doctrine_fivefold_path_kindred: "Другие [faiths|El] [GetTrait('kueijin').GetName( GetNullCharacter )] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_fivefold_path_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как #V враждебные#!"
 
  anda_hostility_name: "Отношение к [Glossary('Анда','podgloss.anda')]"
  special_doctrine_is_anda_faith_name: "[Glossary('Анда','podgloss.anda')]"
- special_doctrine_is_anda_faith_desc: "[Concept('faiths', 'Конфессии')|E] [Glossary('Анда','podgloss.anda')], союзники [Concept('akuma', 'акума')|E] при дворе Черной черепахи, являются врагами лоялистов $pod_wan_kuei$."
+ special_doctrine_is_anda_faith_desc: "[Concept('faiths', 'Конфессии')|E] [Glossary('Анда','podgloss.anda')], союзники #TOOLTIP:game_concept_akuma_desc #E акума#!#! при дворе Черной черепахи, являются врагами лоялистов $pod_wan_kuei$."
  doctrine_parameter_hostility_override_special_doctrine_is_anda_faith: "[faiths|E] [Glossary('Анда','podgloss.anda')] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]."
  doctrine_parameter_is_anda_faith_opinion_active: "" # Make loca empty to hidden this like vanilla
  doctrine_parameter_opinion_of_is_anda_faith_opinion_active: "[Concept('opinion', 'Мнение')|E] к [Concept('faiths', 'конфессиям')|E] [Glossary('Анда','podgloss.anda')]: $VALUE|+=0$"
  is_anda_faith_opinion_active_county_opinion_name: "[Glossary('Анда','podgloss.anda')]"
  is_anda_faith_opinion_active_opinion_name: "Монгольское нашествие"
  special_doctrine_allied_to_anda_hostility_name: "Оппортунистские союзники"
- special_doctrine_allied_to_anda_hostility_desc: "[Concept('akuma', 'Акума')|E] рассматривают [Glossary('Анда','podgloss.anda')] как благодатную почву для проникновения и косвенно помогают им разрушить традиционные дворы."
+ special_doctrine_allied_to_anda_hostility_desc: "#TOOLTIP:game_concept_akuma_desc #E Акума#!#! рассматривают [Glossary('Анда','podgloss.anda')] как благодатную почву для проникновения и косвенно помогают им разрушить традиционные дворы."
  doctrine_parameter_allied_to_anda_opinion_active: "" # Make loca empty to hidden this like vanilla
  doctrine_parameter_opinion_of_allied_to_anda_opinion_active: "$VALUE|+=0$ Бонус к [Concept('opinion', 'мнению')|E] с [Concept('faiths', 'конфессиями')|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_allied_to_anda_hostility').GetBaseName]»"
  doctrine_parameter_hostility_override_special_doctrine_allied_to_anda_hostility: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_allied_to_anda_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
@@ -1151,7 +1151,7 @@
  doctrine_parameter_hostility_override_demons_hostility_doctrine: "[faiths|E] #L [GetTrait('demon').GetName( GetPlayer )|l]ов#! воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_doctrine_demonic_accepted: "Демонические [faiths|El] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
- doctrine_parameter_access_to_underworld: "Даёт доступ к [UmbraGlossaryLocalized('shadowlands','Загробному миру')] во время путешествия по [Concept('umbra', 'Умбре')|E]."
+ doctrine_parameter_access_to_underworld: "Даёт доступ к [UmbraGlossaryLocalized('shadowlands','Загробному миру')] во время путешествия по #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!."
 
  seasons_time_name: "Время года"
  doctrine_winter_time_name: "Зима"

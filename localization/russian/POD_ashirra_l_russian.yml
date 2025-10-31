@@ -34,9 +34,9 @@
  POD_ulama_learning_tooltip: "Каждый год у этого персонажа есть возможность получить [Concept('perk', 'достоинство')|E] в [Concept('learning_lifestyle', 'пути учёности')|E] «[GetTrait('theologian').GetName(GetNullCharacter)]» и «[GetTrait('scholar').GetName(GetNullCharacter)]», пока у него не появятся оба свойства. Этот шанс повышается за счёт его [Concept('aptitude', 'пригодности')|E]."
  court_ulama_study_theology_title: "Улем добивается успехов"
  POD_mullah_warriors: "Призвать верующих"
- POD_mullah_warriors_desc: "Многие члены [Concept('ashirra', 'Аширры')|E] готовы сразиться с врагами Аллаха. Они не отвергнут призыв муллы."
+ POD_mullah_warriors_desc: "Многие члены [Glossary('Аширры','game_concept_ashirra_desc')] готовы сразиться с врагами Аллаха. Они не отвергнут призыв муллы."
  POD_mullah_zealots: "Возглавить набожных"
- POD_mullah_zealots_desc: "$ashirra_mullah_court_position$ пользуется большим уважением в рядах [Concept('ashirra', 'Аширры')|E]. Его слова могут поколебать даже самых циничных верующих. Те, кто поддерживает его, поддержат и вас."
+ POD_mullah_zealots_desc: "$ashirra_mullah_court_position$ пользуется большим уважением в рядах [Glossary('Аширры','game_concept_ashirra_desc')]. Его слова могут поколебать даже самых циничных верующих. Те, кто поддерживает его, поддержат и вас."
 
 
  ####Cairo related####
@@ -62,7 +62,7 @@
  learned_kufr_blood_magic_modifier: "Лже-верующий"
 
  ####Misc####
- has_only_one_ashirra_court_position_tooltip: "Этот персонаж #bold не#! занимает другую [Concept('court_position', 'придворную должность')|E] [Concept('ashirra', 'Аширры')|E]"
+ has_only_one_ashirra_court_position_tooltip: "Этот персонаж #bold не#! занимает другую [Concept('court_position', 'придворную должность')|E] [Glossary('Аширры','game_concept_ashirra_desc')]"
  non_sihr_bloodsorcery_learning_penalty_tooltip: "#warning Вы получаете штраф из-за эффекта доктрины [GetDoctrine('doctrine_bloodsorcery_kufr').GetBaseName]#!"
  willing_embrace_cd_tooltip: "За последнее десятилетие не было отказа в обращении"
 

@@ -129,12 +129,12 @@
  REALM_TIME_4_PERK_EFFECT: "Модификаторы [Concept('cantrip', 'заклятия')|E] теперь действуют #V 10#! лет вместо #V 5#! лет.\nСнижает время восстановления [Concept('cantrip', 'заклятия')|E] на одну единицу."
  REALM_TIME_5_PERK_EFFECT: "Модификаторы [Concept('cantrip', 'заклятия')|E] теперь действуют вечно.\nБольше нет времени восстановления [Concept('cantrip', 'заклятия')|E]."
 
- NOT_has_realm_actor_trait: "@warning_icon!#X Вы #bold не#! завершили [Concept('journey', 'странствие')|E], чтобы достичь [GetTrait('realm_actor').GetName( GetPlayer )|l]#!"
- NOT_has_realm_fae_trait: "@warning_icon!#X Вы #bold не#! завершили [Concept('journey', 'странствие')|E], чтобы достичь [GetTrait('realm_fae').GetName( GetPlayer )|l]#!"
- NOT_has_realm_prop_trait: "@warning_icon!#X Вы #bold не#! завершили [Concept('journey', 'странствие')|E], чтобы достичь [GetTrait('realm_prop').GetName( GetPlayer )|l]#!"
- NOT_has_realm_nature_trait: "@warning_icon!#X Вы #bold не#! завершили [Concept('journey', 'странствие')|E], чтобы достичь [GetTrait('realm_nature').GetName( GetPlayer )|l]#!"
- NOT_has_realm_scene_trait: "@warning_icon!#X Вы #bold не#! завершили [Concept('journey', 'странствие')|E], чтобы достичь [GetTrait('realm_scene').GetName( GetPlayer )|l]#!"
- NOT_has_realm_time_trait: "@warning_icon!#X Вы #bold не#! завершили [Concept('journey', 'странствие')|E], чтобы достичь [GetTrait('realm_time').GetName( GetPlayer )|l]#!"
+ NOT_has_realm_actor_trait: "@warning_icon!#X Вы #bold не#! завершили #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы достичь [GetTrait('realm_actor').GetName( GetPlayer )|l]#!"
+ NOT_has_realm_fae_trait: "@warning_icon!#X Вы #bold не#! завершили #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы достичь [GetTrait('realm_fae').GetName( GetPlayer )|l]#!"
+ NOT_has_realm_prop_trait: "@warning_icon!#X Вы #bold не#! завершили #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы достичь [GetTrait('realm_prop').GetName( GetPlayer )|l]#!"
+ NOT_has_realm_nature_trait: "@warning_icon!#X Вы #bold не#! завершили #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы достичь [GetTrait('realm_nature').GetName( GetPlayer )|l]#!"
+ NOT_has_realm_scene_trait: "@warning_icon!#X Вы #bold не#! завершили #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы достичь [GetTrait('realm_scene').GetName( GetPlayer )|l]#!"
+ NOT_has_realm_time_trait: "@warning_icon!#X Вы #bold не#! завершили #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы достичь [GetTrait('realm_time').GetName( GetPlayer )|l]#!"
 
  ### Common Art ###
 
@@ -462,8 +462,8 @@
  PERMANENCE_PERK_EFFECT: "Позволяет обновить модификатор заклятия цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Продлевает срок действия искусства, наложенного другим заклинателем, позволяя ему действовать значительно дольше, чем было изначально предписано результатом.#!"
  REVERSA_OF_FORTUNE_PERK_EFFECT: "Позволяет выдать себе модификатор [GetModifier( 'reversa_of_fortune_perk_modifier' ).GetNameWithTooltip|L] на #V 1#! день через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Чрезвычайно сложное и дорогое искусство, которое позволяет пользователю отмотать назад последние несколько минут и сделать новый выбор.#!"
  FIND_SILVER_PATH_PERK_EFFECT: "#F Показывает местоположение Серебряной тропы - пути, который ведет фей по всем [UmbraGlossaryLocalized('dreaming','Грёзам')], и предоставляет информацию о том, кто или что в данный момент находится на нем.#!"
- DETERMINISM_PERK_EFFECT: "Вероятность события находки в [Concept('umbra', 'Умбре')|E]: $pod_grace_i$#P +100%#!\n#F Показывает, что находится на другом конце трода, таинственного пути [UmbraGlossaryLocalized('dreaming','Грёз')], на котором пространство и время сильно искажены.#!"
- THE_MERRY_DANCE_PERK_EFFECT: "Вероятность события находки в [Concept('umbra', 'Умбре')|E]: $pod_grace_i$#P +100%#!\n#F Фирхлис - могущественная сила в мифических измерениях. Грёзы постоянно меняются, и Фирхлис - ключевой источник этих изменений. Опытные феи могут, сосредоточившись и подготовившись, влиять на изменения, которые приносит Фирхлис.#!"
+ DETERMINISM_PERK_EFFECT: "Вероятность события находки в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!: $pod_grace_i$#P +100%#!\n#F Показывает, что находится на другом конце трода, таинственного пути [UmbraGlossaryLocalized('dreaming','Грёз')], на котором пространство и время сильно искажены.#!"
+ THE_MERRY_DANCE_PERK_EFFECT: "Вероятность события находки в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!: $pod_grace_i$#P +100%#!\n#F Фирхлис - могущественная сила в мифических измерениях. Грёзы постоянно меняются, и Фирхлис - ключевой источник этих изменений. Опытные феи могут, сосредоточившись и подготовившись, влиять на изменения, которые приносит Фирхлис.#!"
  HOMESTEAD_PERK_EFFECT: "Открывает постройку [GetBuilding('homestead_freehold_01').GetName].\n#F Исправляет один из точек [UmbraGlossaryLocalized('dreaming','Грёз')] так, что вместо того, чтобы постоянно меняться по прихоти Вильда, он остается таким, каким его задумал заклинатель.#!"
  ANCHOR_PERK_EFFECT: "Время открытия [Concept('building', 'построек')|E] [UmbraGlossaryLocalized('dreaming','Грёз')]: #P -50%#!\n#F С помощью этого заклинания подменыш может «укрепить» [UmbraGlossaryLocalized('dreaming','Грёзы')] до определенной степени, что позволяет ему создать постоянную крепость в мифическом измерении.#!"
  ATTUNEMENT_PERK_EFFECT: "Вы получите уведомление, если кто-то собирается убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то вознамерится соблазнить ваших любовников или супругов.\nУ пленника меньше шансов сбежать из вашей темницы.\n#F Привязывает китэйн к персонажу, месту или предмету, делая так, что, что бы с ним ни случилось, китэйн узнает об этом первым.#!"
@@ -864,5 +864,5 @@
  THE_TYPHOONS_EYE_PERK_EFFECT: "#F Тай-ци дарует шинма силу проходить сквозь бури невредимыми.#!"
  THE_BENEVOLENT_HAND_OF_JADE_PERK_EFFECT: "#F Эта И-Ци делает невероятное вероятным...#!"
  BACKSIDE_OF_THE_MONKEY_KING_PERK_EFFECT: "#F Эта И-Ци делает вероятное невероятным...#!"
- FORTIFY_THE_WALL_PERK_EFFECT: "Разблокирует опцию «Манипулировать Стеной» на панели [Concept('umbra', 'Умбры')|E].\n#F Обладатель ключа может временно укрепить Стену в каком-либо месте.#!"
+ FORTIFY_THE_WALL_PERK_EFFECT: "Разблокирует опцию «Манипулировать Стеной» на панели #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!.\n#F Обладатель ключа может временно укрепить Стену в каком-либо месте.#!"
  UNLOCK_THE_JADE_PORTAL_PERK_EFFECT: "#F Открытие и выход за пределы Стены.#!"

@@ -70,7 +70,7 @@
  LORE_COMMAND_THE_FLAME_PERK_EFFECT: "Накладывает на каждого правителя противоположной стороны модификатор [GetModifier('lore_command_the_flame_modifier').GetNameWithTooltip] при начале [Concept('war', 'войны')|E] в качестве основного атакующего или защитника.\n#flavor Падшие могут повелевать пламенем божественности.#!"
  LORE_AURA_OF_LEGEND_PERK_EFFECT: "#flavor Падшие могут предстать в образе живой легенды или даже бога.#!"
  LORE_THE_MARK_OF_THE_CELESITALS_PERK_EFFECT: "Вы можете наделить вашу цель модификатором [GetModifier('lore_the_mark_of_the_celesitals_good_modifier').GetNameWithTooltip] или [GetModifier('lore_the_mark_of_the_celesitals_bad_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут оставить божественную метку на другом человеке, наделив его удачей или невезением.#!"
- LORE_HAND_OF_FAITH_PERK_EFFECT: "Можно изгонять призраков, фей или демонов в их родные миры [Concept('umbra', 'Умбры')|E].\n#flavor Падшие могут изгнать существ, не созданных Богом.#!"
+ LORE_HAND_OF_FAITH_PERK_EFFECT: "Можно изгонять призраков, фей или демонов в их родные миры #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!.\n#flavor Падшие могут изгнать существ, не созданных Богом.#!"
  LORE_REVELATION_PERK_EFFECT: "Вы можете узнать все секреты и происки цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут читать существ на Божьей Земле как открытую книгу.#!"
 
  lore_cleanse_perk_name: "Очищение"
@@ -140,7 +140,7 @@
  lore_pierce_the_barrier_perk_name: "Пронзание барьера"
 
  LORE_COMMAND_THE_DEAD_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n$POD_can_command_wraith_trigger_loca$\nДоступны призрачные и мёртвые профессионалы.\n#flavor Падшие могут повелевать бесплотными существами, находящимися за пределами Савана.#!"
- LORE_STEP_BEYOND_THE_VEIL_PERK_EFFECT: "Сохраняет облик при путешествии по [Concept('umbra', 'Умбре')|E].\n#flavor Падшие могут становиться бесплотными и перемещаться за пределы.#!"
+ LORE_STEP_BEYOND_THE_VEIL_PERK_EFFECT: "Сохраняет облик при путешествии по #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!.\n#flavor Падшие могут становиться бесплотными и перемещаться за пределы.#!"
  LORE_EXTINGUISH_LIFE_PERK_EFFECT: "Накладывает на каждого правителя противоположной стороны модификатор [GetModifier('lore_extinguish_life_modifier').GetNameWithTooltip] при начале [Concept('war', 'войны')|E] в качестве основного атакующего или защитника.\n#flavor Падшие могут заставить других существ столкнуться с понятием смерти.#!"
  LORE_ANCHOR_THE_SOUL_PERK_EFFECT: "#flavor Падшие могут привязывать бесплотных существ к реальности.#!"
  LORE_PIERCE_THE_BARRIER_PERK_EFFECT: "Можно манипулировать Барьером и Латной рукавицей.#flavor Падшие могут пробивать барьеры между реальностями.#!"
