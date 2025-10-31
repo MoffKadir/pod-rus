@@ -95,11 +95,11 @@
  POD_gamemode_icon_custom_tt: "Правила этого режима игры были изменены"
 
  POD_roguelike_icon_lifted_all_curses: "#TOOLTIP:POD_roguelike_icon_lifted_all_curses_tt @prestige_level_5_icon!#! "
- POD_roguelike_icon_lifted_all_curses_tt: "Этот персонаж снял все проклятия с [Concept('roguelike_mode', 'режима Roguelike')|E]"
+ POD_roguelike_icon_lifted_all_curses_tt: "Этот персонаж снял все проклятия с #TOOLTIP:game_concept_roguelike_mode_desc #E режима Roguelike#!#!"
  POD_roguelike_icon_lifted_curse: "#TOOLTIP:POD_roguelike_icon_lifted_curse_tt @prestige_icon!#! "
- POD_roguelike_icon_lifted_curse_tt: "Этот персонаж снял проклятие с [Concept('roguelike_mode', 'режима Roguelike')|E]"
+ POD_roguelike_icon_lifted_curse_tt: "Этот персонаж снял проклятие с #TOOLTIP:game_concept_roguelike_mode_desc #E режима Roguelike#!#!"
  POD_roguelike_icon_cursed: "#TOOLTIP:POD_roguelike_icon_cursed_tt @prestige_level_0_icon!#! "
- POD_roguelike_icon_cursed_tt: "Этот персонаж был проклят [Concept('roguelike_mode', 'режимом Roguelike')|E]"
+ POD_roguelike_icon_cursed_tt: "Этот персонаж был проклят #TOOLTIP:game_concept_roguelike_mode_desc #E режимом Roguelike#!#!"
 
  dragon_name: "[ROOT.Char.GetLocalizedText( 'story_cycle_dragon_name' )]"
  dragon_name_possessive: "[ROOT.Char.Custom( 'DragonStoryName' )]"

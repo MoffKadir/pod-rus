@@ -53,7 +53,7 @@
 
  COMMUTA_PERK_EFFECT: "#weak Простые изменения формы объекта\nИзменение состояния - от твердого к жидкому, от жидкости к газу и т.д.#!"
  CONFORMA_PERK_EFFECT: "$unlock_enhancing_node$, который добавляет [modifier|El], основанный на типе [Concept('artifact', 'артефакта')|E].\n#weak Сложные изменения формы объекта\nПростые изменения формы#!"
- SCINDE_PERK_EFFECT: "Улучшает [crafting_node|El] достоинства «[GetPerk('conforma_perk').GetName(GetPlayer)]», снижая его стоимость.\n#weak Сложные изменения формы объекта\nСложные изменения формы#!"
+ SCINDE_PERK_EFFECT: "Улучшает #TOOLTIP:game_concept_crafting_node_desc #E узел ремесла#!#! достоинства «[GetPerk('conforma_perk').GetName(GetPlayer)]», снижая его стоимость.\n#weak Сложные изменения формы объекта\nСложные изменения формы#!"
  MUTATE_PERK_EFFECT: "Вы можете обменять 80 [gold_i|E][Concept('gold', 'золота')|E] на 120 [gold_i|E][Concept('gold', 'золота')|E] через #L $pod_bs_spell|l$ие#!.\n#weak Небольшие изменения на уровне атомов\nИзощрённые изменения формы#!"
  TRANSMUTATE_PERK_EFFECT: "Улучшает достоинство «[GetPerk('mutate_perk').GetName(GetPlayer)]», вы можете обменять 40 [gold_i|E][Concept('gold', 'золота')|E] на 140 [gold_i|E][Concept('gold', 'золота')|E].\n#weak Значительные изменения на уровне атомов\nРадикальные изменения формы#!"
 
@@ -161,7 +161,7 @@
 
  BS_A_TASTE_FOR_BLOOD_PERK_EFFECT: "Вы можете узнать, является ли ваша цель [Glossary('диаблеристом','game_concept_diablerie_desc')], применив это #L $pod_bs_spell|l$ие#!.\n#weak Получение разнообразной информации из образца крови#!"
  BLOOD_RAGE_PERK_EFFECT: "Вы можете заставить вашу цель использовать вливание крови, применив это #L $pod_bs_spell|l$ие#!.\n#weak Принуждение цели тратить свою витэ для повышения атрибутов#!"
- BS_BLOOD_OF_POTENCY_PERK_EFFECT: "Вы можете временно повысить [Concept('blood_potency', 'силу крови')|E], применив это #L $pod_bs_spell|l$ие#!.\n#weak Временно снижает ваше поколение#!"
+ BS_BLOOD_OF_POTENCY_PERK_EFFECT: "Вы можете временно повысить #TOOLTIP:game_concept_blood_potency_desc #E Сила крови#!#!, применив это #L $pod_bs_spell|l$ие#!.\n#weak Временно снижает ваше поколение#!"
  BS_THEFT_OF_VITAE_PERK_EFFECT: "Вы можете украсть витэ у другого вампира, применив это #L $pod_bs_spell|l$ие#!.\n#weak Кража крови у цели на расстоянии#!"
  BS_CAULDRON_OF_BLOOD_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат модификатор [GetModifier('cauldron_of_blood_modifier').GetNameWithTooltip].\n#weak Заставляет кровь жертвы сжигать ее изнутри#!"
 

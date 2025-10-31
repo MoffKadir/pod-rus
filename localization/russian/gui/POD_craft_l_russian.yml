@@ -826,13 +826,13 @@
  POD_CRAFTING_MINIGAME_MOVES_LEFT: "Доступная [Concept('crafting_complexity', 'сложность ремесла')|E]:"
  POD_CRAFTING_MINIGAME_CRAFT: "Ремесло"
  POD_CRAFTING_MINIGAME_POTENTIAL: "[crafting_potential|E]: "
- POD_CRAFTING_MINIGAME_BASE_FORGE_NODES: "Базовые [Concept('crafting_nodes', 'узлы ремесла')|E]:"
- POD_CRAFTING_MINIGAME_UNLOCKED_FORGE_NODES: "Особые [Concept('crafting_nodes', 'узлы ремесла')|E]:"
- POD_CRAFTING_MINIGAME_BASE_BREW_NODES: "Базовые [Concept('crafting_nodes', 'узлы ремесла')|E]:"
- POD_CRAFTING_MINIGAME_UNLOCKED_BREW_NODES: "Особые [Concept('crafting_nodes', 'узлы ремесла')|E]:"
- POD_CRAFTING_MINIGAME_BASE_ENHANCE_NODES: "Базовые [Concept('crafting_nodes', 'узлы ремесла')|E]:"
- POD_CRAFTING_MINIGAME_UNLOCKED_ENHANCE_NODES: "Особые [Concept('crafting_nodes', 'узлы ремесла')|E]:"
- CRAFTING_GUI_NO_NODES: "У ремесленника нет особых [Concept('crafting_nodes', 'узлов ремесла')|E]!"
+ POD_CRAFTING_MINIGAME_BASE_FORGE_NODES: "Базовые #TOOLTIP:game_concept_crafting_node_desc #E узлы ремесла#!#!:"
+ POD_CRAFTING_MINIGAME_UNLOCKED_FORGE_NODES: "Особые #TOOLTIP:game_concept_crafting_node_desc #E узлы ремесла#!#!:"
+ POD_CRAFTING_MINIGAME_BASE_BREW_NODES: "Базовые #TOOLTIP:game_concept_crafting_node_desc #E узлы ремесла#!#!:"
+ POD_CRAFTING_MINIGAME_UNLOCKED_BREW_NODES: "Особые #TOOLTIP:game_concept_crafting_node_desc #E узлы ремесла#!#!:"
+ POD_CRAFTING_MINIGAME_BASE_ENHANCE_NODES: "Базовые #TOOLTIP:game_concept_crafting_node_desc #E узлы ремесла#!#!:"
+ POD_CRAFTING_MINIGAME_UNLOCKED_ENHANCE_NODES: "Особые #TOOLTIP:game_concept_crafting_node_desc #E узлы ремесла#!#!:"
+ CRAFTING_GUI_NO_NODES: "У ремесленника нет особых #TOOLTIP:game_concept_crafting_node_desc #E узлов ремесла#!#!!"
 
  PODCraftsmanPotential_exelent: "#B;bold Превосходный#!"
  PODCraftsmanPotential_good: "#Y Хороший#!"
@@ -1089,6 +1089,6 @@
 
 
 
- unlock_forging_node: "Разблокирует [Concept('crafting_node', 'узел')|E] [Concept('crafting_forging', 'ковки')|E]:"
- unlock_brewing_node: "Разблокирует [Concept('crafting_node', 'узел')|E] [Concept('crafting_brewing', 'создания отваров')|E]:"
- unlock_enhancing_node: "Разблокирует [Concept('crafting_node', 'узел')|E] [Concept('crafting_enhancing', 'улучшения')|E]:"
+ unlock_forging_node: "Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел#!#! [Concept('crafting_forging', 'ковки')|E]:"
+ unlock_brewing_node: "Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел#!#! [Concept('crafting_brewing', 'создания отваров')|E]:"
+ unlock_enhancing_node: "Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел#!#! [Concept('crafting_enhancing', 'улучшения')|E]:"

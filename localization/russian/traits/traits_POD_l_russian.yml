@@ -703,10 +703,10 @@
  trait_truefaith_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] искренне верит в присутствие божественного. [true_faith|E] является основной частью [ROOT.Char.GetHerHis] души и дает [ROOT.Char.GetHerHim] доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров.\nЭто свойство открывает новое дерево жизненного пути."
 
  trait_beatific: "Блаженность"
- trait_beatific_desc: "Ходячее воплощение избранного им бога, этот персонаж - чудотворец, образец [Concept('true_faith', 'истинной веры')|E] в мире тьмы. Это дает ему доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров."
- trait_beatific_character_desc: "Ходячее воплощение избранного [Select_CString(ROOT.Char.IsFemale, 'ей', 'им' )] бога, [ROOT.Char.GetFirstNameNoTooltip] - [Select_CString(ROOT.Char.IsFemale, 'чудотворица', 'чудотворец' )], образец [Concept('true_faith', 'истинной веры')|E] в мире тьмы. Это дает [ROOT.Char.GetHerHim] доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров."
+ trait_beatific_desc: "Ходячее воплощение избранного им бога, этот персонаж - чудотворец, образец [Glossary('истинной веры','game_concept_true_faith_desc')] в мире тьмы. Это дает ему доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров."
+ trait_beatific_character_desc: "Ходячее воплощение избранного [Select_CString(ROOT.Char.IsFemale, 'ей', 'им' )] бога, [ROOT.Char.GetFirstNameNoTooltip] - [Select_CString(ROOT.Char.IsFemale, 'чудотворица', 'чудотворец' )], образец [Glossary('истинной веры','game_concept_true_faith_desc')] в мире тьмы. Это дает [ROOT.Char.GetHerHim] доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров."
  trait_track_beatific: "Чудотворство"
- trait_track_beatific_desc: "#bold Уровень 1:#! Делает [Concept('decision', 'решение')|E] $POD_demon_unearthbound_decision$ бесплатным. Позволяет изгнать призрака/демона в [Concept('dark_kingdom', 'Тёмное королевство')|E]/[UmbraGlossaryLocalized('abyss','Бездну')] через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Открывает особую постройку [GetBuilding('sanctified_area_01').GetName]. \n#bold Уровень 2:#! Разблокирует [Concept('crafting_node', 'узел ремесла')|E], который добавляет [Concept('modifier', 'модификатор')|E] [GetModifier('bless_modifier').GetNameWithTooltip] в зависимости от типа [Concept('artifact', 'артефакта')|E]. Даёт иммунитет к убийству. Даёт иммунитет к делириуму. Вы больше не можете быть одержимы призраком.\n#bold Уровень 3:#! Цели всегда будут принимать требования об обращении.\n#bold Уровень 4:#! Позволяет снять все #TOOLTIP:game_concept_Fetter_desc #E оковы#!#! у призраков через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Позволяет убить сверхъестественное существо за малое количество благочестия через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Вам больше не нужно влияние, чтобы изгнать духа.\n#bold Уровень 5:#! Позволяет вам снова сделать вампира смертным или достичь Голконды через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Доступны [men_at_arms|El] - [GetMaA('minion_of_the_divine').GetName]. Позволяет тратить силу воли вместо получения ран. Позволяет не умирать от ран.\n#italic Самое сильное орудие в руках верующих - это сила истинных чудес. Целые религии рождаются из таких проявлений истинной веры.#!"
+ trait_track_beatific_desc: "#bold Уровень 1:#! Делает [Concept('decision', 'решение')|E] $POD_demon_unearthbound_decision$ бесплатным. Позволяет изгнать призрака/демона в [Concept('dark_kingdom', 'Тёмное королевство')|E]/[UmbraGlossaryLocalized('abyss','Бездну')] через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Открывает особую постройку [GetBuilding('sanctified_area_01').GetName]. \n#bold Уровень 2:#! Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел ремесла#!#!, который добавляет [Concept('modifier', 'модификатор')|E] [GetModifier('bless_modifier').GetNameWithTooltip] в зависимости от типа [Concept('artifact', 'артефакта')|E]. Даёт иммунитет к убийству. Даёт иммунитет к делириуму. Вы больше не можете быть одержимы призраком.\n#bold Уровень 3:#! Цели всегда будут принимать требования об обращении.\n#bold Уровень 4:#! Позволяет снять все #TOOLTIP:game_concept_Fetter_desc #E оковы#!#! у призраков через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Позволяет убить сверхъестественное существо за малое количество благочестия через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Вам больше не нужно влияние, чтобы изгнать духа.\n#bold Уровень 5:#! Позволяет вам снова сделать вампира смертным или достичь Голконды через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Доступны [men_at_arms|El] - [GetMaA('minion_of_the_divine').GetName]. Позволяет тратить силу воли вместо получения ран. Позволяет не умирать от ран.\n#italic Самое сильное орудие в руках верующих - это сила истинных чудес. Целые религии рождаются из таких проявлений истинной веры.#!"
 
  trait_holy_seal: "Святая печать"
  trait_holy_seal_desc: "Реликвии и артефакты божественной силы, жестоко, но умело вживлённые в раны этого несчастного создания, не дают им затянуться."
@@ -1202,7 +1202,7 @@
  trait_arcanos_moliate_desc: "Те, кто ваяют, способны изменять свой #TOOLTIP:game_concept_Corpus_desc #E корпус#!#! и #TOOLTIP:game_concept_Corpus_desc #E корпусы#!#! других, придавая им увлекательные, а иногда и ужасающие формы."
 
  trait_arcanos_outrage: "Гнев"
- trait_arcanos_outrage_desc: "Гнев воздействует на [Concept('skinlands', 'Земли Плоти')|E], проявляя волю призрака в виде мощной силы."
+ trait_arcanos_outrage_desc: "Гнев воздействует на [Glossary('земли Плоти','game_concept_skinlands_desc')], проявляя волю призрака в виде мощной силы."
 
  trait_arcanos_pandemonium: "Пандемониум"
  trait_arcanos_pandemonium_desc: "Призраки, использующие этот Арканос, могут использовать силы хаоса для создания хаоса в мире живых."
@@ -1225,7 +1225,7 @@
  trait_ferryman_desc: "С помощью ритуала Разделения Тень и Разум этого персонажа навсегда разделены, создавая Пасифаю."
  TRAIT_FLAG_DESC_lose_shadow: "Больше не владеет тенью"
  TRAIT_FLAG_DESC_restore_possibility_to_reduce_stress_normal_way: "Может избавиться от стресса обычными способами, не связанных со страстями"
- TRAIT_FLAG_DESC_cannot_access_skinlands: "Теряет все возможности доступа в [skinlands|E]"
+ TRAIT_FLAG_DESC_cannot_access_skinlands: "Теряет все возможности доступа в [Glossary('земли Плоти','game_concept_skinlands_desc')]"
  trait_shadow: "Тень"
  trait_shadow_desc: "Тень - это термин, используемый для описания того аспекта личности призрака, который хочет, чтобы тот потерпел неудачу, перестал бороться и поддался [UmbraGlossaryLocalized('oblivion','Забвению')]."
  TRAIT_FLAG_DESC_deteriorating_fetters: "Каждый год уровень случайных #TOOLTIP:game_concept_Fetter_desc #E оков#!#! будет снижаться на #N 1#!"
@@ -1259,7 +1259,7 @@
  trait_laham: "Лахам"
  trait_laham_desc: "Потомство демона. Невероятно долгоживущие, невосприимчивые к боли и часто обладающие нечеловеческими способностями. Считается, что демоническое отродье (или лахам) - особый слуга Ада."
  trait_nephilim: "Нефилим"
- trait_nephilim_desc: "Потомство демона и человека. Они обладают дарами людей и [Concept('lore_lifestyle','знаниями')|E] демонов, и на них страшно смотреть - если не из-за их отвратительного облика, то из-за их потенциала."
+ trait_nephilim_desc: "Потомство демона и человека. Они обладают дарами людей и #TOOLTIP:game_concept_lore_lifestyle_desc #E знаниями#!#! демонов, и на них страшно смотреть - если не из-за их отвратительного облика, то из-за их потенциала."
 
  trait_truepossessed: "Одержимость"
  trait_fomori: "Фомор"

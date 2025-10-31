@@ -94,7 +94,7 @@
 
  arcanos_flux_focus: "Поток"
  arcanos_flux_focus_modifier: "[GetFocus('arcanos_flux_focus').GetName]"
- arcanos_flux_focus_desc: "Влияет на структуру и реакцию материи в [Concept('skinlands', 'Землях плоти')|E], а также на работу призрачных реликвий."
+ arcanos_flux_focus_desc: "Влияет на структуру и реакцию материи в [Glossary('землях Плоти','game_concept_skinlands_desc')], а также на работу призрачных реликвий."
  arcanos_flux_focus_effect_desc: "Сосредоточившись на Потоке, персонаж получает:"
 
  arcanos_intimation_focus: "Указание"
@@ -159,7 +159,7 @@
 
  arcanos_false_life_focus: "Фальшивая жизнь"
  arcanos_false_life_focus_modifier: "[GetFocus('arcanos_false_life_focus').GetName]"
- arcanos_false_life_focus_desc: "Создание могущественных иллюзий в [Concept('skinlands', 'Землях плоти')|E]."
+ arcanos_false_life_focus_desc: "Создание могущественных иллюзий в [Glossary('землях Плоти','game_concept_skinlands_desc')]."
  arcanos_false_life_focus_effect_desc: "Сосредоточившись на Фальшивой жизни, персонаж получает:"
 
  arcanos_hive_mind_focus: "Коллективный разум"
@@ -415,13 +415,13 @@
  materialize_perk_name: "Материализация"
  harrow_the_mortal_flesh_perk_name: "Терзание смертной плоти"
 
- WHISPERS_PERK_EFFECT: "As a [character_interaction|E], get ability to interact with [skinlands|E] for 5 years, at cost of 3 pathos.\n#F A Proctor may whisper through the Shroud.#!"
- CACHE_PERK_EFFECT: "Allow gifting [artifact|E] and gold to the Quick of the [skinlands|E].\n#F A Proctor can temporarily move a relic into the [skinlands|E].#!"
+ WHISPERS_PERK_EFFECT: "As a [character_interaction|E], get ability to interact with [Glossary('земли Плоти','game_concept_skinlands_desc')] for 5 years, at cost of 3 pathos.\n#F A Proctor may whisper through the Shroud.#!"
+ CACHE_PERK_EFFECT: "Allow gifting [artifact|E] and gold to the Quick of the [Glossary('земли Плоти','game_concept_skinlands_desc')].\n#F A Proctor can temporarily move a relic into the [Glossary('земли Плоти','game_concept_skinlands_desc')].#!"
  PHANTOM_PERK_EFFECT: "Decrease cost of [GetPerk('whispers_perk').GetName(GetPlayer)] [character_interaction|E] from 3 to 2 pathos\n#F A Proctor can materialize in a hazy, intangible form.#!"
  STATUE_PERK_EFFECT: "Decrease cost of [GetPerk('whispers_perk').GetName(GetPlayer)] [character_interaction|E] from 2 to 1 pathos\n#F A Proctor can materialize into a solid form, but cannot move while in it.#!"
  LIFE_IN_DEATH_PERK_EFFECT: "Decrease cost of [GetPerk('whispers_perk').GetName(GetPlayer)] [character_interaction|E] from 1 to 0 pathos\n#F A Proctor can materialize as a passable version of a living person.#!"
- SHROUDGUIDE_PERK_EFFECT: "#F A Proctor can share the effects of Embody arts that allow manifestation in the [skinlands|E] with other wraiths.#!"
- MATERIALIZE_PERK_EFFECT: "Can travel to [skinlands|E], while gaining 'material' body.\n#F A Proctor can temporarily return to a lifelike state.#!"
+ SHROUDGUIDE_PERK_EFFECT: "#F A Proctor can share the effects of Embody arts that allow manifestation in the [Glossary('земли Плоти','game_concept_skinlands_desc')] with other wraiths.#!"
+ MATERIALIZE_PERK_EFFECT: "Can travel to [Glossary('земли Плоти','game_concept_skinlands_desc')], while gaining 'material' body.\n#F A Proctor can temporarily return to a lifelike state.#!"
  HARROW_THE_MORTAL_FLESH_PERK_EFFECT: "Allow gifting titles to other supernatural.\n#F A Proctor can bring a mortal or other supernatural into the [UmbraGlossary('shadowlands')].#!"
 
  # Fatalism
@@ -537,13 +537,13 @@
  obliviate_perk_name: "Obliviate"
  anger_enough_for_two_worlds_perk_name: "Anger Enough for Two Worlds"
  
- WRAITHGRASP_PERK_EFFECT: "Allow receiving gold from the Quick of the [skinlands|E].\n#F A Spook may lift objects in the [skinlands|E].#!"
+ WRAITHGRASP_PERK_EFFECT: "Allow receiving gold from the Quick of the [Glossary('земли Плоти','game_concept_skinlands_desc')].\n#F A Spook may lift objects in the [Glossary('земли Плоти','game_concept_skinlands_desc')].#!"
  BREATH_OF_THE_GRAVE_PERK_EFFECT: "#F The Spook creates a small icy breeze across the Shroud.#!"
  STONEHAND_PUNCH_PERK_EFFECT: "#F A Spook can smash a target with raw, emotional force.#!"
  WINGS_OF_RAGE_PERK_EFFECT: "#F A Spook can boost their athletics and speed.#!"
- DEATHS_TOUCH_PERK_EFFECT: "#F A Spook can freely manipulate objects in the [skinlands|E], and telekinetically project their hands in the [underworld|E].#!"
+ DEATHS_TOUCH_PERK_EFFECT: "#F A Spook can freely manipulate objects in the [Glossary('земли Плоти','game_concept_skinlands_desc')], and telekinetically project their hands in the [underworld|E].#!"
  WYLDFIRE_PERK_EFFECT: "#F A Spook can conjure barrow-flame.#!"
- OBLIVIATE_PERK_EFFECT: "Unlock $EXECUTION_UNMAKING$ [execution|E] option.\nAllow receiving [artifact|E] from the Quick of the [skinlands|E].\n#F A Spook may damage a mortal, wraith, or thing so severely it falls straight to [UmbraGlossary('oblivion')]. When used on a material object Inhabited by a wraith, it instead becomes a relic.#!"
+ OBLIVIATE_PERK_EFFECT: "Unlock $EXECUTION_UNMAKING$ [execution|E] option.\nAllow receiving [artifact|E] from the Quick of the [Glossary('земли Плоти','game_concept_skinlands_desc')].\n#F A Spook may damage a mortal, wraith, or thing so severely it falls straight to [UmbraGlossary('oblivion')]. When used on a material object Inhabited by a wraith, it instead becomes a relic.#!"
  ANGER_ENOUGH_FOR_TWO_WORLDS_PERK_EFFECT: "Unlock Tear Down the Shroud option in Manipulate the Shroud #TOOLTIP:game_concept_umbra_desc #E Умбра#!#! action.\n#F A Spook can temporarily tear down the Shroud, with potentially devastating consequences.#!"
  
  # Pandemonium
@@ -862,7 +862,7 @@
  SOUND_OF_LIFE_PERK_EFFECT: "#F The Spectre conjures sounds that only the target can hear.#!"
  DANGEROUS_DISTRACTION_PERK_EFFECT: "#F The Spectre creates a complex illusion of scent, sight and touch.#!"
  LOVES_CARESS_PERK_EFFECT: "#F The target believes they are in the presence of a person or object they love dearly.#!"
- HOMECOMING_PERK_EFFECT: "#F The target experiences a fully immersive illusion of a location[skinlands|E]kinlands that is precious to them.#!"
+ HOMECOMING_PERK_EFFECT: "#F The target experiences a fully immersive illusion of a location[Glossary('земли Плоти','game_concept_skinlands_desc')]kinlands that is precious to them.#!"
  
  # Hive-Mind
  hive_mind_visible: "Hive-Mind"
@@ -940,9 +940,9 @@
  
  THRESHOLD_PERK_EFFECT: "#F A Spectre can see obscured images through the Shroud.#!"
  ECHOES_PERK_EFFECT: "#F This allows a Spectre to see through the Shroud.#!"
- FLEETING_GLIMPSES_PERK_EFFECT: "#F A Spectre can clearly see an area of the [skinlands|E].#!"
+ FLEETING_GLIMPSES_PERK_EFFECT: "#F A Spectre can clearly see an area of the [Glossary('земли Плоти','game_concept_skinlands_desc')].#!"
  NIGHTMARE_PERK_EFFECT: "#F A Spectre tears open the Shroud over a sleeping mortal, allowing [UmbraGlossary('oblivion')] to influence their dreams.#!"
- VIRTUALITY_PERK_EFFECT: "#F Events happening in the [skinlands|E] can now be seen and heard clearly.#!"
+ VIRTUALITY_PERK_EFFECT: "#F Events happening in the [Glossary('земли Плоти','game_concept_skinlands_desc')] can now be seen and heard clearly.#!"
  LURKING_PRESENCE_PERK_EFFECT: "#F Similar to Nightmare, but can be used on mortals who are awake.#!"
  TRANSPARENT_MEMORIES_PERK_EFFECT: "#F The Spectre can use all of their senses through the Shroud.#!"
  
@@ -1041,7 +1041,7 @@
  RELER_BAKA_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('spectres').GetName].\n#F A Baka can be summoned by a Serviteur.#!"
  RENVOYER_BAKA_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('shades').GetName].\n#F A Serviteur uses this art to scare Baka away from themselves.#!"
  ENGAGEMENT_PERK_EFFECT: "#F A Baka's mind can be manipulated through subtle suggestion.#!"
- RENFORCER_LES_CHAVEAUX_PERK_EFFECT: "#F A Serviteur may temporarily grant a mortal any Arcanoi they have that affect the [skinlands|E], as well as Potence, Celerity or Fortitude.#!"
+ RENFORCER_LES_CHAVEAUX_PERK_EFFECT: "#F A Serviteur may temporarily grant a mortal any Arcanoi they have that affect the [Glossary('земли Плоти','game_concept_skinlands_desc')], as well as Potence, Celerity or Fortitude.#!"
  RELER_MYSTERE_PERK_EFFECT: "#F A Loa can access the vast information network guarded by Les Mysteres.#!"
  RETIRER_DEN_BAS_DE_LEAU_PERK_EFFECT: "#F A Serviteur can create a new permanent #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! in conjunction with a mortal houngan.#!"
  MARRER_BAKA_PERK_EFFECT: "Won't lose the binding of a bound [GetTrait('wraith').GetName( GetNullCharacter )] when they become [GetTrait('spectre').GetName( GetNullCharacter )].\n#F A Serviteur may capture and control a Baka through will alone.#!"

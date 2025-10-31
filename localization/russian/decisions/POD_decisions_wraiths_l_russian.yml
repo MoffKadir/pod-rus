@@ -60,7 +60,7 @@
  POD_wraith_passion_kill_rival_decision_condition: "[Select_CString(TARGET_CHARACTER.IsFemale, 'Ваша соперницы', 'Ваш соперник' )], [TARGET_CHARACTER.GetFirstName], [Select_CString(TARGET_CHARACTER.IsFemale, 'должна', 'должен' )] быть [Select_CString(TARGET_CHARACTER.IsFemale, 'мертва', 'мёртв' )]."
 
  POD_wraith_fetter_adquire_fetters_decision: "Получить #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!"
- POD_wraith_fetter_adquire_fetters_decision_desc: "Редко бывает, чтобы призрак развил достаточно глубокую привязанность к новому человеку или вещи в [Concept('skinlands','мире Плоти')|E], чтобы создать настоящие #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!, но это возможно."
+ POD_wraith_fetter_adquire_fetters_decision_desc: "Редко бывает, чтобы призрак развил достаточно глубокую привязанность к новому человеку или вещи в [Glossary('землях Плоти','game_concept_skinlands_desc')], чтобы создать настоящие #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!, но это возможно."
  POD_wraith_fetter_adquire_fetters_decision_tooltip: "Получить новые #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!."
  POD_wraith_fetter_adquire_fetters_decision_confirm: "Что-то, ради чего стоит существовать?"
 
@@ -134,7 +134,7 @@
  POD_wraith_devils_dare_spend_prestige_decision_confirm: "Я рискну!"
 
  POD_wraith_request_obolus_decision: "Попросить оболы"
- POD_wraith_request_obolus_decision_desc: "Будучи легионером, ваша миссия в [Concept('skinlands', 'землях Плоти')|E] заключается в охоте на Скоротечных (живых) и мёртвых, нарушающих законы Стигии, dictum mortuum. Вы можете запросить немного оболов у вышестоящих, чтобы помочь в выполнении своей миссии."
+ POD_wraith_request_obolus_decision_desc: "Будучи легионером, ваша миссия в [Glossary('землях Плоти','game_concept_skinlands_desc')] заключается в охоте на Скоротечных (живых) и мёртвых, нарушающих законы Стигии, dictum mortuum. Вы можете запросить немного оболов у вышестоящих, чтобы помочь в выполнении своей миссии."
  POD_wraith_request_obolus_decision_tooltip: "Вы потратите престиж, чтобы получить золото."
  POD_wraith_request_obolus_decision_confirm: "Позвольте объяснить..."
 

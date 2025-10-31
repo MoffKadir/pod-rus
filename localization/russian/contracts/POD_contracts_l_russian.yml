@@ -6,7 +6,7 @@
  POD_assault_lair_desc_title: "Представилась возможность..."
  POD_assault_lair_desc: "Мы узнали о местонахождении притаившегося в этих владениях одинокого чудовища. Если мы нанесем быстрый удар, то сможем одолеть его."
  POD_assault_lair_request: "Этот [Concept('task_contract', 'договор')|E] требует, чтобы вы отправились во владение [TaskContract.GetLocation.GetName]. [GetPlayer.Custom('PODCoterie')] может помочь вам справиться с добычей благодаря навыкам.\n\n$POD_contract_show_time_remaining$"
- POD_assault_lair_contract_success_tt: "Вы получите [prestige_i][Concept('prestige', 'престиж')|E], [piety_i][Concept('piety', 'благочестие')|E], [dynasty_prestige_i][Concept('dynasty_prestige', 'признание')|E] и [Concept('lifestyle_experience', 'опыт пути')|E] [Concept('true_faith', 'истинной веры')|E]. Награда зависит от [Concept('task_contract_tier', 'уровня контракта')|E] и от того, насколько чисто вы справитесь с охотой."
+ POD_assault_lair_contract_success_tt: "Вы получите [prestige_i][Concept('prestige', 'престиж')|E], [piety_i][Concept('piety', 'благочестие')|E], [dynasty_prestige_i][Concept('dynasty_prestige', 'признание')|E] и [Concept('lifestyle_experience', 'опыт пути')|E] [Glossary('истинной веры','game_concept_true_faith_desc')]. Награда зависит от [Concept('task_contract_tier', 'уровня контракта')|E] и от того, насколько чисто вы справитесь с охотой."
 
  task_contract_reward_effect_failure_abandoned_hunt_desc: "#N Вы отказываетесь от охоты:#!"
  task_contract_reward_effect_failure_failed_hunt_desc: "#N Чудовище берёт верх над вами:#!"

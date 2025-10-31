@@ -767,7 +767,7 @@
  shih_peace_decision_tooltip: "Вы заключите мир с соседними правителями."
  shih_peace_decision_confirm: "Успокоить моё П'о."
  learning_kaja_decision: "Выучить каджа"
- learning_kaja_decision_desc: "Древняя, необычайно сложная идеографическая письменность $pod_wan_xian$. Изучив ее, вы сможете найти взаимопонимание со всеми остальными носителями каджа."
+ learning_kaja_decision_desc: "Древняя, необычайно сложная идеографическая письменность [Glossary('Ван-сянь','game_concept_kuei_jin_desc')]. Изучив ее, вы сможете найти взаимопонимание со всеми остальными носителями каджа."
  learning_kaja_decision_tooltip: "Вы выучите каджа и извлечёте из этого пользу."
  learning_kaja_decision_confirm: "Так сложно!"
  meng_huo_you_supply_decision: "Поставки Мэн Хо Ю"
@@ -1555,7 +1555,7 @@
  #back_to_fourth_age_objective_decision_custom_ex: "$back_to_fourth_age_objective_decision_custom$ #weak ([example.GetFirstName])#! #help Для облегчения поиска можно использовать режим карты «#TOOLTIP:game_concept_splat_desc #E Виды#!#!».#!"
 
  reckoning_war_of_shame_objective_decision: "Расплата за войну Позора"
- reckoning_war_of_shame_objective_decision_tooltip: "Вы отомстите осквернённым $pod_wan_xian$ и подружитесь с гару."
+ reckoning_war_of_shame_objective_decision_tooltip: "Вы отомстите осквернённым [Glossary('Ван-сянь','game_concept_kuei_jin_desc')] и подружитесь с гару."
  reckoning_war_of_shame_objective_decision_desc: "Во времена их падения первые [Glossary('куэй-дзин','game_concept_kuei_jin_desc')] развязали позорную войну против перевёртышей, почти уничтожив некоторых из них. Чтобы исправить эту несправедливость, драконьи гнезда, украденные во время этой войны, должны быть возвращены под их опеку, а духи их предков восстановлены."
  reckoning_war_of_shame_objective_decision_confirm: "Мы отомстим"
  reckoning_war_of_shame_objective_decision_custom1: "[GetTitleByKey('c_beshbalik').GetName] должно находиться под контролем $glossary_fera$"
@@ -1722,7 +1722,7 @@
  #POD_wheel_of_ages_progress_active_tooltip: "Каждый убитый #TOOLTIP:game_concept_akuma_desc #E акума#!#!: #V -0.1#!\nКаждый $POD_splat_kueijin$, достигший просветления: #V -50#!\nКаждый $POD_splat_kueijin$ старше 500 лет, ставший #L [GetTrait('cultist').GetName(GetPlayer)|l]ом#!: #V +5#!\nКаждый новый повелитель Яма: #V +50#!\nНекоторые цели также могут повлиять на прогресс."
  #POD_CHANGE_WHEEL_OF_AGES_PROGRESS: "Изменение прогресса достижения следующей эпохи: $VALUE|V0=$"
 
- #POD_wheel_of_ages_progress_warning: "#X @warning_icon!Чтобы вернуться из [Concept('third_age', 'Третьей эпохи')|E] во [Concept('second_age', 'Вторую эпоху')|E], необходимо выполнить любую из этих целей: «$unsevering_objective_decision$», «$unhell_objective_decision$» или «$unkuei_objective_decision$»#!"
+ #POD_wheel_of_ages_progress_warning: "#X @warning_icon!Чтобы вернуться из [Glossary('Третьей эпохи','game_concept_third_age_desc')] во [Concept('second_age', 'Вторую эпоху')|E], необходимо выполнить любую из этих целей: «$unsevering_objective_decision$», «$unhell_objective_decision$» или «$unkuei_objective_decision$»#!"
  #POD_wheel_of_ages_progress_sixth_age_impossible: "#X @warning_icon!Due to the hard work of the [GetTrait('wutian').GetName(GetPlayer)], the [sixth_age|E] cannot happen#!"
 
  #PODWheelOfAgesAge_AgeOfBeauty: "[second_age|E]#weak (2)#!"
