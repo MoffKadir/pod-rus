@@ -1296,7 +1296,7 @@
  building_cairo_canton_eshu_03_desc: "$building_cairo_canton_eshu_01_desc$"
  building_cairo_canton_eshu_04: "Огромный кантон Странствующих"
  building_cairo_canton_eshu_04_desc: "$building_cairo_canton_eshu_01_desc$"
- POD_cairo_canton_eshu_bonus: "#help Если у имеется свойство «[GetTrait('fae').GetName(GetNullCharacter)]»:#!\nУвеличивает вероятность успеха узлов [Concept('umbra_expedition','путешествия в Умбру')|E]\n\n#help Если же нет:#!\nВаши исследователи $pod_grace_i$#TOOLTIP:game_concept_umbra_desc #E Умбры#!#! со свойством «[GetTrait('fae').GetName(GetNullCharacter)]» всегда будут добиваться успеха в [Concept('umbra_expedition','экспедициях в Умбру')|E] [UmbraGlossaryLocalized('dreaming','Грёзах')]"
+ POD_cairo_canton_eshu_bonus: "#help Если у имеется свойство «[GetTrait('fae').GetName(GetNullCharacter)]»:#!\nУвеличивает вероятность успеха узлов #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!\n\n#help Если же нет:#!\nВаши исследователи $pod_grace_i$#TOOLTIP:game_concept_umbra_desc #E Умбры#!#! со свойством «[GetTrait('fae').GetName(GetNullCharacter)]» всегда будут добиваться успеха в #TOOLTIP:game_concept_umbra_expedition_desc #E путешествиях в Умбру#!#! [UmbraGlossaryLocalized('dreaming','Грёзах')]"
 
 
 

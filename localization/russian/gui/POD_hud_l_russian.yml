@@ -5,7 +5,7 @@
  POD_hint_masquerade_valid: "#I Нажмите на эту шкалу, чтобы уменьшить своё #L $pod_masquerade_exposure_with_icon$ие Маскарада#!.#!"
  POD_hint_masquerade_invalid_no_masquerade: "#X $no_masquerade$#!"
  POD_hint_masquerade_invalid_cap: "#X $POD_cover_masquerade_interaction_cap$.#!"
- POD_hint_masquerade_invalid_cooldown: "#X Взаимодействие, чтобы скрыть [the_masquerade|E], в настоящее время недоступно.#!"
+ POD_hint_masquerade_invalid_cooldown: "#X Взаимодействие, чтобы скрыть #TOOLTIP:game_concept_the_masquerade_desc #E Маскарад#!#!, в настоящее время недоступно.#!"
 
  POD_hint_window_hunger: "Голод"
  POD_hint_window_fae: "[GetPlayer.Custom('PODFaeResource')]"
@@ -20,19 +20,19 @@
  POD_hunger_window_regen: "[GetPlayer.Custom('PODBloodRegenHint')]"
  POD_hunger_window_regen_revenant: "Поскольку у вас имеется свойство «[GetTrait('revenant').GetName(GetPlayer)]», вы автоматически теряете #V 1#! ед. #L $pod_hunger_with_icon$а#! в месяц."
  POD_hunger_window_regen_dhampir: "Поскольку у вас имеется свойство «[GetTrait('dhampir').GetName(GetPlayer)]», вы автоматически теряете #V 1#! ед. #L $pod_hunger_with_icon$а#! в месяц."
- POD_hunger_window_herd_drink: "Вы можете питаться членом [Concept('POD_herd', 'стада')|E], персонажем [GetPlayer.MakeScope.Var('suggested_herdmember').Char.GetShortUINameNoTooltip]."
- POD_hunger_window_herd_drink_noblood: "#help Ни у кого из членов вашего [Concept('POD_herd', 'стада')|E] не осталось крови. Подождите, пока они восстановятся.#!"
- POD_hunger_window_herdify: "Вы можете добавить одного из своих [Concept('courtiers', 'придворных')|E] к своему [Concept('POD_herd', 'стаду')|E]."
+ POD_hunger_window_herd_drink: "Вы можете питаться членом #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!, персонажем [GetPlayer.MakeScope.Var('suggested_herdmember').Char.GetShortUINameNoTooltip]."
+ POD_hunger_window_herd_drink_noblood: "#help Ни у кого из членов вашего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! не осталось крови. Подождите, пока они восстановятся.#!"
+ POD_hunger_window_herdify: "Вы можете добавить одного из своих [Concept('courtiers', 'придворных')|E] к своему #TOOLTIP:game_concept_POD_herd_desc #E стаду#!#!."
  POD_hunger_window_herdify_invalid: "[GetPlayer.Custom('PODHerdifyHint')]"
 
- POD_hunger_window_herdify_revenant: "#help Являясь ревенантом, вы можете добавить вампиров к своему [Concept('POD_herd', 'стаду')|E].\n\n$POD_hunger_window_herdify_suffix$#!"
- POD_hunger_window_herdify_ghoul: "#help Являясь гулем, вы можете добавить вампиров к своему [Concept('POD_herd', 'стаду')|E].\n\n$POD_hunger_window_herdify_suffix$#!"
- POD_hunger_window_herdify_dhampir: "#help Будчи #L [GetTrait('dhampir').GetName(GetPlayer)|l]ом#!, вы можете добавить вампиров к своему [Concept('POD_herd', 'стаду')|E].\n\n$POD_hunger_window_herdify_suffix$#!"
- POD_hunger_window_herdify_suffix: "Выберите любого безземельного вампира и начните [Concept('scheme', 'происки')|E] «Добавить к [Concept('POD_herd', 'стаду')|E]» через [character_interaction|El]."
- POD_hunger_window_herdify_vampire: "#help При вашем дворе нет потенциальных членов [Concept('POD_herd', 'стада')|E]. Попробуйте поохотиться на смертных в своей столице.#!"
+ POD_hunger_window_herdify_revenant: "#help Являясь ревенантом, вы можете добавить вампиров к своему #TOOLTIP:game_concept_POD_herd_desc #E стаду#!#!.\n\n$POD_hunger_window_herdify_suffix$#!"
+ POD_hunger_window_herdify_ghoul: "#help Являясь гулем, вы можете добавить вампиров к своему #TOOLTIP:game_concept_POD_herd_desc #E стаду#!#!.\n\n$POD_hunger_window_herdify_suffix$#!"
+ POD_hunger_window_herdify_dhampir: "#help Будчи #L [GetTrait('dhampir').GetName(GetPlayer)|l]ом#!, вы можете добавить вампиров к своему #TOOLTIP:game_concept_POD_herd_desc #E стаду#!#!.\n\n$POD_hunger_window_herdify_suffix$#!"
+ POD_hunger_window_herdify_suffix: "Выберите любого безземельного вампира и начните [Concept('scheme', 'происки')|E] «Добавить к #TOOLTIP:game_concept_POD_herd_desc #E стаду#!#!» через [character_interaction|El]."
+ POD_hunger_window_herdify_vampire: "#help При вашем дворе нет потенциальных членов #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!. Попробуйте поохотиться на смертных в своей столице.#!"
 
  POD_hunger_window_prisoners_invalid: "#help В данный момент у вас нет пленников, которых можно обескровить или добавить к стаду.#!"
- POD_hunger_window_prisoners: "У вас есть пленники.\n#help Возможно, вы можете осушить их кровь или добавить их к своему [Concept('POD_herd', 'стаду')|E].#!"
+ POD_hunger_window_prisoners: "У вас есть пленники.\n#help Возможно, вы можете осушить их кровь или добавить их к своему #TOOLTIP:game_concept_POD_herd_desc #E стаду#!#!.#!"
 
  POD_hunger_window_artifacts: "У вас есть [artifacts|El], в которых можно хранить кровь."
 
@@ -64,7 +64,7 @@
 
  pod_hunger_hud: "$pod_saved_modifier_tooltip$[GetPlayer.Custom('PODBloodPotencyHint')]\n\n#I Нажмите на эту шкалу, чтобы показать различные способы, которыми вы можете утолить свой $pod_hunger_with_icon$.#!"
  pod_masquerade_hud: "$pod_saved_modifier_tooltip$\n\n[GetPlayer.Custom('PODMasqueradeHint')]"
- pod_pathos_hud: "$pod_saved_modifier_tooltip$\n\n#I Для того, чтобы получить пафос, вызовите страсть из [Concept('Fetter', 'оков')|E].#!"
+ pod_pathos_hud: "$pod_saved_modifier_tooltip$\n\n#I Для того, чтобы получить пафос, вызовите страсть из #TOOLTIP:game_concept_Fetter_desc #E оков#!#!.#!"
  pod_glamour_hud: "$pod_saved_modifier_tooltip$\n\n#I Нажмите на эту шкалу, чтобы показать различные способы, которыми вы можете восстановить гламур.#!"
  pod_gnosis_hud: "$pod_saved_modifier_tooltip$\n\nУ вас есть $POD_player_gnosis_regen_chance$ вероятность восстановить $POD_energy_gnosis$ каждый месяц.\n\n#I Нажмите на эту шкалу, чтобы сменить облик.#!"
 

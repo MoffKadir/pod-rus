@@ -30,7 +30,7 @@
  ghoul_thrall: "[ghoul|E]"
 
  herd_owner: "Владелец"
- herd_member: "[Concept('POD_herd', 'Скот')|E]"
+ herd_member: "#TOOLTIP:game_concept_POD_herd_desc #E Скот#!#!"
 
  worshipped_reborn: "Идол"
  worshipping_neteru: "[neteru|E]"
@@ -79,8 +79,8 @@
  fascinate_owner: "Мастер Очарования"
  fascinate_target: "Марионетка Очарования"
 
- fetter_owner: "Владелец [Concept('Fetter', 'оков')|E]"
- fetter: "[Fetter|E]"
+ fetter_owner: "Владелец #TOOLTIP:game_concept_Fetter_desc #E оков#!#!"
+ fetter: "#TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!"
 
  ashen_ambassadorial_patron: "Пепельный посол"
  #ashen_ambassador: "Ashen Ambassador"

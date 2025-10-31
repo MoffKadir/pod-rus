@@ -59,7 +59,7 @@
 
  arcanos_lifeweb_focus: "Паутина"
  arcanos_lifeweb_focus_modifier: "[GetFocus('arcanos_lifeweb_focus').GetName]"
- arcanos_lifeweb_focus_desc: "Укрепление, ослабление или слежка за [Concept('Fetter', 'оковами')|E]."
+ arcanos_lifeweb_focus_desc: "Укрепление, ослабление или слежка за #TOOLTIP:game_concept_Fetter_desc #E оковами#!#!."
  arcanos_lifeweb_focus_effect_desc: "Сосредоточившись на Паутине, персонаж получает:"
 
  arcanos_moliate_focus: "Ваяние"
@@ -256,19 +256,19 @@
  TARGET_GAINS_A_ARCANOI_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('arcanoi_lifestyle', 'арканоев')|E]"
  TARGET_GAINED_A_ARCANOI_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('arcanoi_lifestyle', 'арканоев')|E]"
 
- GAINS_THORN_LIFESTYLE_XP: "[Concept('thorn_lifestyle', 'Опыт шипов')|E] увеличивается на $VALUE|V0$"
- GAINED_THORN_LIFESTYLE_XP: "[Concept('thorn_lifestyle', 'Опыт шипов')|E] увеличен на $VALUE|V0$"
- I_GAIN_THORN_LIFESTYLE_XP: "Ваш [Concept('thorn_lifestyle', 'опыт шипов')|E] увеличивается на $VALUE|V0$"
- I_GAINED_THORN_LIFESTYLE_XP: "Ваш [Concept('thorn_lifestyle', 'опыт шипов')|E] увеличен на $VALUE|V0$"
- TARGET_GAINS_THORN_LIFESTYLE_XP: "[Concept('thorn_lifestyle', 'Опыт шипов')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличивается на $VALUE|V0$"
- TARGET_GAINED_THORN_LIFESTYLE_XP: "[Concept('thorn_lifestyle', 'Опыт шипов')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличен на $VALUE|V0$"
+ GAINS_THORN_LIFESTYLE_XP: "#TOOLTIP:game_concept_thorn_lifestyle_desc #E Опыт шипов#!#! увеличивается на $VALUE|V0$"
+ GAINED_THORN_LIFESTYLE_XP: "#TOOLTIP:game_concept_thorn_lifestyle_desc #E Опыт шипов#!#! увеличен на $VALUE|V0$"
+ I_GAIN_THORN_LIFESTYLE_XP: "Ваш #TOOLTIP:game_concept_thorn_lifestyle_desc #E опыт шипов#!#! увеличивается на $VALUE|V0$"
+ I_GAINED_THORN_LIFESTYLE_XP: "Ваш #TOOLTIP:game_concept_thorn_lifestyle_desc #E опыт шипов#!#! увеличен на $VALUE|V0$"
+ TARGET_GAINS_THORN_LIFESTYLE_XP: "#TOOLTIP:game_concept_thorn_lifestyle_desc #E Опыт шипов#!#! [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличивается на $VALUE|V0$"
+ TARGET_GAINED_THORN_LIFESTYLE_XP: "#TOOLTIP:game_concept_thorn_lifestyle_desc #E Опыт шипов#!#! [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличен на $VALUE|V0$"
 
- GAINS_A_THORN_LIFESTYLE_PERKPOINT: "Получает $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('thorn_lifestyle', 'шипов')|E]"
- GAINED_A_THORN_LIFESTYLE_PERKPOINT: "Получено $VALUE|V0$ [thorn_lifestyle|E] [perk|E] Unlock"
- I_GAIN_A_THORN_LIFESTYLE_PERKPOINT: "Вы получите $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('thorn_lifestyle', 'шипов')|E]"
- I_GAINED_A_THORN_LIFESTYLE_PERKPOINT: "Вы получили $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('thorn_lifestyle', 'шипов')|E]"
- TARGET_GAINS_A_THORN_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('thorn_lifestyle', 'шипов')|E]"
- TARGET_GAINED_A_THORN_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('thorn_lifestyle', 'шипов')|E]"
+ GAINS_A_THORN_LIFESTYLE_PERKPOINT: "Получает $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_thorn_lifestyle_desc #E шипов#!#!"
+ GAINED_A_THORN_LIFESTYLE_PERKPOINT: "Получено $VALUE|V0$ #TOOLTIP:game_concept_thorn_lifestyle_desc #E Шипы#!#! [perk|E] Unlock"
+ I_GAIN_A_THORN_LIFESTYLE_PERKPOINT: "Вы получите $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_thorn_lifestyle_desc #E шипов#!#!"
+ I_GAINED_A_THORN_LIFESTYLE_PERKPOINT: "Вы получили $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_thorn_lifestyle_desc #E шипов#!#!"
+ TARGET_GAINS_A_THORN_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_thorn_lifestyle_desc #E шипов#!#!"
+ TARGET_GAINED_A_THORN_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_thorn_lifestyle_desc #E шипов#!#!"
 
  GAINS_JADE_ARCANOI_LIFESTYLE_XP: "[Concept('jade_arcanoi_lifestyle', 'Опыт нефритовых арканоев')|E] увеличивается на $VALUE|V0$"
  GAINED_JADE_ARCANOI_LIFESTYLE_XP: "[Concept('jade_arcanoi_lifestyle', 'Опыт нефритовых арканоев')|E] увеличен на $VALUE|V0$"
@@ -396,9 +396,9 @@
  shadow_wrack_perk_name: "Разрушение тени"
 
  COAX_PERK_EFFECT: "Resisting Shadow is more likely to succeed\n#F A Pardoner may call on their Shadow at decreased risk.#!"
- BULWARK_PERK_EFFECT: "Less chance of gaining [stress|E] in the Adventure into Maelstroms [umbra|E] action.\n#F A Pardoner can temporarily shield themselves or others from a Maelstrom.#!"
+ BULWARK_PERK_EFFECT: "Less chance of gaining [stress|E] in the Adventure into Maelstroms #TOOLTIP:game_concept_umbra_desc #E Умбра#!#! action.\n#F A Pardoner can temporarily shield themselves or others from a Maelstrom.#!"
  TRANSFER_ANGST_PERK_EFFECT: "As a [character_interaction|E], can store 50 [static_stress|E] for 5 years, after which you will get 80 [static_stress|E]\n#F A Pardoner can temporarily hold Angst in themselves until it can be transferred to an appropriate storage place.#!"
- TRIMMING_THE_BLACK_ROSE_PERK_EFFECT: "As a [character_interaction|E], remove 1 [thorn_lifestyle|E] [perk|E], or lose 50 [static_stress|E]\n#F A Pardoner may prevent a Shadow from using its Thorns.#!"
+ TRIMMING_THE_BLACK_ROSE_PERK_EFFECT: "As a [character_interaction|E], remove 1 #TOOLTIP:game_concept_thorn_lifestyle_desc #E Шипы#!#! [perk|E], or lose 50 [static_stress|E]\n#F A Pardoner may prevent a Shadow from using its Thorns.#!"
  COOLING_THE_BLOOD_PERK_EFFECT: "Number of dark passions: #P -1#!\n#F A Pardoner can weaken a Shadow's Dark Passions.#!"
  DEFIANCE_PERK_EFFECT: "Resisting Shadow is more likely to succeed\nReduce chance of losing control to shadow\n#F A Pardoner can beat back a powerful Shadow trying to take over a wraith.#!"
  SHADOW_WRACK_PERK_EFFECT: "Massively reduce chance of losing control to shadow\n#F A Pardoner may use this to strip a [GetTrait('spectre').GetName( GetNullCharacter )] of Angst and pull their Psyche to the fore of their personality.#!"
@@ -495,14 +495,14 @@
  walk_the_web_perk_name: "Walk the Web"
  souls_interwoven_perk_name: "Souls Interwoven"
 
- SENSE_STRAND_PERK_EFFECT: "Unlock [Fetter|E] Mapmode.\n#F A Monitor is always aware of the location of their $pod_Fetters$, and can extend their senses to a $pod_Fetters$'s immediate vicinity.#!"
- LIFELINE_PERK_EFFECT: "Allow use $POD_manipulate_fetters_interaction$ [character_interaction|E] on [GetTrait('wraith').GetName( GetNullCharacter )] with 75+ opinion.\n#F A Monitor can create a "pseudo-[Fetter|E]" between two wraiths that allows them to work together.#!"
- STRAND_CHANNEL_PERK_EFFECT: "Allow interact with your $pod_Fetters$ from any place in the [umbra|E].\n#F A Monitor can speak through a [Fetter|E], or use their Arcanoi through a [Fetter|E].#!"
- SPLICE_STRAND_PERK_EFFECT: "Bonus to $POD_manipulate_fetters_interaction$ [character_interaction|E], allows you allocating free [Fetter|E] point to already existing $pod_Fetters$\nUnlock $POD_manipulate_fetter_interaction$ [character_interaction|E], allow creating a temporary [Fetter|E].\n#F A Monitor can create a temporary [Fetter|E].#!"
- EARLY_WARNING_PERK_EFFECT: "You will receive a notification when your $pod_Fetters$ are going to die of natural causes.\n#F A Monitor can place a tag on a mortal that will alert them if the Quick is about to die.#!"
- SEVER_STRAND_PERK_EFFECT: "Bonus to $POD_manipulate_fetters_interaction$ [character_interaction|E], allow decreasing [Fetter|E] Level as well destroying level 1 $pod_Fetters$.\n#F A Monitor can strip a [Fetter|E] from another Wraith.#!"
- WALK_THE_WEB_PERK_EFFECT: "As a [character_interaction|E], allows you to teleport to a [Fetter|E]'s location.\n#F A Monitor can quickly travel to a [Fetter|E].#!"
- SOULS_INTERWOVEN_PERK_EFFECT: "Unlock $POD_sprout_fetter_seed_character_interaction$ [character_interaction|E] to sprout [Fetter|E] seed on [GetTrait('mortal').GetName(GetNullCharacter)].\n#F A Monitor can take a willing mortal (or living/undead supernatural) as a [Fetter|E], and in return they can communicate with the Monitor at will, regardless of where either of them is.#!"
+ SENSE_STRAND_PERK_EFFECT: "Unlock #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! Mapmode.\n#F A Monitor is always aware of the location of their #TOOLTIP:game_concept_Fetter_desc #E оков#!#!, and can extend their senses to a #TOOLTIP:game_concept_Fetter_desc #E оков#!#!'s immediate vicinity.#!"
+ LIFELINE_PERK_EFFECT: "Allow use $POD_manipulate_fetters_interaction$ [character_interaction|E] on [GetTrait('wraith').GetName( GetNullCharacter )] with 75+ opinion.\n#F A Monitor can create a "pseudo-#TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!" between two wraiths that allows them to work together.#!"
+ STRAND_CHANNEL_PERK_EFFECT: "Allow interact with your #TOOLTIP:game_concept_Fetter_desc #E оков#!#! from any place in the #TOOLTIP:game_concept_umbra_desc #E Умбра#!#!.\n#F A Monitor can speak through a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!, or use their Arcanoi through a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!.#!"
+ SPLICE_STRAND_PERK_EFFECT: "Bonus to $POD_manipulate_fetters_interaction$ [character_interaction|E], allows you allocating free #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! point to already existing #TOOLTIP:game_concept_Fetter_desc #E оков#!#!\nUnlock $POD_manipulate_fetter_interaction$ [character_interaction|E], allow creating a temporary #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!.\n#F A Monitor can create a temporary #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!.#!"
+ EARLY_WARNING_PERK_EFFECT: "You will receive a notification when your #TOOLTIP:game_concept_Fetter_desc #E оков#!#! are going to die of natural causes.\n#F A Monitor can place a tag on a mortal that will alert them if the Quick is about to die.#!"
+ SEVER_STRAND_PERK_EFFECT: "Bonus to $POD_manipulate_fetters_interaction$ [character_interaction|E], allow decreasing #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! Level as well destroying level 1 #TOOLTIP:game_concept_Fetter_desc #E оков#!#!.\n#F A Monitor can strip a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! from another Wraith.#!"
+ WALK_THE_WEB_PERK_EFFECT: "As a [character_interaction|E], allows you to teleport to a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!'s location.\n#F A Monitor can quickly travel to a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!.#!"
+ SOULS_INTERWOVEN_PERK_EFFECT: "Unlock $POD_sprout_fetter_seed_character_interaction$ [character_interaction|E] to sprout #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! seed on [GetTrait('mortal').GetName(GetNullCharacter)].\n#F A Monitor can take a willing mortal (or living/undead supernatural) as a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!, and in return they can communicate with the Monitor at will, regardless of where either of them is.#!"
  
  # Moliate
  moliate_visible: "Moliate"
@@ -544,7 +544,7 @@
  DEATHS_TOUCH_PERK_EFFECT: "#F A Spook can freely manipulate objects in the [skinlands|E], and telekinetically project their hands in the [underworld|E].#!"
  WYLDFIRE_PERK_EFFECT: "#F A Spook can conjure barrow-flame.#!"
  OBLIVIATE_PERK_EFFECT: "Unlock $EXECUTION_UNMAKING$ [execution|E] option.\nAllow receiving [artifact|E] from the Quick of the [skinlands|E].\n#F A Spook may damage a mortal, wraith, or thing so severely it falls straight to [UmbraGlossary('oblivion')]. When used on a material object Inhabited by a wraith, it instead becomes a relic.#!"
- ANGER_ENOUGH_FOR_TWO_WORLDS_PERK_EFFECT: "Unlock Tear Down the Shroud option in Manipulate the Shroud [umbra|E] action.\n#F A Spook can temporarily tear down the Shroud, with potentially devastating consequences.#!"
+ ANGER_ENOUGH_FOR_TWO_WORLDS_PERK_EFFECT: "Unlock Tear Down the Shroud option in Manipulate the Shroud #TOOLTIP:game_concept_umbra_desc #E Умбра#!#! action.\n#F A Spook can temporarily tear down the Shroud, with potentially devastating consequences.#!"
  
  # Pandemonium
  pandemonium_visible: "Pandemonium"
@@ -621,7 +621,7 @@
 
  # Thorn
  thorn_visible: "Thorn"
- thorn_lifestyle_perks: "[thorn_lifestyle|E] [perks|E]: $NUM|0$"
+ thorn_lifestyle_perks: "#TOOLTIP:game_concept_thorn_lifestyle_desc #E Шипы#!#! [perks|E]: $NUM|0$"
  
  spectre_prestige_perk_name: "Spectre Prestige"
  dark_allies_perk_name: "Dark Allies"
@@ -650,7 +650,7 @@
  
  SPECTRE_PRESTIGE_PERK_EFFECT: "During Catharsis gain [GetModifier('spectre_prestige_modifier').GetNameWithTooltip].\n#F The Shadow is respected by Specters and they will come to the aid of the wraith during Catharsis.#!"
  DARK_ALLIES_PERK_EFFECT: "During Catharsis gain [GetModifier('dark_allies_modifier').GetNameWithTooltip].\n#F The character's Shadow communicates regularly with specific Specters, and can call on them for assistance.#!"
- TAINTED_RELIC_PERK_EFFECT: "Increase [static_stress|E] cost of retaining [Fetter|E] in Catharsis.\n#F The Shadow has an important relic that manifests when it is in control: a weapon or some other useful item.#!"
+ TAINTED_RELIC_PERK_EFFECT: "Increase [static_stress|E] cost of retaining #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! in Catharsis.\n#F The Shadow has an important relic that manifests when it is in control: a weapon or some other useful item.#!"
  INFAMY_PERK_EFFECT: "During Catharsis gain [GetModifier('infamy_modifier').GetNameWithTooltip].\n#F Memoriam for the Shadow, Infamy is the measure of how much fear and loathing the wraith still inspires in the living.#!"
  DEATHS_SIGIL_PERK_EFFECT: "Every 5 years, 25% chance to get [GetModifier('deaths_sigil_modifier').GetNameWithTooltip].\n#F Death's Sigil is a prominent sign of [UmbraGlossary('oblivion')]’s touch on the character that manifests no matter where she goes.#!"
  SHADOW_TRAITS_PERK_EFFECT: "Decrease success chance of regaining control over your Shadow.\n#F The Shadow can purchase Ability, but these extra Ability are only available during Catharsis.#!"
@@ -846,7 +846,7 @@
  LURID_VISIONS_PERK_EFFECT: "#F A Spectre can create brief, violent visions in the target they are Skinriding.#!"
  UNBIDDEN_HANDS_PERK_EFFECT: "#F A Spectre may force a body to perform an action while the target is distracted.#!"
  URGES_PERK_EFFECT: "#F This allows a Spectre to overcome a target's Willpower and force them into an action.#!"
- FETTER_RAPE_PERK_EFFECT: "Allow converting a [GetTrait('wraith').GetName( GetNullCharacter )] to a [GetTrait('risen').GetName( GetPlayer )].\n#F A Spectre may corrupt the fragments of soul remaining in a dead [Fetter|E] to briefly turn them into a [GetTrait('risen').GetName( GetPlayer )].#!"
+ FETTER_RAPE_PERK_EFFECT: "Allow converting a [GetTrait('wraith').GetName( GetNullCharacter )] to a [GetTrait('risen').GetName( GetPlayer )].\n#F A Spectre may corrupt the fragments of soul remaining in a dead #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! to briefly turn them into a [GetTrait('risen').GetName( GetPlayer )].#!"
  BLISSFUL_UNITY_PERK_EFFECT: "#F The Spectre becomes the dominant entity in a soul without obliterating it.#!"
  
  # False Life
@@ -1001,8 +1001,8 @@
  the_coincidental_gathering_perk_name: "The Coincidental Gathering"
  
  FORTUITOUS_WANDERING_PERK_EFFECT: "Every passion pulse, have 10% to fire again.\n#F A Risen can discover hints to guide them to one of their Passions.#!"
- FLASHBACK_PERK_EFFECT: "#F A Risen may conjure an image of something important that happened near or with one of their $pod_Fetters$.#!"
- THE_FACE_IN_THE_CROWD_PERK_EFFECT: "Improve [GetPerk('fortuitous_wandering_perk').GetName(GetPlayer)] [perk|E] changing chance of fireing again from 10% to 20%\n#F A Risen can tell if a person is connected to one of their Passions or $pod_Fetters$.#!"
+ FLASHBACK_PERK_EFFECT: "#F A Risen may conjure an image of something important that happened near or with one of their #TOOLTIP:game_concept_Fetter_desc #E оков#!#!.#!"
+ THE_FACE_IN_THE_CROWD_PERK_EFFECT: "Improve [GetPerk('fortuitous_wandering_perk').GetName(GetPlayer)] [perk|E] changing chance of fireing again from 10% to 20%\n#F A Risen can tell if a person is connected to one of their Passions or #TOOLTIP:game_concept_Fetter_desc #E оков#!#!.#!"
  FORTUITOUS_MEETING_PERK_EFFECT: "Invite to [court|E] Acceptance: #P +20#!\n#F A Risen may twist Fate to allow them to meet someone they want to talk to or visit with.#!"
  THE_COINCIDENTAL_GATHERING_PERK_EFFECT: "Invite to [court|E] Acceptance: #P +40#!\n#F A Risen can pull several people together in a "coincidental" meeting.#!"
  
@@ -1043,7 +1043,7 @@
  ENGAGEMENT_PERK_EFFECT: "#F A Baka's mind can be manipulated through subtle suggestion.#!"
  RENFORCER_LES_CHAVEAUX_PERK_EFFECT: "#F A Serviteur may temporarily grant a mortal any Arcanoi they have that affect the [skinlands|E], as well as Potence, Celerity or Fortitude.#!"
  RELER_MYSTERE_PERK_EFFECT: "#F A Loa can access the vast information network guarded by Les Mysteres.#!"
- RETIRER_DEN_BAS_DE_LEAU_PERK_EFFECT: "#F A Serviteur can create a new permanent [Fetter|E] in conjunction with a mortal houngan.#!"
+ RETIRER_DEN_BAS_DE_LEAU_PERK_EFFECT: "#F A Serviteur can create a new permanent #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! in conjunction with a mortal houngan.#!"
  MARRER_BAKA_PERK_EFFECT: "Won't lose the binding of a bound [GetTrait('wraith').GetName( GetNullCharacter )] when they become [GetTrait('spectre').GetName( GetNullCharacter )].\n#F A Serviteur may capture and control a Baka through will alone.#!"
  BONTE_ABYSSALE_PERK_EFFECT: "Gain access to a random echo of an historical artifact every #V 3#! years.\n#F A Serviteur forms a pact with Les Mysteres allowing them to summon a Relic or Artifact from the Island Below the Sea.#!"
 

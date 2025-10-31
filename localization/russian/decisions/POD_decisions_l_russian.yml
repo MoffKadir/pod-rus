@@ -1041,7 +1041,7 @@
  forever_indomitable_decision_req1_valid: "Инквизиция закончила рассылку своих армий."
  forever_indomitable_decision_req2: "На карте не осталось ни одного [Concept('independent_ruler', 'независимого правителя')|E] со [Concept('trait', 'свойством')|E] «[GetTrait('supehunter').GetName(GetNullCharacter)]». #help [GetTrait('shih').GetName(GetNullCharacter)] исключены из этого требования.#!"
  forever_indomitable_decision_req2_ex: "На карте не осталось ни одного [Concept('independent_ruler', 'независимого правителя')|E] со [Concept('trait', 'свойством')|E] «[GetTrait('supehunter').GetName(GetNullCharacter)]». #weak ([example.GetFirstName])#! #help [GetTrait('shih').GetName(GetNullCharacter)] исключены из этого требования.#!"
- forever_indomitable_decision_effect: "[Concept('the_masquerade', 'Маскарада')|E] больше не будет."
+ forever_indomitable_decision_effect: "#TOOLTIP:game_concept_the_masquerade_desc #E Маскарада#!#! больше не будет."
  forever_indomitable_decision_confirm: "Наконец-то оправданы."
 
  POD_camarilla_ventrue_membership_decision_effect_tooltip: "Клан [GetTrait('ventrue').GetName( GetPlayer )] станет новым членом Камарильи."

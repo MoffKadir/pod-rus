@@ -126,7 +126,7 @@
  seek_knowledge_celerity_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  seek_knowledge_dominate_name: "Изучить дисциплину ([GetTrait('dominate').GetName(GetNullCharacter)])"
- seek_knowledge_dominate_desc: "[GetTrait('dominate').GetName(GetNullCharacter)] - это [Concept('discipline', 'дисциплина')|E] контроля разума. Она позволяет использовать [GetPerk('mesmerize_perk').GetName(GetPlayer)] на других существах и отдавать приказы, которым они не могут воспротивиться. Она также может скрывать нарушения [Concept('the_masquerade', 'Маскарада')|E] с помощью достоинства [GetPerk('the_forgetful_mind_perk').GetName(GetPlayer)]."
+ seek_knowledge_dominate_desc: "[GetTrait('dominate').GetName(GetNullCharacter)] - это [Concept('discipline', 'дисциплина')|E] контроля разума. Она позволяет использовать [GetPerk('mesmerize_perk').GetName(GetPlayer)] на других существах и отдавать приказы, которым они не могут воспротивиться. Она также может скрывать нарушения #TOOLTIP:game_concept_the_masquerade_desc #E Маскарада#!#! с помощью достоинства [GetPerk('the_forgetful_mind_perk').GetName(GetPlayer)]."
  seek_knowledge_dominate_effects: "Вы узнаете местонахождение наставника, который знает [GetTrait('dominate').GetName(GetNullCharacter)]. Отправившись туда, вы сможете получить [Concept('trait', 'свойство')|E] [Concept('discipline', 'дисциплины')|E], которое позволит вам открыть [Concept('perks', 'достоинства')|E] в [Concept('lifestyle', 'образе жизни')|E] [GetTrait('dominate').GetName(GetNullCharacter)]."
  seek_knowledge_dominate_tt: "Я подчиню их своей воле."
  seek_knowledge_dominate_planning_title: "В поисках Доминирования"
@@ -174,7 +174,7 @@
  seek_knowledge_potence_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  seek_knowledge_presence_name: "Изучить дисциплину ([GetTrait('presence').GetName(GetNullCharacter)])"
- seek_knowledge_presence_desc: "[GetTrait('presence').GetName(GetNullCharacter)] - это [Concept('discipline', 'дисциплина')|E] сверхъестественного очарования. Она открывает несколько способностей, связанных с эмоциями, например [GetPerk('entrancement_perk').GetName(GetPlayer)] или [GetPerk('lingering_kiss_perk').GetName(GetPlayer)]. Она также может скрыть нарушения [Concept('the_masquerade', 'Маскарада')|E] через [GetPerk('majesty_perk').GetName(GetPlayer)]."
+ seek_knowledge_presence_desc: "[GetTrait('presence').GetName(GetNullCharacter)] - это [Concept('discipline', 'дисциплина')|E] сверхъестественного очарования. Она открывает несколько способностей, связанных с эмоциями, например [GetPerk('entrancement_perk').GetName(GetPlayer)] или [GetPerk('lingering_kiss_perk').GetName(GetPlayer)]. Она также может скрыть нарушения #TOOLTIP:game_concept_the_masquerade_desc #E Маскарада#!#! через [GetPerk('majesty_perk').GetName(GetPlayer)]."
  seek_knowledge_presence_effects: "Вы узнаете местонахождение наставника, который знает [GetTrait('presence').GetName(GetNullCharacter)]. Отправившись туда, вы сможете получить [Concept('trait', 'свойство')|E] [Concept('discipline', 'дисциплины')|E], которое позволит вам открыть [Concept('perks', 'достоинства')|E] в [Concept('lifestyle', 'образе жизни')|E] [GetTrait('presence').GetName(GetNullCharacter)]."
  seek_knowledge_presence_tt: "Подчиняя сердца и умы."
  seek_knowledge_presence_planning_title: "В поисках Присутствия"
@@ -362,7 +362,7 @@
  seek_knowledge_spiritus_planning_confirm: "$POD_journey_planning_confirm_default$"
  seek_knowledge_spiritus_planning_decline: "$POD_journey_planning_decline_default$"
  seek_knowledge_spiritus_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- seek_knowledge_spiritus_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('spiritus').GetName(GetNullCharacter)]. Не многие [Glossary('каиниты','game_concept_cainite_desc')] могут похвастаться связями с [Concept('spirit_world', 'миром духов')|E]."
+ seek_knowledge_spiritus_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('spiritus').GetName(GetNullCharacter)]. Не многие [Glossary('каиниты','game_concept_cainite_desc')] могут похвастаться связями с #TOOLTIP:game_concept_umbra_desc #E миром духов#!#!."
  seek_knowledge_spiritus_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  seek_knowledge_temporis_name: "Изучить редкую дисциплину ([GetTrait('temporis').GetName(GetNullCharacter)])"
@@ -1090,7 +1090,7 @@
  # golconda_3_travel_desc:
  # golconda_3_travel_confirm:
 
- provoke_vatican_warning: "#warning Это беспрецедентное нарушение [Concept('the_masquerade', 'Маскарада')|E] будет иметь масштабные, меняющие мир последствия.\n\nВы получите свойство «[GetTrait('forever_infamous').GetName(GetPlayer)]» и уровень репутации [GetModifier( 'prestige_level_0' ).GetNameWithTooltip|L]. Вы, безусловно, войдёте в историю. Вы почти наверняка попадете в историю, и точка.\n\nГотовы ли вы рискнуть?#!"
+ provoke_vatican_warning: "#warning Это беспрецедентное нарушение #TOOLTIP:game_concept_the_masquerade_desc #E Маскарада#!#! будет иметь масштабные, меняющие мир последствия.\n\nВы получите свойство «[GetTrait('forever_infamous').GetName(GetPlayer)]» и уровень репутации [GetModifier( 'prestige_level_0' ).GetNameWithTooltip|L]. Вы, безусловно, войдёте в историю. Вы почти наверняка попадете в историю, и точка.\n\nГотовы ли вы рискнуть?#!"
 
  provoke_vatican_name: "Раскрыть себя Ватикану"
  provoke_vatican_desc: "Я [Select_CString(GetPlayer.IsFemale, 'устала', 'устал' )] всегда прятаться в тени, всегда трусить в страхе перед смертными, всегда заботиться о том, чтобы наше существование оставалось скрытым. Довольно! Я покажу им, что наш род заслуживает уважения. Я покажу им всем..."

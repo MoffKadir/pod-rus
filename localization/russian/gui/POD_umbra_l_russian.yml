@@ -11,7 +11,7 @@
  UMBRA_WINDOW_COMMUNE: "Общение"
  COURT_POSITION_CATEGORY_FILTER: "Фильтр"
 
- UMBRA_WINDOW_NOT_EXPEDITION: "#weak Нет доступных [Concept('umbra_expedition','путешествий')|E]#!"
+ UMBRA_WINDOW_NOT_EXPEDITION: "#weak Нет доступных #TOOLTIP:game_concept_umbra_expedition_desc #E путешествий#!#!#!"
  UMBRA_WINDOW_NOT_EXPLORER: "#weak Нет нанятых исследователей#!"
  UMBRA_WINDOW_DANGER: "@alert_icon! #alert_trial Исследователь, находящийся здесь, не сможет использовать [Concept('interactions','взаимодействия')|E] на других персонажах#!"
  UMBRA_WINDOW_EVENT: "@grace_icon! #I Шанс получить случайное ежемесячное событие, если здесь находится исследователь.#!"
@@ -24,9 +24,9 @@
  umbra_action_tooltip: "#T [Localize(Concatenate(Scope.GetFlagName,'_confirm'))]#![Localize('line_break')][ScriptedGui.BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('explorer', Character.MakeScope).End)]"
  umbra_action_cooldown_tooltip: "Вы уже использовали это действие в этом месяце."
  umbra_action_no_explorer_tooltip: "Чтобы выполнить это действие, вам нужен находящийся в этом измерении исследователь."
- umbra_action_locked_tooltip: "Чтобы открыть это действие, вам нужно завершить соответствующее [Concept('umbra_expedition', 'путешествие в Умбру')|E]."
+ umbra_action_locked_tooltip: "Чтобы открыть это действие, вам нужно завершить соответствующее #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!."
 
- umbra_ongoing_tt: "Вы находитесь в [Concept('umbra_expedition', 'путешествии в Умбру')|E]."
+ umbra_ongoing_tt: "Вы находитесь в #TOOLTIP:game_concept_umbra_expedition_desc #E путешествии в Умбру#!#!."
  shadow_realm_tt: "Вы находитесь в [UmbraGlossaryLocalized('shadowlands','царстве Теней')]."
 
  bastet_spirit_wilds_access_tooltip: "[GetTrait('bastet').GetName( GetPlayer )], не являющиеся [GetFaithByKey('swara').GetName|l] должны иметь 2 ранг в [Concept('trait_level_track', 'пути развития свойства')|E]."

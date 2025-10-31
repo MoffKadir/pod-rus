@@ -1,7 +1,7 @@
 ﻿l_russian:
 
- POD_herdify.1.t: "Растущее [Concept('POD_herd', 'стадо')|E]"
- POD_herdify.1.option.a: "К моему [Concept('POD_herd', 'стаду')|E] присоединяется ещё одна овца."
+ POD_herdify.1.t: "Растущее #TOOLTIP:game_concept_POD_herd_desc #E стадо#!#!"
+ POD_herdify.1.option.a: "К моему #TOOLTIP:game_concept_POD_herd_desc #E стаду#!#! присоединяется ещё одна овца."
  POD_herdify.1.desc: "После тщательной подготовки и планирования вы расставляете ловушку на выбранную вами жертву. [target.GetShortUIName] подчиняется и охотно присоединяется к вашему скоту."
 
  #POD_drain_animal_interaction_auto: "Автоматически пить кровь животных."
@@ -11,4 +11,4 @@
  #POD_drain_animal_interaction_auto_stop: "Прекратите автоматическую охоту на животных"
 
  POD_herdify.2.option.a: "Проклятье..."
- POD_herdify.2.desc: "Ваши тщательные планы не оправдались. [target.GetShortUIName] не [Select_CString(target.IsFemale, 'стала', 'стал' )] частью вашего [Concept('POD_herd', 'стада')|E]."
+ POD_herdify.2.desc: "Ваши тщательные планы не оправдались. [target.GetShortUIName] не [Select_CString(target.IsFemale, 'стала', 'стал' )] частью вашего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!."

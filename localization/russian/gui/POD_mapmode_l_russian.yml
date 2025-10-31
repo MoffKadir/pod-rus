@@ -16,8 +16,8 @@
  MAPMODE_POD_MASQUERADE: "#T $MAPMODE_POD_MASQUERADE_LABEL$\n#!Показываетна карте уровень #L $pod_masquerade_exposure_with_icon$ия Маскарада#! всех [Concept('holder', 'владельцев')|E] [Concept('county', 'графств')|E]."
  MAPMODE_POD_MASQUERADE_HEADER: "Режим карты: #L $pod_masquerade_exposure_with_icon$ие Маскарада#!"
  MAPMODE_POD_FETTER_LABEL: "Оковы"
- MAPMODE_POD_FETTER: "#T $MAPMODE_POD_FETTER_LABEL$\n#!Показывает на карте ваши #L $pod_Fetters|l$ы#!."
- MAPMODE_POD_FETTER_HEADER: "Режим карты: #L $pod_Fetters$ы#!"
+ MAPMODE_POD_FETTER: "#T $MAPMODE_POD_FETTER_LABEL$\n#!Показывает на карте ваши #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!."
+ MAPMODE_POD_FETTER_HEADER: "Режим карты: #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!"
 
  e_map_assamite: "Бану Хаким"
  e_map_assamite_adj: "Бану-хакимск"

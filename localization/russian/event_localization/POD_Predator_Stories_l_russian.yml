@@ -195,7 +195,7 @@
 
  #Vampire attacks on your cult/family/consensual partner
  POD_predatorstories.1180.t: "Защита стада"
- POD_predatorstories.1180.desc: "Большинство вампиров уважают вашу власть и знают, что трогать ваше [Concept('POD_herd', 'стадо')|E] строго запрещено. Однако «большинство» не означает «все». [Select_CString(vampire.IsFemale, 'Одна', 'Один' )] из таких негодяев недавно, то ли из упрямства, то ли по глупости, [Select_CString(vampire.IsFemale, 'взяла', 'взял' )] кровь у ваших смертных. Необходимо преподать урок."
+ POD_predatorstories.1180.desc: "Большинство вампиров уважают вашу власть и знают, что трогать ваше #TOOLTIP:game_concept_POD_herd_desc #E стадо#!#! строго запрещено. Однако «большинство» не означает «все». [Select_CString(vampire.IsFemale, 'Одна', 'Один' )] из таких негодяев недавно, то ли из упрямства, то ли по глупости, [Select_CString(vampire.IsFemale, 'взяла', 'взял' )] кровь у ваших смертных. Необходимо преподать урок."
  POD_predatorstories.1180.a: "Вокруг достаточно крови."
  POD_predatorstories.1180.b: "Как [Select_CString(vampire.IsFemale, 'она посмела', 'он посмел' )]!"
  POD_predatorstories.1180.c: "Я сокрушу [Select_CString(vampire.IsFemale, 'её', 'его' )] разум."
@@ -254,7 +254,7 @@
 
  #Family member would like a wife
  POD_predatorstories.1200.t: "Сваха"
- POD_predatorstories.1200.desc: "[Select_CString(mortal_bloodbag.IsFemale, 'Одна', 'Один' )] из членов семьи, от которой вы кормитесь, действительно [Select_CString(mortal_bloodbag.IsFemale, 'хотела бы выйти замуж', 'хотел бы жениться' )]. Однако [Select_CString(mortal_bloodbag.IsFemale, 'ей', 'ему' )] не хватает золота, необходимого для выплаты приданого. [Select_CString(mortal_bloodbag.IsFemale, 'Она', 'Он' )] обращается к вам за помощью, как к [Select_CString(ROOT.Char.IsFemale, 'негласной покровительнице', 'негласному покровителю' )] своего народа.\nНеобходимость выслушивать подобные мелкие просьбы - один из недостатков питания от знающих членов [Concept('POD_herd', 'стада')|E], но, по крайней мере, никто не заставляет вас соглашаться."
+ POD_predatorstories.1200.desc: "[Select_CString(mortal_bloodbag.IsFemale, 'Одна', 'Один' )] из членов семьи, от которой вы кормитесь, действительно [Select_CString(mortal_bloodbag.IsFemale, 'хотела бы выйти замуж', 'хотел бы жениться' )]. Однако [Select_CString(mortal_bloodbag.IsFemale, 'ей', 'ему' )] не хватает золота, необходимого для выплаты приданого. [Select_CString(mortal_bloodbag.IsFemale, 'Она', 'Он' )] обращается к вам за помощью, как к [Select_CString(ROOT.Char.IsFemale, 'негласной покровительнице', 'негласному покровителю' )] своего народа.\nНеобходимость выслушивать подобные мелкие просьбы - один из недостатков питания от знающих членов #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!, но, по крайней мере, никто не заставляет вас соглашаться."
  POD_predatorstories.1200.a: "Меня пригласят?"
  POD_predatorstories.1200.b: "За кого ты меня принимаешь?!"
  POD_predatorstories.1200.c: "Я знаю кое-кого достаточно [Select_CString(mortal_bloodbag.IsFemale, 'отчаянного', 'отчаянную' )]."
@@ -267,7 +267,7 @@
 
  #Victim tries to cure you of vampirism with a potion
  POD_predatorstories.1220.t: "Гарантированный эффект"
- POD_predatorstories.1220.desc: "[Select_CString(mortal_bloodbag.IsFemale, 'Одна', 'Один' )] из членов вашего [Concept('POD_herd', 'стада')|E] обращается к вам со странным предложением. [Select_CString(mortal_bloodbag.IsFemale, 'Она купила', 'Он купил' )] зелье, которое, по [Select_CString(mortal_bloodbag.IsFemale, 'её', 'его' )] мнению, излечит вас от вампиризма. Идея, конечно, нелепая, но [Select_CString(mortal_bloodbag.IsFemale, 'она', 'он' )], кажется, очень гордится собой за то, что [Select_CString(mortal_bloodbag.IsFemale, 'приобрела', 'приобрёл' )] такое «чудодейственное лекарство». Возможно, вы могли бы подыграть [Select_CString(mortal_bloodbag.IsFemale, 'ей', 'ему' )]."
+ POD_predatorstories.1220.desc: "[Select_CString(mortal_bloodbag.IsFemale, 'Одна', 'Один' )] из членов вашего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! обращается к вам со странным предложением. [Select_CString(mortal_bloodbag.IsFemale, 'Она купила', 'Он купил' )] зелье, которое, по [Select_CString(mortal_bloodbag.IsFemale, 'её', 'его' )] мнению, излечит вас от вампиризма. Идея, конечно, нелепая, но [Select_CString(mortal_bloodbag.IsFemale, 'она', 'он' )], кажется, очень гордится собой за то, что [Select_CString(mortal_bloodbag.IsFemale, 'приобрела', 'приобрёл' )] такое «чудодейственное лекарство». Возможно, вы могли бы подыграть [Select_CString(mortal_bloodbag.IsFemale, 'ей', 'ему' )]."
  POD_predatorstories.1220.a: "Выпить его."
  POD_predatorstories.1220.b: "Не пить."
 
@@ -446,7 +446,7 @@
 
  #Victim needs gold to purchase new cattle
  POD_predatorstories.1380.t: "[Select_CString(ROOT.Char.IsFemale, 'Кровавая благодетельница', 'Кровавый благодетель' )]"
- POD_predatorstories.1380.desc: "Поскольку вы питаетесь от людей, которые понимают (по крайней мере, частично) вашу природу, они начинают видеть в вас [Select_CString(ROOT.Char.IsFemale, 'потенциальную благодетельницу', 'потенциального благодетеля' )] для своей семьи в обмен на их кровь. Это приводит к различным просьбам о помощи, которые могут быть утомительными, но обеспечат процветание вашего [Concept('POD_herd', 'стада')|E] в будущем. Поступила одна из таких просьб, хотя вы и не удосужились запомнить подробности, она сводится к тому, что [Select_CString(ROOT.Char.IsFemale, 'ей', 'ему' )] нужно золото для каких-то фермерских дел."
+ POD_predatorstories.1380.desc: "Поскольку вы питаетесь от людей, которые понимают (по крайней мере, частично) вашу природу, они начинают видеть в вас [Select_CString(ROOT.Char.IsFemale, 'потенциальную благодетельницу', 'потенциального благодетеля' )] для своей семьи в обмен на их кровь. Это приводит к различным просьбам о помощи, которые могут быть утомительными, но обеспечат процветание вашего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! в будущем. Поступила одна из таких просьб, хотя вы и не удосужились запомнить подробности, она сводится к тому, что [Select_CString(ROOT.Char.IsFemale, 'ей', 'ему' )] нужно золото для каких-то фермерских дел."
  POD_predatorstories.1380.a: "Я помогу."
  POD_predatorstories.1380.b: "Разбирайся с этим [Select_CString(mortal_bloodbag.IsFemale, 'сама', 'сам' )]!"
  POD_predatorstories.1380.c: "Животные повинуются мне."

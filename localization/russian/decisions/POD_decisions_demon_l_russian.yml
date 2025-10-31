@@ -37,7 +37,7 @@
  POD_demon_gather_the_faithful_objective_decision_tooltip: "Ваша сила связана с верой смертных. Пришло время собрать свою паству."
  POD_demon_gather_the_faithful_objective_decision_desc: "По мере того как бушевала Война на небесах, а ангелы узнавали об огромном и неиспользованном потенциале зла в Творении, влечение превращалось в желание, а способность контролировать эти желания ослабевала. Когда-то их подпитывала вера смертных в их божественную природу, но их перерождение в грехе запутало эти воды. Теперь они скорее демоны, чем ангелы, погрязшие в разврате и превратившиеся в пустую насмешку над тем, кем они когда-то были."
  POD_demon_gather_the_faithful_objective_decision_confirm: "Греховная симфония"
- POD_demon_gather_the_faithful_decision_more_xp: "Опыт [Concept('arcana_lifestyle', 'пути Арканы')|E], получаемый от ваших культистов, будет #P;bold удвоен#!"
+ POD_demon_gather_the_faithful_decision_more_xp: "Опыт #TOOLTIP:game_concept_arcana_lifestyle_desc #E пути арканы#!#!, получаемый от ваших культистов, будет #P;bold удвоен#!"
  POD_demon_gather_the_faithful_decision_next_objective: "Открывает [Concept('decision', 'решение')|E] «$POD_demon_breakdown_the_abyss_objective_decision$»"
  POD_demon_gather_the_faithful_decision_unlock_sin_trait_vassalization: "Позволяет вассализировать правителей с греховными [Concept('trait', 'свойствами')|E] вашей конфессии."
 
@@ -45,7 +45,7 @@
  POD_demon_breakdown_the_abyss_objective_decision_tooltip: "Вы вскроете самую важную тюрьму на свете."
  POD_demon_breakdown_the_abyss_objective_decision_desc: "[UmbraGlossary('abyss')], также известная как Ад или Яма, - это мрачное измерение тьмы, созданное Богом как вечная тюрьма для падших. Вы - один из немногих, кому удалось сбежать, но что могло бы случиться, если бы все ваши заточённые собратья сделают так же? Многие из них искажены до неузнаваемости, но разве кто-то заслуживает того, чтобы гнить в этом буквальном Аду?\nВы восстали против Божьей воли в прошлом, вы можете сделать это ещё раз."
  POD_demon_breakdown_the_abyss_objective_decision_confirm: "Наконец-то свобода!"
- POD_demon_breakdown_the_abyss_objective_decision_custom1: "У вас должно быть не менее 45 [Concept('perks', 'достоинств')|E] в [Concept('lifestyle', 'пути')|E] [Concept('arcana_lifestyle', 'Арканы')|E]."
+ POD_demon_breakdown_the_abyss_objective_decision_custom1: "У вас должно быть не менее 45 [Concept('perks', 'достоинств')|E] в [Concept('lifestyle', 'пути')|E] #TOOLTIP:game_concept_arcana_lifestyle_desc #E арканы#!#!."
  POD_demon_breakdown_the_abyss_objective_decision_free_lores: "Демоны получат доступ ко всем [Concept('lore_lifestyle','знаниям')|E]."
  POD_demon_breakdown_the_abyss_objective_decision_no_more_abyss: "Демоны будут освобождены из [UmbraGlossaryLocalized('abyss','Бездны')], а значит, все демоны снова смогут путешествовать по #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!."
  POD_demon_breakdown_the_abyss_objective_decision_allow_create_demon: "Вы можете создавать сосуды для других демонов и привлекать их в качестве гостей к своему двору."
@@ -54,7 +54,7 @@
  POD_demon_final_war_objective_decision_tooltip: "Вы начнете вторую Войну Гнева."
  POD_demon_final_war_objective_decision_desc: "Бог отвернулся от Творения, бросив вас в этом жалком мире. Пришло время плюнуть в лицо Великому предателю, раз и навсегда превратив эту мерзость в пепел."
  POD_demon_final_war_objective_decision_confirm: "Конец"
- POD_demon_final_war_objective_decision_custom1: "Вы должны получить все [Concept('perks', 'достоинств')|E] в [Concept('lifestyle', 'пути')|E] [Concept('arcana_lifestyle', 'Арканы')|E]."
+ POD_demon_final_war_objective_decision_custom1: "Вы должны получить все [Concept('perks', 'достоинств')|E] в [Concept('lifestyle', 'пути')|E] #TOOLTIP:game_concept_arcana_lifestyle_desc #E арканы#!#!."
  POD_demon_final_war_objective_decision_end: "#X Начнётся война, которая положит конец всем войнам. Пути назад уже не будет. Продолжите ли вы обрекать Творение на гибель?#!"
 
  POD_demon_redemption_objective_decision: "Божественное прощение"

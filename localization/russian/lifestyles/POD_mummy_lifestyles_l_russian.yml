@@ -186,7 +186,7 @@
  KINGLY_TONIC_PERK_EFFECT: "Улучшает достоинство «[GetPerk('princely_tonic_perk').GetName(GetPlayer)]», заменяя модификатор [GetModifier('princely_tonic_modifier').GetNameWithTooltip] модификатором [GetModifier('kingly_tonic_modifier').GetNameWithTooltip].\n#flavor Мумия создаёт очень насыщенное общеукрепляющее средство, обладающее большими целебными свойствами.#!"
  KINGLY_QUIDDITY_PERK_EFFECT: "#flavor Магический бонус, применяемый к объекту, становится более мощным.#!"
  KINGLY_QUIDDITY_EFFECT: "[GetPerk('kingly_quiddity_perk').GetName(GetPlayer)]"
- PHILTRE_OF_THE_BLACKENED_SANDS_PERK_EFFECT: "#flavor Мумия создает благовония, которые перенесут любого, кто вдохнет их, в [Concept('spirit_worlds', 'миры духов')|E].#!"
+ PHILTRE_OF_THE_BLACKENED_SANDS_PERK_EFFECT: "#flavor Мумия создает благовония, которые перенесут любого, кто вдохнет их, в #TOOLTIP:game_concept_umbra_desc #E миры духов#!#!.#!"
  DIVINE_ELIXIR_PERK_EFFECT: "Улучшает достоинство «[GetPerk('kingly_elixir_perk').GetName(GetPlayer)]», заменяя модификатор [GetModifier('kingly_elixir_diplomacy_modifier').GetNameWithTooltip] модификатором [GetModifier('divine_elixir_diplomacy_modifier').GetNameWithTooltip].\n#flavor Мумия создает великий эликсир, который усиливает действие одного или нескольких атрибутов.#!"
  DIVINE_TONIC_PERK_EFFECT: "Улучшает достоинство «[GetPerk('kingly_tonic_perk').GetName(GetPlayer)]», заменяя модификатор [GetModifier('kingly_tonic_modifier').GetNameWithTooltip] модификатором [GetModifier('divine_tonic_modifier').GetNameWithTooltip].\n#flavor Мумия создает крайне мощное общеукрепляющее средство, обладающее большими целебными свойствами.#!"
  DIVINE_QUIDDITY_PERK_EFFECT: "#flavor Магический бонус, применяемый к объекту, становится более мощным.#!"
