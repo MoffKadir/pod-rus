@@ -9,7 +9,7 @@
  POD_entrance.200.t: "[target.GetFirstNameNoTooltip]: Очарование"
  POD_entrance.200.desc: "Вы чувствуете, как ваша мистическая энергия касается разума персонажа [target.GetTitledFirstName]. [target.GetSheHe|U] сопротивляется очарованию."
  POD_entrance.200.option.a: "Пробудить кровь, чтобы очаровать [target.GetHerHis]."
- POD_entrance.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] [Select_CString(target.IsFemale, 'искусна', 'искусен' )] в [Concept('discipline', 'дисциплине')|E] Стойкости и [Select_CString(target.IsFemale, 'устойчива', 'устойчив' )] к моим способностям."
+ POD_entrance.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] [Select_CString(target.IsFemale, 'искусна', 'искусен' )] в [Glossary('дисциплине','game_concept_discipline_desc')] Стойкости и [Select_CString(target.IsFemale, 'устойчива', 'устойчив' )] к моим способностям."
  POD_entrance.200.a.tt_willpower: "[target.GetFirstNameNoTooltip] [Select_CString(target.IsFemale, 'напрягла', 'напряг' )] свою волю, чтобы противостоять вашим способностям."
  POD_entrance.200.a.success.desc: "[target.GetTitledFirstNameNoTooltip] [Select_CString(target.IsFemale, 'очарована', 'очарован' )] и начнёт любить вас"
  POD_entrance.200.a.failure.desc: "[target.GetTitledFirstNameNoTooltip] сопротивляется вашему очарованию"

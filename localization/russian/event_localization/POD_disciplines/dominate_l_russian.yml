@@ -65,4 +65,4 @@
 
  temp_immune_mesmerize: "Из-за предыдущей неудачной попытки [recipient.GetFirstNameNoTooltip] [Select_CString(recipient.IsFemale, 'невосприимчива', 'невосприимчив' )] к вашим попыткам Доминирования до [GetCurrentDateWithDiff( GetVarTimeRemaining( recipient.MakeScope, 'immune_to_mesmerize_from_actor') )]"
  same_or_highier_gen: "[recipient.GetFirstNameNoTooltip] принадлежит к тому же [Concept('vampgeneration', 'поколению')|E], что и вы, или выше"
- lower_gen_immune: "Вампиры с более низким [Concept('vampgeneration', 'поколением')|E] невосприимчивы к вашей [Concept('discipline', 'дисциплине')|E]"
+ lower_gen_immune: "Вампиры с более низким [Concept('vampgeneration', 'поколением')|E] невосприимчивы к вашей [Glossary('дисциплине','game_concept_discipline_desc')]"

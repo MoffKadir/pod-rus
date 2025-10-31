@@ -46,7 +46,7 @@
  POD_diablerize.200.option.c: "Очаровать!"
  POD_diablerize.200.option.c.tt.beast: "#beast Как [attacker.GetSheHe] [Select_CString(attacker.IsFemale, 'могла', 'мог' )] напасть на нас?! Мы так прекрасны!#!"
  POD_diablerize.200.option.c.desc: "Внутренний конфликт"
- POD_diablerize.200.option.c.tt: "Состязание дипломатии определит, сможете ли вы использовать [Concept('discipline', 'дисциплину')|E] Присутствия, чтобы заставить персонажа [attacker.GetFirstName] остановить нападение."
+ POD_diablerize.200.option.c.tt: "Состязание дипломатии определит, сможете ли вы использовать [Glossary('дисциплину','game_concept_discipline_desc')] Присутствия, чтобы заставить персонажа [attacker.GetFirstName] остановить нападение."
  POD_diablerize.200.option.c.tt.entrancement: "Я пытаюсь использовать очарование."
  POD_diablerize.200.option.c.tt.majesty: "Я [Select_CString(ROOT.Char.IsFemale, 'великолепна', 'великолепен' )]!"
  POD_diablerize.200.option.c.success: "[defender.GetFirstName] побеждает"
@@ -56,7 +56,7 @@
  POD_diablerize.200.option.d: "Загипнотизировать!"
  POD_diablerize.200.option.d.desc: "Конфликт доминирования"
  POD_diablerize.200.option.d.tt.beast: "#beast [attacker.GetSheHe|U] подчинится нам!#!"
- POD_diablerize.200.option.d.tt: "Состязание управления определит, сможете ли вы использовать [Concept('discipline', 'дисциплину')|E] Доминирования, чтобы приказать персонажу [attacker.GetFirstName] остановить нападение."
+ POD_diablerize.200.option.d.tt: "Состязание управления определит, сможете ли вы использовать [Glossary('дисциплину','game_concept_discipline_desc')] Доминирования, чтобы приказать персонажу [attacker.GetFirstName] остановить нападение."
  POD_diablerize.200.option.d.tt.mesmerize: "Я могу загипнотизировать слабые умы."
  POD_diablerize.200.option.d.tt.rationalize: "Я могу заставить рабов воспринимать мои приказы как свои собственные."
  POD_diablerize.200.option.d.tt.submerged_directive: "Я могу использовать глубинные убеждения, чтобы превратить слабых в своих пешек."
@@ -67,7 +67,7 @@
  POD_diablerize.200.option.d.tt.attacker_wins: "Воля персонажа [attacker.GetFirstName] слишком сильна для подчинения."
  POD_diablerize.200.option.e: "Сменить облик!"
  POD_diablerize.200.option.e.tt.beast: "#beast [attacker.GetSheHe] не сможет съесть то, что не сможет схватить!#!"
- POD_diablerize.200.option.e.tt: "Состязание учёности определит, сможете ли вы использовать [Concept('discipline', 'дисциплину')|E], чтобы принять бесплотную форму и вырваться из ловушки персонажа [attacker.GetFirstNamePossessive]."
+ POD_diablerize.200.option.e.tt: "Состязание учёности определит, сможете ли вы использовать [Glossary('дисциплину','game_concept_discipline_desc')], чтобы принять бесплотную форму и вырваться из ловушки персонажа [attacker.GetFirstNamePossessive]."
  POD_diablerize.200.option.f: "Напасть!"
  POD_diablerize.200.option.f.tt.beast: "#beast Мы высосем всю [attacker.GetHerHis] кровь!#!"
  POD_diablerize.200.option.f.tt: "Состязание доблести определит, кто победит в бою - [attacker.GetFirstName] или вы."
@@ -113,7 +113,7 @@
 
  #375 entrance duel notify defender
  POD_diablerize.375.t: "Очарование врага"
- POD_diablerize.375.desc.success: "Благодаря [Concept('discipline', 'дисциплине' )|E] Присутствия [attacker.GetFirstName] [Select_CString(attacker.IsFemale, 'очарована', 'очарован' )] мной. Под воздействием моих чар, [attacker.GetSheHe] не представляет для меня угрозы."
+ POD_diablerize.375.desc.success: "Благодаря [Glossary('дисциплине','game_concept_discipline_desc')] Присутствия [attacker.GetFirstName] [Select_CString(attacker.IsFemale, 'очарована', 'очарован' )] мной. Под воздействием моих чар, [attacker.GetSheHe] не представляет для меня угрозы."
  POD_diablerize.375.desc.failure: "Я пытаюсь поймать [attacker.GetHerHis] взгляд и излучаю своё присутствие на н[attacker.GetHerHis], чтобы остановить нападенние. С невероятной скоростью и злостью [attacker.GetFirstName] приближается ко мне, похоже, мои чары не сработали."
  POD_diablerize.375.option.a.success: "Да, именно так. Я [Select_CString(ROOT.Char.IsFemale, 'та', 'тот' )], кого ты обожаешь."
  POD_diablerize.375.option.a.success.tt: "Пока [attacker.GetFirstName] [Select_CString(attacker.IsFemale, 'очарована', 'очарован' )] мной, [attacker.GetSheHe] не может больше пытаться #L $pod_diablerize|l$зировать#! меня."
@@ -123,7 +123,7 @@
 
  #425 dominate duel notify defender
  POD_diablerize.425.t: "Гипноз моего врага"
- POD_diablerize.425.desc.success: "Благодаря [Concept('discipline', 'дисциплине' )|E] Доминирования я подчиняю [attacker.GetHerHis] волю, как гончар ваяет глину. Сперва я отдаю короткий приказ: «Хватит!». Затем мы перейдём к более интересным приказам."
+ POD_diablerize.425.desc.success: "Благодаря [Glossary('дисциплине','game_concept_discipline_desc')] Доминирования я подчиняю [attacker.GetHerHis] волю, как гончар ваяет глину. Сперва я отдаю короткий приказ: «Хватит!». Затем мы перейдём к более интересным приказам."
  POD_diablerize.425.desc.failure: "Я дотягиваюсь до [attacker.GetHerHis] разума. Он подобен крепости, в которую я не могу проникнуть. [attacker.GetSheHe|U] [Select_CString(attacker.IsFemale, 'глуха', 'глух' )] к моим повторяющимся приказам."
  POD_diablerize.425.option.a: "Покинь это место. И не возвращайся."
  POD_diablerize.425.option.a.tt: "Происки персонажа [attacker.GetFirstName] по вашей [Concept('diablerie', 'диаблеризации')|E] прекращены."
@@ -163,7 +163,7 @@
 
  #475 shapeshift duel notify defender
  POD_diablerize.475.t: "Смена формы"
- POD_diablerize.475.desc.success: "Я концентрирую свою [Concept('discipline', 'дисциплину')|E] и трансформируюсь в неосязаемую форму. Превращение завершается прежде, чем [attacker.GetFirstName] успевает добраться до меня. Затем я легко скрываюсь."
+ POD_diablerize.475.desc.success: "Я концентрирую свою [Glossary('дисциплину','game_concept_discipline_desc')] и трансформируюсь в неосязаемую форму. Превращение завершается прежде, чем [attacker.GetFirstName] успевает добраться до меня. Затем я легко скрываюсь."
  POD_diablerize.475.desc.failure: "Я начинаю процесс трансформации в неосязаемую форму. Но я не успеваю сделать это достаточно быстро и [attacker.GetFirstName] настигает меня."
  POD_diablerize.475.option.a.success: "Этот трюк спасает меня не в первый раз."
  POD_diablerize.475.option.a.failure: "Плоть против плоти!"

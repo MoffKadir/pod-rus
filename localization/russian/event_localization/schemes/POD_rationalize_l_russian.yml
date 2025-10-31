@@ -9,7 +9,7 @@
  POD_rationalize.200.t: "[target.GetFirstNameNoTooltip]: Доминирование"
  POD_rationalize.200.desc: "[target.GetTitledFirstName] подчинится моей воле. Но [target.GetSheHe] сопротивляется моему доминированию!"
  POD_rationalize.200.option.a: "Пробудить кровь, чтобы доминировать над [Select_CString(target.IsFemale, 'ней', 'ним' )]."
- POD_rationalize.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] в совершенстве владеет [Concept('discipline', 'дисциплиной')|E] Стойкости и сопротивляется вашим способностям."
+ POD_rationalize.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] в совершенстве владеет [Glossary('дисциплиной','game_concept_discipline_desc')] Стойкости и сопротивляется вашим способностям."
  POD_rationalize.200.a.tt_willpower: "[target.GetFirstNameNoTooltip] использует свою волю, чтобы воспротивиться вашим способностям."
  POD_rationalize.200.a.success.desc: "Победа"
  POD_rationalize.200.a.tt_success: "[target.GetTitledFirstName] считает, что имеет перед вами обязательства."
@@ -21,7 +21,7 @@
  POD_rationalize.200.option.c.tt: "Доминирование провалилось."
 
  POD_rationalize.300.t: "[target.GetFirstNameNoTooltip] поддаётся обоснованию"
- POD_rationalize.300.desc: "Под действием [Concept('discipline', 'дисциплины')|E] Доминирования, [target.GetTitledFirstName] будет считать, что находится у меня в долгу."
+ POD_rationalize.300.desc: "Под действием [Glossary('дисциплины','game_concept_discipline_desc')] Доминирования, [target.GetTitledFirstName] будет считать, что находится у меня в долгу."
  POD_rationalize.300.option.a: "Итак, что я хочу, чтобы [Select_CString(target.IsFemale, 'она сделала', 'он сделал' )]?"
  POD_rationalize.300.option.a.tt.beast: "#beast Кровь! Мы хотим крови!#!"
 

@@ -4,21 +4,21 @@
  ####### GUI #######
  ###################
 
- POD_heist_setup_suspicion_tt: "Вы начнёте миссию [Concept('infiltration', 'проникновения')|E] во владение [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier]"
+ POD_heist_setup_suspicion_tt: "Вы начнёте миссию #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#! во владение [GetPlayer.GetCurrentLocation.GetCounty.GetTitle.GetNameNoTier]"
 
- POD_heist_suspicion: "#L $pod_suspicion_with_icon$ие#!: [CurrentHeist.Var('suspicion').GetValue]"
+ POD_heist_suspicion: "#TOOLTIP:game_concept_suspicion_desc #E Подозрение#!#!: [CurrentHeist.Var('suspicion').GetValue]"
  POD_heist_coterie: "Ваша [GetPlayer.Custom('PODCoterie')]: $POD_player_coterie$"
- POD_heist_coterie_member_absent: "@warning_icon!#X [Scope.Char.GetFirstNameNicknamed] #bold не#! присутствует при этом [Concept('infiltration', 'проникновении')|E]#!"
+ POD_heist_coterie_member_absent: "@warning_icon!#X [Scope.Char.GetFirstNameNicknamed] #bold не#! присутствует при этом #TOOLTIP:game_concept_infiltration_desc #E проникновении#!#!#!"
 
- POD_heist_raise_suspicion_desc: "#L $pod_suspicion_with_icon$ие#! #N возрастёт#! на $VALUE|V0$"
- POD_heist_raise_suspicion_desc_past: "#L $pod_suspicion_with_icon$ие#! #N возросло#! на $VALUE|V0$"
+ POD_heist_raise_suspicion_desc: "#TOOLTIP:game_concept_suspicion_desc #E Подозрение#!#! #N возрастёт#! на $VALUE|V0$"
+ POD_heist_raise_suspicion_desc_past: "#TOOLTIP:game_concept_suspicion_desc #E Подозрение#!#! #N возросло#! на $VALUE|V0$"
  POD_heist_trigger_suspicion_event_desc: "@warning_icon!#X Осложнение возникнет при #bold $VALUE|V0$#! ед. подозрения#!"
- POD_heist_trigger_suspicion_event_desc_past: "#N Поскольку #L $pod_suspicion_with_icon|l$ие#! достигло #bold $VALUE|V0$#! ед., возникло осложнение#!"
- POD_heist_trigger_suspicion_event_hint: "#N Будущие проверки [Concept('skill', 'навыков')|E] во время этого [Concept('infiltration', 'проникновения')|E] будут более сложными.#!"
+ POD_heist_trigger_suspicion_event_desc_past: "#N Поскольку #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрение#!#! достигло #bold $VALUE|V0$#! ед., возникло осложнение#!"
+ POD_heist_trigger_suspicion_event_hint: "#N Будущие проверки [Concept('skill', 'навыков')|E] во время этого #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#! будут более сложными.#!"
  POD_heist_maximum_suspicion_desc: "@warning_icon!#X Вы провалите проникновение при #bold [EmptyScope.ScriptValue('suspicion_max')|V0]#! ед. подозрения#!"
- POD_heist_maximum_suspicion_desc_past: "#N Поскольку #L $pod_suspicion_with_icon|l$ие#! достигло #bold [EmptyScope.ScriptValue('suspicion_max')|V0] ед.#!, вы провалили это [Concept('infiltration', 'проникновение')|E].#!"
+ POD_heist_maximum_suspicion_desc_past: "#N Поскольку #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрение#!#! достигло #bold [EmptyScope.ScriptValue('suspicion_max')|V0] ед.#!, вы провалили это #TOOLTIP:game_concept_infiltration_desc #E проникновение#!#!.#!"
 
- POD_heist_resource_deltas_tt: "Расходы в ходе этого [Concept('infiltration', 'проникновения')|E]:"
+ POD_heist_resource_deltas_tt: "Расходы в ходе этого #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!:"
 
  POD_heist_unexplored_node_tt: "Неизведанная локация"
  POD_heist_node_location_tt: "Это ваша текущая локация"
@@ -27,7 +27,7 @@
  POD_heist_node_isvalid_tt: "Вы не можете добраться до этого места из своего текущего местоположения"
 
  POD_heist_option_exit: "Прекратить миссию."
- POD_heist_option_exit_tt: "Вы покинете место [Concept('infiltration', 'проникновения')|E] с теми богатствами, которые вам удалось собрать."
+ POD_heist_option_exit_tt: "Вы покинете место #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#! с теми богатствами, которые вам удалось собрать."
  #POD_heist_option_exit_isvalid: "You are not at an exit!"
  POD_heist_option_vault: "Собрать как можно больше золота."
  POD_heist_option_vault_empty: "@warning_icon!#X У персонажа [CurrentHeist.Var('gold_owner').Char.GetFirstNameNicknamed] больше нет золота#!"
@@ -42,14 +42,14 @@
  POD_heist_stress_toast: "Напряжённый опыт"
 
  POD_heist_title_node_exit: "Вы находитесь у выхода"
- POD_heist_desc_node_exit: "Здесь вы можете входить и выходить.\nКак только вы достигнете цели этого [Concept('infiltration', 'проникновения')|E], вам всё равно придётся вернуться к выходу, чтобы вы могли безопасно уйти."
+ POD_heist_desc_node_exit: "Здесь вы можете входить и выходить.\nКак только вы достигнете цели этого #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!, вам всё равно придётся вернуться к выходу, чтобы вы могли безопасно уйти."
 
  POD_heist_title_node_empty: "Потайной ход!"
- POD_heist_desc_node_empty: "Этот коридор совершенно пуст.\nВы можете пройти здесь, не опасаясь вызвать [Concept('suspicion', 'подозрения')|E]."
+ POD_heist_desc_node_empty: "Этот коридор совершенно пуст.\nВы можете пройти здесь, не опасаясь вызвать #TOOLTIP:game_concept_suspicion_desc #E подозрения#!#!."
 
  POD_heist_title_node_scramble: "Выждать"
  POD_heist_desc_node_scramble: "Вы можете затаиться и переждать в этом укромном уголке.\nВсё уляжется, стражники отойдут, и, возможно, у вас появятся новые возможности."
- POD_heist_effect_node_scramble: "Большинство узлов этого [Concept('infiltration', 'проникновения')|E] будут заменены новыми."
+ POD_heist_effect_node_scramble: "Большинство узлов этого #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#! будут заменены новыми."
 
  POD_heist_title_node_key: "Ключ от хранилища"
  POD_heist_desc_node_key: "В этой комнате есть ключ.\nОн откроет дверь в комнату, где хранятся самые ценные вещи."
@@ -73,10 +73,10 @@
  POD_heist_gain_artifact_toast: "Вы нашли [Concept('artifact', 'артефакт')|E]"
  POD_heist_gain_artifact_desc: "[CurrentHeist.Var('target_artifact').Artifact.Custom('ColorizedArtifactName')] будет добавлен к вашей добыче"
  POD_heist_gain_artifact_desc_past: "[CurrentHeist.Var('target_artifact').Artifact.Custom('ColorizedArtifactName')] был добавлен к вашей добыче"
- POD_heist_gain_artifact_hint: "Вы получите всю свою добычу, как только завершите [Concept('infiltration', 'проникновение')|E]"
+ POD_heist_gain_artifact_hint: "Вы получите всю свою добычу, как только завершите #TOOLTIP:game_concept_infiltration_desc #E проникновение#!#!"
 
  POD_heist_title_node_vault: "Массивное хранилище"
- POD_heist_desc_node_vault: "Комната, заполненная грудами золота. Это то, за чем вы сюда пришли.\nБудьте осторожны: чем больше времени вы потратите на его сбор, тем больше вырастет [Concept('suspicion', 'подозрения')|E]."
+ POD_heist_desc_node_vault: "Комната, заполненная грудами золота. Это то, за чем вы сюда пришли.\nБудьте осторожны: чем больше времени вы потратите на его сбор, тем больше вырастет #TOOLTIP:game_concept_suspicion_desc #E подозрения#!#!."
  POD_heist_treasury_amount_desc: "\n#I У персонажа [CHARACTER.GetShortUINameNoTooltipNoFormat] осталось [CHARACTER.GetGold|V0][gold_i|E]#!"
 
  POD_heist_title_node_event: "Произойдёт что-то неожиданное"
@@ -120,7 +120,7 @@
  POD_heist_effect_node_prowess_critfail: "СОКРУШИТЬ этих стражников, словно землетрясение"
 
  POD_heist_title_node_fight_elite: "Опасная схватки"
- POD_heist_desc_node_fight_elite: "Вам на глаза попадается [CurrentHeistTarget.Custom('KnightCulture')|l], которых держит при себе [CurrentHeistTarget.GetFirstNamePossessive].\nБыстро разберитесь с ним, и вы сможете справиться с этим, не вызвав [Concept('suspicion', 'подозрения')|E]."
+ POD_heist_desc_node_fight_elite: "Вам на глаза попадается [CurrentHeistTarget.Custom('KnightCulture')|l], которых держит при себе [CurrentHeistTarget.GetFirstNamePossessive].\nБыстро разберитесь с ним, и вы сможете справиться с этим, не вызвав #TOOLTIP:game_concept_suspicion_desc #E подозрения#!#!."
  POD_heist_effect_node_fight_elite: "Вы начнёте поединок не на жизнь, а на @death_icon!#N;bold смерть#!."
  POD_heist_fight_elite_error_toast: "Рыцарь исчез..."
 
@@ -130,24 +130,24 @@
  POD_heist_effect_node_fight_hunt_invalid: "#weak [CurrentHeist.Var('hunt_target').Char.GetShortUIName] уже [Select_CString(CurrentHeist.Var('hunt_target').Char.IsFemale, 'побеждена', 'побеждён' )]#!"
 
  POD_heist_title_node_money: "Открытое хранилище!"
- POD_heist_desc_node_money: "Эта комната заполнена грудами золота.\nВы могли бы потратить некоторое время на то, чтобы собрать его, но это повысит [Concept('suspicion', 'подозрение')|E]."
+ POD_heist_desc_node_money: "Эта комната заполнена грудами золота.\nВы могли бы потратить некоторое время на то, чтобы собрать его, но это повысит #TOOLTIP:game_concept_suspicion_desc #E подозрение#!#!."
 
  POD_heist_title_node_fame: "Возможность произвести впечатление"
- POD_heist_desc_node_fame: "Некоторые придворные делятся историями о знаменитых [Concept('coterie', 'котериях')|E].\nВы могли бы получить [Concept('prestige', 'престиж')|E], рассказав о своих достижениях, но это повысит [Concept('suspicion', 'подозрение')|E]."
+ POD_heist_desc_node_fame: "Некоторые придворные делятся историями о знаменитых [Concept('coterie', 'котериях')|E].\nВы могли бы получить [Concept('prestige', 'престиж')|E], рассказав о своих достижениях, но это повысит #TOOLTIP:game_concept_suspicion_desc #E подозрение#!#!."
 
  POD_heist_title_node_gossip: "Секретные документы"
- POD_heist_desc_node_gossip: "В этой комнате хранятся письма, учётные книги и другие письменные доказательства злодеяний.\nВы могли бы потратить некоторое время на их поиск и узнать [Concept('secrets', 'секреты')|E] или получить [Concept('hooks', 'влияние')|E], но это повысит [Concept('suspicion', 'подозрение')|E]."
+ POD_heist_desc_node_gossip: "В этой комнате хранятся письма, учётные книги и другие письменные доказательства злодеяний.\nВы могли бы потратить некоторое время на их поиск и узнать [Concept('secrets', 'секреты')|E] или получить [Concept('hooks', 'влияние')|E], но это повысит #TOOLTIP:game_concept_suspicion_desc #E подозрение#!#!."
  POD_heist_effect_node_gossip: "Вы узнаете [Concept('secret', 'секрет')|E] или получите [Concept('hook', 'влияние')|E] на подданных персонажа [CurrentHeist.Var('court_owner').Char.GetFirstNameNicknamed]."
 
  POD_heist_title_node_destress: "Наслаждение гостеприимством"
- POD_heist_desc_node_destress: "Это комната с удобствами для гостей двора.\nВы могли бы провести некоторое время, расслабляясь и снимая [Concept('stress', 'стресс')|E], но это повысит [Concept('suspicion', 'подозрение')|E]."
+ POD_heist_desc_node_destress: "Это комната с удобствами для гостей двора.\nВы могли бы провести некоторое время, расслабляясь и снимая [Concept('stress', 'стресс')|E], но это повысит #TOOLTIP:game_concept_suspicion_desc #E подозрение#!#!."
 
  POD_heist_title_node_map: "Чертежи и карты"
- POD_heist_desc_node_map: "В этой комнате находится не только карта, но и расписания для стражи и придворных, по которым живёт [CurrentHeistTarget.Custom('PODDomicile')].\nЭто большое подспорье для вашего [Concept('infiltration', 'проникновения')|E], если вы найдёте время всё прочитать."
- POD_heist_effect_node_map: "Вы раскроете каждый узел этого [Concept('infiltration', 'проникновения')|E]."
+ POD_heist_desc_node_map: "В этой комнате находится не только карта, но и расписания для стражи и придворных, по которым живёт [CurrentHeistTarget.Custom('PODDomicile')].\nЭто большое подспорье для вашего #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!, если вы найдёте время всё прочитать."
+ POD_heist_effect_node_map: "Вы раскроете каждый узел этого #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!."
 
  POD_heist_title_node_prisoners: "Темница"
- POD_heist_desc_node_prisoners: "Здесь содержатся узники, которых держит при себе [CurrentHeistTarget.GetFirstNameNicknamed].\nВы можете освободить их, если пожелаете, но это повысит [Concept('suspicion', 'подозрение')|E]."
+ POD_heist_desc_node_prisoners: "Здесь содержатся узники, которых держит при себе [CurrentHeistTarget.GetFirstNameNicknamed].\nВы можете освободить их, если пожелаете, но это повысит #TOOLTIP:game_concept_suspicion_desc #E подозрение#!#!."
  POD_heist_release_prisoner_desc: "Вы подойдёте к тюремной камере, в которой сидит [CHARACTER.GetNameNicknamed] и решите, что с [Select_CString(CHARACTER.IsFemale, 'ней', 'ним' )] делать."
 
 
@@ -238,8 +238,8 @@
  # Chancellor route (Vassal opinion) [Dee] #ТУТЪ
 
  POD_heists.1001.t: "Осложнение: Груз славы"
- POD_heists.1001.desc.coterie: "Наше [Concept('infiltration', 'проникновение')|E] до сих пор шло успешно... даже слишком хорошо, на самом деле. Никто не усомнился в нашей легенде о «дипломатической миссии», поэтому нам приходится отвечать на множество вопросов о международных отношениях."
- POD_heists.1001.desc.nocoterie: "Моё [Concept('infiltration', 'проникновение')|E] до сих пор шло успешно... даже слишком хорошо, на самом деле. Никто не усомнился в моей легенде о том, что я нахожусь на «дипломатической миссии», поэтому мне приходится отвечать на множество вопросов о международных отношениях."
+ POD_heists.1001.desc.coterie: "Наше #TOOLTIP:game_concept_infiltration_desc #E проникновение#!#! до сих пор шло успешно... даже слишком хорошо, на самом деле. Никто не усомнился в нашей легенде о «дипломатической миссии», поэтому нам приходится отвечать на множество вопросов о международных отношениях."
+ POD_heists.1001.desc.nocoterie: "Моё #TOOLTIP:game_concept_infiltration_desc #E проникновение#!#! до сих пор шло успешно... даже слишком хорошо, на самом деле. Никто не усомнился в моей легенде о том, что я нахожусь на «дипломатической миссии», поэтому мне приходится отвечать на множество вопросов о международных отношениях."
  POD_heists.1001.desc.end: "\n\n[diplomacy_courtier.GetFirstNameNicknamed] прочищает горло. «Что, по вашему мнению, следует предпринять в ответ на растущую угрозу #L [flavortext_realm.GetAdjective|l]ого#! экспансионизма?»"
  POD_heists.1001.a: "Это просто. Позвольте мне объяснить..."
  POD_heists.1001.a.success: "Ваша легенда остаётся в силе"
@@ -319,8 +319,8 @@
 
  POD_heists.1013.t: "Осложнение: [Select_CString(court_owner.IsFemale, 'Главная антагонистка', 'Главный антагонист' )]"
  POD_heists.1013.desc: "И теперь [court_owner.GetFirstNameNicknamed] также [Select_CString(court_owner.IsFemale, 'проявила', 'проявил' )] личный интерес. [court_owner.GetSheHe|U] следит за происходящим при дворе, словно ястреб, "
- POD_heists.1013.desc.coterie: "[court_owner.GetHerHis] глаза чаще всего направлены на нас.\n\nНам нужно что-то с этим делать, если мы хотим, чтобы это [Concept('infiltration', 'проникновение')|E] продолжалось."
- POD_heists.1013.desc.nocoterie: "[court_owner.GetHerHis] глаза чаще всего направлены на меня.\n\nМне нужно что-то с этим делать, если я хочу, чтобы это [Concept('infiltration', 'проникновение')|E] продолжалось."
+ POD_heists.1013.desc.coterie: "[court_owner.GetHerHis] глаза чаще всего направлены на нас.\n\nНам нужно что-то с этим делать, если мы хотим, чтобы это #TOOLTIP:game_concept_infiltration_desc #E проникновение#!#! продолжалось."
+ POD_heists.1013.desc.nocoterie: "[court_owner.GetHerHis] глаза чаще всего направлены на меня.\n\nМне нужно что-то с этим делать, если я хочу, чтобы это #TOOLTIP:game_concept_infiltration_desc #E проникновение#!#! продолжалось."
  POD_heists.1013.a.coterie: "Мы сделаем вид, что поддерживаем [court_owner.GetHerHis] правление."
  POD_heists.1013.a.nocoterie: "Я сделаю вид, что поддерживаю [court_owner.GetHerHis] правление."
  POD_heists.1013.a.success: "Лесть всегда срабатывает"
@@ -335,7 +335,7 @@
  # Coterie opinion route [Dee]
 
  POD_heists.1021.t: "Осложнение: Раздор"
- POD_heists.1021.desc: "Что-то в этой вылазке выявляет худшее в группе $POD_player_coterie$.\n\nМы препираемся из-за пустяков. Затем о нетривиальных вещах. Несмотря ни на что, мы не можем договориться о том, как следует проводить это [Concept('infiltration', 'проникновение')|E]. Вежливые разногласия перерастают в едкие колкости.\n\nЭто не сулит ничего хорошего для успеха нашей миссии."
+ POD_heists.1021.desc: "Что-то в этой вылазке выявляет худшее в группе $POD_player_coterie$.\n\nМы препираемся из-за пустяков. Затем о нетривиальных вещах. Несмотря ни на что, мы не можем договориться о том, как следует проводить это #TOOLTIP:game_concept_infiltration_desc #E проникновение#!#!. Вежливые разногласия перерастают в едкие колкости.\n\nЭто не сулит ничего хорошего для успеха нашей миссии."
  POD_heists.1021.a: "Мы должны оставаться рациональными и сосредоточенными."
  POD_heists.1021.a.success: "Звучит убедительно"
  POD_heists.1021.a.failure: "Звучит оскорбительно"
@@ -653,8 +653,8 @@
  # MGS3 route [karde]
 
  POD_heists.2011.t: "Осложнение: Травоядный"
- POD_heists.2011.desc.coterie: "Чтобы достичь цели нашего [Concept('infiltration', 'проникновения')|E], мы пришли к выводу, что самым безопасным путём является частный сад на территории владения. Это роскошное окружение, изобилующее растительностью, даёт нам множество возможностей для продвижения, оставаясь скрытыми.\n\nВ данный момент мы пробираемся сквозь высокую траву, когда я замечаю, что к нам приближается бродячая собака. Если этот незваный гость начнёт лаять, всё может очень быстро обернуться плохо..."
- POD_heists.2011.desc.nocoterie: "Чтобы достичь цели моего [Concept('infiltration', 'проникновения')|E], я [Select_CString(ROOT.Char.IsFemale, 'пришла', 'пришёл' )] к выводу, что самым безопасным путём является частный сад на территории владения. Это роскошное окружение, изобилующее растительностью, даёт мне множество возможностей для продвижения, оставаясь скрытыми.\n\nВ данный момент я пробираюсь сквозь высокую траву, когда я замечаю, что ко мне приближается бродячая собака. Если этот незваный гость начнёт лаять, всё может очень быстро обернуться плохо..."
+ POD_heists.2011.desc.coterie: "Чтобы достичь цели нашего #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!, мы пришли к выводу, что самым безопасным путём является частный сад на территории владения. Это роскошное окружение, изобилующее растительностью, даёт нам множество возможностей для продвижения, оставаясь скрытыми.\n\nВ данный момент мы пробираемся сквозь высокую траву, когда я замечаю, что к нам приближается бродячая собака. Если этот незваный гость начнёт лаять, всё может очень быстро обернуться плохо..."
+ POD_heists.2011.desc.nocoterie: "Чтобы достичь цели моего #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!, я [Select_CString(ROOT.Char.IsFemale, 'пришла', 'пришёл' )] к выводу, что самым безопасным путём является частный сад на территории владения. Это роскошное окружение, изобилующее растительностью, даёт мне множество возможностей для продвижения, оставаясь скрытыми.\n\nВ данный момент я пробираюсь сквозь высокую траву, когда я замечаю, что ко мне приближается бродячая собака. Если этот незваный гость начнёт лаять, всё может очень быстро обернуться плохо..."
  POD_heists.2011.a: "Кыш, прочь!"
  POD_heists.2011.b: "Полностью замереть..."
  POD_heists.2011.c: "Не мог бы ты отвернуться, приятель?"
@@ -723,7 +723,7 @@
  #Same results and loca as above
 
  POD_heists.2043.t: "Осложнение: Ловушки!"
- POD_heists.2043.desc: "[Concept('infiltration', 'Проникновение')|E] достигло критической стадии. Исходя из прошлого опыта, я ожидаю, что здесь будут самые страшные ловушки. Однако, на первый взгляд, я, кажется, не замечаю ничего необычного, что не может успокоить мои нервы. Гораздо более вероятно, что что-то очень хорошо спрятано, а не вообще ничего нет."
+ POD_heists.2043.desc: "#TOOLTIP:game_concept_infiltration_desc #E Проникновение#!#! достигло критической стадии. Исходя из прошлого опыта, я ожидаю, что здесь будут самые страшные ловушки. Однако, на первый взгляд, я, кажется, не замечаю ничего необычного, что не может успокоить мои нервы. Гораздо более вероятно, что что-то очень хорошо спрятано, а не вообще ничего нет."
  POD_heists.2043.a: "Ещё раз всё проверим..." #intrigue duel
  POD_heists.2043.a.success: "Ха! Попался!" #continue
  POD_heists.2043.a.failure: "Это что... ВАЛУН?!" #death
@@ -734,8 +734,8 @@
  # Inside Help route [karde]
 
  POD_heists.2061.t: "Осложнение: Внутренний человек"
- POD_heists.2061.desc.coterie:0 "Чтобы добиться успеха в нашем [Concept('infiltration', 'проникновении')|E], мы выбрали непрямой подход. У каждого человека есть свои слабости, и мы выяснили, какой вид взятки лучше всего подходит стражнику у заднего входа.\n\nПоскольку этот человек впускает нас, как и было условлено, я искренне надеюсь, что не [Select_CString(ROOT.Char.IsFemale, 'ошиблась', 'ошибся' )] в нём и не попаду в засаду."
- POD_heists.2061.desc.nocoterie: "Чтобы добиться успеха в своём [Concept('infiltration', 'проникновении')|E], я [Select_CString(ROOT.Char.IsFemale, 'выбрала', 'выбрал' )] непрямой подход. У каждого человека есть свои слабости, и я [Select_CString(ROOT.Char.IsFemale, 'выяснила', 'выяснил' )], какой вид взятки лучше всего подходит стражнику у заднего входа.\n\nПоскольку этот человек впускает меня, как и было условлено, я искренне надеюсь, что не [Select_CString(ROOT.Char.IsFemale, 'ошиблась', 'ошибся' )] в нём и не попаду в засаду."
+ POD_heists.2061.desc.coterie:0 "Чтобы добиться успеха в нашем #TOOLTIP:game_concept_infiltration_desc #E проникновении#!#!, мы выбрали непрямой подход. У каждого человека есть свои слабости, и мы выяснили, какой вид взятки лучше всего подходит стражнику у заднего входа.\n\nПоскольку этот человек впускает нас, как и было условлено, я искренне надеюсь, что не [Select_CString(ROOT.Char.IsFemale, 'ошиблась', 'ошибся' )] в нём и не попаду в засаду."
+ POD_heists.2061.desc.nocoterie: "Чтобы добиться успеха в своём #TOOLTIP:game_concept_infiltration_desc #E проникновении#!#!, я [Select_CString(ROOT.Char.IsFemale, 'выбрала', 'выбрал' )] непрямой подход. У каждого человека есть свои слабости, и я [Select_CString(ROOT.Char.IsFemale, 'выяснила', 'выяснил' )], какой вид взятки лучше всего подходит стражнику у заднего входа.\n\nПоскольку этот человек впускает меня, как и было условлено, я искренне надеюсь, что не [Select_CString(ROOT.Char.IsFemale, 'ошиблась', 'ошибся' )] в нём и не попаду в засаду."
  POD_heists.2061.a: "Ты получишь хорошую компенсацию." # lodsamonee
  POD_heists.2061.b: "Я признаю твою ценность." #diplomacy duel
  POD_heists.2061.b.success: "Как и договаривались" #continue, lose gold
@@ -751,17 +751,17 @@
  POD_heists.2062.b.nocoterie: "Мне нужно уйти, пока ещё можно." #gain stress
 
  POD_heists.2063.t: "Осложнение: Ожидаемое предательство"
- POD_heists.2063.desc.coterie: "Когда наше [Concept('infiltration', 'проникновении')|E] достигает критической стадии, наш проводник ведёт группу $POD_player_coterie$ в новую комнату. Прежде чем мы успеваем среагировать, дверь запирается, и я слышу, как вынимают мечи из ножен и натягивают арбалеты.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'была права', 'был прав' )], опасаясь нашего агента, но, видимо, недостаточно [Select_CString(ROOT.Char.IsFemale, 'благоразумна', 'благоразумен' )], чтобы не попасть в хорошо подготовленную засаду.\n\nПришло время проверить, достаточно ли мы сильны, чтобы исправить эту ошибку."
- POD_heists.2063.desc.nocoterie: "Когда наше [Concept('infiltration', 'проникновении')|E] достигает критической стадии, мой проводник ведёт меня в новую комнату. Прежде чем я успеваю среагировать, дверь запирается, и я слышу, как вынимают мечи из ножен и натягивают арбалеты.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'была права', 'был прав' )], опасаясь своего агента, но, видимо, недостаточно [Select_CString(ROOT.Char.IsFemale, 'благоразумна', 'благоразумен' )], чтобы не попасть в хорошо подготовленную засаду.\n\nПришло время проверить, хватит ли у меня сил исправить эту ошибку."
+ POD_heists.2063.desc.coterie: "Когда наше #TOOLTIP:game_concept_infiltration_desc #E проникновении#!#! достигает критической стадии, наш проводник ведёт группу $POD_player_coterie$ в новую комнату. Прежде чем мы успеваем среагировать, дверь запирается, и я слышу, как вынимают мечи из ножен и натягивают арбалеты.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'была права', 'был прав' )], опасаясь нашего агента, но, видимо, недостаточно [Select_CString(ROOT.Char.IsFemale, 'благоразумна', 'благоразумен' )], чтобы не попасть в хорошо подготовленную засаду.\n\nПришло время проверить, достаточно ли мы сильны, чтобы исправить эту ошибку."
+ POD_heists.2063.desc.nocoterie: "Когда наше #TOOLTIP:game_concept_infiltration_desc #E проникновении#!#! достигает критической стадии, мой проводник ведёт меня в новую комнату. Прежде чем я успеваю среагировать, дверь запирается, и я слышу, как вынимают мечи из ножен и натягивают арбалеты.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'была права', 'был прав' )], опасаясь своего агента, но, видимо, недостаточно [Select_CString(ROOT.Char.IsFemale, 'благоразумна', 'благоразумен' )], чтобы не попасть в хорошо подготовленную засаду.\n\nПришло время проверить, хватит ли у меня сил исправить эту ошибку."
  POD_heists.2063.a: "Это ещё не конец." #very difficult prowess challenge. They are prepared, they have been warned in advance and you had options to back out before
  POD_heists.2063.a.success: "Загнанная в угол крыса, сражающаяся как лев" #continue
  POD_heists.2063.a.failure: "Одной ошибки слишком много" #death
 
 
  POD_heists.6001.t: "Ранний конец"
- POD_heists.6001.desc: "Смерть - это всего лишь небольшая неудача для меня.\n\nК сожалению, из-за особенностей моей способности к воскрешению моё новое тело появилось где-то далеко от места моей #L миссии $pod_infiltration_mission|l$ия#!.\n\nЕсли я захочу попробовать ещё раз, мне придётся начать с самого начала."
+ POD_heists.6001.desc: "Смерть - это всего лишь небольшая неудача для меня.\n\nК сожалению, из-за особенностей моей способности к воскрешению моё новое тело появилось где-то далеко от места моей #L миссии #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#!.\n\nЕсли я захочу попробовать ещё раз, мне придётся начать с самого начала."
  POD_heists.6001.a: "Всё ещё лучше, чем быть [Select_CString(ROOT.Char.IsFemale, 'смертной', 'смертным' )]."
- POD_heists.6001.a.tt: "Ваша #L миссия $pod_infiltration_mission|l$ия#! завершилась преждевременно из-за вашей смерти."
+ POD_heists.6001.a.tt: "Ваша #L миссия #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#! завершилась преждевременно из-за вашей смерти."
 
 
  POD_heists.7777.t: "Месть рассказчику"

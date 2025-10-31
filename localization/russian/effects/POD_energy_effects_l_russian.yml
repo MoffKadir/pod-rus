@@ -28,10 +28,10 @@
 
  # custom_description loc
  # note that colors are reversed for hunger (increase is bad, decrease is good)
- POD_hunger_change_desc: "$pod_hunger_with_icon$ #N повысится#! на #bold $VALUE|0V$#!"
- POD_hunger_change_desc_past: "$pod_hunger_with_icon$ #N повысился#! на #bold $VALUE|0V$#!"
- POD_hunger_change_desc_neg: "$pod_hunger_with_icon$ #P снизится#! на #bold $VALUE|0V$#!"
- POD_hunger_change_desc_past_neg: "$pod_hunger_with_icon$ #P снизился#! на #bold $VALUE|0V$#!"
+ POD_hunger_change_desc: "#TOOLTIP:game_concept_hunger_desc #E @blood_icon!Голод#!#! #N повысится#! на #bold $VALUE|0V$#!"
+ POD_hunger_change_desc_past: "#TOOLTIP:game_concept_hunger_desc #E @blood_icon!Голод#!#! #N повысился#! на #bold $VALUE|0V$#!"
+ POD_hunger_change_desc_neg: "#TOOLTIP:game_concept_hunger_desc #E @blood_icon!Голод#!#! #P снизится#! на #bold $VALUE|0V$#!"
+ POD_hunger_change_desc_past_neg: "#TOOLTIP:game_concept_hunger_desc #E @blood_icon!Голод#!#! #P снизился#! на #bold $VALUE|0V$#!"
 
  POD_angst_change_desc: "$POD_energy_angst$ #P повысится#! на #bold $VALUE|0V$#!"
  POD_angst_change_desc_past: "$POD_energy_angst$ #P повысился#! на #bold $VALUE|0V$#!"
@@ -59,7 +59,7 @@
  POD_glamour_change_desc_past_neg: "$POD_energy_glamour$ #N снизился#! на #bold $VALUE|0V$#!"
 
  # misc
- hunger_increase_effect.hungerless: "Из-за безграничного запаса крови ваш $pod_hunger_with_icon$ не изменится."
- hunger_decrease_effect.tt.full: "Поскольку вы уже сыты, $pod_hunger_with_icon$ не снизится."
- hunger_decrease_effect.tt.nourishment: "@warning_icon!#N Поскольку у вас есть [GetPlayer.Custom('PODBloodPotency')], такого небольшого количества крови недостаточно, чтобы утолить ваш $pod_hunger_with_icon$.#!"
- hunger_decrease_effect.tt.0: "@warning_icon!#N Поскольку у вас есть [GetPlayer.Custom('PODBloodPotency')], ваш $pod_hunger_with_icon$ #bold не#! снизится, если только вы не осушите это смертное создание до смерти.#!"
+ hunger_increase_effect.hungerless: "Из-за безграничного запаса крови ваш #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#! не изменится."
+ hunger_decrease_effect.tt.full: "Поскольку вы уже сыты, #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#! не снизится."
+ hunger_decrease_effect.tt.nourishment: "@warning_icon!#N Поскольку у вас есть [GetPlayer.Custom('PODBloodPotency')], такого небольшого количества крови недостаточно, чтобы утолить ваш #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#!.#!"
+ hunger_decrease_effect.tt.0: "@warning_icon!#N Поскольку у вас есть [GetPlayer.Custom('PODBloodPotency')], ваш #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#! #bold не#! снизится, если только вы не осушите это смертное создание до смерти.#!"

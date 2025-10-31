@@ -9,7 +9,7 @@
  POD_mesmerize.200.t: "[target.GetFirstNameNoTooltip]: Доминирование"
  POD_mesmerize.200.desc: "[target.GetTitledFirstName] [Select_CString(target.IsFemale, 'связана', 'связан' )] с моей волей. Но [target.GetSheHe] сопротивляется мне!\nВам нужно преодолеть [target.GetHerHis] волю, если вы хотите преуспеть. Существ с сильной волей труднее сломить, и такая интенсивная концентрация ваших мыслительных способностей может привести к стрессу и для вас самих."
  POD_mesmerize.200.option.a: "Пробудить кровь, чтобы подчинить [target.GetHerHis]."
- POD_mesmerize.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] [Select_CString(target.IsFemale, 'искусна', 'искусен' )] в [Concept('discipline', 'дисциплине')|E] Стойкости и [Select_CString(target.IsFemale, 'устойчива', 'устойчив' )] к вашим способностям."
+ POD_mesmerize.200.a.tt_fortitude: "[target.GetFirstNameNoTooltip] [Select_CString(target.IsFemale, 'искусна', 'искусен' )] в [Glossary('дисциплине','game_concept_discipline_desc')] Стойкости и [Select_CString(target.IsFemale, 'устойчива', 'устойчив' )] к вашим способностям."
  POD_mesmerize.200.a.tt_willpower: "[target.GetFirstNameNoTooltip] [Select_CString(target.IsFemale, 'напрягла', 'напряг' )] свою волю, чтобы противостоять вашим способностям."
  POD_mesmerize.200.a.success.desc: "[target.GetTitledFirstNameNoTooltip] окажет вам услугу"
  POD_mesmerize.200.a.failure.desc: "[target.GetTitledFirstNameNoTooltip] сопротивляется вашему доминированию, и есть шанс, что вы потерпите неудачу и не сможете загипнотизировать [target.GetHerHis] в течение 10 лет"
@@ -19,7 +19,7 @@
  POD_mesmerize.200.option.c.tt: "Доминирование провалится."
 
  POD_mesmerize.300.t: "[target.GetFirstNameNoTooltip] [Select_CString(target.IsFemale, 'загипнотизирована', 'загипнотизирован' )]"
- POD_mesmerize.300.desc: "Под действием [Concept('discipline', 'дисциплины')|E] Доминирования, [target.GetTitledFirstName] будет следовать моим приказам.\n\n#X Чтобы отдать приказ, используйте [Concept('character_interaction', 'взаимодействие персонажа')|E] «Приказать марионетке».\nДля некоторых приказов требуется пометить цель, что можно сделать с помощью [Concept('character_interaction', 'взаимодействия персонажа')|E] «Пометить вторичную цель».#!"
+ POD_mesmerize.300.desc: "Под действием [Glossary('дисциплины','game_concept_discipline_desc')] Доминирования, [target.GetTitledFirstName] будет следовать моим приказам.\n\n#X Чтобы отдать приказ, используйте [Concept('character_interaction', 'взаимодействие персонажа')|E] «Приказать марионетке».\nДля некоторых приказов требуется пометить цель, что можно сделать с помощью [Concept('character_interaction', 'взаимодействия персонажа')|E] «Пометить вторичную цель».#!"
  POD_mesmerize.300.desc.short_term: "\n\n Поскольку у вас нет достоинства «Глубинная директива», у вас есть всего несколько дней, чтобы отдать приказы."
  POD_mesmerize.300.option.a: "Что я хочу [target.GetHerHim] приказать?"
  POD_mesmerize.300.option.a.tt.beast: "#beast Кровь! Мы хотим крови! #!"

@@ -421,7 +421,7 @@
 
  rhineland_duchy_objective_rhineland_duchy_claims: "Получить [Concept('pressed_claims', 'обоснованные претензии')|E] на все [Concept('duchies', 'герцогства')|E] вдоль реки Рейн — [GetTitleByKey('d_currezia').GetNameNoTier], [GetTitleByKey('d_augsburg').GetNameNoTier], [GetTitleByKey('d_swabia').GetNameNoTier], [GetTitleByKey('d_alsace').GetNameNoTier], [GetTitleByKey('d_west_franconia').GetNameNoTier], [GetTitleByKey('d_lower_lorraine').GetNameNoTier], [GetTitleByKey('d_julich').GetNameNoTier], [GetTitleByKey('d_gelre').GetNameNoTier], [GetTitleByKey('d_brabant').GetNameNoTier] и [GetTitleByKey('d_holland').GetNameNoTier]."
 
- POD_rhinegold_heist_tt: "Вы получите доступ к #L миссии $pod_infiltration_mission|l$ия#!, чтобы вернуть [GetGlobalVariable('rhinegold').Artifact.Custom('ColorizedArtifactName')]."
+ POD_rhinegold_heist_tt: "Вы получите доступ к #L миссии #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#!, чтобы вернуть [GetGlobalVariable('rhinegold').Artifact.Custom('ColorizedArtifactName')]."
 
  pod1230objectives_fae.1200.t: "[Select_CString(ROOT.Char.IsFemale, 'Королева', 'Король' )] Рейна!"
  pod1230objectives_fae.1200.desc: "Теперь вся река Рейн находится под вашим контролем. Где-то на её берегах, несомненно, протекает золото Рейна."

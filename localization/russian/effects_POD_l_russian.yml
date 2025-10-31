@@ -70,12 +70,12 @@
  TARGET_GAINS_A_ANIMAL_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('animal_lifestyle', 'животного резонанса')|E]"
  TARGET_GAINED_A_ANIMAL_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('animal_lifestyle', 'животного резонанса')|E]"
 
- GAINS_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "Получает $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('bloodsorcery', 'кровавого чародейства')|E]"
- GAINED_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "Получено $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('bloodsorcery', 'кровавого чародейства')|E]"
- I_GAIN_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "Вы получите $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('bloodsorcery', 'кровавого чародейства')|E]"
- I_GAINED_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "Вы получили $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('bloodsorcery', 'кровавого чародейства')|E]"
- TARGET_GAINS_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('bloodsorcery', 'кровавого чародейства')|E]"
- TARGET_GAINED_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('bloodsorcery', 'кровавого чародейства')|E]"
+ GAINS_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "Получает $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#!"
+ GAINED_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "Получено $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#!"
+ I_GAIN_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "Вы получите $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#!"
+ I_GAINED_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "Вы получили $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#!"
+ TARGET_GAINS_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#!"
+ TARGET_GAINED_A_BLOOD_MAGIC_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#!"
 
  GAINS_FAITH_LIFESTYLE_XP: "[Concept('faith_lifestyle', 'Опыт истинной веры')|E] увеличивается на $VALUE|V0$"
  GAINED_FAITH_LIFESTYLE_XP: "[Concept('faith_lifestyle', 'Опыт истинной веры')|E] увеличен на $VALUE|V0$"
@@ -652,25 +652,25 @@
 
  BOND_FAMULUS_PERK_EFFECT: "Вы можете [Concept('bind_famulus', 'привязать фамильяра')|E], подчинив своей кровью животное и создав с ним ментальную связь через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
  BOND_FAMULUS_PERK_FLAVOR: "#flavor Только смерть освобождает связанного фамильяра. Пока он регулярно получает вампирскую кровь, фамильяр не стареет#!"
- SENSE_THE_BEAST_PERK_FLAVOR: "#flavor Вампир может чувствовать [Concept('beast', 'Зверя')|E], присутствующего в смертных, вампирах и других сверхъестественных существах, получая представление об их природе, голоде и враждебности.#!"
+ SENSE_THE_BEAST_PERK_FLAVOR: "#flavor Вампир может чувствовать [Glossary('Зверя','game_concept_beast_desc')], присутствующего в смертных, вампирах и других сверхъестественных существах, получая представление об их природе, голоде и враждебности.#!"
  FERAL_WHISPERS_PERK_FLAVOR: "#flavor Вампир может общаться с дикими и городскими животными. Шёпот Зверя позволяет общаться с животными в двух направлениях. Кошка, возможно, не захочет обсуждать достоинства церковного писания, но с радостью обсудит отсутствие добычи в окрестностях местного собора.#!"
  #ANIMAL_SUCCULENCE_PERK_EFFECT: "Вампир может утолить дополнительный голод, питаясь животными. Как [Concept('character_interaction', 'взаимодействие персонажа')|E], вы можете истощать животных с лучшим эффектом, чем другие вампиры."
  ANIMAL_SUCCULENCE_PERK_FLAVOR: "#flavor Вампиры обычно считают, что кровь животных не приносит никакой пользы. Она отвратительна на вкус и вряд ли питает жилы нежити. Однако некоторые старейшие практикующие анималисты настолько сроднились с кровью зверей, что могут эффективно добывать себе пропитание в дикой природе.#!"
- QUELL_THE_BEAST_PERK_FLAVOR: "#flavor Зафиксировав взгляд на цели, вампир погружает их внутреннего [Concept('beast', 'Зверя')|E] во временную дремоту. Смертные, затронутые этим, становятся апатичными, неспособными предпринимать какие-либо действия, кроме как оставаться в живых, в то время как звериные порывы вампиров временно ослабевают, к лучшему или худшему.#!"
+ QUELL_THE_BEAST_PERK_FLAVOR: "#flavor Зафиксировав взгляд на цели, вампир погружает их внутреннего [Glossary('Зверя','game_concept_beast_desc')] во временную дремоту. Смертные, затронутые этим, становятся апатичными, неспособными предпринимать какие-либо действия, кроме как оставаться в живых, в то время как звериные порывы вампиров временно ослабевают, к лучшему или худшему.#!"
  CALL_OF_THE_WILD_PERK_EFFECT: "Открывает возможность нанимать [Concept('men_at_arms', 'профессионалов')|E] - [GetMaA('POD_controlled_animals').GetName]. Вначале они будут слабыми, у вас может быть только один такой полк, и их размер не зависит от инноваций, которыми вы обладаете."
- CALL_OF_THE_WILD_PERK_FLAVOR: "#flavor С помощью этой способности [Concept('beast', 'Зверь')|E] наделяет голос вампира глубокой привязанностью к определённому животному. Он воет, кричит, каркает или иным образом имитирует животные звуки. Любое животное выбранного вида в пределах слышимости призывается вампиром, и некоторые приходят, в зависимости от способностей вампира.#!"
+ CALL_OF_THE_WILD_PERK_FLAVOR: "#flavor С помощью этой способности [Glossary('Зверь','game_concept_beast_desc')] наделяет голос вампира глубокой привязанностью к определённому животному. Он воет, кричит, каркает или иным образом имитирует животные звуки. Любое животное выбранного вида в пределах слышимости призывается вампиром, и некоторые приходят, в зависимости от способностей вампира.#!"
  SUBSUME_THE_SPIRIT_PERK_FLAVOR: "#flavor Вампир может полностью перенести свой разум в тело животного. Он может контролировать животное и свободно пользоваться его чувствами, даже днем, если ему удастся не заснуть.#!"
  UNLIVING_HIVE_PERK_FLAVOR: "#flavor Чаще всего эту способность можно встретить у Носферату. Она позволяет распространять своё животное влияние на стаи насекомых, таких как мухи или тараканы.#!"
  DRAWING_OUT_THE_BEAST_PERK_EFFECT: ""
- DRAWING_OUT_THE_BEAST_PERK_FLAVOR: "#flavor Вампир может проецировать своего [Concept('beast', 'Зверя')|E] в момент ужаса или неистовства, передавая его находящемуся поблизости субъекту, будь то смертный или вампир. Тот сразу же испытает на себе действие ярости, впадая в беспощадное неистовство или спасаясь бегством в ужасе, в зависимости от причины.#!"
+ DRAWING_OUT_THE_BEAST_PERK_FLAVOR: "#flavor Вампир может проецировать своего [Glossary('Зверя','game_concept_beast_desc')] в момент ужаса или неистовства, передавая его находящемуся поблизости субъекту, будь то смертный или вампир. Тот сразу же испытает на себе действие ярости, впадая в беспощадное неистовство или спасаясь бегством в ужасе, в зависимости от причины.#!"
  ANIMAL_DOMINION_PERK_FLAVOR: "Вы можете призвать своего питомца на войну через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nМожно нанимать несколько видов животных в качестве [Concept('men_at_arms', 'профессионалов')|E].\n#flavor Власть, которую вампир имеет над зверями, теперь достаточно велика, чтобы повелевать стаями и стаями, словно продолжением собственного тела. По мановению руки животные десятками, а то и сотнями отдают свои жизни, чтобы задобрить своего хозяина.#!"
  TONGUE_OF_BEASTS_PERK_FLAVOR: "#flavor Эта способность расширяет возможности Дикого шёпота. Вместо того чтобы говорить с одним животным, вампир может разговаривать с любым и всеми животными, не устанавливая зрительного контакта.#!"
  SEND_THE_EIGHTH_PLAGUE_PERK_EFFECT: "Вы можете наложить модификатор [GetModifier('weather_magic_plague_modifier').GetNameWithTooltip] на державу врага через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
- SEND_THE_EIGHTH_PLAGUE_PERK_FLAVOR: "#flavor Это одна из самых разрушительных способностей среди всех $pod_disciplines|l$. Древний гангрел по имени Валентиниан продемонстрировал ее огромный разрушительный потенциал вскоре после Четвертого крестового похода. Разозлившись на итальянских каинитов, вторгшихся на его земли, он призвал свое мастерство Анимализма и обрушил голод на целый торговый город.#!"
+ SEND_THE_EIGHTH_PLAGUE_PERK_FLAVOR: "#flavor Это одна из самых разрушительных способностей среди всех [Glossary('дисциплин','game_concept_discipline_desc')]. Древний гангрел по имени Валентиниан продемонстрировал ее огромный разрушительный потенциал вскоре после Четвертого крестового похода. Разозлившись на итальянских каинитов, вторгшихся на его земли, он призвал свое мастерство Анимализма и обрушил голод на целый торговый город.#!"
  CRIMSON_FURY_PERK_EFFECT: "Повышает вероятность события «[unconquered_soul|E]» для диаблеристов, которые пытаются поглотить вашу душу."
- CRIMSON_FURY_PERK_FLAVOR: "#flavor Об этой силе ходит много слухов и домыслов, так как она почти не дает видимого эффекта. Достигнув этого уровня мастерства, вампир может позволить своему [Concept('beast', 'Зверю')|E] свободно бродить по его венам. Его кровь вызывает неистовство у смертных и вампиров, которые пробуют её на вкус. Если диаблерист успешно поглотит душу вампира, его может ждать ужасный конец - Зверь вампира сожрёт его изнутри.#!"
+ CRIMSON_FURY_PERK_FLAVOR: "#flavor Об этой силе ходит много слухов и домыслов, так как она почти не дает видимого эффекта. Достигнув этого уровня мастерства, вампир может позволить своему [Glossary('Зверю','game_concept_beast_desc')] свободно бродить по его венам. Его кровь вызывает неистовство у смертных и вампиров, которые пробуют её на вкус. Если диаблерист успешно поглотит душу вампира, его может ждать ужасный конец - Зверь вампира сожрёт его изнутри.#!"
  EYES_OF_THE_FOREST_PERK_FLAVOR: "#flavor Эта внушающая благоговение сила лежит в основе многих народных сказок о задумчивых лесах и запретных горах. Животные и даже насекомые, обитающие в этих местах, служат глазами и ушами вампира, обеспечивая ему глубокое знание ночных событий в его владениях.#!"
- PLAGUE_OF_BEASTS_PERK_FLAVOR: "#flavor Мафусаил, владеющий Анимализмом, может вызывать чуму библейского масштаба. Расширяя возможности «Зова дикой природы», вампир призывает к себе животных. Однако вместо того, чтобы взывать на языке одного животного, сам [Concept('beast', 'Зверь')|E] кричит на многие мили или километры. В результате все животные начинают роиться вокруг каинита, вызывая полный бедлам.#!"
+ PLAGUE_OF_BEASTS_PERK_FLAVOR: "#flavor Мафусаил, владеющий Анимализмом, может вызывать чуму библейского масштаба. Расширяя возможности «Зова дикой природы», вампир призывает к себе животных. Однако вместо того, чтобы взывать на языке одного животного, сам [Glossary('Зверь','game_concept_beast_desc')] кричит на многие мили или километры. В результате все животные начинают роиться вокруг каинита, вызывая полный бедлам.#!"
 
  # Auspex #
 
@@ -678,7 +678,7 @@
  HEIGHTENED_SENSES_PERK_EFFECT: "У узников меньше шансов сбежать из вашей темницы.\n#flavor Чувства вампира обостряются до сверхъестественной степени, давая ему возможность видеть в кромешной тьме, слышать ультразвуковые частоты и чувствовать запах страха, исходящий от трусящей добычи.#!"
  PREMONITION_PERK_EFFECT: "Скорость прогресса [Concept('espionage', 'шпионажа')|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!.\nУ узников меньше шансов сбежать из вашей темницы.\n#flavor Вампир испытывает вспышки озарения. Они могут выражаться в поднятии духа, внезапном вдохновении или даже ярких видениях. Хотя эти видения никогда не бывают слишком точными, они могут подтолкнуть вампира к тому, чтобы избежать опасности, или открыть истину, на которую раньше не обращали внимания.#!"
  PREMONITION_PERK_BONUS_VALUE: "[GetPerk('premonition_perk').GetName(GetPlayer)]"
- SCRY_THE_SOUL_PERK_EFFECT: "Позволяет видеть [Concept('resonance', 'резонанс')|E] других персонажей.\nВы можете выбрать, каким типом [Concept('resonance', 'резонанса')|E] будут обладать смертные, найденные во время #TOOLTIP:game_concept_journey_desc #E странствия#!#! охоты в вашей столице.\n#flavor Сосредоточившись на человеке, вампир может воспринимать состояние его психики в виде меняющейся по цвету ауры. Аура не дает точной информации, но дает подсказки по многим вопросам, например, эмоциональное состояние, резонанс и сверхъестественные свойства.#!"
+ SCRY_THE_SOUL_PERK_EFFECT: "Позволяет видеть #TOOLTIP:game_concept_resonance_desc #E резонанс#!#! других персонажей.\nВы можете выбрать, каким типом #TOOLTIP:game_concept_resonance_desc #E резонанса#!#! будут обладать смертные, найденные во время #TOOLTIP:game_concept_journey_desc #E странствия#!#! охоты в вашей столице.\n#flavor Сосредоточившись на человеке, вампир может воспринимать состояние его психики в виде меняющейся по цвету ауры. Аура не дает точной информации, но дает подсказки по многим вопросам, например, эмоциональное состояние, резонанс и сверхъестественные свойства.#!"
  SENSE_THE_UNSEEN_PERK_EFFECT: "#flavor Чувства вампира настраиваются на измерения за пределами обыденности, позволяя ему ощущать присутствие, иначе скрытое от невооруженного глаза.#!"
  SHARE_THE_SENSES_PERK_EFFECT: "Скорость прогресса [Concept('espionage', 'шпионажа')|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!.\n#flavor Обратившись к своему разуму, вампир может подключиться к чувствам другого смертного или вампира, видя, слыша и чувствуя то же, что и они.#!"
  SHARE_THE_SENSES_PERK_BONUS_VALUE: "[GetPerk('share_the_senses_perk').GetName(GetPlayer)]"
@@ -702,18 +702,18 @@
  # CAULDRON_OF_BLOOD_PERK: "Unlocks a [single_combat_duel|E] move."
  # BLOOD_OF_POTENCY_PERK_STATS_EFFECT: "Unlock a thaumaturgy power allowing you to potentially increase your Blood Potency."
 
- ARCANE_KNOWLEDGE_1_PERK_EFFECT: "Повышает шанс успеха #L $pod_bs_spell|l$ий#! [Concept('bloodsorcery', 'кровавого чародейства')|E] на 15\nСнижает шанс успеха враждебных #L $pod_bs_spell|l$ий#! [Concept('bloodsorcery', 'кровавого чародейства')|E] на 10"
- ARCANE_KNOWLEDGE_2_PERK_EFFECT: "Повышает шанс успеха #L $pod_bs_spell|l$ий#! [Concept('bloodsorcery', 'кровавого чародейства')|E] на 15\nСнижает шанс успеха враждебных #L $pod_bs_spell|l$ий#! [Concept('bloodsorcery', 'кровавого чародейства')|E] на 10"
- ARCANE_KNOWLEDGE_3_PERK_EFFECT: "Повышает шанс успеха #L $pod_bs_spell|l$ий#! [Concept('bloodsorcery', 'кровавого чародейства')|E] на 15\nСнижает шанс успеха враждебных #L $pod_bs_spell|l$ий#! [Concept('bloodsorcery', 'кровавого чародейства')|E] на 10"
- ARCANE_KNOWLEDGE_4_PERK_EFFECT: "Повышает шанс успеха #L $pod_bs_spell|l$ий#! [Concept('bloodsorcery', 'кровавого чародейства')|E] на 15\nСнижает шанс успеха враждебных #L $pod_bs_spell|l$ий#! [Concept('bloodsorcery', 'кровавого чародейства')|E] на 10"
+ ARCANE_KNOWLEDGE_1_PERK_EFFECT: "Повышает шанс успеха #L $pod_bs_spell|l$ий#! #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#! на 15\nСнижает шанс успеха враждебных #L $pod_bs_spell|l$ий#! #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#! на 10"
+ ARCANE_KNOWLEDGE_2_PERK_EFFECT: "Повышает шанс успеха #L $pod_bs_spell|l$ий#! #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#! на 15\nСнижает шанс успеха враждебных #L $pod_bs_spell|l$ий#! #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#! на 10"
+ ARCANE_KNOWLEDGE_3_PERK_EFFECT: "Повышает шанс успеха #L $pod_bs_spell|l$ий#! #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#! на 15\nСнижает шанс успеха враждебных #L $pod_bs_spell|l$ий#! #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#! на 10"
+ ARCANE_KNOWLEDGE_4_PERK_EFFECT: "Повышает шанс успеха #L $pod_bs_spell|l$ий#! #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#! на 15\nСнижает шанс успеха враждебных #L $pod_bs_spell|l$ий#! #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#! на 10"
 
- ARCANE_MASTERY_1_PERK_EFFECT: "Увеличивает скорость #L $pod_bs_ritual|l$ов#! [Concept('bloodsorcery', 'кровавого чародейства')|E] на 10%"
+ ARCANE_MASTERY_1_PERK_EFFECT: "Увеличивает скорость #L $pod_bs_ritual|l$ов#! #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#! на 10%"
  ARCANE_MASTERY_1_PERK_BONUS_VALUE: "[GetPerk('arcane_mastery_1_perk').GetName(GetPlayer)]"
- ARCANE_MASTERY_2_PERK_EFFECT: "Увеличивает скорость #L $pod_bs_ritual|l$ов#! [Concept('bloodsorcery', 'кровавого чародейства')|E] на 10%"
+ ARCANE_MASTERY_2_PERK_EFFECT: "Увеличивает скорость #L $pod_bs_ritual|l$ов#! #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#! на 10%"
  ARCANE_MASTERY_2_PERK_BONUS_VALUE: "[GetPerk('arcane_mastery_2_perk').GetName(GetPlayer)]"
- ARCANE_MASTERY_3_PERK_EFFECT: "Увеличивает скорость #L $pod_bs_ritual|l$ов#! [Concept('bloodsorcery', 'кровавого чародейства')|E] на 10%"
+ ARCANE_MASTERY_3_PERK_EFFECT: "Увеличивает скорость #L $pod_bs_ritual|l$ов#! #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#! на 10%"
  ARCANE_MASTERY_3_PERK_BONUS_VALUE: "[GetPerk('arcane_mastery_3_perk').GetName(GetPlayer)]"
- ARCANE_MASTERY_4_PERK_EFFECT: "Увеличивает скорость #L $pod_bs_ritual|l$ов#! [Concept('bloodsorcery', 'кровавого чародейства')|E] на 10%"
+ ARCANE_MASTERY_4_PERK_EFFECT: "Увеличивает скорость #L $pod_bs_ritual|l$ов#! #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#! на 10%"
  ARCANE_MASTERY_4_PERK_BONUS_VALUE: "[GetPerk('arcane_mastery_4_perk').GetName(GetPlayer)]"
 
  # Celerity #
@@ -869,7 +869,7 @@
  EXEDO_ANIMUS_PERK_EFFECT: "Скорость прогресса [Concept('espionage', 'шпионажа')|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!"
  EXEDO_ANIMUS_PERK_BONUS_VALUE: "[GetPerk('exedo_animus_perk').GetName(GetPlayer)]"
  EXEDO_ANIMUS_PERK_FLAVOR: "#flavor Нося череп - смертного или каинита - некромант устанавливает симпатические узы с бывшим владельцем черепа.#!"
- DEGULO_PERK_EFFECT: "Вы можете выдать себе модификатор [GetModifier('degulo_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Пока этот модификатор активен, у казнённых пленников будут вывариваться черепа в последующем событии. Затем позволяет обменивать базовые атрибуты или [Concept('discipline', 'дисциплину')|E] на атрибуты того, чей череп вы получили с помощью этого взаимодействия с другими персонажами."
+ DEGULO_PERK_EFFECT: "Вы можете выдать себе модификатор [GetModifier('degulo_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Пока этот модификатор активен, у казнённых пленников будут вывариваться черепа в последующем событии. Затем позволяет обменивать базовые атрибуты или [Glossary('дисциплину','game_concept_discipline_desc')] на атрибуты того, чей череп вы получили с помощью этого взаимодействия с другими персонажами."
  DEGULO_PERK_FLAVOR: "#flavor Дегуло - это метод, с помощью которого некромант поглощает фрагмент души и навсегда сохраняет его как часть себя.#!"
 
  #Path of the Twilight Garden
@@ -953,7 +953,7 @@
  DREAD_GAZE_PERK_EFFECT: "#F Кратко раскрыв свою вампирскую сущность, пользователь вселяет в одного субъекта абсолютный ужас.#!"
  ENTRANCEMENT_PERK_EFFECT: "Разблокирует [Concept('scheme', 'происки')|E] «[GetScheme('PODentrance').GetTypeName]».\n#F Вампир сосредотачивает свое неестественное очарование на одном человеке, внушая ему восторженное восхищение или увлеченность, сродни влюбленности или встрече с кумиром всей жизни.#!"
  LINGERING_KISS_PERK_EFFECT: "Когда вы охотитесь, вы можете добавить своих жертв в своё #TOOLTIP:game_concept_POD_herd_desc #E стадо#!#!.\n#F Поцелуй вампира вызывает у смертных почти экстаз, но по силе он превосходит другие поцелуи. Смертные, которых кормит вампир, становятся зависимыми от поцелуя, одержимыми им и даже ищут вампира для повторного кормления.#!"
- MAJESTY_PERK_EFFECT: "Вы открываете лучшие варианты для [Concept('character_interaction', 'взаимодействия персонажа')|E] «Сокрыть Маскарад».\n#F На этой вершине [Concept('discipline', 'дисциплины')|E], вампир может усилить свой облик до сверхъестественного уровня. Ощутить Величие - значит оказаться в присутствии божественного - или инфернального.#!"
+ MAJESTY_PERK_EFFECT: "Вы открываете лучшие варианты для [Concept('character_interaction', 'взаимодействия персонажа')|E] «Сокрыть Маскарад».\n#F На этой вершине [Glossary('дисциплины','game_concept_discipline_desc')], вампир может усилить свой облик до сверхъестественного уровня. Ощутить Величие - значит оказаться в присутствии божественного - или инфернального.#!"
  SUMMON_PERK_EFFECT: "Разблокирует [Concept('scheme', 'происки')|E] «[GetScheme('PODsummon').GetTypeName]».\n#F Вампир может призвать к себе любого человека, смертного или вампира, на которого он ранее использовал «Благоговение», «Восторг» или «Величие» или который хотя бы раз отведал его крови.#!"
  IRONCLAD_COMMAND_PERK_EFFECT: "Усиливает предыдущие способности Присутствия"
  COOPERATION_PERK_EFFECT: "Принятие [Concept('peace', 'мира')|E]: #P +[EmptyScope.ScriptValue('cooperation_value')|0]#!"
@@ -981,11 +981,11 @@
  THE_JOINING_PERK_EFFECT: "#F Вы можете общаться с другими людьми телепатически.#!"
  GLIMPSE_OF_THE_PAIN_PERK_EFFECT: "Вы можете на короткое время снизить [Concept('advantage', 'преимущество')|E] и [Concept('prowess', 'доблесть')|E] цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Всего на мгновение вы можете вовлечь других в своё царство агонии.#!"
  CROSSING_THE_IRON_BRIDGE_PERK_EFFECT: "Разблокировано уникальное событие третьего уровня [Concept('mental_break', 'нервного срыва')|E].\n#F Вы можете сразиться со своими внутренними демонами, войдя в свой разлом. С собой можно взять только личные вещи.\nЭто не самый приятный опыт, но он может дать вам передышку от постоянных интриг и ударов в спину, которые влечёт за собой жизнь вампира.#!"
- JOURNEYING_THE_IRON_BRIDGE_PERK_EFFECT: "Миссии #L $pod_infiltration_missions|l$ия#! начинаются с [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] ед. #L $pod_suspicion_with_icon|l$ия#!.\n#F Предметы больше не нуждаются в личной привязке, чтобы попасть в ваш разлом.#!"
+ JOURNEYING_THE_IRON_BRIDGE_PERK_EFFECT: "Миссии #L #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#! начинаются с [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] ед. #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрения#!#!.\n#F Предметы больше не нуждаются в личной привязке, чтобы попасть в ваш разлом.#!"
  PASSING_THE_INNER_REALM_PERK_EFFECT: "Вы можете получить или удалить модификатор [GetModifier('passing_the_inner_realm_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Вы можете полностью исчезнуть, войдя в свой разлом, и переместиться в новое место, которое вы можете видеть. Однако, несмотря на то, что при этом не учитываются препятствия, это происходит не мгновенно и требует, чтобы вы преодолели то же расстояние в своем разломе, что и при путешествии туда без разлома.\nИспользование разлома в бою очень эффективно, позволяя вам уклоняться от ударов, которые были бы неизбежны для большинства, хотя для эффективного использования его в бою требуется частое использование, что является довольно напряжённым для ума.#!"
  RIFT_COLLECTION_PERK_EFFECT: "Позволяет приобретать претензии на артефакты с #V 15%#! скидкой.\n#F Вы можете отправить неодушевленные предметы в свой разлом одним касанием или вызывать их по своему желанию.#!"
  RIFT_TRANSPORT_PERK_EFFECT: "#F Вы можете прикоснуться к объекту, чтобы переместить его в пределах видимости (расстояние зависит от возможностей разлома пользователя).#!"
- EYES_OF_A_THIEF_PERK_EFFECT: "#TOOLTIP:game_concept_planning_speed_desc #E Скорость планирования#!#! #L миссии $pod_infiltration_missions$ия#! «Кража артефакта» на 80% быстрее.\n#F Аналогично со сбором и транспортировкой, однако вам больше не нужно прикасаться к объектам, чтобы отправить их в разлом, вам нужно только увидеть их.#!"
+ EYES_OF_A_THIEF_PERK_EFFECT: "#TOOLTIP:game_concept_planning_speed_desc #E Скорость планирования#!#! #L миссии #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#! «Кража артефакта» на 80% быстрее.\n#F Аналогично со сбором и транспортировкой, однако вам больше не нужно прикасаться к объектам, чтобы отправить их в разлом, вам нужно только увидеть их.#!"
  DOORWAY_TO_HELL_PERK_EFFECT: "Вы можете телепортироваться назад в свою столицу при путешествии или командовании армией через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Это отличается от других способов использования разлома тем, что позволяет создать постоянное местоположение разлома, к которому вы можете временно привязать свой разлом, и в которое может войти любой желающий.\nЭто похоже на эхо вашего кошмарного разлома, который позволяет перемещаться практически мгновенно, позволяя бесчисленному множеству других людей следовать за вами. Вы не можете поддерживать его бесконечно, не можете пройти через дверной проем, чтобы вернуться туда, где вы были ранее, и в любой момент времени может быть активен только один дверной проем.\nЛюбой, кроме вас, пострадает от последствий, идентичных достоинству «[GetPerk('glimpse_of_the_pain_perk').GetName(GetPlayer)]».#!"
  TOUCH_OF_SIN_PERK_EFFECT: "Разблокированы [Concept('scheme', 'происки')|E] «[GetScheme('abduct').GetTypeName]».\n#F Теперь вы можете вовлекать посторонних в свой обычный разлом, хватая их.#!"
  RIFT_GATEWAY_PERK_EFFECT: "Улучшает модификатор достоинства «[GetPerk('passing_the_inner_realm_perk').GetName(GetPlayer)]» до [GetModifier('rift_gateway_modifier').GetNameWithTooltip].\n#F Врата позволяет вам отправить пользователя через ваш разлом, прикоснувшись к нему способом, похожим на [GetPerk('passing_the_inner_realm_perk').GetName(GetPlayer)].\nБудьте осторожны с пользователями разлома, смотрящими в ночное небо, на ревущий огонь или на какую-либо другую опасность, так как через несколько мгновений вы можете упасть с ночного неба или сгореть дотла.#!"
@@ -995,11 +995,11 @@
  # Protean #
 
  EARTH_MELD_PERK_EFFECT: "#F Став единым целым с почвой, вампир погружается в землю. Если вампир не впадает в [Concept('torpor', 'торпор')|E], он снова поднимается следующей ночью.#!"
- EYES_OF_THE_BEAST_PERK_EFFECT: "Позволяет активировать [GetModifier('POD_shapeshift_form_beasteyes_modifier').GetNameWithTooltip] через опцию [Concept('shapeshift', 'смены облика')|E].\n#F Вампир может придать своим глазам сверхъестественный красный отблеск, дающий зрение даже при полном отсутствии света.#!"
+ EYES_OF_THE_BEAST_PERK_EFFECT: "Позволяет активировать [GetModifier('POD_shapeshift_form_beasteyes_modifier').GetNameWithTooltip] через опцию #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Вампир может придать своим глазам сверхъестественный красный отблеск, дающий зрение даже при полном отсутствии света.#!"
  FERAL_WEAPONS_PERK_EFFECT: "Вы можете превратить свои когти в [GetModifier('POD_shapeshift_form_feralweapons_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Вампир может расширить своё природное оружие до чудовищных размеров.#!"
- METAMORPHOSIS_PERK_EFFECT: "Вы теперь можете принимать более мелкие звериные формы через опции [Concept('shapeshift', 'смены облика')|E].\n#F Ваша способность принимать облик животного возросла.#!"
- MIST_FORM_PERK_EFFECT: "Вы теперь можете переходить в неуловимую форму [GetModifier('POD_shapeshift_form_mist_modifier').GetNameWithTooltip] через опции [Concept('shapeshift', 'смены облика')|E].\n#F Вампир обретает легендарную способность превращаться в облако тумана, видимое глазом, но не поддающееся ничему, кроме огня, солнечного света и сверхъестественной агрессии.#!"
- SHAPECHANGE_PERK_EFFECT: "Вы теперь можете принимать звериную форму через опции [Concept('shapeshift', 'смены облика')|E].\n#F Вампир может принимать облик животного, обычно связанного с его [Glossary('кланом','game_concept_Clan_desc')] или типом добычи, на которую он чаще всего охотится.#!"
+ METAMORPHOSIS_PERK_EFFECT: "Вы теперь можете принимать более мелкие звериные формы через опции #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Ваша способность принимать облик животного возросла.#!"
+ MIST_FORM_PERK_EFFECT: "Вы теперь можете переходить в неуловимую форму [GetModifier('POD_shapeshift_form_mist_modifier').GetNameWithTooltip] через опции #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Вампир обретает легендарную способность превращаться в облако тумана, видимое глазом, но не поддающееся ничему, кроме огня, солнечного света и сверхъестественной агрессии.#!"
+ SHAPECHANGE_PERK_EFFECT: "Вы теперь можете принимать звериную форму через опции #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Вампир может принимать облик животного, обычно связанного с его [Glossary('кланом','game_concept_Clan_desc')] или типом добычи, на которую он чаще всего охотится.#!"
  THE_UNFETTERED_HEART_PERK_EFFECT: "#F Овладев силой Превращения, внутренности пользователя становятся податливыми, почти вязкими. Сердце, в котором сосредоточены витэ и нежизнь вампира, отделяется и свободно, хотя и вяло, движется в груди.#!"
  WEIGHT_OF_THE_FEATHER_PERK_EFFECT: "#F Вампир может уменьшить свою эффективную массу и плотность, сделав себя почти невесомым.#!"
  ADAPTABILITY_PERK_EFFECT: "#F Настройка себя на выживание в экстремальных условиях.#!"
@@ -1011,8 +1011,8 @@
 
  # Vicissitude #
 
- AWAKEN_THE_ZULO_SHAPE_PERK_EFFECT: "Вы можете превратиться в устрашающую форму Зуло - восьмифутового кошмара с чешуей и жирным мехом, обезьяноподобными руками, оканчивающимися зазубренными черными ногтями, и ощетинившимся рядом шипов по всей длине позвоночника через опции [Concept('shapeshift', 'смены облика')|E]."
- BLOODFORM_PERK_EFFECT: "Используя продвинутые техники Изменчивости, вы мгновенно превращаетесь в сгусток разумной витэ. Вы теперь можете принять неуловимую форму [GetModifier('POD_shapeshift_form_blood_modifier').GetNameWithTooltip] через опции [Concept('shapeshift', 'смены облика')|E]."
+ AWAKEN_THE_ZULO_SHAPE_PERK_EFFECT: "Вы можете превратиться в устрашающую форму Зуло - восьмифутового кошмара с чешуей и жирным мехом, обезьяноподобными руками, оканчивающимися зазубренными черными ногтями, и ощетинившимся рядом шипов по всей длине позвоночника через опции #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!."
+ BLOODFORM_PERK_EFFECT: "Используя продвинутые техники Изменчивости, вы мгновенно превращаетесь в сгусток разумной витэ. Вы теперь можете принять неуловимую форму [GetModifier('POD_shapeshift_form_blood_modifier').GetNameWithTooltip] через опции #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!."
  MALLEABLE_VISAGE_PERK_EFFECT: "Пользователь может изменять свое тело простыми косметическими способами. Он может стать выше или коренастее. Они могут изменить свой голос, перестроив гортань, или взять новый оттенок кожи, новый цвет глаз, новую прическу и так далее. Вы можете изменить внешность гулей или собственное лицо через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
  REND_THE_OSSEOUS_FRAME_PERK_EFFECT: "На этой стадии мастерства вы перешли к манипуляциям с костями. Самостоятельное использование «Разрыва костного каркаса» может нанести ужасный урон субъекту. При использовании в сочетании с «Преобразованием смертной глины» кошмары становятся возможными."
  THE_BODY_IMPOLITIC_PERK_EFFECT: "Пожалуй, самый жуткий из даров Изменчивости, «Неразумное тело» позволяет пользователю вложить часть своей разумности в плоть своего тела. Затем он может отделить его от туловища, чтобы выполнить его приказ. Скорость прогресса [Concept('espionage', 'шпионажа')|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!"
@@ -1069,7 +1069,7 @@
 
  # Visceratika #
 
- SKINOFCHAMELEON_PERK_EFFECT: "Позволяет сменить форму через опции [Concept('shapeshift', 'смены облика')|E], слившись с окружением, даёт бонусы к проискам и защите от них."
+ SKINOFCHAMELEON_PERK_EFFECT: "Позволяет сменить форму через опции #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!, слившись с окружением, даёт бонусы к проискам и защите от них."
  SCRYTHEHEARTHSTONE_PERK_EFFECT: "#flavor Вы знаете, где в строении находятся люди.#!"
  BONDWITHTHEMOUNTAIN_PERK_EFFECT: "#flavor Частичное слияние с камнем.#!"
  ARMOROFTERRA_PERK_EFFECT: "#flavor Кожа становится жесткой и легче переносит повреждения.#!"
@@ -1366,7 +1366,7 @@
  #Aspiration legacy #
 
  #ASPIRATION_LEGACY_2_PERK_EFFECT: "Feudal obligation will be lowered."
- ASPIRATION_LEGACY_5_PERK_EFFECT: "Повышенный шанс унаследовать #L $pod_disciplines|l$ы#!."
+ ASPIRATION_LEGACY_5_PERK_EFFECT: "Повышенный шанс унаследовать [Glossary('дисциплины','game_concept_discipline_desc')]."
 
  #Ventrue legacy #
 
@@ -1500,7 +1500,7 @@
  GARGOYLE_LEGACY_1_PERK_EFFECT: "Устраивает насест для блудных гаргулий, чтобы они присоединились к вашей державе."
  GARGOYLE_LEGACY_2_PERK_EFFECT: "#F Я мог бы освободить ещё больше, если бы только они знали, что они рабы.#!"
  GARGOYLE_LEGACY_3_PERK_EFFECT: "#F Хороший полёт никогда не убивал врага.#!"
- GARGOYLE_LEGACY_4_PERK_EFFECT: "Члены династии с высокой [Concept('learning', 'учёностью')|E] получат [Concept('discipline', 'дисциплину')|E] Кровавого чародейства и ритуальное [Concept('character_interaction', 'взаимодействие персонажа')|E] для создания гаргулий.\n#F Знание - сила, а украденное знание - всё ещё сила.#!"
+ GARGOYLE_LEGACY_4_PERK_EFFECT: "Члены династии с высокой [Concept('learning', 'учёностью')|E] получат [Glossary('дисциплину','game_concept_discipline_desc')] Кровавого чародейства и ритуальное [Concept('character_interaction', 'взаимодействие персонажа')|E] для создания гаргулий.\n#F Знание - сила, а украденное знание - всё ещё сила.#!"
  GARGOYLE_LEGACY_5_PERK_EFFECT: "#F Прежде всего, уважайте себя.#!"
 
  # Ashen Nobles #
@@ -1550,8 +1550,8 @@
  HUANGTI_LEGACY_PERK_EFFECT: "#F Хуан-ти был третьим из Трёх государей. Он был первым алхимиком и первым кораблестроителем. Он также создал доспехи и первые армии, чтобы подавлять племена варваров, угрожавшие его народу.#!"
 
  # Misc tooltip #
- NEEDS_DISCIPLINE_TEXT: "@warning_icon!#X Для разблокировки достоинств в этом древе требуется базовое [Concept('trait', 'свойство')|E] [Concept('discipline', 'дисциплины')|E]#!"
- NEEDS_DISCIPLINE_FOR_FOCUS_TEXT: "@warning_icon!#X Чтобы выбрать этот фокус, вам нужно соответствующее [Concept('trait', 'свойство')|E] [Concept('discipline', 'дисциплины')|E]#!\n"
+ NEEDS_DISCIPLINE_TEXT: "@warning_icon!#X Для разблокировки достоинств в этом древе требуется базовое [Concept('trait', 'свойство')|E] [Glossary('дисциплины','game_concept_discipline_desc')]#!"
+ NEEDS_DISCIPLINE_FOR_FOCUS_TEXT: "@warning_icon!#X Чтобы выбрать этот фокус, вам нужно соответствующее [Concept('trait', 'свойство')|E] [Glossary('дисциплины','game_concept_discipline_desc')]#!\n"
  NEEDS_ART_TEXT: "@warning_icon!#X Для разблокировки достоинств в этом древе требуется базовое [Concept('trait', 'свойство')|E] искусства#!"
  NEEDS_ART_FOR_FOCUS_TEXT: "@warning_icon!#X Чтобы выбрать этот фокус, вам нужно соответствующее [Concept('trait', 'свойство')|E] искусства#!\n"
  NEEDS_CHI_ART_TEXT: "@warning_icon!#X Для разблокировки достоинств в этом древе требуется базовое [Concept('trait', 'свойство')|E] искусства ци#!"
@@ -1579,11 +1579,11 @@
 
  POD_will_lose_elder_perks: "Вы теряете все [Concept('elder_perk','достоинства старейшин')|E], которым не соответствуете"
 
- POD_elder_perk7: "@warning_icon!#X Чтобы выбрать это [Concept('elder_perk','достоинство старейшины')|E], вы должны принадлежать хотя бы к седьмому [Concept('vampgeneration', 'поколению')|E] или достичь [Concept('golconda', 'Голконды')|E].#!"
- POD_elder_perk6: "@warning_icon!#X Чтобы выбрать это [Concept('elder_perk','достоинство старейшины')|E], вы должны принадлежать хотя бы к шестому [Concept('vampgeneration', 'поколению')|E] или достичь [Concept('golconda', 'Голконды')|E].#!"
- POD_elder_perk5: "@warning_icon!#X Чтобы выбрать это [Concept('elder_perk','достоинство старейшины')|E], вы должны принадлежать хотя бы к пятому [Concept('vampgeneration', 'поколению')|E] или достичь [Concept('golconda', 'Голконды')|E].#!"
- POD_elder_perk4: "@warning_icon!#X Чтобы выбрать это [Concept('elder_perk','достоинство старейшины')|E], вы должны принадлежать хотя бы к четвёртому [Concept('vampgeneration', 'поколению')|E] или достичь [Concept('golconda', 'Голконды')|E].#!"
- POD_elder_perk3: "@warning_icon!#X Чтобы выбрать это [Concept('elder_perk','достоинство старейшины')|E], вы должны принадлежать хотя бы к третьему [Concept('vampgeneration', 'поколению')|E] или достичь [Concept('golconda', 'Голконды')|E].#!"
+ POD_elder_perk7: "@warning_icon!#X Чтобы выбрать это [Concept('elder_perk','достоинство старейшины')|E], вы должны принадлежать хотя бы к седьмому [Concept('vampgeneration', 'поколению')|E] или достичь #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!.#!"
+ POD_elder_perk6: "@warning_icon!#X Чтобы выбрать это [Concept('elder_perk','достоинство старейшины')|E], вы должны принадлежать хотя бы к шестому [Concept('vampgeneration', 'поколению')|E] или достичь #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!.#!"
+ POD_elder_perk5: "@warning_icon!#X Чтобы выбрать это [Concept('elder_perk','достоинство старейшины')|E], вы должны принадлежать хотя бы к пятому [Concept('vampgeneration', 'поколению')|E] или достичь #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!.#!"
+ POD_elder_perk4: "@warning_icon!#X Чтобы выбрать это [Concept('elder_perk','достоинство старейшины')|E], вы должны принадлежать хотя бы к четвёртому [Concept('vampgeneration', 'поколению')|E] или достичь #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!.#!"
+ POD_elder_perk3: "@warning_icon!#X Чтобы выбрать это [Concept('elder_perk','достоинство старейшины')|E], вы должны принадлежать хотя бы к третьему [Concept('vampgeneration', 'поколению')|E] или достичь #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!.#!"
 
  has_1_possessed_perks_unlocked: "@warning_icon!#X Вы #bold не#! разблокировали больше чем #V 1#! [Concept('perks', 'достоинств')|E] [Concept('possessedpower_lifestyle', 'пути одержимости')|E]#!"
  has_2_possessed_perks_unlocked: "@warning_icon!#X Вы #bold не#! разблокировали больше чем #V 2#! [Concept('perks', 'достоинств')|E] [Concept('possessedpower_lifestyle', 'пути одержимости')|E]#!"
@@ -1657,11 +1657,11 @@
  full_warrior_quietus_tooltip: "Вы получаете полное древо #bold Смертоносности воинов#!."
  full_vizier_quietus_tooltip: "Вы получаете полное древо #bold Смертоносности визирей#!."
 
- POD_golconda_murder_alert: "@warning_icon!#X Убийство заставит вас сойти с пути [Concept('golconda', 'Голконды')|E]!#!"
- POD_golconda_theft_alert: "@warning_icon!#X Воровство заставит вас сойти с пути [Concept('golconda', 'Голконды')|E]!#!"
- POD_golconda_frenzy_alert: "@warning_icon!#X Поддавшись неистовству, вы сойдёте с пути [Concept('golconda', 'Голконды')|E]!#!"
- POD_golconda_diablerie_alert: "@warning_icon!#X Совершив диаблери, вы сойдёте с пути [Concept('golconda', 'Голконды')|E]!#!"
- POD_golconda_heinous_act_alert: "@warning_icon!#X Гнусные поступки заставят вас сойти с пути [Concept('golconda', 'Голконды')|E]!#!"
+ POD_golconda_murder_alert: "@warning_icon!#X Убийство заставит вас сойти с пути #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!!#!"
+ POD_golconda_theft_alert: "@warning_icon!#X Воровство заставит вас сойти с пути #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!!#!"
+ POD_golconda_frenzy_alert: "@warning_icon!#X Поддавшись неистовству, вы сойдёте с пути #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!!#!"
+ POD_golconda_diablerie_alert: "@warning_icon!#X Совершив диаблери, вы сойдёте с пути #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!!#!"
+ POD_golconda_heinous_act_alert: "@warning_icon!#X Гнусные поступки заставят вас сойти с пути #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!!#!"
 
  POD_REQUIRE_DHARMA_TOOLTIP_EFFECT: "#X @warning_icon! У вас нет свойства «[GetTrait('dharma$VALUE|0q$').GetName(GetPlayer)]» или выше#!"
  POD_remove_dharma_xp_effect_tt: "#X Это Дяо, момент ослепления, когда просветлённое существо сбивается с пути и делает шаг назад на пути к [Glossary('Сотне облаков','podgloss.hundredclouds')].#!"
@@ -1814,12 +1814,12 @@
  LEARN_ABYSSAL_MYSTICISM_BLOODMAGIC_THIRD: "[CHARACTER.GetShortUIName] получит доступ к [Concept('perks', 'достоинствам')|E] магии крови мистицизма Бездны"
  LEARN_ABYSSAL_MYSTICISM_BLOODMAGIC_THIRD_PAST: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] доступ к [Concept('perks', 'достоинствам')|E] магии крови мистицизма Бездны"
 
- POD_decrease_discipline_celerity_effect: "Снижает уровень #weak (ряд)#! [Concept('discipline', 'дисциплины')|E] «[GetTrait('celerity').GetName(GetNullCharacter)]» на 1"
- POD_decrease_discipline_potence_effect: "Снижает уровень #weak (ряд)#! [Concept('discipline', 'дисциплины')|E] «[GetTrait('potence').GetName(GetNullCharacter)]» на 1"
- POD_decrease_discipline_fortitude_effect: "Снижает уровень #weak (ряд)#! [Concept('discipline', 'дисциплины')|E] «[GetTrait('fortitude').GetName(GetNullCharacter)]» на 1"
- POD_decrease_discipline_auspex_effect: "Снижает уровень #weak (ряд)#! [Concept('discipline', 'дисциплины')|E] «[GetTrait('auspex').GetName(GetNullCharacter)]» на 1"
- POD_decrease_discipline_presence_effect: "Снижает уровень #weak (ряд)#! [Concept('discipline', 'дисциплины')|E] «[GetTrait('presence').GetName(GetNullCharacter)]» на 1"
- POD_decrease_discipline_obtenebration_effect: "Снижает уровень #weak (ряд)#! [Concept('discipline', 'дисциплины')|E] «[GetTrait('obtenebration').GetName(GetNullCharacter)]» на 1"
+ POD_decrease_discipline_celerity_effect: "Снижает уровень #weak (ряд)#! [Glossary('дисциплины','game_concept_discipline_desc')] «[GetTrait('celerity').GetName(GetNullCharacter)]» на 1"
+ POD_decrease_discipline_potence_effect: "Снижает уровень #weak (ряд)#! [Glossary('дисциплины','game_concept_discipline_desc')] «[GetTrait('potence').GetName(GetNullCharacter)]» на 1"
+ POD_decrease_discipline_fortitude_effect: "Снижает уровень #weak (ряд)#! [Glossary('дисциплины','game_concept_discipline_desc')] «[GetTrait('fortitude').GetName(GetNullCharacter)]» на 1"
+ POD_decrease_discipline_auspex_effect: "Снижает уровень #weak (ряд)#! [Glossary('дисциплины','game_concept_discipline_desc')] «[GetTrait('auspex').GetName(GetNullCharacter)]» на 1"
+ POD_decrease_discipline_presence_effect: "Снижает уровень #weak (ряд)#! [Glossary('дисциплины','game_concept_discipline_desc')] «[GetTrait('presence').GetName(GetNullCharacter)]» на 1"
+ POD_decrease_discipline_obtenebration_effect: "Снижает уровень #weak (ряд)#! [Glossary('дисциплины','game_concept_discipline_desc')] «[GetTrait('obtenebration').GetName(GetNullCharacter)]» на 1"
 
  POD_incompatible_splats_tt: "Этот персонаж не хочет иметь с вами ничего общего."
 

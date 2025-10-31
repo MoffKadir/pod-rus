@@ -2,14 +2,14 @@
 
  POD_embrace.100.t: "Объятия"
  POD_embrace.100.desc: "Я подстроил события так, чтобы [target.GetFirstName] [Select_CString(target.IsFemale, 'попала', 'попал' )] в мои лапы. В уединённом месте [target.GetSheHe] не сможет сбежать. [Select_CString(ROOT.Char.IsFemale, 'Должна', 'Должен' )] ли я даровать бессмертие, даже если это навлечёт проклятие на [Select_CString(target.IsFemale, 'неё', 'него' )]? Будет ли [target.GetSheHe] [Select_CString(target.IsFemale, 'благодарна', 'благодарен' )], или [target.GetSheHe] затаит на меня вечную обиду? Были ли у моего [Concept('Sire', 'сира')|E] такие мысли?"
- POD_embrace.100.option.a: "[target.GetFirstName] получит [Concept('Embrace', 'Объятия')|E]."
+ POD_embrace.100.option.a: "[target.GetFirstName] получит [Glossary('объятия','game_concept_Embrace_desc')]."
  POD_embrace.100.option.a.tt: "Вы убьёте персонажа [target.GetFirstName], а затем обратите [target.GetHerHis] в вампира. Это будет стоить вам благочестия, может увеличить ваш голод и может привести к риску разоблачения #TOOLTIP:game_concept_the_masquerade_desc #E Маскарада#!#!."
  POD_embrace.100.option.a.tt.beast: "#beast Да! Осуши [target.GetHerHis] досуха, а потом дай каплю нашей крови. Мы всегда можем обернуть всё вспять!#!"
  POD_embrace.100.option.b: "Отпустить [target.GetHerHis]."
  POD_embrace.100.option.b.tt.beast: "#beast Нет! Не дай [target.GetHerHim] уйти! Я слишком долго [Select_CString(ROOT.Char.IsFemale, 'ждала', 'ждал' )] этого! Мы слишком долго ждали этого.#!"
  POD_embrace.200.t: "Объятия"
- POD_embrace.200.desc: "[Select_CString(target.IsFemale, 'Охотница', 'Охотник' )], [target.GetFirstName] находится в темнице, ожидая [Concept('Embrace', 'Объятий')|E]. К сожалению, та же свирепость, которая делает [target.GetHerHis] [Select_CString(target.IsFemale, 'достойной', 'достойным' )] этого, затруднит процесс обращения."
- POD_embrace.200.option.a: "Даровать [Concept('Embrace', 'Объятия')|E] [Select_CString(target.IsFemale, 'охотнице', 'охотнику' )] силой."
+ POD_embrace.200.desc: "[Select_CString(target.IsFemale, 'Охотница', 'Охотник' )], [target.GetFirstName] находится в темнице, ожидая [Glossary('объятий','game_concept_Embrace_desc')]. К сожалению, та же свирепость, которая делает [target.GetHerHis] [Select_CString(target.IsFemale, 'достойной', 'достойным' )] этого, затруднит процесс обращения."
+ POD_embrace.200.option.a: "Даровать [Glossary('объятия','game_concept_Embrace_desc')] [Select_CString(target.IsFemale, 'охотнице', 'охотнику' )] силой."
  POD_embrace.200.option.a.s.tt: "Вы приковываете [Select_CString(target.IsFemale, 'охотницу', 'охотника' )] и высасываете из [Select_CString(target.IsFemale, 'неё', 'него' )] кровь."
  POD_embrace.200.option.a.f.tt: "[Select_CString(target.IsFemale, 'Охотница приготовила', 'Охотник приготовил' )] для вас неприятный сюрприз."
  POD_embrace.210.desc: "Из горла всё ещё капает кровь, [victim.GetFirstName] смотрит на вас озлобленными глазами. Будет ли ваш дар вечной жизни принят как таковой или [Select_CString(target.IsFemale, 'охотница', 'охотник' )] сочтёт его страшным проклятием, ещё предстоит узнать."
@@ -39,7 +39,7 @@
 
 
  POD_embrace.300.t: "Добровольные объятия"
- POD_embrace.300.desc: "Ваша вера учит, что [Concept('Embrace', 'объятия')|E] - это мрачное и серьёзное дело. В конце концов, вы обрекаете другую душу на вечное проклятие. Таким образом, вас учили никогда не даровать становление насильно. Вы и [целью.getFirstName] договорились о встрече, но теперь вы должны решить, что вы хотите раскрыть."
+ POD_embrace.300.desc: "Ваша вера учит, что [Glossary('объятия','game_concept_Embrace_desc')] - это мрачное и серьёзное дело. В конце концов, вы обрекаете другую душу на вечное проклятие. Таким образом, вас учили никогда не даровать становление насильно. Вы и [целью.getFirstName] договорились о встрече, но теперь вы должны решить, что вы хотите раскрыть."
  POD_embrace.300.option.a: "Рассказать [target.GetHerHim] только то, что [target.GetHerHim] нужно знать."
  POD_embrace.300.option.b: "[target.GetSheHe|U] [Select_CString(target.IsFemale, 'должна', 'должен' )] знать достаточно, чтобы принять правильное решение."
  POD_embrace.300.option.c: "[target.GetSheHe|U] [Select_CString(target.IsFemale, 'должна', 'должен' )] знать всё!"
@@ -60,7 +60,7 @@
  POD_embrace.340.option.b: "Забудь обо всём."
  POD_embrace.340.option.c: "[target.GetWomanMan] не может говорить..."
  POD_embrace.340.option.d: "Я не потерплю отказа!"
- unwilling_embrace_tt: "Вы насильно даруете [Concept('Embrace', 'объятия')|E], независимо от мнения."
+ unwilling_embrace_tt: "Вы насильно даруете [Glossary('объятия','game_concept_Embrace_desc')], независимо от мнения."
 
  willing_embrace_fully_accept.tooltip: "[target.GetSheHe|U] полностью [Select_CString(target.IsFemale, 'убеждена', 'убеждён' )]"
  willing_embrace_partial_accept.tooltip: "[target.GetSheHe|U] раздумывает над этим"

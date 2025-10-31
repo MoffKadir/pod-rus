@@ -612,9 +612,9 @@
  custom_bloodline_objective_decision: "Сила крови"
  custom_bloodline_objective_decision_desc: "Вы устали от того, что вас отвергает [Glossary('каинитское','game_concept_cainite_desc')] общество из-за вашего каитиффского происхождения. Пришло время окончательно утвердиться в этом мире."
  custom_bloodline_custom_decision: "Вы должны принадлежать к пятому поколению или ниже."
- custom_bloodline_objective_decision_effect_tooltip: "Вы создадите свою собственную линию крови с выбранными [Concept('discipline', 'дисциплинами')|E]."
+ custom_bloodline_objective_decision_effect_tooltip: "Вы создадите свою собственную линию крови с выбранными [Glossary('дисциплинами','game_concept_discipline_desc')]."
  custom_bloodline_objective_decision_confirm: "Время пришло"
- custom_bloodline_objective_decision_tooltip: "Вы создадите свою собственную линию крови с выбранными [Concept('disciplines', 'дисциплинами')|E]."
+ custom_bloodline_objective_decision_tooltip: "Вы создадите свою собственную линию крови с выбранными [Glossary('дисциплинами','game_concept_discipline_desc')]."
  PODghw_decision: "Обострить джихад"
  PODghw_decision_desc: "Обострить джихад, призвав к великим священным войнам."
  PODghw_decision_tooltip: "Великие священные войны смогут объявлять главы всех конфессий, имеющих соответствующие догматы."
@@ -1664,7 +1664,7 @@
 
  quest_for_sargon_codex_objective_decision: "Охота за Кодексом Саргона"
  quest_for_sargon_codex_objective_decision_tooltip: "Высшее знание ждет"
- quest_for_sargon_codex_objective_decision_desc: "Кодекс Саргона - это глиняная табличка, написанная Каппадокием во время его земной жизни. После его [Concept('Embrace', 'Объятий')|E] потеря аватара вызвала хаос и разрушение в его памяти. Он не мог вспомнить, что написал и где оставил. Спустя тысячелетия Кодекс Саргона был уничтожен, а его части разбросаны по всему миру. Если бы кто-то смог восстановить его, его ждала бы огромная сила."
+ quest_for_sargon_codex_objective_decision_desc: "Кодекс Саргона - это глиняная табличка, написанная Каппадокием во время его земной жизни. После его [Glossary('объятий','game_concept_Embrace_desc')] потеря аватара вызвала хаос и разрушение в его памяти. Он не мог вспомнить, что написал и где оставил. Спустя тысячелетия Кодекс Саргона был уничтожен, а его части разбросаны по всему миру. Если бы кто-то смог восстановить его, его ждала бы огромная сила."
  quest_for_sargon_codex_objective_decision_confirm: "Мудрость древних в пределах досягаемости..."
  quest_for_sargon_codex_objective_decision_at_least_1_shard: "У вас должен быть как минимум 1 осколок Кодекса Саргона"
  quest_for_sargon_codex_objective_decision_at_effect1: "Открывает #TOOLTIP:game_concept_journey_desc #E странствие#!#! по поиску других осколков Кодекса по всему миру"
@@ -1673,7 +1673,7 @@
 
  deliver_shards_to_cappadocius_objective_decision: "Вернуть осколки Каппадокию"
  deliver_shards_to_cappadocius_objective_decision_tooltip: "Вернуть их на свое место"
- deliver_shards_to_cappadocius_objective_decision_desc: "Кодекс Саргона - это глиняная табличка, написанная Каппадокием во время его земной жизни. После его [Concept('Embrace', 'Объятий')|E] потеря аватара вызвала хаос и разрушение в его памяти. Он не мог вспомнить, что написал и где оставил. Спустя тысячелетия Кодекс Саргона был уничтожен, а его части разбросаны по всему миру. Если бы кто-то смог восстановить его, его ждала бы огромная сила.\n\nНо вам ни к чему такая сила, поэтому вы отдадите её владельцу."
+ deliver_shards_to_cappadocius_objective_decision_desc: "Кодекс Саргона - это глиняная табличка, написанная Каппадокием во время его земной жизни. После его [Glossary('объятий','game_concept_Embrace_desc')] потеря аватара вызвала хаос и разрушение в его памяти. Он не мог вспомнить, что написал и где оставил. Спустя тысячелетия Кодекс Саргона был уничтожен, а его части разбросаны по всему миру. Если бы кто-то смог восстановить его, его ждала бы огромная сила.\n\nНо вам ни к чему такая сила, поэтому вы отдадите её владельцу."
  deliver_shards_to_cappadocius_objective_decision_confirm: "Представляю вам..."
  deliver_shards_to_cappadocius_objective_decision_effect: "Передать Каппадокию собранные осколки, каждый осколок даст вам модификатор «[GetModifier('cappadocius_boon_modifier').GetNameWithTooltip]»"
  deliver_shards_to_cappadocius_objective_decision_effect2: "Вы потеряете [Concept('character_interaction', 'взаимодействие персонажа')|E], позволяющее изучить найденные осколки"
@@ -1778,7 +1778,7 @@
  ending_the_snake_objective_decision_custom1: "Владелец графства [GetTitleByKey('c_cairo').GetBaseName] #weak ([GetTitleByKey('c_cairo').GetHolder.GetFirstName])#! должен иметь свойство «[GetTrait('shemsuheru').GetName(GetNullCharacter)]» или доктрину [GetFaithDoctrine('special_doctrine_osiris_league').GetBaseName]"
  ending_the_snake_objective_decision_custom2: "Не должно быть независимых #L [GetReligionByKey('roadofset_religion').GetName|l]их#! правителей-[Concept('landed', 'землевладельцев')|E] со свойствами «[GetTrait('vampgeneration5').GetName(GetPlayer)]» и «[GetTrait('setite').GetName(GetPlayer)]»"
  ending_the_snake_objective_decision_custom2_ex: "$ending_the_snake_objective_decision_custom2$ #weak ([example.GetFirstName])#!"
- ending_the_snake_objective_decision_effect1: "#TOOLTIP:GAME_TRAIT,setite,[GetNullCharacter] #L Сетиты#!#! больше не смогут даровать [Concept('Embrace', 'объятия')|E]"
+ ending_the_snake_objective_decision_effect1: "#TOOLTIP:GAME_TRAIT,setite,[GetNullCharacter] #L Сетиты#!#! больше не смогут даровать [Glossary('объятия','game_concept_Embrace_desc')]"
  ending_the_snake_objective_decision_effect2: "Все уцелевшие сетиты утратят власть."
 
  land_of_faith_objective_decision: "Земля веры"

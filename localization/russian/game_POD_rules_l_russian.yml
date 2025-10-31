@@ -31,15 +31,15 @@
 
  rule_pod_resonance_diminishing_returns: "$POD_gamerule$ Кривая опыта резонанса"
  setting_pod_resonance_diminishing_returns_disabled: "Отключено"
- setting_pod_resonance_diminishing_returns_disabled_desc: "Ваши достоинства [Glossary('дисциплин','game_concept_discipline_desc')] не влияют на прирост опыта [Concept('resonance', 'резонанса')|E]."
+ setting_pod_resonance_diminishing_returns_disabled_desc: "Ваши достоинства [Glossary('дисциплин','game_concept_discipline_desc')] не влияют на прирост опыта #TOOLTIP:game_concept_resonance_desc #E резонанса#!#!."
  setting_pod_resonance_diminishing_returns_enabled: "#high @wod_icon! Включено#!"
- setting_pod_resonance_diminishing_returns_enabled_desc: "Прирост опыта [Concept('resonance', 'резонанса')|E] будет снижаться по мере получения новых достоинств [Glossary('дисциплин','game_concept_discipline_desc')]."
+ setting_pod_resonance_diminishing_returns_enabled_desc: "Прирост опыта #TOOLTIP:game_concept_resonance_desc #E резонанса#!#! будет снижаться по мере получения новых достоинств [Glossary('дисциплин','game_concept_discipline_desc')]."
 
  rule_pod_losing_golconda: "$POD_gamerule$ Потеря Голконды"
  setting_pod_losing_golconda_default: "Правила по умолчанию"
- setting_pod_losing_golconda_default_desc: "Вы потеряете состояние [Concept('golconda', 'Голконды')|E], если впадёте в неистовство или совершите убийство, воровство и отвратительные поступки. Событие нервного срыва «Кризис [Glossary('дхармы','podgloss.dharma')]» для куэй-дзин произойдёт только при нервном срыве 4-го уровня."
+ setting_pod_losing_golconda_default_desc: "Вы потеряете состояние #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!, если впадёте в неистовство или совершите убийство, воровство и отвратительные поступки. Событие нервного срыва «Кризис [Glossary('дхармы','podgloss.dharma')]» для куэй-дзин произойдёт только при нервном срыве 4-го уровня."
  setting_pod_losing_golconda_harsher: "#high @wod_icon! Более строгие правила#!"
- setting_pod_losing_golconda_harsher_desc: "В дополнение к правилам по умолчанию, вы также потеряете состояние [Concept('golconda', 'Голконды')|E] при объявлении наступательных войн или при даровании [Concept('Embrace', 'Объятий')|E], создавших дитя. Событие нервного срыва «Кризис [Glossary('дхармы','podgloss.dharma')]» для куэй-дзин также произойдёт при нервном срыве 3-го уровня."
+ setting_pod_losing_golconda_harsher_desc: "В дополнение к правилам по умолчанию, вы также потеряете состояние #TOOLTIP:game_concept_golconda_desc #E Голконды#!#! при объявлении наступательных войн или при даровании [Glossary('объятий','game_concept_Embrace_desc')], создавших дитя. Событие нервного срыва «Кризис [Glossary('дхармы','podgloss.dharma')]» для куэй-дзин также произойдёт при нервном срыве 3-го уровня."
 
  rule_pod_seek_knowledge_cost_increase: "$POD_gamerule$ Стоимость изучения новых способностей"
  setting_pod_seek_knowledge_cost_increase_enabled: "Увеличивается"
@@ -55,9 +55,9 @@
 
  rule_pod_charjoin_decisions: "$POD_gamerule$ Решения по созданию персонажа"
  setting_pod_charjoin_decisions_disabled: "Отключено"
- setting_pod_charjoin_decisions_disabled_desc: "Решения и взаимодействия, изменяющие ваш #TOOLTIP:game_concept_splat_desc #E вид#!#! (например, просьба [Concept('Embrace', 'Объятий')|E] или становление гулем, осушив пленника-вампира), не действуют, если вы не используете внутриигрового редактора персонажей."
+ setting_pod_charjoin_decisions_disabled_desc: "Решения и взаимодействия, изменяющие ваш #TOOLTIP:game_concept_splat_desc #E вид#!#! (например, просьба [Glossary('объятий','game_concept_Embrace_desc')] или становление гулем, осушив пленника-вампира), не действуют, если вы не используете внутриигрового редактора персонажей."
  setting_pod_charjoin_decisions_enabled: "#high @haight_icon! Включено#!"
- setting_pod_charjoin_decisions_enabled_desc: "Решения и взаимодействия, изменяющие ваш #TOOLTIP:game_concept_splat_desc #E вид#!#! (например, просьба [Concept('Embrace', 'Объятий')|E] или становление гулем, осушив пленника-вампира), включены."
+ setting_pod_charjoin_decisions_enabled_desc: "Решения и взаимодействия, изменяющие ваш #TOOLTIP:game_concept_splat_desc #E вид#!#! (например, просьба [Glossary('объятий','game_concept_Embrace_desc')] или становление гулем, осушив пленника-вампира), включены."
 
  rule_pod_numina_on_birth: "$POD_gamerule$ Нумина при рождении"
  setting_pod_numina_on_birth_default: "Ограничено"
@@ -67,9 +67,9 @@
 
  rule_pod_sorcery_availability: "$POD_gamerule$ Доступность #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейства#!#!"
  setting_pod_sorcery_availability_restricted: "Ограничено"
- setting_pod_sorcery_availability_restricted_desc: "Только бастет и человекоподобные виды, такие как охотники, гули или [GetTrait('kinfolk').GetName(GetNullCharacter)] могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nПосле [Concept('Embrace', 'Объятий')|E] оно превращается в [GetTrait('bloodsorcery').GetName(GetNullCharacter)|l]."
+ setting_pod_sorcery_availability_restricted_desc: "Только бастет и человекоподобные виды, такие как охотники, гули или [GetTrait('kinfolk').GetName(GetNullCharacter)] могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nПосле [Glossary('объятий','game_concept_Embrace_desc')] оно превращается в [GetTrait('bloodsorcery').GetName(GetNullCharacter)|l]."
  setting_pod_sorcery_availability_unrestricted: "#high @haight_icon! Без ограничений#!"
- setting_pod_sorcery_availability_unrestricted_desc: "Все #TOOLTIP:game_concept_splat_desc #E виды#!#! могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nСвойство сохраняется после [Concept('Embrace', 'Объятий')|E]."
+ setting_pod_sorcery_availability_unrestricted_desc: "Все #TOOLTIP:game_concept_splat_desc #E виды#!#! могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nСвойство сохраняется после [Glossary('объятий','game_concept_Embrace_desc')]."
 
  rule_pod_splat_mixing: "$POD_gamerule$ Смешение видов"
  setting_pod_splat_mixing_default: "По умолчанию"
@@ -175,7 +175,7 @@
  #setting_wod_rule_set_dav20: "DAV20"
  #setting_wod_rule_set_dav20_desc: "Dark Ages Vampire 20th Anniversary Edition. This may impact disciplines, [Glossary('Клан','game_concept_Clan_desc')] banes, trait symbols, etc..."
  #setting_wod_rule_set_v5: "#high V5#!"
- #setting_wod_rule_set_v5_desc: "Vampire:the Masquerade, Fifth Edition. This may impact $pod_disciplines$, [Glossary('Клан','game_concept_Clan_desc')] banes, trait symbols, etc..."
+ #setting_wod_rule_set_v5_desc: "Vampire:the Masquerade, Fifth Edition. This may impact [Glossary('дисциплин','game_concept_discipline_desc')], [Glossary('Клан','game_concept_Clan_desc')] banes, trait symbols, etc..."
 
  rule_black_death: "$POD_gamerule$ Чёрная смерть"
  setting_black_death_default: "Черная смерть по умолчанию"

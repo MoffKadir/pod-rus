@@ -33,11 +33,11 @@
  tablet_of_destiny_decision: "Скрижаль судьбы"
  tablet_of_destiny_decision_tooltip: "Бесконечные знания!"
  tablet_of_destiny_decision_desc: "Скрижаль судьбы содержит знания обо всех способностях крови Еноха. Её стоит изучить."
- tablet_of_destiny_decision_effect_tooltip: "Вы сможете изучить новые #L $pod_disciplines|l$ы#! с помощью Скрижали"
+ tablet_of_destiny_decision_effect_tooltip: "Вы сможете изучить новые [Glossary('дисциплины','game_concept_discipline_desc')] с помощью Скрижали"
  tablet_of_destiny_decision_confirm: "Новые способности!"
 
  POD_canon_artifacts.200.t: "Расшифровка Скрижали судьбы"
- POD_canon_artifacts.200.desc: "Скрижаль судьбы - это чертёж оригинальных $pod_disciplines|l$, возможно, составленный самим Каином. На самом деле понять её не так сложно, как вы опасались, но практика ритуалов, необходимых для раскрытия силы вашей крови, всё равно потребует от вас определённых усилий.\nВы считаете, что лучше изучать по одной [Concept('discipline', 'дисциплине')|E] за раз, чтобы избежать потенциально опасной информационной перегрузки. На какой из них вы сосредоточитесь сегодня?"
+ POD_canon_artifacts.200.desc: "Скрижаль судьбы - это чертёж оригинальных [Glossary('дисциплин','game_concept_discipline_desc')], возможно, составленный самим Каином. На самом деле понять её не так сложно, как вы опасались, но практика ритуалов, необходимых для раскрытия силы вашей крови, всё равно потребует от вас определённых усилий.\nВы считаете, что лучше изучать по одной [Glossary('дисциплине','game_concept_discipline_desc')] за раз, чтобы избежать потенциально опасной информационной перегрузки. На какой из них вы сосредоточитесь сегодня?"
  POD_canon_artifacts.200.option.a: "Доминирование"
  POD_canon_artifacts.200.option.b: "Анимализм"
  POD_canon_artifacts.200.option.c: "Прорицание"
@@ -151,7 +151,7 @@
 
  auspexadvanced_decision: "Реликвия зрения"
  auspexadvanced_decision_tooltip: "Вы увидите всё!"
- auspexadvanced_decision_desc: "В вашем распоряжении имеется мощная пророческая реликвия. Используя её силу, вы сможете многое узнать о вампирской [Concept('discipline', 'дисциплине')|E] Прорицания."
+ auspexadvanced_decision_desc: "В вашем распоряжении имеется мощная пророческая реликвия. Используя её силу, вы сможете многое узнать о вампирской [Glossary('дисциплине','game_concept_discipline_desc')] Прорицания."
  auspexadvanced_decision_confirm: "Идеальное восприятие."
 
  truefaith_decision: "Артефакт веры"
@@ -161,22 +161,22 @@
 
  obfuscate_decision: "Теневой артефакт"
  obfuscate_decision_tooltip: "Во тьмы мы ступаем"
- obfuscate_decision_desc: "В вашем распоряжении имеется мощная пророческая реликвия. Используя её силу, вы сможете многое узнать о вампирской [Concept('discipline', 'дисциплине')|E] Затемнения."
+ obfuscate_decision_desc: "В вашем распоряжении имеется мощная пророческая реликвия. Используя её силу, вы сможете многое узнать о вампирской [Glossary('дисциплине','game_concept_discipline_desc')] Затемнения."
  obfuscate_decision_confirm: "Столько всего нужно скрыть..."
 
  auspex_decision: "Артефакт зрения"
  auspex_decision_tooltip: "Вы увидите всё"
- auspex_decision_desc: "В вашем распоряжении имеется мощный пророческий артефакт. Используя его силу, вы сможете многое узнать о вампирской [Concept('discipline', 'дисциплине')|E] Прорицания."
+ auspex_decision_desc: "В вашем распоряжении имеется мощный пророческий артефакт. Используя его силу, вы сможете многое узнать о вампирской [Glossary('дисциплине','game_concept_discipline_desc')] Прорицания."
  auspex_decision_confirm: "Острое восприятие."
 
  dominate_decision: "Артефакт господства"
  dominate_decision_tooltip: "Наконец, им придётся выслушать"
- dominate_decision_desc: "В вашем распоряжении имеется мощный артефакт. Используя его силу, вы сможете многое узнать о вампирской [Concept('discipline', 'дисциплине')|E] Доминирования."
+ dominate_decision_desc: "В вашем распоряжении имеется мощный артефакт. Используя его силу, вы сможете многое узнать о вампирской [Glossary('дисциплине','game_concept_discipline_desc')] Доминирования."
  dominate_decision_confirm: "Они будут повиноваться."
 
  obtenebration_decision: "Артефакт Бездны"
  obtenebration_decision_tooltip: "Заглянув в бездну..."
- obtenebration_decision_desc: "В вашем распоряжении имеется мощный артефакт Бездны. Используя его силу, вы сможете многое узнать о вампирской [Concept('discipline', 'дисциплине')|E] Власти над Тенью."
+ obtenebration_decision_desc: "В вашем распоряжении имеется мощный артефакт Бездны. Используя его силу, вы сможете многое узнать о вампирской [Glossary('дисциплине','game_concept_discipline_desc')] Власти над Тенью."
  obtenebration_decision_confirm: "Ещё многому предстоит научиться."
 
  gaffari_scrolls_decision: "Свитки Гаффари"
@@ -193,7 +193,7 @@
 
  animalismadvanced_decision: "Дикая реликвия"
  animalismadvanced_decision_tooltip: "Я стану единым целым с природой."
- animalismadvanced_decision_desc: "В вашем распоряжении имеется мощный дикий артефакт. Используя его силу, вы сможете многое узнать о вампирской [Concept('discipline', 'дисциплине')|E] Анимализма."
+ animalismadvanced_decision_desc: "В вашем распоряжении имеется мощный дикий артефакт. Используя его силу, вы сможете многое узнать о вампирской [Glossary('дисциплине','game_concept_discipline_desc')] Анимализма."
  animalismadvanced_decision_confirm: "Мастерство перевоплощения."
 
  POD_inquihunt_truecross_tt: "Владелец Истинного Креста получает значительный бонус к доблести на время этого события."

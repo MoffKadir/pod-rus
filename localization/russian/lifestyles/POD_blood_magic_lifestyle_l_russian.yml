@@ -173,9 +173,9 @@
 
  EYES_OF_THE_SEA_PERK_EFFECT: "#weak Узнайте, что происходит на, в или вокруг неподвижного водоема#!"
  PRISON_OF_WATER_PERK_EFFECT: "Позволяет заключить в темницу вашу цель в той же локации, применив это #L $pod_bs_spell|l$ие#!.\n#weak Использование большого водоема для связывания цели#!"
- BLOOD_TO_WATER_PERK_EFFECT: "Позволяет повысить $pod_hunger_with_icon$ вампира на 3 ед., применив это #L $pod_bs_spell|l$ие#!. Накладывает модификатор [GetModifier('majorbloodloss_modifier').GetNameWithTooltip] на не-вампира.\n#weak Превращение крови субъекта (или другой жидкости) в воду#!"
+ BLOOD_TO_WATER_PERK_EFFECT: "Позволяет повысить #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#! вампира на 3 ед., применив это #L $pod_bs_spell|l$ие#!. Накладывает модификатор [GetModifier('majorbloodloss_modifier').GetNameWithTooltip] на не-вампира.\n#weak Превращение крови субъекта (или другой жидкости) в воду#!"
  FLOWING_WALL_PERK_EFFECT: "Увеличивает шанс успеха #L $pod_bs_spell|l$ия#! [GetPerk('prison_of_water_perk').GetName(GetPlayer)].\n#weak Создание водного барьера, почти непроницаемого для всех существ#!"
- DEHYDRATE_PERK_EFFECT: "#L $pod_bs_spell$ие#! [GetPerk('blood_to_water_perk').GetName(GetPlayer)] теперь повышает $pod_hunger_with_icon$ на 5 ед., или накладывает модификатор [GetModifier('catastrophicbloodloss_modifier').GetNameWithTooltip] на не-вампиров.\n#weak Удаленный отвод воды от жертвы#!"
+ DEHYDRATE_PERK_EFFECT: "#L $pod_bs_spell$ие#! [GetPerk('blood_to_water_perk').GetName(GetPlayer)] теперь повышает #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#! на 5 ед., или накладывает модификатор [GetModifier('catastrophicbloodloss_modifier').GetNameWithTooltip] на не-вампиров.\n#weak Удаленный отвод воды от жертвы#!"
 
  simple_nectar_perk_name: "Простой нектар"
  nectar_perk_name: "Нектар"
@@ -183,7 +183,7 @@
  high_nectar_perk_name: "Высший нектар"
  ungodly_nectar_perk_name: "Нечестивый нектар"
 
- SIMPLE_NECTAR_PERK_EFFECT: "Вы можете заставить цель выучить ваши достоинства [Concept('discipline', 'дисциплины')|E] до 1 точки, применив это #L $pod_bs_spell|l$ие#!.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего одним уровнем дисциплины или пути#!"
+ SIMPLE_NECTAR_PERK_EFFECT: "Вы можете заставить цель выучить ваши достоинства [Glossary('дисциплины','game_concept_discipline_desc')] до 1 точки, применив это #L $pod_bs_spell|l$ие#!.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего одним уровнем дисциплины или пути#!"
  NECTAR_PERK_EFFECT: "Улучшает эффект #L $pod_bs_spell|l$ия#! [GetPerk('simple_nectar_perk').GetName(GetPlayer)] до 2 точек.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего двумя уровнями дисциплины или пути#!"
  COMPLEX_NECTAR_PERK_EFFECT: "Улучшает эффект #L $pod_bs_spell|l$ия#! [GetPerk('nectar_perk').GetName(GetPlayer)] до 3 точек.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего тремя уровнями дисциплины или пути#!"
  HIGH_NECTAR_PERK_EFFECT: "Улучшает эффект #L $pod_bs_spell|l$ия#! [GetPerk('complex_nectar_perk').GetName(GetPlayer)] до 4 точек.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего четырмя уровнями дисциплины или пути#!"
@@ -442,7 +442,7 @@
  SWALLOW_THE_TAIL_PERK_EFFECT: "Вы можете получить случайное количество от 1 до 4 ед. крови, нанеся раны всему [Concept('court', 'двору')|E], применив это #L $pod_bs_spell|l$ие#!.\n#flavor Притянуть к себе пролитую кровь из окружающих вас людей#!"
  CYCLE_OF_THE_MIDGARD_SERPENT_PERK_EFFECT: "Снижает затраты [Concept('lifestyle_experience', 'опыта образа жизни')|E] для изучения дисциплин на #p -100%#!\n#flavor Наделите гуля способностью использовать ваши дисциплины#!"
 
- cycle_of_the_midgard_serpent_perk_tt: "Изучение [Concept('discipline', 'дисциплины')|E] не требует затрат из-за наличия достоинства «[GetPerk('cycle_of_the_midgard_serpent_perk').GetName(GetPlayer)]»!"
+ cycle_of_the_midgard_serpent_perk_tt: "Изучение [Glossary('дисциплины','game_concept_discipline_desc')] не требует затрат из-за наличия достоинства «[GetPerk('cycle_of_the_midgard_serpent_perk').GetName(GetPlayer)]»!"
  APEPS_TRANSFORMATION_PERK_EFFECT: "Вы можете принести в жертву вашего гуля, чтобы получить складывающийся модификатор [GetModifier('apeps_transformation_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#flavor Превратить гуля в огромную змею, способную понимать человеческую речь#!"
 
 

@@ -14,16 +14,16 @@
  golconda_second_chance_modifier: "Второй шанс на жизнь"
 
  master_infiltrator_modifier: "Мастер-лазутчик"
- master_infiltrator_modifier_desc: "Начинает с [EmptyScope.ScriptValue('master_infiltrator_suspicion_offset')|V0] ед. #L $pod_suspicion_with_icon$ия#! во время миссий #L $pod_infiltration_missions$ия#!."
+ master_infiltrator_modifier_desc: "Начинает с [EmptyScope.ScriptValue('master_infiltrator_suspicion_offset')|V0] ед. #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрения#!#! во время миссий #L #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#!."
 
  skilled_infiltrator_modifier: "Опытный лазутчик"
- skilled_infiltrator_modifier_desc: "Начинает с [EmptyScope.ScriptValue('skilled_infiltrator_suspicion_offset')|V0] ед. #L $pod_suspicion_with_icon$ия#! во время миссий #L $pod_infiltration_missions$ия#!."
+ skilled_infiltrator_modifier_desc: "Начинает с [EmptyScope.ScriptValue('skilled_infiltrator_suspicion_offset')|V0] ед. #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрения#!#! во время миссий #L #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#!."
 
  infiltration_experience_modifier: "Опыт проникновения"
- infiltration_experience_modifier_desc: "Начинает с [EmptyScope.ScriptValue('infiltration_experience_suspicion_offset')|V0] ед. #L $pod_suspicion_with_icon$ия#! во время миссий #L $pod_infiltration_missions$ия#!.\n#weak (Складывается до 5 раз)#!"
+ infiltration_experience_modifier_desc: "Начинает с [EmptyScope.ScriptValue('infiltration_experience_suspicion_offset')|V0] ед. #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрения#!#! во время миссий #L #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#!.\n#weak (Складывается до 5 раз)#!"
 
  wary_of_infiltrators_modifier: "Страх лазутчиков"
- wary_of_infiltrators_modifier_desc: "Миссии #L $pod_infiltration_missions$ия#!, нацеленные на этого персонажа, стартуют с дополнительными [EmptyScope.ScriptValue('wary_of_infiltrators_suspicion_offset')|V0] ед. #L $pod_suspicion_with_icon$ия#!."
+ wary_of_infiltrators_modifier_desc: "Миссии #L #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#!, нацеленные на этого персонажа, стартуют с дополнительными [EmptyScope.ScriptValue('wary_of_infiltrators_suspicion_offset')|V0] ед. #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрения#!#!."
 
  heist_caught_modifier: "Неблагонадежность"
  heist_caught_modifier_desc: "Этот персонаж был пойман на проникновении в другой двор с гнусными намерениями."

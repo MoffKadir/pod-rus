@@ -4,7 +4,7 @@
  POD_journey_maintenance.1.desc: "[Localize(Concatenate(PlayerJourneyID,'_planning_desc'))]"
  POD_journey_maintenance.1.option.a: "[Localize(Concatenate(PlayerJourneyID,'_planning_confirm'))]"
  POD_journey_maintenance.1.option.a.tt: "[Select_CString( GetScriptedGui('POD_can_start_travel_phase_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End), Localize('POD_journey_maintenance.1.option.a.tt.default'), GetPlayer.Custom('PODCoterieTravelStatusGUI') )]"
- POD_journey_maintenance.1.option.a.tt.default: "$EFFECT_LIST_BULLET$Вы немедленно начнёте [Concept('travel_phase', 'этапа путешествия')|E] этого #TOOLTIP:game_concept_journey_desc #E странствия#!#!.\n[GetPlayer.Custom('PODCoterieTravelStatus')]"
+ POD_journey_maintenance.1.option.a.tt.default: "$EFFECT_LIST_BULLET$Вы немедленно начнёте #TOOLTIP:game_concept_travel_phase_desc #E фазу путешествия#!#! этого #TOOLTIP:game_concept_journey_desc #E странствия#!#!.\n[GetPlayer.Custom('PODCoterieTravelStatus')]"
  POD_journey_maintenance.1.option.b: "[Localize(Concatenate(PlayerJourneyID,'_planning_decline'))]"
  POD_journey_maintenance.1.option.b.tt: "#TOOLTIP:game_concept_planning_phase_desc #E Фаза планирования#!#! этого #TOOLTIP:game_concept_journey_desc #E странствия#!#! будет завершён."
  POD_journey_maintenance.1.option.b.tt.2: "#TOOLTIP:game_concept_journey_desc #E Странствие#!#! $POD_current_journey$ будет приостановлено. Вы можете продолжить его позже, сохранив весь свой прогресс."

@@ -138,7 +138,7 @@
 
  pod_alert_can_create_coterie: "#T Вы можете создать котерию ([GetPlayer.Custom('PODCoterieNoTooltip')])#!\nПринадлежность к котерии ([GetPlayer.Custom('PODCoterie')]) облегчит достижение успеха в ваших #TOOLTIP:game_concept_journey_desc #E странствиях#!#!.\n\n#I Нажмите, чтобы создать котерию ([GetPlayer.Custom('PODCoterieNoTooltip')]) сейчас.#!\n$RIGHT_CLICK_DISMISS$"
 
- pod_alert_can_hunt_in_capital: "#T Вы можете отправиться в странствие#!\nПоскольку вы - вампир, вы можете #bold $hunt_in_capital_name$#!, чтобы утолить ваш $pod_hunger_with_icon$ и получить [Concept('lifestyle_experience', 'опыт пути')|E].\n\nОхота на #bold крестьян#! бесплатна.\n\n#I Нажмите, чтобы открыть окно #TOOLTIP:game_concept_journey_desc #E странствия#!#!.#!\n$RIGHT_CLICK_DISMISS$"
+ pod_alert_can_hunt_in_capital: "#T Вы можете отправиться в странствие#!\nПоскольку вы - вампир, вы можете #bold $hunt_in_capital_name$#!, чтобы утолить ваш #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#! и получить [Concept('lifestyle_experience', 'опыт пути')|E].\n\nОхота на #bold крестьян#! бесплатна.\n\n#I Нажмите, чтобы открыть окно #TOOLTIP:game_concept_journey_desc #E странствия#!#!.#!\n$RIGHT_CLICK_DISMISS$"
 
  pod_alert_can_train_with_pack: "#T Вы можете отправиться в странствие#!\nПоскольку вы - $glossary_fera$, вы можете #bold $fera_training_name$#!, чтобы улучшить способности группы [GetPlayer.Custom('PODCoterie')] и свои собственные, или получить другие награды.\n\n#I Нажмите, чтобы открыть окно #TOOLTIP:game_concept_journey_desc #E странствия#!#!.#!\n$RIGHT_CLICK_DISMISS$"
 

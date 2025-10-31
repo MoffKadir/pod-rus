@@ -18,8 +18,8 @@
  POD_hunger_window_hunt_in_capital: "Являясь вампиром, вы можете отправиться в #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы охотиться на смертных в своей столице."
  POD_hunger_window_hunt_in_capital_inprogress: "#help Вы уже охотитесь на смертных в своей столице.#!"
  POD_hunger_window_regen: "[GetPlayer.Custom('PODBloodRegenHint')]"
- POD_hunger_window_regen_revenant: "Поскольку у вас имеется свойство «[GetTrait('revenant').GetName(GetPlayer)]», вы автоматически теряете #V 1#! ед. #L $pod_hunger_with_icon$а#! в месяц."
- POD_hunger_window_regen_dhampir: "Поскольку у вас имеется свойство «[GetTrait('dhampir').GetName(GetPlayer)]», вы автоматически теряете #V 1#! ед. #L $pod_hunger_with_icon$а#! в месяц."
+ POD_hunger_window_regen_revenant: "Поскольку у вас имеется свойство «[GetTrait('revenant').GetName(GetPlayer)]», вы автоматически теряете #V 1#! ед. #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голода#!#! в месяц."
+ POD_hunger_window_regen_dhampir: "Поскольку у вас имеется свойство «[GetTrait('dhampir').GetName(GetPlayer)]», вы автоматически теряете #V 1#! ед. #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голода#!#! в месяц."
  POD_hunger_window_herd_drink: "Вы можете питаться членом #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!, персонажем [GetPlayer.MakeScope.Var('suggested_herdmember').Char.GetShortUINameNoTooltip]."
  POD_hunger_window_herd_drink_noblood: "#help Ни у кого из членов вашего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! не осталось крови. Подождите, пока они восстановятся.#!"
  POD_hunger_window_herdify: "Вы можете добавить одного из своих [Concept('courtiers', 'придворных')|E] к своему #TOOLTIP:game_concept_POD_herd_desc #E стаду#!#!."
@@ -62,7 +62,7 @@
 
  pod_saved_modifier_tooltip: "#T [GetModifier(SCOPE.GetFlagName('saved_tooltip')).GetName]#!\n[GetModifier(SCOPE.GetFlagName('saved_tooltip')).GetDescWithEffects]"
 
- pod_hunger_hud: "$pod_saved_modifier_tooltip$[GetPlayer.Custom('PODBloodPotencyHint')]\n\n#I Нажмите на эту шкалу, чтобы показать различные способы, которыми вы можете утолить свой $pod_hunger_with_icon$.#!"
+ pod_hunger_hud: "$pod_saved_modifier_tooltip$[GetPlayer.Custom('PODBloodPotencyHint')]\n\n#I Нажмите на эту шкалу, чтобы показать различные способы, которыми вы можете утолить свой #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#!.#!"
  pod_masquerade_hud: "$pod_saved_modifier_tooltip$\n\n[GetPlayer.Custom('PODMasqueradeHint')]"
  pod_pathos_hud: "$pod_saved_modifier_tooltip$\n\n#I Для того, чтобы получить пафос, вызовите страсть из #TOOLTIP:game_concept_Fetter_desc #E оков#!#!.#!"
  pod_glamour_hud: "$pod_saved_modifier_tooltip$\n\n#I Нажмите на эту шкалу, чтобы показать различные способы, которыми вы можете восстановить гламур.#!"
