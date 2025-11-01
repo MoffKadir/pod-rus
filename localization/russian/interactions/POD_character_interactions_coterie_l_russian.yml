@@ -13,7 +13,7 @@
  POD_recipient_already_has_coterie: "[recipient.GetShortUIName] уже является членом котерии #bold [recipient.Custom('PODGetCoterieName')]#!"
  POD_invite_to_coterie_interaction_mortal: "Вы не можете приглашать смертных в котерию ([GetPlayer.Custom('PODCoterie')])"
  POD_invite_to_coterie_interaction_mortal_cultist: "Вы не можете пригласить смертных в вашу котерию ([GetPlayer.Custom('PODCoterie')]), если они не являются вашими культистами"
- POD_invite_to_coterie_interaction_mortal_neteru: "Вы не можете пригласить смертных в вашу котерию ([GetPlayer.Custom('PODCoterie')]), если они не являются вашими [neteru|El]"
+ POD_invite_to_coterie_interaction_mortal_neteru: "Вы не можете пригласить смертных в вашу котерию ([GetPlayer.Custom('PODCoterie')]), если они не являются вашими #TOOLTIP:game_concept_neteru_desc #E нетеру#!#!"
  POD_invite_to_coterie_interaction_packbond: "Помните, что фера связаны со своей котерией ([GetPlayer.Custom('PODCoterie')]) на всю жизнь, так что вы не сможете изгнать [recipient.GetHerHis] позже."
  POD_invite_to_coterie_interaction_rivalry: "#help Членство в котерии ([GetPlayer.Custom('PODCoterie')]) считается обязательством. Вы сможете изгнать персонажа [recipient.GetShortUIName] позже, но [recipient.GetSheHe] станет вашим [Concept('rival', 'соперником')|E], если вы так поступите.#!"
 

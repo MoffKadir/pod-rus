@@ -1,10 +1,10 @@
 ﻿l_russian:
 
  POD_set_neteru_interaction: "Признать нетеру"
- POD_set_neteru_interaction_desc: "Признать персонажа [recipient.GetFirstName] как своего [Concept('neteru', 'нетеру')|E]."
+ POD_set_neteru_interaction_desc: "Признать персонажа [recipient.GetFirstName] как своего #TOOLTIP:game_concept_neteru_desc #E нетеру#!#!."
  POD_set_neteru_interaction_extra_icon: "$hook_extra_icon$"
  POD_remove_neteru_interaction: "Отвергнуть нетеру"
- POD_remove_neteru_interaction_desc: "Отказаться от почитания со стороны персонажа [recipient.GetFirstName], перестав считать [recipient.GetHerHis] своим [Concept('neteru', 'нетеру')|E]."
+ POD_remove_neteru_interaction_desc: "Отказаться от почитания со стороны персонажа [recipient.GetFirstName], перестав считать [recipient.GetHerHis] своим #TOOLTIP:game_concept_neteru_desc #E нетеру#!#!."
 
  NOT_know_this_ren: "Вы #bold не#! знаете соответствующее истинное имя."
 

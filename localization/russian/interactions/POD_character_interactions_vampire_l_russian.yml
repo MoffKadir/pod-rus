@@ -1005,7 +1005,7 @@
  POD_cleansed_in_blood_perk_interaction_desc: "Отменить изменение формы персонажа [recipient.GetFirstName]."
 
  POD_purification_perk_interaction: "Очищение"
- POD_purification_perk_interaction_desc: "Очистить [Concept('battle_modifier', 'модификаторы битвы')|E] персонажа [recipient.GetFirstNamePossessive]."
+ POD_purification_perk_interaction_desc: "Очистить #TOOLTIP:game_concept_battle_modifier_desc #E модификаторы битвы#!#! персонажа [recipient.GetFirstNamePossessive]."
  POD_thin_blood_perk_interaction: "Слабая кровь"
  POD_thin_blood_perk_interaction_desc: "Наделить персонажа [recipient.GetFirstName] модификатором, который исключит возможность исцеления [recipient.GetHerHis] ран."
  POD_erosion_perk_interaction: "Эрозия"
@@ -1527,9 +1527,9 @@
  POD_they_stored_blood: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'собрала', 'собрал' )] $VALUE|0V$ ед. полученной крови"
  blood_vessel_damaged: "Сосуд крови повреждён"
 
- POD_choose_justicar_interaction: "Выбрать [Concept('justicar', 'юстициара')|E]"
- POD_choose_justicar_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала', 'стал' )] вашим [Concept('justicar', 'юстициаром')|E]."
- POD_choose_justicar_interaction.tt: "[recipient.GetFirstName] будет [Select_CString(recipient.IsFemale, 'назначена', 'назначен' )] [Concept('justicar', 'юстициаром')|E]"
+ POD_choose_justicar_interaction: "Выбрать [Glossary('юстициара','game_concept_justicar_desc')]"
+ POD_choose_justicar_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала', 'стал' )] вашим [Glossary('юстициаром','game_concept_justicar_desc')]."
+ POD_choose_justicar_interaction.tt: "[recipient.GetFirstName] будет [Select_CString(recipient.IsFemale, 'назначена', 'назначен' )] [Glossary('юстициаром','game_concept_justicar_desc')]"
 
  POD_thinbloodalchemy_use_alchemical_product_interaction: "Использовать алхимическое изделие"
  POD_thinbloodalchemy_use_alchemical_product_interaction_desc: "Использовать алхимическое изделие."

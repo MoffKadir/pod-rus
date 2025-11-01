@@ -235,11 +235,11 @@
  #POD_diablerize.800.option.a: "Resist! I will not be defeated!"
  #POD_diablerize.800.option.b: "Give in, and let [unconquered_soul.GetFirstName] take over."
  #
- #POD_diablerize.810.t: "Signs of an [unconquered_soul|E]"
+ #POD_diablerize.810.t: "Signs of an #TOOLTIP:game_concept_unconquered_soul_desc #E Непокорённая душа#!#!"
  #POD_diablerize.810.desc: "One of your servants pointed out that you changed some of yours habits recently, something that doesn't happen frequently to your kind. This reminds you of the rumors about the terrible consequences of [Glossary('Диаблери','game_concept_diablerie_desc')] and its potential toll on your very soul.\nCould it be that your latest victim is trying to fight back? A worrying prospect indeed..."
  #POD_diablerize.810.option.a.tt: "Something very bad will happen soon:"
  #POD_diablerize.810.option.a: "Something is very very wrong..."
- unconquered_soul_warning_tooltip: "@alert_icon! #alert_trial #high $VALUE|0$%#! вероятность [Concept('unconquered_soul', 'непокорённой души')|E]!#!"
+ unconquered_soul_warning_tooltip: "@alert_icon! #alert_trial #high $VALUE|0$%#! вероятность #TOOLTIP:game_concept_unconquered_soul_desc #E непокорённой души#!#!!#!"
 
  POD_diablerize.808.tt: "Все здания во владении [targetprovince.GetName] удалены."
  POD_diablerize.801.desc: "Ещё одна ужасная ночь при дворе. Вот уже несколько месяцев ваши вассалы утверждают, что вы изменились в худшую сторону, принимаете необдуманные решения в один момент и гневно кричите, что вы этого не делали. Как будто вместо вас правят две противоречивые личности, которые борются за власть.\nВы были прокляты? Вас поразила странная сила? Как бы то ни было, ясно, что ваш двор едва ли захочет навестить вас, поскольку, похоже, вы не в состоянии править или, что ещё важнее, не в состоянии вспомнить, когда они вас игнорировали."

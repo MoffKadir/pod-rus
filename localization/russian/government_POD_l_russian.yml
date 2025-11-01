@@ -147,7 +147,7 @@
  dark_kingdom_government_with_icon: "@wraith_icon! $dark_kingdom_government$" # TODO RTP
  dark_kingdom_government_adjective: "Тёмно-королевск"
  dark_kingdom_government_realm: "Тёмное королевство"
- dark_kingdom_government_vassals_label: "[Concept('obligations','Обязательства')|E] [Concept('dark_kingdom','Тёмного королевства')|E] определяются [Concept('vassal_contract', 'договором')|E] каждого [Concept('vassal','вассала')|E]"
+ dark_kingdom_government_vassals_label: "[Concept('obligations','Обязательства')|E] [Glossary('Тёмного королевства','game_concept_dark_kingdom_desc')] определяются [Concept('vassal_contract', 'договором')|E] каждого [Concept('vassal','вассала')|E]"
  dark_kingdom_government_desc: "Тёмные королевства - это очаги стабильной реальности в пределах [UmbraGlossaryLocalized('pod_realm_tempest','Бури')] [UmbraGlossaryLocalized('shadowlands','Загробного мира')]. Каждое из этих королевств претендует на власть над призраками определенного географического региона."
  dark_kingdom_government_filter_option: "$dark_kingdom_government$"
  dark_kingdom_government_filter_option_desc: "Только персонажи с #L [GetGovernment( 'dark_kingdom_government' ).GetAdjective|l]им#! [Concept('government','правительством')|E]"

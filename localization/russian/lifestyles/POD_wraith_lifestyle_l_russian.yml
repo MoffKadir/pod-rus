@@ -23,8 +23,8 @@
  monthly_dark_arcanoi_lifestyle_xp_gain_mult: "Ежемесячный прирост [Concept('experience', 'опыта')|E] на [Concept('lifestyle', 'пути')|E] тёмных арканоев"
 
  misc_arcanoi_lifestyle_name: "Разные арканои"
- misc_arcanoi_lifestyle_desc: "Фокус на способностях, используемых восставшими, или призраками, которым удалось вернуться в свои старые тела, и арканосе призраков иных [Concept('dark_kingdom', 'Тёмных королевств')|E]."
- misc_arcanoi_lifestyle_highlight_desc: "Из-за вашей [Concept('government', 'формы правления')|E] [Concept('dark_kingdom', 'Тёмного королевства')|E] ваш прирост [Concept('experience', 'опыта')|E] для этого образа жизни увеличен на #P 50%#!."
+ misc_arcanoi_lifestyle_desc: "Фокус на способностях, используемых восставшими, или призраками, которым удалось вернуться в свои старые тела, и арканосе призраков иных [Glossary('тёмных королевств','game_concept_dark_kingdom_desc')]."
+ misc_arcanoi_lifestyle_highlight_desc: "Из-за вашей [Concept('government', 'формы правления')|E] [Glossary('Тёмного королевства','game_concept_dark_kingdom_desc')] ваш прирост [Concept('experience', 'опыта')|E] для этого образа жизни увеличен на #P 50%#!."
  monthly_misc_arcanoi_lifestyle_xp_gain_mult: "Ежемесячный прирост [Concept('experience', 'опыта')|E] на [Concept('lifestyle', 'пути')|E] разных арканоев"
 
  arcanos_argos_focus: "Аргос"
@@ -240,7 +240,7 @@
 
  game_concept_misc_arcanoi: "Разные арканои"
  game_concept_misc_arcanoi_lifestyle: "Разные арканои"
- game_concept_misc_arcanoi_lifestyle_desc: "$game_concept_misc_arcanoi_lifestyle$ подходят призракам. Способности, используемые Восставшими, или призраками, которым удалось вернуться в свои старые тела, и арканои призраков других [Concept('dark_kingdom', 'тёмных королевств')|E]."
+ game_concept_misc_arcanoi_lifestyle_desc: "$game_concept_misc_arcanoi_lifestyle$ подходят призракам. Способности, используемые Восставшими, или призраками, которым удалось вернуться в свои старые тела, и арканои призраков других [Glossary('тёмных королевств','game_concept_dark_kingdom_desc')]."
 
  GAINS_ARCANOI_LIFESTYLE_XP: "#TOOLTIP:game_concept_arcanoi_lifestyle_desc #E Опыт арканоев#!#! увеличивается на $VALUE|V0$"
  GAINED_ARCANOI_LIFESTYLE_XP: "#TOOLTIP:game_concept_arcanoi_lifestyle_desc #E Опыт арканоев#!#! увеличен на $VALUE|V0$"

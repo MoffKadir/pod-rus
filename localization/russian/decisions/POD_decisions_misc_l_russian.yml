@@ -188,7 +188,7 @@
  truefaith_perk_removal_decision_tooltip: "Ваши навыки не знают границ."
  truefaith_perk_removal_decision_confirm: "Пожинать плоды просветления."
 
- truefaith_perk_removal_decision_custom: "Вы потеряете #V 1#! [Concept('perk', 'достоинство')|E] [Concept('faith_lifestyle','истинной веры')|E]"
+ truefaith_perk_removal_decision_custom: "Вы потеряете #V 1#! [Concept('perk', 'достоинство')|E] #TOOLTIP:game_concept_faith_lifestyle_desc #E истинной веры#!#!"
 
  undo_truefaith_perk_removal_decision: "Укреплённая вера"
  undo_truefaith_perk_removal_decision_desc: "Что-то новое для изучения?"
@@ -262,6 +262,15 @@
  change_house_colors_decision_effect_tooltip_house: "Каждый член [Concept('house','дома')|E] [GetPlayer.GetHouse.GetName] будет использовать ту же цветовую схему. #weak (если только она не будет заменена личной или цветовой схемой котерии ([GetPlayer.Custom('PODCoterieNoTooltip')]))#!"
  change_house_colors_decision_effect_tooltip_3: "Вы можете изменить эти цвета в любое время.\n"
  POD_current_clothing_colors: "Текущая цветовая схема: [GuiScope.AddScope('color_root',color_root.MakeScope).Custom('PODClothingColors')]"
+
+ change_idle_animation_decision: "Настроить позу бездействия"
+ change_idle_animation_decision_desc: "Пришло время для преображения."
+ change_idle_animation_decision_tooltip: "Изменить обычную позу вашего персонажа"
+ change_idle_animation_decision_confirm: "[Select_CString(ROOT.Char.IsFemale, 'Новая', 'Новый' )] я."
+ change_idle_animation_decision_tt1: "Вы сможете выбрать обычную позу вашего персонажа, которая будет отображаться в окне персонажа и в левом нижнем углу HUD."
+ change_idle_animation_decision_tt2_has_pose: "Ваша текущая поза - #clickable [GetPlayer.MakeScope.Var('custom_idle').GetFlagName]#!"
+ change_idle_animation_decision_tt2_no_pose: "Ваша текущая поза - #clickable unset#! #weak (зависит от личности и других факторов, как в оригинальной CK3)#!"
+ change_idle_animation_decision_tt3: "Это можно изменить в любой момент."
 
  # Epidemic
  heal_chulorviosis_decision: "Лечение от чулорвиоза"

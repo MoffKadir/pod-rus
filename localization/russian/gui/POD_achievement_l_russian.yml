@@ -38,12 +38,12 @@
  lesson_achiev_coterietutorial: "$POD_achievement_gained$"
  lesson_achiev_coterietutorial_desc: "Вы получили достижение: $achiev_coterietutorial$"
  achiev_coterietutorial: "Объединив наши силы..."
- achiev_coterietutorial_tt: "Основать новую [Concept('coterie', 'котерию')|E] и пригласить в неё 4 других участников."
+ achiev_coterietutorial_tt: "Основать новую #TOOLTIP:game_concept_coterie_desc #E котерию#!#! и пригласить в неё 4 других участников."
 
  lesson_achiev_heisttutorial: "$POD_achievement_gained$"
  lesson_achiev_heisttutorial_desc: "Вы получили достижение: $achiev_heisttutorial$"
  achiev_heisttutorial: "Было ваше, стало наше"
- achiev_heisttutorial_tt: "Украсть не менее 200 золотых в ходе одной #L миссии #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#!."
+ achiev_heisttutorial_tt: "Украсть не менее 200 золотых в ходе одной #TOOLTIP:game_concept_infiltration_desc #E миссии проникновения#!#!."
 
 
  ##### Easy Achievements
@@ -79,7 +79,7 @@
  lesson_achiev_4thgenhunt: "$POD_achievement_gained$"
  lesson_achiev_4thgenhunt_desc: "Вы получили достижение: $achiev_4thgenhunt$"
  achiev_4thgenhunt: "Легендарный герой"
- achiev_4thgenhunt_tt: "Убить вампира четвёртого [Concept('vampgeneration', 'поколения')|E] не ниже [Concept('kingdom', 'королевского')|E] ранга с помощью взаимодействия «Найти логово» за охотника."
+ achiev_4thgenhunt_tt: "Убить вампира четвёртого [Glossary('поколения','game_concept_vampgeneration_desc')] не ниже [Concept('kingdom', 'королевского')|E] ранга с помощью взаимодействия «Найти логово» за охотника."
 
  lesson_achiev_visceratika: "$POD_achievement_gained$"
  lesson_achiev_visceratika_desc: "Вы получили достижение: $achiev_visceratika$"
@@ -127,7 +127,7 @@
  lesson_achiev_nomnom: "$POD_achievement_gained$"
  lesson_achiev_nomnom_desc: "Вы получили достижение: $achiev_nomnom$"
  achiev_nomnom: "Я прогрызу свой путь вверх по лестнице"
- achiev_nomnom_tt: "Стать представителем четвёртого [Concept('vampgeneration', 'поколения')|E] через [Glossary('диаблеризацию','game_concept_diablerie_desc')], начав за вампира тринадцатого поколения."
+ achiev_nomnom_tt: "Стать представителем четвёртого [Glossary('поколения','game_concept_vampgeneration_desc')] через [Glossary('диаблеризацию','game_concept_diablerie_desc')], начав за вампира тринадцатого поколения."
 
  lesson_achiev_noddist: "$POD_achievement_gained$"
  lesson_achiev_noddist_desc: "Вы получили достижение: $achiev_noddist$"

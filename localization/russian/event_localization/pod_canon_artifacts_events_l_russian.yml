@@ -249,7 +249,7 @@
  spear_orthia_decision_tooltip: "Символ отваги, выкованный заново?"
  spear_orthia_decision_desc: "Копьё Артемиды Ортии раскололось, когда она отважно штурмовала стены Карфагена. С помощью искусного сверхъестественного кузнеца его можно восстановить."
  spear_orthia_decision_confirm: "Оружие из легенд!"
- shattered_spear_decision_custom: "[TARGET_CHARACTER.GetFirstName] [Select_CString(TARGET_CHARACTER.IsFemale, 'должна', 'должен' )] быть вашим [Concept('friend', 'другом')|E], членом [Concept('coterie', 'котерии')|E] или [Concept('soulmate', 'родственной душой')|E]"
+ shattered_spear_decision_custom: "[TARGET_CHARACTER.GetFirstName] [Select_CString(TARGET_CHARACTER.IsFemale, 'должна', 'должен' )] быть вашим [Concept('friend', 'другом')|E], членом #TOOLTIP:game_concept_coterie_desc #E котерии#!#! или [Concept('soulmate', 'родственной душой')|E]"
 
  artifact_spear_orthia_name: "Копьё Артемиды Ортии"
  artifact_spear_orthia_description: "Легендарное оружие, которым когда-то владела легендарная воительница. Артемида Ортия, которая, как говорят, была возлюбленной самого Вентру, храбро вступила в безумие Карфагена, как и полагается спартанской богине. Её копье раскололось во время боя, но теперь оно восстановлено в прежнем великолепии."

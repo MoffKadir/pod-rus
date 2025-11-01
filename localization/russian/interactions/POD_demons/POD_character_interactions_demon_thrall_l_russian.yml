@@ -3,17 +3,17 @@
  POD_demonic_submission_interaction_desc: "Передать свой основной титул персонажу [recipient.GetFirstName] и присягнуть [recipient.GetHerHim] на верность."
 
  POD_set_thrall_interaction: "Поработить"
- POD_set_thrall_interaction_desc: "Поработить персонажа [recipient.GetFirstName], сделав [recipient.GetHerHis] [Concept('thrall', Select_CString(recipient.IsFemale, 'рабыней', 'рабом' ))|E] у вас на службе."
+ POD_set_thrall_interaction_desc: "Поработить персонажа [recipient.GetFirstName], сделав [recipient.GetHerHis] #TOOLTIP:game_concept_thrall_desc #E рабом#!#! у вас на службе."
  POD_set_thrall_interaction_extra_icon: "$hook_extra_icon$"
 
  POD_remove_thrall_interaction: "Отменить договор"
- POD_remove_thrall_interaction_desc: "Отменить договор, освободив персонажа [recipient.GetFirstName] от [Concept('thrall', 'рабства')|E]."
+ POD_remove_thrall_interaction_desc: "Отменить договор, освободив персонажа [recipient.GetFirstName] от #TOOLTIP:game_concept_thrall_desc #E рабства#!#!."
  POD_enthrall_interaction_limit: "Количество рабов ограничено! (3 плюс 1 за каждые [intrigue_i]#V 8#! навыков [Concept('intrigue', 'интриг')|E] и любые бонусы из других источников)"
 
  POD_set_cultist_interaction: "Признать культиста"
  POD_set_cultist_interaction_desc: "Признать персонажа [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'своей культисткой', 'своим культистом' )]."
  POD_set_cultist_interaction_extra_icon: "$hook_extra_icon$"
- POD_set_cultist_vassal_requirement: "Персонаж должен быть вашим [Concept('courtier', 'придворным')|E], [Concept('direct_vassal', 'прямым вассалом')|E] или [Concept('direct_vassal', 'прямым вассалом')|E] вашего [Concept('thrall', 'раба')|E]"
+ POD_set_cultist_vassal_requirement: "Персонаж должен быть вашим [Concept('courtier', 'придворным')|E], [Concept('direct_vassal', 'прямым вассалом')|E] или [Concept('direct_vassal', 'прямым вассалом')|E] вашего #TOOLTIP:game_concept_thrall_desc #E раба#!#!"
  POD_set_cultist_interaction_effect: "[GetCourtPositionType('cult_leader_court_position').GetName()] приобщил нового [Concept('cultist', 'культиста')|E] в ваш культ!"
 
  POD_remove_cultist_interaction: "Отвергнуть культиста"
@@ -24,7 +24,7 @@
 
  SAME_FAITH: "Вы исповедуете ту же конфессию: $VALUE|+0$"
 
- POD_command_thrall_gold_interaction: "Приказать [Concept('thrall', 'рабу')|E] #Weak (золото)#!"
+ POD_command_thrall_gold_interaction: "Приказать #TOOLTIP:game_concept_thrall_desc #E рабу#!#! #Weak (золото)#!"
  POD_command_thrall_gold_interaction_desc: "Предложить дар силы, чтобы заставить персонажа [recipient.GetFirstName] заплатить вам золото."
  POD_command_thrall_gold_interaction_option_minor_gold: "Немного золота"
  POD_command_thrall_gold_interaction_option_medium_gold: "Среднее количество золота"
@@ -34,17 +34,17 @@
  POD_command_thrall_gold_interaction_option_excessive_gold: "Избыточное количество золота"
  POD_command_thrall_gold_interaction_option_omega_gold: "Невероятное количество золота"
 
- POD_command_thrall_artifact_interaction: "Приказать [Concept('thrall', 'рабу')|E] #Weak (артефакт)#!"
+ POD_command_thrall_artifact_interaction: "Приказать #TOOLTIP:game_concept_thrall_desc #E рабу#!#! #Weak (артефакт)#!"
  POD_command_thrall_artifact_interaction_desc: "Предложить дар силы, чтобы заставить персонажа [recipient.GetFirstName] подарить вам артефакт."
 
- POD_command_thrall_title_interaction: "Приказать [Concept('thrall', 'рабу')|E] #Weak (титул)#!"
+ POD_command_thrall_title_interaction: "Приказать #TOOLTIP:game_concept_thrall_desc #E рабу#!#! #Weak (титул)#!"
  POD_command_thrall_title_interaction_desc: "Предложить дар силы, чтобы заставить персонажа [recipient.GetFirstName] передать вам титул (кроме основного)."
 
- POD_command_thrall_vassal_interaction: "Приказать [Concept('thrall', 'рабу')|E] #Weak (вассал)#!"
+ POD_command_thrall_vassal_interaction: "Приказать #TOOLTIP:game_concept_thrall_desc #E рабу#!#! #Weak (вассал)#!"
  POD_command_thrall_vassal_interaction_desc: "Предложить дар силы, чтобы заставить персонажа [recipient.GetFirstName] передать вам вассала."
  recipient_secondary_POD_command_thrall_vassal_interaction: "Вассал"
 
- POD_command_thrall_war_interaction: "Приказать [Concept('thrall', 'рабу')|E] #Weak (война)#!"
+ POD_command_thrall_war_interaction: "Приказать #TOOLTIP:game_concept_thrall_desc #E рабу#!#! #Weak (война)#!"
  POD_command_thrall_war_interaction_desc: "Предложить дар силы, чтобы заставить персонажа [recipient.GetFirstName] начать войну против соседнего правителя."
  recipient_secondary_POD_command_thrall_war_interaction: "Цель войны"
 

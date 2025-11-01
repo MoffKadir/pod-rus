@@ -54,7 +54,7 @@
  COMMUTA_PERK_EFFECT: "#weak Простые изменения формы объекта\nИзменение состояния - от твердого к жидкому, от жидкости к газу и т.д.#!"
  CONFORMA_PERK_EFFECT: "$unlock_enhancing_node$, который добавляет [modifier|El], основанный на типе [Concept('artifact', 'артефакта')|E].\n#weak Сложные изменения формы объекта\nПростые изменения формы#!"
  SCINDE_PERK_EFFECT: "Улучшает #TOOLTIP:game_concept_crafting_node_desc #E узел ремесла#!#! достоинства «[GetPerk('conforma_perk').GetName(GetPlayer)]», снижая его стоимость.\n#weak Сложные изменения формы объекта\nСложные изменения формы#!"
- MUTATE_PERK_EFFECT: "Вы можете обменять 80 [gold_i|E][Concept('gold', 'золота')|E] на 120 [gold_i|E][Concept('gold', 'золота')|E] через #L $pod_bs_spell|l$ие#!.\n#weak Небольшие изменения на уровне атомов\nИзощрённые изменения формы#!"
+ MUTATE_PERK_EFFECT: "Вы можете обменять 80 [gold_i|E][Concept('gold', 'золота')|E] на 120 [gold_i|E][Concept('gold', 'золота')|E] через #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Небольшие изменения на уровне атомов\nИзощрённые изменения формы#!"
  TRANSMUTATE_PERK_EFFECT: "Улучшает достоинство «[GetPerk('mutate_perk').GetName(GetPlayer)]», вы можете обменять 40 [gold_i|E][Concept('gold', 'золота')|E] на 140 [gold_i|E][Concept('gold', 'золота')|E].\n#weak Значительные изменения на уровне атомов\nРадикальные изменения формы#!"
 
  summon_the_simplest_form_perk_name: "Призыв простой формы"
@@ -63,11 +63,11 @@
  reverse_conjuration_perk_name: "Обратное заклинание"
  power_over_life_perk_name: "Власть над жизнью"
 
- SUMMON_THE_SIMPLEST_FORM_PERK_EFFECT: "Вы можете призвать 1 материал ремесла через #L $pod_bs_spell|l$ие#!.\n#weak Временное создание очень простого объекта (из одного материала, без движущихся частей#!"
- BLOOD_PERMANENCY_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('summon_the_simplest_form_perk').GetName(GetPlayer)]», вы можете призвать 2 материала ремесла одновременно.\n#weak Сотворенным предметам может быть придано постоянное существование#!"
- MAGIC_OF_THE_SMITH_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('blood_permanency_perk').GetName(GetPlayer)]», вы можете призвать 4 материала ремесла одновременно.\nВы можете призвать обычный [artifact|El] через $pod_bs_spell|l$ие#!.\n#weak Сотворение сложных объектов (несколько материалов, движущиеся части)#!"
- REVERSE_CONJURATION_PERK_EFFECT: "Снижает стоимость #L $pod_bs_spells|l$ий#! этой [Concept('bloodmagic_path', 'тропы магии крови')|E].\nУлучшает #L $pod_bs_spell|l$ие#! «[GetPerk('magic_of_the_smith_perk').GetName(GetPlayer)]», вы можете призвать мастерский [artifact|El] вместо обычного.\n#weak Изгнание предметов, созданных с помощью этого пути#!"
- POWER_OVER_LIFE_PERK_EFFECT: "Вы можете призвать армию случайных [Concept('men_at_arms', 'профессионалов')|E], использовав это #L $pod_bs_spell|l$ие#!.\nУлучшает #L $pod_bs_spell|l$ие#! «[GetPerk('reverse_conjuration_perk').GetName(GetPlayer)]», вы можете призвать знаменитый [artifact|El] вместо мастерского.\n#weak Временное сотворение живых (хотя и бездумных) существ#!"
+ SUMMON_THE_SIMPLEST_FORM_PERK_EFFECT: "Вы можете призвать 1 материал ремесла через #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Временное создание очень простого объекта (из одного материала, без движущихся частей#!"
+ BLOOD_PERMANENCY_PERK_EFFECT: "Улучшает #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#! достоинства «[GetPerk('summon_the_simplest_form_perk').GetName(GetPlayer)]», вы можете призвать 2 материала ремесла одновременно.\n#weak Сотворенным предметам может быть придано постоянное существование#!"
+ MAGIC_OF_THE_SMITH_PERK_EFFECT: "Улучшает #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#! достоинства «[GetPerk('blood_permanency_perk').GetName(GetPlayer)]», вы можете призвать 4 материала ремесла одновременно.\nВы можете призвать обычный [artifact|El] через #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Сотворение сложных объектов (несколько материалов, движущиеся части)#!"
+ REVERSE_CONJURATION_PERK_EFFECT: "Снижает стоимость #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! этой [Concept('bloodmagic_path', 'тропы магии крови')|E].\nУлучшает #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#! «[GetPerk('magic_of_the_smith_perk').GetName(GetPlayer)]», вы можете призвать мастерский [artifact|El] вместо обычного.\n#weak Изгнание предметов, созданных с помощью этого пути#!"
+ POWER_OVER_LIFE_PERK_EFFECT: "Вы можете призвать армию случайных [Concept('men_at_arms', 'профессионалов')|E], использовав это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\nУлучшает #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#! «[GetPerk('reverse_conjuration_perk').GetName(GetPlayer)]», вы можете призвать знаменитый [artifact|El] вместо мастерского.\n#weak Временное сотворение живых (хотя и бездумных) существ#!"
 
  contradict_perk_name: "Противоречие"
  subvert_perk_name: "Низвержение"
@@ -75,11 +75,11 @@
  addiction_perk_name: "Привыкание"
  dependence_perk_name: "Зависимость"
 
- CONTRADICT_PERK_EFFECT: "Вы можете повысить мнение цели о вас, использовав это #L $pod_bs_spell|l$ие#!.\n#weak Заставляет кого-либо изменить свое мнение о каком-либо действии#!"
- SUBVERT_PERK_EFFECT: "Вы можете заставить цель потерять [prestige|El] и [piety|El], использовав это #L $pod_bs_spell|l$ие#!.\n#weak Заставляет жертву действовать в соответствии со своими темными побуждениями#!"
- DISSOCIATE_PERK_EFFECT: "Вы можете вызвать ухудшение случайных отношений цели, использовав это #L $pod_bs_spell|l$ие#!.\n#weak Заставляет человека на некоторое время отдалиться от окружающих#!"
- ADDICTION_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('subvert_perk').GetName(GetPlayer)]», повышая потерю [Concept('prestige', 'престижа')|E] и [Concept('piety', 'благочестия')|E].\nУлучшает #L $pod_bs_spell|l$ие#! «[GetPerk('dissociate_perk').GetName(GetPlayer)]», заставляя полностью исчезнуть случайное отношение цели.\n#weak Вызывает у жертвы психологическую зависимость от конкретных ощущений#!"
- DEPENDENCE_PERK_EFFECT: "Улучшает #L $pod_bs_spell|l$ие#! достоинства «[GetPerk('contradict_perk').GetName(GetPlayer)]», повышая мнение и предоставляя [weak_hook|El].\n#weak Временно привязывает кого-то к себе#!"
+ CONTRADICT_PERK_EFFECT: "Вы можете повысить мнение цели о вас, использовав это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Заставляет кого-либо изменить свое мнение о каком-либо действии#!"
+ SUBVERT_PERK_EFFECT: "Вы можете заставить цель потерять [prestige|El] и [piety|El], использовав это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Заставляет жертву действовать в соответствии со своими темными побуждениями#!"
+ DISSOCIATE_PERK_EFFECT: "Вы можете вызвать ухудшение случайных отношений цели, использовав это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Заставляет человека на некоторое время отдалиться от окружающих#!"
+ ADDICTION_PERK_EFFECT: "Улучшает #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#! достоинства «[GetPerk('subvert_perk').GetName(GetPlayer)]», повышая потерю [Concept('prestige', 'престижа')|E] и [Concept('piety', 'благочестия')|E].\nУлучшает #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#! «[GetPerk('dissociate_perk').GetName(GetPlayer)]», заставляя полностью исчезнуть случайное отношение цели.\n#weak Вызывает у жертвы психологическую зависимость от конкретных ощущений#!"
+ DEPENDENCE_PERK_EFFECT: "Улучшает #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#! достоинства «[GetPerk('contradict_perk').GetName(GetPlayer)]», повышая мнение и предоставляя [weak_hook|El].\n#weak Временно привязывает кого-то к себе#!"
 
  readiness_perk_name: "Готовность"
  centering_perk_name: "Сосредоточение"
@@ -87,11 +87,11 @@
  dual_thought_perk_name: "Двойственное мышление"
  perfect_clarity_perk_name: "Совершенная ясность"
 
- READINESS_PERK_EFFECT: "Вы можете дать цели модификатор [GetModifier('readiness_1_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#weak Получает набор кубиков для добавления к броскам, связанным с мудростью, или инициативой#!"
- CENTERING_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! достоинства [GetPerk('readiness_perk').GetName(GetPlayer)] до [GetModifier('readiness_2_modifier').GetNameWithTooltip].\n#weak Заставляет субъекта игнорировать любой эффект, уменьшающий количество кубиков; дает бонус к сопротивлению неистовству#!"
- ONE_TRACKED_MIND_PERK_EFFECT: "Вы можете дать цели модификатор [GetModifier('one_tracked_mind_diplomacy_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#weak Делает субъекта неспособным разделить выполнение нескольких действий#!"
- DUAL_THOUGHT_PERK_EFFECT: "Вы можете дать цели модификатор [GetModifier('dual_thought_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#weak Дополнительное ментальное действие в раунд, включая еще одно использование дисциплины#!"
- PERFECT_CLARITY_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! достоинства [GetPerk('dual_thought_perk').GetName(GetPlayer)] до [GetModifier('perfect_clarity_modifier').GetNameWithTooltip].\n#weak Снижает сложность всех действий, получает иммунитет к неистовству и становится устойчивым к ментальному воздействию#!"
+ READINESS_PERK_EFFECT: "Вы можете дать цели модификатор [GetModifier('readiness_1_modifier').GetNameWithTooltip], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Получает набор кубиков для добавления к броскам, связанным с мудростью, или инициативой#!"
+ CENTERING_PERK_EFFECT: "Улучшает модификатор #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! достоинства [GetPerk('readiness_perk').GetName(GetPlayer)] до [GetModifier('readiness_2_modifier').GetNameWithTooltip].\n#weak Заставляет субъекта игнорировать любой эффект, уменьшающий количество кубиков; дает бонус к сопротивлению неистовству#!"
+ ONE_TRACKED_MIND_PERK_EFFECT: "Вы можете дать цели модификатор [GetModifier('one_tracked_mind_diplomacy_modifier').GetNameWithTooltip], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Делает субъекта неспособным разделить выполнение нескольких действий#!"
+ DUAL_THOUGHT_PERK_EFFECT: "Вы можете дать цели модификатор [GetModifier('dual_thought_modifier').GetNameWithTooltip], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Дополнительное ментальное действие в раунд, включая еще одно использование дисциплины#!"
+ PERFECT_CLARITY_PERK_EFFECT: "Улучшает модификатор #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! достоинства [GetPerk('dual_thought_perk').GetName(GetPlayer)] до [GetModifier('perfect_clarity_modifier').GetNameWithTooltip].\n#weak Снижает сложность всех действий, получает иммунитет к неистовству и становится устойчивым к ментальному воздействию#!"
 
  warcry_perk_name: "Боевой клич"
  strike_true_perk_name: "Истинный удар"
@@ -127,7 +127,7 @@
  CONTORTION_PERK_EFFECT: "Когда начнётся война, два вражеских воителя с самым низким значением доблести получат ранения.\n#weak Заставляет конечность жертвы сжиматься и становиться бесполезной#!"
  SEIZURE_PERK_EFFECT: "Когда начнётся война, три вражеских воителя с самым низким значением доблести получат ранения.\n#weak Вызывает неконтролируемые движения и сжатия тела жертвы#!"
  BODY_FAILURE_PERK_EFFECT: "Когда начнётся война, четыре вражеских воителя с самым низким значением доблести получат ранения.\n#weak Напоминает припадок, но более сильный#!"
- BLOOD_MARIONETTE_PERK_EFFECT: "Вы можете получить [Concept('strong_hook', 'сильное влияние')|E] на цель, применив это #L $pod_bs_spell|l$ие#!.\n#weak Заставляет тело цели двигаться и действовать так, как вы хотите#!"
+ BLOOD_MARIONETTE_PERK_EFFECT: "Вы можете получить [Concept('strong_hook', 'сильное влияние')|E] на цель, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Заставляет тело цели двигаться и действовать так, как вы хотите#!"
 
  control_fog_perk_name: "Управление туманом"
  control_rain_perk_name: "Управление дождём"
@@ -136,8 +136,8 @@
  control_lightning_perk_name: "Управление молнией"
 
  CONTROL_FOG_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат модификатор [GetModifier('control_fog_modifier').GetNameWithTooltip].\n#weak Управление туманом#!"
- CONTROL_RAIN_PERK_EFFECT: "Вы можете наложить модификатор [GetModifier('control_rain_modifier').GetNameWithTooltip] в вашей текущей локации, применив это #L $pod_bs_spell|l$ие#!.\n#weak Управление дождём#!"
- CONTROL_WIND_PERK_EFFECT: "Улучшает модификатор достоинства [GetPerk('control_fog_perk').GetName(GetPlayer)] до [GetModifier('control_wind_modifier').GetNameWithTooltip].\nУлучшает модификатор #L $pod_bs_spell|l$ия#! достоинства [GetPerk('control_rain_perk').GetName(GetPlayer)] до [GetModifier('control_rain_2_modifier').GetNameWithTooltip].\n#weak Управление ветром#!"
+ CONTROL_RAIN_PERK_EFFECT: "Вы можете наложить модификатор [GetModifier('control_rain_modifier').GetNameWithTooltip] в вашей текущей локации, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Управление дождём#!"
+ CONTROL_WIND_PERK_EFFECT: "Улучшает модификатор достоинства [GetPerk('control_fog_perk').GetName(GetPlayer)] до [GetModifier('control_wind_modifier').GetNameWithTooltip].\nУлучшает модификатор #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! достоинства [GetPerk('control_rain_perk').GetName(GetPlayer)] до [GetModifier('control_rain_2_modifier').GetNameWithTooltip].\n#weak Управление ветром#!"
  CONTROL_STORM_PERK_EFFECT: "Улучшает модификатор [GetModifier('control_wind_modifier').GetNameWithTooltip] до [GetModifier('control_storm_modifier').GetNameWithTooltip].\n#weak Управление бурей#!"
  CONTROL_LIGHTNING_PERK_EFFECT: "#weak Управление молнией#!"
 
@@ -159,10 +159,10 @@
  bs_theft_of_vitae_perk_name: "Кража витэ"
  bs_cauldron_of_blood_perk_name: "Котёл крови"
 
- BS_A_TASTE_FOR_BLOOD_PERK_EFFECT: "Вы можете узнать, является ли ваша цель [Glossary('диаблеристом','game_concept_diablerie_desc')], применив это #L $pod_bs_spell|l$ие#!.\n#weak Получение разнообразной информации из образца крови#!"
- BLOOD_RAGE_PERK_EFFECT: "Вы можете заставить вашу цель использовать вливание крови, применив это #L $pod_bs_spell|l$ие#!.\n#weak Принуждение цели тратить свою витэ для повышения атрибутов#!"
- BS_BLOOD_OF_POTENCY_PERK_EFFECT: "Вы можете временно повысить #TOOLTIP:game_concept_blood_potency_desc #E Сила крови#!#!, применив это #L $pod_bs_spell|l$ие#!.\n#weak Временно снижает ваше поколение#!"
- BS_THEFT_OF_VITAE_PERK_EFFECT: "Вы можете украсть витэ у другого вампира, применив это #L $pod_bs_spell|l$ие#!.\n#weak Кража крови у цели на расстоянии#!"
+ BS_A_TASTE_FOR_BLOOD_PERK_EFFECT: "Вы можете узнать, является ли ваша цель [Glossary('диаблеристом','game_concept_diablerie_desc')], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Получение разнообразной информации из образца крови#!"
+ BLOOD_RAGE_PERK_EFFECT: "Вы можете заставить вашу цель использовать вливание крови, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Принуждение цели тратить свою витэ для повышения атрибутов#!"
+ BS_BLOOD_OF_POTENCY_PERK_EFFECT: "Вы можете временно повысить #TOOLTIP:game_concept_blood_potency_desc #E Сила крови#!#!, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Временно снижает ваше поколение#!"
+ BS_THEFT_OF_VITAE_PERK_EFFECT: "Вы можете украсть витэ у другого вампира, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Кража крови у цели на расстоянии#!"
  BS_CAULDRON_OF_BLOOD_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат модификатор [GetModifier('cauldron_of_blood_modifier').GetNameWithTooltip].\n#weak Заставляет кровь жертвы сжигать ее изнутри#!"
 
  eyes_of_the_sea_perk_name: "Глаза моря"
@@ -172,10 +172,10 @@
  dehydrate_perk_name: "Обезвоживание"
 
  EYES_OF_THE_SEA_PERK_EFFECT: "#weak Узнайте, что происходит на, в или вокруг неподвижного водоема#!"
- PRISON_OF_WATER_PERK_EFFECT: "Позволяет заключить в темницу вашу цель в той же локации, применив это #L $pod_bs_spell|l$ие#!.\n#weak Использование большого водоема для связывания цели#!"
- BLOOD_TO_WATER_PERK_EFFECT: "Позволяет повысить #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#! вампира на 3 ед., применив это #L $pod_bs_spell|l$ие#!. Накладывает модификатор [GetModifier('majorbloodloss_modifier').GetNameWithTooltip] на не-вампира.\n#weak Превращение крови субъекта (или другой жидкости) в воду#!"
- FLOWING_WALL_PERK_EFFECT: "Увеличивает шанс успеха #L $pod_bs_spell|l$ия#! [GetPerk('prison_of_water_perk').GetName(GetPlayer)].\n#weak Создание водного барьера, почти непроницаемого для всех существ#!"
- DEHYDRATE_PERK_EFFECT: "#L $pod_bs_spell$ие#! [GetPerk('blood_to_water_perk').GetName(GetPlayer)] теперь повышает #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#! на 5 ед., или накладывает модификатор [GetModifier('catastrophicbloodloss_modifier').GetNameWithTooltip] на не-вампиров.\n#weak Удаленный отвод воды от жертвы#!"
+ PRISON_OF_WATER_PERK_EFFECT: "Позволяет заключить в темницу вашу цель в той же локации, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Использование большого водоема для связывания цели#!"
+ BLOOD_TO_WATER_PERK_EFFECT: "Позволяет повысить #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#! вампира на 3 ед., применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!. Накладывает модификатор [GetModifier('majorbloodloss_modifier').GetNameWithTooltip] на не-вампира.\n#weak Превращение крови субъекта (или другой жидкости) в воду#!"
+ FLOWING_WALL_PERK_EFFECT: "Увеличивает шанс успеха #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! [GetPerk('prison_of_water_perk').GetName(GetPlayer)].\n#weak Создание водного барьера, почти непроницаемого для всех существ#!"
+ DEHYDRATE_PERK_EFFECT: "#TOOLTIP:game_concept_bloodmagic_spell_desc #E Заклинание#!#! [GetPerk('blood_to_water_perk').GetName(GetPlayer)] теперь повышает #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#! на 5 ед., или накладывает модификатор [GetModifier('catastrophicbloodloss_modifier').GetNameWithTooltip] на не-вампиров.\n#weak Удаленный отвод воды от жертвы#!"
 
  simple_nectar_perk_name: "Простой нектар"
  nectar_perk_name: "Нектар"
@@ -183,11 +183,11 @@
  high_nectar_perk_name: "Высший нектар"
  ungodly_nectar_perk_name: "Нечестивый нектар"
 
- SIMPLE_NECTAR_PERK_EFFECT: "Вы можете заставить цель выучить ваши достоинства [Glossary('дисциплины','game_concept_discipline_desc')] до 1 точки, применив это #L $pod_bs_spell|l$ие#!.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего одним уровнем дисциплины или пути#!"
- NECTAR_PERK_EFFECT: "Улучшает эффект #L $pod_bs_spell|l$ия#! [GetPerk('simple_nectar_perk').GetName(GetPlayer)] до 2 точек.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего двумя уровнями дисциплины или пути#!"
- COMPLEX_NECTAR_PERK_EFFECT: "Улучшает эффект #L $pod_bs_spell|l$ия#! [GetPerk('nectar_perk').GetName(GetPlayer)] до 3 точек.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего тремя уровнями дисциплины или пути#!"
- HIGH_NECTAR_PERK_EFFECT: "Улучшает эффект #L $pod_bs_spell|l$ия#! [GetPerk('complex_nectar_perk').GetName(GetPlayer)] до 4 точек.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего четырмя уровнями дисциплины или пути#!"
- UNGODLY_NECTAR_PERK_EFFECT: "Улучшает эффект #L $pod_bs_spell|l$ия#! [GetPerk('high_nectar_perk').GetName(GetPlayer)] до 5 точек.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего пятью уровнями дисциплины или пути#!"
+ SIMPLE_NECTAR_PERK_EFFECT: "Вы можете заставить цель выучить ваши достоинства [Glossary('дисциплины','game_concept_discipline_desc')] до 1 точки, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего одним уровнем дисциплины или пути#!"
+ NECTAR_PERK_EFFECT: "Улучшает эффект #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! [GetPerk('simple_nectar_perk').GetName(GetPlayer)] до 2 точек.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего двумя уровнями дисциплины или пути#!"
+ COMPLEX_NECTAR_PERK_EFFECT: "Улучшает эффект #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! [GetPerk('nectar_perk').GetName(GetPlayer)] до 3 точек.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего тремя уровнями дисциплины или пути#!"
+ HIGH_NECTAR_PERK_EFFECT: "Улучшает эффект #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! [GetPerk('complex_nectar_perk').GetName(GetPlayer)] до 4 точек.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего четырмя уровнями дисциплины или пути#!"
+ UNGODLY_NECTAR_PERK_EFFECT: "Улучшает эффект #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! [GetPerk('high_nectar_perk').GetName(GetPlayer)] до 5 точек.\n#weak Сварив зелье из собственной витэ, ракта-садху может наделить пьющего пятью уровнями дисциплины или пути#!"
 
  a_sending_of_serpents_perk_name: "Гнездо змей"
  darkness_of_duat_perk_name: "Тьма Дуата"
@@ -196,8 +196,8 @@
  consignment_to_duat_perk_name: "Отправка в Дуат"
 
  A_SENDING_OF_SERPENTS_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат модификатор [GetModifier('a_sending_of_serpents_modifier').GetNameWithTooltip].\n#weak Вызывает у цели галлюцинации, что на нее напали змеи.#!"
- DARKNESS_OF_DUAT_PERK_EFFECT: "Вы можете дать цели свойство [GetTrait('blind').GetName(GetPlayer)] на 5 лет, применив это #L $pod_bs_spell|l$ие#!.\n#weak Ослепляет субъекта.#!"
- SUFFOCATION_OF_THE_TOMB_PERK_EFFECT: "Вы можете дать цели модификатор [GetModifier('suffocation_of_the_tomb_modifier').GetNameWithTooltip] на 1 год, применив это #L $pod_bs_spell|l$ие#!.\n#weak Лишает жертву способности говорить и дышать.#!"
+ DARKNESS_OF_DUAT_PERK_EFFECT: "Вы можете дать цели свойство [GetTrait('blind').GetName(GetPlayer)] на 5 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Ослепляет субъекта.#!"
+ SUFFOCATION_OF_THE_TOMB_PERK_EFFECT: "Вы можете дать цели модификатор [GetModifier('suffocation_of_the_tomb_modifier').GetNameWithTooltip] на 1 год, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Лишает жертву способности говорить и дышать.#!"
  THE_NARROW_HOUSE_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат модификатор [GetModifier('the_narrow_house_modifier').GetNameWithTooltip]\n#weak Парализует цель.#!"
  CONSIGNMENT_TO_DUAT_PERK_EFFECT: "Вы можете убить не бессмертного персонажа или ввергнуть бессмертного персонажа в [GetTrait('torpor').GetName(GetPlayer)|l].\n#weak Убивает смертного или погружает вампира в торпор.#!"
 
@@ -208,8 +208,8 @@
  dark_invocation_perk_name: "Проклятие"
 
  WHISPERS_OF_THE_SANDS_PERK_EFFECT: "#weak Удаленное общение со своими детьми или гулями.#!"
- TONGUE_OF_THE_TEMPTER_PERK_EFFECT: "Вы можете раскрыть [Concept('secret', 'секрет')|E] цели, применив это #L $pod_bs_spell|l$ие#!.\n#weak Вызывает у субъекта тайный страх или желание.#!"
- VOICE_OF_THE_PROPHET_PERK_EFFECT: "Вы можете заставить цель улучшить мнение о вас и потерять [Concept('piety', 'благочестие')|E] и [Concept('prestige', 'престиж')|E], применив это #L $pod_bs_spell|l$ие#!.\n#weak Передача загадочного послания, которое затронет самые сокровенные желания слушателя.#!"
+ TONGUE_OF_THE_TEMPTER_PERK_EFFECT: "Вы можете раскрыть [Concept('secret', 'секрет')|E] цели, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Вызывает у субъекта тайный страх или желание.#!"
+ VOICE_OF_THE_PROPHET_PERK_EFFECT: "Вы можете заставить цель улучшить мнение о вас и потерять [Concept('piety', 'благочестие')|E] и [Concept('prestige', 'престиж')|E], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Передача загадочного послания, которое затронет самые сокровенные желания слушателя.#!"
  LORD_OF_STORMS_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат модификатор [GetModifier('lord_of_storms_modifier').GetNameWithTooltip]\n#weak Призыв песчаной или грозовой бури.#!"
  DARK_INVOCATION_PERK_EFFECT: "#weak Наложение защитного проклятия на предмет или место.#!"
 
@@ -219,11 +219,11 @@
  hope_dissolves_perk_name: "Смерть надежды"
  thrones_crumble_perk_name: "Падение престолов"
 
- BEAUTY_FADES_PERK_EFFECT: "Вы можете дать цели 50 [Concept('stress', 'стресса')|E], применив это #L $pod_bs_spell|l$ие#!.\n#weak Произведение искусства должно вызывать отвращение у тех, кто его рассматривает.#!"
- TRUST_WITHERS_PERK_EFFECT: "Вы можете заставить цель разорвать случайные [Concept('friend', 'дружеские')|E] отношения, или понизить [Concept('best_friend', 'лучшего друга')|E] до обычного [Concept('friend', 'друга')|E], применив это #L $pod_bs_spell|l$ие#!.\n#weak Цель начинает верить, что друг или союзник собирается его предать.#!"
- LOVE_DIES_PERK_EFFECT: "Вы можете заставить цель разорвать случайные [Concept('lover', 'любовные')|E] отношения, или понизить [Concept('soulmate', 'родственную душу')|E] до обычного любовника, применив это #L $pod_bs_spell|l$ие#!.\n#weak Уничтожение чувства любви субъекта к другому.#!"
- HOPE_DISSOLVES_PERK_EFFECT: "Повышает прирост [Concept('stress', 'стресса')|E] от #L $pod_bs_spell|l$ия#! [GetPerk('beauty_fades_perk').GetName(GetPlayer)] до 100.\n#weak Вызывает у субъекта депрессию и уверенность в том, что его цели не могут быть достигнуты.#!"
- THRONES_CRUMBLE_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('thrones_crumble_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#weak Вызывает недоверие и враждебность у субъекта по отношению к властному лицу.#!"
+ BEAUTY_FADES_PERK_EFFECT: "Вы можете дать цели 50 [Concept('stress', 'стресса')|E], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Произведение искусства должно вызывать отвращение у тех, кто его рассматривает.#!"
+ TRUST_WITHERS_PERK_EFFECT: "Вы можете заставить цель разорвать случайные [Concept('friend', 'дружеские')|E] отношения, или понизить [Concept('best_friend', 'лучшего друга')|E] до обычного [Concept('friend', 'друга')|E], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Цель начинает верить, что друг или союзник собирается его предать.#!"
+ LOVE_DIES_PERK_EFFECT: "Вы можете заставить цель разорвать случайные [Concept('lover', 'любовные')|E] отношения, или понизить [Concept('soulmate', 'родственную душу')|E] до обычного любовника, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Уничтожение чувства любви субъекта к другому.#!"
+ HOPE_DISSOLVES_PERK_EFFECT: "Повышает прирост [Concept('stress', 'стресса')|E] от #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! [GetPerk('beauty_fades_perk').GetName(GetPlayer)] до 100.\n#weak Вызывает у субъекта депрессию и уверенность в том, что его цели не могут быть достигнуты.#!"
+ THRONES_CRUMBLE_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('thrones_crumble_modifier').GetNameWithTooltip], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Вызывает недоверие и враждебность у субъекта по отношению к властному лицу.#!"
 
  first_taste_perk_name: "Первая проба"
  cross_addiction_perk_name: "Слияние пристрастий"
@@ -231,11 +231,11 @@
  fatal_compulsion_perk_name: "Гибельное побуждение"
  temperance_perk_name: "Темперамент"
 
- FIRST_TASTE_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('first_taste_modifier').GetNameWithTooltip] на 20 лет, применив это #L $pod_bs_spell|l$ие#!.\n#weak Создание приятной ассоциации с незначительным, повторяющимся действием.#!"
- CROSS_ADDICTION_PERK_EFFECT: "Повышает шанс успеха #L $pod_bs_spell|l$ия#! [GetPerk('first_taste_perk').GetName(GetPlayer)].\n#weak Кратковременное изменение того, на чем зациклен зависимый.#!"
- THE_JONES_PERK_EFFECT: "Вы можете заставить цель, на которую воздействует модификатор [GetModifier('first_taste_modifier').GetNameWithTooltip], потерять [Concept('piety', 'благочестие')|E] и [Concept('prestige', 'престиж')|E], применив это #L $pod_bs_spell|l$ие#!.\n#weak Remove a subject's inhibitions from indulging their addiction.#!"
- FATAL_COMPULSION_PERK_EFFECT: "Вы можете заменить у цели модификатор [GetModifier('first_taste_modifier').GetNameWithTooltip] на [GetModifier('fatal_compulsion_modifier').GetNameWithTooltip] на 5 лет, применив это #L $pod_bs_spell|l$ие#!.\n#weak Причинение объекту вреда от отказа от пристрастия.#!"
- TEMPERANCE_PERK_EFFECT: "Вы можете наделить цель, подверженную модификатору [GetModifier('first_taste_modifier').GetNameWithTooltip], получить свойство «[GetTrait('depressed_1').GetName(GetPlayer)]», применив это #L $pod_bs_spell|l$ие#!.\n#weak Лишает субъекта возможности получать удовольствие от своего пристрастия.#!"
+ FIRST_TASTE_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('first_taste_modifier').GetNameWithTooltip] на 20 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Создание приятной ассоциации с незначительным, повторяющимся действием.#!"
+ CROSS_ADDICTION_PERK_EFFECT: "Повышает шанс успеха #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! [GetPerk('first_taste_perk').GetName(GetPlayer)].\n#weak Кратковременное изменение того, на чем зациклен зависимый.#!"
+ THE_JONES_PERK_EFFECT: "Вы можете заставить цель, на которую воздействует модификатор [GetModifier('first_taste_modifier').GetNameWithTooltip], потерять [Concept('piety', 'благочестие')|E] и [Concept('prestige', 'престиж')|E], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Remove a subject's inhibitions from indulging their addiction.#!"
+ FATAL_COMPULSION_PERK_EFFECT: "Вы можете заменить у цели модификатор [GetModifier('first_taste_modifier').GetNameWithTooltip] на [GetModifier('fatal_compulsion_modifier').GetNameWithTooltip] на 5 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Причинение объекту вреда от отказа от пристрастия.#!"
+ TEMPERANCE_PERK_EFFECT: "Вы можете наделить цель, подверженную модификатору [GetModifier('first_taste_modifier').GetNameWithTooltip], получить свойство «[GetTrait('depressed_1').GetName(GetPlayer)]», применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Лишает субъекта возможности получать удовольствие от своего пристрастия.#!"
 
  burebistas_throne_perk_name: "Трон Буребисты"
  pietrosus_hospitality_perk_name: "Гостеприимство Петроса"
@@ -247,7 +247,7 @@
  PIETROSUS_HOSPITALITY_PERK_EFFECT: "#weak Вокруг колдуна поднимается мощный холодный ветер, который, однако, делает его невосприимчивым к холоду и силе ветра.#!"
  THE_BANKS_OF_THE_BASCA_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат модификатор [GetModifier('the_banks_of_the_basca_modifier').GetNameWithTooltip].\n#weak Усиливает поток текущей воды, заставляя ее вздыматься и устремляться вперед, создавая наводнение с магической жизнью.#!"
  KUPALAS_EXHALATION_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат модификатор [GetModifier('kupalas_exhalation_modifier').GetNameWithTooltip].\n#weak Вызывает из земли смертельно холодные (но легко воспламеняющиеся) газы.#!"
- RESTLESS_MEDIAS_PERK_EFFECT: "Вы можете наложить на свою текущую локацию модификатор [GetModifier('weather_magic_earthquake_modifier').GetNameWithTooltip] на 20 лет, применив это #L $pod_bs_spell|l$ие#!.\n#weak Усилием воли колдун может вызвать землетрясение.#!"
+ RESTLESS_MEDIAS_PERK_EFFECT: "Вы можете наложить на свою текущую локацию модификатор [GetModifier('weather_magic_earthquake_modifier').GetNameWithTooltip] на 20 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Усилием воли колдун может вызвать землетрясение.#!"
 
  danubian_voices_perk_name: "Голоса Дуная"
  grave_of_the_marea_neagra_perk_name: "Могила Марэ Негра"
@@ -257,8 +257,8 @@
 
  DANUBIAN_VOICES_PERK_EFFECT: "#weak Вызывает речного духа, который может разговаривать с колдуном, делясь с ним всем, что знает, или выступать в роли посланника.#!"
  GRAVE_OF_THE_MAREA_NEAGRA_PERK_EFFECT: "#weak Наделяет водоем защитными свойствами от солнечного света, естественного разрушения и обнаружения.#!"
- PONTOS_EUXEINOS_PERK_EFFECT: "Вы можете удалить все непостоянные раны и другие похожие свойства, применив это #L $pod_bs_spell|l$ие#!.\n#weak Колдун может погрузиться в достаточно большой водоем, чтобы залечить свои раны.#!"
- MINIONS_OF_DEEP_MARMORA_PERK_EFFECT: "Вы можете создать армию монстров-[Concept('men_at_arms', 'профессионалов')|E], применив это #L $pod_bs_spell|l$ие#!.\n#weak Выплеснув свою кровь на поверхность воды, колдун может вызвать странных человекоподобных существ, сочетающих в себе черты лягушки и рыбы, чтобы они выполнили для него одну задачу.#!"
+ PONTOS_EUXEINOS_PERK_EFFECT: "Вы можете удалить все непостоянные раны и другие похожие свойства, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Колдун может погрузиться в достаточно большой водоем, чтобы залечить свои раны.#!"
+ MINIONS_OF_DEEP_MARMORA_PERK_EFFECT: "Вы можете создать армию монстров-[Concept('men_at_arms', 'профессионалов')|E], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Выплеснув свою кровь на поверхность воды, колдун может вызвать странных человекоподобных существ, сочетающих в себе черты лягушки и рыбы, чтобы они выполнили для него одну задачу.#!"
  PONTOS_AXEINOS_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат модификатор [GetModifier('pontos_axeinos_modifier').GetNameWithTooltip].\n#weak Капнув своей кровью в большой водоем, колдун может вызвать бури, водовороты, туманы и скалистые баррикады там, где их не было мгновение назад.#!"
 
  domain_breach_perk_name: "Нарушение границ"
@@ -280,12 +280,12 @@
  heave_the_host_of_hell_perk_name: "Изгнание адского сонма"
  reap_the_well_perk_name: "Жатва Колодца"
 
- CALL_THE_CHILDREN_PERK_EFFECT: "Вы можете получить модификатор [GetModifier('demonic_knowledge_1_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#weak Вызывает демонов, сила которых зависит от уровня крайны. Демон не имеет физического тела и не может существовать вне ритуально подготовленного пространства.#!"
- HEED_THE_HELL_BOUND_HEART_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! [GetPerk('call_the_children_perk').GetName(GetPlayer)] до [GetModifier('demonic_knowledge_2_modifier').GetNameWithTooltip].\n#weak Позволяет колдуну чувствовать любые следы демонического влияния, если пить из его колодца.#!"
- AEGIS_ALIGHIERI_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! [GetPerk('heed_the_hell_bound_heart_perk').GetName(GetPlayer)] до [GetModifier('demonic_knowledge_3_modifier').GetNameWithTooltip].\n#weak Защищает колдуна от нападений демонических сущностей с помощью амулета, пропитанного его собственной кровью.#!"
- HEAVE_THE_HOST_OF_HELL_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! [GetPerk('aegis_alighieri_perk').GetName(GetPlayer)] до [GetModifier('demonic_knowledge_4_modifier').GetNameWithTooltip].\n#weak Рассеивает любые следы инфернального воздействия в пределах владений колдуна.#!"
+ CALL_THE_CHILDREN_PERK_EFFECT: "Вы можете получить модификатор [GetModifier('demonic_knowledge_1_modifier').GetNameWithTooltip], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Вызывает демонов, сила которых зависит от уровня крайны. Демон не имеет физического тела и не может существовать вне ритуально подготовленного пространства.#!"
+ HEED_THE_HELL_BOUND_HEART_PERK_EFFECT: "Улучшает модификатор #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! [GetPerk('call_the_children_perk').GetName(GetPlayer)] до [GetModifier('demonic_knowledge_2_modifier').GetNameWithTooltip].\n#weak Позволяет колдуну чувствовать любые следы демонического влияния, если пить из его колодца.#!"
+ AEGIS_ALIGHIERI_PERK_EFFECT: "Улучшает модификатор #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! [GetPerk('heed_the_hell_bound_heart_perk').GetName(GetPlayer)] до [GetModifier('demonic_knowledge_3_modifier').GetNameWithTooltip].\n#weak Защищает колдуна от нападений демонических сущностей с помощью амулета, пропитанного его собственной кровью.#!"
+ HEAVE_THE_HOST_OF_HELL_PERK_EFFECT: "Улучшает модификатор #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! [GetPerk('aegis_alighieri_perk').GetName(GetPlayer)] до [GetModifier('demonic_knowledge_4_modifier').GetNameWithTooltip].\n#weak Рассеивает любые следы инфернального воздействия в пределах владений колдуна.#!"
  #\nAs a spell, send [GetTrait('demon').GetName(GetPlayer)] to the [UmbraGlossary('abyss')] if the caster has more learning and prowess than the target.
- REAP_THE_WELL_PERK_EFFECT: "Улучшает модификатор #L $pod_bs_spell|l$ия#! [GetPerk('heave_the_host_of_hell_perk').GetName(GetPlayer)] до [GetModifier('demonic_knowledge_5_modifier').GetNameWithTooltip].\nВы можете узнать истинное имя демонов и связать их.\n#weak Позволяет колдуну поработить демоническую сущность.#!"
+ REAP_THE_WELL_PERK_EFFECT: "Улучшает модификатор #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! [GetPerk('heave_the_host_of_hell_perk').GetName(GetPlayer)] до [GetModifier('demonic_knowledge_5_modifier').GetNameWithTooltip].\nВы можете узнать истинное имя демонов и связать их.\n#weak Позволяет колдуну поработить демоническую сущность.#!"
 
  shroud_of_oblivion_perk_name: "Саван Забвения"
  spectral_cloak_perk_name: "Призрачная накидка"
@@ -295,9 +295,9 @@
 
  SHROUD_OF_OBLIVION_PERK_EFFECT: "#weak Сбросив свою кожу, колдун может облачиться в портативную часть Савана, уменьшая опасность солнечного света.#!"
  SPECTRAL_CLOAK_PERK_EFFECT: "Можно взаимодействовать с персонажами по ту сторону Савана.\n#weak Прячет колдуна в Загробном мире, делая его невидимым для тех, кто не может видеть призраков.#!"
- POND_OF_MALEVOLENT_DREAD_PERK_EFFECT: "Вы можете призвать армию спектров, заклинатель получит ранение, применив это #L $pod_bs_spell|l$ие#!.\n#weak Нанеся себе рану, колдун может направить глубины Моря Теней в кольцо воющих призраков, чтобы те схватили любого, кто попадется им под руку.#!"
- WRATH_OF_THE_TEMPEST_PERK_EFFECT: "Вы можете наложить на вашу текущую локацию модификатор [GetModifier('mass_harrowing_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#weak Позволяет колдуну принести частичку Бури в живой мир, вызывая сильный шторм, который повергает в ужас всех, кто оказался в ловушке Страдания.#!"
- HUNGER_OF_THE_VOID_PERK_EFFECT: "Вы можете наложить на вашу текущую локацию модификатор [GetModifier('bs_nihil_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!, получив 200 [Concept('stress', 'стресса')|E] в процессе.\n#weak Вырвав собственную душу и безжалостно терзая ее, колдун превращает ее в нихиль, который засасывает в себя все, что находится поблизости.#!"
+ POND_OF_MALEVOLENT_DREAD_PERK_EFFECT: "Вы можете призвать армию спектров, заклинатель получит ранение, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Нанеся себе рану, колдун может направить глубины Моря Теней в кольцо воющих призраков, чтобы те схватили любого, кто попадется им под руку.#!"
+ WRATH_OF_THE_TEMPEST_PERK_EFFECT: "Вы можете наложить на вашу текущую локацию модификатор [GetModifier('mass_harrowing_modifier').GetNameWithTooltip], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Позволяет колдуну принести частичку Бури в живой мир, вызывая сильный шторм, который повергает в ужас всех, кто оказался в ловушке Страдания.#!"
+ HUNGER_OF_THE_VOID_PERK_EFFECT: "Вы можете наложить на вашу текущую локацию модификатор [GetModifier('bs_nihil_modifier').GetNameWithTooltip], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!, получив 200 [Concept('stress', 'стресса')|E] в процессе.\n#weak Вырвав собственную душу и безжалостно терзая ее, колдун превращает ее в нихиль, который засасывает в себя все, что находится поблизости.#!"
 
  genius_loci_1_perk_name: "Низший дух места"
  genius_loci_2_perk_name: "Младший дух места"
@@ -305,11 +305,11 @@
  genius_loci_4_perk_name: "Старший дух места"
  genius_loci_5_perk_name: "Высший дух места"
 
- GENIUS_LOCI_1_PERK_EFFECT: "Повышает шанс успеха всех #L $pod_bs_spells|l$ий#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе пятидесяти футов/пятнадцати метров.#!"
- GENIUS_LOCI_2_PERK_EFFECT: "Повышает шанс успеха всех #L $pod_bs_spells|l$ий#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе ста ярдов/девяноста метров.#!"
- GENIUS_LOCI_3_PERK_EFFECT: "Повышает шанс успеха всех #L $pod_bs_spells|l$ий#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе четверти мили/полукилометра.#!"
- GENIUS_LOCI_4_PERK_EFFECT: "Повышает шанс успеха всех #L $pod_bs_spells|l$ий#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе одной мили/1.5 км.#!"
- GENIUS_LOCI_5_PERK_EFFECT: "Повышает шанс успеха всех #L $pod_bs_spells|l$ий#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе пяти миль/восьми километров.#!"
+ GENIUS_LOCI_1_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе пятидесяти футов/пятнадцати метров.#!"
+ GENIUS_LOCI_2_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе ста ярдов/девяноста метров.#!"
+ GENIUS_LOCI_3_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе четверти мили/полукилометра.#!"
+ GENIUS_LOCI_4_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе одной мили/1.5 км.#!"
+ GENIUS_LOCI_5_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе пяти миль/восьми километров.#!"
 
  confer_with_the_blade_perk_name: "Разговор с клинком"
  grasp_of_the_mountain_perk_name: "Хватка горы"
@@ -317,7 +317,7 @@
  razors_shield_perk_name: "Бритвенный щит"
  strike_at_the_true_flesh_perk_name: "Удар в истинную плоть"
 
- CONFER_WITH_THE_BLADE_PERK_EFFECT: "Вы можете получить модификатор опыта [Concept('lifestyle', 'пути')|E], основанный на редкости вашего текущего оружия, применив это #L $pod_bs_spell|l$ие#!.\n#weak Просматривайте события и информацию, которые происходили вокруг оружия.#!"
+ CONFER_WITH_THE_BLADE_PERK_EFFECT: "Вы можете получить модификатор опыта [Concept('lifestyle', 'пути')|E], основанный на редкости вашего текущего оружия, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Просматривайте события и информацию, которые происходили вокруг оружия.#!"
  GRASP_OF_THE_MOUNTAIN_PERK_EFFECT: "#weak Мистическим образом усиливает хватку вашего оружия.#!"
  PIERCE_STEELS_SKIN_PERK_EFFECT: "#weak Направляет оружие на уничтожение всех защитных мер противника.#!"
  RAZORS_SHIELD_PERK_EFFECT: "#weak Позволяет отражать снаряды.#!"
@@ -329,10 +329,10 @@
  nergals_wrath_perk_name: "Гнев Нергала"
  ill_wind_perk_name: "Зловещий ветер"
 
- MASKIMS_TOUCH_PERK_EFFECT: "Вы можете наделить цель свойством «[GetTrait('ill').GetName(GetPlayer)]», применив это #L $pod_bs_spell|l$ие#!.\n#weak Вызывает симптомы гриппа у цели#!"
- BREATH_OF_ERESHKIGAL_PERK_EFFECT: "Вы можете заразить цель случайной не сверхъестественной хворью, применив это #L $pod_bs_spell|l$ие#!.\n#weak Дыхание на цель, вызывающее легкую болезнь#!"
- NERGALS_BLESSING_PERK_EFFECT: "Вы можете вылечить цель от хвори, применив это #L $pod_bs_spell|l$ие#!.\n#weak Уменьшение симптомов патогенного заболевания#!"
- NERGALS_WRATH_PERK_EFFECT: "Вы можете заразить цель более серьёзной не сверхъестественной хворью, применив это #L $pod_bs_spell|l$ие#!.\n#weak Наложить на цель выбранную болезнь#!"
+ MASKIMS_TOUCH_PERK_EFFECT: "Вы можете наделить цель свойством «[GetTrait('ill').GetName(GetPlayer)]», применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Вызывает симптомы гриппа у цели#!"
+ BREATH_OF_ERESHKIGAL_PERK_EFFECT: "Вы можете заразить цель случайной не сверхъестественной хворью, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Дыхание на цель, вызывающее легкую болезнь#!"
+ NERGALS_BLESSING_PERK_EFFECT: "Вы можете вылечить цель от хвори, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Уменьшение симптомов патогенного заболевания#!"
+ NERGALS_WRATH_PERK_EFFECT: "Вы можете заразить цель более серьёзной не сверхъестественной хворью, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#weak Наложить на цель выбранную болезнь#!"
  ILL_WIND_PERK_EFFECT: "При наложении заклинания [GetPerk('nergals_wrath_perk').GetName(GetPlayer)] на себе вызывает поветрие в текущей локации.\n#weak Распространение болезни просто благодаря вашему присутствию поблизости#!"
 
  abyssal_mysticism_level_1_perk_name: "Мистицизм Бездны 1"
@@ -341,11 +341,11 @@
  abyssal_mysticism_level_4_perk_name: "Мистицизм Бездны 4"
  abyssal_mysticism_level_5_perk_name: "Мистицизм Бездны 5"
 
- ABYSSAL_MYSTICISM_LEVEL_1_PERK_EFFECT: "#X @warning_icon! Чтобы получить это [Concept('perk', 'достоинство')|E], вы должны пожертвовать уровнем #weak (рядом)#! дисциплины [GetTrait('obtenebration').GetName(GetNullCharacter)] через [Concept('decision', 'решение')|E]#!\nОткрывает #L $pod_bs_rituals|l$ы#! первого уровня мистицизма Бездны"
- ABYSSAL_MYSTICISM_LEVEL_2_PERK_EFFECT: "#X @warning_icon! Чтобы получить это [Concept('perk', 'достоинство')|E], вы должны пожертвовать уровнем #weak (рядом)#! дисциплины [GetTrait('obtenebration').GetName(GetNullCharacter)] через [Concept('decision', 'решение')|E]#!\nОткрывает #L $pod_bs_rituals|l$ы#! второго уровня мистицизма Бездны"
- ABYSSAL_MYSTICISM_LEVEL_3_PERK_EFFECT: "#X @warning_icon! Чтобы получить это [Concept('perk', 'достоинство')|E], вы должны пожертвовать уровнем #weak (рядом)#! дисциплины [GetTrait('obtenebration').GetName(GetNullCharacter)] через [Concept('decision', 'решение')|E]#!\nОткрывает #L $pod_bs_rituals|l$ы#! третьего уровня мистицизма Бездны"
- ABYSSAL_MYSTICISM_LEVEL_4_PERK_EFFECT: "#X @warning_icon! Чтобы получить это [Concept('perk', 'достоинство')|E], вы должны пожертвовать уровнем #weak (рядом)#! дисциплины [GetTrait('obtenebration').GetName(GetNullCharacter)] через [Concept('decision', 'решение')|E]#!\nОткрывает #L $pod_bs_rituals|l$ы#! четвёртого уровня мистицизма Бездны"
- ABYSSAL_MYSTICISM_LEVEL_5_PERK_EFFECT: "#X @warning_icon! Чтобы получить это [Concept('perk', 'достоинство')|E], вы должны пожертвовать уровнем #weak (рядом)#! дисциплины [GetTrait('obtenebration').GetName(GetNullCharacter)] через [Concept('decision', 'решение')|E]#!\nОткрывает #L $pod_bs_rituals|l$ы#! пятого уровня мистицизма Бездны"
+ ABYSSAL_MYSTICISM_LEVEL_1_PERK_EFFECT: "#X @warning_icon! Чтобы получить это [Concept('perk', 'достоинство')|E], вы должны пожертвовать уровнем #weak (рядом)#! дисциплины [GetTrait('obtenebration').GetName(GetNullCharacter)] через [Concept('decision', 'решение')|E]#!\nОткрывает #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуалы#!#! первого уровня мистицизма Бездны"
+ ABYSSAL_MYSTICISM_LEVEL_2_PERK_EFFECT: "#X @warning_icon! Чтобы получить это [Concept('perk', 'достоинство')|E], вы должны пожертвовать уровнем #weak (рядом)#! дисциплины [GetTrait('obtenebration').GetName(GetNullCharacter)] через [Concept('decision', 'решение')|E]#!\nОткрывает #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуалы#!#! второго уровня мистицизма Бездны"
+ ABYSSAL_MYSTICISM_LEVEL_3_PERK_EFFECT: "#X @warning_icon! Чтобы получить это [Concept('perk', 'достоинство')|E], вы должны пожертвовать уровнем #weak (рядом)#! дисциплины [GetTrait('obtenebration').GetName(GetNullCharacter)] через [Concept('decision', 'решение')|E]#!\nОткрывает #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуалы#!#! третьего уровня мистицизма Бездны"
+ ABYSSAL_MYSTICISM_LEVEL_4_PERK_EFFECT: "#X @warning_icon! Чтобы получить это [Concept('perk', 'достоинство')|E], вы должны пожертвовать уровнем #weak (рядом)#! дисциплины [GetTrait('obtenebration').GetName(GetNullCharacter)] через [Concept('decision', 'решение')|E]#!\nОткрывает #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуалы#!#! четвёртого уровня мистицизма Бездны"
+ ABYSSAL_MYSTICISM_LEVEL_5_PERK_EFFECT: "#X @warning_icon! Чтобы получить это [Concept('perk', 'достоинство')|E], вы должны пожертвовать уровнем #weak (рядом)#! дисциплины [GetTrait('obtenebration').GetName(GetNullCharacter)] через [Concept('decision', 'решение')|E]#!\nОткрывает #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуалы#!#! пятого уровня мистицизма Бездны"
 
  threads_of_the_past_perk_name: "Нити прошлого"
  weave_of_the_future_perk_name: "Ткань будущего"
@@ -353,11 +353,11 @@
  past_lives_perk_name: "Прошлые жизни"
  master_of_samsara_perk_name: "Мастер Самсары"
  
- THREADS_OF_THE_PAST_PERK_EFFECT: "Позволяет раскрыть случайный секрет цели, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Получить видение из прошлого цели#!"
- WEAVE_OF_THE_FUTURE_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('weave_of_the_future_modifier').GetNameWithTooltip] на 5 лет, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Получить предзнаменования грядущих событий#!"
- CERTAIN_FATE_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('certain_fate_modifier').GetNameWithTooltip] на 5 лет, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Получить определённое видение грядущего события#!"
- PAST_LIVES_PERK_EFFECT: "Вы можете наделить цель [Concept('modifier', 'модификатором')|E], дающим +4 к случайному [Concept('skill', 'навыку')|E] ([GetModifier('past_lives_diplomacy_modifier').GetNameWithTooltip]) на 10 лет, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Получить умеренно подробную биографию вашего предыдущего воплощения#!"
- MASTER_OF_SAMSARA_PERK_EFFECT: "Вы можете улучшить случайный [Concept('skill', 'навык')|E] на 1 ценой постоянного [Concept('modifier', 'модификатора')|E] ([GetModifier('master_of_samsara_penality_modifier').GetNameWithTooltip]), применив это #L $pod_bs_spell|l$ие#!.\nВаш убийца получит модификатор [GetModifier('master_of_samsara_modifier').GetNameWithTooltip] на 50 лет.\n#flavor Получить ограниченную власть над будущим воплощением цели#!"
+ THREADS_OF_THE_PAST_PERK_EFFECT: "Позволяет раскрыть случайный секрет цели, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Получить видение из прошлого цели#!"
+ WEAVE_OF_THE_FUTURE_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('weave_of_the_future_modifier').GetNameWithTooltip] на 5 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Получить предзнаменования грядущих событий#!"
+ CERTAIN_FATE_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('certain_fate_modifier').GetNameWithTooltip] на 5 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Получить определённое видение грядущего события#!"
+ PAST_LIVES_PERK_EFFECT: "Вы можете наделить цель [Concept('modifier', 'модификатором')|E], дающим +4 к случайному [Concept('skill', 'навыку')|E] ([GetModifier('past_lives_diplomacy_modifier').GetNameWithTooltip]) на 10 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Получить умеренно подробную биографию вашего предыдущего воплощения#!"
+ MASTER_OF_SAMSARA_PERK_EFFECT: "Вы можете улучшить случайный [Concept('skill', 'навык')|E] на 1 ценой постоянного [Concept('modifier', 'модификатора')|E] ([GetModifier('master_of_samsara_penality_modifier').GetNameWithTooltip]), применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\nВаш убийца получит модификатор [GetModifier('master_of_samsara_modifier').GetNameWithTooltip] на 50 лет.\n#flavor Получить ограниченную власть над будущим воплощением цели#!"
 
  hand_of_ptah_perk_name: "Длань Пта"
  hand_of_khnum_perk_name: "Длань Хнума"
@@ -365,7 +365,7 @@
  hand_of_thoth_perk_name: "Длань Анубиса"
  hand_of_heka_perk_name: "Длань Хеки"
 
- HAND_OF_PTAH_PERK_EFFECT: "Вы можете повредить случайный [artifact|El] цели, применив это #L $pod_bs_spell|l$ие#!. Если накладывается на себя, чинит артефакт.\n#flavor Повредить или починить объект весом 90 кг или менее на расстоянии#!"
+ HAND_OF_PTAH_PERK_EFFECT: "Вы можете повредить случайный [artifact|El] цели, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!. Если накладывается на себя, чинит артефакт.\n#flavor Повредить или починить объект весом 90 кг или менее на расстоянии#!"
  HAND_OF_KHNUM_PERK_EFFECT: "Вы можете наделить #TOOLTIP:GAME_TRAIT,mortal,[GetNullCharacter] #L смертную#!#! цель свойством «[GetTrait('maimed').GetName(GetNullCharacter)]» или «[GetTrait('wounded_3').GetName(GetNullCharacter)]».\n#flavor Повредить или починить животное, смертного или предмет весом 453 кг или менее на расстоянии#!"
  HAND_OF_ANUBIS_PERK_EFFECT: "Улучшает достоинство «[GetPerk('hand_of_khnum_perk').GetName(GetPlayer)]», позволяя выбирать целью виды, обладающие материальными телами.\n#flavor Повредить или починить телесное сверхъестественное существо или предмет весом не более 2 тонн на расстоянии#!"
  HAND_OF_THOTH_PERK_EFFECT: "Улучшает достоинство «[GetPerk('hand_of_khnum_perk').GetName(GetPlayer)]», снимая ограничения [Concept('character', 'персонажей')|E]\n#flavor Повредить или починить бесплотное сверхъестественное существо или предмет весом не более 9 тонн на расстоянии#!"
@@ -377,10 +377,10 @@
  enemy_perk_name: "Враг"
  the_eye_that_wounds_perk_name: "Калечащий глаз"
 
- HUMILIATION_PERK_EFFECT: "Позволяет наделить цель модификатором [GetModifier('humiliation_modifier').GetNameWithTooltip] на 5 лет, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Вызвать у жертвы невезение в следующем действии#!"
- LOSS_PERK_EFFECT: "Вы можете уничтожить случайный не уникальный [Concept('artifact', 'артефакт')|E] цели, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Вызывает у жертвы потерю ценного имущества#!"
- PERIL_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('peril_modifier').GetNameWithTooltip] на 5 лет, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Вызвать у жертвы опасный несчастный случай#!"
- ENEMY_PERK_EFFECT: "Вы можете заставить случайного соседнего правителя/члена совета/придворного стать [Concept('rival', 'соперником')|E] цели, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Заставляет жертву потерять союзников#!"
+ HUMILIATION_PERK_EFFECT: "Позволяет наделить цель модификатором [GetModifier('humiliation_modifier').GetNameWithTooltip] на 5 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Вызвать у жертвы невезение в следующем действии#!"
+ LOSS_PERK_EFFECT: "Вы можете уничтожить случайный не уникальный [Concept('artifact', 'артефакт')|E] цели, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Вызывает у жертвы потерю ценного имущества#!"
+ PERIL_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('peril_modifier').GetNameWithTooltip] на 5 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Вызвать у жертвы опасный несчастный случай#!"
+ ENEMY_PERK_EFFECT: "Вы можете заставить случайного соседнего правителя/члена совета/придворного стать [Concept('rival', 'соперником')|E] цели, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Заставляет жертву потерять союзников#!"
  THE_EYE_THAT_WOUNDS_PERK_EFFECT: "#flavor Нанесение урона цели#!"
 
  ravages_of_the_beast_perk_name: "Неистовство Зверя"
@@ -389,10 +389,10 @@
  treacherous_bonds_perk_name: "Предательские узы"
  the_withering_of_ages_perk_name: "Слабость веков"
 
- RAVAGES_OF_THE_BEAST_PERK_EFFECT: "Вы можете вызвать у цели-вампира неистовство, если это возможно, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Вызывает у цели неистовство#!"
- WEIGHT_OF_THE_SUN_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('weight_of_the_sun_modifier').GetNameWithTooltip] на 2 года, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Заставляет вампира почувствовать эффект бодрствования в течение дня#!"
- ABATED_TOOTH_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('abated_tooth_modifier').GetNameWithTooltip] на 3 года, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Предотвращает выдвижение клыков вампира#!"
- TREACHEROUS_BONDS_PERK_EFFECT: "Вы можете заставить одного случайного гуля цели ненавидеть её, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Временно разрушает кровные узы, превращая любовь в ненависть#!"
+ RAVAGES_OF_THE_BEAST_PERK_EFFECT: "Вы можете вызвать у цели-вампира неистовство, если это возможно, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Вызывает у цели неистовство#!"
+ WEIGHT_OF_THE_SUN_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('weight_of_the_sun_modifier').GetNameWithTooltip] на 2 года, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Заставляет вампира почувствовать эффект бодрствования в течение дня#!"
+ ABATED_TOOTH_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('abated_tooth_modifier').GetNameWithTooltip] на 3 года, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Предотвращает выдвижение клыков вампира#!"
+ TREACHEROUS_BONDS_PERK_EFFECT: "Вы можете заставить одного случайного гуля цели ненавидеть её, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Временно разрушает кровные узы, превращая любовь в ненависть#!"
  THE_WITHERING_OF_AGES_PERK_EFFECT: "Вы можете наделить цель [Concept('modifier', 'модификатором')|E], снижающим её [Concept('prowess', 'доблесть')|E] за каждые 10 лет жизни (продолжительность 2 года).\n#flavor Заставляет вампира разложиться до своего истинного возраста#!"
 
  force_bolt_perk_name: "Силовой снаряд"
@@ -426,8 +426,8 @@
  the_sorcery_of_life_perk_name: "Чародейство жизни"
 
  SIGHT_OF_THE_JACKAL_PERK_EFFECT: "Можно взаимодействовать с персонажами по ту сторону Барьера.\n#flavor Осознание присутствия призраков#!"
- WEIGH_THE_VIRTUES_PERK_EFFECT: "Вы можете наделить пленённую цель-призрака модификатором [GetModifier('weigh_the_virtues_modifier').GetNameWithTooltip], позволяющим в дальнейшем использовать #L $pod_bs_spells|l$ия#! из этой #L $pod_bs_path|l$ы#!.\n#flavor Узнать о преступлениях или героических поступках мёртвых или нежити#!"
- PHARAOHS_SENTRY_PERK_EFFECT: "Позволяет принести в жертву цель-призрака с модификатором [GetModifier('weigh_the_virtues_modifier').GetNameWithTooltip], чтобы призвать армию профессионалов - [GetMaA('pharaohs_sentry').GetName], применив это #L $pod_bs_spell|l$ие#!.\n#flavor Привязать фрагмент призрака к трупу, чтобы он выполнял одну единственную команду.#!"
+ WEIGH_THE_VIRTUES_PERK_EFFECT: "Вы можете наделить пленённую цель-призрака модификатором [GetModifier('weigh_the_virtues_modifier').GetNameWithTooltip], позволяющим в дальнейшем использовать #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! из этой #L $pod_bs_path|l$ы#!.\n#flavor Узнать о преступлениях или героических поступках мёртвых или нежити#!"
+ PHARAOHS_SENTRY_PERK_EFFECT: "Позволяет принести в жертву цель-призрака с модификатором [GetModifier('weigh_the_virtues_modifier').GetNameWithTooltip], чтобы призвать армию профессионалов - [GetMaA('pharaohs_sentry').GetName], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Привязать фрагмент призрака к трупу, чтобы он выполнял одну единственную команду.#!"
  IMBUE_WITH_THE_GRACE_OF_ANUBIS_PERK_EFFECT: "#flavor Оживить труп и наделить его особой целью, связанной с его добродетельными или злодейскими поступками#!"
  THE_SORCERY_OF_LIFE_PERK_EFFECT: "Превращает цель-призрака с модификатором [GetModifier('weigh_the_virtues_modifier').GetNameWithTooltip] из призрака в проклятую мумию, ценой модификатора [GetModifier('the_sorcery_of_life_modifier').GetNameWithTooltip] на 20 лет и огромной потерей [Concept('piety', 'благочестия')|E], если ваша [Concept('faith', 'конфессия')|E] не принимает демонов.\n#flavor Уменьшенная версия обряда проклятия, колдун создаёт своего рода прото-проклятую мумию.#!"
 
@@ -437,34 +437,34 @@
  cycle_of_the_midgard_serpent_perk_name: "Цикл змея Мидгарда"
  apeps_transformation_perk_name: "Преображение Апопа"
 
- BESTOWMENT_OF_SCALES_PERK_EFFECT: "Вы можете наделить цель - члена #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! модификатором [GetModifier('bestowment_of_scales_modifier').GetNameWithTooltip] на 20 лет, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Вылечить гуля быстрее, нарастив на его ранах чешуйчатую кожу#!"
- SUFFER_FOR_JORMUNGANDR_PERK_EFFECT: "Вы можете наделить цель свойством «[GetTrait('scaly').GetName(GetNullCharacter)]» и модификатором [GetModifier('suffer_for_jormungandr_modifier').GetNameWithTooltip], также увеличив случайный [Concept('skill', 'навык')|E] на 5, применив это #L $pod_bs_spell|l$ие#!.\n#flavor Придать гулю рептильные черты#!"
- SWALLOW_THE_TAIL_PERK_EFFECT: "Вы можете получить случайное количество от 1 до 4 ед. крови, нанеся раны всему [Concept('court', 'двору')|E], применив это #L $pod_bs_spell|l$ие#!.\n#flavor Притянуть к себе пролитую кровь из окружающих вас людей#!"
+ BESTOWMENT_OF_SCALES_PERK_EFFECT: "Вы можете наделить цель - члена #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! модификатором [GetModifier('bestowment_of_scales_modifier').GetNameWithTooltip] на 20 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Вылечить гуля быстрее, нарастив на его ранах чешуйчатую кожу#!"
+ SUFFER_FOR_JORMUNGANDR_PERK_EFFECT: "Вы можете наделить цель свойством «[GetTrait('scaly').GetName(GetNullCharacter)]» и модификатором [GetModifier('suffer_for_jormungandr_modifier').GetNameWithTooltip], также увеличив случайный [Concept('skill', 'навык')|E] на 5, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Придать гулю рептильные черты#!"
+ SWALLOW_THE_TAIL_PERK_EFFECT: "Вы можете получить случайное количество от 1 до 4 ед. крови, нанеся раны всему [Concept('court', 'двору')|E], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Притянуть к себе пролитую кровь из окружающих вас людей#!"
  CYCLE_OF_THE_MIDGARD_SERPENT_PERK_EFFECT: "Снижает затраты [Concept('lifestyle_experience', 'опыта образа жизни')|E] для изучения дисциплин на #p -100%#!\n#flavor Наделите гуля способностью использовать ваши дисциплины#!"
 
  cycle_of_the_midgard_serpent_perk_tt: "Изучение [Glossary('дисциплины','game_concept_discipline_desc')] не требует затрат из-за наличия достоинства «[GetPerk('cycle_of_the_midgard_serpent_perk').GetName(GetPlayer)]»!"
- APEPS_TRANSFORMATION_PERK_EFFECT: "Вы можете принести в жертву вашего гуля, чтобы получить складывающийся модификатор [GetModifier('apeps_transformation_modifier').GetNameWithTooltip], применив это #L $pod_bs_spell|l$ие#!.\n#flavor Превратить гуля в огромную змею, способную понимать человеческую речь#!"
+ APEPS_TRANSFORMATION_PERK_EFFECT: "Вы можете принести в жертву вашего гуля, чтобы получить складывающийся модификатор [GetModifier('apeps_transformation_modifier').GetNameWithTooltip], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Превратить гуля в огромную змею, способную понимать человеческую речь#!"
 
 
  saut_allah_perk_name: "Саут Аллах"
- SAUT_ALLAH_PERK_EFFECT: "Вы можете снизить стресс у цели и наделить её модификатором [GetModifier('saut_allah_modifier').GetNameWithTooltip] на 10 лет, применив это #L $pod_bs_spell|l$ие#!.\n\n#weak Заклинатель подготавливает своих собратьев-аширритов к предстоящим трудностям.#!"
+ SAUT_ALLAH_PERK_EFFECT: "Вы можете снизить стресс у цели и наделить её модификатором [GetModifier('saut_allah_modifier').GetNameWithTooltip] на 10 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n\n#weak Заклинатель подготавливает своих собратьев-аширритов к предстоящим трудностям.#!"
  nuzra_allah_perk_name: "Нузра Аллах"
  NUZRA_ALLAH_PERK_EFFECT: "Ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат модификатор [GetModifier('nuzra_allah_modifier').GetNameWithTooltip].\n\n#weak Защитная способность, которая защищает заклинателя от видимого вреда.#!"
  ruh_allah_perk_name: "Рух Аллах"
  RUH_ALLAH_PERK_EFFECT: "[Concept('faction_commitment', 'Преданность')|E] [Concept('vassal', 'вассала')|E] фракции: #P -20#!\n\n#weak Рух Аллах помогает каиниту восстановить контроль над собой и теми, кто его окружает.#!"
  RUH_ALLAH_FACTION_REASON: "[GetPerk('ruh_allah_perk').GetName(GetPlayer)]: $VALUE|0+=$"
  ghadub_allah_perk_name: "Гадуб Аллах"
- GHADUB_ALLAH_PERK_EFFECT: "При начале [Concept('war', 'войны')|E] в качестве основного нападающего или защитника все правители противоположной стороны получат модификатор [GetModifier('ghadub_allah_modifier').GetNameWithTooltip].\nПозволяет заключить [Concept('white_peace', 'белый мир')|E] между вами и целью, применив это #L $pod_bs_spell|l$ие#!.\n\n#weak Позволяет останавливать атаки без необходимости зрительного контакта.#!"
+ GHADUB_ALLAH_PERK_EFFECT: "При начале [Concept('war', 'войны')|E] в качестве основного нападающего или защитника все правители противоположной стороны получат модификатор [GetModifier('ghadub_allah_modifier').GetNameWithTooltip].\nПозволяет заключить [Concept('white_peace', 'белый мир')|E] между вами и целью, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n\n#weak Позволяет останавливать атаки без необходимости зрительного контакта.#!"
  kubda_allah_perk_name: "Кубда Аллах"
- KUBDA_ALLAH_PERK_EFFECT: "Позволяет получить [Concept('strong_hook', 'сильное влияние')|E] на цель или ранить её в случае провала, применив это #L $pod_bs_spell|l$ие#!.\n\n#weak Выбивает нежизнь из противника и заставляет его подчиниться. Заклинатель должен быть достаточно сдержан, чтобы использовать свою силу во благо.#!"
+ KUBDA_ALLAH_PERK_EFFECT: "Позволяет получить [Concept('strong_hook', 'сильное влияние')|E] на цель или ранить её в случае провала, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n\n#weak Выбивает нежизнь из противника и заставляет его подчиниться. Заклинатель должен быть достаточно сдержан, чтобы использовать свою силу во благо.#!"
 
  hikma_allah_perk_name: "Хикма мин Аллах"
  HIKMA_ALLAH_PERK_EFFECT: "#weak Благодаря длительному самоанализу аширриты способны сосредоточить свой ум на решении проблем.#!"
  idrak_allah_perk_name: "Идрак' мин Аллах"
- IDRAK_ALLAH_PERK_EFFECT: "Позволяет раскрыть все [Concept('schemes', 'происки')|E] и [Concept('secrets', 'секреты')|E] персонажа, применив это #L $pod_bs_spell|l$ие#!.\n\n#weak С помощью силы молитвы вы сможете лучше понять своих врагов.#!"
+ IDRAK_ALLAH_PERK_EFFECT: "Позволяет раскрыть все [Concept('schemes', 'происки')|E] и [Concept('secrets', 'секреты')|E] персонажа, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n\n#weak С помощью силы молитвы вы сможете лучше понять своих врагов.#!"
  sultat_nabi_perk_name: "Султат эль-Наби"
- SULTAT_NABI_PERK_EFFECT: "Позволяет заставить цель случайным образом передать вам @gold_icon!, @prestige_icon!, обычный или знаменитый [Concept('inventory_artifact', 'артефакт')|E], применив это #L $pod_bs_spell|l$ие#!.\n\n#weak Заставляет цель повиноваться короткой фразе, состоящей не более чем из десяти слов.#!"
+ SULTAT_NABI_PERK_EFFECT: "Позволяет заставить цель случайным образом передать вам @gold_icon!, @prestige_icon!, обычный или знаменитый [Concept('inventory_artifact', 'артефакт')|E], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n\n#weak Заставляет цель повиноваться короткой фразе, состоящей не более чем из десяти слов.#!"
  sawt_nabi_perk_name: "Саут эль-Наби"
  SAWT_NABI_PERK_EFFECT: "#weak Заклинатель может общаться с любым известным ему каинитом, независимо от расстояния.#!"
  nar_iman_perk_name: "Нар эль-Иман"
- NAR_IMAN_PERK_EFFECT: "Позволяет ранить персонажа 3 раза и наделить его модификатором [GetModifier('nar_iman_modifier').GetNameWithTooltip] на 10 лет, применив это #L $pod_bs_spell|l$ие#!.\n\n#weak Использование присущей вампирам слабости в вопросах веры, подрывая решимость цели и нанося ей как психические, так и физические увечья.#!"
+ NAR_IMAN_PERK_EFFECT: "Позволяет ранить персонажа 3 раза и наделить его модификатором [GetModifier('nar_iman_modifier').GetNameWithTooltip] на 10 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n\n#weak Использование присущей вампирам слабости в вопросах веры, подрывая решимость цели и нанося ей как психические, так и физические увечья.#!"

@@ -115,7 +115,7 @@
  masters_of_fire: "Мастера огня"
  masters_of_fire_desc: "Эта фракция раздобыла секрет греческого огня и приспособила оружие для своих нужд."
  gifts_from_heaven_modifier: "Дары небес"
- gifts_from_heaven_modifier_desc: "Истинное мастерство Цяо даётся этому персонажу, позволяя изучать высокие уровни Цяо еще до рассвета [Concept('sixth_age', 'Шестой эпохи')|E]."
+ gifts_from_heaven_modifier_desc: "Истинное мастерство Цяо даётся этому персонажу, позволяя изучать высокие уровни Цяо еще до рассвета [Glossary('Шестой эпохи','game_concept_sixth_age_desc')]."
  keening_modifier: "Песнопение"
  keening_modifier_desc: "Сила Песнопения защищает вас даже вдали от Черного камня."
  sufi_mystic_modifier: "Мастер мистических искусств"
@@ -135,7 +135,7 @@
  support_from_von_murnau_modifier: "Поддержка дома Мурнау"
 
  decani_boon_modifier: "Благословение Декани"
- decani_boon_modifier_desc: "Открывает доступ к [Concept('lifestyle', 'пути')|E] [Concept('investiture_lifestyle', 'инвеституры')|E]\n#weak Этот персонаж был наделен частичкой силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#! Декани.#!"
+ decani_boon_modifier_desc: "Открывает доступ к [Concept('lifestyle', 'пути')|E] #TOOLTIP:game_concept_investiture_lifestyle_desc #E инвеституры#!#!\n#weak Этот персонаж был наделен частичкой силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#! Декани.#!"
  decani_modifier: "Декани"
  decani_modifier_desc: "Открывает доступ к [Concept('lifestyle', 'пути')|E] #TOOLTIP:game_concept_arcana_lifestyle_desc #E арканы#!#!\n#weak Этот персонаж присвоил себе силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#!, пожрав душу Декани.#!"
 

@@ -15,5 +15,5 @@
  host_death_notification_title: "Ваш сосуд #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
  death_management.host.desc: "Ваш сосуд, [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
 
- thrall_death_notification_title: "Ваш [Concept('thrall', 'раб')|E] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
- death_management.thrall.desc: "Ваш [Concept('thrall', 'раб')|E], [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
+ thrall_death_notification_title: "Ваш #TOOLTIP:game_concept_thrall_desc #E раб#!#! #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
+ death_management.thrall.desc: "Ваш #TOOLTIP:game_concept_thrall_desc #E раб#!#!, [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."

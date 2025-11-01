@@ -52,7 +52,7 @@
  #POD_resolve_window_demon_interaction: "$POD_resolve_window_demon$\n\n#help На данный момент при вашем [Concept('court', 'дворе')|E] нет подходящих целей для раскрытия.\n\nЩёлкните правой кнопкой мыши по смертному, чтобы совершить раскрытие через [character_interaction|El].\nЭто действие более эффективно для трусливых личностей.#!"
  #POD_resolve_window_laham: "Являясь #L [GetTrait('laham').GetName(GetPlayer)|l]ом#!, вы получаете #V 1#! ед. решимости в месяц."
  #POD_resolve_window_nephilim: "Являясь #L [GetTrait('nephilim').GetName(GetPlayer)|l]ом#!, вы получаете #V 1#! ед. решимости в месяц."
- #POD_resolve_window_thrall: "Являясь [Concept('thrall', 'рабом')|E], вы получаете #V 1#! ед. решимости в месяц."
+ #POD_resolve_window_thrall: "Являясь #TOOLTIP:game_concept_thrall_desc #E рабом#!#!, вы получаете #V 1#! ед. решимости в месяц."
  #POD_resolve_window_decani: "Благодаря сила декани вы получаете #V 1#! ед. решимости в месяц."
  #POD_resolve_window_yama: "Thanks to your Yomi domain, you gain #V 1#! Resolve per month."
  #POD_resolve_window_artifacts: "У вас есть [artifacts|El], в которых можно хранить решимость."
