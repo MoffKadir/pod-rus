@@ -161,7 +161,7 @@
  pod1230objectives_fae.131.a: "Реальность такова, какой я её считаю!"
 
  arcadian_restoration_objective_decision: "Восстановление Аркадии"
- arcadian_restoration_objective_decision_tooltip: "Вы вернёте [Concept('mythic_age', 'Мифическую эпоху')|E]."
+ arcadian_restoration_objective_decision_tooltip: "Вы вернёте [Glossary('Мифическую эпоху','game_concept_mythic_age_desc')]."
  arcadian_restoration_objective_decision_desc: ""
  arcadian_restoration_objective_decision_confirm: "Наконец-то."
 
@@ -331,8 +331,8 @@
  sidhe_house_dominance_leanhaun_objective_decision_desc: "Тайное проклятие, наложенное на [GetScriptedCharacterByHistoryID('POD_fae_character_15').GetFirstName], распространяется на весь её дом и заставляет его членов быстро стареть без рапсодизации смертных. Предсказано, что это не закончится, «пока звёзды не прольют кровавые слёзы и сама земля не похолодеет под ногами», что, похоже, вряд ли произойдёт в ближайшее время. Обычно Лианнан очаровывают и рапсодизируют одну смертную жертву за раз. Предполагается, что если культивировать достаточное количество мечтателей и наваждение этих мечтателей будет очень сильным, то воздействие проклятия может быть ослаблено, если не устранено вовсе."
  sidhe_house_dominance_leanhaun_objective_decision_tooltip: "Ослабить проклятие, использовав мечтателей"
  sidhe_house_dominance_leanhaun_objective_decision_confirm: "Наши муки могут стать нашей стихией."
- sidhe_house_dominance_leanhaun_objective_decision_custom: "Есть #V 7#! [Concept('dreamer', 'мечтателей')|E]"
- sidhe_house_dominance_leanhaun_objective_decision_great: "Есть #V 3#! великие личности - [Concept('dreamer', 'мечтателя')|E]"
+ sidhe_house_dominance_leanhaun_objective_decision_custom: "Есть #V 7#! #TOOLTIP:game_concept_dreamer_desc #E мечтателей#!#!"
+ sidhe_house_dominance_leanhaun_objective_decision_great: "Есть #V 3#! великие личности - #TOOLTIP:game_concept_dreamer_desc #E мечтателя#!#!"
  leanhaun_victory_modifier: "Ослабленное проклятие Лианнан"
 
  pod1230objectives_fae.174.t: "Проклятие Лианнан"
