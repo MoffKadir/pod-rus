@@ -189,4 +189,4 @@
 
  arcana_beyond_now_perk_name: "За пределами настоящего"
 
- ARCANA_BEYOND_NOW_PERK_EFFECT: "Вы можете получить модификатор [GetModifier('POD_beyond_now_modifier').GetNameWithTooltip] на 1 неделю ценой 300 ед. [Concept('static_stress', 'психического напряжения')|E] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Обладая этой силой, демон может выйти за пределы самого времени, и полотно космоса временно окажется в его власти.#!"
+ ARCANA_BEYOND_NOW_PERK_EFFECT: "Вы можете получить модификатор [GetModifier('POD_beyond_now_modifier').GetNameWithTooltip] на 1 неделю ценой 300 ед. #TOOLTIP:game_concept_static_stress_desc #E психического напряжения#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Обладая этой силой, демон может выйти за пределы самого времени, и полотно космоса временно окажется в его власти.#!"
