@@ -1,7 +1,7 @@
 ﻿l_russian:
 
  POD_provoke_inquisition_effect_tt: "#N;bold Мир необратимо изменился из-за вас.#!"
- POD_provoke_inquisition_effect_tt_2: "Святой Престол принял к сведению ваши действия, и инквизиция приступила к мобилизации. Примерно через #V [EmptyScope.ScriptValue('premature_inquisition_delay')]#! лет они обрушат свои войска на [Concept('world_of_darkness','Мир Тьмы')|E], и никто не знает, какими будут последствия этого события..."
+ POD_provoke_inquisition_effect_tt_2: "Святой Престол принял к сведению ваши действия, и инквизиция приступила к мобилизации. Примерно через #V [EmptyScope.ScriptValue('premature_inquisition_delay')]#! лет они обрушат свои войска на [Glossary('Мир Тьмы','game_concept_world_of_darkness_desc')], и никто не знает, какими будут последствия этого события..."
 
  POD_vatican_coterie_duel_success_tt: "[prowess_duelist.GetFirstNameNicknamed] побеждает персонажа [adversary.GetFirstName]"
  POD_vatican_coterie_duel_failure_tt: "[prowess_duelist.GetFirstNameNicknamed] и [adversary.GetFirstName] погибают от полученных ран"
@@ -234,7 +234,7 @@
  POD_provoke_vatican.32.desc.end: "Как бы там ни было... У меня такое чувство, что трудности только начались."
  POD_provoke_vatican.32.option.a: "Как говорится, «чтоб тебе жить в интересные времена»."
  POD_provoke_vatican.32.option.a.tt: "Охотники перестали преследовать вас. На данный момент."
- POD_provoke_vatican.32.option.a.tt2: "Ваши действия заставили остальную часть [Concept('world_of_darkness', 'мира Тьмы')|E] ненавидеть вас. Потребуется настоящее чудо, чтобы изменить вашу репутацию к лучшему..."
+ POD_provoke_vatican.32.option.a.tt2: "Ваши действия заставили остальную часть [Glossary('мира Тьмы','game_concept_world_of_darkness_desc')] ненавидеть вас. Потребуется настоящее чудо, чтобы изменить вашу репутацию к лучшему..."
 
  POD_provoke_vatican.33.t: "Четвёртая печать"
  # Revelation 5:1-12 KJV
