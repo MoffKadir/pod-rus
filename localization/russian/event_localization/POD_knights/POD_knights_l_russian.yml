@@ -35,8 +35,8 @@
 
  pod_knights.100.t: "Нелояльные $knight_culture_player_plural_no_tooltip$"
  pod_knights.100.desc: "$knight_culture_player_plural$ готовы сражаться только за полководца, в которого они искренне верят. В конце концов, они рискуют своей жизнью.\n\nВ последнее время при дворе шепчутся, что некоторые из ваших поборников подумывают об уходе и поисках удачи в другом месте."
- pod_knights.100.tt: "Эти $knight_culture_player_plural$ покинут ваш двор из-за недостатка #L $pod_loyalty_with_icon$ности#!, если их мнение будет всё ещё ниже [GetPlayer.MakeScope.ScriptValue('POD_loyalty_opinion')|0V] в следующем году:"
- pod_knights.100.tt2: "В качестве альтернативы вы можете #P;bold предоставить им земельные наделы#! или добиться их #L $pod_loyalty_with_icon$ности#! другими способами."
+ pod_knights.100.tt: "Эти $knight_culture_player_plural$ покинут ваш двор из-за недостатка #TOOLTIP:game_concept_loyalty_desc #E @knight_icon!верности#!#!, если их мнение будет всё ещё ниже [GetPlayer.MakeScope.ScriptValue('POD_loyalty_opinion')|0V] в следующем году:"
+ pod_knights.100.tt2: "В качестве альтернативы вы можете #P;bold предоставить им земельные наделы#! или добиться их #TOOLTIP:game_concept_loyalty_desc #E @knight_icon!верности#!#! другими способами."
  pod_knights.100.a: "Тревожно."
  pod_knights.100.b: "Я освобождаю вас от боевых обязанностей."
- pod_knights.100.message: "$knight_culture_player$ уходит из-за недостатка #L $pod_loyalty_with_icon$ности#!"
+ pod_knights.100.message: "$knight_culture_player$ уходит из-за недостатка #TOOLTIP:game_concept_loyalty_desc #E @knight_icon!верности#!#!"

@@ -10,10 +10,10 @@
 
 
 
- POD_terrain_crafting_forging_advantage: "[Concept('crafting_complexity', 'Сложность')|E] [Concept('crafting_forging', 'ковки')|E]"
- POD_terrain_crafting_brewing_advantage: "[Concept('crafting_complexity', 'Сложность')|E] [Concept('crafting_brewing', 'создания отваров')|E]"
- POD_terrain_crafting_enhancing_advantage: "[Concept('crafting_complexity', 'Сложность')|E] [Concept('crafting_enhancing', 'улучшения')|E]"
- POD_terrain_crafting_forging_min_combat_roll: "[crafting_potential|E]"
+ POD_terrain_crafting_forging_advantage: "#TOOLTIP:game_concept_crafting_complexity_desc #E Сложность#!#! #TOOLTIP:game_concept_crafting_forging_desc #E ковки#!#!"
+ POD_terrain_crafting_brewing_advantage: "#TOOLTIP:game_concept_crafting_complexity_desc #E Сложность#!#! #TOOLTIP:game_concept_crafting_brewing_desc #E создания отваров#!#!"
+ POD_terrain_crafting_enhancing_advantage: "#TOOLTIP:game_concept_crafting_complexity_desc #E Сложность#!#! #TOOLTIP:game_concept_crafting_enhancing_desc #E улучшения#!#!"
+ POD_terrain_crafting_forging_min_combat_roll: "#TOOLTIP:game_concept_crafting_potential_desc #E Потенциал ремесла#!#!"
 
 
 
@@ -71,7 +71,7 @@
  POD_terrain_mummy_advantage: "Риск потерять 1 оч. случайного [Concept('skill', 'навыка')|E] после вашей следующей смерти"
  POD_terrain_mummy_min_combat_roll: "Риск потерять случайное [Concept('perk', 'достоинство')|E] хекау после вашей следующей смерти"
  POD_terrain_mummy_max_combat_roll: "Риск получить модификатор [GetModifier('POD_mummy_integrity_punishment_modifier').GetNameWithTooltip] после вашей следующей смерти"
- POD_terrain_mummy_levy_size: "Проверка навыков [Concept('POD_tomb_raid', 'расхищения гробницы')|E]"
+ POD_terrain_mummy_levy_size: "Проверка навыков #TOOLTIP:game_concept_POD_tomb_raid_desc #E расхищения гробницы#!#!"
  POD_terrain_mummy_levy_size_suffix: " оч. [Concept('skill', 'навыка')|E]"
  POD_terrain_mummy_travel_danger: "Время воскрешения"
  POD_terrain_mummy_travel_danger_suffix: " лет"

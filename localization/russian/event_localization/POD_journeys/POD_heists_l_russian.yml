@@ -187,7 +187,8 @@
  POD_heists.100.a.success.nocoterie: "Ещё одна зарубка на моём поясе."
  POD_heists.100.a.failure: "Я уже обдумываю свой следующий шаг..."
 
- POD_heist_levelup_hint_desc: "Если вы успешно завершите ещё $VALUE|V0$ [Concept( 'infiltration', SelectLocalization( EqualTo_int32( '(int32)1', '(int32)$VALUE|0q$' ), 'game_concept_infiltration_mission', 'game_concept_infiltration_missions' ) )|E], вы получите модификатор [GetModifier('infiltration_experience_modifier').GetNameWithTooltip]."
+ #POD_heist_levelup_hint_desc: "Если вы успешно завершите ещё $VALUE|V0$ [Concept( 'infiltration', SelectLocalization( EqualTo_int32( '(int32)1', '(int32)$VALUE|0q$' ), 'game_concept_infiltration_mission', 'game_concept_infiltration_missions' ) )|E], вы получите модификатор [GetModifier('infiltration_experience_modifier').GetNameWithTooltip]."
+ POD_heist_levelup_hint_desc: "Если вы успешно завершите ещё $VALUE|V0$ #TOOLTIP:game_concept_infiltration_desc #E [SelectLocalization( EqualTo_int32( '(int32)1', '(int32)$VALUE|0q$' ), 'миссию проникновения', 'миссии проникновения' )]#!#!, вы получите модификатор [GetModifier('infiltration_experience_modifier').GetNameWithTooltip]."
 
  POD_heists.101.t: "И на этом всё заканчивается"
  POD_heists.101.desc: "Вы испытали свою удачу. Рано или поздно она должна была закончиться.\n\nСвита, которой командует [heist_imprisoner.GetFirstNameNicknamed], окружает вас. Бежать некуда. Вас сопровождают в тюремную камеру без фанфар.\n\nСидя за решёткой, вам приходит в голову, что вы вряд ли добьётесь справедливого судебного разбирательства."
@@ -292,7 +293,7 @@
  POD_heists.1011.c.nocoterie: "Вы смеете спрашивать меня?"
 
  #POD_heists.1011.t: "Complication: Method Acting"
- #POD_heists.1011.desc: "The key to a successful [infiltration|E] is to look non-threatening and forgettable. A clueless, backwater [ROOT.Char.Custom('PODSplat')] does not draw suspicion. So that's who I pretend to be.\n\nI realize that my \"country bumpkin\" routine might've gone a little too far when [potential_rival.GetTitledFirstNamePossessive] face darkens in response to one of my comments. \"What did you just say about me, you uncouth swine?\""
+ #POD_heists.1011.desc: "The key to a successful $pod_infiltration$ is to look non-threatening and forgettable. A clueless, backwater [ROOT.Char.Custom('PODSplat')] does not draw suspicion. So that's who I pretend to be.\n\nI realize that my \"country bumpkin\" routine might've gone a little too far when [potential_rival.GetTitledFirstNamePossessive] face darkens in response to one of my comments. \"What did you just say about me, you uncouth swine?\""
  #POD_heists.1011.a: "My apologies."
  #POD_heists.1011.a.success: "You smooth things over"
  #POD_heists.1011.a.failure: "Not so smooth after all"
@@ -402,7 +403,7 @@
  #POD_heists.1042.b: "Let's not waste this opportunity."
 
  #POD_heists.1043.t: "Complication: The Hero Saves the Night?"
- #POD_heists.1043.desc: "With the court distracted, this [infiltration|E] has been going more smoothly... until I hear the sound of footsteps coming from the corridor, leaving me no chance to escape.\nIt seems [knight.GetFirstNameNicknamed] noticed my little game of cat and mouse and decided to take matters into [knight.GetHerHis] own hands. Luckily, [knight.GetSheHe] is on [knight.GetHerHis] lonesome, meaning I could go for a clean escape after dispatching [knight.GetHerHim].\nThat is, if I win the duel."
+ #POD_heists.1043.desc: "With the court distracted, this $pod_infiltration$ has been going more smoothly... until I hear the sound of footsteps coming from the corridor, leaving me no chance to escape.\nIt seems [knight.GetFirstNameNicknamed] noticed my little game of cat and mouse and decided to take matters into [knight.GetHerHis] own hands. Luckily, [knight.GetSheHe] is on [knight.GetHerHis] lonesome, meaning I could go for a clean escape after dispatching [knight.GetHerHim].\nThat is, if I win the duel."
  #POD_heists.1043.a: "Time to leave the scene, "hero"." #full blown duel or just stat prowess duel, your choice. Character flag from above event gives a bonus to win
  #POD_heists.1043.a.success: "...and I lived happily ever after."
  #POD_heists.1043.a.failure: "At least I was a fearsome villain..." #Death
@@ -751,8 +752,8 @@
  POD_heists.2062.b.nocoterie: "Мне нужно уйти, пока ещё можно." #gain stress
 
  POD_heists.2063.t: "Осложнение: Ожидаемое предательство"
- POD_heists.2063.desc.coterie: "Когда наше #TOOLTIP:game_concept_infiltration_desc #E проникновении#!#! достигает критической стадии, наш проводник ведёт группу $POD_player_coterie$ в новую комнату. Прежде чем мы успеваем среагировать, дверь запирается, и я слышу, как вынимают мечи из ножен и натягивают арбалеты.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'была права', 'был прав' )], опасаясь нашего агента, но, видимо, недостаточно [Select_CString(ROOT.Char.IsFemale, 'благоразумна', 'благоразумен' )], чтобы не попасть в хорошо подготовленную засаду.\n\nПришло время проверить, достаточно ли мы сильны, чтобы исправить эту ошибку."
- POD_heists.2063.desc.nocoterie: "Когда наше #TOOLTIP:game_concept_infiltration_desc #E проникновении#!#! достигает критической стадии, мой проводник ведёт меня в новую комнату. Прежде чем я успеваю среагировать, дверь запирается, и я слышу, как вынимают мечи из ножен и натягивают арбалеты.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'была права', 'был прав' )], опасаясь своего агента, но, видимо, недостаточно [Select_CString(ROOT.Char.IsFemale, 'благоразумна', 'благоразумен' )], чтобы не попасть в хорошо подготовленную засаду.\n\nПришло время проверить, хватит ли у меня сил исправить эту ошибку."
+ POD_heists.2063.desc.coterie: "Когда наше #TOOLTIP:game_concept_infiltration_desc #E проникновение#!#! достигает критической стадии, наш проводник ведёт группу $POD_player_coterie$ в новую комнату. Прежде чем мы успеваем среагировать, дверь запирается, и я слышу, как вынимают мечи из ножен и натягивают арбалеты.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'была права', 'был прав' )], опасаясь нашего агента, но, видимо, недостаточно [Select_CString(ROOT.Char.IsFemale, 'благоразумна', 'благоразумен' )], чтобы не попасть в хорошо подготовленную засаду.\n\nПришло время проверить, достаточно ли мы сильны, чтобы исправить эту ошибку."
+ POD_heists.2063.desc.nocoterie: "Когда наше #TOOLTIP:game_concept_infiltration_desc #E проникновение#!#! достигает критической стадии, мой проводник ведёт меня в новую комнату. Прежде чем я успеваю среагировать, дверь запирается, и я слышу, как вынимают мечи из ножен и натягивают арбалеты.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'была права', 'был прав' )], опасаясь своего агента, но, видимо, недостаточно [Select_CString(ROOT.Char.IsFemale, 'благоразумна', 'благоразумен' )], чтобы не попасть в хорошо подготовленную засаду.\n\nПришло время проверить, хватит ли у меня сил исправить эту ошибку."
  POD_heists.2063.a: "Это ещё не конец." #very difficult prowess challenge. They are prepared, they have been warned in advance and you had options to back out before
  POD_heists.2063.a.success: "Загнанная в угол крыса, сражающаяся как лев" #continue
  POD_heists.2063.a.failure: "Одной ошибки слишком много" #death
@@ -761,7 +762,7 @@
  POD_heists.6001.t: "Ранний конец"
  POD_heists.6001.desc: "Смерть - это всего лишь небольшая неудача для меня.\n\nК сожалению, из-за особенностей моей способности к воскрешению моё новое тело появилось где-то далеко от места моей #TOOLTIP:game_concept_infiltration_desc #E миссии проникновения#!#!.\n\nЕсли я захочу попробовать ещё раз, мне придётся начать с самого начала."
  POD_heists.6001.a: "Всё ещё лучше, чем быть [Select_CString(ROOT.Char.IsFemale, 'смертной', 'смертным' )]."
- POD_heists.6001.a.tt: "Ваша #L миссия #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#! завершилась преждевременно из-за вашей смерти."
+ POD_heists.6001.a.tt: "Ваша #TOOLTIP:game_concept_infiltration_desc #E миссия проникновения#!#! завершилась преждевременно из-за вашей смерти."
 
 
  POD_heists.7777.t: "Месть рассказчику"

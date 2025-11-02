@@ -645,7 +645,7 @@
  forge_unavailable_tt: "Ковка недоступна до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope.GetVariable('craft_creator').GetCharacter.MakeScope, 'forge_cooldown') )]"
  forge_available_tt: "Ковка ещё не восстановилась"
 
- current_forge_name: "[Localize(Concatenate(GetPlayer.MakeScope.GetVariable('current_recipe').GetFlagName, '_name'))]"
+ current_forge_name: "[Localize(Concatenate(GetPlayer.MakeScope.GetVariable('current_recipe').GetFlagKey, '_name'))]"
  axe_forge_name: "Боевой топор"
  hammer_forge_name: "Боевой молот"
  spear_forge_name: "Копьё"
@@ -812,7 +812,7 @@
 
 
  #NEW CRAFTING SYSTEM
- CRAFTING_GUI_TITLE: "[crafting|E]"
+ CRAFTING_GUI_TITLE: "#TOOLTIP:game_concept_crafting_desc #E Ремесло#!#!"
  CRAFTING_GUI_CRAFTERS: "Возможные ремесленники"
  POD_CRAFTING_MINIGAME_TITLE: "Мастерская"
  POD_CRAFTING_MINIGAME_SACRIFICE_TITLE: "Доступная жертва"
@@ -822,10 +822,10 @@
  CRAFTING_GUI_MATERIALS_TOOLTIP: "Имеющиеся материалы:\n[GetPlayer.MakeScope.ScriptValue('common_artifact_piece_reserve')] ед. осколков обычных [Concept('artifact', 'артефактов')|E]\n[GetPlayer.MakeScope.ScriptValue('masterwork_artifact_piece_reserve')] ед. осколков мастерских [Concept('artifact', 'артефактов')|E]\n[GetPlayer.MakeScope.ScriptValue('famed_artifact_piece_reserve')] ед. осколков знаменитых [Concept('artifact', 'артефактов')|E]\n[GetPlayer.MakeScope.ScriptValue('illustrious_artifact_piece_reserve')] ед. осколков великолепных [Concept('artifact', 'артефактов')|E]"
 
  POD_CRAFTING_MINIGAME_MODIFIERS_TITLE: "Полученные модификаторы:"
- POD_CRAFTING_MINIGAME_RELOADS: "Доступные [Concept('crafting_rerolls', 'обновления ремесла')|E]:"
- POD_CRAFTING_MINIGAME_MOVES_LEFT: "Доступная [Concept('crafting_complexity', 'сложность ремесла')|E]:"
+ POD_CRAFTING_MINIGAME_RELOADS: "Доступные #TOOLTIP:game_concept_crafting_rerolls_desc #E обновления ремесла#!#!:"
+ POD_CRAFTING_MINIGAME_MOVES_LEFT: "Доступная #TOOLTIP:game_concept_crafting_complexity_desc #E сложность ремесла#!#!:"
  POD_CRAFTING_MINIGAME_CRAFT: "Ремесло"
- POD_CRAFTING_MINIGAME_POTENTIAL: "[crafting_potential|E]: "
+ POD_CRAFTING_MINIGAME_POTENTIAL: "#TOOLTIP:game_concept_crafting_potential_desc #E Потенциал ремесла#!#!: "
  POD_CRAFTING_MINIGAME_BASE_FORGE_NODES: "Базовые #TOOLTIP:game_concept_crafting_node_desc #E узлы ремесла#!#!:"
  POD_CRAFTING_MINIGAME_UNLOCKED_FORGE_NODES: "Особые #TOOLTIP:game_concept_crafting_node_desc #E узлы ремесла#!#!:"
  POD_CRAFTING_MINIGAME_BASE_BREW_NODES: "Базовые #TOOLTIP:game_concept_crafting_node_desc #E узлы ремесла#!#!:"
@@ -844,12 +844,12 @@
  #POD_one_time_forge_boost: "One Time Forging Boost"
  #POD_one_time_brew_boost: "One Time Brewing Boost"
  #POD_one_time_enhance_boost: "One Time Enhancing Boost"
- POD_already_used_moves: "[crafting_complexity|E] уже использована"
+ POD_already_used_moves: "#TOOLTIP:game_concept_crafting_complexity_desc #E Сложность ремесла#!#! уже использована"
  crafting_minigame_moves_crafter: "[Concept('trait_level_track_xp', 'Опыт пути развития свойства')|E] «[GetTrait('pod_crafter').GetName(GetPlayer)]»"
 
  POD_already_used_reloads: "Обновления использованы"
  POD_crafting_minigame_all_rerolls_used: "Вы использовали все обновления!"
- POD_crafting_minigame_used_all_moves: "Вы использовали все доступные движения, основываясь на [Concept('crafting_complexity', 'сложности ремесла')|E]!"
+ POD_crafting_minigame_used_all_moves: "Вы использовали все доступные движения, основываясь на #TOOLTIP:game_concept_crafting_complexity_desc #E сложности ремесла#!#!!"
  POD_crafting_minigame_node_is_starting: "Вы должны начать с узла, на котором есть тип [Concept('artifact', 'артефакта')|E]!"
  POD_crafting_minigame_node_is_not_starting: "Этот узел можно использовать только в качестве исходной точки!"
  POD_crafting_minigame_node_too_far: "Этот узел находится слишком далеко от текущего местоположения!"
@@ -877,21 +877,21 @@
  CRAFTING_GUI_TABS_BREWING: "Создание отваров"
  CRAFTING_GUI_TABS_ENHANCING: "Улучшение"
 
- CRAFTING_GUI_FORGE_TITLE: "[crafting_forging|E]"
+ CRAFTING_GUI_FORGE_TITLE: "#TOOLTIP:game_concept_crafting_forging_desc #E Ковка#!#!"
  CRAFTING_GUI_FORGE_DESC: "Создание новых [Concept('artifact', 'артефактов')|E] из сырья."
  CRAFTING_GUI_START_FORGE: "Начать ковку"
  CRAFTING_GUI_FORGE_COOLDOWN: "#I Ковка восстановится через #V 5 лет#!#!"
  CRAFTING_GUI_FORGE_COOLDOWN_CHECKBOX_TT: "Вы получите уведомление, когда ковка восстановится"
  CRAFTING_GUI_FORGE_COOLDOWN_CHECKBOX: "Включить уведомление восстановления ковки?"
 
- CRAFTING_GUI_BREWING_TITLE: "[crafting_brewing|E]"
+ CRAFTING_GUI_BREWING_TITLE: "#TOOLTIP:game_concept_crafting_brewing_desc #E Создание отваров#!#!"
  CRAFTING_GUI_BREWING_DESC: "Создание алхимических отваров или зелий."
  CRAFTING_GUI_START_BREWING: "Начать создание отваров"
  CRAFTING_GUI_BREWING_COOLDOWN: "#I Создание отваров восстановится через #V 5 лет#!#!"
  CRAFTING_GUI_BREW_COOLDOWN_CHECKBOX_TT: "Вы получите уведомление, когда создание отваров восстановится"
  CRAFTING_GUI_BREW_COOLDOWN_CHECKBOX: "Включить уведомление восстановления создания отваров?"
 
- CRAFTING_GUI_ENHANCING_TITLE: "[crafting_enhancing|E]"
+ CRAFTING_GUI_ENHANCING_TITLE: "#TOOLTIP:game_concept_crafting_enhancing_desc #E Улучшение#!#!"
  CRAFTING_GUI_ENHANCING_DESC: "Улучшение существующих [Concept('artifact', 'артефактов')|E] с помощью сверхъестественных средств."
  CRAFTING_GUI_START_ENHANCING: "Начать улучшение"
  CRAFTING_GUI_ENHANCING_COOLDOWN: "#I Улучшение восстановится через #V 10 лет#!#!"
@@ -1007,7 +1007,7 @@
  has_brew_cooldown: "Создание отваров восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'brew_cooldown') )]"
  has_enhance_cooldown: "Улучшение восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'enhance_cooldown') )]"
 
- POD_artifact_can_be_enhanced: "Этот [Concept('artifact', 'артефакт')|E] уже достиг своего [Concept('crafting_enhance_limit', 'предела улучшений')|E]."
+ POD_artifact_can_be_enhanced: "Этот [Concept('artifact', 'артефакт')|E] уже достиг своего #TOOLTIP:game_concept_crafting_enhance_limit_desc #E предела улучшений#!#!."
 
 
  POD_crafting_give_modifier_based_on_type_tooltip: "Этот модификатор меняется в зависимости от типа артефакта"
@@ -1022,7 +1022,7 @@
 
  node_fleshcraft_loca: "Ваяние плоти"
  node_soulforge_loca: "Ковка душ"
- node_fetish_smith_loca: "[fetish_smithing|E]"
+ node_fetish_smith_loca: "#TOOLTIP:game_concept_fetish_smithing_desc #E Ковка фетиша#!#!"
  node_frost_facsimile_loca: "Морозное именование"
  node_eightfold_yin_mantle_loca: "Восьмикратная мантия Инь"
  node_corrupt_relic_loca: "Осквернённая реликвия"
@@ -1089,6 +1089,6 @@
 
 
 
- unlock_forging_node: "Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел#!#! [Concept('crafting_forging', 'ковки')|E]:"
- unlock_brewing_node: "Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел#!#! [Concept('crafting_brewing', 'создания отваров')|E]:"
- unlock_enhancing_node: "Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел#!#! [Concept('crafting_enhancing', 'улучшения')|E]:"
+ unlock_forging_node: "Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел#!#! #TOOLTIP:game_concept_crafting_forging_desc #E ковки#!#!:"
+ unlock_brewing_node: "Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел#!#! #TOOLTIP:game_concept_crafting_brewing_desc #E создания отваров#!#!:"
+ unlock_enhancing_node: "Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел#!#! #TOOLTIP:game_concept_crafting_enhancing_desc #E улучшения#!#!:"

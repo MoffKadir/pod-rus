@@ -21,7 +21,7 @@
  UMBRA_WINDOW_DEMON_TRAP: "@warning_icon! #X Исследователь имеет шанс попасть в ловушку и ежеквартально получать [Concept('stress', 'стресс')|E] в этом измерении. #Weak (Если только он не служит демонам)#!#!"
  UMBRA_WINDOW_YAMA_TRAP: "@warning_icon! #X Исследователь имеет шанс попасть в ловушку и ежеквартально получать [Concept('stress', 'стресс')|E] в этом измерении. #Weak (Если только он не служит [Glossary('повелителям Яма','podgloss.yamaking')])#!#!"
 
- umbra_action_tooltip: "#T [Localize(Concatenate(Scope.GetFlagName,'_confirm'))]#![Localize('line_break')][ScriptedGui.BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('explorer', Character.MakeScope).End)]"
+ umbra_action_tooltip: "#T [Localize(Concatenate(Scope.GetFlagKey,'_confirm'))]#![Localize('line_break')][ScriptedGui.BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('explorer', Character.MakeScope).End)]"
  umbra_action_cooldown_tooltip: "Вы уже использовали это действие в этом месяце."
  umbra_action_no_explorer_tooltip: "Чтобы выполнить это действие, вам нужен находящийся в этом измерении исследователь."
  umbra_action_locked_tooltip: "Чтобы открыть это действие, вам нужно завершить соответствующее #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!."
@@ -39,9 +39,9 @@
  umbra_level_tt: "[AddLocalizationIf( Scope.Var('explorer').IsSet, 'umbra_progress_tt' )]Прогресс: [Scope.ScriptValue('umbra_realm_progress')|V0]/[Scope.ScriptValue('umbra_realm_size')|V0] на пути к следующему открытию"
  umbra_progress_tt: "Ежемесячный прирост прогресса: #P +[Scope.Var('explorer').GetCharacter.MakeScope.ScriptValue('umbra_aptitude')|P0]#!\n"
 
- umbra_realm_title: "[Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagName))]"
- umbra_realm_desc: "[Localize(Concatenate(Scope.Var('name').GetFlagName ,'_effect_desc'))]"
- umbra_realm_tooltip: "#T [Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagName))]#!\n[Localize(Concatenate(Concatenate('umbra_realm_', Scope.Var('name').GetFlagName),'_desc'))]"
+ umbra_realm_title: "[Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagKey))]"
+ umbra_realm_desc: "[Localize(Concatenate(Scope.Var('name').GetFlagKey ,'_effect_desc'))]"
+ umbra_realm_tooltip: "#T [Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagKey))]#!\n[Localize(Concatenate(Concatenate('umbra_realm_', Scope.Var('name').GetFlagKey),'_desc'))]"
 
  toggle_realm_with_actions_desc: "Измерения с действиями"
  umbra_filter_all: "Все"

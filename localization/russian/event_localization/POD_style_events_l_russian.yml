@@ -59,3 +59,8 @@
  POD_clothing_colors_none: "#weak (Не задано)#"
  POD_clothing_colors_coterie: "[GuiScope.AddScope('color_root',ROOT.Var('coterie').Story.MakeScope).Custom('PODClothingColors')]"
  POD_clothing_colors_single: "#color:{[ROOT.Var('POD_portrait_clothing_r').GetValue],[ROOT.Var('POD_portrait_clothing_g').GetValue],[ROOT.Var('POD_portrait_clothing_b').GetValue],1.0} @color_display:inherit_color!#!"
+
+
+ POD_style.2.t: "Покажи, как ты двигаешься"
+ POD_style.2.a: "Подтвердить."
+ POD_style.2.b: "Сбросить выбор и оставить позу по-умолчанию."

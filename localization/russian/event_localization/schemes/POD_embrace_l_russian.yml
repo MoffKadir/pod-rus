@@ -82,7 +82,7 @@
  POD_embrace.400.option.d.tt: "Вы отказываетесь от попытки даровать Объятия персонажу [target.GetFirstName]"
 
  POD_embrace.410.t: "Объятия"
- POD_embrace.410.desc: "Вам удалось одержать верх, и теперь [target.GetFirstName] находится в вашей власти. Высасывая кровь из [target.GetHerHis] тела, вы можете почувствовать, как жизнь покидает [target.GetHerHis]. Вы знаете, что то, что вы пытаетесь сделать, редко бывает успешным, но мысль о том, что вы можете сотворить, заставляет вас забыть обо всех этих глупых предосторожностях.\nОбращение перевёртышей почти всегда приводит к провалу, поскольку они защищены от вампирской крови. Те немногие подтверждённые случаи, когда жертва не умирала во время процесса, заканчивались тем, что они становились ужасными [Concept('abomination', 'мерзостями')|E]."
+ POD_embrace.410.desc: "Вам удалось одержать верх, и теперь [target.GetFirstName] находится в вашей власти. Высасывая кровь из [target.GetHerHis] тела, вы можете почувствовать, как жизнь покидает [target.GetHerHis]. Вы знаете, что то, что вы пытаетесь сделать, редко бывает успешным, но мысль о том, что вы можете сотворить, заставляет вас забыть обо всех этих глупых предосторожностях.\nОбращение перевёртышей почти всегда приводит к провалу, поскольку они защищены от вампирской крови. Те немногие подтверждённые случаи, когда жертва не умирала во время процесса, заканчивались тем, что они становились ужасными [Glossary('мерзостями','game_concept_abomination_desc')]."
  POD_embrace.410.option.a: "Пора действовать."
  POD_embrace.410.option.a.tt: "Вы попытаетесь обратить персонажа [target.GetFirstName]"
  POD_embrace.410.option.a.fail.tt: "[target.GetFirstName] умирает в агонии"
@@ -91,7 +91,7 @@
  POD_embrace.420.t: "Творец монстров"
  POD_embrace.420.desc: "Через некоторое время [target.GetFirstName] открывает свои глаза. Вы видите гримасу ужаса на [target.GetHerHis] лице, и в этот момент к вам приходит ужасное осознание... Вы добились успеха, вы создали монстра, мерзость, которая теперь является вашим дитя."
  POD_embrace.420.option.a: "Наконец-то успех."
- POD_embrace.420.option.a.tt: "[target.GetFirstName] перестаёт быть перевёртышем и становится [Concept('abomination', 'мерзостью')|E]."
+ POD_embrace.420.option.a.tt: "[target.GetFirstName] перестаёт быть перевёртышем и становится [Glossary('мерзостью','game_concept_abomination_desc')]."
 
  POD_embrace.430.t: "Провалившиеся Объятия"
  POD_embrace.430.desc: "Несмотря на все ваши попытки, [target.GetFirstName] [Select_CString(target.IsFemale, 'умерла', 'умер' )]. Вы слышали только крики агонии, когда [target.GetHerHis] тело и душа яростно отвергали вашу кровь. И теперь [target.GetFirstName] действительно [Select_CString(target.IsFemale, 'умерла', 'умер' )]. Может быть, [target.GetHerHim] всё-таки повезло?"
@@ -197,7 +197,7 @@
  POD_embrace_ongoing.1040.option.a: "Я уже [Select_CString(ROOT.Char.IsFemale, 'потратила', 'потратил' )] время впустую!"
  POD_embrace_ongoing.1040.option.b: "[Select_CString(target.IsFemale, 'Новая служанка', 'Новый слуга' )] или игрушка?"
  POD_embrace_ongoing.1040.option.c: "Убить [target.GetHerHis]!"
- POD_embrace_ongoing.1040.option.c.duel_won.desc: "Вы быстро и без проблем расправились с [Select_CString(target.IsFemale, 'недостойной [Glossary('каинитом','game_concept_cainite_desc')]', 'недостойным [Glossary('каиниткой','game_concept_cainite_desc')]' )]."
+ POD_embrace_ongoing.1040.option.c.duel_won.desc: "Вы быстро и без проблем расправились с недостойным [Glossary('каинитом','game_concept_cainite_desc')]."
  POD_embrace_ongoing.1040.option.c.duel_won.t: "Победа в поединке"
  POD_embrace_ongoing.1040.option.c.duel_lost.desc: "Вы недооценили [target.GetHerHis]"
  POD_embrace_ongoing.duel_outcome.LOST.1043.t: "Королевство за коня!"
@@ -222,7 +222,7 @@
 
  POD_embrace_ongoing.1050.t: "[target.GetFirstNameNoTooltip] - оборотень!"
  POD_embrace_ongoing.1050.desc: "[Select_CString(target.IsFemale, 'Эта', 'Этот' )] умнее большинства себе подобных. [target.GetSheHe|U] [Select_CString(target.IsFemale, 'сумела', 'сумел' )] скрыть от вас свою истинную природу. Возможно, у вас что-то не в порядке с носом, поскольку вонь оборотня теперь безошибочна."
- POD_embrace_ongoing.1050.option.a: "Создать [Concept('abomination', 'мерзость')|E]."
+ POD_embrace_ongoing.1050.option.a: "Создать [Glossary('мерзость','game_concept_abomination_desc')]."
  POD_embrace_ongoing.1050.option.c.duel_won.desc: "Вы убиваете вонючую тварь"
  POD_embrace_ongoing.1050.abomo_warning: "Обращение оборотня, если оно вообще возможно, сопряжено с большим риском как для вас, так и для вашей жертвы"
 

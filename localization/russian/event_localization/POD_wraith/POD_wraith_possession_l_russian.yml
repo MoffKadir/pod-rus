@@ -1,10 +1,10 @@
 ﻿l_russian:
 
- POD_wraith_possession.100.t: "[possession|E]"
- POD_wraith_possession.100.desc: "[actor.GetTitledFirstName] пытается [Concept('possession', 'вселиться')] в вас. Вы замечаете, что части вашего тела двигаются сами по себе, а в голове появляются чужие мысли. Может, стоит позвать экзорциста?"
+ POD_wraith_possession.100.t: "#TOOLTIP:game_concept_possession_desc #E Одержимость#!#!"
+ POD_wraith_possession.100.desc: "[actor.GetTitledFirstName] пытается #TOOLTIP:game_concept_possession_desc #E вселиться#!#! в вас. Вы замечаете, что части вашего тела двигаются сами по себе, а в голове появляются чужие мысли. Может, стоит позвать экзорциста?"
  POD_wraith_possession.100.option.a: "Собраться с силой воли и побороться за своё тело."
  POD_wraith_possession.100.option.b: "Сопротивляться [Select_CString(actor.IsFemale, 'захватчице', 'захватчику')]."
- POD_wraith_possession.100.option.c: "Принять [Concept('possession', 'одержимость')|E]"
+ POD_wraith_possession.100.option.c: "Принять #TOOLTIP:game_concept_possession_desc #E одержимость#!#!"
 
  POD_wraith_possession.200.t: "[recipient.GetFirstNameNoTooltip]: одержимость"
  POD_wraith_possession.200.desc: "Пришло время завладеть телом персонажа [recipient.GetTitledFirstName], но [recipient.GetSheHe] сопротивляется."
@@ -14,11 +14,11 @@
  POD_wraith_possession.200.a.success.desc: "Победа"
  POD_wraith_possession.200.a.tt_success: "Тело персонажа [recipient.GetTitledFirstName] будет моим!"
  POD_wraith_possession.200.a.failure.desc: "Поражение"
- POD_wraith_possession.200.a.tt_failure: "[recipient.GetTitledFirstName] сопротивляется моей попытке [Concept('possession', 'вселиться')] в н[actor.GetHerHis]."
+ POD_wraith_possession.200.a.tt_failure: "[recipient.GetTitledFirstName] сопротивляется моей попытке #TOOLTIP:game_concept_possession_desc #E вселиться#!#! в н[actor.GetHerHis]."
 
  POD_wraith_possession.200.option.b: "Навязать свою волю. Все смертные — мои марионетки."
  POD_wraith_possession.200.option.c: "Отказаться от этой затеи, я больше не хочу завладевать [recipient.GetHerHis] телом."
- POD_wraith_possession.200.option.c.tt: "[Concept('possession', 'Одержимость')|E] провалится."
+ POD_wraith_possession.200.option.c.tt: "#TOOLTIP:game_concept_possession_desc #E Одержимость#!#! провалится."
 
 
  POD_wraith_possession.300.t: "[recipient.GetFirstNameNoTooltip]: одержимость тела"
@@ -30,12 +30,12 @@
  POD_wraith_possession.400.desc: "Проиграв битву воли с персонажем [actor.GetTitledFirstName], вы теряете ещё большую часть контроля над собой в [actor.GetHerHis] пользу."
  POD_wraith_possession.400.option.a: "Моё тело больше не принадлежит мне."
 
- POD_wraith_possession.500.t: "Сопротивление [Concept('possession', 'одержимости')|E]"
- POD_wraith_possession.500.desc: "[recipient.GetTitledFirstName] [Select_CString(recipient.IsFemale, 'устояла', 'устоял')] перед моей попыткой [Concept('possession', 'вселиться')] в н[recipient.GetHerHis]."
+ POD_wraith_possession.500.t: "Сопротивление #TOOLTIP:game_concept_possession_desc #E одержимости#!#!"
+ POD_wraith_possession.500.desc: "[recipient.GetTitledFirstName] [Select_CString(recipient.IsFemale, 'устояла', 'устоял')] перед моей попыткой #TOOLTIP:game_concept_possession_desc #E вселиться#!#! в н[recipient.GetHerHis]."
  POD_wraith_possession.500.option.a: "Провал!"
 
 
- POD_wraith_possession.600.t: "Сопротивление [Concept('possession', 'одержимости')|E]"
+ POD_wraith_possession.600.t: "Сопротивление #TOOLTIP:game_concept_possession_desc #E одержимости#!#!"
  POD_wraith_possession.600.desc: "[actor.GetTitledFirstName] [Select_CString(actor.IsFemale, 'отказалась', 'отказался')] от попытки вторгнуться в ваше тело."
  POD_wraith_possession.600.option.a: "Моё тело принадлежит только мне!"
 
@@ -44,7 +44,7 @@
  POD_wraith_possession.1000.option.a: "Я навсегда [Select_CString(ROOT.Char.IsFemale, 'заперта', 'заперт')] в этом теле?"
 
  POD_wraith_possession_toast_title: "Успех призрака!"
- POD_wraith_possession_toast_text: "Ваш призрак смог [Concept('possession', 'вселиться')] в цель, дав вам определённый контроль над ней и наделив её силой."
+ POD_wraith_possession_toast_text: "Ваш призрак смог #TOOLTIP:game_concept_possession_desc #E вселиться#!#! в цель, дав вам определённый контроль над ней и наделив её силой."
 
  POD_wraith_possession.toast.fail: "Провал призрака!"
- POD_wraith_possession.toast.fail.desc: "Ваша цель устояла перед [Concept('possession', 'одержимостью')|E] призрака."
+ POD_wraith_possession.toast.fail.desc: "Ваша цель устояла перед #TOOLTIP:game_concept_possession_desc #E одержимостью#!#! призрака."

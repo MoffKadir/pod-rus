@@ -1219,7 +1219,7 @@
  building_cairo_temple_bast_03_desc: "Вместе с проклятием мерзкие Сетиты захватили кошачью родню Бубасти, кифурских котов, и либо убили их, либо накормили кровью, чтобы превратить в чудовищ-отступников."
  building_cairo_temple_bast_04: "Великий храм Баст"
  building_cairo_temple_bast_04_desc: "С возвращением Каира и изгнанием сетитов кифурские коты снова стали свободными. Теперь бубасти воюют против сетитов с новой силой."
- POD_cairo_temple_bast_bonus: "#help Если у вас есть свойство «[GetTrait('bastet').GetName(GetNullCharacter)]» или «[GetTrait('werewolf').GetName(GetNullCharacter)]»:#!\nМиссии #L #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#! начинаются с [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] ед. #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрения#!#!\n\n#help Если же нет:#!\nБубасти вернутся в Египет"
+ POD_cairo_temple_bast_bonus: "#help Если у вас есть свойство «[GetTrait('bastet').GetName(GetNullCharacter)]» или «[GetTrait('werewolf').GetName(GetNullCharacter)]»:#!\n#TOOLTIP:game_concept_infiltration_desc #E Миссии проникновения#!#! начинаются с [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] ед. #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрения#!#!\n\n#help Если же нет:#!\nБубасти вернутся в Египет"
 
 
  building_type_cairo_temple_sobek_01: "Храм Собека"

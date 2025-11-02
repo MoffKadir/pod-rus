@@ -305,11 +305,11 @@
  genius_loci_4_perk_name: "Старший дух места"
  genius_loci_5_perk_name: "Высший дух места"
 
- GENIUS_LOCI_1_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе пятидесяти футов/пятнадцати метров.#!"
- GENIUS_LOCI_2_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе ста ярдов/девяноста метров.#!"
- GENIUS_LOCI_3_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе четверти мили/полукилометра.#!"
- GENIUS_LOCI_4_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе одной мили/1.5 км.#!"
- GENIUS_LOCI_5_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #L $pod_bs_paths|l$ы#! Крайны.\n#weak Восприятие всего в радиусе пяти миль/восьми километров.#!"
+ GENIUS_LOCI_1_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #TOOLTIP:game_concept_bloodmagic_path_desc #E тропы#!#! Крайны.\n#weak Восприятие всего в радиусе пятидесяти футов/пятнадцати метров.#!"
+ GENIUS_LOCI_2_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #TOOLTIP:game_concept_bloodmagic_path_desc #E тропы#!#! Крайны.\n#weak Восприятие всего в радиусе ста ярдов/девяноста метров.#!"
+ GENIUS_LOCI_3_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #TOOLTIP:game_concept_bloodmagic_path_desc #E тропы#!#! Крайны.\n#weak Восприятие всего в радиусе четверти мили/полукилометра.#!"
+ GENIUS_LOCI_4_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #TOOLTIP:game_concept_bloodmagic_path_desc #E тропы#!#! Крайны.\n#weak Восприятие всего в радиусе одной мили/1.5 км.#!"
+ GENIUS_LOCI_5_PERK_EFFECT: "Повышает шанс успеха всех #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинаний#!#! из #TOOLTIP:game_concept_bloodmagic_path_desc #E тропы#!#! Крайны.\n#weak Восприятие всего в радиусе пяти миль/восьми километров.#!"
 
  confer_with_the_blade_perk_name: "Разговор с клинком"
  grasp_of_the_mountain_perk_name: "Хватка горы"
@@ -426,7 +426,7 @@
  the_sorcery_of_life_perk_name: "Чародейство жизни"
 
  SIGHT_OF_THE_JACKAL_PERK_EFFECT: "Можно взаимодействовать с персонажами по ту сторону Барьера.\n#flavor Осознание присутствия призраков#!"
- WEIGH_THE_VIRTUES_PERK_EFFECT: "Вы можете наделить пленённую цель-призрака модификатором [GetModifier('weigh_the_virtues_modifier').GetNameWithTooltip], позволяющим в дальнейшем использовать #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! из этой #L $pod_bs_path|l$ы#!.\n#flavor Узнать о преступлениях или героических поступках мёртвых или нежити#!"
+ WEIGH_THE_VIRTUES_PERK_EFFECT: "Вы можете наделить пленённую цель-призрака модификатором [GetModifier('weigh_the_virtues_modifier').GetNameWithTooltip], позволяющим в дальнейшем использовать #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинания#!#! из этой #TOOLTIP:game_concept_bloodmagic_path_desc #E тропы#!#!.\n#flavor Узнать о преступлениях или героических поступках мёртвых или нежити#!"
  PHARAOHS_SENTRY_PERK_EFFECT: "Позволяет принести в жертву цель-призрака с модификатором [GetModifier('weigh_the_virtues_modifier').GetNameWithTooltip], чтобы призвать армию профессионалов - [GetMaA('pharaohs_sentry').GetName], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Привязать фрагмент призрака к трупу, чтобы он выполнял одну единственную команду.#!"
  IMBUE_WITH_THE_GRACE_OF_ANUBIS_PERK_EFFECT: "#flavor Оживить труп и наделить его особой целью, связанной с его добродетельными или злодейскими поступками#!"
  THE_SORCERY_OF_LIFE_PERK_EFFECT: "Превращает цель-призрака с модификатором [GetModifier('weigh_the_virtues_modifier').GetNameWithTooltip] из призрака в проклятую мумию, ценой модификатора [GetModifier('the_sorcery_of_life_modifier').GetNameWithTooltip] на 20 лет и огромной потерей [Concept('piety', 'благочестия')|E], если ваша [Concept('faith', 'конфессия')|E] не принимает демонов.\n#flavor Уменьшенная версия обряда проклятия, колдун создаёт своего рода прото-проклятую мумию.#!"

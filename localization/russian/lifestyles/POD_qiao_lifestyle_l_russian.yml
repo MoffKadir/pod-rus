@@ -1,18 +1,18 @@
 ﻿l_russian:
 
- GAINS_QIAO_LIFESTYLE_XP: "[Concept('qiao_lifestyle', 'Опыт цяо')|E] увеличивается на $VALUE|V0$"
- GAINED_QIAO_LIFESTYLE_XP: "[Concept('qiao_lifestyle', 'Опыт цяо')|E] увеличен на $VALUE|V0$"
- I_GAIN_QIAO_LIFESTYLE_XP: "Ваш [Concept('qiao_lifestyle', 'опыт цяо')|E] увеличивается на $VALUE|V0$"
- I_GAINED_QIAO_LIFESTYLE_XP: "Ваш [Concept('qiao_lifestyle', 'опыт цяо')|E] увеличен на $VALUE|V0$"
- TARGET_GAINS_QIAO_LIFESTYLE_XP: "[Concept('qiao_lifestyle', 'Опыт цяо')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличивается на $VALUE|V0$"
- TARGET_GAINED_QIAO_LIFESTYLE_XP: "[Concept('qiao_lifestyle', 'Опыт цяо')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличен на $VALUE|V0$"
+ GAINS_QIAO_LIFESTYLE_XP: "#TOOLTIP:game_concept_qiao_lifestyle_desc #E Опыт цяо#!#! увеличивается на $VALUE|V0$"
+ GAINED_QIAO_LIFESTYLE_XP: "#TOOLTIP:game_concept_qiao_lifestyle_desc #E Опыт цяо#!#! увеличен на $VALUE|V0$"
+ I_GAIN_QIAO_LIFESTYLE_XP: "Ваш #TOOLTIP:game_concept_qiao_lifestyle_desc #E опыт цяо#!#! увеличивается на $VALUE|V0$"
+ I_GAINED_QIAO_LIFESTYLE_XP: "Ваш #TOOLTIP:game_concept_qiao_lifestyle_desc #E опыт цяо#!#! увеличен на $VALUE|V0$"
+ TARGET_GAINS_QIAO_LIFESTYLE_XP: "#TOOLTIP:game_concept_qiao_lifestyle_desc #E Опыт цяо#!#! [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличивается на $VALUE|V0$"
+ TARGET_GAINED_QIAO_LIFESTYLE_XP: "#TOOLTIP:game_concept_qiao_lifestyle_desc #E Опыт цяо#!#! [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличен на $VALUE|V0$"
 
- GAINS_A_QIAO_LIFESTYLE_PERKPOINT: "Получает $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('qiao_lifestyle', 'цяо')|E]"
- GAINED_A_QIAO_LIFESTYLE_PERKPOINT: "Получено $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('qiao_lifestyle', 'цяо')|E]"
- I_GAIN_A_QIAO_LIFESTYLE_PERKPOINT: "Вы получите $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('qiao_lifestyle', 'цяо')|E]"
- I_GAINED_A_QIAO_LIFESTYLE_PERKPOINT: "Вы получили $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('qiao_lifestyle', 'цяо')|E]"
- TARGET_GAINS_A_QIAO_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('qiao_lifestyle', 'цяо')|E]"
- TARGET_GAINED_A_QIAO_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('qiao_lifestyle', 'цяо')|E]"
+ GAINS_A_QIAO_LIFESTYLE_PERKPOINT: "Получает $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_qiao_lifestyle_desc #E цяо#!#!"
+ GAINED_A_QIAO_LIFESTYLE_PERKPOINT: "Получено $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_qiao_lifestyle_desc #E цяо#!#!"
+ I_GAIN_A_QIAO_LIFESTYLE_PERKPOINT: "Вы получите $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_qiao_lifestyle_desc #E цяо#!#!"
+ I_GAINED_A_QIAO_LIFESTYLE_PERKPOINT: "Вы получили $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_qiao_lifestyle_desc #E цяо#!#!"
+ TARGET_GAINS_A_QIAO_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_qiao_lifestyle_desc #E цяо#!#!"
+ TARGET_GAINED_A_QIAO_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_qiao_lifestyle_desc #E цяо#!#!"
 
  QIAO_LIFESTYLE_PERK_POINTS_TRIGGER: "Очки достоинств пути цяо: $NUM|V0$"
 

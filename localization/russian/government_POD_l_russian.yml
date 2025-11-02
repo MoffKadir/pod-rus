@@ -172,7 +172,7 @@
 
  legion_religion_modifier: "[Concept('religion', 'Религия')|E] Легиона даёт бонус к снижению [Concept('stress', 'стресса')|E]."
  guild_religion_modifier: "[Concept('religion', 'Религия')|E] Гильдии даёт бонус к [Concept('experience', 'опыту')|E] [Concept('lifestyle', 'образа жизни')|E] Арканой."
- yellow_springs_religion_modifier: "[Concept('religion', 'Религия')|E] Жёлтых источников даёт доступ к [Concept('lifestyle', 'образа жизни')|E] «[jade_arcanoi|E]»."
+ yellow_springs_religion_modifier: "[Concept('religion', 'Религия')|E] Жёлтых источников даёт доступ к [Concept('lifestyle', 'образа жизни')|E] «#TOOLTIP:game_concept_jade_arcanoi_lifestyle_desc #E Нефритовые арканои#!#!»."
 
  vampire_antagonistic: "Враждебность (вампиры)"
  vampire_antagonistic_desc: "Мало что мотивирует людей так, как соперничество или зависть. В этом доме лучше быть начеку, чтобы никто не попытался всадить вам нож в спину."
@@ -192,7 +192,7 @@
  #blood_tithe_required_tax_collector_flavor_desc: "#flavor The lord of the domain asks for blood, and he shall receive his due.#!"
  #
  #progeny_rights_tax_collector: "Progeny Rights"
- #progeny_rights_tax_collector_flavor_desc: "#emphasis #bold “Thou shalt only [Sire|E] another with the permission and blessing of thine elder. To create is the providence of those closest to me, for they shall be accountable. Break this, and both thee and thy progeny shall be slain.” Thus spoke Caine.#!"
+ #progeny_rights_tax_collector_flavor_desc: "#emphasis #bold “Thou shalt only [Glossary('Sire','game_concept_Sire_desc')] another with the permission and blessing of thine elder. To create is the providence of those closest to me, for they shall be accountable. Break this, and both thee and thy progeny shall be slain.” Thus spoke Caine.#!"
  #progeny_rights_tax_collector_desc: "#flavor \n\n#emphasis #bold The [vassal] has no rights to create progeny by their [liege]. Even the creation of ghouls is forbidden.#!#!"
  # 
  legacy_rights_protected_tax_collector: "Право наследия"
