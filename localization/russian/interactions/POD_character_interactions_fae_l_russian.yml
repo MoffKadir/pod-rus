@@ -415,8 +415,8 @@
  POD_mold_interaction_desc: "Превратить персонажа [recipient.GetFirstName] в живой артефакт."
 
  POD_awaken_true_jade_interaction: "Пробудить истинный нефрит"
- POD_awaken_true_jade_interaction_desc: "Пробудить [Concept('true_jade', 'истинный нефрит')|E], чтобы собрать ци."
- POD_awaken_true_jade_interaction_options_heading: "Какой вид [Concept('true_jade', 'истинного нефрита')|E] вы хотите пробудить?"
+ POD_awaken_true_jade_interaction_desc: "Пробудить [Glossary('истинный нефрит','game_concept_true_jade_desc')], чтобы собрать ци."
+ POD_awaken_true_jade_interaction_options_heading: "Какой вид [Glossary('истинного нефрита','game_concept_true_jade_desc')] вы хотите пробудить?"
  POD_awaken_true_jade_interaction_option_dragon_jade: "Драконий нефрит"
  POD_awaken_true_jade_interaction_option_feng_jade: "Нефрит Фэн"
  POD_awaken_true_jade_interaction_option_tiger_jade: "Тигровый нефрит"
@@ -431,7 +431,7 @@
  POD_banish_fae_interaction: "Изгнать фею"
  POD_banish_fae_interaction_desc: "Изгнать персонажа [recipient.GetFirstName] в [UmbraGlossaryLocalized('arcadia','Аркадию')]."
 
- bunk.duel.desc: "[bunk|E]"
+ bunk.duel.desc: "#TOOLTIP:game_concept_bunk_desc #E Банк#!#!"
 
  POD_changeling_interaction: "Похитить ребёнка"
  POD_changeling_interaction_desc: "Похитить ребёнка персонажа [recipient.GetFirstName] и заменить его вашим ребёнком, в результате чего получатся два подменыша."

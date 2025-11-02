@@ -220,14 +220,14 @@
  POD_drink_herd_phlegmatic_option: "Усилить @phlegmatic_1_icon!#TOOLTIP:game_concept_phlegmatic_lifestyle_desc #E флегматический резонанс#!#!."
  POD_drink_herd_sanguine_option: "Усилить @sanguine_1_icon!#TOOLTIP:game_concept_sanguine_lifestyle_desc #E сангвинический резонанс#!#!."
  POD_drink_herd_increase_intensity_option: "Увеличить интенсивность резонанса."
- POD_drink_herd_change_to_melancholic.tt: "[resonance|E] персонажа [victim.GetFirstName] сменяется на меланхолический."
- POD_drink_herd_change_to_choleric.tt: "[resonance|E] персонажа [victim.GetFirstName] сменяется на холерический."
- POD_drink_herd_change_to_phlegmatic.tt: "[resonance|E] персонажа [victim.GetFirstName] сменяется на флегматический."
- POD_drink_herd_change_to_sanguine.tt: "[resonance|E] персонажа [victim.GetFirstName] сменяется на сангвинический."
- POD_drink_herd_increase_intensity_to_accute.tt: "[resonance|E] персонажа [victim.GetFirstName] усиливается до острейшего уровня."
- POD_drink_herd_increase_intensity_to_intense.tt: "[resonance|E] персонажа [victim.GetFirstName] усиливается до сильного уровня."
- POD_drink_herd_increase_intensity_to_fleeting.tt: "[resonance|E] персонажа [victim.GetFirstName] усиливается до мимолетного уровня."
- POD_drink_herd_increase_intensity_to_negligible.tt: "[resonance|E] персонажа [victim.GetFirstName] снижается до едва заметного уровня."
+ POD_drink_herd_change_to_melancholic.tt: "#TOOLTIP:game_concept_resonance_desc #E Резонанс#!#! персонажа [victim.GetFirstName] сменяется на меланхолический."
+ POD_drink_herd_change_to_choleric.tt: "#TOOLTIP:game_concept_resonance_desc #E Резонанс#!#! персонажа [victim.GetFirstName] сменяется на холерический."
+ POD_drink_herd_change_to_phlegmatic.tt: "#TOOLTIP:game_concept_resonance_desc #E Резонанс#!#! персонажа [victim.GetFirstName] сменяется на флегматический."
+ POD_drink_herd_change_to_sanguine.tt: "#TOOLTIP:game_concept_resonance_desc #E Резонанс#!#! персонажа [victim.GetFirstName] сменяется на сангвинический."
+ POD_drink_herd_increase_intensity_to_accute.tt: "#TOOLTIP:game_concept_resonance_desc #E Резонанс#!#! персонажа [victim.GetFirstName] усиливается до острейшего уровня."
+ POD_drink_herd_increase_intensity_to_intense.tt: "#TOOLTIP:game_concept_resonance_desc #E Резонанс#!#! персонажа [victim.GetFirstName] усиливается до сильного уровня."
+ POD_drink_herd_increase_intensity_to_fleeting.tt: "#TOOLTIP:game_concept_resonance_desc #E Резонанс#!#! персонажа [victim.GetFirstName] усиливается до мимолетного уровня."
+ POD_drink_herd_increase_intensity_to_negligible.tt: "#TOOLTIP:game_concept_resonance_desc #E Резонанс#!#! персонажа [victim.GetFirstName] снижается до едва заметного уровня."
  POD_drink_herd_release.tt: "[victim.GetFirstName] [Select_CString(victim.IsFemale, 'освобождена', 'освобожден' )] из #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!."
 
  POD_drink_herd_summary: "Итог кормления от #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!"
@@ -239,13 +239,11 @@
  POD_resonance_tt: "[TARGET_CHARACTER.Custom('PODResonanceDisplay')]"
  POD_resonance_display: "Кровь персонажа [ROOT.Char.GetFirstNamePossessive] имеет [ROOT.Char.Custom('PODResonanceIntensity')] [ROOT.Char.Custom('PODResonanceIcon')] [ROOT.Char.Custom('PODResonanceFlavor')]."
  POD_resonance_display_missing: "Вы ещё не знаете #TOOLTIP:game_concept_resonance_desc #E резонанс#!#! крови персонажа [ROOT.Char.GetFirstNamePossessive]. Он станет известен, когда вы отведаете её."
- POD_resonance_hungerless.tt: "Поскольку вы [Concept('hungerless', 'не испытываете голод')|E], кровь персонажа [TARGET_CHARACTER.GetFirstNamePossessive] не насытит вас."
+ POD_resonance_hungerless.tt: "Поскольку вы #TOOLTIP:game_concept_hungerless_desc #E не испытываете голод#!#!, кровь персонажа [TARGET_CHARACTER.GetFirstNamePossessive] не насытит вас."
  POD_resonance_hungerless_victim.tt: "Безграничный запас крови персонажа [TARGET_CHARACTER.GetFirstName] не даст вам никакого представления о #TOOLTIP:game_concept_resonance_desc #E резонансе#!#!."
  POD_resonance_mummy.tt: "Кровь мумий не содержит насыщения."
 
- POD_resonance_gain_multiplier_tt: "#weak Опыт снижен на #V $VALUE|0$%#! из-за [Concept('storyteller_mode', 'режима рассказчика')|E]#!"
-
-
+ POD_resonance_gain_multiplier_tt: "#weak Опыт снижен на #V $VALUE|0$%#! из-за #TOOLTIP:game_concept_storyteller_mode_desc #E режима рассказчика#!#!#!"
 
  POD_herdify_interaction_limit: "Размер #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! ограничен! (3 плюс любые бонусы из других источников)"
  POD_herdify_mortal_interaction: "Добавить в стадо #weak (Происки)#!"
@@ -268,7 +266,7 @@
  POD_ghoulthrall_release_option: "Освободить раба"
 
  POD_ghoulify_mortal_interaction_limit: "Количество #TOOLTIP:game_concept_ghoul_desc #E гулей#!#!-рабов ограничено! (3 плюс любые бонусы из других источников)"
- POD_ghoulify_mortal_interaction_bp_one: "Чтобы создать гуля, вампиры должны иметь силу крови не ниже 1 ед."
+ POD_ghoulify_mortal_interaction_bp_one: "Чтобы создать #TOOLTIP:game_concept_ghoul_desc #E гуля#!#!, вампиры должны иметь силу крови не ниже 1 ед."
  POD_ghoulify_mortal_interaction: "Гулифицировать #weak (Происки)#!"
  POD_ghoulify_mortal_interaction_desc: "Происки, направленные на то, чтобы превратить этого смертного в #TOOLTIP:game_concept_ghoul_desc #E гуля#!#!-раба, верного слугу.\nУчтите, что у гулей резко снижен резонанс, и они становятся плохими членами #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!."
  POD_ghoul_ghoulify_interaction: "Предложить дар витэ #weak (Происки)#!"
@@ -280,6 +278,9 @@
  POD_ghoul_ghoulify_prisoner_interaction_desc: "Насильно превратить персонажа [recipient.GetFirstName] в гуля."
  POD_ghoul_ghoulify_prisoner_interaction.tt: "[recipient.GetFirstName] становится гулем."
  recipient_secondary_POD_ghoul_ghoulify_prisoner_interaction: "Узник"
+
+ POD_this_character_cannot_embrace: "[THIS.Char.GetFirstName] не может даровать [Glossary('объятия','game_concept_Embrace_desc')]"
+ POD_this_character_only_embraces_women: "[THIS.Char.GetFirstName] [Glossary('обращает','game_concept_Embrace_desc')] только женщин"
 
  POD_awaketorpor_interaction: "Найти убежище #weak (Происки)#!"
  POD_awaketorpor_interaction_desc: "Вы попытаетесь узнать точное местонахождение этого вампира в торпоре. Затем вы сможете пригласить его к своему двору или напасть на него..."
@@ -802,7 +803,7 @@
  POD_embrace_prisoner_interaction.tt: "[recipient.GetFirstName] может стать вашим дитя, а может и нет..."
 
  embracerecommendation_interaction: "Предложить [Glossary('обращение','game_concept_Embrace_desc')]"
- embracerecommendation_interaction_desc: "Предложить персонажу [recipient.GetFirstName] [Concept('embrace', 'обратить')|E] смертного из вашего или [recipient.GetHerHis] двора."
+ embracerecommendation_interaction_desc: "Предложить персонажу [recipient.GetFirstName] [Glossary('обратить','game_concept_Embrace_desc')] смертного из вашего или [recipient.GetHerHis] двора."
  recipient_secondary_embracerecommendation_interaction: "Предложенный смертный"
  liege_vassal_contract_forbids_progeny: "[vassal_contract|E] персонажа [recipient.GetFirstNamePossessive|U] запрещает [Glossary('обращения','game_concept_Embrace_desc')]"
 
@@ -867,9 +868,9 @@
  POD_between_the_ticks_interaction: "Между мгновениями"
  POD_between_the_ticks_interaction_desc: "Получить модификатор [GetModifier('POD_between_the_ticks_modifier').GetNameWithTooltip]."
 
- ventrue_bane_warning: "Этот персонаж не соответствует вашим #L $pod_feeding_restrictions|l$иями питания#! Вентру!"
+ ventrue_bane_warning: "Этот персонаж не соответствует вашим #TOOLTIP:game_concept_ventrue_clan_curse_desc #E ограничениями питания#!#! Вентру!"
  POD_drink_herd_ventrue_weakness.t: "Слабость Вентру"
- POD_drink_herd_ventrue_weakness_desc: "Этот член #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! теперь несовместим с вашими #L $pod_feeding_restrictions|l$иями питания#! Вентру и был автоматически удален из вашего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!."
+ POD_drink_herd_ventrue_weakness_desc: "Этот член #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! теперь несовместим с вашими #TOOLTIP:game_concept_ventrue_clan_curse_desc #E ограничениями питания#!#! Вентру и был автоматически удален из вашего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!."
  ghoul_herd_warning: "Если вы превратите смертного в своего гуля, то резко снизите количество резонанса, которое может дать его кровь."
 
  POD_paradox_perk_interaction: "Парадокс"

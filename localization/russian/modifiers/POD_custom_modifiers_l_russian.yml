@@ -31,7 +31,7 @@
 
 
  POD_terrain_umbra_aptitude_advantage: "@grace_icon!#TOOLTIP:game_concept_umbra_aptitude_desc #E Пригодность Умбры#!#!"
- POD_terrain_umbra_sense_advantage: "@grace_icon![umbra_sense|E]"
+ POD_terrain_umbra_sense_advantage: "@grace_icon!#TOOLTIP:game_concept_umbra_sense_desc #E Чувство Умбры#!#!"
  POD_terrain_umbra_astral_reaches_access_cancel_negative_supply: "@grace_icon!Доступ в [UmbraGlossaryLocalized('astral_reaches','Астральные рубежи')] #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
  POD_terrain_umbra_spirit_wilds_access_cancel_negative_supply: "@grace_icon!Доступ в [UmbraGlossaryLocalized('spirit_wilds','Духовные дебри')] #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
  POD_terrain_umbra_underworld_access_cancel_negative_supply: "@grace_icon!Доступ в [UmbraGlossaryLocalized('shadowlands','Загробный мир')] #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
@@ -50,7 +50,7 @@
  ###Splats
 
  #Demon
- POD_terrain_demon_cult_advantage: "Месяцы для признания #underline;TOOLTIP:POD_terrain_demon_cult_advantage_tt подходящего#! персонажа вашим [Concept('cultist', 'культистом')|E]"
+ POD_terrain_demon_cult_advantage: "Месяцы для признания #underline;TOOLTIP:POD_terrain_demon_cult_advantage_tt подходящего#! персонажа вашим #TOOLTIP:game_concept_cultist_desc #E культистом#!#!"
  POD_terrain_demon_cult_advantage_tt: "Подойдёт любой [Concept('courtier', 'придворный')|E] или [Concept('direct_vassal', 'прямой вассал')|E] вашего персонажа или ваших рабов-землевладельцев.\n\nОни должны иметь о вас как минимум #V 50#! [Concept('opinion', 'мнения')|E], но #N не#! быть вашими [Concept('rival', 'соперниками')|E] или [Concept('nemesis', 'заклятыми врагами')|E].\n\nПерсонажи с более высоким [Concept('opinion', 'мнением')|E] о вас имеют приоритет."
 
 

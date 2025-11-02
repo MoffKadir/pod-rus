@@ -45,7 +45,7 @@
 
 
  trait_wight: "Вихт"
- trait_wight_desc: "Вихт - это вампир, который полностью утратил свою мораль. Он, во всех смыслах и целях, является Зверем внутри самих себя. Персонаж, попавший в беду, никогда не может быть спасен или сыгран снова."
+ trait_wight_desc: "Вихт - это вампир, который полностью утратил свою мораль. Он, во всех смыслах и целях, является [Glossary('Зверем','game_concept_beast_desc')] внутри самих себя. Персонаж, попавший в беду, никогда не может быть спасен или сыгран снова."
 
  trait_vampclan: "[Glossary('Клан','game_concept_Clan_desc')]"
 
@@ -239,8 +239,8 @@
  TRAIT_FLAG_DESC_clan_curse_sangun: "$glossary_clan_curse$: Вечная #TOOLTIP:GAME_TRAIT,shy,[GetNullCharacter] #L застенчивость#!#!"
  TRAIT_FLAG_DESC_clan_curse_setite: "$glossary_clan_curse$: Раны от солнечного света удвоены"
  TRAIT_FLAG_DESC_clan_curse_toreador: "$glossary_clan_curse$: В редких случаях получают модификатор [GetModifier('POD_toreador_bane_modifier').GetNameWithTooltip]"
- TRAIT_FLAG_DESC_clan_curse_tremere: "$glossary_clan_curse$: Немедленное [Concept('strong_hook','сильное влияние')|E] при [Concept('bloodbond','узах крови')|E]" # shared with banpaia
- TRAIT_FLAG_DESC_clan_curse_ventrue: "$glossary_clan_curse$: #L $pod_feeding_restrictions$ия питания#!"
+ TRAIT_FLAG_DESC_clan_curse_tremere: "$glossary_clan_curse$: Немедленное [Concept('strong_hook','сильное влияние')|E] при [Glossary('узах крови','game_concept_bloodbond_desc')]" # shared with banpaia
+ TRAIT_FLAG_DESC_clan_curse_ventrue: "$glossary_clan_curse$: #TOOLTIP:game_concept_ventrue_clan_curse_desc #E Ограничения питания#!#!"
 
 
  trait_wanxian: "Ван Сянь"
@@ -312,7 +312,7 @@
  trait_mytherceriaadvanced_desc: "Мистерия - это [Glossary('дисциплина','game_concept_discipline_desc')], которая проявляется у вампиров с кровью фей, таких как Каэсид и Маэгхар. Она наделяет вампира мистическими чувствами, способностью красть знания и другими способностями, приписываемыми феям.\n\nСобирая в себе силы, приписываемых феям и склонных к получению новых знаний, Мистерия довела многих своих жертв до безумного лепета или, по крайней мере, разочарования."
 
  trait_necromancy: "Некромантия"
- trait_necromancy_desc: "[necromancy|E] это форма #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#!, которая имеет дело исключительно с миром мёртвых: призраками и [UmbraGlossaryLocalized('shadowlands','Загробным миром')]. Так же, как существуют различные стили обычного #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#!, существует множество практик #TOOLTIP:game_concept_necromancy_desc #E некромантии#!#!. В основном её практикуют Джованни."
+ trait_necromancy_desc: "#TOOLTIP:game_concept_necromancy_desc #E Некромантия#!#! это форма #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#!, которая имеет дело исключительно с миром мёртвых: призраками и [UmbraGlossaryLocalized('shadowlands','Загробным миром')]. Так же, как существуют различные стили обычного #TOOLTIP:game_concept_bloodsorcery_desc #E кровавого чародейства#!#!, существует множество практик #TOOLTIP:game_concept_necromancy_desc #E некромантии#!#!. В основном её практикуют Джованни."
  trait_necromancy_character_desc: "$necromancy_paths_display$\n\n$trait_necromancy_desc$"
 
  trait_necromancyadvanced: "Мастерство некромантии"
@@ -332,10 +332,10 @@
  trait_obfuscateadvanced_desc: "Затемнение - это [Glossary('дисциплина','game_concept_discipline_desc')], которая позволяет вампирам скрывать себя, обманывать разум других или заставлять их игнорировать то, что обладатель желает оставить невидимым.\n\nЗатемнение - это часть проклятия Каина, наложенного на [Glossary('допотопных','game_concept_antediluvian_desc')], когда он вычеркнул их из творения. Частые пользователи [Glossary('дисциплины','game_concept_discipline_desc')] оказываются оторванными от общества, никогда не участвуя в социальных взаимодействиях, а только наблюдая."
 
  trait_obtenebration: "Власть над Тенью"
- trait_obtenebration_desc: "Считается, что [obtenebration|E] ещё больше проклинает вампира, который его использует, еще больше отдаляя себя от Божьей благодати и погружаясь в темную тягу Бездны. По этой причине его сторонятся как животные, так и люди. Неестественная тьма, вызываемая Властью над Тенью, чрезвычайно пугает смертных, животных и даже других [Glossary('каинитов','game_concept_cainite_desc')], не привыкших к её использованию."
+ trait_obtenebration_desc: "Считается, что [Glossary('Власть над Тенью','game_concept_obtenebration_desc')] ещё больше проклинает вампира, который его использует, еще больше отдаляя себя от Божьей благодати и погружаясь в темную тягу Бездны. По этой причине его сторонятся как животные, так и люди. Неестественная тьма, вызываемая Властью над Тенью, чрезвычайно пугает смертных, животных и даже других [Glossary('каинитов','game_concept_cainite_desc')], не привыкших к её использованию."
 
  trait_obtenebrationadvanced: "Мастерство Власти над Тенью"
- trait_obtenebrationadvanced_desc: "Считается, что [obtenebration|E] ещё больше проклинает вампира, который его использует, еще больше отдаляя себя от Божьей благодати и погружаясь в темную тягу Бездны. По этой причине его сторонятся как животные, так и люди. Неестественная тьма, вызываемая Властью над Тенью, чрезвычайно пугает смертных, животных и даже других [Glossary('каинитов','game_concept_cainite_desc')], не привыкших к её использованию."
+ trait_obtenebrationadvanced_desc: "Считается, что Власть над Тенью ещё больше проклинает вампира, который его использует, еще больше отдаляя себя от Божьей благодати и погружаясь в темную тягу Бездны. По этой причине его сторонятся как животные, так и люди. Неестественная тьма, вызываемая Властью над Тенью, чрезвычайно пугает смертных, животных и даже других [Glossary('каинитов','game_concept_cainite_desc')], не привыкших к её использованию."
 
  trait_potence: "Могущество"
  trait_potence_desc: "Могущество - это [Glossary('дисциплина','game_concept_discipline_desc')], которая наделяет вампиров силой и сверхестественной мощью. Вампиры с [Glossary('дисциплиной','game_concept_discipline_desc')] могущества обладают физическим мастерством, выходящим за пределы возможностей смертных."
@@ -410,7 +410,7 @@
 
  trait_vicissitudeadvanced: "Мастерство изменчивости"
  trait_vicissitudeadvanced_desc: "Одна из самых ужасающих способностей, доступных [Glossary('каинитам','game_concept_cainite_desc')], изменчивость является фирменной способностью Цимисхи и почти неизвестна за пределами [Glossary('клана','game_concept_Clan_desc')]. С её помощью опытный мастер может изваять плоть и костей объекта, превратив его в существо неземной красоты или искорёжив в деформированное чудовище."
- TRAIT_FLAG_DESC_unlock_vohzd: "Доступны [men_at_arms|El] - [GetMaA('vozhd').GetName]."
+ TRAIT_FLAG_DESC_unlock_vozhd: "Доступны [men_at_arms|El] - [GetMaA('vozhd').GetName]."
 
  trait_visceratika: "Висцератика"
  trait_visceratika_desc: "[Glossary('Дисциплина','game_concept_discipline_desc')] Висцератики принадлежит исключительно линии крови Гаргулий и является продолжением их естественной привязанности к камню, земле и вещам, сделанным из них.\n\nВисцератика обладает способностями к изменению формы, подобными способностям Превращения, но с большим акцентом на защиту."
@@ -420,10 +420,10 @@
 
  trait_bloodsorcery: "Кровавое чародейство"
  trait_bloodsorceryadvanced: "Мастерство кровавого чародейства"
- trait_bloodsorcery_desc: "[bloodsorcery|E] - это магия вампиров, подпитываемая религиозными или оккультными практиками и силой витэ [Glossary('каинита','game_concept_cainite_desc')].\n\nПрактикуя #TOOLTIP:game_concept_bloodsorcery_desc #E кровавое чародейство#!#!, [Glossary('каинит','game_concept_cainite_desc')] может вызывать огонь, управлять погодой и делать многое другое, неестественное даже по вампирским меркам."
+ trait_bloodsorcery_desc: "#TOOLTIP:game_concept_bloodsorcery_desc #E Кровавое чародейство#!#! - это магия вампиров, подпитываемая религиозными или оккультными практиками и силой витэ [Glossary('каинита','game_concept_cainite_desc')].\n\nПрактикуя #TOOLTIP:game_concept_bloodsorcery_desc #E кровавое чародейство#!#!, [Glossary('каинит','game_concept_cainite_desc')] может вызывать огонь, управлять погодой и делать многое другое, неестественное даже по вампирским меркам."
  trait_bloodsorcery_character_desc: "$bloodmagic_paths_display$\n\n$trait_bloodsorcery_desc$"
 
- bloodmagic_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] имеет представление об этих #L $pod_bs_traditions|l$иях#!:[AddTextIf(GetScriptedGui('has_thaumaturgy_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tremere_icon! Тауматургия')][AddTextIf(GetScriptedGui('has_dur_an_ki_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@assamite_icon! Дур-ан-ки')][AddTextIf(GetScriptedGui('has_akhu_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@setite_icon! Акху')][AddTextIf(GetScriptedGui('has_sadhana_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@ravnos_icon! Садхана')][AddTextIf(GetScriptedGui('has_koldunic_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tzimisce_icon! Колдовство')][AddTextIf(GetScriptedGui('has_sihr_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@sihr_icon! Сихр')]#!"
+ bloodmagic_paths_display: "#medium [ROOT.Char.GetFirstNameNoTooltip] имеет представление об этих #TOOLTIP:game_concept_bloodmagic_tradition_desc #E традициях#!#!:[AddTextIf(GetScriptedGui('has_thaumaturgy_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tremere_icon! Тауматургия')][AddTextIf(GetScriptedGui('has_dur_an_ki_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@assamite_icon! Дур-ан-ки')][AddTextIf(GetScriptedGui('has_akhu_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@setite_icon! Акху')][AddTextIf(GetScriptedGui('has_sadhana_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@ravnos_icon! Садхана')][AddTextIf(GetScriptedGui('has_koldunic_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@tzimisce_icon! Колдовство')][AddTextIf(GetScriptedGui('has_sihr_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@sihr_icon! Сихр')][AddTextIf(GetScriptedGui('has_abyssal_mysticism_bloodmagic_sgui').IsShown(GuiScope.SetRoot(ROOT.Char.MakeScope).End),'\n$TAB|q$@lasombra_icon! Мистицизм Бездны')]#!"
 
  TRAIT_FLAG_DESC_unlock_incorporeal_form: "Можно превратиться в [GetModifier( 'POD_shapeshift_form_incorporeal_modifier' ).GetNameWithTooltip|L]"
 
@@ -528,7 +528,7 @@
  trait_flightdiscipline: "Полет"
  trait_melpomineediscipline: "Мельпомения"
  trait_mytherceriadiscipline: "Мистерия"
- trait_necromancydiscipline: "[necromancy|E]"
+ trait_necromancydiscipline: "#TOOLTIP:game_concept_necromancy_desc #E Некромантия#!#!"
  trait_obeahdiscipline: "Обеах"
  trait_obfuscatediscipline: "Затемнение"
  trait_obtenebrationdiscipline: "Власть над Тенями"
@@ -671,10 +671,10 @@
  trait_impundulu: "Импундулу"
  trait_impundulu_desc: "Линия крови вампиров, связанная с ковеном смертных ведьм, считается одним из наследий Лайбон. В жизни Импундулу был могущественным некромантом, женатым на столь же могущественной колдунье по имени Бомкази."
 
- trait_sire: "[Sire|E]"
+ trait_sire: "[Glossary('Сир','game_concept_Sire_desc')]"
  trait_sire_desc: "Этот вампир создал дитя, подобное себе."
 
- trait_masssire: "Массовый [Sire|El]"
+ trait_masssire: "Массовый [Glossary('сир','game_concept_Sire_desc')]"
  trait_masssire_desc: "Этот вампир создал большое количество вампиров. Большинство путей считают это нарушением #TOOLTIP:game_concept_the_masquerade_desc #E Маскарада#!#!."
 
  trait_lamia: "Ламия"
@@ -699,12 +699,13 @@
 
  trait_true_faith: "Истинная вера"
  trait_truefaith: "Истинная вера"
- trait_truefaith_desc: "Этот персонаж искренне верит в присутствие божественного. [true_faith|E] является основной частью его души и дает ему доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров.\nЭто свойство открывает новое дерево жизненного пути."
- trait_truefaith_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] искренне верит в присутствие божественного. [true_faith|E] является основной частью [ROOT.Char.GetHerHis] души и дает [ROOT.Char.GetHerHim] доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров.\nЭто свойство открывает новое дерево жизненного пути."
+ trait_truefaith_desc: "Этот персонаж искренне верит в присутствие божественного. [Glossary('Истинная вера','game_concept_true_faith_desc')] является основной частью его души и дает ему доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров.\nЭто свойство открывает новое дерево жизненного пути."
+ trait_truefaith_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] искренне верит в присутствие божественного. [Glossary('Истинная вера','game_concept_true_faith_desc')] является основной частью [ROOT.Char.GetHerHis] души и дает [ROOT.Char.GetHerHim] доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров.\nЭто свойство открывает новое дерево жизненного пути."
 
  trait_beatific: "Блаженность"
  trait_beatific_desc: "Ходячее воплощение избранного им бога, этот персонаж - чудотворец, образец [Glossary('истинной веры','game_concept_true_faith_desc')] в мире тьмы. Это дает ему доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров."
  trait_beatific_character_desc: "Ходячее воплощение избранного [Select_CString(ROOT.Char.IsFemale, 'ей', 'им' )] бога, [ROOT.Char.GetFirstNameNoTooltip] - [Select_CString(ROOT.Char.IsFemale, 'чудотворица', 'чудотворец' )], образец [Glossary('истинной веры','game_concept_true_faith_desc')] в мире тьмы. Это дает [ROOT.Char.GetHerHim] доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров."
+ trait_beatific_player_desc: "#medium См. [Concept('decision', 'решение')|E] «[GetDecision('advance_beatific_decision').GetName]» для получения подробной информации о получении [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E].#!\n\n$trait_beatific_character_desc$"
  trait_track_beatific: "Чудотворство"
  trait_track_beatific_desc: "#bold Уровень 1:#! Делает [Concept('decision', 'решение')|E] $POD_demon_unearthbound_decision$ бесплатным. Позволяет изгнать призрака/демона в [Glossary('Тёмное королевство','game_concept_dark_kingdom_desc')]/[UmbraGlossaryLocalized('abyss','Бездну')] через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Открывает особую постройку [GetBuilding('sanctified_area_01').GetName]. \n#bold Уровень 2:#! Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел ремесла#!#!, который добавляет [Concept('modifier', 'модификатор')|E] [GetModifier('bless_modifier').GetNameWithTooltip] в зависимости от типа [Concept('artifact', 'артефакта')|E]. Даёт иммунитет к убийству. Даёт иммунитет к делириуму. Вы больше не можете быть одержимы призраком.\n#bold Уровень 3:#! Цели всегда будут принимать требования об обращении.\n#bold Уровень 4:#! Позволяет снять все #TOOLTIP:game_concept_Fetter_desc #E оковы#!#! у призраков через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Позволяет убить сверхъестественное существо за малое количество благочестия через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Вам больше не нужно влияние, чтобы изгнать духа.\n#bold Уровень 5:#! Позволяет вам снова сделать вампира смертным или достичь Голконды через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Доступны [men_at_arms|El] - [GetMaA('minion_of_the_divine').GetName]. Позволяет тратить силу воли вместо получения ран. Позволяет не умирать от ран.\n#italic Самое сильное орудие в руках верующих - это сила истинных чудес. Целые религии рождаются из таких проявлений истинной веры.#!"
 
@@ -908,7 +909,7 @@
  DHARMA_PASSIVE_SOUL_ARTS_BREAKING_THE_DRAGONS_NECK_PERK: "У вас есть достоинство «[GetPerk('soul_arts_breaking_the_dragons_neck_perk').GetName(GetPlayer)]»"
 
  #TODO reactivate and clean for Asia culture
- DHARMA_PASSIVE_AINU_HIGH_DEVELOPMENT: "#warning Эта часть ожидает соответствующей активации в дополнении All Under Heaven.#! Общее [Concept('development', 'развитие')|E] провинций с айнской культурой в вашей [Concept('realm', 'державе')|E] превышает #V 50#!"
+ DHARMA_PASSIVE_AINU_HIGH_DEVELOPMENT: "Общее [Concept('development', 'развитие')|E] провинций с айнской культурой в вашей [Concept('realm', 'державе')|E] превышает #V 50#!"
  DHARMA_PASSIVE_HIGH_DEVELOPMENT: "Общее [Concept('development', 'развитие')|E] провинций в вашей [Concept('realm', 'державе')|E] превышает #V 100#!"
  DHARMA_PASSIVE_ILL_COURTIER: "По крайней мере, один из ваших придворных болен"
  DHARMA_PASSIVE_LOW_LEGITIMACY: "Ваш уровень легитимности - #V $legitimacy_level_0_name$#! или #V $legitimacy_level_1_name$#!"
@@ -957,8 +958,8 @@
  DHARMA_ACTIVE_SPEND_5_BLOOD: "Потратить 5 ед. крови через уникальное [Concept('decision', 'решение')|E]"
  DHARMA_ACTIVE_SPEND_1000_PIETY: "Потратить 1000 [Concept('piety', 'благочестия')|E] через уникальное [Concept('decision', 'решение')|E]"
 
- DHARMA_ACTIVE_KILL_MALE_JAPANESE: "#warning Эта часть ожидает соответствующей активации в дополнении All Under Heaven.#! Убить [Glossary('куэй-дзин','game_concept_kuei_jin_desc')] мужского пола с [Concept('culture', 'культурой')|E] ямато"
- DHARMA_ACTIVE_SEDUCE_FEMALE_JAPANESE: "#warning Эта часть ожидает соответствующей активации в дополнении All Under Heaven.#! Соблазнить [Glossary('куэй-дзин','game_concept_kuei_jin_desc')] женского пола с [Concept('culture', 'культурой')|E] ямато"
+ DHARMA_ACTIVE_KILL_MALE_JAPANESE: "Убить [Glossary('куэй-дзин','game_concept_kuei_jin_desc')] мужского пола с японской [Concept('culture', 'культурой')|E]"
+ DHARMA_ACTIVE_SEDUCE_FEMALE_JAPANESE: "Соблазнить [Glossary('куэй-дзин','game_concept_kuei_jin_desc')] женского пола с японской [Concept('culture', 'культурой')|E]"
  DHARMA_ACTIVE_IMPROVE_DUCAL_BUILDING: "Построить или улучшить [Concept('duchy_building', 'герцогскую постройку')|E]"
  DHARMA_ACTIVE_KILL_RAVNOS: "Убить вампира-[GetTrait('ravnos').GetName(GetNullCharacter)|l]"
  DHARMA_ACTIVE_CONVERT_HENGEYOKAI: "#warning Эта часть ожидает соответствующей активации и пока недоступна.#! Обратить хенгейокай ($glossary_fera$)."
@@ -1093,7 +1094,7 @@
  trait_vampire_ill: "Вампирская болезнь"
 
  trait_akuma: "Акума"
- trait_akuma_desc: "Акума, или одержимые демонами, - это те, кто отказались от добродетели и бросили свой жребий вместе с [Glossary('повелителями Яма','podgloss.yamaking')]. См. также «[akuma|E]»."
+ trait_akuma_desc: "Акума, или одержимые демонами, - это те, кто отказались от добродетели и бросили свой жребий вместе с [Glossary('повелителями Яма','podgloss.yamaking')]. См. также «#TOOLTIP:game_concept_akuma_desc #E Акума#!#!»."
 
  trait_mummy: "Мумия"
  trait_mummy_desc: "Мумии, также называемые Вечными или Перерожденными, - бессмертные существа, чьи тела были сохранены ритуалом."
@@ -1166,7 +1167,7 @@
  trait_dhampyr: "Дампир"
  trait_dhampyr_desc: "Дампиры, которых также называют Ходящими в тени или Сумеречными детьми, - это (редкие) дети [GetTrait('kueijin').GetName( GetNullCharacter )|l]. Им дарована долгая жизнь и невероятная удача, однако им мешает постоянное состояние полусмерти и ожидания служения, возлагаемые на них родителями [Glossary('куэй-дзин','game_concept_kuei_jin_desc')]."
  trait_golden_children: "Золотое дитя"
- trait_golden_children_desc: "Золотые дети (или Цзинь Хай) когда-то были духовно благословленными детьми легендарных Десяти тысяч воинов. Будучи смертными, они были героями народа, пока не были убиты своими осквернёнными родителями и низведены до состояния дампиров."
+ trait_golden_children_desc: "Золотые дети (или Цзинь Хай) когда-то были духовно благословленными детьми легендарных Десяти тысяч воинов. Будучи смертными, они были героями народа, пока не были убиты своими осквернёнными родителями [Glossary('куэй-дзин','game_concept_kuei_jin_desc')] и низведены до состояния дампиров."
 
  trait_arcanos_argos: "Аргос"
  trait_arcanos_argos_desc: "Пользователи Аргоса могут манипулировать, перемещаться и путешествовать по [UmbraGlossaryLocalized('pod_realm_tempest','Буре')]."
@@ -1259,7 +1260,7 @@
  trait_laham: "Лахам"
  trait_laham_desc: "Потомство демона. Невероятно долгоживущие, невосприимчивые к боли и часто обладающие нечеловеческими способностями. Считается, что демоническое отродье (или лахам) - особый слуга Ада."
  trait_nephilim: "Нефилим"
- trait_nephilim_desc: "Потомство демона и человека. Они обладают дарами людей и #TOOLTIP:game_concept_lore_lifestyle_desc #E знаниями#!#! демонов, и на них страшно смотреть - если не из-за их отвратительного облика, то из-за их потенциала."
+ trait_nephilim_desc: "Потомство демона и человека. Они обладают дарами людей и знаниями демонов, и на них страшно смотреть - если не из-за их отвратительного облика, то из-за их потенциала."
 
  trait_truepossessed: "Одержимость"
  trait_fomori: "Фомор"
@@ -1291,9 +1292,9 @@
  trait_track_demonologist: "Демонолог"
  trait_track_demonologist_desc: "#bold Уровень 3:#! Позволяет изгнать персонажа-демона в [UmbraGlossaryLocalized('abyss','Бездну')].\n#italic Тот, кто изучает демонов. Демонолог интересуется теоретической, духовной или интеллектуальной наукой о демонах и не обязательно имеет намерение когда-либо вызывать демона или взаимодействовать с ним напрямую. Однако, когда любопытство или жажда власти становятся непреодолимыми, демонология может послужить отправной точкой для диаболизма.#!"
  trait_track_diabolist: "Диаболист"
- trait_track_diabolist_desc: "#bold Уровень 2:#! Позволяет принести в жертву узников, чтобы получить опыт #TOOLTIP:game_concept_investiture_lifestyle_desc #E Пути инвеституры#!#!.\n#bold Уровень 4:#! Позволяет приносить жертвы высшим демонам, чтобы получать дары.\n#italic Тот, кто призывает демонов и стремится управлять ими. Этот термин также может применяться к тому, кто поклоняется демонам. В идеале диаболист должен иметь глубокие познания в демонологии, но не обязательно, хотя попытка призвать могущественного демона без соответствующих знаний о том, как его связать, может привести к фатальным последствиям.#!"
+ trait_track_diabolist_desc: "#bold Уровень 2:#! Позволяет принести в жертву узников, чтобы получить опыт #TOOLTIP:game_concept_investiture_lifestyle_desc #E пути инвеституры#!#!.\n#bold Уровень 4:#! Позволяет приносить жертвы высшим демонам, чтобы получать дары.\n#italic Тот, кто призывает демонов и стремится управлять ими. Этот термин также может применяться к тому, кто поклоняется демонам. В идеале диаболист должен иметь глубокие познания в демонологии, но не обязательно, хотя попытка призвать могущественного демона без соответствующих знаний о том, как его связать, может привести к фатальным последствиям.#!"
  trait_track_thrall: "Раб"
- trait_track_thrall_desc: "#bold Уровень 2:#! Позволяет принести в жертву узников, чтобы получить опыт #TOOLTIP:game_concept_investiture_lifestyle_desc #E Пути инвеституры#!#!.\n#bold Уровень 4:#! Позволяет призвать демона из [UmbraGlossaryLocalized('abyss','Бездны')] в сосуд.\n#italic Тот, кто служит демонам через договор, заключенный непосредственно с конкретным демоном. Раб не обязательно должен быть диаболистом и редко имеет какими-либо предварительные знания о демонологии, хотя вскоре он может получить глубокое, непосредственное знание о природе демонов.#!"
+ trait_track_thrall_desc: "#bold Уровень 2:#! Позволяет принести в жертву узников, чтобы получить опыт #TOOLTIP:game_concept_investiture_lifestyle_desc #E пути инвеституры#!#!.\n#bold Уровень 4:#! Позволяет призвать демона из [UmbraGlossaryLocalized('abyss','Бездны')] в сосуд.\n#italic Тот, кто служит демонам через договор, заключенный непосредственно с конкретным демоном. Раб не обязательно должен быть диаболистом и редко имеет какими-либо предварительные знания о демонологии, хотя вскоре он может получить глубокое, непосредственное знание о природе демонов.#!"
  trait_demonology_kueijin_desc: "Демонология - это призыв и власть над бэйнами, спектрами и другими злыми духами. Многие [GetTrait('kueijin').GetName( GetNullCharacter )|l] практикуют это в той или иной степени. Такая практика даже является одной из особенностей дхармы Тигра-дьявола. Они считают ее естественной частью своей религиозной практики и создали литературу по практическим аспектам этого предмета, столь же обширную в своем роде, как и магические библиотеки У Лун и Ордена Гермеса. Демонология вполне легальна, хотя за пределами кругов Тигра-дьявола она часто считается крайне дурной приметой"
 
  trait_hun_and_po: "Хунь и П'о"
@@ -1321,9 +1322,9 @@
 
  trait_anathema: "Анафема"
  trait_anathema_desc: "Анафемы - это вампиры или другие существа, на которых ведётся Кровавая охота. Иногда этот термин используется для обозначения тринадцати «наиболее разыскиваемых» анафем, составляющих Красный список."
- trait_anathema_character_desc: "Анафема - вампир или другое существо, на которое ведётся [Concept('blood_hunt', 'Кровавая охота')|E]. Иногда этот термин используется для обозначения тринадцати «наиболее разыскиваемых» анафем, составляющих Красный список."
+ trait_anathema_character_desc: "Анафема - вампир или другое существо, на которое ведётся #TOOLTIP:game_concept_blood_hunt_desc #E Кровавая охота#!#!. Иногда этот термин используется для обозначения тринадцати «наиболее разыскиваемых» анафем, составляющих Красный список."
 
- TRAIT_FLAG_DESC_anathema_trait_flag: "Может стать целью [Concept('blood_hunt', 'Кровавой охоты')|E]"
+ TRAIT_FLAG_DESC_anathema_trait_flag: "Может стать целью #TOOLTIP:game_concept_blood_hunt_desc #E Кровавой охоты#!#!"
 
  trait_forever_infamous: "#N;bold Вечное бесчестие#!"
  trait_forever_infamous_desc: "Этот персонаж уже никогда не сможет успокоиться, зная, что весь сверхъестественный мир желает его смерти."
@@ -1346,7 +1347,8 @@
  trait_track_golconda_seeker_desc: "\nВаш [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] представляет собой процент успеха на последних этапах #TOOLTIP:game_concept_journey_desc #E пути#!#! к Голконде ([GetTrait('golconda').GetName(GetNullCharacter)]).\n\n#X Весь прогресс теряется при впадении в неистовство, а также при совершении убийства или кражи.#!"
 
  TRAIT_FLAG_DESC_elder_perk_flag: "Может изучать #TOOLTIP:game_concept_elder_perk_desc #E достоинства старейшин#!#! независимо от [Glossary('поколения','game_concept_vampgeneration_desc')]"
- TRAIT_FLAG_DESC_hungerless_flag: "[Concept('hungerless','Больше не страдает от жажды крови')|E]"
+ #TRAIT_FLAG_DESC_hungerless_flag: "[Concept('hungerless','Больше не страдает от жажды крови')|E]"
+ TRAIT_FLAG_DESC_hungerless_flag: "#TOOLTIP:game_concept_hungerless_desc #E Больше не страдает от жажды крови#!#!"
  TRAIT_FLAG_DESC_immune_to_frenzy_flag: "Не впадает в неистовство"
  TRAIT_FLAG_DESC_perks_for_piety_flag: "Может обменять [Concept('piety', 'благочестие')|E] на [Concept('perks', 'достоинства')|E] #TOOLTIP:game_concept_resonance_desc #E резонанса#!#!"
  TRAIT_FLAG_DESC_humanity_feast_flag: "Может устраивать #TOOLTIP:ACTIVITY_TYPE,activity_feast #L пиры#!#! и получать за это [Concept('piety', 'благочестие')|E]"
@@ -1431,9 +1433,12 @@
  POD_trait_health_track: "[TraitWoundBox('(CFixedPoint)1')] [TraitWoundBox('(CFixedPoint)2')] [TraitWoundBox('(CFixedPoint)3')] [TraitWoundBox('(CFixedPoint)4')] [TraitWoundBox('(CFixedPoint)5')] [TraitWoundBox('(CFixedPoint)6')] [TraitWoundBox('(CFixedPoint)7')] [TraitWoundBox('(CFixedPoint)8')] [TraitWoundBox('(CFixedPoint)9')] [TraitWoundBox('(CFixedPoint)10')] [TraitWoundBox('(CFixedPoint)11')] [TraitWoundBox('(CFixedPoint)12')] [TraitWoundBox('(CFixedPoint)13')] [TraitWoundBox('(CFixedPoint)14')] [TraitWoundBox('(CFixedPoint)15')] [TraitWoundBox('(CFixedPoint)16')] [TraitWoundBox('(CFixedPoint)17')] [TraitWoundBox('(CFixedPoint)18')] [TraitWoundBox('(CFixedPoint)19')] [TraitWoundBox('(CFixedPoint)20')]"
  POD_character_health_track_line1: "[CharacterWoundBox('(CFixedPoint)1')][CharacterWoundBox('(CFixedPoint)2')][CharacterWoundBox('(CFixedPoint)3')][CharacterWoundBox('(CFixedPoint)4')][CharacterWoundBox('(CFixedPoint)5')][CharacterWoundBox('(CFixedPoint)6')][CharacterWoundBox('(CFixedPoint)7')][CharacterWoundBox('(CFixedPoint)8')][CharacterWoundBox('(CFixedPoint)9')][CharacterWoundBox('(CFixedPoint)10')]"
  POD_character_health_track_line2: "[CharacterWoundBox('(CFixedPoint)11')][CharacterWoundBox('(CFixedPoint)12')][CharacterWoundBox('(CFixedPoint)13')][CharacterWoundBox('(CFixedPoint)14')][CharacterWoundBox('(CFixedPoint)15')][CharacterWoundBox('(CFixedPoint)16')][CharacterWoundBox('(CFixedPoint)17')][CharacterWoundBox('(CFixedPoint)18')][CharacterWoundBox('(CFixedPoint)19')][CharacterWoundBox('(CFixedPoint)20')]"
- POD_damage_box: "[Concept('POD_superficial_damage','@health_track_damage_icon!')]"
- POD_aggravated_damage_box: "[Concept('POD_aggravated_damage','@health_track_aggravated_damage_icon!')]"
- POD_undamaged_box: "[Concept('POD_health_track','@health_track_empty_icon!')]"
+ #POD_damage_box: "[Concept('POD_superficial_damage','@health_track_damage_icon!')]"
+ POD_damage_box: "#TOOLTIP:game_concept_POD_superficial_damage_desc #E @health_track_damage_icon!#!#!"
+ #POD_aggravated_damage_box: "[Concept('POD_aggravated_damage','@health_track_aggravated_damage_icon!')]"
+ POD_aggravated_damage_box: "#TOOLTIP:game_concept_POD_aggravated_damage_desc #E @health_track_aggravated_damage_icon!#!#!"
+ #POD_undamaged_box: "[Concept('POD_health_track','@health_track_empty_icon!')]"
+ POD_undamaged_box: "#TOOLTIP:game_concept_POD_health_track_desc #E @health_track_empty_icon!#!#!"
 
  # V20 - Healing and Health
  # (trait xp thresholds 0, 20, 40, 60, 80, 100)

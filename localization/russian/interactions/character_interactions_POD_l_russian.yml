@@ -126,6 +126,13 @@
  POD_copy_clothing_colors_interaction_coterie: "Цвета котерии"
  POD_copy_clothing_colors_interaction_personal: "Личные цвета"
 
+ POD_expose_your_own_secret_interaction: "$expose_secret_interaction$"
+ POD_expose_your_own_secret_interaction_desc: "Раскрыть один из своих [Concept('secrets', 'секретов')|E]."
+
+ POD_end_friendship_interaction: "Покончить с дружбой"
+ POD_end_friendship_interaction_desc: "Перестать [Concept('friends', 'дружить')|E] с персонажем [recipient.GetShortUINameNoTooltip]."
+ POD_end_friendship_interaction_toast: "Дружба подходит к концу"
+
  #POD_mass_demand_conversion_interaction: "Mass Demand Conversion"
  #POD_mass_demand_conversion_interaction_desc: "Demand conversion to everyone you can demand."
  #POD_mass_demand_conversion_num: "$VALUE|0V$ characters will be demanded."
@@ -185,7 +192,6 @@
  ACTOR_TRUEPOSSESSED_REASON: "[actor.GetFirstName] имеет свойство «[GetTraitGroup('truepossessed').GetName()]»: $VALUE|+=0$"
  ACTOR_WRAITH_REASON: "[actor.GetFirstName] имеет свойство «[GetTrait('wraith').GetName( GetNullCharacter )]»: $VALUE|+=0$"
  ACTOR_VAMPIRE_REASON: "[actor.GetFirstName] имеет свойство «[GetTrait('vampire').GetName( GetNullCharacter )]»: $VALUE|+=0$"
- PLASMIC_OPINION_REASON: "Уровень модификатора мнения призраков: $VALUE|+=0$"
  WE_ARE_NOT_FRIENDS: "Мы не являемся [Concept('friends', 'друзьями')|E]: $VALUE|+=0$"
  NUM_OF_SPIRIT_PACTS: "Количество текущих духовных договоров: $VALUE|+=0$"
 

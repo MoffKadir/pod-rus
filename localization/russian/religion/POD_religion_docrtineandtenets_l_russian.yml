@@ -54,8 +54,8 @@
  doctrine_vampirebloodoath_shunned_desc: "Узы крови могут быть таким же бременем для регнанта, как и для невольника, поэтому выбирайте их осторожно, если надумали прибегать к ним. Помните поговорку - Я делаю один глоток крови. Я делаю второй глоток крови. От третьего глотка я отказываюсь."
  doctrine_vampirebloodoath_accepted_name: "Приемлемо"
  doctrine_vampirebloodoath_accepted_desc: "Узы крови - основа нашего общества. Клятвы верности должны быть подкреплены определенной степенью кровного вассалитета."
- doctrine_parameter_vampirebloodoath_illegal: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('unbondable').GetName( GetPlayer )]», принимаются обществом. [Concept('bloodbond', 'Узы крови')|E] снижают благочестие."
- doctrine_parameter_vampirebloodoath_shunned: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('unbondable').GetName( GetPlayer )]», принимаются обществом. [Concept('bloodbond', 'Узы крови')|E] снижают благочестие."
+ doctrine_parameter_vampirebloodoath_illegal: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('unbondable').GetName( GetPlayer )]», принимаются обществом. [Glossary('Узы крови','game_concept_bloodbond_desc')] снижают благочестие."
+ doctrine_parameter_vampirebloodoath_shunned: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('unbondable').GetName( GetPlayer )]», принимаются обществом. [Glossary('Узы крови','game_concept_bloodbond_desc')] снижают благочестие."
  doctrine_parameter_vampirebloodoath_accepted: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('unbondable').GetName( GetPlayer )]», — [criminals|El]."
 
  doctrine_vampireghouling_name: "Вассализация #TOOLTIP:game_concept_ghoul_desc #E гулей#!#!"
@@ -87,7 +87,7 @@
  doctrine_parameter_bloodsorcery_shunned: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('bloodsorcery').GetName( GetPlayer )]», — [shunned|El]."
  doctrine_parameter_bloodsorcery_accepted: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('bloodsorcery').GetName( GetPlayer )]», принимаются обществом."
  doctrine_parameter_bloodsorcery_kufr: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('bloodsorcery').GetName( GetPlayer )]», принимаются обществом."
- doctrine_parameter_non_sihr_bloodsorcery_learning_penalty: "Изучение любой [Concept('bloodmagic_path', 'тропы магии крови')|E] кроме Сихр потребует затрат благочестия и повлечёт за собой дополнительные штрафы."
+ doctrine_parameter_non_sihr_bloodsorcery_learning_penalty: "Изучение любой #TOOLTIP:game_concept_bloodmagic_path_desc #E тропы магии крови#!#! кроме Сихр потребует затрат благочестия и повлечёт за собой дополнительные штрафы."
 
  doctrine_infernalism_name: "Инфернализм"
  doctrine_infernalism_crime_name: "Преступление"

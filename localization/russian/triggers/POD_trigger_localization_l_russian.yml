@@ -151,12 +151,12 @@
  FIRST_NOT_ANATHEMA_TRIGGER: "Вы #bold не#! признаны Камарильей #L $pod_anathema|l$ой#!"
  THIRD_NOT_ANATHEMA_TRIGGER: "[CHARACTER.GetShortUIName] #bold не#! [Select_CString(CHARACTER.IsFemale, 'признана', 'признан' )] Камарильей #L $pod_anathema|l$ой#!"
 
- HAS_TRUE_FAITH_GLOBAL: "Этот персонаж обладает [Concept('true_faith', 'истинной верой')|E]"
- HAS_TRUE_FAITH_FIRST: "Вы обладаете [Concept('true_faith', 'истинной верой')|E]"
- HAS_TRUE_FAITH_THIRD: "[CHARACTER.GetShortUIName] обладает [Concept('true_faith', 'истинной верой')|E]"
- HAS_TRUE_FAITH_GLOBAL_NOT: "Этот персонаж #bold не#! обладает [Concept('true_faith', 'истинной верой')|E]"
- HAS_TRUE_FAITH_FIRST_NOT: "Вы #bold не#! обладаете [Concept('true_faith', 'истинной верой')|E]"
- HAS_TRUE_FAITH_THIRD_NOT: "[CHARACTER.GetShortUIName] #bold не#! обладает [Concept('true_faith', 'истинной верой')|E]"
+ HAS_TRUE_FAITH_GLOBAL: "Этот персонаж обладает [Glossary('истинной верой','game_concept_true_faith_desc')]"
+ HAS_TRUE_FAITH_FIRST: "Вы обладаете [Glossary('истинной верой','game_concept_true_faith_desc')]"
+ HAS_TRUE_FAITH_THIRD: "[CHARACTER.GetShortUIName] обладает [Glossary('истинной верой','game_concept_true_faith_desc')]"
+ HAS_TRUE_FAITH_GLOBAL_NOT: "Этот персонаж #bold не#! обладает [Glossary('истинной верой','game_concept_true_faith_desc')]"
+ HAS_TRUE_FAITH_FIRST_NOT: "Вы #bold не#! обладаете [Glossary('истинной верой','game_concept_true_faith_desc')]"
+ HAS_TRUE_FAITH_THIRD_NOT: "[CHARACTER.GetShortUIName] #bold не#! обладает [Glossary('истинной верой','game_concept_true_faith_desc')]"
 
  INCOMPATIBLE_TENET_WARMONGER_TRIGGER: "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_warmonger').GetName( GetPlayer.GetFaith )]"
 

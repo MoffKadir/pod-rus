@@ -7,8 +7,8 @@
 
  POD_debug_force_into_prison_interaction: "Заключить в темницу"
  POD_debug_force_into_prison_interaction_desc: "Заключить персонажа в темницу, пропустив поединок, который обычно происходит в модификации «[princes_of_darkness|E]»"
- POD_debug_become_laamp_interaction_imprison_recipient: "Вы заключаете этого персонажа в темницу"
- POD_debug_become_laamp_interaction_imprison_actor: "Этот персонаж заключает вас в темницу"
+ POD_debug_force_into_prison_interaction_imprison_recipient: "Вы заключаете этого персонажа в темницу"
+ POD_debug_force_into_prison_interaction_imprison_actor: "Этот персонаж заключает вас в темницу"
 
  POD_debug_teleport_interaction: "Телепортировать"
  POD_debug_teleport_interaction_desc: "вжух"
@@ -48,6 +48,6 @@
 
  POD_debug_umbra_adventure_interaction: "Прототип генерации карты Умбры"
 
- POD_debug_become_laamp_interaction: "Стать авантюристом"
- POD_debug_become_laamp_interaction_desc: "Отказаться от своих владений и стать безземельным авантюристом"
- POD_debug_become_laamp_interaction_gallivanter: "Получить свойство «[GetTrait('gallivanter').GetName(GetPlayer)]» #weak (не позволяет наследовать домен)#!"
+ POD_debug_become_laamp_interaction: "Превратить в авантюриста"
+ POD_debug_become_laamp_interaction_desc: "Превратить персонажа [recipient.GetShortUIName] в безземельного авантюриста."
+ POD_debug_become_laamp_interaction_gallivanter: "Получить свойство «[GetTrait('gallivanter').GetName(GetNullCharacter)]» #weak (не позволяет наследовать домен)#!"
