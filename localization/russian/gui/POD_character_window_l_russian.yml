@@ -6,7 +6,7 @@
  AGE_VANILLA: "[ROOT.Char.GetAge]"
  AGE_VANILLA_TT: "[ROOT.Char.GetDeathOrBirthDateInfo][ROOT.Char.Custom('PODCharacterVisualAge')]"
  AGE_UNKNOWN: "???"
- AGE_UNKNOWN_TT: "[ROOT.Char.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'появился', 'появилась' )] еще до сотворения мира[ROOT.Char.Custom('PODCharacterVisualAge')]"
+ AGE_UNKNOWN_TT: "[ROOT.Char.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'появилась', 'появился' )] еще до сотворения мира[ROOT.Char.Custom('PODCharacterVisualAge')]"
  AGE_PREHISTORY: "[ROOT.Char.MakeScope.ScriptValue('true_age')]"
  AGE_PREHISTORY_TT: "[ROOT.Char.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'появилась', 'появился' )] задолго до истории[ROOT.Char.Custom('PODCharacterVisualAge')]"
  AGE_ANCIENT: "[ROOT.Char.MakeScope.ScriptValue('true_age')]"
