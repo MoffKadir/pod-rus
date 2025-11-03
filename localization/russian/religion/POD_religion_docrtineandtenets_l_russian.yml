@@ -147,9 +147,9 @@
  doctrine_vampirethinblood_accepted_desc: "Сумракорожденные - такие же вампиры, как и все остальные, хотя и слабее."
  doctrine_vampirethinblood_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_vampirethinblood_justicar_desc: "[GetTrait('caitiff').GetName( GetPlayer )] может назначить [Glossary('юстициара','game_concept_justicar_desc')]."
- doctrine_parameter_vampirethinblood_illegal: "Персонажи, имеющие [Concept('trait', 'свойства')|E] «[GetTrait('caitiff').GetName( GetPlayer )]», «[GetTrait('vampgeneration14').GetName( GetPlayer )]», «[GetTrait('vampgeneration15').GetName( GetPlayer )]» или «[GetTrait('vampgeneration16').GetName( GetPlayer )]», — [criminals|El]."
- doctrine_parameter_vampirethinblood_shunned: "Персонажи, имеющие [Concept('trait', 'свойства')|E] «[GetTrait('caitiff').GetName( GetPlayer )]», «[GetTrait('vampgeneration14').GetName( GetPlayer )]», «[GetTrait('vampgeneration15').GetName( GetPlayer )]» или «[GetTrait('vampgeneration16').GetName( GetPlayer )]», — [shunned|El]."
- doctrine_parameter_vampirethinblood_accepted: "Персонажи, имеющие [Concept('trait', 'свойства')|E] «[GetTrait('caitiff').GetName( GetPlayer )]», «[GetTrait('vampgeneration14').GetName( GetPlayer )]», «[GetTrait('vampgeneration15').GetName( GetPlayer )]» или «[GetTrait('vampgeneration16').GetName( GetPlayer )]», принимаются обществом."
+ doctrine_parameter_vampirethinblood_illegal: "Персонажи, имеющие [Concept('trait', 'свойства')|E] «[GetTrait('caitiff').GetName( GetPlayer )]», «[GetTrait('bushi').GetName( GetPlayer )]», «[GetTrait('vampgeneration14').GetName( GetPlayer )]», «[GetTrait('vampgeneration15').GetName( GetPlayer )]» или «[GetTrait('vampgeneration16').GetName( GetPlayer )]», — [criminals|El]."
+ doctrine_parameter_vampirethinblood_shunned: "Персонажи, имеющие [Concept('trait', 'свойства')|E] «[GetTrait('caitiff').GetName( GetPlayer )]», «[GetTrait('bushi').GetName( GetPlayer )]», «[GetTrait('vampgeneration14').GetName( GetPlayer )]», «[GetTrait('vampgeneration15').GetName( GetPlayer )]» или «[GetTrait('vampgeneration16').GetName( GetPlayer )]», — [shunned|El]."
+ doctrine_parameter_vampirethinblood_accepted: "Персонажи, имеющие [Concept('trait', 'свойства')|E] «[GetTrait('caitiff').GetName( GetPlayer )]», «[GetTrait('bushi').GetName( GetPlayer )]», «[GetTrait('vampgeneration14').GetName( GetPlayer )]», «[GetTrait('vampgeneration15').GetName( GetPlayer )]» или «[GetTrait('vampgeneration16').GetName( GetPlayer )]», принимаются обществом."
 
  # Hunter doctrines
 
@@ -555,9 +555,9 @@
  doctrine_ravnos_accepted_desc: "[GetTrait('ravnos').GetName( GetPlayer )] принимаются обществом."
  doctrine_ravnos_justicar_name: "$custom_camarilla_clan_status_justicar$"
  doctrine_ravnos_justicar_desc: "[GetTrait('ravnos').GetName( GetPlayer )] могут назначить [Glossary('юстициара','game_concept_justicar_desc')]."
- doctrine_parameter_ravnos_illegal: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('ravnos').GetName( GetPlayer )]» и «[GetTrait('kizoku').GetName( GetPlayer )]», — [criminals|El]."
- doctrine_parameter_ravnos_shunned: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('ravnos').GetName( GetPlayer )]» и «[GetTrait('kizoku').GetName( GetPlayer )]», — [shunned|El]."
- doctrine_parameter_ravnos_accepted: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('ravnos').GetName( GetPlayer )]» и «[GetTrait('kizoku').GetName( GetPlayer )]», принимаются обществом."
+ doctrine_parameter_ravnos_illegal: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('ravnos').GetName( GetPlayer )]», — [criminals|El]."
+ doctrine_parameter_ravnos_shunned: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('ravnos').GetName( GetPlayer )]», — [shunned|El]."
+ doctrine_parameter_ravnos_accepted: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('ravnos').GetName( GetPlayer )]», принимаются обществом."
  doctrine_ravnos_evil_name: "Зло"
  doctrine_ravnos_evil_desc: "Вечная война между Ван-Куэй и индийскими каинитами не допускает мира."
  doctrine_parameter_hostility_override_raktasadhus_hostility_doctrine: "Рактасадхические [faiths|El] рассматриваются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]."
@@ -762,8 +762,8 @@
  doctrine_enlightenment_virtues_direction_center_name: "Центр"
  doctrine_enlightenment_virtues_direction_center_desc: "Обычно на [GetTrait('kueijin').GetName( GetNullCharacter )|l] центра возлагается обязанность наставлять молодых катайцев в тонкостях их общества, но многие предпочитают исследовать собственную душу, посвящая себя дхармическому просвещению."
 
- tenet_pursuit_of_knowledge_name: "Стремление к знаниям"
- tenet_pursuit_of_knowledge_desc: "Одержимость стремлением к знаниям. Грехом же является нежелание учиться, когда есть такая возможность, отказ от экспериментов, отказ делиться знаниями с другими на Пути."
+ tenet_vanilla_pursuit_of_knowledge_name: "Стремление к знаниям"
+ tenet_vanilla_pursuit_of_knowledge_desc: "Одержимость стремлением к знаниям. Грехом же является нежелание учиться, когда есть такая возможность, отказ от экспериментов, отказ делиться знаниями с другими на Пути."
 
  tenet_greed_is_good_name: "Жадность - это благо"
  tenet_greed_is_good_desc: "Золото - это власть, поэтому они используют накопление богатства, чтобы получить влияние и тем самым насытить своего Зверя."
@@ -800,8 +800,8 @@
  special_doctrine_ashirra_pillars_kindred_name: "Столпы Аширры"
  special_doctrine_ashirra_pillars_kindred_desc: "Хотя те, кто шел по стопам ислама, были выходцами из самых разных кланов и сословий, все они верили в нечто большее, чем они сами."
  doctrine_parameter_hostility_override_special_doctrine_ashirra_pillars_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_ashirra_pillars_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_evil_tooltippable$"
- doctrine_parameter_ashirra_khitta_building_province_bonuses: "Связанные с Аширрой [Concept('khittas', 'хитты')|E] в [Concept('holy_cairo', 'Священном Каире')|E] предоставляют дополнительные налоги, если Каир исповедует эту конфессию"
- doctrine_parameter_ashirra_khitta_building_character_bonuses: "Связанные с Аширрой [Concept('khittas', 'хитты')|E] в [Concept('holy_cairo', 'Священном Каире')|E] предоставляют благочестие, если владелец исповедует эту конфессию"
+ doctrine_parameter_ashirra_khitta_building_province_bonuses: "Связанные с Аширрой [Glossary('хитты','game_concept_khittas_desc')] в #TOOLTIP:game_concept_holy_cairo_desc #E Победоносном Каире#!#! предоставляют дополнительные налоги, если Каир исповедует эту конфессию"
+ doctrine_parameter_ashirra_khitta_building_character_bonuses: "Связанные с Аширрой [Glossary('хитты','game_concept_khittas_desc')] в #TOOLTIP:game_concept_holy_cairo_desc #E Победоносном Каире#!#! предоставляют благочестие, если владелец исповедует эту конфессию"
 
  special_doctrine_lilith_pillars_kindred_name: "Столпы Лилим"
  special_doctrine_lilith_pillars_kindred_desc: "Лилит жаждет мести детям Каина. Но в случае необходимости она примет жаждущих новообращенных или полезных пешек."
@@ -1124,7 +1124,7 @@
 
  # special_doctrine_hunter_hunting_name: "Hunters Hunting"
  # special_doctrine_hunter_hunting_desc: "There can be no peace or negotiations with the Great Enemy. We will destroy them all, or die trying."
- # special_doctrine_ghoul_hunting_name: "[Ghoul|E] Hunting"
+ # special_doctrine_ghoul_hunting_name: "$pod_ghoul$ Hunting"
  # special_doctrine_ghoul_hunting_desc: "There can be no peace or negotiations with the Great Enemy. We will destroy them all, or die trying."
  # special_doctrine_hunter_hunting_no_fae_name: "Hunters Hunting"
  # special_doctrine_hunter_hunting_no_fae_desc: "There can be no peace or negotiations with the Great Enemy. We will destroy them all, or die trying."
@@ -1357,6 +1357,9 @@
 
  doctrine_parameter_oathtruce_alliances_active: "Хранителям Мира легче заключать союзы"
 
+ doctrine_parameter_can_perform_vaulderie: "Можно совершить ритуал Братания с членами #TOOLTIP:game_concept_coterie_desc #E котерии#!#! через [Concept('decision', 'решение')|E]"
+ doctrine_parameter_overwork_capital_unlocked: "Разблокировано [Concept('decision', 'решение')|E] #V $overwork_capital_decision$#!, увеличивающее [Concept('development', 'развитие')|E] в обмен на [Concept('prestige', 'престиж')|E] и #TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! раскрытие Маскарада#!#!"
+
  stygia_hostility_name: "Отношение к Стигии"
  special_doctrine_is_legion_faith_name: "Легион"
  special_doctrine_is_legion_faith_desc: "Для стигийских призраков Иерархия - это общество, и восемь Легионов - это Иерархия."
@@ -1380,6 +1383,12 @@
  tenet_kind_warriors_name: "Добрые воины"
  tenet_kind_warriors_desc: "Гурали - защитники и целители среди меняющихся пород и изначальные защитники Геи. Хотя они известны своей мягкостью и медлительностью, даже смерть не может помешать им исполнить свой долг."
  doctrine_parameter_raiding_forbidden: "Нельзя устраивать [Concept('raid', 'набеги')|E]"
+
+ tenet_amakusa_rite_name: "Обряд Амакуса"
+ tenet_amakusa_rite_desc: "Благодаря смешиванию витэ в общей чаше и соблюдению надлежащих обрядов и уважения, отвары, разрушающие угнетение и уравнивающие всех под покровом ночи, могут освободить Кровавое племя, ибо их вечная революция может продолжаться, не опасаясь уз крови и не испытывая недостатка в средствах для этого."
+
+ tenet_cruelty_of_stars_name: "Жестокость звёзд"
+ tenet_cruelty_of_stars_desc: "За каждым большим богатством стоит ещё более тяжкое преступление. Смертные - это мясо, а кровавое исчадие - потребитель. Просветление - это игра для бедняков. Гоните их, сокрушайте, обкрадывайте и заставляйте работать, убеждая, что это выгодная сделка. Пусть они называют вас инферналистами. Вам нужно зарабатывать деньги."
 
 
  land_of_faith_controlled_name: "Земля веры"

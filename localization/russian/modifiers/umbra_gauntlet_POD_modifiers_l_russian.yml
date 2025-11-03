@@ -23,7 +23,7 @@
  gauntlet10_modifier_desc: "Барьер - это преграда, окружающая материальную реальность, которую в Поднебесной также называют Стеной.\n#weak Тем, кто сидит в этом месте, не разрешается использовать искусство Ци.#!\nСтоимость входа в #TOOLTIP:game_concept_umbra_desc #E Умбру#!#!: [gold_i]#N +100%#!"
 
  shroud0_modifier: "Саван 0"
- shroud0_modifier_desc: "[Glossary('земли Плоти','game_concept_skinlands_desc')] и [UmbraGlossary('shadowlands')] снова едины, пока что.\nСтоимость входа в Загробный мир: [gold_i]#P -100%#!"
+ shroud0_modifier_desc: "[Glossary('Земли Плоти','game_concept_skinlands_desc')] и [UmbraGlossary('shadowlands')] снова едины, пока что.\nСтоимость входа в Загробный мир: [gold_i]#P -100%#!"
  shroud1_modifier: "Саван 1"
  shroud1_modifier_desc: "Саван - это мистический барьер, отделяющий [UmbraGlossaryLocalized('shadowlands','Загробный мир')] от [Glossary('земель Плоти','game_concept_skinlands_desc')]. Здесь его почти нет.\nСтоимость входа в Загробный мир: [gold_i]#P -80%#!"
  shroud2_modifier: "Саван 2"
@@ -45,25 +45,6 @@
  shroud10_modifier: "Саван 10"
  shroud10_modifier_desc: "Саван - это мистический барьер, отделяющий [UmbraGlossaryLocalized('shadowlands','Загробный мир')] от [Glossary('земель Плоти','game_concept_skinlands_desc')]. Здесь он непроницаем.\nСтоимость входа в Загробный мир: [gold_i]#N +100%#!"
 
- spirit_opinion0_modifier: "Мнение духов 0: Ярость"
- spirit_opinion1_modifier: "Мнение духов 1: Злость"
- spirit_opinion2_modifier: "Мнение духов 2: Раздражение"
- spirit_opinion3_modifier: "Мнение духов 3: Спокойствие"
- spirit_opinion4_modifier: "Мнение духов 4: Счастье"
- spirit_opinion5_modifier: "Мнение духов 5: Благодарность"
-
- plasmic_opinion0_modifier: "Мнение призраков 0: Ярость"
- plasmic_opinion0_modifier_desc: "Вероятность того, что посланные призраки выучат новые #TOOLTIP:game_concept_arcanoi_lifestyle_desc #E арканои#!#!: #N -20%#!"
- plasmic_opinion1_modifier: "Мнение призраков 1: Злость"
- plasmic_opinion1_modifier_desc: "Вероятность того, что посланные призраки выучат новые #TOOLTIP:game_concept_arcanoi_lifestyle_desc #E арканои#!#!: #N -10%#!"
- plasmic_opinion2_modifier: "Мнение призраков 2: Раздражение"
- plasmic_opinion2_modifier_desc: "Вероятность того, что посланные призраки выучат новые #TOOLTIP:game_concept_arcanoi_lifestyle_desc #E арканои#!#!: #N -5%#!"
- plasmic_opinion3_modifier: "Мнение призраков 3: Спокойствие"
- plasmic_opinion4_modifier: "Мнение призраков 4: Счастье"
- plasmic_opinion4_modifier_desc: "Вероятность того, что посланные призраки выучат новые #TOOLTIP:game_concept_arcanoi_lifestyle_desc #E арканои#!#!: #P +30%#!"
- plasmic_opinion5_modifier: "Мнение призраков 5: Благодарность"
- plasmic_opinion5_modifier_desc: "Вероятность того, что посланные призраки выучат новые #TOOLTIP:game_concept_arcanoi_lifestyle_desc #E арканои#!#!: #P +80%#!"
-
 
  NOT_wall_too_strong_trigger_tooltip: "Эта локация #Bold не#! должна иметь модификатор провинции «Стена» (Барьер) на 10 уровне."
  NOT_wall_too_weak_trigger_tooltip: "Эта локация #Bold не#! должна иметь модификатор провинции «Стена» (Барьер) на 0 уровне."
@@ -74,8 +55,6 @@
  NOT_shroud_too_strong_trigger_tooltip: "Эта локация #Bold не#! должна иметь модификатор провинции «Саван» на 10 уровне."
  NOT_shroud_too_weak_trigger_tooltip: "Эта локация #Bold не#! должна иметь модификатор провинции «Саван» на 0 уровне."
  NOT_shroud_1_trigger_tooltip: "Эта локация #Bold не#! должна иметь модификатор провинции «Саван» на 1 уровне."
- NOT_has_spirit_opinion_trigger_tooltip: "У вас #Bold не#! должно быть модификатора «Мнение духов»."
- NOT_has_plasmic_opinion_trigger_tooltip: "У вас #Bold не#! должно быть модификатора «Мнение призраков»."
 
  nihil_modifier: "Нихиль"
  nihil_modifier_desc: "Портал, который соединяет определенную локацию с [UmbraGlossaryLocalized('pod_realm_tempest','Бурей')] или Лабиринтом."
