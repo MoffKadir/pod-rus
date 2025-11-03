@@ -92,7 +92,7 @@
 
  POD_gnosis_regen_beast_born: "[GetTrait('beast_born').GetName(GetPlayer)]"
  POD_gnosis_regen_piety_level: "[piety_level|E]"
- POD_gnosis_regen_spirit_companions: "#L $pod_spirit_companions$овные спутники#!"
+ POD_gnosis_regen_spirit_companions: "#TOOLTIP:game_concept_spirit_companion_desc #E Духовные спутники#!#!"
  POD_gnosis_regen_stress: "[stress_level|E]"
  POD_gnosis_regen_buildings: "От домена"
  POD_gnosis_regen_spirit_ties: "[GetPerk('fomori_spirit_ties_perk').GetName(GetPlayer)]"

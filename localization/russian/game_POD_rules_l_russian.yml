@@ -15,7 +15,7 @@
  setting_pod_lore_restrictions_default: "По умолчанию"
  setting_pod_lore_restrictions_default_desc: "Сбалансированный опыт, подходящий для большинства игроков."
  setting_pod_lore_restrictions_more: "#high @wod_icon! $game_concept_storyteller_mode$#!"
- setting_pod_lore_restrictions_more_desc: "Активируется #L $pod_storyteller_mode_with_icon|l$ рассказчика#!. Более #N сложное#! игровое правило для опытных игроков."
+ setting_pod_lore_restrictions_more_desc: "Активируется #TOOLTIP:game_concept_storyteller_mode_desc #E @wod_icon! режим рассказчика#!#!. Более #N сложное#! игровое правило для опытных игроков."
  setting_pod_lore_restrictions_less: "#high @haight_icon! $game_concept_samuel_haight_mode$#!"
  setting_pod_lore_restrictions_less_desc: "Активируется режим #TOOLTIP:game_concept_samuel_haight_desc #E Сэмюэль Хайт#!#!. #N Безумный#! режим для игроков, которым нравятся суперсильные персонажи."
  setting_pod_lore_restrictions_custom: "#high @mage_icon! Пользовательский#!"
@@ -51,7 +51,7 @@
  setting_pod_splat_hostility_default: "По умолчанию"
  setting_pod_splat_hostility_default_desc: "Некоторые #TOOLTIP:game_concept_splat_desc #E виды#!#! враждуют друг с другом, что препятствует большинству [Concept('interactions', 'взаимодействий')|E] между ними."
  setting_pod_splat_hostility_disabled: "#high @haight_icon! Отключено#!"
- setting_pod_splat_hostility_disabled_desc: "#L $pod_splats$ы#! не лишены возможности взаимодействовать друг с другом (хотя на них по-прежнему распространяются наказания за мнение и доктрины преступлений)."
+ setting_pod_splat_hostility_disabled_desc: "#TOOLTIP:game_concept_splat_desc #E Виды#!#! не лишены возможности взаимодействовать друг с другом (хотя на них по-прежнему распространяются наказания за мнение и доктрины преступлений)."
 
  rule_pod_charjoin_decisions: "$POD_gamerule$ Решения по созданию персонажа"
  setting_pod_charjoin_decisions_disabled: "Отключено"

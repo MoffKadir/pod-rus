@@ -1341,8 +1341,8 @@
  trait_golconda_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] [Select_CString(ROOT.GetCharacter.IsFemale, 'обрела', 'обрел' )] внутренний покой, достигнув #TOOLTIP:game_concept_golconda_desc #E просветления#!#! в истинной природе [Glossary('Зверя','game_concept_beast_desc')]."
 
  trait_golconda_seeker: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Искательница', 'Искатель' )] Голконды"
- trait_golconda_seeker_desc: "Этот персонаж находится на долгом пути к #L $pod_enlightenment|l$ению#!."
- trait_golconda_seeker_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] находится на долгом пути к #L $pod_enlightenment|l$ению#!."
+ trait_golconda_seeker_desc: "Этот персонаж находится на долгом пути к #TOOLTIP:game_concept_golconda_desc #E просветлению#!#!."
+ trait_golconda_seeker_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] находится на долгом пути к #TOOLTIP:game_concept_golconda_desc #E просветлению#!#!."
  trait_track_golconda_seeker: "Проницательность"
  trait_track_golconda_seeker_desc: "\nВаш [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] представляет собой процент успеха на последних этапах #TOOLTIP:game_concept_journey_desc #E пути#!#! к Голконде ([GetTrait('golconda').GetName(GetNullCharacter)]).\n\n#X Весь прогресс теряется при впадении в неистовство, а также при совершении убийства или кражи.#!"
 
