@@ -8,7 +8,7 @@
  AGE_UNKNOWN: "???"
  AGE_UNKNOWN_TT: "[ROOT.Char.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'появился', 'появилась' )] еще до сотворения мира[ROOT.Char.Custom('PODCharacterVisualAge')]"
  AGE_PREHISTORY: "[ROOT.Char.MakeScope.ScriptValue('true_age')]"
- AGE_PREHISTORY_TT: "[ROOT.Char.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'появился', 'появилась' )] задолго до истории[ROOT.Char.Custom('PODCharacterVisualAge')]"
+ AGE_PREHISTORY_TT: "[ROOT.Char.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'появилась', 'появился' )] задолго до истории[ROOT.Char.Custom('PODCharacterVisualAge')]"
  AGE_ANCIENT: "[ROOT.Char.MakeScope.ScriptValue('true_age')]"
  AGE_ANCIENT_TT: "[ROOT.Char.GetFirstNameNoTooltip] [Select_CString(ROOT.Char.IsFemale, 'древняя', 'древний' )]"
  POD_VISUAL_AGE: "\nСудя по [ROOT.Char.GetHerHis] внешнему виду, [ROOT.Char.GetHerHim] [ROOT.Char.MakeScope.ScriptValue('POD_visual_age')|V0] лет"
