@@ -318,6 +318,16 @@
  setting_cappadocian_piety_skeleton_desc: "Каппадокийцы старше века предстают в виде скелетов только тогда, когда они находятся в состоянии максимального стресса, максимального раскрытия Маскарада, их благочестие приняло отрицательное значение, испытывают максимальный голод, находятся в торпоре или окончательно уничтожены (за некоторыми исключениями)."
  setting_cappadocian_all_skeleton: "#high Пляска смерти#!"
  setting_cappadocian_all_skeleton_desc: "Каппадокийцы старше века выглядят как скелеты (за некоторыми исключениями)."
+ 
+ rule_pod_ai_additional_maa: "$POD_gamerule$ #clickable Экспериментально:#! Дополнительные [Concept( 'men_at_arms', 'профессионалы' )|E] для ИИ"
+ setting_pod_ai_additional_maa_disabled: "Отключено"
+ setting_pod_ai_additional_maa_disabled_desc: "ИИ будет нанимать [Concept( 'men_at_arms', 'профессионалов' )|E] обычным способом — исходя из их характера, бюджета и прочих факторов.\n\n#R Примечание: из-за ошибки в оригинале это фактически не работает, и персонажи ИИ не нанимают [Concept( 'men_at_arms', 'профессионалов' )|E] после начала игры.#!"
+ setting_pod_ai_additional_maa_enabled: "#high Включено#!"
+ setting_pod_ai_additional_maa_enabled_desc: "Персонажи ИИ будут регулярно получать бесплатные полки [Concept( 'men_at_arms', 'профессионалов' )|E], при условии, что у них есть лишние средства."
+ setting_pod_ai_additional_maa_enabled_50: "#high Включено, скидка 50%#!"
+ setting_pod_ai_additional_maa_enabled_50_desc: "Персонажи ИИ будут регулярно получать бесплатные полки [Concept( 'men_at_arms', 'профессионалов' )|E], при условии, что у них есть лишние средства. Кроме того, содержание [Concept( 'men_at_arms', 'профессионалов' )|E] для ИИ на #V 50%#! дешевле."
+ setting_pod_ai_additional_maa_enabled_90: "#high Включено, скидка 90%#!"
+ setting_pod_ai_additional_maa_enabled_90_desc: "Персонажи ИИ будут регулярно получать бесплатные полки [Concept( 'men_at_arms', 'профессионалов' )|E], при условии, что у них есть лишние средства. Кроме того, содержание [Concept( 'men_at_arms', 'профессионалов' )|E] для ИИ на #V 90%#! дешевле."
 
  rule_pod_levies: "$POD_gamerule$ #clickable Экспериментально:#! Ополчение"
  setting_pod_levies_default: "По умолчанию"
