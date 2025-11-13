@@ -69,7 +69,7 @@
 
  LORE_COMMAND_THE_FLAME_PERK_EFFECT: "Накладывает на каждого правителя противоположной стороны модификатор [GetModifier('lore_command_the_flame_modifier').GetNameWithTooltip] при начале [Concept('war', 'войны')|E] в качестве основного атакующего или защитника.\n#flavor Падшие могут повелевать пламенем божественности.#!"
  LORE_AURA_OF_LEGEND_PERK_EFFECT: "#flavor Падшие могут предстать в образе живой легенды или даже бога.#!"
- LORE_THE_MARK_OF_THE_CELESITALS_PERK_EFFECT: "Вы можете наделить вашу цель модификатором [GetModifier('lore_the_mark_of_the_celesitals_good_modifier').GetNameWithTooltip] или [GetModifier('lore_the_mark_of_the_celesitals_bad_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут оставить божественную метку на другом человеке, наделив его удачей или невезением.#!"
+ LORE_THE_MARK_OF_THE_CELESITALS_PERK_EFFECT: "Вы можете наделить себя и вашу цель модификатором [GetModifier('lore_the_mark_of_the_celesitals_good_modifier').GetNameWithTooltip] или [GetModifier('lore_the_mark_of_the_celesitals_bad_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут оставить божественную метку на другом человеке, наделив его удачей или невезением.#!"
  LORE_HAND_OF_FAITH_PERK_EFFECT: "Можно изгонять призраков, фей или демонов в их родные миры #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!.\n#flavor Падшие могут изгнать существ, не созданных Богом.#!"
  LORE_REVELATION_PERK_EFFECT: "Вы можете узнать все секреты и происки цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут читать существ на Божьей Земле как открытую книгу.#!"
 
@@ -119,7 +119,7 @@
  LORE_INSPIRE_PERK_EFFECT: "Вы можете наделить кого-либо вдохновением через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут вдохновлять других существ, чтобы принести в мир больше красоты.#!"
  LORE_ALTER_APPEARANCE_PERK_EFFECT: "Вы можете сделать вашу цель более красивой или уродливой через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут дарить красоту другим существам или отнимать её.#!"
  LORE_COMMAND_THE_STORM_PERK_EFFECT: "Улучшает достоинство «[GetPerk('lore_manipulate_weather_perk').GetName(GetPlayer)]», позволяя влиять на целое [Concept('duchy', 'герцогство')|E].\n#flavor Падшие могут внушать величие, управляя сильными штормами.#!"
- LORE_SHAPECHANGE_PERK_EFFECT: "Вы можете изменить физические свойства вашей цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут создавать необычную красоту, изменяя форму других существ.#!"
+ LORE_SHAPECHANGE_PERK_EFFECT: "Вы можете изменить свои физические свойства и вашей цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут создавать необычную красоту, изменяя форму других существ.#!"
 
  lore_command_animals_perk_name: "Повелевание животными"
  lore_manipulate_flesh_perk_name: "Манипулирование плотью"
