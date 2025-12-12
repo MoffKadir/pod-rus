@@ -196,7 +196,7 @@
  doctrine_parameter_invasion_cb_enabled: "Prestigious [rulers|E] can use an Invasion [casus_belli|E] once every #V 100#! years"
  BEFRIEND_SUCCESS_DESC: "[TARGET_CHARACTER.GetShortUIName|U] might become your [friend|E]\n#weak You can only use this interaction as long as you have fewer than $POD_player_befriend_limit$ friends#!"
  CREATE_FAITH_WINDOW_TITLE_TOOLTIP: "#T $CREATE_FAITH_WINDOW_TITLE$#!\n#X Creating a new faith is barely supported in PoD. You might lose access to important pieces of content or break some scripts. You have been warned.#!\nCreate a new [faith|E] by choosing [core_tenets|E] and [doctrines|E]"
- can_recruit_character_to_court_trigger.tt.laamps_invitation_restrictions: "[adventurers|E] may only invite their [player_heir|E], [soulmate|E], [best_friend|E], or [spouses|E] to their [camp|E]\n\nIn [princes_of_darkness|E], you can also invite:\n$EFFECT_LIST_BULLET$$pod_coterie$ members\n$EFFECT_LIST_BULLET$Your former #TOOLTIP:GAME_TRAIT,adventurer_follower,[GetNullCharacter] #L Followers#!#!\n$EFFECT_LIST_BULLET$Characters who have a subservient relationship with you (Herd, Dreamer, Ghoul, Thrall, Host, Bound Wraith, or Bound Demon)\n$EFFECT_LIST_BULLET$Characters you have certain supernatural hooks on ($strong_bloodoath_hook$, $soul_bond_hook$, $true_name_hook$, or $conditioning_hook$)\n$EFFECT_LIST_BULLET$Your Clones and #TOOLTIP:GAME_TRAIT,automaton,[GetNullCharacter] #L Automata#!#!"
+ can_recruit_character_to_court_trigger.tt.laamps_invitation_restrictions: "[adventurers|E] may only invite their [player_heir|E], [soulmate|E], [best_friend|E], or [spouses|E] to their [camp|E]\n\nIn [princes_of_darkness|E], you can also invite:\n$EFFECT_LIST_BULLET$[coterie|E] members\n$EFFECT_LIST_BULLET$Your former #TOOLTIP:GAME_TRAIT,adventurer_follower,[GetNullCharacter] #L Followers#!#!\n$EFFECT_LIST_BULLET$Characters who have a subservient relationship with you (Herd, Dreamer, Ghoul, Thrall, Host, Bound Wraith, or Bound Demon)\n$EFFECT_LIST_BULLET$Characters you have certain supernatural hooks on ($strong_bloodoath_hook$, $soul_bond_hook$, $true_name_hook$, or $conditioning_hook$)\n$EFFECT_LIST_BULLET$Your Clones and #TOOLTIP:GAME_TRAIT,automaton,[GetNullCharacter] #L Automata#!#!"
  adventurer_stalwart_leader_perk_effect: "[adventurer_i] Can use #V $contact_list_request_interaction$#! to make [count|E]-[rank|E] [rulers|E] or higher start a [GetActivityType('activity_tournament').GetTextIcon][GetActivityType('activity_tournament').GetName] or [GetActivityType('activity_brujah_panegyra').GetTextIcon][GetActivityType('activity_brujah_panegyra').GetName] #weak (if the [activity|E] is valid for both characters)#!"
  master_thief_camp_officer_employer_custom_effect_description: "$BULLET$Unlocks the [buy_artifact_claim_interaction|E]"
 
@@ -434,7 +434,7 @@
  domicile_building_parameter_camp_better_scout_for_talent: "Find more [officers|E] using [GetTravelOption('adventurers_scout_for_talent_option').GetName] $pod_only_if_unlanded$"
 
  # Visit local settlement
- local_holding_type_concept_grand_city_holding: "$pod_grand_city$"
+ local_holding_type_concept_grand_city_holding: "[grand_city|E]"
  local_holding_type_grand_city_holding: "$game_concept_grand_city$ holding"
  local_holding_type_capitalized_grand_city_holding: "$game_concept_grand_city$ Holding"
  ep3_laamp_decision_event.1000.c: "Let us have a look at [visiting_location.GetBaronyNameExplicitlyNoTooltip] castle."
@@ -520,3 +520,16 @@
  
  #Reused
  CHINESE_CONSOLIDATION_CB_NAME: "Consolidate Land Under Heaven"
+ adventurers_forward_scouts_option.tt.has_right_parameter: "You have a [domicile_building|E] that enables this option."
+ ACTIVITY_LIST_NOTIFY_ME_ABOUT_TOURNAMENTS:1 "Notify when you can join a Brujah Panegyra"
+ 
+ #refer to vanilla buildings 
+ camp_purpose_mercenaries_effects: "$EFFECT_LIST_BULLET$Finds more [mercenary_task_contracts|E]\n$EFFECT_LIST_BULLET$Finds more [prowess|E] and [martial|E] [task_contracts|E]\n\n#WEAK Mercenaries earn their coin first and foremost by the sword. Usually legally, but when times are tough and all you have is an axe...#!"
+ camp_purpose_wanderers_effects: "$EFFECT_LIST_BULLET$Equal chance to find [task_contracts|E] of any type\n$EFFECT_LIST_BULLET$May change to any other $camp_purpose$ without paying hefty [prestige|E]\n\n#WEAK The open road offers a freedom quite unlike any other: why sully that with a needless niche?#!"
+ camp_purpose_scholars_effects: "$EFFECT_LIST_BULLET$Finds more [learning|E] and [stewardship|E] [task_contracts|E]\n$EFFECT_LIST_BULLET$Finds slightly more [diplomacy|E] [task_contracts|E]\n\n#WEAK A book kept in one library is restless, an idea held in only one mind is wasted.#!"
+ camp_purpose_brigands_effects: "$EFFECT_LIST_BULLET$Finds more [criminal_task_contracts|E] of all kinds\n$EFFECT_LIST_BULLET$Finds more [prowess|E] and [intrigue|E] [task_contracts|E]\n\n#WEAK "Brigand" is such an ugly term — there's nothing wrong with being decisive and practical, especially if you can turn a tidy profit at the same time.#!"
+ camp_purpose_legitimists_effects: "$EFFECT_LIST_BULLET$Equal chance to find [task_contracts|E] of any type\n$EFFECT_LIST_BULLET$Can use $request_laamp_legitimist_support$ Interaction on Kings and Emperors\n$EFFECT_LIST_BULLET$Can use $claim_cb$ [casus_belli|E]\n$EFFECT_LIST_BULLET$Finds unique $laamp_legitimist_support_contract$ [task_contract|E]\n\n#WEAK A claim, they call it. A mere claim. It's not just a claim, it's a letter of debt, a statement of intent, and a sure marker of the reclamation yet to come.#!"
+ ep3_can_have_legitimists_camp_purpose_trigger.tt.explanation: "You must have a [pressed_claim|E] on at least one [kingdom|E]-[title_tier|E] [title|E]"
+ 
+ 
+ 
