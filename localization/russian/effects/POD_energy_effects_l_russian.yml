@@ -2,23 +2,21 @@
 # Energy types
  POD_energy_angst: "@wraith_icon!Ангст" # TODO: different icon?
  POD_energy_pathos: "@wraith_icon!Пафос"
- POD_energy_blood: "$pod_hunger_i$Кровь"
+ POD_energy_blood: "[hunger_i]Кровь"
  POD_energy_resolve: "@demon_icon!Решимость"
  POD_energy_gnosis: "@gnosis_icon!Гнозис"
  POD_energy_glamour: "@changeling_icon!Гламур"
  POD_energy_dread: "[Concept('dread','@dread_icon!Ужас')|E]"
- #POD_energy: "[Concept('static_stress','@stress_loss_icon!Сила воли')|E]"
  POD_energy: "#TOOLTIP:game_concept_static_stress_desc #E @stress_loss_icon!Сила воли#!#!"
 
  POD_energy_angst_icon: "@wraith_icon!" # TODO: different icon?
  POD_energy_pathos_icon: "@wraith_icon!"
- POD_energy_blood_icon: "$pod_hunger_i$"
+ POD_energy_blood_icon: "[hunger_i]"
  POD_energy_resolve_icon: "@demon_icon!"
  POD_energy_gnosis_icon: "@gnosis_icon!"
  POD_energy_glamour_icon: "@changeling_icon!"
  POD_energy_dread_icon: "[Concept('dread','@dread_icon!')]"
  # using the stress gain icon instead of stress loss since it makes more sense for energy costs
- #POD_energy_icon: "[Concept('static_stress','@stress_gain_icon!')]"
  POD_energy_icon: "#TOOLTIP:game_concept_static_stress_desc #E @stress_gain_icon!#!#!"
 
  POD_splat_energy_cost: "$VALUE|0$ ед. [CHARACTER.Custom('PODEnergySplatIcon')]"

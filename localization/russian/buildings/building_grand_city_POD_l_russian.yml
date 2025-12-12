@@ -1244,7 +1244,7 @@
  building_cairo_caern_wind_03_desc: "Во время поражения Сета он проклял их, лишив племя духов предков и изгнав их из земель Кхема."
  building_cairo_caern_wind_04: "Впечатляющий каэрн Этезианского ветра"
  building_cairo_caern_wind_04_desc: "Несмотря на то, что они никогда не смогут по-настоящему вернуться в Кхем, странники с головами шакалов остаются сильными защитниками Маат."
- POD_cairo_caern_wind_bonus: "#help Если у вас есть свойство «[GetTrait('werewolf').GetName(GetNullCharacter)]»:#!\nСнижает стоимость [Concept('artifacts','артефактов')|E] планетария #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! на 500$pod_grace_i$\n\n#help Если же нет:#!\nДаёт доступ к [Concept('character_interaction', 'взаимодействию персонажа')|E] «Лунный мост»"
+ POD_cairo_caern_wind_bonus: "#help Если у вас есть свойство «[GetTrait('werewolf').GetName(GetNullCharacter)]»:#!\nСнижает стоимость [Concept('artifacts','артефактов')|E] планетария #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! на 500[grace_i]\n\n#help Если же нет:#!\nДаёт доступ к [Concept('character_interaction', 'взаимодействию персонажа')|E] «Лунный мост»"
 
 
  building_type_cairo_canton_children_01: "Кантон верующих"
@@ -1296,7 +1296,7 @@
  building_cairo_canton_eshu_03_desc: "$building_cairo_canton_eshu_01_desc$"
  building_cairo_canton_eshu_04: "Огромный кантон Странствующих"
  building_cairo_canton_eshu_04_desc: "$building_cairo_canton_eshu_01_desc$"
- POD_cairo_canton_eshu_bonus: "#help Если у имеется свойство «[GetTrait('fae').GetName(GetNullCharacter)]»:#!\nУвеличивает вероятность успеха узлов #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!\n\n#help Если же нет:#!\nВаши исследователи $pod_grace_i$#TOOLTIP:game_concept_umbra_desc #E Умбры#!#! со свойством «[GetTrait('fae').GetName(GetNullCharacter)]» всегда будут добиваться успеха в #TOOLTIP:game_concept_umbra_expedition_desc #E путешествиях в Умбру#!#! [UmbraGlossaryLocalized('dreaming','Грёзах')]"
+ POD_cairo_canton_eshu_bonus: "#help Если у имеется свойство «[GetTrait('fae').GetName(GetNullCharacter)]»:#!\nУвеличивает вероятность успеха узлов #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!\n\n#help Если же нет:#!\nВаши исследователи [grace_i]#TOOLTIP:game_concept_umbra_desc #E Умбры#!#! со свойством «[GetTrait('fae').GetName(GetNullCharacter)]» всегда будут добиваться успеха в #TOOLTIP:game_concept_umbra_expedition_desc #E путешествиях в Умбру#!#! [UmbraGlossaryLocalized('dreaming','Грёзах')]"
 
 
 
