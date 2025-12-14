@@ -35,14 +35,14 @@
 
  BOTTOMBAR_JOURNEY_TOOLTIP: "#T Странствие:#!\n$POD_JOURNEY_DESC$"
 
- POD_journey_coterie_desc: "Члены группы $POD_player_coterie$ находятся на стадии [GetPlayer.Custom('PODShowJourneyPhase')|l] в их #TOOLTIP:game_concept_journey_desc #E странствии#!#!."
- POD_journey_player_desc: "[GetPlayer.GetFirstNameNoTooltip] находится на стадии [GetPlayer.Custom('PODShowJourneyPhase')|l] в своём #TOOLTIP:game_concept_journey_desc #E странствии#!#!."
+ POD_journey_coterie_desc: "Члены группы $POD_player_coterie$ находятся на стадии [GetPlayer.Custom('PODShowJourneyPhase')|l] в их [Concept('journey', 'странствии')|E]."
+ POD_journey_player_desc: "[GetPlayer.GetFirstNameNoTooltip] находится на стадии [GetPlayer.Custom('PODShowJourneyPhase')|l] в своём [Concept('journey', 'странствии')|E]."
 
  POD_journey_progress_desc: "Прогресс: #V;P;bold $POD_JOURNEY_GETPROGRESS$#!"
  POD_journey_planning_speed_desc: "#TOOLTIP:game_concept_planning_speed_desc #E Скорость планирования#!#!: #V [Localize(Concatenate(GetPlayer.MakeScope.Var('current_journey').Var('progress_value').GetFlagName,'_monthly_num_current'))]#![AddTextIf(Not(PlayerGuiIsShown('POD_current_journey_is_instant')),' #help (подробности см. в подсказке)#!')]"
 
  POD_journey_phase_planning: "#TOOLTIP:game_concept_planning_phase_desc #E Фаза планирования#!#!"
- POD_journey_phase_travel: "#TOOLTIP:game_concept_travel_phase_desc #E Фаза путешествия#!#!"
+ POD_journey_phase_travel: "[Concept('travel_phase', 'Фаза путешествия')|E]"
  POD_journey_phase_error: "ОШИБКА ЭТАПА"
 
 
@@ -59,20 +59,20 @@
  POD_journeys: "Странствия"
  POD_great_journeys: "Великие странствия"
  POD_paused_journeys: "Приостановленные странствия"
- POD_travel_ready_journeys: "Доступные странствия на #TOOLTIP:game_concept_travel_phase_desc #E фазе путешествия#!#!"
+ POD_travel_ready_journeys: "Доступные странствия на [Concept('travel_phase', 'фазе путешествия')|E]"
 
- POD_journey_refresh_prompt: "Ваше сохранение относится к старой версии [princes_of_darkness|E].\nНажмите на кнопку ниже, чтобы обновить свои #TOOLTIP:game_concept_journey_desc #E странствия#!#!."
+ POD_journey_refresh_prompt: "Ваше сохранение относится к старой версии [princes_of_darkness|E].\nНажмите на кнопку ниже, чтобы обновить свои [Concept('journey', 'странствия')|E]."
 
  POD_abandon_journey_tt: "#T Отказаться от странствия#!"
  POD_abandon_journey_confirm_title: "Отказаться от странствия"
- POD_abandon_journey_confirm_text: "Вы уверены, что хотите отказаться от своего #TOOLTIP:game_concept_journey_desc #E странствия#!#! в #bold [story.Custom('PODShowJourneyName')]#!?\n\nВы потеряете весь прогресс, и затраты не будут возмещены."
+ POD_abandon_journey_confirm_text: "Вы уверены, что хотите отказаться от своего [Concept('journey', 'странствия')|E] в #bold [story.Custom('PODShowJourneyName')]#!?\n\nВы потеряете весь прогресс, и затраты не будут возмещены."
 
- POD_resume_paused_journey: "\n\n#I Нажмите, чтобы возобновить это #TOOLTIP:game_concept_journey_desc #E странствие#!#![GetPlayer.Custom('PODHasPausableJourney')].#!"
- POD_resume_travel_ready_journey: "\n\n#I Нажмите, чтобы начать #TOOLTIP:game_concept_travel_phase_desc #E фазу путешествия#!#! этого #TOOLTIP:game_concept_journey_desc #E странствия#!#![GetPlayer.Custom('PODHasPausableJourney')].#!"
+ POD_resume_paused_journey: "\n\n#I Нажмите, чтобы возобновить это [Concept('journey', 'странствие')|E][GetPlayer.Custom('PODHasPausableJourney')].#!"
+ POD_resume_travel_ready_journey: "\n\n#I Нажмите, чтобы начать [Concept('travel_phase', 'фазу путешествия')|E] этого [Concept('journey', 'странствия')|E][GetPlayer.Custom('PODHasPausableJourney')].#!"
 
  POD_journey_pausable: " и приостановить текущее"
 
- POD_no_journey_selected: "Вы сейчас не в #TOOLTIP:game_concept_journey_desc #E странствии#!#!."
+ POD_no_journey_selected: "Вы сейчас не в [Concept('journey', 'странствии')|E]."
 
  JOURNEY_DETAIL_EFFECTS: "При завершении #TOOLTIP:game_concept_planning_phase_desc #E фазы планирования#!#!:"
  JOURNEY_DETAIL_REQUIREMENTS: "Требования:"
@@ -101,7 +101,7 @@
  POD_journey_piety: "[piety_i|E] [GetPlayer.MakeScope.ScriptValue('journey_window_piety_cost')]"
 
  POD_journey_prestige_seek_knowledge: "#TOOLTIP:POD_seek_knowledge_cost_hint #L $POD_journey_prestige_simple$#!#!"
- POD_seek_knowledge_cost_hint: "Стоимость этого #TOOLTIP:game_concept_journey_desc #E странствия#!#! увеличивается на [GetPlayer.MakeScope.ScriptValue('seek_knowledge_price_per_journey')|V0][prestige_i|E] за каждую способность, которую вы изучаете таким образом."
+ POD_seek_knowledge_cost_hint: "Стоимость этого [Concept('journey', 'странствия')|E] увеличивается на [GetPlayer.MakeScope.ScriptValue('seek_knowledge_price_per_journey')|V0][prestige_i|E] за каждую способность, которую вы изучаете таким образом."
 
  POD_journey_cost_hunt_scoundrels: "Стоимость: Случайная ([gold_i|E] [Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('minor_gold_value'), EmptyScope.ScriptValue('journey_cost_mult') )], [prestige_i|E] [Abs_CFixedPoint(Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('minor_prestige_loss'), EmptyScope.ScriptValue('journey_cost_mult') ))] или [piety_i|E] [Abs_CFixedPoint(Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('minor_piety_loss'), EmptyScope.ScriptValue('journey_cost_mult') ))])"
  POD_journey_cost_hunt_warriors: "Стоимость: [prestige_i|E] [Abs_CFixedPoint(Multiply_CFixedPoint( GetPlayer.MakeScope.ScriptValue('minor_prestige_loss'), EmptyScope.ScriptValue('journey_cost_mult') ))]"
@@ -128,49 +128,49 @@
 
  ##### Tooltips
 
- POD_journey_pause_hint: "#I Начиная новое #TOOLTIP:game_concept_journey_desc #E странствие#!#!, вы приостанавливаете текущее. Вы сможете возобновить его позже, сохранив весь свой прогресс.#!"
+ POD_journey_pause_hint: "#I Начиная новое [Concept('journey', 'странствие')|E], вы приостанавливаете текущее. Вы сможете возобновить его позже, сохранив весь свой прогресс.#!"
 
- POD_journey_interaction_pause_hint_tt: "#I Ваше #TOOLTIP:game_concept_journey_desc #E странствие#!#! в $POD_current_journey$ будет приостановлено. Вы сможете возобновить его позже, сохранив весь свой прогресс.#!"
+ POD_journey_interaction_pause_hint_tt: "#I Ваше [Concept('journey', 'странствие')|E] в $POD_current_journey$ будет приостановлено. Вы сможете возобновить его позже, сохранив весь свой прогресс.#!"
 
  POD_journey_requirements_gold: "У вас недостаточно [Concept('gold', 'золота')|E]"
  POD_journey_requirements_prestige: "У вас недостаточно [Concept('prestige', 'престижа')|E]"
  POD_journey_requirements_piety: "У вас недостаточно [Concept('piety', 'благочестия')|E]"
 
- POD_journey_requirements_notravel: "Вы не можете начать #TOOLTIP:game_concept_journey_desc #E странствие#!#!, пока ваше текущее странствие находится на #TOOLTIP:game_concept_travel_phase_desc #E фазе путешествия#!#!"
- POD_journey_requirements_noactivity: "Вы не можете начать #TOOLTIP:game_concept_journey_desc #E странствие#!#!, пока участвуете в [Concept('activity', 'занятии')|E]"
- POD_journey_requirements_notravel_generic: "Вы не можете начать #TOOLTIP:game_concept_journey_desc #E странствие#!#!, пока заняты [Concept('traveling', 'путешествием')|E]"
+ POD_journey_requirements_notravel: "Вы не можете начать [Concept('journey', 'странствие')|E], пока ваше текущее странствие находится на [Concept('travel_phase', 'фазе путешествия')|E]"
+ POD_journey_requirements_noactivity: "Вы не можете начать [Concept('journey', 'странствие')|E], пока участвуете в [Concept('activity', 'занятии')|E]"
+ POD_journey_requirements_notravel_generic: "Вы не можете начать [Concept('journey', 'странствие')|E], пока заняты [Concept('traveling', 'путешествием')|E]"
 
- POD_journey_requirements_target_dead: "Цель этого #TOOLTIP:game_concept_journey_desc #E странствия#!#! умерла"
- POD_journey_requirements_target_artifact_destroyed: "Цель этого #TOOLTIP:game_concept_journey_desc #E странствия#!#! была уничтожена"
+ POD_journey_requirements_target_dead: "Цель этого [Concept('journey', 'странствия')|E] умерла"
+ POD_journey_requirements_target_artifact_destroyed: "Цель этого [Concept('journey', 'странствия')|E] была уничтожена"
 
  POD_journey_requirements_notravel_gui: "#X @warning_icon! $POD_journey_requirements_notravel$#!"
  POD_journey_requirements_noactivity_gui: "#X @warning_icon! $POD_journey_requirements_noactivity$#!"
  POD_journey_requirements_notravel_generic_gui: "#X @warning_icon! $POD_journey_requirements_notravel_generic$#!"
- POD_journey_requirements_adult_gui: "#X @warning_icon! Вы не можете начать #TOOLTIP:game_concept_journey_desc #E странствие#!#! за ребёнка#!"
- POD_journey_requirements_noprison_gui: "#X @warning_icon! Вы не можете начать #TOOLTIP:game_concept_journey_desc #E странствие#!#! находясь [Concept('prison', 'в заключении')|E]#!"
- POD_journey_requirements_noarmy_gui: "#X @warning_icon! Вы не можете начать #TOOLTIP:game_concept_journey_desc #E странствие#!#! возглавляя армию#!"
- POD_journey_requirements_umbra_gui: "#X @warning_icon! Вы не можете начать #TOOLTIP:game_concept_journey_desc #E странствие#!#! находясь в ловушке в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!#!"
+ POD_journey_requirements_adult_gui: "#X @warning_icon! Вы не можете начать [Concept('journey', 'странствие')|E] за ребёнка#!"
+ POD_journey_requirements_noprison_gui: "#X @warning_icon! Вы не можете начать [Concept('journey', 'странствие')|E] находясь [Concept('prison', 'в заключении')|E]#!"
+ POD_journey_requirements_noarmy_gui: "#X @warning_icon! Вы не можете начать [Concept('journey', 'странствие')|E] возглавляя армию#!"
+ POD_journey_requirements_umbra_gui: "#X @warning_icon! Вы не можете начать [Concept('journey', 'странствие')|E] находясь в ловушке в [Concept('umbra', 'Умбре')|E]#!"
 
- POD_not_already_on_journey_tt: "У вас уже есть #TOOLTIP:game_concept_journey_desc #E странствие#!#! того же типа, нацеленное на персонажа [temp_journey_target.GetShortUIName]!"
- POD_not_already_on_journey_for_trait_tt: "У вас уже есть #TOOLTIP:game_concept_journey_desc #E странствие#!#! того же типа, нацеленное на свойство «[temp_journey_trait.GetName(GetPlayer)]»!"
- POD_not_already_on_journey_for_artifact_tt: "У вас уже есть #TOOLTIP:game_concept_journey_desc #E странствие#!#! того же типа, нацеленное на артефакт [temp_journey_artifact.GetName]!"
- POD_cant_target_coterie_tt: "Вы не можете выбрать прочих членов группы $POD_player_coterie$ целью этого #TOOLTIP:game_concept_journey_desc #E странствия#!#!!"
+ POD_not_already_on_journey_tt: "У вас уже есть [Concept('journey', 'странствие')|E] того же типа, нацеленное на персонажа [temp_journey_target.GetShortUIName]!"
+ POD_not_already_on_journey_for_trait_tt: "У вас уже есть [Concept('journey', 'странствие')|E] того же типа, нацеленное на свойство «[temp_journey_trait.GetName(GetPlayer)]»!"
+ POD_not_already_on_journey_for_artifact_tt: "У вас уже есть [Concept('journey', 'странствие')|E] того же типа, нацеленное на артефакт [temp_journey_artifact.GetName]!"
+ POD_cant_target_coterie_tt: "Вы не можете выбрать прочих членов группы $POD_player_coterie$ целью этого [Concept('journey', 'странствия')|E]!"
 
- POD_end_journey_tt: "Ваше #TOOLTIP:game_concept_journey_desc #E странствие#!#! завершится."
- POD_end_journey_can_retry_tt: "Вы сможете повторить это #TOOLTIP:game_concept_journey_desc #E странствие#!#! в будущем."
+ POD_end_journey_tt: "Ваше [Concept('journey', 'странствие')|E] завершится."
+ POD_end_journey_can_retry_tt: "Вы сможете повторить это [Concept('journey', 'странствие')|E] в будущем."
 
- POD_journey_not_implemented_yet: "Это #TOOLTIP:game_concept_journey_desc #E странствие#!#! еще не реализовано"
+ POD_journey_not_implemented_yet: "Это [Concept('journey', 'странствие')|E] еще не реализовано"
 
- POD_new_journey_starts_paused_tt: "Поскольку ваше текущее #TOOLTIP:game_concept_journey_desc #E странствие#!#! находится на #TOOLTIP:game_concept_travel_phase_desc #E фазе путешествия#!#!, новое #TOOLTIP:game_concept_journey_desc #E странствие#!#! будет приостановлено."
+ POD_new_journey_starts_paused_tt: "Поскольку ваше текущее [Concept('journey', 'странствие')|E] находится на [Concept('travel_phase', 'фазе путешествия')|E], новое [Concept('journey', 'странствие')|E] будет приостановлено."
 
  POD_journey_exsanguination_disabled: "Вы не можете осушить своих узников, находясь вдали от дома!"
 
- POD_start_trait_study_journey_tt: "Вы получили некоторое представление о [Concept('trait', 'свойстве')|E] «[journey_trait.GetName(GetPlayer)]». Чтобы полностью понять его, вам нужно изучить его в #TOOLTIP:game_concept_journey_desc #E странствии#!#!, которое вы только что открыли."
- POD_start_anatomy_study_journey_tt: "Вы начнете #TOOLTIP:game_concept_journey_desc #E странствие#!#! для полного понимания анатомии персонажей со свойством «[journey_trait.GetName(GetPlayer)]»."
- POD_start_true_name_study_journey_tt: "Вы начнете #TOOLTIP:game_concept_journey_desc #E странствие#!#! за [Concept('trait', 'свойством')|E] истинного имени «[journey_trait.GetName(GetPlayer)]»."
+ POD_start_trait_study_journey_tt: "Вы получили некоторое представление о [Concept('trait', 'свойстве')|E] «[journey_trait.GetName(GetPlayer)]». Чтобы полностью понять его, вам нужно изучить его в [Concept('journey', 'странствии')|E], которое вы только что открыли."
+ POD_start_anatomy_study_journey_tt: "Вы начнете [Concept('journey', 'странствие')|E] для полного понимания анатомии персонажей со свойством «[journey_trait.GetName(GetPlayer)]»."
+ POD_start_true_name_study_journey_tt: "Вы начнете [Concept('journey', 'странствие')|E] за [Concept('trait', 'свойством')|E] истинного имени «[journey_trait.GetName(GetPlayer)]»."
 
 
  ##### Interface messages
  POD_journey_abandoned_title: "Заброшенное странствие"
- POD_journey_abandoned_desc_trait: "Поскольку вы теперь обладаете новой способностью, все ваши #TOOLTIP:game_concept_journey_desc #E странствия#!#! для её изучения завершились."
- POD_journey_abandoned_desc_artifact: "Вам больше не нужно отправляться на #L миссию #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#!, так как [artifact.Custom('ColorizedArtifactName')] уже принадлежит вам."
+ POD_journey_abandoned_desc_trait: "Поскольку вы теперь обладаете новой способностью, все ваши [Concept('journey', 'странствия')|E] для её изучения завершились."
+ POD_journey_abandoned_desc_artifact: "Вам больше не нужно отправляться на #TOOLTIP:game_concept_infiltration_desc #E миссию проникновения#!#!, так как [artifact.Custom('ColorizedArtifactName')] уже принадлежит вам."

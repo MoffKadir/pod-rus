@@ -535,17 +535,17 @@
  YOU_LOST_MANIFESTATION: "[TARGET_CHARACTER.GetShortUIName] больше не является вашей манифестацией"
  THEY_LOST_MANIFESTATION: "[CHARACTER.GetShortUIName|U] больше не является манифестацией [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
- GET_UMBRA_EXPLORER: "Становится исследователем #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_GET_UMBRA_EXPLORER: "[TARGET_CHARACTER.GetShortUIName] теперь ваш исследователь #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
- THEY_GET_UMBRA_EXPLORER: "[CHARACTER.GetShortUIName|U] становится исследователем #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_GOT_UMBRA_EXPLORER: "[TARGET_CHARACTER.GetShortUIName] становится вашим исследователем #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
- THEY_GOT_UMBRA_EXPLORER: "[CHARACTER.GetShortUIName|U] становится исследователем #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ GET_UMBRA_EXPLORER: "Становится исследователем [Concept('umbra', 'Умбры')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ YOU_GET_UMBRA_EXPLORER: "[TARGET_CHARACTER.GetShortUIName] теперь ваш исследователь [Concept('umbra', 'Умбры')|E]"
+ THEY_GET_UMBRA_EXPLORER: "[CHARACTER.GetShortUIName|U] становится исследователем [Concept('umbra', 'Умбры')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ YOU_GOT_UMBRA_EXPLORER: "[TARGET_CHARACTER.GetShortUIName] становится вашим исследователем [Concept('umbra', 'Умбры')|E]"
+ THEY_GOT_UMBRA_EXPLORER: "[CHARACTER.GetShortUIName|U] становится исследователем [Concept('umbra', 'Умбры')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
- LOSE_UMBRA_EXPLORER: "Больше не исследователь #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_LOSE_UMBRA_EXPLORER: "[TARGET_CHARACTER.GetShortUIName] больше не ваш исследователь #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
- THEY_LOSE_UMBRA_EXPLORER: "[CHARACTER.GetShortUIName|U] больше не исследователь #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_LOST_UMBRA_EXPLORER: "[TARGET_CHARACTER.GetShortUIName] больше не является вашим исследователем #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
- THEY_LOST_UMBRA_EXPLORER: "[CHARACTER.GetShortUIName|U] больше не является исследователем #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ LOSE_UMBRA_EXPLORER: "Больше не исследователь [Concept('umbra', 'Умбры')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ YOU_LOSE_UMBRA_EXPLORER: "[TARGET_CHARACTER.GetShortUIName] больше не ваш исследователь [Concept('umbra', 'Умбры')|E]"
+ THEY_LOSE_UMBRA_EXPLORER: "[CHARACTER.GetShortUIName|U] больше не исследователь [Concept('umbra', 'Умбры')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ YOU_LOST_UMBRA_EXPLORER: "[TARGET_CHARACTER.GetShortUIName] больше не является вашим исследователем [Concept('umbra', 'Умбры')|E]"
+ THEY_LOST_UMBRA_EXPLORER: "[CHARACTER.GetShortUIName|U] больше не является исследователем [Concept('umbra', 'Умбры')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
  GET_COTERIE_MEMBER: "Вступает в группу ([TARGET_CHARACTER.Custom('PODCoterie')]) [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  YOU_GET_COTERIE_MEMBER: "[TARGET_CHARACTER.GetShortUIName] теперь состоит в вашей группе ([CHARACTER.Custom('PODCoterie')])"
@@ -674,7 +674,7 @@
  HEIGHTENED_SENSES_PERK_EFFECT: "У узников меньше шансов сбежать из вашей темницы.\n#flavor Чувства вампира обостряются до сверхъестественной степени, давая ему возможность видеть в кромешной тьме, слышать ультразвуковые частоты и чувствовать запах страха, исходящий от трусящей добычи.#!"
  PREMONITION_PERK_EFFECT: "Скорость прогресса [Concept('espionage', 'шпионажа')|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!.\nУ узников меньше шансов сбежать из вашей темницы.\n#flavor Вампир испытывает вспышки озарения. Они могут выражаться в поднятии духа, внезапном вдохновении или даже ярких видениях. Хотя эти видения никогда не бывают слишком точными, они могут подтолкнуть вампира к тому, чтобы избежать опасности, или открыть истину, на которую раньше не обращали внимания.#!"
  PREMONITION_PERK_BONUS_VALUE: "[GetPerk('premonition_perk').GetName(GetPlayer)]"
- SCRY_THE_SOUL_PERK_EFFECT: "Позволяет видеть #TOOLTIP:game_concept_resonance_desc #E резонанс#!#! других персонажей.\nВы можете выбрать, каким типом #TOOLTIP:game_concept_resonance_desc #E резонанса#!#! будут обладать смертные, найденные во время #TOOLTIP:game_concept_journey_desc #E странствия#!#! охоты в вашей столице.\n#flavor Сосредоточившись на человеке, вампир может воспринимать состояние его психики в виде меняющейся по цвету ауры. Аура не дает точной информации, но дает подсказки по многим вопросам, например, эмоциональное состояние, резонанс и сверхъестественные свойства.#!"
+ SCRY_THE_SOUL_PERK_EFFECT: "Позволяет видеть #TOOLTIP:game_concept_resonance_desc #E резонанс#!#! других персонажей.\nВы можете выбрать, каким типом #TOOLTIP:game_concept_resonance_desc #E резонанса#!#! будут обладать смертные, найденные во время [Concept('journey', 'странствия')|E] охоты в вашей столице.\n#flavor Сосредоточившись на человеке, вампир может воспринимать состояние его психики в виде меняющейся по цвету ауры. Аура не дает точной информации, но дает подсказки по многим вопросам, например, эмоциональное состояние, резонанс и сверхъестественные свойства.#!"
  SENSE_THE_UNSEEN_PERK_EFFECT: "#flavor Чувства вампира настраиваются на измерения за пределами обыденности, позволяя ему ощущать присутствие, иначе скрытое от невооруженного глаза.#!"
  SHARE_THE_SENSES_PERK_EFFECT: "Скорость прогресса [Concept('espionage', 'шпионажа')|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!.\n#flavor Обратившись к своему разуму, вампир может подключиться к чувствам другого смертного или вампира, видя, слыша и чувствуя то же, что и они.#!"
  SHARE_THE_SENSES_PERK_BONUS_VALUE: "[GetPerk('share_the_senses_perk').GetName(GetPlayer)]"
@@ -827,11 +827,11 @@
  SHROUDSIGHT_PERK_FLAVOR: "#flavor Взгляд сквозь Завесу позволяет вампиру заглянуть прямо в [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
  LIFELESS_TONGUES_PERK_EFFECT: "Разблокирует взаимодействие персонажа «#TOOLTIP:game_concept_command_wraith_interaction_desc #E Приказать призраку#!#!».\nМаксимальное количество связанных призраков: #P +1#!."
  LIFELESS_TONGUES_PERK_FLAVOR: "#flavor Произнося наречие [Glossary('Тёмных королевств','game_concept_dark_kingdom_desc')], некромант может общаться с призраками в [UmbraGlossaryLocalized('shadowlands','Загробном мире')].#!"
- TOUCH_THE_NETHER_PERK_EFFECT: "Позволяет вам взаимодействовать с существами #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!, когда вы находитесь в материальном мире."
+ TOUCH_THE_NETHER_PERK_EFFECT: "Позволяет вам взаимодействовать с существами [Concept('umbra', 'Умбры')|E], когда вы находитесь в материальном мире."
  TOUCH_THE_NETHER_PERK_FLAVOR: "#flavor Используя «Прикосновение к преисподней», некромант может находиться по обе стороны Барьера; он физически проявляется в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], оставаясь телесным в землях живых.#!"
  EX_NIHILO_PERK_EFFECT: "Даёт доступ к [UmbraGlossaryLocalized('shadowlands','Загробному миру')] во время духовных путешествий."
  EX_NIHILO_PERK_FLAVOR: "#flavor Ex Nihilo позволяет некроманту физически войти в [UmbraGlossaryLocalized('shadowlands','Загробный мир')]. Находясь в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], он предстаёт в виде очень плотного призрака.#!"
- SHROUD_MASTERY_PERK_EFFECT: "Разблокирует опцию «Манипулировать Саваном» на панели #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!."
+ SHROUD_MASTERY_PERK_EFFECT: "Разблокирует опцию «Манипулировать Саваном» на панели [Concept('umbra', 'Умбры')|E]."
  SHROUD_MASTERY_PERK_FLAVOR: "#flavor Обладая этой силой, некромант может значительно помочь или помешать призракам функционировать в мире живых.#!"
 
  #Grave's Decay Path
@@ -1286,12 +1286,12 @@
  PRY_OPEN_PERK_EFFECT: "#F Узнайте о мыслях и желаниях цели. Помогает установить контакт.#!"
  UNWAVERING_VISION_PERK_EFFECT: "Вы можете наслать на вражеские державы модификатор [GetModifier( 'POD_ha_disrupted_contacts_modifier' ).GetNameWithTooltip|L] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Раскройте контакты цели среди смертных, что позволит вам ослабить их влияние.#!"
  UNEARTH_PERK_EFFECT: "После успешной [Concept('siege', 'осады')|E] или [Concept('raid', 'набега')|E] [Concept('characters', 'персонажи')|E] чаще [Concept('imprison', 'попадают в темницу')|E].\n#F Раскрывает события, произошедшие в данном месте; полезно для отслеживания убегающих целей.#!"
- LIFTING_THE_VEIL_PERK_EFFECT: "Вы можете наделить пленённую цель модификатором [GetModifier( 'tracked_down_modifier' ).GetNameWithTooltip|L] через [Concept('character_interaction', 'взаимодействие персонажа')|E], что позволит вам мгновенно завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#! «Поиск логова» в отношении её сюзерена, как только она будет освобождена.\n#F Сделайте попытки объекта обмана тщетными, что приведёт к плодотворному допросу.#!"
+ LIFTING_THE_VEIL_PERK_EFFECT: "Вы можете наделить пленённую цель модификатором [GetModifier( 'tracked_down_modifier' ).GetNameWithTooltip|L] через [Concept('character_interaction', 'взаимодействие персонажа')|E], что позволит вам мгновенно завершить [Concept('journey', 'странствие')|E] «Поиск логова» в отношении её сюзерена, как только она будет освобождена.\n#F Сделайте попытки объекта обмана тщетными, что приведёт к плодотворному допросу.#!"
  REVELATION_PERK_EFFECT: "Вы можете заставить цель получить [Concept('factions', 'фракцию')|E] ячейки инквизиторов через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Раскройте скоту отвратительную природу цели и предоставьте это на их суд.#!"
 
  SUNDER_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier( 'endo_holyweapon_modifier' ).GetNameWithTooltip|L] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Эта сила придаёт оружию собственную энергию, позволяя ему поражать священным возмездием всё, к чему прикасается.#!"
  CENSURE_PERK_EFFECT: "#F С помощью этой силы инквизитор может заставить существо совершить глупую ошибку и опозориться.#!"
- GODS_ARMOUR_PERK_EFFECT: "Повышенная вероятность оправиться от ран и меньше шансов получить их в ходе #TOOLTIP:game_concept_journey_desc #E странствия#!#! «Поиск логова».\n#F Это достоинство значительно улучшает восстановление после ранений, полученных в бою.#!"
+ GODS_ARMOUR_PERK_EFFECT: "Повышенная вероятность оправиться от ран и меньше шансов получить их в ходе [Concept('journey', 'странствия')|E] «Поиск логова».\n#F Это достоинство значительно улучшает восстановление после ранений, полученных в бою.#!"
  ROD_AND_STAFF_PERK_EFFECT: "Позволяет сделать ваших [Concept('knights', 'рыцарей')|E] неуязвимым к ранениям через [Concept('character_interaction', 'взаимодействие персонажа')|E], но ваши шансы получить ранение в [Concept('combat_phase', 'бою')|E] возрастут, когда вы являетесь [Concept('commander', 'командиром')|E].\n#F Обладая этой силой, инквизитор становится свящённым оплотом против сил зла, предотвращая причинение любого вреда тем, кто следует за ним, до тех пор, пока он твёрдо стоит на своём.#!"
  WRATH_OF_GOD_PERK_EFFECT: "Позволяет ранить или убить выбранного персонажа через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Инквизитор взывает к правосудию Господа в его самой непосредственной и жестокой форме.#!"
 
@@ -1349,8 +1349,8 @@
 
  # Unity #
 
- UNITY_LEGACY_1_PERK_EFFECT: "У вас будет больше шансов на успех, если вы выберете подход через военное дело или управление в #TOOLTIP:game_concept_journey_desc #E странствии#!#! «Поиск логова».\n#F Pacta clara, boni amici.#!"
- UNITY_LEGACY_2_PERK_EFFECT: "Ваши #TOOLTIP:game_concept_journey_desc #E странствия#!#! «Поиск логова» получат повышенную #TOOLTIP:game_concept_planning_speed_desc #E скорость планирования#!#!.\n#F Conveniens homini est hominem servare voluptas.#!"
+ UNITY_LEGACY_1_PERK_EFFECT: "У вас будет больше шансов на успех, если вы выберете подход через военное дело или управление в [Concept('journey', 'странствии')|E] «Поиск логова».\n#F Pacta clara, boni amici.#!"
+ UNITY_LEGACY_2_PERK_EFFECT: "Ваши [Concept('journey', 'странствия')|E] «Поиск логова» получат повышенную #TOOLTIP:game_concept_planning_speed_desc #E скорость планирования#!#!.\n#F Conveniens homini est hominem servare voluptas.#!"
  UNITY_LEGACY_3_PERK_EFFECT: "#F Beatius est magis dare quam accipere#!."
  UNITY_LEGACY_4_PERK_EFFECT: "Обучение новых учеников будет более эффективным.\n#F Artificem commendat opus.#!"
  UNITY_LEGACY_5_PERK_EFFECT: "#F Nulla vis maior pietate vera est.#!"
@@ -1504,7 +1504,7 @@
  ASHEN_NOBLES_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_court_01').GetName]."
  ASHEN_NOBLES_LEGACY_2_PERK_EFFECT: "Разблокирует особое событие воспитания дитя."
  ASHEN_NOBLES_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_court_02').GetName]."
- ASHEN_NOBLES_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для #TOOLTIP:game_concept_journey_desc #E странствия#!#! охоты в столице."
+ ASHEN_NOBLES_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для [Concept('journey', 'странствия')|E] охоты в столице."
  ASHEN_NOBLES_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuilding('ashen_court_03').GetName]."
 
  # Ashen Knights #
@@ -1512,7 +1512,7 @@
  ASHEN_KNIGHTS_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_commandery_01').GetName]."
  ASHEN_KNIGHTS_LEGACY_2_PERK_EFFECT: "Разблокирует особое событие воспитания дитя."
  ASHEN_KNIGHTS_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_commandery_02').GetName]."
- ASHEN_KNIGHTS_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для #TOOLTIP:game_concept_journey_desc #E странствия#!#! охоты в столице."
+ ASHEN_KNIGHTS_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для [Concept('journey', 'странствия')|E] охоты в столице."
  ASHEN_KNIGHTS_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuilding('ashen_commandery_03').GetName]."
 
  # Ashen seneschals #
@@ -1520,7 +1520,7 @@
  ASHEN_SENESCHALS_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_office_01').GetName]."
  ASHEN_SENESCHALS_LEGACY_2_PERK_EFFECT: "Разблокирует особое событие воспитания дитя."
  ASHEN_SENESCHALS_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_office_02').GetName]."
- ASHEN_SENESCHALS_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для #TOOLTIP:game_concept_journey_desc #E странствия#!#! охоты в столице."
+ ASHEN_SENESCHALS_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для [Concept('journey', 'странствия')|E] охоты в столице."
  ASHEN_SENESCHALS_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuilding('ashen_office_03').GetName]."
 
  # Ashen Thieves #
@@ -1528,7 +1528,7 @@
  ASHEN_THIEVES_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_ring_01').GetName]."
  ASHEN_THIEVES_LEGACY_2_PERK_EFFECT: "Разблокирует особое событие воспитания дитя."
  ASHEN_THIEVES_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_ring_02').GetName]."
- ASHEN_THIEVES_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для #TOOLTIP:game_concept_journey_desc #E странствия#!#! охоты в столице."
+ ASHEN_THIEVES_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для [Concept('journey', 'странствия')|E] охоты в столице."
  ASHEN_THIEVES_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuilding('ashen_ring_03').GetName]."
 
  # Ashen Cults #
@@ -1536,7 +1536,7 @@
  ASHEN_CULTS_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_cult_site_01').GetName]."
  ASHEN_CULTS_LEGACY_2_PERK_EFFECT: "Разблокирует особое событие воспитания дитя."
  ASHEN_CULTS_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_cult_site_02').GetName]."
- ASHEN_CULTS_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для #TOOLTIP:game_concept_journey_desc #E странствия#!#! охоты в столице."
+ ASHEN_CULTS_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для [Concept('journey', 'странствия')|E] охоты в столице."
  ASHEN_CULTS_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuilding('ashen_cult_site_03').GetName]."
 
  # KJ legacy #
@@ -1552,7 +1552,7 @@
  NEEDS_ART_FOR_FOCUS_TEXT: "@warning_icon!#X Чтобы выбрать этот фокус, вам нужно соответствующее [Concept('trait', 'свойство')|E] искусства#!\n"
  NEEDS_CHI_ART_TEXT: "@warning_icon!#X Для разблокировки достоинств в этом древе требуется базовое [Concept('trait', 'свойство')|E] искусства ци#!"
 
- NEEDS_COMMUNE_WITH_THE_INCARNA_TEXT: "@warning_icon!#X Чтобы разблокировать это древо, вам нужно пообщаться с соответствующим планетарным инкарной, расположенным в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#! - [UmbraGlossary('spirit_wilds')] - [UmbraGlossary('aetherial_realm')].#!"
+ NEEDS_COMMUNE_WITH_THE_INCARNA_TEXT: "@warning_icon!#X Чтобы разблокировать это древо, вам нужно пообщаться с соответствующим планетарным инкарной, расположенным в [Concept('umbra', 'Умбре')|E] - [UmbraGlossary('spirit_wilds')] - [UmbraGlossary('aetherial_realm')].#!"
 
  POD_ventrue_bane_notification: "Слабость Вентру"
  ventrue_clan_bane: "Этот персонаж не соответствует вашим #TOOLTIP:game_concept_ventrue_clan_curse_desc #E ограничениям питания#!#!, и питание от него не насытит вас."

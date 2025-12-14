@@ -28,8 +28,8 @@
  NUM_OF_RELATION_BOUND_WRAITH_TARGET_TRIGGER: "Количество связанных призраков - $COMPARATOR$ $NUM|V0$"
 
  effigy_on_task: "У вас уже есть эффигия на задании."
- lost_in_umbra: "[CHARACTER.GetShortUIName|U] #bold не#! [Select_CString( CHARACTER.IsLocalPlayer, 'находитесь', 'находится')] в опасном измерении #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
- NOT_lost_in_umbra: "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'находитесь', 'находится')] в опасном измерении #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
+ lost_in_umbra: "[CHARACTER.GetShortUIName|U] #bold не#! [Select_CString( CHARACTER.IsLocalPlayer, 'находитесь', 'находится')] в опасном измерении [Concept('umbra', 'Умбры')|E]"
+ NOT_lost_in_umbra: "[CHARACTER.GetShortUIName|U] [Select_CString( CHARACTER.IsLocalPlayer, 'находитесь', 'находится')] в опасном измерении [Concept('umbra', 'Умбры')|E]"
 
  demon_faith_requires_cultist_tooltip: "Только ваши #TOOLTIP:game_concept_cultist_desc #E культисты#!#! могут обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
 

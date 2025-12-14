@@ -752,13 +752,13 @@
  #Depending on where they stand on these two scales, their appearance and supernatural power fluctuates. This fundamental difference forever separates the Laibon from the 'typical' [cainite|E]."
  #Contrary to the Kindred, no Laibon follows the Path of Humanity, nor any other Path of Enlightenment for that matter. Instead,
  doctrine_enlightenment_virtues_direction_north_name: "Север"
- doctrine_enlightenment_virtues_direction_north_desc: "Стереотипно считающиеся суровыми, справедливыми и логичными, [GetTrait('kueijin').GetName( GetNullCharacter )|l] севера служат судьями и магистратами для своего рода, обычно разрешают споры и охотятся на преступников и #TOOLTIP:game_concept_akuma_desc #E акума#!#!."
+ doctrine_enlightenment_virtues_direction_north_desc: "Стереотипно считающиеся суровыми, справедливыми и логичными, [GetTrait('kueijin').GetName( GetNullCharacter )|l] севера служат судьями и магистратами для своего рода, обычно разрешают споры и охотятся на преступников и [Concept('akuma', 'акума')|E]."
  doctrine_enlightenment_virtues_direction_east_name: "Восток"
  doctrine_enlightenment_virtues_direction_east_desc: "Принято считать, что они наиболее комфортно чувствуют себя среди людей, а [GetTrait('kueijin').GetName( GetNullCharacter )|l] востока считаются фермерами, взращивая Алые ширмы и ухаживая за своим смертным стадом."
  doctrine_enlightenment_virtues_direction_south_name: "Юг"
  doctrine_enlightenment_virtues_direction_south_desc: "Известные своим вспыльчивостью, [GetTrait('kueijin').GetName( GetNullCharacter )|l] юга являются движущей силой общества, бросая вызов старым верованиям и поддерживая Квинконс в актуальном состоянии. Хотя их родичи часто считают их невыносимыми, они терпимы к старейшинам за их грозный интеллект и боевое мастерство."
  doctrine_enlightenment_virtues_direction_west_name: "Запад"
- doctrine_enlightenment_virtues_direction_west_desc: "Выступая в качестве эмиссаров в #TOOLTIP:game_concept_umbra_desc #E мирах духов#!#! Срединного царства, а иногда и в качестве убийц мандаринов, [GetTrait('kueijin').GetName( GetNullCharacter )|l] запада часто вызывают неодобрение у своих родичей. Они славятся тем, что не знают пощады и выполняют любое поручение - будь то дух, призрак или мандарин - с абсолютной точностью."
+ doctrine_enlightenment_virtues_direction_west_desc: "Выступая в качестве эмиссаров в [Concept('spirit_worlds', 'мирах духов')|E] Срединного царства, а иногда и в качестве убийц мандаринов, [GetTrait('kueijin').GetName( GetNullCharacter )|l] запада часто вызывают неодобрение у своих родичей. Они славятся тем, что не знают пощады и выполняют любое поручение - будь то дух, призрак или мандарин - с абсолютной точностью."
  doctrine_enlightenment_virtues_direction_center_name: "Центр"
  doctrine_enlightenment_virtues_direction_center_desc: "Обычно на [GetTrait('kueijin').GetName( GetNullCharacter )|l] центра возлагается обязанность наставлять молодых катайцев в тонкостях их общества, но многие предпочитают исследовать собственную душу, посвящая себя дхармическому просвещению."
 
@@ -838,14 +838,14 @@
 
  anda_hostility_name: "Отношение к [Glossary('Анда','podgloss.anda')]"
  special_doctrine_is_anda_faith_name: "[Glossary('Анда','podgloss.anda')]"
- special_doctrine_is_anda_faith_desc: "[Concept('faiths', 'Конфессии')|E] [Glossary('Анда','podgloss.anda')], союзники #TOOLTIP:game_concept_akuma_desc #E акума#!#! при дворе Черной черепахи, являются врагами лоялистов [Glossary('Ван-куэй','game_concept_kuei_jin_desc')]."
+ special_doctrine_is_anda_faith_desc: "[Concept('faiths', 'Конфессии')|E] [Glossary('Анда','podgloss.anda')], союзники [Concept('akuma', 'акума')|E] при дворе Черной черепахи, являются врагами лоялистов [Glossary('Ван-куэй','game_concept_kuei_jin_desc')]."
  doctrine_parameter_hostility_override_special_doctrine_is_anda_faith: "[faiths|E] [Glossary('Анда','podgloss.anda')] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]."
  doctrine_parameter_is_anda_faith_opinion_active: "" # Make loca empty to hidden this like vanilla
  doctrine_parameter_opinion_of_is_anda_faith_opinion_active: "[Concept('opinion', 'Мнение')|E] к [Concept('faiths', 'конфессиям')|E] [Glossary('Анда','podgloss.anda')]: $VALUE|+=0$"
  is_anda_faith_opinion_active_county_opinion_name: "[Glossary('Анда','podgloss.anda')]"
  is_anda_faith_opinion_active_opinion_name: "Монгольское нашествие"
  special_doctrine_allied_to_anda_hostility_name: "Оппортунистские союзники"
- special_doctrine_allied_to_anda_hostility_desc: "#TOOLTIP:game_concept_akuma_desc #E Акума#!#! рассматривают [Glossary('Анда','podgloss.anda')] как благодатную почву для проникновения и косвенно помогают им разрушить традиционные дворы."
+ special_doctrine_allied_to_anda_hostility_desc: "[Concept('akuma', 'Акума')|E] рассматривают [Glossary('Анда','podgloss.anda')] как благодатную почву для проникновения и косвенно помогают им разрушить традиционные дворы."
  doctrine_parameter_allied_to_anda_opinion_active: "" # Make loca empty to hidden this like vanilla
  doctrine_parameter_opinion_of_allied_to_anda_opinion_active: "$VALUE|+=0$ Бонус к [Concept('opinion', 'мнению')|E] с [Concept('faiths', 'конфессиями')|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_allied_to_anda_hostility').GetBaseName]»"
  doctrine_parameter_hostility_override_special_doctrine_allied_to_anda_hostility: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_allied_to_anda_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
@@ -1083,7 +1083,7 @@
 
  tenet_vengeance_of_nut_name: "Месть Нут"
  tenet_vengeance_of_nut_desc: "Те, кто ищет мести за Нут, посвящают себя уничтожению вампиров. Они мстят за утраченную родину и потерянный род. Кинжалы выступают в роли убийц, где бы они ни бродили, безмолвно выбирая кровососа или трех для уничтожения. Они умеют находить логова нежити."
- doctrine_parameter_find_the_lair_active: "Доступно #TOOLTIP:game_concept_journey_desc #E странствие#!#! по поиску логова."
+ doctrine_parameter_find_the_lair_active: "Доступно [Concept('journey', 'странствие')|E] по поиску логова."
 
  tenet_way_of_zhong_kuei_name: "Путь Чжун Куэя"
  tenet_way_of_zhong_kuei_desc: "Методика уничтонения демонов-нежити, разработанная Чжун Куэем. Те, кто следует этому пути, умеют «находить логова» вампиров."
@@ -1151,7 +1151,7 @@
  doctrine_parameter_hostility_override_demons_hostility_doctrine: "[faiths|E] #L [GetTrait('demon').GetName( GetPlayer )|l]ов#! воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_doctrine_demonic_accepted: "Демонические [faiths|El] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
- doctrine_parameter_access_to_underworld: "Даёт доступ к [UmbraGlossaryLocalized('shadowlands','Загробному миру')] во время путешествия по #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!."
+ doctrine_parameter_access_to_underworld: "Даёт доступ к [UmbraGlossaryLocalized('shadowlands','Загробному миру')] во время путешествия по [Concept('umbra', 'Умбре')|E]."
 
  seasons_time_name: "Время года"
  doctrine_winter_time_name: "Зима"

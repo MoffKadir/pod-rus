@@ -680,7 +680,7 @@
  POD_send_bound_wraith_interaction_cooldown_tt: "This $POD_splat_wraith$ cannot be commanded until [GetCurrentDateWithDiff(GetVarTimeRemaining(secondary_recipient.MakeScope,'POD_send_bound_wraith_interaction_cooldown'))]"
  POD_send_bound_wraith_interaction_cooldown_tt2: "#clickable You won't be able to command this $POD_splat_wraith$ for #V 1#! year!#!"
 
- POD_send_bound_wraith_interaction_argos: "[martial_i] Help the target navigate the #TOOLTIP:game_concept_umbra_desc #E Умбра#!#!"
+ POD_send_bound_wraith_interaction_argos: "[martial_i] Help the target navigate the [Concept('umbra', 'Умбра')|E]"
  POD_send_bound_wraith_interaction_castigate: "[learning_i] Help the target manage their $POD_splat_wraith_plural$ in the [Glossary('земли Плоти','game_concept_skinlands_desc')]"
  POD_send_bound_wraith_interaction_embody: "[stewardship_i] Help the target with manifesting $POD_splat_wraith_plural$ in the [Glossary('земли Плоти','game_concept_skinlands_desc')]"
  POD_send_bound_wraith_interaction_fatalism: "[intrigue_i] Help the target in their [schemes|E]"

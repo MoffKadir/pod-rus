@@ -38,7 +38,7 @@
 
  NEEDS_BE_CHI_USER_FOR_FOCUS_TEXT: "@warning_icon!#X Вы использовать ци, чтобы выбрать этот фокус#!\n"
 
- NEEDS_COMMUNE_WITH_THE_YAMA_KINGS_TEXT: "@warning_icon!#X Чтобы разблокировать это достоинство, вам нужно пообщаться с [Glossary('повелителями Яма','podgloss.yamaking')], расположенными в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#! - [UmbraGlossary('yomi_wan')].#!"
+ NEEDS_COMMUNE_WITH_THE_YAMA_KINGS_TEXT: "@warning_icon!#X Чтобы разблокировать это достоинство, вам нужно пообщаться с [Glossary('повелителями Яма','podgloss.yamaking')], расположенными в [Concept('umbra', 'Умбре')|E] - [UmbraGlossary('yomi_wan')].#!"
 
  demonic_investment_visible: "Демонические дары"
  investments_of_soul_visible: "Дары души"
@@ -156,7 +156,7 @@
  HAND_OF_THE_DEFILER_PERK_EFFECT: "#F Правая рука #TOOLTIP:GAME_TRAIT,infernalist,[GetNullCharacter] #L инферналиста#!#! получает силу убивать растения, корявить дерево, ржаветь металл и разлагать любую плоть, к которой прикасается.#!"
  EMOTION_PROJECTION_PERK_EFFECT: "Разблокирует [Concept('scheme', 'происки')|E] «[GetScheme('PODsoul_bridge').GetTypeName]».\n#F Инферналист может заставить субъекта испытать любую эмоцию, которую он хочет, чтобы он почувствовал.#!"
  INFERNAL_PASSAGE_PERK_EFFECT: "#F Дарует безопасный проход через Ад.#!"
- JOURNEY_TO_THE_SPIRIT_REALM_PERK_EFFECT: "#F Тело инферналиста становится духом, путешествующим через #TOOLTIP:game_concept_umbra_desc #E Умбру#!#!.#!"
+ JOURNEY_TO_THE_SPIRIT_REALM_PERK_EFFECT: "#F Тело инферналиста становится духом, путешествующим через [Concept('umbra', 'Умбру')|E].#!"
  SUMMON_HELLIONS_PERK_EFFECT: "#F Младшие демоны могут быть вызваны #TOOLTIP:GAME_TRAIT,infernalist,[GetNullCharacter] #L инферналистом#!#!, чтобы защитить его от опасности. Демоны не будут подвергать себя опасности, но попытаются защитить #TOOLTIP:GAME_TRAIT,infernalist,[GetNullCharacter] #L инферналиста#!#!.#!"
  MAMMONS_GIFT_PERK_EFFECT: "Позволяет использовать благочестие для получения золота через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F [GetTrait('infernalist').GetName( GetNullCharacter )] может обратить один неодушевлённый предмет (не работает с нежитью) в золото.#!"
  TALONS_OF_THE_PLAGUE_CROW_PERK_EFFECT: "Насылает случайную хворь на вражеских [Concept('commanders', 'командиров')|E] и [Concept('knights', 'рыцарей')|E] в [Concept('combat_phase', 'бою')|E] или ваших противников в [Concept('single_combat_duel_plural', 'поединках')|E].\n#F При каждом наступлении сумерек, руки посвящённого трансформируются в птичьи когти. Это усложняет любые взаимодействия с предметами, но получившиеся rогти являются поистине ужасающим оружием. Раздирая кожу, они наносят болезненные ранения, а если они достанут до крови, то поразят её заразной чумой. Вскоре жертва заболевает, и ничего, кроме магического исцеления, не сможет её вылечить. Смерть наступает в течении недели или того меньше. Даже в случае исцеления, остаются шрамы «чумной вороны», в виде отчётливых тёмных полос. Ничто из того, к чему прикасается #TOOLTIP:GAME_TRAIT,infernalist,[GetNullCharacter] #L инферналист#!#!, не застраховано от этой чумы. Любое живое существо, получившее хотя бы царапину, заболеет, и скорее всего, умрёт.#!"
@@ -176,10 +176,10 @@
  touch_of_yama_kings_perk_name: "Касание [Glossary('повелителей Яма','podgloss.yamaking')]"
  unfolding_scarlet_lotus_perk_name: "Распустившийся алый лотос"
 
- MASK_OF_YOMI_PERK_EFFECT: "Свойство «[GetTrait('infernalist').GetName( GetPlayer )]» будет автоматически скрыто при раскрытии.\nОтменяет все принудительные изменения внешнего вида от даров.\n#F Дары персонажа больше не подают признаков. Никакие допытывания разума, исследования души или выведывание истины не смогут установить, что персонаж является #TOOLTIP:game_concept_akuma_desc #E акума#!#!, или заставить его выдать свою неправедную деятельность.#!"
- BLACK_WHISPERS_PERK_EFFECT: "Позволяет раскрыть все секреты и происки цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Шпионы [Glossary('повелителей Яма','podgloss.yamaking')] повсюду, и то, что не видят и не слышат #TOOLTIP:game_concept_akuma_desc #E акума#!#!, узнают их приспешники-духи.#!"
+ MASK_OF_YOMI_PERK_EFFECT: "Свойство «[GetTrait('infernalist').GetName( GetPlayer )]» будет автоматически скрыто при раскрытии.\nОтменяет все принудительные изменения внешнего вида от даров.\n#F Дары персонажа больше не подают признаков. Никакие допытывания разума, исследования души или выведывание истины не смогут установить, что персонаж является [Concept('akuma', 'акума')|E], или заставить его выдать свою неправедную деятельность.#!"
+ BLACK_WHISPERS_PERK_EFFECT: "Позволяет раскрыть все секреты и происки цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Шпионы [Glossary('повелителей Яма','podgloss.yamaking')] повсюду, и то, что не видят и не слышат [Concept('akuma', 'акума')|E], узнают их приспешники-духи.#!"
  EBON_FOUNTAIN_PERK_EFFECT: "Вы теряете 10 [Concept('stress', 'стресса')|E] каждый месяц.\n#F П'о персонажа связано с источником демонической силы.#!"
- LUCK_OF_YOMI_PERK_EFFECT: "Позволяет тратить очки инвеституры через [Concept('decision', 'решение')|E], чтобы получить золото и престиж. Если решение уже разблокировано, оно принесёт больше золота.\n#F Повелители Яма изменяют удачу персонажа, и в результате судьба становится благосклонней к #TOOLTIP:game_concept_akuma_desc #E акума#!#!.#!"
+ LUCK_OF_YOMI_PERK_EFFECT: "Позволяет тратить очки инвеституры через [Concept('decision', 'решение')|E], чтобы получить золото и престиж. Если решение уже разблокировано, оно принесёт больше золота.\n#F Повелители Яма изменяют удачу персонажа, и в результате судьба становится благосклонней к [Concept('akuma', 'акума')|E].#!"
  SAVAGE_KISS_PERK_EFFECT: "#F Душа персонажа подвергается ласкам Мукадэ.#!"
  UNION_OF_OPPOSITIONS_PERK_EFFECT: "#F [Glossary('Повелители Яма','podgloss.yamaking')] возложили на персонажа свои руки, и он был переделан.#!"
  IRON_HANDS_PERK_EFFECT: "#F Теперь персонаж движется, опираясь на мощь [Glossary('повелителей Яма','podgloss.yamaking')].#!"

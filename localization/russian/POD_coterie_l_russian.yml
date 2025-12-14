@@ -53,12 +53,12 @@
 
  POD_has_coterie_trigger_tt: "Вам необходима [GetPlayer.Custom('PODCoterie')]"
  POD_has_coterie_members_trigger_tt: "Вам необходима [GetPlayer.Custom('PODCoterie')] с хотя бы одним членом"
- POD_coterie_disabled_on_travel_phase_tt: "[GetPlayer.Custom('PODCoterie')]: вы не можете управлять группой, пока вы в #TOOLTIP:game_concept_travel_phase_desc #E фазе путешествия#!#! вашего #TOOLTIP:game_concept_journey_desc #E странствия#!#!"
+ POD_coterie_disabled_on_travel_phase_tt: "[GetPlayer.Custom('PODCoterie')]: вы не можете управлять группой, пока вы в [Concept('travel_phase', 'фазе путешествия')|E] вашего [Concept('journey', 'странствия')|E]"
 
 
  ##### Custom loc
 
- POD_coterie_concept: "#TOOLTIP:game_concept_coterie_desc #E [ROOT.Char.Custom('PODCoterieNoTooltip')]#!#!"
+ POD_coterie_concept: "[Concept('coterie',ROOT.Char.Custom('PODCoterieNoTooltip'))|E]"
 
  POD_coterieloc_harem: "Гарем"
  POD_coterieloc_sabbat: "Стая"
@@ -188,7 +188,7 @@
  POD_coteriename_bezariel: "#TOOLTIP:POD_coteriename_bezariel_tt #L Кровавый заговор#!#!"
  POD_coteriename_bezariel_tt: "Безариэль - мастер манипуляций. Будучи самым могущественным демоном в России, он предлагает свою «защиту» собратьям, которые всё ещё не отошли от пребывания в тюрьме Бездны."
  POD_coteriename_flaying_monkeys: "#TOOLTIP:POD_coteriename_flaying_monkeys_tt #L Обезьяны-свежеватели#!#!"
- POD_coteriename_flaying_monkeys_tt: "Неуравновешенная [Glossary('Ву','podgloss.wu')] Пияу Паюнг - это пощечина традиционалистским китайским Ван Куэй. Но она гораздо опаснее для #TOOLTIP:game_concept_akuma_desc #E акума#!#!, на которых охотится с впечатляющей эффективностью."
+ POD_coteriename_flaying_monkeys_tt: "Неуравновешенная [Glossary('Ву','podgloss.wu')] Пияу Паюнг - это пощечина традиционалистским китайским Ван Куэй. Но она гораздо опаснее для [Concept('akuma', 'акума')|E], на которых охотится с впечатляющей эффективностью."
  POD_coteriename_shiva_lingham: "#TOOLTIP:POD_coteriename_shiva_lingham_tt #L Лингам Шивы#!#!"
  POD_coteriename_shiva_lingham_tt: "Три учёных ночи, посвятивших себя обучению и обретению мудрости."
  POD_coteriename_jervais: "#TOOLTIP:POD_coteriename_jervais_tt #L Отступники Жерве#!#!"
@@ -252,7 +252,7 @@
  POD_coterietravel_no: "$EFFECT_LIST_BULLET$Члены группы $POD_player_coterie$ #bold не#! присоединятся к вам."
 
  POD_coterietravel_gui_nodestination: "#X @warning_icon! Пункт назначения не был задан. Это ошибка. Пожалуйста, сообщите об этом (в Steam или в Discord сервер PoD).#!"
- #POD_coterietravel_gui_earthbound: "#X @warning_icon! To start the $pod_travel_phase$ as an [GetTrait('earthbound').GetName(GetPlayer)], you need to inhabit an [artifact|E] and have at least 1 other [GetPlayer.Custom('PODCoterie')] member.#!"
+ #POD_coterietravel_gui_earthbound: "#X @warning_icon! To start the [travel_phase|E] as an [GetTrait('earthbound').GetName(GetPlayer)], you need to inhabit an [artifact|E] and have at least 1 other [GetPlayer.Custom('PODCoterie')] member.#!"
  POD_coterietravel_gui_earthbound: "#X @warning_icon! $POD_no_host_earthbound_travel_text$#!"
  POD_coterietravel_gui_none: "Поскольку у вас нет группы - [GetPlayer.Custom('PODCoterie')], вы будете путешествовать в одиночку."
  POD_coterietravel_gui_empty: "Поскольку вы единственный член группы - $POD_player_coterie$, вы будете путешествовать в одиночестве."
@@ -263,10 +263,10 @@
  ##### Travel start event flavor #####
  #####################################
 
- POD_coterietravel_earthbound_flavor: "Наконец-то пришло время группе $POD_player_coterie$ отправиться в это #TOOLTIP:game_concept_journey_desc #E странствие#!#!. Артефакт [GetPlayer.MakeScope.Var('stone_prison').Artifact.GetName], в котором я пребываю, надежно спрятан в нашей повозке."
- POD_coterietravel_none_flavor: "Наконец-то пришло время отправиться в #TOOLTIP:game_concept_journey_desc #E странствие#!#!."
- POD_coterietravel_yes_flavor: "Наконец-то пришло время группе $POD_player_coterie$ отправиться в это #TOOLTIP:game_concept_journey_desc #E странствие#!#!."
- POD_coterietravel_no_flavor: "Наконец-то пришло время отправиться в #TOOLTIP:game_concept_journey_desc #E странствие#!#!. Остальные члены группы $POD_player_coterie$ остались позади, чтобы позволить мне пройти этот путь в одиночку."
+ POD_coterietravel_earthbound_flavor: "Наконец-то пришло время группе $POD_player_coterie$ отправиться в это [Concept('journey', 'странствие')|E]. Артефакт [GetPlayer.MakeScope.Var('stone_prison').Artifact.GetName], в котором я пребываю, надежно спрятан в нашей повозке."
+ POD_coterietravel_none_flavor: "Наконец-то пришло время отправиться в [Concept('journey', 'странствие')|E]."
+ POD_coterietravel_yes_flavor: "Наконец-то пришло время группе $POD_player_coterie$ отправиться в это [Concept('journey', 'странствие')|E]."
+ POD_coterietravel_no_flavor: "Наконец-то пришло время отправиться в [Concept('journey', 'странствие')|E]. Остальные члены группы $POD_player_coterie$ остались позади, чтобы позволить мне пройти этот путь в одиночку."
 
  POD_coterieflavor_ambitious_1: "[ROOT.Char.GetFirstNameNicknamed] идёт бодро и целеустремленно, казалось бы, стремясь преодолеть любое препятствие и справиться с любой задачей на своём пути."
 

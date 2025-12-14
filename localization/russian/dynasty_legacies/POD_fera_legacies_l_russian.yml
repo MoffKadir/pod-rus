@@ -12,7 +12,7 @@
  neutral_totems_legacy_3_name: "Лисица"
  neutral_totems_legacy_3_perk: "@warning_icon!#X Чтобы разблокировать это наследие, вам нужно полностью открыть три древа пути интриг. Вам также нужны предыдущие наследия.#!"
  neutral_totems_legacy_4_name: "Чёрная черепаха"
- neutral_totems_legacy_4_perk: "@warning_icon!#X Это наследие разблокируется автоматически, когда вы встретите Чёрную черепаху (назначьте исследователя в #TOOLTIP:game_concept_umbra_desc #E Умбру#!#!, чтобы найти подсказки о местоположении и начать #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!, чтобы добраться до неё) и пройдёте испытание в [UmbraGlossaryLocalized('spirit_wilds','Духовных дебрях')] #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!.#!"
+ neutral_totems_legacy_4_perk: "@warning_icon!#X Это наследие разблокируется автоматически, когда вы встретите Чёрную черепаху (назначьте исследователя в [Concept('umbra', 'Умбру')|E], чтобы найти подсказки о местоположении и начать #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!, чтобы добраться до неё) и пройдёте испытание в [UmbraGlossaryLocalized('spirit_wilds','Духовных дебрях')] [Concept('umbra', 'Умбры')|E].#!"
  neutral_totems_legacy_5_name: "Гиена"
  neutral_totems_legacy_5_perk: "@warning_icon!#X Это наследие также может быть разблокировано автоматически, когда вы получите свойство «[GetTrait('viking').GetName( GetPlayer )]». Начало игры с ним не засчитывается.#!"
 
@@ -237,4 +237,4 @@
  swara_legacy_4_name: "Избегая обезьян"
  swara_legacy_4_perk: "#flavor Свара не возражают против вмешательства людей, если они не вторгаются в чистые места. Редко кто из них вступает с ними в конфликт, что резко контрастирует с другими бастет.#!"
  swara_legacy_5_name: "Духовные контакты"
- swara_legacy_5_perk: "Доступны [men_at_arms|El] - [GetMaA('air_elemental').GetName]\n#flavor Свара понимают #TOOLTIP:game_concept_umbra_desc #E Умбру#!#! гораздо лучше, чем другие бастет. Их контакты с #TOOLTIP:game_concept_umbra_desc #E миром духов#!#! не имеют себе равных, и этот факт они стараются держать в секрете.#!"
+ swara_legacy_5_perk: "Доступны [men_at_arms|El] - [GetMaA('air_elemental').GetName]\n#flavor Свара понимают [Concept('umbra', 'Умбру')|E] гораздо лучше, чем другие бастет. Их контакты с [Concept('spirit_world', 'миром духов')|E] не имеют себе равных, и этот факт они стараются держать в секрете.#!"

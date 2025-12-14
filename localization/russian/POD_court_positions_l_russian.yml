@@ -95,14 +95,14 @@
  gargoyle_primogen_court_position_desc: "Если вам нужно внезапное нападение с применением насилия, гаргульи - те, кто вам нужны.\n\n#help Требования к [Concept('aptitude', 'пригодности')|E] см. в «#TOOLTIP:game_concept_gargoyle_primogen_desc #E Примоген Гаргулий#!#!».#!"
 
  #POD_primogens.0001.t: "Primogen Mechanics"
- #POD_primogens.0001.desc: "As you are of a Kingdom (or above) level as a ruler, you now have access to the $pod_primogen$ minor court positions.\nThese positions represent the expectation of each $pod_clan$ in your area to have a representative close to you. Each $pod_clan$ values a different [Concept('primogen_aptitude','set of skills')|E] as you can see in their aptitude scores but all of them expect to be represented.\nIf you choose to not appoint someone (because you can't afford their salary, or because they are needed elsewhere, or simply because you don't have anyone suitable yet), you can expect this specific $pod_clan$ to protest in the coming years, giving you a notable opinion malus with each member of that $pod_clan$ in your realm."
+ #POD_primogens.0001.desc: "As you are of a Kingdom (or above) level as a ruler, you now have access to the [primogen|E] minor court positions.\nThese positions represent the expectation of each $pod_clan$ in your area to have a representative close to you. Each $pod_clan$ values a different [Concept('primogen_aptitude','set of skills')|E] as you can see in their aptitude scores but all of them expect to be represented.\nIf you choose to not appoint someone (because you can't afford their salary, or because they are needed elsewhere, or simply because you don't have anyone suitable yet), you can expect this specific $pod_clan$ to protest in the coming years, giving you a notable opinion malus with each member of that $pod_clan$ in your realm."
  #POD_primogens.0001.a: "Understood"
  #primogen_explanation_tt: "You have a three years grace period until your realm expect those positions to be filled."
  #
  #lack_primogen_opinion: "Feels Marginalized"
  #
  #POD_primogens.0003.t: "Mood of the Clans"
- #POD_primogens.0003.desc: "As a powerful ruler of the night, you are constantly judged by the various [Glossary('Clans','game_concept_Clan_desc')] of the undead society. Those that you haven't favored with a $pod_primogen$ seat are considered marginalized in your court, perhaps because of their political insignificance in your realm, or simply because of your current fancy.\nIn any case, you can now feel the mood of the Clans towards your rule shifting again."
+ #POD_primogens.0003.desc: "As a powerful ruler of the night, you are constantly judged by the various [Glossary('Clans','game_concept_Clan_desc')] of the undead society. Those that you haven't favored with a [primogen|E] seat are considered marginalized in your court, perhaps because of their political insignificance in your realm, or simply because of your current fancy.\nIn any case, you can now feel the mood of the Clans towards your rule shifting again."
  #POD_primogens.0003.a: "What do they truly think?"
  #lack_brujah_primogen_tt: "The Brujah feel marginalized."
  #lack_cappadocian_primogen_tt: "The Cappadocian feel marginalized."
@@ -153,7 +153,7 @@
  yang_ambassador_court_position: "Посол Ян"
  yang_ambassador_court_position_desc: "Посол Ян - это аналог посла Инь, обеспечивающий мост к динамичному и живому [Glossary('миру Ян','game_concept_yang_world_desc')]."
  first_oni_court_position: "Первый Они"
- first_oni_court_position_desc: "Первые Они сродни военачальникам, они следят за безопасностью региона, защищают от влияния #TOOLTIP:game_concept_akuma_desc #E акума#!#! и [UmbraGlossaryLocalized('yomi_wan','ада Йоми')] и обычно возглавляют санкционированные походы против врагов."
+ first_oni_court_position_desc: "Первые Они сродни военачальникам, они следят за безопасностью региона, защищают от влияния [Concept('akuma', 'акума')|E] и [UmbraGlossaryLocalized('yomi_wan','ада Йоми')] и обычно возглавляют санкционированные походы против врагов."
  infant_devil_civilizer_court_position: "Цивилизатор демонов-младенцев"
  infant_devil_civilizer_court_position_desc: "Для мягкого родительского убеждения есть время и место, но во время укрощения дикого [Glossary('куэй-дзин','game_concept_kuei_jin_desc')], только что вернувшегося из [UmbraGlossaryLocalized('yomi_wan','ада Йоми')], такое время не подходит. В этой роли выступает цивилизатор демонов-младенцев, наблюдающий за усилиями различных местных обществ, занимающихся приведения к цивилизации демонов-младенцев, по возвращению, подчинению и сопровождению этих вернувшихся душ в ближайший двор."
 
@@ -191,8 +191,8 @@
 
  underworld_ambassador_court_position: "Посол Загробного мира"
  underworld_ambassador_court_position_desc: "Посол [UmbraGlossaryLocalized('shadowlands','Загробного мира')] служит местному правителю в качестве связующего звена с местными измерениями [UmbraGlossaryLocalized('shadowlands','Загробного мира')]."
- umbra_ambassador_court_position: "Посол #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!"
- umbra_ambassador_court_position_desc: "Посол #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! служит местному правителю в качестве связующего звена с местными измерениями #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!."
+ umbra_ambassador_court_position: "Посол [Concept('umbra', 'Умбры')|E]"
+ umbra_ambassador_court_position_desc: "Посол [Concept('umbra', 'Умбры')|E] служит местному правителю в качестве связующего звена с местными измерениями [Concept('umbra', 'Умбры')|E]."
  trod_wayfarer_court_position: "Обходчик тродов"
  trod_wayfarer_court_position_desc: "Троды - ближайшая связь фей с [UmbraGlossaryLocalized('dreaming','Грёзами')] и [UmbraGlossaryLocalized('arcadia','Аркадией')] извне. Они также являются могуществом. Те, кто управляет тродами, имеют огромный контроль над обществом фей."
 

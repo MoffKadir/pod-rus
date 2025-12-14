@@ -20,8 +20,8 @@
  NOT_is_a_cultist: "#Bold Не#! является культистом"
  is_a_demonic: "Является демоном"
  NOT_is_a_demonic: "#Bold Не#! является демоном"
- is_a_akuma: "Является #TOOLTIP:game_concept_akuma_desc #E акума#!#!"
- NOT_is_a_akuma: "#Bold Не#! является #TOOLTIP:game_concept_akuma_desc #E акума#!#!"
+ is_a_akuma: "Является [Concept('akuma', 'акума')|E]"
+ NOT_is_a_akuma: "#Bold Не#! является [Concept('akuma', 'акума')|E]"
  is_a_diablerist: "Является диаблеристом"
  is_a_thinblood: "Является слабокровным"
  NOT_is_a_thinblood: "#Bold Не#! является слабокровным"
@@ -105,8 +105,8 @@
 
  HAS_RELATION_WORSHIPPED_DEMON_NO_SCOPE: "Является #V вашим#! #TOOLTIP:game_concept_cultist_desc #E культистом#!#!"
 
- POD_IS_IN_SAME_PLANE_TOOLTIP: "[TARGET_CHARACTER.GetFirstName] #bold не#! находится в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!."
- NOT_POD_IS_IN_SAME_PLANE_TOOLTIP: "[TARGET_CHARACTER.GetFirstName] находится в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!, а [CHARACTER.GetFirstName] #bold не#! находится в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!."
+ POD_IS_IN_SAME_PLANE_TOOLTIP: "[TARGET_CHARACTER.GetFirstName] #bold не#! находится в [Concept('umbra', 'Умбре')|E]."
+ NOT_POD_IS_IN_SAME_PLANE_TOOLTIP: "[TARGET_CHARACTER.GetFirstName] находится в [Concept('umbra', 'Умбре')|E], а [CHARACTER.GetFirstName] #bold не#! находится в [Concept('umbra', 'Умбре')|E]."
 
  DOMAIN_LIMIT_AVAILABLE_TRIGGER: "Имеет предел доменов - $COMPARATOR$ $NUM|V0$"
  NOT_HAS_DYNASTY_PERK_NONE: "[dynasty|E] #bold не#! имеет наследия «[DYNASTY_PERK.GetName]»"
@@ -192,7 +192,7 @@
  HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_FIRST_NOT: "Вы #R НЕ#! принадлежите по крайней мере к #bold $VALUE|V0$#! [Glossary('поколению','game_concept_vampgeneration_desc')]"
  HAS_VAMPGENERATION_LESS_OR_EQUAL_TO_THIRD_NOT: "[CHARACTER.GetShortUIName] #R НЕ#! принадлежит по крайней мере к #bold $VALUE|V0$#! [Glossary('поколению','game_concept_vampgeneration_desc')]"
 
- has_abyssal_mysticism_bloodmagic_trigger_flag: "Необходимо завершить #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы открыть мистицизм Бездны"
+ has_abyssal_mysticism_bloodmagic_trigger_flag: "Необходимо завершить [Concept('journey', 'странствие')|E], чтобы открыть мистицизм Бездны"
 
  COUNCILLOR_WITH_POSITION_SKILL_GLOBAL: "Имеет [Concept('skill', 'навык')|E] не ниже $VALUE|V0$ ед. в своей придворной должности"
  COUNCILLOR_WITH_POSITION_SKILL_GLOBAL_NOT: "#N Не#! имеет [Concept('skill', 'навык')|E] не ниже $VALUE|V0$ ед. в своей придворной должности"

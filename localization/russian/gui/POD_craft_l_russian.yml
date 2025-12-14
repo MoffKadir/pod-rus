@@ -126,7 +126,7 @@
  material_rare: "Редкие"
 
  material_magic_water: "#TOOLTIP:material_magic_water_tt #L Магическая вода#!#!"
- material_magic_water_tt: "Магическая вода, может быть найдена только в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!."
+ material_magic_water_tt: "Магическая вода, может быть найдена только в [Concept('umbra', 'Умбре')|E]."
  material_cost_magic_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_water_cost')]"
  material_reserve_magic_water: "([GetPlayer.MakeScope.ScriptValue('magic_water_reserve')|0]/#TOOLTIP:material_magic_water_income_tt #L [GetPlayer.MakeScope.ScriptValue('magic_water_income')|+0]#!#!/#TOOLTIP:material_magic_water_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('magic_water_max_reserve')|V0]#!#!)"
  material_total_cost_magic_water: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_water_total_cost')]"
@@ -137,7 +137,7 @@
  material_magic_water_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_water_max_reserve')]"
 
  material_magic_fuel: "#TOOLTIP:material_magic_fuel_tt #L Магическое топливо#!#!"
- material_magic_fuel_tt: "Магическая древесина, может быть найдена только в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!."
+ material_magic_fuel_tt: "Магическая древесина, может быть найдена только в [Concept('umbra', 'Умбре')|E]."
  material_cost_magic_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_fuel_cost')]"
  material_reserve_magic_fuel: "([GetPlayer.MakeScope.ScriptValue('magic_fuel_reserve')|0]/#TOOLTIP:material_magic_fuel_income_tt #L [GetPlayer.MakeScope.ScriptValue('magic_fuel_income')|+0]#!#!/#TOOLTIP:material_magic_fuel_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('magic_fuel_max_reserve')|V0]#!#!)"
  material_total_cost_magic_fuel: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_fuel_total_cost')]"
@@ -148,7 +148,7 @@
  material_magic_fuel_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_fuel_max_reserve')]"
 
  material_magic_herb: "#TOOLTIP:material_magic_herb_tt #L Магические травы#!#!"
- material_magic_herb_tt: "Магические травы, могут быть найдены только в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!."
+ material_magic_herb_tt: "Магические травы, могут быть найдены только в [Concept('umbra', 'Умбре')|E]."
  material_cost_magic_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_herb_cost')]"
  material_reserve_magic_herb: "([GetPlayer.MakeScope.ScriptValue('magic_herb_reserve')|0]/#TOOLTIP:material_magic_herb_income_tt #L [GetPlayer.MakeScope.ScriptValue('magic_herb_income')|+0]#!#!/#TOOLTIP:material_magic_herb_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('magic_herb_max_reserve')|V0]#!#!)"
  material_total_cost_magic_herb: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_herb_total_cost')]"
@@ -159,7 +159,7 @@
  material_magic_herb_max_reserve_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('magic_herb_max_reserve')]"
 
  material_magic_mineral: "#TOOLTIP:material_magic_mineral_tt #L Магические минералы#!#!"
- material_magic_mineral_tt: "Магические металлы, могут быть найдены только в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!."
+ material_magic_mineral_tt: "Магические металлы, могут быть найдены только в [Concept('umbra', 'Умбре')|E]."
  material_cost_magic_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_mineral_cost')]"
  material_reserve_magic_mineral: "([GetPlayer.MakeScope.ScriptValue('magic_mineral_reserve')|0]/#TOOLTIP:material_magic_mineral_income_tt #L [GetPlayer.MakeScope.ScriptValue('magic_mineral_income')|+0]#!#!/#TOOLTIP:material_magic_mineral_max_reserve_tt #L [GetPlayer.MakeScope.ScriptValue('magic_mineral_max_reserve')|V0]#!#!)"
  material_total_cost_magic_mineral: "[gold_i][GetPlayer.MakeScope.ScriptValue('magic_mineral_total_cost')]"

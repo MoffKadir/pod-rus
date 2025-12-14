@@ -4,21 +4,21 @@
  POD_journey_maintenance.1.desc: "[Localize(Concatenate(PlayerJourneyID,'_planning_desc'))]"
  POD_journey_maintenance.1.option.a: "[Localize(Concatenate(PlayerJourneyID,'_planning_confirm'))]"
  POD_journey_maintenance.1.option.a.tt: "[Select_CString( GetScriptedGui('POD_can_start_travel_phase_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End), Localize('POD_journey_maintenance.1.option.a.tt.default'), GetPlayer.Custom('PODCoterieTravelStatusGUI') )]"
- POD_journey_maintenance.1.option.a.tt.default: "$EFFECT_LIST_BULLET$Вы немедленно начнёте #TOOLTIP:game_concept_travel_phase_desc #E фазу путешествия#!#! этого #TOOLTIP:game_concept_journey_desc #E странствия#!#!.\n[GetPlayer.Custom('PODCoterieTravelStatus')]"
+ POD_journey_maintenance.1.option.a.tt.default: "$EFFECT_LIST_BULLET$Вы немедленно начнёте [Concept('travel_phase', 'фазу путешествия')|E] этого [Concept('journey', 'странствия')|E].\n[GetPlayer.Custom('PODCoterieTravelStatus')]"
  POD_journey_maintenance.1.option.b: "[Localize(Concatenate(PlayerJourneyID,'_planning_decline'))]"
- POD_journey_maintenance.1.option.b.tt: "#TOOLTIP:game_concept_planning_phase_desc #E Фаза планирования#!#! этого #TOOLTIP:game_concept_journey_desc #E странствия#!#! будет завершена."
- POD_journey_maintenance.1.option.b.tt.2: "#TOOLTIP:game_concept_journey_desc #E Странствие#!#! $POD_current_journey$ будет приостановлено. Вы можете продолжить его позже, сохранив весь свой прогресс."
+ POD_journey_maintenance.1.option.b.tt: "#TOOLTIP:game_concept_planning_phase_desc #E Фаза планирования#!#! этого [Concept('journey', 'странствия')|E] будет завершена."
+ POD_journey_maintenance.1.option.b.tt.2: "[Concept('journey', 'Странствие')|E] $POD_current_journey$ будет приостановлено. Вы можете продолжить его позже, сохранив весь свой прогресс."
 
  POD_journey_maintenance.3.message: "Найденные контракты"
 
  POD_journey_maintenance.20.t: "Преждевременная кончина"
- POD_journey_maintenance.20.desc: "До меня дошли слухи, что [journey_target.GetName] [Select_CString(journey_target.IsFemale, 'умерла', 'умер' )].\n\nЕстественно, это означает, что я больше не смогу продолжить ни одно из #TOOLTIP:game_concept_journey_desc #E странствий#!#!, целью которых [Select_CString(journey_target.IsFemale, 'была она', 'был он' )]."
+ POD_journey_maintenance.20.desc: "До меня дошли слухи, что [journey_target.GetName] [Select_CString(journey_target.IsFemale, 'умерла', 'умер' )].\n\nЕстественно, это означает, что я больше не смогу продолжить ни одно из [Concept('journeys', 'странствий')|E], целью которых [Select_CString(journey_target.IsFemale, 'была она', 'был он' )]."
  POD_journey_maintenance.20.option.a: "Прискорбно."
- POD_journey_maintenance.20.tt: "Все ваши #TOOLTIP:game_concept_journey_desc #E странствия#!#!, целью которых [Select_CString(journey_target.IsFemale, 'была', 'был' )] [journey_target.GetName], завершились."
+ POD_journey_maintenance.20.tt: "Все ваши [Concept('journey', 'странствия')|E], целью которых [Select_CString(journey_target.IsFemale, 'была', 'был' )] [journey_target.GetName], завершились."
 
  POD_journey_maintenance.21.t: "Потерянное сокровище"
- POD_journey_maintenance.21.desc: "Намеренно или случайно, один из [Concept('artifacts', 'артефактов')|E], который я [Select_CString(ROOT.Char.IsFemale, 'искала', 'искал' )], был уничтожен.\n\nЕстественно, это означает, что я больше не смогу продолжить ни одно из #TOOLTIP:game_concept_journey_desc #E странствий#!#!, целью которых он был."
- POD_journey_maintenance.21.tt: "Все ваши #TOOLTIP:game_concept_journey_desc #E странствия#!#!, целью которых был этот потерянный [Concept('artifact', 'артефакт')|E], завершились."
+ POD_journey_maintenance.21.desc: "Намеренно или случайно, один из [Concept('artifacts', 'артефактов')|E], который я [Select_CString(ROOT.Char.IsFemale, 'искала', 'искал' )], был уничтожен.\n\nЕстественно, это означает, что я больше не смогу продолжить ни одно из [Concept('journeys', 'странствий')|E], целью которых он был."
+ POD_journey_maintenance.21.tt: "Все ваши [Concept('journey', 'странствия')|E], целью которых был этот потерянный [Concept('artifact', 'артефакт')|E], завершились."
 
  POD_journey_maintenance.100.t: "[Localize(Concatenate(PlayerJourneyID,'_travel_title'))]"
  POD_journey_maintenance.100.desc: "[GetPlayer.Custom('PODCoterieTravelStatusFlavor')]\n\n[Localize(Concatenate(PlayerJourneyID,'_travel_desc'))]"
@@ -26,5 +26,5 @@
  POD_journey_maintenance.100.option.a: "[Localize(Concatenate(PlayerJourneyID,'_travel_confirm'))]"
 
  POD_journey_maintenance.110.t: "Что дальше?"
- POD_journey_maintenance.110.desc: "Теперь, когда я [Select_CString(ROOT.Char.IsFemale, 'вернулась', 'вернулся' )] домой, я могу обратить внимание на другие незавершенные дела.\n\nНекоторые из моих #TOOLTIP:game_concept_journey_desc #E странствий#!#! готовы к возобновлению."
+ POD_journey_maintenance.110.desc: "Теперь, когда я [Select_CString(ROOT.Char.IsFemale, 'вернулась', 'вернулся' )] домой, я могу обратить внимание на другие незавершенные дела.\n\nНекоторые из моих [Concept('journeys', 'странствий')|E] готовы к возобновлению."
  POD_journey_maintenance.110.option.a: "Я не хочу возобновлять странствия в данный момент."

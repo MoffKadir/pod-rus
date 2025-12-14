@@ -31,7 +31,7 @@
  look_for_contracts_planning_decline: "$POD_journey_planning_decline_default$"
 
  hunt_in_capital_name: "Охотиться в столице"
- hunt_in_capital_desc: "Всеми [Glossary('каинитами','game_concept_cainite_desc')] движет жажда крови, и я не исключение. Домен [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier] станет моими охотничьими угодьями в ближайшие ночи.\n\n#help (Вы также можете охотиться на определенного персонажа, щелкнув на нём правой кнопкой мыши и выбрав #TOOLTIP:game_concept_journey_desc #E странствие#!#! охоты через [Concept('character_interaction', 'взаимодействие персонажа')|E])#!"
+ hunt_in_capital_desc: "Всеми [Glossary('каинитами','game_concept_cainite_desc')] движет жажда крови, и я не исключение. Домен [GetPlayer.GetCapitalLocation.GetCounty.GetTitle.GetNameNoTier] станет моими охотничьими угодьями в ближайшие ночи.\n\n#help (Вы также можете охотиться на определенного персонажа, щелкнув на нём правой кнопкой мыши и выбрав [Concept('journey', 'странствие')|E] охоты через [Concept('character_interaction', 'взаимодействие персонажа')|E])#!"
  #hunt_in_capital_effects: ""
  hunt_in_capital_tt: "Пора утолить жажду."
  hunt_in_capital_planning_title: "На охоте"
@@ -43,10 +43,10 @@
  hunt_in_capital_planning_restart: "Ни один из этих вариантов мне не подходит. Я подыщу другую добычу."
  hunt_in_capital_planning_decline: "$POD_journey_planning_decline_default$"
  hunt_in_capital_planning_decline_gui: "Я [Select_CString(GetPlayer.IsFemale, 'передумала', 'передумал' )]. Отменить охоту."
- hunt_in_capital_planning_decline_tt: "Ваше #TOOLTIP:game_concept_journey_desc #E странствие#!#! «$POD_current_journey$» завершится."
+ hunt_in_capital_planning_decline_tt: "Ваше [Concept('journey', 'странствие')|E] «$POD_current_journey$» завершится."
  hunt_in_capital_planning_decline_tt_2: "Вы больше не увидите этих смертных."
  hunt_in_capital_widget_desc: "Продолжить охоту на персонажа #bold [Localize(Concatenate( 'POD_find_mortals_interaction_', GetPlayer.MakeScope.Var('hunt_in_capital_selection').GetFlagName ))]#!?"
- hunt_in_capital_widget_tt: "Вы немедленно начнете ещё одно #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы поохотиться на персонажа #bold [Localize(Concatenate( 'POD_find_mortals_interaction_', GetPlayer.MakeScope.Var('hunt_in_capital_selection').GetFlagName ))]#! в вашей столице.\n[GetPlayer.Custom('PODShowJourneyCostHunt')]"
+ hunt_in_capital_widget_tt: "Вы немедленно начнете ещё одно [Concept('journey', 'странствие')|E], чтобы поохотиться на персонажа #bold [Localize(Concatenate( 'POD_find_mortals_interaction_', GetPlayer.MakeScope.Var('hunt_in_capital_selection').GetFlagName ))]#! в вашей столице.\n[GetPlayer.Custom('PODShowJourneyCostHunt')]"
  cthonic_womb_widget_desc: "Превратить персонажа [EventWindowWidget.GetScope.sC('victim').GetShortUINameNoTooltip] в #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! после [EventWindowWidget.GetScope.sC('victim').GetHerHis] убийства?"
  cthonic_womb_widget_tt: "#help Это сработает только в том случае, если вы полностью осушите свою жертву.#!"
 
@@ -60,7 +60,7 @@
  fera_training_planning_confirm: "Мы начнем тренировку прямо сейчас!"
  fera_training_planning_decline: "$POD_journey_planning_decline_default$"
  fera_training_widget_desc: "[GetPlayer.Custom('PODCoterie')]: продолжить совместную тренировку?"
- fera_training_widget_tt: "Вы немедленно начнете ещё одно #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы потренироваться с вашей стаей."
+ fera_training_widget_tt: "Вы немедленно начнете ещё одно [Concept('journey', 'странствие')|E], чтобы потренироваться с вашей стаей."
 
  fera_spirit_quest_name: "Отправиться на духовные поиски"
  fera_spirit_quest_desc: "Духи - это наставники мира $glossary_fera$, но за изучение их даров приходится платить. В поисках духов вы отправитесь в странствие, полное разнообразных встреч."
@@ -362,7 +362,7 @@
  seek_knowledge_spiritus_planning_confirm: "$POD_journey_planning_confirm_default$"
  seek_knowledge_spiritus_planning_decline: "$POD_journey_planning_decline_default$"
  seek_knowledge_spiritus_travel_title: "$POD_journey_travel_title_seek_knowledge$"
- seek_knowledge_spiritus_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('spiritus').GetName(GetNullCharacter)]. Не многие [Glossary('каиниты','game_concept_cainite_desc')] могут похвастаться связями с #TOOLTIP:game_concept_umbra_desc #E миром духов#!#!."
+ seek_knowledge_spiritus_travel_desc: "Я с нетерпением жду возможности изучить [GetTrait('spiritus').GetName(GetNullCharacter)]. Не многие [Glossary('каиниты','game_concept_cainite_desc')] могут похвастаться связями с [Concept('spirit_world', 'миром духов')|E]."
  seek_knowledge_spiritus_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  seek_knowledge_temporis_name: "Изучить редкую дисциплину ([GetTrait('temporis').GetName(GetNullCharacter)])"
@@ -1064,7 +1064,7 @@
 
  golconda_2_name: "Примириться со своим Зверем"
  golconda_2_desc: "Теперь, когда я знаю о пути #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!, передо мной стоит сложная задача - обрести глубокое понимание своего [Glossary('Зверя','game_concept_beast_desc')]. Многие, кто был до меня, потратили на это столетия, но ничего не добились, кроме разочарования. Смогу ли я преуспеть там, где они потерпели неудачу?"
- golconda_2_effects: "Вы получите [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] «[GetTrait('golconda_seeker').GetName(GetPlayer)]». Вы также получите [Concept('trait', 'свойство')|E], если у вас его ещё нет.\n\nЧем больше у вас [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E], тем выше ваши шансы получить откровение.\n\n#X Весь прогресс этого #TOOLTIP:game_concept_journey_desc #E странствия#!#! теряется при впадении в неистовство, а также при совершении убийства или кражи.#!"
+ golconda_2_effects: "Вы получите [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] «[GetTrait('golconda_seeker').GetName(GetPlayer)]». Вы также получите [Concept('trait', 'свойство')|E], если у вас его ещё нет.\n\nЧем больше у вас [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E], тем выше ваши шансы получить откровение.\n\n#X Весь прогресс этого [Concept('journey', 'странствия')|E] теряется при впадении в неистовство, а также при совершении убийства или кражи.#!"
  golconda_2_isvalid: "$EFFECT_LIST_BULLET$У вас нет [Concept('men_at_arms', 'профессионалов')|E], созданных в результате чудовищных действий #weak ([GetMaA('szlachta').GetName] или [GetMaA('vozhd').GetName])#!"
  golconda_2_trigger: "Вам нужно распустить всех [Concept('men_at_arms', 'профессионалов')|E], созданных в результате чудовищных действий #weak ([GetMaA('szlachta').GetName] или [GetMaA('vozhd').GetName])#!"
  golconda_2_tt: "Путешествие в тысячу шагов."
@@ -1076,7 +1076,7 @@
  # golconda_2_travel_desc:
  # golconda_2_travel_confirm:
  golconda_widget_desc: "Продолжить примирение со своим [Glossary('Зверем','game_concept_beast_desc')]?"
- golconda_widget_tt: "Вы немедленно начнёте ещё одно #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы получить понимание #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!.\nСтоимость: [piety_i|E] #V 1000#!"
+ golconda_widget_tt: "Вы немедленно начнёте ещё одно [Concept('journey', 'странствие')|E], чтобы получить понимание #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!.\nСтоимость: [piety_i|E] #V 1000#!"
 
  golconda_3_name: "Вздох"
  golconda_3_desc: "Все мои приготовления привели к этому. Я одолею [Glossary('Зверя','game_concept_beast_desc')], раз и навсегда."
@@ -1184,7 +1184,7 @@
  #assault_lair_effects: ""
  assault_lair_tt: "Одним монстром в этом мире меньше."
  assault_lair_planning_title: "Готовность к штурму"
- assault_lair_planning_desc: "Моё терпение было вознаграждено.\n\nПрошло немало времени, но моя сеть шпионов и информаторов наконец-то принесла мне то, что я [Select_CString(GetPlayer.IsFemale, 'искала', 'искал' )]: точное местоположение логова, в котором скрывается [PlayerJourneyTarget.GetFirstNamePossessive].\n\nКонечно, самая опасная часть этого #TOOLTIP:game_concept_journey_desc #E странствия#!#! ещё впереди..."
+ assault_lair_planning_desc: "Моё терпение было вознаграждено.\n\nПрошло немало времени, но моя сеть шпионов и информаторов наконец-то принесла мне то, что я [Select_CString(GetPlayer.IsFemale, 'искала', 'искал' )]: точное местоположение логова, в котором скрывается [PlayerJourneyTarget.GetFirstNamePossessive].\n\nКонечно, самая опасная часть этого [Concept('journey', 'странствия')|E] ещё впереди..."
  assault_lair_planning_confirm: "$POD_journey_planning_confirm_default$"
  assault_lair_planning_decline: "$POD_journey_planning_decline_default$"
  assault_lair_travel_title: "Охота началась"

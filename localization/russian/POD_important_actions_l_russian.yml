@@ -61,7 +61,7 @@
 
  action_can_return_to_earth: "Вы должны вернуться на Землю"
  action_can_return_to_earth_label: "Вы должны вернуться на Землю"
- action_can_return_to_earth_desc: "Вам нужно вернуться на Землю, чтобы не оставаться в #TOOLTIP:game_concept_umbra_desc #E Умбре#!#!."
+ action_can_return_to_earth_desc: "Вам нужно вернуться на Землю, чтобы не оставаться в [Concept('umbra', 'Умбре')|E]."
  action_can_return_to_earth_click: "#I Нажмите, чтобы вернуться на Землю#!"
  POD_return_to_earth_interaction: "Вернуться на Землю"
  POD_return_to_earth_interaction_desc: "Вернуться на Землю"
@@ -126,7 +126,7 @@
  action_reactive_advice_umbra_desc: "Узнайте больше об Умбре."
  action_reactive_advice_umbra_click: "$click_to_open_lesson$"
  lesson_umbra_1: "Умбра"
- lesson_umbra_1_desc: "Умбра, также называемая #TOOLTIP:game_concept_umbra_desc #E миром духов#!#!, является духовным отражением материального мира. Она разделена на множество подреальностей, каждая из которых таит в себе свои чудеса и опасности.\nЛишь немногие избранные могут путешествовать по этому измерению, а некоторые миры открыты только для определенных существ (или обладающих соответствующей силой)."
+ lesson_umbra_1_desc: "Умбра, также называемая [Concept('spirit_world', 'миром духов')|E], является духовным отражением материального мира. Она разделена на множество подреальностей, каждая из которых таит в себе свои чудеса и опасности.\nЛишь немногие избранные могут путешествовать по этому измерению, а некоторые миры открыты только для определенных существ (или обладающих соответствующей силой)."
  lesson_umbra_2: "Исследование"
  lesson_umbra_2_desc: "Измерения Умбры, которые вы и ваши придворные можете исследовать, показаны на панели Умбры. Нажав на пустую панель под измерением, вы сможете назначить исследователя, чем выше его пригодность, тем быстрее он будет исследовать.\nЗавершение исследования может привести к нахождению нового умбрального измерения, началу открытия или другому эффекту в зависимости от мира."
  lesson_umbra_3: "Обнаружение"
@@ -136,15 +136,15 @@
 
  ### Custom alerts
 
- pod_alert_can_create_coterie: "#T Вы можете создать котерию ([GetPlayer.Custom('PODCoterieNoTooltip')])#!\nПринадлежность к котерии ([GetPlayer.Custom('PODCoterie')]) облегчит достижение успеха в ваших #TOOLTIP:game_concept_journey_desc #E странствиях#!#!.\n\n#I Нажмите, чтобы создать котерию ([GetPlayer.Custom('PODCoterieNoTooltip')]) сейчас.#!\n$RIGHT_CLICK_DISMISS$"
+ pod_alert_can_create_coterie: "#T Вы можете создать котерию ([GetPlayer.Custom('PODCoterieNoTooltip')])#!\nПринадлежность к котерии ([GetPlayer.Custom('PODCoterie')]) облегчит достижение успеха в ваших [Concept('journeys', 'странствиях')|E].\n\n#I Нажмите, чтобы создать котерию ([GetPlayer.Custom('PODCoterieNoTooltip')]) сейчас.#!\n$RIGHT_CLICK_DISMISS$"
 
- pod_alert_can_hunt_in_capital: "#T Вы можете отправиться в странствие#!\nПоскольку вы - вампир, вы можете #bold $hunt_in_capital_name$#!, чтобы утолить ваш #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#! и получить [Concept('lifestyle_experience', 'опыт пути')|E].\n\nОхота на #bold крестьян#! бесплатна.\n\n#I Нажмите, чтобы открыть окно #TOOLTIP:game_concept_journey_desc #E странствия#!#!.#!\n$RIGHT_CLICK_DISMISS$"
+ pod_alert_can_hunt_in_capital: "#T Вы можете отправиться в странствие#!\nПоскольку вы - вампир, вы можете #bold $hunt_in_capital_name$#!, чтобы утолить ваш #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голод#!#! и получить [Concept('lifestyle_experience', 'опыт пути')|E].\n\nОхота на #bold крестьян#! бесплатна.\n\n#I Нажмите, чтобы открыть окно [Concept('journey', 'странствия')|E].#!\n$RIGHT_CLICK_DISMISS$"
 
- pod_alert_can_train_with_pack: "#T Вы можете отправиться в странствие#!\nПоскольку вы - $glossary_fera$, вы можете #bold $fera_training_name$#!, чтобы улучшить способности группы [GetPlayer.Custom('PODCoterie')] и свои собственные, или получить другие награды.\n\n#I Нажмите, чтобы открыть окно #TOOLTIP:game_concept_journey_desc #E странствия#!#!.#!\n$RIGHT_CLICK_DISMISS$"
+ pod_alert_can_train_with_pack: "#T Вы можете отправиться в странствие#!\nПоскольку вы - $glossary_fera$, вы можете #bold $fera_training_name$#!, чтобы улучшить способности группы [GetPlayer.Custom('PODCoterie')] и свои собственные, или получить другие награды.\n\n#I Нажмите, чтобы открыть окно [Concept('journey', 'странствия')|E].#!\n$RIGHT_CLICK_DISMISS$"
 
- pod_alert_can_go_on_umbra_expedition: "#T Вы можете отправиться в #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!#!\nИсследование глубин #TOOLTIP:game_concept_umbra_desc #E Умбры#!#! может быть как опасным, так и полезным.\n\n#I Нажмите, чтобы открыть окно #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!.#!\n$RIGHT_CLICK_DISMISS$"
+ pod_alert_can_go_on_umbra_expedition: "#T Вы можете отправиться в #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!#!\nИсследование глубин [Concept('umbra', 'Умбры')|E] может быть как опасным, так и полезным.\n\n#I Нажмите, чтобы открыть окно [Concept('umbra', 'Умбры')|E].#!\n$RIGHT_CLICK_DISMISS$"
 
- pod_alert_has_umbra_crisis: "#T У вас есть неразрешенный кризис Умбры#!\nЕсли вы не хотите, чтобы в конце случилось что-то плохое, вам придется разрешить кризис Умбры.\n\n#I Нажмите, чтобы открыть окно #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!.#!\n$RIGHT_CLICK_DISMISS$"
+ pod_alert_has_umbra_crisis: "#T У вас есть неразрешенный кризис Умбры#!\nЕсли вы не хотите, чтобы в конце случилось что-то плохое, вам придется разрешить кризис Умбры.\n\n#I Нажмите, чтобы открыть окно [Concept('umbra', 'Умбры')|E].#!\n$RIGHT_CLICK_DISMISS$"
 
  ### Advanced fancy tutorial
 
@@ -212,7 +212,7 @@
 
  fetters_and_passions4: "Арканой"
  lesson_fetters_and_passions4: "Арканой"
- lesson_fetters_and_passions4_desc: "Несмотря на то, что в мире живых они не чувствуют себя спокойно, #L [GetTrait('wraith').GetName(GetNullCharacter)|l]#! не беззащитны, так как имеют доступ к #TOOLTIP:game_concept_arcanoi_lifestyle_desc #E арканоям#!#!, силам мёртвых.\n\nЧтобы использовать их, вам нужно изучить их, есть два способа сделать это: первый - обучиться им из [Concept('friend', 'дружеских')|E] или других положительных отношений. Второй - во время исследования #TOOLTIP:game_concept_umbra_desc #E Умбры#!#!, встретив другого #L [GetTrait('wraith').GetName(GetNullCharacter)|l]а#!, готового обучить вас одному из них.\n\nДля использования каждого арканоя требуется пафос, а пафос приобретается через страсти, как объяснялось ранее.\n\nКаждый арканой также открывает [Concept('domicile_building', 'постройки')|E], дающие больше бонусов."
+ lesson_fetters_and_passions4_desc: "Несмотря на то, что в мире живых они не чувствуют себя спокойно, #L [GetTrait('wraith').GetName(GetNullCharacter)|l]и#! не беззащитны, так как имеют доступ к #TOOLTIP:game_concept_arcanoi_lifestyle_desc #E арканоям#!#!, силам мёртвых.\n\nЧтобы использовать их, вам нужно изучить их, есть два способа сделать это: первый - обучиться им из [Concept('friend', 'дружеских')|E] или других положительных отношений. Второй - во время исследования [Concept('umbra', 'Умбры')|E], встретив другого #L [GetTrait('wraith').GetName(GetNullCharacter)|l]а#!, готового обучить вас одному из них.\n\nДля использования каждого арканоя требуется пафос, а пафос приобретается через страсти, как объяснялось ранее.\n\nКаждый арканой также открывает [Concept('domicile_building', 'постройки')|E], дающие больше бонусов."
 
  action_can_craft_alert: "Ремесло восстановилось!"
  action_can_craft_alert_desc: "Ремесло восстановилось!"

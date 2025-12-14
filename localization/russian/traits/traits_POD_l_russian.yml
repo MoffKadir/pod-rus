@@ -967,8 +967,8 @@
  DHARMA_ACTIVE_DECLEAR_WAR_AGAINST_KJ: "Объявить войну против $POD_splat_kueijin$"
  DHARMA_ACTIVE_TORTURE_KJ: "Пытать $POD_splat_kueijin$"
  DHARMA_ACTIVE_CONVERT_ANDA: "#warning Эта часть ожидает соответствующей активации и пока недоступна.#! Обратить #L [GetFaithByKey('viayasaq').GetName|l]ого#! персонажа."
- DHARMA_ACTIVE_DECLEAR_WAR_AGAINST_OTHER_AKUMA: "Объявить войну против #TOOLTIP:game_concept_akuma_desc #E акума#!#! с другой [Concept('faith', 'конфессией')|E]"
- DHARMA_ACTIVE_TORTURE_OTHER_AKUMA: "Пытать #TOOLTIP:game_concept_akuma_desc #E акума#!#! с другой [Concept('faith', 'конфессией')|E]"
+ DHARMA_ACTIVE_DECLEAR_WAR_AGAINST_OTHER_AKUMA: "Объявить войну против [Concept('akuma', 'акума')|E] с другой [Concept('faith', 'конфессией')|E]"
+ DHARMA_ACTIVE_TORTURE_OTHER_AKUMA: "Пытать [Concept('akuma', 'акума')|E] с другой [Concept('faith', 'конфессией')|E]"
  DHARMA_ACTIVE_UNLOCK_OR_USE_STORM_SHINTAI: "Разблокировать [Concept('perks', 'достоинства')|E] синтай Шторма или использовать их"
  DHARMA_ACTIVE_CONVERT_NAGAH: "#warning Эта часть ожидает соответствующей активации и пока недоступна.#! Обратить [GetTrait('nagah').GetName(GetNullCharacter)|l]"
  DHARMA_ACTIVE_DECLEAR_WAR_AGAINST_PENANGALLAN: "Обратить войну против #TOOLTIP:PENANGALLAN_EXPLANATION пенангаллан#!"
@@ -1094,7 +1094,7 @@
  trait_vampire_ill: "Вампирская болезнь"
 
  trait_akuma: "Акума"
- trait_akuma_desc: "Акума, или одержимые демонами, - это те, кто отказались от добродетели и бросили свой жребий вместе с [Glossary('повелителями Яма','podgloss.yamaking')]. См. также «#TOOLTIP:game_concept_akuma_desc #E Акума#!#!»."
+ trait_akuma_desc: "Акума, или одержимые демонами, - это те, кто отказались от добродетели и бросили свой жребий вместе с [Glossary('повелителями Яма','podgloss.yamaking')]. См. также «[Concept('akuma', 'Акума')|E]»."
 
  trait_mummy: "Мумия"
  trait_mummy_desc: "Мумии, также называемые Вечными или Перерожденными, - бессмертные существа, чьи тела были сохранены ритуалом."
@@ -1344,7 +1344,7 @@
  trait_golconda_seeker_desc: "Этот персонаж находится на долгом пути к #TOOLTIP:game_concept_golconda_desc #E просветлению#!#!."
  trait_golconda_seeker_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] находится на долгом пути к #TOOLTIP:game_concept_golconda_desc #E просветлению#!#!."
  trait_track_golconda_seeker: "Проницательность"
- trait_track_golconda_seeker_desc: "\nВаш [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] представляет собой процент успеха на последних этапах #TOOLTIP:game_concept_journey_desc #E пути#!#! к Голконде ([GetTrait('golconda').GetName(GetNullCharacter)]).\n\n#X Весь прогресс теряется при впадении в неистовство, а также при совершении убийства или кражи.#!"
+ trait_track_golconda_seeker_desc: "\nВаш [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] представляет собой процент успеха на последних этапах [Concept('journey', 'пути')|E] к Голконде ([GetTrait('golconda').GetName(GetNullCharacter)]).\n\n#X Весь прогресс теряется при впадении в неистовство, а также при совершении убийства или кражи.#!"
 
  TRAIT_FLAG_DESC_elder_perk_flag: "Может изучать #TOOLTIP:game_concept_elder_perk_desc #E достоинства старейшин#!#! независимо от [Glossary('поколения','game_concept_vampgeneration_desc')]"
  #TRAIT_FLAG_DESC_hungerless_flag: "[Concept('hungerless','Больше не страдает от жажды крови')|E]"
@@ -1389,7 +1389,7 @@
  trait_azhi_dahaka_scholar_desc: "Этот персонаж стремится познать Ажи Дахака, просветленное и высшее состояние бытия, которое может быть достигнуто в результате широкого использования дисциплины Изменчивости."
  trait_azhi_dahaka_scholar_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] стремится познать Ажи Дахака, просветленное и высшее состояние бытия, которое может быть достигнуто в результате широкого использования дисциплины Изменчивости."
  trait_track_azhi_dahaka_scholar: "Метаморфозис"
- trait_track_azhi_dahaka_scholar_desc: "\nВаш [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] представляет собой процент успеха на последних этапах #TOOLTIP:game_concept_journey_desc #E пути#!#! к [GetTrait('azhi_dahaka').GetName(GetNullCharacter)]."
+ trait_track_azhi_dahaka_scholar_desc: "\nВаш [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] представляет собой процент успеха на последних этапах [Concept('journey', 'пути')|E] к [GetTrait('azhi_dahaka').GetName(GetNullCharacter)]."
 
  trait_azhi_dahaka: "Ажи Дахака"
  trait_azhi_dahaka_desc: "Ажи Дахака - термин, используемый вампирами клана Цимисхи для описания просветленного и высшего состояния бытия, возможно, наступившего в результате длительного использования дисциплины Изменчивости."

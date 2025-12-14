@@ -50,9 +50,9 @@
  has_4_level_of_sihr_trigger: "У вас должно быть любое достоинство четвёртого уровня #weak (ряда)#! #TOOLTIP:game_concept_bloodmagic_path_desc #E тропы#!#! Сихр"
  has_5_level_of_sihr_trigger: "У вас должно быть любое достоинство пятого уровня #weak (ряда)#! #TOOLTIP:game_concept_bloodmagic_path_desc #E тропы#!#! Сихр"
 
- POD_START_CASTING_RITUAL: "#!Вы начнёте #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы подготовиться к этому #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуалу#!#!.\n@warning_icon! #X Если по завершении этого #TOOLTIP:game_concept_journey_desc #E странствия#!#! у вас не будет необходимых ресурсов, #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуал#!#! завершится неудачей.#!\n"
+ POD_START_CASTING_RITUAL: "#!Вы начнёте [Concept('journey', 'странствие')|E], чтобы подготовиться к этому #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуалу#!#!.\n@warning_icon! #X Если по завершении этого [Concept('journey', 'странствия')|E] у вас не будет необходимых ресурсов, #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуал#!#! завершится неудачей.#!\n"
  POD_bloodmagic_ritual_start_tt: "Когда подготовка #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуала#!#! будет завершена: #g " # This #g Is for space
- POD_is_casting_ritual: "В данный момент вы проводите #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуал#!#!. Откажитесь от #TOOLTIP:game_concept_journey_desc #E странствия#!#! #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуала#!#!, или подождите, пока он не завершится."
+ POD_is_casting_ritual: "В данный момент вы проводите #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуал#!#!. Откажитесь от [Concept('journey', 'странствия')|E] #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуала#!#!, или подождите, пока он не завершится."
  POD_bloodmagic_ritual_fail: "#R Этот #TOOLTIP:game_concept_bloodmagic_ritual_desc #E ритуал#!#! провалился, так как у вас не хватило ресурсов, когда подготовка была завершена!#!"
 
  bs_target_is_you: "Цель - #bold не#! #italic вы#!"

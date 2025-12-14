@@ -397,7 +397,7 @@
  shadow_wrack_perk_name: "Разрушение тени"
 
  COAX_PERK_EFFECT: "Resisting Shadow is more likely to succeed\n#F A Pardoner may call on their Shadow at decreased risk.#!"
- BULWARK_PERK_EFFECT: "Less chance of gaining [stress|E] in the Adventure into Maelstroms #TOOLTIP:game_concept_umbra_desc #E Умбра#!#! action.\n#F A Pardoner can temporarily shield themselves or others from a Maelstrom.#!"
+ BULWARK_PERK_EFFECT: "Less chance of gaining [stress|E] in the Adventure into Maelstroms [Concept('umbra', 'Умбра')|E] action.\n#F A Pardoner can temporarily shield themselves or others from a Maelstrom.#!"
  TRANSFER_ANGST_PERK_EFFECT: "As a [character_interaction|E], can store 50 #TOOLTIP:game_concept_static_stress_desc #E Психическое напряжение#!#! for 5 years, after which you will get 80 #TOOLTIP:game_concept_static_stress_desc #E Психическое напряжение#!#!\n#F A Pardoner can temporarily hold Angst in themselves until it can be transferred to an appropriate storage place.#!"
  TRIMMING_THE_BLACK_ROSE_PERK_EFFECT: "As a [character_interaction|E], remove 1 #TOOLTIP:game_concept_thorn_lifestyle_desc #E Шипы#!#! [perk|E], or lose 50 #TOOLTIP:game_concept_static_stress_desc #E Психическое напряжение#!#!\n#F A Pardoner may prevent a Shadow from using its Thorns.#!"
  COOLING_THE_BLOOD_PERK_EFFECT: "Number of dark passions: #P -1#!\n#F A Pardoner can weaken a Shadow's Dark Passions.#!"
@@ -498,7 +498,7 @@
 
  SENSE_STRAND_PERK_EFFECT: "Unlock #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! Mapmode.\n#F A Monitor is always aware of the location of their #TOOLTIP:game_concept_Fetter_desc #E оков#!#!, and can extend their senses to a #TOOLTIP:game_concept_Fetter_desc #E оков#!#!'s immediate vicinity.#!"
  LIFELINE_PERK_EFFECT: "Allow use $POD_manipulate_fetters_interaction$ [character_interaction|E] on [GetTrait('wraith').GetName( GetNullCharacter )] with 75+ opinion.\n#F A Monitor can create a "pseudo-#TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!" between two wraiths that allows them to work together.#!"
- STRAND_CHANNEL_PERK_EFFECT: "Allow interact with your #TOOLTIP:game_concept_Fetter_desc #E оков#!#! from any place in the #TOOLTIP:game_concept_umbra_desc #E Умбра#!#!.\n#F A Monitor can speak through a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!, or use their Arcanoi through a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!.#!"
+ STRAND_CHANNEL_PERK_EFFECT: "Allow interact with your #TOOLTIP:game_concept_Fetter_desc #E оков#!#! from any place in the [Concept('umbra', 'Умбра')|E].\n#F A Monitor can speak through a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!, or use their Arcanoi through a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!.#!"
  SPLICE_STRAND_PERK_EFFECT: "Bonus to $POD_manipulate_fetters_interaction$ [character_interaction|E], allows you allocating free #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! point to already existing #TOOLTIP:game_concept_Fetter_desc #E оков#!#!\nUnlock $POD_manipulate_fetter_interaction$ [character_interaction|E], allow creating a temporary #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!.\n#F A Monitor can create a temporary #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!.#!"
  EARLY_WARNING_PERK_EFFECT: "You will receive a notification when your #TOOLTIP:game_concept_Fetter_desc #E оков#!#! are going to die of natural causes.\n#F A Monitor can place a tag on a mortal that will alert them if the Quick is about to die.#!"
  SEVER_STRAND_PERK_EFFECT: "Bonus to $POD_manipulate_fetters_interaction$ [character_interaction|E], allow decreasing #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! Level as well destroying level 1 #TOOLTIP:game_concept_Fetter_desc #E оков#!#!.\n#F A Monitor can strip a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! from another Wraith.#!"
@@ -545,7 +545,7 @@
  DEATHS_TOUCH_PERK_EFFECT: "#F A Spook can freely manipulate objects in the [Glossary('земли Плоти','game_concept_skinlands_desc')], and telekinetically project their hands in the [underworld|E].#!"
  WYLDFIRE_PERK_EFFECT: "#F A Spook can conjure barrow-flame.#!"
  OBLIVIATE_PERK_EFFECT: "Unlock $EXECUTION_UNMAKING$ [execution|E] option.\nAllow receiving [artifact|E] from the Quick of the [Glossary('земли Плоти','game_concept_skinlands_desc')].\n#F A Spook may damage a mortal, wraith, or thing so severely it falls straight to [UmbraGlossary('oblivion')]. When used on a material object Inhabited by a wraith, it instead becomes a relic.#!"
- ANGER_ENOUGH_FOR_TWO_WORLDS_PERK_EFFECT: "Unlock Tear Down the Shroud option in Manipulate the Shroud #TOOLTIP:game_concept_umbra_desc #E Умбра#!#! action.\n#F A Spook can temporarily tear down the Shroud, with potentially devastating consequences.#!"
+ ANGER_ENOUGH_FOR_TWO_WORLDS_PERK_EFFECT: "Unlock Tear Down the Shroud option in Manipulate the Shroud [Concept('umbra', 'Умбра')|E] action.\n#F A Spook can temporarily tear down the Shroud, with potentially devastating consequences.#!"
  
  # Pandemonium
  pandemonium_visible: "Pandemonium"

@@ -5,7 +5,7 @@
 
  POD_golconda_journey.2.t: "Путешествие в тысячу шагов"
  POD_golconda_journey.2.desc: "[teacher.GetFirstName] пытается объяснить путь к #TOOLTIP:game_concept_golconda_desc #E Голконде#!#! с помощью длинной серии туманных метафор, каждая из которых более эзотерична и запутанна, чем предыдущая. Однако, #italic кажется#!, я понимаю общую суть.\n\nГолконда - это, в некотором смысле, возвращение к человечности. Идущие по этому пути [Glossary('каиниты','game_concept_cainite_desc')] #X никогда не должны терять свою человечность, совершая убийства или кражу#!.\n\nКроме того, #X любой ценой следует избегать неистовства#!. Высокий [Concept('piety_level', 'уровень благочестия')|E] в одном из [Concept('faith','путей')|E] может ослабить влияние [Glossary('Зверя','game_concept_beast_desc')].\n\nКогда [teacher.GetFirstName] прощается со мной, я погружаюсь в глубокие раздумья."
- POD_golconda_journey.2.effect: "Вы узнали о #TOOLTIP:game_concept_golconda_desc #E Голконде#!#! и открыли #TOOLTIP:game_concept_journey_desc #E странствие#!#!, чтобы примириться со своим [Glossary('Зверем','game_concept_beast_desc')]."
+ POD_golconda_journey.2.effect: "Вы узнали о #TOOLTIP:game_concept_golconda_desc #E Голконде#!#! и открыли [Concept('journey', 'странствие')|E], чтобы примириться со своим [Glossary('Зверем','game_concept_beast_desc')]."
  POD_golconda_journey.2.option.a: "Теперь я знаю, что мне делать."
 
 
@@ -26,7 +26,7 @@
 
  POD_golconda_journey.11.t: "Вглядываясь в бездну"
  POD_golconda_journey.11.desc: "На этот раз что-то изменилось.\n\nКогда я сижу и созерцаю, я очень расслабляюсь. Моё осознание следует за ощущениями в теле, за потоком витэ в моих венах. И вдруг я замечаю это.\n\nКак мельчайший укол жгучей боли. Невнятная боль, плывущая по сердцу.\n\nОна состоит из... воспоминаний? И #beast голода#!.\n\nЯ абсолютно [Select_CString(ROOT.Char.IsFemale, 'уверена', 'уверен' )]. Здесь обитает [Glossary('Зверь','game_concept_beast_desc')]. Если бы я [Select_CString(ROOT.Char.IsFemale, 'пробудила', 'пробудил' )] свою кровь, то [Select_CString(ROOT.Char.IsFemale, 'смогла', 'смог' )] бы открыть то, что он скрывает. И я смогу наконец встретиться с ним лицом к лицу."
- POD_golconda_journey.11.effect: "Вы открыли #TOOLTIP:game_concept_journey_desc #E странствие#!#! «Вздох»."
+ POD_golconda_journey.11.effect: "Вы открыли [Concept('journey', 'странствие')|E] «Вздох»."
  POD_golconda_journey.11.option.a: "Вопрос в том, [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов' )] ли я?"
 
 

@@ -849,7 +849,7 @@
 
  purifying_black_tortoise_objective_decision: "Очистить Чёрную черепаху"
  purifying_black_tortoise_objective_decision_tooltip: "Вы объедините Двор Чёрной черепахи."
- purifying_black_tortoise_objective_decision_desc: "Двор Чёрной черепахи был развращен [Glossary('повелителями Яма','podgloss.yamaking')], #TOOLTIP:game_concept_akuma_desc #E акума#!#! захватили власть и последовали за [Glossary('Анда','podgloss.anda')] в их вторжении. Их нужно остановить."
+ purifying_black_tortoise_objective_decision_desc: "Двор Чёрной черепахи был развращен [Glossary('повелителями Яма','podgloss.yamaking')], [Concept('akuma', 'акума')|E] захватили власть и последовали за [Glossary('Анда','podgloss.anda')] в их вторжении. Их нужно остановить."
  purifying_black_tortoise_objective_decision_time: "Вы должны сделать это до того, как последний оставшийся неосквернённый [Glossary('Ван-куэй','game_concept_kuei_jin_desc')] сдастся. #weak (1372)#!"
  purifying_black_tortoise_objective_decision_custom: "Титул [GetTitleByKey('e_anda').GetNameNoTier] должен быть уничтожен"
  purifying_black_tortoise_objective_decision_confirm: "Черепаха выстояла"
@@ -1609,7 +1609,7 @@
  unhell_objective_decision_desc: "Приход [Glossary('Императора демонов','podgloss.demonemperor')] - неизбежный факт в Поднебесной. Тем не менее, те, кто достаточно храбр и подготовлен к встрече с его слугами, могут замедлить и ослабить его."
  unhell_objective_decision_confirm: "Победа... пока что."
  unhellish_modifier: "Проклятие Йоми"
- wheel_ages_akuma_buff_prevented_tt: "#warning Если будет выполнено до 1350 года, это позволит избежать прилива мощи #TOOLTIP:game_concept_akuma_desc #E акума#!#!, которая в противном случае произошла бы в этот период.#!"
+ wheel_ages_akuma_buff_prevented_tt: "#warning Если будет выполнено до 1350 года, это позволит избежать прилива мощи [Concept('akuma', 'акума')|E], которая в противном случае произошла бы в этот период.#!"
  unhell_objective_decision_tt: "У вас должны должны быть #ILLUSTRIOUSPURPLE великолепные#! оружие и броня.\nУ вас также должен быть шлем любого качества."
 
  #unkuei_objective_decision: "В поисках Второй эпохи"
@@ -1678,7 +1678,7 @@
  quest_for_sargon_codex_objective_decision_desc: "Кодекс Саргона - это глиняная табличка, написанная Каппадокием во время его земной жизни. После его [Glossary('объятий','game_concept_Embrace_desc')] потеря аватара вызвала хаос и разрушение в его памяти. Он не мог вспомнить, что написал и где оставил. Спустя тысячелетия Кодекс Саргона был уничтожен, а его части разбросаны по всему миру. Если бы кто-то смог восстановить его, его ждала бы огромная сила."
  quest_for_sargon_codex_objective_decision_confirm: "Мудрость древних в пределах досягаемости..."
  quest_for_sargon_codex_objective_decision_at_least_1_shard: "У вас должен быть как минимум 1 осколок Кодекса Саргона"
- quest_for_sargon_codex_objective_decision_at_effect1: "Открывает #TOOLTIP:game_concept_journey_desc #E странствие#!#! по поиску других осколков Кодекса по всему миру"
+ quest_for_sargon_codex_objective_decision_at_effect1: "Открывает [Concept('journey', 'странствие')|E] по поиску других осколков Кодекса по всему миру"
  quest_for_sargon_codex_objective_decision_at_effect2: "Открывает [Concept('character_interaction', 'взаимодействие персонажа')|E], позволяющее изучить найденные вами осколки Кодекса Саргона."
  quest_for_sargon_codex_objective_decision_at_effect3: "Открывает [Concept('decision', 'решение')|E], позволяющее передать Каппадокию найденные вами осколки Кодекса Саргона."
 
@@ -1718,19 +1718,19 @@
  #POD_wheel_of_ages_progress: "Продвижение к следующей эпохе: [GetPlayer.MakeScope.ScriptValue('wheel_of_ages_progress')]"
  #POD_wheel_of_ages_progress_gain: "Ежегодный прогресс продвижения к следующей эпохе: #underline;TOOLTIP:POD_wheel_of_ages_progress_gain_tooltip [GetPlayer.MakeScope.ScriptValue('wheel_of_ages_progress_change')]#!"
  #POD_wheel_of_ages_progress_gain_tooltip: "[GetPlayer.MakeScope.GetScriptValueDesc('wheel_of_ages_progress_change')]\n#underline;TOOLTIP:POD_wheel_of_ages_progress_gain_tooltip_all Чтобы увидеть все возможные переменные, наведите курсор сюда#!"
- #wheel_of_ages_progress_change_akuma_empire: "#TOOLTIP:game_concept_akuma_desc #E Акума#!#! владеют [Concept('empire', 'империей')|E]"
- #wheel_of_ages_progress_change_akuma_or_vampire_india: "#TOOLTIP:game_concept_akuma_desc #E Акума#!#! или #L [GetTrait('vampire').GetName(GetPlayer)|l]ы#! владеют [Concept('empire', 'империей')|E] в Индии"
- #wheel_of_ages_progress_change_akuma_anda: "#TOOLTIP:game_concept_akuma_desc #E Акума#!#! владеют [Concept('empire', 'империей')|E] Анда"
+ #wheel_of_ages_progress_change_akuma_empire: "[Concept('akuma', 'Акума')|E] владеют [Concept('empire', 'империей')|E]"
+ #wheel_of_ages_progress_change_akuma_or_vampire_india: "[Concept('akuma', 'Акума')|E] или #L [GetTrait('vampire').GetName(GetPlayer)|l]ы#! владеют [Concept('empire', 'империей')|E] в Индии"
+ #wheel_of_ages_progress_change_akuma_anda: "[Concept('akuma', 'Акума')|E] владеют [Concept('empire', 'империей')|E] Анда"
  #wheel_of_ages_progress_change_huge_anda: "Размер державы владельца [Concept('empire', 'империи')|E] Анда превышает 100 графств"
  #wheel_of_ages_progress_change_vampire_ruler: "#L [GetTrait('vampire').GetName(GetPlayer)]ы#! владеют независимым титулом"
  #wheel_of_ages_progress_change_no_anda: "[Concept('empire', 'Империя')|E] Анда уничтожена"
- #wheel_of_ages_progress_change_no_akuma_ruler: "#TOOLTIP:game_concept_akuma_desc #E Акума#!#! не владеют ни одним независимым титулом"
+ #wheel_of_ages_progress_change_no_akuma_ruler: "[Concept('akuma', 'Акума')|E] не владеют ни одним независимым титулом"
  #wheel_of_ages_progress_change_no_vampire_ruler: "#L [GetTrait('vampire').GetName(GetPlayer)]ы#! не владеют ни одним независимым титулом"
  #wheel_of_ages_progress_change_no_demon_ruler: "#L [GetTrait('demon').GetName(GetPlayer)]ы#! не владеют ни одним независимым титулом"
  #POD_wheel_of_ages_progress_gain_tooltip_all: "[GetPlayer.MakeScope.GetScriptValueDesc('wheel_of_ages_progress_change_tooltip')]"
 
  #POD_wheel_of_ages_progress_active: "#underline;TOOLTIP:POD_wheel_of_ages_progress_active_tooltip События, меняющие прогресс к следующей эпохе#!"
- #POD_wheel_of_ages_progress_active_tooltip: "Каждый убитый #TOOLTIP:game_concept_akuma_desc #E акума#!#!: #V -0.1#!\nКаждый $POD_splat_kueijin$, достигший просветления: #V -50#!\nКаждый $POD_splat_kueijin$ старше 500 лет, ставший #L [GetTrait('cultist').GetName(GetPlayer)|l]ом#!: #V +5#!\nКаждый новый повелитель Яма: #V +50#!\nНекоторые цели также могут повлиять на прогресс."
+ #POD_wheel_of_ages_progress_active_tooltip: "Каждый убитый [Concept('akuma', 'акума')|E]: #V -0.1#!\nКаждый $POD_splat_kueijin$, достигший просветления: #V -50#!\nКаждый $POD_splat_kueijin$ старше 500 лет, ставший #L [GetTrait('cultist').GetName(GetPlayer)|l]ом#!: #V +5#!\nКаждый новый повелитель Яма: #V +50#!\nНекоторые цели также могут повлиять на прогресс."
  #POD_CHANGE_WHEEL_OF_AGES_PROGRESS: "Изменение прогресса достижения следующей эпохи: $VALUE|V0=$"
 
  #POD_wheel_of_ages_progress_warning: "#X @warning_icon!Чтобы вернуться из [Glossary('Третьей эпохи','game_concept_third_age_desc')] во [Glossary('Вторую эпоху','game_concept_second_age_desc')], необходимо выполнить любую из этих целей: «$unsevering_objective_decision$», «$unhell_objective_decision$» или «$unkuei_objective_decision$»#!"
@@ -1833,7 +1833,7 @@
  POD_renaming_the_hekau_decision: "Переименовать хекау"
  POD_renaming_the_hekau_decision_desc: "На самых высоких уровнях мастерства рен, мумия может изменять законы, управляющие другой сверхъестественной способностью.\n\n@warning_icon!#X Это решение можно принять только один раз. Выбирайте внимательно.#!"
 
- POD_renaming_the_hekau_decision_tt: "Вы начнёте #TOOLTIP:game_concept_journey_desc #E странствие#!#! #bold [Localize(Concatenate(GetPlayer.MakeScope.Var('renaming_the_hekau_selection').GetFlagName,'_name'))]#!"
+ POD_renaming_the_hekau_decision_tt: "Вы начнёте [Concept('journey', 'странствие')|E] #bold [Localize(Concatenate(GetPlayer.MakeScope.Var('renaming_the_hekau_selection').GetFlagName,'_name'))]#!"
  POD_renaming_the_hekau_decision_confirm: "Проявленный смысл."
  POD_renaming_the_hekau_decision_tooltip: "Изменить способность в соответствии с вашими потребностями"
 
@@ -1905,7 +1905,7 @@
  protecting_middle_kingdom_objective_decision_tooltip: "Выигрывая драгоценное время"
  protecting_middle_kingdom_objective_decision_confirm: "Бесценная отсрочка."
  #protecting_middle_kingdom_objective_decision_custom1: "The Middle Kingdom must not be in the [Glossary('Шестая эпоха','game_concept_sixth_age_desc')]"
- protecting_middle_kingdom_objective_decision_custom2: "На карте не должно быть ни одного [Concept('independent', 'независимого')|E] #TOOLTIP:game_concept_akuma_desc #E акума#!#!"
+ protecting_middle_kingdom_objective_decision_custom2: "На карте не должно быть ни одного [Concept('independent', 'независимого')|E] [Concept('akuma', 'акума')|E]"
  protecting_middle_kingdom_objective_decision_custom2_ex: "$protecting_middle_kingdom_objective_decision_custom2$ #weak ([example.GetFirstName])#!"
 
 
