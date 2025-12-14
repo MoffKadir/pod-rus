@@ -798,7 +798,7 @@
  avenge_arikels_shame_objective_decision_effect_tooltip: "Ваша слава как лучшего защитника Арикель будет обеспечена, а клан Гангрел будет опозорен."
  avenge_arikels_shame_objective_decision_confirm: "Несправедливость исправлена"
  avenge_arikels_shame_custom_decision_gangrel: "[GetScriptedCharacterByHistoryID('792050').GetFirstName] и [GetScriptedCharacterByHistoryID('792051').GetFirstName], лейтенанты Эннойи, которые помогали ей в Шумере, должны быть мертвы"
- avenge_arikels_shame_custom_decision_malks: "[GetScriptedCharacterByHistoryID('790319').GetFirstName], друг Арикель, приютивший её после бегства из Шумера, должен находиться при вашем дворе или у вас должен быть нанят #TOOLTIP:game_concept_malkavian_primogen_desc #E примоген Малкавиан#!#! с отличной пригодностью"
+ avenge_arikels_shame_custom_decision_malks: "[GetScriptedCharacterByHistoryID('790319').GetFirstName], друг Арикель, приютивший её после бегства из Шумера, должен находиться при вашем дворе или у вас должен быть нанят [Concept('malkavian_primogen', 'примоген Малкавиан')|E] с отличной пригодностью"
 
  toreador_unity_objective_decision: "Новая эра"
  toreador_unity_objective_decision_tooltip: "Тореадорам пора отпустить Константинополь."
@@ -1552,7 +1552,7 @@
  #back_to_fourth_age: "The Middle Kingdom will return to the [Glossary('Четвёртая эпоха','game_concept_fourth_age_desc')]"
  #back_to_fourth_age_objective_before_last_date: "Дата - 1992.1.1 или раньше"
  #back_to_fourth_age_objective_decision_custom: "На карте не должно быть [Concept('independent', 'независимых')|E] [Concept('king', 'королей')|E] или [Concept('emperor', 'императоров')|E] со свойством «[GetTrait('vampire').GetName( GetPlayer )]»."
- #back_to_fourth_age_objective_decision_custom_ex: "$back_to_fourth_age_objective_decision_custom$ #weak ([example.GetFirstName])#! #help Для облегчения поиска можно использовать режим карты «#TOOLTIP:game_concept_splat_desc #E Виды#!#!».#!"
+ #back_to_fourth_age_objective_decision_custom_ex: "$back_to_fourth_age_objective_decision_custom$ #weak ([example.GetFirstName])#! #help Для облегчения поиска можно использовать режим карты «[Concept('splats', 'Виды')|E]».#!"
 
  reckoning_war_of_shame_objective_decision: "Расплата за войну Позора"
  reckoning_war_of_shame_objective_decision_tooltip: "Вы отомстите осквернённым [Glossary('Ван-сянь','game_concept_kuei_jin_desc')] и подружитесь с гару."

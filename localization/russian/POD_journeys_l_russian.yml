@@ -952,7 +952,7 @@
  realm_mastery_name: "Освоить королевства"
  realm_mastery_desc: "Выбрать королевство для освоения."
  realm_mastery_tt: "Достижение предела гламура."
- realm_mastery_requirement_date: "Вы начали со стартовой даты, где #TOOLTIP:game_concept_splat_desc #E вид#!#! фей недоступен."
+ realm_mastery_requirement_date: "Вы начали со стартовой даты, где [Concept('splat', 'вид')|E] фей недоступен."
  realm_mastery_generic_isvalid: "$EFFECT_LIST_BULLET$Вы должны находиться в мире, где феи являются одним из доступных видов."
  realm_mastery_generic_travel_desc: "Я [Select_CString(GetPlayer.IsFemale, 'подтянула', 'подтянул' )] свои познания в придворном этикете и [Select_CString(GetPlayer.IsFemale, 'приготовила', 'приготовил' )] щедрые дары для [Select_CString( DidShatteringHappen, 'Потерянных', 'Благородных' )] из владения [PlayerJourneyDestination.GetHolding.GetCurrentSpecialBuildingType.GetName]. Надеюсь, этого будет достаточно, зная, какими непостоянными они могут быть."
 

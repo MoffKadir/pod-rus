@@ -92,11 +92,11 @@
 
  POD_gnosis_regen_beast_born: "[GetTrait('beast_born').GetName(GetPlayer)]"
  POD_gnosis_regen_piety_level: "[piety_level|E]"
- POD_gnosis_regen_spirit_companions: "#TOOLTIP:game_concept_spirit_companion_desc #E Духовные спутники#!#!"
+ POD_gnosis_regen_spirit_companions: "[Concept('spirit_companions', 'Духовные спутники')|E]"
  POD_gnosis_regen_stress: "[stress_level|E]"
  POD_gnosis_regen_buildings: "От домена"
  POD_gnosis_regen_spirit_ties: "[GetPerk('fomori_spirit_ties_perk').GetName(GetPlayer)]"
- POD_gnosis_regen_fetish_upkeep: "Содержание #TOOLTIP:game_concept_fetish_desc #E фетиша#!#!"
+ POD_gnosis_regen_fetish_upkeep: "Содержание [Concept('fetish', 'фетиша')|E]"
 
 
  POD_gnosis_regen_kinfolk_cap: "У #TOOLTIP:GAME_TRAIT,kinfolk,[GetPlayer] #L родни#!#! может быть максимум #V 3#! ед. #L $POD_energy_gnosis|l$а#!"

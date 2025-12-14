@@ -17,7 +17,7 @@
 
  UMBRA_APTITUDE_CONCEPT: "#TOOLTIP:game_concept_umbra_aptitude_desc #E Пригодность Умбры#!#!"
  UMBRA_SENSE_CONCEPT: "#TOOLTIP:game_concept_umbra_sense_desc #E Чувство Умбры#!#!"
- SPLAT_VALUE: "#TOOLTIP:game_concept_splat_desc #E Вид#!#!"
+ SPLAT_VALUE: "[Concept('splat', 'Вид')|E]"
 
  # Explore
  umbra_explorer_window: "Исследователь [Concept('umbra', 'Умбры')|E]"
@@ -35,7 +35,7 @@
  I_GAINED_UMBRA_PROGRESS: "Вы получили прогресс $VALUE|+0$"
 
  UMBRA_RECRUIT_BYGONE: "Позволяет найти случайного Ушедшего в ходе #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
- UMBRA_DISCOVERY_FETISH: "Позволяет найти случайный #TOOLTIP:game_concept_fetish_desc #E фетиш#!#! в ходе #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#! если вы можете использовать его."
+ UMBRA_DISCOVERY_FETISH: "Позволяет найти случайный [Concept('fetish', 'фетиш')|E] в ходе #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#! если вы можете использовать его."
 
  UMBRA_INVESTMENTS_OF_SOUL: "Получит достоинство «Инвеститура души». (или получит #V 1#! очко пути инвеституры)"
 

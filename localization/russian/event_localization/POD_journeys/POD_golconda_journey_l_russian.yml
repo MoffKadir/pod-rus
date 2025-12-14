@@ -79,7 +79,7 @@
  POD_golconda_journey.107.option.b: "Моя история продолжится в другом месте."
  POD_golconda_journey.107.option.b.tt: "Вы продолжите игру за [Select_CString(heir_tooltip.IsFemale, 'свою наследницу', 'своего наследника' )], [heir_tooltip.GetShortUIName], поскольку [THIS.Char.GetFirstName] #TOOLTIP:GAME_TRAIT,mortal,[GetNullCharacter] #L смертным#!#! существом и будет [Select_CString(THIS.Char.IsFemale, 'свергнута', 'свергнут' )]."
  POD_golconda_journey.107.option.c: "Моя история продолжится здесь."
- POD_golconda_journey.107.option.c.tt: "Вы становитесь #L [GetFaithByKey('independenthunters').GetName|l]им#! #TOOLTIP:GAME_TRAIT,supehunter,[GetNullCharacter] #L охотником#!#! и продолжите игру за [Concept('unlanded', 'безземельного')|E] [Concept('adventurer', 'авантюриста')|E] с новой [Concept('dynasty', 'династией')|E]. Вы можете потерять свою группу ([THIS.Char.Custom('PODCoterie')]) или своих консортов, если они теперь будут относиться к вашему #TOOLTIP:game_concept_splat_desc #E виду#!#! враждебно."
+ POD_golconda_journey.107.option.c.tt: "Вы становитесь #L [GetFaithByKey('independenthunters').GetName|l]им#! #TOOLTIP:GAME_TRAIT,supehunter,[GetNullCharacter] #L охотником#!#! и продолжите игру за [Concept('unlanded', 'безземельного')|E] [Concept('adventurer', 'авантюриста')|E] с новой [Concept('dynasty', 'династией')|E]. Вы можете потерять свою группу ([THIS.Char.Custom('PODCoterie')]) или своих консортов, если они теперь будут относиться к вашему [Concept('splat', 'виду')|E] враждебно."
 
 
  POD_golconda_journey.1000.t: "Здравствуй, тьма, мой старый друг"

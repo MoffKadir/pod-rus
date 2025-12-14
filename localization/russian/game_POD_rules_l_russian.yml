@@ -49,15 +49,15 @@
 
  rule_pod_splat_hostility: "$POD_gamerule$ Враждебность видов"
  setting_pod_splat_hostility_default: "По умолчанию"
- setting_pod_splat_hostility_default_desc: "Некоторые #TOOLTIP:game_concept_splat_desc #E виды#!#! враждуют друг с другом, что препятствует большинству [Concept('interactions', 'взаимодействий')|E] между ними."
+ setting_pod_splat_hostility_default_desc: "Некоторые [Concept('splats', 'виды')|E] враждуют друг с другом, что препятствует большинству [Concept('interactions', 'взаимодействий')|E] между ними."
  setting_pod_splat_hostility_disabled: "#high @haight_icon! Отключено#!"
- setting_pod_splat_hostility_disabled_desc: "#TOOLTIP:game_concept_splat_desc #E Виды#!#! не лишены возможности взаимодействовать друг с другом (хотя на них по-прежнему распространяются наказания за мнение и доктрины преступлений)."
+ setting_pod_splat_hostility_disabled_desc: "[Concept('splats', 'Виды')|E] не лишены возможности взаимодействовать друг с другом (хотя на них по-прежнему распространяются наказания за мнение и доктрины преступлений)."
 
  rule_pod_charjoin_decisions: "$POD_gamerule$ Решения по созданию персонажа"
  setting_pod_charjoin_decisions_disabled: "Отключено"
- setting_pod_charjoin_decisions_disabled_desc: "Решения и взаимодействия, изменяющие ваш #TOOLTIP:game_concept_splat_desc #E вид#!#! (например, просьба [Glossary('объятий','game_concept_Embrace_desc')] или становление гулем, осушив пленника-вампира), не действуют, если вы не используете внутриигрового редактора персонажей."
+ setting_pod_charjoin_decisions_disabled_desc: "Решения и взаимодействия, изменяющие ваш [Concept('splat', 'вид')|E] (например, просьба [Glossary('объятий','game_concept_Embrace_desc')] или становление гулем, осушив пленника-вампира), не действуют, если вы не используете внутриигрового редактора персонажей."
  setting_pod_charjoin_decisions_enabled: "#high @haight_icon! Включено#!"
- setting_pod_charjoin_decisions_enabled_desc: "Решения и взаимодействия, изменяющие ваш #TOOLTIP:game_concept_splat_desc #E вид#!#! (например, просьба [Glossary('объятий','game_concept_Embrace_desc')] или становление гулем, осушив пленника-вампира), включены."
+ setting_pod_charjoin_decisions_enabled_desc: "Решения и взаимодействия, изменяющие ваш [Concept('splat', 'вид')|E] (например, просьба [Glossary('объятий','game_concept_Embrace_desc')] или становление гулем, осушив пленника-вампира), включены."
 
  rule_pod_numina_on_birth: "$POD_gamerule$ Нумина при рождении"
  setting_pod_numina_on_birth_default: "Ограничено"
@@ -69,13 +69,13 @@
  setting_pod_sorcery_availability_restricted: "Ограничено"
  setting_pod_sorcery_availability_restricted_desc: "Только бастет и человекоподобные виды, такие как охотники, гули или [GetTrait('kinfolk').GetName(GetNullCharacter)] могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nПосле [Glossary('объятий','game_concept_Embrace_desc')] оно превращается в [GetTrait('bloodsorcery').GetName(GetNullCharacter)|l]."
  setting_pod_sorcery_availability_unrestricted: "#high @haight_icon! Без ограничений#!"
- setting_pod_sorcery_availability_unrestricted_desc: "Все #TOOLTIP:game_concept_splat_desc #E виды#!#! могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nСвойство сохраняется после [Glossary('объятий','game_concept_Embrace_desc')]."
+ setting_pod_sorcery_availability_unrestricted_desc: "Все [Concept('splats', 'виды')|E] могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nСвойство сохраняется после [Glossary('объятий','game_concept_Embrace_desc')]."
 
  rule_pod_splat_mixing: "$POD_gamerule$ Смешение видов"
  setting_pod_splat_mixing_default: "По умолчанию"
- setting_pod_splat_mixing_default_desc: "Стандартные ограничения на смешение #TOOLTIP:game_concept_splat_desc #E видов#!#!."
+ setting_pod_splat_mixing_default_desc: "Стандартные ограничения на смешение [Concept('splat', 'видов')|E]."
  setting_pod_splat_mixing_haight_mode: "#high @haight_icon! Режим Сэмюеля Хайта#!"
- setting_pod_splat_mixing_haight_mode_desc: "Многие ограничения на смешение #TOOLTIP:game_concept_splat_desc #E видов#!#! ослаблены (см. подробнее #TOOLTIP:game_concept_samuel_haight_desc #E Сэмюэль Хайт#!#!)."
+ setting_pod_splat_mixing_haight_mode_desc: "Многие ограничения на смешение [Concept('splat', 'видов')|E] ослаблены (см. подробнее #TOOLTIP:game_concept_samuel_haight_desc #E Сэмюэль Хайт#!#!)."
 
  rule_pod_fog_of_war: "$POD_gamerule$ Туман войны"
  setting_pod_fog_of_war_disabled: "Отключено"
@@ -369,9 +369,9 @@
  setting_pod_tournament_restrictions_default: "По умолчанию"
  setting_pod_tournament_restrictions_default_desc: "В #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#! могут участвовать персонажи с кровью фей и независимые охотники."
  setting_pod_tournament_restrictions_fewer: "#high Меньше ограничений#!"
- setting_pod_tournament_restrictions_fewer_desc: "Все #TOOLTIP:game_concept_splat_desc #E виды#!#!, которые могут есть человеческую пищу и ходить под солнечным светом, могут участвовать в #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#!."
+ setting_pod_tournament_restrictions_fewer_desc: "Все [Concept('splats', 'виды')|E], которые могут есть человеческую пищу и ходить под солнечным светом, могут участвовать в #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#!."
  setting_pod_tournament_restrictions_none: "#high Без ограничений#!"
- setting_pod_tournament_restrictions_none_desc: "Все #TOOLTIP:game_concept_splat_desc #E виды#!#! могут участвовать в #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#!. Это приведёт к #N бессмысленным#! событиям."
+ setting_pod_tournament_restrictions_none_desc: "Все [Concept('splats', 'виды')|E] могут участвовать в #TOOLTIP:ACTIVITY_TYPE,activity_tournament #L больших турнирах#!#!. Это приведёт к #N бессмысленным#! событиям."
 
  #rule_POD_wheel_of_ages_speed: "$POD_gamerule$ Скорость Колеса эпох"
  #setting_POD_wheel_of_ages_speed_slow: "#high Медленно#!"
