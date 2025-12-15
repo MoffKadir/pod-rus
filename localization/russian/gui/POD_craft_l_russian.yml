@@ -1000,7 +1000,7 @@
 
  dummy_artifact_loca: "Создаваемый артефакт"
  custom_artifact_name: "[artifact.GetType] персонажа [artifact.GetOwner.GetTitledFirstNamePossessive]"
- custom_fetish_artifact_name: "$pod_fetish_artifact_icon$[artifact.GetType] персонажа [artifact.GetOwner.GetTitledFirstNamePossessive]"
+ custom_fetish_artifact_name: "[fetish_artifact_icon][artifact.GetType] персонажа [artifact.GetOwner.GetTitledFirstNamePossessive]"
  custom_artifact_desc: "[Concept('artifact', 'Артефакт')|E], созданный персонажем [artifact.MakeScope.GetVariable('crafter').GetCharacter.GetTitledFirstName] после многих дней и ночей работы"
 
  has_forge_cooldown: "Ковка восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'forge_cooldown') )]"
