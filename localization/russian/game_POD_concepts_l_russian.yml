@@ -86,6 +86,7 @@
  game_concept_shapeshift_desc: "[Concept('character_interaction', 'Взаимодействие персонажа')|E], которое позволяет персонажу изменять свой облик каким-либо способом, обычно достигаемым за счет #TOOLTIP:GAME_TRAIT,protean,[GetNullCharacter] #L Превращения#!#! или #TOOLTIP:GAME_TRAIT,vicissitude,[GetNullCharacter] #L Изменчивости#!#!."
 
  game_concept_bloodsorcery: "Кровавое чародейство"
+ game_concept_bloodsorcerer: "Кровавый чародей"
  game_concept_thaumaturgy: "Тауматургия"
  game_concept_durnaki: "Дур-ан-ки"
  game_concept_bloodsorcery_desc: "Кровавое чародейство, также называемое тауматургией, Акху, Дур-ан-ки и Валерен, - это искусство использования витэ вампира для вызывания мощных магических эффектов. Кровавое чародейство - мощный, но опасный и дорогостоящий инструмент, которым владеют редкие кланы и который ревностно охраняется. У каждой фракции есть свой собственный способ призывать силу крови - Тремеры используют герметическую магию и символизм, колдуны Бану Хаким заключают договоры с духами и богами. В то же время Ласомбра погружаются в бездну для магических призывов. Говорят, что кровавое чародейство способно практически на всё - и хотя эти утверждения обычно исходят либо от практикующих, желающих создать устрашающую картину, либо от жертв проклятий и огненных шаров, это действительно так: кровавое чародейство открывает доступ к огромному количеству заклинаний и способностей, которые некоторые сочтут... Неестественными."
@@ -146,6 +147,7 @@
 
  game_concept_splat: "Вид"
  game_concept_splats: "Виды"
+ game_concept_subsplat: "Подвид"
  game_concept_splat_desc: "Термин «вид» означает тип сверхъестественного существа, которым вы являетесь. В [princes_of_darkness|E] ваш вид обозначается [Concept('trait', 'свойством')|E].\n\nВ закладке #bold Тёмные века: Вампиры#! следующие виды являются играбельными:\n$EFFECT_LIST_BULLET$$POD_splat_vampire$\n$EFFECT_LIST_BULLET$$POD_splat_ghoul$\n$EFFECT_LIST_BULLET$$POD_splat_revenant$\n$EFFECT_LIST_BULLET$$POD_splat_kueijin$\n#X Обратите внимание, что в первой закладке не существует других видов! Это означает, что с ними нельзя взаимодействовать (например, инферналисты не могут взаимодействовать с демонами, так как их нет на карте)#!\n\nВ закладке #bold Охота на охотников#! следующие виды являются играбельными:\n$EFFECT_LIST_BULLET$#italic Все вышеперечисленные, а также:#!\n$EFFECT_LIST_BULLET$$POD_splat_hunter$\n$EFFECT_LIST_BULLET$$POD_splat_mummy$\n$EFFECT_LIST_BULLET$$POD_splat_werewolf$\n$EFFECT_LIST_BULLET$$POD_splat_bastet$\n$EFFECT_LIST_BULLET$$POD_splat_demon$\n\nВ закладке #bold Тёмные века: Феи#! следующие виды являются играбельными:\n$EFFECT_LIST_BULLET$#italic Все вышеперечисленные, а также:#!\n$EFFECT_LIST_BULLET$$POD_splat_fae$\n$EFFECT_LIST_BULLET$$POD_splat_changeling$"
 
  game_concept_battle_modifier: "Модификатор боя"
@@ -251,6 +253,7 @@
  game_concept_thrall_desc: "Рабы - это смертные слуги демонов. Демоны выбирают рабов из числа честолюбивых, мстительных, искалеченных и обделённых; мужчин и женщин, которые чувствуют себя обманутыми миром, лишенными жизни, которую они заслуживают.\n\nВы можете поработить персонажей, если они исповедуют вашу конфессию. Чтобы обратить их, вы можете использовать [Concept('journey', 'странствие')|E] искушения грехом на персонажей, у которых есть [Concept('trait', 'свойство')|E], связанное с вашим грехом.\n\nУ рабов есть особые взаимодействия, которые вы можете использовать, потратив очки достоинств Арканы. Вы также можете попросить их вассалов присоединиться к вашему культу."
 
  game_concept_cultist: "Культист"
+ game_concept_cultists: "Культисты"
  game_concept_cultist_desc: "#bold Культисты#! - последователи демона. Своим поклонением они дают демона ежегодный пассивный [Concept('experience', 'опыт')|E] [Concept('arcana_lifestyle', 'пути арканы')|E].\n\nВассалы, придворные и вассалы ваших #TOOLTIP:game_concept_thrall_desc #E рабов#!#! могут стать культистами с помощью [Concept('character_interaction', 'взаимодействия персонажа')|E] «$POD_set_cultist_interaction$». Демоны также могут назначить персонажа на [Concept('court_position', 'придворную должность')|E] #V главы культа#!, который со временем автоматически обращает подходящих персонажей в культистов."
 
  game_concept_abombwe: "Абомбве"
@@ -490,6 +493,7 @@
  game_concept_unconquered_soul_desc: "Непокоренная душа - это событие, в котором ваш портрет, свойства и конфессия могут быть переписаны жертвой вашей [Glossary('диаблери','game_concept_diablerie_desc')]."
 
  game_concept_umbra_expedition: "Путешествие в Умбру"
+ game_concept_umbra_expeditions: "Путешествия в Умбру"
  game_concept_umbra_expedition_desc: "Исследование локации Умбры, где один из исследователей сделал открытие, требующее преодоления ряда испытаний, которые могут включать поединки с духами, проверку навыков или шанс получить сокровища."
 
  game_concept_umbra_aptitude: "Пригодность Умбры"
@@ -661,39 +665,48 @@
  game_concept_POD_homeland_desc: "#bold Родина#! - это [Concept('region', 'регион')|E], из которого происходят определённые мумии, и который напоминает им о старых временах.\n\nКаждый год мумия получает #P +1#! [Concept('trait_level_track_xp', 'опыта')|E] памяти, если они находятся на своей родине\n\nРодины:\n$BULLET_WITH_TAB$[GetTrait('shemsuheru').GetName(GetPlayer)] - [GetGeographicalRegion('pod_lands_of_faith').GetName]\n$BULLET_WITH_TAB$[GetTrait('cabiri').GetName(GetPlayer)] - [GetGeographicalRegion('POD_region_greece').GetName]\n$BULLET_WITH_TAB$[GetTrait('wutian').GetName(GetPlayer)] - Поднебесная ([GetGeographicalRegion('world_asia').GetName])\n\nУ других мумий нет родины, и они не получают от неё никаких преимуществ."
 
  game_concept_POD_tomb_raid: "Расхищение гробницы"
+ game_concept_POD_tomb_raids: "Расхищения гробниц"
  game_concept_POD_tomb_raid_desc: "#bold Расхищение гробницы#! - это случайные события, в ходе которых на ваше [Concept('domicile', 'поместье')|E] нападают жадные искатели приключений.\n\nВы можете попытаться отстоять свою гробницу через проверку [Concept('skill', 'навыка')|E] или потратив [Concept('gold', 'золото')|E], [Concept('prestige', 'престиж')|E] и [Concept('piety', 'благочестие')|E]. Если вы потерпите неудачу, случайное здание в вашей гробнице понизит уровень, и вы потеряете [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] «Воспоминания» вдобавок к получению [Concept('stress', 'стресса')|E]."
 
  game_concept_POD_health_track: "Состояние здоровья"
+ game_concept_POD_damage: "Урон"
  game_concept_POD_health_track_desc: "#bold Состояние здоровья#! - это концепция, взятая непосредственно из настольной игры, где ваше [Concept('health', 'здоровье')|E] отображается в виде определённого количества ячеек. Каждый раз, когда вы получаете ранение, вы ставите галочку в одной из ячеек.\n\nЯчейки отслеживания состояния здоровья отображаются во всплывающей подсказке к [Concept('traits', 'свойствам')|E] ранений, например «[GetTrait('wounded_1').GetName(GetNullCharacter)]», и помечаются следующим образом:\n\n$TAB$$POD_damage_box$ #TOOLTIP:game_concept_POD_superficial_damage_desc #E Поверхностный урон#!#!\n$TAB$$POD_aggravated_damage_box$ #TOOLTIP:game_concept_POD_aggravated_damage_desc #E Серьёзный урон#!#!\n$TAB$$POD_undamaged_box$ Без урона\n\nОбщая продолжительность вашего периода восстановления зависит от вашего [Concept('splat', 'вида')|E].\n\nПо мере того, как вы получаете больше урона, вы становитесь #bold слабее#!, что приводит к увеличению штрафов к вашим [Concept('skills', 'навыкам')|E]. Уровень ухудшения зависит от количества заполненных ячеек (независимо от типа урона).\n\nЕсли все ячейки здоровья заполнены, а половина или более из них являются отображают #TOOLTIP:game_concept_POD_aggravated_damage_desc #E серьёзный урон#!#!, вы #N умираете#!. Бессмертные персонажи вместо этого впадают в [Glossary('торпор','game_concept_torpor_desc')]."
 
  game_concept_POD_superficial_damage: "Поверхностный урон"
+ # This has a space in front of the icon since the icon is pretty big otherwise
+ game_concept_POD_superficial_damage_with_box: " @health_track_damage_icon! Поверхностный урон"
  game_concept_POD_superficial_damage_desc: "#bold Поверхностный урон#! - один из типов урона, отмеченных на вашем #TOOLTIP:game_concept_POD_health_track_desc #E состоянии здоровья#!#!. Он отображается значком @health_track_damage_icon!.\n\nБольшинство видов естественным образом заживляют #V 1#! ед. поверхностного урона каждые #V 2 года#!. Определённые свойства и достоинства могут увеличить количество исцеления или снизить время восстановления. Вампирам доступно [Concept('character_interaction', 'взаимодействие персонажа')|E] #V Кровавое исцеление#!.\n\nЕсли ваше #TOOLTIP:game_concept_POD_health_track_desc #E состояние здоровья#!#! уже заполнено и вы получаете дополнительный поверхностный урон, вместо этого он преобразуется в #TOOLTIP:game_concept_POD_aggravated_damage_desc #E серьёзный урон#!#!.\n\nПоверхностный урон также может быть #TOOLTIP:game_concept_soak_damage_desc #E впитан#!#! благодаря определённым способностям, что дает вам процентный шанс избежать вероятности получить ранение."
 
  game_concept_POD_aggravated_damage: "Серьёзный урон"
+ # This has a space in front of the icon since the icon is pretty big otherwise
+ game_concept_POD_aggravated_damage_with_box: " @health_track_aggravated_damage_icon! Серьёзный урон"
  game_concept_POD_aggravated_damage_desc: "#bold Серьёзный урон#! - один из типов урона, отмеченных на вашем #TOOLTIP:game_concept_POD_health_track_desc #E состоянии здоровья#!#!. Он отображается значком @health_track_aggravated_damage_icon!.\n\nСерьёзный урон гораздо сложнее залечить, чем #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностный#!#!. Большинство видов естественным образом «понижают» одну ячейку серьёзного урона до #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного#!#! каждые #V 4 года#!.\n\nЕсли все ячейки здоровья заполнены, а половина или более из них отображают #TOOLTIP:game_concept_POD_aggravated_damage_desc #E серьёзный урон#!#!, вы #N умираете#!. Бессмертные персонажи вместо этого впадают в [Glossary('торпор','game_concept_torpor_desc')]."
 
  game_concept_soak_damage: "Впитывание"
+ game_concept_soaked: "Впитано"
+ game_concept_soaking: "Впитывать"
+ game_concept_soak_chance: "Вероятность поглощения"
  game_concept_soak_damage_desc: "Некоторые способности и [Concept('perks', 'достоинства')|E] могут дать вам шанс нейтрализовать входящий #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностный урон#!#!, что означает, что урон не будет нанесен.\n\nНошение доспехов ([Concept('artifact', 'артефакты')|E]) - это самый простой способ увеличить вероятность впитывания, при этом каждый уровень [Concept('rarity', 'редкости')|E] доспехов увеличивает его на #V 10%#!."
 
  game_concept_fetish: "Фетиш"
- #game_concept_fetishes: "Fetishes"
- #game_concept_fetish_artifact_icon: "@gnosis_icon!"
+ game_concept_fetishes: "Фетиши"
+ game_concept_fetish_artifact_icon: "@gnosis_icon!"
  game_concept_fetish_desc: "Фетиш - это [Concept('artifact', 'артефакт')|E], который был наполнен связанным духом. Все $glossary_fera$ могут использовать их естественным образом, для других видов потребуются особые достоинства или модификаторы.\n\nВ отличие от обычных артефактов, фетиши требуют содержания, чтобы оставаться активными:\n$BULLET_WITH_TAB$$glossary_fera$: 5% $POD_terrain_gnosis_regen_supply_limit_mult$ каждый.\n$BULLET_WITH_TAB$Прочие: [Concept('spirit_companion', 'Духовный спутник')|E] для каждого.\nЕсли вы не сможете их поддерживать, все артефакты-фетиши будут отключены.\n\nВозможность экипировать фетиши автоматически разблокирует узел #TOOLTIP:game_concept_crafting_forging_desc #E ковки#!#! #TOOLTIP:game_concept_fetish_smithing_desc #E фетишей#!#!."
 
  game_concept_fetish_smithing: "Ковка фетиша"
  game_concept_fetish_smithing_desc: "Действие привязки #TOOLTIP:GAME_TRAIT,spirit,[GetNullCharacter] #L духа#!#! к [Concept('artifact', 'артефакту')|E]. Этот узел свяжет [Concept('spirit_companion', 'духовного спутника')|E] или пленённого духа с артефактом и превратит его в [Concept('fetish', 'фетиш')|E].\n\nЭффекты этого узла зависят от следующих характеристик привязанного духа:\n$BULLET_WITH_TAB$#TOOLTIP:game_concept_spirit_language_desc #E Духовный язык#!#!\n$BULLET_WITH_TAB$[education_trait|E]\n$BULLET_WITH_TAB$[physical_traits|E]\n$BULLET_WITH_TAB$[trait_level_track_xp|E]\n$BULLET_WITH_TAB$Соответствующие достоинства или модификаторы ремесленника"
 
  game_concept_spirit_companion: "Духовный спутник"
- #game_concept_spirit_companions: "Spirit Companions"
- #game_concept_companion: "Companion"
- #game_concept_spirit_pact: "Spirit Pact"
- #game_concept_spirit_pacts: "Spirit Pacts"
+ game_concept_spirit_companions: "Духовные спутники"
+ game_concept_companion: "Спутник"
+ game_concept_spirit_pact: "Духовный договор"
+ game_concept_spirit_pacts: "Духовные договора"
  game_concept_spirit_companion_desc: "Духовный спутник - это особая связь, которая может быть установлена с добровольным #TOOLTIP:GAME_TRAIT,spirit,[GetNullCharacter] #L духом#!#! с помощью [Concept('character_interaction','взаимодействия персонажа')|E]. Дух присоединится к вашему двору и предоставит множество преимуществ:\n$BULLET_WITH_TAB$Предоставит уникальный модификатор договора в зависимости от его типа\n$BULLET_WITH_TAB$Увеличит $POD_terrain_gnosis_regen_supply_limit_mult$\n$BULLET_WITH_TAB$Увеличит скорость [Concept('journey', 'странствия')|E] «Духовные поиски»\n$BULLET_WITH_TAB$Может быть использован при #TOOLTIP:game_concept_fetish_smithing_desc #E ковке фетишей#!#!.\n\nДуховные спутники получают [Concept('trait_level_track_xp', 'опыт свойства')|E] только через [Concept('character_interaction','взаимодействия персонажа')|E], нацеленного на них."
 
  game_concept_spirit_language: "Духовный язык"
- #game_concept_ancestral_tongue: "Ancestral Tongue"
- game_concept_spirit_language_desc: "Прежде чем вы сможете взаимодействовать с #TOOLTIP:GAME_TRAIT,spirit,[GetNullCharacter] #L духом#!#!, вы должны сначала изучить его язык, что можно сделать с помощью [Concept('character_interaction', 'взаимодействия персонажа')|E].Языки духов предков (например, перобытный) являются неотъемлемой частью $glossary_fera$ и не могут быть изучены другими персонажами обычными средствами."
+ game_concept_ancestral_tongue: "Наречие предков"
+ game_concept_spirit_language_desc: "Прежде чем вы сможете взаимодействовать с #TOOLTIP:GAME_TRAIT,spirit,[GetNullCharacter] #L духом#!#!, вы должны сначала изучить его язык, что можно сделать с помощью [Concept('character_interaction', 'взаимодействия персонажа')|E]. Языки духов предков (например, перобытный) являются неотъемлемой частью $glossary_fera$ и не могут быть изучены другими персонажами обычными средствами."
 
  game_concept_ancestor_spirit: "Дух предка"
- #game_concept_ancestor_spirits: "Ancestor Spirits"
+ game_concept_ancestor_spirits: "Духи предков"
  game_concept_ancestor_spirit_desc: "У $glossary_fera$ есть шанс стать #TOOLTIP:GAME_TRAIT,spirit,[GetNullCharacter] #L духом#!#! предка после смерти. Эти духи могут общаться только на языке предков своей породы Фера.\n\nШанс стать духом в основном зависит от ранга $glossary_fera$ ([trait_level_track_xp|E]) и [Concept('piety_level', 'уровня набожности')|E]."

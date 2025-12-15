@@ -1347,7 +1347,6 @@
  trait_track_golconda_seeker_desc: "\nВаш [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] представляет собой процент успеха на последних этапах [Concept('journey', 'пути')|E] к Голконде ([GetTrait('golconda').GetName(GetNullCharacter)]).\n\n#X Весь прогресс теряется при впадении в неистовство, а также при совершении убийства или кражи.#!"
 
  TRAIT_FLAG_DESC_elder_perk_flag: "Может изучать #TOOLTIP:game_concept_elder_perk_desc #E достоинства старейшин#!#! независимо от [Glossary('поколения','game_concept_vampgeneration_desc')]"
- #TRAIT_FLAG_DESC_hungerless_flag: "[Concept('hungerless','Больше не страдает от жажды крови')|E]"
  TRAIT_FLAG_DESC_hungerless_flag: "#TOOLTIP:game_concept_hungerless_desc #E Больше не страдает от жажды крови#!#!"
  TRAIT_FLAG_DESC_immune_to_frenzy_flag: "Не впадает в неистовство"
  TRAIT_FLAG_DESC_perks_for_piety_flag: "Может обменять [Concept('piety', 'благочестие')|E] на [Concept('perks', 'достоинства')|E] #TOOLTIP:game_concept_resonance_desc #E резонанса#!#!"
@@ -1433,12 +1432,9 @@
  POD_trait_health_track: "[TraitWoundBox('(CFixedPoint)1')] [TraitWoundBox('(CFixedPoint)2')] [TraitWoundBox('(CFixedPoint)3')] [TraitWoundBox('(CFixedPoint)4')] [TraitWoundBox('(CFixedPoint)5')] [TraitWoundBox('(CFixedPoint)6')] [TraitWoundBox('(CFixedPoint)7')] [TraitWoundBox('(CFixedPoint)8')] [TraitWoundBox('(CFixedPoint)9')] [TraitWoundBox('(CFixedPoint)10')] [TraitWoundBox('(CFixedPoint)11')] [TraitWoundBox('(CFixedPoint)12')] [TraitWoundBox('(CFixedPoint)13')] [TraitWoundBox('(CFixedPoint)14')] [TraitWoundBox('(CFixedPoint)15')] [TraitWoundBox('(CFixedPoint)16')] [TraitWoundBox('(CFixedPoint)17')] [TraitWoundBox('(CFixedPoint)18')] [TraitWoundBox('(CFixedPoint)19')] [TraitWoundBox('(CFixedPoint)20')]"
  POD_character_health_track_line1: "[CharacterWoundBox('(CFixedPoint)1')][CharacterWoundBox('(CFixedPoint)2')][CharacterWoundBox('(CFixedPoint)3')][CharacterWoundBox('(CFixedPoint)4')][CharacterWoundBox('(CFixedPoint)5')][CharacterWoundBox('(CFixedPoint)6')][CharacterWoundBox('(CFixedPoint)7')][CharacterWoundBox('(CFixedPoint)8')][CharacterWoundBox('(CFixedPoint)9')][CharacterWoundBox('(CFixedPoint)10')]"
  POD_character_health_track_line2: "[CharacterWoundBox('(CFixedPoint)11')][CharacterWoundBox('(CFixedPoint)12')][CharacterWoundBox('(CFixedPoint)13')][CharacterWoundBox('(CFixedPoint)14')][CharacterWoundBox('(CFixedPoint)15')][CharacterWoundBox('(CFixedPoint)16')][CharacterWoundBox('(CFixedPoint)17')][CharacterWoundBox('(CFixedPoint)18')][CharacterWoundBox('(CFixedPoint)19')][CharacterWoundBox('(CFixedPoint)20')]"
- #POD_damage_box: "[Concept('POD_superficial_damage','@health_track_damage_icon!')]"
- POD_damage_box: "#TOOLTIP:game_concept_POD_superficial_damage_desc #E @health_track_damage_icon!#!#!"
- #POD_aggravated_damage_box: "[Concept('POD_aggravated_damage','@health_track_aggravated_damage_icon!')]"
- POD_aggravated_damage_box: "#TOOLTIP:game_concept_POD_aggravated_damage_desc #E @health_track_aggravated_damage_icon!#!#!"
- #POD_undamaged_box: "[Concept('POD_health_track','@health_track_empty_icon!')]"
- POD_undamaged_box: "#TOOLTIP:game_concept_POD_health_track_desc #E @health_track_empty_icon!#!#!"
+ POD_damage_box: "[Concept('POD_superficial_damage','@health_track_damage_icon!')]"
+ POD_aggravated_damage_box: "[Concept('POD_aggravated_damage','@health_track_aggravated_damage_icon!')]"
+ POD_undamaged_box: "[Concept('POD_health_track','@health_track_empty_icon!')]"
 
  # V20 - Healing and Health
  # (trait xp thresholds 0, 20, 40, 60, 80, 100)

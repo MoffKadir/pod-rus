@@ -187,8 +187,7 @@
  POD_heists.100.a.success.nocoterie: "Ещё одна зарубка на моём поясе."
  POD_heists.100.a.failure: "Я уже обдумываю свой следующий шаг..."
 
- #POD_heist_levelup_hint_desc: "Если вы успешно завершите ещё $VALUE|V0$ [Concept( 'infiltration', SelectLocalization( EqualTo_int32( '(int32)1', '(int32)$VALUE|0q$' ), 'game_concept_infiltration_mission', 'game_concept_infiltration_missions' ) )|E], вы получите модификатор [GetModifier('infiltration_experience_modifier').GetNameWithTooltip]."
- POD_heist_levelup_hint_desc: "Если вы успешно завершите ещё $VALUE|V0$ #TOOLTIP:game_concept_infiltration_desc #E [SelectLocalization( EqualTo_int32( '(int32)1', '(int32)$VALUE|0q$' ), 'миссию проникновения', 'миссии проникновения' )]#!#!, вы получите модификатор [GetModifier('infiltration_experience_modifier').GetNameWithTooltip]."
+ POD_heist_levelup_hint_desc: "Если вы успешно завершите ещё $VALUE|V0$ [Concept( 'infiltration', SelectLocalization( EqualTo_int32( '(int32)1', '(int32)$VALUE|0q$' ), 'миссию проникновения', 'миссий проникновения' ) )|E], вы получите модификатор [GetModifier('infiltration_experience_modifier').GetNameWithTooltip]."
 
  POD_heists.101.t: "И на этом всё заканчивается"
  POD_heists.101.desc: "Вы испытали свою удачу. Рано или поздно она должна была закончиться.\n\nСвита, которой командует [heist_imprisoner.GetFirstNameNicknamed], окружает вас. Бежать некуда. Вас сопровождают в тюремную камеру без фанфар.\n\nСидя за решёткой, вам приходит в голову, что вы вряд ли добьётесь справедливого судебного разбирательства."

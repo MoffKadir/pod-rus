@@ -836,7 +836,7 @@
 
  #Grave's Decay Path
 
- NECROMANCY_ASHES_TO_ASHES_PERK_EFFECT: "Снижает риск #TOOLTIP:game_concept_the_masquerade_desc #E раскрытия Маскарада#!#! и улучшает [Concept('character_interaction', 'взаимодействие персонажа')|E] «Сокрыть Маскарад»."
+ NECROMANCY_ASHES_TO_ASHES_PERK_EFFECT: "Снижает риск #TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! раскрытия Маскарада#!#! и улучшает [Concept('character_interaction', 'взаимодействие персонажа')|E] «Сокрыть Маскарад»."
  NECROMANCY_ASHES_TO_ASHES_PERK_FLAVOR: "#flavor Одни каиниты убивают без разбора и не боятся последствий своих действий, другие считают нужным быть более осмотрительными. При использовании этой силы человеческий труп превращается в груду ничем не примечательного пепла весом примерно в одну пятую часть от первоначального тела.#!"
  RIGOR_MORTIS_PERK_FLAVOR: "#flavor С помощью этой силы некромант может сделать любую цель неподвижной, как труп.#!"
  ASHEN_LADYS_EMBRACE_PERK_EFFECT: "Разблокирует движение в[Concept('single_combat_duel', 'поединке')|E] «Объятия Пепельной госпожи»"
@@ -880,7 +880,7 @@
 
  #Nightshade Path
 
- TEND_THE_BODY_GARDEN_PERK_EFFECT: "Снижает риск #TOOLTIP:game_concept_the_masquerade_desc #E раскрытия Маскарада#!#! и улучшает [Concept('character_interaction', 'взаимодействие персонажа')|E] «Сокрыть Маскарад»."
+ TEND_THE_BODY_GARDEN_PERK_EFFECT: "Снижает риск #TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! раскрытия Маскарада#!#! и улучшает [Concept('character_interaction', 'взаимодействие персонажа')|E] «Сокрыть Маскарад»."
  TEND_THE_BODY_GARDEN_PERK_FLAVOR: "#flavor Некромант, обладающий этой силой, может ускорить или замедлить процесс разложения, превращая мертвого смертного в раздувшегося носителя мух за считанные секунды или сводя на нет разложение Окончательной смерти.#!"
  WITCHS_FRUIT_PERK_EFFECT: "Разблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E], позволяющее отравлять смертных некромантическими фруктами."
  WITCHS_FRUIT_PERK_FLAVOR: "#flavor Каждое растение опирается на смерть, чтобы расти. Гниющие предметы обогащают почву, а деревья, лианы и травы впитывают некротические отголоски вместе с жизненно важными питательными веществами. Некромант может пробудить эту ауру смерти, подвергнув свои плоды воздействию своей крови.#!"
@@ -917,13 +917,13 @@
  TOUCH_OF_DEATH_PERK_EFFECT: "TODO"
  TOUCH_OF_DEATH_PERK_FLAVOR: "#flavor Некромант настраивается на остаточную энергию, оставшуюся после прохождения или прикосновения призрака, что позволяет ему определить, был ли предмет, человек или область затронуты или подверглись влиянию призрака.#!"
  REVEAL_THE_CATENE_PERK_EFFECT: "TODO"
- REVEAL_THE_CATENE_PERK_FLAVOR: "#flavor Некромант распознает пепельный след, оставленный мертвецами на предметах, что позволяет ему отличать призрачные игрушки от [Concept('Fetter', 'оков')|E].#!"
+ REVEAL_THE_CATENE_PERK_FLAVOR: "#flavor Некромант распознает пепельный след, оставленный мертвецами на предметах, что позволяет ему отличать призрачные игрушки от [Concept('Fetters', 'оков')|E].#!"
  TREAD_UPON_THE_GRAVE_PERK_EFFECT: "TODO"
  TREAD_UPON_THE_GRAVE_PERK_FLAVOR: "#flavor Некромант чувствует, когда находится рядом с миром мертвых. Один некромант может использовать свое природное восприятие, другой - гадание, но оба чувствуют, где [UmbraGlossaryLocalized('shadowlands','Загробный мир')] соприкасается с миром живых.#!"
  DEATH_KNELL_PERK_EFFECT: "TODO"
  DEATH_KNELL_PERK_FLAVOR: "#flavor Некромант чувствует, когда находится рядом с миром мертвых. Один некромант может использовать свое природное восприятие, другой - гадание, но оба чувствуют, где [UmbraGlossaryLocalized('shadowlands','Загробный мир')] соприкасается с миром живых.#!"
  EPHEMERAL_BINDING_PERK_EFFECT: "TODO"
- EPHEMERAL_BINDING_PERK_FLAVOR: "#flavor Наполнив предмет, человека или место своей пепельной энергией, некромант может создать искусственные [Concept('Fetter', 'Оковы')|E], а не полагаться на случайные поиски.#!"
+ EPHEMERAL_BINDING_PERK_FLAVOR: "#flavor Наполнив предмет, человека или место своей пепельной энергией, некромант может создать искусственные [Concept('Fetters', 'Оковы')|E], а не полагаться на случайные поиски.#!"
 
  # Potence #
 
@@ -1457,7 +1457,7 @@
  LASOMBRA_LEGACY_1_PERK_EFFECT: "#F Отвергнутая дочь замышляет месть. Против теней она использует абсолютный огонь.#!"
  LASOMBRA_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии с военным образованием.\n#F Теневая реконкиста увенчается успехом, но её конечный победитель может оказаться не самым очевидным.#!"
  LASOMBRA_LEGACY_3_PERK_EFFECT: "#F Воистину, Самый милосердный превосходит даже смерть.#!"
- LASOMBRA_LEGACY_4_PERK_EFFECT: "#F Интриги ради интриг - это само по себе искусство.#!"
+ LASOMBRA_LEGACY_4_PERK_EFFECT: "#F Каждый ласомбра чувствует зов моря, желая по-настоящему стать частью самой глубокой тени, которая скрывается за всем этим.#!"
  LASOMBRA_LEGACY_5_PERK_EFFECT: "#F Константинополь отомстит, и Венеция сгорит вместе с ним.#!"
 
  #Banu Haqim legacy#
@@ -1498,6 +1498,14 @@
  GARGOYLE_LEGACY_3_PERK_EFFECT: "#F Хороший полёт никогда не убивал врага.#!"
  GARGOYLE_LEGACY_4_PERK_EFFECT: "Члены династии с высокой [Concept('learning', 'учёностью')|E] получат [Glossary('дисциплину','game_concept_discipline_desc')] Кровавого чародейства и ритуальное [Concept('character_interaction', 'взаимодействие персонажа')|E] для создания гаргулий.\n#F Знание - сила, а украденное знание - всё ещё сила.#!"
  GARGOYLE_LEGACY_5_PERK_EFFECT: "#F Прежде всего, уважайте себя.#!"
+
+ #Nagaraja legacy #
+ 
+ NAGARAJA_LEGACY_1_PERK_EFFECT: "Cannibalising prisoners grants a small amount of dread.\n#F Others may revile us for our way of feeding, but we know the truth. To devour is to rule. To chew is to conquer. To swallow is to reign.#!"
+ NAGARAJA_LEGACY_2_PERK_EFFECT: "#F To gorge upon the flesh of the fallen is to sharpen wisdom.#!"
+ NAGARAJA_LEGACY_3_PERK_EFFECT: "#F The Shadowlands devour the unprepared. Only we have the ability to navigate it with purpose while others stumble in the dark.#!"
+ NAGARAJA_LEGACY_4_PERK_EFFECT: "#F Both the living and the dead fear us, because they do not understand us. Except one thing - our hunger is endless.#!"
+ NAGARAJA_LEGACY_5_PERK_EFFECT: "#F Life, death, spirit, and flesh are all meals. With each one devoured, the world rots faster as it prepares to be devoured.#!"
 
  # Ashen Nobles #
 

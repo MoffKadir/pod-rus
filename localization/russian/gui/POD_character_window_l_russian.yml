@@ -28,7 +28,6 @@
  # These ones are part of the GUI, so no bullet is needed
  POD_sidebar_dharma_insight: "#medium Прозрение:#! #color:{0.83,0.80,0.71} [Character.MakeScope.ScriptValue('dharma_xp')|0]/[Character.MakeScope.ScriptValue('POD_kueijin_dharma_to_advance_tt')|0]#!"
  POD_sidebar_fera_rank: "#medium Ранг#! #color:{0.83,0.80,0.71} [Character.MakeScope.ScriptValue('POD_fera_rank_value')|0]#!"
- #POD_sidebar_cultists: "#color:{0.83,0.80,0.71} [Character.MakeScope.ScriptValue('POD_num_of_cultists')|0]#! [Concept( 'cultist', Select_CString( EqualTo_CFixedPoint( Character.MakeScope.ScriptValue('POD_num_of_cultists'), '(CFixedPoint)1' ), 'культист', 'культистов' ) )|E]"
  POD_sidebar_cultists: "#color:{0.83,0.80,0.71} [Character.MakeScope.ScriptValue('POD_num_of_cultists')|0]#! #TOOLTIP:game_concept_cultist_desc #E [Select_CString( EqualTo_CFixedPoint( Character.MakeScope.ScriptValue('POD_num_of_cultists'), '(CFixedPoint)1' ), 'культист', 'культистов' )]#!#!"
  #POD_sidebar_mummy_memories: "#medium Memories:#! #color:{0.83,0.80,0.71} Level [Character.MakeScope.ScriptValue('POD_mummy_memory_level')|0]#! #medium ([Character.MakeScope.ScriptValue('POD_mummy_trait_xp')|0]/100)#!"
  POD_sidebar_mummy_memories: "#medium Воспоминания:#! #color:{0.83,0.80,0.71} [Character.MakeScope.ScriptValue('POD_mummy_memory_level')|0]/8#!"
@@ -67,7 +66,7 @@
  effigies_row_header: "Эффигии #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'effigy_character' ) ))])#!"
  animantis_row_header: "Анимантис #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'animantis_character' ) ))])#!"
  manifestation_row_header: "Манифестация #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'manifestation_character' ) ))])#!"
- fetter_row_header: "[Concept('Fetter', 'Оковы')|E] #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'fetter' ) ))])#!"
+ fetter_row_header: "[Concept('Fetters', 'Оковы')|E] #weak ([GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'fetter' ) ))])#!"
  shadow_twin_row_header: "Тень-двойник"
  mirror_duplicate_row_header: "Зеркальный двойник"
  darkling_mirror_row_header: "Отколовшаяся П'о"
