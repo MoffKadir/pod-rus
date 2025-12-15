@@ -391,17 +391,17 @@
  YOU_LOST_GHOUL: "[TARGET_CHARACTER.GetShortUIName] больше не ваш гуль"
  THEY_LOST_GHOUL: "[CHARACTER.GetShortUIName|U] больше не гуль [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
- GET_HERD: "Становится частью #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_GET_HERD: "[TARGET_CHARACTER.GetShortUIName|U] становится частью вашего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!"
- THEY_GET_HERD: "[CHARACTER.GetShortUIName|U] становится частью #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_GOT_HERD: "[TARGET_CHARACTER.GetShortUIName] становится частью вашего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!"
- THEY_GOT_HERD: "[CHARACTER.GetShortUIName|U] становится частью #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ GET_HERD: "Становится частью [Concept('POD_herd', 'стада')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ YOU_GET_HERD: "[TARGET_CHARACTER.GetShortUIName|U] становится частью вашего [Concept('POD_herd', 'стада')|E]"
+ THEY_GET_HERD: "[CHARACTER.GetShortUIName|U] становится частью [Concept('POD_herd', 'стада')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ YOU_GOT_HERD: "[TARGET_CHARACTER.GetShortUIName] становится частью вашего [Concept('POD_herd', 'стада')|E]"
+ THEY_GOT_HERD: "[CHARACTER.GetShortUIName|U] становится частью [Concept('POD_herd', 'стада')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
- LOSE_HERD: "Больше не часть #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_LOSE_HERD: "[TARGET_CHARACTER.GetShortUIName|U] больше не часть вашего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!"
- THEY_LOSE_HERD: "[CHARACTER.GetShortUIName|U] больше не часть #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_LOST_HERD: "[TARGET_CHARACTER.GetShortUIName] больше не является частью вашего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!"
- THEY_LOST_HERD: "[CHARACTER.GetShortUIName|U] больше не является частью #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ LOSE_HERD: "Больше не часть [Concept('POD_herd', 'стада')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ YOU_LOSE_HERD: "[TARGET_CHARACTER.GetShortUIName|U] больше не часть вашего [Concept('POD_herd', 'стада')|E]"
+ THEY_LOSE_HERD: "[CHARACTER.GetShortUIName|U] больше не часть [Concept('POD_herd', 'стада')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ YOU_LOST_HERD: "[TARGET_CHARACTER.GetShortUIName] больше не является частью вашего [Concept('POD_herd', 'стада')|E]"
+ THEY_LOST_HERD: "[CHARACTER.GetShortUIName|U] больше не является частью [Concept('POD_herd', 'стада')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
  GET_NETERU: "Становится #TOOLTIP:game_concept_neteru_desc #E нетеру#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  YOU_GET_NETERU: "[TARGET_CHARACTER.GetShortUIName|U] становится вашим #TOOLTIP:game_concept_neteru_desc #E нетеру#!#!"
@@ -596,17 +596,17 @@
  THEY_LOST_FASCINATE_TARGET: "[CHARACTER.GetShortUIName|U] больше не является очарованной марионеткой [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
 
- GET_FETTER: "Становится #TOOLTIP:game_concept_Fetter_desc #E оковами#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_GET_FETTER: "[TARGET_CHARACTER.GetShortUIName] теперь ваши #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!"
- THEY_GET_FETTER: "[CHARACTER.GetShortUIName|U] становится #TOOLTIP:game_concept_Fetter_desc #E оковами#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_GOT_FETTER: "[TARGET_CHARACTER.GetShortUIName] становится вашими #TOOLTIP:game_concept_Fetter_desc #E оковами#!#!"
- THEY_GOT_FETTER: "[CHARACTER.GetShortUIName|U] становится #TOOLTIP:game_concept_Fetter_desc #E оковами#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ GET_FETTER: "Становится [Concept('Fetter', 'оковами')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ YOU_GET_FETTER: "[TARGET_CHARACTER.GetShortUIName] теперь ваши [Concept('Fetter', 'оковы')|E]"
+ THEY_GET_FETTER: "[CHARACTER.GetShortUIName|U] становится [Concept('Fetter', 'оковами')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ YOU_GOT_FETTER: "[TARGET_CHARACTER.GetShortUIName] становится вашими [Concept('Fetter', 'оковами')|E]"
+ THEY_GOT_FETTER: "[CHARACTER.GetShortUIName|U] становится [Concept('Fetter', 'оковами')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
- LOSE_FETTER: "Больше не #TOOLTIP:game_concept_Fetter_desc #E оковы#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_LOSE_FETTER: "[TARGET_CHARACTER.GetShortUIName] больше не ваши #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!"
- THEY_LOSE_FETTER: "[CHARACTER.GetShortUIName|U] больше не #TOOLTIP:game_concept_Fetter_desc #E оковы#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_LOST_FETTER: "[TARGET_CHARACTER.GetShortUIName] больше не является вашими #TOOLTIP:game_concept_Fetter_desc #E оковами#!#!"
- THEY_LOST_FETTER: "[CHARACTER.GetShortUIName|U] больше не является #TOOLTIP:game_concept_Fetter_desc #E оковами#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ LOSE_FETTER: "Больше не [Concept('Fetter', 'оковы')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ YOU_LOSE_FETTER: "[TARGET_CHARACTER.GetShortUIName] больше не ваши [Concept('Fetter', 'оковы')|E]"
+ THEY_LOSE_FETTER: "[CHARACTER.GetShortUIName|U] больше не [Concept('Fetter', 'оковы')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ YOU_LOST_FETTER: "[TARGET_CHARACTER.GetShortUIName] больше не является вашими [Concept('Fetter', 'оковами')|E]"
+ THEY_LOST_FETTER: "[CHARACTER.GetShortUIName|U] больше не является [Concept('Fetter', 'оковами')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
  GET_TRUE_NAME: "Узнаёт истинное имя [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  YOU_GET_TRUE_NAME: "Вы узнаёте истинное имя [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
@@ -737,15 +737,15 @@
  THE_FORGETFUL_MIND_PERK: "Вы открываете лучший вариант [Concept('character_interaction', 'взаимодействия персонажа')|E] сокрытия Маскарада. Также открывает [Concept('character_interaction', 'взаимодействие персонажа')|E], которое может повысить мнение цели о вас."
  SUBMERGED_DIRECTIVE_PERK: "Ваши крючки доминирования действуют дольше, позволяя вам отдавать команды позже."
  MASS_MANIPULATION_PERK: "Доступны [men_at_arms|El] - [GetMaA('maniacs').GetName]."
- DEEP_MEMORIES_PERK: "Вы можете изменить все свойства личности и ориентацию ваших гулей и #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!"
+ DEEP_MEMORIES_PERK: "Вы можете изменить все свойства личности и ориентацию ваших гулей и [Concept('POD_herd', 'стада')|E]"
  CONDITIONING_PERK: "Используя происки «[GetScheme('PODmesmerize').GetTypeName]» в третий раз, вы можете улучшить [Concept('perpetual_hook', 'вечное влияние')|E] до [Concept('strong_hook', 'сильного влияния')|E].\n#F Многократно доминируя над существом и используя команду для уменьшения свободы воли, вампир в конце концов может превратить его в идеального слугу.#!"
  WILL_CONQUERS_PERK: "Вашим командам Доминирования гораздо сложнее сопротивляться."
  TERMINAL_DECREE_PERK: "Добавляет новую команду Доминирования: «Убей себя»."
  REWRITE_PERSONALITY_PERK: "Вы можете изменить все свойства личности и ориентацию персонажей, которые были целью ваших [Concept('scheme', 'происков')|E] «[GetScheme('PODmesmerize').GetTypeName]»"
  CONCORD_OF_SUBMISSION_PERK: "Добавляет новую команду Доминирования: «Остановить войну» - принуждает цель завершить войну на условиях белого мира."
- MOLD_HUMOURS_PERK: "Открывает возможность изменять тип резонанса вашего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!"
+ MOLD_HUMOURS_PERK: "Открывает возможность изменять тип резонанса вашего [Concept('POD_herd', 'стада')|E]"
  SPEAK_THROUGH_THE_BLOOD_PERK: "Приказ, который эхом прокатится по вашей линии крови, затронет каждого из ваших потомков и заставит их действовать."
- PASSION_PERK: "Открывает возможность изменять интенсивность резонанса вашего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!"
+ PASSION_PERK: "Открывает возможность изменять интенсивность резонанса вашего [Concept('POD_herd', 'стада')|E]"
 
  # Fortitude #
 
@@ -917,13 +917,13 @@
  TOUCH_OF_DEATH_PERK_EFFECT: "TODO"
  TOUCH_OF_DEATH_PERK_FLAVOR: "#flavor Некромант настраивается на остаточную энергию, оставшуюся после прохождения или прикосновения призрака, что позволяет ему определить, был ли предмет, человек или область затронуты или подверглись влиянию призрака.#!"
  REVEAL_THE_CATENE_PERK_EFFECT: "TODO"
- REVEAL_THE_CATENE_PERK_FLAVOR: "#flavor Некромант распознает пепельный след, оставленный мертвецами на предметах, что позволяет ему отличать призрачные игрушки от #TOOLTIP:game_concept_Fetter_desc #E оков#!#!.#!"
+ REVEAL_THE_CATENE_PERK_FLAVOR: "#flavor Некромант распознает пепельный след, оставленный мертвецами на предметах, что позволяет ему отличать призрачные игрушки от [Concept('Fetter', 'оков')|E].#!"
  TREAD_UPON_THE_GRAVE_PERK_EFFECT: "TODO"
  TREAD_UPON_THE_GRAVE_PERK_FLAVOR: "#flavor Некромант чувствует, когда находится рядом с миром мертвых. Один некромант может использовать свое природное восприятие, другой - гадание, но оба чувствуют, где [UmbraGlossaryLocalized('shadowlands','Загробный мир')] соприкасается с миром живых.#!"
  DEATH_KNELL_PERK_EFFECT: "TODO"
  DEATH_KNELL_PERK_FLAVOR: "#flavor Некромант чувствует, когда находится рядом с миром мертвых. Один некромант может использовать свое природное восприятие, другой - гадание, но оба чувствуют, где [UmbraGlossaryLocalized('shadowlands','Загробный мир')] соприкасается с миром живых.#!"
  EPHEMERAL_BINDING_PERK_EFFECT: "TODO"
- EPHEMERAL_BINDING_PERK_FLAVOR: "#flavor Наполнив предмет, человека или место своей пепельной энергией, некромант может создать искусственные #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!, а не полагаться на случайные поиски.#!"
+ EPHEMERAL_BINDING_PERK_FLAVOR: "#flavor Наполнив предмет, человека или место своей пепельной энергией, некромант может создать искусственные [Concept('Fetter', 'Оковы')|E], а не полагаться на случайные поиски.#!"
 
  # Potence #
 
@@ -948,7 +948,7 @@
  DAUNT_PERK_EFFECT: "#F Вместо того чтобы привлекать людей, вампир использует Присутствие, чтобы отталкивать. С этой силой пользователь выглядит угрожающе и источает ауру угрозы, достаточно мощную, чтобы заставить большинство смертных избегать их внимания, и даже вампиры дважды подумают, прежде чем действовать против них.#!"
  DREAD_GAZE_PERK_EFFECT: "#F Кратко раскрыв свою вампирскую сущность, пользователь вселяет в одного субъекта абсолютный ужас.#!"
  ENTRANCEMENT_PERK_EFFECT: "Разблокирует [Concept('scheme', 'происки')|E] «[GetScheme('PODentrance').GetTypeName]».\n#F Вампир сосредотачивает свое неестественное очарование на одном человеке, внушая ему восторженное восхищение или увлеченность, сродни влюбленности или встрече с кумиром всей жизни.#!"
- LINGERING_KISS_PERK_EFFECT: "Когда вы охотитесь, вы можете добавить своих жертв в своё #TOOLTIP:game_concept_POD_herd_desc #E стадо#!#!.\n#F Поцелуй вампира вызывает у смертных почти экстаз, но по силе он превосходит другие поцелуи. Смертные, которых кормит вампир, становятся зависимыми от поцелуя, одержимыми им и даже ищут вампира для повторного кормления.#!"
+ LINGERING_KISS_PERK_EFFECT: "Когда вы охотитесь, вы можете добавить своих жертв в своё [Concept('POD_herd', 'стадо')|E].\n#F Поцелуй вампира вызывает у смертных почти экстаз, но по силе он превосходит другие поцелуи. Смертные, которых кормит вампир, становятся зависимыми от поцелуя, одержимыми им и даже ищут вампира для повторного кормления.#!"
  MAJESTY_PERK_EFFECT: "Вы открываете лучшие варианты для [Concept('character_interaction', 'взаимодействия персонажа')|E] «Сокрыть Маскарад».\n#F На этой вершине [Glossary('дисциплины','game_concept_discipline_desc')], вампир может усилить свой облик до сверхъестественного уровня. Ощутить Величие - значит оказаться в присутствии божественного - или инфернального.#!"
  SUMMON_PERK_EFFECT: "Разблокирует [Concept('scheme', 'происки')|E] «[GetScheme('PODsummon').GetTypeName]».\n#F Вампир может призвать к себе любого человека, смертного или вампира, на которого он ранее использовал «Благоговение», «Восторг» или «Величие» или который хотя бы раз отведал его крови.#!"
  IRONCLAD_COMMAND_PERK_EFFECT: "Повышает вероятность успеха предыдущих способностей Присутствия"
@@ -1201,7 +1201,7 @@
  FREE_DAGONS_CALL_EFFECT: "Бонус к «Зову Дагона»: [Concept('character_interaction', 'взаимодействие персонажа')|E] теперь не требует затрат благочестия."
  QUIETUS_PURIFICATION_PERK_EFFECT: "Позволяет удалить #TOOLTIP:game_concept_battle_modifier_desc #E модификатор битвы#!#! с цели через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
  THIN_BLOOD_PERK_EFFECT: "Позволяет наложить на цель модификатор [GetModifier( 'thin_blood_perk_modifier' ).GetNameWithTooltip|L] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Сделайте вампира неспособным исцелять свои раны с помощью витэ.#!"
- FOUL_BLOOD_PERK_EFFECT: "Максимальный размер #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!: #P +1#!\n#F Отравление крови цели, чтобы только вы могли питаться от неё.#!"
+ FOUL_BLOOD_PERK_EFFECT: "Максимальный размер [Concept('POD_herd', 'стада')|E]: #P +1#!\n#F Отравление крови цели, чтобы только вы могли питаться от неё.#!"
  BLOOD_OF_DESTRUCTION_PERK_EFFECT: "Союзные [Concept('knights', 'рыцари')|E] и [Concept('commanders', 'командиры')|E] в [Concept('combat_phase', 'бою')|E] или вы сами во время [Concept('single_combat_duel_plural', 'поединков')|E] получите [Concept('modifier', 'модификатор')|E] [GetModifier('blood_of_destruction_perk_modifier').GetNameWithTooltip].\n#F Делает кровь в организме невероятно кислотной.#!"
  CONDEMN_THE_SINS_OF_THE_FATHER_PERK_EFFECT: "Бонус к «Зову Дагона»: [Concept('character_interaction', 'взаимодействие персонажа')|E] теперь воздействует на весь дом цели (на тех членов, что младше цели).\n#F Применение способности Смертоносности более низкого уровня к целому роду вампиров.#!"
  EROSION_PERK_EFFECT: "Позволяет наложить на цель модификатор [GetModifier( 'erosion_perk_modifier' ).GetNameWithTooltip|L] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Снижает все физические атрибуты цели до нуля.#!"
@@ -1368,7 +1368,7 @@
 
  VENTRUE_LEGACY_1_PERK_EFFECT: "Разблокирует особое [Concept('character_interaction', 'взаимодействие персонажа')|E] для обмена крючками влияния с другими вентру.\n#F Камилл построил величайшую империю, которую знал и когда-либо узнает [Glossary('каинитский','game_concept_cainite_desc')] мир. [Glossary('Клан','game_concept_Clan_desc')] Вентру действительно начался с него.#!"
  VENTRUE_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии с военным образованием.\n#F Спартанская богиня храбро сражалась с ужасами Карфагена. [Glossary('Клан','game_concept_Clan_desc')] Вентру всегда будет чтить её жертву.#!"
- VENTRUE_LEGACY_3_PERK_EFFECT: "Разблокирует особое [Concept('character_interaction', 'взаимодействие персонажа')|E] для навязывания #TOOLTIP:game_concept_the_masquerade_desc #E Маскарада#!#!.\n#F Глупая гибель Медона послужила ценным уроком для Вентру. Не стоит недооценивать смертных.#!"
+ VENTRUE_LEGACY_3_PERK_EFFECT: "Разблокирует особое [Concept('character_interaction', 'взаимодействие персонажа')|E] для навязывания [Concept('the_masquerade', 'Маскарада')|E].\n#F Глупая гибель Медона послужила ценным уроком для Вентру. Не стоит недооценивать смертных.#!"
  VENTRUE_LEGACY_4_PERK_EFFECT: "#F Исследовательница никогда не насытится по-настоящему, ведь мир бесконечен, как и её жажда странствий.#!"
  VENTRUE_LEGACY_5_PERK_EFFECT: "Решение единства дома «Подготовить представителей дома к войне» теперь также даёт дополнительный модификатор.\n#F Персидский полководец вознёсся к божественности под звуки грохочущих катафрактов.#!"
 
@@ -1821,12 +1821,12 @@
 
  POD_cursed_artifact_toast: "Проклятый артефакт"
 
- POD_create_full_fetter_text: "Создать новые #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!"
- POD_create_empty_fetter_text: "Создать семя #TOOLTIP:game_concept_Fetter_desc #E оков#!#!"
- POD_destroy_fetter_text: "#TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! будут уничтожены!"
+ POD_create_full_fetter_text: "Создать новые [Concept('Fetter', 'оковы')|E]"
+ POD_create_empty_fetter_text: "Создать семя [Concept('Fetter', 'оков')|E]"
+ POD_destroy_fetter_text: "[Concept('Fetter', 'Оковы')|E] будут уничтожены!"
 
  POD_passion_fulfilled: "[Localize(SCOPE.GetFlagName('fetter_loca'))]: страсти исполнены"
- POD_fetter_seed_gained: "[Localize(SCOPE.GetFlagName('fetter_loca'))]: получены #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!"
+ POD_fetter_seed_gained: "[Localize(SCOPE.GetFlagName('fetter_loca'))]: получены [Concept('Fetter', 'оковы')|E]"
 
  POD_dark_passion_fulfilled: "[Localize(SCOPE.GetFlagName('dark_passion_flag'))]: тёмные страсти исполнены"
  POD_dark_passion_lose: "[Localize(SCOPE.GetFlagName('dark_passion_flag'))]: тёмные страсти потеряны"
@@ -1950,8 +1950,8 @@
  POD_mummy_tan_check_effect: "Разблокировка этого [Concept('perk', 'достоинства')|E] приведёт к том, что достоинства другого дерева Тан будут стоить дополнительно 50 #TOOLTIP:game_concept_static_stress_desc #E психического напряжения#!#! #X Это действие необратимо#!"
 
  POD_can_summon_on_death_trigger_loca: "Вы можете заставить вашу цель через [Concept('character_interaction', 'взаимодействие персонажа')|E] стать призраком, если она умрёт в течение #V 10#! лет."
- POD_can_weaken_fetter_trigger_loca: "Вы можете ослабить случайные неразрешённые #TOOLTIP:game_concept_Fetter_desc #E оковы#!#! призрака через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
- POD_can_bind_wraith_trigger_loca: "Вы можете связать призрака, использовав его нераспределённые #TOOLTIP:game_concept_Fetter_desc #E оковы#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
+ POD_can_weaken_fetter_trigger_loca: "Вы можете ослабить случайные неразрешённые [Concept('Fetter', 'оковы')|E] призрака через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
+ POD_can_bind_wraith_trigger_loca: "Вы можете связать призрака, использовав его нераспределённые [Concept('Fetter', 'оковы')|E] через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
  POD_can_command_wraith_trigger_loca: "Вы можете приказать своему привязанному призраку помешать или помочь цели через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
  POD_can_summon_wraith_trigger_loca: "Вы можете создать нового призрака при своём [Concept('court', 'дворе')|E] или призвать существующего из [Glossary('земель Плоти','game_concept_skinlands_desc')] через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
  POD_can_covert_to_wraith_trigger_loca: "Разблокирован способ [Concept('execution', 'казни')|E] #italic $EXECUTION_CONVERT_TO_WRAITH$#!."

@@ -3,7 +3,7 @@
  POD_embrace.100.t: "Объятия"
  POD_embrace.100.desc: "Я подстроил события так, чтобы [target.GetFirstName] [Select_CString(target.IsFemale, 'попала', 'попал' )] в мои лапы. В уединённом месте [target.GetSheHe] не сможет сбежать. [Select_CString(ROOT.Char.IsFemale, 'Должна', 'Должен' )] ли я даровать бессмертие, даже если это навлечёт проклятие на [Select_CString(target.IsFemale, 'неё', 'него' )]? Будет ли [target.GetSheHe] [Select_CString(target.IsFemale, 'благодарна', 'благодарен' )], или [target.GetSheHe] затаит на меня вечную обиду? Были ли у моего [Glossary('сира','game_concept_Sire_desc')] такие мысли?"
  POD_embrace.100.option.a: "[target.GetFirstName] получит [Glossary('объятия','game_concept_Embrace_desc')]."
- POD_embrace.100.option.a.tt: "Вы убьёте персонажа [target.GetFirstName], а затем обратите [target.GetHerHis] в вампира. Это будет стоить вам благочестия, может увеличить ваш голод и может привести к риску разоблачения #TOOLTIP:game_concept_the_masquerade_desc #E Маскарада#!#!."
+ POD_embrace.100.option.a.tt: "Вы убьёте персонажа [target.GetFirstName], а затем обратите [target.GetHerHis] в вампира. Это будет стоить вам благочестия, может увеличить ваш голод и может привести к риску разоблачения [Concept('the_masquerade', 'Маскарада')|E]."
  POD_embrace.100.option.a.tt.beast: "#beast Да! Осуши [target.GetHerHis] досуха, а потом дай каплю нашей крови. Мы всегда можем обернуть всё вспять!#!"
  POD_embrace.100.option.b: "Отпустить [target.GetHerHis]."
  POD_embrace.100.option.b.tt.beast: "#beast Нет! Не дай [target.GetHerHim] уйти! Я слишком долго [Select_CString(ROOT.Char.IsFemale, 'ждала', 'ждал' )] этого! Мы слишком долго ждали этого.#!"

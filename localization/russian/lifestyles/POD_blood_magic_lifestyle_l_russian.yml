@@ -437,7 +437,7 @@
  cycle_of_the_midgard_serpent_perk_name: "Цикл змея Мидгарда"
  apeps_transformation_perk_name: "Преображение Апопа"
 
- BESTOWMENT_OF_SCALES_PERK_EFFECT: "Вы можете наделить цель - члена #TOOLTIP:game_concept_POD_herd_desc #E стада#!#! модификатором [GetModifier('bestowment_of_scales_modifier').GetNameWithTooltip] на 20 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Вылечить гуля быстрее, нарастив на его ранах чешуйчатую кожу#!"
+ BESTOWMENT_OF_SCALES_PERK_EFFECT: "Вы можете наделить цель - члена [Concept('POD_herd', 'стада')|E] модификатором [GetModifier('bestowment_of_scales_modifier').GetNameWithTooltip] на 20 лет, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Вылечить гуля быстрее, нарастив на его ранах чешуйчатую кожу#!"
  SUFFER_FOR_JORMUNGANDR_PERK_EFFECT: "Вы можете наделить цель свойством «[GetTrait('scaly').GetName(GetNullCharacter)]» и модификатором [GetModifier('suffer_for_jormungandr_modifier').GetNameWithTooltip], также увеличив случайный [Concept('skill', 'навык')|E] на 5, применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Придать гулю рептильные черты#!"
  SWALLOW_THE_TAIL_PERK_EFFECT: "Вы можете получить случайное количество от 1 до 4 ед. крови, нанеся раны всему [Concept('court', 'двору')|E], применив это #TOOLTIP:game_concept_bloodmagic_spell_desc #E заклинание#!#!.\n#flavor Притянуть к себе пролитую кровь из окружающих вас людей#!"
  CYCLE_OF_THE_MIDGARD_SERPENT_PERK_EFFECT: "Снижает затраты [Concept('lifestyle_experience', 'опыта образа жизни')|E] для изучения дисциплин на #p -100%#!\n#flavor Наделите гуля способностью использовать ваши дисциплины#!"

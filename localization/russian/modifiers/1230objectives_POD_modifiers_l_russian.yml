@@ -137,7 +137,7 @@
  decani_boon_modifier: "Благословение Декани"
  decani_boon_modifier_desc: "Открывает доступ к [Concept('lifestyle', 'пути')|E] #TOOLTIP:game_concept_investiture_lifestyle_desc #E инвеституры#!#!\n#weak Этот персонаж был наделен частичкой силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#! Декани.#!"
  decani_modifier: "Декани"
- decani_modifier_desc: "Открывает доступ к [Concept('lifestyle', 'пути')|E] #TOOLTIP:game_concept_arcana_lifestyle_desc #E арканы#!#!\n#weak Этот персонаж присвоил себе силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#!, пожрав душу Декани.#!"
+ decani_modifier_desc: "Открывает доступ к [Concept('lifestyle', 'пути')|E] [Concept('arcana_lifestyle', 'арканы')|E]\n#weak Этот персонаж присвоил себе силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#!, пожрав душу Декани.#!"
 
  cappadocius_boon_modifier: "Благословение Каппадокия"
 
@@ -160,7 +160,7 @@
  malkavian_demon_friend_modifier_powerup_tt: "Сила [Concept('modifier', 'модификатора')|E] союзника демонов возрастает!"
 
  yama_king_modifier: "Повелитель Яма"
- yama_king_modifier_desc: "Открывает доступ к #TOOLTIP:game_concept_arcana_lifestyle_desc #E пути арканы#!#!.\nCharacter uses [dread|E] to fuel their abilities.\n#weak Этот персонаж - [Glossary('повелитель Яма','podgloss.yamaking')], могущественное демоническое существо, контролирующее часть проклятого мира Йоми.#!"
+ yama_king_modifier_desc: "Открывает доступ к [Concept('arcana_lifestyle', 'пути арканы')|E].\nCharacter uses [dread|E] to fuel their abilities.\n#weak Этот персонаж - [Glossary('повелитель Яма','podgloss.yamaking')], могущественное демоническое существо, контролирующее часть проклятого мира Йоми.#!"
 
  land_of_faith_modifier: "Олицетворение Маат"
  land_of_faith_modifier_desc: "Принятие требования о смене [Concept('faith', 'конфессии')|E] повышено на #P +50#!"

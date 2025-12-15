@@ -1,8 +1,8 @@
 ﻿l_russian:
- action_can_set_fetter_alert: "У вас есть неназначенные #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!"
- action_can_set_fetter_alert_label: "У вас есть неназначенные #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!"
- action_can_set_fetter_alert_desc: "Вы должны назначить #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!, если не хотите получать [Concept('stress', 'стресс')|E] каждый месяц."
- action_can_set_fetter_alert_click: "#I Нажмите, чтобы назначить #TOOLTIP:game_concept_Fetter_desc #E оковы#!#! на принадлежащий [Concept('title', 'титул')|E]#!"
+ action_can_set_fetter_alert: "У вас есть неназначенные [Concept('Fetter', 'оковы')|E]"
+ action_can_set_fetter_alert_label: "У вас есть неназначенные [Concept('Fetter', 'оковы')|E]"
+ action_can_set_fetter_alert_desc: "Вы должны назначить [Concept('Fetter', 'оковы')|E], если не хотите получать [Concept('stress', 'стресс')|E] каждый месяц."
+ action_can_set_fetter_alert_click: "#I Нажмите, чтобы назначить [Concept('Fetter', 'оковы')|E] на принадлежащий [Concept('title', 'титул')|E]#!"
 
  action_can_demonic_possess_alert: "У вас должен быть сосуд"
  action_can_demonic_possess_alert_label: "У вас должен быть сосуд"
@@ -17,7 +17,7 @@
  action_can_add_herd_alert: "Вы можете включить смертного в стадо"
  action_can_add_herd_alert_label: "Вы можете включить смертного в стадо"
  action_can_add_herd_alert_desc: "Вам следует включить смертного в стадо, чтобы получать больше опыта резонанса."
- action_can_add_herd_alert_click: "#I Нажмите, чтобы включить смертного в #TOOLTIP:game_concept_POD_herd_desc #E стадо#!#!#!"
+ action_can_add_herd_alert_click: "#I Нажмите, чтобы включить смертного в [Concept('POD_herd', 'стадо')|E]#!"
 
  action_can_add_dreamer_alert: "Вы можете зачаровать смертного"
  action_can_add_dreamer_alert_label: "Вы можете зачаровать смертного"
@@ -80,7 +80,7 @@
  action_can_buy_alchemy_combined_group_description: "$action_can_buy_alchemy_desc$"
  action_can_buy_alchemy_combined_label: "@mummy_icon! Купить у персонажа [recipient.GetShortUIName]"
 
- action_can_cover_up_masquerade: "@masquerade_icon! Вы можете восстановить #TOOLTIP:game_concept_the_masquerade_desc #E Маскарад#!#!"
+ action_can_cover_up_masquerade: "@masquerade_icon! Вы можете восстановить [Concept('the_masquerade', 'Маскарад')|E]"
  action_can_cover_up_masquerade_label: "@masquerade_icon! Вы можете восстановить Маскарад"
  action_can_cover_up_masquerade_desc: "Являясь вампиром, вы должны скрывать свое существование, если не хотите стать жертвой охотников."
  action_can_cover_up_masquerade_click: "#I Нажмите, чтобы открыть [character_interaction|El] для сокрытия Маскарада.#!"
@@ -95,7 +95,7 @@
  action_reactive_advice_gain_resolve_desc: "Вы можете восстановить решимость разными способами. Узнайте больше о том, как это сделать."
  action_reactive_advice_gain_resolve_click: "$click_to_open_lesson$"
  lesson_gain_resolve: "Прирост решимости"
- lesson_gain_resolve_desc: "Решимость - это топливо для ваших демонических сил, вы можете получить его через [Concept('character_interaction', 'взаимодействие персонажа')|E], открываемое через #TOOLTIP:game_concept_arcana_lifestyle_desc #E путь арканы#!#!"
+ lesson_gain_resolve_desc: "Решимость - это топливо для ваших демонических сил, вы можете получить его через [Concept('character_interaction', 'взаимодействие персонажа')|E], открываемое через [Concept('arcana_lifestyle', 'путь арканы')|E]"
 
  reactive_advice_gain_pathos: "Прирост пафоса"
  action_reactive_advice_gain_pathos: "Совет: Прирост пафоса"
@@ -200,11 +200,11 @@
  action_reactive_advice_fetters_and_passions_click: "$click_to_open_lesson$"
  fetters_and_passions: "Оковы, страсти и #TOOLTIP:game_concept_oblivion_pull_desc #E притяжение Забвения#!#!"
  lesson_fetters_and_passions: "Оковы, страсти и #TOOLTIP:game_concept_oblivion_pull_desc #E притяжение Забвения#!#!"
- lesson_fetters_and_passions_desc: "Первое, что необходимо знать, - это наличие #TOOLTIP:game_concept_oblivion_pull_desc #E притяжения Забвения#!#!, за которым нужно внимательно следить, чтобы не впасть в [GetTrait('shadow').GetName(GetNullCharacter)|l]. Чтобы снизить его, вам нужны #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!, каждая не назначенная единица #TOOLTIP:game_concept_Fetter_desc #E оков#!#! приводит к одной дополнительной единице [Concept('stress', 'стресса')|E] ежемесячно."
+ lesson_fetters_and_passions_desc: "Первое, что необходимо знать, - это наличие #TOOLTIP:game_concept_oblivion_pull_desc #E притяжения Забвения#!#!, за которым нужно внимательно следить, чтобы не впасть в [GetTrait('shadow').GetName(GetNullCharacter)|l]. Чтобы снизить его, вам нужны [Concept('Fetter', 'оковы')|E], каждая не назначенная единица [Concept('Fetter', 'оков')|E] приводит к одной дополнительной единице [Concept('stress', 'стресса')|E] ежемесячно."
 
  fetters_and_passions2: "Снижение стресса"
  lesson_fetters_and_passions2: "Снижение стресса"
- lesson_fetters_and_passions2_desc: "Призраки не могут терять [Concept('stress', 'стресс')|E], кроме как при активации страстей. Чтобы вызвать страсти, нужно выполнить определённые действия, указанные в описании модификатора #TOOLTIP:game_concept_Fetter_desc #E оков#!#!. У каждого типа #TOOLTIP:game_concept_Fetter_desc #E оков#!#! свои катализаторы, например «Ненависть» - срабатывает после совершения убийств, а «Любовь» - ежегодно, когда выбранный персонаж остаётся в живых.\n\nУровень #TOOLTIP:game_concept_Fetter_desc #E оков#!#! является важным показателем для страстей, так как от него зависит, сколько стресса вы можете потерять, используя его, и сколько пафоса вы получите."
+ lesson_fetters_and_passions2_desc: "Призраки не могут терять [Concept('stress', 'стресс')|E], кроме как при активации страстей. Чтобы вызвать страсти, нужно выполнить определённые действия, указанные в описании модификатора [Concept('Fetter', 'оков')|E]. У каждого типа [Concept('Fetter', 'оков')|E] свои катализаторы, например «Ненависть» - срабатывает после совершения убийств, а «Любовь» - ежегодно, когда выбранный персонаж остаётся в живых.\n\nУровень [Concept('Fetter', 'оков')|E] является важным показателем для страстей, так как от него зависит, сколько стресса вы можете потерять, используя его, и сколько пафоса вы получите."
 
  fetters_and_passions3: "Нервные срывы"
  lesson_fetters_and_passions3: "Нервные срывы"

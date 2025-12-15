@@ -546,7 +546,7 @@
  spirit_travel_arrived_title: "[Concept('umbra', 'Умбра')|E] достигнута"
  spirit_travel_arrived_desc: "Вы достигли [Concept('umbra', 'Умбры')|E]."
 
- shadowlands_fetter_maintenance_tooltip: "Вы платите цену за пребывание в [UmbraGlossaryLocalized('shadowlands','Загробном мире')] без #TOOLTIP:game_concept_Fetter_desc #E оков#!#!."
+ shadowlands_fetter_maintenance_tooltip: "Вы платите цену за пребывание в [UmbraGlossaryLocalized('shadowlands','Загробном мире')] без [Concept('Fetter', 'оков')|E]."
 
  is_in_umbra_tooltip: "Вы находитесь в [Concept('umbra', 'Умбре')|E]."
  is_in_dreaming_tooltip: "Вы находитесь в [UmbraGlossaryLocalized('dreaming','Грёзах')]."
@@ -572,8 +572,8 @@
  umbra_place_jade_palace_confirm: "Посетить Нефритовый дворец"
 
  umbra_place_earth_tooltip: "Непривязанный [GetTrait('wraith').GetName( GetNullCharacter )|l] без свойства «[GetTrait('risen').GetName( GetPlayer )]» получает #N 40#! [Concept('stress', 'стресса')|E] каждый год, поддерживая себя в [Glossary('землях Плоти','game_concept_skinlands_desc')]."
- umbra_place_shadowlands_tooltip: "[GetTrait('wraith').GetName( GetNullCharacter )] без #TOOLTIP:game_concept_Fetter_desc #E оков#!#! получает умеренный [stress|El] каждый год, поддерживая себя в [UmbraGlossaryLocalized('shadowlands','Загробном мире')]. (10% вероятности за каждые неразрешённые или потерянные #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!)"
- umbra_place_dark_kingdom_tooltip: "Оставайтесь в [Glossary('Тёмном королевстве','game_concept_dark_kingdom_desc')], чтобы не получить [stress|El] из-за отсутствия #TOOLTIP:game_concept_Fetter_desc #E оков#!#!"
+ umbra_place_shadowlands_tooltip: "[GetTrait('wraith').GetName( GetNullCharacter )] без [Concept('Fetter', 'оков')|E] получает умеренный [stress|El] каждый год, поддерживая себя в [UmbraGlossaryLocalized('shadowlands','Загробном мире')]. (10% вероятности за каждые неразрешённые или потерянные [Concept('Fetter', 'оковы')|E])"
+ umbra_place_dark_kingdom_tooltip: "Оставайтесь в [Glossary('Тёмном королевстве','game_concept_dark_kingdom_desc')], чтобы не получить [stress|El] из-за отсутствия [Concept('Fetter', 'оков')|E]"
 
  broken_mirror_valid_tooltip: "Ваша локация ([GetPlayer.GetCurrentLocation.GetName]) #bold не#! имеет постройки [GetBuilding('wyrm_taint_01').GetName] или [Concept('faith', 'конфессии')|E], которая принимает инфернализм."
  labyrinth_progress_effect_tooltip: "Вы получаете #V 100#! прогресса в исследовании [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринта')] (При расположении)."

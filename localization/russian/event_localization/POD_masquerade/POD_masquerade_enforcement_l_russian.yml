@@ -1,7 +1,7 @@
 ﻿l_russian:
 
  POD_masquerade_enforcement.001.t: "Насаждение Маскарада"
- POD_masquerade_enforcement.001.desc: "Самая важная, по крайней мере, для здравомыслящих сородичей, заповедь Каина - #TOOLTIP:game_concept_the_masquerade_desc #E Маскарад#!#!. Это простое правило лежит в основе вампирского общества и гласит, что смертные никогда не должны знать о вашем существовании.\n[target.GetFirstName] ставит под угрозу существование всей вашей расы, не следуя #TOOLTIP:game_concept_the_masquerade_desc #E Маскараду#!#!. Пришло время решить эту проблему."
+ POD_masquerade_enforcement.001.desc: "Самая важная, по крайней мере, для здравомыслящих сородичей, заповедь Каина - [Concept('the_masquerade', 'Маскарад')|E]. Это простое правило лежит в основе вампирского общества и гласит, что смертные никогда не должны знать о вашем существовании.\n[target.GetFirstName] ставит под угрозу существование всей вашей расы, не следуя [Concept('the_masquerade', 'Маскараду')|E]. Пришло время решить эту проблему."
  POD_masquerade_enforcement.001.option.a: "Я приказываю тебе повиноваться!"
  POD_masquerade_enforcement.001.option.a.tt: "Использовать Доминирование, чтобы заставить персонажа [target.GetFirstName] соблюдать Маскарад"
  POD_masquerade_enforcement.001.option.a.desc: "Столкновение воли"
@@ -45,5 +45,5 @@
  POD_masquerade_enforcement.003.desc.dominate: "[target.GetFirstName] [Select_CString(target.IsFemale, 'сумела', 'сумел' )] противостоять вашим способностям контроля разума. Возможно, [target.GetHerHis] воля слишком сильна, а может, вы просто допустили оплошность. На самом деле это не имеет значения, важен сам факт неудачи."
  POD_masquerade_enforcement.003.desc.presence: "Вы думали, что никто не сможет устоять перед вашим неестественным обаянием, но, похоже, [target.GetFirstName] действительно [Select_CString(target.IsFemale, 'устояла', 'устоял' )]. Вы потерпели неудачу, но, возможно, вам удастся отомстить... через некоторое время."
  POD_masquerade_enforcement.003.desc.intrigue: "[target.GetFirstName] [Select_CString(target.IsFemale, 'сумела', 'сумел' )] разгадать ваши козни, вы ничего не добились, пытаясь заставить [target.GetHerHis] следовать вашей воле."
- POD_masquerade_enforcement.003.desc.bribe: "Золото, вы думали, что оно управляет и скотом, и сородичами. Но, возможно, вы ошибались: [target.GetFirstName] отвергает ваше золото и даже ваше влияние не помогло. Теперь вы потеряли свое золото, а ваша цель всё ещё угрожает #TOOLTIP:game_concept_the_masquerade_desc #E Маскараду#!#!"
+ POD_masquerade_enforcement.003.desc.bribe: "Золото, вы думали, что оно управляет и скотом, и сородичами. Но, возможно, вы ошибались: [target.GetFirstName] отвергает ваше золото и даже ваше влияние не помогло. Теперь вы потеряли свое золото, а ваша цель всё ещё угрожает [Concept('the_masquerade', 'Маскараду')|E]"
  POD_masquerade_enforcement.003.option.a: "Это ничто, просто неудача"

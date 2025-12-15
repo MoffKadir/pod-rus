@@ -33,15 +33,15 @@
  trait_wraith: "Призрак"
  trait_wraith_desc: "Мертвая душа, возвращенная в мир смертных темной магией или привязанностью к чему-то, что она оставила при жизни."
  trait_gaunt: "Привидение"
- trait_gaunt_desc: "Привидение - это старый призрак, который избавился от одних или нескольких #TOOLTIP:game_concept_Fetter_desc #E оков#!#! и всё ещё хранит их."
+ trait_gaunt_desc: "Привидение - это старый призрак, который избавился от одних или нескольких [Concept('Fetter', 'оков')|E] и всё ещё хранит их."
  trait_domem: "Домем"
- trait_domem_desc: "Домем - это призрак, все #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! которого разрушены, что не позволяет ему оставаться в [UmbraGlossaryLocalized('shadowlands','Загробном мире')] в течение какого-либо периода времени - хотя статус домема обычно подразумевает возраст, призрак может стать домемом, будучи ещё очень молодым, для этого нужно лишь разрушить его #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!."
+ trait_domem_desc: "Домем - это призрак, все [Concept('Fetter', 'Оковы')|E] которого разрушены, что не позволяет ему оставаться в [UmbraGlossaryLocalized('shadowlands','Загробном мире')] в течение какого-либо периода времени - хотя статус домема обычно подразумевает возраст, призрак может стать домемом, будучи ещё очень молодым, для этого нужно лишь разрушить его [Concept('Fetter', 'Оковы')|E]."
  trait_enfant: "Анфан"
  trait_enfant_desc: "Самосознающие призраки начинают как анфаны; когда кто-то умирает, его душа возрождается в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], покрытая слоем плазмы, называемом оболочкой."
  trait_track_fetter: "Оковы"
  trait_track_fetter_desc: "$game_concept_Fetter_desc$"
  trait_track_fetter_resolved: "Снятые оковы"
- trait_track_fetter_resolved_desc: "#TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! также могут быть сняты, что означает, что призрак обретает силу, чтобы попрощаться с вещами и теми, кого он любил при жизни. Призрак, которому удаётся снять все свои #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!, может оставаться в [UmbraGlossaryLocalized('shadowlands','Загробном мире')] бесконечно долго, но если такой успех и даёт это преимущество, то крайне редко, вплоть до мифа."
+ trait_track_fetter_resolved_desc: "[Concept('Fetter', 'Оковы')|E] также могут быть сняты, что означает, что призрак обретает силу, чтобы попрощаться с вещами и теми, кого он любил при жизни. Призрак, которому удаётся снять все свои [Concept('Fetter', 'Оковы')|E], может оставаться в [UmbraGlossaryLocalized('shadowlands','Загробном мире')] бесконечно долго, но если такой успех и даёт это преимущество, то крайне редко, вплоть до мифа."
 
 
  trait_wight: "Вихт"
@@ -355,7 +355,7 @@
  trait_kaiadvanced: "Мастерство Кай"
  trait_kaiadvanced_desc: "Кай - это [Glossary('дисциплина','game_concept_discipline_desc')] внутренней силы, основанная на чести, воспитываемой в пользователях.\n\nПользователь Кай превращает свою внутреннюю силу и решимость в оружие, как боевое, так и подневольное."
 
- TRAIT_FLAG_DESC_can_intensify_herd_resonance: "Можно менять интенсивность #TOOLTIP:game_concept_resonance_desc #E резонанса#!#! членов своего #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!"
+ TRAIT_FLAG_DESC_can_intensify_herd_resonance: "Можно менять интенсивность #TOOLTIP:game_concept_resonance_desc #E резонанса#!#! членов своего [Concept('POD_herd', 'стада')|E]"
 
  trait_protean: "Превращение"
  trait_protean_desc: "Превращение - это [Glossary('дисциплина','game_concept_discipline_desc')], которая даёт вампирам возможность менять форму, от отращивания звериных когтей до испарения в облаке тумана.\n\nПревращение - часть божьего проклятия, наложенного на Каина в том смысле, что оно срывает маску человечности, которую должен поддерживать каждый вампир, обнажая [Glossary('Зверя','game_concept_beast_desc')] в его душе."
@@ -501,10 +501,10 @@
  trait_deimosadvanced_desc: "Деймос - это [Glossary('дисциплина','game_concept_discipline_desc')], созданная Ламиями в их исследованиях мёртвых и Лилит. Она дает вампирам возможность контролировать свои собственные безжизненные формы, а также тёмных духов и покровительство Тёмной матери. Она также известна как Путь четырёх жидкостей."
 
  trait_abombo: "Абомбо"
- trait_abombo_desc: "Путь, практикуемый Лайбон из Африки, сфокусированный на связи между мертвыми и живыми; похож на Путь Кенотафа #TOOLTIP:game_concept_necromancy_desc #E некромантии#!#!, но отличается от него. Он позволяет некроманту контролировать и даже переназначать #TOOLTIP:game_concept_Fetter_desc #E оковы#!#! призрака."
+ trait_abombo_desc: "Путь, практикуемый Лайбон из Африки, сфокусированный на связи между мертвыми и живыми; похож на Путь Кенотафа #TOOLTIP:game_concept_necromancy_desc #E некромантии#!#!, но отличается от него. Он позволяет некроманту контролировать и даже переназначать [Concept('Fetter', 'оковы')|E] призрака."
 
  trait_abomboadvanced: "Мастерство Абомбо"
- trait_abomboadvanced_desc: "Путь, практикуемый Лайбон из Африки, сфокусированный на связи между мертвыми и живыми; похож на Путь Кенотафа #TOOLTIP:game_concept_necromancy_desc #E некромантии#!#!, но отличается от него. Он позволяет некроманту контролировать и даже переназначать #TOOLTIP:game_concept_Fetter_desc #E оковы#!#! призрака."
+ trait_abomboadvanced_desc: "Путь, практикуемый Лайбон из Африки, сфокусированный на связи между мертвыми и живыми; похож на Путь Кенотафа #TOOLTIP:game_concept_necromancy_desc #E некромантии#!#!, но отличается от него. Он позволяет некроманту контролировать и даже переназначать [Concept('Fetter', 'оковы')|E] призрака."
 
  trait_abombwe: "Абомбве"
  trait_abombwe_desc: "Абомбве - это [Glossary('дисциплина','game_concept_discipline_desc')], которую практикуют Акунансе, наследие Лайбон, и таинственная линия крови Бонсам из Темных веков."
@@ -654,7 +654,7 @@
  trait_regnant_desc: "Этот персонаж создал #TOOLTIP:game_concept_ghoul_desc #E гуля#!#!."
 
  trait_massregnant: "Массовый регнант"
- trait_massregnant_desc: "Этот персонаж создал множество гулей. Обычно это является нарушением #TOOLTIP:game_concept_the_masquerade_desc #E Маскарада#!#!."
+ trait_massregnant_desc: "Этот персонаж создал множество гулей. Обычно это является нарушением [Concept('the_masquerade', 'Маскарада')|E]."
 
  trait_unbondable: "Неподчиняемость"
  trait_unbondable_desc: "Этот персонаж не может быть связан кровавыми узами."
@@ -675,7 +675,7 @@
  trait_sire_desc: "Этот вампир создал дитя, подобное себе."
 
  trait_masssire: "Массовый [Glossary('сир','game_concept_Sire_desc')]"
- trait_masssire_desc: "Этот вампир создал большое количество вампиров. Большинство путей считают это нарушением #TOOLTIP:game_concept_the_masquerade_desc #E Маскарада#!#!."
+ trait_masssire_desc: "Этот вампир создал большое количество вампиров. Большинство путей считают это нарушением [Concept('the_masquerade', 'Маскарада')|E]."
 
  trait_lamia: "Ламия"
  trait_lamia_desc: "Ламии - линия крови [Glossary('каинитов','game_concept_cainite_desc')], посвятивших себя защите [Glossary('клана','game_concept_Clan_desc')] Каппадокийцев, хотя изначально они были группой культистов, утверждавших, что происходят от Лилит, первой жены Адама."
@@ -707,7 +707,7 @@
  trait_beatific_character_desc: "Ходячее воплощение избранного [Select_CString(ROOT.Char.IsFemale, 'ей', 'им' )] бога, [ROOT.Char.GetFirstNameNoTooltip] - [Select_CString(ROOT.Char.IsFemale, 'чудотворица', 'чудотворец' )], образец [Glossary('истинной веры','game_concept_true_faith_desc')] в мире тьмы. Это дает [ROOT.Char.GetHerHim] доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров."
  trait_beatific_player_desc: "#medium См. [Concept('decision', 'решение')|E] «[GetDecision('advance_beatific_decision').GetName]» для получения подробной информации о получении [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E].#!\n\n$trait_beatific_character_desc$"
  trait_track_beatific: "Чудотворство"
- trait_track_beatific_desc: "#bold Уровень 1:#! Делает [Concept('decision', 'решение')|E] $POD_demon_unearthbound_decision$ бесплатным. Позволяет изгнать призрака/демона в [Glossary('Тёмное королевство','game_concept_dark_kingdom_desc')]/[UmbraGlossaryLocalized('abyss','Бездну')] через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Открывает особую постройку [GetBuilding('sanctified_area_01').GetName]. \n#bold Уровень 2:#! Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел ремесла#!#!, который добавляет [Concept('modifier', 'модификатор')|E] [GetModifier('bless_modifier').GetNameWithTooltip] в зависимости от типа [Concept('artifact', 'артефакта')|E]. Даёт иммунитет к убийству. Даёт иммунитет к делириуму. Вы больше не можете быть одержимы призраком.\n#bold Уровень 3:#! Цели всегда будут принимать требования об обращении.\n#bold Уровень 4:#! Позволяет снять все #TOOLTIP:game_concept_Fetter_desc #E оковы#!#! у призраков через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Позволяет убить сверхъестественное существо за малое количество благочестия через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Вам больше не нужно влияние, чтобы изгнать духа.\n#bold Уровень 5:#! Позволяет вам снова сделать вампира смертным или достичь Голконды через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Доступны [men_at_arms|El] - [GetMaA('minion_of_the_divine').GetName]. Позволяет тратить силу воли вместо получения ран. Позволяет не умирать от ран.\n#italic Самое сильное орудие в руках верующих - это сила истинных чудес. Целые религии рождаются из таких проявлений истинной веры.#!"
+ trait_track_beatific_desc: "#bold Уровень 1:#! Делает [Concept('decision', 'решение')|E] $POD_demon_unearthbound_decision$ бесплатным. Позволяет изгнать призрака/демона в [Glossary('Тёмное королевство','game_concept_dark_kingdom_desc')]/[UmbraGlossaryLocalized('abyss','Бездну')] через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Открывает особую постройку [GetBuilding('sanctified_area_01').GetName]. \n#bold Уровень 2:#! Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел ремесла#!#!, который добавляет [Concept('modifier', 'модификатор')|E] [GetModifier('bless_modifier').GetNameWithTooltip] в зависимости от типа [Concept('artifact', 'артефакта')|E]. Даёт иммунитет к убийству. Даёт иммунитет к делириуму. Вы больше не можете быть одержимы призраком.\n#bold Уровень 3:#! Цели всегда будут принимать требования об обращении.\n#bold Уровень 4:#! Позволяет снять все [Concept('Fetter', 'оковы')|E] у призраков через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Позволяет убить сверхъестественное существо за малое количество благочестия через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Вам больше не нужно влияние, чтобы изгнать духа.\n#bold Уровень 5:#! Позволяет вам снова сделать вампира смертным или достичь Голконды через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Доступны [men_at_arms|El] - [GetMaA('minion_of_the_divine').GetName]. Позволяет тратить силу воли вместо получения ран. Позволяет не умирать от ран.\n#italic Самое сильное орудие в руках верующих - это сила истинных чудес. Целые религии рождаются из таких проявлений истинной веры.#!"
 
  trait_holy_seal: "Святая печать"
  trait_holy_seal_desc: "Реликвии и артефакты божественной силы, жестоко, но умело вживлённые в раны этого несчастного создания, не дают им затянуться."
@@ -892,7 +892,7 @@
  DHARMA_PASSIVE_DAH: "У вас есть модификатор [GetModifier('dah_modifier').GetNameWithTooltip]"
  DHARMA_PASSIVE_WAN_XIAN: "[Glossary('Ван-куэй','game_concept_kuei_jin_desc')] были искуплены"
  DHARMA_PASSIVE_HUN_AND_PO: "У вас есть свойство «[GetTrait('hun_and_po').GetName(GetPlayer)]»"
- DHARMA_PASSIVE_5_HERD: "Есть 5 членов #TOOLTIP:game_concept_POD_herd_desc #E стада#!#!"
+ DHARMA_PASSIVE_5_HERD: "Есть 5 членов [Concept('POD_herd', 'стада')|E]"
  DHARMA_PASSIVE_5_GHOUL: "Есть 5 рабов-#TOOLTIP:game_concept_ghoul_desc #E гулей#!#!"
  DHARMA_PASSIVE_DHARMA9: "У вас есть свойство «[GetTrait('dharma9').GetName(GetPlayer)]»"
  DHARMA_PASSIVE_HARDER: "Из-за [Glossary('Пятой эпохи','game_concept_fifth_age_desc')] продвигаться по дхарме гораздо труднее"
@@ -1137,7 +1137,7 @@
 
  trait_risen: "Восставший"
  trait_risen_desc: "Восставший - термин, используемый для описания призрака, которому удалось вернуться в свое тело, чтобы ходить среди живых в [Glossary('землях Плоти','game_concept_skinlands_desc')]."
- TRAIT_FLAG_DESC_cannot_resolve_fetters: "Нельзя разрешать #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!"
+ TRAIT_FLAG_DESC_cannot_resolve_fetters: "Нельзя разрешать [Concept('Fetter', 'оковы')|E]"
 
  trait_spectre: "Спектр"
  trait_spectre_desc: "Спектры - это призраки, что отдались своей Тени. Когда дух накапливает слишком много темных эмоций, его Тень окончательно берёт верх, и он становится спектром."
@@ -1194,7 +1194,7 @@
  trait_arcanos_keening_desc: "Те, кто владеет искусством Песнопения, могут управлять эмоциями с помощью звука."
 
  trait_arcanos_lifeweb: "Паутина"
- trait_arcanos_lifeweb_desc: "Призраки, знающие Паутину, могут использовать ее для усиления, ослабления или наблюдения за #L #TOOLTIP:game_concept_Fetter_desc #E оков#!#!ами#!."
+ trait_arcanos_lifeweb_desc: "Призраки, знающие Паутину, могут использовать ее для усиления, ослабления или наблюдения за #L [Concept('Fetter', 'оков')|E]ами#!."
 
  trait_arcanos_mnemosynis: "Мнезис"
  trait_arcanos_mnemosynis_desc: "Пользователи Мнезиса могут отслеживать и читать воспоминания других."
@@ -1229,7 +1229,7 @@
  TRAIT_FLAG_DESC_cannot_access_skinlands: "Теряет все возможности доступа в [Glossary('земли Плоти','game_concept_skinlands_desc')]"
  trait_shadow: "Тень"
  trait_shadow_desc: "Тень - это термин, используемый для описания того аспекта личности призрака, который хочет, чтобы тот потерпел неудачу, перестал бороться и поддался [UmbraGlossaryLocalized('oblivion','Забвению')]."
- TRAIT_FLAG_DESC_deteriorating_fetters: "Каждый год уровень случайных #TOOLTIP:game_concept_Fetter_desc #E оков#!#! будет снижаться на #N 1#!"
+ TRAIT_FLAG_DESC_deteriorating_fetters: "Каждый год уровень случайных [Concept('Fetter', 'оков')|E] будет снижаться на #N 1#!"
  trait_pasiphae: "Пасифая"
  trait_pasiphae_desc: "Пасифаи, так называемые Паромщики [UmbraGlossaryLocalized('oblivion','Забвения')] или Путники [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринта')], часто принимаются за генералов Поглощённых Тенью невежественными спустившимися в ад и немногими другими безрассудными призраками, которые отваживаются войти в [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринт')]."
  trait_khaibit: "Хайбит"

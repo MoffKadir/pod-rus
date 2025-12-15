@@ -1,6 +1,6 @@
 ﻿l_russian:
  POD_vampire_masquerade_breach.100.title: "Нарушение Маскарада"
- POD_vampire_masquerade_breach.100.desc: "[mortal.GetTitledFirstName] [Select_CString(mortal.IsFemale, 'увидела', 'увидел' )], как вы нарушили Молчание крови, раскрыв свою вампирскую сущность. #TOOLTIP:game_concept_the_masquerade_desc #E Маскарад#!#! был нарушен. Что с [Select_CString(mortal.IsFemale, 'ней', 'ним' )] делать?"
+ POD_vampire_masquerade_breach.100.desc: "[mortal.GetTitledFirstName] [Select_CString(mortal.IsFemale, 'увидела', 'увидел' )], как вы нарушили Молчание крови, раскрыв свою вампирскую сущность. [Concept('the_masquerade', 'Маскарад')|E] был нарушен. Что с [Select_CString(mortal.IsFemale, 'ней', 'ним' )] делать?"
  POD_vampire_masquerade_breach.100.a: "Заставить [Select_CString(mortal.IsFemale, 'её', 'его' )] забыть."
  POD_vampire_masquerade_breach.100.b: "Пока что не обращать на [Select_CString(mortal.IsFemale, 'неё', 'него' )] внимания."
  POD_vampire_masquerade_breach.100.c: "Купить [Select_CString(mortal.IsFemale, 'её', 'его' )] молчание."
@@ -14,14 +14,14 @@
  POD_vampire_masquerade_breach.100.d.woundedtoastitle: "Ранение"
 
  POD_vampire_masquerade_breach.300.title: "Нарушение Маскарада"
- POD_vampire_masquerade_breach.300.desc: "[mortal.GetTitledFirstName] [Select_CString(mortal.IsFemale, 'видела', 'видел' )], как [vampire_exposes_masquerade.GetTitledFirstName] [Select_CString(vampire_exposes_masquerade.IsFemale, 'нарушила', 'нарушил' )] Молчание крови, раскрыв свою вампирскую сущность. #TOOLTIP:game_concept_the_masquerade_desc #E Маскарад#!#! был нарушен. Как поступить с персонажем [mortal.GetTitledFirstName]?"
+ POD_vampire_masquerade_breach.300.desc: "[mortal.GetTitledFirstName] [Select_CString(mortal.IsFemale, 'видела', 'видел' )], как [vampire_exposes_masquerade.GetTitledFirstName] [Select_CString(vampire_exposes_masquerade.IsFemale, 'нарушила', 'нарушил' )] Молчание крови, раскрыв свою вампирскую сущность. [Concept('the_masquerade', 'Маскарад')|E] был нарушен. Как поступить с персонажем [mortal.GetTitledFirstName]?"
  POD_vampire_masquerade_breach.300.a: "Заставить персонажа [mortal.GetTitledFirstName] забыть."
  POD_vampire_masquerade_breach.300.b: "Пока что не обращать внимания на персонажа [mortal.GetTitledFirstName]."
  POD_vampire_masquerade_breach.300.c: "Купить молчание персонажа [mortal.GetTitledFirstName]."
  POD_vampire_masquerade_breach.300.d: "Убить персонажа [mortal.GetTitledFirstName]."
 
  POD_vampire_masquerade_breach.400.title: "Нарушение Маскарада"
- POD_vampire_masquerade_breach.400.desc: "[vampire_exposes_masquerade.GetTitledFirstName] [Select_CString(vampire_exposes_masquerade.IsFemale, 'нарушила', 'нарушил' )] Молчание крови, раскрыв свою вампирскую сущность. #TOOLTIP:game_concept_the_masquerade_desc #E Маскарад#!#! был нарушен. Что делать с персонажем [vampire_exposes_masquerade.GetFirstName]?"
+ POD_vampire_masquerade_breach.400.desc: "[vampire_exposes_masquerade.GetTitledFirstName] [Select_CString(vampire_exposes_masquerade.IsFemale, 'нарушила', 'нарушил' )] Молчание крови, раскрыв свою вампирскую сущность. [Concept('the_masquerade', 'Маскарад')|E] был нарушен. Что делать с персонажем [vampire_exposes_masquerade.GetFirstName]?"
  POD_vampire_masquerade_breach.400.a: "Простить персонажа [vampire_exposes_masquerade.GetTitledFirstName] за услугу."
  POD_vampire_masquerade_breach.400.b: "Простить персонажа [vampire_exposes_masquerade.GetTitledFirstName]."
  POD_vampire_masquerade_breach.400.c: "Приказать моим слугам арестовать персонажа [vampire_exposes_masquerade.GetTitledFirstName]."
@@ -36,7 +36,7 @@
 
  POD_opinion_breached_masquerade: "Нарушенный Маскарад"
  POD_masquerade_breach: "Нарушение Маскарада"
- POD_masquerade_breach_desc: "Вампир нарушил Молчание крови. #TOOLTIP:game_concept_the_masquerade_desc #E Маскарад#!#! был нарушен."
+ POD_masquerade_breach_desc: "Вампир нарушил Молчание крови. [Concept('the_masquerade', 'Маскарад')|E] был нарушен."
 
  trait_POD_knows_too_much: "Знает слишком много"
  trait_POD_knows_too_much_desc: "Этот смертный стал свидетелем существования сверхъестественного мира и выжил... пока что."

@@ -59,9 +59,9 @@
  POD_wraith_passion_kill_rival_decision_confirm: "Не [Select_CString(TARGET_CHARACTER.IsFemale, 'ждала', 'ждал' )], что я вернусь, а?"
  POD_wraith_passion_kill_rival_decision_condition: "[Select_CString(TARGET_CHARACTER.IsFemale, 'Ваша соперницы', 'Ваш соперник' )], [TARGET_CHARACTER.GetFirstName], [Select_CString(TARGET_CHARACTER.IsFemale, 'должна', 'должен' )] быть [Select_CString(TARGET_CHARACTER.IsFemale, 'мертва', 'мёртв' )]."
 
- POD_wraith_fetter_adquire_fetters_decision: "Получить #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!"
- POD_wraith_fetter_adquire_fetters_decision_desc: "Редко бывает, чтобы призрак развил достаточно глубокую привязанность к новому человеку или вещи в [Glossary('землях Плоти','game_concept_skinlands_desc')], чтобы создать настоящие #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!, но это возможно."
- POD_wraith_fetter_adquire_fetters_decision_tooltip: "Получить новые #TOOLTIP:game_concept_Fetter_desc #E оковы#!#!."
+ POD_wraith_fetter_adquire_fetters_decision: "Получить [Concept('Fetter', 'оковы')|E]"
+ POD_wraith_fetter_adquire_fetters_decision_desc: "Редко бывает, чтобы призрак развил достаточно глубокую привязанность к новому человеку или вещи в [Glossary('землях Плоти','game_concept_skinlands_desc')], чтобы создать настоящие [Concept('Fetter', 'оковы')|E], но это возможно."
+ POD_wraith_fetter_adquire_fetters_decision_tooltip: "Получить новые [Concept('Fetter', 'оковы')|E]."
  POD_wraith_fetter_adquire_fetters_decision_confirm: "Что-то, ради чего стоит существовать?"
 
  POD_wraith_dark_passion_start_a_hostile_scheme_decision: "Темная страсть: Начать враждебные происки"

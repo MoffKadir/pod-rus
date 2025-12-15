@@ -59,7 +59,7 @@
 
  arcanos_lifeweb_focus: "Паутина"
  arcanos_lifeweb_focus_modifier: "[GetFocus('arcanos_lifeweb_focus').GetName]"
- arcanos_lifeweb_focus_desc: "Укрепление, ослабление или слежка за #TOOLTIP:game_concept_Fetter_desc #E оковами#!#!."
+ arcanos_lifeweb_focus_desc: "Укрепление, ослабление или слежка за [Concept('Fetter', 'оковами')|E]."
  arcanos_lifeweb_focus_effect_desc: "Сосредоточившись на Паутине, персонаж получает:"
 
  arcanos_moliate_focus: "Ваяние"
@@ -496,14 +496,14 @@
  walk_the_web_perk_name: "Walk the Web"
  souls_interwoven_perk_name: "Souls Interwoven"
 
- SENSE_STRAND_PERK_EFFECT: "Unlock #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! Mapmode.\n#F A Monitor is always aware of the location of their #TOOLTIP:game_concept_Fetter_desc #E оков#!#!, and can extend their senses to a #TOOLTIP:game_concept_Fetter_desc #E оков#!#!'s immediate vicinity.#!"
- LIFELINE_PERK_EFFECT: "Allow use $POD_manipulate_fetters_interaction$ [character_interaction|E] on [GetTrait('wraith').GetName( GetNullCharacter )] with 75+ opinion.\n#F A Monitor can create a "pseudo-#TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!" between two wraiths that allows them to work together.#!"
- STRAND_CHANNEL_PERK_EFFECT: "Allow interact with your #TOOLTIP:game_concept_Fetter_desc #E оков#!#! from any place in the [Concept('umbra', 'Умбра')|E].\n#F A Monitor can speak through a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!, or use their Arcanoi through a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!.#!"
- SPLICE_STRAND_PERK_EFFECT: "Bonus to $POD_manipulate_fetters_interaction$ [character_interaction|E], allows you allocating free #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! point to already existing #TOOLTIP:game_concept_Fetter_desc #E оков#!#!\nUnlock $POD_manipulate_fetter_interaction$ [character_interaction|E], allow creating a temporary #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!.\n#F A Monitor can create a temporary #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!.#!"
- EARLY_WARNING_PERK_EFFECT: "You will receive a notification when your #TOOLTIP:game_concept_Fetter_desc #E оков#!#! are going to die of natural causes.\n#F A Monitor can place a tag on a mortal that will alert them if the Quick is about to die.#!"
- SEVER_STRAND_PERK_EFFECT: "Bonus to $POD_manipulate_fetters_interaction$ [character_interaction|E], allow decreasing #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! Level as well destroying level 1 #TOOLTIP:game_concept_Fetter_desc #E оков#!#!.\n#F A Monitor can strip a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! from another Wraith.#!"
- WALK_THE_WEB_PERK_EFFECT: "As a [character_interaction|E], allows you to teleport to a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!'s location.\n#F A Monitor can quickly travel to a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!.#!"
- SOULS_INTERWOVEN_PERK_EFFECT: "Unlock $POD_sprout_fetter_seed_character_interaction$ [character_interaction|E] to sprout #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! seed on [GetTrait('mortal').GetName(GetNullCharacter)].\n#F A Monitor can take a willing mortal (or living/undead supernatural) as a #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#!, and in return they can communicate with the Monitor at will, regardless of where either of them is.#!"
+ SENSE_STRAND_PERK_EFFECT: "Unlock [Concept('Fetter', 'Оковы')|E] Mapmode.\n#F A Monitor is always aware of the location of their [Concept('Fetter', 'оков')|E], and can extend their senses to a [Concept('Fetter', 'оков')|E]'s immediate vicinity.#!"
+ LIFELINE_PERK_EFFECT: "Allow use $POD_manipulate_fetters_interaction$ [character_interaction|E] on [GetTrait('wraith').GetName( GetNullCharacter )] with 75+ opinion.\n#F A Monitor can create a "pseudo-[Concept('Fetter', 'Оковы')|E]" between two wraiths that allows them to work together.#!"
+ STRAND_CHANNEL_PERK_EFFECT: "Allow interact with your [Concept('Fetter', 'оков')|E] from any place in the [Concept('umbra', 'Умбра')|E].\n#F A Monitor can speak through a [Concept('Fetter', 'Оковы')|E], or use their Arcanoi through a [Concept('Fetter', 'Оковы')|E].#!"
+ SPLICE_STRAND_PERK_EFFECT: "Bonus to $POD_manipulate_fetters_interaction$ [character_interaction|E], allows you allocating free [Concept('Fetter', 'Оковы')|E] point to already existing [Concept('Fetter', 'оков')|E]\nUnlock $POD_manipulate_fetter_interaction$ [character_interaction|E], allow creating a temporary [Concept('Fetter', 'Оковы')|E].\n#F A Monitor can create a temporary [Concept('Fetter', 'Оковы')|E].#!"
+ EARLY_WARNING_PERK_EFFECT: "You will receive a notification when your [Concept('Fetter', 'оков')|E] are going to die of natural causes.\n#F A Monitor can place a tag on a mortal that will alert them if the Quick is about to die.#!"
+ SEVER_STRAND_PERK_EFFECT: "Bonus to $POD_manipulate_fetters_interaction$ [character_interaction|E], allow decreasing [Concept('Fetter', 'Оковы')|E] Level as well destroying level 1 [Concept('Fetter', 'оков')|E].\n#F A Monitor can strip a [Concept('Fetter', 'Оковы')|E] from another Wraith.#!"
+ WALK_THE_WEB_PERK_EFFECT: "As a [character_interaction|E], allows you to teleport to a [Concept('Fetter', 'Оковы')|E]'s location.\n#F A Monitor can quickly travel to a [Concept('Fetter', 'Оковы')|E].#!"
+ SOULS_INTERWOVEN_PERK_EFFECT: "Unlock $POD_sprout_fetter_seed_character_interaction$ [character_interaction|E] to sprout [Concept('Fetter', 'Оковы')|E] seed on [GetTrait('mortal').GetName(GetNullCharacter)].\n#F A Monitor can take a willing mortal (or living/undead supernatural) as a [Concept('Fetter', 'Оковы')|E], and in return they can communicate with the Monitor at will, regardless of where either of them is.#!"
  
  # Moliate
  moliate_visible: "Moliate"
@@ -651,7 +651,7 @@
  
  SPECTRE_PRESTIGE_PERK_EFFECT: "During Catharsis gain [GetModifier('spectre_prestige_modifier').GetNameWithTooltip].\n#F The Shadow is respected by Specters and they will come to the aid of the wraith during Catharsis.#!"
  DARK_ALLIES_PERK_EFFECT: "During Catharsis gain [GetModifier('dark_allies_modifier').GetNameWithTooltip].\n#F The character's Shadow communicates regularly with specific Specters, and can call on them for assistance.#!"
- TAINTED_RELIC_PERK_EFFECT: "Increase #TOOLTIP:game_concept_static_stress_desc #E Психическое напряжение#!#! cost of retaining #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! in Catharsis.\n#F The Shadow has an important relic that manifests when it is in control: a weapon or some other useful item.#!"
+ TAINTED_RELIC_PERK_EFFECT: "Increase #TOOLTIP:game_concept_static_stress_desc #E Психическое напряжение#!#! cost of retaining [Concept('Fetter', 'Оковы')|E] in Catharsis.\n#F The Shadow has an important relic that manifests when it is in control: a weapon or some other useful item.#!"
  INFAMY_PERK_EFFECT: "During Catharsis gain [GetModifier('infamy_modifier').GetNameWithTooltip].\n#F Memoriam for the Shadow, Infamy is the measure of how much fear and loathing the wraith still inspires in the living.#!"
  DEATHS_SIGIL_PERK_EFFECT: "Every 5 years, 25% chance to get [GetModifier('deaths_sigil_modifier').GetNameWithTooltip].\n#F Death's Sigil is a prominent sign of [UmbraGlossary('oblivion')]’s touch on the character that manifests no matter where she goes.#!"
  SHADOW_TRAITS_PERK_EFFECT: "Decrease success chance of regaining control over your Shadow.\n#F The Shadow can purchase Ability, but these extra Ability are only available during Catharsis.#!"
@@ -847,7 +847,7 @@
  LURID_VISIONS_PERK_EFFECT: "#F A Spectre can create brief, violent visions in the target they are Skinriding.#!"
  UNBIDDEN_HANDS_PERK_EFFECT: "#F A Spectre may force a body to perform an action while the target is distracted.#!"
  URGES_PERK_EFFECT: "#F This allows a Spectre to overcome a target's Willpower and force them into an action.#!"
- FETTER_RAPE_PERK_EFFECT: "Allow converting a [GetTrait('wraith').GetName( GetNullCharacter )] to a [GetTrait('risen').GetName( GetPlayer )].\n#F A Spectre may corrupt the fragments of soul remaining in a dead #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! to briefly turn them into a [GetTrait('risen').GetName( GetPlayer )].#!"
+ FETTER_RAPE_PERK_EFFECT: "Allow converting a [GetTrait('wraith').GetName( GetNullCharacter )] to a [GetTrait('risen').GetName( GetPlayer )].\n#F A Spectre may corrupt the fragments of soul remaining in a dead [Concept('Fetter', 'Оковы')|E] to briefly turn them into a [GetTrait('risen').GetName( GetPlayer )].#!"
  BLISSFUL_UNITY_PERK_EFFECT: "#F The Spectre becomes the dominant entity in a soul without obliterating it.#!"
  
  # False Life
@@ -1002,8 +1002,8 @@
  the_coincidental_gathering_perk_name: "The Coincidental Gathering"
  
  FORTUITOUS_WANDERING_PERK_EFFECT: "Every passion pulse, have 10% to fire again.\n#F A Risen can discover hints to guide them to one of their Passions.#!"
- FLASHBACK_PERK_EFFECT: "#F A Risen may conjure an image of something important that happened near or with one of their #TOOLTIP:game_concept_Fetter_desc #E оков#!#!.#!"
- THE_FACE_IN_THE_CROWD_PERK_EFFECT: "Improve [GetPerk('fortuitous_wandering_perk').GetName(GetPlayer)] [perk|E] changing chance of fireing again from 10% to 20%\n#F A Risen can tell if a person is connected to one of their Passions or #TOOLTIP:game_concept_Fetter_desc #E оков#!#!.#!"
+ FLASHBACK_PERK_EFFECT: "#F A Risen may conjure an image of something important that happened near or with one of their [Concept('Fetter', 'оков')|E].#!"
+ THE_FACE_IN_THE_CROWD_PERK_EFFECT: "Improve [GetPerk('fortuitous_wandering_perk').GetName(GetPlayer)] [perk|E] changing chance of fireing again from 10% to 20%\n#F A Risen can tell if a person is connected to one of their Passions or [Concept('Fetter', 'оков')|E].#!"
  FORTUITOUS_MEETING_PERK_EFFECT: "Invite to [court|E] Acceptance: #P +20#!\n#F A Risen may twist Fate to allow them to meet someone they want to talk to or visit with.#!"
  THE_COINCIDENTAL_GATHERING_PERK_EFFECT: "Invite to [court|E] Acceptance: #P +40#!\n#F A Risen can pull several people together in a "coincidental" meeting.#!"
  
@@ -1044,7 +1044,7 @@
  ENGAGEMENT_PERK_EFFECT: "#F A Baka's mind can be manipulated through subtle suggestion.#!"
  RENFORCER_LES_CHAVEAUX_PERK_EFFECT: "#F A Serviteur may temporarily grant a mortal any Arcanoi they have that affect the [Glossary('земли Плоти','game_concept_skinlands_desc')], as well as Potence, Celerity or Fortitude.#!"
  RELER_MYSTERE_PERK_EFFECT: "#F A Loa can access the vast information network guarded by Les Mysteres.#!"
- RETIRER_DEN_BAS_DE_LEAU_PERK_EFFECT: "#F A Serviteur can create a new permanent #TOOLTIP:game_concept_Fetter_desc #E Оковы#!#! in conjunction with a mortal houngan.#!"
+ RETIRER_DEN_BAS_DE_LEAU_PERK_EFFECT: "#F A Serviteur can create a new permanent [Concept('Fetter', 'Оковы')|E] in conjunction with a mortal houngan.#!"
  MARRER_BAKA_PERK_EFFECT: "Won't lose the binding of a bound [GetTrait('wraith').GetName( GetNullCharacter )] when they become [GetTrait('spectre').GetName( GetNullCharacter )].\n#F A Serviteur may capture and control a Baka through will alone.#!"
  BONTE_ABYSSALE_PERK_EFFECT: "Gain access to a random echo of an historical artifact every #V 3#! years.\n#F A Serviteur forms a pact with Les Mysteres allowing them to summon a Relic or Artifact from the Island Below the Sea.#!"
 
