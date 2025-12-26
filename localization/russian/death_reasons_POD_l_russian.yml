@@ -95,5 +95,5 @@
  death_unmade: "[Select_CString(CHARACTER.IsFemale, 'была устранена', 'был устранён' )]"
  death_unmade_killer: "[Select_CString(CHARACTER.IsFemale, 'была устранена', 'был устранён' )] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажем ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'им персонажем', '' )]"
  death_self_mutilation: "[Select_CString(CHARACTER.IsFemale, 'умерла', 'умер' )] из-за членовредительства"
- death_duel_aggravated: "was slain in a duel"
- death_duel_aggravated_killer: "was slain in a duel by [TARGET_CHARACTER.GetUIName]"
+ death_duel_aggravated: "[Select_CString(CHARACTER.IsFemale, 'была убита', 'был убит' )] в поединке"
+ death_duel_aggravated_killer: "[Select_CString(CHARACTER.IsFemale, 'была убита', 'был убит' )] в поединке [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажем ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'им персонажем', '' )]"
