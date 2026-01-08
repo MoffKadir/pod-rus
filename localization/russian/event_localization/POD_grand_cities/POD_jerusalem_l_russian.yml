@@ -1,16 +1,16 @@
 ﻿l_russian:
- supehunter_purify_jerusalem_pit_decision: "Очистить Пропасть в Кетеф-Хинном"
- supehunter_purify_jerusalem_pit_decision_desc: "Недалеко от святого города Иерусалима, под руинами Кетеф-Хинном, находится глубокая пропасть. Все, кто подходит слишком близко — и люди, и созданные сверхъестественным образом, — впадают в безумие, а даже те, кто дальше, кажутся охваченными неким видимым исступлением. Такое мерзкое извращение нельзя терпеть так близко к Иерусалиму. Значит, на нас лежит долг очистить эту Пропасть.\n\n#R Ваши шансы на успех в этом походе нелепо малы, особенно если вы смертный. Не пытайтесь, если вам дорога жизнь персонажа. Даже сохранение и перезагрузка ради изменения шансов вас не спасут.\n\nТак что молитесь своим богам и помните: добродетельный преуспеет там, где грешник падёт. ВАС ПРЕДУПРЕДИЛИ!#!"
- supehunter_purify_jerusalem_pit_decision_confirm: "Пропасть должна быть очищена!"
+ supehunter_purify_jerusalem_pit_decision: "Очистить яму в Кетеф-Хинном"
+ supehunter_purify_jerusalem_pit_decision_desc: "Недалеко от святого города Иерусалима, под руинами Кетеф-Хинном, находится глубокая яма. Все, кто подходит слишком близко — и люди, и созданные сверхъестественным образом, — впадают в безумие, а даже те, кто дальше, кажутся охваченными неким видимым исступлением. Такое мерзкое извращение нельзя терпеть так близко к Иерусалиму. Значит, на нас лежит долг очистить эту яму.\n\n#R Ваши шансы на успех в этом походе нелепо малы, особенно если вы [Select_CString(ROOT.Char.IsFemale, 'смертная', 'смертный' )]. Не пытайтесь, если вам дорога жизнь персонажа. Даже сохранение и перезагрузка ради изменения шансов вас не спасут.\n\nТак что молитесь своим богам и помните: добродетельный преуспеет там, где грешник падёт. ВАС ПРЕДУПРЕДИЛИ!#!"
+ supehunter_purify_jerusalem_pit_decision_confirm: "Яма должна быть очищена!"
  supehunter_purify_jerusalem_pit_decision_tooltip: "Мы не потерпим такое зло у стен Святого города!"
- 
- POD_jerusalem.1.t: "Охота: подготовка"
+
+ POD_jerusalem.1.t: "Охота: Подготовка"
  POD_jerusalem.1.desc: "Мы знаем, куда в итоге должны отправиться, но сперва нужно подготовиться. Если мы хотим пережить эту охоту, нужно получить каждое возможное преимущество.\n\nУ нас много союзников и собственных воинов, но может быть полезно собрать и дополнительную помощь. Из-за священного статуса Иерусалима вокруг него можно найти множество охотников разных вероисповеданий. Если захотим, мы можем собрать всех или же призвать только единоверцев."
  POD_jerusalem.1.a: "Нам нужна вся возможная помощь." #cost prestige and piety
  POD_jerusalem.1.b: "Доверять можно только единоверцам." #cost prestige
  POD_jerusalem.1.c: "Не будем привлекать посторонних." #no cost
 
- POD_jerusalem.2.t: "Охота: знание — сила"
+ POD_jerusalem.2.t: "Охота: Знание — сила"
  POD_jerusalem.2.desc: "Как давно уже говорят, знание — сила. Понимание того, что нас ждёт, когда мы спустимся в пропасть, очень поможет в охоте.\n\nУ нас нет нужных книг и артефактов, чтобы ответить на все вопросы. Значит, нужно отыскать библиотеку, где есть всё необходимое."
  POD_jerusalem.2.a: "Объявить награду за сведения." #gold
  POD_jerusalem.2.b: "Вспомнить о должниках." #prestige
@@ -18,8 +18,8 @@
  POD_jerusalem.2.effect.success.desc: "Вот куда оно делось…"
  POD_jerusalem.2.critical.failure.effect.desc: "Где там этот помощник…"
 
- POD_jerusalem.3.t: "Охота: запертые двери"
- POD_jerusalem.3.desc: "Мы нашли библиотеку [Glossary('Каинитов','game_concept_cainite_desc')] с нужными нам знаниями. Однако её двери заперты, а защиту усилили неестественными средствами, дарованными их злом. Мы не можем бросить поиски сейчас, так что остаётся лишь решить, как добыть требуемые тексты."
+ POD_jerusalem.3.t: "Охота: Запертые двери"
+ POD_jerusalem.3.desc: "Мы нашли [Glossary('каинитскую','game_concept_cainite_desc')] библиотеку с нужными нам знаниями. Однако её двери заперты, а защиту усилили неестественными средствами, дарованными их злом. Мы не можем бросить поиски сейчас, так что остаётся лишь решить, как добыть требуемые тексты."
  POD_jerusalem.3.a: "Взять ворота штурмом!" #martial challenge or death, boost chances if Organizer or Military Engineer
  POD_jerusalem.3.a.effect.success.desc: "Ни одни ворота нас не остановят"
  POD_jerusalem.3.b: "Через чёрный ход!" #intrigue challenge or gold
@@ -27,276 +27,274 @@
  POD_jerusalem.3.critical.failure: "Так и закончились наши поиски…"
  POD_jerusalem.3.critical.failure.effect.desc: "Нашей веры не хватило"
 
- POD_jerusalem.4.t: "Охота: доступ получен"
- POD_jerusalem.4.desc: "Так или иначе, мы заполучили нужные книги.\n\nНаши изыскания рассказывают о [Glossary('Каините','game_concept_cainite_desc')] по имени [GetScriptedCharacterByHistoryID('790147').GetFirstName].[GetScriptedCharacterByHistoryID('790368').GetFirstName|E] заключил её в [Glossary('Объятия','game_concept_Embrace_desc')], это случилось в глубинах лабиринта Кносса. Говорят, что после падения [GetScriptedCharacterByHistoryID('790368').GetFirstName] во время Второй баалийской войны сам Намтару оставил на её душе отпечаток, который питался её ненавистью к баали, предавшим её [Glossary('Сира','game_concept_Sire_desc')].\nСпустя долгое время она ненадолго появилась в Карфагене, чтобы связать Троиле и Молоха, а затем «засолить» землю. По слухам, она вернулась в руины Кносса, но мы нашли свидетельства, что она пришла в Иерусалим и может быть тем самым чудовищем в пропасти.\n\nОднако в её истории есть странности. Одни говорят, что она была малкавианкой и возглавляла культ. Другие делают упор на её [Glossary('Объятиях','game_concept_Embrace_desc')] подаренных [GetScriptedCharacterByHistoryID('790217').GetFirstName], матери Александра Великого, или [GetScriptedCharacterByHistoryID('791970').GetFirstName], автора [GetGlobalVariable('dreams_angra_link').Artifact.GetName], хотя эти строки иногда приписывают и другим."
- POD_jerusalem.4.a: "Пусть это будут всего лишь слухи. Начинаем охоту." #skip POD_jerusalem.5 to 6
+ POD_jerusalem.4.t: "Охота: Доступ получен"
+ POD_jerusalem.4.desc: "Так или иначе, мы заполучили нужные книги.\n\nНаши изыскания рассказывают о [Glossary('каинитке','game_concept_cainite_desc')] по имени [GetScriptedCharacterByHistoryID('790147').GetFirstName]. [GetScriptedCharacterByHistoryID('790368').GetFirstName] даровал ей [Glossary('объятия','game_concept_Embrace_desc')], это случилось в глубинах Кносского лабиринта. Говорят, что после падения #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('790368').GetID] #L Нергала#!#! во время Второй войны Баали сам Намтару оставил на её душе отпечаток, который питался её ненавистью к Баали, предавшим её [Glossary('сира','game_concept_Sire_desc')].\nСпустя долгое время она ненадолго появилась в Карфагене, чтобы связать Троиль и Молоха, а затем «засолить» землю. По слухам, она вернулась в руины Кносса, но мы нашли свидетельства, что она пришла в Иерусалим и может быть тем самым чудовищем в яме.\n\nОднако в её истории есть странности. Одни говорят, что она была малкавианкой и возглавляла культ. Другие делают упор на [Glossary('объятиях','game_concept_Embrace_desc')] дарованных ей #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('790217').GetID] #L Петаникве#!#!, матери Александра Великого, или [GetScriptedCharacterByHistoryID('791970').GetFirstName], создавшему [GetGlobalVariable('dreams_angra_link').Artifact.GetName], хотя эти связи иногда приписывают и другим."
+ POD_jerusalem.4.a: "Это всего лишь слухи. Приступим к охоте." #skip POD_jerusalem.5 to 6
  POD_jerusalem.4.b: "У этой истории есть продолжение." #trigger POD_jerusalem.5 if javaniel stuff
 
- POD_jerusalem.5.t: "The Hunt: The Full Story"
- POD_jerusalem.5.desc: "After much work, we have combined [GetScriptedCharacterByHistoryID('790147').GetFirstName]'s story with certain artifacts in our possessions.\n\nIt would seem the [Glossary('Antediluvian','game_concept_antediluvian_desc')] Malakai has been stricken from most Cainite records. However, we have pieced together some of what happened. Like her brother Set, Malakai sought to be a god among men. Like her brother Malkav, Malakai was plagued by visions of the future, haunted by the image of Caine empowered by God Himself to judge the Cursed Ones.\n\nIt was close to this moment that Saulot created a [Glossary('Клан','game_concept_Clan_desc')] capable of raising him to godhood first, of granting command over the next turn of the Wheel, and of resisting Caine's coming judgement. In one attempt, he killed hundreds in a fell swoop, using it to call a "Child of the Outer Dark" (a powerful demon?). When the sacrifice was done, the first of what would become known as the Baali crawled from the pit. Was it the pit we are currently investigating? This is hard to say, as some texts point it to a location named Chorazin instead.\n\nA great many events followed this with Saulot allowing Tremere to diablerize him to create yet another [Glossary('Клан','game_concept_Clan_desc')] in service of his ultimate goal, Malkav (apparently) allowing his childer to diablerize him after a near-fatal encounter with another [Glossary('Antediluvian','game_concept_antediluvian_desc')] and now using all of his descendants through shards of himself embedded in them to further his own quest for ascension or enlightenment, and Malakai herself falling into [Glossary('Торпор','game_concept_torpor_desc')] beneath the ruins of Ketef Hinnom.\nAnother version thinks that it's Malkav that is here instead, or at least the bloody remains of his long gone corporeal form.\n\nWhether they come from Malkav or Malakai, these powerful entities' dreams are clearly still affecting the surrounding region, driving those teetering on the brink of anything from madness to murder into overwhelming fits of mania and bloodlust."
- POD_jerusalem.5.a: "Let's pray we only feel their Dreams and not their hands."  #TODO: may be too long
+ POD_jerusalem.5.t: "Охота: Полная история"
+ POD_jerusalem.5.desc: "После долгой работы мы связали историю #TOOLTIP:CHARACTER,[GetScriptedCharacterByHistoryID('790147').GetID] #L Кибелы#!#! с некоторыми артефактами, находящимися в нашем распоряжении.\n\nПохоже, [Glossary('допотопная','game_concept_antediluvian_desc')] Малакай была вычеркнута из большинства каинитских записей. Тем не менее, мы собрали воедино кое-что из того, что произошло. Как и её брат Сет, Малакай стремилась стать богиней среди людей. Как и её брата Малкава, Малакай преследовали видения будущего, в которых её преследовал образ Каина, судящего Проклятых по воле самого Бога.\n\nИменно в этот момент Саулот создал [Glossary('клан','game_concept_Clan_desc')], способный возвысить его до божественности, подчинив ему следующий поворот Колеса, и противостоять грядущему суду Каина. В ходе одной попытки он убил сотни людей одним махом, используя это, чтобы призвать «Дитя Внешней тьмы» (могущественного демона?). Когда жертвоприношение было совершено, из ямы выполз первый из тех, кто впоследствии стали известны как Баали. Была ли это та яма, которую мы сейчас исследуем? Трудно сказать, поскольку в некоторых текстах указано место под названием Хоразин.\n\nЗа этим последовало множество событий: Саулот позволил Тремеру диаблеризировать себя, чтобы создать ещё один [Glossary('клан','game_concept_Clan_desc')] для достижения своей конечной цели, Малкав (по-видимому) позволил своему дитя диаблеризовать себя после почти фатальной встречи с другим [Glossary('допотопным','game_concept_antediluvian_desc')] и теперь использует всех своих потомков через вложенные в них осколки самого себя, чтобы продолжить свой собственный поиск вознесения или просветления, а сама Малакай впала в [Glossary('торпор','game_concept_torpor_desc')] под руинами Кетеф Хинном.\nДругая версия гласит, что вместо неё здесь находится Малкав или, по крайней мере, кровавые останки его давно исчезнувшей телесной формы.\n\nНезависимо от того, исходят ли они от Малкава или Малакай, сны этих могущественных существ, несомненно, по-прежнему влияют на окружающий регион, доводя тех, кто балансирует на грани чего угодно - от безумия до убийства, - до непреодолимых приступов мании и жажды крови."
+ POD_jerusalem.5.a: "Помолимся, чтобы мы чувствовали только их сны, а не их руки."  #TODO: may be too long
 
- POD_jerusalem.6.t: "The Hunt: The Great Delve"
- POD_jerusalem.6.desc: "After all of our preparations, we now stand assembled outside the ruins of Ketef Hinnom. All that remains is to push forward and delve into this great pit of evil. But, should we turn back? Is this quest beyond our abilities? Could we do more good by staying alive and continuing our normal efforts?"
- POD_jerusalem.6.a: "May our faith see us through."
- POD_jerusalem.6.b: "This was folly from the start." #terminates the hunt here & now, allowing you to restart later; remove supehunter_purify_jerusalem_pit_begun flag
+ POD_jerusalem.6.t: "Охота: Великие глубины"
+ POD_jerusalem.6.desc: "После всех наших приготовлений мы собрались у руин Кетеф-Хиннома. Всё, что нам остаётся, - это двигаться вперёд и проникнуть в это великое логово зла. Не стоит ли нам повернуть назад? Неужели это задание нам не по силам? Могли бы мы принести больше пользы, оставаясь в живых и продолжая наши обычные усилия?"
+ POD_jerusalem.6.a: "Пусть наша вера поведёт нас."
+ POD_jerusalem.6.b: "Это было безумием с самого начала." #terminates the hunt here & now, allowing you to restart later; remove supehunter_purify_jerusalem_pit_begun flag
 
- POD_jerusalem.7.t: "The Hunt: The Great Maw"
- POD_jerusalem.7.desc: "The mere act of reaching the pit's entrance is a great test of our skills. The catacombs in which it rests are a labyrinth stretching across the valley and even under the Holy City. Worse, simply gazing upon the pit's maw sears the flesh and spirit of our brethren. Their tears and wails echo in our minds while their half-alive bodies writhe in agony on the ground.\n\nOur minds are overwhelmed with images of a horrifying future. Countless men and women prostrate themselves before great golden statues. Inverted pyramids made of iron and black stone plunge into the depths of the Earth. Gaudily displayed within them are sacrificial altars where weeping captives are slowly sliced to death over agonizing weeks with serrated knives of obsidian.\n\nFactories made of mutilated flesh and metal powered by brimstone forges churn out endless weapons to fuel the machinations of the pit's denizen. We see ourselves, twisted and branded by evil, leading the armies of the Damned."
- POD_jerusalem.7.a: "We ...must... push... through."  #diplomacy check, boost chances if True Faith/Beatific or Pilgrim exp. or Zealous, lowers chance if Cynical or Lunatic/Possessed
- POD_jerusalem.7.effect.success.desc: "Our will is indomitable"
- POD_jerusalem.7.critical.failure.effect.desc: "Our flesh and minds are torn asunder"
- POD_jerusalem.7.critical.failure: "Lost to the pain"
+ POD_jerusalem.7.t: "Охота: Великая пасть"
+ POD_jerusalem.7.desc: "Сам факт того, что мы добираемся до входа в яму, является серьёзным испытанием наших навыков. Катакомбы, в которых она находится, представляют собой лабиринт, простирающийся по всей долине и даже под Святым городом. Хуже того, простой взгляд на пасть ямы иссушает плоть и дух наших собратьев. Их слёзы и вопли эхом отдаются в наших головах, в то время как их полуживые тела корчатся в агонии на земле.\n\nНаши умы переполнены картинами ужасающего будущего. Бесчисленное множество мужчин и женщин падают ниц перед огромными золотыми статуями. Перевёрнутые пирамиды из железа и чёрного камня уходят в глубины Земли. Внутри них красочно выставлены жертвенные алтари, на которых плачущих пленников в течение мучительных недель медленно режут зазубренными ножами из обсидиана.\n\nФабрики из искалеченной плоти и металла, работающие на серных кузницах, производят бесконечное количество оружия, чтобы подпитывать козни обитателей преисподней. Мы видим себя, искалеченных и заклеймённых злом, возглавляющими армии Проклятых."
+ POD_jerusalem.7.a: "Мы... должны... прорваться... до конца."  #diplomacy check, boost chances if True Faith/Beatific or Pilgrim exp. or Zealous, lowers chance if Cynical or Lunatic/Possessed
+ POD_jerusalem.7.effect.success.desc: "Наша воля несокрушима"
+ POD_jerusalem.7.critical.failure.effect.desc: "Наша плоть и разум растерзаны"
+ POD_jerusalem.7.critical.failure: "Невыносимая боль"
 
- POD_jerusalem.8.t: "The Hunt: The Waiting Room"
- POD_jerusalem.8.desc: "As we advance down the stairs and lose sight of the surface, we are immediately beset by maddening visions which promise everything from glory to knowledge to immortality. Eventually, the stairs open up into a maze-like network of caves which loop and twist and turn in a manner that our best cartographers can barely map. Endless pathways and rooms filled with furniture that shifts every time you return to the room. Is it the same room? When we walk in a straight line, we somehow arrive back at a point where we marked the wall.\n\nBut, we didn't mark a wall with moss on it, did we?  When we turn a corner, we are in a corridor that shares the space of another corridor and yet goes in a different direction or have we always being going in this direction?\n\nThe visions will not cease, and we are unaided by the local denizens who wander listlessly, forever searching for the path further downward where they may receive their promised rewards. We cannot remain here for much longer, or we will be rendered like them, wasting the sacrifices already made."
- POD_jerusalem.8.a: "Should we take a left or a right?"  #stewardship check, boost chances if Traveler exp., boost chances if True Faith/Beatific
- POD_jerusalem.8.effect.success.desc: "No Labyrinth can stop us"
- POD_jerusalem.8.critical.failure.effect.desc: "Furniture fractals, the carpet cascades"  #nod to youtu.be/n6gGE9kxe1M
- POD_jerusalem.8.critical.failure: "Warped into infinite pathways"
+ POD_jerusalem.8.t: "Охота: Зал ожидания"
+ POD_jerusalem.8.desc: "Когда мы спускаемся по лестнице и теряем из виду поверхность, нас сразу же посещают сводящие с ума видения, которые обещают всё - от славы до знаний и бессмертия. В конце концов, лестница ведёт в лабиринтоподобную сеть пещер, которые петляют, извиваются и изгибаются так, что даже наши лучшие картографы с трудом могут составить карту. Бесконечные проходы и комнаты, заставленные мебелью, которая сдвигается каждый раз, когда вы возвращаетесь в комнату. Это одна и та же комната? Когда мы идём по прямой, мы каким-то образом возвращаемся к тому месту, где отметили стену.\n\nНо мы же не помечали стену мхом, не так ли? Когда мы поворачиваем за угол, мы оказываемся в коридоре, который разделяет пространство другого коридора, но ведет в другом направлении, или мы всегда шли в этом направлении?\n\nВидения не прекращаются, и нам не помогают местные обитатели, которые вяло блуждают, вечно ища путь дальше вниз, где они могут получить обещанные награды. Мы не можем оставаться здесь надолго, иначе станем такими же, как они, и впустую потратим уже принесённые жертвы."
+ POD_jerusalem.8.a: "Куда нам направиться - налево или направо?"  #stewardship check, boost chances if Traveler exp., boost chances if True Faith/Beatific
+ POD_jerusalem.8.effect.success.desc: "Никакой лабиринт нас не остановит"
+ POD_jerusalem.8.critical.failure.effect.desc: "Мебельные фракталы, ковровые каскады"  #nod to youtu.be/n6gGE9kxe1M
+ POD_jerusalem.8.critical.failure: "Затянуты в бесконечные пути"
 
- POD_jerusalem.9.t: "The Hunt: Endless Storms"
- POD_jerusalem.9.desc: "As we descend the stairs on to the next layer, the visions and promises shift towards tempting us with our most carnal and lustful desires. These visions are so distracting that when we first step foot on the floor, we are nearby swept away by the powerful winds and storms that ravage the area. We cannot be beaten by mere gales. We cannot join the ranks of these restless, eternally-buffeted souls."
- POD_jerusalem.9.a: "Stand strong before the storm."  #Prowess check, lowers chance if Lustful, boost chances if Chaste, boost chances if True Faith/Beatific
- POD_jerusalem.9.effect.success.desc: "No mere breeze can stop the holy"
- POD_jerusalem.9.critical.failure.effect.desc: "We're not in Jerusalem any more, Tutyahu"
- POD_jerusalem.9.critical.failure: "Beyond the Rainbow"
+ POD_jerusalem.9.t: "Охота: Нескончаемые бури"
+ POD_jerusalem.9.desc: "По мере того, как мы спускаемся по лестнице на следующий уровень, видения и обещания начинают искушать нас нашими самыми плотскими и похотливыми желаниями. Эти видения настолько сбивают с толку, что, когда мы впервые ступаем на пол, нас тут же уносит прочь мощными ветрами и бурями, которые опустошают местность. Нас не одолеют простые бури. Мы не можем присоединиться к рядам этих беспокойных, вечно страдающих душ."
+ POD_jerusalem.9.a: "Стойко противостоять буре."  #Prowess check, lowers chance if Lustful, boost chances if Chaste, boost chances if True Faith/Beatific
+ POD_jerusalem.9.effect.success.desc: "Лёгкий ветерок не помеха святости"
+ POD_jerusalem.9.critical.failure.effect.desc: "Мы больше не в Иерусалиме, Тутьяху"
+ POD_jerusalem.9.critical.failure: "За пределами радуги"
 
- POD_jerusalem.10.t: "The Hunt: Heart of Ice"
- POD_jerusalem.10.desc: "Once more, the stairs lead further into the Earth. Once more, the visions shift. A foul rain ceaselessly falls, soaking everything with its icy slush. As we traverse this new disc, lost souls wallow like blind and deaf maggots, wriggling in a putrid slime that covers every surface. They cry out for a great many things from food to drink, from drugs to pleasure, for all things that addict the souls of man.\n\nBefore the door to the next level sits a voracious beast, that resembles both a rabid wolf and the great wyrms of myth. If we are to continue, we must trick that which can't be defeated in battle."
- POD_jerusalem.10.a: "Perhaps we can exploit its appetite."  #Intrigue check, lowers chance if Eager Reveler exp. or Gluttonous, boost chances if Temperate, boost chances if True Faith/Beatific
- POD_jerusalem.10.effect.success.desc: "A mud-filled mouth can't eat us"
- POD_jerusalem.10.critical.failure.effect.desc: "My, what large teeth you have"
- POD_jerusalem.10.critical.failure: "A Dog's Bite and A Worm's Gulp"
- 
- POD_jerusalem.11.t: "The Hunt: The Great Climb"
- POD_jerusalem.11.desc: "As we exit the stairs, we realize that to advance will require a different tack. Rather than walking down towards the center, we have emerged in the center and must climb to the stairs embedded in the side walls. Both the avaricious and the miserly, the hoarder and the prodigal forever push great sacks of coins up these steep cliffs. Pushing against them is an oncoming flood of molten gold, forever flowing down the sides in endless rivers of beautiful death.\n\nIt would be so easy to be swept away by this layer's visions and landscape; we'd just need to slow the pace a little."
- POD_jerusalem.11.a: "March forward and don't look back."  #stewardship check, lowers chance if Greedy or Callous or Avaricious, boost chances if Generous or Compassionate or Improvident, boost chances if True Faith/Beatific
- POD_jerusalem.11.effect.success.desc: "Finally, the stairs!"
- POD_jerusalem.11.critical.failure.effect.desc: "All that glitters is molten gold, melting your flesh"
- POD_jerusalem.11.critical.failure: "Midas-touched"
- 
- POD_jerusalem.12.t: "The Hunt: The Damned City"
- POD_jerusalem.12.desc: "Upon leaving the staircase, we encounter a great swamp and a river which leads deeper. On the outskirts, we see some wretched beings clawing at each other like wild beasts as they tread water while others below the waves stare at us with great hatred in their eyes.\n\nFollowing the river, we see a black city whose walls stretch far into the sky. Hundreds of moaning forms cry out from the upside-down crosses that ring the city. Plumes of smoke issue forth from hidden forges, and twisted imitations of our holy places stare down at us mockingly. All reminds us of our visions when we stood before the pit's maw.\n\nThis is our first time encountering intelligent and cognizant beings in this forsaken pit, and they bar our way towards the stairs going further down, saying we are not sufficiently devoted to their dark god. If we want to advance without joining that which we despise, we will need to fight our way through without giving into the dark impulses this place draws forth."
- POD_jerusalem.12.a: "Strike fast and push for the stairs."  #martial check, lowers chance if Wrathful or Impatient or Aggressive Attacker or Reckless, boost chances if Patient or Calm or Holy Warrior or Cautious Leader or Blademaster exp, boost chances if True Faith/Beatific
- POD_jerusalem.12.effect.success.desc: "Nothing stops the faithful"
- POD_jerusalem.12.critical.failure.effect.desc: "There's murder holes?!"
- POD_jerusalem.12.critical.failure: "All fall before the Dark Gates"
- POD_jerusalem.12.b: "We're here to pledge ourselves to your Dark God!"
+ POD_jerusalem.10.t: "Охота: Ледяное сердце"
+ POD_jerusalem.10.desc: "И снова лестница уводит вглубь Земли. И снова видения меняются. Безостановочно льёт мерзкий дождь, заливая всё вокруг ледяной слякотью. Пока мы путешествуем по этому новому диску, потерянные души барахтаются, как слепые и глухие личинки, извиваясь в гнилостной слизи, покрывающей все поверхности. Они взывают о множестве вещей - от еды до питья, от наркотиков до удовольствий, обо всем, что отравляет души людей.\n\nПеред дверью на следующий уровень сидит прожорливый зверь, похожий одновременно и на бешеного волка, и на великого мифического змея. Если мы хотим продолжить, то должны обмануть то, что невозможно победить в бою."
+ POD_jerusalem.10.a: "Возможно, нам удастся воспользоваться его аппетитом."  #Intrigue check, lowers chance if Eager Reveler exp. or Gluttonous, boost chances if Temperate, boost chances if True Faith/Beatific
+ POD_jerusalem.10.effect.success.desc: "Набитый грязью рот не сможет нас съесть"
+ POD_jerusalem.10.critical.failure.effect.desc: "Боже, какие у тебя большие зубы"
+ POD_jerusalem.10.critical.failure: "Укус собаки и пожирание червя"
 
- POD_jerusalem.13.t: "The Hunt: Lake of Fire"
- POD_jerusalem.13.desc: "Upon the oil-choked and sulfer-smelling shores of this great Lake of Fire, there are pilgrims meditating and chanting, joined by demons that have been bound by the pit's master. In their abominable temples, they commit unspeakable acts and seek visions of the future so that they may know their master's will.\n\nA few revel in the pain as they allow the lake's fire to consume them. Should they survive through strength of will and brutal devotion, these so-called Baptized come forth as blackened skeletons whose eyes reflect the flames they endured. They possess strength greater than any but the strongest Cainite and serve as their new master's priests.\n\nThankfully, the newly-Baptized care only about returning to the city above us. With some stealth and some divine blessing, we may be able to sneak our way through to the stairs without the fire burning us."
- POD_jerusalem.13.a: "Slip behind that rock!"  #Intrigue check, lowers chance if Cynical, boost chances if Zealous or Holy Warrior or Theologian, boost chances if True Faith/Beatific
- POD_jerusalem.13.effect.success.desc: "Nobody expects the Shadow Inquisition... or us"
- POD_jerusalem.13.critical.failure.effect.desc: "They force us back into the Lake of Fire until none remain"
- POD_jerusalem.13.critical.failure: "Ambush and Brimstone"
+ POD_jerusalem.11.t: "Охота: Великое восхождение"
+ POD_jerusalem.11.desc: "Спускаясь по лестнице, мы понимаем, что для продвижения вперед потребуется другая тактика. Вместо того, чтобы спускаться к центру, мы оказались в центре и должны подняться по лестнице, встроенной в боковые стены. И алчные, и скупердяи, и скопидомы, и расточительные вечно тащат огромные мешки с монетами вверх по этим крутым утесам. На них надвигается поток расплавленного золота, вечно стекающий по склонам бесконечными реками прекрасной смерти.\n\nБыло бы так легко увлечься видениями и ландшафтом этого слоя; нам просто нужно было бы немного замедлить темп."
+ POD_jerusalem.11.a: "Вперёд, и не оглядывайтесь."  #stewardship check, lowers chance if Greedy or Callous or Avaricious, boost chances if Generous or Compassionate or Improvident, boost chances if True Faith/Beatific
+ POD_jerusalem.11.effect.success.desc: "Наконец-то лестница!"
+ POD_jerusalem.11.critical.failure.effect.desc: "Всё, что блестит, - это расплавленное золото, плавящее вашу плоть"
+ POD_jerusalem.11.critical.failure: "Касание Мидаса"
 
- POD_jerusalem.14.t: "The Hunt: A 3-Ring Nightmare"
- POD_jerusalem.14.desc: "It isn't solely the Baptized we evade, but bull-headed priests bearing the symbols of long-dead civilizations, Minoan, Babylonian, Kartvelian, Maykop, and more whose names have been lost to the mists of time. Only with divine aid do we reach the stairs to the next floor and continue our descent.\n\nUnlike past layers, we discover that this one is split into three rings. The first is the Bloody Sea which quenches the thirst of the pit's denizens, born from the blood spilt by humanity. The second is the Wailing Woods whose wood fuels the pit's forges and whose trees are made of transfigured beings that cast aside their own bodies but still did not meet the expectations of the pit's lord. The third is the Burning Sands, a desert constantly scorched by the flakes of fire drifting down through the ceiling from the previous layer.\n\nPerhaps by questioning those souls trapped in the trees, we can locate the stairs leading further down."
- POD_jerusalem.14.a: "Where's The Treehugger when you need him."  #diplomacy check, lowers chance if Murderer or Kinslayer or Torturer or Reaver or Sadistic, boost chances if Just or Forgiving or Calm, boost chances if True Faith/Beatific
- POD_jerusalem.14.effect.success.desc: "The leaves whisper our answer"
- POD_jerusalem.14.critical.failure.effect.desc: "Those damned trees sold us out"
- POD_jerusalem.14.critical.failure: "Surprise!"
+ POD_jerusalem.12.t: "Охота: Проклятый город"
+ POD_jerusalem.12.desc: "Спустившись по лестнице, мы попадаем в огромное болото и реку, которая впадает ещё глубже. На окраине мы видим, как какие-то несчастные существа цепляются друг за друга, как дикие звери, когда они ступают по воде, в то время как другие, лежащие под волнами, смотрят на нас с огромной ненавистью в глазах.\n\nСледуя вдоль реки, мы видим чёрный город, стены которого уходят далеко в небо. Сотни стонущих существ кричат с перевернутых крестов, окружающих город. Клубы дыма вырываются из скрытых кузниц, а искаженные имитации наших святынь насмешливо смотрят на нас сверху вниз. Все это напоминает нам о наших видениях, когда мы стояли перед утробой бездны.\n\nМы впервые сталкиваемся с разумными и осознающими существами в этой заброшенной яме, и они преграждают нам путь к лестнице, ведущей дальше вниз, говоря, что мы недостаточно преданы их темному богу. Если мы хотим продвигаться вперед, не присоединяясь к тому, что мы презираем, нам нужно будет пробивать себе дорогу, не поддаваясь темным порывам, которые вызывает это место."
+ POD_jerusalem.12.a: "Нанести быстрый удар и бежать к лестнице."  #martial check, lowers chance if Wrathful or Impatient or Aggressive Attacker or Reckless, boost chances if Patient or Calm or Holy Warrior or Cautious Leader or Blademaster exp, boost chances if True Faith/Beatific
+ POD_jerusalem.12.effect.success.desc: "Святость ничто не остановит"
+ POD_jerusalem.12.critical.failure.effect.desc: "Здесь есть убийственные ямы?!"
+ POD_jerusalem.12.critical.failure: "Все пали перед Тёмными вратами"
+ POD_jerusalem.12.b: "Мы здесь, чтобы посвятить себя вашему Тёмному богу!"
 
- POD_jerusalem.15.t: "The Hunt: All the World's a Stage"
- POD_jerusalem.15.desc: "As we near the bottom of this hellscape, we are still astounded and horrified by that which we witness. This entire layer resembles a massive amphitheater as lost souls forever tell the tales of every time they sowed discord, committed fraud, led astray, seduced, flattered, deceived, lied, and stole. Servants of the pit's true master roam the aisles of seats, the stage, and the backstage, casting their evil magicks and potent rites. While the others used brute force, these despicable beings channel their master's power through the remnants of their bodies which grants them the power to warp the world in their master's twisted image through belief and willpower.\n\nAbove it all hangs a starless void, a disconcerting facsimile of the sky shaped by our divine Lord. The only source of light in that void is a moon-like circle, illuminating the world sprawled beneath it with its red glow.\n\nFinally, we see the signs which indicate the presence of a nearby staircase. Guarding the stairs is an army of giants ranging in size from 2.5 meters to 13 meters, mighty in strength and capable of crushing us like ants. They block every path forward so we have no choice but to fight."
- POD_jerusalem.15.a: "The only way is through."  #martial check, lowers chance if Arbitrary, boost chances if Just, boost chances if True Faith/Beatific
- POD_jerusalem.15.effect.success.desc: "Even ants can defeat a scorpion"
- POD_jerusalem.15.critical.failure.effect.desc: "A messy end for a great hero"
- POD_jerusalem.15.critical.failure: "SPLAT!"
+ POD_jerusalem.13.t: "Охота: Огненное озеро"
+ POD_jerusalem.13.desc: "На пропитанных нефтью и пахнущих серой берегах этого великого Огненного озера медитируют и поют песни паломники, к которым присоединяются демоны, связанные хозяином ямы. В своих отвратительных храмах они совершают отвратительные поступки и ищут видения будущего, чтобы узнать волю своего господина.\n\nНекоторые из них наслаждаются болью, позволяя огню озера поглотить их. Если они выживут благодаря силе воли и жестокой преданности, эти так называемые крещёные превратятся в почерневшие скелеты, в глазах которых отразится пламя, которое они пережили. Они обладают силой, превосходящей силу любого, кроме самого сильного каинита, и служат жрецами своего нового хозяина.\n\nК счастью, новокрещёные заботятся только о возвращении в город над нами. Проявив немного хитрости и получив божественное благословение, мы, возможно, сможем прокрасться к лестнице так, чтобы огонь нас не обжег."
+ POD_jerusalem.13.a: "Спрячемся за тот камень!"  #Intrigue check, lowers chance if Cynical, boost chances if Zealous or Holy Warrior or Theologian, boost chances if True Faith/Beatific
+ POD_jerusalem.13.effect.success.desc: "Никто не ожидает появления Теневой инквизиции... или нас"
+ POD_jerusalem.13.critical.failure.effect.desc: "Они загоняют нас обратно в Огненное озеро, пока не останется никого"
+ POD_jerusalem.13.critical.failure: "Засада и сера"
 
- POD_jerusalem.16.t: "The Hunt: A Strong Offense is a Good Defense"
- POD_jerusalem.16.desc: "Before you stretches an endless sea of frozen ice. Everyone that has ever betrayed the pit's master has been buried in this landscape, forced to forever gaze upon the one they betrayed.\n\nAs we walk further in, the area is constantly being reshaped and reformed to match the dark dreams emanating from further in. We are forcing our way through a vortex far stronger and far deadlier than we faced on the second floor. One minute, we fight through hordes of corpses and the next, strange clockwork men with black smoke coming from their backs attempt to kill us. Giants, black-seared skeletons, mindlessly-chanting cultists, and even lesser demons drawn into the Dream all stand against us.\n\nMountains rise from flat plains before quickly collapsing back down into an untouched landscape. Rivers carve through rock before drying up and being filled in. The false sun in the sky above us shifts in color, passing from red to blue like a rainbow twisted from its true meaning as a symbol of divine faithfulness to a picture of contempt."
- POD_jerusalem.16.a: "Let the fight begin!"  #Uncapped prowess check, lowers chance if Craven or Arrogant or Deceitful, boost chances if Brave or Humble or Honest, boost chances if True Faith/Beatific
- POD_jerusalem.16.effect.success.desc: "The end is in sight"
- POD_jerusalem.16.critical.failure.effect.desc: "To fail now, of all times"
- POD_jerusalem.16.critical.failure: "Nooooo!"
+ POD_jerusalem.14.t: "Охота: Кошмар с тремя кольцами"
+ POD_jerusalem.14.desc: "Мы избегаем не только крещёных, но и жрецов с бычьими головами, носящих символы давно умерших цивилизаций - минойской, вавилонской, картвельской, майкопской и других, чьи имена затерялись в тумане времён. Только с божественной помощью мы добираемся до лестницы, ведущей на следующий уровень, и продолжаем наш спуск.\n\nВ отличие от предыдущих слоев, мы обнаруживаем, что этот разделен на три кольца. Первое - это Кровавое море, которое утоляет жажду обитателей преисподней, рожденное из крови, пролитой человечеством. Второй - это Плачущий лес, древесина которого служит топливом для кузниц преисподней, а деревья сделаны из преображенных существ, которые отказались от своих собственных тел, но все равно не оправдали ожиданий повелителя преисподней. Третий - Горящие пески, пустыня, постоянно опаляемая огненными хлопьями, падающими сквозь потолок с предыдущего слоя.\n\nВозможно, расспросив эти души, заточённые на деревьях, мы сможем найти лестницу, ведущую дальше вниз."
+ POD_jerusalem.14.a: "Где же древолаз, когда он тебе так нужен?"  #diplomacy check, lowers chance if Murderer or Kinslayer or Torturer or Reaver or Sadistic, boost chances if Just or Forgiving or Calm, boost chances if True Faith/Beatific
+ POD_jerusalem.14.effect.success.desc: "Листья шепчут нам ответ"
+ POD_jerusalem.14.critical.failure.effect.desc: "Эти проклятые деревья выдали нас"
+ POD_jerusalem.14.critical.failure: "Сюрприз!"
 
- POD_jerusalem.17.t: "The Hunt: Final Test"
- POD_jerusalem.17.desc: "After all of those battles, all those struggles, all those deaths, we finally stand before the Pit's Master, the beast whose dreams reshape reality around it, the monster who has tempted so many souls down here with unfulfilled promises. As is so often the case, the evil we know to be present is hidden behind the banal face of a mundane person. The only clue to her true nature is the inky outline around her seen by those empowered by the divine, indicating that some portion of her mind is trapped in another realm.\n\nAs you approach to permanently destroy her with holy fire, you are frozen in place, torch outstretched. Your mind and the minds of your remaining companions are overwhelmed with a vision.\n\nThe woman before us develops a dark halo while we stand around her, guiding her armies from afar and manipulating all those in the area including us. She offers immortality and power equaled by only the oldest Cainite methuselahs. All she asks in return is our worship."
- POD_jerusalem.17.a: "Resist... must resist."  #diplomacy check, lowers chance if Obfuscate or Obtenebration or Infernalist or Demonology or Daimonion, boost chances if Holy Arts, boost chances if True Faith/Beatific
- POD_jerusalem.17.b: "Such a small price for such a large prize."
- POD_jerusalem.17.effect.success.desc: "DIE, FOUL BEAST!"
- POD_jerusalem.17.critical.failure.effect.desc: "\"There's a price for arrogance, young one\""
- POD_jerusalem.17.critical.failure: "So close, yet so far"
+ POD_jerusalem.15.t: "Охота: Весь мир - это сцена"
+ POD_jerusalem.15.desc: "Приближаясь к подножию этого адского пейзажа, мы все еще поражаемся и ужасаемся тому, чему становимся свидетелями. Весь этот слой напоминает огромный амфитеатр, где потерянные души вечно рассказывают истории о том, как они сеяли раздор, совершали мошенничество, сбивали с пути истинного, соблазняли, льстили, обманывали, лгали и крали. Слуги истинного хозяина ямы бродят по проходам между креслами, сцене и за кулисами, творя свою злую магию и могущественные обряды. В то время как другие использовали грубую силу, эти презренные существа направляют силу своего хозяина через остатки своих тел, что дает им возможность искажать мир по искаженному образу и подобию своего хозяина с помощью веры и силы воли.\n\nНад всем этим нависает беззвездная пустота, сбивающая с толку копия неба, созданного нашим божественным Господом. Единственным источником света в этой пустоте является луноподобный круг, освещающий раскинувшийся под ним мир своим красным сиянием.\n\nНаконец, мы видим знаки, указывающие на наличие лестницы неподалеку. Лестницу охраняет армия великанов ростом от 2,5 до 13 метров, могучих по силе и способных раздавить нас, как муравьев. Они блокируют все пути вперед, так что у нас нет другого выбора, кроме как сражаться."
+ POD_jerusalem.15.a: "Единственный путь - это пройти насквозь."  #martial check, lowers chance if Arbitrary, boost chances if Just, boost chances if True Faith/Beatific
+ POD_jerusalem.15.effect.success.desc: "Даже муравьи могут победить скорпиона"
+ POD_jerusalem.15.critical.failure.effect.desc: "Ужасный конец для великих героев"
+ POD_jerusalem.15.critical.failure: "ШЛЁП!"
 
- POD_jerusalem.18.t: "The Hunt: Victory!"
- POD_jerusalem.18.desc: "We recognize the visions as the lies they are and shake them off. Nothing will stop us from cleansing the world of this horrible evil. You throw the blessed torch, and the remnants of your party draw up their divine blessings to strengthen the heat of those purifying flames. Revealed to be torpid, her body ignites. As it crumbles into ashes, the vortex of dreams around us grows ever more chaotic, a feat we could never have imagined possible.\n\nAfter a time, the dreams subside and leave only reality. Once more, we are in the ruins of Ketef Hinnom where once we attempted to enter the pit's maw. Where once the pit lay, there is a golden circle which glows with divine happiness at our success, and hymns hum along the wind from no discernable source.\n\nBack in our realm, there are tales of vampires driven mad by screams in their minds, ordering them to exterminate us. However, that is a trouble for another time and another generation. For now, let us celebrate in our great accomplishment that was once considered impossible."
- POD_jerusalem.18.a: "Praise the Lord for our great success!"
- 
- POD_jerusalem.20.t: "The Hunt: A Gift"
- POD_jerusalem.20.desc: "As you accept her embrace, the Mistress takes you into the vortex of her dreams. You proved yourself by reaching her despite all of the trials. As a reward, she accepts you as her child and tasks you with fulfilling her great vision.\n\nShe dreams of a world that she once more walks. She dreams of a world where she is worshipped like the god she is. She dreams of a world at peace, the kind of peace only a blade can bring.\n\nWith her Dream guiding you, you cannot fail."
-#POD_jerusalem.19.a: "Much work remains."  #become a 4th gen Vampire of the Eyes of Malakai faith; Auspex, Dementation, Daimonion, Presence, Obfuscate, Dark Thaumaturgy
- fervor_new_prophet_malakai: "The Mistress appointed a new prophet"
+ POD_jerusalem.16.t: "Охота: Сильное нападение - это хорошая защита"
+ POD_jerusalem.16.desc: "Перед нами простирается бескрайнее море замерзшего льда. Все, кто когда-либо предавал хозяина ямы, были похоронены в этом ландшафте, вынужденные вечно смотреть на того, кого они предали.\n\nПо мере того, как мы продвигаемся дальше, пространство постоянно меняется, чтобы соответствовать мрачным мечтам, исходящим из глубины. Мы прокладываем себе путь через водоворот, гораздо более сильный и смертоносный, чем тот, с которым мы столкнулись на втором уровне. Только что мы сражались с ордами трупов, а в следующее мгновение странные механические люди, из спин которых валил черный дым, попытались убить нас. Великаны, обугленные скелеты, бессмысленно поющие культисты и даже низшие демоны, втянутые в этот Сон, - все они противостоят нам.\n\nГоры поднимаются над плоскими равнинами, а затем быстро превращаются обратно в нетронутый ландшафт. Реки прорезают скалы, прежде чем пересохнуть и наполниться водой. Фальшивое солнце в небе над нами меняет цвет, переходя от красного к синему, как радуга, искаженная от своего истинного значения как символа божественной верности к изображению презрения."
+ POD_jerusalem.16.a: "Да начнётся битва!"  #Uncapped prowess check, lowers chance if Craven or Arrogant or Deceitful, boost chances if Brave or Humble or Honest, boost chances if True Faith/Beatific
+ POD_jerusalem.16.effect.success.desc: "Конец уже близок"
+ POD_jerusalem.16.critical.failure.effect.desc: "Самое время для неудачи"
+ POD_jerusalem.16.critical.failure: "Неееет!"
 
- POD_jerusalem.19.t: "The Hunt: A Blessing"
- POD_jerusalem.19.desc: "Perhaps it is due to all that we have fought through, but never before have we been so drawn to the promises of the dark. When challenged by the guards, we take a knee and proclaim our fealty to their Dark God! While they are skeptical, they decide to escort us to the city's grand temple. Before their high priest, we swear fealty to the dark god.\n\nAs the words fall from our lips, we can feel a strange essence slip between our lips. It tastes of iron as it slinks down our throat and seeps into our bones. Tingling spreads through our bodies, followed by pain ... unimaginable pain. Looking first left then right, you see the bodies of your comrades shift and warp into something that you would once have called an abomination.\n\nYou awaken at the surface, at the foot of the pit's great maw. A voice whispers in your mind: \"Go forth and bring peace by the edge of your blade.\""
- POD_jerusalem.19.a: "Much work remains."  #entire coterie becomes a revenant of the Eyes of Malakai faith; Auspex, Dementation, Daimonion
+ POD_jerusalem.17.t: "Охота: Последнее испытание"
+ POD_jerusalem.17.desc: "После всех этих сражений, всей этой борьбы, всех этих смертей мы, наконец, стоим перед Хозяином ямы, чудовищем, чьи сны меняют реальность вокруг, монстром, который соблазнил так много душ здесь, внизу, невыполненными обещаниями. Как это часто бывает, зло, о присутствии которого мы знаем, скрывается за банальной внешностью обычного человека. Единственный ключ к разгадке её истинной природы - чернильный контур вокруг нее, который видят те, кто наделен божественной силой, что указывает на то, что какая-то часть ее разума находится в ловушке в другом мире.\n\nКогда вы приближаетесь, чтобы окончательно уничтожить её священным огнем, вы застываете на месте с протянутым факелом. Ваш разум и разумы ваших оставшихся товарищей поражены видением.\n\nЖенщина, стоящая перед нами, окружена тёмным ореолом, в то время как мы стоим вокруг неё, издалека направляя её армии и манипулируя всеми, кто находится поблизости, включая нас. Она предлагает бессмертие и силу, равную только древнейшим каинитским мафусаилам. Всё, что она просит взамен, - это наше почитание."
+ POD_jerusalem.17.a: "Сопротивляться... нужно сопротивляться."  #diplomacy check, lowers chance if Obfuscate or Obtenebration or Infernalist or Demonology or Daimonion, boost chances if Holy Arts, boost chances if True Faith/Beatific
+ POD_jerusalem.17.b: "Такая малая цена за такую большую награду."
+ POD_jerusalem.17.effect.success.desc: "УМРИ, МЕРЗКАЯ ТВАРЬ!"
+ POD_jerusalem.17.critical.failure.effect.desc: "«За гордыню приходится расплачиваться, юнцы»"
+ POD_jerusalem.17.critical.failure: "Так близко и всё же так далеко"
 
- building_pit_of_malkav_04: "Sanctified Pit of Ketef Hinnom"
- building_pit_of_malkav_04_desc: "Where once there were mad voices, now there are hymns whispering on the winds. Where once madness spilled forth upon this holy land, now blessings and wisdom go forth. Where once an evil beast ravaged the minds of all those nearby, now prayers rise up from the land. Where once a ravenous maw consumed the unwary and the sinful, now the faithful make prilgrimages to the grand temple built upon the once-profane."
- POD_requirements_purified_pit_malkav: "The [holder|E] must follow a [GetReligionByKey('hunters_religion').GetAdjective] faith, be a [GetTrait('supehunter').GetName( GetPlayer )], and have purified the Pit via [decision|E]."
+ POD_jerusalem.18.t: "Охота: Победа!"
+ POD_jerusalem.18.desc: "Мы признаём эти видения ложью, которой они и являются, и избавляемся от них. Ничто не помешает нам очистить мир от этого ужасного зла. Вы бросаете благословенный факел, и остатки вашей группы призывают свои божественные благословения, чтобы усилить жар этого очищающего пламени. Обнаружив, что она находится в торпоре, её тело предаётся пламени. По мере того, как оно превращается в пепел, вихрь снов вокруг нас становится все более хаотичным, и мы даже представить себе не могли, что это возможно.\n\nЧерез некоторое время сны рассеиваются и остается только реальность. Мы снова в руинах Кетеф-Хиннома, где когда-то пытались проникнуть в пасть ямы. Там, где когда-то была яма, теперь золотой круг, который сияет божественным счастьем от нашего успеха, а ветер доносит гимны из неизвестного источника.\n\nВ нашей державе ходят истории о вампирах, сведённых с ума криками в их головах, приказывающими им уничтожить нас. Однако это проблема другого времени и другого поколения. А пока давайте отпразднуем наше великое достижение, которое когда-то считалось невозможным."
+ POD_jerusalem.18.a: "Возблагодарим Господа за наш великий успех!"
 
+ POD_jerusalem.20.t: "Охота: Дар"
+ POD_jerusalem.20.desc: "Когда вы принимаете её объятия, Госпожа уносит вас в водоворот своих снов. Вы доказали, что смогли достичь её, несмотря на все испытания. В награду она принимает вас как своё дитя и поручает вам осуществить её великое видение.\n\nОна мечтает о мире, по которому она снова будет ходить. Ей снится мир, где ей будут поклоняться как богине, которой она и является. Она мечтает о мире, который может принести только клинок.\n\nПока её мечта ведёт вас, вы не можете потерпеть неудачу."
+ #POD_jerusalem.19.a: "Much work remains."  #become a 4th gen Vampire of the Eyes of Malakai faith; Auspex, Dementation, Daimonion, Presence, Obfuscate, Dark Thaumaturgy
+ fervor_new_prophet_malakai: "Госпожа избрала нового пророка"
 
+ POD_jerusalem.19.t: "Охота: Благословение"
+ POD_jerusalem.19.desc: "Возможно, это из-за всего, через что нам пришлось пройти, но никогда прежде нас так не привлекали обещания тьмы. Когда стражи бросают нам вызов, мы преклоняем колено и заявляем о своей верности их Тёмному богу! Хотя они настроены скептически, они решают сопроводить нас в главный храм города. Перед их верховным жрецом мы клянемся в верности тёмному богу.\n\nКогда слова слетают с наших губ, мы чувствуем, как между нашими губами проскальзывает странная эссенция. Она имеет привкус железа, когда проникает в горло и проникает в кости. По всему телу распространяется покалывание, за которым следует боль... невообразимая боль. Посмотрев сначала налево, затем направо, вы видите, как тела ваших товарищей смещаются и превращаются во что-то, что вы когда-то назвали бы мерзостью.\n\nВы просыпаетесь на поверхности, у подножия огромной пасти ямы. Голос шепчет в вашем сознании: «Иди вперёд и принеси мир острием своего клинка»."
+ POD_jerusalem.19.a: "Предстоит проделать ещё много работы."  #entire coterie becomes a revenant of the Eyes of Malakai faith; Auspex, Dementation, Daimonion
 
-
- malkavian_search_for_sister_decision: "Search for His/Our/My Sister"
- malkavian_search_for_sister_decision_desc: "All Malkavians know it, either through personal experience or by rumor. Upon entering Jerusalem, all Malkavians feel the command issuing through the Madness Network. Many voices, one voice, your voice; all repeat \"Sister ... retrieve Sister\". If you find a clue and immerse yourself in the Madness Network to deliver it, you know that there will be gratitude."
- malkavian_search_for_sister_decision_confirm: "Let the search begin"
- malkavian_search_for_sister_decision_tooltip: "Look for clues to the Sister's location"
- malkavian_search_for_sister_decision_effect: "You may find what you seek, but very probably will only find further madness"
- 
- madness_network_malakai_modifier: "Madness Network - Reward"
- madness_network_malakai_modifier_desc: "Something in the Madness Network is pleased with your success in finding clues towards HER location"
-
- POD_jerusalem.21.t: "Search for His/Our/My Sister: Trapped"
- POD_jerusalem.21.desc: "In your search for HER, you reach your mind into the Madness Network, searching for some sign of her presence. As your mind spreads, you feel something akin to a sucking sensation as you fall prey to a ... whirlpool?\n\nWhen you regain your ability to perceive, you realize that the area is constantly being reshaped and reformed. Mountains rise from flat plains before quickly collapsing back down into an untouched landscape. Rivers carve through rock before drying up and being filled in. The false sun in the sky above us shifts in color, passing from red to blue like a rainbow twisted from its true meaning as a symbol of divine faithfulness to a picture of contempt.\n\nWhat is this? Why can't you escape? Why can't I escape?"
- POD_jerusalem.21.a: "Why can't I escape?!"
-
- POD_jerusalem.22.t: "Search for His/Our/My Sister: Mental Strain"
- POD_jerusalem.22.desc: "In your search for HER, you reach your mind into the Madness Network, searching for some sign of her presence. You spend minutes, hours, days searching for any hint of HER. By the time you finally pull yourself out, your mind is exhausted, and you are struggling to remain standing."
- POD_jerusalem.22.a: "I need time to recover."
-
- POD_jerusalem.23.t: "Search for His/Our/My Sister: Hitchhiker"
- POD_jerusalem.23.desc: "In your search for HER, you reach your mind into the Madness Network, searching for some sign of her presence. You spend minutes, hours, days searching for any hint of HER.\n\nEventually, you manage to pull yourself out, unfortunately without any success. As you go back to your normal activities of ruling a country, you sense a foreign presence tickling the back of your mind. It seems to be nudging you in unusual and foreign directions."
- POD_jerusalem.23.a: "Well, this could be a problem."
-
- POD_jerusalem.24.t: "Search for His/Our/My Sister: Backlash"
- POD_jerusalem.24.desc: "In your search for HER, you reach your mind into the Madness Network, searching for some sign of her presence. You spend minutes, hours searching for any hint of HER. You can feel something, just at the edge of your perception. Then, with a sudden burst, your mind is forcibly thrown back into your body. You can feel the backlash force its ways from your mind, down your spine, and into every corner of your body."
- POD_jerusalem.24.a: "Quite the snap."
-
- POD_jerusalem.25.t: "Search for His/Our/My Sister: Hints"
- POD_jerusalem.25.desc: "In your search for HER, you reach your mind into the Madness Network, searching for some sign of her presence. You spend minutes, hours searching for any hint of HER. You can feel something, just at the edge of your perception. Then... you have it! You found a hint towards her location. It isn't much, but you get a sense of gratitude coming through the Madness Network."
- POD_jerusalem.25.a: "Something's better than nothing."
-
- POD_jerusalem.26.t: "Search for His/Our/My Sister: A Clue"
- POD_jerusalem.26.desc: "In your search for HER, you reach your mind into the Madness Network, searching for some sign of her presence. You spend minutes, hours searching for any hint of HER. YOU HAVE IT! Not some mere hint, but a true clue pointing at her location and providing guidance on freeing her from her Dream.\n\nYou immerse yourself into the Madness Network and deliver this clue. You can feel the gratitude emanating through the network and filling you with new insights, granted by an entity that feels familiar but is unknown."
- POD_jerusalem.26.a: "Well ... that's new."
+ building_pit_of_malkav_04: "Освящённая яма Кетеф-Хиннома"
+ building_pit_of_malkav_04_desc: "Там, где когда-то звучали безумные голоса, теперь ветер шепчет гимны. Там, где когда-то на эту святую землю изливалось безумие, теперь изливаются благословения и мудрость. Там, где когда-то злое чудовище опустошало умы всех, кто был поблизости, теперь с земли доносятся молитвы. Там, где когда-то хищная пасть пожирала неосторожных и грешных, теперь верующие совершают паломничества в величественный храм, построенный на некогда нечестивом месте."
+ POD_requirements_purified_pit_malkav: "[Concept('holder', 'Владелец')|E] должен исповедовать #L [GetReligionByKey('hunters_religion').GetName|l]ую#! конфессию, иметь свойство «[GetTrait('supehunter').GetName( GetPlayer )]» и очистить Яму через [Concept('decision', 'решение')|E]."
 
 
 
 
- malakaite_mistress_boon_decision: "Malakai's Boon"
- malakaite_mistress_boon_decision_desc: "As we struggle to fulfill the Mistress' Dream, we sometimes encounter difficulties of the martial variety. Perhaps the Mistress will grant us a boon to aid our efforts."
- malakaite_mistress_boon_decision_confirm: "Hopefully the Mistress is generous"
- malakaite_mistress_boon_decision_tooltip: "Hopefully the Mistress is generous"
- malakaite_mistress_boon_decision_effect: "Perhaps the Mistress will grant us a boon"
- malakaite_mistress_boon_decision_toast_success: "The Mistress is generous"
- malakaite_mistress_boon_decision_toast_fail: "We must earn our boon"
+ malkavian_search_for_sister_decision: "В поисках Его/нашей/моей Сестры"
+ malkavian_search_for_sister_decision_desc: "Все малкавиане знают это либо по личному опыту, либо по слухам. При въезде в Иерусалим все малкавиане ощущают приказ, исходящий из Сети безумия. Множество голосов, один голос, ваш голос - все повторяют «Сестра... найди Сестру». Если вы найдёте подсказку и погрузитесь в Сеть безумия, чтобы передать её, вы знаете, что получите благодарность."
+ malkavian_search_for_sister_decision_confirm: "Приступим к поискам."
+ malkavian_search_for_sister_decision_tooltip: "Искать ключи к разгадке местонахождения Сестры"
+ malkavian_search_for_sister_decision_effect: "Вы можете найти то, что ищете, но, скорее всего, столкнётесь только с дальнейшим безумием"
+
+ madness_network_malakai_modifier: "Сеть безумия - награда"
+ madness_network_malakai_modifier_desc: "Нечто в Сети безумия довольно вашими успехами в поиске ключей к ЕЁ местонахождению."
+
+ POD_jerusalem.21.t: "В поисках Его/нашей/моей Сестры: В ловушке"
+ POD_jerusalem.21.desc: "В поисках ЕЁ вы погружаете свой разум в Сеть безумия, ища хоть какие-то признаки её присутствия. По мере того, как ваш разум расширяется, вы ощущаете что-то похожее на засасывающее ощущение, когда становишься жертвой... водоворот?\n\nКогда к вам возвращается способность воспринимать окружающий мир, вы понимаете, что местность постоянно меняется. Горы возвышаются над плоскими равнинами, а затем быстро превращаются обратно в нетронутый ландшафт. Реки прорезают скалы, а затем высыхают и заполняются водой. Фальшивое солнце в небе над нами меняет цвет, переходя от красного к синему, как радуга, искаженная от своего истинного значения как символа божественной верности к изображению презрения.\n\nЧто это? Почему вы не можете сбежать? Почему я не могу сбежать?"
+ POD_jerusalem.21.a: "Почему я не могу сбежать?!"
+
+ POD_jerusalem.22.t: "В поисках Его/нашей/моей Сестры: Ментальное напряжение"
+ POD_jerusalem.22.desc: "В поисках ЕЁ вы погружаете свой разум в Сеть безумия, ища хоть какой-то признак её присутствия. Вы тратите минуты, часы, дни на поиски любого намека на НЕЁ. К тому времени, когда вы, наконец, выбираетесь, ваш разум истощён, и вы изо всех сил пытаетесь устоять на ногах."
+ POD_jerusalem.22.a: "Мне нужно время, чтобы прийти в себя."
+
+ POD_jerusalem.23.t: "В поисках Его/нашей/моей Сестры: Попутчик"
+ POD_jerusalem.23.desc: "В поисках ЕЁ вы погружаете свой разум в Сеть безумия, ища какой-нибудь признак её присутствия. Вы тратите минуты, часы, дни на поиски любого намека на НЕЁ.\n\nВ конце концов, вам удаётся выбраться, к сожалению, безуспешно. Когда вы возвращаетесь к своей обычной деятельности по управлению державой, вы ощущаете, как постороннее присутствие щекочет вам мозг. Кажется, что оно подталкивает вас в необычном и чуждом направлении."
+ POD_jerusalem.23.a: "Что ж, это может стать проблемой."
+
+ POD_jerusalem.24.t: "В поисках Его/нашей/моей Сестры: Обратная реакция"
+ POD_jerusalem.24.desc: "В поисках ЕЁ вы погружаете свой разум в Сеть безумия, ища какой-нибудь признак её присутствия. Вы тратите минуты, часы на поиски любого намёка на НЕЁ. Вы можете что-то почувствовать, просто на грани своего восприятия. Затем, с внезапным всплеском, ваш разум с силой возвращается в ваше тело. Вы можете почувствовать, как ответная реакция распространяется из вашего разума вниз по позвоночнику и проникает в каждый уголок вашего тела."
+ POD_jerusalem.24.a: "Довольно быстро."
+
+ POD_jerusalem.25.t: "В поисках Его/нашей/моей Сестры: Подсказки"
+ POD_jerusalem.25.desc: "В поисках ЕЁ вы погружаете свой разум в Сеть безумия, ища какой-нибудь признак её присутствия. Вы тратите минуты, часы на поиски любого намёка на НЕЁ. Вы можете что-то почувствовать, просто на грани своего восприятия. Тогда... вы кое-что нашли! Вы нашли подсказку о её местонахождении. Это немного, но вы испытываете чувство благодарности, когда проходите через Сеть безумия."
+ POD_jerusalem.25.a: "Что-то лучше, чем ничего."
+
+ POD_jerusalem.26.t: "В поисках Его/нашей/моей Сестры: Ключ к разгадке"
+ POD_jerusalem.26.desc: "В поисках ЕЁ вы погружаете свой разум в Сеть безумия, ища хоть какой-то признак её присутствия. Вы тратите минуты, часы на поиски любого намёка на НЕЁ. У ВАС ПОЛУЧИЛОСЬ! Не просто намёк, а настоящая подсказка, указывающая на её местонахождение и дающая указания, как вызволить её от её снов.\n\nВы погружаетесь в Сеть безумия и передаете эту подсказку. Вы можете почувствовать благодарность, исходящую через сеть и наполняющую вас новыми знаниями, дарованными существом, которое кажется знакомым, но остаётся неизвестным."
+ POD_jerusalem.26.a: "Что ж... это что-то новое."
 
 
 
 
- vamp_lower_gen_jerusalem_decision: "Fountains of Bright Crimson"
- vamp_lower_gen_jerusalem_decision_desc: "Hidden within the depths of Jerusalem and among its ancient sewers, there are tales of rivers of blood flowing out from hidden fountains. With this blood, we could bring ourselves closer to the first vampire, reducing our generation and greatly increasing our power. If you were to make contact with the local Nosferatu or Baali, they could guide us to what we seek, provided we #italic encourage#! them.\n\nHowever, we should keep in mind that such a great prize is likely accompanied by a great price so we should be prepared."
- vamp_lower_gen_jerusalem_decision_confirm: "Let the hunt begin"
- vamp_lower_gen_jerusalem_decision_tooltip: "Perhaps we should find our own holy water in this so-called Holy Land"
- vamp_lower_gen_jerusalem_decision_effect: "You will reduce your [Glossary('Generation','game_concept_vampgeneration_desc')] by 1, but the #beast aftermath#! may not be pretty."
- vamp_lower_gen_jerusalem_decision_generation_requirement: "You must be of fifth [Glossary('Generation','game_concept_vampgeneration_desc')] or higher"
+ malakaite_mistress_boon_decision: "Милость Малакай"
+ malakaite_mistress_boon_decision_desc: "Стремясь исполнить мечту Госпожи, мы иногда сталкиваемся с трудностями военного характера. Возможно, Госпожа окажет нам милость, чтобы поддержать наши усилия."
+ malakaite_mistress_boon_decision_confirm: "Надеюсь, Госпожа окажется щедрой."
+ malakaite_mistress_boon_decision_tooltip: "Надеюсь, Госпожа окажется щедрой"
+ malakaite_mistress_boon_decision_effect: "Возможно, Госпожа окажет нам милость"
+ malakaite_mistress_boon_decision_toast_success: "Госпожа щедра"
+ malakaite_mistress_boon_decision_toast_fail: "Мы должны заслужить милость"
 
- POD_jerusalem.27.t: "Contacting the Locals"
- POD_jerusalem.27.desc: "If you are to find such hidden wonders, you will need local helpers to clear the way of obstacles and to guide you there. There are two apparent options going forward: the Nosferatu and the Baali.\n\nNo one knows the sewers, catacombs, and darkest corners of any city better than the Nosferatu, let alone any traps which may lay among them. Considering their prediliction towards religion and Jerusalem's significance, they have a substantial presence in the city. With some effort, you could #italic encourage#! them to help us, whether through trickery or through torture.\n\nAlternatively, you could approach the Baali. For some reason, some of their neonates have gotten it in their heads that those rivers of blood indicate the presence of one of their \"Sleepers\" or Malkav himself. If you wished, you could promise aid, use them to batter your way through any traps or difficulties, and then betray them after finding it. After all, such power isn't the kind of thing to be shared, especially with ones such as them."
- POD_jerusalem.27.a: "Contact the Nosferatu." #intrigue duel, boost if Nosferatu or road of heaven religion or Torturer, hurt if Ventrue or Toreador
- POD_jerusalem.27.a.success: "So much for their cunning"
- POD_jerusalem.27.a.critical.failure: "You can't outtrick the trickster"
- POD_jerusalem.27.b: "Contact the Baali." #prowess duel, boost if Baali or sinner religion or Strategist, hurt if Salubri or Banu Haqim
- POD_jerusalem.27.b.success: "So much for their strength"
- POD_jerusalem.27.b.critical.failure: "Now I know my strength is slightly less than 10 Baali"
- POD_jerusalem.27.c: "On second thought..."
 
- POD_jerusalem.28.t: "Nosferatu Aid"
- POD_jerusalem.28.desc: "You've done it! Despite their reputation for cunning, you were able to trick certain, particularly-knowledgeable Nosferatu into meeting with you. Much to their surprise, it was a trap, and you captured them. Once in your dungeons, it was matter of mere days to extract the information you needed. From that information, you sketched a map annotated with every trap and made your way into the tunnels.\n\nYou hear the sounds of roaring water in the distance and follow it to a foul river, tainted with clotted blood and seeming to flow into the Dead Sea. On an instinct, you have an insignificant minion drink from the river which saves you from the apparent toxicity and Rötschreck. You don't give up and keep exploring until you find old, dried silt, as if a river once overflowed its banks and covered the ground here. Amongst the silt, you find a single drop of pure, untainted blood. Upon swallowing it, you can feel power coursing through your veins. As you experiment with your new abilities, you discover that the rumors were right! All evidence that you have dropped an entire [Glossary('Generation','game_concept_vampgeneration_desc')]!"
- POD_jerusalem.28.a: "Success is sweet!"
 
- POD_jerusalem.29.t: "Baali Aid"
- POD_jerusalem.29.desc: "As you and your Baali companions venture through the tunnels, you fight your way through traps and Nosferatu ambushes. A few Baali die, no big shame. After many hours, you hear the sounds of roaring water in the distance and follow it to a foul river, tainted with clotted blood and seeming to flow into the Dead Sea. On an instinct, you have an insignificant minion drink from the river which saves you from the apparent toxicity and Rötschreck. You don't give up and keep exploring until you find old, dried silt, as if a river once overflowed its banks and covered the ground here. Amongst the silt, you find a single drop of pure, untainted blood.\n\nThe moment that the blood is spotted, you spring upon the Baali and begin tearing through them. Considering the surprise in their eyes, it's clear that you pre-empted their own betrayal. Such nurslings are barely worth the bother of exterminating.\n\nFinally, they are dealt with, and you return to the drop of blood resting among the silt. Upon swallowing it, you can feel power coursing through your veins. As you experiment with your new abilities, you discover that the rumors were right! All evidence proves you dropped an entire [Glossary('Generation','game_concept_vampgeneration_desc')]!"
 
- POD_jerusalem.30.t: "Signs of an #TOOLTIP:game_concept_unconquered_soul_desc #E Непокорённая душа#!#!"
- POD_jerusalem.30.desc: "One of your servants pointed out that you changed some of your habits recently, something that doesn't happen frequently to your kind. Worse, you have made strange and ill-advised decisions which have hurt your place in [GetTrait('vampire').GetName( GetPlayer )] politics, ones that you don't remember. This reminds you of the rumors about the terrible consequences of [Glossary('Диаблери','game_concept_diablerie_desc')] and its potential toll on your very soul.\n\nCould it be that the blood from Jerusalem's hidden river hid a soul or a fragment of one? Is it trying to fight back? A worrying prospect indeed..."
+ vamp_lower_gen_jerusalem_decision: "Ярко-багровые источники"
+ vamp_lower_gen_jerusalem_decision_desc: "В недрах Иерусалима, среди его древних сточных труб, есть легенды о реках крови, вытекающих из скрытых источников. С помощью этой крови мы могли бы приблизиться к первому вампиру, снизить своё поколение и значительно увеличить нашу силу. Если бы вы связались с местными носферату или баали, они могли бы направить нас к тому, что мы ищем, при условии, что мы их #italic поощрим#!.\n\nОднако мы должны помнить, что за такую большую награду, скорее всего, будет заплачена большая цена, поэтому мы должны быть готовы."
+ vamp_lower_gen_jerusalem_decision_confirm: "Да начнётся охота."
+ vamp_lower_gen_jerusalem_decision_tooltip: "Возможно, нам следует найти свою собственную святую воду в этой так называемой Святой земле"
+ vamp_lower_gen_jerusalem_decision_effect: "Вы снизите своё [Glossary('поколение','game_concept_vampgeneration_desc')] на 1, но #beast последствия#! могут быть не очень приятными."
+ vamp_lower_gen_jerusalem_decision_generation_requirement: "Вы должны принадлежать к пятому [Glossary('поколению','game_concept_vampgeneration_desc')] или выше"
+
+ POD_jerusalem.27.t: "Общение с местными"
+ POD_jerusalem.27.desc: "Если вы хотите найти такие скрытые чудеса, вам понадобятся местные помощники, которые расчистят путь от препятствий и проведут вас туда. Есть два очевидных варианта на будущее: носферату и баали.\n\nНикто не знает каналы, катакомбы и самые тёмные уголки любого города лучше, чем носферату, не говоря уже о любых ловушках, которые могут быть в них спрятаны. Учитывая их религиозное пристрастие и значимость Иерусалима, они имеют значительное присутствие в городе. Приложив некоторые усилия, вы могли бы #italic побудить#! их помочь нам, будь то с помощью обмана или пыток.\n\nВ качестве альтернативы, вы можете обратиться к баали. По какой-то причине некоторые из их новообращённых вбили себе в голову, что эти реки крови указывают на присутствие одного из их «Спящих» или самого Малкава. Если бы вы захотели, вы могли бы пообещать помощь, использовать их, чтобы пробиться сквозь любые ловушки или трудности, а затем предать их, когда найдёте. В конце концов, такой силой нельзя делиться, особенно с такими, как они."
+ POD_jerusalem.27.a: "Связаться с носферату." #intrigue duel, boost if Nosferatu or road of heaven religion or Torturer, hurt if Ventrue or Toreador
+ POD_jerusalem.27.a.success: "Вот вам и вся их хитрость"
+ POD_jerusalem.27.a.critical.failure: "Вам не перехитрить хитрецов"
+ POD_jerusalem.27.b: "Связаться с баали." #prowess duel, boost if Baali or sinner religion or Strategist, hurt if Salubri or Banu Haqim
+ POD_jerusalem.27.b.success: "Вот вам и вся их сила"
+ POD_jerusalem.27.b.critical.failure: "Теперь я знаю, что я моя сила чуть слабее 10 баали"
+ POD_jerusalem.27.c: "С другой стороны..."
+
+ POD_jerusalem.28.t: "Помощь носферату"
+ POD_jerusalem.28.desc: "У вас получилось! Несмотря на их репутацию хитрецов, вам удалось заманить на встречу с собой некоторых особо знающих носферату. К их большому удивлению, это была ловушка, и вы поймали их. Заточив их в своих подземельях, вы смогли за считанные дни получить необходимую информацию. На основе этой информации вы нарисовали карту, на которой были отмечены все ловушки, и отправились в туннели.\n\nВы слышите вдалеке журчание воды и идёте на него к грязной реке, запятнанной запекшейся кровью и, кажется, впадающей в Мертвое море. Повинуясь инстинкту, вы выпиваете немного воды из реки, которая спасает вас от явной токсичности и ротшрека. Вы не сдаётесь и продолжаете исследовать местность, пока не обнаружили старый, высохший ил, как будто река когда-то вышла из берегов и покрыла землю здесь. Среди ила вы находите единственную каплю чистой, незапятнанной крови. Проглотив ее, вы чувствуете, как по вашим венам течет сила. Экспериментируя со своими новыми способностями, вы обнаруживаете, что слухи были верны! Всё это свидетельствует о том, что вы снизили своё [Glossary('поколение','game_concept_vampgeneration_desc')]!"
+ POD_jerusalem.28.a: "Успех так сладок!"
+
+ POD_jerusalem.29.t: "Помощь баали"
+ POD_jerusalem.29.desc: "Когда вы и ваши спутники-баали отправляетесь в путь по туннелям, вы пробиваетесь сквозь ловушки и засады носферату. Несколько баали погибают, ничего страшного. Спустя много часов вы слышите вдалеке журчание воды и идете по нему к грязной реке, запятнанной запекшейся кровью и, кажется, впадающей в Мертвое море. Повинуясь инстинкту, вы выпиваете немного воды из реки, которая спасает вас от явной токсичности и ротшрека. Вы не сдаётесь и продолжаете исследовать местность, пока не обнаружили старый, высохший ил, как будто река когда-то вышла из берегов и покрыла землю здесь. Среди ила вы находите единственную каплю чистой, незапятнанной крови.\n\nВ тот момент, когда вы замечаете кровь, вы набрасываетесь на баали и начинаете разрывать их на части. Учитывая удивление в их глазах, становится ясно, что вы предотвратили их собственное предательство. Такие питомцы едва ли стоят того, чтобы их истреблять.\n\nНаконец, с ними покончено, и вы возвращаетесь к капле крови, оставшейся в иле. Проглотив ее, вы можете почувствовать, как сила течет по вашим венам. Экспериментируя со своими новыми способностями, вы обнаруживаете, что слухи были верны! Все свидетельствует о том, что вы снизили своё [Glossary('поколение','game_concept_vampgeneration_desc')]!"
+
+ POD_jerusalem.30.t: "Признаки #TOOLTIP:game_concept_unconquered_soul_desc #E непокорённой души#!#!"
+ POD_jerusalem.30.desc: "Один из ваших слуг заметил, что вы недавно изменили некоторые свои привычки, что нечасто случается с такими, как вы. Хуже того, вы принимали странные и опрометчивые решения, которые ухудшили ваше положение в #TOOLTIP:GAME_TRAIT,vampire,[GetPlayer] #L вампирской#!#! политике, и о которых вы не помните. Это напоминает вам о слухах об ужасных последствиях [Glossary('диаблери','game_concept_diablerie_desc')] и его потенциальном воздействии на саму вашу душу.\n\nМожет ли быть так, что кровь из скрытой реки Иерусалима скрывала душу или её частичку? Пытается ли она сопротивляться? Действительно, тревожная перспектива..."
  #The duel is to determine how much it costs with a tiny chance of becoming a Wight
  #major_stress_gain vs minor_stress_gain, broken_authority_modifier for 15yrs, drained_troops_modifier for 15yrs, add_legitimacy = -450, add_tyranny = 100, add_piety = -500, add_piety_level = -1, add_prestige = -500, POD_masquerade_exposure_increase_multiple_effect = { AMOUNT = 5 }, lunatic, possessed
- POD_jerusalem.30.a: "Something is very very wrong...
- POD_jerusalem.30.a.success: "Retake your mind"
- POD_jerusalem.30.a.failure: "Retake your mind, at a high cost"
- POD_jerusalem.30.a.critical.failure: "ALL SHALL BECOME AS FOUNTAINS OF CRIMSON"
+ POD_jerusalem.30.a: "Что-то очень-очень не так..."
+ POD_jerusalem.30.a.success: "Вы собрались с мыслями"
+ POD_jerusalem.30.a.failure: "Вы собрались с мыслями, но за высокую цену"
+ POD_jerusalem.30.a.critical.failure: "ВСЁ СТАНЕТ БАГРОВЫМ ИСТОЧНИКОМ"
 
 
 
 
- molochite_maintain_the_sleep_decision: "Maintain the Sleeper"
- molochite_maintain_the_sleep_decision_desc: "We have discovered that an ancient and long-forgotten creature has been imprisoned in a state of dreaming beneath Ketef Hinnom outside Jerusalem. While such an entity isn't a Child of the Outer Dark and doesn't pose the same danger, the dreams of this methusaleh are still potent enough to twist the land and cause madness in nearby minds. Such a being must be kept sated to prevent it from awakening and escaping."
- molochite_maintain_the_sleep_decision_confirm: "Feed the Sleeper"
- molochite_maintain_the_sleep_decision_tooltip: "We must keep the Sleeper sated"
- molochite_maintain_the_sleep_decision_effect: "While the Sleeper remains asleep, knowledge may be skimmed from their Dream"
- molochite_maintain_the_sleep_decision_jerusalem_development_requirement: "The [development|E] level in the [GetTitleByKey('c_jerusalem').GetName] will decrease by 15"
+ molochite_maintain_the_sleep_decision: "Поддержать сон Спящего"
+ molochite_maintain_the_sleep_decision_desc: "Мы обнаружили, что древнее и давно забытое существо было заключено в тюрьму в состоянии сна под Кетеф-Хинномом недалеко от Иерусалима. Хотя такое существо не является Порождением Внешней тьмы и не представляет такой же опасности, сны этого мафусаила всё ещё достаточно сильны, чтобы перевернуть мир и вызвать безумие в умах окружающих. Такое существо необходимо поддерживать в сытом состоянии, чтобы оно не пробудилось и не сбежало."
+ molochite_maintain_the_sleep_decision_confirm: "Накормить Спящего."
+ molochite_maintain_the_sleep_decision_tooltip: "Мы должны насытить Спящего"
+ molochite_maintain_the_sleep_decision_effect: "Пока Спящий продолжает дремать, знания могут быть украдены из его сна"
+ molochite_maintain_the_sleep_decision_jerusalem_development_requirement: "Уровень [Concept('development', 'развития')|E] в графстве [GetTitleByKey('c_jerusalem').GetName] снизится на 15"
 
- POD_jerusalem.31.t: "The Power of Names"
- POD_jerusalem.31.desc: "After so much time skimming the Dream of the Sleeper in Jerusalem, you have become familiar with what to expect and how to navigate them. Not only has this taught you more about your [Glossary('Дисциплина','game_concept_discipline_desc')]s, it has granted you a unique understanding of true names beyond what is normally available to a [GetTrait('demonology').GetName( GetPlayer )]. Your new understanding is most similar to the powers utilized by the Undying in Africa and allows you a new power to aid in your mission."
- POD_jerusalem.31.a: "To know a true name is to hold a thing's soul."
- 
- dreams_of_the_sleeper_modifier: "Dreams of the Sleeper"
+ POD_jerusalem.31.t: "Сила имён"
+ POD_jerusalem.31.desc: "После стольких лет разбора сна Спящего в Иерусалиме вы уже знаете, чего ожидать и как в нём ориентироваться. Это не только дало вам больше знаний о ваших [Glossary('дисциплинах','game_concept_discipline_desc')], но и дало вам уникальное понимание истинных имён, выходящее за рамки того, что обычно доступно для #TOOLTIP:GAME_TRAIT,demonology,[GetPlayer] #L демонологии#!#!. Ваше новое понимание больше всего похоже на способности, используемые Бессмертными в Африке, и дает вам новые возможности для выполнения вашей миссии."
+ POD_jerusalem.31.a: "Знать истинное имя - значит обладать душой."
 
-
-
-
- nergalite_wake_the_sleeper_decision: "Wake the Sleeper"
- nergalite_wake_the_sleeper_decision_desc: "We have discovered that an ancient and long-forgotten creature has been imprisoned in a state of dreaming beneath Ketef Hinnom outside Jerusalem. While such an entity isn't a Child of the Outer Dark and doesn't offer the same power, the dreams of this methusaleh are still potent enough to twist the land and cause madness in nearby minds. Such a being must be awakened so that we may make a deal with them to channel their power towards our own objectives."
- nergalite_wake_the_sleeper_decision_confirm: "Feed the Sleeper"
- nergalite_wake_the_sleeper_decision_tooltip: "We must wake the Sleeper"
- nergalite_wake_the_sleeper_decision_effect: "As the Sleeper wakens, their gratitude will increase"
- nergalite_wake_the_sleeper_decision_jerusalem_duchy_development_tt: "Every [county|E] in [GetTitleByKey('c_jerusalem').GetNameNoTier]'s [de_jure|E] [duchy|E] must have more than 5 [development|E]"
- nergalite_wake_the_sleeper_decision_jerusalem_kingdom_development_tt: "Every [county|E] in [GetTitleByKey('c_jerusalem').GetNameNoTier]'s [de_jure|E] [kingdom|E] must have more than 5 [development|E]"
- nergalite_wake_the_sleeper_decision_jerusalem_empire_development_tt: "Every [county|E] in [GetTitleByKey('c_jerusalem').GetNameNoTier]'s [de_jure|E] [empire|E] must have more than 5 [development|E]"
- nergalite_wake_the_sleeper_decision_jerusalem_development_effect: "The [development|E] level in the [GetTitleByKey('c_jerusalem').GetName] will decrease by 5 and it will gain the modifier [GetModifier('extinguish_life_modifier').GetNameWithTooltip] for 5 years"
- nergalite_wake_the_sleeper_decision_jerusalem_duchy_development_effect: "The [development|E] level of all counties in the [de_jure|E] [duchy|E] of [GetTitleByKey('c_jerusalem').GetNameNoTier] will decrease by 5 and they will gain the modifier [GetModifier('extinguish_life_modifier').GetNameWithTooltip] for 5 years"
- nergalite_wake_the_sleeper_decision_jerusalem_kingdom_development_effect: "The [development|E] level of all counties in the [de_jure|E] [kingdom|E] of [GetTitleByKey('c_jerusalem').GetNameNoTier] will decrease by 5 and they will gain the modifier [GetModifier('extinguish_life_modifier').GetNameWithTooltip] for 10 years"
- nergalite_wake_the_sleeper_decision_jerusalem_empire_development_effect: "The [development|E] level of all counties in the [de_jure|E] [empire|E] of [GetTitleByKey('c_jerusalem').GetNameNoTier] will decrease by 5 and they will gain the modifier [GetModifier('extinguish_life_modifier').GetNameWithTooltip] for 10 years"
-
-
- POD_jerusalem.32.t: "Unlimited Power!!!"  #couldn't help myself
- POD_jerusalem.32.desc: "You have been slowly feeding the Sleeper and coaxing their soul closer to their body, allowing you to channel some fragment of their power. After enough meals, we have attracted the Sleeper's full attention. They have stretched out and touched our minds, rewarding your efforts by channeling a fraction of their power and knowledge through you. With this power, you could eventually achieve or surpass the heights of Nergal. All that remains is to agree..."
- POD_jerusalem.32.a: "Do It!"
- POD_jerusalem.32.a.tt: "You gain access to the Lore lifestyle."
- POD_jerusalem.32.a.effect.success.desc: "This body has a new master"
+ dreams_of_the_sleeper_modifier: "Сны Спящего"
 
 
 
 
- constantinian_channel_religious_fervor_decision: "Channel Religious Fervor"
- constantinian_channel_religious_fervor_decision_desc: "For unknown reasons, the region around Jerusalem is saturated with glamour and religious fervor. After establishing the Constantinian Catechism, we understand the means of reaping the glamour of the faithful. If properly harnessed with our new knowledge, Jerusalem's amount of fervor presents a unique opportunity to ensure unending belief in you and thereby your eternal life."
- constantinian_channel_religious_fervor_decision_confirm: "Time to harness the power of faith"
- constantinian_channel_religious_fervor_decision_tooltip: "Jerusalem's religious mania presents a unique opportunity"
- constantinian_channel_religious_fervor_decision_effect: "Whether it be as Grigori, Nephilim, or empowered prophet, I shall engorge myself on Jerusalem's religious mania"
- constantinian_channel_religious_fervor_decision_holy_city_jerusalem_requirement_tooltip: "You must control and convert the city of [GetTitleByKey('c_jerusalem').GetNameNoTier] as it is a the key holy site for the Abrahamic faiths and local Fae, increasing your influence over the local glamour"
- constantinian_channel_religious_fervor_decision_holy_city_antioch_requirement_tooltip: "You must control and convert the city of [GetTitleByKey('c_antiocheia').GetNameNoTier] as it is a the key holy site for the Abrahamic faiths and local Fae, increasing your influence over the local glamour"
- constantinian_channel_religious_fervor_decision_holy_city_acre_requirement_tooltip: "You must control and convert the city of [GetTitleByKey('c_acre').GetNameNoTier] as it is a the key holy site for the Abrahamic faiths and local Fae, increasing your influence over the local glamour"
- constantinian_channel_religious_fervor_decision_holy_city_alexandria_requirement_tooltip: "You must control and convert the city of [GetTitleByKey('c_alexandria').GetNameNoTier] as it is a the key holy site for the Abrahamic faiths and local Fae, increasing your influence over the local glamour"
- constantinian_channel_religious_fervor_decision_holy_city_tigre_requirement_tooltip: "You must control and convert the city of [GetTitleByKey('c_tigre').GetNameNoTier] as it is a the key holy site for the Abrahamic faiths and local Fae, increasing your influence over the local glamour"
- constantinian_channel_religious_fervor_decision_holy_city_mecca_requirement_tooltip: "You must control and convert the city of [GetTitleByKey('c_mecca').GetNameNoTier] as it is a the key holy site for the Abrahamic faiths and local Fae, increasing your influence over the local glamour"
- constantinian_channel_religious_fervor_decision_high_almoner_requirement_tooltip: "You must employ a [GetTrait('qareen').GetName( GetPlayer )] [GetCourtPositionType('high_almoner_court_position').GetName()] with good [aptitude|E]" #walking libraries for the local region are always useful, especially filling a religious position
- constantinian_channel_religious_fervor_decision_djedi_ojo_seelie_requirement_tooltip: "You need at least three [GetTrait('djedi').GetName( GetPlayer )] and three [GetFaithByKey('ojo_constantinians').GetName] courtiers. You need locals skilled at tapping into ambient Glamour and manipulating the local faithful in similar directions to you."
- constantinian_channel_religious_fervor_decision_djedi_iku_unseelie_requirement_tooltip: "You need at least three [GetTrait('djedi').GetName( GetPlayer )] and three [GetFaithByKey('iku_humanists').GetName] courtiers. You need locals skilled at tapping into ambient Glamour and manipulating the local faithful in similar directions to you."
+ nergalite_wake_the_sleeper_decision: "Разбудить Спящего"
+ nergalite_wake_the_sleeper_decision_desc: "Мы обнаружили, что древнее и давно забытое существо было заточено в состоянии сна под Кетеф-Хинномом недалеко от Иерусалима. Хотя такое существо не является Порождением Внешней тьмы и не обладает такой же силой, сны этого мафусаила всё ещё достаточно сильны, чтобы перевернуть мир и вызвать безумие в умах окружающих. Такое существо должно быть пробуждено, чтобы мы могли заключить с ним сделку и направить его силу на достижение наших собственных целей."
+ nergalite_wake_the_sleeper_decision_confirm: "Накормить Спящего."
+ nergalite_wake_the_sleeper_decision_tooltip: "Мы должны разбудить Спящего"
+ nergalite_wake_the_sleeper_decision_effect: "Когда Спящий проснётся, его благодарность возрастёт"
+ nergalite_wake_the_sleeper_decision_jerusalem_duchy_development_tt: "Все [Concept('county', 'графства')|E] в [Concept('de_jure', 'де-юре')|E] [Concept('duchy', 'герцогстве')|E] владения [GetTitleByKey('c_jerusalem').GetNameNoTier] должны иметь более 5 ед. [Concept('development', 'развития')|E]"
+ nergalite_wake_the_sleeper_decision_jerusalem_kingdom_development_tt: "Все [Concept('county', 'графства')|E] в [Concept('de_jure', 'де-юре')|E] [Concept('kingdom', 'королевстве')|E] владения [GetTitleByKey('c_jerusalem').GetNameNoTier] должны иметь более 5 ед. [Concept('development', 'развития')|E]"
+ nergalite_wake_the_sleeper_decision_jerusalem_empire_development_tt: "Все [Concept('county', 'графства')|E] в [Concept('de_jure', 'де-юре')|E] [Concept('empire', 'империи')|E] владения [GetTitleByKey('c_jerusalem').GetNameNoTier] должны иметь более 5 ед. [Concept('development', 'развития')|E]"
+ nergalite_wake_the_sleeper_decision_jerusalem_development_effect: "Графство [GetTitleByKey('c_jerusalem').GetName] потеряет 5 ед. [Concept('development', 'развития')|E] и получит модификатор «[GetModifier('extinguish_life_modifier').GetNameWithTooltip]» на 5 лет"
+ nergalite_wake_the_sleeper_decision_jerusalem_duchy_development_effect: "Все графства в [Concept('de_jure', 'де-юре')|E] [Concept('duchy', 'герцогстве')|E] владения [GetTitleByKey('c_jerusalem').GetNameNoTier] потеряют 5 ед. [Concept('development', 'развития')|E] и получат модификатор «[GetModifier('extinguish_life_modifier').GetNameWithTooltip]» на 5 лет"
+ nergalite_wake_the_sleeper_decision_jerusalem_kingdom_development_effect: "Все [Concept('county', 'графства')|E] в [Concept('de_jure', 'де-юре')|E] [Concept('kingdom', 'королевстве')|E] владения [GetTitleByKey('c_jerusalem').GetNameNoTier] потеряют 5 ед. [Concept('development', 'развития')|E] и получат модификатор «[GetModifier('extinguish_life_modifier').GetNameWithTooltip]» на 10 лет"
+ nergalite_wake_the_sleeper_decision_jerusalem_empire_development_effect: "Все [Concept('county', 'графства')|E] в [Concept('de_jure', 'де-юре')|E] [Concept('empire', 'империи')|E] владения [GetTitleByKey('c_jerusalem').GetNameNoTier] потеряют 5 ед. [Concept('development', 'развития')|E] и получат модификатор «[GetModifier('extinguish_life_modifier').GetNameWithTooltip]» на 10 лет"
 
- POD_jerusalem.33.t: "The Eternal Semi-Divine"
- POD_jerusalem.33.desc: "It is done! You have tweaked the stories and even your own form. You have recruited masters of magic and great academics. You have tapped into the font of glamour that is the fervor of so many mortals in such a small area, amplified by a nearby presence. There are no bounds on that belief! Your descendants will be protected from the ravages of religious rituals, even baptism! The world can be racked with bloody wars, horrific plagues, dreadful inquisitions, and soul-crushing banality-but you will endure! So long as there are humans to believe in the divine, you will remain!\n\n\n #EMP \"Angels, silently, wisdom unfurled,\nwatching carefully over our world,\nhelping, hovering, guarding and guiding:\nthin the veil covering angels abiding.\n\nAngels, drawing near while we're asleep,\nbeckon, 'enter here into the deep,'\ntransform all regrets and empty scheming.\nTheir sacred silhouettes dance through our dreaming.\n\nAngels, when we wake, come, one by one,\ntasks to undertake till day is done.\nFeel their tender care, masked though their form be.\nAngels are everywhere. Welcome them warmly.\"#!"
- POD_jerusalem.33.a: "All praise me!"
 
- grigori_fae_modifier: "A Semi-Divine Being"
- grigori_fae_modifier_desc: "Prophet, Grigori, Nephilim, Chayot, Ofanim, Erelim, Hashmal, Seraphim, Malakhim, Bene Elohim, Cherubim, Ishim, Chalkydri, Chashmalim, Memitim, Keruvim, Hamalat al-Arsh, Mu'aqqibat, Hafaza, Kiraman Katiban."
+ POD_jerusalem.32.t: "Абсолютная мощь!!!"  #couldn't help myself
+ POD_jerusalem.32.desc: "Вы медленно кормили Спящего и уговаривали его душу приблизиться к телу, что позволяло вам направлять часть его силы. После достаточного количества еды мы полностью привлекли внимание Спящего. Он протянул руку помощи и затронул наши умы, вознаграждая ваши усилия, передавая часть своей силы и знаний через вас. Обладая этой силой, вы могли бы в конечном итоге достичь высот Нергала или превзойти их. Все, что остается, - это согласиться..."
+ POD_jerusalem.32.a: "Сделай это!"
+ POD_jerusalem.32.a.tt: "Вы получите доступ к пути знаний."
+ POD_jerusalem.32.a.effect.success.desc: "У этого тела новый хозяин"
 
 
 
- mummies_tap_web_faith_decision: "Tap Into the Web"
- mummies_tap_web_faith_decision_desc: "Our hekau is fueled by the Sekhem we retrieve from the Web of Faith. While some have discovered additional means of obtaining it, the Web of Faith is still the most efficient and reliable provider of Sekhem. Jerusalem is among the most powerful nodes and presents a unique opportunity to occassionally tap into the Web of Faith for additional Sekhem."
- mummies_tap_web_faith_decision_confirm: "Prepare the metaphorical spout"
- mummies_tap_web_faith_decision_tooltip: "Jerusalem is a powerful node in the Web of Faith and offers an opportunity"
- mummies_tap_web_faith_decision_effect: "You'll receive Hekau lifestyle experience based on your $POD_splat_mummy$ [trait_level_track_xp|E]"
 
- POD_jerusalem.34.t: "Tapping the Web of Faith"
- POD_jerusalem.34.desc: "Your hekau magic and even your long life are fueled by Sekhem drawn from the Web of Faith, a mystical network linking nodes throughout northern Africa, the Middle East, and Persia. Your control of Jerusalem has allowed you to tap into the Web of Faith, granting you additional Sekhem and even knowledge regarding its use. Unlike more stable connections, this tap has its limitations, but it does create some intriguing possibilities."
- POD_jerusalem.34.a: "I can't wait to explore them."
+ constantinian_channel_religious_fervor_decision: "Направить религиозное рвение"
+ constantinian_channel_religious_fervor_decision_desc: "По неизвестным причинам регион вокруг Иерусалима пропитан гламуром и религиозным пылом. После создания Константинианского катехизиса мы понимаем, как можно собрать гламур верующих. Если правильно использовать наши новые знания, рвение Иерусалима предоставит уникальную возможность обеспечить бесконечную веру в вас и, следовательно, вашу вечную жизнь."
+ constantinian_channel_religious_fervor_decision_confirm: "Пришло время использовать силу веры."
+ constantinian_channel_religious_fervor_decision_tooltip: "Религиозная мания Иерусалима предоставляет уникальную возможность"
+ constantinian_channel_religious_fervor_decision_effect: "Будь то Григорий, нефилим или наделённый властью пророк, я с головой уйду в религиозную манию Иерусалима"
+ constantinian_channel_religious_fervor_decision_holy_city_jerusalem_requirement_tooltip: "Вы должны контролировать и обратить город [GetTitleByKey('c_jerusalem').GetNameNoTier], поскольку он является ключевым святым местом для авраамических религий и местных фей, что позволит вам увеличить своё влияние на местный гламур"
+ constantinian_channel_religious_fervor_decision_holy_city_antioch_requirement_tooltip: "Вы должны контролировать и обратить город [GetTitleByKey('c_antiocheia').GetNameNoTier], поскольку он является ключевым святым местом для авраамических религий и местных фей, что позволит вам увеличить своё влияние на местный гламур"
+ constantinian_channel_religious_fervor_decision_holy_city_acre_requirement_tooltip: "Вы должны контролировать и обратить город [GetTitleByKey('c_acre').GetNameNoTier], поскольку он является ключевым святым местом для авраамических религий и местных фей, что позволит вам увеличить своё влияние на местный гламур"
+ constantinian_channel_religious_fervor_decision_holy_city_alexandria_requirement_tooltip: "Вы должны контролировать и обратить город [GetTitleByKey('c_alexandria').GetNameNoTier], поскольку он является ключевым святым местом для авраамических религий и местных фей, что позволит вам увеличить своё влияние на местный гламур"
+ constantinian_channel_religious_fervor_decision_holy_city_tigre_requirement_tooltip: "Вы должны контролировать и обратить город [GetTitleByKey('c_tigre').GetNameNoTier], поскольку он является ключевым святым местом для авраамических религий и местных фей, что позволит вам увеличить своё влияние на местный гламур"
+ constantinian_channel_religious_fervor_decision_holy_city_mecca_requirement_tooltip: "Вы должны контролировать и обратить город [GetTitleByKey('c_mecca').GetNameNoTier], поскольку он является ключевым святым местом для авраамических религий и местных фей, что позволит вам увеличить своё влияние на местный гламур"
+ constantinian_channel_religious_fervor_decision_high_almoner_requirement_tooltip: "У вас должен быть нанят [GetCourtPositionType('high_almoner_court_position').GetName()] со свойством «[GetTrait('qareen').GetName( GetPlayer )]» и хорошей [Concept('aptitude', 'пригодностью')|E]" #walking libraries for the local region are always useful, especially filling a religious position
+ constantinian_channel_religious_fervor_decision_djedi_ojo_seelie_requirement_tooltip: "У вас должно быть не менее трёх придворных со свойством «[GetTrait('djedi').GetName( GetPlayer )]» и три #L [GetFaithByKey('ojo_constantinians').GetName|l]их#! придворных. Вам нужны местные жители, умеющие использовать окружающий гламур и манипулировать местными верующими в тех же направлениях, что и вы."
+ constantinian_channel_religious_fervor_decision_djedi_iku_unseelie_requirement_tooltip: "У вас должно быть не менее трёх придворных со свойством «[GetTrait('djedi').GetName( GetPlayer )]» и три #L [GetFaithByKey('iku_humanists').GetName|l]их#! придворных. Вам нужны местные жители, умеющие использовать окружающий гламур и манипулировать местными верующими в тех же направлениях, что и вы."
+
+ POD_jerusalem.33.t: "Вечная полубожественность"
+ POD_jerusalem.33.desc: "Свершилось! Вы изменили истории и даже свою собственную форму. Вы наняли мастеров магии и выдающихся учёных. Вы прикоснулись к источнику гламура, который является страстью стольких смертных на такой маленькой территории, усиливаемой присутствием поблизости. Эта вера безгранична! Ваши потомки будут защищены от разрушительных религиозных обрядов, даже от крещения! Мир может быть охвачен кровопролитными войнами, ужасающими эпидемиями, страшными инквизициями и душераздирающей банальностью - но вы выстоите! Пока есть люди, которые верят в божественное, вы останетесь!\n\n\n #EMP «Ангелы, безмолвно раскрывающие свою мудрость,\nвнимательно наблюдающие за нашим миром,\nпомогающие, парящие над нами, охраняющие и направляющие:\nприоткрывают завесу, скрывающую неизменных ангелов.\n\nАнгелы, приближающиеся, пока мы спим,\nманят: «Войди сюда, в глубину»,\nпреобрази все сожаления и пустые интриги.\nИх священные силуэты танцуют в наших снах.\n\nАнгелы, когда мы просыпаемся, приходят один за другим,\nчтобы заняться делами, которые ждут нас до конца дня.\nЧувствуйте их нежную заботу, несмотря на то, что они скрыты под маской.\nАнгелы повсюду. Тепло поприветствуйте их».#!"
+ POD_jerusalem.33.a: "Всё во славу мою!"
+
+ grigori_fae_modifier: "Полубожественная сущность"
+ grigori_fae_modifier_desc: "Пророк, Григорий, Нефилим, Хайот, Офаним, Эрелим, Хашмаль, Серафим, Малахим, Бене Элохим, Херувим, Ишим, Халкидри, Хашмалим, Мемитим, Керувим, Хамалат аль-Арш, Му'аккибат, Хафаза, Кираман Катибан."
 
 
+
+ mummies_tap_web_faith_decision: "Прикоснуться к Паутине"
+ mummies_tap_web_faith_decision_desc: "Наши хекау подпитываются сехемом, который мы получаем из Паутины веры. Хотя некоторые нашли дополнительные способы его получения, Паутина веры по-прежнему остаётся самым эффективным и надежным поставщиком сехема. Иерусалим является одним из самых мощных узлов и предоставляет уникальную возможность время от времени подключаться к Паутине веры для получения дополнительного сехема."
+ mummies_tap_web_faith_decision_confirm: "Подготовить метафорический фонтан."
+ mummies_tap_web_faith_decision_tooltip: "Иерусалим является мощным узлом в Паутине веры и предоставляет возможность"
+ mummies_tap_web_faith_decision_effect: "Вы получите опыт пути хекау в зависимости от вашего [Concept('trait_level_track_xp', 'опыта свойства')|E] мумии"
+
+ POD_jerusalem.34.t: "Прикосновение к Паутине веры"
+ POD_jerusalem.34.desc: "Ваша магия хекау и даже ваша долгая жизнь подпитываются сехемом, полученным из Паутины веры, мистической сети, связывающей узлы по всей Северной Африке, Ближнему Востоку и Персии. Ваш контроль над Иерусалимом позволил вам прикоснуться к Паутине веры, предоставив вам дополнительный сехем и даже знания о его использовании. В отличие от более стабильных подключений, у этой связи есть свои ограничения, но она открывает некоторые интригующие возможности."
+ POD_jerusalem.34.a: "Мне не терпиться изучить их."
 
 
 
@@ -304,41 +302,43 @@
 
 
 
- jerusalem_shift_balance_of_power_decision: "Shift Jerusalem's Balance of Power"
- jerusalem_shift_balance_of_power_decision_desc: "The [Concept('grand_city', 'Великий город')|E] of #TOOLTIP:game_concept_holy_jerusalem_desc #E Священный Иерусалим#!#! balances on a knife's edge, teetering between the three main religious factions. The Jews, Christians, and Muslims are constantly fighting for further control within their holy city. Their supernatural counterparts frequently involve themselves in these conflicts for one purpose or another. Should you have the resources, you could shift the balance of power in favor of your preferred faction, or you could try to maintain the balance."
- jerusalem_shift_balance_of_power_decision_confirm: "Let's take a look"
- jerusalem_shift_balance_of_power_decision_tooltip: "Jerusalem balances on a knife's edge. Let's nudge it"
- jerusalem_shift_balance_of_power_decision_effect: "You can review the current balance of power, or alter it"
 
- jerusalem_influence_message_title: "Balance of Power"
- jerusalem_influence_message_desc: "After completing a new building, the balance of power in the [Concept('grand_city', 'Великий город')|E] of Jerusalem has changed."
- jerusalem_influence_gain: "#TOOLTIP:game_concept_holy_jerusalem_desc #E Священный Иерусалим#!#! #P gains#! [SCOPE.GetValue('influence_delta')|V0] [Localize(SCOPE.GetFlagName('influence_type'))]"
- jerusalem_influence_loss: "#TOOLTIP:game_concept_holy_jerusalem_desc #E Священный Иерусалим#!#! #N loses#! [Abs_CFixedPoint(SCOPE.GetValue('influence_delta'))|V0] [Localize(SCOPE.GetFlagName('influence_type'))]"
 
- POD_jerusalem.35.t: "Balance of Power"
- POD_jerusalem.35.desc: "The [Concept('grand_city', 'Великий город')|E] of #TOOLTIP:game_concept_holy_jerusalem_desc #E Священный Иерусалим#!#! balances on a knife's edge, teetering between the three main religious factions. Depending on your goals regarding Jerusalem's structures, you will need to shift the balance of power in favor of different factions."
- POD_jerusalem.35.a: "Alter @piety_level_3_icon_christian!Christian Influence"
- POD_jerusalem.35.b: "Alter @piety_level_3_icon_islam!Muslim Influence"
- POD_jerusalem.35.c: "Alter @piety_level_3_icon_judaism!Jewish Influence"
- POD_jerusalem.35.d: "On second thought..."
- 
- POD_jerusalem.36.t: "Christian Influence Within Jerusalem"
- POD_jerusalem.36.desc: "For almost two centuries, Jerusalem has changed hands back and forth between the different Christian and Muslim factions. Most recently, the Sixth Crusade concluded with the successful claiming of Jerusalem by Frederick II, the Christian Holy Roman Emperor. In addition, the concluding treaty has led to Sultan al-Kamil of Egypt turning his attention away from Jerusalem and towards Emir an-Nasir Dawud of Damascus. Five orders of knight-brothers have a presence in Jerusalem to aid Christian goals. Three Crusader states provide further support from the north. In addition, the city's population has exploded to a hundred thousand which is equal to or beyond its size under the Fatimid Caliphate, increasing Christian influence as more move to Jerusalem.\n\nUnfortunately, Christians do face various struggles. The Kingdom of Jerusalem is split by civil war, a war that extends even to the crusader orders. Beyond that, Frederick's truce will expire in 1239, and there is little doubt that the surrounding Muslim countries will attack."
- POD_jerusalem.36.a: "@gold_icon! Support the Italian merchants"    #gold to strengthen
- POD_jerusalem.36.b: "@prestige_icon! Increase unity within the region" #prestige to strengthen
- POD_jerusalem.36.c: "@gold_icon! Arrange for targeted strikes"     #gold to weaken
- POD_jerusalem.36.d: "@prestige_icon! Fan the flames of civil war"      #prestige to weaken
+ jerusalem_shift_balance_of_power_decision: "Изменить баланс сил в Иерусалиме"
+ jerusalem_shift_balance_of_power_decision_desc: "[Concept('grand_city', 'Великий город')|E] #TOOLTIP:game_concept_holy_jerusalem_desc #E Священный Иерусалим#!#! балансирует на острие ножа, балансируя между тремя основными религиозными группировками. Евреи, христиане и мусульмане постоянно борются за дальнейший контроль над своим священным городом. Их сверхъестественные собраться часто вовлекаются в эти конфликты с той или иной целью. Если у вас есть ресурсы, вы могли бы изменить баланс сил в пользу предпочитаемой вами фракции или попытаться сохранить баланс."
+ jerusalem_shift_balance_of_power_decision_confirm: "Давайте взглянем."
+ jerusalem_shift_balance_of_power_decision_tooltip: "Иерусалим балансирует на острие ножа. Подтолкнём его"
+ jerusalem_shift_balance_of_power_decision_effect: "Вы можете пересмотреть текущий баланс сил или изменить его"
 
- POD_jerusalem.37.t: "Muslim Influence Within Jerusalem"
- POD_jerusalem.37.desc: "For almost two centuries, Jerusalem has changed hands back and forth between the different Christian and Muslim factions. Most recently, the Sixth Crusade concluded with the successful claiming of Jerusalem by Frederick II, the Christian Holy Roman Emperor. While the city's governorship was temporarily lost, the treaty guaranteed the right of Muslims to continue their worship. After Jerusalem's fall in 1244 to the Khwarezmian Empire, it will not fall out of Muslim hands for centuries. Even before then, both mortal and supernatural rulers and inhabitants within this region are predominately Muslim.\n\nHowever, at the moment, Jerusalem is controlled by Christian mortals. Muslim sultans and emirs fight among themselves, and the Mongol incursion of 1260 will further weaken Muslim influence within the region."
- POD_jerusalem.37.a: "@gold_icon! Expand Islamization efforts"    #gold to strengthen
- POD_jerusalem.37.b: "@prestige_icon! Encourage ghazwa raids"         #prestige to strengthen
- POD_jerusalem.37.c: "@gold_icon! District mortal Muslim rulers"  #gold to weaken
- POD_jerusalem.37.d: "@prestige_icon! Expel Muslim troublemakers"     #prestige to weaken
+ jerusalem_influence_message_title: "Баланс сил"
+ jerusalem_influence_message_desc: "После завершения строительства нового здания баланс сил в [Concept('grand_city', 'великом городе')|E] Иерусалим изменился."
+ jerusalem_influence_gain: "#TOOLTIP:game_concept_holy_jerusalem_desc #E Священный Иерусалим#!#! #P получает#! [SCOPE.GetValue('influence_delta')|V0] влияния ([Localize(SCOPE.GetFlagName('influence_type'))])"
+ jerusalem_influence_loss: "#TOOLTIP:game_concept_holy_jerusalem_desc #E Священный Иерусалим#!#! #N теряет#! [Abs_CFixedPoint(SCOPE.GetValue('influence_delta'))|V0] влияния ([Localize(SCOPE.GetFlagName('influence_type'))])"
 
- POD_jerusalem.38.t: "Jewish Influence Within Jerusalem"
- POD_jerusalem.38.desc: "For almost two centuries, Jerusalem has changed hands back and forth between the different Christian and Muslim factions. Only one thing has remained constant: many Jews have died. In the Weeks of Blood, Christian crusaders massacred and held to ransom many Jews. While Muslim rulers have been more tolerant, they have never shied away from culling the Jews. Synagogues and ancient holy sites are frequently claimed, desecrated, or simply destroyed.\n\nWith all of these difficulties facing the Jews within Jerusalem, you could easily wipe them out or struggle to maintain them depending on your intentions."
- POD_jerusalem.38.a: "@gold_icon! Arrange for guards and defenses"  #gold to strengthen
- POD_jerusalem.38.b: "[GetLocalPlayerPietyTextIcon] Encourage making aliyah"        #piety to strengthen
- POD_jerusalem.38.c: "@gold_icon! Build over synagogues"          #gold to weaken
- POD_jerusalem.38.d: "[GetLocalPlayerPietyTextIcon] Incentivize conversions, voluntary or otherwise"         #piety to weaken
+ POD_jerusalem.35.t: "Баланс сил"
+ POD_jerusalem.35.desc: "[Concept('grand_city', 'Великий город')|E] #TOOLTIP:game_concept_holy_jerusalem_desc #E Священный Иерусалим#!#! балансирует на острие ножа, лавируя между тремя основными религиозными фракциями. В зависимости от ваших целей в отношении структур Иерусалима, вам нужно будет изменить баланс сил в пользу различных фракций."
+ POD_jerusalem.35.a: "Изменить @piety_level_3_icon_christian!влияние христиан"
+ POD_jerusalem.35.b: "Изменить @piety_level_3_icon_islam!влияние мусульман"
+ POD_jerusalem.35.c: "Изменить @piety_level_3_icon_judaism!влияние иудеев"
+ POD_jerusalem.35.d: "С другой стороны..."
+
+ POD_jerusalem.36.t: "Христианское влияние в Иерусалиме"
+ POD_jerusalem.36.desc: "На протяжении почти двух столетий Иерусалим то и дело переходил из рук в руки между различными христианскими и мусульманскими фракциями. Совсем недавно Шестой крестовый поход завершился победой Фридриха II, христианского императора Священной Римской империи, который заявил свои права на Иерусалим. Кроме того, заключение договора привело к тому, что султан Египта аль-Камиль переключил свое внимание с Иерусалима на эмира Дамаска ан-Насира Дауда. В Иерусалиме действуют пять орденов братьев-рыцарей, которые помогают христианским целям. Три государства крестоносцев оказывают дальнейшую поддержку с севера. Кроме того, население города возросло до ста тысяч человек, что равно или превышает его численность при Фатимидском халифате, усиливая влияние христиан по мере того, как все больше людей переезжает в Иерусалим.\n\nК сожалению, христиане сталкиваются с различными трудностями. Иерусалимское королевство расколото гражданской войной, которая распространяется даже на ордена крестоносцев. Кроме того, в 1239 году истекает срок перемирия, заключенного Фридрихом, и нет никаких сомнений в том, что окружающие мусульманские державы предпримут нападение."
+ POD_jerusalem.36.a: "@gold_icon! Поддержать итальянских купцов"    #gold to strengthen
+ POD_jerusalem.36.b: "@prestige_icon! Укрепить единство в регионе" #prestige to strengthen
+ POD_jerusalem.36.c: "@gold_icon! Организовать точечные удары"     #gold to weaken
+ POD_jerusalem.36.d: "@prestige_icon! Раздуть пламя гражданской войны"      #prestige to weaken
+
+ POD_jerusalem.37.t: "Мусульманское влияние в Иерусалиме"
+ POD_jerusalem.37.desc: "На протяжении почти двух столетий Иерусалим то и дело переходил из рук в руки между различными христианскими и мусульманскими фракциями. Совсем недавно Шестой крестовый поход завершился победой Фридриха II, христианского императора Священной Римской империи, который заявил свои права на Иерусалим. Несмотря на то, что город был временно лишён правления, договор гарантировал мусульманам право продолжать отправление религиозных обрядов. После того, как Иерусалим в 1244 году перешёл под власть Хорезмской империи, он не выпадет из рук мусульман в течение столетий. Даже до этого как смертные, так и сверхъестественные правители и жители этого региона были преимущественно мусульманами.\n\nОднако в настоящее время Иерусалим контролируется смертными христианами. Мусульманские султаны и эмиры воюют между собой, и монгольское вторжение в 1260 году еще больше ослабит влияние мусульман в регионе."
+ POD_jerusalem.37.a: "@gold_icon! Расширить усилия по исламизации"    #gold to strengthen
+ POD_jerusalem.37.b: "@prestige_icon! Поощрить набеги газва"         #prestige to strengthen
+ POD_jerusalem.37.c: "@gold_icon! Разграничить местных мусульманских правителей"  #gold to weaken
+ POD_jerusalem.37.d: "@prestige_icon! Изгнать мусульманских смутьянов"     #prestige to weaken
+
+ POD_jerusalem.38.t: "Иудейское влияние в Иерусалиме"
+ POD_jerusalem.38.desc: "На протяжении почти двух столетий Иерусалим то и дело переходил из рук в руки между различными христианскими и мусульманскими фракциями. Неизменным оставалось только одно: погибло много евреев. В кровавые недели крестоносцы-христиане вырезали множество евреев и удерживали их в заложниках с целью получения выкупа. Несмотря на то, что мусульманские правители были более терпимы, они никогда не отказывались от преследования евреев. Синагоги и древние святые места часто подвергаются нападениям, осквернению или просто разрушению.\n\nУчитывая все эти трудности, с которыми сталкиваются евреи в Иерусалиме, вы могли бы легко искоренить их или бороться за их сохранение, в зависимости от ваших намерений."
+ POD_jerusalem.38.a: "@gold_icon! Организовать стражу и оборону"  #gold to strengthen
+ POD_jerusalem.38.b: "[GetLocalPlayerPietyTextIcon] Поощрить совершении алии"        #piety to strengthen
+ POD_jerusalem.38.c: "@gold_icon! Построить синагоги"          #gold to weaken
+ POD_jerusalem.38.d: "[GetLocalPlayerPietyTextIcon] Стимулировать обращения, добровольные или иные"         #piety to weaken

@@ -160,7 +160,7 @@
  PODcanon_chars.19.a: "Расскажи мне о своих военных походах, Велисарий."
  PODcanon_chars.19.b: "Дипломатия - сложный предмет..."
  PODcanon_chars.19.c: "...возможно, такой же сложный, как интриги."
- PODcanon_chars.19.d: "Я передумала."
+ PODcanon_chars.19.d: "Я [Select_CString(ROOT.Char.IsFemale, 'передумала', 'передумал' )]."
 
  shaky_secrets_modifier: "Зыбкие секреты"
  shaky_secrets_modifier_desc: "Они знают, что вы что-то скрываете, и хотят это выяснить."
