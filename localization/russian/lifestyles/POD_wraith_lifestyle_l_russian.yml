@@ -265,7 +265,7 @@
  TARGET_GAINED_THORN_LIFESTYLE_XP: "#TOOLTIP:game_concept_thorn_lifestyle_desc #E Опыт шипов#!#! [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличен на $VALUE|V0$"
 
  GAINS_A_THORN_LIFESTYLE_PERKPOINT: "Получает $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_thorn_lifestyle_desc #E шипов#!#!"
- GAINED_A_THORN_LIFESTYLE_PERKPOINT: "Получено $VALUE|V0$ #TOOLTIP:game_concept_thorn_lifestyle_desc #E Шипы#!#! [perk|E] Unlock"
+ GAINED_A_THORN_LIFESTYLE_PERKPOINT: "Получено $VALUE|V0$ #TOOLTIP:game_concept_thorn_lifestyle_desc #E Шипы#!#! [Concept('perk', 'достоинство')|E] Unlock"
  I_GAIN_A_THORN_LIFESTYLE_PERKPOINT: "Вы получите $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_thorn_lifestyle_desc #E шипов#!#!"
  I_GAINED_A_THORN_LIFESTYLE_PERKPOINT: "Вы получили $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_thorn_lifestyle_desc #E шипов#!#!"
  TARGET_GAINS_A_THORN_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_thorn_lifestyle_desc #E шипов#!#!"
@@ -396,13 +396,13 @@
  defiance_perk_name: "Сопротивление"
  shadow_wrack_perk_name: "Разрушение тени"
 
- COAX_PERK_EFFECT: "Resisting Shadow is more likely to succeed\n#F A Pardoner may call on their Shadow at decreased risk.#!"
- BULWARK_PERK_EFFECT: "Less chance of gaining [stress|E] in the Adventure into Maelstroms [Concept('umbra', 'Умбра')|E] action.\n#F A Pardoner can temporarily shield themselves or others from a Maelstrom.#!"
- TRANSFER_ANGST_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], can store 50 #TOOLTIP:game_concept_static_stress_desc #E Психическое напряжение#!#! for 5 years, after which you will get 80 #TOOLTIP:game_concept_static_stress_desc #E Психическое напряжение#!#!\n#F A Pardoner can temporarily hold Angst in themselves until it can be transferred to an appropriate storage place.#!"
- TRIMMING_THE_BLACK_ROSE_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], remove 1 #TOOLTIP:game_concept_thorn_lifestyle_desc #E Шипы#!#! [perk|E], or lose 50 #TOOLTIP:game_concept_static_stress_desc #E Психическое напряжение#!#!\n#F A Pardoner may prevent a Shadow from using its Thorns.#!"
- COOLING_THE_BLOOD_PERK_EFFECT: "Number of dark passions: #P -1#!\n#F A Pardoner can weaken a Shadow's Dark Passions.#!"
- DEFIANCE_PERK_EFFECT: "Resisting Shadow is more likely to succeed\nReduce chance of losing control to shadow\n#F A Pardoner can beat back a powerful Shadow trying to take over a wraith.#!"
- SHADOW_WRACK_PERK_EFFECT: "Massively reduce chance of losing control to shadow\n#F A Pardoner may use this to strip a [GetTrait('spectre').GetName( GetNullCharacter )] of Angst and pull their Psyche to the fore of their personality.#!"
+ COAX_PERK_EFFECT: "Сопротивление Тени с большей вероятностью приведёт к успеху.\n#F Искупитель может призвать свою Тень с меньшим риском.#!"
+ BULWARK_PERK_EFFECT: "Снижение вероятности получить [Concept('stress', 'стресс')|E] в действии [Concept('umbra', 'Умбры')|E] «Путешествие в вихрь».\n#F Искупитель может временно оградить себя или других от вихря.#!"
+ TRANSFER_ANGST_PERK_EFFECT: "Можно собрать 50 #TOOLTIP:game_concept_static_stress_desc #E психического напряжения#!#! в течение 5 лет через [Concept('character_interaction', 'взаимодействие персонажа')|E], после чего вы получите 80 #TOOLTIP:game_concept_static_stress_desc #E психического напряжения#!#!.\n#F Искупитель может временно хранить ангст в себе до тех пор, пока его не можно будет поместить в соответствующее место хранения.#!"
+ TRIMMING_THE_BLACK_ROSE_PERK_EFFECT: "Можно удалить 1 [Concept('perk', 'достоинство')|E] #TOOLTIP:game_concept_thorn_lifestyle_desc #E шипов#!#! или потерять 50 #TOOLTIP:game_concept_static_stress_desc #E психического напряжения#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Искупитель может помешать Тени использовать шипы.#!"
+ COOLING_THE_BLOOD_PERK_EFFECT: "Количество тёмных страстей: #P -1#!\n#F Искупитель может ослабить тёмные страсти Тени.#!"
+ DEFIANCE_PERK_EFFECT: "Сопротивление Тени с большей вероятностью приведёт к успеху.\nСнижение вероятности утраты контроля в пользу тени.\n#F Искупитель может дать отпор могущественной Тени, пытающейся захватить власть над призраком.#!"
+ SHADOW_WRACK_PERK_EFFECT: "Значительное снижение вероятности утраты контроля в пользу тени.\n#F Искупитель может использовать это, чтобы лишить #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L спектра#!#! от анста и вывести психику на передний план своей личности.#!"
 
  # Embody
  embody_visible: "Воплощение"
@@ -412,18 +412,18 @@
  phantom_perk_name: "Фантом"
  statue_perk_name: "Статуя"
  life_in_death_perk_name: "Жизнь-в-смерти"
- shroudguide_perk_name: "Поводырь Заверсы"
+ shroudguide_perk_name: "Поводырь Завесы"
  materialize_perk_name: "Материализация"
  harrow_the_mortal_flesh_perk_name: "Терзание смертной плоти"
 
- WHISPERS_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], get ability to interact with [Glossary('земли Плоти','game_concept_skinlands_desc')] for 5 years, at cost of 3 pathos.\n#F A Proctor may whisper through the Shroud.#!"
- CACHE_PERK_EFFECT: "Allow gifting [artifact|E] and gold to the Quick of the [Glossary('земли Плоти','game_concept_skinlands_desc')].\n#F A Proctor can temporarily move a relic into the [Glossary('земли Плоти','game_concept_skinlands_desc')].#!"
- PHANTOM_PERK_EFFECT: "Decrease cost of [GetPerk('whispers_perk').GetName(GetPlayer)] [Concept('character_interaction', 'взаимодействие персонажа')|E] from 3 to 2 pathos\n#F A Proctor can materialize in a hazy, intangible form.#!"
- STATUE_PERK_EFFECT: "Decrease cost of [GetPerk('whispers_perk').GetName(GetPlayer)] [Concept('character_interaction', 'взаимодействие персонажа')|E] from 2 to 1 pathos\n#F A Proctor can materialize into a solid form, but cannot move while in it.#!"
- LIFE_IN_DEATH_PERK_EFFECT: "Decrease cost of [GetPerk('whispers_perk').GetName(GetPlayer)] [Concept('character_interaction', 'взаимодействие персонажа')|E] from 1 to 0 pathos\n#F A Proctor can materialize as a passable version of a living person.#!"
- SHROUDGUIDE_PERK_EFFECT: "#F A Proctor can share the effects of Embody arts that allow manifestation in the [Glossary('земли Плоти','game_concept_skinlands_desc')] with other wraiths.#!"
- MATERIALIZE_PERK_EFFECT: "Can travel to [Glossary('земли Плоти','game_concept_skinlands_desc')], while gaining 'material' body.\n#F A Proctor can temporarily return to a lifelike state.#!"
- HARROW_THE_MORTAL_FLESH_PERK_EFFECT: "Allow gifting titles to other supernatural.\n#F A Proctor can bring a mortal or other supernatural into the [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
+ WHISPERS_PERK_EFFECT: "Доступна возможность взаимодействовать с [Glossary('землями Плоти','game_concept_skinlands_desc')] в течение 5 лет за 3 пафоса через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Проктор может шептать сквозь Саван.#!"
+ CACHE_PERK_EFFECT: "Можно дарить [Concept('artifact', 'артефакты')|E] и золото Скоротечным [Glossary('земель Плоти','game_concept_skinlands_desc')].\n#F Проктор может временно переместить реликвию в [Glossary('земли Плоти','game_concept_skinlands_desc')].#!"
+ PHANTOM_PERK_EFFECT: "Снижает стоимость [Concept('character_interaction', 'взаимодействия персонажа')|E] «[GetPerk('whispers_perk').GetName(GetPlayer)]» с 3 до 2 ед. пафоса.\n#F Проктор может материализоваться в туманной, неосязаемой форме.#!"
+ STATUE_PERK_EFFECT: "Снижает стоимость [Concept('character_interaction', 'взаимодействия персонажа')|E] «[GetPerk('whispers_perk').GetName(GetPlayer)]» с 2 до 1 ед. пафоса.\n#F Проктор может материализоваться в твёрдую форму, но не может двигаться, находясь в ней.#!"
+ LIFE_IN_DEATH_PERK_EFFECT: "Снижает стоимость [Concept('character_interaction', 'взаимодействия персонажа')|E] «[GetPerk('whispers_perk').GetName(GetPlayer)]» с 1 до 0 ед. пафоса.\n#F Проктор может материализоваться в виде сносной версии живого человека.#!"
+ SHROUDGUIDE_PERK_EFFECT: "#F Проктор может поделиться с другими призраками эффектами искусства Воплощения, которые допускают проявление в [Glossary('землях Плоти','game_concept_skinlands_desc')].#!"
+ MATERIALIZE_PERK_EFFECT: "Можно путешествовать в [Glossary('земли Плоти','game_concept_skinlands_desc')], получив при этом «материальное» тело.\n#F Проктор может временно вернуться в нормальное состояние.#!"
+ HARROW_THE_MORTAL_FLESH_PERK_EFFECT: "Можно передавать титулы другим сверхъестественным существам.\n#F Проктор может привести смертного или другое сверхъестественное существо в [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
 
  # Fatalism
  fatalism_visible: "Фатализм"
@@ -437,14 +437,14 @@
  breathing_the_mists_perk_name: "Вдох туманов"
  ensnare_perk_name: "Ловушка"
 
- KISMET_PERK_EFFECT: "#F An Oracle can read the deathmarks on a wraith or mortal, and can also see that person's importance in Fate's plans.#!"
- DISTANT_VISIONS_PERK_EFFECT: "#F An Oracle may clearly see what relevant events are happening elsewhere.#!"
- FORESHADOW_PERK_EFFECT: "You will receive notification if someone intends to murder your friends or family.\nYou will receive notification if someone intends to seduce your lovers or consorts.\nYour prisoner has less chance of escaping from your prison.\n#F An Oracle can detect impending danger.#!"
- READING_THE_BONES_PERK_EFFECT: "Unlock $deceitful_progress_hostile_schemes_decision$ [decision|E].\n#F An Oracle can see a person or object's future, save for their own.#!"
- FATES_HAND_APPARENT_PERK_EFFECT: "$POD_can_summon_on_death_trigger_loca$\n#F An Oracle can detect the death of a mortal that Fate has chosen.#!"
- SIDESTEP_PERK_EFFECT: "#F The Oracle can foretell forthcoming attacks, allowing them to prepare a defense, or place themselves in the way of an attack meant for someone else.#!"
- BREATHING_THE_MISTS_PERK_EFFECT: "Unlock $impatient_rushing_all_schemes_decision$ [decision|E].\n#F An Oracle's foresight allows them to prepare for future events.#!"
- ENSNARE_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n$POD_can_command_wraith_trigger_loca$\n#F An Oracle can tangle a wraith's threads to the point they no longer control their own destiny, instead serving another's ends.#!"
+ KISMET_PERK_EFFECT: "#F Оракул может прочитать смертельные знаки на призраке или смертном, а также может увидеть важность этого человека в планах Судьбы.#!"
+ DISTANT_VISIONS_PERK_EFFECT: "#F Оракул может ясно видеть, какие важные события происходят в другом месте.#!"
+ FORESHADOW_PERK_EFFECT: "Вы получите уведомление, если кто-то вознамерится убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то задумает соблазнить ваших любовников или консортов.\nУ ваших узников меньше шансов на побег из темницы.\n#F Оракул может обнаружить надвигающуюся опасность.#!"
+ READING_THE_BONES_PERK_EFFECT: "Разблокировано [Concept('decision', 'решение')|E] «$deceitful_progress_hostile_schemes_decision$».\n#F Оракул может предвидеть будущее человека или объекта, за исключением собственного.#!"
+ FATES_HAND_APPARENT_PERK_EFFECT: "$POD_can_summon_on_death_trigger_loca$\n#F Оракул может предугадать смерть смертного, которого выбрала Судьба.#!"
+ SIDESTEP_PERK_EFFECT: "#F Оракул может предсказать предстоящие атаки, позволяя ему подготовиться к обороне или встать на пути атаки, предназначенной для кого-то другого.#!"
+ BREATHING_THE_MISTS_PERK_EFFECT: "Разблокировано [Concept('decision', 'решение')|E] «$impatient_rushing_all_schemes_decision$».\n#F Предвидение оракула позволяет ему подготовиться к будущим событиям.#!"
+ ENSNARE_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n$POD_can_command_wraith_trigger_loca$\n#F Оракул может запутать нити призрака до такой степени, что он больше не сможет контролировать свою судьбу, вместо этого служа чьим-то целям.#!"
 
  # Inhabit
  inhabit_visible: "[CharacterLifestyleWindow.GetCharacter.Custom( 'inhabit_custom_name' )]" 
@@ -458,35 +458,35 @@
  empower_perk_name: "Созидание"
  impress_perk_name: "Впечатление"
 
- LIGHTNINGS_BITE_PERK_EFFECT: "#F An Artificer can charge a small metal object with electricity that will discharge into the next people who touch it.#!"
- FORGE_AFFINITY_PERK_EFFECT: "Soulforge craft will have a better outcome.\n#F An Artificer's soulforging is permanently improved.#!"
- SYMPATHY_PERK_EFFECT: "#F An Artificer can Gremlinize a number of similar simple machines at once.#!"
- SMITHS_TENACITY_PERK_EFFECT: "#F An Artificer can make themselves more resistant to damage.#!"
- EMPOWER_PERK_EFFECT: "Soulforge craft will have a better outcome.\n#F An Artificer can imbue a relic with one of his Arcanoi, create a temporary Artifact.#!"
- IMPRESS_PERK_EFFECT: "$unlock_enhancing_node$ Sacrifice a $POD_splat_wraith$ [prisoner|E] to improve the [artifact|E] based on the sacrifice's [traits|E]\n#F An Artificer may place the memories and personality of a wraith into a non-living item.#!"
+ LIGHTNINGS_BITE_PERK_EFFECT: "#F Мастеровой может зарядить небольшой металлический предмет электричеством, которое разрядится в следующего человека, который прикоснется к нему.#!"
+ FORGE_AFFINITY_PERK_EFFECT: "Ковка душ будет иметь лучшие результаты.\n#F Способность мастерового к ковке души постоянно улучшается.#!"
+ SYMPATHY_PERK_EFFECT: "#F Мастеровой может гремлинизировать сразу несколько подобных простых машин.#!"
+ SMITHS_TENACITY_PERK_EFFECT: "#F Мастеровой может сделать себя более устойчивым к повреждениям.#!"
+ EMPOWER_PERK_EFFECT: "Ковка душ будет иметь лучшие результаты.\n#F Мастеровой может наполнить реликвию одним из своих арканоев, создав временный артефакт.#!"
+ IMPRESS_PERK_EFFECT: "$unlock_enhancing_node$, позволяющий принести в жертву [Concept('prisoner', 'узника')|E]-призрака, чтобы улучшить [Concept('artifact', 'артефакт')|E] в зависимости от [Concept('traits', 'свойств')|E] жертвы.\n#F Мастеровой может поместить воспоминания и личность призрака в неживой предмет.#!"
 
  # Keening
  keening_visible: "Песнопение"
  
- hearing_voices_perk_name: "Hearing Voices"
- mood_music_perk_name: "Mood Music"
- satire_perk_name: "Satire"
- siren_song_perk_name: "Siren Song"
- crescendo_perk_name: "Crescendo"
- spectre_song_perk_name: "Spectre Song"
- requiem_perk_name: "Requiem"
+ hearing_voices_perk_name: "Слух на голоса"
+ mood_music_perk_name: "Музыка настроения"
+ satire_perk_name: "Сатира"
+ siren_song_perk_name: "Песнь сирены"
+ crescendo_perk_name: "Крещендо"
+ spectre_song_perk_name: "Песнь спектра"
+ requiem_perk_name: "Реквием"
 
- HEARING_VOICES_PERK_EFFECT: "#F A Chanteur can make their voice appear to come from a nearby object or person.#!"
+ HEARING_VOICES_PERK_EFFECT: "#F A Chanteur can make their voice appear to come from a nearby object or person.#!" #Певцы
  MOOD_MUSIC_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], can improve target's opinion of you.\n#F A Chanteur can inspire both positive and negative emotions in their listeners.#!"
  SATIRE_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to downgrade random relation of target\n#F A Chanteur can ruin a wraith's social standing with a story or song.#!"
  SIREN_SONG_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to gain a hook over the target.\n#F A Chanteur can enthrall a victim, making it easy for them to submit to the Chanteur's influence.#!"
- CRESCENDO_PERK_EFFECT: "Unlocks new [single_combat_duel|E] moves.\n#F A Chanteur can physically damage wraiths with a scream. If Embodied, they can terrify the Quick to the point of harm.#!"
- SPECTRE_SONG_PERK_EFFECT: "Unlocks new [single_combat_duel|E] moves.\n#F A Chanteur can imitate a Spectre’s moans and screams.#!"
+ CRESCENDO_PERK_EFFECT: "Разблокированы новые движения в [Concept('single_combat_duel', 'поединке')|E].\n#F A Chanteur can physically damage wraiths with a scream. If Embodied, they can terrify the Quick to the point of harm.#!"
+ SPECTRE_SONG_PERK_EFFECT: "Разблокированы новые движения в [Concept('single_combat_duel', 'поединке')|E].\n#F A Chanteur can imitate a Spectre’s moans and screams.#!"
  REQUIEM_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you upgrade a existent relation.\n#F A Chanteur can fill someone with a completely overwhelming emotion.#!"
- 
+
  # Lifeweb
- lifeweb_visible: "Lifeweb"
- 
+ lifeweb_visible: "Паутина"
+
  sense_strand_perk_name: "Sense Strand"
  lifeline_perk_name: "Lifeline"
  strand_channel_perk_name: "Strand Channel"
@@ -504,10 +504,10 @@
  SEVER_STRAND_PERK_EFFECT: "Bonus to $POD_manipulate_fetters_interaction$ [Concept('character_interaction', 'взаимодействие персонажа')|E], allow decreasing [Concept('Fetter', 'Оковы')|E] Level as well destroying level 1 [Concept('Fetter', 'оков')|E].\n#F A Monitor can strip a [Concept('Fetter', 'Оковы')|E] from another Wraith.#!"
  WALK_THE_WEB_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to teleport to a [Concept('Fetter', 'Оковы')|E]'s location.\n#F A Monitor can quickly travel to a [Concept('Fetter', 'Оковы')|E].#!"
  SOULS_INTERWOVEN_PERK_EFFECT: "Unlock $POD_sprout_fetter_seed_character_interaction$ [Concept('character_interaction', 'взаимодействие персонажа')|E] to sprout [Concept('Fetter', 'Оковы')|E] seed on [GetTrait('mortal').GetName(GetNullCharacter)].\n#F A Monitor can take a willing mortal (or living/undead supernatural) as a [Concept('Fetter', 'Оковы')|E], and in return they can communicate with the Monitor at will, regardless of where either of them is.#!"
- 
+
  # Moliate
- moliate_visible: "Moliate"
- 
+ moliate_visible: "Ваяние"
+
  imitate_perk_name: "Imitate"
  lizard_tail_perk_name: "Lizard Tail"
  sculpt_perk_name: "Sculpt"
@@ -525,10 +525,10 @@
  VOLLEY_PERK_EFFECT: "#F A Masquer may shape and launch projectiles for defense.#!"
  REND_PERK_EFFECT: "Wound enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E].\n#F A Masquer can tear apart the #TOOLTIP:game_concept_Corpus_desc #E Корпус#!#! of another wraith.#!"
  BODYSHAPE_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to modify [physical_trait|E] of yourself.\n#F A Masquer can alter #TOOLTIP:game_concept_Corpus_desc #E Корпус#!#! to whatever they choose.#!"
- 
+
  # Outrage
- outrage_visible: "Outrage" 
- 
+ outrage_visible: "Гнев"
+
  wraithgrasp_perk_name: "Wraithgrasp"
  breath_of_the_grave_perk_name: "Breath of the Grave"
  stonehand_punch_perk_name: "Stonehand Punch"
@@ -544,12 +544,12 @@
  WINGS_OF_RAGE_PERK_EFFECT: "#F A Spook can boost their athletics and speed.#!"
  DEATHS_TOUCH_PERK_EFFECT: "#F A Spook can freely manipulate objects in the [Glossary('земли Плоти','game_concept_skinlands_desc')], and telekinetically project their hands in the [underworld|E].#!"
  WYLDFIRE_PERK_EFFECT: "#F A Spook can conjure barrow-flame.#!"
- OBLIVIATE_PERK_EFFECT: "Unlock $EXECUTION_UNMAKING$ [execution|E] option.\nAllow receiving [artifact|E] from the Quick of the [Glossary('земли Плоти','game_concept_skinlands_desc')].\n#F A Spook may damage a mortal, wraith, or thing so severely it falls straight to [UmbraGlossary('oblivion')]. When used on a material object Inhabited by a wraith, it instead becomes a relic.#!"
+ OBLIVIATE_PERK_EFFECT: "Unlock $EXECUTION_UNMAKING$ [execution|E] option.\nAllow receiving [Concept('artifact', 'артефакт')|E] from the Quick of the [Glossary('земли Плоти','game_concept_skinlands_desc')].\n#F A Spook may damage a mortal, wraith, or thing so severely it falls straight to [UmbraGlossary('oblivion')]. When used on a material object Inhabited by a wraith, it instead becomes a relic.#!"
  ANGER_ENOUGH_FOR_TWO_WORLDS_PERK_EFFECT: "Unlock Tear Down the Shroud option in Manipulate the Shroud [Concept('umbra', 'Умбра')|E] action.\n#F A Spook can temporarily tear down the Shroud, with potentially devastating consequences.#!"
- 
+
  # Pandemonium
- pandemonium_visible: "Pandemonium"
- 
+ pandemonium_visible: "Пандемониум"
+
  weirdness_perk_name: "Weirdness"
  bite_me_perk_name: "Bite Me"
  dark_ether_perk_name: "Dark Ether"
@@ -585,10 +585,10 @@
  INCUBUS_PERK_EFFECT: "Unlock Drain Energy [Concept('character_interaction', 'взаимодействие персонажа')|E], allow using the target's resource to gain pathos.\n#F A Sandman can drain energy from a mortal as Pathos.#!"
  AGON_PERK_EFFECT: "$POD_can_covert_to_wraith_trigger_loca$\n#F A Sandman may rip a mortal’s soul from their body.#!"
  ONEIRATAXIA_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you make target leave [GetTrait('torpor').GetName( GetPlayer )].\n#F Allows a Sandman to prevent a mortal from sleeping, prevent a wraith from Slumbering, stop a sleeper from waking up, or stop a mortal from dreaming.#!"
- 
+
  # Puppetry
- puppetry_visible: "Puppetry" 
- 
+ puppetry_visible: "Кукловодство"
+
  skinride_perk_name: "Skinride"
  twitch_perk_name: "Twitch"
  control_creature_perk_name: "Control Creature"
@@ -602,10 +602,10 @@
  MASTERS_VOICE_PERK_EFFECT: "Unlock higher level of [GetPerk('twitch_perk').GetName(GetPlayer)] [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F A Puppeteer can temporarily speak for a mortal host.#!"
  REIN_IN_THE_MIND_PERK_EFFECT: "Unlock highest level of [GetPerk('twitch_perk').GetName(GetPlayer)] [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F A Puppeteer can take almost complete control over a host.#!"
  SHADOW_POSSESS_PERK_EFFECT: "Unlock 'Back of Life' Objective.\n#F A Puppeteer can turn an animal into a Conduit for the Risen.#!"
- 
+
  # Usury
- usury_visible: "Usury"
- 
+ usury_visible: "Ростовщичество"
+
  appraisal_perk_name: "Appraisal"
  pathos_conduit_perk_name: "Pathos Conduit"
  early_withdrawal_perk_name: "Early Withdrawal"
@@ -621,9 +621,9 @@
  INVEST_PERK_EFFECT: "Allows you to create a pathos vessel.\n#F A Usurer can store Pathos or #TOOLTIP:game_concept_Corpus_desc #E Корпус#!#! in a relic for later use.#!"
 
  # Thorn
- thorn_visible: "Thorn"
- thorn_lifestyle_perks: "#TOOLTIP:game_concept_thorn_lifestyle_desc #E Шипы#!#! [perks|E]: $NUM|0$"
- 
+ thorn_visible: "Шипы"
+ thorn_lifestyle_perks: "[Concept('perks', 'Достоинства')|E] #TOOLTIP:game_concept_thorn_lifestyle_desc #E пути шипов#!#!: $NUM|0$"
+
  spectre_prestige_perk_name: "Spectre Prestige"
  dark_allies_perk_name: "Dark Allies"
  tainted_relic_perk_name: "Tainted Relic"
@@ -659,7 +659,7 @@
  AURA_OF_CORRUPTION_PERK_EFFECT: "Every 5 years, 25% chance to get [GetModifier('aura_of_corruption_modifier').GetNameWithTooltip].\n#F Through this Thorn’s effects, the Shadow somehow defiles the wraith’s presentation of herself, making her presence unpleasant to other wraiths.#!"
  MIRROR_MIRROR_PERK_EFFECT: "Every 5 years, 25% chance to get [GetModifier('mirror_mirror_modifier').GetNameWithTooltip].\n#F Whenever the Wraith sees itself in a reflective surface, the Shadow can make the reflection sees it as horribly distorted, in whatever manner the Shadow desires.#!"
  SHADOW_CALL_PERK_EFFECT: "During Catharsis gain [GetModifier('shadow_call_modifier').GetNameWithTooltip].\n#F Shadow Call allows a wraith's Shadow to summon nearby Spectres.#!"
- PACT_OF_DOOM_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], gain 2 #TOOLTIP:game_concept_arcanoi_lifestyle_desc #E путь арканоев#!#! [perk|E] at the cost of increasing the power of your Shadow.\n#F If a wraith has this Thorn, she and her Shadow can negotiate a pact by means of which the Shadow will teach her a predetermined number of levels in an Arcanos.#!"
+ PACT_OF_DOOM_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], gain 2 #TOOLTIP:game_concept_arcanoi_lifestyle_desc #E путь арканоев#!#! [Concept('perk', 'достоинство')|E] at the cost of increasing the power of your Shadow.\n#F If a wraith has this Thorn, she and her Shadow can negotiate a pact by means of which the Shadow will teach her a predetermined number of levels in an Arcanos.#!"
  TRICK_OF_THE_LIGHT_PERK_EFFECT: "Every 5 years, 25% chance to get [GetModifier('trick_of_the_light_modifier').GetNameWithTooltip].\n#F By using this Thorn, the Shadow subtly alters the Psyche’s perception.#!"
  BAD_LUCK_PERK_EFFECT: "Every 5 years, 25% chance to get [GetModifier('bad_luck_modifier').GetNameWithTooltip].\n#F The Shadow can spend a Angst to cause the Psyche to enter a retest.#!"
  SHADOWED_FACE_PERK_EFFECT: "During Catharsis gain [GetModifier('shadowed_face_modifier').GetNameWithTooltip].\n#F With this Thorn, the Shadow completely changes its Psyche’s appearance when it takes over.#!"
@@ -672,11 +672,11 @@
  THORN_WHISPERS_PERK_EFFECT: "Increase chance of losing control over your Shadow.\nDecrease success chance of regaining control over your Shadow.\n#F Shadow with this Thorn can speak to the Shadows of other wraiths without the knowledge of their Psyches.#!"
  THORN_MANIFESTATION_PERK_EFFECT: "Every 5 years, 25% chance to get [GetModifier('thorn_manifestation_modifier').GetNameWithTooltip].\n#F By expending Angst, the Shadow can materialize as an entity separate from the wraith.#!"
  DEVILS_DARE_PERK_EFFECT: "Number of Dark Passions: #N +1#!\n#F Devil’s Dare is the emotional equivalent of a game of chicken. To use this Thorn, the Shadow invests a number of Angst and writes down something that she dares the Psyche to do.#!"
- VAMPIRIC_NATURE_PERK_EFFECT: "Every 5 year [perk|E] empowering your Shadow gain another chance to fire.\n#F This Thorn enables a Shadow to siphon Angst from others for its own purposes.#!"
+ VAMPIRIC_NATURE_PERK_EFFECT: "Every 5 year [Concept('perk', 'достоинство')|E] empowering your Shadow gain another chance to fire.\n#F This Thorn enables a Shadow to siphon Angst from others for its own purposes.#!"
 
  # Flux
- flux_visible: "Flux"
- 
+ flux_visible: "Поток"
+
  rot_perk_name: "Rot"
  strengthen_perk_name: "Strengthen"
  non_euclidean_mechanics_perk_name: "Non Euclidean Mechanics"
@@ -686,15 +686,15 @@
  reintegrate_relics_perk_name: "Reintegrate"
  
  ROT_PERK_EFFECT: "#F An Alchemist can cause a small, non-living object to age rapidly.#!"
- STRENGTHEN_PERK_EFFECT: "$unlock_enhancing_node$ Add a [modifier|E] based on the [artifact|E]'s type\n#F An Alchemist can improve the very structure of an object.#!"
+ STRENGTHEN_PERK_EFFECT: "$unlock_enhancing_node$ Add a [modifier|E] based on the [Concept('artifact', 'артефакт')|E]'s type\n#F An Alchemist can improve the very structure of an object.#!"
  NON_EUCLIDEAN_MECHANICS_PERK_EFFECT: "#F An Alchemist can repair or improve a technological relic.#!"
- RELIC_DOWSING_PERK_EFFECT: "$unlock_forging_node$ Use 3 famed shards to add 3 modifiers based on the [artifact|E]'s type.\n#F An Alchemist can find newly formed relics in the [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
+ RELIC_DOWSING_PERK_EFFECT: "$unlock_forging_node$ Use 3 famed shards to add 3 modifiers based on the [Concept('artifact', 'артефакт')|E]'s type.\n#F An Alchemist can find newly formed relics in the [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
  PUPPET_THEATER_PERK_EFFECT: "#F An Alchemist can animate several small items at one time.#!"
  RENDER_RELIC_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to destroy artifact to gain Pathos.\n#F An Alchemist can render a relic down into the emotions that created it to provide Pathos, destroying it in the process.#!"
- REINTEGRATE_RELICS_PERK_EFFECT: "$unlock_forging_node$ Use 3 illustrious shards to add 4 modifiers based on the [artifact|E]'s type.\n#F An Alchemist can return relics to the Skinlands.#!"
- 
+ REINTEGRATE_RELICS_PERK_EFFECT: "$unlock_forging_node$ Use 3 illustrious shards to add 4 modifiers based on the [Concept('artifact', 'артефакт')|E]'s type.\n#F An Alchemist can return relics to the Skinlands.#!"
+
  # Intimation
- intimation_visible: "Intimation"
+ intimation_visible: "Указание"
 
  the_gleaming_perk_name: "The Gleaming"
  arcanoi_know_thyself_perk_name: "Know Thyself"
@@ -715,7 +715,7 @@
  ADRESTIAS_COMMUNION_PERK_EFFECT: "#F A Solicitor can use any Intimation art on both their Shadow and the Shadows of others, even if the Shadows aren't in control.#!"
 
  # Mnemosynis
- mnemosynis_visible: "Mnemosynis"
+ mnemosynis_visible: "Мнезис"
 
  erasure_perk_name: "Erasure"
  mnemotechnics_perk_name: "Mnemotechnics"
@@ -735,12 +735,12 @@
 
  # Jade Arcanoi
 
- emperor_visible: "Emperor"
- scholar_visible: "Scholar"
- farmer_visible: "Farmer"
- artisan_visible: "Artisan"
- merchant_visible: "Merchant"
- soul_visible: "Soul"
+ emperor_visible: "Император"
+ scholar_visible: "Учёный"
+ farmer_visible: "Землевладелец"
+ artisan_visible: "Ремесленник"
+ merchant_visible: "Торговец"
+ soul_visible: "Душа"
 
  brilliance_perk_name: "Brilliance"
  shackles_perk_name: "Shackles"
@@ -788,25 +788,25 @@
  PURIFY_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to convert a wraith into [GetTrait('barghest').GetName( GetPlayer )].\n#F A Farmer may directly attack another wraith's [GetTrait('shadow').GetName( GetPlayer )].#!"
  DEADEN_SPIRIT_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to gain a hook over a [GetTrait('barghest').GetName( GetPlayer )].\n#F A Farmer may tame an out-of-control [GetTrait('barghest').GetName( GetPlayer )].#!"
  REAP_THE_HUNGRY_GHOST_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to collect the #TOOLTIP:game_concept_Corpus_desc #E Корпус#!#! form a [GetTrait('barghest').GetName( GetPlayer )].\n#F A Farmer can collect the #TOOLTIP:game_concept_Corpus_desc #E Корпус#!#! of subdued [GetTrait('barghest').GetName( GetPlayer )] with no difficulty.#!"
- SHAPE_TRUE_JADE_PERK_EFFECT: "Gain a [Glossary('Истинный нефрит','game_concept_true_jade_desc')] every #V 5#! years.\n$unlock_forging_node$ Sacrifice a $POD_splat_wraith$ [prisoner|E] to improve the [artifact|E] based on the sacrifice's [traits|E]\n#F Given sufficient material and time, an Artisan can create any simple object from [Glossary('Истинный нефрит','game_concept_true_jade_desc')].#!"
+ SHAPE_TRUE_JADE_PERK_EFFECT: "Gain a [Glossary('Истинный нефрит','game_concept_true_jade_desc')] every #V 5#! years.\n$unlock_forging_node$ Sacrifice a $POD_splat_wraith$ [Concept('prisoner', 'узник')|E] to improve the [Concept('artifact', 'артефакт')|E] based on the sacrifice's [Concept('traits', 'свойства')|E]\n#F Given sufficient material and time, an Artisan can create any simple object from [Glossary('Истинный нефрит','game_concept_true_jade_desc')].#!"
  REMEMBRANCE_PERK_EFFECT: "Gain a White Jade every #V 3#! years.\n#F Similar to Shape True Jade, except an Artisan may use the inferior White Jade.#!"
  REWORK_RELICS_PERK_EFFECT: "#F An Artisan can change or rework a relic.#!"
- EMPOWER_JADE_PERK_EFFECT: "$unlock_enhancing_node$ Add a [modifier|E] based on the [artifact|E]'s type\n#F An Artisan may awaken the soul that composes an object and embue it with an Arcanos or Pathos.#!"
+ EMPOWER_JADE_PERK_EFFECT: "$unlock_enhancing_node$ Add a [modifier|E] based on the [Concept('artifact', 'артефакт')|E]'s type\n#F An Artisan may awaken the soul that composes an object and embue it with an Arcanos or Pathos.#!"
  CREATE_WHITE_JADE_PERK_EFFECT: "#F An Artisan can turn souls into White Jade.#!"
  TRANSFER_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to gain pathos from a prisoner or sell pathos to other wraiths.\n#F A Merchant can transfer Pathos through physical contact.#!"
  CASH_MONEY_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to gain pathos from gold.\n#F A Merchant can convert sacrifices into Pathos.#!"
  WITHDRAW_ESSENCE_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to gain pathos from White Jade Artifact.\n#F A Merchant may obtain Pathos from a Farmer-controlled [GetTrait('barghest').GetName( GetPlayer )] or raw White Jade.#!"
  RETURNING_THE_FAVOR_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to gain [dynasty_prestige|E] from pathos.\n#F A Merchant may send Pathos to a living relative.#!"
  MINT_MONEY_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to gain gold from pathos.\n#F A Merchant may turn their Pathos into physical form, such as tokens, coins, or paper money.#!"
- ARCANOI_COAX_PERK_EFFECT: "No longer gain [stress|E] from Resist Catharsis.\n#F A Doctor may call on their [GetTrait('shadow').GetName( GetPlayer )] at decreased risk.#!"
- NULLIFY_THORNS_PERK_EFFECT: "Small chance of not getting dark passion and small chance of not getting devil dare [decision|E].\n#F A Doctor can stop their [GetTrait('shadow').GetName( GetPlayer )] from using one of their Thorns.#!"
- GIVE_HIGHER_PASSIONS_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to remove a dark passion [decision|E].\n#F A Doctor may attempt to replace a [GetTrait('shadow').GetName( GetPlayer )]'s Dark Passion with one of their Passions.#!"
+ ARCANOI_COAX_PERK_EFFECT: "No longer gain [Concept('stress', 'стресс')|E] from Resist Catharsis.\n#F A Doctor may call on their [GetTrait('shadow').GetName( GetPlayer )] at decreased risk.#!"
+ NULLIFY_THORNS_PERK_EFFECT: "Small chance of not getting dark passion and small chance of not getting devil dare [Concept('decision', 'решение')|E].\n#F A Doctor can stop their [GetTrait('shadow').GetName( GetPlayer )] from using one of their Thorns.#!"
+ GIVE_HIGHER_PASSIONS_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to remove a dark passion [Concept('decision', 'решение')|E].\n#F A Doctor may attempt to replace a [GetTrait('shadow').GetName( GetPlayer )]'s Dark Passion with one of their Passions.#!"
  ALTER_DEMEANOR_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to get back your Hun personality during Catharsis.\n#F A Doctor can alter their [GetTrait('shadow').GetName( GetPlayer )]'s Archetype, including regular ones as well as Shadow based ones.#!"
  INNER_PEACE_PERK_EFFECT: "Gain access to the thorn modifier even without Catharsis.\n#F A Doctor may join with their [GetTrait('shadow').GetName( GetPlayer )] and act as one.#!"
- 
+
  # Blighted Insight
- blighted_insight_visible: "Blighted Insight"
- 
+ blighted_insight_visible: "Искаженное понимание"
+
  ill_omen_perk_name: "Ill-Omen"
  small_hours_perk_name: "Small Hours"
  cimmerian_shade_perk_name: "Cimmerian Shade"
@@ -819,10 +819,10 @@
  CIMMERIAN_SHADE_PERK_BONUS_VALUE: "[GetPerk('cimmerian_shade_perk').GetName(GetPlayer)]"
  HYPNOS_RECLINING_PERK_EFFECT: "Вы получите уведомление, если кто-то задумает убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то задумает соблазнить ваших любовников или консортов.\n#F Learn information through dreams and prophecies.#!"
  GATES_OF_HORN_PERK_EFFECT: "Позволяет принять [impatient_rushing_all_schemes_decision|El]\nПозволяет принять [deceitful_progress_hostile_schemes_decision|El].\n#F Alter the target's fate.#!"
- 
+
  # Contaminate
- contaminate_visible: "Contaminate"
- 
+ contaminate_visible: "Искажение"
+
  shadowspeech_perk_name: "Shadowspeech"
  sense_nature_perk_name: "Sense Nature"
  arcanoi_transfer_angst_perk_name: "Transfer Angst"
@@ -834,10 +834,10 @@
  ARCANOI_TRANSFER_ANGST_PERK_EFFECT: "Bonus to Contaminate [Concept('character_interaction', 'взаимодействие персонажа')|E], allow to give stress traits.\n#F A Spectre can transfer Angst to a wraith's Shadow.#!"
  AWAKEN_LATENT_THORNS_PERK_EFFECT: "Bonus to Contaminate [Concept('character_interaction', 'взаимодействие персонажа')|E], allow to give negative mental trait.\n#F This allows a Spectre to create new Thorns in a Shadow.#!"
  CALL_THE_SHADOW_PERK_EFFECT: "Bonus to Contaminate [Concept('character_interaction', 'взаимодействие персонажа')|E], allow to make target personality trait invert.\n#F The Spectre can help a wraith's Shadow overcome their Psyche.#!"
- 
+
  # Corruption
- corruption_visible: "Corruption"
- 
+ corruption_visible: "Разложение"
+
  lurid_visions_perk_name: "Lurid Visions"
  unbidden_hands_perk_name: "Unbidden Hands"
  urges_perk_name: "Urges"
@@ -849,10 +849,10 @@
  URGES_PERK_EFFECT: "#F This allows a Spectre to overcome a target's Willpower and force them into an action.#!"
  FETTER_RAPE_PERK_EFFECT: "Allow converting a [GetTrait('wraith').GetName( GetNullCharacter )] to a [GetTrait('risen').GetName( GetPlayer )].\n#F A Spectre may corrupt the fragments of soul remaining in a dead [Concept('Fetter', 'Оковы')|E] to briefly turn them into a [GetTrait('risen').GetName( GetPlayer )].#!"
  BLISSFUL_UNITY_PERK_EFFECT: "#F The Spectre becomes the dominant entity in a soul without obliterating it.#!"
- 
+
  # False Life
- false_life_visible: "False Life"
- 
+ false_life_visible: "Фальшивая жизнь"
+
  scent_of_life_perk_name: "Scent of Life"
  sound_of_life_perk_name: "Sound of Life"
  dangerous_distraction_perk_name: "Dangerous Distraction"
@@ -864,10 +864,10 @@
  DANGEROUS_DISTRACTION_PERK_EFFECT: "#F The Spectre creates a complex illusion of scent, sight and touch.#!"
  LOVES_CARESS_PERK_EFFECT: "#F The target believes they are in the presence of a person or object they love dearly.#!"
  HOMECOMING_PERK_EFFECT: "#F The target experiences a fully immersive illusion of a location[Glossary('земли Плоти','game_concept_skinlands_desc')]kinlands that is precious to them.#!"
- 
+
  # Hive-Mind
- hive_mind_visible: "Hive-Mind"
- 
+ hive_mind_visible: "Коллективный разум"
+
  silent_whispers_perk_name: "Silent Whispers"
  arcanoi_distant_whispers_perk_name: "Distant Whispers"
  tribal_commune_perk_name: "Tribal Commune"
@@ -897,10 +897,10 @@
  RACIAL_MEMORY_PERK_EFFECT: "#F A Stripling can act through the bodies of their pack mates.#!"
  ARCANOI_COMPEL_PERK_EFFECT: "#F A powerful Spectre can project their will onto the Spectres around them.#!"
  UNITY_OF_BEING_PERK_EFFECT: "#F A Spectre can temporarily sever themselves from the Hive-Mind.#!"
- 
+
  # Larceny
- larceny_visible: "Larceny"
- 
+ larceny_visible: "Воровство"
+
  steal_corpus_perk_name: "Steal Corpus"
  emotional_infection_perk_name: "Emotional Infection"
  savor_agony_perk_name: "Savor Agony"
@@ -912,10 +912,10 @@
  SAVOR_AGONY_PERK_EFFECT: "#F A Spectre can gain Angst by inflicting aggravated damage on another creature.#!"
  WITHSTAND_OBLIVION_PERK_EFFECT: "#F A Spectre can heal damage inflicted by [UmbraGlossary('oblivion')] itself.#!"
  DEFY_OBLIVION_PERK_EFFECT: "#F The Spectre can transfer the [UmbraGlossary('oblivion')] within themselves to another being.#!"
- 
+
  # Maleficence
- maleficence_visible: "Maleficence"
- 
+ maleficence_visible: "Пагуба"
+
  arcanoi_black_whispers_perk_name: "Black Whispers"
  benefice_perk_name: "Benefice"
  investiture_perk_name: "Investiture"
@@ -927,10 +927,10 @@
  INVESTITURE_PERK_EFFECT: "#F A Spectre causes the spirit of a mortal to decay, temporarily giving them supernatural powers.#!"
  DISCIPLINE_PERK_EFFECT: "#F This allows a Spectre to inflict severe pain on a target they have planted their Being into.#!"
  ARCANOI_CONVERSION_PERK_EFFECT: "#F The Spectre can bring the very feeling of [UmbraGlossary('oblivion')] onto an audience.#!"
- 
+
  # Shroud-Rending
- shroud_rending_visible: "Shroud-Rending"
- 
+ shroud_rending_visible: "Разрыв Савана"
+
  threshold_perk_name: "Threshold"
  echoes_perk_name: "Echoes"
  fleeting_glimpses_perk_name: "Fleeting Glimpses"
@@ -946,10 +946,10 @@
  VIRTUALITY_PERK_EFFECT: "#F Events happening in the [Glossary('земли Плоти','game_concept_skinlands_desc')] can now be seen and heard clearly.#!"
  LURKING_PRESENCE_PERK_EFFECT: "#F Similar to Nightmare, but can be used on mortals who are awake.#!"
  TRANSPARENT_MEMORIES_PERK_EFFECT: "#F The Spectre can use all of their senses through the Shroud.#!"
- 
+
  # Tempest-Weaving
- tempest_weaving_visible: "Tempest-Weaving"
- 
+ tempest_weaving_visible: "Плетение Бури"
+
  wormhole_perk_name: "Wormhole"
  ride_the_soul_storm_perk_name: "Ride the Soul-Storm"
  grasp_the_passing_perk_name: "Grasp the Passing"
@@ -961,10 +961,10 @@
  GRASP_THE_PASSING_PERK_EFFECT: "#F A Spectre can pull a random object, including memories, out of the [UmbraGlossaryLocalized('pod_realm_tempest','Буря')].#!"
  FAVORED_FLOTSOM_PERK_EFFECT: "#F Similar to Grasp the Passing, except a Spectre can influence the item pulled so it is one useful to them.#!"
  CARVE_THE_CHAOS_PERK_EFFECT: "#F The Spectre can shape the [UmbraGlossaryLocalized('pod_realm_tempest','Буря')] into a form they desire, such creating "sets" for Harrowings.#!"
- 
+
  # Tempestos
- tempestos_visible: "Tempestos"
- 
+ tempestos_visible: "Темпестос"
+
  storm_seeker_perk_name: "Storm Seeker"
  ride_the_nightwind_perk_name: "Ride the Nightwind"
  dust_devil_perk_name: "Dust Devil"
@@ -976,9 +976,9 @@
  DUST_DEVIL_PERK_EFFECT: "#F A Spectre can call up minor squalls and [GetModifier('nihil_modifier').GetNameWithTooltip]s to use as propulsion.#!"
  TEMPEST_FURY_PERK_EFFECT: "#F Spectres can call on the power of the [UmbraGlossaryLocalized('pod_realm_tempest','Буря')] to bring destruction in a limited fashion.#!"
  MAELSTROM_CAULDRON_PERK_EFFECT: "#F The Spectre can summon a full-strength localized Maelstrom.#!"
- 
+
  # Fascinate
- fascinate_visible: "Fascinate"
+ fascinate_visible: "Очарование"
 
  arcanoi_distraction_perk_name: "Distraction"
  arcanoi_remembrance_perk_name: "Remembrance"
@@ -991,10 +991,10 @@
  CHARGE_OF_DUTY_PERK_EFFECT: "#F A Risen may force their target to focus on a single, simple concept.#!"
  DRIVING_URGE_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to gain [weak_hook|E] on target for 1 year\n#F A Risen can create a mild obsession in a target.#!"
  TARGET_LOCK_PERK_EFFECT: "Improve [GetPerk('driving_urge_perk').GetName(GetPlayer)] [Concept('character_interaction', 'взаимодействие персонажа')|E], by changing [weak_hook|E] to [strong_hook|E].\n#F A Risen may force a target to focus on a single thing or person to the point of extreme obsession.#!"
- 
+
  # Serendipity
- serendipity_visible: "Serendipity"
- 
+ serendipity_visible: "Интуиция"
+
  fortuitous_wandering_perk_name: "Fortuitous Wandering"
  flashback_perk_name: "Flashback"
  the_face_in_the_crowd_perk_name: "The Face in the Crowd"
@@ -1003,13 +1003,13 @@
  
  FORTUITOUS_WANDERING_PERK_EFFECT: "Every passion pulse, have 10% to fire again.\n#F A Risen can discover hints to guide them to one of their Passions.#!"
  FLASHBACK_PERK_EFFECT: "#F A Risen may conjure an image of something important that happened near or with one of their [Concept('Fetter', 'оков')|E].#!"
- THE_FACE_IN_THE_CROWD_PERK_EFFECT: "Improve [GetPerk('fortuitous_wandering_perk').GetName(GetPlayer)] [perk|E] changing chance of fireing again from 10% to 20%\n#F A Risen can tell if a person is connected to one of their Passions or [Concept('Fetter', 'оков')|E].#!"
+ THE_FACE_IN_THE_CROWD_PERK_EFFECT: "Improve [GetPerk('fortuitous_wandering_perk').GetName(GetPlayer)] [Concept('perk', 'достоинство')|E] changing chance of fireing again from 10% to 20%\n#F A Risen can tell if a person is connected to one of their Passions or [Concept('Fetter', 'оков')|E].#!"
  FORTUITOUS_MEETING_PERK_EFFECT: "Invite to [court|E] Acceptance: #P +20#!\n#F A Risen may twist Fate to allow them to meet someone they want to talk to or visit with.#!"
  THE_COINCIDENTAL_GATHERING_PERK_EFFECT: "Invite to [court|E] Acceptance: #P +40#!\n#F A Risen can pull several people together in a "coincidental" meeting.#!"
- 
+
  # Behest
- behest_visible: "Behest"
- 
+ behest_visible: "Повеление"
+
  delve_perk_name: "Delve"
  trance_perk_name: "Trance"
  arcanoi_scry_perk_name: "Scry"
@@ -1026,10 +1026,10 @@
  ARCANOI_TWITCH_PERK_EFFECT: "Each $bound_wraith$ adds: [GetModifier( 'arcanoi_twitch_perk_modifier' ).GetNameWithTooltip|L]. This is cumulative.\n#F A Moriman can force small movements from a wraith.#!"
  MURMUR_PERK_EFFECT: "Each $bound_wraith$ adds: [GetModifier( 'murmur_perk_modifier' ).GetNameWithTooltip|L]. This is cumulative.\n#F A Moriman can speak through another wraith.#!"
  VEER_PERK_EFFECT: "Each $bound_wraith$ adds: [GetModifier( 'veer_perk_modifier' ).GetNameWithTooltip|L]. This is cumulative.\n#F A Moriman can create Puppetry-type control over another wraith.#!"
- 
+
  # Connaissance
- connaissance_visible: "Connaissance"
- 
+ connaissance_visible: "Связь"
+
  reler_baka_perk_name: "Reler Baka"
  renvoyer_baka_perk_name: "Renvoyer Baka"
  engagement_perk_name: "Engagement"
@@ -1049,8 +1049,8 @@
  BONTE_ABYSSALE_PERK_EFFECT: "Gain access to a random echo of an historical artifact every #V 3#! years.\n#F A Serviteur forms a pact with Les Mysteres allowing them to summon a Relic or Artifact from the Island Below the Sea.#!"
 
  # Displace
- displace_visible: "Displace"
- 
+ displace_visible: "Замена"
+
  wraithride_perk_name: "Wraithride"
  deflect_perk_name: "Deflect"
  transfuse_perk_name: "Transfuse"
