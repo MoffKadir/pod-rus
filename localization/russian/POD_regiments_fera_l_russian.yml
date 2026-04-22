@@ -33,19 +33,19 @@
  skull_pigs: "Костяные вепри"
  skull_pigs_flavor: "#F Костяные вепри - это не что иное, как обезумевшие остатки расы перевёртышей, которых когда-то называли грондр - служителей чистоты и порядка, которые когда-то хранили всю Гею от гнили и разложения.#!"
 
- fir_bolgs: "Фир-болги"
- fir_bolgs_flavor: "#F Жестокая и свирепая раса, состоящая почти полностью из воинов и охотников.#!"
-
  ###Werewolves
 
+ cliath: "Cliath"
+ cliath_flavor: "#F The Cliath are young Garou, often called "Pups" by their elders. These younglings are eager to achieve Glory and rise in Rank.#!"
+
  amazons_diana_maa: "Амазонки Дианы"
- amazons_diana_maa_flavor: "#F Амазонки Дианы - группа фурий, которые больше стремятся быть дерзкими, неудержимыми женщинами-воинами, чем священными мстительницами. Этот лагерь редко рассматривается как официальная группа, и скорее является общим местом для тех, кто стремится доказать, что в бою с Вирмом они равны любому мужчине.#!"
+ amazons_diana_maa_flavor: "#F Амазонки Дианы - группа фурий, которые больше стремятся быть дерзкими, неудержимыми женщинами-воинами, чем священными мстительницами. Этот лагерь редко рассматривается как официальная группа, и скорее является общим местом для тех, кто стремится доказать, что в бою с [Glossary('Вирмом', 'glossary_wyrm_tt')] они равны любому мужчине.#!"
 
  children_of_cluid_maa: "Дети Клуида"
  children_of_cluid_maa_desc: "#F Многие клуити считают себя истинными потомками Клуида, героя, который первым привел пиктов в Каледонию. Эти воины сражаются с нечестивым рвением, чтобы достичь своих целей.#!"
 
  swarm_maa: "Рой"
- swarm_maa_flavor: "#F В лагере Костегрызов основное внимание уделяется боевым качествам крыс, они концентрируются на грязных боях и используют каждое преимущество над противником. Они специализируются на партизанской тактике, нанося удар по Вирму и мгновенно исчезая.#!"
+ swarm_maa_flavor: "#F В лагере Костегрызов основное внимание уделяется боевым качествам крыс, они концентрируются на грязных боях и используют каждое преимущество над противником. Они специализируются на партизанской тактике, нанося удар по [Glossary('Вирму', 'glossary_wyrm_tt')] и мгновенно исчезая.#!"
 
  imminent_strike_maa: "Неотвратимый удар"
  imminent_strike_maa_flavor: "#F Неотвратимый удар - это военный лагерь Детей Геи, стремящихся объединить всех гару для последней битвы.#!"
@@ -61,6 +61,9 @@
 
  bringers_light_maa: "Несущие свет"
  bringers_light_maa_flavor: "#F Если и есть группа Теневых владык, которая пользуется чем-то близким к всеобщему уважению, так это Несущие свет. Именно эти Теневые владыки справляются со злыми силами, такими как Танцоры Чёрной Спирали или вампиры.#!"
+
+ hakken_samurai_maa: "Samurai"
+ hakken_samurai_maa_flavor: "#F The Hakken have spent their lives honing their skills with the blade. Honor dictates they put it to good use against the servants of the $glossary_wyrm$.#!"
 
  daggers_nut_maa: "Кинжалы Нут"
  daggers_nut_maa_flavor: "#F Кинжалы Нут призваны разрушить власть потомков Сутеха над Египтом и, как следствие, власть вампиров над своей территорией в целом.#!"
@@ -78,6 +81,9 @@
 
 
  ###Bastet
+
+ tekhmet: "Tekhmet"
+ tekhmet_flavor: "#F These "Little Ones" are ready to unleash their Ferocity and rise in Rank among their kin.#!"
 
  children_saraam: "Дети Сараам"
  children_saraam_flavor: "#F Мать багира гордится тем, что её дисциплинированные дети защищают ее наследие.#!"
@@ -98,11 +104,50 @@
  danaa_runners_flavor: "#F Многие сбрасывают со счетов жилистых свара, но их удивительная скорость стала причиной гибели многих хищников.#!"
 
 
+###Mokole
+ mokole_hatchlings: "Hatchlings"
+ mokole_hatchlings_flavor: "#F The Mokolé are a dying breed. As such it is imperative that the future generations are protected. To this end, those of the lowest Rank, Hatchlings, have learned to defend against most raids, be it humanoid or animal.#!"
 
+ primal_saurians: "Primal Saurians"
+ primal_saurians_flavor: "#F The Stream of Earth is most in tune with their primal insticts. The Mokolé-mbembe's roars instill fear as they seek to avenge their lost kin.#!"
 
+ bronzescales: "Bronzescales"
+ bronzescales_flavor: "#F Sand is coarse, rough, and gets everywhere. A perfect hiding place for the Gumagan, as they erupt from the sands to deliver death on those foolish enough to challenge them in their domain.#!"
 
+ hidden_fangs: "Hidden Fangs"
+ hidden_fangs_flavor: "#F The jungles and forests hold many terrifying predators. Yet even these predators are prey for the Makara that stalk them.#!"
+
+ sleeping_dragons: "Sleeping Dragons"
+ sleeping_dragons_flavor: "#F The mortals' myths have managed to get one thing correct. Never wake a Dragon from its slumber, for its wrath will be most terrible.#!"
+
+ army_aten: "Army of the Aten"
+ army_aten_flavor: "#F This war clutch of Mokolé constantly prepares to fight a battle against the [Glossary('Dissolver', 'glossary_wyrm_tt')] and the forces of darkness. They also seek out and destroy fallen $glossary_fera$ before the Wyrm-Taint takes hold.#!"
+
+ ###Animals
  whitewolves: "Белые волки"
  whitewolves_flavor: "#F Белые волки, которые, по слухам, являются прародителями Серебряных клыков, появляются во времена нужды, чтобы помочь племени.#!"
 
- stormcrows: "Вороны-буревестники"
- stormcrows_flavor: "#F Любимцы Дедушки-Грома, вороны-буревестники в основном служат шпионами для Теневых владык, но при достаточной численности они могут стать мощной силой.#!"
+ royal_crocodiles: "Royal Crocodiles"
+ royal_crocodiles_flavor: "#F These majestic looking crocodiles have grown much stronger and larger than others thanks to the protection of their Mokolé caretakers.#!"
+
+
+
+###Dinosaur Bygones
+ archators: "Archators"
+ archators_flavor: "#F These hulking beasts are a fusion of dinosaurs and the Archid form. They share many features found in a Mokolé's Archid form but not their temperament, a distinction many come to discover. They serve their Saurian companions faithfully, so long as their strength is respected and their bellies are filled.#!"
+ dipeltas: "Dipeltas"
+ dipeltas_flavor: "#F Dinosaurs with large bone plates on their skull. These plates are stronger than traditional steel and help protect them as they charge at their targets.#!"
+ avithons: "Avithons"
+ avithons_flavor: "#F Flying feathered terrors. These dinosaurs soar the skies and plunge at their prey with great speed and accuracy.#!"
+ dicravenators: "Dicravenators"
+ dicravenators_flavor: "#F These small bipedal dinosaurs are the bane of many herbivores. Their agility and ferocity in pursuing their prey is unmatched.#!"
+ rhincanthuses: "Rhincanthuses"
+ rhincanthuses_flavor: "#F More of a giant reptilian Rhinoceros than a dinosaur, Rhincanthuses are hulking battering rams that will charge through anything.#!"
+ baroceratops: "Baroceratops"
+ baroceratops_flavor: "#F The Baroceratops' thick skull and natural armor protect it as it recklessly breaks fortifications.#!"
+ dracomuses: "Dracomuses"
+ dracomuses_flavor: "#F Large draconic beasts that immolate themselves as they slash and burn their prey.#!"
+ archeorexes: "Archeorexes"
+ archeorexes_flavor: "#F The alpha predators of the Mokolé jurassic dreams. Manifested for one singular purpose: Destruction.#!"
+ dryptoraptors: "Dryptoraptors"
+ dryptoraptors_flavor: "#F These small bipedal dinosaurs are no larger than an average Mokolé. Their numbers however are what makes them deadly.#!"
