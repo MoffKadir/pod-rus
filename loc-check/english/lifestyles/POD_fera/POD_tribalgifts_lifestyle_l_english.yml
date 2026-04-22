@@ -1,6 +1,5 @@
 ﻿l_english:
- game_concept_tribalgifts_lifestyle: "Tribal Gifts"
- game_concept_tribalgifts_lifestyle_desc: "Tribal Gifts are gifts taught by the protector spirit of the tribe."
+
  
  tribalgifts_lifestyle_name: "Tribal Gifts"
  tribalgifts_lifestyle_desc: "Focus on the power that come from the protector spirit of the tribe."
@@ -57,10 +56,10 @@
  tribalgifts_werewolf_stargazer_focus_desc: "Tribal Gifts of the Stargazers."
  tribalgifts_werewolf_stargazer_focus_effect_desc: "Focusing on Stargazers Gifts grants:" 
  
- tribalgifts_werewolf_warderofmen_focus: "[SelectLocalization(GetPlayer.IsValid, 'tribalgifts_werewolf_warderofmen_visible', 'glasswalker_darkage_name')] Focus"
+ tribalgifts_werewolf_warderofmen_focus: "Warders of Men Focus"
  tribalgifts_werewolf_warderofmen_focus_modifier: "[GetFocus('tribalgifts_werewolf_warderofmen_focus').GetName]"
- tribalgifts_werewolf_warderofmen_focus_desc: "Tribal Gifts of the $tribalgifts_werewolf_warderofmen_visible$."
- tribalgifts_werewolf_warderofmen_focus_effect_desc: "Focusing on $tribalgifts_werewolf_warderofmen_visible$ Gifts grants:" 
+ tribalgifts_werewolf_warderofmen_focus_desc: "Tribal Gifts of the Warders of Men."
+ tribalgifts_werewolf_warderofmen_focus_effect_desc: "Focusing on Warders of Men Gifts grants:" 
  
  tribalgifts_werewolf_blackspiraldancer_focus: "Black Spiral Dancer Focus"
  tribalgifts_werewolf_blackspiraldancer_focus_modifier: "[GetFocus('tribalgifts_werewolf_blackspiraldancer_focus').GetName]"
@@ -111,7 +110,7 @@
  DUMPSTER_DIVING_PERK_EFFECT: "As a [character_interaction|E], allows you to teleport your army to your target's location, or teleport to your next destination when traveling, as long as the target province has high [development|E]."
  BEG_PERK_EFFECT: "As a [character_interaction|E], allows you to beg a ruler for gold."
  INFEST_PERK_EFFECT: "Can recruit [GetMaA('insects').GetName] as [men_at_arms|E]."
- SURVIVOR_PERK_EFFECT: "You won't gain [GetTrait('inappetetic').GetName( GetPlayer )] any more.\nYou won't get diseases anymore as well."
+ SURVIVOR_PERK_EFFECT: "You won't gain [GetTrait('inappetetic').GetName( GetPlayer )] any more."
  RIOT_PERK_EFFECT: "As a [character_interaction|E], allows you to make the target's capital revolt."
  
  water_conning_perk_name: "Water-Conning"
@@ -239,24 +238,8 @@
  WEB_WALKER_PERK_EFFECT: ""
  GIFT_DOPPELGANGER_PERK_EFFECT: "Bonus option to Shapeshift [character_interaction|E] allowing you to change appearance."
  
- bane_protector_perk_name: "Bane Protector"
- toxic_claws_perk_name: "Toxic Claws"
- terrify_perk_name: "Terrify"
- unseelie_faerie_kin_perk_name: "Unseelie Faerie Kin"
- dagger_of_the_mind_perk_name: "Dagger of the Mind"
- summon_wyrm_elemental_perk_name: "Summon Wyrm Elemental"
- the_white_howl_perk_name: "The White Howl"
- totem_form_perk_name: "Totem Form"
- prelude_to_apocalypse_perk_name: "Prelude to Apocalypse"
- 
- BANE_PROTECTOR_PERK_EFFECT: "Can recruit [GetMaA('materialized_banes').GetName] as [men_at_arms|E]"
- TOXIC_CLAWS_PERK_EFFECT: "Bonus chance to maim an enemy [knights|E] when in [combat_phase|E] as a [knight|E]."
- DAGGER_OF_THE_MIND_PERK_EFFECT: "Unlocks [GetScheme('PODsoul_bridge').GetTypeName] [scheme|E]."
- SUMMON_WYRM_ELEMENTAL_PERK_EFFECT: "Can recruit [GetMaA('balefire_elemental').GetName], [GetMaA('sludge_elemental').GetName], [GetMaA('toxin_elemental').GetName] and [GetMaA('smog_elemental').GetName] as [men_at_arms|E]"
- THE_WHITE_HOWL_PERK_EFFECT: "Add a chance to kill an enemy [knights|E] when in [combat_phase|E] as a [knight|E]."
- TOTEM_FORM_PERK_EFFECT: "Allow shapeshift to same totem form as your pack totem."
- PRELUDE_TO_APOCALYPSE_PERK_EFFECT: "Unlock Tear Down the Gauntlet in the Manipulate the Gauntlet [umbra|E] action.\n#F The Theurge can tear away aeons of the Weaver’s works for a short while. This Gift rips down the Gauntlet entirely, merging the worlds of flesh and spirit as they were in the days of legend.#!"
- PRELUDE_TO_APOCALYPSE_REQUIREMENT: "@warning_icon!#X You need to finish a quest from a Maeljin Incarna (station an explorer in any realm of the [umbra|E] to find a clue about the location and start an [umbra_expedition|E] to reach them and then receive a quest) to unlock this perk.#!"
+
+
  
  shining_sigils_perk_name: "Shining Sigils"
  haunting_howl_perk_name: "Haunting Howl"
@@ -275,13 +258,41 @@
  HOWL_OF_HEALING_PERK_EFFECT: "Heal the wounds of ally [knights|E] when acting as a [commander|E] during the [combat_phase|E] or to yourself during [single_combat_duel_plural|E]."
 
 
- dream_of_a_thousand_cranes_perk_name: "Dream of a Thousand Cranes"
- fair_path_perk_name: "Fair Path"
- storm_winds_slash_perk_name: "Storm Winds Slash"
- dark_of_night_perk_name: "Dark of Night"
- living_treasure_perk_name: "Living Treasure"
- divine_wind_perk_name: "Divine Wind"
 
- STORM_WINDS_SLASH_PERK_EFFECT: "As a [character_interaction|E], allows you to give target wound with the severity depending on your prowess."
- DARK_OF_NIGHT_PERK_EFFECT: "Give [GetModifier('dark_of_night_perk_modifier').GetNameWithTooltip] [modifier|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E]."
- DIVINE_WIND_PERK_EFFECT: "As a [character_interaction|E], allows you to unleash a [GetModifier( 'divine_wind_modifier' ).GetNameWithTooltip|L] over enemy realms."
+#Black Spiral Dancers
+
+ toxic_claws_perk_name: "Toxic Claws"
+ TOXIC_CLAWS_PERK_EFFECT: "Bonus chance to wound or maim a enemy [knights|E] when in [combat_phase|E] as a [knight|E].\n#flavor The Dancer can cause toxic waste to ooze from her claws, coating them with an unhealthy greenish-gray slime. Wounds left by these claws tend to leave unhealthy-looking scars.#!"
+ spiral_shadow_dance_perk_name: "Spiral-Shadow Dance"
+ SPIRAL_SHADOW_DANCE_PERK_EFFECT: "#flavor The Black Spiral Dancer learns to twine herself through the darkness, becoming swift as a scream. A variety of Banes teach this Gift.#!"
+ terrify_perk_name: "Terrify"
+ TERRIFY_PERK_EFFECT: "#flavor The Dancer with this Gift is more intimidating and terrifying than normal. A sneer from her is as effective as a full-throated growl from another.#!"
+ unseelie_faerie_kin_perk_name: "Unseelie Faerie Kin"
+ UNSEELIE_FAERIE_KIN_PERK_EFFECT: "Unlock multiple [POD_faerie_maa|E] [men_at_arms|E].\n#flavor The Dancer may call on Unseelie changelings to aid him.#!"
+ burning_scars_perk_name: "Burning Scars"
+ BURNING_SCARS_PERK_EFFECT: "[character_interaction|E]: Inflict [POD_aggravated_damage|E] fire damage to a character as well as yourself.\n#flavor Black Spiral Dancers often carve stylized scars representing their devotion to the Wyrm into their bodies. This Gift causes the Dancer's scars to glow with a dark brilliance that almost seems to crawl into the victim's body, burning him from the inside out and leaving horrible burns that mimic the Dancer's own scars.#!"
+ summon_wyrm_elemental_perk_name: "Summon $glossary_wyrm$ Elemental"
+ SUMMON_WYRM_ELEMENTAL_PERK_EFFECT: "#flavor The Dancer performs a short dance around a piece of a pure element. The dance corrupts the element and summons forth a $glossary_wyrm$ Elemental.#!"
+
+ the_white_howl_perk_name: "The White Howl"
+ THE_WHITE_HOWL_PERK_EFFECT: "Give [GetModifier('the_white_howl_modifier_enemy').GetNameWithTooltip] to enemy [knights|E] and [GetModifier('the_white_howl_modifier_ally').GetNameWithTooltip] to allied [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E].\n#flavor Once the most sacred blessing of the White Howlers, this mighty Gift is still passed down among the ranks of the Black Spiral Dancers as a reminder of the past to their Garou enemies. The sound of the White Howl is sufficient to rend both the workings of the Wyrm, and the ears of Garou who hear it and realize how much Gaia has lost.#!"
+ totem_form_perk_name: "Totem Form"
+ TOTEM_FORM_PERK_EFFECT: "Unlock a Totem Form shapeshift which corresponds to your [pack_totem|E].\n #flavor This powerful Gift allows a Black Spiral to take on the appearance - and much of the power - of her pack's Bane totem.#!"
+ prelude_to_apocalypse_perk_name: "Prelude to Apocalypse"
+ PRELUDE_TO_APOCALYPSE_PERK_EFFECT: "Unlock Tear Down the Gauntlet in the Manipulate the Gauntlet [umbra|E] action.\n#flavor The Dancer can tear away aeons of the $glossary_weaver$'s works for a short while. This Gift rips down the Gauntlet entirely, merging the worlds of flesh and spirit as they were in the days of legend. Moreover, this mended region acts as a shining beacon to Wyrm spirits, calling a flood of banes to assist the Dancer.#!"
+ PRELUDE_TO_APOCALYPSE_REQUIREMENT: "@warning_icon!#X You need to finish a quest from a Maeljin Incarna (station an explorer in the [UmbraGlossary('black_spiral_labyrinth')] and start an [umbra_expedition|E] to reach them and then receive a quest) to unlock this perk.#!"
+
+
+#Hakken
+ dream_of_a_thousand_cranes_perk_name: "Dream of a Thousand Cranes"
+ DREAM_OF_A_THOUSAND_CRANES_PERK_EFFECT: "#flavor This Gift grants the user good luck for a brief period of time.#!"
+ fair_path_perk_name: "Fair Path"
+ FAIR_PATH_PERK_EFFECT: "#flavor To appear before one's clan at moot or during rites in a disheveled or unpurified state is considered highly dishonorable. This Gift allows a Hakken to appear perfectly groomed and dressed.#!"
+ storm_winds_slash_perk_name: "Storm Winds Slash"
+ STORM_WINDS_SLASH_PERK_EFFECT: "[character_interaction|E]: Inflict [POD_superficial_damage|E] to a character, the amount scaling with your equipped katana's [rarity|E].\n#flavor As the Hakken slashes with her katana from a distance, a very real wound appears on her opponent, mirroring the Garou's slash.#!"
+ dark_of_night_perk_name: "Dark of Night"
+ DARK_OF_NIGHT_PERK_EFFECT: "[character_interaction|E]: Inflict [GetModifier('dark_of_night_perk_modifier').GetNameWithTooltip] on a character.\n#flavor Cause temporary blindness in a chosen victim; they can see nothing but inky blackness. Use of this Gift in a formal duel is seen as a great offense.#!"
+ living_treasure_perk_name: "Living Treasure"
+ LIVING_TREASURE_PERK_EFFECT: "[buy_claim_interaction|E] and [buy_artifact_claim_interaction|E] Cost: #P -25%#!\n#flavor The Hakken prize ancient pieces of art and often have such objects in their homes. This Gift coaxes the spirits of items to speak and tell their tales.#!"
+ divine_wind_perk_name: "Divine Wind"
+ DIVINE_WIND_PERK_EFFECT: "Unlocks Weather Magic option: #V Storm#! at [duchy|E] level.\n#flavor The Hakken summons a terrifying storm upon a target area.#!"

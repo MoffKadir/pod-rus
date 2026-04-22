@@ -46,15 +46,15 @@
  POD_canon_artifacts.200.option.f: "Potence"
  POD_canon_artifacts.200.option.g: "Presence"
  POD_canon_artifacts.200.option.h: "Protean"
- POD_canon_artifacts.200.option.i: "Blood Sorcery"
+ #POD_canon_artifacts.200.option.i: "Blood Sorcery"
  POD_canon_artifacts.200.option.j: "Fortitude"
- POD_canon_artifacts.200.option.k: "Obtenebration"
+ #POD_canon_artifacts.200.option.k: "Obtenebration"
  POD_canon_artifacts.200.option.l: "This is not a good time"
  
  tapestry_of_fate_decision: "The Tapestry of Fate"
  tapestry_of_fate_decision_tooltip: "Infinite Knowledge!"
- tapestry_of_fate_decision_desc: "The Tapestry of Fate contains every single true name. It is well worth studying."
- tapestry_of_fate_decision_effect_tooltip: "You will be able to learn new true names from the Tapestry." 
+ tapestry_of_fate_decision_desc: "The Tapestry of Fate contains every single [Glossary('True Name','podgloss.truename')]. It is well worth studying."
+ tapestry_of_fate_decision_effect_tooltip: "You will be able to learn new [Glossary('True Names','podgloss.truename')] from the Tapestry." 
  tapestry_of_fate_decision_confirm: "New names!"
  
  eye_of_hazimel_decision: "The Eye of Hazimel"
@@ -223,8 +223,8 @@
  POD_canon_artifacts.703.t: "The Grail Knight Rises"
  POD_canon_artifacts.703.desc: "It is done. You proved your bravery, your soul and your willpower to the Grail and you can now drink freely. Still, even with those victories, it hurts a lot as the Grail fundamentally alters who you are.\nEven this mighty relic isn't enough to truly overcome God's curse on Caine, but it is still a profound, miraculous change. You are now something more than a mere vampire and you radiate with holy energy[AddTextIf( PlayerHasBeast, ' as the Beast inside you lets out its last, dying howl' )]."
  POD_canon_artifacts.703.a: "Salvation finally?"
- drink_grail_tt3: "As a Grail Knight you gain the following:\n $BULLET_WITH_TAB$Can replenish your blood at will with a minor decision\n $BULLET_WITH_TAB$You will never frenzy again\n $BULLET_WITH_TAB$Your ghouls (created from mortals) start physically stronger\n $BULLET_WITH_TAB$Can recruit [GetMaA('order_bitter_ashes_maa').GetName] as men at arms."
- drink_grail_tt4: "As a Grail Knight, your ghouls are stronger as they share a little of your holy blood."
+ drink_grail_tt3: "As a [GetTrait('POD_grail_knight').GetName(GetPlayer)] you gain the following:\n $BULLET_WITH_TAB$You have infinite blood\n $BULLET_WITH_TAB$You will never frenzy again\n $BULLET_WITH_TAB$Your ghouls (created from mortals) start physically stronger\n $BULLET_WITH_TAB$Can recruit [GetMaA('order_bitter_ashes_maa').GetName] as men at arms."
+ drink_grail_tt4: "As a [GetTrait('POD_grail_knight').GetName(GetPlayer)], your ghouls are stronger as they share a little of your holy blood."
  
  POD_canon_artifacts.704.t: "The Unworthy Grail Aspirant"
  POD_canon_artifacts.704.desc: "The ways of the Grail are mysterious. As you suffer through the terrible pain of drinking from the holy relic, the liquid suddenly turns to ashes just as God cursed Caine. As the Beast laughs at the sight of your defeat, you violently throw the goblet, symbol of your shame, away.\nIt is difficult to say if trying the ritual again in some time would result in a different outcome. You could try it again later, but the Grail would then have to stand here, a reminder to everyone of your inglorious defeat."
@@ -277,8 +277,9 @@
  incunabulum_kupalam_decision_tooltip: "One part of the demon under Transylvania's story."
  incunabulum_kupalam_decision_desc: "Many have tried to codify what they know of the demonic master of Transylvania, Kupala. If all of this knowledge could be compiled into one tome, perhaps part of the truth could be finally known."
  incunabulum_kupalam_decision_confirm: "The definitive answer?"
- incunabulum_kupalam_decision_custom: "You need at least 5 Treaty on Kupala artifacts."
- 
+ incunabulum_kupalam_decision_requirement: "You need to find at least 5 Treatises on Kupala artifacts to be able to codify this treatise."
+ incunabulum_kupalam_decision_effect: "You combine all your notes to create the [GetPODArtifactName('incunabulum_kupalam_link')]" 
+
  codex_mortis_decision: "The Codex Mortis"
  codex_mortis_decision_tooltip: "The secrets of death at your fingertips."
  codex_mortis_decision_desc: "A large book made of various parchments apparently containing the secrets of Necromancy. It seems nothing can be read until his ghostly guardian, Titia Sabina, is convinced or coerced to help."
@@ -311,8 +312,15 @@
  akhu_decision_confirm: "Secrets of Egypt."
   
  
+ sword_of_fever_decision: "Unsheathe the Sword of Fever"
+ sword_of_fever_decision_tooltip: "So much death..."
+ sword_of_fever_decision_desc: "The Sword of Fever holds back all the disease spirits of Entoban. It can with the utmost care be drawn a finger's width from its scabbard, to inflict sickness on your foes. However, should you draw it completely it will unleash a terrible and destructive plague upon the land."
+ sword_of_fever_decision_effect_tooltip: "You will be able to fully unsheathe the blade, if you so desire."
+ sword_of_fever_decision_confirm: "I have decided."
+
+
  POD_canon_artifacts.1000.t: "Reading the Tapestry of Fate"
- POD_canon_artifacts.1000.desc: "The Tapestry of Fate contains all of the true names that exist, as well as the fate of the [UmbraGlossary('dreaming')]. It is actually less difficult to understand than you feared, but learning the names will still take some effort on your part.\nYou think it wiser to study one concept at a time, to avoid a potentially dangerous information overload. Which one will be your focus today?"
+ POD_canon_artifacts.1000.desc: "The Tapestry of Fate contains all of the [Glossary('True Names','podgloss.truename')] that exist, as well as the fate of the [UmbraGlossary('dreaming')]. It is actually less difficult to understand than you feared, but learning the names will still take some effort on your part.\nYou think it wiser to study one concept at a time, to avoid a potentially dangerous information overload. Which one will be your focus today?"
  POD_canon_artifacts.1000.k: "This is not a good time"
  POD_canon_artifacts.1000.personality: "Personality"
  POD_canon_artifacts.1000.education: "Education"
@@ -324,11 +332,11 @@
  POD_canon_artifacts.1000.physical: "Physical"
  
  POD_canon_artifacts.1011.t: "$learning_true_names_head$ New True Name Discovered"
- POD_canon_artifacts.1011.desc: "You have successfully learned the true name about [trait.GetName( GetPlayer.Self )], now you can use it for naming cantrips."
+ POD_canon_artifacts.1011.desc: "You have successfully learned the [Glossary('True Name','podgloss.truename')] about [trait.GetName( GetPlayer.Self )], now you can use it for naming cantrips."
  POD_canon_artifacts.1011.a: "I will continue studying."
  
  POD_canon_artifacts.1012.t: "$learning_true_names_head$ No True Name to Discover"
- POD_canon_artifacts.1012.desc: "You have learned all the True Name on this subject that you could ever use."
+ POD_canon_artifacts.1012.desc: "You have learned all the [Glossary('True Names','podgloss.truename')] on this subject that you could ever use."
  POD_canon_artifacts.1012.a: "I will take a rest now."
 
  POD_canon_artifacts.1020.t: "Dragon of the Night"
@@ -366,5 +374,11 @@
  robe_golden_mandarin_decision_tooltip: "A Golden Curse"
  robe_golden_mandarin_decision_desc: "Gan Lau Kien's magical protection for his precious robes is formidable. Are you learned enough to find a way to sidestep those and unlock the true power of this illustrious artifact?"
  robe_golden_mandarin_decision_confirm: "No match for my intellect."
- 
 
+
+ POD_canon_artifacts.1100.t: "The Sword of Fever"
+ POD_canon_artifacts.1100.desc: "You have decided to fully unsheathe the Sword of Fever, thereby unleashing a calamity that will take countless lives. Nobody truly knows your reasons for doing this, perhaps not even yourself. Regardless, if you had any doubts then this is the last chance to abandon this idea..."
+ POD_canon_artifacts.1100.a: "Yes, unsheathe it!"
+ POD_canon_artifacts.1100.b: "Perhaps this isn't such a good idea."
+ sword_of_fever_used_modifier: "Drew the Blade"
+ sword_of_fever_used_modifier_desc: "For unknown reasons, you sentenced millions of lives to death by unleashing a deadly disease."

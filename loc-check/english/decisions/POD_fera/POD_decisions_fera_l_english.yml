@@ -6,19 +6,19 @@
  fera_advance_rank_decision_tooltip: "Progressing the Fera ranks takes time and commitment."
  fera_advance_rank_decision_confirm: "My fame grows!"
 
- fera_advance_rank_renown_glory: "#clickable $POD_fera_renown_glory$:#!\n#medium $BULLET_WITH_TAB$Winning wars against Wyrm aligned rulers if you are a Gaian faith.\n$BULLET_WITH_TAB$Winning wars against Gaia aligned rulers if you are a Wyrm faith.\n$BULLET_WITH_TAB$Killing Wyrm aligned characters if you are a Gaian faith.\n$BULLET_WITH_TAB$Killing Gaia aligned characters if you are a Wyrm faith.#!\n"
+ fera_advance_rank_renown_glory: "#clickable $POD_fera_renown_glory$:#!\n#medium $BULLET_WITH_TAB$Winning wars against Wyrm aligned rulers if you are a Gaian faith.\n$BULLET_WITH_TAB$Winning wars against Gaia aligned rulers if you are a Wyrm faith.\n$BULLET_WITH_TAB$Killing Wyrm aligned characters if you are a Gaian faith.\n$BULLET_WITH_TAB$Killing Gaia aligned characters if you are a Wyrm faith.#!\n$BULLET_WITH_TAB$Completing [mercenary_task_contracts|E] as an [adventurer|E].\n"
 
  fera_advance_rank_renown_honor: "#clickable $POD_fera_renown_honor$:#!\n#medium $BULLET_WITH_TAB$Abandoning a [grudge|E], ending a [rivalry|E], or losing a [nemesis|E].\n$BULLET_WITH_TAB$Granting [duchies|E] or higher titles to another $glossary_fera$.\n$BULLET_WITH_TAB$Upgrading a Caern to its maximum level.\n$BULLET_WITH_TAB$Increasing your [piety_level|E].#!\n"
 
  fera_advance_rank_renown_wisdom: "#clickable $POD_fera_renown_wisdom$:#!\n#medium $BULLET_WITH_TAB$Finishing Umbra Expeditions.\n$BULLET_WITH_TAB$Obtaining the last [perk|E] of a $glossary_fera$ lifestyle tree.\n$BULLET_WITH_TAB$Finishing a Spirit Quest [journey|E].#!\n"
 
- fera_advance_rank_renown_power: "#clickable $POD_fera_renown_power$:#!\n#medium $BULLET_WITH_TAB$Winning wars.\n$BULLET_WITH_TAB$Winning duels.\n$BULLET_WITH_TAB$Increasing your [prestige_level|E].#!\n"
+ fera_advance_rank_renown_power: "#clickable $POD_fera_renown_power$:#!\n#medium $BULLET_WITH_TAB$Winning wars.\n$BULLET_WITH_TAB$Winning duels.\n$BULLET_WITH_TAB$Increasing your [prestige_level|E].#!\n$BULLET_WITH_TAB$Obtaining Physical [urgetaints_lifestyle|E].\n"
 
  fera_advance_rank_renown_cunning: "#clickable $POD_fera_renown_cunning$:#!\n#medium $BULLET_WITH_TAB$Succeeding in an [infiltration|E].\n$BULLET_WITH_TAB$[blackmailing|E] another character.\n$BULLET_WITH_TAB$Succeeding in [GetScheme('abduct').GetTypeName] [schemes|E].#!\n"
 
  fera_advance_rank_renown_ferocity: "#clickable $POD_fera_renown_ferocity$:#!\n#medium $BULLET_WITH_TAB$Returning to your land with at least #P 50#! [raid|E] [loot|E].\n$BULLET_WITH_TAB$Gaining [trait_level_track_xp|E] in any [GetTrait('lifestyle_hunter').GetName(GetNullCharacter)] [trait_level_track|E].\n$BULLET_WITH_TAB$Training with your [GetPlayer.Custom('PODCoterie')].#!\n"
 
- fera_advance_rank_renown_infamy: "#clickable $POD_fera_renown_infamy$:#!\n#medium $BULLET_WITH_TAB$Succeeding in [GetScheme('fabricate_hook').GetTypeName] [schemes|E].\n$BULLET_WITH_TAB$Executing your own vassals of Duchy [title_rank|E] or higher without an [execute_reason|E].\n$BULLET_WITH_TAB$Usurping titles of Kingdom [rank|E] or higher.\n$BULLET_WITH_TAB$Breaking truces.#!\n"
+ fera_advance_rank_renown_infamy: "#clickable $POD_fera_renown_infamy$:#!\n#medium $BULLET_WITH_TAB$Succeeding in [GetScheme('fabricate_hook').GetTypeName] [schemes|E].\n$BULLET_WITH_TAB$Executing your own vassals of Duchy [title_rank|E] or higher without an [execute_reason|E].\n$BULLET_WITH_TAB$Usurping titles of Kingdom [rank|E] or higher.\n$BULLET_WITH_TAB$Breaking truces.#!\n$BULLET_WITH_TAB$Obtaining Mental [urgetaints_lifestyle|E].\n"
 
 
  fera_advance_rank_renown_bonuses: "\n#clickable Your [GetPlayer.Custom('PODFeraAuspiceType')] gives a bonus to [GetPlayer.Custom('PODFeraAuspiceRenownBoost')].#!"
@@ -27,5 +27,14 @@
  fera_advance_rank_decision_requirement_tributaries: "You have 2 or more [tributaries|E] of at least Kingdom [rank|E]"
 
 
+ fera_recruit_beastborn_decision: "Nurture Animal Kin"
+ fera_recruit_beastborn_decision_desc_werewolf: "Garou have a strong relationship with their wolf-kin. Each tribe, even the most city bound ones like the Warders of Men, carefully watch over their four legged friends and look for the signs of a First Change among them.\nThose from the wolves that end up becoming Werewolves tend to need more preparation before becoming fully fledged members of the Tribe as the trappings of the human world are new to them. As the local leader, it falls to you to choose how closely you want to monitor and plan for this potential help."
 
+ fera_recruit_beastborn_decision_desc_bubasti: "Long ago, the Bubasti joined Horus in his eternal fight against his decadent uncle, Set. While the cause was righteous and the Bubasti still take great pride in their contribution, it still resulted in a terrible defeat. The triumphant Setites captured the cat kin of the Bubasti, the Kyphur cats, and either killed them or fed them blood to turn them into aberrant monsters.\nWith their recent victory and daring rescue of the last Kyphur cats however, the Bubasti are now once again prospering and watching over their feline kin, helping them gather strength and heal themselves from the trauma of the long servitude to the Setites."
+ fera_recruit_beastborn_decision_desc_bastet: "Bastet have a strong relationship with their cat-kin. Each tribe carefully watch over their four legged friends and look for the signs of a First Change among them. Cats being very territorial, it also means that the tribes tend to stay put in the region where their kin dwell.\nThose from the cats that end up becoming Bastet tend to need more preparation before becoming fully fledged members of the Tribe as the trappings of the human world are new to them. As the local leader, it falls to you to choose how closely you want to monitor and plan for this potential help."
+ fera_recruit_beastborn_decision_desc_mokole: "As one of the few Non-Mammalian Fera, the Mokolé can be rather uninvolved with the tending of their more antisocial animal kin. With the faster life cycle of reptiles, it is a simple matter to have specialized clutches where the Mokolé lay their eggs, where Human Kinfolk can watch over them and await those who hatch, and usually undergo the First Change within a couple weeks. As the local leader, it is a simple matter to go to the eggs and check on current developments, to check to see if any of your hatchlings have undergone the First Change.\nThose from the reptiles that end up becoming Mokolé tend to need more preparation before becoming fully fledged members of the Clutch as the trappings of the human world are new to them. As the local leader, it falls to you to choose how closely you want to monitor and plan for this potential help."
 
+ fera_recruit_beastborn_decision_bubasti_requirement: "#bold Cat Against Snake#! must have been completed"
+ fera_recruit_beastborn_decision_effect: "You will be offered options to have [GetTrait('beast_born').GetName( GetPlayer )] $glossary_fera$ of your tribe arrive at your court. This will likely cost you some additional resources."
+fera_recruit_beastborn_decision_tooltip: "Find $glossary_fera$ among the beasts."
+fera_recruit_beastborn_decision_confirm: "Commence the search!"

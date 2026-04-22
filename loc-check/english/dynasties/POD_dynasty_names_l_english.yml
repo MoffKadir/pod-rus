@@ -286,6 +286,8 @@
  dynn_sybarite_motto: "Everything is Permitted" 
  dynn_yoryari: "Yoryari"
  dynn_yoryari_motto: "Philosophical Reclaimers" 
+ dynn_erk: "Erk"
+ dynn_erk_motto: "Tempered By Fire"
  
  # Salubri
  
@@ -836,7 +838,11 @@
  dynn_lorcan_motto: "Wolf Slayers"
  dynn_de_karnstein: "de Karnstein"
  dynn_de_karnstein_motto: "By Blood, Perfection is Found"
- 
+ dynn_torenu: "Torenu"
+ dynn_torenu_motto: "Keen Eyed Travelers"
+ dynn_iceni: "Iceni"
+ dynn_iceni_motto: "Sons and Daughters of the Oxen"
+  
  # Mummies
  
  dynn_horus: "Shemsu-Heru" #Horus
@@ -844,7 +850,7 @@
  dynn_ishmaelites: "Ishmaelites"
  dynn_ishmaelites_motto: "Freedom and Self-Determination."
  dynn_apepnu: "Apepnu"
- dynn_apepnu_motto: "Servants of Apophis"
+ dynn_apepnu_motto: "Servants of $glossary_wyrm_apophis$"
  dynn_cabiri: "Cabiri" 
  dynn_cabiri_motto: "Bane of Cerberus"
  dynn_wufeng: "Wu Feng" 
@@ -899,7 +905,7 @@
  dynn_debiltongue: "Debiltongue"
  dynn_debiltongue_motto: "Tricksters Dogs"
  dynn_web_breaker: "Shadow-Watcher"
- dynn_web_breaker_motto: "Daughters of the Wyld"
+ dynn_web_breaker_motto: "Daughters of the $glossary_wyld$"
  dynn_leukippes: "Leukippes"
  dynn_leukippes_motto: ""
  dynn_drededoom: "Drededoom"
@@ -966,7 +972,23 @@
  dynn_buriyad_motto: "Our Will Forever be Unbroken"
  dynn_zibellina: "Zibellina"
  dynn_zibellina_motto: "Fangs of Sable"
- 
+ dynn_shaorong: "Shaorong"
+ dynn_shaorong_motto: "Guiding Humanity"
+ dynn_inoue: "Inoue"
+ dynn_inoue_motto: "Blades of Thunder"
+ dynn_kasutoshi: "Kasutoshi"
+ dynn_kasutoshi_motto: "Honor and Strength"
+ dynn_chika: "Chika"
+ dynn_chika_motto: "Redemption through Action"
+ dynn_ozatu: "Ozatu"
+ dynn_ozatu_motto: "Strength tempered with Wisdom"
+ dynn_chikara: "Chikara"
+ dynn_chikara_motto: "Power Protects"
+ dynn_kintaro: "Kintaro"
+ dynn_kintaro_motto: "Kin without Blood"
+
+
+
 # Bastet
  dynn_amaduo: "Amadu'o"
  dynn_amaduo_motto: "The Lion Tyrants"
@@ -1012,6 +1034,8 @@
  dynn_deleon_motto: "Partying until the end"
  dynn_raas: "Raas"
  dynn_raas_motto: "Auspicious and inquisitive cats"
+ dynn_white_fur: "White-Fur"
+ dynn_white_fur_motto: "Mothers in her Image"
  dynn_mafdet: "Mafdet"
  dynn_mafdet_motto: ""
  dynn_apedemak: "Apedemak"
@@ -1030,7 +1054,73 @@
  dynn_winter_fang_motto: ""
  dynn_qaim: "Qai'm"
  dynn_qaim_motto: ""
- 
+ dynn_yun: "Yun"
+ dynn_yun_motto: "Ever Graceful"
+ dynn_forest_keeper: "Forest-Keeper"
+ dynn_forest_keeper_motto: "The Forests are our Little Jungles"
+ dynn_wanyang: "Wanyang"
+ dynn_wanyang_motto: "Tigers of the North"
+
+ #Mokole
+ dynn_first_sun: "First-Sun"
+ dynn_first_sun_motto: "The Kings that Walked while the World Crawled"
+ dynn_snake_eater: "Snake-Eater"
+ dynn_snake_eater_motto: "Khem will be Cleansed"
+ dynn_ra_khem: "Ra-Khem"
+ dynn_ra_khem_motto: "Ra Watches over us"
+ dynn_kha_en_anubis: "Kha-en-Anubis"
+ dynn_kha_en_anubis_motto: "Death is the Constant"
+ dynn_dark_sun: "Dark-Sun"
+ dynn_dark_sun_motto: "Embrace your own Destruction"
+ dynn_many_words: "Many-Words"
+ dynn_many_words_motto: "The Ability to Speak does not make you Intelligent"
+ dynn_raging_winds: "Raging-Winds"
+ dynn_raging_winds_motto: "Winds Guide Us"
+ dynn_shining_waters: "Shining-Waters"
+ dynn_shining_waters_motto: "Reflecting One's True Self"
+ dynn_sun_bringer: "Sun-Bringer"
+ dynn_sun_bringer_motto: "Burning away the Corruption"
+ dynn_flame_touched: "Flame-Touched"
+ dynn_flame_touched_motto: "The Smallest Spark can bring the Largest Inferno"
+ dynn_island_guardian: "Island-Guardian"
+ dynn_island_guardian_motto: "Protecting our Kin"
+ dynn_li_wei_tan: "Lei Wei Tan"
+ dynn_li_wei_tan_motto: "Dream of Hunger. Dream of Lordship."
+ dynn_lonely_peaks: "Lonely-Peaks"
+ dynn_lonely_peaks_motto: "Where does one go after Reaching the Peak?"
+ dynn_endless_horizons: "Endless-Horizons"
+ dynn_endless_horizons_motto: "Where Dragons Wander"
+ dynn_water_lily: "Water-Lily"
+ dynn_water_lily_motto: "Master the Body, Master the Soul." 
+ dynn_sand_terror: "Sand-Terror"
+ dynn_sand_terror_motto: "The Sands hold many Terrors"
+ dynn_sleeping_hunters: "Sleeping-Hunters"
+ dynn_sleeping_hunters_motto: "Strike when you look most vulnerable"
+ dynn_egg_protector: "Egg-Protector"
+ dynn_egg_protector_motto: "The Future must be Protected"
+ dynn_dune_climber: "Dune-Climber"
+ dynn_dune_climber_motto: "Climbing out of Harm's Way"
+ dynn_west_watcher: "West-Watchers"
+ dynn_west_watcher_motto: "The West Approaches"
+ dynn_rising_dragon: "Rising-Dragon"
+ dynn_rising_dragon_motto: "Our Destiny is to Rule"
+ dynn_dancing_sun: "Dancing-Sun"
+ dynn_dancing_sun_motto: "The Sun dances with the Moon"
+ dynn_sky_bearer: "Sky-Bearer"
+ dynn_sky_bearer_motto: "Bear Witness to the Sky's Majesty"
+ dynn_calm_fields: "Calm-Fields"
+ dynn_calm_fields_motto: "War Achieves Nothing"
+ dynn_drenched_land: "Drenched-Land"
+ dynn_drenched_land_motto: "Waters of Life"
+ dynn_wisdom_seeker: "Wisdom-Seeker"
+ dynn_wisdom_seeker_motto: "Learn more than you did Yesterday"
+ dynn_cloud_gazer: "Cloud-Gazer"
+ dynn_cloud_gazer_motto: "Drifting without a Care"
+ dynn_jungle_swimmer: "Jungle-Swimmer"
+ dynn_jungle_swimmer_motto: "Swimming where they can't See"
+ dynn_depth_horror: "Depth-Horror"
+ dynn_depth_horror_motto: "Be Magnificent In Your Covetousness"
+
  # Demons
  
  dynn_asharu: "Asharu"
@@ -1047,7 +1137,9 @@
  dynn_annunaki_motto: "House of Fire and Stone"
  dynn_neberu: "Neberu"
  dynn_neberu_motto: "House of Spheres"
-         
+ dynn_baalpeor: "Baal-Peor"
+ dynn_baalpeor_motto: "The One Who Quarrels"
+          
  # Fae
  
  dynn_tuatha_de_danaan: "Tuatha de Danaan"
@@ -1508,7 +1600,9 @@
  dynn_alyss_motto: "The passion of lovers is for death said she"
  dynn_shreckt: "Schrekt"
  dynn_shreckt_motto: "The Cleansing Fire"
- 
+ dynn_aburi: "Aburi"
+ dynn_aburi_motto: "Hunting Evil" 
+
  #Wraiths
  
  fake_qin_dynasty: "Qin"
@@ -1519,9 +1613,9 @@
  dynn_chibo: "Chibo"
  dynn_chibo_motto: "Sages of the Great Clan"
  dynn_kishu: "Kishu"
- dynn_kishu_motto: "Swords of the Great Clan"
+ dynn_kishu_motto: "Daggers of the Great Clan"
  dynn_monomi: "Monomi"
- dynn_monomi_motto: "Daggers of the Great Clan"
+ dynn_monomi_motto: "Swords of the Great Clan"
  dynn_kizoku: "Kizoku"
  dynn_kizoku_motto: "Nobility from Pain"
  dynn_bushi: "Bushi"

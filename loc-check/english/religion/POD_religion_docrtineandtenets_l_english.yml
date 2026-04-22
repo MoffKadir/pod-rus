@@ -20,6 +20,9 @@
  doctrine_vampirethemasquerade_none_name: "No Masquerade"
  doctrine_werewolf_veil_should_does_not_matter_name: "Does Not Matter"
  doctrine_vampirethemasquerade_none_desc: "Vampires act without regard for secrecy from the kine.\nIt's harder to decrease your exposure with this tenet, but higher dread will reduce the risks of an Inquisitor Cell provincial revolt."
+ doctrine_parameter_harder_masquerade_reduction: "[masquerade_exposure|E] is harder to decrease"
+ doctrine_parameter_no_masquerade_penalty: "Many actions that have a chance to #N increase#! [masquerade_exposure|E] will now always succeed"
+ 
  doctrine_werewolf_veil_should_does_not_matter_desc: "The Veil is poetic term for the false assumption that the supernatural does not exist, which the Delirium reinforces. The Veil was formally instituted through the Concord of nine thousand years ago, which ended the Impergium. The Litany states clearly that 'The Veil Shall Not Be Lifted'. Delirium helps in keeping the Veil in place. Harming or rending the Veil means a great loss of honor among the Garou, while repairing the Veil means the opposite. Some werewolves find that the Veil is an obsolete idea that no longer matters. Some even actively work to bring down the Veil so that werewolves can once again reinstate the Impergium and openly terrorize all humanity."
  doctrine_vampirethemasquerade_consent_name: "Feed Only From the Willing"
  doctrine_vampirethemasquerade_consent_desc: "Vampires, while covert from society at large, are to seek consent from their 'donors'." 
@@ -29,7 +32,7 @@
  doctrine_vampirethemasquerade_family_desc: "Vampires feed from particular mortal families who may be somewhat aware of the vampiric condition. They desire to keep their blood pure, and spurn the 'unclean'."   
  doctrine_parameter_vampirethemasquerade_strict: "Characters with the [traits|E] [GetTrait('predatortype_consensualist').GetName( GetPlayer )], [GetTrait('predatortype_cultist').GetName( GetPlayer )] or [GetTrait('predatortype_familias').GetName( GetPlayer )] are [criminals|E]"
  doctrine_parameter_vampirethemasquerade_lax: "Characters with the [traits|E] [GetTrait('predatortype_consensualist').GetName( GetPlayer )], [GetTrait('predatortype_cultist').GetName( GetPlayer )] or [GetTrait('predatortype_familias').GetName( GetPlayer )] are [shunned|E]"
- doctrine_parameter_vampirethemasquerade_none: "Characters with the [GetTrait('predatortype_farmer').GetName( GetPlayer )] [trait|E] are [shunned|E]."  
+
  doctrine_parameter_vampirethemasquerade_family: "Characters with the [traits|E] [GetTrait('predatortype_alleycat').GetName( GetPlayer )], [GetTrait('predatortype_bedlamite').GetName( GetPlayer )], [GetTrait('predatortype_farmer').GetName( GetPlayer )], [GetTrait('predatortype_footpad').GetName( GetPlayer )] or [GetTrait('predatortype_graverobber').GetName( GetPlayer )] are [shunned|E]. Characters with the [trait|E] [GetTrait('predatortype_familias').GetName( GetPlayer )] are fully accepted"
  doctrine_parameter_vampirethemasquerade_cult: "Characters with the [traits|E] [GetTrait('predatortype_consensualist').GetName( GetPlayer )] or [GetTrait('predatortype_familias').GetName( GetPlayer )] are [shunned|E].  Character with the [GetTrait('predatortype_cultist').GetName( GetPlayer )] [trait|E] are accepted." 
  doctrine_parameter_vampirethemasquerade_consent: "Characters with the [GetTrait('predatortype_alleycat').GetName( GetPlayer )] [trait|E] are [criminals|E]. Characters with the [GetTrait('predatortype_cauchemar').GetName( GetPlayer )] or [GetTrait('predatortype_extortionist').GetName( GetPlayer )] [traits|E] are [shunned|E]. Characters with the [GetTrait('predatortype_consensualist').GetName( GetPlayer )] [trait|E] are praised. All other predator types are accepted."  
@@ -73,6 +76,8 @@
  doctrine_parameter_vampireghouling_shunned: "Characters with the [traits|E] [GetTrait('ghoul').GetName( GetPlayer )] or [GetTrait('regnant').GetName( GetPlayer )] are [shunned|E]. Characters with the [GetTrait('massregnant').GetName( GetPlayer )] are [criminals|E]."
  doctrine_parameter_vampireghouling_accepted: "Characters with the [traits|E] [GetTrait('ghoul').GetName( GetPlayer )] or [GetTrait('regnant').GetName( GetPlayer )] are fully accepted. Characters with the [GetTrait('massregnant').GetName( GetPlayer )] are [criminals|E]."
  doctrine_parameter_vampireghouling_mass: "Can recruit [GetMaA('massghouls_maa').GetName] as [men_at_arms|E].\nCharacters with the [traits|E] [GetTrait('ghoul').GetName( GetPlayer )], [GetTrait('regnant').GetName( GetPlayer )] or [GetTrait('massregnant').GetName( GetPlayer )] are fully accepted." 
+ doctrine_parameter_majordomo_court_position_unlock: "Can employ a [GetCourtPositionType('majordomo_court_position').GetName()]"
+ majordomo_court_position_unlock_name: ""Can employ a Majordomo"" #intentional double quotes
 
  doctrine_bloodsorcery_name: "Blood Sorcery"
  doctrine_bloodsorcery_crime_name: "Criminal"
@@ -82,23 +87,20 @@
  doctrine_bloodsorcery_accepted_name: "Accepted"
  doctrine_bloodsorcery_accepted_desc: "Magic fills the world around us, and it is our right and our privilege to engage with it the way our ancestors did."
  doctrine_bloodsorcery_kufr_name: "Kufr"
- doctrine_bloodsorcery_kufr_desc: "The Ashirra openly recognize the existence of magic but warns its adherents against seeking the aid of sorcerors. To do so is to demonstrate a lack of faith in Allah, who is the only absolute power in the universe. Similarly, those who practice magic, particulary in divining the future, are seeking to usurp some of His power and thus commit blasphemy, barring them from entry to Heaven\n\nThere are some Ashirra, however, who practice a form of magic they believe to be in line with Allah's will. This magic, Sihr derives its power from faith and avoids the general practices of other traditions."
+ doctrine_bloodsorcery_kufr_desc: "The Ashirra openly recognize the existence of magic but warns its adherents against seeking the aid of sorcerors. To do so is to demonstrate a lack of faith in Allah, who is the only absolute power in the universe. Similarly, those who practice magic, particularly in divining the future, are seeking to usurp some of His power and thus commit blasphemy, barring them from entry to Heaven\n\nThere are some Ashirra, however, who practice a form of magic they believe to be in line with Allah's will. This magic, Sihr derives its power from faith and avoids the general practices of other traditions."
  doctrine_parameter_bloodsorcery_illegal: "Characters with the [GetTrait('bloodsorcery').GetName( GetPlayer )] [trait|E] are [criminals|E]"
  doctrine_parameter_bloodsorcery_shunned: "Characters with the [GetTrait('bloodsorcery').GetName( GetPlayer )] [trait|E] are [shunned|E]"
  doctrine_parameter_bloodsorcery_accepted: "Characters with the [GetTrait('bloodsorcery').GetName( GetPlayer )] [trait|E] are fully accepted"
  doctrine_parameter_bloodsorcery_kufr: "Characters with the [GetTrait('bloodsorcery').GetName( GetPlayer )] [trait|E] are fully accepted"
  doctrine_parameter_non_sihr_bloodsorcery_learning_penalty: "Learning any [bloodmagic_path|E] that isn't Sihr will cost piety and incur additional penalties."
  
- doctrine_infernalism_name: "Infernalism"
- doctrine_infernalism_crime_name: "Criminal"
- doctrine_infernalism_crime_desc: "They are universally reviled by even the most evil of their colleagues – after all, even monsters have their standards."
- doctrine_infernalism_shunned_name: "Shunned"
- doctrine_infernalism_shunned_desc: "Within the World of Darkness, there are many monsters and many dark and terrible entities."
- doctrine_infernalism_accepted_name: "Accepted"
- doctrine_infernalism_accepted_desc: "Some receive power in the form of Demonic Investments or other malign gifts; others tap into the power of Hell through Paths of sorcery; and those supernatural creatures who follow the path of screams receive twisted powers of their own."
- doctrine_parameter_infernalism_illegal: "Characters with the [GetTrait('infernalist').GetName( GetPlayer )], [GetTrait('baali').GetName( GetPlayer )], [GetTrait('demon').GetName( GetPlayer )],  [GetTrait('fomori').GetName( GetPlayer )], [GetTrait('banemummy').GetName( GetPlayer )], [GetTrait('asekh_sen').GetName( GetPlayer )], [GetTrait('spectre').GetName( GetPlayer )] or [GetTrait('wukuei').GetName( GetPlayer )] [traits|E] are [criminals|E]"
- doctrine_parameter_infernalism_shunned: "Characters with the [GetTrait('infernalist').GetName( GetPlayer )], [GetTrait('baali').GetName( GetPlayer )], [GetTrait('demon').GetName( GetPlayer )],  [GetTrait('fomori').GetName( GetPlayer )], [GetTrait('banemummy').GetName( GetPlayer )], [GetTrait('asekh_sen').GetName( GetPlayer )], [GetTrait('spectre').GetName( GetPlayer )] or [GetTrait('wukuei').GetName( GetPlayer )] [traits|E] are [shunned|E]"
- doctrine_parameter_infernalism_accepted: "Characters with the [GetTrait('infernalist').GetName( GetPlayer )], [GetTrait('baali').GetName( GetPlayer )], [GetTrait('demon').GetName( GetPlayer )],  [GetTrait('fomori').GetName( GetPlayer )], [GetTrait('banemummy').GetName( GetPlayer )], [GetTrait('asekh_sen').GetName( GetPlayer )], [GetTrait('spectre').GetName( GetPlayer )] or [GetTrait('wukuei').GetName( GetPlayer )] [traits|E] are fully accepted"
+ doctrine_demonology_name: "Demonology"
+ doctrine_demonology_crime_name: "Criminal"
+ doctrine_demonology_crime_desc: "To study $POD_splat_demon_plural$ is to become a slave to them."
+ doctrine_demonology_shunned_name: "Shunned"
+ doctrine_demonology_shunned_desc: "Only doom awaits those that study the darkest pits of hell."
+ doctrine_demonology_accepted_name: "Accepted"
+ doctrine_demonology_accepted_desc: "The study of $POD_splat_demon_plural$ is a worthy cause."
  doctrine_parameter_demonology_illegal: "Characters with the [GetTrait('demonology').GetName( GetNullCharacter )] [trait|E] are [criminals|E]"
  doctrine_parameter_demonology_shunned: "Characters with the [GetTrait('demonology').GetName( GetNullCharacter )] [trait|E] are [shunned|E]"
  doctrine_parameter_demonology_accepted: "Characters with the [GetTrait('demonology').GetName( GetNullCharacter )] [trait|E] are fully accepted"
@@ -112,9 +114,9 @@
  doctrine_demonic_shunned_desc: "Those who make pacts with demons sow their own demise. Bargain not with the Darkness: in time it will take us all. Mark well the Children of the One Below, the Serpent's Kin, for their touch will burn you as well, and their tongues will delude and deceive you. Hunt and destroy the infernalists wherever you find them."
  doctrine_demonic_accepted_name: "Accepted"
  doctrine_demonic_accepted_desc: "Infernal investments are the path to true power!"
- doctrine_parameter_demonic_illegal: "Characters with the [GetTrait('demon').GetName( GetPlayer )], [GetTrait('baali').GetName( GetPlayer )] or [GetTrait('cultist').GetName( GetPlayer )] [traits|E] are [criminals|E]"
- doctrine_parameter_demonic_shunned: "Characters with the [GetTrait('demon').GetName( GetPlayer )], [GetTrait('baali').GetName( GetPlayer )] or [GetTrait('cultist').GetName( GetPlayer )] [traits|E] are [shunned|E]"
- doctrine_parameter_demonic_accepted: "Characters with the [GetTrait('demon').GetName( GetPlayer )], [GetTrait('baali').GetName( GetPlayer )] or [GetTrait('cultist').GetName( GetPlayer )] [traits|E] are fully accepted"
+ doctrine_parameter_demonic_illegal: "Characters with the [GetTrait('demon').GetName( GetPlayer )], [GetTrait('baali').GetName( GetPlayer )], [GetTrait('witch').GetName( GetPlayer )], [GetTrait('spectre').GetName( GetPlayer )] or [GetTrait('fomori').GetName( GetPlayer )] [traits|E] are [criminals|E]"
+ doctrine_parameter_demonic_shunned: "Characters with the [GetTrait('demon').GetName( GetPlayer )], [GetTrait('baali').GetName( GetPlayer )], [GetTrait('witch').GetName( GetPlayer )], [GetTrait('spectre').GetName( GetPlayer )] or [GetTrait('fomori').GetName( GetPlayer )] [traits|E] are [shunned|E]"
+ doctrine_parameter_demonic_accepted: "Characters with the [GetTrait('demon').GetName( GetPlayer )], [GetTrait('baali').GetName( GetPlayer )], [GetTrait('witch').GetName( GetPlayer )], [GetTrait('spectre').GetName( GetPlayer )] or [GetTrait('fomori').GetName( GetPlayer )] [traits|E] are fully accepted"
 
  doctrine_vampirediablerie_name: "$pod_diablerie$"
  doctrine_vampirediablerie_crime_name: "Criminal"
@@ -595,7 +597,7 @@
  doctrine_setite_virtuous_desc: "Many are those who serve Set, hoping for a great reward or simply believing in his cause of freedom and liberation."
  doctrine_parameter_hostility_override_doctrine_setite_virtuous: "[faiths|E] that ally Set are considered to be [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_setite_evil_name: "Evil"
- doctrine_setite_evil_desc: "As the creator of the Bane Mummies and the main opponent of the Osirian League, Set has a lot of very dedicated enemies."
+ doctrine_setite_evil_desc: "As the creator of the Bane Mummies and the main opponent of the $glossary_osirian_league$, Set has a lot of very dedicated enemies."
  doctrine_parameter_hostility_override_doctrine_setite_evil: "[faiths|E] that oppose Set are considered to be [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  
  doctrine_assamite_name: "[GetTrait('assamite').GetName( GetNullCharacter )]"
@@ -800,8 +802,8 @@
  special_doctrine_ashirra_pillars_kindred_name: "Ashirra Pillars"
  special_doctrine_ashirra_pillars_kindred_desc: "While those that followed the early footsteps of Islam came from very different clans and backgrounds, they all believed in something greater than themselves."
  doctrine_parameter_hostility_override_special_doctrine_ashirra_pillars_kindred: "Other Kindred [faiths|E] that have the [GetFaithDoctrine('special_doctrine_ashirra_pillars_kindred').GetBaseName] [doctrine|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of $hostility_evil_tooltippable$"
- doctrine_parameter_ashirra_khitta_building_province_bonuses: "Ashirra aligned [Glossary('Khittas','game_concept_khittas_desc')] in [holy_cairo|E] provide additional taxes if Cairo follows this faith"
- doctrine_parameter_ashirra_khitta_building_character_bonuses: "Ashirra aligned [Glossary('Khittas','game_concept_khittas_desc')] in [holy_cairo|E] provide piety if the holder follows this faith"
+ doctrine_parameter_ashirra_khitta_building_province_bonuses: "Ashirra aligned $glossary_khittas$ in [holy_cairo|E] provide additional taxes if Cairo follows this faith"
+ doctrine_parameter_ashirra_khitta_building_character_bonuses: "Ashirra aligned $glossary_khittas$ in [holy_cairo|E] provide piety if the holder follows this faith"
 
  special_doctrine_lilith_pillars_kindred_name: "Lilim Pillars"
  special_doctrine_lilith_pillars_kindred_desc: "Lilith seeks vengeance against the children of Caine. But she will accept eager converts, or useful pawns, when needed."
@@ -815,9 +817,7 @@
  special_doctrine_main_paradox_desc: "The Path of Paradox pays a heavy debt to certain tenets of Hinduism and is widely accepted as a respectable tenet among Indian vampires. Its bastardized Western version on the other hand isn't."
  doctrine_parameter_hostility_override_special_doctrine_heretical_paradox: "Other Kindred [faiths|E] that have the [GetFaithDoctrine('special_doctrine_heretical_paradox').GetBaseName] [doctrine|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]." 
     
- special_doctrine_bastet_nation_name: "Bastet Nation"
- special_doctrine_bastet_nation_desc: "Mother Seline watches with pride as her beloved cat children are finally united as one."
- doctrine_parameter_hostility_override_special_doctrine_bastet_nation: "Other [faiths|E] that have the [GetFaithDoctrine('special_doctrine_bastet_nation').GetBaseName] [doctrine|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of [faith_astray|V]" 
+
    
  
  special_doctrine_ecumenical_hunters_name: "Ecumenical Hunters"
@@ -834,7 +834,7 @@
  
  special_doctrine_fivefold_path_kindred_name: "Fivefold Path"
  special_doctrine_fivefold_path_kindred_desc: "The Five traditional [Glossary('Dharma','podgloss.dharma')] created by the first [Glossary('Arhat','podgloss.arhat')], [GetScriptedCharacterByHistoryID('791111').GetFirstName]. They form the traditional core of $pod_kueijin$ society.\nFollowers of the Fivefold Path see the heretical [Glossary('Dharma','podgloss.dharma')] as painfully deluded fools or dangerous traitors that need to be put down for good."
- doctrine_parameter_hostility_override_special_doctrine_fivefold_path_kindred: "Other [GetTrait('kueijin').GetName( GetNullCharacter )] [faiths|E] that have the [GetFaithDoctrine('special_doctrine_fivefold_path_kindred').GetBaseName] [doctrine|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of #V Hostile#!" 
+ doctrine_parameter_hostility_override_special_doctrine_fivefold_path_kindred: "[GetTrait('kueijin').GetName( GetNullCharacter )] [faiths|E] that have the [GetFaithDoctrine('special_doctrine_fivefold_path_kindred').GetBaseName] [doctrine|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
  
  anda_hostility_name: "[Glossary('Anda','podgloss.anda')] Hostility"
  special_doctrine_is_anda_faith_name: "[Glossary('Anda','podgloss.anda')]"
@@ -885,18 +885,19 @@
  doctrine_parameter_hostility_override_special_doctrine_against_to_oblivion_hostility: "[faiths|E] that oppose [UmbraGlossary('oblivion')] are considered to be [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  
  apophis_hostility_name: "Apophis Hostility"
- special_doctrine_allied_to_apophis_hostility_name: "Servant of Apophis"
- special_doctrine_allied_to_apophis_hostility_desc: "Apophis is our supreme lord. Those who don't obey him will understand soon, or be destroyed."
- doctrine_parameter_hostility_override_special_doctrine_allied_to_apophis_hostility: "[faiths|E] that follow Apophis are considered to be [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- special_doctrine_against_to_apophis_hostility_name: "Opposed to Apophis"
- special_doctrine_against_to_apophis_hostility_desc: "Opposed to Apophis. The Serpent and its many masks must be destroyed."
- doctrine_parameter_hostility_override_special_doctrine_against_to_apophis_hostility: "[faiths|E] that oppose Apophis are considered to be [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- special_doctrine_osiris_league_name: "Osirian League"
- special_doctrine_osiris_league_desc: "While defeated, the Osirian League's spirit of defiance against Set remains."
- doctrine_parameter_hostility_override_special_doctrine_osiris_league: "[faiths|E] of the old Osirian League are considered to be [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ special_doctrine_allied_to_apophis_hostility_name: "Servant of $glossary_wyrm_apophis$"
+ special_doctrine_allied_to_apophis_hostility_desc: "$glossary_wyrm_apophis$ is our supreme lord. Those who don't obey him will understand soon, or be destroyed."
+ doctrine_parameter_hostility_override_special_doctrine_allied_to_apophis_hostility: "[faiths|E] that follow $glossary_wyrm_apophis$ are considered to be [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ special_doctrine_against_to_apophis_hostility_name: "Opposed to $glossary_wyrm_apophis$"
+ special_doctrine_against_to_apophis_hostility_desc: "Opposed to $glossary_wyrm_apophis$. The Serpent and its many masks must be destroyed."
+ doctrine_parameter_hostility_override_special_doctrine_against_to_apophis_hostility: "[faiths|E] that oppose $glossary_wyrm_apophis$ are considered to be [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ special_doctrine_osirian_league_name: "Osirian League"
+ special_doctrine_osirian_league_desc: "While defeated, the $glossary_osirian_league$'s spirit of defiance against Set remains."
+ doctrine_parameter_hostility_override_special_doctrine_osirian_league: "[faiths|E] of the $glossary_osirian_league$ are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_osirian_maa: "Can recruit [GetMaA('disciples_anubis_maa').GetName], [GetMaA('daggers_nut_maa').GetName], [GetMaA('warriors_ubastet').GetName], and [GetMaA('army_aten').GetName] as [men_at_arms|E]"
   
  cabiri_hostility_doctrine_name: "Cabiri"
- cabiri_hostility_doctrine_desc: "They practicing the same rites and Hekau as their Egyptian brethren, fighting against the minions of Apophis, but also against the oppressiveness of the Shemsu-Heru."
+ cabiri_hostility_doctrine_desc: "They practicing the same rites and Hekau as their Egyptian brethren, fighting against the minions of $glossary_wyrm_apophis$, but also against the oppressiveness of the Shemsu-Heru."
  doctrine_cabiri_name: "[GetTrait('cabiri').GetName( GetNullCharacter )]"
  doctrine_cabiri_evil_name: "Evil"
  doctrine_cabiri_evil_desc: "There can be no peace or negotiations with the Spawns of Cabirus. We will destroy them all, or die trying."
@@ -922,7 +923,7 @@
  doctrine_shemsuheru_shunned_desc: "[GetTrait('shemsuheru').GetName( GetNullCharacter )] are shunned."
  doctrine_shemsuheru_accepted_name: "Accepted"
  doctrine_shemsuheru_accepted_desc: "[GetTrait('shemsuheru').GetName( GetNullCharacter )] are accepted."
- doctrine_parameter_hostility_override_doctrine_shemsuheru_accepted: "[faiths|E] that support the Shemsu-heru are considered to be [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_shemsuheru_accepted: "[faiths|E] that support the Shemsu-heru are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_shemsuheru_hostility_doctrine: "Shemsu-heru [faiths|E] are considered to be [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_shemsuheru_illegal: "Characters with the [GetTrait('shemsuheru').GetName( GetNullCharacter )] [trait|E] are [criminals|E]"
  doctrine_parameter_shemsuheru_shunned: "Characters with the [GetTrait('shemsuheru').GetName( GetNullCharacter )] [trait|E] are [shunned|E]"
@@ -943,7 +944,7 @@
  banemummy_hostility_doctrine_desc: ""
  doctrine_banemummy_name: "[GetTrait('banemummy').GetName( GetNullCharacter )]"
  doctrine_banemummy_evil_name: "Evil"
- doctrine_banemummy_evil_desc: "There can be no peace or negotiations with the faces of Apophis. We will destroy them all, or die trying."
+ doctrine_banemummy_evil_desc: "There can be no peace or negotiations with the faces of $glossary_wyrm_apophis$. We will destroy them all, or die trying."
  doctrine_banemummy_crime_name: "Criminal"
  doctrine_banemummy_crime_desc: "[GetTrait('banemummy').GetName( GetPlayer )] must be destroyed."
  doctrine_banemummy_shunned_name: "Shunned"
@@ -1019,7 +1020,7 @@
 
  tenet_secret_cult_name: "Secret Cult"
  tenet_secret_cult_desc: "This faith organizes like a shadowy conspiracy of sort. Few really know their existence, and they like it that way." 
- doctrine_parameter_secret_cult: "Gives access to the Cultists Men at Arms. Penalty for county religious conversion."
+ doctrine_parameter_secret_cult: "Can recruit [GetMaA('cultists').GetName] as [men_at_arms|E]"
  tenet_noblesse_oblige_name: "Noblesse Oblige"
  tenet_noblesse_oblige_desc: "Rulers take the responsibility of lieges towards their vassals extremely seriously. To administer the system of vassalage justly should result in happy vassals. Happy vassals mean a successful liege."
 
@@ -1089,6 +1090,7 @@
  tenet_way_of_zhong_kuei_desc: "The methodology of quelling undead demons developed by Zhong Kuei. Those who follow the way are adept at 'Finding the Lair' of vampires."
 
 
+
  tenet_banepossession_name: "Bane Possession"
  tenet_banepossession_desc: "Banes are evil spirits in service of the Wyrm. Banes run the full gamut from weak and relatively harmless to hideously powerful creatures capable of rending reality around them. Weak Banes are frequently used to infect humans and animals, turning them into fomori. Finding hosts for banes is regarded as a sacred task by Wyrm cults."
  
@@ -1096,9 +1098,9 @@
  past_lives_doctrine_name: "Past Lives"
  past_lives_doctrine_desc: "For the greatest heroes, death is not the end. The wisest and strongest of Garou linger on, remaining as spirits to guide their descendants in the great struggle. Stargazers and Children of Gaia see it as literal reincarnation of Garou heroes into their descendants. Some feel that is more a collective race record like the Akashic Record. Other Garou think of it more as guidance of ancestors spirits. The visions that come can share important wisdom and even practical skills. Sometimes, it seems as if the Garou is even possessed by the spirit of their ancestor.  Even more rarely, that ancestor was and apparently is still insane."
  
- wyrm_tainted_name: "Wyrm Taint"
- wyrm_tainted_doctrine_name: "Wyrm Taint"
- wyrm_tainted_doctrine_desc: "Many $glossary_fera$ who revere Gaia have a gift that allows them to sense the taint of the Wyrm on others. This taint can take many forms. One common taint are the vampiric roads and paths of enlightenment which are regarded as so corrupt that the followers of those faiths are inherently regarded as tainted by the Wyrm."
+ wyrm_tainted_name: "$glossary_wyrm$ Taint"
+ wyrm_tainted_doctrine_name: "$glossary_wyrm$ Taint"
+ wyrm_tainted_doctrine_desc: "Many $glossary_fera$ who revere Gaia have a gift that allows them to sense the taint of the $glossary_wyrm$ on others. This taint can take many forms. One common taint are the vampiric roads and paths of enlightenment which are regarded as so corrupt that the followers of those faiths are inherently regarded as tainted by the Wyrm."
  doctrine_parameter_hostility_override_wyrm_tainted_doctrine: "[faiths|E] with [GetFaithDoctrine('wyrm_tainted_doctrine').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  tenet_bacchanal_name: "Bacchanal"
@@ -1106,9 +1108,6 @@
  
  tenet_neter_sentra_name: "Neter Sentra"
  tenet_neter_sentra_desc: "The breath of the divine: prayers are carried to the heavens by smoke. The cult of divine smoke has adopted the novel innovation of not just eating hashish cakes, but smoking them. They experiment with a variety of exotic incenses and potential dangerous fumes. This tenet makes the stress reduction of the hashishiyah decision twice as effective."  
- 
- tenet_innovative_name: "Innovative"
- tenet_innovative_desc: "Technological progress is the most important edge anyone can have. While most Garou are skeptical of innovation at best, some followers of the Wyld openly push innovation forward not only for their own adoption but humanity at large."
  
  tenet_paranoia_name: "Paranoia"
  tenet_paranoia_desc: "Just because you're paranoid does not mean that they aren't out to get you!" 
@@ -1119,8 +1118,7 @@
  tenet_collectivism_name: "Collectivism"
  tenet_collectivism_desc: "Originating from ancient Chinese uniformitarianism, is dedicated to building a Leviathan-like collective, creating a collective concept of the scholarly body through flexible indoctrination and hard laws, and eventually creating a unified collective will."
  
- tenet_wolves_of_sable_name: "Wolves of Sable"
- tenet_wolves_of_sable_desc: "Sable is the invisible hunter in the drifts; silently brooding, patiently waiting, striking without warning and then gone again into the ice, snow, and wind, leaving only a drop or two of blood behind as evidence that she was ever there at all. She is the small survivor, strengthened by her surroundings and tempered by her solitude. She represents the unexpected huntress and the survival of the fittest against the harshest of odds. Children of Sable are regarded as allies by wind spirits and can call on them and speak to them freely. Sable relies on her children to protect her Siberian lands. Falcon views all Children of Sable as dishonored, half-breed savages and under no circumstances will Falcon abide a Siberakh's membership in a pack that he has chosen as his own." 
+
  
  # special_doctrine_hunter_hunting_name: "Hunters Hunting"
  # special_doctrine_hunter_hunting_desc: "There can be no peace or negotiations with the Great Enemy. We will destroy them all, or die trying."
@@ -1240,8 +1238,8 @@
  doctrine_parameter_hostility_override_doctrine_fae_agenda_constantinian: "[faiths|E] that have the [GetFaithDoctrine('doctrine_fae_agenda_constantinian').GetBaseName] [doctrine|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_tenet_constantinian: "[faiths|E] that have the [GetFaithDoctrine('tenet_constantinian').GetBaseName] [doctrine|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_special_doctrine_constantinian_catechism: "[faiths|E] that have the [GetFaithDoctrine('special_doctrine_constantinian_catechism').GetBaseName] [doctrine|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- special_doctrine_wyrm_to_unseelie_hostility_name: "Wyrm-Unseelie Pacts"
- special_doctrine_unseelie_to_wyrm_hostility_name: "Unseelie-Wyrm Pacts"
+ special_doctrine_wyrm_to_unseelie_hostility_name: "$glossary_wyrm$-Unseelie Pacts"
+ special_doctrine_unseelie_to_wyrm_hostility_name: "Unseelie-$glossary_wyrm$ Pacts"
  special_doctrine_unseelie_splat_hostility_name: "Unseelie-Prodigal Pacts"
  special_doctrine_garou_to_seelie_hostility_name: "Garou-Seelie Pacts"
  special_doctrine_seelie_to_garou_hostility_name: "Seelie-Garou Pacts"
@@ -1251,8 +1249,8 @@
  special_doctrine_fiona_fianna_pact_hostility_name: "Fiona-Fianna Pacts"
  special_doctrine_gaia_trucebearer_pact_hostility_name: "Children of Gaia and Oath Truce"
  special_doctrine_trucebearer_gaia_pact_hostility_name: "Oath Truce and the Children of Gaia" 
- special_doctrine_wyrm_to_unseelie_hostility_desc: "Wyrm-Unseelie Pacts"
- special_doctrine_unseelie_to_wyrm_hostility_desc: "Unseelie-Wyrm Pacts"
+ special_doctrine_wyrm_to_unseelie_hostility_desc: "$glossary_wyrm$-Unseelie Pacts"
+ special_doctrine_unseelie_to_wyrm_hostility_desc: "Unseelie-$glossary_wyrm$ Pacts"
  special_doctrine_unseelie_splat_hostility_desc: "Unseelie-Prodigal Pacts"
  special_doctrine_garou_to_seelie_hostility_desc: "Garou-Seelie Pacts"
  special_doctrine_seelie_to_garou_hostility_desc: "Seelie-Garou Pacts"
@@ -1312,6 +1310,10 @@
  special_doctrine_vices_sloth_desc: "Lazy avoidance of work and duty."
  special_doctrine_vices_wrath_name: "Wrath"
  special_doctrine_vices_wrath_desc: "Unrighteous fury that spurns love and mercy."
+
+ doctrine_cannibalism_name: ""
+ POD_cannibalism_legal_name: ""
+ POD_cannibalism_legal_desc: ""
  
  constantinian_catechism_name: "Constantinian Catechism"
  constantinian_catechism_desc: ""
@@ -1385,11 +1387,19 @@
  doctrine_parameter_raiding_forbidden: "Cannot [raid|E]"
  
  tenet_amakusa_rite_name: "Amakusa Rite"
- tenet_amakusa_rite_desc: "Through the mixing of vitae in a shared bowl and fortified with proper rites and respects, draughts that shatter oppression and equalize all under the night may liberate the Blood Tribe, for their eternal revolution may continue to be waged without fear of the Bloodbond or lacking the means to do so."
+ tenet_amakusa_rite_desc: "Through the mixing of $pod_vitae$ in a shared bowl and fortified with proper rites and respects, draughts that shatter oppression and equalize all under the night may liberate the Blood Tribe, for their eternal revolution may continue to be waged without fear of the Bloodbond or lacking the means to do so."
  
  tenet_cruelty_of_stars_name: "Cruelty of Stars"
  tenet_cruelty_of_stars_desc: "Behind every great fortune is an even greater crime. Mortals are meat, and the blood fiend is the consumer. Enlightenment is a poor man’s game. Drive them, break them, steal from them, and force them to earn it back while convincing them it was a bargain. Let them call you an Infernalist. You have money to make."
  
+ tenet_physical_ascension_name: "Ascension of the Flesh"
+ tenet_physical_ascension_desc: "The goal of all Seekers is to ascend their mortal flesh into a state known as [GetTrait('azhi_dahaka').GetName(GetPlayer)]. A state where they completely seperate themselves from Creation, to be a self-sufficient will in a universe that holds no more power over the ego."
+ doctrine_parameter_azhi_dahaka_journey_bonus: "Increases the [planning_speed|E] of the #bold Search for Azhi Dahaka#! [journey|E] by #P +25%#!"
+
+ tenet_burn_the_inferno_name: "Burn the Inferno"
+ tenet_burn_the_inferno_desc: "The [akuma|E]'s weapons will be turned against them. No sacrifice is too great, no treachery too small."
+ doctrine_parameter_recruit_deviltiger_banes: "Can recruit [GetMaA('rat_headed_dragonfly_demon').GetName], [GetMaA('sleeper_seducing_bane').GetName], and [GetMaA('face_robe_demon').GetName] as [men_at_arms|E]"
+
 
  land_of_faith_controlled_name: "Land of Faith"
  special_doctrine_land_of_faith_controlled_name: "Land of Faith"
@@ -1405,35 +1415,121 @@
  doctrine_parameter_hostility_override_tenet_obeisance_to_devils: "[faiths|E] that have the [GetFaithDoctrine('tenet_obeisance_to_devils').GetBaseName] [doctrine|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of #V Hostile#!" 
 
 
+ tenet_fera_innovative_name: "Innovative"
+ tenet_fera_innovative_desc: "Technological progress is the most important edge anyone can have. While most Garou are skeptical of innovation at best, some followers of the $glossary_weaver$ openly push innovation forward not only for their own adoption but humanity at large."
+
+ tenet_one_blade_name: "One with the Blade"
+ tenet_one_blade_desc: "The Hakken are the Hengeyokai's foremost warriors and protectors. To this end, many of them spend their life devoted to mastery of the blade."
+ doctrine_parameter_katana_crafting: "[crafting_forged|E] Swords will always be Katanas"
+ doctrine_parameter_no_sword_fetish_upkeep: "Sword and Katana [fetishes|E] require no $POD_energy_gnosis$ Upkeep"
+ doctrine_parameter_pack_training_blademaster: "Training [prowess|E] with your [GetPlayer.Custom('PODCoterie')] gives [GetTrait('lifestyle_blademaster').GetName(GetPlayer)] [trait_level_track_xp|E]"
+
+ tenet_wolves_of_sable_name: "Wolves of Sable"
+ tenet_wolves_of_sable_desc: "Sable is the invisible hunter in the drifts; silently brooding, patiently waiting, striking without warning and then gone again into the ice, snow, and wind, leaving only a drop or two of blood behind as evidence that she was ever there at all. She is the small survivor, strengthened by her surroundings and tempered by her solitude. She represents the unexpected huntress and the survival of the fittest against the harshest of odds. Children of Sable are regarded as allies by wind spirits and can call on them and speak to them freely. Sable relies on her children to protect her Siberian lands. Falcon views all Children of Sable as dishonored, half-breed savages and under no circumstances will Falcon abide a Siberakh's membership in a pack that he has chosen as his own." 
+
+ tenet_soldiers_of_the_wyrm_name: "Soldiers of the Wyrm"
+ tenet_soldiers_of_the_wyrm_desc: "We are the soldiers of the $glossary_wyrm$, not of its inferior servants. Our glory shall be seen, our faith rewarded."
+ doctrine_parameter_reduced_urgetaints_xp: "Reduces [urgetaints_lifestyle|E] [lifestyle_experience|E] obtained by #N -25%#!"
+
+ tenet_secrets_of_flesh_name: "Secrets of Flesh"
+ tenet_secrets_of_flesh_desc: "Much wisdom lies dormant in the flesh. The Litany will deny us no longer."
+ doctrine_parameter_wyrm_education_lifestyle_xp_from_cannibalism: "Gain [lifestyle_experience|E] matching your [education|E] when devouring other characters scaling with the victim's age"
+ doctrine_parameter_infamy_renown_from_cannibalism: "Gain $POD_fera_renown_infamy$ $glossary_fera$ Renown when devouring characters older than 200"
+
+ tenet_centipede_embrace_name: "Centipede's Embrace"
+ tenet_centipede_embrace_desc: "The [Glossary('Centipede', 'glossary_wyrm_tt')] will grow endlessly, feeding on the land itself."
+ doctrine_parameter_ignore_dragon_nest_requirements: "Ignore all [development|E] requirements in Dragon Nest [duchy_buildings|E]"
+
+ tenet_wyrm_seekers_name: "Wyrm Seekers"
+ tenet_wyrm_seekers_desc: "The $glossary_wyrm$ holds much knowledge and power, one simply needs to seek it."
+ doctrine_parameter_increased_urgetaints_xp: "Increases [urgetaints_lifestyle|E] [lifestyle_experience|E] obtained by #P +25%#!"
+
+ tenet_channel_darkness_name: "Channel the Darkness"
+ tenet_channel_darkness_desc: "We are one with the darkness, mere phantoms in the dark. We move unseen until our shadows descend upon the fools that stand in our way."
+ doctrine_parameter_unlock_shadow_shapeshift: "Unlock [GetModifier('POD_shapeshift_form_shadow_modifier').GetNameWithTooltip] shapeshift option"
+
+ tenet_hypnotic_serpent_name: "Sway of the Hypnotic Serpent"
+ tenet_hypnotic_serpent_desc: "[Glossary('Cahlash', 'glossary_wyrm_tt')] calls to us and we will answer. Soon, the others will learn to as well."
+ doctrine_parameter_learn_secrets_from_seduction: "Successful [GetScheme('seduce').GetTypeName] [schemes|E] reveal all [secrets|E] the target knows, including their own."
 
 
+ tenet_vengence_sobek_name: "Vengeance for Sobek"
+ tenet_vengence_sobek_desc: "The lands will be cleansed. The rivers will flow. The winds will blow. The temples will be sanctified. The sun will blaze. The serpents will burn."
 
+ tenet_flames_agni_name: "Flames of Agni"
+ tenet_flames_agni_desc: "While all Mokolé revere Dragon, the followers of the Cosmic Order refer to him as Agni, the God of Fire, the Conveyor of Oblations, and the Speaker of the Wani. Agni is both strong and wise, his flames shield his followers and burn his foes.\nAn eternal flame burns within each of his chosen children, they need only ignite it."
+ doctrine_parameter_unlock_agni_totem: "Can choose [GetModifier('agni_totem_modifier').GetNameWithTooltip] instead of [GetModifier('dragon_totem_modifier').GetNameWithTooltip] as a [GetPlayer.Custom('PODCoterie')] Totem."
+ doctrine_parameter_gain_fire_immunity: "Gain immunity to fire damage."
+
+ tenet_lords_rivers_name: "Lords of Rivers"
+ tenet_lords_rivers_desc: "Many Zhong Lung choose to live along the great rivers of Zhong Guo. The Stream of Water holds a terrifying command of the rivers, a young Mokolé would typically struggle to control a small stream, while a Dragon would move an entire river.\nThe Dragons restrain themselves greatly when exercising these powers, otherwise it would have catastrophic consequences on the land."
+ doctrine_parameter_gnosis_from_river_provinces: "Owned Riverside [counties|E] of this faith give $POD_energy_gnosis$ Regen: #P 2.5%#!."
+ doctrine_parameter_reduces_flood_weather_cost: "Reduces cost of #V Flood#! Weather Magic."
+
+ tenet_dragon_princes_name: "Dragon Princes"
+ tenet_dragon_princes_desc: "The Wani are the Dragon Princes of Zhong Guo, ruling the clouds and the rising and falling of water, and presiding over the royal houses of mankind. The Zhong Lung, with their draconic Archid form are the children of the Wani. This fact is sometimes disputed by the other races, until a lightning bolt makes them reconsider."
+ doctrine_parameter_can_learn_galliard_gifts: "Can learn [GetTrait('galliard').GetName( GetPlayer )] Gifts from the [lunar_auspicegifts_lifestyle|E] [lifestyle|E]."
+
+ tenet_outlast_world_name: "Outlast the World"
+ tenet_outlast_world_desc: "We do not need anyone but ourselves. Our hides are thick, and our spirits strong. The world may break, but we will still stand."
+
+ tenet_pilgrims_waves_name: "Pilgrims of the Waves"
+ tenet_pilgrims_waves_desc: "The seas hold much danger and wisdom, only by navigating them can we strengthen our spirits. Adversity can foster hope, and resilience."
+ doctrine_parameter_dreaming_sands_pilgrimage: "Completing [pilgrimages|E] awards Wanderer [lifestyle_experience|E] and $POD_fera_renown_wisdom$ $glossary_fera$ Renown"
+ doctrine_parameter_faith_can_raid_oversea: "Allows [raiding|E] over seas"
+
+
+ tenet_gaia_memory_name: "Gaia's Memory"
+ tenet_gaia_memory_desc: "Our charge has always been to be Gaia's Memory. It is our duty to guide the other Changing Breeds and teach them the long history of the $glossary_fera$ and the tasks Gaia set for us."
+ doctrine_parameter_pack_training_coterie_xp: "Training with your [GetPlayer.Custom('PODCoterie')] awards $POD_fera_renown_wisdom$ $glossary_fera$ Renown to all members"
+
+
+ tenet_sun_blessed_name: "Sun Blessed"
+ tenet_sun_blessed_desc: "The Celestine Helios has bestowed his favor upon only two of the $glossary_fera$, the [GetTrait('mokole').GetName(GetNullCharacter)] and [GetTrait('corax').GetName(GetNullCharacter)].\nThe warmth of the sun invigorates the body and calms the soul. The sun is a wondrous body, like a magnificent father."
+
+ tenet_eastern_mokole_name: "Mokolé of the East"
+ tenet_eastern_mokole_desc: "The Mokolé of Asia have learned to adapt to the numerous mortal and supernatural beliefs that permeate the lands. While they still believe their own faith is far superior, they nevertheless are willing to entertain the younger races' beliefs."
+
+ tenet_twisted_memories_name: "Twisted Memories"
+ tenet_twisted_memories_desc: "Memories are malleable things, easily changed, easily twisted."
+ doctrine_parameter_remove_relation_torture: "Remove a random [relation|E] from your victim during [torture|E]"
+ doctrine_parameter_mokole_wyrm_taint_torture: "Greatly increases [wyrm_taint|E] inflicted on [GetTrait('mokole').GetName(GetNullCharacter)] during [torture|E]"
+
+
+ doctrine_fera_wyrm_taint_visible_name: ""
+ fera_wyrm_taint_visible_doctrine_name: ""
+ fera_wyrm_taint_visible_doctrine_desc: ""
+ doctrine_parameter_can_see_wyrm_taint: ""
+
+ doctrine_parameter_wyrm_possession_power_faith_bonus_t1: "Additional [possessedpower_lifestyle|E] [perk|E] points when [possessed|E]: #P +2#!"
+ doctrine_parameter_wyrm_possession_power_faith_bonus_t2: "Additional [possessedpower_lifestyle|E] [perk|E] points when [possessed|E]: #P +4#!"
 
  doctrine_fera_triat_alignment_group_name: "Triat Alignment"
  
  doctrine_fera_triat_alignment_balanced_name: "Balanced"
- doctrine_fera_triat_alignment_balanced_desc: "The Triat are three of the greatest entities in the spiritual hierarchy: the Wyld, the Weaver, and the Wyrm. The Wyld created raw matter, life, and spirit while the Weaver gave these creations form and function, and the Wyrm destroyed them to make room for new creations. Others insist that the Wyrm was once known as Balance, selectively destroying the creations of Wyld and Weaver to create harmony from the opposing forces of chaos and order. The Triat is no longer in balance, however many $glossary_fera$ still believe in the old order."
+ doctrine_fera_triat_alignment_balanced_desc: "While the $glossary_triat$ is no longer in balance, many $glossary_fera$ still believe in the old order."
  doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_balanced: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_triat_alignment_balanced').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_fera_triat_alignment_wyld_name: "Wyld"
- doctrine_fera_triat_alignment_wyld_desc: "The Wyld is one of the three spirits of the Triat. The Wyld is a generative force: it creates absolute Chaos, which is given order by the Weaver before it is destroyed and returned to chaos by the Wyrm. Where the other two of the Triat went insane, the Wyld is diminishing, being squashed out by the Weaver, and destroyed recklessly by the Wyrm. As a result of the threat of Wyrm and Weaver, most shapechangers revere the Wyld above the other members of the Triat, seeing it and Gaia in need of protection."
+ doctrine_fera_triat_alignment_wyld_desc: "As a result of the threat of both the $glossary_weaver$ and $glossary_wyrm$, most $glossary_fera$ revere the $glossary_wyld$ above the other members of the $glossary_triat$, seeing it and Gaia in need of protection."
 
  doctrine_fera_triat_alignment_weaver_name: "Weaver"
- doctrine_fera_triat_alignment_weaver_desc: "The Weaver is one of the three great spirits of the Triat. Its function was thought to be to make order from the creations of the Wyld, giving them form and function for the duration of their existence before they were destroyed by the Wyrm, maintaining a balance between creation and destruction. Mankind is Weaver's adopted child, in order to bring order to the world and help her to end the chaos that her Celestine brethren constantly wrought upon creation."
+ doctrine_fera_triat_alignment_weaver_desc: "The $glossary_weaver$'s growth will never stop as long as mankind exists."
  doctrine_parameter_ignore_fera_dev_requirements: "Low [development|E] requirements for $glossary_fera$ buildings are ignored"
  doctrine_parameter_no_fera_dev_reduction: "$glossary_fera$ buildings in provinces following this [faith|E] do not reduce [development|E]"
 
  doctrine_fera_triat_alignment_wyrm_name: "Wyrm"
- doctrine_fera_triat_alignment_wyrm_desc: "The Wyrm is one of the higher Celestines. The Wyrm's purpose is the cleansing and rectification of Creation, furthering its descent into Entropy. He achieves this by eliminating that which the Wyld creates and the Weaver structures. The Wyrm was the second member of the Triat to go insane. Once the Weaver went mad and began encasing everything in Webs, the Wyrm was progressively constrained until he was driven mad as well, hellbent on destroying everything. Consequently, the Wyrm is now a spirit of destruction, chaos, darkness, and corruption, the essence of everything the Gaian $glossary_fera$ oppose." 
+ doctrine_fera_triat_alignment_wyrm_desc: "Like their fallen master, the servants of the $glossary_wyrm$ seek only chaos and destruction." 
  doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_wyrm: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_triat_alignment_wyrm').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_can_recruit_wyrm_maa: "Can recruit [GetMaA('scrags').GetName] and [GetMaA('skull_pigs').GetName] as [men_at_arms|E]"
 
  doctrine_fera_triat_alignment_triatic_wyrm_name: "Triatic Wyrm"
- doctrine_fera_triat_alignment_triatic_wyrm_desc: "As part of a resultant dissociative identity disorder on a universal scale, the Wyrm has split itself into three main "heads,” each representing a different part of its dark personality. The three heads also represent the Triat and the original balance of creation, as they are little more than the Wyrm attempting to figure out what went wrong, and as such the main three heads are called the Triatic Wyrm."
+ doctrine_fera_triat_alignment_triatic_wyrm_desc: "The $glossary_wyrm_triatic$ is a mockery of the original $glossary_triat$. The three heads of the Wyrm empower their closest servants with great unholy power."
  doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_triatic_wyrm: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_triat_alignment_triatic_wyrm').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
  doctrine_fera_triat_alignment_gaia_name: "Gaia"
- doctrine_fera_triat_alignment_gaia_desc: "Gaia is one of the most powerful spirits known to exist – possibly the first, and most powerful. She is credited with creating the Garou and most of the Fera to serve as her warriors and agents both in the material and spirit worlds. She is Mother Nature, nurturing and full of life but also savage and callous when crossed."
+ doctrine_fera_triat_alignment_gaia_desc: "Gaia is one of the most powerful spirits known to exist - possibly the first, and most powerful. She is credited with creating the Garou and most of the Fera to serve as her warriors and agents both in the material and spirit worlds. She is Mother Nature, nurturing and full of life but also savage and callous when crossed."
  doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_gaia: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_triat_alignment_gaia').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
@@ -1444,12 +1540,16 @@
  doctrine_parameter_hostility_override_doctrine_fera_werewolf_litany: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_werewolf_litany').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_fera_werewolf_dark_litany_name: "Dark Litany"
- doctrine_fera_werewolf_dark_litany_desc: "The Dark Litany is the Litany of the Wyrm, followed by the Black Spiral Dancers. Serve the Wyrm's Will. Respect the Strength of the Mighty. All that is not Forbidden is Permitted. Indulge your Desires. Despite the perception of the Black Spirals as a tribe of lawless chaos, their Litany is often more strictly upheld than that of the Garou Nations."
+ doctrine_fera_werewolf_dark_litany_desc: "The Dark Litany is the Litany of the $glossary_wyrm$, followed by the Black Spiral Dancers. Serve the Wyrm's Will. Respect the Strength of the Mighty. All that is not Forbidden is Permitted. Indulge your Desires. Despite the perception of the Black Spirals as a tribe of lawless chaos, their Litany is often more strictly upheld than that of the Garou Nations."
  doctrine_parameter_hostility_override_doctrine_fera_werewolf_dark_litany: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_werewolf_dark_litany').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
 
  doctrine_fera_bastet_karoush_name: "Karoush"
  doctrine_fera_bastet_karoush_desc: "Karoush is the werecat code of laws, similar to the Litany of the Garou. Handed down from their forebears, these laws are bigger than any Bastet and greater than any rank or title. These are their codes of honor, and the Bastet believe they separate them from the humanity, guarding them from human mistakes. The Karoush is the code their ancestors made, the Law of the Moon and the Sun, the Law of the Shaping of Secrets and the Law of the Change: Honor Yourself, Honor Your Word, Honor Your Kin and Kind, Honor Your Earth and Honor Your Silence."
  doctrine_parameter_hostility_override_doctrine_fera_bastet_karoush: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_bastet_karoush').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+
+ doctrine_fera_mokole_duties_name: "The Duties"
+ doctrine_fera_mokole_duties_desc: "Helios has given his Children a series of moral and personal imperatives by which to live their lives. Called the Duties, these are the Mokolé precursor to the Garou Litany. Each Duty is connected to one solar auspice, although all Mokolé are bound by them. Violations of the Duties merit reprimands, loss of status, and other punishments. Serious offenders are eaten. The Noonday Suns enforce the laws, although even Midnight Suns will chastise an undutiful Mokolé. "
+ doctrine_parameter_hostility_override_doctrine_fera_mokole_duties: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_mokole_duties').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
  doctrine_fera_fallen_tribe_name: "Fallen Tribe"
@@ -1469,8 +1569,14 @@
  doctrine_fera_bastet_pact_desc: "For one reason or another, the adherents of this faith have formed close bonds with the [GetTrait('bastet').GetName( GetPlayer )]. The catfolk inquisitive nature have made them many unexpected friends... though some turned to not be trustworthy at all."
  doctrine_parameter_hostility_override_doctrine_fera_bastet_pact: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_bastet_pact').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
+
+ doctrine_fera_mokole_pact_name: "Mokolé Pacts"
+ doctrine_fera_mokole_pact_desc: "For one reason or another, the adherents of this faith have formed close bonds with the [GetTrait('mokole').GetName( GetNullCharacter )]. The weresaurians are a tenacious bunch, with their Mnesis they remember their friends well, and their enemies even better."
+ doctrine_parameter_hostility_override_doctrine_fera_mokole_pact: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_mokole_pact').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+
+
  doctrine_fera_wyrm_pact_name: "Wyrm Pacts"
- doctrine_fera_wyrm_pact_desc: "For some reason the adherents of this faith somewhat tolerate the followers of the Wyrm. Whether the reverse is true is up to the whims of others. There is only so much room to dance in the spiral after all."
+ doctrine_fera_wyrm_pact_desc: "For some reason the adherents of this faith somewhat tolerate the followers of the $glossary_wyrm$. Whether the reverse is true is up to the whims of others. There is only so much room to dance in the spiral after all."
  doctrine_parameter_hostility_override_doctrine_fera_wyrm_pact: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_wyrm_pact').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
@@ -1481,3 +1587,65 @@
  doctrine_parameter_hostility_override_doctrine_fera_beast_courts: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  bastet_nation_tolerance_name: ""
+ special_doctrine_bastet_nation_name: "Bastet Nation"
+ special_doctrine_bastet_nation_desc: "Mother Seline watches with pride as her beloved cat children are finally united as one."
+ doctrine_parameter_hostility_override_special_doctrine_bastet_nation: "Other [faiths|E] that have the [GetFaithDoctrine('special_doctrine_bastet_nation').GetBaseName] [doctrine|E] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V] instead of [faith_astray|V]"  
+
+ zhong_guo_reward_doctrine_name: ""
+ special_zhong_guo_reward_doctrine_name: "Guided by Dragons"
+ special_zhong_guo_reward_doctrine_desc: "The Zhong Lung have led the [GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName] into newfound prosperity." 
+
+ masterless_ghoul_dispossessed_doctrine_name: ""
+ special_masterless_ghoul_dispossessed_doctrine_name: "Allied with the Dispossessed"
+ special_masterless_ghoul_dispossessed_doctrine_desc: "Thanks to our backing, the support network for ghouls expand far beyond the Holy Land now."
+ doctrine_parameter_masterless_ghoul_dispossessed_parametr: "Acceptance for Inviting to [court|e] and becoming agents in [schemes|E]: #P +50#! for [ghouls|E]"
+
+ masterless_ghoul_folch_cutthroats_doctrine_name: ""
+ special_masterless_ghoul_folch_cutthroats_doctrine_name: "Allied with Folch's Cutthroats"
+ special_masterless_ghoul_folch_cutthroats_doctrine_desc: "Their anger leveraged to target our enemies make for an invaluable asset."
+ doctrine_parameter_masterless_ghoul_folch_cutthroats_parametr: "[casus_belli|E] Cost: #P -20%#!"
+
+ masterless_ghoul_order_of_st_panteleimon_doctrine_name: ""
+ special_masterless_ghoul_order_of_st_panteleimon_doctrine_name: "Allied with the Order of St. Panteleimon"
+ special_masterless_ghoul_order_of_st_panteleimon_doctrine_desc: "The once bureaucratic arm of the Church of Caine are still heretics of a sort, but they are our heretics now."
+ doctrine_parameter_masterless_ghoul_order_of_st_panteleimon_parametr: "Your [court_chaplain|E] is #P 100%#! faster at the [convert_county|E] [councillor_task|E]."
+
+ masterless_ghoul_haqims_assassins_doctrine_name: ""
+ special_masterless_ghoul_haqims_assassins_doctrine_name: "Allied with the \"False\" Haqim's Assassins"
+ special_masterless_ghoul_haqims_assassins_doctrine_desc: "Be it luck or skill, we clearly want someone who managed to twart the Assamites for so long on our side."
+ 
+ #fury_of_the_wyld_doctrine_name: ""
+ #special_fury_of_the_wyld_doctrine_name: "Fury of the Wyld"
+ #special_fury_of_the_wyld_doctrine_desc: "The Black Furies have secured their home and shown the indomitable will of Gaia's Daughters." 
+ # 
+ #bulwark_against_disease_doctrine_name: ""
+ #special_bulwark_against_disease_doctrine_name: "Bulwark Against Disease"
+ #special_bulwark_against_disease_doctrine_desc: "The Bone Gnawer ideals have been cemented, disease is resisted, food is plentiful and the commoners see hope again." 
+ # 
+ #servant_of_unicorn_doctrine_name: ""
+ #special_servant_of_unicorn_doctrine_name: "Servants of Unicorn"
+ #special_servant_of_unicorn_doctrine_desc: "The Children of Gaia are gaining ground, alliances and cooperation spreading, even the Get must respect Unicorn now." 
+ # 
+ #concord_of_iron_and_silver_doctrine_name: ""
+ #special_concord_of_iron_and_silver_doctrine_name: "Concord of Iron and Silver"
+ #special_concord_of_iron_and_silver_doctrine_desc: "The Fianna have secured their ancestral lands and the new Fae pact has revitalised both sides" 
+ # 
+ #prometheus_fire_doctrine_name: ""
+ #special_prometheus_fire_doctrine_name: "Prometheus Fire"
+ #special_prometheus_fire_doctrine_desc: "The Warder's of Men light the way for Humanity, across the world new ideals begin to shine." 
+ # 
+ #success_in_shadows_doctrine_name: ""
+ #special_success_in_shadows_doctrine_name: "Success in Shadows"
+ #special_zhong_guo_reward_doctrine_desc: "The Shadow Lords have secured their lands, bound a great enemy and now they intend to keep going." 
+ # 
+ #returning_home_doctrine_name: ""
+ #special_returning_home_doctrine_name: "Returning Home"
+ #special_returning_home_doctrine_desc: "The Silent Striders have broken the curse! Now home is ours to never lose again!" 
+ # 
+ #return_of_the_king_doctrine_name: ""
+ #special_return_of_the_king_doctrine_name: "The Kings Return"
+ #special_return_of_the_king_doctrine_desc: "The Silver Fangs have shown to all they are worthy to lead." 
+ # 
+ #balance_in_all_things_doctrine_name: ""
+ #special_balance_in_all_things_doctrine_name: "Balance in All Things"
+ #special_balance_in_all_things_doctrine_desc: "The Star Gazers have chosen their path, and move with grace and harmony." 

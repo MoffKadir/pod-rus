@@ -62,6 +62,15 @@
  court_position_younger_than_100: "Age is below #bold 100#!"
  court_position_younger_than_50: "Age is below #bold 50#!"
  cairo_brujah_aptitude_reward_tooltip:  "[GetBuilding('cairo_khitta_raya_04').GetName]"
+ court_position_auspice_trait: "Auspice"
+ fc_head_regal_visage_perk_aptitude: "[GetPerk('fc_head_regal_visage_perk').GetName(ROOT.Char)]"
+ fc_torso_grievous_wings_perk_aptitude: "[GetPerk('fc_torso_grievous_wings_perk').GetName(ROOT.Char)]"
+ fc_torso_curved_hasp_perk_aptitude: "[GetPerk('fc_torso_curved_hasp_perk').GetName(ROOT.Char)]"
+ fc_arm_r_precise_hand_perk_aptitude: "[GetPerk('fc_arm_r_precise_hand_perk').GetName(ROOT.Char)]"
+ fc_arm_l_precise_hand_perk_aptitude: "[GetPerk('fc_arm_l_precise_hand_perk').GetName(ROOT.Char)]"
+ fc_leg_r_muscle_mass_perk_aptitude: "[GetPerk('fc_leg_r_muscle_mass_perk').GetName(ROOT.Char)]"
+ fc_leg_l_muscle_mass_perk_aptitude: "[GetPerk('fc_leg_l_muscle_mass_perk').GetName(ROOT.Char)]"
+
 
  brujah_primogen_court_position: "Brujah Primogen"
  brujah_primogen_court_position_desc: "The $brujah_primogen_court_position$ is traditionally responsible for strategical warfare in a domain, though they might also dabble in scholarship at times, staying true to their moniker of the Warrior-Scholars.\n\n#help For [aptitude|E] requirements, see [brujah_primogen|E].#!"
@@ -161,7 +170,7 @@
  master_rite_court_position_desc: "The $master_rite_court_position$ is responsible for the spiritual well-being of the Caern. All rituals that take place must first earn their approval."
  gatekeeper_court_position: "Gatekeeper"
  gatekeeper_court_position_desc: "The $gatekeeper_court_position$ is likely to be the first person encountered by newcomers. Collecting tribute and information from visitors, the Gatekeeper is often quite busy as the maintenance of the spiritual Moon Bridges is also under their responsibility."
- wyrm_foe_court_position: "Wyrm Foe"
+ wyrm_foe_court_position: "$glossary_wyrm$ Foe"
  wyrm_foe_court_position_desc: "The $wyrm_foe_court_position$ is the sept fiercest warrior, not necessarily the most skilled but certainly the most eager. They serve as the sept leader second in command during offensive actions against the Wyrm's minions."
  talesinger_court_position: "Talesinger"
  talesinger_court_position_desc: "The $talesinger_court_position$ is charged with maintaining the reputation of the Caern by creating and performing tales or songs of the great deeds done by the sept's heroes. They also pass the history of the Garou to the young."
@@ -264,7 +273,9 @@
  POD_organize_chimera_desc: "This character helps organize and train their liege's chimeras."
  POD_organize_faerie: "Organize Faeries"
  POD_organize_faerie_desc: "This character helps organize and train their liege's faeries."
-
+ POD_manage_estate: "Manage Estate"
+ POD_manage_estate_desc: "This character focuses on managing their liege's personal [domicile|E]."
+ 
 
  imperial_envoy_court_position: "Imperial Envoy"
  imperial_envoy_court_position_desc: "The $imperial_envoy_court_position$ is representing their liege in the far flung frontiers of their realm reminding them that they have to pay tribute even if they are far away."
@@ -286,7 +297,7 @@
 
 
  ratcatcher_court_position: "Rat Catcher"
- ratcatcher_court_position_desc: "A $ratcatcher_court_position$'s duty is to herd rats, see to it they're edible and corral them as a source of vitae for the less fortunate vampires of court."
+ ratcatcher_court_position_desc: "A $ratcatcher_court_position$'s duty is to herd rats, see to it they're edible and corral them as a source of $pod_vitae$ for the less fortunate vampires of court."
  #ratcatcher_employer_custom_effect_description: "$BULLET$Enhances Drain Animal [character_interaction|E]"
 
  scarlet_screen_family_court_position: "Family Scarlet Screen"
@@ -312,3 +323,10 @@
 
  cult_leader_court_position: "Cult Leader"
  cult_leader_court_position_desc: "Leader and guru of a $POD_splat_demon$'s personal cult gathering faith. These cultists have a special position in their master's cult and handle the day to day tasks, leaving the Demon to focus on more important matters.\n#help The [aptitude|E] of this [court_position|E] is based on [stewardship|E], [intrigue|E] and [learning|E] as well as the [GetTrait('schemer').GetName(GetNullCharacter)] and [GetTrait('diligent').GetName(GetNullCharacter)] [traits|E]."
+ 
+ fell_knight_court_position: "Fell Knight"
+ fell_knight_court_position_desc: "Empowered to lead by rites dating back to the Creation, Fell Knights are the armored fists of their Fallen Angel master."
+ 
+ 
+ majordomo_court_position: "Majordomo"
+ majordomo_court_position_desc: "A Majordomo is a special role designed for a [GetTrait('ghoul').GetName(GetNullCharacter)] who typically serves his [Glossary('Domitor','game_concept_domitor_desc')] as the chief steward of her estates and affairs. The Majordomo will do his master's bidding by doling out assignments and orders ranging from hiring outside services to keeping other ghouls in line."

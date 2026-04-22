@@ -70,7 +70,7 @@
  LORE_COMMAND_THE_FLAME_PERK_EFFECT: "Inflict every ruler on the opposing side with [GetModifier('lore_command_the_flame_modifier').GetNameWithTooltip] when starting a [war|E] as the primary attacker or defender.\n#flavor The Fallen can command the flames of divinity.#!"
  LORE_AURA_OF_LEGEND_PERK_EFFECT: "#flavor The Fallen can appear as a living legend, or even a god.#!"
  LORE_THE_MARK_OF_THE_CELESITALS_PERK_EFFECT: "As a [character_interaction|E], give your target including yourself [GetModifier('lore_the_mark_of_the_celesitals_good_modifier').GetNameWithTooltip] or [GetModifier('lore_the_mark_of_the_celesitals_bad_modifier').GetNameWithTooltip].\n#flavor The Fallen can leave a divine mark on another, bestowing them with good fortune or bad luck.#!"
- LORE_HAND_OF_FAITH_PERK_EFFECT: "Can banish $POD_splat_wraith_plural$, $POD_splat_fae_plural$ or $POD_splat_demon_plural$ to their native [umbra|E] realms.\n#flavor The Fallen can force beings not designed by God into exile.#!"
+ LORE_HAND_OF_FAITH_PERK_EFFECT: "Can [POD_banish|E] $POD_splat_wraith_plural$, $POD_splat_fae_plural$ or $POD_splat_demon_plural$ to their native [umbra|E] realms.\n#flavor The Fallen can force beings not designed by God into exile.#!"
  LORE_REVELATION_PERK_EFFECT: "As a [character_interaction|E], learn all of your target's secrets and schemes.\n#flavor The Fallen can read the beings on God's Earth like an open book.#!"
 
  lore_cleanse_perk_name: "Cleanse"
@@ -81,7 +81,7 @@
 
  LORE_CLEANSE_PERK_EFFECT: "As a [character_interaction|E], remove all injuries, diseases, and mental ailments.\n#flavor The Fallen can cleanse a living being from all that burdens them.#!"
  LORE_COMMAND_THE_WIND_PERK_EFFECT: "#flavor The Fallen can command the winds with their will.#!"
- LORE_MANY_PLACES_AT_ONCE_PERK_EFFECT: "#flavor The Fallen can see through the eyes of nearby living beings.#!"
+ LORE_MANY_PLACES_AT_ONCE_PERK_EFFECT: "$countermeasures_unlocks_t4_supernatural_high_alert$ \n #flavor The Fallen can see through the eyes of nearby living beings.#!"
  LORE_ANIMATE_PERK_EFFECT: "Can recruit [GetMaA('golems').GetName], [GetMaA('guardians').GetName] and [GetMaA('homunculus').GetName] as [men_at_arms|E].\n#flavor The Fallen can breathe life into inanimate matter.#!"
  LORE_RESTORE_LIFE_PERK_EFFECT: "As a [character_interaction|E], make a bound $POD_splat_wraith$ mortal again, and gain 10 Resolve in the process.\n#flavor The Fallen can return the breath of life to the dead.#!"
 
@@ -103,7 +103,7 @@
  lore_causal_influence_perk_name: "Causal Influence"
  lore_coherent_light_perk_name: "Coherent Light"
 
- LORE_FORESEE_PERK_EFFECT: "You will receive a notification if someone intends to murder your friends or family.\nYou will receive a notification if someone intends to seduce your lovers or consorts.\n#flavor The Fallen can catch glimpses of the threads of fate.#!"
+ LORE_FORESEE_PERK_EFFECT: "$countermeasures_unlocks_t4_all_seeing_eye$ \n  You will receive a notification if someone intends to murder your friends or family.\nYou will receive a notification if someone intends to seduce your lovers or consorts.\n#flavor The Fallen can catch glimpses of the threads of fate.#!"
  LORE_TELEPORT_PERK_EFFECT: "As a [character_interaction|E], allows you to teleport your army to your target's location, or teleport to your next destination when traveling.\n#flavor The Fallen can travel along the threads of fate.#!"
  LORE_ILLUSION_PERK_EFFECT: "#flavor The Fallen can create life-like illusions.#!"
  LORE_CAUSAL_INFLUENCE_PERK_EFFECT: "#flavor The Fallen can manipulate the threads of fate directly.#!"

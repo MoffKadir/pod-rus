@@ -5,8 +5,8 @@
 
  POD_demon_maintenance.2.t: "Changing the Way"
  POD_demon_maintenance.2.desc: "I have seen the light of my master, but my current ways are not opposite to theirs. Should I convert into their way, or keep my own? Of course, all in their name!"
- POD_demon_maintenance.2.a: "Their way is mine"
- POD_demon_maintenance.2.b: "My way is my own"
+ POD_demon_maintenance.2.a: "Their way is mine."
+ POD_demon_maintenance.2.b: "My way is my own."
 
  POD_demon_maintenance.10.t: "Vessel"
  POD_demon_maintenance.10.desc: "In order to remain in Creation, a demon must inhabit a physical vessel of some kind. Demons hate their vessels, the shells they must hide inside in God’s worthless world; while better than the inescapable nothingness of the Abyss, a vessel is still a prison of sorts and every moment spent anchored in a physical body is another reason to loathe God. They look forward to the time when they can set the entire world of the material aflame, watching the glorious destruction from the comfort of their abhorrent spiritual kingdom.\n#X In game terms, Earthbound are truly immortal but must have their soul contained in a part of the material world. It can be their capital, resulting in them not being able to command troops, move their capital and being pushed back to the Abyssal Prison if they lose it. Or they can be tied to a reliquarie, an artifact that gives them more mobility, but is also much more fragile. If the reliquarie is destroyed, it's back to the Abyssal Prison again for the Demon, a very costly process to escape from.#!"
@@ -58,31 +58,6 @@
  POD_demon_arcana.100.h: "[GetModifier('arsenal_of_the_beast_spines_modifier').GetNameWithTooltip]"
  POD_demon_arcana.100.i: "[GetModifier('arsenal_of_the_beast_tentacles_modifier').GetNameWithTooltip]"
  POD_demon_arcana.100.j: "[GetModifier('arsenal_of_the_beast_wings_modifier').GetNameWithTooltip]"
-
- POD_demon_arcana.201.t: "Unspeakable Servitor"
- POD_demon_arcana.201.desc: "With your Lore of Contamination, you can try to create a statue that then can be used as a temporary host body."
- POD_demon_arcana.201.option.a: "A perfect artificial body."
- POD_demon_arcana.201.option.a.tt: "You will try to create a temporary host body"
- POD_demon_arcana.201.option.a.desc: "A struggle with your energies"
- POD_demon_arcana.201.option.a.tt.success: "Your artificial body is successfully separated"
- POD_demon_arcana.201.option.a.tt.failure: "You fail to create the artificial body"
- POD_demon_arcana.201.option.b: "Now is not the right time"
- POD_demon_arcana.201.option.b.tt: "You will abandon your idea of creating an artificial body"
-
- POD_demon_arcana.202.t: "Unspeakable Servitor II"
- POD_demon_arcana.202.desc: "With your Lore of Contamination, you managed to successfully create an artificial body, now it's time to use it to move around."
- POD_demon_arcana.202.option.a: "I feel free."
- POD_demon_arcana.202.option.a.tt: "Your Unspeakable Servitor is successfully separated."
-
- POD_demon_arcana.203.t: "Unspeakable Servitor II"
- POD_demon_arcana.203.desc: "Your artificial body is not enough to support your energies... This experiment is a failure."
- POD_demon_arcana.203.option.a: "I am not ready yet"
- POD_demon_arcana.203.option.a.tt: "You failed to create the artificial body"
-
- POD_demon_arcana.204.t: "Back to my Prison"
- POD_demon_arcana.204.desc: "Your artificial body has eventually been consumed by your energies."
- POD_demon_arcana.204.option.a: "Time for the next one?"
- POD_demon_arcana.204.option.a.tt: "Your aren't able to move again in this construct."
 
  POD_days_of_fire.1342.t: "Second Great Maelstrom"
  POD_days_of_fire.1342.desc: "For the followers of the Condemned Man, such darkness falls on the Earth\nAnd on the human soul\nThat the living envy the dead, and more, envy those who have forgotten to die.\nEven as the dead suffer their second great storm, the living,\nScorning the ultimate gift of The One Giver,\nInstead embrace the curse of thc Great King of Blood.\nNot once shall this happen, but twice."
@@ -165,34 +140,3 @@
  chance_of_redemption_unlock: "Unlock #s $POD_demon_redemption_objective_decision$ Objective#!"
  POD_demon_flavor.5.d: "I must find answers to the Divine question."
  demonic_objective_knowledge_unlock: "Unlock #s $demonic_knowledge_objective_decsion$ Objective#! if you have completed the previous objectives"
-
- # demon demand
-
- POD_demon_demand.101.t: "[demon.GetFirstName]'s Demand"
- POD_demon_demand.101.desc: "Infernalism is a double edged sword. While your master gives you untold powers, they also ask much of you. For your relationship to remain mutually beneficial and not anger your powerful patron, you will have to comply sooner rather than later.\nThis time, your unholy partner asked that you offer them direct control over some of your territory."
- POD_demon_demand.100.a: "Yes, my lord."
- POD_demon_demand.100.a.tt: "A new decision is now available."
- POD_demon_demand.100.b: "Can I offer you gold instead?"
- POD_demon_demand.100.c: "This is asking too much!"
-
- POD_demon_demand.102.t: "[demon.GetFirstName]'s Demand"
- POD_demon_demand.102.desc: "Infernalism is a double edged sword. While your master gives you untold powers, they also ask much of you. For your relationship to remain mutually beneficial and not anger your powerful patron, you will have to comply sooner rather than later.\nThis time, your unholy partner wants a direct sacrifice be done in their name to empower them. [councillor.GetFirstName] is the marked poor soul."
- POD_demon_demand.102.a: "What about sacrificing some mortals instead?"
-
- POD_demon_demand.103.t: "[demon.GetFirstName]'s Demand"
- POD_demon_demand.103.desc: "Infernalism is a double edged sword. While your master gives you untold powers, they also ask much of you. For your relationship to remain mutually beneficial and not anger your powerful patron, you will have to comply sooner rather than later.\nPure of heart individuals are anathema to demons, one of the rare weaknesses they truly have. Your unholy partner ordered you to get rid of one of them."
-
- POD_demon_demand.104.t: "[demon.GetFirstName]'s Demand"
- POD_demon_demand.104.desc: "Infernalism is a double edged sword. While your master gives you untold powers, they also ask much of you. For your relationship to remain mutually beneficial and not anger your powerful patron, you will have to comply sooner rather than later.\nDemons can mainly manifest on this place by possessing a powerful magical artifact. You have been tasked to gift [this_artifact.GetNameNoTooltip] to [demon.GetFirstName] for future use."
-
- POD_demon_demand.105.t: "[demon.GetFirstName]'s Demand"
- POD_demon_demand.105.desc: "Infernalism is a double edged sword. While your master gives you untold powers, they also ask much of you. For your relationship to remain mutually beneficial and not anger your powerful patron, you will have to comply sooner rather than later.\nDemons are jealous creatures. As they thrive on mortals' faith, other fallen angels are seen as competitors that must be thwarted at every turn. You have been tasked with banishing one such rival demon."
-
- POD_demon_demand.106.t: "[demon.GetFirstName]'s Demand"
- POD_demon_demand.106.desc: "Infernalism is a double edged sword. While your master gives you untold powers, they also ask much of you. For your relationship to remain mutually beneficial and not anger your powerful patron, you will have to comply sooner rather than later.\nDemons can manifest in this world by using the Ritual of the Sundered Soul that sees them taking over the body of a willing (or unwilling) host. This isn't a perfect solution however and they burn through these weak bodies quickly. You have been tasked with imprisoning ten mortals to prepare bodies for this ritual."
-
- POD_demon_demand.107.t: "[demon.GetFirstName]'s Demand"
- POD_demon_demand.107.desc: "Infernalism is a double edged sword. While your master gives you untold powers, they also ask much of you. For your relationship to remain mutually beneficial and not anger your powerful patron, you will have to comply sooner rather than later.\nYou aren't the only infernalist out there. Your unholy partner has noticed the potential of one of your brethren and has "requested" that you bring them over to your cult... or make sure that they don't stay at the service of a rival demon at least. [to_infernalize.GetFirstName] is your target."
-
- POD_demon_demand.108.t: "[demon.GetFirstName]'s Demand"
- POD_demon_demand.108.desc: "Infernalism is a double edged sword. While your master gives you untold powers, they also ask much of you. For your relationship to remain mutually beneficial and not anger your powerful patron, you will have to comply sooner rather than later.\nHoly places are anathema to demons. The raw faith emanating from these places burn them to their unholy core. You have been tasked with taking [to_corrupt.GetNameNoTier] and corrupt it."

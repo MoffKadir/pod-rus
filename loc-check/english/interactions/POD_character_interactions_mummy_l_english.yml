@@ -6,7 +6,7 @@
  POD_remove_neteru_interaction: "Reject Neteru"
  POD_remove_neteru_interaction_desc: "Reject [recipient.GetFirstNamePossessive] worship, stop consider [recipient.GetHerHim] as your [neteru|E]."
  
- NOT_know_this_ren: "You do #bold not#! know the corresponding True Name."
+ NOT_know_this_ren: "You do #bold not#! know the corresponding [Glossary('True Name','podgloss.truename')]."
  
  POD_command_effigy_interaction: "Command Creature Effigy"
  POD_command_effigy_interaction_desc: "Command your activated creature effigies."
@@ -30,7 +30,8 @@
  POD_healing_bandages_interaction_options_heading: "What shall the bandages heal?"
  POD_eye_of_sakhmet_interaction: "Eye of Sekhmet"
  POD_eye_of_sakhmet_interaction_desc: "Give a modifier that make [recipient.GetFirstName] unable to heal [recipient.GetHerHis] wound."
-           
+ cursed_mummy_notification: "Cursed by a Mummy!"  
+ 
  POD_breakdown_artifact_interaction: "Breakdown Artifact"
  POD_breakdown_artifact_interaction_desc: "Breakdown artifact into artifact pieces for later recreation."
  
@@ -38,8 +39,8 @@
  POD_spell_of_life_interaction_desc: "Use the famed Spell of Life to give [recipient.GetFirstName] eternal life."
  POD_spell_of_life_opinion: "Grant Immortality"
  POD_ask_neteru_for_conversion_interaction: "Demand Conversion #Weak (Neteru)#!"
- POD_ask_neteru_for_osiris_conversion_interaction_desc: "Demand that [recipient.GetShortUINameNoTooltip] converts to Osiris League [faith|E]."
- POD_ask_neteru_for_apophis_conversion_interaction_desc: "Demand that [recipient.GetShortUINameNoTooltip] converts to Apophis Servant [faith|E]."
+ POD_ask_neteru_for_osiris_conversion_interaction_desc: "Demand that [recipient.GetShortUINameNoTooltip] converts to an Osiris League [faith|E]."
+ POD_ask_neteru_for_apophis_conversion_interaction_desc: "Demand that [recipient.GetShortUINameNoTooltip] converts to an $glossary_wyrm_apophis$ Servant [faith|E]."
  POD_create_asekh_sen_interaction: "Create an Asekh-sen"
  POD_create_asekh_sen_interaction_desc: "Create an Asekh-sen as a substitute." 
  
@@ -92,7 +93,7 @@
  POD_hekau_scouring_oblivion_interaction_desc: "Extract the energy of death from [recipient.GetShortUIName]."
 
  POD_hekau_casting_away_interaction: "Casting Away"
- POD_hekau_casting_away_interaction_desc: "Cast [recipient.GetShortUINameNoTooltip] into the [UmbraGlossary('pod_realm_tempest')], killing [recipient.GetHerHim] if [recipient.GetSheHe] can't navigate the [UmbraGlossary('shadowlands')]."
+ POD_hekau_casting_away_interaction_desc: "Cast [recipient.GetShortUINameNoTooltip] into the [UmbraGlossary('tempest')], killing [recipient.GetHerHim] if [recipient.GetSheHe] can't navigate the [UmbraGlossary('shadowlands')]."
 
  POD_hekau_separate_khaibit_interaction: "Separate Khaibit"
  POD_hekau_separate_khaibit_interaction_desc: "You will try to split your Khaibit apart from your body."

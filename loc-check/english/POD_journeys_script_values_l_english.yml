@@ -92,6 +92,11 @@
  fera_spirit_quest_monthly_num_current: "#TOOLTIP:fera_spirit_quest_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('fera_spirit_quest_progress')|1]%#!#!"
  fera_spirit_quest_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('fera_spirit_quest_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('fera_spirit_quest_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('fera_spirit_quest_progress')]"
 
+ mokole_mnesis_quest_monthly_num: "#TOOLTIP:mokole_mnesis_quest_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('mokole_mnesis_quest_progress')|1]%#!#!"
+ mokole_mnesis_quest_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('mokole_mnesis_quest_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('mokole_mnesis_quest_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('mokole_mnesis_quest_progress')]"
+ 
+ mokole_mnesis_quest_monthly_num_current: "#TOOLTIP:mokole_mnesis_quest_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('mokole_mnesis_quest_progress')|1]%#!#!"
+ mokole_mnesis_quest_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('mokole_mnesis_quest_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('mokole_mnesis_quest_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('mokole_mnesis_quest_progress')]"
  
  learn_true_name_monthly_num: "#TOOLTIP:learn_true_name_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('learn_true_name_progress')|1]%#!#!"
  learn_true_name_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('learn_true_name_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('learn_true_name_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('learn_true_name_progress')]"
@@ -178,11 +183,17 @@
  ritual_necromagic_casting_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('ritual_necromagic_casting_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('ritual_necromagic_casting_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('ritual_necromagic_casting_progress')]"
 
 
- azhi_dahaka_monthly_num: "#TOOLTIP:azhi_dahaka_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('azhi_dahaka_progress')|1]%#!#!"
- azhi_dahaka_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('azhi_dahaka_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('azhi_dahaka_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('azhi_dahaka_progress')]"
+ azhi_dahaka_1_monthly_num: "#TOOLTIP:azhi_dahaka_1_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('azhi_dahaka_1_progress')|1]%#!#!"
+ azhi_dahaka_1_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('azhi_dahaka_1_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('azhi_dahaka_1_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('azhi_dahaka_1_progress')]"
  
- azhi_dahaka_monthly_num_current: "#TOOLTIP:azhi_dahaka_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('azhi_dahaka_progress')|1]%#!#!"
- azhi_dahaka_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('azhi_dahaka_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('azhi_dahaka_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('azhi_dahaka_progress')]"
+ azhi_dahaka_1_monthly_num_current: "#TOOLTIP:azhi_dahaka_1_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('azhi_dahaka_1_progress')|1]%#!#!"
+ azhi_dahaka_1_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('azhi_dahaka_1_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('azhi_dahaka_1_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('azhi_dahaka_1_progress')]"
+
+ azhi_dahaka_2_monthly_num: "#TOOLTIP:azhi_dahaka_2_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('azhi_dahaka_2_progress')|1]%#!#!"
+ azhi_dahaka_2_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('azhi_dahaka_2_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('azhi_dahaka_2_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('azhi_dahaka_2_progress')]"
+ 
+ azhi_dahaka_2_monthly_num_current: "#TOOLTIP:azhi_dahaka_2_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('azhi_dahaka_2_progress')|1]%#!#!"
+ azhi_dahaka_2_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('azhi_dahaka_2_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('azhi_dahaka_2_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('azhi_dahaka_2_progress')]"
 
 
  hunt_for_sargon_codex_shard_monthly_num: "#TOOLTIP:hunt_for_sargon_codex_shard_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('hunt_for_sargon_codex_shard_progress')|1]%#!#!"
@@ -227,6 +238,13 @@
  
  shih_training_monthly_num_current: "#TOOLTIP:shih_training_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('shih_training_progress')|1]%#!#!"
  shih_training_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('shih_training_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('shih_training_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('shih_training_progress')]"
+
+ breaking_the_blond_bond_monthly_num: "#TOOLTIP:breaking_the_blond_bond_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('breaking_the_blond_bond_progress')|1]%#!#!"
+ breaking_the_blond_bond_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('breaking_the_blond_bond_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('breaking_the_blond_bond_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('breaking_the_blond_bond_progress')]"
+ 
+ breaking_the_blond_bond_monthly_num_current: "#TOOLTIP:breaking_the_blond_bond_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('breaking_the_blond_bond_progress')|1]%#!#!"
+ breaking_the_blond_bond_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('breaking_the_blond_bond_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('breaking_the_blond_bond_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('breaking_the_blond_bond_progress')]"
+
 
  # Text starts here
  
@@ -361,9 +379,11 @@
  echo_the_lesser_name_perk_bonus_value: "You have [GetPerk('echo_the_lesser_name_perk').GetName(GetPlayer)] #weak (+50%)#!"
  echo_the_greater_name_perk_bonus_value: "You have [GetPerk('echo_the_greater_name_perk').GetName(GetPlayer)] #weak (+100%)#!"
 
- POD_journey_progress_demonologiest_100: "You have 100+ [GetTrait('demonology').GetName(GetPlayer)] [trait_level_track_xp|E] #weak (+30%)#!"
- POD_journey_progress_demonologiest_50: "You have 50+ [GetTrait('demonology').GetName(GetPlayer)] [trait_level_track_xp|E] #weak (+20%)#!"
- POD_journey_progress_demonologiest_5: "You have 5+ [GetTrait('demonology').GetName(GetPlayer)] [trait_level_track_xp|E] #weak (+10%)#!"
+ POD_journey_progress_demonology_25: "You have at least #V 25#! [trait_level_track_xp|E] in [GetTrait('demonology').GetName(GetPlayer)] #weak (+10%)#!"
+ POD_journey_progress_demonology_50: "You have at least #V 50#! [trait_level_track_xp|E] in [GetTrait('demonology').GetName(GetPlayer)] #weak (+10%)#!"
+ POD_journey_progress_demonology_75: "You have at least #V 75#! [trait_level_track_xp|E] in [GetTrait('demonology').GetName(GetPlayer)] #weak (+10%)#!"
+ POD_journey_progress_demonology_100: "You have at least #V 100#! [trait_level_track_xp|E] in [GetTrait('demonology').GetName(GetPlayer)] #weak (+20%)#!"
+ POD_journey_progress_darkfungus_form: "You have [GetModifier('POD_shapeshift_form_darkfungus_modifier').GetNameWithTooltip] #weak (+20%)#!"
 
  POD_journey_progress_target_lore_revelation_perk: "You have [GetPerk('lore_revelation_perk').GetName(GetPlayer)] #weak (+100%)#!"
  POD_journey_progress_target_echo_the_lesser_name_perk: "You have [GetPerk('echo_the_lesser_name_perk').GetName(GetPlayer)] #weak (+12.5%)#!"
@@ -377,12 +397,49 @@
  POD_journey_progress_not_demon: "You are not $POD_splat_demon$"
 
  POD_journey_progress_fera_pack_size: "[GetPlayer.Custom('PODCoterie')] Size"
- 
+ POD_journey_progress_profaned_lungs_perk: "You have [GetPerk('profaned_lungs_perk').GetName(GetPlayer)] #weak (+25%)#!"
+ POD_journey_progress_zhong_lung_legacy: "You have [GetDynastyPerk('zhong_lung_legacy_1').GetName] #weak (+15%)#!"
+ POD_journey_progress_common_mokole_legacy: "You have [GetDynastyPerk('common_mokole_legacy_2').GetName]"
+ POD_journey_progress_hibernation_attendant_1: "Your [GetCourtPositionType('hibernation_attendant_court_position').GetName()] has Terrible [aptitude|E]"
+ POD_journey_progress_hibernation_attendant_2: "Your [GetCourtPositionType('hibernation_attendant_court_position').GetName()] has Poor [aptitude|E]"
+ POD_journey_progress_hibernation_attendant_3: "Your [GetCourtPositionType('hibernation_attendant_court_position').GetName()] has Adequate [aptitude|E]"
+ POD_journey_progress_hibernation_attendant_4: "Your [GetCourtPositionType('hibernation_attendant_court_position').GetName()] has Good [aptitude|E]"
+ POD_journey_progress_hibernation_attendant_5: "Your [GetCourtPositionType('hibernation_attendant_court_position').GetName()] has Excellent [aptitude|E]"
+ POD_journey_progress_echo_of_ages: "You have $artifact_echo_of_ages_name$"
+ POD_journey_progress_bowl_of_mnesis: "You have $artifact_bowl_of_mnesis_name$"
+ POD_journey_progress_mnesis_sleep_2: "You have reached the [GetPerk('age_of_beasts_perk').GetName(GetPlayer)]"
+ POD_journey_progress_mnesis_sleep_3: "You have reached the [GetPerk('age_of_sleep_perk').GetName(GetPlayer)]"
+ POD_journey_progress_mnesis_sleep_4: "You have reached the [GetPerk('age_of_kings_perk').GetName(GetPlayer)]"
+ POD_journey_progress_horseshoe_crab: "Your totem is [GetModifier('horseshoe_crab_totem_modifier').GetNameWithTooltip] #weak (+50%)#!"
+ POD_journey_progress_dream_hollow_1: "[GetDomicileBuilding('mokole_dream_hollow_01').GetName] #weak (+5%)#!"
+ POD_journey_progress_dream_hollow_2: "[GetDomicileBuilding('mokole_dream_hollow_02').GetName] #weak (+10%)#!"
+ POD_journey_progress_dream_hollow_3: "[GetDomicileBuilding('mokole_dream_hollow_03').GetName] #weak (+25%)#!"
+ POD_journey_progress_dream_hollow_4: "[GetDomicileBuilding('mokole_dream_hollow_04').GetName] #weak (+50%)#!"
+ POD_journey_progress_dream_hollow_5: "[GetDomicileBuilding('mokole_dream_hollow_05').GetName] #weak (+75%)#!"
+ POD_journey_progress_dream_hollow_6: "[GetDomicileBuilding('mokole_dream_hollow_06').GetName] #weak (+100%)#!"
+ POD_journey_progress_spirit_offerings_01: "[GetDomicileBuilding('mokole_spirit_offerings_01').GetName]"
+ POD_journey_progress_spirit_offerings_02: "[GetDomicileBuilding('mokole_spirit_offerings_02').GetName]"
+ POD_journey_progress_spirit_offerings_03: "[GetDomicileBuilding('mokole_spirit_offerings_03').GetName]"
+ POD_journey_progress_spirit_offerings_04: "[GetDomicileBuilding('mokole_spirit_offerings_04').GetName]"
+ POD_journey_progress_spirit_offerings_05: "[GetDomicileBuilding('mokole_spirit_offerings_05').GetName]"
+ POD_journey_progress_spirit_offerings_06: "[GetDomicileBuilding('mokole_spirit_offerings_06').GetName]"
 
  POD_journey_progress_prestige_level: "[prestige_level|E]"
  POD_journey_progress_piety_level: "[piety_level|E]"
 
  POD_journey_progress_spirit_companions: "[spirit_companions|E]"
+ POD_journey_progress_harpy_companion: "[GetModifier('spirit_harpy_pact_modifier').GetNameWithTooltip]"
+
+ POD_journey_progress_tenet_physical_ascension: "Your [faith|E] has the [GetFaithDoctrine('tenet_physical_ascension').GetBaseName] [core_tenet|E] #weak (+25%)"
+
+ POD_journey_progress_fc_arm_r_runed_arm: "[GetPerk('fc_arm_r_runed_arm_perk').GetName(GetPlayer)]"
+ POD_journey_progress_fc_arm_l_runed_arm: "[GetPerk('fc_arm_l_runed_arm_perk').GetName(GetPlayer)]"
+ POD_journey_progress_fc_arm_r_necrotic_arm: "[GetPerk('fc_arm_r_necrotic_arm_perk').GetName(GetPlayer)]"
+ POD_journey_progress_fc_arm_l_necrotic_arm: "[GetPerk('fc_arm_l_necrotic_arm_perk').GetName(GetPlayer)]"
+
+ POD_journey_progress_azhi_dahaka_xp: "Existing [GetTrait('azhi_dahaka_scholar').GetName(GetPlayer)] [trait_level_track_xp|E]"
+ POD_journey_progress_fleshcrafted: "Your [fleshcrafting|E] Complexity"
+ POD_journey_progress_fleshcrafted_ghouls: "[fleshcrafting|E] Complexity of all [bound_ghouls|E]"
 
  ##### Value breakdown formats
  

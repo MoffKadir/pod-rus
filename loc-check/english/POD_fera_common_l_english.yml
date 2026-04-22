@@ -95,7 +95,17 @@
  POD_gnosis_regen_spirit_companions: "[spirit_companions|E]"
  POD_gnosis_regen_stress: "[stress_level|E]"
  POD_gnosis_regen_buildings: "From Domain"
+ POD_gnosis_regen_domicile: "From [domicile|E]:"
+ POD_gnosis_regen_artifacts: "From [artifacts|E]"
+ POD_gnosis_regen_modifiers: "From [modifiers|E]"
  POD_gnosis_regen_spirit_ties: "[GetPerk('fomori_spirit_ties_perk').GetName(GetPlayer)]"
+ POD_gnosis_regen_thousand_cranes: "[GetPerk('dream_of_a_thousand_cranes_perk').GetName(GetPlayer)]"
+ POD_gnosis_regen_sleep_of_the_dragon: "[GetPerk('sleep_of_the_dragon_perk').GetName(GetPlayer)]"
+ POD_gnosis_regen_fools_luck: "[GetPerk('fools_luck').GetName(GetPlayer)]"
+ POD_gnosis_regen_gumagan_legacy_5: "[GetDynastyPerk( 'gumagan_legacy_5' ).GetName]"
+
+ POD_gnosis_regen_faith_tenets: "[core_tenets|E]"
+
  POD_gnosis_regen_fetish_upkeep: "[fetish|E] Upkeep"
 
 
@@ -103,3 +113,6 @@
 
  POD_has_spendable_fera_renown_trigger_tooltip_max: "At maximum $glossary_fera$ Rank [prestige|E] is spent instead of [trait_level_track_xp|E] and you have less than [SCOPE.GetValue('spent_xp')] [prestige_i]"
  POD_has_spendable_fera_renown_trigger_tooltip: "You have less than [SCOPE.GetValue('spent_xp')] spendable $glossary_fera$ [trait_level_track_xp|E]"
+
+ POD_fera_remove_pack_totem_tooltip: "#warning Your [pack_totem|E] spirit abandons you.#!"
+ POD_fera_remove_planetary_gifts_effect_tooltip: "#warning The Planetary Incarna retract all their [planetarygifts_lifestyle|E].#!"

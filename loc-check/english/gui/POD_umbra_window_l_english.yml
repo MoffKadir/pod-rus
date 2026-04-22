@@ -85,8 +85,8 @@
  umbra_discovery_memory_desc_third_perspective: "[ROOT.GetName] found an [umbra|E] discovery"
  
  umbra_discovery_finder: "[Select_CString( this_character.IsLocalPlayer, 'You', this_character.GetFirstName )]"
- umbra_discovery_region: "[UmbraGlossary( this_character.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName )]"
- umbra_discovery.title: "[umbra|E] Discovery: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagName))]"
+ umbra_discovery_region: "[UmbraGlossary( this_character.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagKey )]"
+ umbra_discovery.title: "[umbra|E] Discovery: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagKey))]"
  umbra_discovery_treasure: "Treasure"
  umbra_discovery.treasure.desc: "$umbra_discovery_finder$ found a treasure in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
  umbra_discovery_neighboring_realm: "Neighboring Realm"
@@ -155,6 +155,12 @@
  umbra_discovery.epiphamies_expedition.desc: "While exploring the $umbra_discovery_region$, the realm of abstract concepts given form, $umbra_discovery_finder$ found a monumental castle resonating with power. While there is an aura of unease around it, it could still be worthy for an [umbra_expedition|E]."
  umbra_discovery_spirit: "Wandering Spirit"
  umbra_discovery.spirit.desc: "$umbra_discovery_finder$ has seen a wandering spirit in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery_bane: "Wandering Bane"
+ umbra_discovery.bane.desc: "$umbra_discovery_finder$ has seen a wandering Bane in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery_artifact_shards: "Artifact Shards"
+ umbra_discovery.artifact_shards.desc: "$umbra_discovery_finder$ has found a cache of Artifact Shards in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery_mokole_dinosaur_maa: "Dreams of Beasts"
+ umbra_discovery.mokole_dinosaur_maa.desc: "$umbra_discovery_finder$ has seen glimpses of an ancient beast in $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
  umbra_discovery_grey: "Grey"
  umbra_discovery.grey.desc: "$umbra_discovery_finder$ has seen an alien automaton wandering in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
  umbra_discovery_celestial_dragons: "Celestial Dragons"
@@ -235,12 +241,10 @@
  umbra_discovery.hire_artificer_unlock.desc: "$umbra_discovery_finder$ negotiated a potential contract with artificers in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
  umbra_discovery_hire_masquer_unlock: "Masquer Offer"
  umbra_discovery.hire_masquer_unlock.desc: "$umbra_discovery_finder$ negotiated a potential contract with masquers in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
- umbra_discovery_bane_possesion_chance: "Bane Spirit"
- umbra_discovery.bane_possesion_chance.desc: "$umbra_discovery_finder$ found a bane in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
- umbra_discovery_wyld_possesion_chance: "Wyld-spirit"
- umbra_discovery.wyld_possesion_chance.desc: "$umbra_discovery_finder$ found a Wyld-spirit in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
- umbra_discovery_weaver_possesion_chance: "Weaver-spirit"
- umbra_discovery.weaver_possesion_chance.desc: "$umbra_discovery_finder$ found a Weaver-spirit in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
+ umbra_discovery_wyld_possesion_chance: "$glossary_wyld$-spirit"
+ umbra_discovery.wyld_possesion_chance.desc: "$umbra_discovery_finder$ found a $glossary_wyld$-spirit in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
+ umbra_discovery_weaver_possesion_chance: "$glossary_weaver$-spirit"
+ umbra_discovery.weaver_possesion_chance.desc: "$umbra_discovery_finder$ found a $glossary_weaver$-spirit in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
  umbra_discovery_gaia_possesion_chance: "Gaian Possession"
  umbra_discovery.gaia_possesion_chance.desc: "$umbra_discovery_finder$ found a bridge to Gaia herself in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
  umbra_discovery_investments_of_soul: "Investments of Soul"
@@ -279,8 +283,8 @@
  umbra_discovery.learn_displace.desc: "$umbra_discovery_finder$ found a way to learn Displace in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
  umbra_discovery_doomslayer: "Become Doomslayer"
  umbra_discovery.doomslayer.desc: "$umbra_discovery_finder$ found a way to become a doomslayer in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
- umbra_discovery_dinosaurs: "Adopt Dinosaurs"
- umbra_discovery.dinosaurs.desc: "$umbra_discovery_finder$ found mighty dinosaurs in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
+ umbra_discovery_paleontologist: "Study Fossils"
+ umbra_discovery.paleontologist.desc: "$umbra_discovery_finder$ found many fossils in $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
  umbra_discovery_dnt_giants: "Recruit Giants"
  umbra_discovery.dnt_giants.desc: "$umbra_discovery_finder$ found a way to recruit giants in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
  umbra_discovery_plasmics: "Bound Plasmics"
@@ -318,9 +322,9 @@
  umbra_discovery_usury: "usury"
  umbra_discovery.usury.desc: "$umbra_discovery_finder$ found an teacher for [GetTrait('arcanos_usury').GetName( GetPlayer )] in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
 
- umbra_crisis.title: "[umbra|E] Crisis: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagName))]"
+ umbra_crisis.title: "[umbra|E] Crisis: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagKey))]"
  umbra_discovery_wyrmish_summoning: "Wyrmish Summoning"
- umbra_discovery.wyrmish_summoning.desc: "$umbra_discovery_finder$ has found the trail of some wyrmish werewolf trying to summon a destructive wyrm spirit to your capital in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
+ umbra_discovery.wyrmish_summoning.desc: "$umbra_discovery_finder$ has found the trail of some wyrmish werewolf trying to summon a destructive $glossary_wyrm$ spirit to your capital in the $umbra_discovery_region$. This could be worthy of an [umbra_expedition|E]."
  umbra_discovery_trapped_in_tempest: "Trapped in Tempest"
  umbra_discovery.trapped_in_tempest.desc: "$umbra_discovery_finder$ has been trapped in the $umbra_discovery_region$, they need an [umbra_expedition|E] to rescue them or they will be trapped forever!"
  umbra_discovery_trapped_in_abyss: "Trapped in Abyss"
@@ -329,9 +333,20 @@
  umbra_discovery.trapped_in_yomi.desc: "$umbra_discovery_finder$ has been trapped in the $umbra_discovery_region$, they need an [umbra_expedition|E] to rescue them or they will be trapped forever!"
  umbra_discovery_trapped_in_labyrinth: "Trapped in Labyrinth"
  umbra_discovery.trapped_in_labyrinth.desc: "$umbra_discovery_finder$ has been trapped in the $umbra_discovery_region$, they need an [umbra_expedition|E] to rescue them or they will be trapped forever (or erased from existence)!"
- umbra_discovery_trapped_in_malfeas: "Trapped in Malfeas"
+ umbra_discovery_trapped_in_malfeas: "Trapped in [UmbraGlossary('malfeas')]"
  umbra_discovery.trapped_in_malfeas.desc: "$umbra_discovery_finder$ has been trapped in the $umbra_discovery_region$, they need an [umbra_expedition|E] to rescue them or they will be trapped forever!"
- 
+ umbra_discovery_bane_maa: "Bane Soldiers"
+ umbra_discovery.bane_maa.desc: "$umbra_discovery_finder$ has found a gathering of Banes in $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery_elemental_bane: "Elemental Bane"
+ umbra_discovery.elemental_bane.desc: "$umbra_discovery_finder$ has found an Elemental Bane in $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery_wyrm_fetish: "Wyrm Fetish"
+ umbra_discovery.wyrm_fetish.desc: "$umbra_discovery_finder$ has found a Wyrm Fetish in $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery_urgetaints_xp: "Maeljin Favor"
+ umbra_discovery.urgetaints_xp.desc: "$umbra_discovery_finder$ has found a chance to gain favor with the Maeljin in $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery_temple_obscura: "The Temple Obscura"
+ umbra_discovery.temple_obscura.desc: "$umbra_discovery_finder$ has found the path to the next room of the Temple Obscura in $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+
+
  umbra_retreat_tt: "Successful Retreat"
  
  coterie_spirit_travel_desc: "Travel with your [GetPlayer.Custom('PODCoterie')]?"
@@ -352,12 +367,10 @@
  
  umbra_gaia_possesion_confirm: "Call Gaia's Touch"
  umbra_gaia_possesion_tooltip: "Call Gaia to reshape you into an extension of her will."
- umbra_weaver_possesion_confirm: "Call Weaver-spirit"
- umbra_weaver_possesion_tooltip: "Call a Weaver-spirit to possess you."
- umbra_wyld_possesion_confirm: "Call Wyld-spirit"
- umbra_wyld_possesion_tooltip: "Call a Wyld-spirit spirit to possess you."
- umbra_bane_possesion_confirm: "Call Bane"
- umbra_bane_possesion_tooltip: "Call a bane spirit to possess you."
+ umbra_weaver_possesion_confirm: "Call $glossary_weaver$-spirit"
+ umbra_weaver_possesion_tooltip: "Call a $glossary_weaver$-spirit to possess you."
+ umbra_wyld_possesion_confirm: "Call $glossary_wyld$-spirit"
+ umbra_wyld_possesion_tooltip: "Call a $glossary_wyld$-spirit spirit to possess you."
  umbra_eternal_grace_of_eshtarras_confirm: "Request Incarna Fetish"
  umbra_shining_klaive_of_sokhta_confirm: "Request Incarna Fetish"
  umbra_radiant_blade_of_katanka_sonnak_confirm: "Request Incarna Fetish"
@@ -383,7 +396,7 @@
  umbra_gain_commander_trait_sucess: "You are able to choose a new commander trait."
  umbra_collect_artifact_pieces_start_confirm: "Start Adventure into Maelstroms"
  umbra_collect_artifact_pieces_end_confirm: "End Adventure into Maelstroms"
- umbra_collect_artifact_pieces_tooltip: "Maelstroms erupt from the [UmbraGlossary('pod_realm_labyrinth')] and can touch anywhere the [UmbraGlossary('pod_realm_tempest')] touches - from the [UmbraGlossary('shadowlands')] to the [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')]. Maelstroms are composed of the stuff of the [UmbraGlossaryLocalized('shadowlands','Underworld')] - relics, Specters and Tempest-matter itself, ranging from rains of plasma to storms of soulfire. The Tempest is a font of memory, and a lucky scavenger can sometimes find a useful item hidden among the dross."
+ umbra_collect_artifact_pieces_tooltip: "Maelstroms erupt from the [UmbraGlossary('pod_realm_labyrinth')] and can touch anywhere the [UmbraGlossary('tempest')] touches - from the [UmbraGlossary('shadowlands')] to the [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')]. Maelstroms are composed of the stuff of the [UmbraGlossaryLocalized('shadowlands','Underworld')] - relics, Specters and Tempest-matter itself, ranging from rains of plasma to storms of soulfire. The Tempest is a font of memory, and a lucky scavenger can sometimes find a useful item hidden among the dross."
  umbra_diplomacy_train_start_confirm: "Start Diplomacy Training"
  umbra_martial_train_start_confirm: "Start Martial Training"
  umbra_stewardship_train_start_confirm: "Start Stewardship Training"
@@ -402,6 +415,7 @@
  umbra_hire_artificer_confirm: "Hire Artificer"
  
  umbra_bow_to_wyrm_confirm: "Bow to the Grand Serpent!"
+ umbra_bow_to_wyrm_req: "You are not currently trapped in the Labyrinth or Malfeas"
  umbra_bow_to_wyrm_tooltip: "You see no chance of escape, perhaps you should listen to the alluring voice..."
  umbra_bow_to_demon_confirm: "Sacrifice for Demons"
  umbra_bow_to_demon_tooltip: "You see no chance of escape, perhaps you should sacrifice a prisoner..."
@@ -427,7 +441,7 @@
  umbra_whispering_ankh_of_meros_choose_tt: "You gain the [GetPODArtifact('whispering_ankh_of_meros_link').GetName]"
  
  umbra_expedition_tooltip: "Start a [umbra_expedition|E]"
- umbra_expedition_confirm: "[Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagName))] Expedition"
+ umbra_expedition_confirm: "[Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagKey))] Expedition"
  
  search_invention_unlocked: "Unlock Search Invention action"
  search_innovation_unlocked: "Unlock Search Innovation action"
@@ -435,7 +449,6 @@
  caliburn_unlocked: "Unlock $umbra_caliburn_confirm$ action"
  hire_artificer_unlocked: "Unlock $umbra_hire_artificer_confirm$ action"
  hire_masquer_unlocked: "The artificer hired from this action will also have the [GetTrait('arcanos_moliate').GetName( GetPlayer )] trait"
- bane_possesion_chance_gain: "Unlock $umbra_bane_possesion_confirm$ action for #V 5#! years"
  wyld_possesion_chance_gain: "Unlock $umbra_wyld_possesion_confirm$ action for #V 5#! years"
  weaver_possesion_chance_gain: "Unlock $umbra_weaver_possesion_confirm$ action for #V 5#! years"
  gaia_possesion_chance_gain: "Unlock $umbra_gaia_possesion_confirm$ action for #V 5#! years"
@@ -445,23 +458,23 @@
  
  # Umbra Access
  astral_reaches_access: "#TOOLTIP:astral_reaches_access_desc #L Astral Reaches Access#!#!"
- astral_reaches_access_desc: "Characters can travel to the [UmbraGlossary('astral_reaches')] if they have either:\n$BULLET_WITH_TAB$[GetTrait('spirit').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('psychic_projection_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([phlegmatic_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([soul_arts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([wu_tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('separate_ba_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([hekau_necromancy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([investiture_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([arcana_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([lore_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('astral_projection_1_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([psi_lifestyle|E])#!"
+ astral_reaches_access_desc: "Characters can travel to the [UmbraGlossary('astral_reaches')] if they have either:\n$BULLET_WITH_TAB$[GetTrait('spirit').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('psychic_projection_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([phlegmatic_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([soul_arts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([wu_tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('separate_ba_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([hekau_necromancy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('investiture_journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([investiture_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([arcana_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([lore_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('astral_projection_1_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([psi_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('mokole_walking_between_worlds_perk').GetName(GetNullCharacter)] [perk|E] #Weak ([commongifts_lifestyle|E])#!"
 
  spirit_wilds_access: "#TOOLTIP:spirit_wilds_access_desc #L Spirit Wilds Access#!#!"
- spirit_wilds_access_desc: "Characters can travel to the [UmbraGlossary('spirit_wilds')] if they have either:\n$BULLET_WITH_TAB$[GetTrait('werewolf').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetTrait('bastet').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetTrait('spirit').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('the_spirit_beast_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([animal_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('soul_arts_running_with_the_wolves_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([soul_arts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([wu_tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('separate_ba_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([hekau_necromancy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([investiture_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([arcana_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([lore_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('numina_ephemera_5_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([sorcery_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('fomori_step_sideways_perk').GetName( GetPlayer )] [perk|E] #Weak ([possessedpower_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('kami_step_sideways_perk').GetName( GetPlayer )] [perk|E] #Weak ([possessedpower_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('astral_projection_2_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([psi_lifestyle|E])#!"
+ spirit_wilds_access_desc: "Characters can travel to the [UmbraGlossary('spirit_wilds')] if they have either:\n$BULLET_WITH_TAB$[GetTrait('werewolf').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetTrait('bastet').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetTrait('spirit').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('the_spirit_beast_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([animal_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('soul_arts_running_with_the_wolves_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([soul_arts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([wu_tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('separate_ba_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([hekau_necromancy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('investiture_journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([investiture_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([arcana_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([lore_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('numina_ephemera_5_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([sorcery_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('fomori_step_sideways_perk').GetName( GetPlayer )] [perk|E] #Weak ([possessedpower_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('kami_step_sideways_perk').GetName( GetPlayer )] [perk|E] #Weak ([possessedpower_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('astral_projection_2_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([psi_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('mokole_walking_between_worlds_perk').GetName(GetNullCharacter)] [perk|E] #Weak ([commongifts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('part_the_wall').GetName( GetNullCharacter )] [perk|E] #Weak ([hengeyokaigifts_lifestyle|E])#!"
 
  underworld_access: "#TOOLTIP:underworld_access_desc #L Underworld Access#!#!"
- underworld_access_desc: "Characters can travel to the [UmbraGlossaryLocalized('shadowlands','Underworld')] if they have either:\n$BULLET_WITH_TAB$[GetTrait('wraith').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('ns_ex_nihilo_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([melancholy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('soul_arts_ghost_mask_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([soul_arts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('walk_with_hades_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tribalgifts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([wu_tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('separate_ka_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([hekau_necromancy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lesser_spirit_projection_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([arcana_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([lore_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('astral_projection_3_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([psi_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('spectral_cloak_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([blood_magic_lifestyle|E])#!"
+ underworld_access_desc: "Characters can travel to the [UmbraGlossaryLocalized('shadowlands','Underworld')] if they have either:\n$BULLET_WITH_TAB$[GetTrait('wraith').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('ns_ex_nihilo_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([melancholy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('soul_arts_ghost_mask_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([soul_arts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('walk_with_hades_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tribalgifts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([wu_tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('separate_ka_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([hekau_necromancy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lesser_spirit_projection_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('investiture_journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([investiture_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([arcana_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([lore_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('astral_projection_3_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([psi_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('shroud_of_oblivion_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([blood_magic_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('walk_the_road_of_shadows_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([blood_magic_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('walking_the_bone_road_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([hengeyokaigifts_lifestyle|E])#!"
 
  dreaming_access: "#TOOLTIP:dreaming_access_desc #L Dreaming Access#!#!"
- dreaming_access_desc: "Characters can travel to the [UmbraGlossary('dreaming')] if they have either:\n$BULLET_WITH_TAB$[GetTrait('fae').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('visit_faerieland_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([melancholy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([soul_arts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([wu_tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('separate_ba_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([hekau_necromancy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([arcana_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([lore_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('numina_oneiromancy_5_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([sorcery_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('astral_projection_2_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([psi_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetReligionByKey('stargazer_religion').GetName] [religion|E]"
+ dreaming_access_desc: "Characters can travel to the [UmbraGlossary('dreaming')] if they have either:\n$BULLET_WITH_TAB$[GetTrait('fae').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('visit_faerieland_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([melancholy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([soul_arts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([wu_tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('separate_ba_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([hekau_necromancy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('investiture_journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([investiture_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([arcana_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([lore_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('numina_oneiromancy_5_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([sorcery_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('astral_projection_2_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([psi_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetReligionByKey('stargazer_religion').GetName] [religion|E]"
 
  skinlands_access: "#TOOLTIP:skinlands_access_desc #L Skinlands Access#!#!"
  skinlands_access_desc: "Characters can travel to the [Glossary('Skinlands','game_concept_skinlands_desc')] if they have either:\n$BULLET_WITH_TAB$#bold No#! [GetTrait('ferryman').GetName(GetNullCharacter)] [trait|E]\n$BULLET_WITH_TAB$#bold No#! [GetTrait('wraith').GetName( GetNullCharacter )] or [GetTrait('spirit').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetTrait('risen').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('materialize_perk').GetName( GetNullCharacter )] [perk|E]"
 
  deep_umbra_access: "#TOOLTIP:deep_umbra_access_desc #L Deep Umbra Access#!#!"
- deep_umbra_access_desc: "Characters can travel to the [UmbraGlossary('deep_umbra')] if they have either:\n$BULLET_WITH_TAB$[GetTrait('spirit').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetTrait('mage').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetTrait('werewolf').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('psychic_projection_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([phlegmatic_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([soul_arts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([wu_tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('separate_ba_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([hekau_necromancy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([investiture_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([arcana_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([lore_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('astral_projection_1_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([psi_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('numina_ephemera_5_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([sorcery_lifestyle|E])#!"
- 
+ deep_umbra_access_desc: "Characters can travel to the [UmbraGlossary('deep_umbra')] if they have either:\n$BULLET_WITH_TAB$[GetTrait('spirit').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetTrait('mage').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetTrait('werewolf').GetName( GetNullCharacter )] [trait|E]\n$BULLET_WITH_TAB$[GetPerk('psychic_projection_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([phlegmatic_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([soul_arts_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([wu_tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('separate_ba_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([hekau_necromancy_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([tan_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('investiture_journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([investiture_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([arcana_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([lore_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('astral_projection_1_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([psi_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('numina_ephemera_5_perk').GetName( GetNullCharacter )] [perk|E] #Weak ([sorcery_lifestyle|E])#!\n$BULLET_WITH_TAB$[GetPerk('mokole_walking_between_worlds_perk').GetName(GetNullCharacter)] [perk|E] #Weak ([commongifts_lifestyle|E])#!\nThe [GetDoctrine('tenet_hypnotic_serpent').GetBaseName] [core_tenet|E]"
+
  I_HAVE_ASTRAL_REACHES_ACCESS: "You have $astral_reaches_access$"
  THEY_HAS_ASTRAL_REACHES_ACCESS: "[CHARACTER.GetShortUIName] has $astral_reaches_access$"
  HAS_ASTRAL_REACHES_ACCESS: "Has $astral_reaches_access$"
@@ -550,7 +563,7 @@
  
  is_in_umbra_tooltip: "You are in the [umbra|E]."
  is_in_dreaming_tooltip: "You are in the [UmbraGlossary('dreaming')]."
- umbra_realm_known_tooltip: "Found the [UmbraGlossary(Scope.GetFlagName)] in the [umbra|E]"
+ umbra_realm_known_tooltip: "Found the [UmbraGlossary(Scope.GetFlagKey)] in the [umbra|E]"
  
  # Umbra Place
  umbra_place_glen_confirm: "Rest in a Glen"
@@ -578,13 +591,13 @@
  broken_mirror_valid_tooltip: "Your location ([GetPlayer.GetCurrentLocation.GetName]) does #bold not#! have [GetBuilding('wyrm_taint_01').GetName] or a [faith|E] that accepts infernalism."
  labyrinth_progress_effect_tooltip: "You gain #V 100#! exploration progress in [UmbraGlossary('pod_realm_labyrinth')] (If stationed)."
  
- glen_desc: "A Glen is an area of the [UmbraGlossary('penumbra')] saturated with the energies of the Wyld. Glens are usually tied to areas of unspoiled wilderness in the material world (making them increasingly rare and inaccessible)."
+ glen_desc: "A Glen is an area of the [UmbraGlossary('penumbra')] saturated with the energies of the $glossary_wyld$. Glens are usually tied to areas of unspoiled wilderness in the material world (making them increasingly rare and inaccessible)."
  hellhole_desc: "A Hellhole is an area of the [UmbraGlossary('penumbra')] saturated with Wyrmish energies, usually due to something particularly destructive or toxic existing on the material side of the Gauntlet. Hellholes are profoundly destructive to everything around them, and breeding grounds for powerful Banes."
  veinous_stair_desc: "The Veinous Stair is a passage from Stygia directly into the [UmbraGlossary('pod_realm_labyrinth')]. The most stable place in the [UmbraGlossary('shadowlands')], the Stair is composed of black stone of an unknown type."
  onyx_tower_desc: "The Onyx Tower is the dwelling of Charon, the once and future Emperor of Stygia. The tallest building in Stygia, it represents Charon's power and his ability to oversee the [UmbraGlossary('dark_kingdom_of_iron')]."
  periphery_desc: "The Periphery, sometimes also called the "Soft Umbra", is a place - or a state of mind, as many $glossary_fera$ would point out - between the [UmbraGlossary('penumbra')] and the Material World."
  broken_mirror_desc: "Broken Mirrors are places where the boundaries between the Material World and [UmbraGlossary('yomi_wan')] have been loosened by massive amounts of mortal suffering, Tainted Chi and desolate spirits."
- blight_desc: "A Blight is an area of the [UmbraGlossary('penumbra')] damaged by the struggle between the Weaver and the Wyrm. These urban areas are thick with Banes and choked with the Weaver's webs; in some ways they represent all the negative aspects of a city, reified and squeezed down into a small area."
+ blight_desc: "A Blight is an area of the [UmbraGlossary('penumbra')] damaged by the struggle between the $glossary_weaver$ and the $glossary_wyrm$. These urban areas are thick with Banes and choked with the Weaver's webs; in some ways they represent all the negative aspects of a city, reified and squeezed down into a small area."
  broken_lands_desc: "A Broken Land is something right out of a tall tale. You hear tell of people finding a fork in a trail where there wasn’t one before, or a cave opening in a cliff that was solid two days ago. Horses don’t want to go down that path, and get real nervous the closer they get. Sometimes the path leads to a strange patch of wilderness where the animals don’t behave quite right — jackrabbits hunt coyotes, spiders spin webs out of silver, vultures eat the bones out of corpses without damaging the flesh. The sun might not come up for days, or the moon may shine green or red."
  vista_desc: "Vistas are areas within the [umbra|E] that open up a kind of performance reflecting one of four themes: Death, Stasis, Chaos, or Origin.\n\nVistas cannot be interacted with and simply show the entity encountering them a vision of some alternative when or where informed by one of its themes. Scenes depicted show a world where something big has happened like the creation of the universe or stultifying levels of order. These Umbral scenescapes spread across your entire field of view, as if whatever was happening was right in front of you. They seem more like events than like theatres, and affect all a traveler's senses."
  
@@ -885,7 +898,7 @@
  shadowlands_effect_desc: "Unlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to the Shadowlands so it won't cause more stress to maintain."
  
  umbra_realm_river_of_death: "River of Death"
- umbra_realm_river_of_death_desc: "The River of Death is a waterway in the [UmbraGlossary('pod_realm_tempest')] that serves as the primary Byway from Stygia to the [UmbraGlossary('shadowlands')] and other [Glossary('Dark Kingdoms','game_concept_dark_kingdom_desc')]."
+ umbra_realm_river_of_death_desc: "The River of Death is a waterway in the [UmbraGlossary('tempest')] that serves as the primary Byway from Stygia to the [UmbraGlossary('shadowlands')] and other [Glossary('Dark Kingdoms','game_concept_dark_kingdom_desc')]."
  river_of_death_effect_desc: ""
  
  umbra_realm_sunless_sea: "Sunless Sea"
@@ -905,15 +918,15 @@
  sea_of_souls_effect_desc: ""
  
  umbra_realm_isle_of_sorrows: "Isle of Sorrows"
- umbra_realm_isle_of_sorrows_desc: "The Isle of Sorrows is a rocky island located at the delta of the [UmbraGlossary('river_of_death')], deep in the [UmbraGlossary('pod_realm_tempest')]."
+ umbra_realm_isle_of_sorrows_desc: "The Isle of Sorrows is a rocky island located at the delta of the [UmbraGlossary('river_of_death')], deep in the [UmbraGlossary('tempest')]."
  isle_of_sorrows_effect_desc: ""
  
  umbra_realm_dark_kingdom_of_iron: "Dark Kingdom of Iron"
- umbra_realm_dark_kingdom_of_iron_desc: "Stygia is the capital of the western dead, an incomprehensibly huge city located on the [UmbraGlossary('isle_of_sorrows')] deep in the [UmbraGlossary('pod_realm_tempest')]. It is the location of the major headquarters of the various organizations of western wraiths."
+ umbra_realm_dark_kingdom_of_iron_desc: "Stygia is the capital of the western dead, an incomprehensibly huge city located on the [UmbraGlossary('isle_of_sorrows')] deep in the [UmbraGlossary('tempest')]. It is the location of the major headquarters of the various organizations of western wraiths."
  dark_kingdom_of_iron_effect_desc: "Unlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to this [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] so it has a chance of learning new [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_clay: "Dark Kingdom of Clay"
- umbra_realm_dark_kingdom_of_clay_desc: "Karta, known to outsiders as the [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] of Clay, is the realm in the [UmbraGlossary('pod_realm_tempest')] that belongs to the aboriginal people of Australia."
+ umbra_realm_dark_kingdom_of_clay_desc: "Karta, known to outsiders as the [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] of Clay, is the realm in the [UmbraGlossary('tempest')] that belongs to the aboriginal people of Australia."
  dark_kingdom_of_clay_effect_desc: "Unlock an interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to this [Glossary('Dark Kingdom','game_concept_dark_kingdom_desc')] so it has a chance of learning new [arcanoi_lifestyle|E]."
  
  umbra_realm_dark_kingdom_of_ivory: "Dark Kingdom of Ivory"
@@ -983,11 +996,11 @@
  yomi_wan_effect_desc: "Unlock interaction that allows you to send a bound [GetTrait('wraith').GetName( GetNullCharacter )] to the [UmbraGlossary('yomi_wan')] so it would return as [GetTrait('kueijin').GetName( GetPlayer )]."
  
  umbra_realm_sea_of_shadow: "Sea of Shadows"
- umbra_realm_sea_of_shadow_desc: "Sea of Shadows is a term used by Wraiths to describe the "bottom" layer of the [UmbraGlossary('pod_realm_tempest')] which flows around and into the [UmbraGlossary('pod_realm_labyrinth')] and [UmbraGlossary('oblivion')]."
+ umbra_realm_sea_of_shadow_desc: "Sea of Shadows is a term used by Wraiths to describe the "bottom" layer of the [UmbraGlossary('tempest')] which flows around and into the [UmbraGlossary('pod_realm_labyrinth')] and [UmbraGlossary('oblivion')]."
  sea_of_shadow_effect_desc: "Allows you to find a random whistimmu as an [umbra_expedition|E].\nGain $POD_plasmic_maa$ as an [umbra_expedition|E], which allows recruiting $POD_plasmic_maa$ as [men_at_arms|E]."
  
- umbra_realm_pod_realm_tempest: "Tempest"
- umbra_realm_pod_realm_tempest_desc: "The Tempest is a perpetually swirling maelstrom of energy, memories and #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L Spectres#!#! issuing from the [UmbraGlossary('pod_realm_labyrinth')] and continuously raining plasma and materials on both the [UmbraGlossary('shadowlands')] and [Glossary('Dark Kingdoms','game_concept_dark_kingdom_desc')]."
+ umbra_realm_tempest: "Tempest"
+ umbra_realm_tempest_desc: "The Tempest is a perpetually swirling maelstrom of energy, memories and #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L Spectres#!#! issuing from the [UmbraGlossary('pod_realm_labyrinth')] and continuously raining plasma and materials on both the [UmbraGlossary('shadowlands')] and [Glossary('Dark Kingdoms','game_concept_dark_kingdom_desc')]."
  tempest_effect_desc: "Allows you to find a random whistimmu as an [umbra_expedition|E].\nGain $POD_plasmic_maa$ as an [umbra_expedition|E], which allows recruiting $POD_plasmic_maa$ as [men_at_arms|E]."
  
  umbra_realm_stormwall: "Stormwall"
@@ -1021,7 +1034,7 @@
  abyss_effect_desc: ""
  
  umbra_realm_dis: "Dis"
- umbra_realm_dis_desc: "What little organization the Ferrymen have is centered around Dis, a Sargasso Sea of fortresses, caverns, and ships in the [UmbraGlossary('pod_realm_tempest')]. This holds their main gathering places, the headquarters of their archival and fabrication divisions, and their small steering committee."
+ umbra_realm_dis_desc: "What little organization the Ferrymen have is centered around Dis, a Sargasso Sea of fortresses, caverns, and ships in the [UmbraGlossary('tempest')]. This holds their main gathering places, the headquarters of their archival and fabrication divisions, and their small steering committee."
  dis_effect_desc: ""
 
  umbra_realm_spirit_wilds: "Spirit Wilds"
@@ -1103,11 +1116,11 @@
  the_homeland_of_the_bunyip_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
  
  umbra_realm_the_former_homeland_of_the_white_howlers: "The Former Homeland of the White Howlers"
- umbra_realm_the_former_homeland_of_the_white_howlers_desc: "The former homeland of the White Howlers has unrecognizably been twisted by the Wyrm. The air is thick with smoke and ripples with heat. A sickly green sun beats down on the surface, unblocked by any kind of ozone layer. Night brings no relief as pollutants cool and sink to the surface, causing the moon to appear fluorescent yellow through the vapors."
+ umbra_realm_the_former_homeland_of_the_white_howlers_desc: "The former homeland of the White Howlers has unrecognizably been twisted by the $glossary_wyrm$. The air is thick with smoke and ripples with heat. A sickly green sun beats down on the surface, unblocked by any kind of ozone layer. Night brings no relief as pollutants cool and sink to the surface, causing the moon to appear fluorescent yellow through the vapors."
  the_former_homeland_of_the_white_howlers_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
  
  umbra_realm_calumn: "Calumn"
- umbra_realm_calumn_desc: "A Calumn is a Wyrm domain within the Near Umbra. They develop when a particularly strong, negative emotion is expressed in a place within the physical world that it leaves a print within the [umbra|E]. It is a magnet for Banes and Spirits that live near a Calumn show signs of their respective emotion and even inanimate objects becomes tainted by the proximity."
+ umbra_realm_calumn_desc: "A Calumn is a $glossary_wyrm$ domain within the Near Umbra. They develop when a particularly strong, negative emotion is expressed in a place within the physical world that it leaves a print within the [umbra|E]. It is a magnet for Banes and Spirits that live near a Calumn show signs of their respective emotion and even inanimate objects becomes tainted by the proximity."
 
  calumn_effect_desc: "$UMBRA_DISCOVERY_FETISH$\n$UMBRA_RECRUIT_BYGONE$"
  
@@ -1128,7 +1141,7 @@
  battleground_effect_desc: "Higher reward/requirement for martial lifestyle training unlocked."
 
  umbra_realm_cyberrealm: "CyberRealm"
- umbra_realm_cyberrealm_desc: "The CyberRealm is one of the thirteen Near Realms in the [umbra|E]. This realm represents perhaps the pinnacle of the Weaver's influence in the [umbra|E]. It is called Dystopia by mages."
+ umbra_realm_cyberrealm_desc: "The CyberRealm is one of the thirteen Near Realms in the [umbra|E]. This realm represents perhaps the pinnacle of the $glossary_weaver$'s influence in the [umbra|E]. It is called Dystopia by mages."
  cyberrealm_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_digital_web: "Digital Web"
@@ -1161,7 +1174,7 @@
 
  umbra_realm_pangaea: "Pangaea"
  umbra_realm_pangaea_desc: "Pangaea is a reflection of primal Earth, showing the world as it was before civilization, human history, and even the Impergium."
- pangaea_effect_desc: "Gain dinosaurs as an [umbra_expedition|E], which allows recruiting dinosaurs as [men_at_arms|E]\nGain [GetModifier('paleontologist_modifier').GetNameWithTooltip] modifier (as an [umbra_expedition|E])\n$UMBRA_RECRUIT_BYGONE$"
+ pangaea_effect_desc: "Gain [GetModifier('paleontologist_modifier').GetNameWithTooltip] modifier (as an [umbra_expedition|E])\n$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_scar: "Scar"
  umbra_realm_scar_desc: "Scar is one of the Near Realms of the [umbra|E]. It is a manifestation of the industrial revolution corrupted into a soul grinding oppression under a rusted prosperity ideal."
@@ -1266,7 +1279,7 @@
  court_of_meros_effect_desc: "Can gain the corresponding planetary gift perks as an [umbra_expedition|E] [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_weaver_reaches: "Weaver Reaches"
- umbra_realm_weaver_reaches_desc: "The Weaver Reaches are strands of calcified reality, similar to an astronomer’s computerized map. The web’s intersecting nodes lock cold stars and frozen planets to an unnatural symmetry. No signs of life exist. Colossal Weaver spirits such as ‘star spiders’ patrol and maintain the web and ensure everything remains in its ordained place."
+ umbra_realm_weaver_reaches_desc: "The Weaver Reaches are strands of calcified reality, similar to an astronomer’s computerized map. The web’s intersecting nodes lock cold stars and frozen planets to an unnatural symmetry. No signs of life exist. Colossal $glossary_weaver$ spirits such as ‘star spiders’ patrol and maintain the web and ensure everything remains in its ordained place."
  weaver_reaches_effect_desc: ""
 
  umbra_realm_wyld_reaches: "Wyld Reaches"
@@ -1350,7 +1363,7 @@
  shard_realm_of_life_effect_desc: ""
 
  umbra_realm_seasonal_realms: "Seasonal Realms"
- umbra_realm_seasonal_realms_desc: "The Seasonal Realms or the Verbena Seasonal Realms are four seperate Realms within the [shade_realm_of_life|E], otherwise known as the Umbral reflection of the planet Venus."
+ umbra_realm_seasonal_realms_desc: "The Seasonal Realms or the Verbena Seasonal Realms are four seperate Realms within the [UmbraGlossary('shard_realm_of_life')], otherwise known as the Umbral reflection of the planet Venus."
  seasonal_realms_effect_desc: ""
 
  umbra_realm_shard_realm_of_forces: "Shard Realm of Forces"
@@ -1414,7 +1427,7 @@
  shade_realm_of_entropy_effect_desc: ""
 
  umbra_realm_first_horizon: "First Horizon"
- umbra_realm_first_horizon_desc: "The First Horizon lies at the edge of Earth's atmosphere and is studded with Horizon Realms, including the [Concept('shade_realm','Shade Realms')|E]."
+ umbra_realm_first_horizon_desc: "The First Horizon lies at the edge of Earth's atmosphere and is studded with Horizon Realms, including the [Glossary('Shade Realm','game_concept_shade_realm_desc')]."
  first_horizon_effect_desc: ""
 
  umbra_realm_true_horizon: "True Horizon"
@@ -1474,29 +1487,28 @@
 
  umbra_realm_central_duchy: "Central Duchy"
  umbra_realm_central_duchy_desc: "A raised circular stone inscribed with a spiral sits in the center of this large, irregularly shaped area. Hugely elaborate and menacing buildings surround the courtyard, each more than a mile high. One of these large structures is the massive Grand Cathedral, with an enormous stained glass window depicting tentacled monstrosities erupting from beneath the earth. This cathedral is dedicated to all of the heads of the Hydra and is the only place in all of [UmbraGlossary('malfeas')] that openly welcomes those loyal to any of these heads."
-
- central_duchy_effect_desc: ""
+ central_duchy_effect_desc: "@wyrm_icon![umbra_expedition|E]: Sequentially explore the nine rooms of the Temple Obscura"
  
  umbra_realm_maeljin_duchies: "Maeljin Duchies"
  umbra_realm_maeljin_duchies_desc: "A massive wall made of stone and fossilized bone guards the [UmbraGlossary('central_duchy')], and the domains of each of the Maeljin Incarna all adjoin this wall, surrounding it on all sides. The wall around the Central Duchy has treacherous razor sharp iron spikes on top, regularly decorated with the bodies of any who has particularly displeased the Maeljin Incarna whose domain that section of the wall adjoins."
- maeljin_duchies_effect_desc: "Can recruit [GetMaA('liderci').GetName] as [men_at_arms|E] if you have [GetPerk('bane_protector_perk').GetName( GetPlayer )] [perk|E]."
+ maeljin_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Obtain [urgetaints_lifestyle|E] [lifestyle_experience|E] if you have the [lifestyle|E]"
 
  umbra_realm_border_duchies: "Border Duchies"
  umbra_realm_border_duchies_desc: "Some portions of [UmbraGlossary('malfeas')] that lie between the [UmbraGlossary('maeljin_duchies')] appear to be barren wastelands, but appearances can be deceptive. These wastelands are actually two other Duchies belonging to Maeljin Incarna who avoid interacting with others of their kind."
- border_duchies_effect_desc: ""
+ border_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Discover Bane [men_at_arms|E]"
  
  umbra_realm_earth_pit: "Earth Pit"
- umbra_realm_earth_pit_desc: "For werewolves, one of the most dangerous locations in all of [UmbraGlossary('malfeas')] is the Earth Pit. Located in a canyon between one of Knight Entropy’s swamps and the desert of the Nameless Angel of Despair, the Earth Pit is a wide region that duplicates the overall features of many of Earth’s most pristine and thriving landscapes, but as a poisoned and toxic parody of the originals."
- earth_pit_effect_desc: ""
+ umbra_realm_earth_pit_desc: "For werewolves, one of the most dangerous locations in all of [UmbraGlossary('malfeas')] is the Earth Pit. Located in a canyon between one of Knight Entropy's swamps and the desert of the Nameless Angel of Despair, the Earth Pit is a wide region that duplicates the overall features of many of Earth's most pristine and thriving landscapes, but as a poisoned and toxic parody of the originals."
+ earth_pit_effect_desc: "@wyrm_icon![umbra_expedition|E]: Find a $glossary_wyrm$ [fetish|E]"
  
  umbra_realm_elemental_duchies: "Elemental Duchies"
  umbra_realm_elemental_duchies_desc: "The outmost edges of [UmbraGlossary('malfeas')] contain the four Elemental Duchies of smog, balefire, sludge, and toxin.\n\nThe palaces of the four elemental Maeljin sit near the center of each Duchy. Destroying one of these castles of corruption might weaken the element, especially if the Garou also permanently destroy the elemental Maeljin."
- elemental_duchies_effect_desc: ""
+ elemental_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Find an Elemental Bane Spirit"
  
  umbra_realm_black_spiral_labyrinth: "Black Spiral Labyrinth"
  umbra_realm_ebon_maze: "Ebon Maze"
  umbra_realm_black_spiral_labyrinth_desc: "The Black Spiral Labyrinth, also called the Ebon Maze in the Middle Kingdom, is a spiral labyrinth within the realm of [UmbraGlossary('malfeas')] containing unimaginable horrors of the Wyrm."
- black_spiral_labyrinth_effect_desc: ""
+ black_spiral_labyrinth_effect_desc: "@wyrm_icon![umbra_expedition|E]: Find a $glossary_wyrm$ [fetish|E]"
  
  umbra_realm_copernicus_research_center: "Copernicus Research Center"
  umbra_realm_copernicus_research_center_desc: "Copernicus Research Center ("The Cop") is a massive, translucent Dyson sphere controlled by the Void Engineers. It surrounds one of the stars of Alpha Centauri and extends to one AU in radius."

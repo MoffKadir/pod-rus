@@ -1,33 +1,4 @@
 ﻿l_english:
- POD_demon_demand_kill_pure_decision: "Demand: Destroy the Pure"
- POD_demon_demand_kill_pure_decision_tooltip: "Your master demands. You must answer."
- POD_demon_demand_kill_pure_decision_desc: "Purity is anathema to the demons. Your master demands that you show your devotion by ridding the world of a lightbearer."
- POD_demon_demand_kill_pure_decision_confirm: "Thy will be done, master."
- POD_demon_demand_kill_pure_decision_condition: "Kill an hunter, vampire with the Golconda trait, or a [GetTrait('kueijin').GetName( GetNullCharacter )] with high [Glossary('Dharma','podgloss.dharma')]."
- 
- POD_demon_demand_banish_rival_decision: "Demand: Banish Rival"
- POD_demon_demand_banish_rival_decision_tooltip: "Your master demands. You must answer."
- POD_demon_demand_banish_rival_decision_desc: "Demons' worst enemies are their own kind. Your master demands that a rival fallen angel be banished from this world."
- POD_demon_demand_banish_rival_decision_confirm: "Thy will be done, master."
- POD_demon_demand_banish_rival_decision_condition: "Banish a demon to the [UmbraGlossary('abyss')]."
- 
- POD_demon_demand_prepare_bodies_decision: "Demand: Prepare Bodies"
- POD_demon_demand_prepare_bodies_decision_tooltip: "Your master demands. You must answer."
- POD_demon_demand_prepare_bodies_decision_desc: "The Ritual of the Sundered Soul allows a demon to manifest briefly in this place by stealing the body of a willing (or unwilling) host. Your master wants some "volunteers" found."
- POD_demon_demand_prepare_bodies_decision_confirm: "Thy will be done, master."
- POD_demon_demand_prepare_bodies_decision_condition: "Imprison #V 10#! or more mortal characters."
- 
- POD_demon_demand_bring_infernalist_decision: "Demand: Bring Infernalist"
- POD_demon_demand_bring_infernalist_decision_tooltip: "Your master demands. You must answer."
- POD_demon_demand_bring_infernalist_decision_desc: "[GetPlayer.MakeScope.GetVariable('to_infernalize').GetCharacter.GetFirstName] has been singled out by your master as a promising infernalist. Bring [GetPlayer.MakeScope.GetVariable('to_infernalize').GetCharacter.GetHerHim] to your cult or deal with [GetPlayer.MakeScope.GetVariable('to_infernalize').GetCharacter.GetHerHim] before [GetPlayer.MakeScope.GetVariable('to_infernalize').GetCharacter.GetSheHe] become a rival."
- POD_demon_demand_bring_infernalist_decision_confirm: "Thy will be done, master."
- POD_demon_demand_bring_infernalist_decision_condition: "[GetPlayer.MakeScope.GetVariable('to_infernalize').GetCharacter.GetFirstName] must a have positive opinion of you or be dead."
- 
- POD_demon_demand_corrupt_place_decision: "Demand: Corrupt Holy Place"
- POD_demon_demand_corrupt_place_decision_tooltip: "Your master demands. You must answer."
- POD_demon_demand_corrupt_place_decision_desc: "Holy Sites are taboo to demons. For them to have free reins, you must taint these sites before your master can freely interact with them."
- POD_demon_demand_corrupt_place_decision_confirm: "Thy will be done, master."
-
  POD_improve_ritual_of_sundered_soul_decision: "Improve the Ritual of the Sundered Soul"
  POD_improve_ritual_of_sundered_soul_decision_tooltip: "I won't be contained forever!"
  POD_improve_ritual_of_sundered_soul_decision_desc: "This complex and new ritual is the only way for you to truly manifest your power on Earth. You need to discover its secrets and improve it."
@@ -80,7 +51,7 @@
  restore_babylon_objective_decision_tooltip: "Hanging your gardens."
  restore_babylon_objective_decision_desc: "It was an age of savage empires and holy wars, of heroes blessed (or cursed) by the living gods and unspeakable rituals performed before idols of gold, basalt and jade. When the Earthbound clashed, armies of the faithful marched. The earth trembled and the skies rained blood, and whole cities were put to the sword.\nIt was Babylon and it was Hell on Earth."
  restore_babylon_objective_decision_confirm: "Glorious times"
- restore_babylon_objective_decision_effect_tooltip: "[GetTrait('demon').GetName( GetPlayer )] and [GetTrait('cultist').GetName( GetPlayer )] rulers will always accept your offer of vassalization."
+ restore_babylon_objective_decision_effect_tooltip: "[GetTrait('demon').GetName( GetPlayer )] and [GetTrait('witch').GetName( GetPlayer )] rulers will always accept your offer of vassalization."
  
  sin_dragon_objective_decision: "Primordial Sin Dragon"
  sin_dragon_objective_decision_tooltip: "Capture the Sin."
@@ -89,3 +60,24 @@
  sin_dragon_objective_decision_effect_tooltip: "Unlock a Sin Dragon [men_at_arms|E] corresponding to your [faith|E]."
  unlock_sin_conversion_decision: "Unlock $sin_conversion_decision$ [decision|E]"
  sin_dragon_trainer_modifier: "Sin Dragon Trainer"
+ 
+ landless_demon_objective_decision: "Secrets of the Fallen"
+ landless_demon_objective_decision_tooltip: "Remnants of the world before this one."
+ landless_demon_objective_decision_desc: "So many wonders were lost during the Heavenly Rebellion. While you have only a fleeting memory of those, maybe the denizens of this age carry fragmented remnants of knowledge that you could use."
+ landless_demon_objective_decision_confirm: "Lost but not forgotten..."
+ landless_demon_objective_decision_valid_tt: "Each time you recognize a new [cultist|E] while landless, you have a chance of gaining new knowledge about the lost lore of the Angels. Higher [learning|E] increases said chance.\n\nYour current knowledge is [GetPlayer.MakeScope.ScriptValue('POD_landless_demon_clues')|V0]."
+ landless_demon_objective_decision_effect_tt: "At [EmptyScope.ScriptValue('POD_landless_demon_clues_for_1st_unlock')|V0] knowledge, you unlock the [GetCourtPositionType('fell_knight_court_position').GetName()] [court_position|E].\n\nAt [EmptyScope.ScriptValue('POD_landless_demon_clues_for_2nd_unlock')|V0] knowledge, you gain the ability to summon $POD_splat_demon_plural$, and all summoned Demons are more powerful.\n\nAt [EmptyScope.ScriptValue('POD_landless_demon_clues_for_3rd_unlock')|V0] knowledge, you gain the Soultaker, a very powerful sword."
+ 
+ podintroductions.2406.t: "Landless Demons"
+ podintroductions.2406.desc: "Demons that don't control land directly rely more on their [cultists|E] than their sedentary counterparts, acting as apocalyptic sects often masquerading as more benign religious communities. Moving around offers them a major benefit however: knowledge.\nThe fallen angels have lost most of their memories and the wonders they made or witnessed at the birth of Creation. Still, some glimpses remain and by gathering cultists from many different walks of life, they can hopefully track down and use these bygone artifacts and techniques to their advantage.\n\n#R As a landless Demon, you might gather some knowledge each time you recognize a new [cultist|E] depending on your [learning|E]. Said knowledge will unlock various rewards. The [GetDecision('landless_demon_objective_decision').GetName] [decision|E] allows you to track down the knowledge you have so far and the associated rewards.#!" 
+ landless_demon_might_gain_clues_tt: "You might gain knowledge (see [GetDecision('landless_demon_objective_decision').GetName] [decision|E]) depending on your [learning|E]."
+ landless_demon_gain_clues_tt: "You gained [SCOPE.GetValue('landless_demon_clues_gained')|V0] Knowledge"
+ 
+ POD_demon_flavor.6.desc: "Raised by sheer skill and heroism on the fields of battle during the War in Heaven, Fell Knights served as lieges and vassals to the higher ranking members within their Legion. Fell Knights usually commanded small warbands of Demons, served as Champions for higher-ranking Demons or guarded Bastions and other sites of Fallen activity.\n\nThis practice has been lost since the defeat of the rebels, as well as the rites behind elevating someone to that position, but you have managed to recover enough of the fragmented memories of this practice inherited by humanity to be able to reinstate it.\n\n #R The Fell Knight court position has been unlocked.#!"
+ 
+ POD_demon_flavor.7.t: "Building the Crucianomicon"
+ POD_demon_flavor.7.desc: "The only way to reliably breach the Abyssal Prison is by knowing the True Name of one of its inhabitants, then using it for a summoning ritual. This is how your kind has been able to come back to Earth since the dawn of infernalism.\nStill, this is a slow and difficult process. By building a repository of all the fragmented knowledge gathered by humanity about the infernal, you could streamline the process and bring more of your (hopefully) grateful brethren back.\n\n#R The Summon Demon interaction is unlocked (if not already available). The demons summoned by said interaction will start stronger.#!"
+
+ POD_demon_flavor.8.desc: "It was always at the back of your mind. It had to be somewhere after all. Such an unholy weapon couldn't just disappear, it just has to be found. And you found it.\n\nThe most infamous relic of the Fallen Angels, this massive broadsword is made of a dull, black metal, siyr which is the first metal mastered by Angels and Humanity alike after the Fall.\nForged at the bloody height of the war, Soultaker is an obscene and terrible weapon. The willing soul of a demon — his name long since forgotten — was bound into the black metal, where he could use this power upon anyone touched by the blade. The sword’s touch drained the energy and life from anyone it wounded — and if it killed a victim, his soul would be pulled from his corpse and imprisoned within the blade, there to be tortured and devoured by the original demon. Mortals and angels alike fell before Soultaker, their Faith torn apart for his sustenance.\nThen the sword’s bearer used it to slay another demon, and the sword changed. The two demonic souls fought for dominance within the blade, neither able to gain an advantage. Over time, their souls began to bleed into each other, creating a single fractured personality. As demonic infighting grew more serious in the war, more demons fell to Soultaker, and their souls became absorbed into a single insane entity — a being that called itself Legion. Soultaker was lost during the final days of the war, hidden deep in a forgotten weapons cache, and without new victims to devour for Faith, Legion grew weak and thin. Now it can think of nothing but food — Faith — and it will do anything to devour fresh souls once more."
+ 
+ 

@@ -1,9 +1,9 @@
 ﻿l_english:
  POD_hint_bloodpotency: "\n\nYour [blood_potency|E] is [GetPlayer.Custom('PODBloodPotency')]."
+ POD_hint_vitaedependency: "\n\n[ghoul_vitae_dependency|E]: #underline;V;TOOLTIP:trait_ghoul_vitae_dependency_chance [ROOT.Char.MakeScope.ScriptValue('POD_chance_to_lose_vitae_passively')|V0]%#! chance to gain #N 1 [hunger_with_icon|E]#! every #underline;TOOLTIP:trait_ghoul_vitae_dependency_years [ROOT.Char.MakeScope.ScriptValue('POD_years_to_lose_vitae_passively')|V0]#! years."
 
  POD_hint_masquerade_maximum: "#I Once your [masquerade_exposure_with_icon|E] increases, you can click this bar to reduce it.#!"
  POD_hint_masquerade_valid: "#I Click this bar to reduce your [masquerade_exposure_with_icon|E].#!"
- POD_hint_masquerade_invalid_no_masquerade: "#X $no_masquerade$#!"
  POD_hint_masquerade_invalid_cap: "#X $POD_cover_masquerade_interaction_cap$.#!"
  POD_hint_masquerade_invalid_cooldown: "#X The interaction to cover up [the_masquerade|E] is currently on cooldown.#!"
 
@@ -18,21 +18,26 @@
  POD_hunger_window_hunt_in_capital: "As a $POD_splat_vampire$, you can go on a [journey|E] to hunt mortals in your capital."
  POD_hunger_window_hunt_in_capital_inprogress: "#help You are already hunting mortals in your capital.#!"
  POD_hunger_window_regen: "[GetPlayer.Custom('PODBloodRegenHint')]"
- POD_hunger_window_regen_revenant: "Because you are a [GetTrait('revenant').GetName(GetPlayer)], you automatically lose #V 1#! [hunger_with_icon|E] per month."
- POD_hunger_window_regen_dhampir: "Because you are a [GetTrait('dhampir').GetName(GetPlayer)], you automatically lose #V 1#! [hunger_with_icon|E] per month."
+ POD_hunger_window_regen_revenant: "Because you are a [GetTrait('revenant').GetName(GetPlayer)], you automatically lose #V 1#! [hunger_with_icon|E] every year."
+ POD_hunger_window_regen_dhampir: "Because you are a [GetTrait('dhampir').GetName(GetPlayer)], you automatically lose #V 1#! [hunger_with_icon|E] every year."
  POD_hunger_window_herd_drink: "You can drink from your [POD_herd|E], [GetPlayer.MakeScope.Var('suggested_herdmember').Char.GetShortUINameNoTooltip]."
  POD_hunger_window_herd_drink_noblood: "#help None of your [POD_herd|E] members have any blood left. Wait for them to replenish some.#!"
  POD_hunger_window_herdify: "You can add one of your [courtiers|E] to your [POD_herd|E]."
  POD_hunger_window_herdify_invalid: "[GetPlayer.Custom('PODHerdifyHint')]"
 
- POD_hunger_window_herdify_revenant: "#help As a $POD_splat_revenant$, you can add $POD_splat_vampire_plural$ to your [POD_herd|E].\n\n$POD_hunger_window_herdify_suffix$#!"
- POD_hunger_window_herdify_ghoul: "#help As a $POD_splat_ghoul$, you can add $POD_splat_vampire_plural$ to your [POD_herd|E].\n\n$POD_hunger_window_herdify_suffix$#!"
  POD_hunger_window_herdify_dhampir: "#help As a [GetTrait('dhampir').GetName(GetPlayer)], you can add $POD_splat_vampire_plural$ to your [POD_herd|E].\n\n$POD_hunger_window_herdify_suffix$#!"
  POD_hunger_window_herdify_suffix: "Select any unlanded $POD_splat_vampire$ and start the herdify [scheme|E] via [character_interaction|E]."
  POD_hunger_window_herdify_vampire: "#help There are no potential [POD_herd|E] members in your court. Try hunting mortals in your capital.#!"
 
  POD_hunger_window_prisoners_invalid: "#help You currently have no prisoners that you could exsanguinate or herdify.#!"
  POD_hunger_window_prisoners: "You have prisoners.\n#help You might be able to drain their blood, or add them to your [POD_herd|E].#!"
+
+ POD_hunger_window_ghoul_bound: "Because you are a [bound_ghoul|E], your only way of losing [hunger_with_icon|E] is by completing [bound_ghoul_missions_with_icon|E] from your $ghoul_domitor$."
+
+ POD_hunger_window_ghoul_independent_hunt: "As a [masterless_ghoul|E], you can go on a [journey|E] to hunt $POD_splat_vampire_plural$ by using the #V $POD_hunt_target_interaction$#! [character_interaction|E] against a landless [character|E]."
+ POD_hunger_window_ghoul_independent_prison: "You have a $POD_splat_vampire$ in your [prison|E] which you can drink from"
+ POD_hunger_window_ghoul_independent_prison_safe: "There is no safe $POD_splat_vampire$ to drink from in your [prison|E]!\n#weak;underline [masterless_ghoul_imprisoned_drinking|E]#!"
+ POD_hunger_window_ghoul_independent_prison_none: "You do not have any $POD_splat_vampire_plural$ in your [prison|E]."
 
  POD_hunger_window_artifacts: "You have [artifacts|E] that can store Blood."
 
@@ -62,7 +67,7 @@
 
  pod_saved_modifier_tooltip: "#T [GetModifier(SCOPE.GetFlagName('saved_tooltip')).GetName]#!\n[GetModifier(SCOPE.GetFlagName('saved_tooltip')).GetDescWithEffects]"
 
- pod_hunger_hud: "$pod_saved_modifier_tooltip$[GetPlayer.Custom('PODBloodPotencyHint')]\n\n#I Click this bar to show the various ways you can slake your [hunger_with_icon|E].#!"
+ pod_hunger_hud: "$pod_saved_modifier_tooltip$[GetPlayer.Custom('PODBloodPotencyHint')][GetPlayer.Custom('PODVitaeDependencyHint')]\n\n#I Click this bar to show the various ways you can slake your [hunger_with_icon|E].#!"
  pod_masquerade_hud: "$pod_saved_modifier_tooltip$\n\n[GetPlayer.Custom('PODMasqueradeHint')]"
  pod_pathos_hud: "$pod_saved_modifier_tooltip$\n\n#I To gain pathos, trigger a passion from a [Fetter|E].#!"
  pod_glamour_hud: "$pod_saved_modifier_tooltip$\n\n#I Click this bar to show the various ways you can regenerate Glamour.#!"

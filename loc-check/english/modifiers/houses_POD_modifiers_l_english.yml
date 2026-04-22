@@ -212,6 +212,8 @@
  house_sybarite_improved_modifier_desc: "This party will truly never end."
  house_yoryari_improved_modifier: "Spirited House Yoryari"
  house_yoryari_improved_modifier_desc: "A new blend of East and West rises, stronger than both combined."
+ house_erk_improved_modifier: "Spirited House Erk"
+ house_erk_improved_modifier_desc: "The Turkic Ravnos have solidified their control over their ancestral homelands. They will not abandon it this time."
 
  house_samiel_modifier: "House Samiel"
  house_samiel_modifier_desc: "The Angels are done hiding, retreating, or cowering. It is time for war."
@@ -384,6 +386,8 @@
  house_ennamaru_modifier_desc: "The Children are cruel and sadistic manipulators in the unsuspecting Courts of the French Cainites. There is no happily ever after when they are involved."
  house_the_third_modifier: "The Third"
  house_the_third_modifier_desc: "Fear the Unknown."
+ house_erk_modifier: "House Erk"
+ house_erk_modifier_desc: "Forged in the harsh isolation of Ergenekon, the Erk extract wealth from their domains with ruthless efficiency. But their stoic, isolated nature makes them clumsy in social situations."
  #house_wankuei_modifier: "House Wan Kuei"
  #house_wankuei_modifier_desc: "The [Glossary('Hungry Dead','game_concept_kuei_jin_desc')] of China are masters of a vast Empire, but they suffer from some serious limitations that the Western $pod_cainites$ could take advantage of."
  house_hollow_reeds_modifier: "House Hollow Reeds"
@@ -675,11 +679,11 @@
  house_dankovsky_modifier_desc: "Overly cautious necromancers of the steppes were doomed to eternal distrust of the Family, after their forceful embrace outside of it."
          
  dynn_horus_modifier: "Shemsu-Heru"   
- dynn_horus_modifier_desc: "The Shemsu-Heru were the first Dynasty, the true Undying created by and for the Gods to wage a holy war against Apophis." 
+ dynn_horus_modifier_desc: "The Shemsu-Heru were the first Dynasty, the true Undying created by and for the Gods to wage a holy war against $glossary_wyrm_apophis$." 
  dynn_ishmaelites_modifier: "Ishmaelites"   
  dynn_ishmaelites_modifier_desc: "The turncoats of the Ishmaelites, the second dynasty, created by a desire for freedom and self-determination."   
  dynn_apepnu_modifier: "Apepnu"   
- dynn_apepnu_modifier_desc: "The third dynasty are the cursed Apepnu, servants of Apophis raised by the Bane rite of the enemy Set."  
+ dynn_apepnu_modifier_desc: "The third dynasty are the cursed Apepnu, servants of $glossary_wyrm_apophis$ raised by the Bane rite of the enemy Set."  
  dynn_cabiri_modifier: "Cabiri"   
  dynn_cabiri_modifier_desc: "The bastard thieves of immortality, the fourth Dynasty of the Cabiri, hated and envied in equal measure."     
  dynn_wufeng_modifier: "Wu Feng"   
@@ -735,3 +739,32 @@
  POD_unity_impassive_tax_modifier_desc: "The members of this house are enjoying an increased efficiency in their adminsitration."
 
  POD_aspiration_legacy_5_modifier: "Evolving Blood"
+ 
+ ### House Modifiers
+ ### NOTE: dynn_impundulu_modifier and _desc are defined by PoD — do not duplicate here
+
+# unused
+#  dynn_impundulu_improved_modifier: "Impundulu — Keepers of the Passage"
+#  dynn_impundulu_improved_modifier_desc: "Having performed the sacred funeral rites, the Impundulu have strengthened their bond with the spirit world. The burden of their covenant weighs less heavily."
+
+ ### Objective Reward Modifiers
+ covenant_of_life_and_death_modifier: "Covenant of Life and Death"
+ covenant_of_life_and_death_modifier_desc: "Through ancient necromantic rites, the Impundulu have renewed their covenant with the Bomkazi line. The bond between living witch and undead necromancer is stronger than ever."
+
+ ishologu_modifier: "The Ishologu"
+ ishologu_modifier_desc: "Having broken the ancient pact through the Ishologu Rite, this vampire is no longer bound to the Bomkazi witches. Free from the feeding restriction, but severed from the life-magic that once sustained them."
+
+ ### Opinion Modifiers
+ fellow_scholar_of_death_modifier: "Fellow Scholar of Death"
+
+ ### Event Modifiers
+ memory_of_bomkazi_modifier: "Memory of Bomkazi"
+ memory_of_bomkazi_modifier_desc: "The memory of Bomkazi, the first witch-wife, lingers still. Her sacrifice echoes through the ages."
+
+ withering_blood_urgency_modifier: "The Withering Blood"
+ withering_blood_urgency_modifier_desc: "The Bomkazi line grows weaker with each generation. Something must be done before the mortal witches are gone entirely."
+
+ ### Trigger Tooltips
+ POD_impundulu_has_bomkazi_courtier_tt: "Has a [GetTrait('bomkazi_witch').GetName(GetNullCharacter)] in your court"
+ POD_impundulu_has_completed_withering_blood_tt: "Has completed the 'Cure the Withering Blood' objective"
+ 
