@@ -38,7 +38,7 @@
  POD_epidemic.1111.desc: "Очевидно, что вы не можете вылечить чулорвиоз обычными методами, и даже целительные силы не помогают. Эта паразитарная болезнь оказалась устойчивой ко всему, что вы пробовали до сих пор, и, поскольку мутация усиливается, вы начинаете чувствовать отчаяние. Какие еще альтернативы у вас есть?"
  POD_epidemic.1111.a: "Чистая божественная сила."
  POD_epidemic.1111.b: "Чистая инфернальная сила."
- POD_epidemic.1111.c: "Чистая сила Триады и Геи."
+ POD_epidemic.1111.c: "Чистая сила [Glossary('Триады', 'glossary_triat_tt')] и Геи."
  POD_epidemic.1111.d: "Воскрешение может стать выходом."
  POD_epidemic.1111.fallback: "Мне нужно найти другой способ."
  POD_epidemic.1111.fallback.tt: "Проверьте список решений, там есть информация о том, как вылечить чулорвиоз."
@@ -91,7 +91,7 @@
 
  epidemic_scourge: "Кара"
  disease_scourge: "Карой."
- health.2101.scourge_outbreak.desc: "Кара - это специфическая для вампиров чума, заражающая кровь. Эта хворь представляет собой мутировавший штамм проказы, скрещенный с бубонной чумой, и напрямую поражает витэ вампира. После заражения жертве приходится тратить больше крови каждый раз, когда она расходует витэ. Эта ситуация усугубляется с каждой ночью, когда жертва страдает от Кары. В некоторых случаях жертва также страдает от обезображивающего недуга, который влияет на ее внешность, но не угрожает жизни.\n\nХотя Кара излечима в каждом конкретном случае, сама болезнь не может быть истреблена. В крайне редких случаях пораженный вампир становится носителем болезни и невосприимчив к ее последствиям. Носитель распространяет Кару среди других вампиров.\n\nНедавно такой случай был обнаружен в вашей державе, что привело всех в состояние параноидального бешенства (более чем обычно)."
+ health.2101.scourge_outbreak.desc: "Кара - это специфическая для вампиров чума, заражающая кровь. Эта хворь представляет собой мутировавший штамм проказы, скрещенный с бубонной чумой, и напрямую поражает [Glossary('витэ','game_concept_vitae_desc')] вампира. После заражения жертве приходится тратить больше крови каждый раз, когда она расходует [Glossary('витэ','game_concept_vitae_desc')]. Эта ситуация усугубляется с каждой ночью, когда жертва страдает от Кары. В некоторых случаях жертва также страдает от обезображивающего недуга, который влияет на ее внешность, но не угрожает жизни.\n\nХотя Кара излечима в каждом конкретном случае, сама болезнь не может быть истреблена. В крайне редких случаях пораженный вампир становится носителем болезни и невосприимчив к ее последствиям. Носитель распространяет Кару среди других вампиров.\n\nНедавно такой случай был обнаружен в вашей державе, что привело всех в состояние параноидального бешенства (более чем обычно)."
  health.2101.scourge_spreads.desc: "Пора пересмотреть свои привычки в питании..."
 
  POD_epidemic.1501.t: "[SCOPE.Custom('EventTitleDisease')]: заражение!"
@@ -102,3 +102,19 @@
  POD_epidemic.1502.desc: "Кажется, будто [ROOT.Char.GetFaith.DeathDeityName] проходит через мою дверь, задержавшись у моей постели, но в конце концов решает оставить меня в живых. Я никогда не забуду мучений от [ROOT.Char.GetFaith.DeathDeityHerHis|U] прикосновений, но [ROOT.Char.GetFaith.DeathDeitySheHe|U] открывает мне глаза на чудо жизни.\n\nКара забрала много душ, прямо или косвенно, но я не стану [Select_CString(ROOT.Char.IsFemale, 'одной', 'одним' )] из них."
  POD_epidemic.1502.a: "Да славится [ROOT.Char.GetFaith.HealthGodName] за это чудо!"
  POD_epidemic.1502.a.tt: "Теперь я [Select_CString(ROOT.Char.IsFemale, 'невосприимчива', 'невосприимчив' )] к такой хвори, как [GetTrait('scourge').GetName( GetNullCharacter )]"
+
+
+ epidemic_entoban_plague: "Entobanic Plague"
+ disease_entoban_plague: "entobanic plague."
+ health.2101.entoban_plague_outbreak.desc: "$POD_epidemic.1601.desc$"
+ health.2101.entoban_plague_spreads.desc: "Curses!"
+ POD_epidemic.1601.t: "[SCOPE.Custom('EventTitleDisease')]: Ancient Disease"
+ POD_epidemic.1601.desc: "Long ago the great Mokolé-Mbembe created wards of fever around the continent of Entoban, or more commonly known as Africa. The wards have been intact for millenia, until now. Some fool has unsheathed the Sword of Fever and brought misery to us all."
+ POD_epidemic.1601.end.desc: "\n\nAnd now it seems, misery has come to me as well."
+ POD_epidemic.1601.court_physician.desc: "\n\n"Indeed, these lesions are a sure sign of the Entobanic Plague. Very dangerous if left untreated.""
+ POD_epidemic.1601.a: "I will endure!"
+
+ POD_epidemic.1602.t: "[SCOPE.Custom('EventTitleDisease')]: Escaping Death"
+ POD_epidemic.1602.desc: "While scars might remain, both on my skin and in my mind, it seems like the affliction has left my body. I will survive. There is still time."
+ POD_epidemic.1602.a: "Glory to [ROOT.Char.GetFaith.HealthGodName]! I am well!"
+ POD_epidemic.1602.a.tt: "I am now immune to [GetTrait('entoban_plague').GetName( GetNullCharacter )]"

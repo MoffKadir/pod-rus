@@ -62,6 +62,15 @@
  court_position_younger_than_100: "Возраст ниже #bold 100#!"
  court_position_younger_than_50: "Возраст ниже #bold 50#!"
  cairo_brujah_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_raya_04').GetName]"
+ court_position_auspice_trait: "Auspice"
+ fc_head_regal_visage_perk_aptitude: "[GetPerk('fc_head_regal_visage_perk').GetName(ROOT.Char)]"
+ fc_torso_grievous_wings_perk_aptitude: "[GetPerk('fc_torso_grievous_wings_perk').GetName(ROOT.Char)]"
+ fc_torso_curved_hasp_perk_aptitude: "[GetPerk('fc_torso_curved_hasp_perk').GetName(ROOT.Char)]"
+ fc_arm_r_precise_hand_perk_aptitude: "[GetPerk('fc_arm_r_precise_hand_perk').GetName(ROOT.Char)]"
+ fc_arm_l_precise_hand_perk_aptitude: "[GetPerk('fc_arm_l_precise_hand_perk').GetName(ROOT.Char)]"
+ fc_leg_r_muscle_mass_perk_aptitude: "[GetPerk('fc_leg_r_muscle_mass_perk').GetName(ROOT.Char)]"
+ fc_leg_l_muscle_mass_perk_aptitude: "[GetPerk('fc_leg_l_muscle_mass_perk').GetName(ROOT.Char)]"
+
 
  brujah_primogen_court_position: "Примоген Бруха"
  brujah_primogen_court_position_desc: "$brujah_primogen_court_position$ традиционно отвечает за военную стратегию в ваших владениях, хотя иногда они могут заниматься и наукой, оставаясь верными своему прозвищу «воинов-учёных».\n\n#help Требования к [Concept('aptitude', 'пригодности')|E] см. в «[Concept('brujah_primogen', 'Примоген Бруха')|E]».#!"
@@ -161,7 +170,7 @@
  master_rite_court_position_desc: "$master_rite_court_position$ отвечает за духовное благополучие каэрна. Все проводимые ритуалы должны получить их одобрение."
  gatekeeper_court_position: "Привратник"
  gatekeeper_court_position_desc: "$gatekeeper_court_position$, скорее всего, будет первым, с кем столкнутся новички. Собирая дань и информацию с посетителей, привратник часто бывает очень занят, ведь в его обязанности входит и обслуживание духовных лунных мостов."
- wyrm_foe_court_position: "Враг Вирма"
+ wyrm_foe_court_position: "Враг [Glossary('Вирма', 'glossary_wyrm_tt')]"
  wyrm_foe_court_position_desc: "$wyrm_foe_court_position$ - это самый свирепый воин общины, не обязательно самый опытный, но определенно самый пылкий. Они служат заместителями лидера общины во время наступательных действий против приспешников Вирма."
  talesinger_court_position: "Сказитель"
  talesinger_court_position_desc: "$talesinger_court_position$ обязан поддерживать репутацию каэрна, создавая и исполняя сказания или песни о великих деяниях, совершенных героями общины. Они также передают историю гару молодым."
@@ -264,6 +273,8 @@
  POD_organize_chimera_desc: "Этот персонаж помогает организовывать и тренировать химер своего сюзерена."
  POD_organize_faerie: "Организовать фей"
  POD_organize_faerie_desc: "Этот персонаж помогает организовывать и тренировать фей своего сюзерена."
+ POD_manage_estate: "Manage Estate"
+ POD_manage_estate_desc: "This character focuses on managing their liege's personal [domicile|E]."
 
 
  imperial_envoy_court_position: "Имперский посланник"
@@ -286,7 +297,7 @@
 
 
  ratcatcher_court_position: "Крысолов"
- ratcatcher_court_position_desc: "$ratcatcher_court_position$ должен пасти крыс, следить за тем, чтобы они были съедобными, и загонять их в угол, чтобы они служили источником витэ для менее удачливых вампиров при дворе."
+ ratcatcher_court_position_desc: "$ratcatcher_court_position$ должен пасти крыс, следить за тем, чтобы они были съедобными, и загонять их в угол, чтобы они служили источником [Glossary('витэ','game_concept_vitae_desc')] для менее удачливых вампиров при дворе."
  #ratcatcher_employer_custom_effect_description: "$BULLET$Улучшает [character_interaction|El] «Осушить животное»"
 
  scarlet_screen_family_court_position: "Алая ширма семьи"
@@ -312,3 +323,10 @@
 
  cult_leader_court_position: "Глава культа"
  cult_leader_court_position_desc: "Лидер и гуру личного культа демона, собирающего веру. Эти культисты занимают особое положение в культе своего хозяина и выполняют повседневные задачи, позволяя демону сосредоточиться на более важных делах.\n#help [Concept('aptitude', 'Пригодность')|E] этой [Concept('court_position', 'придворной должности')|E] зависит от навыков [Concept('stewardship', 'управления')|E], [Concept('intrigue', 'интриг')|E] и [learning[Concept('aptitude', 'учёности')|E], а также [Concept('traits', 'свойств')|E] «[GetTrait('schemer').GetName(GetNullCharacter)]» и «[GetTrait('diligent').GetName(GetNullCharacter)]»."
+
+ fell_knight_court_position: "Fell Knight"
+ fell_knight_court_position_desc: "Empowered to lead by rites dating back to the Creation, Fell Knights are the armored fists of their Fallen Angel master."
+ 
+ 
+ majordomo_court_position: "Majordomo"
+ majordomo_court_position_desc: "A Majordomo is a special role designed for a [GetTrait('ghoul').GetName(GetNullCharacter)] who typically serves his [Glossary('Domitor','game_concept_domitor_desc')] as the chief steward of her estates and affairs. The Majordomo will do his master's bidding by doling out assignments and orders ranging from hiring outside services to keeping other ghouls in line."

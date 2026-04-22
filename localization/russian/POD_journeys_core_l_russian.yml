@@ -39,7 +39,7 @@
  POD_journey_player_desc: "[GetPlayer.GetFirstNameNoTooltip] находится на стадии [GetPlayer.Custom('PODShowJourneyPhase')|l] в своём [Concept('journey', 'странствии')|E]."
 
  POD_journey_progress_desc: "Прогресс: #V;P;bold $POD_JOURNEY_GETPROGRESS$#!"
- POD_journey_planning_speed_desc: "#TOOLTIP:game_concept_planning_speed_desc #E Скорость планирования#!#!: #V [Localize(Concatenate(GetPlayer.MakeScope.Var('current_journey').Var('progress_value').GetFlagName,'_monthly_num_current'))]#![AddTextIf(Not(PlayerGuiIsShown('POD_current_journey_is_instant')),' #help (подробности см. в подсказке)#!')]"
+ POD_journey_planning_speed_desc: "#TOOLTIP:game_concept_planning_speed_desc #E Скорость планирования#!#!: #V [Localize(Concatenate(GetPlayer.MakeScope.Var('current_journey').Var('progress_value').GetFlagKey,'_monthly_num_current'))]#![AddTextIf(Not(PlayerGuiIsShown('POD_current_journey_is_instant')),' #help (подробности см. в подсказке)#!')]"
 
  POD_journey_phase_planning: "#TOOLTIP:game_concept_planning_phase_desc #E Фаза планирования#!#!"
  POD_journey_phase_travel: "[Concept('travel_phase', 'Фаза путешествия')|E]"
@@ -84,7 +84,7 @@
  POD_journey_instant: "Моментально"
 
  POD_journey_progress_instant: "#TOOLTIP:game_concept_planning_speed_desc #E Скорость планирования#!#!: $POD_journey_instant$"
- POD_journey_progress: "#TOOLTIP:game_concept_planning_speed_desc #E Скорость планирования#!#!: [Localize(Concatenate(GetPlayer.MakeScope.Var('journey_detail_window_subtype').Var('progress_value').GetFlagName,'_monthly_num'))] #help (подробности см. в подсказке)#!"
+ POD_journey_progress: "#TOOLTIP:game_concept_planning_speed_desc #E Скорость планирования#!#!: [Localize(Concatenate(GetPlayer.MakeScope.Var('journey_detail_window_subtype').Var('progress_value').GetFlagKey,'_monthly_num'))] #help (подробности см. в подсказке)#!"
 
  POD_journey_cost_goldprestigepiety: "Стоимость: $POD_journey_gold$, $POD_journey_prestige$, $POD_journey_piety$"
  POD_journey_cost_goldprestige: "Стоимость: $POD_journey_gold$, $POD_journey_prestige$"
