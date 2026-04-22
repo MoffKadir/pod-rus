@@ -17,17 +17,8 @@ types POD_window_character {
 			text_single = {
 				layoutpolicy_horizontal = expanding
 				align = center
-				raw_text = minions_button_name
-				default_format = "#low"
-				visible = "[Not(GetScriptedGui('is_werewolf_owner').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End ))]"
-			}
-			
-			text_single = {
-				layoutpolicy_horizontal = expanding
-				align = center
-				raw_text = minions_button_name_werewolf
-				default_format = "#low"
-				visible = "[GetScriptedGui('is_werewolf_owner').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
+				text = minions_button_name
+				default_format = "#clickable"
 			}
 		}
 	}
@@ -46,8 +37,8 @@ types POD_window_character {
 			text_single = {
 				layoutpolicy_horizontal = expanding
 				align = center
-				raw_text = cultists_button_name
-				default_format = "#low"
+				text = cultists_button_name
+				default_format = "#clickable"
 			}
 		}
 	}
@@ -66,8 +57,8 @@ types POD_window_character {
 			text_single = {
 				layoutpolicy_horizontal = expanding
 				align = center
-				raw_text = neterus_button_name
-				default_format = "#low"
+				text = neterus_button_name
+				default_format = "#clickable"
 			}
 		}
 	}
@@ -80,7 +71,31 @@ types POD_window_character {
 	
 		scrollbox = { # View When none of the relation tabs are expanded.
 			name = "minons_main_view"
-			visible = "[Not(CharacterWindow.IsRelationExpanded( 'ghouls' ))]"
+			### unrolled version, for visualising the crusty-ass datafunction
+			# visible = "[Not( 
+			# 	Or4( 
+			# 		Or4( 
+			# 			CharacterWindow.IsRelationExpanded('ghouls'), 
+			# 			CharacterWindow.IsRelationExpanded('domitor'), 
+			# 			CharacterWindow.IsRelationExpanded('herd'), 
+			# 			CharacterWindow.IsRelationExpanded('dreamer') 
+			# 		), 
+			# 		Or4( 
+			# 			CharacterWindow.IsRelationExpanded('thrall'), 
+			# 			CharacterWindow.IsRelationExpanded('stolen_hearts'), 
+			# 			CharacterWindow.IsRelationExpanded('bound_wraiths'), 
+			# 			CharacterWindow.IsRelationExpanded('bound_demons') 
+			# 		), 
+			# 		Or4( 
+			# 			CharacterWindow.IsRelationExpanded('known_true_names'), 
+			# 			CharacterWindow.IsRelationExpanded('effigies'), 
+			# 			CharacterWindow.IsRelationExpanded('animantis'), 
+			# 			CharacterWindow.IsRelationExpanded('manifestation') 
+			# 		), 
+			# 		CharacterWindow.IsRelationExpanded('dominate_targets') 
+			# 	)
+			# )]"
+			visible = "[Not( Or4( Or4( CharacterWindow.IsRelationExpanded('ghouls'), CharacterWindow.IsRelationExpanded('domitor'), CharacterWindow.IsRelationExpanded('herd'), CharacterWindow.IsRelationExpanded('dreamer') ), Or4( CharacterWindow.IsRelationExpanded('thrall'), CharacterWindow.IsRelationExpanded('stolen_hearts'), CharacterWindow.IsRelationExpanded('bound_wraiths'), CharacterWindow.IsRelationExpanded('bound_demons') ), Or4( CharacterWindow.IsRelationExpanded('known_true_names'), CharacterWindow.IsRelationExpanded('effigies'), CharacterWindow.IsRelationExpanded('animantis'), CharacterWindow.IsRelationExpanded('manifestation') ), CharacterWindow.IsRelationExpanded('dominate_targets') ) )]"
 			size = { 605 100% }
 			position = { -15 -5 }
 			blockoverride "scrollbox_content" {
@@ -163,6 +178,38 @@ types POD_window_character {
 							blockoverride "expand_button_inside" {
 								visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'ghoul_thrall' ) )), '(int32)0' )]"
 								onclick = "[CharacterWindow.ToggleExpandedRelation( 'ghouls' )]"
+							}
+						}
+						expand = {}
+					}
+				}
+	
+				widget = {
+					visible = "[GetScriptedGui('has_domitor_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
+					name = "domitor"
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					size = { 0 110 }
+					scissor = yes
+	
+					hbox = {
+						vbox_character_row_item = {
+							name = "domitor"
+							datacontext = "[CharacterWindow.GetCharacter]"
+							layoutpolicy_vertical = expanding
+	
+							blockoverride "portrait_datamodel" {
+								datamodel = "[CharacterWindow.GetRelationsOfTypeFillEmpty( GetRelation( 'ghoul_domitor' ), '(int32)1' )]"
+							}
+	
+							blockoverride "header_text"
+							{
+								text = domitor_row_header
+							}
+							
+							blockoverride "expand_button_inside" {
+								visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'ghoul_domitor' ) )), '(int32)0' )]"
+								onclick = "[CharacterWindow.ToggleExpandedRelation( 'domitor' )]"
 							}
 						}
 						expand = {}
@@ -416,6 +463,58 @@ types POD_window_character {
 						expand = {}
 					}
 				}
+
+				widget = {
+					visible = "[GetScriptedGui('has_human_companion_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
+					name = "human_companion"
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					size = { 0 110 }
+					scissor = yes
+					hbox = {
+						vbox_character_row_item = {
+							name = "human_companions"
+							layoutpolicy_vertical = expanding
+	
+							blockoverride "portrait_datamodel" {
+								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'human_companion' ) )]"
+							}
+							
+							blockoverride "header_text"
+							{
+								text = human_companions_row_header
+							}
+						}								
+	
+						expand = {}
+					}
+				}
+
+				widget = {
+					visible = "[GetScriptedGui('has_innocent_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
+					name = "innocent_tormentor"
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					size = { 0 110 }
+					scissor = yes
+					hbox = {
+						vbox_character_row_item = {
+							name = "innocent_tormentors"
+							layoutpolicy_vertical = expanding
+	
+							blockoverride "portrait_datamodel" {
+								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'innocent_tormentor' ) )]"
+							}
+							
+							blockoverride "header_text"
+							{
+								text = innocent_tormentors_row_header
+							}
+						}								
+	
+						expand = {}
+					}
+				}
 				
 				widget = {
 					visible = "[GetScriptedGui('has_possesses_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
@@ -462,6 +561,17 @@ types POD_window_character {
 							blockoverride "header_text"
 							{
 								text = dominate_targets_row_header
+							}
+	
+							blockoverride "remaining_items"
+							{
+								visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'dominate_target' ) )), '(int32)7' )]"
+								text = "[GetNumberAbove_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'dominate_target' ) )), '(int32)7' )|=]"
+							}
+	
+							blockoverride "expand_button_inside" {
+								visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'dominate_target' ) )), '(int32)0' )]"
+								onclick = "[CharacterWindow.ToggleExpandedRelation( 'dominate_target' )]"
 							}
 						}								
 	
@@ -533,232 +643,24 @@ types POD_window_character {
 				}
 				
 				widget = {
-					visible = "[GetScriptedGui('has_shadow_twin_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
-					name = "shadow_twin"
+					visible = "[GetScriptedGui('has_mindless_clone_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
+					name = "mindless_clone"
 					layoutpolicy_horizontal = expanding
 					layoutpolicy_vertical = expanding
 					size = { 0 110 }
 					scissor = yes
 					hbox = {
 						vbox_character_row_item = {
-							name = "shadow_twin"
+							name = "mindless_clone"
 							layoutpolicy_vertical = expanding
 	
 							blockoverride "portrait_datamodel" {
-								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'shadow_twin_servant' ) )]"
+								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'mindless_clone_servant' ) )]"
 							}
 							
 							blockoverride "header_text"
 							{
-								text = shadow_twin_row_header
-							}
-						}								
-	
-						expand = {}
-					}
-				}
-				
-				widget = {
-					visible = "[GetScriptedGui('has_mirror_duplicate_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
-					name = "mirror_duplicate"
-					layoutpolicy_horizontal = expanding
-					layoutpolicy_vertical = expanding
-					size = { 0 110 }
-					scissor = yes
-					hbox = {
-						vbox_character_row_item = {
-							name = "mirror_duplicate"
-							layoutpolicy_vertical = expanding
-	
-							blockoverride "portrait_datamodel" {
-								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'mirror_duplicate_servant' ) )]"
-							}
-							
-							blockoverride "header_text"
-							{
-								text = mirror_duplicate_row_header
-							}
-						}								
-	
-						expand = {}
-					}
-				}
-				
-				widget = {
-					visible = "[GetScriptedGui('has_darkling_mirror_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
-					name = "darkling_mirror"
-					layoutpolicy_horizontal = expanding
-					layoutpolicy_vertical = expanding
-					size = { 0 110 }
-					scissor = yes
-					hbox = {
-						vbox_character_row_item = {
-							name = "darkling_mirror"
-							layoutpolicy_vertical = expanding
-	
-							blockoverride "portrait_datamodel" {
-								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'darkling_mirror_servant' ) )]"
-							}
-							
-							blockoverride "header_text"
-							{
-								text = darkling_mirror_row_header
-							}
-						}								
-	
-						expand = {}
-					}
-				}
-				
-				widget = {
-					visible = "[GetScriptedGui('has_shadowy_duplicate_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
-					name = "shadowy_duplicate"
-					layoutpolicy_horizontal = expanding
-					layoutpolicy_vertical = expanding
-					size = { 0 110 }
-					scissor = yes
-					hbox = {
-						vbox_character_row_item = {
-							name = "shadowy_duplicate"
-							layoutpolicy_vertical = expanding
-	
-							blockoverride "portrait_datamodel" {
-								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'shadowy_duplicate_servant' ) )]"
-							}
-							
-							blockoverride "header_text"
-							{
-								text = shadowy_duplicate_row_header
-							}
-						}								
-	
-						expand = {}
-					}
-				}
-				
-				widget = {
-					visible = "[GetScriptedGui('has_phantom_shadow_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
-					name = "phantom_shadow"
-					layoutpolicy_horizontal = expanding
-					layoutpolicy_vertical = expanding
-					size = { 0 110 }
-					scissor = yes
-					hbox = {
-						vbox_character_row_item = {
-							name = "phantom_shadow"
-							layoutpolicy_vertical = expanding
-	
-							blockoverride "portrait_datamodel" {
-								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'phantom_shadow_servant' ) )]"
-							}
-							
-							blockoverride "header_text"
-							{
-								text = phantom_shadow_row_header
-							}
-						}								
-	
-						expand = {}
-					}
-				}
-				
-				widget = {
-					visible = "[GetScriptedGui('has_separated_khaibit_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
-					name = "separated_khaibit"
-					layoutpolicy_horizontal = expanding
-					layoutpolicy_vertical = expanding
-					size = { 0 110 }
-					scissor = yes
-					hbox = {
-						vbox_character_row_item = {
-							name = "separated_khaibit"
-							layoutpolicy_vertical = expanding
-	
-							blockoverride "portrait_datamodel" {
-								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'separated_khaibit_servant' ) )]"
-							}
-							
-							blockoverride "header_text"
-							{
-								text = separated_khaibit_row_header
-							}
-						}								
-	
-						expand = {}
-					}
-				}
-				
-				widget = {
-					visible = "[GetScriptedGui('has_separated_shadow_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
-					name = "separated_shadow"
-					layoutpolicy_horizontal = expanding
-					layoutpolicy_vertical = expanding
-					size = { 0 110 }
-					scissor = yes
-					hbox = {
-						vbox_character_row_item = {
-							name = "separated_shadow"
-							layoutpolicy_vertical = expanding
-	
-							blockoverride "portrait_datamodel" {
-								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'separated_shadow_servant' ) )]"
-							}
-							
-							blockoverride "header_text"
-							{
-								text = separated_shadow_row_header
-							}
-						}								
-	
-						expand = {}
-					}
-				}
-				
-				widget = {
-					visible = "[GetScriptedGui('has_unspeakable_servitor_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
-					name = "unspeakable_servitor"
-					layoutpolicy_horizontal = expanding
-					layoutpolicy_vertical = expanding
-					size = { 0 110 }
-					scissor = yes
-					hbox = {
-						vbox_character_row_item = {
-							name = "unspeakable_servitor"
-							layoutpolicy_vertical = expanding
-	
-							blockoverride "portrait_datamodel" {
-								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'unspeakable_servitor_servant' ) )]"
-							}
-							
-							blockoverride "header_text"
-							{
-								text = unspeakable_servitor_row_header
-							}
-						}								
-	
-						expand = {}
-					}
-				}
-				
-				widget = {
-					visible = "[GetScriptedGui('has_shadow_self_gui').IsShown( GuiScope.SetRoot( CharacterWindow.GetCharacter.MakeScope ).End )]"
-					name = "shadow_self"
-					layoutpolicy_horizontal = expanding
-					layoutpolicy_vertical = expanding
-					size = { 0 110 }
-					scissor = yes
-					hbox = {
-						vbox_character_row_item = {
-							name = "shadow_self"
-							layoutpolicy_vertical = expanding
-	
-							blockoverride "portrait_datamodel" {
-								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'shadow_self_servant' ) )]"
-							}
-							
-							blockoverride "header_text"
-							{
-								text = shadow_self_row_header
+								text = mindless_clone_row_header
 							}
 						}								
 	
@@ -903,6 +805,38 @@ types POD_window_character {
 					blockoverride "expand_button_inside" {
 						onclick = "[CharacterWindow.ToggleExpandedRelation( 'ghouls' )]"
 						down = "[CharacterWindow.IsRelationExpanded( 'ghouls' )]"
+					}
+	
+
+					blockoverride "gridbox_slots" {}
+				}
+			}
+		}
+		### DOMITOR EXPANDED
+		scrollbox = {
+			name = "domitor_expanded"
+			visible = "[CharacterWindow.IsRelationExpanded( 'domitor' )]"
+			size = { 100% 100% }
+	
+			blockoverride "scrollbox_replace_vbox" {
+				vbox_character_row_item = {
+					name = "domitor"
+					margin_top = 10
+					spacing = 5
+	
+	
+					blockoverride "portrait_datamodel" {
+						datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'ghoul_domitor' ) )]"
+					}
+	
+					blockoverride "header_text"
+					{
+						text = domitor_row_header
+					}
+	
+					blockoverride "expand_button_inside" {
+						onclick = "[CharacterWindow.ToggleExpandedRelation( 'domitor' )]"
+						down = "[CharacterWindow.IsRelationExpanded( 'domitor' )]"
 					}
 	
 
@@ -1240,6 +1174,40 @@ types POD_window_character {
 				}
 			}
 		}
+		
+		### DOMINATE TARGETS EXPANDED
+		scrollbox = {
+			name = "dominate_targets_expanded"
+			visible = "[CharacterWindow.IsRelationExpanded( 'dominate_targets' )]"
+			size = { 100% 100% }
+	
+			blockoverride "scrollbox_replace_vbox" {
+				vbox_character_row_item = {
+					name = "dominate_targets"
+					margin_top = 10
+					spacing = 5
+	
+	
+					blockoverride "portrait_datamodel" {
+						datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'dominate_target' ) )]"
+					}
+	
+					blockoverride "header_text"
+					{
+						raw_text = bound_wraiths_row_header
+					}
+	
+					blockoverride "expand_button_inside" {
+						onclick = "[CharacterWindow.ToggleExpandedRelation( 'dominate_targets' )]"
+						down = "[CharacterWindow.IsRelationExpanded( 'dominate_targets' )]"
+					}
+	
+
+					blockoverride "gridbox_slots" {}
+				}
+			}
+		}
+
 		expand = {}
 	}
 	type POD_window_character_cultists_tab = widget {
@@ -1605,6 +1573,20 @@ types POD_window_character {
 		}
 	}
 	
+	type POD_character_window_sidebar_splat_text = vbox {
+		datamodel = "[Character.GetTraitIndices]"
+		
+		item = {
+			text_single = {
+				datacontext = "[GetTraitForIndex(int32.GetInt)]"
+				visible = "[GetScriptedGui('sidebar_splat_trait').IsShown(GuiScope.SetRoot(Trait.MakeScope).AddScope('recipient',Character.MakeScope).End)]"
+				text = "[Trait.GetNameNoTooltip(Character.Self)]"
+				block "format" { default_format = "#color:{0.74,0.66,0.52};glow_color:{0.68,0.56,0.41,0.3}" }
+				fontsize = 18
+			}
+		}
+	}
+	
 	type POD_character_window_sidebar_lore_button = button_standard_clean {
 		size = { @sidebar_button_width 50 }
 		alpha = 0.95
@@ -1771,19 +1753,16 @@ types POD_window_character {
 				vbox = {
 					layoutpolicy_horizontal = expanding
 					
-					vbox = {
-						datamodel = "[Character.GetTraitIndices]"
-						
-						item = {
-							text_single = {
-								datacontext = "[GetTraitForIndex(int32.GetInt)]"
-								visible = "[GetScriptedGui('sidebar_splat_trait').IsShown(GuiScope.SetRoot(Trait.MakeScope).AddScope('recipient',Character.MakeScope).End)]"
-								text = "[Trait.GetNameNoTooltip(Character.Self)]"
-								default_format = "#color:{0.74,0.66,0.52};glow_color:{0.68,0.56,0.41,0.3}"
-								#default_format = "#color:{0.74,0.66,0.52};glow_color:{0.0,0.0,0.0,0.8}"
-								fontsize = 18
-							}
-						}
+					POD_character_window_sidebar_splat_text = {
+						visible = "[GetScriptedGui('sidebar_is_hostile_splat').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('recipient',Character.MakeScope).End)]"
+						#blockoverride "format" { default_format = "#color:{0.85,0.2,0.15};glow_color:{0.5,0,0,0.9}" }
+						#alpha = 0.8
+						blockoverride "format" { default_format = "#color:{0.74,0.66,0.52};glow_color:{0.8,0,0,1}" }
+					}
+					
+					POD_character_window_sidebar_splat_text = {
+						visible = "[Not(GetScriptedGui('sidebar_is_hostile_splat').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('recipient',Character.MakeScope).End))]"
+						blockoverride "format" { default_format = "#color:{0.74,0.66,0.52};glow_color:{0.68,0.56,0.41,0.3}" }
 					}
 					
 					# Vampire Clan
@@ -1829,6 +1808,13 @@ types POD_window_character {
 						visible = "[GetScriptedGui('POD_sidebar_show_fera_rank').IsShown(GuiScope.SetRoot(Character.MakeScope).End)]"
 						default_format = @invisible_color
 					}
+					# Fera Wyrm Taint
+					text_single = {
+						text = "POD_sidebar_fera_wyrm_taint"
+						tooltip = "POD_sidebar_fera_wyrm_taint_desc"
+						visible = "[GetScriptedGui('POD_sidebar_show_fera_wyrm_taint').IsShown(GuiScope.SetRoot(Character.MakeScope).End)]"
+						default_format = @invisible_color
+					}
 					
 					# Demon cultists
 					text_single = {
@@ -1872,6 +1858,19 @@ types POD_window_character {
 						visible = "[GetScriptedGui('POD_sidebar_show_spirit_pact').IsShown(GuiScope.SetRoot(Character.MakeScope).End)]"
 						default_format = @invisible_color
 					}
+					
+					# Demonic Pacts
+					# deprecated in favor of the story_cycle display from 1.19
+					# text_single = {
+					# 	text = "POD_sidebar_demonic_pacts"
+					# 	visible = "[GetScriptedGui('POD_sidebar_show_demonic_pacts').IsShown(GuiScope.SetRoot(Character.MakeScope).End)]"
+					# 	default_format = @invisible_color
+					# 	tooltipwidget = { 
+					# 		POD_character_window_sidebar_demonic_pacts = {
+					# 			datacontext = "[Character]"
+					# 		} 
+					# 	}
+					# }
 					
 					spacer = { size = { 0 1 } }
 				}
@@ -2034,6 +2033,40 @@ types POD_window_character {
 				}
 			}
 			
+			### Landless Demon Knowledge
+			vbox = {
+				alpha = 0.85
+				datacontext = "[GetDecisionWithKey('landless_demon_objective_decision')]"
+				visible = "[And( Decision.IsShownForPlayer, ObjectsEqual( Character.Self, GetPlayer.Self ) )]"
+				
+				spacer = { size = { 0 20 } }
+				
+				button_standard = {
+					onclick = "[OpenGameViewData( 'decision_detail', Decision.Self )]"
+					tooltip = "POD_sidebar_landless_demon_knowledge_tt"
+					size = { @sidebar_button_width 33 }
+					
+					text = "POD_sidebar_landless_demon_knowledge"
+				}
+			}
+			
+			### Ask for Pact
+			vbox = {
+				alpha = 0.85
+				visible = "[GetScriptedGui('POD_sidebar_request_pact').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('recipient',Character.MakeScope).End)]"
+				
+				spacer = { size = { 0 20 } }
+				
+				button_primary = {
+					onclick = "[GetScriptedGui('POD_sidebar_request_pact').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('recipient',Character.MakeScope).End)]"
+					enabled = "[And( Not(IsPausedByEvent), GetScriptedGui('POD_sidebar_request_pact').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('recipient',Character.MakeScope).End) )]"
+					tooltip = "[GetScriptedGui('POD_sidebar_request_pact').BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('recipient',Character.MakeScope).End)]"
+					size = { @sidebar_button_width 33 }
+					
+					text = "POD_sidebar_request_pact"
+				}
+			}
+			
 			
 			############################################
 			##########   MAGIC INTERACTIONS   ##########
@@ -2094,6 +2127,123 @@ types POD_window_character {
 			}
 			
 			spacer = { size = { 240 36 } }
+		}
+	}
+
+	type POD_character_window_sidebar_demonic_pacts = widget
+	{
+		alwaystransparent = no
+		using = DefaultTooltipBackground
+		using = GeneralTooltipSetup
+		
+		background = {
+			texture = "gfx/interface/illustrations/decisions/decision_POD_demonology.dds"
+			fittype = end
+			alpha = 0.4
+			framesize = { 1100 440 }
+			margin = { -5 -5 }
+
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+				blend_mode = alphamultiply
+				mirror = vertical
+			}
+		}
+		
+		vbox = {
+			restrictparent_min = yes
+
+			margin = { 24 22 }
+			margin_top = 10
+			spacing = 6
+			
+			text_single = {
+				default_format = "#glow_color:{0,0,0,1}"
+				using = Font_Type_Flavor
+				align = center
+				fontsize = 22
+				text = "POD_character_window_sidebar_demonic_pacts_title"
+			}
+			text_single = {
+				text = "POD_character_window_sidebar_demonic_pacts_number"
+			}
+			scrollbox = {
+				layoutpolicy_vertical = expanding
+				layoutpolicy_horizontal = expanding
+				size = { 0 225 }
+
+				blockoverride "scrollbox_content" {
+					vbox = {
+						datamodel = "[Character.MakeScope.GetList('demonic_pacts')]"
+						layoutpolicy_horizontal = expanding
+						spacing = 4
+
+						item = {
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								text_single = {
+									text = "POD_character_window_sidebar_demonic_pacts_pact_title"
+									fontsize = 18
+									using = Font_Type_Flavor
+								}
+								text_multi = {
+									layoutpolicy_horizontal = expanding
+									text = "POD_character_window_sidebar_demonic_pacts_obligation"
+									elide = right
+									autoresize = yes
+								}
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									visible = "[GetScriptedGui('POD_sidebar_show_demonic_pacts').IsValid(GuiScope.SetRoot(Character.MakeScope).AddScope('obligation', MakeScopeFlag(Scope.GetVariable('obligation').GetFlagKey)).End)]"
+									text = "POD_character_window_sidebar_demonic_pacts_status_prohibitory"
+								}
+								vbox = {
+									layoutpolicy_horizontal = expanding
+									visible = "[Not(GetScriptedGui('POD_sidebar_show_demonic_pacts').IsValid(GuiScope.SetRoot(Character.MakeScope).AddScope('obligation', MakeScopeFlag(Scope.GetVariable('obligation').GetFlagKey)).End))]"
+									
+									text_single = {
+										layoutpolicy_horizontal = expanding
+										text = "POD_character_window_sidebar_demonic_pacts_frequency"
+									}
+									text_single = {
+										layoutpolicy_horizontal = expanding
+										visible = "[EqualTo_CFixedPoint(Scope.ScriptValue('POD_demonic_pact_completed'), '(CFixedPoint)0')]" #Completed is either yes or no
+										text = "POD_character_window_sidebar_demonic_pacts_status_pending"
+									}
+									text_single = {
+										layoutpolicy_horizontal = expanding
+										visible = "[EqualTo_CFixedPoint(Scope.ScriptValue('POD_demonic_pact_completed'), '(CFixedPoint)1')]" #Completed is either yes or no
+										text = "POD_character_window_sidebar_demonic_pacts_status_completed"
+									}
+								}
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = "POD_character_window_sidebar_demonic_pacts_consequence"
+								}
+								text_multi = {
+									layoutpolicy_horizontal = expanding
+									text = "[GetScriptedGui('POD_sidebar_show_demonic_pacts').BuildTooltip(GuiScope.SetRoot(Character.MakeScope).AddScope('obligation', MakeScopeFlag(Scope.GetVariable('obligation').GetFlagKey)).AddScope('consequence', MakeScopeFlag(Scope.GetVariable('consequence').GetFlagKey)).End)]"
+									autoresize = yes
+									max_width = 370
+									align = nobaseline
+									margin = { 2 0 }
+								}
+
+								spacer = { size = { 0 5 } }
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = "POD_character_window_sidebar_demonic_pacts_perks"
+								}
+
+								spacer = { size = { 0 10 } }
+
+								divider_light = { layoutpolicy_horizontal = expanding }
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
