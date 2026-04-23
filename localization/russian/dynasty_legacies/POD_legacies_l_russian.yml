@@ -72,10 +72,15 @@
  tzimisce_legacy_track_name: "Наследие Цимисхов"
  tzimisce_legacy_track_desc: "Знания [Glossary('клана','game_concept_Clan_desc')] Цимисхов уходят корнями в века."
  tzimisce_legacy_1_name: "Наследие Ажры"
- tzimisce_legacy_2_name: "Наследие Рутвена"
- tzimisce_legacy_3_name: "Наследие Вели"
+ TZIMISCE_LEGACY_1_PERK_EFFECT: "#F Horrors and monsters come forth the flesh pits, ready to reclaim the Tzimisce's birthright.#!"
+ tzimisce_legacy_2_name: "Legacy of Tabak"
+ TZIMISCE_LEGACY_2_PERK_EFFECT: "#F The noble of the night carry the dreaded legacy of the Tzimisce $pod_clan$.#!"
+ tzimisce_legacy_3_name: "Legacy of Yorak"
+ TZIMISCE_LEGACY_3_PERK_EFFECT: "Unlocks the [GetBuilding('sanctuary_of_flesh_01').GetName] building.\n#F You who enter here... won't ever leave.#!"
  tzimisce_legacy_4_name: "Наследие Дракона"
- tzimisce_legacy_5_name: "Наследие Йорака"
+ TZIMISCE_LEGACY_4_PERK_EFFECT: "#F The Holy Spirit has ascended, leaving only ruins in his wake.#!"
+ tzimisce_legacy_5_name: "Legacy of Ruthven"
+ TZIMISCE_LEGACY_5_PERK_EFFECT: "#F The unliving has no concern for morality. You will serve.#!"
  tremere_legacy_track_name: "Наследие Тремеров"
  tremere_legacy_track_desc: "Знания [Glossary('клана','game_concept_Clan_desc')] Тремер уходят корнями в века."
  tremere_legacy_1_name: "Наследие Горатрикса"
@@ -278,22 +283,22 @@
  pacts_legacy_track_name: "Инфернальные договоры"
  pacts_legacy_track_desc: "Демонические договоры могут придать силу получателю всего лишь ценой его полной преданности."
  pacts_legacy_1_name: "Инфернальное знание"
- pacts_legacy_1_perk: "Когда кто-то заключает с вами договор, он получает #V 5#! очков [Concept('learning', 'учёности')|E]."
+ pacts_legacy_1_perk: "[arcana_lifestyle|E] Experience from [thralls|E] will be multiplied by #P 3#! instead of #N 2#!."
  pacts_legacy_2_name: "Инфернальный шарм"
- pacts_legacy_2_perk: "Когда кто-то заключает с вами договор, он получает #V 5#! очков [Concept('diplomacy', 'дипломатии')|E]."
+ pacts_legacy_2_perk: "[arcana_lifestyle|E] Experience from [thralls|E] will be multiplied by #P 4#! instead of #N 3#!."
  pacts_legacy_3_name: "Инфернальные заговоры"
- pacts_legacy_3_perk: "Когда кто-то заключает с вами договор, он получает #V 5#! очков [Concept('intrigue', 'интриг')|E]."
+ pacts_legacy_3_perk: "[arcana_lifestyle|E] Experience from [thralls|E] will be multiplied by #P 5#! instead of #N 4#!."
  pacts_legacy_4_name: "Инфернальная аура"
- pacts_legacy_4_perk: "Когда кто-то заключает с вами договор, он получает #V 5#! очков [Concept('stewardship', 'управления')|E]."
+ pacts_legacy_4_perk: "[arcana_lifestyle|E] Experience from [thralls|E] will be multiplied by #P 6#! instead of #N 5#!."
  pacts_legacy_5_name: "Инфернальная храбрость"
- pacts_legacy_5_perk: "Когда кто-то заключает с вами договор, он получает #V 5#! очков [Concept('martial', 'военного дела')|E]."
+ pacts_legacy_5_perk: "[arcana_lifestyle|E] Experience from [thralls|E] will be multiplied by #P 7#! instead of #N 6#!."
 
  seelie_romantic_legacy_track_name: "Романтическое наследие Благих"
  seelie_romantic_legacy_track_desc: "Романтические наследия - это личности, которые китэйн проявляют в романтических встречах, особенно в стилизованных и формальных танцах придворной любви."
  seelie_romantic_legacy_1_name: "Эмпат"
  seelie_romantic_legacy_1_perk: "#flavor Вы очень чувствительны к настроению, желаниям и стремлениям своего партнера. Если они не счастливы, то и вы тоже.#!"
  seelie_romantic_legacy_2_name: "Друг"
- seelie_romantic_legacy_2_perk: "Открывает [Concept('scheme', 'происки')|E] типа «[GetScheme('befriend').GetTypeName]».\nВы можете использовать их до 7 друзей (начиная с 5).\n#flavor Любовь - это не просто романтическое чувство. Если в основе отношений нет взаимного уважения и дружбы, это не настоящая любовь.#!"
+ seelie_romantic_legacy_2_perk: "Открывает [Concept('scheme', 'происки')|E] типа «[GetScheme('befriend').GetTypeName]».\n#flavor Любовь - это не просто романтическое чувство. Если в основе отношений нет взаимного уважения и дружбы, это не настоящая любовь.#!"
  seelie_romantic_legacy_3_name: "Искренность"
  seelie_romantic_legacy_3_perk: "#flavor Немного наивные и простодушные, вы все еще видите только чудеса и хорошие стороны любви. Большинство фей обычно выходят из этого наследия с возрастом, но не всегда.#!"
  seelie_romantic_legacy_4_name: "Жонглёр"
@@ -474,7 +479,7 @@
  hunter_alliances_legacy_track_name: "Союзы охотников"
  hunter_alliances_legacy_track_desc: "Вы не единственные, кто сражается с тьмой. Заручиться поддержкой прочих охотников было бы очень полезно."
  hunter_alliances_legacy_1_name: "Теневая инквизия"
- hunter_alliances_legacy_1_perk: "@warning_icon!#X Это достоинство династии открывается через особое решение.#!\nТеперь вы можете пригласить члена этой организации с помощью решения «Связаться с другими охотниками».\n#flavor Самый могущественный орден охотников - это, без сомнения, Теневая инквизиция. Вы хотите, чтобы они были на вашей стороне или, по крайней мере, не мешали вам.#!"
+ hunter_alliances_legacy_1_perk: "@warning_icon!#X Это достоинство династии открывается через особое решение.#!\nТеперь вы можете пригласить члена этой организации с помощью решения «Связаться с другими охотниками».\n$countermeasures_unlocks_t1_all_seeing_eye$\n#flavor Самый могущественный орден охотников - это, без сомнения, Теневая инквизиция. Вы хотите, чтобы они были на вашей стороне или, по крайней мере, не мешали вам.#!"
  hunter_alliances_legacy_2_name: "Ихван аль-Сафа"
  hunter_alliances_legacy_2_perk: "@warning_icon!#X Это достоинство династии открывается через особое решение.#!\nТеперь вы можете пригласить члена этой организации с помощью решения «Связаться с другими охотниками».\nТеперь вы можете попросить особого наставничества в колдовстве через решение «Связаться с другими охотниками».\n#flavor Несмотря на отсутствие официальной организации, Ихван не имеют себе равных, когда речь заходит об охоте на чудовищ на их территории. У них можно поучиться мастерству.#!"
  hunter_alliances_legacy_3_name: "Судьи"
@@ -482,7 +487,7 @@
  hunter_alliances_legacy_4_name: "Акриты"
  hunter_alliances_legacy_4_perk: "@warning_icon!#X Это достоинство династии открывается через особое решение.#!\nТеперь вы можете пригласить члена этой организации с помощью решения «Связаться с другими охотниками».\n#flavor Защитники восточного христианства являются наследниками сложной византийской правовой и бюрократической системы. Полезный навык для растущего ордена охотников.#!"
  hunter_alliances_legacy_5_name: "Багатуры Корджина"
- hunter_alliances_legacy_5_perk: "@warning_icon!#X Это достоинство династии открывается через особое решение.#!\nТеперь вы можете пригласить члена этой организации с помощью решения «Связаться с другими охотниками».\nДоступны [men_at_arms|El] - [GetMaA('werewolf_pack').GetName].\n#flavor У монгольских охотников есть странные союзники... но их грубая сила позволяет легко закрыть на это глаза.#!"
+ hunter_alliances_legacy_5_perk: "@warning_icon!#X Это достоинство династии открывается через особое решение.#!\nТеперь вы можете пригласить члена этой организации с помощью решения «Связаться с другими охотниками».\nДоступны [men_at_arms|El] - [GetMaA('battlescarred_fera').GetName].\n#flavor У монгольских охотников есть странные союзники... но их грубая сила позволяет легко закрыть на это глаза.#!"
 
  wraith_legacy_track_name: "Груз призрака"
  wraith_legacy_track_desc: "Инструменты, уловки и печальные воспоминания об ушедших."
@@ -539,3 +544,25 @@
  KJ_HUANGTI_LEGACY_4_EFFECT: "#flavor Хуан-ти привил древним людям чувство общности, позаботившись о том, чтобы они защищали свои дома как единое целое.#!"
  kj_huangti_legacy_5_name: "Наследие войны"
  KJ_HUANGTI_LEGACY_5_EFFECT: "#flavor Наконец, Хуан-ти научил нас, когда нанести ответный удар, убедившись, что просвещённые народы одержат победу над варварами.#!"
+
+ ### ==========================================
+ ### DYNASTY LEGACY TRACK
+ ### ==========================================
+
+ impundulu_legacy_track_name: "Impundulu Legacy"
+ impundulu_legacy_track_desc: "The accumulated knowledge and traditions of the Impundulu bloodline, keepers of the covenant between life and death."
+
+ ### Tier 1
+ impundulu_legacy_1_name: "Communion of Life and Death"
+
+ ### Tier 2
+ impundulu_legacy_2_name: "Walkers Between Worlds"
+
+ ### Tier 3
+ impundulu_legacy_3_name: "Masters of the Cenotaph"
+
+ ### Tier 4
+ impundulu_legacy_4_name: "Keepers of the Passage"
+
+ ### Tier 5
+ impundulu_legacy_5_name: "Legacy of the Lightning Bird"
