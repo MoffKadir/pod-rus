@@ -46,15 +46,15 @@
  POD_canon_artifacts.200.option.f: "Могущество"
  POD_canon_artifacts.200.option.g: "Присутствие"
  POD_canon_artifacts.200.option.h: "Превращение"
- POD_canon_artifacts.200.option.i: "Кровавое чародейство"
+ #POD_canon_artifacts.200.option.i: "Кровавое чародейство"
  POD_canon_artifacts.200.option.j: "Стойкость"
- POD_canon_artifacts.200.option.k: "Власть над Тенью"
+ #POD_canon_artifacts.200.option.k: "Власть над Тенью"
  POD_canon_artifacts.200.option.l: "Сейчас не лучшее время"
 
  tapestry_of_fate_decision: "Гобелен Судьбы"
  tapestry_of_fate_decision_tooltip: "Бесконечные знания!"
- tapestry_of_fate_decision_desc: "В Гобелене Судьбы содержится каждое истинное имя. Его стоит изучить."
- tapestry_of_fate_decision_effect_tooltip: "Вы сможете узнать новые истинные имена из Гобелена."
+ tapestry_of_fate_decision_desc: "В Гобелене Судьбы содержится каждое [Glossary('истинное имя','podgloss.truename')]. Его стоит изучить."
+ tapestry_of_fate_decision_effect_tooltip: "Вы сможете узнать новые [Glossary('истинные имена','podgloss.truename')] из Гобелена."
  tapestry_of_fate_decision_confirm: "Новые имена!"
 
  eye_of_hazimel_decision: "Глаз Хазимеля"
@@ -223,8 +223,8 @@
  POD_canon_artifacts.703.t: "Восхождение рыцаря Грааля"
  POD_canon_artifacts.703.desc: "Дело сделано. Вы доказали Граалю свою храбрость, свою душу и свою силу воли и теперь можете свободно испить из него. Но даже несмотря на эти победы, вам будет очень больно, ведь Грааль в корне меняет вашу сущность.\nДаже этой могущественной реликвии недостаточно, чтобы по-настоящему преодолеть Божье проклятие Каина, но это всё равно глубокая, чудесная перемена. Теперь вы нечто большее, чем простой вампир, и вы излучаете святую энергию[AddTextIf( PlayerHasBeast, ' ,пока ваш внутренний Зверь испускает свой последний, предсмертный вой' )]."
  POD_canon_artifacts.703.a: "Наконец-то спасение?"
- drink_grail_tt3: "Будучи рыцарем Грааля, вы получаете следующее:\n $BULLET_WITH_TAB$Можно восполнять запасы крови по своему желанию, приняв незначительное решение\n $BULLET_WITH_TAB$Вы больше не впадёте в неистовство\n $BULLET_WITH_TAB$Ваши гули (созданные из смертных) становятся физически сильнее\n $BULLET_WITH_TAB$Доступны [men_at_arms|El] - [GetMaA('order_bitter_ashes_maa').GetName]."
- drink_grail_tt4: "Будучи рыцарем Грааля, ваши гули становятся сильнее, ведь в них будет течь ваша святая кровь."
+ drink_grail_tt3: "Будучи #TOOLTIP:GAME_TRAIT,POD_grail_knight,[GetPlayer] #L рыцарем Грааля#!#!, вы получаете следующее:\n $BULLET_WITH_TAB$Вы получаете бесконечную кровь\n $BULLET_WITH_TAB$Вы больше не впадёте в неистовство\n $BULLET_WITH_TAB$Ваши гули (созданные из смертных) становятся физически сильнее\n $BULLET_WITH_TAB$Доступны [men_at_arms|El] - [GetMaA('order_bitter_ashes_maa').GetName]."
+ drink_grail_tt4: "Будучи #TOOLTIP:GAME_TRAIT,POD_grail_knight,[GetPlayer] #L рыцарем Грааля#!#!, ваши гули становятся сильнее, ведь в них будет течь ваша святая кровь."
 
  POD_canon_artifacts.704.t: "Недостойный адепт Грааля"
  POD_canon_artifacts.704.desc: "Пути Грааля неисповедимы. Когда вы испытываете ужасную боль, отпивая из святой реликвии, жидкость внезапно превращается в пепел, как Бог проклял Каина. Когда Зверь смеётся при виде вашего поражения, вы с силой отбрасываете кубок, символ вашего позора, прочь.\nТрудно сказать, приведёт ли повторная попытка провести ритуал через какое-то время к другому результату. Вы могли бы повторить его позже, но тогда Грааль должен стоять здесь, напоминая всем о вашем бесславном поражении."
@@ -277,7 +277,8 @@
  incunabulum_kupalam_decision_tooltip: "Часть истории демона из Трансильвании."
  incunabulum_kupalam_decision_desc: "Многие пытались собрать воедино всё, что им известно о демоническом повелителе Трансильвании Купале. Если бы все эти знания были собраны в одном томе, возможно, часть правды стала бы известна."
  incunabulum_kupalam_decision_confirm: "Окончательный ответ?"
- incunabulum_kupalam_decision_custom: "Вам нужно как минимум 5 Договоров Купалы."
+ incunabulum_kupalam_decision_requirement: "Вы должны найти как минимум 5 трактатов Купалы, чтобы кодифицировать их."
+ incunabulum_kupalam_decision_effect: "You combine all your notes to create the [GetPODArtifactName('incunabulum_kupalam_link')]"
 
  codex_mortis_decision: "Кодекс Мортис"
  codex_mortis_decision_tooltip: "Тайны смерти на кончиках ваших пальцев."
@@ -311,8 +312,15 @@
  akhu_decision_confirm: "Тайны Египта."
 
 
+ sword_of_fever_decision: "Unsheathe the Sword of Fever"
+ sword_of_fever_decision_tooltip: "So much death..."
+ sword_of_fever_decision_desc: "The Sword of Fever holds back all the disease spirits of Entoban. It can with the utmost care be drawn a finger's width from its scabbard, to inflict sickness on your foes. However, should you draw it completely it will unleash a terrible and destructive plague upon the land."
+ sword_of_fever_decision_effect_tooltip: "You will be able to fully unsheathe the blade, if you so desire."
+ sword_of_fever_decision_confirm: "I have decided."
+
+
  POD_canon_artifacts.1000.t: "Чтение Гобелена Судьбы"
- POD_canon_artifacts.1000.desc: "Гобелен Судьбы содержит все истинные имена, которые существуют, а также судьбы [UmbraGlossaryLocalized('dreaming','Грёз')]. На самом деле понять его не так сложно, как вы опасались, но изучение имён всё равно потребует от вас определенных усилий.\nВы считаете, что разумнее изучать по одной концепции за раз, чтобы избежать потенциально опасной информационной перегрузки. На какой из них вы сосредоточитесь сегодня?"
+ POD_canon_artifacts.1000.desc: "Гобелен Судьбы содержит все [Glossary('истинные имена','podgloss.truename')], которые существуют, а также судьбы [UmbraGlossaryLocalized('dreaming','Грёз')]. На самом деле понять его не так сложно, как вы опасались, но изучение имён всё равно потребует от вас определенных усилий.\nВы считаете, что разумнее изучать по одной концепции за раз, чтобы избежать потенциально опасной информационной перегрузки. На какой из них вы сосредоточитесь сегодня?"
  POD_canon_artifacts.1000.k: "Сейчас не лучшее время"
  POD_canon_artifacts.1000.personality: "Личность"
  POD_canon_artifacts.1000.education: "Образование"
@@ -324,11 +332,11 @@
  POD_canon_artifacts.1000.physical: "Физиология"
 
  POD_canon_artifacts.1011.t: "$learning_true_names_head$ Обнаружено новое истинное имя"
- POD_canon_artifacts.1011.desc: "Вы успешно изучили истинное имя «[trait.GetName( GetPlayer.Self )]», теперь вы можете использовать его в заклятиях именования."
+ POD_canon_artifacts.1011.desc: "Вы успешно изучили [Glossary('истинное имя','podgloss.truename')] «[trait.GetName( GetPlayer.Self )]», теперь вы можете использовать его в заклятиях именования."
  POD_canon_artifacts.1011.a: "Я продолжу изыскания."
 
  POD_canon_artifacts.1012.t: "$learning_true_names_head$ Нет истинных имён, которые можно узнать"
- POD_canon_artifacts.1012.desc: "Вы узнали все истинные имена в этой области, которые когда-либо могли использовать."
+ POD_canon_artifacts.1012.desc: "Вы узнали все [Glossary('истинные имена','podgloss.truename')] в этой области, которые когда-либо могли использовать."
  POD_canon_artifacts.1012.a: "Сейчас я немного отдохну."
 
  POD_canon_artifacts.1020.t: "Дракон ночи"
@@ -366,3 +374,11 @@
  robe_golden_mandarin_decision_tooltip: "Золотое проклятие"
  robe_golden_mandarin_decision_desc: "Магическая защита драгоценных одеяния Ган Лау Киена неизмерима. Достаточно ли вы умны, чтобы найти способ обойти её и раскрыть истинную силу этого выдающегося артефакта?"
  robe_golden_mandarin_decision_confirm: "Ему не сравниться с моим интеллектом."
+
+
+ POD_canon_artifacts.1100.t: "The Sword of Fever"
+ POD_canon_artifacts.1100.desc: "You have decided to fully unsheathe the Sword of Fever, thereby unleashing a calamity that will take countless lives. Nobody truly knows your reasons for doing this, perhaps not even yourself. Regardless, if you had any doubts then this is the last chance to abandon this idea..."
+ POD_canon_artifacts.1100.a: "Yes, unsheathe it!"
+ POD_canon_artifacts.1100.b: "Perhaps this isn't such a good idea."
+ sword_of_fever_used_modifier: "Drew the Blade"
+ sword_of_fever_used_modifier_desc: "For unknown reasons, you sentenced millions of lives to death by unleashing a deadly disease."

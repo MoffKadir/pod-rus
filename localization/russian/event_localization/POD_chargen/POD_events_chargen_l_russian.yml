@@ -9,17 +9,7 @@
  POD_chargen.2.t: "Что происходит ночью?"
  POD_chargen.2.desc: "К какому типу сверхъестественных существ вы относитесь?"
  POD_chargen.2.desc.landless: "#X Поскольку вы являетесь [Concept('adventurer', 'авантюристом')|E], здесь отображены только виды с #TOOLTIP:game_concept_POD_landless_mechanics_desc #E механиками авантюристов#!#!.#!"
- POD_chargen.2.option.a: "Вампир"
- POD_chargen.2.option.j: "Ревенант"
  POD_chargen.2.option.b: "$glossary_fera$"
- POD_chargen.2.option.c: "Маг"
- POD_chargen.2.option.d: "Фея"
- POD_chargen.2.option.k: "Подменыш"
- POD_chargen.2.option.e: "Охотник"
- POD_chargen.2.option.f: "Смертный"
- POD_chargen.2.option.g: "Демон"
- POD_chargen.2.option.h: "Мумия"
- POD_chargen.2.option.i: "Призрак"
 
  POD_chargen_which_lineage: "На родство с каким домом вы претендуете?"
  POD_chargen_clan_tt: "Вы сможете выбрать следующие [Glossary('кланы','game_concept_Clan_desc')]:"
@@ -137,7 +127,7 @@
 
  POD_chargen.13.t: "Ву Цзао, каста наблюдателей Салюбри"
  POD_chargen.13.option.a: "Цзао-Цзэй"
- POD_chargen.13.option.b: "Цзао-Сюэ"
+ #POD_chargen.13.option.b: "Цзао-Сюэ"
  POD_chargen.13.option.c: "Связь с Цзао-латом неясна"
  POD_chargen.13.option.c.tt: "Хотя у вас есть свойство [Glossary('клана','game_concept_Clan_desc')] [GetTrait('salubri').GetName( GetPlayer )], вы не являетесь частью [Concept('dynasty', 'династии')|E] [Glossary('клана','game_concept_Clan_desc')] Салюбри. Вы сохраняете свой текущий дом, [house_head.GetHouse.GetBaseName]."
  POD_chargen.13.option.d: "Возможно, я не принадлежу к касте Ву Цзао..."
@@ -517,7 +507,7 @@
  POD_chargen.610.option.ad: "Какофония владеет Мельпоменией, Стойкостью и Присутствием."
  POD_chargen.610.option.ae: "Носферату владеют Анимализмом, Могуществом и Затемнением."
  POD_chargen.610.option.af: "Гурухи владеют Анимализмом, Могуществом и Присутствием."
- POD_chargen.610.option.ag: "Бонсам владеют Затемнением, Могуществом и Превращением."
+ POD_chargen.610.option.ag: "Бонсам владеют Затемнением, Могуществом и Абомбве."
  POD_chargen.610.option.ah: "Равнос владеют Анимализмом, Химерией и Стойкостью."
  POD_chargen.610.option.ai: "Киньони владеют Анимализмом, Химерией и Стойкостью."
  POD_chargen.610.option.aj: "Пхури Дэ владеют Анимализмом, Прорицанием и Химерией."
@@ -569,6 +559,9 @@
  POD_chargen.610.option.cc: "Гаргульи-кинцуги владеют Стремительностью, Присутствием и Доминированием."
  POD_chargen.610.option.cd: "Гаргульи-рогата владеют Стойкостью, Превращением и Могуществом."
  POD_chargen.610.option.ce: "Гаргульи-тотай владеют Прорицанием, Анимализмом и Химерией."
+ POD_chargen.610.option.cf: "Impundulu have Necromancy, Fortitude and Presence."
+ POD_chargen.610.option.cg: "Erk have Protean, Potence and Chimerstry."
+ POD_chargen.610.option.ch: "Children of Ennamaru have Auspex, Dominate and Presence."
 
  #POD_chargen.610.option.zz: "You reconsider which house to join."
 
@@ -585,7 +578,7 @@
  POD_chargen.670.option.a: "Я [Select_CString(ROOT.Char.IsFemale, 'голодна', 'голоден' )]."
 
  POD_chargen.710.t: "Дорога"
- POD_chargen.710.desc: "По какой Дороге вы пойдёте, чтобы уберечься от Зверя? Вы также сможете выбрать тропу."
+ POD_chargen.710.desc: "По какой Дороге вы пойдёте, чтобы уберечься от [Glossary('Зверя','game_concept_beast_desc')]? Вы также сможете выбрать тропу."
  POD_chargen.710.option.a: "Дорога человечности"
  POD_chargen.710.option.b: "Дорога королей"
  POD_chargen.710.option.c: "Дорога небес"
@@ -775,7 +768,7 @@
  POD_chargen.890.t: "Кодекс Тремеров"
  POD_chargen.890.desc: "Какую тропу тремеров вы выберете?"
  POD_chargen.890.option.a: "Кодекс Тремеров"
- POD_chargen.890.option.b: "Via Servilius, тропа служения гаргулий"
+ #POD_chargen.890.option.b: "Via Servilius, тропа служения гаргулий"
 
  POD_chargen.900.t: "Ордос"
  POD_chargen.900.desc: "К какому тайному ордену Малкавиан вы принадлежите?"
@@ -822,7 +815,7 @@
  POD_chargen.1040.option.d: "Думаю, у меня другой подход..."
 
  POD_chargen.1050.t: "Вам нужно понять, что..."
- POD_chargen.1050.desc: "[GetTrait('predatortype_cenobite').GetName(GetNullCharacter)] - вампир, который содержит [Concept('POD_herd', 'стадо')|E] в религиозном учреждении, например, в монастыре.\n\n[GetTrait('predatortype_phlebotomist').GetName(GetNullCharacter)] - вампир, который получает витэ под видом лекаря, проводящего кровопускание.\n\n[GetTrait('predatortype_graverobber').GetName(GetNullCharacter)] - вампир, которого можно встретить рыскающим по кладбищам и склепам в поисках свежих трупов или скорбящих.\n\n[GetTrait('predatortype_bedlamite').GetName(GetNullCharacter)] - вампир, охотящийся на безумцев. Они также могут быть или не быть безумными."
+ POD_chargen.1050.desc: "[GetTrait('predatortype_cenobite').GetName(GetNullCharacter)] - вампир, который содержит [Concept('POD_herd', 'стадо')|E] в религиозном учреждении, например, в монастыре.\n\n[GetTrait('predatortype_phlebotomist').GetName(GetNullCharacter)] - вампир, который получает [Glossary('витэ','game_concept_vitae_desc')] под видом лекаря, проводящего кровопускание.\n\n[GetTrait('predatortype_graverobber').GetName(GetNullCharacter)] - вампир, которого можно встретить рыскающим по кладбищам и склепам в поисках свежих трупов или скорбящих.\n\n[GetTrait('predatortype_bedlamite').GetName(GetNullCharacter)] - вампир, охотящийся на безумцев. Они также могут быть или не быть безумными."
  POD_chargen.1050.option.a: "[Select_CString(ROOT.Char.IsFemale, 'Сенобитка', 'Сенобит' )]."
  POD_chargen.1050.option.a.herd: "К вашему двору присоединится местный проповедник в качестве члена стада."
  POD_chargen.1050.option.b: "[Select_CString(ROOT.Char.IsFemale, 'Флеботомистка', 'Флеботомист' )]."
@@ -913,6 +906,18 @@
  POD_chargen.1160.option.h: "Карлики." #Dwarf
  POD_chargen.1160.option.i: "Гиганты." #Giant
  POD_chargen.1160.option.j: "Альбиносы." #Albino
+
+ POD_chargen.1200.t: "Ghouls"
+ POD_chargen.1200.desc: "[ghouls|EU] are mortals who drank vampiric $pod_vitae$. The blood acts like a supernatural drug to the living, granting strength and everlasting life, but also making them emotionally dependent on their \"donor\". Vampires often mistreat their Ghouls, knowing that they hold an irresistible bargaining chip in this dynamic.\n\nIt is possible to feed on Vampires without becoming bound to them, though needless to say, no $pod_cainite$ is going to part with their blood willingly."
+ POD_chargen.1200.a: "I want to bind myself to a new master."
+ POD_chargen.1200.a.tt: "For the next week, you'll be able to use the #V $POD_beg_for_vitae_interaction$#! [character_interaction|E] for free. Target any $POD_splat_vampire$ to become their [bound_ghoul|E]."
+ POD_chargen.1200.a.tt2: "[bound_ghouls|E] have to complete [bound_ghoul_missions_with_icon|E] for their [Glossary('Domitor','game_concept_domitor_desc')] on a regular basis. Loyal servants can eventually earn the $pod_Embrace$ to become a $POD_splat_vampire$ themselves. It's also possible, though difficult, to break free from your master to become a [masterless_ghoul|E] later."
+ POD_chargen.1200.b: "I will be my own master."
+ POD_chargen.1200.b.tt: "You become a [masterless_ghoul|E]."
+ POD_chargen.1200.b.tt2: "[masterless_ghouls|EU] are not beholden to a [Glossary('Domitor','game_concept_domitor_desc')], but constantly struggle to feed their [ghoul_vitae_dependency|E]. Failure to feed will result in them losing their powers. Of course, if you are truly desperate, you can always beg someone to become a [bound_ghoul|E] after the fact."
+ POD_chargen.1200.c: "I'll dedicate myself to hunting the bloodsuckers."
+ POD_chargen.1200.c.tt: "You join the [GetFaithByKey('calomenasforsaken').GetName] and become a $POD_splat_hunter$ of $POD_splat_vampire_plural$."
+ POD_chargen.1200.d: "Maybe I'm not a ghoul..."
 
  POD_chargen.1300.t: "Ревенанты"
  POD_chargen.1300.desc: "Кровавые рабы пили кровь своих хозяев-вампиров, и эти гули переняли часть силы сородичей. В редких случаях некоторые из их детей рождались с кровью вампира в жилах. Овладев кровью, они становятся более могущественными, чем их родители. Обычно их называют [Glossary('ревенантами','game_concept_revenant_desc')], а потомков #TOOLTIP:game_concept_ghoul_desc #E гулей#!#! [Glossary('клана','game_concept_Clan_desc')] Цимисхи называют «Задруга». Из какого рода [Glossary('ревенантов','game_concept_revenant_desc')] вы происходите?"
@@ -1028,7 +1033,7 @@
  #POD_chargen.1620.option.b: "Возможно, я не служу августейшим дворам."
 
  POD_chargen.1700.t: "Династии аменти"
- POD_chargen.1700.desc: "Шемсу-Геру были первой династией, истинными Бессмертными, созданной богами для ведения священной войны против Апофиса. Затем появились перебежчики - Ишмаэлиты, вторая династия, созданная стремлением к свободе и самоопределению. Третьей династией были проклятые Апепну, слуги Апофиса, поднятые с помощью проклятого ритуала врага Сета, и, наконец, появились незаконнорожденные похитители бессмертия, четвёртая династия Кабири."
+ POD_chargen.1700.desc: "Шемсу-Геру были первой династией, истинными Бессмертными, созданной богами для ведения священной войны против [Glossary('Апофиса', 'glossary_wyrm_tt')]. Затем появились перебежчики - Ишмаэлиты, вторая династия, созданная стремлением к свободе и самоопределению. Третьей династией были проклятые Апепну, слуги [Glossary('Апофиса', 'glossary_wyrm_tt')], поднятые с помощью проклятого ритуала врага Сета, и, наконец, появились незаконнорожденные похитители бессмертия, четвёртая династия Кабири."
  POD_chargen.1700.option.a: "Шемсу-Геру."
  POD_chargen.1700.option.b: "Ишмаэлиты."
  POD_chargen.1700.option.c: "Проклятые мумии."
@@ -1120,7 +1125,7 @@
  POD_chargen.2400.option.e: "Возможно, я не принадлежу к Отступникам."
 
  POD_chargen.2500.t: "Другие призраки"
- POD_chargen.2500.desc: "[UmbraGlossaryLocalized('pod_realm_tempest','Буря')] - это «море» в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], а [Glossary('тёмные королевства','game_concept_dark_kingdom_desc')] - острова в этом море. Каждое [Glossary('тёмное королевство','game_concept_dark_kingdom_desc')] является ипостасью умерших представителей определённой культуры."
+ POD_chargen.2500.desc: "[UmbraGlossaryLocalized('tempest','Буря')] - это «море» в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], а [Glossary('тёмные королевства','game_concept_dark_kingdom_desc')] - острова в этом море. Каждое [Glossary('тёмное королевство','game_concept_dark_kingdom_desc')] является ипостасью умерших представителей определённой культуры."
  POD_chargen.2500.option.a: "Жёлтые источники."
  POD_chargen.2500.option.b: "Карта."
  POD_chargen.2500.option.c: "Свар."
@@ -1139,17 +1144,10 @@
 
  POD_chargen.2610.t: "Порода"
  POD_chargen.2610.desc: "У оборотней есть две породы, представляющие то, чем они были до Первого изменения: хомид (рождённые людьми) и люпус (рожденные волками). Большинство других $glossary_fera$ разделяют, по крайней мере, некоторые из этих форм с гару, хотя их зверорождённые формы известны под другими названиями, соответствующими видам животных, среди которых они родились."
- POD_chargen.2610.option.a: "Хомид."
- POD_chargen.2610.option.b: "Люпус."
  POD_chargen.2610.option.d: "Возможно, я не оборотень."
 
  POD_chargen.2611.t: "Лунное покровительство"
  POD_chargen.2611.desc: "Покровительством называется фаза Луны, в которую родился гару. Каждый из них играет определённую роль в обществе оборотней. Рагабаш - это хитрецы и адвокаты дьявола, галлиард - сказители, арун - воины, теурги - мистики и, наконец, филодокс - судьи."
- POD_chargen.2611.option.a: "Рагабаш."
- POD_chargen.2611.option.b: "Теург."
- POD_chargen.2611.option.c: "Филодокс."
- POD_chargen.2611.option.d: "Галлиард."
- POD_chargen.2611.option.e: "Арун."
 
  POD_chargen.2612.t: "Племя"
  POD_chargen.2612.desc: "Племена являются крупнейшей социальной единицей гару. Члены племени часто связаны родословными, схожими тотемами и образом жизни."
@@ -1169,15 +1167,39 @@
 
  POD_chargen.2620.t: "Порода"
  POD_chargen.2620.desc: "У бастет есть две породы, представляющие то, чем они были до Первого изменения: хомид (рождённые людьми) и фелинид (рождённые кошками)."
- POD_chargen.2620.option.a: "Хомид."
- POD_chargen.2620.option.b: "Фелинид."
  POD_chargen.2620.option.d: "Возможно, я не бастет."
 
  POD_chargen.2621.t: "Прио"
  POD_chargen.2621.desc: "У оборотней-котов нет покровительств, вместо этого они полагаются на Прио (также известное как «благосклонность Луны»), который определяет их место и то, как кошки подходят к жизни и справляются с трудностями, встающими на их пути. Хотя это часто определяется временем суток, в которое бастет претерпел Первое изменение, Прио может измениться, если в жизни бастет произойдут серьёзные изменения."
- POD_chargen.2621.option.a: "Дневной свет."
- POD_chargen.2621.option.b: "Сумерки."
- POD_chargen.2621.option.c: "Ночь."
+
+
+
+
+ POD_chargen.2630.t: "Stream"
+ POD_chargen.2630.desc: "The Mokolé do not have tribes, as do several of their younger siblings among the $glossary_fera$. Their Mnesis has preserved a degree of unity among the isolated clutches.\n\nThe four streams aren't enemies, but they have different interests; they aren't allies, but have much in common. Each is a collection of Mnesis lineages organized in a geographic area with its local Gifts and rites; each has a different approach to the problems the Mokolé face."
+ POD_chargen.2630.option.e: "Maybe I'm not a Mokolé"
+
+ POD_chargen.2631.t: "Breed"
+ POD_chargen.2631.desc: "The Mokolé have two Breeds, representing what they were before the First Change: Homid (human-born) and Suchid (lizard-born)."
+
+ POD_chargen.2632.t: "Solar Auspice"
+ POD_chargen.2632.desc: "The Mokolé use Solar Auspices, these auspices however differ depending on the Stream. The Mokolé-mbembe and Gumagan use the traditional seven Solar auspices that follow the position or condition of the sun at the time of birth.\nThe Makara use four Seasonal Auspices that also serve as a sort of internal caste system. This caste system is completely incomprehensible to outsiders.\nThe Zhong Lung also use four Seasonal Wind Auspices. Each of these corresponds to a season, a color, and a wind direction.\nDespite their different names and methods, all Mokolé agree that they are in essence all Solar Auspices and their power is derived from the sun."
+
+ POD_chargen.2633.t: "Varna"
+ POD_chargen.2633.desc: "The Suchid form is the reptilian form of the Mokolé. Each Stream contains specific forms called Varna which are most commonly associated with that stream. It is typically that of a crocodile, alligator, gila monster, or similar large reptile. Because of the vastly different sizes, body shapes, and characteristics of these animals, each has a different use."
+ POD_chargen.2633.option.a: "Champsa"
+ POD_chargen.2633.option.b: "Karna"
+ POD_chargen.2633.option.c: "Ora"
+ POD_chargen.2633.option.d: "Gharial"
+ POD_chargen.2633.option.e: "Makara"
+ POD_chargen.2633.option.f: "Naja"
+ POD_chargen.2633.option.g: "Lung"
+ POD_chargen.2633.option.h: "Suchus"
+
+
+
+
+
 
 
 
@@ -1186,13 +1208,6 @@
 
  POD_chargen.2900.t: "Семь грехов"
  POD_chargen.2900.desc: "У каждого демона есть едва поддающаяся контролю одержимость определённым грехом, и они передают эту одержимость своим последователям."
- POD_chargen.2900.option.a: "Алчность."
- POD_chargen.2900.option.b: "Зависть."
- POD_chargen.2900.option.c: "Чревоугодие."
- POD_chargen.2900.option.d: "Похоть."
- POD_chargen.2900.option.e: "Гордыня."
- POD_chargen.2900.option.f: "Лень."
- POD_chargen.2900.option.g: "Гнев."
  POD_chargen.2900.option.h: "Возможно, я не демон."
 
  POD_chargen.3000.t: "Семь домов"
@@ -1269,18 +1284,6 @@
 
  POD_charjoin.201.t: "Ваше поколение"
  POD_charjoin.201.desc: "К какому поколению вы принадлежите?"
- POD_charjoin.201.a: "Пятое поколение."
- POD_charjoin.201.b: "Шестое поколение."
- POD_charjoin.201.c: "Седьмое поколение."
- POD_charjoin.201.d: "Восьмое поколение."
- POD_charjoin.201.e: "Девятое поколение."
- POD_charjoin.201.f: "Десятое поколение."
- POD_charjoin.201.g: "Одиннадцатое поколение."
- POD_charjoin.201.h: "Двенадцатое поколение."
- POD_charjoin.201.i: "Тринадцатое поколение."
- POD_charjoin.201.j: "Четырнадцатое поколение."
- POD_charjoin.201.k: "Пятнадцатое поколение."
- POD_charjoin.201.l: "Шестнадцатое поколение."
 
  POD_charjoin.300.t: "Присоединиться к этому ордену?"
  POD_charjoin.300.desc: "Вы уверены, что хотите присоединиться к этому ордену с рекомендацией, которую даст [huntermentor.GetFirstName]?\n\nПосле первой опции пути назад не будет."

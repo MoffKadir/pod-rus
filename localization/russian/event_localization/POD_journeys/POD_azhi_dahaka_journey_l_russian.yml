@@ -1,18 +1,31 @@
 ﻿l_russian:
- POD_azhi_dahaka_journey.1.t: "Учение Ажи Дахаки"
- POD_azhi_dahaka_journey.1.desc: "Ажи Дахака на персидском означает трёхглавого дракона демона Аримана. Для Цимисхи это Святой Грааль метаморфозиста, просветлённое и высшее состояние бытия, возможно, достигаемое благодаря широкому использованию Изменчивости.\nВаши исследования подтвердили первое впечатление, что существует не один путь к Ажи Дахаке, а множество. Вам придётся создать свой собственный и избегать ошибок тех, кто совершил их раньше."
- POD_azhi_dahaka_journey.1.a: "Продолжить."
+ POD_azhi_dahaka_journey.1.t: "Mysteries of Flesh and Spirit"
+ POD_azhi_dahaka_journey.1.desc: "There isn't one way to Azhi Dahaka but many. To study change itself, your mind must adapt to constant change. Any breakthrough must be investigated immediately before the idea changes. Physical challenges must be overcome as well, lest your body be lost to the maelstrom of change."
+ POD_azhi_dahaka_journey.1.a: "I must push myself even further."
 
- POD_azhi_dahaka_journey.2.t: "Ажи Дахака: Дракон"
- POD_azhi_dahaka_journey.2.desc: "Ажи Дахака, Дракон, Иллуянкас, Дракула и Левиафан — все они драконы. Вы задаётесь вопросом, почему именно это существо так часто фигурирует в мифологии Цимисхи. Ответ прост. С самого зарождения человечества драконы были героями легенд. Смертные боялись этих великих змеев, но для Цимисхи они олицетворяли великие перемены. Драконы — предвестники трансформации, находящиеся на грани хаоса, вечно движущиеся, со спиральными и извивающимися формами. Вас привлекает не их внешний облик, а их потенциал для превращения — и не только. Они - живое воплощение перемен, которые нам ещё предстоит по-настоящему осознать.\nОни — первый путь к вашему вознесению."
- POD_azhi_dahaka_journey.2.a: "Стать драконом..."
- POD_azhi_dahaka_journey.2.a.success: "Ваш ритуал увенчается успехом, и вы изменитесь навсегда, что приблизит вас к Ажи Дахаке."
- POD_azhi_dahaka_journey.2.a.failure: "Ваш ритуал увенчается успехом, #R но постоянные изменения окажутся непосильными.#!"
+ POD_azhi_dahaka_journey.2.t: "Precipice of Power"
+ POD_azhi_dahaka_journey.2.desc: "Azhi Dahaka, Dracon, Illuyankas, Dracula and Leviathan; all dragons. You wonder why this beast in particular factors so heavily in Tzimisce's mythology. It's simple, really. Since humanity's infancy, dragons have plagued its legends. The kine feared these great serpents, but to the Tzimisce, they represented grand change. Dragons are harbingers of transformation at the edge of chaos and forever in motion with spiraling and sinuous forms. It is not their appearance that appeals to you, but their potential for chrysalis — and beyond. They are living embodiments of a change we have yet to truly realize.\nDecades of study and experimentation have finally bore fruit. You have invented a ritual that will cause rapid morphing of your flesh and spirit. You need only retain your sanity during the process, or end up a mass of mindless flesh."
+ POD_azhi_dahaka_journey.2.a: "My ascension is at hand."
+ POD_azhi_dahaka_journey.2.tooltip: "#help A new [journey|E] is now available#!"
+
 
  POD_azhi_dahaka_journey.3.t: "Ажи Дахака"
  POD_azhi_dahaka_journey.3.desc: "Как правило, за редкими исключениями, Цимисхи не склонны к преданной набожности. Зачем поклоняться какому-то далёкому богу, если вы сами можете изваять себя в божество? На самом деле это не божество. Не догма. Ажи Дахака — символ, фетиш и средоточие трансцендентализма клана.\nОт Дракона до Иллуянкаса, от Дракулы до Левиафана, драконы глубоко вплетены в мифологию Цимисхи. Мы стремимся к тому, чего боится скот, — не к буквальной физической форме, а к тому, что дракон олицетворяет как предвестник трансформации. Мы стремимся к трансцендентному, двигаясь по извилистой спирали колец Ажи Дахаки, заглядывая в его многочисленные пасти и глаза. Там, где хаос и вечность встречаются в движении, мы найдём бьющееся сердце дракона и испьём до дна.\nВоплощённая метафора. Загадка во плоти. Ажи Дахака — это крылатый херувим нашей безбожной, чуждой духовности.\nИ теперь он ваш."
- POD_azhi_dahaka_journey.3.a: "Я [Select_CString(ROOT.Char.IsFemale, 'свободна', 'свободен')]."
+ POD_azhi_dahaka_journey.3.a: "With a single thought, reality changes."
 
- POD_azhi_dahaka_journey.4.t: "Ажи Дахака?"
- POD_azhi_dahaka_journey.4.desc: "Ажи Дахака — это не Нирвана, в которой метаморфозист достигает единства со вселенной, скорее наоборот — претерпеть Метаморфозу - значит полностью отделить себя от Творения, стать самодостаточной волей во вселенной, которая больше не имеет власти над эго.\nВо всяком случае, некоторые так считают. Метаморфоза — это одинокое стремление. Вы действительно достигли этого? Или вы просто потерялись в водовороте вечных перемен?"
- POD_azhi_dahaka_journey.4.a: "#beast Я [Select_CString(ROOT.Char.IsFemale, 'свободна', 'свободен')].#!"
+
+ # skill check after getting 100xp
+ #POD_azhi_dahaka_journey.2.t: "Ажи Дахака: Дракон"
+ #POD_azhi_dahaka_journey.2.desc: "Ажи Дахака, Дракон, Иллуянкас, Дракула и Левиафан — все они драконы. Вы задаётесь вопросом, почему именно это существо так часто фигурирует в мифологии Цимисхи. Ответ прост. С самого зарождения человечества драконы были героями легенд. Смертные боялись этих великих змеев, но для Цимисхи они олицетворяли великие перемены. Драконы — предвестники трансформации, находящиеся на грани хаоса, вечно движущиеся, со спиральными и извивающимися формами. Вас привлекает не их внешний облик, а их потенциал для превращения — и не только. Они - живое воплощение перемен, которые нам ещё предстоит по-настоящему осознать.\nОни — первый путь к вашему вознесению."
+ #POD_azhi_dahaka_journey.2.a: "Стать драконом..."
+ #POD_azhi_dahaka_journey.2.a.success: "Ваш ритуал увенчается успехом, и вы изменитесь навсегда, что приблизит вас к Ажи Дахаке."
+ #POD_azhi_dahaka_journey.2.a.failure: "Ваш ритуал увенчается успехом, #R но постоянные изменения окажутся непосильными.#!"
+
+
+ # losing the skill check
+ #POD_azhi_dahaka_journey.4.t: "Ажи Дахака?"
+ #POD_azhi_dahaka_journey.4.desc: "Ажи Дахака — это не Нирвана, в которой метаморфозист достигает единства со вселенной, скорее наоборот — претерпеть Метаморфозу - значит полностью отделить себя от Творения, стать самодостаточной волей во вселенной, которая больше не имеет власти над эго.\nВо всяком случае, некоторые так считают. Метаморфоза — это одинокое стремление. Вы действительно достигли этого? Или вы просто потерялись в водовороте вечных перемен?"
+ #POD_azhi_dahaka_journey.4.a: "#beast Я [Select_CString(ROOT.Char.IsFemale, 'свободна', 'свободен')].#!"
+
+
+ #"Ажи Дахака на персидском означает трёхглавого дракона демона Аримана. Для Цимисхи это Святой Грааль метаморфозиста, просветлённое и высшее состояние бытия, возможно, достигаемое благодаря широкому использованию Изменчивости.\nВаши исследования подтвердили первое впечатление, что существует не один путь к Ажи Дахаке, а множество. Вам придётся создать свой собственный и избегать ошибок тех, кто совершил их раньше."

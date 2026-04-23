@@ -1,7 +1,15 @@
 ﻿l_russian:
+ POD_ghoul_maintenance.1.a: "I need a friend from the Dispossessed"
+ POD_ghoul_maintenance.1.b: "I need a friend from Folch's Cutthroats"
+ POD_ghoul_maintenance.1.c: "I need a friend from the Order of St. Panteleimon"
+ POD_ghoul_maintenance.1.d: "I need a friend from Haqim's Assassins"
+ POD_ghoul_maintenance.1.back: "I changed my mind"
+
+ POD_ghoul_maintenance.2.t: "Vitae in my Veins"
+ POD_ghoul_maintenance.2.desc: "Since you used the Ruler Designer to become a [ghoul|E], you need to select your [ghoul_greatest_vitae_ingested|E].\n\n#X If you picked an Advanced [Glossary('Discipline','game_concept_discipline_desc')] Trait, choosing any [Glossary('Generation','game_concept_vampgeneration_desc')] besides 4th Generation will instantly truncate it to correct level!#!"
 
  POD_ghoul_maintenance.50.t: "Отвержение домитором"
- POD_ghoul_maintenance.50.desc: "Мой домитор лишил меня своего покровительства. Я больше не служу [Select_CString(formerdomitor.IsFemale, 'ей', 'ему' )]. [Select_CString(formerdomitor.IsFemale, 'Она', 'Он' )] больше не будет одаривать меня своей вампирской кровью. Без этой крови я в конце концов состарюсь и умру."
+ POD_ghoul_maintenance.50.desc: "Мой [Glossary('домитор','game_concept_domitor_desc')] лишил меня своего покровительства. Я больше не служу [Select_CString(formerdomitor.IsFemale, 'ей', 'ему' )]. [Select_CString(formerdomitor.IsFemale, 'Она', 'Он' )] больше не будет одаривать меня своей вампирской кровью. Без этой крови я в конце концов состарюсь и умру."
  POD_ghoul_maintenance.50.option.a: "Я ненавижу [Select_CString(formerdomitor.IsFemale, 'её', 'его' )] за это."
  POD_ghoul_maintenance.50.option.b: "Возможно, это и к лучшему."
  POD_ghoul_maintenance.300.t: "Ревенантство"
