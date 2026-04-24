@@ -20,11 +20,17 @@
  POD_debug_gain_trait_xp_interaction_desc: "Повысить уровень сверхъестественного свойства персонажа [recipient.GetShortUIName]"
  POD_reduce_trait_xp: "Вместо этого снизить опыт"
 
+ POD_debug_refill_energy_interaction: "Refill Energy"
+ POD_debug_refill_energy_interaction_desc: "Fully replenish the \"mana bar\" (e.g. [hunger_with_icon|E]) and energy vessels of [recipient.GetShortUIName]"
+
  POD_debug_umbra_discovery_interaction: "Получить открытие [Concept('umbra', 'Умбры')|E]"
- POD_debug_umbra_discovery_interaction_desc: "Вы сможете начать #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#! в измерение #bold [Localize(Concatenate('game_concept_', recipient.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName))]#!"
+ POD_debug_umbra_discovery_interaction_desc: "Вы сможете начать #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#! в измерение #bold [Localize(Concatenate('game_concept_', recipient.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagKey))]#!"
 
  POD_debug_show_real_prowess_interaction: "Показать настоящую доблесть"
  POD_debug_show_real_prowess_interaction_desc: "Показать ваш реальный навык [Concept('prowess', 'доблести')|E], который используется в некоторых событиях в модификации «[princes_of_darkness|E]»."
+
+ POD_debug_change_idle_pose_interaction: "Customize Idle Pose"
+ POD_debug_change_idle_pose_interaction_desc: "Open an event that lets you change the default pose of [recipient.GetShortUIName]"
 
  POD_debug_edit_clothing_colors_interaction: "Изменить цвета одежды"
  POD_debug_edit_clothing_colors_interaction_desc: "Изменить цветовую схему одежды персонажа [recipient.GetShortUIName]"
@@ -36,6 +42,8 @@
  POD_debug_portrait_shaders_interaction_desc: "Поиграться с графикой персонажа [recipient.GetShortUIName]."
 
  POD_debug_event_shaders_interaction: "Тест шейдеров событий"
+
+ POD_debug_toggle_portrait_modifiers_interaction: "Toggle Portrait Modifiers"
 
  POD_debug_vicissitude_face_interaction: "Редактор портрета Изменчивости"
  POD_debug_vicissitude_face_interaction_desc: "Открывает окно, позволяющее редактировать определённые характеристики персонажа [recipient.GetShortUIName], например мускулистость или рост."

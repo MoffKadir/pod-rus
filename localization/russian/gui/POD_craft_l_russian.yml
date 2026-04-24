@@ -393,7 +393,7 @@
  POD_craft_kueijin_origin: "#TOOLTIP:POD_craft_kueijin_origin_tt @kueijin_icon!#! "
  POD_craft_kueijin_origin_tt: "Этот рецепт относится к силе [GetTrait('kueijin').GetName( GetNullCharacter )|l]."
  POD_craft_demon_origin: "#TOOLTIP:POD_craft_demon_origin_tt @demon_icon!#! "
- POD_craft_demon_origin_tt: "Этот рецепт относится к способностям #L [GetTrait('demon').GetName( GetNullCharacter )|l]ических#! знаний."
+ POD_craft_demon_origin_tt: "Этот рецепт относится к #L [GetTrait('demon').GetName( GetNullCharacter )|l]ическим#! знаниям."
  POD_craft_fera_origin: "#TOOLTIP:POD_craft_fera_origin_tt @fera_icon!#! "
  POD_craft_fera_origin_tt: "Этот рецепт относится к способностям оборотней и других фера."
  POD_craft_psychic_origin: "#TOOLTIP:POD_craft_psychic_origin_tt @psychic_icon!#! "
@@ -675,7 +675,6 @@
  mount_forge_name: "Верховое животное"
  blood_vessel_forge_name: "Одиозная чаша"
 
- fleshcraft_method: "$POD_craft_vampire_origin$ Изменение плоти"
  shape_flesh_method: "$POD_craft_demon_origin$ Придание формы плоти"
  catgut_method: "$POD_craft_fera_origin$ Кетгут"
  mold_method: "$POD_craft_fae_origin$ Придание формы"
@@ -733,6 +732,11 @@
  LOST_COMMON_ARTIFACT_PIECES: "Потеряно $VALUE|-0$ ед. частичек артефакта #weak (Обычная)#!"
  I_LOSE_COMMON_ARTIFACT_PIECES: "Вы потеряете $VALUE|-0$ ед. частичек артефакта #weak (Обычная)#!"
  I_LOST_COMMON_ARTIFACT_PIECES: "Вы потеряли $VALUE|-0$ ед. частичек артефакта #weak (Обычная)#!"
+ HAS_COMMON_ARTIFACT_PIECES: "Has $VALUE|0$ Artifact Pieces #weak (Common)#!"
+ I_HAVE_COMMON_ARTIFACT_PIECES: "I have $VALUE|0$ Artifact Pieces #weak (Common)#!"
+ DOES_NOT_HAVE_COMMON_ARTIFACT_PIECES: "Does not have $VALUE|0$ Artifact Pieces #weak (Common)#!"
+ I_DO_NOT_HAVE_COMMON_ARTIFACT_PIECES: "I do not have $VALUE|0$ Artifact Pieces #weak (Common)#!"
+
 
  GAINS_MASTERWORK_ARTIFACT_PIECES: "Получает $VALUE|+0$ ед. частичек артефакта #weak (Мастерская)#!"
  GAINED_MASTERWORK_ARTIFACT_PIECES: "Получено $VALUE|+0$ ед. частичек артефакта #weak (Мастерская)#!"
@@ -742,6 +746,10 @@
  LOST_MASTERWORK_ARTIFACT_PIECES: "Потеряно $VALUE|-0$ ед. частичек артефакта #weak (Мастерская)#!"
  I_LOSE_MASTERWORK_ARTIFACT_PIECES: "Вы потеряете $VALUE|-0$ ед. частичек артефакта #weak (Мастерская)#!"
  I_LOST_MASTERWORK_ARTIFACT_PIECES: "Вы потеряли $VALUE|-0$ ед. частичек артефакта #weak (Мастерская)#!"
+ HAS_MASTERWORK_ARTIFACT_PIECES: "Has $VALUE|0$ Artifact Pieces #weak (Masterwork)#!"
+ I_HAVE_MASTERWORK_ARTIFACT_PIECES: "I have $VALUE|0$ Artifact Pieces #weak (Masterwork)#!"
+ DOES_NOT_HAVE_MASTERWORK_ARTIFACT_PIECES: "Does not have $VALUE|0$ Artifact Pieces #weak (Masterwork)#!"
+ I_DO_NOT_HAVE_MASTERWORK_ARTIFACT_PIECES: "I do not have $VALUE|0$ Artifact Pieces #weak (Masterwork)#!"
 
  GAINS_FAMED_ARTIFACT_PIECES: "Получает $VALUE|+0$ ед. частичек артефакта #weak (Знаменитая)#!"
  GAINED_FAMED_ARTIFACT_PIECES: "Получено $VALUE|+0$ ед. частичек артефакта #weak (Знаменитая)#!"
@@ -751,6 +759,10 @@
  LOST_FAMED_ARTIFACT_PIECES: "Потеряно $VALUE|-0$ ед. частичек артефакта #weak (Знаменитая)#!"
  I_LOSE_FAMED_ARTIFACT_PIECES: "Вы потеряете $VALUE|-0$ ед. частичек артефакта #weak (Знаменитая)#!"
  I_LOST_FAMED_ARTIFACT_PIECES: "Вы потеряли $VALUE|-0$ ед. частичек артефакта #weak (Знаменитая)#!"
+ HAS_FAMED_ARTIFACT_PIECES: "Has $VALUE|0$ Artifact Pieces #weak (Famed)#!"
+ I_HAVE_FAMED_ARTIFACT_PIECES: "I have $VALUE|0$ Artifact Pieces #weak (Famed)#!"
+ DOES_NOT_HAVE_FAMED_ARTIFACT_PIECES: "Does not have $VALUE|0$ Artifact Pieces #weak (Famed)#!"
+ I_DO_NOT_HAVE_FAMED_ARTIFACT_PIECES: "I do not have $VALUE|0$ Artifact Pieces #weak (Famed)#!"
 
  GAINS_ILLUSTRIOUS_ARTIFACT_PIECES: "Получает $VALUE|+0$ ед. частичек артефакта #weak (Великолепная)#!"
  GAINED_ILLUSTRIOUS_ARTIFACT_PIECES: "Получено $VALUE|+0$ ед. частичек артефакта #weak (Великолепная)#!"
@@ -760,6 +772,10 @@
  LOST_ILLUSTRIOUS_ARTIFACT_PIECES: "Потеряно $VALUE|-0$ ед. частичек артефакта #weak (Великолепная)#!"
  I_LOSE_ILLUSTRIOUS_ARTIFACT_PIECES: "Вы потеряете $VALUE|-0$ ед. частичек артефакта #weak (Великолепная)#!"
  I_LOST_ILLUSTRIOUS_ARTIFACT_PIECES: "Вы потеряли $VALUE|-0$ ед. частичек артефакта #weak (Великолепная)#!"
+ HAS_ILLUSTRIOUS_ARTIFACT_PIECES: "Has $VALUE|0$ Artifact Pieces #weak (Illustrious)#!"
+ I_HAVE_ILLUSTRIOUS_ARTIFACT_PIECES: "I have $VALUE|0$ Artifact Pieces #weak (Illustrious)#!"
+ DOES_NOT_HAVE_ILLUSTRIOUS_ARTIFACT_PIECES: "Does not have $VALUE|0$ Artifact Pieces #weak (Illustrious)#!"
+ I_DO_NOT_HAVE_ILLUSTRIOUS_ARTIFACT_PIECES: "I do not have $VALUE|0$ Artifact Pieces #weak (Illustrious)#!"
 
  # Enhance
  enhance_success_chance: "[GetPlayer.MakeScope.ScriptValue('enhance_success_chance')]%"
@@ -807,9 +823,6 @@
  manifestation_points: "Очки [Concept('skill', 'навыков')|E]: [GetPlayer.MakeScope.ScriptValue('manifestation_points')]"
 
 
- #Flesh
- fleshcraft_tome_tt1: "Невозможно использовать фолиант изменения плоти, содержащий магию крови за пределами понимания владельца."
-
 
  #NEW CRAFTING SYSTEM
  CRAFTING_GUI_TITLE: "#TOOLTIP:game_concept_crafting_desc #E Ремесло#!#!"
@@ -846,6 +859,8 @@
  #POD_one_time_enhance_boost: "One Time Enhancing Boost"
  POD_already_used_moves: "#TOOLTIP:game_concept_crafting_complexity_desc #E Сложность ремесла#!#! уже использована"
  crafting_minigame_moves_crafter: "[Concept('trait_level_track_xp', 'Опыт пути развития свойства')|E] «[GetTrait('pod_crafter').GetName(GetPlayer)]»"
+ crafting_minigame_moves_age_of_kings: "[GetPerk('age_of_kings').GetName(GetPlayer)]"
+
 
  POD_already_used_reloads: "Обновления использованы"
  POD_crafting_minigame_all_rerolls_used: "Вы использовали все обновления!"
@@ -858,20 +873,23 @@
  POD_cannot_end_without_starting: "Вы должны выбрать хотя бы один узел!"
  POD_crafting_minigame_choose_sacrifice: "Вы должны выбрать жертву!"
  POD_cannot_start_without_ending: "Вы не можете создавать два предмета одновременно!"
- POD_crafting_minigame_fleshcraft_requirement: "У вас должен быть как минимум 1 материальный [Concept('prisoner', 'пленник')|E], например вампир, оборотень и т.д."
  POD_crafting_minigame_soulforge_requirement: "У вас должен быть хотя бы 1 [Concept('prisoner', 'пленник')|E]-призрак"
  POD_crafting_minigame_fetish_smith_requirement: "У вас должен быть [Concept('spirit_companion', 'духовный спутник')|E] либо [Concept('imprisoned', 'пленённый')|E] дух"
  POD_crafting_minigame_fetish_smith_requirement_2: "Внутри этого артефакта уже есть связанный дух"
  POD_crafting_minigame_imbue_object_requirement: "У вас должен быть хотя бы 1 [Concept('prisoner', 'пленник')|E]"
  POD_crafting_minigame_alchemy_vampire_requirement: "У вас должен быть хотя бы 1 [Concept('prisoner', 'пленник')|E]-вампир"
- POD_crafting_minigame_alchemy_kinfolk_requirement: "У вас должен быть хотя бы 1 [Concept('prisoner', 'пленник')|E]-оборотень/Родня"
- POD_crafting_minigame_alchemy_kinain_requirement: "У вас должен быть хотя бы 1 [Concept('prisoner', 'пленник')|E]-фея/подменыш"
+ POD_crafting_minigame_node_alchemy_skill_diplomacy_requirement: "You have to have at least 1 [prisoner|E] with [diplomacy|E] above #bold [EmptyScope.ScriptValue('POD_numina_sorcery_alchemy_skill_potion_requirement')]#!"
+ POD_crafting_minigame_node_alchemy_skill_martial_requirement: "You have to have at least 1 [prisoner|E] with [martial|E] above #bold [EmptyScope.ScriptValue('POD_numina_sorcery_alchemy_skill_potion_requirement')]#!"
+ POD_crafting_minigame_node_alchemy_skill_stewardship_requirement: "You have to have at least 1 [prisoner|E] with [stewardship|E] above #bold [EmptyScope.ScriptValue('POD_numina_sorcery_alchemy_skill_potion_requirement')]#!"
+ POD_crafting_minigame_node_alchemy_skill_intrigue_requirement: "You have to have at least 1 [prisoner|E] with [intrigue|E] above #bold [EmptyScope.ScriptValue('POD_numina_sorcery_alchemy_skill_potion_requirement')]#!"
+ POD_crafting_minigame_node_alchemy_skill_learning_requirement: "You have to have at least 1 [prisoner|E] with [learning|E] above #bold [EmptyScope.ScriptValue('POD_numina_sorcery_alchemy_skill_potion_requirement')]#!"
  POD_only_weapons: "Этот узел подходит только для оружия!"
- POD_crafting_minigame_too_low_durability: "Использование этого узла сделает максимальную прочность ниже 0!"
+ POD_crafting_minigame_too_low_durability: "Artifact does not have enough [durability|E]"
  POD_crafting_minigame_must_sacrifice: "Чтобы продолжить, вы должны выбрать жертву!"
  POD_crafting_minigame_must_target: "Чтобы продолжить, вы должны выбрать цель!"
  POD_crafting_minigame_too_many_enchantment_2: "Вы достигли предела улучшения! (2)"
  POD_crafting_minigame_too_many_enchantment_1: "Вы достигли предела улучшения! (1)"
+ POD_crafting_max_node_session: "This node cannot be used anymore in the current crafting session."
 
  CRAFTING_GUI_TABS_FORGE: "Ковка"
  CRAFTING_GUI_TABS_BREWING: "Создание отваров"
@@ -879,6 +897,8 @@
 
  CRAFTING_GUI_FORGE_TITLE: "#TOOLTIP:game_concept_crafting_forging_desc #E Ковка#!#!"
  CRAFTING_GUI_FORGE_DESC: "Создание новых [Concept('artifact', 'артефактов')|E] из сырья."
+ CRAFTING_TEMPLATE: "Artifact Template:"
+ CRAFTING_SELECT_TEMPLATE: "Select Template"
  CRAFTING_GUI_START_FORGE: "Начать ковку"
  CRAFTING_GUI_FORGE_COOLDOWN: "#I Ковка восстановится через #V 5 лет#!#!"
  CRAFTING_GUI_FORGE_COOLDOWN_CHECKBOX_TT: "Вы получите уведомление, когда ковка восстановится"
@@ -985,10 +1005,20 @@
  alchemy_stimulant_2: "После употребления: Будут получены [Concept('modifiers', 'модификаторы')|E], улучшающие 2 случайных [Concept('skill', 'навыка')|E] ([GetModifier('alchemy_stimulant_diplomacy_modifier').GetNameWithTooltip])."
  alchemy_stimulant_1: "После употребления: Будут получены [Concept('modifiers', 'модификаторы')|E], улучшающие 1 случайный [Concept('skill', 'навык')|E] ([GetModifier('alchemy_stimulant_diplomacy_modifier').GetNameWithTooltip])."
 
+ pearlshell_of_healing: "After consumption: Heal 1 [POD_superficial_damage_with_box|E] and all Mortal diseases."
+ box_of_rice: "After consumption: Add 25 [supply|E] to the army."
+ matre_medicine: "After consumption: Get [GetModifier('artifact_fertility_gain_3_modifier').GetNameWithTooltip] [modifier|E] and become pregnant if able."
+ snake_herbs: "After consumption: Get [GetModifier('snake_herbs_modifier').GetNameWithTooltip] [modifier|E]."
+ swimmers_medicine: "After consumption: Get [GetModifier('swimmers_medicine_modifier').GetNameWithTooltip] [modifier|E]."
+
+
  alchemy_immortal: "После употребления: Будет получено [Concept('trait', 'свойство')|E] «[GetTrait('immortal').GetName(GetPlayer)]»"
- alchemy_vampire: "После употребления: Будет получено [Concept('trait', 'свойство')|E] «[GetTrait('vampire').GetName(GetPlayer)]» и [Concept('modifier', 'модификатор')|E] [GetModifier('unstable_soul').GetNameWithTooltip]"
- alchemy_kinfolk: "После употребления: Будет получено [Concept('trait', 'свойство')|E] «[GetTrait('kinfolk').GetName(GetPlayer)]» и [Concept('modifier', 'модификатор')|E] [GetModifier('unstable_soul').GetNameWithTooltip]"
- alchemy_kinain: "После употребления: Будет получено [Concept('trait', 'свойство')|E] «[GetTrait('kinain').GetName(GetPlayer)]» и [Concept('modifier', 'модификатор')|E] [GetModifier('unstable_soul').GetNameWithTooltip]"
+ alchemy_vampire: "После употребления: Будет получено [Concept('trait', 'свойство')|E] «[GetTrait('vampire').GetName(GetPlayer)]»"
+ alchemy_skill_diplomacy: "After consumption: Gain 1 [diplomacy|E] [skill|E]"
+ alchemy_skill_martial: "After consumption: Gain 1 [martial|E] [skill|E]"
+ alchemy_skill_stewardship: "After consumption: Gain 1 [stewardship|E] [skill|E]"
+ alchemy_skill_intrigue: "After consumption: Gain 1 [intrigue|E] [skill|E]"
+ alchemy_skill_learning: "After consumption: Gain 1 [learning|E] [skill|E]"
 
  alchemy_health_booster_3: "После употребления: Будет получен [Concept('modifier', 'модификатор')|E] [GetModifier('alchemy_health_booster_3_modifier').GetNameWithTooltip]."
  alchemy_health_booster_2: "После употребления: Будет получен [Concept('modifier', 'модификатор')|E] [GetModifier('alchemy_health_booster_2_modifier').GetNameWithTooltip]."
@@ -999,11 +1029,28 @@
  POD_crafting_minigame_execute_node_fallback: "По крайней мере, вы ничего не сломали..."
 
  dummy_artifact_loca: "Создаваемый артефакт"
- custom_artifact_name: "[artifact.GetType] персонажа [artifact.GetOwner.GetTitledFirstNamePossessive]"
+
+ custom_lungin_artifact_name: "Lungin"
+ custom_lungin_artifact_desc: "A wooden pipe and various herbs. These herbs can be smoked to soothe the mind."
+ custom_arrows_of_the_sun_artifact_name: "Arrows of the Sun"
+ custom_arrows_of_the_sun_artifact_desc: "These are arrows containing the essence of Sun and decorated with gold. They are imbued with fragments of a Sun-spirit. The arrows immolate after striking their target, causing immense damage."
+ custom_thunder_dart_artifact_name: "Thunder Dart"
+ custom_thunder_dart_artifact_desc: "This powerful weapon is as large as any regular dart, but much more lethal. When hurled at an enemy, it strikes with the force of a thunderbolt, inflicting lightning damage on the foe and surrounding area. These darts are crafted from the bone of a monster and fletched with colorful feathers, then a Thunder or Rain-spirit is coaxed into the dart."
+ custom_edge_of_the_sun_artifact_name: "[fetish_artifact_icon]Edge of the Sun"
+ custom_edge_of_the_sun_artifact_desc: "This is a deadly weapon carried by the Mokolé for ritual duels and executions. "Dying under the gold" is a figure of speech for a lawbreakers' bad end. The machete is cast of solid gold and decorated with jewels. To create such a blade, gold must be melted at sunrise and molded into the blade, ensorcelled to have the hardness of steel, then jewels must be set into the teakwood handle, and the whole invested with a War-spirit."
+ custom_blade_of_the_kings_artifact_name: "[fetish_artifact_icon]Blade of the Kings"
+ custom_blade_of_the_kings_artifact_desc: "#bold Converts all damage to [POD_aggravated_damage|E] against characters with [prowess|E] lower than this blade's [artifact_power_with_icon|E].#!\n\nAn ancient sword wielded by the Mokolé of old. The elder Lizard Kings would sleep the Sleep of the Dragon with such a weapon by their side. The blade shapeshifts to match its wielder; when the Mokolé changes to Archid, the Blade of the Kings changes to match its wielder's new hulking form. These weapons are made by binding a shapeshifting spirit, such as Butterfly or Octopus, into the weapon as it is made. With each blow that shapes the metal or stone of the blade, the maker must call the spirit's name."
+
+
  custom_fetish_artifact_name: "[fetish_artifact_icon][artifact.GetType] персонажа [artifact.GetOwner.GetTitledFirstNamePossessive]"
+ custom_fetish_artifact_desc: "A [fetish|E] created by [artifact.MakeScope.GetVariable('crafter').GetCharacter.GetTitledFirstName] after binding a [GetTrait('spirit').GetName(GetPlayer)] within it."
+ custom_artifact_name: "[artifact.GetOwner.GetTitledFirstNamePossessive] [artifact.GetType]"
  custom_artifact_desc: "[Concept('artifact', 'Артефакт')|E], созданный персонажем [artifact.MakeScope.GetVariable('crafter').GetCharacter.GetTitledFirstName] после многих дней и ночей работы"
 
+
+
  has_forge_cooldown: "Ковка восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'forge_cooldown') )]"
+ has_chosen_forge_template: "You must choose an Artifact Template first"
  has_brew_cooldown: "Создание отваров восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'brew_cooldown') )]"
  has_enhance_cooldown: "Улучшение восстанавливается до [GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'enhance_cooldown') )]"
 
@@ -1011,6 +1058,17 @@
 
 
  POD_crafting_give_modifier_based_on_type_tooltip: "Этот модификатор меняется в зависимости от типа артефакта"
+
+ starting_node_amulet_loca: "Amulet"
+ starting_node_crown_loca: "Crown"
+ starting_node_weapon_loca: "Weapon"
+ starting_node_regalia_loca: "Regalia"
+ starting_node_armor_loca: "Armor"
+ starting_node_lungin_loca: "Lungin"
+ starting_node_arrows_of_the_sun_loca: "Arrows of the Sun"
+ starting_node_thunder_dart_loca: "Thunder Dart"
+ starting_node_edge_of_the_sun_loca: "Edge of the Sun"
+ starting_node_blade_of_the_kings_loca: "Blade of the Kings"
 
  basic_node_durability_bonus_loca: "Прочность"
  basic_node_decorations_loca: "Украшения"
@@ -1020,7 +1078,6 @@
  basic_node_longevity_loca: "Прочность"
  basic_node_long_effects_loca: "Расширитель"
 
- node_fleshcraft_loca: "Ваяние плоти"
  node_soulforge_loca: "Ковка душ"
  node_fetish_smith_loca: "#TOOLTIP:game_concept_fetish_smithing_desc #E Ковка фетиша#!#!"
  node_frost_facsimile_loca: "Морозное именование"
@@ -1076,9 +1133,42 @@
  node_alchemy_health_booster_loca: "Укрепление здоровья"
  node_alchemy_immortal_loca: "Бессмертие"
  node_alchemy_vampire_loca: "Вампиризм"
- node_alchemy_kinfolk_loca: "Трансформация родни"
- node_alchemy_kinain_loca: "Трансформация кинэйн"
+ node_alchemy_skill_diplomacy_loca: "Elixir of Diplomacy"
+ node_alchemy_skill_martial_loca: "Elixir of Martial"
+ node_alchemy_skill_stewardship_loca: "Elixir of Stewardship"
+ node_alchemy_skill_intrigue_loca: "Elixir of Intiruge"
+ node_alchemy_skill_learning_loca: "Elixir of Learning"
  node_alchemy_health_loca: "Лекарственные травы"
+ node_shards_of_granite_loca: "Shards of Granite"
+ node_suns_wisdom_loca: "Sun's Wisdom"
+ node_cleansing_sun_loca: "Cleansing Sun"
+ node_beast_rampage_loca: "Beast Rampage"
+ node_inscribed_legacy_loca: "Inscribed Legacy"
+ node_chaos_element_loca: "Chaos Element"
+ node_sun_scales_loca: "Sun Scales"
+ node_sun_spark_loca: "Sun Spark"
+ node_strengthening_chant_loca: "Strengthening Chant"
+ node_pearlshell_of_healing_loca: "Pearlshell of Healing"
+ node_box_of_rice_loca: "Box of Rice"
+ node_matre_medicine_loca: "Matre Medicine"
+ node_snake_herbs_loca: "Snake Herbs"
+ node_swimmers_medicine_loca: "Swimmer's Medicine"
+ node_sunstones_loca: "Sunstones"
+ node_bloodstones_loca: "Bloodstones"
+ node_sun_ray_loca: "Sun Ray"
+ node_turtle_blessing_loca: "Turtle Blessing"
+ turtle_blessing_effect_tt: "The next [crafting_node|E] that reduces [durability|E] will not reduce [durability|E]."
+ node_see_the_form_loca: "See the Form"
+ node_sun_flame_loca: "Sun Flame"
+ node_dragon_scale_loca: "Dragon Scale"
+ node_dream_the_form_loca: "Dream the Form"
+ node_dragon_kings_invocation_loca: "Dragon King's Invocation"
+ node_sun_breath_loca: "Sun Breath"
+ node_helios_blaze_loca: "Helios Blaze"
+ node_shape_the_form_loca: "Shape the Form"
+ node_ascending_flame_loca: "Ascending Flame"
+ node_body_arsenal_loca: "Body Arsenal"
+
 
  kinfolk_kinain_warning: "#X Это зелье вызывает мгновенную смерть при употреблении!#!"
 
@@ -1087,8 +1177,11 @@
  boost_name_brew: "Создание отваров"
  boost_name_enhance: "Улучшение"
 
+ crafting_no_durability_loss_tt: "#clickable This uses up your free durability charge#!"
 
+ unlock_forging_node: "#TOOLTIP:game_concept_crafting_node_desc #E Узел#!#! #TOOLTIP:game_concept_crafting_forging_desc #E ковки#!#!:"
+ unlock_brewing_node: "#TOOLTIP:game_concept_crafting_node_desc #E Узел#!#! #TOOLTIP:game_concept_crafting_brewing_desc #E создания отваров#!#!:"
+ unlock_enhancing_node: "#TOOLTIP:game_concept_crafting_node_desc #E Узел#!#! #TOOLTIP:game_concept_crafting_enhancing_desc #E улучшения#!#!:"
+ unlock_forging_template: "[crafting_forging_template|E]:"
 
- unlock_forging_node: "Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел#!#! #TOOLTIP:game_concept_crafting_forging_desc #E ковки#!#!:"
- unlock_brewing_node: "Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел#!#! #TOOLTIP:game_concept_crafting_brewing_desc #E создания отваров#!#!:"
- unlock_enhancing_node: "Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел#!#! #TOOLTIP:game_concept_crafting_enhancing_desc #E улучшения#!#!:"
+ POD_crafting_artifact_power_add_effect: "Add $VALUE|P0$ [artifact_power_with_icon|E]"

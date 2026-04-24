@@ -15,11 +15,11 @@
  UMBRA_WINDOW_NOT_EXPLORER: "#weak Нет нанятых исследователей#!"
  UMBRA_WINDOW_DANGER: "@alert_icon! #alert_trial Исследователь, находящийся здесь, не сможет использовать [Concept('interactions','взаимодействия')|E] на других персонажах#!"
  UMBRA_WINDOW_EVENT: "@grace_icon! #I Шанс получить случайное ежемесячное событие, если здесь находится исследователь.#!"
- UMBRA_WINDOW_TEMPEST_TRAP: "@warning_icon! #X Исследователь имеет шанс попасть в ловушку и ежеквартально получать [Concept('stress', 'стресс')|E] в этом измерении. #Weak (Если только у него нет [Concept('perk', 'достоинств')|E] «[GetPerk('stormwalk_perk').GetName(GetPlayer)]» или «[GetPerk('stormreader_perk').GetName(GetPlayer)]»)#!#!"
- UMBRA_WINDOW_OBLIVION_TRAP: "@warning_icon! #X Исследователь имеет шанс попасть в ловушку и ежеквартально получать [Concept('stress', 'стресс')|E] в этом измерении. #Weak (Если только он не служит Забвению)#!#!"
- UMBRA_WINDOW_WYRM_TRAP: "@warning_icon! #X Исследователь имеет шанс попасть в ловушку и ежеквартально получать [Concept('stress', 'стресс')|E] в этом измерении. #Weak (Если только он не служит Вирму)#!#!"
- UMBRA_WINDOW_DEMON_TRAP: "@warning_icon! #X Исследователь имеет шанс попасть в ловушку и ежеквартально получать [Concept('stress', 'стресс')|E] в этом измерении. #Weak (Если только он не служит демонам)#!#!"
- UMBRA_WINDOW_YAMA_TRAP: "@warning_icon! #X Исследователь имеет шанс попасть в ловушку и ежеквартально получать [Concept('stress', 'стресс')|E] в этом измерении. #Weak (Если только он не служит [Glossary('повелителям Яма','podgloss.yamaking')])#!#!"
+ UMBRA_WINDOW_TEMPEST_TRAP: "@warning_icon! #X Исследователи имеют шанс попасть в ловушку и ежеквартально получать [Concept('stress', 'стресс')|E] в этом измерении. #Weak (Если только у него нет [Concept('perk', 'достоинств')|E] «[GetPerk('stormwalk_perk').GetName(GetPlayer)]» или «[GetPerk('stormreader_perk').GetName(GetPlayer)]»)#!#!"
+ UMBRA_WINDOW_OBLIVION_TRAP: "@warning_icon! #X Исследователи имеют шанс попасть в ловушку и ежеквартально получать [Concept('stress', 'стресс')|E] в этом измерении. #Weak (Если только он не служит Забвению)#!#!"
+ UMBRA_WINDOW_WYRM_TRAP: "@warning_icon! #X Исследователи имеют шанс попасть в ловушку и ежеквартально получать [Concept('stress', 'стресс')|E] в этом измерении. #Weak (Если только он не служит [Glossary('Вирму', 'glossary_wyrm_tt')])#!#!"
+ UMBRA_WINDOW_DEMON_TRAP: "@warning_icon! #X Исследователи имеют шанс попасть в ловушку и ежеквартально получать [Concept('stress', 'стресс')|E] в этом измерении. #Weak (Если только он не служит демонам)#!#!"
+ UMBRA_WINDOW_YAMA_TRAP: "@warning_icon! #X Исследователи имеют шанс попасть в ловушку и ежеквартально получать [Concept('stress', 'стресс')|E] в этом измерении. #Weak (Если только он не служит [Glossary('повелителям Яма','podgloss.yamaking')])#!#!"
 
  umbra_action_tooltip: "#T [Localize(Concatenate(Scope.GetFlagKey,'_confirm'))]#![Localize('line_break')][ScriptedGui.BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('explorer', Character.MakeScope).End)]"
  umbra_action_cooldown_tooltip: "Вы уже использовали это действие в этом месяце."
@@ -32,6 +32,8 @@
  bastet_spirit_wilds_access_tooltip: "[GetTrait('bastet').GetName( GetPlayer )], не являющиеся [GetFaithByKey('swara').GetName|l] должны иметь 2 ранг в [Concept('trait_level_track', 'пути развития свойства')|E]."
  silentstrider_objective_decision_finished: "Вы приняли [Concept('decision', 'решение')|E] «$silentstrider_objective_decision$»."
  breakdown_the_abyss_objective_decision_finished: "Вы приняли [Concept('decision', 'решение')|E] «$breakdown_the_abyss_objective_decision$»."
+ mokole_ai_no_umbra: "[GetTrait('mokole').GetName(GetNullCharacter)] отказываются исследовать [Concept('umbra', 'Умбру')|E] для других из-за опасности [Concept('innocents', 'невинных')|E]."
+
  stationed_on_dreaming_tt: "Находится в [UmbraGlossaryLocalized('dreaming','Грёзах')]."
 
  known_neighboring_realm_tt: "Теперь у вас есть познания об этих соседних измерениях:"

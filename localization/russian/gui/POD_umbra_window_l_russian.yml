@@ -85,8 +85,8 @@
  umbra_discovery_memory_desc_third_perspective: "[owner.GetFirstName] [Select_CString(owner.IsFemale, 'обнаружила', 'обнаружил' )] открытие в [Concept('umbra', 'Умбре')|E]"
 
  umbra_discovery_finder: "[Select_CString( this_character.IsLocalPlayer, 'Вы', this_character.GetFirstName )]"
- umbra_discovery_region: "[UmbraGlossary( this_character.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagName )]"
- umbra_discovery.title: "Открытие [Concept('umbra', 'Умбры')|E]: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagName))]"
+ umbra_discovery_region: "[UmbraGlossary( this_character.MakeScope.GetVariable('umbra_stationed_realm').Var('name').GetFlagKey )]"
+ umbra_discovery.title: "Открытие [Concept('umbra', 'Умбры')|E]: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagKey))]"
  umbra_discovery_treasure: "Сокровище"
  umbra_discovery.treasure.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] сокровище в измерении $umbra_discovery_region$, достойном #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!"
  umbra_discovery_neighboring_realm: "Соседнее измерение"
@@ -155,6 +155,12 @@
  umbra_discovery.epiphamies_expedition.desc: "Исследуя измерение $umbra_discovery_region$, мир абстрактных понятий, обретших форму, $umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'обнаружили', Select_CString(this_character.IsFemale, 'обнаружила', 'обнаружил' ))] монументальный замок, от которого веет силой. Хотя вокруг него царит аура беспокойства, он все же может оказаться достойным #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
  umbra_discovery_spirit: "Блуждающий дух"
  umbra_discovery.spirit.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'заметили', Select_CString(this_character.IsFemale, 'заметила', 'заметил' ))] в измерении $umbra_discovery_region$ блуждающего духа, достойного #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
+ umbra_discovery_bane: "Wandering Bane"
+ umbra_discovery.bane.desc: "$umbra_discovery_finder$ has seen a wandering Bane in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery_artifact_shards: "Artifact Shards"
+ umbra_discovery.artifact_shards.desc: "$umbra_discovery_finder$ has found a cache of Artifact Shards in the $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery_mokole_dinosaur_maa: "Dreams of Beasts"
+ umbra_discovery.mokole_dinosaur_maa.desc: "$umbra_discovery_finder$ has seen glimpses of an ancient beast in $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
  umbra_discovery_grey: "Серость"
  umbra_discovery.grey.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'заметили', Select_CString(this_character.IsFemale, 'заметила', 'заметил' ))] неземной автоматон, блуждающий в измерении $umbra_discovery_region$, достойный #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
  umbra_discovery_celestial_dragons: "Небесные драконы"
@@ -235,12 +241,10 @@
  umbra_discovery.hire_artificer_unlock.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'заключили', Select_CString(this_character.IsFemale, 'заключила', 'заключил' ))] потенциальный контракт с мастеровыми в измерении $umbra_discovery_region$. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
  umbra_discovery_hire_masquer_unlock: "Предложение масочников"
  umbra_discovery.hire_masquer_unlock.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'заключили', Select_CString(this_character.IsFemale, 'заключила', 'заключил' ))] потенциальный контракт с масочниками в измерении $umbra_discovery_region$. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
- umbra_discovery_bane_possesion_chance: "Дух-бэйн"
- umbra_discovery.bane_possesion_chance.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] бэйна в измерении $umbra_discovery_region$. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
- umbra_discovery_wyld_possesion_chance: "Дух Вильда"
- umbra_discovery.wyld_possesion_chance.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] духа Вильда в измерении $umbra_discovery_region$. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
- umbra_discovery_weaver_possesion_chance: "Дух Ткачихи"
- umbra_discovery.weaver_possesion_chance.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] духа Ткачихи в измерении $umbra_discovery_region$. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
+ umbra_discovery_wyld_possesion_chance: "Дух [Glossary('Вильда', 'glossary_wyld_tt')]"
+ umbra_discovery.wyld_possesion_chance.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] духа [Glossary('Вильда', 'glossary_wyld_tt')] в измерении $umbra_discovery_region$. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
+ umbra_discovery_weaver_possesion_chance: "Дух [Glossary('Ткачихи', 'glossary_weaver_tt')]"
+ umbra_discovery.weaver_possesion_chance.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] духа [Glossary('Ткачихи', 'glossary_weaver_tt')] в измерении $umbra_discovery_region$. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
  umbra_discovery_gaia_possesion_chance: "Одержимость Геи"
  umbra_discovery.gaia_possesion_chance.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] мост к самой Гее в измерении $umbra_discovery_region$. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
  umbra_discovery_investments_of_soul: "Вложение душ"
@@ -279,8 +283,8 @@
  umbra_discovery.learn_displace.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] способ изучить Перемещение в измерении $umbra_discovery_region$. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
  umbra_discovery_doomslayer: "Становление палачом Рока"
  umbra_discovery.doomslayer.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] способ стать палачом Рока в измерении $umbra_discovery_region$. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
- umbra_discovery_dinosaurs: "Приют динозавров"
- umbra_discovery.dinosaurs.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] могучих динозавров в измерении $umbra_discovery_region$. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
+ umbra_discovery_paleontologist: "Изучение окаменелостей"
+ umbra_discovery.paleontologist.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] множество окаменелостей в измерении $umbra_discovery_region$. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
  umbra_discovery_dnt_giants: "Найм великанов"
  umbra_discovery_dnt_giants.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] способ нанять великанов в измерении $umbra_discovery_region$. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
  umbra_discovery_plasmics: "Связанные плазмоиды"
@@ -318,9 +322,9 @@
  umbra_discovery_usury: "Ростовщичество"
  umbra_discovery.usury.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] в измерении $umbra_discovery_region$ наставника арканоса «[GetTrait('arcanos_usury').GetName( GetPlayer )]», достойного #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
 
- umbra_crisis.title: "Кризис [Concept('umbra', 'Умбры')|E]: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagName))]"
+ umbra_crisis.title: "Кризис [Concept('umbra', 'Умбры')|E]: [Localize(Concatenate('umbra_discovery_', this_realm.MakeScope.GetVariable('umbra_discovery_type').GetFlagKey))]"
  umbra_discovery_wyrmish_summoning: "Призыв Вирма"
- umbra_discovery.wyrmish_summoning.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'обнаружили', Select_CString(this_character.IsFemale, 'обнаружила', 'обнаружил' ))] в измерении $umbra_discovery_region$ след какого-то оборотня Вирма, пытающегося призвать разрушительного духа Вирма в вашу столицу. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
+ umbra_discovery.wyrmish_summoning.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'обнаружили', Select_CString(this_character.IsFemale, 'обнаружила', 'обнаружил' ))] в измерении $umbra_discovery_region$ след какого-то оборотня [Glossary('Вирма', 'glossary_wyrm_tt')], пытающегося призвать разрушительного духа Вирма в вашу столицу. Это может быть достойно #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
  umbra_discovery_trapped_in_tempest: "В ловушке Бури"
  umbra_discovery.trapped_in_tempest.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'попали', Select_CString(this_character.IsFemale, 'попала', 'попал' ))] в ловушку в измерении $umbra_discovery_region$, для спасения требуется #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!, иначе [Select_CString( this_character.IsLocalPlayer, 'вы останетесь', Select_CString(this_character.IsFemale, 'она останется', 'он останется' ))] в ловушке навсегда!"
  umbra_discovery_trapped_in_abyss: "В ловушке Бездны"
@@ -329,8 +333,19 @@
  umbra_discovery.trapped_in_yomi.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'попали', Select_CString(this_character.IsFemale, 'попала', 'попал' ))] в ловушку в измерении $umbra_discovery_region$, для спасения требуется #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!, иначе [Select_CString( this_character.IsLocalPlayer, 'вы останетесь', Select_CString(this_character.IsFemale, 'она останется', 'он останется' ))] в ловушке навсегда!"
  umbra_discovery_trapped_in_labyrinth: "В ловушке Лабиринта"
  umbra_discovery.trapped_in_labyrinth.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'попали', Select_CString(this_character.IsFemale, 'попала', 'попал' ))] в ловушку в измерении $umbra_discovery_region$, для спасения требуется #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!, иначе [Select_CString( this_character.IsLocalPlayer, 'вы останетесь', Select_CString(this_character.IsFemale, 'она останется', 'он останется' ))] в ловушке навсегда!"
- umbra_discovery_trapped_in_malfeas: "В ловушке Малфеаса"
+ umbra_discovery_trapped_in_malfeas: "В ловушке [UmbraGlossaryLocalized('malfeas','Малфеаса')]"
  umbra_discovery.trapped_in_malfeas.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'попали', Select_CString(this_character.IsFemale, 'попала', 'попал' ))] в ловушку в измерении $umbra_discovery_region$, для спасения требуется #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!, иначе [Select_CString( this_character.IsLocalPlayer, 'вы останетесь', Select_CString(this_character.IsFemale, 'она останется', 'он останется' ))] в ловушке навсегда!"
+ umbra_discovery_bane_maa: "Bane Soldiers"
+ umbra_discovery.bane_maa.desc: "$umbra_discovery_finder$ has found a gathering of Banes in $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery_elemental_bane: "Elemental Bane"
+ umbra_discovery.elemental_bane.desc: "$umbra_discovery_finder$ has found an Elemental Bane in $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery_wyrm_fetish: "Wyrm Fetish"
+ umbra_discovery.wyrm_fetish.desc: "$umbra_discovery_finder$ has found a Wyrm Fetish in $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery_urgetaints_xp: "Maeljin Favor"
+ umbra_discovery.urgetaints_xp.desc: "$umbra_discovery_finder$ has found a chance to gain favor with the Maeljin in $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+ umbra_discovery_temple_obscura: "The Temple Obscura"
+ umbra_discovery.temple_obscura.desc: "$umbra_discovery_finder$ has found the path to the next room of the Temple Obscura in $umbra_discovery_region$ worthy for an [umbra_expedition|E]"
+
 
  umbra_retreat_tt: "Успешное отступление"
 
@@ -352,12 +367,10 @@
 
  umbra_gaia_possesion_confirm: "Воззвать к прикосновению Геи"
  umbra_gaia_possesion_tooltip: "Воззвать к Гее, чтобы она превратила вас в продолжение своей воли."
- umbra_weaver_possesion_confirm: "Призвать духа Ткачихи"
- umbra_weaver_possesion_tooltip: "Призвать духа Ткачихи, чтобы он вселился в вас."
- umbra_wyld_possesion_confirm: "Призвать духа Вильда"
- umbra_wyld_possesion_tooltip: "Призвать духа Вильда, чтобы он вселился в вас."
- umbra_bane_possesion_confirm: "Призвать бэйна"
- umbra_bane_possesion_tooltip: "Призвать духа-бэйна, чтобы он вселился в вас."
+ umbra_weaver_possesion_confirm: "Призвать духа [Glossary('Ткачихи', 'glossary_weaver_tt')]"
+ umbra_weaver_possesion_tooltip: "Призвать духа [Glossary('Ткачихи', 'glossary_weaver_tt')], чтобы он вселился в вас."
+ umbra_wyld_possesion_confirm: "Призвать духа [Glossary('Вильда', 'glossary_wyld_tt')]"
+ umbra_wyld_possesion_tooltip: "Призвать духа [Glossary('Вильда', 'glossary_wyld_tt')], чтобы он вселился в вас."
  umbra_eternal_grace_of_eshtarras_confirm: "Попросить фетиш Инкарны"
  umbra_shining_klaive_of_sokhta_confirm: "Попросить фетиш Инкарны"
  umbra_radiant_blade_of_katanka_sonnak_confirm: "Попросить фетиш Инкарны"
@@ -383,7 +396,7 @@
  umbra_gain_commander_trait_sucess: "Вы сможете выбрать новое свойство командира."
  umbra_collect_artifact_pieces_start_confirm: "Начать приключение в Вихрях"
  umbra_collect_artifact_pieces_end_confirm: "Завершить приключение в Вихрях"
- umbra_collect_artifact_pieces_tooltip: "Вихри извергаются из [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринта')] и могут воздействовать на любое место, которого коснётся [UmbraGlossaryLocalized('pod_realm_tempest','Буря')] - от [UmbraGlossaryLocalized('shadowlands','Земель теней')] до [Glossary('Тёмного королевства','game_concept_dark_kingdom_desc')]. Вихри состоят из частиц [UmbraGlossaryLocalized('shadowlands','Загробного мира')] - реликвий, спектров и самой материи Бури, варьирующейся от плазменных дождей до штормов из пламени души. Буря - это кладезь памяти, и удачливый искатель иногда может найти полезный предмет, спрятанный среди мусора."
+ umbra_collect_artifact_pieces_tooltip: "Вихри извергаются из [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринта')] и могут воздействовать на любое место, которого коснётся [UmbraGlossaryLocalized('tempest','Буря')] - от [UmbraGlossaryLocalized('shadowlands','Земель теней')] до [Glossary('Тёмного королевства','game_concept_dark_kingdom_desc')]. Вихри состоят из частиц [UmbraGlossaryLocalized('shadowlands','Загробного мира')] - реликвий, спектров и самой материи Бури, варьирующейся от плазменных дождей до штормов из пламени души. Буря - это кладезь памяти, и удачливый искатель иногда может найти полезный предмет, спрятанный среди мусора."
  umbra_diplomacy_train_start_confirm: "Начать обучение дипломатии"
  umbra_martial_train_start_confirm: "Начать обучение военному делу"
  umbra_stewardship_train_start_confirm: "Начать обучение управлению"
@@ -402,6 +415,7 @@
  umbra_hire_artificer_confirm: "Нанять мастера"
 
  umbra_bow_to_wyrm_confirm: "Поклониться Великому змею!"
+ umbra_bow_to_wyrm_req: "You are not currently trapped in the Labyrinth or Malfeas"
  umbra_bow_to_wyrm_tooltip: "Вы не видите шансов на спасение, возможно, вам стоит прислушаться к манящему голосу..."
  umbra_bow_to_demon_confirm: "Принести жертву демонам"
  umbra_bow_to_demon_tooltip: "Вы не видите шансов на спасение, возможно, вам стоит принести пленника в жертву..."
@@ -427,7 +441,7 @@
  umbra_whispering_ankh_of_meros_choose_tt: "Вы получите [GetPODArtifact('whispering_ankh_of_meros_link').Artifact.GetName]"
 
  umbra_expedition_tooltip: "Начать #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!"
- umbra_expedition_confirm: "[Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagName))]: путешествие"
+ umbra_expedition_confirm: "[Localize(Concatenate('umbra_realm_', Scope.Var('name').GetFlagKey))]: путешествие"
 
  search_invention_unlocked: "Открывает действие по поиску изобретений"
  search_innovation_unlocked: "Открывает действие по поиску инноваций"
@@ -435,7 +449,6 @@
  caliburn_unlocked: "Открывает действие $umbra_caliburn_confirm$"
  hire_artificer_unlocked: "Открывает действие $umbra_hire_artificer_confirm$"
  hire_masquer_unlocked: "Придворный мастер, нанятый в результате этого действия, также будет иметь свойство «[GetTrait('arcanos_moliate').GetName( GetPlayer )]»"
- bane_possesion_chance_gain: "Открывает действие $umbra_bane_possesion_confirm$ на #V 5#! лет"
  wyld_possesion_chance_gain: "Открывает действие $umbra_wyld_possesion_confirm$ на #V 5#! лет"
  weaver_possesion_chance_gain: "Открывает действие $umbra_weaver_possesion_confirm$ на #V 5#! лет"
  gaia_possesion_chance_gain: "Открывает действие $umbra_gaia_possesion_confirm$ на #V 5#! лет"
@@ -445,22 +458,22 @@
 
  # Umbra Acess
  astral_reaches_access: "#TOOLTIP:astral_reaches_access_desc #L Доступ в Астральные рубежи#!#!"
- astral_reaches_access_desc: "Персонажи могут путешествовать в [UmbraGlossaryLocalized('astral_reaches','Астральные рубежи')], если у них есть:\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('spirit').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('psychic_projection_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_phlegmatic_lifestyle_desc #E Флегматический резонанс#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_soul_arts_lifestyle_desc #E Силы Души#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_wu_tan_lifestyle_desc #E У Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('separate_ba_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_hekau_necromancy_lifestyle_desc #E Некромантия хекау#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_tan_lifestyle_desc #E Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_investiture_lifestyle_desc #E Инвеститура#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_arcana_lifestyle_desc #E Путь арканы#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_lore_lifestyle_desc #E Знания#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('astral_projection_1_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_psi_lifestyle_desc #E Ментальный феномен#!#!)#!"
+ astral_reaches_access_desc: "Персонажи могут путешествовать в [UmbraGlossaryLocalized('astral_reaches','Астральные рубежи')], если у них есть:\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('spirit').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('psychic_projection_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_phlegmatic_lifestyle_desc #E Флегматический резонанс#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_soul_arts_lifestyle_desc #E Силы Души#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_wu_tan_lifestyle_desc #E У Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('separate_ba_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_hekau_necromancy_lifestyle_desc #E Некромантия хекау#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_tan_lifestyle_desc #E Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('investiture_journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_investiture_lifestyle_desc #E Инвеститура#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_arcana_lifestyle_desc #E Путь арканы#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_lore_lifestyle_desc #E Знания#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('astral_projection_1_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_psi_lifestyle_desc #E Ментальный феномен#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('mokole_walking_between_worlds_perk').GetName(GetNullCharacter)]» #Weak ([commongifts_lifestyle|E])#!"
 
  spirit_wilds_access: "#TOOLTIP:spirit_wilds_access_desc #L Доступ в Духовные дебри#!#!"
- spirit_wilds_access_desc: "Персонажи могут путешествовать в [UmbraGlossaryLocalized('spirit_wilds','Духовные дебри')], если у них есть:\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('werewolf').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('bastet').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('spirit').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('the_spirit_beast_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_animal_lifestyle_desc #E Животный резонанс#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('soul_arts_running_with_the_wolves_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_soul_arts_lifestyle_desc #E Силы Души#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_wu_tan_lifestyle_desc #E У Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('separate_ba_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_hekau_necromancy_lifestyle_desc #E Некромантия хекау#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_tan_lifestyle_desc #E Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_investiture_lifestyle_desc #E Инвеститура#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_arcana_lifestyle_desc #E Путь арканы#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_lore_lifestyle_desc #E Знания#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('numina_ephemera_5_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_sorcery_lifestyle_desc #E Чародейство#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('fomori_step_sideways_perk').GetName( GetPlayer )]» #Weak (#TOOLTIP:game_concept_possessedpower_lifestyle_desc #E Одержимость#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('kami_step_sideways_perk').GetName( GetPlayer )]» #Weak (#TOOLTIP:game_concept_possessedpower_lifestyle_desc #E Одержимость#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('astral_projection_2_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_psi_lifestyle_desc #E Ментальный феномен#!#!)#!"
+ spirit_wilds_access_desc: "Персонажи могут путешествовать в [UmbraGlossaryLocalized('spirit_wilds','Духовные дебри')], если у них есть:\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('werewolf').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('bastet').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('spirit').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('the_spirit_beast_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_animal_lifestyle_desc #E Животный резонанс#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('soul_arts_running_with_the_wolves_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_soul_arts_lifestyle_desc #E Силы Души#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_wu_tan_lifestyle_desc #E У Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('separate_ba_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_hekau_necromancy_lifestyle_desc #E Некромантия хекау#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_tan_lifestyle_desc #E Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('investiture_journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_investiture_lifestyle_desc #E Инвеститура#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_arcana_lifestyle_desc #E Путь арканы#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_lore_lifestyle_desc #E Знания#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('numina_ephemera_5_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_sorcery_lifestyle_desc #E Чародейство#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('fomori_step_sideways_perk').GetName( GetPlayer )]» #Weak (#TOOLTIP:game_concept_possessedpower_lifestyle_desc #E Одержимость#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('kami_step_sideways_perk').GetName( GetPlayer )]» #Weak (#TOOLTIP:game_concept_possessedpower_lifestyle_desc #E Одержимость#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('astral_projection_2_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_psi_lifestyle_desc #E Ментальный феномен#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('mokole_walking_between_worlds_perk').GetName(GetNullCharacter)]» #Weak ([commongifts_lifestyle|E])#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('part_the_wall').GetName( GetNullCharacter )]» #Weak ([hengeyokaigifts_lifestyle|E])#!"
 
  underworld_access: "#TOOLTIP:underworld_access_desc #L Доступ в Загробный мир#!#!"
- underworld_access_desc: "Персонажи могут путешествовать в [UmbraGlossaryLocalized('shadowlands','Загробный мир')], если у них есть:\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('wraith').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('ns_ex_nihilo_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_melancholy_lifestyle_desc #E Меланхолический резонанс#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('soul_arts_ghost_mask_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_soul_arts_lifestyle_desc #E Силы Души#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('walk_with_hades_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_tribalgifts_lifestyle_desc #E Племенные дары#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_wu_tan_lifestyle_desc #E У Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('separate_ka_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_hekau_necromancy_lifestyle_desc #E Некромантия хекау#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('lesser_spirit_projection_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_tan_lifestyle_desc #E Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_arcana_lifestyle_desc #E Путь арканы#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_lore_lifestyle_desc #E Знания#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('astral_projection_3_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_psi_lifestyle_desc #E Ментальный феномен#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('spectral_cloak_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_blood_magic_lifestyle_desc #E Магия крови#!#!)#!"
+ underworld_access_desc: "Персонажи могут путешествовать в [UmbraGlossaryLocalized('shadowlands','Загробный мир')], если у них есть:\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('wraith').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('ns_ex_nihilo_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_melancholy_lifestyle_desc #E Меланхолический резонанс#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('soul_arts_ghost_mask_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_soul_arts_lifestyle_desc #E Силы Души#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('walk_with_hades_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_tribalgifts_lifestyle_desc #E Племенные дары#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_wu_tan_lifestyle_desc #E У Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('separate_ka_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_hekau_necromancy_lifestyle_desc #E Некромантия хекау#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('lesser_spirit_projection_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_tan_lifestyle_desc #E Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('investiture_journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )]» #Weak ([investiture_lifestyle|E])#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_arcana_lifestyle_desc #E Путь арканы#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_lore_lifestyle_desc #E Знания#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('astral_projection_3_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_psi_lifestyle_desc #E Ментальный феномен#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('shroud_of_oblivion_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_blood_magic_lifestyle_desc #E Магия крови#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('walk_the_road_of_shadows_perk').GetName( GetNullCharacter )]» #Weak ([blood_magic_lifestyle|E])#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('walking_the_bone_road_perk').GetName( GetNullCharacter )]» #Weak ([hengeyokaigifts_lifestyle|E])#!"
 
  dreaming_access: "#TOOLTIP:dreaming_access_desc #L Доступ в Грёзы#!#!"
- dreaming_access_desc: "Персонажи могут путешествовать в [UmbraGlossaryLocalized('dreaming','Грёзы')], если у них есть:\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('fae').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('visit_faerieland_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_melancholy_lifestyle_desc #E Меланхолический резонанс#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_soul_arts_lifestyle_desc #E Силы Души#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_wu_tan_lifestyle_desc #E У Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('separate_ba_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_hekau_necromancy_lifestyle_desc #E Некромантия хекау#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_tan_lifestyle_desc #E Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_arcana_lifestyle_desc #E Путь арканы#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_lore_lifestyle_desc #E Знания#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('numina_oneiromancy_5_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_sorcery_lifestyle_desc #E Чародейство#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('astral_projection_2_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_psi_lifestyle_desc #E Ментальный феномен#!#!)#!\n$BULLET_WITH_TAB$#L [GetReligionByKey('stargazer_religion').GetName]ая#! [Concept('religion', 'религия')|E]"
+ dreaming_access_desc: "Персонажи могут путешествовать в [UmbraGlossaryLocalized('dreaming','Грёзы')], если у них есть:\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('fae').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('visit_faerieland_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_melancholy_lifestyle_desc #E Меланхолический резонанс#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_soul_arts_lifestyle_desc #E Силы Души#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_wu_tan_lifestyle_desc #E У Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('separate_ba_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_hekau_necromancy_lifestyle_desc #E Некромантия хекау#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_tan_lifestyle_desc #E Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('investiture_journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )]» #Weak ([investiture_lifestyle|E])#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_arcana_lifestyle_desc #E Путь арканы#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_lore_lifestyle_desc #E Знания#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('numina_oneiromancy_5_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_sorcery_lifestyle_desc #E Чародейство#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('astral_projection_2_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_psi_lifestyle_desc #E Ментальный феномен#!#!)#!\n$BULLET_WITH_TAB$#L [GetReligionByKey('stargazer_religion').GetName]ая#! [Concept('religion', 'религия')|E]"
 
  skinlands_access: "#TOOLTIP:skinlands_access_desc #L Доступ в Земли Плоти#!#!"
  skinlands_access_desc: "Персонажи могут путешествовать в [Glossary('земли Плоти','game_concept_skinlands_desc')], если у них есть:\n$BULLET_WITH_TAB$#bold Нет#! [Concept('trait', 'свойства')|E] «[GetTrait('ferryman').GetName(GetNullCharacter)]»\n$BULLET_WITH_TAB$#bold Нет#! [Concept('trait', 'свойства')|E] «[GetTrait('wraith').GetName( GetNullCharacter )]» или «[GetTrait('spirit').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('risen').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('materialize_perk').GetName( GetNullCharacter )]»"
 
  deep_umbra_access: "#TOOLTIP:deep_umbra_access_desc #L Доступ в Глубокую Умбру#!#!"
- deep_umbra_access_desc: "Персонажи могут путешествовать в [UmbraGlossaryLocalized('deep_umbra','Глубокую Умбру')], если у них есть:\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('spirit').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('mage').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('werewolf').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('psychic_projection_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_phlegmatic_lifestyle_desc #E Флегматический резонанс#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_soul_arts_lifestyle_desc #E Силы Души#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_wu_tan_lifestyle_desc #E У Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('separate_ba_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_hekau_necromancy_lifestyle_desc #E Некромантия хекау#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_tan_lifestyle_desc #E Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_investiture_lifestyle_desc #E Инвеститура#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_arcana_lifestyle_desc #E Путь арканы#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_lore_lifestyle_desc #E Знания#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('astral_projection_1_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_psi_lifestyle_desc #E Ментальный феномен#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('numina_ephemera_5_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_sorcery_lifestyle_desc #E Чародейство#!#!)#!"
+ deep_umbra_access_desc: "Персонажи могут путешествовать в [UmbraGlossaryLocalized('deep_umbra','Глубокую Умбру')], если у них есть:\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('spirit').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('mage').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[trait|E] «[GetTrait('werewolf').GetName( GetNullCharacter )]»\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('psychic_projection_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_phlegmatic_lifestyle_desc #E Флегматический резонанс#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('soul_arts_mantle_of_living_prayer_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_soul_arts_lifestyle_desc #E Силы Души#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('unlock_the_jade_portal_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_wu_tan_lifestyle_desc #E У Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('separate_ba_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_hekau_necromancy_lifestyle_desc #E Некромантия хекау#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('see_the_lands_of_the_spirit_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_tan_lifestyle_desc #E Тан#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('investiture_journey_to_the_spirit_realm_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_investiture_lifestyle_desc #E Инвеститура#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('arcana_step_between_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_arcana_lifestyle_desc #E Путь арканы#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('lore_step_beyond_the_veil_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_lore_lifestyle_desc #E Знания#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('astral_projection_1_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_psi_lifestyle_desc #E Ментальный феномен#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('numina_ephemera_5_perk').GetName( GetNullCharacter )]» #Weak (#TOOLTIP:game_concept_sorcery_lifestyle_desc #E Чародейство#!#!)#!\n$BULLET_WITH_TAB$[perk|E] «[GetPerk('mokole_walking_between_worlds_perk').GetName(GetNullCharacter)]» #Weak ([commongifts_lifestyle|E])#!\n[core_tenet|E] «[GetDoctrine('tenet_hypnotic_serpent').GetBaseName]»"
 
  I_HAVE_ASTRAL_REACHES_ACCESS: "У вас есть $astral_reaches_access|l$"
  THEY_HAS_ASTRAL_REACHES_ACCESS: "[CHARACTER.GetShortUIName] имеет $astral_reaches_access|l$"
@@ -550,7 +563,7 @@
 
  is_in_umbra_tooltip: "Вы находитесь в [Concept('umbra', 'Умбре')|E]."
  is_in_dreaming_tooltip: "Вы находитесь в [UmbraGlossaryLocalized('dreaming','Грёзах')]."
- umbra_realm_known_tooltip: "Находка в [Concept('umbra', 'Умбре')|E]: [UmbraGlossary(Scope.GetFlagName)]"
+ umbra_realm_known_tooltip: "Находка в [Concept('umbra', 'Умбре')|E]: [UmbraGlossary(Scope.GetFlagKey)]"
 
  # Umbra Place
  umbra_place_glen_confirm: "Отдохнуть в Лощине"
@@ -578,13 +591,13 @@
  broken_mirror_valid_tooltip: "Ваша локация ([GetPlayer.GetCurrentLocation.GetName]) #bold не#! имеет постройки [GetBuilding('wyrm_taint_01').GetName] или [Concept('faith', 'конфессии')|E], которая принимает инфернализм."
  labyrinth_progress_effect_tooltip: "Вы получаете #V 100#! прогресса в исследовании [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринта')] (При расположении)."
 
- glen_desc: "Лощина - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], насыщенная энергиями Вильда. Лощины обычно связаны с участками нетронутой дикой природы в материальном мире (что делает их все более редкими и недоступными)."
+ glen_desc: "Лощина - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], насыщенная энергиями [Glossary('Вильда', 'glossary_wyld_tt')]. Лощины обычно связаны с участками нетронутой дикой природы в материальном мире (что делает их все более редкими и недоступными)."
  hellhole_desc: "Адская яма - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], насыщенная энергиями Вирма, обычно из-за чего-то особенно разрушительного или токсичного, существующего на материальной стороне Барьера. Адские ямы глубоко разрушительны для всего, что их окружает, и являются питательной средой для могущественных бэйнов."
  veinous_stair_desc: "Венозная лестница - это проход из Стигии прямо в [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринт')]. Лестница - самое стабильное место в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], она сложена из черного камня неизвестного типа."
  onyx_tower_desc: "Ониксовая башня - жилище Харона, вечного императора Стигии. Самое высокое здание в Стигии, оно олицетворяет власть Харона и его способность присматривать за [UmbraGlossaryLocalized('dark_kingdom_of_iron','Тёмным королевством Железа')]."
  periphery_desc: "Периферия, иногда называемая также «Мягкой Умброй», - это место - или состояние ума, как отмечают многие фера, - между [UmbraGlossaryLocalized('penumbra','Пенумброй')] и материальным миром."
  broken_mirror_desc: "Разбитые зеркала - это места, где границы между материальным миром и [UmbraGlossary('yomi_wan')] были ослаблены огромным количеством смертных страданий, осквернённой Ци и духами запустения."
- blight_desc: "Погибель - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], поврежденная в результате борьбы между Ткачихой и Вирмом. Эти городские районы кишат бэйнами и затянуты паутиной Ткачихи; в некотором смысле они представляют собой все негативные стороны города, обобщенные и спрессованные в небольшой район."
+ blight_desc: "Погибель - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], поврежденная в результате борьбы между [Glossary('Ткачихой', 'glossary_weaver_tt')] и [Glossary('Вирмом', 'glossary_wyrm_tt')]. Эти городские районы кишат бэйнами и затянуты паутиной Ткачихи; в некотором смысле они представляют собой все негативные стороны города, обобщенные и спрессованные в небольшой район."
  broken_lands_desc: "Разрушенная земля - это что-то из небылиц. Вы слышите рассказы о том, как люди находят развилку тропы там, где ее раньше не было, или пещеру в скале, которая еще два дня назад была твердой. Лошади не хотят идти по этому пути и начинают нервничать, чем ближе к нему. Иногда тропа ведет в странный уголок дикой природы, где животные ведут себя не совсем правильно: шакалы охотятся на койотов, пауки плетут паутину из серебра, стервятники выгрызают кости из трупов, не повреждая плоть. Солнце может не всходить несколько дней, а луна - светить зеленым или красным."
  vista_desc: "Вереница - это области внутри [Concept('umbra', 'Умбры')|E] которые открывают своего рода представление, отражающее одну из четырех идей: Смерть, Застой, Хаос или Происхождение.\n\nС вистами нельзя взаимодействовать, они просто показывают сущности, сталкивающиеся с ними, видение некоего альтернативного времени или места, продиктованного одной из тем. Изображенные сцены показывают мир, в котором произошло нечто грандиозное, например, создание вселенной или застывший уровень порядка. Умбральные сцены разворачиваются по всему полю зрения, как будто все происходящее находится прямо перед вами. Они больше похожи на события, чем на театры, и воздействуют на все органы чувств путешественника."
 
@@ -885,7 +898,7 @@
  shadowlands_effect_desc: "Разблокирует взаимодействие, позволяющее отправить связанного #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! в Загробный мир, чтобы он больше не вызывал стресс для поддержания."
 
  umbra_realm_river_of_death: "Река смерти"
- umbra_realm_river_of_death_desc: "Река смерти - водный путь в [UmbraGlossaryLocalized('pod_realm_tempest','Буре')], который служит основным путем из Стигии в [UmbraGlossaryLocalized('shadowlands','Загробные миры')] и другие [Glossary('Тёмные королевства','game_concept_dark_kingdom_desc')]."
+ umbra_realm_river_of_death_desc: "Река смерти - водный путь в [UmbraGlossaryLocalized('tempest','Буре')], который служит основным путем из Стигии в [UmbraGlossaryLocalized('shadowlands','Загробные миры')] и другие [Glossary('Тёмные королевства','game_concept_dark_kingdom_desc')]."
  river_of_death_effect_desc: ""
 
  umbra_realm_sunless_sea: "Сумрачное море"
@@ -905,15 +918,15 @@
  sea_of_souls_effect_desc: ""
 
  umbra_realm_isle_of_sorrows: "Остров скорби"
- umbra_realm_isle_of_sorrows_desc: "Остров скорби - это скалистый остров, расположенный в дельте [UmbraGlossaryLocalized('river_of_death','Реки смерти')], в глубине [UmbraGlossaryLocalized('pod_realm_tempest','Бури')]."
+ umbra_realm_isle_of_sorrows_desc: "Остров скорби - это скалистый остров, расположенный в дельте [UmbraGlossaryLocalized('river_of_death','Реки смерти')], в глубине [UmbraGlossaryLocalized('tempest','Бури')]."
  isle_of_sorrows_effect_desc: ""
 
  umbra_realm_dark_kingdom_of_iron: "Тёмное королевство Железа"
- umbra_realm_dark_kingdom_of_iron_desc: "Стигия - столица западных мертвецов, непостижимо огромный город, расположенный на [UmbraGlossaryLocalized('isle_of_sorrows','Острове скорби')] в глубине [UmbraGlossaryLocalized('pod_realm_tempest','Бури')]. Здесь расположены основные штаб-квартиры различных организаций западных призраков."
+ umbra_realm_dark_kingdom_of_iron_desc: "Стигия - столица западных мертвецов, непостижимо огромный город, расположенный на [UmbraGlossaryLocalized('isle_of_sorrows','Острове скорби')] в глубине [UmbraGlossaryLocalized('tempest','Бури')]. Здесь расположены основные штаб-квартиры различных организаций западных призраков."
  dark_kingdom_of_iron_effect_desc: "Разблокирует взаимодействие, позволяющее отправить связанного #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! в это [Glossary('Тёмное королевство','game_concept_dark_kingdom_desc')], чтобы у него был шанс выучить новые #TOOLTIP:game_concept_arcanoi_lifestyle_desc #E арканои#!#!."
 
  umbra_realm_dark_kingdom_of_clay: "Тёмное королевство Глины"
- umbra_realm_dark_kingdom_of_clay_desc: "Карта, известная чужакам как [Glossary('Тёмное королевство','game_concept_dark_kingdom_desc')] Глины, - это мир в [UmbraGlossaryLocalized('pod_realm_tempest','Буре')], который принадлежит аборигенам Австралии."
+ umbra_realm_dark_kingdom_of_clay_desc: "Карта, известная чужакам как [Glossary('Тёмное королевство','game_concept_dark_kingdom_desc')] Глины, - это мир в [UmbraGlossaryLocalized('tempest','Буре')], который принадлежит аборигенам Австралии."
  dark_kingdom_of_clay_effect_desc: "Разблокирует взаимодействие, позволяющее отправить связанного #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! в это [Glossary('Тёмное королевство','game_concept_dark_kingdom_desc')], чтобы у него был шанс выучить новые #TOOLTIP:game_concept_arcanoi_lifestyle_desc #E арканои#!#!."
 
  umbra_realm_dark_kingdom_of_ivory: "Тёмное королевство Слоновой кости"
@@ -983,11 +996,11 @@
  yomi_wan_effect_desc: "Разблокирует взаимодействие, позволяющее отправить связанного #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! в [UmbraGlossary('yomi_wan')], откуда он вернётся как [GetTrait('kueijin').GetName( GetPlayer )|l]."
 
  umbra_realm_sea_of_shadow: "Море теней"
- umbra_realm_sea_of_shadow_desc: "Море теней - термин, используемый призраками для описания «нижнего» слоя [UmbraGlossaryLocalized('pod_realm_tempest','Бури')], который течёт вокруг и в [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринт')] и [UmbraGlossaryLocalized('oblivion','Забвение')]."
+ umbra_realm_sea_of_shadow_desc: "Море теней - термин, используемый призраками для описания «нижнего» слоя [UmbraGlossaryLocalized('tempest','Бури')], который течёт вокруг и в [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринт')] и [UmbraGlossaryLocalized('oblivion','Забвение')]."
  sea_of_shadow_effect_desc: "Вы можете найти случайного вистимму во время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!.\nВо время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#! можно найти #TOOLTIP:game_concept_POD_plasmic_maa_desc #E плазмоидов#!#! и нанять их как [Concept('men_at_arms', 'профессионалов')|E]."
 
- umbra_realm_pod_realm_tempest: "Буря"
- umbra_realm_pod_realm_tempest_desc: "Буря - это вечно бурлящий водоворот энергии, воспоминаний и #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L спектров#!#!, вырывающийся из [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринта')] и непрерывно обрушивающий плазму и материалы как на [UmbraGlossaryLocalized('shadowlands','Загробные миры')], так и на [Glossary('Тёмные королевства','game_concept_dark_kingdom_desc')]."
+ umbra_realm_tempest: "Буря"
+ umbra_realm_tempest_desc: "Буря - это вечно бурлящий водоворот энергии, воспоминаний и #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L спектров#!#!, вырывающийся из [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринта')] и непрерывно обрушивающий плазму и материалы как на [UmbraGlossaryLocalized('shadowlands','Загробные миры')], так и на [Glossary('Тёмные королевства','game_concept_dark_kingdom_desc')]."
  tempest_effect_desc: "Вы можете найти случайного вистимму во время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!.\nВо время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#! можно найти #TOOLTIP:game_concept_POD_plasmic_maa_desc #E плазмоидов#!#! и нанять их как [Concept('men_at_arms', 'профессионалов')|E]."
 
  umbra_realm_stormwall: "Штормовая стена"
@@ -1021,7 +1034,7 @@
  abyss_effect_desc: ""
 
  umbra_realm_dis: "Дис"
- umbra_realm_dis_desc: "Вся небольшая организация Паромщиков сосредоточена вокруг Диса, Саргассова моря крепостей, пещер и кораблей в [UmbraGlossaryLocalized('pod_realm_tempest','Буре')]. Здесь находятся их главные места сбора, штаб-квартиры архивного и производственного отделов, а также небольшой руководящий комитет."
+ umbra_realm_dis_desc: "Вся небольшая организация Паромщиков сосредоточена вокруг Диса, Саргассова моря крепостей, пещер и кораблей в [UmbraGlossaryLocalized('tempest','Буре')]. Здесь находятся их главные места сбора, штаб-квартиры архивного и производственного отделов, а также небольшой руководящий комитет."
  dis_effect_desc: ""
 
  umbra_realm_spirit_wilds: "Духовные дебри"
@@ -1103,11 +1116,11 @@
  the_homeland_of_the_bunyip_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_the_former_homeland_of_the_white_howlers: "Бывшая родина Белых завывателей"
- umbra_realm_the_former_homeland_of_the_white_howlers_desc: "Бывшая родина Белых завывателей неузнаваемо искажена Вирмом. Воздух густой от дыма и пульсирует от жары. На поверхность падает тошнотворное зеленое солнце, не защищенное никаким озоновым слоем. Ночь не приносит облегчения: загрязняющие вещества остывают и опускаются на поверхность, из-за чего луна кажется флуоресцентно-желтой сквозь испарения."
+ umbra_realm_the_former_homeland_of_the_white_howlers_desc: "Бывшая родина Белых завывателей неузнаваемо искажена [Glossary('Вирмом', 'glossary_wyrm_tt')]. Воздух густой от дыма и пульсирует от жары. На поверхность падает тошнотворное зеленое солнце, не защищенное никаким озоновым слоем. Ночь не приносит облегчения: загрязняющие вещества остывают и опускаются на поверхность, из-за чего луна кажется флуоресцентно-желтой сквозь испарения."
  the_former_homeland_of_the_white_howlers_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_calumn: "Клевета"
- umbra_realm_calumn_desc: "Клевета - это владения Вирма в Ближней Умбре. Они возникают, когда особенно сильная негативная эмоция выражается в каком-то месте физического мира и оставляет отпечаток в [Concept('umbra', 'Умбре')|E]. Это магнит для бэйнов и духов, которые живут рядом с Клеветой, проявляют признаки соответствующей эмоции, и даже неодушевленные предметы становятся осквернёнными из-за близости."
+ umbra_realm_calumn_desc: "Клевета - это владения [Glossary('Вирма', 'glossary_wyrm_tt')] в Ближней Умбре. Они возникают, когда особенно сильная негативная эмоция выражается в каком-то месте физического мира и оставляет отпечаток в [Concept('umbra', 'Умбре')|E]. Это магнит для бэйнов и духов, которые живут рядом с Клеветой, проявляют признаки соответствующей эмоции, и даже неодушевленные предметы становятся осквернёнными из-за близости."
 
  calumn_effect_desc: "$UMBRA_DISCOVERY_FETISH$\n$UMBRA_RECRUIT_BYGONE$"
 
@@ -1128,7 +1141,7 @@
  battleground_effect_desc: "Разблокирована более высокая награда/требования за обучение пути войны."
 
  umbra_realm_cyberrealm: "Киберсфера"
- umbra_realm_cyberrealm_desc: "Киберсфера - один из тринадцати Ближних миров в [Concept('umbra', 'Умбре')|E]. Это измерение представляет собой, возможно, вершину влияния Ткачихи в [Concept('umbra', 'Умбре')|E]. Маги называют его Дистопией."
+ umbra_realm_cyberrealm_desc: "Киберсфера - один из тринадцати Ближних миров в [Concept('umbra', 'Умбре')|E]. Это измерение представляет собой, возможно, вершину влияния [Glossary('Ткачихи', 'glossary_weaver_tt')] в [Concept('umbra', 'Умбре')|E]. Маги называют его Дистопией."
  cyberrealm_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_digital_web: "Цифровая сеть"
@@ -1161,7 +1174,7 @@
 
  umbra_realm_pangaea: "Пангея"
  umbra_realm_pangaea_desc: "Пангея - это отражение первозданной Земли, показывающее мир таким, каким он был до появления цивилизации, человеческой истории и даже Владычества."
- pangaea_effect_desc: "Можно найти динозавров во время #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!, что позволит нанимать их как [Concept('men_at_arms', 'профессионалов')|E]\nМожно получить модификатор [GetModifier('paleontologist_modifier').GetNameWithTooltip] (через #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!)\n$UMBRA_RECRUIT_BYGONE$"
+ pangaea_effect_desc: "Можно получить модификатор [GetModifier('paleontologist_modifier').GetNameWithTooltip] (через #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!)\n$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_scar: "Шрам"
  umbra_realm_scar_desc: "Шрам - одно из Ближних царств [Concept('umbra', 'Умбры')|E]. Это проявление промышленной революции, развратившей душу угнетением под ржавым идеалом процветания."
@@ -1266,7 +1279,7 @@
  court_of_meros_effect_desc: "Можно получить соответствующие планетарные дары через #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#! [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_weaver_reaches: "Просторы Ткачихи"
- umbra_realm_weaver_reaches_desc: "Просторы Ткачихи - это нити кальцинированной реальности, похожие на компьютерную карту астронома. Пересекающиеся узлы паутины фиксируют холодные звезды и замерзшие планеты в неестественной симметрии. Никаких признаков жизни не существует. Колоссальные духи Ткачихи, такие как «звездные пауки», патрулируют и поддерживают паутину, следя за тем, чтобы все оставалось на своих местах."
+ umbra_realm_weaver_reaches_desc: "Просторы Ткачихи - это нити кальцинированной реальности, похожие на компьютерную карту астронома. Пересекающиеся узлы паутины фиксируют холодные звезды и замерзшие планеты в неестественной симметрии. Никаких признаков жизни не существует. Колоссальные духи [Glossary('Ткачихи', 'glossary_weaver_tt')], такие как «звездные пауки», патрулируют и поддерживают паутину, следя за тем, чтобы все оставалось на своих местах."
  weaver_reaches_effect_desc: ""
 
  umbra_realm_wyld_reaches: "Просторы Вильда"
@@ -1350,7 +1363,7 @@
  shard_realm_of_life_effect_desc: ""
 
  umbra_realm_seasonal_realms: "Сезонные миры"
- umbra_realm_seasonal_realms_desc: "Сезонные миры или Сезонные миры Вербен - это четыре отдельных мира в пределах [UmbraGlossaryLocalized('shade_realm_of_life','Отколовшегося мира Жизни')], иначе известного как умбральное отражение планеты Венера."
+ umbra_realm_seasonal_realms_desc: "Сезонные миры или Сезонные миры Вербен - это четыре отдельных мира в пределах [UmbraGlossaryLocalized('shard_realm_of_life','Отколовшегося мира Жизни')], иначе известного как умбральное отражение планеты Венера."
  seasonal_realms_effect_desc: ""
 
  umbra_realm_shard_realm_of_forces: "Отколовшийся мир Сил"
@@ -1474,29 +1487,28 @@
 
  umbra_realm_central_duchy: "Центральное герцогство"
  umbra_realm_central_duchy_desc: "В центре этой большой области неправильной формы установлен круглый камень, на котором начертана спираль. Внутренний двор окружают чрезвычайно сложные и грозные здания, каждое высотой более мили. Одним из таких крупных сооружений является массивный Величественный собор с огромным витражом, изображающим чудовищ со щупальцами, вылезающих из-под земли. Этот собор посвящен всем главам Гидры и является единственным местом во всём [UmbraGlossaryLocalized('malfeas','Малфеасе')], которое открыто приветствует тех, кто предан любому из этих глав."
-
- central_duchy_effect_desc: ""
+ central_duchy_effect_desc: "@wyrm_icon![umbra_expedition|E]: Sequentially explore the nine rooms of the Temple Obscura"
 
  umbra_realm_maeljin_duchies: "Герцогства маэлджинов"
  umbra_realm_maeljin_duchies_desc: "Массивная стена из камня и окаменелой кости охраняет [UmbraGlossaryLocalized('central_duchy','Центральное герцогство')], и владения каждого из инкарн-маэлджин примыкают к этой стене, окружая её со всех сторон. Стена, окружающая Центральное герцогство, увенчана коварными, острыми как бритва железными шипами, которые регулярно украшаются телами тех, кто вызвал особое неудовольствие инкарны-маэлджина, к чьим владениям примыкает этот участок стены."
- maeljin_duchies_effect_desc: "При наличии [Concept('perk', 'достоинства')|E] «[GetPerk('bane_protector_perk').GetName( GetPlayer )]» доступны [men_at_arms|El] - [GetMaA('liderci').GetName]."
+ maeljin_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Obtain [urgetaints_lifestyle|E] [lifestyle_experience|E] if you have the [lifestyle|E]"
 
  umbra_realm_border_duchies: "Пограничные герцогства"
  umbra_realm_border_duchies_desc: "Некоторые части [UmbraGlossaryLocalized('malfeas','Малфеаса')], лежащие между [UmbraGlossaryLocalized('maeljin_duchies','герцогствами маэлджинов')], кажутся бесплодными пустошами, но внешность может быть обманчивой. Эти пустоши на самом деле являются двумя другими герцогствами, принадлежащими инкарнам-маэлджин, которые избегают взаимодействия с себе подобными."
- border_duchies_effect_desc: ""
+ border_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Discover Bane [men_at_arms|E]"
 
  umbra_realm_earth_pit: "Земляная яма"
  umbra_realm_earth_pit_desc: "Для оборотней одним из самых опасных мест во всём [UmbraGlossaryLocalized('malfeas','Малфеасе')] является Земляная яма. Расположенная в каньоне между одним из болот Рыцаря энтропии и пустыней Безымянного ангела Отчаяния, Земляная яма представляет собой обширный регион, который в общих чертах повторяет многие из самых нетронутых и процветающих ландшафтов Земли, но представляет собой отравленную пародию на оригиналы."
- earth_pit_effect_desc: ""
+ earth_pit_effect_desc: "@wyrm_icon![umbra_expedition|E]: Find a $glossary_wyrm$ [fetish|E]"
 
  umbra_realm_elemental_duchies: "Элементальные герцогства"
  umbra_realm_elemental_duchies_desc: "На самых дальних окраинах [UmbraGlossaryLocalized('malfeas','Малфеас')] находятся четыре элементальных герцогства: смог, губительный огонь, ил и токсин.\n\nДворцы четырех элементалей-маэлджин расположены недалеко от центра каждого герцогства. Разрушение одного из этих замков порчи может ослабить стихию, особенно если гару также навсегда уничтожат элементаля-маэлджин."
- elemental_duchies_effect_desc: ""
+ elemental_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Find an Elemental Bane Spirit"
 
  umbra_realm_black_spiral_labyrinth: "Лабиринт Чёрной Спирали"
  umbra_realm_ebon_maze: "Чёрный лабиринт"
  umbra_realm_black_spiral_labyrinth_desc: "Лабиринт Чёрной Спирали, также называемый Чёрным лабиринтом в Поднебесной, представляет собой спиральный лабиринт в мире [UmbraGlossaryLocalized('malfeas','Малфеаса')], содержащий невообразимые ужасы, связанные с Вирмом."
- black_spiral_labyrinth_effect_desc: ""
+ black_spiral_labyrinth_effect_desc: "@wyrm_icon![umbra_expedition|E]: Find a $glossary_wyrm$ [fetish|E]"
 
  umbra_realm_copernicus_research_center: "Исследовательский центр «Коперник»"
  umbra_realm_copernicus_research_center_desc: "Исследовательский центр «Коперник» («ИЦК») - это массивная полупрозрачная сфера Дайсона, управляемая Покорителями Бездн. Она окружает одну из звёзд в созвездии Альфа Центавра и простирается на радиус в одну астрономическую единицу."
