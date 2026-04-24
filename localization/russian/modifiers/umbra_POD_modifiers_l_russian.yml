@@ -58,11 +58,6 @@
  recruit_whistimmu_shroudrippers_tt: "Доступны [men_at_arms|El] — [GetMaA('shroudrippers').GetName]"
  recruit_whistimmu_tindelhounds_tt: "Доступны [men_at_arms|El] — [GetMaA('tindelhounds').GetName]"
 
- recruit_plesiosaurs_tt: "Доступны [men_at_arms|El] — [GetMaA('plesiosaurs').GetName]"
- recruit_pterosaurs_tt: "Доступны [men_at_arms|El] — [GetMaA('pterosaurs').GetName]"
- recruit_carnosaurs_tt: "Доступны [men_at_arms|El] — [GetMaA('carnosaurs').GetName]"
- recruit_herbosaurs_tt: "Доступны [men_at_arms|El] — [GetMaA('herbosaurs').GetName]"
-
  recruit_giants_tt: "Доступны [men_at_arms|El] — [GetMaA('giants').GetName]"
 
  recruit_phantasies_tt: "Доступны [men_at_arms|El] — [GetMaA('phantasies').GetName]"
@@ -83,8 +78,8 @@
  trapped_in_paradox_realm_modifier: "В ловушке [UmbraGlossaryLocalized('paradox_realms','мира Парадокса')]"
  trapped_in_labyrinth_modifier: "В ловушке [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринта')]"
  trapped_in_labyrinth_modifier_desc: "Вы не сумели сориентироваться в этом бессмысленном [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринте')], и в итоге оказались там же, где и начинали."
- trapped_in_tempest_modifier: "В ловушке [UmbraGlossaryLocalized('pod_realm_tempest','Бури')]"
- trapped_in_tempest_modifier_desc: "Вы не сумели сориентироваться в постоянно меняющейся [UmbraGlossaryLocalized('pod_realm_tempest','Буре')], и в итоге оказались там же, где и начинали."
+ trapped_in_tempest_modifier: "В ловушке [UmbraGlossaryLocalized('tempest','Бури')]"
+ trapped_in_tempest_modifier_desc: "Вы не сумели сориентироваться в постоянно меняющейся [UmbraGlossaryLocalized('tempest','Буре')], и в итоге оказались там же, где и начинали."
  trapped_in_malfeas_modifier: "В ловушке [UmbraGlossaryLocalized('malfeas','Малфеаса')]"
  trapped_in_abyss_modifier: "В ловушке [UmbraGlossaryLocalized('abyss','Бездны')]"
  trapped_in_yomi_modifier: "В ловушке [UmbraGlossaryLocalized('yomi_wan','ада Йоми')]"
@@ -94,7 +89,7 @@
  trapped_in_shadow_realm_modifier_desc: "Эта мумия медленно возвращается в своё тело после смерти. Этот процесс не очень приятен."
 
  paleontologist_modifier: "Палеонтолог"
- paleontologist_modifier_desc: "Этот персонаж - знаток доисторических существ."
+ paleontologist_modifier_desc: "Этот персонаж - знаток мифических существ."
 
  yin_portal_modifier: "Портал в [UmbraGlossaryLocalized('shadowlands','мир Инь')]"
  yang_portal_modifier: "Портал в [Glossary('мир Ян','game_concept_yang_world_desc')]"
@@ -149,7 +144,7 @@
  umbra_action_learning_train_modifier: "Образованная тренировка [Concept('umbra', 'Умбры')|E]"
  umbra_action_learning_train_modifier_desc: "$POD_umbra_learning.desc$"
  umbra_search_innovation_modifier: "Поиск инноваций [Concept('umbra', 'Умбры')|E]"
- umbra_search_innovation_modifier_desc: "Поиск [Concept('inventium', 'Изобретариума')|E]."
+ umbra_search_innovation_modifier_desc: "Поиск [UmbraGlossaryLocalized('inventium','Изобретариума')]."
 
  seat_of_burning_waters_modifier: "Уроки Средоточия Горящих вод"
  seat_of_burning_waters_modifier_desc: "Средоточие Горящих вод - дворец Улыбающегося владыки и штаб-квартира Мрачного легиона в Стигии. Отсюда Улыбающийся владыка строит планы против других Владык смерти и строит грандиозные планы на будущее своей ветви Иерархии."
@@ -169,7 +164,7 @@
  seat_of_fate_modifier_desc: "Большой, разросшийся особняк в иберийском стиле, Средоточие судьбы, тем не менее, умудряется оставаться единым целым с островом, на котором оно расположено. Особенно примечательны деревья, растущие во многих дворах здания; эти деревья - единственная растущая древесина в [UmbraGlossaryLocalized('dark_kingdom_of_iron','Тёмном королевстве Железа')] и, наряду с тростником вдоль [UmbraGlossaryLocalized('river_of_death','Реки смерти')], являются одним из немногих источников бумаги в [UmbraGlossaryLocalized('shadowlands','Загробном мире')]."
 
  jade_palace_modifier: "Посещение Нефритового дворца"
- jade_palace_modifier_desc: "Нефритовый дворец - центр имперского правительства в Жёлтых источниках, расположенный в самом сердце вечного водоворота в [UmbraGlossaryLocalized('pod_realm_tempest','Буре')]."
+ jade_palace_modifier_desc: "Нефритовый дворец - центр имперского правительства в Жёлтых источниках, расположенный в самом сердце вечного водоворота в [UmbraGlossaryLocalized('tempest','Буре')]."
 
  blessed_by_great_celestial_dragons_modifier: "Благословение великих небесных драконов"
  blessed_by_great_celestial_dragons_modifier_desc: "Эти существа больше похожи на силы природы, чем на зверей."

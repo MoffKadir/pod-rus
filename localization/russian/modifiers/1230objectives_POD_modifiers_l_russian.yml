@@ -13,7 +13,7 @@
  capital_past_modifier_desc: "Смертные покинули Аль-Андалус, но в этом городе есть общество нежити, которое стремится сохранить память об их общем наследии."
  sword_of_troile_modifier: "Меч Троиль"
  sword_of_troile_modifier_desc: "Один из самых могущественных оружий в истории Сородичей, этим хрустальным мечом владела сама Троиль во время своих многочисленных сражений за защиту Карфагена."
- #zmei_legacy_perk_effect: "# Страшные существа, обладающие огромной силой, некогда служившие Змею, теперь связаны с Бабой Ягой, Маленькой бабушкой.#!"
+ #zmei_legacy_perk_effect: "# Страшные существа, обладающие огромной силой, некогда служившие [Glossary('Вирму', 'glossary_wyrm_tt')], теперь связаны с Бабой Ягой, Маленькой бабушкой.#!"
  babayaga_victory_opinion: "Верность Карге"
  eyes_and_ears_modifier: "Глаза и уши"
  eyes_and_ears_modifier_desc: "Как лидер [Glossary('клана','game_concept_Clan_desc')] Носферату, ваша сеть информаторов не имеет себе равных."
@@ -135,9 +135,9 @@
  support_from_von_murnau_modifier: "Поддержка дома Мурнау"
 
  decani_boon_modifier: "Благословение Декани"
- decani_boon_modifier_desc: "Открывает доступ к [Concept('lifestyle', 'пути')|E] #TOOLTIP:game_concept_investiture_lifestyle_desc #E инвеституры#!#!\n#weak Этот персонаж был наделен частичкой силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#! Декани.#!"
+ decani_boon_modifier_desc: "#flavor Этот персонаж был наделен частичкой силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#! Декани.#!\nОткрывает доступ к [Concept('lifestyle', 'пути')|E] #TOOLTIP:game_concept_investiture_lifestyle_desc #E инвеституры#!#!"
  decani_modifier: "Декани"
- decani_modifier_desc: "Открывает доступ к [Concept('lifestyle', 'пути')|E] [Concept('arcana_lifestyle', 'арканы')|E]\n#weak Этот персонаж присвоил себе силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#!, пожрав душу Декани.#!"
+ decani_modifier_desc: "#flavor Этот персонаж присвоил себе силы #L [GetTrait('demon').GetName(GetNullCharacter)|l]а#!, пожрав душу Декани.#!\nОткрывает доступ к [Concept('lifestyles', 'путям')|E] [Concept('arcana_lifestyle', 'арканы')|E] и [Concept('lore_lifestyle', 'знаний')|E]"
 
  cappadocius_boon_modifier: "Благословение Каппадокия"
 
@@ -183,10 +183,51 @@
  wutian_protector_of_shen_modifier_tt: "У вас есть модификатор [GetModifier('wutian_protector_of_shen_modifier').GetNameWithTooltip]: $VALUE|=+0$"
 
  wutian_ninth_immortal: "Девятый бессмертный"
- wutian_ninth_immortal_desc: "Призванные духи будут более могущественны.\nЭтот персонаж поднялся до положения Девятого бессмертного, открыв в процессе новые могущественные знания."
+ wutian_ninth_immortal_desc: "Этот персонаж поднялся до положения Девятого бессмертного, открыв в процессе новые могущественные знания."
 
  nomenclature_master_modifier: "Мастер онимики"
  nomenclature_master_modifier_desc: "Несмотря на неудачу в достижении Ра-Хекау, этот персонаж достиг чего-то близкого.\nМожно изменить любое базовое [Concept('trait', 'свойство')|E] через взаимодействие «Принять личность»"
 
  POD_all_is_well_under_heaven_modifier: "Всё хорошо под небесами"
  POD_all_is_well_under_heaven_modifier_desc: "Мирные и процветающие времена продлятся долго. Разве может быть иначе?"
+
+
+ scourge_of_sutekh_modifier: "Scourge of Sutekh"
+ dutiful_sire_modifier: "Dutiful Sire"
+ silent_conclave_insight_modifier: "Conclave Insight"
+ silent_conclave_offering_modifier: "Conclave Offering"
+ careful_feeding_modifier: "Careful Feeding"
+ reckless_feeding_satisfied_modifier: "Sated Predator"
+ endure_hunger_modifier: "Enduring the Hunger"
+ evidence_discovered_modifier: "Evidence of the Beast"
+ itarajana_research_modifier: "Itarajana Research"
+
+ # ============================
+ # Feature 2: Pilgrimage to Enoch (Journey Modifiers)
+ # ============================
+
+ nagaraja_attuned_to_dead_modifier: "Attuned to the Dead"
+ nagaraja_tempered_by_tempest_modifier: "Tempered by the Tempest"
+ nagaraja_ghost_guided_modifier: "Ghost-Guided"
+ nagaraja_well_informed_modifier: "Well Informed"
+ nagaraja_well_informed_short_modifier: "Well Informed"
+ nagaraja_feared_by_dead_modifier: "Feared by the Dead"
+ nagaraja_protector_of_blood_modifier: "Protector of the Blood"
+ nagaraja_enoch_journal_modifier: "Pilgrim's Journal"
+ nagaraja_spectral_fortitude_modifier: "Spectral Fortitude"
+ nagaraja_wraith_devoured_prowess_modifier: "Wraith-Fed"
+ 
+ ennamaru_reborn_modifier: "Ennamaru, Reborn"
+ ennamaru_reborn_modifier_desc: "The final act has concluded. The shards have been pieced together. Francia will burn."
+ 
+ dark_angel_modifier: "Dark Angel"
+ dark_angel_modifier_desc: "You have tuned your flawed body into one of agonizing, divine perfection."
+ 
+ lutetian_roots_modifier: "Lutetian Roots"
+ lutetian_roots_modifier_desc: "Ancient Gaulic traditions, protective blood sorceries and your efforts have cleansed this land of infernal corruption. Under your watchful guidance, the realm will finally prosper."
+
+ koldunic_ways_founders_modifier: "Koldunic Masters"
+ koldunic_ways_founders_modifier_desc: "[krainas|E] and their [bs_rituals|E] always cost 1 less @blood_icon!"
+
+ land_for_dragons_modifier: "Awakened Dragons"
+ land_for_dragons_modifier_desc: "Can recruit [GetMaA('dragon_fiends_maa').GetName] as [men_at_arms|E]"

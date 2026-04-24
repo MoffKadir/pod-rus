@@ -76,8 +76,8 @@
 
  POD_mokole_form_archid_modifier: "Форма Архид"
  POD_mokole_form_archid_modifier_desc: "Боевая форма считается «истинной формой» любого отдельного моколе. Через мнезис им снятся рептилии, птицы и динозавры из прошлого, что определяет характеристики формы Архид.\n#weak Вражеские [Concept('knights', 'рыцари')|E], выступающие как [Concept('commander', 'командиры')|E] во время [Concept('combat_phase', 'фазы боя')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_delirium_modifier').GetNameWithTooltip]#!"
- POD_mokole_form_suchid_modifier: "Форма Сухид"
- POD_mokole_form_suchid_modifier_desc: "Форма Сухид обычно напоминает крокодила, аллигатора, гила-монстра или подобную крупную рептилию. Форма Сухид отражает варну моколе."
+
+
 
 
  POD_nagah_form_azhi_dahaka_modifier: "Форма Ажи Дахака"
@@ -136,11 +136,15 @@
  
 
 
-
- POD_shapeshift_form_darkfungus_modifier: "Форма тотема Тёмного гриба"
- POD_shapeshift_form_glouogh_modifier: "Форма тотема Г'лууу"
+ POD_shapeshift_form_whippoorwill_modifier: "Whippoorwill Totem Form"
+ POD_shapeshift_form_kirijama_modifier: "Kirijama Totem Form"
  POD_shapeshift_form_greendragon_modifier: "Форма тотема Зелёного дракона"
+ POD_shapeshift_form_bat_totem_modifier: "Bat Totem Form"
  POD_shapeshift_form_hakaken_modifier: "Форма тотема Хакакена"
+ POD_shapeshift_form_darkfungus_modifier: "Форма тотема Тёмного гриба"
+ POD_shapeshift_form_relshab_modifier: "Relshab Totem Form"
+ POD_shapeshift_form_glouogh_modifier: "Форма тотема Г'лууу"
+
 
  POD_shapeshift_form_shiva_modifier: "Шива-разрушитель"
  POD_shapeshift_form_shiva_modifier_desc: "Во вспышке священного света бастет становится ростом в 12 футов, шестируким оборотнем-пантерой в форме Кринос с пылающим оружием в руках. Пока земля не будет усеяна телами, эта машина кошачьего гнева кромсает все вокруг - врагов и не только - в кровавые потроха."
@@ -161,7 +165,7 @@
  shadowy_duplicate_modifier: "Теневой двойник"
  POD_thought_form_of_the_twelve_ministers_modifier: "Истинное духовное равновесие"
  howl_of_hunger_perk_modifier: "#TOOLTIP:game_concept_battle_modifier_desc #E Модификатор битвы#!#!: Голодный вопль"
- dark_of_night_perk_modifier: "#TOOLTIP:game_concept_battle_modifier_desc #E Модификатор битвы#!#!: Ночной мрак"
+ dark_of_night_perk_modifier: "Ночной мрак"
  curse_of_hatred_perk_modifier: "#TOOLTIP:game_concept_battle_modifier_desc #E Модификатор битвы#!#!: Проклятие ненависти"
  protean_form_extra_clawed_limbs_modifier: "Дополнительные когтистые конечности"
  protean_form_tentacles_modifier: "Щупальца"
@@ -172,7 +176,9 @@
  haunting_howl_perk_modifier: "#TOOLTIP:game_concept_battle_modifier_desc #E Модификатор битвы#!#!: Пронзительный вопль"
  pain_strength_perk_modifier: "Сила боли"
  maddening_howl_perk_modifier: "#TOOLTIP:game_concept_battle_modifier_desc #E Модификатор битвы#!#!: Душераздирающий вопль"
- 
+ the_white_howl_modifier_ally: "[battle_modifier|E]: White Howl"
+ the_white_howl_modifier_enemy: "[battle_modifier|E]: White Howl"
+
  # Bastet
  the_paradox_of_time_perk_modifier: "#TOOLTIP:game_concept_battle_modifier_desc #E Модификатор битвы#!#!: Путаница от парадокса"
  mousemaze_perk_modifier: "#TOOLTIP:game_concept_battle_modifier_desc #E Модификатор битвы#!#!: Путаница от мышиного лабиринта"
@@ -214,14 +220,6 @@
  raven_totem_modifier_desc: "Ненасытная жажда Ворона к знаниям, богатству и пище ведёт его детей вперёд."
  rat_totem_modifier: "Тотем стаи: Крыса"
  rat_totem_modifier_desc: "Крыса обладает армией, которой мало кто может противостоять. Её сила в количестве."
- darkfungus_totem_modifier: "Тотем стаи: Темный гриб"
- darkfungus_totem_modifier_desc: "Единственное растение, достаточно сильное, чтобы выжить в Черной Спирали, благословляет своих детей видениями. Однако не все они желанны."
- glouogh_totem_modifier: "Тотем стаи: Г'лууу"
- glouogh_totem_modifier_desc: "Постоянно меняющийся шар ужаса, Г'лууу порождает одних из самых ужасных созданий Вирма в мире всякий раз, когда появляется."
- greendragon_totem_modifier: "Тотем стаи: Зеленый дракон"
- greendragon_totem_modifier_desc: "Некогда покровитель Белых завывателей, Зеленый дракон страдал от благодати так же сильно, как и они, и по сей день продолжает благословлять своих развращенных детей."
- hakaken_totem_modifier: "Тотем стаи: Хакакен"
- hakaken_totem_modifier_desc: "Паранойя и гордыня - вот две отличительные черты последователей Хакакена. С помощью этих инструментов они распространяют весть о своей падшей инкарне."
  bonyscrap_totem_modifier: "Тотем стаи: Стервятник"
  bonyscrap_totem_modifier_desc: "Дух Стервятника неприятен, но его умение добывать полезное из мусора бесценно."
  hatii_totem_modifier: "Тотем стаи: Хати"
@@ -240,6 +238,45 @@
  mistress_catkind_totem_modifier_desc: "Воплощение женской сущности, Повелительница - заботливая мать, страстная любовница, богиня войны и любительница загадок одновременно."
  whispers_totem_modifier: "Тотем стаи: Шепоты"
  whispers_totem_modifier_desc: "Дух тайн ведет любознательных бастет к открытиям, если они сами воздерживаются от бурных поступков."
+ dragon_totem_modifier: "Pack Totem: Dragon"
+ dragon_totem_modifier_desc: "Dragon is great and fierce, burning all those who oppose him with his poisonous breath."
+ agni_totem_modifier: "Pack Totem: Agni"
+ agni_totem_modifier_desc: "Agni is Dragon unleashed, his strength unmatched."
+ finch_totem_modifier: "Pack Totem: Finch"
+ finch_totem_modifier_desc: "Finch is adaptation, to adapt is to survive. To force change in nature is to invite calamity."
+ horseshoe_crab_totem_modifier: "Pack Totem: Horseshoe Crab"
+ horseshoe_crab_totem_modifier_desc: "He has thrived while the Lizard Kings rose and fell. He will outlive human beings and the Apocalypse itself."
+ scarab_totem_modifier: "Pack Totem: Scarab"
+ scarab_totem_modifier_desc: "With the Sun's attendant watching over you, the darkness over Khem may finally be cleansed."
+ snake_doctor_totem_modifier: "Pack Totem: Snake Doctor"
+ snake_doctor_totem_modifier_desc: "He sews up the wounds of his scaled friends, and sews up the ears of others."
+ whiptail_lizard_totem_modifier: "Pack Totem: Whiptail Lizard"
+ whiptail_lizard_totem_modifier_desc: "To her daughters she gives strength, to the men she gives hate."
+ narukami_totem_modifier: "Pack Totem: Naru-kami"
+ narukami_totem_modifier_desc: "Grandfather Thunder respects strength, but only from the worthy."
+ tsukiyomi_totem_modifier: "Pack Totem: Tsuki-yomi"
+ tsukiyomi_totem_modifier_desc: "The Goddess of the Moon will light your path, but the tides rage with the shifting moons."
+ susanowo_totem_modifier: "Pack Totem: Susanowo"
+ susanowo_totem_modifier_desc: "The God of Storms answers your rage with his own.\nUsing #V Storm#! Weather Magic inflicts 1 Lightning [POD_aggravated_damage|E] to your target and all their [knights|E] if they are at war with you."
+
+ #Wyrm
+ whippoorwill_totem_modifier: "Pack Totem: Whippoorwill"
+ whippoorwill_totem_modifier_desc: "The chirps of Whippoorwill will be the last thing they hear."
+ kirijama_totem_modifier: "Pack Totem: Kirijama"
+ kirijama_totem_modifier_desc: "Kirijama the Hidden's existence is shrouded in mystery."
+ greendragon_totem_modifier: "Тотем стаи: Зеленый дракон"
+ greendragon_totem_modifier_desc: "Некогда покровитель Белых завывателей, Зеленый дракон страдал от благодати так же сильно, как и они, и по сей день продолжает благословлять своих развращенных детей."
+ bat_totem_modifier: "Pack Totem: Bat"
+ bat_totem_modifier_desc: "Bat's insane half still serves its fallen master."
+ hakaken_totem_modifier: "Тотем стаи: Хакакен"
+ hakaken_totem_modifier_desc: "Паранойя и гордыня - вот две отличительные черты последователей Хакакена. С помощью этих инструментов они распространяют весть о своей падшей инкарне."
+ darkfungus_totem_modifier: "Тотем стаи: Темный гриб"
+ darkfungus_totem_modifier_desc: "Единственное растение, достаточно сильное, чтобы выжить в Черной Спирали, благословляет своих детей видениями. Однако не все они желанны.\nRemoves cost from learning [GetTrait('demonology').GetName(GetNullCharacter)] via [journey|E]"
+ relshab_totem_modifier: "Pack Totem: Relshab"
+ relshab_totem_modifier_desc: "Like Relshab, now your hunger is eternal."
+ glouogh_totem_modifier: "Тотем стаи: Г'лууу"
+ glouogh_totem_modifier_desc: "Постоянно меняющийся шар ужаса, Г'лууу порождает одних из самых ужасных созданий [Glossary('Вирма', 'glossary_wyrm_tt')] в мире всякий раз, когда появляется."
+ GLOUOGH_TOTEM_REASON: "$glouogh_totem_modifier$: $VALUE|+=0$"
 
 
  #################

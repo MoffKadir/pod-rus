@@ -10,17 +10,27 @@
 
 
 
+
+
+
+ POD_terrain_artifact_power_advantage: "[artifact_power_with_icon|E]"
+ POD_terrain_artifact_power_min_combat_roll: "[Concept('crafting_complexity', 'Сложность')|E] [Concept('crafting_forging', 'ковки')|E]"
  POD_terrain_crafting_forging_advantage: "#TOOLTIP:game_concept_crafting_complexity_desc #E Сложность#!#! #TOOLTIP:game_concept_crafting_forging_desc #E ковки#!#!"
+ POD_terrain_crafting_forging_max_combat_roll: "[crafting_forging|E] Starting [durability|E]"
  POD_terrain_crafting_brewing_advantage: "#TOOLTIP:game_concept_crafting_complexity_desc #E Сложность#!#! #TOOLTIP:game_concept_crafting_brewing_desc #E создания отваров#!#!"
  POD_terrain_crafting_enhancing_advantage: "#TOOLTIP:game_concept_crafting_complexity_desc #E Сложность#!#! #TOOLTIP:game_concept_crafting_enhancing_desc #E улучшения#!#!"
  POD_terrain_crafting_forging_min_combat_roll: "#TOOLTIP:game_concept_crafting_potential_desc #E Потенциал ремесла#!#!"
+ POD_terrain_crafting_reroll_advantage: "Crafting Rerolls"
+ POD_terrain_crafting_cost_advantage: "[crafting|E] Gold Cost"
 
 
 
  POD_terrain_health_advantage: "Исцеляет дополнительно"
  POD_terrain_health_advantage_suffix: " #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностный урон#!#! при естественном исцелении"
+ POD_terrain_health_max_combat_roll: "Years to convert [POD_aggravated_damage|E]"
  POD_terrain_health_min_combat_roll: "Вероятность #TOOLTIP:game_concept_soak_damage_desc #E впитывания#!#!"
  POD_terrain_health_cancel_negative_supply: "Нельзя умереть от ран"
+ POD_terrain_health_superficial_into_aggravated_cancel_negative_supply: "All [POD_superficial_damage_with_box|E] you deal becomes [POD_aggravated_damage_with_box|E] instead"
 
 
 
@@ -28,6 +38,12 @@
  POD_terrain_true_name_journey_speed_min_combat_roll: "Скорость [Concept('journey', 'странствия')|E] «Изучение истинного имени»"
  POD_terrain_true_name_journey_speed_max_combat_roll: "Скорость враждебного [Concept('journey', 'странствия')|E] «Изучение истинного имени»"
 
+ POD_terrain_spirit_quest_journey_speed_advantage: "Spirit Quest [journey|E] Speed"
+ POD_terrain_spirit_quest_journey_speed_supply_limit_mult: "Spirit Quest [journey|E] Speed"
+
+
+ POD_terrain_heist_suspicion_advantage: "Initial [suspicion_with_icon|E] during [infiltration_missions|E]"
+ POD_terrain_heist_journey_speed_advantage: "Artifact Heist [journey|E] Speed"
 
 
  POD_terrain_umbra_aptitude_advantage: "@grace_icon!#TOOLTIP:game_concept_umbra_aptitude_desc #E Пригодность Умбры#!#!"
@@ -57,12 +73,19 @@
 
  #Fera
  POD_terrain_gnosis_regen_supply_limit_mult: "Восстановление гнозиса"
-
+ POD_terrain_wyrm_taint_advantage: "@wyrm_icon!Yearly [wyrm_taint|E]"
 
 
  #Kueijin
  POD_terrain_dharma_xp_gain_advantage: "Прирост [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] [Glossary('дхармы','podgloss.dharma')]"
  POD_terrain_dharma_xp_gain_min_combat_roll: "Пассивный прирост [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] [Glossary('дхармы','podgloss.dharma')]"
+
+
+ #Mokole
+ POD_terrain_mokole_archid_option_advantage: "@mokole_icon!Archid Customization Options"
+ POD_terrain_mokole_archid_cost_advantage: "@mokole_icon!Archid $POD_energy_gnosis$ Cost"
+ POD_terrain_mnesis_journey_speed_advantage: "Mnesis Quest [journey|E] Speed"
+ POD_terrain_mnesis_journey_speed_supply_limit_mult: "Mnesis Quest [journey|E] Speed"
 
 
 
@@ -80,12 +103,20 @@
 
  #Spirits
  POD_terrain_can_damage_spirit_cancel_negative_supply: "Можно наносить урон духам"
- POD_terrain_can_summon_spirit_cancel_negative_supply: "Можно призывать духов"
+ POD_terrain_can_summon_random_spirit_cancel_negative_supply: "Можно призывать случайных духов"
+ POD_terrain_can_summon_gaian_spirit_cancel_negative_supply: "Can Summon #ONCLICK:FAITH,velvet_brood #TOOLTIP:FAITH,velvet_brood $Gaian|L$#!#! Spirits"
+ POD_terrain_can_summon_bane_spirit_cancel_negative_supply: "Can Summon #ONCLICK:FAITH,wyrmbound #TOOLTIP:FAITH,wyrmbound $Bane|L$#!#! Spirits"
+ POD_terrain_can_summon_elemental_bane_spirit_cancel_negative_supply: "Can Summon #ONCLICK:FAITH,wyrmbound #TOOLTIP:FAITH,wyrmbound $Elemental Bane|L$#!#! Spirits"
+ POD_terrain_summoned_spirit_strength_advantage: "Summoned Spirit Strength"
  POD_terrain_spirit_companion_pact_strength_advantage: "Сила [Concept('spirit_companion', 'духовного договора')|E]"
  POD_terrain_spirit_companion_pact_acceptance_advantage: "Принятие [Concept('spirit_companion', 'духовного договора')|E]"
  POD_terrain_spirit_companion_chiminage_supply_limit_mult: "Эффективность духовного шиминажа"
 
-
+ #Vampires
+ POD_terrain_vampire_advantage: "Множитель опыта [Concept('resonance', 'резонанса')|E]"
+ POD_terrain_ghoul_limit_advantage: "@ghoul_icon!Предел [Concept('ghoul', 'гулей')|E]"
+ POD_terrain_herd_limit_advantage: "@vampire_icon!Предел [Concept('POD_herd', 'стада')|E]"
+ POD_terrain_fleshcrafting_advantage: "@vicissitude_icon!Успех [Concept('fleshcrafting', 'изменения плоти')|E]"
 
  #Wraiths
  POD_terrain_wraith_monthly_stress_gain_advantage: "#TOOLTIP:game_concept_oblivion_pull_desc #E Притяжение Забвения#!#!"
@@ -99,3 +130,11 @@
  POD_terrain_scheme_advantage: "Согласие соучастников общих [Concept('scheme', 'происков')|E]"
  POD_terrain_scheme_development_growth: "Согласие соучастников враждебных [Concept('scheme', 'происков')|E]"
  POD_terrain_scheme_development_growth_factor: "Согласие соучастников [Concept('scheme', 'происков')|E] «Убийство»"
+ POD_terrain_misc_advantage: "[Concept('friend', 'Befriend')|E] Limit"
+
+ #Demonology
+ POD_terrain_can_learn_true_name_of_demons_cancel_negative_supply: "Can learn the [Glossary('True Names','podgloss.truename')] of $POD_splat_demon_plural$"
+ POD_terrain_can_summon_demon_cancel_negative_supply: "Can [Concept('demonic_summoning','Summon')|E] $POD_splat_demon_plural$"
+ POD_terrain_can_bind_demon_cancel_negative_supply: "Can [diabolism_bind|E] $POD_splat_demon_plural$"
+ POD_terrain_weaken_demons_advantage: "Can [Concept('weaken_demon','Weaken Demons')|E] to reduce their [skills|E] by"
+ POD_terrain_can_banish_demon_cancel_negative_supply: "Can [POD_banish|E] $POD_splat_demon_plural$"
