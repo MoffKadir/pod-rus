@@ -115,6 +115,11 @@
  #Accolade succession is disabled but scripted in UI
  find_suitable_accolade_successor_interaction_desc: "Ваш персонаж не может искать преемника акколады автоматически."
 
+ # "One-eyed" doesn't fit since some characters have extra eyes
+ trait_one_eyed: "Missing Eye"
+ trait_one_eyed_desc: "This character is missing an eye."
+ trait_one_eyed_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is missing an eye."
+
  #Hastiluder trait is replaced for broader use
  # EP2
  trait_tourney_participant: "Соперник"
@@ -163,8 +168,10 @@
 
  # Crown authority
  crown_authority_3_effects: "$EFFECT_LIST_BULLET$Правитель назначает [Concept('heir', 'наследника')|E]\n$EFFECT_LIST_BULLET$В ходе оборонительных войн вассалы герцогства и королевства, граничащие (только по земле) с державой нападающей стороны, будут призваны в качестве участников."
- tribal_authority_3_effects: "$EFFECT_LIST_BULLET$Вассалы не могут начинать никакие войны, если сюзерен у них не на крючке."
+
  tribal_authority_1_effects: "$EFFECT_LIST_BULLET$[Concept('characters', 'Персонажей')|E] можно [Concept('imprisoned', 'заключать в тюрьму')|E]"
+ tribal_authority_2_effects: "$EFFECT_LIST_BULLET$Можно отнимать [titles|El].\n$EFFECT_LIST_BULLET$Можно отнимать [Concept('vassals', 'вассалов')|E]\n$EFFECT_LIST_BULLET$Можно создавать [Concept('tributaries', 'данников')|E]"
+ tribal_authority_3_effects: "$EFFECT_LIST_BULLET$Вассалы не могут начинать никакие войны, если сюзерен у них не на крючке."
 
  # Golconda warnings for schemes
  MURDER_SUCCESS_DESC: "[AddTextIf(GetScriptedGui('is_on_golconda_gui').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), Concatenate(Localize('POD_golconda_murder_alert'),'\n'))][TARGET_CHARACTER.GetShortUIName|U] погибает от руки убийцы"
@@ -342,6 +349,7 @@
  duke_landless_adventurer_camp_wanderers: "" #Master/Mistress is kind of silly for our landless, nothing at all is better
  spouse_landless_adventurer_male: ""
  spouse_landless_adventurer_holder_female: ""
+ person_haggler_camp_officer_parameter_tt: "У вас должна быть постройка в поместье, разблокирующая эту придворную должность."
 
  # Contract GUI
  DECISIONS_BUTTON_CONTAINER: "#T Решения и $TASK_CONTRACT_CONTRACT_PLURAL$#!"
@@ -357,7 +365,7 @@
  TASK_CONTRACT_SETTLEMENT_ISSUE_PLURAL: "$TASK_CONTRACT_CONTRACT_PLURAL$"
  TASK_CONTRACT_SETTLEMENT_ISSUE_POSSESSIVE: "$TASK_CONTRACT_CONTRACT_POSSESSIVE$"
  TASK_CONTRACT_SETTLEMENT_ISSUE_POSSESSIVE_PLURAL: "$TASK_CONTRACT_CONTRACT_POSSESSIVE_PLURAL$"
- TASK_CONTRACT_NAME: "#T [TaskContract.GetType.GetName]#!\n[AddTextIf( And( CHARACTER.IsValid, Not(TaskContract.MakeScope.Var('hide_employer').IsSet) ), Concatenate3(Concatenate3('#E ',Concept('contractor',Localize('game_concept_contractor')),'#!: '),CHARACTER.GetShortUIName,'\n') )]$TASK_CONTRACT_TIER$: #V [Select_CString( TaskContract.IsHard, '3', Select_CString( TaskContract.IsMedium, '2', '1'))]#!\n\n[TaskContract.GetTaskContractRequest]\n\n#weak [TaskContract.GetTaskContractDescription]#!"
+ TASK_CONTRACT_NAME: "#T [TaskContract.GetType.GetName]#!\n[AddTextIf( And( Character.IsValid, Not(TaskContract.MakeScope.Var('hide_employer').IsSet) ), Concatenate3(Concatenate3('#E ',Concept('contractor',Localize('game_concept_contractor')),'#!: '),Character.GetShortUIName,'\n') )]$TASK_CONTRACT_TIER$: #V [Select_CString( TaskContract.IsHard, '3', Select_CString( TaskContract.IsMedium, '2', '1'))]#!\n\n[TaskContract.GetTaskContractRequest]\n\n#weak [TaskContract.GetTaskContractDescription]#!"
 
  # Domicile types
  camp_domicile_type: "$haven_landed_domicile_type$"
@@ -521,7 +529,8 @@
  #Reused
  CHINESE_CONSOLIDATION_CB_NAME: "Объединить Поднебесную"
  adventurers_forward_scouts_option.tt.has_right_parameter: "У вас есть [Concept('domicile_building', 'постройка имения')|E], открывающая эту опцию."
- ACTIVITY_LIST_NOTIFY_ME_ABOUT_TOURNAMENTS:1 "Уведомить, когда можно будет принять участие\nв панегире Бруха"
+ ACTIVITY_LIST_NOTIFY_ME_ABOUT_TOURNAMENTS: "Уведомить, когда можно будет принять участие\nв панегире Бруха"
+ calculating_schemes_boilerplate.tt: "\n$BULLET_WITH_TAB$[GetScheme('murder').GetTypeName]\n$BULLET_WITH_TAB$[GetScheme('abduct').GetTypeName]\n$BULLET_WITH_TAB$[GetScheme('diablerize').GetTypeName]"
 
  #refer to vanilla buildings
  camp_purpose_mercenaries_effects: "$EFFECT_LIST_BULLET$Находит больше [Concept('mercenary_task_contracts', 'контрактов наемника')|E]\n$EFFECT_LIST_BULLET$Находит больше [Concept('task_contracts', 'контрактов')|E], связанных с [Concept('prowess', 'доблестью')|E] и [Concept('martial', 'военным делом')|E]\n\n#WEAK Наёмники в первую очередь зарабатывают на жизнь мечом. Обычно действуют законными методами, но когда наступают тяжёлые времена, а у тебя нет ничего, кроме топора...#!"
@@ -529,4 +538,51 @@
  camp_purpose_scholars_effects: "$EFFECT_LIST_BULLET$Находит больше [Concept('task_contracts', 'контрактов')|E], связанных с [Concept('learning', 'ученостью')|E] и [Concept('stewardship', 'управлением')|E]\n$EFFECT_LIST_BULLET$Находит немного больше [Concept('task_contracts', 'договоров')|E], связанных с [Concept('diplomacy', 'дипломатией')|E]\n\n#WEAK Книга, хранимая в одной библиотеке, не знает покоя, а идея, хранимая в одной голове, прозябает зря.#!"
  camp_purpose_brigands_effects: "$EFFECT_LIST_BULLET$Находит больше разнообразных [Concept('criminal_task_contracts', 'преступных контрактов')|E]\n$EFFECT_LIST_BULLET$Находит больше [Concept('task_contracts', 'контрактов')|E], связанных с [Concept('prowess', 'доблестью')|E] и [Concept('intrigue', 'интригами')|E]\n\n#WEAK «Бандит» звучит так некрасиво. Нет ничего зазорного в коварстве и практичности, особенно если на них удается хорошо нажиться.#!"
  camp_purpose_legitimists_effects: "$EFFECT_LIST_BULLET$Равные шансы найти [Concept('task_contracts', 'контракт')|E] любого типа\n$EFFECT_LIST_BULLET$Доступны взаимодействия «$request_laamp_legitimist_support$» с королями и императорами\n$EFFECT_LIST_BULLET$Доступны $claim_cb$ [Concept('casus_belli', 'казус белли')|E]\n$EFFECT_LIST_BULLET$Может найти уникальный [Concept('task_contracts', 'контракт')|E] «$laamp_legitimist_support_contract$»\n\n#WEAK Они называют это претензией. Всего лишь претензией. Это не просто претензия, это требование, это заявление о намерениях и однозначное свидетельство того, что расплата однажды придет.#!"
- ep3_can_have_legitimists_camp_purpose_trigger.tt.explanation: "У вас должна быть [Concept('pressed_claim', 'обоснованная претензия')|E] хотя бы на один [Concept('title', 'титул')|E] [Concept('kingdom', 'королевского')|E] [Concept('title_tier', 'уровня')|E]" 
+ ep3_can_have_legitimists_camp_purpose_trigger.tt.explanation: "У вас должна быть [Concept('pressed_claim', 'обоснованная претензия')|E] хотя бы на один [Concept('title', 'титул')|E] [Concept('kingdom', 'королевского')|E] [Concept('title_tier', 'уровня')|E]"
+ declared_major_religious_war_flag_tt: "Вы можете развязать большую религиозную войну каждые 50 лет."
+
+ game_concept_levies: "Mortal Rabble"
+ game_concept_levy: "Mortal Rabble"
+ game_concept_levies_desc: "$game_concept_levies$ is often embroiled in the wars of the supernaturals, often without knowing who they truly serve.\n\nEach [holding|E] provides a set number of $game_concept_levies$ to their [holder|E]. [vassals|E] in turn provide a part of their $game_concept_levies$ to their [liege|E].\n\n$game_concept_levies$ is made up of mostly poorly-armed fighters #weak (peasant militias, ruffians, local sellswords, destitute nobles, etc.)#! and are considered their own unit type.\n\nA $game_concept_levy$ has [GetDefine('NCombat', 'LEVY_ATTACK')|0] [damage|E] and [GetDefine('NCombat', 'LEVY_TOUGHNESS')|0] [toughness|E]. The other type of [soldiers|E] in the game are [men_at_arms|E] — expensive trained professionals."
+ CONTRIBUTABLE_VASSAL_LEVIES: "Total Mortal Rabble"
+ TOTAL_LEVIES: "Contributed Mortal Rabble"
+ REFILLS_LEVIES: "Refills Mortal Rabble"
+ MY_REALM_WINDOW_LEVIES_TO_LIEGE: "Mortal Rabble: [MyRealmWindow.GetCachedLeviesToLiege]"
+ SUBJECT_CONTRACT_OBLIGATIONS_TITLE_LEVIES: "Mortal Rabble Level"
+ SUBJECT_CONTRACT_OBLIGATION_LEVEL_LEVIES_EFFECT_TOOLTIP: "Mortal Rabble: $LEVIES|%1V$ ($LEVIES_CHANGE|+=%1$)"
+ SUBJECT_CONTRACT_OBLIGATION_LEVEL_LEVIES_EFFECT_TOOLTIP_CURRENT: "Mortal Rabble: $LEVIES|%1V$"
+ levies_lowercase: "mortal rabble"
+ TAX_SLOT_VASSAL_WINDOW_SORT_LEVIES: "Mortal Rabble"
+ TAX_SLOT_VASSAL_WINDOW_SORT_LEVY_CONTRIBUTION: "Mortal Rabble Contribution"
+ TAX_SLOT_VASSAL_WINDOW_TAX_SLOT_LEVIES: "Mortal Rabble Contribution"
+ LEVIES_ARMY_REGIMENT_NAME: "Mortal Rabble"
+ ARMY_VIEW_LEVIES: "Mortal Rabble"
+ ARMY_VIEW_LEVIES_TOOLTIP: "#T Mortal Rabble#!"
+ APPOINTMENT_THEME_SORT_LEVIES: "Mortal Rabble"
+ APPOINTMENT_THEME_SORT_LEVIES: "Mortal Rabble"
+ LV_HEADER: "Mortal Rabble"
+ LV_FLAVOR: "Mortal Rabble is made up of mostly poorly-armed fighters, like peasant militias, ruffians, local sellswords, destitute nobles, etc."
+ LV_NO_COUNTERS: "Mortal Rabble never [counters|E] other Types"
+
+ # Witch -> Infernalism reflavor
+ secret_witch: "Infernalist"
+ secret_witch_desc: "Is an Infernalist"
+ secret_witch_tooltip_desc: "This character has the taint of hell on them."
+ # a -> an
+ CHARACTER_IS_A_WITCH: "[CHARACTER.GetShortUIName|U] is an [GetTrait('witch').GetName( CHARACTER.Self )]"
+ IS_A_WITCH: "Is an [GetTrait('witch').GetName( GetNullCharacter )]"
+ IS_NOT_A_WITCH: "Is #bold not#! an [GetTrait('witch').GetName( CHARACTER.Self )]"
+
+ CHARCTER_HAS_A_WITCH_SECRET_KNOWN_BY_CHARACTER: "[CHARACTER.GetShortUIName|U] has an Infernalist [secret|E] known by [TARGET_CHARACTER.GetShortUIName]"
+ CHARCTER_HAS_A_WITCH_SECRET_NOT_KNOWN_BY_CHARACTER: "[CHARACTER.GetShortUIName|U] has an Infernalist [secret|E] known by [TARGET_CHARACTER.GetShortUIName]"
+ HAS_A_WITCH_SECRET_KNOWN_BY_CHARACTER: "Has an Infernalist [secret|E] known by [TARGET_CHARACTER.GetShortUIName]"
+ convert_to_witch: "Convert to Infernalism"
+
+ witch.1001.message: "Infernalism Induction"
+ child_witch_conversion_critical_failure_effect.liege.desc: "[child.GetFirstNameNoTooltip] reveals infernalist guardian"
+ witch.2003.message: "The infernalist reveals [owner.GetHerselfHimself] to me"
+ convert_to_witchcraft_key: "Convert to Infernalism"
+ convert_to_witchcraft_interaction_notification: "Convert to Infernalism"
+ convert_to_witchcraft_scheme_invalidated_title: "@scheme_icon! Convert to Infernalism Scheme Ends"
+ convert_to_witchcraft_general_desc: "A scheme to introduce a target to infernalism in hopes to grow their cult."
+ reveal_as_witch_interaction: "Reveal As Infernalist"

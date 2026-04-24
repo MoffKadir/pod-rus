@@ -1,25 +1,25 @@
 ﻿l_russian:
 
  rf_wyrm: "Вирмск"
- rf_wyrm_desc: "Являясь членом Триады, трёх величайших духовных сущностей, Вирм олицетворяет энтропию, распад и возрождение. Его погружение в безумие стало катализатором некоторых из величайших катастроф, с которыми столкнулось мироздание."
+ rf_wyrm_desc: "Являясь членом [Glossary('Триады', 'glossary_triat_tt')], трёх величайших духовных сущностей, [Glossary('Вирм', 'glossary_wyrm_tt')] олицетворяет энтропию, распад и возрождение. Его погружение в безумие стало катализатором некоторых из величайших катастроф, с которыми столкнулось мироздание."
 
  wyrm_religion: "Вирмск"
- wyrm_religion_adj: "@fera_icon! Вирм"
+ wyrm_religion_adj: "@wyrm_icon! Вирм"
  wyrm_religion_adherent: "Вирм"
  wyrm_religion_adherent_plural: "Вирм"
- wyrm_religion_desc: "Вирм - один из высших целестинов. Цель Вирма - очищение и исправление Творения, способствующее его погружению в энтропию. Он добивается этого, уничтожая то, что создает Вильд и строит Ткачиха.\nС появлением человечества Вирма стали постепенно сдерживать, пока он не сошел с ума, стремясь уничтожить все. Таким образом, Вирм стал духом разрушения, хаоса, тьмы и порчи, а его тёмные слуги распространились повсюду."
+ wyrm_religion_desc: "To serve the $glossary_wyrm$ is to serve madness itself. The mad god revels in all forms of destruction and corruption, and its fallen minions seek to gain its unholy favor."
 
- wyrm_high_god_name: "Вирм"
- wyrm_high_god_name_possessive: "Вирма"
- wyrm_high_god_name_alternate: "Пожиратель душ"
- wyrm_high_god_name_alternate_possessive: "Пожирателя душ"
+ wyrm_high_god_name: "[Glossary('Вирм', 'glossary_wyrm_tt')]"
+ wyrm_high_god_name_possessive: "[Glossary('Вирма', 'glossary_wyrm_tt')]"
+ wyrm_high_god_name_alternate: "[Glossary('Пожиратель душ', 'glossary_wyrm_consumption_tt')]"
+ wyrm_high_god_name_alternate_possessive: "[Glossary('Пожирателя душ', 'glossary_wyrm_consumption_tt')]"
  wyrm_devil_name: "Гея"
  wyrm_devil_name_possessive: "Геи"
- wyrm_evil_god_wyld: "Вильд"
- wyrm_evil_god_weaver: "Ткачиха"
+ wyrm_evil_god_wyld: "[Glossary('Вильд', 'glossary_wyld_tt')]"
+ wyrm_evil_god_weaver: "[Glossary('Ткачиха', 'glossary_weaver_tt')]"
  wyrm_evil_god_gaia: "Гея"
- wyrm_death_deity_name: "Вирм"
- wyrm_death_deity_name_possessive: "Вирма"
+ wyrm_death_deity_name: "[Glossary('Вирм', 'glossary_wyrm_tt')]"
+ wyrm_death_deity_name_possessive: "[Glossary('Вирма', 'glossary_wyrm_tt')]"
  wyrm_house_of_worship: "каэрн"
  wyrm_house_of_worship_plural: "каэрны"
  wyrm_religious_symbol: "глиф"
@@ -37,11 +37,11 @@
  wyrm_priest_alternate_plural: "Жрецы"
  wyrm_bishop: "Жрец"
  wyrm_bishop_plural: "Жрецы"
- wyrm_divine_realm: "Малфеас"
- wyrm_positive_afterlife: "Малфеас"
+ wyrm_divine_realm: "[UmbraGlossary('malfeas')]"
+ wyrm_positive_afterlife: "[UmbraGlossary('malfeas')]"
  wyrm_negative_afterlife: "дебри"
- wyrm_witchgodname_the_horned_god: "Осквернитель"
- wyrm_witchgodname_the_horned_god_possessive: "Осквернителя"
+ wyrm_witchgodname_the_horned_god: "[Glossary('Вирм-Осквернитель', 'glossary_wyrm_corruption_tt')]"
+ wyrm_witchgodname_the_horned_god_possessive: "[Glossary('Вирма-Осквернителя', 'glossary_wyrm_corruption_tt')]"
 
  wyrm_creator_god_name: "$wyrm_high_god_name$"
  wyrm_creator_god_name_possessive: "$wyrm_high_god_name_possessive$"
@@ -57,14 +57,23 @@
  wyrm_fate_god_name_possessive: "$wyrm_high_god_name_possessive$"
  wyrm_knowledge_god_name: "$wyrm_high_god_name$"
  wyrm_knowledge_god_name_possessive: "$wyrm_high_god_name_possessive$"
- wyrm_war_god_name: "Зверь войны"
- wyrm_war_god_name_possessive: "Зверя войны"
+ wyrm_war_god_name: "[Glossary('Зверь войны', 'glossary_wyrm_calamity_tt')]"
+ wyrm_war_god_name_possessive: "[Glossary('Зверя войны', 'glossary_wyrm_calamity_tt')]"
  wyrm_trickster_god_name: "Псеулак"
  wyrm_trickster_god_name_possessive: "Псеулака"
  wyrm_night_god_name: "Фоэбок"
  wyrm_night_god_name_possessive: "Фоэбока"
  wyrm_water_god_name: "Вакшаа"
  wyrm_water_god_name_possessive: "Вакшаа"
+
+
+
+ holy_order_wyrm_chosen: "Wyrm's Chosen"
+ holy_order_calamity_heralds: "Calamity's Heralds"
+ holy_order_bringer_ruin: "Bringers of Ruin"
+ holy_order_defiler_champions: "Defiler's Champions"
+
+
 
  ################
  #### Faiths ####
@@ -78,13 +87,19 @@
  blackspiraldancer_religion_adj: "@werewolf_icon! Танцоры Черной Спирали"
  blackspiraldancer_religion_adherent: "Танцор Черной Спирали"
  blackspiraldancer_religion_adherent_plural: "Танцоры Черной Спирали"
- blackspiraldancer_religion_desc: "Известные также как Потерянное племя, ужасные Танцоры Черной Спирали - это гару, обратившиеся к Вирму. Когда-то они были известны как Белые завыватели, но после того, как племя попыталось в одиночку справиться с Вирмом, они исказились до неузнаваемости."
+ blackspiraldancer_religion_desc: "Известные также как Потерянное племя, ужасные Танцоры Черной Спирали - это гару, обратившиеся к Вирму. Когда-то они были известны как Белые завыватели, но после того, как племя попыталось в одиночку справиться с [Glossary('Вирмом', 'glossary_wyrm_tt')], они исказились до неузнаваемости."
+
+ holy_order_death_spiral: "Death Spiral"
+ holy_order_heralds_hydra: "Heralds of the Hydra"
+ holy_order_bringers_apocalypse: "Bringers of the Apocalypse"
+ holy_order_balefire_warriors: "Balefire Warriors"
+
 
  blackspiraldancer: "Чёрно-спиральск"
  blackspiraldancer_adj: "Танцоры Черной Спирали"
  blackspiraldancer_adherent: "Танцор Черной Спирали"
  blackspiraldancer_adherent_plural: "Танцоры Черной Спирали"
- blackspiraldancer_desc: "Известные также как Потерянное племя, ужасные Танцоры Черной Спирали - это гару, обратившиеся к Вирму. Когда-то они были известны как Белые завыватели, но после того, как племя попыталось в одиночку справиться с Вирмом, они исказились до неузнаваемости."
+ blackspiraldancer_desc: "Известные также как Потерянное племя, ужасные Танцоры Черной Спирали - это гару, обратившиеся к [Glossary('Вирму', 'glossary_wyrm_tt')]. Когда-то они были известны как Белые завыватели, но после того, как племя попыталось в одиночку справиться с Вирмом, они исказились до неузнаваемости."
 
  cluithi: "Клуйтийск"
  cluithi_adj: "Клуйти"
@@ -96,14 +111,13 @@
  princesofruin_adj: "Князья разрушения"
  princesofruin_adherent: "Князь разрушения"
  princesofruin_adherent_plural: "Князья разрушения"
- princesofruin_desc: "Князья разрушения утверждают, что война за Апокалипсис закончена. Они проповедуют самообольщение, утверждая, что умирающий труп мира теперь принадлежит им, чтобы править им и обращаться с ним, как им заблагорассудится. Триумфальные поборники Разрушителя, они утверждают, что потакание своим низменным инстинктам - это категорическое поклонение Вирму. Князья разрушения считают более традиционных Танцоров Черной Спирали деревенщинами и религиозными фанатиками; между представителями двух философий часто происходят столкновения."
+ princesofruin_desc: "Князья разрушения утверждают, что война за Апокалипсис закончена. Они проповедуют самообольщение, утверждая, что умирающий труп мира теперь принадлежит им, чтобы править им и обращаться с ним, как им заблагорассудится. Триумфальные поборники Разрушителя, они утверждают, что потакание своим низменным инстинктам - это категорическое поклонение [Glossary('Вирму', 'glossary_wyrm_tt')]."
 
  seekersoftheancient: "Искательск"
  seekersoftheancient_adj: "Искатели древних"
  seekersoftheancient_adherent: "Искатель"
  seekersoftheancient_adherent_plural: "Искатели"
  seekersoftheancient_desc: "Темные друиды земли, стремящиеся к общению с атмосферой и геомантией, окружающей Древних. Они не восхваляют сам дух, но взывают к достоинствам его элементов, вызывая его косвенно, чтобы он действовал через природу. Это наделяет их проницательностью и силой, позволяя им развивать и направлять Яму, связанную с окружающим ландшафтом. Они служат шаманами, рискуя попасть в плен и лишиться рассудка, чтобы общаться с немыслимыми духами и получать знания напрямую."
-
 
 
  ##############
@@ -115,7 +129,7 @@
  wyrmbound_adj: "Узы Вирма"
  wyrmbound_adherent: "Осквернённый"
  wyrmbound_adherent_plural: "Осквернённые"
- wyrmbound_desc: "У Вирма много слуг. Кто-то служит сознательно, кто-то неосознанно. Но все их действия служат высшей цели Вирма - вызвать Апокалипсис, конец Геи. Таким образом, все существа, которые причиняют страдания, предаются разврату и/или участвуют в разрушении, вольно или невольно, сознательно или неосознанно, являются слугами Вирма."
+ wyrmbound_desc: "У [Glossary('Вирма', 'glossary_wyrm_tt')] много слуг. Кто-то служит сознательно, кто-то неосознанно. Но все их действия служат высшей цели Вирма - вызвать Апокалипсис, конец Геи. Таким образом, все существа, которые причиняют страдания, предаются разврату и/или участвуют в разрушении, вольно или невольно, сознательно или неосознанно, являются слугами Вирма."
 
  
  #Bone Gnawers
@@ -124,6 +138,8 @@
  maneaters_adherent: "Людоед"
  maneaters_adherent_plural: "Людоеды"
  maneaters_desc: "Этот лагерь Костегрызов обретает силу, нарушая догмат Литании, запрещающий каннибализм с человеческой плотью. Большинство «новообращенных» из этого лагеря были гару, которые слишком часто поддавались ярости. Сегодня их мало, а многие из оставшихся объединились с аналогичным лагерем Пожирателей мертвых среди Безмолвных странников.\nСлучайные жуткие истории о прожорливых оборотнях также подтверждают существование Людоедов - в конце концов, в голодные времена для Грызущего слишком заманчиво накормить себя и заодно избавить от лишнего голодный рот или три."
+
+ holy_order_butchers_men: "Butchers of Men"
 
  #Shadowlords
  masks: "Маскск"
@@ -137,42 +153,70 @@
  societyofnidhogg_adj: "Общество Нидхёгга"
  societyofnidhogg_adherent: "Нидхёггист"
  societyofnidhogg_adherent_plural: "Нидхёггисты"
- societyofnidhogg_desc: "Все Теневые владыки понимают силу тьмы, но никто из них не осознает ее так глубоко, как члены этого тайного мистического лагеря. Их фанатизм настолько силен, что они утверждают, будто солнечный свет сам по себе представляет угрозу для сил Грома, и стремятся погрузить мир в вечную тьму (чтобы их племя смогло прийти к власти без помощи непреклонных лучей Гелиоса)."
+ societyofnidhogg_desc: "Все Теневые владыки понимают силу тьмы, но никто из них не осознает ее так глубоко, как члены этого тайного мистического лагеря. Их фанатизм настолько силен, что они утверждают, будто солнечный свет сам по себе представляет угрозу для сил Грома, и стремятся погрузить мир в вечную тьму."
 
+ holy_order_writhing_shadows: "The Writhing Shadows"
+
+ #Hakken
+ ebon_centipede: "Ebon Centipede"
+ ebon_centipede_adj: "Ebon"
+ ebon_centipede_adherent: "Maze Seeker"
+ ebon_centipede_adherent_plural: "Maze Seekers"
+ ebon_centipede_desc: "When the shadows become too deep that despair or cruelty overwhelms one of the Hakken, they may subject themselves to the Ebon Maze and swear themselves to [Glossary('Centipede', 'glossary_wyrm_tt')]. Lone, wretched, and violent creatures, they are a bane to all that is spiritually good, much alike the degenerate #ONCLICK:FAITH,blackspiraldancer #TOOLTIP:FAITH,blackspiraldancer $Destroyer Werewolves|L$#!#! in the West." 
+
+ ebon_centipede_high_god_name: "[Glossary('Centipede', 'glossary_wyrm_tt')]"
+ ebon_centipede_high_god_name_possessive: "[Glossary('Centipede', 'glossary_wyrm_tt')]'s"
+ ebon_centipede_high_god_name_alternate: "$ebon_centipede_high_god_name$"
+ ebon_centipede_high_god_name_alternate_possessive: "$ebon_centipede_high_god_name_possessive$"
+ ebon_centipede_creator_god_name: "$ebon_centipede_high_god_name$"
+ ebon_centipede_creator_god_name_possessive: "$ebon_centipede_high_god_name_possessive$"
+
+ holy_order_blackened_blades: "Blackened Blades"
 
  #Silent Striders
- eatersofthedead: "Пожирателе-мертвецк"
+ eatersofthedead: "Пожирательск"
  eatersofthedead_adj: "Пожиратели мертвецов"
  eatersofthedead_adherent: "Пожиратель"
  eatersofthedead_adherent_plural: "Пожиратели"
- eatersofthedead_desc: "Лагерь Безмолвных странников, загнанный под землю другими Странниками, где, по слухам, они проводят свои нечестивые обряды среди теней. Поглотить мозг своего врага и узнать все его секреты: мерзкий, но полезный ритуал. Однако все, кто поглощает чужую плоть, постепенно сходят с ума и источают зловоние Вирма. У некоторых даже развивается зависимость от свежих мозгов, и они будут убивать как невинных, так и виновных, чтобы полакомиться."
+ eatersofthedead_desc: "Лагерь Безмолвных странников, загнанный под землю другими Странниками, где, по слухам, они проводят свои нечестивые обряды среди теней. Поглотить мозг своего врага и узнать все его секреты: мерзкий, но полезный ритуал. Однако все, кто поглощает чужую плоть, постепенно сходят с ума и источают зловоние [Glossary('Вирма', 'glossary_wyrm_tt')]. У некоторых даже развивается зависимость от свежих мозгов, и они будут убивать как невинных, так и виновных, чтобы полакомиться."
 
+ holy_order_children_ammit: "Children of Ammit"
 
  #Star Gazers
  metasticbirth: "Метастическ"
  metasticbirth_adj: "Метастическое рождение"
  metasticbirth_adherent: "Повитуха"
  metasticbirth_adherent_plural: "Повитухи"
- metasticbirth_desc: "Эти Звездочёты верят, что Вирм не заточён в клетке, а находится в коконе, в котором он проходит метаморфозы, готовясь к новой реальности, рождаемой Ткачихой. Как только метаморфоза завершится, он вырвется из своей хризалиды и откроет новый мир. Звездочеты, которые следуют за этим лагерем, считают, что это хорошо, и что племя должно помогать другим готовиться к этому, а не бороться с ним."
+ metasticbirth_desc: "Эти Звездочёты верят, что [Glossary('Вирм', 'glossary_wyrm_tt')] не заточён в клетке, а находится в коконе, в котором он проходит метаморфозы, готовясь к новой реальности, рождаемой [Glossary('Ткачихой', 'glossary_weaver_tt')]. Как только метаморфоза завершится, он вырвется из своей хризалиды и откроет новый мир. Звездочеты, которые следуют за этим лагерем, считают, что это хорошо, и что племя должно помогать другим готовиться к этому, а не бороться с ним."
 
  #Star Gazers
+ ouroboroans: "Уроборейск"
+ ouroboroans_adj: "Уроборейцы"
+ ouroboroans_adherent: "Уробореец"
+ ouroboroans_adherent_plural: "Уроборейцы"
+ ouroboroans_desc: "Они стремятся освободить [Glossary('Вирма', 'glossary_wyrm_tt')] Равновесия из Паутины. Вместо того чтобы бороться с [Glossary('Ткачихой', 'glossary_weaver_tt')], они тратят свою энергию на поиски Вирма во всех его проявлениях в надежде открыть секрет его освобождения. Только следуя за Вирмом в его пещеру, а не сражаясь с его приспешниками, они считают, что могут по-настоящему повлиять на исход Последней войны. Поэтому некоторые из этих монахов считают, что пути Вирма нужно использовать, а не избегать."
+
+ holy_order_unshacklers_corruption: "Unshacklers of Corruption"
+
+
+ #Warders of Men
  boli_zouhisze: "Цзоухицзск"
  boli_zouhisze_adj: "Боли цзоухицзе"
- boli_zouhisze_adherent: "Боли цзоухицзе"
- boli_zouhisze_adherent_plural: "Боли цзоухицзе"
+ boli_zouhisze_adherent: "Верный"
+ boli_zouhisze_adherent_plural: "Верные"
  boli_zouhisze_desc: "Китайское ответвление Стражей людей, отделившееся примерно в 2000 году до н.э., хотя они сохранили некоторые аспекты культуры своего родительского племени, такие как уважение к человеческой культуре и почитание духа Таракана. Последнее стало причиной того, что местные $glossary_fera$ в Китае стали сторониться Боли цзоухицзе и исключать их из Звериных дворов, поскольку у хенгейокай образы насекомых сильно ассоциируются с Вирмом."
  
-
+ holy_order_chaos_spinners: "Chaos Spinners"
 
  #Ceilicans
- hellcats_high_god_name: "Кахлаш"
- hellcats_high_god_name_possessive: "Кахлаша"
+ hellcats_high_god_name: "[Glossary('Кахлаш', 'glossary_wyrm_tt')]"
+ hellcats_high_god_name_possessive: "[Glossary('Кахлаша', 'glossary_wyrm_tt')]"
  hellcats_high_god_name_alternate: "Расплетатель"
  hellcats_high_god_name_alternate_possessive: "Расплетателя"
  hellcats_evil_god_nala: "Нала"
  hellcats_evil_god_rahjah: "Раджа"
- hellcats_death_deity_name: "Кахлаш"
- hellcats_death_deity_name_possessive: "Кахлаша"
+ hellcats_death_deity_name: "[Glossary('Кахлаш', 'glossary_wyrm_tt')]"
+ hellcats_death_deity_name_possessive: "[Glossary('Кахлаша', 'glossary_wyrm_tt')]"
  hellcats_creator_god_name: "$hellcats_high_god_name$"
  hellcats_creator_god_name_possessive: "$hellcats_high_god_name_possessive$"
  hellcats_household_god_name: "$wyrm_health_god_name$"
@@ -186,4 +230,15 @@
  hellcats_adj: "Адские коты"
  hellcats_adherent: "Адский кот"
  hellcats_adherent_plural: "Адские коты"
- hellcats_desc: "Когда Танцоры Черной Спирали напали на ежегодный сход бастет из племени Цейликан в Шотландии, они заточили некоторых из них в [UmbraGlossary('black_spiral_labyrinth')], чтобы обратить их к Вирму. Те, кто выжил, стали Адскими котами, их обычное искреннее безумие превратилось в саморазрушение и бездумную агрессию. Ожидая Апокалипсиса, чтобы почтить своего Темного отца, эти запятнанные существа принесли с собой мощные связи с иллюзорными дарами фей и различными фетишами Вирма, которые они сконструировали с любопытством, подобным любопытству бастет."
+ hellcats_desc: "Когда Танцоры Черной Спирали напали на ежегодный сход бастет из племени Цейликан в Шотландии, они заточили некоторых из них в [UmbraGlossary('black_spiral_labyrinth')], чтобы обратить их к [Glossary('Вирму', 'glossary_wyrm_tt')]. Те, кто выжил, стали Адскими котами, их обычное искреннее безумие превратилось в саморазрушение и бездумную агрессию. Ожидая Апокалипсиса, чтобы почтить своего Темного отца, эти запятнанные существа принесли с собой мощные связи с иллюзорными дарами фей и различными фетишами Вирма, которые они сконструировали с любопытством, подобным любопытству бастет."
+
+ holy_order_eyes_cahlash: "Eyes of Cahlash"
+
+ 
+ mnetics: "Mnetics"
+ mnetics_adj: "Mnetic"
+ mnetics_adherent: "Mnetic"
+ mnetics_adherent_plural: "Mnetics"
+ mnetics_desc: "The Mnetics are the Eaters of Secrets. Their eyes have been opened to the truth that memories are ephemeral and malleable. While the other Mokolé spend years reliving the past through Mnesis, the Mnetics know that it is all a lie. If all Mokolé remember the past, then why is it so different for everyone? The Eaters of Secrets revel in twisting Mnesis with their lies and deception. Many Mokolé have fallen to the [Glossary('Dissolver', 'glossary_wyrm_tt')] believing his lies, and the Mnetics grow ever stronger as a result."
+
+ holy_order_forgotten_nightmares: "The Forgotten Nightmares"

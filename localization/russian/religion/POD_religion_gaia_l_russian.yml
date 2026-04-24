@@ -5,16 +5,16 @@
 
  gaia_high_god_name: "Гея"
  gaia_high_god_name_possessive: "Геи"
- gaia_high_god_name_alternate: "Вильд"
- gaia_high_god_name_alternate_possessive: "Вильда"
+ gaia_high_god_name_alternate: "[Glossary('Вильд', 'glossary_wyld_tt')]"
+ gaia_high_god_name_alternate_possessive: "[Glossary('Вильда', 'glossary_wyld_tt')]"
  gaia_good_god_earth: "Земля"
- gaia_devil_name: "Вирм"
- gaia_devil_name_possessive: "Вирма"
- gaia_evil_god_eater_of_souls: "Пожиратель душ"
- gaia_evil_god_beast_of_war: "Зверь войны"
- gaia_evil_god_defiler: "Осквернитель"
- gaia_death_deity_name: "Вирм"
- gaia_death_deity_name_possessive: "Вирма"
+ gaia_devil_name: "[Glossary('Вирм', 'glossary_wyrm_tt')]"
+ gaia_devil_name_possessive: "[Glossary('Вирма', 'glossary_wyrm_tt')]"
+ gaia_evil_god_eater_of_souls: "[Glossary('Пожиратель душ', 'glossary_wyrm_consumption_tt')]"
+ gaia_evil_god_beast_of_war: "[Glossary('Зверь войны', 'glossary_wyrm_calamity_tt')]"
+ gaia_evil_god_defiler: "[Glossary('Вирм-Осквернитель', 'glossary_wyrm_corruption_tt')]"
+ gaia_death_deity_name: "[Glossary('Вирм', 'glossary_wyrm_tt')]"
+ gaia_death_deity_name_possessive: "[Glossary('Вирма', 'glossary_wyrm_tt')]"
  gaia_house_of_worship: "каэрн"
  gaia_house_of_worship_plural: "каэрны"
  gaia_religious_symbol: "глиф"
@@ -35,8 +35,8 @@
  gaia_divine_realm: "земля"
  gaia_positive_afterlife: "дебри"
  gaia_negative_afterlife: "спираль"
- gaia_witchgodname_the_horned_god: "Осквернитель"
- gaia_witchgodname_the_horned_god_possessive: "Осквернителя"
+ gaia_witchgodname_the_horned_god: "[Glossary('Вирм-Осквернитель', 'glossary_wyrm_corruption_tt')]"
+ gaia_witchgodname_the_horned_god_possessive: "[Glossary('Вирма-Осквернителя', 'glossary_wyrm_corruption_tt')]"
 
  gaia_creator_god_name: "$gaia_high_god_name$"
  gaia_creator_god_name_possessive: "$gaia_high_god_name_possessive$"
@@ -60,6 +60,23 @@
  gaia_night_god_name_possessive: "$gaia_high_god_name_possessive$"
  gaia_water_god_name: "$gaia_health_god_name$"
  gaia_water_god_name_possessive: "$gaia_health_god_name_possessive$"
+
+
+
+ #Hengeyokai
+ emerald_mother_high_god_name: "Emerald Mother"
+ emerald_mother_high_god_name_possessive: "Emerald Mother's"
+ emerald_mother_household_god_name: "$emerald_mother_high_god_name$"
+ emerald_mother_household_god_name_possessive: "$emerald_mother_high_god_name_possessive$"
+ emerald_mother_fate_god_name: "$emerald_mother_high_god_name$"
+ emerald_mother_fate_god_name_possessive: "$emerald_mother_high_god_name_possessive$"
+ emerald_mother_knowledge_god_name: "$emerald_mother_high_god_name$"
+ emerald_mother_knowledge_god_name_possessive: "$emerald_mother_high_god_name_possessive$"
+ emerald_mother_water_god_name: "$emerald_mother_high_god_name$"
+ emerald_mother_water_god_name_possessive: "$emerald_mother_high_god_name_possessive$"
+
+
+
 
 
  #################
@@ -88,19 +105,19 @@
  blackfury_religion_adj: "@werewolf_icon! Чёрные фурии"
  blackfury_religion_adherent: "Фурия"
  blackfury_religion_adherent_plural: "Фурии"
- blackfury_religion_desc: "Матриархи гару ближе всего к Вильду, чем большинство других племён, и известны своей честью, мудростью, гордостью и яростным мастерством в бою.\nФурии почитают Вильда как силу женственности, инстинкта, а не интеллектуальных абстракций Ткачихи (которую в племени считают мужественной). Вильд - это сила, которая поддерживает циклы Геи и Луны и дополняет их."
+ blackfury_religion_desc: "Матриархи гару ближе всего к [Glossary('Вильду', 'glossary_wyld_tt')], чем большинство других племён, и известны своей честью, мудростью, гордостью и яростным мастерством в бою.\nФурии почитают Вильда как силу женственности, инстинкта, а не интеллектуальных абстракций [Glossary('Ткачихи', 'glossary_weaver_tt')] (которую в племени считают мужественной). Вильд - это сила, которая поддерживает циклы Геи и Луны и дополняет их."
 
  blackfury: "Чёрно-фурийск"
  blackfury_adj: "Чёрные фурии"
  blackfury_adherent: "Фурия"
  blackfury_adherent_plural: "Фурии"
- blackfury_desc: "Матриархи гару ближе всего к Вильду, чем большинство других племён, и известны своей честью, мудростью, гордостью и яростным мастерством в бою.\nФурии почитают Вильда как силу женственности, инстинкта, а не интеллектуальных абстракций Ткачихи (которую в племени считают мужественной). Вильд - это сила, которая поддерживает циклы Геи и Луны и дополняет их."
+ blackfury_desc: "Матриархи гару ближе всего к [Glossary('Вильду', 'glossary_wyld_tt')], чем большинство других племён, и известны своей честью, мудростью, гордостью и яростным мастерством в бою.\nФурии почитают Вильда как силу женственности, инстинкта, а не интеллектуальных абстракций [Glossary('Ткачихи', 'glossary_weaver_tt')] (которую в племени считают мужественной). Вильд - это сила, которая поддерживает циклы Геи и Луны и дополняет их."
 
  amazonsofdiana: "Амазонко-дианск"
  amazonsofdiana_adj: "Амазонки Дианы"
  amazonsofdiana_adherent: "Амазонка"
  amazonsofdiana_adherent_plural: "Амазонки"
- amazonsofdiana_desc: "Группа Чёрных фурий, которые больше стремятся быть дерзкими, неудержимыми женщинами-воинами, чем священными мстителями. Этот лагерь редко рассматривается как официальная группа, и является скорее общим местом для тех, кто больше стремится доказать, что они равны любому мужчине в бою с Вирмом. Некоторые в лагере считают необходимым вернуть фурий в будущее и отказаться от их бессмысленной и архаичной практики преследования преступников, но гару, которые просто ненавидят всех мужчин, тяготеют к амазонкам."
+ amazonsofdiana_desc: "Группа Чёрных фурий, которые больше стремятся быть дерзкими, неудержимыми женщинами-воинами, чем священными мстителями. Этот лагерь редко рассматривается как официальная группа, и является скорее общим местом для тех, кто больше стремится доказать, что они равны любому мужчине в бою с [Glossary('Вирмом', 'glossary_wyrm_tt')]. Некоторые в лагере считают необходимым вернуть фурий в будущее и отказаться от их бессмысленной и архаичной практики преследования преступников, но гару, которые просто ненавидят всех мужчин, тяготеют к амазонкам."
 
  avengingmother: "Мстяще-матьск"
  avengingmother_adj: "Мстящая мать"
@@ -112,19 +129,19 @@
  bacchantes_adj: "Вакханки"
  bacchantes_adherent: "Вакханка"
  bacchantes_adherent_plural: "Вакханки"
- bacchantes_desc: "Консервативная фракция, преследующая изначальную священную цель Черных фурий - мстить за зло, причиненное женщинам и детям, с фанатичным рвением и безжалостной жестокостью. Они верят, что таким образом борются с властью Вирма над человечеством и мстят за саму Гею."
+ bacchantes_desc: "Консервативная фракция, преследующая изначальную священную цель Черных фурий - мстить за зло, причиненное женщинам и детям, с фанатичным рвением и безжалостной жестокостью. Они верят, что таким образом борются с властью [Glossary('Вирма', 'glossary_wyrm_tt')] над человечеством и мстят за саму Гею."
 
  freebooters: "Флибустьерск"
  freebooters_adj: "Флибустьеры"
  freebooters_adherent: "Флибустьер"
  freebooters_adherent_plural: "Флибустьеры"
- freebooters_desc: "Задача флибустьеров - найти новые места Вильда, которые можно посвятить Гее и открыть как каэрны. Куклос сокращается, потому что в мире осталось так мало мест Вильда. Часть флибустьеров считает, что им нужно найти новое тело для Геи в других местах [Concept('umbra', 'Умбры')|E], там, где Вирм еще не нашел."
+ freebooters_desc: "Задача флибустьеров - найти новые места [Glossary('Вильда', 'glossary_wyld_tt')], которые можно посвятить Гее и открыть как каэрны. Куклос сокращается, потому что в мире осталось так мало мест Вильда. Часть флибустьеров считает, что им нужно найти новое тело для Геи в других местах [Concept('umbra', 'Умбры')|E], там, где [Glossary('Вирм', 'glossary_wyrm_tt')] еще не нашел."
 
  moondaughter: "Лунно-дочерск"
  moondaughters_adj: "Дочери Луны"
  moondaughter_adherent: "Дочь Луны"
  moondaughter_adherent_plural: "Дочери Луны"
- moondaughter_desc: "Культ, стремящийся распространить поклонение Гее через язычество. Несмотря на приверженность традициям, они стремятся сохранить дух Геи через изменения, воплощая силу Вильда как можно лучше. Их ритуальные методы в основном включают в себя старую магию, передаваемую и изменяемую из поколения в поколение."
+ moondaughter_desc: "Культ, стремящийся распространить поклонение Гее через язычество. Несмотря на приверженность традициям, они стремятся сохранить дух Геи через изменения, воплощая силу [Glossary('Вильда', 'glossary_wyld_tt')] как можно лучше. Их ритуальные методы в основном включают в себя старую магию, передаваемую и изменяемую из поколения в поколение."
 
  orderofourmercifulmother: "Милосердно-матерьск"
  orderofourmercifulmother_adj: "Орден Милосердной матери"
@@ -174,19 +191,19 @@
  childrenoffamine_adj: "Дети Голода"
  childrenoffamine_adherent: "Дитя Голода"
  childrenoffamine_adherent_plural: "Дитя Голода"
- childrenoffamine_desc: "Голод вполне может быть образом жизни средневековых бедняков - но Дети Голода делают все возможное, чтобы облегчить эту проблему. Известно, что во время голода они промышляют браконьерством на королевских землях или воруют зерно из монастырских амбаров. Гея никогда не хотела, чтобы ее дети голодали, а если голод и случается, то по вине Вирма. Если на землю обрушивается засуха или моровая язва, Дети, как правило, ищут виноватого."
+ childrenoffamine_desc: "Голод вполне может быть образом жизни средневековых бедняков - но Дети Голода делают все возможное, чтобы облегчить эту проблему. Известно, что во время голода они промышляют браконьерством на королевских землях или воруют зерно из монастырских амбаров. Гея никогда не хотела, чтобы ее дети голодали, а если голод и случается, то по вине [Glossary('Вирма', 'glossary_wyrm_tt')]. Если на землю обрушивается засуха или моровая язва, Дети, как правило, ищут виноватого."
 
  childofgaia_religion: "Дети-геянск"
  childofgaia_religion_adj: "@werewolf_icon! Дети Геи"
  childofgaia_religion_adherent: "Дитя"
  childofgaia_religion_adherent_plural: "Дети"
- childofgaia_religion_desc: "Миротворцы гару, Дети добиваются взаимопонимания между племенами и надеются в конце концов объединить все племена в единый фронт против Вирма."
+ childofgaia_religion_desc: "Миротворцы гару, Дети добиваются взаимопонимания между племенами и надеются в конце концов объединить все племена в единый фронт против [Glossary('Вирма', 'glossary_wyrm_tt')]."
 
  childofgaia: "Дети-геянск"
  childofgaia_adj: "Дети Геи"
  childofgaia_adherent: "Дитя"
  childofgaia_adherent_plural: "Дети"
- childofgaia_desc: "Миротворцы гару, Дети добиваются взаимопонимания между племенами и надеются в конце концов объединить все племена в единый фронт против Вирма."
+ childofgaia_desc: "Миротворцы гару, Дети добиваются взаимопонимания между племенами и надеются в конце концов объединить все племена в единый фронт против [Glossary('Вирма', 'glossary_wyrm_tt')]."
 
  servantsoftheunicorn: "Единорогск"
  servantsoftheunicorn_adj: "Слуги Единорога"
@@ -204,7 +221,7 @@
  anointedones_adj: "Помазанники"
  anointedones_adherent: "Помазанник"
  anointedones_adherent_plural: "Помазанники"
- anointedones_desc: "Миротворцы Гару, Дети работают над взаимопониманием между племенами и надеются в конце концов объединить все племена в единый фронт против Вирма. Этот лагерь отказался от насилия во всех его формах. Они не поднимут руку, чтобы ударить другое существо, и постоянно находят новые способы освободиться от ярости, чтобы сохранить этот контроль. Помазанникам трудно существовать в эти времена, но они выживают."
+ anointedones_desc: "Миротворцы Гару, Дети работают над взаимопониманием между племенами и надеются в конце концов объединить все племена в единый фронт против [Glossary('Вирма', 'glossary_wyrm_tt')]. Этот лагерь отказался от насилия во всех его формах. Они не поднимут руку, чтобы ударить другое существо, и постоянно находят новые способы освободиться от ярости, чтобы сохранить этот контроль. Помазанникам трудно существовать в эти времена, но они выживают."
 
  onetree: "Единодревск"
  onetree_adj: "Единое Древо"
@@ -216,7 +233,7 @@
  angelsofgaia_adj: "Ангелы Геи"
  angelsofgaia_adherent: "Ангел"
  angelsofgaia_adherent_plural: "Ангелы"
- angelsofgaia_desc: "Этот лагерь Детей Геи охраняет, защищает и спасает человеческих детей от Вирма-осквернителя. Особенно они заботятся о тех детях, чьи семьи погибли от войны или болезни, а также о тех, кого бросили родители."
+ angelsofgaia_desc: "Этот лагерь Детей Геи охраняет, защищает и спасает человеческих детей от [Glossary('Вирма-осквернителя', 'glossary_wyrm_corruption_tt')]. Особенно они заботятся о тех детях, чьи семьи погибли от войны или болезни, а также о тех, кого бросили родители."
 
  aetherainamorata: "Инаморатск"
  aetherainamorata_adj: "Aethera Inamorata"
@@ -246,7 +263,7 @@
  childrenofdire_adj: "Дети Ужаса"
  childrenofdire_adherent: "Страшный волк"
  childrenofdire_adherent_plural: "Страшные волки"
- childrenofdire_desc: "Состоящий преимущественно из люпусов-гару, этот лагерь следит за эманациями сил Вирма по их влиянию на Вильда. Отмечая изменения в потоке хищников и жертв, а также рост или упадок флоры в местах обитания Вильда, они могут обнаружить влияние Вирма до того, как оно станет сильным. Посторонние часто относятся к лагерю с подозрением, потому что они редко остаются привязанными к одной пещере надолго."
+ childrenofdire_desc: "Состоящий преимущественно из люпусов-гару, этот лагерь следит за эманациями сил [Glossary('Вирма', 'glossary_wyrm_tt')] по их влиянию на [Glossary('Вильда', 'glossary_wyld_tt')]. Отмечая изменения в потоке хищников и жертв, а также рост или упадок флоры в местах обитания Вильда, они могут обнаружить влияние Вирма до того, как оно станет сильным. Посторонние часто относятся к лагерю с подозрением, потому что они редко остаются привязанными к одной пещере надолго."
 
  grancdhildrenoffionn: "Финнск"
  grancdhildrenoffionn_adj: "Внуки Финна"
@@ -258,7 +275,7 @@
  mothersfundamentalists_adj: "Фундаменталисты Матери"
  mothersfundamentalists_adherent: "Фундаменталист"
  mothersfundamentalists_adherent_plural: "Фундаменталисты"
- mothersfundamentalists_desc: "Этот лагерь фианна хочет вернуть Владычество - уничтожение человеческой популяции, практиковавшееся гару в доисторические времена. Они винят бесконтрольное распространение человечества в безумии Ткачихи и Вирма и медленной гибели Геи."
+ mothersfundamentalists_desc: "Этот лагерь фианна хочет вернуть Владычество - уничтожение человеческой популяции, практиковавшееся гару в доисторические времена. Они винят бесконтрольное распространение человечества в безумии [Glossary('Ткачихи', 'glossary_weaver_tt')] и [Glossary('Вирма', 'glossary_wyrm_tt')] и медленной гибели Геи."
 
  songkeepers: "Песнехранительск"
  songkeepers_adj: "Хранители песен"
@@ -277,6 +294,12 @@
  whisperingrovers_adherent: "Бродяга"
  whisperingrovers_adherent_plural: "Бродяги"
  whisperingrovers_desc: "Они не претендуют ни на одну землю как на свою собственную и путешествуют по миру вместе со своей роднёй в группах, сильно зависящих друг от друга в вопросах выживания - вечно мобильные, никогда не задерживающиеся на одном месте надолго. Они выступают в роли глаз и ушей клана, а верховные из каждой группы докладывают верховному из племени Ард обо всем, что замечают в своих странствиях и что может привести к беде для фианна. К Бродягам обращаются, когда знания об определенном месте нужны другим фианна или даже другим племенам."
+
+ dyn_a_drowyd_yn_flaidd: "Dyn a drowyd yn flaidd"
+ dyn_a_drowyd_yn_flaidd_adj: "flaidd"
+ dyn_a_drowyd_yn_flaidd_adherent: "Dyn"
+ dyn_a_drowyd_yn_flaidd_adherent_plural: "Dyn"
+ dyn_a_drowyd_yn_flaidd_desc: "These Welsh Fianna are very insular, secluding themselves in the hills and valleys of their territories and paying little attention to what transpires outside their boundaries. Other Fianna say the Dyn a drowyd yn flaidd mingle their blood with the faeries, giving them powers uncanny even among the Garou, but also leaving them touched with madness.\n\nLike their fierce Kinfolk, the Fianna of the mountainous north are tougher warriors than those of the lowlands, having proven their worth against both the Get of Fenris and the Normans."
 
  getoffenris_religion: "Фенрирск"
  getoffenris_religion_adj: "@werewolf_icon! Отпрыски Фенрира"
@@ -300,7 +323,7 @@
  handoftyr_adj: "Длань Тюра"
  handoftyr_adherent: "Длань"
  handoftyr_adherent_plural: "Длани"
- handoftyr_desc: "Длань Тюра состоит из отпрысков, которые посвятили свое внимание борьбе с влиянием Вирма на человечество. Они борются с насильниками, растлителями детей, террористами и жестокими преступниками."
+ handoftyr_desc: "Длань Тюра состоит из отпрысков, которые посвятили свое внимание борьбе с влиянием [Glossary('Вирма', 'glossary_wyrm_tt')] на человечество. Они борются с насильниками, растлителями детей, террористами и жестокими преступниками."
 
  fangsofgarm: "Гармск"
  fangsofgarm_adj: "Клыки Гарма"
@@ -312,13 +335,13 @@
  mjlolnirsthunder_adj: "Гром Мьёльнира"
  mjlolnirsthunder_adherent: "Посвящённый"
  mjlolnirsthunder_adherent_plural: "Посвящённые"
- mjlolnirsthunder_desc: "Этот древний лагерь состоит из тех, кто потерял (или оборвал) все связи с окружающим миром и посвятил себя исключительно уничтожению Вирма. Им нет дела ни до чего другого: ни до людей, ни до волков, ни до духов, ни до Вуали, ни даже до общества гару в целом. Они - чудовища, которыми другие племена иногда представляют себе всех фенриров, променявших все крупицы сострадания, сочувствия и здравого смысла на единодушную, социопатическую преданность делу уничтожения Вирма."
+ mjlolnirsthunder_desc: "Этот древний лагерь состоит из тех, кто потерял (или оборвал) все связи с окружающим миром и посвятил себя исключительно уничтожению [Glossary('Вирма', 'glossary_wyrm_tt')]. Им нет дела ни до чего другого: ни до людей, ни до волков, ни до духов, ни до Вуали, ни даже до общества гару в целом. Они - чудовища, которыми другие племена иногда представляют себе всех фенриров, променявших все крупицы сострадания, сочувствия и здравого смысла на единодушную, социопатическую преданность делу уничтожения Вирма."
 
  gloriousfistofwotan: "Вотанск"
  gloriousfistofwotan_adj: "Славный кулак Вотана"
  gloriousfistofwotan_adherent: "Кулак"
  gloriousfistofwotan_adherent_plural: "Кулаки"
- gloriousfistofwotan_desc: "Славный кулак Вотана считает, что только уничтожение человечества может спасти Гею. Люди стали величайшим переносчиком, через который распространяется Вирм, поэтому, чтобы обуздать его, они должны быть перебиты."
+ gloriousfistofwotan_desc: "Славный кулак Вотана считает, что только уничтожение человечества может спасти Гею. Люди стали величайшим переносчиком, через который распространяется [Glossary('Вирм', 'glossary_wyrm_tt')], поэтому, чтобы обуздать его, они должны быть перебиты."
 
  lokissmile: "Локийск"
  lokissmile_adj: "Улыбка Локи"
@@ -422,7 +445,7 @@
  bringersoflight_adj: "Приносящие свет"
  bringersoflight_adherent: "Несущий"
  bringersoflight_adherent_plural: "Несущие"
- bringersoflight_desc: "Приносящие свет стремятся обрести внутреннюю силу, постоянно испытывая себя на прочность. Снова и снова они ищут искушения Вирма, взаимодействуя с вампирами, Танцорами Черной спирали, фоморами и другими созданиями Вирма. Хотя многие пали, пытаясь принять догматы этого лагеря, Несущие верят, что самые сильные (и действительно достойные) не поддаются тьме, они ее преодолевают. Конечно, многие падают; путь, который они выбирают, весьма опасен, и они рискуют погибнуть как от рук окружающих, так и от прикосновения Вирма."
+ bringersoflight_desc: "Приносящие свет стремятся обрести внутреннюю силу, постоянно испытывая себя на прочность. Снова и снова они ищут искушения [Glossary('Вирма', 'glossary_wyrm_tt')], взаимодействуя с вампирами, Танцорами Черной спирали, фоморами и другими созданиями Вирма. Хотя многие пали, пытаясь принять догматы этого лагеря, Несущие верят, что самые сильные (и действительно достойные) не поддаются тьме, они ее преодолевают. Конечно, многие падают; путь, который они выбирают, весьма опасен, и они рискуют погибнуть как от рук окружающих, так и от прикосновения Вирма."
 
  childrenofcrow: "Воронск"
  childrenofcrow_adj: "Дети ворона"
@@ -440,7 +463,13 @@
  hakken_adj: "Хаккен"
  hakken_adherent: "Хаккен"
  hakken_adherent_plural: "Хаккен"
- hakken_desc: "Племя хенгейокай, очень похожее на Теневых владык. Хотя им так же часто не доверяют, как и Теневым владыкам, они не принадлежат к тому же племени. В отличие от своих западных сородичей, хаккен сумели найти баланс между манипуляциями Теневых владык и честью бусидо. Хаккен - одно из единственных племён гару, которое имеет влияние в Звериных дворах Азии."
+ hakken_desc: "A Tribe of Hengeyokai that originated from the Shadow Lords, but unlike their western counsins the Hakken and their world views go beyond Shadow Lord stereotypes. Hakken follow the concept of Bushidō, the way of the warrior. All loyal Hakken follow this path and consider themselves samurai in the most traditional sense. The Hakken are one of the only tribes of Garou to hold any significant influence in the Beast Courts of Asia."
+
+ hakken_war_god_name: "Susanowo"
+ hakken_war_god_name_possessive: "Susanowo's"
+ hakken_night_god_name: "Tsuki-yomi"
+ hakken_night_god_name_possessive: "Tsuki-yomi's"
+
 
  silentstrider_religion: "Безмолвно-странникск"
  silentstrider_religion_adj: "@werewolf_icon! Безмолвные странники"
@@ -457,7 +486,7 @@
  harbingers_adj: "Предвестники"
  harbingers_adherent: "Предвестник"
  harbingers_adherent_plural: "Предвестники"
- harbingers_desc: "Это были первые гару, которые всерьез восприняли Пророчество Феникса, или так говорят некоторые. Они разделились и отправились странствовать по миру в поисках знамений Вирма и принесли слово обратно. Они до сих пор не закончили рассказывать гару обо всех найденных ими знамениях Вирма. Самое главное - они несут надежду. Они - одни из самых мудрых среди гару, так что лучше прыгать, когда они скажут."
+ harbingers_desc: "Это были первые гару, которые всерьез восприняли Пророчество Феникса, или так говорят некоторые. Они разделились и отправились странствовать по миру в поисках знамений [Glossary('Вирма', 'glossary_wyrm_tt')] и принесли слово обратно. Они до сих пор не закончили рассказывать гару обо всех найденных ими знамениях Вирма. Самое главное - они несут надежду. Они - одни из самых мудрых среди гару, так что лучше прыгать, когда они скажут."
 
  seekers_adj: "Искатели"
  seekers_adherent: "Искатель"
@@ -566,7 +595,7 @@
  sacredthread_adj: "Священная нить"
  sacredthread_adherent: "Нить"
  sacredthread_adherent_plural: "Нити"
- sacredthread_desc: "Члены этого лагеря полагают, что нацеленность нации Гару на оборотней станет их гибелью и что только сражаясь с Вирмом там, где он живет - в сердцах и умах людей, - можно по-настоящему выиграть войну. Священная нить путешествует в самые темные сердца людей и выступает в роли учителей, советников и наставников для тех, кого они там находят, предлагая различные виды образования, чтобы помочь укрепить человеческий дух."
+ sacredthread_desc: "Члены этого лагеря полагают, что нацеленность нации Гару на оборотней станет их гибелью и что только сражаясь с [Glossary('Вирмом', 'glossary_wyrm_tt')] там, где он живет - в сердцах и умах людей, - можно по-настоящему выиграть войну. Священная нить путешествует в самые темные сердца людей и выступает в роли учителей, советников и наставников для тех, кого они там находят, предлагая различные виды образования, чтобы помочь укрепить человеческий дух."
 
  trancerunners: "Бегущск"
  trancerunners_adj: "Бегуны-в-трансе"
@@ -593,12 +622,6 @@
  anagamin_desc: "Известные как «не вернувшиеся», некоторые считают, что Ана-гамин - всего лишь легенда. В зависимости от того, какую историю рассказывают, они либо принимают, либо похищают членов племени, которых считают достойными сопровождать их в путешествиях по [Concept('umbra', 'Умбре')|E]. Они стремятся освободиться от оков реальности и верят, что вскоре все звездочеты отправятся в [Concept('umbra', 'Умбру')|E], освободившись от своих смертных оков, и никогда не вернутся на землю."
 
 
-
- ouroboroans: "Уроборейск"
- ouroboroans_adj: "Уроборейцы"
- ouroboroans_adherent: "Уробореец"
- ouroboroans_adherent_plural: "Уроборейцы"
- ouroboroans_desc: "Они стремятся освободить Вирма Равновесия из Паутины. Вместо того чтобы бороться с Ткачихой, они тратят свою энергию на поиски Вирма во всех его проявлениях в надежде открыть секрет его освобождения. Только следуя за Вирмом в его пещеру, а не сражаясь с его приспешниками, они считают, что могут по-настоящему повлиять на исход Последней войны. Поэтому некоторые из этих монахов считают, что пути Вирма нужно использовать, а не избегать. Они идут по пути, опасно близкому к [UmbraGlossaryLocalized('black_spiral_labyrinth','Лабиринту Чёрной спирали')]."
 
  fera_outcasts_religion: "Изгойск"
  fera_outcasts_religion_adj: "@werewolf_icon! Изгои"
@@ -628,10 +651,10 @@
  #Common Bastet Localization
  karoush_high_god_name_alternate: "Нала"
  karoush_high_god_name_alternate_possessive: "Налы"
- karoush_devil_name: "Кахлаш"
- karoush_devil_name_possessive: "Кахлаша"
- karoush_death_deity_name: "Кахлаш"
- karoush_death_deity_name_possessive: "Кахлаша"
+ karoush_devil_name: "[Glossary('Кахлаш', 'glossary_wyrm_tt')]"
+ karoush_devil_name_possessive: "[Glossary('Кахлаша', 'glossary_wyrm_tt')]"
+ karoush_death_deity_name: "[Glossary('Кахлаш', 'glossary_wyrm_tt')]"
+ karoush_death_deity_name_possessive: "[Glossary('Кахлаша', 'glossary_wyrm_tt')]"
 
 
  feline_religion: "Фелинидск"
@@ -645,13 +668,13 @@
  bagheera_adj: "Багира"
  bagheera_adherent: "Багира"
  bagheera_adherent_plural: "Багира"
- bagheera_desc: "Дети Сараам, которых боятся как палачей Кали, багира - перевёртыши, способные принимать облик чёрных пантер. Багира утверждают, что, когда Гея создавала бастет, она надеялась, что багира станут хранителями закона кошачьего рода. Эта роль так и не воплотилась в жизнь, но следы замысла Геи сохранились до сих пор, наполнив их острым чувством справедливости и духом праведного гнева, на который страшно смотреть."
+ bagheera_desc: "Дети Сараам, которых боятся как палачей Кали, багира - бастет, способные принимать облик чёрных пантер. Багира утверждают, что, когда Гея создавала бастет, она надеялась, что багира станут хранителями закона кошачьего рода. Эта роль так и не воплотилась в жизнь, но следы замысла Геи сохранились до сих пор, наполнив их острым чувством справедливости и духом праведного гнева, на который страшно смотреть."
 
  bubasti: "Бубастийск"
  bubasti_adj: "Бубасти"
  bubasti_adherent: "Бубасти"
  bubasti_adherent_plural: "Бубасти"
- bubasti_desc: "Известные также как Сумеречные коты, они являются оборотнями-котами из Египта. Мистики кошачьего рода, они - застенчивая и скрытная раса. Когда-то давно бубасти были прокляты древним вампирским божеством Сетом, и в результате их жизнь навсегда связана с почвами Кхема, их прародины. Говорят, что если все бубасти одного поколения покинут Египет, то это поколение станет последним. Никто не знает правдивости этого слуха, но и проверять его никто не желает.\nИз-за войны с Сетом они тесно связаны с Осирианской лигой Гора, а шесть их вождей, кхеперы, обрели бессмертие."
+ bubasti_desc: "Известные также как Сумеречные коты, они являются оборотнями-котами из Египта. Мистики кошачьего рода, они - застенчивая и скрытная раса. Когда-то давно бубасти были прокляты древним вампирским божеством Сетом, и в результате их жизнь навсегда связана с почвами Кхема, их прародины. Говорят, что если все бубасти одного поколения покинут Египет, то это поколение станет последним. Никто не знает правдивости этого слуха, но и проверять его никто не желает.\nИз-за войны с Сетом они тесно связаны с [Glossary('Осирианской лигой', 'glossary_osirian_league_tt')] Гора, а шесть их вождей, кхеперы, обрели бессмертие."
 
  ceilican: "Цейликанск"
  ceilican_adj: "Цейликан"
@@ -674,7 +697,122 @@
  swara_adj: "Свара"
  swara_adherent: "Свара"
  swara_adherent_plural: "Свара"
- swara_desc: "Оборотней-гепардов из племён бастет также называют Серебряным народом. Как и их сородичи, они чрезвычайно быстры и много путешествуют. У них также есть уникальная связь с [Concept('umbra', 'Умброй')|E]. Из всех племён бастет свара наименее понятны. Это результат их очень изолированной культуры. Свара - единственное племя бастет, способное ходить боком, что позволяет им путешествовать по измерениям внутри [Concept('umbra', 'Умбры')|E], недоступным их собратьям. Некоторые предполагают, что это результат их тесной связи с Луной, которую большинство свара почитают. Некоторые легенды утверждают, что именно свара впервые посетили Луну во времена Владычества, и именно благодаря этому они узнали о смысле и важности войны с Вирмом и о том, насколько тяжела сложившаяся ситуация."
+ swara_desc: "Оборотней-гепардов из племён бастет также называют Серебряным народом. Как и их сородичи, они чрезвычайно быстры и много путешествуют. У них также есть уникальная связь с [Concept('umbra', 'Умброй')|E]. Из всех племён бастет свара наименее понятны. Это результат их очень изолированной культуры. Свара - единственное племя бастет, способное ходить боком, что позволяет им путешествовать по измерениям внутри [Concept('umbra', 'Умбры')|E], недоступным их собратьям. Некоторые предполагают, что это результат их тесной связи с Луной, которую большинство свара почитают. Некоторые легенды утверждают, что именно свара впервые посетили Луну во времена Владычества, и именно благодаря этому они узнали о смысле и важности войны с [Glossary('Вирмом', 'glossary_wyrm_tt')] и о том, насколько тяжела сложившаяся ситуация."
+
+
+
+
+
+
+ ################
+ #### Mokole ####
+ ################
+
+ saurian_high_god_name_alternate: "Helios"
+ saurian_high_god_name_alternate_possessive: "Helios'"
+ saurian_creator_god_name: "$saurian_high_god_name_alternate$"
+ saurian_creator_god_name_possessive: "$saurian_high_god_name_alternate_possessive$"
+ saurian_fertility_god_name: "The [Glossary('Devisor', 'glossary_wyld_tt')]"
+ saurian_fertility_god_name_possessive: "The [Glossary('Devisor', 'glossary_wyld_tt')]'s"
+ saurian_wealth_god_name: "The [Glossary('Designer', 'glossary_weaver_tt')]"
+ saurian_wealth_god_name_possessive: "The [Glossary('Designer', 'glossary_weaver_tt')]'s"
+ saurian_war_god_name: "Dragon"
+ saurian_war_god_name_possessive: "Dragon's"
+ saurian_devil_name: "The [Glossary('Dissolver', 'glossary_wyrm_tt')]"
+ saurian_devil_name_possessive: "The [Glossary('Dissolver', 'glossary_wyrm_tt')]'s"
+ saurian_house_of_worship: "wallow"
+ saurian_house_of_worship_plural: "wallows"
+ saurian_death_deity_name: "$saurian_devil_name$"
+ saurian_death_deity_name_possessive: "$saurian_devil_name_possessive$"
+
+
+
+
+
+
+
+ holy_order_dragons_chosen: "Dragon's Chosen"
+ holy_order_blades_helios: "Blades of Helios"
+ holy_order_avengers_lost: "Avengers of the Lost"
+ holy_order_army_scales: "The Army of Scales"
+
+
+ saurian_religion: "@mokole_icon! Saurian"
+ saurian_religion_adj: "Saurian"
+ saurian_religion_adherent: "Saurian"
+ saurian_religion_adherent_plural: "Saurians"
+ saurian_religion_desc: "The Mokolé are werelizards, werecrocodilians, weresaurians, and weredragons. They are the descendants of the prehistoric Lizard Kings, the firstborn of the $glossary_fera$ and the chosen children of Helios. Their role is to be the memories of Gaia, a task they fulfill through the power of their Mnesis. With Mnesis, a Mokolé may remember thousands to millions of years into the past and delve through their ancestors' memories."
+
+
+
+ children_sobek: "Children of Sobek"
+ children_sobek_adj: "Sobek"
+ children_sobek_adherent: "Redeemer"
+ children_sobek_adherent_plural: "Redeemers"
+ children_sobek_desc: "In the days when gods walked ancient Egypt lived Sobek, Chieftain of the Nile Mokolé. Great Sobek and his Clutch stood with the Osirians against Set and his vile serpents. Despite their combined might however, the Osirians suffered defeat. Set corrupted Sobek with his foul blood rituals and turned him into the first and only Mokolé Abomination.\nThe corrupted Sobek has been slumbering ever since in his hidden temple below ancient Crocodilopolis, his divine wrath restrained. His followers have not forgotten him, and seek to free him and Khem from the corruption of the Setites. If the Crocodile God can be saved and returned to Ma'at then woe to his enemies. If not, woe to creation itself."
+
+
+ warriors_entoban: "Warriors of Entoban"
+ warriors_entoban_adj: "Entoban"
+ warriors_entoban_adherent: "Warrior"
+ warriors_entoban_adherent_plural: "Warriors"
+ warriors_entoban_desc: "Entoban, the African ark-continent, home of humanity, is also the home of the most ancient stream of Mokolé. Called the warriors of the Dragon Breed, they have been attacked endlessly in the Wars of Rage; their extreme hatred of the Garou is a mere reflection of the Garou's own mistreatment of them. Now they have taken up the task of safeguarding Entoban and protecting the other $glossary_fera$ breeds that remain there. The Garou's crimes will be avenged, and Mokolé never forget."
+
+
+ cosmic_order: "Cosmic Order"
+ cosmic_order_adj: "Cosmic"
+ cosmic_order_adherent: "Seeker"
+ cosmic_order_adherent_plural: "Seekers"
+ cosmic_order_desc: "The Mokolé of India regard Sun as their source of enlightenment and Agni as their strength. They believe in Rta (the Cosmic Order) and that it came before Jya (Gaia) and will remain after her. Beneath Jya, they place the Trimurti composed of the Creator, Preserver and Destroyer. These unique beliefs were influenced by the mortal faiths within India, which the Mokolé have syncretized with.\nEverything has a purpose, they are here to seek theirs."
+
+ cosmic_order_high_god_name: "Jya"
+ cosmic_order_high_god_name_possessive: "Jya's"
+ cosmic_order_household_god_name: "$cosmic_order_high_god_name$"
+ cosmic_order_household_god_name_possessive: "$cosmic_order_high_god_name_possessive$"
+ cosmic_order_fate_god_name: "$cosmic_order_high_god_name$"
+ cosmic_order_fate_god_name_possessive: "$cosmic_order_high_god_name_possessive$"
+ cosmic_order_knowledge_god_name: "$cosmic_order_high_god_name$"
+ cosmic_order_knowledge_god_name_possessive: "$cosmic_order_high_god_name_possessive$"
+ cosmic_order_war_god_name: "Agni"
+ cosmic_order_war_god_name_possesive: "Agni's"
+ cosmic_order_night_god_name: "Chandra"
+ cosmic_order_night_god_name_possessive: "Chandra's"
+ cosmic_order_water_god_name: "$cosmic_order_high_god_name$"
+ cosmic_order_water_god_name_possessive: "$cosmic_order_high_god_name_possessive$"
+
+
+
+ dreaming_sands: "Dreaming Sands"
+ dreaming_sands_adj: "Dreaming"
+ dreaming_sands_adherent: "Dreamer"
+ dreaming_sands_adherent_plural: "Dreamers"
+ dreaming_sands_desc: "The twin seas of water and sand are opposed poles yet equal as sources of wisdom. Every grain of sand, every drop of water holds the memories of those who came before. It is in the Dreamtime where these memories are made clear.\n\nMost Dreamers live most of their lives in the deep deserts but make regular pilgrimages to the oceans and seas of the world. A journey made easier by following the Songlines; Mnesis pathways in the Dreamtime created by the Gumagan."
+
+
+ dragons_zhong_guo: "Dragons of Zhong Guo"
+ dragons_zhong_guo_adj: "Zhong Guo"
+ dragons_zhong_guo_adherent: "Dragon"
+ dragons_zhong_guo_adherent_plural: "Dragons"
+ dragons_zhong_guo_desc: "The Zhong Lung, Dragons of the East, and Eldest of the Hengeyokai are the sages, scholars, and warriors of the Beast Courts. Along with the Emerald Mother (Gaia) and Sun they revere the Wani, their Dragon Ancestors.\n\nLike the Makara, they believe in the Balance, a supreme principal governing the entire universe. The Balance of yin and yang, light and dark, of the [Glossary('Devisor', 'glossary_wyld_tt')], [Glossary('Designer', 'glossary_weaver_tt')], and [Glossary('Dissolver', 'glossary_wyrm_tt')], is more important than the inherent goodness or badness of the [Glossary('Three', 'glossary_triat_tt')]."
+
+
+ emerald_memory: "Emerald Memory"
+ emerald_memory_adj: "Emerald"
+ emerald_memory_adherent: "Keeper"
+ emerald_memory_adherent_plural: "Keepers"
+ emerald_memory_desc: "The Beast Courts contain many Mokolé other than the Zhong Lung. The Dragons have a very established role within the Courts; the Makara and Gumagan instead serve as their breed's intended purpose, being Gaia's memory. The Emerald Memory preserves and documents the history of the Beast Courts and the $glossary_fera$ as the Wheel of Ages ever turns. They also serve as advisors within the Courts so that the mistakes of the past won't be repeated, at least they hope so."
+
+
+ eternal_breath: "Eternal Breath"
+ eternal_breath_adj: "Eternal"
+ eternal_breath_adherent: "Eternal"
+ eternal_breath_adherent_plural: "Eternals"
+ eternal_breath_desc: "Adherents of the Eternal Breath believe that only the Mokolé will survive until the world ceases to exist. Not the #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L;bold Blood-devils#!#!, nor the other $glossary_fera$, and especially not the #TOOLTIP:GAME_TRAIT,mortal,[GetNullCharacter] #L;bold Proudest Monkeys#!#!. The Beast Courts will fail, the other Changing Breeds have proven that they will never learn from the past. Only through their mastery of their own bodies and spirits will the Mokolé outlast everyone. They have already survived one Apocalypse, they will survive another."
+
+
+
+
+
 
 
  ################

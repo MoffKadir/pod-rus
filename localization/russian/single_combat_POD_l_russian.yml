@@ -1,4 +1,6 @@
 ﻿l_russian:
+ # Helper loc
+ POD_duel_cant_damage_spirit: "@warning_icon!#X You don't have an ability that lets you damage spirits!#!"
 
  #Combat Move Options
 
@@ -98,7 +100,7 @@
  single_combat.0001.POD_stygian_shroud: "Тьма идет за тобой!"
  single_combat.0001.tt.POD_stygian_shroud: "#D Вы используете ваши способности Забвения, чтобы призвать тьму, которая ослепляет персонажа [my_foe.GetFirstName]#!"
  single_combat.0001.tt.POD_stygian_shroud.beast: "#beast Тьма идёт за [Select_CString(my_foe.IsFemale, 'ней', 'ним' )]!#!"
- single_combat.0001.POD_fire_torch: "Божий свет изгонит тебя!"
+ single_combat.0001.POD_fire_torch: "Огонь изгонит тебя!"
  single_combat.0001.tt.POD_fire_torch: "#D Вы дико размахиваете факелом.#!"
  single_combat.0001.POD_fire_bombs: "Эта алхимическая смесь может сработать..."
  single_combat.0001.tt.POD_fire_bombs: "#D Вы метаете алхимический огонь.#!"
@@ -228,8 +230,14 @@
  single_combat.0001.tt.POD_manipulate_acceleration: "#D Используя знание Основания, атаковать так, чтобы запутать персонажа [my_foe.GetFirstName]#!"
  single_combat.0001.POD_manipulate_cohesion: "Я испарю тебя!"
  single_combat.0001.tt.POD_manipulate_cohesion: "#D Используя знание Основания, атаковать так, чтобы запутать персонажа [my_foe.GetFirstName]#!"
-
-
+ single_combat.0001.POD_dragons_breath: "I will burn you!" 
+ single_combat.0001.tt.POD_dragons_breath: "#D You spit fire at your foe.#!"
+ single_combat.0001.POD_bark_mudpuppy: "My voice will destroy you!" 
+ single_combat.0001.tt.POD_bark_mudpuppy: "#D You use the Bark of the Mudpuppy on your foe.#!"
+ single_combat.0001.POD_clap_of_thunder: "Hear the Heavens roar!" 
+ single_combat.0001.tt.POD_clap_of_thunder: "#D A great clap of thunder stuns your foe#!"
+ single_combat.0001.POD_dragon_slash: "Dragon Slash!" 
+ single_combat.0001.tt.POD_dragon_slash: "#D Slash your foe with Dragon's strength!#!"
 
  ##############################
 
@@ -334,6 +342,12 @@
  single_combat.0001.desc.my_feedback.POD_manipulate_inertia: "Я бегу вперед быстрее, чем может видеть глаз, надеясь, что у моего противника нет возможности предугадать мои движения."
  single_combat.0001.desc.my_feedback.POD_manipulate_acceleration: "Я бегу вперед быстрее, чем может видеть глаз, надеясь, что у моего противника нет возможности предугадать мои движения."
  single_combat.0001.desc.my_feedback.POD_manipulate_cohesion: "Я бегу вперед быстрее, чем может видеть глаз, надеясь, что у моего противника нет возможности предугадать мои движения."
+ single_combat.0001.desc.my_feedback.POD_dragons_breath: "I inhale deeply and exhale a massive gout of flame in the general direction of [my_foe.GetFirstNameNoTooltip]."
+ single_combat.0001.desc.my_feedback.POD_bark_mudpuppy: "I raise my voice and bellow at [my_foe.GetFirstNameNoTooltip] with all my might, focusing a single shout into a weapon that can rend flesh."
+ single_combat.0001.desc.my_feedback.POD_clap_of_thunder: "I clap my hands together and a sudden, resonant sound of thunder shakes [my_foe.GetFirstNameNoTooltip] to the core."
+ single_combat.0001.desc.my_feedback.POD_dragon_slash: "Remembering my training, I launch myself at [my_foe.GetFirstNameNoTooltip] with a series of fluid, well-executed slashes of my claws, combining poised skill with raw strength."
+
+
  #Opponent Combat Move Feedback 
  single_combat.0001.desc.opponent_response.POD_bite: "Мой враг бросается вперед, пытаясь вонзить свои острые клыки в мою шею."
  single_combat.0001.desc.opponent_response.POD_blood_surge: "Мой враг взывает к силам своей крови, чтобы увеличить свою мощь."
@@ -432,6 +446,12 @@
  single_combat.0001.desc.opponent_response.POD_manipulate_inertia: "Мой враг бежит вперед быстрее, чем может видеть глаз, надеясь, что у меня нет возможности предугадать направление его движений."
  single_combat.0001.desc.opponent_response.POD_manipulate_acceleration: "Мой враг бежит вперед быстрее, чем может видеть глаз, надеясь, что у меня нет возможности предугадать направление его движений."
  single_combat.0001.desc.opponent_response.POD_manipulate_cohesion: "Мой враг бежит вперед быстрее, чем может видеть глаз, надеясь, что у меня нет возможности предугадать направление его движений."
+ single_combat.0001.desc.opponent_response.POD_dragons_breath: "[my_foe.GetFirstNameNoTooltip] inhales deeply and exhales a massive gout of flame as a dragon would, lighting up our surroundings."
+ single_combat.0001.desc.opponent_response.POD_bark_mudpuppy: "[my_foe.GetFirstNameNoTooltip] #italic shouts#! with an unexpected force that tears at my skin and pushes me back."
+ single_combat.0001.desc.opponent_response.POD_clap_of_thunder: "[my_foe.GetFirstNameNoTooltip] claps [my_foe.GetHerHis] hands together and I'm suddenly deafened by a thunderous noise that leaves my ears ringing."
+ single_combat.0001.desc.opponent_response.POD_dragon_slash: "[my_foe.GetFirstNameNoTooltip] looks serious as [my_foe.GetSheHe] launches [my_foe.GetHerselfHimself] at me with a fierce onslaught of claw attacks."
+
+
  ################################ 
  #Outcome Event: Loser 
  #Defender Lost, Own Combat Move Feedback 
@@ -532,6 +552,11 @@
  single_combat.0031.desc.sc_defender.POD_manipulate_inertia: "Слишком далеко, слишком быстро, у меня не получается воспользоваться всеми преимуществами скорости."
  single_combat.0031.desc.sc_defender.POD_manipulate_acceleration: "Слишком далеко, слишком быстро, у меня не получается воспользоваться всеми преимуществами скорости."
  single_combat.0031.desc.sc_defender.POD_manipulate_cohesion: "Слишком далеко, слишком быстро, у меня не получается воспользоваться всеми преимуществами скорости."
+ single_combat.0031.desc.sc_defender.POD_dragons_breath: "My opponent dodges the fire easily."
+ single_combat.0031.desc.sc_defender.POD_bark_mudpuppy: "It seems to have little effect on my opponent, who simply resumes [sc_victor.GetHerHis] offense."
+ single_combat.0031.desc.sc_defender.POD_clap_of_thunder: "My opponent simply plants [sc_victor.GetHerHis] feet and endures the noise."
+ single_combat.0031.desc.sc_defender.POD_dragon_slash: "My opponent is prepared for my onslaught and parries with [sc_victor.GetHerHis] [sc_victor.Custom('signature_weapon')]."
+
  #Defender Lost, Opponent Finishing Move Feedback 
  single_combat.0031.desc.opponent_response.POD_bite: "Мой враг бросается вперед, пытаясь вонзить свои острые клыки в мою шею."
  single_combat.0031.desc.opponent_response.POD_blood_surge: "Мой враг взывает к силам своей крови, чтобы увеличить свою мощь."
@@ -630,6 +655,11 @@
  single_combat.0031.desc.opponent_response.POD_manipulate_inertia: "Мой враг бежит вперед быстрее, чем может видеть глаз, надеясь, что у меня нет возможности предугадать направление его движений."
  single_combat.0031.desc.opponent_response.POD_manipulate_acceleration: "Мой враг бежит вперед быстрее, чем может видеть глаз, надеясь, что у меня нет возможности предугадать направление его движений."
  single_combat.0031.desc.opponent_response.POD_manipulate_cohesion: "Мой враг бежит вперед быстрее, чем может видеть глаз, надеясь, что у меня нет возможности предугадать направление его движений."
+ single_combat.0031.desc.opponent_response.POD_dragons_breath: "[sc_victor.GetFirstNameNoTooltip] inhales deeply and exhales a massive gout of flame straight at me."
+ single_combat.0031.desc.opponent_response.POD_bark_mudpuppy: "[sc_victor.GetFirstNameNoTooltip] #italic shouts#! with an unexpected force."
+ single_combat.0031.desc.opponent_response.POD_clap_of_thunder: "[sc_victor.GetFirstNameNoTooltip] claps [sc_victor.GetHerHis] hands together."
+ single_combat.0031.desc.opponent_response.POD_dragon_slash: "[sc_victor.GetFirstNameNoTooltip] looks serious as [sc_victor.GetSheHe] launches [sc_victor.GetHerselfHimself] at me with a fierce onslaught of claw attacks."
+
  #Defender Lost, Opponent Finishing Move Injury 
  single_combat.0031.desc.opponent_response.POD_bite.injury: "И они попадают в цель так, что пьянящий запах крови пропитывает воздух. Я с трудом вырываюсь из этих смертельных объятий, пока не стало слишком поздно."
  single_combat.0031.desc.opponent_response.POD_blood_surge.injury: "Даже со своего места я вижу, как противник становится выше и сильнее, засчет своей силы крови."
@@ -728,6 +758,11 @@
  single_combat.0031.desc.opponent_response.POD_manipulate_inertia.injury: "И у меня не получилось увернуться, поэтому мне остается лишь собрать остатки сил, чтобы не упасть после этого молниеносного натиска."
  single_combat.0031.desc.opponent_response.POD_manipulate_acceleration.injury: "И у меня не получилось увернуться, поэтому мне остается лишь собрать остатки сил, чтобы не упасть после этого молниеносного натиска."
  single_combat.0031.desc.opponent_response.POD_manipulate_cohesion.injury: "И у меня не получилось увернуться, поэтому мне остается лишь собрать остатки сил, чтобы не упасть после этого молниеносного натиска."
+ single_combat.0031.desc.opponent_response.POD_dragons_breath.injury: "I dodge out of the way to avoid being reduced to a crisp, but the flames still catch me and leave painful burns. I have to tap out before the next attack turns me into a pile of ashes."
+ single_combat.0031.desc.opponent_response.POD_bark_mudpuppy.injury: "The noise tears at my skin so violently that wounds open up all over, as if I've been cut by knives countless times. As I grit my teeth in pain, [sc_victor.GetFirstNameNoTooltip] readies [sc_victor.GetHerselfHimself] for the coup de grace, and I realize I'm thoroughly beat."
+ single_combat.0031.desc.opponent_response.POD_clap_of_thunder.injury: "I am left disoriented as the thunderous noise makes me ears ring and my vision swim. When I come to, [sc_victor.GetFirstNameNoTooltip] has already taken advantage of my lapse in concentration and disarmed me."
+ single_combat.0031.desc.opponent_response.POD_dragon_slash.injury: "I have no response to [sc_victor.GetHerHis] relentless offense, and when [sc_victor.GetSheHe] goes in for a grapple and throws me to the floor, I have to admit defeat."
+
  #Defender Lost, Opponent Finishing Move Fatality 
  single_combat.0031.desc.opponent_response.POD_bite.fatality: "И они попадают в цель так, что пьянящий запах крови пропитывает воздух. Уже слишком поздно вырываться, поскольку я теряюсь в экстазе поцелуя. Остальное - история, но уже не моя."
  single_combat.0031.desc.opponent_response.POD_blood_surge.fatality: "Даже со своего места я вижу, как противник становится выше и сильнее, засчет своей силы крови. Внезапно он становится намного сильнее и быстрее, я даже не успеваю заметить приближающийся удар, что разрубает меня пополам."
@@ -826,6 +861,12 @@
  single_combat.0031.desc.opponent_response.POD_manipulate_inertia.fatality: "И у меня не получилось увернуться. Натиск врага не прекращается, по крайней мере, пока я еще жив."
  single_combat.0031.desc.opponent_response.POD_manipulate_acceleration.fatality: "И у меня не получилось увернуться. Натиск врага не прекращается, по крайней мере, пока я еще жив."
  single_combat.0031.desc.opponent_response.POD_manipulate_cohesion.fatality: "И у меня не получилось увернуться. Натиск врага не прекращается, по крайней мере, пока я еще жив."
+ single_combat.0031.desc.opponent_response.POD_dragons_breath.fatality: "The pain is indescribable as a sea of fire envelops me and burns me where I stand. The last thing I see is my flickering reflection in [sc_victor.GetFirstNamePossessiveNoTooltip] uncaring reptilian eyes."
+ single_combat.0031.desc.opponent_response.POD_bark_mudpuppy.fatality: "The noise tears at my skin so violently that wounds open up all over, as if I've been cut by knives countless times. As I grit my teeth in pain, [sc_victor.GetFirstNameNoTooltip] goes in for the coup de grace, and [sc_victor.GetHerHis] [sc_victor.Custom('signature_weapon')] connects with my throat."
+ single_combat.0031.desc.opponent_response.POD_clap_of_thunder.fatality: "I am left disoriented as the thunderous noise makes my ears ring and my vision swim. With no awareness of my surroundings or what my opponent is doing, my life is unceremoniously snuffed out."
+ single_combat.0031.desc.opponent_response.POD_dragon_slash.fatality: "I have no response to [sc_victor.GetHerHis] relentless offense. [sc_victor.GetSheHe|U] keeps going and going, never stopping, even as [sc_victor.GetSheHe] rips my arms off, disembowels me, and beats me to death with my own spine."
+
+
  #Aggressor Lost, Own Combat Move Feedback 
  single_combat.0031.desc.sc_attacker.POD_bite: "Мой противник без особых усилий уклоняется от моего выпада вперед, оставляя меня широко открытым для контратаки."
  single_combat.0031.desc.sc_attacker.POD_blood_surge: "Мне не удается пробудить кровь внутри себя, так как мне не хватило концентрации."
@@ -924,6 +965,12 @@
  single_combat.0031.desc.sc_attacker.POD_manipulate_inertia: "Слишком далеко, слишком быстро, у меня не получается воспользоваться всеми преимуществами скорости."
  single_combat.0031.desc.sc_attacker.POD_manipulate_acceleration: "Слишком далеко, слишком быстро, у меня не получается воспользоваться всеми преимуществами скорости."
  single_combat.0031.desc.sc_attacker.POD_manipulate_cohesion: "Слишком далеко, слишком быстро, у меня не получается воспользоваться всеми преимуществами скорости."
+ single_combat.0031.desc.sc_attacker.POD_dragons_breath: "I inhale deeply and exhale a massive gout of flame in the general direction of [sc_victor.GetFirstNameNoTooltip], but [sc_victor.GetSheHe] easily dodges out of the way."
+ single_combat.0031.desc.sc_attacker.POD_bark_mudpuppy: "I raise my voice and bellow at [sc_victor.GetFirstNameNoTooltip] with all my might, yet [sc_victor.GetSheHe] shrugs off the attack easily."
+ single_combat.0031.desc.sc_attacker.POD_clap_of_thunder: "I clap my hands together to unleash a resonant sound of thunder, but [sc_victor.GetFirstNameNoTooltip] seems unperturbed."
+ single_combat.0031.desc.sc_attacker.POD_dragon_slash: "I launch myself at [sc_victor.GetFirstNameNoTooltip] with a series of fluid, well-executed slashes of my claws, but to no avail."
+
+
  #Aggressor Lost, Own Combat Move Injury 
  single_combat.0031.desc.sc_attacker.POD_bite.injury: "И это происходит быстро, в виде удара в лицо."
  single_combat.0031.desc.sc_attacker.POD_blood_surge.injury: "И небольшого отвлечения внимания было достаточно, чтобы мой противник воспользовался преимуществом, ответив быстрым ударом."
@@ -1022,6 +1069,12 @@
  single_combat.0031.desc.sc_attacker.POD_manipulate_inertia.injury: "И это заканчивается так плохо, как мне и представлялось."
  single_combat.0031.desc.sc_attacker.POD_manipulate_acceleration.injury: "И это заканчивается так плохо, как мне и представлялось."
  single_combat.0031.desc.sc_attacker.POD_manipulate_cohesion.injury: "И это заканчивается так плохо, как мне и представлялось."
+ single_combat.0031.desc.sc_attacker.POD_dragons_breath.injury: "\"Maybe I overcommitted to this attack\" is my last thought as [sc_victor.GetSheHe] closes the distance and knocks me unconscious."
+ single_combat.0031.desc.sc_attacker.POD_bark_mudpuppy.injury: "[sc_victor.GetSheHe|U] simply flexes [sc_victor.GetHerHis] muscles theatrically and punches my throat while I recover, and with that, the duel is over."
+ single_combat.0031.desc.sc_attacker.POD_clap_of_thunder.injury: "[sc_victor.GetSheHe|U] shrugs off the assault of noise and launches a swift counterattack that knocks me off balance and puts an end to this duel."
+ single_combat.0031.desc.sc_attacker.POD_dragon_slash.injury: "[sc_victor.GetSheHe|U] uses my own momentum against me as [sc_victor.GetSheHe] steps to the side and bops me on the back of the head, like a martial arts master chastising [sc_victor.GetHerHis] student."
+
+
  #Aggressor Lost, Own Combat Move Fatality 
  single_combat.0031.desc.sc_attacker.POD_bite.fatality: "И это происходит быстро, в виде удара в лицо, разрезающего его пополам."
  single_combat.0031.desc.sc_attacker.POD_blood_surge.fatality: "И небольшого отвлечения внимания достаточно, чтобы мой противник воспользовался преимуществом, ответив быстрым ударом по вашей шее. Всего мгновение, и ваша голова катается по полу, что не очень полезно для здоровья."
@@ -1120,6 +1173,13 @@
  single_combat.0031.desc.sc_attacker.POD_manipulate_inertia.fatality: "И это заканчивается так плохо, как мне и представлялось. Но я больше ничего не потеряю, если это можно считать утешением."
  single_combat.0031.desc.sc_attacker.POD_manipulate_acceleration.fatality: "И это заканчивается так плохо, как мне и представлялось. Но я больше ничего не потеряю, если это можно считать утешением."
  single_combat.0031.desc.sc_attacker.POD_manipulate_cohesion.fatality: "И это заканчивается так плохо, как мне и представлялось. Но я больше ничего не потеряю, если это можно считать утешением."
+ single_combat.0031.desc.sc_attacker.POD_dragons_breath.fatality: "\"Maybe I overcommitted to this attack\" is my last thought as [sc_victor.GetSheHe] closes the distance and plunges [sc_victor.GetHerHis] weapon into my throat."
+ single_combat.0031.desc.sc_attacker.POD_bark_mudpuppy.fatality: "[sc_victor.GetSheHe|U] simply flexes [sc_victor.GetHerHis] muscles theatrically and slashes my throat while I recover, and with that, I am silenced forever."
+ single_combat.0031.desc.sc_attacker.POD_clap_of_thunder.fatality: "[sc_victor.GetSheHe|U] shrugs off the assault of noise and launches a series of swift counterattacks that draw blood, and with my poise shaken like this, this duel is all but over."
+ single_combat.0031.desc.sc_attacker.POD_dragon_slash.fatality: "[sc_victor.GetSheHe|U] uses my own momentum against me as [sc_victor.GetSheHe] steps to the side and raises [sc_victor.GetHerHis] weapon, and as it comes down on my neck, all I can think is: what a perfect object lesson in overconfidence."
+
+
+
  ################################### 
  #Outcome Event: Victor 
  #Defender Won, Own Combat Move Feedback 
@@ -1220,6 +1280,13 @@
  single_combat.0041.desc.sc_defender.POD_manipulate_inertia: "Я бегу вперед быстрее, чем может видеть глаз, надеясь, что у моего противника нет возможности предугадать мои движения."
  single_combat.0041.desc.sc_defender.POD_manipulate_acceleration: "Я бегу вперед быстрее, чем может видеть глаз, надеясь, что у моего противника нет возможности предугадать мои движения."
  single_combat.0041.desc.sc_defender.POD_manipulate_cohesion: "Я бегу вперед быстрее, чем может видеть глаз, надеясь, что у моего противника нет возможности предугадать мои движения."
+ single_combat.0041.desc.sc_defender.POD_dragons_breath: "I exhale a massive gout of flame in [sc_loser.GetFirstNamePossessiveNoTooltip] general direction, which causes [sc_loser.GetHerHim] to panic."
+ single_combat.0041.desc.sc_defender.POD_bark_mudpuppy: "I raise my voice and bellow at [sc_loser.GetFirstNameNoTooltip] with all my might, which rattles [sc_loser.GetHerHim] enough to make a fatal mistake."
+ single_combat.0041.desc.sc_defender.POD_clap_of_thunder: "I clap my hands together and a sudden, resonant sound of thunder shakes [sc_loser.GetFirstNameNoTooltip] to the core."
+ single_combat.0041.desc.sc_defender.POD_dragon_slash: "I launch myself at [sc_loser.GetFirstNameNoTooltip] with a series of fluid, well-executed slashes of my claws, and [sc_loser.GetHerHis] response proves entirely ineffective."
+
+
+
  #Defender Won, Opponent Finishing Move Feedback 
  single_combat.0041.desc.opponent_response.POD_bite: "Мой враг бросается вперед, пытаясь вонзить свои острые клыки в мою шею."
  single_combat.0041.desc.opponent_response.POD_blood_surge: "Мой враг взывает к силам своей крови, чтобы стать сильнее."
@@ -1318,6 +1385,12 @@
  single_combat.0041.desc.opponent_response.POD_manipulate_inertia: "Мой враг бежит вперед быстрее, чем может видеть глаз, надеясь, что у меня нет возможности предугадать направление его движений."
  single_combat.0041.desc.opponent_response.POD_manipulate_acceleration: "Мой враг бежит вперед быстрее, чем может видеть глаз, надеясь, что у меня нет возможности предугадать направление его движений."
  single_combat.0041.desc.opponent_response.POD_manipulate_cohesion: "Мой враг бежит вперед быстрее, чем может видеть глаз, надеясь, что у меня нет возможности предугадать направление его движений."
+ single_combat.0041.desc.opponent_response.POD_dragons_breath: "[sc_loser.GetFirstNameNoTooltip] exhales an ineffectual burst of flame in my direction, looking more like a mummer doing tricks than a fierce dragon."
+ single_combat.0041.desc.opponent_response.POD_bark_mudpuppy: "[sc_loser.GetFirstNameNoTooltip] shouts with all [sc_loser.GetHerHis] might, and though the noise assaults me, I press on."
+ single_combat.0041.desc.opponent_response.POD_clap_of_thunder: "[sc_loser.GetFirstNameNoTooltip] claps [sc_loser.GetHerHis] hands together and makes a valiant attempt at knocking me off-balance with a thunderous noise, but I am unshaken."
+ single_combat.0041.desc.opponent_response.POD_dragon_slash: "[sc_loser.GetFirstNameNoTooltip] launches [sc_loser.GetHerselfHimself] at me with a series of fluid, well-executed slashes of [sc_loser.GetHerHis] claws, but [sc_loser.GetSheHe] doesn't notice how [sc_loser.GetHerHis] forward momentum leaves [sc_loser.GetHerselfHimself] wide open."
+
+
  #Defender Won, Opponent Finishing Move Injury 
  single_combat.0041.desc.opponent_response.POD_bite.injury: "И они попадают в цель так, что пьянящий запах крови пропитывает воздух. Враг едва успевает высвободиться из этих смертельных объятий, пока не стало слишком поздно."
  single_combat.0041.desc.opponent_response.POD_blood_surge.injury: "Я чувствую, как становлюсь выше, сильнее и опаснее благодаря крови. Я быстро использую свое преимущество."
@@ -1416,6 +1489,13 @@
  single_combat.0041.desc.opponent_response.POD_manipulate_inertia.injury: "И у врага не получилось увернуться, поэтому [my_foe.GetHerHim] остается лишь собрать остатки сил, чтобы не упасть после этого молниеносного натиска."
  single_combat.0041.desc.opponent_response.POD_manipulate_acceleration.injury: "И у врага не получилось увернуться, поэтому [my_foe.GetHerHim] остается лишь собрать остатки сил, чтобы не упасть после этого молниеносного натиска."
  single_combat.0041.desc.opponent_response.POD_manipulate_cohesion.injury: "И у врага не получилось увернуться, поэтому [my_foe.GetHerHim] остается лишь собрать остатки сил, чтобы не упасть после этого молниеносного натиска."
+ single_combat.0041.desc.opponent_response.POD_dragons_breath.injury: "I take advantage of [sc_loser.GetHerHis] overcommitment and knock [sc_loser.GetHerHim] unconscious while [sc_loser.GetHerHis] throat is still glowing."
+ single_combat.0041.desc.opponent_response.POD_bark_mudpuppy.injury: "I close the distance and silence [sc_loser.GetHerHim] with a throat chop. No more shouting, please."
+ single_combat.0041.desc.opponent_response.POD_clap_of_thunder.injury: "It almost looks like the thunderclap affected [sc_loser.GetHerHim] more than it did me, and my swift counterattacks meet little resistance. The duel is over in moments."
+ single_combat.0041.desc.opponent_response.POD_dragon_slash.injury: "All I have to do is step to the side and bop [sc_loser.GetHerHim] in the back of the head, like I'm a martial arts master chastising [sc_victor.GetHerHis] student."
+
+
+
  single_combat.0041.desc.opponent_response.POD_bite.fatality: "И они попадают в цель так, что пьянящий запах крови пропитывает воздух. Вскоре враг перестает сопротивляться поцелую, и сладкий вкус моей победы становится кровавым."
  single_combat.0041.desc.opponent_response.POD_blood_surge.fatality: "Я чувствую, как становлюсь выше, сильнее и опаснее благодаря крови. Я быстро использую свое преимущество и заканчиваю бой быстрым, рубящим ударом по шее. Голова поверженного врага еще долгое время катится по земле, настолько был силен мой удар."
  single_combat.0041.desc.opponent_response.POD_blood_heal.fatality: "Все мои раны исчезают у меня на глазах, когда сила крови исцеляет меня. Я быстро использую свое преимущество и заканчиваю бой быстрым, рубящим ударом по шее. Голова поверженного врага еще долгое время катится по земле, настолько был силен мой удар."
@@ -1513,6 +1593,12 @@
  single_combat.0041.desc.opponent_response.POD_manipulate_inertia.fatality: "И у врага не получается увернуться, мой натиск прекращается только тогда, когда передо мной остается только пепел."
  single_combat.0041.desc.opponent_response.POD_manipulate_acceleration.fatality: "И у врага не получается увернуться, мой натиск прекращается только тогда, когда передо мной остается только пепел."
  single_combat.0041.desc.opponent_response.POD_manipulate_cohesion.fatality: "И у врага не получается увернуться, мой натиск прекращается только тогда, когда передо мной остается только пепел."
+ single_combat.0041.desc.opponent_response.POD_dragons_breath.fatality: "I take advantage of [sc_loser.GetHerHis] overcommitment and stab into [sc_loser.GetHerHis] throat while it's still glowing. Dragon slain."
+ single_combat.0041.desc.opponent_response.POD_bark_mudpuppy.fatality: "I close the distance and silence [sc_loser.GetHerHim] by crushing [sc_loser.GetHerHis] throat. [sc_loser.GetSheHe|U] will never shout again."
+ single_combat.0041.desc.opponent_response.POD_clap_of_thunder.fatality: "It almost looks like the thunderclap affected [sc_loser.GetHerHim] more than it did me, and my swift counterattacks meet little resistance. In moments, my [sc_victor.Custom('signature_weapon')] bites into flesh, and the duel is concluded."
+ single_combat.0041.desc.opponent_response.POD_dragon_slash.fatality: "It's almost too easy to step to the side and bring down my weapon on [sc_loser.GetHerHis] undefended neck. To [sc_loser.GetHerHis] credit, [sc_loser.GetHerHis] body continues skidding forward for a bit, like a testament to the force behind the attack."
+
+
  #Aggressor Won, Own Combat Move Feedback 
  single_combat.0041.desc.sc_attacker.POD_bite: "Я бросаюсь вперед, пытаясь вонзить свои острые клыки в шею передо мной."
  single_combat.0041.desc.sc_attacker.POD_blood_surge: "Я взываю к силам моей крови, чтобы они придали мне сил."
@@ -1611,6 +1697,12 @@
  single_combat.0041.desc.sc_attacker.POD_manipulate_inertia: "Я бегу вперед быстрее, чем может видеть глаз, надеясь, что у моего противника нет возможности предугадать мои движения."
  single_combat.0041.desc.sc_attacker.POD_manipulate_acceleration: "Я бегу вперед быстрее, чем может видеть глаз, надеясь, что у моего противника нет возможности предугадать мои движения."
  single_combat.0041.desc.sc_attacker.POD_manipulate_cohesion: "Я бегу вперед быстрее, чем может видеть глаз, надеясь, что у моего противника нет возможности предугадать мои движения."
+ single_combat.0041.desc.sc_attacker.POD_dragons_breath: "I inhale deeply and exhale a massive gout of flame straight at [sc_loser.GetFirstNameNoTooltip]."
+ single_combat.0041.desc.sc_attacker.POD_bark_mudpuppy: "I raise my voice and bellow at [sc_loser.GetFirstNameNoTooltip] with all my might, focusing a single shout into a weapon that rends flesh."
+ single_combat.0041.desc.sc_attacker.POD_clap_of_thunder: "I clap my hands together and a sudden, resonant sound of thunder downright stuns [sc_loser.GetFirstNameNoTooltip]."
+ single_combat.0041.desc.sc_attacker.POD_dragon_slash: "Remembering my training, I launch myself at [sc_loser.GetFirstNameNoTooltip] with a series of fluid, well-executed slashes of my claws, combining poised skill with raw strength."
+
+
  #Aggressor Won, Own Combat Move Injury 
  single_combat.0041.desc.sc_attacker.POD_bite.injury: "И они попадают в цель так, что пьянящий запах крови пропитывает воздух. Враг едва успевает высвободиться из этих смертельных объятий, пока не стало слишком поздно."
  single_combat.0041.desc.sc_attacker.POD_blood_surge.injury: "Я чувствую, как становлюсь выше, сильнее и опаснее благодаря крови. Я быстро использую свое преимущество."
@@ -1709,6 +1801,12 @@
  single_combat.0041.desc.sc_attacker.POD_manipulate_inertia.injury: "И у врага не получилось увернуться, поэтому [my_foe.GetHerHim] остается лишь собрать остатки сил, чтобы не упасть после этого молниеносного натиска."
  single_combat.0041.desc.sc_attacker.POD_manipulate_acceleration.injury: "И у врага не получилось увернуться, поэтому [my_foe.GetHerHim] остается лишь собрать остатки сил, чтобы не упасть после этого молниеносного натиска."
  single_combat.0041.desc.sc_attacker.POD_manipulate_cohesion.injury: "И у врага не получилось увернуться, поэтому [my_foe.GetHerHim] остается лишь собрать остатки сил, чтобы не упасть после этого молниеносного натиска."
+ single_combat.0041.desc.sc_attacker.POD_dragons_breath.injury: "[sc_loser.GetSheHe|U] dodges out of the way, but barely too late. The flames caught [sc_loser.GetHerHim] on the flank, and my opponent has no choice but to tap out before my next exhalation causes even more damage."
+ single_combat.0041.desc.sc_attacker.POD_bark_mudpuppy.injury: "[sc_loser.GetSheHe|U] grits [sc_loser.GetHerHis] teeth as wounds open up all over [sc_loser.GetHerHis] skin, and the lapse in concentration is enough to let me put my weapon to [sc_loser.GetHerHis] throat."
+ single_combat.0041.desc.sc_attacker.POD_clap_of_thunder.injury: "[sc_loser.GetSheHe|U] puts up no fight as I disarm [sc_loser.GetHerHim] and bring this duel to an anticlimactic conclusion."
+ single_combat.0041.desc.sc_attacker.POD_dragon_slash.injury: "[sc_loser.GetSheHe|U] is soon on the backfoot and puts up no fight, even as I go in for the grapple and throw [sc_loser.GetHerHis] to the floor. I won."
+
+
  #Aggressor Won, Own Combat Move Fatality 
  single_combat.0041.desc.sc_attacker.POD_bite.fatality: "И они попадают в цель так, что пьянящий запах крови пропитывает воздух. Вскоре враг перестает сопротивляться поцелую, и сладкий вкус моей победы становится кровавым."
  single_combat.0041.desc.sc_attacker.POD_blood_surge.fatality: "Я чувствую, как становлюсь выше, сильнее и опаснее благодаря крови. Я быстро использую свое преимущество и заканчиваю бой быстрым, рубящим ударом по шее. Голова поверженного врага еще долгое время катится по земле, настолько был силен мой удар."
@@ -1807,6 +1905,12 @@
  single_combat.0041.desc.sc_attacker.POD_manipulate_inertia.fatality: "И у врага не получается увернуться, мой натиск прекращается только тогда, когда передо мной остается только пепел."
  single_combat.0041.desc.sc_attacker.POD_manipulate_acceleration.fatality: "И у врага не получается увернуться, мой натиск прекращается только тогда, когда передо мной остается только пепел."
  single_combat.0041.desc.sc_attacker.POD_manipulate_cohesion.fatality: "И у врага не получается увернуться, мой натиск прекращается только тогда, когда передо мной остается только пепел."
+ single_combat.0041.desc.sc_attacker.POD_dragons_breath.fatality: "[sc_loser.GetSheHe|U] is caught right in the center of the sea of fire, and I hear [sc_loser.GetHerHis] desperate screams of pain, and then silence."
+ single_combat.0041.desc.sc_attacker.POD_bark_mudpuppy.fatality: "[sc_loser.GetSheHe|U] grits [sc_loser.GetHerHis] teeth as wounds open up all over [sc_loser.GetHerHis] skin, and the lapse in concentration is enough to let me put my weapon through [sc_loser.GetHerHis] throat."
+ single_combat.0041.desc.sc_attacker.POD_clap_of_thunder.fatality: "[sc_loser.GetSheHe|U] puts up no fight as I easily decapitate [sc_loser.GetHerHim] and bring this duel to an anticlimactic conclusion."
+ single_combat.0041.desc.sc_attacker.POD_dragon_slash.fatality: "[sc_loser.GetSheHe|U] has no response to my offensive and puts up no fight, even as I rip [sc_loser.GetHerHis] arms off, disembowel [sc_loser.GetHerHim], and beat [sc_loser.GetHerHim] to death with [sc_loser.GetHerHis] own spine."
+
+
  POD_combat_move_prowess_from_pain_wounded_1_modifier: "Доблесть от боли 1"
  POD_combat_move_prowess_from_pain_wounded_2_modifier: "Доблесть от боли 2"
  POD_combat_move_prowess_from_pain_wounded_3_modifier: "Доблесть от боли 3"
