@@ -1,6 +1,6 @@
 ﻿l_russian:
 
- 
+ #### Common Interactions ####
  POD_fera_shapeshift_interaction: "Сменить облик"
  POD_fera_shapeshift_interaction_desc: "Использовать $POD_energy_gnosis$, чтобы изменить свою форму."
  POD_fera_shapeshift_interaction_options_heading: "Какую форму мне принять?"
@@ -9,7 +9,7 @@
  POD_fera_shapeshift_interaction_warform: "[GetPlayer.Custom('PODFeraWarform')]"
  POD_fera_shapeshift_interaction_primalhumanform: "[GetPlayer.Custom('PODFeraPrimalHumanform')]"
  POD_fera_shapeshift_interaction_primalbeastform: "[GetPlayer.Custom('PODFeraPrimalBeastform')]"
-
+ POD_shapeshift_form_totem_form: "Totem form"
 
 
 
@@ -18,8 +18,24 @@
 
 
 
+ POD_fera_weather_magic_interaction: "Weather Magic"
+ POD_fera_weather_magic_interaction_desc: "Unleash a natural disaster in [recipient.GetFirstNamePossessive] realm."
+ POD_fera_weather_magic_interaction_options_heading: "Which natural hazard shall I invoke?"
 
 
+
+
+ POD_spawn_flaying_plague_interaction: "Unleash the Flaying Plague"
+ POD_spawn_flaying_plague_interaction_desc: "You have the terrible Flaying Plague at your disposal. With some specifics ingredients for the ritual, you would be able to unleash it upon the unsuspecting lupines once more."
+ POD_spawn_flaying_plague_interaction.tt: "Inflict the Flaying Plague upon [recipient.GetFirstNamePossessive] location."
+ POD_spawn_flaying_plague_actor_toast: "The Flaying Plague is running rampant through [recipient.GetFirstNamePossessive] location."
+ POD_spawn_flaying_plague_actor_toast.desc: "Hopefully you won't come to regret this"
+ POD_spawn_flaying_plague_failure_toast: "You failed to spread the Flaying Plague in [recipient.GetFirstNamePossessive] location"
+ POD_spawn_flaying_plague_failure_toast.desc: "But there will be more opportunities in the future..."
+ POD_spawn_flaying_plague_interaction_success: "The Flaying Plague will break out in [recipient.GetFirstNamePossessive] location and spread from there over time."
+ POD_spawn_flaying_plague_interaction_failure: "The Flaying Plague fails to take hold."
+ POD_inflict_flaying_plague_interaction: "Inflict the Flaying Plague"
+ POD_inflict_flaying_plague_interaction_desc: "Infest [recipient.GetFirstName] with the Flaying Plague, weakening their defenses. If they are able to become an [GetTrait('abomination').GetName(GetNullCharacter)], this will ensure the success of the $pod_Embrace$."
 
 
  ###Planetary Gifts interactions
@@ -27,8 +43,6 @@
  POD_ebon_binding_interaction_desc: "Привязать к персонажу [recipient.GetFirstName] подходящее наказание. [recipient.GetFirstName] будет испытывать невыносимую боль, когда [recipient.GetSheHe] подумает о том, чтобы побаловать себя запретным действием."
  ebon_binding_modifier: "Эбеновые узы"
 
- POD_earth_heal_interaction: "Исцеление Земли"
- POD_earth_heal_interaction_desc: "Использовать гнозис, чтобы исцелить скверну Вирма в локации персонажа [recipient.GetFirstNamePossessive]."
 
  POD_savagery_of_the_taloned_hunter_interaction: "Дикость когтистого охотника"
  POD_savagery_of_the_taloned_hunter_interaction_desc: "Потратить 1 ед. #L $POD_energy_gnosis$а#! и силы воли, чтобы получить 2 ед. #L $POD_energy_gnosis$а#!."

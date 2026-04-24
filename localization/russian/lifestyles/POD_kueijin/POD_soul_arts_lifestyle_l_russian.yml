@@ -17,8 +17,6 @@
  the_dragon_tear_visible: "Слёзы дракона"
  the_hell_weaving_visible: "Адские кружева"
 
- SOUL_ARTS_COST_EFFECT: "#clickable Это достоинство стоит $VALUE|V0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE|q$', '(CFixedPoint)1' ), 'оч.', 'оч.' )]#!"
-
  soul_arts_ghost_mask_perk_name: "Маска призрака"
  soul_arts_crippling_sorrows_perk_name: "Сокрушительная печаль"
  soul_arts_death_lines_perk_name: "Линии смерти"
@@ -101,7 +99,7 @@
  soul_arts_junkyard_menagerie_perk_name: "Заброшенный зверинец"
  soul_arts_running_with_the_wolves_perk_name: "Бег с волками"
  SOUL_ARTS_SUMMON_WILDING_SPIRIT_PERK_EFFECT: "#flavor Совершенствующийся обращается к названному духу, который неотразим для его слуха.#!"
- SOUL_ARTS_JUNKYARD_MENAGERIE_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('materialized_spirits').GetName].\n#flavor Голодный по очереди сдувает со своей ладони облачко бледно-голубой ци, которая оседает подобно пыли и пробуждает одичавших духов неодушевлённых предметов.#!"
+ SOUL_ARTS_JUNKYARD_MENAGERIE_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('jagglings').GetName].\n#flavor Голодный по очереди сдувает со своей ладони облачко бледно-голубой ци, которая оседает подобно пыли и пробуждает одичавших духов неодушевлённых предметов.#!"
  SOUL_ARTS_RUNNING_WITH_THE_WOLVES_PERK_EFFECT: "#flavor Земные звери часто игнорируют Барьер так, как не могут люди, лавируя между тропами как физическими, так и духовными.#!"
 
  soul_arts_god_of_the_glen_perk_name: "Бог долины"

@@ -26,7 +26,7 @@
  #Gifts: Lupus
  predators_arsenal_perk_name: "Арсенал хищника"
  axis_mundi_perk_name: "Axis Mundi"
- wyld_ferocity_perk_name: "Свирепость Вильда"
+ wyld_ferocity_perk_name: "Свирепость [Glossary('Вильда', 'glossary_wyld_tt')]"
  catfeet_perk_name: "Кошачья грация"
  beast_life_perk_name: "Звериная жизнь"
  terror_direwolf_perk_name: "Ужас лютого волка"
@@ -35,7 +35,7 @@
 
 
  WYLD_FEROCITY_PERK_STATS_EFFECT: "Проведя успешный налёт, вы теперь немного снизите уровень развития провинции."
- TERROR_DIREWOLF_PERK_STATS_EFFECT: "Улучшает эффект достоинства «Свирепость Вильда», повышая снижение уровня развития провинции, подвергшейся налёту."
+ TERROR_DIREWOLF_PERK_STATS_EFFECT: "Улучшает эффект достоинства «Свирепость [Glossary('Вильда', 'glossary_wyld_tt')]», повышая снижение уровня развития провинции, подвергшейся налёту."
 
 
 
@@ -140,7 +140,7 @@
  
  #Gifts: Theurge
  spirit_speech_perk_name: "Глас духа"
- sense_wyrm_perk_name: "Чувство Вирма"
+ sense_wyrm_perk_name: "Чувство [Glossary('Вирма', 'glossary_wyrm_tt')]"
  hear_silence_perk_name: "Слух тишины"
  sense_chiminage_perk_name: "Чувство пути"
  spirit_skin_perk_name: "Шкура духа"
@@ -150,7 +150,7 @@
  rebirthing_perk_name: "Восстановление"
 
  NEEDS_THEURGE_TEXT: "@warning_icon!#X Для разблокировки достоинств в этом древе требуются [Concept('traits', 'свойства')|E] «[GetTrait('theurge').GetName( GetPlayer )]».#!"
- SPIRIT_SPEECH_PERK_STATS_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('materialized_spirits').GetName]"
+ SPIRIT_SPEECH_PERK_STATS_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('jagglings').GetName]"
  HEAR_SILENCE_PERK_STATS_EFFECT: "Разблокирует [Concept('decision', 'решение')|E] «Медитировать в одиночестве»."
  NAME_SPIRIT_PERK_STATS_EFFECT: "Разблокирует [Concept('decision', 'решение')|E] «Попросить духов о помощи»."
  PROPHETIC_VISION_PERK_STATS_EFFECT: "Разблокирует [Concept('decision', 'решение')|E] «Устроить прорицание по звездам».\nВы получите уведомление, если кто-то задумает убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то задумает соблазнить ваших любовников или консортов.\nУ ваших узников меньше шансов на побег из темницы."

@@ -87,10 +87,7 @@
  POD_vampshapeshift_interaction_desc: "Использовать свою кровь и [Glossary('дисциплину','game_concept_discipline_desc')], чтобы изменить свою форму."
  POD_vampshapeshift_interaction_options_heading: "Какую форму мне принять?"
  POD_vampshapeshift_interaction_humanoid: "Вернуться в человеческую форму."
- POD_vampshapeshift_interaction_vicissitudeface: "Лицо Изменчивости."
- POD_vampshapeshift_interaction_revertvicissitudeface: "Отменить лицо Изменчивости."
  POD_vampshapeshift_interaction_feralweapons: "Получить дикое оружие."
- POD_vampshapeshift_interaction_bonearmor: "Броня из костей."
  POD_vampshapeshift_interaction_wolf: "Волк"
  POD_vampshapeshift_interaction_boar: "Вепрь"
  POD_vampshapeshift_interaction_lion: "Лев"
@@ -165,15 +162,15 @@
  POD_bind_famulus_interaction_dog.tt: "Я призову бездомную собаку и подчиню её узами крови."
 
  POD_bond_prisoner_interaction: "Связать пленника узами крови"
- POD_bond_prisoner_interaction_desc: "Насильно насытить персонажа [recipient.GetFirstName] вашей вампирской витэ, создать между вами мистическую связь. Узы кровы заставят его почувствовать искусственную любовь и положительно относиться к вам. Если у него уже были частичные узы крови с вами, она будет заменена одержимостью."
+ POD_bond_prisoner_interaction_desc: "Насильно насытить персонажа [recipient.GetFirstName] вашей вампирской [Glossary('витэ','game_concept_vitae_desc')], создать между вами мистическую связь. Узы кровы заставят его почувствовать искусственную любовь и положительно относиться к вам. Если у него уже были частичные узы крови с вами, она будет заменена одержимостью."
  POD_bond_prisoner_interaction_growingbloodbond: "Существующие узы будут заменены более мощным вариантом - постоянным сильным рычагом влияния."
 
  POD_telepathy_interaction: "Телепатическое слежение"
  POD_telepathy_interaction_desc: "Исследовать разум своей жертвы, чтобы узнать один из [recipient.GetHerHis] тщательно охраняемых секретов."
 
  POD_cover_masquerade_interaction: "Сокрыть Маскарад"
- POD_cover_masquerade_interaction_desc: "Скрыть все ошибки или доказательства вашей вампирской сущности, используя свои [Glossary('дисциплины','game_concept_discipline_desc')], ресурсы или навыки."
- POD_cover_masquerade_interaction_cap: "Вы больше не можете снижать #TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#!"
+ POD_cover_masquerade_interaction_desc: "Скрыть все ошибки или доказательства вампирской сущности [Select_CString(recipient.IsLocalPlayer, '', 'персонажа ' )][recipient.GetShortUINamePossessive][Select_CString(recipient.IsLocalPlayer, 'его персонажа', '' )], используя свои [Glossary('дисциплины','game_concept_discipline_desc')], ресурсы или навыки."
+ POD_cover_masquerade_interaction_cap: "Вы больше не можете снижать #TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  POD_cover_masquerade_interaction_options_heading: "Как мне разобраться с осведомленными смертными?"
  POD_cover_masquerade_dominate: "Я заставлю их забыть."
  POD_cover_masquerade_presence: "Они не раскроют тайны своего божества!"
@@ -250,34 +247,6 @@
  POD_herdify_mortal_interaction_desc: "Происки, направленные на то, чтобы заполучить этого смертного в качестве сосуда, из которого вы сможете безопасно питаться по своему усмотрению."
  POD_herdify_vampire_interaction: "Добавить к стаду #weak (Происки)#!"
  POD_herdify_vampire_interaction_desc: "Происки, направленные на то, чтобы заполучить этого сородича в качестве сосуда, из которого вы сможете безопасно питаться по своему желанию."
-
- POD_ghoul_choose: "Манипулировать #TOOLTIP:game_concept_ghoul_desc #E гулями#!#!"
- POD_ghoul: "Манипулировать #TOOLTIP:game_concept_ghoul_desc #E гулями#!#!"
- recipient_secondary_POD_ghoul_choose: "#TOOLTIP:game_concept_ghoul_desc #E Гуль#!#!-раб"
- POD_ghoul_choose_desc: "Выберите, что делать с вашими #TOOLTIP:game_concept_ghoul_desc #E гулями#!#!-рабами."
- POD_ghoulthrall_heal_option: "Исцелить раба"
- POD_ghoulthrall_goldreward_option: "Наградить раба"
- POD_ghoulthrall_demandgold_option: "Потребовать золота"
- POD_ghoulthrall_giveblood_option: "Поделиться кровью"
- POD_ghoulthrall_traindiscipline_option: "Тренировать [Glossary('дисциплине','game_concept_discipline_desc')]"
- POD_ghoulthrall_transmogrify_option: "Плотетворение"
- POD_ghoulthrall_transmogrify_option.tt: "Использование Изменчивости для трансформации #TOOLTIP:game_concept_ghoul_desc #E гуля#!#! может вызвать голод, напрячь вашу волю и привести к риску раскрытия Маскарада."
- POD_ghoulthrall_divorce_option: "Потребовать развода"
- POD_ghoulthrall_release_option: "Освободить раба"
-
- POD_ghoulify_mortal_interaction_limit: "Количество #TOOLTIP:game_concept_ghoul_desc #E гулей#!#!-рабов ограничено! (3 плюс любые бонусы из других источников)"
- POD_ghoulify_mortal_interaction_bp_one: "Чтобы создать #TOOLTIP:game_concept_ghoul_desc #E гуля#!#!, вампиры должны иметь силу крови не ниже 1 ед."
- POD_ghoulify_mortal_interaction: "Гулифицировать #weak (Происки)#!"
- POD_ghoulify_mortal_interaction_desc: "Происки, направленные на то, чтобы превратить этого смертного в #TOOLTIP:game_concept_ghoul_desc #E гуля#!#!-раба, верного слугу.\nУчтите, что у гулей резко снижен резонанс, и они становятся плохими членами [Concept('POD_herd', 'стада')|E]."
- POD_ghoul_ghoulify_interaction: "Предложить дар витэ #weak (Происки)#!"
- POD_ghoul_ghoulify_interaction_desc: "Предложить этому персонажу витэ сородича, отнятую у пленника по [recipient.GetHerHis] выбору."
- I_have_no_bloodbag: "В темнице нет вампира, у которого можно взять кровь."
- recipient_secondary_POD_ghoul_ghoulify_interaction: "\n \n \n Использовать этого пленника в качестве источника витэ."
-
- POD_ghoul_ghoulify_prisoner_interaction: "Предложить дар витэ пленнику"
- POD_ghoul_ghoulify_prisoner_interaction_desc: "Насильно превратить персонажа [recipient.GetFirstName] в гуля."
- POD_ghoul_ghoulify_prisoner_interaction.tt: "[recipient.GetFirstName] становится гулем."
- recipient_secondary_POD_ghoul_ghoulify_prisoner_interaction: "Узник"
 
  POD_this_character_cannot_embrace: "[THIS.Char.GetFirstName] не может даровать [Glossary('объятия','game_concept_Embrace_desc')]"
  POD_this_character_only_embraces_women: "[THIS.Char.GetFirstName] [Glossary('обращает','game_concept_Embrace_desc')] только женщин"
@@ -356,14 +325,6 @@
  infiltrate_modifier: "Проникновение"
  infiltrate_modifier_desc: "Почему-то кажется, что все знают много о вашем дворе..."
 
- absalon_svantevit_weakest: "Ничтожное понимание ритуала"
- absalon_svantevit_weakest_desc: "У вас есть лишь самое слабое представление о том, что эти язычники делали в том храме"
- absalon_svantevit_weak: "Слабое понимание ритуала"
- absalon_svantevit_weak_desc: "Это все еще в основном набор бессмысленных рун и тому подобного, но вы делаете успехи"
- absalon_svantevit_medium: "Хорошее понимание ритуала"
- absalon_svantevit_medium_desc: "Так вот что означала эта часть!"
- absalon_svantevit_strong: "Превосходное понимание ритуала"
- absalon_svantevit_strong_desc: "Вы сейчас так близко, так близко..."
  absalon_svantevit_reborn: "Свантевит возрожденный"
  absalon_svantevit_reborn_desc: "Бог войны снова разгуливает среди ночи!... даже если это довольно тяжело для его жалкого сосуда"
 
@@ -456,7 +417,7 @@
 
  TOOMANYFRIENDS: "Вы больше не можете заводить друзей, если у вас уже есть $POD_player_befriend_limit$ друзей."
  FIFTHY_GHOULS: "Хищники не вступают в брак со скотом!: $VALUE|+0$"
- WRONG_FERA: "Несовместимый фера: $VALUE|+0$"
+ WRONG_FERA: "Несовместимый [Glossary('фера', 'glossary_fera_tt')]"
  BOTH_REVENANTS_REASON: "Мы оба - ревенанты: $VALUE|+0$"
  SAME_PATH_REASON: "Мы следуем по одному Пути: $VALUE|+0$"
 
@@ -624,7 +585,7 @@
  recipient_secondary_POD_soul_exchange_interaction: "Другая душа"
 
  POD_sword_of_the_righteous_perk_interaction: "Меч праведника"
- POD_sword_of_the_righteous_perk_interaction_desc: "Использовать витэ, чтобы увеличить доблесть выбранного артефакта-оружия."
+ POD_sword_of_the_righteous_perk_interaction_desc: "Использовать [Glossary('витэ','game_concept_vitae_desc')], чтобы увеличить доблесть выбранного артефакта-оружия."
 
  POD_dagons_call_perk_interaction: "Зов Дагона"
  POD_dagons_call_perk_interaction_desc: "Причинить персонажу [recipient.GetFirstName] вред издалека."
@@ -656,9 +617,6 @@
  POD_stone_travel_perk_interaction_tt: "Вы должны находиться на твёрдой [Concept('terrain', 'местности')|E] #weak (Без оазисов, болот и пойм)#!."
  POD_stone_travel_perk_interaction_tt2: "[recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'должна', 'должен' )] находиться на твёрдой [Concept('terrain', 'местности')|E] #weak (Без оазисов, болот и пойм)#!."
  POD_stone_travel_perk_interaction_tt3: "Пункт назначения должен находиться на твёрдой [Concept('terrain', 'местности')|E] #weak (Без оазисов, болот и пойм)#!."
-
- POD_transmogrify_interaction: "Трансмогрификация"
- POD_transmogrify_interaction_desc: "Используя [Glossary('дисциплину','game_concept_discipline_desc')] Изменчивости, вы можете трансформировать персонажа [recipient.GetFirstName] в [Select_CString(recipient.IsFemale, 'красавицу', 'красавца' )] или чудовище."
 
  POD_masquerade_risk_decrease_necromancy_ashes_to_ashes_tt: "«Прах к праху» из моей [Glossary('дисциплины','game_concept_discipline_desc')] некромантии снижает риск #TOOLTIP:game_concept_the_masquerade_desc #E раскрытия Маскарада#!#!."
  POD_masquerade_risk_decrease_necromancy_tend_the_body_garden_tt: "«Забота о саде тела» из моей [Glossary('дисциплины','game_concept_discipline_desc')] некромантии снижает риск #TOOLTIP:game_concept_the_masquerade_desc #E раскрытия Маскарада#!#!."
@@ -737,8 +695,8 @@
  POD_soul_feasting_character_interaction: "Пиршество души"
  POD_soul_feasting_character_interaction_desc: "Поглотить энергию персонажа [recipient.GetFirstName] в качестве замены крови."
 
- POD_degulo_interaction: "Включить/отключить Дегуло"
- POD_degulo_interaction_desc: "Включить или отключить способность Дегуло."
+ POD_degulo_interaction: "Дегуло"
+ POD_degulo_interaction_desc: "Behead [recipient.GetShortUIName] and use [recipient.GetHerHis] skull to empower yourself."
 
  POD_exchange_stat_interaction: "Обменять аттрибут"
  POD_exchange_stat_interaction_desc: "Обменяться базовыми аттрибутами с персонажем, чьим вываренным черепом вы владеете."
@@ -768,6 +726,7 @@
 
  POD_train_disciplines_interaction: "Обучить [Glossary('дисциплине','game_concept_discipline_desc')]"
  POD_train_disciplines_interaction_desc: "Обучить персонажа [recipient.GetFirstName] одной из ваших [Glossary('дисциплин','game_concept_discipline_desc')]"
+ POD_train_disciplines_interaction_effect_tt: "#bold Teaching a discipline will cost you 1 perk point, stress and a potential hunger increase.#!"
  POD_mass_train_disciplines_interaction: "Массово обучить [Glossary('дисциплине','game_concept_discipline_desc')]"
  POD_mass_train_disciplines_interaction_desc: "Обучить своих подопечных одной из ваших [Glossary('дисциплин','game_concept_discipline_desc')]"
  POD_train_celerity: "Случайно выбранный ученик получит свойство «[GetTrait('celerity').GetName(GetNullCharacter)]», если у него его ещё нет."
@@ -840,21 +799,6 @@
  POD_sexuality_metamorph_interaction: "Метаформоза сексуальности"
  POD_sexuality_metamorph_interaction_desc: "Изменить свои сексуальные предпочтения."
 
- POD_fleshcrafting_character_interaction: "Ваяние плоти"
- POD_fleshcrafting_character_interaction_desc: "Превратить персонажа [recipient.GetFirstName] в живой артефакт."
- POD_fleshcrafting_character_interaction_mount: "Ездовое животное"
-
- POD_liquefy_the_mortal_coil_interaction: "Разжижение смертной оболочки"
- POD_liquefy_the_mortal_coil_interaction_desc: "Превратить части тела персонажа [recipient.GetFirstName] в кровь."
-
- POD_will_over_form_interaction: "Воля над формой"
- POD_will_over_form_interaction_desc: "Использовать Изменчивость на персонаже [recipient.GetFirstName] на расстоянии."
- POD_will_over_form_interaction.physical_trait.tt: "Вы должны изучить хотя бы одно [Concept('trait', 'свойство')|E] через [Concept('character_interaction', 'взаимодействие персонажа')|E] $POD_study_anatomy_interaction$."
-
- POD_study_anatomy_interaction: "Изучить анатомию"
- POD_study_anatomy_interaction_desc: "Провести эксперименты над персонажем [recipient.GetFirstName], чтобы углубить своё понимание Изменчивости."
- POD_study_anatomy_interaction_trait_requirement: "[recipient.GetShortUIName] #bold не#! имеет физическое свойство, которую можно изучить"
- POD_study_anatomy_interaction_select_traits_tt: "Вы сможете выбрать, какие из [Concept('traits', 'свойств')|E] персонажа [recipient.GetShortUINamePossessive] изучить"
 
  POD_fist_of_the_titans_interaction: "Кулак титанов"
  POD_fist_of_the_titans_interaction_desc: "Атаковать всех рыцарей персонажа [recipient.GetFirstName] телекинетически."
@@ -1208,3 +1152,35 @@
 
  POD_ambassadorial_visit_interaction: "Посольский визит"
  POD_ambassadorial_visit_interaction_desc: "Представить себя при этом дворе, в надежде продвинуть интересы вашего посольского покровителя."
+
+
+ POD_fleshcraft_interaction: "Fleshcraft"
+ POD_fleshcraft_interaction_desc: "With the use of the $pod_discipline$ of Vicissitude, you can [fleshcraft|E] [recipient.GetFirstName] into whatever your desire."
+ POD_fleshcraft_interaction_requirement: "[recipient.GetName] must either be your [prisoner|E] or [bound_ghoul|E]"
+ POD_fleshcraft_interaction_face_option: "Change Appearance"
+ POD_fleshcraft_interaction_revert_face_option: "Revert Appearance"
+ POD_fleshcraft_interaction_immortal_age_option: "Mold to look younger or older"
+ POD_fleshcraft_interaction_physical_trait_option: "Modify Physical Traits"
+ POD_fleshcraft_interaction_physical_trait_option_req: "You need to have learned at least one [trait|E] via the $POD_study_anatomy_interaction$ [character_interaction|E]."
+ POD_fleshcraft_interaction_physical_trait_option_effect: "Start [fleshcrafting|E] [recipient.GetShortUINameNotMe] to modify [recipient.GetHerHis] [physical_traits|E]"
+ POD_fleshcraft_interaction_fleshcrafting_option: "Mold Flesh and Bone"
+ POD_open_fleshcrafting_gui_interaction: "Start [fleshcrafting|E] [recipient.GetShortUINameNotMe] to modify [recipient.GetHerHis] body parts individually."
+
+ POD_liquefy_the_mortal_coil_interaction: "Liquefy the Mortal Coil"
+ POD_liquefy_the_mortal_coil_interaction_desc: "Turn [recipient.GetFirstName]'s body parts into blood."
+
+ POD_study_anatomy_interaction: "Study Anatomy"
+ POD_study_anatomy_interaction_desc: "Perform experiments on [recipient.GetFirstName] to deepen your understanding of Vicissitude."
+ POD_study_anatomy_interaction_trait_requirement: "[recipient.GetShortUIName] does #bold not#! have a physical trait you can learn"
+ POD_study_anatomy_interaction_select_traits_tt: "You will be able to pick and choose which of [recipient.GetShortUINamePossessive] [traits|E] to study"
+
+ POD_transmogrify_interaction: "Transmogrify"
+ POD_transmogrify_interaction_desc: "TODO Tzimisce"
+ POD_transmogrify_interaction_options_heading: ""
+ POD_transmogrify_interaction_wall_big: "[recipient.GetSheHe] will make a fine tapestry"
+ POD_transmogrify_interaction_wall_small: "A decorative shield"
+ POD_transmogrify_interaction_throne: "Something to sit on"
+ POD_transmogrify_interaction_sculpture: ""
+ POD_transmogrify_interaction_book: "Like an open book"
+ POD_transmogrify_interaction_pedestal: ""
+ POD_transmogrify_interaction_odious_chalice: ""
