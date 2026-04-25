@@ -62,7 +62,7 @@
  is_a_vampgeneration14: "Принадлежит к четырнадцатому поколению"
  is_a_vampgeneration15: "Принадлежит к пятнадцатому поколению"
  is_a_vampgeneration16: "Принадлежит к шестнадцатому поколению"
- STRONG_MENTAL_DEFENSES_TRIGGER: "Ментальная защита этого персонажа слишком сильна"
+ POD_HAS_STRONG_MENTAL_DEFENSES_TRIGGER: "Ментальная защита этого персонажа слишком сильна"
  VICTIM_CANNOT_BE_KILLED_PHYSICALLY: "Этот персонаж не может быть убит физически"
  alchemy_craft_slots_are_not_initiated: "Слот алхимии не занят"
  alchemy_craft_slots_are_full: "Все ваши слоты уже заполнены алхимическими изделиями, используйте [Concept('character_interaction', 'взаимодействие персонажа')|E], чтобы использовать или продать их"
@@ -94,14 +94,14 @@
  NOT_HAS_RELATION_MANIFESTATION_CREATOR_WITH_TARGET: "#Bold Не#! является манифестацией [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  HAS_RELATION_DREAMER_OWNER_WITH_TARGET: "Является мечтателем [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  NOT_HAS_RELATION_DREAMER_OWNER_WITH_TARGET: "#Bold Не#! является мечтателем [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- HAS_RELATION_UNSPEAKABLE_SERVITOR_MASTER_WITH_TARGET: "Является чудовищным служителем [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- NOT_HAS_RELATION_UNSPEAKABLE_SERVITOR_MASTER_WITH_TARGET: "#Bold Не#! является чудовищным служителем [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  HAS_RELATION_POSSESSED_TARGET_WITH_TARGET: "Является кукловодом [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  NOT_HAS_RELATION_POSSESSED_TARGET_WITH_TARGET: "#Bold Не#! является кукловодом [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  HAS_RELATION_SPIRIT_COMPANION_WITH_TARGET: "Является спутником-человеком [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  NOT_HAS_RELATION_SPIRIT_COMPANION_WITH_TARGET: "#Bold Не#! является спутником-человеком [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- HAS_RELATION_KNOWN_TRUE_NAME_BY_TARGET: "Знает истинное имя [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- NOT_HAS_RELATION_KNOWN_TRUE_NAME_BY_TARGET: "Не знает истинное имя [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ HAS_RELATION_INNOCENT_TORMENTOR_WITH_TARGET: "Is [TARGET_CHARACTER.GetShortUINamePossessive] Tormented"
+ NOT_HAS_RELATION_INNOCENT_TORMENTOR_WITH_TARGET: "Is #Bold not#! [TARGET_CHARACTER.GetShortUINamePossessive] Tormented"
+ HAS_RELATION_KNOWN_TRUE_NAME_BY_TARGET: "Знает [Glossary('истинное имя','podgloss.truename')] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ NOT_HAS_RELATION_KNOWN_TRUE_NAME_BY_TARGET: "Не знает [Glossary('истинное имя','podgloss.truename')] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
  HAS_RELATION_WORSHIPPED_DEMON_NO_SCOPE: "Является #V вашим#! #TOOLTIP:game_concept_cultist_desc #E культистом#!#!"
 
@@ -199,14 +199,23 @@
 
  any_councillor: "Любой советник:"
  any_powerful_vassal_all: "Все [Concept('powerful_vassals', 'могущественные вассалы')|E]:"
+ is_riverside_county: "Is a riverside [county|E]"
+ NOT_IS_SEA_TRIGGER: "Is #bold not#! at sea."
 
- POD_KNOWS_TRUE_NAME_OF_TRAIT_TRIGGER: "Вы должны знать истинное имя свойства «[TRAIT.GetName(GetNullCharacter)]»"
- POD_KNOWS_TRUE_NAME_OF_TRIGGER: "Вы должны знать истинное имя #V [Localize(Concatenate('POD_truename_', SCOPE.GetFlagName('true_name_scope')))]#!"
- POD_know_all_nonstandard_true_names_trigger: "Вы знаете [EmptyScope.ScriptValue('total_nonstandard_true_names_number')|V0] истинных имён флоры, фауны и металлов #weak ([GetPlayer.MakeScope.ScriptValue('known_nonstandard_true_names_number')])#!"
+ POD_KNOWS_TRUE_NAME_OF_TRAIT_TRIGGER: "Вы должны знать [Glossary('истинное имя','podgloss.truename')] свойства «[TRAIT.GetName(GetNullCharacter)]»"
+ POD_KNOWS_TRUE_NAME_OF_TRIGGER: "Вы должны знать [Glossary('истинное имя','podgloss.truename')] #V [Localize(Concatenate('POD_truename_', SCOPE.GetFlagName('true_name_scope')))]#!"
+ POD_know_all_nonstandard_true_names_trigger: "Вы знаете [EmptyScope.ScriptValue('total_nonstandard_true_names_number')|V0] [Glossary('истинных имён','podgloss.truename')] флоры, фауны и металлов #weak ([GetPlayer.MakeScope.ScriptValue('known_nonstandard_true_names_number')])#!"
 
  PROVINCE_IS_IN_MIDDLE_KINGDOM: "[PROVINCE.GetName] должно находится в Поднебесной, или это ограничение должно быть снято"
 
  NOT_game_concept_stress: "У вас больше [stress_i]$NUM|V0$ [Concept('stress', 'стресса')|E]"
+
+ POD_HEALTH_HAS_ANY_WOUND_TRIGGER_GLOBAL: "Suffers from at least #V 1#! [POD_damage|E]"
+ POD_HEALTH_HAS_ANY_WOUND_TRIGGER_FIRST: "You suffer from at least #V 1#! [POD_damage|E]"
+ POD_HEALTH_HAS_ANY_WOUND_TRIGGER_THIRD: "[CHARACTER.GetShortUIName] suffers from at least #V 1#! [POD_damage|E]"
+ POD_HEALTH_HAS_ANY_WOUND_TRIGGER_GLOBAL_NOT: "Does #bold not#! suffer from at least #V 1#! [POD_damage|E]"
+ POD_HEALTH_HAS_ANY_WOUND_TRIGGER_FIRST_NOT: "You #bold don't#! suffer from at least #V 1#! [POD_damage|E]"
+ POD_HEALTH_HAS_ANY_WOUND_TRIGGER_THIRD_NOT: "[CHARACTER.GetShortUIName] does #bold not#! suffer from at least #V 1#! [POD_damage|E]"
 
  POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_GLOBAL: "Страдает как минимум от #V 1#! ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#!"
  POD_HEALTH_HAS_SUPERFICIAL_WOUND_TRIGGER_FIRST: "Вы страдаете как минимум от #V 1#! ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#!"
@@ -221,3 +230,11 @@
  POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_GLOBAL_NOT: "Этот персонаж #bold не#! страдает как минимум от #V 1#! ед. #TOOLTIP:game_concept_POD_aggravated_damage_desc #E  @health_track_aggravated_damage_icon! серьёзного урона#!#!"
  POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_FIRST_NOT: "Вы #bold не#! страдаете как минимум от #V 1#! ед. #TOOLTIP:game_concept_POD_aggravated_damage_desc #E  @health_track_aggravated_damage_icon! серьёзного урона#!#!"
  POD_HEALTH_HAS_AGGRAVATED_WOUND_TRIGGER_THIRD_NOT: "[CHARACTER.GetShortUIName] #bold не#! страдает как минимум от #V 1#! ед. #TOOLTIP:game_concept_POD_aggravated_damage_desc #E  @health_track_aggravated_damage_icon! серьёзного урона#!#!"
+
+
+ HAS_WYRM_TAINT_GLOBAL: "Has at least #bold $VALUE|V0$#! [wyrm_taint|E]"
+ HAS_WYRM_TAINT_FIRST: "You have at least #bold $VALUE|V0$#! [wyrm_taint|E]"
+ HAS_WYRM_TAINT_THIRD: "[CHARACTER.GetShortUIName] has at least #bold $VALUE|V0$#! [wyrm_taint|E]"
+ HAS_WYRM_TAINT_GLOBAL_NOT: "Has less than #bold $VALUE|V0$#! [wyrm_taint|E]"
+ HAS_WYRM_TAINT_FIRST_NOT: "You have less than #bold $VALUE|V0$#! [wyrm_taint|E]"
+ HAS_WYRM_TAINT_THIRD_NOT: "[CHARACTER.GetShortUIName] has less than #bold $VALUE|V0$#! [wyrm_taint|E]"

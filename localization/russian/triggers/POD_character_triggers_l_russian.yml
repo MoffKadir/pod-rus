@@ -9,23 +9,19 @@
 
  NUM_OF_RELATION_DEMONIC_MASTER_TARGET_TRIGGER: "Количество демонических хозяев - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_DEMONIC_THRALL_TARGET_TRIGGER: "Количество демонических рабов - $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_SHADOW_TWIN_SERVANT_TRIGGER: "Количество теневых двойников - $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_MIRROR_DUPLICATE_SERVANT_TRIGGER: "Количество зеркальных двойников - $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_DARKLING_MIRROR_SERVANT_TRIGGER: "Количество зеркал Дарклингов - $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_SHADOWY_DUPLICATE_SERVANT_TRIGGER: "Количество теневых двойников - $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_PHANTOM_SHADOW_SERVANT_TRIGGER: "Количество фантомных теней $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_SEPARATED_KHAIBIT_SERVANT_TRIGGER: "Количество отделённых хайбитов - $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_SEPARATED_SHADOW_SERVANT_TRIGGER: "Количество отделённых теней - $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_UNSPEAKABLE_SERVITOR_SERVANT_TRIGGER: "Количество чудовищных служителей - $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_shadow_self_SERVANT_TRIGGER: "Количество теней - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_POSSESSED_TARGET_TRIGGER: "Количество марионеток - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_EFFIGY_CHARACTER_TARGET_TRIGGER: "Количество эффигий $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_DREAMER_MEMBER_TARGET_TRIGGER: "Количество мечтателей - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_WORSHIPPING_CULTIST_TARGET_TRIGGER: "Количество культистов - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_SPIRIT_COMPANION_TARGET_TRIGGER: "Количество спутников-духов - $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_INNOCENT_TORMENTOR_TARGET_TRIGGER: "Number of [tormentors|E] is $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_GHOUL_THRALL_TARGET_TRIGGER: "Количество порабощённых гулей - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_BOUND_DEMON_TARGET_TRIGGER: "Количество связанных демонов - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_BOUND_WRAITH_TARGET_TRIGGER: "Количество связанных призраков - $COMPARATOR$ $NUM|V0$"
+
+ POD_has_no_mindless_clone_of_type_tt: "You already have a [GetTrait('mindless_clone').GetName(GetNullCharacter)] of this type"
+ POD_has_less_than_5_shadowy_duplicates_tt: "You already have #V 5#! Shadowy Duplicates"
+ POD_has_no_separated_shadow_tt: "You already separated your [GetTrait('shadow').GetName(GetNullCharacter)]"
 
  effigy_on_task: "У вас уже есть эффигия на задании."
  lost_in_umbra: "[CHARACTER.GetShortUIName|U] #bold не#! [Select_CString( CHARACTER.IsLocalPlayer, 'находитесь', 'находится')] в опасном измерении [Concept('umbra', 'Умбры')|E]"
@@ -64,6 +60,8 @@
  gurahl_cant_follow_you_faith_tooltip: "[GetTrait('gurahl').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  kitsune_cant_follow_you_faith_tooltip: "[GetTrait('kitsune').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  mokole_cant_follow_you_faith_tooltip: "[GetTrait('mokole').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
+ zhong_lung_cant_follow_you_faith_tooltip: "Zhong Lung can't follow [GetPlayer.GetFaith.GetAdjective]!"
+ non_zhong_lung_cant_follow_you_faith_tooltip: "Only Zhong Lung can follow [GetPlayer.GetFaith.GetAdjective]!"
  nagah_cant_follow_you_faith_tooltip: "[GetTrait('nagah').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  nuwisha_cant_follow_you_faith_tooltip: "[GetTrait('nuwisha').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  ratkin_cant_follow_you_faith_tooltip: "[GetTrait('ratkin').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
@@ -78,10 +76,16 @@
 
  bastet_cant_convert_tooltip: "[GetTrait('bastet').GetName( GetNullCharacter )] не может изменить конфессию!"
  spirit_cant_convert_tooltip: "[GetTrait('spirit').GetName( GetNullCharacter )] не может изменить конфессию!"
+ zhong_lung_player_conversion_tooltip: "Zhong Lung can't follow [GetFaithByKey('emerald_memory').GetName]!"
+ non_zhong_lung_player_conversion_tooltip: "Only Zhong Lung can follow [GetFaithByKey('dragons_zhong_guo').GetName]!"
  viaservilis_cant_convert_tooltip: "Персонаж, исповедующий [GetFaithByKey('viaservilis').GetAdjective|l], не может изменить конфессию!"
+
+ POD_fear_the_sun_trigger_tooltip: "Does #bold not#! fear the sun"
 
  can_add_stress_trait_tooltip: "Необходимо соответствующее свойство, отношение или конфессия."
 
  POD_splat_has_landless_mechanics: "Ваш [Concept('splat', 'вид')|E] имеет #TOOLTIP:game_concept_POD_landless_mechanics_desc #E механики авантюристов#!#!"
 
  POD_IS_TRAIT_PERMANENT: "Свойство «[TRAIT.GetName(GetPlayer)]» не может быть исцелено."
+
+ POD_has_any_healable_maim_trigger_tooltip: "Is #bold not#! maimed in any way."
