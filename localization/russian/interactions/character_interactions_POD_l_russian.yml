@@ -185,8 +185,8 @@
  SECONDARY_ACTOR_CRIMINAL_REASON: "[Concept('splat', 'Вид')|E] [Select_CString(secondary_actor.IsLocalPlayer, '', 'персонажа ' )][secondary_actor.GetShortUINamePossessive][Select_CString(secondary_actor.IsLocalPlayer, 'его персонажа', '' )] считается преступлением для [Select_CString(secondary_recipient.IsLocalPlayer, '', 'персонажа ' )][secondary_recipient.GetShortUINamePossessive][Select_CString(secondary_recipient.IsLocalPlayer, 'его персонажа', '' )]: $VALUE|+0$"
  
  ACTOR_KINFOLK_REASON: "[actor.GetFirstName] имеет свойство «[GetTrait('kinfolk').GetName( actor )]»: $VALUE|+=0$"
- ACTOR_FERA_REASON: "[actor.GetFirstName] является $glossary_fera$: $VALUE|+=0$"
- ACTOR_FERA_RANK_REASON: "Ранг $glossary_fera$ персонажа [actor.GetFirstName]: $VALUE|+=0$"
+ ACTOR_FERA_REASON: "[actor.GetFirstName] является [Glossary('фера', 'glossary_fera_tt')]: $VALUE|+=0$"
+ ACTOR_FERA_RANK_REASON: "Ранг [Glossary('фера', 'glossary_fera_tt')] персонажа [actor.GetFirstName]: $VALUE|+=0$"
  ACTOR_POSSESSED_REASON: "[actor.GetFirstName] имеет свойство «[GetTraitGroup('possessed').GetName()]»: $VALUE|+=0$"
  ACTOR_TRUEPOSSESSED_REASON: "[actor.GetFirstName] имеет свойство «[GetTraitGroup('truepossessed').GetName()]»: $VALUE|+=0$"
  ACTOR_WRAITH_REASON: "[actor.GetFirstName] имеет свойство «[GetTrait('wraith').GetName( GetNullCharacter )]»: $VALUE|+=0$"

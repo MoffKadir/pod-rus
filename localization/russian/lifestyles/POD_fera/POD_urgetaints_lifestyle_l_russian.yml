@@ -21,7 +21,7 @@
  malformed_bone_perk_name: "Malformed Bone"
  MALFORMED_BONE_PERK_EFFECT: "#flavor The bones grow strong and robust, a challenge against the ravages of time.#!"
  bestial_limbs_perk_name: "Bestial Limbs"
- BESTIAL_LIMBS_PERK_EFFECT: "Shapeshifting into a $glossary_fera$'s natural animal forms no longer costs $POD_energy_gnosis$.\n#flavor Even in Homid form your limbs retain their bestial appearance, less to change when shapeshifting.#!"
+ BESTIAL_LIMBS_PERK_EFFECT: "Shapeshifting into a [Glossary('Фера', 'glossary_fera_tt')]'s natural animal forms no longer costs $POD_energy_gnosis$.\n#flavor Even in Homid form your limbs retain their bestial appearance, less to change when shapeshifting.#!"
  forked_tongue_perk_name: "Forked Tongue"
  FORKED_TONGUE_PERK_EFFECT: "Can learn #V 1#! additional [language|E] without any penalties.\n#flavor Where one lie ends and another begins, nobody can tell.#!"
  reversed_eye_perk_name: "Reversed Eye"
@@ -57,7 +57,7 @@
  sanguine_spirit_perk_name: "Sanguine Spirit"
  SANGUINE_SPIRIT_PERK_EFFECT: "Empowering Banes now only causes #V 1#! [POD_aggravated_damage|E] to yourself.\nCan recruit [GetMaA('nexus_crawlers').GetName] as [men_at_arms|E].\n#flavor The Spirit glows with a dark radiance, attracting kindred spirits.#!"
  embrace_oblivion_perk_name: "Embrace Oblivion"
- EMBRACE_OBLIVION_PERK_EFFECT: "[character_interaction|E]: Make a [wyrm_tainted|E] $glossary_fera$ fully fall to the [Glossary('Wyrm', 'glossary_wyrm_tt')].\nUnlock the [investiture_lifestyle|E] [lifestyle|E].\n#flavor Another soul claimed by the Wyrm.#!"
+ EMBRACE_OBLIVION_PERK_EFFECT: "[character_interaction|E]: Make a [wyrm_tainted|E] [Glossary('Фера', 'glossary_fera_tt')] fully fall to the [Glossary('Wyrm', 'glossary_wyrm_tt')].\nUnlock the [investiture_lifestyle|E] [lifestyle|E].\n#flavor Another soul claimed by the Wyrm.#!"
  #\nUnlocks a unique level 4 [mental_break|E]. TODO Wyrm: add this back in once the stress stuff is done
 
 

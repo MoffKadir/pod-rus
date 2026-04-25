@@ -111,8 +111,8 @@
 
  POD_gnosis_regen_kinfolk_cap: "У #TOOLTIP:GAME_TRAIT,kinfolk,[GetPlayer] #L родни#!#! может быть максимум #V 3#! ед. #L $POD_energy_gnosis|l$а#!"
 
- POD_has_spendable_fera_renown_trigger_tooltip_max: "На максимальном ранге $glossary_fera$ тратится [Concept('prestige', 'престиж')|E], а не [Concept('trait_level_track_xp', 'опыт свойства')|E], и у вас меньше чем [SCOPE.GetValue('spent_xp')] [prestige_i]"
- POD_has_spendable_fera_renown_trigger_tooltip: "У вас менее [SCOPE.GetValue('spent_xp')] ед. [Concept('trait_level_track_xp', 'опыта свойства')|E] $glossary_fera$, который можно потратить"
+ POD_has_spendable_fera_renown_trigger_tooltip_max: "На максимальном ранге [Glossary('фера', 'glossary_fera_tt')] тратится [Concept('prestige', 'престиж')|E], а не [Concept('trait_level_track_xp', 'опыт свойства')|E], и у вас меньше чем [SCOPE.GetValue('spent_xp')] [prestige_i]"
+ POD_has_spendable_fera_renown_trigger_tooltip: "У вас менее [SCOPE.GetValue('spent_xp')] ед. [Concept('trait_level_track_xp', 'опыта свойства')|E] [Glossary('фера', 'glossary_fera_tt')], который можно потратить"
 
  POD_fera_remove_pack_totem_tooltip: "#warning Your [pack_totem|E] spirit abandons you.#!"
  POD_fera_remove_planetary_gifts_effect_tooltip: "#warning The Planetary Incarna retract all their [planetarygifts_lifestyle|E].#!"

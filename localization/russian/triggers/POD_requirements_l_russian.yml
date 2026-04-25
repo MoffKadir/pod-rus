@@ -74,7 +74,7 @@
  POD_requirements_hunter: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('supehunter').GetName( GetPlayer )]» или быть ребёнком со свойством «[GetTrait('mortal').GetName( GetPlayer )]» родителя со свойством [GetTrait('supehunter').GetName( GetPlayer )] и не исповедовать конфессию Теневой инквизиции."
  POD_requirements_shih: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('shih').GetName( GetPlayer )]» или быть ребёнком [GetTrait('shih').GetName( GetPlayer )|l]"
  POD_requirements_kj: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('kueijin').GetName( GetPlayer )]» или «[GetTrait('dhampyr').GetName( GetPlayer )]»"
- POD_requirements_hengeyokai: "[Concept('holder', 'Владелец')|E] должен иметь доктрину $glossary_fera$ «[GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName]»"
+ POD_requirements_hengeyokai: "[Concept('holder', 'Владелец')|E] должен иметь доктрину [Glossary('фера', 'glossary_fera_tt')] «[GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName]»"
  POD_requirements_werewolf: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('werewolf').GetName( GetPlayer )]» или «[GetTrait('kinfolk').GetName( GetPlayer )]»"
  POD_requirements_bastet: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('bastet').GetName( GetPlayer )]» или «[GetTrait('kinfolk').GetName( GetPlayer )]» породы бастет"
  POD_requirements_mokole: "The [holder|E] must be [GetTrait('mokole').GetName( GetPlayer )] or Mokolé breed [GetTrait('kinfolk').GetName( GetPlayer )]"

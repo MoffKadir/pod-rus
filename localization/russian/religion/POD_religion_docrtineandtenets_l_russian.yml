@@ -1100,7 +1100,7 @@
 
  wyrm_tainted_name: "Порча [Glossary('Вирма', 'glossary_wyrm_tt')]"
  wyrm_tainted_doctrine_name: "Порча [Glossary('Вирма', 'glossary_wyrm_tt')]"
- wyrm_tainted_doctrine_desc: "Многие $glossary_fera$, почитающие Гею, обладают даром, позволяющим им чувствовать, как на других накладывает порчу [Glossary('Вирм', 'glossary_wyrm_tt')]. Дороги и пути просвещения многих вампиров считаются настолько порочными, что последователи этих верований по своей сути считаются запятнанными Вирмом."
+ wyrm_tainted_doctrine_desc: "Многие [Glossary('фера', 'glossary_fera_tt')], почитающие Гею, обладают даром, позволяющим им чувствовать, как на других накладывает порчу [Glossary('Вирм', 'glossary_wyrm_tt')]. Дороги и пути просвещения многих вампиров считаются настолько порочными, что последователи этих верований по своей сути считаются запятнанными Вирмом."
  doctrine_parameter_hostility_override_wyrm_tainted_doctrine: "[faiths|E] с доктриной [GetFaithDoctrine('wyrm_tainted_doctrine').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  tenet_bacchanal_name: "Вакханалия"
@@ -1434,7 +1434,7 @@
  tenet_secrets_of_flesh_name: "Secrets of Flesh"
  tenet_secrets_of_flesh_desc: "Much wisdom lies dormant in the flesh. The Litany will deny us no longer."
  doctrine_parameter_wyrm_education_lifestyle_xp_from_cannibalism: "Gain [lifestyle_experience|E] matching your [education|E] when devouring other characters scaling with the victim's age"
- doctrine_parameter_infamy_renown_from_cannibalism: "Gain $POD_fera_renown_infamy$ $glossary_fera$ Renown when devouring characters older than 200"
+ doctrine_parameter_infamy_renown_from_cannibalism: "Gain $POD_fera_renown_infamy$ [Glossary('Фера', 'glossary_fera_tt')] Renown when devouring characters older than 200"
 
  tenet_centipede_embrace_name: "Centipede's Embrace"
  tenet_centipede_embrace_desc: "The [Glossary('Centipede', 'glossary_wyrm_tt')] will grow endlessly, feeding on the land itself."
@@ -1475,17 +1475,17 @@
 
  tenet_pilgrims_waves_name: "Pilgrims of the Waves"
  tenet_pilgrims_waves_desc: "The seas hold much danger and wisdom, only by navigating them can we strengthen our spirits. Adversity can foster hope, and resilience."
- doctrine_parameter_dreaming_sands_pilgrimage: "Completing [pilgrimages|E] awards Wanderer [lifestyle_experience|E] and $POD_fera_renown_wisdom$ $glossary_fera$ Renown"
+ doctrine_parameter_dreaming_sands_pilgrimage: "Completing [pilgrimages|E] awards Wanderer [lifestyle_experience|E] and $POD_fera_renown_wisdom$ [Glossary('Фера', 'glossary_fera_tt')] Renown"
  doctrine_parameter_faith_can_raid_oversea: "Allows [raiding|E] over seas"
 
 
  tenet_gaia_memory_name: "Gaia's Memory"
- tenet_gaia_memory_desc: "Our charge has always been to be Gaia's Memory. It is our duty to guide the other Changing Breeds and teach them the long history of the $glossary_fera$ and the tasks Gaia set for us."
- doctrine_parameter_pack_training_coterie_xp: "Training with your [GetPlayer.Custom('PODCoterie')] awards $POD_fera_renown_wisdom$ $glossary_fera$ Renown to all members"
+ tenet_gaia_memory_desc: "Our charge has always been to be Gaia's Memory. It is our duty to guide the other Changing Breeds and teach them the long history of the [Glossary('Фера', 'glossary_fera_tt')] and the tasks Gaia set for us."
+ doctrine_parameter_pack_training_coterie_xp: "Training with your [GetPlayer.Custom('PODCoterie')] awards $POD_fera_renown_wisdom$ [Glossary('Фера', 'glossary_fera_tt')] Renown to all members"
 
 
  tenet_sun_blessed_name: "Sun Blessed"
- tenet_sun_blessed_desc: "The Celestine Helios has bestowed his favor upon only two of the $glossary_fera$, the [GetTrait('mokole').GetName(GetNullCharacter)] and [GetTrait('corax').GetName(GetNullCharacter)].\nThe warmth of the sun invigorates the body and calms the soul. The sun is a wondrous body, like a magnificent father."
+ tenet_sun_blessed_desc: "The Celestine Helios has bestowed his favor upon only two of the [Glossary('Фера', 'glossary_fera_tt')], the [GetTrait('mokole').GetName(GetNullCharacter)] and [GetTrait('corax').GetName(GetNullCharacter)].\nThe warmth of the sun invigorates the body and calms the soul. The sun is a wondrous body, like a magnificent father."
 
  tenet_eastern_mokole_name: "Mokolé of the East"
  tenet_eastern_mokole_desc: "The Mokolé of Asia have learned to adapt to the numerous mortal and supernatural beliefs that permeate the lands. While they still believe their own faith is far superior, they nevertheless are willing to entertain the younger races' beliefs."
@@ -1507,7 +1507,7 @@
  doctrine_fera_triat_alignment_group_name: "Приверженность Триады"
 
  doctrine_fera_triat_alignment_balanced_name: "Равновесие"
- doctrine_fera_triat_alignment_balanced_desc: "Хотя [Glossary('Триада', 'glossary_triat_tt')] больше не находится в равновесии, многие $glossary_fera$ всё ещё верят в старый порядок."
+ doctrine_fera_triat_alignment_balanced_desc: "Хотя [Glossary('Триада', 'glossary_triat_tt')] больше не находится в равновесии, многие [Glossary('фера', 'glossary_fera_tt')] всё ещё верят в старый порядок."
  doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_balanced: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_balanced').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_fera_triat_alignment_wyld_name: "Вильд"
@@ -1515,8 +1515,8 @@
 
  doctrine_fera_triat_alignment_weaver_name: "Ткачиха"
  doctrine_fera_triat_alignment_weaver_desc: "The [Glossary('Weaver', 'glossary_weaver_tt')]'s growth will never stop as long as mankind exists."
- doctrine_parameter_ignore_fera_dev_requirements: "Требования к низкому уровню [Concept('development', 'развития')|E] для зданий $glossary_fera$ игнорируются"
- doctrine_parameter_no_fera_dev_reduction: "Постройки $glossary_fera$ в провинциях, следующих этой [Concept('faith', 'конфессии')|E], не снижают [Concept('development', 'развитие')|E]"
+ doctrine_parameter_ignore_fera_dev_requirements: "Требования к низкому уровню [Concept('development', 'развития')|E] для зданий [Glossary('фера', 'glossary_fera_tt')] игнорируются"
+ doctrine_parameter_no_fera_dev_reduction: "Постройки [Glossary('фера', 'glossary_fera_tt')] в провинциях, следующих этой [Concept('faith', 'конфессии')|E], не снижают [Concept('development', 'развитие')|E]"
 
  doctrine_fera_triat_alignment_wyrm_name: "Вирм"
  doctrine_fera_triat_alignment_wyrm_desc: "Like their fallen master, the servants of the [Glossary('Wyrm', 'glossary_wyrm_tt')] seek only chaos and destruction."
@@ -1583,7 +1583,7 @@
  doctrine_fera_alliance_group_name: "Альянсы фера"
 
  doctrine_fera_beast_courts_name: "Звериные дворы"
- doctrine_fera_beast_courts_desc: "Среди $glossary_fera$ межвидовые союзы редки. Наиболее заметным исключением являются Звериные дворы, поклявшиеся защищать Изумрудную мать (Гею). При дворах существует общество, похожее на имперские культуры мифической Азии, в котором есть регенты, придворные и простолюдины. Любой хенгейокай ($glossary_fera$) может свободно присоединиться к Звериным дворам, при условии, что он поклянётся следовать общественной системе чести и известности, известной как Путь Изумрудной добродетели."
+ doctrine_fera_beast_courts_desc: "Среди [Glossary('фера', 'glossary_fera_tt')] межвидовые союзы редки. Наиболее заметным исключением являются Звериные дворы, поклявшиеся защищать Изумрудную мать (Гею). При дворах существует общество, похожее на имперские культуры мифической Азии, в котором есть регенты, придворные и простолюдины. Любой хенгейокай ([Glossary('фера', 'glossary_fera_tt')]) может свободно присоединиться к Звериным дворам, при условии, что он поклянётся следовать общественной системе чести и известности, известной как Путь Изумрудной добродетели."
  doctrine_parameter_hostility_override_doctrine_fera_beast_courts: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  bastet_nation_tolerance_name: ""

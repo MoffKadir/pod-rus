@@ -63,8 +63,8 @@
  fera_training_widget_tt: "Вы немедленно начнете ещё одно [Concept('journey', 'странствие')|E], чтобы потренироваться с вашей стаей."
 
  fera_spirit_quest_name: "Отправиться на духовные поиски"
- fera_spirit_quest_desc: "Духи - это наставники мира $glossary_fera$, но за изучение их даров приходится платить. В поисках духов вы отправитесь в странствие, полное разнообразных встреч."
- fera_spirit_quest_effects: "В конце ваших поисков вы сможете выбрать одну из следующих наград:\n$EFFECT_LIST_BULLET$[lifestyle_experience|E] $glossary_fera$\n$EFFECT_LIST_BULLET$[artifacts|E]-фетиш\n$EFFECT_LIST_BULLET$[Concept('traits', 'Свойства')|E] образа жизни или славы\n$EFFECT_LIST_BULLET$Дружелюбный [GetTrait('spirit').GetName(GetNullCharacter)|l]\n\nДоступные награды, а также их качество зависят от сложности выбранного вами задания, вашего уровня [Concept('learning', 'учёности')|E] и [Concept('piety_level', 'уровня набожности')|E]."
+ fera_spirit_quest_desc: "Духи - это наставники мира [Glossary('фера', 'glossary_fera_tt')], но за изучение их даров приходится платить. В поисках духов вы отправитесь в странствие, полное разнообразных встреч."
+ fera_spirit_quest_effects: "В конце ваших поисков вы сможете выбрать одну из следующих наград:\n$EFFECT_LIST_BULLET$[lifestyle_experience|E] [Glossary('фера', 'glossary_fera_tt')]\n$EFFECT_LIST_BULLET$[artifacts|E]-фетиши\n$EFFECT_LIST_BULLET$[Concept('traits', 'Свойства')|E] образа жизни или славы\n$EFFECT_LIST_BULLET$Дружелюбный [GetTrait('spirit').GetName(GetNullCharacter)|l]\n\nДоступные награды, а также их качество зависят от сложности выбранного вами задания, вашего уровня [Concept('learning', 'учёности')|E] и [Concept('piety_level', 'уровня набожности')|E]."
  fera_spirit_quest_tt: "Прислушаться к их мольбам и познать их силу."
  fera_spirit_quest_planning_title: "Поиски завершены"
  fera_spirit_quest_planning_desc: "Ваши духовные поиски подошли к концу. Пришло время пообщаться с духами и получить свою награду."
