@@ -20,8 +20,8 @@
  doctrine_vampirethemasquerade_none_name: "Без маскарада"
  doctrine_werewolf_veil_should_does_not_matter_name: "Не имеет значения"
  doctrine_vampirethemasquerade_none_desc: "Вампиры действуют без оглядки на сохранение тайны своего существования от стада.\nС этим догматом сложнее снизить раскрытие, но более высокий уровень ужаса снизит риск восстания провинциальной ячейки инквизиторов."
- doctrine_parameter_harder_masquerade_reduction: "[masquerade_exposure|E] is harder to decrease"
- doctrine_parameter_no_masquerade_penalty: "Many actions that have a chance to #N increase#! [masquerade_exposure|E] will now always succeed"
+ doctrine_parameter_harder_masquerade_reduction: "[Concept('masquerade_exposure', 'Раскрытие Маскарада')|E] сложнее снизить"
+ doctrine_parameter_no_masquerade_penalty: "Многие действия, которые могут #N повысить#! [Concept('masquerade_exposure', 'раскрытие Маскарада')|E], теперь всегда будут успешными"
 
  doctrine_werewolf_veil_should_does_not_matter_desc: "Вуаль - поэтический термин, обозначающий ложное предположение о несуществованнии сверхъестественного, которое усиливает Делириум. Вуаль была официально установлена Соглашением девять тысяч лет назад, которое положило конец Владычеству. В Литании ясно сказано, что «Не поднимай Вуаль». Делириум помогает удерживать Вуаль на месте. Повреждение или разрыв Вуали означает потерю чести среди гару, а восстановление Вуали - наоборот. Некоторые оборотни считают, что Вуаль - это устаревшая идея, которая больше не нужна. Некоторые даже активно работают над тем, чтобы разрушить Вуаль, чтобы оборотни могли снова восстановить Владычество и открыто терроризировать все человечество."
  doctrine_vampirethemasquerade_consent_name: "Кормление от желающих"
@@ -76,8 +76,8 @@
  doctrine_parameter_vampireghouling_shunned: "Персонажи, имеющие [Concept('trait', 'свойства')|E] «[GetTrait('ghoul').GetName( GetPlayer )]» или «[GetTrait('regnant').GetName( GetPlayer )]», — [shunned|El]. Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('massregnant').GetName( GetPlayer )]», — [criminals|El]."
  doctrine_parameter_vampireghouling_accepted: "Персонажи, имеющие [Concept('trait', 'свойства')|E] «[GetTrait('ghoul').GetName( GetPlayer )]» или «[GetTrait('regnant').GetName( GetPlayer )]», принимаются обществом. Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('massregnant').GetName( GetPlayer )]», — [criminals|El]."
  doctrine_parameter_vampireghouling_mass: "Доступны [men_at_arms|El] — [GetMaA('massghouls_maa').GetName].\nПерсонажи, имеющие [Concept('trait', 'свойства')|E] «[GetTrait('ghoul').GetName( GetPlayer )]», «[GetTrait('regnant').GetName( GetPlayer )]» или «[GetTrait('massregnant').GetName( GetPlayer )]», принимаются обществом."
- doctrine_parameter_majordomo_court_position_unlock: "Can employ a [GetCourtPositionType('majordomo_court_position').GetName()]"
- majordomo_court_position_unlock_name: ""Can employ a Majordomo""
+ doctrine_parameter_majordomo_court_position_unlock: "Доступна придворная должность «[GetCourtPositionType('majordomo_court_position').GetName()]»"
+ majordomo_court_position_unlock_name: "«Можно нанять мажордома»"
 
  doctrine_bloodsorcery_name: "Магия крови"
  doctrine_bloodsorcery_crime_name: "Преступление"
@@ -94,13 +94,13 @@
  doctrine_parameter_bloodsorcery_kufr: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('bloodsorcery').GetName( GetPlayer )]», принимаются обществом."
  doctrine_parameter_non_sihr_bloodsorcery_learning_penalty: "Изучение любой #TOOLTIP:game_concept_bloodmagic_path_desc #E тропы магии крови#!#! кроме Сихр потребует затрат благочестия и повлечёт за собой дополнительные штрафы."
 
- doctrine_demonology_name: "Demonology"
- doctrine_demonology_crime_name: "Criminal"
- doctrine_demonology_crime_desc: "To study $POD_splat_demon_plural$ is to become a slave to them."
- doctrine_demonology_shunned_name: "Shunned"
- doctrine_demonology_shunned_desc: "Only doom awaits those that study the darkest pits of hell."
- doctrine_demonology_accepted_name: "Accepted"
- doctrine_demonology_accepted_desc: "The study of $POD_splat_demon_plural$ is a worthy cause."
+ doctrine_demonology_name: "Демонология"
+ doctrine_demonology_crime_name: "Преступление"
+ doctrine_demonology_crime_desc: "Изучать #TOOLTIP:GAME_TRAIT,demon,[GetNullCharacter] #L демонов#!#! - значит стать их рабом."
+ doctrine_demonology_shunned_name: "Достойно порицания"
+ doctrine_demonology_shunned_desc: "Тех, кто исследует самые тёмные глубины ада, ждёт только гибель."
+ doctrine_demonology_accepted_name: "Приемлемо"
+ doctrine_demonology_accepted_desc: "Изучение #TOOLTIP:GAME_TRAIT,demon,[GetNullCharacter] #L демонов#!#! - достойное дело."
  doctrine_parameter_demonology_illegal: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('demonology').GetName( GetNullCharacter )]», — [criminals|El]."
  doctrine_parameter_demonology_shunned: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('demonology').GetName( GetNullCharacter )]», — [shunned|El]."
  doctrine_parameter_demonology_accepted: "Персонажи, имеющие [Concept('trait', 'свойство')|E] «[GetTrait('demonology').GetName( GetNullCharacter )]», принимаются обществом."
@@ -834,7 +834,7 @@
 
  special_doctrine_fivefold_path_kindred_name: "Пятикратный путь"
  special_doctrine_fivefold_path_kindred_desc: "Пять традиционных [Glossary('дхарм','podgloss.dharma')], созданных первым [Glossary('архатом','podgloss.arhat')], [GetScriptedCharacterByHistoryID('791111').GetFirstName]. Они составляют традиционное ядро общества [Glossary('куэй-дзин','game_concept_kuei_jin_desc')].\nПоследователи Пятикратного пути считают еретические [Glossary('дхармы','podgloss.dharma')] болезненно заблуждающимися глупцами или опасными предателями, которых необходимо уничтожить навсегда."
- doctrine_parameter_hostility_override_special_doctrine_fivefold_path_kindred: "[faiths|E] [GetTrait('kueijin').GetName( GetNullCharacter )] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_fivefold_path_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_fivefold_path_kindred: "[faiths|E] [GetTrait('kueijin').GetName( GetNullCharacter )|l] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_fivefold_path_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  anda_hostility_name: "Отношение к [Glossary('Анда','podgloss.anda')]"
  special_doctrine_is_anda_faith_name: "[Glossary('Анда','podgloss.anda')]"
@@ -894,7 +894,7 @@
  special_doctrine_osirian_league_name: "Осирианская лига"
  special_doctrine_osirian_league_desc: "Несмотря на поражение, дух непокорности [Glossary('Осирианской лиги', 'glossary_osirian_league_tt')] по отношению к Сету сохранился."
  doctrine_parameter_hostility_override_special_doctrine_osirian_league: "[faiths|E] древней [Glossary('Осирианской лиги', 'glossary_osirian_league_tt')] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_osirian_maa: "Can recruit [GetMaA('disciples_anubis_maa').GetName], [GetMaA('daggers_nut_maa').GetName], [GetMaA('warriors_ubastet').GetName], and [GetMaA('army_aten').GetName] as [men_at_arms|E]"
+ doctrine_parameter_osirian_maa: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('disciples_anubis_maa').GetName], [GetMaA('daggers_nut_maa').GetName], [GetMaA('warriors_ubastet').GetName] и [GetMaA('army_aten').GetName]"
 
  cabiri_hostility_doctrine_name: "Кабири"
  cabiri_hostility_doctrine_desc: "Они практикуют те же обряды и хекау, что и их египетские собратья, сражаясь против приспешников [Glossary('Апофиса', 'glossary_wyrm_tt')], но также и против деспотизма Шемсу-Геру."
@@ -1020,7 +1020,7 @@
 
  tenet_secret_cult_name: "Тайный культ"
  tenet_secret_cult_desc: "Эта конфессия организована как некий теневой заговор. Мало кто знает об их существовании, и им это нравится."
- doctrine_parameter_secret_cult: "Can recruit [GetMaA('cultists').GetName] as [men_at_arms|E]"
+ doctrine_parameter_secret_cult: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('cultists').GetName]"
  tenet_noblesse_oblige_name: "Благородное обязательство"
  tenet_noblesse_oblige_desc: "Правители очень серьезно относятся к обязанностям сюзерена перед своими вассалами. Справедливое управление системой вассалитета должно привести к тому, что вассалы будут довольны. Счастливые вассалы обозначают успешного сюзерена."
 
@@ -1392,13 +1392,13 @@
  tenet_cruelty_of_stars_name: "Жестокость звёзд"
  tenet_cruelty_of_stars_desc: "За каждым большим богатством стоит ещё более тяжкое преступление. Смертные - это мясо, а кровавое исчадие - потребитель. Просветление - это игра для бедняков. Гоните их, сокрушайте, обкрадывайте и заставляйте работать, убеждая, что это выгодная сделка. Пусть они называют вас инферналистами. Вам нужно зарабатывать деньги."
 
- tenet_physical_ascension_name: "Ascension of the Flesh"
- tenet_physical_ascension_desc: "The goal of all Seekers is to ascend their mortal flesh into a state known as [GetTrait('azhi_dahaka').GetName(GetPlayer)]. A state where they completely seperate themselves from Creation, to be a self-sufficient will in a universe that holds no more power over the ego."
- doctrine_parameter_azhi_dahaka_journey_bonus: "Increases the [planning_speed|E] of the #bold Search for Azhi Dahaka#! [journey|E] by #P +25%#!"
+ tenet_physical_ascension_name: "Вознесение плоти"
+ tenet_physical_ascension_desc: "Цель всех ищущих - возвысить свою смертную плоть до состояния, известного как «[GetTrait('azhi_dahaka').GetName(GetPlayer)]». Состояние, в котором они полностью отделяют себя от Творения, чтобы стать самодостаточной волей во Вселенной, которая больше не имеет власти над эго."
+ doctrine_parameter_azhi_dahaka_journey_bonus: "Повышает [Concept('planning_speed', 'скорость планирования')|E] [Concept('journey', 'странствия')|E] #bold Поиски Ажи Дахаки#! на #P +25%#!"
 
- tenet_burn_the_inferno_name: "Burn the Inferno"
- tenet_burn_the_inferno_desc: "The [akuma|E]'s weapons will be turned against them. No sacrifice is too great, no treachery too small."
- doctrine_parameter_recruit_deviltiger_banes: "Can recruit [GetMaA('rat_headed_dragonfly_demon').GetName], [GetMaA('sleeper_seducing_bane').GetName], and [GetMaA('face_robe_demon').GetName] as [men_at_arms|E]"
+ tenet_burn_the_inferno_name: "Сожжение преисподней"
+ tenet_burn_the_inferno_desc: "Оружие [Concept('akuma', 'акума')|E] будет обращено против них самих. Ни одна жертва не бывает слишком большой, ни одно предательство - слишком мелким."
+ doctrine_parameter_recruit_deviltiger_banes: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('rat_headed_dragonfly_demon').GetName], [GetMaA('sleeper_seducing_bane').GetName] и [GetMaA('face_robe_demon').GetName]"
 
 
  land_of_faith_controlled_name: "Земля веры"
@@ -1418,82 +1418,82 @@
  tenet_fera_innovative_name: "Инновационность"
  tenet_fera_innovative_desc: "Технологический прогресс - самое важное преимущество, которое может быть у каждого. В то время как большинство гару в лучшем случае скептически относятся к инновациям, некоторые последователи [Glossary('Ткачихи', 'glossary_weaver_tt')] открыто продвигают инновации не только для собственного внедрения, но и для человечества в целом."
 
- tenet_one_blade_name: "One with the Blade"
- tenet_one_blade_desc: "The Hakken are the Hengeyokai's foremost warriors and protectors. To this end, many of them spend their life devoted to mastery of the blade."
- doctrine_parameter_katana_crafting: "[crafting_forged|E] Swords will always be Katanas"
- doctrine_parameter_no_sword_fetish_upkeep: "Sword and Katana [fetishes|E] require no $POD_energy_gnosis$ Upkeep"
- doctrine_parameter_pack_training_blademaster: "Training [prowess|E] with your [GetPlayer.Custom('PODCoterie')] gives [GetTrait('lifestyle_blademaster').GetName(GetPlayer)] [trait_level_track_xp|E]"
+ tenet_one_blade_name: "Одно целое с клинком"
+ tenet_one_blade_desc: "Хаккен - лучшие воины и защитники хенгейокай. Поэтому многие из них посвящают свою жизнь мастерству владения клинком."
+ doctrine_parameter_katana_crafting: "[Concept('crafting_forged', 'Выкованные')|E] мечи всегда будут катанами"
+ doctrine_parameter_no_sword_fetish_upkeep: "[Concept('fetishes', 'Мечи и катаны')|E] не требуют затрат @gnosis_icon!гнозиса"
+ doctrine_parameter_pack_training_blademaster: "Тренировка [Concept('prowess', 'доблести')|E] с вашей группой ([GetPlayer.Custom('PODCoterie')]) приносит [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] «[GetTrait('lifestyle_blademaster').GetName(GetPlayer)]»"
 
  tenet_wolves_of_sable_name: "Соболиные волки"
  tenet_wolves_of_sable_desc: "Соболь - невидимый охотник в сугробах; молчаливо задумчивый, терпеливо ждущий, наносящий удар без предупреждения, а затем снова уходящий в лед, снег и ветер, оставляя после себя лишь каплю или две крови в качестве доказательства того, что он вообще был здесь. Он - маленький хищник, усиленный окружающей средой и закаленный одиночеством. Он олицетворяет собой внезапного охотника и выживание сильнейших в самых трудных условиях. Дети Соболя считаются союзниками духов ветра, могут призывать их и свободно с ними разговаривать. Соболь полагается на своих детей в защите сибирских земель. Сокол считает всех Детей Соболя бесчестными дикарями-полукровками и ни при каких обстоятельствах не потерпит членства Соболенка в стае, которую он избрал своей."
 
- tenet_soldiers_of_the_wyrm_name: "Soldiers of the Wyrm"
- tenet_soldiers_of_the_wyrm_desc: "We are the soldiers of the [Glossary('Wyrm', 'glossary_wyrm_tt')], not of its inferior servants. Our glory shall be seen, our faith rewarded."
- doctrine_parameter_reduced_urgetaints_xp: "Reduces [urgetaints_lifestyle|E] [lifestyle_experience|E] obtained by #N -25%#!"
+ tenet_soldiers_of_the_wyrm_name: "Воины Вирма"
+ tenet_soldiers_of_the_wyrm_desc: "Мы воины [Glossary('Вирма', 'glossary_wyrm_tt')], а не его ничтожные слуги. Наша слава будет замечена, наша вера вознаграждена."
+ doctrine_parameter_reduced_urgetaints_xp: "Снижает прирост [Concept('lifestyle_experience', 'опыта')|E] [Concept('urgetaints_lifestyle', 'скверны инстинктов')|E] на #N -25%#!"
 
- tenet_secrets_of_flesh_name: "Secrets of Flesh"
- tenet_secrets_of_flesh_desc: "Much wisdom lies dormant in the flesh. The Litany will deny us no longer."
- doctrine_parameter_wyrm_education_lifestyle_xp_from_cannibalism: "Gain [lifestyle_experience|E] matching your [education|E] when devouring other characters scaling with the victim's age"
- doctrine_parameter_infamy_renown_from_cannibalism: "Gain $POD_fera_renown_infamy$ [Glossary('Фера', 'glossary_fera_tt')] Renown when devouring characters older than 200"
+ tenet_secrets_of_flesh_name: "Тайны плоти"
+ tenet_secrets_of_flesh_desc: "Во плоти дремлет много мудрости. Литания больше не будет отвергать нас."
+ doctrine_parameter_wyrm_education_lifestyle_xp_from_cannibalism: "Поглощение других персонажей приносит [Concept('lifestyle_experience', 'опыт')|E], соответствующий вашему [Concept('education', 'образованию')|E], в зависимости от возраста жертвы"
+ doctrine_parameter_infamy_renown_from_cannibalism: "Поглощение персонажей старше 200 лет приносит [Glossary('фера', 'glossary_fera_tt')] #bold бесчестие#!"
 
- tenet_centipede_embrace_name: "Centipede's Embrace"
- tenet_centipede_embrace_desc: "The [Glossary('Centipede', 'glossary_wyrm_tt')] will grow endlessly, feeding on the land itself."
- doctrine_parameter_ignore_dragon_nest_requirements: "Ignore all [development|E] requirements in Dragon Nest [duchy_buildings|E]"
+ tenet_centipede_embrace_name: "Объятия Многоножки"
+ tenet_centipede_embrace_desc: "[Glossary('Многоножка', 'glossary_wyrm_tt')] будет расти бесконечно, питаясь самой землёй."
+ doctrine_parameter_ignore_dragon_nest_requirements: "Все требования к [Concept('development', 'развитию')|E] в [Concept('duchy_buildings', 'герцогской постройке')|E] «Драконье гнездо» игнорируются"
 
- tenet_wyrm_seekers_name: "Wyrm Seekers"
- tenet_wyrm_seekers_desc: "The [Glossary('Wyrm', 'glossary_wyrm_tt')] holds much knowledge and power, one simply needs to seek it."
- doctrine_parameter_increased_urgetaints_xp: "Increases [urgetaints_lifestyle|E] [lifestyle_experience|E] obtained by #P +25%#!"
+ tenet_wyrm_seekers_name: "Искатели Вирма"
+ tenet_wyrm_seekers_desc: "[Glossary('Вирм', 'glossary_wyrm_tt')] хранит много знаний и силы, нужно просто найти его."
+ doctrine_parameter_increased_urgetaints_xp: "Повышает прирост [Concept('lifestyle_experience', 'опыта')|E] [Concept('urgetaints_lifestyle', 'скверны инстинктов')|E] на #P +25%#!"
 
- tenet_channel_darkness_name: "Channel the Darkness"
- tenet_channel_darkness_desc: "We are one with the darkness, mere phantoms in the dark. We move unseen until our shadows descend upon the fools that stand in our way."
- doctrine_parameter_unlock_shadow_shapeshift: "Unlock [GetModifier('POD_shapeshift_form_shadow_modifier').GetNameWithTooltip] shapeshift option"
+ tenet_channel_darkness_name: "Направление тьмы"
+ tenet_channel_darkness_desc: "Мы едины с тьмой, всего лишь фантомы в темноте. Мы движемся невидимыми, пока наши тени не падают на глупцов, стоящих у нас на пути."
+ doctrine_parameter_unlock_shadow_shapeshift: "Разблокирован вариант смены облика «[GetModifier('POD_shapeshift_form_shadow_modifier').GetNameWithTooltip]»"
 
- tenet_hypnotic_serpent_name: "Sway of the Hypnotic Serpent"
- tenet_hypnotic_serpent_desc: "[Glossary('Cahlash', 'glossary_wyrm_tt')] calls to us and we will answer. Soon, the others will learn to as well."
- doctrine_parameter_learn_secrets_from_seduction: "Successful [GetScheme('seduce').GetTypeName] [schemes|E] reveal all [secrets|E] the target knows, including their own."
-
-
- tenet_vengence_sobek_name: "Vengeance for Sobek"
- tenet_vengence_sobek_desc: "The lands will be cleansed. The rivers will flow. The winds will blow. The temples will be sanctified. The sun will blaze. The serpents will burn."
-
- tenet_flames_agni_name: "Flames of Agni"
- tenet_flames_agni_desc: "While all Mokolé revere Dragon, the followers of the Cosmic Order refer to him as Agni, the God of Fire, the Conveyor of Oblations, and the Speaker of the Wani. Agni is both strong and wise, his flames shield his followers and burn his foes.\nAn eternal flame burns within each of his chosen children, they need only ignite it."
- doctrine_parameter_unlock_agni_totem: "Can choose [GetModifier('agni_totem_modifier').GetNameWithTooltip] instead of [GetModifier('dragon_totem_modifier').GetNameWithTooltip] as a [GetPlayer.Custom('PODCoterie')] Totem."
- doctrine_parameter_gain_fire_immunity: "Gain immunity to fire damage."
-
- tenet_lords_rivers_name: "Lords of Rivers"
- tenet_lords_rivers_desc: "Many Zhong Lung choose to live along the great rivers of Zhong Guo. The Stream of Water holds a terrifying command of the rivers, a young Mokolé would typically struggle to control a small stream, while a Dragon would move an entire river.\nThe Dragons restrain themselves greatly when exercising these powers, otherwise it would have catastrophic consequences on the land."
- doctrine_parameter_gnosis_from_river_provinces: "Owned Riverside [counties|E] of this faith give $POD_energy_gnosis$ Regen: #P 2.5%#!."
- doctrine_parameter_reduces_flood_weather_cost: "Reduces cost of #V Flood#! Weather Magic."
-
- tenet_dragon_princes_name: "Dragon Princes"
- tenet_dragon_princes_desc: "The Wani are the Dragon Princes of Zhong Guo, ruling the clouds and the rising and falling of water, and presiding over the royal houses of mankind. The Zhong Lung, with their draconic Archid form are the children of the Wani. This fact is sometimes disputed by the other races, until a lightning bolt makes them reconsider."
- doctrine_parameter_can_learn_galliard_gifts: "Can learn [GetTrait('galliard').GetName( GetPlayer )] Gifts from the [lunar_auspicegifts_lifestyle|E] [lifestyle|E]."
-
- tenet_outlast_world_name: "Outlast the World"
- tenet_outlast_world_desc: "We do not need anyone but ourselves. Our hides are thick, and our spirits strong. The world may break, but we will still stand."
-
- tenet_pilgrims_waves_name: "Pilgrims of the Waves"
- tenet_pilgrims_waves_desc: "The seas hold much danger and wisdom, only by navigating them can we strengthen our spirits. Adversity can foster hope, and resilience."
- doctrine_parameter_dreaming_sands_pilgrimage: "Completing [pilgrimages|E] awards Wanderer [lifestyle_experience|E] and $POD_fera_renown_wisdom$ [Glossary('Фера', 'glossary_fera_tt')] Renown"
- doctrine_parameter_faith_can_raid_oversea: "Allows [raiding|E] over seas"
+ tenet_hypnotic_serpent_name: "Влияние гипнотического Змея"
+ tenet_hypnotic_serpent_desc: "[Glossary('Кахлаш', 'glossary_wyrm_tt')] взывает к нам, и мы отвечаем. Скоро другие тоже научатся."
+ doctrine_parameter_learn_secrets_from_seduction: "Успешные [Concept('schemes', 'происки')|E] «[GetScheme('seduce').GetTypeName]» раскрывают все [Concept('secrets', 'секреты')|E], которые знает цель, включая её собственные."
 
 
- tenet_gaia_memory_name: "Gaia's Memory"
- tenet_gaia_memory_desc: "Our charge has always been to be Gaia's Memory. It is our duty to guide the other Changing Breeds and teach them the long history of the [Glossary('Фера', 'glossary_fera_tt')] and the tasks Gaia set for us."
- doctrine_parameter_pack_training_coterie_xp: "Training with your [GetPlayer.Custom('PODCoterie')] awards $POD_fera_renown_wisdom$ [Glossary('Фера', 'glossary_fera_tt')] Renown to all members"
+ tenet_vengence_sobek_name: "Месть за Собека"
+ tenet_vengence_sobek_desc: "Земли будут очищены. Потекут реки. Подуют ветры. Храмы будут освящены. Солнце будет сиять вовсю. Змеи сгорят."
+
+ tenet_flames_agni_name: "Пламя Агни"
+ tenet_flames_agni_desc: "В то время как все моколе почитают Дракона, последователи Космического порядка называют его Агни, богом Огня, Приносящим жертвы и Гласом уани. Агни силён и мудр, его пламя защищает последователей и сжигает врагов.\nВечный огонь горит внутри каждого из его избранных детей, им нужно только разжечь его."
+ doctrine_parameter_unlock_agni_totem: "Можно выбрать модификатор «[GetModifier('agni_totem_modifier').GetNameWithTooltip]» вместо «[GetModifier('dragon_totem_modifier').GetNameWithTooltip]» в качестве тотема группы ([GetPlayer.Custom('PODCoterie')])."
+ doctrine_parameter_gain_fire_immunity: "Иммунитет к огненному урону."
+
+ tenet_lords_rivers_name: "Повелители рек"
+ tenet_lords_rivers_desc: "Многие чжун-лун предпочитают жить вдоль великих рек Чжун Го. Течение Воды обладает устрашающей властью над реками, молодой моколе, как правило, с трудом справляется с небольшим ручьем, в то время как дракон может переместить целую реку.\nДраконы сильно сдерживают себя, когда проявляют эти способности, иначе это имело бы катастрофические последствия для суши."
+ doctrine_parameter_gnosis_from_river_provinces: "Подконтрольные речные [Concept('counties', 'графства')|E] этой конфессии предоставляют восстановление @gnosis_icon!гнозиса: #P 2.5%#!."
+ doctrine_parameter_reduces_flood_weather_cost: "Снижает затраты на погодную магию #V Наводнение#!."
+
+ tenet_dragon_princes_name: "Принцы-драконы"
+ tenet_dragon_princes_desc: "Уани - принцы-драконы Чжун Го, правящие облаками, приливами и отливами воды и возглавляющие королевские дома человечества. Чжун-лун, в драконьей форме Архид, - дети Уани. Этот факт иногда оспаривается другими расами, пока удар молнии не заставляет их пересмотреть своё мнение."
+ doctrine_parameter_can_learn_galliard_gifts: "Можно изучать дары «[GetTrait('galliard').GetName( GetPlayer )]» из [Concept('lifestyle', 'пути')|E] [Concept('lunar_auspicegifts_lifestyle', 'лунного покровительства')|E]."
+
+ tenet_outlast_world_name: "Переживая мир"
+ tenet_outlast_world_desc: "Нам не нужен никто, кроме нас самих. У нас толстая кожа и сильный дух. Мир может рухнуть, но мы всё равно выстоим."
+
+ tenet_pilgrims_waves_name: "Паломники волн"
+ tenet_pilgrims_waves_desc: "Моря таят в себе много опасностей и мудрости, только плавая по ним, мы можем укрепить свой дух. Невзгоды могут вселить надежду и стойкость."
+ doctrine_parameter_dreaming_sands_pilgrimage: "Завершение [Concept('pilgrimages', 'паломничеств')|E] предоставляет [Concept('lifestyle_experience', 'опыт пути')|E] странника и #bold мудрость#! [Glossary('фера', 'glossary_fera_tt')]"
+ doctrine_parameter_faith_can_raid_oversea: "Можно совершать [Concept('raiding', 'набеги')|E] по морю"
 
 
- tenet_sun_blessed_name: "Sun Blessed"
- tenet_sun_blessed_desc: "The Celestine Helios has bestowed his favor upon only two of the [Glossary('Фера', 'glossary_fera_tt')], the [GetTrait('mokole').GetName(GetNullCharacter)] and [GetTrait('corax').GetName(GetNullCharacter)].\nThe warmth of the sun invigorates the body and calms the soul. The sun is a wondrous body, like a magnificent father."
+ tenet_gaia_memory_name: "Память Геи"
+ tenet_gaia_memory_desc: "Нашим призванием всегда было хранить память о Гее. Наш долг - направлять другие Меняющиеся породы и знакомить их с долгой историей [Glossary('фера', 'glossary_fera_tt')] и задачами, которые поставила перед нами Гея."
+ doctrine_parameter_pack_training_coterie_xp: "Тренировка с вашей группой ([GetPlayer.Custom('PODCoterie')]) предоставляет #bold мудрость#! [Glossary('фера', 'glossary_fera_tt')] всем её членам"
 
- tenet_eastern_mokole_name: "Mokolé of the East"
- tenet_eastern_mokole_desc: "The Mokolé of Asia have learned to adapt to the numerous mortal and supernatural beliefs that permeate the lands. While they still believe their own faith is far superior, they nevertheless are willing to entertain the younger races' beliefs."
 
- tenet_twisted_memories_name: "Twisted Memories"
- tenet_twisted_memories_desc: "Memories are malleable things, easily changed, easily twisted."
- doctrine_parameter_remove_relation_torture: "Remove a random [relation|E] from your victim during [torture|E]"
- doctrine_parameter_mokole_wyrm_taint_torture: "Greatly increases [wyrm_taint|E] inflicted on [GetTrait('mokole').GetName(GetNullCharacter)] during [torture|E]"
+ tenet_sun_blessed_name: "Благословлённые солнцем"
+ tenet_sun_blessed_desc: "Целестин Гелиос одарил своей благосклонностью только два вида [Glossary('фера', 'glossary_fera_tt')] - [GetTrait('mokole').GetName(GetNullCharacter)|l] и #TOOLTIP:GAME_TRAIT,corax,[GetNullCharacter] #L кораксов#!#!.\nСолнечное тепло бодрит тело и успокаивает душу. Солнце - это чудесное тело, подобное величественному отцу."
+
+ tenet_eastern_mokole_name: "Восточные моколе"
+ tenet_eastern_mokole_desc: "Азиатские моколе научились приспосабливаться к многочисленным верованиям смертных и сверхъестественных существ, которые распространились по их землям. Хотя они всё ещё верят, что их собственная вера намного лучше, они, тем не менее, готовы принять верования более молодых рас."
+
+ tenet_twisted_memories_name: "Искажённые воспоминания"
+ tenet_twisted_memories_desc: "Воспоминания - это податливые вещи, их легко изменить, легко извратить."
+ doctrine_parameter_remove_relation_torture: "[Concept('torture', 'Пытки')|E] удаляют случайное [Concept('relation', 'отношение')|E] вашей жертвы"
+ doctrine_parameter_mokole_wyrm_taint_torture: "Значительно повышает [Concept('wyrm_taint', 'скверну Вирма')|E], получаемую [GetTrait('mokole').GetName(GetNullCharacter)|l] во время [Concept('torture', 'пыток')|E]"
 
 
  doctrine_fera_wyrm_taint_visible_name: ""
@@ -1501,8 +1501,8 @@
  fera_wyrm_taint_visible_doctrine_desc: ""
  doctrine_parameter_can_see_wyrm_taint: ""
 
- doctrine_parameter_wyrm_possession_power_faith_bonus_t1: "Additional [possessedpower_lifestyle|E] [perk|E] points when [possessed|E]: #P +2#!"
- doctrine_parameter_wyrm_possession_power_faith_bonus_t2: "Additional [possessedpower_lifestyle|E] [perk|E] points when [possessed|E]: #P +4#!"
+ doctrine_parameter_wyrm_possession_power_faith_bonus_t1: "Дополнительные очки [Concept('perk', 'достоинств')|E] [Concept('possessedpower_lifestyle', 'пути одержимости')|E] при [Concept('possessed', 'одержимости')|E]: #P +2#!"
+ doctrine_parameter_wyrm_possession_power_faith_bonus_t2: "Дополнительные очки [Concept('perk', 'достоинств')|E] [Concept('possessedpower_lifestyle', 'пути одержимости')|E] при [Concept('possessed', 'одержимости')|E]: #P +4#!"
 
  doctrine_fera_triat_alignment_group_name: "Приверженность Триады"
 
@@ -1511,20 +1511,20 @@
  doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_balanced: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_balanced').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_fera_triat_alignment_wyld_name: "Вильд"
- doctrine_fera_triat_alignment_wyld_desc: "Из-за угрозы, исходящей от [Glossary('Вирм', 'glossary_wyrm_tt')] и [Glossary('Ткачихи', 'glossary_weaver_tt')], большинство [Glossary('фера', 'glossary_fera_tt')] почитают [Glossary('Вильда', 'glossary_wyld_tt')] выше других членов [Glossary('Триады', 'glossary_triat_tt')], видя, что он и Гея нуждаются в защите."
+ doctrine_fera_triat_alignment_wyld_desc: "Из-за угрозы, исходящей от [Glossary('Вирма', 'glossary_wyrm_tt')] и [Glossary('Ткачихи', 'glossary_weaver_tt')], большинство [Glossary('фера', 'glossary_fera_tt')] почитают [Glossary('Вильда', 'glossary_wyld_tt')] выше других членов [Glossary('Триады', 'glossary_triat_tt')], видя, что он и Гея нуждаются в защите."
 
  doctrine_fera_triat_alignment_weaver_name: "Ткачиха"
- doctrine_fera_triat_alignment_weaver_desc: "The [Glossary('Weaver', 'glossary_weaver_tt')]'s growth will never stop as long as mankind exists."
+ doctrine_fera_triat_alignment_weaver_desc: "Пока существует человечество, процветание [Glossary('Ткачихи', 'glossary_weaver_tt')] никогда не прекратится."
  doctrine_parameter_ignore_fera_dev_requirements: "Требования к низкому уровню [Concept('development', 'развития')|E] для зданий [Glossary('фера', 'glossary_fera_tt')] игнорируются"
  doctrine_parameter_no_fera_dev_reduction: "Постройки [Glossary('фера', 'glossary_fera_tt')] в провинциях, следующих этой [Concept('faith', 'конфессии')|E], не снижают [Concept('development', 'развитие')|E]"
 
  doctrine_fera_triat_alignment_wyrm_name: "Вирм"
- doctrine_fera_triat_alignment_wyrm_desc: "Like their fallen master, the servants of the [Glossary('Wyrm', 'glossary_wyrm_tt')] seek only chaos and destruction."
+ doctrine_fera_triat_alignment_wyrm_desc: "Подобно своему павшему хозяину, слуги [Glossary('Вирма', 'glossary_wyrm_tt')] стремятся только к хаосу и разрушению."
  doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_wyrm: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_wyrm').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_can_recruit_wyrm_maa: "Can recruit [GetMaA('scrags').GetName] and [GetMaA('skull_pigs').GetName] as [men_at_arms|E]"
+ doctrine_parameter_can_recruit_wyrm_maa: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('scrags').GetName] и [GetMaA('skull_pigs').GetName]"
 
  doctrine_fera_triat_alignment_triatic_wyrm_name: "Триадический Вирм"
- doctrine_fera_triat_alignment_triatic_wyrm_desc: "The [Glossary('Triatic Wyrm', 'glossary_wyrm_tt')] is a mockery of the original [Glossary('Triat', 'glossary_triat_tt')]. The three heads of the Wyrm empower their closest servants with great unholy power."
+ doctrine_fera_triat_alignment_triatic_wyrm_desc: "[Glossary('Триадический Вирм', 'glossary_wyrm_tt')] является насмешкой над оригинальной [Glossary('Триадой', 'glossary_triat_tt')]. Три головы Вирма наделяют своих ближайших слуг великой нечестивой силой."
  doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_triatic_wyrm: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_triatic_wyrm').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
@@ -1547,9 +1547,9 @@
  doctrine_fera_bastet_karoush_desc: "Каруш - это свод законов оборотней-кошек, похожий на Литанию гару. Переданные от их предков, эти законы важнее, чем любой бастет, и значимее, чем любой ранг или титул. Таковы их кодексы чести, и бастет верят, что они отделяют их от человечества, оберегая от человеческих ошибок. Каруш - это кодекс, составленный их предками, закон Луны и Солнца, закон формирования тайн и закон перемен: Уважай себя, держи своё слово, уважай свой род, уважай свою землю и уважай своё молчание."
  doctrine_parameter_hostility_override_doctrine_fera_bastet_karoush: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_bastet_karoush').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
- doctrine_fera_mokole_duties_name: "The Duties"
- doctrine_fera_mokole_duties_desc: "Helios has given his Children a series of moral and personal imperatives by which to live their lives. Called the Duties, these are the Mokolé precursor to the Garou Litany. Each Duty is connected to one solar auspice, although all Mokolé are bound by them. Violations of the Duties merit reprimands, loss of status, and other punishments. Serious offenders are eaten. The Noonday Suns enforce the laws, although even Midnight Suns will chastise an undutiful Mokolé. "
- doctrine_parameter_hostility_override_doctrine_fera_mokole_duties: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_mokole_duties').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_fera_mokole_duties_name: "Обязательства"
+ doctrine_fera_mokole_duties_desc: "Гелиос дал своим детям ряд моральных и личных принципов, в соответствии с которыми они должны жить. Они называются Обязанностями, и свойственны моколе, предшествуя Литании гару. Каждая обязанность связана с одним солнечным покровительством, хотя все моколе связаны ими. Нарушение Обязанностей влечёт за собой выговоры, потерю статуса и другие виды наказания. Серьёзных нарушителей съедают. Полуденные солнца следят за соблюдением законов, хотя даже Полуночные солнца накажут непослушных моколе."
+ doctrine_parameter_hostility_override_doctrine_fera_mokole_duties: "[faiths|E] с доктриной «[GetFaithDoctrine('doctrine_fera_mokole_duties').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
  doctrine_fera_fallen_tribe_name: "Падшее племя"
@@ -1570,9 +1570,9 @@
  doctrine_parameter_hostility_override_doctrine_fera_bastet_pact: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_bastet_pact').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
- doctrine_fera_mokole_pact_name: "Mokolé Pacts"
- doctrine_fera_mokole_pact_desc: "For one reason or another, the adherents of this faith have formed close bonds with the [GetTrait('mokole').GetName( GetNullCharacter )]. The weresaurians are a tenacious bunch, with their Mnesis they remember their friends well, and their enemies even better."
- doctrine_parameter_hostility_override_doctrine_fera_mokole_pact: "[faiths|E] with [GetFaithDoctrine('doctrine_fera_mokole_pact').GetBaseName] are considered [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_fera_mokole_pact_name: "Соглашения моколе"
+ doctrine_fera_mokole_pact_desc: "По той или иной причине приверженцы этой конфессии установили тесные связи с [GetTrait('mokole').GetName( GetNullCharacter )|l]. Верзавры - живучие существа, благодаря своему воображению они хорошо помнят своих друзей, а врагов - ещё лучше."
+ doctrine_parameter_hostility_override_doctrine_fera_mokole_pact: "[faiths|E] с доктриной «[GetFaithDoctrine('doctrine_fera_mokole_pact').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
  doctrine_fera_wyrm_pact_name: "Соглашения Вирма"
@@ -1589,63 +1589,63 @@
  bastet_nation_tolerance_name: ""
  special_doctrine_bastet_nation_name: "Нация бастет"
  special_doctrine_bastet_nation_desc: "Мать Селена с гордостью наблюдает за тем, как ее любимые кошачьи дети наконец-то объединяются в одно целое."
- doctrine_parameter_hostility_override_special_doctrine_bastet_nation: "Другие [faiths|El] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_bastet_nation').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как [faith_astray|V]"  
+ doctrine_parameter_hostility_override_special_doctrine_bastet_nation: "Другие [faiths|El] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_bastet_nation').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как [faith_astray|V]"
 
  zhong_guo_reward_doctrine_name: ""
- special_zhong_guo_reward_doctrine_name: "Guided by Dragons"
- special_zhong_guo_reward_doctrine_desc: "The Zhong Lung have led the [GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName] into newfound prosperity." 
+ special_zhong_guo_reward_doctrine_name: "Ведомые драконами"
+ special_zhong_guo_reward_doctrine_desc: "Чжун-лун привели [GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName] к вновь обретённому процветанию."
 
  masterless_ghoul_dispossessed_doctrine_name: ""
- special_masterless_ghoul_dispossessed_doctrine_name: "Allied with the Dispossessed"
- special_masterless_ghoul_dispossessed_doctrine_desc: "Thanks to our backing, the support network for ghouls expand far beyond the Holy Land now."
- doctrine_parameter_masterless_ghoul_dispossessed_parametr: "Acceptance for Inviting to [court|e] and becoming agents in [schemes|E]: #P +50#! for [ghouls|E]"
+ special_masterless_ghoul_dispossessed_doctrine_name: "Союз с обездоленными"
+ special_masterless_ghoul_dispossessed_doctrine_desc: "Благодаря нашей поддержке сеть поддержки гулей теперь расширяется далеко за пределы Святой земли."
+ doctrine_parameter_masterless_ghoul_dispossessed_parametr: "Согласие на приглашение ко [Concept('court', 'двору')|E] и становление соучастниками в [Concept('schemes', 'происках')|E]: #P +50#! для [Concept('ghouls', 'гулей')|E]"
 
  masterless_ghoul_folch_cutthroats_doctrine_name: ""
- special_masterless_ghoul_folch_cutthroats_doctrine_name: "Allied with Folch's Cutthroats"
- special_masterless_ghoul_folch_cutthroats_doctrine_desc: "Their anger leveraged to target our enemies make for an invaluable asset."
- doctrine_parameter_masterless_ghoul_folch_cutthroats_parametr: "[casus_belli|E] Cost: #P -20%#!"
+ special_masterless_ghoul_folch_cutthroats_doctrine_name: "Союз с головорезами Фолка"
+ special_masterless_ghoul_folch_cutthroats_doctrine_desc: "Их гнев, направленный против наших врагов, является бесценным преимуществом."
+ doctrine_parameter_masterless_ghoul_folch_cutthroats_parametr: "Стоимость [Concept('casus_belli', 'казус белли')|E]: #P -20%#!"
 
  masterless_ghoul_order_of_st_panteleimon_doctrine_name: ""
- special_masterless_ghoul_order_of_st_panteleimon_doctrine_name: "Allied with the Order of St. Panteleimon"
- special_masterless_ghoul_order_of_st_panteleimon_doctrine_desc: "The once bureaucratic arm of the Church of Caine are still heretics of a sort, but they are our heretics now."
- doctrine_parameter_masterless_ghoul_order_of_st_panteleimon_parametr: "Your [court_chaplain|E] is #P 100%#! faster at the [convert_county|E] [councillor_task|E]."
+ special_masterless_ghoul_order_of_st_panteleimon_doctrine_name: "Союз с орденом святого Пантелеймона"
+ special_masterless_ghoul_order_of_st_panteleimon_doctrine_desc: "Некогда бюрократическая ветвь Церкви Каина всё ещё в некотором роде считаются еретиками, но теперь они наши еретики."
+ doctrine_parameter_masterless_ghoul_order_of_st_panteleimon_parametr: "Ваш [Concept('court_chaplain', 'придворный капеллан')|E] [Concept('councillor_task', 'обращает')|E] [Concept('convert_county', 'графства')|E] на #P 100%#! быстрее."
 
  masterless_ghoul_haqims_assassins_doctrine_name: ""
- special_masterless_ghoul_haqims_assassins_doctrine_name: "Allied with the \"False\" Haqim's Assassins"
- special_masterless_ghoul_haqims_assassins_doctrine_desc: "Be it luck or skill, we clearly want someone who managed to twart the Assamites for so long on our side."
- 
+ special_masterless_ghoul_haqims_assassins_doctrine_name: "Союз с «ложными» ассассинами Хаким"
+ special_masterless_ghoul_haqims_assassins_doctrine_desc: "Будь то удача или мастерство, мы явно хотим, чтобы кто-то, кто так долго противостоял Ассамитам, перешёл на нашу сторону."
+
  #fury_of_the_wyld_doctrine_name: ""
  #special_fury_of_the_wyld_doctrine_name: "Fury of the Wyld"
- #special_fury_of_the_wyld_doctrine_desc: "The Black Furies have secured their home and shown the indomitable will of Gaia's Daughters." 
- # 
+ #special_fury_of_the_wyld_doctrine_desc: "The Black Furies have secured their home and shown the indomitable will of Gaia's Daughters."
+ #
  #bulwark_against_disease_doctrine_name: ""
  #special_bulwark_against_disease_doctrine_name: "Bulwark Against Disease"
- #special_bulwark_against_disease_doctrine_desc: "The Bone Gnawer ideals have been cemented, disease is resisted, food is plentiful and the commoners see hope again." 
- # 
+ #special_bulwark_against_disease_doctrine_desc: "The Bone Gnawer ideals have been cemented, disease is resisted, food is plentiful and the commoners see hope again."
+ #
  #servant_of_unicorn_doctrine_name: ""
  #special_servant_of_unicorn_doctrine_name: "Servants of Unicorn"
- #special_servant_of_unicorn_doctrine_desc: "The Children of Gaia are gaining ground, alliances and cooperation spreading, even the Get must respect Unicorn now." 
- # 
+ #special_servant_of_unicorn_doctrine_desc: "The Children of Gaia are gaining ground, alliances and cooperation spreading, even the Get must respect Unicorn now."
+ #
  #concord_of_iron_and_silver_doctrine_name: ""
  #special_concord_of_iron_and_silver_doctrine_name: "Concord of Iron and Silver"
- #special_concord_of_iron_and_silver_doctrine_desc: "The Fianna have secured their ancestral lands and the new Fae pact has revitalised both sides" 
- # 
+ #special_concord_of_iron_and_silver_doctrine_desc: "The Fianna have secured their ancestral lands and the new Fae pact has revitalised both sides"
+ #
  #prometheus_fire_doctrine_name: ""
  #special_prometheus_fire_doctrine_name: "Prometheus Fire"
- #special_prometheus_fire_doctrine_desc: "The Warder's of Men light the way for Humanity, across the world new ideals begin to shine." 
- # 
+ #special_prometheus_fire_doctrine_desc: "The Warder's of Men light the way for Humanity, across the world new ideals begin to shine."
+ #
  #success_in_shadows_doctrine_name: ""
  #special_success_in_shadows_doctrine_name: "Success in Shadows"
- #special_zhong_guo_reward_doctrine_desc: "The Shadow Lords have secured their lands, bound a great enemy and now they intend to keep going." 
- # 
+ #special_zhong_guo_reward_doctrine_desc: "The Shadow Lords have secured their lands, bound a great enemy and now they intend to keep going."
+ #
  #returning_home_doctrine_name: ""
  #special_returning_home_doctrine_name: "Returning Home"
- #special_returning_home_doctrine_desc: "The Silent Striders have broken the curse! Now home is ours to never lose again!" 
- # 
+ #special_returning_home_doctrine_desc: "The Silent Striders have broken the curse! Now home is ours to never lose again!"
+ #
  #return_of_the_king_doctrine_name: ""
  #special_return_of_the_king_doctrine_name: "The Kings Return"
- #special_return_of_the_king_doctrine_desc: "The Silver Fangs have shown to all they are worthy to lead." 
- # 
+ #special_return_of_the_king_doctrine_desc: "The Silver Fangs have shown to all they are worthy to lead."
+ #
  #balance_in_all_things_doctrine_name: ""
  #special_balance_in_all_things_doctrine_name: "Balance in All Things"
  #special_balance_in_all_things_doctrine_desc: "The Star Gazers have chosen their path, and move with grace and harmony."
