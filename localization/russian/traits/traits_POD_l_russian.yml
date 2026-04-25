@@ -16,7 +16,7 @@
 
  trait_infernalist: "Инферналист"
  #trait_infernalist_desc: "Этот персонаж связался с темными богами, демонами, существами из пустоты и еще бог знает с кем."
- trait_infernalist_desc: "This character has contacted $POD_splat_demon_plural$ in order to gain their powers of [investiture_lifestyle|E]. A vile practice that taints the soul, considered evil even by the standards of the $pod_wod$."
+ trait_infernalist_desc: "This character has contacted $POD_splat_demon_plural$ in order to gain their powers of [investiture_lifestyle|E]. A vile practice that taints the soul, considered evil even by the standards of the [Glossary('Мир Тьмы','game_concept_world_of_darkness_desc')]."
  trait_infernalist_diabolism_desc: "[ROOT.Char.GetFirstNameNoTooltip] follows the road of [diabolism|E]."
  trait_infernalist_thralldom_desc: "[ROOT.Char.GetFirstNameNoTooltip] follows the road of [thralldom|E]."
 
@@ -145,7 +145,7 @@
  trait_nosferatu_laibon_desc: "Получив своё название от гамбийского бога, от которого, как они утверждают, они происходят, гурухи считают себя хозяевами Африки, законными правителями ее земель и народов."
 
  trait_nosferatu_mnemachien: "Mnemachien"
- trait_nosferatu_mnemachien_desc: "#medium $glossary_clan_curse$: Always [GetTrait('predatortype_consensualist').GetName(GetNullCharacter)]#!\n\nOriginating from the druidess Mnemach, the Mnemachiens use their strengths to keep a principle of balance with humankind."
+ trait_nosferatu_mnemachien_desc: "#medium [Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: Always [GetTrait('predatortype_consensualist').GetName(GetNullCharacter)]#!\n\nOriginating from the druidess Mnemach, the Mnemachiens use their strengths to keep a principle of balance with humankind."
  
  trait_baali_ennamaru: "Children of Ennamaru"
  trait_baali_ennamaru_desc: "Descending from the mysterious Methuselah Nekys, the Children of Ennamaru are skilled manipulators who delight in psychologically torturing their targets."
@@ -250,19 +250,19 @@
  TRAIT_FLAG_DESC_can_create_gargoyles: "Можно создавать #TOOLTIP:GAME_TRAIT,gargoyle,[GetNullCharacter] #L гаргулий#!#!"
 
  # Clan curse flags
- TRAIT_FLAG_DESC_clan_curse_anh: "$glossary_clan_curse$: [Concept('counties','Графства')|E] в [Concept('domain','домене')|E], не граничащие с морем или рекой, получат модификатор [GetModifier('POD_anh_clan_curse_modifier').GetNameWithTooltip]"
- TRAIT_FLAG_DESC_clan_curse_brujah: "$glossary_clan_curse$: [Glossary('Неистовству','game_concept_beast_desc')] сложнее сопротивляться"
- TRAIT_FLAG_DESC_clan_curse_bushi: "$glossary_clan_curse$: Раны от огня и солнечного света удваиваются"
- TRAIT_FLAG_DESC_clan_curse_gangrel: "$glossary_clan_curse$: Обретают звериный облик при [Glossary('неистовстве','game_concept_beast_desc')]"
- TRAIT_FLAG_DESC_clan_curse_kishu: "$glossary_clan_curse$: Не могут питаться животными"
- TRAIT_FLAG_DESC_clan_curse_kuntilanak: "$glossary_clan_curse$: Не могут начинать [Concept('personal_schemes','личные происки')|E] со смертными"
- TRAIT_FLAG_DESC_clan_curse_malkavian: "$glossary_clan_curse$: Свойства постоянного помешательства"
- TRAIT_FLAG_DESC_clan_curse_monomi: "$glossary_clan_curse$: Штрафы от #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голода#!#! утроены"
- TRAIT_FLAG_DESC_clan_curse_sangun: "$glossary_clan_curse$: Вечная #TOOLTIP:GAME_TRAIT,shy,[GetNullCharacter] #L застенчивость#!#!"
- TRAIT_FLAG_DESC_clan_curse_setite: "$glossary_clan_curse$: Раны от солнечного света удвоены"
- TRAIT_FLAG_DESC_clan_curse_toreador: "$glossary_clan_curse$: В редких случаях получают модификатор [GetModifier('POD_toreador_bane_modifier').GetNameWithTooltip]"
- TRAIT_FLAG_DESC_clan_curse_tremere: "$glossary_clan_curse$: Немедленное [Concept('strong_hook','сильное влияние')|E] при [Glossary('узах крови','game_concept_bloodbond_desc')]" # shared with banpaia
- TRAIT_FLAG_DESC_clan_curse_ventrue: "$glossary_clan_curse$: #TOOLTIP:game_concept_ventrue_clan_curse_desc #E Ограничения питания#!#!"
+ TRAIT_FLAG_DESC_clan_curse_anh: "[Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: [Concept('counties','Графства')|E] в [Concept('domain','домене')|E], не граничащие с морем или рекой, получат модификатор [GetModifier('POD_anh_clan_curse_modifier').GetNameWithTooltip]"
+ TRAIT_FLAG_DESC_clan_curse_brujah: "[Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: [Glossary('Неистовству','game_concept_beast_desc')] сложнее сопротивляться"
+ TRAIT_FLAG_DESC_clan_curse_bushi: "[Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: Раны от огня и солнечного света удваиваются"
+ TRAIT_FLAG_DESC_clan_curse_gangrel: "[Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: Обретают звериный облик при [Glossary('неистовстве','game_concept_beast_desc')]"
+ TRAIT_FLAG_DESC_clan_curse_kishu: "[Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: Не могут питаться животными"
+ TRAIT_FLAG_DESC_clan_curse_kuntilanak: "[Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: Не могут начинать [Concept('personal_schemes','личные происки')|E] со смертными"
+ TRAIT_FLAG_DESC_clan_curse_malkavian: "[Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: Свойства постоянного помешательства"
+ TRAIT_FLAG_DESC_clan_curse_monomi: "[Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: Штрафы от #TOOLTIP:game_concept_hunger_desc #E @blood_icon!голода#!#! утроены"
+ TRAIT_FLAG_DESC_clan_curse_sangun: "[Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: Вечная #TOOLTIP:GAME_TRAIT,shy,[GetNullCharacter] #L застенчивость#!#!"
+ TRAIT_FLAG_DESC_clan_curse_setite: "[Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: Раны от солнечного света удвоены"
+ TRAIT_FLAG_DESC_clan_curse_toreador: "[Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: В редких случаях получают модификатор [GetModifier('POD_toreador_bane_modifier').GetNameWithTooltip]"
+ TRAIT_FLAG_DESC_clan_curse_tremere: "[Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: Немедленное [Concept('strong_hook','сильное влияние')|E] при [Glossary('узах крови','game_concept_bloodbond_desc')]" # shared with banpaia
+ TRAIT_FLAG_DESC_clan_curse_ventrue: "[Glossary('Проклятие клана', 'glossary_clan_curse_tt')]: #TOOLTIP:game_concept_ventrue_clan_curse_desc #E Ограничения питания#!#!"
 
 
  trait_wanxian: "Ван Сянь"
@@ -1554,7 +1554,7 @@
  trait_fleshcrafted_character_desc: "#color:{0.0,0.0,0.0,0.0} [GetScriptedGui('POD_fleshcrafting_trait_tooltip').BuildTooltip( GuiScope.AddScope('character',ROOT.Char.MakeScope).End )]#!\n\n[ROOT.Char.GetFirstNameNoTooltip] was reshaped physically (and some might say, spiritually) by use of the [Glossary('Discipline','game_concept_discipline_desc')] [GetTrait('vicissitude').GetName(GetNullCharacter)]."
  trait_fleshcrafted_desc: "This character was reshaped physically (and some might say, spiritually) by use of the [Glossary('Discipline','game_concept_discipline_desc')] [GetTrait('vicissitude').GetName(GetNullCharacter)]."
  trait_track_fleshcrafted: "Complexity"
- trait_track_fleshcrafted_desc: "The degree to which this creature has been modified. The effects of [GetTrait('vicissitude').GetName(GetNullCharacter)] can be barely noticeable if applied with a subtle touch, but a Szlachta with a full suite of combat enhancements will look disturbing even to other $pod_cainites$."
+ trait_track_fleshcrafted_desc: "The degree to which this creature has been modified. The effects of [GetTrait('vicissitude').GetName(GetNullCharacter)] can be barely noticeable if applied with a subtle touch, but a Szlachta with a full suite of combat enhancements will look disturbing even to other [Glossary('Каиниты','game_concept_cainite_desc')]."
  trait_pilgrim_of_enoch: "Pilgrim of Enoch"
  trait_pilgrim_of_enoch_desc: "A [GetTrait('nagaraja').GetName(GetNullCharacter)] who has made the perilous journey to the ghost-city of Enoch in the [UmbraGlossaryLocalized('shadowlands','Underworld')] and returned with forbidden knowledge of the dead."
  trait_pilgrim_of_enoch_character_desc: "[ROOT.Char.GetFirstNameNoTooltip]'s pilgrimage to the ghost-city of Enoch has granted [ROOT.Char.GetHerHim] insight into the deepest mysteries of Necromancy."

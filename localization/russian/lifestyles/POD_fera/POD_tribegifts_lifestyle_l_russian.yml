@@ -271,15 +271,15 @@
  UNSEELIE_FAERIE_KIN_PERK_EFFECT: "Unlock multiple [POD_faerie_maa|E] [men_at_arms|E].\n#flavor The Dancer may call on Unseelie changelings to aid him.#!"
  burning_scars_perk_name: "Burning Scars"
  BURNING_SCARS_PERK_EFFECT: "[character_interaction|E]: Inflict [POD_aggravated_damage|E] fire damage to a character as well as yourself.\n#flavor Black Spiral Dancers often carve stylized scars representing their devotion to the Wyrm into their bodies. This Gift causes the Dancer's scars to glow with a dark brilliance that almost seems to crawl into the victim's body, burning him from the inside out and leaving horrible burns that mimic the Dancer's own scars.#!"
- summon_wyrm_elemental_perk_name: "Summon $glossary_wyrm$ Elemental"
- SUMMON_WYRM_ELEMENTAL_PERK_EFFECT: "#flavor The Dancer performs a short dance around a piece of a pure element. The dance corrupts the element and summons forth a $glossary_wyrm$ Elemental.#!"
+ summon_wyrm_elemental_perk_name: "Summon [Glossary('Wyrm', 'glossary_wyrm_tt')] Elemental"
+ SUMMON_WYRM_ELEMENTAL_PERK_EFFECT: "#flavor The Dancer performs a short dance around a piece of a pure element. The dance corrupts the element and summons forth a [Glossary('Wyrm', 'glossary_wyrm_tt')] Elemental.#!"
 
  the_white_howl_perk_name: "The White Howl"
  THE_WHITE_HOWL_PERK_EFFECT: "Give [GetModifier('the_white_howl_modifier_enemy').GetNameWithTooltip] to enemy [knights|E] and [GetModifier('the_white_howl_modifier_ally').GetNameWithTooltip] to allied [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E].\n#flavor Once the most sacred blessing of the White Howlers, this mighty Gift is still passed down among the ranks of the Black Spiral Dancers as a reminder of the past to their Garou enemies. The sound of the White Howl is sufficient to rend both the workings of the Wyrm, and the ears of Garou who hear it and realize how much Gaia has lost.#!"
  totem_form_perk_name: "Totem Form"
  TOTEM_FORM_PERK_EFFECT: "Unlock a Totem Form shapeshift which corresponds to your [pack_totem|E].\n #flavor This powerful Gift allows a Black Spiral to take on the appearance - and much of the power - of her pack's Bane totem.#!"
  prelude_to_apocalypse_perk_name: "Prelude to Apocalypse"
- PRELUDE_TO_APOCALYPSE_PERK_EFFECT: "Unlock Tear Down the Gauntlet in the Manipulate the Gauntlet [umbra|E] action.\n#flavor The Dancer can tear away aeons of the $glossary_weaver$'s works for a short while. This Gift rips down the Gauntlet entirely, merging the worlds of flesh and spirit as they were in the days of legend. Moreover, this mended region acts as a shining beacon to Wyrm spirits, calling a flood of banes to assist the Dancer.#!"
+ PRELUDE_TO_APOCALYPSE_PERK_EFFECT: "Unlock Tear Down the Gauntlet in the Manipulate the Gauntlet [umbra|E] action.\n#flavor The Dancer can tear away aeons of the [Glossary('Weaver', 'glossary_weaver_tt')]'s works for a short while. This Gift rips down the Gauntlet entirely, merging the worlds of flesh and spirit as they were in the days of legend. Moreover, this mended region acts as a shining beacon to Wyrm spirits, calling a flood of banes to assist the Dancer.#!"
  PRELUDE_TO_APOCALYPSE_REQUIREMENT: "@warning_icon!#X You need to finish a quest from a Maeljin Incarna (station an explorer in the [UmbraGlossary('black_spiral_labyrinth')] and start an [umbra_expedition|E] to reach them and then receive a quest) to unlock this perk.#!"
 
 

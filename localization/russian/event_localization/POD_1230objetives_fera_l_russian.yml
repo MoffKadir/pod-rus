@@ -125,7 +125,7 @@
  silentstrider_objective_decision_effect_tooltip: "Вы получите [Concept('title', 'титул')|E] империи Безмолвных странников, могущественную реликвию вашего племени, и станете на шаг ближе к объединению Гару."
  silentstrider_objective_decision_confirm: "Теперь мы готовы."
  silentstrider_decision_custom: "Каэрн Колеса Пта во владении [GetTitleByKey('b_marrakesh').GetNameNoTier] должен быть полностью отстроен"
- silentstrider_decision_custom_b: "[GetScriptedCharacterByHistoryID('505094').GetFirstName] and [GetScriptedCharacterByHistoryID('790126').GetFirstName], the two main vampire opponents of the Silent Striders, must be dead or in $pod_torpor$"
+ silentstrider_decision_custom_b: "[GetScriptedCharacterByHistoryID('505094').GetFirstName] and [GetScriptedCharacterByHistoryID('790126').GetFirstName], the two main vampire opponents of the Silent Striders, must be dead or in [Glossary('Торпор','game_concept_torpor_desc')]"
  silentstrider_decision_custom_c: "A character with a faith of the Osirian League is in control of Cairo"
 
  pod1230objectives_fera.17.t: "Изгнанники вернулись домой"
@@ -427,7 +427,7 @@
  tkash_objective_decision_effect: "You will gain the [GetTitleByKey('h_tkash').GetNameNoTier] [title|E] which encompasses all of [GetGeographicalRegion('world_india').GetName]"
  tkash_objective_decision_effect2: "All $POD_splat_vampire_plural$ and [GetTrait('kueijin').GetName(GetNullCharacter)] with land in India will suffer #V 5#! Fire damage"
  pod1230objectives_fera.52.t: "Primeval Jungle"
- pod1230objectives_fera.52.desc: "For millenia now, this land has been a battleground. Between the wars of the Leeches and the Escaped Devils, aggravated by the neglect of the Khans and madness of the $glossary_wyld$'s bastards, despite this land's natural defenses, it has been the epicenter of an unending nightly war ever since the Blood Demon arrived. But, finally, no longer. Your grip on the land known to your people as T'kash is now absolute, as none of them expected your rise. The myriad immortals are now scattered, and in hiding. But they cannot escape your people's wrath. As part of a grand coronation, the light of Helios begins to suffuse the jungles itself, waiting for the right moment. As the assembled Weresuchids proclaim your name and the restoration of this ancient empire, the crown glows as the Elders set it on your brow. Helios' rage will know no bound, as the light from it begins to burn and sunlight, in a brief flash, bathes India. Helios himself has acknowledged your right to rule. The Eternal War is finally over."
+ pod1230objectives_fera.52.desc: "For millenia now, this land has been a battleground. Between the wars of the Leeches and the Escaped Devils, aggravated by the neglect of the Khans and madness of the [Glossary('Вильд', 'glossary_wyld_tt')]'s bastards, despite this land's natural defenses, it has been the epicenter of an unending nightly war ever since the Blood Demon arrived. But, finally, no longer. Your grip on the land known to your people as T'kash is now absolute, as none of them expected your rise. The myriad immortals are now scattered, and in hiding. But they cannot escape your people's wrath. As part of a grand coronation, the light of Helios begins to suffuse the jungles itself, waiting for the right moment. As the assembled Weresuchids proclaim your name and the restoration of this ancient empire, the crown glows as the Elders set it on your brow. Helios' rage will know no bound, as the light from it begins to burn and sunlight, in a brief flash, bathes India. Helios himself has acknowledged your right to rule. The Eternal War is finally over."
  pod1230objectives_fera.52.a: "T'kash is free will be truly Eternal."
 
 
@@ -521,28 +521,28 @@
 
  beast_of_war_objective_decision: "The Beast of War"
  beast_of_war_objective_decision_tooltip: "So much death."
- beast_of_war_objective_decision_desc: "The $glossary_wyrm_calamity$ desires destruction. Through calamity and carnage we will be empowered, all the better to bring glory to the $glossary_wyrm$."
+ beast_of_war_objective_decision_desc: "The [Glossary('Beast of War', 'glossary_wyrm_calamity_tt')] desires destruction. Through calamity and carnage we will be empowered, all the better to bring glory to the [Glossary('Wyrm', 'glossary_wyrm_tt')]."
  beast_of_war_objective_decision_confirm: "Calamity comes!"
  beast_of_war_objective_decision_requirement: "All your [powerful_vassals|E] must be [intimidated|E] or [cowed|E] of you"
 
  eater_of_souls_objective_decision: "The Eater of Souls"
  eater_of_souls_objective_decision_tooltip: "My body and their souls."
- eater_of_souls_objective_decision_desc: "To serve the $glossary_wyrm_consumption$, one must sacrifice much. Only when our own bodies course with the raw power of the $glossary_wyrm$ and the lands drained of life will this head of the Hydra be satisfied."
+ eater_of_souls_objective_decision_desc: "To serve the [Glossary('Eater of Souls', 'glossary_wyrm_consumption_tt')], one must sacrifice much. Only when our own bodies course with the raw power of the [Glossary('Wyrm', 'glossary_wyrm_tt')] and the lands drained of life will this head of the Hydra be satisfied."
  eater_of_souls_objective_decision_confirm: "Consume everything!"
  eater_of_souls_objective_decision_requirement: "Have at least #V 4#! [fetishes|E] equipped and active"
 
  defiler_wyrm_objective_decision: "The Defiler Wyrm"
  defiler_wyrm_objective_decision_tooltip: "All will serve, eventually."
- defiler_wyrm_objective_decision_desc: "The $glossary_wyrm$ grows by corrupting others, which makes the $glossary_wyrm_corruption$ arguably the strongest head. One can only do so much alone, we will require more of its minions in order to defile the world."
+ defiler_wyrm_objective_decision_desc: "The [Glossary('Wyrm', 'glossary_wyrm_tt')] grows by corrupting others, which makes the [Glossary('Defiler Wyrm', 'glossary_wyrm_corruption_tt')] arguably the strongest head. One can only do so much alone, we will require more of its minions in order to defile the world."
  defiler_wyrm_objective_decision_confirm: "Beautiful corruption!"
  defiler_wyrm_objective_decision_requirement: "Discovered all Bane [men_at_arms|E] in [UmbraGlossary('malfeas')]"
  defiler_wyrm_objective_decision_requirement2: "You have two [GetFaithByKey('wyrmbound').GetName] [spirit_companions|E] at max Rank"
 
  wyrm_hydra_objective_decision: "Devotion to the Hydra"
  wyrm_hydra_objective_decision_tooltip: "The true Triat ascends."
- wyrm_hydra_objective_decision_desc: "Our dynasty has served the $glossary_wyrm$ well. We are poised to usher in a new age under the leadership of our strongest.\Then the world will know true fear."
+ wyrm_hydra_objective_decision_desc: "Our dynasty has served the [Glossary('Wyrm', 'glossary_wyrm_tt')] well. We are poised to usher in a new age under the leadership of our strongest.\Then the world will know true fear."
  wyrm_hydra_objective_decision_confirm: "Now I am complete."
  wyrm_hydra_objective_decision_effect: "You will gain the [GetTitleByKey('h_wyrm').GetNameNoTier] [title|E] which will include any [empires|E] you hold"
  pod1230objectives_fera.61.t: "The Wyrm Ascendant"
- pod1230objectives_fera.61.desc: "The $glossary_wyrm_triatic$'s power is now absolute. The $glossary_triat$ is weakened. Now the world lays ahead, not knowing its doom approaches.\n\nThere will be no shelter from your fury. Their weapons and armor will mean nothing, their faith even less. They will watch as the world comes to an end. Many will resist, their tenacity admirable but pointless, for the world already rides into the jaws of the Apocalypse. There is no hope, no future, all life is doomed!"
+ pod1230objectives_fera.61.desc: "The [Glossary('Triatic Wyrm', 'glossary_wyrm_tt')]'s power is now absolute. The [Glossary('Triat', 'glossary_triat_tt')] is weakened. Now the world lays ahead, not knowing its doom approaches.\n\nThere will be no shelter from your fury. Their weapons and armor will mean nothing, their faith even less. They will watch as the world comes to an end. Many will resist, their tenacity admirable but pointless, for the world already rides into the jaws of the Apocalypse. There is no hope, no future, all life is doomed!"
  pod1230objectives_fera.61.a: "I am the end of all things!"

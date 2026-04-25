@@ -47,11 +47,11 @@
  setting_pod_seek_knowledge_cost_increase_disabled: "#high @haight_icon! Не увеличивается#!"
  setting_pod_seek_knowledge_cost_increase_disabled_desc: "Стоимость [Concept('journeys', 'странствий')|E] для изучения новых способностей не увеличивается."
 
- rule_pod_seek_knowledge_limits: "$POD_gamerule$ Prerequisites for learning rare $pod_disciplines$"
+ rule_pod_seek_knowledge_limits: "$POD_gamerule$ Prerequisites for learning rare [Glossary('дисциплины','game_concept_discipline_desc')]"
  setting_pod_seek_knowledge_limits_enabled: "Enabled"
- setting_pod_seek_knowledge_limits_enabled_desc: "Rare vampiric $pod_disciplines$ will need you to fulfill some of their prerequisites before being learned."
+ setting_pod_seek_knowledge_limits_enabled_desc: "Rare vampiric [Glossary('дисциплины','game_concept_discipline_desc')] will need you to fulfill some of their prerequisites before being learned."
  setting_pod_seek_knowledge_limits_disabled: "Disabled"
- setting_pod_seek_knowledge_limits_disabled_desc: "Rare vampiric $pod_disciplines$ won't need you to fulfill some of their prerequisites before being learned."
+ setting_pod_seek_knowledge_limits_disabled_desc: "Rare vampiric [Glossary('дисциплины','game_concept_discipline_desc')] won't need you to fulfill some of their prerequisites before being learned."
 
  rule_pod_splat_hostility: "$POD_gamerule$ Враждебность видов"
  setting_pod_splat_hostility_default: "По умолчанию"
@@ -327,9 +327,9 @@
  
  rule_POD_uncursed_gargoyles: "$POD_gamerule$ Uncursed Gargoyles"
  setting_POD_uncursed_gargoyles_unchanged: "Unchanged"
- setting_POD_uncursed_gargoyles_unchanged_desc: "#TOOLTIP:GAME_TRAIT,gargoyle,[GetNullCharacter] #L Gargoyles#!#! who cure their $glossary_clan_curse$ (e.g. via [golconda|E]) keep looking like statues."
+ setting_POD_uncursed_gargoyles_unchanged_desc: "#TOOLTIP:GAME_TRAIT,gargoyle,[GetNullCharacter] #L Gargoyles#!#! who cure their [Glossary('Проклятие клана', 'glossary_clan_curse_tt')] (e.g. via [golconda|E]) keep looking like statues."
  setting_POD_uncursed_gargoyles_human: "#high Human#!"
- setting_POD_uncursed_gargoyles_human_desc: "#TOOLTIP:GAME_TRAIT,gargoyle,[GetNullCharacter] #L Gargoyles#!#! who cure their $glossary_clan_curse$ (e.g. via [golconda|E]) stop looking like statues and return to a human appearance."
+ setting_POD_uncursed_gargoyles_human_desc: "#TOOLTIP:GAME_TRAIT,gargoyle,[GetNullCharacter] #L Gargoyles#!#! who cure their [Glossary('Проклятие клана', 'glossary_clan_curse_tt')] (e.g. via [golconda|E]) stop looking like statues and return to a human appearance."
  
  rule_pod_experimental_game_rules: "$POD_gamerule$ #clickable Experimental#! Game Rules"
  setting_pod_experimental_game_rules_disabled: "Disabled"

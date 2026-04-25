@@ -1428,7 +1428,7 @@
  tenet_wolves_of_sable_desc: "Соболь - невидимый охотник в сугробах; молчаливо задумчивый, терпеливо ждущий, наносящий удар без предупреждения, а затем снова уходящий в лед, снег и ветер, оставляя после себя лишь каплю или две крови в качестве доказательства того, что он вообще был здесь. Он - маленький хищник, усиленный окружающей средой и закаленный одиночеством. Он олицетворяет собой внезапного охотника и выживание сильнейших в самых трудных условиях. Дети Соболя считаются союзниками духов ветра, могут призывать их и свободно с ними разговаривать. Соболь полагается на своих детей в защите сибирских земель. Сокол считает всех Детей Соболя бесчестными дикарями-полукровками и ни при каких обстоятельствах не потерпит членства Соболенка в стае, которую он избрал своей."
 
  tenet_soldiers_of_the_wyrm_name: "Soldiers of the Wyrm"
- tenet_soldiers_of_the_wyrm_desc: "We are the soldiers of the $glossary_wyrm$, not of its inferior servants. Our glory shall be seen, our faith rewarded."
+ tenet_soldiers_of_the_wyrm_desc: "We are the soldiers of the [Glossary('Wyrm', 'glossary_wyrm_tt')], not of its inferior servants. Our glory shall be seen, our faith rewarded."
  doctrine_parameter_reduced_urgetaints_xp: "Reduces [urgetaints_lifestyle|E] [lifestyle_experience|E] obtained by #N -25%#!"
 
  tenet_secrets_of_flesh_name: "Secrets of Flesh"
@@ -1441,7 +1441,7 @@
  doctrine_parameter_ignore_dragon_nest_requirements: "Ignore all [development|E] requirements in Dragon Nest [duchy_buildings|E]"
 
  tenet_wyrm_seekers_name: "Wyrm Seekers"
- tenet_wyrm_seekers_desc: "The $glossary_wyrm$ holds much knowledge and power, one simply needs to seek it."
+ tenet_wyrm_seekers_desc: "The [Glossary('Wyrm', 'glossary_wyrm_tt')] holds much knowledge and power, one simply needs to seek it."
  doctrine_parameter_increased_urgetaints_xp: "Increases [urgetaints_lifestyle|E] [lifestyle_experience|E] obtained by #P +25%#!"
 
  tenet_channel_darkness_name: "Channel the Darkness"
@@ -1514,17 +1514,17 @@
  doctrine_fera_triat_alignment_wyld_desc: "Из-за угрозы, исходящей от [Glossary('Вирм', 'glossary_wyrm_tt')] и [Glossary('Ткачихи', 'glossary_weaver_tt')], большинство [Glossary('фера', 'glossary_fera_tt')] почитают [Glossary('Вильда', 'glossary_wyld_tt')] выше других членов [Glossary('Триады', 'glossary_triat_tt')], видя, что он и Гея нуждаются в защите."
 
  doctrine_fera_triat_alignment_weaver_name: "Ткачиха"
- doctrine_fera_triat_alignment_weaver_desc: "The $glossary_weaver$'s growth will never stop as long as mankind exists."
+ doctrine_fera_triat_alignment_weaver_desc: "The [Glossary('Weaver', 'glossary_weaver_tt')]'s growth will never stop as long as mankind exists."
  doctrine_parameter_ignore_fera_dev_requirements: "Требования к низкому уровню [Concept('development', 'развития')|E] для зданий $glossary_fera$ игнорируются"
  doctrine_parameter_no_fera_dev_reduction: "Постройки $glossary_fera$ в провинциях, следующих этой [Concept('faith', 'конфессии')|E], не снижают [Concept('development', 'развитие')|E]"
 
  doctrine_fera_triat_alignment_wyrm_name: "Вирм"
- doctrine_fera_triat_alignment_wyrm_desc: "Like their fallen master, the servants of the $glossary_wyrm$ seek only chaos and destruction."
+ doctrine_fera_triat_alignment_wyrm_desc: "Like their fallen master, the servants of the [Glossary('Wyrm', 'glossary_wyrm_tt')] seek only chaos and destruction."
  doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_wyrm: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_wyrm').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_can_recruit_wyrm_maa: "Can recruit [GetMaA('scrags').GetName] and [GetMaA('skull_pigs').GetName] as [men_at_arms|E]"
 
  doctrine_fera_triat_alignment_triatic_wyrm_name: "Триадический Вирм"
- doctrine_fera_triat_alignment_triatic_wyrm_desc: "The $glossary_wyrm_triatic$ is a mockery of the original $glossary_triat$. The three heads of the Wyrm empower their closest servants with great unholy power."
+ doctrine_fera_triat_alignment_triatic_wyrm_desc: "The [Glossary('Triatic Wyrm', 'glossary_wyrm_tt')] is a mockery of the original [Glossary('Triat', 'glossary_triat_tt')]. The three heads of the Wyrm empower their closest servants with great unholy power."
  doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_triatic_wyrm: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_triatic_wyrm').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 

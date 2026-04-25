@@ -1627,7 +1627,7 @@
 
  POD_will_lose_elder_perks: "Вы теряете все #TOOLTIP:game_concept_elder_perk_desc #E достоинства старейшин#!#!, которым не соответствуете"
  POD_lose_inaccessible_discipline_perks_effect: "You lose all [Glossary('Discipline','game_concept_discipline_desc')] [perks|E] that you do not meet the requirements for"
- POD_masterless_ghoul_lost_all_vitae_message: "[masterless_ghoul|E] had no $pod_vitae$ left"
+ POD_masterless_ghoul_lost_all_vitae_message: "[masterless_ghoul|E] had no [Glossary('витэ','game_concept_vitae_desc')] left"
 
  POD_elder_perk7: "@warning_icon!#X Чтобы выбрать это #TOOLTIP:game_concept_elder_perk_desc #E достоинство старейшины#!#!, вы должны принадлежать хотя бы к седьмому [Glossary('поколению','game_concept_vampgeneration_desc')] или достичь #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!.#!"
  POD_elder_perk6: "@warning_icon!#X Чтобы выбрать это #TOOLTIP:game_concept_elder_perk_desc #E достоинство старейшины#!#!, вы должны принадлежать хотя бы к шестому [Glossary('поколению','game_concept_vampgeneration_desc')] или достичь #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!.#!"
@@ -2152,7 +2152,7 @@
  PODCurrentGhoulMission_give_relative_away: "#underline;TOOLTIP:PODCurrentGhoulMission_tooltip_give_relative_away Give Relative Away#!"
  PODCurrentGhoulMission_tooltip_give_relative_away: "Send one of your [close_family|E] to your master. You will never see them again."
 
- POD_GHOUL_SET_MAX_GENERATION_INGESTED: "You have ingested $pod_vitae$ of [GetTrait('vampgeneration$VALUE|0q$').GetName(GetNullCharacter)] which will become your new [ghoul_greatest_vitae_ingested|E]"
+ POD_GHOUL_SET_MAX_GENERATION_INGESTED: "You have ingested [Glossary('витэ','game_concept_vitae_desc')] of [GetTrait('vampgeneration$VALUE|0q$').GetName(GetNullCharacter)] which will become your new [ghoul_greatest_vitae_ingested|E]"
  POD_ghoul_drink_from_vampire_effect_unbondable: "You have [GetTrait('unbondable').GetName(GetPlayer)] [trait|E], making you immune to becoming blood bonded. As such you cannot become a [bound_ghoul|E]"
 
 

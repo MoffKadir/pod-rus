@@ -208,12 +208,12 @@
  seek_knowledge_protean_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
 
  POD_seek_knowledge_intro: "One of the following:"
- POD_seek_knowledge_game_rule: "The game rule Prerequisites for learning rare $pod_disciplines$ is #V Disabled#!"
+ POD_seek_knowledge_game_rule: "The game rule Prerequisites for learning rare [Glossary('дисциплины','game_concept_discipline_desc')] is #V Disabled#!"
  POD_seek_knowledge_learning_10: "Your [learning|E] is [learning_i]#V 10#! or above"
  POD_seek_knowledge_learning_15: "Your [learning|E] is [learning_i]#V 15#! or above"
  POD_seek_knowledge_learning_20: "Your [learning|E] is [learning_i]#V 20#! or above"
  POD_seek_knowledge_learning_25: "Your [learning|E] is [learning_i]#V 25#! or above"
- POD_seek_knowledge_relation: "You have a [best_friend|E] or [soulmate|E] with this $pod_discipline$"
+ POD_seek_knowledge_relation: "You have a [best_friend|E] or [soulmate|E] with this [Glossary('Дисциплина','game_concept_discipline_desc')]"
 
  seek_knowledge_abombwe_name: "Изучить редкую дисциплину ([GetTrait('abombwe').GetName(GetNullCharacter)])"
  seek_knowledge_abombwe_desc: "[GetTrait('abombwe').GetName(GetNullCharacter)] - это [Glossary('дисциплина','game_concept_discipline_desc')] обуздания своего [Glossary('Зверя','game_concept_beast_desc')], практикуемая линией крови [GetDynastyHouseByID('house_akunanse').GetName]. [GetPerk('taming_the_beast_perk').GetName(GetPlayer)] может принести пользу, если вы готовы пойти на риск."
@@ -447,7 +447,7 @@
  seek_knowledge_visceratika_travel_title: "$POD_journey_travel_title_seek_knowledge$"
  seek_knowledge_visceratika_travel_desc: "Я с нетерпением жду возможности изучить #TOOLTIP:GAME_TRAIT,visceratika,[GetNullCharacter] #L Висцератику#!#!. Все наши укрепления сделаны из камня. Контроль над ним даст огромное тактическое преимущество."
  seek_knowledge_visceratika_travel_confirm: "$POD_journey_travel_confirm_seek_knowledge$"
- seek_knowledge_visceratika_isvalid: "$EFFECT_LIST_BULLET$A [GetTrait('gargoyle').GetName(GetNullCharacter)] or [GetTrait('tremere').GetName(GetNullCharacter)] must have discovered this $pod_discipline$ via [decision|E].\n$POD_seek_knowledge_intro$\n$BULLET_WITH_TAB$$POD_seek_knowledge_learning_20$\n$BULLET_WITH_TAB$You are a [GetTrait('gargoyle').GetName(GetPlayer)]\n$BULLET_WITH_TAB$You have [GetTrait('fortitudeadvanced').GetName(GetPlayer)] and [GetTrait('proteanadvanced').GetName(GetPlayer)]\n$BULLET_WITH_TAB$$POD_seek_knowledge_relation$\n$BULLET_WITH_TAB$$POD_seek_knowledge_game_rule$"
+ seek_knowledge_visceratika_isvalid: "$EFFECT_LIST_BULLET$A [GetTrait('gargoyle').GetName(GetNullCharacter)] or [GetTrait('tremere').GetName(GetNullCharacter)] must have discovered this [Glossary('Дисциплина','game_concept_discipline_desc')] via [decision|E].\n$POD_seek_knowledge_intro$\n$BULLET_WITH_TAB$$POD_seek_knowledge_learning_20$\n$BULLET_WITH_TAB$You are a [GetTrait('gargoyle').GetName(GetPlayer)]\n$BULLET_WITH_TAB$You have [GetTrait('fortitudeadvanced').GetName(GetPlayer)] and [GetTrait('proteanadvanced').GetName(GetPlayer)]\n$BULLET_WITH_TAB$$POD_seek_knowledge_relation$\n$BULLET_WITH_TAB$$POD_seek_knowledge_game_rule$"
 
  seek_knowledge_giovanni_name: "Изучить #TOOLTIP:GAME_TRAIT,necromancy,[GetNullCharacter] #L некромантию#!#! (Джованни)"
  seek_knowledge_giovanni_desc: "Линия крови [GetTrait('giovanni').GetName(GetNullCharacter)] изобрела собственную форму #TOOLTIP:GAME_TRAIT,necromancy,[GetNullCharacter] #L некромантии#!#!, позволяющую им создавать и связывать #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#! для выполнения своих приказов, и входить в [UmbraGlossaryLocalized('shadowlands','Загробный мир')]."
@@ -1444,10 +1444,10 @@
 
  seek_knowledge_sielanic_thaumaturgy_name: "Learn [GetTrait('bloodsorcery').GetName(GetNullCharacter)] (Sielanic Thaumaturgy)"
  seek_knowledge_sielanic_thaumaturgy_desc: "Sielanic Thaumaturgy is a form of Thaumaturgy inspired by the pagan god Telyavel and practiced by the Telyavelic [GetTrait('tremere').GetName(GetNullCharacter)], a bloodline of the Tremere native to Lithuania.\n\nThe Telvays learned to utilize the power of siela, the animistic spirit latent in the earth, stone, plants, and animals of their adopted homeland. Based on shamanic practices, these Paths combine aspects of both nature and spirit-based magic.\n\nSome Tremere outside the bloodline believe that Sielanic Thaumaturgy is an offshoot of Koldunic Sorcery and look upon those who practice it with suspicion and distrust. Their suspicions are not entirely unfounded, as practitioners of Sielanic Thaumaturgy have access to some [bs_paths|E] of Koldunism."
- seek_knowledge_sielanic_thaumaturgy_effects: "You will learn the location of a teacher who knows [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. After traveling there, you can acquire the $pod_discipline$ [trait|E]. It not only lets you unlock [perks|E] in the [GetTrait('bloodsorcery').GetName(GetNullCharacter)] [lifestyle|E], but also unlocks the [bloodsorcery|E] [character_interaction|E], which lets you cast various beneficial and harmful spells.\n\n#warning Learning Thaumaturgy means you can never learn Sihr.#!"
+ seek_knowledge_sielanic_thaumaturgy_effects: "You will learn the location of a teacher who knows [GetTrait('bloodsorcery').GetName(GetNullCharacter)]. After traveling there, you can acquire the [Glossary('Дисциплина','game_concept_discipline_desc')] [trait|E]. It not only lets you unlock [perks|E] in the [GetTrait('bloodsorcery').GetName(GetNullCharacter)] [lifestyle|E], but also unlocks the [bloodsorcery|E] [character_interaction|E], which lets you cast various beneficial and harmful spells.\n\n#warning Learning Thaumaturgy means you can never learn Sihr.#!"
  seek_knowledge_sielanic_thaumaturgy_tt: "I shall unlock the deepest secrets of vitae." 
  seek_knowledge_sielanic_thaumaturgy_planning_title: "The Quest for Sielanic Thaumaturgy"
- seek_knowledge_sielanic_thaumaturgy_planning_desc: "I have roused my blood and prepared myself to the best of my ability, but the finer points of [GetTrait('bloodsorcery').GetName(GetNullCharacter)] still elude me.\n\nIf I want to master this $pod_discipline$ all the way, I will need a teacher.\n\nLuckily, my scouts have told me where just such a person can be found."
+ seek_knowledge_sielanic_thaumaturgy_planning_desc: "I have roused my blood and prepared myself to the best of my ability, but the finer points of [GetTrait('bloodsorcery').GetName(GetNullCharacter)] still elude me.\n\nIf I want to master this [Glossary('Дисциплина','game_concept_discipline_desc')] all the way, I will need a teacher.\n\nLuckily, my scouts have told me where just such a person can be found."
  seek_knowledge_sielanic_thaumaturgy_planning_confirm: "$POD_journey_planning_confirm_default$"
  seek_knowledge_sielanic_thaumaturgy_planning_decline: "$POD_journey_planning_decline_default$"
  seek_knowledge_sielanic_thaumaturgy_travel_title: "$POD_journey_travel_title_seek_knowledge$"
