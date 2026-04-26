@@ -264,7 +264,7 @@
 
  uncursed_nosferatu_modifier: "Неподверженность проклятию клана Носферату"
  uncursed_tzimisce_modifier: "Неподверженность проклятию клана Цимисхи"
- uncursed_chibo_modifier: "Unaffected by Chibo Clan Curse"
+ uncursed_chibo_modifier: "Неподверженность проклятию клана Чибо"
  uncursed_kizoku_modifier: "Неподверженность проклятию клана Кидзоку"
 
  biblia_negra_curse_modifier: "Мудрость древних"
@@ -292,9 +292,9 @@
  cairo_canton_djedi_modifier: "Веселье"
 
 
- trait_track_forging_xp_gain_mult: "[crafting_forging|E] #weak ([GetTrait('pod_crafter').GetName( GetNullCharacter )])#! [trait_level_track_xp|E] Gain"
- trait_track_brewing_xp_gain_mult: "[crafting_brewing|E] #weak ([GetTrait('pod_crafter').GetName( GetNullCharacter )])#! [trait_level_track_xp|E] Gain"
- trait_track_enhancing_xp_gain_mult: "[crafting_enhancing|E] #weak ([GetTrait('pod_crafter').GetName( GetNullCharacter )])#! [trait_level_track_xp|E] Gain"
+ trait_track_forging_xp_gain_mult: "Прирост [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] [Concept('crafting_forging', 'ковки')|E] #weak ([GetTrait('pod_crafter').GetName( GetNullCharacter )])#!"
+ trait_track_brewing_xp_gain_mult: "Прирост [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] [Concept('crafting_brewing', 'создания отваров')|E] #weak ([GetTrait('pod_crafter').GetName( GetNullCharacter )])#!"
+ trait_track_enhancing_xp_gain_mult: "Прирост [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] [Concept('crafting_enhancing', 'улучшения')|E] #weak ([GetTrait('pod_crafter').GetName( GetNullCharacter )])#!"
 
 
 
@@ -312,14 +312,14 @@
  weather_magic_flood_modifier_desc: "Эта область пострадала от наводнений."
  weather_magic_greater_flood_modifier: "Великое наводнение"
  weather_magic_greater_flood_modifier_desc: "Эта область пострадала от великих наводнений."
- weather_magic_nourishing_tide_modifier: "Nourishing Tide"
- weather_magic_nourishing_tide_modifier_desc: "This area is prospering due to the nourishing waters."
+ weather_magic_nourishing_tide_modifier: "Насыщающий прилив"
+ weather_magic_nourishing_tide_modifier_desc: "Эта область процветает благодаря насыщающим водам."
  weather_magic_nourishing_tide_no_dev_modifier: "$weather_magic_nourishing_tide_modifier$"
  weather_magic_nourishing_tide_no_dev_modifier_desc: "$weather_magic_nourishing_tide_modifier_desc$"
  weather_magic_drought_modifier: "Засуха"
  weather_magic_drought_modifier_desc: "Эта область повреждена засухой."
- weather_magic_blizzard_modifier: "Blizzard"
- weather_magic_blizzard_modifier_desc: "This area is experiencing a blizzard."
+ weather_magic_blizzard_modifier: "Метель"
+ weather_magic_blizzard_modifier_desc: "В этой области бушует снежная буря."
 
  weather_magic_mummy_cycle_of_ra_modifier: "Цикл Ра"
 
@@ -368,11 +368,11 @@
  pod_emperor_hand_modifier: "Длань императора"
  pod_emperor_hand_modifier_desc: "Джек настолько же умён, насколько и верен. Идеальная длань для идеального императора."
 
- POD_breaking_the_blond_bond_modifier: "Breaking the Blood Bond"
- POD_runaway_ghoul_modifier: "Runaway Ghoul"
- POD_grail_domitor_modifier: "Grail Domitor"
+ POD_breaking_the_blond_bond_modifier: "Разрыв уз крови"
+ POD_runaway_ghoul_modifier: "Гуль-беглец"
+ POD_grail_domitor_modifier: "Домитор Грааля"
 
- body_arsenal_prowess_modifier: "Body Arsenal: Prowess"
- body_arsenal_ghoul_modifier: "Body Arsenal: Ghoul"
+ body_arsenal_prowess_modifier: "Арсенал тела: Доблесть"
+ body_arsenal_ghoul_modifier: "Арсенал тела: Гуль"
 
- caustic_gland_modifier: "[battle_modifier|E]: Caustic Spit"
+ caustic_gland_modifier: "[battle_modifier|E]: Едкий плевок"

@@ -88,17 +88,17 @@
  POD_LOCALIZED_FLAG_WITH_TICKED_CHECKBOX: "$TAB$@trigger_pass! #high [Localize(SCOPE.GetFlagName('saved_tooltip'))]#!"
  POD_LOCALIZED_FLAG_WITH_UNTICKED_CHECKBOX: "$TAB$@trigger_fail_inactive! #low [Localize(SCOPE.GetFlagName('saved_tooltip'))]#!"
 
- POD_apply_flag_with_tooltip: "Apply the #V [Localize(SCOPE.GetFlagName('saved_tooltip'))]#! flag"
- POD_remove_flag_with_tooltip: "Remove the #V [Localize(SCOPE.GetFlagName('saved_tooltip'))]#! flag"
+ POD_apply_flag_with_tooltip: "Применить #V [Localize(SCOPE.GetFlagName('saved_tooltip'))]#!"
+ POD_remove_flag_with_tooltip: "Удалить #V [Localize(SCOPE.GetFlagName('saved_tooltip'))]#!"
 
- POD_display_artifact_and_owner: "[THIS.Artifact.Custom('ColorizedArtifactName')], owned by [THIS.Artifact.GetOwner.GetShortUIName]"
+ POD_display_artifact_and_owner: "[THIS.Artifact.Custom('ColorizedArtifactName')], принадлежит персонажу [THIS.Artifact.GetOwner.GetShortUIName]"
 
 
  # Useful custom_descriptions
  TARGET_CHARACTER_GETFIRSTNAME: "[TARGET_CHARACTER.GetFirstName]"
  CHARACTER_GETFIRSTNAMENICKNAMED: "[CHARACTER.GetFirstNameNicknamed]"
  POD_NUMBER_CUSTOMDESC: "$VALUE|0$"
- ADDITIONAL_PERK_COST_EFFECT: "#clickable This perk costs $VALUE|V0$ perk [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE|q$', '(CFixedPoint)1' ), 'point', 'points' )]#!"
+ ADDITIONAL_PERK_COST_EFFECT: "#clickable Это достоинство стоит $VALUE|V0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE|q$', '(CFixedPoint)1' ), 'оч.', 'оч.' )] достоинств#!"
 
 
  # OFTEN USE OLD MUMMY LOCA

@@ -1,6 +1,6 @@
 ﻿l_russian:
  POD_hint_bloodpotency: "\n\nВаша #TOOLTIP:game_concept_blood_potency_desc #E сила крови#!#! - [GetPlayer.Custom('PODBloodPotency')]."
- POD_hint_vitaedependency: "\n\n[ghoul_vitae_dependency|E]: #underline;V;TOOLTIP:trait_ghoul_vitae_dependency_chance [ROOT.Char.MakeScope.ScriptValue('POD_chance_to_lose_vitae_passively')|V0]%#! chance to gain #N 1 [hunger_with_icon|E]#! every #underline;TOOLTIP:trait_ghoul_vitae_dependency_years [ROOT.Char.MakeScope.ScriptValue('POD_years_to_lose_vitae_passively')|V0]#! years."
+ POD_hint_vitaedependency: "\n\n[ghoul_vitae_dependency|E]: #underline;V;TOOLTIP:trait_ghoul_vitae_dependency_chance [ROOT.Char.MakeScope.ScriptValue('POD_chance_to_lose_vitae_passively')|V0]%#! вероятность получить #N 1 @blood_icon![Concept('hunger', 'голод')|E]#! каждые #underline;TOOLTIP:trait_ghoul_vitae_dependency_years [ROOT.Char.MakeScope.ScriptValue('POD_years_to_lose_vitae_passively')|V0]#! лет."
 
  POD_hint_masquerade_maximum: "#I Как только ваше #TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! увеличится, вы можете нажать на эту шкалу, чтобы уменьшить его.#!"
  POD_hint_masquerade_valid: "#I Нажмите на эту шкалу, чтобы уменьшить своё #TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#!.#!"
@@ -32,12 +32,12 @@
  POD_hunger_window_prisoners_invalid: "#help В данный момент у вас нет пленников, которых можно обескровить или добавить к стаду.#!"
  POD_hunger_window_prisoners: "У вас есть пленники.\n#help Возможно, вы можете осушить их кровь или добавить их к своему [Concept('POD_herd', 'стаду')|E].#!"
 
- POD_hunger_window_ghoul_bound: "Because you are a [bound_ghoul|E], your only way of losing [hunger_with_icon|E] is by completing [bound_ghoul_missions_with_icon|E] from your $ghoul_domitor$."
+ POD_hunger_window_ghoul_bound: "Поскольку вы являетесь [Concept('bound_ghoul', 'связанным гулем')|E], ваш единственный способ снизить @blood_icon![Concept('hunger', 'голод')|E] - выполнить @ghoul_icon![Concept('bound_ghoul_missions', 'миссии')|E] вашего [Glossary('домитора','game_concept_domitor_desc')]."
 
- POD_hunger_window_ghoul_independent_hunt: "As a [masterless_ghoul|E], you can go on a [journey|E] to hunt $POD_splat_vampire_plural$ by using the #V $POD_hunt_target_interaction$#! [character_interaction|E] against a landless [character|E]."
- POD_hunger_window_ghoul_independent_prison: "You have a $POD_splat_vampire$ in your [prison|E] which you can drink from"
- POD_hunger_window_ghoul_independent_prison_safe: "There is no safe $POD_splat_vampire$ to drink from in your [prison|E]!\n#weak;underline [masterless_ghoul_imprisoned_drinking|E]#!"
- POD_hunger_window_ghoul_independent_prison_none: "You do not have any $POD_splat_vampire_plural$ in your [prison|E]."
+ POD_hunger_window_ghoul_independent_hunt: "Будучи [Concept('masterless_ghoul', 'гулем без хозяина')|E], вы можете отправиться в [Concept('journey', 'странствие')|E], чтобы поохотиться на #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L вампиров#!#!, использовав [Concept('character_interaction', 'взаимодействие персонажа')|E] #V $POD_hunt_target_interaction$#! на безземельном [Concept('character', 'персонаже')|E]."
+ POD_hunger_window_ghoul_independent_prison: "В вашей [Concept('prison', 'темнице')|E] есть #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L вампир#!#!, от которого можно испить"
+ POD_hunger_window_ghoul_independent_prison_safe: "В вашей [Concept('prison', 'темнице')|E] нет #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L вампира#!#!, от которого можно безопасно испить!\n#weak;underline [masterless_ghoul_imprisoned_drinking|E]#!"
+ POD_hunger_window_ghoul_independent_prison_none: "В вашей [Concept('prison', 'темнице')|E] нет #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L вампиров#!#!."
 
  POD_hunger_window_artifacts: "У вас есть [artifacts|El], в которых можно хранить кровь."
 

@@ -47,11 +47,11 @@
  setting_pod_seek_knowledge_cost_increase_disabled: "#high @haight_icon! Не увеличивается#!"
  setting_pod_seek_knowledge_cost_increase_disabled_desc: "Стоимость [Concept('journeys', 'странствий')|E] для изучения новых способностей не увеличивается."
 
- rule_pod_seek_knowledge_limits: "$POD_gamerule$ Prerequisites for learning rare [Glossary('дисциплины','game_concept_discipline_desc')]"
- setting_pod_seek_knowledge_limits_enabled: "Enabled"
- setting_pod_seek_knowledge_limits_enabled_desc: "Rare vampiric [Glossary('дисциплины','game_concept_discipline_desc')] will need you to fulfill some of their prerequisites before being learned."
- setting_pod_seek_knowledge_limits_disabled: "Disabled"
- setting_pod_seek_knowledge_limits_disabled_desc: "Rare vampiric [Glossary('дисциплины','game_concept_discipline_desc')] won't need you to fulfill some of their prerequisites before being learned."
+ rule_pod_seek_knowledge_limits: "$POD_gamerule$ Условия для изучения редких [Glossary('дисциплин','game_concept_discipline_desc')]"
+ setting_pod_seek_knowledge_limits_enabled: "Включено"
+ setting_pod_seek_knowledge_limits_enabled_desc: "Перед изучением редких вампирских [Glossary('дисциплин','game_concept_discipline_desc')] вам потребуется выполнить некоторые из их обязательных требований."
+ setting_pod_seek_knowledge_limits_disabled: "Отключено"
+ setting_pod_seek_knowledge_limits_disabled_desc: "Редкие вампирские [Glossary('дисциплины','game_concept_discipline_desc')] не требуют от вас выполнения некоторых из их обязательных условий перед изучением."
 
  rule_pod_splat_hostility: "$POD_gamerule$ Враждебность видов"
  setting_pod_splat_hostility_default: "По умолчанию"
@@ -325,17 +325,17 @@
  setting_cappadocian_all_skeleton: "#high Пляска смерти#!"
  setting_cappadocian_all_skeleton_desc: "Каппадокийцы старше века выглядят как скелеты (за некоторыми исключениями)."
  
- rule_POD_uncursed_gargoyles: "$POD_gamerule$ Uncursed Gargoyles"
- setting_POD_uncursed_gargoyles_unchanged: "Unchanged"
- setting_POD_uncursed_gargoyles_unchanged_desc: "#TOOLTIP:GAME_TRAIT,gargoyle,[GetNullCharacter] #L Gargoyles#!#! who cure their [Glossary('Проклятие клана', 'glossary_clan_curse_tt')] (e.g. via [golconda|E]) keep looking like statues."
- setting_POD_uncursed_gargoyles_human: "#high Human#!"
- setting_POD_uncursed_gargoyles_human_desc: "#TOOLTIP:GAME_TRAIT,gargoyle,[GetNullCharacter] #L Gargoyles#!#! who cure their [Glossary('Проклятие клана', 'glossary_clan_curse_tt')] (e.g. via [golconda|E]) stop looking like statues and return to a human appearance."
- 
- rule_pod_experimental_game_rules: "$POD_gamerule$ #clickable Experimental#! Game Rules"
- setting_pod_experimental_game_rules_disabled: "Disabled"
- setting_pod_experimental_game_rules_disabled_desc: "Experimental game rules are disabled."
- setting_pod_experimental_game_rules_enabled: "#high Enabled#!"
- setting_pod_experimental_game_rules_enabled_desc: "Experimental game rules are enabled. These are untested and might have unexpected consequences."
+ rule_POD_uncursed_gargoyles: "$POD_gamerule$ Гаргульи без проклятия"
+ setting_POD_uncursed_gargoyles_unchanged: "Без изменений"
+ setting_POD_uncursed_gargoyles_unchanged_desc: "#TOOLTIP:GAME_TRAIT,gargoyle,[GetNullCharacter] #L Гаргульи#!#!, излечившиеся от [Glossary('проклятия своего клана', 'glossary_clan_curse_tt')] (например, с помощью [Concept('golconda', 'Голконды')|E]), продолжат выглядеть как статуи."
+ setting_POD_uncursed_gargoyles_human: "#high Человеческий облик#!"
+ setting_POD_uncursed_gargoyles_human_desc: "#TOOLTIP:GAME_TRAIT,gargoyle,[GetNullCharacter] #L Гаргульи#!#!, излечившиеся от [Glossary('проклятия своего клана', 'glossary_clan_curse_tt')] (например, с помощью [Concept('golconda', 'Голконды')|E]), перестанут быть похожими на статуи и вернутся к человеческому облику."
+
+ rule_pod_experimental_game_rules: "$POD_gamerule$ #clickable Экспериментальные#! правила игры"
+ setting_pod_experimental_game_rules_disabled: "Отключены"
+ setting_pod_experimental_game_rules_disabled_desc: "Экспериментальные правила игры отключены."
+ setting_pod_experimental_game_rules_enabled: "#high Включены#!"
+ setting_pod_experimental_game_rules_enabled_desc: "Экспериментальные правила игры включены. Они не проверены и могут иметь неожиданные последствия."
 
  rule_pod_ai_additional_maa: "$POD_gamerule$ #clickable Экспериментально:#! Дополнительные [Concept( 'men_at_arms', 'профессионалы' )|E] для ИИ"
  setting_pod_ai_additional_maa_disabled: "Отключено"
@@ -401,29 +401,29 @@
  setting_pod_heightened_fatality_enabled: "#high Повышенный#!"
  setting_pod_heightened_fatality_enabled_desc: "Более высокая вероятность гибели в сражении. ИИ-персонажи могут диаблеризировать своих пленников. Слабые и ничтожные быстро стираются из истории."
 
- rule_pod_landless_availability: "$POD_gamerule$ #clickable Experimental:#! Landless Availability"
- setting_pod_landless_default: "Default"
- setting_pod_landless_default_desc: "[splats|E] with [POD_landless_mechanics|E] can become [adventurers|E] with a [decision|E] or when losing all their land."
- setting_pod_landless_disabled: "#high No Landless#!"
- setting_pod_landless_disabled_desc: "Landed characters cannot become landless. Losing all your land means game over. This makes the game #N harder#!."
- 
- rule_pod_ai_maa_discount: "$POD_gamerule$ AI [men_at_arms|E] Discount"
- setting_pod_ai_maa_discount_disabled: "Disabled"
- setting_pod_ai_maa_discount_disabled_desc: "AI characters pay the normal amount of maintenance for [men_at_arms|E]."
- setting_pod_ai_maa_discount_50: "#high 50% discount#!"
- setting_pod_ai_maa_discount_50_desc: "[men_at_arms|E] maintenance is #V 50%#! cheaper for the AI."
- setting_pod_ai_maa_discount_90: "#high 90% discount#!"
- setting_pod_ai_maa_discount_90_desc: "[men_at_arms|E] maintenance is #V 90%#! cheaper for the AI."
- 
- rule_pod_ai_levy_discount: "$POD_gamerule$ AI [levy|E] Discount"
- setting_pod_ai_levy_discount_disabled: "Disabled"
- setting_pod_ai_levy_discount_disabled_desc: "AI characters pay the normal amount of maintenance for [levies|E]."
- setting_pod_ai_levy_discount_50: "#high 50% discount#!"
- setting_pod_ai_levy_discount_50_desc: "[levy|E] maintenance is #V 50%#! cheaper for the AI."
- setting_pod_ai_levy_discount_90: "#high 90% discount#!"
- setting_pod_ai_levy_discount_90_desc: "[levy|E] maintenance is #V 90%#! cheaper for the AI."
+ rule_pod_landless_availability: "$POD_gamerule$ #clickable Экспериментально:#! Доступность авантюристов"
+ setting_pod_landless_default: "По умолчанию"
+ setting_pod_landless_default_desc: "[Concept('splats', 'Виды')|E] с [Concept('POD_landless_mechanics', 'механиками авантюристов')|E] могут стать [Concept('adventurers', 'искателями приключений')|E] через [Concept('decision', 'решение')|E] или потеряв все титулы."
+ setting_pod_landless_disabled: "#high Без авантюристов#!"
+ setting_pod_landless_disabled_desc: "Персонажи-землевладельцы не могут стать безземельными авантюристами. Потеря титулов приводит к завершению игры. Это сделает игру #N сложнее#!."
 
-# Overwritten vanilla game rules
+ rule_pod_ai_maa_discount: "$POD_gamerule$ Скидка на [Concept('men_at_arms', 'профессионалов')|E] для ИИ"
+ setting_pod_ai_maa_discount_disabled: "Отключено"
+ setting_pod_ai_maa_discount_disabled_desc: "Персонажи ИИ платят обычную сумму за содержание [Concept('men_at_arms', 'профессионалов')|E]."
+ setting_pod_ai_maa_discount_50: "#high 50%#!"
+ setting_pod_ai_maa_discount_50_desc: "Содержание [Concept('men_at_arms', 'профессионалов')|E] обходится ИИ на #V 50%#! дешевле."
+ setting_pod_ai_maa_discount_90: "#high 90%#!"
+ setting_pod_ai_maa_discount_90_desc: "Содержание [Concept('men_at_arms', 'профессионалов')|E] обходится ИИ на #V 90%#! дешевле."
+
+ rule_pod_ai_levy_discount: "$POD_gamerule$ Скидка на [Concept('levy', 'смертный сброд')|E] для ИИ"
+ setting_pod_ai_levy_discount_disabled: "Отключено"
+ setting_pod_ai_levy_discount_disabled_desc: "Персонажи ИИ платят обычную сумму за содержание [Concept('levies', 'смертного сброда')|E]."
+ setting_pod_ai_levy_discount_50: "#high 50%#!"
+ setting_pod_ai_levy_discount_50_desc: "Содержание [Concept('levy', 'смертного сброда')|E] обходится ИИ на #V 50%#! дешевле."
+ setting_pod_ai_levy_discount_90: "#high 90%#!"
+ setting_pod_ai_levy_discount_90_desc: "Содержание [Concept('levy', 'смертного сброда')|E] обходится ИИ на #V 90%#! дешевле."
+
+ # Overwritten vanilla game rules
  rule_POD_conquerors_frequency: "$rule_conquerors_frequency$"
  setting_POD_default_conquerors_frequency: "$setting_default_conquerors_frequency$"
  setting_POD_default_conquerors_frequency_desc: "$setting_default_conquerors_frequency_desc$"
@@ -443,7 +443,7 @@
  setting_POD_strong_very_few_conquerors_frequency_desc: "$setting_strong_very_few_conquerors_frequency_desc$"
  setting_POD_strong_many_conquerors_frequency: "$setting_strong_many_conquerors_frequency$"
  setting_POD_strong_many_conquerors_frequency_desc: "$setting_strong_many_conquerors_frequency_desc$"
- 
+
  rule_POD_conquerors_bonuses: "$rule_conquerors_bonuses$"
  setting_POD_default_conquerors_bonuses: "$setting_default_conquerors_bonuses$"
  setting_POD_default_conquerors_bonuses_desc: "$setting_default_conquerors_bonuses_desc$"
@@ -455,7 +455,7 @@
  setting_POD_random_conquerors_bonuses_desc: "$setting_random_conquerors_bonuses_desc$"
  setting_POD_reduced_random_conquerors_bonuses: "$setting_reduced_random_conquerors_bonuses$"
  setting_POD_reduced_random_conquerors_bonuses_desc: "$setting_reduced_random_conquerors_bonuses_desc$"
- 
+
  rule_POD_conquerors_inheritance: "$rule_conquerors_inheritance$"
  setting_POD_default_conquerors_inheritance: "$setting_default_conquerors_inheritance$"
  setting_POD_default_conquerors_inheritance_desc: "$setting_default_conquerors_inheritance_desc$"
