@@ -227,14 +227,14 @@
  building_fallen_church_03: "Собор падших"
  building_fallen_church_03_desc: "В этом величественном соборе шёпот и надежды на спасении впитались в эти стены, ведь теперь они - святая святых."
 
- building_type_land_nexus_01: "Land Nexus"
- building_type_land_nexus_01_desc: "#F A focus point for a Koldun to draw the energies from the spirits of the land to amplify his sorcery.#!"
- building_land_nexus_01: "Minor Land Nexus"
- building_land_nexus_01_desc: "A suitable, if simple focus point for the spirits of the land."
- building_land_nexus_02: "Major Land Nexus"
- building_land_nexus_02_desc: "A larger focus point where energy is contanstly flowing to and from the Koldun."
- building_land_nexus_03: "Grand Land Nexus"
- building_land_nexus_03_desc: "A grand focus point for Koldunic Sorcery. This nexus has become a well of great power for its Koldunic master."
+ building_type_land_nexus_01: "Средоточие земли"
+ building_type_land_nexus_01_desc: "#F Точка сосредоточения колдуна, где он черпает энергию у духов земли, чтобы усилить своё колдовство.#!"
+ building_land_nexus_01: "Малое средоточие земли"
+ building_land_nexus_01_desc: "Подходящее, хотя и простое место сосредоточения духов этого края."
+ building_land_nexus_02: "Средоточие земли"
+ building_land_nexus_02_desc: "Более крупная точка сосредоточения, где энергия постоянно поступает к колдуну и исходит из него."
+ building_land_nexus_03: "Большое средоточие земли"
+ building_land_nexus_03_desc: "Великое средоточие колдовства. Это средоточие стало источником великой силы для своего хозяина-колдуна."
 
  building_type_mother_garden_01: "Сад Лилит"
  building_type_mother_garden_01_desc: "#F Истинный Эдем можно найти только в поклонении первой женщине, той самой, которую предали Адам, Каин и сам Бог.#!"
@@ -1495,10 +1495,10 @@
  building_tianchi_dragon_nest_01: "Драконье гнездо Тяньши"
  building_tianchi_dragon_nest_01_desc: "Расположено на берегу Небесного озера, невероятно холодного и потрясающе красивого водоёма, питаемого ледниками."
 
- building_type_feng_dragon_nest_01: "Feng Dragon Nest"
- building_type_feng_dragon_nest_01_desc: "#F The Feng Dragon Nest is one of many Dragon Nests within the Lands of Heaven.#!"
- building_feng_dragon_nest_01: "Feng Dragon Nest"
- building_feng_dragon_nest_01_desc: "High in the mountains surrounded by strong gales, the energy within this place is terrifyingly beautiful."
+ building_type_feng_dragon_nest_01: "Драконье гнездо Фэн"
+ building_type_feng_dragon_nest_01_desc: "#F Драконье гнездо Фэн - одно из многих драконьих гнёзд в Небесных землях.#!"
+ building_feng_dragon_nest_01: "Драконье гнездо Фэн"
+ building_feng_dragon_nest_01_desc: "Высоко в горах, в окружении сильных штормов, энергетика этого места потрясающе красива."
 
 
  #Mummies
@@ -2081,84 +2081,84 @@
  building_secret_library_of_shigatse_01: "Тайная библиотека Шигадзе"
  building_secret_library_of_shigatse_01_desc: "Монахи Костяного цветка из Шигадзе занимаются изучением очень опасных вещей. Таким образом, их библиотека закрыта для публики и о ее существовании вообще не известно."
 
- POD_eastern_religion_trigger_tt: "Your faith must have roots in Asia (Kuei-Jin, Stargazer, Khan, Shih, Raktasadhus, Wu Tian etc)"
- 
- building_type_silbury_hill_01: "Silbury Hill"
- building_type_silbury_hill_01_desc: "#F Silbury Hill is an enigma. The chalk mound, which stands over 130 feet high and covers nearly 6 acres, was built long before the Romans came. Fianna legends say a faerie king or worshipful tribesmen built the mound, but no one really knows for sure, as centuries of contemplation by mage and Garou have formed a caern of Enigmas.\nDuring the unrest of Stephen’s reign, the Garou lost the caern; a powerful group of book-learned mages forced the local sept out with great magicks.#!"
- building_silbury_hill_01: "Silbury Hill"
+ POD_eastern_religion_trigger_tt: "Ваша конфессия должна иметь азиатские корни (куэй-дзин, Звездочёты, хан, ши, рактасадху, ву-тянь и т.п.)"
+
+ building_type_silbury_hill_01: "Холм Силбери"
+ building_type_silbury_hill_01_desc: "#F Холм Силбери - загадка. Меловой курган высотой более 130 футов и площадью почти 6 акров был построен задолго до прихода римлян. Легенды Фианна гласят, что этот курган построил король фей или его почтительные соплеменники, но никто на самом деле не знает наверняка, поскольку столетия размышлений магов и гару привели к созданию каэрна загадок.\nВо время беспорядков во времена правления Стефана гару потеряли каэрн; могущественная группа сведущих в книгах магов вытеснила местную секту с помощью великой магии.#!"
+ building_silbury_hill_01: "Холм Силбери"
  building_silbury_hill_01_desc: "$building_type_silbury_hill_01_desc$"
-  
- building_type_draycott_castle_01: "Ruins of Draycott Castle"
- building_type_draycott_castle_01_desc: "#F Baron Draycott, a cruel man, punished the peasantry harshly at the merest suggestion of an infraction. An old man who wandered too close to the castle was whipped and then hung from the battlements as an example to others.\nThat night, every Get for miles gathered to avenge their Kinfolk. Storming the castle, they killed the baron — slowly — and then proceeded to take the castle apart, stone by stone and timber by timber. The foundations and many of the stones are there today, a testament to the will of the Garou.#!"
- building_draycott_castle_01: "Ruins of Draycott Castle"
+
+ building_type_draycott_castle_01: "Руины замка Дрейкотт"
+ building_type_draycott_castle_01_desc: "#F Барон Дрейкотт, жестокий человек, сурово наказывал крестьян за малейший проступок. Старик, который подошёл слишком близко к замку, был высечен кнутом, а затем повешен на крепостной стене в назидание другим.\nВ ту ночь все Отпрыски на много миль вокруг собрались, чтобы отомстить за свою родню. Взяв замок штурмом, они убили барона — медленно, — а затем принялись разбирать замок по частям, камень за камнем, бревно за бревном. Фундамент и многие камни находятся там и по сей день, что свидетельствует о воле гару.#!"
+ building_draycott_castle_01: "Руины замка Дрейкотт"
  building_draycott_castle_01_desc: "$building_type_draycott_castle_01_desc$"
-  
- building_type_fir_chreig_01: "Fir Chreig"
- building_type_fir_chreig_01_desc: "#F  A chambered cairn and a low mound lie inside a stone circle. Ancient priests performed ceremonies here, and the Garou continue the practice. In times of the most dire need, the Theurges perform a ritual which transforms a stone from the northern avenue into a rock giant. The giant will fight, carry or perform other simple requests until the next sunrise or sunset; at that time, the stone shatters.#!"
- building_fir_chreig_01: "Fir Chreig"
+
+ building_type_fir_chreig_01: "Фир Хрейг"
+ building_type_fir_chreig_01_desc: "#F Сложный каирн и невысокий курган находятся внутри каменного круга. Древние жрецы проводили здесь церемонии, и гару продолжают эту практику. Во времена крайней нужды теурги проводят ритуал, который превращает камень с северной аллеи в каменного гиганта. Великан будет сражаться, таскать вещи или выполнять другие простые поручения до следующего восхода или захода солнца; в это время камень разобьётся вдребезги.#!"
+ building_fir_chreig_01: "Фир Хрейг"
  building_fir_chreig_01_desc: "$building_type_fir_chreig_01_desc$"
- 
- building_type_loch_ness_01: "Loch Ness"
- building_type_loch_ness_01_desc: "#F In Glen Mor lies Loch Ness — twenty-four miles long, a mile wide, bottomless (according to many) and bitterly cold.\nFianna from around the Highlands meet at the Loch every summer to feast, revel and hold contests of every kind. Besides the typical Fianna pursuits of music and storytelling competitions, visitors will find mountain climbing contests, foot races, spear throwing and wrestling. The most famous contest is the swim across the Loch, a near impossibility for normal humans and only slightly easier for Garou.#!"
- building_loch_ness_01: "Loch Ness"
+
+ building_type_loch_ness_01: "Лох-несс"
+ building_type_loch_ness_01_desc: "#F В Глен—Мор находится озеро Лох-несс - двадцать четыре мили в длину и милю в ширину, бездонное (по мнению многих) и очень холодное.\nФианна со всего нагорья собираются на озере каждое лето, чтобы пировать, веселиться и устраивать всевозможные состязания. Помимо типичных для фианна музыкальных состязаний и рассказывания историй, гостей ждут соревнования по скалолазанию, пешие забеги, метание копья и борьба. Самое известное соревнование - переплыть озеро вплавь, что практически невозможно для обычных людей и лишь немногим легче для гару.#!"
+ building_loch_ness_01: "Лох-несс"
  building_loch_ness_01_desc: "$building_type_loch_ness_01_desc$"
- 
- building_type_yr_wyddfa_fawr_01: "Yr Wyddfa Fawr"
- building_type_yr_wyddfa_fawr_01_desc: "#F The second highest peak in the British Isles, Yr Wyddfa Fawr rises above its neighbors in the range, overlooking green valleys and stony blasted plains of northern Gwynedd. Its Welsh name means “the great tomb,” and there are several legends behind the name. Some say a giant sleeps beneath the mountain; others suggest that some of King Arthur’s knights — or even King Arthur himself — rests there. Everyone knows it is a place of power.#!"
- building_yr_wyddfa_fawr_01: "Yr Wyddfa Fawr"
+
+ building_type_yr_wyddfa_fawr_01: "Ир-Виддфа Фор"
+ building_type_yr_wyddfa_fawr_01_desc: "#F Ир-Виддфа Фор, вторая по высоте вершина Британских островов, возвышается над своими соседями по хребту, возвышаясь над зелёными долинами и каменистыми равнинами северного Гвиннеда. Её валлийское название означает «великая гробница», и за этим названием стоит несколько легенд. Одни говорят, что под горой спит великан; другие предполагают, что там покоится кто—то из рыцарей короля Артура или даже сам король Артур. Всем известно, что это место силы.#!"
+ building_yr_wyddfa_fawr_01: "Ир-Виддфа Фор"
  building_yr_wyddfa_fawr_01_desc: "$building_type_yr_wyddfa_fawr_01_desc$"
- 
- building_type_shrine_st_olwen_01: "The Shrine of St. Olwen"
- building_type_shrine_st_olwen_01_desc: "#F Wales is blessed with an overabundance of saints who may or may not be recognized by Rome. St. Olwen is one of these. A kind and caring young woman, she aided the poor and even took care of helpless or injured animals until her death at the hands of brigands.\nA small stone shrine now stands beside the stream where she died, where the sick and leprous come to drink and bathe in the healing waters. The site is maintained by a nearby abbey, which keeps the saint’s bones in a reliquary.#!"
- building_shrine_st_olwen_01: "The Shrine of St. Olwen"
+
+ building_type_shrine_st_olwen_01: "Святилище святой Олуэн"
+ building_type_shrine_st_olwen_01_desc: "#F Уэльс благословлён изобилием святых, которые могут быть признаны, а могут и не быть признаны Римом. Святая Олуэн - одна из них. Добрая и заботливая молодая женщина, она помогала бедным и даже ухаживала за беспомощными или ранеными животными, пока не погибла от рук разбойников.\nНа берегу ручья, где она умерла, сейчас стоит небольшое каменное святилище, куда приходят больные и прокажённые, чтобы напиться и искупаться в целебных водах. Это место находится в ведении близлежащего аббатства, где кости святой хранятся в реликварии.#!"
+ building_shrine_st_olwen_01: "Святилище святой Олуэн"
  building_shrine_st_olwen_01_desc: "$building_type_shrine_st_olwen_01_desc$"
-     
- building_type_silver_tara_01: "Silver Tara"
- building_type_silver_tara_01_desc: "#F Silver Tara, properly called Air-geteamhair, is the palace of the Ard Righ of the Fianna. No place, not even Bru na Boinne, is more sacred to the tribe.\nA powerful caern of Honor, Tara is the place where disputes are settled and honors are given. It’s thought that the original Tara was built several hundred years before the birth of Christ; some claim it was built with the aid of the Tuatha de Danaan.\nThe complex sits atop a hill rising to 200 feet above the surrounding plain, surrounded by seven great earth-and-stone ramparts. Each of the seven gates is faced with silver and hung with the heads of vanquished foes.#!"
- building_silver_tara_01: "Silver Tara"
+
+ building_type_silver_tara_01: "Серебряная Тара"
+ building_type_silver_tara_01_desc: "#F Серебряная Тара, правильнее называемая Эйр-гетеамхайр, является дворцом ард-ри Фианна. Ни одно место, даже Бру-на-Боинне, не является более священным для племени.\nТара - могущественный каэрн Чести, место, где разрешаются споры и воздаются почести. Считается, что первоначально Тара была построена за несколько сотен лет до рождества Христова; некоторые утверждают, что она была построена с помощью Туата де Данаан.\nКомплекс расположен на вершине холма, возвышающегося на 200 футов над окружающей равниной, и окружён семью огромными земляными и каменными валами. Каждые из семи ворот облицованы серебром и украшены головами поверженных врагов.#!"
+ building_silver_tara_01: "Серебряная Тара"
  building_silver_tara_01_desc: "$building_type_silver_tara_01_desc$"
-     
- building_type_wounded_unicorn_01: "Caern of the Wounded Unicorn"
- building_type_wounded_unicorn_01_desc: "#F Perhaps the most renowned Caern of Healing in the land, the Wounded Unicorn's Children of Gaia caretakers welcome one and all to be soothed both mentally and physically.\nThis doesn't make them weak fools however, as a reckless group of Shadow Lords learned when trying to conquer the area.#!"
- building_wounded_unicorn_01: "Wounded Unicorn"
+
+ building_type_wounded_unicorn_01: "Каэрн Раненого единорога"
+ building_type_wounded_unicorn_01_desc: "#F Хранители Детей Геи из Раненого единорога, возможно, самого известного в этих землях каэрна исцеления, приглашают всех желающих получить душевное и физическое облегчение.\nОднако это не делает их слабыми глупцами, как поняла безрассудная группа Теневых владык, пытавшаяся завоевать этот регион.#!"
+ building_wounded_unicorn_01: "Каэрн Раненого единорога"
  building_wounded_unicorn_01_desc: "$building_type_wounded_unicorn_01_desc$"
-     
- building_type_caern_vigilance_01: "Caern of Vigilance"
- building_type_caern_vigilance_01_desc: "#F Founded by the Silent Striders after the Beziers massacre during the Albigensian Crusade, this Caern soon swelled in power with the help of the bitter wraiths killed during the siege who blame vampires and mortals alike for the event.#!"
- building_caern_vigilance_01: "Caern of Vigilance"
+
+ building_type_caern_vigilance_01: "Каэрн Бдительности"
+ building_type_caern_vigilance_01_desc: "#F Основанный Безмолвными странниками после резни в Безье во время альбигойского крестового похода, этот каэрн вскоре обрёл силу с помощью жестоких призраков, убитых во время осады, которые винят в случившемся как вампиров, так и смертных.#!"
+ building_caern_vigilance_01: "Каэрн Бдительности"
  building_caern_vigilance_01_desc: "$building_type_caern_vigilance_01_desc$"
-  
- building_type_blood_fist_01: "Caern of the Blood Fist"
- building_type_blood_fist_01_desc: "#F Founded by the Fenrir after their victory against the Romans long ago, this caern is the center of their power in the Black Forest.\nAll those who enter to bask upon the engraved names of the Fenrir heroes of old must first win a challenge by combat.#!"
- building_blood_fist_01: "Caern of the Blood Fist"
+
+ building_type_blood_fist_01: "Каэрн Кровавого кулака"
+ building_type_blood_fist_01_desc: "#F Основанный фенрирами после их давней победы над римлянами, этот каэрн является центром их могущества в Шварцвальде.\nВсе, кто приходит погреться на выгравированных именах древних героев-фенриров, должны сначала победить в бою.#!"
+ building_blood_fist_01: "Каэрн Кровавого кулака"
  building_blood_fist_01_desc: "$building_type_blood_fist_01_desc$"
-  
- building_type_caern_sybil_01: "Caern of the Sybil"
- building_type_caern_sybil_01_desc: "#F Once a respected Black Fury caern said to have influence over the Kings of Rome, this was taken from them by the Shadow Lords.\nIts new owners still continue the tradition of having a Theurge Sybil answers questions from visitors, at the cost of a favor owed to the Shadow Lords of course.#!"
- building_caern_sybil_01: "Caern of the Sybil"
+
+ building_type_caern_sybil_01: "Каэрн Сивиллы"
+ building_type_caern_sybil_01_desc: "#F Когда-то уважаемый каэрн Чёрных фурий, о котором говорили, что он имеет влияние на царей Рима, был отнят у них Теневыми владыками.\nЕго новые владельцы по-прежнему продолжают традицию приглашать сивиллу-теурга, которая отвечает на вопросы посетителей, разумеется, за счёт благосклонности Теневых владык.#!"
+ building_caern_sybil_01: "Каэрн Сивиллы"
  building_caern_sybil_01_desc: "$building_type_caern_sybil_01_desc$"
- 
- building_type_iron_wood_01: "Caern of the Iron Wood"
- building_type_iron_wood_01_desc: "#F This caern stands where a group a Christian knights tried to disrupt a Pagan ceremony and were slaughtered by the spirits standing guard.\nFenrir now use it as a base to plan counterattacks against the encroachment of the Church on the Baltic.#!"
- building_iron_wood_01: "Caern of the Iron Wood"
+
+ building_type_iron_wood_01: "Каэрн Железного леса"
+ building_type_iron_wood_01_desc: "#F Этот каэрн находится на том месте, где группа христианских рыцарей пыталась сорвать языческую церемонию и была убита духами, стоявшими на страже.\nФенриры теперь используют его как базу для планирования контратак против вторжения Церкви в балтийские земли.#!"
+ building_iron_wood_01: "Каэрн Железного леса"
  building_iron_wood_01_desc: "$building_type_iron_wood_01_desc$"
 
- building_type_white_nights_01: "Caern of the White Nights"
- building_type_white_nights_01_desc: "#F Far beyond most humans settlements, this Red Talon caern has gained prominence for being the site where the prophecies of shadows were revealed.\nIt is also known to be a prized place for the spirit of Helios and visitors often spend long hours basking in his rejuvenating light.#!"
- building_white_nights_01: "Caern of the White Nights"
+ building_type_white_nights_01: "Каэрн Белых ночей"
+ building_type_white_nights_01_desc: "#F Далеко за пределами большинства человеческих поселений, этот каэрн Красных когтей приобрёл известность как место, где были раскрыты пророчества теней.\nТакже известно, что это место считается священным для духа Гелиоса, и посетители часто проводят долгие часы, купаясь в его омолаживающем свете.#!"
+ building_white_nights_01: "Каэрн Белых ночей"
  building_white_nights_01_desc: "$building_type_white_nights_01_desc$"
-  
- building_type_bygone_visions_01: "Caern of the Bygone Visions"
- building_type_bygone_visions_01_desc: "#F The most powerful (and well defended) caern of the Black Furies is one of the few places where the Wyld is running free.\nOpening new glens of this type has always been a dream of the warrior-women of the island, in the hopes of returning the world to its primal state.#!"
- building_bygone_visions_01: "Caern of the Bygone Visions"
+
+ building_type_bygone_visions_01: "Каэрн Ушедших видений"
+ building_type_bygone_visions_01_desc: "#F Самый могущественный (и хорошо защищённый) каэрн Чёрных фурий - одно из немногих мест, где Вильд свободен.\nЖенщины-воительницы острова всегда мечтали открыть новые долины такого типа в надежде вернуть мир к его первобытному состоянию.#!"
+ building_bygone_visions_01: "Каэрн Ушедших видений"
  building_bygone_visions_01_desc: "$building_type_bygone_visions_01_desc$"
- 
- building_type_unshriven_zealot_01: "Caern of the Unshriven Zealot"
- building_type_unshriven_zealot_01_desc: "#F What is now known as Fearn Abbey was the first caern conquered by the Black Spiral Dancers soon after their return from the Wyrm's embrace. It has remained a place that the sane of mind avoid at all costs while the corrupted werewolves use it as their most powerful hive in Scotland.\nNo amount of purification, exorcism or other rituals can save this dreaded land.#!"
- building_unshriven_zealot_01: "Caern of the Unshriven Zealot"
+
+ building_type_unshriven_zealot_01: "Каэрн Непримиримого фанатика"
+ building_type_unshriven_zealot_01_desc: "#F То, что сейчас известно как аббатство Фирн, было первым каэрном, завоёванным Танцорами Чёрной спирали вскоре после их возвращения из объятий Вирма. Это место до сих пор остаётся местом, которого здравомыслящие люди избегают любой ценой, в то время как осквернённые оборотни используют его как своё самое мощное убежище в Шотландии.\nНикакое очищение, экзорцизм или другие ритуалы не спасут эту ужасную землю.#!"
+ building_unshriven_zealot_01: "Каэрн Непримиримого фанатика"
  building_unshriven_zealot_01_desc: "$building_type_unshriven_zealot_01_desc$"
 
- building_type_house_perfumed_waters_01: "House of the Perfumed Waters"
- building_type_house_perfumed_waters_01_desc: "#F Created by an enterprising young coterie taking advantage of a pilgrimage city, this bathhouse for weary pilgrims doubles down as a whorehouse. The employees served as a source of blood while the clients as a source of gold.\nThe coterie's success created envy and the bathhouse has become a prize wanted by rival vampires and even other supernaturals.#!"
- building_house_perfumed_waters_01: "House of the Perfumed Waters"
+ building_type_house_perfumed_waters_01: "Дом Душистых вод"
+ building_type_house_perfumed_waters_01_desc: "#F Созданная предприимчивой молодой котерией, воспользовавшейся преимуществами города паломничества, эта купальня для уставших паломников одновременно является публичным домом. Служащие являются источником крови, а клиенты - источником золота.\nУспех котерии вызвал зависть, и купальня стала желанным призом для соперничающих вампиров и даже других сверхъестественных существ.#!"
+ building_house_perfumed_waters_01: "Дом Душистых вод"
  building_house_perfumed_waters_01_desc: "$building_type_house_perfumed_waters_01_desc$"
