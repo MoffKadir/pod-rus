@@ -69,18 +69,18 @@
  brujah_legacy_3_name: "Наследие Лиланда"
  brujah_legacy_4_name: "Наследие Натальи"
  brujah_legacy_5_name: "Наследие Троиль"
- tzimisce_legacy_track_name: "Наследие Цимисхов"
- tzimisce_legacy_track_desc: "Знания [Glossary('клана','game_concept_Clan_desc')] Цимисхов уходят корнями в века."
+ tzimisce_legacy_track_name: "Наследие Цимисхи"
+ tzimisce_legacy_track_desc: "Знания [Glossary('клана','game_concept_Clan_desc')] Цимисхи уходят корнями в века."
  tzimisce_legacy_1_name: "Наследие Ажры"
- TZIMISCE_LEGACY_1_PERK_EFFECT: "#F Horrors and monsters come forth the flesh pits, ready to reclaim the Tzimisce's birthright.#!"
- tzimisce_legacy_2_name: "Legacy of Tabak"
- TZIMISCE_LEGACY_2_PERK_EFFECT: "#F The noble of the night carry the dreaded legacy of the Tzimisce [Glossary('Клан','game_concept_Clan_desc')].#!"
- tzimisce_legacy_3_name: "Legacy of Yorak"
- TZIMISCE_LEGACY_3_PERK_EFFECT: "Unlocks the [GetBuilding('sanctuary_of_flesh_01').GetName] building.\n#F You who enter here... won't ever leave.#!"
+ TZIMISCE_LEGACY_1_PERK_EFFECT: "#F Ужасы и чудовища выходят из ям плоти, готовые вернуть Цимисхи то, что принадлежит им по праву.#!"
+ tzimisce_legacy_2_name: "Наследие Табака"
+ TZIMISCE_LEGACY_2_PERK_EFFECT: "#F Ночная знать несёт в себе страшное наследие [Glossary('клана','game_concept_Clan_desc')] Цимисхи.#!"
+ tzimisce_legacy_3_name: "Наследие Йорака"
+ TZIMISCE_LEGACY_3_PERK_EFFECT: "Доступна постройка «[GetBuilding('sanctuary_of_flesh_01').GetName]».\n#F Те, кто войдут сюда... никогда не выберутся.#!"
  tzimisce_legacy_4_name: "Наследие Дракона"
- TZIMISCE_LEGACY_4_PERK_EFFECT: "#F The Holy Spirit has ascended, leaving only ruins in his wake.#!"
- tzimisce_legacy_5_name: "Legacy of Ruthven"
- TZIMISCE_LEGACY_5_PERK_EFFECT: "#F The unliving has no concern for morality. You will serve.#!"
+ TZIMISCE_LEGACY_4_PERK_EFFECT: "#F Святой Дух вознёсся, оставив после себя только руины.#!"
+ tzimisce_legacy_5_name: "Наследие Рутвена"
+ TZIMISCE_LEGACY_5_PERK_EFFECT: "#F Нежити нет дела до морали. Ты будешь служить.#!"
  tremere_legacy_track_name: "Наследие Тремеров"
  tremere_legacy_track_desc: "Знания [Glossary('клана','game_concept_Clan_desc')] Тремер уходят корнями в века."
  tremere_legacy_1_name: "Наследие Горатрикса"
@@ -283,15 +283,15 @@
  pacts_legacy_track_name: "Инфернальные договоры"
  pacts_legacy_track_desc: "Демонические договоры могут придать силу получателю всего лишь ценой его полной преданности."
  pacts_legacy_1_name: "Инфернальное знание"
- pacts_legacy_1_perk: "[arcana_lifestyle|E] Experience from [thralls|E] will be multiplied by #P 3#! instead of #N 2#!."
+ pacts_legacy_1_perk: "Опыт [Concept('arcana_lifestyle', 'арканы')|E] от [Concept('thralls', 'рабов')|E] будет умножен на #P 3#! вместо #N 2#!."
  pacts_legacy_2_name: "Инфернальный шарм"
- pacts_legacy_2_perk: "[arcana_lifestyle|E] Experience from [thralls|E] will be multiplied by #P 4#! instead of #N 3#!."
+ pacts_legacy_2_perk: "Опыт [Concept('arcana_lifestyle', 'арканы')|E] от [Concept('thralls', 'рабов')|E] будет умножен на #P 4#! вместо #N 3#!."
  pacts_legacy_3_name: "Инфернальные заговоры"
- pacts_legacy_3_perk: "[arcana_lifestyle|E] Experience from [thralls|E] will be multiplied by #P 5#! instead of #N 4#!."
+ pacts_legacy_3_perk: "Опыт [Concept('arcana_lifestyle', 'арканы')|E] от [Concept('thralls', 'рабов')|E] будет умножен на #P 5#! вместо #N 4#!."
  pacts_legacy_4_name: "Инфернальная аура"
- pacts_legacy_4_perk: "[arcana_lifestyle|E] Experience from [thralls|E] will be multiplied by #P 6#! instead of #N 5#!."
+ pacts_legacy_4_perk: "Опыт [Concept('arcana_lifestyle', 'арканы')|E] от [Concept('thralls', 'рабов')|E] будет умножен на #P 6#! вместо #N 5#!."
  pacts_legacy_5_name: "Инфернальная храбрость"
- pacts_legacy_5_perk: "[arcana_lifestyle|E] Experience from [thralls|E] will be multiplied by #P 7#! instead of #N 6#!."
+ pacts_legacy_5_perk: "Опыт [Concept('arcana_lifestyle', 'арканы')|E] от [Concept('thralls', 'рабов')|E] будет умножен на #P 7#! вместо #N 6#!."
 
  seelie_romantic_legacy_track_name: "Романтическое наследие Благих"
  seelie_romantic_legacy_track_desc: "Романтические наследия - это личности, которые китэйн проявляют в романтических встречах, особенно в стилизованных и формальных танцах придворной любви."
@@ -549,20 +549,20 @@
  ### DYNASTY LEGACY TRACK
  ### ==========================================
 
- impundulu_legacy_track_name: "Impundulu Legacy"
- impundulu_legacy_track_desc: "The accumulated knowledge and traditions of the Impundulu bloodline, keepers of the covenant between life and death."
+ impundulu_legacy_track_name: "Наследие Импундулу"
+ impundulu_legacy_track_desc: "Накопленные знания и традиции линии крови Импундулу, хранителей завета между жизнью и смертью."
 
  ### Tier 1
- impundulu_legacy_1_name: "Communion of Life and Death"
+ impundulu_legacy_1_name: "Единение жизни и смерти"
 
  ### Tier 2
- impundulu_legacy_2_name: "Walkers Between Worlds"
+ impundulu_legacy_2_name: "Странники между мирами"
 
  ### Tier 3
- impundulu_legacy_3_name: "Masters of the Cenotaph"
+ impundulu_legacy_3_name: "Мастера кенотафа"
 
  ### Tier 4
- impundulu_legacy_4_name: "Keepers of the Passage"
+ impundulu_legacy_4_name: "Хранители Прохода"
 
  ### Tier 5
- impundulu_legacy_5_name: "Legacy of the Lightning Bird"
+ impundulu_legacy_5_name: "Наследие Птицы-молнии"
