@@ -14,7 +14,7 @@
 
  POD_assault_lair_interaction: "Найти логово"
  POD_assault_lair_interaction_desc: "Отправиться в [Concept('journey', 'странствие')|E], чтобы узнать точное местонахождение этого чудовища. Затем начнется охота. Разумеется, это сопряжено с серьезным риском..."
- POD_assault_lair_interaction_infiltration: "@death_icon!#N;bold Поскольку [recipient.GetShortUIName] владеет титулом [Concept('kingdom','королевского')] ранга или выше, вы можете охотиться на н[recipient.GetHerHis] только путём #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#! в [recipient.GetHerHis] логово напрямую.#!"
+ POD_assault_lair_interaction_infiltration: "@death_icon!#N;bold Поскольку [recipient.GetShortUIName] владеет титулом [Concept('kingdom','королевского')|E] ранга или выше, вы можете охотиться на н[recipient.GetHerHis] только путём #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#! в [recipient.GetHerHis] логово напрямую.#!"
  POD_assault_lair_interaction_effect: "Вы отправитесь в [Concept('journey', 'странствие')|E], чтобы узнать точное местонахождение этого чудовища. Затем начнётся охота. Разумеется, это сопряжено с серьёзным риском..."
  POD_assault_lair_interaction_monthly: "#help #TOOLTIP:game_concept_planning_speed_desc #E Скорость планирования#!#! этого [Concept('journey', 'странствия')|E] зависит от многих факторов, таких как возраст цели, её ранг, навык [Concept('intrigue', 'интриги')|E], #TOOLTIP:game_concept_the_masquerade_desc #E Раскрытие Маскарада#!#! и другие.#!"
  POD_assault_lair_interaction_instant: "#help Поскольку у вас есть модификатор [GetModifier('tracked_down_modifier').GetNameWithTooltip|L] против вашей жертвы, [Concept('journey', 'странствия')|E] завершится мгновенно.#!"
@@ -34,7 +34,7 @@
  POD_gold_heist_interaction_effect: "Вы отправитесь на #L миссию #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#!, чтобы украсть [Concept('gold', 'золото')|E] у персонажа [recipient.GetShortUIName]."
  POD_gold_heist_interaction_monthly: "[Concept('journey', 'Странствие')|E] будет иметь #TOOLTIP:game_concept_planning_speed_desc #E скорость планирования#!#! $twelve_months_monthly_num$ в месяц."
  POD_gold_heist_interaction_monthly_scouted: "[Concept('journey', 'Странствие')|E] будет иметь #TOOLTIP:game_concept_planning_speed_desc #E скорость планирования#!#! $two_years_monthly_num$ в месяц."
- POD_gold_heist_interaction_ghoul_mission: "If you manage to steal any [gold|E] from [recipient.GetFirstName], you will complete your [bound_ghoul_mission_with_icon|E] to #V $POD_ghoul_mission_steal_rivals_gold_contract$#!."
+ POD_gold_heist_interaction_ghoul_mission: "Если вам удастся украсть [Concept('gold', 'золото')|E] у персонажа [recipient.GetFirstName], вы завершите свою @ghoul_icon![Concept('bound_ghoul_mission', 'миссию')|E] #V $POD_ghoul_mission_steal_rivals_gold_contract$#!."
 
  POD_artifact_heist_interaction: "Украсть артефакт"
  POD_artifact_heist_interaction_desc: "Отправиться на #L миссию #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#!, чтобы украсть [Concept('artifact', 'артефакт')|E] у персонажа [recipient.GetShortUINameNoTooltip]"

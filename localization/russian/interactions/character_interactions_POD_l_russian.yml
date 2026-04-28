@@ -33,7 +33,7 @@
  EXECUTION_COLOSSEUM: "Скормить диким животным в Колизее"
  EXECUTION_SIN_EATING: "Пожрать грехи"
  EXECUTION_CALL_KHAIBIT: "Воззвать хайбит"
- EXECUTION_EDGE_OF_THE_SUN: "Sun's Judgement"
+ EXECUTION_EDGE_OF_THE_SUN: "Суд Солнца"
  soultaker_betray: "Похититель душ предал вас: достаточно сильный разум втягивается в меч и запечатлевает свои собственные планы на безумном улье-разуме Легиона."
  used_spirit_eating: "#V Пожирание духа#! восстанавливается #weak (осталось [GetPlayer.MakeScope.ScriptValue('next_devore_mind_date')|0] дней)#!"
  execution_spirit_eating_tooltip: "#V Пожирание духа#! будет недоступно в течение #V [EmptyScope.ScriptValue('devore_mind_cooldown_value')|0]#! лет."
@@ -248,40 +248,40 @@
  POD_study_true_name_trait_interaction_requirement: "[recipient.GetShortUIName] #bold не#! имеет [Concept('trait', 'свойства')|E], [Glossary('истинное имя','podgloss.truename')] которого вы можете узнать"
  POD_study_true_name_trait_interaction_select_traits_tt: "Вы сможете выбрать, какие из [Concept('traits', 'свойств')|E] персонажа [recipient.GetShortUINamePossessive] изучить"
 
- target_in_duel_tooltip: "[recipient.GetName] is in a [single_combat_duel|E]"
- 
+ target_in_duel_tooltip: "[recipient.GetName] участвует в [Concept('single_combat_duel', 'поединке')|E]"
+
  ### ==========================================
  ### KNOWLEDGE EXCHANGE DECISION
  ### ==========================================
 
- impundulu_knowledge_exchange_decision: "Exchange Necromantic Knowledge"
- impundulu_knowledge_exchange_decision_tooltip: "Seek out a vampire necromancer willing to exchange secrets of the grave"
- impundulu_knowledge_exchange_decision_desc: "The Impundulu have always traveled seeking the knowledge of death held by other bloodlines. Seek out a vampire necromancer willing to exchange secrets of the grave."
- impundulu_knowledge_exchange_decision_confirm: "Begin the search"
- impundulu_requires_exchange_target_tt: "There's at least one $POD_splat_vampire$ ruler who has a positive opinion of you and knows a [GetTrait('necromancy').GetName(GetNullCharacter)] path you lack"
- impundulu_knowledge_exchange_toast_title: "The search begins"
- impundulu_knowledge_exchange_toast_tt: "A $POD_splat_vampire$ necromancer will contact you within a year"
+ impundulu_knowledge_exchange_decision: "Обменяться некромантическими знаниями"
+ impundulu_knowledge_exchange_decision_tooltip: "Найти вампира-некроманта, готового поделиться секретами смерти"
+ impundulu_knowledge_exchange_decision_desc: "Импундулу всегда путешествовали в поисках знаний о смерти, которыми обладают представители других линий крови. Нужно найти вампира-некроманта, готового поделиться секретами смерти."
+ impundulu_knowledge_exchange_decision_confirm: "Начать поиски"
+ impundulu_requires_exchange_target_tt: "Есть по крайней мере один правитель-#TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L вампир#!#!, который положительно относится к вам и знает путь #TOOLTIP:GAME_TRAIT,necromancy,[GetNullCharacter] #L некромантии#!#!, которого у вас нет"
+ impundulu_knowledge_exchange_toast_title: "Поиски начинаются"
+ impundulu_knowledge_exchange_toast_tt: "#TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L Вампир#!#!-некромант свяжется с вами в течение года"
 
  ### ==========================================
  ### KNOWLEDGE EXCHANGE EVENTS
  ### ==========================================
 
  ### Event 1: The Approach
- POD_impundulu.2001.t: "The Exchange of the Dead"
- POD_impundulu.2001.desc: "We sit across from one another — two scholars of the grave, divided by blood but united by curiosity. The offer has been made. Now we must determine the price.\n\nWhat do we offer in return for their knowledge of death?"
- POD_impundulu.2001.a: "Gold. The universal solvent."
- POD_impundulu.2001.b: "A favor. I owe them one."
- POD_impundulu.2001.c: "Our own secrets. The Cenotaph and Haunting paths."
- POD_impundulu_exchange_offer_gold_tt: "You will pay 200 gold for the necromantic knowledge."
- POD_impundulu_exchange_offer_favor_tt: "You will owe them a favor (hook) in exchange for the knowledge."
- POD_impundulu_exchange_offer_secrets_tt: "You will share Impundulu necromancy secrets in exchange. They gain access to Cenotaph/Haunting paths."
+ POD_impundulu.2001.t: "Обмен с мертвецами"
+ POD_impundulu.2001.desc: "Мы сидим друг напротив друга — два знатока смерти, разделённые кровью, но объединённые любопытством. Предложение сделано. Теперь мы должны определить цену.\n\nЧто мы предложим взамен за знания о смерти?"
+ POD_impundulu.2001.a: "Золото. Универсальный ответ."
+ POD_impundulu.2001.b: "Услуга. Я буду у них в долгу."
+ POD_impundulu.2001.c: "Наши собственные секреты. Пути кенотафа и преследования."
+ POD_impundulu_exchange_offer_gold_tt: "Вы заплатите 200 золотых за некромантические знания."
+ POD_impundulu_exchange_offer_favor_tt: "Вы предложите услугу (влияние) в обмен на знания."
+ POD_impundulu_exchange_offer_secrets_tt: "Взамен вы поделитесь секретами некромантии Импундулу. [Select_CString(imp_exchange_target.IsFemale, 'Она', 'Он' )] получат доступ путям Кенотафа/Преследования."
 
  ### Event 2: The Outcome
- POD_impundulu.2002.t: "Knowledge Exchanged"
- POD_impundulu.2002.desc: "The exchange is complete. Nights of careful discussion, shared rituals, and guarded demonstrations have borne fruit. We have glimpsed their approach to the necromantic arts — a perspective different from our own, yet undeniably powerful.\n\nA new path of death opens before us."
- POD_impundulu.2002.a: "The dead speak in many tongues. Now I understand one more."
+ POD_impundulu.2002.t: "Обмен знаний"
+ POD_impundulu.2002.desc: "Обмен завершён. Ночи тщательных дискуссий, совместных ритуалов и осторожных демонстраций принесли свои плоды. Мы увидели их подход к искусству некромантии — взгляд, отличный от нашего, но, несомненно, мощный.\n\nПеред нами открывается новый путь смерти."
+ POD_impundulu.2002.a: "Мёртвые говорят на многих языках. Теперь я понимаю ещё один."
 
  ### Fallback if all valid targets died in the 1-year waiting period
- POD_impundulu.2003.t: "Fruitless Search"
- POD_impundulu.2003.desc: "Though our scouts traveled far and wide in search of scholars of the grave, they ultimately returned empty-handed.\n\nThose experts who initially showed interest in our correspondence either died, lost their base of operations, or found some other reason to stop communicating with us."
- POD_impundulu.2003.a: "Unfortunate, but we can try another time."
+ POD_impundulu.2003.t: "Бесплодные поиски"
+ POD_impundulu.2003.desc: "Несмотря на то, что наши разведчики путешествовали по всему миру в поисках исследователей смерти, они в конечном итоге вернулись с пустыми руками.\n\nТе эксперты, которые изначально проявили интерес к нашей переписке, либо умерли, потеряли свою базу данных, либо нашли какую-то другую причину прекратить общение с нами."
+ POD_impundulu.2003.a: "Досадно, но мы можем попробовать в другой раз."

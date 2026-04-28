@@ -212,8 +212,8 @@
  house_sybarite_improved_modifier_desc: "Эта вечеринка действительно никогда не закончится."
  house_yoryari_improved_modifier: "Духовный дом Йоряри"
  house_yoryari_improved_modifier_desc: "Новая смесь Востока и Запада возвышается сильнее, чем вместе взятые."
- house_erk_improved_modifier: "Spirited House Erk"
- house_erk_improved_modifier_desc: "The Turkic Ravnos have solidified their control over their ancestral homelands. They will not abandon it this time."
+ house_erk_improved_modifier: "Воодушевлённый дом Эрк"
+ house_erk_improved_modifier_desc: "Тюркские Равнос укрепили свой контроль над родиной своих предков. На этот раз они не откажутся от него."
 
  house_samiel_modifier: "Дом Самиэль"
  house_samiel_modifier_desc: "Ангелам надоело прятаться, отступать или трусить. Настало время войны."
@@ -386,8 +386,8 @@
  house_ennamaru_modifier_desc: "Дети становятся жестокими и садистскими манипуляторами в глазах ничего не подозревающих французских каинитов. Когда они вовлечены, «долго и счастливо« не бывает."
  house_the_third_modifier: "Третья"
  house_the_third_modifier_desc: "Страшитесь Неназванной."
- house_erk_modifier: "House Erk"
- house_erk_modifier_desc: "Forged in the harsh isolation of Ergenekon, the Erk extract wealth from their domains with ruthless efficiency. But their stoic, isolated nature makes them clumsy in social situations."
+ house_erk_modifier: "Дом Эрк"
+ house_erk_modifier_desc: "Выкованные в суровой изоляции Эргенекона, Эрк извлекают богатство из своих владений с безжалостной эффективностью. Но их стоический, изолированный характер делает их неуклюжими в социальных ситуациях."
  #house_wankuei_modifier: "Дом Ван Куэй"
  #house_wankuei_modifier_desc: "[Glossary('Голодные мертвецы','game_concept_kuei_jin_desc')] Китая - хозяева огромной империи, но они страдают от ряда серьезных трудностей, которыми могут воспользоваться западные [Glossary('каиниты','game_concept_cainite_desc')]."
  house_hollow_reeds_modifier: "Дом Полый Тростник"
@@ -748,22 +748,22 @@
 #  dynn_impundulu_improved_modifier_desc: "Having performed the sacred funeral rites, the Impundulu have strengthened their bond with the spirit world. The burden of their covenant weighs less heavily."
 
  ### Objective Reward Modifiers
- covenant_of_life_and_death_modifier: "Covenant of Life and Death"
- covenant_of_life_and_death_modifier_desc: "Through ancient necromantic rites, the Impundulu have renewed their covenant with the Bomkazi line. The bond between living witch and undead necromancer is stronger than ever."
+ covenant_of_life_and_death_modifier: "Завет жизни и смерти"
+ covenant_of_life_and_death_modifier_desc: "С помощью древних ритуалов некромантии Импундулу возобновили свой союз с линией Бомкази. Связь между живой ведьмой и неживым некромантом крепка как никогда."
 
- ishologu_modifier: "The Ishologu"
- ishologu_modifier_desc: "Having broken the ancient pact through the Ishologu Rite, this vampire is no longer bound to the Bomkazi witches. Free from the feeding restriction, but severed from the life-magic that once sustained them."
+ ishologu_modifier: "Ишологу"
+ ishologu_modifier_desc: "Нарушив древний договор с помощью обряда Ишологу, этот вампир больше не связан с ведьмами Бомкази. Он свободен от ограничений на питание, но лишён магии жизни, которая когда-то поддерживала его."
 
  ### Opinion Modifiers
- fellow_scholar_of_death_modifier: "Fellow Scholar of Death"
+ fellow_scholar_of_death_modifier: "Коллега-исследователь смерти"
 
  ### Event Modifiers
- memory_of_bomkazi_modifier: "Memory of Bomkazi"
- memory_of_bomkazi_modifier_desc: "The memory of Bomkazi, the first witch-wife, lingers still. Her sacrifice echoes through the ages."
+ memory_of_bomkazi_modifier: "Память о Бомкази"
+ memory_of_bomkazi_modifier_desc: "Память о Бомкази, первой жене-ведьме, жива до сих пор. Её жертва отзывается эхом в веках."
 
- withering_blood_urgency_modifier: "The Withering Blood"
- withering_blood_urgency_modifier_desc: "The Bomkazi line grows weaker with each generation. Something must be done before the mortal witches are gone entirely."
+ withering_blood_urgency_modifier: "Иссушающая кровь"
+ withering_blood_urgency_modifier_desc: "Род Бомкази слабеет с каждым поколением. Необходимо что-то предпринять, прежде чем смертные ведьмы исчезнут окончательно."
 
  ### Trigger Tooltips
- POD_impundulu_has_bomkazi_courtier_tt: "Has a [GetTrait('bomkazi_witch').GetName(GetNullCharacter)] in your court"
- POD_impundulu_has_completed_withering_blood_tt: "Has completed the 'Cure the Withering Blood' objective"
+ POD_impundulu_has_bomkazi_courtier_tt: "При вашем дворе есть [GetTrait('bomkazi_witch').GetName(GetNullCharacter)|l]"
+ POD_impundulu_has_completed_withering_blood_tt: "Завершена цель «Исцелить иссушающую кровь»"
