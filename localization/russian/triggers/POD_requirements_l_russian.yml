@@ -26,7 +26,7 @@
  POD_fera_requirements_development_below_t5_ducal: "\n\n#help Для строительства этого уровня требуется #bold;L 5 или меньше#! [Concept('development', 'развития')|E].#!$POD_requirements_fera_development_exception$"
 
  POD_requirements_fera_development_exception: "\n#help Это требование игнорируется, если выполняется какое-либо из этих #TOOLTIP:POD_requirements_fera_development_exception_list #L условия#!#!.#!"
- POD_requirements_fera_development_exception_list: "$BULLET_WITH_TAB$Ваша конфессия имеет [Concept('doctrine', 'доктрину')|E] [GetFaithDoctrine('doctrine_fera_triat_alignment_weaver').GetBaseName]\n$BULLET_WITH_TAB$Ваша конфессия имеет [Concept('doctrine', 'доктрину')|E] [GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName]\n$BULLET_WITH_TAB$[Concept('holding', 'Владение')|E] является #TOOLTIP:game_concept_grand_city_desc #E великим городом#!#!\n$BULLET_WITH_TAB$У вас имеется свойство «[GetTrait('bastet').GetName(GetNullCharacter)]»"
+ POD_requirements_fera_development_exception_list: "$BULLET_WITH_TAB$Ваша конфессия имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_fera_triat_alignment_weaver').GetBaseName]»\n$BULLET_WITH_TAB$Ваша конфессия имеет [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName]»\n$BULLET_WITH_TAB$[Concept('holding', 'Владение')|E] является #TOOLTIP:game_concept_grand_city_desc #E великим городом#!#!\n$BULLET_WITH_TAB$У вас имеется свойство «[GetTrait('bastet').GetName(GetNullCharacter)]»"
 
 
  is_POD_christian_religion_tt: "Владелец должен исповедовать [Concept('christian_derived_faith', 'конфессию, основанную на христианстве')|E]"
@@ -53,8 +53,8 @@
  POD_requirements_tower_flies: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('baali').GetName( GetPlayer )]» или «[GetTrait('demon').GetName( GetPlayer )]»"
  POD_requirements_fae: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('fae').GetName( GetPlayer )]», «[GetTrait('changeling').GetName( GetPlayer )]», или «[GetTrait('kinain').GetName( GetPlayer )]»"
  POD_requirements_forsaken_or_gantenbein: "Принадлежит к династии [GetDynastyByID( 'dynn_gantenbein' ).GetBaseName] или исповедует #L [GetReligionByKey('calomenasforsaken_religion').GetName|l]ую#! конфессию"
- POD_requirements_tzimisce: "The [holder|E] must be [GetTrait('tzimisce').GetName( GetPlayer )]"
- POD_requirements_tzimisce_bloodline: "The [holder|E] must be a [GetTrait('tzimisce').GetName(GetPlayer)] or one of their bloodlines"
+ POD_requirements_tzimisce: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('tzimisce').GetName( GetPlayer )]»"
+ POD_requirements_tzimisce_bloodline: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('tzimisce').GetName(GetPlayer)]» или одной из линии крови этого клана"
 
  POD_requirements_isis: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('mummy').GetName( GetPlayer )]» или являться персонажем [GetScriptedCharacterByHistoryID('790512').GetFirstName]"
  POD_requirements_ceoris: "[Concept('holder', 'Владелец')|E] должен иметь свойства «[GetTrait('demon').GetName( GetPlayer )]», «[GetTrait('tremere').GetName( GetPlayer )]», «[GetTrait('banpaia').GetName( GetPlayer )]» или «[GetTrait('mage').GetName( GetPlayer )]»"
@@ -77,7 +77,7 @@
  POD_requirements_hengeyokai: "[Concept('holder', 'Владелец')|E] должен иметь доктрину [Glossary('фера', 'glossary_fera_tt')] «[GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName]»"
  POD_requirements_werewolf: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('werewolf').GetName( GetPlayer )]» или «[GetTrait('kinfolk').GetName( GetPlayer )]»"
  POD_requirements_bastet: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('bastet').GetName( GetPlayer )]» или «[GetTrait('kinfolk').GetName( GetPlayer )]» породы бастет"
- POD_requirements_mokole: "The [holder|E] must be [GetTrait('mokole').GetName( GetPlayer )] or Mokolé breed [GetTrait('kinfolk').GetName( GetPlayer )]"
+ POD_requirements_mokole: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('mokole').GetName( GetPlayer )]» или «[GetTrait('kinfolk').GetName( GetPlayer )]» породы моколе"
  POD_requirements_caern: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTrait('werewolf').GetName( GetPlayer )]», «[GetTrait('bastet').GetName( GetPlayer )]» или [GetTrait('kinfolk').GetName( GetPlayer )]»"
  POD_requirements_kinfolk: "[Concept('holder', 'Владелец')|E] должен иметь свойство «[GetTraitGroup('fera').GetName()]» или «[GetTrait('kinfolk').GetName( GetPlayer )]»"
 
@@ -135,5 +135,5 @@
  POD_requirements_bookshop: "[Concept('holder', 'Владелец')|E] должен быть частью Теневой инквизиции, а первый лидер Oculi Dei Айгнен ле Либрер должен быть мёртв"
 
 
- POD_requirements_dragon_nest: "The [holder|E] must be a Middle Kingdom [splat|E] that is not a [GetTrait('shih').GetName(GetPlayer)] or [GetTrait('wutian').GetName(GetPlayer)]"
+ POD_requirements_dragon_nest: "[Concept('holder', 'Владелец')|E] должен принадлежать к любому [Concept('splat', 'виду')|E] Поднебесной кроме [GetTrait('shih').GetName(GetPlayer)|l] или [GetTrait('wutian').GetName(GetPlayer)|l]"
  POD_requirements_corrupted_dragon_nest: "[Concept('holder', 'Владелец')|E] должен быть [Concept('akuma', 'акума')|E] или тем, кто осквернил это драконье гнездо"

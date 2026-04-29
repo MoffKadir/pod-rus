@@ -14,14 +14,14 @@
  NUM_OF_RELATION_DREAMER_MEMBER_TARGET_TRIGGER: "Количество мечтателей - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_WORSHIPPING_CULTIST_TARGET_TRIGGER: "Количество культистов - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_SPIRIT_COMPANION_TARGET_TRIGGER: "Количество спутников-духов - $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_INNOCENT_TORMENTOR_TARGET_TRIGGER: "Number of [tormentors|E] is $COMPARATOR$ $NUM|V0$"
+ NUM_OF_RELATION_INNOCENT_TORMENTOR_TARGET_TRIGGER: "Количество [Concept('tormentors', 'истязателей')|E] - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_GHOUL_THRALL_TARGET_TRIGGER: "Количество порабощённых гулей - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_BOUND_DEMON_TARGET_TRIGGER: "Количество связанных демонов - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_BOUND_WRAITH_TARGET_TRIGGER: "Количество связанных призраков - $COMPARATOR$ $NUM|V0$"
 
- POD_has_no_mindless_clone_of_type_tt: "You already have a [GetTrait('mindless_clone').GetName(GetNullCharacter)] of this type"
- POD_has_less_than_5_shadowy_duplicates_tt: "You already have #V 5#! Shadowy Duplicates"
- POD_has_no_separated_shadow_tt: "You already separated your [GetTrait('shadow').GetName(GetNullCharacter)]"
+ POD_has_no_mindless_clone_of_type_tt: "У вас уже есть [GetTrait('mindless_clone').GetName(GetNullCharacter)|l] этого типа"
+ POD_has_less_than_5_shadowy_duplicates_tt: "У вас уже есть #V 5#! теней-двойников"
+ POD_has_no_separated_shadow_tt: "Вы уже отделили свою [GetTrait('shadow').GetName(GetNullCharacter)|l]"
 
  effigy_on_task: "У вас уже есть эффигия на задании."
  lost_in_umbra: "[CHARACTER.GetShortUIName|U] #bold не#! [Select_CString( CHARACTER.IsLocalPlayer, 'находитесь', 'находится')] в опасном измерении [Concept('umbra', 'Умбры')|E]"
@@ -60,8 +60,8 @@
  gurahl_cant_follow_you_faith_tooltip: "[GetTrait('gurahl').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  kitsune_cant_follow_you_faith_tooltip: "[GetTrait('kitsune').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  mokole_cant_follow_you_faith_tooltip: "[GetTrait('mokole').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
- zhong_lung_cant_follow_you_faith_tooltip: "Zhong Lung can't follow [GetPlayer.GetFaith.GetAdjective]!"
- non_zhong_lung_cant_follow_you_faith_tooltip: "Only Zhong Lung can follow [GetPlayer.GetFaith.GetAdjective]!"
+ zhong_lung_cant_follow_you_faith_tooltip: "Чжун-лун не могут обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
+ non_zhong_lung_cant_follow_you_faith_tooltip: "Только чжун-лун могут обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  nagah_cant_follow_you_faith_tooltip: "[GetTrait('nagah').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  nuwisha_cant_follow_you_faith_tooltip: "[GetTrait('nuwisha').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  ratkin_cant_follow_you_faith_tooltip: "[GetTrait('ratkin').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
@@ -76,11 +76,11 @@
 
  bastet_cant_convert_tooltip: "[GetTrait('bastet').GetName( GetNullCharacter )] не может изменить конфессию!"
  spirit_cant_convert_tooltip: "[GetTrait('spirit').GetName( GetNullCharacter )] не может изменить конфессию!"
- zhong_lung_player_conversion_tooltip: "Zhong Lung can't follow [GetFaithByKey('emerald_memory').GetName]!"
- non_zhong_lung_player_conversion_tooltip: "Only Zhong Lung can follow [GetFaithByKey('dragons_zhong_guo').GetName]!"
+ zhong_lung_player_conversion_tooltip: "Чжун-лун не могут обратиться в [GetFaithByKey('emerald_memory').GetAdjective|l]!"
+ non_zhong_lung_player_conversion_tooltip: "Только чжун-лун могут обратиться в [GetFaithByKey('dragons_zhong_guo').GetAdjective|l]!"
  viaservilis_cant_convert_tooltip: "Персонаж, исповедующий [GetFaithByKey('viaservilis').GetAdjective|l], не может изменить конфессию!"
 
- POD_fear_the_sun_trigger_tooltip: "Does #bold not#! fear the sun"
+ POD_fear_the_sun_trigger_tooltip: "#bold Не#! боится солнца"
 
  can_add_stress_trait_tooltip: "Необходимо соответствующее свойство, отношение или конфессия."
 
@@ -88,4 +88,4 @@
 
  POD_IS_TRAIT_PERMANENT: "Свойство «[TRAIT.GetName(GetPlayer)]» не может быть исцелено."
 
- POD_has_any_healable_maim_trigger_tooltip: "Is #bold not#! maimed in any way."
+ POD_has_any_healable_maim_trigger_tooltip: "#bold Не#! искалечен каким-либо образом."
