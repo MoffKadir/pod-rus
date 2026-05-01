@@ -1,24 +1,24 @@
 ﻿l_russian:
- 
+
  # Nickname
- nick_scourge_of_sutekh: "the Scourge of Sutekh"
+ nick_scourge_of_sutekh: "Бич Сутеха"
 
  # Character Interaction
- podnagaraja_send_childe_to_enoch_interaction: "Send to Enoch"
- podnagaraja_send_childe_to_enoch_interaction_desc: "Send this Nagaraja dynasty member on a one-way journey to the ghost-city of Enoch in the Underworld, where they will serve our clan's interests from beyond the Shroud."
- send_childe_to_enoch_effect_tooltip: "Your childe will depart for the Underworld, never to return. You will gain a modifier and dynasty prestige."
- send_childe_to_enoch_not_primary_heir: "Cannot send your primary heir to Enoch"
+ podnagaraja_send_childe_to_enoch_interaction: "Отправить в Енох"
+ podnagaraja_send_childe_to_enoch_interaction_desc: "Отправить этого члена династии Нагараджа в одностороннее путешествие в призрачный город Енох в Загробном мире, где он будет служить интересам нашего клана из-за Вуали."
+ send_childe_to_enoch_effect_tooltip: "Ваше дитя отправится в Загробный мир и никогда не вернётся. Вы получите модификатор и признание."
+ send_childe_to_enoch_not_primary_heir: "Нельзя отправить в Енох первого наследника"
 
  # ============================
  # Feature 1 Events
  # ============================
 
- podnagaraja.1.t: "Purge of the Serpent"
- podnagaraja.1.desc: "It is done. The last of the Daitya and their Setite cousins have been driven from the courts of India and the highlands of Tibet. No longer will the children of Sutekh whisper their lies in the ears of the subcontinent's rulers. A new age dawns for the Nagaraja -- one where we stand as the undisputed masters of the night in our ancestral homeland."
- podnagaraja.1.a: "Let them speak of this victory for centuries to come."
+ podnagaraja.1.t: "Змеиная чистка"
+ podnagaraja.1.desc: "Дело сделано. Последние Дайтья и их родичи-сетиты изгнаны из дворов Индии и высокогорий Тибета. Дети Сутеха больше не будут нашёптывать свои лживые речи правителям субконтинента. Для Нагараджа наступает новая эра — эра, когда мы станем бесспорными властителями ночи на нашей исконной родине."
+ podnagaraja.1.a: "Пусть об этой победе говорят века напролёт."
 
- podnagaraja.2.desc: "Word has reached you that a Nagaraja ruler has driven the last of the Setite and Daitya influences from India and Tibet. The balance of power in the region has shifted dramatically."
- podnagaraja.2.a: "The nights are changing."
+ podnagaraja.2.desc: "До вас дошли вести о том, что [Select_CString(serpent_purger.IsFemale, 'правительница', 'правитель' )] Нагараджа [Select_CString(serpent_purger.IsFemale, 'изгнала', 'изгнал' )] последних представителей Сетитов и Дайтья из Индии и Тибета. Баланс сил в регионе резко изменился."
+ podnagaraja.2.a: "Ночи меняются."
 
  # ============================
  # Feature 2 Events (Journey)
@@ -26,226 +26,226 @@
  # ============================
 
  # --- Event 10: Arrival/Setup ---
- podnagaraja.10.t: "The Shroud Parts"
- podnagaraja.10.desc: "The rituals are complete, the preparations made. As the Shroud parts before you like a curtain of cold mist, the Underworld opens its maw. The air grows thick with whispers and the temperature drops to something far beyond cold. The path to Enoch lies ahead -- treacherous, unknowable, and filled with things that even a Nagaraja should fear."
- podnagaraja.10.a: "Begin the descent."
- podnagaraja.10.a.tt: "Your pilgrimage through the Underworld begins..."
+ podnagaraja.10.t: "Вуаль раздвигается"
+ podnagaraja.10.desc: "Ритуалы завершены, приготовления сделаны. Когда Вуаль раздвигается перед вами, словно завеса холодного тумана, Загробный мир раскрывает свою пасть. Воздух сгущается от шёпотов, а температура опускается до чего-то куда более холодного, чем просто мороз. Впереди лежит путь в Енох — коварный, непознаваемый и полный существ, которых следует бояться даже Нагараджа."
+ podnagaraja.10.a: "Начать спуск."
+ podnagaraja.10.a.tt: "Ваше паломничество через Загробный мир начинается..."
 
  # --- Event 12: Entering the Shadowlands (Pool) ---
- podnagaraja.12.t: "Entering the Shadowlands"
- podnagaraja.12.desc: "The [UmbraGlossary('shadowlands')] stretch before you -- a grey mirror of the world you left behind, populated by the restless dead and things far worse. The boundary between the living world and the deeper Underworld is thin here. Your Nagaraja blood sings in recognition."
- podnagaraja.12.a: "Focus on the path."
- podnagaraja.12.b: "Open my senses to the dead."
- podnagaraja.12.b.success: "Your senses expand. The dead whisper useful truths"
- podnagaraja.12.b.failure: "The flood of spectral sensation overwhelms you momentarily"
+ podnagaraja.12.t: "Вход в Загробный мир"
+ podnagaraja.12.desc: "[UmbraGlossaryLocalized('shadowlands','Загробный мир')] простирается перед вами — серое зеркало мира, который вы оставили позади, населённое беспокойными мертвецами и существами куда страшнее. Граница между миром живых и глубинами Загробного мира здесь тонка. Ваша кровь Нагараджа поёт в узнавании."
+ podnagaraja.12.a: "Сосредоточиться на пути."
+ podnagaraja.12.b: "Открыть свои чувства мёртвым."
+ podnagaraja.12.b.success: "Ваши чувства расширяются. Мёртвые шепчут полезные истины"
+ podnagaraja.12.b.failure: "Поток призрачных ощущений на мгновение ошеломляет вас"
 
  # --- Event 13: The Tempest (Pool) ---
- podnagaraja.13.t: "The Tempest"
- podnagaraja.13.desc: "Between the [UmbraGlossary('shadowlands')] and the deeper reaches of the Underworld lies the [UmbraGlossary('tempest')] -- a howling maelstrom of spectral energy that has consumed countless souls. It batters you with winds that carry the screams of the damned. There are ways through, but none of them are pleasant."
- podnagaraja.13.a: "Press through with discipline."
- podnagaraja.13.a.success: "You force your way through the worst of the storm"
- podnagaraja.13.a.failure: "The Tempest batters you mercilessly"
- podnagaraja.13.b: "Use necromancy to calm the dead winds."
- podnagaraja.13.b.tt: "Advanced Necromancy guarantees success"
- podnagaraja.13.b.success: "Your mastery of the dead quiets the storm around you."
- podnagaraja.13.b.failure: "Your necromantic skill is insufficient to tame the Tempest."
- podnagaraja.13.c: "Wait for it to pass."
+ podnagaraja.13.t: "Буря"
+ podnagaraja.13.desc: "Между [UmbraGlossaryLocalized('shadowlands','Загробным миром')] и его глубинами лежит [UmbraGlossaryLocalized('tempest','Буря')] - воющий водоворот спектральной энергии, поглотивший бесчисленные души. Она бьёт вас ветрами, несущими крики проклятых. Есть пути сквозь неё, но ни один из них не будет приятным."
+ podnagaraja.13.a: "Пробиться вперёд, используя дисциплину."
+ podnagaraja.13.a.success: "Вы проталкиваетесь сквозь худшую часть бури"
+ podnagaraja.13.a.failure: "Буря безжалостно терзает вас"
+ podnagaraja.13.b: "Использовать некромантию, чтобы усмирить мёртвые ветры."
+ podnagaraja.13.b.tt: "Мастерство некромантии гарантирует успех"
+ podnagaraja.13.b.success: "Ваше власть над мёртвыми успокаивает бурю вокруг вас."
+ podnagaraja.13.b.failure: "Ваших навыков некромантии недостаточно, чтобы укротить Бурю."
+ podnagaraja.13.c: "Дождаться, пока она пройдёт."
 
  # --- Event 14: Whispers of the Drowned (Pool) ---
- podnagaraja.14.t: "Whispers of the Drowned"
- podnagaraja.14.desc: "Spectres gather at the edges of your perception, drawn by the warmth of your stolen life-force. Ghosts of those consumed by the Nagaraja over centuries -- they remember what was done to them. They offer knowledge, warnings, lies. It is impossible to tell which is which."
- podnagaraja.14.a: "Command them to guide me."
- podnagaraja.14.a.success: "The spectres bend to your will and reveal useful paths"
- podnagaraja.14.a.failure: "The spectres resist your commands with spite"
- podnagaraja.14.b: "Ignore them and walk on."
- podnagaraja.14.c: "Devour their ectoplasm for strength."
- podnagaraja.14.c.tt: "Sate your hunger on spectral essence"
+ podnagaraja.14.t: "Шёпот утопленников"
+ podnagaraja.14.desc: "Призраки собираются на границах вашего восприятия, привлечённые теплом вашей украденной жизненной силы. Призраки тех, кого Нагараджа поглотили за столетия, — они помнят, что с ними сделали. Они предлагают знания, предупреждения, ложь. Невозможно сказать, что есть что."
+ podnagaraja.14.a: "Приказать им вести меня."
+ podnagaraja.14.a.success: "Призраки подчиняются вашей воле и указывают полезные пути"
+ podnagaraja.14.a.failure: "Призраки с злобой сопротивляются вашим приказам"
+ podnagaraja.14.b: "Игнорировать их и идти дальше."
+ podnagaraja.14.c: "Поглотить их эктоплазму для обретения силы."
+ podnagaraja.14.c.tt: "Утолить голод спектральной сущностью"
 
  # --- Event 15: The False Necropolis (Pool) ---
- podnagaraja.15.t: "The False Necropolis"
- podnagaraja.15.desc: "A vast city rises from the spectral fog -- towers, walls, gates that look impossibly ancient. For a moment, your blood surges with recognition. Enoch? No. Something is wrong. The proportions are subtly off, the architecture a convincing forgery. This is a trap, built to ensnare pilgrims who do not know the true city."
- podnagaraja.15.a: "Investigate cautiously -- there may be useful salvage."
- podnagaraja.15.a.success: "Among the debris, you find a journal left by a previous pilgrim"
- podnagaraja.15.a.failure: "The false city's defenses catch you off guard"
- podnagaraja.15.b: "Avoid it entirely."
- podnagaraja.15.c: "Destroy it so no other Nagaraja falls for this trick."
+ podnagaraja.15.t: "Ложный некрополь"
+ podnagaraja.15.desc: "Из спектрального тумана возникает огромный город — башни, стены, ворота, выглядящие невероятно древними. На мгновение ваша кровь вскипает от узнавания. Енох? Нет. Что-то не так. Пропорции слегка искажены, архитектура — убедительная подделка. Это ловушка, созданная, чтобы заманить паломников, не знающих истинного города."
+ podnagaraja.15.a: "Осмотреть осторожно — возможно, найдётся что-то полезное."
+ podnagaraja.15.a.success: "Среди обломков вы находите дневник, оставленный предыдущим паломником"
+ podnagaraja.15.a.failure: "Защитные механизмы ложного города застают вас врасплох"
+ podnagaraja.15.b: "Обойти его стороной."
+ podnagaraja.15.c: "Уничтожить его, чтобы ни один Нагараджа больше не попался на эту уловку."
 
  # --- Event 16: A Spectral Anomaly (Pool) ---
- podnagaraja.16.t: "A Spectral Anomaly"
- podnagaraja.16.desc: "A pocket of raw Underworld energy blocks the path ahead -- a churning vortex of spectral force that warps the very fabric of the Shadowlands around it. The dead avoid this place. Even wraiths give it a wide berth."
- podnagaraja.16.a: "Go through it."
- podnagaraja.16.a.success: "The energy scours you but leaves you stronger"
- podnagaraja.16.a.failure: "The anomaly tears at your essence"
- podnagaraja.16.b: "Go around."
- podnagaraja.16.c: "Study the anomaly from a safe distance."
- podnagaraja.16.c.success: "You glean insights into the nature of the Underworld"
- podnagaraja.16.c.failure: "The anomaly defies comprehension"
+ podnagaraja.16.t: "Спектральная аномалия"
+ podnagaraja.16.desc: "Карман сырой энергии Загробного мира преграждает путь впереди — бурлящий вихрь спектральной силы, искажающий саму ткань Теневых земель вокруг себя. Мёртвые избегают этого места. Даже призраки обходят его стороной."
+ podnagaraja.16.a: "Пройти сквозь него."
+ podnagaraja.16.a.success: "Энергия очищает вас, но делает сильнее"
+ podnagaraja.16.a.failure: "Аномалия терзает вашу сущность"
+ podnagaraja.16.b: "Обойти стороной."
+ podnagaraja.16.c: "Изучить аномалию с безопасного расстояния."
+ podnagaraja.16.c.success: "Вы получаете понимание природы Загробного мира"
+ podnagaraja.16.c.failure: "Аномалия не поддаётся осмыслению"
 
  # --- Event 17: The Wraith Market (Pool) ---
- podnagaraja.17.t: "The Wraith Market"
- podnagaraja.17.desc: "A gathering of wraiths are trading among themselves in a hollow between the Tempest winds. They deal in memories, regrets, and fragments of the living world. Some of them have been here since before the fall of Rome. They eye you with a mixture of fear and hunger -- the Nagaraja are known to the dead."
- podnagaraja.17.a: "Trade gold for intelligence."
- podnagaraja.17.b: "Devour one of them."
- podnagaraja.17.b.tt: "Sate your hunger, but the dead will remember"
- podnagaraja.17.c: "Ignore them and press on."
+ podnagaraja.17.t: "Призрачный базар"
+ podnagaraja.17.desc: "Собрание призраков торгует между собой в ложбине между ветрами Бури. Они обмениваются воспоминаниями, сожалениями и фрагментами живого мира. Некоторые из них находятся здесь ещё со времён до падения Рима. Они смотрят на вас со смесью страха и голода — Нагараджа известны мёртвым."
+ podnagaraja.17.a: "Обменять золото на сведения."
+ podnagaraja.17.b: "Поглотить одного из них."
+ podnagaraja.17.b.tt: "Утолить голод, но мёртвые запомнят этот поступок"
+ podnagaraja.17.c: "Игнорировать их и идти дальше."
 
  # --- Event 18: Echoes of the Silk Road (Pool) ---
- podnagaraja.18.t: "Echoes of the Silk Road"
- podnagaraja.18.desc: "The path passes through the spectral echo of a destroyed Silk Road city. Ghostly merchants still ply their wares in an endless loop, unaware that they and their city perished centuries ago. The buildings shimmer with faded grandeur, and somewhere deep in the ruins, something old waits."
- podnagaraja.18.a: "Search the ruins for hidden knowledge."
- podnagaraja.18.a.success: "You uncover forgotten lore among the spectral ruins"
- podnagaraja.18.a.failure: "The ruins yield nothing but dust and disappointment"
- podnagaraja.18.b: "Investigate the ghostly inhabitants."
- podnagaraja.18.b.success: "The ghosts share memories of dynasties long forgotten"
- podnagaraja.18.b.failure: "The ghosts recoil from your presence"
- podnagaraja.18.c: "Record what I see and move on."
+ podnagaraja.18.t: "Эхо Шёлкового пути"
+ podnagaraja.18.desc: "Путь пролегает через призрачное эхо разрушенного города на Шёлковом пути. Призрачные торговцы всё ещё раскладывают свои товары в бесконечном цикле, не осознавая, что они и их город погибли столетия назад. Здания мерцают угасшим величием, а где-то глубоко в руинах ждёт нечто древнее."
+ podnagaraja.18.a: "Обыскать руины в поисках скрытых знаний."
+ podnagaraja.18.a.success: "Вы обнаруживаете забытые предания среди призрачных руин"
+ podnagaraja.18.a.failure: "Руины не дают ничего, кроме пыли и разочарования"
+ podnagaraja.18.b: "Изучить призрачных обитателей."
+ podnagaraja.18.b.success: "Призраки делятся воспоминаниями о давно забытых династиях"
+ podnagaraja.18.b.failure: "Призраки отшатываются от вашего присутствия"
+ podnagaraja.18.c: "Зафиксировать увиденное и двигаться дальше."
 
  # --- Event 19: A Fellow Traveler (Pool) ---
- podnagaraja.19.t: "A Fellow Traveler"
- podnagaraja.19.desc: "A figure emerges from the spectral fog -- another Nagaraja, returning from Enoch on a Tal'Mahe'Ra mission. She is gaunt, her eyes hollow from the journey, but she carries herself with the quiet confidence of one who has survived the deep Underworld. She offers to share intelligence."
- podnagaraja.19.a: "Share intelligence freely -- we are kin."
- podnagaraja.19.a.tt: "There is a small risk she may not be what she seems"
- podnagaraja.19.b: "Trade information for information."
- podnagaraja.19.b.success: "A fair exchange. You learn things of value"
- podnagaraja.19.b.failure: "She gives you nothing useful"
- podnagaraja.19.c: "Decline her company -- I travel alone."
- podnagaraja.19.d: "She looks hungry -- offer to share my Viscus supplies."
- podnagaraja.19.d.tt: "Your generosity will be remembered by the clan"
+ podnagaraja.19.t: "[Select_CString(intrigue_duelist.IsFemale, 'Другая путница', 'Другой путник' )]"
+ podnagaraja.19.desc: "Из призрачного тумана появляется фигура — ещё [Select_CString(intrigue_duelist.IsFemale, 'одна', 'один' )] Нагараджа, [Select_CString(intrigue_duelist.IsFemale, 'возвращающаяся', 'возвращающийся' )] из Еноха с миссии Тал’махе’Ра. [Select_CString(intrigue_duelist.IsFemale, 'Она истощена', 'Он истощён' )], глаза ввалились после путешествия, но держится с тихой уверенностью [Select_CString(intrigue_duelist.IsFemale, 'той', 'того' )], кто выжил в глубинах Загробного мира. [Select_CString(intrigue_duelist.IsFemale, 'Она', 'Он' )] предлагает поделиться сведениями."
+ podnagaraja.19.a: "Поделиться сведениями безвозмездно — мы родня."
+ podnagaraja.19.a.tt: "Есть небольшой риск, что [Select_CString(intrigue_duelist.IsFemale, 'она не та', 'он не тот' )], за кого себя выдаёт"
+ podnagaraja.19.b: "Обменяться информацией."
+ podnagaraja.19.b.success: "Честный обмен. Вы узнаёте ценные вещи"
+ podnagaraja.19.b.failure: "[Select_CString(intrigue_duelist.IsFemale, 'Она', 'Он' )] не даёт вам ничего полезного"
+ podnagaraja.19.c: "Отклонить [Select_CString(intrigue_duelist.IsFemale, 'её', 'его' )] компанию — я путешествую [Select_CString(ROOT.Char.IsFemale, 'одна', 'один' )]."
+ podnagaraja.19.d: "[Select_CString(intrigue_duelist.IsFemale, 'Она выглядит голодной', 'Он выглядит голодным' )] — предложить поделиться запасами вискуса."
+ podnagaraja.19.d.tt: "Ваша щедрость будет запомнена кланом"
 
  # --- Event 20: Gates of Enoch (Final) ---
- podnagaraja.20.t: "The Gates of Enoch"
- podnagaraja.20.desc: "Before you rise the impossibly ancient gates of Enoch, the First City, now a ghost of its former glory deep within the Underworld. The air thrums with a power older than recorded history. This is a place where the boundaries between life and death, knowledge and madness, all dissolve. You stand at the threshold of the greatest mystery the Nagaraja have ever known. The Del'Roh's servants watch from the shadows, measuring your worth."
- podnagaraja.20.a: "Enter and pay respects to the Del'Roh."
- podnagaraja.20.a.tt: "You will gain the Pilgrim of Enoch trait, prestige, and dynasty prestige"
- podnagaraja.20.b: "Enter and study the libraries of Brujah."
- podnagaraja.20.c: "Remain in Enoch and serve."
- podnagaraja.20.c.tt: "You will enter torpor, gain the Pilgrim of Enoch trait, and earn great dynasty prestige"
+ podnagaraja.20.t: "Врата Еноха"
+ podnagaraja.20.desc: "Перед вами возвышаются невероятно древние врата Еноха, Первого города, ныне — призрака былого величия глубоко в Загробном мире. Воздух гудит силой, более древней, чем зафиксированная история. Это место, где стираются границы между жизнью и смертью, знанием и безумием. Вы стоите на пороге величайшей тайны, которую когда-либо знали Нагараджа. Слуги Дель’Рох наблюдают из теней, оценивая вашу ценность."
+ podnagaraja.20.a: "Войти и отдать дань уважения Дель’Рох."
+ podnagaraja.20.a.tt: "Вы получите свойство «Енохианский паломник», престиж и признание династии"
+ podnagaraja.20.b: "Войти и изучить библиотеки Бруха."
+ podnagaraja.20.c: "Остаться в Енохе и служить."
+ podnagaraja.20.c.tt: "Вы войдёте в торпор, получите свойство «Енохианский паломник» и значительное признание династии"
 
  # --- Event 21: Fellow Traveler Spy Follow-up ---
- podnagaraja.21.t: "A Betrayal in the Shadows"
- podnagaraja.21.desc: "Something is wrong. Intelligence you shared with the fellow traveler has surfaced in places it should not have. Either she was not who she claimed, or she traded your secrets to others. The damage may already be done."
- podnagaraja.21.a: "Investigate the betrayal."
- podnagaraja.21.a.success: "You detect the deception before real harm is done"
- podnagaraja.21.a.failure: "Your secrets have already spread. The damage is real"
- podnagaraja.21.b: "Let it go -- some information is expendable."
+ podnagaraja.21.t: "Предательство в тенях"
+ podnagaraja.21.desc: "Что-то не так. Сведения, которыми вы поделились с [Select_CString(intrigue_duelist.IsFemale, 'попутчицей', 'попутчиком' )], появились там, где их быть не должно. Либо [Select_CString(intrigue_duelist.IsFemale, 'она была не той', 'он был не тем' )], за кого себя [Select_CString(intrigue_duelist.IsFemale, 'выдавала', 'выдавал' )], либо [Select_CString(intrigue_duelist.IsFemale, 'продала', 'продал' )] ваши секреты другим. Ущерб, возможно, уже нанесён."
+ podnagaraja.21.a: "Расследовать предательство."
+ podnagaraja.21.a.success: "Вы раскрываете обман до того, как был нанесён реальный вред"
+ podnagaraja.21.a.failure: "Ваши секреты уже распространились. Ущерб реален"
+ podnagaraja.21.b: "Забыть об этом — некоторые сведения несущественны."
 
  # ============================
  # Feature 4 Events
  # ============================
 
- podnagaraja.100.t: "Preparations"
- podnagaraja.100.desc: "The Silent Conclave requires careful preparation. Messages must be sent through channels that even other vampires cannot trace, ritual materials gathered from the [UmbraGlossaryLocalized('shadowlands','Underworld')], and a secure location identified. The work is tedious but necessary."
- podnagaraja.100.a: "Begin the preparations."
- podnagaraja.100.a.tt: "The conclave will gather in one month"
+ podnagaraja.100.t: "Приготовления"
+ podnagaraja.100.desc: "Безмолвный конклав требует тщательной подготовки. Сообщения должны быть отправлены по каналам, которые не смогут отследить даже другие вампиры, ритуальные материалы собраны в [UmbraGlossaryLocalized('shadowlands','Загробный мир')], а безопасное место — определено. Работа утомительна, но необходима."
+ podnagaraja.100.a: "Начать приготовления."
+ podnagaraja.100.a.tt: "Конклав соберётся через месяц"
 
- podnagaraja.101.t: "The Gathering"
- podnagaraja.101.desc: "They arrive one by one, emerging from shadows and stepping through the Shroud itself. Your fellow Nagaraja, each carrying secrets and knowledge from their own domains. The Silent Conclave is convened. The question is: what shall be its focus?"
- podnagaraja.101.a: "Focus on matters of intrigue and protection."
- podnagaraja.101.a.tt: "The conclave will discuss methods of defense and subterfuge"
- podnagaraja.101.b: "Focus on necromantic studies and rituals."
- podnagaraja.101.b.tt: "The conclave will explore deeper mysteries of death"
+ podnagaraja.101.t: "Собрание"
+ podnagaraja.101.desc: "Они прибывают один за другим, выходя из теней и ступая сквозь саму Вуаль. Ваши собратья-нагараджа, каждый несёт секреты и знания из своих владений. Безмолвный конклав созван. Вопрос в том: чему будет посвящено его заседание?"
+ podnagaraja.101.a: "Сосредоточиться на вопросах интриг и защиты."
+ podnagaraja.101.a.tt: "Конклав обсудит методы обороны и хитростей"
+ podnagaraja.101.b: "Сосредоточиться на некромантических исследованиях и ритуалах."
+ podnagaraja.101.b.tt: "Конклав исследует более глубокие тайны смерти"
 
- podnagaraja.102.t: "The Offering"
- podnagaraja.102.desc: "At the heart of every Silent Conclave lies the Offering -- a ritual that taps into the Nagaraja's unique connection to the Underworld. Flesh must be offered to fuel the rite, as is the way of our clan."
- podnagaraja.102.a: "Offer freely and generously."
- podnagaraja.102.b: "Make only a token offering."
+ podnagaraja.102.t: "Подношение"
+ podnagaraja.102.desc: "В сердце каждого Безмолвного конклава лежит Подношение — ритуал, задействующий уникальную связь Нагараджа с Загробным миром. Чтобы подпитать обряд, нужно принести в жертву плоть — таков обычай нашего клана."
+ podnagaraja.102.a: "Пожертвовать щедро и безвозмездно."
+ podnagaraja.102.b: "Сделать лишь символическое подношение."
 
- podnagaraja.103.t: "Discovery"
- podnagaraja.103.desc: "The conclave drew attention. Someone -- mortal or otherwise -- has noticed the gathering and may have witnessed things that should remain hidden. The evidence must be dealt with before the Masquerade is compromised further."
- podnagaraja.103.a: "Pay to cover our tracks."
- podnagaraja.103.a.tt: "Spend gold to eliminate the evidence"
- podnagaraja.103.b: "Scatter and hope for the best."
+ podnagaraja.103.t: "Открытие"
+ podnagaraja.103.desc: "Конклав привлёк внимание. Кто-то — смертный или иной — заметил собрание и мог увидеть то, что должно оставаться скрытым. С уликами нужно разобраться, прежде чем Маскарад окажется под ещё большей угрозой."
+ podnagaraja.103.a: "Заплатить, чтобы замести следы."
+ podnagaraja.103.a.tt: "Потратить золото, чтобы уничтожить улики"
+ podnagaraja.103.b: "Броситься врассыпную и надеяться на лучшее."
 
  # ============================
  # Feature 6 Events
  # ============================
 
- podnagaraja.200.t: "The Itarajana Practitioner"
- podnagaraja.200.desc: "Word of your search for an Itarajana sorcerer has borne fruit. A practitioner of the ancient Hindu blood sorcery tradition has been located and brought before you. [new_sorcerer.GetHerHis|U] knowledge of mystical arts native to the subcontinent could prove invaluable."
- podnagaraja.200.a: "Welcome [new_sorcerer.GetHerHim] into our service."
- podnagaraja.200.a.tt: "[new_sorcerer.GetShortUIName|U] will be bound as your [ghoul|E] and join your court"
+ podnagaraja.200.t: "Практик Итараджаны"
+ podnagaraja.200.desc: "Весть о ваших поисках колдуна Итараджаны принесла плоды. Практик древней традиции индуистского кровавого чародейства [Select_CString(new_sorcerer.IsFemale, 'обнаружена и доставлена', 'обнаружен и доставлен' )] к вам. [new_sorcerer.GetHerHis|U] знания мистических искусств, коренных для субконтинента, могут оказаться бесценными."
+ podnagaraja.200.a: "Принять [new_sorcerer.GetHerHis] на службу."
+ podnagaraja.200.a.tt: "[new_sorcerer.GetShortUIName|U] станет вашим связанным [Concept('ghoul', 'гулем')|E] и присоединится к вашему двору"
 
- podnagaraja.201.t: "The Sorcerer's Research"
- podnagaraja.201.desc: "Your Itarajana sorcerer [sorcerer.GetFirstName] has been conducting research at your court, delving into the intersection of Hindu mysticism and the necromantic arts. [sorcerer.GetSheHe|U] approaches you with [sorcerer.GetHerHis] findings."
- podnagaraja.201.a: "Encourage [sorcerer.GetHerHis] continued research."
- podnagaraja.201.b: "Exploit [sorcerer.GetHerHis] knowledge for immediate gain."
+ podnagaraja.201.t: "Исследования [Select_CString(sorcerer.IsFemale, 'колдуньи', 'колдуна' )]"
+ podnagaraja.201.desc: "[Select_CString(sorcerer.IsFemale, 'Ваша колдунья', 'Ваш колдун' )] Итараджаны [sorcerer.GetFirstName] [Select_CString(sorcerer.IsFemale, 'проводила', 'проводил' )] исследования при дворе, углубляясь в точку пересечения индуистского мистицизма и некромантических искусств. [sorcerer.GetSheHe|U] подходит к вам со своими находками."
+ podnagaraja.201.a: "Поощрить [sorcerer.GetHerHis] продолжить исследования."
+ podnagaraja.201.b: "Использовать [sorcerer.GetHerHis] знания для немедленной выгоды."
 
  # ============================
  # Feature 3 Events
  # ============================
 
- podnagaraja.300.t: "A Journey Beyond Return"
- podnagaraja.300.desc: "You stand before [recipient.GetFirstNameNoTooltip], your childe, prepared to send them on the most solemn of duties -- a one-way pilgrimage to the ghost-city of Enoch. There, they will serve the clan's interests from beyond the Shroud, maintaining connections that the living cannot."
- podnagaraja.300.a: "Go forth and serve our clan in the world beyond."
- podnagaraja.300.a.tt: "[recipient.GetFirstNameNoTooltip] will depart for the Underworld, never to return. You will gain prestige and be honored by your dynasty."
- podnagaraja.300.b: "I have changed my mind."
- podnagaraja.300.b.tt: "[recipient.GetFirstNameNoTooltip] remains at your court"
+ podnagaraja.300.t: "Путешествие без возврата"
+ podnagaraja.300.desc: "Перед вами [Select_CString(recipient.IsFemale, 'предстала', 'предстал' )] [recipient.GetFirstNameNoTooltip], ваше дитя, которое готовится к отправке на выполнение самого торжественного долга — одностороннего паломничества в призрачный город Енох. Там [Select_CString(recipient.IsFemale, 'она', 'он' )] будет служить интересам клана за пределами Вуали, поддерживая связи, недоступные живым."
+ podnagaraja.300.a: "Ступай и служи нашему клану в мире за гранью."
+ podnagaraja.300.a.tt: "[recipient.GetFirstNameNoTooltip] отправится в Загробный мир и никогда не вернётся. Вы получите престиж и будете почтены своей династией."
+ podnagaraja.300.b: "Я [Select_CString(ROOT.Char.IsFemale, 'передумала', 'передумал' )]."
+ podnagaraja.300.b.tt: "[recipient.GetFirstNameNoTooltip] останется при вашем дворе"
 
  # ============================
  # Feature 5 Events
  # ============================
 
- podnagaraja.400.t: "The Flesh-Eater's Risk"
- podnagaraja.400.desc: "The hunger gnaws. Not the mere thirst for blood that afflicts lesser vampires, but the deeper, more terrible craving that defines the Nagaraja -- the need for living flesh. The curse demands to be sated, and the longer you resist, the more dangerous the eventual feeding becomes."
- podnagaraja.400.a: "Feed carefully, stalking a victim with precision."
- podnagaraja.400.b: "Feed recklessly and sate the hunger fully."
- podnagaraja.400.b.tt: "There is a risk that evidence of your feeding will be discovered"
- podnagaraja.400.c: "Feed on one of my ghouls instead."
- podnagaraja.400.c.tt: "Safe, but your ghoul will not appreciate it"
- podnagaraja.400.d: "Endure the hunger through sheer will."
+ podnagaraja.400.t: "Риск Пожирателей плоти"
+ podnagaraja.400.desc: "Голод терзает. Не просто жажда крови, поражающая низших вампиров, а более глубокая, более ужасная тяга, определяющая Нагараджа, — потребность в живой плоти. Проклятие требует утоления, и чем дольше вы сопротивляетесь, тем опаснее становится последующее кормление."
+ podnagaraja.400.a: "Кормиться осторожно, выслеживая жертву с точностью."
+ podnagaraja.400.b: "Кормиться безрассудно и полностью утолить голод."
+ podnagaraja.400.b.tt: "Существует риск, что улики вашего кормления будут обнаружены"
+ podnagaraja.400.c: "Вместо этого кормиться одним из моих гулей."
+ podnagaraja.400.c.tt: "Безопасно, но ваш гуль это не оценит"
+ podnagaraja.400.d: "Перетерпеть голод силой воли."
 
- podnagaraja.401.t: "Evidence Discovered"
- podnagaraja.401.desc: "Your reckless feeding has left traces. Someone has found evidence -- perhaps remains, perhaps witnesses, perhaps something worse. The evidence threatens to expose your monstrous nature to those who should never know."
- podnagaraja.401.a: "Pay to have the evidence destroyed."
- podnagaraja.401.a.tt: "Spend gold to make the problem go away"
- podnagaraja.401.b: "Ignore it and move on."
- podnagaraja.401.c: "Frame someone else for the deed."
- podnagaraja.401.c.success: "You successfully frame someone else"
- podnagaraja.401.c.failure: "Your attempt to frame someone else fails"
+ podnagaraja.401.t: "Обнаружены улики"
+ podnagaraja.401.desc: "Ваше безрассудное кормление оставило следы. Кто-то нашёл улики — возможно, останки, возможно, свидетелей, возможно, что-то похуже. Улики угрожают раскрыть вашу чудовищную природу тем, кому никогда не следовало бы об этом знать."
+ podnagaraja.401.a: "Заплатить, чтобы улики уничтожили."
+ podnagaraja.401.a.tt: "Потратить золото, чтобы решить проблему"
+ podnagaraja.401.b: "Игнорировать и двигаться дальше."
+ podnagaraja.401.c: "Подставить кого-то другого в совершении этого деяния."
+ podnagaraja.401.c.success: "Вы успешно подставили кого-то другого"
+ podnagaraja.401.c.failure: "Ваша попытка подставить кого-то другого провалилась"
 
 
  # ============================
  # Feature 1: Purge the Serpent
  # ============================
 
- purge_serpent_india_decision: "Purge the Serpent from India"
- purge_serpent_india_decision_tooltip: "Drive all Setite and Daitya rulers from the courts of India and Tibet to claim dominance over the subcontinent"
- purge_serpent_india_decision_desc: "The followers of Sutekh -- the Setites and the Daitya -- have long coiled their influence through the courts of India and the monasteries of Tibet. As a Nagaraja, it falls to us to cleanse our homeland of their corrupting presence and establish our dominance over the subcontinent."
- purge_serpent_india_decision_confirm: "The Daitya will know fear"
- purge_serpent_capital_requirement: "Your capital must be in [GetGeographicalRegion('world_india').GetName] or [GetGeographicalRegion('world_tibet').GetName]"
- purge_serpent_no_setite_india: "No Setite or Daitya may hold a county or higher title in [GetGeographicalRegion('world_india').GetName]"
- purge_serpent_no_setite_tibet: "No Setite or Daitya may hold a county or higher title in [GetGeographicalRegion('world_tibet').GetName]"
- purge_serpent_effect_tooltip: "You will be hailed as the Scourge of Sutekh and receive great rewards"
+ purge_serpent_india_decision: "Искоренить змей из Индии"
+ purge_serpent_india_decision_tooltip: "Изгнать всех правителей из числа Сетитов и Дайтья из дворов Индии и Тибета, чтобы утвердить господство над субконтинентом"
+ purge_serpent_india_decision_desc: "Последователи Сутеха — Сетиты и Дайтья — давно пустили корни своего влияния через дворы Индии и монастыри Тибета. Как Нагараджа, мы обязаны очистить нашу родину от их развращающего присутствия и установить своё господство над субконтинентом."
+ purge_serpent_india_decision_confirm: "Дайтья познают страх"
+ purge_serpent_capital_requirement: "Ваша столица должна находиться в регионе [GetGeographicalRegion('world_india').GetName] или [GetGeographicalRegion('world_tibet').GetName]"
+ purge_serpent_no_setite_india: "Ни один сетит или дайтья не должны владеть графством или титулом более высокого ранга в регионе [GetGeographicalRegion('world_india').GetName]"
+ purge_serpent_no_setite_tibet: "Ни один сетит или дайтья не должны владеть графством или титулом более высокого ранга в регионе [GetGeographicalRegion('world_tibet').GetName]"
+ purge_serpent_effect_tooltip: "Вас провозгласят «Бичом Сутеха» и вы получите великие награды"
 
  # ============================
  # Feature 2: Pilgrimage to Enoch
  # ============================
 
- pilgrimage_to_enoch_decision: "Pilgrimage to Enoch"
- pilgrimage_to_enoch_decision_tooltip: "Journey through the Shadowlands to the ghost-city of Enoch and return with forbidden knowledge"
- pilgrimage_to_enoch_decision_desc: "The ghost-city of Enoch lies deep within the [UmbraGlossaryLocalized('shadowlands','Underworld')], a place of terrible power and forbidden knowledge. With mastery of Necromancy and the backing of a loyal [coterie|E], you can make the perilous journey there and return with wisdom beyond mortal comprehension."
- pilgrimage_to_enoch_decision_confirm: "Into the Shadowlands"
- pilgrimage_to_enoch_effect_tooltip: "Begin a [journey|E] to the ghost-city of Enoch in the Underworld"
+ pilgrimage_to_enoch_decision: "Паломничество в Енох"
+ pilgrimage_to_enoch_decision_tooltip: "Отправиться через Загробный мир в призрачный город Енох и вернуться с запретным знанием"
+ pilgrimage_to_enoch_decision_desc: "Призрачный город Енох лежит глубоко в [UmbraGlossaryLocalized('shadowlands','Загробном мире')], месте ужасной силы и запретных знаний. Овладев некромантией и заручившись поддержкой верной [Concept('coterie', 'котерии')|E], вы сможете совершить опасное путешествие туда и вернуться с мудростью, превосходящей человеческое понимание."
+ pilgrimage_to_enoch_decision_confirm: "В Загробный мир"
+ pilgrimage_to_enoch_effect_tooltip: "Начать [Concept('journey', 'странствие')|E] в призрачный город Енох в Загробном мире"
 
  # ============================
  # Feature 4: Silent Conclave
  # ============================
 
- convene_silent_conclave_decision: "Convene a Silent Conclave"
- convene_silent_conclave_decision_tooltip: "Host a secret gathering of Nagaraja elders to exchange knowledge and perform dark rituals"
- convene_silent_conclave_decision_desc: "The Silent Conclave is a secret gathering of Nagaraja, where forbidden knowledge is exchanged and dark rituals performed in service of the clan. Such gatherings are rare, dangerous, and supremely valuable."
- convene_silent_conclave_decision_confirm: "Let us gather"
- convene_silent_conclave_effect_tooltip: "Host a secret gathering of Nagaraja to exchange knowledge and perform dark rituals"
+ convene_silent_conclave_decision: "Созвать Безмолвный конклав"
+ convene_silent_conclave_decision_tooltip: "Устроить тайное собрание старейшин Нагараджа для обмена знаниями и проведения тёмных ритуалов"
+ convene_silent_conclave_decision_desc: "Безмолвный конклав — это тайное собрание Нагараджа, где обмениваются запретными знаниями и проводят тёмные ритуалы на благо клана. Такие собрания редки, опасны и чрезвычайно ценны."
+ convene_silent_conclave_decision_confirm: "Пора собраться вместе"
+ convene_silent_conclave_effect_tooltip: "Устроить тайное собрание Нагараджа для обмена знаниями и проведения тёмных ритуалов"
 
  # ============================
  # Feature 6: Recruit Sorcerer
  # ============================
 
- recruit_itarajana_sorcerer_decision: "Recruit an Itarajana Sorcerer"
- recruit_itarajana_sorcerer_decision_tooltip: "Seek out a practitioner of Itarajana blood sorcery and bind them as a ghoul in your service"
- recruit_itarajana_sorcerer_decision_desc: "The Itarajana tradition of blood sorcery draws upon Hindu mystical practices and is native to the Indian subcontinent. A skilled practitioner, properly bound as a ghoul, could prove an invaluable asset to our court."
- recruit_itarajana_sorcerer_decision_confirm: "Their knowledge will serve us"
- recruit_itarajana_region_requirement: "Your capital must be in [GetGeographicalRegion('world_india').GetName], [GetGeographicalRegion('world_tibet').GetName], the [GetGeographicalRegion('world_middle_east').GetName], or the [GetGeographicalRegion('world_steppe').GetName]"
- recruit_itarajana_max_cap: "You cannot have more than 3 #TOOLTIP:GAME_TRAIT,itarajana_sorcerer,[GetNullCharacter] #L Itarajana Sorcerers#!#! at your court"
- recruit_itarajana_ghoul_cap: "You already have the maximum amount of [Concept('ghoul','Ghouls')|E] ([SCOPE.GetValue('ghoul_amount')|0])"
- recruit_itarajana_effect_tooltip: "A [GetTrait('ghoul').GetName(GetNullCharacter)] practitioner of #TOOLTIP:GAME_TRAIT,itarajana_sorcerer,[GetNullCharacter] #L Itarajana Sorcery#!#! will join your court"
+ recruit_itarajana_sorcerer_decision: "Нанять колдуна Итараджаны"
+ recruit_itarajana_sorcerer_decision_tooltip: "Найти практика кровавого чародейства Итараджаны и привязать его как гуля в услужении"
+ recruit_itarajana_sorcerer_decision_desc: "Традиция кровавого чародейства Итараджаны опирается на индуистские мистические практики и коренятся на Индийском субконтиненте. Умелый практик, должным образом привязанный как гуль, может стать бесценным подспорьем для нашего двора."
+ recruit_itarajana_sorcerer_decision_confirm: "Их знания послужат нам"
+ recruit_itarajana_region_requirement: "Ваша столица должна находиться в регионе [GetGeographicalRegion('world_india').GetName], [GetGeographicalRegion('world_tibet').GetName], [GetGeographicalRegion('world_middle_east').GetName] или [GetGeographicalRegion('world_steppe').GetName]"
+ recruit_itarajana_max_cap: "Вы не можете иметь более 3 #TOOLTIP:GAME_TRAIT,itarajana_sorcerer,[GetNullCharacter] #L чародеев Итараджаны#!#! при своём дворе"
+ recruit_itarajana_ghoul_cap: "У вас уже максимальное количество [Concept('ghoul','гулей')|E] ([SCOPE.GetValue('ghoul_amount')|0])"
+ recruit_itarajana_effect_tooltip: "[GetTrait('ghoul').GetName(GetNullCharacter)]-практик #TOOLTIP:GAME_TRAIT,itarajana_sorcerer,[GetNullCharacter] #L чародейства Итараджаны#!#! присоединится к вашему двору"
