@@ -278,7 +278,7 @@
  incunabulum_kupalam_decision_desc: "Многие пытались собрать воедино всё, что им известно о демоническом повелителе Трансильвании Купале. Если бы все эти знания были собраны в одном томе, возможно, часть правды стала бы известна."
  incunabulum_kupalam_decision_confirm: "Окончательный ответ?"
  incunabulum_kupalam_decision_requirement: "Вы должны найти как минимум 5 трактатов Купалы, чтобы кодифицировать их."
- incunabulum_kupalam_decision_effect: "You combine all your notes to create the [GetPODArtifactName('incunabulum_kupalam_link')]"
+ incunabulum_kupalam_decision_effect: "Вы объедините все свои заметки, чтобы создать [GetPODArtifactName('incunabulum_kupalam_link')]"
 
  codex_mortis_decision: "Кодекс Мортис"
  codex_mortis_decision_tooltip: "Тайны смерти на кончиках ваших пальцев."
@@ -312,11 +312,11 @@
  akhu_decision_confirm: "Тайны Египта."
 
 
- sword_of_fever_decision: "Unsheathe the Sword of Fever"
- sword_of_fever_decision_tooltip: "So much death..."
- sword_of_fever_decision_desc: "The Sword of Fever holds back all the disease spirits of Entoban. It can with the utmost care be drawn a finger's width from its scabbard, to inflict sickness on your foes. However, should you draw it completely it will unleash a terrible and destructive plague upon the land."
- sword_of_fever_decision_effect_tooltip: "You will be able to fully unsheathe the blade, if you so desire."
- sword_of_fever_decision_confirm: "I have decided."
+ sword_of_fever_decision: "Обнажить Меч лихорадки"
+ sword_of_fever_decision_tooltip: "Столько смертей..."
+ sword_of_fever_decision_desc: "Меч лихорадки сдерживает всех духов хворей Энтобана. Его можно вытащить из ножен на ширину пальца с величайшей осторожностью, чтобы наслать хворь на ваших врагов. Однако, если вы вытащите его полностью, на землю обрушится страшное и разрушительное поветрие."
+ sword_of_fever_decision_effect_tooltip: "Вы сможете полностью обнажить клинок, если пожелаете."
+ sword_of_fever_decision_confirm: "Я [Select_CString(ROOT.Char.IsFemale, 'приняла', 'принял' )] решение."
 
 
  POD_canon_artifacts.1000.t: "Чтение Гобелена Судьбы"
@@ -376,9 +376,9 @@
  robe_golden_mandarin_decision_confirm: "Ему не сравниться с моим интеллектом."
 
 
- POD_canon_artifacts.1100.t: "The Sword of Fever"
- POD_canon_artifacts.1100.desc: "You have decided to fully unsheathe the Sword of Fever, thereby unleashing a calamity that will take countless lives. Nobody truly knows your reasons for doing this, perhaps not even yourself. Regardless, if you had any doubts then this is the last chance to abandon this idea..."
- POD_canon_artifacts.1100.a: "Yes, unsheathe it!"
- POD_canon_artifacts.1100.b: "Perhaps this isn't such a good idea."
- sword_of_fever_used_modifier: "Drew the Blade"
- sword_of_fever_used_modifier_desc: "For unknown reasons, you sentenced millions of lives to death by unleashing a deadly disease."
+ POD_canon_artifacts.1100.t: "Меч лихорадки"
+ POD_canon_artifacts.1100.desc: "Вы решили полностью обнажить Меч лихорадки, тем самым вызвав бедствие, которое унесёт бесчисленное количество жизней. Никто на самом деле не знает, почему вы это делаете, возможно, даже вы сами. В любом случае, если у вас были какие-то сомнения, то это последний шанс отказаться от этой идеи..."
+ POD_canon_artifacts.1100.a: "Да, вытащить его!"
+ POD_canon_artifacts.1100.b: "Возможно, это не такая уж хорошая идея."
+ sword_of_fever_used_modifier: "Обнажённый клинок"
+ sword_of_fever_used_modifier_desc: "По неизвестным причинам вы приговорили миллионы жизней к смерти, вызвав смертельную хворь."
