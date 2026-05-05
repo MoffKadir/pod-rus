@@ -8,13 +8,13 @@
  POD_summon_spirit_interaction_desc: "Призвать персонажа-#TOOLTIP:GAME_TRAIT,spirit,[GetNullCharacter] #L духа#!#! в ваше местоположение."
  POD_summon_spirit_interaction_random: "Случайный дух"
  POD_summon_spirit_interaction_gaian: "Дух Геи"
- POD_summon_spirit_interaction_bane: "Bane Spirit"
- POD_summon_spirit_interaction_elemental_bane: "Elemental Bane Spirit"
+ POD_summon_spirit_interaction_bane: "Дух-бэйн"
+ POD_summon_spirit_interaction_elemental_bane: "Дух-элементальный бэйн"
 
 
  POD_spirit_pact_interaction: "Духовный договор"
  POD_spirit_pact_interaction_desc: "Заключить [Concept('spirit_companion', 'духовный договор')|E] с персонажем [recipient.GetFirstName]."
- POD_spirit_pact_interaction_tooltip: "[recipient.GetName] has already made a [spirit_pact|E] with another [character|E]"
+ POD_spirit_pact_interaction_tooltip: "[recipient.GetName] уже [Select_CString(recipient.IsFemale, 'заключила', 'заключил' )] [Concept('spirit_pact', 'духовный договор')|E] с другим [Concept('character', 'персонажем')|E]"
  POD_spirit_pact_interaction_tooltip2: "Персонаж занят"
 
  POD_spirit_chiminage_interaction: "Совершить шиминаж"
@@ -26,5 +26,5 @@
  POD_spirit_bane_empowerment_interaction: "Усилить бэйна"
  POD_spirit_bane_empowerment_interaction_desc: "Совершив жертвоприношение, вы можете усилить духа-бэйна."
 
- POD_spirit_possession_interaction: "Submit to [possession|E]"
- POD_spirit_possession_interaction_desc: "Allow [recipient.GetName] to possess you, unlocking new powers."
+ POD_spirit_possession_interaction: "Подчиниться [Concept('possession', 'одержимости')|E]"
+ POD_spirit_possession_interaction_desc: "Позволить персонажу [recipient.GetName] вселиться в вас, получив новые способности."
