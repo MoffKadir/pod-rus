@@ -1,6 +1,6 @@
 ﻿l_russian:
  game_concept_investiture_lifestyle: "Инвеститура"
- game_concept_investiture_lifestyle_desc: "#bold Investments#! are the blasphemous abilities of #TOOLTIP:GAME_TRAIT,witch,[GetNullCharacter] #L Infernalists#!#!: individuals who consort with $POD_splat_demon_plural$. Beauty, power, longevity and more await those who are willing to taint their souls.\n\nThere are two ways to gain Investiture: either by signing a [demonic_pact|E] with a Demon to enter [thralldom|E], or by [diabolism_binding|E] a Demon to take their power by force. Both approaches first require knowledge of [GetTrait('demonology').GetName(GetNullCharacter)], which can be learned via [journey|E].\n\nInfernalism is considered a [crime|E] by all but the most evil [faiths|E]."
+ game_concept_investiture_lifestyle_desc: "#bold Дары#! - это богохульные способности #TOOLTIP:GAME_TRAIT,witch,[GetNullCharacter] #L инферналистов#!#!: людей, которые якшаются с #TOOLTIP:GAME_TRAIT,demon,[GetNullCharacter] #L демонами#!#!. Красота, сила, долголетие и многое другое ждут тех, кто готов запятнать свои души.\n\nЕсть два способа получить инвеституру: либо подписав [Concept('demonic_pact', 'договор')|E] с демоном, чтобы попасть в [Concept('thralldom', 'рабство')|E], либо [Concept('diabolism_binding', 'связав')|E] демона, чтобы забрать его силу силой. Оба подхода требуют знания #TOOLTIP:GAME_TRAIT,demonology,[GetNullCharacter] #L демонологии#!#!, которые можно получить в [Concept('journey', 'странствии')|E].\n\nИнфернализм считается [Concept('crime', 'преступлением')|E] во всех [Concept('faiths', 'конфессиях')|E], кроме самых порочных."
 
  investiture_lifestyle_name: "Инвеститура"
  investiture_lifestyle_desc: "Фокус на способностях, дарованных демонами."
@@ -8,8 +8,8 @@
 
  demonic_investment_focus: "Демонические дары"
  demonic_investment_focus_modifier: "[GetFocus('demonic_investment_focus').GetName]"
- demonic_investment_focus_desc: "#X [investiture_lifestyle|E] [lifestyle|E] [perk|E] points are #bold ONLY#! gained by [demonic_pacts|E] or [diabolism|E].#!"
- demonic_investment_focus_effect_desc: "Focusing on this lifestyle is impossible."
+ demonic_investment_focus_desc: "#X Очки [Concept('perk', 'достоинств')|E] [Concept('lifestyle', 'пути')|E] [Concept('investiture_lifestyle', 'инвеституры')|E] можно получить #bold ТОЛЬКО#! через [Concept('demonic_pacts', 'договоры')|E] или [Concept('diabolism', 'диаболизм')|E].#!"
+ demonic_investment_focus_effect_desc: "Фокус на этом образе жизни невозможен."
 
  investments_of_soul_focus: "Дары души"
  investments_of_soul_focus_modifier: "[GetFocus('investments_of_soul_focus').GetName]"
@@ -35,35 +35,35 @@
  ############################################################
  ############################################################
  ############################################################
-  
- demonic_investment_visible: "Demonic Investments"
 
- INVESTITURE_COST_EFFECT: "#clickable This [perk|E] costs $VALUE|V0$ perk [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE|q$', '(CFixedPoint)1' ), 'point', 'points' )]#!"
- INVESTITURE_STACKING_EFFECT: "#clickable This [perk|E] can be bought many times.#!"
- INVESTITURE_VISUAL_CHANGE_EFFECT: "#N This [perk|E] will permanently change your appearance!#!"
+ demonic_investment_visible: "Демонические дары"
 
- investiture_armor_perk_name: "Armor #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_armor_perk_modifier_stacks')])#!"
- investiture_backgrounds_perk_name: "Backgrounds #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_backgrounds_perk_modifier_stacks')])#!"
- investiture_demonic_strength_perk_name: "Demonic Strength #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_demonic_strength_perk_modifier_stacks')])#!"
- investiture_longevity_perk_name: "Longevity #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_longevity_perk_modifier_stacks')])#!"
- investiture_service_perk_name: "Service #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_service_perk_modifier_stacks')])#!"
+ INVESTITURE_COST_EFFECT: "#clickable Это [Concept('perk', 'достоинство')|E] стоит $VALUE|V0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE|q$', '(CFixedPoint)1' ), 'оч.', 'оч.' )]#!"
+ INVESTITURE_STACKING_EFFECT: "#clickable Это [Concept('perk', 'достоинство')|E] можно разблокировать несколько раз.#!"
+ INVESTITURE_VISUAL_CHANGE_EFFECT: "#N Это [Concept('perk', 'достоинство')|E] навсегда изменит ваш внешний вид!#!"
 
- INVESTITURE_ARMOR_PERK_EFFECT: "#flavor Like a fiend, this devil-worshipper possesses scaled skin, thick warts, leathery hide, or some other revolting form of protection.#!"
- INVESTITURE_BACKGROUNDS_PERK_EFFECT: "#flavor Some #TOOLTIP:GAME_TRAIT,witch,[GetNullCharacter] #L Infernalists#!#! prefer more... subtle help from their patron. And contacts nicely fit for such needs.#!"
- INVESTITURE_DEMONIC_STRENGTH_PERK_EFFECT: "#flavor Evil vitality floods into the supplicant's limbs. From this moment until her death, she has the physical might of a minor devil.#!"
- INVESTITURE_LONGEVITY_PERK_EFFECT: "#flavor Most #TOOLTIP:GAME_TRAIT,witch,[GetNullCharacter] #L Infernalists#!#! fear dying. And performing a small sacrifice of innocents to prolong their own life suits that goal.#!"
- INVESTITURE_SERVICE_PERK_EFFECT: "#flavor In an irony worthy of Hell, a slave of the Abyss can 'buy' slaves from the Abyss. These bound creatures appear by the [GetTrait('witch').GetName(GetPlayer)]'s side and ask, 'Master, what is thy will?' Doubtless, he'll have some task ready....#!"
- INVESTITURE_SERVICE_PERK_IMPS_EFFECT: "Unlock [GetMaA('imps').GetName] as [men_at_arms|E]."
- INVESTITURE_SERVICE_PERK_MALEBRANCHE_EFFECT: "Unlock [GetMaA('malebranche').GetName] as [men_at_arms|E]."
- INVESTITURE_SERVICE_PERK_LUCIFERGIA_EFFECT: "Unlock [GetMaA('lucifergia').GetName] as [men_at_arms|E]."
- INVESTITURE_SERVICE_PERK_WAR_SERVITORS_EFFECT: "Unlock [GetMaA('war_servitors').GetName] as [men_at_arms|E]."
- INVESTITURE_SERVICE_PERK_HINT_EFFECT: "#italic (Further troop types can be unlocked by investing more [perk|E] points)#!"
+ investiture_armor_perk_name: "Броня #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_armor_perk_modifier_stacks')])#!"
+ investiture_backgrounds_perk_name: "Дополнения #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_backgrounds_perk_modifier_stacks')])#!"
+ investiture_demonic_strength_perk_name: "Демоническая сила #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_demonic_strength_perk_modifier_stacks')])#!"
+ investiture_longevity_perk_name: "Долголетие #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_longevity_perk_modifier_stacks')])#!"
+ investiture_service_perk_name: "Служба #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_service_perk_modifier_stacks')])#!"
 
- investiture_claws_and_horns_perk_name: "Claws and Horns"
- investiture_goat_feet_perk_name: "Goat Feet"
- investiture_panpipe_voice_perk_name: "Panpipe Voice"
+ INVESTITURE_ARMOR_PERK_EFFECT: "#flavor Подобно исчадию, этот дьяволопоклонник обладает чешуйчатой кожей, толстыми бородавками, жесткой шкурой или какой-то другой отвратительной формой защиты.#!"
+ INVESTITURE_BACKGROUNDS_PERK_EFFECT: "#flavor Некоторые #TOOLTIP:GAME_TRAIT,witch,[GetNullCharacter] #L инферналисты#!#! предпочитают более... тонкую помощь от своего покровителя. И контакты прекрасно подходят для таких нужд.#!"
+ INVESTITURE_DEMONIC_STRENGTH_PERK_EFFECT: "#flavor Злая энергия наполняет конечности просителя. С этого момента и до самой смерти он обладает физической мощью младшего демона.#!"
+ INVESTITURE_LONGEVITY_PERK_EFFECT: "#flavor Большинство #TOOLTIP:GAME_TRAIT,witch,[GetNullCharacter] #L инферналистов#!#! боятся смерти. И этой цели соответствует принесение в жертву невинных людей, чтобы продлить свою жизнь.#!"
+ INVESTITURE_SERVICE_PERK_EFFECT: "#flavor По иронии судьбы, раб Бездны может «покупать» рабов у Бездны. Эти связанные существа появляются рядом с #TOOLTIP:GAME_TRAIT,witch,[GetNullCharacter] #L инферналистами#!#! и спрашивают: «Хозяин, какова твоя воля?» Несомненно, у него наготове какое-то задание...#!"
+ INVESTITURE_SERVICE_PERK_IMPS_EFFECT: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('imps').GetName]."
+ INVESTITURE_SERVICE_PERK_MALEBRANCHE_EFFECT: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('malebranche').GetName]."
+ INVESTITURE_SERVICE_PERK_LUCIFERGIA_EFFECT: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('lucifergia').GetName]."
+ INVESTITURE_SERVICE_PERK_WAR_SERVITORS_EFFECT: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('war_servitors').GetName]."
+ INVESTITURE_SERVICE_PERK_HINT_EFFECT: "#italic (Можно разблокировать больше типов войск, вложив больше очков [Concept('perk', 'достоинств')|E])#!"
 
- INVESTITURE_CLAWS_AND_HORNS_PERK_EFFECT: "Deal [GetPlayer.MakeScope.ScriptValue('POD_investiture_claws_and_horns_perk_damage')] [POD_superficial_damage_with_box|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E].\n#flavor Claws or horns sprout from the supplicant's body resulting in inhuman appearance.#!"
+ investiture_claws_and_horns_perk_name: "Когти и рога"
+ investiture_goat_feet_perk_name: "Козлиные ноги"
+ investiture_panpipe_voice_perk_name: "Голос свирели"
+
+ INVESTITURE_CLAWS_AND_HORNS_PERK_EFFECT: "Наносит [GetPlayer.MakeScope.ScriptValue('POD_investiture_claws_and_horns_perk_damage')] ед. @health_track_damage_icon! [Concept('POD_superficial_damage', 'поверхностного урона')|E] вражеским [Concept('knights', 'рыцарям')|E] при участии в [Concept('combat_phase', 'бою')|E] в качестве [Concept('commander', 'командира')|E], или вашим противникам в [Concept('single_combat_duel_plural', 'поединках')|E].\n#flavor Из тела просителя вырастают когти или рога, что придаёт ему нечеловеческий вид.#!"
  INVESTITURE_GOAT_FEET_PERK_EFFECT: "#flavor After kissing his Patron (don't ask where), an Infernalist assumes the Devil's cloven feet. After this excruciating transformation (which takes several minutes), the Infernalist may jog or run faster than a man; and kick or trample his enemies with the hooves.#!"
  INVESTITURE_PANPIPE_VOICE_PERK_EFFECT: "Deal 25 [static_stress|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E].\n#flavor With simple words or songs, a soul-sworn wench can enrapture her audience. Once bound, a victim loses his good nature; they become lustful, almost drunken in their temperament.#!"
 
@@ -74,7 +74,7 @@
  investiture_wings_perk_name: "Крылья"
 
  INVESTITURE_BEAST_FORM_PERK_EFFECT: "Unlock various animalistic shapeshifts.\n#flavor By calling upon his Patronus, a devil-worshipper may change into one of the meaner beasts (a rat, cat, wolf, etc.).#!"
- INVESTITURE_HELLFIRE_PERK_EFFECT: "Deal [GetPlayer.MakeScope.ScriptValue('POD_investiture_hellfire_perk_damage')] fire [POD_aggravated_damage_with_box|E] to enemy [knights|E] when acting as a [commander|E] during the [combat_phase|E], or to your foe during [single_combat_duel_plural|E].\n#flavor Like a human dragon, this soul-seller can breathe gouts of fire upon his enemies. Other possible attacks include acidic bile, hot blood, flaming entrails, or other vile substances.#!"
+ INVESTITURE_HELLFIRE_PERK_EFFECT: "Наносит [GetPlayer.MakeScope.ScriptValue('POD_investiture_hellfire_perk_damage')] ед. огненного @health_track_aggravated_damage_icon! [Concept('POD_aggravated_damage', 'серьёзного урона')|E] вражеским [Concept('knights', 'рыцарям')|E] при участии в [Concept('combat_phase', 'бою')|E] в качестве [Concept('commander', 'командира')|E], или вашим противникам в [Concept('single_combat_duel_plural', 'поединках')|E].\n#flavor Like a human dragon, this soul-seller can breathe gouts of fire upon his enemies. Other possible attacks include acidic bile, hot blood, flaming entrails, or other vile substances.#!"
  INVESTITURE_INVULNERABILITY_PERK_EFFECT: "#flavor Mortal weapons bounce off the Infernalist's skin with little effect.#!"
  INVESTITURE_SERPENT_SKIN_PERK_EFFECT: "As a [character_interaction|E], escape [prison|E] at the cost of [GetPlayer.MakeScope.ScriptValue('POD_investiture_serpent_skin_perk_damage')] [POD_superficial_damage_with_box|E].\n#flavor In gruesome imitation of the snake, the Infernalist can literally shed her skin and escape her bonds.#!"
  INVESTITURE_WINGS_PERK_EFFECT: "#flavor Upon uttering a blasphemous command, the supplicant grows horrible, demonic wings from between her shoulder blades.#!"
@@ -93,15 +93,15 @@
 
  investiture_sign_of_the_inferno_perk_name: "Sign of the Inferno"
  investiture_uncanny_beauty_perk_name: "Uncanny Beauty"
- investiture_teleportation_perk_name: "Teleportation"
+ investiture_teleportation_perk_name: "Телепортация"
  investiture_invisibility_to_animals_perk_name: "Invisibility to Animals"
 
  INVESTITURE_SIGN_OF_THE_INFERNO_PERK_EFFECT: "Become immune to fire.\n#flavor Kissed by Hell, this diabolist needs not fear the flames. No heat or fire can harm him in any way; it may consume his clothing and possessions, but does not scar his flesh.#!"
  INVESTITURE_UNCANNY_BEAUTY_PERK_EFFECT: "#flavor Temptation often wears a terrible splendor. In exchange for a sin or two, the supplicant assumes an unearthly, irresistible beauty.#!"
- INVESTITURE_TELEPORTATION_PERK_EFFECT: "As a [character_interaction|E], allows you to teleport your army to your target's location, or teleport to your next destination when traveling.\n#flavor When the need to be everywhere at once is unbearable for an Infernalist, their infernal Patron can give them a power fulfilling their need, but remember that no gift is free.#!"
+ INVESTITURE_TELEPORTATION_PERK_EFFECT: "Позволяет телепортировать армию в выбранную локацию или телепортироваться к следующему пункту назначения путешествия через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor When the need to be everywhere at once is unbearable for an Infernalist, their infernal Patron can give them a power fulfilling their need, but remember that no gift is free.#!"
  INVESTITURE_INVISIBILITY_TO_ANIMALS_PERK_EFFECT: "Inflict [GetModifier('POD_investiture_invisibility_to_animals_perk_modifier').GetNameWithTooltip] [modifier|E] on the enemy [ruler|E] when acting as a [commander|E] during the [combat_phase|E].\n#flavor So terrible is the Infernalist's aura that all animals that would perceive them instantly repress that memory.#!"
 
- investiture_bond_breaking_perk_name: "Bond-breaking"
+ investiture_bond_breaking_perk_name: "Разрыв уз"
  investiture_shameful_sight_perk_name: "Shameful Sight"
  investiture_journey_to_the_spirit_realm_perk_name: "Journey to the Spirit Realm"
 
@@ -109,9 +109,9 @@
  INVESTITURE_SHAMEFUL_SIGHT_PERK_EFFECT: "#flavor Gazing into a person's eyes, an Infernalist can discern the sins that lie closest to the surface. In the Infernalist's 'inner eyes', an image of the deed wells up, clear as day. She might decide to keep that image to herself for later use, sneer about it openly, or torment the victim with a vision of it.#!"
  INVESTITURE_JOURNEY_TO_THE_SPIRIT_REALM_PERK_EFFECT: "#flavor By shedding their skin and flesh as if they are just a clothing, an Infernalist can abandon their flesh for a day allowing them surface-level access to the Umbra.#!"
 
- investiture_mammons_gift_perk_name: "Mammon's Gift"
- investiture_talons_of_the_plague_crow_perk_name: "Talons of the Plague-Crow"
- investiture_army_of_the_damned_perk_name: "Army of the Damned"
+ investiture_mammons_gift_perk_name: "Дар Маммоны"
+ investiture_talons_of_the_plague_crow_perk_name: "Когти чумного ворона"
+ investiture_army_of_the_damned_perk_name: "Армия проклятых"
 
  INVESTITURE_MAMMONS_GIFT_PERK_EFFECT: "As a [character_interaction|E], convert an [artifact|E] into [gold_i]250 [gold|E].\n#flavor Once per night, the Infernalist may turn one small non-living object into gold. (No, undead creatures do not count as 'non-living objects'.)#!"
  INVESTITURE_TALONS_OF_THE_PLAGUE_CROW_PERK_EFFECT: "As a [character_interaction|E], gain [GetModifier('POD_talons_of_the_plague_crow_modifier').GetNameWithTooltip] for 4 years.\n#flavor An Infernalist can at command lengthen their hands into bird-claws, making any non-combat actions much harder but making for an infernal weapon of mass destruction.#!"
@@ -121,13 +121,13 @@
  investiture_regeneration_perk_name: "Regeneration"
 
  INVESTITURE_RELENTLESS_PERK_EFFECT: "#flavor The very power of Hell drives the Infernalist towards their goal, no matter the wounds, no matter the obstacles. The Infernalist will arrive where they want.#!"
- INVESTITURE_REGENERATION_PERK_EFFECT: "Heal every year instead of every 2 years.\nEnable natural healing for $POD_splat_vampire_plural$.\n#flavor One of the greatest “gifts” offered to mortals, this Investment allows an Infernalist to restore herself to health with a mere effort of will!#!"
+ INVESTITURE_REGENERATION_PERK_EFFECT: "Heal every year instead of every 2 years.\nEnable natural healing for #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L Вампиры#!#!.\n#flavor One of the greatest “gifts” offered to mortals, this Investment allows an Infernalist to restore herself to health with a mere effort of will!#!"
 
  ############################################################
  ############################################################
  ############################################################
 
- investments_of_soul_visible: "Investments of Soul"
+ investments_of_soul_visible: "Дары души"
 
  NEEDS_COMMUNE_WITH_THE_YAMA_KINGS_TEXT: "@warning_icon!#X You need to commune with the [Glossary('Yama Kings','podgloss.yamaking')] located in the [umbra|E] - [UmbraGlossary('yomi_wan')] to unlock this perk.#!"
  NEEDS_BE_CHI_USER_FOR_FOCUS_TEXT: "@warning_icon!#X You need to be a chi user to pick this focus#!\n"
