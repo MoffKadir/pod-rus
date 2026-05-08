@@ -69,13 +69,18 @@
  brujah_legacy_3_name: "Наследие Лиланда"
  brujah_legacy_4_name: "Наследие Натальи"
  brujah_legacy_5_name: "Наследие Троиль"
- tzimisce_legacy_track_name: "Наследие Цимисхов"
- tzimisce_legacy_track_desc: "Знания [Glossary('клана','game_concept_Clan_desc')] Цимисхов уходят корнями в века."
+ tzimisce_legacy_track_name: "Наследие Цимисхи"
+ tzimisce_legacy_track_desc: "Знания [Glossary('клана','game_concept_Clan_desc')] Цимисхи уходят корнями в века."
  tzimisce_legacy_1_name: "Наследие Ажры"
- tzimisce_legacy_2_name: "Наследие Рутвена"
- tzimisce_legacy_3_name: "Наследие Вели"
+ TZIMISCE_LEGACY_1_PERK_EFFECT: "#F Ужасы и чудовища выходят из ям плоти, готовые вернуть Цимисхи то, что принадлежит им по праву.#!"
+ tzimisce_legacy_2_name: "Наследие Табака"
+ TZIMISCE_LEGACY_2_PERK_EFFECT: "#F Ночная знать несёт в себе страшное наследие [Glossary('клана','game_concept_Clan_desc')] Цимисхи.#!"
+ tzimisce_legacy_3_name: "Наследие Йорака"
+ TZIMISCE_LEGACY_3_PERK_EFFECT: "Доступна постройка «[GetBuilding('sanctuary_of_flesh_01').GetName]».\n#F Те, кто войдут сюда... никогда не выберутся.#!"
  tzimisce_legacy_4_name: "Наследие Дракона"
- tzimisce_legacy_5_name: "Наследие Йорака"
+ TZIMISCE_LEGACY_4_PERK_EFFECT: "#F Святой Дух вознёсся, оставив после себя только руины.#!"
+ tzimisce_legacy_5_name: "Наследие Рутвена"
+ TZIMISCE_LEGACY_5_PERK_EFFECT: "#F Нежити нет дела до морали. Ты будешь служить.#!"
  tremere_legacy_track_name: "Наследие Тремеров"
  tremere_legacy_track_desc: "Знания [Glossary('клана','game_concept_Clan_desc')] Тремер уходят корнями в века."
  tremere_legacy_1_name: "Наследие Горатрикса"
@@ -278,22 +283,22 @@
  pacts_legacy_track_name: "Инфернальные договоры"
  pacts_legacy_track_desc: "Демонические договоры могут придать силу получателю всего лишь ценой его полной преданности."
  pacts_legacy_1_name: "Инфернальное знание"
- pacts_legacy_1_perk: "Когда кто-то заключает с вами договор, он получает #V 5#! очков [Concept('learning', 'учёности')|E]."
+ pacts_legacy_1_perk: "Опыт [Concept('arcana_lifestyle', 'арканы')|E] от [Concept('thralls', 'рабов')|E] будет умножен на #P 3#! вместо #N 2#!."
  pacts_legacy_2_name: "Инфернальный шарм"
- pacts_legacy_2_perk: "Когда кто-то заключает с вами договор, он получает #V 5#! очков [Concept('diplomacy', 'дипломатии')|E]."
+ pacts_legacy_2_perk: "Опыт [Concept('arcana_lifestyle', 'арканы')|E] от [Concept('thralls', 'рабов')|E] будет умножен на #P 4#! вместо #N 3#!."
  pacts_legacy_3_name: "Инфернальные заговоры"
- pacts_legacy_3_perk: "Когда кто-то заключает с вами договор, он получает #V 5#! очков [Concept('intrigue', 'интриг')|E]."
+ pacts_legacy_3_perk: "Опыт [Concept('arcana_lifestyle', 'арканы')|E] от [Concept('thralls', 'рабов')|E] будет умножен на #P 5#! вместо #N 4#!."
  pacts_legacy_4_name: "Инфернальная аура"
- pacts_legacy_4_perk: "Когда кто-то заключает с вами договор, он получает #V 5#! очков [Concept('stewardship', 'управления')|E]."
+ pacts_legacy_4_perk: "Опыт [Concept('arcana_lifestyle', 'арканы')|E] от [Concept('thralls', 'рабов')|E] будет умножен на #P 6#! вместо #N 5#!."
  pacts_legacy_5_name: "Инфернальная храбрость"
- pacts_legacy_5_perk: "Когда кто-то заключает с вами договор, он получает #V 5#! очков [Concept('martial', 'военного дела')|E]."
+ pacts_legacy_5_perk: "Опыт [Concept('arcana_lifestyle', 'арканы')|E] от [Concept('thralls', 'рабов')|E] будет умножен на #P 7#! вместо #N 6#!."
 
  seelie_romantic_legacy_track_name: "Романтическое наследие Благих"
  seelie_romantic_legacy_track_desc: "Романтические наследия - это личности, которые китэйн проявляют в романтических встречах, особенно в стилизованных и формальных танцах придворной любви."
  seelie_romantic_legacy_1_name: "Эмпат"
  seelie_romantic_legacy_1_perk: "#flavor Вы очень чувствительны к настроению, желаниям и стремлениям своего партнера. Если они не счастливы, то и вы тоже.#!"
  seelie_romantic_legacy_2_name: "Друг"
- seelie_romantic_legacy_2_perk: "Открывает [Concept('scheme', 'происки')|E] типа «[GetScheme('befriend').GetTypeName]».\nВы можете использовать их до 7 друзей (начиная с 5).\n#flavor Любовь - это не просто романтическое чувство. Если в основе отношений нет взаимного уважения и дружбы, это не настоящая любовь.#!"
+ seelie_romantic_legacy_2_perk: "Открывает [Concept('scheme', 'происки')|E] типа «[GetScheme('befriend').GetTypeName]».\n#flavor Любовь - это не просто романтическое чувство. Если в основе отношений нет взаимного уважения и дружбы, это не настоящая любовь.#!"
  seelie_romantic_legacy_3_name: "Искренность"
  seelie_romantic_legacy_3_perk: "#flavor Немного наивные и простодушные, вы все еще видите только чудеса и хорошие стороны любви. Большинство фей обычно выходят из этого наследия с возрастом, но не всегда.#!"
  seelie_romantic_legacy_4_name: "Жонглёр"
@@ -474,7 +479,7 @@
  hunter_alliances_legacy_track_name: "Союзы охотников"
  hunter_alliances_legacy_track_desc: "Вы не единственные, кто сражается с тьмой. Заручиться поддержкой прочих охотников было бы очень полезно."
  hunter_alliances_legacy_1_name: "Теневая инквизия"
- hunter_alliances_legacy_1_perk: "@warning_icon!#X Это достоинство династии открывается через особое решение.#!\nТеперь вы можете пригласить члена этой организации с помощью решения «Связаться с другими охотниками».\n#flavor Самый могущественный орден охотников - это, без сомнения, Теневая инквизиция. Вы хотите, чтобы они были на вашей стороне или, по крайней мере, не мешали вам.#!"
+ hunter_alliances_legacy_1_perk: "@warning_icon!#X Это достоинство династии открывается через особое решение.#!\nТеперь вы можете пригласить члена этой организации с помощью решения «Связаться с другими охотниками».\n$countermeasures_unlocks_t1_all_seeing_eye$\n#flavor Самый могущественный орден охотников - это, без сомнения, Теневая инквизиция. Вы хотите, чтобы они были на вашей стороне или, по крайней мере, не мешали вам.#!"
  hunter_alliances_legacy_2_name: "Ихван аль-Сафа"
  hunter_alliances_legacy_2_perk: "@warning_icon!#X Это достоинство династии открывается через особое решение.#!\nТеперь вы можете пригласить члена этой организации с помощью решения «Связаться с другими охотниками».\nТеперь вы можете попросить особого наставничества в колдовстве через решение «Связаться с другими охотниками».\n#flavor Несмотря на отсутствие официальной организации, Ихван не имеют себе равных, когда речь заходит об охоте на чудовищ на их территории. У них можно поучиться мастерству.#!"
  hunter_alliances_legacy_3_name: "Судьи"
@@ -482,7 +487,7 @@
  hunter_alliances_legacy_4_name: "Акриты"
  hunter_alliances_legacy_4_perk: "@warning_icon!#X Это достоинство династии открывается через особое решение.#!\nТеперь вы можете пригласить члена этой организации с помощью решения «Связаться с другими охотниками».\n#flavor Защитники восточного христианства являются наследниками сложной византийской правовой и бюрократической системы. Полезный навык для растущего ордена охотников.#!"
  hunter_alliances_legacy_5_name: "Багатуры Корджина"
- hunter_alliances_legacy_5_perk: "@warning_icon!#X Это достоинство династии открывается через особое решение.#!\nТеперь вы можете пригласить члена этой организации с помощью решения «Связаться с другими охотниками».\nДоступны [men_at_arms|El] - [GetMaA('werewolf_pack').GetName].\n#flavor У монгольских охотников есть странные союзники... но их грубая сила позволяет легко закрыть на это глаза.#!"
+ hunter_alliances_legacy_5_perk: "@warning_icon!#X Это достоинство династии открывается через особое решение.#!\nТеперь вы можете пригласить члена этой организации с помощью решения «Связаться с другими охотниками».\nДоступны [men_at_arms|El] - [GetMaA('battlescarred_fera').GetName].\n#flavor У монгольских охотников есть странные союзники... но их грубая сила позволяет легко закрыть на это глаза.#!"
 
  wraith_legacy_track_name: "Груз призрака"
  wraith_legacy_track_desc: "Инструменты, уловки и печальные воспоминания об ушедших."
@@ -539,3 +544,25 @@
  KJ_HUANGTI_LEGACY_4_EFFECT: "#flavor Хуан-ти привил древним людям чувство общности, позаботившись о том, чтобы они защищали свои дома как единое целое.#!"
  kj_huangti_legacy_5_name: "Наследие войны"
  KJ_HUANGTI_LEGACY_5_EFFECT: "#flavor Наконец, Хуан-ти научил нас, когда нанести ответный удар, убедившись, что просвещённые народы одержат победу над варварами.#!"
+
+ ### ==========================================
+ ### DYNASTY LEGACY TRACK
+ ### ==========================================
+
+ impundulu_legacy_track_name: "Наследие Импундулу"
+ impundulu_legacy_track_desc: "Накопленные знания и традиции линии крови Импундулу, хранителей завета между жизнью и смертью."
+
+ ### Tier 1
+ impundulu_legacy_1_name: "Единение жизни и смерти"
+
+ ### Tier 2
+ impundulu_legacy_2_name: "Странники между мирами"
+
+ ### Tier 3
+ impundulu_legacy_3_name: "Мастера кенотафа"
+
+ ### Tier 4
+ impundulu_legacy_4_name: "Хранители Прохода"
+
+ ### Tier 5
+ impundulu_legacy_5_name: "Наследие Птицы-молнии"

@@ -1,67 +1,70 @@
 ﻿l_russian:
- POD_bind_demon_interaction: "Связать демона"
- POD_bind_demon_interaction_desc: "Связать персонажа [recipient.GetFirstName] с помощью [recipient.GetHerHis] истинного имени."
+ POD_investiture_shapeshift_interaction: "Сменить облик"
+ POD_investiture_shapeshift_interaction_desc: "Использовать дары вашего демонического покровителя, чтобы изменить свой облик."
 
- POD_request_pact_interaction: "Запросить договор"
- POD_request_pact_interaction_desc: "Заключить договор с персонажем [recipient.GetFirstName], чтобы получить демонический дар."
-
- POD_request_enthrall_interaction: "Запросить порабощение"
- POD_request_enthrall_interaction_desc: "Стать #TOOLTIP:game_concept_thrall_desc #E рабом#!#! персонажа [recipient.GetFirstNamePossessive], чтобы получить доступ к аркане."
-
- POD_infernalist_sacrifice_prisoner_interaction: "Принести в жертву #Weak (узник)#!"
- POD_infernalist_sacrifice_prisoner_interaction_desc: "Принести в жертву всех своих узников демону [actor.Custom('GreatDemonName')], продолжительность действия модификатора будет зависеть от количества узников (истинные бессмертные узники не учитываются)."
- POD_infernalist_sacrifice_holding_interaction: "Принести в жертву #Weak (владение)#!"
- POD_infernalist_sacrifice_holding_interaction_desc: "Принести в жертву владение и всё его население демону [actor.Custom('GreatDemonName')], продолжительность действия модификатора будет зависеть от общего уровня застройки этого владения."
- POD_infernalist_sacrifice_region_interaction: "Принести в жертву #Weak (регион)#!"
- POD_infernalist_sacrifice_region_interaction_desc: "Принести в жертву целый регион и всё его население демону [actor.Custom('GreatDemonName')], продолжительность действия модификатора будет зависеть от общего уровня развития этого титула."
- lesser_abaddon_buff_modifier: "#Weak (Малый)#! Дар Абаддона"
- greater_abaddon_buff_modifier: "#Weak (Значительный)#! Дар Абаддона"
- potent_abaddon_buff_modifier: "#Weak (Могущественный)#! Дар Абаддона"
- lesser_asmodeus_buff_modifier: "#Weak (Малый)#! Дар Асмодея"
- greater_asmodeus_buff_modifier: "#Weak (Значительный)#! Дар Асмодея"
- potent_asmodeus_buff_modifier: "#Weak (Могущественный)#! Дар Асмодея"
- lesser_azrael_buff_modifier: "#Weak (Малый)#! Дар Азраила"
- greater_azrael_buff_modifier: "#Weak (Значительный)#! Дар Азраила"
- potent_azrael_buff_modifier: "#Weak (Могущественный)#! Дар Азраила"
- lesser_belial_buff_modifier: "#Weak (Малый)#! Дар Белиала"
- greater_belial_buff_modifier: "#Weak (Значительный)#! Дар Белиала"
- potent_belial_buff_modifier: "#Weak (Могущественный)#! Дар Белиала"
- lesser_dagon_buff_modifier: "#Weak (Малый)#! Дар Дагона"
- greater_dagon_buff_modifier: "#Weak (Значительный)#! Дар Дагона"
- potent_dagon_buff_modifier: "#Weak (Могущественный)#! Дар Дагона"
- POD_infernalist_sacrifice_holding_interaction_custom: "Все постройки во владении [target.GetNameNoTier] будут уничтожены."
- POD_infernalist_sacrifice_region_interaction_custom: "Все постройки в регионе [target.GetNameNoTier] будут уничтожены."
- NOT_POD_infernalist_sacrifice_prisoner_interaction_valid: "У вас #bold нет#! ни одного смертного узника."
- NOT_POD_infernalist_sacrifice_region_interaction_valid: "У вас #bold нет#! ни одного титула с достаточным развитием."
-
- POD_emotion_projection_interaction: "Проекция эмоций"
-
- POD_life_leech_interaction: "Поглощение жизни"
- POD_life_leech_interaction_desc: "Поглотить силу воли персонажа [recipient.GetFirstName], чтобы получить жизненную силу."
-
- POD_teleportation_interaction: "Телепортироваться"
- POD_teleportation_interaction_desc: "Телепортироваться в локацию персонажа [recipient.GetFirstNamePossessive] или в ваш следующий пункт назначения [Concept('traveling', 'путешествия')|E]."
-
- POD_turn_to_toad_interaction: "Превратить в жабу"
- POD_turn_to_toad_interaction_desc: "Превратить персонажа [recipient.GetFirstName] в жабу."
-
- POD_mammons_gift_interaction: "Дар Маммона"
- POD_mammons_gift_interaction_desc: "Превратите один маленький неживой предмет в золото."
-
- #POD_command_demon_interaction: "Command Demon"
- #POD_command_demon_interaction_desc: "Command your bound demon."
- #POD_command_demon_interaction_option_assist_arcana: "Assist Arcana training"
- #POD_command_demon_interaction_option_assist_lore: "Assist Lore training"
- #POD_command_demon_interaction_option_assist_investiture: "Provide more Investiture"
- #POD_command_demon_interaction_option_cancel: "Cancel Task"
- #bound_demon_assist_arcana_modifier: "Assisted Arcana Training"
- bound_demon_assist_investiture_modifier: "Повышенный прирост опыта инвеституры"
+ POD_request_pact_interaction: "Подписать демонический договор"
+ POD_request_pact_interaction_desc: "Составить демонический [Concept('demonic_pact', 'договор')|E] с персонажем [recipient.GetFirstName], чтобы получить доступ к [Concept('investiture_lifestyle', 'пути инвеституры')|E]."
 
  POD_banish_demon_interaction: "Изгнать демона"
- POD_banish_demon_interaction_desc: "Изгнать персонажа [recipient.GetFirstName] в [UmbraGlossaryLocalized('abyss','Бездну')]."
+ POD_banish_demon_interaction_desc: "[Concept('POD_banish', 'Изгнать')|E] персонажа [recipient.GetFirstName] в [UmbraGlossaryLocalized('abyss','Бездну')]."
 
  POD_initiate_demonology_interaction: "Приобщить к демонологии"
  POD_initiate_demonology_interaction_desc: "Обучить персонажа [recipient.GetFirstName] демонологии."
+
+ POD_summon_demon_demonology_interaction: "Провести призыв демона"
+ POD_summon_demon_demonology_interaction_desc: "Принести в жертву жизни ваших [Concept('prisoners', 'пленников')|E] в надежде призвать #TOOLTIP:GAME_TRAIT,demon,[GetNullCharacter] #L демона#!#! из [UmbraGlossaryLocalized('abyss','Бездны')]."
+ POD_summon_demon_demonology_interaction_valid: "У вас #bold нет#! [Concept('prisoners', 'пленников')|E], которые не могут воскреснуть"
+ POD_summon_demon_demonology_interaction_effect1: "Вы казните до 10 [Concept('prisoners', 'пленников')|E], которые не могут воскреснуть. Каждый принесённый в жертву [Concept('prisoner', 'пленник')|E] повышает шанс успеха на #V 10%#!"
+ POD_summon_demon_demonology_interaction_success: "Призыв прошёл успешно!"
+
+ POD_bind_demon_interaction: "Связать демона"
+ POD_bind_demon_interaction_desc: "Связать персонажа [recipient.GetFirstName] с [Concept('artifact', 'артефактом')|E] силой [recipient.GetHerHis] [Glossary('истинного имени','podgloss.truename')]."
+ POD_bind_demon_interaction_no_artifact: "У вас нет артефакта, в который можно вселиться"
+ POD_bind_demon_interaction_already_bound: "[recipient.GetShortUIName|U] уже [Select_CString(recipient.IsFemale, 'связана', 'связан' )] с артефактом [recipient.MakeScope.Var('bound_demon_artifact').Artifact.Custom('ColorizedArtifactName')], который не принадлежит вам"
+ POD_bind_demon_interaction_invalid_artifact: "В этот артефакт нельзя вселиться"
+ POD_bind_demon_interaction_insufficient_artifact: "У вас должен быть [Localize(SCOPE.GetFlagName('saved_tooltip'))] артефакт, чтобы удержать персонажа [recipient.GetShortUIName]"
+ POD_bind_demon_interaction_already_bound_wrong_artifact: "Это не [recipient.MakeScope.Var('bound_demon_artifact').Artifact.Custom('ColorizedArtifactName')]"
+
+ POD_weaken_demon_interaction: "Ослабить демона"
+ POD_weaken_demon_interaction_desc: "Ослабить персонажа [recipient.GetShortUIName], вызвав у н[recipient.GetHerHis] воспоминания о Падении."
+
+ POD_serpent_skin_interaction: "Змеиная кожа"
+ POD_serpent_skin_interaction_desc: "Нанести себе вред, чтобы сбросить кожу и избежать тюремного заключения."
+
+ POD_devils_eyes_interaction: "Дьявольские глаза"
+ POD_devils_eyes_interaction_desc: "Начать [Concept('epidemic', 'поветрие')|E] в локации персонажа [recipient.GetShortUIName]."
+
+ POD_apportation_interaction: "Призыв"
+ POD_apportation_interaction_desc: "Телепортировать один из [Concept('artifacts', 'артефактов')|E] персонажа [recipient.GetShortUIName] в руки того, кто заслуживает его больше: в ваши."
+
+ POD_teleportation_interaction: "Телепортация"
+ POD_teleportation_interaction_desc: "Преодолеть огромные расстояния, чтобы появиться в облаке серы."
+
+ POD_bond_breaking_interaction: "Разрушитель оков"
+ POD_bond_breaking_interaction_desc: "Заставить персонажа [recipient.GetShortUIName] потерять все свои [Concept('hooks', 'рычаги воздействия')|E]."
+
+ POD_mammons_gift_interaction: "Дар Маммоны"
+ POD_mammons_gift_interaction_desc: "Превратить один из ваших [Concept('artifacts', 'артефактов')|E] в чистое золото."
+
+ POD_talons_of_the_plague_crow_interaction: "Когти чумного ворона"
+ POD_talons_of_the_plague_crow_interaction_desc: "Вложить свою инфернальную силу в набор ядовитых когтей."
+
+ POD_army_of_the_damned_interaction: "Армия проклятых"
+ POD_army_of_the_damned_interaction_desc: "Призвать силы Ада на время [Concept('war', 'войны')|E]."
+
+
+ POD_pact_sacrifice_of_gold_interaction: "Пожертвовать золотом"
+ POD_pact_sacrifice_of_gold_interaction_desc: "Выполнить условия вашего [Concept('demonic_pact', 'договора')|E], предложив своё [Concept('gold', 'золото')|E]."
+
+ POD_pact_infernal_prayer_interaction: "Инфернальная молитва"
+ POD_pact_infernal_prayer_interaction_desc: "Выполнить условия вашего [Concept('demonic_pact', 'договора')|E], предложив своё [Concept('piety', 'благочестие')|E]."
+
+ POD_pact_show_of_submission_interaction: "Продемонстрировать покорность"
+ POD_pact_show_of_submission_interaction_desc: "Выполнить условия вашего [Concept('demonic_pact', 'договора')|E], предложив свой [Concept('prestige', 'престиж')|E]."
+
+ POD_pact_offering_of_artifact_interaction: "Подношение артефакта"
+ POD_pact_offering_of_artifact_interaction_desc: "Выполнить условия вашего [Concept('demonic_pact', 'договора')|E], предложив один из своих [Concept('artifacts', 'артефактов')|E]."
+
 
  POD_black_whispers_interaction: "Чёрный шёпот"
  POD_black_whispers_interaction_desc: "Получив знания у [Glossary('повелителей Яма','podgloss.yamaking')], вы сможете раскрыть все секреты и происки персонажа [recipient.GetFirstName]."

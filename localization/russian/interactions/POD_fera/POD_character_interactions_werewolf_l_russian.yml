@@ -73,8 +73,8 @@
  POD_thought_form_of_the_twelve_ministers_interaction: "Достичь истинного духовного равновесия"
  POD_thought_form_of_the_twelve_ministers_interaction_desc: "Произнося мантру, вы на мгновение обретёте истинное духовное равновесие."
 
- POD_dagger_of_the_mind_interaction: "Заронить семя"
- POD_dagger_of_the_mind_interaction_desc: "Вы молча передадите простые побуждения персонажу [recipient.GetFirstName], достаточно сильную эмоцию, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'была вынуждена', 'был вынужден' )] действовать в соответствии с ней."
+ POD_burning_scars_interaction: "Burning Scars"
+ POD_burning_scars_interaction_desc: "Share the burning fire with [recipient.GetFirstName]."
 
  POD_dumpster_diving_interaction: "Погрузиться в мусор"
  POD_dumpster_diving_interaction_desc: "Переместиться из одного святилища Великой мусорной кучи в другое, что позволит вам телепортироваться в локацию персонажа [recipient.GetFirstNamePossessive] или в ваш следующий пункт назначения [Concept('traveling', 'путешествия')|E], если в выбранной провинции высокий уровень [Concept('development', 'развития')|E]."
@@ -83,20 +83,12 @@
  POD_home_in_all_lands_perk_interaction_desc: "Шагнуть за пределы и появиться в локации персонажа [recipient.GetFirstNamePossessive], где волки могут водиться в естественных условиях."
 
  POD_storm_winds_slash_interaction: "Хлыст штормового ветра"
- POD_storm_winds_slash_interaction_desc: "Использовать свою катану, чтобы ранить персонажа [recipient.GetFirstName] на расстоянии."
+ POD_storm_winds_slash_interaction_desc: "Slash the air and [recipient.GetFirstName] from a distance."
+ POD_storm_winds_slash_interaction_requirement: "Must have an equipped Katana"
 
- POD_unleash_divine_wind_interaction: "Высвободить божественный ветер"
- POD_unleash_divine_wind_interaction_desc: "Высвободить божественный ветер, который посеет хаос в округе."
- POD_unleash_divine_wind_interaction.tt: "Вы высвободите божественный ветер на державу персонажа [recipient.GetFirstNamePossessive]"
- POD_unleash_divine_wind_interaction.duel.success: "Вы успешно вызвали бурю"
- POD_unleash_divine_wind_interaction.duel.tt.attacker_wins: "Держава персонажа [recipient.GetFirstNamePossessive] погружается в божественный ветер, который сеет хаос, куда бы ни направился."
- POD_unleash_divine_wind_interaction.duel.failure: "Вы не смогли вызвать бурю"
- POD_unleash_divine_wind_interaction.duel.tt.attacker_lost: "Вы потерпели неудачу"
- POD_unleash_divine_wind_interaction_actor_toast: "Вы успешно наслали божественный ветер на державу персонажа [recipient.GetFirstNamePossessive]"
- POD_unleash_divine_wind_interaction_recipient_toast: "[actor.GetFirstName] [Select_CString(actor.IsFemale, 'наслала', 'наслал' )] на вашу столицу божественный ветер"
- POD_unleash_divine_wind_interaction_failed_toast: "Вы не смогли наслать божественный ветер на державу персонажа [recipient.GetFirstNamePossessive]"
- divine_wind_modifier: "Повреждения от божественного ветра"
- divine_wind_modifier_desc: "Эти земли пострадали от мощного шторма, который в своей ярости вырывает с корнем деревья и переворачивает лодки."
+ POD_dark_of_night_interaction: "Dark of Night"
+ POD_dark_of_night_interaction_desc: "Make them see nothing."
+ POD_dark_of_night_interaction_success: "Blindness"
 
  POD_moon_bridge_interaction: "Лунный мост"
  POD_moon_bridge_interaction_desc: "Пройти по лунной тропе сквозь туманы [Concept('umbra', 'Умбры')|E], что позволит вам телепортироваться в каэрн в локации персонажа [recipient.GetFirstNamePossessive] или в ваш следующий пункт назначения [Concept('traveling', 'путешествия')|E]."

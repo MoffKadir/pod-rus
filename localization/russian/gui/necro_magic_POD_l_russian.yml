@@ -13,7 +13,7 @@
  ritual_deaths_communion_cost: "[PlayerBloodValue('ns_ritual_deaths_communion_cost')]\n100[gold_i]\n250[piety_i]"
  ritual_spirit_beacon_name: "#TOOLTIP:game_concept_bloodmagic_ritual_desc #E Ритуал#!#!: Маяк духов"
  ritual_spirit_beacon_cost: "500[piety_i]\n[modifier|E] [Concept('county', 'графства')|E]"
- POD_spirit_beacon_cast_effect_tt: "Любой [Concept('courtier', 'придворный')|E], умерший при вашем [Concept('court', 'дворе')|E], вернётся из загробного мира в виде призрака"
+ POD_spirit_beacon_cast_effect_tt: "Любой [Concept('courtier', 'придворный')|E], умерший при вашем [Concept('court', 'дворе')|E], вернётся из загробного мира в виде #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#!"
 
  ash_path_tooltip: "Путь праха"
  ritual_eldritch_beacon_name: "#TOOLTIP:game_concept_bloodmagic_ritual_desc #E Ритуал#!#!: Зловещий маяк"

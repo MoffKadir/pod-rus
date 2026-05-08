@@ -56,7 +56,7 @@
  POD_send_to_labyrinth_character_interaction: "Отослать в Лабиринт"
  POD_send_to_labyrinth_character_interaction_desc: "Отошлите [recipient.GetFirstName] в [labyrinth|E], и [recipient.GetFirstName] получит возможность вернуться как [GetModifier('doomslayer_modifier').GetNameWithTooltip]."
  POD_banish_wraith_interaction: "Изгнать призрака"
- POD_banish_wraith_interaction_desc: "Изгоните [recipient.GetFirstName] в [Glossary('Тёмное королевство','game_concept_dark_kingdom_desc')]."
+ POD_banish_wraith_interaction_desc: "[POD_banish|E] [recipient.GetFirstName] в [Glossary('Тёмное королевство','game_concept_dark_kingdom_desc')]."
  POD_offer_seeds_of_pomegranate_interaction: "Предложить Зерна граната"
  POD_offer_seeds_of_pomegranate_interaction_desc: "Сделайте так, что [recipient.GetFirstName] получит черту [GetTrait('risen').GetName( GetPlayer )]."
  # Arcanoi #

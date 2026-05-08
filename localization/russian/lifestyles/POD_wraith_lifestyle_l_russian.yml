@@ -29,7 +29,7 @@
 
  arcanos_argos_focus: "Аргос"
  arcanos_argos_focus_modifier: "[GetFocus('arcanos_argos_focus').GetName]"
- arcanos_argos_focus_desc: "Манипуляция, ориентирование и путешествия сквозь [UmbraGlossaryLocalized('pod_realm_tempest','Бурю')]."
+ arcanos_argos_focus_desc: "Манипуляция, ориентирование и путешествия сквозь [UmbraGlossaryLocalized('tempest','Бурю')]."
  arcanos_argos_focus_effect_desc: "Сосредоточившись на Аргосе, персонаж получает:"
 
  arcanos_castigate_focus: "Наказание"
@@ -170,7 +170,7 @@
 
  arcanos_larceny_focus: "Воровство"
  arcanos_larceny_focus_modifier: "[GetFocus('arcanos_larceny_focus').GetName]"
- arcanos_larceny_focus_desc: "Продление своего существования в [UmbraGlossaryLocalized('pod_realm_tempest','Буре')] через использование [UmbraGlossaryLocalized('oblivion','Забвения')] для усиления #TOOLTIP:game_concept_Corpus_desc #E корпуса#!#!."
+ arcanos_larceny_focus_desc: "Продление своего существования в [UmbraGlossaryLocalized('tempest','Буре')] через использование [UmbraGlossaryLocalized('oblivion','Забвения')] для усиления #TOOLTIP:game_concept_Corpus_desc #E корпуса#!#!."
  arcanos_larceny_focus_effect_desc: "Сосредоточившись на Воровстве, персонаж получает:"
 
  arcanos_maleficence_focus: "Пагуба"
@@ -185,7 +185,7 @@
 
  arcanos_tempest_weaving_focus: "Плетение Бури"
  arcanos_tempest_weaving_focus_modifier: "[GetFocus('arcanos_tempest_weaving_focus').GetName]"
- arcanos_tempest_weaving_focus_desc: "Физическое и метафизическое манипулирование [UmbraGlossaryLocalized('pod_realm_tempest','Бурей')]."
+ arcanos_tempest_weaving_focus_desc: "Физическое и метафизическое манипулирование [UmbraGlossaryLocalized('tempest','Бурей')]."
  arcanos_tempest_weaving_focus_effect_desc: "Сосредоточившись на Плетении Бури, персонаж получает:"
 
  arcanos_tempestos_focus: "Темпестос"
@@ -376,14 +376,14 @@
  tempest_riders_canceleer_perk_name: "Покоритель всадника Бури"
  arcanoi_oubliette_perk_name: "Темница"
 
- ENSHROUD_PERK_EFFECT: "Для доступа к [UmbraGlossaryLocalized('pod_realm_tempest','Буре')] больше не требуется жертвоприношение.\n#F Предвестник может манипулировать мембраной между [UmbraGlossaryLocalized('shadowlands','Загробным миром')] и [UmbraGlossaryLocalized('pod_realm_tempest','Бурей')], чтобы войти в [UmbraGlossaryLocalized('pod_realm_tempest','Бурю')], не открывая [GetModifier('nihil_modifier').GetNameWithTooltip], или использовать [UmbraGlossaryLocalized('pod_realm_tempest','Бурю')] для сокрытия.#!"
- WEATHER_EYE_PERK_EFFECT: "Позволяет предсказывать стихийные бедствия.\n#F Предвестник всегда в курсе текущих событий в близлежащей [UmbraGlossaryLocalized('pod_realm_tempest','Буре')], он может срезать путь между двумя локациями [UmbraGlossaryLocalized('shadowlands','Загробного мира')].#!"
- PHANTOM_WINGS_PERK_EFFECT: "#F Предвестник может отрастить крылья, чтобы он мог скользить по [UmbraGlossaryLocalized('pod_realm_tempest','Буре')] и [UmbraGlossaryLocalized('shadowlands','Загробному миру')].#!"
- RETURN_PERK_EFFECT: "Позволяет телепортироваться в [UmbraGlossaryLocalized('shadowlands','Загробный мир')] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Предвестник может добраться из любого места в [UmbraGlossaryLocalized('pod_realm_tempest','Буре')] к себе домой самым быстрым из возможных маршрутов.#!"
- FLICKER_PERK_EFFECT: "#F Предвестник может манипулировать [UmbraGlossaryLocalized('pod_realm_tempest','Бурей')], чтобы телепортироваться в другое место.#!"
- STORMREADER_PERK_EFFECT: "Вы больше не заблудитесь в [UmbraGlossaryLocalized('pod_realm_tempest','Буре')].\n#F Предвестник получает интуитивное представление о [UmbraGlossaryLocalized('pod_realm_tempest','Буре')], что позволяет ему сократить время в пути до или из места в [UmbraGlossaryLocalized('pod_realm_tempest','Буре')] и ориентироваться так, чтобы избежать вихря или смягчить последствия.#!"
+ ENSHROUD_PERK_EFFECT: "Для доступа к [UmbraGlossaryLocalized('tempest','Буре')] больше не требуется жертвоприношение.\n#F Предвестник может манипулировать мембраной между [UmbraGlossaryLocalized('shadowlands','Загробным миром')] и [UmbraGlossaryLocalized('tempest','Бурей')], чтобы войти в [UmbraGlossaryLocalized('tempest','Бурю')], не открывая [GetModifier('nihil_modifier').GetNameWithTooltip], или использовать [UmbraGlossaryLocalized('tempest','Бурю')] для сокрытия.#!"
+ WEATHER_EYE_PERK_EFFECT: "Позволяет предсказывать стихийные бедствия.\n#F Предвестник всегда в курсе текущих событий в близлежащей [UmbraGlossaryLocalized('tempest','Буре')], он может срезать путь между двумя локациями [UmbraGlossaryLocalized('shadowlands','Загробного мира')].#!"
+ PHANTOM_WINGS_PERK_EFFECT: "#F Предвестник может отрастить крылья, чтобы он мог скользить по [UmbraGlossaryLocalized('tempest','Буре')] и [UmbraGlossaryLocalized('shadowlands','Загробному миру')].#!"
+ RETURN_PERK_EFFECT: "Позволяет телепортироваться в [UmbraGlossaryLocalized('shadowlands','Загробный мир')] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Предвестник может добраться из любого места в [UmbraGlossaryLocalized('tempest','Буре')] к себе домой самым быстрым из возможных маршрутов.#!"
+ FLICKER_PERK_EFFECT: "#F Предвестник может манипулировать [UmbraGlossaryLocalized('tempest','Бурей')], чтобы телепортироваться в другое место.#!"
+ STORMREADER_PERK_EFFECT: "Вы больше не заблудитесь в [UmbraGlossaryLocalized('tempest','Буре')].\n#F Предвестник получает интуитивное представление о [UmbraGlossaryLocalized('tempest','Буре')], что позволяет ему сократить время в пути до или из места в [UmbraGlossaryLocalized('tempest','Буре')] и ориентироваться так, чтобы избежать вихря или смягчить последствия.#!"
  TEMPEST_RIDERS_CANCELEER_PERK_EFFECT: "#F Предвестник может отрастить чёрные крылья с металлическим отливом, позволяющие ему скользить, нападать и защищать других.#!"
- ARCANOI_OUBLIETTE_PERK_EFFECT: "Разблокирована опция [Concept('execution', 'казни')|E] «$EXECUTION_BANISH_TO_TEMPEST$» для узников-#TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#!.\n#F Предвестник может послать другого призрака прямо в [UmbraGlossaryLocalized('pod_realm_tempest','Бурю')].#!"
+ ARCANOI_OUBLIETTE_PERK_EFFECT: "Разблокирована опция [Concept('execution', 'казни')|E] «$EXECUTION_BANISH_TO_TEMPEST$» для узников-#TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраков#!#!.\n#F Предвестник может послать другого призрака прямо в [UmbraGlossaryLocalized('tempest','Бурю')].#!"
 
  # Castigate
  castigate_visible: "Наказание"
@@ -601,7 +601,7 @@
  CONTROL_CREATURE_PERK_EFFECT: "As a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to gain a pet.\nAs a [Concept('character_interaction', 'взаимодействие персонажа')|E], allows you to call your pet to war.\nCan recruit several kinds of animals as [men_at_arms|E].\n#F This is similar to Rein in the Mind, but can only be used on animals.#!"
  MASTERS_VOICE_PERK_EFFECT: "Unlock higher level of [GetPerk('twitch_perk').GetName(GetPlayer)] [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F A Puppeteer can temporarily speak for a mortal host.#!"
  REIN_IN_THE_MIND_PERK_EFFECT: "Unlock highest level of [GetPerk('twitch_perk').GetName(GetPlayer)] [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F A Puppeteer can take almost complete control over a host.#!"
- SHADOW_POSSESS_PERK_EFFECT: "Unlock 'Back of Life' Objective.\n#F A Puppeteer can turn an animal into a Conduit for the Risen.#!"
+ SHADOW_POSSESS_PERK_EFFECT: "Unlocks the #V $descendence_objective_decision$#! Objective.\n#F A Puppeteer can turn an animal into a Conduit for the Risen.#!"
 
  # Usury
  usury_visible: "Ростовщичество"
@@ -956,11 +956,11 @@
  favored_flotsom_perk_name: "Favored Flotsom"
  carve_the_chaos_perk_name: "Carve the Chaos"
  
- WORMHOLE_PERK_EFFECT: "#F This allows a Spectre to use [GetModifier('nihil_modifier').GetNameWithTooltip]s to travel between the [UmbraGlossaryLocalized('pod_realm_tempest','Буря')] and the [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
+ WORMHOLE_PERK_EFFECT: "#F This allows a Spectre to use [GetModifier('nihil_modifier').GetNameWithTooltip]s to travel between the [UmbraGlossaryLocalized('tempest','Буря')] and the [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
  RIDE_THE_SOUL_STORM_PERK_EFFECT: "#F A Spectre can harness the winds of a Maelstrom to travel.#!"
- GRASP_THE_PASSING_PERK_EFFECT: "#F A Spectre can pull a random object, including memories, out of the [UmbraGlossaryLocalized('pod_realm_tempest','Буря')].#!"
+ GRASP_THE_PASSING_PERK_EFFECT: "#F A Spectre can pull a random object, including memories, out of the [UmbraGlossaryLocalized('tempest','Буря')].#!"
  FAVORED_FLOTSOM_PERK_EFFECT: "#F Similar to Grasp the Passing, except a Spectre can influence the item pulled so it is one useful to them.#!"
- CARVE_THE_CHAOS_PERK_EFFECT: "#F The Spectre can shape the [UmbraGlossaryLocalized('pod_realm_tempest','Буря')] into a form they desire, such creating "sets" for Harrowings.#!"
+ CARVE_THE_CHAOS_PERK_EFFECT: "#F The Spectre can shape the [UmbraGlossaryLocalized('tempest','Буря')] into a form they desire, such creating "sets" for Harrowings.#!"
 
  # Tempestos
  tempestos_visible: "Темпестос"
@@ -971,10 +971,10 @@
  tempest_fury_perk_name: "Tempest Fury"
  maelstrom_cauldron_perk_name: "Maelstrom Cauldron"
  
- STORM_SEEKER_PERK_EFFECT: "#F This allows a Spectre to become adrift in the [UmbraGlossaryLocalized('pod_realm_tempest','Буря')] and attract them to the nearest storm.#!"
+ STORM_SEEKER_PERK_EFFECT: "#F This allows a Spectre to become adrift in the [UmbraGlossaryLocalized('tempest','Буря')] and attract them to the nearest storm.#!"
  RIDE_THE_NIGHTWIND_PERK_EFFECT: "#F A Spectre may fly at the same speeds and direction as the Maelstrom winds.#!"
  DUST_DEVIL_PERK_EFFECT: "#F A Spectre can call up minor squalls and [GetModifier('nihil_modifier').GetNameWithTooltip]s to use as propulsion.#!"
- TEMPEST_FURY_PERK_EFFECT: "#F Spectres can call on the power of the [UmbraGlossaryLocalized('pod_realm_tempest','Буря')] to bring destruction in a limited fashion.#!"
+ TEMPEST_FURY_PERK_EFFECT: "#F Spectres can call on the power of the [UmbraGlossaryLocalized('tempest','Буря')] to bring destruction in a limited fashion.#!"
  MAELSTROM_CAULDRON_PERK_EFFECT: "#F The Spectre can summon a full-strength localized Maelstrom.#!"
 
  # Fascinate

@@ -14,13 +14,11 @@
  golconda_second_chance_modifier: "Второй шанс на жизнь"
 
  master_infiltrator_modifier: "Мастер-лазутчик"
- master_infiltrator_modifier_desc: "Начинает с [EmptyScope.ScriptValue('master_infiltrator_suspicion_offset')|V0] ед. #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрения#!#! во время миссий #L #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#!."
 
  skilled_infiltrator_modifier: "Опытный лазутчик"
- skilled_infiltrator_modifier_desc: "Начинает с [EmptyScope.ScriptValue('skilled_infiltrator_suspicion_offset')|V0] ед. #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрения#!#! во время миссий #L #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#!."
 
  infiltration_experience_modifier: "Опыт проникновения"
- infiltration_experience_modifier_desc: "Начинает с [EmptyScope.ScriptValue('infiltration_experience_suspicion_offset')|V0] ед. #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрения#!#! во время миссий #L #TOOLTIP:game_concept_infiltration_desc #E проникновения#!#!#!.\n#weak (Складывается до 5 раз)#!"
+ infiltration_experience_modifier_desc: "#weak (Складывается до 5 раз)#!"
 
  wary_of_infiltrators_modifier: "Страх лазутчиков"
  wary_of_infiltrators_modifier_desc: "#TOOLTIP:game_concept_infiltration_desc #E Миссии проникновения#!#!, нацеленные на этого персонажа, стартуют с дополнительными [EmptyScope.ScriptValue('wary_of_infiltrators_suspicion_offset')|V0] ед. #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрения#!#!."

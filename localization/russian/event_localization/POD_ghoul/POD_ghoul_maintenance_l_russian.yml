@@ -1,7 +1,15 @@
 ﻿l_russian:
+ POD_ghoul_maintenance.1.a: "Мне нужен друг из числа Обездоленных."
+ POD_ghoul_maintenance.1.b: "Мне нужен друг из Головорезов Фолка."
+ POD_ghoul_maintenance.1.c: "Мне нужен друг из ордена святого Пантелеймона."
+ POD_ghoul_maintenance.1.d: "Мне нужен друг из Ассасинов Хакима."
+ POD_ghoul_maintenance.1.back: "Я [Select_CString(ROOT.Char.IsFemale, 'передумала', 'передумал' )]."
+
+ POD_ghoul_maintenance.2.t: "Витэ в моих жилах"
+ POD_ghoul_maintenance.2.desc: "Поскольку вы использовали редактор персонажа, чтобы стать [Concept('ghoul', 'гулем')|E], вам нужно выбрать [Concept('ghoul_greatest_vitae_ingested', 'сильнейшее поглощённое витэ')|E].\n\n#X Если вы выбрали свойство мастерства [Glossary('дисциплины','game_concept_discipline_desc')], то при выборе любого [Glossary('поколения','game_concept_vampgeneration_desc')], кроме четвёртого, оно будет мгновенно снижено до нужного уровня!#!"
 
  POD_ghoul_maintenance.50.t: "Отвержение домитором"
- POD_ghoul_maintenance.50.desc: "Мой домитор лишил меня своего покровительства. Я больше не служу [Select_CString(formerdomitor.IsFemale, 'ей', 'ему' )]. [Select_CString(formerdomitor.IsFemale, 'Она', 'Он' )] больше не будет одаривать меня своей вампирской кровью. Без этой крови я в конце концов состарюсь и умру."
+ POD_ghoul_maintenance.50.desc: "Мой [Glossary('домитор','game_concept_domitor_desc')] лишил меня своего покровительства. Я больше не служу [Select_CString(formerdomitor.IsFemale, 'ей', 'ему' )]. [Select_CString(formerdomitor.IsFemale, 'Она', 'Он' )] больше не будет одаривать меня своей вампирской кровью. Без этой крови я в конце концов состарюсь и умру."
  POD_ghoul_maintenance.50.option.a: "Я ненавижу [Select_CString(formerdomitor.IsFemale, 'её', 'его' )] за это."
  POD_ghoul_maintenance.50.option.b: "Возможно, это и к лучшему."
  POD_ghoul_maintenance.300.t: "Ревенантство"

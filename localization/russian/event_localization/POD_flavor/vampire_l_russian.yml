@@ -20,3 +20,138 @@
  #pod_mass.200.a: "Pay someone to cover it."
  #POD_masssire_event_repeat.tt: "This event will repeat if you still have vampire men at arms regiment in the future."
  #pod_mass.200.b: "It is true, so what?"
+
+ ### ==========================================
+ ### BOMKAZI CULTIVATION EVENTS
+ ### ==========================================
+
+ ### Event 1: Cultivation Initiation
+ POD_impundulu.1001.t: "Зов Бомкази"
+ POD_impundulu.1001.desc: "Древний завет между нашей кровью и ведьмами Бомкази требует обновления. Необходимо найти новую компаньонку — ту, в чьих жилах течёт искра магии жизни, кто сможет идти рядом с нами как партнёр и опора для обоих.\n\nПоиски потребуют времени и усилий, но без Бомкази рядом с нами мы становимся слабее."
+ POD_impundulu.1001.a: "Немедленно приступить к поискам."
+ POD_impundulu.1001.b: "Время ещё не пришло."
+ POD_impundulu.1001.c: "Мне не нужна ведьма."
+ POD_impundulu_bomkazi_start_cultivation_tt: "Вы приступите к поискам смертной с потенциалом магии жизни, которую можно было бы использовать в качестве компаньона Бомкази."
+ POD_impundulu_bomkazi_delay_cultivation_tt: "Вам напомнят об этой возможности через 20-40 лет."
+ POD_impundulu_bomkazi_refuse_cultivation_tt: "Вы отказываетесь от совершенствования. Завет ослабевает."
+
+ ### Event 2: Quality Selection
+ POD_impundulu.1002.t: "Форма дара"
+ POD_impundulu.1002.desc: "Какого рода Бомкази мы ищем? Магия жизни проявляется по-разному в каждом смертном, который несёт в себе её семя. Некоторые направляют её через интеллект и учёбу, другие - через собственную сопротивляемость организма, и лишь немногие заглядывают за завесу.\n\nПоиск должен основываться на наших потребностях."
+ POD_impundulu.1002.a: "Искать учёную — ту, чей разум ярко горит."
+ POD_impundulu.1002.b: "Искать целительницу — ту, чьё прикосновение исцеляет плоть."
+ POD_impundulu.1002.c: "Искать провидицу — ту, кто заглядывает за завесу."
+ POD_impundulu_bomkazi_seek_scholar_tt: "Совершенствование будет предпочитать интеллект и учёность. Ваши поиски займут 5-15 лет."
+ POD_impundulu_bomkazi_seek_healer_tt: "Совершенствование будет предпочитать здоровье и стойкость. Ваши поиски займут 5-15 лет."
+ POD_impundulu_bomkazi_seek_seer_tt: "Совершенствование будет предпочитать мистическое зрение и интуицию. Ваши поиски займут 5-15 лет."
+
+ ### Event 3: Hidden creation (option text never shown)
+ #POD_impundulu.1003.a: "The search continues..."
+
+ ### Event 4: Success
+ POD_impundulu.1004.t: "Бомкази [Select_CString(bomkazi_candidate.IsFemale, 'найдена', 'найден' )]"
+ POD_impundulu.1004.desc: "Поиски принесли плоды. Перед нами стоит [Select_CString(bomkazi_candidate.IsFemale, 'юная', 'юный' )] [bomkazi_candidate.Custom('WomanManGirlBoy')], в крови [Select_CString(bomkazi_candidate.IsFemale, 'которой', 'которого' )] течёт древняя сила. [Select_CString(bomkazi_candidate.IsFemale, 'Она прошла', 'Он прошёл' )] испытания и обучение, и в [Select_CString(bomkazi_candidate.IsFemale, 'её', 'его' )] жилах течёт настоящая магия жизни.\n\n[Select_CString(bomkazi_candidate.IsFemale, 'Она', 'Он' )] будет [Select_CString(bomkazi_candidate.IsFemale, 'нашей спутницей', 'нашим спутником' )], нашим якорем в мире живых. Завет нерушим."
+ POD_impundulu.1004.a: "Добро пожаловать, [Select_CString(bomkazi_candidate.IsFemale, 'сестра', 'брат' )] по завету."
+ POD_impundulu_bomkazi_witch_arrives_tt: "Полностью [Select_CString(bomkazi_candidate.IsFemale, 'развитый ведун', 'развитая ведьма' )] Бомкази присоединится к вашему двору в качестве [Select_CString(bomkazi_candidate.IsFemale, 'подруги и компаньонки', 'друга и компаньона' )]."
+
+ ### Event 5: Partial Success
+ POD_impundulu.1005.t: "[Select_CString(bomkazi_candidate.IsFemale, 'Многообещающая ученица', 'Многообещающий ученик' )]"
+ POD_impundulu.1005.desc: "[Select_CString(bomkazi_candidate.IsFemale, 'Кандидатка', 'Кандидат' )] подаёт надежды, но магия жизни в [Select_CString(bomkazi_candidate.IsFemale, 'ней', 'нём' )] тусклая - угасающее пламя там, где должен быть костер. [Select_CString(bomkazi_candidate.IsFemale, 'Она могла', 'Он мог' )] бы стать [Select_CString(bomkazi_candidate.IsFemale, 'ученицей', 'учеником' )] Бомкази, изучая древние обычаи, хотя, возможно, никогда не достигнет полной силы древних [Select_CString(bomkazi_candidate.IsFemale, 'ведьм', 'ведунов' )].\n\nЭто уже что-то. Возможно, этого будет достаточно."
+ POD_impundulu.1005.a: "Со временем [bomkazi_candidate.GetSheHe] разовьётся. Поприветствуем [bomkazi_candidate.GetHerHis]."
+ POD_impundulu.1005.b: "Недостаточно [Select_CString(bomkazi_candidate.IsFemale, 'хороша', 'хорош' )]. Я подожду."
+ POD_impundulu_bomkazi_apprentice_arrives_tt: "[Select_CString(bomkazi_candidate.IsFemale, 'Ученица', 'Ученик' )] Бомкази присоединяется к вашему двору. [Select_CString(bomkazi_candidate.IsFemale, 'Её', 'Его' )] способности слабее, чем у [Select_CString(bomkazi_candidate.IsFemale, 'полноценной ведьмы', 'полноценного ведуна' )] Бомкази."
+
+ ### Event 6: Failure
+ POD_impundulu.1006.t: "Поиски зашли в тупик"
+ POD_impundulu.1006.desc: "Годы поисков ничего не дали. Все кандидаты прошли испытание, все смертные были изучены — ни в одном из них не было искры магии жизни, достаточной для развития. Линия крови Бомкази редеет с каждым поколением.\n\nВозможно, следующий поиск окажется более плодотворным. Или, возможно, старые обычаи действительно умирают."
+ POD_impundulu.1006.a: "Мы попробуем ещё раз. Этого требует завет."
+ POD_impundulu.1006.b: "Линия Бомкази терпит крах..."
+
+ ### ==========================================
+ ### TRAIT LOCALIZATION
+ ### ==========================================
+
+ trait_bomkazi_witch: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Ведьма', 'Ведун' )] Бомкази"
+ trait_bomkazi_witch_desc: "Смертная ведьма жизни, взращённая Импундулу. Бомкази несут в своей крови искру магии жизни, служа духовными спутниками и пищей для своих неживых партнёров."
+ trait_bomkazi_witch_character_desc: "[ROOT.Char.GetFirstNameNoTooltip|U] несёт в себе всю силу ведьм жизни Бомкази, культивируемую с помощью древних ритуалов, чтобы служить спутницами Импундулу."
+
+ trait_bomkazi_apprentice: "[Select_CString(ROOT.GetCharacter.IsFemale, 'Ученица', 'Ученик' )] Бомкази"
+ trait_bomkazi_apprentice_desc: "Смертные, обладающие некоторым потенциалом магии жизни, но не развитым в полной мере. Сила в их крови ничтожна по сравнению с силой настоящих ведьм Бомкази."
+ trait_bomkazi_apprentice_character_desc: "[ROOT.Char.GetFirstNameNoTooltip|U] проявляет признаки таланта к магии жизни, хотя сила ещё не проявилась в полной мере. [Select_CString(ROOT.GetCharacter.IsFemale, 'Ученица', 'Ученик' )] традиции Бомкази."
+
+ ### ==========================================
+ ### ARTIFACT CRAFTING EVENTS
+ ### ==========================================
+
+ ### Shew-Stone
+ POD_impundulu.3001.t: "Обряд возвещающего камня"
+ POD_impundulu.3001.desc: "Камень гладко отполирован и положен на могилу. Птичьей кровью мы пишем имя того, за кем хотели бы наблюдать. Духи приходят в движение, их тянет к камню, как мотыльков к огню.\n\nКогда обряд завершён, камень слабо жужжит в нашей ладони. Куда бы ни пошёл названный, шёпот будет следовать за ним."
+ POD_impundulu.3001.a: "Мёртвые видят всё. Теперь и я вижу."
+ POD_impundulu_shewstone_crafted_tt: "Вы создали возвещающий камень. Он предоставляет бонус к интригам и раскрытию происков."
+
+ ### Nightmare Drums
+ POD_impundulu.3002.t: "Жуткие барабаны"
+ POD_impundulu.3002.desc: "Человеческая кожа натянута на кости. Барабанные палочки вырезаны из рёбер повешенного. Ни одно живое ухо не воспринимает звук удара, но мёртвые слышат и повинуются.\n\nДухи, связанные с этими барабанами, будут навлекать кошмары на любого спящего, которого мы назовём."
+ POD_impundulu.3002.a: "Пусть живые познают ужас мёртвых."
+ POD_impundulu_nightmare_drums_crafted_tt: "Вы создали барабаны кошмара. Они производят ужас и увеличивают силу агрессивных происков."
+
+ ### Witch Eye
+ POD_impundulu.3003.t: "Плата за видение"
+ POD_impundulu.3003.desc: "Глаз трупа был подготовлен — погружён в могильную грязь, исписан знаками смерти, заколдован с использованием всего арсенала наших знаний в области некромантии. Теперь начинается самое сложное.\n\nУверенными руками мы вынимаем свой собственный глаз и вставляем мёртвый в глазницу. Боль невероятная. И тогда — мы видим. Всё. Духи, задержавшиеся мертвецы, ложь, скрывающаяся за каждым живым лицом.\n\nМир уже никогда не будет выглядеть как прежде."
+ POD_impundulu.3003.a: "Цена уплачена. Я увижу всё."
+ POD_impundulu_witch_eye_crafted_tt: "Вы вживили ведьмин глаз. Он предоставляет бонусы к некромантии и обнаружению происков, но надолго отмечает вашу внешность."
+
+ ### Artifact Names and Descriptions
+ artifact_shewstone_name: "Возвещающий камень"
+ artifact_shewstone_description: "Освящённый полированный камень, окрашенный птичьей кровью. Духи шепчут о секретах тех, чьё имя выбито на нём."
+
+ artifact_nightmare_drums_name: "Барабаны кошмара"
+ artifact_nightmare_drums_description: "Барабаны из человеческой кожи и костей. Неслышимые для живых, они приказывают призракам терзать сны соперников."
+
+ artifact_witch_eye_name: "Ведьмин глаз"
+ artifact_witch_eye_description: "Зачарованный глаз неупокоенного трупа, вживлённый в глазницу самого некроманта. Он даёт постоянное зрение смерти, но за ужасную цену."
+
+ ### Artifact Decision Tooltips
+ imp_requires_cenotaph_path_tt: "Требует знания пути кенотафа #italic ([perk|E] «[GetPerk('ns_a_touch_of_death_perk').GetName(GetPlayer)]»)#!"
+ imp_requires_haunting_path_3_tt: "Требует третий уровень пути преследования #italic ([perk|E] «[GetPerk('ns_harrowing_perk').GetName(GetPlayer)]»)#!"
+
+ ### Artifact Modifier Localization
+ artifact_shewstone_modifier: "Возвещающий камень"
+ artifact_shewstone_modifier_desc: "Духи шепчут о тайнах названных."
+ artifact_nightmare_drums_modifier: "Барабаны кошмара"
+ artifact_nightmare_drums_modifier_desc: "Мёртвые повинуются безмолвному зову барабанов."
+ artifact_witch_eye_modifier: "Ведьмин глаз"
+ artifact_witch_eye_modifier_desc: "Мёртвый глаз видит то, чего не видят живые."
+ imp_witch_eye_scarred_modifier: "Шрам от ведьминого глаза"
+ imp_witch_eye_scarred_modifier_desc: "Членовредительство, требуемое ритуалом ведьминого глаза, оставило неизгладимые следы."
+
+ ### ==========================================
+ ### FLAVOR EVENTS
+ ### ==========================================
+
+ ### Event 1: The Blood Runs Thin
+ POD_impundulu.1.t: "Слабеющая кровь"
+ POD_impundulu.1.desc: "Ваши Бомкази принесли тревожные новости. Молодое поколение смертных ведьм демонстрирует более слабые таланты, чем их матери. Магия жизни, которая когда-то горела в их линии крови, угасает, как свеча на ветру.\n\nС каждым десятилетием всё меньше кандидатов проявляют искру. Завет — который поддерживает нас на протяжении веков, возможно, умирает."
+ POD_impundulu.1.a: "Это меня очень беспокоит. Мы должны найти решение."
+ POD_impundulu.1.b: "Я не позволю пасть завету. Пока я не сдамся, нет."
+ POD_impundulu.1.c: "Бомкази продержались так долго. Они выстоят."
+
+ ### Event 2: A Bomkazi's Passing
+ POD_impundulu.2.t: "Кончина Бомкази"
+ POD_impundulu.2.desc: "Ведьма Бомкази мертва. Их магия жизни, которая поддерживала нас и привязывала к миру живых, развеялась.\n\nДревние обряды требуют, чтобы мы проводили их души через переход между мирами. Это самое малое, что мы должны тем, кто даёт нам всё."
+ POD_impundulu.2.a: "Я совершу погребальный обряд. Этого требует завет."
+ POD_impundulu.2.b: "Я буду скорбеть в тишине. У мёртвых свой собственный совет."
+
+ ### Event 3: The Necromancer's Offer
+ # (note: unused)
+ POD_impundulu.3.t: "Предложение некроманта"
+ POD_impundulu.3.desc: "До нас дошли слухи о коллеге—исследователе смерти - [Select_CString(imp_necromancer_contact.IsFemale, 'некая', 'некий' )] [imp_necromancer_contact.GetFirstNameNicknamed], чей подход к некромантии отличается от нашего. [Select_CString(imp_necromancer_contact.IsFemale, 'Она выразила', 'Он выразил' )] интерес к нашим путям Кенотафа и Преследования, знаниям, уникальным для Импундулу.\n\nВозможно, обмен знаниями пойдёт на пользу нам обоим."
+ POD_impundulu.3.a: "Мне нужно обратиться к ним. Знание - это сила."
+ POD_impundulu.3.b: "Я не [Select_CString(ROOT.Char.IsFemale, 'готова', 'готов' )] к такому обмену."
+ POD_impundulu_necromancer_offer_hint_tt: "С этим персонажем может быть доступно взаимодействие «Обменяться некромантическими знаниями»."
+
+ ### Event 4: Grief of the Founder
+ POD_impundulu.4.t: "Скорбь об основательнице"
+ POD_impundulu.4.desc: "Глубокой ночью непрошеное воспоминание всплывает на поверхность — Бомкази, первая жена-ведьма. Её лицо. Её голос. Ритуал, который связал нас, живых и мёртвых, заветом, который мы оба до конца не понимали.\n\nОна отвергла обращение. Она выбрала смертность, предпочла стареть и увядать, в то время как мы оставались неизменными. И всё же она осталась. До конца.\n\nСтолетия не притупили эту скорбь. Возможно, ничто и никогда не притупит."
+ POD_impundulu.4.a: "Я помню тебя, Бомкази. Я всегда буду помнить."
+ POD_impundulu.4.b: "Горе стало моим спутником. Знакомым, если не сказать желанным."

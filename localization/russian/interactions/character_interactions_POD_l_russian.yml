@@ -29,11 +29,11 @@
  EXECUTION_FEED_THE_CAUL: "Скормить оболочку"
  EXECUTION_ABSORB_THE_MIND: "Поглотить разум"
  EXECUTION_EVAPORATION: "Испарить"
- EXECUTION_SACRIFICE_TO_DEMON: "Принести в жертву демоническому покровителю"
  EXECUTION_SOULTAKER: "Принести в жертву Похитителю душ"
  EXECUTION_COLOSSEUM: "Скормить диким животным в Колизее"
  EXECUTION_SIN_EATING: "Пожрать грехи"
  EXECUTION_CALL_KHAIBIT: "Воззвать хайбит"
+ EXECUTION_EDGE_OF_THE_SUN: "Суд Солнца"
  soultaker_betray: "Похититель душ предал вас: достаточно сильный разум втягивается в меч и запечатлевает свои собственные планы на безумном улье-разуме Легиона."
  used_spirit_eating: "#V Пожирание духа#! восстанавливается #weak (осталось [GetPlayer.MakeScope.ScriptValue('next_devore_mind_date')|0] дней)#!"
  execution_spirit_eating_tooltip: "#V Пожирание духа#! будет недоступно в течение #V [EmptyScope.ScriptValue('devore_mind_cooldown_value')|0]#! лет."
@@ -59,7 +59,6 @@
  POD_is_valid_for_court_position_no_scope: "Этот персонаж #bold не#! является недоступным или лишённым разума"
 
  POD_do_not_disturb_text: "Этот персонаж может быть пробужден только в результате апокалиптических событий."
- POD_ruler_not_imprisoned_vicissic_text: "Вы не можете трансмогрифицировать правителя, если он не находится в вашей темнице."
  POD_overpower_vicissic_tt: "Вы начнете поединок с персонажем [recipient.GetFirstNameNoTooltip], чтобы одолеть [recipient.GetHerHis] и совершить трансмогрификацию"
  POD_no_host_earthbound_travel_text: "Для того чтобы путешествовать, вам, как Привязанному к земле, необходимо вселиться в сосуд. Для этого используйте на культисте [Concept('interaction', 'взаимодействие')|E] «Вселиться в сосуд»."
 
@@ -186,8 +185,8 @@
  SECONDARY_ACTOR_CRIMINAL_REASON: "[Concept('splat', 'Вид')|E] [Select_CString(secondary_actor.IsLocalPlayer, '', 'персонажа ' )][secondary_actor.GetShortUINamePossessive][Select_CString(secondary_actor.IsLocalPlayer, 'его персонажа', '' )] считается преступлением для [Select_CString(secondary_recipient.IsLocalPlayer, '', 'персонажа ' )][secondary_recipient.GetShortUINamePossessive][Select_CString(secondary_recipient.IsLocalPlayer, 'его персонажа', '' )]: $VALUE|+0$"
  
  ACTOR_KINFOLK_REASON: "[actor.GetFirstName] имеет свойство «[GetTrait('kinfolk').GetName( actor )]»: $VALUE|+=0$"
- ACTOR_FERA_REASON: "[actor.GetFirstName] является $glossary_fera$: $VALUE|+=0$"
- ACTOR_FERA_RANK_REASON: "Ранг $glossary_fera$ персонажа [actor.GetFirstName]: $VALUE|+=0$"
+ ACTOR_FERA_REASON: "[actor.GetFirstName] является [Glossary('фера', 'glossary_fera_tt')]: $VALUE|+=0$"
+ ACTOR_FERA_RANK_REASON: "Ранг [Glossary('фера', 'glossary_fera_tt')] персонажа [actor.GetFirstName]: $VALUE|+=0$"
  ACTOR_POSSESSED_REASON: "[actor.GetFirstName] имеет свойство «[GetTraitGroup('possessed').GetName()]»: $VALUE|+=0$"
  ACTOR_TRUEPOSSESSED_REASON: "[actor.GetFirstName] имеет свойство «[GetTraitGroup('truepossessed').GetName()]»: $VALUE|+=0$"
  ACTOR_WRAITH_REASON: "[actor.GetFirstName] имеет свойство «[GetTrait('wraith').GetName( GetNullCharacter )]»: $VALUE|+=0$"
@@ -216,6 +215,10 @@
  SUMMON_WILDLING_SPIRIT_REASON: "$soul_arts_summon_wilding_spirit_perk_name$: $VALUE|+=0$"
  WUTIAN_NINTH_IMMORTAL_REASON: "$wutian_ninth_immortal$: $VALUE|+=0$"
 
+ FANGS_OF_JUDGEMENT_REASON: "$fangs_of_judgement_perk_name$: $VALUE|+=0$"
+ FINGERS_OF_BIALOWIEZA_REASON: "$fingers_of_bialowieza_perk_name$: $VALUE|+=0$"
+ FC_TORSO_CURVED_HASP_PERK_REASON: "$fc_torso_curved_hasp_perk_name$: $VALUE|+=0$"
+
 
  POD_choose_sire_interaction: "Выбрать [Glossary('сира','game_concept_Sire_desc')]"
  POD_choose_sire_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала', 'стал' )] вашим [Glossary('сиром','game_concept_Sire_desc')]."
@@ -237,10 +240,48 @@
  POD_mind_rape_interaction_desc: "С помощью призывания раскрыть все секреты и происки персонажа [recipient.GetFirstName]."
 
  POD_learn_true_name_interaction: "Узнать истинное имя"
- POD_learn_true_name_interaction_desc: "Начать [Concept('journey', 'странствие')|E], чтобы узнать истинное имя персонажа [recipient.GetShortUIName]."
+ POD_learn_true_name_interaction_desc: "Начать [Concept('journey', 'странствие')|E], чтобы узнать [Glossary('истинное имя','podgloss.truename')] персонажа [recipient.GetShortUIName]."
  POD_learn_true_name_interaction_tt: "#TOOLTIP:game_concept_planning_speed_desc #E Скорость планирования#!#! [Concept('journey', 'странствия')|E] зависит от вашей [Concept('learning', 'учёности')|E], суммы [Concept('skills', 'навыков')|E] вашей цели и определённых [Concept('perks', 'достоинств')|E] обоих персонажей."
 
  POD_study_true_name_trait_interaction: "Изучить истинное имя"
- POD_study_true_name_trait_interaction_desc: "Использовать знание истинного имени персонажа [recipient.GetFirstNamePossessive] чтобы изучить [recipient.GetHerHis] [Concept('traits', 'свойства')|E]."
- POD_study_true_name_trait_interaction_requirement: "[recipient.GetShortUIName] #bold не#! имеет свойства, истинное имя которого вы можете узнать"
+ POD_study_true_name_trait_interaction_desc: "Использовать знание [Glossary('истинного имени','podgloss.truename')] персонажа [recipient.GetFirstNamePossessive] чтобы изучить [recipient.GetHerHis] [Concept('traits', 'свойства')|E]."
+ POD_study_true_name_trait_interaction_requirement: "[recipient.GetShortUIName] #bold не#! имеет [Concept('trait', 'свойства')|E], [Glossary('истинное имя','podgloss.truename')] которого вы можете узнать"
  POD_study_true_name_trait_interaction_select_traits_tt: "Вы сможете выбрать, какие из [Concept('traits', 'свойств')|E] персонажа [recipient.GetShortUINamePossessive] изучить"
+
+ target_in_duel_tooltip: "[recipient.GetName] участвует в [Concept('single_combat_duel', 'поединке')|E]"
+
+ ### ==========================================
+ ### KNOWLEDGE EXCHANGE DECISION
+ ### ==========================================
+
+ impundulu_knowledge_exchange_decision: "Обменяться некромантическими знаниями"
+ impundulu_knowledge_exchange_decision_tooltip: "Найти вампира-некроманта, готового поделиться секретами смерти"
+ impundulu_knowledge_exchange_decision_desc: "Импундулу всегда путешествовали в поисках знаний о смерти, которыми обладают представители других линий крови. Нужно найти вампира-некроманта, готового поделиться секретами смерти."
+ impundulu_knowledge_exchange_decision_confirm: "Начать поиски"
+ impundulu_requires_exchange_target_tt: "Есть по крайней мере один правитель-#TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L вампир#!#!, который положительно относится к вам и знает путь #TOOLTIP:GAME_TRAIT,necromancy,[GetNullCharacter] #L некромантии#!#!, которого у вас нет"
+ impundulu_knowledge_exchange_toast_title: "Поиски начинаются"
+ impundulu_knowledge_exchange_toast_tt: "#TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L Вампир#!#!-некромант свяжется с вами в течение года"
+
+ ### ==========================================
+ ### KNOWLEDGE EXCHANGE EVENTS
+ ### ==========================================
+
+ ### Event 1: The Approach
+ POD_impundulu.2001.t: "Обмен с мертвецами"
+ POD_impundulu.2001.desc: "Мы сидим друг напротив друга — два знатока смерти, разделённые кровью, но объединённые любопытством. Предложение сделано. Теперь мы должны определить цену.\n\nЧто мы предложим взамен за знания о смерти?"
+ POD_impundulu.2001.a: "Золото. Универсальный ответ."
+ POD_impundulu.2001.b: "Услуга. Я буду у них в долгу."
+ POD_impundulu.2001.c: "Наши собственные секреты. Пути кенотафа и преследования."
+ POD_impundulu_exchange_offer_gold_tt: "Вы заплатите 200 золотых за некромантические знания."
+ POD_impundulu_exchange_offer_favor_tt: "Вы предложите услугу (влияние) в обмен на знания."
+ POD_impundulu_exchange_offer_secrets_tt: "Взамен вы поделитесь секретами некромантии Импундулу. [Select_CString(imp_exchange_target.IsFemale, 'Она', 'Он' )] получат доступ путям Кенотафа/Преследования."
+
+ ### Event 2: The Outcome
+ POD_impundulu.2002.t: "Обмен знаний"
+ POD_impundulu.2002.desc: "Обмен завершён. Ночи тщательных дискуссий, совместных ритуалов и осторожных демонстраций принесли свои плоды. Мы увидели их подход к искусству некромантии — взгляд, отличный от нашего, но, несомненно, мощный.\n\nПеред нами открывается новый путь смерти."
+ POD_impundulu.2002.a: "Мёртвые говорят на многих языках. Теперь я понимаю ещё один."
+
+ ### Fallback if all valid targets died in the 1-year waiting period
+ POD_impundulu.2003.t: "Бесплодные поиски"
+ POD_impundulu.2003.desc: "Несмотря на то, что наши разведчики путешествовали по всему миру в поисках исследователей смерти, они в конечном итоге вернулись с пустыми руками.\n\nТе эксперты, которые изначально проявили интерес к нашей переписке, либо умерли, потеряли свою базу данных, либо нашли какую-то другую причину прекратить общение с нами."
+ POD_impundulu.2003.a: "Досадно, но мы можем попробовать в другой раз."

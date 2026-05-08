@@ -139,7 +139,7 @@
  fera_tribe_government_adjective: "Племен"
  fera_tribe_government_realm: "Племя фера"
  fera_tribe_government_vassals_label: "Племенные [Concept('obligations', 'обязательства')|E] основаны на [Concept('opinion', 'мнении')|E]"
- fera_tribe_government_desc: "Племена являются крупнейшей социальной единицей фера. Члены племени часто связаны кровными узами, сходными тотемами или покровителями, а также образом жизни.\nРазличные перевёртыши по-разному распределяются в этой широкой категории, но все они разделяют этот акцент на том, чтобы поддерживать одни и те же социальные и духовные связи."
+ fera_tribe_government_desc: "Племена являются крупнейшей социальной единицей [Glossary('фера', 'glossary_fera_tt')]. Члены племени часто связаны кровными узами, сходными тотемами или покровителями, а также образом жизни.\nРазличные Меняющиеся породы по-разному распределяются в этой широкой категории, но все они разделяют этот акцент на том, чтобы поддерживать одни и те же социальные и духовные связи."
  fera_tribe_government_filter_option: "$fera_tribe_government$"
  fera_tribe_government_filter_option_desc: "Только персонажи с #L [GetGovernment( 'fera_tribe_government' ).GetAdjective|l]ым#! [Concept('government','правительством')|E]"
 
@@ -148,7 +148,7 @@
  dark_kingdom_government_adjective: "Тёмно-королевск"
  dark_kingdom_government_realm: "Тёмное королевство"
  dark_kingdom_government_vassals_label: "[Concept('obligations','Обязательства')|E] [Glossary('Тёмного королевства','game_concept_dark_kingdom_desc')] определяются [Concept('vassal_contract', 'договором')|E] каждого [Concept('vassal','вассала')|E]"
- dark_kingdom_government_desc: "Тёмные королевства - это очаги стабильной реальности в пределах [UmbraGlossaryLocalized('pod_realm_tempest','Бури')] [UmbraGlossaryLocalized('shadowlands','Загробного мира')]. Каждое из этих королевств претендует на власть над призраками определенного географического региона."
+ dark_kingdom_government_desc: "Тёмные королевства - это очаги стабильной реальности в пределах [UmbraGlossaryLocalized('tempest','Бури')] [UmbraGlossaryLocalized('shadowlands','Загробного мира')]. Каждое из этих королевств претендует на власть над призраками определенного географического региона."
  dark_kingdom_government_filter_option: "$dark_kingdom_government$"
  dark_kingdom_government_filter_option_desc: "Только персонажи с #L [GetGovernment( 'dark_kingdom_government' ).GetAdjective|l]им#! [Concept('government','правительством')|E]"
 

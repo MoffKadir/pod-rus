@@ -70,7 +70,7 @@
  LORE_COMMAND_THE_FLAME_PERK_EFFECT: "Накладывает на каждого правителя противоположной стороны модификатор [GetModifier('lore_command_the_flame_modifier').GetNameWithTooltip] при начале [Concept('war', 'войны')|E] в качестве основного атакующего или защитника.\n#flavor Падшие могут повелевать пламенем божественности.#!"
  LORE_AURA_OF_LEGEND_PERK_EFFECT: "#flavor Падшие могут предстать в образе живой легенды или даже бога.#!"
  LORE_THE_MARK_OF_THE_CELESITALS_PERK_EFFECT: "Вы можете наделить себя и вашу цель модификатором [GetModifier('lore_the_mark_of_the_celesitals_good_modifier').GetNameWithTooltip] или [GetModifier('lore_the_mark_of_the_celesitals_bad_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут оставить божественную метку на другом человеке, наделив его удачей или невезением.#!"
- LORE_HAND_OF_FAITH_PERK_EFFECT: "Можно изгонять призраков, фей или демонов в их родные миры [Concept('umbra', 'Умбры')|E].\n#flavor Падшие могут изгнать существ, не созданных Богом.#!"
+ LORE_HAND_OF_FAITH_PERK_EFFECT: "Можно [Concept('POD_banish', 'изгонять')|E] призраков, фей или демонов в их родные миры [Concept('umbra', 'Умбры')|E].\n#flavor Падшие могут изгнать существ, не созданных Богом.#!"
  LORE_REVELATION_PERK_EFFECT: "Вы можете узнать все секреты и происки цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут читать существ на Божьей Земле как открытую книгу.#!"
 
  lore_cleanse_perk_name: "Очищение"
@@ -81,7 +81,7 @@
 
  LORE_CLEANSE_PERK_EFFECT: "Вы можете снять все ранения, хвори и душевные расстройства через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут очистить живое существо от всего, что его тяготит.#!"
  LORE_COMMAND_THE_WIND_PERK_EFFECT: "#flavor Падшие могут повелевать ветрами.#!"
- LORE_MANY_PLACES_AT_ONCE_PERK_EFFECT: "#flavor Падшие могут видеть глазами ближайших живых существ.#!"
+ LORE_MANY_PLACES_AT_ONCE_PERK_EFFECT: "$countermeasures_unlocks_t4_supernatural_high_alert$\n#flavor Падшие могут видеть глазами ближайших живых существ.#!"
  LORE_ANIMATE_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('golems').GetName], [GetMaA('guardians').GetName] и [GetMaA('homunculus').GetName].\n#flavor Падшие могут вдохнуть жизнь в неживую материю.#!"
  LORE_RESTORE_LIFE_PERK_EFFECT: "Вы можете вновь сделать связанного призрака смертным и получить 10 решимости в процессе через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут вернуть мёртвым дыхание жизни.#!"
 
@@ -103,7 +103,7 @@
  lore_causal_influence_perk_name: "Причинное влияние"
  lore_coherent_light_perk_name: "Когерентное излучение"
 
- LORE_FORESEE_PERK_EFFECT: "Вы получите уведомление, если кто-то задумает убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то задумает соблазнить ваших любовников или консортов.\n#flavor Падшие могут улавливать нити судьбы.#!"
+ LORE_FORESEE_PERK_EFFECT: "$countermeasures_unlocks_t4_all_seeing_eye$\nВы получите уведомление, если кто-то задумает убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то задумает соблазнить ваших любовников или консортов.\n#flavor Падшие могут улавливать нити судьбы.#!"
  LORE_TELEPORT_PERK_EFFECT: "Позволяет телепортировать вашу армию к месту нахождения цели или телепортироваться к следующему пункту назначения во время путешествия через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут путешествовать по нитям судьбы.#!"
  LORE_ILLUSION_PERK_EFFECT: "#flavor Падшие могут создавать иллюзии, похожие на жизнь.#!"
  LORE_CAUSAL_INFLUENCE_PERK_EFFECT: "#flavor Падшие могут напрямую управлять нитями судьбы.#!"

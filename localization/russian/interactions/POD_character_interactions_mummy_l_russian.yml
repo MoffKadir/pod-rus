@@ -6,7 +6,7 @@
  POD_remove_neteru_interaction: "Отвергнуть нетеру"
  POD_remove_neteru_interaction_desc: "Отказаться от почитания со стороны персонажа [recipient.GetFirstName], перестав считать [recipient.GetHerHis] своим #TOOLTIP:game_concept_neteru_desc #E нетеру#!#!."
 
- NOT_know_this_ren: "Вы #bold не#! знаете соответствующее истинное имя."
+ NOT_know_this_ren: "Вы #bold не#! знаете соответствующее [Glossary('истинное имя','podgloss.truename')]."
 
  POD_command_effigy_interaction: "Командовать созданной эффигией"
  POD_command_effigy_interaction_desc: "Командовать вашими активированными эффигиями."
@@ -30,6 +30,7 @@
  POD_healing_bandages_interaction_options_heading: "Что следует исцелить бинтами?"
  POD_eye_of_sakhmet_interaction: "Глаз Сехмет"
  POD_eye_of_sakhmet_interaction_desc: "Наложить на персонажа [recipient.GetFirstName] модификатор, который сделает невозможным исцеление [recipient.GetHerHis] ран."
+ cursed_mummy_notification: "Проклятие мумии!"
 
  POD_breakdown_artifact_interaction: "Разрушить артефакт"
  POD_breakdown_artifact_interaction_desc: "Разбить артефакт на части для последующего воссоздания."
@@ -39,7 +40,7 @@
  POD_spell_of_life_opinion: "Даровать бессмертие"
  POD_ask_neteru_for_conversion_interaction: "Потребовать обращения #Weak (Нетеру)#!"
  POD_ask_neteru_for_osiris_conversion_interaction_desc: "Потребовать, чтобы [recipient.GetShortUINameNoTooltip] [Select_CString(recipient.IsFemale, 'обратилась', 'обратился' )] в [Concept('faith', 'конфессию')|E] Осирианской лиги."
- POD_ask_neteru_for_apophis_conversion_interaction_desc: "Потребовать, чтобы [recipient.GetShortUINameNoTooltip] [Select_CString(recipient.IsFemale, 'обратилась', 'обратился' )] в [Concept('faith', 'конфессию')|E] Слуг Апофиса."
+ POD_ask_neteru_for_apophis_conversion_interaction_desc: "Потребовать, чтобы [recipient.GetShortUINameNoTooltip] [Select_CString(recipient.IsFemale, 'обратилась', 'обратился' )] в [Concept('faith', 'конфессию')|E] Слуг [Glossary('Апофиса', 'glossary_wyrm_tt')]."
  POD_create_asekh_sen_interaction: "Создать Асех-сен"
  POD_create_asekh_sen_interaction_desc: "Создать Асех-сен в качестве замены."
 
@@ -93,7 +94,7 @@
  POD_hekau_scouring_oblivion_interaction_desc: "Извлечь энергию смерти из персонажа [recipient.GetShortUIName]."
 
  POD_hekau_casting_away_interaction: "Изгнать"
- POD_hekau_casting_away_interaction_desc: "Изгнать персонажа [recipient.GetShortUINameNoTooltip] в [UmbraGlossaryLocalized('pod_realm_tempest','Бурю')], убив [recipient.GetHerHis], если [recipient.GetSheHe] не может ориентироваться в [UmbraGlossaryLocalized('shadowlands','Загробном мире')]."
+ POD_hekau_casting_away_interaction_desc: "Изгнать персонажа [recipient.GetShortUINameNoTooltip] в [UmbraGlossaryLocalized('tempest','Бурю')], убив [recipient.GetHerHis], если [recipient.GetSheHe] не может ориентироваться в [UmbraGlossaryLocalized('shadowlands','Загробном мире')]."
 
  POD_hekau_separate_khaibit_interaction: "Отделить хайбит"
  POD_hekau_separate_khaibit_interaction_desc: "Вы попытаетесь отделить хайбит от своего тела."

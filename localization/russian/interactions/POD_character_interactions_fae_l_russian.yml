@@ -199,7 +199,7 @@
  POD_cantrip_discover_true_name_interaction: "Узнать истинное имя"
  POD_reweaving_interaction: "Переплетение"
  POD_reweaving_interaction_desc: "Редактировать свойства персонажа [recipient.GetFirstNamePossessive]."
- POD_reweaving_interaction.tt: "Вы должны изучить истинное название хотя бы одного [Concept('trait', 'свойства')|E] через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
+ POD_reweaving_interaction.tt: "Вы должны изучить [Glossary('истинное имя','podgloss.truename')] хотя бы одного [Concept('trait', 'свойства')|E] через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
 
  POD_fae_interactions.200.t: "Редактор свойства"
  POD_fae_interactions.201.t: "Редактор свойства: Свойства образования"
@@ -222,8 +222,8 @@
  POD_fae_interactions.200.option.i: "Ничего"
 
  POD_fae_study_true_name_interaction: "Изучить истинные имена"
- POD_fae_study_true_name_interaction_desc: "Использовать свои знания об истинном имени персонажа [recipient.GetFirstNamePossessive], чтобы изучить [recipient.GetHerHis] [Concept('traits', 'свойства')|E]."
- POD_fae_study_true_name_interaction_trait_requirement: "[recipient.GetShortUIName] #bold не#! имеет свойства, истинное имя которого вы можете узнать"
+ POD_fae_study_true_name_interaction_desc: "Использовать свои знания об [Glossary('истинном имени','podgloss.truename')] персонажа [recipient.GetFirstNamePossessive], чтобы изучить [recipient.GetHerHis] [Concept('traits', 'свойства')|E]."
+ POD_fae_study_true_name_interaction_trait_requirement: "[recipient.GetShortUIName] #bold не#! имеет свойства, [Glossary('истинное имя','podgloss.truename')] которого вы можете узнать"
  POD_fae_study_true_name_interaction_all_traits: "Изучить все свойства"
  POD_fae_study_true_name_interaction_select_traits: "Выберите, какие свойства вы хотите изучить"
  POD_fae_study_true_name_interaction_select_traits_tt: "Вы сможете выбрать [Concept('traits', 'свойства')|E] персонажа [recipient.GetShortUINamePossessive], которые хотите изучить"
@@ -341,9 +341,9 @@
  POD_fae_interactions.627.c: "Раздели свою боль с миром."
 
  POD_fae_interactions.701.t: "[GetPlayer.MakeScope.Var('current_journey').Var('target_trait').Trait.GetName(GetPlayer)]: Прозрение"
- POD_fae_interactions.701.desc: "Мои размышления принесли плоды.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )] полное представление о новом истинном имени."
+ POD_fae_interactions.701.desc: "Мои размышления принесли плоды.\n\nЯ [Select_CString(ROOT.Char.IsFemale, 'получила', 'получил' )] полное представление о новом [Glossary('истинном имени','podgloss.truename')]."
  POD_fae_interactions.701.a: "Мой разум расширяется. А вместе с ним и возможности."
- POD_fae_interactions.701.a.tt: "Вы изучили истинное имя [Concept('trait', 'свойства')|E] «[GetPlayer.MakeScope.Var('current_journey').Var('target_trait').Trait.GetName(GetPlayer)]»."
+ POD_fae_interactions.701.a.tt: "Вы изучили [Glossary('истинное имя','podgloss.truename')] [Concept('trait', 'свойства')|E] «[GetPlayer.MakeScope.Var('current_journey').Var('target_trait').Trait.GetName(GetPlayer)]»."
 
  POD_fae_interactions.702.t: "Плетение гобелена"
  POD_fae_interactions.702.desc: "Какие [Concept('traits', 'свойства')|E] вы хотите изучить?"
@@ -429,7 +429,7 @@
  POD_transmute_earth_interaction_desc: "Превратить горсть камешков в драгоценные камни, чтобы продемонстрировать свой престиж и величие."
 
  POD_banish_fae_interaction: "Изгнать фею"
- POD_banish_fae_interaction_desc: "Изгнать персонажа [recipient.GetFirstName] в [UmbraGlossaryLocalized('arcadia','Аркадию')]."
+ POD_banish_fae_interaction_desc: "[Concept('POD_banish', 'Изгнать')|E] персонажа [recipient.GetFirstName] в [UmbraGlossaryLocalized('arcadia','Аркадию')]."
 
  bunk.duel.desc: "#TOOLTIP:game_concept_bunk_desc #E Банк#!#!"
 

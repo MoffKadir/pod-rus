@@ -152,7 +152,7 @@
  pod1230objectives.47.a: "Стража, пощадите отпрысков правящих династий."
  pod1230objectives.47.custom: "Вы укрепляете [Glossary('клан','game_concept_Clan_desc')] Цимисхи в целом, обеспечивая его наследие как устрашающих правителей."
  pod1230objectives.47.b: "Уважаемые жрецы-колдуны, надеюсь, это не причинит вам особых неудобств."
- pod1230objectives.47.customb: "Персонажи-цимисхи обратятся в Via Mutationis."
+ pod1230objectives.47.customb: "Все персонажи-цимисхи обратятся в [GetReligionByKey('roadofmetamorphosis_religion').GetAdjective]."
  pod1230objectives.47.c: "Вы! В капюшонах! Выйдите вперёд..."
  pod1230objectives.47.customc: "Другие персонажи-цимисхи будут истощены, чтобы подпитать ваше восхождение к демонической силе."
  pod1230objectives.48.a: "Объединённый [Glossary('клан','game_concept_Clan_desc')] Цимисхи - пугающая перспектива..."
@@ -282,10 +282,10 @@
  pod1230objectives.89.b: "Наш пример."
 
  # pod1230objectives.87.t: "Satiated with Power"
- # pod1230objectives.87.desc: "The sacrifices turned to withered husks, their blood is now coursing through your veins saturating your mind and body with divine vigour. Unlike your experiment subjects, you remain very much alive, the curse of unlife was distilled away from the vitae leaving only power. The only curse cast today has befallen those foolish enough to stand in your way.\nYou have outdone even the Tremere magi that stole the divine blood to become vampires, and your achievements will be remembered, and feared, for generations to come."
+ # pod1230objectives.87.desc: "The sacrifices turned to withered husks, their blood is now coursing through your veins saturating your mind and body with divine vigour. Unlike your experiment subjects, you remain very much alive, the curse of unlife was distilled away from the [Glossary('витэ','game_concept_vitae_desc')] leaving only power. The only curse cast today has befallen those foolish enough to stand in your way.\nYou have outdone even the Tremere magi that stole the divine blood to become vampires, and your achievements will be remembered, and feared, for generations to come."
  # pod1230objectives.87.a: "What belonged to my masters is now mine."
  # pod1230objectives.88.t: "A Ritual Most Unholy"
- # pod1230objectives.88.desc: "News speaking of an arrogant [Concept('ghoul', 'гуль')|E] upstart performing vile sorcery to usurp the power of Kindred vitae reach your court. The rumours of the degree of transgression against the sanctity of the blood are disturbing to say the least."
+ # pod1230objectives.88.desc: "News speaking of an arrogant [ghoul|E] upstart performing vile sorcery to usurp the power of Kindred [Glossary('витэ','game_concept_vitae_desc')] reach your court. The rumours of the degree of transgression against the sanctity of the blood are disturbing to say the least."
  # pod1230objectives.88.a: "What does that mean for the Kindred?"
  # pod1230objectives.88.b: "The Kindred will punish that fool."
  # pod1230objectives.89.t: "The Price of Hubris"
@@ -300,7 +300,7 @@
  # pod1230objectives.891.desc: "As the evening falls, the great hall slowly fills with guests. The pent-up excitement characteristic of those last moments before a feast is to begin in earnest is palpable in the air, but you can safely assume that none of those present feel it as strongly as you. Certainly not those blissfully unaware of their role in the festivities. Your majordomo signals that all guests who responded to invitations are present and accounted for and you signal back to have the guards silently bar the doors. As you make your way to the head of the table, your [blood_father.Custom2('RelationToMeShort', SCOPE.sC('obsolete_child'))] [obsolete_child.GetFirstNameNoTooltip] intercepts you and asks: \n - My [obsolete_child.Custom2('RelationToMeShort', SCOPE.sC('blood_father'))], the feast is starting, alas I can not see or smell any food. Are you planning to make us fast?"
  # pod1230objectives.891.a: "Do not fret, [obsolete_child.GetFirstNameNoTooltip], [ROOT.Char.GetFaith.HighGodName] will send us the the nourishment."
  # pod1230objectives.892.t: "To health! To power!"
- # pod1230objectives.892.desc: "Kinsmen! - you being - All of you gathered here tonight will be granted the honour of lending the strength of your noble blood to the cause of elevating the name of House [blood_father.GetHouse.GetBaseNameNoTooltip] to new heights of glory. Many of you will do so with the help of your younger brothers and sisters who's bodies and minds are better suited for the task, yet do not despair for your service will be remembered and your sacrifice will be honoured. Now, my children of the true vitae, boldly reach for your inheritance and make it your strength, take your predecessors' blood and rid them of the burden of it power. Gorge yourself on the past and become the future!"
+ # pod1230objectives.892.desc: "Kinsmen! - you being - All of you gathered here tonight will be granted the honour of lending the strength of your noble blood to the cause of elevating the name of House [blood_father.GetHouse.GetBaseNameNoTooltip] to new heights of glory. Many of you will do so with the help of your younger brothers and sisters who's bodies and minds are better suited for the task, yet do not despair for your service will be remembered and your sacrifice will be honoured. Now, my children of the true [Glossary('витэ','game_concept_vitae_desc')], boldly reach for your inheritance and make it your strength, take your predecessors' blood and rid them of the burden of it power. Gorge yourself on the past and become the future!"
  # pod1230objectives.892.a: "Take them and feast!"
  # pod1230objectives.893.t: "Consolidated power"
  # pod1230objectives.893.desc: "The feeding frenzy subsides. As gruesome of an ordeal it was, there is not a hint of shame or guilt among even your relatively soft-hearted children. There is a profound sense of satisfaction, gratitude and contentment permeating the blood-splattered hall. What is done, is done."
@@ -630,12 +630,19 @@
  #pod1230objectives.155.desc: "Всё готово. Поднебесная объединена, Алая королева и Чёрный дракон послали нам свою божественную сущность с возвращением наделённых силой смертных; воистину, Нефритовый император наблюдает за нами. Мы уничтожим [UmbraGlossaryLocalized('yomi_wan','Йоми')] и [UmbraGlossaryLocalized('black_spiral_labyrinth','Чёрный лабиринт')], покончив со всем инфернальным. Мы разрушим стену и паутину Великой паучихи, вернём Сороконожке рассудок. Мы станем... Возвышенными!"
  #pod1230objectives.155.a: "Возвышенные."
 
- pod1230objectives.156.t: "Ажи Дахака"
+ azhi_dahaka_objective_decision: "Вечное изменение"
+ azhi_dahaka_objective_decision_tooltip: "Одно целое с изменениями."
+ azhi_dahaka_objective_decision_desc: "Ажи Дахака - это мифическое состояние бытия, которое стремятся достичь Цимисхи. Это предвестник трансформации, состояния, когда физические и ментальные нормы и структуры теряют свою власть над душой вампира. Чтобы достичь этого, каждый стремящийся должен найти свой собственный путь, поскольку застой, в конце концов, означает вымирание."
+ azhi_dahaka_objective_decision_confirm: "Приступим к экспериментам..."
+ azhi_dahaka_objective_decision_requirement: "У вас есть #V 3#! или более [Concept('bound_ghouls', 'связанных гулей')|E] с #V 25#! или более [Concept('trait_level_track_xp', 'опытом пути развития свойства')|E] «[GetTrait('fleshcrafted').GetName(GetNullCharacter)]»"
+ azhi_dahaka_objective_decision_requirement2: "У вас есть как минимум #V 10#! [Concept('prisoners', 'узников')|E] #TOOLTIP:GAME_TRAIT,vampgeneration7,[GetNullCharacter] #L седьмого поколения#!#! или ниже"
+ pod1230objectives.156.t: "Новая форма"
  pod1230objectives.156.desc: "Как правило, за несколькими заметными исключениями, цимисхи не склонны к преданному благочестию. Зачем поклоняться какому-то далёкому богу, если можно превратить себя в него? На самом деле это не божество. На самом деле это не догма. Ажи Дахака - символ, фетиш и средоточие трансцендентализма клана.\nОт Дракона до Иллуянкаса, от Дракулы до Левиафана, драконы глубоко вплетены в мифологию Цимисхи. Мы стремимся к тому, чего боится скот, — не к буквальной физической форме, а к тому, что дракон олицетворяет как предвестник трансформации. Мы стремимся к трансцендентному, двигаясь по извилистой спирали колец Ажи Дахаки, заглядывая в его многочисленные пасти и глаза. Там, где хаос и вечность встречаются в движении, мы найдём бьющееся сердце дракона и испьём до дна.\nВоплощенная метафора. Загадка во плоти. Ажи Дахака - рукокрылый херувим нашей безбожной, чуждой духовности."
- pod1230objectives.156.a: "Я - дракон."
+ pod1230objectives.156.a: "Моё вознесение начинается."
+ pod1230objectives.156.tooltip: "#help Чтобы продвинуться к #TOOLTIP:GAME_TRAIT,azhi_dahaka,[GetNullCharacter] #L Ажи Дахаке#!#!, вы должны увеличить свой [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] через [Concept('journey', 'странствие')|E]#!"
+
 
  pod1230objectives.157.t: "Глубочайшая Бездна"
-
  pod1230objectives.157.desc: "После многих приготовлений и жертв вы, наконец, здесь. В самой глубокой части Бездны, где никогда не было света. У вас нет времени думать об этом, поскольку ваша душа быстро разрушается. Вы должны действовать сейчас или рискуете стать лишь одной из многих беспокойных теней, вечно блуждающих по этому месту."
  pod1230objectives.157.a: "Я подчиню Левиафана своей воле."
  pod1230objectives.157.a.t: "Вы получите доступ к [Concept('men_at_arms', 'профессионалам')|E] - [GetMaA('the_leviathan').GetName]."
@@ -663,10 +670,9 @@
  pod1230objectives.1591.t: "Кодекс Саргона"
  pod1230objectives.1591.desc: "И вот я здесь, на пороге божественности. Всего один шаг вперед, и я сделаю то, что не удалось даже Каппадокию, - верну божественную искру, которую проклятие Каина уничтожает во всех нас. Я буду [Select_CString(ROOT.Char.IsFemale, 'единственной', 'единственным' )] в своём роде, [Select_CString(ROOT.Char.IsFemale, 'благословенной и проклятой', 'благословенным и проклятым' )] одновременно... но от этого стану ещё могущественнее."
  pod1230objectives.1591.a: "Апофеоз."
- pod1230objectives.1591.a.tt: "#weak Вы получите доступ к магии#!\n#X @warning_icon!Поскольку маги ещё не готовы, награда немного отличается#!"
 
  pod1230objectives.1592.t: "Геенна: Затишье"
- pod1230objectives.1592.desc: "В отличие от многих своих современников, Каппадокий стремился к могуществу, превосходящему даже то, которым он обладал в допотопные времена. Его стремление к знаниям было бесконечным, и все его потомки стремились к этому. На протяжении тысячелетий ученые трудились над достижением этой цели. В поисках «Кодекса», «Призрака мессии», «Некромантии» и «Из глубин Подземного мира» не осталось камня на камне.\n\nИ, наконец, он был найден.\n\nВы почувствуете это первыми. Прилив энергии, бодрости, которой вы давно лишены. Сам Каппадокий признал вашу решающую роль в этом развитии и вознаградил вас за то, что вы позволили ему совершить невозможное. Ваш разум расширяется и мчится вперёд, поскольку всё, чему он научился, в одно мгновение вливается в вас. Ваша витэ кричит, ваш разум ревёт, Зверь воет, и существование вокруг вас начинает вращаться. Простыми мыслями вы чувствуете, как то, чему вы научились, подчиняет мир вокруг вас вашей воле. В свои последние мгновения вампирской ясности перед тем, как стать чем-то большим, вы улыбаетесь, и плод ваших амбиций вкушает сладчайший нектар."
+ pod1230objectives.1592.desc: "В отличие от многих своих современников, Каппадокий стремился к могуществу, превосходящему даже то, которым он обладал в допотопные времена. Его стремление к знаниям было бесконечным, и все его потомки стремились к этому. На протяжении тысячелетий ученые трудились над достижением этой цели. В поисках «Кодекса», «Призрака мессии», «Некромантии» и «Из глубин Подземного мира» не осталось камня на камне.\n\nИ, наконец, он был найден.\n\nВы почувствуете это первыми. Прилив энергии, бодрости, которой вы давно лишены. Сам Каппадокий признал вашу решающую роль в этом развитии и вознаградил вас за то, что вы позволили ему совершить невозможное. Ваш разум расширяется и мчится вперёд, поскольку всё, чему он научился, в одно мгновение вливается в вас. Ваша [Glossary('витэ','game_concept_vitae_desc')] кричит, ваш разум ревёт, Зверь воет, и существование вокруг вас начинает вращаться. Простыми мыслями вы чувствуете, как то, чему вы научились, подчиняет мир вокруг вас вашей воле. В свои последние мгновения вампирской ясности перед тем, как стать чем-то большим, вы улыбаетесь, и плод ваших амбиций вкушает сладчайший нектар."
  pod1230objectives.1592.a: "Да приидет царствие Его."
  pod1230objectives.1592.a.tt: "Всё и ничего не ждёт вас впереди. Вы можете попробовать всё это на вкус. Пришло время оставить всё это позади."
 
@@ -782,6 +788,7 @@
  pod1230objectives.170.effect.success.desc.tt: "Все ваши повреждённые полки профессионалов будут восполнены"
  pod1230objectives.170.effect.failure.desc.tt: "Один из ваших повреждённых полков профессионалов будет восполнен"
  pod1230objectives.170.d: "Мой военный орден может предоставить войска поддержки."
+ pod1230objectives.170.e: "Кровь, кровь - мой повелитель."
 
  pod1230objectives.171.desc: "Основная обязанность посла - представлять интересы своего покровителя в чужеземных дворах. Представительство может принимать самые разные формы, от официального представления до более закулисных интриг. В любом случае вы можете начать свою работу в регионе с официального визита, в ходе которого изложите свои цели. Поскольку вы представляете в этом деле своего сюзерена, неспособность вести себя соответствующим образом плохо скажется на ваших навыках."
  pod1230objectives.171.a: "Я [Select_CString(ROOT.Char.IsFemale, 'пришла', 'пришёл' )] с добрыми пожеланиями от моего сюзерена."
@@ -1276,7 +1283,7 @@
  pod1230objectives.220.desc: "Иногда даже ваше тоскливое сердце может учащённо биться.\n\nВы долго ждали этого. Вы проводите руками по награде за вашу работу, которую принёс вам один из железных демонов [Glossary('Микабоши','podgloss.mikaboshi')] в знак признания ваших заслуг. Рукоять клинка, великолепная и отполированная из несравненной стали, настолько прочная, что даже кузница богов не смогла бы ее испортить. И вместо того, чтобы вложить в ножны, легким движением большого пальца обнажается жестокий изогнутый клинок, лезвие которого потрескивает со зловещей злобой.\n\nМеч, способный рассечь небеса."
  pod1230objectives.220.a: "Прекрасный подарок. Он найдёт достойное применение."
  artifact_sword_stars_name: "Меч звёзд"
- artifact_sword_stars_description: "Рукоять клинка, великолепная и отполированная из несравненной стали, настолько прочная, что даже кузница богов не смогла бы ее испортить. И вместо того, чтобы вложить в ножны, легким движением большого пальца обнажается жестокий изогнутый клинок, лезвие которого потрескивает со зловещей злобой."
+ artifact_sword_stars_description: "#bold Converts damage to [POD_aggravated_damage|E].#!\n\nРукоять клинка, великолепная и отполированная из несравненной стали, настолько прочная, что даже кузница богов не смогла бы ее испортить. И вместо того, чтобы вложить в ножны, легким движением большого пальца обнажается жестокий изогнутый клинок, лезвие которого потрескивает со зловещей злобой."
 
  bushi_victory_objective_decision: "Поглотить дракона"
  bushi_victory_objective_decision_tooltip: "Любовь и власть."
@@ -1311,3 +1318,54 @@
  1300_current_date_tt: "Эта цель доступна только до 1300 года"
  1350_current_date_tt: "Эта цель доступна только до 1350 года"
  1400_current_date_tt: "Эта цель доступна только до 1400 года"
+
+
+ pod1230objectives.222.t: "Ла гранде трагедия"
+ pod1230objectives.222.desc: "Каждой трагедии нужен магнум опус, и наша трагедия потрясла всю державу. По всей Франции завяли лилии из-за наших тщательно продуманных планов посеять отчаяние. Так называемые «дворы любви» дегенератов-тореадоров превратились в грандиозный театр плача. Теперь, когда наша тираническая власть в безопасности, а наши властные наследники исполняют мелодию нашей жестокости, осколки нашей родословной наконец-то можно собрать воедино.\n\nКогда опускается занавес и мы выходим на поклон, я чувствую, как наш повелитель улыбается нам. Я чувствую, как его тёмное влияние окутывает мой разум, разделяя ощущение его бесконечной жестокости. Не имеет значения, несу ли я сейчас его благословение или просто [Select_CString(ROOT.Char.IsFemale, 'была выдолблена', 'был выдолблен' )], чтобы стать идеальным сосудом. Эннамару возродился в нашей крови, и скоро мир узнает его имя."
+ pod1230objectives.222.a: "Пусть опустится занавес. Да начнётся плач разрушенной державы."
+
+ pod1230objectives.223.t: "Мастер плоти и кости"
+ pod1230objectives.223.desc: "Крики наконец прекратились.\n\nНе потому, что вы вдруг решили проявить милосердие, а потому, что сырьё, которое так щедро предоставили ваши музы, наконец-то приняло желаемую форму. Демоны хвастаются своими боевыми формами, но на самом деле они не более чем уродливые звери. Однако, как [Select_CString(ROOT.Char.IsFemale, 'художница', 'художник' )], вы знаете, что истинное искусство требует страданий, которые вы причиняли и себе, и своим музам на протяжении всего этого процесса.\n\nРезультат вашей кропотливой работы захватывает дух. Смотреть на вас сейчас - всё равно что видеть ангела, рождённого из костей и крови.\n\nТо, что раньше считалось простой бойней, теперь возведено в ранг божественного, и всё это благодаря вашим усилиям."
+ pod1230objectives.223.a: "Совершенство!"
+
+ pod1230objectives.224.t: "Очищение Франции"
+ pod1230objectives.224.desc: "Свершилось. Демонопоклонники, которые пытались осквернить эти владения, были искоренены и уничтожены.\n\nЕсли взглянуть на ваши земли, то перемены уже очевидны. Без коварной скверны Детей Эннамару и вашего собственного Зверя, крепко связанного вашими смертными опорами, смертные могут свободно процветать. Торговля процветает, поля обрабатываются с новой силой, и гармония, которая была у вашего вида со скотом, возобновляется. Наступил золотой век для Франции."
+ pod1230objectives.224.a: "Пусть держава процветает под нашим присмотром!"
+
+
+
+ koldunic_ways_objective_decision: "Развить колдовские пути"
+ koldunic_ways_objective_decision_tooltip: "Всегда можно обрести больше силы."
+ koldunic_ways_objective_decision_desc: "Несмотря на своё могущество, колдовские [Concept('krainas', 'крайны')|E] привязаны к земле. Чтобы бороться с этой слабостью, необходимо найти новые способы практиковать колдовство, прежде чем другие виды чародейства превзойдут его или оно будет утрачено во времени. Методы, которые любой новообращённый должен быть в состоянии легко освоить и использовать."
+ koldunic_ways_objective_decision_confirm: "Колдовство вечно."
+ koldunic_ways_objective_decision_requirement: "[GetPODArtifactName('incunabulum_kupalam_link')] принадлежит вам"
+ koldunic_ways_objective_decision_requirement2: "У вас есть #V 5#! [Concept('prisoners', 'узников')|E] со свойством «[GetTrait('tremere').GetName(GetNullCharacter)]»"
+ koldunic_ways_objective_decision_requirement3: "У вас есть #V 10#! [Concept('prisoners', 'узников')|E], владеющих любой формой #TOOLTIP:GAME_TRAIT,bloodsorcery,[GetNullCharacter] #L кровавого чародейства#!#!"
+ koldunic_ways_objective_decision_effect: "Дополнительные [Concept('perks', 'достоинства')|E] #V колдовства#! станут доступны всем персонажам."
+ pod1230objectives.225.t: "Колдовские пути"
+ pod1230objectives.225.desc: "Колдовство - одна из самых древних форм кровавого чародейства, известных [Glossary('каинитам','game_concept_cainite_desc')]. В дополнение ко многим сложностям, Цимисхи ревностно оберегали эту силу от других, что привело к тому, что в живых осталось очень мало практикующих эту древнюю магию. С развитием тауматургии и простотой её изучения колдовство стоит перед выбором: оно должно либо адаптироваться, либо погибнуть под напором времени.\n\nБлагодаря вашей мудрости и знаниям вам удалось создать пять дополнительных путей для колдовства. В отличие от [Concept('krainas', 'крайн')|E], эти пути черпают силу из всех стихий и не привязаны к самой земле. Что облегчает их изучение и использование."
+ pod1230objectives.225.a: "Стихии повинуются мне."
+ pod1230objectives.226.t: "Колдовские пути"
+ pod1230objectives.226.desc: "До меня дошли вести, что [koldunic_expander.GetFirstNameNoTooltip] [Select_CString(koldunic_expander.IsFemale, 'расширила', 'расширил' )] колдовство.\n\nКолдовство - одна из самых древних форм кровавого чародейства, известных [Glossary('каинитам','game_concept_cainite_desc')]. В дополнение ко многим сложностям, Цимисхи ревностно оберегали эту силу от других, что привело к тому, что осталось очень мало тех, кто практикует эту древнюю силу. С развитием тауматургии и простотой её изучения колдовство стоит перед выбором: оно должно либо адаптироваться, либо раствориться под напором времени.\n\nБлагодаря своей мудрости и знаниям, [koldunic_expander.GetFirstNameNoTooltip] [Select_CString(koldunic_expander.IsFemale, 'сумела', 'сумел' )] создать пять дополнительных путей для колдовства. В отличие от [Concept('krainas', 'крайн')|E], эти пути черпают силу из всех стихий и не привязаны к самой земле. Что облегчает их изучение и использование."
+ pod1230objectives.226.a: "Больше способностей для изучения?"
+
+ tzimisce_land_for_dragons_objective_decision: "Земля для драконов"
+ tzimisce_land_for_dragons_objective_decision_tooltip: "Новая империя будет построена на плоти тех, кто стоит ниже нас."
+ tzimisce_land_for_dragons_objective_decision_desc: "Многие [GetTrait('tzimisce').GetName(GetNullCharacter)|l] проживают в #ONCLICK:TITLE,e_voivodate #TOOLTIP:LANDED_TITLE,e_voivodate #L Воеводстве#!#!#!, однако мы далеки от их земель и политики. Наш [Glossary('клан','game_concept_Clan_desc')] всегда был связан с нашими владениями, пришло время нам самим пустить здесь корни."
+ tzimisce_land_for_dragons_objective_decision_confirm: "Драконы возвысятся."
+ tzimisce_land_for_dragons_objective_decision_requirement: "Вы владеете как минимум #V 3#! [Concept('kingdom', 'королевскими')|E] [Concept('titles', 'титулами')|E]"
+ tzimisce_land_for_dragons_objective_decision_effect: "Вы получите [Concept('title', 'титул')|E] «[GetTitleByKey('e_tzimisce_dragons').GetNameNoTier]», который будет включать в себя все [Concept('kingdoms', 'королевства')|E] и [Concept('empires', 'империи')|E], которыми вы владеете"
+ pod1230objectives.227.t: "Новое владение"
+ pod1230objectives.227.desc: "Благодаря вашему могуществу для Цимисхи была создана новая держава. Это новое владение находится вдали от центра вашего [Glossary('клана','game_concept_Clan_desc')], и власть над ним находится в ваших руках. Ваши собратья могут ссориться и терпеть неудачи в Воеводстве, но вы, вы добьётесь того, чего не смогли они.\nДраконы будут править ночью, а вы будете править ими всеми."
+ pod1230objectives.227.a: "Моё правление абсолютно."
+
+
+ pod1230objectives.228.t: "Исцеление иссушающей крови"
+ pod1230objectives.228.desc: "Знания собраны. Ритуалы подготовлены. После столетий поисков перед нами лежат два пути, каждый из которых предлагает спасение разного рода.\n\nМы можем возобновить древний завет, связав Импундулу и Бомкази навечно посредством ритуала, в котором переплетаются жизнь и смерть. Или мы можем совершить обряд Ишологу, навсегда разорвав зависимость и превратившись в нечто новое — Мла Вату, свободных, но одиноких."
+ pod1230objectives.228.a: "Обновить завет. Жизнь и смерть - вместе навеки."
+ pod1230objectives.228.b: "Совершить обряд Ишологу. Разорвём цепи."
+
+ ### Observer event
+ pod1230objectives.229.t: "Выбор Импундулу"
+ pod1230objectives.229.desc: "До нас дошли слухи, что линия крови Импундулу приняла ключевое решение относительно своего древнего завета с ведьмами Бомкази. Равновесие между жизнью и смертью меняется."
+ pod1230objectives.229.a: "Интересно..."

@@ -196,7 +196,7 @@
 
  POD_provoke_vatican.21.t: "Преодоление невзгод"
  POD_provoke_vatican.21.desc: "[adversary.GetFirstNameNicknamed] [Select_CString(adversary.IsFemale, 'потерпела', 'потерпел' )] полное поражение. [adversary.GetHerHis|U] вера сломлена, [adversary.GetHerHis] псалмы умолкают.\n\n[Select_CString(ROOT.Char.IsFemale, 'Должна', 'Должен' )] ли я прикончить [adversary.GetHerHis] сейчас, или лучше быстро двигаться дальше?"
- POD_provoke_vatican.21.desc.drain: "\n\nКонечно, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы восполнить своё витэ и решить эту проблему сразу..."
+ POD_provoke_vatican.21.desc.drain: "\n\nКонечно, я [Select_CString(ROOT.Char.IsFemale, 'могла', 'мог' )] бы восполнить своё [Glossary('витэ','game_concept_vitae_desc')] и решить эту проблему сразу..."
  POD_provoke_vatican.21.desc.sanguine: "\n\n[adversary.GetHerHis|U] кровь полностью пропитана верой. Пить её было бы крайне плохой идеей."
  POD_provoke_vatican.21.option.b: "Я выпью всю твою кровь."
 

@@ -2,6 +2,7 @@
  #####################################
  ####### Contracts for Slayers #######
  #####################################
+
  POD_assault_lair_contract: "Напасть на раскрытое логово"
  POD_assault_lair_desc_title: "Представилась возможность..."
  POD_assault_lair_desc: "Мы узнали о местонахождении притаившегося в этих владениях одинокого чудовища. Если мы нанесем быстрый удар, то сможем одолеть его."
@@ -12,9 +13,65 @@
  task_contract_reward_effect_failure_failed_hunt_desc: "#N Чудовище берёт верх над вами:#!"
 
 
+ ####################################
+ ####### Bound Ghoul Missions #######
+ ####################################
+
+ POD_ghoul_mission_kill_hunter_contract: "Убить охотника"
+ POD_ghoul_mission_kill_hunter_desc_title: "Мой решительный слуга,"
+ POD_ghoul_mission_kill_hunter_desc: "[Select_CString(TaskContract.MakeScope.Var('target').Char.IsFemale, 'Охотница, называющая', 'Охотник, называющий' )] себя [TaskContract.MakeScope.Var('target').Char.GetFirstName], рыщет на нашей территории. Разберись с [Select_CString(TaskContract.MakeScope.Var('target').Char.IsFemale, 'ней', 'ним' )], пока [TaskContract.MakeScope.Var('target').Char.GetSheHe] не [Select_CString(TaskContract.MakeScope.Var('target').Char.IsFemale, 'стала', 'стал' )] чем-то большим, чем просто помехой."
+ POD_ghoul_mission_kill_hunter_request: "Эта @ghoul_icon![Concept('bound_ghoul_mission', 'миссия')|E] требует, чтобы вы убили персонажа [TaskContract.MakeScope.Var('target').Char.GetFirstName] любыми доступными способами.\n\n$POD_contract_show_time_remaining$"
+
+ POD_ghoul_mission_cover_up_the_masquerade_contract: "Сокрыть Маскарад"
+ POD_ghoul_mission_cover_up_the_masquerade_desc_title: "Мой благоразумный слуга,"
+ POD_ghoul_mission_cover_up_the_masquerade_desc: "Если мы хотим, чтобы наше общество процветало, мы должны оставаться в тени. Докажи свою изобретательность, сделав так, чтобы скот никогда не узнал о нашем существовании."
+ POD_ghoul_mission_cover_up_the_masquerade_request: "Эта @ghoul_icon![Concept('bound_ghoul_mission', 'миссия')|E] требует, чтобы вы скрыли @masquerade_icon! [Concept('masquerade_exposure', 'раскрытие Маскарада')|E] персонажа [TaskContract.GetEmployer.GetShortUINamePossessive] через [Concept('character_interaction', 'взаимодействие персонажа')|E], выбрав [TaskContract.GetEmployer.GetHerHis].\n\n$POD_contract_show_time_remaining$"
+
+ POD_ghoul_mission_bribe_officials_contract: "Подкупить должностных лиц"
+ POD_ghoul_mission_bribe_officials_desc_title: "Мой находчивый слуга,"
+ POD_ghoul_mission_bribe_officials_desc: "Эти надоедливые магистраты дышат мне в затылок и угрожают провести проверку моих дел. Заставь их смотреть на меня сквозь пальцы."
+ POD_ghoul_mission_bribe_officials_request: "Эта @ghoul_icon![Concept('bound_ghoul_mission', 'миссия')|E] требует от вас заплатить [GetPlayer.MakeScope.ScriptValue('minor_gold_max_value')|0V][gold_i] через [Concept('character_interaction', 'взаимодействие')|E] на персонаже [TaskContract.GetEmployer.GetShortUIName].\n\n$POD_contract_show_time_remaining$"
+
+ POD_ghoul_mission_indoctrinate_plant_contract: "Внушить взгляды"
+ POD_ghoul_mission_indoctrinate_plant_desc_title: "Мой убедительный слуга,"
+ POD_ghoul_mission_indoctrinate_plant_desc: "Информация - бесценный ресурс, не так ли? Найди мне кого-нибудь надёжного, кто мог бы послужить нашему делу в качестве шпиона."
+ POD_ghoul_mission_indoctrinate_plant_request: "Эта @ghoul_icon![Concept('bound_ghoul_mission', 'миссия')|E] требует от вас внушить свои взгляды любому #TOOLTIP:GAME_TRAIT,mortal,[GetNullCharacter] #L смертному#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n\n$POD_contract_show_time_remaining$"
+
+ POD_ghoul_mission_abduct_desirable_mortal_contract: "Похитить нужного смертного"
+ POD_ghoul_mission_abduct_desirable_mortal_desc_title: "Мой коварный слуга,"
+ POD_ghoul_mission_abduct_desirable_mortal_desc: "Недавно моё внимание [Select_CString(TaskContract.MakeScope.Var('target').Char.IsFemale, 'привлекла многообещающая смертная', 'привлек многообещающий смертный' )] по имени [TaskContract.MakeScope.Var('target').Char.GetFirstName]. Приведи [TaskContract.MakeScope.Var('target').Char.GetHerHis] ко мне незаметно. И не задавай лишних вопросов."
+ POD_ghoul_mission_abduct_desirable_mortal_request: "Эта @ghoul_icon![Concept('bound_ghoul_mission', 'миссия')|E] требует, чтобы вы доставили персонажа [TaskContract.MakeScope.Var('target').Char.GetFirstName] к своему двору любыми доступными способами, после чего вы должны отправить [TaskContract.MakeScope.Var('target').Char.GetHerHis] к персонажу [TaskContract.GetEmployer.GetShortUIName] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n\n$POD_contract_show_time_remaining$"
+
+ POD_ghoul_mission_steal_rivals_gold_contract: "Украсть золото у соперника"
+ POD_ghoul_mission_steal_rivals_gold_desc_title: "Мой искусный слуга,"
+ POD_ghoul_mission_steal_rivals_gold_desc: "У нас много врагов. Нужно проявить инициативу и завладеть их богатствами, чтобы убедиться, что они не могут быть использованы против нас."
+ POD_ghoul_mission_steal_rivals_gold_request: "Эта @ghoul_icon![Concept('bound_ghoul_mission', 'миссия')|E] требует от вас отправиться на [Concept('infiltration_mission', 'миссию проникновения')|E] #V $POD_gold_heist_interaction$#! к любому из [Concept('rivals', 'соперников')|E] персонажа [TaskContract.GetEmployer.GetShortUINamePossessive].\n\n$POD_contract_show_time_remaining$"
+
+ POD_ghoul_mission_damage_rivals_image_contract: "Нанести ущерб имиджу соперника"
+ POD_ghoul_mission_damage_rivals_image_desc_title: "Мой коварный слуга,"
+ POD_ghoul_mission_damage_rivals_image_desc: "У нас много врагов. Мы должны преподать им урок. Нанеси превентивный удар и подорви их достоинство, чтобы они потеряли уважение себе подобных."
+ POD_ghoul_mission_damage_rivals_image_request: "Эта @ghoul_icon![Concept('bound_ghoul_mission', 'миссия')|E] требует от вас подорвать [Concept('prestige', 'престиж')|E] любого из [Concept('rivals', 'соперников')|E] персонажа [TaskContract.GetEmployer.GetShortUINamePossessive] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n\n$POD_contract_show_time_remaining$"
+
+ POD_ghoul_mission_slander_rival_contract: "Оклеветать соперника"
+ POD_ghoul_mission_slander_rival_desc_title: "Мой хитрый слуга,"
+ POD_ghoul_mission_slander_rival_desc: "У нас много врагов. Распространи слухи об их недостойной деятельности, и мы уничтожим их, не пошевелив и пальцем."
+ POD_ghoul_mission_slander_rival_request: "Эта @ghoul_icon![Concept('bound_ghoul_mission', 'миссия')|E] требует от вас подорвать [Concept('piety', 'благочестие')|E] любого из [Concept('rivals', 'соперников')|E] персонажа [TaskContract.GetEmployer.GetShortUINamePossessive] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n\n$POD_contract_show_time_remaining$"
+
+ POD_ghoul_mission_give_relative_away_contract: "Выдать родственника"
+ POD_ghoul_mission_give_relative_away_desc_title: "Мой драгоценный слуга,"
+ POD_ghoul_mission_give_relative_away_desc: "Пришло время тебе доказать мне свою абсолютную преданность."
+ POD_ghoul_mission_give_relative_away_request: "Эта @ghoul_icon![Concept('bound_ghoul_mission', 'миссия')|E] требует, чтобы вы выдали одного из своих близких родственников через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Возможно, вы больше никогда его не увидите.\n\n$POD_contract_show_time_remaining$"
+
+ POD_ghoul_mission_expand_domain_contract: "Расширить домен"
+ POD_ghoul_mission_expand_domain_desc_title: "Мой бескомпромиссный слуга,"
+ POD_ghoul_mission_expand_domain_desc: "Я полагаюсь на твои навыки на поле боя. Выступи в поход и одержи победы от моего имени."
+ POD_ghoul_mission_expand_domain_request: "Эта @ghoul_icon![Concept('bound_ghoul_mission', 'миссия')|E] требует, чтобы вы завоевали новую территорию с помощью [Concept('casus_belli', 'казус белли')|E] #V Установить нового правителя#! и передали её персонажу [TaskContract.GetEmployer.GetShortUIName]. В качестве альтернативы, вы можете передать одно из своих [Concept('counties', 'графств')|E] через [Concept('character_interaction', 'взаимодействие персонажа')|E] #V $grant_titles_interaction$#!.\n\n$POD_contract_show_time_remaining$"
+
+
  ##################################
  ####### Scripted Contracts #######
  ##################################
+
  POD_natural_disaster_contract: "Природное бедствие"
  POD_natural_disaster_desc_title: "[TaskContract.MakeScope.Var('disaster_loc').GetFlagName]"
  POD_natural_disaster_desc: "На владение [TaskContract.MakeScope.Var('target_title').Title.GetNameNoTierNoTooltip] надвигается [TaskContract.MakeScope.Var('disaster_type').GetFlagName|l]. Это ещё не поздно предотвратить... или, может быть, сделать ещё хуже?"

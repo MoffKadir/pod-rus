@@ -212,6 +212,8 @@
  house_sybarite_improved_modifier_desc: "Эта вечеринка действительно никогда не закончится."
  house_yoryari_improved_modifier: "Духовный дом Йоряри"
  house_yoryari_improved_modifier_desc: "Новая смесь Востока и Запада возвышается сильнее, чем вместе взятые."
+ house_erk_improved_modifier: "Воодушевлённый дом Эрк"
+ house_erk_improved_modifier_desc: "Тюркские Равнос укрепили свой контроль над родиной своих предков. На этот раз они не откажутся от него."
 
  house_samiel_modifier: "Дом Самиэль"
  house_samiel_modifier_desc: "Ангелам надоело прятаться, отступать или трусить. Настало время войны."
@@ -384,6 +386,8 @@
  house_ennamaru_modifier_desc: "Дети становятся жестокими и садистскими манипуляторами в глазах ничего не подозревающих французских каинитов. Когда они вовлечены, «долго и счастливо« не бывает."
  house_the_third_modifier: "Третья"
  house_the_third_modifier_desc: "Страшитесь Неназванной."
+ house_erk_modifier: "Дом Эрк"
+ house_erk_modifier_desc: "Выкованные в суровой изоляции Эргенекона, Эрк извлекают богатство из своих владений с безжалостной эффективностью. Но их стоический, изолированный характер делает их неуклюжими в социальных ситуациях."
  #house_wankuei_modifier: "Дом Ван Куэй"
  #house_wankuei_modifier_desc: "[Glossary('Голодные мертвецы','game_concept_kuei_jin_desc')] Китая - хозяева огромной империи, но они страдают от ряда серьезных трудностей, которыми могут воспользоваться западные [Glossary('каиниты','game_concept_cainite_desc')]."
  house_hollow_reeds_modifier: "Дом Полый Тростник"
@@ -675,11 +679,11 @@
  house_dankovsky_modifier_desc: "Чрезмерно осторожные некроманты степей были обречены на вечное недоверие к Семье, после их насильственных объятий за ее пределами."
 
  dynn_horus_modifier: "Шемсу-Геру"
- dynn_horus_modifier_desc: "Шемсу-Геру были первой династией, истинными Бессмертными, созданными богами и для богов, чтобы вести священную войну против Апофиса."
+ dynn_horus_modifier_desc: "Шемсу-Геру были первой династией, истинными Бессмертными, созданными богами и для богов, чтобы вести священную войну против [Glossary('Апофиса', 'glossary_wyrm_tt')]."
  dynn_ishmaelites_modifier: "Ишмаэлит"
  dynn_ishmaelites_modifier_desc: "Отступники-ишмаэлиты, вторая династия, порожденная стремлением к свободе и самоопределению."
  dynn_apepnu_modifier: "Апепну"
- dynn_apepnu_modifier_desc: "Третья династия - проклятые Апепну, слуги Апофиса, воскрешенные проклятым обрядом врага Сета."
+ dynn_apepnu_modifier_desc: "Третья династия - проклятые Апепну, слуги [Glossary('Апофиса', 'glossary_wyrm_tt')], воскрешенные проклятым обрядом врага Сета."
  dynn_cabiri_modifier: "Кабири"
  dynn_cabiri_modifier_desc: "Ублюдочные похитители бессмертия, четвертая династия Кабири, ненавидимая и завидуемая в равной степени."
  dynn_wufeng_modifier: "У Фэн"
@@ -735,3 +739,31 @@
  POD_unity_impassive_tax_modifier_desc: "Представители этого дома обладают более эффективной администрацией."
 
  POD_aspiration_legacy_5_modifier: "Развивающаяся кровь"
+
+ ### House Modifiers
+ ### NOTE: dynn_impundulu_modifier and _desc are defined by PoD — do not duplicate here
+
+# unused
+#  dynn_impundulu_improved_modifier: "Impundulu — Keepers of the Passage"
+#  dynn_impundulu_improved_modifier_desc: "Having performed the sacred funeral rites, the Impundulu have strengthened their bond with the spirit world. The burden of their covenant weighs less heavily."
+
+ ### Objective Reward Modifiers
+ covenant_of_life_and_death_modifier: "Завет жизни и смерти"
+ covenant_of_life_and_death_modifier_desc: "С помощью древних ритуалов некромантии Импундулу возобновили свой союз с линией Бомкази. Связь между живой ведьмой и неживым некромантом крепка как никогда."
+
+ ishologu_modifier: "Ишологу"
+ ishologu_modifier_desc: "Нарушив древний договор с помощью обряда Ишологу, этот вампир больше не связан с ведьмами Бомкази. Он свободен от ограничений на питание, но лишён магии жизни, которая когда-то поддерживала его."
+
+ ### Opinion Modifiers
+ fellow_scholar_of_death_modifier: "Коллега-исследователь смерти"
+
+ ### Event Modifiers
+ memory_of_bomkazi_modifier: "Память о Бомкази"
+ memory_of_bomkazi_modifier_desc: "Память о Бомкази, первой жене-ведьме, жива до сих пор. Её жертва отзывается эхом в веках."
+
+ withering_blood_urgency_modifier: "Иссушающая кровь"
+ withering_blood_urgency_modifier_desc: "Род Бомкази слабеет с каждым поколением. Необходимо что-то предпринять, прежде чем смертные ведьмы исчезнут окончательно."
+
+ ### Trigger Tooltips
+ POD_impundulu_has_bomkazi_courtier_tt: "При вашем дворе есть [GetTrait('bomkazi_witch').GetName(GetNullCharacter)|l]"
+ POD_impundulu_has_completed_withering_blood_tt: "Завершена цель «Исцелить иссушающую кровь»"

@@ -81,6 +81,14 @@
  POD_offer_execute_potion_effect_interaction_desc: "Предложить зелье"
  POD_offer_execute_potion_effect_interaction_desc_options_heading: "Какое изделие мне предложить?"
 
+ POD_use_artifact_interaction: "Использовать артефакт"
+ POD_use_artifact_interaction_desc: "Использовать [Concept('artifact', 'артефакт')|E] на персонаже [recipient.GetShortUIName]."
+ POD_use_artifact_interaction_options_heading: "Какой [Concept('artifact', 'артефакт')|E] мне использовать?"
+ POD_use_artifact_interaction_has_artifact_tt: "У вас нет [Concept('artifacts', 'артефактов')|E], которые #bold можно использовать#!"
+ use_artifact_arrows_of_the_sun_tooltip: "Количество нанесённего @health_track_aggravated_damage_icon! зависит от @artifact_power_icon![Concept('artifact_power', 'силы артефакта')|E] и снижается от показателя [Concept('prowess', 'доблести')|E] цели, дисциплины [GetTrait('fortitude').GetName(GetPlayer)] и [Glossary('дхармы','podgloss.dharma')]."
+ use_artifact_thunder_dart_tooltip: "За каждые 20 ед. @artifact_power_icon![Concept('artifact_power', 'силы артефакта')|E] наносится больше урона, вплоть до 100"
+
+
  POD_store_energy_interaction: "Собрать энергию в сосуд"
  POD_store_energy_interaction_desc: "Собрать энергию в ваш сосуд."
  POD_store_energy_interaction_options_heading: "Сколько вы хотите собрать?"

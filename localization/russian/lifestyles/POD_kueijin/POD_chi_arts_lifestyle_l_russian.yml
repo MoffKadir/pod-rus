@@ -52,7 +52,7 @@
  chi_arts_corrupting_yin_soul_perk_name: "Осквернение души Инь"
  chi_arts_taming_yang_soul_perk_name: "Приручение души Ян"
  CHI_ARTS_CORRUPTING_YIN_SOUL_PERK_EFFECT: "#flavor Совершенствующийся может использовать местных духов инь для помощи в своих происках.#!"
- CHI_ARTS_TAMING_YANG_SOUL_PERK_EFFECT: "Вы можете использовать это для повышения максимума друзей до 7 (вместо 5).\n#flavor Совершенствующийся может приручить местных духов ян, расширяя свою душу ян, что позволяет поддерживать больше отношений.#!"
+ CHI_ARTS_TAMING_YANG_SOUL_PERK_EFFECT: "#flavor Совершенствующийся может приручить местных духов ян, расширяя свою душу ян, что позволяет поддерживать больше отношений.#!"
 
  chi_arts_authority_over_yin_soul_perk_name: "Власть над душами Инь"
  chi_arts_authority_over_yang_soul_perk_name: "Власть над душами Ян"
@@ -151,7 +151,7 @@
 
  chi_arts_cursing_the_star_perk_name: "Проклятие звёзд"
  chi_arts_read_the_stars_perk_name: "Чтение звёзд"
- CHI_ARTS_CURSING_THE_STAR_PERK_EFFECT: "Вы можете нанести [EmptyScope.ScriptValue('POD_wound_base_damage')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Совершенствующийся может проклясть цель, чтобы ей не везло, что приведёт к какому-нибудь несчастному случаю.#!"
+ CHI_ARTS_CURSING_THE_STAR_PERK_EFFECT: "Вы можете нанести [EmptyScope.ScriptValue('POD_base_wound_damage')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Совершенствующийся может проклясть цель, чтобы ей не везло, что приведёт к какому-нибудь несчастному случаю.#!"
  CHI_ARTS_READ_THE_STARS_PERK_EFFECT: "#flavor Совершенствующийся может читать по звёздам, в какой-то степени предсказывая будущее.#!"
 
  chi_arts_reweaving_the_stars_perk_name: "Переплетение звёзд"
@@ -159,7 +159,7 @@
 
  chi_arts_celestial_curse_perk_name: "Проклятие небес"
  chi_arts_read_the_twelve_perk_name: "Чтение двенадцати"
- CHI_ARTS_CELESTIAL_CURSE_PERK_EFFECT: "Улучшает достоинство «[GetPerk('chi_arts_cursing_the_star_perk').GetName(GetPlayer)]», нанося [Multiply_CFixedPoint(EmptyScope.ScriptValue('POD_wound_base_damage'),'(CFixedPoint)2')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#!.\n#flavor Совершенствующийся может наложить небесное проклятие на весь гороскоп цели.#!"
+ CHI_ARTS_CELESTIAL_CURSE_PERK_EFFECT: "Улучшает достоинство «[GetPerk('chi_arts_cursing_the_star_perk').GetName(GetPlayer)]», нанося [Multiply_CFixedPoint(EmptyScope.ScriptValue('POD_base_wound_damage'),'(CFixedPoint)2')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#!.\n#flavor Совершенствующийся может наложить небесное проклятие на весь гороскоп цели.#!"
  CHI_ARTS_READ_THE_TWELVE_PERK_EFFECT: "#flavor Совершенствующийся может с большой точностью предсказать будущее своей цели, используя для гадания весь её гороскоп целиком.#!"
 
  chi_arts_substitution_of_the_twelve_perk_name: "Перерождение"
