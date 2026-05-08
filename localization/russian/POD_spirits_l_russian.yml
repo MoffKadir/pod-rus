@@ -7,12 +7,12 @@
  POD_spawn_hostile_spirit_effect_tooltip: "Появится #N враждебный#! [GetTrait('spirit').GetName( GetNullCharacter )|l]"
  POD_spawn_gaian_spirit_effect_tooltip: "Появится [GetTrait('spirit').GetName( GetNullCharacter )|l] #V Геи#!"
  POD_spawn_ancestor_spirit_effect_tooltip: "Появится #V #TOOLTIP:game_concept_ancestor_spirit_desc #E дух предка#!#!#!"
- POD_spawn_bane_spirit_effect_tooltip: "A #N Bane#! [GetTrait('spirit').GetName( GetNullCharacter )] will appear"
- POD_spawn_elemental_bane_spirit_effect_tooltip: "An #N Elemental Bane#! [GetTrait('spirit').GetName( GetNullCharacter )] will appear"
+ POD_spawn_bane_spirit_effect_tooltip: "Появится [GetTrait('spirit').GetName( GetNullCharacter )|l]-#N бэйн#!"
+ POD_spawn_elemental_bane_spirit_effect_tooltip: "Появится [GetTrait('spirit').GetName( GetNullCharacter )|l]-#N элементальный бэйн#!"
 
 
  spirit_relative_became_ancestor: "[ancestor_spirit.GetName] [Select_CString(ancestor_spirit.IsFemale, 'умерла и стала', 'умер и стал' )] #TOOLTIP:game_concept_ancestor_spirit_desc #E духом предка#!#!."
- POD_is_ancestor_spirit_trigger_tooltip: "Is #bold not#! an [ancestor_spirit|E]"
+ POD_is_ancestor_spirit_trigger_tooltip: "#bold Не#! является [Concept('ancestor_spirit', 'духом предка')|E]"
 
 
 
@@ -27,9 +27,9 @@
  language_wisdoms_hymn_name: "Гимн мудрости"
 
  #Banes
- language_wyrmspeak_name: "Wyrmspeak"
- language_corrupting_voice_name: "Corrupting Voice"
- language_tainted_speech_name: "Tainted Speech"
+ language_wyrmspeak_name: "Наречие Вирма"
+ language_corrupting_voice_name: "Развращающий голос"
+ language_tainted_speech_name: "Осквернённое наречие"
 
  #Ancestors
  language_ancestor_werewolf_name: "Первобытный"
@@ -48,17 +48,17 @@
  learn_spirit_language_complete: "Вы выучили #TOOLTIP:game_concept_spirit_language_desc #E духовный язык#!#! персонажа [target.GetShortUINamePossessiveNoTooltip]"
 
  SPIRIT_LANGUAGE_REASON: "[spirit_language|E]: $VALUE|+=0$"
- SPIRIT_CORRUPTING_VOICE_REASON: "[target.GetName] speaks Corrupting Voice: $VALUE|+=0$"
- SPIRIT_TAINTED_SPEECH_REASON: "[target.GetName] speaks Tainted Speech: $VALUE|+=0$"
+ SPIRIT_CORRUPTING_VOICE_REASON: "[target.GetName] говорит развращающим голосом: $VALUE|+=0$"
+ SPIRIT_TAINTED_SPEECH_REASON: "[target.GetName] говорит на осквернённом наречии: $VALUE|+=0$"
 
 
- POD_spirit_wyrm_possession_effect_tooltip: "Gain #TOOLTIP:POD_spirit_wyrm_possession_effect_tooltip2 #V;L [spirit.MakeScope.ScriptValue('POD_spirit_wyrm_possession_power')]#!#! [possessedpower_lifestyle|E] [perk|E] points"
- POD_spirit_wyrm_possession_effect_tooltip2: "The amount of [perk|E] points obtained from #ONCLICK:FAITH,wyrmbound #TOOLTIP:FAITH,wyrmbound $Bane|L$#!#! Spirits depends on the following:\n$BULLET_WITH_TAB$Spirit Rank: #P +1#! per Rank\n$BULLET_WITH_TAB$Bane speaks Corrupting Voice: #P +2#!\n$BULLET_WITH_TAB$Is a Seeder Bane: additional #P +1#! perk Spirit Rank\n$BULLET_WITH_TAB$Bane speaks Tainted Speech: #P +4#!\n$BULLET_WITH_TAB$[faith|E] [core_tenets|E]: #P +1/+2#!"
+ POD_spirit_wyrm_possession_effect_tooltip: "Получит #TOOLTIP:POD_spirit_wyrm_possession_effect_tooltip2 #V;L [spirit.MakeScope.ScriptValue('POD_spirit_wyrm_possession_power')]#!#! оч. [Concept('perk', 'достоинств')|E] [Concept('possessedpower_lifestyle', 'пути способностей одержимости')|E]"
+ POD_spirit_wyrm_possession_effect_tooltip2: "Количество очков [Concept('perk', 'достоинств')|E], полученных от духа-#ONCLICK:FAITH,wyrmbound #TOOLTIP:FAITH,wyrmbound бэйна#!#!, зависит от следующего:\n$BULLET_WITH_TAB$Ранг духа: #P +1#! за ранг\n$BULLET_WITH_TAB$Бэйн говорит развращающим голосом: #P +2#!\n$BULLET_WITH_TAB$Бэйн-сеятель: дополнительно #P +1#! за ранг духа\n$BULLET_WITH_TAB$Бэйн говорит на осквернённом наречии: #P +4#!\n$BULLET_WITH_TAB$[core_tenets|E] [Concept('faith', 'конфессии')|E]: #P +1/+2#!"
 
- POD_spirit_possession_rank_desc: "Spirit Rank"
- POD_spirit_possession_piety_level_desc: "Your [piety_level|E]"
- POD_spirit_possession_corrupting_voice_desc: "[recipient.GetName] speaks Corrupting Voice"
- POD_spirit_possession_tainted_speech_desc: "[recipient.GetName] speaks Tainted Speech"
+ POD_spirit_possession_rank_desc: "Ранг духа"
+ POD_spirit_possession_piety_level_desc: "Ваш [Concept('piety_level', 'уровень благочестия')|E]"
+ POD_spirit_possession_corrupting_voice_desc: "[recipient.GetName] говорит развращающим голосом"
+ POD_spirit_possession_tainted_speech_desc: "[recipient.GetName] говорит на осквернённом наречии"
 
 
  spirit_short_chiminage_modifier: "Короткий шиминаж"
@@ -66,9 +66,9 @@
  spirit_long_chiminage_modifier: "Долгий шиминаж"
 
 
- spirit_very_weak_possession_modifier: "Pathetic Possession"
- spirit_weak_possession_modifier: "Weak Possession"
- spirit_strong_possession_modifier: "Powerful Possession"
+ spirit_very_weak_possession_modifier: "Жалкая одержимость"
+ spirit_weak_possession_modifier: "Слабая одержимость"
+ spirit_strong_possession_modifier: "Сильная одержимость"
 
 
  spirit_rabbit_pact_modifier: "Договор: Кролик"
@@ -93,26 +93,26 @@
  spirit_tree_pact_modifier: "Договор: Дерево"
 
 
- spirit_innocent_pact_modifier: "Pact: Innocent"
- spirit_drattosi_pact_modifier: "Pact: Drattosi"
- spirit_ooralath_pact_modifier: "Pact: Ooralath"
- spirit_nocturna_pact_modifier: "Pact: Nocturna"
- spirit_raptor_pact_modifier: "Pact: Nocturna"
- spirit_harpy_pact_modifier: "Pact: Harpy"
- spirit_rotwalker_pact_modifier: "Pact: Rot Walker"
- spirit_seeder_pact_modifier: "Pact: Seeder"
- spirit_seeder_pact_modifier_desc: "Increases [perk|E] points obtained from [possession|E]"
- spirit_dreammaker_pact_modifier: "Pact: Dream Maker"
- spirit_nihilach_pact_modifier: "Pact: Nihilach"
- spirit_shatteredhart_pact_modifier: "Pact: Shattered Hart"
- spirit_smog_pact_modifier: "Pact: Smog"
- spirit_smog_pact_modifier_desc: "Can recruit [GetMaA('hoglings').GetName] at maximum Pact strength"
- spirit_balefire_pact_modifier: "Pact: Balefire"
- spirit_balefire_pact_modifier_desc: "Can recruit [GetMaA('furmlings').GetName] at maximum Pact strength"
- spirit_sludge_pact_modifier: "Pact: Sludge"
- spirit_sludge_pact_modifier_desc: "Can recruit [GetMaA('hrugglings').GetName] at maximum Pact strength"
- spirit_toxin_pact_modifier: "Pact: Toxin"
- spirit_toxin_pact_modifier_desc: "Can recruit [GetMaA('wakshaani').GetName] at maximum Pact strength"
+ spirit_innocent_pact_modifier: "Договор: Невинные"
+ spirit_drattosi_pact_modifier: "Договор: Драттоси"
+ spirit_ooralath_pact_modifier: "Договор: Оралат"
+ spirit_nocturna_pact_modifier: "Договор: Ноктюрна"
+ spirit_raptor_pact_modifier: "Договор: Раптор"
+ spirit_harpy_pact_modifier: "Договор: Гарпия"
+ spirit_rotwalker_pact_modifier: "Договор: Гнилоход"
+ spirit_seeder_pact_modifier: "Договор: Сеятель"
+ spirit_seeder_pact_modifier_desc: "Повышает количество очков [Concept('perk', 'достоинств')|E], полученных от [Concept('possession', 'одержимости')|E]"
+ spirit_dreammaker_pact_modifier: "Договор: Творец снов"
+ spirit_nihilach_pact_modifier: "Договор: Нигилах"
+ spirit_shatteredhart_pact_modifier: "Договор: Сокрушённый олень"
+ spirit_smog_pact_modifier: "Договор: Туман"
+ spirit_smog_pact_modifier_desc: "При максимальной силе договора доступны профессионалы - [GetMaA('hoglings').GetName]"
+ spirit_balefire_pact_modifier: "Договор: Жертвенное пламя"
+ spirit_balefire_pact_modifier_desc: "При максимальной силе договора доступны профессионалы - [GetMaA('furmlings').GetName]"
+ spirit_sludge_pact_modifier: "Договор: Ил"
+ spirit_sludge_pact_modifier_desc: "При максимальной силе договора доступны профессионалы - [GetMaA('hrugglings').GetName]"
+ spirit_toxin_pact_modifier: "Договор: Токсин"
+ spirit_toxin_pact_modifier_desc: "При максимальной силе договора доступны профессионалы - [GetMaA('wakshaani').GetName]"
 
  spirit_werewolf_pact_modifier: "Договор: Оборотень"
  spirit_bastet_pact_modifier: "Договор: Бастет"

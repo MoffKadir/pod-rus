@@ -559,9 +559,9 @@
  POD_chargen.610.option.cc: "Гаргульи-кинцуги владеют Стремительностью, Присутствием и Доминированием."
  POD_chargen.610.option.cd: "Гаргульи-рогата владеют Стойкостью, Превращением и Могуществом."
  POD_chargen.610.option.ce: "Гаргульи-тотай владеют Прорицанием, Анимализмом и Химерией."
- POD_chargen.610.option.cf: "Impundulu have Necromancy, Fortitude and Presence."
- POD_chargen.610.option.cg: "Erk have Protean, Potence and Chimerstry."
- POD_chargen.610.option.ch: "Children of Ennamaru have Auspex, Dominate and Presence."
+ POD_chargen.610.option.cf: "Импундулу владеют Некромантией, Стойкостью и Присутствием."
+ POD_chargen.610.option.cg: "Эрк владеют Превращением, Могуществом и Химерией."
+ POD_chargen.610.option.ch: "Дети Эннамару владеют Прорицанием, Доминированием и Присутствием."
 
  #POD_chargen.610.option.zz: "You reconsider which house to join."
 
@@ -907,17 +907,17 @@
  POD_chargen.1160.option.i: "Гиганты." #Giant
  POD_chargen.1160.option.j: "Альбиносы." #Albino
 
- POD_chargen.1200.t: "Ghouls"
- POD_chargen.1200.desc: "[ghouls|EU] are mortals who drank vampiric [Glossary('витэ','game_concept_vitae_desc')]. The blood acts like a supernatural drug to the living, granting strength and everlasting life, but also making them emotionally dependent on their \"donor\". Vampires often mistreat their Ghouls, knowing that they hold an irresistible bargaining chip in this dynamic.\n\nIt is possible to feed on Vampires without becoming bound to them, though needless to say, no [Glossary('Каинит','game_concept_cainite_desc')] is going to part with their blood willingly."
- POD_chargen.1200.a: "I want to bind myself to a new master."
- POD_chargen.1200.a.tt: "For the next week, you'll be able to use the #V $POD_beg_for_vitae_interaction$#! [character_interaction|E] for free. Target any $POD_splat_vampire$ to become their [bound_ghoul|E]."
- POD_chargen.1200.a.tt2: "[bound_ghouls|E] have to complete [bound_ghoul_missions_with_icon|E] for their [Glossary('Domitor','game_concept_domitor_desc')] on a regular basis. Loyal servants can eventually earn the [Glossary('Объятия','game_concept_Embrace_desc')] to become a $POD_splat_vampire$ themselves. It's also possible, though difficult, to break free from your master to become a [masterless_ghoul|E] later."
- POD_chargen.1200.b: "I will be my own master."
- POD_chargen.1200.b.tt: "You become a [masterless_ghoul|E]."
- POD_chargen.1200.b.tt2: "[masterless_ghouls|EU] are not beholden to a [Glossary('Domitor','game_concept_domitor_desc')], but constantly struggle to feed their [ghoul_vitae_dependency|E]. Failure to feed will result in them losing their powers. Of course, if you are truly desperate, you can always beg someone to become a [bound_ghoul|E] after the fact."
- POD_chargen.1200.c: "I'll dedicate myself to hunting the bloodsuckers."
- POD_chargen.1200.c.tt: "You join the [GetFaithByKey('calomenasforsaken').GetName] and become a $POD_splat_hunter$ of $POD_splat_vampire_plural$."
- POD_chargen.1200.d: "Maybe I'm not a ghoul..."
+ POD_chargen.1200.t: "Гули"
+ POD_chargen.1200.desc: "[Concept('ghouls', 'Гули')|E] - это смертные, которые выпили [Glossary('витэ','game_concept_vitae_desc')] вампира. Кровь действует на живых как сверхъестественный наркотик, дарующий силу и вечную жизнь, но также делающий их эмоционально зависимыми от своего «донора». Вампиры часто плохо обращаются со своими гулями, зная, что в их руках неотразимый козырь в этой борьбе.\n\nОт вампиров можно питаться, не привязываясь к ним, хотя, разумеется, ни один [Glossary('каинит','game_concept_cainite_desc')] не расстанется со своей кровью добровольно."
+ POD_chargen.1200.a: "Я хочу связать себя с новым хозяином."
+ POD_chargen.1200.a.tt: "В течение следующей недели вы сможете бесплатно использовать [Concept('character_interaction', 'взаимодействие персонажа')|E] #V $POD_beg_for_vitae_interaction$#!. Выберите любого #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L вампира#!#!, чтобы стать его [Concept('bound_ghoul', 'связанным гулем')|E]."
+ POD_chargen.1200.a.tt2: "[Concept('bound_ghouls', 'Связанные гули')|E] должны регулярно выполнять @ghoul_icon![Concept('bound_ghoul_missions', 'миссии')|E] своего [Glossary('домитора','game_concept_domitor_desc')]. Со временем верные слуги могут заслужить [Glossary('объятия','game_concept_Embrace_desc')], чтобы самим стать #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L вампирами#!#!. Также возможно, хотя и сложно, освободиться от своего хозяина, чтобы позже стать [Concept('masterless_ghoul', 'гулем без хозяина')|E]."
+ POD_chargen.1200.b: "Я буду [Select_CString(ROOT.Char.IsFemale, 'сама', 'сам' )] себе [Select_CString(ROOT.Char.IsFemale, 'хозяйка', 'хозяин' )]."
+ POD_chargen.1200.b.tt: "Вы становитесь [Concept('masterless_ghoul', 'гулем без хозяина')|E]."
+ POD_chargen.1200.b.tt2: "[Concept('masterless_ghouls', 'Гули без хозяев')|E] не связаны с [Glossary('домитором','game_concept_domitor_desc')], но постоянно борются за то, чтобы утолить свою [Concept('ghoul_vitae_dependency', 'зависимость от витэ')|E]. Неудача в утолении голода приведёт к потере ими своих сил. Конечно, если вы действительно в отчаянии, вы всегда можете попросить кого-нибудь сделать вас [Concept('bound_ghoul', 'связанным гулем')|E]."
+ POD_chargen.1200.c: "Я посвящу себя охоте на кровососов."
+ POD_chargen.1200.c.tt: "Вы присоединитесь к фракции [GetFaithByKey('calomenasforsaken').GetAdjective] и станете #TOOLTIP:GAME_TRAIT,supehunter,[GetNullCharacter] #L охотником#!#! на #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L вампиров#!#!."
+ POD_chargen.1200.d: "Возможно, я не являюсь гулем..."
 
  POD_chargen.1300.t: "Ревенанты"
  POD_chargen.1300.desc: "Кровавые рабы пили кровь своих хозяев-вампиров, и эти гули переняли часть силы сородичей. В редких случаях некоторые из их детей рождались с кровью вампира в жилах. Овладев кровью, они становятся более могущественными, чем их родители. Обычно их называют [Glossary('ревенантами','game_concept_revenant_desc')], а потомков #TOOLTIP:game_concept_ghoul_desc #E гулей#!#! [Glossary('клана','game_concept_Clan_desc')] Цимисхи называют «Задруга». Из какого рода [Glossary('ревенантов','game_concept_revenant_desc')] вы происходите?"
@@ -1175,26 +1175,26 @@
 
 
 
- POD_chargen.2630.t: "Stream"
- POD_chargen.2630.desc: "The Mokolé do not have tribes, as do several of their younger siblings among the [Glossary('Фера', 'glossary_fera_tt')]. Their Mnesis has preserved a degree of unity among the isolated clutches.\n\nThe four streams aren't enemies, but they have different interests; they aren't allies, but have much in common. Each is a collection of Mnesis lineages organized in a geographic area with its local Gifts and rites; each has a different approach to the problems the Mokolé face."
- POD_chargen.2630.option.e: "Maybe I'm not a Mokolé"
+ POD_chargen.2630.t: "Течение"
+ POD_chargen.2630.desc: "У моколе нет племён, в отличие от некоторых их младших братьев и сестёр из [Glossary('фера', 'glossary_fera_tt')]. Их Мнезис сохранил определённую степень единства среди изолированных кладок.\n\nЧетыре течения не являются врагами, но у них разные интересы; они не союзники, но у них много общего. Каждый из них представляет собой коллекцию родословных Мнезиса, организованных в определённой географической зоне со своими местными дарами и обрядами; у каждого свой подход к проблемам, с которыми сталкиваются моколе."
+ POD_chargen.2630.option.e: "Возможно, я не моколе."
 
- POD_chargen.2631.t: "Breed"
- POD_chargen.2631.desc: "The Mokolé have two Breeds, representing what they were before the First Change: Homid (human-born) and Suchid (lizard-born)."
+ POD_chargen.2631.t: "Порода"
+ POD_chargen.2631.desc: "У моколе есть две породы, представляющие то, кем они были до Первого изменения: Хомид (рождённые людьми) и Сухид (рождённые ящерами)."
 
- POD_chargen.2632.t: "Solar Auspice"
- POD_chargen.2632.desc: "The Mokolé use Solar Auspices, these auspices however differ depending on the Stream. The Mokolé-mbembe and Gumagan use the traditional seven Solar auspices that follow the position or condition of the sun at the time of birth.\nThe Makara use four Seasonal Auspices that also serve as a sort of internal caste system. This caste system is completely incomprehensible to outsiders.\nThe Zhong Lung also use four Seasonal Wind Auspices. Each of these corresponds to a season, a color, and a wind direction.\nDespite their different names and methods, all Mokolé agree that they are in essence all Solar Auspices and their power is derived from the sun."
+ POD_chargen.2632.t: "Солнечное покровительство"
+ POD_chargen.2632.desc: "Моколе используют солнечные покровительства, однако оно различается в зависимости от течения. Моколе-мбембе и Гумаган используют традиционные семь солнечных покровительств, которые соответствуют положению солнца на момент рождения.\nМакара используют четыре покровительства времён года, которые также служат своего рода внутренней кастовой системой. Эта кастовая система совершенно непонятна посторонним.\nЧжун-лунь также использует четыре покровительства ветра времён года. Каждое из них соответствует времени года, цвету и направлению ветра.\nНесмотря на их разные названия и методы, все моколе сходятся во мнении, что, по сути, все они являются солнечными покровителями и их сила исходит от солнца."
 
- POD_chargen.2633.t: "Varna"
- POD_chargen.2633.desc: "The Suchid form is the reptilian form of the Mokolé. Each Stream contains specific forms called Varna which are most commonly associated with that stream. It is typically that of a crocodile, alligator, gila monster, or similar large reptile. Because of the vastly different sizes, body shapes, and characteristics of these animals, each has a different use."
- POD_chargen.2633.option.a: "Champsa"
- POD_chargen.2633.option.b: "Karna"
- POD_chargen.2633.option.c: "Ora"
- POD_chargen.2633.option.d: "Gharial"
- POD_chargen.2633.option.e: "Makara"
- POD_chargen.2633.option.f: "Naja"
- POD_chargen.2633.option.g: "Lung"
- POD_chargen.2633.option.h: "Suchus"
+ POD_chargen.2633.t: "Варна"
+ POD_chargen.2633.desc: "Сухид - это рептильная форма моколе. У каждого течения есть особые формы, называемые варнами, которые чаще всего ассоциируются с этим течением. Обычно это крокодилы, аллигаторы, гила-монстры или подобные крупные рептилии. Из-за совершенно разных размеров, форм тела и характеристик этих животных, каждое из них используется по-разному."
+ POD_chargen.2633.option.a: "Чампса."
+ POD_chargen.2633.option.b: "Карна."
+ POD_chargen.2633.option.c: "Ора."
+ POD_chargen.2633.option.d: "Гариал."
+ POD_chargen.2633.option.e: "Макара."
+ POD_chargen.2633.option.f: "Найя."
+ POD_chargen.2633.option.g: "Лунь."
+ POD_chargen.2633.option.h: "Сухус."
 
 
 
