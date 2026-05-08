@@ -2032,8 +2032,10 @@
  POD_cannot_remove_witch: "#N Как бы вы ни старались, пятно #TOOLTIP:GAME_TRAIT,witch,[GetNullCharacter] #L инфернализма#!#! на вашей душе никогда не исчезнет.#!"
  POD_infernalist_lost_true_faith: "Адская скверна подтачивает вашу [Glossary('веру','game_concept_true_faith_desc')]"
 
- POD_bind_demon_effect: "Вы свяжете персонажа [demon.GetFirstName], получив [SCOPE.GetValue('perk_points_gained')|0V] оч. [Concept('perk', 'достоинств')|E] [Concept('investiture_lifestyle', 'пути инвеституры')|E] и официально встав на тропу [Concept('diabolism', 'диаболизма')|E]"
+ POD_bind_demon_effect: "Вы заточите персонажа [demon.GetFirstName] в артефакт [artifact.Custom('ColorizedArtifactName')], получив [SCOPE.GetValue('perk_points_gained')|0V] оч. [Concept('perk', 'достоинств')|E] [Concept('investiture_lifestyle', 'пути инвеституры')|E] и официально встав на тропу [Concept('diabolism', 'диаболизма')|E]"
+ POD_refund_investiture_effect: "Ваши [Concept('perks', 'достоинства')|E] [Concept('investiture_lifestyle', 'пути инвеституры')|E] возмещены"
  POD_demon_sabotage: "[demonic_sabotage|E]"
+ POD_bound_demon_died: "Связанный демон был уничтожен"
 
  POD_create_pact_effect: "\n#font:TitleFont;size:18;glow_color:{0.5,0,0,1} Договор с персонажем [TARGET_CHARACTER.GetFirstName] вписан в вашу душу#!"
  POD_create_pact_effect_obligation: "[demonic_pact_obligation|E]: [Localize(Concatenate('POD_obligation_', SCOPE.GetFlagName('obligation_flag')))]"

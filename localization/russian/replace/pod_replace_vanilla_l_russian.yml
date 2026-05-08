@@ -112,6 +112,8 @@
  warhorse.1101.b: "Было бы преступлением не насладиться такой прекрасной ночью!"
  bp1_yearly.7100.desc: "Всего минуту назад я [Select_CString(ROOT.Char.IsFemale, 'наслаждалась', 'наслаждался' )] приятной прогулкой по владению [owned_county.GetName], но вот я уже в дерьме и в грязи. Стоило стряхнуть с [ROOT.Char.Custom('EyeEyes')], экскременты, как я без труда нахожу виновника.\n\n«[potential_nemesis.GetTitledFirstName] передает привет!» — кричит из окна крестьянин, а затем поспешно убегает.\n\nЯ безуспешно пытаюсь отмыть особо ценный мех в ближайшем ручье, но уже ясно, что спасению он не подлежит."
 
+ # Disabled accolades
+ LOCKED_ACCOLADE_SLOT_INFO: "Акколады отключены в «[princes_of_darkness|E]»"
  #Accolade succession is disabled but scripted in UI
  find_suitable_accolade_successor_interaction_desc: "Ваш персонаж не может искать преемника акколады автоматически."
 

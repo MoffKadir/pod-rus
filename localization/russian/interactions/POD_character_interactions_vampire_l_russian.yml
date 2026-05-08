@@ -1159,6 +1159,7 @@
  POD_fleshcraft_interaction_requirement: "[recipient.GetName] [Select_CString(recipient.IsFemale, 'должна', 'должен' )] быть [Concept('prisoner', Select_CString(recipient.IsFemale, 'вашей узницей', 'вашим узником' ))|E] либо [Concept('bound_ghoul', 'связанным гулем')|E]"
  POD_fleshcraft_interaction_face_option: "Изменить внешний вид"
  POD_fleshcraft_interaction_revert_face_option: "Вернуть внешний вид"
+ POD_fleshcraft_interaction_toggle_azhi_dahaka_option: "Визуальные эффекты Ажи Дахаки"
  POD_fleshcraft_interaction_immortal_age_option: "Изваять молодой или старый внешний вид"
  POD_fleshcraft_interaction_physical_trait_option: "Изменить физические свойства"
  POD_fleshcraft_interaction_physical_trait_option_req: "Вы должны изучить хотя бы одно [Concept('trait', 'свойство')|E] через [Concept('character_interaction', 'взаимодействие персонажа')|E] «$POD_study_anatomy_interaction$»."

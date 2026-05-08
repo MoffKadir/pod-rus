@@ -18,7 +18,12 @@
  POD_summon_demon_demonology_interaction_success: "Призыв прошёл успешно!"
 
  POD_bind_demon_interaction: "Связать демона"
- POD_bind_demon_interaction_desc: "Связать персонажа [recipient.GetFirstName] силой [recipient.GetHerHis] [Glossary('истинного имени','podgloss.truename')]."
+ POD_bind_demon_interaction_desc: "Связать персонажа [recipient.GetFirstName] с [Concept('artifact', 'артефактом')|E] силой [recipient.GetHerHis] [Glossary('истинного имени','podgloss.truename')]."
+ POD_bind_demon_interaction_no_artifact: "У вас нет артефакта, в который можно вселиться"
+ POD_bind_demon_interaction_already_bound: "[recipient.GetShortUIName|U] уже [Select_CString(recipient.IsFemale, 'связана', 'связан' )] с артефактом [recipient.MakeScope.Var('bound_demon_artifact').Artifact.Custom('ColorizedArtifactName')], который не принадлежит вам"
+ POD_bind_demon_interaction_invalid_artifact: "В этот артефакт нельзя вселиться"
+ POD_bind_demon_interaction_insufficient_artifact: "У вас должен быть [Localize(SCOPE.GetFlagName('saved_tooltip'))] артефакт, чтобы удержать персонажа [recipient.GetShortUIName]"
+ POD_bind_demon_interaction_already_bound_wrong_artifact: "Это не [recipient.MakeScope.Var('bound_demon_artifact').Artifact.Custom('ColorizedArtifactName')]"
 
  POD_weaken_demon_interaction: "Ослабить демона"
  POD_weaken_demon_interaction_desc: "Ослабить персонажа [recipient.GetShortUIName], вызвав у н[recipient.GetHerHis] воспоминания о Падении."
