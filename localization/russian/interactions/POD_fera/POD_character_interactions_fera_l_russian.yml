@@ -9,7 +9,7 @@
  POD_fera_shapeshift_interaction_warform: "[GetPlayer.Custom('PODFeraWarform')]"
  POD_fera_shapeshift_interaction_primalhumanform: "[GetPlayer.Custom('PODFeraPrimalHumanform')]"
  POD_fera_shapeshift_interaction_primalbeastform: "[GetPlayer.Custom('PODFeraPrimalBeastform')]"
- POD_shapeshift_form_totem_form: "Totem form"
+ POD_shapeshift_form_totem_form: "Форма тотема"
 
 
 
@@ -18,24 +18,24 @@
 
 
 
- POD_fera_weather_magic_interaction: "Weather Magic"
- POD_fera_weather_magic_interaction_desc: "Unleash a natural disaster in [recipient.GetFirstNamePossessive] realm."
- POD_fera_weather_magic_interaction_options_heading: "Which natural hazard shall I invoke?"
+ POD_fera_weather_magic_interaction: "Погодная магия"
+ POD_fera_weather_magic_interaction_desc: "Наслать стихийное бедствие на державу персонажа [recipient.GetFirstName]."
+ POD_fera_weather_magic_interaction_options_heading: "Какое стихийное бедствие мне призвать?"
 
 
 
 
- POD_spawn_flaying_plague_interaction: "Unleash the Flaying Plague"
- POD_spawn_flaying_plague_interaction_desc: "You have the terrible Flaying Plague at your disposal. With some specifics ingredients for the ritual, you would be able to unleash it upon the unsuspecting lupines once more."
- POD_spawn_flaying_plague_interaction.tt: "Inflict the Flaying Plague upon [recipient.GetFirstNamePossessive] location."
- POD_spawn_flaying_plague_actor_toast: "The Flaying Plague is running rampant through [recipient.GetFirstNamePossessive] location."
- POD_spawn_flaying_plague_actor_toast.desc: "Hopefully you won't come to regret this"
- POD_spawn_flaying_plague_failure_toast: "You failed to spread the Flaying Plague in [recipient.GetFirstNamePossessive] location"
- POD_spawn_flaying_plague_failure_toast.desc: "But there will be more opportunities in the future..."
- POD_spawn_flaying_plague_interaction_success: "The Flaying Plague will break out in [recipient.GetFirstNamePossessive] location and spread from there over time."
- POD_spawn_flaying_plague_interaction_failure: "The Flaying Plague fails to take hold."
- POD_inflict_flaying_plague_interaction: "Inflict the Flaying Plague"
- POD_inflict_flaying_plague_interaction_desc: "Infest [recipient.GetFirstName] with the Flaying Plague, weakening their defenses. If they are able to become an [GetTrait('abomination').GetName(GetNullCharacter)], this will ensure the success of the [Glossary('Объятия','game_concept_Embrace_desc')]."
+ POD_spawn_flaying_plague_interaction: "Высвободить свежующую чуму"
+ POD_spawn_flaying_plague_interaction_desc: "В вашем распоряжении ужасная свежующая чума. При наличии некоторых специфических ингредиентов для ритуала вы сможете вновь обрушить её на ничего не подозревающих люпинов."
+ POD_spawn_flaying_plague_interaction.tt: "Наслать свежующую чуму на местонахождение персонажа [recipient.GetFirstName]."
+ POD_spawn_flaying_plague_actor_toast: "В местонахождении персонажа [recipient.GetFirstName] свирепствует свежующая чума."
+ POD_spawn_flaying_plague_actor_toast.desc: "Остаётся лишь надеяться, что вы не пожалеете об этом"
+ POD_spawn_flaying_plague_failure_toast: "Вам не удалось распространить свежующую чуму в местонахождении персонажа [recipient.GetFirstName]"
+ POD_spawn_flaying_plague_failure_toast.desc: "Но в будущем появится ещё больше возможностей..."
+ POD_spawn_flaying_plague_interaction_success: "Свежующая чума вспыхнет в местонахождении персонажа [recipient.GetFirstName] и будет распространяться оттуда с течением времени."
+ POD_spawn_flaying_plague_interaction_failure: "Свежующая чума не смогла закрепиться."
+ POD_inflict_flaying_plague_interaction: "Наслать свежующую чуму"
+ POD_inflict_flaying_plague_interaction_desc: "Заразить персонажа [recipient.GetFirstName] свежующей чумой, ослабив [Select_CString(recipient.IsFemale, 'её', 'его' )] защиту. Если [Select_CString(recipient.IsFemale, 'она', 'он' )] сможет превратиться в #TOOLTIP:GAME_TRAIT,abomination,[GetNullCharacter] #L мерзость#!#!, это обеспечит успех [Glossary('объятий','game_concept_Embrace_desc')]."
 
 
  ###Planetary Gifts interactions
@@ -45,10 +45,10 @@
 
 
  POD_savagery_of_the_taloned_hunter_interaction: "Дикость когтистого охотника"
- POD_savagery_of_the_taloned_hunter_interaction_desc: "Потратить 1 ед. #L $POD_energy_gnosis$а#! и силы воли, чтобы получить 2 ед. #L $POD_energy_gnosis$а#!."
+ POD_savagery_of_the_taloned_hunter_interaction_desc: "Потратить 1 ед. @gnosis_icon!гнозиса и силы воли, чтобы получить 2 ед. @gnosis_icon!гнозиса."
 
  POD_burden_of_knowledge_interaction: "Бремя знаний"
  POD_burden_of_knowledge_interaction_desc: "Наслать на персонажа [recipient.GetFirstName] модификаторы [GetModifier('murderous_frenzy_modifier').GetNameWithTooltip], [GetModifier('change_for_better_modifier').GetNameWithTooltip] или заставить покончить с собой."
 
  POD_essential_transformation_interaction: "Трансформация сущности"
- POD_essential_transformation_interaction_desc: "Ухудшить раны, чтобы получить $POD_energy_gnosis$."
+ POD_essential_transformation_interaction_desc: "Ухудшить раны, чтобы получить @gnosis_icon!гнозис."

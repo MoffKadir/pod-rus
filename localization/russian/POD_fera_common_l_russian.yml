@@ -2,8 +2,8 @@
 
  #File for common Fera localization
 
- 
- 
+
+
 
  #Auspice types "PODFeraAuspiceType"
  POD_fera_auspice: "Покровительство"
@@ -95,9 +95,9 @@
  POD_gnosis_regen_spirit_companions: "[Concept('spirit_companions', 'Духовные спутники')|E]"
  POD_gnosis_regen_stress: "[stress_level|E]"
  POD_gnosis_regen_buildings: "От домена"
- POD_gnosis_regen_domicile: "From [domicile|E]:"
- POD_gnosis_regen_artifacts: "From [artifacts|E]"
- POD_gnosis_regen_modifiers: "From [modifiers|E]"
+ POD_gnosis_regen_domicile: "От [Concept('domicile', 'имения')|E]:"
+ POD_gnosis_regen_artifacts: "От [Concept('artifacts', 'артефактов')|E]"
+ POD_gnosis_regen_modifiers: "От [Concept('modifiers', 'модификаторов')|E]"
  POD_gnosis_regen_spirit_ties: "[GetPerk('fomori_spirit_ties_perk').GetName(GetPlayer)]"
  POD_gnosis_regen_thousand_cranes: "[GetPerk('dream_of_a_thousand_cranes_perk').GetName(GetPlayer)]"
  POD_gnosis_regen_sleep_of_the_dragon: "[GetPerk('sleep_of_the_dragon_perk').GetName(GetPlayer)]"
@@ -109,10 +109,10 @@
  POD_gnosis_regen_fetish_upkeep: "Содержание [Concept('fetish', 'фетиша')|E]"
 
 
- POD_gnosis_regen_kinfolk_cap: "У #TOOLTIP:GAME_TRAIT,kinfolk,[GetPlayer] #L родни#!#! может быть максимум #V 3#! ед. #L $POD_energy_gnosis|l$а#!"
+ POD_gnosis_regen_kinfolk_cap: "У #TOOLTIP:GAME_TRAIT,kinfolk,[GetPlayer] #L родни#!#! может быть максимум #V 3#! ед. @gnosis_icon!гнозиса"
 
  POD_has_spendable_fera_renown_trigger_tooltip_max: "На максимальном ранге [Glossary('фера', 'glossary_fera_tt')] тратится [Concept('prestige', 'престиж')|E], а не [Concept('trait_level_track_xp', 'опыт свойства')|E], и у вас меньше чем [SCOPE.GetValue('spent_xp')] [prestige_i]"
  POD_has_spendable_fera_renown_trigger_tooltip: "У вас менее [SCOPE.GetValue('spent_xp')] ед. [Concept('trait_level_track_xp', 'опыта свойства')|E] [Glossary('фера', 'glossary_fera_tt')], который можно потратить"
 
- POD_fera_remove_pack_totem_tooltip: "#warning Your [pack_totem|E] spirit abandons you.#!"
- POD_fera_remove_planetary_gifts_effect_tooltip: "#warning The Planetary Incarna retract all their [planetarygifts_lifestyle|E].#!"
+ POD_fera_remove_pack_totem_tooltip: "#warning Ваш дух [Concept('pack_totem', 'тотема стаи')|E] покидает вас.#!"
+ POD_fera_remove_planetary_gifts_effect_tooltip: "#warning Планетарная инкарна отзывает все свои [Concept('planetarygifts_lifestyle', 'дары')|E].#!"
