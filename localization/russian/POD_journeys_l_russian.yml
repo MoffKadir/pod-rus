@@ -1137,7 +1137,7 @@
  provoke_vatican_desc: "Я [Select_CString(GetPlayer.IsFemale, 'устала', 'устал' )] всегда прятаться в тени, всегда трусить в страхе перед смертными, всегда заботиться о том, чтобы наше существование оставалось скрытым. Довольно! Я покажу им, что наш род заслуживает уважения. Я покажу им всем..."
  provoke_vatican_effects: "Вам предстоит отправиться в Рим и раскрыть свою сверхъестественную природу во время неистовства, спровоцировав ответные меры со стороны инквизиции.\n\n$provoke_vatican_warning$"
  provoke_vatican_isvalid: "$EFFECT_LIST_BULLET$У вас имеется свойство «[GetTrait('arrogant').GetName(GetPlayer)]»\n$EFFECT_LIST_BULLET$Ваша [Concept('capital', 'столица')|E] находится в регионе [GetGeographicalRegion('world_europe').GetName]\n$EFFECT_LIST_BULLET$Вы исповедуете [Concept('christian_derived_faith', 'конфессию, основанную на христианстве')|E]"
- provoke_vatican_religion_tt: "Вы должны исповедовать  [Concept('christian_derived_faith', 'конфессию, основанную на христианстве')|E]"
+ provoke_vatican_religion_tt: "Вы должны исповедовать [Concept('christian_derived_faith', 'конфессию, основанную на христианстве')|E]"
  provoke_vatican_tt: "Я войду в историю."
  provoke_vatican_planning_title: "Пробуждение тигра"
  provoke_vatican_planning_desc: "Решение принято. Подготовка закончена. Я [Select_CString(GetPlayer.IsFemale, 'готова', 'готов' )] настолько, насколько это вообще возможно. Теперь осталось только побыстрее добраться до Святого города.\n\nНе все разделят мое видение. Многие попытаются отговорить меня от этой затеи, посчитав ее глупой. Они просто не понимают широты моих амбиций.\n\nНо скоро они поймут."

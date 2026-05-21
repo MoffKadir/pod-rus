@@ -64,7 +64,7 @@
  landless_demon_objective_decision: "Тайны Падших"
  landless_demon_objective_decision_tooltip: "Остатки мира, существовавшего до этого."
  landless_demon_objective_decision_desc: "Так много чудес было утрачено во время Небесного восстания. Хотя у вас есть лишь мимолётные воспоминания о них, возможно, жители этого века хранят разрозненные остатки знаний, которые вы могли бы использовать."
- landless_demon_objective_decision_confirm: "Утрачены, но  не забыты..."
+ landless_demon_objective_decision_confirm: "Утрачены, но не забыты..."
  landless_demon_objective_decision_valid_tt: "Каждый раз, когда признаёте нового [Concept('cultist', 'культиста')|E], оставаясь безземельным авантюристом, у вы можете получить новые подсказки об утранных знаниях ангелов. Высокая [Concept('learning', 'учёность')|E] повышает вероятность.\n\nВаши текущие знания - [GetPlayer.MakeScope.ScriptValue('POD_landless_demon_clues')|V0]."
  landless_demon_objective_decision_effect_tt: "Когда у вас будет [EmptyScope.ScriptValue('POD_landless_demon_clues_for_1st_unlock')|V0] подсказок, вам станет доступна [Concept('court_position', 'должность')|E] «[GetCourtPositionType('fell_knight_court_position').GetName()]».\n\nПри [EmptyScope.ScriptValue('POD_landless_demon_clues_for_2nd_unlock')|V0] подсказках, вы получите возможность призывать #TOOLTIP:GAME_TRAIT,demon,[GetNullCharacter] #L демонов#!#!, все призванные демоны будут становятся более могущественными.\n\nПри [EmptyScope.ScriptValue('POD_landless_demon_clues_for_3rd_unlock')|V0] подсказках вы получите Похититель душ, очень мощный меч."
 

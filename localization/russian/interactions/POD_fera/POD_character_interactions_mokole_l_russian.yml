@@ -1,117 +1,116 @@
 ﻿l_russian:
 
- POD_dream_the_beast_interaction: "Dream the Beast"
- POD_dream_the_beast_interaction_desc: "A dream for you, a nightmare for others."
- POD_dream_the_beast_interaction_options_heading: "Which beast shall I manifest?"
+ POD_dream_the_beast_interaction: "Зверь во снах"
+ POD_dream_the_beast_interaction_desc: "Сон для вас, кошмар для других."
+ POD_dream_the_beast_interaction_options_heading: "Проявлением какого зверя я хочу стать?"
 
 
- POD_stampede_interaction: "Stampede"
- POD_stampede_interaction_desc: "Bring the might of prehistoric creatures to destroy [recipient.GetFirstName]."
- POD_stampede_interaction_success: "Stampede!"
- capital: "Capital"
- one_extra: "1 Additional Province"
- two_extra: "2 Additional Provinces"
- summoned_dinosaurs: "Summoned Dinosaurs"
+ POD_stampede_interaction: "Топот"
+ POD_stampede_interaction_desc: "Прибегнуть к мощи доисторических существ, чтобы уничтожить персонажа [recipient.GetFirstName]."
+ POD_stampede_interaction_success: "Топот!"
+ capital: "Столица"
+ one_extra: "1 дополнительная провинция"
+ two_extra: "2 дополнительные провинции"
+ summoned_dinosaurs: "Призванные динозавры"
 
 
- POD_rulers_of_the_earth_interaction: "Rulers of the Earth"
- POD_rulers_of_the_earth_interaction_desc: "A Lizard King does not wait, a Lizard King declares."
- POD_rulers_of_the_earth_interaction_options_heading: "Which title shall be subjugated?"
+ POD_rulers_of_the_earth_interaction: "Правители земли"
+ POD_rulers_of_the_earth_interaction_desc: "Короли ящеров не ждут, короли-ящеры провозглашают."
+ POD_rulers_of_the_earth_interaction_options_heading: "Какой титул нужно покорить?"
 
- POD_banish_innocent_interaction: "Banish Tormentor"
- POD_banish_innocent_interaction_desc: "Torment me no longer!"
- POD_banish_innocent_interaction_options_heading: "How shall I deal with this [innocent|E]?"
- POD_banish_innocent_interaction_success: "Banished!"
- innocent_fight: "Destroy it!"
- innocent_trap: "Trap it in the Umbra"
- innocent_rite: "Perform a mystical Rite"
- innocent_hallowed_net: "Use the Hallowed Net"
-
-
-
- POD_silver_claws_interaction: "Silver Claws"
- POD_silver_claws_interaction_desc: "Recall the pain the #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L Garou#! inflicted upon your Stream, then remind the wolves."
+ POD_banish_innocent_interaction: "Изгнать истязателя"
+ POD_banish_innocent_interaction_desc: "Хватит меня истязать!"
+ POD_banish_innocent_interaction_options_heading: "Как мне разобраться с этим [Concept('innocent', 'невинным')|E]?"
+ POD_banish_innocent_interaction_success: "Изгнание!"
+ innocent_fight: "Уничтожить!"
+ innocent_trap: "Заточить в Умбре"
+ innocent_rite: "Совершить мистический обряд"
+ innocent_hallowed_net: "Использовать священную паутину"
 
 
- POD_walk_into_my_eyes_interaction: "Walk Into my Eyes"
- POD_walk_into_my_eyes_interaction_desc: "Send [recipient.GetName] on an internal journey."
- POD_walk_into_my_eyes_interaction_success: "Doubt sets in"
- POD_walk_into_my_eyes_interaction_trait_target_notification: "[actor.GetName] has forced a change in you"
- POD_walk_into_my_eyes_interaction_trait_actor_notification: "[recipient.GetName] has experienced a drastic change"
+
+ POD_silver_claws_interaction: "Серебряные когти"
+ POD_silver_claws_interaction_desc: "Вспомнить боль, которую #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L гару#! причинили вашему течению, а затем напомнить волкам."
 
 
- POD_nightmare_mnesis_interaction: "Nightmare Mnesis"
- POD_nightmare_mnesis_interaction_desc: "Everyone has committed horrors and they will be reminded of the fact."
- POD_nightmare_mnesis_interaction_success: "Repentance"
-
- POD_scent_of_sweet_nectar_interaction: "Scent of Sweet Nectar"
- POD_scent_of_sweet_nectar_interaction_desc: "Make [recipient.GetName] attract all manner of insects."
- POD_scent_of_sweet_nectar_interaction_success: "Insect Swarm"
+ POD_walk_into_my_eyes_interaction: "Загляни мне в глаза"
+ POD_walk_into_my_eyes_interaction_desc: "Отправить персонажа [recipient.GetName] во внутреннее странствие."
+ POD_walk_into_my_eyes_interaction_success: "Возникли сомнения"
+ POD_walk_into_my_eyes_interaction_trait_target_notification: "[actor.GetName] [Select_CString(actor.IsFemale, 'заставила', 'заставил' )] вас измениться"
+ POD_walk_into_my_eyes_interaction_trait_actor_notification: "[recipient.GetName] [Select_CString(recipient.IsFemale, 'претерпела', 'претерпел' )] радикальные изменения"
 
 
- POD_view_the_seed_interaction: "View the Seed"
- POD_view_the_seed_interaction_desc: "Peer into [recipient.GetName]'s essence and find what is hidden."
- POD_view_the_seed_interaction_success: "Reveal the Unknown"
+ POD_nightmare_mnesis_interaction: "Кошмарный Мнезис"
+ POD_nightmare_mnesis_interaction_desc: "Каждый совершал ужасные поступки, и им напомнят об этом факте."
+ POD_nightmare_mnesis_interaction_success: "Раскаяние"
+
+ POD_scent_of_sweet_nectar_interaction: "Запах сладкого нектара"
+ POD_scent_of_sweet_nectar_interaction_desc: "Заставить персонажа [recipient.GetName] привлечь всевозможных насекомых."
+ POD_scent_of_sweet_nectar_interaction_success: "Рой насекомых"
 
 
- POD_dragon_milk_interaction: "Dragon Milk"
- POD_dragon_milk_interaction_desc: "Heal [recipient.GetName]'s wounds."
-
- POD_the_dragons_tongue_interaction: "The Dragon's Tongue"
- POD_the_dragons_tongue_interaction_desc: "Call down lightning against [recipient.GetName]."
- POD_the_dragons_tongue_interaction_success: "Lightning Strike"
-
- POD_a_thousand_secret_faces_interaction: "A Thousand Secret Faces"
- POD_a_thousand_secret_faces_interaction_desc: "A dragon is not [actor.GetName]."
- change_personality: "Change Your Personality"
- copy_appearance: "Copy Appearance"
- restore_appearance: "Restore Your Appearance"
- POD_a_thousand_secret_faces_interaction_tooltip: "This will open up a menu that will allow you to modify your [personality_traits|E]."
- 
+ POD_view_the_seed_interaction: "Взор семени"
+ POD_view_the_seed_interaction_desc: "Заглянуть в сущность персонажа [recipient.GetName] и найти то, что скрыто."
+ POD_view_the_seed_interaction_success: "Раскрытие неизвестного"
 
 
- POD_scream_of_gaia_interaction: "Scream of Gaia"
- POD_scream_of_gaia_interaction_desc: "Channel your Rage against Gaia's enemies."
- POD_scream_of_gaia_interaction_success: "Pain"
+ POD_dragon_milk_interaction: "Драконье молоко"
+ POD_dragon_milk_interaction_desc: "Исцелить раны персонажа [recipient.GetName]."
 
- POD_tame_sunbeam_interaction: "Tame Sunbeam"
- POD_tame_sunbeam_interaction_desc: "The power of the Sun, in the palm of your hands."
- POD_tame_sunbeam_interaction_success: "Scorching Sunlight"
+ POD_the_dragons_tongue_interaction: "Язык дракона"
+ POD_the_dragons_tongue_interaction_desc: "Призвать на персонажа [recipient.GetName] молнию."
+ POD_the_dragons_tongue_interaction_success: "Удар молнии"
 
- POD_fossilize_interaction: "Fossilize"
- POD_fossilize_interaction_desc: "Time waits for no one."
- POD_fossilize_interaction_success: "The Long Sleep"
-
- POD_shadows_by_the_firelight_interaction: "Shadows by the Firelight"
- POD_shadows_by_the_firelight_interaction_desc: "A reminder of more pleasant times."
-
-
- POD_open_sun_bridge_interaction: "Open Sun Bridge"
- POD_open_sun_bridge_interaction_desc: "Helios lights the path."
- POD_open_sun_bridge_interaction_success: "Fiery Road"
-
- POD_take_the_true_form_interaction: "Take the True Form"
- POD_take_the_true_form_interaction_desc: "Reveal [recipient.GetNamePossessive] true form."
- POD_take_the_true_form_interaction_success: "Form Revealed"
+ POD_a_thousand_secret_faces_interaction: "Лик тысячи тайн"
+ POD_a_thousand_secret_faces_interaction_desc: "Дракон - это не [actor.GetName]."
+ change_personality: "Изменить свою личность"
+ copy_appearance: "Скопировать внешний вид"
+ restore_appearance: "Восстановить внешний вид"
+ POD_a_thousand_secret_faces_interaction_tooltip: "Откроется меню, в котором вы сможете изменить свои [Concept('personality_traits', 'свойства личности')|E]."
 
 
- POD_gorgons_gaze_interaction: "Gorgon's Gaze"
- POD_gorgons_gaze_interaction_desc: "Sap the strength from [recipient.GetNamePossessive] body."
- POD_gorgons_gaze_interaction_success: "Sapped Strength"
+
+ POD_scream_of_gaia_interaction: "Крик Геи"
+ POD_scream_of_gaia_interaction_desc: "Направить свою ярость против врагов Геи."
+ POD_scream_of_gaia_interaction_success: "Боль"
+
+ POD_tame_sunbeam_interaction: "Укрощение солнечных лучей"
+ POD_tame_sunbeam_interaction_desc: "Сила солнца у вас на ладони."
+ POD_tame_sunbeam_interaction_success: "Палящий солнечный свет"
+
+ POD_fossilize_interaction: "Окаменение"
+ POD_fossilize_interaction_desc: "Время никого не ждёт."
+ POD_fossilize_interaction_success: "Долгий сон"
+
+ POD_shadows_by_the_firelight_interaction: "Тени в свете костра"
+ POD_shadows_by_the_firelight_interaction_desc: "Напоминание о более приятных временах."
 
 
- POD_mothers_touch_interaction: "Mother's Touch"
- POD_mothers_touch_interaction_desc: "Heal [recipient.GetName]'s wounds."
+ POD_open_sun_bridge_interaction: "Открытый солнечный мост"
+ POD_open_sun_bridge_interaction_desc: "Гелиос освещает путь."
+ POD_open_sun_bridge_interaction_success: "Огненная тропа"
 
- POD_strength_of_the_dominator_interaction: "Strength of the Dominator"
- POD_strength_of_the_dominator_interaction_desc: "Take [recipient.GetNamePossessive] strength as your own."
- POD_strength_of_the_dominator_interaction_success: "Domination"
+ POD_take_the_true_form_interaction: "Прими истинный облик"
+ POD_take_the_true_form_interaction_desc: "Раскрыть истинную форму персонажа [recipient.GetNamePossessive]."
+ POD_take_the_true_form_interaction_success: "Форма раскрыта"
 
 
- POD_mokole_mastery_interaction: "Mastery"
- POD_mokole_mastery_interaction_desc: "Your majesty compels [recipient.GetName] to obey."
- POD_mokole_mastery_interaction_success: "Inspired Loyalty"
+ POD_gorgons_gaze_interaction: "Взгляд горгоны"
+ POD_gorgons_gaze_interaction_desc: "Вытянуть силу из тела персонажа [recipient.GetNamePossessive]."
+ POD_gorgons_gaze_interaction_success: "Сила вытянута"
 
- POD_dream_semblence_interaction: "Dream Semblance"
- POD_dream_semblence_interaction_desc: "Assume the form of a True Dragon."
 
+ POD_mothers_touch_interaction: "Касание матери"
+ POD_mothers_touch_interaction_desc: "Исцелить раны персонажа [recipient.GetName]."
+
+ POD_strength_of_the_dominator_interaction: "Сила владыки"
+ POD_strength_of_the_dominator_interaction_desc: "Принять силу персонажа [recipient.GetNamePossessive] как свою собственную."
+ POD_strength_of_the_dominator_interaction_success: "Доминирование"
+
+
+ POD_mokole_mastery_interaction: "Власть"
+ POD_mokole_mastery_interaction_desc: "Ваше величие вынудит персонажа [recipient.GetName] повиноваться."
+ POD_mokole_mastery_interaction_success: "Вдохновенная преданность"
+
+ POD_dream_semblence_interaction: "Подобие сна"
+ POD_dream_semblence_interaction_desc: "Принять форму истинного дракона."

@@ -1,6 +1,6 @@
 ﻿l_russian:
  # Helper loc
- POD_duel_cant_damage_spirit: "@warning_icon!#X You don't have an ability that lets you damage spirits!#!"
+ POD_duel_cant_damage_spirit: "@warning_icon!#X У вас нет способности, которой можно нанести вред духам!#!"
 
  #Combat Move Options
 
@@ -230,14 +230,14 @@
  single_combat.0001.tt.POD_manipulate_acceleration: "#D Используя знание Основания, атаковать так, чтобы запутать персонажа [my_foe.GetFirstName]#!"
  single_combat.0001.POD_manipulate_cohesion: "Я испарю тебя!"
  single_combat.0001.tt.POD_manipulate_cohesion: "#D Используя знание Основания, атаковать так, чтобы запутать персонажа [my_foe.GetFirstName]#!"
- single_combat.0001.POD_dragons_breath: "I will burn you!" 
- single_combat.0001.tt.POD_dragons_breath: "#D You spit fire at your foe.#!"
- single_combat.0001.POD_bark_mudpuppy: "My voice will destroy you!" 
- single_combat.0001.tt.POD_bark_mudpuppy: "#D You use the Bark of the Mudpuppy on your foe.#!"
- single_combat.0001.POD_clap_of_thunder: "Hear the Heavens roar!" 
- single_combat.0001.tt.POD_clap_of_thunder: "#D A great clap of thunder stuns your foe#!"
- single_combat.0001.POD_dragon_slash: "Dragon Slash!" 
- single_combat.0001.tt.POD_dragon_slash: "#D Slash your foe with Dragon's strength!#!"
+ single_combat.0001.POD_dragons_breath: "Я сожгу тебя!" 
+ single_combat.0001.tt.POD_dragons_breath: "#D Вы изрыгаете огонь в своего врага.#!"
+ single_combat.0001.POD_bark_mudpuppy: "Мой голос уничтожит тебя!" 
+ single_combat.0001.tt.POD_bark_mudpuppy: "#D Вы используете Лай грязевого щенка против своего врага.#!"
+ single_combat.0001.POD_clap_of_thunder: "Услышь рёв небес!" 
+ single_combat.0001.tt.POD_clap_of_thunder: "#D Сильный раскат грома оглушает вашего врага#!"
+ single_combat.0001.POD_dragon_slash: "Удар дракона!" 
+ single_combat.0001.tt.POD_dragon_slash: "#D Поразить своего врага силой дракона!#!"
 
  ##############################
 
@@ -342,10 +342,10 @@
  single_combat.0001.desc.my_feedback.POD_manipulate_inertia: "Я бегу вперед быстрее, чем может видеть глаз, надеясь, что у моего противника нет возможности предугадать мои движения."
  single_combat.0001.desc.my_feedback.POD_manipulate_acceleration: "Я бегу вперед быстрее, чем может видеть глаз, надеясь, что у моего противника нет возможности предугадать мои движения."
  single_combat.0001.desc.my_feedback.POD_manipulate_cohesion: "Я бегу вперед быстрее, чем может видеть глаз, надеясь, что у моего противника нет возможности предугадать мои движения."
- single_combat.0001.desc.my_feedback.POD_dragons_breath: "I inhale deeply and exhale a massive gout of flame in the general direction of [my_foe.GetFirstNameNoTooltip]."
- single_combat.0001.desc.my_feedback.POD_bark_mudpuppy: "I raise my voice and bellow at [my_foe.GetFirstNameNoTooltip] with all my might, focusing a single shout into a weapon that can rend flesh."
- single_combat.0001.desc.my_feedback.POD_clap_of_thunder: "I clap my hands together and a sudden, resonant sound of thunder shakes [my_foe.GetFirstNameNoTooltip] to the core."
- single_combat.0001.desc.my_feedback.POD_dragon_slash: "Remembering my training, I launch myself at [my_foe.GetFirstNameNoTooltip] with a series of fluid, well-executed slashes of my claws, combining poised skill with raw strength."
+ single_combat.0001.desc.my_feedback.POD_dragons_breath: "Я глубоко вдыхаю и выдыхаю мощную струю пламени в том направлении, где стоит [my_foe.GetFirstNameNoTooltip]."
+ single_combat.0001.desc.my_feedback.POD_bark_mudpuppy: "Я повышаю голос и кричу на н[my_foe.GetHerHis] изо всех сил, превращая один-единственный крик в оружие, способное разрывать плоть."
+ single_combat.0001.desc.my_feedback.POD_clap_of_thunder: "Я хлопаю в ладоши, и внезапный, оглушительный раскат грома потрясает [my_foe.GetHerHis] до глубины души."
+ single_combat.0001.desc.my_feedback.POD_dragon_slash: "Вспомнив о своих тренировках, я бросаюсь на н[my_foe.GetHerHis] с серией плавных, хорошо выполненных ударов когтями, сочетающих в себе мастерство и грубую силу."
 
 
  #Opponent Combat Move Feedback 
@@ -446,10 +446,10 @@
  single_combat.0001.desc.opponent_response.POD_manipulate_inertia: "Мой враг бежит вперед быстрее, чем может видеть глаз, надеясь, что у меня нет возможности предугадать направление его движений."
  single_combat.0001.desc.opponent_response.POD_manipulate_acceleration: "Мой враг бежит вперед быстрее, чем может видеть глаз, надеясь, что у меня нет возможности предугадать направление его движений."
  single_combat.0001.desc.opponent_response.POD_manipulate_cohesion: "Мой враг бежит вперед быстрее, чем может видеть глаз, надеясь, что у меня нет возможности предугадать направление его движений."
- single_combat.0001.desc.opponent_response.POD_dragons_breath: "[my_foe.GetFirstNameNoTooltip] inhales deeply and exhales a massive gout of flame as a dragon would, lighting up our surroundings."
- single_combat.0001.desc.opponent_response.POD_bark_mudpuppy: "[my_foe.GetFirstNameNoTooltip] #italic shouts#! with an unexpected force that tears at my skin and pushes me back."
- single_combat.0001.desc.opponent_response.POD_clap_of_thunder: "[my_foe.GetFirstNameNoTooltip] claps [my_foe.GetHerHis] hands together and I'm suddenly deafened by a thunderous noise that leaves my ears ringing."
- single_combat.0001.desc.opponent_response.POD_dragon_slash: "[my_foe.GetFirstNameNoTooltip] looks serious as [my_foe.GetSheHe] launches [my_foe.GetHerselfHimself] at me with a fierce onslaught of claw attacks."
+ single_combat.0001.desc.opponent_response.POD_dragons_breath: "[my_foe.GetFirstNameNoTooltip] глубоко вдыхает и выдыхает мощный поток пламени, как это сделал бы дракон, освещая всё вокруг."
+ single_combat.0001.desc.opponent_response.POD_bark_mudpuppy: "[my_foe.GetFirstNameNoTooltip] #italic кричит#! с неожиданной силой, которая разрывает мне кожу и отталкивает меня назад."
+ single_combat.0001.desc.opponent_response.POD_clap_of_thunder: "[my_foe.GetFirstNameNoTooltip] хлопает в ладоши, и меня внезапно оглушает оглушительный грохот, от которого у меня звенит в ушах."
+ single_combat.0001.desc.opponent_response.POD_dragon_slash: "[my_foe.GetFirstNameNoTooltip] выглядит внушительно, когда бросается на меня с яростной атакой когтями."
 
 
  ################################ 
@@ -552,10 +552,10 @@
  single_combat.0031.desc.sc_defender.POD_manipulate_inertia: "Слишком далеко, слишком быстро, у меня не получается воспользоваться всеми преимуществами скорости."
  single_combat.0031.desc.sc_defender.POD_manipulate_acceleration: "Слишком далеко, слишком быстро, у меня не получается воспользоваться всеми преимуществами скорости."
  single_combat.0031.desc.sc_defender.POD_manipulate_cohesion: "Слишком далеко, слишком быстро, у меня не получается воспользоваться всеми преимуществами скорости."
- single_combat.0031.desc.sc_defender.POD_dragons_breath: "My opponent dodges the fire easily."
- single_combat.0031.desc.sc_defender.POD_bark_mudpuppy: "It seems to have little effect on my opponent, who simply resumes [sc_victor.GetHerHis] offense."
- single_combat.0031.desc.sc_defender.POD_clap_of_thunder: "My opponent simply plants [sc_victor.GetHerHis] feet and endures the noise."
- single_combat.0031.desc.sc_defender.POD_dragon_slash: "My opponent is prepared for my onslaught and parries with [sc_victor.GetHerHis] [sc_victor.Custom('signature_weapon')]."
+ single_combat.0031.desc.sc_defender.POD_dragons_breath: "[Select_CString(sc_victor.IsFemale, 'Моя противница', 'Мой противник' )] легко уворачивается от огня."
+ single_combat.0031.desc.sc_defender.POD_bark_mudpuppy: "Похоже, это мало повлияло на [Select_CString(sc_victor.IsFemale, 'мою оппонентку, которая', 'моего оппонента, который' )] просто [Select_CString(sc_victor.IsFemale, 'возобновила', 'возобновил' )] атаку."
+ single_combat.0031.desc.sc_defender.POD_clap_of_thunder: "[Select_CString(sc_victor.IsFemale, 'Моя противница', 'Мой противник' )] просто расставляет ноги и терпит шум."
+ single_combat.0031.desc.sc_defender.POD_dragon_slash: "[Select_CString(sc_victor.IsFemale, 'Моя противница готова', 'Мой противник готов' )] к натиску и парирует удар, держа [sc_victor.Custom('signature_weapon')] в руке."
 
  #Defender Lost, Opponent Finishing Move Feedback 
  single_combat.0031.desc.opponent_response.POD_bite: "Мой враг бросается вперед, пытаясь вонзить свои острые клыки в мою шею."

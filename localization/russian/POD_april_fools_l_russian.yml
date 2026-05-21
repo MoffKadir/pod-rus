@@ -35,63 +35,63 @@
 
  ##### APRIL FOOLS 2026
 
- MODIFIER_DEFINITION_MARAUDER_MODE: "Randomized from"
- POD_marauder_mode_diplomacy_modifier: "Paradoxical Diplomacy"
- POD_marauder_mode_martial_modifier: "Paradoxical Martial"
- POD_marauder_mode_stewardship_modifier: "Paradoxical Stewardship"
- POD_marauder_mode_intrigue_modifier: "Paradoxical Intrigue"
- POD_marauder_mode_learning_modifier: "Paradoxical Learning"
- POD_marauder_mode_goldform: "Made of Gold"
+ MODIFIER_DEFINITION_MARAUDER_MODE: "Рандомизация:"
+ POD_marauder_mode_diplomacy_modifier: "Парадоксальная дипломатия"
+ POD_marauder_mode_martial_modifier: "Парадоксальное военное дело"
+ POD_marauder_mode_stewardship_modifier: "Парадоксальное управление"
+ POD_marauder_mode_intrigue_modifier: "Парадоксальные интриги"
+ POD_marauder_mode_learning_modifier: "Парадоксальная учёность"
+ POD_marauder_mode_goldform: "Из золота"
 
- POD_april_fools.102.t: "Paradoxical Days"
- POD_april_fools.102.desc: "All you wanted was a moment of quiet. You went for a walk outside, and there it was, the first sign of the madness to come: a tree made of solid gold.\n\nAmazed, you reached out to touch it. The tree burst into a cloud of fluttering moths, each of them shouting \"Congratulations! Congratulations! Congratulations!\" while orbiting your head like the most obnoxious halo imaginable. When you swatted at the swarm, it dispersed and reformed back into a completely normal tree.\n\nYou hurried back to your court and found it in chaos. Furniture was melting, or floating, or stuck to the ceiling. Someone's clothes had turned into centipedes. The air was scintillating in impossible rainbow colors.\n\nIf this is an illusion, you shudder to think who'd be powerful enough to create one of this scale. But if it isn't..."
- POD_april_fools.102.a: "How would I even begin to find the one responsible?"
- POD_april_fools.102.tt.1: "Your [skills|E] will get randomized every month."
- POD_april_fools.102.tt.2: "Your [personality_traits|E] will get randomized every year."
- POD_april_fools.102.tt.3: "Surely this is just temporary, and you should just wait for it all to blow over."
+ POD_april_fools.102.t: "Парадоксальные дни"
+ POD_april_fools.102.desc: "Всё, чего вы хотели, - это немного тишины. Вы вышли прогуляться на улицу, и вот оно, первое знамение грядущего безумия: дерево, сделанное из чистого золота.\n\n[Select_CString(ROOT.Char.IsFemale, 'Поражённая', 'Поражённый' )], вы протянули руку, чтобы дотронуться до него. Дерево превратилось в облако порхающих мотыльков, каждый из которых кричал: «Поздравляю! Поздравляю! Поздравляю!», вращаясь вокруг вашей головы, как самый отвратительный нимб, который только можно вообразить. Когда вы ударили по рою, он рассеялся и превратился обратно в совершенно обычное дерево.\n\nВы поспешили вернуться в свой двор и обнаружили, что там царит хаос. Мебель плавала, или парила, или прилипала к потолку. Чья-то одежда превратилась в сороконожек. Воздух переливался всеми цветами радуги.\n\nЕсли это иллюзия, то вы содрогаетесь при мысли о том, кто был бы достаточно силен, чтобы создать её такого масштаба. Но если это не так..."
+ POD_april_fools.102.a: "Как я вообще начну искать причину?"
+ POD_april_fools.102.tt.1: "Ваши [Concept('skills', 'навыки')|E] будут перемешиваться случайным образом каждый месяц."
+ POD_april_fools.102.tt.2: "Ваши [Concept('personality_traits', 'свойства личности')|E] будут перемешиваться случайным образом каждый год."
+ POD_april_fools.102.tt.3: "Разумеется, это всего лишь временное явление, и вам следует просто подождать, пока всё это уляжется."
 
-# reused
- POD_april_fools.103.desc.intro: "Your [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('courtier'))] [courtier.GetFirstName] comes to you with news about the unfolding chaos."
+ # reused
+ POD_april_fools.103.desc.intro: "[Select_CString(courtier.IsFemale, 'Ваша', 'Ваш' )] [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('courtier'))] [courtier.GetFirstName] приходит к вам с новостями о разворачивающемся хаосе."
 
- POD_april_fools.103.desc: "\"I found this. Isn't it a sweet little baby? We must take good care of it, and raise it to be a proper member of this household.\"\n\nThe \"sweet little baby\" in question is a dragon."
- POD_april_fools.103.a: "Sweet, I've always wanted a dragon."
+ POD_april_fools.103.desc: "«Я [Select_CString(courtier.IsFemale, 'нашла', 'нашёл' )] это. Разве это не прелестный малыш? Мы должны хорошо заботиться о нём и вырастить его достойным членом семьи».\n\n«Милый малыш», о котором идёт речь, - это дракон."
+ POD_april_fools.103.a: "Мило, я всегда [Select_CString(ROOT.Char.IsFemale, 'хотела', 'хотел' )] завести дракона."
 
- POD_april_fools.104.desc: "Not that you needed [courtier.GetHerHim] to, because it's obvious what happened. [courtier.GetSheHe|U]'s golden. So are you. So is everyone in this [ROOT.Char.Custom('GetCourt')|l], and all your furniture, and all your weapons."
- POD_april_fools.104.a: "We can profit off of this, but too bad about the weapons."
+ POD_april_fools.104.desc: "Не то чтобы вам это было нужно, потому что то, что произошло, очевидно. [Select_CString(courtier.IsFemale, 'Она стала золотой', 'Он стал золотом' )]. Как и вы. Как и весь [ROOT.Char.Custom('GetCourt')|l], и вся ваша мебель, и всё ваше оружие."
+ POD_april_fools.104.a: "Мы можем извлечь из этого выгоду, но очень жаль, что у нас не осталось оружия."
 
- POD_april_fools.105.desc: "\"I was checking on our prison cells this morning and found [prisoner.GetName]. No idea how [prisoner.GetSheHe] got there. [prisoner.GetSheHe|U] doesn't know either. Not to look a gift horse in the mouth though, eh?\""
- POD_april_fools.105.a: "I should decide what to do with [prisoner.GetHerHim]."
+ POD_april_fools.105.desc: "«Этим утром я [Select_CString(courtier.IsFemale, 'проверяла', 'проверял' )] наши темницы и мне на глаза [Select_CString(prisoner.IsFemale, 'попалась', 'попался' )] [prisoner.GetName]. Понятия не имею, как [prisoner.GetSheHe] [Select_CString(prisoner.IsFemale, 'попала', 'попал' )] туда. [prisoner.GetSheHe|U] тоже не знает. Но дарёному коню в зубы не смотрят, а?»"
+ POD_april_fools.105.a: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] решить, что с [Select_CString(prisoner.IsFemale, 'ней', 'ним' )] делать."
 
- POD_april_fools.106.desc: "\"My hair is gone.\" There is a deep melancholy in [courtier.GetHerHis] eyes, which takes you by surprise. You never knew [courtier.GetFirstNameNoTooltip] to care too much about [courtier.GetHerHis] appearance."
- POD_april_fools.106.a: "Yeah, I noticed. Mine is gone, too."
- POD_april_fools.106.a.alreadybald: "Uh-huh. Must be terrible."
+ POD_april_fools.106.desc: "«У меня пропали волосы». В [courtier.GetHerHis] глазах глубокая грусть, которая застаһт вас врасплох. Вы никогда не думали, что [courtier.GetFirstNameNoTooltip] так заботится о своей внешности."
+ POD_april_fools.106.a: "Да, я [Select_CString(ROOT.Char.IsFemale, 'заметила', 'заметил' )]. Мои тоже пропали."
+ POD_april_fools.106.a.alreadybald: "Ага. Должно быть, это ужасно."
 
- POD_april_fools.107.desc: "\"Cheese.\" Refusing to elaborate further, [courtier.GetSheHe] hands you the aforementioned cheese."
- POD_april_fools.107.a: "Um. Thanks?"
+ POD_april_fools.107.desc: "«Сыр». Отказываясь вдаваться в подробности, [courtier.GetSheHe] протягивает вам вышеупомянутый сыр."
+ POD_april_fools.107.a: "Хмм. Спасибо?"
 
- POD_april_fools.108.desc: "\"Yeah, so, er, big news.\" [courtier.GetSheHe|U] fidgets nervously. \"You know about that huge explosion the other day? That pillar of green flame reaching up into the sky, screaming like a choir of damned souls?\"\n\nYeah, you saw. It was kind of hard to miss. Not that you cared much at the time. With everything else going on, it felt like just another Tuesday.\n\n\"Well, it left quite the impression on the local $POD_splat_hunter_plural$. They sent it all the way up the chain and now the Holy See is mobilizing its resources to eradicate the 'devils among us.'\"\n\n\"They're calling it the Inquisition.\""
- POD_april_fools.108.a: "As if we didn't have enough trouble already."
- POD_april_fools.108.a.hunter: "I suppose that's good for us."
- POD_april_fools.108.a.premature: "ANOTHER ONE??"
- POD_april_fools.108.a.premature.hunter: "Another one? Hallelujah."
+ POD_april_fools.108.desc: "«Да, итак, э-э, важные новости». [courtier.GetSheHe|U] нервно ёрзает. «Вы знаете о том сильном взрыве на днях? Этот столб зелёного пламени, вздымающийся к небу и вопящий, как хор проклятых душ?»\n\nДа, вы видели. Это было трудно не заметить. Не то чтобы вас это сильно волновало в то время. На фоне всего происходящего это было похоже на обычный вторник.\n\n«Что ж, это произвело сильное впечатление на местных #TOOLTIP:GAME_TRAIT,supehunter,[GetNullCharacter] #L охотников#!#!. Они разослали это по всей цепочке, и теперь Святой Престол мобилизует свои ресурсы, чтобы искоренить «дьяволов среди нас».\n\n«Они называют это Инквизицией»."
+ POD_april_fools.108.a: "Как будто у нас и без того мало неприятностей."
+ POD_april_fools.108.a.hunter: "Полагаю, это хорошо для нас."
+ POD_april_fools.108.a.premature: "ЕЩЁ ОДНА??"
+ POD_april_fools.108.a.premature.hunter: "Ещё одна? Аллилуя."
 
- POD_april_fools.109.desc: "\"It's a madhouse out there. The inquisitors are moving out and torching havens all over the place. At this rate, they're going to eradicate us.\"\n\nYou rub your temples. \"Does that mean we can finally put our differences behind us and rally against a common foe?\"\n\n\"What? No, that's crazy. Look, you're not thinking like an entrepreneur. This is a golden opportunity to rob everyone else blind. No one will expect us to stab them in the back while they're occupied with bigger issues.\""
- POD_april_fools.109.desc.hunter: "\"It's a madhouse out there. The inquisitors are moving out and torching havens all over the place. The bloodsuckers are getting antsy. They know they're not long for this world.\"\n\nYou sigh. \"Yes, and? The Vatican is taking care of this. We can sit this one out. No need to risk our lives when their twice-blessed thrice-anointed motherfuckers-in-chief are willing to die on the frontlines.\"\n\n\"What? No, that's crazy. Look, you're not thinking like an entrepreneur. This is a golden opportunity to rob everyone else blind. No one will expect us to stab them in the back while they're occupied with other issues.\""
- POD_april_fools.109.a: "That's the stupidest thing I ever heard."
- POD_april_fools.109.tt: "EVERYONE can [raid|E] now."
- 
- POD_april_fools.110.desc: "\"Aboeisrd moieaon kstlbv og. Goob broncpsdz ib? Plib e bib. Zbilbrekwlommbiorbeon aglonmeqwas eorleor ir immnimnim plembaf, nor limnon leqbaf, nor zeblorneqis rirghhb nekbaf. Ya bib?\""
+ POD_april_fools.109.desc: "«Там просто сумасшедший дом. Инквизиторы выходят на свет и поджигают убежища повсюду. Такими темпами они нас уничтожат».\n\nВы потираете виски. «Означает ли это, что мы наконец-то можем забыть о наших разногласиях и объединиться против общего врага?»\n\n«Что? Нет, это безумие. Послушайте, вы мыслите неправильно. Это прекрасная возможность ограбить всех остальных вслепую. Никто не будет ожидать, что мы ударим им в спину, пока они заняты более серьёзными проблемами»."
+ POD_april_fools.109.desc.hunter: "«Там настоящий сумасшедший дом. Инквизиторы съезжаются и поджигают убежища повсюду. Кровососы начинают нервничать. Они знают, что им недолго осталось жить в этом мире».\n\nВы вздыхаете. «Да, и что? Ватикан позаботится об этом. Мы можем переждать это время. Нет необходимости рисковать своими жизнями, когда их дважды благословенные, трижды помазанные верховные ублюдки готовы умереть на передовой».\n\n«Что? Нет, это безумие. Послушайте, вы мыслите неправильно. Это прекрасная возможность ограбить всех остальных вслепую. Никто не ожидает, что мы ударим им в спину, пока они заняты другими проблемами»."
+ POD_april_fools.109.a: "Это самая глупая вещь, которую я когда-либо [Select_CString(ROOT.Char.IsFemale, 'слышала', 'слышал' )]."
+ POD_april_fools.109.tt: "Теперь все могут [Concept('raid', 'совершать набеги')|E]."
+
+ POD_april_fools.110.desc: "«Aboeisrd moieaon kstlbv og. Goob broncpsdz ib? Plib e bib. Zbilbrekwlommbiorbeon aglonmeqwas eorleor ir immnimnim plembaf, nor limnon leqbaf, nor zeblorneqis rirghhb nekbaf. Ya bib?»"
  POD_april_fools.110.a: "Hor hor hor! Sik nempis irliq nempo bib."
- POD_marauder_mode_tongues: "Speaking the Language of the Gods"
+ POD_marauder_mode_tongues: "Беседа на языке богов"
  POD_marauder_mode_tongues_desc: "Ha blemqas nirtuilzvkkir tiglpvnmbonan giruen bib. Giruen? Og pilnis? Hor hor hor."
+
+ POD_april_fools.111.desc: "«Я вас ненавижу. Просто хочу, чтобы вы знали»."
+ POD_april_fools.111.a: "Что?"
+
+ POD_april_fools.112.t: "Первопричина"
+ POD_april_fools.112.desc: "Низкий гул возвещает о его приближении. Пол и потолок разлетаются на тысячи разноцветных осколков, а затем превращаются в спиралевидные кристаллические решетки. Свет в ваших покоях изгибается под тошнотворными углами. Реальность плачет и признает своё поражение.\n\nВ эпицентре этого шторма находится чёрная дыра, силуэт которой имеет форму человека. По крайней мере, вы думаете, что это человек. Различимых черт нет. Сущность видна только по своим очертаниям и силе притяжения, которую она оказывает на своё окружение, как нечто, что одновременно является неотъемлемой частью существования этого мира, но не может существовать внутри него.\n\nВам удалось продержаться так долго, потому что вы знали, когда нужно сражаться, а когда сдаться. В этой битве вам не победить. Всё, что вы можете делать, - это наблюдать и надеяться на лучшее."
+ # ellipsis
  
- POD_april_fools.111.desc: "\"I hate you. Just wanted to let you know.\""
- POD_april_fools.111.a: "What?"
- 
- POD_april_fools.112.t: "The One Responsible"
- POD_april_fools.112.desc: "A low hum heralds its arrival. Floor and ceiling break into thousands of colorful shards, then reform into spiraling crystal lattices. The light in your chambers bends at nauseating angles. Reality weeps, and admits defeat.\n\nAt the nexus of this storm sits a black hole, its silhouette shaped like a man. You think it's a man, at least. There are no discernible features. The entity is only visible by its outline and the gravity it exerts on its surroundings, like something that is both integral to the existence of this world, yet cannot exist within it.\n\nYou managed to survive this long by knowing when to fight and when to fold. This fight is one you cannot win. All you can do is observe, and hope for the best."
-# ellipsis
- 
- POD_april_fools.113.t: "Maraudeur"
- POD_april_fools.113.desc: "The thing greets you with a reverberating noise straight from hell.\n\nIt sounds a bit like, \"Bonjour\".\n\nAside from that, it seems quite amenable to polite conversation. It is very apologetic for all the trouble it's caused, and gives you a lengthy justification full of scientific jargon you can't even begin to understand, about \"spheres\" and \"instruments\" and \"marauder reality zones\". You gather that it is on the run from \"that wrinkly #italic fils de pute#!\" and that its visit to these parts was \"too soon\", but that you may meet others like it one day, \"when the time is right\". Then it opens a swirling portal and makes to leave.\n\nYou call out to the entity, still confused. \"Who are you?\"\n\nIt says, \"You may call me Jean\"."
- POD_april_fools.113.a: "And I guess that's that."
+ POD_april_fools.113.t: "Мародёр"
+ POD_april_fools.113.desc: "Нечто приветствует вас раскатистым звуком, доносящимся прямо из ада.\n\nОно произносит что-то отдалённо напоминающее «Бонжур».\n\nКроме того, оно кажется вполне расположенным для вежливой беседы. Оно приносит извинения за все причинённые неудобства и приводит пространные обоснования, полные научного жаргона, который вы даже не можете понять, о «сферах», «инструментах» и «зонах реальности мародеров». Вы догадываетесь, что он скрывается от «этого морщинистого #italic филс де путе#!» и что его визит в эти края был «слишком преждевременным», но однажды, «когда придёт время», вы сможете встретить других таких же, как он. Затем он открывает вращающийся портал и собирается уходить.\n\nВы взываете к существу, всё ещё пребывая в замешательстве. «Кто ты?»\n\nОно произносит: «Можешь называть меня Жан»."
+ POD_april_fools.113.a: "И я думаю, что на этом всё."
