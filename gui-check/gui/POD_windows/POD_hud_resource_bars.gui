@@ -1,3 +1,5 @@
+@raise_all_armies_visible = "[And( And( Not(IsGameViewOpen('barbershop')), And( IsMapMode('realms'), And( Not(IsGameViewOpen('struggle')), Not(IsAnySituationViewOpen) ) ) ), And(Not(Character.HasActiveCompanionAISetting('raise_armies')),Or(And( Character.IsAtWar, Not(Character.HasRaisedRegiments)),PlayerShouldDisbandAll)) )]"
+
 widget = {
 	name = "resource_bars_hud"
 	layer = bottom
@@ -8,9 +10,7 @@ widget = {
 		#visible = "[Not(GetVariableSystem.Exists( 'hide_bottom_left_HUD'))]"
 		visible = "[IsMapMode('realms')]"
 		
-		parentanchor = bottom|hcenter
-		#position = { -66 -8 }
-		position = { 17 -12 }
+		using = pod_resource_bars_hud_position
 
 		vbox = {
 			set_parent_size_to_minimum = yes
@@ -47,7 +47,7 @@ widget = {
 			spacer = {
 				#size = { 0 120 }
 				datacontext = "[GetPlayer]"
-				visible = "[And( And( Not(IsGameViewOpen('barbershop')), And( IsMapMode('realms'), And( Not(IsGameViewOpen('struggle')), Not(IsAnySituationViewOpen) ) ) ), And(Not(Character.HasActiveCompanionAISetting('raise_armies')),Or(And( Character.IsAtWar, Not(Character.HasRaisedRegiments)),PlayerShouldDisbandAll)) )]"
+				visible = @raise_all_armies_visible
 				
 				state = {
 					name = _show
@@ -62,7 +62,24 @@ widget = {
 					using = Animation_Curve_Default
 					size = { 0 0 }
 				}
+				
+				state = {
+					name = show_after_loading_save
+					
+					# fix for animation not triggering after loading a save
+					trigger_when = @raise_all_armies_visible
+					
+					size = { 0 0 }
+					
+					next = _show
+				}
 			}
 		}
 	}
+}
+
+template pod_resource_bars_hud_position {
+	parentanchor = bottom|hcenter
+	#position = { -66 -8 }
+	position = { 17 -12 }
 }

@@ -1,0 +1,2496 @@
+﻿######################################
+######   POD COMBAT WINDOW   ######
+######################################
+
+# Group combat window. See COMBAT_REFERENCE.info for state and GUI contracts.
+
+widget = {
+	name = "pod_combat_window"
+	# Keep pause handling inactive outside combat. The inner window hides for the loadout editor.
+	# Dead hosts can retain a session pointer to an ended story.
+
+	# Guard the child datamodels: the session may be absent or not yet active during duel setup.
+	visible = "[And(PODCombatFightIsSet, And(And(And(And(Not(IsPauseMenuShown), IsDefaultGUIMode), GetPlayer.IsValid), GetPlayer.IsAlive), PODCombatFight.Var('pod_combat_active').IsSet))]"
+	layer = royal_court
+	size = { 100% 100% }
+
+
+	state = {
+		name = _show
+		using = Animation_FadeIn_Quick
+		using = Sound_WindowShow_Standard
+		using = Window_Position_MainTab
+	}
+
+	state = {
+		name = _hide
+		using = Animation_FadeOut_Quick
+		using = Sound_WindowHide_Standard
+		using = Window_Position_MainTab_Hide
+	}
+
+	window = {
+		parentanchor = center
+		# Fallback size; the content hbox sets the window minimum.
+		size = { 1525 940 }
+		using = Window_Background
+		using = Window_Decoration_Warfare
+
+		visible = "[And(PODCombatFight.Var('pod_combat_active').IsSet, Not(GetPlayer.MakeScope.Var('pod_combat_config_open').IsSet))]"
+
+		state = {
+			name = _show
+			using = Animation_FadeIn_Standard
+		}
+		state = {
+			name = _hide
+			using = Animation_FadeOut_Standard
+		}
+
+		state = {
+			name = _pause
+			trigger_when = "[Not(IsGamePaused)]"
+			on_start = "[OnPause]"
+		}
+
+		background = {
+			texture = "gfx/interface/component_tiles/tile_window_background.dds"
+			spriteType = Corneredtiled
+			spriteborder = { 18 0 }
+			texture_density = 2
+			margin = { -23 -17 }
+
+			modify_texture = {
+				texture = "gfx/interface/component_overlay/overlay_effect.dds"
+				blend_mode = overlay
+			}
+		}
+
+		background = {
+			# this is where one could put conditional background textures
+			# but finding adjustment layers that work for all of them sounds like too much effort
+			texture = "gfx/interface/illustrations/event_scenes/tgp_overflowing_river_night.dds"
+
+			fittype = start
+			# size of the event illustrations
+			framesize = { 1592 848 }
+			# bg_margins from the Window_Background template
+			margin = { -23 -17 }
+
+			# R E D
+			modify_texture = {
+				color = { 1.0 0.0 0.0 1.0 }
+				blend_mode = multiply
+			}
+
+			# alpha mask so that it matches the frayed edges from Window_Background
+			modify_texture = {
+				texture = "gfx/interface/skinned/tile_window_background.dds"
+				spriteType = Corneredtiled
+				spriteborder = { 18 0 }
+				texture_density = 2
+				blend_mode = alphamultiply
+			}
+
+			# vertical transparency gradient
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+				blend_mode = alphamultiply
+				#mirror = vertical
+			}
+
+			# vignette
+			modify_texture = {
+				texture = "gfx/interface/component_overlay/overlay_effect.dds"
+				blend_mode = overlay
+			}
+		}
+
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			# The width floor fits four moves per category; larger rows expand the window.
+			# The height floor prevents the expanding scrollboxes from collapsing.
+			set_parent_size_to_minimum = yes
+			minimumsize = { 1525 940 }
+
+			widget = {
+				minimumsize = { 30 -1 }
+				maximumsize = { 30 -1 }
+			}
+
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				widget = {
+					minimumsize = { -1 20 }
+					maximumsize = { -1 20 }
+				}
+
+				##############################
+				###### HEADER (content width)
+				##############################
+
+				header_pattern = {
+					layoutpolicy_horizontal = expanding
+
+					blockoverride "header_background" { alpha = 0 }
+					blockoverride "header_pattern"    { alpha = 0 }
+
+					blockoverride "header_text" {
+						# cast shadow
+						text = "pod_combat_window_title"
+						maximumsize = { 900 -1 }
+						font = PODGrotesque
+						default_format = "#color:{0.15,0.0,0.0};glow_color:{0.15,0.0,0.0}"
+						fontsize = 34
+						# the actual text, offset from the shadow
+						text_single = {
+							text = "pod_combat_window_title"
+							maximumsize = { 900 -1 }
+							font = PODGrotesque
+							default_format = "#V"
+							fontsize = 34
+							position = { -3 -2 }
+							align = nobaseline
+						}
+					}
+
+					# Closing would abandon a pending duel. Its event card or End Combat must conclude it.
+					blockoverride "button_close" {
+						visible = no
+					}
+				}
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				margin = { 5 5 }
+
+			##############################
+			###### LEFT PANEL: ALLIES
+			##############################
+
+				vbox = {
+					minimumsize = { 280 -1 }
+					maximumsize = { 280 -1 }
+					layoutpolicy_vertical = expanding
+					margin = { 5 2 }
+
+					text_single = {
+						text = "pod_combat_allies_label"
+						default_format = "#color_yellow;bold"
+						font = PODGrotesque
+						fontsize = 18
+						align = center
+					}
+
+					scrollbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						blockoverride "scrollbox_content"
+						{
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								margin = { 0 2 }
+
+								# active_slots contains only seated slots with slot_char set, including summons.
+								# Each datamodel item supplies a slot-story Scope.
+								vbox = {
+									layoutpolicy_horizontal = expanding
+									spacing = 16
+
+									datamodel = "[PODCombatFight.GetList('pod_combat_active_slots')]"
+
+									item = {
+										vbox = {
+											visible = "[PODCombatSlotIsAlly]"
+											spacing = 1
+
+											layoutpolicy_horizontal = expanding
+
+											pod_combat_big_portrait = {
+												visible = "[GetScriptedGui('pod_combat_player_big_portrait_is_shown').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('slot_story', Scope.Story.MakeScope).End)]"
+												datacontext = "[Scope.Var('slot_char').GetCharacter]"
+
+												blockoverride "fog_alpha" {
+													alpha = 0.35
+												}
+
+												blockoverride "portrait_button" {
+													# camera doesn't leave the subject centered, annoyingly
+													position = { 10 0 }
+
+													portrait_texture = "[Character.GetAnimatedPortraitEvenIfDead( 'POD_environment_combat_left', 'camera_event_left', Select_CString( PODCharHasNoHumanBody, 'personality_zealous', 'waki_gamae' ), PdxGetWidgetScreenSize( PdxGuiWidget.Self ) )]"
+
+													# actually color of the shadow
+													color = "[PODCombatAllyColor]"
+
+													# actually UV offset of the shadow
+													portrait_offset = { -0.02 -0.01 }
+												}
+											}
+
+											pod_combat_datamodel_slot = {}
+										}
+									}
+								}
+
+
+								expand = {}
+							}
+						}
+					}
+			}
+
+			##############################
+			###### CENTER PANEL
+			##############################
+
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				# Keep sparse loadouts at the four-button width: 42 + 4*204 + 3*4 = 870.
+				minimumsize = { 870 -1 }
+
+
+				###### Initiative track
+				# The list is sorted at round start. Hidden for 1v1.
+				hbox = {
+					# Hidden datamodels still evaluate; guard viewers without a fight.
+					visible = "[And(PODCombatFightIsSet, GreaterThan_CFixedPoint(GetPlayer.MakeScope.ScriptValue('pod_combat_combatant_count_value'), '(CFixedPoint)2'))]"
+					expand = {}
+					scrollarea = {
+						layoutpolicy_horizontal = expanding
+						minimumsize = { 0 108 }
+						scrollbarpolicy_vertical = always_off
+						scrollbarpolicy_horizontal = as_needed
+
+						scrollbar_horizontal = {
+							using = Scrollbar_Horizontal
+						}
+
+						scrollwidget = {
+							hbox = {
+								datamodel = "[PODCombatFight.GetList('pod_combat_turn_order_list')]"
+								item = {
+									pod_combat_initiative_track_item = {}
+								}
+							}
+						}
+					}
+					expand = {}
+				}
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					margin = { 10 4 }
+					spacing = 10
+
+					text_single = {
+						raw_text = "[Localize('pod_combat_round')]"
+						default_format = "#bold;glow_color:{0.0,0.0,0.0,1.0}"
+						fontsize = 17
+					}
+
+					# Show absolute hit chance here; slot cards show signed tier modifiers.
+					# Hide after combat ends, when the retained slot has stale hit data.
+					# The control pointer and target fields are seeded together, so one pointer check suffices.
+					text_single = {
+						visible = "[And(PODCombatFight.Var('pod_combat_active').IsSet, PODCombatMyCombatantIsSet)]"
+						raw_text = "#weak ·#!  #glow_color:{0.0,0.0,0.0,1.0} [Localize('pod_combat_pc_target_display')]"
+						fontsize = 17
+						tooltip = "pod_combat_pc_hit_breakdown_tt"
+					}
+
+					expand = {}
+
+					text_single = {
+						raw_text = "[Localize('pod_combat_ap_label')]"
+						default_format = "#outline"
+						fontsize = 18
+						font = PODGrotesque
+					}
+
+					###### AP pips
+					# Overflow replaces rightmost filled pips with supercharge icons. The strip stays at six
+					# positions; the numeric readout covers larger values. Lowering the cap hides excess pips.
+					hbox = {
+						spacing = 4
+						ignoreinvisible = yes
+
+						pod_combat_ap_pip = {
+							visible = "[LessThanOrEqualTo_CFixedPoint('(CFixedPoint)1', GetPlayer.MakeScope.ScriptValue('pod_combat_effective_ap_cap_value'))]"
+							blockoverride "empty_visible"       { visible = "[GreaterThan_CFixedPoint('(CFixedPoint)1', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value'))]" }
+							blockoverride "filled_visible"      { visible = "[And(LessThanOrEqualTo_CFixedPoint('(CFixedPoint)1', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value')), LessThanOrEqualTo_CFixedPoint('(CFixedPoint)1', GetPlayer.MakeScope.ScriptValue('pod_combat_pip_supercharge_threshold')))]" }
+							blockoverride "supercharge_visible" { visible = "[And(LessThanOrEqualTo_CFixedPoint('(CFixedPoint)1', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value')), GreaterThan_CFixedPoint('(CFixedPoint)1', GetPlayer.MakeScope.ScriptValue('pod_combat_pip_supercharge_threshold')))]" }
+						}
+						pod_combat_ap_pip = {
+							visible = "[LessThanOrEqualTo_CFixedPoint('(CFixedPoint)2', GetPlayer.MakeScope.ScriptValue('pod_combat_effective_ap_cap_value'))]"
+							blockoverride "empty_visible"       { visible = "[GreaterThan_CFixedPoint('(CFixedPoint)2', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value'))]" }
+							blockoverride "filled_visible"      { visible = "[And(LessThanOrEqualTo_CFixedPoint('(CFixedPoint)2', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value')), LessThanOrEqualTo_CFixedPoint('(CFixedPoint)2', GetPlayer.MakeScope.ScriptValue('pod_combat_pip_supercharge_threshold')))]" }
+							blockoverride "supercharge_visible" { visible = "[And(LessThanOrEqualTo_CFixedPoint('(CFixedPoint)2', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value')), GreaterThan_CFixedPoint('(CFixedPoint)2', GetPlayer.MakeScope.ScriptValue('pod_combat_pip_supercharge_threshold')))]" }
+						}
+						pod_combat_ap_pip = {
+							visible = "[LessThanOrEqualTo_CFixedPoint('(CFixedPoint)3', GetPlayer.MakeScope.ScriptValue('pod_combat_effective_ap_cap_value'))]"
+							blockoverride "empty_visible"       { visible = "[GreaterThan_CFixedPoint('(CFixedPoint)3', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value'))]" }
+							blockoverride "filled_visible"      { visible = "[And(LessThanOrEqualTo_CFixedPoint('(CFixedPoint)3', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value')), LessThanOrEqualTo_CFixedPoint('(CFixedPoint)3', GetPlayer.MakeScope.ScriptValue('pod_combat_pip_supercharge_threshold')))]" }
+							blockoverride "supercharge_visible" { visible = "[And(LessThanOrEqualTo_CFixedPoint('(CFixedPoint)3', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value')), GreaterThan_CFixedPoint('(CFixedPoint)3', GetPlayer.MakeScope.ScriptValue('pod_combat_pip_supercharge_threshold')))]" }
+						}
+						pod_combat_ap_pip = {
+							visible = "[LessThanOrEqualTo_CFixedPoint('(CFixedPoint)4', GetPlayer.MakeScope.ScriptValue('pod_combat_effective_ap_cap_value'))]"
+							blockoverride "empty_visible"       { visible = "[GreaterThan_CFixedPoint('(CFixedPoint)4', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value'))]" }
+							blockoverride "filled_visible"      { visible = "[And(LessThanOrEqualTo_CFixedPoint('(CFixedPoint)4', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value')), LessThanOrEqualTo_CFixedPoint('(CFixedPoint)4', GetPlayer.MakeScope.ScriptValue('pod_combat_pip_supercharge_threshold')))]" }
+							blockoverride "supercharge_visible" { visible = "[And(LessThanOrEqualTo_CFixedPoint('(CFixedPoint)4', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value')), GreaterThan_CFixedPoint('(CFixedPoint)4', GetPlayer.MakeScope.ScriptValue('pod_combat_pip_supercharge_threshold')))]" }
+						}
+						pod_combat_ap_pip = {
+							visible = "[LessThanOrEqualTo_CFixedPoint('(CFixedPoint)5', GetPlayer.MakeScope.ScriptValue('pod_combat_effective_ap_cap_value'))]"
+							blockoverride "empty_visible"       { visible = "[GreaterThan_CFixedPoint('(CFixedPoint)5', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value'))]" }
+							blockoverride "filled_visible"      { visible = "[And(LessThanOrEqualTo_CFixedPoint('(CFixedPoint)5', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value')), LessThanOrEqualTo_CFixedPoint('(CFixedPoint)5', GetPlayer.MakeScope.ScriptValue('pod_combat_pip_supercharge_threshold')))]" }
+							blockoverride "supercharge_visible" { visible = "[And(LessThanOrEqualTo_CFixedPoint('(CFixedPoint)5', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value')), GreaterThan_CFixedPoint('(CFixedPoint)5', GetPlayer.MakeScope.ScriptValue('pod_combat_pip_supercharge_threshold')))]" }
+						}
+						pod_combat_ap_pip = {
+							visible = "[LessThanOrEqualTo_CFixedPoint('(CFixedPoint)6', GetPlayer.MakeScope.ScriptValue('pod_combat_effective_ap_cap_value'))]"
+							blockoverride "empty_visible"       { visible = "[GreaterThan_CFixedPoint('(CFixedPoint)6', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value'))]" }
+							blockoverride "filled_visible"      { visible = "[And(LessThanOrEqualTo_CFixedPoint('(CFixedPoint)6', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value')), LessThanOrEqualTo_CFixedPoint('(CFixedPoint)6', GetPlayer.MakeScope.ScriptValue('pod_combat_pip_supercharge_threshold')))]" }
+							blockoverride "supercharge_visible" { visible = "[And(LessThanOrEqualTo_CFixedPoint('(CFixedPoint)6', GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value')), GreaterThan_CFixedPoint('(CFixedPoint)6', GetPlayer.MakeScope.ScriptValue('pod_combat_pip_supercharge_threshold')))]" }
+						}
+					}
+
+					text_single = {
+						raw_text = "#high;bold;glow_color:{0.0,0.0,0.0,1.0} [GetPlayer.MakeScope.ScriptValue('pod_combat_current_ap_value')|0]#! #weak;glow_color:{0.0,0.0,0.0,1.0} / [GetPlayer.MakeScope.ScriptValue('pod_combat_effective_ap_cap_value')|0]#!"
+						fontsize = 17
+					}
+				}
+
+				##############################
+				###### MOVE BUTTONS
+				##############################
+				# Keep empty category rows visible so labels stay aligned.
+				# No horizontal margin: four move buttons exactly fill the 870px center column.
+
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 2
+
+					###### ATK row
+					# The trailing expand keeps sparse rows left-aligned.
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						margin = { 0 1 }
+
+						widget = {
+							size = { 42 33 }
+							text_single = {
+								parentanchor = vcenter
+								text = "pod_combat_sheet_cat_atk"
+								margin_left = 2
+								font = PODGrotesque
+								fontsize = 18
+								position = { 0 -2 }
+							}
+						}
+
+						flowcontainer = {
+							direction = horizontal
+							spacing = 4
+							ignoreinvisible = yes
+
+							datamodel = "[PODCombatMyCombatant.GetList('pod_combat_loadout')]"
+
+							item = {
+								button_combat_atk = {
+									size = { 204 33 }
+									visible = "[GetScriptedGui('pod_combat_is_atk_move').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).End)]"
+									tooltipwidget = { pod_fancy_combat_move_tooltip_live = {} }
+
+									onclick = "[GetScriptedGui('pod_combat_execute_move').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End)]"
+									enabled = "[GetScriptedGui('pod_combat_execute_move').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End)]"
+
+									blockoverride "bnw_factor" {
+										alpha = "[Select_float( GetScriptedGui('pod_combat_execute_move').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End), '(float)0', '(float)1' )]"
+									}
+
+									tooltip = "POD_combat_move_tooltip"
+								}
+							}
+						}
+
+						expand = {}
+					}
+
+					# ── DEF row ──
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						margin = { 0 1 }
+
+						widget = {
+							size = { 42 33 }
+							text_single = {
+								parentanchor = vcenter
+								text = "pod_combat_sheet_cat_def"
+								margin_left = 2
+								font = PODGrotesque
+								fontsize = 18
+								position = { 0 -2 }
+							}
+						}
+
+						flowcontainer = {
+							direction = horizontal
+							spacing = 4
+							ignoreinvisible = yes
+
+							datamodel = "[PODCombatMyCombatant.GetList('pod_combat_loadout')]"
+
+							item = {
+								button_combat_def = {
+									size = { 204 33 }
+									visible = "[GetScriptedGui('pod_combat_is_def_move').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).End)]"
+									tooltipwidget = { pod_fancy_combat_move_tooltip_live = {} }
+
+									onclick = "[GetScriptedGui('pod_combat_execute_move').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End)]"
+									enabled = "[GetScriptedGui('pod_combat_execute_move').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End)]"
+
+									blockoverride "bnw_factor" {
+										alpha = "[Select_float( GetScriptedGui('pod_combat_execute_move').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End), '(float)0', '(float)1' )]"
+									}
+
+									tooltip = "POD_combat_move_tooltip"
+								}
+							}
+						}
+
+						expand = {}
+					}
+
+					# ── CTL row ──
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						margin = { 0 1 }
+
+						widget = {
+							size = { 42 33 }
+							text_single = {
+								parentanchor = vcenter
+								text = "pod_combat_sheet_cat_ctl"
+								margin_left = 2
+								font = PODGrotesque
+								fontsize = 18
+								position = { 0 -2 }
+							}
+						}
+
+						flowcontainer = {
+							direction = horizontal
+							spacing = 4
+							ignoreinvisible = yes
+
+							datamodel = "[PODCombatMyCombatant.GetList('pod_combat_loadout')]"
+
+							item = {
+								button_combat_ctl = {
+									size = { 204 33 }
+									visible = "[GetScriptedGui('pod_combat_is_ctl_move').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).End)]"
+									tooltipwidget = { pod_fancy_combat_move_tooltip_live = {} }
+
+									onclick = "[GetScriptedGui('pod_combat_execute_move').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End)]"
+									enabled = "[GetScriptedGui('pod_combat_execute_move').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End)]"
+
+									blockoverride "bnw_factor" {
+										alpha = "[Select_float( GetScriptedGui('pod_combat_execute_move').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End), '(float)0', '(float)1' )]"
+									}
+
+									tooltip = "POD_combat_move_tooltip"
+								}
+							}
+						}
+
+						expand = {}
+					}
+
+					# ── PWR row ──
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						margin = { 0 1 }
+
+						widget = {
+							size = { 42 33 }
+							text_single = {
+								parentanchor = vcenter
+								text = "pod_combat_sheet_cat_pwr"
+								margin_left = 2
+								font = PODGrotesque
+								fontsize = 18
+								position = { 0 -2 }
+							}
+						}
+
+						flowcontainer = {
+							direction = horizontal
+							spacing = 4
+							ignoreinvisible = yes
+
+							datamodel = "[PODCombatMyCombatant.GetList('pod_combat_loadout')]"
+
+							item = {
+								button_combat_pwr = {
+									size = { 204 33 }
+									visible = "[GetScriptedGui('pod_combat_is_pwr_move').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).End)]"
+									tooltipwidget = { pod_fancy_combat_move_tooltip_live = {} }
+
+									onclick = "[GetScriptedGui('pod_combat_execute_move').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End)]"
+									enabled = "[GetScriptedGui('pod_combat_execute_move').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End)]"
+
+									blockoverride "bnw_factor" {
+										alpha = "[Select_float( GetScriptedGui('pod_combat_execute_move').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End), '(float)0', '(float)1' )]"
+									}
+
+									tooltip = "POD_combat_move_tooltip"
+								}
+							}
+						}
+
+						expand = {}
+					}
+
+					expand = {}
+				}
+
+
+				##############################
+				###### ACTION BUTTONS
+				##############################
+
+				hbox = {
+					# Match the move rows and their 42px label column to align End Turn with the buttons.
+					margin = { 0 4 }
+					spacing = 20
+					layoutpolicy_horizontal = expanding
+					ignoreinvisible = yes
+
+					widget = {
+						size = { 42 33 }
+					}
+
+					button_standard = {
+						visible = "[And(Not(PODCombatFight.Var('pod_combat_is_over').IsSet), Not(GreaterThan_CFixedPoint(GetPlayer.MakeScope.ScriptValue('pod_combat_advance_pending_value'), '(CFixedPoint)0')))]"
+						size = { 170 33 }
+						text = "pod_combat_end_turn"
+						onclick = "[GetScriptedGui('pod_combat_end_turn').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						enabled = "[GetScriptedGui('pod_combat_end_turn').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						tooltip = "pod_combat_end_turn_desc"
+					}
+
+					button_standard = {
+						visible = "[And(Not(PODCombatFight.Var('pod_combat_is_over').IsSet), GreaterThan_CFixedPoint(GetPlayer.MakeScope.ScriptValue('pod_combat_advance_pending_value'), '(CFixedPoint)0'))]"
+						size = { 170 33 }
+						text = "pod_combat_advance_turn_label"
+						onclick = "[GetScriptedGui('pod_combat_advance_turn').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						enabled = "[GetScriptedGui('pod_combat_advance_turn').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						tooltip = "pod_combat_advance_turn_tt"
+					}
+
+					# Read the live fight preference; the SGUI also saves it on the character for later fights.
+					button_checkbox_label = {
+						visible = "[Not(PODCombatFight.Var('pod_combat_is_over').IsSet)]"
+						tooltip = "pod_combat_auto_advance_tt"
+						onclick = "[GetScriptedGui('pod_combat_toggle_auto_advance').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+						blockoverride "checkbox" {
+							checked = "[Not(PODCombatFight.Var('pod_combat_step_mode').IsSet)]"
+						}
+
+						blockoverride "text" {
+							text = "pod_combat_auto_advance_label"
+						}
+					}
+
+					expand = {}
+
+					button_standard = {
+						visible = "[Not(PODCombatFight.Var('pod_combat_is_over').IsSet)]"
+						size = { 170 33 }
+						text = "pod_combat_auto_resolve"
+						onclick = "[GetScriptedGui('pod_combat_auto_resolve').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						enabled = "[GetScriptedGui('pod_combat_auto_resolve').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						tooltip = "pod_combat_auto_resolve_desc"
+					}
+
+					# Shell-backed fights must conclude through their event card to preserve its scope table.
+					# This button handles fights started without a shell.
+					button_standard = {
+						visible = "[And(PODCombatFight.Var('pod_combat_is_over').IsSet, Not(PODCombatFight.Var('pod_combat_sc_shell').IsSet))]"
+						size = { 170 33 }
+						text = "pod_combat_end_combat"
+						onclick = "[GetScriptedGui('pod_combat_end_combat').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						enabled = "[GetScriptedGui('pod_combat_end_combat').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					}
+
+					button_standard = {
+						size = { 80 33 }
+						text = "pod_combat_help_button"
+						onclick = "[GetScriptedGui('pod_combat_help').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						enabled = "[GetScriptedGui('pod_combat_help').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+						tooltip = "pod_combat_help_tooltip"
+					}
+				}
+
+				##############################
+				###### COMBAT LOG
+				##############################
+
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					margin = { 10 5 }
+
+					background = {
+						using = Background_Area
+					}
+
+					scrollbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+
+						blockoverride "scrollbox_content"
+						{
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								margin = { 0 2 }
+
+						###### Combat log entries
+						# Scope is the log story; static move fields come from its move reference.
+						# actor_side: 0 = player, 1 = enemy, -1 = system.
+						# Use vbox: flowcontainer rejects hbox/vbox item children.
+						vbox = {
+							layoutpolicy_horizontal = expanding
+							# The list is appended oldest-first; bottomtotop displays newest entries first.
+							bottomtotop = yes
+							spacing = 0
+							ignoreinvisible = yes
+
+							datamodel = "[PODCombatFight.GetList('pod_combat_log')]"
+
+							item = {
+								# Datamodel items accept one child; wrap the system and action row variants together.
+								vbox = {
+									layoutpolicy_horizontal = expanding
+									spacing = 0
+									ignoreinvisible = yes
+
+								###### System divider row
+								vbox = {
+									visible = "[Scope.Var('system_message').IsSet]"
+									layoutpolicy_horizontal = expanding
+									margin = { 0 6 }
+									spacing = 0
+
+									widget = {
+										layoutpolicy_horizontal = expanding
+										size = { -1 1 }
+										background = {
+											texture = "gfx/interface/colors/white.dds"
+											color = { 0.5 0.55 0.6 0.5 }
+										}
+									}
+
+									hbox = {
+										layoutpolicy_horizontal = expanding
+										margin = { 0 4 }
+										expand = {}
+										pod_combat_log_text = {
+											raw_text = "[GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('entry', Scope.Story.MakeScope).Custom('PODCombatLogSystemMessageText')]"
+											font = PODGrotesque
+											fontsize = 18
+											margin_top = -6
+										}
+										expand = {}
+									}
+
+									widget = {
+										layoutpolicy_horizontal = expanding
+										size = { -1 1 }
+										background = {
+											texture = "gfx/interface/colors/white.dds"
+											color = { 0.5 0.55 0.6 0.5 }
+										}
+									}
+								}
+
+								###### Action row
+								# Frame each row because datamodels do not expose adjacent-item comparisons.
+								vbox = {
+									visible = "[Not(Scope.Var('system_message').IsSet)]"
+									layoutpolicy_horizontal = expanding
+									# Draw the team tint below the frame. A color-only background needs a texture to render.
+									background = {
+										visible = "[EqualTo_CFixedPoint(Scope.Var('actor_side').GetValue, '(CFixedPoint)0')]"
+										texture = "gfx/interface/colors/white.dds"
+										color = "[PODCombatAllyColor]"
+										alpha = 0.05
+									}
+									background = {
+										visible = "[EqualTo_CFixedPoint(Scope.Var('actor_side').GetValue, '(CFixedPoint)1')]"
+										texture = "gfx/interface/colors/white.dds"
+										color = "[PODCombatEnemyColor]"
+										alpha = 0.05
+									}
+									# background texture based on the decision illustration
+									background = {
+										visible = "[Scope.Var('move').IsSet]"
+										#framesize = { 1100 440 }
+										framesize = { 1100 220 }
+										fittype = centercrop
+										margin = { -310 -3 }
+										margin_right = -90
+
+										texture = "[Scope.Var('move').Story.MakeScope.Var('decision').DecisionType.GetPicture(GetPlayer.Self)]"
+
+										shaderfile = "gfx/FX/POD_shaders/POD_image_manipulation_shaders.shader"
+										effectname = "PODValueToAlpha"
+
+										alpha = 0.5
+
+										modify_texture = {
+											color = "[Select_CVector4f( EqualTo_CFixedPoint(Scope.Var('actor_side').GetValue, '(CFixedPoint)0'), PODCombatAllyColor, PODCombatEnemyColor )]"
+											blend_mode = multiply
+											alpha = 0.0
+										}
+
+										modify_texture = {
+											texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+											blend_mode = alphamultiply
+										}
+
+										modify_texture = {
+											texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+											blend_mode = alphamultiply
+											#mirror = vertical
+											alpha = 0.5
+										}
+
+										modify_texture = {
+											texture = "gfx/interface/component_masks/mask_clouds.dds"
+											blend_mode = alphamultiply
+											spriteType = corneredTiled
+											alpha = 0.5
+											texture_density = 0.8
+										}
+									}
+									background = {
+										using = Background_Frame
+										color = "[Select_CVector4f( EqualTo_CFixedPoint(Scope.Var('actor_side').GetValue, '(CFixedPoint)0'), PODCombatAllyColor, PODCombatEnemyColor )]"
+										alpha = 0.3
+									}
+
+									hbox = {
+										layoutpolicy_horizontal = expanding
+										margin = { 5 8 }
+										spacing = 0
+
+									###### Team indicator
+									# actor_side is always set; -1 leaves system entries without a team bar.
+									widget = {
+										size = { 4 -1 }
+										layoutpolicy_vertical = expanding
+										background = {
+											visible = "[EqualTo_CFixedPoint(Scope.Var('actor_side').GetValue, '(CFixedPoint)0')]"
+											texture = "gfx/interface/colors/white.dds"
+											color = { 0.83 0.72 0.47 1 }
+										}
+										background = {
+											visible = "[EqualTo_CFixedPoint(Scope.Var('actor_side').GetValue, '(CFixedPoint)1')]"
+											texture = "gfx/interface/colors/white.dds"
+											color = { 0.76 0.33 0.31 1 }
+										}
+									}
+
+									###### Actor, target and move
+									flowcontainer = {
+										direction = horizontal
+										margin = { 8 0 }
+										spacing = 0
+										ignoreinvisible = yes
+
+										pod_combat_log_text = {
+											visible = "[And(Scope.Var('actor').IsSet, EqualTo_CFixedPoint(Scope.Var('actor_side').GetValue, '(CFixedPoint)0'))]"
+											parentanchor = vcenter
+											raw_text = "#color_yellow;bold [Scope.Var('actor').GetCharacter.GetFirstNameNoTooltip]#!"
+											font = PODGrotesque
+											fontsize = 19
+											margin_top = -5
+										}
+										pod_combat_log_text = {
+											visible = "[And(Scope.Var('actor').IsSet, EqualTo_CFixedPoint(Scope.Var('actor_side').GetValue, '(CFixedPoint)1'))]"
+											parentanchor = vcenter
+											raw_text = "#color_red;bold [Scope.Var('actor').GetCharacter.GetFirstNameNoTooltip]#!"
+											font = PODGrotesque
+											fontsize = 19
+											margin_top = -5
+										}
+
+										pod_combat_log_text = {
+											parentanchor = vcenter
+											raw_text = "[GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('entry', Scope.Story.MakeScope).Custom('PODCombatLogTargetText')]"
+											font = PODGrotesque
+											fontsize = 19
+											margin_top = -5
+										}
+
+										# The tooltip needs the move story; datamodel Scope is the log entry.
+										widget = {
+											# Move-less rows have no story for the tooltip to resolve.
+											visible = "[Scope.Var('move').IsSet]"
+											size = { 240 22 }
+											tooltipwidget = {
+												pod_fancy_combat_move_tooltip = {
+													blockoverride "combat_move_texture" {
+														texture = "[Scope.Var('move').Var('decision').DecisionType.GetPicture(GetPlayer.Self)]"
+													}
+													blockoverride "text_title" {
+														text = "POD_combat_log_move_title"
+													}
+													blockoverride "text_desc" {
+														text = "POD_combat_log_move_tooltip"
+													}
+												}
+											}
+											pod_combat_log_text = {
+												visible = "[Scope.Var('move').IsSet]"
+												parentanchor = left|vcenter
+												margin_left = 8
+												raw_text = "#weak;italic [Scope.Var('move').Var('decision').DecisionType.GetTitleForPlayer]#!"
+											}
+										}
+									}
+
+									expand = {}
+
+									###### Result column
+									# Formatting comes from localization. Hide empty segments explicitly: empty text still
+									# reserves baseline width. AoE move-level segments appear only on the first target row.
+									hbox = {
+										spacing = 0
+										ignoreinvisible = yes
+
+											pod_combat_log_text = {
+												visible = "[Scope.Var('move').IsSet]"
+												raw_text = "[PODSegText('PODCombatLogResultText')]"
+											}
+												###### Result segments
+												# PODSeg* reads visibility and separator state captured at push time.
+
+												# Typed damage packets have separate results. Keep their order aligned with
+												# pod_combat_push_log_effect.
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_typed_bonus_damage_1_visible_value', 'pod_combat_log_before_typed_bonus_damage_1_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_typed_bonus_damage_1_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegTypedBonusDamage1')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_typed_bonus_damage_2_visible_value', 'pod_combat_log_before_typed_bonus_damage_2_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_typed_bonus_damage_2_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegTypedBonusDamage2')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_typed_bonus_damage_3_visible_value', 'pod_combat_log_before_typed_bonus_damage_3_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_typed_bonus_damage_3_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegTypedBonusDamage3')]"
+												}
+
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_heal_rider_visible_value', 'pod_combat_log_before_heal_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_heal_rider_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogHealRider')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_morale_damage_rider_visible_value', 'pod_combat_log_before_morale_damage_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_morale_damage_rider_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogMoraleDamageRider')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_morale_heal_rider_visible_value', 'pod_combat_log_before_morale_heal_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_morale_heal_rider_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogMoraleHealRider')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_retal_rider_visible_value', 'pod_combat_log_before_retal_value')]"
+													raw_text = " #bold ·#! "
+												}
+												# Retaliation renders independently of the main attack outcome.
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_retal_rider_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogRetalRider')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_recoil_visible_value', 'pod_combat_log_before_recoil_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_recoil_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegRecoil')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_hit_tier_visible_value', 'pod_combat_log_before_hit_tier_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_hit_tier_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegHitTier')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_soak_tier_visible_value', 'pod_combat_log_before_soak_tier_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_soak_tier_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegSoakTier')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_guard_visible_value', 'pod_combat_log_before_guard_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_guard_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegGuard')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_dodge_visible_value', 'pod_combat_log_before_dodge_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_dodge_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegDodge')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_stealth_visible_value', 'pod_combat_log_before_stealth_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_stealth_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegStealth')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_remove_guard_visible_value', 'pod_combat_log_before_remove_guard_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_remove_guard_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegRemoveGuard')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_retal_armed_visible_value', 'pod_combat_log_before_retal_armed_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_retal_armed_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegRetalArmed')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_ap_gain_visible_value', 'pod_combat_log_before_ap_gain_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_ap_gain_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegApGain')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_ap_drain_visible_value', 'pod_combat_log_before_ap_drain_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_ap_drain_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegApDrain')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_init_debuff_visible_value', 'pod_combat_log_before_init_debuff_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_init_debuff_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegInitDebuff')]"
+												}
+												# Keep segment order aligned with pod_combat_push_log_effect; separators depend on it.
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_energy_gain_visible_value', 'pod_combat_log_before_energy_gain_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_energy_gain_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegEnergyGain')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_energy_drain_visible_value', 'pod_combat_log_before_energy_drain_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_energy_drain_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegEnergyDrain')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_ap_refund_visible_value', 'pod_combat_log_before_ap_refund_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_ap_refund_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegApRefund')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_marker_visible_value', 'pod_combat_log_before_marker_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_marker_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegMarker')]"
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegSepVisible('pod_combat_log_seg_marker_removed_visible_value', 'pod_combat_log_before_marker_removed_value')]"
+													raw_text = " #bold ·#! "
+												}
+												pod_combat_log_text = {
+													visible = "[PODSegVisible('pod_combat_log_seg_marker_removed_visible_value')]"
+													raw_text = "[PODSegText('PODCombatLogSegMarkerRemoved')]"
+												}
+												# Move-less entries without system_message use the unknown-message fallback.
+												pod_combat_log_text = {
+													visible = "[And(Not(Scope.Var('move').IsSet), Scope.Var('system_message').IsSet)]"
+													raw_text = "[GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('entry', Scope.Story.MakeScope).Custom('PODCombatLogSystemMessageText')]"
+													font = PODGrotesque
+													fontsize = 18
+													margin_top = -6
+												}
+												pod_combat_log_text = {
+													visible = "[And(Not(Scope.Var('move').IsSet), Not(Scope.Var('system_message').IsSet))]"
+													raw_text = "#weak —#!"
+												}
+											}
+
+											spacer = { size = { 2 0 } }
+										}
+									}
+								}
+								}
+							}
+
+						pod_combat_log_text = {
+							visible = "[IsDataModelEmpty(PODCombatFight.GetList('pod_combat_log'))]"
+							text = "pod_combat_log_empty"
+							margin = { 5 4 }
+						}
+							}
+						}
+					}
+				}
+			}
+
+			##############################
+			###### RIGHT PANEL: ENEMIES
+			##############################
+
+				vbox = {
+					minimumsize = { 280 -1 }
+					maximumsize = { 280 -1 }
+					layoutpolicy_vertical = expanding
+					margin = { 5 2 }
+
+					text_single = {
+						text = "pod_combat_enemies_label"
+						default_format = "#color_red;bold"
+						font = PODGrotesque
+						fontsize = 18
+						align = center
+					}
+
+					scrollbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						blockoverride "scrollbox_content"
+						{
+							vbox = {
+								layoutpolicy_horizontal = expanding
+								margin = { 0 2 }
+
+								vbox = {
+									layoutpolicy_horizontal = expanding
+									spacing = 14
+
+									datamodel = "[PODCombatFight.GetList('pod_combat_active_slots')]"
+
+									item = {
+										vbox = {
+											visible = "[Not(PODCombatSlotIsAlly)]"
+											spacing = 1
+
+											layoutpolicy_horizontal = expanding
+
+											pod_combat_big_portrait = {
+												visible = "[GetScriptedGui('pod_combat_enemy_big_portrait_is_shown').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('slot_story', Scope.Story.MakeScope).End)]"
+												datacontext = "[Scope.Var('slot_char').GetCharacter]"
+
+												# this one needs a slightly narrower margin
+												blockoverride "crop_size" {
+													size = { 242 412 }
+												}
+												blockoverride "frame_margin" {
+													margin = { 4 0 }
+												}
+
+												blockoverride "fog_mirror" {
+													mirror = horizontal
+												}
+
+												blockoverride "portrait_button" {
+													# camera doesn't leave the subject centered, annoyingly
+													position = { -62 0 }
+
+													portrait_texture = "[Character.GetAnimatedPortraitEvenIfDead( 'POD_environment_combat_right', 'camera_event_right', Select_CString( PODCharHasNoHumanBody, 'personality_zealous', 'waki_gamae' ), PdxGetWidgetScreenSize( PdxGuiWidget.Self ) )]"
+
+													# actually color of the shadow
+													#color = "[PODCombatEnemyColor]"
+													# slightly more saturated than the default color
+													color = [PODCombatEnemyPortraitColor]
+
+													# actually UV offset of the shadow
+													portrait_offset = { -0.02 -0.01 }
+												}
+											}
+
+											pod_combat_datamodel_slot = {}
+										}
+									}
+								}
+
+								expand = {}
+							}
+						}
+					}
+				}
+			}
+
+				widget = {
+					minimumsize = { -1 20 }
+					maximumsize = { -1 20 }
+				}
+			}
+
+			# The extra 25px separates the enemy panel from the window decoration.
+			widget = {
+				minimumsize = { 55 -1 }
+				maximumsize = { 55 -1 }
+			}
+		}
+	}
+}
+
+types PODCombatTypes {
+
+	# Shared font size for log text and separators; keep per-widget sizes unset.
+	type pod_combat_log_text = text_single {
+		fontsize = 16
+	}
+
+	# Wound-box item for pod_combat_health_track: int32 values 4/2/1 select
+	# aggravated/superficial/empty icons and their concept tooltips.
+	# To be used with GetSegmentedProgressTargetBar
+	# (see the comment in pod_combat_health_track)
+	type pod_combat_wound_box = widget {
+		size = { 12 12 }
+		icon = {
+			block "agg_icon_visible" {
+				visible = "[EqualTo_int32(int32.GetInt, '(int32)4')]"
+			}
+			texture = "gfx/interface/icons/text_icons/aggravateddamagehealthtrack.dds"
+			size = { 100% 100% }
+			text_single = {
+				raw_text = "[Concept('POD_aggravated_damage','     ')]"
+				default_format = "#!"
+				fontsize = 12
+				fontsize_min = 11
+				parentanchor = center
+			}
+		}
+		icon = {
+			block "super_icon_visible" {
+				visible = "[EqualTo_int32(int32.GetInt, '(int32)2')]"
+			}
+			texture = "gfx/interface/icons/text_icons/normaldamagehealthtrack.dds"
+			size = { 100% 100% }
+			text_single = {
+				raw_text = "[Concept('POD_superficial_damage','     ')]"
+				default_format = "#!"
+				fontsize = 12
+				fontsize_min = 11
+				parentanchor = center
+			}
+		}
+		icon = {
+			block "empty_icon_visible" {
+				visible = "[EqualTo_int32(int32.GetInt, '(int32)1')]"
+			}
+			texture = "gfx/interface/icons/text_icons/emptyhealthtrack.dds"
+			size = { 100% 100% }
+			text_single = {
+				raw_text = "[Concept('POD_health_track','     ')]"
+				default_format = "#!"
+				fontsize = 12
+				fontsize_min = 11
+				parentanchor = center
+			}
+		}
+	}
+
+	# AP pip. Callers override visibility for empty, filled and supercharged states:
+	# empty: current_ap < index; filled: current_ap >= index and index <= threshold;
+	# supercharged: current_ap >= index and index > threshold.
+	type pod_combat_ap_pip = widget {
+		# slightly smaller than the textures to center the pips vertically
+		size = { 16 11 }
+		icon = {
+			size = { 16 16 }
+			texture = "gfx/interface/icons/combat/ap_pip_empty.dds"
+			block "empty_visible" { visible = no }
+		}
+		icon = {
+			size = { 16 16 }
+			texture = "gfx/interface/icons/combat/ap_pip_filled.dds"
+			block "filled_visible" { visible = no }
+		}
+		icon = {
+			size = { 16 16 }
+			texture = "gfx/interface/icons/combat/ap_pip_supercharge.dds"
+			block "supercharge_visible" { visible = no }
+		}
+	}
+
+	# Initiative chip; Scope is a slot story from the sorted turn-order list.
+	# Target selection passes that story as target_slot to pod_combat_select_target.
+	type pod_combat_initiative_track_item = vbox {
+		visible = "[Scope.Var('slot_char').IsSet]"
+		background = {
+			using = Background_Area_Dark
+		}
+		background = {
+			visible = "[EqualTo_CFixedPoint(GetPlayer.MakeScope.ScriptValue('pod_combat_current_actor_value'), Scope.ScriptValue('pod_combat_slot_ordinal_value'))]"
+			using = Background_Area
+		}
+		widget = {
+			datacontext = "[Scope.Var('slot_char').GetCharacter]"
+			size = { 64 76 }
+			vbox = {
+				widget = {
+					size = { 84 88 }
+					#portrait_head_small without block "opinion_box"/status_icons/widget_portrait_frame
+					widget = {
+						size = { 84 88 }
+
+						background = {
+							using = Background_Area_Solid
+
+							modify_texture = {
+								texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+								blend_mode = alphamultiply
+								alpha = 0.2
+								mirror = vertical
+							}
+						}
+
+						widget = {
+							size = { 100% 100% }
+							using = Portrait_Background_Glows
+
+							block "empty_character" {}
+						}
+
+						portrait_button = {
+							parentanchor = bottom|hcenter
+							size = { 80 100 }
+							using = portrait_base
+
+							block "portrait_texture"
+							{
+								portrait_texture = "[Character.GetPortrait('environment_head', 'camera_head', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+							}
+
+							mask = "gfx/portraits/portrait_mask_head_small.dds"
+							effectname = "NoHighlight"
+
+							# Same tooltip override as the slot card's portrait_shoulders below.
+							blockoverride "portrait_button_template_tooltip" {
+								tooltip_visible = "[Not(IsInteractionMenuOpenForCharacter(Character.GetID))]"
+								tooltipwidget = {
+									pod_combat_datamodel_slot_stats_tooltip = {}
+								}
+							}
+						}
+					}
+					# Draw the frame before the acted/KO overlay so both frame and portrait dim.
+					icon = {
+						visible = "[PODCombatSlotIsAlly]"
+						size = { 100% 100% }
+						texture = "gfx/portraits/portrait_frame.dds"
+						color = { 1 1 0.5 1 }
+						alwaystransparent = yes
+					}
+					icon = {
+						visible = "[Not(PODCombatSlotIsAlly)]"
+						size = { 100% 100% }
+						texture = "gfx/portraits/portrait_frame.dds"
+						color = { 1 0 0 0.9 }
+						alwaystransparent = yes
+					}
+					icon = {
+						visible = "[Or(GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_has_acted_value'), '(CFixedPoint)0'), EqualTo_CFixedPoint(Scope.ScriptValue('pod_combat_slot_alive_value'), '(CFixedPoint)0'))]"
+						size = { 100% 100% }
+						texture = "gfx/interface/colors/white.dds"
+						color = { 0 0 0 0.55 }
+						alwaystransparent = yes
+					}
+					icon = {
+						visible = "[EqualTo_CFixedPoint(GetPlayer.MakeScope.ScriptValue('pod_combat_current_actor_value'), Scope.ScriptValue('pod_combat_slot_ordinal_value'))]"
+						size = { 100% 100% }
+						texture = "gfx/interface/colors/white.dds"
+						color = { 0.95 0.8 0.25 0.1 }
+						alwaystransparent = yes
+					}
+					widget = {
+						visible = "[PODCombatSlotIsTargetedByPlayer]"
+						size = { 100% 17 }
+						alwaystransparent = yes
+						state = {
+							name = _show
+							using = Animation_FadeIn_Quick
+							using = Sound_WindowShow_Standard
+						}
+						state = {
+							name = _hide
+							using = Animation_FadeOut_Quick
+							using = Sound_WindowHide_Standard
+						}
+						icon = {
+							texture = "gfx/interface/icons/combat/Targeted.dds"
+							size = { 50 25 }
+							parentanchor = center
+							alwaystransparent = yes
+							shaderfile = "gfx/FX/POD_shaders/POD_shaders_with_inputs.shader"
+							effectname = "PODHeartblood"
+							spriteborder_left   = 1.0  # heart rate / flow speed
+							spriteborder_top    = 3.0  # vessel scale (zoom)
+							spriteborder_right  = 1.0  # contraction strength
+							spriteborder_bottom = 0.75  # radial edge falloff
+							modify_texture = { color = { 0.18 0.01 0.02 } } # venous (dark)
+							modify_texture = { color = { 0.75 0.04 0.06 } } # arterial (bright)
+						}
+					}
+					# Click-to-target: same pod_combat_select_target wiring as
+					# the slot cards' body underlay (this chip's slot story =
+					# scope:target_slot); the SGUI's IsValid keeps KO'd slots
+					# and off-turn clicks disabled.
+					# Keep targeting controls hoverable for stats and right-click interactions.
+					button_standard_hover = {
+						size = { 100% 100% }
+						onclick = "[GetScriptedGui('pod_combat_select_target').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('target_slot', Scope.Story.MakeScope).End)]"
+						# "enabled" block not necessary since SGUIs don't execute if is_valid is false
+						onrightclick = "[DefaultOnCharacterClick(Character.GetID)]"
+						button_ignore = none
+						# Allow the tall stats tooltip to slide or mirror at screen edges.
+						using = tooltip_es
+						tooltipwidget = {
+							pod_combat_datamodel_slot_stats_tooltip = {}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	type pod_combat_datamodel_slot = vbox {
+		visible = "[Scope.Var('slot_char').IsSet]"
+
+		# Scope stays the slot story; Character supplies participant bindings.
+		datacontext = "[Scope.Var('slot_char').GetCharacter]"
+
+		minimumsize = { 240 -1 }
+		maximumsize = { 240 -1 }
+		background = { using = Background_Area }
+
+		scissor = yes
+
+		widget = {
+			size = { 240 90 }
+
+			pod_combat_splat_icon = {
+				position = { 48 -4 }
+
+				blockoverride "color" {
+					color = { 0 0 0 1 }
+				}
+			}
+
+			pod_combat_splat_icon = {
+				position = { 44 -8 }
+
+				blockoverride "color" {
+					color = "[Select_CVector4f(PODCombatSlotIsAlly, PODCombatAllyColor, PODCombatEnemyColor)]"
+				}
+			}
+
+			hbox = {
+				margin = { 3 2 }
+				# Opinion badge suppressed; see the initiative-chip portrait.
+				portrait_shoulders = {
+					blockoverride "portrait_texture" {
+						portrait_texture = "[Character.GetPortrait( 'POD_environment_hud', 'camera_shoulders', 'idle', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
+					}
+
+					size = { 90 90 }
+					blockoverride "opinion_box" {}
+					blockoverride "coa" {}
+					blockoverride "status_icons" {}
+					blockoverride "portrait_size" { size = { 90 100 } }
+					# Override portrait_base's tooltip block and retain its interaction-menu gate.
+					blockoverride "portrait_button_template_tooltip" {
+						tooltip_visible = "[Not(IsInteractionMenuOpenForCharacter(Character.GetID))]"
+						tooltipwidget = {
+							pod_combat_datamodel_slot_stats_tooltip = {}
+						}
+					}
+					widget = {
+						visible = "[PODCombatSlotIsTargetedByPlayer]"
+						size = { 100% 17 }
+						alwaystransparent = yes
+						state = {
+							name = _show
+							using = Animation_FadeIn_Quick
+							using = Sound_WindowShow_Standard
+							using = Window_Position_MainTab
+						}
+
+						state = {
+							name = _hide
+							using = Animation_FadeOut_Quick
+							using = Sound_WindowHide_Standard
+							using = Window_Position_MainTab_Hide
+						}
+						icon = {
+							texture = "gfx/interface/icons/combat/Targeted.dds"
+							size = { 50 25 }
+							parentanchor = center
+							alwaystransparent = yes
+							shaderfile = "gfx/FX/POD_shaders/POD_shaders_with_inputs.shader"
+							effectname = "PODHeartblood"
+							spriteborder_left   = 1.0  # heart rate / flow speed
+							spriteborder_top    = 3.0  # vessel scale (zoom)
+							spriteborder_right  = 1.0  # contraction strength
+							spriteborder_bottom = 0.75  # radial edge falloff
+							modify_texture = { color = { 0.18 0.01 0.02 } } # venous (dark)
+							modify_texture = { color = { 0.75 0.04 0.06 } } # arterial (bright)
+						}
+					}
+				}
+				vbox = {
+					margin_left = 4
+					spacing = 1
+					hbox = {
+						layoutpolicy_horizontal = expanding
+
+						widget = {
+							size = { 148 10 }
+							text_single = {
+								position = { 3 3 }
+								raw_text = "[Character.GetFirstNameNoTooltip]"
+								default_format = "#bold;font:PODGrotesque;color:{0,0,0,0.5}"
+								fontsize = 17
+								align = left|nobaseline
+								autoresize = no
+								size = { 100% 100% }
+							}
+							text_single = {
+								raw_text = "[Character.GetFirstNameNoTooltip]"
+								default_format = "#bold;font:PODGrotesque;V"
+								fontsize = 17
+								align = left|nobaseline
+								autoresize = no
+								size = { 100% 100% }
+							}
+						}
+						expand = {}
+					}
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						text_single = {
+							text = "pod_combat_card_health_label"
+							default_format = "#weak;bold"
+						}
+						expand = {}
+					}
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						pod_combat_health_track = {}
+						expand = {}
+					}
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						text_single = {
+							text = "pod_combat_card_morale_label"
+							default_format = "#weak;bold"
+						}
+						expand = {}
+					}
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						pod_combat_morale_track = {}
+						expand = {}
+					}
+				}
+			}
+
+			# Keep stats hover available on self and KO cards; the SGUI rejects their targeting clicks.
+			button = {
+				size = { 100% 100% }
+				onclick = "[GetScriptedGui('pod_combat_select_target').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('target_slot', Scope.Story.MakeScope).End)]"
+				# "enabled" block not necessary since SGUIs don't execute if is_valid is false
+				onrightclick = "[DefaultOnCharacterClick(Character.GetID)]"
+				button_ignore = none
+				tooltipwidget = {
+					pod_combat_datamodel_slot_stats_tooltip = {}
+				}
+			}
+
+			# Keep the overlay inside the fixed-size portrait widget. A 100% overlay inside the
+			# auto-sized card creates a sizing cycle that can crash CK3. Leave hover transparent.
+			icon = {
+				visible = "[EqualTo_CFixedPoint(Scope.ScriptValue('pod_combat_slot_alive_value'), '(CFixedPoint)0')]"
+				size = { 100% 100% }
+				texture = "gfx/interface/colors/white.dds"
+				color = { 0 0 0 0.9 }
+				alwaystransparent = yes
+				modify_texture = {
+					texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+					blend_mode = alphamultiply
+					mirror = vertical
+					alpha = 0.4
+				}
+			}
+			text_single = {
+				visible = "[EqualTo_CFixedPoint(Scope.ScriptValue('pod_combat_slot_alive_value'), '(CFixedPoint)0')]"
+				size = { 100% 100% }
+				autoresize = no
+				align = center|nobaseline
+				text = "pod_combat_card_knocked_out"
+				font = PODGrotesque
+				fontsize = 30
+				default_format = "#bold;outline"
+				alwaystransparent = yes
+			}
+		}
+		# The fixed-width stats vbox sizes its parent widget and targeting button.
+		widget = {
+			visible = "[EqualTo_CFixedPoint(Scope.ScriptValue('pod_combat_slot_alive_value'), '(CFixedPoint)1')]"
+			button = {
+				size = { 100% 100% }
+				onclick = "[GetScriptedGui('pod_combat_select_target').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('target_slot', Scope.Story.MakeScope).End)]"
+				# "enabled" block not necessary since SGUIs don't execute if is_valid is false
+				onrightclick = "[DefaultOnCharacterClick(Character.GetID)]"
+				button_ignore = none
+				tooltipwidget = {
+					pod_combat_datamodel_slot_stats_tooltip = {}
+				}
+			}
+			vbox = {
+				resizeparent = yes
+				minimumsize = { 240 -1 }
+				maximumsize = { 240 -1 }
+				spacing = 0
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					margin = { 10 0 }
+					text_single = {
+						text = "pod_combat_card_prowess_label"
+						default_format = "#weak"
+					}
+					expand = {}
+					# Cards show signed tier modifiers. Absolute hit chance appears in the window header.
+					text_single = {
+						text = "pod_combat_card_hit_label"
+						default_format = "#weak"
+					}
+					expand = {}
+					text_single = {
+						text = "pod_combat_card_soak_label"
+						default_format = "#weak"
+					}
+				}
+				# Reserve height for the absolutely positioned status icons.
+				spacer = { size = { 0 20 } }
+				# raw_text evaluates while hidden; the focus-target customizable localization must guard missing marks.
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					margin = { 10 1 }
+					visible = "[Scope.Var('slot_char').GetCharacter.MakeScope.Var('pod_combat_ai_focus_char').IsSet]"
+					text_single = {
+						raw_text = "[GuiScope.SetRoot(Scope.Story.MakeScope).Custom('PODCombatSlotFocusTarget')]"
+						default_format = "#weak"
+						# Ellipsize long names to preserve card width.
+						autoresize = yes
+						max_width = 210
+						elide = right
+					}
+					expand = {}
+				}
+			}
+			icon = {
+				visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_is_guarding_value'), '(CFixedPoint)0')]"
+				texture = "gfx/interface/icons/combat/guard.dds"
+				size = { 18 18 }
+				position = { 56 26 }
+				tooltip = "pod_combat_status_guard_tt"
+			}
+			icon = {
+				visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_is_dodging_value'), '(CFixedPoint)0')]"
+				texture = "gfx/interface/icons/combat/dodge.dds"
+				size = { 18 18 }
+				position = { 75 26 }
+				tooltip = "pod_combat_status_dodge_tt"
+			}
+			icon = {
+				visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_is_stealthed_value'), '(CFixedPoint)0')]"
+				texture = "gfx/interface/icons/combat/stealth.dds"
+				size = { 18 18 }
+				position = { 94 26 }
+				tooltip = "pod_combat_status_stealth_tt"
+			}
+			icon = {
+				visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_has_retaliation_value'), '(CFixedPoint)0')]"
+				texture = "gfx/interface/icons/combat/retaliation.dds"
+				size = { 18 18 }
+				position = { 113 26 }
+				tooltip = "pod_combat_status_retaliation_tt"
+			}
+			icon = {
+				visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_has_dot_value'), '(CFixedPoint)0')]"
+				texture = "gfx/interface/icons/combat/DoT.dds"
+				size = { 18 18 }
+				position = { 132 26 }
+				tooltip = "pod_combat_status_dot_tt"
+			}
+			icon = {
+				visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_is_dazed_value'), '(CFixedPoint)0')]"
+				texture = "gfx/interface/icons/combat/ap_pip_empty.dds"
+				size = { 18 18 }
+				position = { 151 26 }
+				tooltip = "pod_combat_status_daze_tt"
+			}
+			icon = {
+				visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_is_controlled_value'), '(CFixedPoint)0')]"
+				texture = "gfx/interface/icons/traits/dominate.dds"
+				size = { 18 18 }
+				position = { 170 26 }
+				tooltip = "pod_combat_status_control_tt"
+			}
+		}
+		# Draw the hollow team frame over the actor highlight.
+		background = {
+			visible = "[PODCombatSlotIsAlly]"
+			using = Background_Area_Border_Solid
+			color = "[PODCombatAllyColor]"
+			margin = { 0 0 }
+		}
+		background = {
+			visible = "[PODCombatSlotIsAlly]"
+			using = Background_Area_Solid
+			color = "[PODCombatAllyColor]"
+			alpha = 0.2
+			margin = { 7 7 }
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_corner.dds"
+				blend_mode = alphamultiply
+				mirror = horizontal|vertical
+			}
+		}
+		background = {
+			visible = "[Not(PODCombatSlotIsAlly)]"
+			using = Background_Area_Border_Solid
+			color = "[PODCombatEnemyColor]"
+			margin = { 0 0 }
+		}
+		background = {
+			visible = "[Not(PODCombatSlotIsAlly)]"
+			using = Background_Area_Solid
+			color = "[PODCombatEnemyColor]"
+			alpha = 0.2
+			margin = { 7 7 }
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_corner.dds"
+				blend_mode = alphamultiply
+				mirror = horizontal|vertical
+			}
+		}
+		# The ordinal interleaves teams: player position p = 2p, enemy position p = 2p+1.
+		background = {
+			visible = "[EqualTo_CFixedPoint(GetPlayer.MakeScope.ScriptValue('pod_combat_current_actor_value'), Scope.ScriptValue('pod_combat_slot_ordinal_value'))]"
+			using = Background_Area_Dark
+			margin = { 7 7 }
+		}
+		background = {
+			visible = "[PODCombatSlotIsAlly]"
+			using = Background_Frame
+			color = "[PODCombatAllyColor]"
+			margin = { 6 6 }
+		}
+		background = {
+			visible = "[Not(PODCombatSlotIsAlly)]"
+			using = Background_Frame
+			color = "[PODCombatEnemyColor]"
+			margin = { 5 5 }
+		}
+	}
+
+	# scope datacontext (a combat slot)
+	type pod_combat_health_track = flowcontainer {
+		direction = horizontal
+		spacing = 0
+		wrap_count = 10
+
+		# GetSegmentedProgressTargetBar(x,y,z)
+		# Returns a datamodel with x items. Each item gets assigned a number (int32).
+		# The first y items get assigned '(int32)4'.
+		# The next (z-y) items get assigned '(int32)2'.
+		# The remaining items get assigned '(int32)1'.
+		# The numbers can then be read with int32.GetInt on the items.
+		datamodel = "[GetSegmentedProgressTargetBar( FixedPointToInt( Scope.Var('slot_mirror_maxhp').GetValue ), FixedPointToInt(Scope.Var('slot_mirror_agg').GetValue), FixedPointToInt(Scope.Var('slot_mirror_total').GetValue) )]"
+
+		item = {
+			pod_combat_wound_box = {
+				block "wound_box_size" {}
+
+				background = {
+					texture = "gfx/interface/colors/black.dds"
+					color = { 0 0 0 1 }
+					alpha = 0.5
+				}
+			}
+		}
+	}
+
+	# scope datacontext (a combat slot)
+	type pod_combat_morale_track = hbox {
+		datamodel = "[GetSegmentedProgressTargetBar( FixedPointToInt(Scope.ScriptValue('pod_combat_slot_max_morale_value')), FixedPointToInt(Scope.Var('slot_morale').GetValue), FixedPointToInt(Scope.Var('slot_morale').GetValue) )]"
+
+
+		tooltip = "pod_combat_slot_morale_tt"
+
+		item = {
+			widget = {
+				# max width of 140px, divided by the amount of max morale
+				# casting from int -> float since there is no floor() function
+				# this ensures the bar will not exceed the max width
+				block "segment_size" {
+					size = "[FloatToCVector2f( IntToFloat( FixedPointToInt( Divide_CFixedPoint( '(CFixedPoint)140', Scope.ScriptValue('pod_combat_slot_max_morale_value') ) ) ), '(float)10' )]"
+				}
+
+				background = {
+					texture = "gfx/interface/colors/black.dds"
+					color = { 0 0 0 1 }
+					margin_right = -1
+				}
+
+				background = {
+					texture = "gfx/interface/colors/white.dds"
+					fittype = centercrop
+
+					# distance between segments
+					margin_right = -1
+
+					shaderfile = "gfx/FX/POD_shaders/POD_image_manipulation_shaders.shader"
+					effectname = "PODValueToAlphaCustomBlendfactor"
+
+					modify_texture = {
+						color = "[Select_CVector4f( EqualTo_int32(int32.GetInt,'(int32)1'), '(CVector4f)0.9,0.98,1,1', Select_CVector4f(PODCombatSlotIsAlly, PODCombatAllyColor, PODCombatEnemyColor) )]"
+						alpha = 0.0
+					}
+
+					modify_texture = {
+						visible = "[EqualTo_int32(int32.GetInt,'(int32)1')]"
+						texture = "gfx/interface/progressbars/progress_standard_original.dds"
+						blend_mode = multiply
+					}
+
+					modify_texture = {
+						visible = "[Not(EqualTo_int32(int32.GetInt,'(int32)1'))]"
+						texture = "gfx/interface/progressbars/progress_standard.dds"
+						blend_mode = multiply
+						alpha = 0.2
+					}
+
+					modify_texture = {
+						texture = "gfx/interface/component_masks/mask_fade_corner.dds"
+						blend_mode = alphamultiply
+						alpha = 0.45
+						mirror = vertical|horizontal
+					}
+
+					modify_texture = {
+						texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+						blend_mode = alphamultiply
+						alpha = 0.4
+					}
+				}
+			}
+		}
+	}
+
+
+	# Tooltip with relevant combat stats for each combatant.
+	# Scope must be a slot story; pin Character to slot_char.
+	type pod_combat_datamodel_slot_stats_tooltip = widget {
+		alwaystransparent = no
+		datacontext = "[Scope.Var('slot_char').GetCharacter]"
+
+		using = DefaultTooltipBackground
+		using = GeneralTooltipSetup
+
+		background = {
+			texture = "gfx/interface/illustrations/event_story/tgp_dynastic_cycle_consolidation.dds"
+			fittype = centercrop
+			# size of the event_story illustrations
+			framesize = { 3840 1252 }
+			margin = { -5 -5 }
+
+			# somewhat dimmed for allies
+			# since that version has more contrast
+			alpha = "[Select_float( PODCombatSlotIsAlly, '(float)0.4', '(float)0.7' )]"
+
+			modify_texture = {
+				color = "[Select_CVector4f( PODCombatSlotIsAlly, PODCombatAllyColor, PODCombatEnemyPortraitColor )]"
+				blend_mode = multiply
+			}
+
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+				blend_mode = alphamultiply
+			}
+
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_horizontal_middle.dds"
+				blend_mode = alphamultiply
+				alpha = 0.75
+			}
+
+			# vignette
+			modify_texture = {
+				texture = "gfx/interface/component_overlay/overlay_effect.dds"
+				blend_mode = overlay
+			}
+			modify_texture = {
+				texture = "gfx/interface/component_overlay/overlay_effect.dds"
+				blend_mode = overlay
+			}
+			modify_texture = {
+				texture = "gfx/interface/component_overlay/overlay_effect.dds"
+				blend_mode = overlay
+			}
+		}
+
+		hbox = {
+			set_parent_size_to_minimum = yes
+			layoutpolicy_horizontal = expanding
+
+			spacer = { size = { 6 0 } }
+
+			# enemy portrait is on the left
+			# basically we don't want the portrait tooltip to get in the way
+			# when trying to hover the other UI elements
+			hbox = {
+				visible = "[Not(PODCombatSlotIsAlly)]"
+
+				vbox = {
+					spacer = { size = { 0 6 } }
+					pod_combat_tooltip_portrait = {}
+					spacer = { size = { 0 6 } }
+				}
+
+				spacer = { size = { 6 0 } }
+			}
+
+			vbox = {
+				margin = { 14 11 }
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				spacing = 2
+
+				spacer = { size = { 0 4 } }
+
+				text_single = {
+					text = "pod_combat_stats_tt_title"
+					default_format = "#font:PODGrotesque;color:{0,0,0,0.9}"
+					fontsize = 20
+					alwaystransparent = yes
+					text_single = {
+						parentanchor = center
+						position = { -1 -2 }
+						text = "pod_combat_stats_tt_title"
+						default_format = "#font:PODGrotesque;V"
+						fontsize = 20
+						alwaystransparent = yes
+					}
+				}
+
+				spacer = { size = { 0 4 } }
+
+				#text_single = {
+				text_label_center = {
+					text = "pod_combat_stats_tt_health"
+					#default_format = "#outline"
+				}
+				#spacer = { size = { 0 1 } }
+
+				pod_combat_health_track = {
+					spacing = 1
+					blockoverride "wound_box_size" {
+						size = { 18 18 }
+					}
+				}
+				spacer = { size = { 0 1 } }
+
+				#text_single = {
+				text_label_center = {
+					text = "pod_combat_stats_tt_morale"
+					#default_format = "#outline"
+				}
+				#spacer = { size = { 0 1 } }
+
+				pod_combat_morale_track = {
+					background = {
+						texture = "gfx/interface/colors/black.dds"
+						color = { 0 0 0 1 }
+						margin = { 1 1 }
+						margin_right = 0
+						alpha = 0.6
+					}
+					alpha = 0.9
+					# 50% bigger than the default
+					blockoverride "segment_size" {
+						size = "[FloatToCVector2f( IntToFloat( FixedPointToInt( Divide_CFixedPoint( '(CFixedPoint)210', Scope.ScriptValue('pod_combat_slot_max_morale_value') ) ) ), '(float)15' )]"
+					}
+				}
+
+				spacer = { size = { 0 8 } }
+
+				# ── HIT CHANCE ─────────────────────────────
+				# Show the signed net tier modifier, matching the card; list its contributing axes below.
+				text_single = {
+					text = "pod_combat_stats_tt_hit"
+					alwaystransparent = yes
+				}
+				flowcontainer = {
+					spacing = 6
+					ignoreinvisible = yes
+
+					text_single = {
+						visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_hit_buff_round_mag_sv'), '(CFixedPoint)0')]"
+						text = "pod_combat_stats_tt_hit_buff_round"
+						alwaystransparent = yes
+					}
+					text_single = {
+						visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_hit_buff_combat_mag_sv'), '(CFixedPoint)0')]"
+						text = "pod_combat_stats_tt_hit_buff_combat"
+						alwaystransparent = yes
+					}
+					text_single = {
+						visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_hit_debuff_round_mag_sv'), '(CFixedPoint)0')]"
+						text = "pod_combat_stats_tt_hit_debuff_round"
+						alwaystransparent = yes
+					}
+					text_single = {
+						visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_hit_debuff_combat_mag_sv'), '(CFixedPoint)0')]"
+						text = "pod_combat_stats_tt_hit_debuff_combat"
+						alwaystransparent = yes
+					}
+				}
+
+				spacer = { size = { 0 4 } }
+
+				# ── SOAK CHANCE ────────────────────────────
+				text_single = {
+					text = "pod_combat_stats_tt_soak"
+					alwaystransparent = yes
+				}
+				flowcontainer = {
+					spacing = 6
+					ignoreinvisible = yes
+
+					text_single = {
+						visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_soak_buff_round_mag_sv'), '(CFixedPoint)0')]"
+						text = "pod_combat_stats_tt_soak_buff_round"
+						alwaystransparent = yes
+					}
+					text_single = {
+						visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_soak_buff_combat_mag_sv'), '(CFixedPoint)0')]"
+						text = "pod_combat_stats_tt_soak_buff_combat"
+						alwaystransparent = yes
+					}
+					text_single = {
+						visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_soak_debuff_round_mag_sv'), '(CFixedPoint)0')]"
+						text = "pod_combat_stats_tt_soak_debuff_round"
+						alwaystransparent = yes
+					}
+					text_single = {
+						visible = "[GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_soak_debuff_combat_mag_sv'), '(CFixedPoint)0')]"
+						text = "pod_combat_stats_tt_soak_debuff_combat"
+						alwaystransparent = yes
+					}
+				}
+				# Soak buffs compound; the total is not the sum of the displayed lines.
+				text_single = {
+					visible = "[Or(GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_soak_buff_round_mag_sv'), '(CFixedPoint)0'),GreaterThan_CFixedPoint(Scope.ScriptValue('pod_combat_slot_soak_buff_combat_mag_sv'), '(CFixedPoint)0'))]"
+					text = "pod_combat_stats_tt_compound_note"
+					default_format = "#weak;italic"
+					alwaystransparent = yes
+				}
+
+				spacer = { size = { 0 8 } }
+
+				# ── INITIATIVE ─────────────────────────────
+				# text_single = {
+				# 	visible = "[EqualTo_CFixedPoint(Scope.ScriptValue('pod_combat_slot_alive_value'), '(CFixedPoint)1')]"
+				# 	text = "pod_combat_stats_tt_initiative"
+				# 	alwaystransparent = yes
+				# }
+				# text_single = {
+				# 	visible = "[EqualTo_CFixedPoint(Scope.ScriptValue('pod_combat_slot_alive_value'), '(CFixedPoint)1')]"
+				# 	text = "pod_combat_stats_tt_turn_order"
+				# 	alwaystransparent = yes
+				# }
+				# spacer = { size = { 0 4 } }
+				expand = {}
+
+				# ── SUSCEPTIBILITIES ──────────────────
+				# Classifiers run without wound_attacker, so these show splat defaults without weapon overrides.
+				text_multi = {
+					raw_text = "[GuiScope.SetRoot(Character.MakeScope).AddScope('subject', Character.MakeScope).Custom('PODCombatSuscAggRow')]"
+					autoresize = yes
+					maximumsize = { 320 -1 }
+					alwaystransparent = yes
+					align = center
+				}
+				text_multi = {
+					raw_text = "[GuiScope.SetRoot(Character.MakeScope).AddScope('subject', Character.MakeScope).Custom('PODCombatSuscImmRow')]"
+					autoresize = yes
+					maximumsize = { 320 -1 }
+					alwaystransparent = yes
+					align = center
+				}
+
+				spacer = { size = { 0 8 } }
+
+				# Use the targeting SGUI's validity check for the hint. Slot init guarantees slot_alive
+				# and combat_team; new optional reads in the SGUI need nested presence guards.
+				vbox = {
+					visible = "[GetScriptedGui('pod_combat_select_target').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('target_slot', Scope.Story.MakeScope).End)]"
+					layoutpolicy_horizontal = expanding
+
+					vbox = {
+						visible = "[PODCombatSlotIsTargetedByPlayer]"
+						layoutpolicy_horizontal = expanding
+
+						text_single = {
+							visible = "[PODCombatSlotIsAlly]"
+							text = "pod_combat_already_targeted_ally"
+							default_format = "#I"
+							alwaystransparent = yes
+						}
+						text_single = {
+							visible = "[Not(PODCombatSlotIsAlly)]"
+							text = "pod_combat_already_targeted_enemy"
+							default_format = "#I"
+							alwaystransparent = yes
+						}
+					}
+
+					vbox = {
+						visible = "[Not(PODCombatSlotIsTargetedByPlayer)]"
+						layoutpolicy_horizontal = expanding
+
+						text_single = {
+							visible = "[PODCombatSlotIsAlly]"
+							text = "pod_combat_select_target_ally"
+							default_format = "#I"
+							alwaystransparent = yes
+						}
+						text_single = {
+							visible = "[Not(PODCombatSlotIsAlly)]"
+							text = "pod_combat_select_target_enemy"
+							default_format = "#I"
+							alwaystransparent = yes
+						}
+					}
+				}
+
+				text_single = {
+					text = "pod_combat_select_target_rightclick"
+					default_format = "#I"
+					alwaystransparent = yes
+				}
+
+				spacer = { size = { 0 8 } }
+			}
+
+			# ally portrait is on the right
+			# basically we don't want the portrait tooltip to get in the way
+			# when trying to hover the other UI elements
+			hbox = {
+				visible = "[PODCombatSlotIsAlly]"
+
+				spacer = { size = { 6 0 } }
+
+				vbox = {
+					spacer = { size = { 0 6 } }
+					pod_combat_tooltip_portrait = {}
+					spacer = { size = { 0 6 } }
+				}
+			}
+
+			spacer = { size = { 6 0 } }
+		}
+	}
+
+
+	type pod_combat_big_portrait = widget {
+		# for positioning
+		size = { 240 394 }
+
+		background = {
+			# "Yeah I really do prefer it fogless" - Typhon
+			visible = no
+
+			texture = "gfx/interface/colors/white.dds"
+
+			margin = { 1 -2 }
+
+			shaderfile = "gfx/FX/POD_shaders/POD_shaders_with_inputs.shader"
+			effectname = "PODFBM"
+
+			block "fog_mirror" {}
+
+			spriteborder_left   = 0.3 # speed
+			spriteborder_top    = 0.4 # zoom
+			spriteborder_right  = 2.0 # aspect ratio stretch factor
+			spriteborder_bottom = 1.0 # alpha gradient strength
+
+			modify_texture = { color = "[Select_CVector4f( PODCombatSlotIsAlly, PODCombatAllyColor, PODCombatEnemyColor )]" } # color 1
+			modify_texture = { color = "[Select_CVector4f( PODCombatSlotIsAlly, PODCombatAllyColor, PODCombatEnemyColor )]" } # color 2
+			modify_texture = { color = "[Select_CVector4f( PODCombatSlotIsAlly, PODCombatAllyColor, PODCombatEnemyColor )]" } # color 3
+
+			modify_texture = {
+				color = { 1.0 0.0 0.0 1.0 } # which channels to use for alpha
+				spriteborder_left = -0.2 # horizontal speed
+				spriteborder_top  = 0.8 # vertical speed
+				block "fog_alpha" {
+					alpha = 0.4 # alpha
+				}
+			}
+		}
+
+		widget = {
+			# for cropping the portrait
+			block "crop_size" {
+				size = { 244 412 }
+			}
+			scissor = yes
+			parentanchor = hcenter|bottom
+
+			portrait_button = {
+				parentanchor = hcenter|bottom
+				size = { 500 500 }
+				pop_out = no
+				gfxtype = portraitbuttongfx
+				intersectionmask = no
+
+				background_texture = "gfx/portraits/portrait_transparent.dds"
+				texture = "gfx/portraits/portrait_transparent.dds"
+				mask = "gfx/portraits/portrait_mask_event.dds"
+				effectname = "NoHighlight"
+
+				shaderfile = "gfx/FX/POD_shaders/POD_portrait_castshadow.shader"
+
+				alwaystransparent = yes # no clicking
+
+				grayscale = yes
+
+				block "portrait_button" {}
+			}
+		}
+
+		# putting the "background" frame on top so the portrait doesn't cover it
+		widget = {
+			block "crop_size" {
+				size = { 244 412 }
+			}
+			parentanchor = hcenter|bottom
+
+			background = {
+				using = Background_Frame
+				color = "[Select_CVector4f( PODCombatSlotIsAlly, PODCombatAllyColor, PODCombatEnemyColor )]"
+				block "frame_margin" {
+					margin = { 3 0 }
+				}
+				margin_bottom = 1
+
+				# vertical transparency gradient
+				modify_texture = {
+					texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+					blend_mode = alphamultiply
+					mirror = vertical
+				}
+			}
+		}
+
+		button = {
+			size = { 100% 100% }
+			onclick = "[GetScriptedGui('pod_combat_select_target').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('target_slot', Scope.Story.MakeScope).End)]"
+			# "enabled" block not necessary since SGUIs don't execute if is_valid is false
+			onrightclick = "[DefaultOnCharacterClick(Character.GetID)]"
+			button_ignore = none
+			tooltipwidget = {
+				pod_combat_datamodel_slot_stats_tooltip = {}
+			}
+		}
+	}
+
+	type pod_combat_tooltip_portrait = widget {
+		size = { 200 364 }
+
+		alpha = 0.9
+
+		widget = {
+			size = { 200 380 }
+			parentanchor = bottom|hcenter
+
+			background = {
+				texture = "gfx/interface/window_legend_chronicle/marginalia_portrait_gold_bg.dds"
+				shaderfile = "gfx/FX/POD_shaders/POD_image_manipulation_shaders.shader"
+				effectname = "PODGreyscaleBlend"
+			}
+
+			background = {
+				texture = "gfx/interface/colors/white.dds"
+
+				margin = { -10 -10 }
+				margin_top = -22
+
+				shaderfile = "gfx/FX/POD_shaders/POD_shaders_with_inputs.shader"
+				effectname = "PODFBM"
+
+				block "fog_mirror" {}
+
+				spriteborder_left   = 0.3 # speed
+				spriteborder_top    = 0.4 # zoom
+				spriteborder_right  = 2.0 # aspect ratio stretch factor
+				spriteborder_bottom = 1.0 # alpha gradient strength
+
+				modify_texture = { color = "[Select_CVector4f( PODCombatSlotIsAlly, PODCombatAllyColor, PODCombatEnemyColor )]" } # color 1
+				modify_texture = { color = "[Select_CVector4f( PODCombatSlotIsAlly, PODCombatAllyColor, PODCombatEnemyColor )]" } # color 2
+				modify_texture = { color = "[Select_CVector4f( PODCombatSlotIsAlly, PODCombatAllyColor, PODCombatEnemyColor )]" } # color 3
+
+				modify_texture = {
+					color = { 0.0 0.0 0.0 1.0 } # which channels to use for alpha
+					spriteborder_left = -0.2 # horizontal speed
+					spriteborder_top  = 0.8 # vertical speed
+					block "fog_alpha" {
+						alpha = 0.9 # alpha
+					}
+				}
+			}
+
+			background = {
+				using = Background_Frame
+				color = "[Select_CVector4f( PODCombatSlotIsAlly, PODCombatAllyColor, PODCombatEnemyColor )]"
+				margin = { -7 -6 }
+				margin_top = -24
+				alpha = 0.75
+			}
+
+			portrait_button = {
+				size = { 200 380 }
+				parentanchor = bottom|hcenter
+
+				# lil scooch so there's no seam where the background is visible
+				position = { 0 1 }
+
+				using = portrait_base
+				alwaystransparent = yes
+				tooltip_visible = no
+
+				portrait_texture = "[Character.GetAnimatedPortraitEvenIfDead( Select_CString( PODCombatSlotIsAlly, 'POD_environment_combat_left', 'POD_environment_combat_right' ), 'camera_legend_chronicle', Select_CString( PODCharHasNoHumanBody, 'personality_zealous', 'idle' ), PdxGetWidgetScreenSize( PdxGuiWidget.Self ) )]"
+
+				mask = "gfx/portraits/portrait_mask_legend_chronicle.dds"
+				effectname = "NoHighlight"
+
+				grayscale = no
+			}
+
+			icon = {
+				size = { 100% 100% }
+				texture = "gfx/interface/window_legend_chronicle/marginalia_portrait_gold_bg.dds"
+				shaderfile = "gfx/FX/POD_shaders/POD_image_manipulation_shaders.shader"
+				effectname = "PODGreyscaleBlend"
+				color = { 0 0 0 1 }
+
+				modify_texture = {
+					texture = "gfx/interface/window_legend_chronicle/marginalia_portrait_frame_famed_mena.dds"
+					blend_mode = alphamultiply
+				}
+				modify_texture = {
+					texture = "gfx/interface/component_masks/mask_fade_vertical.dds"
+					blend_mode = alphamultiply
+					mirror = vertical
+				}
+			}
+
+			pod_combat_splat_icon = {
+				parentanchor = top|left
+
+				size = { 36 36 }
+				position = { 12 28 }
+
+				blockoverride "smoothstep" {
+					spriteborder_left = 0.15  # smoothstep left edge  (SpriteBorder[1].x)
+					spriteborder_top  = -0.15 # smoothstep right edge (SpriteBorder[1].y)
+				}
+				blockoverride "color" {
+					color = "[Select_CVector4f(PODCombatSlotIsAlly, PODCombatAllyColor, PODCombatEnemyPortraitColor)]"
+				}
+				blockoverride "inverted_alpha" { alpha = 0.0 }
+				blockoverride "fade" {}
+			}
+
+			pod_combat_splat_icon = {
+				parentanchor = top|right
+
+				size = { 36 36 }
+				position = { -12 28 }
+
+				blockoverride "smoothstep" {
+					spriteborder_left = 0.15  # smoothstep left edge  (SpriteBorder[1].x)
+					spriteborder_top  = -0.15 # smoothstep right edge (SpriteBorder[1].y)
+				}
+				blockoverride "color" {
+					color = "[Select_CVector4f(PODCombatSlotIsAlly, PODCombatAllyColor, PODCombatEnemyPortraitColor)]"
+				}
+				blockoverride "inverted_alpha" { alpha = 0.0 }
+				blockoverride "fade" {}
+			}
+		}
+	}
+
+	type pod_combat_splat_icon = icon {
+		parentanchor = top|right
+
+		size = { 160 160 }
+		position = { 44 -8 }
+
+		texture = "gfx/interface/colors/white.dds"
+
+		shaderfile = "gfx/FX/POD_shaders/POD_sdf_shaders.shader"
+		effectname = "PODSDFFlat"
+
+		modify_texture = {
+			texture = "[GetIllustration( 'POD_splat_sdf' ).GetTexture(Character.MakeScope)]"
+
+			block "smoothstep" {
+				spriteborder_left = 0.02  # smoothstep left edge  (SpriteBorder[1].x)
+				spriteborder_top  = -0.02 # smoothstep right edge (SpriteBorder[1].y)
+			}
+		}
+
+		modify_texture = {
+			block "color" {
+				color = { 0 0 0 1 }
+			}
+		}
+
+		modify_texture = {
+			texture = "gfx/POD_interface/component_masks/transparent_pixel.dds"
+			blend_mode = alphamultiply
+			block "inverted_alpha" {
+				alpha = 0.5
+			}
+		}
+
+		block "fade" {
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_fade_corner.dds"
+				blend_mode = alphamultiply
+				mirror = vertical
+				alpha = 0.95
+			}
+
+			modify_texture = {
+				texture = "gfx/interface/component_masks/mask_scratches.dds"
+				blend_mode = alphamultiply
+				spriteType = corneredTiled
+				alpha = 0.75
+				texture_density = 4
+			}
+		}
+	}
+
+	# default_format cannot be data-bound; swap transparent labels to track the enabled state.
+	type button_combat_base = button_standard {
+		widget = {
+			size = { 100% 100% }
+			alwaystransparent = yes
+			using = pod_combat_button_bg
+		}
+		text_single = {
+			visible = "[Not(GetScriptedGui('pod_combat_execute_move').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End))]"
+			size = { 100% 100% }
+			autoresize = no
+			align = center|nobaseline
+			alwaystransparent = yes
+			default_format = "#outline;bold"
+			text = "POD_combat_move_title_plain"
+		}
+	}
+
+	type button_combat_move_label = text_single {
+		visible = "[GetScriptedGui('pod_combat_execute_move').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('story', Scope.Story.MakeScope).AddScope('actor', PODCombatMyCombatant).End)]"
+		size = { 100% 100% }
+		autoresize = no
+		align = center|nobaseline
+		alwaystransparent = yes
+		text = "POD_combat_move_title_plain"
+	}
+	type button_combat_atk = button_combat_base {
+		button_combat_move_label = { default_format = "#color_red;outline;bold" }
+	}
+	type button_combat_def = button_combat_base {
+		button_combat_move_label = { default_format = "#color_light_blue;outline;bold" }
+	}
+	type button_combat_ctl = button_combat_base {
+		button_combat_move_label = { default_format = "#color_porple;outline;bold" }
+	}
+	type button_combat_pwr = button_combat_base {
+		button_combat_move_label = { default_format = "#color_pwr_orange;outline;bold" }
+	}
+}

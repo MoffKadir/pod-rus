@@ -1,0 +1,30 @@
+﻿vbox = {
+	name = "POD_event_window_widget_sol_custom_religion_preview"
+	layoutpolicy_horizontal = expanding
+	
+	vbox = {
+		layoutpolicy_horizontal = expanding
+		margin_bottom = 1
+		
+		datamodel = "[EventWindow.AccessEventWindowData.GetOptions]"
+		
+		item = {
+			pod_fake_event_button = {
+				layoutpolicy_horizontal = expanding
+				
+				enabled = "[PlayerGuiIsValid('sol_custom_religion_creator_finish_script')]"
+				
+				onclick = "[PlayerGuiExecute('sol_custom_religion_creator_finish_script')]"
+				onclick = "[EventOption.Select]"
+				block "pause_onclick" {}
+				
+				blockoverride "button_text" {
+					text = "POD_mummy_spell_of_life.82.a"
+				}
+				blockoverride "button_tooltip" {
+					tooltip = "[PlayerGuiBuildTooltip('sol_custom_religion_creator_finish_script')]"
+				}
+			}
+		}
+	}
+}

@@ -1,17 +1,4 @@
-﻿template POD_flat_icon_shadow {
-	glow = {
-		color = { 0.0 0.0 0.0 0.5 }
-		glow_radius = 3
-		glow_generation_rules = {
-			glow_alpha_mask = 0
-			glow_blur_passes = 1
-			glow_texture_downscale = 1.5f
-			glow_ignore_inside_pixels = no
-		}
-	}
-}
-
-types PODTypes
+﻿types PODTypes
 {
 	type pod_resonance_display = hbox
 	{
@@ -271,117 +258,6 @@ types PODTypes
 				default_format = "#high"
 				align = center|nobaseline
 				fontsize_min = 12
-			}
-		}
-	}
-
-	type pod_shader_event_widget = widget
-	{
-		size = { 100% 100% }
-		#layoutpolicy_horizontal = expanding
-		#layoutpolicy_vertical = expanding
-		alwaystransparent = yes
-		
-		icon = {
-			size = { 100% 100% }
-			block "texture" {
-				texture = "gfx/interface/window_event/mask_event_image.dds"
-			}
-			shaderfile = "gfx/FX/POD_shaders/POD_event_shaders.shader"
-			block "effect_name" {
-				effectname = "Unmoored"
-			}
-
-			# block "modify_texture" {
-			# 	modify_texture = {
-			# 		texture = "gfx/interface/window_event/mask_event_image.dds"
-			# 		blend_mode = alphamultiply
-			# 	}
-			# }
-		}
-	}
-
-	type pod_sdf_shader_event_widget = widget {
-		size = { 100% 100% }
-		alwaystransparent = yes
-		
-		icon = {
-			size = { 100% 100% }
-			texture = "gfx/interface/illustrations/event_scenes/pod_velvet.dds"
-			
-			shaderfile = "gfx/FX/POD_shaders/POD_sdf_shaders.shader"
-			effectname = "PODSDFLoadingScreen"
-			
-			block "shader_properties" {
-				spriteborder_left = 1.0 # background (black) opacity
-
-				# first SDF
-				modify_texture = {
-					texture = "gfx/interface/sdf/sdf_pod.dds"
-					blend_mode = normal
-					rotate_uv = 0.9 # scale (SpriteTranslateRotateUVAndAlpha[1].z)
-					spriteborder_left = 0.42 # uv x offset (SpriteBorder[1].x)
-					spriteborder_top  = 0.06 # uv y offset (SpriteBorder[1].y)
-				}
-
-				# second SDF
-				modify_texture = {
-					texture = "gfx/interface/sdf/sdf_ankh.dds"
-					blend_mode = normal
-					rotate_uv = 0.9 # scale (SpriteTranslateRotateUVAndAlpha[2].z)
-					spriteborder_left = 0.42 # uv x offset (SpriteBorder[2].x)
-					spriteborder_top  = 0.06 # uv y offset (SpriteBorder[2].y)
-				}
-
-				# color properties
-				modify_texture = {
-					blend_mode = normal
-					spriteborder_left  = 1.0 # exponent for R channel (SpriteBorder[3].x)
-					spriteborder_top   = 1.0 # exponent for G channel (SpriteBorder[3].y)
-					spriteborder_right = 5.0 # exponent for B channel (SpriteBorder[3].z)
-					# multiplier for R/G/B channels (alpha is discarded) (SpriteModifyTexturesColors[3])
-					color = { 1.0 0.0 0.25 1.0 }
-				}
-			}
-
-			# modify_texture = {
-			# 	texture = "gfx/interface/component_masks/mask_scratches.dds"
-			# 	spriteType = Corneredtiled
-			# 	blend_mode = alphamultiply
-			# 	texture_density = 4
-			# 	alpha = 0.3
-			# }
-			
-			# Default mask from type event_window_background_widget in event_windows.gui
-			modify_texture = {
-				texture = "gfx/interface/window_event/mask_event_image_large.dds"
-				blend_mode = alphamultiply
-				loop = no
-			}
-			
-			# Default masks from fullscreen_event.gui
-			modify_texture = {
-				texture = "gfx/interface/component_masks/mask_fade_struggle_illustration.dds"
-				blend_mode = alphamultiply
-				alpha = 0.9
-			}
-
-			modify_texture = {
-				texture = "gfx/interface/component_masks/mask_fade_horizontal_short.dds"
-				mirror = horizontal
-				blend_mode = alphamultiply
-			}
-
-			modify_texture = {
-				texture = "gfx/interface/component_masks/mask_fade_textured_vertical_up.dds"
-				translate_uv = { 0 -0.05 }
-				blend_mode = alphamultiply
-			}
-
-			modify_texture = {
-				texture = "gfx/interface/component_masks/mask_fade_textured_vertical_down.dds"
-				translate_uv = { 0 0.05 }
-				blend_mode = alphamultiply
 			}
 		}
 	}
@@ -667,8 +543,7 @@ types PODTypes
 				}
 				blockoverride "mm_button"
 				{
-					onclick = "[GetScriptedGui('pod_reset_title_name').Execute(GuiScope.End)]"
-					onclick = "[GetVariableSystem.Clear('pod_mapmode_gui_glow')]"
+					using = POD_clear_custom_map_modes_on_click
 				}
 			}
 
@@ -679,8 +554,7 @@ types PODTypes
 				}
 				blockoverride "mm_button"
 				{
-					onclick = "[GetScriptedGui('pod_reset_title_name').Execute(GuiScope.End)]"
-					onclick = "[GetVariableSystem.Clear('pod_mapmode_gui_glow')]"
+					using = POD_clear_custom_map_modes_on_click
 				}
 			}
 			
@@ -851,6 +725,298 @@ types PODTypes
 		using = Master_Button_Modify_Texture
 		blockoverride "master_color_frame" {
 			frame = 1
+		}
+	}
+
+	type keyboard_button = button_normal {
+        size = {33 33}
+        texture = "gfx/interface/buttons/button_standard.dds"
+        oversound = ""
+        gfxtype = togglepushbuttongfx
+        effectname = "NoHighlight"
+
+        upframe = 7
+        uphoverframe = 2
+        uppressedframe = 3
+        downframe = 4
+        downhoverframe = 4
+        downpressedframe = 4
+        disableframe = 7
+
+        spriteType = Corneredtiled
+        spriteborder = { 3 3 }		
+		framesize = { 252 80 }
+        frame = 4
+
+		enabled = "[GetScriptedGui( 'POD_keyboard_press_key' ).IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+
+		highlight_icon = {
+			size = { 100% 100% }
+			texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+			color = { 0.1 0.1 0.1 0.6 }
+			framesize = { 160 160 }
+		}
+
+		text_single = {
+			margin_top = -7
+			parentanchor = vcenter|hcenter
+			block "button_text" {
+				raw_text = "Q"
+			}
+			using = Font_Size_Medium
+		}
+
+		onclick = "[GetScriptedGui( 'POD_keyboard_press_key' ).Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'letter', MakeScopeFlag( Scope.GetFlagKey ) ).End )]"
+    }
+	type POD_qwerty_keyboard = flowcontainer {
+		direction = vertical
+		spacing = 4
+
+        flowcontainer = {
+			spacing = 4
+			direction = horizontal
+			parentanchor = hcenter
+
+			datamodel = "[GetScriptedCharacterByHistoryID('POD_wraith_01').MakeScope.Var('POD_qwerty_keyboard').GetList('POD_qwerty_keyboard_row_1')]"
+        	item = { keyboard_button = { blockoverride "button_text" { raw_text = "[Localize( Concatenate( Scope.GetFlagKey, '_button_loc' ) )]" } } }
+		}
+
+		flowcontainer = {
+			spacing = 4
+			direction = horizontal
+			parentanchor = hcenter
+
+			datamodel = "[GetScriptedCharacterByHistoryID('POD_wraith_01').MakeScope.Var('POD_qwerty_keyboard').GetList('POD_qwerty_keyboard_row_2')]"
+        	item = { keyboard_button = { blockoverride "button_text" { raw_text = "[Localize( Concatenate( Scope.GetFlagKey, '_button_loc' ) )]" } } }
+		}
+
+		flowcontainer = {
+			spacing = 4
+			direction = horizontal
+			parentanchor = hcenter
+
+			datamodel = "[GetScriptedCharacterByHistoryID('POD_wraith_01').MakeScope.Var('POD_qwerty_keyboard').GetList('POD_qwerty_keyboard_row_3')]"
+        	item = { keyboard_button = { blockoverride "button_text" { raw_text = "[Localize( Concatenate( Scope.GetFlagKey, '_button_loc' ) )]" } } }
+		}
+    }
+
+	type wordle_box = button_normal {
+        size = {50 50}
+        texture = "gfx/interface/buttons/button_standard.dds"
+        oversound = ""
+        gfxtype = togglepushbuttongfx
+        effectname = "NoHighlight"
+
+        upframe = 7
+        uphoverframe = 2
+        uppressedframe = 3
+        downframe = 4
+        downhoverframe = 4
+        downpressedframe = 4
+        disableframe = 7
+
+        spriteType = Corneredtiled
+        spriteborder = { 3 3 }		
+		framesize = { 252 80 }
+        frame = 4
+
+		block "wordle_button_background_mask" {
+			highlight_icon = {
+				size = { 100% 100% }
+				texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+				block "button_color" {
+					color = { 1.0 0.18 0.18 0.4 }
+				}
+				framesize = { 160 160 }
+			}
+		}
+
+		text_single = {
+			margin_top = -8
+			parentanchor = vcenter|hcenter
+			block "button_text" {
+				raw_text = " "
+			}
+			using = Font_Size_Big
+			using = Font_Type_Flavor
+		}
+    }
+	type wordle_past_box = wordle_box {
+		blockoverride "wordle_button_background_mask" {
+			highlight_icon = {
+				size = { 100% 100% }
+				texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+				color = { 1.0 0.85 0.6 0.4 }  # golden yellow 
+				framesize = { 160 160 }
+				block "wordle_button_background_mask_yellow_requirements" {
+					visible = "[GetScriptedGui('POD_wordle_color_gui_1').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'flag', MakeScopeFlag( Scope.Var('wordle_guess_letter_1').GetFlagKey ) ).End )]"
+				}
+			}
+			highlight_icon = {
+				size = { 100% 100% }
+				texture = "gfx/interface/component_masks/mask_clouds_solid.dds"
+				color = { 0.13 1 0.3 0.4 }  #green
+				framesize = { 160 160 }
+				block "wordle_button_background_mask_green_requirements" {
+					visible = "[GetScriptedGui('POD_wordle_color_gui_1').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'flag', MakeScopeFlag( Scope.Var('wordle_guess_letter_1').GetFlagKey ) ).End )]"
+				}
+			}
+		}
+    }
+	type wordle_empty_line = flowcontainer {
+		spacing = 4
+
+        wordle_box = {
+			blockoverride "button_color" {
+				color = { 0.18 0.18 0.18 0.6 }
+			}
+		}
+        wordle_box = {
+			blockoverride "button_color" {
+				color = { 0.18 0.18 0.18 0.6 }
+			}
+		}
+        wordle_box = {
+			blockoverride "button_color" {
+				color = { 0.18 0.18 0.18 0.6 }
+			}
+		}
+        wordle_box = {
+			blockoverride "button_color" {
+				color = { 0.18 0.18 0.18 0.6 }
+			}
+		}
+        wordle_box = {
+			blockoverride "button_color" {
+				color = { 0.18 0.18 0.18 0.6 }
+			}
+		}
+    }
+	type wordle_past_line = flowcontainer {
+		spacing = 4
+
+        wordle_past_box = {
+			blockoverride "button_text" {
+				raw_text = "[Localize(Concatenate( Scope.Var('wordle_guess_letter_1').GetFlagKey, '_button_loc' ))]"
+			}
+			blockoverride "wordle_button_background_mask_yellow_requirements" {
+				visible = "[GetScriptedGui('POD_wordle_color_gui_1').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'flag', MakeScopeFlag( Scope.Var('wordle_guess_letter_1').GetFlagKey ) ).End )]"
+			}
+			blockoverride "wordle_button_background_mask_green_requirements" {
+				visible = "[GetScriptedGui('POD_wordle_color_gui_1').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'flag', MakeScopeFlag( Scope.Var('wordle_guess_letter_1').GetFlagKey ) ).End )]"
+			}
+		}
+        wordle_past_box = {
+			blockoverride "button_text" {
+				raw_text = "[Localize(Concatenate( Scope.Var('wordle_guess_letter_2').GetFlagKey, '_button_loc' ))]"
+			}
+			blockoverride "wordle_button_background_mask_yellow_requirements" {
+				visible = "[GetScriptedGui('POD_wordle_color_gui_2').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'flag', MakeScopeFlag( Scope.Var('wordle_guess_letter_2').GetFlagKey ) ).End )]"
+			}
+			blockoverride "wordle_button_background_mask_green_requirements" {
+				visible = "[GetScriptedGui('POD_wordle_color_gui_2').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'flag', MakeScopeFlag( Scope.Var('wordle_guess_letter_2').GetFlagKey ) ).End )]"
+			}
+		}
+        wordle_past_box = {
+			blockoverride "button_text" {
+				raw_text = "[Localize(Concatenate( Scope.Var('wordle_guess_letter_3').GetFlagKey, '_button_loc' ))]"
+			}
+			blockoverride "wordle_button_background_mask_yellow_requirements" {
+				visible = "[GetScriptedGui('POD_wordle_color_gui_3').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'flag', MakeScopeFlag( Scope.Var('wordle_guess_letter_3').GetFlagKey ) ).End )]"
+			}
+			blockoverride "wordle_button_background_mask_green_requirements" {
+				visible = "[GetScriptedGui('POD_wordle_color_gui_3').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'flag', MakeScopeFlag( Scope.Var('wordle_guess_letter_3').GetFlagKey ) ).End )]"
+			}
+		}
+        wordle_past_box = {
+			blockoverride "button_text" {
+				raw_text = "[Localize(Concatenate( Scope.Var('wordle_guess_letter_4').GetFlagKey, '_button_loc' ))]"
+			}
+			blockoverride "wordle_button_background_mask_yellow_requirements" {
+				visible = "[GetScriptedGui('POD_wordle_color_gui_4').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'flag', MakeScopeFlag( Scope.Var('wordle_guess_letter_4').GetFlagKey ) ).End )]"
+			}
+			blockoverride "wordle_button_background_mask_green_requirements" {
+				visible = "[GetScriptedGui('POD_wordle_color_gui_4').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'flag', MakeScopeFlag( Scope.Var('wordle_guess_letter_4').GetFlagKey ) ).End )]"
+			}
+		}
+        wordle_past_box = {
+			blockoverride "button_text" {
+				raw_text = "[Localize(Concatenate( Scope.Var('wordle_guess_letter_5').GetFlagKey, '_button_loc' ))]"
+			}
+			blockoverride "wordle_button_background_mask_yellow_requirements" {
+				visible = "[GetScriptedGui('POD_wordle_color_gui_5').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'flag', MakeScopeFlag( Scope.Var('wordle_guess_letter_5').GetFlagKey ) ).End )]"
+			}
+			blockoverride "wordle_button_background_mask_green_requirements" {
+				visible = "[GetScriptedGui('POD_wordle_color_gui_5').IsValid( GuiScope.SetRoot( GetPlayer.MakeScope ).AddScope( 'flag', MakeScopeFlag( Scope.Var('wordle_guess_letter_5').GetFlagKey ) ).End )]"
+			}
+		}
+    }
+	type wordle_past_guess_lines = flowcontainer {
+        direction = vertical
+		spacing = 16
+        datamodel = "[GetPlayer.MakeScope.Var('wordle_minigame').GetList('wordle_guesses_list')]"
+        item = { wordle_past_line = {  } }
+    }
+	type wordle_current_line = flowcontainer {
+		margin_top = 16
+		spacing = 4
+
+        wordle_box = {
+			blockoverride "button_color" {
+				color = { 0.4 0.4 0.4 0.3 }
+			}
+		}
+        wordle_box = {
+			blockoverride "button_color" {
+				color = { 0.4 0.4 0.4 0.3 }
+			}
+		}
+        wordle_box = {
+			blockoverride "button_color" {
+				color = { 0.4 0.4 0.4 0.3 }
+			}
+		}
+        wordle_box = {
+			blockoverride "button_color" {
+				color = { 0.4 0.4 0.4 0.3 }
+			}
+		}
+        wordle_box = {
+			blockoverride "button_color" {
+				color = { 0.4 0.4 0.4 0.3 }
+			}
+		}
+    }
+	type pod_epiphanies_quality_display = hbox
+	{
+		visible = "[And(And( Not( IsPauseMenuShown ), And(Or(Not(IsObserver), GetPlayer.IsValid), IsDefaultGUIMode)), And(Character.IsValid, Character.IsAlive))]"
+
+		icon = {
+			visible = "[And(GetScriptedGui('POD_has_access_to_reverie_sgui').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), EqualTo_CFixedPoint(Character.MakeScope.ScriptValue('epiphanies_quality'),'(CFixedPoint)1'))]"
+			size = { 20 20 }
+			texture = "gfx/interface/icons/character_status/epiphanies_quality.dds"
+			tooltip = "EPIPHANIES_QUALITY_1_TT"
+		}
+
+		icon = {
+			visible = "[And(GetScriptedGui('POD_has_access_to_reverie_sgui').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), EqualTo_CFixedPoint(Character.MakeScope.ScriptValue('epiphanies_quality'),'(CFixedPoint)2'))]"
+			size = { 20 20 }
+			texture = "gfx/interface/icons/character_status/epiphanies_quality.dds"
+			tooltip = "EPIPHANIES_QUALITY_2_TT"
+		}
+
+		icon = {
+			visible = "[And(GetScriptedGui('POD_has_access_to_reverie_sgui').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), EqualTo_CFixedPoint(Character.MakeScope.ScriptValue('epiphanies_quality'),'(CFixedPoint)3'))]"
+			size = { 20 20 }
+			texture = "gfx/interface/icons/character_status/epiphanies_quality.dds"
+			tooltip = "EPIPHANIES_QUALITY_3_TT"
+		}
+
+		icon = {
+			visible = "[And(GetScriptedGui('POD_has_access_to_reverie_sgui').IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).End), EqualTo_CFixedPoint(Character.MakeScope.ScriptValue('epiphanies_quality'),'(CFixedPoint)4'))]"
+			size = { 20 20 }
+			texture = "gfx/interface/icons/character_status/epiphanies_quality.dds"
+			tooltip = "EPIPHANIES_QUALITY_4_TT"
 		}
 	}
 }

@@ -1,0 +1,569 @@
+﻿# Runtime combat tuning. Overrides live in global pod_combat_tune_* variables;
+# unset uses the default in pod_combat_values.txt. Rows display effective values.
+widget = {
+	name = "pod_combat_tuning_window"
+	visible = "[And(And(Not(IsPauseMenuShown), IsDefaultGUIMode), GetGlobalVariable('pod_combat_tuning_open').IsSet)]"
+	# Register after the combat windows on the same layer so tuning controls receive clicks.
+	layer = royal_court
+	# Keep the parent widget full-screen so dragging the window cannot move it outside the input area.
+	size = { 100% 100% }
+
+	window = {
+		parentanchor = top|left
+		position = { 20 110 }
+		size = { 1100 428 }
+		using = Window_Background_Subwindow
+		movable = yes
+
+		vbox = {
+			margin = { 14 10 }
+			spacing = 4
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				text_single = {
+					text = "pod_combat_tune_window_title"
+				}
+				expand = {}
+				button_standard_small = {
+					text = "pod_combat_tune_reset_all"
+					tooltip = "pod_combat_tune_reset_all_tt"
+					onclick = "[PlayerGuiExecute('pod_combat_tuning_reset_all')]"
+				}
+				button_close = {
+					onclick = "[PlayerGuiExecute('pod_combat_tuning_close')]"
+				}
+			}
+
+			divider_light = {
+				layoutpolicy_horizontal = expanding
+			}
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				spacing = 30
+
+				# Left: AP economy / morale / loadout - live at each turn seed
+				# (starting morale: next fight; loadout caps: editor-open).
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					spacing = 3
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_base_ap_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_base_ap_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_base_ap')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_base_ap_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_base_ap').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_ap_regen_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_ap_regen_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_tune_ap_regen_display_value')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_ap_regen_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_ap_regen').IsSet]"
+							raw_text = "#P *#!"
+						}
+						button_close = {
+							size = { 20 20 }
+							visible = "[GetGlobalVariable('pod_combat_tune_ap_regen').IsSet]"
+							tooltip = "pod_combat_tune_ap_regen_clear_tt"
+							onclick = "[PlayerGuiExecute('pod_combat_tune_ap_regen_clear')]"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_ap_cap_start_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_ap_cap_start_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_tune_ap_cap_start_display_value')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_ap_cap_start_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_ap_cap_start').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_ap_cap_increment_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_ap_cap_increment_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_tune_ap_cap_increment_display_value')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_ap_cap_increment_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_ap_cap_increment').IsSet]"
+							raw_text = "#P *#!"
+						}
+						button_close = {
+							size = { 20 20 }
+							visible = "[GetGlobalVariable('pod_combat_tune_ap_cap_increment').IsSet]"
+							tooltip = "pod_combat_tune_ap_cap_increment_clear_tt"
+							onclick = "[PlayerGuiExecute('pod_combat_tune_ap_cap_increment_clear')]"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_starting_morale_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_starting_morale_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_tune_starting_morale_display_value')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_starting_morale_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_starting_morale').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_max_morale_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_max_morale_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_max_morale_base')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_max_morale_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_max_morale').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_morale_stress_mult_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_morale_stress_mult_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_morale_stress_multiplier')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_morale_stress_mult_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_morale_stress_mult').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_max_per_category_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_max_per_category_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_max_per_category_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_max_per_category').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_max_equipped_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_max_equipped_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_max_equipped')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_max_equipped_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_max_equipped').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					expand = {}
+				}
+
+				# Right: initiative / hit math / tiers / stealth. Hit / tier / stealth
+				# take hold at the next recalc; the initiative knobs feed the base,
+				# which is rolled once per combatant, so they land on the next fight
+				# unless reroll each round is on.
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					spacing = 3
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						text_label_left = {
+							text = "pod_combat_tune_init_reroll_label"
+							tooltip = "pod_combat_tune_init_reroll_tt"
+						}
+						expand = {}
+						button_checkbox = {
+							size = { 24 24 }
+							tooltip = "pod_combat_tune_init_reroll_cb_tt"
+							onclick = "[PlayerGuiExecute('pod_combat_tune_toggle_reroll')]"
+							checked = "[GetGlobalVariable('pod_combat_tune_init_reroll').IsSet]"
+						}
+					}
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						text_label_left = {
+							text = "pod_combat_tune_init_decouple_prowess_label"
+							tooltip = "pod_combat_tune_init_decouple_prowess_tt"
+						}
+						expand = {}
+						button_checkbox = {
+							size = { 24 24 }
+							tooltip = "pod_combat_tune_init_decouple_prowess_cb_tt"
+							onclick = "[PlayerGuiExecute('pod_combat_tune_toggle_decouple_prowess')]"
+							checked = "[GetGlobalVariable('pod_combat_tune_init_decouple_prowess').IsSet]"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_init_base_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_init_base_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_tune_init_base_display_value')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_init_base_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_init_base').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_init_roll_max_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_init_roll_max_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_initiative_roll_max')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_init_roll_max_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_init_roll_max').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_init_celerity_bonus_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_init_celerity_bonus_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_tune_init_celerity_bonus_display_value')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_init_celerity_bonus_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_init_celerity_bonus').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_hit_base_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_hit_base_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_hit_chance_base')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_hit_base_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_hit_base').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_hit_min_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_hit_min_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_hit_chance_min')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_hit_min_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_hit_min').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_hit_max_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_hit_max_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_hit_chance_max')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_hit_max_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_hit_max').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_tier_small_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_tier_small_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_tier_small_mag')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_tier_small_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_tier_small').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_tier_medium_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_tier_medium_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_tier_medium_mag')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_tier_medium_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_tier_medium').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_tier_large_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_tier_large_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_tier_large_mag')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_tier_large_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_tier_large').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_stealth_bonus_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_stealth_bonus_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_stealth_hit_bonus')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_stealth_bonus_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_stealth_bonus').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					expand = {}
+				}
+			vbox = {
+					layoutpolicy_vertical = expanding
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						text_label_left = {
+							text = "pod_combat_tune_ai_trace_label"
+							tooltip = "pod_combat_tune_ai_trace_tt"
+						}
+						expand = {}
+						button_checkbox = {
+							size = { 24 24 }
+							tooltip = "pod_combat_tune_ai_trace_cb_tt"
+							onclick = "[PlayerGuiExecute('pod_combat_tune_toggle_ai_trace')]"
+							checked = "[GetGlobalVariable('pod_combat_tune_ai_trace').IsSet]"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_ai_hp_finish_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_ai_hp_finish_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_ai_hp_finish_threshold')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_ai_hp_finish_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_ai_hp_finish').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_ai_band_width_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_ai_band_width_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_ai_band_width_value')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_ai_band_width_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_ai_band_width').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_ai_kill_priority_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_ai_kill_priority_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_ai_kill_priority_boxes')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_ai_kill_priority_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_ai_kill_priority').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_ai_mor_finish_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_ai_mor_finish_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_ai_morale_finish_threshold')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_ai_mor_finish_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_ai_mor_finish').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					pod_combat_tune_var_editor = {
+						blockoverride "label" {
+							text = "pod_combat_tune_ai_mor_kill_label"
+						}
+						blockoverride "row_tooltip" {
+							tooltip = "pod_combat_tune_ai_mor_kill_tt"
+						}
+						blockoverride "variable" {
+							raw_text = "[GetPlayer.MakeScope.ScriptValue('pod_combat_ai_morale_kill_priority')|0]"
+						}
+						blockoverride "datacontext_edit"   { datacontext = "[GetScriptedGui('pod_combat_tune_ai_mor_kill_edit')]" }
+						text_single = {
+							visible = "[GetGlobalVariable('pod_combat_tune_ai_mor_kill').IsSet]"
+							raw_text = "#P *#!"
+						}
+					}
+					expand = {}
+				}
+			}
+
+			text_single = {
+				text = "pod_combat_tune_footer"
+			}
+			expand = {}
+		}
+	}
+}
+
+types PODCombatTuningTypes
+{
+	# Local incrementer row: single arrow +-1, double arrow +-5. Same shape as
+	# the umbra-adventure pod_debug_var_editor (which steps +-1/+-10), but
+	# balancing wants finer coarse moves, and each row carries a tooltip
+	# on its label. The arrows pass the signed step to the row's SGUI as
+	# scope:delta.
+	type pod_combat_tune_var_editor = hbox
+	{
+		layoutpolicy_horizontal = expanding
+		spacing = 6
+		text_label_left = {
+			block "label" {
+				raw_text = ""
+			}
+			block "row_tooltip" {}
+		}
+		expand = {}
+		hbox = {
+			block "datacontext_edit" {}
+			button_icon = {
+				size = { 24 24 }
+				texture = "gfx/interface/icons/flat_icons/select_arrow_left_double.dds"
+				raw_tooltip = "-5"
+				onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('delta',MakeScopeValue('(CFixedPoint)-5')).End)]"
+			}
+			button_icon = {
+				size = { 24 24 }
+				mirror = horizontal
+				texture = "gfx/interface/icons/flat_icons/select_arrow.dds"
+				raw_tooltip = "-1"
+				onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('delta',MakeScopeValue('(CFixedPoint)-1')).End)]"
+			}
+			text_label_center = {
+				min_width = 48
+				block "variable" {
+					raw_text = ""
+				}
+			}
+			button_icon = {
+				size = { 24 24 }
+				texture = "gfx/interface/icons/flat_icons/select_arrow.dds"
+				raw_tooltip = "+1"
+				onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('delta',MakeScopeValue('(CFixedPoint)1')).End)]"
+			}
+			button_icon = {
+				size = { 24 24 }
+				texture = "gfx/interface/icons/flat_icons/select_arrow_double.dds"
+				raw_tooltip = "+5"
+				onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('delta',MakeScopeValue('(CFixedPoint)5')).End)]"
+			}
+		}
+	}
+}

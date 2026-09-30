@@ -154,6 +154,12 @@
 	}
 
 	state = {
+		name = "achiev_dirtysecret"
+		trigger_when = "[EqualTo_string(GetPlayer.Custom('POD_achiev_dirtysecret'), Localize('achiev_dirtysecret'))]"
+		on_start = "[PlayerGuiExecute('achiev_dirtysecret_gui')]"
+	}
+
+	state = {
 		name = "achiev_alexander"
 		trigger_when = "[EqualTo_string(GetPlayer.Custom('POD_achiev_alexander'), Localize('achiev_alexander'))]"
 		on_start = "[PlayerGuiExecute('achiev_alexander_gui')]"
@@ -165,6 +171,12 @@
 		on_start = "[PlayerGuiExecute('achiev_nomnom_gui')]"
 	}
 
+	state = {
+		name = "achiev_war_of_roses"
+		trigger_when = "[EqualTo_string(GetPlayer.Custom('POD_achiev_war_of_roses'), Localize('achiev_war_of_roses'))]"
+		on_start = "[PlayerGuiExecute('achiev_war_of_roses_gui')]"
+	}
+	
 	state = {
 		name = "achiev_noddist"
 		trigger_when = "[EqualTo_string(GetPlayer.Custom('POD_achiev_noddist'), Localize('achiev_noddist'))]"
@@ -214,6 +226,12 @@
 	}
 
 	state = {
+		name = "achiev_smile"
+		trigger_when = "[EqualTo_string(GetPlayer.Custom('POD_achiev_smile'), Localize('achiev_smile'))]"
+		on_start = "[PlayerGuiExecute('achiev_smile_gui')]"
+	}
+
+	state = {
 		name = "achiev_kemintiri"
 		trigger_when = "[EqualTo_string(GetPlayer.Custom('POD_achiev_kemintiri'), Localize('achiev_kemintiri'))]"
 		on_start = "[PlayerGuiExecute('achiev_kemintiri_gui')]"
@@ -235,6 +253,18 @@
 		name = "achiev_yukio"
 		trigger_when = "[EqualTo_string(GetPlayer.Custom('POD_achiev_yukio'), Localize('achiev_yukio'))]"
 		on_start = "[PlayerGuiExecute('achiev_yukio_gui')]"
+	}
+
+	state = {
+		name = "achiev_goratrix"
+		trigger_when = "[EqualTo_string(GetPlayer.Custom('POD_achiev_goratrix'), Localize('achiev_goratrix'))]"
+		on_start = "[PlayerGuiExecute('achiev_goratrix_gui')]"
+	}
+
+	state = {
+		name = "achiev_elixir"
+		trigger_when = "[EqualTo_string(GetPlayer.Custom('POD_achiev_elixir'), Localize('achiev_elixir'))]"
+		on_start = "[PlayerGuiExecute('achiev_elixir_gui')]"
 	}
 
 	state = {
@@ -504,6 +534,13 @@
 							blockoverride "achievement_name" { text = "achiev_unprovendharma" }
 							blockoverride "achievement_desc" { text = "achiev_unprovendharma_tt" }
 						}
+						# Dirty Secrets of the Black Hand
+						pod_achievement_button = {
+							blockoverride "achievement_level" { frame = 2 }
+							datacontext = "[GetScriptedGui( 'achiev_dirtysecret_gui' )]"
+							blockoverride "achievement_name" { text = "achiev_dirtysecret" }
+							blockoverride "achievement_desc" { text = "achiev_dirtysecret_tt" }
+						}
 					}
 					
 					pod_achievement_category = {
@@ -533,6 +570,13 @@
 							blockoverride "achievement_name" { text = "achiev_alexander" }
 							blockoverride "achievement_desc" { text = "achiev_alexander_tt" }
 						}
+						# War of Roses
+						pod_achievement_button = {
+							blockoverride "achievement_level" { frame = 3 }
+							datacontext = "[GetScriptedGui( 'achiev_war_of_roses_gui' )]"
+							blockoverride "achievement_name" { text = "achiev_war_of_roses" }
+							blockoverride "achievement_desc" { text = "achiev_war_of_roses_tt" }
+						}			
 						# Ate My Way Up The Ladder
 						pod_achievement_button = {
 							blockoverride "achievement_level" { frame = 3 }
@@ -596,6 +640,13 @@
 							blockoverride "achievement_name" { text = "achiev_anda" }
 							blockoverride "achievement_desc" { text = "achiev_anda_tt" }
 						}
+						# ...and Michael smiled.
+						pod_achievement_button = {
+							blockoverride "achievement_level" { frame = 3 }
+							datacontext = "[GetScriptedGui( 'achiev_smile_gui' )]"
+							blockoverride "achievement_name" { text = "achiev_smile" }
+							blockoverride "achievement_desc" { text = "achiev_smile_tt" }
+						}
 					}
 					
 					pod_achievement_category = {
@@ -634,6 +685,18 @@
 							datacontext = "[GetScriptedGui( 'achiev_yukio_gui' )]"
 							blockoverride "achievement_name" { text = "achiev_yukio" }
 							blockoverride "achievement_desc" { text = "achiev_yukio_tt" }
+						}
+						# Second Time's the Charm
+						pod_achievement_button = {
+							datacontext = "[GetScriptedGui( 'achiev_goratrix_gui' )]"
+							blockoverride "achievement_name" { text = "achiev_goratrix" }
+							blockoverride "achievement_desc" { text = "achiev_goratrix_tt" }
+						}
+						# Better Safe than Sorry
+						pod_achievement_button = {
+							datacontext = "[GetScriptedGui( 'achiev_elixir_gui' )]"
+							blockoverride "achievement_name" { text = "achiev_elixir" }
+							blockoverride "achievement_desc" { text = "achiev_elixir_tt" }
 						}
 					}
 

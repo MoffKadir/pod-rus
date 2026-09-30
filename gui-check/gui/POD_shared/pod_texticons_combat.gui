@@ -1,0 +1,164 @@
+######################################################
+###### POD combat text-icon definitions
+######################################################
+# Combat texticons. Keep their size and baseline aligned.
+# Balefire reuses PoD's wyrm icon.
+
+texticon = {
+	icon = pod_combat_encounter_icon
+	iconsize = {
+		texture = "gfx/interface/icons/icon_kill.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+# ── Stances ─────────────────────────────────────────────────────────
+
+texticon = {
+	icon = pod_combat_guard_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/guard.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = pod_combat_dodge_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/dodge.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = pod_combat_stealth_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/stealth.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+# ── Damage sources ──────────────────────────────────────────────────
+
+texticon = {
+	icon = pod_combat_fire_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/fire_damage.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = pod_combat_cold_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/cold_damage.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = pod_combat_lightning_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/lightning_damage.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = pod_combat_sun_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/sun_damage.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = pod_combat_holy_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/holy_damage.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = pod_combat_silver_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/silver_damage.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = pod_combat_gold_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/gold_damage.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = pod_combat_poison_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/poison_damage.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = pod_combat_cold_iron_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/cold_iron_damage.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+# balefire reuses @wyrm_icon!
+
+# Damage-over-Time mark, inline twin of the slot card's Burning status icon.
+texticon = {
+	icon = pod_combat_dot_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/DoT.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+# Counter-attack mark, inline twin of the slot card's retaliation badge.
+texticon = {
+	icon = pod_combat_retaliate_icon
+	iconsize = {
+		texture = "gfx/interface/icons/combat/retaliation.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+

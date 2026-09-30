@@ -1,0 +1,226 @@
+﻿widget = {
+	name = "POD_event_window_widget_sol_custom_religion"
+	parentanchor = right|top
+	position = { -80 86 }
+	size = { 540 424 }
+	
+	datacontext = "[GetPlayer]"
+	datacontext = "[GetFaithByKey('custom_mummy_dynasty')]"
+	datacontext = "[Faith.GetMainRite]"
+	
+	background = {
+		using = Background_Area_Dark
+	}
+
+	vbox = {
+		layoutpolicy_horizontal = expanding
+
+		state = {
+			name = init
+			trigger_on_create = yes
+			on_start = "[GetVariableSystem.Set('sol_custom_religion_creator_tab', 'institution')]"
+		}
+
+		hbox = {
+			button_tab = {
+				size = { 0 38 }
+				layoutpolicy_horizontal = expanding
+				onclick = "[GetVariableSystem.Set('sol_custom_religion_creator_tab', 'institution')]"
+				down = "[GetVariableSystem.HasValue( 'sol_custom_religion_creator_tab', 'institution' )]"
+
+				text_single = {
+					text = "POD_mummy_spell_of_life.82.framework"
+					parentanchor = center
+				}
+			}
+			button_tab = {
+				size = { 0 38 }
+				layoutpolicy_horizontal = expanding
+				onclick = "[GetVariableSystem.Set('sol_custom_religion_creator_tab', 'devotional')]"
+				down = "[GetVariableSystem.HasValue( 'sol_custom_religion_creator_tab', 'devotional' )]"
+
+				text_single = {
+					text = "POD_mummy_spell_of_life.82.practice"
+					parentanchor = center
+				}
+			}
+			button_tab = {
+				size = { 0 38 }
+				layoutpolicy_horizontal = expanding
+				onclick = "[GetVariableSystem.Set('sol_custom_religion_creator_tab', 'violence')]"
+				down = "[GetVariableSystem.HasValue( 'sol_custom_religion_creator_tab', 'violence' )]"
+
+				text_single = {
+					text = "POD_mummy_spell_of_life.82.radical"
+					parentanchor = center
+				}
+			}
+			button_tab = {
+				size = { 0 38 }
+				layoutpolicy_horizontal = expanding
+				onclick = "[GetVariableSystem.Set('sol_custom_religion_creator_tab', 'flexibility')]"
+				down = "[GetVariableSystem.HasValue( 'sol_custom_religion_creator_tab', 'flexibility' )]"
+
+				text_single = {
+					text = "POD_mummy_spell_of_life.82.flexibility"
+					parentanchor = center
+				}
+			}
+			button_tab = {
+				size = { 0 38 }
+				layoutpolicy_horizontal = expanding
+				onclick = "[GetVariableSystem.Set('sol_custom_religion_creator_tab', 'balance')]"
+				down = "[GetVariableSystem.HasValue( 'sol_custom_religion_creator_tab', 'balance' )]"
+
+				text_single = {
+					text = "POD_mummy_spell_of_life.82.alignment"
+					parentanchor = center
+				}
+			}
+			button_tab = {
+				size = { 0 38 }
+				layoutpolicy_horizontal = expanding
+				onclick = "[GetVariableSystem.Set('sol_custom_religion_creator_tab', 'homeland')]"
+				down = "[GetVariableSystem.HasValue( 'sol_custom_religion_creator_tab', 'homeland' )]"
+
+				text_single = {
+					text = "game_concept_POD_homeland"
+					parentanchor = center
+				}
+			}
+		}
+		
+		scrollbox = {
+			layoutpolicy_vertical = expanding
+			layoutpolicy_horizontal = expanding
+			
+			blockoverride "scrollbox_background" {}
+			blockoverride "scrollbox_background_fade" {}
+
+			blockoverride "scrollbox_content" {
+				background = {
+					using = Background_Area_Dark
+				}
+				vbox = {
+					datamodel = "[GetPlayer.MakeScope.GetList('sol_religion_tenet_list')]"
+					layoutpolicy_horizontal = expanding
+					spacing = 4
+
+					item = {
+						widget = {
+							visible = "[EqualTo_string( GetVariableSystem.Get('sol_custom_religion_creator_tab'), Scope.GetVariable('type').GetFlagKey )]"
+							
+							size = { -1 35 }
+							layoutpolicy_horizontal = expanding
+							
+							pod_sol_custom_religion_tenet = {
+								visible = "[Scope.Var('tenet').IsSet]"
+								
+								datacontext = "[Scope.Var('tenet').TenetType]"
+								blockoverride "button_tooltip" {
+									tooltipwidget = { using = tenet_type_tooltip }
+								}
+								
+								blockoverride "icon_and_spacer" {
+									spacer = { size = { 3 0 } }
+									widget = {
+										size = { 34 35 }
+										highlight_icon = {
+											texture = "[TenetType.GetIcon( Faith.Self )]"
+											size = { 32 50 }
+											parentanchor = center
+											position = { 0 -1 }
+										}
+									}
+								}
+								
+								blockoverride "button_label" {
+									text = "POD_sol_custom_selection_tenet"
+								}
+							}
+							
+							pod_sol_custom_religion_tenet = {
+								visible = "[Scope.Var('doctrine').IsSet]"
+								
+								datacontext = "[Scope.Var('doctrine').DoctrineType]"
+								blockoverride "button_tooltip" {
+									tooltipwidget = { using = doctrine_type_tooltip }
+								}
+								
+								blockoverride "icon_and_spacer" {
+									spacer = { size = { 3 0 } }
+									widget = {
+										size = { 34 35 }
+										icon_doctrine = {
+											texture = "[DoctrineType.GetIcon]"
+											parentanchor = center
+											size = { 30 30 }
+										}
+									}
+								}
+								
+								blockoverride "button_label" {
+									text = "POD_sol_custom_selection_doctrine"
+								}
+							}
+							
+							pod_sol_custom_religion_tenet = {
+								visible = "[Scope.Var('homeland').IsSet]"
+								
+								blockoverride "button_label" {
+									text = "POD_sol_custom_selection_homeland"
+								}
+							}
+							
+							pod_sol_custom_religion_tenet = {
+								visible = "[Not(Or3( Scope.Var('tenet').IsSet, Scope.Var('doctrine').IsSet, Scope.Var('homeland').IsSet ))]"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+types PODSOLTypes {
+	type pod_sol_custom_religion_tenet = button_standard_hover {
+		size = { 100% 100% }
+		
+		datacontext = "[GetScriptedGui('sol_custom_religion_creator_select_detail_script')]"
+							
+		onclick = "[ScriptedGui.Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('selected_tenet', Scope.Story.MakeScope).End)]"
+		enabled = "[ScriptedGui.IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('selected_tenet', Scope.Story.MakeScope).End)]"
+		
+		using = tooltip_ws
+		
+		block "button_tooltip" {
+			tooltip = "[GetScriptedGui('sol_custom_religion_creator_select_detail_script').BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('selected_tenet', Scope.Story.MakeScope).End)]"
+		}
+		
+		hbox = {
+			margin = { 5 0 }
+
+			button_radio = {
+				size = { 30 30 }
+				frame = "[BoolTo1And2( ScriptedGui.IsShown(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('selected_tenet', Scope.Story.MakeScope).End) )]"
+				alwaystransparent = yes
+			}
+			
+			block "icon_and_spacer" {
+				spacer = { size = { 12 0 } }
+			}
+
+			text_single = {
+				block "button_label" {
+					text = "[Localize(Concatenate('POD_sol_custom_selection_', Scope.GetVariable('id').GetFlagKey))]"
+				}
+				alwaystransparent = yes
+				align = nobaseline
+				max_width = 345
+			}
+
+			expand = {}
+		}
+	}
+}
