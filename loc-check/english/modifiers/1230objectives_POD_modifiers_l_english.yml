@@ -12,7 +12,7 @@
  capital_past_modifier: "Relic of Al Andalus"
  capital_past_modifier_desc: "Mortals have moved past Al Andalus, but this city has an undead society dedicated to preserving mementos of their shared heritage."
  sword_of_troile_modifier: "Sword of Troile"
- sword_of_troile_modifier_desc: "One of the most powerful weapons of Kindred history, this crystal sword was wielded by Troile herself during her numerous battles for the defence of Carthage."
+ sword_of_troile_modifier_desc: "One of the most powerful weapons of Kindred history, this crystal sword was wielded by Troile herself during her numerous battles for the defense of Carthage."
  #zmei_legacy_perk_effect: "# Fearsome creatures of immense power, once servants of the $glossary_wyrm$, are now bound to Baba Yaga, the Little Grandmother.#!" 
  babayaga_victory_opinion: "Loyal to the Crone."
  eyes_and_ears_modifier: "Eyes and Ears"
@@ -26,7 +26,7 @@
  path_of_the_sorcerer_modifier: "Sorcerer Haqimite"
  path_of_the_sorcerer_modifier_desc: "Reclusive, but now united in their research, $pod_clan$ Assamite is the keeper of many untold secrets."
  eternal_consul_modifier: "Eternal Consul"
- eternal_consul_modifier_desc: "The ruler of Sinner Rome is a charming creature, who needs only a whisper to make most people darkest desires come true."
+ eternal_consul_modifier_desc: "The ruler of Sinner Rome is a charming creature, who needs only a whisper to make most people's darkest desires come true."
  lasombra_chronicles_modifier: "Lasombra Chronicles"
  lasombra_chronicles_modifier_desc: "The conclusive volume about the rise of the savior of $pod_clan$ Lasombra, the bane of the [Glossary('Ashirra','game_concept_ashirra_desc')]."
  eternal_mullah_modifier: "Eternal Mullah"
@@ -43,7 +43,7 @@
  prime_curse_modifier: "Prime Curse"
  prime_curse_modifier_desc: "The curse of the Prime Councilor has touched this individual, making it hard for them even to think straight."
  dark_nobility_modifier: "Dark Nobility"
- dark_nobility_modifier_desc: "Lording over shadowy castles and oppressed populace, the Tzimisce $pod_clan$, is one of the intimidating rulers."
+ dark_nobility_modifier_desc: "Lording over shadowy castles and oppressed populace, the Tzimisce $pod_clan$ is one of the most intimidating rulers."
  kupala_empowered_modifier: "Empowered by Kupala"
  kupala_empowered_modifier_desc: "You have made a deal with the devil. Quite literally."
  kupala_depowered_modifier: "Depowered by Kupala"
@@ -96,8 +96,8 @@
  link_enoch_modifier_desc: "Enoch, the First City, is the true home of the Tal'meha'Ra in the [UmbraGlossaryLocalized('shadowlands','Underworld')]. This county now has direct access to it and can pull resources from it at its leisure."
  seed_of_rebellion_modifier: "Seed of Rebellion"
  seed_of_rebellion_modifier_desc: "The shadowy Tal'mahe'Ra has planted the seed of mistrust and rebellion in this character."
- runemages_community_modifier: "Runemages Community"
- runemages_community_modifier_desc: "Ulf's Hall has taken refuge in this province, providing their mystical influence in their new home."
+ #runemages_community_modifier: "Runemages Community"
+ #runemages_community_modifier_desc: "Ulf's Hall has taken refuge in this province, providing their mystical influence in their new home."
  cursed_by_cathar_modifier: "The Cathar Curse"
  cursed_by_cathar_modifier_desc: "The last Cathar cursed your name as he died an ungodly death. You feel... worried."
  cathar_community_modifier: "Cathar Community"
@@ -123,7 +123,7 @@
  kabbalah_modifier: "Grand Mekubbal"
  kabbalah_modifier_desc: "Thanks to your complete understanding of the secret Talmud, you are a master of Jewish mysticism."
  antediluvian_dominor_modifier: "Incomplete Ritual"
- antediluvian_dominor_modifier_desc: "You didn't perfectly complete the Blood Stealing ritual, but you still got some of the blood's power carries over to you."
+ antediluvian_dominor_modifier_desc: "You didn't perfectly complete the Blood Stealing ritual, but you still got some of the blood's power carried over to you."
 
  indep_mummy_against_horus_modifier: "Enemy of Horus"
  indep_mummy_with_horus_modifier: "Ally of Horus"
@@ -171,6 +171,7 @@
 
  cabiri_secured_future_modifier: "Secured Future"
  pneuma_foci_modifier: "Pneuma Foci"
+ custom_mummy_dynasty_secured_future_modifier: "Established Fifth Dynasty"
 
  wutian_protector_of_knowledge_modifier: "Protector of Knowledge"
  wutian_protector_of_knowledge_modifier_desc: "You no longer pay extra [static_stress|E] when getting [perks|E] from the opposite Tan tree."
@@ -231,3 +232,123 @@
 
  land_for_dragons_modifier: "Awakened Dragons"
  land_for_dragons_modifier_desc: "Can recruit [GetMaA('dragon_fiends_maa').GetName] as [men_at_arms|E]"
+
+ POD_nicnevin_modifier: "Nicnevin Legacy"
+ POD_pressyne_modifier: "Pressyne Legacy"
+ 
+ vatican_secrets_modifier: "Secrets of the Vatican"
+ vatican_secrets_modifier_desc: "The Lasombra's embedded influence of the Holy See provides esoteric knowledge and allows for covert diversion of their funds."
+ 
+ beast_unleashed_modifier: "Beast Unleashed"
+ beast_unleashed_modifier_desc: "The soul of a good man in exchange for power. Was it worth it?"
+ 
+ king_of_outlaws_modifier: "King of Outlaws"
+ king_of_outlaws_modifier_desc: "Rise and rise again until lambs become lions."
+ 
+ angel_soul_modifier: "Angel's Soul"
+ angel_soul_modifier_desc: "Michael's soul threatens to overwhelm you."
+ 
+ hideous_truth_modifier: "Hideous Truth"
+ hideous_truth_modifier_desc: "The starving parasite is clear for all to see."
+ 
+ chivalric_ideal_modifier: "The Chivalric Ideal"
+ chivalric_ideal_modifier_desc: "True beauty can be found in the graceful, flawless execution of combat."
+ 
+ exquisite_poison_modifier: "The Exquisite Poison"
+ exquisite_poison_modifier_desc: "The decadent rot at the core of empires can be so enticing."
+ 
+ muses_modifier: "The Muses"
+ muses_modifier_desc: "Our very presence inspires art and worship."
+ 
+ grand_patrons_modifier: "The Grand Patrons"
+ grand_patrons_modifier_desc: "Our endless patronage cultivate civilizations."
+ 
+ dark_petal: "The Dark Petal"
+ dark_petal_desc: "Her essence carries the suffocating scent of dead flowers."
+
+ ######################################################
+ # Mary the Black — Character Modifiers
+ ######################################################
+
+ # Fragmented Self — base modifier and four tablet-tier variants. CK3
+ # modifiers can't be runtime-scaled, so each tier is a separate modifier
+ # swapped on tablet recovery.
+ mary_fragmented_self_modifier: "Fragmented Self"
+ mary_fragmented_self_modifier_desc: "She was not reborn whole. Her mind was scattered with the tablets of Ebla, and what returned did so in pieces."
+ mary_fragmented_self_modifier_t1: "Fragmented Self — One Tablet Recovered"
+ mary_fragmented_self_modifier_t1_desc: "A single piece of the puzzle recovered. The foggy memories are getting clearer."
+ mary_fragmented_self_modifier_t2: "Fragmented Self — Two Tablets Recovered"
+ mary_fragmented_self_modifier_t2_desc: "Two pieces of herself are finally where they belong but the final shard, the Summoning, remains beyond her reach."
+
+ mary_most_hated_modifier: "One of the Most Hated Kindred in Europe"
+ mary_most_hated_modifier_desc: "Your name is reviled from Acre to London for your part in the destruction of the Dream. This will not go unavenged."
+
+ mary_tanith_protection_modifier: "Tanith's Protection"
+ mary_tanith_protection_modifier_desc: "Tanith recognizes your talents. Make sure to not let her down."
+
+ mary_tanith_legacy_modifier: "Tanith's Legacy"
+ mary_tanith_legacy_modifier_desc: "Tanith's protection now extends farther than just her court. The House of Moloch recognizes you."
+
+ mary_tanith_protection_lapsed_landless.toast: "Tanith cannot, or will not, protect you any longer. Her name will do you no good on the road, after all. The hunters are waiting."
+
+ mary_tanith_commission_diyarbakr_modifier: "Tanith's Commission: A Rival in the Dark"
+ mary_tanith_commission_diyarbakr_modifier_desc: "Tanith has given you orders concerning the Order of Azaneal. A county in [GetTitleByKey('d_diyarbakr').GetNameNoTier] or [GetTitleByKey('d_diyarrabia').GetNameNoTier] must be taken. Prove to her you're worth keeping around."
+
+ mary_tanith_commission_cyprus_modifier: "Tanith's Commission: The Pious Threat"
+ mary_tanith_commission_cyprus_modifier_desc: "Tanith has set you against the Knights of Acre in Cyprus. The Duchy of [GetTitleByKey('d_cyprus').GetNameNoTier] must fall before the hunters can grow in power."
+
+ # Vampire-only-start variant of the Cyprus commission. Active when Cyprus
+ # is held by Nehemiah (Brujah) and Shutatara has fled to his court.
+ mary_tanith_commission_cyprus_brujah_modifier: "Tanith's Commission: The Daughter's Refuge"
+ mary_tanith_commission_cyprus_brujah_modifier_desc: "Shutatara, Tanith's traitor childe, has fled to the court of the Brujah Nehemiah, Prince of Cyprus. The Duchy of [GetTitleByKey('d_cyprus').GetNameNoTier] must change hands before the daughter begins to like it there."
+
+ mary_tanith_commission_olives_modifier: "Tanith's Commission: A Diet of Olives"
+ mary_tanith_commission_olives_modifier_desc: "Tanith has set you against the Diet of Olives. A county in [GetTitleByKey('d_antioch').GetNameNoTier] or [GetTitleByKey('d_lebanon').GetNameNoTier] must be taken before they grow too strong."
+
+ # Anoster pact summary shown in podintroductions.380's event description
+ POD_maryb_starting_pacts.tt: "Two pacts to the demon Anoster fall due every eight years: one of blood and one of pain."
+
+ mary_black_dream_modifier: "The Black Dream"
+ mary_black_dream_modifier_desc: "Mary has claimed the Dream for herself. What was once meant to be utopia has become a place of hellish suffering."
+
+ mary_second_dream_modifier: "The Second Dream"
+ mary_second_dream_modifier_desc: "#shinygold Michael rises again, reborn from the ashes. The Dream lives on, albeit stranger than before.#!"
+
+ mary_ash_and_gold_modifier: "Ash and Gold"
+ mary_ash_and_gold_modifier_desc: "Neither Mary nor Michael are fully dominant. Something odd has come into existence due to their passionate, mixed feelings. Control changes between the pair constantly with no real rhyme or reason."
+
+ # Oscillating ascendancy modifiers. Exactly one is present at any time; the
+ # yearly pulse re-rolls every few years (POD_maryb_ash_gold_reroll_effect).
+ mary_ash_and_gold_michael_modifier: "Ash and Gold: Michael Surfaces"
+ mary_ash_and_gold_michael_modifier_desc: "#shinygold For now, beloved, my hand is the one that guides. Let them bask in my warmth for a while.#! The radiant half is in control. For now."
+ mary_ash_and_gold_mary_modifier: "Ash and Gold: Mary Surfaces"
+ mary_ash_and_gold_mary_modifier_desc: "She has resurfaced this time, proving once more why everyone was right to fear her. The predatory half is in control. For now."
+
+ # Toasts fired by POD_maryb_ash_gold_reroll_effect when the ascendant half flips.
+ mary_ash_gold_michael_surfaces.toast: "#shinygold Michael rises nearer the surface. The luminous half of the Dream is in control now.#!"
+ mary_ash_gold_mary_surfaces.toast: "Mary rises nearer the surface. The dark half of the Dream is in control now."
+
+ # The Fall — applied to whoever is seated as the Pillar of Gold. The
+ # corruption tell beneath an untouched faith.
+ maryb_trinity_the_fall_modifier: "The Fall"
+ maryb_trinity_the_fall_modifier_desc: "#shinygold The hopeless come to me with so many desires and requests. I won't let them leave as they arrived.#! Something is wrong beneath the surface, though neither can tell why."
+
+ # Mary the Black — Well of Sacrifice: 
+ mary_well_offering_t2: "Offering Made"
+ mary_well_offering_t2_desc: "The city's blood flows generously. Raise the next tier."
+ mary_well_offering_t3: "Offering Made"
+ mary_well_offering_t3_desc: "The city's blood flows generously. Raise the next tier."
+ mary_well_offering_t4: "Offering Made"
+ mary_well_offering_t4_desc: "The last offering is given. The Well can be driven open at last; raise the final tier."
+
+ # Hunter Alliance Legacies Refactor
+ dynasty_hunter_alliances_inquisition_modifier: "Support from the Shadow Inquisition"
+ dynasty_hunter_alliances_inquisition_modifier_desc: "#flavor The most powerful hunter order is without a doubt the Shadow Inquisition. You want them on your side... or at least not interfering. #!\nYou can now invite a member of this organization with the '$contact_fellow_hunters_decision$' [decision|E].\n$countermeasures_unlocks_t1_all_seeing_eye$"
+ dynasty_hunter_alliances_ikhwan_modifier: "Support from the Ikhwan Al-Safa"
+ dynasty_hunter_alliances_ikhwan_modifier_desc: "#flavor While lacking a formal organization, the Ikhwan are without compare when it comes to hunting monsters in their turf. An expertise you can learn from. #!\nYou can now invite a member of this organization with the '$contact_fellow_hunters_decision$' [decision|E]. \nYou can now ask for special mentoring in Sorcery with the '$contact_fellow_hunters_decision$' [decision|E]."
+ dynasty_hunter_alliances_judges_modifier: "Support from the Judges"
+ dynasty_hunter_alliances_judges_modifier_desc: "#flavor The knowledgeable Judges would bring a wealth of experience and mystical lore to your fight if they were to become your allies #!\nYou can now invite a member of this organization with the '$contact_fellow_hunters_decision$' [decision|E]. \nYou can now ask for special mentoring in Theurgy with the '$contact_fellow_hunters_decision$' [decision|E]."
+ dynasty_hunter_alliances_akritai_modifier: "Support from the Akritai"
+ dynasty_hunter_alliances_akritai_modifier_desc: "#flavor The defenders of Eastern Christianity are inheritors of the complex Byzantine legal and bureaucratic system. A useful skill to have for a burgeoning hunter order. #!\nYou can now invite a member of this organization with the '$contact_fellow_hunters_decision$' [decision|E]. "
+ dynasty_hunter_alliances_qorjin_modifier: "Support from Qorjin's Baghatur"
+ dynasty_hunter_alliances_qorjin_modifier_desc: "#flavor The Mongol hunters have strange allies... but their brute strength makes it easy to turn a blind eye. #!\nYou can now invite a member of this organization with the '$contact_fellow_hunters_decision$' [decision|E]. \nCan recruit [GetMaA('battlescarred_fera').GetName] as [men_at_arms|E]."

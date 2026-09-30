@@ -29,7 +29,7 @@
  POD_hunger_window_herdify_suffix: "Select any unlanded $POD_splat_vampire$ and start the herdify [scheme|E] via [character_interaction|E]."
  POD_hunger_window_herdify_vampire: "#help There are no potential [POD_herd|E] members in your court. Try hunting mortals in your capital.#!"
 
- POD_hunger_window_prisoners_invalid: "#help You currently have no prisoners that you could exsanguinate or herdify.#!"
+ POD_hunger_window_prisoners_invalid: "#help You currently have no prisoners that you could exsanguinate or add to your [POD_herd|E].#!"
  POD_hunger_window_prisoners: "You have prisoners.\n#help You might be able to drain their blood, or add them to your [POD_herd|E].#!"
 
  POD_hunger_window_ghoul_bound: "Because you are a [bound_ghoul|E], your only way of losing [hunger_with_icon|E] is by completing [bound_ghoul_missions_with_icon|E] from your $ghoul_domitor$."
@@ -41,13 +41,11 @@
 
  POD_hunger_window_artifacts: "You have [artifacts|E] that can store Blood."
 
- POD_glamour_window_regen: "[GetPlayer.Custom('PODGlamourRegenHint')]"
- POD_glamour_window_regen_fae: "Because you are a [GetTrait('fae').GetName(GetPlayer)], you regenerate #V 1#! Glamour per month."
- POD_glamour_window_regen_changeling: "Because you are a [GetTrait('changeling').GetName(GetPlayer)], you regenerate #V 1#! Glamour per month."
- POD_glamour_window_regen_building: "#help You have a #V [GetPlayer.MakeScope.ScriptValue('chance_for_extra_glamour_regen')]%#! chance to regenerate extra Glamour from #TOOLTIP:BUILDING,glade_freehold_01 #L Glade#!#! buildings in your capital.#!"
- POD_glamour_window_dreamer: "You can add one of your [courtiers|E] as a Dreamer."
- POD_glamour_window_dreamer_help: "#help Dreamers will grant you [lifestyle_experience|E] and have a small chance to regenerate your Glamour.#!"
- POD_glamour_window_reverie: "You gain #V 2#! Glamour through Reverie every time you complete a [GetScheme('sway').GetTypeName()], [GetScheme('befriend').GetTypeName()], or [GetScheme('courting').GetTypeName()] [scheme|E]."
+ POD_glamour_window: "As a kithain, you use [epiphanies|E] to generate Glamour."
+ POD_glamour_window_reverie: "[reverie|E]: Get more $POD_splat_mortal$ [relations|E] with good [epiphanies_quality|E]."
+ POD_glamour_window_revelry: "[revelry|E]: Meet the requirements described in your kith [trait|E]."
+ POD_glamour_window_ravaging: "[Concept('ravaging', 'Ravage')|E] this mortal's creativity for Glamour."
+ POD_glamour_window_ravaging_no_targets: "There is no $POD_splat_mortal_plural$ available for you to [Concept('ravaging', 'Ravage')|E]."
  POD_glamour_window_artifacts: "You have [artifacts|E] that can store Glamour."
 
 #  POD_resolve_window: "[GetPlayer.Custom('PODResolveHint')]"
@@ -125,3 +123,10 @@
  POD_ren_plants: "#bold Flora#!"
  POD_ren_animals: "#bold Animals#!"
  POD_ren_metals: "#bold Metals#!"
+ 
+ POD_true_name_widget_select_all: "Select all traits"
+
+ EPIPHANIES_QUALITY_1_TT: "#bold [epiphanies_quality|E]: 1#!\nThis character is bad for [reverie|E] and [ravaging|E]"
+ EPIPHANIES_QUALITY_2_TT: "#bold [epiphanies_quality|E]: 2#!\nThis character is good for [reverie|E] and [ravaging|E]"
+ EPIPHANIES_QUALITY_3_TT: "#bold [epiphanies_quality|E]: 3#!\nThis character is great for [reverie|E] and [ravaging|E]"
+ EPIPHANIES_QUALITY_4_TT: "#bold [epiphanies_quality|E]: 4#!\nThis character is immaculate for [reverie|E] and [ravaging|E]"

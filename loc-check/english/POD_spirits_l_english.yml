@@ -11,7 +11,7 @@
  POD_spawn_elemental_bane_spirit_effect_tooltip: "An #N Elemental Bane#! [GetTrait('spirit').GetName( GetNullCharacter )] will appear"
 
 
- spirit_relative_became_ancestor: "[ancestor_spirit.GetName] has died and became an [ancestor_spirit|E]."
+ spirit_relative_became_ancestor: "[ancestor_spirit.GetName] has died and become an [ancestor_spirit|E]."
  POD_is_ancestor_spirit_trigger_tooltip: "Is #bold not#! an [ancestor_spirit|E]"
 
 
@@ -41,9 +41,9 @@
 
  spirit_language_cannot_learn_ancestor: "You cannot learn "
 
- learn_language_outcome_success.spirits.desc: "Spiritual languages are as whimsical as their speakers. Some use recognizable patterns, some don't. Luckily, the most widespread ones tend to have undergone the same journey than mortals ones do, leading to them being streamlined to be used by non spiritual entities.\nAfter all, spirits need to be understood when they bargain with visitors. Though it's likely that the most crafty ones will also use the intricacies of their language to try to get the upper hand in negotiations.\nThis is why you took precautions to learn what could be considered more niche vocabulary, hopefully avoiding you the fate of misunderstanding a spiritual contract in the future."
+ learn_language_outcome_success.spirits.desc: "Spiritual languages are as whimsical as their speakers. Some use recognizable patterns, some don't. Luckily, the most widespread ones tend to have undergone the same journey as mortal ones do, leading to them being streamlined to be used by non-spiritual entities.\nAfter all, spirits need to be understood when they bargain with visitors. Though it's likely that the most crafty ones will also use the intricacies of their language to try to get the upper hand in negotiations.\nThis is why you took precautions to learn what could be considered more niche vocabulary, hopefully sparing yourself the fate of misunderstanding a spiritual contract in the future."
 
- learn_language_outcome_failure.spirits.desc: ""After lots of hard work... nothing! It is #EMP impossible#! to learn this spiritual language. No matter how hard I try, I speak like a barely-weaned babe and blabber like a fool!\n\nBah! This was a waste of time...""
+ learn_language_outcome_failure.spirits.desc: "After lots of hard work... nothing! It is #EMP impossible#! to learn this spiritual language. No matter how hard I try, I speak like a barely-weaned babe and blabber like a fool!\n\nBah! This was a waste of time..."
 
  learn_spirit_language_complete: "You have learned [target.GetShortUINamePossessiveNoTooltip] [spirit_language|E]"
 
@@ -52,8 +52,8 @@
  SPIRIT_TAINTED_SPEECH_REASON: "[target.GetName] speaks Tainted Speech: $VALUE|+=0$"
 
 
- POD_spirit_wyrm_possession_effect_tooltip: "Gain #TOOLTIP:POD_spirit_wyrm_possession_effect_tooltip2 #V;L [spirit.MakeScope.ScriptValue('POD_spirit_wyrm_possession_power')]#!#! [possessedpower_lifestyle|E] [perk|E] points"
- POD_spirit_wyrm_possession_effect_tooltip2: "The amount of [perk|E] points obtained from #ONCLICK:FAITH,wyrmbound #TOOLTIP:FAITH,wyrmbound $Bane|L$#!#! Spirits depends on the following:\n$BULLET_WITH_TAB$Spirit Rank: #P +1#! per Rank\n$BULLET_WITH_TAB$Bane speaks Corrupting Voice: #P +2#!\n$BULLET_WITH_TAB$Is a Seeder Bane: additional #P +1#! perk Spirit Rank\n$BULLET_WITH_TAB$Bane speaks Tainted Speech: #P +4#!\n$BULLET_WITH_TAB$[faith|E] [core_tenets|E]: #P +1/+2#!"
+ POD_spirit_wyrm_possession_effect_tooltip: "Gain #TOOLTIP:POD_spirit_wyrm_possession_effect_tooltip2 #V;L [GuiScope.SetRoot(spirit.MakeScope).AddScope('target',target.MakeScope).ScriptValue('POD_spirit_wyrm_possession_power')]#!#! [possessedpower_lifestyle|E] [perk|E] points"
+ POD_spirit_wyrm_possession_effect_tooltip2: "The amount of [perk|E] points obtained from #ONCLICK:FAITH,wyrmbound #TOOLTIP:FAITH,wyrmbound $Bane|L$#!#! Spirits depends on the following:\n$BULLET_WITH_TAB$Spirit Rank: #P +1#! per Rank\n$BULLET_WITH_TAB$Bane speaks Corrupting Voice: #P +2#!\n$BULLET_WITH_TAB$Is a Seeder Bane: additional #P +1#! per Spirit Rank\n$BULLET_WITH_TAB$Bane speaks Tainted Speech: #P +4#!\n$BULLET_WITH_TAB$[faith|E] [core_tenets|E]: #P +1/+2#!"
 
  POD_spirit_possession_rank_desc: "Spirit Rank"
  POD_spirit_possession_piety_level_desc: "Your [piety_level|E]"
@@ -97,7 +97,7 @@
  spirit_drattosi_pact_modifier: "Pact: Drattosi"
  spirit_ooralath_pact_modifier: "Pact: Ooralath"
  spirit_nocturna_pact_modifier: "Pact: Nocturna"
- spirit_raptor_pact_modifier: "Pact: Nocturna"
+ spirit_raptor_pact_modifier: "Pact: Raptor"
  spirit_harpy_pact_modifier: "Pact: Harpy"
  spirit_rotwalker_pact_modifier: "Pact: Rot Walker"
  spirit_seeder_pact_modifier: "Pact: Seeder"
@@ -119,3 +119,17 @@
  spirit_mokole_pact_modifier: "Pact: Mokolé"
 
  spirit_human_pact_modifier: "Spirit Pact"
+
+
+
+
+###Spirit Binding
+spirit_binding_ancestor_modifier: "Ancestral Strength"
+spirit_binding_harmonys_melody_modifier: "Sweet Harmony"
+spirit_binding_conflicts_drum_modifier: "Rising Conflict"
+spirit_binding_artisans_anthem_modifier: "Thriving Artisans"
+spirit_binding_seditions_lullaby_modifier: "Guarded Sedition"
+spirit_binding_wisdoms_hymn_modifier: "Shared Wisdom"
+spirit_binding_wyrmspeak_modifier: "Foul Tongue"
+spirit_binding_corrupting_voice_modifier: "Indulged Corruption"
+spirit_binding_tainted_speech_modifier: "Maniacal Speech"

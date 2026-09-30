@@ -2,7 +2,7 @@
 
  pod1230objectives.1.t: "Setting the Sun"
  pod1230objectives.1.desc: "Most of you have long heard the false tale of the Persian 'God', Mithras, of his unending exploits and ambitions for the isles. Tonight, you will hear the whole, sad truth. Mithras wanted us to think he came to the British Isles as a savior, but the truth is, he was fleeing from his failures in Ancient Rome, seeing our homeland as a backwater barely fit enough to rebuild his power base. Now, he has failed once more, as Britannia is under a new, united leadership. His cult scatters, driven out by fire and sword and destined to become a mere footnote of the isles' history. As I proclaim to you the fall of the 'Unconquered Sun', I also proclaim that Britannia is finally ready to become its own driving force in $pod_cainite$ society."
- pod1230objectives.1.a: "Pretty good speech, if I say so myself"
+ pod1230objectives.1.a: "Pretty good speech, if I do say so myself"
  pod1230objectives.2.a: "Mithras has suffered his last defeat... probably"
  pod1230objectives.2.b: "The Unconquered Sun will rise again, it always does."
  pod1230objectives.3.t: "The Scepter and the Sun"
@@ -205,7 +205,7 @@
  pod1230objectives.63.b: "The new $pod_clan$ Ravnos doesn't forget so easily." 
  pod1230objectives.63.custom: "The authority of the traditional western ruling clans, Ventrue, Lasombra and Tzimisce, will be challenged by your rise for a time." 
  pod1230objectives.63.customb: "The eastern Ravnos will send a strong candidate for $pod_Embrace$ as a gift. This character will become your courtier."  
- pod1230objectives.64.a: "We have enough 'Ruling [Glossary('Clans','game_concept_Clan_desc')]' already." 
+ pod1230objectives.64.a: "We have enough 'Ruling $pod_clans$' already." 
  pod1230objectives.64.b: "A bright new age for our kin."
  pod1230objectives.65.t: "Ending the Eternal"
  pod1230objectives.65.desc: "India has never been at peace. The [Glossary('Asuratizayya','game_concept_kuei_jin_desc')], or [Glossary('Wan Kuei','game_concept_kuei_jin_desc')] in their language, have constantly encroached on our land, using our internal divisions to turn us against one another. These so called Hungry Demons do not care for our traditions and are fine with using the most underhanded of tactics to press their advantage, in their so called 'Low War'. At times, we have been pushed to the brink of extinction by the demonic pacts they so easily make. But now, India awakens. Be they Ravnos, Nagaraja or Danava, the native $pod_cainites$ are finding strength and unity of purpose anew. Make no mistake though, the Eternal War won't be over until no [Glossary('Wan Kuei','game_concept_kuei_jin_desc')] dare roam our lands. As the new Chakravarti of India, this is my first command: Kill them all."
@@ -300,7 +300,7 @@
  # pod1230objectives.891.desc: "As the evening falls, the great hall slowly fills with guests. The pent-up excitement characteristic of those last moments before a feast is to begin in earnest is palpable in the air, but you can safely assume that none of those present feel it as strongly as you. Certainly not those blissfully unaware of their role in the festivities. Your majordomo signals that all guests who responded to invitations are present and accounted for and you signal back to have the guards silently bar the doors. As you make your way to the head of the table, your [blood_father.Custom2('RelationToMeShort', SCOPE.sC('obsolete_child'))] [obsolete_child.GetFirstNameNoTooltip] intercepts you and asks: \n - My [obsolete_child.Custom2('RelationToMeShort', SCOPE.sC('blood_father'))], the feast is starting, alas I can not see or smell any food. Are you planning to make us fast?" 
  # pod1230objectives.891.a: "Do not fret, [obsolete_child.GetFirstNameNoTooltip], [ROOT.Char.GetFaith.HighGodName] will send us the the nourishment."
  # pod1230objectives.892.t: "To health! To power!"
- # pod1230objectives.892.desc: "Kinsmen! - you being - All of you gathered here tonight will be granted the honour of lending the strength of your noble blood to the cause of elevating the name of House [blood_father.GetHouse.GetBaseNameNoTooltip] to new heights of glory. Many of you will do so with the help of your younger brothers and sisters who's bodies and minds are better suited for the task, yet do not despair for your service will be remembered and your sacrifice will be honoured. Now, my children of the true $pod_vitae$, boldly reach for your inheritance and make it your strength, take your predecessors' blood and rid them of the burden of it power. Gorge yourself on the past and become the future!"
+ # pod1230objectives.892.desc: "Kinsmen! - you being - All of you gathered here tonight will be granted the honor of lending the strength of your noble blood to the cause of elevating the name of House [blood_father.GetHouse.GetBaseNameNoTooltip] to new heights of glory. Many of you will do so with the help of your younger brothers and sisters who's bodies and minds are better suited for the task, yet do not despair for your service will be remembered and your sacrifice will be honored. Now, my children of the true $pod_vitae$, boldly reach for your inheritance and make it your strength, take your predecessors' blood and rid them of the burden of it power. Gorge yourself on the past and become the future!"
  # pod1230objectives.892.a: "Take them and feast!"
  # pod1230objectives.893.t: "Consolidated power"
  # pod1230objectives.893.desc: "The feeding frenzy subsides. As gruesome of an ordeal it was, there is not a hint of shame or guilt among even your relatively soft-hearted children. There is a profound sense of satisfaction, gratitude and contentment permeating the blood-splattered hall. What is done, is done."
@@ -312,7 +312,7 @@
  pod1230objectives.255.option.war: "It's time for war!"
  pod1230objectives.255.option.prowess: "We will show them no mercy"
  pod1230objectives.255.option.stewardship: "We will rule them, because we know how to"
- pod1230objectives.255.option.intrigue: "They won't event see us coming"
+ pod1230objectives.255.option.intrigue: "They won't even see us coming"
  pod1230objectives.255.option.learning: "We don't have time for this, knowledge awaits"
  pod1230objectives.255.option.secret: "We are the true heirs to Caine and soon they will learn how to obey"
  pod1230objectives.256.title: "Power of Blood"
@@ -343,7 +343,6 @@
  pod1230objectives.256.quietus: "Quietus. To influence the blood"
  pod1230objectives.256.mytherceria: "Mytherceria. Powers attributed to the fae"
  pod1230objectives.256.chimerstry: "Chimerstry. To conjure illusions"
- pod1230objectives.256.thinbloodalchemy: "Thin-Blood Alchemy. To distill vitae"
  pod1230objectives.256.bardo: "Bardo. To deny the Beast"
  pod1230objectives.256.flight: "Flight. To soar through the heavens"
  pod1230objectives.256.kai: "Kai. To sharpen one's will"
@@ -438,7 +437,7 @@
  pod1230objectives.98.b: "What? How? This cannot be!"
  tremere_blood_curse_decision_custom: "Alamut, the Great Work located in the county of [GetTitleByKey('b_qazvin').GetNameNoTier], must be fully built"
  pod1230objectives.99.t: "Immortal Patronage"
- pod1230objectives.99.desc: "As a proud Toreador, you have long nurtured the artists, be they mortals or not, in your area. Your court has become a center of poetry, writing, sports and all the other pursuits you deem worthy. Better yet, you have also managed to surround yourself with a talented council of the various [Glossary('Clans','game_concept_Clan_desc')], making sure that your renown spread even further than just your own Toreador brethren.\nThere is hardly a night passing without a new discovery, a new theory or a new masterpiece being created thanks to your subtle but ever present care. In a way, you have achieved the dream of every Toreador: never running out of new wonders to entertain the otherwise agonizingly slow grind of immortality."
+ pod1230objectives.99.desc: "As a proud Toreador, you have long nurtured the artists, be they mortals or not, in your area. Your court has become a center of poetry, writing, sports and all the other pursuits you deem worthy. Better yet, you have also managed to surround yourself with a talented council of the various $pod_clans$, making sure that your renown spread even further than just your own Toreador brethren.\nThere is hardly a night passing without a new discovery, a new theory or a new masterpiece being created thanks to your subtle but ever present care. In a way, you have achieved the dream of every Toreador: never running out of new wonders to entertain the otherwise agonizingly slow grind of immortality."
  pod1230objectives.99.a: "Each night feels new at last"
  toreador_grandeur_event_tooltip: "An especially well inspired character has joined your court."
  pod1230objectives.100.a: "Fancy Toreador posturing!"
@@ -478,7 +477,7 @@
  pod1230objectives.107.desc: "Once again, the Celestial Army is restored, now all [GetTrait('shih').GetName( GetPlayer )] will follow you. Once the most powerful army of hunters this world has ever seen, the Celestial Army fell to decadence and inner corruption, leading the most virtuous of your kind into destroying it for the greater good.\nMany are worried that the same mistakes will be made again, but you are reassuring them that you know better.\nTime will tell."
  pod1230objectives.107.a: "No peace, just war."
  pod1230objectives.107.a.tt: "You will now longer have access to the 'Thoughtful Action' decision."
- pod1230objectives.107.a.tt2: "You will be able to use the [GetPlayer.GetFaith.Custom('GHWName')] for [empire|E] [casus_belli|E] when the time has come."
+ pod1230objectives.107.a.tt2: "You will be able to use the [GetPlayer.GetFaith.GHWName] for [empire|E] [casus_belli|E] when the time has come."
  pod1230objectives.107.b: "Let's maintain the old way."
  
  pod1230objectives.115.t: "Stealing Wisdom"
@@ -518,7 +517,7 @@
  pod1230objectives.128.a: "A lasting friendship?"
 
  pod1230objectives.130.t: "Awake Hun and P'o"
- pod1230objectives.130.desc: "To decipher the secret of Hun and P'o, you have meet the Kaifeng Jewish Wan-Kuei, studied the Kànbujiàn and [UmbraGlossaryLocalized('yomi_wan','Yomi Hell')], and you have gone to mount Meru, finding the temple complex that served as the headquarter of the [Glossary('Wan Xian','game_concept_kuei_jin_desc')].\nNow you have understood the second breath, awakened your Hun and P'o and become a full-fledged [Glossary('Wan Kuei','game_concept_kuei_jin_desc')]!\nMaybe this was what Saulot looked for all those years ago and maybe you even did better than he ever did. You are now one of a kind, a link between two very different worlds."
+ pod1230objectives.130.desc: "To decipher the secret of Hun and P'o, you have met the Kaifeng Jewish Wan-Kuei, studied the Kànbujiàn and [UmbraGlossaryLocalized('yomi_wan','Yomi Hell')], and you have gone to mount Meru, finding the temple complex that served as the headquarter of the [Glossary('Wan Xian','game_concept_kuei_jin_desc')].\nNow you have understood the second breath, awakened your Hun and P'o and become a full-fledged [Glossary('Wan Kuei','game_concept_kuei_jin_desc')]!\nMaybe this was what Saulot looked for all those years ago and maybe you even did better than he ever did. You are now one of a kind, a link between two very different worlds."
  pod1230objectives.130.a: "I have achieved the impossible."
  
  pod1230objectives.131.t: "United for the Hunt"
@@ -534,15 +533,15 @@
  #pod1230objectives.133.a: "God is watching!"
  
  pod1230objectives.135.t: "Creation of Visceratika"
- pod1230objectives.135.desc: "An extension of their natural affinity for stone, earth, and things made thereof, Visceratika is for the Gargoyles a codified version of these powers that came naturally to them. Having long been enthralled by the Tremere, they had so far not been unable to really understand this affinity for these powers but this has changed recently. Pioneered by one innovative individual, these strange abilities are finally spreading like wildfire among the very communal Gargoyles, under the name of Visceratika. A new discipline joins the ranks of the power of the blood."
+ pod1230objectives.135.desc: "An extension of their natural affinity for stone, earth, and things made thereof, Visceratika is for the Gargoyles a codified version of these powers that came naturally to them. Having long been enthralled by the Tremere, they had so far been unable to really understand this affinity for these powers but this has changed recently. Pioneered by one innovative individual, these strange abilities are finally spreading like wildfire among the very communal Gargoyles, under the name of Visceratika. A new discipline joins the ranks of the power of the blood."
  pod1230objectives.135.a: "Masters of Earth and Stone."
  
  pod1230objectives.136.t: "Creation of Visceratika"
- pod1230objectives.136.desc: "An extension of their natural affinity for stone, earth, and things made thereof, Visceratika is for the Gargoyles a codified version of these powers that came naturally to them. Having long been enthralled by the Tremere, they had so far not been unable to really understand this affinity for these powers but this has changed recently. Pioneered by one innovative individual, these strange abilities are finally spreading like wildfire among the very communal Gargoyles, under the name of Visceratika. A new discipline joins the ranks of the power of the blood."
+ pod1230objectives.136.desc: "An extension of their natural affinity for stone, earth, and things made thereof, Visceratika is for the Gargoyles a codified version of these powers that came naturally to them. Having long been enthralled by the Tremere, they had so far been unable to really understand this affinity for these powers but this has changed recently. Pioneered by one innovative individual, these strange abilities are finally spreading like wildfire among the very communal Gargoyles, under the name of Visceratika. A new discipline joins the ranks of the power of the blood."
  pod1230objectives.136.a: "Masters of Earth and Stone."
  
  pod1230objectives.137.t: "Creation of Visceratika"
- pod1230objectives.137.desc: "Reports said that [visceratika_creator.GetFirstNameNoTooltip] created a new discipline named [GetTrait('visceratika').GetName(GetNullCharacter)].\nAn extension of their natural affinity for stone, earth, and things made thereof, Visceratika is for the Gargoyles a codified version of these powers that came naturally to them. Having long been enthralled by the Tremere, they had so far not been unable to really understand this affinity for these powers but this has changed recently. Pioneered by one innovative individual, these strange abilities are finally spreading like wildfire among the very communal Gargoyles, under the name of Visceratika. A new discipline joins the ranks of the power of the blood."
+ pod1230objectives.137.desc: "Reports said that [visceratika_creator.GetFirstNameNoTooltip] created a new discipline named [GetTrait('visceratika').GetName(GetNullCharacter)].\nAn extension of their natural affinity for stone, earth, and things made thereof, Visceratika is for the Gargoyles a codified version of these powers that came naturally to them. Having long been enthralled by the Tremere, they had so far been unable to really understand this affinity for these powers but this has changed recently. Pioneered by one innovative individual, these strange abilities are finally spreading like wildfire among the very communal Gargoyles, under the name of Visceratika. A new discipline joins the ranks of the power of the blood."
  pod1230objectives.137.a: "More powers to learn?"
  pod1230objectives.137.b: "Good for our bloodline."
  
@@ -634,7 +633,7 @@
  azhi_dahaka_objective_decision_tooltip: "One with change."
  azhi_dahaka_objective_decision_desc: "Azhi Dahaka is a mythical state of being pursued by the Tzimisce. It is the harbinger of transformation, a state where physical and mental norms and structures lose their hold on the vampire's very soul. To achieve it, each aspirant must find their own way as stagnation is extinction after all."
  azhi_dahaka_objective_decision_confirm: "Let's start experimenting..."
- azhi_dahaka_objective_decision_requirement: "You have at least #V 3#! [bound_ghouls|E] with #V 25#! or more [GetTrait('fleshcrafted').GetName(GetNullCharacter)] [trait_level_track_xp|E]"
+ azhi_dahaka_objective_decision_requirement: "You have at least #V 3#! [bound_ghouls|E] with #V 30#! or more [GetTrait('fleshcrafted').GetName(GetNullCharacter)] [trait_level_track_xp|E]"
  azhi_dahaka_objective_decision_requirement2: "You have at least #V 10#! [prisoners|E] with [GetTrait('vampgeneration7').GetName(GetNullCharacter)] or lower"
  pod1230objectives.156.t: "A New Form"
  pod1230objectives.156.desc: "As a rule, with a few notable exceptions, Tzimisce do not tend towards devoted piety. Why worship some distant god when you can craft yourself into one? Not really a deity. Not really a dogma. Azhi Dahaka is the symbol, fetish, and focus of the Clan's transcendentalism.\nFrom the Dracon to Illuyankas, Dracula to the Leviathan, dragons are woven deeply into Tzimisce's mythology. What the kine fear, we aspire towards — not the literal, physical form, but what the dragon represents as harbinger of transformation. We quest for the transcendental, walking the sinuous spiral of Azhi Dahaka's coils, gazing into its many mouths and eyes. Where chaos and forever meet in motion, that is where we will find the dragon's beating heart, and we will drink deep.\nMetaphor made manifest. Riddle made flesh. Azhi Dahaka is the chiropteran cherub of our godless, alien spirituality."
@@ -668,8 +667,9 @@
  pod1230objectives.159.a: "Everything in the name of knowledge"
 
  pod1230objectives.1591.t: "Sargon Codex"
- pod1230objectives.1591.desc: "And here I am, at the doorstep of godhood. Only one single step foward and I will do something even Cappadocius never managed to do, regain the divine spark that the curse of Caine erases in all of us. I will be one of the the kind, blessed and cursed as the same time... but all the more powerful for it."
+ pod1230objectives.1591.desc: "And here I am, at the doorstep of godhood. Only one single step forward and I will do something even Cappadocius never managed to do, regain the divine spark that the curse of Caine erases in all of us. I will be one of a kind, blessed and cursed at the same time... but all the more powerful for it."
  pod1230objectives.1591.a: "Apotheosis."
+ pod1230objectives.1591.a.tt: "The #V level 6#! sorcery [perks|E] will not require any [journey|E]"
 
  pod1230objectives.1592.t: "Gehenna: The Calm"
  pod1230objectives.1592.desc: "Unlike many of his contemporaries, Cappadocius yearned for a power even beyond even what he possessed as an antediluvian. His quest for knowledge was endless, his entire lineage of childer cultivated to this end. For millennia, the Scholars have labored towards this end. Between the Codex, the Wraith of the Messiah, Necromancy, and from the depths of the Underworld no stone has been left unturned in this search.\n\nAnd at long last, it has been found. \n\nYou feel it first. A rush of energy, a vitality long lost to you. Cappadocius himself has recognized your critical role in this development, and has rewarded you for enabling him to perform the impossible. Your mind expands and races, as everything he had learned rushes into you within an instant. Your $pod_vitae$ screams, your mind roars, the Beast howls, and existence around you begins to swirl. With mere thoughts, you feel what you have learned bending the world around you to your will. In your final moments of vampiric lucidity before you become something greater, you smile, the fruit of your ambitions tasting of the sweetest nectar."
@@ -701,7 +701,7 @@
 
  pod1230objectives.1611.t: "Ecstasis: Moment of Clarity"
  pod1230objectives.1611.desc: "If the Beast is truly divine as the Ecstasis claim, then it is a reflection of the Almighty. Wise Ecstasis soon understand that this doesn't make it any less dangerous. Being consumed by its needs before truly understanding it means losing it all. Pain and pleasure are a means, not an end."
- pod1230objectives.1611.a: "I #weak fell#! different?"
+ pod1230objectives.1611.a: "I #weak feel#! different?"
  pod1230objectives.1611.a.tt: "Something changed in you, the curse of Caine is weakening its grasp."
 
  pod1230objectives.1612.t: "Ecstasis: Divine Compromise"
@@ -933,11 +933,12 @@
  POD_county_diligent_populace_modifier: "Inspired Populace"
  pod1230objectives.176.desc: "The presence of a cult in a region can be a very disruptive force. It is rare for the local powers to want to oppose them directly as war on their very doorstep can be more destructive than it is worth. Some hope to find accord with the cult, which is made easier if their viewpoints align.\nIn any case, the populace is often all too eager to heed the word of a cult master. Gifted with supernatural powers, often having great charisma and wisdom and followed by an entourage of zealous believers is more than enough to impress superstitious commonfolk."
  pod1230objectives.176.a: "Hear the truth!" 
- pod1230objectives.176.b: "Your lord is an hellspawn!" 
+ pod1230objectives.176.b: "Your lord is a hellspawn!" 
  pod1230objectives.176.c: "Do not resist what is to come!" 
  pod1230objectives.176.d: "Stay a while and listen." 
  pod1230objectives.176.e: "Pray and work hard." 
  pod1230objectives.176.f: "Donations are appreciated." 
+ pod1230objectives.176.g: "On second thought, let's try somewhere else."
  
  year_black_kites_japan_decision: "Year of the Black Kites"
  year_black_kites_japan_decision_tooltip: "Time to make the split official."
@@ -981,8 +982,8 @@
  death_wang_hongben_decision_custom_decision: "1240 is augured to be a critical year."
 
  pod1230objectives.182.t: "The Collapse"
- pod1230objectives.182.desc.wang: "No one really knows who struck [GetScriptedCharacterByHistoryID('795039').GetFirstName]. Some say a frustrated [Glossary('Wu','podgloss.wu')] mate, some say an [akuma|E] or an agent of a rival court. But his death revealed the utter fragility of the [GetTitleByKey('h_china').GetNameNoTier].\nHis ministers, the Golden Jade Society, pull the court apart and squabble among themselves. Without a central authority, skirmishes break out everywhere and the regional courts, already close to independence, now refuse to listen to Changan. The [Glossary('Anda','podgloss.anda')] who were waiting in the north for a good opportunity to follow their mortal Mongols' counterparts now see the door wide open.\n\nThe Chinese courts' fall from Heaven will be long and bloody."
- pod1230objectives.182.desc.notwang: "The [GetTitleByKey('h_china').GetNameNoTier], thought to be an examplar of a stable court, turned out to be nothing but a sand castle. Despite Wang Hongben's removal from power (or perhaps because of it), the situation has only gotten worse.\nWang's old ministers, the Golden Jade Society, pull the court apart and squabble among themselves. Without a respected central authority, skirmishes break out everywhere and the regional courts, already close to independence, now refuse to listen to Changan. The [Glossary('Anda','podgloss.anda')] who were waiting in the north for a good opportunity to follow their mortal Mongols' counterparts now see the door wide open.\n\nThe Chinese courts' fall from Heaven will be long and bloody." 
+ pod1230objectives.182.desc.wang: "No one really knows who struck [GetScriptedCharacterByHistoryID('795039').GetFirstName]. Some say a frustrated [Glossary('Wu','podgloss.wu')] mate, some say an [akuma|E] or an agent of a rival court. But his death revealed the utter fragility of the #ONCLICK:TITLE,[GetTitleByKey('h_china').GetID] #TOOLTIP:LANDED_TITLE,[GetTitleByKey('h_china').GetID] #L Yellow Emperor Court#!#!#!.\nHis ministers, the Golden Jade Society, pull the court apart and squabble among themselves. Without a central authority, skirmishes break out everywhere and the regional courts, already close to independence, now refuse to listen to Changan. The [Glossary('Anda','podgloss.anda')] who were waiting in the north for a good opportunity to follow their mortal Mongols' counterparts now see the door wide open.\n\nThe Chinese courts' fall from Heaven will be long and bloody."
+ pod1230objectives.182.desc.notwang: "The #ONCLICK:TITLE,[GetTitleByKey('h_china').GetID] #TOOLTIP:LANDED_TITLE,[GetTitleByKey('h_china').GetID] #L Yellow Emperor Court#!#!#!, thought to be an examplar of a stable court, turned out to be nothing but a sand castle. Despite Wang Hongben's removal from power (or perhaps because of it), the situation has only gotten worse.\nWang's old ministers, the Golden Jade Society, pull the court apart and squabble among themselves. Without a respected central authority, skirmishes break out everywhere and the regional courts, already close to independence, now refuse to listen to Changan. The [Glossary('Anda','podgloss.anda')] who were waiting in the north for a good opportunity to follow their mortal Mongols' counterparts now see the door wide open.\n\nThe Chinese courts' fall from Heaven will be long and bloody." 
  pod1230objectives.182.b: "News of my death were greatly exaggerated." 
  pod1230objectives.182.a: "The cycle continues..."
  pod1230objectives.182.tt: "As you are a player, we won't kill you outright (we aren't that mean). The collapse still happens though as it is integral to the Chinese region's narrative."
@@ -1277,13 +1278,13 @@
 
  monomi_victory_objective_decision: "The Sword of Stars"
  monomi_victory_objective_decision_tooltip: "A triumph in the making."
- monomi_victory_objective_decision_desc: "Lord [Glossary('Mikaboshi','podgloss.mikaboshi')] has many enemies. As his most martially inclined servants, it falls to to you to make them disappear. Rewards are sure to follow, for the [Glossary('Wicked City','podgloss.wickedcity')] provides to the strong."
+ monomi_victory_objective_decision_desc: "Lord [Glossary('Mikaboshi','podgloss.mikaboshi')] has many enemies. As his most martially inclined servants, it falls to you to make them disappear. Rewards are sure to follow, for the [Glossary('Wicked City','podgloss.wickedcity')] provides to the strong."
  monomi_victory_objective_decision_confirm: "Time to make my mark."
 
  pod1230objectives.220.desc: "Sometimes, even your dull heart may race.\n\nThis has been a long time coming. You run your hands across the reward for your work, brought to you by one of [Glossary('Mikaboshi','podgloss.mikaboshi')]’s Iron Demons in recognition for your service. The hilt of a blade, magnificent and polished of a steel beyond compare, durable enough not even the forge of the gods could render it down. And rather than a sheathe, a flick of the thumb brings forth a cruel curved blade, the edge crackling with a sinister malice.\n\nA sword that can cleave open the heavens."
  pod1230objectives.220.a: "A fine gift. It will be put to good use."
  artifact_sword_stars_name: "Sword of Stars"
- artifact_sword_stars_description: "#bold Converts damage to [POD_aggravated_damage|E].#!\n\nThe hilt of a blade, magnificent and polished of a steel beyond compare, durable enough not even the forge of the gods could render it down. And rather than a sheathe, a flick of the thumb brings forth a cruel curved blade, the edge crackling with a sinister malice."
+ artifact_sword_stars_description: "The hilt of a blade, magnificent and polished of a steel beyond compare, durable enough not even the forge of the gods could render it down. And rather than a sheathe, a flick of the thumb brings forth a cruel curved blade, the edge crackling with a sinister malice."
 
  bushi_victory_objective_decision: "Swallowing the Dragon"
  bushi_victory_objective_decision_tooltip: "Love and power."
@@ -1331,8 +1332,73 @@
  pod1230objectives.224.t: "France, Cleansed"
  pod1230objectives.224.desc: "It is done. The demon-worshippers who sought to corrupt this domain have been rooted out and destroyed.\n\nLooking over your lands, the change is already clear. Without the subtle corruption of the Children of Ennamaru and your own Beast firmly leashed by your mortal touchstones, the mortals are free to prosper. Trade flourishes, fields are tended with renewed vigor, and the harmony your kind has had with the kine is resumed. A golden age for France is here."
  pod1230objectives.224.a: "Let the realm flourish under our watch!"
-
-
+ 
+ helenacult_victory_objective_decision: "The Helen Pantheon"
+ helenacult_victory_objective_decision_tooltip: "Can a Goddess truly rule alone? Experience has proved this difficult."
+ helenacult_victory_objective_decision_desc: "The Trojan and the Spartan's feud shows that no one is truly safe on their own, no matter how close to godhood they are. Greece had many Gods and it is time to form a new pantheon, worthy of leading the immortal Children of Caine to their destiny."
+ helenacult_victory_objective_decision_confirm: "A new Olympus."
+ helenacult_custom_decision: "Your coterie needs to be full, composed of 1000+ years old characters. If said characters are [GetScriptedCharacterByHistoryID('505071').GetFirstName], [GetScriptedCharacterByHistoryID('790353').GetFirstName], [GetScriptedCharacterByHistoryID('790284').GetFirstName], [GetScriptedCharacterByHistoryID('790592').GetFirstName], or [GetScriptedCharacterByHistoryID('790101').GetFirstName] they will get special rewards."
+ helenacult_custom_decision2: "Your coterie members will gain 5 diplomacy and intrigue as they rise to become part of your new pantheon. If said characters are [GetScriptedCharacterByHistoryID('505071').GetFirstName], [GetScriptedCharacterByHistoryID('790353').GetFirstName], [GetScriptedCharacterByHistoryID('790284').GetFirstName], [GetScriptedCharacterByHistoryID('790592').GetFirstName], or [GetScriptedCharacterByHistoryID('790101').GetFirstName] they will get additional skill points depending on their expertise."
+ helenacult_custom_decision3: "#R This decision is mutually exclusive with 'Shatter the False Idols'. #!"
+ 
+ pod1230objectives.230.desc: "Before Menele's senseless feud against me, I had respect, worship, power and, perhaps most strangely of all, even allies. With my pivotal role in the defeat of Carthage, many of this cursed city's enemies became, if not my friends, at least my companions for a while. Some of them shielded me from Menele but time, their own concerns and my focus on survival made us drift apart.\nTonight however, things will change.\n\nThe mad Spartan is no longer hounding my every step and I can look at the world more closely than I ever did in the past centuries. Creatures that were once old and powerful back then are now myths, or ashes in the wind. It is my generation, the heirs of Greece, Rome and the Mediterranean that are the true powers of these nights.\nWith the newblood fearing the mortals and their petty Church, the cowardly concept of "Masquerade" is taking hold. But mortals are not to be feared, mortals are to be shown that their faith in a callous and uncaring god is misplaced. There are true Gods and Goddesses walking the Earth, ones that were young when Egypt was old and that are now old when the Christian God is still young.\n\nThe wheel turns and I will herald the birth of this new pantheon. A glorious dusk for the Children of Caine to take back their rightful place and a glorious dawn for the Children of Man to once again be able to worship beautiful and terrible Gods."
+ pod1230objectives.230.a: "They will all see clearly now."
+ pod1230objectives.230.desc.nothelena: "Helena was once a ruler in Argos and Pompeii. Though in these times, the line between ruler and god was very much blurred, especially when it comes to such a perfect being. But, as Greece itself had many Gods, there were other rulers that were worthy of Helena's attention or even friendship. The Roman vampires most notably were grateful for her part in purging the hellhole that was Carthage, a victory that could only have been achieved via cooperation.\n\nThis is an example we are following. With the Church making the situation more and more difficult for our kind, the nights when we could simply hope to help everyone embrace Helena as their benefactor are past. We need a broader approach, gathering likeminded immortals that have the experience and prestige sufficient to create a new pantheon. When said pantheon is fully established and the rule of the Children of Caine is once again solidified over mortals, our cult will be able to flourish.\n\nWith the perfect Supreme Goddess of this new pantheon surely blessing our holy mission, victory is assured."
+ 
+ helenacult_victoryalt_objective: "Shatter the False Idols"
+ helenacult_victoryalt_objective_decision_tooltip: "Only one Goddess may reign."
+ helenacult_victoryalt_objective_decision: "Apotheosis"
+ helenacult_victoryalt_objective_decision_desc: "The Helen's divinity will always be at risk as long as the other false Gods and Goddesses continue to live. Only by ending them can the true divine's place be secured."
+ helenacult_victoryalt_objective_confirm: "Only one remains."
+ helenacultalt_custom_decision2_tt: "You will unlock the final stage of Helena's story corresponding to the decision chosen."
+ helenacultalt_custom_decision3_tt: "#R This decision is mutually exclusive with 'The Helen Pantheon'. #!"
+ helenacultalt_custom_decision1: "The false idols [GetScriptedCharacterByHistoryID('505071').GetFirstName], [GetScriptedCharacterByHistoryID('790353').GetFirstName], [GetScriptedCharacterByHistoryID('790284').GetFirstName], [GetScriptedCharacterByHistoryID('790592').GetFirstName], and [GetScriptedCharacterByHistoryID('790101').GetFirstName] must be dead."
+ 
+ pod1230objectives.231.desc: "Great Helena, you have finally done it. For centuries, the blood of the world had been diluted by arrogant parasites and false idols. They paraded around, confident in themselves, stealing the worship and adoration that rightfully belonged to you.\n\nMithras, with the hollow sun that burned him. Apollo, choked on his vanity. Anath, hunted down like prey. Artemis, felled in battle. And finally, Camilla, clinging to his desperate delusions of grandeur. All of them cast down, their ashes proof of their inferiority.\n\nThe Sons and Daughters of Helena praise your name with joy, and the non-believers are beginning to see the truth. That there is only one Goddess, beautiful and terrible in equal measure.\n\nBut as you bask in the midst of your immortal flock, you know that your mission is not over yet. There is one final, ancient claimant. One final idol that must be broken like the rest."
+ pod1230objectives.231.desc.nothelena: "Your bloody service is done. For ages, the world was polluted by arrogant ancients who dared to demand the worship meant only for the Helen. But now, their mockery has been put to an end. You have proven yourself to be most lethal and exquisite weapon of the true Goddess. Because of your undying devotion, Helena has been elevated beyond the petty squabbles of the rest of your kind. The Sons and Daughters of Helena sing praises of her name, and whisper yours in reverence as the one who aided her ascension.\n\nThe night belongs to her, and by extension, you. However, there is one issue that mars the perfection of her grand design. The purging is not yet done. Hidden away somewhere in the dark lays one final pretender. Another would-be divine in the path of your Goddess, awaiting your blade."
+ pod1230objectives.231.a: "Ascension is at hand."
+ 
+ secrettalk_objective: "Seek out the Rose"
+ secrettalk_objective_decision_desc: "There has been one prominent figure in our history that has done what we are trying to accomplish. A truly ancient Cainite who once ruled Sumer as a Goddess. If we could seek her out, get an audience, who knows what insights we may gain?"
+ secrettalk_objective_decision_tooltip: "I must seek her out."
+ secrettalk_objective_confirm: "Can you hear us?"
+ secrettalk_objective_decision2: "Spread your cult, gather rare artifacts, help your flock develop, and you may prove you are worthy enough for an audience with the Rose."
+ own_four_illustrious_artifacts_tt: "You must own at least four artifacts of illustrious rarity."
+ toreador_house_court_positions_tt: "A character from each major Toreador [house|E] must hold at least one [court_position|E] in your realm. The Houses required are [GetDynastyHouseByID('house_nephilim').GetName], [GetDynastyHouseByID('house_salianna').GetName], [GetDynastyHouseByID('house_callisti').GetName], [GetDynastyHouseByID('house_andrew').GetName], [GetDynastyHouseByID('house_helena').GetName] and [GetDynastyHouseByID('house_apollo').GetName]."
+ 
+ 
+ secrethunt_objective: "Wilting Rose"
+ secrethunt_objective_decision_tooltip: "One last obstacle."
+ secrethunt_objective_decision_desc: "A final figure stands in the path to divinity. Do you dare challenge them?"
+ secrethunt_objective_confirm: "It's time to end this."
+ secrethunt_objective_tt: "You will attempt to get rid of the last obstacle in your path to divinity. Be ready. \n\n#color:{0.75,0,0};glow_color:{0.75,0,0} The Rose has thorns, and you will not get a second chance#!."
+ secrethunt_objective_decision: "Exaltation"
+ pod1230objectives.232.desc: "Helena, the pretenders are all dust and their stolen worship belongs to you, as it should be. But whenever you close your eyes, you feel a maddening dark spot, coming from another who was worshipped as a Goddess so long ago.\n\nArikel. Ishtar. Aphrodite. The Progenitor of Clan Toreador.\n\nAs long as she remains slumbering somewhere, your godhood will always be tethered to another being. Arikel is a constant reminder that you have reached the ceiling of your damned existence. To be a true Goddess, you must not have a creator.\n\nYou will seek out where she is hiding. You will drag her out of her tomb, sink your teeth into her ancient veins, and you will take the beauty, the power and the divinity in them. Only when Arikel is dust will the Helen be absolute."
+ pod1230objectives.232.desc.nothelena: "With the false idols gone, the night belongs to Helena of Troy. But in the darkest shadows of the world, an old presence still lingers. Arikel, the being that predates even your Goddess. The Mother of the Clan of the Rose.\n\nAs long as Arikel exists, Helena's claim of divinity will be constantly challenged by the very blood running through her veins. The ultimate act of devotion for Her is clear. You must track the ancient down to her hiding spot, and commit a great sin.\n\nBy committing Amaranth on Ishtar yourself, you will tear that ancient power out of her veins. Power so vast and mind-shattering will be in your own veins, threatening to tear you apart, all to forge yourself into the greatest instrument for Helena's will. You must claim the blood of the Goddess of Sumer so that your own may reign freely for eternity."
+ pod1230objectives.232.a: "Her soul is the only path to ascension."
+ 
+ pod1230objectives.233.t: "Finding A Goddess"
+ pod1230objectives.233.desc: "To seek out any other Progenitor is usually a death sentence. Arikel, however, is not like any other. Rumors suggest that she might greet determined guests not with fangs, but with open arms, provided you approach with reverence and not violence.\n\nIt is a good thing you only seek her counsel.\n\nThe journey ends up being remarkably effortless. Rather than facing traps, hurdles and deadly guardians, you and your Pantheon feel a delicate pull guiding you towards the Mediterranean, and into a valley hidden deep in the wilderness of Greece. As you and your allies draw closer to a remarkably well-kept temple, the air begins to shift. You brace yourself for the crushing weight of an Antediluvian.\n\nInstead, the sensation washing over you is oddly warm. A gentle, intoxicating aura that instantly lulls the Beast within you. It is not a snare, but a loving embrace."
+ pod1230objectives.233.a: "We step into her embrace."
+ 
+ pod1230objectives.234.t: "The Inner Sanctum"
+ pod1230objectives.234.desc: "You and your Pantheon step inside the ancient temple, and she is right there, awaiting you.\n\nYou cannot truly describe her. Looking upon Ishtar is like staring at the sun; a physical ache, caused by blinding, aesthetic perfection that overwhelms your senses, tears of blood welling up in your eyes at the sheer beauty. Humbled by the sheer magnitude of her existence, the rest of your Pantheon falls to their knees beside you. You cannot resist it either.\n\nArikel's greeting simply exists. She does not part her lips to speak, but you feel her intent clearly with the warmth blooming in your mind and soul as her unconditional affection reaches you all. Taking a deep breath, reflexively, you fight the urge to simply bow your head and bask in her presence until the end of time. You did not journey this far to worship her. Gathering all your strength, you raise your head and prepare to ask the Bull-Dancer the very thing that brought you here. Her wisdom."
+ pod1230objectives.234.a: "We seek your guidance..."
+ 
+ pod1230objectives.235.t: "Mirror Of Ages"
+ pod1230objectives.235.desc: "The moment you finish talking, her silent presence guides your thoughts inward, into the history resting in your blood. You feel a tide of memories washing over you, and find yourself asking one question.\n\nWhat is the essence of the Rose? In the dawn of civilization, Ishtar ruled in Sumer as a Goddess, just as you have been trying to do. When Rome rose and succumbed to a pleasurable decay, the Roses were at the center of it, indulging without shame. Now, in this age of steel, they ride as paragons, shining example of knightly virtue and chivalry.\n\nAre you merely eternal chameleons, effortlessly mimicking human paradigms? Is there something real and beautiful beneath that vain outer shell?\n\nArikel's aura peels back all the layers of pride and vanity, and you finally realize that there is a deep truth to it. Then, for the first time, spoken words come out of Arikel's lips.\n\n#color:{0.75,0,0};glow_color:{0.75,0,0} "What is Clan Toreador?" #!"
+ pod1230objectives.235.a: "We embody chivalrous valor and grace."
+ pod1230objectives.235.b: "We are exquisite poison, masters of decadence."
+ pod1230objectives.235.c: "We are divine idols, made to command the masses."
+ pod1230objectives.235.d: "We are the grandest patrons of the arts."
+ 
+ pod1230objectives.236.t: "A Masterpiece, Realized"
+ pod1230objectives.236.desc: "Arikel hears your truth, and you can feel the silence stretch on as her ancient mind weighs your answer. Then, the stillness breaks, and the euphoric warmth is back. She does not smile, but you can feel the sensation of her profound approval wash over you. The vitae in your veins seem to grow hot, but it is a soothing feeling. It feels as if a masterwork has finally been realized. Arikel imparts her wisdom not with words, but by the blood itself. You and your immortal coterie feel a sudden clarity as your chosen path is made clear.\n\nThe warm aura enveloping you begins to fade, the perfection of Aphrodite dimming as her connection to you gently withdraws.\n\n#color:{0.75,0,0};glow_color:{0.75,0,0} "Make the night your masterpiece." "#!
+ pod1230objectives.236.a: "The world is our canvas."
+ 
+ pod1230objectives.237.t: "Ergenekon Wakes"
+ pod1230objectives.237.desc: "The earth itself trembles below your feet as the great forges roar to life once again after centuries of silence. The cold, stale air of the mountain is gone, replaced by the familiar inferno. To any other $pod_cainite$, these flames would incite mindless terror. Yet the elders of our bloodline stand unflinching before the furnaces.\n\nYour kind has always been one with this mountain, the very existence being tempered in fire such as this. The hot air feels familiar to you, not hostile.\n\nThe younger Erk flinch and back away in fear, their Beasts whining in discomfort. They stick to the shadows for now, but they will learn to embrace it soon enough. They must.\n\nA deafening chorus of hammers striking anvils begins soon, the melody of masterwork armors and weapons being created. The Erk are no longer scared exiles, hiding in the dark. Let the Steppes hear the sound of our industry!"
+ pod1230objectives.237.a: "Forged anew in fire."
 
  koldunic_ways_objective_decision: "Broaden the Koldunic Ways"
  koldunic_ways_objective_decision_tooltip: "There is always more power to be found."
@@ -1346,7 +1412,7 @@
  pod1230objectives.225.desc: "Koldunism is one of the most ancient forms of Blood Sorcery known to $pod_cainites$. In addition to its many intricacies, the Tzimisce have greedily guarded this power from others which has led to very few living practitioners of this ancient power. With the rise of Thaumaturgy and its ease of learning, Koldunism faces a choice, it must either adapt or be lost to the ravages of time.\n\nThrough your wisdom and knowledge, you have managed to create five additional paths for Koldunism. Unlike the [krainas|E], these Ways draw power from all the elements and are not bound to the land itself. Which makes them both easier to learn, and easier to use."
  pod1230objectives.225.a: "The elements are mine to command."
  pod1230objectives.226.t: "The Koldunic Ways"
- pod1230objectives.226.desc: "Reports said that [koldunic_expander.GetFirstNameNoTooltip] has expanded Koldunic Sorcery.\n\nKoldunism is one of the most ancient forms of Blood Sorcery known to $pod_cainites$. In addition to its many intricacies, the Tzimisce have greedily guarded this power from others which has led to very few living practitioners of this ancient power. With the rise of Thaumaturgy and its ease of learning, Koldunism faces a choice, it must either adapt or be lost to the ravages of time.\n\nThrough [koldunic_expander.GetFirstNameNoTooltip]'s' wisdom and knowledge, [koldunic_expander.GetSheHe] has managed to create five additional paths for Koldunism. Unlike the [krainas|E], these Ways draw power from all the elements and are not bound to the land itself. Which makes them both easier to learn, and easier to use."
+ pod1230objectives.226.desc: "Reports said that [koldunic_expander.GetFirstNameNoTooltip] has expanded Koldunic Sorcery.\n\nKoldunism is one of the most ancient forms of Blood Sorcery known to $pod_cainites$. In addition to its many intricacies, the Tzimisce have greedily guarded this power from others which has led to very few living practitioners of this ancient power. With the rise of Thaumaturgy and its ease of learning, Koldunism faces a choice, it must either adapt or be lost to the ravages of time.\n\nThrough [koldunic_expander.GetFirstNameNoTooltip]'s wisdom and knowledge, [koldunic_expander.GetSheHe] has managed to create five additional paths for Koldunism. Unlike the [krainas|E], these Ways draw power from all the elements and are not bound to the land itself. Which makes them both easier to learn, and easier to use."
  pod1230objectives.226.a: "More powers to learn?"
 
  tzimisce_land_for_dragons_objective_decision: "A Land for the Dragons"

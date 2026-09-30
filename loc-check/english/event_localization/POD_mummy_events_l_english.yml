@@ -1,6 +1,6 @@
 ﻿l_english:
  POD_mummy_resurrection.1.t: "Truly Immortal?"
- POD_mummy_resurrection.1.desc: "When they die, Mummies go into a lengthy (and unpleasant) process where their soul is thrown into a spiritual realm named the [UmbraGlossary('tempest')]. There, They slowly return to [UmbraGlossary('earth')]. Additionally, some types of $POD_splat_mummy_plural$ also will be judged.\nShemsu-heru Mummies go to Amenti, the realm of the Egyptian dead to meet with Anubis and the judges of Ma'at while Cabiri Mummies go to Hades where they have to fend on their own in a more hostile environment."
+ POD_mummy_resurrection.1.desc: "When they die, Mummies go into a lengthy (and unpleasant) process where their soul is thrown into a spiritual realm named the [UmbraGlossary('tempest')]. There, they slowly return to [UmbraGlossary('earth')]. Additionally, some types of $POD_splat_mummy_plural$ also will be judged.\nShemsu-heru Mummies go to Amenti, the realm of the Egyptian dead to meet with Anubis and the judges of Ma'at while Cabiri Mummies go to Hades where they have to fend on their own in a more hostile environment."
  POD_mummy_resurrection.1.a: "Judge me"
  POD_mummy_resurrection.1.a.tt: "After death, you will be judged based on your integrity."
  POD_mummy_resurrection.1.b: "I have lost something important..."
@@ -11,19 +11,34 @@
  POD_mummy_resurrection.1.d.tt: "Due to your strong foundation, you managed to survive in the [UmbraGlossary('tempest')] without losing anything"
 
  POD_mummy_resurrection.2.t: "Scales of Ma'at"
- POD_mummy_resurrection.2.desc: "You have been killed, now you find yourself in the [UmbraGlossaryLocalized('shadowlands','Underworld')], and shall pass a judgment to prove you are worth resurrecting.\nIt starts with waiting for Anubis to locate you, which can be a long and stressful process, before being brought before the judges of Ma'at that will assess whether you worked diligently to further the cause of balance in your last life."
- POD_mummy_resurrection.2.a: "Weight my sins."
+ POD_mummy_resurrection.2.desc: "You have been killed. Now, you find yourself in the [UmbraGlossaryLocalized('shadowlands','Underworld')] and shall pass a judgment to prove you are worth resurrecting.\nIt starts with waiting for Anubis to locate you, which can be a long and stressful process, before being brought before the judges of Ma'at that will assess whether you worked diligently to further the cause of balance in your last life."
+ POD_mummy_resurrection.2.t.wutian: "Scales of the Eight"
+ POD_mummy_resurrection.2.desc.wutian: "You have been killed. Now, you find yourself in the [UmbraGlossaryLocalized('shadowlands','Underworld')] and shall pass a judgment to prove you are worth resurrecting.\nStanding before the Gates of Heaven, you await the Eight Immortals that will assess whether you worked diligently to further the quest you were given and the Heavens' cause in your last life."
+ POD_mummy_resurrection.2.t.custom: "Scales of the One"
+ POD_mummy_resurrection.2.desc.custom: "You have been killed. Now, you find yourself in the [UmbraGlossaryLocalized('shadowlands','Underworld')] and shall pass a judgment to prove you are worth resurrecting.\nIt starts with waiting to be retrieved by wraiths sworn to collect souls when this realm was first established, before being brought before the one that stabilized [GetPlayer.Custom('PODGetCustomMummyDynastyShadowRealm')] and established themself as Judge of the [GetTrait('custom_mummy_dynasty').GetName(GetPlayer)]."
+ POD_mummy_resurrection.2.t.evil: "Scales of the Master"
+ POD_mummy_resurrection.2.desc.evil: "You have been killed. Now, you find yourself in the [UmbraGlossaryLocalized('shadowlands','Underworld')] and shall pass a judgment to prove you are worth resurrecting.\nYou have been called back, directly into the arms of the Master. Your time in their service will be evaluated in view of your recent failure to remain alive. Time shall be set aside to ensure that you have properly learned your lesson."
+ POD_mummy_resurrection.2.a: "Weigh my sins."
  POD_mummy_resurrection.2.a.tt: "The punishment you will receive is based on your Integrity level."
+ POD_mummy_resurrection.2.a.tt.forgiveness: "Your service is deemed... acceptable"
+ POD_mummy_resurrection.2.a.tt.evil: "You will endure some very #italic pointed#! instruction from the Master"
  POD_mummy_resurrection.2.b: "I don't need you."
  POD_mummy_resurrection.2.b.tt: "You will seek another master, becoming what you swore to destroy."
  POD_mummy_resurrection.2.c: "I will do better!"
- POD_mummy_resurrection.2.c.tt: "You will plead with the Judges. This won't work again for the next 50 years."
+ POD_mummy_resurrection.2.c.tt: "You will plead with your judges. This won't work again for the next 50 years."
+ POD_mummy_resurrection.2.d: "I am the Judge!"
+ POD_mummy_resurrection.2.d.tt: "You declare yourself perfect and without flaw. No check is made"
+ POD_mummy_resurrection.2.e: "I am the Ninth!"
  
  podmummy.1.homelandandtomb: "[POD_homeland|E] And Tomb"
  podmummy.1.homeland: "[POD_homeland|E]:"
  podmummy.1.tomb: "Due to your tomb:"
- POD_not_in_homelands_tt: "Your are not in your [POD_homeland|E] and thus didn't gain Memory from it."
+ POD_not_in_homelands_tt: "You are not in your [POD_homeland|E] and thus didn't gain Memory from it."
  POD_no_tomb_memory_tt: "\nYour tomb didn't provide any Memory."
+
+ podmummy.3.t: "Broken Mandates"
+ podmummy.3.desc: "Suddenly, without fanfare or a puff of smoke, a man dressed in white robes is before you. His face is free from the scars of age, but the weight and disappointment in his eyes more than makes up for it. He might be a stranger to most, but you know him well for his is the face you see whenever you return to the Gates of Heaven.\n\n\"Our sight has not faded with age, nor have we become more lenient with time. In all but a few circumstances, we give each Wu T'ian a lifetime to make mistakes and to pursue penance. However, there are certain violations of the Mandates of Heaven that must be addressed before true horrors can be created. You have sold your soul to a dark force, a soul you had willingly bound to the quests of Heaven. Now... now, you have chosen power over duty and so you will lose that power.\""
+ podmummy_3_wutian_witch: "@warning_icon! #X Becoming an [GetTrait('witch').GetName(GetPlayer)] is a major violation of the Ten Mandates of Heaven by which all Wu T'ian are bound! #!"
  
  podmummy.1000.t: "Tomb Raiders!"
  podmummy.1000.desc: "Your tomb holds a large number of sentimental possessions of your past lives... which are seen as priceless treasures to the uncouth modern eye. Tomb raiding has been a tradition as far as the tombs themselves existed and a bane to Mummies' existence, often finding themselves missing key mementos when awakening for a new cycle.\nAs such, they have developed cults and traps to protect what is rightfully theirs from the greedy but sometimes even the most carefully built defenses can be broken by sheer luck by these pesky adventurers."
@@ -37,6 +52,19 @@
  podmummy.1001.b: "I will show you true immortality!"
  podmummy.1001.c: "I have better things to do."
 
+ podmummy.6000.t: "A New Path"
+ podmummy.6000.desc: "When you first became a Wu T'ian, your personality guided your choice between the [GetDynastyByID( 'POD_mummy_dynasty_xianlung' ).GetBaseName] and [GetDynastyByID( 'POD_mummy_dynasty_wufeng' ).GetBaseName] dynasties. However, eternity is a very long time and what once drew you to one path is no longer present. Having altered the balance of your aspect, you may choose a new path, taking on the path's advantages and disadvantages."
+ podmummy.6000.a: "[GetDynastyHouseByID( 'house_white_lotus_society' ).GetBaseName]"
+ podmummy.6000.b: "[GetDynastyHouseByID( 'house_twilight_scholars' ).GetBaseName]"
+ podmummy.6000.c: "[GetDynastyHouseByID( 'house_jade_sentinels' ).GetBaseName]"
+ podmummy.6000.d: "[GetDynastyHouseByID( 'house_celestial_arrows' ).GetBaseName]"
+ podmummy.6000.e: "[GetDynastyHouseByID( 'house_righteous_peach_blossoms' ).GetBaseName]"
+ podmummy.6000.f: "[GetDynastyHouseByID( 'house_brotherhood_of_the_scarlet_lantern' ).GetBaseName]"
+
+ podmummy.6001.t: "Selecting an Aspect"
+ podmummy.6001.desc.xianlung: "Your soul passes on to the Yin World, a land of detachedness. In the distance, hunchbacked spirits trudge under an unmoving, cloudless void along roads like smooth, black shards of bone. From the stillness flies a golden dragon. After greeting you, the dragon prepares to open a portal to the Gate of Heaven. Upon stepping through, a spirit will be infused into your existing nature, accentuating what is already there. However, you must first select your aspect which will affect your role in Heaven's plans. According to the dragon, while your soul bears a predisposition towards the tasks of the [GetDynastyByID( 'POD_mummy_dynasty_xianlung' ).GetBaseName], perhaps you recognize an imbalance within yourself and seek a change.\n\nWhat house will join? What tasks do you desire?"
+ podmummy.6001.desc.wufeng: "Your soul passes on to the Yang World, a land of wildness. In the distance, massive insects buzz through the raging sea of chaos. Like a forest fire, seething and capricious energy buffets you. From the madness flies a golden phoenix. After greeting you, the phoenix prepares to open a portal to the Gate of Heaven. Upon stepping through, a spirit will be infused into your existing nature, accentuating what is already there. However, you must first select your aspect which will affect your role in Heaven's plans. According to the dragon, while your soul bears a predisposition towards the tasks of the [GetDynastyByID( 'POD_mummy_dynasty_wufeng' ).GetBaseName], perhaps you recognize an imbalance within yourself and seek a change.\n\nWhat house will join? What tasks do you desire?"
+
  POD_mummy_hekau.201.t: "Separate Khaibit"
  POD_mummy_hekau.201.desc: "With your mastery of Necromancy, you can try to separate your Khaibit for use as a spectre-like servant."
  POD_mummy_hekau.201.option.a: "Out my shadow! Serve me."
@@ -45,7 +73,7 @@
  POD_mummy_hekau.201.option.a.tt.success: "Your Khaibit is successfully separated"
  POD_mummy_hekau.201.option.a.tt.failure: "You fail to separate your Khaibit"
  POD_mummy_hekau.201.option.b: "Now is not the right time"
- POD_mummy_hekau.201.option.b.tt: "You will abandon your idea of separate your Khaibit"
+ POD_mummy_hekau.201.option.b.tt: "You will abandon your idea of separating your Khaibit"
 
  POD_mummy_hekau.202.t: "Separate Khaibit II"
  POD_mummy_hekau.202.desc: "With your mastery of Necromancy, you managed to successfully separate your Khaibit from you, now it's time to give orders."
@@ -65,8 +93,8 @@
  learning_true_names_head: "Learning True Names:"
 
  
- POD_mummy_scheme.100.t: "Eye of Sakhmet"
- POD_mummy_scheme.100.desc: "You inscribed the symbol of Sakhmet on the target, rendering wound healing more difficult and long-lasting."
+ POD_mummy_scheme.100.t: "Eye of Sekhmet"
+ POD_mummy_scheme.100.desc: "You inscribed the symbol of Sekhmet on the target, rendering wound healing more difficult and long-lasting."
  POD_mummy_scheme.100.a: "Good."
  
  POD_discover_true_name_outcome.2000.t: "You failed to learn [target.GetTitledFirstNamePossessive] ren!"

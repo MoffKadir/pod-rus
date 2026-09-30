@@ -6,12 +6,18 @@
  IS_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "Is #bold not#! [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] or [direct_vassal|E]"
  CHARACTER_IS_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "[CHARACTER.GetShortUIName|U] is #bold not#! [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] or [direct_vassal|E]"
  I_AM_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "You are #bold not#! [TARGET_CHARACTER.GetShortUINamePossessive] [courtier|E] or [direct_vassal|E]"
+
+ IS_A_NETERU_OR_IMPRISONED_BY_CHARACTER: "Is [TARGET_CHARACTER.GetShortUINamePossessive|V] [neteru|E] or imprisoned by [TARGET_CHARACTER.GetShortUIName]"
+ CHARACTER_IS_A_NETERU_OR_IMPRISONED_BY_CHARACTER: "[CHARACTER.GetShortUIName] is [TARGET_CHARACTER.GetShortUINamePossessive|V] [neteru|E] or is imprisoned by [TARGET_CHARACTER.GetShortUIName]"
+ I_AM_A_NETERU_OR_IMPRISONED_BY_CHARACTER: "You are [TARGET_CHARACTER.GetShortUINamePossessive] [neteru|E] or imprisoned by [TARGET_CHARACTER.GetShortUIName]"
+ IS_NOT_A_NETERU_OR_IMPRISONED_BY_CHARACTER: "Is #bold not#! [TARGET_CHARACTER.GetShortUINamePossessive] [neteru|E] or imprisoned by [TARGET_CHARACTER.GetShortUIName]"
+ CHARACTER_IS_NOT_A_NETERU_OR_IMPRISONED_BY_CHARACTER: "[CHARACTER.GetShortUIName|U] is #bold not#! [TARGET_CHARACTER.GetShortUINamePossessive] [neteru|E] or imprisoned by [TARGET_CHARACTER.GetShortUIName]"
+ I_AM_NOT_A_NETERU_OR_IMPRISONED_BY_CHARACTER: "You are #bold not#! [TARGET_CHARACTER.GetShortUINamePossessive] [neteru|E] or imprisoned by [TARGET_CHARACTER.GetShortUIName]"
  
  NUM_OF_RELATION_DEMONIC_MASTER_TARGET_TRIGGER: "Number of demonic masters is $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_DEMONIC_THRALL_TARGET_TRIGGER: "Number of demonic thralls is $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_POSSESSED_TARGET_TRIGGER: "Number of Puppets is $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_EFFIGY_CHARACTER_TARGET_TRIGGER: "Number of Effigies is $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_DREAMER_MEMBER_TARGET_TRIGGER: "Number of Dreamers is $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_WORSHIPPING_CULTIST_TARGET_TRIGGER: "Number of Cultists is $COMPARATOR$ $NUM|V0$"      
  NUM_OF_RELATION_SPIRIT_COMPANION_TARGET_TRIGGER: "Number of Spirit Companions is $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_INNOCENT_TORMENTOR_TARGET_TRIGGER: "Number of [tormentors|E] is $COMPARATOR$ $NUM|V0$" 
@@ -33,6 +39,7 @@
  vamp_cant_follow_you_faith_tooltip: "[GetTrait('vampire').GetName( GetNullCharacter )] can't follow [GetPlayer.GetFaith.GetAdjective]!"
  ghoul_cant_follow_you_faith_tooltip: "[GetTrait('ghoul').GetName( GetNullCharacter )]/[GetTrait('revenant').GetName( GetNullCharacter )] can't follow [GetPlayer.GetFaith.GetAdjective]!"
  fera_cant_follow_you_faith_tooltip: "[GetTraitGroup('fera').GetName()] can't follow [GetPlayer.GetFaith.GetAdjective]!"
+ abomination_cant_follow_you_faith_tooltip: "[GetTraitGroup('abomination').GetName()] can't follow [GetPlayer.GetFaith.GetAdjective]!"
  hunter_cant_follow_you_faith_tooltip: "[GetTrait('supehunter').GetName( GetNullCharacter )] can't follow [GetPlayer.GetFaith.GetAdjective]!"
  mortal_cant_follow_you_faith_tooltip: "[GetTrait('mortal').GetName( GetNullCharacter )] can't follow [GetPlayer.GetFaith.GetAdjective]!"
  mummy_cant_follow_you_faith_tooltip: "[GetTrait('mummy').GetName( GetNullCharacter )] can't follow [GetPlayer.GetFaith.GetAdjective]!"
@@ -86,6 +93,33 @@
 
  POD_splat_has_landless_mechanics: "Your [splat|E] has [POD_landless_mechanics|E]"
 
+ POD_splat_has_disease_immunity_global: "[splat|EU] is immune to diseases"
+ POD_splat_has_disease_immunity_global_not: "[splat|EU] is #bold not#! immune to diseases"
+ POD_splat_has_disease_immunity_first: "Your [splat|E] is immune to diseases"
+ POD_splat_has_disease_immunity_first_not: "Your [splat|E] is #bold not#! immune to diseases"
+ POD_splat_has_disease_immunity_third: "[CHARACTER.GetShortUINamePossessive|U] [splat|E] is immune to diseases"
+ POD_splat_has_disease_immunity_third_not: "[CHARACTER.GetShortUINamePossessive|U] [splat|E] is #bold not#! immune to diseases"
+
  POD_IS_TRAIT_PERMANENT: "[TRAIT.GetName(GetPlayer)] cannot be cured."
 
  POD_has_any_healable_maim_trigger_tooltip: "Is #bold not#! maimed in any way."
+
+# listing all the traits manually instead of using the reusable customdesc
+# because this makes the diffs with the vanilla trigger file cleaner
+# also the reusable loc doesn't work anyway since some stress traits are nouns and some are adjectives
+ can_be_drunkard_tt: "[CHARACTER.GetFirstName] #bold cannot#! be a [GetTrait('drunkard').GetName(CHARACTER.Self)]"
+ can_be_hashishiyah_tt: "[CHARACTER.GetFirstName] #bold cannot#! be a [GetTrait('hashishiyah').GetName(CHARACTER.Self)]"
+ can_be_rakish_tt: "[CHARACTER.GetFirstName] #bold cannot#! be [GetTrait('rakish').GetName(CHARACTER.Self)]"
+ can_be_reclusive_tt: "[CHARACTER.GetFirstName] #bold cannot#! be [GetTrait('reclusive').GetName(CHARACTER.Self)]"
+ can_be_irritable_tt: "[CHARACTER.GetFirstName] #bold cannot#! be [GetTrait('irritable').GetName(CHARACTER.Self)]"
+ can_be_flagellant_tt: "[CHARACTER.GetFirstName] #bold cannot#! be a [GetTrait('flagellant').GetName(CHARACTER.Self)]"
+ can_be_profligate_tt: "[CHARACTER.GetFirstName] #bold cannot#! be [GetTrait('profligate').GetName(CHARACTER.Self)]"
+ can_be_improvident_tt: "[CHARACTER.GetFirstName] #bold cannot#! be [GetTrait('improvident').GetName(CHARACTER.Self)]"
+ can_be_contrite_tt: "[CHARACTER.GetFirstName] #bold cannot#! be [GetTrait('contrite').GetName(CHARACTER.Self)]"
+ can_be_comfort_eater_tt: "[CHARACTER.GetFirstName] #bold cannot#! be a [GetTrait('comfort_eater').GetName(CHARACTER.Self)]"
+ can_be_inappetetic_tt: "[CHARACTER.GetFirstName] #bold cannot#! be [GetTrait('inappetetic').GetName(CHARACTER.Self)]"
+ can_be_journaller_tt: "[CHARACTER.GetFirstName] #bold cannot#! be a [GetTrait('journaller').GetName(CHARACTER.Self)]"
+ can_be_confider_tt: "[CHARACTER.GetFirstName] #bold cannot#! be a [GetTrait('confider').GetName(CHARACTER.Self)]"
+ can_be_athletic_tt: "[CHARACTER.GetFirstName] #bold cannot#! be [GetTrait('athletic').GetName(CHARACTER.Self)]"
+
+ #can_be_coping_trait: "[CHARACTER.GetFirstName] cannot be [TRAIT.GetName(GetPlayer)]"

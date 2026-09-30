@@ -25,6 +25,7 @@
  
  POD_journey_name: "[Localize(Concatenate(ROOT.Var('journey_type').GetFlagKey,'_name'))]"
  POD_journey_name_targeted: "$POD_journey_name$ [ROOT.Var('target').Char.GetFirstName]"
+ POD_journey_name_targeted_no_suffix: "$POD_journey_name$"
  POD_journey_name_targeted_trait: "$POD_journey_name$ [ROOT.Var('target_trait').Trait.GetName(GetPlayer)]"
  POD_journey_name_targeted_artifact: "$POD_journey_name$ [ROOT.Var('target_artifact').Artifact.GetName]"
  POD_journey_name_ritual: "[Localize(Concatenate3('ritual_',ROOT.Var('ritual').GetFlagKey,'_name'))] on [ROOT.Var('target').Char.GetFirstName]"
@@ -151,7 +152,7 @@
  POD_journey_requirements_noarmy_gui: "#X @warning_icon! You can't start a [journey|E] if you're leading an army#!"
  POD_journey_requirements_umbra_gui: "#X @warning_icon! You can't start a [journey|E] if you're trapped in the [umbra|E]#!"
  
- POD_not_already_on_journey_tt: "You already have a [journey|E] of the same type targeting  [temp_journey_target.GetShortUIName]!"
+ POD_not_already_on_journey_tt: "You already have a [journey|E] of the same type targeting [temp_journey_target.GetShortUIName]!"
  POD_not_already_on_journey_for_trait_tt: "You already have a [journey|E] of the same type involving [temp_journey_trait.GetName(GetPlayer)]!"
  POD_not_already_on_journey_for_artifact_tt: "You already have a [journey|E] of the same type targeting the [temp_journey_artifact.GetName]!"
  POD_cant_target_coterie_tt: "You can't target other members of $POD_player_coterie$ with this [journey|E]!"
@@ -163,7 +164,11 @@
 
  POD_new_journey_starts_paused_tt: "Since your current [journey|E] is in the [travel_phase|E], the new [journey|E] will be paused."
  
- POD_journey_exsanguination_disabled: "You can't drain your prisoners while you're away from home!"
+ POD_energy_restoration_disabled_combat: "You can't restore your energy this way while you're in a [pod_combat_encounter_with_icon|E]"
+ POD_energy_restoration_disabled_journey: "You can't restore your energy this way while you're on a [journey|E]"
+ POD_energy_restoration_disabled_umbra: "You can't restore your energy this way while you're in the [umbra|E]"
+ POD_energy_restoration_disabled_heist: "You can't restore your energy this way while you're on an [infiltration_mission|E]"
+ POD_energy_restoration_disabled_travel: "You can't restore your energy this way while you're [traveling|E]"
  
  POD_start_trait_study_journey_tt: "You've gained some insight into the [journey_trait.GetName(GetPlayer)] [trait|E]. To fully understand it, you have to study it via the [journey|E] you just unlocked."
  POD_start_anatomy_study_journey_tt: "You'll start a [journey|E] for full understanding of [journey_trait.GetName(GetPlayer)] anatomy."

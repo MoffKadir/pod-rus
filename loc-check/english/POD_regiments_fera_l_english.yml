@@ -21,7 +21,9 @@
  berserkers_maa_flavor: "#F Get of Fenris kinfolk often wear little or no armor or clothing, going into battle clad only in bear or wolf pelts.#!"
  ratha_maa: "Ratha"
  ratha_maa_flavor: "#F Though chariots declined in India from around 300 B.C., their high cultural and religious significance prevented their abandonment despite being less effective in battle than mounted cavalry and elephants, and would be deployed alongside them. Stargazers kinfolk still often use them in battle to harass the enemies of their tribe.#!"
-
+ uktena_roadrunners_maa: "Uktena Roadrunners"
+ uktena_roadrunners_maa_flavor: "#F Uktena kinfolk come from very different lives, often being refugees before understanding their heritage. Once taken into the tribe though, they quickly become skilled hunters, able to keep up and assist their werewolves parents.#!"
+ 
 
 
 
@@ -42,7 +44,7 @@
  amazons_diana_maa_flavor: "#F The Amazons of Diana are a group of Furies that are more concerned with being brash, unstoppable warrior women than sacred avengers. This camp is rarely seen as a formal group, and is more a catch-all for those more dedicated to rightly proving themselves the equal of any man in combat against the $glossary_wyrm$.#!"
 
  children_of_cluid_maa: "Children of Cluid"
- children_of_cluid_maa_desc: "#F Many Cluithi see themselves as the truest children of Cluid, the hero who first led the Picts to Caledonia. These warriors fight with unholy vigor to further their aims.#!"
+ children_of_cluid_maa_flavor: "#F Many Cluithi see themselves as the truest children of Cluid, the hero who first led the Picts to Caledonia. These warriors fight with unholy vigor to further their aims.#!"
 
  swarm_maa: "The Swarm"
  swarm_maa_flavor: "#F This Bone Gnawer camp focuses on the war-aspect of rat, concentrating on dirty fighting and exploiting every advantage they get over an enemy. They specialize in guerilla tactics, striking against the $glossary_wyrm$ and instantly disappearing.#!"
@@ -53,8 +55,14 @@
  herne: "Brothers of Herne"
  herne_flavor: "#F A rapid strike force comprised almost entirely of Ahrouns, ready to defend any Fianna Caerns in danger at a moment's notice.#!"
 
+ wendigo_maa: "Younger Brother Pack"
+ wendigo_maa_flavor: "#F Uktena weren't the only ones to come from their homelands. While less numerous, their more warlike Younger Brothers followed them and are providing support when needed.#!"
+
+ mactire: "MacTire Warband"
+ mactire_flavor: "#F Among the fiercest and most wrathful of the White Howlers, the MacTire are lupus guardians of the remote lands long forsaken by man.#!"
+
  mjolnir: "Sons of Mjolnir"
- mjolnir_flavor: "#F Considered bloodthirsty maniacs even by the rest of the Get, these savages warriors are a sight to behold.#!"
+ mjolnir_flavor: "#F Considered bloodthirsty maniacs even by the rest of the Get, these savage warriors are a sight to behold.#!"
 
  predator_kings_maa: "Predator Kings"
  predator_kings_maa_flavor: "#F The Predator Kings believe that the time for compromises is over and the humans have to be slaughtered until there is no one left. They are the most aggressive of the Red Talons.#!"
@@ -66,13 +74,13 @@
  hakken_samurai_maa_flavor: "#F The Hakken have spent their lives honing their skills with the blade. Honor dictates they put it to good use against the servants of the $glossary_wyrm$.#!"
 
  daggers_nut_maa: "Daggers of Nut"
- daggers_nut_maa_flavor: "#F The Daggers of Nut are dedicated to break the hold of Sutekh's descendants over Egypt, and by extension, that of vampires over their territory in general.#!"
+ daggers_nut_maa_flavor: "#F The Daggers of Nut are dedicated to breaking the hold of Sutekh's descendants over Egypt, and by extension, that of vampires over their territory in general.#!"
 
  royal_guard_sf_maa: "Royal Guard"
  royal_guard_sf_maa_flavor: "#F As the royalty of the Garou Nation, true Silver Fangs ruler are always escorted by the most elite fighters of their house.#!"
 
  heavenlysuccessors_maa: "Heavenly Successors"
- heavenlysuccessors_maa_flavor: "#F Heirs to Zhong Kuei, the Heavenly Successors have sworn themselves to the destruction of vampires and other creatures that leech Gaia's soul off#!"
+ heavenlysuccessors_maa_flavor: "#F Heirs to Zhong Kuei, the Heavenly Successors have sworn themselves to the destruction of vampires and other creatures that leech Gaia's soul off.#!"
 
  luperci_maa: "Luperci"
  luperci_maa_flavor: "#F The prosperous and powerful Italian Warders of Men are experts in dealing with the numerous vampires preying on their burgeoning mercantile empire. They have given their name to those Warder that specializes in fighting the cursed spawn of Caine.#!"
@@ -95,10 +103,10 @@
  samhach_bane_flavor: "#F The Ceilican will never forget the one who almost killed them all. His fool kind will pay.#!"
 
  durga_chosen: "Durga's Chosen"
- durga_chosen_flavor: "#F Seline, in her aspect of Durga, smiles upon her chosen elite, the honorable greatest warriors of the Khan.#!"
+ durga_chosen_flavor: "#F $glossary_luna_seline$, in her aspect of Durga, smiles upon her chosen elite, the honorable greatest warriors of the Khan.#!"
 
  seline_pride: "Seline's Pride"
- seline_pride_flavor: "#F The self proclaimed chosen of the Moon, the Simba are proud and ruthless fighters. Their history has also given them the dubious honor of knowing how to fight against other shapechangers.#!"
+ seline_pride_flavor: "#F The self proclaimed chosen of $glossary_luna_seline$, the Simba are proud and ruthless fighters. Their history has also given them the dubious honor of knowing how to fight against other shapechangers.#!"
 
  danaa_runners: "Danaa's Runners"
  danaa_runners_flavor: "#F Many discount the wiry Swara but their amazing speed has proven the downfall of many would be predators.#!"
@@ -109,7 +117,7 @@
  mokole_hatchlings_flavor: "#F The Mokolé are a dying breed. As such it is imperative that the future generations are protected. To this end, those of the lowest Rank, Hatchlings, have learned to defend against most raids, be it humanoid or animal.#!"
 
  primal_saurians: "Primal Saurians"
- primal_saurians_flavor: "#F The Stream of Earth is most in tune with their primal insticts. The Mokolé-mbembe's roars instill fear as they seek to avenge their lost kin.#!"
+ primal_saurians_flavor: "#F The Stream of Earth is most in tune with their primal instincts. The Mokolé-mbembe's roars instill fear as they seek to avenge their lost kin.#!"
 
  bronzescales: "Bronzescales"
  bronzescales_flavor: "#F Sand is coarse, rough, and gets everywhere. A perfect hiding place for the Gumagan, as they erupt from the sands to deliver death on those foolish enough to challenge them in their domain.#!"

@@ -50,7 +50,7 @@
  rule_pod_seek_knowledge_limits: "$POD_gamerule$ Prerequisites for learning rare $pod_disciplines$"
  setting_pod_seek_knowledge_limits_enabled: "Enabled"
  setting_pod_seek_knowledge_limits_enabled_desc: "Rare vampiric $pod_disciplines$ will need you to fulfill some of their prerequisites before being learned."
- setting_pod_seek_knowledge_limits_disabled: "Disabled"
+ setting_pod_seek_knowledge_limits_disabled: "#high Disabled#!"
  setting_pod_seek_knowledge_limits_disabled_desc: "Rare vampiric $pod_disciplines$ won't need you to fulfill some of their prerequisites before being learned."
 
  rule_pod_splat_hostility: "$POD_gamerule$ Splat Hostility"
@@ -73,9 +73,19 @@
 
  rule_pod_sorcery_availability: "$POD_gamerule$ Availability of #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Sorcery#!#!"
  setting_pod_sorcery_availability_restricted: "Restricted"
- setting_pod_sorcery_availability_restricted_desc: "Only $POD_splat_bastet$ and human-like [splats|E] like $POD_splat_hunter_plural$, $POD_splat_ghoul_plural$ or [GetTrait('kinfolk').GetName(GetNullCharacter)] can learn #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Sorcery#!#!.\nUpon the $pod_Embrace$, it turns into [GetTrait('bloodsorcery').GetName(GetNullCharacter)]."
+ setting_pod_sorcery_availability_restricted_desc: "Only $POD_splat_bastet$ and [mortal_like_splats|E] can learn #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Sorcery#!#!.\nUpon the $pod_Embrace$, it turns into [GetTrait('bloodsorcery').GetName(GetNullCharacter)]."
  setting_pod_sorcery_availability_unrestricted: "#high @haight_icon! Unrestricted#!"
  setting_pod_sorcery_availability_unrestricted_desc: "Any [splat|E] can learn #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L Sorcery#!#!.\nThe trait is kept after the $pod_Embrace$."
+
+ rule_pod_sol_decision_requirements: "$POD_gamerule$ Availability of #TOOLTIP:GAME_TRAIT,eternal_rebirth_seeker,[GetNullCharacter] #L Eternal Rebirth Seeker#!#!"
+ setting_pod_sol_decision_requirements_st_mode: "#high @wod_icon! Undying Conflict#!"
+ setting_pod_sol_decision_requirements_st_mode_desc: "Only #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L Mummies#!#! and their explicit enemies can seek eternal rebirth."
+ setting_pod_sol_decision_requirements_default: "Eternal Crusade"
+ setting_pod_sol_decision_requirements_default_desc: "Only #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L Mummies#!#!, their allies, and their enemies can seek eternal rebirth."
+ setting_pod_sol_decision_requirements_haight_mode: "#high @haight_icon! Great War#!"
+ setting_pod_sol_decision_requirements_haight_mode_desc: "#TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L Mummies#!#!, their allies, their enemies, and those with an interest in such matters can seek eternal rebirth."
+ setting_pod_sol_decision_requirements_unrestricted: "#high @mage_icon! Universal Struggle#!"
+ setting_pod_sol_decision_requirements_unrestricted_desc: "Everyone with high [learning_i] [learning|E] can seek eternal rebirth."
 
  rule_pod_splat_mixing: "$POD_gamerule$ Splat-Mixing"
  setting_pod_splat_mixing_default: "Default"
@@ -213,9 +223,9 @@
 
  rule_baybars_purge_difficulty: "$POD_gamerule$ Baybars Purge Crisis"
  setting_baybars_purge_difficulty_none: "#high No Purge#!"
- setting_baybars_purge_difficulty_none_desc: "Baybars purge of the Egyptian supernatural crisis won't happen."
+ setting_baybars_purge_difficulty_none_desc: "Baybars purge of the Egyptian supernaturals won't happen."
  setting_baybars_purge_difficulty_default: "Default Baybars Purge"
- setting_baybars_purge_difficulty_default_desc: "Baybars purge of the Egyptian supernatural crisis will happen."
+ setting_baybars_purge_difficulty_default_desc: "Baybars purge of the Egyptian supernaturals will happen."
 
  rule_pod_patreon_characters: "$POD_gamerule$ Patron Characters"
  setting_pod_patreon_characters_enabled: "Enabled"
@@ -422,6 +432,17 @@
  setting_pod_ai_levy_discount_50_desc: "[levy|E] maintenance is #V 50%#! cheaper for the AI."
  setting_pod_ai_levy_discount_90: "#high 90% discount#!"
  setting_pod_ai_levy_discount_90_desc: "[levy|E] maintenance is #V 90%#! cheaper for the AI."
+
+ rule_POD_scaling_discipline_mastery: "$POD_gamerule$ Scaling $pod_discipline$ Mastery"
+ setting_POD_scaling_discipline_mastery_disabled: "Disabled"
+ setting_POD_scaling_discipline_mastery_disabled_desc: "All $pod_discipline$ perks have the same cost."
+ setting_POD_scaling_discipline_mastery_enabled: "#high Enabled#!"
+ setting_POD_scaling_discipline_mastery_enabled_desc: "Higher-tier $pod_discipline$ perks cost progressively more perk points."
+ rule_POD_clan_affinity: "$POD_gamerule$ $pod_clan$ $pod_discipline$ Affinity"
+ setting_POD_clan_affinity_disabled: "Disabled"
+ setting_POD_clan_affinity_disabled_desc: "All $pod_discipline$ perks cost the same regardless of $pod_clan$."
+ setting_POD_clan_affinity_enabled: "#high Enabled#!"
+ setting_POD_clan_affinity_enabled_desc: "Out-of-$pod_clan$ $pod_discipline$ perks cost #V 1 #!more perk point. In-$pod_clan$ perks cost #V 1#! less (with a minimum cost of 1). Caitiff, thin-bloods, and custom bloodlines are unaffected."
 
 # Overwritten vanilla game rules
  rule_POD_conquerors_frequency: "$rule_conquerors_frequency$"

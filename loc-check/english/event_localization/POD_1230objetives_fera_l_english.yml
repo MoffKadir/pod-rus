@@ -29,7 +29,7 @@
   
  childofgaia_objective_decision: "Gaia's Unity"
  childofgaia_objective_decision_tooltip: "Proving that unity isn't a weakness is a neverending challenge."
- childofgaia_objective_decision_desc: "We always strove for unity among the Garou Nation, but the more warlike tribes still shun us. Only through strength they must respect, or fostering relations they can't ignore can unifaction begin."
+ childofgaia_objective_decision_desc: "We always strove for unity among the Garou Nation, but the more warlike tribes still shun us. Only through strength they must respect, or fostering relations they can't ignore can unification begin."
  childofgaia_objective_decision_effect_tooltip: "You will get the Children of Gaia Empire [title|E], a powerful relic of your tribe and be one step closer to uniting the Garou." 
  childofgaia_objective_decision_confirm: "Gather and listen"
  childofgaia_decision_custom: "The Caern of the White Sea, in [GetTitleByKey('b_kem').GetNameNoTier], must be fully built"
@@ -52,6 +52,17 @@
  pod1230objectives_fera.7.desc: "While well respected for their combat prowess and their famous storytellers, the Fianna are often considered too unruly by the other tribes. This lack of discipline has seen them suffering major setbacks in the Isles, leading them to be more and more isolated from the rest of the Garou Nation.\nNo more however, as a strong succession of rulers and a renewed sense of purpose have seen the Fianna once again ascend as the masters of Britannia. As songs are already being composed to immortalize this great deed, the Fianna will now start to look outwards, perhaps to bring their help to the rest of the Nation.\n...After recovering from the most epic feast they have ever thrown."
  pod1230objectives_fera.7.a: "...my head hurts."
  pod1230objectives_fera.8.b: "The Celts are coming."
+
+ whitehowler_objective_decision: "Howling Anew"
+ whitehowler_objective_decision_tooltip: "We have redeemed ourselves before Gaia."
+ whitehowler_objective_decision_desc: "Our tribe was thought lost to the $glossary_wyrm$, but through great effort and with the help of the spirits, we can restore it." 
+ whitehowler_objective_decision_effect_tooltip: "Gain access to the White Howler legacy for your dynasty and be one step closer to uniting the Garou" 
+ whitehowler_objective_decision_confirm: "We stand with the Garou Nation once more!"
+ 
+ pod1230objectives_fera.62.t: "Howling Anew"
+ pod1230objectives_fera.62.desc: "Until now, the White Howlers were nothing more than a lost tribe, having fallen to the Wyrm and become the infamous Black Spiral Dancers centuries ago. No one expected ronin Garou of Pictish descent to emerge and reclaim their long-lost heritage.\nAgainst all odds, they ventured into the Umbra, seeking knowledge from the spirits of their ancestors about their fallen brethren, while hunting down and eliminating many of their corrupted kin across the world, reclaiming the ancestral lands of Pictland in the process. In support of their efforts, Lion stepped forth as an Incarna and blessed them, becoming their Tribal Totem once more.\nWhat most Garou believed impossible now seems to have come to pass: the White Howlers have returned, a beacon of hope for the entire Garou Nation."
+ pod1230objectives_fera.62.a: "The White Howlers return to Gaia's Cause."
+ pod1230objectives_fera.63.b: "Somehow the White Howlers are back..."
    
  get_fenris_objective_decision: "Berserkers of Gaia"
  get_fenris_objective_decision_tooltip: "Odin's get still lives. An affront to all the warriors of Great Fenris!"
@@ -59,7 +70,7 @@
  get_fenris_objective_decision_effect_tooltip: "You will get the Get of Fenris Empire [title|E], a powerful relic of your tribe and be one step closer to uniting the Garou." 
  get_fenris_objective_decision_confirm: "We will cast down Valhalla!"
  get_fenris_decision_custom: "The Caern of the Fimbul Winter, in [GetTitleByKey('b_biton').GetNameNoTier], must be fully built"
- get_fenris_decision_custom_a: "The Free State and the empire of Midgard do not exist or are held by you."
+ get_fenris_decision_custom_a: "The Free State (Finland) and the empire of Midgard (Scandinavia) do not exist or are held by you."
  
  pod1230objectives_fera.9.t: "Berserkers of Gaia"
  pod1230objectives_fera.9.desc: "The Get of Fenris are utterly fearsome fighters and no one in the Garou Nation denies that. But their violent, bordering on abusive, ways makes them at odds with the rest of the tribes. But times have changed.\nWith the rampant growth of civilization and the leeches that control it, the Get of Fenris are advocating for the unity of the Garou Nation under their leadership as undisputed Alphas. With the successful recovery of their Swedish homeland, they make a strong case for themselves and many are flocking to their banners already.\nBlood and violence will tear down the foes of Gaia, and if that's not enough, even more bloodshed should do the trick..."
@@ -75,7 +86,7 @@
  redtalon_decision_requirement: "You must have a [GetFaithByKey('velvet_brood').GetName] [spirit_companion|E] at maximum rank." 
  
  pod1230objectives_fera.11.t: "Wrath of Gaia"
- pod1230objectives_fera.11.desc: "The Red Talons never relented on the Impergium, this culling of humanity that they deem necessary. As the other tribes gave up on the idea, they found themselves more and more isolated. But the Red Talons are nothing if not patient.\nRetreating to the still wild steppes, they made sure to purge the area of any unwanted outsiders and bode their time. As the other tribes fall prey to humanity's growth and the vampires coming with it, the Red Talons prosper. And now, they are the strongest force remaining in the Garou Nation and their howls will be heard.\nThe Impergium will go as planned and Gaia will be saved in the blood of humanity, whether they like or not."
+ pod1230objectives_fera.11.desc: "The Red Talons never relented on the Impergium, this culling of humanity that they deem necessary. As the other tribes gave up on the idea, they found themselves more and more isolated. But the Red Talons are nothing if not patient.\nRetreating to the still wild steppes, they made sure to purge the area of any unwanted outsiders and bided their time. As the other tribes fall prey to humanity's growth and the vampires coming with it, the Red Talons prosper. And now, they are the strongest force remaining in the Garou Nation and their howls will be heard.\nThe Impergium will go as planned and Gaia will be saved in the blood of humanity, whether they like or not."
  pod1230objectives_fera.11.a: "They will fear the wolves again."
  pod1230objectives_fera.12.b: "Man versus wild, again"
   
@@ -88,7 +99,7 @@
  warderofmen_decision_custom_a: "You own at least 5 books, journals or similar inventory artifacts."
  
  pod1230objectives_fera.13.t: "Gaia's Resilience"
- pod1230objectives_fera.13.desc: "The Warder of Men are quickly dismissed by other tribes as 'humanity lovers' but the Warder don't mind. Like their spirit totem, cockroach, they strive and survive everything. Humanity and civilization are now ascendant, and the Warder know this. Their deep understanding of the ineluctably of mankind's victory is what led them to the position of strength they are in today.\nWhile the other tribes try to cling to bygone eras, the Warder pave the way forwards, confident in the rationality of their plans. Like them, the Garou Nation will endure and evolve but, most importantly, will survive."
+ pod1230objectives_fera.13.desc: "The Warder of Men are quickly dismissed by other tribes as 'humanity lovers' but the Warder don't mind. Like their spirit totem, cockroach, they strive and survive everything. Humanity and civilization are now ascendant, and the Warder know this. Their deep understanding of the ineluctability of mankind's victory is what led them to the position of strength they are in today.\nWhile the other tribes try to cling to bygone eras, the Warder pave the way forwards, confident in the rationality of their plans. Like them, the Garou Nation will endure and evolve but, most importantly, will survive."
  pod1230objectives_fera.13.a: "Survive, endure, thrive."
  pod1230objectives_fera.14.b: "Wolves of the cities?"
   
@@ -140,7 +151,7 @@
  silverfang_decision_custom: "The Caern of the Crescent Moon, in [GetTitleByKey('b_voronezh').GetNameNoTier], must be fully built"
  
  pod1230objectives_fera.19.t: "The Return of the King"
- pod1230objectives_fera.19.desc: "Since the time of Rome, the Silver Fangs have been the traditional leaders of the Garou Nation. With the fall of the Empire, and the gradual shift of the tribe to a more eastwards focus, this tradition has been contested. Tribes like the Shadow Lords or the Red Talons have sprung into the vacuum of power to chip away the Silver Fangs' authority and others like the Silent Striders or the Fianna have simply been lost due to geographical distance.\nWith their recent success in Russia however, the Silver Fangs are proving that they have only moved their seat of power and not lost the capabilities that made them so respected in the first place. Not all tribes are failing in line yet, but the nobility of the werewolves are getting close to reaffirming their natural rights."
+ pod1230objectives_fera.19.desc: "Since the time of Rome, the Silver Fangs have been the traditional leaders of the Garou Nation. With the fall of the Empire, and the gradual shift of the tribe to a more eastwards focus, this tradition has been contested. Tribes like the Shadow Lords or the Red Talons have sprung into the vacuum of power to chip away the Silver Fangs' authority and others like the Silent Striders or the Fianna have simply been lost due to geographical distance.\nWith their recent success in Russia however, the Silver Fangs are proving that they have only moved their seat of power and not lost the capabilities that made them so respected in the first place. Not all tribes are falling in line yet, but the nobility of the werewolves are getting close to reaffirming their natural rights."
  pod1230objectives_fera.19.a: "Hail to the Kings!"
  pod1230objectives_fera.20.b: "They retain their throne... for now"
     
@@ -170,7 +181,7 @@
     
  blackspiraldancer_objective_decision: "Loving Grandchildren"
  blackspiraldancer_objective_decision_tooltip: "Granny expects us to be nice!"
- blackspiraldancer_objective_decision_desc: "The Hag, Baba Yaga, is one of the most trusted servant of our master. If we please her by destroying her enemies, she will certainly reward us!"
+ blackspiraldancer_objective_decision_desc: "The Hag, Baba Yaga, is one of the most trusted servants of our master. If we please her by destroying her enemies, she will certainly reward us!"
  blackspiraldancer_objective_decision_effect_tooltip: "Baba Yaga will gift you with immortality, in a way." 
  blackspiraldancer_objective_decision_confirm: "Are you happy Grandma?"
  blackspiraldancer_victory_objective_decision_custom: "The [GetTitleByKey('k_crescent_moon').GetNameNoTier] [title|E] must be destroyed, or controlled by you"
@@ -185,23 +196,6 @@
  become_abomination_tt: "As an Abomination, you have full access to vampire's powers except the Embrace. You aren't a werewolf anymore though, but you keep access to Breed and Auspice Gifts as well as the Shapeshift option."
  become_abomination_holdings_tt: "Your holdings will be changed from tribal to castle, losing their now incompatible buildings in the process."
  
- storyteller_quest_decision: "Great Quest of Gaia"
- storyteller_quest_decision_desc: "Werewolves live (and often die) for epic quests granted by spiritual entities. Undertaking one would bring you great rewards if you could succeed.\nCollecting legendary books would be a worthwhile endeavor for Gaia."
- storyteller_quest_decision_tooltip: "Earn the legendary gift."
- storyteller_quest_decision_confirm: "For Gaia!"
- 
- release_from_bondage_quest_decision: "Great Quest of the Incarna"
- release_from_bondage_quest_decision_desc: "Werewolves live (and often die) for epic quests granted by spiritual entities. Undertaking one would bring you great rewards if you could succeed.\nDestroying the oppressing Shadow Curtain would certainly please the Incarna."
- release_from_bondage_quest_decision_tooltip: "Earn the legendary gift."
- release_from_bondage_quest_decision_confirm: "Down with the wall"
- release_from_bondage_quest_decision_custom: "The [GetTitleByKey('e_shadow_curtain').GetNameNoTier] title must be destroyed"
- 
- firebringer_quest_decision: "Great Quest of Coyote"
- firebringer_quest_decision_desc: "Werewolves live (and often die) for epic quests granted by spiritual entities. Undertaking one would bring you great rewards if you could succeed.\nThe trickster Coyote would certainly be pleased by a whimsical quest."
- firebringer_quest_decision_tooltip: "Earn the legendary gift."
- firebringer_quest_decision_confirm: "That should be enough I hope"
- firebringer_quest_decision_custom: "Grant an [empire|E] [title|E]"
- 
  prelude_to_apocalypse_quest_decision: "Great Quest of the Maeljin Incarna"
  prelude_to_apocalypse_quest_decision_desc: "Werewolves live (and often die) for epic quests granted by spiritual entities. Undertaking one would bring you great rewards if you could succeed.\nTo please the Maeljin you must bring destruction to the land and prove your mastery over the forces of corruption."
  prelude_to_apocalypse_quest_decision_tooltip: "Earn the legendary gift."
@@ -215,10 +209,10 @@
  coruroc_quest_decision_custom: "There must be no [ruler|E] following [GetReligionByKey('blackspiraldancer_religion').GetName] [religion|E] on the map"
  coruroc_quest_decision_custom_ex: "$coruroc_quest_decision_custom$ #weak ([example.GetFirstName])#!"      
  
- aidan_farwatcher_quest_decision: "Personal Quest of Aidan Farwatcher"
- aidan_farwatcher_quest_decision_desc: "Driven by vengeance for his betrayed tribe, Aidan Farwatcher requested you to kill Black Spiral Dancers."
- aidan_farwatcher_quest_decision_tooltip: "The Spiral undone?"
- aidan_farwatcher_quest_decision_confirm: "A bloody revenge"
+ #aidan_farwatcher_quest_decision: "Personal Quest of Aidan Farwatcher"
+ #aidan_farwatcher_quest_decision_desc: "Driven by vengeance for his betrayed tribe, Aidan Farwatcher requested you to kill Black Spiral Dancers."
+ #aidan_farwatcher_quest_decision_tooltip: "The Spiral undone?"
+ #aidan_farwatcher_quest_decision_confirm: "A bloody revenge"
  
  stop_flaying_plague_decision: "Stop the Flaying Plague"
  stop_flaying_plague_decision_tooltip: "There must be a solution!"
@@ -228,7 +222,7 @@
  stop_flaying_plague_decision_custom: "You need 10 or more in every attribute, except prowess where 40 or more is needed. Your pack members attributes can also work."
  
  pod1230objectives_fera.27.t: "Cleaving a Disease"
- pod1230objectives_fera.27.desc: "Thanks to the skills of your pack and your entourage, you have managed to uncover clues about the truth concerning the Flaying Plague. This terrible disease was indeed supernatural in origin, apparently created by a group of mages devoted to the $glossary_wyrm$ calling themselves the Circle of Red.\nThese fools were already behind several brazen attacks against eastern Caerns, most notably in Sofia, and while they tried to cover their tracks, they haven't done it well and quickly enough.\nStorming their lair, you have taken great satisfaction in slashing your way into these Wyrm-ridden cultists until their ritual circles were red with their own blood.\nWhile the threat of the Flaying Plague is now behind you, there are still some doubts about the details regarding its creation, some clues leading to a mysterious vampire and others to a demon. This might be worth investigating in the future but, for now at least, you duty to Gaia has been fulfilled."
+ pod1230objectives_fera.27.desc: "Thanks to the skills of your pack and your entourage, you have managed to uncover clues about the truth concerning the Flaying Plague. This terrible disease was indeed supernatural in origin, apparently created by a group of mages devoted to the $glossary_wyrm$ calling themselves the Circle of Red.\nThese fools were already behind several brazen attacks against eastern Caerns, most notably in Sofia, and while they tried to cover their tracks, they haven't done it well and quickly enough.\nStorming their lair, you have taken great satisfaction in slashing your way into these Wyrm-ridden cultists until their ritual circles were red with their own blood.\nWhile the threat of the Flaying Plague is now behind you, there are still some doubts about the details regarding its creation, some clues leading to a mysterious vampire and others to a demon. This might be worth investigating in the future but, for now at least, your duty to Gaia has been fulfilled."
  pod1230objectives_fera.27.a: "A legendary triumph!"
  pod1230objectives_fera.28.a: "Good for the wolves I suppose."
  pod1230objectives_fera.28.b: "Finally!"
@@ -255,7 +249,7 @@
  gaian_church_objective_decision_confirm: "Guide us Mother"
  gaian_church_objective_decision_custom1: "$POD_splat_hunter_plural$ will stop seeing the Garou as an incompatible enemy. Instead, the Garou will be considered as guardians, protectors, miracle workers or charged with a divine mission.\nThis will result in their faiths being able to cooperate more easily."
 
- pod1230objectives_fera.125.desc: "While most of the werewolves were appalled by the rise of Christianity, a few saw an opportunity, fewer still saw a hint of Gaia in the mortals' reverence for Mary. While fringe at first, these factions used well the rapid growth of the Church's power and subtly influenced theological debates to favor worship of Mary when possible.\nIt has taken a long time and many false starts but the results are starting to show. With this apparently subtle influence, the "Church of Gaia" has managed to create a cascading effect culminating in the Catholic Church quietly turning their attention away from werewolves and more towards other concerns."
+ pod1230objectives_fera.125.desc: "While most of the werewolves were appalled by the rise of Christianity, a few saw an opportunity, fewer still saw a hint of Gaia in the mortals' reverence for Mary. While fringe at first, these factions used well the rapid growth of the Church's power and subtly influenced theological debates to favor worship of Mary when possible.\nIt has taken a long time and many false starts but the results are starting to show. With this apparently subtle influence, the \"Church of Gaia\" has managed to create a cascading effect culminating in the Catholic Church quietly turning their attention away from werewolves and more towards other concerns."
  pod1230objectives_fera.125.a: "All under one Mother"
  gaiachurch_objective_decision_custom_roma: "The holder of [GetTitleByKey('c_roma').GetNameNoTier] must be an [GetFaithDoctrine('special_doctrine_ecumenical_hunters').GetBaseName] or of your faith."
  
@@ -267,7 +261,7 @@
  bagheera_objective_decision_custom: "You need 10 or more in every attribute, except prowess where 40 or more is needed. Your pack members attributes can also work."
   
  pod1230objectives_fera.31.desc: "According to their legends, the Bagheera were once created as the judges of catkind. While this role has long since been abandoned, they have retained the natural curiosity and friendly charisma that came with it. As they often say, they are the truest embodiment of the cat spirit, wisdom, love and anger all fused together. Uniquely among the fractured Bastet tribes, the Bagheera managed to keep a cordial relationship with all of their cousins and, with their recent rise in fame, this has birthed the idea that maybe it is time for the werepanthers to leverage this strength and push for the unification of the divided Bastet Nation.\nWhile the other tribes are skeptical at best, the current talented leadership of the Bagheera has managed to at least bring them to the negotiation table. It now remains to be seen if the charismatic panthers will see this endeavor through to a satisfying conclusion."
- pod1230objectives_fera.31.a: "We are all children of Seline!"
+ pod1230objectives_fera.31.a: "We are all children of $glossary_luna_seline$!"
 
  bubasti_objective_decision: "Cat Against Snake"
  bubasti_objective_decision_tooltip: "We are patient. We will wait for our triumphant revenge."
@@ -285,13 +279,13 @@
  ceilican_objective_decision_effect_tooltip: "You will liberate your captured brothers and sisters who will then join your court.\nYou will also unlock a chain of events putting you on the path to unite the Bastet Nation." 
  ceilican_objective_decision_confirm: "Another type of dance..."
    
- pod1230objectives_fera.33.desc: "Once carefree and living a life of hedonism, the Ceilican have been betrayed by the Faerie lord Samhach who hunted them so efficiently that they were almost driven to extinction. The "mercurial cats" weren't ready to give up however and, under your diligent leadership, managed to stage a surprising comeback, storming Lord Samhach's Faerie court and liberating their captive brethren.\nAs the victorious Ceilican dance and feast in the ruins of the hated betrayer's court, the rest of the Bastet Nation takes notice of this puzzling development. Once thought extinct, it seems it will be now time to welcome the Ceilican back among their cat brethren, perhaps a sign of Mother Seline's will for her children to finally go past their personal grudges and unite under one banner?"
+ pod1230objectives_fera.33.desc: "Once carefree and living a life of hedonism, the Ceilican have been betrayed by the Faerie lord Samhach who hunted them so efficiently that they were almost driven to extinction. The \"mercurial cats\" weren't ready to give up however and, under your diligent leadership, managed to stage a surprising comeback, storming Lord Samhach's Faerie court and liberating their captive brethren.\nAs the victorious Ceilican dance and feast in the ruins of the hated betrayer's court, the rest of the Bastet Nation takes notice of this puzzling development. Once thought extinct, it seems it will be now time to welcome the Ceilican back among their cat brethren, perhaps a sign of Mother $glossary_luna_seline$'s will for her children to finally go past their personal grudges and unite under one banner?"
  pod1230objectives_fera.33.a: "The party isn't over!"
 
  khan_objective_decision_judgment_hammer: "You must retrieve the [GetPODArtifact('judgment_hammer').GetName], the most prized weapon of the Khan and arguably the most powerful of the Bastet as a whole."
  khan_objective_decision: "Wise and Fierce Tigers"
  khan_objective_decision_tooltip: "By achieving the perfect balance, we will show the way for the Bastet Nation."
- khan_objective_decision_desc: "Regal hunters, warriors and mentors, the Khan are the true nobility of the Bastet despite what the tyrannical Simba might claim. By perfecting themselves, they can show catkind that they are truly chosen by Mother Seline to lead them to a glorious future."
+ khan_objective_decision_desc: "Regal hunters, warriors and mentors, the Khan are the true nobility of the Bastet despite what the tyrannical Simba might claim. By perfecting themselves, they can show catkind that they are truly chosen by Mother $glossary_luna_seline$ to lead them to a glorious future."
  khan_objective_decision_effect_tooltip: "This will improve the Judgment Hammer.\nYou will also unlock a chain of events putting you on the path to unite the Bastet Nation." 
  khan_objective_decision_confirm: "Passion, vigor and wisdom."
   
@@ -300,7 +294,7 @@
 
  simba_objective_decision: "The Lion Tyrants"
  simba_objective_decision_tooltip: "The lion is the king of nature. Time to remind them."
- simba_objective_decision_desc: "The Simba are the rightful rulers of catkind. Moments of weakness and accusations of "tyrannical rule" have eroded this claim however. Time to remind the other tribes who is in charge."
+ simba_objective_decision_desc: "The Simba are the rightful rulers of catkind. Moments of weakness and accusations of \"tyrannical rule\" have eroded this claim however. Time to remind the other tribes who is in charge."
  simba_objective_decision_effect_tooltip: "You will also unlock a chain of events putting you on the path to unite the Bastet Nation." 
  simba_objective_decision_confirm: "Long live the kings."
   
@@ -310,19 +304,19 @@
  pod1230objectives_fera.35.a: "A true king searches for what he can take."
  
  swara_spiritual_guardians_modifier: "Spirit of Damaa"
- swara_spiritual_guardians_modifier_desc: "Thanks to their close ties with the spiritual world, the Swara are able to rely on otherwordly help much easier than other Bastet tribes."
+ swara_spiritual_guardians_modifier_desc: "Thanks to their close ties with the spiritual world, the Swara are able to rely on otherworldly help much easier than other Bastet tribes."
  swara_objective_decision: "Guardians of the Pure Places"
- swara_objective_decision_tooltip: "While the others bicker, we do the work Mother Seline entrusted to us."
+ swara_objective_decision_tooltip: "While the others bicker, we do the work Mother $glossary_luna_seline$ entrusted to us."
  swara_objective_decision_desc: "The Swara are the guardians of the spiritually charged places. While other Bastet tribes dismiss them as cowards and loners, they secretly defend the purity of Africa with a zeal that even a Khan would envy."
  swara_objective_decision_effect_tooltip: "You will also unlock a chain of events putting you on the path to unite the Bastet Nation." 
  swara_objective_decision_confirm: "We do what must be done."
  swara_objective_decision_caern_tooltip: "You need to have a maxed out Caern of each type (Level 5 ducal buildings, Caern of Will, Rage, Leadership, Wisdom and Enigmas)"
 
- pod1230objectives_fera.36.desc: "The werecheetah are mysterious to the other tribes. Many dismiss them as cowards, always running apparently aimlessly from place to place and avoiding conflict. This couldn't be farther from the truth. The Swara are diligent defenders of the purity of the land and they fight as hard as any lion when their sacred duty is threatened.\nWhile they haven't been clamoring it, their work has started to gain recognition among the Bastet Nation as of late. The other tribes stand silent, contemplating that they were bickering or obsessing over small concerns while the Swara were doing Mother Seline's bidding. This had lead to a surprising impetus putting them at the forefront of the renewed call for Bastet unity. It remains to be seen if the usually isolationist "Silver Folk" will be heeding that call in the future."
+ pod1230objectives_fera.36.desc: "The werecheetah are mysterious to the other tribes. Many dismiss them as cowards, always running apparently aimlessly from place to place and avoiding conflict. This couldn't be farther from the truth. The Swara are diligent defenders of the purity of the land and they fight as hard as any lion when their sacred duty is threatened.\nWhile they haven't been clamoring it, their work has started to gain recognition among the Bastet Nation as of late. The other tribes stand silent, contemplating that they were bickering or obsessing over small concerns while the Swara were doing Mother $glossary_luna_seline$'s bidding. This had lead to a surprising impetus putting them at the forefront of the renewed call for Bastet unity. It remains to be seen if the usually isolationist \"Silver Folk\" will be heeding that call in the future."
  pod1230objectives_fera.36.a: "Are they starting to understand?"
  
  pod1230objectives_fera.37.t: "Unification of the Bastet Nation"
- pod1230objectives_fera.37.desc: "With your recent success putting your tribe at the forefront of the Bastet, the idea of consolidating the scattered tribes into a cohesive whole has resurfaced once again. Most legends of catkind agree that you were once intended by Mother Seline to work alongside each other and that the division that happened in the earliest days was the main cause of your defeat against the werewolves during the War of Rage.\nStill, despite this agreed upon fact, it will be a very difficult task bringing catkind together once again. Each tribe will need to be convinced and cats are nothing if not both stubborn and fickle creatures at the same time."
+ pod1230objectives_fera.37.desc: "With your recent success putting your tribe at the forefront of the Bastet, the idea of consolidating the scattered tribes into a cohesive whole has resurfaced once again. Most legends of catkind agree that you were once intended by Mother $glossary_luna_seline$ to work alongside each other and that the division that happened in the earliest days was the main cause of your defeat against the werewolves during the War of Rage.\nStill, despite this agreed upon fact, it will be a very difficult task bringing catkind together once again. Each tribe will need to be convinced and cats are nothing if not both stubborn and fickle creatures at the same time."
  pod1230objectives_fera.37.a: "Let's hear their point of view."
  
  pod1230objectives_fera.38.desc: "The Bagheera are fully on board with your plan to restore the Bastet Nation. After all they have been advocating for doing just that for centuries. Still, the judges of catkind do not want a repeat of the errors of the past and they want to be certain that you are fit to lead your brethren into a prosperous future.\nThey intend to observe how you work and how you surround yourself as a ruler before giving their full commitment to the cause. To help in this matter, they have offered the teachings of one of their wisest mentors to work on your weaknesses while improving your strengths."
@@ -341,7 +335,7 @@
  pod1230objectives_fera.39.a: "Your cause is our own."
  pod1230objectives_fera.39.b: "Magic you said?"
  pod1230objectives_fera.39.c: "I'm sure we can convince them to reconsider."
- used_bagheera_joker_tooltip: "You will use your "joker", a one time opportunity to directly rally this tribe to your cause instead of having to fulfill their request."
+ used_bagheera_joker_tooltip: "You will use your \"joker\", a one time opportunity to directly rally this tribe to your cause instead of having to fulfill their request."
  
  bubasti_knight_help_modifier: "Helping the Bubasti"
  bubasti_knight_help_modifier_desc: "Many of your best champions are currently away, helping the Bubasti plan the liberation of their kin from the Followers of Set."
@@ -351,14 +345,14 @@
  bubasti_nation_objective_decision_confirm: "That should be enough."
   
  ceilican_nation_objective_decision: "The Bastet Nation: the Ceilican"
- pod1230objectives_fera.40.desc: "An unexpected guest shocked the gathered representatives of the Bastet by claiming to be a member of the Ceilican. The "mercurial cats" of Celtic folklore were long thought dead by the rest of catkind. This individual explains that the Ceilican have been hunted to almost extinction by a Fae lord but a few of them managed to hide and survive. Hearing of the renewed effort to unify the Bastet, they have come to humbly request your assistance in liberating their remaining survivors from their nemesis' grasp.\nAs the prospective ruler of all the Children of Seline, you would be hard pressed to refuse such a plea for help."
+ pod1230objectives_fera.40.desc: "An unexpected guest shocked the gathered representatives of the Bastet by claiming to be a member of the Ceilican. The \"mercurial cats\" of Celtic folklore were long thought dead by the rest of catkind. This individual explains that the Ceilican have been hunted to almost extinction by a Fae lord but a few of them managed to hide and survive. Hearing of the renewed effort to unify the Bastet, they have come to humbly request your assistance in liberating their remaining survivors from their nemesis' grasp.\nAs the prospective ruler of all the Children of $glossary_luna_seline$, you would be hard pressed to refuse such a plea for help."
  pod1230objectives_fera.40.b: "Hiding for so long? You must know a trick or two."  
  ceilican_nation_objective_decision_tooltip: "Forgotten cousins returning to the family."
  ceilican_nation_objective_decision_confirm: "A victory worthy of the new ruler of the Bastet!"
  any_knight_ceilican_tooltip: "You must have 5 or more knights with at least 45 prowess."
  
  khan_nation_objective_decision: "The Bastet Nation: the Khan"
- pod1230objectives_fera.41.desc: "The powerful weretigers were always considered a strong leadership candidate for the Bastet nation, their unrivaled strength and honorable conduct making them respected by the others. Still, they have graciously accepted to take a backseat to your own ambitions, recognizing your impressive success so far. The Khan have however issued you a challenge to prove that you are indeed the chosen of Seline that you claim to be. They even offered to put you through their traditional trial for Khan nobility, a well known ruthless and difficult exercise. While it wouldn't be enough to gain their fealty, this would certainly improve your legitimacy to the Bastet as a whole."
+ pod1230objectives_fera.41.desc: "The powerful weretigers were always considered a strong leadership candidate for the Bastet nation, their unrivaled strength and honorable conduct making them respected by the others. Still, they have graciously accepted to take a backseat to your own ambitions, recognizing your impressive success so far. The Khan have however issued you a challenge to prove that you are indeed the chosen of $glossary_luna_seline$ that you claim to be. They even offered to put you through their traditional trial for Khan nobility, a well known ruthless and difficult exercise. While it wouldn't be enough to gain their fealty, this would certainly improve your legitimacy to the Bastet as a whole."
  pod1230objectives_fera.41.a: "Let me hear your request."
  pod1230objectives_fera.41.b: "About that trial..."
  khan_nation_objective_decision_desc: "Regal hunters, warriors and mentors, the Khan are the true nobility of the Bastet despite what the tyrannical Simba might claim. They won't accept a ruler that doesn't show the same perfection in both body and mind."
@@ -366,7 +360,7 @@
  khan_nation_objective_decision_confirm: "I am Khan of the Khans."
    
  simba_nation_objective_decision: "The Bastet Nation: the Simba"
- pod1230objectives_fera.42.desc: "As the self proclaimed kings of the Bastet nation, the proud and arrogant werelions have always boasted that they should rule, often going to blows with other Bastet to stake their claim if needed. You expected your proposal of uniting catkind under your leadership to go quite badly with them.\nSomehow, it went even worse.\nIt took a lot of effort to subdue the Simba delegates and stop them from just jumping at you claws first to "punish you for your impudence". They are still screaming bloody murder as they are dragged out of the room and you are left to consider your next move. It's becoming clear that the lions will only be subdued if you prove your might on their own territory: Africa."
+ pod1230objectives_fera.42.desc: "As the self proclaimed kings of the Bastet nation, the proud and arrogant werelions have always boasted that they should rule, often going to blows with other Bastet to stake their claim if needed. You expected your proposal of uniting catkind under your leadership to go quite badly with them.\nSomehow, it went even worse.\nIt took a lot of effort to subdue the Simba delegates and stop them from just jumping at you claws first to \"punish you for your impudence\". They are still screaming bloody murder as they are dragged out of the room and you are left to consider your next move. It's becoming clear that the lions will only be subdued if you prove your might on their own territory: Africa."
  pod1230objectives_fera.42.a: "Time to tame them."
  pod1230objectives_fera.42.b: "We need a beachhead to start our invasion."
  simba_nation_objective_decision_desc: "The Simba are the rightful rulers of catkind... according to themselves at least. They won't relinquish this claim until their heartlands are conquered by someone willing to challenge them on their own territory."
@@ -375,7 +369,7 @@
  POD_simba_heartlands: "Simba Heartlands: Hausaland, Igbo-Benue, Yorubaland and Borgu"  
    
  swara_nation_objective_decision: "The Bastet Nation: the Swara"
- pod1230objectives_fera.43.desc: "As a proof of their respect, the isolationist Swara have invited you to one of their den-realms to discuss your proposal of reuniting the Bastet Nation. The werecheetah don't intent to get in your way or contest your claim but they remind you of the sacred duty of the Children of Seline, protecting the pure lands. If you can prove your commitment to this ancestral duty, they will fully join the fold. Otherwise they will continue to do their own thing far from the intrigues of the rest of catkind, as they always did so far.\nJudging by some structural weaknesses you noticed in this specific den-realm, you think you could make a donation to help them improve their defenses here, showing that you are indeed taking their request very seriously."
+ pod1230objectives_fera.43.desc: "As a proof of their respect, the isolationist Swara have invited you to one of their den-realms to discuss your proposal of reuniting the Bastet Nation. The werecheetah don't intend to get in your way or contest your claim but they remind you of the sacred duty of the Children of $glossary_luna_seline$, protecting the pure lands. If you can prove your commitment to this ancestral duty, they will fully join the fold. Otherwise they will continue to do their own thing far from the intrigues of the rest of catkind, as they always did so far.\nJudging by some structural weaknesses you noticed in this specific den-realm, you think you could make a donation to help them improve their defenses here, showing that you are indeed taking their request very seriously."
  pod1230objectives_fera.43.a: "I will consider your request."
  pod1230objectives_fera.43.b: "An important task. Let me help right now."
  swara_nation_objective_decision_desc: "The Swara are the guardians of the spiritually charged places. They want to see your commitment to their cause before fully joining your project of rebuilding the Bastet Nation."
@@ -383,9 +377,9 @@
  swara_nation_objective_decision_confirm: "A great deed for a great ruler."
  
  pod1230objectives_fera.44.t: "The Bastet Nation"
- pod1230objectives_fera.44.desc: "With shrewd diplomacy, force of will and a no small amount of more "direct" persuasion, you have finally rallied all the tribes under your banner. One by one they come to acknowledge your triumph and the new ruler of the united Bastet Nation. All of catkind is finally working as one, something never seen since the time of legends, well before the losing war against the tyrannical Garou.\nSome of your new "subjects" expect you to fall quickly, while others earnestly believe in you and the future you promised. In the end, it doesn't truly matter. You earned this victory.\nYou will now lead your fellow felines into a bright future. The age of the cat is finally at hand."
- pod1230objectives_fera.44.a: "From the moon, Mother Seline smiles."
- blessed_seline_modifier: "Blessed by Seline"
+ pod1230objectives_fera.44.desc: "With shrewd diplomacy, force of will and a no small amount of more \"direct\" persuasion, you have finally rallied all the tribes under your banner. One by one they come to acknowledge your triumph and the new ruler of the united Bastet Nation. All of catkind is finally working as one, something never seen since the time of legends, well before the losing war against the tyrannical Garou.\nSome of your new \"subjects\" expect you to fall quickly, while others earnestly believe in you and the future you promised. In the end, it doesn't truly matter. You earned this victory.\nYou will now lead your fellow felines into a bright future. The age of the cat is finally at hand."
+ pod1230objectives_fera.44.a: "From the moon, Mother $glossary_luna_seline$ smiles."
+ blessed_seline_modifier: "Blessed by $glossary_luna_seline$"
  blessed_seline_modifier_desc: "The Mother of Catkind smiles upon her chosen champion."
  bastet_nation_unifier_tooltip: "As long as you hold the Bastet Nation title, you will now get access to all the Bastet Men at Arms."
  
@@ -398,11 +392,11 @@
  entoban_objective_decision_desc: "Here in Entoban, the world's heart is where we awoke at the beginning of the Age of Sleep. Here we shepherded the younger races as they came into being. And it is here where we were betrayed by the #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L Egg-smashers#! as they murdered our kin and allies. Entoban will be ours again, and the wolves cannot stop us."
  entoban_objective_decision_confirm: "Our Primeval Home."
  entoban_objective_decision_requirement_example: "$entoban_objective_decision_requirement$ #weak ([example.GetName])#!"
- entoban_objective_decision_requirement: "No #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L Garou#! or their [GetTrait('kinfolk').GetName(GetNullCharacter)] hold land in [GetGeographicalRegion('world_africa').GetName]"
+ entoban_objective_decision_requirement: "No $POD_splat_garou$ or their [GetTrait('kinfolk').GetName(GetNullCharacter)] hold land in [GetGeographicalRegion('world_africa').GetName]"
  entoban_objective_decision_effect: "You will gain the [GetTitleByKey('h_entoban').GetNameNoTier] [title|E] which encompasses all of [GetGeographicalRegion('world_africa').GetName]"
  entoban_objective_decision_effect2: "$glossary_fera$ with capitals in [GetGeographicalRegion('world_africa').GetName] will have a higher chance of accepting vassalization"
  pod1230objectives_fera.50.t: "Entoban"
- pod1230objectives_fera.50.desc: "In ages long past, the lands known as Africa to Mankind was once the heart of a global civilization. Here there were once cities the size of nations made of wonder and possibility, where all walks of life prospered long before the Age of Mammals. But that time came to an end, and Entoban became divided. In our eons of slumber, it fractured and became broken in our absence. But, that was a shame of the past. Now, as you leave your Wallow and look out across the horizon, all beneath the gaze of the sun is part of a single whole. Those ages of lost glories and wonders may yet be reclaimed. This is the first step onto a path of reaching the same heights of grandeur as the Age of Kings. There is much work to be done. But you have already ensured there will be a foothold for generations to come."
+ pod1230objectives_fera.50.desc: "In ages long past, the lands known as Africa to Mankind were once the heart of a global civilization. Here there were once cities the size of nations made of wonder and possibility, where all walks of life prospered long before the Age of Mammals. But that time came to an end, and Entoban became divided. In our eons of slumber, it fractured and became broken in our absence. But, that was a shame of the past. Now, as you leave your Wallow and look out across the horizon, all beneath the gaze of the sun is part of a single whole. Those ages of lost glories and wonders may yet be reclaimed. This is the first step onto a path of reaching the same heights of grandeur as the Age of Kings. There is much work to be done. But you have already ensured there will be a foothold for generations to come."
  pod1230objectives_fera.50.a: "Like the Dragon Kings of Old, take your throne on the Heart of the World."
  entoban_vassal_acceptance: "Entoban: $VALUE|=+0$"
 
@@ -416,7 +410,7 @@
  mokole_mbembe_spear_objective_decision_requirement3: "You have a [spirit_companion|E] at max Rank" 
  mokole_mbembe_spear_objective_decision_requirement4: "You have two [spirit_companions|E] at max Rank"
  pod1230objectives_fera.51.t: "Spear of the First"
- pod1230objectives_fera.51.desc: "As you move through Pangaea, the spirits guide you to a forgotten glade, hidden beneath the body of a colossal long dead fallen Dragon King. Beneath their belly, in a cavern formed in their ribs, there is a single mighty spear plunged deep into a stone heart. Despite the fossilized remains of the King, the spear is still perfect and illustrious within its heart, standing strong and resolute against the ravages of time. For a creature of your strength, it is a simple matter to pull it free. As the spear is reoved, the ancient King dissolves into dust, and this hidden alcove disappears from all but your memory. The weight of ages hangs heavy on you, as the Spear accepts its new wielder."
+ pod1230objectives_fera.51.desc: "As you move through Pangaea, the spirits guide you to a forgotten glade, hidden beneath the body of a colossal long dead fallen Dragon King. Beneath their belly, in a cavern formed in their ribs, there is a single mighty spear plunged deep into a stone heart. Despite the fossilized remains of the King, the spear is still perfect and illustrious within its heart, standing strong and resolute against the ravages of time. For a creature of your strength, it is a simple matter to pull it free. As the spear is removed, the ancient King dissolves into dust, and this hidden alcove disappears from all but your memory. The weight of ages hangs heavy on you, as the Spear accepts its new wielder."
  pod1230objectives_fera.51.a: "A mighty weapon fit for a King."
 
 
@@ -425,9 +419,9 @@
  tkash_objective_decision_desc: "The vile creatures of the night threaten Rta, the Cosmic Order. They must be burned away before their taint spreads through our jungles."
  tkash_objective_decision_confirm: "Balance is Restored"
  tkash_objective_decision_effect: "You will gain the [GetTitleByKey('h_tkash').GetNameNoTier] [title|E] which encompasses all of [GetGeographicalRegion('world_india').GetName]"
- tkash_objective_decision_effect2: "All $POD_splat_vampire_plural$ and [GetTrait('kueijin').GetName(GetNullCharacter)] with land in India will suffer #V 5#! Fire damage"
+ tkash_objective_decision_effect2: "All $POD_splat_vampire_plural$ and [GetTrait('kueijin').GetName(GetNullCharacter)] with land in India will suffer #V 5#! [fire_damage_short_with_icon|E] Damage"
  pod1230objectives_fera.52.t: "Primeval Jungle"
- pod1230objectives_fera.52.desc: "For millenia now, this land has been a battleground. Between the wars of the Leeches and the Escaped Devils, aggravated by the neglect of the Khans and madness of the $glossary_wyld$'s bastards, despite this land's natural defenses, it has been the epicenter of an unending nightly war ever since the Blood Demon arrived. But, finally, no longer. Your grip on the land known to your people as T'kash is now absolute, as none of them expected your rise. The myriad immortals are now scattered, and in hiding. But they cannot escape your people's wrath. As part of a grand coronation, the light of Helios begins to suffuse the jungles itself, waiting for the right moment. As the assembled Weresuchids proclaim your name and the restoration of this ancient empire, the crown glows as the Elders set it on your brow. Helios' rage will know no bound, as the light from it begins to burn and sunlight, in a brief flash, bathes India. Helios himself has acknowledged your right to rule. The Eternal War is finally over."
+ pod1230objectives_fera.52.desc: "For millennia now, this land has been a battleground. Between the wars of the Leeches and the Escaped Devils, aggravated by the neglect of the Khans and madness of the $glossary_wyld$'s bastards, despite this land's natural defenses, it has been the epicenter of an unending nightly war ever since the Blood Demon arrived. But, finally, no longer. Your grip on the land known to your people as T'kash is now absolute, as none of them expected your rise. The myriad immortals are now scattered, and in hiding. But they cannot escape your people's wrath. As part of a grand coronation, the light of $glossary_helios$ begins to suffuse the jungles itself, waiting for the right moment. As the assembled Weresuchids proclaim your name and the restoration of this ancient empire, the crown glows as the Elders set it on your brow. Helios' rage will know no bound, as the light from it begins to burn and sunlight, in a brief flash, bathes India. Helios himself has acknowledged your right to rule. The Eternal War is finally over."
  pod1230objectives_fera.52.a: "T'kash is free will be truly Eternal."
 
 
@@ -516,14 +510,14 @@
  pod1230objectives_fera.59.desc: "Oftentimes, the Mokolé dream of ages long past, longing for its return. To deny the works of modernity and fixate over the past. And all too often, they fester and rot within that lust, blind to all the world around them. You, however, have not allowed yourself to be lost in that same despair. In time, your generation's memories will be Mnesis. And where others selfishly hide in their own memories, you have chosen to instead make your own. So much of the beauty in the modern world now has been added to the memories of those who will follow in your footsteps. For those that come after you, they will have memories of the wonders, tragedies, and majesties of mankind and the creatures of the night world. You will arm them with modern memories, fresh with all they may need to not just survive, but prosper. A legacy that time cannot erase. One that will endure and outlast the sands of time."
  pod1230objectives_fera.59.a: "And yet there is so much more to see..."
 
- garou_objective_decision_caern_tooltip: "You need to have one maxed out Caern of any type (Level 5 ducal buildings, Caern of Will, Rage, Leadership, Wisdom or Enigmas)." 
+ fera_objective_decision_caern_tooltip: "You must own a fully upgraded out Caern [duchy_building|E] of any type" 
 
 
  beast_of_war_objective_decision: "The Beast of War"
  beast_of_war_objective_decision_tooltip: "So much death."
  beast_of_war_objective_decision_desc: "The $glossary_wyrm_calamity$ desires destruction. Through calamity and carnage we will be empowered, all the better to bring glory to the $glossary_wyrm$."
  beast_of_war_objective_decision_confirm: "Calamity comes!"
- beast_of_war_objective_decision_requirement: "All your [powerful_vassals|E] must be [intimidated|E] or [cowed|E] of you"
+ beast_of_war_objective_decision_requirement: "All your [powerful_vassals|E] must be [intimidated|E], [cowed|E], or [imprisoned|E] by you"
 
  eater_of_souls_objective_decision: "The Eater of Souls"
  eater_of_souls_objective_decision_tooltip: "My body and their souls."
@@ -540,9 +534,27 @@
 
  wyrm_hydra_objective_decision: "Devotion to the Hydra"
  wyrm_hydra_objective_decision_tooltip: "The true Triat ascends."
- wyrm_hydra_objective_decision_desc: "Our dynasty has served the $glossary_wyrm$ well. We are poised to usher in a new age under the leadership of our strongest.\Then the world will know true fear."
+ wyrm_hydra_objective_decision_desc: "Our dynasty has served the $glossary_wyrm$ well. We are poised to usher in a new age under the leadership of our strongest.\nThen the world will know true fear."
  wyrm_hydra_objective_decision_confirm: "Now I am complete."
  wyrm_hydra_objective_decision_effect: "You will gain the [GetTitleByKey('h_wyrm').GetNameNoTier] [title|E] which will include any [empires|E] you hold"
  pod1230objectives_fera.61.t: "The Wyrm Ascendant"
  pod1230objectives_fera.61.desc: "The $glossary_wyrm_triatic$'s power is now absolute. The $glossary_triat$ is weakened. Now the world lays ahead, not knowing its doom approaches.\n\nThere will be no shelter from your fury. Their weapons and armor will mean nothing, their faith even less. They will watch as the world comes to an end. Many will resist, their tenacity admirable but pointless, for the world already rides into the jaws of the Apocalypse. There is no hope, no future, all life is doomed!"
  pod1230objectives_fera.61.a: "I am the end of all things!"
+ 
+ whitehowler_revival_objective_decision: "Howl of the Dreamweaver"
+ whitehowler_revival_objective_decision_tooltip: "A powerful foe to defeat and old friends to rescue."
+ whitehowler_revival_objective_decision_desc: "The Red Circle's operation in Lake Pavin is growing by the day. Letting them unleash the Dreamweaver is out of the question but they are powerful and well fortified. If you want to triumph, and potentially save the trapped White Howlers spirits, your attack would have to be well prepared."
+ whitehowler_revival_objective_decision_confirm: "For Gaia! For the Howlers!"
+ whitehowler_revival_objective_decision_valid_1: "The Red Circle is growing stronger as time passes, you will require both a higher quality and quantity of [knights|E] as time goes on. Next increase happens in #V 1260#!."
+ whitehowler_revival_objective_decision_valid_2: "The Red Circle is growing stronger as time passes, you will require both a higher quality and quantity of [knights|E] as time goes on. Next increase happens in #V 1280#!."
+ whitehowler_revival_objective_decision_valid_3: "The Red Circle is growing stronger as time passes, you will require both a higher quality and quantity of [knights|E] as time goes on. Next increase happens in #V 1300#!."
+ whitehowler_revival_objective_decision_valid_4: "The Red Circle is growing stronger as time passes, you will require both a higher quality and quantity of [knights|E] as time goes on. Next increase happens in #V 1259#!."
+ whitehowler_revival_objective_decision_valid_5: "The Red Circle is growing stronger as time passes, you will require both a higher quality and quantity of [knights|E] as time goes on. #N This is your final chance.#!" 
+ whitehowler_revival_objective_decision_effect_tooltip: "The revived White Howlers tribe will send some of its more promising new members. You will also get the opportunity to become a [GetFaithByKey('whitehowler').GetName] yourself."
+ 
+ pod1230objectives_fera.64.desc: "Arguably the most damaging event in the history of the Garou Nation, the fall of the White Howlers was long thought to be something that could never be healed. Countless expeditions in the Umbra and inquiries of the spirits lead to no actionable clues and, ironically, it's the Enemy making a move that made today's victory possible.\nThe Red Circle uncovered the Dreamweaver's prison and saw it as a font for power, in addition to the potential destruction wrought when they would unleash the creature. Little did they know, or cared, about the trapped White Howlers spirits who sacrificed themselves long ago to curtail the Dreamweaver. When they were found by local Garou, news spread across moon-bridges to every corner of the Nation. Here was a great opportunity for a Quest like no other, defeating a powerful servant of the Wyrm while also potentially rescuing the lost Howlers.\n\nMany packs did try, or at least talked about trying, but the powerful and well entrenched Red Circle cultists proved too strong a foe. It was your pack that finally charged into glorious battle and emerged victorious, howling your triumph to Mother Gaia.\n\nAs the Ahrouns celebrated their victory and the Galliards recorded the event, the Theurges were already hard at work to free and guide the captive White Howlers spirits to safety. They did their work well, and the heroic Howlers were welcomed with open arms with the prideful Lion spirit who was all too eager to reinstate his once glorious tribe with their help.\n\nThe Red Circle's madmen's blood feeds the soil, the Dreamweaver is no longer a threat and the Lost Tribe is lost no longer. It is, indeed, a glorious day for Gaia."
+ pod1230objectives_fera.64.a: "Welcome back, children of Lion!"
+ pod1230objectives_fera.64.b: "The renewed Lion offers me patronage!"
+ 
+ 
+ 

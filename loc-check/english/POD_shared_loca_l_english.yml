@@ -12,6 +12,8 @@
  POD_shared_loca_critical_success: "Critical Success!"
  POD_shared_loca_critical_failure: "Critical Failure!"
 
+ summoned_army: "Summoned Army"
+
 
 # Modifier definitions
  POD_open_bracket: "#V (#!"
@@ -25,7 +27,7 @@
 # Decisions
  POD_unlocks_next_objective: "Unlocks the next objective"
  POD_unlocks_next_objectives: "Unlocks the next objectives"
- POD_unlocked_empire_ghw: "You unlock the [GetPlayer.GetFaith.Custom('GHWName')] for [empire|E] [casus_belli|E]."
+ POD_unlocked_empire_ghw: "You unlock the [GetPlayer.GetFaith.GHWName] for [empire|E] [casus_belli|E]."
 
 
 # Character interaction options
@@ -103,6 +105,8 @@
 
  # Useful custom_descriptions
  TARGET_CHARACTER_GETFIRSTNAME: "[TARGET_CHARACTER.GetFirstName]"
+ TARGET_CHARACTER_GETFIRSTNAMENOTOOLTIP: "[TARGET_CHARACTER.GetFirstNameNoTooltip]"
+ TARGET_CHARACTER_COTERIENAME: "[TARGET_CHARACTER.Custom('PODGetCoterieName')]"
  CHARACTER_GETFIRSTNAMENICKNAMED: "[CHARACTER.GetFirstNameNicknamed]"
  POD_NUMBER_CUSTOMDESC: "$VALUE|0$"
  ADDITIONAL_PERK_COST_EFFECT: "#clickable This perk costs $VALUE|V0$ perk [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE|q$', '(CFixedPoint)1' ), 'point', 'points' )]#!"
@@ -116,3 +120,5 @@
  POD_weather_magic.duel.tt.attacker_lost: "You couldn't release the selected natural hazard over the target region"
  POD_weather_magic_from_enemy_toast: "Hazard!"
  POD_weather_magic_from_enemy.tt: "A natural hazard was released on your realm by [actor.GetFirstName]"
+
+ POD_clean_interaction: "Clear [modifiers|E]"

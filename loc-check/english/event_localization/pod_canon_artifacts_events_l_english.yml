@@ -7,15 +7,15 @@
  sword_of_nul_warning: "This path is, obviously, very dangerous..."
 
  POD_canon_artifacts.101.t: "The Sword Calls II"
- POD_canon_artifacts.101.desc: "As you answered its pull, you quickly realize that the Sword of Nul cares not at all about your well being. It drives you towards its master's resting place relentlessly, even trying to keep you awake during the day. As such, you are going from danger to danger, be they dark forests, the lack of blood or the trouble of finding a resting place in strange lands.\nAt this rate, you will join the long list of the Sword's casualties, you need to slow down and plan a course of action before it's too late."
+ POD_canon_artifacts.101.desc: "As you answered its pull, you quickly realize that the Sword of Nul cares not at all about your well-being. It drives you towards its master's resting place relentlessly, even trying to keep you awake during the day. As such, you are going from danger to danger, be they dark forests, the lack of blood or the trouble of finding a resting place in strange lands.\nAt this rate, you will join the long list of the Sword's casualties, you need to slow down and plan a course of action before it's too late."
  POD_canon_artifacts.101.a: "Let me prepare a travel guide..."
  POD_canon_artifacts.101.b: "Pay for guides and a strong armed escort!"
  POD_canon_artifacts.101.effect.success.desc: "Avoiding danger"
- POD_canon_artifacts.101.critical.failure.effect.desc: "Another victim of the sword..." 
- POD_canon_artifacts.101.critical.failure: "Another Ones Bites..."
+ POD_canon_artifacts.101.critical.failure.effect.desc: "Another victim of the sword..."
+ POD_canon_artifacts.101.critical.failure: "Another One Bites..."
  
  POD_canon_artifacts.102.t: "The Sword Calls III"
- POD_canon_artifacts.102.desc: "You are finally close to Drakonskyr's resting place and you can almost feel the Sword of Nul brimming with anticipation. There is a slight issue though, the demon is resting in a trap filled maze to deter any unwanted intruders.\nObviously, you have the Sword, so you can just 'follow' its lead to avoid the majority of dangers in there. But there is always the risk of a wrong turn... No turning back now though, since you are almost certain that the Sword will attack you if you take a step back at this point."
+ POD_canon_artifacts.102.desc: "You are finally close to Drakonskyr's resting place and you can almost feel the Sword of Nul brimming with anticipation. There is a slight issue though, the demon is resting in a trap-filled maze to deter any unwanted intruders.\nObviously, you have the Sword, so you can just 'follow' its lead to avoid the majority of dangers in there. But there is always the risk of a wrong turn... No turning back now though, since you are almost certain that the Sword will attack you if you take a step back at this point."
  POD_canon_artifacts.102.a: "Careful, careful..."
  POD_canon_artifacts.102.effect.success.desc: "Done it!"
  POD_canon_artifacts.102.critical.failure.effect.desc: "What's that rock doing there?" 
@@ -33,7 +33,7 @@
  tablet_of_destiny_decision: "The Tablet of Destiny"
  tablet_of_destiny_decision_tooltip: "Infinite Knowledge!"
  tablet_of_destiny_decision_desc: "The Tablet of Destiny has the knowledge of all the blood powers of Enoch. It is well worth studying."
- tablet_of_destiny_decision_effect_tooltip: "You will be able to learn new [Glossary('Disciplines','game_concept_discipline_desc')] from the Tablet" 
+ tablet_of_destiny_decision_effect_tooltip: "You will be able to learn new [Glossary('Disciplines','game_concept_discipline_desc')] from the Tablet"
  tablet_of_destiny_decision_confirm: "New powers!"
  
  POD_canon_artifacts.200.t: "Deciphering the Tablet of Destiny"
@@ -102,7 +102,7 @@
  ankaran_sarcophagus_warning: "This path is, obviously, potentially dangerous..."
  
  POD_canon_artifacts.401.t: "The Ankaran Sarcophagus II"
- POD_canon_artifacts.401.desc: "Well, that was anticlimactic.\nFor all the aura of mystery around this sarcophagus, it turns out that it only contained a mundane, if well preserved, mummy. Probably a mortal king of some sort, no one really important to you. Despite this letdown, it can still be useful to you as no one else knows the truth. You could trap the sarcophagus for careless thieves in your domain or sell the right to see it to inquisitive scholars. Or even bolder, tell the truth about it! ...to a few trustworthy allies only of course. How will you leverage this discovery?"
+ POD_canon_artifacts.401.desc: "Well, that was anticlimactic.\nFor all the aura of mystery around this sarcophagus, it turns out that it only contained a mundane, if well-preserved, mummy. Probably a mortal king of some sort, no one really important to you. Despite this letdown, it can still be useful to you as no one else knows the truth. You could trap the sarcophagus for careless thieves in your domain or sell the right to see it to inquisitive scholars. Or even bolder, tell the truth about it! ...to a few trustworthy allies only of course. How will you leverage this discovery?"
  POD_canon_artifacts.401.a: "Study the mummy in greater detail"
  POD_canon_artifacts.401.b: "Put snakes in it! Snakes are fun"
  POD_canon_artifacts.401.c: "Tell the truth to some soon-to-be indebted 'friends'"
@@ -158,6 +158,11 @@
  truefaith_decision_tooltip: "Faith is a powerful weapon"
  truefaith_decision_desc: "You have a powerful holy artifact at your disposal. Tapping into its power would give you great insight into the blessings of the faithful."
  truefaith_decision_confirm: "Blessed by the Divine"
+
+ truefaith_jewish_decision: "$truefaith_decision$"
+ truefaith_jewish_decision_tooltip: "$truefaith_decision_tooltip$"
+ truefaith_jewish_decision_desc: "$truefaith_decision_desc$"
+ truefaith_jewish_decision_confirm: "$truefaith_decision_confirm$"
      
  obfuscate_decision: "Shadowy Artifact"
  obfuscate_decision_tooltip: "Into the darkness we go"
@@ -216,7 +221,7 @@
  drink_grail_tt: "Your soul and your personality are being tested."
 
  POD_canon_artifacts.702.t: "The Demon of the Grail Aspirant"
- POD_canon_artifacts.702.desc: "The last obstacle in your endeavor to claiming the Grail is... you it seems. You are faced with a grotesque vision of yourself, more feral than mortal, that gnarls at you and seems to dare you to try finish this drink.\nThe Beast, this Unholy Curse in every Cainite's soul, is feeling threatened by this sudden intrusion of the Holy in your damned body. It won't go down without a terrible mental fight, already trying to assert control over you."
+ POD_canon_artifacts.702.desc: "The last obstacle in your endeavor to claiming the Grail is... you it seems. You are faced with a grotesque vision of yourself, more feral than mortal, that gnarls at you and seems to dare you to try to finish this drink.\nThe Beast, this Unholy Curse in every Cainite's soul, is feeling threatened by this sudden intrusion of the Holy in your damned body. It won't go down without a terrible mental fight, already trying to assert control over you."
  POD_canon_artifacts.702.a: "I am in control!"
  drink_grail_tt2: "Is your Beast stronger than your will?"
 
@@ -249,7 +254,8 @@
  spear_orthia_decision_tooltip: "A symbol of bravery forged anew?"
  spear_orthia_decision_desc: "The Spear of Artemis Orthia shattered when she bravely assaulted the walls of Carthage. With the help of a skilled supernatural blacksmith, it could be rebuilt."
  spear_orthia_decision_confirm: "A weapon of legend!"
- shattered_spear_decision_custom: "[TARGET_CHARACTER.GetFirstName] needs to be your [friend|E], [coterie|E] member, or [soulmate|E]" 
+ shattered_spear_decision_custom: "[TARGET_CHARACTER.GetFirstName] needs to be your [friend|E], [coterie|E] member, or [soulmate|E]"
+ broken_blade_michael_decision_custom: "[TARGET_CHARACTER.GetFirstName] needs to be your [friend|E], [coterie|E] member, or [soulmate|E] or be subject to a [strong_hook|E]" 
  
  artifact_spear_orthia_name: "Spear of Artemis Orthia"
  artifact_spear_orthia_description: "A legendary weapon once wielded by a legendary warrior. Artemis Orthia, said to be the beloved of Ventrue himself, charged bravely into Carthage's madness like a Spartan Goddess was expected to. While her spear shattered during the fight, it has now been reforged to its former glory."
@@ -261,9 +267,9 @@
  truth_saulot_decision_confirm: "Let us start reading"
  
  POD_canon_artifacts.800.t: "The Truth about Saulot?"
- POD_canon_artifacts.800.desc: "You have finally unlocked Javaniel's journal and its content is... disturbing.\nJavaniel was a Salubri active a long time ago, a companion of Saulot and Samiel during the Baali Wars. His account of the events depicts Saulot as a callous, if not outright evil, mastermind behind the creation of the infernalist Baali and far from his image as a saintly mentor. The Ivory Tablets also in your possession confirm this fact, claiming that Saulot is ready to burn the whole world if it means reigning over it during the "next turn of the Wheel".\nJavaniel is long dead, apparently killed by Saulot himself to hide the truth, so you are the only one with concrete proof of this lesser known side of the beloved Antediluvian. If you were to reveal it, clan Salubri would be shaken to its core and their foes emboldened."
+ POD_canon_artifacts.800.desc: "You have finally unlocked Javaniel's journal and its content is... disturbing.\nJavaniel was a Salubri active a long time ago, a companion of Saulot and Samiel during the Baali Wars. His account of the events depicts Saulot as a callous, if not outright evil, mastermind behind the creation of the infernalist Baali and far from his image as a saintly mentor. The Ivory Tablets also in your possession confirm this fact, claiming that Saulot is ready to burn the whole world if it means reigning over it during the \"next turn of the Wheel\".\nJavaniel is long dead, apparently killed by Saulot himself to hide the truth, so you are the only one with concrete proof of this lesser known side of the beloved Antediluvian. If you were to reveal it, clan Salubri would be shaken to its core and their foes emboldened."
  POD_canon_artifacts.800.a: "Vampire relics are of little use to me, besides scholarly pursuit."
- POD_canon_artifacts.800.b: "The world must known the truth!" 
+ POD_canon_artifacts.800.b: "The world must know the truth!"
  POD_canon_artifacts.800.custom: "The Salubri will lose a lot of prestige and gain a massive amount of stress.\nThe Tremere will gain some prestige and lose some stress at the same time."
  POD_canon_artifacts.800.c: "I will destroy the journal and keep the truth to myself."
  POD_canon_artifacts.800.d: "Lies! LIES!" 
@@ -295,7 +301,7 @@
  POD_canon_artifacts.900.c: "I can convince a wraith. Probably."
  POD_canon_artifacts.900.effect.success.desc: "Titia opens the book!"  
  POD_canon_artifacts.900.critical.failure.effect.desc: "Titia refuses to open the book..."
- codex_mortis_fail_tt: "The codex rejects you, leaving you with an useless empty book."
+ codex_mortis_fail_tt: "The codex rejects you, leaving you with a useless empty book."
  
  broken_blade_michael_decision: "Reforging the Blade of Michael"
  broken_blade_michael_decision_tooltip: "A symbol of bravery forged anew?"
@@ -344,14 +350,14 @@
  POD_canon_artifacts.1020.b: "Just stories... right?"
 
  POD_canon_artifacts.1021.t: "Unworthy"
- POD_canon_artifacts.1021.desc: "Tatsuko Sayo has been providing you with immense powers since you decided to keep it but you can sense that the soul inside is... unsatisfied by your lack of ambition. After all, it was once the property of one who defied the entire realm of the gods.\nAfter a recent battle, you can feel that it suddenly refuses to be sheathed... or more exactly, it tries to sheathes itself in your torso. As the stories told, one found unworthy will indeed be discarded by the katana.\n\nIt it said that some of its previous owners managed to find rituals and preparations to force their will unto the blade and avoid this grim fate. Let us hope your knowledge of those is enough."
+ POD_canon_artifacts.1021.desc: "Tatsuko Sayo has been providing you with immense powers since you decided to keep it but you can sense that the soul inside is... unsatisfied by your lack of ambition. After all, it was once the property of one who defied the entire realm of the gods.\nAfter a recent battle, you can feel that it suddenly refuses to be sheathed... or more exactly, it tries to sheathe itself in your torso. As the stories told, one found unworthy will indeed be discarded by the katana.\n\nIt is said that some of its previous owners managed to find rituals and preparations to force their will unto the blade and avoid this grim fate. Let us hope your knowledge of those is enough."
  POD_canon_artifacts.1021.a: "I'm in charge here!"
  POD_canon_artifacts.1021.b: "Throw the blade away."
  POD_canon_artifacts.1021.effect.success.desc: "You wrestle control of the blade"
  POD_canon_artifacts.1021.critical.failure: "Unworthy indeed."
  
  POD_canon_artifacts.1022.t: "Isamu Harujiro"
- POD_canon_artifacts.1022.desc: "While you thought you finally wrestled control of Tatsuko Sayo for good, the bitter truth is soon made apparent. The blade has been dormant because it has been impressed by your recent show of willpower. In short, you have been found worthy to be inhabited by the swordsmith's soul.\n\nObviously, you don't have a say in the matter.\n\nSuddenly plunged into the Yin world, you face the true form of the katana, the Spectre of Isamu Harujiro. If you can triumph here, his soul will finally be purged from the katana from good. If you fail however... well, you will at least make a fine body for the vengeful swordsmith.\nTime to test your mettle against one who shook the heavens long ago.\n\nNo pressure."
+ POD_canon_artifacts.1022.desc: "While you thought you finally wrestled control of Tatsuko Sayo for good, the bitter truth is soon made apparent. The blade has been dormant because it has been impressed by your recent show of willpower. In short, you have been found worthy to be inhabited by the swordsmith's soul.\n\nObviously, you don't have a say in the matter.\n\nSuddenly plunged into the Yin world, you face the true form of the katana, the Spectre of Isamu Harujiro. If you can triumph here, his soul will finally be purged from the katana for good. If you fail however... well, you will at least make a fine body for the vengeful swordsmith.\nTime to test your mettle against one who shook the heavens long ago.\n\nNo pressure."
  POD_canon_artifacts.1022.a: "I regret my life choices."
  POD_canon_artifacts.1022.effect.success.desc: "A triumph!"
  POD_canon_artifacts.1022.critical.failure.effect.desc: "A triumph! But not for you." 
@@ -361,14 +367,14 @@
  POD_canon_artifacts.1023.a: " #italic Sleek sheathing of your katana #! "
 
  POD_canon_artifacts.1024.t: "Welcome Back Master"
- POD_canon_artifacts.1024.desc: "As the fool that tried to tame Tatsuko Sayo lies slowly dying at your feet, you ponder if the katana made the right choice for your new host. Would it be better to simply finish this weakling and look for someone better?\nNo, it has been too long since you have recovering in the blade and it's unlikely that you will find a better opportunity for a while. This fool will do for your rebirth.\n\nYes, they will do nicely."
+ POD_canon_artifacts.1024.desc: "As the fool that tried to tame Tatsuko Sayo lies slowly dying at your feet, you ponder if the katana made the right choice for your new host. Would it be better to simply finish this weakling and look for someone better?\nNo, it has been too long since you have been recovering in the blade and it's unlikely that you will find a better opportunity for a while. This fool will do for your rebirth.\n\nYes, they will do nicely."
  POD_canon_artifacts.1024.a: "My war isn't over."
 
  nick_vengeful_spectre: "the Vengeful Spectre"
  nick_vengeful_spectre_desc: "Even death was only merely a setback for the one who made the Heavens weep."
  Isamu_Harujiro: "Isamu Harujiro"
  isamu_modifier: "Bringer of Sorrow"
- isamu_modifier_desc: "The world know that you are at war with every single of them. No matter, Tatsuko Sayo thirsts forevermore."
+ isamu_modifier_desc: "The world knows that you are at war with every single one of them. No matter, Tatsuko Sayo thirsts forevermore."
 
  robe_golden_mandarin_decision: "Robes of the Golden Mandarin"
  robe_golden_mandarin_decision_tooltip: "A Golden Curse"

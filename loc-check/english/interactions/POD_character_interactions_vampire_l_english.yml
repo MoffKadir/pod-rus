@@ -243,9 +243,9 @@
  POD_resonance_gain_multiplier_tt: "#weak Experience reduced by #V $VALUE|0$%#! due to [storyteller_mode|E]#!"
  
  POD_herdify_interaction_limit: "[POD_herd|E] size is capped! (3 plus any bonuses from other sources)"
- POD_herdify_mortal_interaction: "Herdify #weak (Scheme)#!"
+ POD_herdify_mortal_interaction: "Add to Herd #weak (Scheme)#!"
  POD_herdify_mortal_interaction_desc: "Plot to procure this mortal as a vessel from which you can safely feed at will."
- POD_herdify_vampire_interaction: "Herdify #weak (Scheme)#!"
+ POD_herdify_vampire_interaction: "Add to Herd #weak (Scheme)#!"
  POD_herdify_vampire_interaction_desc: "Plot to procure this kindred as a vessel from which you can safely feed at will."
 
  POD_this_character_cannot_embrace: "[THIS.Char.GetFirstName] cannot $pod_Embrace$"
@@ -462,7 +462,8 @@
  POD_vanish_interaction: "Vanish"
  POD_vanish_interaction_desc: "Using your powers of Obfuscate, you can disappear from the public eye for a while, stopping any plot targeting you."
  POD_vanish_tt: "Every scheme targeting you, personal or hostile, is stopped."
-
+ POD_uktena_invisibility_perk_interaction_desc: "Using your Uktena gift, you can disappear from the public eye for a while, stopping any plot targeting you."
+ 
  POD_silence_death_modifier: "Silence of Death"
  POD_silence_death_modifier_desc: "It's hard to communicate when an eerily silence follows you everywhere."
  
@@ -481,24 +482,7 @@
  POD_create_gargoyle_interaction.gargoyle_experiment_failure.tt: "The experiment fails!"
  POD_create_gargoyle_interaction.gargoyle_experiment_failure.toast.t: "Experiment Failure"
  POD_create_gargoyle_interaction.gargoyle_experiment_success.toast.t: "Experiment Success"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_stonewolf.tt: "Stone Dog caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_bingmayong.tt: "Bingmayong caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_shade.tt: "Shade caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_blood.tt: "Blood Guardian caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_boyar.tt: "Boyar caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_caryatid.tt: "Caryatid caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_scout.tt: "Scout caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_warrior.tt: "Warrior caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_sentinel.tt: "Sentinel caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_chatterer.tt: "Chatterer caste gargoyle created" 
- POD_create_gargoyle_interaction.gargoyle_experiment_success_serpent.tt: "Sand Serpent caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_bone.tt: "Rattler caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_fairy.tt: "Fairy caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_onyx_cat.tt: "Onyx Cat caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_golden_manticore.tt: "Golden Manticore caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_kintsugi.tt: "Kintsugi caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_rogata.tt: "Rogata caste gargoyle created"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_totai.tt: "Totai caste gargoyle created"
+ POD_create_gargoyle_interaction.gargoyle_experiment_success.tt: "Successfully created a specimen of the [GetModifier(SCOPE.GetFlagName('saved_tooltip')).GetNameWithTooltip]"
 
  POD_create_zombu_interaction: "Create Zombu"
  POD_create_zombu_interaction_desc: "Conduct Necromantic ceremony to animate a corpse into a zombu by human sacrifice of another mortal."
@@ -560,6 +544,8 @@
  
  POD_hunt_spirit_interaction: "Hunt Spirit"
  POD_hunt_spirit_interaction_desc: "Hunt an animal spirit in your location and consume them."
+ activate_spirit_hunt_modifier_ct: "You will hunt spirits to regain your willpower permanently reducing their willingness to enter pacts with you."
+ deactivate_spirit_hunt_modifier_ct: "No longer will you hunt spirits to regain your willpower."
  
  POD_purification_interaction: "Purification"
  POD_purification_interaction_desc: "Your third eye bathes the target in a luminous radiance, thus allowing the healing of [recipient.GetFirstName]'s derangement." 
@@ -755,7 +741,6 @@
  POD_train_serpentis: "A randomly chosen student will gain [GetTrait('serpentis').GetName(GetNullCharacter)] if they don't already have it."
  POD_train_abombwe: "A randomly chosen student will gain [GetTrait('abombwe').GetName(GetNullCharacter)] if they don't already have it."
  POD_train_spiritus: "A randomly chosen student will gain [GetTrait('spiritus').GetName(GetNullCharacter)] if they don't already have it."
- POD_train_thinbloodalchemy: "A randomly chosen student will gain [GetTrait('thinbloodalchemy').GetName(GetNullCharacter)] if they don't already have it."
  POD_train_oblivion: "A randomly chosen student will gain [GetTrait(oblivion).GetName(GetNullCharacter)] if they don't already have it."
  POD_train_flight: "A randomly chosen student will gain [GetTrait('flight').GetName(GetNullCharacter)] if they don't already have it."
  POD_train_kai: "A randomly chosen student will gain [GetTrait('kai').GetName(GetNullCharacter)] if they don't already have it."
@@ -919,8 +904,8 @@
  POD_hunger_risk_increase_tenet_continued_life_tt: "My tenet of Continued Life increases my appetite."
 
  POD_piety_for_perk_interaction: "Meditate on Humors"
- POD_piety_for_perk_interaction_desc: "You will contemplate the metaphysics of [humorism|E]."
- POD_piety_for_perk_interaction_options_heading: "Which [humors|E] do you want to meditate on?"
+ POD_piety_for_perk_interaction_desc: "You will contemplate the metaphysics of [Concept('resonance','Humorism')|E]."
+ POD_piety_for_perk_interaction_options_heading: "Which [Concept('resonance','Humors')|E] do you want to meditate on?"
  POD_piety_for_perk_interaction_animal: "[animal_lifestyle|E]"
  POD_piety_for_perk_interaction_choleric: "[choleric_lifestyle|E]"
  POD_piety_for_perk_interaction_melancholic: "[melancholy_lifestyle|E]"
@@ -1102,22 +1087,6 @@
  POD_choose_justicar_interaction: "Choose [Glossary('Justicar','game_concept_justicar_desc')]"
  POD_choose_justicar_interaction_desc: "You want [recipient.GetFirstName] to become your [Glossary('Justicar','game_concept_justicar_desc')]."
  POD_choose_justicar_interaction.tt: "[recipient.GetFirstName] will be nominated as [Glossary('Justicar','game_concept_justicar_desc')]"
- 
- POD_thinbloodalchemy_use_alchemical_product_interaction: "Use Alchemical Product"
- POD_thinbloodalchemy_use_alchemical_product_interaction_desc: "Use an alchemical product."
- POD_thinbloodalchemy_use_alchemical_product_interaction_options_heading: "Which product shall I use?"
- POD_thinbloodalchemy_offer_alchemical_product_interaction: "Offer Alchemical Product"
- POD_thinbloodalchemy_offer_alchemical_product_interaction_desc: "Offer [recipient.GetFirstName] an alchemical product."
- POD_thinbloodalchemy_offer_alchemical_product_interaction_options_heading: "Which product shall I offer?"
- POD_thinbloodalchemy_sell_alchemical_product_interaction: "Sell Alchemical Product"
- POD_thinbloodalchemy_sell_alchemical_product_interaction_desc: "Sell [recipient.GetFirstName] an alchemical product."
- POD_thinbloodalchemy_sell_alchemical_product_interaction_options_heading: "Which product shall I sell?"
- POD_thinbloodalchemy_buy_alchemical_product_interaction: "Buy Alchemical Product"
- POD_thinbloodalchemy_buy_alchemical_product_interaction_desc: "Buy one of [recipient.GetFirstNamePossessive] alchemical products."
- POD_thinbloodalchemy_buy_alchemical_product_interaction_options_heading: "Which product shall I buy?"
- POD_thinbloodalchemy_poison_alchemical_product_interaction: "Use Alchemical Poison"
- POD_thinbloodalchemy_poison_alchemical_product_interaction_desc: "Try poisoning [recipient.GetFirstName] using an alchemical product."
- POD_thinbloodalchemy_poison_alchemical_product_interaction_options_heading: "Which product shall I Use?"
 
  #POD_call_zmei_to_war_interaction: "Call Zmei"
  #POD_call_zmei_to_war_interaction_desc: "Call Zmei to war."
@@ -1185,3 +1154,38 @@
  POD_transmogrify_interaction_book: "Like an open book"
  POD_transmogrify_interaction_pedestal: ""
  POD_transmogrify_interaction_odious_chalice: ""
+
+ ######################################################
+ # VAMPIRE CLAN HIDEOUT CHARACTER INTERACTION LOCALIZATION
+ ######################################################
+
+ # NOSFERATU — Buy Hook
+ nosferatu_warren_buy_hook: "Pull a Thread from the Warren"
+ nosferatu_warren_buy_hook_desc: "The Warren Network holds secrets; leverage, dirt, ammunition. Every person of consequence has something they would prefer stayed buried, and the Nosferatu has already found it."
+ nosferatu_warren_buy_hook_court_only_tt: "Target must be a [courtier|E]"
+ nosferatu_warren_buy_hook_realm_only_tt: "Target must be in your [realm|E]"
+
+ # SALUBRI WATCHER — Share Knowledge
+ salubri_watcher_share_knowledge: "Share the Chronicle's Wisdom"
+ salubri_watcher_share_knowledge_desc: "The Chronicle Vault holds knowledge that no single Salubri should bear alone. Share its contents with a fellow child of Saulot, and both of you will grow stronger for it."
+ salubri_watcher_share_knowledge_martial_tt: "Both you and the Warrior gain [martial_i][martial|E] lifestyle experience"
+ salubri_watcher_share_knowledge_intrigue_tt: "Both you and the Watcher gain [intrigue_i][intrigue|E] lifestyle experience"
+ salubri_watcher_share_knowledge_learning_tt: "Both you and the Healer gain [learning_i][learning|E] lifestyle experience"
+
+ ######################################################
+ # Mary the Black — Re-embrace interaction
+ ######################################################
+ POD_maryb_michael_reembrace_interaction: "Receive into the Dream"
+ POD_maryb_michael_reembrace_interaction_desc: "Michael recognizes his own, makes the target your childe.\n\n#shinygold You see me in them, beloved. I see myself in them. They were always coming home.#!"
+
+ # Acceptance-breakdown reasons (ai_accept). Shown to the player as the
+ # target weighs recognition into the Dream.
+ mary_reembrace_accept_toreador: "Clan Toreador; Michael's clan: $VALUE|=+0$"
+ mary_reembrace_accept_zealous: "A true believer in the restored Dream: $VALUE|=+0$"
+ mary_reembrace_accept_courtier: "Already kept in the founder's court: $VALUE|=+0$"
+ mary_reembrace_accept_lover: "Bound to the founder by love: $VALUE|=+0$"
+ mary_reembrace_decline_house_head: "Heads their own house and will not dissolve it: $VALUE|=+0$"
+ mary_reembrace_decline_independent: "An independent ruler bows to no founder: $VALUE|=+0$"
+ mary_reembrace_decline_arrogant: "Too proud to take another's name: $VALUE|=+0$"
+ mary_reembrace_decline_rival: "Names the founder a rival: $VALUE|=+0$"
+ mary_reembrace_decline_highborn_crown: "A crowned head with too much to lose: $VALUE|=+0$"
