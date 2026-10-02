@@ -2,7 +2,7 @@
 
  #File for common Fera localization
 
-
+ POD_splat_garou: "#TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L Гару#!#!"
 
 
  #Auspice types "PODFeraAuspiceType"
@@ -99,6 +99,7 @@
  POD_gnosis_regen_artifacts: "От [Concept('artifacts', 'артефактов')|E]"
  POD_gnosis_regen_modifiers: "От [Concept('modifiers', 'модификаторов')|E]"
  POD_gnosis_regen_spirit_ties: "[GetPerk('fomori_spirit_ties_perk').GetName(GetPlayer)]"
+ POD_gnosis_regen_primal_song: "[GetPerk('primal_song_perk').GetName(GetPlayer)]"
  POD_gnosis_regen_thousand_cranes: "[GetPerk('dream_of_a_thousand_cranes_perk').GetName(GetPlayer)]"
  POD_gnosis_regen_sleep_of_the_dragon: "[GetPerk('sleep_of_the_dragon_perk').GetName(GetPlayer)]"
  POD_gnosis_regen_fools_luck: "[GetPerk('fools_luck').GetName(GetPlayer)]"
@@ -116,3 +117,5 @@
 
  POD_fera_remove_pack_totem_tooltip: "#warning Ваш дух [Concept('pack_totem', 'тотема стаи')|E] покидает вас.#!"
  POD_fera_remove_planetary_gifts_effect_tooltip: "#warning Планетарная инкарна отзывает все свои [Concept('planetarygifts_lifestyle', 'дары')|E].#!"
+
+ POD_fera_coterie_has_wyrm_totem_tooltip: "Ваша [GetPlayer.Custom('PODCoterie')|l] должна иметь [Concept('pack_totem', 'тотем стаи')|E] [Glossary('Вирма', 'glossary_wyrm_tt')]"
