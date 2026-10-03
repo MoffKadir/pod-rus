@@ -43,7 +43,7 @@
 
  learn_language_outcome_success.spirits.desc: "Духовные языки столь же причудливы, как и их носители. Некоторые используют узнаваемые шаблоны, некоторые - нет. К счастью, наиболее распространенные из них, как правило, прошли тот же путь, что и обычные языки, что привело к их упрощению для использования недуховными сущностями.\nВ конце концов, духов нужно понимать, когда они торгуются с посетителями. Хотя, вполне вероятно, что самые хитроумные из них также будут использовать тонкости своего языка, чтобы попытаться одержать верх в переговорах.\nВот почему вы приняли меры предосторожности, чтобы выучить то, что можно было бы считать более узкоспециализированной лексикой, что, возможно, позволит вам избежать участи неправильно понимать духовный договор в будущем."
 
- learn_language_outcome_failure.spirits.desc: "«После кучи кропотливой работы... ничего! Этот духовный язык #EMP невозможно#! выучить. Как бы я ни [Select_CString(ROOT.Char.IsFemale, 'старалась', 'старался' )], я говорю как младенец, которого только отняли от груди, и болтаю как [Select_CString(ROOT.Char.IsFemale, 'дура', 'дурак' )]!\n\nБа! Это была пустая трата времени...»"
+ learn_language_outcome_failure.spirits.desc: "После кучи кропотливой работы... ничего! Этот духовный язык #EMP невозможно#! выучить. Как бы я ни [Select_CString(ROOT.Char.IsFemale, 'старалась', 'старался' )], я говорю как младенец, которого только отняли от груди, и болтаю как [Select_CString(ROOT.Char.IsFemale, 'дура', 'дурак' )]!\n\nБа! Это была пустая трата времени..."
 
  learn_spirit_language_complete: "Вы выучили #TOOLTIP:game_concept_spirit_language_desc #E духовный язык#!#! персонажа [target.GetShortUINamePossessiveNoTooltip]"
 
@@ -52,7 +52,7 @@
  SPIRIT_TAINTED_SPEECH_REASON: "[target.GetName] говорит на осквернённом наречии: $VALUE|+=0$"
 
 
- POD_spirit_wyrm_possession_effect_tooltip: "Получит #TOOLTIP:POD_spirit_wyrm_possession_effect_tooltip2 #V;L [spirit.MakeScope.ScriptValue('POD_spirit_wyrm_possession_power')]#!#! оч. [Concept('perk', 'достоинств')|E] [Concept('possessedpower_lifestyle', 'пути способностей одержимости')|E]"
+ POD_spirit_wyrm_possession_effect_tooltip: "Получит #TOOLTIP:POD_spirit_wyrm_possession_effect_tooltip2 #V;L [GuiScope.SetRoot(spirit.MakeScope).AddScope('target',target.MakeScope).ScriptValue('POD_spirit_wyrm_possession_power')]#!#! оч. [Concept('perk', 'достоинств')|E] [Concept('possessedpower_lifestyle', 'пути способностей одержимости')|E]"
  POD_spirit_wyrm_possession_effect_tooltip2: "Количество очков [Concept('perk', 'достоинств')|E], полученных от духа-#ONCLICK:FAITH,wyrmbound #TOOLTIP:FAITH,wyrmbound бэйна#!#!, зависит от следующего:\n$BULLET_WITH_TAB$Ранг духа: #P +1#! за ранг\n$BULLET_WITH_TAB$Бэйн говорит развращающим голосом: #P +2#!\n$BULLET_WITH_TAB$Бэйн-сеятель: дополнительно #P +1#! за ранг духа\n$BULLET_WITH_TAB$Бэйн говорит на осквернённом наречии: #P +4#!\n$BULLET_WITH_TAB$[core_tenets|E] [Concept('faith', 'конфессии')|E]: #P +1/+2#!"
 
  POD_spirit_possession_rank_desc: "Ранг духа"
@@ -119,3 +119,17 @@
  spirit_mokole_pact_modifier: "Договор: Моколе"
 
  spirit_human_pact_modifier: "Духовный договор"
+
+
+
+
+ ###Spirit Binding
+ spirit_binding_ancestor_modifier: "Сила предков"
+ spirit_binding_harmonys_melody_modifier: "Сладкая гармония"
+ spirit_binding_conflicts_drum_modifier: "Нарастающий конфликт"
+ spirit_binding_artisans_anthem_modifier: "Процветающие ремесленники"
+ spirit_binding_seditions_lullaby_modifier: "Осторожная крамола"
+ spirit_binding_wisdoms_hymn_modifier: "Общая мудрость"
+ spirit_binding_wyrmspeak_modifier: "Скверный язык"
+ spirit_binding_corrupting_voice_modifier: "Потворствуемая порча"
+ spirit_binding_tainted_speech_modifier: "Маниакальная речь"

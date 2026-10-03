@@ -3,8 +3,187 @@
  POD_story_pact_desc: "Вы заключили сделку в обмен на могущество.\nСтоило ли оно того?"
 
  #POD_story_pact_demon: "@demon_icon! Demon"
- POD_story_pact_custom_string: "#font:TitleFont;size:19;glow_color:{0.5,0,0,1} Договор, заключённый с персонажем [Story.MakeScope.Var('demon').Char.GetFirstName]#!\n#glow_color:{0.25,0,0,75} [demonic_pact_obligation|E]: [Localize(Concatenate('POD_obligation_', Story.MakeScope.GetVariable('obligation').GetFlagKey))|U]\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODPactFrequencyAndStatus')]\nЕсли вы #X нарушите#! договор:\n[GetScriptedGui('POD_sidebar_show_demonic_pacts').BuildTooltip(GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('obligation', MakeScopeFlag(Story.MakeScope.GetVariable('obligation').GetFlagKey)).AddScope('consequence', MakeScopeFlag(Story.MakeScope.GetVariable('consequence').GetFlagKey)).End)]\nЭтот [Concept('demonic_pact', 'договор')|E] стоит [Story.MakeScope.GetVariable('perk_points_gained').GetValue|0V] [Select_CString( EqualTo_CFixedPoint( Story.MakeScope.GetVariable('perk_points_gained').GetValue, '(CFixedPoint)1' ), 'оч.', 'оч.' )] [Concept('perk', 'достоинств')|E] [Concept('investiture_lifestyle', 'пути инвеституры')|E]#!"
+ POD_story_pact_custom_string: "#font:TitleFont;size:19;glow_color:{0.5,0,0,1} Договор, заключённый с персонажем [Story.MakeScope.Var('demon').Char.GetFirstName]#!\n#glow_color:{0.25,0,0,75} [demonic_pact_obligation|E]: [Localize(Concatenate('POD_obligation_', Story.MakeScope.GetVariable('obligation').GetFlagKey))|U]\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODPactFrequencyAndStatus')]\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODPactDeadline')]\nЕсли вы #X нарушите#! договор:\n[GetScriptedGui('POD_sidebar_show_demonic_pacts').BuildTooltip(GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('obligation', MakeScopeFlag(Story.MakeScope.GetVariable('obligation').GetFlagKey)).AddScope('consequence', MakeScopeFlag(Story.MakeScope.GetVariable('consequence').GetFlagKey)).End)]\nЭтот [Concept('demonic_pact', 'договор')|E] стоит [Story.MakeScope.GetVariable('perk_points_gained').GetValue|0V] [Select_CString( EqualTo_CFixedPoint( Story.MakeScope.GetVariable('perk_points_gained').GetValue, '(CFixedPoint)1' ), 'оч.', 'оч.' )] [Concept('perk', 'достоинств')|E] [Concept('investiture_lifestyle', 'пути инвеституры')|E]#!"
+
+ POD_story_pact_deadline_normal: "#N Следующая дань ожидается через [story.MakeScope.GetVariable('years_until_obligation').GetValue|0V] [Select_CString( EqualTo_CFixedPoint( story.MakeScope.GetVariable('years_until_obligation').GetValue, '(CFixedPoint)1' ), 'год', 'лет' )]#!"
+ POD_story_pact_deadline_fresh: "#N Следующая дань ожидается через [story.MakeScope.GetVariable('frequency').GetValue|0V] [Select_CString( EqualTo_CFixedPoint( story.MakeScope.GetVariable('frequency').GetValue, '(CFixedPoint)1' ), 'год', 'лет' )]#!"
+ POD_story_pact_deadline_urgent: "#X Дань должна быть выплачена в течение года \nисполните [Concept('demonic_pact_obligation', 'обязательство')|E] сейчас или поплатитесь!#!"
+ POD_story_pact_deadline_prohibitory: "#weak Этот запрет должен соблюдаться неукоснительно.#!"
+ POD_story_pact_deadline_completed: "Демон снова потребует это через [story.MakeScope.GetVariable('years_until_obligation').GetValue|0V] [Select_CString( EqualTo_CFixedPoint( story.MakeScope.GetVariable('years_until_obligation').GetValue, '(CFixedPoint)1' ), 'год', 'лет' )]."
+ POD_story_pact_deadline_completed_nodate: "#P Обязательство исполнено - в настоящее время нет необходимости расплаты.#!"
+
+ # Toast fired by the pact story cycle one year before a tribute falls due.
+ POD_story_pact_deadline_warning.toast: "#X Срок расплаты по договору с персонажем [pact_demon.GetFirstName] истечёт через год.#!"
+ POD_story_pact_deadline_warning_desc: "Следуйте договору или заплатите цену."
 
  POD_story_pact_prohibitory: "Статус: #X Запрещено#!"
  POD_story_pact_frequency_completed: "[demonic_pact_frequency|E]: Каждые [story.MakeScope.GetVariable('frequency').GetValue|0V] лет#!\nСтатус: #P Завершено#!"
  POD_story_pact_frequency_notcompleted: "[demonic_pact_frequency|E]: Каждые [story.MakeScope.GetVariable('frequency').GetValue|0V] лет#!\nСтатус: #N В стадии выполнения#!"
+
+
+
+ # Story Cycle - Asakku Depth Accumulation
+ POD_asakku_depth_accumulation: "The Watcher at the Well"
+ POD_asakku_depth_accumulation_desc: "An entity older than memory has noticed your blood. Whether a fever in the Beast or demons from forgotten episodes of Genesis you don't know, but you are afraid to find out as it creeps closer and closer to your very soul."
+
+ # Visualization labels
+ POD_asakku_story_custom_string: "Andeleon has the following unique content to represent the Asakku infection. \n\n#bold Asakku Corruption#! tracks the entity's hold over you as a value from 1 to 100, shown as a character modifier. It accumulates slowly over time and faster when you act in its interest. Four thresholds at #bold 25, 50, 75,#! and #bold 100#! mark irreversible changes: a new trait, new abilities, and escalating attention from those who hunt the infection.\n\n#bold Spreading the Asakku#! - Vicissitude is the entity's vector. Characters who carry the discipline are susceptible. The [soul_infection|E] scheme plants the presence in a willing or unwitting host. Once fully Asakku, [blood_inception|E] works faster but requires an imprisoned target.\n\n#bold The Shadow Crusade#! - The Tal'Mahe'Ra knows what you are. As the corruption grows, the Elioud, Kindred trained to identify and eliminate the contagion, will mobilize against you. \n\n#bold The Watcher at the Well#! - Four campaign objectives drive the Asakku's expansion: spread the infection, deepen the corruption, claim the ancient seats of power, and bring the eastern hunters to heel. Each phase demands more of the world and more of you."
+ POD_asakku_story_depth_label: "Asakku Corruption"
+ POD_asakku_story_depth_min_label: "Untouched"
+ POD_asakku_story_depth_max_label: "Iryi Ascendant"
+
+ ######################################################
+ # Mary the Black — Journey story cycle
+ ######################################################
+ POD_maryb_story: "#glow_color:{0.75,0.5,0.21,0.5}The Black Dream#!"
+ POD_maryb_story_desc: "Three tablets and a path that ends in a chapel beneath the Hagia Sophia. Mary the Black walks it again."
+
+ # Narrative header shown in the story panel. The text is path-aware: the
+ # custom_string_key resolves this dispatcher, which hands off to the
+ # POD_maryb_story_phase customizable_localization (POD_maryb_custom_loc.txt)
+ # so the prose tracks Mary's progress and, after the Deal with Michael, the
+ # ending she reached. Tablet cities are clickable title links.
+ POD_maryb_story_custom_string: "[Story.GetOwner.Custom('POD_maryb_story_phase')]"
+
+ # --- Phase strings selected by POD_maryb_story_phase ---
+
+ # Pre-resolution, still gathering the tablets (also the pre-arc fallback).
+ POD_maryb_story_phase_seeking: "Pieces of yourself are scattered through the cities of the Levant; bound in clay. Two tablets written in your own blood, and one in a dead priest's hand, waiting in #bold [GetTitleByKey('c_damascus').GetNameNoTier]#!, #bold [GetTitleByKey('c_mosul').GetNameNoTier]#! and #bold [GetTitleByKey('c_baghdad').GetNameNoTier]#!. Take a city, recover its tablet, and a little more of what she was returns to you.\n\n#shinygold It all leads back to me, beloved. You will see.#!"
+
+ # Pre-resolution, all three recovered: the fourth tablet waits to be written.
+ POD_maryb_story_phase_stylus: "Three tablets recovered, three buried lives remembered, and the clay of the fourth lies wet beneath her hand. There is nothing left in the Levant to find. What remains is to take up the stylus and write the ending, and to decide, with it poised above the clay, whose ending it will be.\n\n#shinygold Whenever you are ready, beloved. I have waited longer than you can know.#!"
+
+ # Ending: The Black Dream (Mary dominant; Michael silenced forever).
+ POD_maryb_story_phase_blackdream: "The tablets are read, the fourth is written, and the silence of the chapel belongs to you alone. Michael has an ending now. The Dream is yours now, and the only question left is how corrupt a Dream can grow before it turns to Nightmare."
+
+ # Ending: The Second Dream (Michael risen in Mary's flesh). All his voice.
+ # "re-embrace" links the receive_into_the_dream game concept.
+ POD_maryb_story_phase_seconddream: "#shinygold Mary the Black is dead. There was only ever the Dream, and the woman who carried it home, and now I wear the flesh she kept for me. Your Baali blood may yet be of use. I shall [Concept('receive_into_the_dream', 're-embrace')|E] the world into the dream.#!"
+
+ # Ending: Ash and Gold (the synthesis). Shared body, then an ascendancy clause
+ # appended by the mary / michael variant keys below.
+ POD_maryb_story_ashgold_body: "Something else stands where Mary and Michael, and it answers to both names. Neither erased; neither won. The thing they made looks out through one pair of eyes, and which of them is streeing shifts with a tide that no will commands.\n\nWe can now rebuild the Trinity. We will need a [GetCourtPositionType('pillar_of_darkness_court_position').GetName()] and a [GetCourtPositionType('pillar_of_light_court_position').GetName()]."
+
+ POD_maryb_story_phase_ashgold_mary: "$POD_maryb_story_ashgold_body$\n\nRight now it is Mary who looks out: the eyes gone shadowed, the old hunger riding close beneath the skin."
+ POD_maryb_story_phase_ashgold_michael: "$POD_maryb_story_ashgold_body$\n\n#shinygold Right now it is Michael who looks out: the regard certain, the old radiance worn to burnished gold.#!"
+ POD_maryb_story_phase_ashgold_neutral: "$POD_maryb_story_ashgold_body$"
+
+ # Balance (tug-of-war) labels. Reused post-resolution on the Ash and Gold path,
+ # where the bar swings fully to whichever half is currently ascendant, so the
+ # end-caps read as ascendancy rather than a permanent victory.
+ POD_maryb_story_balance_label: "Mary & Michael"
+ POD_maryb_story_balance_min_label: "#shinygold Michael Ascendant#!"
+ POD_maryb_story_balance_max_label: "#P Mary Ascendant#!"
+
+ # Tablets (basic counter) labels
+ POD_maryb_story_tablets_label: "Tablets recovered"
+ POD_maryb_story_tablets_min_label: "None"
+ POD_maryb_story_tablets_max_label: "All three"
+
+
+ POD_story_spell_of_life_explanation: "Quest for the [Concept('POD_spell_of_life', 'Spell Of Life')|E]"
+ POD_story_spell_of_life_explanation_desc: "The Spell of Life allows the creation of $POD_splat_mummy_plural$, granting them immortality through a cycle of death and rebirth. Few have ever learned it. If you wish to join their number, the path shall be long one."
+
+ POD_story_spell_of_life_explanation_custom_string: "[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODSoLInProgressQuest')]"
+ POD_story_spell_of_life_explanation_inprogress: "If you wish to learn the Spell of Life yourself, you will need to complete a long quest and obtain more [trait_level_track_xp|E] in [GetTrait('eternal_rebirth_seeker').GetName( GetPlayer )]'s Spell of Life track.\n\n#T Petitioning the Ancients#!\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODSoLStage1Desc')]\n\n#T The Lost Fragments#!\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODSoLStage2Desc')]\n\n#T The Gatekeepers#!\nImmediately after reaching 90 [trait_level_track_xp|E], several factions will attack you, seeking to steal your research and punish you for your hubris.\n\n#T The Birth of Eternity#!\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODSoLStage4Desc')]\n\n#R Be prepared to sacrifice everything in the quest for true immortality, for the path is fraught with danger!#![GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODSoLStage3Task')][GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODSoLRecommendDesc')]"
+ POD_story_spell_of_life_explanation_complete: "Having achieved a feat few have ever accomplished, new opportunities present themselves. [character_interaction|E]s allow you to create new $POD_splat_mummy_plural$, ask others to create $POD_splat_mummy_plural$, or teach the Spell of Life to others. Objectives may offer interesting paths or allow you to teach the Spell of Life, if that is currently restricted.\n\nWith such power, the world lays at your feet. Will you create a race of mummies to enact your terrible vengeance or reshape the world in your image? Will you uphold or disrupt the balance? Will you tear the veil between life and death?"
+
+ POD_story_spell_of_life_explanation_stage1_brief: "The first stage offers 4 paths, consisting of several decisions. Completing an entire path may yield rewards in later stages."
+ POD_story_spell_of_life_explanation_stage1_full: "The first stage offers 4 paths, each consisting of 3 decisions. A few characters have already taken the first steps down a path, and not all paths are available to everyone or in all bookmarks. Completing an entire path may yield rewards in later stages.\n#bold Horus#!\n$BULLET_WITH_TAB$Offer Lower Egypt to Horus\n$BULLET_WITH_TAB$Convince Horus to aid you\n$BULLET_WITH_TAB$Eliminate the Setite threat\n#bold Kemintiri#!\n$BULLET_WITH_TAB$Befriend Kemintiri, obtain the Isis Fragments, and retake key sites\n$BULLET_WITH_TAB$Find some of Kemintiri's old friends\n$BULLET_WITH_TAB$Wipe out House Tawaret\n#bold Cabirus#!\n$BULLET_WITH_TAB$Obtain the Secret Writings of Cabirus\n$BULLET_WITH_TAB$Learn sorcery and recruit sorcerers\n$BULLET_WITH_TAB$Weaken the Tremere threat to Cabirus\n#bold Experimentation#!\n$BULLET_WITH_TAB$Torture an imprisoned mummy and some potential sorcerers\n$BULLET_WITH_TAB$Convince your family or fellow believers to aid you\n$BULLET_WITH_TAB$Imprison a great many people, obtain a few artifacts, and conquer a highly-populated land"
+
+ POD_story_spell_of_life_explanation_stage2_brief: "After reaching 30 [trait_level_track_xp|E], complete [journeys|E] to obtain clues and study under the few that know even a snippet of the Spell of Life."
+ POD_story_spell_of_life_explanation_stage2_full: "After reaching 30 [trait_level_track_xp|E], you will no longer be able to complete the decisions from the earlier paths. Instead, complete [journeys|E] to obtain clues and to study under the few that know even a snippet of the Spell of Life. The particularly scholarly or magical may be able to passively study the Spell and further their knowledge. In addition, those close to $POD_splat_mummy_plural$ and those that hold certain [counties|E] #TOOLTIP:MUMMY_SOL_PASSIVE_county_explanation #L associated with Osiris' death#!#! will passively gather certain insights."
+
+ POD_story_spell_of_life_explanation_stage3_notask: ""
+ POD_story_spell_of_life_explanation_stage3_task: "\n\nTo progress, #T #X SURVIVE!#!#!"
+
+ POD_story_spell_of_life_explanation_stage4_brief: "Should you survive, a [UmbraGlossary('shadow_realm')] will need to be obtained so that you may complete the Spell of Life. Its nature will determine the fate and nature of the $POD_splat_mummy_plural$ born from your Spell."
+ POD_story_spell_of_life_explanation_stage4_full: "A [UmbraGlossary('shadow_realm')] will need to be obtained so that you may complete the Spell of Life by tying the ritual to that realm. Its nature will determine the fate and nature of the $POD_splat_mummy_plural$ born from your Spell. Unless joining a well-established and stable realm like [UmbraGlossaryLocalized('dark_kingdom_of_sand','Amenti')], you will need to fight through hordes of #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L spectres#!#! before you may finish your quest, a risky proposition for even the strongest ruler."
+
+ POD_story_spell_of_life_explanation_using_recommend: "\n\n#help Should you teach what you know to another, you could recommend that they use it on you.#!"
+ POD_story_spell_of_life_explanation_blocked_recommend: ""
+
+
+
+ POD_story_elixir_of_eternal_life_explanation: "Quest for the [Concept('POD_elixir_of_eternal_life', 'Elixir of Eternal Life')|E]"
+ POD_story_elixir_of_eternal_life_explanation_desc: "The Elixir of Eternal Life allows the creation of $POD_splat_mummy_plural$, granting them immortality through a cycle of death and rebirth. Few have ever learned it. If you wish to join their number, the path shall be long one."
+
+ POD_story_elixir_of_eternal_life_explanation_custom_string: "[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODEoELInProgressQuest')]"
+ POD_story_elixir_of_eternal_life_explanation_inprogress: "If you wish to learn the Elixir of Eternal Life yourself, you will need to complete a long quest and obtain more [trait_level_track_xp|E] in [GetTrait('eternal_rebirth_seeker').GetName( GetPlayer )]'s Elixir of Eternal Life track.\n\n#T Seeking the Dao#!\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODEoELStage1Desc')]\n\n#T Gathering Heavenly Secrets#!\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODEoELStage2Desc')]\n\n#T The Fourfold Temptation#!\nImmediately after reaching 90 [trait_level_track_xp|E], 4 [Glossary('Yama Kings','podgloss.yamaking')] will make you an offer you can't refuse.\n\n#T Ascending Beyond Mortality#!\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODEoELStage4Desc')]\n\n#R Be prepared to sacrifice everything in the quest for true immortality, for the path is fraught with danger!#![GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODEoELStage3Task')][GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODEoELRecommendDesc')]"
+ POD_story_elixir_of_eternal_life_explanation_complete: "Having achieved a feat few have ever accomplished, new opportunities present themselves. [character_interaction|E]s allow you to create new $POD_splat_mummy_plural$, ask others to create $POD_splat_mummy_plural$, or teach the Elixir of Eternal Life to others. Objectives may offer interesting paths or allow you to teach the Elixir of Eternal Life, if that is currently restricted. You may even have the option to acquire an alternate form of the Elixir.\n\nWith such power, the world lays at your feet. Will you create a race of mummies to enact your terrible vengeance or reshape the world in your image? Will you uphold or disrupt the balance? Will you tear the veil between life and death? Will you try to find a means of learning both forms of the Elixir of Eternal Life?"
+
+ POD_story_elixir_of_eternal_life_explanation_stage1_brief: "The first stage offers 3 paths, consisting of several decisions. Completing an entire path may yield rewards in later stages."
+ POD_story_elixir_of_eternal_life_explanation_stage1_full: "The first stage offers 3 paths, each consisting of 3 decisions. Not all paths are available to everyone or in all bookmarks. Completing an entire path may yield rewards in later stages.\n#bold Meditation & Inner Alchemy#!\n$BULLET_WITH_TAB$Have no negative health/stress traits and work towards [GetTrait('whole_of_body').GetName(GetPlayer)]\n$BULLET_WITH_TAB$Have no excessive personality traits, have a positive stress traits, and have [GetTrait('whole_of_body').GetName(GetPlayer)]\n$BULLET_WITH_TAB$Complete a skill's lifestyles and separate yourself from the world\n#bold Rituals & External Alchemy#!\n$BULLET_WITH_TAB$Collect a mix of terrains and either a [GetTrait('lifestyle_gardener').GetName(GetPlayer)] or [GetTrait('lifestyle_herbalist').GetName(GetPlayer)]\n$BULLET_WITH_TAB$Collect artifacts with a variety of skill benefits, explore the [umbra|E], or bind wraiths\n$BULLET_WITH_TAB$Collect artifacts with a variety of powerful skill benefits or obtain [spirit_companion|E]s\n#bold Relationships & Nourishing Life#!\n$BULLET_WITH_TAB$Improve your realm and please your vassals\n$BULLET_WITH_TAB$Form deep relationships with skilled individuals\n$BULLET_WITH_TAB$Gain the power to act and don't"
+
+ POD_story_elixir_of_eternal_life_explanation_stage2_brief: "After reaching 30 [trait_level_track_xp|E], complete [journeys|E] to obtain clues, and meditate to bring yourself ever closer to perfection."
+ POD_story_elixir_of_eternal_life_explanation_stage2_full: "After reaching 30 [trait_level_track_xp|E], you will no longer be able to complete the decisions from the earlier paths. Instead, complete [journeys|E] to obtain clues, and meditate via a [decision|E] to bring yourself ever closer to perfection. The particularly scholarly or magical may be able to passively study the Elixir and further their knowledge. In addition, the pious and legendary will passively gather certain insights while the dreadful and tyrannical find themselves hampered."
+
+ POD_story_elixir_of_eternal_life_explanation_stage3_notask: ""
+ POD_story_elixir_of_eternal_life_explanation_stage3_task: "\n\nTo progress, #T #X SURVIVE OR SURRENDER!#!#!"
+
+ POD_story_elixir_of_eternal_life_explanation_stage4_brief: "Should you survive, you will need to either sway the Eight Immortals to grant you the final pieces of the Elixir or carve out a space within a Yomi Hell."
+ POD_story_elixir_of_eternal_life_explanation_stage4_full: "To complete the Elixir of Eternal Life, you will need to tie it to a realm within the lands of the dead. Such a realm will serve as your [UmbraGlossary('shadow_realm')] and will provide the spirits that will be infused into the $POD_splat_mummy_plural$ you create. However, where the Spell can be bound to any place, only the Gates of Heaven and the Thousand Hells can hold the souls of the Middle Kingdom's Undying. You will need to sway the master of a realm to use it for the Elixir. A few madmen have sought to learn both versions of the Elixir, but none have achieved such a feat. It is said that a man cannot serve two masters; perhaps you will be the counterexample."
+
+########################
+#### Lunar Auspices ####
+########################
+
+ lunar_auspice_xp_gain_message: "The Moon's Favor"
+
+ battle_combat_encounters_enabled_tooltip: "[pod_combat_encounters_with_icon|E] may start while leading an [army|E]"
+
+ POD_story_lunar_auspice_ahroun: "Full Moon's Wrath"
+ POD_story_lunar_auspice_ahroun_desc: "Cool Text"
+ POD_story_lunar_auspice_ahroun_extra_text: "$TAB$#FONT:PODSubtitles;size:24 Full Moon's Wrath#!\n\nOf all the $glossary_fera$, the $POD_splat_garou$ are the most warlike. Yet even among them, the Ahrouns are a league of their own. Embrace your heritage, show the world your [prowess|E|l]!\n\nAhrouns earn $glossary_luna$'s favor by winning [pod_combat_encounters_with_icon|E] against foes with similar prowess. There is no glory to be found crushing the weak. The more powerful the target, the more [trait_level_track_xp|E] earned.\n\nOther characters can be challenged through the #V $POD_rhythm_of_war_interaction$#! [character_interaction|E]. These [pod_combat_encounters_with_icon|E] are almost always lethal, only other $POD_splat_garou$ may accept non-lethal challenges, in which case the reward will be reduced.\n\nYour [GetModifier('POD_werewolf_form_crinos_modifier').GetNameWithTooltip][prowess_i|E]: [Story.GetOwner.MakeScope.ScriptValue('POD_ahroun_true_prowess')|V0]\nWeakest eligible target[prowess_i|E]: [Story.GetOwner.MakeScope.ScriptValue('POD_ahroun_target_prowess_min')|V0]"
+ POD_story_lunar_auspice_ahroun_powerful_target_list: "Worthy foes near your area"
+ POD_story_lunar_auspice_ahroun_target_list: "Nearby foes"
+ ahroun_snarl_sgui: "Snarl of Challenge"
+
+
+ POD_story_lunar_auspice_galliard: "Gibbous Moon's Tale"
+ POD_story_lunar_auspice_galliard_desc: "Cool Text"
+ POD_story_lunar_auspice_galliard_extra_text: "$TAB$#FONT:PODSubtitles;size:24 Gibbous Moon's Tale#!\n\nSongs are sung of days past, of pleasant times, harrowing events, of heroes, and of villians. Now hear the songs of the Galliards, as they sing of the past, and of your future. Watch as their songs give life to their words, watch as your future is determined.\n\nGalliards earn $glossary_luna$'s favor by weaving #clickable Songs#! using the #V Primal Song#! [character_interaction|E]. The more #clickable verses#! it contains, the more [trait_level_track_xp|E] is gained.\n\nA #clickable Song#! takes time to prepare and will incur a $POD_energy_gnosis$ Regeneration penalty until it is ready. It's effects will only occur once the preparation is complete."
+
+ POD_story_lunar_auspice_galliard_song_targets: "Audience"
+
+ galliard_song_timer_modifier: "Intensifying Song"
+ galliard_song_timer_modifier_desc: "A Galliard's Song is building. Only time will tell what tale it reveals."
+ galliard_song_upkeep_modifier: "Primal Song"
+
+ galliard_song_galliard_notification: "Primal Song"
+
+
+
+
+ POD_story_lunar_auspice_philodox: "Half Moon's Judgement"
+ POD_story_lunar_auspice_philodox_desc: "Cool Text"
+ POD_story_lunar_auspice_philodox_extra_text: "$TAB$#FONT:PODSubtitles;size:24 Half Moon's Judgement#!\n\nA wolf is dangerous but can easily be avoided, tricked, or even killed. A pack however compensates for these disadvantages with numbers and organization. $POD_splat_garou$ packs are no different, and their effectiveness relies on their Philodox. Will you lead your pack to glory or to their graves?\n\nPhilodoxes earn $glossary_luna$'s favor by completing #clickable# Pack Training#! [journeys|E]. The amount of [trait_level_track_xp|E] gained scales with their [stewardship|E] and Werewolf Rank. #clickable Pack Training#! is improved as you progress further in the [lunar_auspicegifts_lifestyle|E] [lifestyle|E]."
+
+ POD_story_lunar_auspice_philodox_pack_members: "Pack Members"
+
+
+
+ POD_story_lunar_auspice_ragabash: "New Moon's Light"
+ POD_story_lunar_auspice_ragabash_desc: "Cool Text"
+ POD_story_lunar_auspice_ragabash_extra_text: "$TAB$#FONT:PODSubtitles;size:24 New Moon's Light#!\n\nAs the nights darken and all manner of monsters start prowling the night, there are those who stalk them. These predators' fangs, through guile and patience, will reach the throats of their quarry. Beware the #clickable Moonlight#!, for it marks you as their prey.\n\nA Ragabash earns $glossary_luna$'s favor by obtaining #clickable Mark of Luna#! [artifacts|E] that spawn on other characters. This can mainly achieved with the #V Artifact Heist#! [journey|E], but other methods such as [schemes|E] work just as well.\n\n#clickable Marks#! have an [artifact_power|E] which determines the amount of rewards you gain from them. #clickable Moonlit Marks#! can also spawn if you have the relevant perk. These are unique and provide much more valuable rewards. Better #clickable Marks#! appear as your $POD_splat_werewolf$ Rank increases.\n\n#clickable Moonlit Marks Manifested:#! [Story.MakeScope.Var('total_moonlit_marks_spawned').GetValue|V0]/[EmptyScope.ScriptValue('POD_ragabash_moonlit_marks_max')|V0]"
+
+ POD_story_lunar_auspice_ragabash_marks: "Marks of $glossary_luna$"
+ artifact_mark_of_luna: "@ragabash_icon!Mark of Luna"
+ artifact_mark_of_luna_description: "The eyes of $glossary_luna$ are on you."
+ artifact_moonlit_mark_of_luna: "@ragabash_icon!#clickable Moonlit#! Mark of Luna"
+ artifact_moonlit_mark_of_luna_description: "The #clickable# moonlight#! shines brightly. The eyes of $glossary_luna$ are on you."
+ moonlit_mark_prowess_modifier: "#clickable Moonlit#! Vigor"
+ moonlit_mark_opinion_modifier: "#clickable Moonlit#! Charisma"
+ moonlit_mark_heist_modifier: "#clickable Moonlit#! Mask"
+ moonlit_mark_hounds_modifier: "#clickable Moonlit#! Kin"
+ moonlit_mark_hounds_modifier_desc: "Can recruit [GetMaA('hounds_luna').GetName] as [men_at_arms|E]"
+ moonlit_mark_immunity_modifier: "#clickable Moonlit#! Grace"
+ moonlit_mark_immunity_modifier_desc: "Gain immunity to [silver_damage_short_with_icon|E]."
+
+
+
+ POD_story_lunar_auspice_theurge: "Crescent Moon's Communion"
+ POD_story_lunar_auspice_theurge_desc: "Cool Text"
+ POD_story_lunar_auspice_theurge_extra_text: "$TAB$#FONT:PODSubtitles;size:24 Crescent Moon's Communion#!\n\nDespite the high spiritual attunement of the $POD_splat_garou$, many of them are ignorant of the intricacies of Spirit World. A Theurge may spend most of his lifetime in the [umbra|E] but only grasp mere fragments of the power it holds. But that hasn't stopped them from trying.\n\nTheurges earn $glossary_luna$'s Favor by using the #clickable Spirit Binding#! [character_interaction|E] on their [spirit_companions|E]. This binds the Spirit into an owned Caern, which provides the province or county with additional bonuses. Spirits can be found by exploring any realm within the [UmbraGlossary('spirit_wilds')], summoning them, or at the end of #V Spirit Quest#! [journeys|E]."
+
+ POD_story_lunar_auspice_theurge_spirit_companions: "Spirit Companions"

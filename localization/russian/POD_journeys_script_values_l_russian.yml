@@ -239,6 +239,33 @@
  shih_training_monthly_num_current: "#TOOLTIP:shih_training_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('shih_training_progress')|1]%#!#!"
  shih_training_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('shih_training_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('shih_training_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('shih_training_progress')]"
 
+ POD_journey_progress_spell_of_life_stage2_targeted_journey_gui: "#help [GetPlayer.Custom('PODCoterie')] помогает вам в учёбе, [Concept('planning_speed', 'скорость планирования')|E] повышается за каждого члена вашей группы.#!"
+ POD_journey_progress_POD_journey_progress_spell_of_life_stage2_targeted_journey: "Члены группы ([GetPlayer.Custom('PODCoterie')]):"
+
+ spell_of_life_stage2_targeted_journey_monthly_num: "#TOOLTIP:spell_of_life_stage2_targeted_journey_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('spell_of_life_stage2_targeted_journey_progress_preview')|1]%#!#!"
+ spell_of_life_stage2_targeted_journey_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('spell_of_life_stage2_targeted_journey_progress_preview')|0] $POD_journey_years$, [JourneyMonthsLeft('spell_of_life_stage2_targeted_journey_progress_preview')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('spell_of_life_stage2_targeted_journey_progress_preview')]\n\n$POD_journey_progress_spell_of_life_stage2_targeted_journey_gui$"
+ 
+ spell_of_life_stage2_targeted_journey_monthly_num_current: "#TOOLTIP:spell_of_life_stage2_targeted_journey_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('spell_of_life_stage2_targeted_journey_progress')|1]%#!#!"
+ spell_of_life_stage2_targeted_journey_monthly_tt_current: "$POD_journey_progress_spell_of_life_stage2_targeted_journey_gui$ #V [JourneyYearsLeftCurrent('spell_of_life_stage2_targeted_journey_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('spell_of_life_stage2_targeted_journey_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('spell_of_life_stage2_targeted_journey_progress')]"
+
+ spell_of_life_stage2_random_journey_monthly_num: "#TOOLTIP:spell_of_life_stage2_random_journey_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('spell_of_life_stage2_random_journey_progress_preview')|1]%#!#!"
+ spell_of_life_stage2_random_journey_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('spell_of_life_stage2_random_journey_progress_preview')|0] $POD_journey_years$, [JourneyMonthsLeft('spell_of_life_stage2_random_journey_progress_preview')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('spell_of_life_stage2_random_journey_progress_preview')]"
+ 
+ spell_of_life_stage2_random_journey_monthly_num_current: "#TOOLTIP:spell_of_life_stage2_random_journey_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('spell_of_life_stage2_random_journey_progress')|1]%#!#!"
+ spell_of_life_stage2_random_journey_monthly_tt_current: "#V [JourneyYearsLeftCurrent('spell_of_life_stage2_random_journey_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('spell_of_life_stage2_random_journey_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('spell_of_life_stage2_random_journey_progress')]"
+
+ elixir_of_eternal_life_stage2_meditation_monthly_num: "#TOOLTIP:elixir_of_eternal_life_stage2_meditation_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('elixir_of_eternal_life_stage2_meditation_progress_preview')|1]%#!#!"
+ elixir_of_eternal_life_stage2_meditation_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('elixir_of_eternal_life_stage2_meditation_progress_preview')|0] $POD_journey_years$, [JourneyMonthsLeft('elixir_of_eternal_life_stage2_meditation_progress_preview')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('elixir_of_eternal_life_stage2_meditation_progress_preview')]"
+ 
+ elixir_of_eternal_life_stage2_meditation_monthly_num_current: "#TOOLTIP:elixir_of_eternal_life_stage2_meditation_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('elixir_of_eternal_life_stage2_meditation_progress')|1]%#!#!"
+ elixir_of_eternal_life_stage2_meditation_monthly_tt_current: "#V [JourneyYearsLeftCurrent('elixir_of_eternal_life_stage2_meditation_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('elixir_of_eternal_life_stage2_meditation_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('elixir_of_eternal_life_stage2_meditation_progress')]"
+
+ elixir_of_eternal_life_stage2_random_journey_monthly_num: "#TOOLTIP:elixir_of_eternal_life_stage2_random_journey_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('elixir_of_eternal_life_stage2_random_journey_progress_preview')|1]%#!#!"
+ elixir_of_eternal_life_stage2_random_journey_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('elixir_of_eternal_life_stage2_random_journey_progress_preview')|0] $POD_journey_years$, [JourneyMonthsLeft('elixir_of_eternal_life_stage2_random_journey_progress_preview')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('elixir_of_eternal_life_stage2_random_journey_progress_preview')]"
+ 
+ elixir_of_eternal_life_stage2_random_journey_monthly_num_current: "#TOOLTIP:elixir_of_eternal_life_stage2_random_journey_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('elixir_of_eternal_life_stage2_random_journey_progress')|1]%#!#!"
+ elixir_of_eternal_life_stage2_random_journey_monthly_tt_current: "#V [JourneyYearsLeftCurrent('elixir_of_eternal_life_stage2_random_journey_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('elixir_of_eternal_life_stage2_random_journey_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('elixir_of_eternal_life_stage2_random_journey_progress')]"
+
  breaking_the_blond_bond_monthly_num: "#TOOLTIP:breaking_the_blond_bond_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('breaking_the_blond_bond_progress')|1]%#!#!"
  breaking_the_blond_bond_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('breaking_the_blond_bond_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('breaking_the_blond_bond_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('breaking_the_blond_bond_progress')]"
  
@@ -321,13 +348,44 @@
  POD_journey_progress_confider: "У вас есть свойство «[GetTrait('confider').GetName(GetPlayer)]»"
  POD_journey_progress_journaller: "У вас есть свойство «[GetTrait('journaller').GetName(GetPlayer)]»"
  POD_journey_progress_reclusive: "У вас есть свойство «[GetTrait('reclusive').GetName(GetPlayer)]»"
+ POD_journey_progress_sorcerer: "У вас есть свойство «[GetTrait('sorcerer').GetName(GetPlayer)]»"
+ POD_journey_progress_theurgist: "У вас есть свойство «[GetTrait('theurgist').GetName(GetPlayer)]»"
+ POD_journey_progress_psychic: "У вас есть свойство «[GetTrait('psychic').GetName(GetPlayer)]»"
+ POD_journey_progress_scholar: "У вас есть свойство «[GetTrait('erudite').GetName(GetPlayer)]»"
+ POD_journey_progress_theologian: "У вас есть свойство «[GetTrait('theologian').GetName(GetPlayer)]»"
+ POD_journey_progress_whole_of_body: "У вас есть свойство «[GetTrait('whole_of_body').GetName(GetPlayer)]»"
+ POD_journey_progress_lifestyle_mystic: "У вас есть свойство «[GetTrait('lifestyle_mystic').GetName(GetPlayer)]»"
+ POD_journey_progress_lifestyle_physician: "У вас есть свойство «[GetTrait('lifestyle_physician').GetName(GetPlayer)]»"
+ POD_journey_progress_lifestyle_herbalist: "У вас есть свойство «[GetTrait('lifestyle_herbalist').GetName(GetPlayer)]»"
+ POD_journey_progress_lifestyle_gardener: "У вас есть свойство «[GetTrait('lifestyle_gardener').GetName(GetPlayer)]»"
+ POD_journey_progress_bloodsorcery: "У вас есть свойство «[GetTrait('bloodsorcery').GetName(GetPlayer)]»"
+ POD_journey_progress_bloodsorceryadvanced: "У вас есть свойство «[GetTrait('bloodsorceryadvanced').GetName(GetPlayer)]»"
+ POD_journey_progress_necromancy: "У вас есть свойство «[GetTrait('necromancy').GetName(GetPlayer)]»"
+ POD_journey_progress_necromancyadvanced: "У вас есть свойство «[GetTrait('necromancyadvanced').GetName(GetPlayer)]»"
+ POD_journey_progress_brewing: "Вы искусны в [Concept('crafting_brewing', 'варке отваров')|E]"
+
+ POD_journey_progress_known_languages: "Ваши [Concept('languages', 'языки')|E]"
+ POD_journey_progress_known_language_ancient_egyptian: "Вы знаете #TOOLTIP:CULTURE_PILLAR,language_ancient_egyptian #L древнеегипетский#!#! [Concept('language', 'язык')|E]"
+ POD_journey_progress_known_language_egyptian: "Вы знаете #TOOLTIP:CULTURE_PILLAR,language_egyptian #L египетский#!#! [Concept('language', 'язык')|E]"
+ POD_journey_progress_known_language_coptic: "Вы знаете #TOOLTIP:CULTURE_PILLAR,language_coptic #L коптский#!#! [Concept('language', 'язык')|E]"
+ POD_journey_progress_known_language_punic: "Вы знаете #TOOLTIP:CULTURE_PILLAR,language_punic #L пунический#!#! [Concept('language', 'язык')|E]"
+ POD_journey_progress_known_language_ancient_greek: "Вы знаете #TOOLTIP:CULTURE_PILLAR,language_ancient_greek #L эллинский#!#! [Concept('language', 'язык')|E]"
+ POD_journey_progress_known_language_greek: "Вы знаете #TOOLTIP:CULTURE_PILLAR,language_greek #L греческий#!#! [Concept('language', 'язык')|E]"
+ POD_journey_progress_known_language_aramaic: "Вы знаете #TOOLTIP:CULTURE_PILLAR,language_aramaic #L арамейский#!#! [Concept('language', 'язык')|E]"
+
+ POD_journey_progress_big3_mummy_prisoners: "[GetScriptedCharacterByHistoryID('792600').GetFirstName], [GetScriptedCharacterByHistoryID('792593').GetFirstName], [GetScriptedCharacterByHistoryID('790512').GetFirstName] или кто-то ещё, знающий полное заклинание Жизни, находится в вашей темнице"
+ POD_journey_progress_big3_nonmummy_prisoners: "[GetScriptedCharacterByHistoryID('790512').GetFirstName] или кто-то ещё, знающий полное заклинание Жизни, находится в вашей темнице"
+ POD_journey_progress_alternate_mummy_prisoners: "[GetScriptedCharacterByHistoryID('792870').GetFirstName], [GetScriptedCharacterByHistoryID('792804').GetFirstName], [GetScriptedCharacterByHistoryID('792605').GetFirstName], [GetTrait('ferryman').GetName(GetNullCharacter)|l] или кто-то ещё, знающий полное заклинание Жизни, находится в вашей темнице"
+ POD_journey_progress_alternate_nonmummy_prisoners: "[GetScriptedCharacterByHistoryID('792870').GetFirstName], [GetTrait('ferryman').GetName(GetNullCharacter)|l] или кто-то ещё, знающий полное заклинание Жизни, находится в вашей темнице"
 
  POD_journey_progress_golcondalore: "Вы владеете [Concept('artifact', 'артефактом')|E] со знаниями #TOOLTIP:game_concept_golconda_desc #E Голконды#!#!"
 
  POD_journey_progress_ritual_speed_10: "Вы владеете [Concept('artifact', 'артефактом')|E], который увеличивает скорость вашего ритуала"
 
- POD_journey_progress_instinct_conviction: "Ваша [Concept('faith', 'конфессия')|E] ценит #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_enlightenment_virtues_conviction_and_instinct #L Инстинкт#!#!"
- POD_journey_progress_instinct_conscience: "Ваша [Concept('faith', 'конфессия')|E] ценит #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_enlightenment_virtues_conscience_and_instinct #L Инстинкт#!#!"
+ POD_journey_progress_instinct_conviction: "Ваше [Concept('rite', 'течение')|E] ценит #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_enlightenment_virtues_conviction_and_instinct #L Инстинкт#!#!"
+ POD_journey_progress_instinct_conscience: "Ваше [Concept('rite', 'течение')|E] ценит #TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_enlightenment_virtues_conscience_and_instinct #L Инстинкт#!#!"
+
+ POD_journey_progress_lorehold: "В вашем [Concept('domicile', 'имению')|E] есть [GetDomicileBuilding('fae_the_interior_lorehold_01').GetName]"
 
  # Example text: "2 members of Brunhilde's Coterie know this ability"
  POD_journey_progress_seek_knowledge: "#V [GetPlayer.MakeScope.ScriptValue('seek_knowledge_coterie_member_count')]#! [Select_CString( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('seek_knowledge_coterie_member_count'), '(CFixedPoint)1' ), 'член', 'члена' )] котерии $POD_player_coterie$ [Select_CString( EqualTo_CFixedPoint( GetPlayer.MakeScope.ScriptValue('seek_knowledge_coterie_member_count'), '(CFixedPoint)1' ), 'знает', 'знают' )] эту способность"
@@ -339,12 +397,18 @@
  POD_golconda_seeker_singular: "имеет свойство «[GetTrait('golconda_seeker').GetName(GetNullCharacter)]»"
  POD_golconda_seeker_plural: "являются #TOOLTIP:GAME_TRAIT,golconda_seeker,[GetNullCharacter] #L искателями Голконды#!#!"
 
+ POD_journey_progress_friend_5: "У вас есть не менее 5 [Concept('friends', 'друзей')|E]"
+ POD_journey_progress_lover_2: "У вас есть не менее 2 [Concept('lovers', 'любовников')|E]"
+
  POD_journey_progress_target_rank_empire: "[PlayerJourneyTarget.GetFirstName] правит [Concept('empire', 'империей')|E]"
  POD_journey_progress_target_rank_kingdom: "[PlayerJourneyTarget.GetFirstName] правит [Concept('kingdom', 'королевством')|E]"
  POD_journey_progress_target_rank_duchy: "[PlayerJourneyTarget.GetFirstName] правит [Concept('duchy', 'герцогством')|E]"
  POD_journey_progress_target_rank_county: "[PlayerJourneyTarget.GetFirstName] правит [Concept('county', 'графством')|E]"
  POD_journey_progress_target_rank_barony: "[PlayerJourneyTarget.GetFirstName] правит [Concept('barony', 'баронством')|E]"
  POD_journey_progress_target_rank_unlanded: "[PlayerJourneyTarget.GetFirstName] - [Concept('unlanded', 'безземельный')|E] персонаж"
+
+ POD_journey_progress_development_700: "700 или более [Concept('development', 'развития')|E] в державе"
+ POD_journey_progress_development_350: "350 или более [Concept('development', 'развития')|E] в державе"
 
  POD_journey_progress_target_age_1000: "[PlayerJourneyTarget.GetFirstName] старше #V 1000#! лет"
  POD_journey_progress_target_age_400: "[PlayerJourneyTarget.GetFirstName] старше #V 400#! лет"
@@ -369,6 +433,8 @@
  POD_journey_progress_after_shattering: "[Glossary('Раскол','game_concept_shattering_desc')] произошёл"
  POD_journey_progress_before_shattering: "[Glossary('Раскол','game_concept_shattering_desc')] не произошёл"
 
+ POD_journey_progress_heavenly_flower_garden: "[UmbraGlossary('heavenly_flower_garden')] обнаружен"
+
  POD_journey_progress_ambrogino: "Вы являетесь персонажем [GetPlayer.GetFirstName]"
 
  POD_journey_progress_target_invocation_of_name_perk: "[PlayerJourneyTarget.GetFirstName] имеет достоинство «[GetPerk('arcana_invocation_of_name_perk').GetName(PlayerJourneyTarget)]» #weak (-20%)#!"
@@ -376,6 +442,8 @@
  POD_journey_progress_speaking_all_names_perk: "У вас есть достоинство «[GetPerk('speaking_all_names_perk').GetName(GetPlayer)]» #weak (+20%)#!"
  POD_journey_progress_nian_shun_modifier: "У вас есть модификатор «[GetModifier('nian_shun_modifier').GetNameWithTooltip]» #weak (+50%)#!"
  POD_journey_progress_dreams_of_the_sleeper_modifier: "У вас есть модификатор «[GetModifier('dreams_of_the_sleeper_modifier').GetNameWithTooltip]» #weak (+50%)#!"
+ POD_journey_progress_echo_noble_arts_runic_imprint_perk: "У вас есть достоинство «[GetPerk('noble_arts_runic_imprint_perk').GetName(GetPlayer)]» #weak (+20%)#!"
+ POD_journey_progress_echo_noble_arts_reweaving_perk: "У вас есть достоинство «[GetPerk('noble_arts_reweaving_perk').GetName(GetPlayer)]» #weak (+30%)#!"
  echo_the_lesser_name_perk_bonus_value: "У вас есть достоинство «[GetPerk('echo_the_lesser_name_perk').GetName(GetPlayer)]» #weak (+50%)#!"
  echo_the_greater_name_perk_bonus_value: "У вас есть достоинство «[GetPerk('echo_the_greater_name_perk').GetName(GetPlayer)]» #weak (+100%)#!"
 
@@ -397,6 +465,12 @@
  POD_journey_progress_not_demon: "Вы не являетесь демоном"
 
  POD_journey_progress_fera_pack_size: "[GetPlayer.Custom('PODCoterie')] - размер"
+ POD_journey_progress_command_the_gathering_perk: "У вас есть достоинство «[GetPerk('command_the_gathering_perk').GetName(GetPlayer)]» #weak (+10%)#!"
+ POD_journey_progress_bonds_that_tie_us_perk: "У вас есть достоинство «[GetPerk('bonds_that_tie_us_perk').GetName(GetPlayer)]» #weak (+10%)#!"
+ POD_journey_progress_honour_bound_perk: "У вас есть достоинство «[GetPerk('honour_bound_perk').GetName(GetPlayer)]» #weak (+5%)#!"
+ POD_journey_progress_wisdom_of_the_ancient_ways_perk: "У вас есть достоинство «[GetPerk('wisdom_of_the_ancient_ways_perk').GetName(GetPlayer)]» #weak (+5%)#!"
+ POD_journey_progress_firebringer_perk: "У вас есть достоинство «[GetPerk('firebringer_perk').GetName(GetPlayer)]»"
+ POD_journey_progress_moonlit_mark_heist_modifier: "У вас есть модификатор «[GetModifier('moonlit_mark_heist_modifier').GetNameWithTooltip]» #weak (+25%)#!"
  POD_journey_progress_profaned_lungs_perk: "У вас есть достоинство «[GetPerk('profaned_lungs_perk').GetName(GetPlayer)]» #weak (+25%)#!"
  POD_journey_progress_zhong_lung_legacy: "У вас есть достоинство «[GetDynastyPerk('zhong_lung_legacy_1').GetName]» #weak (+15%)#!"
  POD_journey_progress_common_mokole_legacy: "У вас есть достоинство «[GetDynastyPerk('common_mokole_legacy_2').GetName]»"
@@ -423,6 +497,7 @@
  POD_journey_progress_spirit_offerings_04: "[GetDomicileBuilding('mokole_spirit_offerings_04').GetName]"
  POD_journey_progress_spirit_offerings_05: "[GetDomicileBuilding('mokole_spirit_offerings_05').GetName]"
  POD_journey_progress_spirit_offerings_06: "[GetDomicileBuilding('mokole_spirit_offerings_06').GetName]"
+ POD_journey_progress_dragon_nest_04: "Постройки «[GetBuilding('dragon_nest_04').GetName]», «[GetBuilding('corrupted_dragon_nest_04').GetName]» или «[GetBuilding('dragon_nested_alchemy_laboratory_04').GetName]»"
 
  POD_journey_progress_prestige_level: "[prestige_level|E]"
  POD_journey_progress_piety_level: "[piety_level|E]"
@@ -430,7 +505,7 @@
  POD_journey_progress_spirit_companions: "[Concept('spirit_companions', 'Духовные спутники')|E]"
  POD_journey_progress_harpy_companion: "[GetModifier('spirit_harpy_pact_modifier').GetNameWithTooltip]"
 
- POD_journey_progress_tenet_physical_ascension: "Ваша [Concept('faith', 'конфессия')|E] имеет [Concept('core_tenet', 'догмат')|E] «[GetFaithDoctrine('tenet_physical_ascension').GetBaseName]» #weak (+25%)"
+ POD_journey_progress_tenet_physical_ascension: "Ваше [Concept('rite', 'течение')|E] имеет [Concept('core_tenet', 'догмат')|E] «[GetFaithDoctrine('tenet_physical_ascension').GetBaseName]» #weak (+25%)"
 
  POD_journey_progress_fc_arm_r_runed_arm: "[GetPerk('fc_arm_r_runed_arm_perk').GetName(GetPlayer)]"
  POD_journey_progress_fc_arm_l_runed_arm: "[GetPerk('fc_arm_l_runed_arm_perk').GetName(GetPlayer)]"
@@ -440,6 +515,25 @@
  POD_journey_progress_azhi_dahaka_xp: "[trait_level_track_xp|E] существующего #TOOLTIP:GAME_TRAIT,azhi_dahaka_scholar,[GetPlayer] #L учёного Ажи Дахаки#!#!"
  POD_journey_progress_fleshcrafted: "Сложность вашего [Concept('fleshcrafting', 'изменения плоти')|E]"
  POD_journey_progress_fleshcrafted_ghouls: "Сложность [Concept('fleshcrafting', 'изменения плоти')|E] всех [Concept('bound_ghouls', 'связанных гулей')|E]"
+
+
+ glamour_quests_deed_monthly_num: "#TOOLTIP:glamour_quests_deed_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('glamour_quests_deed_progress')|1]%#!#!"
+ glamour_quests_deed_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('glamour_quests_deed_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('glamour_quests_deed_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('glamour_quests_deed_progress')]"
+
+ glamour_quests_deed_monthly_num_current: "#TOOLTIP:glamour_quests_deed_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('glamour_quests_deed_progress')|1]%#!#!"
+ glamour_quests_deed_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('glamour_quests_deed_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('glamour_quests_deed_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('glamour_quests_deed_progress')]"
+ glamour_quests_inspiration_monthly_num: "#TOOLTIP:glamour_quests_inspiration_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('glamour_quests_inspiration_progress')|1]%#!#!"
+ glamour_quests_inspiration_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('glamour_quests_inspiration_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('glamour_quests_inspiration_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('glamour_quests_inspiration_progress')]"
+
+ glamour_quests_inspiration_monthly_num_current: "#TOOLTIP:glamour_quests_inspiration_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('glamour_quests_inspiration_progress')|1]%#!#!"
+ glamour_quests_inspiration_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('glamour_quests_inspiration_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('glamour_quests_inspiration_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('glamour_quests_inspiration_progress')]"
+ glamour_quests_dreaming_monthly_num: "#TOOLTIP:glamour_quests_dreaming_monthly_tt #V;L [GetPlayer.MakeScope.ScriptValue('glamour_quests_dreaming_progress')|1]%#!#!"
+ glamour_quests_dreaming_monthly_tt: "$POD_journey_time_until_completion$ #V [JourneyYearsLeft('glamour_quests_dreaming_progress')|0] $POD_journey_years$, [JourneyMonthsLeft('glamour_quests_dreaming_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('glamour_quests_dreaming_progress')]"
+
+ glamour_quests_dreaming_monthly_num_current: "#TOOLTIP:glamour_quests_dreaming_monthly_tt_current #V;L [GetPlayer.MakeScope.ScriptValue('glamour_quests_dreaming_progress')|1]%#!#!"
+ glamour_quests_dreaming_monthly_tt_current: "$POD_journey_time_remaining$ #V [JourneyYearsLeftCurrent('glamour_quests_dreaming_progress')|0] $POD_journey_years$, [JourneyMonthsLeftCurrent('glamour_quests_dreaming_progress')|0] $POD_journey_months$#!\n\n[GetPlayer.MakeScope.GetScriptValueDesc('glamour_quests_dreaming_progress')]"
+
+ POD_journey_progress_domicile: "От [Concept('domicile', 'имения')|E]"
 
  ##### Value breakdown formats
 
