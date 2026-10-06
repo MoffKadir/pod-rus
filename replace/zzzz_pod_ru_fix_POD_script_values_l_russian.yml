@@ -1,0 +1,11 @@
+﻿l_russian:
+ POD_FORMAT_BASE_WHITE:0 "$KEY$: #V $VALUE|0$#!"
+ POD_FORMAT_NEGATIVE_PLUS:0 "$KEY$: #N $VALUE|=2$#!"
+ POD_FORMAT_NO_DECIMALS:0 "$KEY$: $VALUE|+=0$"
+ POD_FORMAT_NO_DECIMALS_NEGATIVE:0 "$KEY$: $VALUE|-=0$"
+ POD_FORMAT_PERCENTAGE_TRUE:0 "$KEY$: #P $VALUE|0%=$#!"
+ POD_FORMAT_PERCENTAGE_TRUE_BASE:0 "$KEY$: #V $VALUE|0%$#!"
+ POD_FORMAT_PERCENTAGE_TRUE_NEGATIVE:0 "$KEY$: #N $VALUE|0=%$#!"
+ POD_befriend_limit_leanhaun:0 "Династия [GetPlayer.GetDynasty.GetName] имеет достоинство #TOOLTIP:DYNASTY_PERK,leanhaun_legacy_2 #L $leanhaun_legacy_2_name$#!#!"
+ POD_befriend_limit_loved:0 "Династия [GetPlayer.GetDynasty.GetName] имеет достоинство #TOOLTIP:DYNASTY_PERK,fae_loved_legacy_4 #L $fae_loved_legacy_4_name$#!#!"
+ POD_player_befriend_limit:0 "#TOOLTIP:POD_player_befriend_limit_tt #V;L [GetPlayer.MakeScope.ScriptValue('POD_befriend_limit')|0]#!#!"

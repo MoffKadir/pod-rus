@@ -1,0 +1,5 @@
+﻿l_russian:
+ POD_fera_coterie_has_wyrm_totem_tooltip:0 "Ваша [GetPlayer.Custom('PODCoterie')|l] должна иметь [Concept('pack_totem', 'тотем стаи')|E] [Glossary('Вирма', 'glossary_wyrm_tt')]"
+ POD_gnosis_regen_primal_song:0 "[GetPerk('primal_song_perk').GetName(GetPlayer)]"
+ POD_player_gnosis_regen_chance:0 "#TOOLTIP:POD_player_gnosis_regen_chance_tt #V;L [GetPlayer.MakeScope.ScriptValue('gnosis_regen_chance')|1]%#!#!"
+ POD_splat_garou:0 "#TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L Гару#!#!"

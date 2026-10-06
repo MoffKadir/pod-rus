@@ -1,0 +1,4 @@
+﻿l_russian:
+ POD_requirements_court_position:0 "[holder|E] должен использовать [GetCourtPositionType(SCOPE.GetFlagName('saved_tooltip')).GetName()]."
+ POD_requirements_court_position_level:0 "[holder|E] должен использовать [GetCourtPositionType(SCOPE.GetFlagName('saved_tooltip')).GetName()] с [GetAptitudeString(SCOPE.GetValue('aptitude_level'))|U] [aptitude|E][AddTextIf( LessThanOrEqualTo_CFixedPoint( SCOPE.GetValue('aptitude_level'), '(CFixedPoint)3' ), ' or above' )]."
+ POD_requirements_unique_caern:0 "[holder|E] должен быть либо $glossary_fera$, либо [GetTrait('kinfolk').GetName( GetPlayer )]."

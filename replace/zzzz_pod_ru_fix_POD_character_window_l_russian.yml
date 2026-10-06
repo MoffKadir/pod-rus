@@ -1,0 +1,7 @@
+﻿l_russian:
+ POD_sidebar_aye:0 "#medium $trait_track_aye$:#! #color:{0.83,0.80,0.71} [Character.MakeScope.ScriptValue('POD_aye_xp')|0]#! #weak (#L [Character.MakeScope.ScriptValue('pod_laibon_aye_net_value')|+=0]#!)#!"
+ POD_sidebar_aye_tt:0 "Баланс Айе персонажа [Character.GetFirstNameNoTooltipPossessive|U] меняется на [Character.MakeScope.ScriptValue('pod_laibon_aye_net_value')|+=0] каждые #V 5#! лет:\n\n[Character.MakeScope.GetScriptValueDesc('pod_laibon_aye_net_value')]"
+ POD_sidebar_banality:0 "#medium [banality|E]:#! #color:{0.83,0.80,0.71} [Character.MakeScope.ScriptValue('banality_xp')|0]/100#!"
+ POD_sidebar_mummy_integrity:0 "#TOOLTIP:GAME_TRAIT,integrity,[Character.GetID] #medium;L $trait_integrity$:#!#! #color:{0.83,0.80,0.71} [Character.MakeScope.ScriptValue('POD_mummy_integrity_level')|0]/8#!"
+ POD_sidebar_orun:0 "#medium $trait_track_orun$:#! #color:{0.83,0.80,0.71} [Character.MakeScope.ScriptValue('POD_orun_xp')|0]#! #weak (#L [Character.MakeScope.ScriptValue('pod_laibon_orun_net_value')||+=0]#!)#!"
+ POD_sidebar_orun_tt:0 "Баланс Орун персонажа [Character.GetFirstNameNoTooltipPossessive|U] меняется на [Character.MakeScope.ScriptValue('pod_laibon_orun_net_value')|+=0] каждые #V 5#! лет:\n\n[Character.MakeScope.GetScriptValueDesc('pod_laibon_orun_net_value')]"
