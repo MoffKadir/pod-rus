@@ -2,7 +2,7 @@
 
 
  fera_advance_rank_decision: "Повысить свой ранг"
- fera_advance_rank_decision_desc: "Известность и ранг являются мерой положения перевёртыша в обществе. Чем больше у него известности, тем больший вес имеют его слова. Различные фера используют различный набор из трёх типов известности.\n\nВы получаете известность:\n"
+ fera_advance_rank_decision_desc: "Известность и ранг являются мерой положения [Glossary('фера', 'glossary_fera_tt')] в обществе. Чем больше у него известности, тем больший вес имеют его слова. Различные фера используют различный набор из трёх типов известности.\n\nВы получаете известность:\n"
  fera_advance_rank_decision_tooltip: "Продвижение по иерархии фера требует времени и целеустремленности."
  fera_advance_rank_decision_confirm: "Моя слава растёт!"
 
@@ -12,13 +12,13 @@
 
  fera_advance_rank_renown_wisdom: "#clickable $POD_fera_renown_wisdom$:#!\n#medium $BULLET_WITH_TAB$Завершая экспедиции Умбры.\n$BULLET_WITH_TAB$Получив последнее [Concept('perk', 'достоинство')|E] из древа образа жизни [Glossary('фера', 'glossary_fera_tt')].\n$BULLET_WITH_TAB$Завершая [Concept('journey', 'странствие')|E] духовных поисков.#!\n"
 
- fera_advance_rank_renown_power: "#clickable $POD_fera_renown_power$:#!\n#medium $BULLET_WITH_TAB$Побеждая в войнах.\n$BULLET_WITH_TAB$Побеждая в поединках.\n$BULLET_WITH_TAB$Повышая свой [Concept('prestige_level', 'уровень престижа')|E].\n$BULLET_WITH_TAB$Получая физическую [Concept('urgetaints_lifestyle', 'скверну инстинктов')|E].#!\n"
+ fera_advance_rank_renown_power: "#clickable $POD_fera_renown_power$:#!\n#medium $BULLET_WITH_TAB$Побеждая в войнах.\n$BULLET_WITH_TAB$Побеждая в [Concept('pod_combat_encounters', 'боевых столкновениях')|E].\n$BULLET_WITH_TAB$Повышая свой [Concept('prestige_level', 'уровень престижа')|E].\n$BULLET_WITH_TAB$Получая физические [Concept('maeljingifts_lifestyle', 'дары маэлджинов')|E].#!\n"
 
  fera_advance_rank_renown_cunning: "#clickable $POD_fera_renown_cunning$:#!\n#medium $BULLET_WITH_TAB$Успешно проводя #TOOLTIP:game_concept_infiltration_desc #E проникновение#!#!.\n$BULLET_WITH_TAB$[Concept('blackmailing', 'Шантажируя')|E] других персонажей.\n$BULLET_WITH_TAB$Успешно выполнив [Concept('schemes', 'происки')|E] «[GetScheme('abduct').GetTypeName]».#!\n"
 
  fera_advance_rank_renown_ferocity: "#clickable $POD_fera_renown_ferocity$:#!\n#medium $BULLET_WITH_TAB$Возвращаясь в свои владения, набрав не менее #P 50#! [Concept('loot', 'добычи')|E] в [Concept('raid', 'набеге')|E].\n$BULLET_WITH_TAB$Получая [Concept('trait_level_track_xp', 'опыт')|E] в любом [Concept('trait_level_track', 'пути развития')|E] свойства «[GetTrait('lifestyle_hunter').GetName(GetNullCharacter)]».\n$BULLET_WITH_TAB$Тренируясь с вашей группой [GetPlayer.Custom('PODCoterie')].#!\n"
 
- fera_advance_rank_renown_infamy: "#clickable $POD_fera_renown_infamy$:#!\n#medium $BULLET_WITH_TAB$Успешно завершив [Concept('schemes', 'происки')|E] «[GetScheme('fabricate_hook').GetTypeName]».\n$BULLET_WITH_TAB$Казнив вассалов с титулом [Concept('title_rank', 'ранга')|E] герцогства или выше без [Concept('execute_reason', 'повода')|E].\n$BULLET_WITH_TAB$Узурпировав титулы королевского [Concept('rank', 'ранга')|E] или выше.\n$BULLET_WITH_TAB$Нарушая перемирия.\n$BULLET_WITH_TAB$Получив ментальную [Concept('urgetaints_lifestyle', 'скверну инстинктов')|E].#!\n"
+ fera_advance_rank_renown_infamy: "#clickable $POD_fera_renown_infamy$:#!\n#medium $BULLET_WITH_TAB$Успешно завершив [Concept('schemes', 'происки')|E] «[GetScheme('fabricate_hook').GetTypeName]».\n$BULLET_WITH_TAB$Казнив вассалов с титулом [Concept('title_rank', 'ранга')|E] герцогства или выше без [Concept('execute_reason', 'повода')|E].\n$BULLET_WITH_TAB$Узурпировав титулы королевского [Concept('rank', 'ранга')|E] или выше.\n$BULLET_WITH_TAB$Нарушая перемирия.\n$BULLET_WITH_TAB$Получив ментальные [Concept('maeljingifts_lifestyle', 'дары маэлджинов')|E].#!\n"
 
 
  fera_advance_rank_renown_bonuses: "\n#clickable [GetPlayer.Custom('PODFeraAuspiceType')] даёт вам бонус на [GetPlayer.Custom('PODFeraAuspiceRenownBoost')].#!"
