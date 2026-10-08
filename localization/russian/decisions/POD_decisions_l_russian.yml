@@ -124,7 +124,7 @@
  tremere_victory_objective_decision_customb: "Мы должны убедиться, что Салюбри не владеют имперским [Concept('title', 'титулом')|E]"
  tzimisce_victory_objective_decision: "Великая война"
  tzimisce_victory_objective_decision_tooltip: "Наша неспособность сбить спесь с наглых узурпаторов слишком долго делала нас посмешищем [Glossary('каинитской','game_concept_cainite_desc')] политики."
- tzimisce_victory_objective_decision_desc: "[Glossary('Клан','game_concept_Clan_desc')] Цимисхи разделён, не в силах должным образом ответить на ничтожную угрозу, которую представляют собой вторжения Тремеров. Нам нужно новое, более сильное руководство."
+ tzimisce_victory_objective_decision_desc: "[Glossary('Клан','game_concept_Clan_desc')] Цимисхи разделён, не в силах должным образом ответить на вторжения Тремеров, которые должны представлять ничтожную угрозу. Нам нужно новое, более сильное руководство."
  tzimisce_victory_objective_decision_confirm: "Это призыв к пиршеству..."
  tzimisce_victory_objective_decision_effect_tooltip: "Вы выберете дальнейший путь для [Glossary('клана','game_concept_Clan_desc')] Цимисхи."
  tzimisce_victory_objective_decision_custom: "Титул [GetTitleByKey('e_tremere').GetNameNoTier] должен быть уничтожен"
@@ -399,7 +399,7 @@
  restore_sisters_of_st_john_effect_tooltip: "Вы воссоздадите [Concept('title', 'титул')|E] королевства Сестёр святого Иоанна."
  restore_house_murnau: "Восстановить державу дома Мурнау"
  restore_house_murnau_tooltip: "Бавария - наша. Они отняли нашу родину и нашу кровь. Мы должны отомстить."
- restore_house_murnau_desc: "История Баварии и дома переплетена. Чтобы продолжить борьбу, нам придётся вернуть земли наших предков."
+ restore_house_murnau_desc: "История Баварии и дома Мурнау переплетена. Чтобы продолжить борьбу, нам придётся вернуть земли наших предков."
  restore_house_murnau_confirm: "Мы вернули себе наш дом."
  restore_house_murnau_effect_tooltip: "Вы воссоздадите [Concept('title', 'титул')|E] королевства Мурнау."
  restore_oculi_dei: "Восстановить Oculi Dei"
@@ -479,7 +479,29 @@
  contact_fellow_hunters_decision_tooltip: "Единство против тьмы?"
  contact_fellow_hunters_decision_desc: "Вы заручились поддержкой различных орденов охотников. Эту поддержку можно использовать для получения помощи."
  contact_fellow_hunters_decision_confirm: "Охотники всего мира, объединяйтесь!"
- contact_fellow_hunters_decision_tt: "Вы попросите членов орденов присоединиться к вам или обучить вас, в зависимости от открытых вами достоинств династии."
+ contact_fellow_hunters_decision_tt: "В зависимости от принятых вами [Concept('decisions', 'решений')|E] вы сможете попросить охотников присоединиться к вам или обучить вас."
+ CONTACT_FELLOW_HUNTERS_DECISION_NEXT_STEP_BUTTON: "Выбрать малую секту охотников"
+ hire_inquisition_decision: "Нанять теневого инквизитора"
+ hire_inquisition_decision_desc: "$pod1230inqui_prospect.3.a$"
+ hire_inquisition_decision_tooltip: "$hire_inquisition_decision_desc$"
+ hire_akritai_decision: "Нанять акрита"
+ hire_akritai_decision_desc: "$pod1230inqui_prospect.3.d$"
+ hire_akritai_decision_tooltip: "$hire_akritai_decision_desc$"
+ hire_judge_decision: "Нанять судью"
+ hire_judge_decision_desc: "$pod1230inqui_prospect.3.c$"
+ hire_judge_decision_tooltip: "$hire_judge_decision_desc$"
+ hire_ikhwan_decision: "Нанять ах аль-Сафа"
+ hire_ikhwan_decision_desc: "$pod1230inqui_prospect.3.b$"
+ hire_ikhwan_decision_tooltip: "$hire_ikhwan_decision_desc$"
+ hire_qorjin_decision: "Нанять багатура"
+ hire_qorjin_decision_desc: "$pod1230inqui_prospect.3.e$"
+ hire_qorjin_decision_tooltip: "$hire_qorjin_decision_desc$"
+ teach_ikhwan_decision: "Изучить чародейство"
+ teach_ikhwan_decision_desc: "$pod1230inqui_prospect.3.bis$"
+ teach_ikhwan_decision_tooltip: "$teach_ikhwan_decision_desc$"
+ teach_judges_decision: "Изучить теургию"
+ teach_judges_decision_desc: "$pod1230inqui_prospect.3.cis$"
+ teach_judges_decision_tooltip: "$teach_judges_decision_desc$"
 
  pod1230inqui_prospect.3.desc: "Благодаря усилиям, которые вы приложили, чтобы заручиться поддержкой собратьев по орденам охотников, вы можете использовать их помощь себе на пользу. Каждый из них обладает уникальными навыками, которые могут помочь вашему делу. После стольких лет, проведенных в окружении людей, совершенно не замечающих угрозы (и часто невольно мешающих вашим усилиям), приятно работать с людьми, которые знают, что мелкие мирские обиды меркнут перед лицом сверхъестественной опасности."
  pod1230inqui_prospect.3.a: "Мне нужен воин-инквизитор."
@@ -505,7 +527,6 @@
  akritai_landless_tt: "[GetTitleByKey('c_byzantion').GetNameNoTier] принадлежит персонажу с вашей конфессией"
  qorjin_landless_tt: "[GetTitleByKey('c_karakorum').GetNameNoTier] принадлежит персонажу с вашей конфессией"
  shadow_landless_tt: "[GetTitleByKey('c_roma').GetNameNoTier] принадлежит персонажу с вашей конфессией"
-
  #ask_pope_decision: "Ask the Holy Father for funds"
  #ask_pope_decision_desc: "You will petition the Bishop of Rome for gold to support the cause."
  #ask_pope_decision_confirm: "Write the letter"
@@ -631,7 +652,7 @@
  helena_decision: "Троя против Спарты"
  helena_decision_tooltip: "Менелай должен умереть!"
  helena_decision_desc: "Если вы хотите, наконец, снова свободно передвигаться по миру [Glossary('каинитов','game_concept_cainite_desc')], то сначала вам нужно разобраться с тем, кто так долго за вами охотился."
- helena_decision_effect_tooltip: "Вы получите новое, особое [Concept('character_interaction', 'взаимодействие персонажа')|E]"
+ helena_decision_effect_tooltip: "Вы получите новое, особое [Concept('character_interaction', 'взаимодействие персонажа')|E].\nВы также получите событие, которое может открыть для Елены уникальную конфессию и дополнительную цель."
  helena_decision_confirm: "Наконец-то..."
  helena_custom_decision: "[GetScriptedCharacterByHistoryID('790309').GetFirstName] должен быть мертв"
  absalon_decision: "Ритуал Свентовита"
@@ -667,8 +688,8 @@
  tabitha_decision_desc: "Старейшины поручили вам обеспечить быстрое поражение христианских [Glossary('каинитов','game_concept_cainite_desc')]. Результаты ожидаются быстро."
  tabitha_decision_effect_tooltip: "Аламут будет доволен и пошлёт награду"
  tabitha_decision_confirm: "Я не подведу"
- tabitha_custom_decision1: "[GetTitleByKey('c_coimbra').GetNameNoTier] принадлежит вам либо Ночному полумесяцу"
- tabitha_custom_decision2: "[GetTitleByKey('c_madrid').GetNameNoTier] принадлежит вам либо Ночному полумесяцу"
+ tabitha_custom_decision1: "[GetTitleByKey('c_coimbra').GetNameNoTier] принадлежит вам либо Бадр"
+ tabitha_custom_decision2: "[GetTitleByKey('c_madrid').GetNameNoTier] принадлежит вам либо Бадр"
  montano_decision: "Волны в море"
  montano_decision_tooltip: "[Glossary('Клан','game_concept_Clan_desc')] Ласомбра нуждается в сильной направляющей руке"
  montano_decision_desc: "Если вы хотите спасти тяжелое положение Моря Теней, вы должны показать свою силу в итальянских делах"
@@ -867,6 +888,7 @@
  repentant_brujah_modifier_desc: "Устыдившись своим происхождением от Троиль, лже-Бруха ищут искупления."
  repentant_brujah_tooltip: "Все Бруха, кроме Истинных, получат модификатор «Раскаявшиеся Бруха». Пока у них есть этот модификатор, они автоматически принимают предложения вассализации и обращаются в вашу конфессию."
  end_false_brujah_tooltip: "Все Бруха, кроме Истинных, получат модификатор «Убить на месте», который сделает их нежизнь гораздо более неприятной."
+
 
  ashirra_lands_victory_objective_decision: "Земли веры"
  ashirra_lands_victory_objective_decision_tooltip: "Земли ислама - это земли Аширры."
@@ -1322,6 +1344,7 @@
  ghw_region_balkans: "Балканы"
  ghw_region_central_european: "Центральная Европа"
  POD_region_greece: "Греция"
+ POD_region_cabiri_homeland: "Кабиритские земли"
 
  sabbat_POD_region_greece_tt: "Шабаш [Concept('hold', 'удерживает')|E] по крайней мере #Z 33%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('POD_region_greece').GetName] (Текущее значение: [SCOPE.ScriptValue('sabbat_POD_region_greece_percent_value')|0]%)"
  sabbat_custom_sub_saharan_africa_immediate_tt: "Шабаш [Concept('hold', 'удерживает')|E] по крайней мере #Z 33%#! [Concept('counties', 'графств')|E] в [Concept('region', 'регионе')|E] [GetGeographicalRegion('custom_sub_saharan_africa_immediate').GetName] (Текущее значение: [SCOPE.ScriptValue('sabbat_custom_sub_saharan_africa_immediate_percent_value')|0]%)"
@@ -1557,6 +1580,7 @@
  wheel_ages_lose_dharma_prevented_tt: "#warning Если будет выполнено до 1350 года, это приведёт к удалению штрафа [Glossary('дхармы','podgloss.dharma')], который обычно применяется к этой дате.#!"
 
  unshameer_modifier: "Друзья фера"
+ fera_redeemer_modifier: "Очищенные от позора"
 
  reckoning_dragon_river_war_objective_decision: "Девять солнц войны на Драконьей реке"
  reckoning_dragon_river_war_objective_decision_tooltip: "Вы снимете проклятие солнца с [Glossary('Ван-куэй','game_concept_kuei_jin_desc')]."
@@ -1644,8 +1668,9 @@
  overwork_capital_decision_desc: "Город ещё спит. Ему снится нереализованный потенциал.\nРазбудите его, о [Select_CString(ROOT.Char.IsFemale, 'искательница', 'искатель' )]. Верните его к жизни. Улицы станут похожими на вены, а величественные здания окаменеют, как кости, и каждая душа превратится в нервное окончание, свидетельствующее о голодном организме промышленности."
  overwork_capital_decision_tooltip: "Побудить смертных вашей державы воплотить в жизнь ваше видение"
  overwork_capital_decision_confirm: "Рабочие истекут кровью ради меня."
+ overwork_capital_compassionate_faith_tt: "Так как ваше [Concept('rite', 'течение')|E] ценит благополучие смертных:"
  POD_county_overworked_modifier: "Изнурение"
- POD_county_overworked_modifier_desc: "Смертные этого города изнуряют себя работой, чтобы воплотить в жизнь замысел жестокого хозяина."
+ POD_county_overworked_modifier_desc: "Смертные этого города изнуряют себя работой, чтобы воплотить в жизнь замысел жестокого хозяина.\n#weak Этот модификатор будет потерян, если «$tenet_cruelty_of_stars_name$» перестанет быть вашим личным принципом.#!"
 
  one_with_shadows_objective_decision: "Единство с тенью"
  one_with_shadows_objective_decision_tooltip: "Во тьму..."
@@ -1777,6 +1802,7 @@
  ending_the_snake_objective_decision_custom2_ex: "$ending_the_snake_objective_decision_custom2$ #weak ([example.GetFirstName])#!"
  ending_the_snake_objective_decision_effect1: "#TOOLTIP:GAME_TRAIT,setite,[GetNullCharacter] #L Сетиты#!#! больше не смогут даровать [Glossary('объятия','game_concept_Embrace_desc')]"
  ending_the_snake_objective_decision_effect2: "Все уцелевшие сетиты утратят власть."
+ ending_the_snake_objective_decision_horus_effect: "После уничтожения угрозы #TOOLTIP:GAME_TRAIT,setite,[GetNullCharacter] #L сетитов#!#! больше нет риска, что они похитят заклинание Жизни, и вы вновь готовы обучать ему."
 
  land_of_faith_objective_decision: "Земля веры"
  land_of_faith_objective_decision_desc: "Земля веры традиционно относится к древнеегипетским линиям силы, которые на протяжении веков распространялись по всему миру. Это место, где сехем легче использовать и собирать. Если бы мы контролировали эту реку чистой энергии, мы могли бы достичь невозможного."
@@ -1788,16 +1814,16 @@
  land_of_faith_objective_decision_custom2_ex: "$land_of_faith_objective_decision_custom2$ #weak ([example.GetFirstName])#!"
 
  ending_the_serpent_objective_decision: "Главный антагонист: [Glossary('Апофис', 'glossary_wyrm_tt')]"
- ending_the_serpent_objective_decision_desc: "Наша самая фундаментальная цель - восстановить Маат (древнеегипетскую концепцию справедливого равновесия) - считалась невыполнимой из-за существования [UmbraGlossaryLocalized('oblivion','Забвения')], постоянно разрушающего и тревожащего вселенную. Обладая почти бесконечной жизненной силой из Земли веры, мы можем попытаться окончательно разрушить саму концепцию [UmbraGlossaryLocalized('oblivion','Забвения')]."
+ ending_the_serpent_objective_decision_desc: "Наша самая фундаментальная цель - восстановить Маат (древнеегипетскую концепцию справедливого равновесия) - считалась невыполнимой из-за существования [UmbraGlossaryLocalized('oblivion','Забвения')], постоянно разрушающего и тревожащего вселенную. Мы долго вели [Glossary('Войну равновесия','podgloss.warofbalance')], сражаясь за эту цель. Обладая почти бесконечной жизненной силой из Земли веры, мы можем попытаться окончательно разрушить саму концепцию [UmbraGlossaryLocalized('oblivion','Забвения')]."
  ending_the_serpent_objective_decision_tooltip: "Последняя битва [Glossary('Апофиса', 'glossary_wyrm_tt')]"
  ending_the_serpent_objective_decision_confirm: "Триумф Маат."
  ending_the_serpent_objective_decision_custom1: "Все #TOOLTIP:GAME_TRAIT,banemummy,[GetNullCharacter] #L проклятые мумии#!#! должны быть мертвы"
  ending_the_serpent_objective_decision_custom1_ex: "$ending_the_serpent_objective_decision_custom1$ #weak ([example.GetFirstName])#!"
- ending_the_serpent_objective_decision_effect1: "[UmbraGlossaryLocalized('oblivion','Забвение')] мертво, и вы убили его. Равновесие восстановлено, и мир будет медленно двигаться к праведности, как и должно было быть всегда. #X Игра окончена, поскольку мир, который вы знали, изменился так, что это невозможно представить в Crusader Kings 3#!"
+ ending_the_serpent_objective_decision_effect1: "[UmbraGlossaryLocalized('oblivion','Забвение')] мертво, и вы убили его. [Glossary('Война','podgloss.warofbalance')] окончена. Равновесие восстановлено, и мир будет медленно двигаться к праведности, как и должно было быть всегда. #X Игра окончена, поскольку мир, который вы знали, изменился так, что это невозможно представить в Crusader Kings 3#!"
 
 
  serving_eagles_head_objective_decision: "Отсечь голову Орла"
- serving_eagles_head_objective_decision_desc: "Мир обречён, но некоторые всё ещё пытаются спасти этот тонущий корабль. Это бесполезно и только продлевает их жалкое существование. Пришло время [Glossary('Апофису', 'glossary_wyrm_tt')] пировать."
+ serving_eagles_head_objective_decision_desc: "Мир обречён, но некоторые всё ещё [Glossary('пытаются','podgloss.warofbalance')] спасти этот тонущий корабль. Это бесполезно и только продлевает их жалкое существование. Пришло время [Glossary('Апофису', 'glossary_wyrm_tt')] пировать."
  serving_eagles_head_objective_decision_tooltip: "Пиршество [Glossary('Апофиса', 'glossary_wyrm_tt')]"
  serving_eagles_head_objective_decision_confirm: "Последние защитники этого мира пали."
  serving_eagles_head_objective_decision_custom1: "Не должно быть мумий-[Concept('landed', 'землевладельцев')|E] со свойством «[GetTrait('shemsuheru').GetName(GetNullCharacter)]»"
@@ -1843,7 +1869,7 @@
  new_theourgia_arts_objective_decision_desc: "Мы, мумии, застряли в прошлом. Мы всё ещё используем #ONCLICK:CULTURE,[GetCultureByKey('ancient_egyptian').GetID] #TOOLTIP:CULTURE,[GetCultureByKey('ancient_egyptian').GetID] #L древнеегипетскую#!#!#! магию, но с тех пор появилось что-то новое (и, возможно, лучшее?). Созданная поколениями #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародеев#!#!, это очень интересная разработка, которая может дать нам преимущество в ближайшие годы."
  new_theourgia_arts_objective_decision_tooltip: "Чародейство для новой эпохи"
  new_theourgia_arts_objective_decision_confirm: "Чародейство для новой эпохи"
- new_theourgia_arts_objective_decision_custom1: "Есть как минимум 10 [Concept('prisoners', 'узников')|E], которые #italic могли бы#! научиться #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейству#!#! #weak ([GetTrait('bastet').GetName(GetNullCharacter)], #TOOLTIP:GAME_TRAIT,mortal,[GetNullCharacter] #L смертные#!#! или гибриды, напоминающие смертных)#!"
+ new_theourgia_arts_objective_decision_custom1: "Есть как минимум 10 [Concept('prisoners', 'узников')|E], которые #italic могли бы#! научиться #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейству#!#! #weak ([GetTrait('bastet').GetName(GetNullCharacter)] или [Concept('mortal_like_splats', 'виды, напоминающие смертных')|E])#!"
  new_theourgia_arts_objective_decision_custom2: "Есть как минимум 5 [Concept('prisoners', 'узников')|E]-#TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародеев#!#!"
  new_theourgia_arts_objective_decision_custom3: "Есть как минимум 2 [Concept('friends', 'друга')|E]-#TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародея#!#! или другие положительные [Concept('relations', 'отношения')|E]"
  new_theourgia_arts_objective_decision_effect1: "Все #TOOLTIP:GAME_TRAIT,cabiri,[GetNullCharacter] #L кабиритские#!#! мумии смогут стать #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародеями#!#!, и для их [Concept('duchy_building', 'герцогских построек')|E] больше не нужны [Concept('friends', 'друзья')|E]-чародеи"
@@ -1866,8 +1892,9 @@
  protecting_knowledge_objective_decision_desc: "Мир медленно приближается к [Glossary('Шестой эпохе','game_concept_sixth_age_desc')]. Даже если идеальным сценарием было бы предотвратить это, мы должны мыслить реалистично. А это значит, что мы должны готовиться к худшему, мы должны защищать любые знания, которые другие после нас могли бы использовать в грядущие трудные времена."
  protecting_knowledge_objective_decision_tooltip: "Знание в эпоху зла"
  protecting_knowledge_objective_decision_confirm: "Сберечь тусклый свет."
- protecting_knowledge_objective_decision_custom1: "У вас должно быть как минимум #V 3#! [Concept('courtiers', 'придворных')|E] с [Concept('skill', 'навыком')|E] [Concept('learning', 'учёности')|E] выше #V 30#! или [Concept('trait', 'свойством')|E] «[GetTrait('scholar').GetName(GetPlayer)]»"
+ protecting_knowledge_objective_decision_custom1: "У вас должно быть как минимум #V 3#! [Concept('courtiers', 'придворных')|E] с [Concept('skill', 'навыком')|E] [Concept('learning', 'учёности')|E] выше #V 30#! или [Concept('trait', 'свойством')|E] «[GetTrait('erudite').GetName(GetPlayer)]»"
  protecting_knowledge_objective_decision_custom2: "У вас должно быть 2 #V 2#! #ILLUSTRIOUSPURPLE великолепных#! [Concept('artifacts', 'артефакта')|E]-книги"
+ protecting_knowledge_objective_decision_teach_eoel: "Благодаря прогрессу, достигнутому в подготовке к [Glossary('Шестой эпохе','game_concept_sixth_age_desc')], мы теперь можем учить тайнам эликсира Вечной жизни."
 
  protecting_people_objective_decision: "Защитить народ"
  protecting_people_objective_decision_desc: "Мир медленно приближается к [Glossary('Шестой эпохе','game_concept_sixth_age_desc')]. Даже если идеальным сценарием было бы предотвратить это, мы должны мыслить реалистично. А это значит, что мы должны готовиться к худшему, мы должны защищать добродетельных смертных, которые будут сражаться против [Glossary('Императора демонов','podgloss.demonemperor')] в грядущие трудные времена."
@@ -1876,7 +1903,9 @@
  protecting_people_objective_decision_extra1: "Эту цель могут выполнить только [Concept('characters', 'персонажи')|E]-[Concept('landed', 'землевладельцы')|E]"
  protecting_people_objective_decision_custom1: "В вашей [Concept('realm', 'державе')|E] должно быть [Concept('county', 'графство')|E] с [Concept('development', 'развитием')|E] не менее #V 50#!"
  protecting_people_objective_decision_custom2: "В вашей [Concept('realm', 'державе')|E] должно быть [Concept('holding', 'владение')|E] с [Concept('duchy_building', 'герцогской постройкой')|E] [GetBuilding('dragon_nested_alchemy_laboratory_05').GetName]"
- protecting_people_objective_decision_custom3: "Каждое [Concept('county', 'графство')|E] в вашей [Concept('realm', 'державе')|E] должно иметь #V 100#! [Concept('county_control', 'контроля')|E]"
+ protecting_people_objective_decision_custom3: "Вы должны контроль столько [Concept('counties', 'графств')|E], сколько позволяет ваш [Concept('domain_limit', 'предел домена')|E] #weak (на [SCOPE.GetValue('player_domain_limit_still_available')] ниже предела)#!"
+ protecting_people_objective_decision_custom4: "Все [Concept('county', 'графства')|E] в ваших личных [Concept('realm', 'владениях')|E] должны иметь #V 100#! [Concept('county_control', 'контроля')|E]"
+ protecting_people_objective_decision_custom5: "Не менее 50% [Concept('counties', 'графств')|E] в вашей [Concept('realm', 'державе')|E] должны иметь #V 100#! [Concept('county_control', 'контроля')|E]"
 
  protecting_shen_objective_decision: "Защитить шэнь"
  protecting_shen_objective_decision_desc: "Мир медленно приближается к [Glossary('Шестой эпохе','game_concept_sixth_age_desc')]. Даже если идеальным сценарием было бы предотвратить это, мы должны мыслить реалистично. А это значит, что мы должны готовиться к худшему, мы должны защищать оставшихся добродетельных сверхъестественных существ, чтобы они всё ещё могли процветать и защищать человечество от [Glossary('Императора демонов','podgloss.demonemperor')]."
@@ -1891,9 +1920,53 @@
  protecting_middle_kingdom_objective_decision_tooltip: "Выигрывая драгоценное время"
  protecting_middle_kingdom_objective_decision_confirm: "Бесценная отсрочка."
  #protecting_middle_kingdom_objective_decision_custom1: "The Middle Kingdom must not be in the [Glossary('Шестая эпоха','game_concept_sixth_age_desc')]"
- protecting_middle_kingdom_objective_decision_custom2: "На карте не должно быть ни одного [Concept('independent', 'независимого')|E] [Concept('akuma', 'акума')|E]"
+ protecting_middle_kingdom_objective_decision_custom2: "В регионе [GetGeographicalRegion('POD_region_middle_kingdom').GetName] не должно быть ни одного [Concept('independent', 'независимого')|E] [Concept('akuma', 'акума')|E]"
  protecting_middle_kingdom_objective_decision_custom2_ex: "$protecting_middle_kingdom_objective_decision_custom2$ #weak ([example.GetFirstName])#!"
 
+ coming_of_demon_emperor_decision: "Пришествие Императора демонов"
+ coming_of_demon_emperor_decision_desc: "Ваши глупые кузены среди Бессмертных, Ву-Тянь, стараются предотвратить [Glossary('Шестую эпоху','game_concept_sixth_age_desc')] или, по крайней мере, подготовиться к ней. Эти глупы даже не подумали встать на сторону победителей. Зачем страдать, когда можно жить в комфорте и роскоши, получив награду за верность Щедрому господину? Зачем работать на дряхлых глупцов, скрывающихся в далёких небесах, когда вы можете служить Высочайшему владыке, чьё господство над всеми неизбежно и скоро наступит?\n\nТеперь... теперь пришло время заслужить свою награду. Пришло время провозгласить [Glossary('Шестую эпоху','game_concept_sixth_age_desc')] и господство Великолепнейшего повелителя вместе с ней."
+ coming_of_demon_emperor_decision_tooltip: "Пришло время возвестить [Glossary('Шестую эпоху','game_concept_sixth_age_desc')]."
+ coming_of_demon_emperor_decision_confirm: "Когда Солнце умирает, наступает новая эпоха!"
+ coming_of_demon_emperor_decision_effect: "Игра завершится, когда начнётся [Glossary('Шестая эпоха','game_concept_sixth_age_desc')]."
+ coming_of_demon_emperor_decision_requirement_other_decisions: "Вы выполнили [Concept('decision', 'решение')|E] «$bring_down_courts_decision$» или началась [Glossary('Пятая эпоха','game_concept_fifth_age_desc')]"
+ coming_of_demon_emperor_decision_requirement_count: "[Concept('counts', 'Графы')|E] или выше в регионе [GetGeographicalRegion('POD_region_middle_kingdom').GetName] являются [Concept('akuma', 'акума')|E]"
+ coming_of_demon_emperor_decision_requirement_holder: "Находятся под контролем [Concept('akuma', 'акума')|E]"
+ coming_of_demon_emperor_decision_requirement_middle_kingdom: "В [Concept('region', 'регионе')|E] [GetGeographicalRegion('POD_region_middle_kingdom').GetName]"
+ coming_of_demon_emperor_decision_requirement_tou_shen: "Имеет не менее #color_white 5#! [Concept('courtiers', 'придворных')|E] или [Concept('guests', 'гостей')|E] с хворью"
+ coming_of_demon_emperor_decision_requirement_wu_hua: "Все [Concept('counties', 'графства')|E] в вашей державе имеют #color_white 100#! [Concept('control', 'контроля')|E]"
+ coming_of_demon_emperor_decision_requirement_ku_bound_wraiths: "Сумма навыков ваших привязанных призраков не ниже #color_white 150#!"
+ coming_of_demon_emperor_decision_requirement_tou_mu: "Все [Concept('powerful_vassals', 'могущественные вассалы')|E] [Concept('intimidated', 'запуганы')|E] или [Concept('cowed', 'устрашены')|E] вами"
+ coming_of_demon_emperor_decision_requirement_grandmother_witch_rarity: "Экипирована #ILLUSTRIOUSPURPLE великолепная#! или #FAMEDBLUE известная#! книга или дневник"
+ coming_of_demon_emperor_decision_requirement_grandmother_witch_horde: "Владеет не менее #color_white 10#! книгами или дневниками"
+ coming_of_demon_emperor_decision_requirement_hen_tian: "Имеет [Concept('hooks', 'рычаги влияния')|E] как минимум на #color_white 10#! других персонажей"
+ coming_of_demon_emperor_decision_requirement_rangda_capital: "Ваша [Concept('capital', 'столица')|E] поражена [Concept('epidemic', 'поветрием')|E]"
+ coming_of_demon_emperor_decision_requirement_rangda_counties: "[Concept('county', 'Графство')|E] в вашей державе поражено апокалиптическим [Concept('epidemic', 'поветрием')|E]"
+ coming_of_demon_emperor_decision_requirement_ravana: "Вы убили не менее #color_white 12#! [GetTrait('ravnos').GetName(GetPlayer)|l]"
+ coming_of_demon_emperor_decision_requirement_wandering_overlord: "Вы ведёте не менее #color_white 7#! одновременных войн"
+ coming_of_demon_emperor_decision_requirement_haha_no_fukami: "Не менее #color_white 10#! провинций подверглись воздействию вредной погодной магии"
+ coming_of_demon_emperor_decision_requirement_honoyeta_epidemic: "Заражены [Concept('epidemic', 'поветрием')|E]"
+ coming_of_demon_emperor_decision_requirement_hinenuitepo: "[GetModifier('recently_tortured').GetNameWithTooltip] не менее #color_white 10#! пленников"
+ coming_of_demon_emperor_decision_effect_mutually_exclusive:0 "#X Эта цель и «$POD_wu_kuei_redemption_objective_decision$» и «$POD_wu_kuei_new_yama_king_objective_decision$» являются взаимоисключающими#!"
+ POD_region_middle_kingdom: "Поднебесная"
+
+ POD_wu_kuei_redemption_objective_decision: "Шанс на искупление"
+ POD_wu_kuei_redemption_objective_decision_desc: "Будь то ради бессмертия, силы или чего-то ещё, вы продали свою душу. Вы скованы цепями, которые сами выковали. В рабстве у желаний и [Glossary('повелителя Яма','podgloss.yamaking')], ваше существование наполнено муками и преданностью. Это когда-нибудь закончится? Есть ли хоть малейший шанс, что всё это закончится? Сможете ли вы освободиться от своего хозяина? Хотите ли вы этого?"
+ POD_wu_kuei_redemption_objective_decision_tooltip: "Могу ли я обрести искупление? Хочу ли я этого?"
+ POD_wu_kuei_redemption_objective_decision_confirm: "Искупление всегда возможно."
+ POD_wu_kuei_redemption_objective_decision_requirement_piety: "Ваш [Concept('piety_level', 'уровень набожности')|E] — [GetPietyLevelName( '(int32)0' )] (#V 0#!)"
+ POD_wu_kuei_redemption_objective_decision_requirement_devotion: "У вас есть #V 0#! [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] «[GetTrait('integrity').GetName( GetPlayer )]»"
+ POD_wu_kuei_redemption_objective_decision_effect: "На этом ваше путешествие завершится, и, хочется верить, искуплением."
+ POD_wu_kuei_redemption_objective_decision_effect_mutually_exclusive: "#X Эта цель и «$coming_of_demon_emperor_decision$» и «$POD_wu_kuei_new_yama_king_objective_decision$» являются взаимоисключающими#!"
+
+ POD_wu_kuei_new_yama_king_objective_decision: "[Select_CString(ROOT.Char.IsFemale, 'Сама', 'Сам' )] себе [Select_CString(ROOT.Char.IsFemale, 'хозяйка', 'хозяин' )]"
+ POD_wu_kuei_new_yama_king_objective_decision_desc: "[Glossary('Повелители Яма','podgloss.yamaking')] — верховные стражи Йоми-Ван и в основном падшие слуги [Glossary('Нефритового императора','podgloss.augustpersonageofjade')], которые, обнаружив, что ци можно извлекать из человеческих душ посредством пыток, применили такие методы для извлечения этой энергии. Иерархия этих существ меняется со временем, поскольку старые терпят поражение от новых, чьё возвышение часто связано с какими-то крупными потрясениями в мире смертных.\n\nВаше полное знание эликсира Вечной жизни даёт возможность создавать [GetTrait('wutian').GetName( GetPlayer )|l] и [GetTrait('wukuei').GetName( GetPlayer )|l]. Такая сила, сила, невообразимая для дряхлого глупца, которого вы называете #italic мастером#!. Вы можете превзойти их, поработить их, как они поработили вас. Их душам придётся всю вечность страдать от мук, которые превосходят их воображение. Ха... хе... ха... муа... МУАХАХАХА #bold АХАХАХ! ВСЕ БУДУТ СТОЯТЬ НА КОЛЕНЯХ ПЕРЕД ВАМИ! НЕТ БОГА! НЕТ ЦАРЕЙ! НЕТ МАСТЕРОВ!#!\n\n#N #bold НИКОГО, КРОМЕ ВАС!#!#!"
+ POD_wu_kuei_new_yama_king_objective_decision_tooltip: "Вам следует свергнуть древнюю развалину, которую вы зовёте #italic мастером#!."
+ POD_wu_kuei_new_yama_king_objective_decision_confirm: "Зачем служить... когда можно КОНТРОЛИРОВАТЬ! #bold ВСЁ!#!"
+ POD_wu_kuei_new_yama_king_objective_decision_requirement_wukuei: "Вы можете сварить эликсир Вечной жизни для [GetTrait('wukuei').GetName( GetPlayer )|l]"
+ POD_wu_kuei_new_yama_king_objective_decision_requirement_wutian: "Вы можете сварить эликсир Вечной жизни для [GetTrait('wutian').GetName( GetPlayer )|l]"
+ POD_wu_kuei_new_yama_king_objective_decision_requirement_umbra: "Ваша [Concept('umbra_aptitude', 'пригодность Умбры')|E] должна превышать [grace_i]#V 200#!"
+ POD_wu_kuei_new_yama_king_objective_decision_effect_mutually_exclusive: "#X Эта цель и «$coming_of_demon_emperor_decision$» и «$POD_wu_kuei_redemption_objective_decision$» являются взаимоисключающими#!"
+ POD_wu_kuei_new_yama_king_objective_decision_effect_battle: "Вам предстоит начать великую битву с [Glossary('повелителем Яма','podgloss.yamaking')] за его владения. Будьте внимательны, он не сдастся без серьёзного боя."
 
  achieve_ra_hekau_objective_decision: "Достичь Ра-хекау"
  achieve_ra_hekau_objective_decision_desc: "Древние шемсу-геру называли Ра-хекау высшим искусством хекау, господством над миром, используя [Glossary('истинные имена','podgloss.truename')] всего сущего, чтобы подчинить его своей воле. Согласно египетской легенде, Ра-хекау впервые был раскрыт, когда бог солнца Ра назвал Исиде своё [Glossary('истинное имя','podgloss.truename')], чтобы она могла исцелить его от смертельного отравления. Это позволило ей стать богиней магии и создать заклинание Жизни.\nС тех пор Ра-хекау был давно утерян и считался недоступным для изучения мумиями, но случались и более странные вещи..."
@@ -1906,6 +1979,24 @@
  POD_shih_summon_decision_confirm: "Призвать ши"
  POD_shih_summon_decision_tooltip: "Вместе против Йоми"
  POD_shih_summon_decision_effect: "Вы призовёте [GetTrait('shih').GetName(GetNullCharacter)|l] к своему [Concept('court', 'двору')|E]."
+
+ POD_wutian_change_house_decision: "Уравновесить свой аспект"
+ POD_wutian_change_house_decision_desc: "Вечность – это долго, а судьба – штука хитрая. То, что когда-то влекло вас по одному пути, может больше не существовать. Возможно, вам надоел стоицизм и сдержанность [GetDynastyByID( 'POD_mummy_dynasty_xianlung' ).GetBaseName], или вы считаете, что импульсивность и энтузиазм [GetDynastyByID( 'POD_mummy_dynasty_wufeng' ).GetBaseName] утомляют. Возможно, пришло время попробовать другой путь..."
+ POD_wutian_change_house_decision_confirm: "Мне нужен новый путь"
+ POD_wutian_change_house_decision_tooltip: "Пришло ли время выбрать новый путь?"
+ POD_wutian_change_house_decision_requirement_artifact: "[GetPODArtifactName('flowers_scarlet_ebon_link')] принадлежит вам"
+ POD_wutian_change_house_decision_requirement_xianlung: "В древе [Concept('lifestyle', 'пути')|E] $fengtan_visible$ больше [Concept('perks', 'достоинств')|E] #weak ([GetPlayer.MakeScope.ScriptValue('POD_tan_lifestyle_feng_tan_tree_perk_amount')])#!, чем в древе [Concept('lifestyle', 'пути')|E] $lungtan_visible$ #weak ([GetPlayer.MakeScope.ScriptValue('POD_tan_lifestyle_lung_tan_tree_perk_amount')])#!"
+ POD_wutian_change_house_decision_requirement_wufeng: "В древе [Concept('lifestyle', 'пути')|E] $lungtan_visible$ больше [Concept('perks', 'достоинств')|E] #weak ([GetPlayer.MakeScope.ScriptValue('POD_tan_lifestyle_lung_tan_tree_perk_amount')])#!, чем в древе [Concept('lifestyle', 'пути')|E] $fengtan_visible$ #weak ([GetPlayer.MakeScope.ScriptValue('POD_tan_lifestyle_feng_tan_tree_perk_amount')])#!"
+ POD_wutian_change_house_decision_effect_xianlung: "Изменить свой [Concept('house', 'дом')|E] на [GetDynastyHouseByID( 'house_white_lotus_society' ).GetBaseName], [GetDynastyHouseByID( 'house_twilight_scholars' ).GetBaseName] или [GetDynastyHouseByID( 'house_jade_sentinels' ).GetBaseName]."
+ POD_wutian_change_house_decision_effect_wufeng: "Изменить свой [Concept('house', 'дом')|E] на [GetDynastyHouseByID( 'house_celestial_arrows' ).GetBaseName], [GetDynastyHouseByID( 'house_righteous_peach_blossoms' ).GetBaseName] или [GetDynastyHouseByID( 'house_brotherhood_of_the_scarlet_lantern' ).GetBaseName]."
+
+ POD_spell_of_life_conversion: "Волна веры"
+ POD_spell_of_life_conversion_desc: "Ваше понимание заклинания Жизни дало уникальное понимание барьера между жизнью и смертью. Если бы вы захотели, вы могли бы черпать силу из [UmbraGlossaryLocalized('shadowlands','Загробного мира')] и использовать её, чтобы взорвать умы тех, кто находится в вашей державе. Их разум может рухнуть. Их тела могут быть искривлены. В любом случае, они осознают ошибочность своего пути."
+ POD_spell_of_life_conversion_confirm: "Проникая сквозь Завесу..."
+ POD_spell_of_life_conversion_tooltip: "Используя свои знания заклинания Жизни, вы можете обратить свою державу в более приемлемые конфессии"
+ POD_spell_of_life_conversion_effect1: "Графства вашей державы примут вашу конфессию."
+ POD_spell_of_life_conversion_effect2: "Ваши действия повредят [UmbraGlossaryLocalized('shadowlands','Загробный мир')] и призовут орду через созданный вами разрыв в Завесе."
+ POD_spell_of_life_conversion_effect4: "Ваши вассалы примут вашу или более дружественную ей конфессию, хотя это может превратить их в [GetTrait('asekh_sen').GetName( GetNullCharacter )|l]."
 
  POD_demonology_focus_decision: "Сосредоточиться на демонологии"
  POD_demonology_focus_decision_desc: "Многие аспекты #TOOLTIP:GAME_TRAIT,demonology,[GetPlayer] #L демонологии#!#! всё ещё сбивают меня с толку, может быть, если я сосредоточусь на их изучении в течение следующих нескольких лет, это, наконец, даст мне то, что я хочу?"
@@ -1970,3 +2061,165 @@
  mnemachien_objective_decision_confirm: "Наконец-то безопасность."
  mnemachien_objective_decision_effect_tooltip: "Вы получите модификатор «[GetModifier('lutetian_roots_modifier').GetNameWithTooltip]» и возможность развивать свою державу через поручение управляющего."
  mnemachien_objective_decision_tooltip: "Держава нуждается в чистке."
+
+ ergenekon_objective_decision: "Вновь разжечь кузницы Эргенекона"
+ ergenekon_objective_decision_desc: "На протяжении веков гора была нашим единственным щитом от угроз с Востока. Загнанные нашими врагами в укрытие, мы выжили, овладев искусством кузнечного дела. С тех пор, как мы вернулись в Степи, наши кузницы остались холодными. Но ночь жестока, как всегда, и Эрк не должны забывать сталь, которая их защищала. Возродив великие кузницы, мы вернём утраченные таланты, а огни Эргенекона затмят небо."
+ ergenekon_objective_decision_tooltip: "Дуб и железо."
+ ergenekon_objective_decision_effect_tooltip: "Возобновив работу в Эргенеконе, вы получите новую особую постройку и полезные модификаторы."
+ ergenekon_objective_decision_confirm: "Огни Эргенекона вновь ревут."
+ ergenekon_objective_decision_valid_tooltip: "У вас должно быть не менее 12 воителей и не менее 6 полков профессионалов."
+ ######################################################
+ # VAMPIRE CLAN HIDEOUT DECISION LOCALIZATION
+ ######################################################
+
+ # GANGREL — Recruit Controlled Animals
+ POD_gangrel_recruit_beast_den_animals: "Собрать стаю из звериного логова"
+ POD_gangrel_recruit_beast_den_animals_desc: "Ваше звериное логово привлекло животных из окрестных диких земель: волков, огромных летучих мышей и мелких существ, подчинённых вашей воле силой крови Анимализма. Соберите их в боевой отряд."
+ POD_gangrel_recruit_beast_den_animals_tooltip: "Наберите полк управляемых животных. Размер полка зависит от уровня звериного логова.\n#bold Уровень 1-2:#! 100 зверей\n#bold Уровень 2-3:#! 200 зверей\n#bold Уровень 5:#! 300 зверей\n#bold Уровень 6:#! 400 зверей"
+ POD_gangrel_recruit_beast_den_animals_confirm: "Стая ответила. Они в вашем распоряжении."
+
+ # TOREADOR — Recruit Artisan Courtiers
+ POD_toreador_recruit_salon_artisans: "Пригласить подопечного салона"
+ POD_toreador_recruit_salon_artisans_desc: "Репутация вашего салона привлекает талантливых смертных, художников, поэтов и ремесленников, ищущих покровителя, достойного их даров. Выберите одного, который присоединится к вашему двору."
+ POD_toreador_recruit_salon_artisans_tooltip: "Нанять придворного ремесленника со свойством «Поэт». Его способности зависят от уровня салона."
+ POD_toreador_recruit_salon_artisans_confirm: "К вашему двору присоединяется новый голос."
+
+ # IMPUNDULU — Recruit Bomkazi
+ POD_impundulu_recruit_bomkazi: "Посвятить новую Бомкази"
+ POD_impundulu_recruit_bomkazi_desc: "Связь между Импундулу и Бомкази древняя и священная: это не подчинение вампирского дитя сиру, а договор между птицей-молнией и ведьмой. Новая посвящённая готова присоединиться к вашему дому."
+ POD_impundulu_recruit_bomkazi_tooltip: "Привлечь к своему двору #TOOLTIP:GAME_TRAIT,bomkazi_witch,[GetNullCharacter] #L ведьму Бомкази#!#!. Время восстановления снижается с уровнем комплекса Бомкази.\n#bold Уровень 1:#! Время восстановления 40 лет\n#bold Уровень 5:#! Время восстановления 20 лет"
+ POD_impundulu_recruit_bomkazi_confirm: "Ковен растёт. Новая ведьма присоединится к вашему дому."
+
+ # SALUBRI HEALER — Develop County
+ POD_salubri_healer_develop_county: "Содействовать развитию домена"
+ POD_salubri_healer_develop_county_desc: "Через Валерен и тихие советы целители Салюбри способствуют развитию самой земли. Чума отступает, урожаи улучшаются, и люди процветают под бдительным взором третьего глаза."
+ POD_salubri_healer_develop_county_tooltip: "Потратить благочестие, чтобы повысить развитие вашего столичного графства. Величина прироста зависит от учёности и уровня целительской кельи."
+ POD_salubri_healer_develop_county_confirm: "Земля исцеляется и вновь процветает."
+
+ # SALUBRI WARRIOR — Recruit Martial Mortals
+ POD_salubri_warrior_recruit_mortals: "Обучить воина Кодекса"
+ POD_salubri_warrior_recruit_mortals_desc: "Кодекс Самиэля требует воинов, достойных борьбы с тьмой. Реликварий готовит солдат методами Воинов крови: смертных, способных стоять плечом к плечу с каинитами и не дрогнуть."
+ POD_salubri_warrior_recruit_mortals_tooltip: "Нанять смертного придворного, имеющего военное образование. Качество образования зависит от уровня реликвария.\n#bold Уровень 1-2:#! [GetTrait('education_martial_2').GetName(GetNullCharacter)]\n#bold Уровень 3-4:#! [GetTrait('education_martial_3').GetName(GetNullCharacter)] (может получить свойство командира)\n#bold Уровень 5:#! [GetTrait('education_martial_4').GetName(GetNullCharacter)] (может получить свойства командира или конфессии)"
+ POD_salubri_warrior_recruit_mortals_confirm: "Новый солдат Кодекса готов."
+
+ # ASSAMITE VIZIER — Enrich Province
+ POD_assamite_vizier_enrich_province: "Оценка визиря"
+ POD_assamite_vizier_enrich_province_desc: "Архив учёного хранит знания об управлении, о которых большинство князей могут лишь мечтать. Визирь воплощает эти знания в деле: налаживает налогообложение, улучшает инфраструктуру и ускоряет развитие провинции."
+ POD_assamite_vizier_enrich_province_tooltip: "На ваше столичное графство будет применён на 10 лет модификатор провинции:\nБонусы #bold к налогам и приросту развития#!, величина которых зависит от уровня архива."
+ POD_assamite_vizier_enrich_province_confirm: "Провинция процветает под властью визиря."
+
+ ######################################################
+ # ARMY NAME LOCALIZATION
+ ######################################################
+ gangrel_beast_den_pack: "Стая из звериного логова"
+
+ ######################################################
+ # NOTIFICATIONS
+ ######################################################
+ POD_salubri_warrior_recruit_mortals_notification: "Воин завербован"
+ POD_salubri_warrior_recruit_mortals_recruited_tt: "Смертный воин ответил на зов реликвария и присоединился к вашему двору."
+
+ # Andeleon/Asakku Content
+ # Blood Inception
+ POD_asakku_blood_inception_decision: "Зарождение крови"
+ POD_asakku_blood_inception_decision_desc: "Безумие, вызванное Изменчивостью, или куда более глубокое проклятие, наложенное сущностью древнее Творения? Для вас это неважно. Истина известна: её несёт кровь. И вместе с кровью вы распространяете её."
+ POD_asakku_blood_inception_needs_prisoner_tt: "У вас должен быть пленник-вампир без истинной веры."
+
+ # Seeding the Garden
+ POD_asakku_seeding_the_garden_decision: "Засеять сад"
+ POD_asakku_seeding_the_garden_decision_desc: "Если эта сущность существовала до Творения, возможно, она способна осквернить всё возникшее после него. Напитать её порчей саму землю — достойная кара за то, что у неё отняли мир, по праву принадлежавший ей ещё до начала времён."
+ POD_asakku_seeding_needs_county_tt: "Вы должны владеть графством без существующей порчи Изменчивости."
+
+ # Soul Whispers
+ POD_asakku_soul_whispers_interaction: "Шёпот души"
+ POD_asakku_soul_whispers_interaction_desc1: "Некоторые называют сущность паразитом. Пусть это унизительное и примитивное описание, всё же приходится признать: скрытностью она похожа на этих существ. Теперь раскрывать секреты должно быть легко: вы сами носите в себе величайшую тайну."
+ POD_asakku_soul_whispers_needs_courtier_secrets_tt: "Двор персонажа [recipient.GetShortUIName] двор не хранит никаких секретов"
+
+ POD_asakku_depth_trigger: "Порча Асакку должна достичь [SCOPE.GetValue('assaku_depth_requirement')|V0]."
+
+ # Phase 1 Objective
+ POD_asakku_phase1_objective_decision: "Наблюдатель у колодца: Заражение души"
+ POD_asakku_phase1_objective_decision_desc: "Охотники-элиуды бдительны. Поэтому первый этап неизбежно будет скромным и тайным. Убедитесь, что кто-то ещё несёт порчу Асакку: так начнётся медленное, но, остаётся надеяться, неумолимое распространение."
+ POD_asakku_phase1_infected_tt: "Хотя бы #V 1#! [Concept('vassal', 'вассал')|E] или [Concept('follower', 'последователь')|E] должен иметь свойство «[GetTrait('POD_asakku_soul_infection').GetName(GetNullCharacter)]»."
+
+ # Phase 2 Objective
+ POD_asakku_phase2_objective_decision: "Наблюдатель у колодца: Распространяющееся пятно"
+ POD_asakku_phase2_objective_decision_desc: "Заражение больше не удастся скрыть. Охотники-элиуды подняты по тревоге, и второй этап идёт полным ходом. Пришло время распространить порчу гораздо дальше и, что ещё важнее, пережить первые ответные удары."
+ POD_asakku_phase2_inception_tt: "[Concept('blood_inception', 'Зарождение крови')|E] должно быть применено как минимум к #V 3#! персонажам."
+ POD_asakku_phase2_phalanx_tt: "Вы должны пережить нападение фаланги элиудов."
+
+ # Phase 3 Objective
+ POD_asakku_phase3_objective_decision: "Наблюдатель у колодца: Изгнание западных узурпаторов"
+ POD_asakku_phase3_objective_decision_desc: "Заражение уступает место господству. Пришло время окончательно уничтожить западных охотников-элиудов и завоевать плацдарм для продвижения на восток. Там лежат ваша судьба и самое сердце охотников."
+ POD_asakku_phase3_regional_elioud_tt: "Ни один неосквернённый элиуд не должен владеть титулами на Ближнем Востоке или в Анатолии."
+ POD_asakku_phase3_baghdad_tt: "Вы должны контролировать графство Багдад."
+ POD_asakku_phase3_enoch_tt: "Вы должны контролировать Енох (Эдессу)"
+
+ # Phase 4 Objective
+ POD_asakku_phase4_objective_decision: "Наблюдатель у колодца: Восточная расплата"
+ POD_asakku_phase4_objective_decision_desc: "Последний этап. Война достигает самого центра, где всё ещё стоит цитадель элиудов. Когда охотники исчезнут, а глубина порчи достигнет предела, сущность будет довольна... и готова."
+ POD_asakku_phase4_mokhadaji_tt: "Мохададжи Ранпур должен быть мёртв или стать Асакку."
+ POD_asakku_phase4_nattadevi_tt: "Наттадеви должна быть мертва или стать Асакку."
+ POD_asakku_phase4_elioud_tt: "Ни один живой персонаж, владеющий землями, не должен иметь свойство «[GetTrait('POD_asakku_elioud').GetName(GetNullCharacter)]», не будучи при этом Асакку."
+
+ # Tooltip/confirm keys for decisions
+ POD_asakku_blood_inception_decision_tooltip: "Насильно заразить пленённого вампира Асакку через Зарождение крови."
+ POD_asakku_blood_inception_decision_confirm: "Совершить ритуал Зарождения крови."
+ POD_asakku_seeding_the_garden_decision_tooltip: "Наделить графство порчей Изменчивости."
+ POD_asakku_seeding_the_garden_decision_confirm: "Засеять сад."
+ POD_asakku_soul_whispers_interaction_tooltip: "Использовать связь крови Асакку, чтобы раскрыть секрет при дворе этого вампира."
+ POD_asakku_phase1_objective_decision_tooltip: "Первый этап замысла Асакку. Распространите заражение. Заложите основу."
+ POD_asakku_phase1_objective_decision_confirm: "Фундамент заложен."
+ POD_asakku_phase2_objective_decision_tooltip: "Второй этап. Создайте истинных новообращённых через Зарождение крови. Переживите ответный удар элиудов."
+ POD_asakku_phase2_objective_decision_confirm: "Пятно распространяется."
+ POD_asakku_phase3_objective_decision_tooltip: "Третий этап. Изгоните элиудов из западных владений. Займите древние престолы."
+ POD_asakku_phase3_objective_decision_confirm: "Западный предел принадлежит нам."
+ POD_asakku_phase4_objective_decision_tooltip: "Последний этап. Устраните восточных элиудов. Вознеситесь."
+ POD_asakku_phase4_objective_decision_confirm: "Расплата завершена."
+
+ ######################################################
+ # Mary the Black — Decisions
+ ######################################################
+
+ # Tablet recovery
+ POD_maryb_recover_tablet_decision: "Вернуть табличку"
+ POD_maryb_recover_tablet_decision_desc: "Написанные кровью таблички покоятся под Дамаском, Мосулом и Багдадом. Заберите их. Прочитайте написанное."
+ POD_maryb_recover_tablet_decision_custom: "Графство, владеющее одной из трех табличек, которые Мэри ещё не вернула, должно полностью контролироваться её державой, или Мэри должна быть безземельным авантюристом, чей лагерь находится в графстве, владеющем одной из трёх табличек, которые она ещё не вернула."
+ POD_maryb_recover_tablet_decision_tooltip: "Заберите табличку. Прочитайте написанное."
+ POD_maryb_recover_tablet_decision_confirm: "Прочитать табличку"
+
+ POD_maryb_write_tablet_decision: "Написать последнюю табличку"
+ POD_maryb_write_tablet_decision_desc: "Три таблички возвращены и прочитаны. Влажная глина четвёртой лежит под вашим писалом. Теперь можно взглянуть на то, что вы на самом деле совершили, и написать конец: ваш, его — или того, чем вы стали вместе."
+ POD_maryb_write_tablet_decision_tooltip: "Возьмите писало и напишите конец: ваш, его — или того, чем вы стали вместе."
+ POD_maryb_write_tablet_decision_confirm: "Взять писало"
+ POD_maryb_write_tablet_decision_custom1: "[GetTitleByKey('k_angellisater').GetNameNoTier] не должен существовать."
+ POD_maryb_write_tablet_decision_custom2: "[GetTitleByKey('k_olives').GetNameNoTier] не должен существовать."
+
+ POD_maryb_resurrect_the_dream_decision: "Возродить Мечту"
+ POD_maryb_resurrect_the_dream_decision_desc: "Из Константинополя возрождается патриархат — таким, каким он всегда должен был стать. Мечта делает первый вдох под новым знаменем, а титул патриарха возвращается к своему первому обладателю.\n\n#shinygold Я ждал этого. Я никогда не сомневался, что всё вернётся ко мне. Возлюбленная, давай позовём их домой.#!\n\n• Не-фанатичные вассалы примут конфессию Кодекса наследия \n• Последователи Via Archangeli примут конфессию Кодекса наследия \n• Будет получен титул империи [GetTitleByKey('e_byzantium').GetName] \n• Будет получен титул патриарха Константинополя."
+ POD_maryb_resurrect_the_dream_decision_tooltip: "Мечта делает первый вздох под новым знаменем."
+ POD_maryb_resurrect_the_dream_decision_confirm: "Возродить Мечту"
+
+ POD_maryb_found_dream_house_decision: "Основать дом вернувшейся Мечты"
+ POD_maryb_found_dream_house_decision_desc: "Мэри была запятнана линией крови диаблериста; Михаил так и не успел приобщить её к своей. Теперь ни то, ни другое не имеет значения. Существо, ходящее в её теле, хочет собственный дом, а дому нужны престол, имя и город. Этим престолом станет Константинополь. Отделите новую ветвь от древней крови, и пусть мир сородичей научится бояться имени, которого ещё никогда не слышал.\n\n#shinygold Наш дом, любимый. Ни мой, ни твой. Дверь, которую мы открываем вместе.#!"
+ POD_maryb_found_dream_house_decision_tooltip: "Основать новую ветвь древней крови."
+ POD_maryb_found_dream_house_decision_confirm: "Основать дом"
+ POD_maryb_found_dream_house_children_tt: "Потомки Мэри, всё ещё принадлежащие к её дому, перейдут в новый дом и вместе с ней приобщаться к Мечте."
+
+ POD_maryb_decani_hunt_decision: "Нечестивое вознесение: Охота на Декани"
+ POD_maryb_decani_hunt_decision_desc: "С тех пор как Анадук выторговал ваше перерождение, Аностер держит часть вашего имени в своей книге. Сегодня этой записи придёт конец. Свяжите его в круге освящённой земли и разрушьте сделку, которая создала вас."
+ POD_maryb_decani_hunt_decision_tooltip: "Разрушить сделку, которая создала вас."
+ POD_maryb_decani_hunt_decision_custom: "Мэри знает [Glossary('истинное имя','podgloss.truename')] персонажа [GetScriptedCharacterByHistoryID('9201500').GetFirstName]"
+ POD_maryb_decani_hunt_decision_confirm: "Начать связывание"
+
+ POD_maryb_found_well_decision: "Основать Колодец жертвоприношений"
+ POD_maryb_found_well_decision_desc: "Под собором Святой Софии, в убежище, оставленной Михаилом, поднимаются первые камни и льётся первая кровь. Колодец начат, шахта опущена на другую сторону, питаемая не золотом или молитвой, а самим городом.\n\nНаверху Константинополь останется маяком смертной веры, но внизу, обряд за обрядом, его подбрюшье станет отражением ада на Земле. Опустим первый камень.\n\n#shinygold Как вверху, так и внизу, возлюбленная. Начни, и я покажу тебе, насколько это глубоко.#!"
+ POD_maryb_found_well_decision_tooltip: "Основать Колодец жертвоприношений под Константинополем."
+ POD_maryb_found_well_decision_confirm: "Заложить первый камень"
+
+ POD_maryb_well_sacrifice_decision: "Принести город в жертву Колодцу"
+ POD_maryb_well_sacrifice_decision_desc: "Колодец вырыт под собором Святой Софии. Его питают не золотом и молитвами, а самим городом: его развитием, его ремёслами, всей тяжестью его живой плоти, низвергаемой в шахту, которая каждую ночь всё ближе к иному миру.\n\nНаверху Константинополь остаётся светочем веры смертных. Внизу же, обряд за обрядом, его чрево становится отражением ада на земле. Совершите ещё один обряд: обескровьте город, и полученное приношение позволит углубить Колодец.\n\n#shinygold Что наверху, то и внизу, любимый. Ещё немного их — во имя нас.#!"
+ POD_maryb_well_sacrifice_decision_custom: "Мэри полностью контролирует [GetTitleByKey('c_byzantion').GetNameNoTier], и у города ещё есть [Concept('development','развитие')|E], которое можно отнять."
+ POD_maryb_well_sacrifice_decision_tooltip: "Скормить город Колодцу."
+ POD_maryb_well_no_pending_offering_tooltip: "В шахте не должно быть подношений. Сначала нужно израсходовать уже приготовленные подношения."
+ POD_maryb_well_sacrifice_decision_confirm: "Обескровить город"
