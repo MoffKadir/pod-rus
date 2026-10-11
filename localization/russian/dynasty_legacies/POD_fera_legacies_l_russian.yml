@@ -8,7 +8,7 @@
  neutral_totems_legacy_1_name: "Ястреб"
  neutral_totems_legacy_1_perk: "@warning_icon!#X Чтобы разблокировать это наследие династии, вам нужно стать мастером-охотником.#!"
  neutral_totems_legacy_2_name: "Сфинкс"
- neutral_totems_legacy_2_perk: "@warning_icon!#X Чтобы разблокировать это наследие династии, вам нужно иметь свойство «[GetTrait('scholar').GetName( GetPlayer )]» и навык учёности 20 или выше. Вам также нужно предыдущее наследие.#!"
+ neutral_totems_legacy_2_perk: "@warning_icon!#X Чтобы разблокировать это наследие династии, вам нужно иметь свойство «[GetTrait('erudite').GetName( GetPlayer )]» и навык учёности 20 или выше. Вам также нужно предыдущее наследие.#!"
  neutral_totems_legacy_3_name: "Лисица"
  neutral_totems_legacy_3_perk: "@warning_icon!#X Чтобы разблокировать это наследие, вам нужно полностью открыть три древа пути интриг. Вам также нужны предыдущие наследия.#!"
  neutral_totems_legacy_4_name: "Чёрная черепаха"
@@ -77,6 +77,18 @@
  HERNE_LEGACY_PERK_UNLOCK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('herne').GetName]"
  FIANNA_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к дипломатии и доблести."
 
+ whitehowler_legacy_track_name: "Наследие Белых завывателей"
+ whitehowler_legacy_track_desc: "Утерянные знания павшего племени, дарованные Львом достойным наследникам."
+ whitehowler_legacy_1_name: "Благословение Льва"
+ whitehowler_legacy_2_name: "Голоса из загробного мира"
+ whitehowler_legacy_3_name: "Дикие дети"
+ whitehowler_legacy_4_name: "Учение доблести"
+ whitehowler_legacy_5_name: "Судьбоносное возрождение"
+
+ WHITEHOWLER_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('boderia_ritual_stones_03').GetName]."
+ MACTIRE_LEGACY_PERK_UNLOCK_EFFECT: "Доступны [Concept('men_at_arms', 'профессионалы')|E] - [GetMaA('mactire').GetName]"
+ WHITEHOWLER_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к учёности и доблести."
+
  getoffenris_legacy_track_name: "Наследие Отпрысков Фенрира"
  getoffenris_legacy_track_desc: "Сыновья Великого Фенрира передают знания от скальдов до начинающих героев."
  getoffenris_legacy_1_name: "Благословлённые Фенриром"
@@ -99,6 +111,18 @@
 
  WARDEROFMEN_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('city_wolves_03').GetName]."
  WARDEROFMEN_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к учёности и управлению."
+
+ uktena_legacy_track_name: "Наследие Уктена"
+ uktena_legacy_track_desc: "Знания Старшего брата, переданные его братьям и родичам."
+ uktena_legacy_1_name: "Благословение Уктены"
+ uktena_legacy_2_name: "Сверхъестественные охотники"
+ uktena_legacy_3_name: "Поддержка Младшего брата"
+ uktena_legacy_4_name: "Оккультные учения"
+ uktena_legacy_5_name: "Сибирские волки"
+
+ uktena_legacy_2_perk: "Доступна новая постройка - [GetBuilding('uktena_hunter_lodge_03').GetName]."
+ wendigo_maa_legacy_perk_unlock_effect: "Доступны [Concept('men_at_arms', 'профессионалы')|E] - [GetMaA('wendigo_maa').GetName]"
+ uktena_legacy_4_perk: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к учёности и доблести."
 
  redtalon_legacy_track_name: "Наследие Красных Когтей"
  redtalon_legacy_track_desc: "Знания защитников [Glossary('Вильда', 'glossary_wyld_tt')] передаются от альф к детенышам."
@@ -212,7 +236,7 @@
  khan_legacy_5_name: "Тигры и пантеры"
  khan_legacy_5_perk: "Доступны [men_at_arms|El] - [GetMaA('children_saraam').GetName]\n#flavor Дети Пантеры, багира, всегда были друзьями хан. Оба племени работают сообща, чтобы исцелить израненную нацию Бастет.#!"
 
- simba_legacy_track_name: "Дети Селин"
+ simba_legacy_track_name: "Дети [Glossary('Селин', 'glossary_luna_tt')]"
  simba_legacy_track_desc: "Сама Луна поручила симба править враждующей и неэффективной нацией Бастет. Можно ли быть самонадеянным, когда есть судьба?"
  simba_legacy_1_name: "Венценосные воины"
  simba_legacy_1_perk: "Доступны [men_at_arms|El] - [GetMaA('seline_pride').GetName]\n#flavor Львы - правители, и поэтому им редко приходится самим вступать в войну, но когда они это делают, всем напоминают об их статусе.#!"

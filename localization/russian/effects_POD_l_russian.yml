@@ -358,19 +358,19 @@
  TARGET_GAINS_A_PLANETARYGIFTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_planetarygifts_lifestyle_desc #E планетарных даров#!#!"
  TARGET_GAINED_A_PLANETARYGIFTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области #TOOLTIP:game_concept_planetarygifts_lifestyle_desc #E планетарных даров#!#!"
 
- GAINS_URGETAINTS_LIFESTYLE_XP: "[Concept('urgetaints_lifestyle', 'Опыт скверны инстинктов')|E] увеличивается на $VALUE|V0$"
- GAINED_URGETAINTS_LIFESTYLE_XP: "[Concept('urgetaints_lifestyle', 'Опыт скверны инстинктов')|E] увеличен на $VALUE|V0$"
- I_GAIN_URGETAINTS_LIFESTYLE_XP: "Ваш [Concept('urgetaints_lifestyle', 'опыт скверны инстинктов')|E] увеличивается на $VALUE|V0$"
- I_GAINED_URGETAINTS_LIFESTYLE_XP: "Ваш [Concept('urgetaints_lifestyle', 'опыт скверны инстинктов')|E] увеличен на $VALUE|V0$"
- TARGET_GAINS_URGETAINTS_LIFESTYLE_XP: "[Concept('urgetaints_lifestyle', 'Опыт скверны инстинктов')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличивается на $VALUE|V0$"
- TARGET_GAINED_URGETAINTS_LIFESTYLE_XP: "[Concept('urgetaints_lifestyle', 'Опыт скверны инстинктов')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличен на $VALUE|V0$"
+ GAINS_MAELJINGIFTS_LIFESTYLE_XP: "[Concept('maeljingifts_lifestyle', 'Опыт даров маэлджинов')|E] увеличивается на $VALUE|V0$"
+ GAINED_MAELJINGIFTS_LIFESTYLE_XP: "[Concept('maeljingifts_lifestyle', 'Опыт даров маэлджинов')|E] увеличен на $VALUE|V0$"
+ I_GAIN_MAELJINGIFTS_LIFESTYLE_XP: "Ваш [Concept('maeljingifts_lifestyle', 'опыт даров маэлджинов')|E] увеличивается на $VALUE|V0$"
+ I_GAINED_MAELJINGIFTS_LIFESTYLE_XP: "Ваш [Concept('maeljingifts_lifestyle', 'опыт даров маэлджинов')|E] увеличен на $VALUE|V0$"
+ TARGET_GAINS_MAELJINGIFTS_LIFESTYLE_XP: "[Concept('maeljingifts_lifestyle', 'Опыт даров маэлджинов')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличивается на $VALUE|V0$"
+ TARGET_GAINED_MAELJINGIFTS_LIFESTYLE_XP: "[Concept('maeljingifts_lifestyle', 'Опыт даров маэлджинов')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] увеличен на $VALUE|V0$"
 
- GAINS_A_URGETAINTS_LIFESTYLE_PERKPOINT: "Получает $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('urgetaints_lifestyle', 'скверны инстинктов')|E]"
- GAINED_A_URGETAINTS_LIFESTYLE_PERKPOINT: "Получено $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('urgetaints_lifestyle', 'скверны инстинктов')|E]"
- I_GAIN_A_URGETAINTS_LIFESTYLE_PERKPOINT: "Вы получите $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('urgetaints_lifestyle', 'скверны инстинктов')|E]"
- I_GAINED_A_URGETAINTS_LIFESTYLE_PERKPOINT: "Вы получили $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('urgetaints_lifestyle', 'скверны инстинктов')|E]"
- TARGET_GAINS_A_URGETAINTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('urgetaints_lifestyle', 'скверны инстинктов')|E]"
- TARGET_GAINED_A_URGETAINTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('urgetaints_lifestyle', 'скверны инстинктов')|E]"
+ GAINS_A_MAELJINGIFTS_LIFESTYLE_PERKPOINT: "Получает $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('maeljingifts_lifestyle', 'даров маэлджинов')|E]"
+ GAINED_A_MAELJINGIFTS_LIFESTYLE_PERKPOINT: "Получено $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('maeljingifts_lifestyle', 'даров маэлджинов')|E]"
+ I_GAIN_A_MAELJINGIFTS_LIFESTYLE_PERKPOINT: "Вы получите $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('maeljingifts_lifestyle', 'даров маэлджинов')|E]"
+ I_GAINED_A_MAELJINGIFTS_LIFESTYLE_PERKPOINT: "Вы получили $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('maeljingifts_lifestyle', 'даров маэлджинов')|E]"
+ TARGET_GAINS_A_MAELJINGIFTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] получит $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('maeljingifts_lifestyle', 'даров маэлджинов')|E]"
+ TARGET_GAINED_A_MAELJINGIFTS_LIFESTYLE_PERKPOINT: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'получила', 'получил' )] $VALUE|V0$ оч. для разблокирования [Concept('perk', 'достоинства')|E] в области [Concept('maeljingifts_lifestyle', 'даров маэлджинов')|E]"
 
  GAINS_MNESIS_LIFESTYLE_XP: "[Concept('mnesis_lifestyle', 'Опыт Мнезиса')|E] увеличивается на $VALUE|V0$"
  GAINED_MNESIS_LIFESTYLE_XP: "[Concept('mnesis_lifestyle', 'Опыт Мнезиса')|E] увеличен на $VALUE|V0$"
@@ -425,7 +425,7 @@
  TRIBALGIFTS_LIFESTYLE_PERK_POINTS_TRIGGER: "Очки достоинств пути племенных даров: $NUM|V0$"
  STREAMGIFTS_LIFESTYLE_PERK_POINTS_TRIGGER: "Очки достоинств пути даров течения: $NUM|V0$"
  PLANETARYGIFTS_LIFESTYLE_PERK_POINTS_TRIGGER: "Очки достоинств пути планетарных даров: $NUM|V0$"
- URGETAINTS_LIFESTYLE_PERK_POINTS_TRIGGER: "Очки достоинств пути скверны инстинктов: $NUM|V0$"
+ MAELJINGIFTS_LIFESTYLE_PERK_POINTS_TRIGGER: "Очки достоинств пути даров маэлджинов: $NUM|V0$"
  MNESIS_LIFESTYLE_PERK_POINTS_TRIGGER: "Очки достоинств пути Мнезиса: $NUM|V0$"
  HENGEYOKAIGIFTS_LIFESTYLE_PERK_POINTS_TRIGGER: "Очки достоинств пути даров хенгейокай: $NUM|V0$"
 
@@ -546,18 +546,6 @@
  THEY_LOSE_WARDED_PATIENT: "[CHARACTER.GetShortUIName|U] больше не оберегаемый пациент [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  YOU_LOST_WARDED_PATIENT: "[TARGET_CHARACTER.GetShortUIName] больше не является вашим оберегаемым пациентом"
  THEY_LOST_WARDED_PATIENT: "[CHARACTER.GetShortUIName|U] больше не является оберегаемым пациентом [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
-
- GET_DREAMER: "Становится мечтателем [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_GET_DREAMER: "[TARGET_CHARACTER.GetShortUIName] теперь ваш мечтатель"
- THEY_GET_DREAMER: "[CHARACTER.GetShortUIName|U] становится мечтателем [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_GOT_DREAMER: "[TARGET_CHARACTER.GetShortUIName] становится вашим мечтателем"
- THEY_GOT_DREAMER: "[CHARACTER.GetShortUIName|U] становится мечтателем [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
-
- LOSE_DREAMER: "Больше не мечтатель [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_LOSE_DREAMER: "[TARGET_CHARACTER.GetShortUIName] больше не ваш мечтатель"
- THEY_LOSE_DREAMER: "[CHARACTER.GetShortUIName|U] больше не мечтатель [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
- YOU_LOST_DREAMER: "[TARGET_CHARACTER.GetShortUIName] больше не является вашим мечтателем"
- THEY_LOST_DREAMER: "[CHARACTER.GetShortUIName|U] больше не является мечтателем [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
  GET_EFFIGY: "Становится эффигией [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetNamePossessiveOrMy][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  YOU_GET_EFFIGY: "[TARGET_CHARACTER.GetShortUIName] теперь ваша эффигия"
@@ -698,7 +686,6 @@
  POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_GHOUL_EFFECT: "@warning_icon!#X Уровень этого [Concept('perk', 'достоинства')|E] #weak ($VALUE|0$)#! выше, чем позволяет ваше [Concept('ghoul_greatest_vitae_ingested', 'сильнейшее поглощённое витэ')|E]#! #weak ([GetPlayer.MakeScope.ScriptValue('POD_allowed_discipline_level_for_ghouls_or_revenants')])#!"
  POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_REVENANT_EFFECT: "@warning_icon!#X Являясь [Glossary('ревенантом','game_concept_revenant_desc')], вы не можете получить свойства мастерства [Glossary('дисциплин','game_concept_discipline_desc')]#!"
  POD_CAN_OBTAIN_DISCIPLINE_OF_LEVEL_VAMPIRE_EFFECT: "@warning_icon!#X У вас должно быть как минимум [GetTrait('vampgeneration$VALUE|0q$').GetName(GetNullCharacter)|l] или вы должны достичь [Concept('golconda', 'Голконды')|E], чтобы выбрать это [Concept('elder_perk', 'достоинство старейшины')|E]#!"
-
  # Animalism #
 
  BOND_FAMULUS_PERK_EFFECT: "Вы можете #V $POD_bind_famulus$#!, подчинив своей кровью животное и создав с ним ментальную связь через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
@@ -707,14 +694,14 @@
  FERAL_WHISPERS_PERK_FLAVOR: "#flavor Вампир может общаться с дикими и городскими животными. Шёпот Зверя позволяет общаться с животными в двух направлениях. Кошка, возможно, не захочет обсуждать достоинства церковного писания, но с радостью обсудит отсутствие добычи в окрестностях местного собора.#!"
  ANIMAL_SUCCULENCE_PERK_FLAVOR: "#flavor Вампиры обычно считают, что кровь животных не приносит никакой пользы. Она отвратительна на вкус и вряд ли питает жилы нежити. Однако некоторые старейшие практикующие анималисты настолько сроднились с кровью зверей, что могут эффективно добывать себе пропитание в дикой природе.#!"
  QUELL_THE_BEAST_PERK_FLAVOR: "#flavor Зафиксировав взгляд на цели, вампир погружает их внутреннего [Glossary('Зверя','game_concept_beast_desc')] во временную дремоту. Смертные, затронутые этим, становятся апатичными, неспособными предпринимать какие-либо действия, кроме как оставаться в живых, в то время как звериные порывы вампиров временно ослабевают, к лучшему или худшему.#!"
- CALL_OF_THE_WILD_PERK_EFFECT: "Открывает возможность нанимать [Concept('men_at_arms', 'профессионалов')|E] - [GetMaA('POD_controlled_animals').GetName]. Вначале они будут слабыми, у вас может быть только один такой полк, и их размер не зависит от инноваций, которыми вы обладаете."
+ CALL_OF_THE_WILD_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_call_of_the_wild')]\nОткрывает возможность нанимать [Concept('men_at_arms', 'профессионалов')|E] - [GetMaA('POD_controlled_animals').GetName]. Вначале они будут слабыми, у вас может быть только один такой полк, и их размер не зависит от инноваций, которыми вы обладаете."
  CALL_OF_THE_WILD_PERK_FLAVOR: "#flavor С помощью этой способности [Glossary('Зверь','game_concept_beast_desc')] наделяет голос вампира глубокой привязанностью к определённому животному. Он воет, кричит, каркает или иным образом имитирует животные звуки. Любое животное выбранного вида в пределах слышимости призывается вампиром, и некоторые приходят, в зависимости от способностей вампира.#!"
  SUBSUME_THE_SPIRIT_PERK_FLAVOR: "#flavor Вампир может полностью перенести свой разум в тело животного. Он может контролировать животное и свободно пользоваться его чувствами, даже днем, если ему удастся не заснуть.#!"
  UNLIVING_HIVE_PERK_FLAVOR: "#flavor Чаще всего эту способность можно встретить у Носферату. Она позволяет распространять своё животное влияние на стаи насекомых, таких как мухи или тараканы.#!"
  DRAWING_OUT_THE_BEAST_PERK_EFFECT: "$countermeasures_unlocks_t2_supernatural_high_alert$"
  DRAWING_OUT_THE_BEAST_PERK_FLAVOR: "#flavor Вампир может проецировать своего [Glossary('Зверя','game_concept_beast_desc')] в момент ужаса или неистовства, передавая его находящемуся поблизости субъекту, будь то смертный или вампир. Тот сразу же испытает на себе действие ярости, впадая в беспощадное неистовство или спасаясь бегством в ужасе, в зависимости от причины.#!"
  ANIMAL_DOMINION_PERK_FLAVOR: "Вы можете призвать своего питомца на войну через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nМожно нанимать несколько видов животных в качестве [Concept('men_at_arms', 'профессионалов')|E].\n#flavor Власть, которую вампир имеет над зверями, теперь достаточно велика, чтобы повелевать стаями и стаями, словно продолжением собственного тела. По мановению руки животные десятками, а то и сотнями отдают свои жизни, чтобы задобрить своего хозяина.#!"
- TONGUE_OF_BEASTS_PERK_FLAVOR: "#flavor Эта способность расширяет возможности Дикого шёпота. Вместо того чтобы говорить с одним животным, вампир может разговаривать с любым и всеми животными, не устанавливая зрительного контакта.#!"
+ TONGUE_OF_BEASTS_PERK_FLAVOR: "[PODUnlocksCombatMove('POD_combat_move_tongue_of_beasts')]\n#flavor Эта способность расширяет возможности Дикого шёпота. Вместо того чтобы говорить с одним животным, вампир может разговаривать с любым и всеми животными, не устанавливая зрительного контакта.#!"
  SEND_THE_EIGHTH_PLAGUE_PERK_EFFECT: "Вы можете наложить модификатор [GetModifier('weather_magic_plague_modifier').GetNameWithTooltip] на державу врага через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
  SEND_THE_EIGHTH_PLAGUE_PERK_FLAVOR: "#flavor Это одна из самых разрушительных способностей среди всех [Glossary('дисциплин','game_concept_discipline_desc')]. Древний гангрел по имени Валентиниан продемонстрировал ее огромный разрушительный потенциал вскоре после Четвертого крестового похода. Разозлившись на итальянских каинитов, вторгшихся на его земли, он призвал свое мастерство Анимализма и обрушил голод на целый торговый город.#!"
  CRIMSON_FURY_PERK_EFFECT: "$countermeasures_unlocks_t3_supernatural_high_alert$\nПовышает вероятность события «#TOOLTIP:game_concept_unconquered_soul_desc #E Непокорённая душа#!#!» для диаблеристов, которые пытаются поглотить вашу душу."
@@ -740,7 +727,7 @@
  THE_MIND_REVEALED_PERK_EFFECT: "Вы можете раскрыть все происки цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Постоянное чтение чужих мыслей, чтобы знать, о чем они думают и что собираются сделать.#!"
  PERSONALITY_METAMORPH_PERK_EFFECT: "Вы можете изменить все свои свойства личности через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Принятие вымышленной личности как своей собственной.#!"
  SUPERNAL_AWARENESS_PERK_EFFECT: "$countermeasures_unlocks_t4_all_seeing_eye$\nВы получите уведомление, если кто-то собирается убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то попытается соблазнить ваших любовников или супругов.\nУ узников меньше шансов сбежать из вашей темницы.\n#F Ощущение событий и поступков в любой точке мира.#!"
- OMNISCIENCE_PERK_EFFECT: "Вы можете узнать все секреты цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Осознание личностей всех окружающих существ.#!"
+ OMNISCIENCE_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_omniscience')]\nВы можете узнать все секреты цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Осознание личностей всех окружающих существ.#!"
  MASTER_OF_THE_DOM_PERK_EFFECT: "Автоматически создаёт (или улучшает) бесплатное здание в каждой провинции вашего столичного графства каждые #V 5#! лет.\n#F Слияние с землей и знание всего, что на ней происходит, а также получение власти над землей и ее жителями.#!"
  MASTER_OF_THE_DOM_PERK_WARNING_EFFECT: "@warning_icon!#X Неприменимо к постройкам #TOOLTIP:game_concept_grand_city_desc #E великих городов#!#!.#!"
 
@@ -772,14 +759,14 @@
  DRAUGHT_OF_ELEGANCE_PERK_EFFECT: "Вы можете наделить персонажа своей сверхъестественной быстротой через опцию [Concept('character_interaction', 'взаимодействия персонажа')|E] «[Glossary('Испитие','game_concept_blood_draught_desc')]».\n#flavor Ваша кровь насыщается силой Стремительности, передавая часть вашей силы любому, кто выпьет её.#!"
  FLEETNESS_PERK_EFFECT: "$countermeasures_unlocks_t2_supernatural_high_alert$\n#flavor Овладев мастерством Стремительности, вы теперь можете двигаться и реагировать с головокружительной скоростью.#!"
  LIGHTNING_STRIKE_PERK_EFFECT: "[Concept('character_interaction', 'Взаимодействие персонажа')|E] «Блик» больше не наделяет вас модификатором [GetModifier('POD_drained_modifier').GetNameWithTooltip].\n#flavor Вы можете наносить удары кулаком или оружием ближнего боя с такой скоростью, что ваши противники не успевают защититься или уклониться.#!"
- RAPID_REFLEXES_PERK_EFFECT: "$countermeasures_unlocks_t1_supernatural_high_alert$\n#flavor Несмотря на то что их тела по-прежнему не могут противостоять законам природы, вампиры с этой силой воспринимают события мгновенно и могут реагировать на них со сверхчеловеческой быстротой.#!"
+ RAPID_REFLEXES_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_celerity_burst')]\n$countermeasures_unlocks_t1_supernatural_high_alert$\n#flavor Несмотря на то что их тела по-прежнему не могут противостоять законам природы, вампиры с этой силой воспринимают события мгновенно и могут реагировать на них со сверхчеловеческой быстротой.#!"
  SPLIT_SECOND_PERK_EFFECT: "[Concept('character_interaction', 'Взаимодействие персонажа')|E] «Блик» больше не наделяет вас стрессом.\n#flavor Когда вы действуете со скоростью вашего обостренного восприятия, ваши недруги обнаруживают, что их жертва уже стоит у них за спиной, а просимые услуги выполняются прежде, чем слова слетают с уст просителей.#!"
  TRAVERSAL_PERK_EFFECT: "$countermeasures_unlocks_t3_supernatural_high_alert$\n#flavor Со скоростью размытия вы можете бежать или карабкаться по любой поверхности, в том числе по стенам и даже пересекать жидкие среды.#!"
  PRECISION_PERK_EFFECT: "#F Войдя в состояние транса, вы сможете оперировать исключительно тонкими манипуляциями.#!"
  TIRELESS_TREAD_PERK_EFFECT: "#F Вы можете бежать со скороcтью 80 км/ч на протяжении 8 часов#!"
  QUICKNESS_PERK_EFFECT: "Вы можете сбросить откат решений через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nВы можете сбросить откат происков через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Используя дополнительные очки крови, вы получаете дополнительные действия, но ценой невосполнимого уровня смертельного урона за действие.#!"
  PHYSICAL_DEFIANCE_PERK_EFFECT: "#F Движение настолько быстрое, что не поддается гравитации, и мгновенно убивает смертных, проходя сквозь них.#!"
- TIME_OUT_OF_TIME_PERK_EFFECT: "$countermeasures_unlocks_t4_supernatural_high_alert$\nВы можете ускорить прогресс происков через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Моментальная реакция на все и перемещение до того, как кто-то поймет, что вы сделали.#!"
+ TIME_OUT_OF_TIME_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_time_out_of_time')]\n$countermeasures_unlocks_t4_supernatural_high_alert$\nВы можете ускорить прогресс происков через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Моментальная реакция на все и перемещение до того, как кто-то поймет, что вы сделали.#!"
  BETWEEN_THE_TICKS_PERK_EFFECT: "Вы можете получить модификатор [GetModifier('POD_between_the_ticks_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Вампир, достигший такого уровня мастерства, в буквальном смысле быстрее, чем видит человеческий глаз. Другие вампиры - даже те, кто владеет Прорицанием, - с трудом замечают его. Другие существа кажутся ему почти неодушевленными статуями, застывшими во времени, пока он движется вокруг них.#!"
 
  # Dominate #
@@ -793,7 +780,7 @@
  MASS_MANIPULATION_PERK: "Доступны [men_at_arms|El] - [GetMaA('maniacs').GetName]."
  DEEP_MEMORIES_PERK: "Вы можете изменить все свойства личности и ориентацию ваших гулей и [Concept('POD_herd', 'стада')|E]"
  CONDITIONING_PERK: "Используя происки «[GetScheme('PODmesmerize').GetTypeName]» в третий раз, вы можете улучшить [Concept('perpetual_hook', 'вечное влияние')|E] до [Concept('strong_hook', 'сильного влияния')|E].\n#F Многократно доминируя над существом и используя команду для уменьшения свободы воли, вампир в конце концов может превратить его в идеального слугу.#!"
- WILL_CONQUERS_PERK: "Вашим командам Доминирования гораздо сложнее сопротивляться."
+ WILL_CONQUERS_PERK: "[PODImprovesCombatMove('POD_combat_move_command')]\nВашим командам Доминирования гораздо сложнее сопротивляться."
  TERMINAL_DECREE_PERK: "Добавляет новую команду Доминирования: «Убей себя»."
  REWRITE_PERSONALITY_PERK: "Вы можете изменить все свойства личности и ориентацию персонажей, которые были целью ваших [Concept('scheme', 'происков')|E] «[GetScheme('PODmesmerize').GetTypeName]»"
  CONCORD_OF_SUBMISSION_PERK: "Добавляет новую команду Доминирования: «Остановить войну» - принуждает цель завершить войну на условиях белого мира."
@@ -812,10 +799,10 @@
  TOUGHNESS_PERK_EFFECT: "$countermeasures_unlocks_t1_supernatural_high_alert$\n#flavor Все вампиры, обладающие этой силой, проявляют врождённую способность игнорировать повреждения, которые в противном случае причинили бы неудобства и даже вывели бы из строя других представителей их вида. С этим умением вы сможете залечивать раны, используя кровь, чтобы уберечь себя от ранений.#!"
  UNSWAYABLE_MIND_PERK_EFFECT: "$countermeasures_unlocks_t1_mental_fortress$\n#flavor Пользователь получает мистическую способность противостоять любым попыткам повлиять на него с помощью мирских чар, принуждения и хитрости.#!"
  BLESSING_OF_VITALITY_PERK_EFFECT: "Позволяет увеличивать свою неестественную выносливость с помощью отвара, предоставляя выбранной вами цели преимущества силы прочности, пока длится эффект отвара."
- KNIGHTS_BANE_PERK_EFFECT: "Открывает приём [Concept('single_combat_duel', 'в дуэли')|E], позволяющий уничтожить оружие противника своей голой плотью, нанося ему при этом урон."
+ KNIGHTS_BANE_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_knights_bane')]"
  CURSE_THE_LAUREL_PERK_EFFECT: "#flavor Отодвиньте кол от своего сердца, в конце концов удалив его.#!"
- WRATH_OF_THE_MARTYR_PERK_EFFECT: "Улучшает бонус от «Доблести от боли», увеличив силу, которую вы черпаете из боли."
- ARMOURED_FLESH_PERK_EFFECT: "#flavor Ничто, кроме смертельного удара, не убьет вас. Никакое количество ран не положит конец вашей жизни, а только полное уничтожение или обезглавливание.#!"
+ WRATH_OF_THE_MARTYR_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_knights_bane')]\nУлучшает бонус от «Доблести от боли», увеличив силу, которую вы черпаете из боли."
+ ARMOURED_FLESH_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_armoured_flesh')]\n#flavor Ничто, кроме смертельного удара, не убьет вас. Никакое количество ран не положит конец вашей жизни, а только полное уничтожение или обезглавливание.#!"
  RESILIENT_MIND_PERK_EFFECT: "Разблокирует новое [Concept('character_interaction', 'взаимодействие персонажа')|E] Стойкости.\n#flavor Ваш разум избавляется от отклонений и звериных причуд, становясь невосприимчивым к способностям, изменяющим сознание.#!"
 
  # Obfuscate #
@@ -828,7 +815,7 @@
  SILENCE_OF_DEATH_PERK_EFFECT: "Открывает [Concept('character_interaction', 'взаимодействие персонажа')|E], значительно уменьшающее дипломатический радиус персонажа-землевладельца.\n#flavor Эта способность позволяет полностью заглушить персонажа, сводя на нет все издаваемые им звуки. В отличие от Затемнения в целом, эта способность воздействует только на слух, но, в свою очередь, действует более надежно. Вампиру нужно произвести очень много шума, чтобы нарушить эту тишину.#!"
  UNSEEN_PASSAGE_PERK_EFFECT: "$countermeasures_unlocks_t2_obfuscated_court$\nСкорость прогресса [Concept('espionage', 'шпионажа')|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!\nПовышает шанс успеха [Concept('decision', 'решения')|E] «Сбежать из темницы».\n#flavor Обладая этой силой, вампир теперь может передвигаться, оставаясь скрытым.#!"
  UNSEEN_PASSAGE_PERK_BONUS_VALUE: "[GetPerk('unseen_passage_perk').GetName(GetPlayer)]"
- VANISH_PERK_EFFECT: "Открывает [Concept('character_interaction', 'взаимодействие персонажа')|E], останавливающее все происки против вас.\nПозволяет скопировать внешний вид цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Вампир, кажется, исчезает в мгновение ока; даже воспоминание о нём становится туманным и расплывчатым.#!"
+ VANISH_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_vanish_from_minds_eye')]\nОткрывает [Concept('character_interaction', 'взаимодействие персонажа')|E], останавливающее все происки против вас.\nПозволяет скопировать внешний вид цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Вампир, кажется, исчезает в мгновение ока; даже воспоминание о нём становится туманным и расплывчатым.#!"
  MASK_OF_JANUS_PERK_EFFECT: "$countermeasures_unlocks_t4_obfuscated_court$\nБонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] «Маска», позволяющее обмениваться внеошностью.\n#F Обмен внешностью, как с «Тысячеликой маской», с кем-нибудь другим.#!"
  VEIL_THE_LEGIONS_PERK_EFFECT: "#F Скрыть небольшую армию на расстоянии.#!"
  VISIT_FAERIELAND_PERK_EFFECT: "#F Шаг в Грёзы.#!"
@@ -893,7 +880,7 @@
  NECROMANCY_ASHES_TO_ASHES_PERK_EFFECT: "Снижает риск #TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! раскрытия Маскарада#!#! и улучшает [Concept('character_interaction', 'взаимодействие персонажа')|E] «Сокрыть Маскарад»."
  NECROMANCY_ASHES_TO_ASHES_PERK_FLAVOR: "#flavor Одни каиниты убивают без разбора и не боятся последствий своих действий, другие считают нужным быть более осмотрительными. При использовании этой силы человеческий труп превращается в груду ничем не примечательного пепла весом примерно в одну пятую часть от первоначального тела.#!"
  RIGOR_MORTIS_PERK_FLAVOR: "#flavor С помощью этой силы некромант может сделать любую цель неподвижной, как труп.#!"
- ASHEN_LADYS_EMBRACE_PERK_EFFECT: "Разблокирует движение в[Concept('single_combat_duel', 'поединке')|E] «Объятия Пепельной госпожи»"
+ ASHEN_LADYS_EMBRACE_PERK_EFFECT: ""
  ASHEN_LADYS_EMBRACE_PERK_FLAVOR: "#flavor От Объятий Пепельной госпожи конечности цели стареют, высыхают и вянут, как виноград, оставленный на лозе.#!"
  GIFT_OF_MELANCHOLIA_PERK_EFFECT: "Открывает возможность распространять поветрия в выбранной локации через [Concept('character_interaction', 'взаимодействие персонажа')|E]"
  GIFT_OF_MELANCHOLIA_PERK_FLAVOR: "#flavor Эта способность вызывает у смертных и каинитов изнурительную хворь.#!"
@@ -925,7 +912,7 @@
  #Path of the Twilight Garden
 
  WHISPERS_OF_THE_SOUL_PERK_FLAVOR: "#flavor Одного лишь шёпота об истинном имени Тёмной матери достаточно, чтобы свести смертных с ума, а сердца каинитов наполнить ужасом.#!"
- KISS_OF_THE_DARK_MOTHER_PERK_EFFECT: "[Concept('single_combat_duel', 'Движение поединка')|E] «Укус» становится более мощным."
+ KISS_OF_THE_DARK_MOTHER_PERK_EFFECT: ""
  KISS_OF_THE_DARK_MOTHER_PERK_FLAVOR: "#flavor Лилин прикусывает язык и наполняет рот едкой смесью черной желчи и [Glossary('витэ','game_concept_vitae_desc')]. Ее укус становится еще более ужасным, и она с легкостью поглощает жизнь своих жертв.#!"
  DARK_HUMOURS_PERK_FLAVOR: "#flavor Ламии известны своим атлетизмом и мастерским владением своим телом. Они способны не только совершать невероятные физические подвиги, но и силой воли управлять балансом гуморов в своем теле.#!"
  CAUL_OF_THE_NEVERBORN_PERK_EFFECT: "Разблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E] «Найти призрака»"
@@ -981,7 +968,7 @@
 
  # Potence #
 
- BRUTAL_FEED_PERK_EFFECT: "Открывает движение в [Concept('single_combat_duel', 'поединке')|E].\n#flavor За считанные секунды вы проглатываете литры крови, раздирая свою жертву. Результат эффективен, хотя и неаккуратен. Теперь вы можете использовать свой новый способ питания в пылу сражения и замаскировать изуродованные останки жертвы.#!"
+ BRUTAL_FEED_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_vampire_bite')]\n#flavor За считанные секунды вы проглатываете литры крови, раздирая свою жертву. Результат эффективен, хотя и неаккуратен. Теперь вы можете использовать свой новый способ питания в пылу сражения и замаскировать изуродованные останки жертвы.#!"
  DRAUGHT_OF_MIGHT_PERK_EFFECT: "Вы можете даровать кому-то свою сверхъестественную силу через опцию [Concept('character_interaction', 'взаимодействия персонажа')|E] «[Glossary('Испитие','game_concept_blood_draught_desc')]».\n#flavor Ваша кровь насыщается силой Могущества, передавая часть вашей силы любому, кто её выпьёт.#!"
  EARTHSHOCK_PERK_EFFECT: "#flavor Ваша сила превращается в стихию. Вы можете врезаться кулаком или ногой в землю, создавая ударную волну, которая отбрасывает противников и разрушает здания.#!"
  FISTS_OF_CAINE_PERK_EFFECT: "Вы получаете повышенный шанс тяжело ранить вражеских [Concept('knights', 'рыцарей')|E] в [Concept('combat_phase', 'бою')|E].\n#flavor Голыми руками вы можете наносить тяжелые увечья, смертельные как для смертных, так и для других вампиров. Вы можете расчленять, пронзать, протыкать, обезглавливать и даже вырывать сердце из груди.#!"
@@ -990,8 +977,8 @@
  SOARING_LEAP_PERK_EFFECT: "#flavor Обладая неистовой силой не только рук и кулаков, вы можете прыгать гораздо выше и дальше, чем любой смертный.#!"
  UNCANNY_GRIP_PERK_EFFECT: "$countermeasures_unlocks_t3_redouble_guards$\n#flavor Сосредоточив свою неестественную силу в пальцах рук и ног, вы вцепляетесь и вгрызаетесь конечностями практически в любую поверхность, что позволяет вам карабкаться и даже висеть на стенах и потолках без опоры.#!"
  RELENTLESS_PURSUIT_PERK_EFFECT: "#F Сородичи совершают необыкновенные прыжки по воздуху.#!"
- CRUSH_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('crush_perk_knight_modifier').GetNameWithTooltip].\nНакладывает на каждого вражеского правителя модификатор [GetModifier('crush_perk_ruler_modifier').GetNameWithTooltip] при вступлении в [Concept('war', 'войну')|E].\n#F Сородич, успешно атаковавший объект, автоматически уничтожает его.#!"
- FIST_OF_THE_TITANS_PERK_EFFECT: "Позволяет ранить каждого рыцаря цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Сородич атакует или отбрасывает кого-то телекинетически.#!"
+ CRUSH_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_crush_equipment')]\nВражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('crush_perk_knight_modifier').GetNameWithTooltip].\nНакладывает на каждого вражеского правителя модификатор [GetModifier('crush_perk_ruler_modifier').GetNameWithTooltip] при вступлении в [Concept('war', 'войну')|E].\n#F Сородич, успешно атаковавший объект, автоматически уничтожает его.#!"
+ FIST_OF_THE_TITANS_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_crush_equipment')]\nПозволяет ранить каждого рыцаря цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Сородич атакует или отбрасывает кого-то телекинетически.#!"
  THE_FORGERS_HAMMER_PERK_EFFECT: "$unlock_enhancing_node$ [GetModifier('artifact_prowess_1_modifier').GetNameWithTooltip]\n#F Сородич создаёт оружие, наносящее дополнительный урон.#!"
  LEND_THE_SUPERNATURAL_VIGOR_PERK_EFFECT: "Позволяет наделить цель своей доблестью через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Сородич передаёт свою невероятную силу другому.#!"
  MIGHT_OF_THE_HEROES_PERK_EFFECT: "#F Сородичи совершают физические деяния мифических масштабов.#!"
@@ -1003,19 +990,19 @@
  DREAD_GAZE_PERK_EFFECT: "#F Кратко раскрыв свою вампирскую сущность, пользователь вселяет в одного субъекта абсолютный ужас.#!"
  ENTRANCEMENT_PERK_EFFECT: "Разблокирует [Concept('scheme', 'происки')|E] «[GetScheme('PODentrance').GetTypeName]».\n#F Вампир сосредотачивает свое неестественное очарование на одном человеке, внушая ему восторженное восхищение или увлеченность, сродни влюбленности или встрече с кумиром всей жизни.#!"
  LINGERING_KISS_PERK_EFFECT: "Когда вы охотитесь, вы можете добавить своих жертв в своё [Concept('POD_herd', 'стадо')|E].\n#F Поцелуй вампира вызывает у смертных почти экстаз, но по силе он превосходит другие поцелуи. Смертные, которых кормит вампир, становятся зависимыми от поцелуя, одержимыми им и даже ищут вампира для повторного кормления.#!"
- MAJESTY_PERK_EFFECT: "$countermeasures_unlocks_t4_strengthen_sentries$\nВы открываете лучшие варианты для [Concept('character_interaction', 'взаимодействия персонажа')|E] «Сокрыть Маскарад».\n#F На этой вершине [Glossary('дисциплины','game_concept_discipline_desc')], вампир может усилить свой облик до сверхъестественного уровня. Ощутить Величие - значит оказаться в присутствии божественного - или инфернального.#!"
+ MAJESTY_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_majesty')]\n$countermeasures_unlocks_t4_strengthen_sentries$\nВы открываете лучшие варианты для [Concept('character_interaction', 'взаимодействия персонажа')|E] «Сокрыть Маскарад».\n#F На этой вершине [Glossary('дисциплины','game_concept_discipline_desc')], вампир может усилить свой облик до сверхъестественного уровня. Ощутить Величие - значит оказаться в присутствии божественного - или инфернального.#!"
  SUMMON_PERK_EFFECT: "Разблокирует [Concept('scheme', 'происки')|E] «[GetScheme('PODsummon').GetTypeName]».\n#F Вампир может призвать к себе любого человека, смертного или вампира, на которого он ранее использовал «Благоговение», «Восторг» или «Величие» или который хотя бы раз отведал его крови.#!"
  IRONCLAD_COMMAND_PERK_EFFECT: "Повышает вероятность успеха предыдущих способностей Присутствия"
- COOPERATION_PERK_EFFECT: "$countermeasures_unlocks_t4_bounties_for_whispers$\nПринятие [Concept('peace', 'мира')|E]: #P +[EmptyScope.ScriptValue('cooperation_value')|0]#!"
- PHOBIA_PERK_EFFECT: "Участвуя в [Concept('combat_phase', 'битве')|E] как [Concept('commander', 'командир')|E], вы получите модификатор [GetModifier('phobia_5_modifier').GetNameWithTooltip].\nСила этого модификатора зависит от текущего значения [Concept('dread', 'ужаса')|E]."
+ COOPERATION_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_cooperation')]\n$countermeasures_unlocks_t4_bounties_for_whispers$\nПринятие [Concept('peace', 'мира')|E]: #P +[EmptyScope.ScriptValue('cooperation_value')|0]#!"
+ PHOBIA_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_majesty')]\nУчаствуя в [Concept('combat_phase', 'битве')|E] как [Concept('commander', 'командир')|E], вы получите модификатор [GetModifier('phobia_5_modifier').GetNameWithTooltip].\nСила этого модификатора зависит от текущего значения [Concept('dread', 'ужаса')|E]."
  MASK_OF_EMPATHY_PERK_EFFECT: "Вы можете оборвать отношения цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Разрыв эмоциональных связей между людьми.#!"
- BLOODLUST_PERK_EFFECT: "Улучшает модификатор достоинства «[GetPerk('phobia_perk').GetName(GetPlayer)]» до [GetModifier('bloodlust_5_modifier').GetNameWithTooltip]."
+ BLOODLUST_PERK_EFFECT: "Улучшает модификатор достоинства «[GetPerk('phobia_perk').GetName(GetPlayer)]» до максимума в [GetModifier('bloodlust_5_modifier').GetNameWithTooltip]. Значение модификатора зависит от вашего показателя ужаса."
  PERFECT_WORLD_PERK_EFFECT: "Вы можете улучшить свою столицу модификатором [GetModifier('perfect_world_development_modifier').GetNameWithTooltip] или [GetModifier('perfect_world_war_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Ваше эмоциональное мастерство достигло таких масштабов, что охватывает весь город, заставляя всех его жителей работать над тем, чтобы сделать его вашим идеальным городом.#!"
 
  # Kai # 
 
- INNER_FOCUS_PERK_EFFECT: "Если вы исповедуете конфессию, ценяющую самоконтроль, вы можете использовать силу своей крови, чтобы предотвратить неистовство.\n#F Ваше непреодолимое желание сохранить свою честь присуще вашей крови.\nВы можете использовать силу своей крови, чтобы предотвратить неистовство, которое может привести к бесчестию.#!"
- FOCUSED_STRIKE_PERK_EFFECT: "#F Подобно точным ударам мастера боевых искусств, вы можете сконцентрировать свою внутреннюю силу в мощном одиночном ударе, нанося его с достаточной силой, чтобы отправить врагов в полёт.#!"
+ INNER_FOCUS_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_inner_focus')]\nЕсли вы исповедуете конфессию, ценяющую самоконтроль, вы можете использовать силу своей крови, чтобы предотвратить неистовство.\n#F Ваше непреодолимое желание сохранить свою честь присуще вашей крови.\nВы можете использовать силу своей крови, чтобы предотвратить неистовство, которое может привести к бесчестию.#!"
+ FOCUSED_STRIKE_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_focused_strike')]\n#F Подобно точным ударам мастера боевых искусств, вы можете сконцентрировать свою внутреннюю силу в мощном одиночном ударе, нанося его с достаточной силой, чтобы отправить врагов в полёт.#!"
  HONORABLE_ELIXIR_PERK_EFFECT: "#F Ваша кровь становится духовной субстанцией, заставляющей тех, кто её пьёт, поступать благородно или страдать от последствий.#!"
  SHIELD_FROM_FIRE_PERK_EFFECT: "Предоставляет защиту от огня.\n#F Вы можете сосредоточить свою внутреннюю силу в щите, защищающем вас от тех, кто попытается причинить вам вред, и даже защитить себя от огня.#!"
  DAIMYOS_LAW_PERK_EFFECT: "Разблокированы [Concept('scheme', 'происки')|E] «[GetScheme('abduct').GetTypeName]» и вы можете приобретать претензии на артефакты со скидкой 15%.\n#F Вы можете заставить кого-то почувствовать себя обязанным выполнить задание за вас.#!"
@@ -1032,42 +1019,42 @@
  GLIMPSE_OF_THE_PAIN_PERK_EFFECT: "Вы можете на короткое время снизить [Concept('advantage', 'преимущество')|E] и [Concept('prowess', 'доблесть')|E] цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Всего на мгновение вы можете вовлечь других в своё царство агонии.#!"
  CROSSING_THE_IRON_BRIDGE_PERK_EFFECT: "Разблокировано уникальное событие третьего уровня [Concept('mental_break', 'нервного срыва')|E] (период восстановления - 6 лет).\n#F Вы можете сразиться со своими внутренними демонами, войдя в свой разлом. С собой можно взять только личные вещи.\nЭто не самый приятный опыт, но он может дать вам передышку от постоянных интриг и ударов в спину, которые влечёт за собой жизнь вампира.#!"
  JOURNEYING_THE_IRON_BRIDGE_PERK_EFFECT: "#F Предметы больше не нуждаются в личной привязке, чтобы попасть в ваш разлом.#!"
- PASSING_THE_INNER_REALM_PERK_EFFECT: "Вы можете получить или удалить модификатор [GetModifier('passing_the_inner_realm_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Вы можете полностью исчезнуть, войдя в свой разлом, и переместиться в новое место, которое вы можете видеть. Однако, несмотря на то, что при этом не учитываются препятствия, это происходит не мгновенно и требует, чтобы вы преодолели то же расстояние в своем разломе, что и при путешествии туда без разлома.\nИспользование разлома в бою очень эффективно, позволяя вам уклоняться от ударов, которые были бы неизбежны для большинства, хотя для эффективного использования его в бою требуется частое использование, что является довольно напряжённым для ума.#!"
+ PASSING_THE_INNER_REALM_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_passing_the_inner_realm')]\nВы можете получить или удалить модификатор [GetModifier('passing_the_inner_realm_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Вы можете полностью исчезнуть, войдя в свой разлом, и переместиться в новое место, которое вы можете видеть. Однако, несмотря на то, что при этом не учитываются препятствия, это происходит не мгновенно и требует, чтобы вы преодолели то же расстояние в своем разломе, что и при путешествии туда без разлома.\nИспользование разлома в бою очень эффективно, позволяя вам уклоняться от ударов, которые были бы неизбежны для большинства, хотя для эффективного использования его в бою требуется частое использование, что является довольно напряжённым для ума.#!"
  RIFT_COLLECTION_PERK_EFFECT: "Позволяет приобретать претензии на артефакты с #V 15%#! скидкой.\n#F Вы можете отправить неодушевленные предметы в свой разлом одним касанием или вызывать их по своему желанию.#!"
  RIFT_TRANSPORT_PERK_EFFECT: "#F Вы можете прикоснуться к объекту, чтобы переместить его в пределах видимости (расстояние зависит от возможностей разлома пользователя).#!"
  EYES_OF_A_THIEF_PERK_EFFECT: "#TOOLTIP:game_concept_planning_speed_desc #E Скорость планирования#!#! #TOOLTIP:game_concept_infiltration_desc #E миссии проникновения#!#! «Кража артефакта» на 80% быстрее.\n#F Аналогично со сбором и транспортировкой, однако вам больше не нужно прикасаться к объектам, чтобы отправить их в разлом, вам нужно только увидеть их.#!"
  DOORWAY_TO_HELL_PERK_EFFECT: "Вы можете телепортироваться назад в свою столицу при путешествии или командовании армией через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Это отличается от других способов использования разлома тем, что позволяет создать постоянное местоположение разлома, к которому вы можете временно привязать свой разлом, и в которое может войти любой желающий.\nЭто похоже на эхо вашего кошмарного разлома, который позволяет перемещаться практически мгновенно, позволяя бесчисленному множеству других людей следовать за вами. Вы не можете поддерживать его бесконечно, не можете пройти через дверной проем, чтобы вернуться туда, где вы были ранее, и в любой момент времени может быть активен только один дверной проем.\nЛюбой, кроме вас, пострадает от последствий, идентичных достоинству «[GetPerk('glimpse_of_the_pain_perk').GetName(GetPlayer)]».#!"
  TOUCH_OF_SIN_PERK_EFFECT: "Разблокированы [Concept('scheme', 'происки')|E] «[GetScheme('abduct').GetTypeName]».\n#F Теперь вы можете вовлекать посторонних в свой обычный разлом, хватая их.#!"
- RIFT_GATEWAY_PERK_EFFECT: "Улучшает модификатор достоинства «[GetPerk('passing_the_inner_realm_perk').GetName(GetPlayer)]» до [GetModifier('rift_gateway_modifier').GetNameWithTooltip].\n#F Врата позволяет вам отправить пользователя через ваш разлом, прикоснувшись к нему способом, похожим на [GetPerk('passing_the_inner_realm_perk').GetName(GetPlayer)].\nБудьте осторожны с пользователями разлома, смотрящими в ночное небо, на ревущий огонь или на какую-либо другую опасность, так как через несколько мгновений вы можете упасть с ночного неба или сгореть дотла.#!"
- RIFT_IMPRISON_PERK_EFFECT: "У ваших узников практически нет шансов на побег. Также разблокирована новая опция при сопротивлении персонажа заключению в темницу.\n#F Теперь вы можете бесконечно удерживать людей в своем разломе, из которого практически невозможно выбраться, будь то обычными или сверхъестественными средствами.\nТолько у самых везучих есть шанс спастись, если они каким-то образом найдут работающий портал.#!"
+ RIFT_GATEWAY_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_rift_gateway')]\nУлучшает модификатор достоинства «[GetPerk('passing_the_inner_realm_perk').GetName(GetPlayer)]» до [GetModifier('rift_gateway_modifier').GetNameWithTooltip].\n#F Врата позволяет вам отправить пользователя через ваш разлом, прикоснувшись к нему способом, похожим на [GetPerk('passing_the_inner_realm_perk').GetName(GetPlayer)].\nБудьте осторожны с пользователями разлома, смотрящими в ночное небо, на ревущий огонь или на какую-либо другую опасность, так как через несколько мгновений вы можете упасть с ночного неба или сгореть дотла.#!"
+ RIFT_IMPRISON_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_rift_gateway')]\nУ ваших узников практически нет шансов на побег. Также разблокирована новая опция при сопротивлении персонажа заключению в темницу.\n#F Теперь вы можете бесконечно удерживать людей в своем разломе, из которого практически невозможно выбраться, будь то обычными или сверхъестественными средствами.\nТолько у самых везучих есть шанс спастись, если они каким-то образом найдут работающий портал.#!"
 
 
  # Protean #
 
  EARTH_MELD_PERK_EFFECT: "#F Став единым целым с почвой, вампир погружается в землю. Если вампир не впадает в [Glossary('торпор','game_concept_torpor_desc')], он снова поднимается следующей ночью.#!"
  EYES_OF_THE_BEAST_PERK_EFFECT: "$countermeasures_unlocks_t1_all_seeing_eye$\nПозволяет активировать [GetModifier('POD_shapeshift_form_beasteyes_modifier').GetNameWithTooltip] через опцию #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Вампир может придать своим глазам сверхъестественный красный отблеск, дающий зрение даже при полном отсутствии света.#!"
- FERAL_WEAPONS_PERK_EFFECT: "Вы можете превратить свои когти в [GetModifier('POD_shapeshift_form_feralweapons_modifier').GetNameWithTooltip] через опцию #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Вампир может расширить своё природное оружие до чудовищных размеров.#!"
+ FERAL_WEAPONS_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_feral_weapons')]\nВы можете превратить свои когти в [GetModifier('POD_shapeshift_form_feralweapons_modifier').GetNameWithTooltip] через опцию #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Вампир может расширить своё природное оружие до чудовищных размеров.#!"
  METAMORPHOSIS_PERK_EFFECT: "Вы теперь можете принимать более мелкие звериные формы через опции #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Ваша способность принимать облик животного возросла.#!"
  MIST_FORM_PERK_EFFECT: "Вы теперь можете переходить в неуловимую форму [GetModifier('POD_shapeshift_form_mist_modifier').GetNameWithTooltip] через опции #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Вампир обретает легендарную способность превращаться в облако тумана, видимое глазом, но не поддающееся ничему, кроме огня, солнечного света и сверхъестественной агрессии.#!"
  SHAPECHANGE_PERK_EFFECT: "Вы теперь можете принимать звериную форму через опции #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Вампир может принимать облик животного, обычно связанного с его [Glossary('кланом','game_concept_Clan_desc')] или типом добычи, на которую он чаще всего охотится.#!"
  THE_UNFETTERED_HEART_PERK_EFFECT: "#F Овладев силой Превращения, внутренности пользователя становятся податливыми, почти вязкими. Сердце, в котором сосредоточены [Glossary('витэ','game_concept_vitae_desc')] и нежизнь вампира, отделяется и свободно, хотя и вяло, движется в груди.#!"
  WEIGHT_OF_THE_FEATHER_PERK_EFFECT: "#F Вампир может уменьшить свою эффективную массу и плотность, сделав себя почти невесомым.#!"
- ADAPTABILITY_PERK_EFFECT: "#F Настройка себя на выживание в экстремальных условиях.#!"
+ ADAPTABILITY_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_feral_weapons')]\n#F Настройка себя на выживание в экстремальных условиях.#!"
  HOMUNCULUS_PERK_EFFECT: "Позволяет создать собственного #TOOLTIP:GAME_TRAIT,mortal,[GetPlayer] #L смертного#!#! клона через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Создание миниатюрной версии себя в качестве слуги.#!"
  TURNABOUT_PERK_EFFECT: "#F Быстро меняйте положение, перемещаясь по земле.#!"
  MYTHIC_FORM_PERK_EFFECT: "Позволяет принимать формы Ушедших.\n#F Превращение в определённое мифическое существо.#!"
- ADAPTATION_PERK_EFFECT: "#F Ваше тело инстинктивно переключается, чтобы обеспечить максимальную защиту.#!"
+ ADAPTATION_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_adaptation')]\n#F Ваше тело инстинктивно переключается, чтобы обеспечить максимальную защиту.#!"
  DRAUGHT_OF_PHOENIX_BLOOD_PERK_EFFECT: "Позволяет воскреснуть, если вы умрёте по неестественным причинам.\n#F Через несколько дней, равных поколению вампира после Окончательной смерти, он перевоплощается в новом теле, на одно поколение выше, сохраняя эту силу, но с неполным представлением о том, кем он был.#!"
 
  # Obtenebration #
 
  EYES_OF_THE_ABYSS_PERK_EFFECT: "Вы можете получить модификатор [GetModifier('POD_shapeshift_form_abysseyes_modifier').GetNameWithTooltip] через опцию #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Глаза вампира темнеют. Они игнорируют все штрафы темноты, даже те, которые вызваны сверхъестественной тьмой, и могут видеть призраков.#!"
  SHADOW_PLAY_PERK_EFFECT: "#F Хотя эта способность не позволяет персонажам создавать тени, которые еще не существуют, она позволяет манипулировать, перемещать и анимировать окружающие тени. Это может дать социальные эффекты, например, использовать тени, чтобы сделать себя более внушительным, или формировать окружение в соответствии со своими потребностями, создавая области тени, в которых можно спрятать человека или предмет.#!"
- NOCTURNE_PERK_EFFECT: "Вы можете наделить себя модификатором через [GetModifier('nocturne_power_modifier').GetNameWithTooltip] [Concept('character_interaction', 'взаимодействие персонажа')|E].\nПока он активен, при участии в [Concept('combat_phase', 'битве')|E] в качестве [Concept('commander', 'командира')|E] вражеские [Concept('knights', 'рыцари')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат модификатор [GetModifier('nocturne_drained_stamina_modifier').GetNameWithTooltip].\nЭто стоит #N 10#![piety_i] за каждого поражённого противника.\n#F Сосредоточившись на призыве тьмы, ласомбра, обладающий этой способностью, может вызвать клубящееся облако сверхъестественной тьмы, которое окутывает пространство и затемняет все источники света. Тьма - это проявление Бездны, которая заглушает звуки и зрение и высасывает жизнь у слабых.#!"
+ NOCTURNE_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_nocturne')]\nВы можете наделить себя модификатором через [GetModifier('nocturne_power_modifier').GetNameWithTooltip] [Concept('character_interaction', 'взаимодействие персонажа')|E].\nПока он активен, при участии в [Concept('combat_phase', 'битве')|E] в качестве [Concept('commander', 'командира')|E] вражеские [Concept('knights', 'рыцари')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат модификатор [GetModifier('nocturne_drained_stamina_modifier').GetNameWithTooltip].\nЭто стоит #N 10#![piety_i] за каждого поражённого противника.\n#F Сосредоточившись на призыве тьмы, ласомбра, обладающий этой способностью, может вызвать клубящееся облако сверхъестественной тьмы, которое окутывает пространство и затемняет все источники света. Тьма - это проявление Бездны, которая заглушает звуки и зрение и высасывает жизнь у слабых.#!"
  NIGHT_SHADES_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('shades').GetName]"
  ARMS_OF_AHRIMAN_PERK_EFFECT: "#F С помощью этой способности Ласомбра превращает тьму в щупальца, которые могут атаковать, сдерживать и захватывать противников.#!"
  TENEBROUS_AVATAR_PERK_EFFECT: "Вы можете принять форму [GetModifier('POD_shapeshift_form_shadow_modifier').GetNameWithTooltip] через опцию #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#F Власть вампира над тьмой настолько велика, что он может физически превратиться в неё. При активации этой способности вампир превращается в чернильное, амёбообразное пятно тени.#!"
- THE_DARKNESS_WITHIN_PERK_EFFECT: "Улучшает модификатор достоинства «[GetPerk('nocturne_perk').GetName(GetPlayer)]» до [GetModifier('darkness_within_drained_stamina_modifier').GetNameWithTooltip].\nКроме того, вы также истощаете поражённых жертв на #V 1#! ед. [hunger_i]крови.\nЭто стоит #N 15#![piety_i] за каждого поражённого противника."
+ THE_DARKNESS_WITHIN_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_darkness_within')]\nУлучшает модификатор достоинства «[GetPerk('nocturne_perk').GetName(GetPlayer)]» до [GetModifier('darkness_within_drained_stamina_modifier').GetNameWithTooltip].\nКроме того, вы также истощаете поражённых жертв на #V 1#! ед. [hunger_i]крови.\nЭто стоит #N 15#![piety_i] за каждого поражённого противника."
  OUBLIETTE_PERK_EFFECT: "Разблокирует [Concept('scheme', 'происки')|E] «[GetScheme('abduct').GetTypeName]»."
  WALK_THE_ABYSS_PERK_EFFECT: "#F Пересекая Бездну, эта способность позволяет персонажу войти в область тьмы и выйти из другой области тьмы в пределах видимости. Персонажи также могут использовать эту способность, чтобы проникать в тень и хватать что-то в пределах досягаемости второй тени.#!"
  DRAIN_THE_LIFE_PERK_EFFECT: "Вы можете поразить столицу цели модификатором [GetModifier('drain_the_life_power_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Лёгким движением запястья вампир открывает мир Бездны, создавая в воздухе ужасную сферическую пустоту. Когда она закрывается, друзья и враги получают ранения и, возможно, уничтожаются. Те, кто был убит (или почти убит), уносятся в никуда. Все их следы просто исчезают.#!"
@@ -1077,14 +1064,14 @@
  SHADOWSTEP_PERK_EFFECT: "#F Вампир исчезает в тени, проносясь по [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринту')], чтобы появиться вновь, пройдя через нечто более мерзкое, чем смерть, и вдвое более голодное. Он входит в тень, достаточно большую, чтобы накрыть её, и выходит из той, которую могут видеть.#!"
  SHADOW_TWIN_PERK_EFFECT: "Вы можете создать собственную тень-двойника через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Контроль вампира над тьмой развился до такой степени, что он может наделять её ограниченным сознанием. Оживляя свою собственную тень, [Glossary('каинит','game_concept_cainite_desc')] может фактически «освободить» тень, отбрасываемую светом. Пока эта способность активна, субъект не отбрасывает тени, так как та отправилась выполнять приказы вампира.#!"
  AEGIS_OF_SHADOWS_PERK_EFFECT: "#F Защитите себя в мощной теневой бронёй.#!"
- DEVOUR_ALL_HOPE_PERK_EFFECT: "Улучшает модификатор достоинства «[GetPerk('nocturne_perk').GetName(GetPlayer)]» до [GetModifier('devour_all_hope_drained_stamina_modifier').GetNameWithTooltip].\nКроме того, вы также истощаете поражённых жертв на #V 2#! ед. [hunger_i]крови.\nЭто стоит #N 25#![piety_i] за каждого поражённого противника."
+ DEVOUR_ALL_HOPE_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_darkness_within')]\nУлучшает модификатор достоинства «[GetPerk('nocturne_perk').GetName(GetPlayer)]» до [GetModifier('devour_all_hope_drained_stamina_modifier').GetNameWithTooltip].\nКроме того, вы также истощаете поражённых жертв на #V 2#! ед. [hunger_i]крови.\nЭто стоит #N 25#![piety_i] за каждого поражённого противника."
  AHRIMANS_DEMESNE_PERK_EFFECT: "Улучшает достоинство «[GetPerk('drain_the_life_perk').GetName(GetPlayer)]», позволяя нацеливаться на целую державу."
 
  # Serpentis #
 
  ENCHANTING_GAZE_PERK_EFFECT: "#flavor Эта сила превращает вампира в пресловутое пламя для мотылька. Он приобретает манящие, чарующие черты, такие как золотые змеиные глаза или перламутровый блеск кожи. Он может парализовать одним взглядом, и смертные, оказавшиеся поблизости, чувствуют влечение к нему.#!"
  SERPENTS_FLESH_PERK_EFFECT: "Вы можете получить модификатор [GetModifier('POD_shapeshift_form_serpents_flesh_modifier').GetNameWithTooltip] через опцию #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#flavor Благодаря этой способности плоть вампира становится кожистой, покрытой чешуёй, скользкой и в остальном чудовищной. Его тело становится гибким и податливым, и ему становится труднее причинить боль.#!"
- TYPHONIC_MAW_PERK_EFFECT: "Открывает движение в [Concept('single_combat_duel', 'поединке')|E].\n#flavor Челюсть вампира превращается в свирепую, податливую штуку, которой он может управлять самыми разными способами. Его челюсть расширяется до груди, клыки вырастают до размеров небольших кинжалов, язык на кончике становится вилкой и вытягивается на метр в длину, а горло расширяется, чтобы поглотить всё, что попадется под руку.#!"
+ TYPHONIC_MAW_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_typhonic_maw')]\n#flavor Челюсть вампира превращается в свирепую, податливую штуку, которой он может управлять самыми разными способами. Его челюсть расширяется до груди, клыки вырастают до размеров небольших кинжалов, язык на кончике становится вилкой и вытягивается на метр в длину, а горло расширяется, чтобы поглотить всё, что попадется под руку.#!"
  MASTER_OF_SNAKES_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('snakes').GetName]."
  SMOOTH_SCALES_PERK_EFFECT: "Улучшает модификатор достоинства «[GetPerk('serpents_flesh_perk').GetName(GetPlayer)]» до [GetModifier('POD_shapeshift_form_smooth_scales_modifier').GetNameWithTooltip]."
  FORM_OF_THE_SNAKE_PERK_EFFECT: "Вы можете принять форму [GetModifier('POD_shapeshift_form_snake_modifier').GetNameWithTooltip] или [GetModifier('POD_shapeshift_form_giantserpent_modifier').GetNameWithTooltip] через опцию #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!."
@@ -1092,9 +1079,9 @@
  SERPENT_EYES_PERK_EFFECT: "$countermeasures_unlocks_t1_mental_fortress$\nВы можете получить модификатор [GetModifier('POD_shapeshift_form_serpenteyes_modifier').GetNameWithTooltip] через опцию #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!.\n#flavor Наделяет вампира легендарным гипнотическим взглядом змеи. Глаза вампира становятся золотистыми с большими чёрными радужками, и смертные, находящиеся поблизости от персонажа, чувствуют странное влечение к нему. Смертный, встретившийся с обольстительным взглядом вампира, оказывается обездвиженным. Пока персонаж не отведёт взгляд от своей жертвы, человек застывает на месте.#!"
  MOTHER_OF_MONSTERS_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('serpentis_monsters').GetName]."
  FORM_OF_THE_STORM_PERK_EFFECT: "Улучшает модификатор достоинства «[GetPerk('typhonic_avatar_perk').GetName(GetPlayer)]» до [GetModifier('POD_shapeshift_form_form_of_the_storm_modifier').GetNameWithTooltip]."
- ECHIDNAS_VENOM_PERK_EFFECT: "#flavor На этом уровне укус вампира становится ядовитым, как у смертоносной гадюки.#!"
+ ECHIDNAS_VENOM_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_echidnas_venom')]\n#flavor На этом уровне укус вампира становится ядовитым, как у смертоносной гадюки.#!"
  THE_HEART_OF_DARKNESS_PERK_EFFECT: "Вы можете извлечь своё сердце и получить модификатор [GetModifier('heart_of_darkness_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Вампир совершает ритуал, в ходе которого вынимает своһ сердце, становясь менее эмоциональным и невосприимчивым к [Glossary('диаблери','game_concept_diablerie_desc')] и пронзанию колом.#!"
- COBRA_FANGS_PERK_EFFECT: "#flavor Клыки вампира становятся ядовитыми.#!"
+ COBRA_FANGS_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_echidnas_venom')]\n#flavor Клыки вампира становятся ядовитыми.#!"
  APOPHIS_PERK_EFFECT: "Улучшает модификатор достоинства «[GetPerk('typhonic_avatar_perk').GetName(GetPlayer)]» до [GetModifier('POD_shapeshift_form_apophis_modifier').GetNameWithTooltip]."
  HEART_THIEF_PERK_EFFECT: "Вы можете украсть сердца у других персонажей через происки или у пленников через простое [Concept('character_interaction', 'взаимодействие персонажа')|E]. Если у вас есть чье-то сердце, его легко убить или погрузить в торпор."
  TEMPTATION_PERK_EFFECT: "#flavor Вампиру становится очень трудно сопротивляться.#!"
@@ -1106,8 +1093,8 @@
  SKINOFCHAMELEON_PERK_EFFECT: "$countermeasures_unlocks_t1_obfuscated_court$\nПозволяет сменить форму через опции #TOOLTIP:game_concept_shapeshift_desc #E смены облика#!#!, слившись с окружением, даёт бонусы к проискам и защите от них."
  SCRYTHEHEARTHSTONE_PERK_EFFECT: "#flavor Вы знаете, где в строении находятся люди.#!"
  BONDWITHTHEMOUNTAIN_PERK_EFFECT: "#flavor Частичное слияние с камнем.#!"
- ARMOROFTERRA_PERK_EFFECT: "#flavor Кожа становится жесткой и легче переносит повреждения.#!"
- FLOWWITHTHEMOUNTAIN_PERK_EFFECT: "Повышает шанс успеха [Concept('decision', 'решения')|E] «Бежать из темницы».\n#flavor Пройти сквозь камень.#!"
+ ARMOROFTERRA_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_armor_of_terra')]\n#flavor Кожа становится жесткой и легче переносит повреждения.#!"
+ FLOWWITHTHEMOUNTAIN_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_flow_with_the_mountain')]\nПовышает шанс успеха [Concept('decision', 'решения')|E] «Бежать из темницы».\n#flavor Пройти сквозь камень.#!"
  DARKSTATUE_PERK_EFFECT: "Неуязвимость к убийству огнём и солнцем.\n#flavor Солнечный свет не оказывает на вас физического воздействия, пока вы не двигаетесь.#!"
  ROCKHEART_PERK_EFFECT: "Теперь вы неуязвимы к пронзанию.\n#flavor Ваши внутренности кальцинируются, уменьшая урон от пронзания и делая практически невозможным нанесение ударов.#!"
  CRAWLINGCHAMBER_PERK_EFFECT: "#flavor Вы можете одушевлять, наделять ограниченной разумностью и повелевать (в определенной степени) камнем объемом 10 кубических футов.#!"
@@ -1122,8 +1109,8 @@
  SUBJECTIVE_SUSPENSION_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('subjective_suspension_perk_modifier').GetNameWithTooltip].\n#F Временно приостановить объект вне времени.#!"
  CLOTHOS_GIFT_PERK_EFFECT: "#F Ускорьте свой временной интервал, чтобы совершать несколько действий за раунд.#!"
  FROZEN_OBJECT_PERK_EFFECT: "#F Остановить время для неодушевленного предмета.#!"
- TEMPORIS_INSIGHT_PERK_EFFECT: "#F Сделайте шаг вперед во времени, чтобы увидеть, чем обернутся ваши дальнейшие действия.#!"
- KISS_OF_LACHESIS_PERK_EFFECT: "Вы можете менять физический возраст цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Изменение официального возраста цели.#!"
+ TEMPORIS_INSIGHT_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_patience_of_the_norns')]\n#F Сделайте шаг вперед во времени, чтобы увидеть, чем обернутся ваши дальнейшие действия.#!"
+ KISS_OF_LACHESIS_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_kiss_of_lachesis')]\nВы можете менять физический возраст цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Изменение официального возраста цели.#!"
  HALL_OF_HADES_COURT_PERK_EFFECT: "#F Изменяйте течение времени в области, заставляя часы проходить как минуты или минуты как часы.#!"
  CLIOS_KISS_PERK_EFFECT: "Вы можете вернуть выбранный [Concept('title', 'титул')|E] его предыдущему владельцу через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Привнести что-то или кого-то из прошлого в настоящее.#!"
  TEMPORAL_UNDERSTANDING_PERK_EFFECT: "#F Шагните вперед во времени, чтобы увидеть долгосрочные последствия своих действий.#!"
@@ -1131,17 +1118,17 @@
 
  # Dementation #
 
- INCUBUS_PASSION_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет наложить негативный модификатор в зависимости от резонанса цели.\n#F Воспаляет один из четырёх гуморов жертвы, заставляя её чувствовать, усиливать или заглушать свои эмоции.#!"
+ INCUBUS_PASSION_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_incubus_humor')]\nБонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет наложить негативный модификатор в зависимости от резонанса цели.\n#F Воспаляет один из четырёх гуморов жертвы, заставляя её чувствовать, усиливать или заглушать свои эмоции.#!"
  PASSION_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет наложить модификатор [GetModifier('passion_perk_modifier').GetNameWithTooltip].\n#F Усиление или притупление эмоций, присутствующих у жертвы.#!"
  THE_HAUNTING_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет наложить модификатор [GetModifier('the_haunting_perk_modifier').GetNameWithTooltip].\n#F Насылает на жертву безумные видения.#!"
  EYES_OF_CHAOS_PERK_EFFECT: "#F Постижение природы чего-либо через случайные, на первый взгляд, закономерности.#!"
  SILENCE_THE_SANE_MIND_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет наложить модификатор [GetModifier('silence_the_sane_mind_perk_modifier').GetNameWithTooltip].\n#F Подавляет часть сознания жертвы, делая её растерянной, разъярённой, кататоничной и т.д.#!"
- FIRE_VOICE_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет наложить модификатор [GetModifier('POD_frenzy_terrified_populace_modifier').GetNameWithTooltip].\n#F Заставьте смертных и каинитов войти в Ротшрек.#!"
+ FIRE_VOICE_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_fire_voice')]\nБонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет наложить модификатор [GetModifier('POD_frenzy_terrified_populace_modifier').GetNameWithTooltip].\n#F Заставьте смертных и каинитов войти в Ротшрек.#!"
  TOTAL_INSANITY_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет наложить одну из пяти свойств стресса.\n#F Выдайте кому-нибудь пять временных отклонений.#!"
- STAIN_THE_SOUL_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет наложить постояннон негативное ментальное свойство.\n#F Нанесение жертве постоянного расстройства.#!"
+ STAIN_THE_SOUL_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет наложить постояннон негативное ментальное свойство.\nРазблокированы происки «Проклятие безумия», позволяющие свести с ума других персонажей.\n#F Нанесение жертве постоянного расстройства.#!"
  CHILDMIND_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет наложить пониженное свойство интеллекта.\n#F Провести «психическую лоботомию», снизив ментальные атрибуты.#!"
  COBBLE_THE_ROAD_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет превратить добродетельное свойство цели в противоположное.\n#F Изменение добродетелей человека, возможно, отталкивающее его от принятой морали.#!"
- PRISON_OF_THE_MIND_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет наложить модификатор [GetModifier('prison_of_the_mind').GetNameWithTooltip].\n#F Заблокировать чей-то разум в бредовом состоянии и оставить его тело в кататонии.#!"
+ PRISON_OF_THE_MIND_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_incubus_humor')]\nБонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Помешательства, позволяет наложить модификатор [GetModifier('prison_of_the_mind').GetNameWithTooltip].\n#F Заблокировать чей-то разум в бредовом состоянии и оставить его тело в кататонии.#!"
  LUNATIC_ERUPTION_PERK_EFFECT: "Позволяет наложить модификатор [GetModifier( 'lunatic_summon_modifier' ).GetNameWithTooltip|L] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Вызывает безумное неистовство у всех разумных существ в радиусе до нескольких миль.#!"
  TOUCH_OF_THE_SAINTS_PERK_EFFECT: "Позволяет лечить свойства стресса и негативные ментальные свойства через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Излечение человека от недугов и всего, что влияет на его разум.#!"
 
@@ -1150,23 +1137,23 @@
  THE_MISSING_VOICE_PERK_EFFECT: "#F Голос можно подать в любое место в пределах видимости.#!"
  PHANTOM_SPEAKER_PERK_EFFECT: "#F Обратитесь к знакомому человеку, где бы он ни находился.#!"
  TOREADORS_BANE_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Мельпомении, позволяет наложить на цель модификатор [GetModifier('POD_toreador_bane_modifier').GetNameWithTooltip].\n#F Очаровывайте других песней, как через слабость тореадоров.#!"
- MADRIGAL_PERK_EFFECT: "Разблокирует [Concept('scheme', 'происки')|E] «[GetScheme('PODsoul_bridge').GetTypeName]».\n#F Проецируйте эмоции на свою аудиторию с помощью песни.#!"
+ MADRIGAL_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_madrigal')]\nРазблокирует [Concept('scheme', 'происки')|E] «[GetScheme('PODsoul_bridge').GetTypeName]».\n#F Проецируйте эмоции на свою аудиторию с помощью песни.#!"
  SIRENS_BECKONING_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Мельпомении, позволяет наложить случайный нервный срыв на цель.\n#F Сведите кого-нибудь с ума своей песней.#!"
  MOSH_PIT_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Мельпомении, позволяет наложить на цель модификатор [GetModifier('murderous_frenzy_modifier').GetNameWithTooltip].\n#F Вдохновите цель на неистовство своей песней.#!"
  PRIMAL_SCREAM_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Мельпомении, позволяет наложить на локацию цели модификатор [GetModifier('POD_frenzy_terrified_populace_modifier').GetNameWithTooltip].\n#F Вдохновите цель на Ротшрек своей песней.#!"
  BLESSED_AUDIENCE_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E] и [Concept('commanders', 'командиры')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат случайный нервный срыв.\n#F Используйте [GetPerk('sirens_beckoning_perk').GetName(GetPlayer)] на многих людях одновременно.#!"
- SHATTERING_CRESCENDO_PERK_EFFECT: "#F Причинение вреда людям или предметам с помощью высокочастотного крика.#!"
+ SHATTERING_CRESCENDO_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_shattering_crescendo')]\n#F Причинение вреда людям или предметам с помощью высокочастотного крика.#!"
  PERSISTENT_ECHO_PERK_EFFECT: "Шанс успеха [Concept('character_interaction', 'взаимодействий персонажа')|E] Мельпомении - #P +100%#!.\n#F Приостановить свой голос или способности Мельпомении для тех, кто прибудет позже.#!"
- HAUNTING_MELODY_PERK_EFFECT: "Бонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Мельпомении, позволяет наложить на цель модификатор [GetModifier('haunting_melody_perk_modifier').GetNameWithTooltip].\n#F Оставьте в определённом месте мелодию, которая вызывает у тех, кто её слышит, отвращение.#!"
+ HAUNTING_MELODY_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_shattering_crescendo')]\nБонус к [Concept('character_interaction', 'взаимодействию персонажа')|E] Мельпомении, позволяет наложить на цель модификатор [GetModifier('haunting_melody_perk_modifier').GetNameWithTooltip].\n#F Оставьте в определённом месте мелодию, которая вызывает у тех, кто её слышит, отвращение.#!"
  CALLING_SONG_PERK_EFFECT: "Позволяет призвать всех придворных и гостей цели к вашему двору через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Вживите нескольким целям песню, которая притягивает их к определённому месту.#!"
 
  # Spiritus #
 
  SPEAK_WITH_SPIRITS_PERK_EFFECT: "Разблокирует [Concept('decision', 'решение')|E] «$seek_aid_of_the_spirits_decision$».\n#F Телепатическое общение с окружающими духами.#!"
  AID_FROM_SPIRITS_PERK_EFFECT: "$unlock_enhancing_node$, добавляющий [Concept('modifier', 'модификатор')|E], основанный на типе [Concept('artifact', 'артефакта')|E].\n#F Пробуждает дух предмета, заставляя его лучше выполнять своё предназначение.#!"
- SUMMON_SPIRIT_BEASTS_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('jagglings').GetName].\n#F Призвать духов мёртвых животных, чтобы они служили вам.#!"
- ASPECT_OF_THE_BEAST_PERK_EFFECT: "Разблокирует опцию смены облика «Аспект Зверя».\n#F Призыв духа, чтобы он наделил вас способностями животного.#!"
- ENGLING_FURY_PERK_EFFECT: "Позволяет получить престиж с [Concept('character_interaction', 'взаимодействия персонажа')|E] «Охота на духа».\n#F Получить силу воли, поглотив дух животного.#!"
+ SUMMON_SPIRIT_BEASTS_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_aid_from_spirits')]\nДоступны [men_at_arms|El] - [GetMaA('jagglings').GetName].\n#F Призвать духов мёртвых животных, чтобы они служили вам.#!"
+ ASPECT_OF_THE_BEAST_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_aspect_of_the_beast')]\nРазблокирует опцию смены облика «Аспект Зверя».\n#F Призыв духа, чтобы он наделил вас способностями животного.#!"
+ ENGLING_FURY_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_aspect_of_the_beast')]\nПозволяет получить престиж с [Concept('character_interaction', 'взаимодействия персонажа')|E] «Охота на духа».\n#F Получить силу воли, поглотив дух животного.#!"
  BEASTLY_HUNGER_PERK_EFFECT: "Позволяет получить благочестие с [Concept('character_interaction', 'взаимодействия персонажа')|E] «Охота на духа».\n#F Получить силу воли, поглотив дух животного.#!"
  THE_WILD_BEAST_PERK_EFFECT: "Разблокирует опцию смены облика «Дикий зверь».\n#F Трансформация в могучего дикого зверя.#!"
  THE_SPIRIT_BEAST_PERK_EFFECT: "Позволяет выбрать духовного зверя.\n#F Слияние с духом животного.#!"
@@ -1175,7 +1162,7 @@
  FLIGHT_1_PERK_EFFECT: "#F Вы можете парить, как дельтаплан.\nНо нести ничего нельзя.#!"
  FLIGHT_2_PERK_EFFECT: "Снижает вероятность наступления определённых негативных событий при осмотре ваших владений.\n#F Вы можете совершать взлёт с разбега и перевозить 10 килограммов во время полёта.#!"
  FLIGHT_3_PERK_EFFECT: "#F Вы можете совершить прямой вертикальный взлёт без груза или взлететь с разбега, неся на себе до 25 кг.#!"
- FLIGHT_4_PERK_EFFECT: "#F Теперь вы можете совершить вертикальный взлёт с багажом до 25 кг, а во время полёта - до 45 кг.#!"
+ FLIGHT_4_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_wingborne_evasion')]\n#F Теперь вы можете совершить вертикальный взлёт с багажом до 25 кг, а во время полёта - до 45 кг.#!"
  FLIGHTADVANCED_PERK_EFFECT: "#F Теперь вы можете перевозить до 90 килограммов, что вполне достаточно, чтобы унести взрослого человека (или вампира).\nМаксимальная скорость - 120 километров в час.#!"
  FLIGHT_6_PERK_EFFECT: "#F Теперь вы можете перевозить до 135 кг, что вполне достаточно для перевозки взрослого человека (или вампира).\nМаксимальная скорость - 150 километров в час.#!"
  FLIGHT_7_PERK_EFFECT: "#F Теперь вы можете перевозить до 180 килограммов, что вполне достаточно, чтобы унести взрослого человека (или вампира).\nМаксимальная скорость - 180 километров в час.#!"
@@ -1189,10 +1176,10 @@
  OBEAH_PANACEA_PERK_EFFECT: "Позволяет использовать [Concept('character_interaction', 'взаимодействие персонажа')|E] кровавого исцеления на других персонажах для залечивания шрамов.\n#F Так же как вы можете залечить раны, нанесённые вам, зализывая их, залечите раны, нанесённые другим, зализывая их.#!"
  SENSE_DEATH_PERK_EFFECT: "#F Определение состояния здоровья человека и другая информация о крови.#!"
  SENSE_CYCLE_PERK_EFFECT: "#F Ощутите весь жизненный цикл, инстинктивно понимая, когда тот или иной человек или событие важны для вашего будущего.#!"
- AUGURING_THE_SICKNESS_PERK_EFFECT: "#F Узнайте о тяжести и характере болезни, поразившей цель.#!"
+ AUGURING_THE_SICKNESS_PERK_EFFECT: "[Concept('aptitude', 'Пригодность')|E] придворной должности «[GetCourtPositionType('court_physician_court_position').GetName()]»: @court_physician_icon! #P +30#!\n#F Узнайте о тяжести и характере болезни, поразившей цель.#!"
  GIFT_OF_SLEEP_PERK_EFFECT: "$countermeasures_unlocks_t2_bounties_for_whispers$\n#F Снимает с цели чувство боли или усыпляет живое существо.#!"
- PEACEFUL_TOUCH_PERK_EFFECT: "$countermeasures_unlocks_t1_mental_fortress$\n#F Успокойте враждебную цель прикосновением, чтобы ей было сложнее нанести вам удар.#!"
- HEALERS_TOUCH_PERK_EFFECT: "Позволяет использовать [Concept('character_interaction', 'взаимодействие персонажа')|E] кровавого исцеления на других персонажах для залечивания ран.\n#F Исцеление ран смертного или вампира одним прикосновением, включая болезни, передающиеся через кровь.#!"
+ PEACEFUL_TOUCH_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_peaceful_touch')]\n$countermeasures_unlocks_t1_mental_fortress$\n#F Успокойте враждебную цель прикосновением, чтобы ей было сложнее нанести вам удар.#!"
+ HEALERS_TOUCH_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_healers_touch')]\nПозволяет использовать [Concept('character_interaction', 'взаимодействие персонажа')|E] кровавого исцеления на других персонажах для залечивания ран.\n#F Исцеление ран смертного или вампира одним прикосновением, включая болезни, передающиеся через кровь.#!"
  NEUTRAL_GUARD_PERK_EFFECT: "#F Создаёт барьер в 10 футах от себя, который не позволит другим приблизиться.#!"
  BURNING_TOUCH_PERK_EFFECT: "#F Вызывает у жертвы изнурительную агонию и может стать причиной Ротшрека у жертв-вампиров.#!"
  PARIAHS_CARESS_PERK_EFFECT: "Позволяет наложить на цель модификатор [GetModifier('pariahs_caress_perk_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Пометьте цель кровавым прикосновением, чтобы затруднить все его социальные взаимодействия.#!"
@@ -1202,11 +1189,11 @@
  WATCHER_PEACEMAKER_PERK_EFFECT: "$countermeasures_unlocks_t2_mental_fortress$\n#F Распространяет ауру спокойствия и умиротворения, как и способность третьего уровня выше.#!"
  UNBURDEN_THE_BESTIAL_SOUL_PERK_EFFECT: "Позволяет наложить положительный модификатор или исцелить негативные ментальные свойства цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Извлеките чью-то душу и улучшите рейтинг Тропы, повысьте добродетели субъекта (Совесть, мужество и самоконтроль), понизьте их (Убеждённость и инстинкт) и вылечите отклонения.#!"
  ENDING_THE_WATCH_PERK_EFFECT: "Прирост опыта образа жизни при убийстве не сверхъестественных персонажей.\n#F Безболезненно убить смертного, который хочет умереть, и получить от него знания или энергию.#!"
- VENGEANCE_OF_SAMIEL_PERK_EFFECT: "#F Нанесение одного разрушительного удара, от которого невозможно уклониться.#!"
+ VENGEANCE_OF_SAMIEL_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_samiels_vengeance')]\n#F Нанесение одного разрушительного удара, от которого невозможно уклониться.#!"
  SOULS_BREATH_PERK_EFFECT: "Позволяет потреблять энергию цели через [Concept('character_interaction', 'взаимодействие персонажа')|E], чтобы утолить голод.\n#F Питание дыханием смертных вместо крови или кража крови и силы у других сверхъестественных существ через дыхание.#!"
  FATHERS_JUDGEMENT_PERK_EFFECT: "#F Лишить часть [Glossary('витэ','game_concept_vitae_desc')] вампира инерции.#!"
  REPULSION_PERK_EFFECT: "Снижает вероятность восстания [Concept('factions', 'фракций')|E] против вас.\n#F Вызывают у людей инстинктивное желание отстраниться от вас, словно вспомнив что-то неприятное и не имея интереса к продолжению.#!"
- RAYZEELS_SONG_PERK_EFFECT: "Позволяет исцелить все раны, болезни и сверхъестественные хвори при дворе цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Облегчает исцеление других.#!"
+ RAYZEELS_SONG_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_healers_touch')]\nПозволяет исцелить все раны, болезни и сверхъестественные хвори при дворе цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Облегчает исцеление других.#!"
  HEAVENS_GATE_PERK_EFFECT: "При создании гулей они получат свойство «[GetTrait('revenant').GetName( GetNullCharacter )]».\n#F Воскрешение недавно умерших смертных как #TOOLTIP:GAME_TRAIT,revenant,[GetNullCharacter] #L ревенантов#!#!#!"
  BLISSFUL_AGONY_PERK_EFFECT: "#F Причиняет жертве постоянную боль, которая может нанести вред или довести её до неистовства.#!"
  SWORD_OF_THE_RIGHTEOUS_PERK_EFFECT: "$unlock_enhancing_node$ [GetModifier('sword_of_the_righteous_modifier').GetNameWithTooltip]\n#F Заставьте клинок, покрытый вашей [Glossary('витэ','game_concept_vitae_desc')], пылать небесным огнем и наносить повышенный урон.#!"
@@ -1222,10 +1209,10 @@
  SCORPIONS_CURSE_PERK_EFFECT: "Ваши соперники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('scorpions_curse_perk_modifier').GetNameWithTooltip].\n#F Разместите оберег на твёрдой поверхности, при прикосновении к которому активируется способность воина.#!"
  SORCERER_DAGONS_CALL_PERK_EFFECT: "Позволяет нанести цели рану через [Concept('character_interaction', 'взаимодействие персонажа')|E], тяжесть которой зависит от значения доблести вашего персонажа.\n#F Причинение вреда на расстоянии разуму человека, к которому вы прикасались в течение последнего часа.#!"
  SORCERER_BAALS_CARESS_PERK_EFFECT: "Разблокирует [Concept('decision', 'решение')|E] «$seek_aid_of_the_spirits_decision$».\n#F Восприятие духовных существ.#!"
- TASTE_OF_DEATH_PERK_EFFECT: "#F Плевок кислотной крови, которая ранит нематериальных существ.#!"
+ TASTE_OF_DEATH_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_taste_of_death')]\n#F Плевок кислотной крови, которая ранит нематериальных существ.#!"
  WARRIOR_SILENCE_OF_DEATH_PERK_EFFECT: "#F Окружающее вас пространство становится абсолютно бесшумным.#!"
  BLOOD_ESSENCE_PERK_EFFECT: "#P 20%#! вероятность убийства вражеских [Concept('knights', 'рыцарей')|E], когда они получают ранения или увечья в [Concept('combat_phase', 'бою')|E].\n#F Вытягивайте кровь из сердца обескровленной и ослабленной цели.#!"
- WARRIOR_SCORPIONS_TOUCH_PERK_EFFECT: "В начале войны вражеский воитель с самым низким значением доблести получит ранение.\n#F Создание контактного яда, который сильно ослабляет жертву физически.#!"
+ WARRIOR_SCORPIONS_TOUCH_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_scorpions_touch')]\nВ начале войны вражеский воитель с самым низким значением доблести получит ранение.\n#F Создание контактного яда, который сильно ослабляет жертву физически.#!"
  WARRIOR_DAGONS_CALL_PERK_EFFECT: "Позволяет нанести цели рану через [Concept('character_interaction', 'взаимодействие персонажа')|E], тяжесть которой зависит от значения доблести вашего персонажа.\n#F Причинение вреда на расстоянии разуму человека, к которому вы прикасались в течение последнего часа.#!"
  WARRIOR_BAALS_CARESS_PERK_EFFECT: "Улучшает «Касание скорпиона»: в начале войны два вражеских воителя с самым низким значением доблести получат ранение.\n#F Создание яда, которым можно покрыть оружие, чтобы сделать его более опасным.#!"
  QUICKEN_THE_MORTALS_BLOOD_PERK_EFFECT: "Выпивая кровь, вы снижаете свой голод, как если бы вы выпили вдвое больше.\n#F Вдвое больше крови за каждую осушенную жертву.#!"
@@ -1253,34 +1240,34 @@
  GOBLINISM_PERK_EFFECT: "#F Интуитивное чувство направления под землей; призыв гоблинов, помогающих деформировать и изменять форму камня.#!"
  AURA_ABSORPTION_PERK_EFFECT: "Позволяет сбросить резонанс цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Снимает резонанс с объекта.#!"
  CHANJELIN_WARD_PERK_EFFECT: "#F Размещение символов, которые запутывают и дезориентируют людей.#!"
- RIDDLE_PHANTASTIQUE_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E] и [Concept('commanders', 'командиры')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('riddle_phantastique_perk_modifier').GetNameWithTooltip].\n#F Говорите загадками, которые заставляют людей только сидеть и размышлять.#!"
+ RIDDLE_PHANTASTIQUE_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_riddle_phantastique')]\nВражеские [Concept('knights', 'рыцари')|E] и [Concept('commanders', 'командиры')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('riddle_phantastique_perk_modifier').GetNameWithTooltip].\n#F Говорите загадками, которые заставляют людей только сидеть и размышлять.#!"
  STONE_TRAVEL_PERK_EFFECT: "Позволяет телепортировать армию в выбранную локацию или телепортироваться к следующему пункту назначения путешествия через [Concept('character_interaction', 'взаимодействие персонажа')|E], если местность позволяет это сделать.\n#F Вампир может прокладывать туннели под землёй.#!"
- STEAL_THE_MIND_PERK_EFFECT: "Позволяет временно снять атрибуты цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Временно удаляет воспоминания и знания жертвы.#!"
+ STEAL_THE_MIND_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_steal_the_mind')]\nПозволяет временно снять атрибуты цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Временно удаляет воспоминания и знания жертвы.#!"
  EARTH_SWORD_PERK_EFFECT: "#F Шипы выстреливают в цель из любого большого сооружения.#!"
- ABSORB_THE_MIND_PERK_EFFECT: "Позволяет поглотить разум цели во время казни, чтобы повысить свойство образования.\n#F Навсегда забирает у жертвы ранги способностей себе.#!"
+ ABSORB_THE_MIND_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_steal_the_mind')]\nПозволяет поглотить разум цели во время казни, чтобы повысить свойство образования.\n#F Навсегда забирает у жертвы ранги способностей себе.#!"
  BASILISKS_TOUCH_PERK_EFFECT: "Позволяет превратить цель в камень через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Превращает жертву в камень одним прикосновением.#!"
 
  # Daimonion #
 
  SENSE_THE_SIN_PERK_EFFECT: "Вы можете попытаться раскрыть случайный секрет цели (выбранный случайным образом) через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Эта способность позволяет баали заглянуть в душу своей жертвы, чтобы вычислить её самую большую моральную слабость.#!"
- FEAR_THE_VOID_BELOW_PERK_EFFECT: "Снижает смелость цели на 10 лет через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Баали пугает цель, внушая ей мысль о том, что она попадёт в ад.#!"
+ FEAR_THE_VOID_BELOW_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_fear_of_the_void')]\nСнижает смелость цели на 10 лет через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Баали пугает цель, внушая ей мысль о том, что она попадёт в ад.#!"
  CONFLAGRATION_PERK_EFFECT: "#flavor Баали извлекает разрушительную сущность Запределья.#!"
- PSYCHOMACHIA_PERK_EFFECT: "Призывает в реальность худший кошмар цели, накладывая на неё [Concept('modifier', 'модификатор')|E] в зависимости от её личности через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Баали вызывает явление самого сильного страха или травмы жертвы.#!"
+ PSYCHOMACHIA_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_fear_of_the_void')]\nПризывает в реальность худший кошмар цели, накладывая на неё [Concept('modifier', 'модификатор')|E] в зависимости от её личности через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Баали вызывает явление самого сильного страха или травмы жертвы.#!"
  CONDEMNATION_PERK_EFFECT: "Накладывает на цель модификатор [GetModifier('POD_condemnation_modifier').GetNameWithTooltip] на 5 лет через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Баали накладывает на цель изнуряющее проклятие.#!"
  LURE_DIABOLIK_PERK_EFFECT: "Призывает инферналиста к вашему [Concept('court', 'двору')|E] через [Concept('decision', 'решение')|E].\n#flavor Баали приказывает ближайшему инферналисту служить ему.#!"
  HELL_BORN_INVESTITURE_PERK_EFFECT: "Позволяет запятнать свою душу великим злом, чтобы получить доступ к #TOOLTIP:game_concept_investiture_lifestyle_desc #E пути инвеституры#!#! и #V 6#! оч. [Concept('perk', 'достоинства')|E] за определённую плату через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Баали занимает своё законное место повелителя ада.#!"
  BRING_THE_PLAGUE_PERK_EFFECT: "Призывает #TOOLTIP:GAME_TRAIT,demonic_plague,[GetPlayer] #L демоническую чуму#!#! на локацию цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Баали распространяет смертельную чуму, которая поражает как смертных, так и каинитов.#!"
  THE_RE_EMBRACE_PERK_EFFECT: "Позволяет переобратить вампира в ваш [Glossary('клан','game_concept_Clan_desc')] без изменения [Glossary('поколения','game_concept_vampgeneration_desc')] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Когда происходит призыв «Повторного обращения», сир берёт свой потенциальное дитя за горло и пускает кровь в четыре чаши, испещренные древними демоническими рунами. Затем сир наполняет своей кровью еще четыре чаши, поочередно окружая ими дитя. Когда посвящаемый лежит на земле, истекая кровью и все ближе приближаясь к своей окончательной смерти, сир призывает фрагмент души самого могущественного демона линии крови, Намтару, и соединяет его с душой дитя, чтобы развратить ее и приблизить его дух к духу баали.#!"
- ADRAMELECHS_WRATH_PERK_EFFECT: "Открывает движение в [Concept('single_combat_duel', 'поединке')|E].\nНаносит ранения вражеским [Concept('knights', 'рыцарям')|E] и [Concept('commanders', 'командирам')|E] в [Concept('combat_phase', 'бою')|E], или вашим противникам во время [Concept('single_combat_duel_plural', 'поединков')|E], если они являются вампирами.\n#flavor Баали заставляет каинита гореть так, словно на него светит само солнце.#!"
+ ADRAMELECHS_WRATH_PERK_EFFECT: "Наносит ранения вражеским [Concept('knights', 'рыцарям')|E] и [Concept('commanders', 'командирам')|E] в [Concept('combat_phase', 'бою')|E], или вашим противникам во время [Concept('single_combat_duel_plural', 'поединков')|E], если они являются вампирами.\n#flavor Баали заставляет каинита гореть так, словно на него светит само солнце.#!"
  SPEW_WIDE_THE_PIT_PERK_EFFECT: "После смерти все [Concept('counties', 'графства')|E] [Concept('duchy', 'герцогства')|E], в котором вы умерли, получат модификатор [GetModifier('spew_wide_the_pit_modifier').GetNameWithTooltip] на 100 лет.\n#flavor Баали приносит себя в жертву, чтобы один из Старших богов мог войти в мир.#!"
 
  # Chimerstry #
 
  IGNIS_FATUUS_PERK_EFFECT: "$countermeasures_unlocks_t1_obfuscated_court$\n#F Создание неподвижной иллюзии, воздействующей на одно из пяти чувств.#!"
  FATA_MORGANA_PERK_EFFECT: "#F Создание неподвижной иллюзии, которая может воздействовать на одно из пяти чувств.#!"
- APPARITION_PERK_EFFECT: "#F Добавляет движение в иллюзии, созданные с помощью Ignis Fatuus или Фата-моргана.#!"
+ APPARITION_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_phantasmal_feint')]\n#F Добавляет движение в иллюзии, созданные с помощью Ignis Fatuus или Фата-моргана.#!"
  PERMANENCY_PERK_EFFECT: "$countermeasures_unlocks_t2_obfuscated_court$\n#F Иллюзия, созданная Химерией, действует до тех пор, пока не будет развеяна.#!"
- HORRID_REALITY_PERK_EFFECT: "Накладывает на всех вражеских правителей модификатор [GetModifier('horrid_reality_perk_modifier').GetNameWithTooltip], когда вы вступаете в [Concept('war', 'войну')|E] в качестве основного нападающего или защитника.\n#F Помещает разум жертвы в иллюзорный мир, созданный вампиром.#!"
+ HORRID_REALITY_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_horrid_reality')]\nНакладывает на всех вражеских правителей модификатор [GetModifier('horrid_reality_perk_modifier').GetNameWithTooltip], когда вы вступаете в [Concept('war', 'войну')|E] в качестве основного нападающего или защитника.\n#F Помещает разум жертвы в иллюзорный мир, созданный вампиром.#!"
  HORRID_BLADE_OF_THE_DEMONS_PERK_EFFECT: "$unlock_forging_node$ [GetModifier('artifact_prowess_2_modifier').GetNameWithTooltip]\n#F Создаёт опасное оружие прямо из воздуха.#!"
  MASS_HORROR_PERK_EFFECT: "Накладывает на всех вражеских правителей модификатор [GetModifier('mass_horror_perk_modifier').GetNameWithTooltip], когда вы вступаете в [Concept('war', 'войну')|E] в качестве основного нападающего или защитника.\n#F Как «Ужасная реальность», но действует на множество людей.#!"
  AID_OF_THE_GANDHARVAS_PERK_EFFECT: "#F Сделайте так, чтобы вс` в комнате казалось роскошным и великолепным.#!"
@@ -1291,21 +1278,14 @@
  # Bardo #
 
  RESTORE_HUMANITAS_PERK_EFFECT: "Разблокирует [Concept('decision', 'решение')|E] «Медитировать в одиночестве».\n#F Восстановите потерянную человечность через медитацию.#!"
- BANISHING_SIGN_OF_THOTH_PERK_EFFECT: "$countermeasures_unlocks_t1_all_seeing_eye$\n#F Используйте мистический жест, чтобы отпугнуть сверхъестественные силы.#!"
+ BANISHING_SIGN_OF_THOTH_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_banishing_sign_of_thoth')]\n$countermeasures_unlocks_t1_all_seeing_eye$\n#F Используйте мистический жест, чтобы отпугнуть сверхъестественные силы.#!"
  GIFT_OF_APIS_PERK_EFFECT: "#P +50%#! к опыту [Concept('animal_lifestyle', 'животного резонанса')|E] от цепочки построек [Concept('domicile', 'убежища')|E] «[GetDomicileBuilding('vampire_stable_01').GetName]»\n#F Получайте столько же подпитки от крови животных, сколько и от человеческой крови.#!"
  PILLAR_OF_OSIRIS_PERK_EFFECT: "Делает [Concept('decision', 'решение')|E] «Медитировать в одиночестве» бесплатным и удваивает вероятность позитивного исхода.\n#F Создайте мистический центр, позволяющий правильно медитировать и снижающий сложность сверхъестественных способностей.#!"
- PARADOX_PERK_EFFECT: "Позволяет распустить через [Concept('character_interaction', 'взаимодействие персонажа')|E] случайную фракцию, нацеленную на вас.\n#F Произнесите слово, которое переполнит других блаженством и затруднит им причинение вам вреда.#!"
+ PARADOX_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_revelation')]\nПозволяет распустить через [Concept('character_interaction', 'взаимодействие персонажа')|E] случайную фракцию, нацеленную на вас.\n#F Произнесите слово, которое переполнит других блаженством и затруднит им причинение вам вреда.#!"
  BOON_OF_ANUBIS_PERK_EFFECT: "Позволяет наложить на цель модификатор [GetModifier('boon_of_anubis_perk_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Убедитесь в том, что смертный не может быть обращён и переживёт попытку.#!"
  BRING_FORTH_THE_DAWN_PERK_EFFECT: "#F Заставляет вампиров спать так, как будто сейчас день.#!"
  MUMMIFICATION_RITUAL_PERK_EFFECT: "Вы можете заставить цель впасть в [Glossary('торпор','game_concept_torpor_desc')] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Введение гуля или каинита в длительный [Glossary('торпор','game_concept_torpor_desc')].#!"
  RAS_BLESSING_PERK_EFFECT: "Вы больше не будете получать раны от способностей, создающих солнечный свет.\n#F Проведите ритуал, позволяющий Детям Осириса временно ходить при дневном свете.#!"
-
- # Thin-Blood Alchemy #
- FAR_REACH_PERK_EFFECT: "#F Малый телекинез.#!"
- COUNTERFEIT_1_PERK_EFFECT: "Разблокирует формулу подделки, которая даёт доступ к [Concept('interaction', 'взаимодействию')|E] достоинства дисциплины 1-го уровня.\n#F Пользователь может разработать формулу для подделки дисциплины 1-го уровня.#!"
- COUNTERFEIT_2_PERK_EFFECT: "Разблокирует формулу подделки, которая даёт доступ к [Concept('interaction', 'взаимодействию')|E] достоинства дисциплины 2-го уровня.\n#F Пользователь может разработать формулу для подделки дисциплины 2-го уровня.#!"
- COUNTERFEIT_3_PERK_EFFECT: "Разблокирует формулу подделки, которая даёт доступ к [Concept('interaction', 'взаимодействию')|E] достоинства дисциплины 3-го уровня.\n#F Пользователь может разработать формулу для подделки дисциплины 3-го уровня.#!"
- COUNTERFEIT_4_PERK_EFFECT: "Разблокирует формулу подделки, которая даёт доступ к [Concept('interaction', 'взаимодействию')|E] достоинства дисциплины 4-го уровня.\n#F Пользователь может разработать формулу для подделки дисциплины 4-го уровня.#!"
 
  # Faith #
 
@@ -1317,37 +1297,37 @@
  DOMINUS_VOBISCUM_PERK_EFFECT: "Используя [Concept('character_interaction', 'взаимодействие персонажа')|E], вы можете благословить другого персонажа, временно улучшив его характеристики.\n#F Форма благословения может быть разной, а результаты часто непостоянны и незначительны. Но иногда их бывает достаточно, чтобы изменить ситуацию.#!"
  INTERCESSION_PERK_EFFECT: "Используя [Concept('character_interaction', 'взаимодействие персонажа')|E], вы можете наделить другого персонажа благочестием с небольшой вероятностью наделить его свойством истинной веры.\n#F Благословенные могут поразить нечестивых одним своим присутствием, но они также могут вдохновить духовно угнетённых стать лучше.#!"
  HOLY_BULWARK_PERK_EFFECT: "Вы более невосприимчивы к любым способностям, воздействующим на разум.\n#F Верующий непоколебим в своём уме. Он невосприимчива к эффектам Химерии, Помешательства, Доминирования, Затемнения и любой другой сверхъестественной способности, которая путает разум или пытается изменить его.#!"
- LAY_OF_HANDS_PERK_EFFECT: "Используя [Concept('character_interaction', 'взаимодействие персонажа')|E], вы можете лечить раны и негативные ментальные свойства.\n#F Возложение рук, молитва или более необычные методы приводят к тому же результату. Чистая вера истинно верующего заживляет раны так, как будто их никогда и не было.#!"
- PENANCE_PERK_EFFECT: "Используя [Concept('character_interaction', 'взаимодействие персонажа')|E], вы можете проклясть изверга, снизив его характеристики.\n#F Само присутствие верующих заставляет сверхъестественных исчадий испытывать боль. Осознание того, что их моральная слабость ещё не прошла, сжигает их изнутри.#!"
+ LAY_OF_HANDS_PERK_EFFECT: "Используя [Concept('character_interaction', 'взаимодействие персонажа')|E], вы можете лечить раны и негативные ментальные свойства.\n[PODUnlocksCombatMove('POD_combat_move_truefaith_lay_on_hands')].\n#F Возложение рук, молитва или более необычные методы приводят к тому же результату. Чистая вера истинно верующего заживляет раны так, как будто их никогда и не было.#!"
+ PENANCE_PERK_EFFECT: "Используя [Concept('character_interaction', 'взаимодействие персонажа')|E], вы можете проклясть изверга, снизив его характеристики.\n[PODUnlocksCombatMove('POD_combat_move_truefaith_penance')].\n#F Само присутствие верующих заставляет сверхъестественных исчадий испытывать боль. Осознание того, что их моральная слабость ещё не прошла, сжигает их изнутри.#!"
  CONVERSION_PERK_EFFECT: "Вы можете мгновенно обратить державу в свою конфессию за немалое количество благочестия через [Concept('decision', 'решение')|E].\n#F В ярком проявлении внутреннего света верующий является живым, дышащим маяком того, что он считает правильным и благим.#!"
  MIRACLE_OF_FAITH_PERK_EFFECT: "Вы можете сделать вампира смертным или заставить достичь Голконды через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nОткрывает [Concept('crafting_node', 'узел ремесла')|E], добавляющий [Concept('modifier', 'модификатор')|E] «[GetModifier('bless_modifier').GetNameWithTooltip]», а также модификатор, основанный на типе [Concept('artifact', 'артефакта')|E].\n#F Верующий благословляет икону, наполняя её частичкой своей веры.\nСама сила убеждения верующих заставляет других пересмотреть свой жизненный путь.#!"
- MIRACLE_OF_DEVOTION_PERK_EFFECT: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('minion_of_the_divine').GetName].\n#F Вдохновлённые, следуя за благословенным, ягнята сражаются как львы, а мужчины - как демоны.#!"
+ MIRACLE_OF_DEVOTION_PERK_EFFECT: "Если вы являетесь охотников, не являющимся инферналистом, доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('minion_of_the_divine').GetName].\n#F Вдохновлённые, следуя за благословенным, ягнята сражаются как львы, а мужчины - как демоны.#!"
  MIRACLE_OF_TRANQUILITY_PERK_EFFECT: "Открывает особую постройку «[GetBuilding('sanctified_area_01').GetName]».\nВы можете разрешить все [Concept('Fetter', 'оковы')|E] призрака через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Благословляя небольшую территорию силой своих убеждений, верующие значительно затрудняют проникновение враждебных существ или духов.#!"
- MIRACLE_OF_PROTECTION_PERK_EFFECT: "Вы можете [Concept('POD_banish', 'изгнать')|E] призрака/демона/фею через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nВ вас больше не могут вселиться #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраки#!#!.\nПолучен иммунитет к первобытному ужасу.\n#F Верующий способен отталкивать вампиров, мертвецов и других существ, живущих рядом с миром или в его тени, силой своего внутреннего света. Он может использовать молитвы, святые символы или просто силу своего присутствия, чтобы отогнать их.#!"
+ MIRACLE_OF_PROTECTION_PERK_EFFECT: "Вы можете [Concept('POD_banish', 'изгнать')|E] призрака/демона/фею через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nВ вас больше не могут вселиться #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраки#!#!.\n[PODUnlocksCombatMove('POD_combat_move_truefaith_miracle_of_protection')].\nПолучен иммунитет к первобытному ужасу.\n#F Верующий способен отталкивать вампиров, мертвецов и других существ, живущих рядом с миром или в его тени, силой своего внутреннего света. Он может использовать молитвы, святые символы или просто силу своего присутствия, чтобы отогнать их.#!"
  SHIELD_OF_FAITH_PERK_EFFECT: "#F Присутствие истинно верующих защищает тех, кто следует за ними, будь то от духовного или физического вреда.#!"
 
  PRY_OPEN_PERK_EFFECT: "#F Узнайте о мыслях и желаниях цели. Помогает установить контакт.#!"
  UNWAVERING_VISION_PERK_EFFECT: "Вы можете наслать на вражеские державы модификатор [GetModifier( 'POD_ha_disrupted_contacts_modifier' ).GetNameWithTooltip|L] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Раскройте контакты цели среди смертных, что позволит вам ослабить их влияние.#!"
  UNEARTH_PERK_EFFECT: "После успешной [Concept('siege', 'осады')|E] или [Concept('raid', 'набега')|E] [Concept('characters', 'персонажи')|E] чаще [Concept('imprison', 'попадают в темницу')|E].\n#F Раскрывает события, произошедшие в данном месте; полезно для отслеживания убегающих целей.#!"
  LIFTING_THE_VEIL_PERK_EFFECT: "Вы можете наделить пленённую цель модификатором [GetModifier( 'tracked_down_modifier' ).GetNameWithTooltip|L] через [Concept('character_interaction', 'взаимодействие персонажа')|E], что позволит вам мгновенно завершить [Concept('journey', 'странствие')|E] «Поиск логова» в отношении её сюзерена, как только она будет освобождена.\n#F Сделайте попытки объекта обмана тщетными, что приведёт к плодотворному допросу.#!"
- REVELATION_PERK_EFFECT: "Вы можете заставить цель получить [Concept('factions', 'фракцию')|E] ячейки инквизиторов через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Раскройте скоту отвратительную природу цели и предоставьте это на их суд.#!"
+ REVELATION_PERK_EFFECT: "Вы можете заставить цель получить [Concept('faction', 'фракцию')|E] ячейки инквизиторов через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_truefaith_patris_revelation')].\n#F Раскройте скоту отвратительную природу цели и предоставьте это на их суд.#!"
 
- SUNDER_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier( 'endo_holyweapon_modifier' ).GetNameWithTooltip|L] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Эта сила придаёт оружию собственную энергию, позволяя ему поражать священным возмездием всё, к чему прикасается.#!"
+ SUNDER_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier( 'endo_holyweapon_modifier' ).GetNameWithTooltip|L] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_truefaith_filius_sunder')].\n#F Эта сила придаёт оружию собственную энергию, позволяя ему поражать священным возмездием всё, к чему прикасается.#!"
  CENSURE_PERK_EFFECT: "#F С помощью этой силы инквизитор может заставить существо совершить глупую ошибку и опозориться.#!"
  GODS_ARMOUR_PERK_EFFECT: "Повышенная вероятность оправиться от ран и меньше шансов получить их в ходе [Concept('journey', 'странствия')|E] «Поиск логова».\n#F Это достоинство значительно улучшает восстановление после ранений, полученных в бою.#!"
- ROD_AND_STAFF_PERK_EFFECT: "Позволяет сделать ваших [Concept('knights', 'рыцарей')|E] неуязвимым к ранениям через [Concept('character_interaction', 'взаимодействие персонажа')|E], но ваши шансы получить ранение в [Concept('combat_phase', 'бою')|E] возрастут, когда вы являетесь [Concept('commander', 'командиром')|E].\n#F Обладая этой силой, инквизитор становится свящённым оплотом против сил зла, предотвращая причинение любого вреда тем, кто следует за ним, до тех пор, пока он твёрдо стоит на своём.#!"
- WRATH_OF_GOD_PERK_EFFECT: "Позволяет ранить или убить выбранного персонажа через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Инквизитор взывает к правосудию Господа в его самой непосредственной и жестокой форме.#!"
+ ROD_AND_STAFF_PERK_EFFECT: "Позволяет сделать ваших [Concept('knights', 'рыцарей')|E] неуязвимым к ранениям через [Concept('character_interaction', 'взаимодействие персонажа')|E], но ваши шансы получить ранение в [Concept('combat_phase', 'бою')|E] возрастут, когда вы являетесь [Concept('commander', 'командиром')|E].\n[PODUnlocksCombatMove('POD_combat_move_truefaith_filius_rod_and_staff')].\n#F Обладая этой силой, инквизитор становится свящённым оплотом против сил зла, предотвращая причинение любого вреда тем, кто следует за ним, до тех пор, пока он твёрдо стоит на своём.#!"
+ WRATH_OF_GOD_PERK_EFFECT: "Позволяет ранить или убить выбранного персонажа через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_truefaith_filius_wrath_of_god')].\n#F Верующий взывает к правосудию Господа в его самой непосредственной и жестокой форме.#!"
 
  TEARS_OF_THE_MARTYR_PERK_EFFECT: "Разблокирует опцию события, когда могущественный персонаж пытается сопротивляться заключению в темницу.\n#F Благочестивые глаза инквизитора становятся зеркалом души любого, кто смотрит в них, вызывая парализующее сожаление и сомнение у рабов греха.#!"
  TOUCH_OF_PEACE_PERK_EFFECT: "Позволяет исцелить свойства стресса через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Святое прикосновение инквизитора способно излечить все недуги души.#!"
- AURA_OF_SANCTITY_PERK_EFFECT: "Наносит раны вражеским [Concept('knights', 'рыцарям')|E], выступающим в роли [Concept('commander', 'командиров')|E] во время [Concept('combat_phase', 'фазы боя')|E] или вашим противникам во время [Concept('single_combat_duel_plural', 'поединков')|E], если они являются сверхьестественными существами.\n#F Теург превращает свою веру в поток святой энергии, причиняющий вред нечестивым существам, с которыми он встречается в бою.#!"
+ AURA_OF_SANCTITY_PERK_EFFECT: "Наносит раны вражеским [Concept('knights', 'рыцарям')|E], выступающим в роли [Concept('commander', 'командиров')|E] во время [Concept('combat_phase', 'фазы боя')|E] или вашим противникам во время [Concept('single_combat_duel_plural', 'поединков')|E], если они являются сверхьестественными существами.\n[PODUnlocksCombatMove('POD_combat_move_truefaith_spiritus_aura_of_sanctity')].\n#F Инквизитор превращает свою веру в поток святой энергии, причиняющий вред нечестивым существам, с которыми он встречается в бою.#!"
  RESTORATION_PERK_EFFECT: "Позволяет вам исцелять раны и негативные ментальные свойства через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Если вы уже можете использовать другой источник, вместо этого снижает затраты.\n#F Инквизитор достигает особой склонности к чуду исцеления, он может возлагать руки на больных товарищей чаще и с меньшими затратами.#!"
- JUDGEMENT_OF_HEAVEN_PERK_EFFECT: "Позволяет [Concept('imprison', 'заключить')|E] цель в темницу через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Инквизитор может заключить сверхъестественное существо в земном царстве, где оно не сможет избежать своего окончательного приговора.#!"
+ JUDGEMENT_OF_HEAVEN_PERK_EFFECT: "Позволяет [Concept('imprison', 'заключить')|E] цель в темницу через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_truefaith_spiritus_judgement_of_heaven')].\n#F Инквизитор может заключить сверхъестественное существо в земном царстве, где оно не сможет избежать своего окончательного приговора.#!"
 
  # Abombwe #
 
- PREDATORS_COMMUNION_PERK_EFFECT: "Вампир - величайший хищник на своей территории и чувствует, когда поблизости находится потенциальный союзник или соперник."
- INVOKING_THE_PREDATOR_PERK_EFFECT: "Сформируйте податливую тьму внутри и вытолкните ее наружу, чтобы скопировать аспекты хищных животных."
+ PREDATORS_COMMUNION_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_predators_communion')]\nВампир - величайший хищник на своей территории и чувствует, когда поблизости находится потенциальный союзник или соперник."
+ INVOKING_THE_PREDATOR_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_predators_talons')]\nСформируйте податливую тьму внутри и вытолкните ее наружу, чтобы скопировать аспекты хищных животных."
  TAMING_THE_BEAST_PERK_EFFECT: "$countermeasures_unlocks_t1_supernatural_high_alert$\n#flavor Обратитесь к зверю, чтобы превратить силу своего неистовства в инструмент, улучшая своё физическое мастерство различными способами, но при этом рискуя впасть в полное неистовство.#!"
  UNSEEN_HIBERNATION_PERK_EFFECT: "Вампир устраивает свое логово внутри природных образований, растений или земли, растворяясь во тьме, скрытой под их поверхностью."
  WHISTLING_UP_THE_BEAST_PERK_EFFECT: "Используйте свое мастерство владения Зверем, чтобы вытащить чужого Зверя (или своего собственного) на передний план."
@@ -1355,7 +1335,7 @@
  PREDATORS_TRANSFORMATION_PERK_EFFECT: "Примите форму хищников, используя [Concept('character_interaction', 'взаимодействие персонажа')|E] «Сменить форму»"
  STALKING_DARKNESS_PERK_EFFECT: "Вампир, овладевший Абомбве, - это хищник, преследующий своих врагов во тьме."
  PREDATORS_MASTERY_PERK_EFFECT: "Используйте своего Зверя, чтобы побеждать других зверей - естественных или сверхъестественных, животных или людей."
- INCARNATE_DARKNESS_PERK_EFFECT: "Открывает форму Воплощённой тьмы.\n#flavor Превратитесь в сгусток тьмы, извивающийся и поворачивающийся, пытаясь подражать хищникам, неизвестным человеку.#!"
+ INCARNATE_DARKNESS_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_predators_communion')]\nОткрывает форму Воплощённой тьмы.\n#flavor Превратитесь в сгусток тьмы, извивающийся и поворачивающийся, пытаясь подражать хищникам, неизвестным человеку.#!"
 
  # Gift #
 
@@ -1410,7 +1390,7 @@
  #Ventrue legacy #
 
  VENTRUE_LEGACY_1_PERK_EFFECT: "Разблокирует особое [Concept('character_interaction', 'взаимодействие персонажа')|E] для обмена крючками влияния с другими вентру.\n#F Камилл построил величайшую империю, которую знал и когда-либо узнает [Glossary('каинитский','game_concept_cainite_desc')] мир. [Glossary('Клан','game_concept_Clan_desc')] Вентру действительно начался с него.#!"
- VENTRUE_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии с военным образованием.\n#F Спартанская богиня храбро сражалась с ужасами Карфагена. [Glossary('Клан','game_concept_Clan_desc')] Вентру всегда будет чтить её жертву.#!"
+ VENTRUE_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии игрока с образованием доблести или военного дела.\n#F Спартанская богиня храбро сражалась с ужасами Карфагена. [Glossary('Клан','game_concept_Clan_desc')] Вентру всегда будет чтить её жертву.#!"
  VENTRUE_LEGACY_3_PERK_EFFECT: "Разблокирует особое [Concept('character_interaction', 'взаимодействие персонажа')|E] для навязывания [Concept('the_masquerade', 'Маскарада')|E].\n#F Глупая гибель Медона послужила ценным уроком для Вентру. Не стоит недооценивать смертных.#!"
  VENTRUE_LEGACY_4_PERK_EFFECT: "#F Исследовательница никогда не насытится по-настоящему, ведь мир бесконечен, как и её жажда странствий.#!"
  VENTRUE_LEGACY_5_PERK_EFFECT: "Решение единства дома «Подготовить представителей дома к войне» теперь также даёт дополнительный модификатор.\n#F Персидский полководец вознёсся к божественности под звуки грохочущих катафрактов.#!"
@@ -1434,7 +1414,7 @@
  #Gangrel legacy #
 
  GANGREL_LEGACY_1_PERK_EFFECT: "#F Всеотец с гордостью наблюдает за тем, как его дети с отвагой и честью встречают Рагнарёк.#!"
- GANGREL_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии с военным образованием.\n#F Я поскачу с миллионами! Я - Бич Божий! И я увижу, как ваш мир... сгорит.#!"
+ GANGREL_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии игрока с образованием доблести или военного дела.\n#F Я поскачу с миллионами! Я - Бич Божий! И я увижу, как ваш мир... сгорит.#!"
  GANGREL_LEGACY_3_PERK_EFFECT: "#F Хукрос давным-давно узнал правду о Тёмной матери. С тех пор его ученики распространили ее повсюду.#!"
  GANGREL_LEGACY_4_PERK_EFFECT: "Разблокирует особое [Concept('character_interaction', 'взаимодействие персонажа')|E] на других гангрелах (за исключением близких родственников) для выполнения Обряда статуса, позволяя углубить ваши связи.\n#F И он зарыдал, ибо больше не осталось миров, которые можно было бы завоевать.#!"
  GANGREL_LEGACY_5_PERK_EFFECT: "#F Загнанный в угол зверь защищает своё стадо и наносит ответный удар с яростью и неизменной целью.#!"
@@ -1442,7 +1422,7 @@
  #Ravnos legacy #
 
  RAVNOS_LEGACY_1_PERK_EFFECT: "#F Добрая мать рома оберегает свой народ и даёт ему цель.#!"
- RAVNOS_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии с военным образованием.\n#F Вечная война нуждается в вечном генерале. Чандрапутра - именно такой человек.#!"
+ RAVNOS_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии игрока с образованием доблести или военного дела.\n#F Вечная война нуждается в вечном генерале. Чандрапутра - именно такой человек.#!"
  RAVNOS_LEGACY_3_PERK_EFFECT: "Разблокирует особое [Concept('character_interaction', 'взаимодействие персонажа')|E] для проведения ритуала, чтобы получить мудрость.\n#F Ракшаса из ракшас выколол свой глаз, чтобы наконец прозреть.#!"
  RAVNOS_LEGACY_4_PERK_EFFECT: "#F Если вы живёте в Египте, ведите себя как египтяне.#!"
  RAVNOS_LEGACY_5_PERK_EFFECT: "#F Проклятый, чудовище, демон... ужас в небьющихся сердцах каждого равнос.#!"
@@ -1458,7 +1438,7 @@
  #Brujah legacy #
 
  BRUJAH_LEGACY_1_PERK_EFFECT: "#F Царь Спарты бесстрастен, как холодный наконечник его копья. За исключением тех случаев, когда речь идёт о конкретной троянке.#!"
- BRUJAH_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии с военным образованием.\n#F Он почти спас Карфаген от гибели. Бруха помнят его триумф и оплакивают поражение.#!"
+ BRUJAH_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии игрока с образованием доблести или военного дела.\n#F Он почти спас Карфаген от гибели. Бруха помнят его триумф и оплакивают поражение.#!"
  BRUJAH_LEGACY_3_PERK_EFFECT: "Разблокирует новую придворную должность воителя Бруха для правителей с рангом герцога и выше.\n#F Благородный разбойник победит тиранов и королей с помощью меча, лука и смекалки.#!"
  BRUJAH_LEGACY_4_PERK_EFFECT: "#F Похоже, для того чтобы по-настоящему понять византийскую бюрократическую систему, вам нужна русская княжна.#!"
  BRUJAH_LEGACY_5_PERK_EFFECT: "#F Первая предательница упорно боролась за свою утопию, но Карфаген пал задолго до прихода римлян.#!"
@@ -1483,7 +1463,7 @@
  #Salubri legacy #
 
  SALUBRI_LEGACY_1_PERK_EFFECT: "#F Её месть - ужасающее зрелище, но ни один огонь не горит вечно.#!"
- SALUBRI_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии с военным образованием.\n#F Меч Салюбри никогда не знал поражений, даже в смерти.#!"
+ SALUBRI_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии игрока с образованием доблести или военного дела.\n#F Меч Салюбри никогда не знал поражений, даже в смерти.#!"
  SALUBRI_LEGACY_3_PERK_EFFECT: "Разблокирует систему каст для вашей династии.\nПерсонажи из домов Райциэль, Мокур, Хрорш и Енош, скорее всего, станут целителями.\nПерсонажи из домов Самиэль и Сумерек, скорее всего, станут воителями.\nПерсонажи из дома хранителей, скорее всего, станут хранителями.\nОбразование также играет не последнюю роль.\n#F Она будет петь, пока мир горит вокруг неё. И, возможно, этого будет достаточно.#!"
  SALUBRI_LEGACY_4_PERK_EFFECT: "#F Мудр тот, кто готовится прятаться, когда надвигается война.#!"
  SALUBRI_LEGACY_5_PERK_EFFECT: "Снижение стоимости священных войн на 60%.\n#F Предатель так и не предстал перед правосудием и посмеялся напоследок. Горькая победа сломленного человека.#!"
@@ -1491,7 +1471,7 @@
  #Lasombra legacy#
 
  LASOMBRA_LEGACY_1_PERK_EFFECT: "#F Отвергнутая дочь замышляет месть. Против теней она использует абсолютный огонь.#!"
- LASOMBRA_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии с военным образованием.\n#F Теневая реконкиста увенчается успехом, но её конечный победитель может оказаться не самым очевидным.#!"
+ LASOMBRA_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии игрока с образованием доблести или военного дела.\n#F Теневая реконкиста увенчается успехом, но её конечный победитель может оказаться не самым очевидным.#!"
  LASOMBRA_LEGACY_3_PERK_EFFECT: "#F Воистину, Самый милосердный превосходит даже смерть.#!"
  LASOMBRA_LEGACY_4_PERK_EFFECT: "#F Каждый ласомбра чувствует зов моря, желая по-настоящему стать частью самой глубокой тени, которая скрывается за всем этим.#!"
  LASOMBRA_LEGACY_5_PERK_EFFECT: "#F Константинополь отомстит, и Венеция сгорит вместе с ним.#!"
@@ -1499,7 +1479,7 @@
  #Banu Haqim legacy#
 
  BANUHAQIM_LEGACY_1_PERK_EFFECT: "#F Скрытых за завесой тайны Бану Хаким боятся далеко за пределами их Ближнего Востока.#!"
- BANUHAQIM_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии с военным образованием.\n#F Непобеждённый поднимется на новые высоты. Даже смерть не лишит его чести.#!"
+ BANUHAQIM_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии игрока с образованием доблести или военного дела.\n#F Непобеждённый поднимется на новые высоты. Даже смерть не лишит его чести.#!"
  BANUHAQIM_LEGACY_3_PERK_EFFECT: "#F Быть старейшиной мало что значит без поддержки соратников.#!"
  BANUHAQIM_LEGACY_4_PERK_EFFECT: "#F Предатель карфагенян до сих пор бродит по ночам, позоря всех истинных Бану Хаким.#!"
  BANUHAQIM_LEGACY_5_PERK_EFFECT: "#F Чёрный пастырь очистит Землю от недостойных. Это единственное спасение, которое придёт в этот обречённый мир.#!"
@@ -1515,7 +1495,7 @@
  #Nosferatu legacy#
 
  NOSFERATU_LEGACY_1_PERK_EFFECT: "$PERK_CAN_SIGN_ALLIANCE$\n#F Гордый монстр стойко противостоит ужасам ночи, вознося свой [Glossary('клан','game_concept_Clan_desc')] к новым высотам.#!"
- NOSFERATU_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии с военным образованием.\n#F Даже старейшины Ближнего Востока не могли сравниться с проверенными навыками и непоколебимой верой Тарика.#!"
+ NOSFERATU_LEGACY_2_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии игрока с образованием доблести или военного дела.\n#F Даже старейшины Ближнего Востока не могли сравниться с проверенными навыками и непоколебимой верой Тарика.#!"
  NOSFERATU_LEGACY_3_PERK_EFFECT: "#F Дания была создана Абсалоном, и будет им уничтожена.#!"
  NOSFERATU_LEGACY_4_PERK_EFFECT: "Решение единства дома «Усилить сеть интриг» теперь даёт модификатор на два раза большее время.\n#F Ярость и ненависть - плохие советчики, но отличное топливо для Зверя.#!"
  NOSFERATU_LEGACY_5_PERK_EFFECT: "#F Маленькая бабушка - единственная, внушающая ужас надежда против ещё более страшных ужасов.#!"
@@ -1526,7 +1506,7 @@
  CAITIFF_LEGACY_2_PERK_EFFECT: ""
  CAITIFF_LEGACY_3_PERK_EFFECT: ""
  CAITIFF_LEGACY_4_PERK_EFFECT: ""
- CAITIFF_LEGACY_5_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии с военным образованием."
+ CAITIFF_LEGACY_5_PERK_EFFECT: "Разблокирует особое свойство командира для каждого члена династии игрока с образованием доблести или военного дела."
 
  #Gargoyle legacy #
  GARGOYLE_LEGACY_1_PERK_EFFECT: "#F Устраивает насест для блудных гаргулий, чтобы они присоединились к вашей державе.#!"
@@ -1646,9 +1626,6 @@
  has_2_extra_perk_points: "@warning_icon!#X Чтобы разблокировать это [Concept('perk', 'достоинство')|E], вам нужно #V 3#! оч. достоинства.#!"
  has_3_extra_perk_points: "@warning_icon!#X Чтобы разблокировать это [Concept('perk', 'достоинство')|E], вам нужно #V 4#! оч. достоинства.#!"
 
- has_1_extra_perk_points_valeren: "@warning_icon!#X Вам нужно #V 1#! оч. достоинства и #V 1000#! ед. опыта, чтобы разблокировать это [Concept('perk', 'достоинство')|E], так как это ваш второй путь Валерена.#!"
- has_2_extra_perk_points_valeren: "@warning_icon!#X Вам нужно #V 2#! оч. достоинства, чтобы разблокировать это [Concept('perk', 'достоинство')|E], так как это ваш третий путь Валерена.#!"
-
  NEEDS_CAPPADOCIAN_NECROMANCY_PATH_TRAINING: "@warning_icon!#X Чтобы разблокировать это достоинство, вам нужно пройти обучение путям некромантии династии [GetDynastyByID( '10000005' ).GetBaseName].#!"
  NEEDS_GIOVANNI_NECROMANCY_PATH_TRAINING: "@warning_icon!#X Чтобы разблокировать это достоинство, вам нужно пройти обучение путям некромантии [GetDynastyHouseByID( 'house_giovanni' ).GetBaseName].#!"
  NEEDS_HARBINGER_NECROMANCY_PATH_TRAINING: "@warning_icon!#X Чтобы разблокировать это достоинство, вам нужно пройти обучение путям некромантии династии [GetDynastyHouseByID( 'house_harbingersofskulls' ).GetBaseName].#!"
@@ -1658,6 +1635,9 @@
 
  masquerade_exposure_increase_effect.tt: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! #N возрастёт#!."
  masquerade_exposure_decrease_effect.tt: "#TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! Раскрытие Маскарада#!#! #P снизится#!."
+
+ scheme_odds.owner.POD_eoel_hen_tian_boon_modifier: "Ваш [Concept('modifier', 'модификатор')|E] «[GetModifier('POD_eoel_hen_tian_boon_modifier').GetNameWithTooltip]»"
+ scheme.owner.POD_eoel_hen_tian_boon_modifier.value_desc: "$scheme_odds.owner.POD_eoel_hen_tian_boon_modifier$: $VALUE|+=0$"
 
  POD_killed_victim_by_feeding_tt: "@warning_icon!#X Ваша жертва умрёт от потери крови!#!"
 
@@ -1721,6 +1701,8 @@
 
  POD_sangun_clan_curse_message: "Вы ненавидите, когда за вами наблюдают..."
 
+ POD_shuffle_personality_effect_tt: "Ваши [Concept('personality_traits', 'свойства личности')|E] изменены случайным образом"
+
  #POD_save_real_prowess_desc_global: "Имеет [prowess_i|E]$VALUE|V0$ [Concept('prowess', 'доблести')|E] в этом бою"
  #POD_save_real_prowess_desc_first: "Ваша [Concept('prowess', 'доблесть')|E] в этом бою - [prowess_i|E]$VALUE|V0$"
  #POD_save_real_prowess_desc_third: "[Concept('prowess', 'Доблесть')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] в этом бою - [prowess_i|E]$VALUE|V0$"
@@ -1770,31 +1752,31 @@
  KNIGHT_BECAME_WANDERER: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'покинула', 'покинул' )] ваш двор и [Select_CString(CHARACTER.IsFemale, 'стала', 'стал' )] [Concept('wanderer', 'скитальцем')|E]"
 
  #Inquisitors convictions
- OCULI_TRUST_PERK_TEXT: "Разблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E] «Духовное наставление», которое позволит вам обучать других инквизиторов своим добродетельным свойствам.\nРазблокирует движение в поединке.\n#flavor Восхваляя Бога, агент может вселить в других любовь к Нему и Его законам.#!"
- SISTERS_CHORALE_PERK_TEXT: "Разблокирует решение «Испытание веры», позволяющее вам избавиться от своих греховных свойств и заменить их благочестивыми аналогами.\n#flavor Черпая силу, знания или защиту из общего песнопения.#!"
+ OCULI_TRUST_PERK_TEXT: "Разблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E] «Духовное наставление», которое позволит вам обучать других инквизиторов своим добродетельным свойствам.\n#flavor Восхваляя Бога, агент может вселить в других любовь к Нему и Его законам.#!"
+ SISTERS_CHORALE_PERK_TEXT: "Разблокирует решение «Испытание веры», позволяющее вам избавиться от своих греховных свойств и заменить их благочестивыми аналогами.\n[PODUnlocksCombatMove('POD_combat_move_hunter_sisters_chorale')]\n#flavor Черпая силу, знания или защиту из общего песнопения.#!"
  RED_MARCH_PERK_EFFECT_TEXT: "#flavor Этот обряд позволяет быстро отправиться в путь, несмотря на усталость и трудные условия, после достаточной молитвы перед Богом.#!"
- OCULI_SHEPHERD_PERK_TEXT: "Позволяет принять [deceitful_progress_hostile_schemes_decision|El].\n#flavor Позволяет Оку Божьему скрываться у всех на виду, когда он совершает небесную работу, и затуманивать умы тех, кто хотел бы помешать его святой миссии.#!"
+ OCULI_SHEPHERD_PERK_TEXT: "Позволяет принять [deceitful_progress_hostile_schemes_decision|El].\n[PODUnlocksCombatMove('POD_combat_move_hunter_oculi_heavenly_shepherd')]\n#flavor Позволяет Оку Божьему скрываться у всех на виду, когда он совершает небесную работу, и затуманивать умы тех, кто хотел бы помешать его святой миссии.#!"
  MURNAU_OBLIGE_PERK_TEXT: "Позволяет принять [diligent_development_focus_decision|El].\n#flavor Оставаясь благородным домом по своей сути, Мурнау смотрят на других как на своих подопечных. Процветание их земель - долг не менее священный, чем их преданность Инквизиции.#!"
  ACRE_RESURRECTION_PERK_TEXT: "Доступны [men_at_arms|El] - [GetMaA('vampires_hunters').GetName].\nРазблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E], позволяющее исцелять большинство обычных недугов персонажа.\n#flavor Некоторые рыцари божественно наделены способностью контролировать приливы и отливы жизненной силы в себе и других людях. Они могут даже использовать силу самой жизни, чтобы выжечь адскую сущность проклятых.#!"
  RED_FORTUNES_PERK_TEXT: "Доступны [men_at_arms|El] - [GetMaA('demons_hunters').GetName].\n#flavor Посредством этого священного обряда практикующий может благословить группу вооружённых бойцов, отправляющихся на битву с врагом.#!"
- MURNAU_MIRROR_PERK_TEXT: "Доступны [men_at_arms|El] - [GetMaA('monsters_hunters').GetName].\nРазблокирует движение в поединке.\n#flavor Способность противостоять сверхъестественному на равных, вооружившись силой и знаниями, которых у человека быть не должно. Мурнау называют это божественным вдохновением, другие используют менее лестные термины.#!"
+ MURNAU_MIRROR_PERK_TEXT: "Доступны [men_at_arms|El] - [GetMaA('monsters_hunters').GetName].\n[PODUnlocksCombatMove('POD_combat_move_hunter_murnau_mirror_of_evil')]\n#flavor Способность противостоять сверхъестественному на равных, вооружившись силой и знаниями, которых у человека быть не должно. Мурнау называют это божественным вдохновением, другие используют менее лестные термины.#!"
  OCULI_LITURGY_PERK_TEXT: "Найм гостей теперь будет обходиться на 50% дешевле.\n#flavor Читая священные писания, Око Божье может внушить другому человеку свою преданность общему делу.#!"
  SISTERS_GOSPEL_PERK_TEXT: "Подвергнутый пыткам узник теперь всегда будет раскрывать свои секреты, если таковые у него есть.\n#flavor Наделяет сестер большим мастерством в спорах, произнесении речей и, при необходимости, допросах.#!"
- ACRE_CATECHUMEN_PERK_TEXT: "Позволяет сразиться со своими [Concept('knights', 'рыцарями')|E] в [Concept('single_combat_fight', 'поединке')|E], чтобы получить [Concept('modifiers', 'модификаторы')|E].\nРазблокирует движение в поединке.\n#flavor Позволяет инквизитору продемонстрировать свои ранние уроки доблести, смирения и постоянства.#!"
- ACRE_FLESH_PERK_TEXT: "Разблокирует движение в поединке.\n#flavor Рыцарь был наделён способностью изменять свои физические возможности, взывая к своей непоколебимой добродетели.#!"
- ACRE_FLIGHT_PERK_TEXT: "Разблокирует движение в поединке.\n#flavor Позволяет инквизитору использовать божественный вихрь в бою с приспешниками Врага.#!"
- ACRE_AUTO_PERK_TEXT: "Разблокирует движение в поединке.\n#flavor Основная причина, по которой приспешники Врага боятся рыцарей Божьих, заключается в том, что это благословение позволяет инквизитору сосредоточить свою добродетель и силу на том, что, несомненно, станет решающим ударом в любом поединке.#!"
+ ACRE_CATECHUMEN_PERK_TEXT: "Позволяет сразиться со своими [Concept('knights', 'рыцарями')|E] в [Concept('single_combat_fight', 'поединке')|E], чтобы получить [Concept('modifiers', 'модификаторы')|E].\n#flavor Позволяет инквизитору продемонстрировать свои ранние уроки доблести, смирения и постоянства.#!"
+ ACRE_FLESH_PERK_TEXT: "[PODUnlocksCombatMove('POD_combat_move_hunter_acre_transfiguration')]\n#flavor Рыцарь был наделён способностью изменять свои физические возможности, взывая к своей непоколебимой добродетели.#!"
+ ACRE_FLIGHT_PERK_TEXT: "[PODUnlocksCombatMove('POD_combat_move_hunter_acre_flight_of_angels')]\n#flavor Позволяет инквизитору использовать божественный вихрь в бою с приспешниками Врага.#!"
+ ACRE_AUTO_PERK_TEXT: "[PODUnlocksCombatMove('POD_combat_move_hunter_acre_auto_da_fe')]\n#flavor Основная причина, по которой приспешники Врага боятся рыцарей Божьих, заключается в том, что это благословение позволяет инквизитору сосредоточить свою добродетель и силу на том, что, несомненно, станет решающим ударом в любом поединке.#!"
  RED_VIGIL_PERK_TEXT: "#flavor Этот ритуал даёт субъекту энергию, избавляя его от необходимости спать или отдыхать.#!"
- RED_SUNSTONE_PERK_TEXT: "$countermeasures_unlocks_t1_all_seeing_eye$\n#flavor Наполняет обычный камень благословением первого творения Господа, Солнца. В таком случае яркость камня определяется добродетелью его владельца.#!"
+ RED_SUNSTONE_PERK_TEXT: "$countermeasures_unlocks_t1_all_seeing_eye$\n[PODUnlocksCombatMove('POD_combat_move_hunter_red_sunstone')]\n#flavor Наполняет обычный камень благословением первого творения Господа, Солнца. В таком случае яркость камня определяется добродетелью его владельца.#!"
  RED_FORGE_PERK_TEXT: "#flavor Освящает процесс ковки оружия, чтобы создать благословенное вооружение.#!"
- SISTERS_LUX_PERK_TEXT: "$countermeasures_unlocks_t1_supernatural_high_alert$\n#flavor Повторяя слова Отца, инквизитор произносит «Да будет свет!», и вокруг него появляется мягкий нимб белого света, освещающий сверхъестественных существ такими, какие они есть.#!"
- SISTERS_HOSANNA_PERK_TEXT: "Разблокирует движение в поединке.\n#flavor Инквизиторы используют эту силу, чтобы уловить духовную «волну» песни небес, используя её силу для прославления Бога.#!"
- SISTERS_ORATORIO_PERK_TEXT: "Разблокирует движение в поединке.\n#flavor Позволяет Сестре возвысить голос в песне и наполнить слушателей ослепительным сиянием своей веры, что является разрушительным опытом для рабов греха.#!"
+ SISTERS_LUX_PERK_TEXT: "$countermeasures_unlocks_t1_supernatural_high_alert$\n[PODUnlocksCombatMove('POD_combat_move_hunter_sisters_fiat_lux')]\n#flavor Повторяя слова Отца, инквизитор произносит «Да будет свет!», и вокруг него появляется мягкий нимб белого света, освещающий сверхъестественных существ такими, какие они есть.#!"
+ SISTERS_HOSANNA_PERK_TEXT: "#flavor Инквизиторы используют эту силу, чтобы уловить духовную «волну» песни небес, используя её силу для прославления Бога.#!"
+ SISTERS_ORATORIO_PERK_TEXT: "[PODUnlocksCombatMove('POD_combat_move_hunter_sisters_oratorio')]\n#flavor Позволяет Сестре возвысить голос в песне и наполнить слушателей ослепительным сиянием своей веры, что является разрушительным опытом для рабов греха.#!"
  MURNAU_KNOWLEDGE_PERK_TEXT: "$countermeasures_unlocks_t1_supernatural_high_alert$\n#flavor На протяжении многих поколений семья фон Мурнау была проклята (или благословлена) врождённой осведомлённостью и способностью распознавать все проявления порчи.#!"
  MURNAU_WREATHED_PERK_TEXT: "#flavor Овладение тёмной стороной собственной натуры Мурнау позволяет им влиять на других. «Если я пойду и долиною смертной тени...»#!"
- MURNAU_ARCANA_PERK_TEXT: "Разблокирует движение в поединке.\n#flavor Способность препятствовать, отражать или избегать действий исчадий ада. За эту способность часто приходится платить душой инквизитора, но при овладении она позволяет вернуть пользователю сверхъестественные способности.#!"
- OCULI_SIGHT_PERK_TEXT: "Отключает большинство основных движений Затемнения в поединке.\n#flavor Зрение позволяет инквизитору выслеживать сверхъестественных существ, независимо от их попыток помешать наблюдению.#!"
- OCULI_WINE_PERK_TEXT: "#flavor Инквизитор может взять обычный предмет и превратить его во что-то другое или вернуть мёртвые или отмирающие ткани в их здоровое состояние.#!"
+ MURNAU_ARCANA_PERK_TEXT: "[PODUnlocksCombatMove('POD_combat_move_hunter_murnau_arcana')]\n#flavor Способность препятствовать, отражать или избегать действий исчадий ада. За эту способность часто приходится платить душой инквизитора, но при овладении она позволяет вернуть пользователю сверхъестественные способности.#!"
+ OCULI_SIGHT_PERK_TEXT: "[PODUnlocksCombatMove('POD_combat_move_hunter_oculi_second_sight')]\n#flavor Зрение позволяет инквизитору выслеживать сверхъестественных существ, независимо от их попыток помешать наблюдению.#!"
+ OCULI_WINE_PERK_TEXT: "[PODUnlocksCombatMove('POD_combat_move_hunter_oculi_water_to_wine')]\n#flavor Инквизитор может взять обычный предмет и превратить его во что-то другое или вернуть мёртвые или отмирающие ткани в их здоровое состояние.#!"
 
 
 
@@ -1924,10 +1906,18 @@
  POD_REMOVE_RANDOM_RELATION_EFFECT_FIRST: "Вы потеряете случайные [Concept('relation', 'отношения')|E]"
  POD_REMOVE_RANDOM_RELATION_EFFECT_THIRD: "[CHARACTER.GetShortUIName] потеряет случайные [Concept('relation', 'отношения')|E]"
 
+ POD_DOWNGRADE_RANDOM_RELATION_EFFECT_GLOBAL: "Случайные [Concept('relation', 'отношения')|E] будут понижены"
+ POD_DOWNGRADE_RANDOM_RELATION_EFFECT_FIRST: "Ваши случайные [Concept('relation', 'отношения')|E] будут понижены"
+ POD_DOWNGRADE_RANDOM_RELATION_EFFECT_THIRD: "Случайные [Concept('relation', 'отношения')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] будут понижены"
+
+ POD_GIVE_RANDOM_FITTING_NEGATIVE_COPING_TRAIT_EFFECT_GLOBAL: "Получает случайное подходящее негативное [Concept('trait', 'свойство')|E] нервного срыва"
+ POD_GIVE_RANDOM_FITTING_NEGATIVE_COPING_TRAIT_EFFECT_FIRST: "Вы получите случайное подходящее негативное [Concept('trait', 'свойство')|E] нервного срыва"
+ POD_GIVE_RANDOM_FITTING_NEGATIVE_COPING_TRAIT_EFFECT_THIRD: "[CHARACTER.GetShortUIName] [Select_CString( CHARACTER.IsLocalPlayer, 'получите', 'получит')] случайное подходящее негативное [Concept('trait', 'свойство')|E] нервного срыва"
+
  POD_damage_immunity_title: "Иммунитет к урону"
  POD_damage_immunity_tt: "#TOOLTIP:game_concept_POD_health_track_desc #E Урон#!#! #P не#! получен из-за невосприимчивости к этому типу урона"
  POD_damage_soaked_title: "Поглощение урона"
- POD_damage_soaked_tt: "#TOOLTIP:game_concept_soak_damage_desc #E Поглощено#!#! [SCOPE.GetValue('final_damage')|0+] ед. #TOOLTIP:game_concept_POD_health_track_desc #E урона#!#!"
+ POD_damage_soaked_tt: "#TOOLTIP:game_concept_soak_damage_desc #E Поглощено#!#! [SCOPE.GetValue('soaked_count')|0] из [SCOPE.GetValue('final_damage')|0] ед. #TOOLTIP:game_concept_POD_health_track_desc #E урона#!#!"
  POD_maim_soaked_tt: "Ранение #TOOLTIP:game_concept_soak_damage_desc #E поглощено#!#!"
  POD_damage_taken_title: "Получен урон"
 
@@ -1976,6 +1966,10 @@
  pod_weather_sand_storm: "Песчаная буря"
  pod_weather_cycle_of_ra: "Цикл Ра"
  pod_weather_fertile_land: "Плодородная земля"
+ pod_weather_abundant_flora: "Обильная флора"
+ pod_weather_dead_flora: "Мёртвая флора"
+ pod_weather_agitated_animals: "Взволнованные животные"
+ pod_weather_calm_animals: "Спокойные животные"
  pod_weather_blizzard: "Метель"
 
  POD_LEARN_TRUE_NAME_OF_TRAIT_EFFECT: "Узнаёт [Glossary('истинное имя','podgloss.truename')] свойства «[TRAIT.GetName(GetPlayer)]»"
@@ -2011,11 +2005,10 @@
  POD_mummy_memory_check_effect_tt: "Поскольку у вас меньше требуемого уровня воспоминаний муми, вы получите дополнительное #TOOLTIP:game_concept_static_stress_desc #E психическое напряжение#!#!"
  POD_mummy_tan_check_effect: "Разблокировка этого [Concept('perk', 'достоинства')|E] приведёт к том, что достоинства другого дерева Тан будут стоить дополнительно 50 #TOOLTIP:game_concept_static_stress_desc #E психического напряжения#!#! #X Это действие необратимо#!"
 
- POD_can_summon_on_death_trigger_loca: "Вы можете заставить вашу цель через [Concept('character_interaction', 'взаимодействие персонажа')|E] стать призраком, если она умрёт в течение #V 10#! лет."
- POD_can_weaken_fetter_trigger_loca: "Вы можете ослабить случайные неразрешённые [Concept('Fetter', 'оковы')|E] призрака через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
- POD_can_bind_wraith_trigger_loca: "Вы можете связать призрака, использовав его нераспределённые [Concept('Fetter', 'оковы')|E] через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
- POD_can_command_wraith_trigger_loca: "Вы можете приказать своему привязанному призраку помешать или помочь цели через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
- POD_can_summon_wraith_trigger_loca: "Вы можете создать нового призрака при своём [Concept('court', 'дворе')|E] или призвать существующего из [Glossary('земель Плоти','game_concept_skinlands_desc')] через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
+ POD_can_summon_on_death_trigger_loca: "[Concept('character_interaction', 'Взаимодействие персонажа')|E]: Вы можете заставить вашу цель стать призраком, если она умрёт в течение #V 10#! лет."
+ POD_can_bind_wraith_trigger_loca: "[Concept('character_interaction', 'Взаимодействие персонажа')|E] Вы можете навязать или ослабить [Concept('Fetter', 'оковы')|E] призрака."
+ POD_can_command_wraith_trigger_loca: "[Concept('character_interaction', 'Взаимодействие персонажа')|E]: Вы можете приказать своему привязанному призраку помешать или помочь цели."
+ POD_can_summon_wraith_trigger_loca: "[Concept('character_interaction', 'Взаимодействие персонажа')|E]: Вы можете создать нового призрака при своём [Concept('court', 'дворе')|E] или призвать существующего из [Glossary('земель Плоти','game_concept_skinlands_desc')]."
  POD_can_covert_to_wraith_trigger_loca: "Разблокирован способ [Concept('execution', 'казни')|E] #italic $EXECUTION_CONVERT_TO_WRAITH$#!."
 
  POD_GIVE_SEMI_PERMANENT_INJURY: "Свойство «[TRAIT.GetName(GetPlayer)]» будет невозможно вылечить в течение следующих $VALUE|0V$ лет."
@@ -2026,6 +2019,9 @@
 
  POD_journey_message_breaking_bloodbond_activated: "Чтобы держаться подальше, требуется вся ваша сила воли..."
  POD_journey_message_breaking_bloodbond_end: "Наконец-то ваш разум проясняется"
+
+ POD_journey_message_glamour_quests_activated: "Борьба против банальности берёт своё..."
+ POD_journey_message_glamour_quests_end: "Наконец-то всё закончилось"
 
  any_prisoner: "Любой пленник"
 
@@ -2093,6 +2089,7 @@
  POD_stipulation_show_of_hatred: "@rival_icon! Проявление ненависти"
  POD_obligation_show_of_hatred: "Убить [Concept('rival', 'соперника')|E]"
 
+ POD_stipulation_2_years: "#V 2#! года"
  POD_stipulation_4_years: "#V 4#! года"
  POD_stipulation_8_years: "#V 8#! лет"
  POD_stipulation_12_years: "#V 12#! лет"
@@ -2107,6 +2104,35 @@
 
  POD_pact_complete_obligation_effect: "Вы выполнили [Concept('demonic_pact_obligation', 'обязательство')|E]"
  POD_pact_complete_obligation_effect_additional: "#X Есть ещё один [Concept('demonic_pact', 'договор')|E] с таким же [Concept('demonic_pact_obligation', 'обязательством')|E], которое также необходимо исполнить!#!"
+
+ sol_custom_religion_creator_finish_script_institution: "You need to select a tenet regarding the institutional and doctrinal framework"
+ sol_custom_religion_creator_finish_script_devotional: "You need to select a tenet governing spiritual practice and devotion"
+ sol_custom_religion_creator_finish_script_violence: "You need to select a tenet regarding holy violence or more radical beliefs"
+ sol_custom_religion_creator_finish_script_flexibility: "You need to select a stance on doctrinal flexibility"
+ sol_custom_religion_creator_finish_script_balance: "You need to select an alignment in the [Glossary('War of Balance','podgloss.warofbalance')]"
+ sol_custom_religion_creator_finish_script_homeland: "You need to select a Homeland"
+
+ POD_sol_custom_religion_select_detail_balance_effect: "[Localize(Concatenate('POD_sol_custom_addition_', religion_tenet.MakeScope.GetVariable('id').GetFlagName))] in the [Glossary('War of Balance','podgloss.warofbalance')]"
+ POD_sol_custom_religion_select_detail_homeland_effect: "Select #V [GetGeographicalRegion(Concatenate('world_', religion_tenet.MakeScope.GetVariable('id').GetFlagName)).GetName]#! as our [POD_homeland|E]"
+
+ POD_sol_create_custom_religion_effect_institution: "Establish #V [GetTenetType(SCOPE.GetFlagName('institution_flag')).GetBaseName]#! as the institutional and doctrinal framework"
+ POD_sol_create_custom_religion_effect_devotional: "Establish #V [GetTenetType(SCOPE.GetFlagName('devotional_flag')).GetBaseName]#! as the tenet governing spiritual practice and devotion"
+ POD_sol_create_custom_religion_effect_violence: "Establish #V [GetTenetType(SCOPE.GetFlagName('violence_flag')).GetBaseName]#! as the tenet governing holy violence or our more radical beliefs"
+ POD_sol_create_custom_religion_effect_flexibility: "Establish #V [GetDoctrineType(SCOPE.GetFlagName('flexibility_flag')).GetBaseName]#! as our stance on doctrinal flexibility"
+ POD_sol_create_custom_religion_effect_balance: "[Localize(Concatenate('POD_sol_custom_addition_', SCOPE.GetFlagName('balance_flag')))] in the [Glossary('War of Balance','podgloss.warofbalance')]"
+ POD_sol_create_custom_religion_effect_homeland: "Establish #V [GetGeographicalRegion(Concatenate('world_', SCOPE.GetFlagName('homeland_flag'))).GetName]#! as our [POD_homeland|E]"
+ 
+ POD_sol_custom_selection_tenet: "Select #V [GetTenetType( Scope.GetVariable('id').GetFlagKey ).GetBaseNameNoTooltip]#!"
+ POD_sol_custom_selection_doctrine: "Select #V [GetDoctrineType( Scope.GetVariable('id').GetFlagKey ).GetBaseNameNoTooltip]#!"
+ POD_sol_custom_selection_homeland: "Land of #V [GetGeographicalRegion(Concatenate('world_', Scope.GetVariable('id').GetFlagKey)).GetNameNoTooltip]#!"
+ POD_activate_sol_holy_site_tt: "[holy_site.GetCounty.GetNameNoTier] becomes a [holy_site|E]"
+
+ POD_sol_custom_selection_allied_to_osirian: "Align yourself with the forces of #V order#!"
+ POD_sol_custom_addition_allied_to_osirian: "Side with the forces of #V order#!"
+ POD_sol_custom_selection_allied_to_apophis: "Align yourself with the forces of #V chaos#!"
+ POD_sol_custom_addition_allied_to_apophis: "Side with the forces of #V chaos#!"
+ POD_sol_custom_selection_uninvolved: "Remain #V uninvolved#! in the [Glossary('War of Balance','podgloss.warofbalance')]"
+ POD_sol_custom_addition_uninvolved: "Remain #V uninvolved#!"
 
  POD_become_bound_ghoul_effect_domitor_disciplines: "У вас есть #V 20%#! вероятность унаследовать стандартные [Glossary('дисциплины','game_concept_discipline_desc')] вашего [Glossary('домитора','game_concept_domitor_desc')] и #V 40%#! вероятность унаследовать мастерство [Glossary('дисциплин','game_concept_discipline_desc')]."
 
@@ -2155,10 +2181,79 @@
  PODCurrentGhoulMission_tooltip_give_relative_away: "Отослать кого-нибудь из своих [Concept('close_family', 'близких родственников')|E] к своему хозяину. Вы больше никогда его не увидите."
 
  POD_GHOUL_SET_MAX_GENERATION_INGESTED: "Вы поглотили [Glossary('витэ','game_concept_vitae_desc')] ([GetTrait('vampgeneration$VALUE|0q$').GetName(GetNullCharacter)]), которое станет вашим [Concept('ghoul_greatest_vitae_ingested', 'сильнейшим поглощённым витэ')|E]"
- POD_ghoul_drink_from_vampire_effect_unbondable: "У вас есть [Concept('trait', 'свойство')|E] «[GetTrait('unbondable').GetName(GetPlayer)]», которое предоставляет вам невосприимчивость к узам крови. Поэтому вы не можете стать [Concept('bound_ghoul', 'связанным гулем')|E]"
+
+ POD_revelry_trigger: "[revelry|E]"
+ POD_revelry_trigger.tt: "Thanks to meeting requirements you gained glamour from [revelry|E]!"
+ POD_reverie_trigger: "[reverie|E]"
+ POD_reverie_trigger.tt: "Thanks to having [relations|E] with $POD_splat_mortal_plural$ you gained glamour from [reverie|E]!"
+
+ POD_keep_track_of_completed_contracts_diplomacy: "Number of completed [diplomacy|E] contracts#weak ([GetPlayer.MakeScope.ScriptValue('completed_diplomacy_contracts')])#! will increase by 1"
+ POD_keep_track_of_completed_contracts_martial: "Number of completed [martial|E] contracts#weak ([GetPlayer.MakeScope.ScriptValue('completed_martial_contracts')])#! will increase by 1"
+ POD_keep_track_of_completed_contracts_stewardship: "Number of completed [stewardship|E] contracts#weak ([GetPlayer.MakeScope.ScriptValue('completed_stewardship_contracts')])#! will increase by 1"
+ POD_keep_track_of_completed_contracts_intrigue: "Number of completed [intrigue|E] contracts#weak ([GetPlayer.MakeScope.ScriptValue('completed_intrigue_contracts')])#! will increase by 1"
+ POD_keep_track_of_completed_contracts_learning: "Number of completed [learning|E] contracts#weak ([GetPlayer.MakeScope.ScriptValue('completed_learning_contracts')])#! will increase by 1"
+
+ POD_GAIN_BANALITY: "You will gain $VALUE|0N$ [banality|E]"
+ POD_LOSE_BANALITY: "You will lose $VALUE|0P$ [banality|E]"
+
+ POD_become_season_leader_effect: "[character.GetFirstName] will become [Localize(Concatenate('PODWarOfSeasonsLeader_',SCOPE.GetFlagName('saved_tooltip')))]"
+ POD_pulse_season_leader_spring: "Next Leader of Spring will be [spring_ruler.GetFirstName] with #underline;TOOLTIP:POD_pulse_season_leader_spring_score score#! of [spring_ruler.MakeScope.ScriptValue('popular_opinion_spring')]. You [GetPlayer.GetFirstName] has #underline;TOOLTIP:POD_pulse_season_leader_spring_score score#! of [GetPlayer.MakeScope.ScriptValue('popular_opinion_spring')]"
+ POD_pulse_season_leader_spring_score: "Score is calculated as [opinion|E] of all Spring [rulers|E], Plus flat #italic +300#! for current leader."
+
+ POD_MUMMY_SET_WUKUEI_YK_MASTER: "#V [Localize(Concatenate(CHARACTER.MakeScope.GetVariable('yk_master').GetFlagName, '_yk_master'))]#!"
+ #east
+ mikaboshi_yk_master: "[Glossary('Mikaboshi','podgloss.mikaboshi')]"
+ tou_shen_yk_master: "Tou Shen"
+ wu_hua_yk_master: "[Glossary('Wu Hua','podgloss.wuhua')]"
+ malaveyovo_yk_master: "Malaveyovo"
+ ku_yk_master: "Ku of the Thousand Tears"
+ #north
+ tou_mu_yk_master: "[Glossary('Tou Mu','podgloss.toumu')]"
+ bao_zhong_yk_master: "Bao Zhong"
+ grandmother_witch_yk_master: "Grandmother Witch"
+ #west
+ emmao_yk_master: "[Glossary('Emma-O','podgloss.emmao')]"
+ hen_tian_yk_master: "Hen Tian"
+ yargra_yk_master: "Yargra the Many-Mouthed"
+ #south
+ dokhor_khan_yk_master: "[Glossary('Dokhor-Khan','podgloss.dokhorkhan')]"
+ rangda_yk_master: "Rangda"
+ danoru_ka_yk_master: "Danoru Ka"
+ ravana_yk_master: "Ravana"
+ wandering_overlord_yk_master: "Wandering Overlord"
+ haha_no_fukami_yk_master: "Haha no Fukami"
+ hluh_yk_master: "Hluh"
+ hinenuitepo_yk_master: "Hine-Nui-Te-Po"
+ honoyeta_yk_master: "Honoyeta"
 
 
  POD_change_wyrm_taint: "[Concept('wyrm_taint', 'Порча Вирма')|E] #N повысится#! на #bold $VALUE|0V$#!"
  POD_change_wyrm_taint_past: "[Concept('wyrm_taint', 'Порча Вирма')|E] #N повысилась#! на #bold $VALUE|0V$#!"
  POD_change_wyrm_taint_neg: "[Concept('wyrm_taint', 'Порча Вирма')|E] #P снизится#! на #bold $VALUE|0V$#!"
  POD_change_wyrm_taint_past_neg: "[Concept('wyrm_taint', 'Порча Вирма')|E] #P снизилась#! на #bold $VALUE|0V$#!"
+
+ POD_scaling_discipline_perk_cost: "#clickable This perk costs [SCOPE.ScriptValue('POD_discipline_perk_cost')|0V] points\n[SCOPE.GetScriptValueDesc('POD_discipline_perk_cost')]#!"
+ POD_discipline_perk_cost_mastery: "$pod_discipline$ Mastery"
+ POD_discipline_perk_cost_inclan: "In-$pod_clan$ $pod_discipline$"
+ POD_discipline_perk_cost_outclan: "Out-of-$pod_clan$ $pod_discipline$"
+ POD_discipline_perk_cost_valeren: "From other started [GetTrait('valeren').GetName(GetNullCharacter)] paths"
+ POD_discipline_perk_cost_min: "Minimum of: #V 1#!"
+
+ POD_inspire_book: "[inspired_character.GetShortUIName] becomes inspired to write a book"
+ POD_inspire_weaver: "[inspired_character.GetShortUIName] becomes inspired to weave"
+ POD_inspire_adventure: "[inspired_character.GetShortUIName] becomes inspired to go on an adventure"
+ POD_inspire_artisan: "[inspired_character.GetShortUIName] becomes inspired to #EMP create#!"
+ POD_inspire_smith: "[inspired_character.GetShortUIName] becomes inspired to forge something"
+ POD_inspire_armor: "[inspired_character.GetShortUIName] becomes inspired to make armor"
+ POD_inspire_weapon: "[inspired_character.GetShortUIName] becomes inspired to forge a weapon"
+ POD_inspire_alchemy: "[inspired_character.GetShortUIName] becomes inspired to experiment with alchemy"
+ # Damage preview rendered in caller tooltips (event options / interaction accept
+ # buttons); the per-point resolution itself is hidden, so these are the visible warning.
+ # Four variants: soakable x superficial/aggravated (wound-box icon via _with_box concepts).
+ pod_wound_preview_superficial_tt: "Takes up to [SCOPE.GetValue('final_damage')|0] [POD_superficial_damage_with_box|E]; each point has a [SCOPE.GetValue('soak_pct')|0]% chance to be [soaked|E]"
+ pod_wound_preview_aggravated_tt: "Takes up to [SCOPE.GetValue('final_damage')|0] [POD_aggravated_damage_with_box|E]; each point has a [SCOPE.GetValue('soak_pct')|0]% chance to be [soaked|E]"
+ pod_wound_preview_superficial_unsoakable_tt: "Takes [SCOPE.GetValue('final_damage')|0] [POD_superficial_damage_with_box|E] (cannot be [soaked|E])"
+ pod_wound_preview_aggravated_unsoakable_tt: "Takes [SCOPE.GetValue('final_damage')|0] [POD_aggravated_damage_with_box|E] (cannot be [soaked|E])"
+ # Soakable damage type, but the character has 0% soak right now.
+ pod_wound_preview_superficial_nosoak_tt: "Takes [SCOPE.GetValue('final_damage')|0] [POD_superficial_damage_with_box|E]; you currently have no [soak_chance|E]"
+ pod_wound_preview_aggravated_nosoak_tt: "Takes [SCOPE.GetValue('final_damage')|0] [POD_aggravated_damage_with_box|E]; you currently have no [soak_chance|E]"
