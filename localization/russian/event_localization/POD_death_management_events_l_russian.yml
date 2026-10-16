@@ -9,9 +9,6 @@
  herd_death_notification_title: "Член вашего [Concept('POD_herd', 'стада')|E] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
  death_management.herd.desc: "Член вашего [Concept('POD_herd', 'стада')|E], [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
 
- dreamer_death_notification_title: "[Select_CString(LEFT_CHARACTER.IsFemale, 'Ваша мечтательница', 'Ваш мечтатель' )] #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
- death_management.dreamer.desc: "[Select_CString(dead_character.IsFemale, 'Ваша мечтательница', 'Ваш мечтатель' )], [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
-
  host_death_notification_title: "Ваш сосуд #high [LEFT_CHARACTER.GetFirstNameNoTooltip]#! [Select_CString(LEFT_CHARACTER.IsFemale, 'умерла', 'умер' )]"
  death_management.host.desc: "Ваш сосуд, [dead_character.GetTitledFirstName], [Select_CString(dead_character.IsFemale, 'умерла', 'умер' )]."
 

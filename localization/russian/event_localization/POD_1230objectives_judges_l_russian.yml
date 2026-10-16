@@ -298,6 +298,7 @@
  golconda_repentance_desc: "После столь тщательных исследований мы достигли истинного понимания природы Проклятых, что позволит нам работать вместе с теми, кого коснулась милость Б-га, в погоне за отродьем Лилит. Кроме того, все наши еврейские братья — Проклятые и смертные — теперь могут работать сообща для достижения наших истинных целей."
  doctrine_parameter_hostility_override_golconda_repentance: "Другие [Concept('faiths', 'конфессии')|E], как [Glossary('каинитские','game_concept_cainite_desc')], так и охотнические, имеющие [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('golconda_repentance').GetBaseName]», воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не $hostility_evil_tooltippable$"
 
+ judge_research_origins_mummies_objective_decision_giza: "Вы [Concept('completely_control', 'полностью контролируете')|E] Долину царей ([GetTitleByKey('c_giza').GetNameNoTier]), местонахождение некрополя фараонов и Великой пирамиды"
  judge_research_origins_mummies_objective_decision_osiris_flail: "[GetPODArtifact('osiris_flail_link').GetName], в котором записана вся история мумий, принадлежит вам"
  judge_research_origins_mummies_objective_decision_book_thoth: "[GetPODArtifact('book_thoth_link').GetName], которая даёт понимание магии мумий, как её преподал Исиде Тот, принадлежит вам"
  judge_research_origins_mummies_objective_decision_isis_fragments: "[GetPODArtifact('isis_fragments_link').GetName], в которых записана история египетских мумий с точки зрения культа Исиды, принадлежат вам"
@@ -327,10 +328,12 @@
  judge_research_origins_demons_objective_decision_ignace_notes: "[GetPODArtifact('ignace_notes_link').GetName], которые могут предоставить нам карту духовных миров, принадлежит вам"
  judge_research_origins_demons_objective_decision_black_torc_of_carniog: "[GetPODArtifact('black_torc_of_carniog_link').GetName], который традиционно позволяет владельцу захватывать души и может дать нам некоторое понимание того, как [UmbraGlossaryLocalized('shadowlands','Лимб')] захватил своих обитателей, принадлежит вам"
 
+ judge_research_origins_kueijin_objective_decision_khotan: "Вы [Concept('completely_control', 'полностью контролируете')|E] [GetTitleByKey('c_khotan').GetNameNoTier], столицу королевства Сянь"
  judge_research_origins_kueijin_objective_decision_lhasa: "Вы контролируете #ONCLICK:TITLE,c_lhasa #TOOLTIP:LANDED_TITLE,c_lhasa #L Лхасу#!#!#! — столицу Тибета и ключевой священный объект"
  judge_research_origins_kueijin_objective_decision_purang: "Вы контролируете [GetTitleByKey('c_purang').GetNameNoTier] — место, где когда-то находился Меру, мифическое обиталище ван-сянь"
  judge_research_origins_kueijin_objective_decision_baizetu: "Вы должны собрать 5 фрагментов Бай Цзэ Ту — легендарного гримуара, написанного Жёлтым императором, который содержит секреты всех 11.520 видов сверхъестественных существ"
 
+ judge_research_origins_therianthropes_objective_decision_ural: "Вы [Concept('completely_control', 'полностью контролируете')|E] царский каэрн Полумесяца ([GetTitleByKey('b_voronezh').GetNameNoTier])"
  judge_research_origins_therianthropes_objective_decision_torture_therian: "Из-за их опоры на устные традиции вы должны захватить по меньшей мере пять [Glossary('териантропов', 'glossary_fera_tt')] которых можно подвергнуть допросу"
  judge_research_origins_therianthropes_objective_decision_torture_fallen: "Захватите и допросите #TOOLTIP:GAME_TRAIT,demon,[GetNullCharacter] #L Падших#!#!, поскольку их страх перед [Glossary('териантропами', 'glossary_fera_tt')] указывает на то, что они могут обладать некой подсказкой о происхождении териантропов"
 
@@ -350,6 +353,7 @@
  judge_research_origins_vampires_3rdgen_objective_decision_canticle_japhet: "[GetPODArtifact('canticle_japhet_link').GetName], в которой утверждается, что Каин мёртв, принадлежит вам"
  judge_research_origins_vampires_3rdgen_objective_decision_book_enoch: "[GetPODArtifact('book_enoch_link').GetName], которая содержит некоторые из древнейших каинитских пророчеств, саг и преданий, принадлежит вам"
 
+ judge_research_origins_vampires_2ndgen_objective_decision_enoch: "Вы [Concept('completely_control', 'полностью контролируете')|E] руины Еноха ([GetTitleByKey('c_edessa').GetNameNoTier]), Первого города каинитов"
  judge_research_origins_vampires_2ndgen_objective_decision_chronicle_of_caine: "Вы должны обладать Хрониками Каина, которые содержат дополнительные сведения о временах Первого города"
  judge_research_origins_vampires_2ndgen_objective_decision_codex_damned: "[GetPODArtifact('codex_damned_link').GetName], в котором описывается правление в Первом и Втором городах, принадлежит вам"
  judge_research_origins_vampires_2ndgen_objective_decision_ubar_chronicles: "[GetPODArtifact('ubar_chronicles_link').GetName], которые разрешают противоречия в историях об Енохе и Убаре, принадлежат вам"
