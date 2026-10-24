@@ -1,0 +1,2142 @@
+﻿l_russian:
+
+ ##############################################################################
+ ###### POD COMBAT  - PER-MOVE LOCALIZATION
+ ##############################################################################
+ # Three keys per move:
+ #   (name)     - bare display name. AP cost is appended at render
+ #               time by the static POD_combat_move_title loc key,
+ #               so designer rebalances of AP cost stay in sync
+ #               with the displayed text.
+ #   _desc      - PODCombatMoveDesc call. Decision auto-loc resolves
+ #               <id>_desc, so DecisionType.GetShortDescForPlayer
+ #               lands here and renders the full stat card.
+ #   _tooltip   - short flavor sentence.
+ #               doubles as a stub for the engine's auto
+ #               <id>_tooltip lookup on decision load.
+ ##############################################################################
+
+ ######### Base Physical
+ POD_combat_move_strike: "@skill_prowess_icon!Удар"
+ POD_combat_move_strike_desc: "[PODCombatMoveDesc('POD_combat_move_strike')]"
+ POD_combat_move_strike_tooltip: "#weak;italic Простая атака, как положено.#!"
+ POD_combat_move_heavy_blow: "@skill_prowess_icon!Сильный удар"
+ POD_combat_move_heavy_blow_desc: "[PODCombatMoveDesc('POD_combat_move_heavy_blow')]"
+ POD_combat_move_heavy_blow_tooltip: "#weak;italic Удар, который ваш враг не скоро забудет.#!"
+ POD_combat_move_quick_jab: "@skill_prowess_icon!Быстрый выпад"
+ POD_combat_move_quick_jab_desc: "[PODCombatMoveDesc('POD_combat_move_quick_jab')]"
+ POD_combat_move_quick_jab_tooltip: "#weak;italic Стремительный удар, после которого вы не останетесь без защиты.#!"
+ POD_combat_move_reckless_charge: "@skill_prowess_icon!Безрассудный натиск"
+ POD_combat_move_reckless_charge_desc: "[PODCombatMoveDesc('POD_combat_move_reckless_charge')]"
+ POD_combat_move_reckless_charge_tooltip: "#weak;italic Бросьтесь на врага, забыв всякую осторожность!#!"
+
+ ######### Base Tactical
+ POD_combat_move_guard: "@skill_prowess_icon!Защита"
+ POD_combat_move_guard_desc: "[PODCombatMoveDesc('POD_combat_move_guard')]"
+ POD_combat_move_guard_tooltip: "#weak;italic Попытайтесь парировать удар противника.#!"
+ POD_combat_move_feint: "@skill_prowess_icon!Финт"
+ POD_combat_move_feint_desc: "[PODCombatMoveDesc('POD_combat_move_feint')]"
+ POD_combat_move_feint_tooltip: "#weak;italic Изобразите слабость, чтобы заставить противника раскрыться.#!"
+ POD_combat_move_intimidate: "@skill_prowess_icon!Запугивание"
+ POD_combat_move_intimidate_desc: "[PODCombatMoveDesc('POD_combat_move_intimidate')]"
+ POD_combat_move_intimidate_tooltip: "#weak;italic Сдавайся, пока не стало хуже.#!"
+ POD_combat_move_rally: "@skill_prowess_icon!Собраться с духом"
+ POD_combat_move_rally_desc: "[PODCombatMoveDesc('POD_combat_move_rally')]"
+ POD_combat_move_rally_tooltip: "#weak;italic Соберитесь с мыслями и восстановите самообладание.#!"
+
+ ######### Martial Education
+ POD_combat_move_call_the_target: "@skill_prowess_icon!Указать цель"
+ POD_combat_move_call_the_target_desc: "[PODCombatMoveDesc('POD_combat_move_call_the_target')]"
+ POD_combat_move_call_the_target_tooltip: "#weak;italic Атакуйте слабое место, нанося огромный урон.#!" # Sony E3 presentation (2006)
+ POD_combat_move_coordinated_assault: "@skill_prowess_icon!Согласованный натиск"
+ POD_combat_move_coordinated_assault_desc: "[PODCombatMoveDesc('POD_combat_move_coordinated_assault')]"
+ POD_combat_move_coordinated_assault_tooltip: "#weak;italic Двигаться как один. Бить как один. Так выигрывают сражения.#!"
+
+ ######### Martial Prowess Education
+ POD_combat_move_disarming_strike: "@skill_prowess_icon!Обезоруживающий удар"
+ POD_combat_move_disarming_strike_desc: "[PODCombatMoveDesc('POD_combat_move_disarming_strike')]"
+ POD_combat_move_disarming_strike_tooltip: "#weak;italic Посмотрим, как они попытаются парировать со сломанным запястьем.#!"
+ POD_combat_move_perfect_footwork: "@skill_prowess_icon!Безупречная работа ног"
+ POD_combat_move_perfect_footwork_desc: "[PODCombatMoveDesc('POD_combat_move_perfect_footwork')]"
+ POD_combat_move_perfect_footwork_tooltip: "#weak;italic Вспомни свои уроки фехтования. Порхай как бабочка, жаль как пчела.#!" # Muhammad Ali (1964)
+
+ ######### Diplomacy Education
+ POD_combat_move_cutting_rebuke: "@skill_prowess_icon!Язвительный упрёк"
+ POD_combat_move_cutting_rebuke_desc: "[PODCombatMoveDesc('POD_combat_move_cutting_rebuke')]"
+ POD_combat_move_cutting_rebuke_tooltip: "#weak;italic Как уместно: ты дерёшься как корова!#!" # The Secret of Monkey Island (1990)
+ POD_combat_move_rally_the_company: "@skill_prowess_icon!Воодушевить отряд"
+ POD_combat_move_rally_the_company_desc: "[PODCombatMoveDesc('POD_combat_move_rally_the_company')]"
+ POD_combat_move_rally_the_company_tooltip: "#weak;italic Воодушевляющая речь, которая волнует сердца ваших братьев и сестёр по оружию.#!"
+
+ ######### Stewardship Education
+ POD_combat_move_well_kept_kit: "@skill_prowess_icon!Ухоженное снаряжение"
+ POD_combat_move_well_kept_kit_desc: "[PODCombatMoveDesc('POD_combat_move_well_kept_kit')]"
+ POD_combat_move_well_kept_kit_tooltip: "#weak;italic Содержать снаряжение в порядке так же легко, как и бухгалтерские книги.#!"
+ POD_combat_move_fortified_position: "@skill_prowess_icon!Укреплённая позиция"
+ POD_combat_move_fortified_position_desc: "[PODCombatMoveDesc('POD_combat_move_fortified_position')]"
+ POD_combat_move_fortified_position_tooltip: "#weak;italic Используйте укрытия и местность, чтобы лучше защитить себя.#!"
+
+ ######### Intrigue Education
+ POD_combat_move_blend_into_chaos: "@skill_prowess_icon!Слиться с хаосом"
+ POD_combat_move_blend_into_chaos_desc: "[PODCombatMoveDesc('POD_combat_move_blend_into_chaos')]"
+ POD_combat_move_blend_into_chaos_tooltip: "#weak;italic Смотрите туда! Это что, отвлекающий манёвр?#!"
+ POD_combat_move_prepared_ambush: "@skill_prowess_icon!Подготовленная засада"
+ POD_combat_move_prepared_ambush_desc: "[PODCombatMoveDesc('POD_combat_move_prepared_ambush')]"
+ POD_combat_move_prepared_ambush_tooltip: "#weak;italic Ничего личного, малец.#!" # Coldsteel the Hedgehog
+
+ ######### Learning Education
+ POD_combat_move_field_dressing: "@skill_prowess_icon!Полевая перевязка"
+ POD_combat_move_field_dressing_desc: "[PODCombatMoveDesc('POD_combat_move_field_dressing')]"
+ POD_combat_move_field_dressing_tooltip: "#weak;italic Похоже, уроки анатомии пригодились.#!"
+ POD_combat_move_identify_vulnerability: "@skill_prowess_icon!Определить уязвимость"
+ POD_combat_move_identify_vulnerability_desc: "[PODCombatMoveDesc('POD_combat_move_identify_vulnerability')]"
+ POD_combat_move_identify_vulnerability_tooltip: "#weak;italic Вы точно знаете, какие нервы поразить, чтобы боль не отпускала.#!"
+
+ ######### Lifestyle Traits
+ POD_combat_move_masterful_riposte: "@skill_prowess_icon!Мейстерхау" # Joachim Meyer, Gründtliche Beschreibung der Kunst des Fechtens (1570)
+ POD_combat_move_masterful_riposte_desc: "[PODCombatMoveDesc('POD_combat_move_masterful_riposte')]"
+ POD_combat_move_masterful_riposte_tooltip: "#weak;italic Защищайтесь и атакуйте одновременно, как и подобает искусному фехтовальщику.#!" # Joachim Meyer, Gründtliche Beschreibung der Kunst des Fechtens (1570)
+ POD_combat_move_battlefield_surgery: "@skill_prowess_icon!Полевая хирургия"
+ POD_combat_move_battlefield_surgery_desc: "[PODCombatMoveDesc('POD_combat_move_battlefield_surgery')]"
+ POD_combat_move_battlefield_surgery_tooltip: "#weak;italic Я не волшебник, просто старый деревенский врач.#!" # McCoy to Spock, Star Trek TOS (1967)
+ POD_combat_move_noxious_compound: "@skill_prowess_icon!Ядовитое соединение"
+ POD_combat_move_noxious_compound_desc: "[PODCombatMoveDesc('POD_combat_move_noxious_compound')]"
+ POD_combat_move_noxious_compound_tooltip: "#weak;italic Против вампиров это соединение малоэффективно, но живую плоть легко отравить.#!"
+ POD_combat_move_run_to_ground: "@skill_prowess_icon!Загнать добычу"
+ POD_combat_move_run_to_ground_desc: "[PODCombatMoveDesc('POD_combat_move_run_to_ground')]"
+ POD_combat_move_run_to_ground_tooltip: "#weak;italic Прятаться бесполезно. Вам доводилось выслеживать и более неуловимую добычу.#!"
+
+ ######### Notorious Traits
+ POD_combat_move_work_the_old_wounds: "@skill_prowess_icon!Растравить старые раны"
+ POD_combat_move_work_the_old_wounds_desc: "[PODCombatMoveDesc('POD_combat_move_work_the_old_wounds')]"
+ POD_combat_move_work_the_old_wounds_tooltip: "#weak;italic Бейте по старым шрамам врага... телесным и душевным.#!"
+
+ ######### Commander Traits
+ POD_combat_move_press_the_advantage: "@skill_prowess_icon!Развить успех"
+ POD_combat_move_press_the_advantage_desc: "[PODCombatMoveDesc('POD_combat_move_press_the_advantage')]"
+ POD_combat_move_press_the_advantage_tooltip: "#weak;italic Вы создали брешь — пора ею воспользоваться.#!"
+ POD_combat_move_hold_fast: "@skill_prowess_icon!Держать оборону"
+ POD_combat_move_hold_fast_desc: "[PODCombatMoveDesc('POD_combat_move_hold_fast')]"
+ POD_combat_move_hold_fast_tooltip: "#weak;italic Станьте стеной щитов в одиночку.#!"
+ POD_combat_move_plunder_the_wounded: "@skill_prowess_icon!Ограбить раненых"
+ POD_combat_move_plunder_the_wounded_desc: "[PODCombatMoveDesc('POD_combat_move_plunder_the_wounded')]"
+ POD_combat_move_plunder_the_wounded_tooltip: "#weak;italic Присвойте имущество противника.#!"
+
+ ######### Innate Vampire
+ POD_combat_move_vampire_bite: "@vampire_icon!Укус вампира"
+ POD_combat_move_vampire_bite_desc: "[PODCombatMoveDesc('POD_combat_move_vampire_bite')]"
+ POD_combat_move_vampire_bite_tooltip: "#weak;italic Вонзите зубы в чужую плоть и похитьте живительную кровь, чтобы продержаться ещё немного.#!"
+ POD_combat_move_blood_surge: "@vampire_icon!Прилив крови"
+ POD_combat_move_blood_surge_desc: "[PODCombatMoveDesc('POD_combat_move_blood_surge')]"
+ POD_combat_move_blood_surge_tooltip: "#weak;italic Заставьте витэ ярко гореть в ваших жилах, повышая вашу силу и устойчивость.#!"
+ POD_combat_move_blood_heal: "@vampire_icon!Кровавое исцеление"
+ POD_combat_move_blood_heal_desc: "[PODCombatMoveDesc('POD_combat_move_blood_heal')]"
+ POD_combat_move_blood_heal_tooltip: "#weak;italic Проклятие Каина в ваших жилах не позволит вам так легко умереть.#!"
+
+ ######### Abombwe
+ POD_combat_move_predators_communion: "@abombwe_icon!Общение хищника"
+ POD_combat_move_predators_communion_desc: "[PODCombatMoveDesc('POD_combat_move_predators_communion')]"
+ POD_combat_move_predators_communion_tooltip: "#weak;italic Вкусите их страх. Подарите им ложную надежду. И лишь затем нанесите удар.#!"
+ POD_combat_move_predators_talons: "@abombwe_icon!Когти хищника"
+ POD_combat_move_predators_talons_desc: "[PODCombatMoveDesc('POD_combat_move_predators_talons')]"
+ POD_combat_move_predators_talons_tooltip: "#weak;italic Закройте глаза охотника и позвольте когтям проложить путь к затаившемуся врагу.#!"
+
+ ######### Animalism
+ POD_combat_move_call_of_the_wild: "@animalism_icon!Зов природы"
+ POD_combat_move_call_of_the_wild_desc: "[PODCombatMoveDesc('POD_combat_move_call_of_the_wild')]"
+ POD_combat_move_call_of_the_wild_tooltip: "#weak;italic Существо ночи откажется от своей охоты и вместо этого присоединится к вашей.#!"
+
+ POD_combat_move_tongue_of_beasts: "@animalism_icon!Язык зверей"
+ POD_combat_move_tongue_of_beasts_desc: "[PODCombatMoveDesc('POD_combat_move_tongue_of_beasts')]"
+ POD_combat_move_tongue_of_beasts_tooltip: "#weak;italic Отбросьте беспорядочные мысли и страхи зверей, заменив их безжалостной точностью.#!"
+
+ ######### Auspex
+ POD_combat_move_omniscience: "@auspex_icon!Всеведение"
+ POD_combat_move_omniscience_desc: "[PODCombatMoveDesc('POD_combat_move_omniscience')]"
+ POD_combat_move_omniscience_tooltip: "#weak;italic Забавно, что они думают, будто могут от вас спрятаться.#!"
+
+ POD_combat_move_anticipate_victory: "@auspex_icon!Предвкушение победы"
+ POD_combat_move_anticipate_victory_desc: "[PODCombatMoveDesc('POD_combat_move_anticipate_victory')]"
+ POD_combat_move_anticipate_victory_tooltip: "#weak;italic Вы узнаете следующий ход противника раньше, чем он сам.#!"
+
+ ######### Bardo
+ POD_combat_move_banishing_sign_of_thoth: "@vampire_icon!Изгоняющий знак Тота"
+ POD_combat_move_banishing_sign_of_thoth_desc: "[PODCombatMoveDesc('POD_combat_move_banishing_sign_of_thoth')]"
+ POD_combat_move_banishing_sign_of_thoth_tooltip: "#weak;italic Доверьтесь себе и своему духу — и мечи со стрелами пройдут мимо.#!"
+ POD_combat_move_revelation: "@vampire_icon!Парадокс"
+ POD_combat_move_revelation_desc: "[PODCombatMoveDesc('POD_combat_move_revelation')]"
+ POD_combat_move_revelation_tooltip: "#weak;italic Дайте им ощутить покой Осириса и смотрите, как жажда кровопролития обращается в стыд.#!"
+
+ ######### Celerity
+ POD_combat_move_celerity_burst: "@celerity_icon!Всплеск стремительности"
+ POD_combat_move_celerity_burst_desc: "[PODCombatMoveDesc('POD_combat_move_celerity_burst')]"
+ POD_combat_move_celerity_burst_tooltip: "#weak;italic Быстрее, быстрее, быстрее, пока азарт скорости не преодолеет страх смерти.#!"
+ POD_combat_move_time_out_of_time: "@celerity_icon!Время вне времени"
+ POD_combat_move_time_out_of_time_desc: "[PODCombatMoveDesc('POD_combat_move_time_out_of_time')]"
+ POD_combat_move_time_out_of_time_tooltip: "#weak;italic Пока они в ярости бросаются на ваше остаточное изображение, вы будете лишь наблюдать.#!"
+
+ ######### Chimerstry
+ POD_combat_move_phantasmal_feint: "@chimerstry_icon!Фантазмальный финт"
+ POD_combat_move_phantasmal_feint_desc: "[PODCombatMoveDesc('POD_combat_move_phantasmal_feint')]"
+ POD_combat_move_phantasmal_feint_tooltip: "#weak;italic Зачем принимать удар, если ложь тоже сработает?#!"
+ POD_combat_move_horrid_reality: "@chimerstry_icon!Ужасная реальность"
+ POD_combat_move_horrid_reality_desc: "[PODCombatMoveDesc('POD_combat_move_horrid_reality')]"
+ POD_combat_move_horrid_reality_tooltip: "#weak;italic Разум ненадёжен. Накормите его иллюзией боли — и смотрите, как он ломается.#!"
+
+ ######### Daimonion
+ POD_combat_move_fear_of_the_void: "@daimonion_icon!Страх пустоты"
+ POD_combat_move_fear_of_the_void_desc: "[PODCombatMoveDesc('POD_combat_move_fear_of_the_void')]"
+ POD_combat_move_fear_of_the_void_tooltip: "#weak;italic Каждая душа таит грязные секреты. Покажите им истинную глубину этого пятна.#!"
+ POD_combat_move_tormented_essence: "@daimonion_icon!Измученная сущность"
+ POD_combat_move_tormented_essence_desc: "[PODCombatMoveDesc('POD_combat_move_tormented_essence')]"
+ POD_combat_move_tormented_essence_tooltip: "#weak;italic Смерть слишком милосердна. Ваша злоба заставит их гнить изнутри.#!"
+
+ ######### Dementation
+ POD_combat_move_incubus_humor: "@dementation_icon!Гуморы инкуба"
+ POD_combat_move_incubus_humor_desc: "[PODCombatMoveDesc('POD_combat_move_incubus_humor')]"
+ POD_combat_move_incubus_humor_tooltip: "#weak;italic Найдите в них эту маленькую искру гнева, зависти или гордости и превратите её в психоз.#!"
+ POD_combat_move_fire_voice: "@dementation_icon!Огненный голос"
+ POD_combat_move_fire_voice_desc: "[PODCombatMoveDesc('POD_combat_move_fire_voice')]"
+ POD_combat_move_fire_voice_tooltip: "#weak;italic Говорите потрескивающим голосом приближающегося пламени и наблюдайте, как Зверь в них паникует.#!"
+
+ ######### Dominate
+ POD_combat_move_command: "@dominate_icon!Приказ"
+ POD_combat_move_command_desc: "[PODCombatMoveDesc('POD_combat_move_command')]"
+ POD_combat_move_command_tooltip: "#weak;italic Они смеют восстать против своих господ? Одним словом остановите их натиск.#!"
+ POD_combat_move_possession: "@dominate_icon!Одержимость"
+ POD_combat_move_possession_desc: "[PODCombatMoveDesc('POD_combat_move_possession')]"
+ POD_combat_move_possession_tooltip: "#weak;italic Зачем вам пачкать свои руки, если враг может сделать это за вас?#!"
+
+ ######### Flight
+ POD_combat_move_wingborne_evasion: "@vampire_icon!Уклонение на крыльях"
+ POD_combat_move_wingborne_evasion_desc: "[PODCombatMoveDesc('POD_combat_move_wingborne_evasion')]"
+ POD_combat_move_wingborne_evasion_tooltip: "#weak;italic Летите достаточно далеко, чтобы избежать опасности и увидеть настоящую свободу.#!"
+ POD_combat_move_stooping_assault: "@vampire_icon!Пикирующий натиск"
+ POD_combat_move_stooping_assault_desc: "[PODCombatMoveDesc('POD_combat_move_stooping_assault')]"
+ POD_combat_move_stooping_assault_tooltip: "#weak;italic Обрушьтесь с неба, сокрушая врагов без вреда для себя.#!"
+
+ ######### Fortitude
+ POD_combat_move_knights_bane: "@fortitude_icon!Проклятие рыцаря"
+ POD_combat_move_knights_bane_desc: "[PODCombatMoveDesc('POD_combat_move_knights_bane')]"
+ POD_combat_move_knights_bane_tooltip: "#weak;italic Пусть они сломают кулаки о вашу железную плоть.#!"
+ POD_combat_move_armoured_flesh: "@fortitude_icon!Бронированная плоть"
+ POD_combat_move_armoured_flesh_desc: "[PODCombatMoveDesc('POD_combat_move_armoured_flesh')]"
+ POD_combat_move_armoured_flesh_tooltip: "#weak;italic Зачем прятаться за кованой сталью, если кровь сама дарует защиту?#!"
+
+ ######### Kai
+ POD_combat_move_inner_focus: "@kai_icon!Внутренний фокус"
+ POD_combat_move_inner_focus_desc: "[PODCombatMoveDesc('POD_combat_move_inner_focus')]"
+ POD_combat_move_inner_focus_tooltip: "#weak;italic Настоящий воин дисциплинированно управляет Зверем. Сосредоточьтесь, и ваш следующий удар будет разрушительным.#!"
+
+ POD_combat_move_focused_strike: "@kai_icon!Направленный удар"
+ POD_combat_move_focused_strike_desc: "[PODCombatMoveDesc('POD_combat_move_focused_strike')]"
+ POD_combat_move_focused_strike_tooltip: "#weak;italic Прервите вашу тихую концентрацию вспышкой стали.#!"
+
+ ######### Melpominee
+ POD_combat_move_madrigal: "@melpominee_icon!Мадригал"
+ POD_combat_move_madrigal_desc: "[PODCombatMoveDesc('POD_combat_move_madrigal')]"
+ POD_combat_move_madrigal_tooltip: "#weak;italic Спойте колыбельную, которая успокоит паникующие умы ваших союзников.#!"
+
+ POD_combat_move_shattering_crescendo: "@melpominee_icon!Сокрушительное крещендо"
+ POD_combat_move_shattering_crescendo_desc: "[PODCombatMoveDesc('POD_combat_move_shattering_crescendo')]"
+ POD_combat_move_shattering_crescendo_tooltip: "#weak;italic Возьмите сокрушительную высокую ноту, разрывающую внутренности и волю ваших врагов.#!"
+
+ ######### Mytherceria
+ POD_combat_move_riddle_phantastique: "@mytherceria_icon!Невероятная загадка"
+ POD_combat_move_riddle_phantastique_desc: "[PODCombatMoveDesc('POD_combat_move_riddle_phantastique')]"
+ POD_combat_move_riddle_phantastique_tooltip: "#weak;italic Расскажите извращенную сказку и поймайте сознание вашего врага в парадокс.#!"
+ POD_combat_move_steal_the_mind: "@mytherceria_icon!Кража разума"
+ POD_combat_move_steal_the_mind_desc: "[PODCombatMoveDesc('POD_combat_move_steal_the_mind')]"
+ POD_combat_move_steal_the_mind_tooltip: "#weak;italic Они были так уверены в себе — пока вы не обратили эту уверенность против них.#!"
+
+ ######### Obfuscate
+ POD_combat_move_vanish_from_minds_eye: "@obfuscate_icon!Исчезновение из мысленного взора"
+ POD_combat_move_vanish_from_minds_eye_desc: "[PODCombatMoveDesc('POD_combat_move_vanish_from_minds_eye')]"
+ POD_combat_move_vanish_from_minds_eye_tooltip: "#weak;italic Пусть они забудут о вашем существовании, чтобы вы могли подготовиться и нанести ответный удар.#!"
+ POD_combat_move_unseen_ambush: "@obfuscate_icon!Невидимая засада"
+ POD_combat_move_unseen_ambush_desc: "[PODCombatMoveDesc('POD_combat_move_unseen_ambush')]"
+ POD_combat_move_unseen_ambush_tooltip: "#weak;italic Они заметят ваш удар только тогда, когда для них будет слишком поздно.#!"
+
+ ######### Obtenebration
+ POD_combat_move_nocturne: "@obtenebration_icon!Ноктюрн"
+ POD_combat_move_nocturne_desc: "[PODCombatMoveDesc('POD_combat_move_nocturne')]"
+ POD_combat_move_nocturne_tooltip: "#weak;italic Заполните поле тенями и позвольте тьме сломать их хрупкие маленькие разумы.#!"
+ POD_combat_move_darkness_within: "@obtenebration_icon!Тьма внутри"
+ POD_combat_move_darkness_within_desc: "[PODCombatMoveDesc('POD_combat_move_darkness_within')]"
+ POD_combat_move_darkness_within_tooltip: "#weak;italic Пусть ваша тень обовьёт горло врага и выпьет витэ, которое он не заслуживает сохранять.#!"
+
+ ######### Potence
+ POD_combat_move_potent_strike: "@potence_icon!Мощный удар"
+ POD_combat_move_potent_strike_desc: "[PODCombatMoveDesc('POD_combat_move_potent_strike')]"
+ POD_combat_move_potent_strike_tooltip: "#weak;italic Нанесите удар, достаточно сильный, чтобы проломить кость и камень.#!"
+ POD_combat_move_crush_equipment: "@potence_icon!Сокрушение"
+ POD_combat_move_crush_equipment_desc: "[PODCombatMoveDesc('POD_combat_move_crush_equipment')]"
+ POD_combat_move_crush_equipment_tooltip: "#weak;italic Схватите чужое оружие или доспех и сожмите в ладонях, превращая в бесполезный лом.#!"
+
+ ######### Presence
+ POD_combat_move_majesty: "@presence_icon!Величие"
+ POD_combat_move_majesty_desc: "[PODCombatMoveDesc('POD_combat_move_majesty')]"
+ POD_combat_move_majesty_tooltip: "#weak;italic Вы излучаете ауру неприкосновенного величия. Ударить вас — всё равно что совершить святотатство.#!"
+ POD_combat_move_cooperation: "@presence_icon!Сотрудничество"
+ POD_combat_move_cooperation_desc: "[PODCombatMoveDesc('POD_combat_move_cooperation')]"
+ POD_combat_move_cooperation_tooltip: "#weak;italic Вашему отряду нужен сильный предводитель. Это роль, достойная вас.#!"
+
+ ######### Protean
+ POD_combat_move_feral_weapons: "@protean_icon!Звериное оружие"
+ POD_combat_move_feral_weapons_desc: "[PODCombatMoveDesc('POD_combat_move_feral_weapons')]"
+ POD_combat_move_feral_weapons_tooltip: "#weak;italic Пусть цивилизованные люди сражаются сталью. Ваши когти прорежут всё это.#!"
+ POD_combat_move_adaptation: "@protean_icon!Адаптация"
+ POD_combat_move_adaptation_desc: "[PODCombatMoveDesc('POD_combat_move_adaptation')]"
+ POD_combat_move_adaptation_tooltip: "#weak;italic Приспособьтесь к окружающей бойне. Доживите до следующей ночи.#!"
+
+ ######### Quietus
+ POD_combat_move_scorpions_touch: "@quietus_icon!Касание скорпиона"
+ POD_combat_move_scorpions_touch_desc: "[PODCombatMoveDesc('POD_combat_move_scorpions_touch')]"
+ POD_combat_move_scorpions_touch_tooltip: "#weak;italic Возложите судящую руку на плоть своего врага и позвольте яду ослабить его для неминуемой казни.#!"
+ POD_combat_move_taste_of_death: "@quietus_icon!Вкус погибели"
+ POD_combat_move_taste_of_death_desc: "[PODCombatMoveDesc('POD_combat_move_taste_of_death')]"
+ POD_combat_move_taste_of_death_tooltip: "#weak;italic Вынесите приговор Хакима обжигающими брызгами витэ, очищающими врага до костей.#!"
+
+ ######### Rift
+ POD_combat_move_passing_the_inner_realm: "@rift_icon!Переход через Внутреннее царство"
+ POD_combat_move_passing_the_inner_realm_desc: "[PODCombatMoveDesc('POD_combat_move_passing_the_inner_realm')]"
+ POD_combat_move_passing_the_inner_realm_tooltip: "#weak;italic Сделайте незримый шаг, чтобы найти краткое утешение во Внутреннем царстве.#!"
+ POD_combat_move_rift_gateway: "@rift_icon!Врата Разлома"
+ POD_combat_move_rift_gateway_desc: "[PODCombatMoveDesc('POD_combat_move_rift_gateway')]"
+ POD_combat_move_rift_gateway_tooltip: "#weak;italic Заточите врага в кошмарах, которые вам слишком хорошо знакомы.#!"
+
+ ######### Serpentis
+ POD_combat_move_typhonic_maw: "@serpentis_icon!Тифоническая пасть"
+ POD_combat_move_typhonic_maw_desc: "[PODCombatMoveDesc('POD_combat_move_typhonic_maw')]"
+ POD_combat_move_typhonic_maw_tooltip: "#weak;italic Почтите Сета: сбросьте человеческую личину и напейтесь крови змеиной пастью.#!"
+ POD_combat_move_echidnas_venom: "@serpentis_icon!Яд Ехидны"
+ POD_combat_move_echidnas_venom_desc: "[PODCombatMoveDesc('POD_combat_move_echidnas_venom')]"
+ POD_combat_move_echidnas_venom_tooltip: "#weak;italic Порча начинается и заканчивается изнутри. Благословите врага каплей яда и смотрите, как слабеет его разум.#!"
+
+ ######### Spiritus
+ POD_combat_move_aid_from_spirits: "@spiritus_icon!Помощь духов"
+ POD_combat_move_aid_from_spirits_desc: "[PODCombatMoveDesc('POD_combat_move_aid_from_spirits')]"
+ POD_combat_move_aid_from_spirits_tooltip: "#weak;italic Призовите звериного духа Геи и сражайтесь плечом к плечу с самой природой.#!"
+ POD_combat_move_aspect_of_the_beast: "@spiritus_icon!Аспект зверя"
+ POD_combat_move_aspect_of_the_beast_desc: "[PODCombatMoveDesc('POD_combat_move_aspect_of_the_beast')]"
+ POD_combat_move_aspect_of_the_beast_tooltip: "#weak;italic Благословите себя чувствами звериного духа и неукротимой плотью и кровью.#!"
+
+ ######### Temporis
+ POD_combat_move_patience_of_the_norns: "@temporis_icon!Терпение норн"
+ POD_combat_move_patience_of_the_norns_desc: "[PODCombatMoveDesc('POD_combat_move_patience_of_the_norns')]"
+ POD_combat_move_patience_of_the_norns_tooltip: "#weak;italic Отнимите у врага время, оставив его в стазисе ждать украденной вами секунды.#!"
+ POD_combat_move_kiss_of_lachesis: "@temporis_icon!Поцелуй Лахесис"
+ POD_combat_move_kiss_of_lachesis_desc: "[PODCombatMoveDesc('POD_combat_move_kiss_of_lachesis')]"
+ POD_combat_move_kiss_of_lachesis_tooltip: "#weak;italic Прикажите пескам времени разъесть их плоть, приняв на себя обратный удар.#!"
+
+ ######### Valeren
+ POD_combat_move_healers_touch: "@valeren_icon!Касание лекаря"
+ POD_combat_move_healers_touch_desc: "[PODCombatMoveDesc('POD_combat_move_healers_touch')]"
+ POD_combat_move_healers_touch_tooltip: "#weak;italic Исцелите своих союзников, показав им немного милости Саулота.#!"
+ POD_combat_move_samiels_vengeance: "@valeren_icon!Месть Самиэля"
+ POD_combat_move_samiels_vengeance_desc: "[PODCombatMoveDesc('POD_combat_move_samiels_vengeance')]"
+ POD_combat_move_samiels_vengeance_tooltip: "#weak;italic Они смеют проливать кровь праведников? Вы наносите ответный удар с яростью Самиэля.#!"
+ POD_combat_move_peaceful_touch: "@valeren_icon!Умиротворяющее касание"
+ POD_combat_move_peaceful_touch_desc: "[PODCombatMoveDesc('POD_combat_move_peaceful_touch')]"
+ POD_combat_move_peaceful_touch_tooltip: "#weak;italic Чтобы закончить бой, вам не нужно оружие. Только мир и спокойствие.#!"
+
+ ######### Vicissitude
+ POD_combat_move_transmogrify_mortal_clay: "@vicissitude_icon!Живая глина"
+ POD_combat_move_transmogrify_mortal_clay_desc: "[PODCombatMoveDesc('POD_combat_move_transmogrify_mortal_clay')]"
+ POD_combat_move_transmogrify_mortal_clay_tooltip: "#weak;italic Агония — цена физического и духовного совершенства.#!"
+ POD_combat_move_rend_osseous_frame: "@vicissitude_icon!Расщепление костяной основы"
+ POD_combat_move_rend_osseous_frame_desc: "[PODCombatMoveDesc('POD_combat_move_rend_osseous_frame')]"
+ POD_combat_move_rend_osseous_frame_tooltip: "#weak;italic Вы настроите против них их собственное тело.#!"
+
+ ######### Visceratika
+ POD_combat_move_armor_of_terra: "@visceratika_icon!Броня Терры"
+ POD_combat_move_armor_of_terra_desc: "[PODCombatMoveDesc('POD_combat_move_armor_of_terra')]"
+ POD_combat_move_armor_of_terra_tooltip: "#weak;italic Сохраняйте стойкость, какие бы удары ни обрушивались на вас.#!"
+ POD_combat_move_flow_with_the_mountain: "@visceratika_icon!Движение в горе"
+ POD_combat_move_flow_with_the_mountain_desc: "[PODCombatMoveDesc('POD_combat_move_flow_with_the_mountain')]"
+ POD_combat_move_flow_with_the_mountain_tooltip: "#weak;italic Станьте непоколебимы, как гора, и не позволяйте ничему пробить вашу броню.#!"
+
+ ######### Abyss Mysticism
+ POD_combat_move_subsume_the_darkness: "@bloodsorcery_icon!Покорить тьму"
+ POD_combat_move_subsume_the_darkness_desc: "[PODCombatMoveDesc('POD_combat_move_subsume_the_darkness')]"
+ POD_combat_move_subsume_the_darkness_tooltip: "#weak;italic Сама тьма придёт на помощь вашей истерзанной плоти.#!"
+ POD_combat_move_third_eye_of_rickard: "@bloodsorcery_icon!Третье око Рикарда Аргентия"
+ POD_combat_move_third_eye_of_rickard_desc: "[PODCombatMoveDesc('POD_combat_move_third_eye_of_rickard')]"
+ POD_combat_move_third_eye_of_rickard_tooltip: "#weak;italic Пусть тени следят за вами; прикажите им напасть на первого замеченного врага.#!"
+ POD_combat_move_evocation_of_the_oubliette: "@bloodsorcery_icon!Призыв темницы"
+ POD_combat_move_evocation_of_the_oubliette_desc: "[PODCombatMoveDesc('POD_combat_move_evocation_of_the_oubliette')]"
+ POD_combat_move_evocation_of_the_oubliette_tooltip: "#weak;italic Бросьте свою жертву в бездну и позвольте ей вернуться только тогда, когда её тело и разум будут разрушены.#!"
+
+ ######### Transylvanian Kraina
+ POD_combat_move_pietrosus_hospitality: "@bloodsorcery_icon!Гостеприимство Петроса"
+ POD_combat_move_pietrosus_hospitality_desc: "[PODCombatMoveDesc('POD_combat_move_pietrosus_hospitality')]"
+ POD_combat_move_pietrosus_hospitality_tooltip: "#weak;italic Поприветствуйте врага по-трансильвански. Пусть горные ветры опаляют его плоть.#!"
+ POD_combat_move_kupalas_exhalation: "@bloodsorcery_icon!Вздох Купалы"
+ POD_combat_move_kupalas_exhalation_desc: "[PODCombatMoveDesc('POD_combat_move_kupalas_exhalation')]"
+ POD_combat_move_kupalas_exhalation_tooltip: "#weak;italic Обратитесь к демону в глубинах и раздуйте его пламя в адский пожар, поглощающий врагов целиком.#!"
+ POD_combat_move_restless_medias: "@bloodsorcery_icon!Беспокойная медия"
+ POD_combat_move_restless_medias_desc: "[PODCombatMoveDesc('POD_combat_move_restless_medias')]"
+ POD_combat_move_restless_medias_tooltip: "#weak;italic Прикажите земле под вашими ногами бешено метаться, раскидывая врагов вокруг.#!"
+
+ ######### Black Sea Kraina
+ POD_combat_move_pontos_axeinos: "@bloodsorcery_icon!Неприветливое море"
+ POD_combat_move_pontos_axeinos_desc: "[PODCombatMoveDesc('POD_combat_move_pontos_axeinos')]"
+ POD_combat_move_pontos_axeinos_tooltip: "#weak;italic Пригласите своих гостей испытать ледяной дождь, бурю и туман вашей родины.#!"
+
+ ######### Bialowieza Kraina
+ POD_combat_move_fingers_of_bialowieza: "@bloodsorcery_icon!Пальцы Беловежи"
+ POD_combat_move_fingers_of_bialowieza_desc: "[PODCombatMoveDesc('POD_combat_move_fingers_of_bialowieza')]"
+ POD_combat_move_fingers_of_bialowieza_tooltip: "#weak;italic Леса жаждут удержать ваших врагов. Как можно им отказать?#!"
+ POD_combat_move_grondrskas_impasse: "@bloodsorcery_icon!Безвыходность Грондорски"
+ POD_combat_move_grondrskas_impasse_desc: "[PODCombatMoveDesc('POD_combat_move_grondrskas_impasse')]"
+ POD_combat_move_grondrskas_impasse_tooltip: "#weak;italic Долг воеводы — направлять. Искажайте пути, пока враг не будет вынужден встретиться с вами лицом к лицу.#!"
+ POD_combat_move_mouth_of_djabalek: "@bloodsorcery_icon!Пасть Джабалека"
+ POD_combat_move_mouth_of_djabalek_desc: "[PODCombatMoveDesc('POD_combat_move_mouth_of_djabalek')]"
+ POD_combat_move_mouth_of_djabalek_tooltip: "#weak;italic Раздвиньте камень и грязь под ногами вашего врага и удержите нарушителя на месте.#!"
+
+ ######### Sepulchre Path
+ POD_combat_move_compelled_soul: "@necromancy_icon!Принуждённая душа"
+ POD_combat_move_compelled_soul_desc: "[PODCombatMoveDesc('POD_combat_move_compelled_soul')]"
+ POD_combat_move_compelled_soul_tooltip: "#weak;italic Позовите там, где глаза смертных не видят, и призовите призрака сражаться на вашей стороне.#!"
+
+ ######### Grave's Decay
+ POD_combat_move_rigor_mortis: "@necromancy_icon!Трупное окоченение"
+ POD_combat_move_rigor_mortis_desc: "[PODCombatMoveDesc('POD_combat_move_rigor_mortis')]"
+ POD_combat_move_rigor_mortis_tooltip: "#weak;italic Заставьте врага ощутить неподвижность мёртвого тела.#!"
+ POD_combat_move_dust_to_dust: "@necromancy_icon!Пепел к пеплу"
+ POD_combat_move_dust_to_dust_desc: "[PODCombatMoveDesc('POD_combat_move_dust_to_dust')]"
+ POD_combat_move_dust_to_dust_tooltip: "#weak;italic Ускорьте время для части чужого тела, пока она не обратится в прах.#!"
+
+ ######### Path of Haunting
+ POD_combat_move_song_of_the_dead: "@necromancy_icon!Песнь мёртвых"
+ POD_combat_move_song_of_the_dead_desc: "[PODCombatMoveDesc('POD_combat_move_song_of_the_dead')]"
+ POD_combat_move_song_of_the_dead_tooltip: "#weak;italic Поделитесь с целью своим увлечением мёртвыми. Жаль, она никогда этого не поймёт.#!"
+
+ ######### Path of the Twilight Garden
+ POD_combat_move_lament_of_dhainu: "@necromancy_icon!Плач Д'хайну"
+ POD_combat_move_lament_of_dhainu_desc: "[PODCombatMoveDesc('POD_combat_move_lament_of_dhainu')]"
+ POD_combat_move_lament_of_dhainu_tooltip: "#weak;italic Спойте мучительную песню о горе Тёмной матери, чтобы вражеский строй ощутил частицу её боли.#!"
+
+ ######### Vitreous Path
+ POD_combat_move_night_cry: "@necromancy_icon!Вопль ночи"
+ POD_combat_move_night_cry_desc: "[PODCombatMoveDesc('POD_combat_move_night_cry')]"
+ POD_combat_move_night_cry_tooltip: "#weak;italic Вырвите крик из Завесы устами каждого, кто стоит перед вами.#!"
+
+ ######### Skull Path
+ POD_combat_move_ammorsus_vicarius: "@necromancy_icon!Ammorsus Vicarius"
+ POD_combat_move_ammorsus_vicarius_desc: "[PODCombatMoveDesc('POD_combat_move_ammorsus_vicarius')]"
+ POD_combat_move_ammorsus_vicarius_tooltip: "#weak;italic Заставьте клыкастый череп впиться во врага. Прямое вливание смерти и знания.#!"
+
+ ######### Path of Woe
+ POD_combat_move_expurgate_the_damned: "@necromancy_icon!Очищение проклятых"
+ POD_combat_move_expurgate_the_damned_desc: "[PODCombatMoveDesc('POD_combat_move_expurgate_the_damned')]"
+ POD_combat_move_expurgate_the_damned_tooltip: "#weak;italic Заставьте призрака проявиться в самом уязвимом, материальном состоянии на глазах у всех.#!"
+ POD_combat_move_blood_scourge: "@necromancy_icon!Кровавый бич"
+ POD_combat_move_blood_scourge_desc: "[PODCombatMoveDesc('POD_combat_move_blood_scourge')]"
+ POD_combat_move_blood_scourge_tooltip: "#weak;italic Пронзите призрака витэ, разрушив его корпус и решимость.#!"
+ POD_combat_move_cursed_eucharist: "@necromancy_icon!Проклятая евхаристия"
+ POD_combat_move_cursed_eucharist_desc: "[PODCombatMoveDesc('POD_combat_move_cursed_eucharist')]"
+ POD_combat_move_cursed_eucharist_tooltip: "#weak;italic Укусите призрака и превратите его украденную страсть в силу воли.#!"
+
+ ######### Revelations of Duat
+ POD_combat_move_sight_of_the_jackal: "@bloodsorcery_icon!Взгляд шакала"
+ POD_combat_move_sight_of_the_jackal_desc: "[PODCombatMoveDesc('POD_combat_move_sight_of_the_jackal')]"
+ POD_combat_move_sight_of_the_jackal_tooltip: "#weak;italic Отодвиньте Завесу и пригвоздите призрака своим взглядом.#!"
+
+ ######### Revelations of Midgard
+ POD_combat_move_swallow_the_tail: "@bloodsorcery_icon!Поглощение хвоста"
+ POD_combat_move_swallow_the_tail_desc: "[PODCombatMoveDesc('POD_combat_move_swallow_the_tail')]"
+ POD_combat_move_swallow_the_tail_tooltip: "#weak;italic Мировой Змей проглатывает свой хвост, и ваша кровь имитирует этот цикл, возвращая пролитое витэ обратно в ваши жилы.#!"
+
+ ######### Path of Duat
+ POD_combat_move_a_sending_of_serpents: "@bloodsorcery_icon!Гнездо змей"
+ POD_combat_move_a_sending_of_serpents_desc: "[PODCombatMoveDesc('POD_combat_move_a_sending_of_serpents')]"
+ POD_combat_move_a_sending_of_serpents_tooltip: "#weak;italic Благословите зрение врага змеями Сета, каждое моргание заставляет их плотнее обвивать поле зрения.#!"
+ POD_combat_move_darkness_of_duat: "@bloodsorcery_icon!Тьма Дуата"
+ POD_combat_move_darkness_of_duat_desc: "[PODCombatMoveDesc('POD_combat_move_darkness_of_duat')]"
+ POD_combat_move_darkness_of_duat_tooltip: "#weak;italic Погрузите зрение цели в подземный мир, оставив ее слепой в темноте.#!"
+ POD_combat_move_the_narrow_house: "@bloodsorcery_icon!Тесный дом"
+ POD_combat_move_the_narrow_house_desc: "[PODCombatMoveDesc('POD_combat_move_the_narrow_house')]"
+ POD_combat_move_the_narrow_house_tooltip: "#weak;italic Подготовьте свою жертву к загробной жизни, запечатав её в саркофаге и обездвижив.#!"
+ POD_combat_move_consignment_to_duat: "@bloodsorcery_icon!Отправка в Дуат"
+ POD_combat_move_consignment_to_duat_desc: "[PODCombatMoveDesc('POD_combat_move_consignment_to_duat')]"
+ POD_combat_move_consignment_to_duat_tooltip: "#weak;italic Вырвите душу жертвы и отправьте её в Дуат, оставив пустое тело на грани торпора.#!"
+
+ ######### Covenant of Nergal
+ POD_combat_move_nergals_wrath: "@bloodsorcery_icon!Гнев Нергала"
+ POD_combat_move_nergals_wrath_desc: "[PODCombatMoveDesc('POD_combat_move_nergals_wrath')]"
+ POD_combat_move_nergals_wrath_tooltip: "#weak;italic Вы заражаете их жалкую плоть злобным проклятием, с ликованием наблюдая за их агонией.#!"
+
+ ######### Divine Hand
+ POD_combat_move_hand_of_anubis: "@bloodsorcery_icon!Длань Анубиса"
+ POD_combat_move_hand_of_anubis_desc: "[PODCombatMoveDesc('POD_combat_move_hand_of_anubis')]"
+ POD_combat_move_hand_of_anubis_tooltip: "#weak;italic Взвесьте сердце врага на весах с пером, затем раздавите его священное подобие в ладони, чтобы сокрушить врага издалека.#!"
+
+ ######### Path of Karma
+ POD_combat_move_past_lives: "@bloodsorcery_icon!Прошлые жизни"
+ POD_combat_move_past_lives_desc: "[PODCombatMoveDesc('POD_combat_move_past_lives')]"
+ POD_combat_move_past_lives_tooltip: "#weak;italic Вы отпускаете своё сознание и позволяете закалённым в боях инстинктам забытого воина управлять вашим мечом.#!"
+
+ ######### Evil Eye
+ POD_combat_move_humiliation: "@bloodsorcery_icon!Унижение"
+ POD_combat_move_humiliation_desc: "[PODCombatMoveDesc('POD_combat_move_humiliation')]"
+ POD_combat_move_humiliation_tooltip: "#weak;italic Наложите тонкое проклятие на эго противника, гарантируя, что его следующий уверенный шаг будет грубой ошибкой.#!"
+ POD_combat_move_peril: "@bloodsorcery_icon!Угроза"
+ POD_combat_move_peril_desc: "[PODCombatMoveDesc('POD_combat_move_peril')]"
+ POD_combat_move_peril_tooltip: "#weak;italic Никто не сможет избежать осуждения. Насылайте на своего врага несчастье, каждый шаг порождает все большую и большую опасность.#!"
+ POD_combat_move_the_eye_that_wounds: "@bloodsorcery_icon!Калечащий глаз"
+ POD_combat_move_the_eye_that_wounds_desc: "[PODCombatMoveDesc('POD_combat_move_the_eye_that_wounds')]"
+ POD_combat_move_the_eye_that_wounds_tooltip: "#weak;italic Они виновны и прольют за это кровь. Одним лишь взглядом вы наносите ужасную рану на их плоть.#!"
+
+ ######### Weather Control
+ POD_combat_move_weather_control: "@bloodsorcery_icon!Управление погодой"
+ POD_combat_move_weather_control_desc: "[PODCombatMoveDesc('POD_combat_move_weather_control')]"
+ POD_combat_move_weather_control_tooltip: "#weak;italic Используйте нечестивую силу витэ, чтобы формировать поле битвы.#!"
+
+ ######### Weather Control
+ POD_combat_move_dehydrate: "@bloodsorcery_icon!Обезвоживание"
+ POD_combat_move_dehydrate_desc: "[PODCombatMoveDesc('POD_combat_move_dehydrate')]"
+ POD_combat_move_dehydrate_tooltip: "#weak;italic Одним прикосновением удалите всю воду из тела жертвы.#!"
+
+ ######### Movement of the Mind
+ POD_combat_move_force_bolt: "@bloodsorcery_icon!Силовой снаряд"
+ POD_combat_move_force_bolt_desc: "[PODCombatMoveDesc('POD_combat_move_force_bolt')]"
+ POD_combat_move_force_bolt_tooltip: "#weak;italic Выпустите в противника стрелу чистой силы.#!"
+
+ ######### Lures of the Flames
+ POD_combat_move_fire_control: "@bloodsorcery_icon!Управление огнём"
+ POD_combat_move_fire_control_desc: "[PODCombatMoveDesc('POD_combat_move_fire_control')]"
+ POD_combat_move_fire_control_tooltip: "#weak;italic Призовите свою кровь, и огонь подчинится вашим приказам.#!"
+ POD_combat_move_inferno: "@bloodsorcery_icon!Инферно"
+ POD_combat_move_inferno_desc: "[PODCombatMoveDesc('POD_combat_move_inferno')]"
+ POD_combat_move_inferno_tooltip: "#weak;italic Зажгите свое витэ и высвободите его в величественной демонстрации нечестивой силы.#!"
+
+ ######### Combination Disciplines
+ POD_combat_move_arsenal_of_flesh_and_bone: "@protean_icon!Арсенал из плоти и костей"
+ POD_combat_move_arsenal_of_flesh_and_bone_desc: "[PODCombatMoveDesc('POD_combat_move_arsenal_of_flesh_and_bone')]"
+ POD_combat_move_arsenal_of_flesh_and_bone_tooltip: "#weak;italic Сформируйте из своей собственной анатомии смертоносный арсенал.#!"
+ POD_combat_move_eye_of_unforgiving_heaven: "@auspex_icon!Глаз непрощающих небес"
+ POD_combat_move_eye_of_unforgiving_heaven_desc: "[PODCombatMoveDesc('POD_combat_move_eye_of_unforgiving_heaven')]"
+ POD_combat_move_eye_of_unforgiving_heaven_tooltip: "#weak;italic Раскройте плачущий третий глаз на лбу и высвободите священную ярость. Никакой пощады нечестивым.#!"
+ POD_combat_move_nightmare_curse: "@auspex_icon!Кошмарное проклятие"
+ POD_combat_move_nightmare_curse_desc: "[PODCombatMoveDesc('POD_combat_move_nightmare_curse')]"
+ POD_combat_move_nightmare_curse_tooltip: "#weak;italic Доберитесь до тёмных уголков разума вашего врага и вытащите ужасающее воспоминание, заставив его переживать его бесконечно.#!"
+ POD_combat_move_rod_raw_rending: "@fortitude_icon!Раздирающая мощь"
+ POD_combat_move_rod_raw_rending_desc: "[PODCombatMoveDesc('POD_combat_move_rod_raw_rending')]"
+ POD_combat_move_rod_raw_rending_tooltip: "#weak;italic Объедините свою огромную силу и стойкость, чтобы превратить конечность в таран, способный пробить броню, как бумагу.#!"
+
+ ######### Innate Fera
+ POD_combat_move_fera_regeneration: "@fera_icon!Регенерация"
+ POD_combat_move_fera_regeneration_desc: "[PODCombatMoveDesc('POD_combat_move_fera_regeneration')]"
+ POD_combat_move_fera_regeneration_tooltip: "#weak;italic [Glossary('Фера', 'glossary_fera_tt')] наделены огромными регенеративными способностями, даром, который они используют с большой эффективностью.#!"
+
+ POD_combat_move_fera_beast_strike: "@fera_icon!Удар зверя"
+ POD_combat_move_fera_beast_strike_desc: "[PODCombatMoveDesc('POD_combat_move_fera_beast_strike')]"
+ POD_combat_move_fera_beast_strike_tooltip: "#weak;italic Звериный коготь, клык или птичий коготь — разницы нет. Боль одна и та же.#!"
+
+ POD_combat_move_fera_channel_rage: "@fera_icon!Направить ярость"
+ POD_combat_move_fera_channel_rage_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_rage_surge')]"
+ POD_combat_move_fera_channel_rage_tooltip: "#weak;italic Это дар, который [Glossary('Луна', 'glossary_luna_tt')] даровала вам... или проклятие?#!"
+
+ ######### Innate Werewolf
+ POD_combat_move_werewolf_beast_of_war: "@werewolf_icon!Зверь войны"
+ POD_combat_move_werewolf_beast_of_war_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_beast_of_war')]"
+ POD_combat_move_werewolf_beast_of_war_tooltip: "#weak;italic Гару созданы воинами. Станьте свидетелем этого наследия.#!"
+ POD_combat_move_werewolf_fang_rush: "@werewolf_icon!Натиск клыка"
+ POD_combat_move_werewolf_fang_rush_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_fang_rush')]"
+ POD_combat_move_werewolf_fang_rush_tooltip: "#weak;italic Ужасный способ умереть, наблюдая, как пасть смерти приближается к вам.#!"
+ POD_combat_move_werewolf_bloodhound: "@werewolf_icon!Ищейка"
+ POD_combat_move_werewolf_bloodhound_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_bloodhound')]"
+ POD_combat_move_werewolf_bloodhound_tooltip: "#weak;italic Волк уловил ваш запах. Теперь уже не спрятаться.#!"
+ POD_combat_move_werewolf_face_the_apocalypse: "@werewolf_icon!Встретить Апокалипсис"
+ POD_combat_move_werewolf_face_the_apocalypse_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_face_the_apocalypse')]"
+ POD_combat_move_werewolf_face_the_apocalypse_tooltip: "#weak;italic Мы встретим грядущий Апокалипсис и умрём вместе с ним. Наши тела могут истлеть, но наши легенды будут вечны.#!"
+
+
+
+ ######### Homid Gifts
+ POD_combat_move_werewolf_staredown: "@werewolf_icon!Пристальный взгляд"
+ POD_combat_move_werewolf_staredown_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_staredown')]"
+ POD_combat_move_werewolf_staredown_tooltip: "#weak;italic За его взглядом что-то скрывается. Какой-то голод — и он меня ужасает.#!"
+ POD_combat_move_werewolf_false_comfort: "@werewolf_icon!Ложное утешение"
+ POD_combat_move_werewolf_false_comfort_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_false_comfort')]"
+ POD_combat_move_werewolf_false_comfort_tooltip: "#weak;italic Ни камень, ни металл не защитят вас. Ни пелена, ни друг не скроют вас. Эти когти найдут ваше сердце.#!"
+
+
+ ######### Beast-born Gifts
+ POD_combat_move_werewolf_cousins_coat: "@werewolf_icon!Шкура сородича"
+ POD_combat_move_werewolf_cousins_coat_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_cousins_coat')]"
+ POD_combat_move_werewolf_cousins_coat_tooltip: "#weak;italic Пытаться найти конкретного волка в стае — глупость. Когда вы разглядите его, будет уже слишком поздно.#!"
+ POD_combat_move_werewolf_gift_of_the_porcupine: "@werewolf_icon!Дар дикобраза"
+ POD_combat_move_werewolf_gift_of_the_porcupine_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_gift_of_the_porcupine')]"
+ POD_combat_move_werewolf_gift_of_the_porcupine_tooltip: "#weak;italic Маленький дикобраз, о котором так легко забыть. Однако его шкура создана для войны, и война у него будет.#!"
+
+ ######### Ahroun
+ POD_combat_move_werewolf_true_fear: "@ahroun_icon!Истинный страх"
+ POD_combat_move_werewolf_true_fear_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_true_fear')]"
+ POD_combat_move_werewolf_true_fear_tooltip: "#weak;italic Волк пришёл за добычей.#!"
+ POD_combat_move_werewolf_primal_anger: "@ahroun_icon!Первобытный гнев"
+ POD_combat_move_werewolf_primal_anger_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_primal_anger')]"
+ POD_combat_move_werewolf_primal_anger_tooltip: "#weak;italic Говорят, [Glossary('ярость', 'glossary_rage_tt')] не должна поглощать вас. Аруны не согласны.#!"
+ POD_combat_move_werewolf_shake_the_earth: "@ahroun_icon!Сотрясание Земли"
+ POD_combat_move_werewolf_shake_the_earth_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_shake_the_earth')]"
+ POD_combat_move_werewolf_shake_the_earth_tooltip: "#weak;italic Ваши замки нас не остановят. Волк уже внутри.#!"
+
+
+ ######### Galliard
+ POD_combat_move_werewolf_song_of_valor: "@galliard_icon!Песнь доблести"
+ POD_combat_move_werewolf_song_of_valor_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_song_of_valor')]"
+ POD_combat_move_werewolf_song_of_valor_tooltip: "#weak;italic Мы воспеваем прошлые века. Мы воспеваем легенды. Мы поём о себе.#!"
+ POD_combat_move_werewolf_canine_call: "@galliard_icon!Зов псовых"
+ POD_combat_move_werewolf_canine_call_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_canine_call')]"
+ POD_combat_move_werewolf_canine_call_tooltip: "#weak;italic И человек, и волк будут вашим концом.#!"
+ POD_combat_move_werewolf_song_of_mockery: "@galliard_icon!Песнь насмешки"
+ POD_combat_move_werewolf_song_of_mockery_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_song_of_mockery')]"
+ POD_combat_move_werewolf_song_of_mockery_tooltip: "#weak;italic Чтобы высмеять другого в песне, нужно немалое мастерство. То, которого вам явно недостаёт.#!"
+
+ ######### Philodox
+ POD_combat_move_werewolf_curse_the_betrayer: "@philodox_icon!Проклятие предателя"
+ POD_combat_move_werewolf_curse_the_betrayer_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_curse_the_betrayer')]"
+ POD_combat_move_werewolf_curse_the_betrayer_tooltip: "#weak;italic Предавший рано или поздно сам станет жертвой предательства.#!"
+ POD_combat_move_werewolf_wisdom_of_the_ancient_ways: "@philodox_icon!Мудрость древних путей"
+ POD_combat_move_werewolf_wisdom_of_the_ancient_ways_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_wisdom_of_the_ancient_ways')]"
+ POD_combat_move_werewolf_wisdom_of_the_ancient_ways_tooltip: "#weak;italic Мистические знания наших предков могут дать нам очень многое.#!"
+
+ ######### Ragabash
+ POD_combat_move_werewolf_taking_the_forgotten: "@ragabash_icon!Присвоить забытое"
+ POD_combat_move_werewolf_taking_the_forgotten_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_taking_the_forgotten')]"
+ POD_combat_move_werewolf_taking_the_forgotten_tooltip: "#weak;italic Золото имеет тенденцию внезапно появляться в моих руках. Странная вещь.#!"
+ POD_combat_move_werewolf_umbral_dodge: "@ragabash_icon!Умбральное уклонение"
+ POD_combat_move_werewolf_umbral_dodge_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_umbral_dodge')]"
+ POD_combat_move_werewolf_umbral_dodge_tooltip: "#weak;italic Умбра защищает меня от вреда, но защитит ли она тебя?#!"
+
+
+ ######### Theurge
+ POD_combat_move_werewolf_name_the_spirit: "@theurge_icon!Назвать духа"
+ POD_combat_move_werewolf_name_the_spirit_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_name_the_spirit')]"
+ POD_combat_move_werewolf_name_the_spirit_tooltip: "#weak;italic Имена обладают огромной силой, и я знаю их немало.#!"
+ POD_combat_move_werewolf_spirit_vessel: "@theurge_icon!Сосуд духа"
+ POD_combat_move_werewolf_spirit_vessel_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_spirit_vessel')]"
+ POD_combat_move_werewolf_spirit_vessel_tooltip: "#weak;italic Мои когти — молнии, моё дыхание — огонь, мои челюсти — сокрушительный прилив. Какие шансы у неверной дворняги?#!"
+
+
+ ######### Tribe Black Fury
+ POD_combat_move_werewolf_bow_of_pegasus: "@werewolf_icon!Лук Пегаса"
+ POD_combat_move_werewolf_bow_of_pegasus_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_bow_of_pegasus')]"
+ POD_combat_move_werewolf_bow_of_pegasus_tooltip: "#weak;italic Пегас защищает, но он также атакует.#!"
+
+ ######### Tribe Bone Gnawer
+ POD_combat_move_werewolf_survivor: "@werewolf_icon!Выживший"
+ POD_combat_move_werewolf_survivor_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_survivor')]"
+ POD_combat_move_werewolf_survivor_tooltip: "#weak;italic Меня не смогли убить ни яд, ни чума, ни раны.#!"
+
+ ######### Tribe Child of Gaia
+ POD_combat_move_werewolf_dazzle: "@werewolf_icon!Ослепление"
+ POD_combat_move_werewolf_dazzle_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_dazzle')]"
+ POD_combat_move_werewolf_dazzle_tooltip: "#weak;italic Такое великолепное зрелище, вам не кажется?#!"
+
+ ######### Tribe Get of Fenris
+ POD_combat_move_werewolf_visage_of_fenris: "@werewolf_icon!Облик Фенрира"
+ POD_combat_move_werewolf_visage_of_fenris_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_visage_of_fenris')]"
+ POD_combat_move_werewolf_visage_of_fenris_tooltip: "#weak;italic Знаете, кто страшнее волка? Ещё больший волк.#!"
+ POD_combat_move_werewolf_might_of_thor: "@werewolf_icon!Могущество Тора"
+ POD_combat_move_werewolf_might_of_thor_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_might_of_thor')]"
+ POD_combat_move_werewolf_might_of_thor_tooltip: "#weak;italic Тор здесь.#!"
+
+ ######### Tribe Fianna
+ POD_combat_move_werewolf_warriors_draught: "@werewolf_icon!Напиток воина"
+ POD_combat_move_werewolf_warriors_draught_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_warriors_draught')]"
+ POD_combat_move_werewolf_warriors_draught_tooltip: "#weak;italic Выпьем, чтобы унять страх перед грядущей смертью.#!"
+
+ ######### Tribe Red Talon
+ POD_combat_move_werewolf_beastmind: "@werewolf_icon!Звериный разум"
+ POD_combat_move_werewolf_beastmind_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_beastmind')]"
+ POD_combat_move_werewolf_beastmind_tooltip: "#weak;italic У всех нас есть дикая сторона, примите её.#!"
+ POD_combat_move_werewolf_gaias_vengeance: "@werewolf_icon!Месть Геи"
+ POD_combat_move_werewolf_gaias_vengeance_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_gaias_vengeance')]"
+ POD_combat_move_werewolf_gaias_vengeance_tooltip: "#weak;italic Природа всегда находит выход.#!"
+
+ ######### Tribe Shadow Lord
+ POD_combat_move_werewolf_fatal_flaw: "@werewolf_icon!Роковая слабость"
+ POD_combat_move_werewolf_fatal_flaw_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_fatal_flaw')]"
+ POD_combat_move_werewolf_fatal_flaw_tooltip: "#weak;italic Я знаю о тебе тайны, о которых даже ты не знаешь.#!"
+
+ ######### Tribe Silent Strider
+ POD_combat_move_werewolf_fleet_footed: "@werewolf_icon!Быстрые ноги"
+ POD_combat_move_werewolf_fleet_footed_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_fleet_footed')]"
+ POD_combat_move_werewolf_fleet_footed_tooltip: "#weak;italic Мне довелось пробежать через целые континенты. Думаешь, сможешь поспеть за мной?#!"
+
+ ######### Tribe Silver Fang
+ POD_combat_move_werewolf_eye_of_falcon: "@werewolf_icon!Глаз сокола"
+ POD_combat_move_werewolf_eye_of_falcon_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_eye_of_falcon')]"
+ POD_combat_move_werewolf_eye_of_falcon_tooltip: "#weak;italic Как иголка в стоге сена.#!"
+
+ ######### Tribe Warder of Men
+ POD_combat_move_werewolf_artisans_command: "@werewolf_icon!Веление мастера"
+ POD_combat_move_werewolf_artisans_command_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_artisans_command')]"
+ POD_combat_move_werewolf_artisans_command_tooltip: "#weak;italic Представьте, что вас ударил собственный меч. А теперь смотрите, как это происходит.#!"
+
+ ######### Tribe Black Spiral Dancer
+ POD_combat_move_werewolf_summon_wyrm_elemental: "@werewolf_icon!Призыв элементаля Вирма"
+ POD_combat_move_werewolf_summon_wyrm_elemental_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_summon_wyrm_elemental')]"
+ POD_combat_move_werewolf_summon_wyrm_elemental_tooltip: "#weak;italic Даже стихии склоняются: столь славен [Glossary('Вирм', 'glossary_wyrm_tt')].#!"
+ POD_combat_move_werewolf_balefire: "@werewolf_icon!Жертвенное пламя"
+ POD_combat_move_werewolf_balefire_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_balefire')]"
+ POD_combat_move_werewolf_balefire_tooltip: "#weak;italic Дар нашего хозяина — и твоя гибель. Трепещи: пламя [Glossary('Гидры', 'glossary_wyrm_tt')] поглотит тебя.#!"
+
+ ######### Tribe Hakken
+ POD_combat_move_werewolf_storm_winds_slash: "@werewolf_icon!Хлыст штормового ветра"
+ POD_combat_move_werewolf_storm_winds_slash_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_storm_winds_slash')]"
+ POD_combat_move_werewolf_storm_winds_slash_tooltip: "#weak;italic Ветер — всего лишь продолжение клинка Хаккен.#!"
+ POD_combat_move_werewolf_divine_wind: "@werewolf_icon!Божественный ветер"
+ POD_combat_move_werewolf_divine_wind_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_divine_wind')]"
+ POD_combat_move_werewolf_divine_wind_tooltip: "#weak;italic Нару-ками презирает слабость, поэтому мы стали сильными. Но ты, ты столкнёшься с его гневом.#!"
+
+ ######### Tribe White Howler
+ POD_combat_move_werewolf_white_fire: "@werewolf_icon!Белое пламя"
+ POD_combat_move_werewolf_white_fire_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_white_fire')]"
+ POD_combat_move_werewolf_white_fire_tooltip: "#weak;italic Вы будете очищены огнём нашего искупления!#!"
+ POD_combat_move_werewolf_howl_of_healing: "@werewolf_icon!Исцеляющий вой"
+ POD_combat_move_werewolf_howl_of_healing_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_howl_of_healing')]"
+ POD_combat_move_werewolf_howl_of_healing_tooltip: "#weak;italic Мы не воем от боли, а ты будешь.#!"
+
+ ######### Tribe Uktena
+ POD_combat_move_werewolf_banish_totem: "@werewolf_icon!Изгоняющий тотем"
+ POD_combat_move_werewolf_banish_totem_desc: "[PODCombatMoveDesc('POD_combat_move_werewolf_banish_totem')]"
+ POD_combat_move_werewolf_banish_totem_tooltip: "#weak;italic Общение с духами требует соответствующих знаний и этикета. Поэтому я вежливо попрошу их уйти.#!"
+
+
+
+ ######### Innate Bastet
+ POD_combat_move_bastet_padaa: "@bastet_icon!Падаа"
+ POD_combat_move_bastet_padaa_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_padaa')]"
+ POD_combat_move_bastet_padaa_tooltip: "#weak;italic Наши чувства и понимание мира обострились благодаря Матери Кошек.#!"
+ POD_combat_move_bastet_feline_grace: "@bastet_icon!Кошачья грация"
+ POD_combat_move_bastet_feline_grace_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_feline_grace')]"
+ POD_combat_move_bastet_feline_grace_tooltip: "#weak;italic Никто не двигается так грациозно, как бастет!#!"
+ POD_combat_move_bastet_predators_pounce: "@bastet_icon!Прыжок хищника"
+ POD_combat_move_bastet_predators_pounce_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_predators_pounce')]"
+ POD_combat_move_bastet_predators_pounce_tooltip: "#weak;italic Прыгните по воздуху с кошачьей грацией.#!"
+
+ ######### Bastet Common
+ POD_combat_move_bastet_silent_stalking: "@bastet_icon!Безмолвное преследование"
+ POD_combat_move_bastet_silent_stalking_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_silent_stalking')]"
+ POD_combat_move_bastet_silent_stalking_tooltip: "#weak;italic Двигайтесь незримо и неслышно.#!"
+ POD_combat_move_bastet_shriek: "@bastet_icon!Визг"
+ POD_combat_move_bastet_shriek_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_shriek')]"
+ POD_combat_move_bastet_shriek_tooltip: "#weak;italic Издать мощный вопль, чтобы дезориентировать и оглушить врага.#!"
+ POD_combat_move_bastet_nights_passage: "@bastet_icon!Ночной переход"
+ POD_combat_move_bastet_nights_passage_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_nights_passage')]"
+ POD_combat_move_bastet_nights_passage_tooltip: "#weak;italic Тьма скроет меня, скроет от глаз врага.#!"
+ POD_combat_move_bastet_withering_stare: "@bastet_icon!Утомлённый взгляд"
+ POD_combat_move_bastet_withering_stare_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_withering_stare')]"
+ POD_combat_move_bastet_withering_stare_tooltip: "#weak;italic У могущественного бастет даже взгляд может убить.#!"
+
+ ######### Bastet Homid Gifts
+ POD_combat_move_bastet_cat_claws: "@bastet_icon!Кошачьи когти"
+ POD_combat_move_bastet_cat_claws_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_cat_claws')]"
+ POD_combat_move_bastet_cat_claws_tooltip: "#weak;italic Отрастите настоящие когти на своих человеческих руках.#!"
+ POD_combat_move_bastet_madness: "@bastet_icon!Безумие"
+ POD_combat_move_bastet_madness_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_madness')]"
+ POD_combat_move_bastet_madness_tooltip: "#weak;italic Заставьте свою цель противостоять её собственным внутренним демонам.#!"
+
+ ######### Bastet Feline-born Gifts
+ POD_combat_move_bastet_killers_leap: "@bastet_icon!Прыжок убийцы"
+ POD_combat_move_bastet_killers_leap_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_killers_leap')]"
+ POD_combat_move_bastet_killers_leap_tooltip: "#weak;italic С помощью духов совершите прыжок, почти перелетев к своей цели.#!"
+ POD_combat_move_bastet_underbelly: "@bastet_icon!Подбрюшье"
+ POD_combat_move_bastet_underbelly_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_underbelly')]"
+ POD_combat_move_bastet_underbelly_tooltip: "#weak;italic Слушайте духов, которые подскажут вам, куда ударить врага.#!"
+ POD_combat_move_bastet_revolt_of_land: "@bastet_icon!Восстание земли"
+ POD_combat_move_bastet_revolt_of_land_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_revolt_of_land')]"
+ POD_combat_move_bastet_revolt_of_land_tooltip: "#weak;italic Сами камни, почва и корни будут удерживать вашего врага на месте.#!"
+
+ ######### Tribe Bagheera
+ POD_combat_move_bastet_ojas_surge: "@bastet_icon!Волна Оджаса"
+ POD_combat_move_bastet_ojas_surge_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_ojas_surge')]"
+ POD_combat_move_bastet_ojas_surge_tooltip: "#weak;italic Здесь необходимы медитация и сосредоточенность. Духи направят меня.#!"
+ POD_combat_move_bastet_cobras_dance: "@bastet_icon!Танец кобр"
+ POD_combat_move_bastet_cobras_dance_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_cobras_dance')]"
+ POD_combat_move_bastet_cobras_dance_tooltip: "#weak;italic Этому трюку меня научил змеиный дух. Танцуй, дубина!#!"
+ POD_combat_move_bastet_paradox_of_time: "@bastet_icon!Парадокс времени"
+ POD_combat_move_bastet_paradox_of_time_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_paradox_of_time')]"
+ POD_combat_move_bastet_paradox_of_time_tooltip: "#weak;italic Я буду растягивать и складывать ткань времени, пока мой враг не сможет даже стоять.#!"
+
+ ######### Tribe Bubasti
+ POD_combat_move_bastet_spirit_barrier: "@bastet_icon!Духовный барьер"
+ POD_combat_move_bastet_spirit_barrier_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_spirit_barrier')]"
+ POD_combat_move_bastet_spirit_barrier_tooltip: "#weak;italic Я огражу это место от всех духов.#!"
+ POD_combat_move_bastet_banish_cahlash_brood: "@bastet_icon!Изгнать выводок Кахлаша"
+ POD_combat_move_bastet_banish_cahlash_brood_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_banish_cahlash_brood')]"
+ POD_combat_move_bastet_banish_cahlash_brood_tooltip: "#weak;italic Прочь, тёмный дух! Возвращайся туда, откуда пришёл!#!"
+
+ ######### Tribe Ceilican
+ POD_combat_move_bastet_sorcerers_blade: "@bastet_icon!Клинок чародея"
+ POD_combat_move_bastet_sorcerers_blade_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_sorcerers_blade')]"
+ POD_combat_move_bastet_sorcerers_blade_tooltip: "#weak;italic Пусть мой клинок режет глубже любого когтя...#!"
+ POD_combat_move_bastet_phantasm: "@bastet_icon!Фантазм"
+ POD_combat_move_bastet_phantasm_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_phantasm')]"
+ POD_combat_move_bastet_phantasm_tooltip: "#weak;italic Подвергни сомнению всю свою реальность, исчадие!#!"
+
+ ######### Tribe Khan
+ POD_combat_move_bastet_rhinos_favor: "@bastet_icon!Благосклонность носорога"
+ POD_combat_move_bastet_rhinos_favor_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_rhinos_favor')]"
+ POD_combat_move_bastet_rhinos_favor_tooltip: "#weak;italic Иногда лучший путь лежит через врага!#!"
+ POD_combat_move_bastet_skin_of_jade: "@bastet_icon!Нефритовая кожа"
+ POD_combat_move_bastet_skin_of_jade_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_skin_of_jade')]"
+ POD_combat_move_bastet_skin_of_jade_tooltip: "#weak;italic Меня не поколебать, как камень.#!"
+ POD_combat_move_bastet_spirit_tiger_paws: "@bastet_icon!Лапы яростного духа-тигра"
+ POD_combat_move_bastet_spirit_tiger_paws_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_spirit_tiger_paws')]"
+ POD_combat_move_bastet_spirit_tiger_paws_tooltip: "#weak;italic Я ударю тебя сквозь барьер, откуда ты не сможешь ответить.#!"
+ POD_combat_move_bastet_dragonroar: "@bastet_icon!Рёв дракона"
+ POD_combat_move_bastet_dragonroar_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_dragonroar')]"
+ POD_combat_move_bastet_dragonroar_tooltip: "#weak;italic Я охвачу их пламенем духовной мести.#!"
+
+ ######### Tribe Simba
+ POD_combat_move_bastet_majesty: "@bastet_icon!Величие"
+ POD_combat_move_bastet_majesty_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_majesty')]"
+ POD_combat_move_bastet_majesty_tooltip: "#weak;italic Ты не можешь меня ударить! Моё совершенство не позволит!#!"
+ POD_combat_move_bastet_submit: "@bastet_icon!Подчинение"
+ POD_combat_move_bastet_submit_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_submit')]"
+ POD_combat_move_bastet_submit_tooltip: "#weak;italic Подчинись, глупец! Я царь зверей!#!"
+ POD_combat_move_bastet_sun_claws: "@bastet_icon!Солнечные когти"
+ POD_combat_move_bastet_sun_claws_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_sun_claws')]"
+ POD_combat_move_bastet_sun_claws_tooltip: "#weak;italic Мои когти горят от ярости Гелиоса. Ни одна пиявка не устоит передо мной.#!"
+ POD_combat_move_bastet_obedience: "@bastet_icon!Послушание"
+ POD_combat_move_bastet_obedience_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_obedience')]"
+ POD_combat_move_bastet_obedience_tooltip: "#weak;italic Мой авторитет абсолютен. Все будут подчиняться мне.#!"
+
+ ######### Tribe Swara
+ POD_combat_move_bastet_diamond_claws: "@bastet_icon!Алмазные когти"
+ POD_combat_move_bastet_diamond_claws_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_diamond_claws')]"
+ POD_combat_move_bastet_diamond_claws_tooltip: "#weak;italic Мои когти режут и сталь, и плоть... стоит лишь немного их заточить.#!"
+ POD_combat_move_bastet_impalas_flight: "@bastet_icon!Полёт импалы"
+ POD_combat_move_bastet_impalas_flight_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_impalas_flight')]"
+ POD_combat_move_bastet_impalas_flight_tooltip: "#weak;italic Стремительно, как ветер, быстрее мысли.#!"
+ POD_combat_move_bastet_ghost_caress: "@bastet_icon!Призрачная ласка"
+ POD_combat_move_bastet_ghost_caress_desc: "[PODCombatMoveDesc('POD_combat_move_bastet_ghost_caress')]"
+ POD_combat_move_bastet_ghost_caress_tooltip: "#weak;italic Враги не смогут доверять своим чувствам, они будут винить призраков.#!"
+
+ ######### Innate Mokole
+ POD_combat_move_mokole_archid_req: " Ваша форма Архид должна иметь "
+ POD_combat_move_mokole_horn_rush: "@mokole_icon!Удар рогом"
+ POD_combat_move_mokole_horn_rush_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_horn_rush')]"
+ POD_combat_move_mokole_horn_rush_tooltip: "#weak;italic Рог — простое, но эффективное оружие. Прямо к делу.#!"
+ pod_combat_move_mokole_horn_rush_unlock_trigger_tooltip: "$POD_combat_move_mokole_archid_req$[GetModifier('archid_horn_modifier').GetNameWithTooltip]"
+ POD_combat_move_mokole_threatening_display: "@mokole_icon!Угрожающий вид"
+ POD_combat_move_mokole_threatening_display_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_threatening_display')]"
+ POD_combat_move_mokole_threatening_display_tooltip: "#weak;italic Сам облик моколе уже ужасает, а когда он начинает угрожать — тем более.#!"
+ pod_combat_move_mokole_threatening_display_unlock_trigger_tooltip: "$POD_combat_move_mokole_archid_req$[GetModifier('archid_neck_frill_modifier').GetNameWithTooltip]"
+ POD_combat_move_mokole_tail_smash: "@mokole_icon!Удар хвостом"
+ POD_combat_move_mokole_tail_smash_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_tail_smash')]"
+ POD_combat_move_mokole_tail_smash_tooltip: "#weak;italic Больше похоже на булаву, чем на хвост, вот только эта булава размером с человека.#!"
+ pod_combat_move_mokole_tail_smash_unlock_trigger_tooltip: "$POD_combat_move_mokole_archid_req$[GetModifier('archid_tail_club_modifier').GetNameWithTooltip]"
+ POD_combat_move_mokole_spiked_carapace: "@mokole_icon!Шипастый панцирь"
+ POD_combat_move_mokole_spiked_carapace_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_spiked_carapace')]"
+ POD_combat_move_mokole_spiked_carapace_tooltip: "#weak;italic Как будто пробиться сквозь толстую шкуру моколе было недостаточно сложно, теперь она покрыта гигантскими шипами!#!"
+ pod_combat_move_mokole_spiked_carapace_unlock_trigger_tooltip: "$POD_combat_move_mokole_archid_req$[GetModifier('archid_thorns_modifier').GetNameWithTooltip]"
+ POD_combat_move_mokole_dragon_slash: "@mokole_icon!Удар дракона"
+ POD_combat_move_mokole_dragon_slash_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_dragon_slash')]"
+ POD_combat_move_mokole_dragon_slash_tooltip: "#weak;italic Узри мощь королей-ящеров!#!"
+
+ ######### Mokole Common
+ POD_combat_move_mokole_dragonfear: "@mokole_icon!Драконий страх"
+ POD_combat_move_mokole_dragonfear_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_dragonfear')]"
+ POD_combat_move_mokole_dragonfear_tooltip: "#weak;italic Многие мечтают стать героем, убивающим дракона, но это не мечта.#!"
+ POD_combat_move_mokole_dragons_breath: "@mokole_icon!Дыхание дракона"
+ POD_combat_move_mokole_dragons_breath_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_dragons_breath')]"
+ POD_combat_move_mokole_dragons_breath_tooltip: "#weak;italic В вашем дыхании разгорается огонь. Что вы сожжёте? Что пощадите?#!"
+
+ ######### Stream Mokole-mbembe
+ POD_combat_move_mokole_silver_claws: "@mokole_icon!Серебряные когти"
+ POD_combat_move_mokole_silver_claws_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_silver_claws')]"
+ POD_combat_move_mokole_silver_claws_tooltip: "#weak;italic Гару почувствуют боль своих жертв—[Glossary('aера', 'glossary_fera_tt')]. Но даже у мести есть цена.#!"
+ POD_combat_move_mokole_bark_mudpuppy: "@mokole_icon!Лай грязевого щенка"
+ POD_combat_move_mokole_bark_mudpuppy_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_bark_mudpuppy')]"
+ POD_combat_move_mokole_bark_mudpuppy_tooltip: "#weak;italic Простой крик, и ваш враг будет разорван на части.#!"
+ POD_combat_move_mokole_heat_wave: "@mokole_icon!Волна жара"
+ POD_combat_move_mokole_heat_wave_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_heat_wave')]"
+ POD_combat_move_mokole_heat_wave_tooltip: "#weak;italic Вызвать гнев Солнца — значит сгореть под его огнем.#!"
+
+ ######### Stream Gumagan
+ POD_combat_move_mokole_nightmare_mnesis: "@mokole_icon!Кошмарный Мнезис"
+ POD_combat_move_mokole_nightmare_mnesis_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_nightmare_mnesis')]"
+ POD_combat_move_mokole_nightmare_mnesis_tooltip: "#weak;italic Моколе помнят всё, даже забытые кошмары. Теперь и их враги тоже.#!"
+
+ ######### Stream Makara
+ POD_combat_move_mokole_waxwork_monster: "@mokole_icon!Восковое чудовище"
+ POD_combat_move_mokole_waxwork_monster_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_waxwork_monster')]"
+ POD_combat_move_mokole_waxwork_monster_tooltip: "#weak;italic Динозавров не существует. Так на кого ты нападаешь?#!"
+
+ ######### Stream Zhong Lung
+ POD_combat_move_mokole_clap_of_thunder: "@mokole_icon!Раскат грома"
+ POD_combat_move_mokole_clap_of_thunder_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_clap_of_thunder')]"
+ POD_combat_move_mokole_clap_of_thunder_tooltip: "#weak;italic Звонкие звуки грома возвещают о приходе дракона.#!"
+ POD_combat_move_mokole_dragons_tongue: "@mokole_icon!Язык дракона"
+ POD_combat_move_mokole_dragons_tongue_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_dragons_tongue')]"
+ POD_combat_move_mokole_dragons_tongue_tooltip: "#weak;italic Детям Уани достаточно воззвать — и Небеса ответят.#!"
+
+ ######### Solar Rising Sun
+ POD_combat_move_mokole_might_of_kings: "@mokole_icon!Могущество королей"
+ POD_combat_move_mokole_might_of_kings_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_might_of_kings')]"
+ POD_combat_move_mokole_might_of_kings_tooltip: "#weak;italic Моколе правили ещё до того, как появились эти щенки. Сила – наше право.#!"
+ POD_combat_move_mokole_wall_of_granite: "@mokole_icon!Гранитная стена"
+ POD_combat_move_mokole_wall_of_granite_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_wall_of_granite')]"
+ POD_combat_move_mokole_wall_of_granite_tooltip: "#weak;italic Мы создали земли, по которым вы ходите. Позвольте нам показать вам, как это сделать.#!"
+
+ ######### Solar Noonday Sun
+ POD_combat_move_mokole_tame_sunbeam: "@mokole_icon!Укрощение солнечных лучей"
+ POD_combat_move_mokole_tame_sunbeam_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_tame_sunbeam')]"
+ POD_combat_move_mokole_tame_sunbeam_tooltip: "#weak;italic Ты чувствуешь это? Благословенное тепло Солнца?#!"
+ POD_combat_move_mokole_raptors_gaze: "@mokole_icon!Взгляд раптора"
+ POD_combat_move_mokole_raptors_gaze_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_raptors_gaze')]"
+ POD_combat_move_mokole_raptors_gaze_tooltip: "#weak;italic Если на вас положил глаз хищник, было бы разумно бежать.#!"
+
+ ######### Solar Setting Sun
+ POD_combat_move_mokole_clenched_jaw: "@mokole_icon!Стиснутая челюсть"
+ POD_combat_move_mokole_clenched_jaw_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_clenched_jaw')]"
+ POD_combat_move_mokole_clenched_jaw_tooltip: "#weak;italic Как ни старайся, от челюстей моколе не уйти.#!"
+ POD_combat_move_mokole_halo_of_the_sun: "@mokole_icon!Солнечный ореол"
+ POD_combat_move_mokole_halo_of_the_sun_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_halo_of_the_sun')]"
+ POD_combat_move_mokole_halo_of_the_sun_tooltip: "#weak;italic [Glossary('Владыка-Солнце', 'glossary_helios_tt')] выжжет тьму своим светом.#!"
+
+ ######### Solar Midnight Sun
+ POD_combat_move_mokole_invisibility: "@mokole_icon!Невидимость"
+ POD_combat_move_mokole_invisibility_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_invisibility')]"
+ POD_combat_move_mokole_invisibility_tooltip: "#weak;italic Моколе предпочитают сражаться лицом к лицу. Но иногда требуется небольшая хитрость.#!"
+
+ ######### Solar Shrouded Sun
+ POD_combat_move_mokole_call_water_spirit: "@mokole_icon!Призыв духа воды"
+ POD_combat_move_mokole_call_water_spirit_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_call_water_spirit')]"
+ POD_combat_move_mokole_call_water_spirit_tooltip: "#weak;italic Узри силу чистых вод!#!"
+
+ ######### Solar Decorated Sun
+ POD_combat_move_mokole_pack_tactics: "@mokole_icon!Тактика стаи"
+ POD_combat_move_mokole_pack_tactics_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_pack_tactics')]"
+ POD_combat_move_mokole_pack_tactics_tooltip: "#weak;italic Каждый моколе — разрушительный зверь. Если им удастся работать вместе, что ж, удачи.#!"
+
+ ######### Solar Eclipsed Sun
+ POD_combat_move_mokole_lambent_flame: "@mokole_icon!Сверкающее пламя"
+ POD_combat_move_mokole_lambent_flame_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_lambent_flame')]"
+ POD_combat_move_mokole_lambent_flame_tooltip: "#weak;italic [Glossary('Гелиос', 'glossary_helios_tt')] осветит любое укрытие: нет такой глубокой норы, где они могли бы спрятаться от его света.#!"
+ POD_combat_move_mokole_sun_enfleshed: "@mokole_icon!Солнечная плоть"
+ POD_combat_move_mokole_sun_enfleshed_desc: "[PODCombatMoveDesc('POD_combat_move_mokole_sun_enfleshed')]"
+ POD_combat_move_mokole_sun_enfleshed_tooltip: "#weak;italic Пусть его святое пламя охватит вас, пусть очистит ваше тело, пусть сожжёт ваших врагов. Вам оно не причинит вреда, ведь [Glossary('Владыка-Солнце', 'glossary_helios_tt')] — ваш отец.#!"
+
+ ######### Sorcery of Alchemy
+ POD_combat_move_sorcery_alchemy_painkiller: "@sorcerer_icon!Обезболивающее"
+ POD_combat_move_sorcery_alchemy_painkiller_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_alchemy_painkiller')]"
+ POD_combat_move_sorcery_alchemy_painkiller_tooltip: "#weak;italic Напиток в дорогу... а заодно и защита от любого вреда.#!"
+ POD_combat_move_sorcery_alchemy_revealing_dust: "@sorcerer_icon!Выявляющая пыль"
+ POD_combat_move_sorcery_alchemy_revealing_dust_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_alchemy_revealing_dust')]"
+ POD_combat_move_sorcery_alchemy_revealing_dust_tooltip: "#weak;italic Невидимость - это не очень справедливо, не так ли?#!"
+ POD_combat_move_sorcery_alchemy_metabolic_accelerator: "@sorcerer_icon!Метаболический ускоритель"
+ POD_combat_move_sorcery_alchemy_metabolic_accelerator_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_alchemy_metabolic_accelerator')]"
+ POD_combat_move_sorcery_alchemy_metabolic_accelerator_tooltip: "#weak;italic Всё движется так медленно... включая тебя, «друг».#!"
+ POD_combat_move_sorcery_alchemy_fireburst_shot: "@sorcerer_icon!Огненный выстрел"
+ POD_combat_move_sorcery_alchemy_fireburst_shot_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_alchemy_fireburst_shot')]"
+ POD_combat_move_sorcery_alchemy_fireburst_shot_tooltip: "#weak;italic Огонь действительно горячий, вам не кажется?#!"
+
+ ######### Sorcery of Conjuration
+ POD_combat_move_sorcery_conjuration_invisible_hand: "@sorcerer_icon!Невидимая рука"
+ POD_combat_move_sorcery_conjuration_invisible_hand_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_conjuration_invisible_hand')]"
+ POD_combat_move_sorcery_conjuration_invisible_hand_tooltip: "#weak;italic Бросьте во врага что-нибудь. Результат зависит от того, что именно вы бросите.#!"
+ POD_combat_move_sorcery_conjuration_shitstorm: "@sorcerer_icon!Дерьмовая буря"
+ POD_combat_move_sorcery_conjuration_shitstorm_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_conjuration_shitstorm')]"
+ POD_combat_move_sorcery_conjuration_shitstorm_tooltip: "#weak;italic Ну и дерьмовая же буря.#!"
+ POD_combat_move_sorcery_conjuration_extraction: "@sorcerer_icon!Извлечение"
+ POD_combat_move_sorcery_conjuration_extraction_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_conjuration_extraction')]"
+ POD_combat_move_sorcery_conjuration_extraction_tooltip: "#weak;italic УКЛОНЯЙСЯ!#!"
+
+ ######### Sorcery of Conveyance
+ POD_combat_move_sorcery_conveyance_blink_step: "@sorcerer_icon!Мгновенный шаг"
+ POD_combat_move_sorcery_conveyance_blink_step_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_conveyance_blink_step')]"
+ POD_combat_move_sorcery_conveyance_blink_step_tooltip: "#weak;italic Они моргнут — а вы уже далеко.#!"
+ POD_combat_move_sorcery_conveyance_spatial_dislocation: "@sorcerer_icon!Пространственное смещение"
+ POD_combat_move_sorcery_conveyance_spatial_dislocation_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_conveyance_spatial_dislocation')]"
+ POD_combat_move_sorcery_conveyance_spatial_dislocation_tooltip: "#weak;italic Они не ожидают, что их перенесут на другой край поля боя. Тем хуже для них.#!"
+
+ ######### Sorcery of Divination
+ POD_combat_move_sorcery_divination_foreseen_opening: "@sorcerer_icon!Предвиденная брешь"
+ POD_combat_move_sorcery_divination_foreseen_opening_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_divination_foreseen_opening')]"
+ POD_combat_move_sorcery_divination_foreseen_opening_tooltip: "#weak;italic Вы видите всё! Ну, хотя бы в ближайшей округе.#!"
+ POD_combat_move_sorcery_divination_avert_the_omen: "@sorcerer_icon!Отвратить предзнаменование"
+ POD_combat_move_sorcery_divination_avert_the_omen_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_divination_avert_the_omen')]"
+ POD_combat_move_sorcery_divination_avert_the_omen_tooltip: "#weak;italic Командная работа делает мечту реальностью, поэтому убедитесь, что ваша команда остается жива.#!"
+
+ ######### Sorcery of Ephemera
+ POD_combat_move_sorcery_ephemera_spirit_sight: "@sorcerer_icon!Духовное зрение"
+ POD_combat_move_sorcery_ephemera_spirit_sight_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_ephemera_spirit_sight')]"
+ POD_combat_move_sorcery_ephemera_spirit_sight_tooltip: "#weak;italic Вы видите их, прячущихся в тенях. Теперь обратите тени против них.#!"
+ POD_combat_move_sorcery_ephemera_strike_across_the_gauntlet: "@sorcerer_icon!Удар сквозь Барьер"
+ POD_combat_move_sorcery_ephemera_strike_across_the_gauntlet_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_ephemera_strike_across_the_gauntlet')]"
+ POD_combat_move_sorcery_ephemera_strike_across_the_gauntlet_tooltip: "#weak;italic Идеальный упреждающий удар. Враг не заметит вас: вы буквально явитесь из другого измерения.#!"
+
+ ######### Sorcery of Enchantment
+ POD_combat_move_sorcery_enchantment_ward_amulet: "@sorcerer_icon!Амулет-оберег"
+ POD_combat_move_sorcery_enchantment_ward_amulet_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_enchantment_ward_amulet')]"
+ POD_combat_move_sorcery_enchantment_ward_amulet_tooltip: "#weak;italic Маленькая безделушка с великой силой. Возможно, она даже спасёт вам жизнь.#!"
+ POD_combat_move_sorcery_enchantment_moonlit_salve: "@sorcerer_icon!Лунная мазь"
+ POD_combat_move_sorcery_enchantment_moonlit_salve_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_enchantment_moonlit_salve')]"
+ POD_combat_move_sorcery_enchantment_moonlit_salve_tooltip: "#weak;italic Сила луны в склянке, исцеляющая нуждающихся.#!"
+ POD_combat_move_sorcery_enchantment_ghost_slaying_blade: "@sorcerer_icon!Клинок истребителя призраков"
+ POD_combat_move_sorcery_enchantment_ghost_slaying_blade_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_enchantment_ghost_slaying_blade')]"
+ POD_combat_move_sorcery_enchantment_ghost_slaying_blade_tooltip: "#weak;italic На случай, если соседский призрак все-таки не такой дружелюбный.#!"
+ POD_combat_move_sorcery_enchantment_amulet_of_protection: "@sorcerer_icon!Амулет защиты"
+ POD_combat_move_sorcery_enchantment_amulet_of_protection_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_enchantment_amulet_of_protection')]"
+ POD_combat_move_sorcery_enchantment_amulet_of_protection_tooltip: "#weak;italic Ваша подготовка не напрасна. Эти безделушки не просто декоративны.#!"
+
+ ######### Sorcery of Fascination
+ POD_combat_move_sorcery_fascination_command_attention: "@sorcerer_icon!Завладеть вниманием"
+ POD_combat_move_sorcery_fascination_command_attention_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_fascination_command_attention')]"
+ POD_combat_move_sorcery_fascination_command_attention_tooltip: "#weak;italic Они чувствуют боль, просто взглянув на вас, не говоря уже о попытках напасть на вас.#!"
+ POD_combat_move_sorcery_fascination_beguiling_doubt: "@sorcerer_icon!Обманчивое сомнение"
+ POD_combat_move_sorcery_fascination_beguiling_doubt_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_fascination_beguiling_doubt')]"
+ POD_combat_move_sorcery_fascination_beguiling_doubt_tooltip: "#weak;italic Мы могли бы делать гораздо более интересные вещи, чем драться...#!"
+ POD_combat_move_sorcery_fascination_enthralling_command: "@sorcerer_icon!Порабощающий приказ"
+ POD_combat_move_sorcery_fascination_enthralling_command_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_fascination_enthralling_command')]"
+ POD_combat_move_sorcery_fascination_enthralling_command_tooltip: "#weak;italic Принимаю прямое управление.#!"
+
+ ######### Sorcery of Fortune
+ POD_combat_move_sorcery_fortune_fortunes_favor: "@sorcerer_icon!Благосклонность Фортуны"
+ POD_combat_move_sorcery_fortune_fortunes_favor_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_fortune_fortunes_favor')]"
+ POD_combat_move_sorcery_fortune_fortunes_favor_tooltip: "#weak;italic Ради этого боя мне удалось соблазнить госпожу Удачу.#!"
+ POD_combat_move_sorcery_fortune_jinx: "@sorcerer_icon!Сглаз"
+ POD_combat_move_sorcery_fortune_jinx_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_fortune_jinx')]"
+ POD_combat_move_sorcery_fortune_jinx_tooltip: "#weak;italic Мало что можно сделать, сражаясь с самой судьбой.#!"
+ POD_combat_move_sorcery_fortune_calamity: "@sorcerer_icon!Бедствие"
+ POD_combat_move_sorcery_fortune_calamity_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_fortune_calamity')]"
+ POD_combat_move_sorcery_fortune_calamity_tooltip: "#weak;italic Худший день в их жизни пришёлся на вашу схватку. Любопытно.#!"
+
+ ######### Sorcery of Healing
+ POD_combat_move_sorcery_healing_battle_dressing: "@sorcerer_icon!Боевая перевязка"
+ POD_combat_move_sorcery_healing_battle_dressing_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_healing_battle_dressing')]"
+ POD_combat_move_sorcery_healing_battle_dressing_tooltip: "#weak;italic «Медицина» не сравнится со старым добрым магическим исцелением.#!"
+ POD_combat_move_sorcery_healing_jolt: "@sorcerer_icon!Толчок"
+ POD_combat_move_sorcery_healing_jolt_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_healing_jolt')]"
+ POD_combat_move_sorcery_healing_jolt_tooltip: "#weak;italic Проникнутой магией ободряющей речи порой достаточно, чтобы союзники не помышляли о глупостях.#!"
+ POD_combat_move_sorcery_healing_miraculous_restoration: "@sorcerer_icon!Чудесное восстановление"
+ POD_combat_move_sorcery_healing_miraculous_restoration_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_healing_miraculous_restoration')]"
+ POD_combat_move_sorcery_healing_miraculous_restoration_tooltip: "#weak;italic Вот, всё как новенькое. А теперь обратно — получать новые раны.#!"
+
+ ######### Sorcery of Hellfire
+ POD_combat_move_sorcery_hellfire_bolt: "@sorcerer_icon!Стрела адского пламени"
+ POD_combat_move_sorcery_hellfire_bolt_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_hellfire_bolt')]"
+ POD_combat_move_sorcery_hellfire_bolt_tooltip: "#weak;italic Адское пламя прямо у вас под рукой.#!"
+ POD_combat_move_sorcery_hellfire_tanglewood: "@sorcerer_icon!Опутывающие заросли"
+ POD_combat_move_sorcery_hellfire_tanglewood_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_hellfire_tanglewood')]"
+ POD_combat_move_sorcery_hellfire_tanglewood_tooltip: "#weak;italic Теперь они не пошевелят и мускулом, пока вы не скажете.#!"
+ POD_combat_move_sorcery_hellfire_hellblade: "@sorcerer_icon!Адский клинок"
+ POD_combat_move_sorcery_hellfire_hellblade_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_hellfire_hellblade')]"
+ POD_combat_move_sorcery_hellfire_hellblade_tooltip: "#weak;italic Пылающие мечи всегда круче.#!"
+ POD_combat_move_sorcery_hellfire_purification_of_the_inferno: "@sorcerer_icon!Очищение ада"
+ POD_combat_move_sorcery_hellfire_purification_of_the_inferno_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_hellfire_purification_of_the_inferno')]"
+ POD_combat_move_sorcery_hellfire_purification_of_the_inferno_tooltip: "#weak;italic Теперь вас защищает сам ад. Только ангел сможет сразить вас.#!"
+
+ ######### Sorcery of Illusion
+ POD_combat_move_sorcery_illusion_false_opening: "@sorcerer_icon!Ложная брешь"
+ POD_combat_move_sorcery_illusion_false_opening_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_illusion_false_opening')]"
+ POD_combat_move_sorcery_illusion_false_opening_tooltip: "#weak;italic Мнимая брешь в защите, которую вы обращаете себе на пользу.#!"
+ POD_combat_move_sorcery_illusion_cruel_whispers: "@sorcerer_icon!Жестокий шёпот"
+ POD_combat_move_sorcery_illusion_cruel_whispers_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_illusion_cruel_whispers')]"
+ POD_combat_move_sorcery_illusion_cruel_whispers_tooltip: "#weak;italic Чрезмерная самоуверенность – медленный и коварный убийца.#!"
+ POD_combat_move_sorcery_illusion_hard_light_cover: "@sorcerer_icon!Укрытие из твёрдого света"
+ POD_combat_move_sorcery_illusion_hard_light_cover_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_illusion_hard_light_cover')]"
+ POD_combat_move_sorcery_illusion_hard_light_cover_tooltip: "#weak;italic Когда иллюзия обретает плотность, исход уже не предугадать.#!"
+
+ ######### Sorcery of Necromancy
+ POD_combat_move_sorcery_necromancy_deaths_visage: "@sorcerer_icon!Лик смерти"
+ POD_combat_move_sorcery_necromancy_deaths_visage_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_necromancy_deaths_visage')]"
+ POD_combat_move_sorcery_necromancy_deaths_visage_tooltip: "#weak;italic Ужас их существования наконец открылся им.#!"
+ POD_combat_move_sorcery_necromancy_compel_the_restless: "@sorcerer_icon!Подчинить неупокоенных"
+ POD_combat_move_sorcery_necromancy_compel_the_restless_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_necromancy_compel_the_restless')]"
+ POD_combat_move_sorcery_necromancy_compel_the_restless_tooltip: "#weak;italic Это будет захватывающая, захватывающая ночь.#!"
+ POD_combat_move_sorcery_necromancy_steal_life: "@sorcerer_icon!Украсть жизнь"
+ POD_combat_move_sorcery_necromancy_steal_life_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_necromancy_steal_life')]"
+ POD_combat_move_sorcery_necromancy_steal_life_tooltip: "#weak;italic Вампиры позавидовали бы такой эффективности кражи жизни.#!"
+
+ ######### Sorcery of Quintessence Manipulation
+ POD_combat_move_sorcery_quintessence_infused_motion: "@sorcerer_icon!Наполненное энергией движение"
+ POD_combat_move_sorcery_quintessence_infused_motion_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_quintessence_infused_motion')]"
+ POD_combat_move_sorcery_quintessence_infused_motion_tooltip: "#weak;italic Похоже, ваш ход всё ещё продолжается.#!"
+ POD_combat_move_sorcery_quintessence_disrupt_the_flow: "@sorcerer_icon!Нарушить поток"
+ POD_combat_move_sorcery_quintessence_disrupt_the_flow_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_quintessence_disrupt_the_flow')]"
+ POD_combat_move_sorcery_quintessence_disrupt_the_flow_tooltip: "#weak;italic Твой ход? Нет, всё ещё моя ход.#!"
+ POD_combat_move_sorcery_quintessence_rule_the_flow: "@sorcerer_icon!Управление потоком"
+ POD_combat_move_sorcery_quintessence_rule_the_flow_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_quintessence_rule_the_flow')]"
+ POD_combat_move_sorcery_quintessence_rule_the_flow_tooltip: "#weak;italic Сам воздух словно на вашей стороне, помогая вам и вашим союзникам удерживать преимущество в бою.#!"
+
+ ######### Sorcery of Shadows
+ POD_combat_move_sorcery_shadows_shadow_veil: "@sorcerer_icon!Теневая завеса"
+ POD_combat_move_sorcery_shadows_shadow_veil_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_shadows_shadow_veil')]"
+ POD_combat_move_sorcery_shadows_shadow_veil_tooltip: "#weak;italic Здравствуй, тьма, мой старый друг.#!"
+ POD_combat_move_sorcery_shadows_grip_of_shades: "@sorcerer_icon!Захват теней"
+ POD_combat_move_sorcery_shadows_grip_of_shades_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_shadows_grip_of_shades')]"
+ POD_combat_move_sorcery_shadows_grip_of_shades_tooltip: "#weak;italic Борьба с тенями трудна, и это доказывает ваш сбитый с толку противник.#!"
+ POD_combat_move_sorcery_shadows_commanding_shadows: "@sorcerer_icon!Повелевание тенями"
+ POD_combat_move_sorcery_shadows_commanding_shadows_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_shadows_commanding_shadows')]"
+ POD_combat_move_sorcery_shadows_commanding_shadows_tooltip: "#weak;italic Как они смогут наносить удары, когда неестественная тьма окутывает поле битвы?#!"
+ POD_combat_move_sorcery_shadows_ruling_darkness: "@sorcerer_icon!Владычество тьмы"
+ POD_combat_move_sorcery_shadows_ruling_darkness_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_shadows_ruling_darkness')]"
+ POD_combat_move_sorcery_shadows_ruling_darkness_tooltip: "#weak;italic И в конце... останется только тьма.#!"
+
+ ######### Sorcery of Shapeshifting
+ POD_combat_move_sorcery_shapeshifting_bestial_talons: "@sorcerer_icon!Звериные когти"
+ POD_combat_move_sorcery_shapeshifting_bestial_talons_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_shapeshifting_bestial_talons')]"
+ POD_combat_move_sorcery_shapeshifting_bestial_talons_tooltip: "#weak;italic Когти всегда пригодятся в бою. Только не забудьте после убрать их.#!"
+ POD_combat_move_sorcery_shapeshifting_borrowed_scales: "@sorcerer_icon!Заимствованная чешуя"
+ POD_combat_move_sorcery_shapeshifting_borrowed_scales_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_shapeshifting_borrowed_scales')]"
+ POD_combat_move_sorcery_shapeshifting_borrowed_scales_tooltip: "#weak;italic Если у рептилий были такие хорошие доспехи, неудивительно, что они правили миром в древние времена.#!"
+ POD_combat_move_sorcery_shapeshifting_predators_eyes: "@sorcerer_icon!Глаза хищника"
+ POD_combat_move_sorcery_shapeshifting_predators_eyes_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_shapeshifting_predators_eyes')]"
+ POD_combat_move_sorcery_shapeshifting_predators_eyes_tooltip: "#weak;italic Ни один человек не сможет приручить хищника, действуя как добыча.#!"
+
+ ######### Sorcery of Weather Control
+ POD_combat_move_sorcery_weather_obscuring_fog: "@sorcerer_icon!Скрывающий туман"
+ POD_combat_move_sorcery_weather_obscuring_fog_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_weather_obscuring_fog')]"
+ POD_combat_move_sorcery_weather_obscuring_fog_tooltip: "#weak;italic Они больше никогда не увидят ясного неба.#!"
+ POD_combat_move_sorcery_weather_crosswind: "@sorcerer_icon!Боковой ветер"
+ POD_combat_move_sorcery_weather_crosswind_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_weather_crosswind')]"
+ POD_combat_move_sorcery_weather_crosswind_tooltip: "#weak;italic Невидимый, но могущественный союзник.#!"
+ POD_combat_move_sorcery_weather_call_lightning: "@sorcerer_icon!Призыв молнии"
+ POD_combat_move_sorcery_weather_call_lightning_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_weather_call_lightning')]"
+ POD_combat_move_sorcery_weather_call_lightning_tooltip: "#weak;italic Гром, прислушайся к моему зову!#!"
+ POD_combat_move_sorcery_weather_tempest_unleashed: "@sorcerer_icon!Необузданная буря"
+ POD_combat_move_sorcery_weather_tempest_unleashed_desc: "[PODCombatMoveDesc('POD_combat_move_sorcery_weather_tempest_unleashed')]"
+ POD_combat_move_sorcery_weather_tempest_unleashed_tooltip: "#weak;italic Конец наступил в яростных громах и молниях.#!"
+
+ ######### Psychic Anti-Psi
+ POD_combat_move_psychic_mind_shield: "@psychic_icon!Щит разума"
+ POD_combat_move_psychic_mind_shield_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_mind_shield')]"
+ POD_combat_move_psychic_mind_shield_tooltip: "#weak;italic Ваш разум не дворец, это крепость.#!"
+ POD_combat_move_psychic_interference: "@psychic_icon!Психическое подавление"
+ POD_combat_move_psychic_interference_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_interference')]"
+ POD_combat_move_psychic_interference_tooltip: "#weak;italic Время обыскать их чертоги разума.#!"
+ POD_combat_move_psychic_null_field: "@psychic_icon!Поле подавления"
+ POD_combat_move_psychic_null_field_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_null_field')]"
+ POD_combat_move_psychic_null_field_tooltip: "#weak;italic Тихая мелодия в голове, которая никак не умолкнет.#!"
+
+ ######### Psychic Biocontrol
+ POD_combat_move_psychic_biocontrol_mindfulness: "@psychic_icon!Осознанность"
+ POD_combat_move_psychic_biocontrol_mindfulness_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_biocontrol_mindfulness')]"
+ POD_combat_move_psychic_biocontrol_mindfulness_tooltip: "#weak;italic Функции вашего организма достаточно замедлились, чтобы их усилить.#!"
+ POD_combat_move_psychic_biocontrol_adrenal_surge: "@psychic_icon!Прилив адреналина"
+ POD_combat_move_psychic_biocontrol_adrenal_surge_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_biocontrol_adrenal_surge')]"
+ POD_combat_move_psychic_biocontrol_adrenal_surge_tooltip: "#weak;italic Время действовать быстро!#!"
+ POD_combat_move_psychic_biocontrol_toggle_nerves: "@psychic_icon!Управление нервами"
+ POD_combat_move_psychic_biocontrol_toggle_nerves_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_biocontrol_toggle_nerves')]"
+ POD_combat_move_psychic_biocontrol_toggle_nerves_tooltip: "#weak;italic И впрямь всего лишь царапина.#!"
+ POD_combat_move_psychic_biocontrol_biological_mastery: "@psychic_icon!Биологическое мастерство"
+ POD_combat_move_psychic_biocontrol_biological_mastery_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_biocontrol_biological_mastery')]"
+ POD_combat_move_psychic_biocontrol_biological_mastery_tooltip: "#weak;italic Регенерация — это всего лишь концепция, которую вы превзошли.#!"
+
+ ######### Psychic Channeling
+ POD_combat_move_psychic_channeling_borrowed_battlecraft: "@psychic_icon!Заимствованное боевое мастерство"
+ POD_combat_move_psychic_channeling_borrowed_battlecraft_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_channeling_borrowed_battlecraft')]"
+ POD_combat_move_psychic_channeling_borrowed_battlecraft_tooltip: "#weak;italic Теперь вы знаете кунг-фу.#!"
+ POD_combat_move_psychic_channeling_dead_masters_guard: "@psychic_icon!Защита мёртвого мастера"
+ POD_combat_move_psychic_channeling_dead_masters_guard_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_channeling_dead_masters_guard')]"
+ POD_combat_move_psychic_channeling_dead_masters_guard_tooltip: "#weak;italic Что бы сделали мастера прошлого? Пришло время спросить их.#!"
+ POD_combat_move_psychic_channeling_legion_of_dead_masters: "@psychic_icon!Легион мёртвых мастеров"
+ POD_combat_move_psychic_channeling_legion_of_dead_masters_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_channeling_legion_of_dead_masters')]"
+ POD_combat_move_psychic_channeling_legion_of_dead_masters_tooltip: "#weak;italic Опыт бесчисленных бойцов течёт сквозь вас. Как им с этим тягаться?#!"
+
+ ######### Psychic Clairvoyance
+ POD_combat_move_psychic_clairvoyance_sight_beyond_sight: "@psychic_icon!Видя незримое"
+ POD_combat_move_psychic_clairvoyance_sight_beyond_sight_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_clairvoyance_sight_beyond_sight')]"
+ POD_combat_move_psychic_clairvoyance_sight_beyond_sight_tooltip: "#weak;italic Я ви-и-ижу тебя.#!"
+
+ ######### Psychic Ectoplasmic Generation
+ POD_combat_move_psychic_ectoplasm_spirit_wrapped_blow: "@psychic_icon!Окутанный духом удар"
+ POD_combat_move_psychic_ectoplasm_spirit_wrapped_blow_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_ectoplasm_spirit_wrapped_blow')]"
+ POD_combat_move_psychic_ectoplasm_spirit_wrapped_blow_tooltip: "#weak;italic Удар прямо из другого измерения.#!"
+ POD_combat_move_psychic_ectoplasm_shroud: "@psychic_icon!Эктоплазматический покров"
+ POD_combat_move_psychic_ectoplasm_shroud_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_ectoplasm_shroud')]"
+ POD_combat_move_psychic_ectoplasm_shroud_tooltip: "#weak;italic Между двумя мирами, постоянно перемещаясь. Как им за вами уследить?#!"
+ POD_combat_move_psychic_ectoplasm_solid_fog: "@psychic_icon!Твёрдый туман"
+ POD_combat_move_psychic_ectoplasm_solid_fog_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_ectoplasm_solid_fog')]"
+ POD_combat_move_psychic_ectoplasm_solid_fog_tooltip: "#weak;italic Они не могут поразить то, чего не видят.#!"
+ POD_combat_move_psychic_ectoplasm_bulwark: "@psychic_icon!Эктоплазматический оплот"
+ POD_combat_move_psychic_ectoplasm_bulwark_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_ectoplasm_bulwark')]"
+ POD_combat_move_psychic_ectoplasm_bulwark_tooltip: "#weak;italic Если они хотят причинить вам вред, им придётся сначала пройти через другое измерение.#!"
+
+ ######### Psychic Precognition
+ POD_combat_move_psychic_precognition_danger_sense: "@psychic_icon!Чувство опасности"
+ POD_combat_move_psychic_precognition_danger_sense_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_precognition_danger_sense')]"
+ POD_combat_move_psychic_precognition_danger_sense_tooltip: "#weak;italic Совсем как паук.#!"
+ POD_combat_move_psychic_precognition_clarity: "@psychic_icon!Ясность"
+ POD_combat_move_psychic_precognition_clarity_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_precognition_clarity')]"
+ POD_combat_move_psychic_precognition_clarity_tooltip: "#weak;italic Путь к победе ясен как день.#!"
+ POD_combat_move_psychic_precognition_roads_of_time: "@psychic_icon!Дороги времени"
+ POD_combat_move_psychic_precognition_roads_of_time_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_precognition_roads_of_time')]"
+ POD_combat_move_psychic_precognition_roads_of_time_tooltip: "#weak;italic Наверняка есть хотя бы одна временная линия, где вы победите, правда?#!"
+
+ ######### Psychic Healing
+ POD_combat_move_psychic_healing_urgent_care: "@psychic_icon!Срочная помощь"
+ POD_combat_move_psychic_healing_urgent_care_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_healing_urgent_care')]"
+ POD_combat_move_psychic_healing_urgent_care_tooltip: "#weak;italic Всего лишь помощь раненым с помощью силы разума.#!"
+ POD_combat_move_psychic_healing_psychic_surgery: "@psychic_icon!Психическая хирургия"
+ POD_combat_move_psychic_healing_psychic_surgery_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_healing_psychic_surgery')]"
+ POD_combat_move_psychic_healing_psychic_surgery_tooltip: "#weak;italic Вы доктор. И им это не понравится.#!"
+
+ ######### Psychic Hypnosis
+ POD_combat_move_psychic_hypnosis_fast_trance: "@psychic_icon!Мгновенный транс"
+ POD_combat_move_psychic_hypnosis_fast_trance_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_hypnosis_fast_trance')]"
+ POD_combat_move_psychic_hypnosis_fast_trance_tooltip: "#weak;italic Медитация в мгновение ока.#!"
+
+ ######### Psychic Invisibility
+ POD_combat_move_psychic_invisibility_slink: "@psychic_icon!Ускользнуть"
+ POD_combat_move_psychic_invisibility_slink_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_invisibility_slink')]"
+ POD_combat_move_psychic_invisibility_slink_tooltip: "#weak;italic С глаз долой — из сердца вон. Но ненадолго.#!"
+ POD_combat_move_psychic_invisibility_never_here: "@psychic_icon!Меня здесь никогда не было"
+ POD_combat_move_psychic_invisibility_never_here_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_invisibility_never_here')]"
+ POD_combat_move_psychic_invisibility_never_here_tooltip: "#weak;italic Название этого хода — ложь.#!"
+
+ ######### Psychic Vampirism
+ POD_combat_move_psychic_vampirism_tap_energy: "@psychic_icon!Черпать энергию"
+ POD_combat_move_psychic_vampirism_tap_energy_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_vampirism_tap_energy')]"
+ POD_combat_move_psychic_vampirism_tap_energy_tooltip: "#weak;italic Надеюсь, им нечем восполнить запас.#!"
+ POD_combat_move_psychic_vampirism_invigorate: "@psychic_icon!Ободрить"
+ POD_combat_move_psychic_vampirism_invigorate_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_vampirism_invigorate')]"
+ POD_combat_move_psychic_vampirism_invigorate_tooltip: "#weak;italic Настоящий вампир-экстрасенс не тратит впустую украденное.#!"
+ POD_combat_move_psychic_vampirism_leech_vitality: "@psychic_icon!Высосать жизненную силу"
+ POD_combat_move_psychic_vampirism_leech_vitality_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_vampirism_leech_vitality')]"
+ POD_combat_move_psychic_vampirism_leech_vitality_tooltip: "#weak;italic Почему твоя рука такая холодная?#!"
+ POD_combat_move_psychic_vampirism_essence_feast: "@psychic_icon!Пир эссенции"
+ POD_combat_move_psychic_vampirism_essence_feast_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_vampirism_essence_feast')]"
+ POD_combat_move_psychic_vampirism_essence_feast_tooltip: "#weak;italic Оргия эмоционального разрушения, и ты маэстро.#!"
+
+ ######### Psychic Psychokinesis
+ POD_combat_move_psychic_psychokinesis_hurl_object: "@psychic_icon!Метнуть предмет"
+ POD_combat_move_psychic_psychokinesis_hurl_object_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_psychokinesis_hurl_object')]"
+ POD_combat_move_psychic_psychokinesis_hurl_object_tooltip: "#weak;italic Пока вокруг мусор, вы никогда не останетесь без оружия.#!"
+ POD_combat_move_psychic_psychokinesis_kinetic_blow: "@psychic_icon!Кинетический удар"
+ POD_combat_move_psychic_psychokinesis_kinetic_blow_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_psychokinesis_kinetic_blow')]"
+ POD_combat_move_psychic_psychokinesis_kinetic_blow_tooltip: "#weak;italic Сильный удар... даже если они не могут сказать, откуда он пришел.#!"
+ POD_combat_move_psychic_psychokinesis_levitation: "@psychic_icon!Левитация"
+ POD_combat_move_psychic_psychokinesis_levitation_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_psychokinesis_levitation')]"
+ POD_combat_move_psychic_psychokinesis_levitation_tooltip: "#weak;italic Эффектно и эффективно — основа арсенала любого героя, мечтающего стать супергероем.#!"
+ POD_combat_move_psychic_psychokinesis_lethal_force: "@psychic_icon!Смертельная сила"
+ POD_combat_move_psychic_psychokinesis_lethal_force_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_psychokinesis_lethal_force')]"
+ POD_combat_move_psychic_psychokinesis_lethal_force_tooltip: "#weak;italic Один удар, чтобы сжать время и пространство. И чужую грудную клетку.#!"
+
+ ######### Psychic Psychoportation
+ POD_combat_move_psychic_psychoportation_short_hop: "@psychic_icon!Короткий прыжок"
+ POD_combat_move_psychic_psychoportation_short_hop_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_psychoportation_short_hop')]"
+ POD_combat_move_psychic_psychoportation_short_hop_tooltip: "#weak;italic Это принесло бы вам медаль на древних Олимпийских играх.#!"
+ POD_combat_move_psychic_psychoportation_rescue_jump: "@psychic_icon!Спасательный прыжок"
+ POD_combat_move_psychic_psychoportation_rescue_jump_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_psychoportation_rescue_jump')]"
+ POD_combat_move_psychic_psychoportation_rescue_jump_tooltip: "#weak;italic Как героически. Лишь бы не сорваться по дороге вниз.#!"
+ POD_combat_move_psychic_psychoportation_forced_dislocation: "@psychic_icon!Насильственный вывих"
+ POD_combat_move_psychic_psychoportation_forced_dislocation_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_psychoportation_forced_dislocation')]"
+ POD_combat_move_psychic_psychoportation_forced_dislocation_tooltip: "#weak;italic Эта кость явно не должна там торчать. Ну да ладно.#!"
+
+ ######### Psychic Pyrokinesis
+ POD_combat_move_psychic_pyrokinesis_spark: "@psychic_icon!Искра"
+ POD_combat_move_psychic_pyrokinesis_spark_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_pyrokinesis_spark')]"
+ POD_combat_move_psychic_pyrokinesis_spark_tooltip: "#weak;italic Это трюк для вечеринки, но, по крайней мере, он может сбить с толку.#!"
+ POD_combat_move_psychic_pyrokinesis_combustion: "@psychic_icon!Горение"
+ POD_combat_move_psychic_pyrokinesis_combustion_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_pyrokinesis_combustion')]"
+ POD_combat_move_psychic_pyrokinesis_combustion_tooltip: "#weak;italic И заметьте, вовсе не самовозгорание.#!"
+ POD_combat_move_psychic_pyrokinesis_suns_fury: "@psychic_icon!Ярость солнца"
+ POD_combat_move_psychic_pyrokinesis_suns_fury_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_pyrokinesis_suns_fury')]"
+ POD_combat_move_psychic_pyrokinesis_suns_fury_tooltip: "#weak;italic Воздать хвалу солнцу можно и потом. Сначала сосредоточьтесь на схватке.#!"
+ POD_combat_move_psychic_pyrokinesis_inferno: "@psychic_icon!Инферно"
+ POD_combat_move_psychic_pyrokinesis_inferno_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_pyrokinesis_inferno')]"
+ POD_combat_move_psychic_pyrokinesis_inferno_tooltip: "#weak;italic Итальянские поэты напишут об этом приёме эпические поэмы.#!"
+
+ ######### Psychic Telepathy
+ POD_combat_move_psychic_telepathy_read_intent: "@psychic_icon!Прочитать намерение"
+ POD_combat_move_psychic_telepathy_read_intent_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_telepathy_read_intent')]"
+ POD_combat_move_psychic_telepathy_read_intent_tooltip: "#weak;italic Выпад левой? Как банально!#!"
+ POD_combat_move_psychic_telepathy_deep_probe: "@psychic_icon!Глубокий зонд"
+ POD_combat_move_psychic_telepathy_deep_probe_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_telepathy_deep_probe')]"
+ POD_combat_move_psychic_telepathy_deep_probe_tooltip: "#weak;italic Будьте осторожны, куда кладете этот зонд.#!"
+ POD_combat_move_psychic_telepathy_implanted_impulse: "@psychic_icon!Внушённый импульс"
+ POD_combat_move_psychic_telepathy_implanted_impulse_desc: "[PODCombatMoveDesc('POD_combat_move_psychic_telepathy_implanted_impulse')]"
+ POD_combat_move_psychic_telepathy_implanted_impulse_tooltip: "#weak;italic Оглянись! Трёхголовая обезьяна!#!"
+
+ ######### Innate Demon
+ POD_combat_move_demon_infernal_resolve: "@demon_icon!Инфернальная решимость"
+ POD_combat_move_demon_infernal_resolve_desc: "[PODCombatMoveDesc('POD_combat_move_demon_infernal_resolve')]"
+ POD_combat_move_demon_infernal_resolve_tooltip: "#weak;italic Вы видели Ад и пережили его. Есть ли у них такая же решимость?#!"
+ POD_combat_move_demon_mend_the_vessel: "@demon_icon!Исцелить сосуд"
+ POD_combat_move_demon_mend_the_vessel_desc: "[PODCombatMoveDesc('POD_combat_move_demon_mend_the_vessel')]"
+ POD_combat_move_demon_mend_the_vessel_tooltip: "#weak;italic Эти хрупкие носители едва выдерживают ваше величие. И всё же они вам нужны.#!"
+ POD_combat_move_demon_supernatural_awareness: "@demon_icon!Сверхъестественная бдительность"
+ POD_combat_move_demon_supernatural_awareness_desc: "[PODCombatMoveDesc('POD_combat_move_demon_supernatural_awareness')]"
+ POD_combat_move_demon_supernatural_awareness_tooltip: "#weak;italic Они не смогут скрыть от вас свои силы. Вы были там, когда они были созданы.#!"
+
+ ######### Demonic Arcana
+ POD_combat_move_demon_hardened_flesh: "@demon_icon!Закалённая плоть"
+ POD_combat_move_demon_hardened_flesh_desc: "[PODCombatMoveDesc('POD_combat_move_demon_hardened_flesh')]"
+ POD_combat_move_demon_hardened_flesh_tooltip: "#weak;italic Даруйте этому слабому носителю крупицу вашей божественной стойкости. Хочется верить, он не развалится раньше, чем исчерпает свою пользу.#!"
+ POD_combat_move_demon_shield_of_spite: "@demon_icon!Щит злобы"
+ POD_combat_move_demon_shield_of_spite_desc: "[PODCombatMoveDesc('POD_combat_move_demon_shield_of_spite')]"
+ POD_combat_move_demon_shield_of_spite_tooltip: "#weak;italic Ударить вас — это оскорбление самой божественности. Они научатся. Весьма болезненно.#!"
+ POD_combat_move_demon_spirit_strike: "@demon_icon!Духовный удар"
+ POD_combat_move_demon_spirit_strike_desc: "[PODCombatMoveDesc('POD_combat_move_demon_spirit_strike')]"
+ POD_combat_move_demon_spirit_strike_tooltip: "#weak;italic Ни одно существо и ни одно измерение не настолько далеки от Божьего Творения, чтобы вы не могли до них добраться.#!"
+ POD_combat_move_demon_healing_touch: "@demon_icon!Целительное прикосновение"
+ POD_combat_move_demon_healing_touch_desc: "[PODCombatMoveDesc('POD_combat_move_demon_healing_touch')]"
+ POD_combat_move_demon_healing_touch_tooltip: "#weak;italic Вы были первородным разрушением, но вы также были первозданным творением. Сама жизнь отвечает на ваш зов.#!"
+ POD_combat_move_demon_preternatural_reflexes: "@demon_icon!Сверхъестественные рефлексы"
+ POD_combat_move_demon_preternatural_reflexes_desc: "[PODCombatMoveDesc('POD_combat_move_demon_preternatural_reflexes')]"
+ POD_combat_move_demon_preternatural_reflexes_tooltip: "#weak;italic Какой удар они могут нанести, которого вы ещё не видели за бесконечные годы своего существования?#!"
+ POD_combat_move_demon_invisibility: "@demon_icon!Невидимость"
+ POD_combat_move_demon_invisibility_desc: "[PODCombatMoveDesc('POD_combat_move_demon_invisibility')]"
+ POD_combat_move_demon_invisibility_tooltip: "#weak;italic Их глаза никогда не были настроены на присутствие такого божественного существа.#!"
+ POD_combat_move_demon_damage_immunity: "@demon_icon!Невосприимчивость к повреждениям"
+ POD_combat_move_demon_damage_immunity_desc: "[PODCombatMoveDesc('POD_combat_move_demon_damage_immunity')]"
+ POD_combat_move_demon_damage_immunity_tooltip: "#weak;italic Они надеялись сразить вас. Убедитесь, что они понимают правду.#!"
+ POD_combat_move_demon_speed_of_thought: "@demon_icon!Скорость мысли"
+ POD_combat_move_demon_speed_of_thought_desc: "[PODCombatMoveDesc('POD_combat_move_demon_speed_of_thought')]"
+ POD_combat_move_demon_speed_of_thought_tooltip: "#weak;italic Время — всего лишь конструкция. Созданная вами конструкция.#!"
+ POD_combat_move_demon_inhuman_strength: "@demon_icon!Нечеловеческая сила"
+ POD_combat_move_demon_inhuman_strength_desc: "[PODCombatMoveDesc('POD_combat_move_demon_inhuman_strength')]"
+ POD_combat_move_demon_inhuman_strength_tooltip: "#weak;italic Ваше предназначение — быть сильнейшим существом Мироздания. Даже части этой силы будет достаточно, чтобы закончить битву.#!"
+ POD_combat_move_demon_celestial_radiance: "@demon_icon!Небесное сияние"
+ POD_combat_move_demon_celestial_radiance_desc: "[PODCombatMoveDesc('POD_combat_move_demon_celestial_radiance')]"
+ POD_combat_move_demon_celestial_radiance_tooltip: "#weak;italic Однокрылый ангел спускается на поле боя. Восхищайтесь и отчаивайтесь.#!"
+ POD_combat_move_demon_lash_of_anguish: "@demon_icon!Мучительный удар"
+ POD_combat_move_demon_lash_of_anguish_desc: "[PODCombatMoveDesc('POD_combat_move_demon_lash_of_anguish')]"
+ POD_combat_move_demon_lash_of_anguish_tooltip: "#weak;italic Всего лишь малая доля тех мук, что вы пережили в Аду. Но и её хватит, чтобы свести их с ума.#!"
+
+ ######### Lore of the World
+ POD_combat_move_demon_manipulate_inertia: "@demon_icon!Манипулирование инерцией"
+ POD_combat_move_demon_manipulate_inertia_desc: "[PODCombatMoveDesc('POD_combat_move_demon_manipulate_inertia')]"
+ POD_combat_move_demon_manipulate_inertia_tooltip: "#weak;italic Когда-то сама ткань мира подчинялась вам. Разве жалкий закон физики может вам помешать?#!"
+ POD_combat_move_demon_manipulate_cohesion: "@demon_icon!Манипулирование сцеплением"
+ POD_combat_move_demon_manipulate_cohesion_desc: "[PODCombatMoveDesc('POD_combat_move_demon_manipulate_cohesion')]"
+ POD_combat_move_demon_manipulate_cohesion_tooltip: "#weak;italic Вы однажды создали Творение. Вы можете его разрушить.#!"
+
+ ######### Lore of Corruption
+ POD_combat_move_demon_reality_tremors: "@demon_icon!Дрожь реальности"
+ POD_combat_move_demon_reality_tremors_desc: "[PODCombatMoveDesc('POD_combat_move_demon_reality_tremors')]"
+ POD_combat_move_demon_reality_tremors_tooltip: "#weak;italic Логике и разуму нет места на поле битвы, по которому вы идёте. Это всего лишь конструкции слабых умов, пытающихся понять Творение.#!"
+ POD_combat_move_demon_wave_of_mutilation: "@demon_icon!Волна искажения"
+ POD_combat_move_demon_wave_of_mutilation_desc: "[PODCombatMoveDesc('POD_combat_move_demon_wave_of_mutilation')]"
+ POD_combat_move_demon_wave_of_mutilation_tooltip: "#weak;italic Они думают, что познали боль и мучения. Они ошибаются.#!"
+
+ ######### Lore of the Herald
+ POD_combat_move_demon_command_the_flame: "@demon_icon!Повелевание пламенем"
+ POD_combat_move_demon_command_the_flame_desc: "[PODCombatMoveDesc('POD_combat_move_demon_command_the_flame')]"
+ POD_combat_move_demon_command_the_flame_tooltip: "#weak;italic Огонь был инструментом, использованным для самого Творения. Для вас это так же естественно, как дыхание для этих слабых смертных.#!"
+ POD_combat_move_demon_hand_of_faith: "@demon_icon!Длань веры"
+ POD_combat_move_demon_hand_of_faith_desc: "[PODCombatMoveDesc('POD_combat_move_demon_hand_of_faith')]"
+ POD_combat_move_demon_hand_of_faith_tooltip: "#weak;italic Вы отказываетесь принимать удары от столь низшего существа. И потому они вас не касаются.#!"
+
+ ######### Lore of the Life-Bringer
+ POD_combat_move_demon_cleanse: "@demon_icon!Очищение"
+ POD_combat_move_demon_cleanse_desc: "[PODCombatMoveDesc('POD_combat_move_demon_cleanse')]"
+ POD_combat_move_demon_cleanse_tooltip: "#weak;italic Их слабые тела для вас всего лишь глина. Ваше милосердие - их спасение.#!"
+ POD_combat_move_demon_wall_of_air: "@demon_icon!Стена воздуха"
+ POD_combat_move_demon_wall_of_air_desc: "[PODCombatMoveDesc('POD_combat_move_demon_wall_of_air')]"
+ POD_combat_move_demon_wall_of_air_tooltip: "#weak;italic Крылья света уносят вас далеко от опасности.#!"
+
+ ######### Lore of Creation
+ POD_combat_move_demon_earth_meld: "@demon_icon!Слияние с землёй"
+ POD_combat_move_demon_earth_meld_desc: "[PODCombatMoveDesc('POD_combat_move_demon_earth_meld')]"
+ POD_combat_move_demon_earth_meld_tooltip: "#weak;italic Сама земля подчиняется вам. Ведь она помнит своего создателя.#!"
+ POD_combat_move_demon_alter_path: "@demon_icon!Изменение пути"
+ POD_combat_move_demon_alter_path_desc: "[PODCombatMoveDesc('POD_combat_move_demon_alter_path')]"
+ POD_combat_move_demon_alter_path_tooltip: "#weak;italic Лабиринт реальности слишком сложен для их узкого ума.#!"
+
+ ######### Lore of the Seer
+ POD_combat_move_demon_foresee: "@demon_icon!Предвидение"
+ POD_combat_move_demon_foresee_desc: "[PODCombatMoveDesc('POD_combat_move_demon_foresee')]"
+ POD_combat_move_demon_foresee_tooltip: "#weak;italic Вы всё это видели. Даже мелочность Бога не сможет скрыть от вас будущее.#!"
+ POD_combat_move_demon_illusion: "@demon_icon!Иллюзия"
+ POD_combat_move_demon_illusion_desc: "[PODCombatMoveDesc('POD_combat_move_demon_illusion')]"
+ POD_combat_move_demon_illusion_tooltip: "#weak;italic Это действительно иллюзия или их разум слишком мал, чтобы понять?#!"
+
+ ######### Lore of Beauty
+ POD_combat_move_demon_inspire: "@demon_icon!Вдохновение"
+ POD_combat_move_demon_inspire_desc: "[PODCombatMoveDesc('POD_combat_move_demon_inspire')]"
+ POD_combat_move_demon_inspire_tooltip: "#weak;italic Когда-то вам подчинялись целые ангельские легионы. Разве трудно после этого вдохновить одного носителя?#!"
+ POD_combat_move_demon_command_the_storm: "@demon_icon!Повелевание бурей"
+ POD_combat_move_demon_command_the_storm_desc: "[PODCombatMoveDesc('POD_combat_move_demon_command_the_storm')]"
+ POD_combat_move_demon_command_the_storm_tooltip: "#weak;italic Смертные были правы, опасаясь небес. Божественный гнев всегда исходил свыше.#!"
+
+ ######### Lore of the Living
+ POD_combat_move_demon_manipulate_flesh: "@demon_icon!Манипулирование плотью"
+ POD_combat_move_demon_manipulate_flesh_desc: "[PODCombatMoveDesc('POD_combat_move_demon_manipulate_flesh')]"
+ POD_combat_move_demon_manipulate_flesh_tooltip: "#weak;italic Плоть так слаба, так хрупка, но она вам всё ещё нужна.#!"
+ POD_combat_move_demon_command_the_wild: "@demon_icon!Повелевание природой"
+ POD_combat_move_demon_command_the_wild_desc: "[PODCombatMoveDesc('POD_combat_move_demon_command_the_wild')]"
+ POD_combat_move_demon_command_the_wild_tooltip: "#weak;italic Райский сад не был лишен шипов.#!"
+
+ ######### Lore of the Ethereal
+ POD_combat_move_demon_command_the_dead: "@demon_icon!Повелевание мёртвыми"
+ POD_combat_move_demon_command_the_dead_desc: "[PODCombatMoveDesc('POD_combat_move_demon_command_the_dead')]"
+ POD_combat_move_demon_command_the_dead_tooltip: "#weak;italic Когда-то призраки были в ведении вашего рода. С тех пор вы ещё сохранили над ними власть.#!"
+ POD_combat_move_demon_extinguish_life: "@demon_icon!Погашение жизни"
+ POD_combat_move_demon_extinguish_life_desc: "[PODCombatMoveDesc('POD_combat_move_demon_extinguish_life')]"
+ POD_combat_move_demon_extinguish_life_tooltip: "#weak;italic Жнец — это не просто смертный миф. Это их подсознание помнит давний божественный долг вашего рода.#!"
+
+ ######### Innate Kuei-jin
+ POD_combat_move_kueijin_bite: "@kueijin_icon!Укус голодного мертвеца"
+ POD_combat_move_kueijin_bite_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_bite')]"
+ POD_combat_move_kueijin_bite_tooltip: "#weak;italic Не самый просветлённый способ сражаться, но порой действенность важнее изящества.#!"
+ POD_combat_move_kueijin_chi_surge: "@kueijin_icon!Прилив ци"
+ POD_combat_move_kueijin_chi_surge_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_chi_surge')]"
+ POD_combat_move_kueijin_chi_surge_tooltip: "#weak;italic Внезапный всплеск ци для получения преимущества в критический момент, долг, который нужно выплатить позже.#!"
+ POD_combat_move_kueijin_chi_mending: "@kueijin_icon!Исцеление ци"
+ POD_combat_move_kueijin_chi_mending_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_chi_mending')]"
+ POD_combat_move_kueijin_chi_mending_tooltip: "#weak;italic Сами энергии жизни исцеляют ваше мёртвое тело.#!"
+
+ ######### Feng Shui
+ POD_combat_move_kueijin_harmonious_wards: "@kueijin_icon!Harmonious Wards"
+ POD_combat_move_kueijin_harmonious_wards_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_harmonious_wards')]"
+ POD_combat_move_kueijin_harmonious_wards_tooltip: "#weak;italic Choosing the battlefield is half the battle. If not possible, you can always change it to your liking.#!" 
+ POD_combat_move_kueijin_hand_of_darkness: "@kueijin_icon!Hand of Darkness"
+ POD_combat_move_kueijin_hand_of_darkness_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_hand_of_darkness')]"
+ POD_combat_move_kueijin_hand_of_darkness_tooltip: "#weak;italic Luck isn't on their side. They only have their bad life decision of fighting you to blame.#!" 
+
+ ######### Obligation
+ POD_combat_move_kueijin_soul_bridge: "@kueijin_icon!Soul Bridge"
+ POD_combat_move_kueijin_soul_bridge_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_soul_bridge')]"
+ POD_combat_move_kueijin_soul_bridge_tooltip: "#weak;italic Good, let fear and anger consume you...#!" 
+ POD_combat_move_kueijin_voice_of_emperor: "@kueijin_icon!Voice of the Emperor"
+ POD_combat_move_kueijin_voice_of_emperor_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_voice_of_emperor')]"
+ POD_combat_move_kueijin_voice_of_emperor_tooltip: "#weak;italic You braved the very Hells to come back and reach the Hundred Clouds. Who are they to dare standing in your path?#!" 
+
+ ######### Tapestry
+ POD_combat_move_kueijin_chi_shaping: "@kueijin_icon!Chi Shaping"
+ POD_combat_move_kueijin_chi_shaping_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_chi_shaping')]"
+ POD_combat_move_kueijin_chi_shaping_tooltip: "#weak;italic The very energy of the land bursts from your command, tearing apart anything in its path.#!" 
+ POD_combat_move_kueijin_ride_the_dragon: "@kueijin_icon!Ride the Dragon"
+ POD_combat_move_kueijin_ride_the_dragon_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_ride_the_dragon')]"
+ POD_combat_move_kueijin_ride_the_dragon_tooltip: "#weak;italic You are always one step ahead. They can't compete against a master of the Chi lines.#!" 
+
+ ######### Prana
+ POD_combat_move_kueijin_accentuate_chi: "@kueijin_icon!Accentuate Chi"
+ POD_combat_move_kueijin_accentuate_chi_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_accentuate_chi')]"
+ POD_combat_move_kueijin_accentuate_chi_tooltip: "#weak;italic The balance of their body is realigned by your intervention, mending bruises and wounds in the process.#!" 
+ POD_combat_move_kueijin_yin_nihilus: "@kueijin_icon!Yin Nihilus"
+ POD_combat_move_kueijin_yin_nihilus_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_yin_nihilus')]"
+ POD_combat_move_kueijin_yin_nihilus_tooltip: "#weak;italic The energies of death slow down your foe to a crawl, leaving them vulnerable to your righteous assault.#!" 
+
+ ######### Kiai
+ POD_combat_move_kueijin_battle_cry: "@kueijin_icon!Battle Cry"
+ POD_combat_move_kueijin_battle_cry_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_battle_cry')]"
+ POD_combat_move_kueijin_battle_cry_tooltip: "#weak;italic As a banshee from the very Hells, your voice strikes their body and soul.#!" 
+ POD_combat_move_kueijin_greater_ngilai: "@kueijin_icon!Greater Ngilai"
+ POD_combat_move_kueijin_greater_ngilai_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_greater_ngilai')]"
+ POD_combat_move_kueijin_greater_ngilai_tooltip: "#weak;italic Courage and bravery are easily shattered when confronted by an otherworldly scream such as this.#!" 
+
+ ######### Tzu Wei
+ POD_combat_move_kueijin_grand_dukes_theorem: "@kueijin_icon!Grand Duke's Theorem"
+ POD_combat_move_kueijin_grand_dukes_theorem_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_grand_dukes_theorem')]"
+ POD_combat_move_kueijin_grand_dukes_theorem_tooltip: "#weak;italic Fate is a but a book to decipher. You know your destiny doesn't end here.#!" 
+ POD_combat_move_kueijin_celestial_curse: "@kueijin_icon!Celestial Curse"
+ POD_combat_move_kueijin_celestial_curse_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_celestial_curse')]"
+ POD_combat_move_kueijin_celestial_curse_tooltip: "#weak;italic Their vain struggle is fated to end here. You have decided it.#!" 
+
+ ######### Devil Fist
+ POD_combat_move_kueijin_infernal_might: "@kueijin_icon!Infernal Might"
+ POD_combat_move_kueijin_infernal_might_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_infernal_might')]"
+ POD_combat_move_kueijin_infernal_might_tooltip: "#weak;italic The demon is your enemy but it also wants to survive. Borrow its strength for the fight without remorse.#!" 
+ POD_combat_move_kueijin_devil_fist: "@kueijin_icon!Devil Fist"
+ POD_combat_move_kueijin_devil_fist_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_devil_fist')]"
+ POD_combat_move_kueijin_devil_fist_tooltip: "#weak;italic The demon is you without restraint, morality or remorse. It is who you should be during battle.#!" 
+
+ ######### Black Wind
+ POD_combat_move_kueijin_infernal_speed: "@kueijin_icon!Infernal Speed"
+ POD_combat_move_kueijin_infernal_speed_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_infernal_speed')]"
+ POD_combat_move_kueijin_infernal_speed_tooltip: "#weak;italic You managed to escape the very Hells, outrunning this foe will be child's play.#!" 
+ POD_combat_move_kueijin_black_wind: "@kueijin_icon!Black Wind"
+ POD_combat_move_kueijin_black_wind_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_black_wind')]"
+ POD_combat_move_kueijin_black_wind_tooltip: "#weak;italic A single strike is all you need.#!" 
+
+ ######### Iron Mountain
+ POD_combat_move_kueijin_infernal_fortitude: "@kueijin_icon!Infernal Fortitude"
+ POD_combat_move_kueijin_infernal_fortitude_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_infernal_fortitude')]"
+ POD_combat_move_kueijin_infernal_fortitude_tooltip: "#weak;italic The demon survived the Hells. It will help you survive this fight.#!" 
+ POD_combat_move_kueijin_striking_the_fire: "@kueijin_icon!Striking the Fire"
+ POD_combat_move_kueijin_striking_the_fire_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_striking_the_fire')]"
+ POD_combat_move_kueijin_striking_the_fire_tooltip: "#weak;italic Your very existence is proof of your extraordinary resilience. Tapping into this is a simple natural extension of your very nature.#!" 
+
+ ######### Demon Regalia
+ POD_combat_move_kueijin_infernal_glory: "@kueijin_icon!Infernal Glory"
+ POD_combat_move_kueijin_infernal_glory_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_infernal_glory')]"
+ POD_combat_move_kueijin_infernal_glory_tooltip: "#weak;italic Your true form is both demon and eternal champion. The feeble mind can't comprehend such unbalance.#!" 
+ POD_combat_move_kueijin_spiked_regalia: "@kueijin_icon!Spiked Regalia"
+ POD_combat_move_kueijin_spiked_regalia_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_spiked_regalia')]"
+ POD_combat_move_kueijin_spiked_regalia_tooltip: "#weak;italic The demon has a mind of its own and strikes wildly against those trying to harm its unwilling host.#!" 
+
+ ######### Ash and Flames Shintai
+ POD_combat_move_kueijin_fire_in_the_eye: "@kueijin_icon!Fire in the Eye"
+ POD_combat_move_kueijin_fire_in_the_eye_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_fire_in_the_eye')]"
+ POD_combat_move_kueijin_fire_in_the_eye_tooltip: "#weak;italic The very sight of the unholy flame is too much for the weak to bear.#!" 
+ POD_combat_move_kueijin_mantle_flame_emperor: "@kueijin_icon!Mantle of the Flame Emperor"
+ POD_combat_move_kueijin_mantle_flame_emperor_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_mantle_flame_emperor')]"
+ POD_combat_move_kueijin_mantle_flame_emperor_tooltip: "#weak;italic The Flame Emperor is both wisdom and folly. Its fire is a curse disguised as a blessing.#!" 
+
+ ######### Blood Shintai
+ POD_combat_move_kueijin_flow_like_blood: "@kueijin_icon!Flow Like Blood"
+ POD_combat_move_kueijin_flow_like_blood_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_flow_like_blood')]"
+ POD_combat_move_kueijin_flow_like_blood_tooltip: "#weak;italic A more edgy version of the \"Flow like Water\" move.#!" 
+ POD_combat_move_kueijin_bloodlash: "@kueijin_icon!Bloodlash"
+ POD_combat_move_kueijin_bloodlash_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_bloodlash')]"
+ POD_combat_move_kueijin_bloodlash_tooltip: "#weak;italic The Blood Shintai master is never without a weapon. Their very life essence is their deadliest tool.#!" 
+
+ ######### Bone Shintai
+ POD_combat_move_kueijin_relentless_bone: "@kueijin_icon!Relentless Bone"
+ POD_combat_move_kueijin_relentless_bone_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_relentless_bone')]"
+ POD_combat_move_kueijin_relentless_bone_tooltip: "#weak;italic Bones break. Those of your foe at least, you solved that problem for yourself long ago.#!" 
+ POD_combat_move_kueijin_skeletal_sculpting: "@kueijin_icon!Skeletal Sculpting"
+ POD_combat_move_kueijin_skeletal_sculpting_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_skeletal_sculpting')]"
+ POD_combat_move_kueijin_skeletal_sculpting_tooltip: "#weak;italic Their flesh and blood are merely decorations. You are the sculptor and tonight you are making a mess.#!" 
+
+ ######### Devotion Shintai
+ POD_combat_move_kueijin_flow_of_worship: "@kueijin_icon!Flow of Worship"
+ POD_combat_move_kueijin_flow_of_worship_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_flow_of_worship')]"
+ POD_combat_move_kueijin_flow_of_worship_tooltip: "#weak;italic As the Wan Xian of old, the worship of the masses empowers the lost champion of heaven.#!" 
+ POD_combat_move_kueijin_touch_of_asura: "@kueijin_icon!Touch of the Asura"
+ POD_combat_move_kueijin_touch_of_asura_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_touch_of_asura')]"
+ POD_combat_move_kueijin_touch_of_asura_tooltip: "#weak;italic Heroes rarely fight alone. Only in perfect teamwork can the mightiest foe be felled.#!" 
+
+ ######### Flesh Shintai
+ POD_combat_move_kueijin_long_neck: "@kueijin_icon!Long-Neck"
+ POD_combat_move_kueijin_long_neck_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_long_neck')]"
+ POD_combat_move_kueijin_long_neck_tooltip: "#weak;italic With your complete control over your limbs, no foe is ever out of reach. Yoga mastery isn't required.#!" 
+ POD_combat_move_kueijin_vital_command: "@kueijin_icon!The Vital Command"
+ POD_combat_move_kueijin_vital_command_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_vital_command')]"
+ POD_combat_move_kueijin_vital_command_tooltip: "#weak;italic The Shintai of Flesh requires tribute. As you help your allies, you make up the deficit with your own body.#!" 
+
+ ######### Illusion Shintai
+ POD_combat_move_kueijin_non_self: "@kueijin_icon!Non-Self"
+ POD_combat_move_kueijin_non_self_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_non_self')]"
+ POD_combat_move_kueijin_non_self_tooltip: "#weak;italic They can't strike what their mind refuses to acknowledge.#!" 
+ POD_combat_move_kueijin_rakshasa_blade: "@kueijin_icon!Rakshasa Blade"
+ POD_combat_move_kueijin_rakshasa_blade_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_rakshasa_blade')]"
+ POD_combat_move_kueijin_rakshasa_blade_tooltip: "#weak;italic The true master of the Shintai of Illusions knows that the greatest illusion is the one that stops being one.#!" 
+
+ ######### Jade Shintai
+ POD_combat_move_kueijin_stand_dragons_back: "@kueijin_icon!Stand Upon the Dragon's Back"
+ POD_combat_move_kueijin_stand_dragons_back_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_stand_dragons_back')]"
+ POD_combat_move_kueijin_stand_dragons_back_tooltip: "#weak;italic Jade isn't as fragile as people think. Its deep roots to the earth makes it the sturdiest of magical materials.#!" 
+ POD_combat_move_kueijin_jade_mantle: "@kueijin_icon!Jade Mantle"
+ POD_combat_move_kueijin_jade_mantle_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_jade_mantle')]"
+ POD_combat_move_kueijin_jade_mantle_tooltip: "#weak;italic The purview of the August Personage itself, jade is a divine structure. Striking it down is an affront to the Heavens themselves.#!" 
+
+ ######### Poxes Shintai
+ POD_combat_move_kueijin_hemorrhagic_strike: "@kueijin_icon!Hemorrhagic Strike"
+ POD_combat_move_kueijin_hemorrhagic_strike_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_hemorrhagic_strike')]"
+ POD_combat_move_kueijin_hemorrhagic_strike_tooltip: "#weak;italic A pox upon them as their life is slowly drained away by your diseased strike.#!" 
+ POD_combat_move_kueijin_wild_eyed_bulwark: "@kueijin_icon!Wild-Eyed Bulwark"
+ POD_combat_move_kueijin_wild_eyed_bulwark_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_wild_eyed_bulwark')]"
+ POD_combat_move_kueijin_wild_eyed_bulwark_tooltip: "#weak;italic The dead flesh gives way as a grotesque mess of diseased rebirth brings it back anew.#!" 
+
+ ######### Storms Shintai
+ POD_combat_move_kueijin_duke_of_wind: "@kueijin_icon!Conjure the Duke of Wind"
+ POD_combat_move_kueijin_duke_of_wind_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_duke_of_wind')]"
+ POD_combat_move_kueijin_duke_of_wind_tooltip: "#weak;italic The winds heed your call, raising their primordial majesty to harass your foes.#!" 
+ POD_combat_move_kueijin_thunderbolts_caress: "@kueijin_icon!Thunderbolt's Caress"
+ POD_combat_move_kueijin_thunderbolts_caress_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_thunderbolts_caress')]"
+ POD_combat_move_kueijin_thunderbolts_caress_tooltip: "#weak;italic Lightning at your fingertips, a small sample of unlimited power.#!" 
+
+ ######### Smoke Shintai
+ POD_combat_move_kueijin_smoke_without_fire: "@kueijin_icon!Smoke Without Fire"
+ POD_combat_move_kueijin_smoke_without_fire_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_smoke_without_fire')]"
+ POD_combat_move_kueijin_smoke_without_fire_tooltip: "#weak;italic Disappearing in a puff of smoke. Some would call it a parlor trick. They are rarely seen again.#!" 
+ POD_combat_move_kueijin_hampering_smoke: "@kueijin_icon!Hampering Smoke of Chou Zheng"
+ POD_combat_move_kueijin_hampering_smoke_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_hampering_smoke')]"
+ POD_combat_move_kueijin_hampering_smoke_tooltip: "#weak;italic When you have no sand at hand, magical smoke will surely do the trick.#!"
+
+ ######### Ghost Arts
+ POD_combat_move_kueijin_death_lines: "@kueijin_icon!Death Lines"
+ POD_combat_move_kueijin_death_lines_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_death_lines')]"
+ POD_combat_move_kueijin_death_lines_tooltip: "#weak;italic Their soul is fractured in so many places. You will show them.#!" 
+ POD_combat_move_kueijin_death_punch: "@kueijin_icon!Death Punch"
+ POD_combat_move_kueijin_death_punch_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_death_punch')]"
+ POD_combat_move_kueijin_death_punch_tooltip: "#weak;italic Striking the body is so pedestrian. A true master aims for the soul instead.#!" 
+
+ ######### Heavenly Arts
+ POD_combat_move_kueijin_no_mind: "@kueijin_icon!No Mind"
+ POD_combat_move_kueijin_no_mind_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_no_mind')]"
+ POD_combat_move_kueijin_no_mind_tooltip: "#weak;italic The demon has no place in a battlefield. Put it back in its cage, where it belongs.#!" 
+ POD_combat_move_kueijin_distant_death_kata: "@kueijin_icon!Distant Death Kata"
+ POD_combat_move_kueijin_distant_death_kata_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_distant_death_kata')]"
+ POD_combat_move_kueijin_distant_death_kata_tooltip: "#weak;italic A mesmerizing battle dance, confusing the foe on its purpose until they receive the full force from it.#!" 
+
+ ######### Beast Arts
+ POD_combat_move_kueijin_healing_sleep: "@kueijin_icon!Healing Sleep"
+ POD_combat_move_kueijin_healing_sleep_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_healing_sleep')]"
+ POD_combat_move_kueijin_healing_sleep_tooltip: "#weak;italic The mind can only crave violence for so long. Forcing respite before it's earned can give a powerful edge.#!" 
+ POD_combat_move_kueijin_wilding_mantle: "@kueijin_icon!Wilding Mantle"
+ POD_combat_move_kueijin_wilding_mantle_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_wilding_mantle')]"
+ POD_combat_move_kueijin_wilding_mantle_tooltip: "#weak;italic As the primordial creature taught the ancient heroes, hide and strike with purpose.#!" 
+
+ ######### Devil Arts
+ POD_combat_move_kueijin_killing_shriek: "@kueijin_icon!Killing Shriek"
+ POD_combat_move_kueijin_killing_shriek_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_killing_shriek')]"
+ POD_combat_move_kueijin_killing_shriek_tooltip: "#weak;italic The Yomi Hells taught you much about screaming in terror. But now, you use them as a weapon.#!" 
+ POD_combat_move_kueijin_crack_tortoise_shell: "@kueijin_icon!Crack the Tortoise Shell"
+ POD_combat_move_kueijin_crack_tortoise_shell_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_crack_tortoise_shell')]"
+ POD_combat_move_kueijin_crack_tortoise_shell_tooltip: "#weak;italic There is no armor without a weak point. No fortress without a potential breach. The devil knows how to reveal them all.#!" 
+
+ ######### Dragon Tear
+ POD_combat_move_kueijin_chi_sight: "@kueijin_icon!Chi Sight"
+ POD_combat_move_kueijin_chi_sight_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_chi_sight')]"
+ POD_combat_move_kueijin_chi_sight_tooltip: "#weak;italic Everyone is part of the dragon lines. Trying to hide is pointless in the face of a Dragon Tear master.#!" 
+ POD_combat_move_kueijin_dragon_medicine: "@kueijin_icon!Dragon Medicine"
+ POD_combat_move_kueijin_dragon_medicine_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_dragon_medicine')]"
+ POD_combat_move_kueijin_dragon_medicine_tooltip: "#weak;italic Chi is everywhere to be found for the true master. It is thus no surprise that their allies always seem full of life.#!" 
+
+ ######### Hell Weaving
+ POD_combat_move_kueijin_razor_winds: "@kueijin_icon!Razor Winds"
+ POD_combat_move_kueijin_razor_winds_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_razor_winds')]"
+ POD_combat_move_kueijin_razor_winds_tooltip: "#weak;italic A single, small, breach in the fabric of reality to the Yomi Worlds. A terrifying showcase of what's to come.#!" 
+ POD_combat_move_kueijin_dark_cultivation: "@kueijin_icon!Dark Cultivation"
+ POD_combat_move_kueijin_dark_cultivation_desc: "[PODCombatMoveDesc('POD_combat_move_kueijin_dark_cultivation')]"
+ POD_combat_move_kueijin_dark_cultivation_tooltip: "#weak;italic You never truly escaped the Yomi Hells. You just made their power yours.#!" 
+
+ ######### Arcanos Argos
+ POD_combat_move_wraith_enshroud: "@arcanos_argos_icon!Enshroud"
+ POD_combat_move_wraith_enshroud_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_enshroud')]"
+ POD_combat_move_wraith_enshroud_tooltip: "#weak;italic You can never escape the Underworld. It is always around you, something you can use to your advantage.#!" 
+
+ ######### Arcanos Castigate
+ POD_combat_move_wraith_coax_shadow: "@wraith_icon!Coax the Shadow"
+ POD_combat_move_wraith_coax_shadow_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_coax_shadow')]"
+ POD_combat_move_wraith_coax_shadow_tooltip: "#weak;italic The Shadow wants Oblivion. But you can make it wait for a little longer.#!" 
+
+ ######### Arcanos Embody
+ POD_combat_move_wraith_statue: "@wraith_icon!Statue"
+ POD_combat_move_wraith_statue_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_statue')]"
+ POD_combat_move_wraith_statue_tooltip: "#weak;italic Death is stillness. So are you.#!" 
+
+ ######### Arcanos Fatalism
+ POD_combat_move_wraith_sidestep: "@wraith_icon!Sidestep"
+ POD_combat_move_wraith_sidestep_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_sidestep')]"
+ POD_combat_move_wraith_sidestep_tooltip: "#weak;italic It is not your destiny to meet Oblivion here. You just have to follow your fate's trail.#!" 
+
+ ######### Arcanos Inhabit
+ POD_combat_move_wraith_lightnings_bite: "@wraith_icon!Lightning's Bite"
+ POD_combat_move_wraith_lightnings_bite_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_lightnings_bite')]"
+ POD_combat_move_wraith_lightnings_bite_tooltip: "#weak;italic A sudden and unexpected spark of life in an otherwise quiet environment. The telltale sign of a ghost's machinations.#!" 
+
+ ######### Arcanos Keening
+ POD_combat_move_wraith_dirge_of_sorrow: "@arcanos_keening_icon!Dirge of Sorrow"
+ POD_combat_move_wraith_dirge_of_sorrow_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_dirge_of_sorrow')]"
+ POD_combat_move_wraith_dirge_of_sorrow_tooltip: "#weak;italic They think they understand pain and loss. They will think again after hearing your soul's song.#!" 
+
+ ######### Arcanos Lifeweb
+ POD_combat_move_wraith_lifeline: "@wraith_icon!Lifeline"
+ POD_combat_move_wraith_lifeline_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_lifeline')]"
+ POD_combat_move_wraith_lifeline_tooltip: "#weak;italic Ironically, wraiths make for perfect guardian angels. They know what awaits beyond after all.#!" 
+
+ ######### Arcanos Moliate
+ POD_combat_move_wraith_armory: "@wraith_icon!Armory"
+ POD_combat_move_wraith_armory_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_armory')]"
+ POD_combat_move_wraith_armory_tooltip: "#weak;italic Wraiths are malleable creatures. Some end up as ashtrays, some as walking weapons of war.#!" 
+
+ ######### Arcanos Outrage
+ POD_combat_move_wraith_stonehand_punch: "@arcanos_outrage_icon!Stonehand Punch"
+ POD_combat_move_wraith_stonehand_punch_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_stonehand_punch')]"
+ POD_combat_move_wraith_stonehand_punch_tooltip: "#weak;italic The angry ghost always finds a way to make their presence known. Hurling objects from afar is one of the surefire signs.#!" 
+
+ ######### Arcanos Pandemonium
+ POD_combat_move_wraith_weirdness: "@arcanos_pandemonium_icon!Weirdness"
+ POD_combat_move_wraith_weirdness_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_weirdness')]"
+ POD_combat_move_wraith_weirdness_tooltip: "#weak;italic A small test of the world beyond. Horror and madness clog the senses, making the rationally minded recoil in terror.#!" 
+
+ ######### Arcanos Phantasm
+ POD_combat_move_wraith_morphean_embrace: "@wraith_icon!Morphean Embrace"
+ POD_combat_move_wraith_morphean_embrace_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_morphean_embrace')]"
+ POD_combat_move_wraith_morphean_embrace_tooltip: "#weak;italic Mortals have their myths about spirits putting them to sleep. The truth is much more terrible.#!" 
+
+ ######### Arcanos Puppetry
+ POD_combat_move_wraith_twitch: "@wraith_icon!Twitch"
+ POD_combat_move_wraith_twitch_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_twitch')]"
+ POD_combat_move_wraith_twitch_tooltip: "#weak;italic They are yours to control, for an instant. You make them dance in a mockery of the life you both hate and envy.#!" 
+
+ ######### Arcanos Usury
+ POD_combat_move_wraith_early_withdrawal: "@wraith_icon!Early Withdrawal"
+ POD_combat_move_wraith_early_withdrawal_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_early_withdrawal')]"
+ POD_combat_move_wraith_early_withdrawal_tooltip: "#weak;italic A stolen breath of life, a fleeting reminder of what you lost, only ending in making you more sorrowful.#!" 
+
+ ######### Arcanos Flux
+ POD_combat_move_wraith_rot: "@wraith_icon!Rot"
+ POD_combat_move_wraith_rot_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_rot')]"
+ POD_combat_move_wraith_rot_tooltip: "#weak;italic Death waits for no one, even the more magical of armaments. You are just speeding up the process.#!" 
+
+ ######### Arcanos Intimation
+ POD_combat_move_wraith_the_gleaming: "@wraith_icon!The Gleaming"
+ POD_combat_move_wraith_the_gleaming_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_the_gleaming')]"
+ POD_combat_move_wraith_the_gleaming_tooltip: "#weak;italic Wraiths know obsessions via their fetters. They can pass this affliction to their foes for a fleeting moment.#!" 
+
+ ######### Arcanos Mnemosynis
+ POD_combat_move_wraith_erasure: "@wraith_icon!Erasure"
+ POD_combat_move_wraith_erasure_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_erasure')]"
+ POD_combat_move_wraith_erasure_tooltip: "#weak;italic Memories are painful. Are they worth pulling you away from Oblivion if they only hinder you before the inevitable end?#!" 
+
+ ######### Jade Arcanos Chains of the Emperor
+ POD_combat_move_wraith_jade_brilliance: "@wraith_icon!Brilliance"
+ POD_combat_move_wraith_jade_brilliance_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_jade_brilliance')]"
+ POD_combat_move_wraith_jade_brilliance_tooltip: "#weak;italic A passing moment, a remembrance of past glories long since devoured by death, like all things will be.#!" 
+
+ ######### Jade Arcanos Way of the Scholar
+ POD_combat_move_wraith_jade_discern_lie: "@wraith_icon!Discern the Lie"
+ POD_combat_move_wraith_jade_discern_lie_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_jade_discern_lie')]"
+ POD_combat_move_wraith_jade_discern_lie_tooltip: "#weak;italic Their fate has been decided long before this moment. You only have to find the key to discern it.#!" 
+
+ ######### Jade Arcanos Way of the Farmer
+ POD_combat_move_wraith_jade_find_hidden_ghost: "@wraith_icon!Finding the Hidden Ghost"
+ POD_combat_move_wraith_jade_find_hidden_ghost_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_jade_find_hidden_ghost')]"
+ POD_combat_move_wraith_jade_find_hidden_ghost_tooltip: "#weak;italic There are few things that can remain hidden to those who survive in eternal darkness.#!" 
+
+ ######### Jade Arcanos Way of the Artisan
+ POD_combat_move_wraith_jade_true_jade_bulwark: "@wraith_icon!True Jade Bulwark"
+ POD_combat_move_wraith_jade_true_jade_bulwark_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_jade_true_jade_bulwark')]"
+ POD_combat_move_wraith_jade_true_jade_bulwark_tooltip: "#weak;italic A rebellion against the oncoming Oblivion that will have to wait for a while longer.#!" 
+
+ ######### Jade Arcanos Way of the Merchant
+ POD_combat_move_wraith_jade_transfer_pathos: "@wraith_icon!Transfer Pathos"
+ POD_combat_move_wraith_jade_transfer_pathos_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_jade_transfer_pathos')]"
+ POD_combat_move_wraith_jade_transfer_pathos_tooltip: "#weak;italic A transaction between life and death, teetering both merchant and client to survival for longer.#!" 
+
+ ######### Jade Arcanos Way of the Soul
+ POD_combat_move_wraith_jade_coax_po: "@wraith_icon!Coax the P'o"
+ POD_combat_move_wraith_jade_coax_po_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_jade_coax_po')]"
+ POD_combat_move_wraith_jade_coax_po_tooltip: "#weak;italic The demon is a greedy but simple beast. It can, and must, be tamed in times of crisis.#!" 
+
+ ######### Risen Arcanos Fascinate
+ POD_combat_move_wraith_risen_distraction: "@wraith_icon!Distraction"
+ POD_combat_move_wraith_risen_distraction_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_risen_distraction')]"
+ POD_combat_move_wraith_risen_distraction_tooltip: "#weak;italic They are clearly forgetting something important. Important enough to distract them in this fight.#!" 
+
+ ######### Risen Arcanos Serendipity
+ POD_combat_move_wraith_risen_lucky_break: "@wraith_icon!Lucky Break"
+ POD_combat_move_wraith_risen_lucky_break_desc: "[PODCombatMoveDesc('POD_combat_move_wraith_risen_lucky_break')]"
+ POD_combat_move_wraith_risen_lucky_break_tooltip: "#weak;italic Luck is a quirk of fate. The truly gifted know how to time those perfectly.#!" 
+
+ ######### Fae Art Soothsay
+ POD_combat_move_fae_soothsay_omen: "@fae_icon!Omen"
+ POD_combat_move_fae_soothsay_omen_desc: "[PODCombatMoveDesc('POD_combat_move_fae_soothsay_omen')]"
+ POD_combat_move_fae_soothsay_omen_tooltip: "#weak;italic I saw your fate. It ends with my fist in your face.#!"
+ POD_combat_move_fae_soothsay_face_fate: "@fae_icon!Fate Fire"
+ POD_combat_move_fae_soothsay_face_fate_desc: "[PODCombatMoveDesc('POD_combat_move_fae_soothsay_face_fate')]"
+ POD_combat_move_fae_soothsay_face_fate_tooltip: "#weak;italic Curse your foe by grabbing the tapestry of fate and giving it a good yank.#!"
+
+ ######### Fae Art Chicanery
+ POD_combat_move_fae_chicanery_veiled_eyes: "@fae_icon!Veiled Eyes"
+ POD_combat_move_fae_chicanery_veiled_eyes_desc: "[PODCombatMoveDesc('POD_combat_move_fae_chicanery_veiled_eyes')]"
+ POD_combat_move_fae_chicanery_veiled_eyes_tooltip: "#weak;italic In this great play, no one pays attention to the extras.#!"
+ POD_combat_move_fae_chicanery_lost_in_mists: "@fae_icon!Lost in the Mists"
+ POD_combat_move_fae_chicanery_lost_in_mists_desc: "[PODCombatMoveDesc('POD_combat_move_fae_chicanery_lost_in_mists')]"
+ POD_combat_move_fae_chicanery_lost_in_mists_tooltip: "#weak;italic I'm assigning a new role for you to play: the lost, harmless puppy.#!"
+
+ ######### Fae Art Legerdemain
+ POD_combat_move_fae_legerdemain_ensnare: "@fae_icon!Ensnare"
+ POD_combat_move_fae_legerdemain_ensnare_desc: "[PODCombatMoveDesc('POD_combat_move_fae_legerdemain_ensnare')]"
+ POD_combat_move_fae_legerdemain_ensnare_tooltip: "#weak;italic How fortuitous that obstacles pop up wherever your opponent sets foot.#!"
+ POD_combat_move_fae_legerdemain_gimmix: "@fae_icon!Gimmix"
+ POD_combat_move_fae_legerdemain_gimmix_desc: "[PODCombatMoveDesc('POD_combat_move_fae_legerdemain_gimmix')]"
+ POD_combat_move_fae_legerdemain_gimmix_tooltip: "#weak;italic For my next trick, this rock will levitate towards a place that hurts a lot.#!"
+
+ ######### Fae Art Primal
+ POD_combat_move_fae_primal_oakenshield: "@fae_icon!Oakenshield"
+ POD_combat_move_fae_primal_oakenshield_desc: "[PODCombatMoveDesc('POD_combat_move_fae_primal_oakenshield')]"
+ POD_combat_move_fae_primal_oakenshield_tooltip: "#weak;italic See this? This is my plot armor.#!"
+ POD_combat_move_fae_primal_dance_five_kings: "@fae_icon!Dance of the Five Kings"
+ POD_combat_move_fae_primal_dance_five_kings_desc: "[PODCombatMoveDesc('POD_combat_move_fae_primal_dance_five_kings')]"
+ POD_combat_move_fae_primal_dance_five_kings_tooltip: "#weak;italic Storm, earth and fire, heed my call!#!"
+
+ ######### Fae Art Wayfare
+ POD_combat_move_fae_wayfare_quicksilver: "@fae_icon!Quicksilver"
+ POD_combat_move_fae_wayfare_quicksilver_desc: "[PODCombatMoveDesc('POD_combat_move_fae_wayfare_quicksilver')]"
+ POD_combat_move_fae_wayfare_quicksilver_tooltip: "#weak;italic Ever heard of the hero with the seven-league boots?#!"
+ POD_combat_move_fae_wayfare_flicker_flash: "@fae_icon!Flicker Flash"
+ POD_combat_move_fae_wayfare_flicker_flash_desc: "[PODCombatMoveDesc('POD_combat_move_fae_wayfare_flicker_flash')]"
+ POD_combat_move_fae_wayfare_flicker_flash_tooltip: "#weak;italic Teleport out of harm's way. Getting clobbered wouldn't make for a good story.#!"
+
+ ######### Fae Art Metamorphosis
+ POD_combat_move_fae_metamorphosis_giants_stature: "@fae_icon!Giant's Stature"
+ POD_combat_move_fae_metamorphosis_giants_stature_desc: "[PODCombatMoveDesc('POD_combat_move_fae_metamorphosis_giants_stature')]"
+ POD_combat_move_fae_metamorphosis_giants_stature_tooltip: "#weak;italic Become larger than life, like a demigod out of legend.#!"
+ POD_combat_move_fae_metamorphosis_beastskin_talons: "@fae_icon!Beastskin Talons"
+ POD_combat_move_fae_metamorphosis_beastskin_talons_desc: "[PODCombatMoveDesc('POD_combat_move_fae_metamorphosis_beastskin_talons')]"
+ POD_combat_move_fae_metamorphosis_beastskin_talons_tooltip: "#weak;italic I only need the big bad wolf's talons to rob you of your happy end.#!"
+
+ ######### Fae Art Pyretics
+ POD_combat_move_fae_pyretics_illuminate: "@fae_icon!Illuminate"
+ POD_combat_move_fae_pyretics_illuminate_desc: "[PODCombatMoveDesc('POD_combat_move_fae_pyretics_illuminate')]"
+ POD_combat_move_fae_pyretics_illuminate_tooltip: "#weak;italic The hero shone forth his piercing light, and the evildoers skittered from their hiding places.#!"
+ POD_combat_move_fae_pyretics_engulf: "@fae_icon!Engulf"
+ POD_combat_move_fae_pyretics_engulf_desc: "[PODCombatMoveDesc('POD_combat_move_fae_pyretics_engulf')]"
+ POD_combat_move_fae_pyretics_engulf_tooltip: "#weak;italic The villain burned to ashes, and everyone lived happily everafter.#!"
+
+ ######### Fae Art Skycraft
+ POD_combat_move_fae_skycraft_howling_gale: "@fae_icon!Howling Gale"
+ POD_combat_move_fae_skycraft_howling_gale_desc: "[PODCombatMoveDesc('POD_combat_move_fae_skycraft_howling_gale')]"
+ POD_combat_move_fae_skycraft_howling_gale_tooltip: "#weak;italic May the winds confound their ranks. May they drop their shields, and face the Lord of Storms in honorable combat.#!"
+ POD_combat_move_fae_skycraft_lord_of_levin: "@fae_icon!Lord of Levin"
+ POD_combat_move_fae_skycraft_lord_of_levin_desc: "[PODCombatMoveDesc('POD_combat_move_fae_skycraft_lord_of_levin')]"
+ POD_combat_move_fae_skycraft_lord_of_levin_tooltip: "#weak;italic Punctuate the story's climax with dramatically timed lightning.#!"
+
+ ######### Fae Art Chronos
+ POD_combat_move_fae_chronos_effect_and_cause: "@fae_icon!Effect and Cause"
+ POD_combat_move_fae_chronos_effect_and_cause_desc: "[PODCombatMoveDesc('POD_combat_move_fae_chronos_effect_and_cause')]"
+ POD_combat_move_fae_chronos_effect_and_cause_tooltip: "#weak;italic This battle is now a non-linear narrative. No, I won't explain the plot.#!"
+ POD_combat_move_fae_chronos_time_dilation: "@fae_icon!Time Dilation"
+ POD_combat_move_fae_chronos_time_dilation_desc: "[PODCombatMoveDesc('POD_combat_move_fae_chronos_time_dilation')]"
+ POD_combat_move_fae_chronos_time_dilation_tooltip: "#weak;italic The enemy is advancing too fast. Time for a retcon.#!"
+
+ ######### Fae Art Dragon's Ire
+ POD_combat_move_fae_dragons_ire_dragonscales: "@fae_icon!Dragonscales"
+ POD_combat_move_fae_dragons_ire_dragonscales_desc: "[PODCombatMoveDesc('POD_combat_move_fae_dragons_ire_dragonscales')]"
+ POD_combat_move_fae_dragons_ire_dragonscales_tooltip: "#weak;italic Endow an object with the toughness of the most mythical of beasts.#!"
+ POD_combat_move_fae_dragons_ire_holy_strike: "@fae_icon!Holly-Strike"
+ POD_combat_move_fae_dragons_ire_holy_strike_desc: "[PODCombatMoveDesc('POD_combat_move_fae_dragons_ire_holy_strike')]"
+ POD_combat_move_fae_dragons_ire_holy_strike_tooltip: "#weak;italic With one devastating stroke, the dragon-slayer cements his legend.#!"
+
+ ######### Fae Art Naming
+ POD_combat_move_fae_naming_runic_imprint: "@fae_icon!Runic Imprint"
+ POD_combat_move_fae_naming_runic_imprint_desc: "[PODCombatMoveDesc('POD_combat_move_fae_naming_runic_imprint')]"
+ POD_combat_move_fae_naming_runic_imprint_tooltip: "#weak;italic This runic hand gesture reveals an ally's hidden strength. Perhaps they needed you to draw it out, or perhaps it was there all along.#!"
+
+ ######### Fae Art Sovereign
+ POD_combat_move_fae_sovereign_grandeur: "@fae_icon!Grandeur"
+ POD_combat_move_fae_sovereign_grandeur_desc: "[PODCombatMoveDesc('POD_combat_move_fae_sovereign_grandeur')]"
+ POD_combat_move_fae_sovereign_grandeur_tooltip: "#weak;italic Witness true majesty, and despair.#!"
+ POD_combat_move_fae_sovereign_dictum: "@fae_icon!Dictum"
+ POD_combat_move_fae_sovereign_dictum_desc: "[PODCombatMoveDesc('POD_combat_move_fae_sovereign_dictum')]"
+ POD_combat_move_fae_sovereign_dictum_tooltip: "#weak;italic With one word, I can command the rains to stop. If even the seasons don't dare defy me, who are you to resist my orders?#!"
+
+ ######### Fae Art Contract
+ POD_combat_move_fae_contract_sanctified_words: "@fae_icon!Sanctified Words"
+ POD_combat_move_fae_contract_sanctified_words_desc: "[PODCombatMoveDesc('POD_combat_move_fae_contract_sanctified_words')]"
+ POD_combat_move_fae_contract_sanctified_words_tooltip: "#weak;italic Swear this oath upon the Dreaming, my comrades, and may it embolden you.#!"
+
+ ######### Fae Art Autumn
+ POD_combat_move_fae_autumn_poisoned_apple: "@fae_icon!The Poisoned Apple"
+ POD_combat_move_fae_autumn_poisoned_apple_desc: "[PODCombatMoveDesc('POD_combat_move_fae_autumn_poisoned_apple')]"
+ POD_combat_move_fae_autumn_poisoned_apple_tooltip: "#weak;italic Here is all my hate, all the loathing I feel for you. May you choke on it.#!"
+ POD_combat_move_fae_autumn_withering: "@fae_icon!The Withering"
+ POD_combat_move_fae_autumn_withering_desc: "[PODCombatMoveDesc('POD_combat_move_fae_autumn_withering')]"
+ POD_combat_move_fae_autumn_withering_tooltip: "#weak;italic As the fallen leaves herald autumn's decay, you too will age and wither.#!"
+
+ ######### Fae Art Spring
+ POD_combat_move_fae_spring_well_of_life: "@fae_icon!Well of Life"
+ POD_combat_move_fae_spring_well_of_life_desc: "[PODCombatMoveDesc('POD_combat_move_fae_spring_well_of_life')]"
+ POD_combat_move_fae_spring_well_of_life_tooltip: "#weak;italic Many a valiant knight has quested for the spring of life. Here's a little taste.#!"
+ POD_combat_move_fae_spring_faerie_ring: "@fae_icon!Faerie Ring"
+ POD_combat_move_fae_spring_faerie_ring_desc: "[PODCombatMoveDesc('POD_combat_move_fae_spring_faerie_ring')]"
+ POD_combat_move_fae_spring_faerie_ring_tooltip: "#weak;italic A circle of mushrooms marks the faeries' domain. Those who are invited will gain its protection. Those who aren't... better stay far away.#!"
+
+ ######### Fae Art Summer
+ POD_combat_move_fae_summer_enkindle: "@fae_icon!Enkindle"
+ POD_combat_move_fae_summer_enkindle_desc: "[PODCombatMoveDesc('POD_combat_move_fae_summer_enkindle')]"
+ POD_combat_move_fae_summer_enkindle_tooltip: "#weak;italic Fear, too, is a kind of passion. Stoke the fear of your enemies until it becomes unbearable.#!"
+ POD_combat_move_fae_summer_beltane_blade: "@fae_icon!The Beltane Blade"
+ POD_combat_move_fae_summer_beltane_blade_desc: "[PODCombatMoveDesc('POD_combat_move_fae_summer_beltane_blade')]"
+ POD_combat_move_fae_summer_beltane_blade_tooltip: "#weak;italic With a gesture, you bid the taint of Banality within your foe to explode.#!"
+
+ ######### Fae Art Winter
+ POD_combat_move_fae_winter_chill: "@fae_icon!Chill"
+ POD_combat_move_fae_winter_chill_desc: "[PODCombatMoveDesc('POD_combat_move_fae_winter_chill')]"
+ POD_combat_move_fae_winter_chill_tooltip: "#weak;italic The time for whimsy is over. Winter is coming.#!"
+ POD_combat_move_fae_winter_terror_long_night: "@fae_icon!Terror of the Long Night"
+ POD_combat_move_fae_winter_terror_long_night_desc: "[PODCombatMoveDesc('POD_combat_move_fae_winter_terror_long_night')]"
+ POD_combat_move_fae_winter_terror_long_night_tooltip: "#weak;italic No one's going to save you. I am the monster in the dark, and no knight in shining armor is coming to slay me. You are alone, and your story ends here.#!"
+ POD_combat_move_fae_winter_ice_shackles: "@fae_icon!Ice Shackles"
+ POD_combat_move_fae_winter_ice_shackles_desc: "[PODCombatMoveDesc('POD_combat_move_fae_winter_ice_shackles')]"
+ POD_combat_move_fae_winter_ice_shackles_tooltip: "#weak;italic There's no earthly way of knowing which direction you are going. Is it raining? Is it snowing? Is a hurricane a-blowing?#!"
+
+ ######### Inanimae Sliver Aquis
+ POD_combat_move_fae_aquis_hold: "@fae_icon!Hold"
+ POD_combat_move_fae_aquis_hold_desc: "[PODCombatMoveDesc('POD_combat_move_fae_aquis_hold')]"
+ POD_combat_move_fae_aquis_hold_tooltip: "#weak;italic Arrest an enemy's movement. No more fighting. Be as tranquil as a lake.#!"
+ POD_combat_move_fae_aquis_tempus_fugit: "@fae_icon!Tempus Fugit"
+ POD_combat_move_fae_aquis_tempus_fugit_desc: "[PODCombatMoveDesc('POD_combat_move_fae_aquis_tempus_fugit')]"
+ POD_combat_move_fae_aquis_tempus_fugit_tooltip: "#weak;italic Empty your mind. Become formless, shapeless, like water. Be water, my friend.#!" # Bruce Lee
+ POD_combat_move_fae_aquis_healing_waters: "@fae_icon!Healing Waters"
+ POD_combat_move_fae_aquis_healing_waters_desc: "[PODCombatMoveDesc('POD_combat_move_fae_aquis_healing_waters')]"
+ POD_combat_move_fae_aquis_healing_waters_tooltip: "#weak;italic Let the waters nourish and renew a fellow emissary of peace.#!"
+
+ ######### Inanimae Sliver Petros
+ POD_combat_move_fae_petros_stoneskin: "@fae_icon!Stoneskin"
+ POD_combat_move_fae_petros_stoneskin_desc: "[PODCombatMoveDesc('POD_combat_move_fae_petros_stoneskin')]"
+ POD_combat_move_fae_petros_stoneskin_tooltip: "#weak;italic Your skin takes on the resilience, and appearance, of the rock closest to you.#!"
+ POD_combat_move_fae_petros_ironarm: "@fae_icon!Ironarm"
+ POD_combat_move_fae_petros_ironarm_desc: "[PODCombatMoveDesc('POD_combat_move_fae_petros_ironarm')]"
+ POD_combat_move_fae_petros_ironarm_tooltip: "#weak;italic Draw on the mystic power of the earth to allow great feats of strength.#!"
+ POD_combat_move_fae_petros_quake: "@fae_icon!Quake"
+ POD_combat_move_fae_petros_quake_desc: "[PODCombatMoveDesc('POD_combat_move_fae_petros_quake')]"
+ POD_combat_move_fae_petros_quake_tooltip: "#weak;italic And when the Lord of the Mountain stamped his feet, the earth was rent into great chasms. Beware the ire of one who is slow to anger.#!"
+
+ ######### Inanimae Sliver Pyros
+ POD_combat_move_fae_pyros_flame: "@fae_icon!Flame"
+ POD_combat_move_fae_pyros_flame_desc: "[PODCombatMoveDesc('POD_combat_move_fae_pyros_flame')]"
+ POD_combat_move_fae_pyros_flame_tooltip: "#weak;italic Passion ought to be shared. Don't worry, I've got enough for the both of us. Careful you don't burn.#!"
+ POD_combat_move_fae_pyros_tortured_heart: "@fae_icon!Tortured Heart"
+ POD_combat_move_fae_pyros_tortured_heart_desc: "[PODCombatMoveDesc('POD_combat_move_fae_pyros_tortured_heart')]"
+ POD_combat_move_fae_pyros_tortured_heart_tooltip: "#weak;italic Are you fired up? Can you handle the heat? It's not good to keep feelings bottled up, you know.#!"
+ POD_combat_move_fae_pyros_inferno: "@fae_icon!Inferno"
+ POD_combat_move_fae_pyros_inferno_desc: "[PODCombatMoveDesc('POD_combat_move_fae_pyros_inferno')]"
+ POD_combat_move_fae_pyros_inferno_tooltip: "#weak;italic Burn, baby, burn.#!"
+
+ ######### Inanimae Sliver Stratus
+ POD_combat_move_fae_stratus_flight: "@fae_icon!Flight"
+ POD_combat_move_fae_stratus_flight_desc: "[PODCombatMoveDesc('POD_combat_move_fae_stratus_flight')]"
+ POD_combat_move_fae_stratus_flight_tooltip: "#weak;italic Riddle me this. How do you fight thin air? It's not a trick question, I'd genuinely like to know. Let me know when you find out. Am I talking too much?#!"
+ POD_combat_move_fae_stratus_conceal_confuse: "@fae_icon!Conceal/Confuse"
+ POD_combat_move_fae_stratus_conceal_confuse_desc: "[PODCombatMoveDesc('POD_combat_move_fae_stratus_conceal_confuse')]"
+ POD_combat_move_fae_stratus_conceal_confuse_tooltip: "#weak;italic Ooh, what's that over there?#!"
+
+ ######### Inanimae Sliver Verdage
+ POD_combat_move_fae_verdage_solarium: "@fae_icon!Solarium"
+ POD_combat_move_fae_verdage_solarium_desc: "[PODCombatMoveDesc('POD_combat_move_fae_verdage_solarium')]"
+ POD_combat_move_fae_verdage_solarium_tooltip: "#weak;italic You dream a dream of life, and the local flora explodes into growth that hinders your opponent.#!"
+ POD_combat_move_fae_verdage_coalesce: "@fae_icon!Coalesce"
+ POD_combat_move_fae_verdage_coalesce_desc: "[PODCombatMoveDesc('POD_combat_move_fae_verdage_coalesce')]"
+ POD_combat_move_fae_verdage_coalesce_tooltip: "#weak;italic With the right whisper, a tree will fashion itself into armor, and wood will become as hard as steel.#!"
+
+ ######### Hekau Alchemy
+ POD_combat_move_mummy_alchemy_cloud_of_smoke: "@mummy_icon!Cloud of Smoke"
+ POD_combat_move_mummy_alchemy_cloud_of_smoke_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_alchemy_cloud_of_smoke')]"
+ POD_combat_move_mummy_alchemy_cloud_of_smoke_tooltip: "#weak;italic A simple trick for the master alchemist, but a sightless foe is a much weakened one.#!" 
+ POD_combat_move_mummy_alchemy_dangerous_poison: "@mummy_icon!Dangerous Poison"
+ POD_combat_move_mummy_alchemy_dangerous_poison_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_alchemy_dangerous_poison')]"
+ POD_combat_move_mummy_alchemy_dangerous_poison_tooltip: "#weak;italic The sting of the scorpion in a simple concoction.#!" 
+ POD_combat_move_mummy_alchemy_potion_of_valor: "@mummy_icon!Potion of Valor"
+ POD_combat_move_mummy_alchemy_potion_of_valor_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_alchemy_potion_of_valor')]"
+ POD_combat_move_mummy_alchemy_potion_of_valor_tooltip: "#weak;italic True heroes don't need supplements. But they also are hard to find in this day and age.#!" 
+ POD_combat_move_mummy_alchemy_potent_tonic: "@mummy_icon!Potent Tonic"
+ POD_combat_move_mummy_alchemy_potent_tonic_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_alchemy_potent_tonic')]"
+ POD_combat_move_mummy_alchemy_potent_tonic_tooltip: "#weak;italic A salve of alchemical healing, inherited from the greatest minds that made resurrection possible.#!" 
+ POD_combat_move_mummy_alchemy_vile_body: "@mummy_icon!Potion of the Vile Body"
+ POD_combat_move_mummy_alchemy_vile_body_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_alchemy_vile_body')]"
+ POD_combat_move_mummy_alchemy_vile_body_tooltip: "#weak;italic With this potion, the truth of the Mummy is laid bare. The foulness of this creature mocking the natural order of things strikes down those that dare approach.#!" 
+
+ ######### Hekau Amulets
+ POD_combat_move_mummy_amulets_simple_ward: "@mummy_icon!Simple Ward"
+ POD_combat_move_mummy_amulets_simple_ward_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_amulets_simple_ward')]"
+ POD_combat_move_mummy_amulets_simple_ward_tooltip: "#weak;italic A simple word of power, enough to ward you from the harm they intend.#!" 
+ POD_combat_move_mummy_amulets_veil_of_amaunet: "@mummy_icon!Veil of Amaunet"
+ POD_combat_move_mummy_amulets_veil_of_amaunet_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_amulets_veil_of_amaunet')]"
+ POD_combat_move_mummy_amulets_veil_of_amaunet_tooltip: "#weak;italic The eye of the primordial Goddess shields you from the gaze of the unbelievers.#!" 
+ POD_combat_move_mummy_amulets_wrappings_imhotep: "@mummy_icon!Wrappings of Imhotep"
+ POD_combat_move_mummy_amulets_wrappings_imhotep_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_amulets_wrappings_imhotep')]"
+ POD_combat_move_mummy_amulets_wrappings_imhotep_tooltip: "#weak;italic Mummification took many tries for some of the most wise individuals that world has ever seen. Even a fraction of their power is grand on its own.#!" 
+ POD_combat_move_mummy_amulets_eye_of_sekhmet: "@mummy_icon!Eye of Sekhmet"
+ POD_combat_move_mummy_amulets_eye_of_sekhmet_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_amulets_eye_of_sekhmet')]"
+ POD_combat_move_mummy_amulets_eye_of_sekhmet_tooltip: "#weak;italic The warrior Goddess looks upon them and finds them unworthy. They fear their own weakness.#!" 
+ POD_combat_move_mummy_amulets_buckle_of_isis: "@mummy_icon!Buckle of Isis"
+ POD_combat_move_mummy_amulets_buckle_of_isis_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_amulets_buckle_of_isis')]"
+ POD_combat_move_mummy_amulets_buckle_of_isis_tooltip: "#weak;italic The mother of magic had no equals. Simply invoking her name will bring the pathetic supernaturals of the modern age to heel.#!" 
+
+ ######### Hekau Celestial
+ POD_combat_move_mummy_celestial_book_of_thoth: "@mummy_icon!Book of Thoth"
+ POD_combat_move_mummy_celestial_book_of_thoth_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_celestial_book_of_thoth')]"
+ POD_combat_move_mummy_celestial_book_of_thoth_tooltip: "#weak;italic Thoth, the most wise, knew everything. Even understanding a fraction of his knowledge is a tremendous advantage in battle.#!" 
+ POD_combat_move_mummy_celestial_sahu_ra: "@mummy_icon!Sahu-Ra"
+ POD_combat_move_mummy_celestial_sahu_ra_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_celestial_sahu_ra')]"
+ POD_combat_move_mummy_celestial_sahu_ra_tooltip: "#weak;italic The almighty Ra doesn't even have to look down upon them. His mere radiance burns down those who skulk in the shadows.#!" 
+ POD_combat_move_mummy_celestial_ras_awakening: "@mummy_icon!Ra's Awakening"
+ POD_combat_move_mummy_celestial_ras_awakening_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_celestial_ras_awakening')]"
+ POD_combat_move_mummy_celestial_ras_awakening_tooltip: "#weak;italic The god of gods looks favorably upon his warriors, even eons after the ungrateful mortals forgot him.#!" 
+ POD_combat_move_mummy_celestial_call_the_stars: "@mummy_icon!Call the Stars"
+ POD_combat_move_mummy_celestial_call_the_stars_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_celestial_call_the_stars')]"
+ POD_combat_move_mummy_celestial_call_the_stars_tooltip: "#weak;italic Our wise people looked upon the stars and marveled in ages past. Let us remind today's unbelievers of the reason behind this.#!" 
+ POD_combat_move_mummy_celestial_sandstorm: "@mummy_icon!Sandstorm"
+ POD_combat_move_mummy_celestial_sandstorm_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_celestial_sandstorm')]"
+ POD_combat_move_mummy_celestial_sandstorm_tooltip: "#weak;italic What can they do when the gold blood of our desert itself attacks them? Nothing, beyond complaining that it gets everywhere.#!" 
+
+ ######### Hekau Effigy
+ POD_combat_move_mummy_effigy_false_door: "@mummy_icon!False Door"
+ POD_combat_move_mummy_effigy_false_door_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_effigy_false_door')]"
+ POD_combat_move_mummy_effigy_false_door_tooltip: "#weak;italic Today's mages use portals to move around the battlefield, a pale imitation of the glory of a shimmering golden door suddenly waiting for your command to open.#!" 
+ POD_combat_move_mummy_effigy_command_complex_implement: "@mummy_icon!Command Complex Implement"
+ POD_combat_move_mummy_effigy_command_complex_implement_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_effigy_command_complex_implement')]"
+ POD_combat_move_mummy_effigy_command_complex_implement_tooltip: "#weak;italic The guardians of your people's tombs were much more complex than today's petty devices. You need no tutorial.#!" 
+ POD_combat_move_mummy_effigy_reflected_strike: "@mummy_icon!Reflected Strike"
+ POD_combat_move_mummy_effigy_reflected_strike_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_effigy_reflected_strike')]"
+ POD_combat_move_mummy_effigy_reflected_strike_tooltip: "#weak;italic A Mummy is a being tied to two worlds, neither dead nor living. The truly wise understands how to strike at both at the same time when needed.#!" 
+ POD_combat_move_mummy_effigy_living_bond: "@mummy_icon!Living Bond of Fate"
+ POD_combat_move_mummy_effigy_living_bond_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_effigy_living_bond')]"
+ POD_combat_move_mummy_effigy_living_bond_tooltip: "#weak;italic One's destiny is written the moment they are born. They weren't any more free before you bonded them in their own fate.#!" 
+
+ ######### Hekau Necromancy
+ POD_combat_move_mummy_necromancy_deaths_shroud: "@mummy_icon!Death's Shroud"
+ POD_combat_move_mummy_necromancy_deaths_shroud_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_necromancy_deaths_shroud')]"
+ POD_combat_move_mummy_necromancy_deaths_shroud_tooltip: "#weak;italic Such is death's power. The slow, agonizing stillness that is only the prelude to a quiet finale.#!" 
+ POD_combat_move_mummy_necromancy_banish_dead: "@mummy_icon!Banish the Dead"
+ POD_combat_move_mummy_necromancy_banish_dead_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_necromancy_banish_dead')]"
+ POD_combat_move_mummy_necromancy_banish_dead_tooltip: "#weak;italic The dead have no power here. Except you, of course.#!" 
+ POD_combat_move_mummy_necromancy_deaths_hand: "@mummy_icon!Death's Hand"
+ POD_combat_move_mummy_necromancy_deaths_hand_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_necromancy_deaths_hand')]"
+ POD_combat_move_mummy_necromancy_deaths_hand_tooltip: "#weak;italic The Mummy, for a moment, drops the mockery of life granted to them by the Spell of Life. The grotesque horror of their condition is revealed as their cold, skeletal hands make contact with the enemy.#!" 
+ POD_combat_move_mummy_necromancy_khaibits_embrace: "@mummy_icon!Khaibit's Embrace"
+ POD_combat_move_mummy_necromancy_khaibits_embrace_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_necromancy_khaibits_embrace')]"
+ POD_combat_move_mummy_necromancy_khaibits_embrace_tooltip: "#weak;italic The very presence of the Mummy's soul is slowing down the battlefield, as if reality itself was puzzled by this anachronistic creature.#!" 
+ POD_combat_move_mummy_necromancy_scouring_oblivion: "@mummy_icon!Scouring Oblivion"
+ POD_combat_move_mummy_necromancy_scouring_oblivion_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_necromancy_scouring_oblivion')]"
+ POD_combat_move_mummy_necromancy_scouring_oblivion_tooltip: "#weak;italic This creature is the bringer of death. It will never eat, it will never sleep, and it will never stop.#!" 
+
+ ######### Hekau Nomenclature
+ POD_combat_move_mummy_nomenclature_asking_trees: "@mummy_icon!Asking the Trees"
+ POD_combat_move_mummy_nomenclature_asking_trees_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_nomenclature_asking_trees')]"
+ POD_combat_move_mummy_nomenclature_asking_trees_tooltip: "#weak;italic The wildlife has simple True Names. While they can only be commanded to a degree, they made for quite the surprising effect on the battlefield.#!" 
+ POD_combat_move_mummy_nomenclature_mend_flesh: "@mummy_icon!Mend Flesh"
+ POD_combat_move_mummy_nomenclature_mend_flesh_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_nomenclature_mend_flesh')]"
+ POD_combat_move_mummy_nomenclature_mend_flesh_tooltip: "#weak;italic Wounds are simply a broken primordial pattern. The true master of Names simply wills it back to its original form.#!" 
+ POD_combat_move_mummy_nomenclature_command_thought: "@mummy_icon!Command Thought"
+ POD_combat_move_mummy_nomenclature_command_thought_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_nomenclature_command_thought')]"
+ POD_combat_move_mummy_nomenclature_command_thought_tooltip: "#weak;italic Some apprentices like to wave their hands in front of their targets for this effect. The true master only needs to usher the command.#!" 
+ POD_combat_move_mummy_nomenclature_bodys_destruction: "@mummy_icon!Naming the Body's Destruction"
+ POD_combat_move_mummy_nomenclature_bodys_destruction_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_nomenclature_bodys_destruction')]"
+ POD_combat_move_mummy_nomenclature_bodys_destruction_tooltip: "#weak;italic Often the most feared power of a Mummy, by simply uttering the name of a body part, they can return it to its primordial form. Ashes will be ashes after all.#!" 
+ POD_combat_move_mummy_nomenclature_whispers_body: "@mummy_icon!Whispers to the Body"
+ POD_combat_move_mummy_nomenclature_whispers_body_desc: "[PODCombatMoveDesc('POD_combat_move_mummy_nomenclature_whispers_body')]"
+ POD_combat_move_mummy_nomenclature_whispers_body_tooltip: "#weak;italic The flesh is malleable. Chanting True Names in a flurry of confusing languages to the uneducated, the Mummy transforms their body into living weapons and armor as needed.#!" 
+
+ ######### Hunter Generic
+ POD_combat_move_hunter_silvered_bolt: "@supehunter_icon!Silvered Bolt"
+ POD_combat_move_hunter_silvered_bolt_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_silvered_bolt')]"
+ POD_combat_move_hunter_silvered_bolt_tooltip: "#weak;italic Give a werewolf something to remember you by before they rip you to pieces.#!"
+ POD_combat_move_hunter_stake_attack: "@supehunter_icon!Stake Attack"
+ POD_combat_move_hunter_stake_attack_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_stake_attack')]"
+ POD_combat_move_hunter_stake_attack_tooltip: "#weak;italic I know your weakness, fiend.#!"
+
+ ######### Hunter Red
+ POD_combat_move_hunter_red_sunstone: "@supehunter_icon!Sunstone"
+ POD_combat_move_hunter_red_sunstone_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_red_sunstone')]"
+ POD_combat_move_hunter_red_sunstone_tooltip: "#weak;italic Then spake Jesus again unto them, saying, I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life.#!" # John 8:12 KJV
+
+ ######### Hunter Acre
+ POD_combat_move_hunter_acre_transfiguration: "@supehunter_icon!Transfiguration of the Flesh"
+ POD_combat_move_hunter_acre_transfiguration_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_acre_transfiguration')]"
+ POD_combat_move_hunter_acre_transfiguration_tooltip: "#weak;italic And his eyes were as a flame of fire, and his feet like unto fine brass, as if they burned in a furnace.#!" # Revelation 1:14-15 KJV
+ POD_combat_move_hunter_acre_flight_of_angels: "@supehunter_icon!Flight of Angels"
+ POD_combat_move_hunter_acre_flight_of_angels_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_acre_flight_of_angels')]"
+ POD_combat_move_hunter_acre_flight_of_angels_tooltip: "#weak;italic But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary.#!" # Isaiah 40:31 KJV
+ POD_combat_move_hunter_acre_auto_da_fe: "@supehunter_icon!Auto-da-Fé"
+ POD_combat_move_hunter_acre_auto_da_fe_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_acre_auto_da_fe')]"
+ POD_combat_move_hunter_acre_auto_da_fe_tooltip: "#weak;italic Therefore I strike you with a grievous blow, making you desolate because of your sins.#!" # Micah 6:13 ESV
+
+ ######### Hunter Sisters
+ POD_combat_move_hunter_sisters_fiat_lux: "@supehunter_icon!Fiat Lux"
+ POD_combat_move_hunter_sisters_fiat_lux_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_sisters_fiat_lux')]"
+ POD_combat_move_hunter_sisters_fiat_lux_tooltip: "#weak;italic And God said, Let there be light! And there was light.#!" # Genesis 1:3 KJV
+ POD_combat_move_hunter_sisters_chorale: "@supehunter_icon!Chorale"
+ POD_combat_move_hunter_sisters_chorale_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_sisters_chorale')]"
+ POD_combat_move_hunter_sisters_chorale_tooltip: "#weak;italic O come, let us sing unto the LORD: let us make a joyful noise to the rock of our salvation.#!" # Psalm 95:1 KJV
+ POD_combat_move_hunter_sisters_oratorio: "@supehunter_icon!Oratorio"
+ POD_combat_move_hunter_sisters_oratorio_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_sisters_oratorio')]"
+ POD_combat_move_hunter_sisters_oratorio_tooltip: "#weak;italic But I will sing of thy power; yea, I will sing aloud of thy mercy in the morning: for thou hast been my defence and refuge in the day of my trouble.#!" # Psalm 59:16 KJV
+
+ ######### Hunter Murnau
+ POD_combat_move_hunter_murnau_mirror_of_evil: "@supehunter_icon!Mirror of Evil"
+ POD_combat_move_hunter_murnau_mirror_of_evil_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_murnau_mirror_of_evil')]"
+ POD_combat_move_hunter_murnau_mirror_of_evil_tooltip: "#weak;italic But if ye bite and devour one another, take heed that ye be not consumed one of another.#!" # Galatians 5:15 KJV
+ POD_combat_move_hunter_murnau_arcana: "@supehunter_icon!Arcana"
+ POD_combat_move_hunter_murnau_arcana_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_murnau_arcana')]"
+ POD_combat_move_hunter_murnau_arcana_tooltip: "#weak;italic For we wrestle not against flesh and blood, but against principalities, against powers, against the rulers of the darkness of this world.#!" # Ephesians 6:12 KJV
+
+ ######### Hunter Oculi
+ POD_combat_move_hunter_oculi_heavenly_shepherd: "@supehunter_icon!Heavenly Shepherd"
+ POD_combat_move_hunter_oculi_heavenly_shepherd_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_oculi_heavenly_shepherd')]"
+ POD_combat_move_hunter_oculi_heavenly_shepherd_tooltip: "#weak;italic Then Jesus told him, \"Because you have seen me, you have believed; blessed are those who have not seen and yet have believed.\"#!" # John 20:29 NIV
+ POD_combat_move_hunter_oculi_second_sight: "@supehunter_icon!Second Sight"
+ POD_combat_move_hunter_oculi_second_sight_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_oculi_second_sight')]"
+ POD_combat_move_hunter_oculi_second_sight_tooltip: "#weak;italic Beloved, believe not every spirit, but try the spirits whether they are of God: because many false prophets are gone out into the world.#!" # 1 John 4:1 KJV
+ POD_combat_move_hunter_oculi_water_to_wine: "@supehunter_icon!Water to Wine"
+ POD_combat_move_hunter_oculi_water_to_wine_desc: "[PODCombatMoveDesc('POD_combat_move_hunter_oculi_water_to_wine')]"
+ POD_combat_move_hunter_oculi_water_to_wine_tooltip: "#weak;italic Behold, I am the LORD, the God of all flesh: is there any thing too hard for me?#!" # Jeremiah 32:27 KJV
+
+ ######### Theurgy Medicamenti
+ POD_combat_move_theurgy_drive_back_pain: "@theurgist_icon!Drive Back the Pain"
+ POD_combat_move_theurgy_drive_back_pain_desc: "[PODCombatMoveDesc('POD_combat_move_theurgy_drive_back_pain')]"
+ POD_combat_move_theurgy_drive_back_pain_tooltip: "#weak;italic The theurgist knows that mind has strong effect over matter. While no proper long term healing, soothing the victim's pain is a first step towards recovery.#!" 
+ POD_combat_move_theurgy_mend_deadly_wounds: "@theurgist_icon!Mend Deadly Wounds"
+ POD_combat_move_theurgy_mend_deadly_wounds_desc: "[PODCombatMoveDesc('POD_combat_move_theurgy_mend_deadly_wounds')]"
+ POD_combat_move_theurgy_mend_deadly_wounds_tooltip: "#weak;italic Some call it a miracle. The wise theurgist makes no such claim, knowing full well the potential consequences.#!" 
+
+ ######### Theurgy Ignis
+ POD_combat_move_theurgy_holy_fire: "@theurgist_icon!Holy Fire"
+ POD_combat_move_theurgy_holy_fire_desc: "[PODCombatMoveDesc('POD_combat_move_theurgy_holy_fire')]"
+ POD_combat_move_theurgy_holy_fire_tooltip: "#weak;italic Is it truly holy or does it come from a less reputable source? You will let the learned men debate while you triumph on the battlefield.#!" 
+ POD_combat_move_theurgy_holy_conflagration: "@theurgist_icon!Conflagration of Holy Fire"
+ POD_combat_move_theurgy_holy_conflagration_desc: "[PODCombatMoveDesc('POD_combat_move_theurgy_holy_conflagration')]"
+ POD_combat_move_theurgy_holy_conflagration_tooltip: "#weak;italic There is a time for subtlety and half-measures. This is no such time.#!" 
+
+ ######### Theurgy Geniorum
+ POD_combat_move_theurgy_protective_sigil: "@theurgist_icon!Protective Sigil"
+ POD_combat_move_theurgy_protective_sigil_desc: "[PODCombatMoveDesc('POD_combat_move_theurgy_protective_sigil')]"
+ POD_combat_move_theurgy_protective_sigil_tooltip: "#weak;italic Ancient words of power, borrowed from traditions far older than the caster, still have gravitas enough to make even supernatural attackers pause.#!" 
+
+ ######### Theurgy Necromantiae
+ POD_combat_move_theurgy_expel_restless_dead: "@theurgist_icon!Expel the Restless Dead"
+ POD_combat_move_theurgy_expel_restless_dead_desc: "[PODCombatMoveDesc('POD_combat_move_theurgy_expel_restless_dead')]"
+ POD_combat_move_theurgy_expel_restless_dead_tooltip: "#weak;italic The demon's target is not the possessed; it is us, the observers. The point is to make us despair, to reject our humanity: to see ourselves as ultimately bestial, vile and putrescent; without dignity; ugly; unworthy.#!" 
+
+ ######### Theurgy Oraculi
+ POD_combat_move_theurgy_foreseen_assault: "@theurgist_icon!Foreseen Assault"
+ POD_combat_move_theurgy_foreseen_assault_desc: "[PODCombatMoveDesc('POD_combat_move_theurgy_foreseen_assault')]"
+ POD_combat_move_theurgy_foreseen_assault_tooltip: "#weak;italic The oracles of old were frauds, pagans of the worst sort. Your prophetical abilities clearly come from a higher place.#!" 
+
+ ######### True Faith
+ POD_combat_move_truefaith_lay_on_hands: "@truefaith_icon!Lay on Hands"
+ POD_combat_move_truefaith_lay_on_hands_desc: "[PODCombatMoveDesc('POD_combat_move_truefaith_lay_on_hands')]"
+ POD_combat_move_truefaith_lay_on_hands_tooltip: "#weak;italic And the prayer offered in faith will make the sick person well; the LORD will raise them up.#!" # James 5:15 NIV
+ POD_combat_move_truefaith_penance: "@truefaith_icon!Penance"
+ POD_combat_move_truefaith_penance_desc: "[PODCombatMoveDesc('POD_combat_move_truefaith_penance')]"
+ POD_combat_move_truefaith_penance_tooltip: "#weak;italic I tell you, Nay: but, except ye repent, ye shall all likewise perish.#!" # Luke 13:3 KJV
+ POD_combat_move_truefaith_miracle_of_protection: "@truefaith_icon!Miracle of Protection"
+ POD_combat_move_truefaith_miracle_of_protection_desc: "[PODCombatMoveDesc('POD_combat_move_truefaith_miracle_of_protection')]"
+ POD_combat_move_truefaith_miracle_of_protection_tooltip: "#weak;italic The God of my rock; in him will I trust: he is my shield, and the horn of my salvation, my high tower, and my refuge, my saviour.#!" # 2 Samuel 22:3 KJV
+
+ ######### True Faith Patris
+ POD_combat_move_truefaith_patris_revelation: "@truefaith_icon!Revelation"
+ POD_combat_move_truefaith_patris_revelation_desc: "[PODCombatMoveDesc('POD_combat_move_truefaith_patris_revelation')]"
+ POD_combat_move_truefaith_patris_revelation_tooltip: "#weak;italic Open thou mine eyes, that I may behold wondrous things out of thy law.#!" # Psalm 119:18 KJV
+
+ ######### True Faith Filius
+ POD_combat_move_truefaith_filius_sunder: "@truefaith_icon!Sunder"
+ POD_combat_move_truefaith_filius_sunder_desc: "[PODCombatMoveDesc('POD_combat_move_truefaith_filius_sunder')]"
+ POD_combat_move_truefaith_filius_sunder_tooltip: "#weak;italic This day will the LORD deliver thee into mine hand; and I will smite thee.#!" # 1 Samuel 17:46 KJV
+ POD_combat_move_truefaith_filius_rod_and_staff: "@truefaith_icon!Rod and Staff"
+ POD_combat_move_truefaith_filius_rod_and_staff_desc: "[PODCombatMoveDesc('POD_combat_move_truefaith_filius_rod_and_staff')]"
+ POD_combat_move_truefaith_filius_rod_and_staff_tooltip: "#weak;italic Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me.#!" # Psalm 23:4 KJV
+ POD_combat_move_truefaith_filius_wrath_of_god: "@truefaith_icon!Wrath of God"
+ POD_combat_move_truefaith_filius_wrath_of_god_desc: "[PODCombatMoveDesc('POD_combat_move_truefaith_filius_wrath_of_god')]"
+ POD_combat_move_truefaith_filius_wrath_of_god_tooltip: "#weak;italic And I will execute great vengeance upon them with furious rebukes; and they shall know that I am the LORD, when I shall lay my vengeance upon them.#!" # Ezekiel 25:17 KJV
+
+ ######### True Faith Spiritus
+ POD_combat_move_truefaith_spiritus_aura_of_sanctity: "@truefaith_icon!Aura of Sanctity"
+ POD_combat_move_truefaith_spiritus_aura_of_sanctity_desc: "[PODCombatMoveDesc('POD_combat_move_truefaith_spiritus_aura_of_sanctity')]"
+ POD_combat_move_truefaith_spiritus_aura_of_sanctity_tooltip: "#weak;italic I have hallowed this house, which thou hast built, to put my name there for ever; and mine eyes and mine heart shall be there perpetually.#!" # 1 Kings 9:3 KJV
+ POD_combat_move_truefaith_spiritus_judgement_of_heaven: "@truefaith_icon!Judgement of Heaven"
+ POD_combat_move_truefaith_spiritus_judgement_of_heaven_desc: "[PODCombatMoveDesc('POD_combat_move_truefaith_spiritus_judgement_of_heaven')]"
+ POD_combat_move_truefaith_spiritus_judgement_of_heaven_tooltip: "#weak;italic No weapon that is formed against thee shall prosper; and every tongue that shall rise against thee in judgment thou shalt condemn.#!" # Isaiah 54:17 KJV
+
+ ######### Education unlock requirements
+ pod_combat_req_education_diplomacy_1plus: "Requires #bold Diplomacy education#!"
+ pod_combat_req_education_diplomacy_2plus: "Requires #bold Diplomacy education#! (rank 2+)"
+ pod_combat_req_education_diplomacy_3plus: "Requires #bold Diplomacy education#! (rank 3+)"
+ pod_combat_req_education_diplomacy_4plus: "Requires #bold Diplomacy education#! (rank 4+)"
+ pod_combat_req_education_intrigue_1plus: "Requires #bold Intrigue education#!"
+ pod_combat_req_education_intrigue_2plus: "Requires #bold Intrigue education#! (rank 2+)"
+ pod_combat_req_education_intrigue_3plus: "Requires #bold Intrigue education#! (rank 3+)"
+ pod_combat_req_education_intrigue_4plus: "Requires #bold Intrigue education#! (rank 4+)"
+ pod_combat_req_education_learning_1plus: "Requires #bold Learning education#!"
+ pod_combat_req_education_learning_2plus: "Requires #bold Learning education#! (rank 2+)"
+ pod_combat_req_education_learning_3plus: "Requires #bold Learning education#! (rank 3+)"
+ pod_combat_req_education_learning_4plus: "Requires #bold Learning education#! (rank 4+)"
+ pod_combat_req_education_martial_1plus: "Requires #bold Martial education#!"
+ pod_combat_req_education_martial_2plus: "Requires #bold Martial education#! (rank 2+)"
+ pod_combat_req_education_martial_3plus: "Requires #bold Martial education#! (rank 3+)"
+ pod_combat_req_education_martial_4plus: "Requires #bold Martial education#! (rank 4+)"
+ pod_combat_req_education_martial_prowess_1plus: "Requires #bold Martial Prowess education#!"
+ pod_combat_req_education_martial_prowess_2plus: "Requires #bold Martial Prowess education#! (rank 2+)"
+ pod_combat_req_education_martial_prowess_3plus: "Requires #bold Martial Prowess education#! (rank 3+)"
+ pod_combat_req_education_martial_prowess_4plus: "Requires #bold Martial Prowess education#! (rank 4+)"
+ pod_combat_req_education_stewardship_1plus: "Requires #bold Stewardship education#!"
+ pod_combat_req_education_stewardship_2plus: "Requires #bold Stewardship education#! (rank 2+)"
+ pod_combat_req_education_stewardship_3plus: "Requires #bold Stewardship education#! (rank 3+)"
+ pod_combat_req_education_stewardship_4plus: "Requires #bold Stewardship education#! (rank 4+)"
+ pod_combat_req_kj_arts: "Requires access to the #bold Kuei-jin Arts#! ([GetTrait('kueijin').GetName( GetNullCharacter )], [GetTrait('dhampyr').GetName( GetNullCharacter )], or [GetTrait('hun_and_po').GetName( GetNullCharacter )])"

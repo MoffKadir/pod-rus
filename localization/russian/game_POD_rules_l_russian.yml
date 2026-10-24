@@ -50,7 +50,7 @@
  rule_pod_seek_knowledge_limits: "$POD_gamerule$ Условия для изучения редких [Glossary('дисциплин','game_concept_discipline_desc')]"
  setting_pod_seek_knowledge_limits_enabled: "Включено"
  setting_pod_seek_knowledge_limits_enabled_desc: "Перед изучением редких вампирских [Glossary('дисциплин','game_concept_discipline_desc')] вам потребуется выполнить некоторые из их обязательных требований."
- setting_pod_seek_knowledge_limits_disabled: "Отключено"
+ setting_pod_seek_knowledge_limits_disabled: "#high Отключено#!"
  setting_pod_seek_knowledge_limits_disabled_desc: "Редкие вампирские [Glossary('дисциплины','game_concept_discipline_desc')] не требуют от вас выполнения некоторых из их обязательных условий перед изучением."
 
  rule_pod_splat_hostility: "$POD_gamerule$ Враждебность видов"
@@ -73,9 +73,19 @@
 
  rule_pod_sorcery_availability: "$POD_gamerule$ Доступность #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейства#!#!"
  setting_pod_sorcery_availability_restricted: "Ограничено"
- setting_pod_sorcery_availability_restricted_desc: "Только бастет и человекоподобные виды, такие как охотники, гули или [GetTrait('kinfolk').GetName(GetNullCharacter)] могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nПосле [Glossary('объятий','game_concept_Embrace_desc')] оно превращается в [GetTrait('bloodsorcery').GetName(GetNullCharacter)|l]."
+ setting_pod_sorcery_availability_restricted_desc: "Только бастет и [Concept('mortal_like_splats', 'смертные виды')|E] могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nПосле [Glossary('объятий','game_concept_Embrace_desc')] оно превращается в [GetTrait('bloodsorcery').GetName(GetNullCharacter)|l]."
  setting_pod_sorcery_availability_unrestricted: "#high @haight_icon! Без ограничений#!"
  setting_pod_sorcery_availability_unrestricted_desc: "Все [Concept('splats', 'виды')|E] могут освоить #TOOLTIP:GAME_TRAIT,sorcerer,[GetNullCharacter] #L чародейство#!#!.\nСвойство сохраняется после [Glossary('объятий','game_concept_Embrace_desc')]."
+
+ rule_pod_sol_decision_requirements: "$POD_gamerule$ Доступность #TOOLTIP:GAME_TRAIT,eternal_rebirth_seeker,[GetNullCharacter] #L поисков вечного перерождения#!#!"
+ setting_pod_sol_decision_requirements_st_mode: "#high @wod_icon! Бессмертное противостояние#!"
+ setting_pod_sol_decision_requirements_st_mode_desc: "На поиски вечного перерождения могут отправиться только #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумии#!#! и их явные враги."
+ setting_pod_sol_decision_requirements_default: "Вечный крестовый поход"
+ setting_pod_sol_decision_requirements_default_desc: "На поиски вечного перерождения могут отправиться только #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумии#!#!, их союзники и враги."
+ setting_pod_sol_decision_requirements_haight_mode: "#high @haight_icon! Великая война#!"
+ setting_pod_sol_decision_requirements_haight_mode_desc: "На поиски вечного перерождения могут отправиться #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумии#!#!, их союзники, враги и все, кто интересуется подобными вопросами."
+ setting_pod_sol_decision_requirements_unrestricted:0 "#high @mage_icon! Всеобщая борьба#!"
+ setting_pod_sol_decision_requirements_unrestricted_desc: "На поиски вечного перерождения может отправиться любой персонаж с высоким показателем [learning_i] [Concept('learning', 'учёности')|E]."
 
  rule_pod_splat_mixing: "$POD_gamerule$ Смешение видов"
  setting_pod_splat_mixing_default: "По умолчанию"
@@ -213,9 +223,9 @@
 
  rule_baybars_purge_difficulty: "$POD_gamerule$ Бейбарсова чистка"
  setting_baybars_purge_difficulty_none: "#high Без чистки#!"
- setting_baybars_purge_difficulty_none_desc: "Египетский сверхъестественный кризис - Бейбарсова чистка не произойдёт."
+ setting_baybars_purge_difficulty_none_desc: "Бейбарсова чистка египетских сверхъестественных существ не произойдёт."
  setting_baybars_purge_difficulty_default: "Стандартная Бейбарсова чистка"
- setting_baybars_purge_difficulty_default_desc: "Египетский сверхъестественный кризис - Бейбарсова чистка произойдёт."
+ setting_baybars_purge_difficulty_default_desc: "Бейбарсова чистка египетских сверхъестественных существ произойдёт."
 
  rule_pod_patreon_characters: "$POD_gamerule$ Персонажи покровителей"
  setting_pod_patreon_characters_enabled: "Включено"
@@ -422,6 +432,17 @@
  setting_pod_ai_levy_discount_50_desc: "Содержание [Concept('levy', 'смертного сброда')|E] обходится ИИ на #V 50%#! дешевле."
  setting_pod_ai_levy_discount_90: "#high 90%#!"
  setting_pod_ai_levy_discount_90_desc: "Содержание [Concept('levy', 'смертного сброда')|E] обходится ИИ на #V 90%#! дешевле."
+
+ rule_POD_scaling_discipline_mastery: "$POD_gamerule$ Возрастающая стоимость мастерства [Glossary('дисциплин','game_concept_discipline_desc')]"
+ setting_POD_scaling_discipline_mastery_disabled: "Отключено"
+ setting_POD_scaling_discipline_mastery_disabled_desc: "Все достоинства [Glossary('дисциплин','game_concept_discipline_desc')] стоят одинаково."
+ setting_POD_scaling_discipline_mastery_enabled: "#high Включено#!"
+ setting_POD_scaling_discipline_mastery_enabled_desc: "Достоинства [Glossary('дисциплин','game_concept_discipline_desc')] более высокого уровня требуют всё больше очков достоинств."
+ rule_POD_clan_affinity: "$POD_gamerule$ [Glossary('Клановая','game_concept_Clan_desc')] предрасположенность к [Glossary('дисциплинам','game_concept_discipline_desc')]"
+ setting_POD_clan_affinity_disabled: "Отключено"
+ setting_POD_clan_affinity_disabled_desc: "Все достоинства [Glossary('дисциплин','game_concept_discipline_desc')] стоят одинаково независимо от [Glossary('клана','game_concept_Clan_desc')]."
+ setting_POD_clan_affinity_enabled: "#high Включено#!"
+ setting_POD_clan_affinity_enabled_desc: "Достоинства [Glossary('внеклановых','game_concept_Clan_desc')] [Glossary('дисциплин','game_concept_discipline_desc')] стоят на #V 1#! очко дороже. [Glossary('Внутриклановые','game_concept_Clan_desc')] достоинства стоят на #V 1#! очко дешевле (минимальная стоимость — 1). Это не затрагивает каитиффов, слабокровных и созданные игроком линии крови."
 
  # Overwritten vanilla game rules
  rule_POD_conquerors_frequency: "$rule_conquerors_frequency$"
