@@ -12,6 +12,8 @@
  PLAYER_UMBRA_APTITUDE_MULT: "[GetPlayer.MakeScope.ScriptValue('umbra_aptitude_mult')|P0%]"
  PLAYER_UMBRA_SENSE: "[GetPlayer.MakeScope.ScriptValue('umbra_sense_value')|P0]%"
 
+ buildings_umbra_aptitude_trod: "[Concept('duchy_building', 'Герцогская постройка')|E] тродов"
+
  BASE_PROGRESS_VALUE: "Базовый прогресс"
  BASE_APTITUDE_VALUE: "Базовая пригодность"
 
@@ -93,16 +95,6 @@
  umbra_discovery.neighboring_realm.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] пути ко всем соседним мирам в измерении $umbra_discovery_region$, достойном #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!"
  umbra_discovery_grace: "Встреча"
  umbra_discovery.grace.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'добились', Select_CString(this_character.IsFemale, 'добилась', 'добился' ))] для вас аудиенции у местного правителя [Concept('umbra', 'Умбры')|E] в измерении $umbra_discovery_region$, достойном #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!"
- umbra_discovery_unstoppable_warrior: "Инкарна-воин"
- umbra_discovery.unstoppable_warrior.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] подсказку о том, что в измерении $umbra_discovery_region$ находится инкарна-воин, достойный #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!"
- umbra_discovery_storyteller: "Аватар Геи"
- umbra_discovery.storyteller.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] подсказку о том, что в измерении $umbra_discovery_region$ находится аватар Геи, достойный #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!"
- umbra_discovery_release_from_bondage: "Могущественный дух"
- umbra_discovery.release_from_bondage.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] подсказку о том, что в измерении $umbra_discovery_region$ находится инкарна или столь же могущественный дух, достойный #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!"
- umbra_discovery_firebringer: "Инкарна-обманщик"
- umbra_discovery.firebringer.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] подсказку о том, что в измерении $umbra_discovery_region$ находится инкарна-обманщик (или, возможно, сам Койот?), достойный #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!"
- umbra_discovery_rebirthing: "Гея"
- umbra_discovery.rebirthing.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] подсказку о том, что в измерении $umbra_discovery_region$ находится сама Гея, достойная #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!"
  umbra_discovery_sleep_of_the_hero: "Духи предков Фианна"
  umbra_discovery.sleep_of_the_hero.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] подсказку о том, что в измерении $umbra_discovery_region$ находятся некоторые духи предков Фианна, достойные #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!"
  umbra_discovery_call_great_fenris: "Великий Фенрир"
@@ -197,16 +189,14 @@
  umbra_discovery.soothsay.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] вдохновение для искусства [GetTrait('art_soothsay').GetName( GetPlayer )] в измерении $umbra_discovery_region$, достойное #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
  umbra_discovery_wayfare: "Странствия"
  umbra_discovery.wayfare.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] вдохновение для искусства [GetTrait('art_wayfare').GetName( GetPlayer )] в измерении $umbra_discovery_region$, достойное #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
- umbra_discovery_dream_craft: "Ремесло снов"
- umbra_discovery.dream_craft.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] вдохновение для искусства [GetTrait('art_dream_craft').GetName( GetPlayer )] в измерении $umbra_discovery_region$, достойное #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
- umbra_discovery_aphrodesia: "Афродизия"
- umbra_discovery.aphrodesia.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] вдохновение для искусства [GetTrait('art_aphrodesia').GetName( GetPlayer )] в измерении $umbra_discovery_region$, достойное #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
- umbra_discovery_kryos: "Криос"
- umbra_discovery.kryos.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] вдохновение для искусства [GetTrait('art_kryos').GetName( GetPlayer )] в измерении $umbra_discovery_region$, достойное #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
+ umbra_discovery_oneiromancy: "Онейромантия"
+ umbra_discovery.oneiromancy.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] вдохновение для искусства [GetTrait('art_umbra_discovery_oneiromancy').GetName( GetPlayer )] в измерении $umbra_discovery_region$, достойное [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
  umbra_discovery_metamorphosis: "Метаморфозис"
  umbra_discovery.metamorphosis.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] вдохновение для искусства [GetTrait('art_metamorphosis').GetName( GetPlayer )] в измерении $umbra_discovery_region$, достойное #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
  umbra_discovery_pyretics: "Пламя"
  umbra_discovery.pyretics.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] вдохновение для искусства [GetTrait('art_pyretics').GetName( GetPlayer )] в измерении $umbra_discovery_region$, достойное #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
+ umbra_discovery_skycraft: "Ремесло бурь"
+ umbra_discovery.skycraft.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] вдохновение для искусства [GetTrait('art_skycraft').GetName( GetPlayer )] в измерении $umbra_discovery_region$, достойное [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
  umbra_discovery_realm_nature: "Природа"
  umbra_discovery.realm_nature.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] вдохновение для искусства [GetTrait('realm_nature').GetName( GetPlayer )] в измерении $umbra_discovery_region$, достойное #TOOLTIP:game_concept_umbra_expedition_desc #E путешествия в Умбру#!#!."
  umbra_discovery_pet_dragon: "Драконье яйцо"
@@ -341,8 +331,8 @@
  umbra_discovery.elemental_bane.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] в измерении $umbra_discovery_region$ элементального бэйна, достойного [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
  umbra_discovery_wyrm_fetish: "Фетиш Вирма"
  umbra_discovery.wyrm_fetish.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] в измерении $umbra_discovery_region$ фетиш Вирма, достойный [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
- umbra_discovery_urgetaints_xp: "Благосклонность маэлджина"
- umbra_discovery.urgetaints_xp.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] возможность заслужить благосклонность маэлджина в измерении $umbra_discovery_region$, достойную [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
+ umbra_discovery_maeljingifts_xp: "Благосклонность маэлджина"
+ umbra_discovery.maeljingifts_xp.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] возможность заслужить благосклонность маэлджина в измерении $umbra_discovery_region$, достойную [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
  umbra_discovery_temple_obscura: "Храм Обскура"
  umbra_discovery.temple_obscura.desc: "$umbra_discovery_finder$ [Select_CString( this_character.IsLocalPlayer, 'нашли', Select_CString(this_character.IsFemale, 'нашла', 'нашёл' ))] путь в следующий зал храма Обскура в измерении $umbra_discovery_region$, достойный [Concept('umbra_expedition', 'путешествия в Умбру')|E]."
 
@@ -1084,7 +1074,7 @@
  the_homeland_of_the_silver_fangs_effect_desc: "$UMBRA_DISCOVERY_FETISH$\n$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_the_homeland_of_the_corax: "Родина Кораксов"
- umbra_realm_the_homeland_of_the_corax_desc: "Родина Кораксов - гигантское дерево с бесчисленными раскидистыми ветвями, наполненными укромными уголками, идеально подходящими для гнездования. На дереве постоянно сияет Гелиос, который связан почти со всеми умбральными сферами, что позволяет оборотням-воронам быстро перемещаться."
+ umbra_realm_the_homeland_of_the_corax_desc: "Родина Кораксов - гигантское дерево с бесчисленными раскидистыми ветвями, наполненными укромными уголками, идеально подходящими для гнездования. На дереве постоянно сияет [Glossary('Гелиос', 'glossary_helios_tt')], который связан почти со всеми умбральными сферами, что позволяет оборотням-воронам быстро перемещаться."
  the_homeland_of_the_corax_effect_desc: "$UMBRA_RECRUIT_BYGONE$"
 
  umbra_realm_the_homeland_of_the_nuwisha: "Родина Нувиша"
@@ -1209,7 +1199,7 @@
  umbra_realm_court_of_sokhta: "Двор Сохты"
  umbra_realm_court_of_sokhta_desc: "$umbra_realm_sokhta_desc$"
  umbra_realm_sokhta: "Сохта"
- umbra_realm_sokhta_desc: "Сохта - аспект Луны, небожительницы, которая покровительствует Гару и многим другим меняющимся породам, а при ее дворе обитает множество Лун и других духов, благосклонных нации Гару."
+ umbra_realm_sokhta_desc: "Сохта - аспект [Glossary('Луны', 'glossary_luna_tt')], [Glossary('целестина', 'glossary_celestine_tt')], которая покровительствует Гару и многим другим [Glossary('фера', 'glossary_fera_tt')], а при ее дворе обитает множество Лун и других духов, благосклонных нации Гару."
  court_of_sokhta_effect_desc: "Можно получить соответствующие планетарные дары через #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#! [GetPlayer.Custom('PlanetarygiftsAddicionalChance')]"
 
  umbra_realm_court_of_katanka_sonnak: "Двор Катанка-Соннак"
@@ -1331,7 +1321,7 @@
  sun_effect_desc: ""
 
  umbra_realm_shard_realm_of_prime: "Отколовшийся мир Основы"
- umbra_realm_shard_realm_of_prime_desc: "[Glossary('Отколовшийся мир','game_concept_shard_realm_desc')], связанный с Землёй и Луной."
+ umbra_realm_shard_realm_of_prime_desc: "[Glossary('Отколовшийся мир','game_concept_shard_realm_desc')], связанный с Землёй и [Glossary('Луной', 'glossary_luna_tt')]."
  shard_realm_of_prime_effect_desc: ""
 
  umbra_realm_darkside_moon_base: "Лунная база «Дарксайд»"
@@ -1491,7 +1481,7 @@
 
  umbra_realm_maeljin_duchies: "Герцогства маэлджинов"
  umbra_realm_maeljin_duchies_desc: "Массивная стена из камня и окаменелой кости охраняет [UmbraGlossaryLocalized('central_duchy','Центральное герцогство')], и владения каждого из инкарн-маэлджин примыкают к этой стене, окружая её со всех сторон. Стена, окружающая Центральное герцогство, увенчана коварными, острыми как бритва железными шипами, которые регулярно украшаются телами тех, кто вызвал особое неудовольствие инкарны-маэлджина, к чьим владениям примыкает этот участок стены."
- maeljin_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Вы получите [Concept('lifestyle_experience', 'опыт пути')|E] [Concept('urgetaints_lifestyle', 'скверны инстинктов')|E], если у вас есть этот [Concept('lifestyle', 'образ жизни')|E]"
+ maeljin_duchies_effect_desc: "@wyrm_icon![umbra_expedition|E]: Вы получите [Concept('lifestyle_experience', 'опыт пути')|E] [Concept('maeljingifts_lifestyle', 'даров маэлджинов')|E], если у вас есть этот [Concept('lifestyle', 'образ жизни')|E]"
 
  umbra_realm_border_duchies: "Пограничные герцогства"
  umbra_realm_border_duchies_desc: "Некоторые части [UmbraGlossaryLocalized('malfeas','Малфеаса')], лежащие между [UmbraGlossaryLocalized('maeljin_duchies','герцогствами маэлджинов')], кажутся бесплодными пустошами, но внешность может быть обманчивой. Эти пустоши на самом деле являются двумя другими герцогствами, принадлежащими инкарнам-маэлджин, которые избегают взаимодействия с себе подобными."

@@ -462,6 +462,7 @@
  POD_vanish_interaction: "Исчезновение"
  POD_vanish_interaction_desc: "Используя способности Затемнения, вы можете на некоторое время пропасть из поля зрения общественности и остановить любой заговор, направленный против вас."
  POD_vanish_tt: "Все происки, направленные против вашего персонажа, враждебные и личные, будут прекращены."
+ POD_uktena_invisibility_perk_interaction_desc: "Используя свой дар Уктена, вы можете на некоторое время исчезнуть из поля зрения общественности, остановив любой направленный против вас заговор."
 
  POD_silence_death_modifier: "Молчание смерти"
  POD_silence_death_modifier_desc: "Трудно общаться, когда жуткая тишина следует за вами повсюду."
@@ -481,24 +482,7 @@
  POD_create_gargoyle_interaction.gargoyle_experiment_failure.tt: "Эксперимент провалился!"
  POD_create_gargoyle_interaction.gargoyle_experiment_failure.toast.t: "Провал эксперимента"
  POD_create_gargoyle_interaction.gargoyle_experiment_success.toast.t: "Успех эксперимента"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_stonewolf.tt: "Создана гаргулья из касты Каменных гончих"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_bingmayong.tt: "Создана гаргулья из касты Бинмайон"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_shade.tt: "Создана гаргулья из касты Теней"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_blood.tt: "Создана гаргулья из касты Кровавых защитников"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_boyar.tt: "Создана гаргулья из касты Бояр"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_caryatid.tt: "Создана гаргулья из касты Кариатида"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_scout.tt: "Создана гаргулья из касты Разведчиков"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_warrior.tt: "Создана гаргулья из касты Воинов"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_sentinel.tt: "Создана гаргулья из касты Стражей"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_chatterer.tt: "Создана гаргулья из касты Щелкунов"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_serpent.tt: "Создана гаргулья из касты Песчаных змей"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_bone.tt: "Создана гаргулья из касты Крысоловов"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_fairy.tt: "Создана гаргулья из касты Фей"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_onyx_cat.tt: "Создана гаргулья из касты Ониксовых котов"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_golden_manticore.tt: "Создана гаргулья из касты Золотых мантикор"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_kintsugi.tt: "Создана гаргулья из касты Кинцуги"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_rogata.tt: "Создана гаргулья из касты Рогата"
- POD_create_gargoyle_interaction.gargoyle_experiment_success_totai.tt: "Создана гаргулья из касты Тотай"
+ POD_create_gargoyle_interaction.gargoyle_experiment_success.tt: "[GetModifier(SCOPE.GetFlagName('saved_tooltip')).GetNameWithTooltip] успешно создана"
 
  POD_create_zombu_interaction: "Создать зомбу"
  POD_create_zombu_interaction_desc: "Провести некромантическую церемонию оживления трупа в зомбу путём принесения в жертву другого смертного."
@@ -560,6 +544,8 @@
 
  POD_hunt_spirit_interaction: "Охота на духов"
  POD_hunt_spirit_interaction_desc: "Охотиться на духа животного в своей локации и поглотить его."
+ activate_spirit_hunt_modifier_ct: "Вы будете охотиться на духов, чтобы восстановить свою силу воли, навсегда снижая их готовность заключать с вами договоры."
+ deactivate_spirit_hunt_modifier_ct: "Вы больше не будете охотиться за духами, чтобы восстановить силу воли."
 
  POD_purification_interaction: "Очищение"
  POD_purification_interaction_desc: "Ваш третий глаз омывает цель светящимся сиянием, позволяя исцелить хвори персонажа [recipient.GetFirstName]."
@@ -755,7 +741,6 @@
  POD_train_serpentis: "Случайно выбранный ученик получит свойство «[GetTrait('serpentis').GetName(GetNullCharacter)]», если у него его ещё нет."
  POD_train_abombwe: "Случайно выбранный ученик получит свойство «[GetTrait('abombwe').GetName(GetNullCharacter)]», если у него его ещё нет."
  POD_train_spiritus: "Случайно выбранный ученик получит свойство «[GetTrait('spiritus').GetName(GetNullCharacter)]», если у него его ещё нет."
- POD_train_thinbloodalchemy: "Случайно выбранный ученик получит свойство «[GetTrait('thinbloodalchemy').GetName(GetNullCharacter)]», если у него его ещё нет."
  POD_train_oblivion: "Случайно выбранный ученик получит свойство «[GetTrait(oblivion).GetName(GetNullCharacter)]», если у него его ещё нет."
  POD_train_flight: "Случайно выбранный ученик получит свойство «[GetTrait('flight').GetName(GetNullCharacter)]», если у него его ещё нет."
  POD_train_kai: "Случайно выбранный ученик получит свойство «[GetTrait('kai').GetName(GetNullCharacter)]», если у него его ещё нет."
@@ -919,8 +904,8 @@
  POD_hunger_risk_increase_tenet_continued_life_tt: "Мой догмат «Продолжение жизни» повышает мой аппетит."
 
  POD_piety_for_perk_interaction: "Медитировать над гуморами"
- POD_piety_for_perk_interaction_desc: "Вы будете размышлять о метафизике #TOOLTIP:game_concept_resonance_desc #E гуморизма#!#!."
- POD_piety_for_perk_interaction_options_heading: "Над какими #TOOLTIP:game_concept_resonance_desc #E гуморами#!#! вы хотите помедитировать?"
+ POD_piety_for_perk_interaction_desc: "Вы будете размышлять о метафизике [Concept('resonance','гуморизма')|E]."
+ POD_piety_for_perk_interaction_options_heading: "Над какими [Concept('resonance','гуморами')|E] вы хотите помедитировать?"
  POD_piety_for_perk_interaction_animal: "#TOOLTIP:game_concept_animal_lifestyle_desc #E Животный резонанс#!#!"
  POD_piety_for_perk_interaction_choleric: "#TOOLTIP:game_concept_choleric_lifestyle_desc #E Холерический резонанс#!#!"
  POD_piety_for_perk_interaction_melancholic: "#TOOLTIP:game_concept_melancholy_lifestyle_desc #E Меланхолический резонанс#!#!"
@@ -1103,22 +1088,6 @@
  POD_choose_justicar_interaction_desc: "Вы хотите, чтобы [recipient.GetFirstName] [Select_CString(recipient.IsFemale, 'стала', 'стал' )] вашим [Glossary('юстициаром','game_concept_justicar_desc')]."
  POD_choose_justicar_interaction.tt: "[recipient.GetFirstName] будет [Select_CString(recipient.IsFemale, 'назначена', 'назначен' )] [Glossary('юстициаром','game_concept_justicar_desc')]"
 
- POD_thinbloodalchemy_use_alchemical_product_interaction: "Использовать алхимическое изделие"
- POD_thinbloodalchemy_use_alchemical_product_interaction_desc: "Использовать алхимическое изделие."
- POD_thinbloodalchemy_use_alchemical_product_interaction_options_heading: "Какое изделие мне использовать?"
- POD_thinbloodalchemy_offer_alchemical_product_interaction: "Предложить алхимическое изделие"
- POD_thinbloodalchemy_offer_alchemical_product_interaction_desc: "Предложить персонажу [recipient.GetFirstName] алхимическое изделие."
- POD_thinbloodalchemy_offer_alchemical_product_interaction_options_heading: "Какое изделие мне предложить?"
- POD_thinbloodalchemy_sell_alchemical_product_interaction: "Продать алхимическое изделие"
- POD_thinbloodalchemy_sell_alchemical_product_interaction_desc: "Продать персонажу [recipient.GetFirstName] алхимическое изделие."
- POD_thinbloodalchemy_sell_alchemical_product_interaction_options_heading: "Какое изделие мне продать?"
- POD_thinbloodalchemy_buy_alchemical_product_interaction: "Купить алхимическое изделие"
- POD_thinbloodalchemy_buy_alchemical_product_interaction_desc: "Купить одно из алхимических изделий персонажа [recipient.GetFirstNamePossessive]."
- POD_thinbloodalchemy_buy_alchemical_product_interaction_options_heading: "Какое изделие мне купить?"
- POD_thinbloodalchemy_poison_alchemical_product_interaction: "Использовать алхимический яд"
- POD_thinbloodalchemy_poison_alchemical_product_interaction_desc: "Попытаться отравить персонажа [recipient.GetFirstName] с помощью алхимического изделия."
- POD_thinbloodalchemy_poison_alchemical_product_interaction_options_heading: "Какое изделие мне использовать?"
-
  #POD_call_zmei_to_war_interaction: "Призвать Змея"
  #POD_call_zmei_to_war_interaction_desc: "Призвать Змея на войну."
  #POD_call_zmei_to_war_interaction_tt: "Вы уже призвали профессионалов [GetMaA('zmei').GetName] на войну [GetPlayer.MakeScope.GetVariable('zmei_summon').War.GetName]."
@@ -1185,3 +1154,38 @@
  POD_transmogrify_interaction_book: "Словно открытая книга"
  POD_transmogrify_interaction_pedestal: ""
  POD_transmogrify_interaction_odious_chalice: ""
+
+ ######################################################
+ # VAMPIRE CLAN HIDEOUT CHARACTER INTERACTION LOCALIZATION
+ ######################################################
+
+ # NOSFERATU — Buy Hook
+ nosferatu_warren_buy_hook: "Потянуть за нить в нор"
+ nosferatu_warren_buy_hook_desc: "Сеть нор хранит секреты: компромат, рычаги влияния, оружие для интриг. У каждого влиятельного человека есть что скрывать, и носферату уже нашли эти тайны."
+ nosferatu_warren_buy_hook_court_only_tt: "Целью должен быть [Concept('courtier', 'придворный')|E]"
+ nosferatu_warren_buy_hook_realm_only_tt: "Цель должна находиться в пределах вашей [Concept('realm', 'державы')|E]"
+
+ # SALUBRI WATCHER — Share Knowledge
+ salubri_watcher_share_knowledge: "Поделиться летописной мудростью"
+ salubri_watcher_share_knowledge_desc: "Хранилище летописей хранит знания, которые ни один салюбри не должен нести в одиночку. Поделитесь его содержанием с одним из детей Саулота, и вы оба станете благодаря этому сильнее."
+ salubri_watcher_share_knowledge_martial_tt: "И вы, и воин получите опыт пути [martial_i][Concept('martial', 'войны')|E]"
+ salubri_watcher_share_knowledge_intrigue_tt: "И вы, и наблюдатель получите опыт пути [intrigue_i][Concept('intrigue', 'интриг')|E]"
+ salubri_watcher_share_knowledge_learning_tt: "И вы, и целитель получите опыт пути [learning_i][Concept('learning', 'учёности')|E]"
+
+ ######################################################
+ # Mary the Black — Re-embrace interaction
+ ######################################################
+ POD_maryb_michael_reembrace_interaction: "Принять в Мечту"
+ POD_maryb_michael_reembrace_interaction_desc: "Михаил признаёт своих и делает цель вашим дитя.\n\n#shinygold Ты видишь во всех них меня, любимая. Я вижу в них себя. Все они всегда возвращались домой.#!"
+
+ # Acceptance-breakdown reasons (ai_accept). Shown to the player as the
+ # target weighs recognition into the Dream.
+ mary_reembrace_accept_toreador: "Клан Тореадор; клан Михаила: $VALUE|=+0$"
+ mary_reembrace_accept_zealous: "Истинно верит в восстановленную Мечту: $VALUE|=+0$"
+ mary_reembrace_accept_courtier: "Уже находится при дворе основателя: $VALUE|=+0$"
+ mary_reembrace_accept_lover: "Любовная связь с основателем: $VALUE|=+0$"
+ mary_reembrace_decline_house_head: "Возглавляет свой дом и не будет его распускать: $VALUE|=+0$"
+ mary_reembrace_decline_independent: "Независимые правители не подчинятся ни одному основателю: $VALUE|=+0$"
+ mary_reembrace_decline_arrogant: "Слишком горд, чтобы брать чужое имя: $VALUE|=+0$"
+ mary_reembrace_decline_rival: "Считает основателя соперником: $VALUE|=+0$"
+ mary_reembrace_decline_highborn_crown: "Венценосная голова, которой есть что терять: $VALUE|=+0$"

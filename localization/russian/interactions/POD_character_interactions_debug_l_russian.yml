@@ -51,8 +51,14 @@
  POD_debug_add_halfsplat_interaction: "Добавить гибридный вид"
  POD_debug_add_halfsplat_interaction_desc: "Добавить персонажу [recipient.GetShortUIName] свойство гибридного [Concept('splat', 'вида')|E], а также необходимые эффекты инициализации."
 
- POD_debug_teach_spell_of_life_interaction: "Научить заклинанию Жизни"
- POD_debug_teach_spell_of_life_interaction_desc: "Научить персонажа [recipient.GetShortUIName] заклинанию Жизни, которое позволяет создавать мумий"
+ POD_debug_teach_spell_of_life_interaction: "Научить пути вечного возрождения"
+ POD_debug_teach_spell_of_life_interaction_desc: "Научить персонажа [recipient.GetShortUIName] пути вечного возрождения, который позволяет создавать #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумий#!#!"
+ POD_debug_spell_of_life_interaction_shemsuheru: "Создать [GetTrait('shemsuheru').GetName( GetNullCharacter )|l]"
+ POD_debug_spell_of_life_interaction_ishmaelite: "Создать #L [GetFaithByKey('ishmaelite').GetName|l]ую#! мумию"
+ POD_debug_spell_of_life_interaction_cabiri: "Создать #TOOLTIP:GAME_TRAIT,cabiri,GetNullCharacter #L кабирита#!#!"
+ POD_debug_spell_of_life_interaction_custom: "Создать мумию из династии [GetTrait('custom_mummy_dynasty').GetName( GetNullCharacter )]"
+ POD_debug_spell_of_life_interaction_wutian: "Создать [GetTrait('wutian').GetName( GetNullCharacter )|l]"
+ POD_debug_spell_of_life_interaction_wukuei: "Создать [GetTrait('wukuei').GetName( GetNullCharacter )|l]"
 
  POD_debug_umbra_adventure_interaction: "Прототип генерации карты Умбры"
 

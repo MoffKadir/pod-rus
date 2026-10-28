@@ -7,7 +7,7 @@
  POD_weaken_fetter_interaction_need_fetter: "There has to be a [Concept('Fetter', 'Оковы')|E] to weaken in the first place. Take notice that not all [Concept('Fetter', 'оков')|E] can be weakened."
  POD_weaken_fetter_interaction.success: "Your tampering will succeed!"
  POD_weaken_fetter_interaction.failure: "Your tampering will fail!"
- POD_weaken_fetter_interaction_effect: "Случайные [Concept('Fetter', 'оковы')|E] будут ослаблены или даже уничтожены."
+ POD_weaken_fetter_interaction_effect: "Случайные [Concept('Fetter', 'оковы')|E] ослаблены или уничтожены."
 
  POD_bind_interaction: "Привязать призрака"
  POD_bind_interaction_desc: "Свяжите сущность темной магией и чистой волей. Ей вряд ли понравится быть привязанным, и, скорее всего, он сильно обидится на вас за это. Повторные попытки могут усилить привязку."
@@ -17,6 +17,7 @@
  POD_bind_interaction.failure: "Your binding will fail!"
  POD_bind_interaction_hook: "#i The strength of the [hook|E] depends on how many [Concept('Fetter', 'Оковы')|E] points your binding has, with 10 being the maximum#!"
  POD_bind_interaction_level: "#i Every level of your binding increases the usefulness of this $POD_splat_wraith$ as if they had +1 to all [skills|E]#!"
+
  POD_convert_to_wraith_interaction: "Ритуальное убийство"
  POD_convert_to_wraith_interaction_desc: "Оскверните душу этого человека, а затем убейте его древними оккультными техниками, которые гарантируют, что он вернется призраком при вашем дворе."
  convert_to_wraith_desc_general: "Создать призрака"
@@ -27,11 +28,8 @@
  command_wraith_interaction.release: "Освободить"
  POD_not_in_possession: "#bold Не#! вселился в какого-либо персонажа."
 
- POD_command_wraith_recall_interaction: "Отзыв"
- POD_command_wraith_recall_interaction_desc: "[recipient.GetTitledFirstName] прибудет к вашему двору."
- POD_command_wraith_recall_interaction_extra_icon: "$hook_extra_icon$"
  POD_summon_wraith_on_death_interaction: "Призвать призрака после смерти"
- POD_summon_wraith_on_death_interaction_desc: "If [recipient.GetFirstNamePossessive] dies within 10 years, summon [recipient.GetHerHim] to your court when [recipient.GetSheHe] dies, becoming a [GetTrait('wraith').GetName( GetNullCharacter )] in the process."
+ POD_summon_wraith_on_death_interaction_desc: "If [recipient.GetFirstName] dies within 10 years, summon [recipient.GetHerHim] to your court when [recipient.GetSheHe] dies, becoming a [GetTrait('wraith').GetName( GetNullCharacter )] in the process."
  marked_wraith_has_arrive: "Помеченный дух прибыл"
 
  POD_summon_wraith_interaction: "Призвать призрака"

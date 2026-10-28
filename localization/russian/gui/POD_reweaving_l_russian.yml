@@ -10,7 +10,7 @@
  TRAIT_CHANGE_WINDOW_TAB_STRESS: "Стресс"
  TRAIT_CHANGE_WINDOW_TAB_HEALTH: "Здоровье"
  TRAIT_CHANGE_WINDOW_TAB_PHYSICAL: "Физические свойства"
- TRAIT_CHANGE_WINDOW_ENACT_COST: "Стоимость: [SelectLocalization( GetScriptedGui('is_animantis').IsValid(GuiScope.SetRoot(Character.MakeScope).End), 'MOD_GOLD_PREFIX', 'MOD_PIETY_PREFIX' )] [Character.MakeScope.ScriptValue('POD_trait_change_value')|0]"
+ TRAIT_CHANGE_WINDOW_ENACT_COST: "Стоимость: $MOD_PIETY_PREFIX$ [Character.MakeScope.ScriptValue('POD_trait_change_value')|0]"
  TRAIT_CHANGE_WINDOW_CURRENT_TRAIT: "#V Текущее свойство#!"
  TRAIT_CHANGE_WINDOW_OPPOSITE_TRAIT: "Уже имеется или выбрано противоположное свойство."
  TRAIT_CHANGE_WINDOW_PERSONALITY_TRAIT_LIMIT: "Уже имеется или выбраны #V 4#! свойства личности."

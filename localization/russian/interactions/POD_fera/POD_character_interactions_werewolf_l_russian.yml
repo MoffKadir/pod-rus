@@ -2,41 +2,54 @@
 
  POD_divide_interaction: "Разделение"
  POD_divide_interaction_desc: "Вы посеете семя раздора в этой державе, заставив вассалов быть недовольными своим сюзереном."
+ POD_divide_interaction_success: "Семена сомнений"
  divide_modifier: "Разделение"
  divide_modifier_desc: "Всё, что вы делаете или говорите, кажется, неправильно истолковывается вашими вассалами. Как будто некая злая сила каким-то образом искажает ваши слова..."
 
- POD_inspiration_interaction: "Вдохновение"
- POD_inspiration_interaction_desc: "Как альфа этой стаи, вы обязаны демонстрировать свою силу, чтобы вдохновлять своих последователей."
- werewolf_inspiration_modifier: "Вдохновение"
- werewolf_inspiration_modifier_desc: "С близостью альфы ваша боевая доблесть возросла."
+
+ POD_rhythm_of_war_interaction: "Ритм войны"
+ POD_rhythm_of_war_interaction_desc: "Бороться - значит жить."
+ POD_rhythm_of_war_interaction_options_heading: ""
+ POD_rhythm_of_war_interaction_lethal: "Бой насмерть!"
+ POD_rhythm_of_war_interaction_nonlethal: "Борьба за славу"
+
 
  POD_primal_song_interaction: "Первобытная песня"
- POD_primal_song_interaction_desc: "Вам предстоит выбрать одну из известных вам песен, получая различные бонусы в зависимости от вашего выбора."
- song_siren_modifier: "Песня сирены"
- song_siren_modifier_desc: "Следуя зову, мы становимся сильнее."
+ POD_primal_song_interaction_desc: "Позвольте мне спеть песню моего народа."
+ POD_primal_song_interaction_tt: "#italic Через [SCOPE.ScriptValue('POD_galliard_song_duration_effect_value')|V0] лет произойдут следующие эффекты:#!"
+ POD_primal_song_interaction_options_heading: "Какую песню мне спеть?"
+ POD_primal_song_interaction_req_tt: "Вы не можете нацелиться на себя с помощью этого стиха"
+ POD_primal_song_interaction_req2_tt: "Вы можете нацелиться только на себя с помощью этого стиха"
+ primal_song_development: "#clickable Первобытное#! возвращение"
+ primal_song_spirit: "#clickable Первобытный#! дух"
+ song_valor_heal:0 "#clickable Доблестная#! регенерация"
+ song_valor_prowess:0 "#clickable Доблестная#! сила"
+ song_rage_irrational: "#clickable Неистовый#! военачальник"
+ song_rage_countermeasures: "Ослепляющая #clickable ярость#!"
+ song_siren_opinion: "#clickable Искушение сирены#!"
+ song_siren_hook: "Власть #clickable сирены#!"
+ song_mockery_opinion: "#clickable Насмешливая#! ода"
+ song_mockery_prestige: "Великая #clickable насмешка#!"
+ song_serenity_stress: "#clickable Безмятежный#! разум"
+ song_serenity_war: "Полная #clickable безмятежность#!"
+ song_storm_damage: "Гнев #clickable шторма#!"
+ song_storm_movement: "Оседлать #clickable бурю#!"
 
+
+
+ POD_canine_call_interaction: "Зов псовых"
+ POD_canine_call_interaction_desc: "Завойте — и появится друг."
+
+ POD_curse_the_betrayer_interaction: "Проклятие предателя"
+ POD_curse_the_betrayer_interaction_desc: "Подлый предатель, воодушевлённый пламенем амбиций. Тлея своим скудным пламенем, положите конец этим глупым амбициям. Ваш род — единое целое, их пламя погасит ваше. Пусть это проклятие проникнет в вашу душу, как достойная награда за ваши дерзкие амбиции."
 
  POD_break_the_bonds_interaction: "Разорвать узы"
  POD_break_the_bonds_interaction_desc: "Использовать гнозис, чтобы заставить персонажа [recipient.GetFirstName] потратить влияние, которое [recipient.GetSheHe] имеет на вас."
 
- POD_shared_strength_interaction: "Поделиться силой"
- POD_shared_strength_interaction_desc: "Передать свои навыки персонажу [recipient.GetFirstName]."
- shared_strength_diplomacy_gain_modifier: "Общая сила: Прирост дипломатии"
- shared_strength_diplomacy_loss_modifier: "Общая сила: Потеря дипломатии"
- shared_strength_martial_gain_modifier: "Общая сила: Прирост военного дела"
- shared_strength_martial_loss_modifier: "Общая сила: Потеря военного дела"
- shared_strength_stewardship_gain_modifier: "Общая сила: Прирост управления"
- shared_strength_stewardship_loss_modifier: "Общая сила: Потеря управления"
- shared_strength_intrigue_gain_modifier: "Общая сила: Прирост интриг"
- shared_strength_intrigue_loss_modifier: "Общая сила: Потеря интриг"
- shared_strength_learning_gain_modifier: "Общая сила: Прирост учёности"
- shared_strength_learning_loss_modifier: "Общая сила: Потеря учёности"
- shared_strength_prowess_gain_modifier: "Общая сила: Прирост доблести"
- shared_strength_prowess_loss_modifier: "Общая сила: Потеря доблести"
 
- POD_storyteller_interaction: "Сказительство"
- POD_storyteller_interaction_desc: "Использовать гнозис, чтобы получить шанс на случайное событие."
- POD_storyteller_interaction.tt: "25% шанс наступления случайного события."
+
+
+
 
  POD_unleash_storm_of_mothers_wrath_interaction: "Высвободить бурю Гнева Матери"
  POD_unleash_storm_of_mothers_wrath_interaction_desc: "Вызвать бурю Гнева Матери, которая посеет хаос в округе."
@@ -90,18 +103,10 @@
  POD_dark_of_night_interaction_desc: "Лишить жертву зрения."
  POD_dark_of_night_interaction_success: "Слепота"
 
- POD_moon_bridge_interaction: "Лунный мост"
- POD_moon_bridge_interaction_desc: "Пройти по лунной тропе сквозь туманы [Concept('umbra', 'Умбры')|E], что позволит вам телепортироваться в каэрн в локации персонажа [recipient.GetFirstNamePossessive] или в ваш следующий пункт назначения [Concept('traveling', 'путешествия')|E]."
 
- POD_blooding_fury_interaction: "Кровавая ярость"
- POD_blooding_fury_interaction_desc: "Нанести себе урон, чтобы увеличить $POD_energy_gnosis$."
+
 
  #POD_call_fenris_to_war_interaction: "Call Great Fenris"
  #POD_call_fenris_to_war_interaction_desc: "Call Great Fenris to war."
  #POD_call_fenris_to_war_interaction_tt: "You have already called [GetMaA('war_avatar_of_great_fenris').GetName] to [GetPlayer.MakeScope.GetVariable('fenris_summon').War.GetName]."
  #POD_call_fenris_to_war_interaction_tooltip: "Great Fenris demands a sacrifice for his intervention – usually the left hand of the summoner."
-
- pack_tactics_modifier: "Тактика стаи"
- pack_tactics_modifier_desc: "Для стороннего наблюдателя ваша стая движется как единое целое."
- strength_will_modifier: "Сила воли"
- strength_will_modifier_desc: "Непреодолимая сила, стая, объединённая одной целью - уничтожить своих врагов."
