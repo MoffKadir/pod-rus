@@ -31,6 +31,11 @@
  tribalgifts_werewolf_getoffenris_focus_desc: "Племенные дары Отпрысков Фенрира."
  tribalgifts_werewolf_getoffenris_focus_effect_desc: "Сосредоточившись на дарах Отпрысков Фенрира, персонаж получает:"
 
+ tribalgifts_werewolf_uktena_focus: "Уктена"
+ tribalgifts_werewolf_uktena_focus_modifier: "[GetFocus('tribalgifts_werewolf_uktena_focus').GetName]"
+ tribalgifts_werewolf_uktena_focus_desc: "Племенные дары Уктена."
+ tribalgifts_werewolf_uktena_focus_effect_desc: "Сосредоточившись на дарах Уктена, персонаж получает:"
+
  tribalgifts_werewolf_redtalon_focus: "Красные когти"
  tribalgifts_werewolf_redtalon_focus_modifier: "[GetFocus('tribalgifts_werewolf_redtalon_focus').GetName]"
  tribalgifts_werewolf_redtalon_focus_desc: "Племенные дары Красных когтей."
@@ -61,14 +66,18 @@
  tribalgifts_werewolf_warderofmen_focus_desc: "Дары племени Стражей людей."
  tribalgifts_werewolf_warderofmen_focus_effect_desc: "Сосредоточившись на дарах Стражей людей, персонаж получает:"
 
+ tribalgifts_werewolf_whitehowler_focus: "Белые завыватели"
+ tribalgifts_werewolf_whitehowler_focus_modifier: "[GetFocus('tribalgifts_werewolf_whitehowler_focus').GetName]"
+ tribalgifts_werewolf_whitehowler_focus_desc: "Племенные дары Белых завывателей."
+ tribalgifts_werewolf_whitehowler_focus_effect_desc: "Сосредоточившись на дарах Белых завывателей, персонаж получает:"
+
  tribalgifts_werewolf_blackspiraldancer_focus: "Танцоры Чёрной спирали"
  tribalgifts_werewolf_blackspiraldancer_focus_modifier: "[GetFocus('tribalgifts_werewolf_blackspiraldancer_focus').GetName]"
  tribalgifts_werewolf_blackspiraldancer_focus_desc: "Племенные дары Танцоров Чёрной спирали."
  tribalgifts_werewolf_blackspiraldancer_focus_effect_desc: "Сосредоточившись на дарах Танцоров Чёрной спирали, персонаж получает:"
 
- tribalgifts_werewolf_hakken_visible: "Дары Хаккен"
- 
- 
+ tribalgifts_werewolf_hakken_visible: "Хаккен"
+ tribalgifts_werewolf_uktena_visible: "Уктена"
  tribalgifts_werewolf_blackfury_visible: "Чёрные фурии"
  tribalgifts_werewolf_bonegnawer_visible: "Костегрызы"
  tribalgifts_werewolf_childofgaia_visible: "Дети Геи"
@@ -94,6 +103,7 @@
  storm_of_mothers_wrath_perk_name: "Буря гнева Матери"
  walk_with_hades_perk_name: "Прогулка с Аидом"
 
+ TRUE_SHOT_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_bow_of_pegasus')]"
  STORM_OF_MOTHERS_WRATH_PERK_EFFECT: "Вы можете наслать модификатор [GetModifier( 'storm_of_mothers_wrath_modifier' ).GetNameWithTooltip|L] на вражеские державы через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
  WALK_WITH_HADES_PERK_EFFECT: ""
 
@@ -110,11 +120,11 @@
  DUMPSTER_DIVING_PERK_EFFECT: "Позволяет телепортировать вашу армию к месту нахождения цели или телепортироваться к следующему пункту назначения во время путешествия через [Concept('character_interaction', 'взаимодействие персонажа')|E], если выбранная провинция имеет высокий уровень [Concept('development', 'развития')|E]."
  BEG_PERK_EFFECT: "Позволяет выпросить у правителя золото через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
  INFEST_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('insects').GetName]."
- SURVIVOR_PERK_EFFECT: "Вы больше не получите свойство «[GetTrait('inappetetic').GetName( GetPlayer )]»."
+ SURVIVOR_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_survivor')]\nВы больше не получите свойство «[GetTrait('inappetetic').GetName( GetPlayer )]»."
  RIOT_PERK_EFFECT: "Позволяет создать в столице цели восстание через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
 
  water_conning_perk_name: "Хитрость воды"
- swallow_rage_perk_name: "Поглощение ярости"
+ swallow_rage_perk_name: "Поглощение [Glossary('ярости', 'glossary_rage_tt')]"
  spellbinding_oration_perk_name: "Завораживающая речь"
  spirit_friend_perk_name: "Духовный друг"
  speech_of_all_things_perk_name: "Речь обо всём"
@@ -122,6 +132,7 @@
  the_living_wood_perk_name: "Живое дерево"
  trust_of_gaia_perk_name: "Доверие Геи"
 
+ SPELLBINDING_ORATION_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_dazzle')]"
  THE_LIVING_WOOD_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('animated_tree').GetName]"
 
  salmon_leap_perk_name: "Прыжок лосося"
@@ -134,6 +145,7 @@
  forms_of_cernunnos_perk_name: "Формы Кернунна"
  sleep_of_the_hero_perk_name: "Сон героя"
 
+ BREW_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_warriors_draught')]"
  AIRITECHS_DAUGHTERS_PERK_EFFECT: "Позволяет заставить выбранного смертного принять временную форму [GetModifier('POD_werewolf_form_crinos_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E]."
  FOG_ON_THE_MOOR_PERK_EFFECT: "Позволяет принимать форму [GetModifier( 'POD_shapeshift_form_mist_modifier' ).GetNameWithTooltip|L]."
  FORMS_OF_CERNUNNOS_PERK_EFFECT: "Позволяет принимать различные звериные формы."
@@ -150,6 +162,8 @@
  fenris_bite_perk_name: "Укус Фенрира"
  call_great_fenris_perk_name: "Зов великого Фенрира"
 
+ VISAGE_OF_FENRIS_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_visage_of_fenris')]"
+ MIGHT_OF_THOR_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_might_of_thor')]"
  STRENGTH_OF_THE_ANCESTORS_PERK_EFFECT: "Каждый родитель, дедушка, бабушка, прадед, прабабушка, являющиеся #TOOLTIP:GAME_TRAIT,werewolf,[GetPlayer] #L оборотнями#!#!, добавляют: [GetModifier( 'strength_of_the_ancestors_perk_modifier' ).GetNameWithTooltip|L]."
  CALL_GREAT_FENRIS_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('war_avatar_of_great_fenris').GetName].\n#F Как высшее проявление договора между племенем и тотемом, величайшие герои Отпрысков могут призвать боевого аватара своего племенного тотема, чтобы тот помог им в трудную минуту. Аватар вступает в бой, истребляя всех, кто не является отпрыском Фенрира или не находится под его защитой. Однако Великий Фенрир требует жертвы за свое вмешательство - обычно это левая рука призвавшего. Говорят, что если вызвать аватара войны без веской причины, то перед уходом он полностью сожрет призывателя.#!"
  CALL_GREAT_FENRIS_REQUIREMENT: "@warning_icon!#X Чтобы разблокировать это достоинство, вам нужно завершить задание самого Великого Фенрира (разместите исследователя в любом измерении [Concept('umbra', 'Умбры')|E], чтобы найти подсказку о местонахождении и начните #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!, чтобы добраться до них и получить задание).#!"
@@ -164,8 +178,10 @@
  shattering_howl_perk_name: "Сокрушительный вой"
  home_in_all_lands_perk_name: "Дом во всех землях"
 
+ PRIMAL_HOWL_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_beastmind')]"
  HOWL_OF_HUNGER_PERK_EFFECT: "Вражеские [Concept('commanders', 'командиры')|E], выступающие в роли [Concept('commander', 'командиров')|E] во время [Concept('combat_phase', 'фазы боя')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('howl_of_hunger_perk_modifier').GetNameWithTooltip]."
  HOWL_OF_DEATH_PERK_EFFECT: "Бонус к нанесению жестоких ударов по вражеским [Concept('knights', 'рыцарям')|E], при нахождении в [Concept('combat_phase', 'фазе боя')|E] в качестве [Concept('knight', 'рыцаря')|E]."
+ BLESSING_OF_THE_FIRST_PACK_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_gaias_vengeance')]"
  HOME_IN_ALL_LANDS_PERK_EFFECT: "Позволяет телепортировать вашу армию к месту нахождения цели или телепортироваться к следующему пункту назначения во время путешествия через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Дипломатическая дальность не учитывается, но цель должна иметь низкий уровень [Concept('development', 'развития')|E].\n#F Легенды среди Красных когтей гласят, что волки, имеющие наибольшую связь с Волком-Прародителем, не были связаны расстоянием, а могли появляться в любом месте, где водились волки. Долгое время считалось, что это просто легенда, но на самом деле старейший Красный коготь с достаточно сильной родословной вполне может научиться исчезать из одного места и появляться в любом другом мире [Concept('umbra', 'Умбры')|E], при условии, что Прародитель был там до него.#!"
  HOME_IN_ALL_LANDS_REQUIREMENT: "@warning_icon!#X Чтобы разблокировать это достоинство, вам нужно завершить задание самого Волка-Прародителя (разместите исследователя в любом измерении [Concept('umbra', 'Умбры')|E], чтобы найти подсказку о местонахождении и начните #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!, чтобы добраться до них и получить задание).#!"
 
@@ -178,7 +194,7 @@
  obedience_perk_name: "Послушание"
  shadow_pack_perk_name: "Теневая стая"
 
- HIDDEN_SECRETS_PERK_EFFECT: "Скорость прогресса [Concept('espionage', 'шпионажа')|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!"
+ HIDDEN_SECRETS_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_fatal_flaw')]\nСкорость прогресса [Concept('espionage', 'шпионажа')|E]: #P +[EmptyScope.ScriptValue('digging_for_dirt_perk_percentage')|0]%#!"
  HIDDEN_SECRETS_PERK_BONUS_VALUE: "[GetPerk('hidden_secrets_perk').GetName(GetPlayer)]"
  A_THOUSAND_EYES_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('bats').GetName]"
  DURANCE_PERK_EFFECT: ""
@@ -195,6 +211,7 @@
 
  SUMMON_TALISMAN_PERK_EFFECT: "Стоимость взаимодействий «[buy_claim_interaction|E]» и «[buy_artifact_claim_interaction|E]»: #P -50%#!"
  DEATH_TRACK_PERK_EFFECT: "$POD_can_summon_on_death_trigger_loca$"
+ SPEED_BEYOND_THOUGHT_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_fleet_footed')]"
  INVOCATION_OF_THE_PHARAOH_PERK_EFFECT: "Открывает вариант смены облика [GetModifier( 'POD_shapeshift_form_pharaoh_modifier' ).GetNameWithTooltip|L]."
  GATE_OF_THE_MOON_PERK_EFFECT: "Для [Concept('character_interaction', 'взаимодействия персонажа')|E] «Лунный мест» в целевой локации больше не требуется наличие постройки каэрна."
 
@@ -208,6 +225,7 @@
  the_secret_of_gaia_perk_name: "Секрет Геи"
  renew_the_cycle_perk_name: "Обновление цикла"
 
+ EYE_OF_THE_FALCON_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_eye_of_falcon')]"
  RENEW_THE_CYCLE_PERK_EFFECT: "Позволяет заставить выбранную нежить принять естественное состояние (превратиться в прах или просто застыть) через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Один из самых мощных способностей, доступных гару, этот дар позволяет исправить грубую ошибку, допущенную в природном цикле Геи. Нежить, само существование которой оскорбляет естественный порядок вещей, вянет и рассыпается в прах под воздействием силы этого дара. Будь то нежить в виде бродячего ожившего трупа или древний вампир, Клык может уничтожить её одним лишь взглядом.#!"
  RENEW_THE_CYCLE_REQUIREMENT: "@warning_icon!#X Чтобы разблокировать это достоинство, вам нужно завершить задание аватара самой Геи (разместите исследователя в любом измерении [Concept('umbra', 'Умбры')|E], чтобы найти подсказку о местонахождении и начните #TOOLTIP:game_concept_umbra_expedition_desc #E путешествие в Умбру#!#!, чтобы добраться до них и получить задание).#!"
 
@@ -235,27 +253,11 @@
  song_of_the_city_beast_perk_name: "Песня городских зверей"
  calm_the_flock_perk_name: "Успокоение стаи"
 
+ CONTROL_SIMPLE_MACHINE_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_artisans_command')]"
  WEB_WALKER_PERK_EFFECT: ""
  GIFT_DOPPELGANGER_PERK_EFFECT: "Бонус к опции [Concept('character_interaction', 'взаимодействия персонажа')|E] «Сменить облик», позволяющий менять внешность."
 
 
-
-
- shining_sigils_perk_name: "Сияющие знаки"
- haunting_howl_perk_name: "Призрачный вой"
- pain_strength_perk_name: "Сила из боли"
- waking_the_dead_perk_name: "Пробуждение мертвецов"
- blooding_fury_perk_name: "Кровавая ярость"
- maddening_howl_perk_name: "Безумный вой"
- white_fire_perk_name: "Белое пламя"
- howl_of_healing_perk_name: "Исцеляющий вой"
-
- HAUNTING_HOWL_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('haunting_howl_perk_modifier').GetNameWithTooltip]."
- PAIN_STRENGTH_PERK_EFFECT: "При ранении будет получен модификатор [GetModifier('pain_strength_perk_modifier').GetNameWithTooltip]."
- BLOODING_FURY_PERK_EFFECT: "Позволяет наносить себе увечья через [Concept('character_interaction', 'взаимодействие персонажа')|E], чтобы получить 3 ед. энергии ($POD_energy_gnosis$)."
- MADDENING_HOWL_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединке')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('maddening_howl_perk_modifier').GetNameWithTooltip]."
- WHITE_FIRE_PERK_EFFECT: "Наносит раны вражеским [Concept('knights', 'рыцарям')|E], выступающим в роли [Concept('commander', 'командиров')|E] во время [Concept('combat_phase', 'фазы боя')|E] или вашим противникам во время [Concept('single_combat_duel_plural', 'поединков')|E]."
- HOWL_OF_HEALING_PERK_EFFECT: "Исцеляет раны союзных [Concept('knights', 'рыцарей')|E] и [Concept('commander', 'командиров')|E] в [Concept('combat_phase', 'бою')|E] или ваши собственные раны в [Concept('single_combat_duel_plural', 'поединках')|E]."
 
 
 
@@ -270,14 +272,13 @@
  unseelie_faerie_kin_perk_name: "Родня Неблагих фей"
  UNSEELIE_FAERIE_KIN_PERK_EFFECT: "Доступны различные [Concept('men_at_arms', 'профессионалы')|E] [Concept('POD_faerie_maa', 'фей')|E].\n#flavor Танцор может призвать на помощь Неблагих подменышей.#!"
  burning_scars_perk_name: "Жгучие шрамы"
- BURNING_SCARS_PERK_EFFECT: "[character_interaction|E]: Наносит [Concept('POD_aggravated_damage', 'серьёзный урон')|E] от огня как выбранному персонажу, так и себе.\n#flavor Танцоры Чёрной спирали часто вырезают на своих телах стилизованные шрамы, символизирующие их преданность Вирму. Этот дар заставляет шрамы танцора светиться тёмным блеском, который, кажется, проникает в тело жертвы, выжигая его изнутри и оставляя ужасные ожоги, имитирующие шрамы самого танцора.#!"
+ BURNING_SCARS_PERK_EFFECT: "[character_interaction|E]: Наносит @pod_combat_fire_icon!#L;color:{1.00,0.55,0.20} [Concept('fire_damage', 'огненный урон')|E]#! как выбранному персонажу, так и себе.\n#flavor Танцоры Чёрной спирали часто вырезают на своих телах стилизованные шрамы, символизирующие их преданность Вирму. Этот дар заставляет шрамы танцора светиться тёмным блеском, который, кажется, проникает в тело жертвы, выжигая его изнутри и оставляя ужасные ожоги, имитирующие шрамы самого танцора.#!"
  summon_wyrm_elemental_perk_name: "Призыв элементаля [Glossary('Вирма', 'glossary_wyrm_tt')]"
- SUMMON_WYRM_ELEMENTAL_PERK_EFFECT: "#flavor Танцор исполняет короткий танец вокруг кусочка чистого элемента. Танец разрушает элемент и призывает элементаля [Glossary('Вирма', 'glossary_wyrm_tt')].#!"
-
+ SUMMON_WYRM_ELEMENTAL_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_summon_wyrm_elemental')]\n#flavor Танцор исполняет короткий танец вокруг кусочка чистого элемента. Танец разрушает элемент и призывает элементаля [Glossary('Вирма', 'glossary_wyrm_tt')].#!"
  the_white_howl_perk_name: "Белый вой"
  THE_WHITE_HOWL_PERK_EFFECT: "При нахождении в [Concept('combat_phase', 'бою')|E] в качестве [Concept('commander', 'командира')|E] вражеские [Concept('knights', 'рыцари')|E] получат модификатор «[GetModifier('the_white_howl_modifier_enemy').GetNameWithTooltip]», а союзные - «[GetModifier('the_white_howl_modifier_ally').GetNameWithTooltip]», а также ваши противники в [Concept('single_combat_duel_plural', 'поединках')|E].\n#flavor Некогда это было самым священным благословением Белых завывателей, и этот могущественный дар до сих пор передаётся среди Танцоров Чёрной спирали как напоминание о прошлом их врагам-гару. Звука Белого воя достаточно, чтобы потрясти как самого Вирма, так и уши гару, которые слышат его и понимают, как много потеряла Гея.#!"
  totem_form_perk_name: "Форма тотема"
- TOTEM_FORM_PERK_EFFECT: "Открывает тотемную форму смены облика, соответствующую вашему [Concept('pack_totem', 'тотему стаи')|E].\n #flavor Этот могущественный дар позволяет Чёрной спирали принимать облик - и большую часть силы - тотема бэйна его стаи.#!"
+ TOTEM_FORM_PERK_EFFECT: "Открывает тотемную форму смены облика, соответствующую вашему [Concept('pack_totem', 'тотему стаи')|E].\n[PODUnlocksCombatMove('POD_combat_move_werewolf_balefire')]\n#flavor Этот могущественный дар позволяет Чёрной спирали принимать облик - и большую часть силы - тотема бэйна его стаи.#!"
  prelude_to_apocalypse_perk_name: "Предвестие Апокалипсиса"
  PRELUDE_TO_APOCALYPSE_PERK_EFFECT: "Открывает взаимодействие «Сорвать» в действии [Concept('umbra', 'Умбры')|E] «Манипулировать Барьером».\n#flavor Танцор может на короткое время оторваться от работы [Glossary('Ткачихи', 'glossary_weaver_tt')] на целые эпохи. Этот дар полностью снимает Барьер, соединяя миры плоти и духа, какими они были в легендарные времена. Более того, эта исцеленная область служит ярким маяком для духов Вирма, призывая поток проклятий на помощь Танцору.#!"
  PRELUDE_TO_APOCALYPSE_REQUIREMENT: "@warning_icon!#X Чтобы разблокировать это достоинство, вам нужно завершить задание инкарны-маэлджина (разместите исследователя в [UmbraGlossaryLocalized('black_spiral_labyrinth','Лабиринте Чёрной спирали')], чтобы найти подсказку о местонахождении и начните [Concept('umbra_expedition', 'путешествие в Умбру')|E], чтобы добраться до него и получить задание).#!"
@@ -289,10 +290,44 @@
  fair_path_perk_name: "Справедливый путь"
  FAIR_PATH_PERK_EFFECT: "#flavor Появляться перед своим кланом на соревнованиях или во время обрядов в растрёпанном или неочищенном виде считается в высшей степени бесчестным. Этот дар позволяет хаккен выглядеть идеально ухоженным и одетым.#!"
  storm_winds_slash_perk_name: "Хлыст штормового ветра"
- STORM_WINDS_SLASH_PERK_EFFECT: "[character_interaction|E]: Наносит персонажу [Concept('POD_superficial_damage', 'поверхностный урон')|E], количество которого зависит от [Concept('rarity', 'редкости')|E] вашей снаряжённой катаны.\n#flavor Когда хаккен наносит удар катаной с расстояния, на теле его противника появляется самая настоящая рана, отражающая удар гару.#!"
+ STORM_WINDS_SLASH_PERK_EFFECT: "[character_interaction|E]: Наносит персонажу [Concept('POD_superficial_damage', 'поверхностный урон')|E], количество которого зависит от [Concept('rarity', 'редкости')|E] вашей снаряжённой катаны.\n[PODUnlocksCombatMove('POD_combat_move_werewolf_storm_winds_slash')]\n#flavor Когда хаккен наносит удар катаной с расстояния, на теле его противника появляется самая настоящая рана, отражающая удар гару.#!"
  dark_of_night_perk_name: "Тьма ночи"
  DARK_OF_NIGHT_PERK_EFFECT: "[character_interaction|E]: Наделяет персонажа модификатором «[GetModifier('dark_of_night_perk_modifier').GetNameWithTooltip]».\n#flavor Вызывает временную слепоту у выбранной жертвы; она не видит ничего, кроме чернильной тьмы. Использование этого дара в официальном поединке считается тяжким преступлением.#!"
  living_treasure_perk_name: "Живое сокровище"
  LIVING_TREASURE_PERK_EFFECT: "Стоимость взаимодействий «[buy_claim_interaction|E]» и «[buy_artifact_claim_interaction|E]»: #P -25%#!\n#flavor Хаккен ценят старинные произведения искусства и часто хранят их у себя дома. Этот дар заставляет духов предметов говорить и рассказывать свои истории.#!"
  divine_wind_perk_name: "Божественный ветер"
- DIVINE_WIND_PERK_EFFECT: "Открыта опция погодной магии: #V Шторм#! на уровне [Concept('duchy', 'герцогства')|E].\n#flavor Хаккен вызывает ужасающий шторм на выбранной территории.#!"
+ DIVINE_WIND_PERK_EFFECT: "Открыта опция погодной магии: #V Шторм#! на уровне [Concept('duchy', 'герцогства')|E].\n[PODUnlocksCombatMove('POD_combat_move_werewolf_divine_wind')]\n#flavor Хаккен вызывает ужасающий шторм на выбранной территории.#!"
+
+ #Uktena
+ banish_totem_perk_name: "Изгнание тотема"
+ BANISH_TOTEM_PERK_EFFECT: "При начале [Concept('war', 'войны')|E] в качестве основного нападающего или защитника все правители противоположной стороны получат модификатор [GetModifier('banish_totem_modifier').GetNameWithTooltip].\n[PODUnlocksCombatMove('POD_combat_move_werewolf_banish_totem')]\n#flavor Произнося древние и могущественные слова, уктена может запретить тотему помогать своим детям, разрушая их чувство принадлежности к стае.#!"
+ banish_totem_modifier: "Изгнание тотема"
+ banish_totem_modifier_desc: "Под действием могущественного дара этот персонаж больше не может пользоваться слаженными действиями и тактикой стаи."
+ spirit_bird_perk_name: "Дух-птица"
+ SPIRIT_BIRD_PERK_EFFECT: "#flavor Почти никто не ожидает, что оборотень будет парить, как птица, и это отличная причина для уктена поступить именно так. Этот дар позволяет гару летать или парить на месте.#!"
+ spirit_fish_perk_name: "Дух-рыба"
+ SPIRIT_FISH_PERK_EFFECT: "#flavor Оборотень может дышать под водой и плавать так быстро, как только может бежать в форме Хиспо#!"
+ uktena_invisibility_perk_name: "Невидимость"
+ UKTENA_INVISIBILITY_PERK_EFFECT: "Доступно [Concept('character_interaction', 'взаимодействие персонажа')|E], позволяющее остановить все происки, нацеленные на вас.\n#flavor Сосредоточившись, гару может исчезнуть из поля зрения. Он должен идти медленно и не должен привлекать к себе внимание.#!"
+ uktena_call_elemental_perk_name: "Призыв элементаля"
+ UKTENA_CALL_ELEMENTAL_PERK_EFFECT: "Доступны элементальные [Concept('men_at_arms', 'профессионалы')|E].\n#flavor Гару может призвать на помощь одного из классических элементалей.#!"
+ fetish_doll_perk_name: "Кукла-фетиш"
+ FETISH_DOLL_PERK_EFFECT: "После успешной [Concept('infiltration_mission', 'миссии проникновения')|E] по краже артефакта или золота правитель ограбленного двора получает 3 ед. @health_track_aggravated_damage_icon! [Concept('POD_aggravated_damage', 'серьёзного урона')|E].\n#flavor Оборотень может наносить вред своим жертвам издалека, используя специально созданное чучело. У него должен быть небольшой кусочек жертвы или принадлежащий ему предмет, который он должен включить в куклу.#!"
+
+ #White Howlers
+ shining_sigils_perk_name: "Сияющие знаки"
+ SHINING_SIGILS_PERK_EFFECT: "#flavor На коже или шкуре гару появляются светящиеся символы, представляющие истории славы. Метки сияют люминесцентным синим цветом, хотя каждая слава имеет свой собственный тонкий оттенок цвета.#!"
+ haunting_howl_perk_name: "Призрачный вой"
+ HAUNTING_HOWL_PERK_EFFECT: "#flavor Один из характерных для племени даров воя, этот жуткий крик часто разносился эхом по пустынным вересковым пустошам перед набегом Завывателей.#!"
+ lions_bite_perk_name: "Львиный укус"
+ LIONS_BITE_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат #V [EmptyScope.ScriptValue('POD_base_wound_damage')|V0] ед. [Concept('POD_aggravated_damage', 'серьёзного урона')|E]#!, если у них меньше [Concept('prowess', 'доблести')|E], чем у вас.\n#flavor Дети Льва многому научились у своего покровителя, в том числе некоторым тактикам охоты, более знакомым большим кошкам, чем волкам. Гару с этим даром получает безошибочную способность кусать горло своей добычи, удушая её до потери сознания или до смерти, или даже раздавливая её горло, как это делают львы.#!"
+ spectral_authority_perk_name: "Власть над призраками"
+ SPECTRAL_AUTHORITY_PERK_EFFECT: "$POD_can_bind_wraith_trigger_loca$\n#flavor Гару может командовать любым призраком или духом, которого знает по полному имени.#!"
+ sense_of_the_deep_perk_name: "Чувство глубины"
+ SENSE_OF_THE_DEEP_PERK_EFFECT: "#flavor Вплоть до Падения племя Льва было убеждено, что их долг перед Геей — выслеживать ёе врагов даже под поверхностью земли. Этот дар помог им в борьбе с созданиями [Glossary('Вирма', 'glossary_wyrm_tt')] в их собственных норах.#!"
+ maddening_howl_perk_name: "Безумный вой"
+ MADDENING_HOWL_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в ходе [Concept('combat_phase', 'фазы битвы')|E], или ваши противники в [Concept('single_combat_duel_plural', 'поединках')|E] получат #V 40#! [Concept('stress', 'стресса')|E].\n#flavor Сверхъестественное качество воя Белых завывателей дало им название племени, не говоря уже об их репутации. Этот дар-вой представляет собой один из их самых страшных завываний, ужасный завывающий вой, который доводит до умопомрачения тех, кто его слышит.#!"
+ white_fire_perk_name: "Белое пламя"
+ WHITE_FIRE_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_white_fire')]\n#flavor Этот забытый дар - последнее звено, связывающее Белых завывателей со священными кострами, которые они хранили до своего Падения и превращения в жертвенное пламя. Оборотень может извергать из своей руки струю ослепительного белого огня, выжигающего плоть на костях своих врагов.#!"
+ howl_of_healing_perk_name: "Исцеляющий вой"
+ HOWL_OF_HEALING_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_werewolf_howl_of_healing')]\n#flavor Племя Белых завывателей тесно сплочено, и лишь немногие из них могут соперничать с другими. Эта связь позволяет им направлять исцеление так, как другие могут только мечтать.#!"

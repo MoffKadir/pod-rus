@@ -1,16 +1,16 @@
 ﻿l_russian:
 
 
- urgetaints_lifestyle_name: "Скверна инстинктов"
- urgetaints_lifestyle_desc: "Этими тёмными дарами импульсы наделяют тех, кто стремится к могуществу, но за это всегда приходится платить."
- urgetaints_lifestyle_highlight_desc: "Из-за вашего модификатора «[GetModifier('POD_gnosis_5_modifier').GetNameWithTooltip]» ваш прирост [Concept('experience', 'опыта')|E] для этого образа жизни увеличен на #P [GetPlayer.Custom('GetEducationLifestylePercentageBoost')]#!."
- monthly_urgetaints_lifestyle_xp_gain_mult: "Ежемесячный прирост [Concept('experience', 'опыта')|E] на [Concept('lifestyle', 'пути')|E] скверны инстинктов"
+ maeljingifts_lifestyle_name: "Дары маэлджинов"
+ maeljingifts_lifestyle_desc: "Этими тёмными дарами импульсы наделяют тех, кто стремится к могуществу, но за это всегда приходится платить."
+ maeljingifts_lifestyle_highlight_desc: "Из-за вашего модификатора «[GetModifier('POD_gnosis_5_modifier').GetNameWithTooltip]» ваш прирост [Concept('experience', 'опыта')|E] для этого образа жизни увеличен на #P [GetPlayer.Custom('GetEducationLifestylePercentageBoost')]#!."
+ monthly_maeljingifts_lifestyle_xp_gain_mult: "Ежемесячный прирост [Concept('experience', 'опыта')|E] на [Concept('lifestyle', 'пути')|E] даров маэлджинов"
 
 
- urgetaints_physical_visible: "Физиология"
- urgetaints_mental_visible: "Ментальность"
+ maeljingifts_physical_visible: "Физиология"
+ maeljingifts_mental_visible: "Ментальность"
 
- URGETAINTS_REQ: "@warning_icon!#X [Concept('lifestyle_experience', 'Опыт образа жизни')|E] скверны инстинктов можно получить, исследуя определённые измерения в [UmbraGlossaryLocalized('malfeas','Малфеасе')]#!"
+ MAELJINGIFTS_REQ: "@warning_icon!#X [Concept('lifestyle_experience', 'Опыт образа жизни')|E] даров маэлджинов можно получить, исследуя определённые измерения в [UmbraGlossaryLocalized('malfeas','Малфеасе')]#!"
 
 
  ###Physical
@@ -27,7 +27,7 @@
  reversed_eye_perk_name: "Вывернутый глаз"
  REVERSED_EYE_PERK_EFFECT: "$countermeasures_unlocks_t2_all_seeing_eye$\n#flavor Когда вы в полной боевой готовности, ничто не сможет застать вас врасплох.#!"
  bane_stomach_perk_name: "Брюхо бэйна"
- BANE_STOMACH_PERK_EFFECT: "Открывает способ [Concept('execution', 'казни')|E] «Каннибализм».\nПоедание персонажа приносит [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] всем вашим [Concept('spirit_companions', 'спутникам')|E]-бэйнам.\n#flavor Сущность поглощённого будет питать не только ваше тело.#!"
+ BANE_STOMACH_PERK_EFFECT: "Открывает способ [Concept('execution', 'казни')|E] «Каннибализм».\nПоедание персонажа приносит [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] одному из ваших [Concept('spirit_companions', 'спутников')|E]-бэйнов.\n#flavor Сущность поглощённого будет питать не только ваше тело.#!"
  BANE_STOMACH_REASON: "$bane_stomach_perk_name$: $VALUE|+=0$"
  thundering_throat_perk_name: "Грохочущее горло"
  THUNDERING_THROAT_PERK_EFFECT: "Принятие приглашения ко [Concept('court', 'двору')|E]: #P +10#!\nВражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники в [Concept('single_combat_duel_plural', 'поединках')|E] получат модификатор «[GetModifier('wyrm_thundering_throat_modifier').GetNameWithTooltip]» и #V 30#! [Concept('stress', 'стресса')|E], если они [Concept('intimidated', 'запуганы')|E] вами.\n#flavor Ваш голос, сотрясающий землю, будет услышан.#!"
