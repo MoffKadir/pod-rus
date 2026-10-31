@@ -1,26 +1,29 @@
 ﻿l_russian:
- readiness_1_modifier: "Готовность"
- readiness_2_modifier: "Нацеленность"
- one_tracked_mind_diplomacy_modifier: "Однозадачный разум: Дипломатия"
- one_tracked_mind_martial_modifier: "Однозадачный разум: Военное дело"
- one_tracked_mind_stewardship_modifier: "Однозадачный разум: Управление"
- one_tracked_mind_intrigue_modifier: "Однозадачный разум: Интриги"
- one_tracked_mind_learning_modifier: "Однозадачный разум: Учёность"
-
+ contradict_modifier: "Противоречие"
+ readiness_modifier: "Готовность"
  dual_thought_modifier: "Двойственное мышление"
  perfect_clarity_modifier: "Совершенная ясность"
+ perfect_clarity_modifier_desc: "Даёт #P сильную ментальную защиту#! и невосприимчивость к неистовству."
 
- warcry_modifier: "Боевой клич"
- strike_true_modifier: "Истинный удар"
- wind_dance_modifier: "Танец ветра"
- fearless_heart_modifier: "Бесстрашное оружие"
+ comrades_at_arms_warcry_modifier: "Товарищи по оружию: $warcry_perk_name$"
+ comrades_at_arms_strike_true_modifier: "Товарищи по оружию: $strike_true_perk_name$"
+ comrades_at_arms_wind_dance_modifier: "Товарищи по оружию: $wind_dance_perk_name$"
+ comrades_at_arms_wind_dance_modifier_desc: "[PODImprovesCombatMove('POD_combat_move_blood_surge')]."
+ comrades_at_arms_fearless_heart_modifier: "Товарищи по оружию: $fearless_heart_perk_name$"
 
- control_fog_modifier: "Контролируемый туман"
- control_rain_modifier: "Контролируемый дождь"
- control_wind_modifier: "Контролируемый ветер"
- control_rain_2_modifier: "Контролируемый климат"
- control_storm_modifier: "Контролируемая буря"
- cauldron_of_blood_modifier: "Котёл крови"
+ vertigo_modifier: "Головокружение"
+ contortion_modifier: "Искривление"
+ seizure_modifier: "Припадок"
+
+ control_fog_modifier: "Неестественный туман"
+ manipulate_rain_modifier: "Сильный дождь"
+ command_wind_modifier: "Сильный ветер"
+ summon_storm_modifier: "Отвлекающий шторм"
+ dominate_lightning_modifier: "Мощная гроза"
+
+ blood_rage_modifier: "Кровавая ярость"
+ blood_rage_modifier_desc: "В начале битвы побуждает всех союзных [Concept('knights', 'рыцарей')|E]-#TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L вампиров#!#! использовать #V Прилив крови: [prowess|E]#!. Каждая активация стоит #N -10 к мнению#!. Действует, когда вы участвуете в [Concept('combat_phase', 'бою')|E] в качестве [Concept('commander', 'командира')|E]."
+
  a_sending_of_serpents_modifier: "Гнездо змей"
  suffocation_of_the_tomb_modifier: "Бездыханность мёртвых"
  the_narrow_house_modifier: "Тесный дом"
@@ -29,9 +32,6 @@
  thrones_crumble_modifier: "Падение престолов"
  first_taste_modifier: "Первая проба"
  fatal_compulsion_modifier: "Гибельное побуждение"
-
- the_withering_of_ages_modifier: "Слабость веков"
- MODIFIER_DEFINITION_VALUE_PER_AGE: "За каждый прожитый год этого персонажа"
 
  ritual_encrypt_missive_modifier: "Зашифрованные послания"
  ritual_brand_of_the_paramour_modifier: "Клеймо возлюбленного"
@@ -94,6 +94,11 @@
  weapon_knowledge_2_modifier: "Знание оружия 2"
  weapon_knowledge_1_modifier: "Знание оружия"
 
+ weight_of_the_sun_modifier: "Бремя солнца"
+ abated_tooth_modifier: "Притуплённый зуб"
+ abated_tooth_modifier_desc: "Нельзя восполнить голод от потребления крови."
+ the_withering_of_ages_modifier: "Слабость веков"
+ the_withering_of_ages_modifier_desc: "Масштабируется с возрастом, за каждые #V 50#! лет #N -2#! [Concept('prowess', 'доблести')|E]."
 
  weave_of_the_future_modifier: "Ткань будущего"
  certain_fate_modifier: "Определенная судьба"
@@ -106,9 +111,6 @@
  master_of_samsara_modifier: "Мастер реакции Самсары"
  humiliation_modifier: "Унижение"
  peril_modifier: "Угроза"
- weight_of_the_sun_modifier: "Бремя солнца"
- abated_tooth_modifier: "Притуплённый зуб"
- abated_tooth_modifier_desc: "Нельзя восполнить голод от потребления крови."
  weigh_the_virtues_modifier: "Тяжесть добродетелей"
  the_sorcery_of_life_modifier: "Реакция чародейства Жизни"
  bestowment_of_scales_modifier: "Дарование чешуи"
@@ -116,6 +118,7 @@
  apeps_transformation_modifier: "Змея [Glossary('Апопа', 'glossary_wyrm_tt')]"
 
  armor_of_diamond_serenity_modifier: "Доспехи алмазного спокойствия"
+ armor_of_diamond_serenity_modifier_desc: "#red Вы не можете использовать «Прилив крови», «Кровавое исцеление» или «Безумие», пока этот модификатор активен.#!"
  animaa_modifier: "Анимаа"
  warded_womb_modifier: "Защищённая утроба"
  warded_womb_modifier_desc: "Дети этого персонажа не унаследуют сверхъестесственные свойства"
@@ -142,9 +145,9 @@
 
 
  kupalas_exhalation_modifier: "Вздох Купалы"
- kupalas_exhalation_modifier_desc: "Наносит #V [EmptyScope.ScriptValue('POD_base_cold_damage')|V0] ед. холодного#! урона [Concept('commander', 'командиру')|E] и всем [Concept('knights', 'рыцарям')|E] вражеского войска, когда они вступают в эту провинцию."
+ kupalas_exhalation_modifier_desc: "Наносит #V [EmptyScope.ScriptValue('POD_base_cold_damage')|V0]#! ед. урона @pod_combat_cold_icon!#L;color:{0.55,0.85,1.00} [Concept('cold_damage', 'холодом')|E]#! [Concept('commander', 'командиру')|E] и всем [Concept('knights', 'рыцарям')|E] вражеского войска, когда они вступают в эту провинцию."
  kupalas_exhalation_modifier2: "Великий вздох Купалы"
- kupalas_exhalation_modifier2_desc: "Наносит #V [EmptyScope.ScriptValue('POD_double_cold_damage')|V0] ед. холодного#! урона [Concept('commander', 'командиру')|E] и всем [Concept('knights', 'рыцарям')|E] вражеского войска, когда они вступают в эту провинцию."
+ kupalas_exhalation_modifier2_desc: "Наносит #V [EmptyScope.ScriptValue('POD_double_cold_damage')|V0]#! ед. урона @pod_combat_cold_icon!#L;color:{0.55,0.85,1.00} [Concept('cold_damage', 'холодом')|E]#! [Concept('commander', 'командиру')|E] и всем [Concept('knights', 'рыцарям')|E] вражеского войска, когда они вступают в эту провинцию."
  pontos_euxeinos_modifier: "Понт Эвксинский"
  heed_the_hell_bound_heart_modifier: "Колдовская слабость"
  heed_the_hell_bound_heart_modifier2: "Колдовской разрыв"

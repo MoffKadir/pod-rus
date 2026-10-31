@@ -7,9 +7,9 @@
  POD_gnosis_4_modifier: "Гнозис: 4"
  POD_gnosis_5_modifier: "Гнозис: 5"
 
- POD_delirium_modifier: "#TOOLTIP:game_concept_battle_modifier_desc #E Модификатор битвы#!#!: Делириум"
+ POD_delirium_modifier: "Делириум"
  POD_delirium_modifier_desc: "Делириум - это непреодолимый инстинктивный страх, который охватывает людей, когда они видят оборотней и некоторых других фера в их боевых формах."
- POD_reduced_delirium_modifier: "#TOOLTIP:game_concept_battle_modifier_desc #E Модификатор битвы#!#!: Ослабленный делириум"
+ POD_reduced_delirium_modifier: "Ослабленный делириум"
  POD_reduced_delirium_modifier_desc: "Делириум - это непреодолимый инстинктивный страх, который охватывает людей, когда они видят оборотней и некоторых других фера в их боевых формах."
 
 
@@ -18,7 +18,7 @@
  #################
  
  POD_werewolf_form_crinos_modifier: "Форма Кринос"
- POD_werewolf_form_crinos_modifier_desc: "«Боевая форма», ужасающий гибрид человека и волка с невероятной силой.\n#weak Вражеские [Concept('knights', 'рыцари')|E], выступающие как [Concept('commander', 'командиры')|E] во время [Concept('combat_phase', 'фазы боя')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_delirium_modifier').GetNameWithTooltip]#!"
+ POD_werewolf_form_crinos_modifier_desc: "«Боевая форма», ужасающий гибрид человека и волка с невероятной силой и скоростью."
  POD_werewolf_form_glabro_modifier: "Форма Глабро"
  POD_werewolf_form_glabro_modifier_desc: "Примерно похожа на человека, но имеет слишком много звериных черт, чтобы быть им."
  POD_werewolf_form_hispo_modifier: "Форма Хиспо"
@@ -27,7 +27,7 @@
  POD_werewolf_form_lupus_modifier_desc: "Неотличима от обычного волка, но обладает превосходной скоростью."
  
  POD_ajaba_form_crinos_modifier: "Форма Кринос"
- POD_ajaba_form_crinos_modifier_desc: "Боевая форма; немного меньше и менее мощная, чем у гару, но немного крепче.\n#weak Вражеские [Concept('knights', 'рыцари')|E], выступающие как [Concept('commander', 'командиры')|E] во время [Concept('combat_phase', 'фазы боя')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_delirium_modifier').GetNameWithTooltip]#!"
+ POD_ajaba_form_crinos_modifier_desc: "Боевая форма; немного меньше и менее мощная, чем у гару, но немного крепче."
  POD_ajaba_form_anthros_modifier: "Форма Антрос"
  POD_ajaba_form_anthros_modifier_desc: "Форма получеловека."
  POD_ajaba_form_crocas_modifier: "Форма Крокас"
@@ -43,7 +43,7 @@
  POD_ananasi_form_pithus_modifier_desc: ""
  
  POD_bastet_form_crinos_modifier: "Форма Кринос"
- POD_bastet_form_crinos_modifier_desc: "Гибрид человека и кошки, вызывает ослабленную форму Делириума.\n#weak Вражеские [Concept('knights', 'рыцари')|E], выступающие как [Concept('commander', 'командиры')|E] во время [Concept('combat_phase', 'фазы боя')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip]#!"
+ POD_bastet_form_crinos_modifier_desc: "Гибрид человека и кошки, опасное сочетание силы и хитрости."
  POD_bastet_form_sokto_modifier: "Форма Сокто"
  POD_bastet_form_sokto_modifier_desc: "Получеловек."
  POD_bastet_form_chatro_modifier: "Форма Чатро"
@@ -52,12 +52,12 @@
  POD_bastet_form_feline_modifier_desc: "Обычная кошка."
  
  POD_corax_form_crinos_modifier: "Форма Кринос"
- POD_corax_form_crinos_modifier_desc: "Форма Кринос - очень неуклюжее существо, наполовину похожее на птицу. Кораксы обычно используют эту форму только для того, чтобы отбиваться от врагов достаточно долго, чтобы убежать, и то лишь в тех случаях, когда у них нет альтернативы.\n#weak Вражеские [Concept('knights', 'рыцари')|E], выступающие как [Concept('commander', 'командиры')|E] во время [Concept('combat_phase', 'фазы боя')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip]#!"
+ POD_corax_form_crinos_modifier_desc: "Форма Кринос - очень неуклюжее существо, наполовину похожее на птицу. Кораксы обычно используют эту форму только для того, чтобы отбиваться от врагов достаточно долго, чтобы убежать, и то лишь в тех случаях, когда у них нет альтернативы."
  POD_corax_form_corvid_modifier: "Форма Корвид"
  POD_corax_form_corvid_modifier_desc: "Форма Корвид, - это, по сути, обычная ворона, хотя кораксы - особенно крупные птицы, которые по размеру ближе к орлам."
 
  POD_gurahl_form_crinos_modifier: "Форма Кринос"
- POD_gurahl_form_crinos_modifier_desc: "Боевая форма. Необычайно сильная и выносливая, не говоря уже о том, что огромная: от 10 до 16 футов в высоту и весом до 1200 кг.\n#weak Вражеские [Concept('knights', 'рыцари')|E], выступающие как [Concept('commander', 'командиры')|E] во время [Concept('combat_phase', 'фазы боя')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip]#!"
+ POD_gurahl_form_crinos_modifier_desc: "Боевая форма. Необычайно сильная и выносливая, не говоря уже о том, что огромная: от 10 до 16 футов в высоту и весом до 1200 кг."
  POD_gurahl_form_arthren_modifier: "Форма Артрен"
  POD_gurahl_form_arthren_modifier_desc: "Форма, близкая к человеческой. Значительно сильнее и выносливее, чем оборотни в форме Глабро, гурали в форме Артрен, как считается, вдохновили легенды о снежном человеке и подобных существах."
  POD_gurahl_form_bjornen_modifier: "Форма Бьёрнен"
@@ -75,13 +75,13 @@
  POD_kitsune_form_kyubi_modifier_desc: "Обычная лиса"
 
  POD_mokole_form_archid_modifier: "Форма Архид"
- POD_mokole_form_archid_modifier_desc: "Боевая форма считается «истинной формой» любого отдельного моколе. Через мнезис им снятся рептилии, птицы и динозавры из прошлого, что определяет характеристики формы Архид.\n#weak Вражеские [Concept('knights', 'рыцари')|E], выступающие как [Concept('commander', 'командиры')|E] во время [Concept('combat_phase', 'фазы боя')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_delirium_modifier').GetNameWithTooltip]#!"
+ POD_mokole_form_archid_modifier_desc: "Боевая форма считается «истинной формой» любого отдельного моколе. Через мнезис им снятся рептилии, птицы и динозавры из прошлого, что определяет характеристики формы Архид."
 
 
 
 
  POD_nagah_form_azhi_dahaka_modifier: "Форма Ажи Дахака"
- POD_nagah_form_azhi_dahaka_modifier_desc: "Боевая форма у наг разная, но у всех есть массивный капюшон, как у кобры, многие наносят себе шрамы, чтобы быть более заметными в этой форме, могут разжимать челюсти и имеют жабры (в этой форме они полностью земноводные). Масса наги увеличивается, но за счет хвоста длиной от 16 до 20 футов для нижней половины тела, руки становятся змееподобными, так как вместо обычных костей на руках вырастают позвонки, что позволяет им легче хвататься. На руках змея вырастают когти, не уступающие когтям любого гару, а чешуя и чешуйки приобретают сверхъестественную упругость. Любые шрамы, полученные нагами, в этой форме сильно выделяются, часто в виде узоров на чешуе Ажи Дахака. В таком виде нага вызывает полный эффект делириума: мало кто из людей может выдержать, глядя на такое воплощение их первобытного страха перед змеями.\n#weak Вражеские [Concept('knights', 'рыцари')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_delirium_modifier').GetNameWithTooltip]#!"
+ POD_nagah_form_azhi_dahaka_modifier_desc: "Боевая форма у наг разная, но у всех есть массивный капюшон, как у кобры, многие наносят себе шрамы, чтобы быть более заметными в этой форме, могут разжимать челюсти и имеют жабры (в этой форме они полностью земноводные). Масса наги увеличивается, но за счет хвоста длиной от 16 до 20 футов для нижней половины тела, руки становятся змееподобными, так как вместо обычных костей на руках вырастают позвонки, что позволяет им легче хвататься. На руках змея вырастают когти, не уступающие когтям любого гару, а чешуя и чешуйки приобретают сверхъестественную упругость. Любые шрамы, полученные нагами, в этой форме сильно выделяются, часто в виде узоров на чешуе Ажи Дахака."
  POD_nagah_form_silkaram_modifier: "Форма Силкарам"
  POD_nagah_form_silkaram_modifier_desc: "Почти человек, но волосы и кожа заменяются мелкими чешуйками, лицо уплощается, а глаза становятся более змеиными, зубы сливаются воедино, кроме двух клыков, которые втягиваются, как у кобры. В таком виде они приобретают яд, опасный для смертных и даже нежити."
  POD_nagah_form_kali_dahaka_modifier: "Форма Кали Дахака"
@@ -90,7 +90,7 @@
  POD_nagah_form_vasuki_modifier_desc: "Неотличим от обычной кобры, гремучей змеи, щитомордника или другой породы."
 
  POD_nuwisha_form_manabozho_modifier: "Форма Мана-божо"
- POD_nuwisha_form_manabozho_modifier_desc: "Боевая форма, гибрид человека и койота.\n#weak Вражеские [Concept('knights', 'рыцари')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip]#!"
+ POD_nuwisha_form_manabozho_modifier_desc: "Боевая форма, гибрид человека и койота."
  POD_nuwisha_form_tsitsu_modifier: "Форма Цицу"
  POD_nuwisha_form_tsitsu_modifier_desc: "Форма получеловека."
  POD_nuwisha_form_sendeh_modifier: "Форма Сенде"
@@ -100,16 +100,16 @@
 
 
  POD_ratkin_form_crinos_modifier: "Форма Кринос"
- POD_ratkin_form_crinos_modifier_desc: "Боевая форма, гибрид человека и крысы.\n#weak Вражеские [Concept('knights', 'рыцари')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip]#!"
+ POD_ratkin_form_crinos_modifier_desc: "Боевая форма, гибрид человека и крысы."
  POD_ratkin_form_rodens_modifier: "Форма грызуна"
  POD_ratkin_form_rodens_modifier_desc: "Крыса различных размеров."
  
  POD_rokea_form_gladius_modifier: "Форма Гладиус"
- POD_rokea_form_gladius_modifier_desc: "Гладиус, прозванный акулами-оборотнями «Стоячими челюстям», представляет собой десятифутовую двуногую акулу. Подобно Криносу, «Стоячие челюсти» сочетают в себе силу акулы и универсальность человеческой формы. Эта форма вызывает у людей частичный делириум.\n#weak Вражеские [Concept('knights', 'рыцари')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_delirium_modifier').GetNameWithTooltip]#!"
+ POD_rokea_form_gladius_modifier_desc: "Гладиус, прозванный акулами-оборотнями «Стоячими челюстям», представляет собой десятифутовую двуногую акулу. Подобно Криносу, «Стоячие челюсти» сочетают в себе силу акулы и универсальность человеческой формы."
  POD_rokea_form_grabrus_modifier: "Форма Грабрус"
- POD_rokea_form_grabrus_modifier_desc: "Эта форма, также известная как «Круглая спина», обычно известна только сухопутным рокеа - акулам–оборотням, обитающим в океане, она не очень подходит. Рокеа полностью теряет волосы на теле и становится еще уродливее, чем ее человекообразная форма. Он или она удваивает свою мышечную массу, а спина расширяется по мере того, как начинает формироваться спинной плавник.\n#weak Вражеские [Concept('knights', 'рыцари')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_reduced_delirium_modifier').GetNameWithTooltip]#!"
+ POD_rokea_form_grabrus_modifier_desc: "Эта форма, также известная как «Круглая спина», обычно известна только сухопутным рокеа - акулам–оборотням, обитающим в океане, она не очень подходит. Рокеа полностью теряет волосы на теле и становится еще уродливее, чем ее человекообразная форма. Он или она удваивает свою мышечную массу, а спина расширяется по мере того, как начинает формироваться спинной плавник."
  POD_rokea_form_chasmus_modifier: "Форма Чазмус"
- POD_rokea_form_chasmus_modifier_desc: "Форма, которую рокеа называют «Боевые челюсти», - это доисторический кошмар, вызывающий у людей полный делириум. Рокеа превращается в гигантскую версию своей породы, вырастая вдвое длиннее, чем ее чешуя. В такой форме рокеа ведут подводные бои.\n#weak Вражеские [Concept('knights', 'рыцари')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_delirium_modifier').GetNameWithTooltip]#!"
+ POD_rokea_form_chasmus_modifier_desc: "Форма, которую рокеа называют «Боевые челюсти», - это доисторический кошмар. Рокеа превращается в гигантскую версию своей породы, вырастая вдвое длиннее, чем ее чешуя. В такой форме рокеа ведут подводные бои."
  POD_rokea_form_squamus_modifier: "Форма Сквамус"
  POD_rokea_form_squamus_modifier_desc: "Также известная как «Плавающие челюсти», эта форма неотличима от обычной акулы вида рокеа."
 
@@ -119,7 +119,7 @@
  POD_apis_form_aurochs_modifier_desc: "Животная форма."
 
  POD_camazotz_form_crinos_modifier: "Форма Кринос"
- POD_camazotz_form_crinos_modifier_desc: "Боевая форма камазотц, гибрида человека и летучей мыши.\n#weak Вражеские [Concept('knights', 'рыцари')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат [Concept('modifier', 'модификатор')|E] [GetModifier('POD_delirium_modifier').GetNameWithTooltip]#!"
+ POD_camazotz_form_crinos_modifier_desc: "Боевая форма камазотц, гибрида человека и летучей мыши."
  POD_camazotz_form_apterous_modifier: "Форма Аптерус"
  POD_camazotz_form_apterous_modifier_desc: "Получеловеческая форма, не способная летать, но крайне цепкая."
  POD_camazotz_form_megachiroptera_modifier: "Форма Мегахироптера"
@@ -173,8 +173,6 @@
  protean_form_arms_coated_in_shark_teeth_modifier: "Руки, покрытые акульими зубами"
  protean_form_extra_legs_modifier: "Дополнительные ноги"
  protean_form_vestigial_wings_modifier: "Рудиментарные крылья"
- haunting_howl_perk_modifier: "#TOOLTIP:game_concept_battle_modifier_desc #E Модификатор битвы#!#!: Пронзительный вопль"
- pain_strength_perk_modifier: "Сила боли"
  maddening_howl_perk_modifier: "#TOOLTIP:game_concept_battle_modifier_desc #E Модификатор битвы#!#!: Душераздирающий вопль"
  the_white_howl_modifier_ally: "[battle_modifier|E]: Белый вой"
  the_white_howl_modifier_enemy: "[battle_modifier|E]: Белый вой"
@@ -257,7 +255,9 @@
  tsukiyomi_totem_modifier: "Тотем стаи: Цуки-йоми"
  tsukiyomi_totem_modifier_desc: "Богиня Луны будет освещать ваш путь, но приливы и отливы бушуют вместе с меняющимися лунами."
  susanowo_totem_modifier: "Тотем стаи: Сусаноо"
- susanowo_totem_modifier_desc: "Бог штормов отвечает на ваш гнев своим собственным.\nИспользование погодной магии #V шторма#! наносит 1 ед. молниеносного [Concept('POD_aggravated_damage', 'серьёзного урона')|E] вашей цели и всем её [Concept('knights', 'рыцарям')|E], если они находятся в состоянии войны с вами."
+ susanowo_totem_modifier_desc: "Бог штормов отвечает на вашу [Glossary('ярость', 'glossary_rage_tt')] своей собственной.\nИспользование погодной магии #V шторма#! наносит 1 ед. @pod_combat_lightning_icon!#L;color:{1.00,0.95,0.35} [Concept('lightning_damage', 'урона молнией')|E]#! вашей цели и всем её [Concept('knights', 'рыцарям')|E], если они находятся в состоянии войны с вами."
+ lion_totem_modifier: "Тотем стаи: Лев"
+ lion_totem_modifier_desc: "Впечатляющий рык и мощные челюсти Льва могут сравниться только с его собственной гордостью."
 
  #Wyrm
  whippoorwill_totem_modifier: "Тотем стаи: Козодой"

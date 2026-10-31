@@ -42,7 +42,7 @@
  INVESTITURE_STACKING_EFFECT: "#clickable Это [Concept('perk', 'достоинство')|E] можно разблокировать несколько раз.#!"
  INVESTITURE_VISUAL_CHANGE_EFFECT: "#N Это [Concept('perk', 'достоинство')|E] навсегда изменит ваш внешний вид!#!"
 
- investiture_armor_perk_name: "Броня #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_armor_perk_modifier_stacks')])#!"
+ investiture_armor_perk_name: "Броня #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_armor_perk_modifier_stacks')]/10)#!"
  investiture_backgrounds_perk_name: "Дополнения #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_backgrounds_perk_modifier_stacks')])#!"
  investiture_demonic_strength_perk_name: "Демоническая сила #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_demonic_strength_perk_modifier_stacks')])#!"
  investiture_longevity_perk_name: "Долголетие #low ([ROOT.Char.MakeScope.ScriptValue('POD_investiture_longevity_perk_modifier_stacks')])#!"
@@ -86,7 +86,7 @@
  investiture_master_of_the_domain_perk_name: "Владыка домена"
 
  INVESTITURE_DEVILS_EYES_PERK_EFFECT: "Можно вызвать [Concept('epidemic', 'поветрие')|E] в текущей локации цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Одним взглядом инферналист может испортить молоко, сгноить зерно и заразить детей. Хотя сила Глаз бесполезна против взрослых (которые, тем не менее, чувствуют себя неуютно под его воздействием), он может опустошить деревню, уничтожив запасы продовольствия незадолго до наступления зимы.#!"
- INVESTITURE_APPORTATION_PERK_EFFECT: "Можно украсть [Concept('artifact', 'артефакт')|E] у цели за 2 оч. [Concept('perk', 'достоинства')|E] [Concept('investiture_lifestyle', 'пути инвеституры')|E] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor С помощью этого «дара» искатель ада может зачаровать один предмет, привязав его к себе. С момента наложения чар он может вызывать этот предмет из любой точки мира смертных (но не из-за Барьера). Предмет должен быть достаточно маленьким и лёгким, чтобы поместиться в одной руке, но может быть любым, магическим или иным.#!"
+ INVESTITURE_APPORTATION_PERK_EFFECT: "Можно украсть [Concept('artifact', 'артефакт')|E] с претензией у цели за 2 оч. [Concept('perk', 'достоинства')|E] [Concept('investiture_lifestyle', 'пути инвеституры')|E] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor С помощью этого «дара» искатель ада может зачаровать один предмет, привязав его к себе. С момента наложения чар он может вызывать этот предмет из любой точки мира смертных (но не из-за Барьера). Предмет должен быть достаточно маленьким и лёгким, чтобы поместиться в одной руке, но может быть любым, магическим или иным.#!"
  INVESTITURE_AWARENESS_PERK_EFFECT: "#flavor С разбивающим рассудок шоком, демон распахивает двери оккультного восприятия, давая инферналисту инстинктивное знание окружающих его тайн.#!"
  INVESTITURE_LUCIFERIAN_CHARM_PERK_EFFECT: "#flavor С этим даром инферналист может выйти сухим почти из любой ситуации. Не важно что он говорит, или же делает, он внушает подлинное благоговение каждому встречному.#!"
  INVESTITURE_MASTER_OF_THE_DOMAIN_PERK_EFFECT: "#flavor Инферналист всегда будет знать, что происходит в 500 футах внутри его владений, как если бы он наблюдал сверху.#!"
@@ -143,7 +143,7 @@
  touch_of_yama_kings_perk_name: "Касание [Glossary('повелителей Яма','podgloss.yamaking')]"
  unfolding_scarlet_lotus_perk_name: "Распустившийся алый лотос"
 
- MASK_OF_YOMI_PERK_EFFECT: "Свойство «[GetTrait('witch').GetName( GetPlayer )]» будет автоматически скрыто при раскрытии.\nОтменяет все принудительные изменения внешнего вида от даров.\n#F Дары персонажа больше не подают признаков. Никакие допытывания разума, исследования души или выведывание истины не смогут установить, что персонаж является [Concept('akuma', 'акума')|E], или заставить его выдать свою неправедную деятельность.#!"
+ MASK_OF_YOMI_PERK_EFFECT: "Отменяет все принудительные изменения внешнего вида от даров.\n#F Дары персонажа больше не подают признаков. Никакие допытывания разума, исследования души или выведывание истины не смогут установить, что персонаж является [Concept('akuma', 'акума')|E], или заставить его выдать свою неправедную деятельность.#!"
  BLACK_WHISPERS_PERK_EFFECT: "Позволяет раскрыть все секреты и происки цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Шпионы [Glossary('повелителей Яма','podgloss.yamaking')] повсюду, и то, что не видят и не слышат [Concept('akuma', 'акума')|E], узнают их приспешники-духи.#!"
  EBON_FOUNTAIN_PERK_EFFECT: "Вы теряете 10 [Concept('stress', 'стресса')|E] каждый месяц.\n#F П'о персонажа связано с источником демонической силы.#!"
  LUCK_OF_YOMI_PERK_EFFECT: "Позволяет тратить очки инвеституры через [Concept('decision', 'решение')|E], чтобы получить золото и престиж. Если решение уже разблокировано, оно принесёт больше золота.\n#F Повелители Яма изменяют удачу персонажа, и в результате судьба становится благосклонней к [Concept('akuma', 'акума')|E].#!"
@@ -152,4 +152,4 @@
  IRON_HANDS_PERK_EFFECT: "#F Теперь персонаж движется, опираясь на мощь [Glossary('повелителей Яма','podgloss.yamaking')].#!"
  BREATH_OF_KNOWLEDGE_PERK_EFFECT: "#F [Glossary('Повелители Яма','podgloss.yamaking')] шепчут свои знания персонажу на ухо, и они выжигаются в голове, как раскалённое железо.#!"
  TOUCH_OF_YAMA_KINGS_PERK_EFFECT: "#F [UmbraGlossaryLocalized('yomi_wan','Ад Йоми')] коснулся персонажа.#!"
- UNFOLDING_SCARLET_LOTUS_PERK_EFFECT: "Требования к уровню [Glossary('дхармы','podgloss.dharma')] при разблокировке достоинств искусств игнорируются.\n#F Бэйны нашептывают персонажу секреты своего возвышенного состояния.#!"
+ UNFOLDING_SCARLET_LOTUS_PERK_EFFECT: "Требования к уровню [Glossary('дхармы','podgloss.dharma')] при разблокировке достоинств искусств игнорируются.\nВу-Куэй считают регион [GetGeographicalRegion('POD_region_middle_kingdom').GetName] своей [Concept('POD_homeland', 'родиной')|E]\n#F Бэйны нашептывают персонажу секреты своего возвышенного состояния.#!"
