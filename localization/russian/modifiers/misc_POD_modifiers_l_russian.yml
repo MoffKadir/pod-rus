@@ -128,6 +128,11 @@
  spirit_animal_snake_modifier: "Духовное животное #Weak (Змея)#!"
  spirit_animal_rooster_modifier: "Духовное животное #Weak (Петух)#!"
  spirit_animal_owl_modifier: "Духовное животное #Weak (Сова)#!"
+ spirit_hunt_modifier: "Охота на духов #Weak (ежемесячное снижение стресса)"
+ spirit_hunt_2_modifier: "Охота на духов #Weak (ежемесячное снижение стресса)"
+ spirit_hunt_3_modifier: "Охота на духов #Weak (ежемесячное снижение стресса)"
+ spirit_hunt_4_modifier: "Охота на духов #Weak (ежемесячное снижение стресса)"
+ spirit_hunt_5_modifier: "Разгневанные духи"
 
  pariahs_caress_perk_modifier: "Ласка изгоя"
  aversion_perk_modifier: "Отвращение"
@@ -324,6 +329,11 @@
  weather_magic_mummy_cycle_of_ra_modifier: "Цикл Ра"
 
  weather_magic_fertile_land_modifier: "Плодородная земля"
+ weather_magic_abundant_flora_modifier: "Обильная флора"
+ weather_magic_dead_flora_modifier: "Мёртвая флора"
+ weather_magic_agitated_animals_modifier: "Взволнованные животные"
+ weather_magic_calm_animals_modifier: "Спокойные животные"
+ weather_frequent_rain_modifier: "Частый дождь"
 
  pod_negative_ai_boldness_modifier: "Снижение смелости"
  pod_negative_ai_compassion_modifier: "Снижение сострадания"
@@ -376,3 +386,68 @@
  body_arsenal_ghoul_modifier: "Арсенал тела: Гуль"
 
  caustic_gland_modifier: "[battle_modifier|E]: Едкий плевок"
+
+ ######################################################
+ # VAMPIRE CLAN HIDEOUT MODIFIER LOCALIZATION
+ ######################################################
+
+ # Assamite Vizier Assessment
+ POD_assamite_vizier_assessment_t1: "Оценка визиря"
+ POD_assamite_vizier_assessment_t1_desc: "Тщательный анализ управления провинцией, проведённый визирем, привёл к улучшению налогообложения и развития."
+ POD_assamite_vizier_assessment_t2: "Экспертиза визиря"
+ POD_assamite_vizier_assessment_t2_desc: "Тщательная экспертиза визиря значительно улучшила управление провинцией."
+ POD_assamite_vizier_assessment_t3: "Расчёт визиря"
+ POD_assamite_vizier_assessment_t3_desc: "Мастерское управление визиря превратило провинцию в образец эффективности."
+
+ # Ravnos Jati Visitor Modifiers
+ POD_ravnos_jati_phuri_dae_visit_t1: "Слово Пхури Дэ"
+ POD_ravnos_jati_phuri_dae_visit_t1_desc: "Старейшина Пхури Дэ украсил ваше убежище несколькими мудрыми словами."
+ POD_ravnos_jati_phuri_dae_visit_t2: "Совет Пхури Дэ"
+ POD_ravnos_jati_phuri_dae_visit_t2_desc: "Старейшина Пхури Дэ с глубокой мудростью украсил ваше убежище."
+ POD_ravnos_jati_phuri_dae_visit_t3: "Благословение Пхури Дэ"
+ POD_ravnos_jati_phuri_dae_visit_t3_desc: "Старейшина Пхури Дэ украсил ваше убежище всей своей мудростью."
+
+ POD_ravnos_jati_kshatriya_visit_t1: "Муштра кшатрии"
+ POD_ravnos_jati_kshatriya_visit_t1_desc: "Воин-кшатрия поделился несколькими с трудом завоёванными уроками ведения войны."
+ POD_ravnos_jati_kshatriya_visit_t2: "Обучение кшатрии"
+ POD_ravnos_jati_kshatriya_visit_t2_desc: "Воин-кшатрия поделился своими с трудом завоёванными уроками ведения войны."
+ POD_ravnos_jati_kshatriya_visit_t3: "Мудрость клинка кшатрии"
+ POD_ravnos_jati_kshatriya_visit_t3_desc: "Воин-кшатрия поделился всей глубиной своих с трудом завоёванных уроков ведения войны."
+
+ POD_ravnos_jati_vaisyas_visit_t1: "Контакты вайшьи"
+ POD_ravnos_jati_vaisyas_visit_t1_desc: "Торговец-вайшья соединил ваш домен с частью торговой сети Равнос."
+ POD_ravnos_jati_vaisyas_visit_t2: "Маршруты вайшьи"
+ POD_ravnos_jati_vaisyas_visit_t2_desc: "Торговец-вайшья связал ваш домен со значительной частью торговой сети Равнос."
+ POD_ravnos_jati_vaisyas_visit_t3: "Торговая сеть вайшьи"
+ POD_ravnos_jati_vaisyas_visit_t3_desc: "Торговец-вайшья связал ваш домен со всей торговой сетью Равнос."
+
+ POD_ravnos_jati_sybarite_visit_t1: "Советы сибарита"
+ POD_ravnos_jati_sybarite_visit_t1_desc: "Сибарит-обманщик поделился несколькими секретами введения в заблуждение и манипуляций."
+ POD_ravnos_jati_sybarite_visit_t2: "Ремесло сибарита"
+ POD_ravnos_jati_sybarite_visit_t2_desc: "Сибарит-обманщик поделился своими лучшими секретами введения в заблуждение и манипуляций."
+ POD_ravnos_jati_sybarite_visit_t3: "Уловки сибарита"
+ POD_ravnos_jati_sybarite_visit_t3_desc: "Сибарит-обманщик поделился всей широтой своих секретов введения в заблуждение и манипуляций."
+
+ POD_ravnos_jati_brahmin_visit_t1: "Обряды брахмана"
+ POD_ravnos_jati_brahmin_visit_t1_desc: "Брахман дорожной веры даровал вам часть своих благословений."
+ POD_ravnos_jati_brahmin_visit_t2: "Учение брахмана"
+ POD_ravnos_jati_brahmin_visit_t2_desc: "Брахман дорожной веры даровал вам свои обдуманные благословения."
+ POD_ravnos_jati_brahmin_visit_t3: "Благословение брахмана"
+ POD_ravnos_jati_brahmin_visit_t3_desc: "Брахман дорожной веры даровал вам полную меру своих благословений."
+
+ # MALKAVIAN — Madness Network Building Bonus
+ POD_madness_network_building_diplomacy_bonus_1: "Шёпот сети"
+ POD_madness_network_building_diplomacy_bonus_2: "Эхо сети"
+ POD_madness_network_building_diplomacy_bonus_3: "Голос сети"
+ POD_madness_network_building_martial_bonus_1: "Шёпот сети"
+ POD_madness_network_building_martial_bonus_2: "Эхо сети"
+ POD_madness_network_building_martial_bonus_3: "Голос сети"
+ POD_madness_network_building_stewardship_bonus_1: "Шёпот сети"
+ POD_madness_network_building_stewardship_bonus_2: "Эхо сети"
+ POD_madness_network_building_stewardship_bonus_3: "Голос сети"
+ POD_madness_network_building_intrigue_bonus_1: "Шёпот сети"
+ POD_madness_network_building_intrigue_bonus_2: "Эхо сети"
+ POD_madness_network_building_intrigue_bonus_3: "Голос сети"
+ POD_madness_network_building_learning_bonus_1: "Шёпот сети"
+ POD_madness_network_building_learning_bonus_2: "Эхо сети"
+ POD_madness_network_building_learning_bonus_3: "Голос сети"
