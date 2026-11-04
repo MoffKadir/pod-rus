@@ -4,3 +4,10 @@
 
  # Generic subheading for bookmarked characters (if no subheadings are set)
  BOOKMARK_CHARACTER_SUBHEADING_AND_GOVERNMENT: "$BOOKMARK_SUBHEADING_DEFAULT$ #low [BookmarkCharacter.GetGovernmentType.GetNameWithIcon]#!"
+
+ # Missing vanilla custom_description
+ NOT_THEY_HAVE_OPINION: "[CHARACTER.GetShortUIName|U]: [Concept('opinion', 'мнение')|E] о [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '','персонаже ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'ем персонаже','' )] #bold ниже#! $NUM|V$"
+
+ # Bugged custom_descriptions from vanilla
+ REMOVE_PERK_EFFECT: "[CHARACTER.GetShortUIName|U] теряет достоинство «[PERK.GetName(CHARACTER.Self)|V]»"
+ REMOVE_PERK_PAST_EFFECT: "[CHARACTER.GetShortUIName|U] [Select_CString(CHARACTER.IsLocalPlayer, 'потеряли', Select_CString(CHARACTER.IsFemale, 'потеряла', 'потерял'))] достоинство «[PERK.GetName(CHARACTER.Self)|V]»"
