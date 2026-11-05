@@ -1,30 +1,32 @@
 ﻿l_russian:
 
+ POD_deny_the_hungry_perk_interaction: "Отвергнуть голод"
+ POD_deny_the_hungry_perk_interaction_desc: "Никакая сила воли не может одолеть слабеющее тело"
+
+ POD_madness_perk_interaction: "Безумие"
+ POD_madness_perk_interaction_desc: "Шатающиеся, задыхающиеся, доведённые до безумия."
+ POD_madness_perk_interaction_success: "Безумие!"
 
  POD_freyjas_blessing_interaction: "Благословение Фрейи"
- POD_freyjas_blessing_interaction_desc: "Призвать в себя духа плодородия. Возложив руки на живот персонажа [recipient.GetFirstNamePossessive], вы можете передать дух персонажу [recipient.GetFirstName]."
+ POD_freyjas_blessing_interaction_desc: "Призвать в себя духа плодородия. Возложив руки на живот персонажа [recipient.GetFirstName], вы можете передать дух персонажу [recipient.GetFirstName]."
 
  POD_withering_stare_interaction: "Утомлённый взгляд"
  POD_withering_stare_interaction_desc: "Перехватить взгляд цели и нанести урон персонажу [recipient.GetFirstName]."
 
- POD_deny_the_hungry_perk_interaction: "Отвергнуть голод"
- POD_deny_the_hungry_perk_interaction_desc: "Выбранное графство получит модификатор [GetModifier( 'deny_the_hungry_perk_modifier' ).GetNameWithTooltip|L]."
- deny_the_hungry_perk_modifier: "Отвержение голода"
 
- POD_madness_perk_interaction: "Безумие"
- POD_madness_perk_interaction_desc: "Использовать эту способность, чтобы наделить персонажа [recipient.GetFirstName] отрицательным ментальным свойством."
- POD_madness_perk_interaction_options_heading: "Каким свойством я хочу наделить?"
 
- POD_absorb_disease_interaction: "Поглотить хворь"
- POD_absorb_disease_interaction_desc: "Поглотить хворь персонажа [recipient.GetFirstName] для дальнейшего использования."
 
- POD_release_disease_interaction: "Высвободить хворь"
- POD_release_disease_interaction_desc: "Высвободить поглощённую хворь при дворе персонажа [recipient.GetFirstNamePossessive]."
- POD_release_disease_interaction_options_heading: "Какую хворь я высвобожу?"
+
 
  POD_ojas_surge_perk_interaction: "Волна Оджаса"
  POD_ojas_surge_perk_interaction_desc: "Временно повысить атрибут."
  POD_ojas_surge_perk_interaction_options_heading: "Какой атрибут мне улучшить?"
+ shared_strength_diplomacy_gain_modifier: "Общая сила: Прирост дипломатии"
+ shared_strength_martial_gain_modifier: "Общая сила: Прирост военного дела"
+ shared_strength_stewardship_gain_modifier: "Общая сила: Прирост управления"
+ shared_strength_intrigue_gain_modifier: "Общая сила: Прирост интриг"
+ shared_strength_learning_gain_modifier: "Общая сила: Прирост учёности"
+ shared_strength_prowess_gain_modifier: "Общая сила: Прирост доблести"
 
  POD_shadow_brethren_interaction: "Призвать тень-двойника"
  POD_shadow_brethren_interaction_desc: "Призвать собственную тень-двойника."
@@ -44,6 +46,3 @@
 
  POD_the_madness_of_crowds_interaction: "Безумие толпы"
  POD_the_madness_of_crowds_interaction_desc: "Расшевелить дикую натуру всех в окружении персонажа [recipient.GetFirstName]."
-
- POD_reveal_scheme_interaction: "Раскрыть происки"
- POD_reveal_scheme_interaction_desc: "Раскрыть все происки персонажа [recipient.GetFirstName]."

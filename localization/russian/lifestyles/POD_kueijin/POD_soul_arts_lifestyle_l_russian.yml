@@ -22,7 +22,7 @@
  soul_arts_death_lines_perk_name: "Линии смерти"
  SOUL_ARTS_GHOST_MASK_PERK_EFFECT: "Позволяет взаимодействовать с существами из [Concept('umbra', 'Умбры')|E], пока вы находитесь в материальном мире.\n#flavor Голодный перемещает спектральную ци по своему лицу и телу, что даёт ему возможность заглядывать глубже в Загробный мир и разговаривать с его обитателями так, словно он находится там вместе с ними.#!"
  SOUL_ARTS_CRIPPLING_SORROWS_PERK_PERK_EFFECT: "Вы можете наделить свою цель модификатором [GetModifier('soul_arts_crippling_sorrows_modifier').GetNameWithTooltip] на 5 лет через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Тот, кто смотрит на совершенствующегося, сразу вспоминает обо всём, что он потерял.#!"
- SOUL_ARTS_DEATH_LINES_PERK_EFFECT: "#flavor Совершенствующийся может раскрыть хрупкость существования, как легко всё может сломаться и погибнуть.#!"
+ SOUL_ARTS_DEATH_LINES_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_kueijin_death_lines')].\n#flavor Совершенствующийся может раскрыть хрупкость существования, как легко всё может сломаться и погибнуть.#!"
 
  soul_arts_like_a_whisp_perk_name: "Словно огонёк"
  soul_arts_beacon_of_longing_perk_name: "Маяк стремления"
@@ -40,18 +40,18 @@
 
  soul_arts_haunters_rage_perk_name: "Ярость призрака"
  soul_arts_curse_of_ashes_perk_name: "Проклятие праха"
- SOUL_ARTS_HAUNTERS_RAGE_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n#flavor Призраки - это существа с экстремальной страстью, которым совершенствующийся подражает, создавая спектральный пандемониум.#!"
+ SOUL_ARTS_HAUNTERS_RAGE_PERK_EFFECT: "#flavor Призраки - это существа с экстремальной страстью, которым совершенствующийся подражает, создавая спектральный пандемониум.#!"
  SOUL_ARTS_CURSE_OF_ASHES_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат модификатор [GetModifier('soul_arts_curse_of_ashes_modifier').GetNameWithTooltip].\n#flavor Голодный прикасается к своей выбранной цели, лишая её возможности насытиться. Голод, жажда и вожделение становятся невыносимыми, но никакое количество пищи или удовольствий не помогает.#!"
 
  soul_arts_graveyard_song_perk_name: "Кладбищенская песня"
  soul_arts_death_punch_perk_name: "Смертельный удар"
  SOUL_ARTS_GRAVEYARD_SONG_PERK_EFFECT: "Вы можете наделить [Concept('duchy', 'герцогство')|E], в котором находится ваша цель, модификатором [GetModifier('soul_arts_graveyard_song_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Совершенствующийся находит тихое место, которое находит отклик у умерших, и поёт приятную, отдающуюся эхом мелодию - панихиду или грустную песню о любви, трудно сказать. Старые любовники воссоединяются, умершие члены семьи делятся своими секретами, и на мгновение живые и мертвые становятся единым целым.#!"
- SOUL_ARTS_DEATH_PUNCH_PERK_EFFECT: "Если убитый вами персонаж воскреснет, он получит модификатор [GetModifier('soul_arts_death_punch_modifier').GetNameWithTooltip] на 10 лет.\n#flavor Одним ударом совершенствующийся разделяет плоть и дух, возможно, навсегда.#!"
+ SOUL_ARTS_DEATH_PUNCH_PERK_EFFECT: "Если убитый вами персонаж воскреснет, он получит модификатор [GetModifier('soul_arts_death_punch_modifier').GetNameWithTooltip] на 10 лет.\n[PODUnlocksCombatMove('POD_combat_move_kueijin_death_punch')].\n#flavor Одним ударом совершенствующийся разделяет плоть и дух, возможно, навсегда.#!"
 
 
  soul_arts_mortal_perfection_perk_name: "Смертное совершенство"
  soul_arts_the_scent_of_heavens_favor_perk_name: "Аромат благосклонности Небес"
- SOUL_ARTS_MORTAL_PERFECTION_PERK_EFFECT: "Вы можете наделить свою цель модификатором [GetModifier('soul_arts_mortal_perfection_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Голодный излучает божественную ци, которая для духовно чувствительных людей ощущается как сияние пыльцы, исходящее от его кожи. Он всегда готов и всегда элегантен.#!"
+ SOUL_ARTS_MORTAL_PERFECTION_PERK_EFFECT: "Вы можете наделить свою цель модификатором [GetModifier('soul_arts_mortal_perfection_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_kueijin_no_mind')].\n#flavor Голодный излучает божественную ци, которая для духовно чувствительных людей ощущается как сияние пыльцы, исходящее от его кожи. Он всегда готов и всегда элегантен.#!"
  SOUL_ARTS_THE_SCENT_OF_HEAVENS_FAVOR_PERK_EFFECT: "Вы можете призвать через [Concept('character_interaction', 'взаимодействие персонажа')|E] ко [Concept('court', 'двору')|E] #TOOLTIP:GAME_TRAIT,mortal,[GetNullCharacter] #L смертного#!#! с выбранными [Concept('skills', 'навыками')|E].\n#flavor Голодный излучает божественную ци, которая для духовно чувствительных людей ощущается как сияние пыльцы, исходящее от его кожи. Он всегда готов и всегда элегантен.#!"
 
  soul_arts_waywards_brand_perk_name: "Метка своенравия"
@@ -73,7 +73,7 @@
  soul_arts_dance_of_the_kinnara_perk_name: "Танец Киннары"
  soul_arts_i_am_your_doom_perk_name: "Я твоя погибель"
  SOUL_ARTS_DANCE_OF_THE_KINNARA_PERK_EFFECT: "Вы можете принять форму [GetModifier('POD_shapeshift_form_divine_bird_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Голодный преображается для этой сцены в прекрасный златокрылый гибрид птицы и человека. Эта форма духовна, но наполнена такой сияющей мощью, что даже обычные люди смогут уловить мгновенные проблески истины.#!"
- SOUL_ARTS_I_AM_YOUR_DOOM_PERK_EFFECT: "Вы можете наделить свою цель [Concept('modifier', 'модификатором')|E], снижающим выбранный [Concept('skill', 'навык')|E] на #N 5#! #weak (например, [GetModifier('soul_arts_i_am_your_doom_diplomacy_modifier').GetNameWithTooltip])#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Враги богов долго не живут - их имена называет совершенствующийся, и судьба движется соответственно.#!"
+ SOUL_ARTS_I_AM_YOUR_DOOM_PERK_EFFECT: "Вы можете наделить свою цель [Concept('modifier', 'модификатором')|E], снижающим выбранный [Concept('skill', 'навык')|E] на #N 5#! #weak (например, [GetModifier('soul_arts_i_am_your_doom_diplomacy_modifier').GetNameWithTooltip])#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_kueijin_distant_death_kata')].\n#flavor Враги богов долго не живут - их имена называет совершенствующийся, и судьба движется соответственно.#!"
 
  soul_arts_divinity_key_perk_name: "Ключ к божественности"
  soul_arts_fate_of_houses_perk_name: "Судьба домов"
@@ -91,9 +91,9 @@
  soul_arts_healing_sleep_perk_name: "Целебный сон"
  soul_arts_goblin_cat_perk_name: "Огненный кот"
  soul_arts_duke_of_the_wild_perk_name: "Князь дикой природы"
- SOUL_ARTS_HEALING_SLEEP_PERK_EFFECT: "В начале битвы вражеский [Concept('knight', 'рыцарь')|E] с самым высоким значением [Concept('prowess', 'доблести')|E] выйдет из боя, если у него нет сильной ментальной защиты.\n#flavor Одним прикосновением совершенствующийся погружает в спокойную зимнюю спячку, переходящую в весеннюю.#!"
+ SOUL_ARTS_HEALING_SLEEP_PERK_EFFECT: "В начале битвы вражеский [Concept('knight', 'рыцарь')|E] с самым высоким значением [Concept('prowess', 'доблести')|E] выйдет из боя, если у него нет сильной ментальной защиты.\n[PODUnlocksCombatMove('POD_combat_move_kueijin_healing_sleep')].\n#flavor Одним прикосновением совершенствующийся погружает в спокойную зимнюю спячку, переходящую в весеннюю.#!"
  SOUL_ARTS_GOBLIN_CAT_PERK_EFFECT: "Вы можете призвать питомца через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Совершенствующийся может превратить любое животное в своего фамильяра на ночь - или целую армию, если его звериная душа достаточно велика.#!"
- SOUL_ARTS_DUKE_OF_THE_WILD_PERK_EFFECT: "#flavor Тем, у кого есть духовные способности, кажется, что совершенствующийся звериной души поглощён бело-голубым огнем, после чего он появляется в облике могущественного дикаря: неповоротливого духа дороги, или стервятника с гигантскими крыльями, или еще кого-нибудь.#!"
+ SOUL_ARTS_DUKE_OF_THE_WILD_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_kueijin_wilding_mantle')].\n#flavor Тем, у кого есть духовные способности, кажется, что совершенствующийся звериной души поглощён бело-голубым огнем, после чего он появляется в облике могущественного дикаря: неповоротливого духа дороги, или стервятника с гигантскими крыльями, или еще кого-нибудь.#!"
 
  soul_arts_summon_wilding_spirit_perk_name: "Призыв дикого духа"
  soul_arts_junkyard_menagerie_perk_name: "Заброшенный зверинец"
@@ -129,7 +129,7 @@
  soul_arts_killing_shriek_perk_name: "Убийственный вопль"
  soul_arts_jeweled_eyes_perk_name: "Самоцветные глаза"
  soul_arts_shadow_self_perk_name: "Тень"
- SOUL_ARTS_KILLING_SHRIEK_PERK_EFFECT: "В начале битвы вражеский [Concept('knight', 'рыцарь')|E] с самым высоким значением [Concept('prowess', 'доблести')|E] выйдет из боя, если у него нет сильной ментальной защиты.\n#flavor Голос Голодного воет от адских мук.#!"
+ SOUL_ARTS_KILLING_SHRIEK_PERK_EFFECT: "В начале битвы вражеский [Concept('knight', 'рыцарь')|E] с самым высоким значением [Concept('prowess', 'доблести')|E] выйдет из боя, если у него нет сильной ментальной защиты.\n[PODUnlocksCombatMove('POD_combat_move_kueijin_killing_shriek')].\n#flavor Голос Голодного воет от адских мук.#!"
  SOUL_ARTS_JEWELED_EYES_PERK_EFFECT: "#flavor Ракшасы могут быть столь же прекрасны, сколь и жестоки, если захотят. Голодный мертвец-совершенствующийся излучает духовное облако розово-малинового очарования, настолько сильное, что любой, кто посмотрит ему в глаза, поверит каждому его слову и сделает для него все, что угодно.#!"
  SOUL_ARTS_SHADOW_SELF_PERK_EFFECT: "Вы можете создать собственного клона через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Голодный даёт жизнь своей душе демона, используя ци, чтобы превратить свою тень в слугу.#!"
 
@@ -143,16 +143,16 @@
  soul_arts_the_final_diadem_perk_name: "Последняя диадема"
  soul_arts_crack_the_tortoise_shell_perk_name: "Раскол панциря черепахи"
  SOUL_ARTS_THE_FINAL_DIADEM_PERK_EFFECT: "Вы можете сделать связанного призрака или смертного своим учеником (ребёнком в игровых условиях) через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Повелитель дьяволов разрушает фундамент Тысячи преисподен, возводя дворец, достойный инфернального князя.#!"
- SOUL_ARTS_CRACK_THE_TORTOISE_SHELL_PERK_EFFECT: "Вы можете заставить свою цель потерять всё [Concept('piety', 'благочестие')|E], или, если она является куэй-дзин, 25 [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] [Glossary('дхармы','podgloss.dharma')] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Эта мастерская техника позволяет совершенствующемуся души демона поколебать саму основу существования Голодных.#!"
+ SOUL_ARTS_CRACK_THE_TORTOISE_SHELL_PERK_EFFECT: "Вы можете заставить свою цель потерять всё [Concept('piety', 'благочестие')|E], или, если она является куэй-дзин, 25 [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E] [Glossary('дхармы','podgloss.dharma')] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_kueijin_crack_tortoise_shell')].\n#flavor Эта мастерская техника позволяет совершенствующемуся души демона поколебать саму основу существования Голодных.#!"
 
 
  SOUL_ARTS_THE_DRAGON_TEAR_REQUIREMENT_EFFECT: "#X Для этого [Concept('perk', 'достоинства')|E] требуются все [Concept('perks', 'достоинства')|E] $VALUE|0V$ уровня [Concept('lifestyle', 'пути')|E] искусств души!#! #weak (за исключением Адских кружев)#!"
 
  soul_arts_perfect_eye_of_heaven_perk_name: "Совершенное око Небес"
- SOUL_ARTS_PERFECT_EYE_OF_HEAVEN_PERK_EFFECT: "Можно изгонять призраков, фей или демонов в их родные миры [Concept('umbra', 'Умбры')|E] без необходимости знания их истинных имён.\n#flavor Совершенствующийся смотрит на все сферы Великого колеса глазами короля.#!"
+ SOUL_ARTS_PERFECT_EYE_OF_HEAVEN_PERK_EFFECT: "Можно изгонять призраков, фей или демонов в их родные миры [Concept('umbra', 'Умбры')|E] без необходимости знания их истинных имён.\n[PODUnlocksCombatMove('POD_combat_move_kueijin_chi_sight')].\n#flavor Совершенствующийся смотрит на все сферы Великого колеса глазами короля.#!"
 
  soul_arts_dragon_medicine_perk_name: "Драконье врачевание"
- SOUL_ARTS_DRAGON_MEDICINE_PERK_EFFECT: "Можно исцелить [EmptyScope.ScriptValue('POD_dragon_medicine_aggravated_heal_value')|V0] ед. #TOOLTIP:game_concept_POD_aggravated_damage_desc #E  @health_track_aggravated_damage_icon! серьёзного урона#!#!, [EmptyScope.ScriptValue('POD_dragon_medicine_superficial_heal_value')|V0] #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#! и все отрицательные [Concept('traits', 'свойства')|E] здоровья через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Совершенствующийся становится целителем ран... или орудием пытки, если пожелает.#!"
+ SOUL_ARTS_DRAGON_MEDICINE_PERK_EFFECT: "Можно исцелить [EmptyScope.ScriptValue('POD_dragon_medicine_aggravated_heal_value')|V0] ед. #TOOLTIP:game_concept_POD_aggravated_damage_desc #E  @health_track_aggravated_damage_icon! серьёзного урона#!#!, [EmptyScope.ScriptValue('POD_dragon_medicine_superficial_heal_value')|V0] #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#! и все отрицательные [Concept('traits', 'свойства')|E] здоровья через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_kueijin_dragon_medicine')].\n#flavor Совершенствующийся становится целителем ран... или орудием пытки, если пожелает.#!"
 
  soul_arts_soul_nursery_perk_name: "Ласка души"
  SOUL_ARTS_SOUL_NURSERY_PERK_EFFECT: "Вы можете заставить вампира достичь #TOOLTIP:GAME_TRAIT,golconda,[GetNullCharacter] #L Голконды#!#!, вампира - разрешить все оковы, куэй-дзин - получить 1 уровень [Glossary('дхармы','podgloss.dharma')] (за исключением [GetTrait('dharma10').GetName(GetNullCharacter)]) через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Самая страшная техника в ночном мире, позволяющая мастеру Слёз дракона срывать душу, как спелый плод, забирая её в себя, чтобы либо преобразовать, либо поглотить.#!"
@@ -160,14 +160,14 @@
 
 
  soul_arts_flowing_canal_of_hell_perk_name: "Текучий канал преисподней"
- SOUL_ARTS_FLOWING_CANAL_OF_HELL_PERK_EFFECT: "Вы можете получить модификатор [GetModifier('soul_arts_flowing_canal_of_hell_modifier').GetNameWithTooltip] за @stress_icon!100 #TOOLTIP:game_concept_static_stress_desc #E психического напряжения#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Ни один Голодный не остаётся надолго без того, чтобы не испытать на себе последствия страданий, и все в какой-то момент жалели, что не могут контролировать возникающие вспышки демонической силы. Эта техника не может полностью предотвратить хаос и разрушение - несмотря ни на что, энергии ада должны вырваться наружу. Однако сообразительный Голодный мертвец может смягчить или перенаправить поток полезным образом.#!"
+ SOUL_ARTS_FLOWING_CANAL_OF_HELL_PERK_EFFECT: "Вы можете получить модификатор [GetModifier('soul_arts_flowing_canal_of_hell_modifier').GetNameWithTooltip] за @stress_icon!100 #TOOLTIP:game_concept_static_stress_desc #E психического напряжения#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_kueijin_razor_winds')].\n#flavor Ни один Голодный не остаётся надолго без того, чтобы не испытать на себе последствия страданий, и все в какой-то момент жалели, что не могут контролировать возникающие вспышки демонической силы. Эта техника не может полностью предотвратить хаос и разрушение - несмотря ни на что, энергии ада должны вырваться наружу. Однако сообразительный Голодный мертвец может смягчить или перенаправить поток полезным образом.#!"
 
  soul_arts_wax_seal_of_the_demon_king_perk_name: "Восковая печать Короля демонов"
  SOUL_ARTS_WAX_SEAL_OF_THE_DEMON_KING_PERK_EFFECT: "Доступны различные демонические [men_at_arms|El].\n#flavor Трудно найти квалифицированную помощь, особенно для Голодных мертвецов, у которых нет такой роскоши, как время на воспитание детей-дампиров. Отсюда популярность этой техники: адский ткач может вызвать демона и заручиться его полной преданностью. Даже если после этого демон вселяется в человека и становится полудемоном, сохраняется та же верность. Однако, если страдания Голодного когда-нибудь опустятся ниже определенного порога, ему придётся прибегать к другим методам кнута и пряника, чтобы впоследствии поддерживать демона на службе, и его нельзя будет изгнать обратно в ад.#!"
 
  soul_arts_dark_cultivation_perk_name: "Тёмное взращивание"
  soul_arts_infernal_road_perk_name: "Инфернальная дорога"
- SOUL_ARTS_DARK_CULTIVATION_PERK_EFFECT: "#flavor Использование искусств души обычно требует терпения и предусмотрительности: мастера говорят, что невозможно совершенствовать более одной души за раз, и всем известно, что только самые талантливые совершенствующиеся могут быстро перемещаться между четырьмя душами, не истощаясь. Эта техника, имитирующая совершенствование через страдания, может позволить адскому ткачу нарушать эти правила с ошеломляющей легкостью.#!"
+ SOUL_ARTS_DARK_CULTIVATION_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_kueijin_dark_cultivation')].\n#flavor Использование искусств души обычно требует терпения и предусмотрительности: мастера говорят, что невозможно совершенствовать более одной души за раз, и всем известно, что только самые талантливые совершенствующиеся могут быстро перемещаться между четырьмя душами, не истощаясь. Эта техника, имитирующая совершенствование через страдания, может позволить адскому ткачу нарушать эти правила с ошеломляющей легкостью.#!"
  SOUL_ARTS_INFERNAL_ROAD_PERK_EFFECT: "Вы можете потратить @stress_icon!100 #TOOLTIP:game_concept_static_stress_desc #E психического напряжения#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E], чтобы телепортировать свою армию к местоположению цели или к следующему пункту назначения во время путешествия.\n#flavor С помощью этой техники адский ткач использует старые пути преисподней, чтобы путешествовать в любую точку мира, преодолевая расстояния и время на пылающей колеснице и прибывая на место за считанные секунды. Предостережение заключается в том, что время, которое пропускается в мире смертных, в значительной степени проходит нормально в аду, и Голодный не может покинуть колесницу, пока путешествие не завершится. В зависимости от того, сколько времени потребуется упряжке демонических лошадей, чтобы преодолеть это расстояние, адскому ткачу может понадобиться заготовить несколько взяток для адских вельмож, а также заранее приготовленный «путевой провиант».#!"
 
  soul_arts_breaking_the_dragons_neck_perk_name: "Ломая шею дракону"

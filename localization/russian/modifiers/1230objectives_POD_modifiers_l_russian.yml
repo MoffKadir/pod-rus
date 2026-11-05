@@ -96,8 +96,8 @@
  link_enoch_modifier_desc: "Енох, Первый город, - истинный дом Тал'махе'Ра в [UmbraGlossaryLocalized('shadowlands','Загробном мире')]. Теперь у этого графства есть прямой доступ к нему, и он может черпать из него ресурсы по своему усмотрению."
  seed_of_rebellion_modifier: "Семя восстания"
  seed_of_rebellion_modifier_desc: "Скрытные Тал'махе'Ра заронили в этом персонаже семя недоверия и бунтарства."
- runemages_community_modifier: "Община рунных магов"
- runemages_community_modifier_desc: "Зал Ульфа нашел убежище в этой провинции, обеспечивая свое мистическое влияние в новом доме."
+ #runemages_community_modifier: "Община рунных магов"
+ #runemages_community_modifier_desc: "Зал Ульфа нашел убежище в этой провинции, обеспечивая свое мистическое влияние в новом доме."
  cursed_by_cathar_modifier: "Проклятие катаров"
  cursed_by_cathar_modifier_desc: "Последний катар проклял ваше имя, когда умирал безбожной смертью. Вы чувствуете... беспокойство."
  cathar_community_modifier: "Община катаров"
@@ -171,6 +171,7 @@
 
  cabiri_secured_future_modifier: "Безопасное будущее"
  pneuma_foci_modifier: "Фокус пневмы"
+ custom_mummy_dynasty_secured_future_modifier: "Основана Пятая династия"
 
  wutian_protector_of_knowledge_modifier: "Защитник знаний"
  wutian_protector_of_knowledge_modifier_desc: "Вы больше не получаете дополнительное #TOOLTIP:game_concept_static_stress_desc #E психическое напряжение#!#!, открывая [Concept('perks', 'достоинства')|E] из противоположного дерева Тан."
@@ -231,3 +232,123 @@
 
  land_for_dragons_modifier: "Пробуждённые драконы"
  land_for_dragons_modifier_desc: "Доступны [Concept('men_at_arms', 'профессионалы')|E] - [GetMaA('dragon_fiends_maa').GetName]"
+
+ POD_nicnevin_modifier: "Наследие Никневин"
+ POD_pressyne_modifier: "Наследие Персины"
+
+ vatican_secrets_modifier: "Тайны Ватикана"
+ vatican_secrets_modifier_desc: "Влияние Ласомбра на Святой Престол обеспечивает эзотерические знания и позволяет тайно перенаправлять их средства."
+
+ beast_unleashed_modifier: "Зверь на свободе"
+ beast_unleashed_modifier_desc: "Душа хорошего человека в обмен на власть. Стоило ли оно того?"
+
+ king_of_outlaws_modifier: "Король разбойников"
+ king_of_outlaws_modifier_desc: "Поднимайтесь и поднимайтесь снова, пока ягнята не станут львами."
+
+ angel_soul_modifier: "Душа ангела"
+ angel_soul_modifier_desc: "Душа Михаила грозит поглотить вас."
+
+ hideous_truth_modifier: "Ужасная правда"
+ hideous_truth_modifier_desc: "Голодный паразит очевиден для всех."
+
+ chivalric_ideal_modifier: "Рыцарский идеал"
+ chivalric_ideal_modifier_desc: "Истинную красоту можно найти в изящном и безупречном исполнении боя."
+
+ exquisite_poison_modifier: "Изысканный яд"
+ exquisite_poison_modifier_desc: "Декадентская гниль в ядре империй может быть очень заманчивой."
+
+ muses_modifier: "Музы"
+ muses_modifier_desc: "Само наше присутствие вдохновляет искусство и поклонение."
+
+ grand_patrons_modifier: "Великие покровители"
+ grand_patrons_modifier_desc: "Наше бесконечное покровительство развивает цивилизации."
+
+ dark_petal: "Тёмный лепесток"
+ dark_petal_desc: "Её сущность несёт удушливый аромат мёртвых цветов."
+
+ ######################################################
+ # Mary the Black — Character Modifiers
+ ######################################################
+
+ # Fragmented Self — base modifier and four tablet-tier variants. CK3
+ # modifiers can't be runtime-scaled, so each tier is a separate modifier
+ # swapped on tablet recovery.
+ mary_fragmented_self_modifier: "Расколотая личность"
+ mary_fragmented_self_modifier_desc: "Она не возродилась цельной. Её разум был рассеян вместе с табличками Эблы, и вернулся он лишь по частям."
+ mary_fragmented_self_modifier_t1: "Расколотая личность: найдена одна табличка"
+ mary_fragmented_self_modifier_t1_desc: "Единственная часть головоломки была восстановлена. Туманные воспоминания становятся яснее."
+ mary_fragmented_self_modifier_t2: "Расколотая личность: найдены две таблички"
+ mary_fragmented_self_modifier_t2_desc: "Две части её самой наконец-то оказались там, где им место, но последний осколок, Призыв, остаётся вне её досягаемости."
+
+ mary_most_hated_modifier: "Одна из самых ненавистных сородичей Европы"
+ mary_most_hated_modifier_desc: "Ваше имя поносят от Акра до Лондона за ваше участие в разрушении Мечты. Это не останется неотомщённым."
+
+ mary_tanith_protection_modifier: "Защита Танит"
+ mary_tanith_protection_modifier_desc: "Танит признаёт ваши таланты. Убедитесь, что не подведёте её."
+
+ mary_tanith_legacy_modifier: "Наследие Танит"
+ mary_tanith_legacy_modifier_desc: "Защита Танит теперь распространяется не только на её двор. Дом Молоха признаёт вас."
+
+ mary_tanith_protection_lapsed_landless.toast: "Танит больше не может или не будет защищать вас. В конце концов, её имя не принесёт вам никакой пользы в дороге. Охотники ждут."
+
+ mary_tanith_commission_diyarbakr_modifier: "Поручение Танит: соперник во тьме"
+ mary_tanith_commission_diyarbakr_modifier_desc: "Танит дала вам приказ относительно Ордена Азанеаля. Нужно захватить графство в герцогстве [GetTitleByKey('d_diyarbakr').GetNameNoTier] или [GetTitleByKey('d_diyarrabia').GetNameNoTier]. Докажите ей, что вас стоит держать рядом."
+
+ mary_tanith_commission_cyprus_modifier: "Поручение Танит: благочестивая угроза"
+ mary_tanith_commission_cyprus_modifier_desc: "Танит настроила вас против рыцарей Акры на Кипре. Герцогство [GetTitleByKey('d_cyprus').GetNameNoTier] должно пасть, прежде чем охотники смогут набрать силу."
+
+ # Vampire-only-start variant of the Cyprus commission. Active when Cyprus
+ # is held by Nehemiah (Brujah) and Shutatara has fled to his court.
+ mary_tanith_commission_cyprus_brujah_modifier: "Поручение Танит: убежище дочери"
+ mary_tanith_commission_cyprus_brujah_modifier_desc: "Шутатара, предавшее Танит дитя, бежала ко двору Неемии из клана Бруха, князя Кипра. Герцогство [GetTitleByKey('d_cyprus').GetNameNoTier] должно сменить владельца, пока дочь не успела там освоиться."
+
+ mary_tanith_commission_olives_modifier: "Поручение Танит: Оливковый собор"
+ mary_tanith_commission_olives_modifier_desc: "Танит направила вас против Оливкового собора. Нужно захватить графство в герцогстве [GetTitleByKey('d_antioch').GetNameNoTier] или [GetTitleByKey('d_lebanon').GetNameNoTier], пока враги не стали слишком сильными."
+
+ # Anoster pact summary shown in podintroductions.380's event description
+ POD_maryb_starting_pacts.tt: "Каждые восемь лет наступает срок исполнения двух договоров с демоном Аностером: договора крови и договора боли."
+
+ mary_black_dream_modifier: "Чёрная Мечта"
+ mary_black_dream_modifier_desc: "Мэри забрала Мечту себе. То, что когда-то должно было быть утопией, стало местом адских страданий."
+
+ mary_second_dream_modifier: "Вторая Мечта"
+ mary_second_dream_modifier_desc: "#shinygold Михаил вновь восстаёт, возродившись из пепла. Мечта продолжает жить, хотя стала ещё более странной.#!"
+
+ mary_ash_and_gold_modifier: "Пепел и золото"
+ mary_ash_and_gold_modifier_desc: "Ни Мэри, ни Михаил не господствуют безраздельно. Их страстные, смешанные чувства породили нечто странное. Власть постоянно переходит от одного к другому без видимой закономерности."
+
+ # Oscillating ascendancy modifiers. Exactly one is present at any time; the
+ # yearly pulse re-rolls every few years (POD_maryb_ash_gold_reroll_effect).
+ mary_ash_and_gold_michael_modifier: "Пепел и золото: Михаил выходит на первый план"
+ mary_ash_and_gold_michael_modifier_desc: "#shinygold А сейчас, возлюбленная, моя рука направляет. Пусть они немного погреются в моём тепле.#! Сияющая половина всё контролирует. На данный момент."
+ mary_ash_and_gold_mary_modifier: "Пепел и золото: Мэри выходит на первый план"
+ mary_ash_and_gold_mary_modifier_desc: "На этот раз она появилась вновь, ещё раз доказав, почему все были правы, опасаясь её. Хищная половина контролирует ситуацию. На данный момент."
+
+ # Toasts fired by POD_maryb_ash_gold_reroll_effect when the ascendant half flips.
+ mary_ash_gold_michael_surfaces.toast: "#shinygold Михаил выходит на первый план. Светлая половина Мечты теперь управляет происходящим.#!"
+ mary_ash_gold_mary_surfaces.toast: "Мэри выходит на первый план. Тёмная половина Мечты теперь управляет происходящим."
+
+ # The Fall — applied to whoever is seated as the Pillar of Gold. The
+ # corruption tell beneath an untouched faith.
+ maryb_trinity_the_fall_modifier: "Падение"
+ maryb_trinity_the_fall_modifier_desc: "#shinygold Отчаявшиеся приходят ко мне со столькими желаниями и просьбами. Я не позволю им уйти такими же, какими они пришли.#! В глубине что-то не так, но ни один из двоих не может понять, почему."
+
+ # Mary the Black — Well of Sacrifice:
+ mary_well_offering_t2: "Подношение принесено"
+ mary_well_offering_t2_desc: "Кровь города течёт щедро. Поднимите следующий уровень."
+ mary_well_offering_t3: "Подношение принесено"
+ mary_well_offering_t3_desc: "Кровь города течёт щедро. Поднимите следующий уровень."
+ mary_well_offering_t4: "Подношение принесено"
+ mary_well_offering_t4_desc: "Принесено последнее подношение. Наконец-то Колодец можно открыть; поднимите последний уровень."
+
+ # Hunter Alliance Legacies Refactor
+ dynasty_hunter_alliances_inquisition_modifier: "Поддержка Теневой инквизиции"
+ dynasty_hunter_alliances_inquisition_modifier_desc: "#flavor Самым могущественным орденом охотников, без сомнения, является Теневая инквизиция. Вы хотите, чтобы они были на вашей стороне... или, по крайней мере, не вмешивались.#!\nТеперь вы можете пригласить члена этой организации с помощью [Concept('decision', 'решения')|E] «$contact_fellow_hunters_decision$».\n$countermeasures_unlocks_t1_all_seeing_eye$"
+ dynasty_hunter_alliances_ikhwan_modifier: "Поддержка Ихван аль-Сафа"
+ dynasty_hunter_alliances_ikhwan_modifier_desc: "#flavor Несмотря на отсутствие формальной организации, ихваны не имеют себе равных в охоте на монстров на своей территории. Экспертиза, у которой можно учиться.#!\nТеперь вы можете пригласить члена этой организации с помощью [Concept('decision', 'решения')|E] «$contact_fellow_hunters_decision$».\nТеперь вы можете попросить особого наставничества в чародействе с помощью [Concept('decision', 'решения')|E] «$contact_fellow_hunters_decision$»."
+ dynasty_hunter_alliances_judges_modifier: "Поддержка Судей"
+ dynasty_hunter_alliances_judges_modifier_desc: "#flavor Знающие судьи привнесут в вашу битву богатый опыт и мистические знания, если станут вашими союзниками.#!\nТеперь вы можете пригласить члена этой организации с помощью [Concept('decision', 'решения')|E] «$contact_fellow_hunters_decision$».\nТеперь вы можете попросить специального наставничества в теургии с помощью [Concept('decision', 'решения')|E] «$contact_fellow_hunters_decision$»."
+ dynasty_hunter_alliances_akritai_modifier: "Поддержка Акритов"
+ dynasty_hunter_alliances_akritai_modifier_desc: "#flavor Защитники восточного христианства являются наследниками сложной византийской правовой и бюрократической системы. Полезный навык для растущего охотничьего ордена.#!\nТеперь вы можете пригласить члена этой организации с помощью [Concept('decision', 'решения')|E] «$contact_fellow_hunters_decision$»."
+ dynasty_hunter_alliances_qorjin_modifier: "Поддержка Багатуров Корджина"
+ dynasty_hunter_alliances_qorjin_modifier_desc: "#flavor У монгольских охотников странные союзники... но их грубая сила позволяет легко закрыть на это глаза.#!\nТеперь вы можете пригласить члена этой организации с помощью [Concept('decision', 'решения')|E] «$contact_fellow_hunters_decision$».\nДоступны [Concept('men_at_arms', 'профессионалы')|E] - [GetMaA('battlescarred_fera').GetName]."

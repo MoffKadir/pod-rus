@@ -14,7 +14,7 @@
  ashirra_qadi_court_position_desc: "Кади - это правоведы исламской веры, изучающие законы, установленные Мухаммедом, и толкующие их в спорах или преступлениях, совершённых среди верующих. Каждый судья должен быть сведущ как в законах, изложенных в Коране, так и в сотнях предыдущих решений и прецедентов, созданных правоведами на протяжении всей истории ислама. Этот судья консультирует имама, султана и других вампиров по вопросам, касающимся правовых споров, и рекомендует подходящие наказания за нарушение исламского закона."
  ashirra_mullah_court_position: "Мулла"
  ashirra_mullah_court_position_desc: "Самые уважаемые учёные Аширры известны как муллы. Хотя любой аширрит может стремиться стать учёным по священным текстам, звание муллы может быть получено только через годы преданного изучения и приобщения к секте нынешними муллами. Во всем мусульманском мире лишь немногие вампиры претендуют на это звание."
- ashirra_mullah_court_position_requirement_tooltip: "Имеет свойство «[GetTrait('theologian').GetName(GetNullCharacter)]» или «[GetTrait('scholar').GetName(GetNullCharacter)]»"
+ ashirra_mullah_court_position_requirement_tooltip: "Имеет свойство «[GetTrait('theologian').GetName(GetNullCharacter)]» или «[GetTrait('erudite').GetName(GetNullCharacter)]»"
 
 
 
@@ -30,8 +30,8 @@
  POD_ulama_teachings_requirement: "Вы #bold не#! являетесь [Concept('cultural_head', 'культурным идеологом')|E]"
  POD_ulama_learning: "Искать новые знания"
  POD_ulama_learning_desc: "Путь к становлению муллой долог. $ashirra_ulama_court_position$ посвятит своё время тому, чтобы стать им."
- POD_ulama_learning_tooltip_requirement: "#bold Не#! имеет свойств «[GetTrait('theologian').GetName(GetNullCharacter)]» и «[GetTrait('scholar').GetName(GetNullCharacter)]»"
- POD_ulama_learning_tooltip: "Каждый год у этого персонажа есть возможность получить [Concept('perk', 'достоинство')|E] в [Concept('learning_lifestyle', 'пути учёности')|E] «[GetTrait('theologian').GetName(GetNullCharacter)]» и «[GetTrait('scholar').GetName(GetNullCharacter)]», пока у него не появятся оба свойства. Этот шанс повышается за счёт его [Concept('aptitude', 'пригодности')|E]."
+ POD_ulama_learning_tooltip_requirement: "#bold Не#! имеет свойств «[GetTrait('theologian').GetName(GetNullCharacter)]» и «[GetTrait('erudite').GetName(GetNullCharacter)]»"
+ POD_ulama_learning_tooltip: "Каждый год у этого персонажа есть возможность получить [Concept('perk', 'достоинство')|E] в [Concept('learning_lifestyle', 'пути учёности')|E] «[GetTrait('theologian').GetName(GetNullCharacter)]» и «[GetTrait('erudite').GetName(GetNullCharacter)]», пока у него не появятся оба свойства. Этот шанс повышается за счёт его [Concept('aptitude', 'пригодности')|E]."
  court_ulama_study_theology_title: "Улем добивается успехов"
  POD_mullah_warriors: "Призвать верующих"
  POD_mullah_warriors_desc: "Многие члены [Glossary('Аширры','game_concept_ashirra_desc')] готовы сразиться с врагами Аллаха. Они не отвергнут призыв муллы."

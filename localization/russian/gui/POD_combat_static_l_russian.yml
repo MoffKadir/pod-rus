@@ -1,0 +1,1316 @@
+﻿l_russian:
+
+ ##############################################################################
+ ###### POD COMBAT - STATIC LOCALIZATION
+ ##############################################################################
+ # Shared combat UI, log, help and rule text.
+ # Per-move names and flavor live in POD_combat_moves_l_english.yml.
+
+ ##############################################################################
+
+ ##############################
+ ###### MOVE CONFIG WINDOW
+ ##############################
+
+ pod_combat_moves_title: "#bold БОЕВЫЕ#! ПРИЁМЫ"
+ pod_combat_equipped_label: "Выбрано"
+ pod_combat_configure_moves: "Настроить боевые приёмы"
+ pod_combat_configure_moves_desc: "Выберите [Concept('pod_combat_moves', 'боевые приёмы')|E] для следующей схватки."
+ pod_combat_configure_moves_tooltip: "Выберите [Concept('pod_combat_moves', 'боевые приёмы')|E] для боя."
+ pod_combat_configure_moves_tt: "Открыть редактор набора [Concept('pod_combat_move', 'боевых приёмов')|E]: здесь можно выбрать до [EmptyScope.ScriptValue('pod_combat_max_equipped')|V0] приёмов для использования в @pod_combat_encounter_icon![Concept('pod_combat_encounters', 'боевых столкновениях')|E]."
+ pod_combat_configure_moves_confirm: "Открыть"
+
+ ##############################
+ ###### GUI LABELS
+ ##############################
+
+ pod_combat_window_title: "#bold [GetPlayer.Custom('PODCombatTitle')]:#! [GetScriptedGui('pod_combat_display_team_name').BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('is_enemy',MakeScopeValue('(CFixedPoint)0')).End)] против [GetScriptedGui('pod_combat_display_team_name').BuildTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('is_enemy',MakeScopeValue('(CFixedPoint)1')).End)]"
+ pod_combat_round: "Раунд #V [GetPlayer.MakeScope.ScriptValue('pod_combat_round_value')|0]#!"
+ pod_combat_ap_label: "#bold [pod_combat_action_points|E]:#!"
+ pod_combat_end_turn: "Завершить ход"
+ pod_combat_end_turn_desc: "Завершить свой ход и позволить противнику действовать."
+ pod_combat_advance_turn_label: "Следующий ход"
+ pod_combat_advance_turn_tt: "Отыграть ход следующего бойца и сделать паузу для изучения обстановки. Кнопка появляется во время хода ИИ; включите #bold автоматическую смену ходов#!, чтобы отыгрывать весь раунд одним щелчком."
+ pod_combat_auto_advance_label: "Автоматическая смена ходов"
+ pod_combat_auto_advance_tt: "#bold Включено:#! ходы ИИ отыгрываются автоматически до вашего следующего хода.\n#bold Выключено:#! каждый щелчок отыгрывает ход одного бойца, с паузами между ходами ИИ для изучения обстановки."
+ pod_combat_end_combat: "Завершить бой"
+ pod_combat_auto_resolve: "Автоматический исход"
+ # Keep wounds qualitative: the damage and soak rolls have not happened yet.
+ pod_combat_auto_resolve_desc: "Пропустить оставшуюся часть боя. Победитель определяется сравнением доблести.\n\nВ заключительной схватке каждый, кто ещё держится на ногах, рискует получить рану. Тяжесть зависит от исхода: явный победитель уйдёт почти невредимым, проигравшей стороне достанется сильнее всего. На тренировочные поединки это не распространяется.[GetPlayer.Custom('PODCombatAutoResolveVerdict')]"
+ pod_combat_auto_resolve_forced_loss_tt: "\n\n@warning_icon!#X Ваша сторона не способна причинить вред бестелесному духу. Автоматический исход приведёт к поражению, а ваши люди понесут самые тяжёлые последствия.#!"
+ pod_combat_auto_resolve_forced_win_tt: "\n\n#P Враги не способны причинить вред вашей бестелесной форме, поэтому автоматический исход принесёт вам победу.#!"
+ pod_combat_help_button: "Справка"
+ pod_combat_help_tooltip: "Открывает обзор боевой системы, чтобы получить краткую информацию о правилах."
+ pod_combat_allies_label: "СОЮЗНИКИ"
+ pod_combat_enemies_label: "ВРАГИ"
+
+ pod_combat_status_guard_tt: "Защита — блокирует следующую атаку, которая иначе попала бы в цель"
+ pod_combat_status_dodge_tt: "Уклонение — предотвращает следующую атаку"
+ pod_combat_status_stealth_tt: "Скрытность — +[GuiScope.ScriptValue('pod_combat_stealth_hit_bonus')|0]% к вероятности попадания, пока действует; расходуется при следующем приёме, наносящем урон здоровью или требующем враждебного контакта, либо при уходе от атаки"
+ pod_combat_status_retaliation_tt: "[GuiScope.SetRoot(Scope.Story.MakeScope).AddScope('slot', Scope.Story.MakeScope).Custom('PODCombatStatusRetaliationText')]"
+ # Use complete per-kind keys; nested Custom calls fail from the story root.
+ pod_combat_status_retaliation_tt_hit_hp: "Ответный удар готов — при контакте наносит #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#! $superficial$"
+ pod_combat_status_retaliation_tt_hit_agg: "Ответный удар готов — при контакте наносит #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#! $aggravated$"
+ pod_combat_status_retaliation_tt_hit_morale: "Ответный удар готов — при контакте наносит #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#! [pod_combat_morale_icon|E]"
+ pod_combat_status_retaliation_tt_hit_source: "Ответный удар готов — при контакте наносит #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0] [ROOT.Var('slot_retaliate_hit_kind').GetFlagName]#! $aggravated$"
+ pod_combat_status_retaliation_tt_miss_hp: "Ответный удар готов — при уклонении наносит #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#! $superficial$"
+ pod_combat_status_retaliation_tt_miss_agg: "Ответный удар готов — при уклонении наносит #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#! $aggravated$"
+ pod_combat_status_retaliation_tt_miss_morale: "Ответный удар готов — при уклонении наносит #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#! [pod_combat_morale_icon|E]"
+ pod_combat_status_retaliation_tt_miss_source: "Ответный удар готов — при уклонении наносит #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0] [ROOT.Var('slot_retaliate_miss_kind').GetFlagName]#! $aggravated$"
+ pod_combat_status_retaliation_tt_any_hp: "Ответный удар готов — отвечает на любую атаку, попадание или промах, нанося #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#! $superficial$"
+ pod_combat_status_retaliation_tt_any_agg: "Ответный удар готов — отвечает на любую атаку, попадание или промах, нанося #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#! $aggravated$"
+ pod_combat_status_retaliation_tt_any_morale: "Ответный удар готов — отвечает на любую атаку, попадание или промах, нанося #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#! [pod_combat_morale_icon|E]"
+ pod_combat_status_retaliation_tt_any_source: "Ответный удар готов — отвечает на любую атаку, попадание или промах, нанося #bold -[ROOT.Var('slot_retaliate_any').GetValue|0] [ROOT.Var('slot_retaliate_any_kind').GetFlagName]#! $aggravated$"
+ # Multi-charge tooltips show amounts only; their branches precede single-charge types.
+ pod_combat_status_retaliation_tt_both: "Ответный удар готов — при контакте #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#!, при уклонении #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#!"
+ pod_combat_status_retaliation_tt_any_hit: "Ответный удар готов — при контакте #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#!, при любой другой атаке #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#!"
+ pod_combat_status_retaliation_tt_any_miss: "Ответный удар готов — при уклонении #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#!, при любой другой атаке #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#!"
+ pod_combat_status_retaliation_tt_all: "Ответный удар готов — при контакте #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#!, при уклонении #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#!, при любой другой атаке #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#!"
+ # Triggerless fallback for PODCombatStatusRetaliationText
+ pod_combat_status_retaliation_tt_none:      ""
+ # Stance lines (colored element concept). tt_hit/miss_source remains
+ # a defensive GetFlagName fallback for an unrecognized source.
+ pod_combat_status_retaliation_tt_hit_elemental: "Ответный удар готов — при контакте наносит #bold -[ROOT.Var('slot_retaliate_hit').GetValue|0]#! [Localize( Concatenate( 'pod_combat_elemmark_', slot.MakeScope.Var('slot_retaliate_hit_kind').GetFlagKey ) )]"
+ pod_combat_status_retaliation_tt_miss_elemental: "Ответный удар готов — при уклонении наносит #bold -[ROOT.Var('slot_retaliate_miss').GetValue|0]#! [Localize( Concatenate( 'pod_combat_elemmark_', slot.MakeScope.Var('slot_retaliate_miss_kind').GetFlagKey ) )]"
+ pod_combat_status_retaliation_tt_any_elemental: "Ответный удар готов — отвечает на любую атаку, попадание или промах, нанося #bold -[ROOT.Var('slot_retaliate_any').GetValue|0]#! [Localize( Concatenate( 'pod_combat_elemmark_', slot.MakeScope.Var('slot_retaliate_any_kind').GetFlagKey ) )]"
+ # DoT types share pod_combat_dot_tt_pre/post for amount and duration.
+ pod_combat_status_dot_tt: "[GuiScope.SetRoot(Scope.Story.MakeScope).AddScope('slot', Scope.Story.MakeScope).Custom('PODCombatStatusDoTText')]"
+ pod_combat_status_daze_tt: "[GuiScope.SetRoot(Scope.Story.MakeScope).AddScope('slot', Scope.Story.MakeScope).Custom('PODCombatStatusDazeText')]"
+ pod_combat_status_daze_tt_stunned: "Оглушение — следующий ход начинается с 0 ОД; доступные приёмы за 0 ОД по-прежнему можно использовать"
+ pod_combat_status_daze_tt_dazed: "Ошеломление — теряет #bold [ROOT.Var('slot_ap_drain').GetValue|0]#! ОД в начале следующего хода"
+ pod_combat_status_control_tt: "Подчинение — в следующий ход действует на стороне врага"
+ pod_combat_dot_tt_pre: "#bold -[ROOT.Var('slot_dot_amount').GetValue|0]#!"
+ pod_combat_dot_tt_post: " за раунд · осталось #bold [ROOT.Var('slot_dot_rounds').GetValue|0]#! раундов"
+ pod_combat_status_dot_tt_morale: "$pod_combat_dot_tt_pre$ [Concept('pod_combat_morale', 'боевого духа')|E]$pod_combat_dot_tt_post$"
+ pod_combat_status_dot_tt_superficial: "$pod_combat_dot_tt_pre$ $superficial$ здоровья$pod_combat_dot_tt_post$"
+ pod_combat_status_dot_tt_aggravated: "$pod_combat_dot_tt_pre$ $aggravated$ здоровья$pod_combat_dot_tt_post$"
+ pod_combat_status_dot_tt_elemental: "$pod_combat_dot_tt_pre$ [Localize( Concatenate( 'pod_combat_elemmark_', slot.MakeScope.Var('slot_dot_kind').GetFlagKey ) )] здоровья$pod_combat_dot_tt_post$"
+ # Disabled-button tooltips for the move-execution targeting gate.
+ pod_combat_targeting_need_enemy_tt: "Выберите врага в качестве цели"
+ pod_combat_targeting_need_ally_tt: "Выберите союзника в качестве цели"
+ pod_combat_targeting_need_pc_alive_tt: "Персонаж игрока должен быть жив"
+ POD_combat_controlled_animal_name: "Управляемое животное"
+ POD_combat_controlled_animal_swarm_name: "Нашествие зверей"
+ POD_combat_wolf_name: "Волк"
+ pod_combat_cant_summon_team_full_tt: "Сторона, куда призывается существо, уже полностью укомплектована"
+ pod_combat_cant_summon_duel_barred_tt: "Условия этой дуэли запрещают призывать постороннюю помощь"
+ pod_combat_cant_heal_already_full_desc: "Не действует — здоровье / боевой дух уже полностью восстановлены"
+ ###### MOVE-BAR BLOCK REASONS (pod_combat_move_usability_tt SGUI)
+ # Phrase these as equip/execute failure reasons. Resource fragments include a leading
+ # space and icon. PoD's reserve check supplies the energy failure text.
+ pod_combat_usable_fight_over_tt: "Бой окончен"
+ pod_combat_usable_not_your_turn_tt: "Сейчас не ваш ход"
+ pod_combat_usable_actor_down_tt: "Этот боец [Concept('pod_combat_knocked_out', 'выбыл из боя')|E]"
+ pod_combat_usable_need_ap_tt: "Недостаточно [Concept('pod_combat_ap', 'ОД')|E]"
+ pod_combat_usable_need_gold_tt: "Вы не можете себе позволить[story.Custom('PODCombatGoldCostInline')]"
+ pod_combat_usable_need_piety_tt: "Вы не можете себе позволить[story.Custom('PODCombatPietyCostInline')]"
+ pod_combat_usable_need_prestige_tt: "Вы не можете себе позволить[story.Custom('PODCombatPrestigeCostInline')]"
+ pod_combat_usable_used_this_round_tt: "Уже использовано в этом раунде"
+ pod_combat_usable_used_this_combat_tt: "Уже использовано в этой схватке"
+ pod_combat_usable_condition_unmet_tt: "Сейчас условия не выполнены"
+ pod_combat_usable_not_unlocked_tt: "Этот боец не соответствует требованиям этого приема"
+
+ ###### AI DECISION TRACE (debug-gated; emitted via debug_log, not shown in UI)
+ # Keep the pod_combat_trace prefix, key=value format and field order stable for parsers.
+ # Read the host through GetPlayer.MakeScope; ROOT varies by call site. Numeric reads
+ # use GetValue|0; flags use GetFlagKey and must be set when emitted.
+ # Target records use numeric teams (1 = player, 2 = enemy), since flags may be unset.
+ # Compare pick records' th_* settings before comparing decisions across logs.
+ pod_combat_trace_pick: "pod_combat_trace pick round=[GetPlayer.MakeScope.ScriptValue('pod_combat_round_value')|0] action=[PODCombatFight.Var('pod_combat_ai_trace_actions').GetValue|0] actor_team=[PODCombatFight.Var('pod_combat_current_actor_team').GetFlagKey] actor_pos=[PODCombatFight.Var('pod_combat_current_actor_position').GetValue|0] ap=[PODCombatFight.Var('pod_combat_current_ap').GetValue|0] eligible=[PODCombatFight.Var('pod_combat_ai_trace_eligible').GetValue|0] intent=[PODCombatFight.Var('pod_combat_ai_intent').GetFlagKey] intent_n=[PODCombatFight.Var('pod_combat_ai_intent_n').GetValue|0] emg=[PODCombatFight.Var('pod_combat_ai_intent_emg').GetValue|0] locked=[PODCombatFight.Var('pod_combat_ai_intent_locked').GetValue|0] b_atk=[PODCombatFight.Var('pod_combat_actor_char').Var('pod_combat_pers_bias_atk').GetValue|0] b_def=[PODCombatFight.Var('pod_combat_actor_char').Var('pod_combat_pers_bias_def').GetValue|0] n_pre=[PODCombatFight.Var('pod_combat_ai_usable_pressure_n').GetValue|0] n_brk=[PODCombatFight.Var('pod_combat_ai_usable_break_n').GetValue|0] n_set=[PODCombatFight.Var('pod_combat_ai_usable_setup_n').GetValue|0] n_stab=[PODCombatFight.Var('pod_combat_ai_usable_stabilize_n').GetValue|0] hp=[GetPlayer.MakeScope.ScriptValue('pod_combat_actor_hp_value')|0] score=[PODCombatFight.Var('pod_combat_ai_trace_move').Var('pod_combat_ai_score').GetValue|0] smax=[PODCombatFight.Var('pod_combat_ai_score_max').GetValue|0] bfloor=[PODCombatFight.Var('pod_combat_ai_band_floor').GetValue|0] adm=[PODCombatFight.Var('pod_combat_ai_admitted_n').GetValue|0] min_cost=[PODCombatFight.Var('pod_combat_ai_min_ap_cost').GetValue|0] floor=[PODCombatFight.Var('pod_combat_ai_ap_strand_floor').GetValue|0] max_dmg=[PODCombatFight.Var('pod_combat_ai_trace_max_dmg').GetValue|0] move=[PODCombatFight.Var('pod_combat_ai_trace_move').Var('skill_key').GetFlagKey] ap_cost=[PODCombatFight.Var('pod_combat_ai_trace_move').Var('ap_cost').GetValue|0] targeting=[PODCombatFight.Var('pod_combat_ai_trace_move').Var('targeting').GetFlagKey] tgt_team=[PODCombatFight.Var('pod_combat_selected_target_team').GetFlagKey] tgt_pos=[PODCombatFight.Var('pod_combat_selected_target_position').GetValue|0] tgt_soak=[PODCombatFight.Var('pod_combat_target_soak').GetValue|0] tgt_morale=[PODCombatFight.Var('pod_combat_target_morale').GetValue|0] act_hit=[PODCombatFight.Var('pod_combat_current_hit_chance').GetValue|0] base_hit=[PODCombatFight.Var('pod_combat_actor_base_hit_chance').GetValue|0] own_pw=[PODCombatFight.Var('pod_combat_actor_prowess').GetValue|0] tgt_pw=[PODCombatFight.Var('pod_combat_target_prowess').GetValue|0] tgt_hit=[PODCombatFight.Var('pod_combat_target_hit_chance').GetValue|0] finishable=[PODCombatFight.Var('pod_combat_ai_enemy_finishable').GetValue|0] pend_drain=[PODCombatFight.Var('pod_combat_ai_tgt_ap_drain').GetValue|0] pend_ctrl=[PODCombatFight.Var('pod_combat_ai_tgt_controlled').GetValue|0] pend_dot=[PODCombatFight.Var('pod_combat_ai_tgt_dot_amount').GetValue|0] pend_dot_r=[PODCombatFight.Var('pod_combat_ai_tgt_dot_rounds').GetValue|0] pend_dot_mor=[PODCombatFight.Var('pod_combat_ai_tgt_dot_morale').GetValue|0] pend_init=[PODCombatFight.Var('pod_combat_ai_tgt_init_bonus').GetValue|0] tgt_hp=[PODCombatFight.Var('pod_combat_ai_tgt_hp').GetValue|0] fin_hp=[PODCombatFight.Var('pod_combat_ai_enemy_finishable_hp').GetValue|0] fin_mor=[PODCombatFight.Var('pod_combat_ai_enemy_finishable_mor').GetValue|0] ctf=[PODCombatFight.Var('pod_combat_ai_cur_target_finishable').GetValue|0] fin_n=[PODCombatFight.Var('pod_combat_ai_fin_n').GetValue|0] fin_team_n=[PODCombatFight.Var('pod_combat_ai_fin_team_n').GetValue|0] fin_pos=[PODCombatFight.Var('pod_combat_ai_fin_pos').GetValue|0] kg_hp=[PODCombatFight.Var('pod_combat_ai_can_dmg_hp').GetValue|0] kg_mor=[PODCombatFight.Var('pod_combat_ai_can_dmg_mor').GetValue|0] th_hp=[GetPlayer.MakeScope.ScriptValue('pod_combat_ai_hp_finish_threshold')|0] th_mor=[GetPlayer.MakeScope.ScriptValue('pod_combat_ai_morale_finish_threshold')|0] th_kill=[GetPlayer.MakeScope.ScriptValue('pod_combat_ai_kill_priority_boxes')|0] th_mor_kill=[GetPlayer.MakeScope.ScriptValue('pod_combat_ai_morale_kill_priority')|0] snap=[PODCombatFight.Var('pod_combat_ai_snap_done').GetValue|0]"
+ pod_combat_trace_target: "pod_combat_trace target round=[GetPlayer.MakeScope.ScriptValue('pod_combat_round_value')|0] actor_t=[PODCombatFight.Var('pod_combat_ai_trace_sel_actor_t').GetValue|0] actor_pos=[PODCombatFight.Var('pod_combat_current_actor_position').GetValue|0] ctx=[PODCombatFight.Var('pod_combat_ai_trace_sel_ctx').GetValue|0] cand=[PODCombatFight.Var('pod_combat_ai_trace_sel_cand').GetValue|0] kb_hp=[PODCombatFight.Var('pod_combat_ai_trace_sel_kb_hp').GetValue|0] kb_mor=[PODCombatFight.Var('pod_combat_ai_trace_sel_kb_mor').GetValue|0] picked=[PODCombatFight.Var('pod_combat_ai_trace_sel_picked').GetValue|0] sel_team=[PODCombatFight.Var('pod_combat_ai_trace_sel_team').GetValue|0] sel_pos=[PODCombatFight.Var('pod_combat_ai_trace_sel_pos').GetValue|0] sel_hp=[PODCombatFight.Var('pod_combat_ai_trace_sel_hp').GetValue|0] sel_mor=[PODCombatFight.Var('pod_combat_ai_trace_sel_mor').GetValue|0] kg_hp=[PODCombatFight.Var('pod_combat_ai_can_dmg_hp').GetValue|0] kg_mor=[PODCombatFight.Var('pod_combat_ai_can_dmg_mor').GetValue|0]"
+ pod_combat_trace_turn: "pod_combat_trace turn round=[GetPlayer.MakeScope.ScriptValue('pod_combat_round_value')|0] actor_team=[PODCombatFight.Var('pod_combat_current_actor_team').GetFlagKey] actor_pos=[PODCombatFight.Var('pod_combat_current_actor_position').GetValue|0] actions=[PODCombatFight.Var('pod_combat_ai_trace_actions').GetValue|0] ap_left=[PODCombatFight.Var('pod_combat_current_ap').GetValue|0] last_eligible=[PODCombatFight.Var('pod_combat_ai_trace_eligible').GetValue|0] soaked=[PODCombatFight.Var('pod_combat_ai_trace_soaked').GetValue|0] landed=[PODCombatFight.Var('pod_combat_ai_trace_landed').GetValue|0] hits=[PODCombatFight.Var('pod_combat_ai_trace_hits').GetValue|0] stop=[PODCombatFight.Var('pod_combat_ai_trace_stop').GetValue|0]"
+ pod_combat_move_redundant_tt: "Все эффекты этого приёма уже действуют с равной или большей силой"
+ # Scope is the slot story. ROOT is not the datamodel row, and GetPlayer would give
+ # every combatant the player's morale ceiling.
+ pod_combat_slot_morale_tt: "[Concept('pod_combat_morale', 'Боевой дух')|E]: #bold [Scope.Var('slot_morale').GetValue|0]#! / #weak [Scope.ScriptValue('pod_combat_slot_max_morale_value')|0]#!"
+ # ── Per-slot Hit display dispatch ──────────────────────────────────
+ pod_combat_slot_hit_npc_buff:   "#P +[ROOT.ScriptValue('pod_combat_slot_hit_net_mod_value')|0]%#!"
+ pod_combat_slot_hit_npc_debuff: "#N [ROOT.ScriptValue('pod_combat_slot_hit_net_mod_value')|0]%#!"
+ pod_combat_slot_hit_npc_neutral: "#weak —#!"
+ # ── Top-row PC target / hit readout ────────────────────────────────
+ pod_combat_pc_target_display: "#bold Цель:#! [GetPlayer.MakeScope.Var('pod_combat_my_control_slot').Var('slot_target_char').GetCharacter.GetFirstNameNoTooltip|V] #weak ·#! [Concept('pod_combat_hit', 'Попадание')|E]: #bold;V [GetPlayer.MakeScope.Var('pod_combat_my_control_slot').Var('slot_hit_chance').GetValue|0]%#!"
+ pod_combat_pc_hit_breakdown_tt: "#bold [pod_combat_hit_chance|E]#!\n#weak [prowess|E]#!: вы #bold [PODCombatFight.Var('pod_combat_pc_hit_own_prowess').GetValue|0]#! против цели #bold [PODCombatFight.Var('pod_combat_pc_hit_target_prowess').GetValue|0]#!\n#weak Основа (от доблести)#!: #bold [GetPlayer.MakeScope.Var('pod_combat_my_control_slot').Var('slot_base_hit_chance').GetValue|0]%#!\n#weak [pod_combat_stealth|E]#!: [GetPlayer.MakeScope.ScriptValue('pod_combat_pc_stealth_bonus_value')|0]%\n#weak Боевые усиления / ослабления#!: [GetPlayer.MakeScope.ScriptValue('pod_combat_pc_hit_net_mod_value')|0]%\n#bold = [GetPlayer.MakeScope.Var('pod_combat_my_control_slot').Var('slot_hit_chance').GetValue|0]%#! #weak (пределы: [GetPlayer.MakeScope.ScriptValue('pod_combat_hit_chance_min')|0]–[GetPlayer.MakeScope.ScriptValue('pod_combat_hit_chance_max')|0]%)#!"
+ # -- Per-slot focus-target readout (who this AI is going after) --
+ pod_combat_slot_focus_none: ""
+ pod_combat_slot_focus_target: "#weak Атакует:#! #bold [ROOT.Var('slot_char').GetCharacter.MakeScope.Var('pod_combat_ai_focus_char').GetCharacter.GetFirstNameNoTooltip]#!"
+
+ ##############################
+ ###### SLOT CARD + STATS TOOLTIP
+ ##############################
+
+ # Slot-card and stats-tooltip text; Scope is the slot story.
+ pod_combat_card_health_label: "#medium Здоровье#!"
+ pod_combat_card_morale_label: "#medium Боевой дух#!"
+ pod_combat_card_knocked_out: "ВЫБЫЛ ИЗ БОЯ"
+ pod_combat_card_prowess_label: "#medium Доблесть:#! [Scope.ScriptValue('pod_combat_slot_prowess_value')|0]"
+ pod_combat_card_hit_label: "#medium Попадание:#! [GuiScope.SetRoot(Scope.Story.MakeScope).Custom('PODCombatSlotHitDisplay')]"
+ pod_combat_card_soak_label: "#medium Поглощение:#! [Scope.ScriptValue('pod_combat_slot_soak_value')|0]%"
+
+ pod_combat_mod_scope_round: "(раунд)"
+ pod_combat_mod_scope_combat: "(бой)"
+ pod_combat_stats_tt_title: "БОЕВЫЕ #bold ХАРАКТЕРИСТИКИ#!: [Character.GetFirstNameNoTooltip]"
+ pod_combat_stats_tt_health: "#bold [POD_health_track|E]#!: #italic [Subtract_CFixedPoint( Scope.Var('slot_mirror_maxhp').GetValue, Scope.Var('slot_mirror_total').GetValue )]/[Scope.Var('slot_mirror_maxhp').GetValue]#!"
+ pod_combat_stats_tt_morale: "#bold [Concept('pod_combat_morale', 'Боевой дух')|E]#!: #italic [Scope.Var('slot_morale').GetValue|0]/[Scope.ScriptValue('pod_combat_slot_max_morale_value')|0]#!"
+ pod_combat_stats_tt_hit: "[pod_combat_hit_chance|E]: #bold [GuiScope.SetRoot(Scope.Story.MakeScope).Custom('PODCombatSlotHitDisplay')]#!"
+ pod_combat_stats_tt_hit_buff_round: "#P +[Scope.ScriptValue('pod_combat_slot_hit_buff_round_mag_sv')|0]% $pod_combat_mod_scope_round$#!"
+ pod_combat_stats_tt_hit_buff_combat: "#P +[Scope.ScriptValue('pod_combat_slot_hit_buff_combat_mag_sv')|0]% $pod_combat_mod_scope_combat$#!"
+ pod_combat_stats_tt_hit_debuff_round: "#N -[Scope.ScriptValue('pod_combat_slot_hit_debuff_round_mag_sv')|0]% $pod_combat_mod_scope_round$#!"
+ pod_combat_stats_tt_hit_debuff_combat: "#N -[Scope.ScriptValue('pod_combat_slot_hit_debuff_combat_mag_sv')|0]% $pod_combat_mod_scope_combat$#!"
+ pod_combat_stats_tt_soak: "[soak_damage|E]: #bold [Scope.ScriptValue('pod_combat_slot_soak_value')|0]%#!"
+ pod_combat_stats_tt_soak_buff_round: "#P +[Scope.ScriptValue('pod_combat_slot_soak_buff_round_mag_sv')|0]% $pod_combat_mod_scope_round$#!"
+ pod_combat_stats_tt_soak_buff_combat: "#P +[Scope.ScriptValue('pod_combat_slot_soak_buff_combat_mag_sv')|0]% $pod_combat_mod_scope_combat$#!"
+ pod_combat_stats_tt_soak_debuff_round: "#N -[Scope.ScriptValue('pod_combat_slot_soak_debuff_round_mag_sv')|0]% $pod_combat_mod_scope_round$#!"
+ pod_combat_stats_tt_soak_debuff_combat: "#N -[Scope.ScriptValue('pod_combat_slot_soak_debuff_combat_mag_sv')|0]% $pod_combat_mod_scope_combat$#!"
+ pod_combat_stats_tt_compound_note: "усиления перемножаются, а не складываются"
+ pod_combat_stats_tt_initiative: "[pod_combat_initiative|E]: #bold [Scope.ScriptValue('pod_combat_slot_initiative_value')|0]#!"
+ pod_combat_stats_tt_turn_order: "[pod_combat_turn_order|E]: #bold [Scope.Var('slot_turn_order').GetValue|0]#!"
+
+ ##############################
+ ###### FLAVORIZED LABELS
+ ##############################
+
+ pod_combat_title_default: "БОЙ"
+ pod_combat_title_1v1: "ПОЕДИНОК"
+ pod_combat_title_1v1_mage: "СЕРТАМЕН"
+ pod_combat_title_custom: "[GetPlayer.MakeScope.Var('pod_combat_session').Var('custom_title').GetFlagName]"
+
+ pod_combat_title_debug: "ОТЛАДОЧНЫЙ БОЙ"
+ pod_combat_debug_proxy_interaction: "Отладка: бой через представителя"
+ pod_combat_debug_proxy_desc: "Управляйте боем, в котором сами не участвуете: за вашу сторону сражаются придворные, а вы играете за их предводителя. Вас нельзя ранить; ваш представитель может погибнуть."
+
+ ##############################
+ ###### CUSTOM_DESCRIPTIONS
+ ##############################
+
+ POD_COMBAT_CUSTOM_PLAYER_TEAM_NAME: "[GetPlayer.MakeScope.Var('pod_combat_session').Var('player_team_name').GetFlagName]"
+ POD_COMBAT_CUSTOM_ENEMY_TEAM_NAME: "[GetPlayer.MakeScope.Var('pod_combat_session').Var('enemy_team_name').GetFlagName]"
+
+ ##############################
+ ###### MESSAGES
+ ##############################
+
+ pod_combat_apply_morale_strain_title: "Стресс от потери боевого духа"
+ pod_combat_apply_morale_strain_desc: "#italic Каждое недостающее очко [Concept('pod_combat_morale', 'боевого духа')|E] в конце боя приносит [GuiScope.ScriptValue('pod_combat_morale_stress_multiplier')|V0] [stress_gain_i][Concept('static_stress', 'психического напряжения')|E].#!"
+
+ ##############################
+ ###### HELP / OVERVIEW EVENT
+ ##############################
+
+ pod_combat.0001.t: "Обзор боевой системы"
+ pod_combat.0001.desc: "@pod_combat_encounter_icon![Concept('pod_combat_encounters', 'Боевые столкновения')|E] проходят пошагово: каждый боец тратит [Concept('pod_combat_action_points', 'очки действий')|E] на [Concept('pod_combat_moves', 'боевые приёмы')|E], а вы выбираете из заранее подготовленного набора. Вы побеждаете, когда каждый враг [Concept('pod_combat_knocked_out', 'выбывает из боя')|E]. Если этого не произошло, вы проигрываете, как только ваш персонаж падёт, даже если союзники ещё сражаются. Каждая синяя надпись в окне боя снабжена подсказкой при наведении — пользуйтесь ими, если нужно освежить память.\n\nВыберите тему ниже, чтобы узнать подробности. Это меню можно вновь открыть кнопкой #bold Справка#! в любой момент."
+ pod_combat.0001.a: "» Ходы и выбор цели"
+ pod_combat.0001.b: "» Как читать ход боя"
+ pod_combat.0001.c: "» Нападение, защита и эффекты"
+ pod_combat.0001.d: "» Исходы и управление"
+ pod_combat_help_back: "« Назад к темам"
+ pod_combat_help_close: "Закрыть"
+ pod_combat.0100.t: "Ходы и выбор цели"
+ pod_combat.0100.desc: "#bold ВАШ ХОД#!\nВ начале каждого раунда у вас есть #bold [GuiScope.ScriptValue('pod_combat_base_ap')|0]#! [Concept('pod_combat_action_points', 'очков действий')|E] (больше или меньше, если очки действий были усилены, отняты или возвращены). Тратьте ОД на приёмы на панели; те, на которые не хватает очков, отображаются серым. Закончив, нажмите #bold Завершить ход#! — неиспользованные ОД сгорают.\n\nМногие приёмы также расходуют #bold сверхъестественную энергию#!: кровь у вампиров, гнозис у перевёртышей, пафос или ангст у призраков, гламур у подменышей и так далее. Она берётся из обычного запаса вашего вида, поэтому частое использование дорогих дисциплин истощает вас во время боя и оставляет без сил после него. Некоторые приёмы также расходуют золото, благочестие, престиж или [Concept('static_stress', 'психическое напряжение')|E].\n\nЧтобы выбрать приёмы для панели, перед боем откройте [Concept('decision', 'решение')|E] «[GetDecision('pod_combat_configure_moves').GetName|V]». Можно взять не более четырёх приёмов каждой категории (#color_red АТК#! / #color_light_blue ЗАЩ#! / #color_porple КОН#! / #color_pwr_orange СИЛ#!). Включите #bold Показать все приёмы#!, чтобы увидеть ещё не открытые: у каждого указано, каких свойств, сил или достоинств вам не хватает.\n\n#bold ВЫБОР ЦЕЛИ#!\nНажмите на #bold карточку#! союзника или врага (либо его портрет в полосе очерёдности), чтобы сделать его текущей целью. На карточке появится отметка @check_icon! #bold Цель#!, а вверху окна — сама цель и ваш [Concept('pod_combat_hit_chance', 'шанс попадания')|E] по ней. Атакующие приёмы направлены на выбранного врага, поддержка (исцеление, усиления) — на выбранного союзника; приёмы для себя не учитывают выбранную цель. Некоторые приёмы #bold действуют по области#! и затрагивают сразу всех врагов или всех союзников независимо от выбора. При смене цели вероятность попадания пересчитывается по вашей [Concept('prowess', 'доблести')|E] относительно её доблести, действующим модификаторам попадания и вашему бонусу @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытности')|E]. @pod_combat_guard_icon![Concept('pod_combat_guard', 'Защита')|E], @pod_combat_dodge_icon![Concept('pod_combat_dodge', 'уклонение')|E], @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытность')|E] и [Concept('soak_damage', 'поглощение')|E] цели проверяются отдельно и этот процент не меняют.\n\n#bold КОГО АТАКУЕТ ИИ#!\nНа карточке каждого бойца под управлением ИИ есть строка #bold Атакует#! с именем последней атакованной цели. Она есть и у врагов, и у ваших союзников под управлением ИИ (ваша цель указана вверху). Это противник, на котором боец #italic сосредоточился#!: он обычно продолжает бить ту же жертву, но это не гарантия — ИИ может переключиться, чтобы добить почти поверженного врага. Строка пуста до первого хода бойца и пока он #bold подчинён#! (его приоритет на этот ход сбрасывается). Следите за ней, чтобы понять, кому грозит нападение нескольких врагов, и вывести уязвимого союзника из-под удара.\n\n#bold ОЧЕРЁДНОСТЬ ХОДОВ#!\nЕсли бойцов трое или больше, вверху проходит #bold полоса очерёдности ходов#! с портретами: слева направо в порядке действий. Каждый боец один раз определяет [Concept('pod_combat_initiative', 'инициативу')|E] при вступлении в бой и сохраняет её, поэтому очерёдность остаётся неизменной всю схватку и позволяет планировать на несколько ходов вперёд. Изменить её может лишь ослабление инициативы, и только на один раунд. Действующий боец выделен золотом; портреты тускнеют после хода или поражения, а при большом числе участников полоса прокручивается вбок. Новые бойцы могут присоединиться к начавшейся схватке — например, призванный некромантом призрак или прибывшее подкрепление. Они входят в очерёдность со следующего раунда."
+ pod_combat.0101.t: "Как читать ход боя"
+ pod_combat.0101.desc: "#bold КАРТОЧКИ БОЙЦОВ#!\nКарточка каждого бойца показывает:\n• [POD_health_track|E] — ячейки ранений, заполняющиеся при получении ударов.\n• [Concept('pod_combat_morale', 'Боевой дух')|E] — самообладание, отдельное от здоровья. Прямые ментальные атаки снижают его; каждая ячейка ранения, нанесённая ударом после поглощения, также отнимает #bold [GuiScope.ScriptValue('pod_combat_morale_from_hp_base_ratio')|0]#! боевого духа.\n• [Concept('prowess', 'Доблесть')|E] / [Concept('pod_combat_hit', 'Попадание')|E] / [Concept('soak_damage', 'Поглощение')|E] — показатели нападения и защиты.\nНаведите курсор на карточку для подробностей, включая [Concept('pod_combat_init', 'инициативу')|E] бойца и его порядок [Concept('pod_combat_turn', 'хода')|E] в очерёдности.\nЗначки внизу карточки показывают действующие стойки и состояния (защита, уклонение, скрытность, ответный удар, горение, ошеломление, подчинение). Наведите на любой из них, чтобы узнать подробности.\n\n#bold ЖУРНАЛ БОЯ#!\nПрокручиваемая панель под приёмами записывает все значимые события по порядку; новейшие находятся сверху. Каждая строка показывает действующего бойца, приём, цель и все его последствия: урон, исцеление, истощение, состояния, отдачу и ответные удары, а также остановившие их промахи, блоки и поглощение. Союзники выделены золотом, враги — красным: прокрутив журнал, можно быстро восстановить картину боя.\n\nНесколько особенностей строк:\n• Атаки #bold по области#! создают #bold отдельную строку для каждой цели#!, показывая, кому что досталось (например, «Митра → Все враги (Стив)»).\n• Когда срабатывает стойка вроде ответного удара, вызвавшая его строка получает пометку #bold + Ответный удар#! рядом с основным результатом.\n• Отметки обрамляют бой: «— Бой начинается —» внизу, «— Начинается раунд 2 —» при смене раунда, а после завершения — «— Бой окончен · Победа —» или «— Бой окончен · Поражение —» вверху."
+ pod_combat.0102.t: "Нападение, защита и эффекты"
+ pod_combat.0102.desc: "#bold ПОПАДАНИЕ#!\nПодсказка приёма указывает, какие этапы защиты он пропускает. Обычная физическая атака прежде всего должна быть способна воздействовать на бестелесного духа. Затем @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытность')|E] или @pod_combat_dodge_icon![Concept('pod_combat_dodge', 'уклонение')|E] позволяют избежать её, проверка [Concept('pod_combat_hit_chance', 'шанса попадания')|E] может дать промах, а @pod_combat_guard_icon![Concept('pod_combat_guard', 'защита')|E] — заблокировать удар, который иначе достиг бы цели. После этого [Concept('soak_damage', 'поглощение')|E] проверяется отдельно для каждой единицы урона: обычно тяжёлый удар ослабляется, а не предотвращается целиком.\n\n#bold Без проверки попадания#! пропускает лишь процентную проверку; #bold невозможно уклониться#! обходит уклонение и скрытность; #bold воздействует на бестелесных духов#! позволяет поразить духа даже там, где это иначе невозможно; #bold игнорирует защиту#! проходит сквозь защиту. #bold Снимает защиту#! или #bold снимает уклонение / скрытность#! удаляет соответствующую стойку до применения прочих эффектов приёма. Сверхъестественные и ментальные атаки обычно пропускают проверку попадания и защиты, но уклонение и скрытность всё ещё позволяют избежать их.\n\n#bold ТИПЫ УРОНА#!\n• [Concept('POD_superficial_damage','Поверхностный')|E]: может поглощаться по единице и заживает между боями.\n• [Concept('POD_aggravated_damage','Серьёзный')|E]: по умолчанию не поглощается и заживает медленно. Стихийные атаки — [fire_damage_short|E], [cold_damage_short|E], [lightning_damage_short|E], [sun_damage_short|E], [silver_damage_short|E], [gold_damage_short|E], [holy_damage_short|E], [balefire_damage_short|E], [poison_damage_short|E] и [cold_iron_damage_short|E] — наносят серьёзный урон только уязвимым к ним видам; некоторые виды полностью #bold невосприимчивы#!. Наведите на тип урона, чтобы узнать об уязвимостях.\nНекоторые приёмы — #bold высасывающие атаки#!: они исцеляют вас, но лишь если после поглощения атака нанесла урон здоровью. Другие при использовании #bold ранят и вас#!: безрассудные атаки в полную силу, жертвующие частью вашего здоровья ради более тяжёлого удара.\n\n#bold ЗАЩИТНАЯ ТАКТИКА#!\nМожно заранее накопить защитные эффекты: они сохраняются до первой проверки. Нередко лучший ход — подготовить защиту вместо нападения:\n• @pod_combat_guard_icon![Concept('pod_combat_guard', 'Защита')|E] — блокирует следующую атаку, проверяющую защиту, которая иначе попала бы в цель.\n• @pod_combat_dodge_icon![Concept('pod_combat_dodge', 'Уклонение')|E] — предотвращает следующую атаку, проверяющую уклонение; приёмы, от которых нельзя уклониться, не расходуют его.\n• @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'Скрытность')|E] — +[GuiScope.ScriptValue('pod_combat_stealth_hit_bonus')|0]% к попаданию, пока действует; расходуется при следующем приёме, наносящем урон здоровью или требующем враждебного контакта, либо при уходе от атаки.\n• #bold Ответный удар при попадании / промахе#! — атакует того, кто испытывает вашу защиту. Подсказка приёма указывает точный ответный эффект и тип урона: поверхностный или серьёзный.\n\n#bold УСИЛЕНИЯ И ОСЛАБЛЕНИЯ#!\nВременные эффекты попадания и поглощения бывают малыми, средними и большими. Усиления и ослабления попадания, а также ослабления поглощения добавляют или отнимают #bold 10 / 20 / 30#! процентных пунктов. Усиления поглощения вместо этого уменьшают оставшийся после текущего поглощения урон на #bold 10 / 20 / 30%#!, поэтому отображаемая прибавка зависит от текущего поглощения бойца.\n\nЭффекты на раунд и на весь бой занимают отдельные ячейки, как и усиления с ослаблениями, поэтому могут действовать одновременно. При одинаковом показателе, направлении и длительности текущий эффект заменяется только строго более сильным; равный или слабый ничего не добавляет. Усиление на раунд исчезает в начале следующего хода владельца, а ослабление сохраняется весь его следующий ход и исчезает в конце. Эффекты на весь бой действуют до его завершения.\n\n#bold НЕДУГИ И КОНТРОЛЬ#!\nНекоторые приёмы оставляют не только раны:\n• #bold Периодический урон#! срабатывает в конце каждого раунда несколько раундов подряд; каждый раз отмечается значком типа урона. Ментальные недуги вместо этого снижают [Concept('pod_combat_morale', 'боевой дух')|E]; недуги без указанного типа просто ранят. На карточке жертвы появляется значок состояния: наведите на него, чтобы узнать урон и число оставшихся раундов.\n• #bold Ошеломление и оглушение#! — некоторые атаки отнимают очки действий цели на следующий ход. При полном истощении этот ход начинается с #bold 0 ОД#!; доступные приёмы за 0 ОД всё ещё можно использовать.\n• #bold Подчинение#! — некоторые ментальные силы похищают следующий ход бойца и обращают его против своих. Сильная ментальная защита предотвращает это, если заклинатель не способен её пробить; #bold ваш#! персонаж никогда не может стать марионеткой."
+ pod_combat.0103.t: "Исходы и управление"
+ pod_combat.0103.desc: "#bold ВЫБЫВАНИЕ ИЗ БОЯ#!\nБоец выбывает из схватки, если происходит одно из следующего:\n• Его [Concept('POD_health_track', 'шкала здоровья')|E] полностью заполняется.\n• Его [Concept('pod_combat_morale', 'боевой дух')|E] падает до нуля.\n• Он умирает, становится #N недееспособным#!, впадает в торпор или оказывается заточён в Загробном мире либо Бездне.\nКаждое падение потрясает выживших: каждый оставшийся союзник теряет #bold [GuiScope.ScriptValue('pod_combat_ally_down_morale_penalty')|0]#! [Concept('pod_combat_morale', 'боевого духа')|E], но этот шок не может снизить боевой дух ниже 1. Вы #bold побеждаете#!, как только врагов не остаётся. В противном случае, если #bold ваш персонаж#! выбывает, вы сразу проигрываете, даже если союзники ещё сражаются.\n\n#bold ПОСЛЕ БОЯ#!\nВне тренировок каждый живой боец получает #bold [GuiScope.ScriptValue('pod_combat_morale_stress_multiplier')|0]#! [Concept('static_stress', 'психического напряжения')|E] за каждое недостающее в конце боя очко [Concept('pod_combat_morale', 'боевого духа')|E]. Восстановление боевого духа до завершения уменьшает эти долговременные последствия. Раны сохраняются в соответствии с режимом поединка, а потраченная на приёмы сверхъестественная энергия и прочие ресурсы не возвращаются. Выбранный набор приёмов сохраняется между боями.\n\n#bold РЕЖИМЫ ПОЕДИНКА#!\nПравила смертности задаёт событие, вызвавшее бой:\n• #bold Смертельный#!: раны сохраняются; действуют обычные правила PoD для ран, смерти и выживания отдельных видов. Некоторые исходные события гарантируют смерть проигравшего.\n• #bold Несмертельный#!: раны действуют как обычно и могут вывести бойца из строя, но смерть от ран предотвращается. В конце боя полностью заполненная шкала ранений исцеляется так, чтобы осталась одна пустая ячейка.\n• #bold Тренировка#!: урон, исцеление и боевой дух действуют во время схватки и определяют, кто падёт, но затем состояние ранений каждого бойца восстанавливается до исходного, а недостающий боевой дух не оставляет психического напряжения. Обычная стоимость приёмов всё равно уплачивается; полученная при определённых условиях энергия может сохраниться.\n\n#bold КНОПКИ ОКНА#!\n• #bold Завершить ход#!: закончить свой ход и передать очередь следующему бойцу по инициативе. Неиспользованные ОД сгорают.\n• #bold Автоматический исход#!: пропустить оставшуюся часть боя. Текущая [Concept('prowess', 'доблесть')|E] выживших бойцов каждой стороны суммируется; к ней прибавляется случайное число от нуля до этой суммы. Побеждает большее значение; ничья решается в вашу пользу. Боевой дух проигравшего предводителя падает до нуля, вызывая максимальное психическое напряжение от его потери вне тренировок, если предводитель выживет.\n  Пропуск боя не проходит бесследно. В заключительной схватке каждый ещё стоящий боец получает ранения, включая победителей. Тяжесть зависит от решительности исхода: при близком результате обе стороны страдают примерно поровну; разгром оставляет победителей почти невредимыми, а проигравших — тяжело израненными. [Concept('soak_damage', 'Поглощение')|E] проверяется как обычно, поэтому стойкий боец может полностью избежать урона. Тренировочные поединки освобождены от этого.\n  Есть исключение: если ещё стоит враг, которому вы #bold никак не можете навредить#! — бестелесный дух, которого никто на вашей стороне не способен поразить, — никакая сумма не принесёт победы. Автоматический исход тогда означает сдачу без проверки. Кнопка остаётся доступной именно потому, что другого выхода из такой схватки нет; подсказка предупреждает об этом заранее. Обратное также верно, но лишь когда неуязвим #bold ваш собственный персонаж#!: бестелесный союзник не спасёт вас, поскольку вы проигрываете в момент падения своего персонажа.\n• #bold Завершить бой#!: закрыть окно после определения исхода (после победы или поражения заменяет «Завершить ход» и «Автоматический исход»).\n• Флажок #bold Автоматическая смена ходов#!: если включён, все ходы ИИ в раунде отыгрываются одним щелчком, а не по очереди.\n• #bold Справка#!: вновь открыть это руководство в любой момент.\n\nПосле определения победителя появляется вариант #bold $pod_combat.9995.a$#!; выбрав его, вы возвращаетесь к событию, вызвавшему бой. Уйти из поединка на полпути нельзя: доведите его до конца или воспользуйтесь автоматическим исходом."
+
+ ##############################
+ ###### FIRST-FIGHT INTRO EVENT
+ ##############################
+
+ # Intro for characters who have not opened Configure Moves or acknowledged it.
+ pod_combat.0200.t: "Познай себя, познай врага"
+ pod_combat.0200.desc: "Скоро начнётся пошаговое @pod_combat_encounter_icon![Concept('pod_combat_encounter', 'боевое столкновение')|E]. Каждый раунд вы тратите [Concept('pod_combat_action_points', 'очки действий')|E] на выбранные [Concept('pod_combat_moves', 'боевые приёмы')|E]; схватка заканчивается, когда каждый враг #italic (или вы)#! [Concept('pod_combat_knocked_out', 'выбывает из боя')|E]. Подробнее о механике можно узнать через кнопку #bold Справка#! в окне боя.\n\nВы ещё не меняли набор [Concept('pod_combat_move', 'боевых приёмов')|E] для этого персонажа, поэтому рекомендуем сделать это сейчас. Позже вы сможете воспользоваться [Concept('decision', 'решением')|E] «[GetDecision('pod_combat_configure_moves').GetName]» в любой момент вне боя."
+ pod_combat.0200.a: "Сначала проверить свои приёмы."
+ pod_combat_intro_review_tt: "Открывает окно [Concept('pod_combat_moves', 'боевых приёмов')|E]. Схватка ждёт, пока вы не решите начать."
+ pod_combat.0200.b: "Начать бой со стандартными приёмами."
+
+ pod_combat.0201.t: "ВАС ЖДЁТ #bold БОЙ#!"
+ pod_combat.0201.desc: "#italic Выберите нужные приёмы, а затем начните бой, когда будете готовы.#!"
+ pod_combat.0201.a: "#bold Начать#! бой"
+
+ ##############################
+ ###### GROUP COMBAT LABELS
+ ##############################
+
+ pod_combat_already_targeted_ally: "Этот #bold союзник#! — ваша текущая цель."
+ pod_combat_already_targeted_enemy: "Этот #bold враг#! — ваша текущая цель."
+ pod_combat_select_target_ally: "Нажмите, чтобы выбрать этого #bold союзника#! целью."
+ pod_combat_select_target_enemy: "Нажмите, чтобы выбрать в качестве цели этого #bold врага#!."
+ pod_combat_select_target_rightclick: "Нажмите правой кнопкой мыши, чтобы открыть окно персонажа."
+
+ ##############################
+ ###### DUEL LAUNCH
+ ##############################
+
+ # Keep launch text neutral across fatality modes, sides and weapons.
+ pod_combat_duel_begins_tt: "#bold Начинается @pod_combat_encounter_icon![Concept('pod_combat_encounter', 'боевое столкновение')|E].#!"
+
+ ##############################
+ ###### DUEL SHELL CARD
+ ##############################
+
+ # The shell appears after resolution. Wording must cover every fatality mode without implying death.
+ pod_combat.9995.t: "ИСХОД #bold ДУЭЛИ#! РЕШЁН"
+ pod_combat.9995.desc: "Клинки замерли. Вернитесь к вопросу, из-за которого всё началось."
+ pod_combat.9995.a: "Завершить бой"
+ pod_combat_shell_conclude_tt: "Примите исход и вернитесь к вопросу, породившему ссору."
+ # Shown only on a card that outlived its fight (host died mid-fight).
+ pod_combat_shell_status_stale: "#weak Эта боевая схватка уже завершена.#!"
+
+ ##############################
+ ###### RESULT TOASTS
+ ##############################
+
+ pod_combat_result_victory_toast: "Победа!"
+ pod_combat_result_defeat_toast: "Поражение."
+
+ ##############################
+ ###### GAME RULE
+ ##############################
+
+ rule_pod_combat_system: "$POD_gamerule$ [pod_combat_encounters_with_icon|E]"
+ setting_pod_combat_enabled: "Включено"
+ setting_pod_combat_enabled_desc: "В поединках используется мини-игра @pod_combat_encounter_icon![Concept('pod_combat_encounter', 'боевых столкновений')|E]."
+ setting_pod_combat_disabled: "Отключено"
+ setting_pod_combat_disabled_desc: "В поединках используется обычная система (на основе событий)."
+
+ ##############################
+ ###### DEBUG INTERACTION
+ ##############################
+
+ interaction_debug_combat: "#D ОТЛАДКА: #BER Боевая мини-игра#!#!"
+
+ pod_combat_debug_tuning_interaction: "ОТЛАДКА: окно настройки боя"
+ pod_combat_debug_tuning_desc: "Открыть или закрыть окно текущей балансировки @pod_combat_encounter_icon![Concept('pod_combat_encounter', 'боевого столкновения')|E] (очки действий, боевой дух, ограничения набора, инициатива, расчёт попаданий, уровни эффектов, пороги ИИ)."
+ pod_combat_debug_1v1_interaction: "Бой 1 на 1"
+ pod_combat_debug_1v1_desc: "Отладка: запустить @pod_combat_encounter_icon![Concept('pod_combat_encounter', 'боевое столкновение')|E] 1 на 1 с этим персонажем."
+ pod_combat_debug_1vn_interaction: "Бой один против многих"
+ pod_combat_debug_1vn_desc: "Отладка: сразиться с этим персонажем и его рыцарями в одиночку."
+ pod_combat_debug_nv1_interaction: "Бой многие против одного"
+ pod_combat_debug_nv1_desc: "Отладка: сразиться с этим персонажем вместе со своей котерией."
+ pod_combat_debug_nvn_interaction: "Бой многие против многих"
+ pod_combat_debug_nvn_desc: "Отладка: ваша котерия против этого персонажа и его рыцарей."
+ pod_combat_debug_practice_interaction: "Тренировочный бой"
+ pod_combat_debug_practice_desc: "Отладка: тренировочный поединок один на один — раны не сохраняются."
+ pod_combat_debug_nonfatal_interaction: "Несмертельный бой"
+ pod_combat_debug_nonfatal_desc: "Отладка: несмертельная дуэль 1 на 1 — раны наносятся, но ничья шкала здоровья не заполняется полностью."
+ pod_combat_debug_nosummon_interaction: "Бой без призыва"
+ pod_combat_debug_nosummon_desc: "Отладка: поединок один на один с запретом призыва — все приёмы призыва недоступны обеим сторонам."
+ pod_combat_debug_victory_toast: "Отладочный бой: Победа!"
+ pod_combat_debug_defeat_toast: "Отладочный бой: поражение."
+ pod_combat_debug_invalid_toast: "Отладочный бой: дуэль недействительна (тот же атакующий/защитник?)."
+ pod_combat_debug_draw_toast: "Отладочный бой: нет решающего победителя (ничья/взаимный нокаут)."
+ pod_combat_debug_big_interaction: "Большая схватка"
+ pod_combat_debug_big_desc: "Отладка: создать большую схватку — вы и ваши вассалы против этого персонажа и его вассалов, до выбранного числа участников с каждой стороны — для проверки команд произвольного размера под нагрузкой. Бойцы за первыми рядами доступны через прокрутку панелей союзников и врагов."
+ pod_combat_debug_big_size_8: "Размер команды: 8 персонажей с каждой стороны."
+ pod_combat_debug_big_size_12: "Размер команды: 12 персонажей с каждой стороны."
+ pod_combat_debug_big_size_20: "Размер команды: 20 персонажей с каждой стороны."
+ pod_combat_debug_reinforce_interaction: "Бой с подкреплениями"
+ pod_combat_debug_reinforce_desc: "Отладка: 1 на 1 против этого персонажа, затем союзник (ваш вассал) присоединяется во 2-м раунде и враг (его вассал) в 3-м раунде — проверяет отложенное подкрепление."
+
+ ##############################
+ ###### MANUAL / SUMMON MOVES
+ ##############################
+ pod_combat_log_system_combatant_joins: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] присоединяется к битве —#!"
+ pod_combat_log_system_ally_down_shock: "#italic — Падение персонажа [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] потрясает отряд: союзники теряют #bold [GuiScope.ScriptValue('pod_combat_ally_down_morale_penalty')|0]#! боевого духа —#!"
+ # An all-immune roster emits only form_shifted; delirium_struck is per affected victim.
+ pod_combat_log_system_form_shifted: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] принимает новую форму —#!"
+ pod_combat_log_system_delirium_struck: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] испытывает [Concept('delirium', 'первобытный ужас')|E] —#!"
+ # Tick rows report actual wound class and protection results; application rows stay class-neutral.
+ pod_combat_log_system_dot_tick: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] получает #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! $superficial$ урона здоровью —#!"
+ pod_combat_log_system_dot_tick_morale: "#italic — Воля персонажа [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] слабеет на #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! [Concept('pod_combat_morale', 'боевого духа')|E] —#!"
+ pod_combat_log_system_dot_tick_agg: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] получает #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! $aggravated$ урона здоровью —#!"
+ pod_combat_log_system_dot_tick_immune: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] имеет невосприимчивость к @pod_combat_dot_icon! недугу —#!"
+ pod_combat_log_system_dot_tick_blocked: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] не получает урона от @pod_combat_dot_icon! недуга —#!"
+ # Auto-resolve rows report actual added wounds, including zero after full soak.
+ pod_combat_log_system_auto_resolve_wound: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] получает #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! $superficial$ урона здоровью в заключительной схватке —#!"
+ pod_combat_log_system_auto_resolve_wound_agg: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] получает #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! $aggravated$ урона здоровью в заключительной схватке —#!"
+ pod_combat_log_system_auto_resolve_unharmed: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] проходит финальную схватку без ранений —#!"
+ pod_combat_log_system_dot_applied: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] страдает от недуга - #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! здоровья @pod_combat_dot_icon! за раунд в течение #bold [entry.MakeScope.Var('dot_applied_rounds').GetValue|0]#! раундов —#!"
+ pod_combat_log_system_dazed: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] испытывает ошеломление и теряет #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! ОД —#!"
+ pod_combat_log_system_stunned: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] испытывает оглушение - этот ход начинается с #bold 0#! ОД —#!"
+ pod_combat_log_system_mind_seized: "#italic — Воля персонажа [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] захвачена! —#!"
+ pod_combat_log_system_mind_resisted: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] сопротивляется подчинению —#!"
+ pod_combat_log_system_mind_betrayal: "#italic — [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] нападает на своих союзников! —#!"
+ pod_combat_log_system_mind_fizzle: "#italic — Украденный ход персонажа [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] не находит цели —#!"
+ pod_combat_log_system_dot_applied_morale: "#italic — Воля персонажа [entry.MakeScope.Var('actor').GetCharacter.GetFirstName] начинает слабеть: #bold [entry.MakeScope.Var('dot_tick_amount').GetValue|0]#! [Concept('pod_combat_morale', 'боевого духа')|E] за раунд в течение #bold [entry.MakeScope.Var('dot_applied_rounds').GetValue|0]#! раундов —#!"
+
+ ##############################
+ ###### LOADOUT EDITOR
+ ##############################
+
+ pod_combat_loadout_equipped_header: "Выбранные приёмы"
+ pod_combat_loadout_show_all: "Показать все приёмы"
+ pod_combat_loadout_show_other_splats: "Показать другие виды"
+ pod_combat_loadout_hint_title: "Совет"
+ pod_combat_loadout_hint_desc: "Нажмите на выбранный приём слева, чтобы убрать его. Включите #bold $pod_combat_loadout_show_all$#!, чтобы посмотреть ещё не открытые приёмы, доступные вашему виду: у каждого перечислены недостающие требования. Добавьте #bold $pod_combat_loadout_show_other_splats$#!, чтобы увидеть все приёмы игры — этот список гораздо длиннее."
+
+ pod_combat_loadout_atk_full_tt: "Ячейки атаки заполнены: [GetPlayer.MakeScope.ScriptValue('pod_combat_atk_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_loadout_def_full_tt: "Ячейки защиты заполнены: [GetPlayer.MakeScope.ScriptValue('pod_combat_def_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_loadout_ctl_full_tt: "Ячейки контроля заполнены: [GetPlayer.MakeScope.ScriptValue('pod_combat_ctl_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_loadout_pwr_full_tt: "Ячейки силы заполнены: [GetPlayer.MakeScope.ScriptValue('pod_combat_pwr_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ # Total-cap feedback matters when tuned category caps no longer sum to the total cap.
+ pod_combat_loadout_total_full_tt: "Все ячейки приёмов заполнены: [GetPlayer.MakeScope.ScriptValue('pod_combat_equipped_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_equipped')|0]"
+
+ pod_combat_cat_atk_header: "#italic;color_red Атака#!"
+ pod_combat_cat_def_header: "#italic;color_light_blue Защита#!"
+ pod_combat_cat_ctl_header: "#italic;color_porple Контроль#!"
+ pod_combat_cat_pwr_header: "#italic;color_pwr_orange Сила#!"
+
+ pod_combat_filter_atk_btn: "АТК: [GetPlayer.MakeScope.ScriptValue('pod_combat_atk_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_filter_def_btn: "ЗАЩ: [GetPlayer.MakeScope.ScriptValue('pod_combat_def_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_filter_ctl_btn: "КОН: [GetPlayer.MakeScope.ScriptValue('pod_combat_ctl_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_filter_pwr_btn: "СИЛ: [GetPlayer.MakeScope.ScriptValue('pod_combat_pwr_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_per_category')|0]"
+ pod_combat_filter_total_btn: "#weak Итого: [GetPlayer.MakeScope.ScriptValue('pod_combat_equipped_count')|0] / [GetPlayer.MakeScope.ScriptValue('pod_combat_max_equipped')|0]#!"
+
+ pod_combat_filter_atk_tt: "Показывать в списке доступных только #bold;color_red атакующие#! приёмы. Нажмите ещё раз, чтобы снять фильтр. Можно включить несколько категорий одновременно."
+ pod_combat_filter_def_tt: "Показывать в списке доступных только #bold;color_light_blue защитные#! приёмы. Нажмите ещё раз, чтобы снять фильтр. Можно включить несколько категорий одновременно."
+ pod_combat_filter_ctl_tt: "Показывать в списке доступных только #bold;color_porple контролирующие#! приёмы. Нажмите ещё раз, чтобы снять фильтр. Можно включить несколько категорий одновременно."
+ pod_combat_filter_pwr_tt: "Показывать в списке доступных только приёмы #bold;color_pwr_orange силы#!. Нажмите ещё раз, чтобы снять фильтр. Можно включить несколько категорий одновременно."
+ pod_combat_filter_total_tt: "Сбросить все фильтры категорий и показать все доступные приёмы."
+
+ ##############################
+ ###### DYNAMIC MOVE TOOLTIP (pod_combat_move_desc SGUI)
+ ##############################
+ # Tooltip values read saved scope story. 
+ # each key must restore an explicit color with #medium;outline or equivalent.
+ # A trailing $EFFECT_LIST_BULLET$ balances the hidden leading bullet for centering.
+
+ # Capability callouts describe runtime behavior; their SGUI gates test absent capability flags.
+ pod_combat_desc_always_hits: "#medium;outline [Concept('pod_combat_hit_chance','Без броска на попадание')|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_undodgeable: "#medium;outline Невозможно уклониться — обходит @pod_combat_dodge_icon![Concept('pod_combat_dodge', 'уклонение')|E] и @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытность')|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hits_spirits: "#medium;outline Воздействует на бестелесных духов#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_uses_weapon: "#medium;outline Использует ваше [Concept('artifact', 'оружие')|E] #weak (если у него есть бонусы к [Concept('pod_combat_moves', 'боевым приёмам')|E])#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_uses_weapon_armed: "#medium;outline Использует ваше [Concept('artifact', 'оружие')|E] ([pod_weapon.GetNameNoTooltip])#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_weapon_empowered: "#medium;outline Использует #bold [pod_weapon.GetNameNoTooltip]#!:$pod_weapon_ovr_line$#! $EFFECT_LIST_BULLET$"
+ # Cost fragments include a leading space; energy text is splat-aware.
+ pod_combat_costline_energy: " [GetPlayer.Custom('PODEnergySplatIcon')]#bold [Multiply_CFixedPoint( ROOT.Var('energy_cost').GetValue, GetPlayer.MakeScope.ScriptValue('pod_combat_energy_cost_display_multiplier') )|V0]#! #V [GetPlayer.Custom('PODEnergySplatWord')]#!"
+ pod_combat_costline_gold: " @gold_icon!#bold [ROOT.Var('gold_cost').GetValue|V0]#! золота"
+ pod_combat_costline_piety: " @piety_icon!#bold [ROOT.Var('piety_cost').GetValue|V0]#! благочестия"
+ pod_combat_costline_prestige: " @prestige_icon!#bold [ROOT.Var('prestige_cost').GetValue|V0]#! престижа"
+ pod_combat_costline_stress: " @stress_icon!#bold [ROOT.Var('stress_cost').GetValue|V0]#! стресса"
+ pod_combat_desc_costs: "#medium;outline Стоимость:[story.Custom('PODCombatEnergyCostInline')][story.Custom('PODCombatGoldCostInline')][story.Custom('PODCombatPietyCostInline')][story.Custom('PODCombatPrestigeCostInline')][story.Custom('PODCombatStressCostInline')]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_steal_gold: "#medium;outline Похитить #bold [story.MakeScope.Var('steal_gold').GetValue|V0]#! золота у врага#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_gain_dread: "#medium;outline Получить #bold [story.MakeScope.Var('gain_dread').GetValue|V0]#! ужаса#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_once_per_round: "#medium;outline Можно использовать один раз за раунд#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_once_per_combat: "#medium;outline Можно использовать один раз за бой#! $EFFECT_LIST_BULLET$"
+
+ # Dispatch elements to namespaced keys to avoid vanilla flag-loc collisions.
+ # Omit |E on colored concepts so the element color takes precedence over concept blue.
+ pod_combat_desc_hp_damage_basic: "#medium;outline #N Нанести#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! [story.MakeScope.Var('damage_type').GetFlagName] #N урона#! персонажу [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hp_damage_elemental: "#medium;outline #N Нанести#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! [Localize( Concatenate( 'pod_combat_damage_type_', story.MakeScope.Var('damage_type').GetFlagKey ) )] #N урона#! персонажу [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_morale_damage: "#medium;outline #N Нанести#! #bold [story.MakeScope.Var('morale_damage').GetValue|V0]#! #N урона#! [Concept('pod_combat_morale', 'боевому духу')|E] персонажа [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_morale_damage_on_hp_damage: "#medium;outline #N Нанести#! #bold [story.MakeScope.Var('morale_damage').GetValue|V0]#! #N урона#! [Concept('pod_combat_morale', 'боевому духу')|E] персонажа [story.MakeScope.Var('targeting').GetFlagName], но только если атака наносит урон здоровью после поглощения#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_morale_damage_on_contact: "#medium;outline #N Нанести#! #bold [story.MakeScope.Var('morale_damage').GetValue|V0]#! #N урона#! [Concept('pod_combat_morale', 'боевому духу')|E] персонажа [story.MakeScope.Var('targeting').GetFlagName], но только если атака достигает контакта (включая заблокированный или полностью поглощённый удар)#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_morale_damage_on_miss: "#medium;outline #N Нанести#! #bold [story.MakeScope.Var('morale_damage').GetValue|V0]#! #N урона#! [Concept('pod_combat_morale', 'боевому духу')|E] персонажа [story.MakeScope.Var('targeting').GetFlagName], но только при промахе или уходе от атаки#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_self_damage: "#medium;outline Получить #bold [story.MakeScope.Var('self_damage').GetValue|V0]#! урона самому себе#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_self_damage_on_hp_damage: "#medium;outline Получить #bold [story.MakeScope.Var('self_damage').GetValue|V0]#! урона самому себе, но только если атака наносит урон здоровью после поглощения#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_self_damage_on_contact: "#medium;outline Получить #bold [story.MakeScope.Var('self_damage').GetValue|V0]#! урона самому себе, но только если атака достигает контакта (включая заблокированный или полностью поглощённый удар)#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_self_damage_on_miss: "#medium;outline Получить #bold [story.MakeScope.Var('self_damage').GetValue|V0]#! урона самому себе, но только при промахе или уходе от атаки#! $EFFECT_LIST_BULLET$"
+ # POD_combat_move_set_hp_heal always sets heal_type for the wound-box lookup.
+ pod_combat_desc_hp_heal: "#medium;outline #P Восстановить#! #bold [story.MakeScope.Var('hp_heal').GetValue|V0]#! [story.MakeScope.Var('heal_type').GetFlagName] персонажу [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ # Drain wording must require actual post-soak HP damage.
+ pod_combat_desc_drain: "#medium;outline #P Высосать#! #bold [story.MakeScope.Var('hp_heal').GetValue|V0]#! [story.MakeScope.Var('heal_type').GetFlagName] у цели, но только если атака наносит урон здоровью после поглощения#! $EFFECT_LIST_BULLET$"
+ # Combine damage and drain on one line. The standalone drain key covers moves without hp_damage.
+ pod_combat_desc_hp_damage_basic_drain: "#medium;outline #N Нанести#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! [story.MakeScope.Var('damage_type').GetFlagName] #N урона#! цели [story.MakeScope.Var('targeting').GetFlagName], #P высосать#! #bold [story.MakeScope.Var('hp_heal').GetValue|V0]#! [story.MakeScope.Var('heal_type').GetFlagName], если атака наносит урон здоровью после поглощения#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hp_damage_elemental_drain: "#medium;outline #N Нанести#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! [Localize( Concatenate( 'pod_combat_damage_type_', story.MakeScope.Var('damage_type').GetFlagKey ) )] #N урона#! цели [story.MakeScope.Var('targeting').GetFlagName], #P высосать#! #bold [story.MakeScope.Var('hp_heal').GetValue|V0]#! [story.MakeScope.Var('heal_type').GetFlagName], если атака наносит урон здоровью после поглощения#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_morale_heal: "#medium;outline #P Восстановить#! #bold [story.MakeScope.Var('morale_heal').GetValue|V0]#! [Concept('pod_combat_morale', 'боевого духа')|E] персонажу [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_energy_gain: "#medium;outline #P Восстановить#! #bold [Multiply_CFixedPoint( story.MakeScope.Var('energy_gain').GetValue, GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]#! [GetPlayer.Custom('PODEnergySplatIcon')] #V [GetPlayer.Custom('PODEnergySplatWord')]#!#! $EFFECT_LIST_BULLET$"
+
+ pod_combat_desc_soak_buff_round: "#medium;outline #P + к [Concept('soak_damage', 'поглощению')|E]#! (уровень [story.MakeScope.Var('soak_buff_round_tier').GetValue|V0]) до начала вашего следующего хода#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_soak_buff_combat: "#medium;outline #P + к [Concept('soak_damage', 'поглощению')|E]#! (уровень [story.MakeScope.Var('soak_buff_combat_tier').GetValue|V0]) до конца боя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_soak_debuff_round: "#medium;outline #N - к [Concept('soak_damage', 'поглощению')|E]#! (уровень [story.MakeScope.Var('soak_debuff_round_tier').GetValue|V0]) для [story.MakeScope.Var('targeting').GetFlagName] до конца следующего хода цели#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_soak_debuff_combat: "#medium;outline #N - к [Concept('soak_damage', 'поглощению')|E]#! (уровень [story.MakeScope.Var('soak_debuff_combat_tier').GetValue|V0]) для [story.MakeScope.Var('targeting').GetFlagName] до конца боя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hit_buff_round: "#medium;outline #P + к [Concept('pod_combat_hit_chance', 'вероятности попадания')|E]#! (уровень [story.MakeScope.Var('hit_buff_round_tier').GetValue|V0]) до начала вашего следующего хода#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hit_buff_combat: "#medium;outline #P + к [Concept('pod_combat_hit_chance', 'вероятности попадания')|E]#! (уровень [story.MakeScope.Var('hit_buff_combat_tier').GetValue|V0]) до конца боя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hit_debuff_round: "#medium;outline #N - к [Concept('pod_combat_hit_chance', 'вероятности попадания')|E]#! (уровень [story.MakeScope.Var('hit_debuff_round_tier').GetValue|V0]) для персонажа [story.MakeScope.Var('targeting').GetFlagName] до конца следующего хода цели#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hit_debuff_combat: "#medium;outline #N - к [Concept('pod_combat_hit_chance', 'вероятности попадания')|E]#! (уровень [story.MakeScope.Var('hit_debuff_combat_tier').GetValue|V0]) для персонажа [story.MakeScope.Var('targeting').GetFlagName] до конца боя#! $EFFECT_LIST_BULLET$"
+ # Use ally wording only when targeting diverts the buff from the actor.
+ pod_combat_desc_soak_buff_round_other: "#medium;outline #P + к [Concept('soak_damage', 'поглощению')|E]#! (уровень [story.MakeScope.Var('soak_buff_round_tier').GetValue|V0]) для персонажа [story.MakeScope.Var('targeting').GetFlagName] до начала следующего хода получателя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_soak_buff_combat_other: "#medium;outline #P + к [Concept('soak_damage', 'поглощению')|E]#! (уровень [story.MakeScope.Var('soak_buff_combat_tier').GetValue|V0]) для персонажа [story.MakeScope.Var('targeting').GetFlagName] до конца боя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hit_buff_round_other: "#medium;outline #P + к [Concept('pod_combat_hit_chance', 'вероятности попадания')|E]#! (уровень [story.MakeScope.Var('hit_buff_round_tier').GetValue|V0]) для персонажа [story.MakeScope.Var('targeting').GetFlagName] до начала следующего хода получателя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_hit_buff_combat_other: "#medium;outline #P + к [Concept('pod_combat_hit_chance', 'вероятности попадания')|E]#! (уровень [story.MakeScope.Var('hit_buff_combat_tier').GetValue|V0]) для персонажа [story.MakeScope.Var('targeting').GetFlagName] до конца боя#! $EFFECT_LIST_BULLET$"
+
+ pod_combat_desc_set_guard: "#medium;outline Принять @pod_combat_guard_icon![Concept('pod_combat_guard', 'защитную')|E] стойку#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_dodge: "#medium;outline Принять стойку @pod_combat_dodge_icon![Concept('pod_combat_dodge', 'уклонения')|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_stealth: "#medium;outline Перейти в состояние @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытности')|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_set_guard_other: "#medium;outline Дать @pod_combat_guard_icon![Concept('pod_combat_guard', 'защитную')|E] стойку персонажу [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_dodge_other: "#medium;outline Дать стойку @pod_combat_dodge_icon![Concept('pod_combat_dodge', 'уклонения')|E] персонажу [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_stealth_other: "#medium;outline Дать @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытность')|E] персонажу [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bypass_guard: "#medium;outline Игнорирует @pod_combat_guard_icon![Concept('pod_combat_guard', 'защиту')|E] персонажа [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ # Stance removal persists for later attacks; bypassing a stance leaves it intact.
+ pod_combat_desc_bypass_dodge: "#medium;outline Снимает @pod_combat_dodge_icon![Concept('pod_combat_dodge', 'уклонение')|E] с персонажа [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bypass_stealth: "#medium;outline Снимает @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытность')|E] с персонажа [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ ###### STATE-CONDITION DISPLAY (pod_combat_move_desc gate + bonus dispatch)
+ # Share condition clauses between gate and bonus wording.
+ # -- shared condition clauses --
+ pod_combat_cond_phrase_first_round: "это первый раунд"
+ pod_combat_cond_phrase_round_min: "это [story.MakeScope.Var('cond_threshold').GetValue|V0]-й раунд или позднее"
+ pod_combat_cond_phrase_undamaged_user: "у вас полное здоровье"
+ pod_combat_cond_phrase_undamaged_target: "у врага полное здоровье"
+ pod_combat_cond_phrase_hp_missing_user: "у вас не хватает [story.MakeScope.Var('cond_threshold').GetValue|V0]+ здоровья"
+ pod_combat_cond_phrase_hp_missing_target: "у врага не хватает [story.MakeScope.Var('cond_threshold').GetValue|V0]+ здоровья"
+ pod_combat_cond_phrase_full_morale_user: "у вас полностью восстановлен [Concept('pod_combat_morale', 'боевой дух')|E]"
+ pod_combat_cond_phrase_full_morale_target: "у врага полностью восстановлен [Concept('pod_combat_morale', 'боевой дух')|E]"
+ pod_combat_cond_phrase_morale_missing_user: "у вас не хватает [story.MakeScope.Var('cond_threshold').GetValue|V0]+ [Concept('pod_combat_morale', 'боевого духа')|E]"
+ pod_combat_cond_phrase_morale_missing_target: "у врага не хватает [story.MakeScope.Var('cond_threshold').GetValue|V0]+ [Concept('pod_combat_morale', 'боевого духа')|E]"
+ pod_combat_cond_phrase_has_guard_user: "вы @pod_combat_guard_icon![Concept('pod_combat_guarding', 'защищаетесь')|E]"
+ pod_combat_cond_phrase_has_guard_target: "враг @pod_combat_guard_icon![Concept('pod_combat_guarding', 'защищается')|E]"
+ pod_combat_cond_phrase_has_dodge_user: "вы @pod_combat_dodge_icon![Concept('pod_combat_dodging', 'уклоняетесь')|E]"
+ pod_combat_cond_phrase_has_dodge_target: "враг @pod_combat_dodge_icon![Concept('pod_combat_dodging', 'уклоняется')|E]"
+ pod_combat_cond_phrase_has_stealth_user: "вы @pod_combat_stealth_icon![Concept('pod_combat_stealthed', 'скрываетесь')|E]"
+ pod_combat_cond_phrase_has_stealth_target: "враг @pod_combat_stealth_icon![Concept('pod_combat_stealthed', 'скрывается')|E]"
+ pod_combat_cond_phrase_prestige_level_min_user: "ваш уровень славы — [story.MakeScope.Var('cond_threshold').GetValue|V0]+"
+ pod_combat_cond_phrase_prestige_level_min_target: "уровень славы врага — [story.MakeScope.Var('cond_threshold').GetValue|V0]+"
+ pod_combat_cond_phrase_piety_level_min_user: "ваш уровень набожности — [story.MakeScope.Var('cond_threshold').GetValue|V0]+"
+ pod_combat_cond_phrase_piety_level_min_target: "уровень набожности врага — [story.MakeScope.Var('cond_threshold').GetValue|V0]+"
+ pod_combat_cond_phrase_dread_min_user: "ваш показатель ужаса — [story.MakeScope.Var('cond_threshold').GetValue|V0]+"
+ pod_combat_cond_phrase_dread_min_target: "показатель ужаса врага — [story.MakeScope.Var('cond_threshold').GetValue|V0]+"
+ pod_combat_cond_phrase_stress_less_than_user: "у вас меньше [stress_i][story.MakeScope.Var('cond_threshold').GetValue|V0] [Concept('stress', 'стресса')|E]"
+ pod_combat_cond_phrase_stress_less_than_target: "у врага меньше [stress_i][story.MakeScope.Var('cond_threshold').GetValue|V0] [Concept('stress', 'стресса')|E]"
+ pod_combat_cond_phrase_relation_positive: "враг вам нравится"
+ pod_combat_cond_phrase_relation_negative: "враг вам не нравится"
+ pod_combat_cond_phrase_outnumbered: "ваша сторона в меньшинстве"
+ pod_combat_cond_phrase_ally_knocked_out: "союзник выбит из строя"
+ pod_combat_cond_phrase_alive_enemies_min: "[story.MakeScope.Var('cond_threshold').GetValue|V0] или больше врагов всё ещё на ногах"
+ pod_combat_cond_phrase_alive_enemies_max: "осталось не более [story.MakeScope.Var('cond_threshold').GetValue|V0] врагов"
+ pod_combat_cond_phrase_alive_allies_min: "рядом с вами ещё сражается [story.MakeScope.Var('cond_threshold').GetValue|V0] или больше союзников"
+ pod_combat_cond_phrase_alive_allies_max: "не более [story.MakeScope.Var('cond_threshold').GetValue|V0] союзников все еще стоят рядом с вами"
+ pod_combat_cond_phrase_has_weapon_artifact_user: "вы используете оружие"
+ pod_combat_cond_phrase_has_weapon_artifact_target: "враг использует оружие"
+ pod_combat_cond_phrase_has_armor_artifact_user: "вы используете броню"
+ pod_combat_cond_phrase_has_armor_artifact_target: "враг использует броню"
+ pod_combat_cond_phrase_has_trait_user: "у вас есть свойство #bold [story.MakeScope.Var('cond_param_trait').Trait.GetName(GetNullCharacter)]#!"
+ pod_combat_cond_phrase_has_trait_target: "у врага есть свойство #bold [story.MakeScope.Var('cond_param_trait').Trait.GetName(GetNullCharacter)]#!"
+ pod_combat_cond_phrase_has_modifier_user: "вы находитесь под воздействием модификатора #bold [GetModifier(story.MakeScope.Var('cond_param').GetFlagKey).GetNameWithTooltip]#!"
+ pod_combat_cond_phrase_has_modifier_target: "цель находится под воздействием модификатора #bold [GetModifier(story.MakeScope.Var('cond_param').GetFlagKey).GetNameWithTooltip]#!"
+ pod_combat_cond_phrase_has_perk_user: "у вас есть достоинство #bold [GetPerk(story.MakeScope.Var('cond_param').GetFlagKey).GetName(GetNullCharacter)]#!"
+ pod_combat_cond_phrase_has_perk_target: "у врага есть достоинство #bold [GetPerk(story.MakeScope.Var('cond_param').GetFlagKey).GetName(GetNullCharacter)]#!"
+ pod_combat_cond_phrase_target_known_secret: "вы знаете секрет врага"
+ pod_combat_cond_phrase_fera_form: "в форме #bold [story.Custom('PODCombatFeraFormName')]#!"
+ pod_combat_cond_phrase_wyrm_servant_user: "вы являетесь #bold слугой Вирма#!"
+ pod_combat_cond_phrase_wyrm_servant_target: "враг является #bold слугой Вирма#!"
+ pod_combat_warform: "форма [GetPlayer.Custom('PODFeraWarform')]"
+ pod_combat_primalhuman: "форма [GetPlayer.Custom('PODFeraPrimalHumanform')]"
+ pod_combat_primalbeast: "форма [GetPlayer.Custom('PODFeraPrimalBeastform')]"
+ pod_combat_beast: "форма [GetPlayer.Custom('PODFeraBeastform')]"
+ pod_combat_cond_phrase_is_fera_user: "вы являетесь [Glossary('фера', 'glossary_fera_tt')]"
+ pod_combat_cond_phrase_is_fera_target: "враг является [Glossary('фера', 'glossary_fera_tt')]"
+ # -- gate framing (cond_mode = gate) --
+ pod_combat_desc_cond_first_round: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_first_round$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_round_min: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_round_min$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_undamaged_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_undamaged_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_undamaged_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_undamaged_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_hp_missing_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_hp_missing_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_hp_missing_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_hp_missing_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_full_morale_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_full_morale_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_full_morale_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_full_morale_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_morale_missing_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_morale_missing_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_morale_missing_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_morale_missing_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_guard_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_guard_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_guard_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_guard_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_dodge_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_dodge_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_dodge_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_dodge_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_stealth_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_stealth_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_stealth_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_stealth_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_prestige_level_min_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_prestige_level_min_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_prestige_level_min_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_prestige_level_min_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_piety_level_min_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_piety_level_min_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_piety_level_min_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_piety_level_min_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_dread_min_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_dread_min_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_dread_min_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_dread_min_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_stress_less_than_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_stress_less_than_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_stress_less_than_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_stress_less_than_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_relation_positive: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_relation_positive$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_relation_negative: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_relation_negative$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_outnumbered: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_outnumbered$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_ally_knocked_out: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_ally_knocked_out$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_alive_enemies_min: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_alive_enemies_min$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_alive_enemies_max: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_alive_enemies_max$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_alive_allies_min: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_alive_allies_min$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_alive_allies_max: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_alive_allies_max$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_weapon_artifact_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_weapon_artifact_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_weapon_artifact_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_weapon_artifact_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_armor_artifact_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_armor_artifact_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_armor_artifact_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_armor_artifact_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_trait_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_trait_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_trait_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_trait_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_modifier_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_modifier_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_modifier_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_modifier_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_perk_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_perk_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_has_perk_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_has_perk_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_target_known_secret: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_target_known_secret$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_fera_form: "#medium;outline Можно использовать только $pod_combat_cond_phrase_fera_form$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_wyrm_servant_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_wyrm_servant_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_wyrm_servant_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_wyrm_servant_target$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_is_fera_user: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_is_fera_user$#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_cond_is_fera_target: "#medium;outline Можно использовать только если $pod_combat_cond_phrase_is_fera_target$#! $EFFECT_LIST_BULLET$"
+ # Scope-free bonus effect text shared by clause displays.
+ pod_combat_desc_bonus_self_heal: "#medium;outline #P Восстановить #bold [story.MakeScope.Var('bonus_value').GetValue|V0]#! здоровья#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_heal_target: "#medium;outline #P Восстановить #bold [story.MakeScope.Var('bonus_value').GetValue|V0]#! здоровья цели#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_morale_damage: "#medium;outline #bold;N [story.MakeScope.Var('bonus_value').GetValue|V0]#! урона [Concept('pod_combat_morale', 'боевому духу')|E]#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_self_morale_heal: "#medium;outline #P Восстановить #bold [story.MakeScope.Var('bonus_value').GetValue|V0]#! [Concept('pod_combat_morale', 'боевого духа')|E]#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_damage: "#medium;outline #bold;N +[story.MakeScope.Var('bonus_value').GetValue|V0]#! $superficial$ #N урона#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_damage_agg: "#medium;outline #bold;N +[story.MakeScope.Var('bonus_value').GetValue|V0]#! $aggravated$ #N урона#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_damage_plain: "#medium;outline #bold;N +[story.MakeScope.Var('bonus_value').GetValue|V0]#! #N урона#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_change_type: "#medium;outline #N наносит#! [POD_aggravated_box] #N урона#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_stance_guard: "#medium;outline #P Получить#! @pod_combat_guard_icon![Concept('pod_combat_guard', 'защиту')|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_stance_dodge: "#medium;outline #P Получить#! @pod_combat_dodge_icon![Concept('pod_combat_dodge', 'уклонение')|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_bonus_stance_stealth: "#medium;outline #P Получить#! @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытность')|E]#! $EFFECT_LIST_BULLET$"
+ # Keep drain previews resource-neutral: the target determines the pool and is not yet selected.
+ ###### PER-CLAUSE BONUS DISPLAY (pod_combat_move_desc clause walk)
+ # Clause keys read pod_clause; gate keys read story. Render clauses separately:
+ # totals would reveal hide_if_unmet bonuses or change as conditions are reevaluated.
+ pod_combat_desc_clause_separator: "#medium;outline $EFFECT_LIST_BULLET$ $EFFECT_LIST_BULLET$ $EFFECT_LIST_BULLET$#! $EFFECT_LIST_BULLET$"
+ # -- clause-bound condition clauses (only the 22 that read the story) --
+ pod_combat_clause_phrase_round_min: "сейчас [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0]-й раунд или позднее"
+ pod_combat_clause_phrase_hp_missing_user: "у вас не хватает [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0]+ здоровья"
+ pod_combat_clause_phrase_hp_missing_target: "у врага не хватает [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0]+ здоровья"
+ pod_combat_clause_phrase_morale_missing_user: "у вас не хватает [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0]+ [Concept('pod_combat_morale', 'боевого духа')|E]"
+ pod_combat_clause_phrase_morale_missing_target: "у врага не хватает [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0]+ [Concept('pod_combat_morale', 'боевого духа')|E]"
+ pod_combat_clause_phrase_prestige_level_min_user: "ваш уровень славы — [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0]+"
+ pod_combat_clause_phrase_prestige_level_min_target: "уровень славы врага — [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0]+"
+ pod_combat_clause_phrase_piety_level_min_user: "ваш уровень набожности — [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0]+"
+ pod_combat_clause_phrase_piety_level_min_target: "уровень набожности врага — [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0]+"
+ pod_combat_clause_phrase_dread_min_user: "ваш показатель ужаса — [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0]+"
+ pod_combat_clause_phrase_dread_min_target: "вражеский показатель ужаса — [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0]+"
+ pod_combat_clause_phrase_stress_less_than_user: "у вас меньше [stress_i][story.MakeScope.Var('cond_threshold').GetValue|V0] [Concept('stress', 'стресса')|E]"
+ pod_combat_clause_phrase_stress_less_than_target: "у врага меньше [stress_i][story.MakeScope.Var('cond_threshold').GetValue|V0] [Concept('stress', 'стресса')|E]"
+ pod_combat_clause_phrase_alive_enemies_min: "[pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] или больше врагов всё ещё на ногах"
+ pod_combat_clause_phrase_alive_enemies_max: "осталось не более [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] врагов"
+ pod_combat_clause_phrase_alive_allies_min: "рядом с вами ещё сражается [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] или больше союзников"
+ pod_combat_clause_phrase_alive_allies_max: "не более [pod_clause.MakeScope.Var('cond_threshold').GetValue|V0] союзников все еще стоят рядом с вами"
+ pod_combat_clause_phrase_has_trait_user: "у вас есть свойство #bold [pod_clause.MakeScope.Var('cond_param_trait').Trait.GetName(GetNullCharacter)]#!"
+ pod_combat_clause_phrase_has_trait_target: "у врага есть свойство #bold [pod_clause.MakeScope.Var('cond_param_trait').Trait.GetName(GetNullCharacter)]#!"
+ pod_combat_clause_phrase_has_modifier_user: "вы находитесь под воздействием модификатора #bold [GetModifier(pod_clause.MakeScope.Var('cond_param').GetFlagKey).GetNameWithTooltip]#!"
+ pod_combat_clause_phrase_has_modifier_target: "цель находится под воздействием модификатора #bold [GetModifier(pod_clause.MakeScope.Var('cond_param').GetFlagKey).GetNameWithTooltip]#!"
+ pod_combat_clause_phrase_has_perk_user: "у вас есть достоинство #bold [GetPerk(pod_clause.MakeScope.Var('cond_param').GetFlagKey).GetName(GetNullCharacter)]#!"
+ pod_combat_clause_phrase_has_perk_target: "у врага есть достоинство #bold [GetPerk(pod_clause.MakeScope.Var('cond_param').GetFlagKey).GetName(GetNullCharacter)]#!"
+ pod_combat_clause_phrase_fera_form: "в форме #bold [pod_clause.Custom('PODCombatFeraFormName')]#!"
+ pod_combat_clause_phrase_wyrm_servant_user: "вы являетесь #bold слугой Вирма#!"
+ pod_combat_clause_phrase_wyrm_servant_target: "враг является #bold слугой Вирма#!"
+ # -- clause condition framing; the 20 scope-free phrases stay shared --
+ pod_combat_desc_clause_cond_first_round: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_first_round$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_round_min: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_round_min$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_undamaged_user: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_undamaged_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_undamaged_target: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_undamaged_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_hp_missing_user: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_hp_missing_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_hp_missing_target: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_hp_missing_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_full_morale_user: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_full_morale_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_full_morale_target: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_full_morale_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_morale_missing_user: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_morale_missing_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_morale_missing_target: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_morale_missing_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_guard_user: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_has_guard_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_guard_target: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_has_guard_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_dodge_user: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_has_dodge_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_dodge_target: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_has_dodge_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_stealth_user: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_has_stealth_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_stealth_target: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_has_stealth_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_prestige_level_min_user: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_prestige_level_min_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_prestige_level_min_target: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_prestige_level_min_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_piety_level_min_user: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_piety_level_min_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_piety_level_min_target: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_piety_level_min_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_dread_min_user: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_dread_min_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_dread_min_target: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_dread_min_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_stress_less_than_user: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_stress_less_than_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_stress_less_than_target: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_stress_less_than_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_relation_positive: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_relation_positive$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_relation_negative: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_relation_negative$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_outnumbered: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_outnumbered$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_ally_knocked_out: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_ally_knocked_out$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_alive_enemies_min: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_alive_enemies_min$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_alive_enemies_max: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_alive_enemies_max$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_alive_allies_min: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_alive_allies_min$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_alive_allies_max: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_alive_allies_max$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_weapon_artifact_user: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_has_weapon_artifact_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_weapon_artifact_target: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_has_weapon_artifact_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_armor_artifact_user: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_has_armor_artifact_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_armor_artifact_target: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_has_armor_artifact_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_trait_user: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_has_trait_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_trait_target: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_has_trait_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_modifier_user: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_has_modifier_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_modifier_target: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_has_modifier_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_perk_user: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_has_perk_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_has_perk_target: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_has_perk_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_target_known_secret: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_target_known_secret$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_fera_form: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_fera_form$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_wyrm_servant_user: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_wyrm_servant_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_wyrm_servant_target: "#medium;outline;italic Бонус, если $pod_combat_clause_phrase_wyrm_servant_target$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_is_fera_user: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_is_fera_user$:#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_cond_is_fera_target: "#medium;outline;italic Бонус, если $pod_combat_cond_phrase_is_fera_target$:#! $EFFECT_LIST_BULLET$"
+ # Reuse scope-free change_type and stance keys from pod_combat_desc_bonus_*.
+ pod_combat_desc_clause_self_heal: "#medium;outline #P Восстановить #bold [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! [POD_superficial_box]#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_heal_target: "#medium;outline #P Восстановить #bold [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! [POD_superficial_box] цели#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_morale_damage: "#medium;outline #bold;N [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! урона [Concept('pod_combat_morale', 'боевому духу')|E]#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_self_morale_heal: "#medium;outline #P Восстановить #bold [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! [Concept('pod_combat_morale', 'боевого духа')|E]#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_damage: "#medium;outline #bold;N + [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! к $superficial$ #N урону#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_damage_agg: "#medium;outline #bold;N +[pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! к $aggravated$ #N урону#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_damage_plain: "#medium;outline #bold;N +[pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! к #N урону#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_damage_typed: "#medium;outline #bold;N +[pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! [Localize( Concatenate( 'pod_combat_damage_type_', pod_clause.MakeScope.Var('bonus_param').GetFlagKey ) )] к #N урону#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_change_class: "#medium;outline #N наносит#! [Localize( Concatenate( 'pod_combat_damage_type_', pod_clause.MakeScope.Var('bonus_param').GetFlagKey ) )] #N урона#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_hit: "#medium;outline #bold;P +[pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! [Concept('pod_combat_hit_chance', 'вероятности попадания')|E]#! $EFFECT_LIST_BULLET$"
+ # bonus_value is the tier number here, not its magnitude.
+ pod_combat_desc_clause_hit_buff_round: "#medium;outline #P + к [Concept('pod_combat_hit_chance', 'вероятности попадания')|E]#! (уровень [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) до начала вашего следующего хода#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_hit_buff_round_other: "#medium;outline #P + к [Concept('pod_combat_hit_chance', 'вероятности попадания')|E]#! (уровень [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) для [story.MakeScope.Var('targeting').GetFlagName] до начала следующего хода получателя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_hit_debuff_round: "#medium;outline #N - к [Concept('pod_combat_hit_chance', 'вероятности попадания')|E]#! (уровень [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) для персонажа [story.MakeScope.Var('targeting').GetFlagName] до конца следующего хода цели#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_soak_buff_round: "#medium;outline #P + к [Concept('soak_damage', 'поглощению')|E]#! (уровень [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) до начала вашего следующего хода#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_soak_buff_round_other: "#medium;outline #P + к [Concept('soak_damage', 'поглощению')|E]#! (уровень [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) для персонажа [story.MakeScope.Var('targeting').GetFlagName] до начала следующего хода получателя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_soak_debuff_round: "#medium;outline #N - к [Concept('soak_damage', 'поглощению')|E]#! (уровень [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) для персонажа [story.MakeScope.Var('targeting').GetFlagName] до конца следующего хода цели#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_hit_buff_combat: "#medium;outline #P + к [Concept('pod_combat_hit_chance', 'вероятности попадания')|E]#! (уровень [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) до конца боя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_hit_buff_combat_other: "#medium;outline #P + к [Concept('pod_combat_hit_chance', 'вероятности попадания')|E]#! (уровень [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) для [story.MakeScope.Var('targeting').GetFlagName] до конца боя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_hit_debuff_combat: "#medium;outline #N - к [Concept('pod_combat_hit_chance', 'вероятности попадания')|E]#! (уровень [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) для [story.MakeScope.Var('targeting').GetFlagName] до конца боя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_soak_buff_combat: "#medium;outline #P + к [Concept('soak_damage', 'поглощению')|E]#! (уровень [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) до конца боя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_soak_buff_combat_other: "#medium;outline #P + к [Concept('soak_damage', 'поглощению')|E]#! (уровень [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) для персонажа [story.MakeScope.Var('targeting').GetFlagName] до конца боя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_soak_debuff_combat: "#medium;outline #N - к [Concept('soak_damage', 'поглощению урона')|E]#! (уровень [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]) для персонажа [story.MakeScope.Var('targeting').GetFlagName] до конца боя#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_ap_refund: "#medium;outline Вернуть #bold;P [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! ОД#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_ap_drain: "#medium;outline Отнять у врага #bold;N [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! ОД на #weak;italic следующий ход#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_energy_gain: "#medium;outline #P Восстановить #bold [Multiply_CFixedPoint( pod_clause.MakeScope.Var('bonus_value').GetValue, GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]#! [GetPlayer.Custom('PODEnergySplatIcon')] [GetPlayer.Custom('PODEnergySplatWord')]#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_energy_drain: "#medium;outline Отнять у цели #bold;N [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! энергии#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_dot: "#medium;outline #N Нанести #bold [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! урона за раунд в течение 2 раундов#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_morale_dot: "#medium;outline #N Нанести #bold [pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! урона по [Concept('pod_combat_morale', 'боевому духу')|E] за раунд в течение 2 раундов#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_clause_retaliate_boost: "#medium;outline #P Ваш контрудар наносит на #bold +[pod_clause.MakeScope.Var('bonus_value').GetValue|V0]#! больше урона#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_remove_guard: "#medium;outline Снимает @pod_combat_guard_icon![Concept('pod_combat_guard', 'защиту')|E] с персонажа [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ # Match arming precedence: morale > retaliate_agg > elemental class > superficial.
+ # Amount fallback: retaliate_damage > hp_damage > 1. Element keys avoid vanilla flag-loc collisions.
+ pod_combat_desc_retaliate_if_hit_explicit_sup: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! $superficial$ #N урона#! при попадании#!"
+ pod_combat_desc_retaliate_if_hit_explicit_agg: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! $aggravated$ #N урона#! при попадании#!"
+ pod_combat_desc_retaliate_if_hit_explicit_morale: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! урона по [Concept('pod_combat_morale', 'боевому духу')|E] #N при попадании#!#!"
+ pod_combat_desc_retaliate_if_hit_explicit_elemental: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! #N урона#! ([Localize( Concatenate( 'pod_combat_damage_type_', story.MakeScope.Var('damage_type').GetFlagKey ) )]) при попадании#!"
+
+ pod_combat_desc_retaliate_if_hit_reuse_sup: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! $superficial$ #N урона#! при попадании#!"
+ pod_combat_desc_retaliate_if_hit_reuse_agg: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! $aggravated$ #N урона#! при попадании#!"
+
+ pod_combat_desc_retaliate_if_missed_explicit_sup: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! $superficial$ #N урона#! при промахе#!"
+ pod_combat_desc_retaliate_if_missed_explicit_agg: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! $aggravated$ #N урона#! при промахе#!"
+ pod_combat_desc_retaliate_if_missed_explicit_morale: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! урона по [Concept('pod_combat_morale', 'боевому духу')|E] #N при промахе#!#!"
+ pod_combat_desc_retaliate_if_missed_explicit_elemental: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! #N урона#! ([Localize( Concatenate( 'pod_combat_damage_type_', story.MakeScope.Var('damage_type').GetFlagKey ) )]) при промахе#!"
+
+ pod_combat_desc_retaliate_if_missed_reuse_sup: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! $superficial$ #N урона#! при промахе#!"
+ pod_combat_desc_retaliate_if_missed_reuse_agg: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! $aggravated$ #N урона#! при промахе#!"
+
+ pod_combat_desc_retaliate_if_attacked_explicit_sup: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! $superficial$ #N урона#! при любой атаке, попадании или промахе#!"
+ pod_combat_desc_retaliate_if_attacked_explicit_agg: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! $aggravated$ #N урона#! при любой атаке, попадании или промахе#!"
+ pod_combat_desc_retaliate_if_attacked_explicit_morale: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! урона по [Concept('pod_combat_morale', 'боевому духу')|E] #N при любой атаке, попадании или промахе#!#!"
+ pod_combat_desc_retaliate_if_attacked_explicit_elemental: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('retaliate_damage').GetValue|V0]#! #N урона#! ([Localize( Concatenate( 'pod_combat_damage_type_', story.MakeScope.Var('damage_type').GetFlagKey ) )]) при любой атаке, попадании или промахе#!"
+
+ pod_combat_desc_retaliate_if_attacked_reuse_sup: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! $superficial$ #N урона#! при любой атаке, попадании или промахе#!"
+ pod_combat_desc_retaliate_if_attacked_reuse_agg: "#medium;outline #N Ответный удар наносит#! #bold [story.MakeScope.Var('hp_damage').GetValue|V0]#! $aggravated$ #N урона#! при любой атаке, попадании или промахе#!"
+ pod_combat_desc_retaliate_if_hit: "#medium;outline Ответный удар при попадании#!"
+ pod_combat_desc_retaliate_if_missed: "#medium;outline Ответный удар при промахе#!"
+ pod_combat_desc_retaliate_if_attacked: "#medium;outline Ответный удар при любой атаке, попадании или промахе#!"
+
+ pod_combat_desc_ap_gain: "#medium;outline Получить #bold [story.MakeScope.Var('ap_gain').GetValue|V0]#! ОД#! $EFFECT_LIST_BULLET$"
+ # AP drain and initiative debuffs affect only the workspace target, even on team_enemy moves.
+ pod_combat_desc_ap_drain: "#medium;outline Отнять у цели #bold [story.MakeScope.Var('ap_drain').GetValue|V0]#! ОД на следующий ход#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_initiative_debuff: "#medium;outline -[story.MakeScope.Var('initiative_debuff').GetValue|V0] к [Concept('pod_combat_initiative', 'инициативе')|E] цели в следующем раунде#! $EFFECT_LIST_BULLET$"
+
+ single_enemy: "один враг"
+ single_ally: "один союзник"
+ single_pc: "персонаж игрока"
+ self: "себя"
+ team_enemy: "все враги"
+ team_ally: "все союзники"
+ team_all: "все, включая вас"
+
+
+ ##############################
+ ###### MOVE BUTTON DATAMODEL LOC
+ ##############################
+ # Move-button keys use the datamodel move story as Scope.
+
+ # Buttons omit the AP unit beside the pip header; detached tooltips include it.
+ POD_combat_move_title: "#bold;V [Scope.Var('decision').DecisionType.GetTitleForPlayer]#! (#bold;V [Scope.Var('ap_cost').GetValue|0]#!)"
+ POD_combat_move_title_tooltip: "#bold;V [Scope.Var('decision').DecisionType.GetTitleForPlayer]#! (#bold;V [Scope.Var('ap_cost').GetValue|0]#! ОД)"
+ POD_combat_move_title_plain: "[Scope.Var('decision').DecisionType.GetTitleForPlayer] ([Scope.Var('ap_cost').GetValue|0])"
+ POD_combat_move_name: "#bold;V [Scope.Var('decision').DecisionType.GetTitleForPlayer]#!"
+ # Tooltip body = dynamic stats + flavor; AP is in the title.
+ # PODCombatMoveFlavor resolves the generated skill_key tooltip directly.
+ # GetCommandDescForPlayer supplies locked-row requirements, not flavor.
+ POD_combat_move_tooltip: "[PODCombatMoveEffect(Scope.Story.MakeScope)|h][AddLine( PODCombatMoveFlavor(Scope.Story.MakeScope) )]"
+
+ # Log tooltips read entry.var:move; datamodel Scope is the log entry.
+ POD_combat_log_move_title: "#bold;V [Scope.Var('move').Story.MakeScope.Var('decision').DecisionType.GetTitleForPlayer]#! (#bold;V [Scope.Var('move').Story.MakeScope.Var('ap_cost').GetValue|0]#! ОД)"
+ # Use the Static card for another actor's move so viewer-relative hiding does not omit its bonuses.
+ POD_combat_log_move_tooltip: "[PODCombatMoveEffectStatic(Scope.Var('move').Story.MakeScope)|h][AddLine( PODCombatMoveFlavor(Scope.Var('move').Story.MakeScope) )]"
+
+ ##############################
+ ###### MOVE LINKS
+ ##############################
+
+
+ # Usage: [PODCombatMove('POD_combat_move_majesty')]
+ POD_combat_move_inline_link: "#TOOLTIP:[SCOPE.GetFlagName('flag')]_desc #L;V [Localize(SCOPE.GetFlagName('flag'))]#!#!"
+ # Usage: [PODUnlocksCombatMove('POD_combat_move_majesty')]
+ POD_unlocks_combat_move: "Открывает [Concept('pod_combat_move', 'боевой приём')|E] $POD_combat_move_inline_link$"
+ POD_improves_combat_move: "Улучшает [Concept('pod_combat_move', 'боевой приём')|E] $POD_combat_move_inline_link$"
+
+ ##############################
+ ###### SKILL INLINE TOOLTIP (customizable_localization body)
+ ##############################
+
+ # Bullet bookends balance containers that prepend their own bullet.
+ # See the dynamic-tooltip section for the |h color contract.
+
+ POD_combat_move_inline_tooltip: "#size:17  #!\n#h $EFFECT_LIST_BULLET$#!#V;outline;size:20;FONT:PODGrotesque #bold [story.MakeScope.Var('decision').DecisionType.GetTitleForPlayer]#! (#bold [story.MakeScope.Var('ap_cost').GetValue|0]#! AP)#!\n[PODCombatMoveEffect(story.MakeScope)|h]\n#h $EFFECT_LIST_BULLET$#!#weak;outline [story.MakeScope.Var('decision').DecisionType.GetShortDescForPlayer]#!\n"
+
+ ##############################
+ ###### DAMAGE TYPE LABELS
+ ##############################
+ # GetFlagName resolves superficial/aggravated to wound icons. Elements use namespaced
+
+ superficial: "[POD_superficial_box]"
+ aggravated: "[POD_aggravated_box]"
+
+ pod_combat_damage_type_superficial: "$superficial$"
+ pod_combat_damage_type_aggravated: "$aggravated$"
+
+ # Element labels already include icons. Do not add pod_combat_elemmark_* or
+ # pod_combat_damage_source_* at the same site.
+ pod_combat_damage_type_fire: "[fire_damage_short_with_icon]"
+ pod_combat_damage_type_cold: "[cold_damage_short_with_icon]"
+ pod_combat_damage_type_lightning: "[lightning_damage_short_with_icon]"
+ pod_combat_damage_type_sun: "[sun_damage_short_with_icon]"
+ pod_combat_damage_type_silver: "[silver_damage_short_with_icon]"
+ pod_combat_damage_type_gold: "[gold_damage_short_with_icon]"
+ pod_combat_damage_type_holy: "[holy_damage_short_with_icon]"
+ pod_combat_damage_type_balefire: "[balefire_damage_short_with_icon]"
+ pod_combat_damage_type_poison: "[poison_damage_short_with_icon]"
+ pod_combat_damage_type_cold_iron: "[cold_iron_damage_short_with_icon]"
+
+ # Log wound-class labels use words because the segment already supplies the wound box.
+ pod_combat_log_typed_class_superficial: "поверхностный" #superficial - тест
+ pod_combat_log_typed_class_aggravated: "серьёзный" #aggravated - тест
+ pod_combat_log_typed_class_fire: "$pod_combat_damage_type_fire$"
+ pod_combat_log_typed_class_cold: "$pod_combat_damage_type_cold$"
+ pod_combat_log_typed_class_lightning: "$pod_combat_damage_type_lightning$"
+ pod_combat_log_typed_class_sun: "$pod_combat_damage_type_sun$"
+ pod_combat_log_typed_class_silver: "$pod_combat_damage_type_silver$"
+ pod_combat_log_typed_class_gold: "$pod_combat_damage_type_gold$"
+ pod_combat_log_typed_class_balefire: "$pod_combat_damage_type_balefire$"
+ pod_combat_log_typed_class_holy: "$pod_combat_damage_type_holy$"
+ pod_combat_log_typed_class_poison: "$pod_combat_damage_type_poison$"
+ pod_combat_log_typed_class_cold_iron: "$pod_combat_damage_type_cold_iron$"
+
+ # Icon-only element keys omit the log variants' leading space for centered cells.
+ pod_combat_elemmark_fire: "[fire_damage_icon]"
+ pod_combat_elemmark_cold: "[cold_damage_icon]"
+ pod_combat_elemmark_lightning: "[lightning_damage_icon]"
+ pod_combat_elemmark_sun: "[sun_damage_icon]"
+ pod_combat_elemmark_silver: "[silver_damage_icon]"
+ pod_combat_elemmark_gold: "[gold_damage_icon]"
+ pod_combat_elemmark_holy: "[holy_damage_icon]"
+ pod_combat_elemmark_balefire: "[balefire_damage_icon]"
+ pod_combat_elemmark_poison: "[poison_damage_icon]"
+ pod_combat_elemmark_cold_iron: "[cold_iron_damage_icon]"
+
+ pod_combat_dot_type_morale: "Урон по [Concept('pod_combat_morale', 'боевому духу')|E]"
+ pod_combat_dot_type_superficial: "[Concept('POD_superficial_damage','Поверхностный')|E] урон здоровью"
+ pod_combat_dot_type_aggravated: "[Concept('POD_aggravated_damage','Серьёзный')|E] урон здоровью"
+ pod_combat_dot_type_elemental: "Урон здоровью ([Localize( Concatenate( 'pod_combat_damage_type_', ROOT.Var('damage_type').GetFlagKey ) )])"
+ pod_combat_desc_dot: "#medium;outline #N Периодический урон:#! #bold [story.MakeScope.Var('dot_amount').GetValue|V0]#! [story.Custom('PODCombatMoveDoTType')] в конце каждого раунда в течение #bold [story.MakeScope.Var('dot_rounds').GetValue|V0]#! раундов#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_mind_control: "#medium;outline #N Контроль разума:#! похищает следующий ход цели #weak;italic (сильная ментальная защита предотвращает это; игроки невосприимчивы)#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_summon: "#medium;outline #P Призыв:#! призывает в бой нового бойца#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_marker_modifier: "#medium;outline #P Накладывает на вас [GetModifier(story.MakeScope.Var('marker_modifier').GetFlagKey).GetNameWithTooltip]:#! метку, которую могут использовать другие приемы#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_remove_marker: "#medium;outline #N Снимает [GetModifier(story.MakeScope.Var('remove_marker').GetFlagKey).GetNameWithTooltip]#!#! $EFFECT_LIST_BULLET$"
+ pod_combat_desc_remove_marker_target: "#medium;outline #N Снимает [GetModifier(story.MakeScope.Var('remove_marker').GetFlagKey).GetNameWithTooltip]#! с персонажа [story.MakeScope.Var('targeting').GetFlagName]#! $EFFECT_LIST_BULLET$"
+ pod_combat_marker_unnamed: "боевой эффект"
+
+ ##############################
+ ###### CHARACTER MODIFIERS
+ ##############################
+
+ pod_combat_duel_active: "В бою"
+ pod_combat_duel_active_desc: "Этот персонаж сейчас участвует в @pod_combat_encounter_icon![Concept('pod_combat_encounter', 'боевом столкновении')|E]."
+
+
+ pod_combat_anima_flare: "Вспышка анимы"
+ pod_combat_anima_flare_desc: "Анима этого персонажа пылает, благодаря чему его отточенные приёмы проявляются быстрее."
+ pod_combat_predator_focus: "Сосредоточенность хищника"
+ pod_combat_predator_focus_desc: "Этот персонаж подготовился по-хищнически использовать брешь для решающего удара."
+ pod_combat_kai_focus: "Сосредоточенность Кай"
+ pod_combat_kai_focus_desc: "Этот персонаж собрал свою внутреннюю силу для целенаправленного удара."
+
+ ##############################
+ ###### GAME CONCEPTS - general
+ ##############################
+
+ game_concept_pod_combat_encounter: "Боевое столкновение"
+ game_concept_pod_combat_encounter_with_icon: "@pod_combat_encounter_icon!Боевое столкновение"
+ game_concept_pod_combat_encounters: "Боевые столкновения"
+ game_concept_pod_combat_encounters_with_icon: "@pod_combat_encounter_icon!Боевые столкновения"
+ game_concept_pod_combat_encounter_desc: "Пошаговая тактическая мини-игра, где два или больше персонажей решают разногласия насилием.\n\nБойцы по очереди тратят [Concept('pod_combat_action_points', 'очки действия')|E] на [Concept('pod_combat_moves', 'боевые приёмы')|E], пока враг не [Concept('pod_combat_knocked_out', 'выбывает из боя')|E].\n\nРазнообразные [Concept('pod_combat_moves', 'боевые приёмы')|E] открываются благодаря свойствам [Concept('splat', 'вида')|E], достоинствам и другим источникам. Они могут наносить урон [Concept('POD_health_track', 'здоровью')|E] или [Concept('pod_combat_morale', 'боевому духу')|E], накладывать усиления и ослабления, давать стойки вроде @pod_combat_guard_icon![Concept('pod_combat_guard', 'защиты')|E], @pod_combat_dodge_icon![Concept('pod_combat_dodge', 'уклонения')|E] или @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытности')|E] и многое другое.\n\n[prowess_i][Concept('prowess', 'Доблесть')|E] очень важна в бою, поскольку определяет [Concept('pod_combat_hit_chance', 'вероятность попадания')|E] и [Concept('pod_combat_initiative', 'инициативу')|E].\n\n#I Подробнее о механике боя можно узнать через кнопку #bold Справка#! в боевом интерфейсе.#!"
+
+ game_concept_pod_combat_move: "Боевой приём"
+ game_concept_pod_combat_moves: "Боевые приёмы"
+ game_concept_pod_combat_move_desc: "#I Используйте [Concept('decision', 'решение')|E] #bold [SelectLocalization(IsInGame,'pod_combat_configure_moves_link_ingame','pod_combat_configure_moves')]#!, чтобы выбрать набор приёмов перед боем.#!\n\nЭто способности, применяемые во время @pod_combat_encounter_icon![Concept('pod_combat_encounters', 'боевых столкновений')|E]. Боевые приёмы делятся на четыре категории:\n\n#color_red;bold АТК (Атака):#! наносят урон [Concept('POD_health_track', 'здоровью')|E]. Некоторые имеют [Concept('POD_damage_types', 'типы урона')|E], например [fire_damage_short_with_icon] или [silver_damage_short_with_icon].\n\n#color_light_blue;bold ЗАЩ (Защита):#! исцеляют, улучшают [Concept('soak_damage', 'поглощение')|E] или [Concept('pod_combat_hit_chance', 'вероятность попадания')|E], либо дают стойки вроде @pod_combat_guard_icon![Concept('pod_combat_guard', 'защиты')|E], @pod_combat_dodge_icon![Concept('pod_combat_dodge', 'уклонения')|E] или @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытности')|E].\n\n#color_porple;bold КОН (Контроль):#! наносят урон [Concept('pod_combat_morale', 'боевому духу')|E], ослабляют [Concept('soak_damage', 'поглощение')|E] или [Concept('pod_combat_hit_chance', 'вероятность попадания')|E] врага, либо отнимают его [Concept('pod_combat_ap', 'ОД')|E].\n\n#color_pwr_orange;bold СИЛ (Сила):#! мощные завершающие приёмы, часто имеющие ограничения.\n\nМожно выбрать по #bold [EmptyScope.ScriptValue('pod_combat_max_per_category_base')|V0]#! приёма каждой категории, всего #bold [EmptyScope.ScriptValue('pod_combat_max_equipped_base')|V0]#!.\n\nБоевые приёмы расходуют [Concept('pod_combat_action_points', 'очки действий')|E] #V (ОД)#! и могут требовать дополнительных затрат, таких как @blood_icon![Concept('hunger', 'голод')|E] или [gold_i][Concept('gold', 'золото')|E]."
+
+ pod_combat_configure_moves_link_ingame: "[GetDecision('pod_combat_configure_moves').GetName]"
+
+ game_concept_pod_combat_action_points: "Очки действий"
+ game_concept_pod_combat_ap: "ОД"
+ game_concept_pod_combat_action_points_desc: "#bold Очки действий (ОД)#! — основной ресурс во время @pod_combat_encounter_icon![Concept('pod_combat_encounters', 'боевых столкновений')|E].\n\nПо умолчанию каждый раунд начинается с [EmptyScope.ScriptValue('pod_combat_base_ap_base')|V0] очков действий. Некоторые [Concept('pod_combat_moves', 'боевые приёмы')|E] могут прибавлять, отнимать или возвращать ОД.\n\nНеиспользованные ОД сгорают в конце вашего хода."
+
+ game_concept_pod_combat_knocked_out: "Выбытие из боя"
+ game_concept_pod_combat_knocked_out_desc: "Боец #bold выбывает из боя#! и покидает @pod_combat_encounter_icon![Concept('pod_combat_encounter', 'боевое столкновение')|E], если происходит одно из следующего:\n$BULLET_WITH_TAB$Его [Concept('POD_health_track', 'шкала здоровья')|E] полностью заполнена\n$BULLET_WITH_TAB$Его [Concept('pod_combat_morale', 'боевой дух')|E] падает до #N нуля#!\n$BULLET_WITH_TAB$Он умирает, становится #N недееспособным#!, впадает в [Glossary('торпор','game_concept_torpor_desc')] или оказывается заточён в Загробном мире либо Бездне\n\nВы побеждаете, когда все враги выбывают. Если вы выбываете сами, вы проигрываете, даже если союзники ещё сражаются."
+
+ ##############################
+ ###### GAME CONCEPTS - combat minigame stats
+ ##############################
+
+ game_concept_pod_combat_morale: "Боевой дух"
+ game_concept_pod_combat_morale_icon: "@stress_icon!"
+ game_concept_pod_combat_morale_desc: "#bold Психическая стойкость#! бойца во время @pod_combat_encounter_icon![Concept('pod_combat_encounters', 'боевых столкновений')|E]. Боевой дух обычно начинает с полного значения и снижается от прямых ментальных атак, запугивания и другого давления. Каждая ячейка ранения, нанесённая ударом после [Concept('soak_damage', 'поглощения')|E], также отнимает #N [EmptyScope.ScriptValue('pod_combat_morale_from_hp_base_ratio')|0]#! боевого духа.\n\nКогда боец [Concept('pod_combat_knocked_out', 'выбывает из боя')|E], каждый выживший союзник теряет #N [EmptyScope.ScriptValue('pod_combat_ally_down_morale_penalty')|0]#! боевого духа от потрясения. Эта потеря не опускает боевой дух ниже 1, поэтому само потрясение не может вывести кого-либо из боя.\n\nВне тренировок каждый живой боец получает в конце боя #N [EmptyScope.ScriptValue('pod_combat_morale_base_stress_multiplier')|0]#! [Concept('static_stress', 'психического напряжения')|E] за каждое недостающее очко боевого духа. Восстановление боевого духа до завершения схватки уменьшает это долговременное напряжение. Тренировочные бои не оставляют психического напряжения."
+
+ game_concept_pod_combat_hit_chance: "Вероятностҗ попадания"
+ game_concept_pod_combat_hit: "Попадание"
+ game_concept_pod_combat_accuracy: "Точность"
+ game_concept_pod_combat_hit_chance_desc: "Для [Concept('pod_combat_moves', 'боевых приёмов')|E], требующих #bold проверки попадания#!, вероятность попадания — процентный шанс успешно пройти эту проверку. Основа начинается с [EmptyScope.ScriptValue('pod_combat_hit_chance_base_base')|0]% и изменяется на половину разницы между вашей [Concept('prowess', 'доблестью')|E] и доблестью выбранной цели; затем учитываются действующие усиления и ослабления попадания и бонус @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытности')|E] +[EmptyScope.ScriptValue('pod_combat_stealth_hit_base_bonus')|0]%.\n\n@pod_combat_dodge_icon![Concept('pod_combat_dodge', 'Уклонение')|E] и @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытность')|E] проверяются до попадания, а @pod_combat_guard_icon![Concept('pod_combat_guard', 'защита')|E] может заблокировать атаку, которая иначе достигла бы цели. [Concept('soak_damage', 'Поглощение')|E] и способность воздействовать на бестелесных духов — также отдельные этапы. Ни одна из этих защит не меняет отображаемый процент.\n\nВероятность попадания при проверке ограничена диапазоном от [EmptyScope.ScriptValue('pod_combat_hit_chance_min_base')|0]% до [EmptyScope.ScriptValue('pod_combat_hit_chance_max_base')|0]%. Приёмы с пометкой #bold Без проверки попадания#! пропускают лишь эту проверку; любая другая защита, которую они не игнорируют, всё ещё может их остановить."
+
+ ##############################
+ ###### GAME CONCEPTS - combat stances
+ ##############################
+
+ game_concept_pod_combat_guard: "Защита"
+ game_concept_pod_combat_guard_with_icon: "@pod_combat_guard_icon!Защита"
+ game_concept_pod_combat_guarding: "Защищается"
+ game_concept_pod_combat_guarding_with_icon: "@pod_combat_guard_icon!Защищается"
+ game_concept_pod_combat_guarded: "Под защитой"
+ game_concept_pod_combat_guarded_with_icon: "@pod_combat_guard_icon!Под защитой"
+ game_concept_pod_combat_guard_desc: "#bold Защитная стойка#!. Если атака, проверяющая защиту, иначе достигла бы цели, она превращается в заблокированный удар и не наносит урон [Concept('POD_health_track', 'здоровью')|E]. Защита расходуется, когда блокирует эту атаку.\n\n#weak Приём, игнорирующий защиту, может попасть в цель, не расходуя её.#!"
+
+ game_concept_pod_combat_dodge: "Уклонение"
+ game_concept_pod_combat_dodge_with_icon: "@pod_combat_dodge_icon!Уклонение"
+ game_concept_pod_combat_dodging: "Уклоняется"
+ game_concept_pod_combat_dodging_with_icon: "@pod_combat_dodge_icon!Уклоняется"
+ game_concept_pod_combat_dodged: "Уклонился"
+ game_concept_pod_combat_dodged_with_icon: "@pod_combat_dodge_icon!Уклонился"
+ game_concept_pod_combat_dodge_desc: "#bold Стойка уклонения#!. Когда атака проверяет уклонение, она автоматически промахивается независимо от [Concept('pod_combat_hit_chance', 'вероятности попадания')|E] атакующего, а уклонение расходуется.\n\n#weak Приём, от которого нельзя уклониться, обходит уклонение, не расходуя его; приём, снимающий уклонение, удаляет стойку до применения прочих эффектов.#!"
+
+ game_concept_pod_combat_stealth: "Скрытность"
+ game_concept_pod_combat_stealth_with_icon: "@pod_combat_stealth_icon!Скрытность"
+ game_concept_pod_combat_stealthed: "Скрывается"
+ game_concept_pod_combat_stealthed_with_icon: "@pod_combat_stealth_icon!Скрывается"
+ game_concept_pod_combat_stealth_desc: "#bold Скрытая стойка#!, дающая +[EmptyScope.ScriptValue('pod_combat_stealth_hit_base_bonus')|0]% к [Concept('pod_combat_hit_chance', 'вероятности попадания')|E], пока действует. Скрытность исчезает при первом из следующих событий:\n$TAB$- Боец использует приём, наносящий урон здоровью или требующий враждебного контакта\n$TAB$- Входящая атака проверяет скрытность и автоматически промахивается\n\nАтаки, наносящие только урон боевому духу, не расходуют скрытность атакующего.\n\n#weak Приём, от которого нельзя уклониться, обходит скрытность, не расходуя её. Приём, снимающий скрытность, удаляет стойку до применения прочих эффектов.#!"
+
+
+ game_concept_pod_combat_initiative: "Инициатива"
+ game_concept_pod_combat_init: "Иниц."
+ game_concept_pod_combat_initiative_desc: "Проверка, определяющая [Concept('pod_combat_turn_order', 'очерёдность ходов')|E]. Чем выше инициатива, тем раньше действует боец.\n\nКаждый боец проходит проверку один раз при вступлении в бой и сохраняет результат до его конца: очерёдность одна на всю схватку, а не новая каждый раунд. Проверка учитывает [Concept('prowess', 'доблесть')|E] и вид бойца; достоинства и свойства изменяют её. Быстрые бойцы (со сверхъестественными дисциплинами скорости и свойствами быстроты) могут атаковать раньше, чем медленные враги успеют отреагировать.\n\nОслабления инициативы от приёмов меняют результат на #bold один раунд#!, а затем исчезают. Применив их вовремя, вы получаете ровно один ход раньше более быстрого врага."
+
+ game_concept_pod_combat_turn_order: "Очерёдность ходов"
+ game_concept_pod_combat_turn: "Ход"
+ game_concept_pod_combat_turn_order_desc: "Установленная очерёдность действий бойцов, с номерами от 1 (первый) до N (последний). Определяется [Concept('pod_combat_initiative', 'инициативой')|E] каждого бойца.\n\nПорядок задаётся в начале боя и сохраняется до конца, позволяя планировать на несколько ходов вперёд. Он меняется лишь при изменении инициативы: её ослабление сдвигает цель на один раунд, а присоединившийся к схватке боец входит в очерёдность со следующего раунда.\n\nЕсли бойцов трое или больше, порядок показан полосой портретов вверху окна боя. Действующий боец выделен; после хода или поражения портреты тускнеют. Номер бойца указан в строке [Concept('pod_combat_initiative', 'инициативы')|E] при наведении на его карточку."
+
+
+ ##############################
+ ###### GAME CONCEPTS - damage types
+ ##############################
+ # Describe player-visible outcomes; avoid internal variable, trigger and death-reason names.
+
+ # ── Elemental damage flavors ──
+
+ game_concept_fire_damage: "Урон от огня"
+ game_concept_fire_damage_icon: "@pod_combat_fire_icon!"
+ game_concept_fire_damage_short: "#L;color:{1.00,0.55,0.20} Огонь#!"
+ game_concept_fire_damage_short_with_icon: "$game_concept_fire_damage_icon$$game_concept_fire_damage_short$"
+ game_concept_fire_damage_desc: "$BULLET_WITH_TAB$ @health_track_aggravated_damage_icon! [Concept('POD_aggravated_damage', 'Серьёзный урон')|E] по #bold любому [Concept('splat', 'виду')|E] с телом.#! Ожоги не заживают за одну ночь.\n$BULLET_WITH_TAB$ @health_track_damage_icon! [Concept('POD_superficial_damage', 'Поверхностный урон')|E] по #bold #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] @wraith_icon!#L призракам#!#!#! и #bold #TOOLTIP:GAME_TRAIT,spirit,[GetNullCharacter] @spirit_icon!#L духам#!#!#!, поскольку они бестелесны.\n$BULLET_WITH_TAB$#bold [GetTrait('bushi').GetName(GetNullCharacter)]#! получают #bold двойной урон#! из-за [Glossary('клановой слабости', 'glossary_clan_curse_tt')].\n$BULLET_WITH_TAB$Некоторые редкие достоинства дают #bold невосприимчивость#! к огню.\n\n#weak Древнейшее орудие человечества отгоняет тьму — в прямом и переносном смысле. Даже крестьянин может защититься от чудовищ, размахивая факелом.#!"
+
+ game_concept_cold_damage: "Урон от холода"
+ game_concept_cold_damage_icon: "@pod_combat_cold_icon!"
+ game_concept_cold_damage_short: "#L;color:{0.55,0.85,1.00} Холод#!"
+ game_concept_cold_damage_short_with_icon: "$game_concept_cold_damage_icon$$game_concept_cold_damage_short$"
+ game_concept_cold_damage_desc: "$BULLET_WITH_TAB$ @health_track_aggravated_damage_icon! [Concept('POD_aggravated_damage', 'Серьёзный урон')|E] по #bold #TOOLTIP:GAME_TRAIT,mortal,[GetNullCharacter] @mortal_icon!#L смертным#!#!#!: их плоть не выдерживает лютого холода.\n$BULLET_WITH_TAB$ @health_track_damage_icon! [Concept('POD_superficial_damage', 'Поверхностный урон')|E] по другим [Concept('splats', 'видам')|E].\n$BULLET_WITH_TAB$Нет дополнительных множителей урона или невосприимчивости.\n\n#weak Эта стихия особенно тяжело поражает смертных, но даже нежить не защищена от острых кристаллов льда, разрывающих плоть.#!"
+
+ game_concept_lightning_damage: "Урон от молнии"
+ game_concept_lightning_damage_icon: "@pod_combat_lightning_icon!"
+ game_concept_lightning_damage_short: "#L;color:{1.00,0.95,0.35} Молния#!"
+ game_concept_lightning_damage_short_with_icon: "$game_concept_lightning_damage_icon$$game_concept_lightning_damage_short$"
+ game_concept_lightning_damage_desc: "$BULLET_WITH_TAB$ @health_track_aggravated_damage_icon! [Concept('POD_aggravated_damage', 'Серьёзный урон')|E] по #bold всем [Concept('splat', 'видам')|E]#!. Живая плоть, мёртвая плоть и духовная материя одинаково проводят ток.\n$BULLET_WITH_TAB$Нет дополнительных множителей урона или невосприимчивости.\n\n#weak Любимое оружие Сусаноо, бога Бурь. Сверхъестественная молния или обычная — ничто не может противостоять её разрушительной силе.#!"
+
+ game_concept_sun_damage: "Урон от солнечного света"
+ game_concept_sun_damage_icon: "@pod_combat_sun_icon!"
+ game_concept_sun_damage_short: "#L;color:{1.00,0.92,0.50} Солнечный свет#!"
+ game_concept_sun_damage_short_with_icon: "$game_concept_sun_damage_icon$$game_concept_sun_damage_short$"
+ game_concept_sun_damage_desc: "$BULLET_WITH_TAB$ @health_track_aggravated_damage_icon! [Concept('POD_aggravated_damage', 'Серьёзный урон')|E] по #bold #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] @vampire_icon!#L вампирам#!#!#!, #bold #TOOLTIP:GAME_TRAIT,abomination,[GetNullCharacter] @abomination_icon!#L мерзостям#!#!#! и #bold #TOOLTIP:GAME_TRAIT,kueijin,[GetNullCharacter] @kueijin_icon!#L куэй-дзин#!#!#! — проклятых солнцем. Некоторые [Glossary('дхармы','podgloss.dharma')] [GetTrait('kueijin').GetName(GetNullCharacter)|l] переносят его как поверхностный урон.\n$BULLET_WITH_TAB$Другие [Concept('splats', 'виды')|E] #bold невосприимчивы#!: солнечный свет не ранит живых и тех, кто не проклят.\n$BULLET_WITH_TAB$#bold #TOOLTIP:GAME_TRAIT,setite,[GetNullCharacter] #L Сетиты#!#! и [GetTrait('bushi').GetName(GetNullCharacter)|l]#! получают #bold двойной урон#! из-за [Glossary('клановой слабости', 'glossary_clan_curse_tt')].\n\n#weak Солнце разносит Божье тепло по всему творению. Как же уместно, что проклятые им больше не могут его принять.#!"
+
+ game_concept_silver_damage: "Урон от серебра"
+ game_concept_silver_damage_icon: "@pod_combat_silver_icon!"
+ game_concept_silver_damage_short: "#L;color:{0.85,0.85,0.95} Серебро#!"
+ game_concept_silver_damage_short_with_icon: "$game_concept_silver_damage_icon$$game_concept_silver_damage_short$"
+ game_concept_silver_damage_desc: "$BULLET_WITH_TAB$ @health_track_aggravated_damage_icon! [Concept('POD_aggravated_damage', 'Серьёзный урон')|E] по #bold #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] @werewolf_icon!#L вервольфам#!#!#! и большинству других #bold [Glossary('фера', 'glossary_fera_tt')]#!: их регенерация отказывает при ранениях #italic «металлом [Glossary('Луны', 'glossary_luna_tt')]»#!.\n$BULLET_WITH_TAB$ @health_track_damage_icon! [Concept('POD_superficial_damage', 'Поверхностный урон')|E] по другим [Concept('splats', 'видам')|E].\n$BULLET_WITH_TAB$Нет дополнительных множителей урона или невосприимчивости.\n\n#weak Серебряное оружие может уравнять шансы против оборотня, но не обольщайтесь: даже без регенерации они остаются величайшими машинами убийства Геи.#!"
+
+ game_concept_gold_damage: "Урон от золота"
+ game_concept_gold_damage_icon: "@pod_combat_gold_icon!"
+ game_concept_gold_damage_short: "#L;color:{1.00,0.75,0.20} Золото#!"
+ game_concept_gold_damage_short_with_icon: "$game_concept_gold_damage_icon$$game_concept_gold_damage_short$"
+ game_concept_gold_damage_desc: "$BULLET_WITH_TAB$ @health_track_aggravated_damage_icon! [Concept('POD_aggravated_damage', 'Серьёзный урон')|E] по #bold #TOOLTIP:GAME_TRAIT,mokole,[GetNullCharacter] @mokole_icon!#L моколе#!#!#! и #bold #TOOLTIP:GAME_TRAIT,corax,[GetNullCharacter] @corax_icon!#L кораксам#!#!#!: только они уязвимы к солнечному металлу.\n$BULLET_WITH_TAB$ @health_track_damage_icon! [Concept('POD_superficial_damage', 'Поверхностный урон')|E] по другим [Concept('splats', 'видам')|E].\n$BULLET_WITH_TAB$Нет дополнительных множителей урона или невосприимчивости.\n\n#weak Моколе тщательно скрывают свою слабость перед металлом Гелиоса. Им остаётся лишь надеяться, что болтливые кораксы поступают так же.#!"
+
+ game_concept_holy_damage: "Святой урон"
+ game_concept_holy_damage_icon: "@pod_combat_holy_icon!"
+ game_concept_holy_damage_short: "#L;color:{1.00,0.95,0.65} Святость#!"
+ game_concept_holy_damage_short_with_icon: "$game_concept_holy_damage_icon$$game_concept_holy_damage_short$"
+ game_concept_holy_damage_desc: "$BULLET_WITH_TAB$ @health_track_aggravated_damage_icon! [Concept('POD_aggravated_damage', 'Серьёзный урон')|E] по #bold #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] @vampire_icon!#L вампирам#!#!#!, #bold #TOOLTIP:GAME_TRAIT,abomination,[GetNullCharacter] @abomination_icon!#L мерзостям#!#!#!, #bold #TOOLTIP:GAME_TRAIT,demon,[GetNullCharacter] @demon_icon!#L демонам#!#!#!, #bold #TOOLTIP:GAME_TRAIT,kueijin,[GetNullCharacter] @kueijin_icon!#L куэй-дзин#!#!#!, #bold #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] @wraith_icon!#L призракам#!#!#! и #bold #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] @fae_icon!#L феям#!#!#!: они отшатываются от проявлений [Glossary('истинной веры','game_concept_true_faith_desc')].\n$BULLET_WITH_TAB$ @health_track_damage_icon! [Concept('POD_superficial_damage', 'Поверхностный урон')|E] по #bold #TOOLTIP:GAME_TRAIT,changeling,[GetNullCharacter] @changeling_icon!#L подменышам#!#!#!.\n$BULLET_WITH_TAB$Другие [Concept('splats', 'виды')|E] #bold невосприимчивы#!.\n\n#weak Вот, имя Господа идёт издали, горит гнев Его, и пламя Его сильно; уста Его исполнены негодования, и язык Его как огонь поядающий.#!" # Isaiah 30:27 KJV
+
+ game_concept_poison_damage: "Урон от яда"
+ game_concept_poison_damage_icon: "@pod_combat_poison_icon!"
+ game_concept_poison_damage_short: "#L;color:{0.55,0.80,0.30} Яд#!"
+ game_concept_poison_damage_short_with_icon: "$game_concept_poison_damage_icon$$game_concept_poison_damage_short$"
+ game_concept_poison_damage_desc: "$BULLET_WITH_TAB$ @health_track_aggravated_damage_icon! [Concept('POD_aggravated_damage', 'Серьёзный урон')|E] по #bold #TOOLTIP:GAME_TRAIT,mortal,[GetNullCharacter] @mortal_icon!#L смертным#!#!#!: яд разлагает их живую плоть.\n$BULLET_WITH_TAB$#bold #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] @vampire_icon!#L Вампиры#!#!#! и #bold #TOOLTIP:GAME_TRAIT,kueijin,[GetNullCharacter] @kueijin_icon!#L куэй-дзин#!#!#! #bold невосприимчивы#!: у нежити нет живого тела, которое можно отравить.\n$BULLET_WITH_TAB$ @health_track_damage_icon! [Concept('POD_superficial_damage', 'Поверхностный урон')|E] по другим [Concept('splats', 'видам')|E].\n\n#weak Излюбленное оружие госпожи Юл, маэльджина Токсинов. Его часто клеймят орудием предателей и трусов. Но что толку в чести, когда на кону ваша жизнь?#!"
+
+ game_concept_cold_iron_damage: "Урон от холодного железа"
+ game_concept_cold_iron_damage_icon: "@pod_combat_cold_iron_icon!"
+ game_concept_cold_iron_damage_short: "#L;color:{0.65,0.70,0.78} Холодное железо#!"
+ game_concept_cold_iron_damage_short_with_icon: "$game_concept_cold_iron_damage_icon$$game_concept_cold_iron_damage_short$"
+ game_concept_cold_iron_damage_desc: "$BULLET_WITH_TAB$ @health_track_aggravated_damage_icon! [Concept('POD_aggravated_damage', 'Серьёзный урон')|E] по #bold #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] @fae_icon!#L феям#!#!#! и #bold #TOOLTIP:GAME_TRAIT,changeling,[GetNullCharacter] @changeling_icon!#L подменышам#!#!#!: [Concept('banality', 'банальность')|E] этого металла оставляет на них страшные дымящиеся раны.\n$BULLET_WITH_TAB$ @health_track_damage_icon! [Concept('POD_superficial_damage', 'Поверхностный урон')|E] по другим [Concept('splats', 'видам')|E].\n$BULLET_WITH_TAB$Нет дополнительных множителей урона или невосприимчивости.\n\n#weak Оружие, изготовленное старинным способом из кованого железа. Оно тяжелее и хрупче стали, но именно эта примитивность способна погубить душу феи.#!"
+
+
+
+ ##############################
+ ###### COMBAT LOG - COLUMN HEADERS + EMPTY STATE
+ ##############################
+ pod_combat_log_empty: "#italic Ждёт вашей команды.#!"
+
+
+ ##############################
+ ###### COMBAT LOG - RESULT TEXT
+ ##############################
+ # Result amounts are captured on the log entry. See COMBAT_REFERENCE.info section 4.
+ pod_combat_log_result_text_hp_damage: "#bold;N -[entry.MakeScope.Var('damage').GetValue|0]#! [POD_superficial_box]"
+ pod_combat_log_result_text_hp_damage_aggravated: "#bold;N -[entry.MakeScope.Var('damage').GetValue|0]#! [POD_aggravated_box]"
+ pod_combat_log_result_text_hp_damage_partial_soak: "#bold;N -[entry.MakeScope.Var('damage').GetValue|0]#! [POD_superficial_box] #weak;italic [entry.MakeScope.Var('soaked_count').GetValue|0] поглощено#!"
+ pod_combat_log_result_text_hp_damage_aggravated_partial_soak: "#bold;N -[entry.MakeScope.Var('damage').GetValue|0]#! [POD_aggravated_box] #weak;italic [entry.MakeScope.Var('soaked_count').GetValue|0] поглощено#!"
+ pod_combat_log_result_text_guard_blocked: "#bold Заблокировано#!"
+ pod_combat_log_result_text_soaked: "#bold Поглощено#!"
+ pod_combat_log_result_text_immune: "#bold Невосприимчивость#!"
+ pod_combat_log_result_text_missed: "#bold Промах#!"
+ pod_combat_log_result_text_dodged: "#bold Уклонение#!"
+ pod_combat_log_result_text_stealthed: "#bold Скрытность#!"
+ # Typed bonus packets keep independent wound classes and soak results.
+ # Slot order matches execution phase 6.
+ pod_combat_log_typed_bonus_damage_1: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_1').GetValue|0]#! [POD_superficial_box] #weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_1').GetFlagKey ) )] дополнительно#!"
+ pod_combat_log_typed_bonus_damage_1_aggravated: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_1').GetValue|0]#! [POD_aggravated_box] #weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_1').GetFlagKey ) )] дополнительно#!"
+ pod_combat_log_typed_bonus_damage_1_partial_soak: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_1').GetValue|0]#! [POD_superficial_box] #weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_1').GetFlagKey ) )] дополнительно, [entry.MakeScope.Var('typed_bonus_soaked_count_1').GetValue|0] поглощено#!"
+ pod_combat_log_typed_bonus_damage_1_aggravated_partial_soak: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_1').GetValue|0]#! [POD_aggravated_box] #weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_1').GetFlagKey ) )] дополнительно, [entry.MakeScope.Var('typed_bonus_soaked_count_1').GetValue|0] поглощено#!"
+ pod_combat_log_typed_bonus_damage_1_soaked: "#weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_1').GetFlagKey ) )] дополнительно#! #bold поглощено#!"
+ pod_combat_log_typed_bonus_damage_1_immune: "#weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_1').GetFlagKey ) )] дополнительной#! #bold невосприимчивости#!"
+ pod_combat_log_typed_bonus_damage_2: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_2').GetValue|0]#! [POD_superficial_box] #weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_2').GetFlagKey ) )] дополнительно#!"
+ pod_combat_log_typed_bonus_damage_2_aggravated: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_2').GetValue|0]#! [POD_aggravated_box] #weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_2').GetFlagKey ) )] дополнительно#!"
+ pod_combat_log_typed_bonus_damage_2_partial_soak: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_2').GetValue|0]#! [POD_superficial_box] #weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_2').GetFlagKey ) )] дополнительно, [entry.MakeScope.Var('typed_bonus_soaked_count_2').GetValue|0] поглощено#!"
+ pod_combat_log_typed_bonus_damage_2_aggravated_partial_soak: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_2').GetValue|0]#! [POD_aggravated_box] #weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_2').GetFlagKey ) )] дополнительно, [entry.MakeScope.Var('typed_bonus_soaked_count_2').GetValue|0] поглощено#!"
+ pod_combat_log_typed_bonus_damage_2_soaked: "#weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_2').GetFlagKey ) )] дополнительно#! #bold поглощено#!"
+ pod_combat_log_typed_bonus_damage_2_immune: "#weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_2').GetFlagKey ) )] дополнительной#! #bold невосприимчивости#!"
+ pod_combat_log_typed_bonus_damage_3: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_3').GetValue|0]#! [POD_superficial_box] #weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_3').GetFlagKey ) )] дополнительно#!"
+ pod_combat_log_typed_bonus_damage_3_aggravated: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_3').GetValue|0]#! [POD_aggravated_box] #weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_3').GetFlagKey ) )] дополнительно#!"
+ pod_combat_log_typed_bonus_damage_3_partial_soak: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_3').GetValue|0]#! [POD_superficial_box] #weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_3').GetFlagKey ) )] дополнительно, [entry.MakeScope.Var('typed_bonus_soaked_count_3').GetValue|0] поглощено#!"
+ pod_combat_log_typed_bonus_damage_3_aggravated_partial_soak: "#bold;N -[entry.MakeScope.Var('typed_bonus_damage_3').GetValue|0]#! [POD_aggravated_box] #weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_3').GetFlagKey ) )] дополнительно, [entry.MakeScope.Var('typed_bonus_soaked_count_3').GetValue|0] поглощено#!"
+ pod_combat_log_typed_bonus_damage_3_soaked: "#weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_3').GetFlagKey ) )] дополнительно#! #bold поглощено#!"
+ pod_combat_log_typed_bonus_damage_3_immune: "#weak;italic [Localize( Concatenate( 'pod_combat_log_typed_class_', entry.MakeScope.Var('typed_bonus_damage_class_3').GetFlagKey ) )] дополнительной#! #bold невосприимчивости#!"
+ # retal_agg records the victim's actual wound class, not the armed counter kind.
+ pod_combat_log_retal_rider: " #bold;N -[entry.MakeScope.Var('retal_damage').GetValue|0]#! [POD_superficial_box] #weak;italic ответный удар#!"
+ pod_combat_log_retal_rider_aggravated: " #bold;N -[entry.MakeScope.Var('retal_damage').GetValue|0]#! [POD_aggravated_box] #weak;italic ответный удар#!"
+ pod_combat_log_retal_rider_soaked: " #weak;italic ответный удар#! #bold поглощён#!"
+ pod_combat_log_retal_rider_morale: " #bold;N -[entry.MakeScope.Var('retal_damage').GetValue|0]#! [pod_combat_morale_icon|E] #weak;italic ответный удар#!"
+ # Utility has no primary text; its result is rendered entirely by riders.
+ pod_combat_log_result_text_utility: ""
+ pod_combat_log_result_text_morale_damage: "#bold;N -[entry.MakeScope.Var('morale_damage_amount').GetValue|0]#! [Concept('pod_combat_morale', 'боевого духа')|E]"
+ pod_combat_log_result_text_hp_healed: "#bold;P +[entry.MakeScope.Var('heal_amount').GetValue|0]#! [POD_superficial_box]"
+ pod_combat_log_result_text_hp_healed_aggravated: "#bold;P +[entry.MakeScope.Var('heal_amount').GetValue|0]#! [POD_aggravated_box]"
+ pod_combat_log_result_text_morale_healed: "#bold;P +[entry.MakeScope.Var('morale_heal_amount').GetValue|0]#! [Concept('pod_combat_morale', 'боевого духа')|E]"
+ pod_combat_log_result_text_unknown: "#weak —#!"
+
+ # Avoid literal square brackets in system messages; localization parses them as bindings.
+ pod_combat_log_system_combat_started: "#italic — Начало боя —#!"
+ pod_combat_log_system_combat_ended_victory: "#bold;P — Бой окончен · Победа —#!"
+ pod_combat_log_system_combat_ended_defeat: "#bold;N — Бой окончен · Поражение —#!"
+ # Use the entry's captured round so later turns do not change this row.
+ pod_combat_log_system_round_begins: "#italic — Начало раунда #bold [entry.MakeScope.Var('round').GetValue|0]#! —#!"
+ pod_combat_log_system_unknown: "#weak —#!"
+
+ # ──────────────────────────────────────────────────────────────────
+ # Result riders. The GUI supplies separators; empty dispatch results use pod_combat_log_blank.
+ pod_combat_log_blank: ""
+
+ # Numeric riders read applied amounts from the entry, including capped heals.
+ pod_combat_log_heal_rider: " #bold;P +[entry.MakeScope.Var('heal_amount').GetValue|0]#! [POD_superficial_box]"
+ pod_combat_log_heal_rider_aggravated: " #bold;P +[entry.MakeScope.Var('heal_amount').GetValue|0]#! [POD_aggravated_box]"
+ pod_combat_log_morale_damage_rider: " #bold;N -[entry.MakeScope.Var('morale_damage_amount').GetValue|0]#! [Concept('pod_combat_morale', 'боевого духа')|E]"
+ pod_combat_log_morale_heal_rider: " #bold;P +[entry.MakeScope.Var('morale_heal_amount').GetValue|0]#! [Concept('pod_combat_morale', 'боевого духа')|E]"
+
+ # Keep polarity signs outside concept links so their colors remain independent.
+ pod_combat_log_buff_set_guard: "→ @pod_combat_guard_icon![Concept('pod_combat_guard', 'Защита')|E]"
+ pod_combat_log_buff_dodge: "→ @pod_combat_dodge_icon![Concept('pod_combat_dodge', 'Уклонение')|E]"
+ pod_combat_log_buff_stealth: "→ @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'Скрытность')|E]"
+ pod_combat_log_buff_remove_guard: "@pod_combat_guard_icon![Concept('pod_combat_guard', 'Защита')|E] #weak;italic преодолена#!"
+ pod_combat_log_buff_soak_buff: " #bold;P +[move.MakeScope.ScriptValue('pod_combat_move_soak_buff_mag_value')|0]%#! [Concept('soak_damage', 'поглощения урона')|E]"
+ pod_combat_log_buff_soak_debuff: " #bold;N -[move.MakeScope.ScriptValue('pod_combat_move_soak_debuff_mag_value')|0]%#! [Concept('soak_damage', 'поглощения урона')|E]"
+ pod_combat_log_buff_hit_buff: " #bold;P +[move.MakeScope.ScriptValue('pod_combat_move_hit_buff_mag_value')|0]%#! [Concept('pod_combat_hit', 'попадания')|E]"
+ pod_combat_log_buff_hit_debuff: " #bold;N -[move.MakeScope.ScriptValue('pod_combat_move_hit_debuff_mag_value')|0]%#! [Concept('pod_combat_hit', 'попадания')|E]"
+ # AP gain reads the move; AP drain reads the applied entry amount, including bonuses.
+ # Initiative debuff is a fixed flag, so it has no magnitude.
+ pod_combat_log_buff_ap_gain: " #bold;P +[move.MakeScope.Var('ap_gain').GetValue|0] ОД#!"
+ pod_combat_log_seg_ap_drain: " #bold;N -[entry.MakeScope.Var('ap_drain').GetValue|0] ОД#! #weak;italic на следующий ход#!"
+ pod_combat_log_buff_retaliate: " → #weak;italic Ответный удар#!"
+ pod_combat_log_seg_retal_armed_morale: " → #weak;italic Ответный удар#!$pod_combat_damage_source_morale$"
+ pod_combat_log_seg_retal_armed_agg: " → #weak;italic Ответный удар#! $aggravated$"
+ pod_combat_log_seg_retal_armed_elemental: " → #weak;italic Ответный удар#! ([Localize( Concatenate( 'pod_combat_elemmark_', move.MakeScope.Var('damage_type').GetFlagKey ) )])"
+ pod_combat_log_seg_stun: " #bold;N 0 ОД#! #weak;italic у цели на следующий ход#!"
+ pod_combat_log_seg_recoil: " #bold;N -[entry.MakeScope.Var('self_damage').GetValue|0]#! $superficial$ #weak;italic отдачи#!"
+ pod_combat_log_buff_initiative_debuff: " #bold;N -#![Concept('pod_combat_init', 'инициатива')|E] #weak;italic в следующем раунде#!"
+ # Energy amounts are already scaled. Use the entry's actor for gains and target for drains,
+ # not the viewer's resource.
+ pod_combat_log_seg_energy_gain: " #bold;P +[entry.MakeScope.Var('energy_gain').GetValue|0]#! [entry.MakeScope.Var('actor').GetCharacter.Custom('PODEnergySplatIcon')]#V [entry.MakeScope.Var('actor').GetCharacter.Custom('PODEnergySplatWord')]#!"
+ pod_combat_log_seg_energy_drain: " #bold;N -[entry.MakeScope.Var('energy_drain').GetValue|0]#! [entry.MakeScope.Var('target').GetCharacter.Custom('PODEnergySplatIcon')]#N [entry.MakeScope.Var('target').GetCharacter.Custom('PODEnergySplatWord')]#! #weak;italic отнято#!"
+ pod_combat_log_seg_ap_refund: " #bold;P +[entry.MakeScope.Var('ap_refund').GetValue|0] ОД#! #weak;italic возвращено#!"
+ pod_combat_log_seg_marker: " #bold;P [GetModifier(move.MakeScope.Var('marker_modifier').GetFlagKey).GetNameWithTooltip]#! #weak;italic применено#!"
+ pod_combat_log_seg_marker_removed: " #bold;N [GetModifier(move.MakeScope.Var('remove_marker').GetFlagKey).GetNameWithTooltip]#! #weak;italic очищено#!"
+
+ # ──────────────────────────────────────────────────────────────────
+ # Element icons include a leading space to separate them from wound boxes.
+ pod_combat_damage_source_fire: " [fire_damage_icon]"
+ pod_combat_damage_source_cold: " [cold_damage_icon]"
+ pod_combat_damage_source_lightning: " [lightning_damage_icon]"
+ pod_combat_damage_source_sun: " [sun_damage_icon]"
+ pod_combat_damage_source_silver: " [silver_damage_icon]"
+ pod_combat_damage_source_gold: " [gold_damage_icon]"
+ pod_combat_damage_source_holy: " [holy_damage_icon]"
+ pod_combat_damage_source_balefire: " [balefire_damage_icon]"
+ pod_combat_damage_source_poison: " [poison_damage_icon]"
+ pod_combat_damage_source_cold_iron: " [cold_iron_damage_icon]"
+ pod_combat_damage_source_morale: " [pod_combat_morale_icon]"
+
+ ###### Actor-to-target text
+ # Self and targetless rows emit no arrow. All other variants include their own separator.
+ pod_combat_log_target_aoe_enemies: "  #F →#! #bold Все враги#!"
+ pod_combat_log_target_aoe_allies: "  #F →#! #bold Все союзники#!"
+ pod_combat_log_target_aoe_all: "  #F →#! #bold Все#!"
+ pod_combat_log_target_aoe_enemies_per_target: "  #F →#! #bold Все враги#! #weak;italic ([entry.MakeScope.Var('target').GetCharacter.GetFirstNameNoTooltip])#!"
+ pod_combat_log_target_aoe_allies_per_target: "  #F →#! #bold Все союзники#! #weak;italic ([entry.MakeScope.Var('target').GetCharacter.GetFirstNameNoTooltip])#!"
+ pod_combat_log_target_aoe_all_per_target: "  #F →#! #bold Все#! #weak;italic ([entry.MakeScope.Var('target').GetCharacter.GetFirstNameNoTooltip])#!"
+ pod_combat_log_target_self: ""
+ pod_combat_log_target_single: "  #F →#! #bold [entry.MakeScope.Var('target').GetCharacter.GetFirstNameNoTooltip]#!"
+ pod_combat_log_target_none: ""
+
+ #### Saved loadout presets ####
+ pod_combat_preset_open: "Сохранить наборы приёмов"
+ pod_combat_preset_open_tt: "Сохраните или загрузите текущий выбор приёмов в одном из четырёх наборов."
+ pod_combat_preset_window_title: "Сохранённые наборы приёмов"
+ pod_combat_preset_close: "X"
+ pod_combat_preset_slot_1: "Набор A"
+ pod_combat_preset_slot_2: "Набор B"
+ pod_combat_preset_slot_3: "Набор C"
+ pod_combat_preset_slot_4: "Набор D"
+ # Skill count beside each preset slot.
+ pod_combat_preset_count_1: "[GetPlayer.MakeScope.ScriptValue('pod_combat_saved_loadout_1_count')|0] приёмов"
+ pod_combat_preset_count_2: "[GetPlayer.MakeScope.ScriptValue('pod_combat_saved_loadout_2_count')|0] приёмов"
+ pod_combat_preset_count_3: "[GetPlayer.MakeScope.ScriptValue('pod_combat_saved_loadout_3_count')|0] приёмов"
+ pod_combat_preset_count_4: "[GetPlayer.MakeScope.ScriptValue('pod_combat_saved_loadout_4_count')|0] приёмов"
+ pod_combat_preset_save: "Сохранить"
+ pod_combat_preset_save_tt: "Заменить этот набор текущим выбором приёмов."
+ pod_combat_preset_load: "Загрузить"
+ pod_combat_preset_load_tt: "Заменить текущие приёмы сохранённым набором. Приёмы, требованиям которых вы больше не отвечаете, пропускаются."
+ pod_combat_preset_clear: "Очистить"
+
+ #### Move sheet (spreadsheet pool view) ####
+ pod_combat_pool_view_detailed_l: "Подробно"
+ pod_combat_pool_view_compact_l: "Кратко"
+ pod_combat_pool_view_sheet_l: "Таблица"
+ pod_combat_pool_view_tt: "Переключить способ отображения приёмов. В виде таблицы каждый приём можно сортировать и фильтровать."
+ pod_combat_sheet_h_name: "Приём"
+ pod_combat_sheet_h_cat: "Кат."
+ pod_combat_sheet_h_ap: "ОД"
+ pod_combat_sheet_h_energy: "[GetPlayer.Custom('PODEnergySplatWord')]"
+ pod_combat_sheet_h_dmg: "Урон"
+ pod_combat_sheet_h_type: "Тип"
+ pod_combat_sheet_h_heal: "Исцеление"
+ pod_combat_sheet_h_mor: "Дух"
+ pod_combat_sheet_h_dot: "Период."
+ pod_combat_sheet_h_apswing: "ОД+/-"
+ pod_combat_sheet_h_target: "Цель"
+ pod_combat_sheet_h_hit: "Попад."
+ pod_combat_sheet_h_use: "Использование"
+ pod_combat_sheet_h_fx: "Эфф."
+ pod_combat_sheet_sort_tt: "Сортировать по этому столбцу. Нажмите ещё раз для смены направления. Приёмы без этого показателя оказываются внизу."
+ pod_combat_sheet_no_sort_tt: "Текстовые столбцы невозможно отсортировать."
+ pod_combat_sheet_h_type_tt: "Класс урона. Значок стихии обозначает особый источник урона, [POD_aggravated_box] — всегда серьёзный урон, а прочерк — обычный поверхностный урон или его отсутствие.\n\n#weak Текстовые столбцы нельзя сортировать.#!"
+ pod_combat_sheet_h_use_tt: "Ограничение использования. #bold 1/раунд#! — раз за раунд, #bold 1/бой#! — раз за всю схватку.\n\n#weak Текстовые столбцы нельзя сортировать.#!"
+ pod_combat_sheet_h_apswing_tt: "Изменение очков действий. #P +N#! даёт дополнительные ОД в этот ход, #N -N#! отнимает ОД цели на следующий ход, а #N 0 ОД#! означает полное истощение: следующий ход цели начинается с нуля. Доступные приёмы за 0 ОД по-прежнему можно использовать.\n\nСортировать по этому столбцу. Нажмите ещё раз для смены направления. Приёмы, не меняющие ОД, оказываются внизу."
+ pod_combat_sheet_h_fx_tt: "Дополнительные эффекты приёма:\n[Concept('pod_combat_guard','@pod_combat_guard_icon!')] даёт защиту   [Concept('pod_combat_dodge','@pod_combat_dodge_icon!')] даёт уклонение   [Concept('pod_combat_stealth','@pod_combat_stealth_icon!')] даёт скрытность\n@pod_combat_retaliate_icon! ответный удар при попадании или промахе\n#N если#! доступен только при условии   #P если+#! дополнительный эффект при условии\n#V КР#! контроль разума   #V ПРЗ#! призывает бойца   #V ОРЖ#! использует выбранное оружие\n\n#weak Наведите на название приёма для полного списка эффектов. Текстовые столбцы нельзя сортировать.#!"
+ pod_combat_sheet_filters_open: "Фильтры"
+ pod_combat_sheet_filters_open_tt: "Выбрать, какие приёмы отображаются в таблице."
+ pod_combat_sheet_filters_title: "Фильтры таблицы"
+ pod_combat_sheet_f_cats_l: "Категории (общие с кнопками фильтров в заголовке)"
+ pod_combat_sheet_f_equipped_l: "Только выбранные"
+ pod_combat_sheet_f_damage_l: "Наносит урон"
+ pod_combat_sheet_f_heal_l: "Исцеление"
+ pod_combat_sheet_f_energy_l: "Стоимость - [GetPlayer.Custom('PODEnergySplatWord')]"
+ pod_combat_sheet_f_agg_l: "Серьёзный урон"
+ pod_combat_sheet_f_elemental_l: "Стихийный урон"
+ pod_combat_sheet_f_elemental_tt: "Любой особый источник урона: огонь, холод, молния, солнце, серебро, золото, святость, жертвенное пламя, яд или холодное железо."
+ pod_combat_sheet_f_conditional_l: "Есть условие"
+ pod_combat_sheet_tgt_single_enemy_l: "Враг"
+ pod_combat_sheet_tgt_single_ally_l: "Союзник"
+ pod_combat_sheet_tgt_single_pc_l: "Игрок"
+ pod_combat_sheet_tgt_self_l: "Сам боец"
+ pod_combat_sheet_tgt_team_enemy_l: "Все враги"
+ pod_combat_sheet_tgt_team_ally_l: "Все союзники"
+ pod_combat_sheet_tgt_team_all_l: "Все"
+ pod_combat_sheet_reset: "Сброс"
+ pod_combat_sheet_reset_tt: "Сбросить фильтры таблицы и вернуть сортировку по ОД по возрастанию. Фильтры категорий, «$pod_combat_loadout_show_all$» и «$pod_combat_loadout_show_other_splats$» действуют для всего редактора и сохраняются."
+ pod_combat_sheet_empty: "Ни один приём не соответствует текущим фильтрам."
+ pod_combat_sheet_hit_roll: "проверка"
+ pod_combat_sheet_hit_auto: "авто"
+ pod_combat_sheet_cell_dash: "#weak -#!"
+ pod_combat_sheet_type_agg: "[POD_aggravated_box]"
+ pod_combat_sheet_use_rnd: "#weak 1/раунд#!"
+ pod_combat_sheet_use_cbt: "#weak 1/бой#!"
+ pod_combat_sheet_apswing_gain: "#P +[ROOT.Var('ap_gain').GetValue|0]#!"
+ pod_combat_sheet_apswing_stun: "#N 0 ОД#!"
+ pod_combat_sheet_apswing_drain: "#N -[ROOT.Var('ap_drain').GetValue|0]#!"
+ pod_combat_sheet_apswing_drain_cond: "#N -[ROOT.Var('sheet_ap_drain').GetValue|0]#!"
+ # Keep the leading space so condition and MC/SUM markers do not run together.
+ pod_combat_sheet_fx_line: "[story.Custom('PODCombatSheetFxGuard')][story.Custom('PODCombatSheetFxDodge')][story.Custom('PODCombatSheetFxStealth')][story.Custom('PODCombatSheetFxCounter')][story.Custom('PODCombatSheetFxCond')][story.Custom('PODCombatSheetFxMisc')][story.Custom('PODCombatSheetFxWeapon')]"
+ pod_combat_sheet_fx_guard: "[Concept('pod_combat_guard','@pod_combat_guard_icon!')]"
+ pod_combat_sheet_fx_dodge: "[Concept('pod_combat_dodge','@pod_combat_dodge_icon!')]"
+ pod_combat_sheet_fx_stealth: "[Concept('pod_combat_stealth','@pod_combat_stealth_icon!')]"
+ pod_combat_sheet_fx_counter: "@pod_combat_retaliate_icon!"
+ pod_combat_sheet_fx_cond_gate: "#N если#!"
+ pod_combat_sheet_fx_cond_bonus: "#P если+#!"
+ pod_combat_sheet_fx_cond_both: "#N если#! #P если+#!"
+ pod_combat_sheet_fx_mc: " #V КР#!"
+ pod_combat_sheet_fx_summon: " #V ПРЗ#!"
+ pod_combat_sheet_fx_weapon: " #V ОРЖ#!"
+ pod_combat_sheet_fx_marker: " #V МЕТ#!"
+ pod_combat_sheet_mor_dmg: "[ROOT.ScriptValue('pod_combat_sheet_morale_cell_value')|0]"
+ pod_combat_sheet_mor_heal: "#P +[ROOT.Var('morale_heal').GetValue|0]#!"
+ pod_combat_sheet_mor_both: "[ROOT.ScriptValue('pod_combat_sheet_morale_cell_value')|0]#weak /#!#P +[ROOT.Var('morale_heal').GetValue|0]#!"
+ pod_combat_sheet_energy_cost: "[Multiply_CFixedPoint( ROOT.ScriptValue('pod_combat_sheet_energy_cell_value'), GetPlayer.MakeScope.ScriptValue('pod_combat_energy_cost_display_multiplier') )|0]"
+ pod_combat_sheet_energy_gain: "#P +[Multiply_CFixedPoint( ROOT.Var('energy_gain').GetValue, GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|0]#!"
+ pod_combat_sheet_energy_both: "[Multiply_CFixedPoint( ROOT.ScriptValue('pod_combat_sheet_energy_cell_value'), GetPlayer.MakeScope.ScriptValue('pod_combat_energy_cost_display_multiplier') )|0]#weak /#!#P +[Multiply_CFixedPoint( ROOT.Var('energy_gain').GetValue, GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|0]#!"
+ pod_combat_sheet_heal_agg: "[ROOT.ScriptValue('pod_combat_sheet_heal_cell_value')|0][POD_aggravated_box]"
+ pod_combat_sheet_heal_plain: "[ROOT.ScriptValue('pod_combat_sheet_heal_cell_value')|0]"
+ #### To-the-death duel aftermath (pod_combat.9990) ####
+ pod_combat_death_duel_toast: "[sc_victor.GetFirstNameNoTooltip] [Select_CString(sc_victor.IsFemale, 'сразила', 'сразил' )] персонажа [sc_loser.GetFirstNameNoTooltip]"
+ pod_combat_sheet_name_atk: "#color_red;bold [ROOT.Var('decision').DecisionType.GetTitleForPlayer]#!"
+ pod_combat_sheet_name_def: "#color_light_blue;bold [ROOT.Var('decision').DecisionType.GetTitleForPlayer]#!"
+ pod_combat_sheet_name_ctl: "#color_porple;bold [ROOT.Var('decision').DecisionType.GetTitleForPlayer]#!"
+ pod_combat_sheet_name_pwr: "#color_pwr_orange;bold [ROOT.Var('decision').DecisionType.GetTitleForPlayer]#!"
+ pod_combat_sheet_cat_atk: "#color_red;bold АТК#!"
+ pod_combat_sheet_cat_def: "#color_light_blue;bold ЗАЩ#!"
+ pod_combat_sheet_cat_ctl: "#color_porple;bold КОН#!"
+ pod_combat_sheet_cat_pwr: "#color_pwr_orange;bold СИЛ#!"
+ pod_combat_sheet_cat_total: "ИТОГО"
+ #### Compact-card feature line (PODCombatCL* segments) ####
+ pod_combat_compact_ap_cost: "#bold;V [Scope.Story.MakeScope.Var('ap_cost').GetValue|0] #weak ОД#!#!"
+ pod_combat_compact_line: "[story.Custom('PODCombatCLDamage')][story.Custom('PODCombatCLSource')][story.Custom('PODCombatCLAutoHit')][story.Custom('PODCombatCLWeapon')][story.Custom('PODCombatCLHeal')][story.Custom('PODCombatCLDrain')][story.Custom('PODCombatCLSelfDamage')][story.Custom('PODCombatCLMoraleDamage')][story.Custom('PODCombatCLMoraleHeal')][story.Custom('PODCombatCLEnergyGain')][story.Custom('PODCombatCLDot')][story.Custom('PODCombatCLStance')][story.Custom('PODCombatCLStripGuard')][story.Custom('PODCombatCLStripDodge')][story.Custom('PODCombatCLStripStealth')][story.Custom('PODCombatCLHitBuff')][story.Custom('PODCombatCLHitDebuff')][story.Custom('PODCombatCLSoakBuff')][story.Custom('PODCombatCLSoakDebuff')][story.Custom('PODCombatCLApGain')][story.Custom('PODCombatCLApDrain')][story.Custom('PODCombatCLRetaliate')][story.Custom('PODCombatCLGold')][story.Custom('PODCombatCLStress')][story.Custom('PODCombatCLPrestige')][story.Custom('PODCombatCLPiety')][story.Custom('PODCombatCLStealGold')][story.Custom('PODCombatCLDread')][story.Custom('PODCombatCLOncePer')][story.Custom('PODCombatCLCond')][story.Custom('PODCombatCLMisc')]"
+ pod_combat_cl_damage: "  #weak Наносит#! #bold;N [ROOT.Var('hp_damage').GetValue|0]#![POD_superficial_box]"
+ pod_combat_cl_damage_agg: "  #weak Наносит#! #bold;N [ROOT.Var('hp_damage').GetValue|0]#![POD_aggravated_box]"
+ pod_combat_cl_damage_plain: "  #weak Наносит#! #bold;N [ROOT.Var('hp_damage').GetValue|0]#!"
+ pod_combat_cl_auto: "  #weak;italic автопопадание#!"
+ pod_combat_cl_weapon: "  #weak;italic оружие#!"
+ pod_combat_cl_heal_agg: "  #weak Исцеляет#! #bold;P +[ROOT.Var('hp_heal').GetValue|0]#![POD_aggravated_box]"
+ pod_combat_cl_heal: "  #weak Исцеляет#! #bold;P +[ROOT.Var('hp_heal').GetValue|0]#![POD_superficial_box]"
+ pod_combat_cl_drain: "  #weak;italic только после нанесения урона здоровью с учётом поглощения#!"
+ pod_combat_cl_self: "  #bold;N -[ROOT.Var('self_damage').GetValue|0]#! #weak урона себе#!"
+ pod_combat_cl_self_on_hp_damage: "  #bold;N -[ROOT.Var('self_damage').GetValue|0]#! #weak урона себе после нанесения урона здоровью с учётом поглощения#!"
+ pod_combat_cl_self_on_contact: "  #bold;N -[ROOT.Var('self_damage').GetValue|0]#! #weak урона себе при контакте#!"
+ pod_combat_cl_self_on_miss: "  #bold;N -[ROOT.Var('self_damage').GetValue|0]#! #weak урона себе при промахе/уклонении#!"
+ pod_combat_cl_mor_dmg: "  #bold;N -[ROOT.Var('morale_damage').GetValue|0]#! [Concept('pod_combat_morale', 'боевого духа')|E]"
+ pod_combat_cl_mor_dmg_on_hp_damage: "  #bold;N -[ROOT.Var('morale_damage').GetValue|0]#! [Concept('pod_combat_morale', 'боевого духа')|E] #weak после нанесения урона здоровью с учётом поглощения#!"
+ pod_combat_cl_mor_dmg_on_contact: "  #bold;N -[ROOT.Var('morale_damage').GetValue|0]#! [Concept('pod_combat_morale', 'боевого духа')|E] #weak при контакте#!"
+ pod_combat_cl_mor_dmg_on_miss: "  #bold;N -[ROOT.Var('morale_damage').GetValue|0]#! [Concept('pod_combat_morale', 'боевого духа')|E] #weak при промахе/уклонении#!"
+ pod_combat_cl_mor_heal: "  #bold;P +[ROOT.Var('morale_heal').GetValue|0]#! [Concept('pod_combat_morale', 'боевого духа')|E]"
+ pod_combat_cl_energy_gain: "  #bold;P +[Multiply_CFixedPoint( ROOT.Var('energy_gain').GetValue, GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|0]#! [GetPlayer.Custom('PODEnergySplatIcon')]"
+ pod_combat_cl_dot_mor: "  #weak Периодически#! #bold;N [ROOT.Var('dot_amount').GetValue|0]x[ROOT.Var('dot_rounds').GetValue|0]#!@pod_combat_dot_icon! [Concept('pod_combat_morale', 'боевого духа')|E]"
+ pod_combat_cl_dot_agg: "  #weak Периодически#! #bold;N [ROOT.Var('dot_amount').GetValue|0]x[ROOT.Var('dot_rounds').GetValue|0]#!@pod_combat_dot_icon! $aggravated$ здоровья"
+ pod_combat_cl_dot_hp: "  #weak Периодически#! #bold;N [ROOT.Var('dot_amount').GetValue|0]x[ROOT.Var('dot_rounds').GetValue|0]#!@pod_combat_dot_icon! здоровья"
+ pod_combat_cl_dot: "  #weak Периодически#! #bold;N [ROOT.Var('dot_amount').GetValue|0]x[ROOT.Var('dot_rounds').GetValue|0]#!@pod_combat_dot_icon! $superficial$ здоровья"
+ pod_combat_cl_st_guard: "  #weak Перейти#! в @pod_combat_guard_icon![Concept('pod_combat_guard', 'защиту')|E]"
+ pod_combat_cl_st_dodge: "  #weak Перейти#! в @pod_combat_dodge_icon![Concept('pod_combat_dodge', 'уклонение')|E]"
+ pod_combat_cl_st_stealth: "  #weak Перейти#! в @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытность')|E]"
+ pod_combat_cl_strip_guard: "  #weak Снять#! @pod_combat_guard_icon![Concept('pod_combat_guard', 'защиту')|E]"
+ pod_combat_cl_strip_dodge: "  #weak Снять#! @pod_combat_dodge_icon![Concept('pod_combat_dodge', 'уклонение')|E]"
+ pod_combat_cl_strip_stealth: "  #weak Снять#! @pod_combat_stealth_icon![Concept('pod_combat_stealth', 'скрытность')|E]"
+ pod_combat_cl_hit_buff_rnd: "  #bold;P +[ROOT.ScriptValue('pod_combat_move_hit_buff_mag_value')|0]%#! к [Concept('pod_combat_hit', 'попаданию')|E] #weak;italic до начала следующего хода владельца#!"
+ pod_combat_cl_hit_buff_cbt: "  #bold;P +[ROOT.ScriptValue('pod_combat_move_hit_buff_mag_value')|0]%#! к [Concept('pod_combat_hit', 'попаданию')|E] #weak;italic до конца боя#!"
+ pod_combat_cl_hit_debuff_rnd: "  #bold;N -[ROOT.ScriptValue('pod_combat_move_hit_debuff_mag_value')|0]%#! к [Concept('pod_combat_hit', 'попаданию')|E] #weak;italic до конца следующего хода владельца#!"
+ pod_combat_cl_hit_debuff_cbt: "  #bold;N -[ROOT.ScriptValue('pod_combat_move_hit_debuff_mag_value')|0]%#! к [Concept('pod_combat_hit', 'попаданию')|E] #weak;italic до конца боя#!"
+ pod_combat_cl_soak_buff_rnd: "  #bold;P +[ROOT.ScriptValue('pod_combat_move_soak_buff_mag_value')|0]%#! [Concept('soak_damage', 'поглощения')|E] #weak;italic до начала следующего хода владельца#!"
+ pod_combat_cl_soak_buff_cbt: "  #bold;P +[ROOT.ScriptValue('pod_combat_move_soak_buff_mag_value')|0]%#! [Concept('soak_damage', 'поглощения')|E] #weak;italic до конца боя#!"
+ pod_combat_cl_soak_debuff_rnd: "  #bold;N -[ROOT.ScriptValue('pod_combat_move_soak_debuff_mag_value')|0]%#! [Concept('soak_damage', 'поглощения')|E] #weak;italic до конца следующего хода владельца#!"
+ pod_combat_cl_soak_debuff_cbt: "  #bold;N -[ROOT.ScriptValue('pod_combat_move_soak_debuff_mag_value')|0]%#! [Concept('soak_damage', 'поглощения')|E] #weak;italic до конца боя#!"
+ pod_combat_cl_ap_gain: "  #weak Получить#! #bold;P +[ROOT.Var('ap_gain').GetValue|0] ОД#!"
+ pod_combat_cl_stun: "  #bold;N 0 ОД#! у #weak;italic цели на следующем ходу#!"
+ pod_combat_cl_ap_drain: "  #bold;N -[ROOT.Var('ap_drain').GetValue|0] ОД#! на #weak;italic следующий ход#!"
+ pod_combat_cl_ap_drain_cond: "  #bold;N -[ROOT.Var('sheet_ap_drain').GetValue|0] ОД#! на #weak;italic следующий ход#!"
+ pod_combat_cl_energy: "[GetPlayer.Custom('PODEnergySplatIcon')]#bold;V [Multiply_CFixedPoint( ROOT.Var('energy_cost').GetValue, GetPlayer.MakeScope.ScriptValue('pod_combat_energy_cost_display_multiplier') )|0]#!"
+ pod_combat_cl_gold_cost: "  @gold_icon!#bold;V [ROOT.Var('gold_cost').GetValue|0]#! #weak золота#!"
+ pod_combat_cl_stress_cost: "  @stress_icon!#bold;V [ROOT.Var('stress_cost').GetValue|0]#! #weak стресса#!"
+ pod_combat_cl_prestige_cost: "  @prestige_icon!#bold;V [ROOT.Var('prestige_cost').GetValue|0]#! #weak престижа#!"
+ pod_combat_cl_piety_cost: "  @piety_icon!#bold;V [ROOT.Var('piety_cost').GetValue|0]#! #weak благочестия#!"
+ pod_combat_cl_steal: "  #weak Украсть#! #bold;P [ROOT.Var('steal_gold').GetValue|0]#!@gold_icon!"
+ pod_combat_cl_dread: "  #bold;P +[ROOT.Var('gain_dread').GetValue|0]#! #weak ужаса#!"
+ pod_combat_cl_counter_own_hit: "  #weak Ответный удар#! #bold;N [ROOT.Var('retaliate_damage').GetValue|0]#! #weak;italic при попадании#!"
+ pod_combat_cl_counter_own_miss: "  #weak Ответный удар#! #bold;N [ROOT.Var('retaliate_damage').GetValue|0]#! #weak;italic при промахе#!"
+ pod_combat_cl_counter_reuse_hit: "  #weak Ответный удар#! #bold;N [ROOT.Var('hp_damage').GetValue|0]#! #weak;italic при попадании#!"
+ pod_combat_cl_counter_reuse_miss: "  #weak Ответный удар#! #bold;N [ROOT.Var('hp_damage').GetValue|0]#! #weak;italic при промахе#!"
+ pod_combat_cl_counter_bare_hit: "  #weak;italic ответный удар при попадании#!"
+ pod_combat_cl_counter_bare_miss: "  #weak;italic ответный удар при промахе#!"
+ pod_combat_cl_counter_own_any: "  #weak Ответный удар#! #bold;N [ROOT.Var('retaliate_damage').GetValue|0]#! #weak;italic при атаке#!"
+ pod_combat_cl_counter_reuse_any: "  #weak Ответный удар#! #bold;N [ROOT.Var('hp_damage').GetValue|0]#! #weak;italic при атаке#!"
+ pod_combat_cl_counter_bare_any: "  #weak;italic ответный удар при атаке#!"
+ pod_combat_cl_once_rnd: "  #weak;italic один раз/раунд#!"
+ pod_combat_cl_once_cbt: "  #weak;italic раз за бой#!"
+ pod_combat_cl_cond_gate: "  #weak;italic только если...#!"
+ pod_combat_cl_cond_bonus: "  #weak;italic бонус, если...#!"
+ pod_combat_cl_cond_both: "  #weak;italic только если... и бонус если...#!"
+ pod_combat_cl_mc: "  #weak;italic контроль разума#!"
+ pod_combat_cl_summon: "  #weak;italic призыв#!"
+ pod_combat_cl_marker: "  #weak;italic метка#!"
+
+ # Aggravated and immunity customizable localization share these marks; the parent row supplies color.
+ # Keep icon and name together, with a trailing space between marks.
+ pod_combat_suscmark_fire: "[fire_damage_icon]Огонь "
+ pod_combat_suscmark_cold: "[cold_damage_icon]Холод "
+ pod_combat_suscmark_lightning: "[lightning_damage_icon]Молния "
+ pod_combat_suscmark_sun: "[sun_damage_icon]Солнце "
+ pod_combat_suscmark_silver: "[silver_damage_icon]Серебро "
+ pod_combat_suscmark_gold: "[gold_damage_icon]Золото "
+ pod_combat_suscmark_holy: "[holy_damage_icon]Святость "
+ pod_combat_suscmark_balefire: "[balefire_damage_icon]Жертвенное пламя "
+ pod_combat_suscmark_poison: "[poison_damage_icon]Яд "
+ pod_combat_suscmark_cold_iron: "[cold_iron_damage_icon]Холодное железо "
+ # Localization rows require subject. Add each new damage type to both rows.
+ pod_combat_susc_agg_row: "[Concept('POD_aggravated_damage','Серьёзный урон')|E]: #N [subject.Custom('PODCombatSuscAgg_fire')][subject.Custom('PODCombatSuscAgg_cold')][subject.Custom('PODCombatSuscAgg_lightning')][subject.Custom('PODCombatSuscAgg_sun')][subject.Custom('PODCombatSuscAgg_silver')][subject.Custom('PODCombatSuscAgg_gold')][subject.Custom('PODCombatSuscAgg_holy')][subject.Custom('PODCombatSuscAgg_balefire')][subject.Custom('PODCombatSuscAgg_poison')][subject.Custom('PODCombatSuscAgg_cold_iron')]#!"
+ pod_combat_susc_imm_row: "[Concept('POD_damage_immunity','Невосприимчивость')|E]: #weak [subject.Custom('PODCombatSuscImm_fire')][subject.Custom('PODCombatSuscImm_cold')][subject.Custom('PODCombatSuscImm_lightning')][subject.Custom('PODCombatSuscImm_sun')][subject.Custom('PODCombatSuscImm_silver')][subject.Custom('PODCombatSuscImm_gold')][subject.Custom('PODCombatSuscImm_holy')][subject.Custom('PODCombatSuscImm_balefire')][subject.Custom('PODCombatSuscImm_poison')][subject.Custom('PODCombatSuscImm_cold_iron')]#!"
+
+ ###### WEAPON ARTIFACT OVERRIDES ######
+ # Weapon override segments each include a leading line break. Append the block at
+ # widget level: artifact description localization has no Artifact datacontext.
+ pod_weapon_ovr_retype_fire: "\nУдары оружием наносят $pod_combat_elemmark_fire$ урон огнём"
+ pod_weapon_ovr_retype_cold: "\nУдары оружием наносят $pod_combat_elemmark_cold$ урон холодом"
+ pod_weapon_ovr_retype_lightning: "\nУдары оружием наносят $pod_combat_elemmark_lightning$ урон молнией"
+ pod_weapon_ovr_retype_sun: "\nУдары оружием наносят $pod_combat_elemmark_sun$ урон солнечным светом"
+ pod_weapon_ovr_retype_silver: "\nУдары оружием наносят $pod_combat_elemmark_silver$ урон серебром"
+ pod_weapon_ovr_retype_gold: "\nУдары оружием наносят $pod_combat_elemmark_gold$ урон золотом"
+ pod_weapon_ovr_retype_holy: "\nУдары оружием наносят $pod_combat_elemmark_holy$ урон святостью"
+ pod_weapon_ovr_retype_balefire: "\nУдары оружием наносят $pod_combat_elemmark_balefire$ урон жертвенным пламенем"
+ pod_weapon_ovr_retype_poison: "\nУдары оружием наносят $pod_combat_elemmark_poison$ урон ядом"
+ pod_weapon_ovr_retype_cold_iron: "\nУдары оружием наносят $pod_combat_elemmark_cold_iron$ урон холодным железом"
+ pod_weapon_ovr_bonus: "\nУдары оружием наносят #P +[ROOT.Var('artifact_weapon_bonus_damage').GetValue|V0]#! урона"
+ pod_weapon_ovr_undodge: "\nОт ударов оружия невозможно уклониться"
+ pod_weapon_ovr_agg: "\nУдары оружием наносят [Concept('POD_aggravated_damage', 'серьёзный урон')|E]"
+ pod_weapon_ovr_blade_kings: "\nУдары оружием наносят [Concept('POD_aggravated_damage', 'серьёзный урон')|E] врагам, чья [Concept('prowess', 'доблесть')|E] не превышает [artifact_power_with_icon|E] этого клинка: #P [ROOT.Var('artifact_power').GetValue|V0]#!"
+ pod_weapon_ovr_aggvs_vampire: "\nУдары оружием наносят [Concept('POD_aggravated_damage', 'серьёзный урон')|E] против #TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L вампиров#!#! и #TOOLTIP:GAME_TRAIT,abomination,[GetNullCharacter] #L мерзостей#!#!"
+ pod_weapon_ovr_aggvs_werewolf: "\nУдары оружием наносят [Concept('POD_aggravated_damage', 'серьёзный урон')|E] против #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L вервольфов#!#!"
+ pod_weapon_ovr_aggvs_demon: "\nУдары оружием наносят [Concept('POD_aggravated_damage', 'серьёзный урон')|E] против #TOOLTIP:GAME_TRAIT,demon,[GetNullCharacter] #L демонов#!#!"
+ pod_weapon_ovr_aggvs_fera: "\nУдары оружием наносят [Concept('POD_aggravated_damage', 'серьёзный урон')|E] против [Glossary('фера', 'glossary_fera_tt')]"
+ pod_weapon_ovr_aggvs_wyrm_tainted: "\nУдары оружием наносят [Concept('POD_aggravated_damage', 'серьёзный урон')|E] слугам [Glossary('Вирма', 'glossary_wyrm_tt')]"
+ pod_weapon_ovr_aggvs_except_werewolf: "\nУдары оружием наносят [Concept('POD_aggravated_damage', 'серьёзный урон')|E] всем, кроме #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L вервольфов#!#!"
+ pod_weapon_ovr_lifesteal: "\nУдары оружием восстанавливают #P +[ROOT.Var('artifact_weapon_heal_on_damage').GetValue|V0]#! здоровья, если проливают кровь"
+ pod_weapon_ovr_energy: "\nУдары оружием восстанавливают #P +[Multiply_CFixedPoint( ROOT.Var('artifact_weapon_energy_on_damage').GetValue, GetPlayer.MakeScope.ScriptValue('splat_energy_multiplier') )|V0]#! [GetPlayer.Custom('PODEnergySplatIcon')]#V [GetPlayer.Custom('PODEnergySplatWord')]#!, если проливают кровь"
+ pod_weapon_ovr_soakpen: "\nУдары оружием снижают поглощение на #P [ROOT.Var('artifact_weapon_soak_penalty').GetValue|V0]#! очков"
+ pod_weapon_ovr_line: "[pod_weapon.Custom('PODWeaponOvrRetype')][pod_weapon.Custom('PODWeaponOvrBonus')][pod_weapon.Custom('PODWeaponOvrUndodge')][pod_weapon.Custom('PODWeaponOvrAgg')][pod_weapon.Custom('PODWeaponOvrBladeKings')][pod_weapon.Custom('PODWeaponOvrAggVsVampire')][pod_weapon.Custom('PODWeaponOvrAggVsWerewolf')][pod_weapon.Custom('PODWeaponOvrAggVsDemon')][pod_weapon.Custom('PODWeaponOvrAggVsFera')][pod_weapon.Custom('PODWeaponOvrAggVsWyrmTainted')][pod_weapon.Custom('PODWeaponOvrAggExceptWerewolf')][pod_weapon.Custom('PODWeaponOvrLifesteal')][pod_weapon.Custom('PODWeaponOvrEnergy')][pod_weapon.Custom('PODWeaponOvrSoakPen')]"
+ pod_weapon_ovr_header: "#bold При использовании:#!"
+ pod_weapon_ovr_footer: "\n\n"
+ pod_weapon_ovr_artifact_block: "[pod_weapon.Custom('PODWeaponOvrHeader')]$pod_weapon_ovr_line$[pod_weapon.Custom('PODWeaponOvrFooter')]"
+ pod_artifact_desc_and_weapon_override: "[PODWeaponOverrideSelfText][Artifact.GetDesc]"

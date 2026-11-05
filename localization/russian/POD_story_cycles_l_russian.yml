@@ -3,8 +3,187 @@
  POD_story_pact_desc: "Вы заключили сделку в обмен на могущество.\nСтоило ли оно того?"
 
  #POD_story_pact_demon: "@demon_icon! Demon"
- POD_story_pact_custom_string: "#font:TitleFont;size:19;glow_color:{0.5,0,0,1} Договор, заключённый с персонажем [Story.MakeScope.Var('demon').Char.GetFirstName]#!\n#glow_color:{0.25,0,0,75} [demonic_pact_obligation|E]: [Localize(Concatenate('POD_obligation_', Story.MakeScope.GetVariable('obligation').GetFlagKey))|U]\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODPactFrequencyAndStatus')]\nЕсли вы #X нарушите#! договор:\n[GetScriptedGui('POD_sidebar_show_demonic_pacts').BuildTooltip(GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('obligation', MakeScopeFlag(Story.MakeScope.GetVariable('obligation').GetFlagKey)).AddScope('consequence', MakeScopeFlag(Story.MakeScope.GetVariable('consequence').GetFlagKey)).End)]\nЭтот [Concept('demonic_pact', 'договор')|E] стоит [Story.MakeScope.GetVariable('perk_points_gained').GetValue|0V] [Select_CString( EqualTo_CFixedPoint( Story.MakeScope.GetVariable('perk_points_gained').GetValue, '(CFixedPoint)1' ), 'оч.', 'оч.' )] [Concept('perk', 'достоинств')|E] [Concept('investiture_lifestyle', 'пути инвеституры')|E]#!"
+ POD_story_pact_custom_string: "#font:TitleFont;size:19;glow_color:{0.5,0,0,1} Договор, заключённый с персонажем [Story.MakeScope.Var('demon').Char.GetFirstName]#!\n#glow_color:{0.25,0,0,75} [demonic_pact_obligation|E]: [Localize(Concatenate('POD_obligation_', Story.MakeScope.GetVariable('obligation').GetFlagKey))|U]\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODPactFrequencyAndStatus')]\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODPactDeadline')]\nЕсли вы #X нарушите#! договор:\n[GetScriptedGui('POD_sidebar_show_demonic_pacts').BuildTooltip(GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('obligation', MakeScopeFlag(Story.MakeScope.GetVariable('obligation').GetFlagKey)).AddScope('consequence', MakeScopeFlag(Story.MakeScope.GetVariable('consequence').GetFlagKey)).End)]\nЭтот [Concept('demonic_pact', 'договор')|E] стоит [Story.MakeScope.GetVariable('perk_points_gained').GetValue|0V] [Select_CString( EqualTo_CFixedPoint( Story.MakeScope.GetVariable('perk_points_gained').GetValue, '(CFixedPoint)1' ), 'оч.', 'оч.' )] [Concept('perk', 'достоинств')|E] [Concept('investiture_lifestyle', 'пути инвеституры')|E]#!"
+
+ POD_story_pact_deadline_normal: "#N Следующая дань ожидается через [story.MakeScope.GetVariable('years_until_obligation').GetValue|0V] [Select_CString( EqualTo_CFixedPoint( story.MakeScope.GetVariable('years_until_obligation').GetValue, '(CFixedPoint)1' ), 'год', 'лет' )]#!"
+ POD_story_pact_deadline_fresh: "#N Следующая дань ожидается через [story.MakeScope.GetVariable('frequency').GetValue|0V] [Select_CString( EqualTo_CFixedPoint( story.MakeScope.GetVariable('frequency').GetValue, '(CFixedPoint)1' ), 'год', 'лет' )]#!"
+ POD_story_pact_deadline_urgent: "#X Дань должна быть выплачена в течение года \nисполните [Concept('demonic_pact_obligation', 'обязательство')|E] сейчас или поплатитесь!#!"
+ POD_story_pact_deadline_prohibitory: "#weak Этот запрет должен соблюдаться неукоснительно.#!"
+ POD_story_pact_deadline_completed: "Демон снова потребует это через [story.MakeScope.GetVariable('years_until_obligation').GetValue|0V] [Select_CString( EqualTo_CFixedPoint( story.MakeScope.GetVariable('years_until_obligation').GetValue, '(CFixedPoint)1' ), 'год', 'лет' )]."
+ POD_story_pact_deadline_completed_nodate: "#P Обязательство исполнено - в настоящее время нет необходимости расплаты.#!"
+
+ # Toast fired by the pact story cycle one year before a tribute falls due.
+ POD_story_pact_deadline_warning.toast: "#X Срок расплаты по договору с персонажем [pact_demon.GetFirstName] истечёт через год.#!"
+ POD_story_pact_deadline_warning_desc: "Следуйте договору или заплатите цену."
 
  POD_story_pact_prohibitory: "Статус: #X Запрещено#!"
  POD_story_pact_frequency_completed: "[demonic_pact_frequency|E]: Каждые [story.MakeScope.GetVariable('frequency').GetValue|0V] лет#!\nСтатус: #P Завершено#!"
  POD_story_pact_frequency_notcompleted: "[demonic_pact_frequency|E]: Каждые [story.MakeScope.GetVariable('frequency').GetValue|0V] лет#!\nСтатус: #N В стадии выполнения#!"
+
+
+
+ # Story Cycle - Asakku Depth Accumulation
+ POD_asakku_depth_accumulation: "Наблюдатель у колодца"
+ POD_asakku_depth_accumulation_desc: "Сущность, более древняя, чем память, заметила вашу кровь. Вы не знаете, что это: лихорадка Зверя или демоны из забытых эпизодов Книги Бытия. Но вам страшно выяснить правду, пока нечто подбирается всё ближе к самой вашей душе."
+
+ # Visualization labels
+ POD_asakku_story_custom_string: "Заражение Анделеона Асакку представлено следующим уникальным контентом. \n\n#bold Порча Асакку#! отражает власть сущности над вами: это значение от 1 до 100, отображаемое в модификаторе персонажа. Оно медленно растёт со временем и быстрее — когда вы действуете в интересах сущности. Четыре порога — #bold 25, 50, 75,#! и #bold 100#! — отмечают необратимые перемены: новое свойство, новые способности и возрастающее внимание тех, кто охотится на носителей заразы.\n\n#bold Распространение Асакку#! — Изменчивость служит способом передачи сущности. Персонажи, владеющие этой дисциплиной, уязвимы для заражения. Происки «[soul_infection|E]» внедряют присутствие сущности в носителя, который может быть согласен на это или даже не подозревать о происходящем. Когда превращение в Асакку завершено, [Concept('blood_inception', 'кровавое зарождение')|E] действует быстрее, но требует пленённой цели.\n\n#bold Теневой крестовый поход#! — Тал'махе'Ра знает, кто вы. По мере усиления порчи против вас выступят элиуды — сородичи, обученные выявлять и устранять заразу.\n\n#bold Наблюдатель у колодца#! — четыре цели кампании направляют распространение Асакку: разнести заразу, усилить порчу, захватить древние центры власти и подчинить восточных охотников. Каждый этап требует всё большего от мира и от вас."
+ POD_asakku_story_depth_label: "Порча Асакку"
+ POD_asakku_story_depth_min_label: "Чистота"
+ POD_asakku_story_depth_max_label: "Господство Ирьи"
+
+ ######################################################
+ # Mary the Black — Journey story cycle
+ ######################################################
+ POD_maryb_story: "#glow_color:{0.75,0.5,0.21,0.5} Чёрная Мечта#!"
+ POD_maryb_story_desc: "Три таблички и путь, ведущий к часовне под собором Святой Софии. Мэри Чёрная вновь пройдёт по нему."
+
+ # Narrative header shown in the story panel. The text is path-aware: the
+ # custom_string_key resolves this dispatcher, which hands off to the
+ # POD_maryb_story_phase customizable_localization (POD_maryb_custom_loc.txt)
+ # so the prose tracks Mary's progress and, after the Deal with Michael, the
+ # ending she reached. Tablet cities are clickable title links.
+ POD_maryb_story_custom_string: "[Story.GetOwner.Custom('POD_maryb_story_phase')]"
+
+ # --- Phase strings selected by POD_maryb_story_phase ---
+
+ # Pre-resolution, still gathering the tablets (also the pre-arc fallback).
+ POD_maryb_story_phase_seeking: "Ваши частички рассеяны по городам Леванта и заключены в глине. Две таблички, написанные вашей собственной кровью, и одна, начертанная рукой мёртвого жреца, ждут в городах #bold [GetTitleByKey('c_damascus').GetNameNoTier]#!, #bold [GetTitleByKey('c_mosul').GetNameNoTier]#! и #bold [GetTitleByKey('c_baghdad').GetNameNoTier]#!. Захватите город, найдите табличку — и ещё одна частица той, кем она была, вернётся к вам.\n\n#shinygold Всё это ведёт обратно ко мне, возлюбленная. Ты увидишь.#!"
+
+ # Pre-resolution, all three recovered: the fourth tablet waits to be written.
+ POD_maryb_story_phase_stylus: "Три таблички найдены, вернулись воспоминания о трёх погребённых жизнях, а влажная глина четвёртой лежит под её рукой. В Леванте больше нечего искать. Осталось взять писало, написать концовку и, занеся его над глиной, решить, чьей концовкой она станет.\n\n#shinygold Когда будешь готова, возлюбленная. Я ждал дольше, чем ты можешь представить.#!"
+
+ # Ending: The Black Dream (Mary dominant; Michael silenced forever).
+ POD_maryb_story_phase_blackdream: "Таблички прочитаны, четвёртая написана, и тишина часовни принадлежит только вам. История Михаила теперь обрела конец. Мечта теперь ваша; остался лишь один вопрос: насколько она может исказиться, прежде чем превратится в Кошмар?"
+
+ # Ending: The Second Dream (Michael risen in Mary's flesh). All his voice.
+ # "re-embrace" links the receive_into_the_dream game concept.
+ POD_maryb_story_phase_seconddream: "#shinygold Мэри Чёрная мертва. Всегда существовала лишь Мечта и женщина, которая принесла её домой. Теперь я ношу плоть, которую она сберегла для меня. Твоя кровь Баали ещё может пригодиться. Я совершу [Concept('receive_into_the_dream', 'повторное становление')|E] всего мира, приняв его в мечту.#!"
+
+ # Ending: Ash and Gold (the synthesis). Shared body, then an ascendancy clause
+ # appended by the mary / michael variant keys below.
+ POD_maryb_story_ashgold_body: "Там, где были Мэри и Михаил, теперь стоит нечто иное, откликающееся на оба имени. Ни один из них не исчез; ни один не победил. Созданное ими существо смотрит на мир одной парой глаз, а власть над ним переходит от одного к другому, словно с приливом, которому не может повелевать ничья воля.\n\nТеперь мы можем восстановить Троицу. Нам нужны [GetCourtPositionType('pillar_of_darkness_court_position').GetName()] и [GetCourtPositionType('pillar_of_light_court_position').GetName()]."
+
+ POD_maryb_story_phase_ashgold_mary: "$POD_maryb_story_ashgold_body$\n\nСейчас на мир смотрит Мэри: глаза потемнели, прежний голод таится под самой кожей."
+ POD_maryb_story_phase_ashgold_michael: "$POD_maryb_story_ashgold_body$\n\n#shinygold Сейчас на мир смотрит Михаил: уверенный взгляд, прежнее сияние потускнело до блеска полированного золота.#!"
+ POD_maryb_story_phase_ashgold_neutral: "$POD_maryb_story_ashgold_body$"
+
+ # Balance (tug-of-war) labels. Reused post-resolution on the Ash and Gold path,
+ # where the bar swings fully to whichever half is currently ascendant, so the
+ # end-caps read as ascendancy rather than a permanent victory.
+ POD_maryb_story_balance_label: "Мэри и Михаил"
+ POD_maryb_story_balance_min_label: "#shinygold Господство Михаила#!"
+ POD_maryb_story_balance_max_label: "#P Господство Мэри#!"
+
+ # Tablets (basic counter) labels
+ POD_maryb_story_tablets_label: "Найдено табличек"
+ POD_maryb_story_tablets_min_label: "Нет"
+ POD_maryb_story_tablets_max_label: "Все три"
+
+
+ POD_story_spell_of_life_explanation: "Поиски [Concept('POD_spell_of_life', 'заклинания Жизни')|E]"
+ POD_story_spell_of_life_explanation_desc: "Заклинание Жизни позволяет создавать #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумий#!#!, даруя им бессмертие через цикл смерти и возрождения. Лишь немногие постигли эту тайну. Если вы хотите присоединиться к их числу, вам предстоит долгий путь."
+
+ POD_story_spell_of_life_explanation_custom_string: "[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODSoLInProgressQuest')]"
+ POD_story_spell_of_life_explanation_inprogress: "Если вы хотите изучить заклинание Жизни самостоятельно, вам нужно будет пройти долгие поиски и накопить больше [Concept('trait_level_track_xp', 'опыта пути развития')|E] «Заклинание Жизни» свойства «[GetTrait('eternal_rebirth_seeker').GetName( GetPlayer )]».\n\n#T Обращение к древним#!\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODSoLStage1Desc')]\n\n#T Утраченные фрагменты#!\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODSoLStage2Desc')]\n\n#T Привратники#!\nСразу после достижения 90 [Concept('trait_level_track_xp', 'опыта')|E] на вас нападут несколько фракций, стремящихся украсть ваши исследования и наказать вас за высокомерие.\n\n#T Рождение вечности#!\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODSoLStage4Desc')]\n\n#R Будьте готовы пожертвовать всем в поисках истинного бессмертия, ибо путь таит в себе опасность!#![GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODSoLStage3Task')][GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODSoLRecommendDesc')]"
+ POD_story_spell_of_life_explanation_complete: "Совершив подвиг, удававшийся лишь немногим, вы откроете для себя новые возможности. [Concept('character_interaction', 'Взаимодействия персонажа')|E] позволят вам создавать новых #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумий#!#!, вы сможете просить других создать #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумий#!#! или обучать других заклинанию Жизни. Цели могут предложить интересные пути или позволить вам передавать знания о заклинании Жизни, если это в настоящее время ограничено.\n\nС такой силой мир ляжет к вашим ногам. Создадите ли вы расу мумий, чтобы осуществить свою ужасную месть или изменить мир по своему образу? Сохраните ли вы равновесие или нарушите его? Разорвёте ли завесу между жизнью и смертью?"
+
+ POD_story_spell_of_life_explanation_stage1_brief: "Первый этап предлагает 4 пути, состоящих из нескольких решений. Завершение всего пути может принести награды на более поздних этапах."
+ POD_story_spell_of_life_explanation_stage1_full: "На первом этапе доступны 4 пути, каждый из которых состоит из 3 решений. Некоторые персонажи уже сделали первые шаги на одном из путей. Не все пути доступны каждому персонажу и на всех стартовых датах. Завершение всего пути может принести награды на более поздних этапах.\n#bold Гор#!\n$BULLET_WITH_TAB$Предложите Гору Нижний Египет\n$BULLET_WITH_TAB$Убедите Гора помочь вам\n$BULLET_WITH_TAB$Устраните угрозу сетитов\n#bold Кеминтири#!\n$BULLET_WITH_TAB$Подружитесь с Кеминтири, получите фрагменты Исиды и захватите ключевые владения\n$BULLET_WITH_TAB$Найдите старых друзей Кеминтири\n$BULLET_WITH_TAB$Уничтожьте дом Таварет\n#bold Кабир#!\n$BULLET_WITH_TAB$Получите тайные письмена Кабира\n$BULLET_WITH_TAB$Изучите чародейство и наймите колдунов\n$BULLET_WITH_TAB$Ослабьте угрозу, которую тремеры представляют для Кабира\n#bold Эксперименты#!\n$BULLET_WITH_TAB$Пытайте пленённую мумию и некоторых потенциальных колдунов\n$BULLET_WITH_TAB$Убедите свою семью или единоверцев помочь вам\n$BULLET_WITH_TAB$Заключите в тюрьму большое количество людей, добудьте несколько артефактов и завоюйте густонаселенную землю"
+
+ POD_story_spell_of_life_explanation_stage2_brief: "Достигнув 30 [Concept('trait_level_track_xp', 'опыта')|E], отправляйтесь в [Concept('journeys', 'странствия')|E], чтобы найти подсказки, и учитесь под руководством тех немногих, кто знает хотя бы отрывок из заклинания Жизни."
+ POD_story_spell_of_life_explanation_stage2_full: "Получив 30 [Concept('trait_level_track_xp', 'опыта')|E], вы больше не сможете принимать решения предыдущих путей. Вместо этого отправляйтесь в [Concept('journeys', 'странствия')|E], чтобы получить подсказки и учиться у тех немногих, кто знает хотя бы отрывок из заклинания Жизни. Особенно образованные или искусные в магии персонажи могут пассивно изучать Заклинание и расширять свои знания. Кроме того, те, кто близок к #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумиям#!#!, а также владельцы определённых [Concept('counties', 'графств')|E], #TOOLTIP:MUMMY_SOL_PASSIVE_county_explanation #L связанных со смертью Осириса#!#!, будут пассивно получать некоторые знания."
+
+ POD_story_spell_of_life_explanation_stage3_notask: ""
+ POD_story_spell_of_life_explanation_stage3_task: "\n\nЧтобы продвинуться дальше, #T #X ВЫЖИВИТЕ!#!#!"
+
+ POD_story_spell_of_life_explanation_stage4_brief: "Если вы выживете, вам нужно будет обрести [UmbraGlossaryLocalized('shadow_realm','мир теней')], чтобы вы могли завершить заклинание Жизни. Его природа определит судьбу и сущность созданных вашим заклинанием #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумий#!#!."
+ POD_story_spell_of_life_explanation_stage4_full: "Вам потребуется обрести [UmbraGlossaryLocalized('shadow_realm','мир теней')], чтобы вы могли завершить заклинание Жизни, привязав ритуал к этому измерению. Его природа определит судьбу и сущность созданных вашим заклинанием #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумий#!#!. Если вы не присоединитесь к древнему и устойчивому измерению, такому как [UmbraGlossaryLocalized('dark_kingdom_of_sand','Аменти')], вам придётся сражаться с ордами #TOOLTIP:GAME_TRAIT,spectre,[GetNullCharacter] #L спектров#!#!, прежде чем вы сможете завершить свои поиски. Это опасно даже для сильнейшего правителя."
+
+ POD_story_spell_of_life_explanation_using_recommend: "\n\n#help Если вы передадите свои знания другому, то сможете предложить ему применить их на вас.#!"
+ POD_story_spell_of_life_explanation_blocked_recommend: ""
+
+
+
+ POD_story_elixir_of_eternal_life_explanation: "Поиски [Concept('POD_elixir_of_eternal_life', 'эликсира Вечной жизни')|E]"
+ POD_story_elixir_of_eternal_life_explanation_desc: "Эликсир Вечной жизни позволяет создавать #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумий#!#!, даруя им бессмертие через цикл смерти и возрождения. Лишь немногие постигли эту тайну. Если вы хотите присоединиться к их числу, вам предстоит долгий путь."
+
+ POD_story_elixir_of_eternal_life_explanation_custom_string: "[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODEoELInProgressQuest')]"
+ POD_story_elixir_of_eternal_life_explanation_inprogress: "Если вы хотите самостоятельно изучить эликсир Вечной жизни, вам нужно будет пройти долгие поиски и накопить больше [Concept('trait_level_track_xp', 'опыта пути развития')|E] «Эликсир вечной жизни» свойства «[GetTrait('eternal_rebirth_seeker').GetName( GetPlayer )]».\n\n#T В поисках Дао#!\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODEoELStage1Desc')]\n\n#T Сбор небесных тайн#!\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODEoELStage2Desc')]\n\n#T Четверное искушение#!\nСразу после достижения 90 [Concept('trait_level_track_xp', 'опыта')|E], 4 [Glossary('повелителей Яма','podgloss.yamaking')] сделают вам предложение, от которого вы не сможете отказаться.\n\n#T Восхождение за пределы смертности#!\n[GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODEoELStage4Desc')]\n\n#R Будьте готовы пожертвовать всем в поисках истинного бессмертия, ибо путь таит в себе опасность!#![GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODEoELStage3Task')][GuiScope.SetRoot(Story.GetOwner.MakeScope).AddScope('story',Story.MakeScope).Custom('PODEoELRecommendDesc')]"
+ POD_story_elixir_of_eternal_life_explanation_complete: "Совершив подвиг, удававшийся лишь немногим, вы откроете для себя новые возможности. [Concept('character_interaction', 'Взаимодействия персонажа')|E] позволят вам создавать новых #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумий#!#!, просить других создать #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумий#!#! или обучать других эликсиру Вечной жизни. Цели могут предлагать интересные пути или позволять вам передавать знания об эликсире Вечной жизни, если это в настоящее время ограничено. Возможно, у вас даже будет возможность постичь другую форму эликсира.\n\nС такой силой мир ляжет к вашим ногам. Создадите ли вы расу мумий, чтобы осуществить свою ужасную месть или изменить мир по своему образу? Сохраните ли вы равновесие или нарушите его? Разорвёте ли завесу между жизнью и смертью? Попытаетесь ли вы найти способ изучить обе формы эликсира Вечной жизни?"
+
+ POD_story_elixir_of_eternal_life_explanation_stage1_brief: "Первый этап предлагает 3 пути, состоящих из нескольких решений. Завершение всего пути может принести награды на более поздних этапах."
+ POD_story_elixir_of_eternal_life_explanation_stage1_full: "Первый этап предлагает 3 пути, каждый из которых состоит из 3 решений. Не все пути доступны каждому персонажу и на всех стартовых датах. Завершение всего пути может принести награды на более поздних этапах. \n#bold Медитация и внутренняя алхимия#!\n$BULLET_WITH_TAB$Избавьтесь от отрицательных свойств здоровья и стресса и стремитесь получить свойство «[GetTrait('whole_of_body').GetName(GetPlayer)]»\n$BULLET_WITH_TAB$Избавьтесь от чрезмерных свойств личности, получите положительное свойство стресса и свойство «[GetTrait('whole_of_body').GetName(GetPlayer)]»\n$BULLET_WITH_TAB$Завершите образы жизни одного из навыков и отделитесь от мира\n#bold Ритуалы и внешняя алхимия#!\n$BULLET_WITH_TAB$Соберите владения с разными типами местности и получите свойство «[GetTrait('lifestyle_gardener').GetName(GetPlayer)]» или «[GetTrait('lifestyle_herbalist').GetName(GetPlayer)]»\n$BULLET_WITH_TAB$Собирайте артефакты с разными бонусами к навыкам, исследуйте [Concept('umbra', 'Умбру')|E] или связывайте призраков\n$BULLET_WITH_TAB$Собирайте артефакты с разными мощными бонусами к навыкам или обзаведитесь [Concept('spirit_companion', 'духами-спутниками')|E]\n#bold Отношения и поддержание жизни#!\n$BULLET_WITH_TAB$Развивайте свою державу и добивайтесь благосклонности вассалов\n$BULLET_WITH_TAB$Установите близкие отношения с умелыми персонажами\n$BULLET_WITH_TAB$Обретите силу действовать — и воздержитесь от действия"
+
+ POD_story_elixir_of_eternal_life_explanation_stage2_brief: "Достигнув 30 [Concept('trait_level_track_xp', 'опыта')|E], завершите [Concept('journeys', 'странствия')|E], чтобы получить подсказки, и медитируйте, чтобы приблизиться к совершенству."
+ POD_story_elixir_of_eternal_life_explanation_stage2_full: "Достигнув 30 [Concept('trait_level_track_xp', 'опыта')|E], вы больше не сможете принимать решения предыдущих путей. Вместо этого завершите [Concept('journeys', 'странствия')|E], чтобы получить подсказки, и медитируйте с помощью [Concept('decision', 'решения')|E], чтобы приблизиться к совершенству. Особенно образованные или искусные в магии персонажи могут пассивно изучать эликсир и расширять свои знания. Кроме того, благочестие и легендарная слава позволяют пассивно получать некоторые знания, тогда как высокий ужас и тирания затрудняют продвижение."
+
+ POD_story_elixir_of_eternal_life_explanation_stage3_notask: ""
+ POD_story_elixir_of_eternal_life_explanation_stage3_task: "\n\nЧтобы продвинуться дальше, #T #X ВЫЖИВИТЕ ИЛИ СДАЙТЕСЬ!#!#!"
+
+ POD_story_elixir_of_eternal_life_explanation_stage4_brief: "Если вы выживете, вам придётся либо убедить Восьмерых бессмертных даровать вам недостающие знания об эликсире, либо отвоевать себе место в преисподней Йоми."
+ POD_story_elixir_of_eternal_life_explanation_stage4_full: "Чтобы завершить эликсир Вечной жизни, вам нужно будет связать его с измерением в землях мертвых. Такое царство будет служить вашим [UmbraGlossaryLocalized('shadow_realm','миром теней')] и обеспечит духов, которые будут вселены в созданных вами #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумий#!#!. Однако, хотя заклинание может быть привязано к любому месту, только Врата Небес и Тысяча преисподен могут удерживать души Бессмертных Поднебесной. Вам нужно будет убедить владыку измерения позволить вам связать с ним эликсир. Несколько безумцев пытались изучить обе версии эликсира, но никому не удалось совершить этот подвиг. Говорят, что человек не может служить двум господам; возможно, вы докажете обратное."
+
+ ########################
+ #### Lunar Auspices ####
+ ########################
+
+ lunar_auspice_xp_gain_message: "Благосклонность Луны"
+
+ battle_combat_encounters_enabled_tooltip: "Когда вы командуете [Concept('army', 'армией')|E], могут начаться @pod_combat_encounter_icon![Concept('pod_combat_encounters_with_icon', 'боевые столкновения')|E]"
+
+ POD_story_lunar_auspice_ahroun: "Гнев полнолуния"
+ POD_story_lunar_auspice_ahroun_desc: "Cool Text"
+ POD_story_lunar_auspice_ahroun_extra_text: "$TAB$#FONT:PODSubtitles;size:24 Гнев полнолуния#!\n\nИз всех [Glossary('фера', 'glossary_fera_tt')] #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L гару#!#! являются самыми воинственными. Но даже среди них аруны стоят особняком. Примите свое наследие, покажите миру свою [Concept('prowess', 'доблесть')|E]!\n\nАруны заслуживают благосклонность [Glossary('Луны', 'glossary_luna_tt')], побеждая в @pod_combat_encounter_icon![Concept('pod_combat_encounters_with_icon', 'боевых столкновенияъ')|E] противников с таким же мастерством. Победы над слабыми не приносят славы. Чем сильнее цель, тем больше вы получите [Concept('trait_level_track_xp', 'опыта')|E].\n\nДругим персонажам можно бросить вызов через [Concept('character_interaction', 'взаимодействие персонажа')|E] #V «$POD_rhythm_of_war_interaction$»#!. Эти @pod_combat_encounter_icon![Concept('pod_combat_encounters_with_icon', 'боевые столкновения')|E] почти всегда смертельны, только другие #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L гару#!#! могут соглашаться на несмертельные поединки, и в этом случае награда будет уменьшена.\n\n[GetModifier('POD_werewolf_form_crinos_modifier').GetNameWithTooltip][prowess_i|E]: [Story.GetOwner.MakeScope.ScriptValue('POD_ahroun_true_prowess')|V0]\nСамая слабая подходящая цель[prowess_i|E]: [Story.GetOwner.MakeScope.ScriptValue('POD_ahroun_target_prowess_min')|V0]"
+ POD_story_lunar_auspice_ahroun_powerful_target_list: "Ближайшие достойные противники"
+ POD_story_lunar_auspice_ahroun_target_list: "Ближайшие противники"
+ ahroun_snarl_sgui: "Рык вызова"
+
+
+ POD_story_lunar_auspice_galliard: "Сказание округлённой луны"
+ POD_story_lunar_auspice_galliard_desc: "Cool Text"
+ POD_story_lunar_auspice_galliard_extra_text: "$TAB$#FONT:PODSubtitles;size:24 Сказание округлённой луны#!\n\nПесни повествуют о минувших днях, счастливых временах и мучительных событиях, о героях и злодеях. Прислушайтесь к песням галлиардов: они поют о прошлом и о вашем будущем. Смотрите, как их песни оживляют слова и определяют вашу судьбу.\n\nГаллиарды заслуживают благосклонность [Glossary('Луны', 'glossary_luna_tt')], сплетая #clickable песни#! с помощью [Concept('character_interaction', 'взаимодействия персонажа')|E] #V «Первобытная песня»#!. Чем больше в песне #clickable куплетов#!, тем больше вы получаете [Concept('trait_level_track_xp', 'опыта')|E].\n\nПодготовка #clickable песни#! требует времени. Пока она не готова, действует штраф к восстановлению @gnosis_icon!гнозиса. Её эффекты проявятся лишь после завершения подготовки."
+
+ POD_story_lunar_auspice_galliard_song_targets: "Слушатели"
+
+ galliard_song_timer_modifier: "Набирающая силу песня"
+ galliard_song_timer_modifier_desc: "Песня галлиарда набирает силу. Лишь время покажет, какую историю она поведает."
+ galliard_song_upkeep_modifier: "Первобытная песня"
+
+ galliard_song_galliard_notification: "Первобытная песня"
+
+
+
+
+ POD_story_lunar_auspice_philodox: "Суд полумесяца"
+ POD_story_lunar_auspice_philodox_desc: "Cool Text"
+ POD_story_lunar_auspice_philodox_extra_text: "$TAB$#FONT:PODSubtitles;size:24 Суд полумесяца#!\n\nВолк опасен, но его легко обойти, обмануть или даже убить. Стая, однако, компенсирует эти недостатки численностью и слаженностью. Стаи #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L гару#!#! ничем не отличаются, и их эффективность зависит от филодокса. Поведёте ли вы свою стаю к славе или в могилу?\n\nФилодоксы заслуживают благосклонность [Glossary('Луны', 'glossary_luna_tt')], завершая [Concept('journeys', 'странствия')|E] #clickable «Тренировка стаи»#!. Количество полученного [Concept('trait_level_track_xp', 'опыта')|E] зависит от их навыков [Concept('stewardship', 'управления')|E] и ранга оборотня. #clickable Тренировка стаи#! улучшается по мере продвижения в [Concept('lifestyle', 'жизненном пути')|E] [Concept('lunar_auspicegifts_lifestyle', 'даров лунного покровительства')|E]."
+
+ POD_story_lunar_auspice_philodox_pack_members: "Члены стаи"
+
+
+
+ POD_story_lunar_auspice_ragabash: "Свет новолуния"
+ POD_story_lunar_auspice_ragabash_desc: "Cool Text"
+ POD_story_lunar_auspice_ragabash_extra_text: "$TAB$#FONT:PODSubtitles;size:24 Свет новолуния#!\n\nКогда ночи темнеют и всевозможные чудовища выходят на охоту, находятся и те, кто выслеживает их самих. Хитрость и терпение позволят клыкам этих хищников добраться до горла добычи. Берегитесь #clickable лунного света#!: он помечает вас как их жертву.\n\nРагабашы заслуживают благосклонность [Glossary('Луны', 'glossary_luna_tt')], добывая [Concept('artifacts', 'артефакты')|E] #clickable «Знак Луны»#!, появляющиеся у других персонажей. Основной способ — [Concept('journey', 'странствие')|E] #V «Кража артефакта»#!, но другие методы, например [Concept('schemes', 'происки')|E], тоже подходят.\n\nУ #clickable знаков#! есть [Concept('artifact_power', 'сила артефакта')|E], которая определяет величину награды. При наличии соответствующего достоинства также могут появляться #clickable озарённые луной знаки#!. Они уникальны и дают гораздо более ценные награды. С повышением вашего ранга среди #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L вервольфов#!#! появляются более сильные #clickable знаки#!.\n\n#clickable Проявилось озарённых луной знаков:#! [Story.MakeScope.Var('total_moonlit_marks_spawned').GetValue|V0]/[EmptyScope.ScriptValue('POD_ragabash_moonlit_marks_max')|V0]"
+
+ POD_story_lunar_auspice_ragabash_marks: "Знаки [Glossary('Луны', 'glossary_luna_tt')]"
+ artifact_mark_of_luna: "@ragabash_icon!Знак Луны"
+ artifact_mark_of_luna_description: "На вас устремлён взгляд [Glossary('Луны', 'glossary_luna_tt')]."
+ artifact_moonlit_mark_of_luna: "@ragabash_icon!#clickable Озарённый луной#! знак Луны"
+ artifact_moonlit_mark_of_luna_description: "#clickable Лунный свет#! ярко сияет. На вас устремлён взгляд [Glossary('Луны', 'glossary_luna_tt')]."
+ moonlit_mark_prowess_modifier: "#clickable Лунная#! сила"
+ moonlit_mark_opinion_modifier: "#clickable Лунная#! харизма"
+ moonlit_mark_heist_modifier: "#clickable Лунная#! маска"
+ moonlit_mark_hounds_modifier: "#clickable Лунные#! родичи"
+ moonlit_mark_hounds_modifier_desc: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('hounds_luna').GetName]"
+ moonlit_mark_immunity_modifier: "#clickable Лунная#! благодать"
+ moonlit_mark_immunity_modifier_desc: "Даёт невосприимчивость к @pod_combat_silver_icon![Concept('silver_damage', 'урону от серебра')|E]."
+
+
+
+ POD_story_lunar_auspice_theurge: "Общение серповидной луны"
+ POD_story_lunar_auspice_theurge_desc: "Cool Text"
+ POD_story_lunar_auspice_theurge_extra_text: "$TAB$#FONT:PODSubtitles;size:24 Общение серповидной луны#!\n\nНесмотря на тесную связь #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L гару#!#! с духами, многие из них не понимают всех тонкостей мира духов. Теург может провести большую часть жизни в [Concept('umbra', 'Умбре')|E], но постичь лишь малую долю её силы. Однако это не мешает им пытаться.\n\nТеурги заслуживают благосклонность [Glossary('Луны', 'glossary_luna_tt')], применяя [Concept('character_interaction', 'взаимодействие персонажа')|E] #clickable «Привязать духа»#! к своим [Concept('spirit_companions', 'духам-спутникам')|E]. Это связывает дух с принадлежащим вам каэрном, предоставляя провинции или графству дополнительные бонусы. Духов можно найти, исследуя любое измерение в [UmbraGlossaryLocalized('spirit_wilds','Духовных дебрях')], призвав их или завершив [Concept('journeys', 'странствия')|E] #V поисков духа#!."
+
+ POD_story_lunar_auspice_theurge_spirit_companions: "Духи-спутники"

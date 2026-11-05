@@ -82,8 +82,9 @@
  POD_embrace.400.option.d.tt: "Вы отказываетесь от попытки даровать Объятия персонажу [target.GetFirstName]"
 
  POD_embrace.410.t: "Объятия"
- POD_embrace.410.desc: "Вам удалось одержать верх, и теперь [target.GetFirstName] находится в вашей власти. Высасывая кровь из [target.GetHerHis] тела, вы можете почувствовать, как жизнь покидает [target.GetHerHis]. Вы знаете, что то, что вы пытаетесь сделать, редко бывает успешным, но мысль о том, что вы можете сотворить, заставляет вас забыть обо всех этих глупых предосторожностях.\nОбращение перевёртышей почти всегда приводит к провалу, поскольку они защищены от вампирской крови. Те немногие подтверждённые случаи, когда жертва не умирала во время процесса, заканчивались тем, что они становились ужасными [Glossary('мерзостями','game_concept_abomination_desc')]."
+ POD_embrace.410.desc: "Вам удалось одержать верх, и теперь [target.GetFirstName] находится в вашей власти. Высасывая кровь из [target.GetHerHis] тела, вы можете почувствовать, как жизнь покидает [target.GetHerHis]. Вы знаете, что то, что вы пытаетесь сделать, редко бывает успешным, но мысль о том, что вы можете сотворить, заставляет вас забыть обо всех этих глупых предосторожностях.\nОбращение [Glossary('фера', 'glossary_fera_tt')] почти всегда приводит к провалу, поскольку они защищены от вампирской крови. Те немногие подтверждённые случаи, когда жертва не умирала во время процесса, заканчивались тем, что они становились ужасными [Glossary('мерзостями','game_concept_abomination_desc')]."
  POD_embrace.410.option.a: "Пора действовать."
+ POD_embrace.410.option.a.incompatible: "#N У вас очень плохое предчувствие...#!"
  POD_embrace.410.option.a.tt: "Вы попытаетесь обратить персонажа [target.GetFirstName]"
  POD_embrace.410.option.a.fail.tt: "[target.GetFirstName] умирает в агонии"
  POD_embrace.410.option.a.success.tt: "[target.GetFirstName] успешно [Select_CString(target.IsFemale, 'обращена', 'обращён' )]"
@@ -91,17 +92,23 @@
  POD_embrace.420.t: "Творец монстров"
  POD_embrace.420.desc: "Через некоторое время [target.GetFirstName] открывает свои глаза. Вы видите гримасу ужаса на [target.GetHerHis] лице, и в этот момент к вам приходит ужасное осознание... Вы добились успеха, вы создали монстра, мерзость, которая теперь является вашим дитя."
  POD_embrace.420.option.a: "Наконец-то успех."
- POD_embrace.420.option.a.tt: "[target.GetFirstName] перестаёт быть перевёртышем и становится [Glossary('мерзостью','game_concept_abomination_desc')]."
+ POD_embrace.420.option.a.tt: "[target.GetFirstName] перестаёт быть [Glossary('фера', 'glossary_fera_tt')] и становится [Glossary('мерзостью','game_concept_abomination_desc')]."
 
  POD_embrace.430.t: "Провалившиеся Объятия"
  POD_embrace.430.desc: "Несмотря на все ваши попытки, [target.GetFirstName] [Select_CString(target.IsFemale, 'умерла', 'умер' )]. Вы слышали только крики агонии, когда [target.GetHerHis] тело и душа яростно отвергали вашу кровь. И теперь [target.GetFirstName] действительно [Select_CString(target.IsFemale, 'умерла', 'умер' )]. Может быть, [target.GetHerHim] всё-таки повезло?"
  POD_embrace.430.option.a: "Досадно."
- POD_embrace.430.option.a.tt: "Ваша попытка даровать Объятия провалилась"
 
  POD_embrace.440.t: "Неудачная попытка"
  POD_embrace.440.desc: "[target.GetFirstName] [Select_CString(target.IsFemale, 'сумела', 'сумел' )] противостоять вашим попыткам взять верх. Теперь вам остаётся только спасаться от [target.GetHerHis] гнева."
  POD_embrace.440.option.a: "Последнее поражение."
  POD_embrace.440.option.a.tt: "Вы не смогли даровать Объятия персонажу [target.GetFirstName]"
+
+ POD_embrace.450.t: "Серьёзная ошибка"
+ POD_embrace.450.desc.intro: "Похоже, не все [Glossary('фера', 'glossary_fera_tt')] могут стать [Glossary('мерзостями','game_concept_abomination_desc')]. Знания, которые вы хотели бы знать перед попыткой.\n\n"
+ POD_embrace.450.desc.mokole: "$POD_embrace.450.desc.intro$Борьба с [Glossary('фера', 'glossary_fera_tt')] — это всегда риск для вампира, но это нечто большее. Существо чистой безудержной резни теперь бросается на вас. В звере не осталось ни мыслей, ни чувств, ни милосердия.\nТолько инстинкт гонит его вперёд, и этот инстинкт направлен на то, чтобы уничтожить вас."
+ POD_embrace.450.option.a: "Я [Select_CString(ROOT.Char.IsFemale, 'должна', 'должен' )] бежать!"
+ POD_embrace.450.option.a.tooltip: "#help [GetTrait('mokole').GetName( GetNullCharacter )] впадает в неистовство, а затем сгорает дотла с восходом солнца#!"
+
 
  POD_embrace_ongoing.tt.target_will_be_embraced: "[target.GetFirstName] будет [Select_CString(target.IsFemale, 'обращена', 'обращён' )] персонажем [foe.GetFirstName]"
  POD_embrace_ongoing.tt.ai_embraces_target: "[target.GetFullName] [Select_CString(target.IsFemale, 'была обращена', 'был обращён' )] персонажем [vampiresire.GetFullName]"

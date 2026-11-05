@@ -1,0 +1,17 @@
+﻿l_russian:
+
+ POD_CHANGE_CHARACTER_DEBATE_FORCE_ADD: "Ваша сила в дебатах #P увеличивается#! на $VALUE|0V$"
+ POD_CHANGE_CHARACTER_DEBATE_FORCE_SUBTRACT: "Ваша сила в дебатах #N уменьшается#! на $VALUE|0V$"
+ POD_CHANGE_OPPONENTS_DEBATE_FORCE_ADD: "Сила оппонента в дебатах #N увеличивается#! на $VALUE|0V$"
+ POD_CHANGE_OPPONENTS_DEBATE_FORCE_SUBTRACT: "Сила оппонента в дебатах #P уменьшается#! на $VALUE|0V$"
+
+ POD_debate_debate_strength_header: "#clickable Ваша текущая сила в дебатах - [GetPlayer.MakeScope.GetVariable('character_debate_force').GetValue|V0]\nСила оппонента в дебатах оценивается в [GetPlayer.MakeScope.GetVariable('opponents_debate_force').GetValue|V0]#!\n\n"
+ POD_debate_debate_explanation_footer: "$POD_debate_debate_explanation_footer_description$$POD_debate_debate_explanation_footer_initial_score$"
+ POD_debate_debate_explanation_footer_description: "\n\n#R В этих дебатах используется показатель силы. Его начальное значение зависит от вашей дипломатии и дипломатии вашего канцлера, а также от ваших свойств, славы, благочестия и отношений с оппонентом. Во время дебатов показатель будет повышаться или понижаться в зависимости от силы ваших аргументов.#!"
+ POD_debate_debate_explanation_footer_initial_score: "\n#R Ваша начальная сила в дебатах — [GetPlayer.MakeScope.GetVariable('character_debate_force').GetValue|0].#!"
+ POD_debate_argument.effect.success.desc: "Ваши аргументы убедительны"
+ POD_debate_argument.critical.failure.effect.desc: "Ваши аргументы неубедительны"
+
+ POD_debate_select_opponent: "Выбран в качестве оппонента на дебатах"
+ POD_debate_select_opponent_from_dynasty: "Выбирает оппонентов в дебатах из вашей династии #weak ([GetPlayer.GetDynasty.GetBaseName])#!"
+ POD_debate_select_opponent_from_faith: "Выбирает оппонентов из числа ваших единоверцев #weak ([GetPlayer.GetFaith.GetName])#!"

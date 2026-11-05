@@ -22,12 +22,12 @@
  CHI_ARTS_HARMONIOUS_TRAVEL_PERK_EFFECT: "#flavor Совершенствующийся следует за линиями удачи в надежде на мирные путешествия.#!"
 
  chi_arts_harmonious_ward_perk_name: "Гармоничная стена"
- CHI_ARTS_HARMONIOUS_WARD_PERK_EFFECT: "#flavor Благодаря своим знаниям совершенствующийся может спроектировать свою защиту таким образом, чтобы сверхъестественным образом увеличить её мощь.#!"
+ CHI_ARTS_HARMONIOUS_WARD_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_kueijin_harmonious_wards')].\n#flavor Благодаря своим знаниям совершенствующийся может спроектировать свою защиту таким образом, чтобы сверхъестественным образом увеличить её мощь.#!"
 
  chi_arts_inwards_harmonious_aligment_perk_name: "Внутреннее гармоничное сродство"
  chi_arts_outwards_harmonious_aligment_perk_name: "Внешнее гармоничное сродство"
  CHI_ARTS_INWARDS_HARMONIOUS_ALIGMENT_PERK_EFFECT: "#flavor Совершенствующийся направляет свою внутреннюю ци на близлежащие драконьи линии, получая незначительные блага.#!"
- CHI_ARTS_OUTWARDS_HARMONIOUS_ALIGMENT_PERK_EFFECT: "Разблокирована постройка «[GetBuilding('feng_shui_harmonized_area_01').GetName]».\n#flavor Совершенствующийся выравнивает ци по ближайшей драконьей линии, обеспечивая спокойный поток энергии.#!"
+ CHI_ARTS_OUTWARDS_HARMONIOUS_ALIGMENT_PERK_EFFECT: "Разблокирована постройка «[GetBuilding('feng_shui_harmonized_area_01').GetName]».\n[PODUnlocksCombatMove('POD_combat_move_kueijin_hand_of_darkness')].\n#flavor Совершенствующийся выравнивает ци по ближайшей драконьей линии, обеспечивая спокойный поток энергии.#!"
 
  chi_arts_chi_ward_perk_name: "Стена ци"
  CHI_ARTS_CHI_WARD_PERK_EFFECT: "Разблокирована постройка «[GetBuilding('feng_shui_harmonized_area_02').GetName]».\n#flavor Совершенствующийся направляет поток ци из города в драконье гнездо.#!"
@@ -47,7 +47,7 @@
  CHI_ARTS_EVALUATE_YANG_SOUL_PERK_EFFECT: "#flavor Совершенствующийся оценивает местных духов ян и то, как их использовать.#!"
 
  chi_arts_soul_bridge_perk_name: "Связь душ"
- CHI_ARTS_SOUL_BRIDGE_PERK_EFFECT: "Вы можете получить [Concept('weak_hook', 'слабое влияние')|E] на цель, предоставив ей [Concept('weak_hook', 'слабое влияние')|E] на себя через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Совершенствующийся связывает свою ци с ци другого существа, чтобы достичь взаимопонимания друг с другом.#!"
+ CHI_ARTS_SOUL_BRIDGE_PERK_EFFECT: "Вы можете получить [Concept('weak_hook', 'слабое влияние')|E] на цель, предоставив ей [Concept('weak_hook', 'слабое влияние')|E] на себя через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_kueijin_soul_bridge')].\n#flavor Совершенствующийся связывает свою ци с ци другого существа, чтобы достичь взаимопонимания друг с другом.#!"
 
  chi_arts_corrupting_yin_soul_perk_name: "Осквернение души Инь"
  chi_arts_taming_yang_soul_perk_name: "Приручение души Ян"
@@ -63,7 +63,7 @@
  CHI_ARTS_SOUL_SHACKLES_PERK_EFFECT: "Улучшает достоинство «[GetPerk('chi_arts_soul_bridge_perk').GetName(GetPlayer)]», удаляя [Concept('weak_hook', 'слабое влияние')|E], которое цель получает на вас.\n#flavor Когда совершенствующийся связывает свою ци с ци цели, он может нарушить свою часть соглашения.#!"
 
  chi_arts_voice_of_emperor_perk_name: "Глас императора"
- CHI_ARTS_VOICE_OF_EMPEROR_PERK_EFFECT: "Улучшает достоинство «[GetPerk('chi_arts_soul_bridge_perk').GetName(GetPlayer)]», позволяя пропустить требования к [Concept('opinion', 'мнению')|E], если цель находится в той локации, что и вы.\n#flavor Совершенствующийся может связать свою ци с ци цели только с помощью слова.#!"
+ CHI_ARTS_VOICE_OF_EMPEROR_PERK_EFFECT: "Улучшает достоинство «[GetPerk('chi_arts_soul_bridge_perk').GetName(GetPlayer)]», позволяя пропустить требования к [Concept('opinion', 'мнению')|E], если цель находится в той локации, что и вы.\n[PODUnlocksCombatMove('POD_combat_move_kueijin_voice_of_emperor')].\n#flavor Совершенствующийся может связать свою ци с ци другого существа только с помощью слова.#!"
 
 
  chi_arts_dragon_call_perk_name: "Зов дракона"
@@ -72,7 +72,7 @@
  CHI_ARTS_CHI_NEST_PERK_EFFECT: "#flavor Совершенствующийся может направить небольшую часть драконьей линии в их логово.#!"
 
  chi_arts_chi_shaping_perk_name: "Формирование ци"
- CHI_ARTS_CHI_SHAPING_PERK_EFFECT: "Разблокирована постройка «[GetBuilding('extended_dragon_nest_01').GetName]».\n#flavor Совершенствующийся может формировать то, как ци течёт по драконьим линиям.#!"
+ CHI_ARTS_CHI_SHAPING_PERK_EFFECT: "Разблокирована постройка «[GetBuilding('extended_dragon_nest_01').GetName]».\n[PODUnlocksCombatMove('POD_combat_move_kueijin_chi_shaping')].\n#flavor Совершенствующийся может формировать то, как ци течёт по драконьим линиям.#!"
 
  chi_arts_yin_wall_perk_name: "Стена Инь"
  chi_arts_yang_wall_perk_name: "Стена Ян"
@@ -84,7 +84,7 @@
 
  chi_arts_open_dragon_gate_perk_name: "Открытие драконьих врат"
  chi_arts_expand_dragon_river_perk_name: "Расширение драконьей реки"
- CHI_ARTS_OPEN_DRAGON_GATE_PERK_EFFECT: "Требования к [Concept('development', 'развитию')|E] для драконьих гнёзд снижены на #V 10#!.\n#flavor Совершенствующийся может силой вскрыть драконье гнездо.#!"
+ CHI_ARTS_OPEN_DRAGON_GATE_PERK_EFFECT: "Требования к [Concept('development', 'развитию')|E] для драконьих гнёзд снижены на #V 10#!.\n[PODUnlocksCombatMove('POD_combat_move_kueijin_ride_the_dragon')].\n#flavor Совершенствующийся может силой вскрыть драконье гнездо.#!"
  CHI_ARTS_EXPAND_DRAGON_RIVER_PERK_EFFECT: "Требования к [Concept('development', 'развитию')|E] для драконьих гнёзд снижены на #V 10#!.\n#flavor Совершенствующийся может раздуть размеры драконьей реки.#!"
 
  chi_arts_sapping_the_dragon_nest_perk_name: "Истощение драконьего гнезда"
@@ -97,7 +97,7 @@
  CHI_ARTS_YANG_MANTLE_PERK_EFFECT: "#flavor Совершенствующийся окутывает себя мантией ян, делая себя более привлекательным и могущественным.#!"
 
  chi_arts_accentuate_chi_perk_name: "Усиление ци"
- CHI_ARTS_ACCENTUATE_CHI_PERK_EFFECT: "Вы можете исцелить [EmptyScope.ScriptValue('POD_base_heal_value')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Совершенствующийся может изменять поток ци в теле цели, заживляя раны.#!"
+ CHI_ARTS_ACCENTUATE_CHI_PERK_EFFECT: "Вы можете исцелить [EmptyScope.ScriptValue('POD_base_heal_value')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_kueijin_accentuate_chi')].\n#flavor Совершенствующийся может изменять поток ци в теле цели, заживляя раны.#!"
 
  chi_arts_eightfold_yin_mantle_perk_name: "Восьмислойная мантия Инь"
  chi_arts_eightfold_yang_mantle_perk_name: "Восьмислойная мантия Ян"
@@ -109,7 +109,7 @@
 
  chi_arts_yin_nihilus_perk_name: "Облако Инь"
  chi_arts_yang_phoenix_perk_name: "Феникс Ян"
- CHI_ARTS_YIN_NIHILUS_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат модификатор [GetModifier('chi_arts_yin_nihilus_modifier').GetNameWithTooltip].\n#flavor Совершенствующийся может взорвать «бомбу» чистой инь, воздействуя на близлежащую жизнь с неестественной жесткостью.#!"
+ CHI_ARTS_YIN_NIHILUS_PERK_EFFECT: "Вражеские [Concept('knights', 'рыцари')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники во время [Concept('single_combat_duel_plural', 'поединков')|E] получат модификатор [GetModifier('chi_arts_yin_nihilus_modifier').GetNameWithTooltip].\n[PODUnlocksCombatMove('POD_combat_move_kueijin_yin_nihilus')].\n#flavor Совершенствующийся может взорвать «бомбу» чистой инь, воздействуя на близлежащую жизнь с неестественной жесткостью.#!"
  CHI_ARTS_YANG_PHOENIX_PERK_EFFECT: "Союзные [Concept('knights', 'рыцари')|E] в [Concept('combat_phase', 'бою')|E] или вы сами во время [Concept('single_combat_duel_plural', 'поединков')|E] получите модификатор [GetModifier('chi_arts_yang_phoenix_modifier').GetNameWithTooltip].\n#flavor Совершенствующийся может взорвать «бомбу» чистой ян, воздействуя на близлежащую жизнь с неестественной скоростью.#!"
 
  chi_arts_chi_mastery_perk_name: "Власть над ци"
@@ -122,7 +122,7 @@
  CHI_ARTS_CRY_OF_YANG_PERK_EFFECT: "В начале войны все вражеские [Concept('knights', 'рыцари')|E] получат модификатор [GetModifier('chi_arts_cry_of_yang_modifier').GetNameWithTooltip] на 3 года.\n#flavor Совершенствующийся наполняет свой голос ци Ян, отвлекая противника мыслями о гиперактивности.#!"
 
  chi_arts_battle_cry_perk_name: "Боевой клич"
- CHI_ARTS_BATTLE_CRY_PERK_EFFECT: "#flavor Совершенствующийся может объявить название своей следующей атаки, что лишает его элемента неожиданности, но значительно увеличивает его силу.#!"
+ CHI_ARTS_BATTLE_CRY_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_kueijin_battle_cry')].\n#flavor Совершенствующийся может объявить название своей следующей атаки, что лишает его элемента неожиданности, но значительно увеличивает его силу.#!"
 
  chi_arts_roar_of_dragon_perk_name: "Рёв Чёрного дракона"
  chi_arts_roar_of_phoenix_perk_name: "Рёв Алого феникса"
@@ -134,7 +134,7 @@
 
  chi_arts_scream_of_demon_perk_name: "Крик тысячи преисподен"
  chi_arts_silent_scream_perk_name: "Безмолвный крик"
- CHI_ARTS_SCREAM_OF_DEMON_PERK_EFFECT: "В начале войны все вражеские [Concept('knights', 'рыцари')|E] с внутренней тенью, например, вампиры, призраки или куэй-дзин без свойства «[GetTrait('dharma10').GetName(GetPlayer)]» получат 30 [Concept('stress', 'стресса')|E].\n#flavor Совершенствующийся одним криком высвобождает своё П'о, приводя в неистовство находящихся поблизости существ.#!"
+ CHI_ARTS_SCREAM_OF_DEMON_PERK_EFFECT: "В начале войны все вражеские [Concept('knights', 'рыцари')|E] с внутренней тенью, например, вампиры, призраки или куэй-дзин без свойства «[GetTrait('dharma10').GetName(GetPlayer)]» получат 30 [Concept('stress', 'стресса')|E].\n[PODUnlocksCombatMove('POD_combat_move_kueijin_greater_ngilai')].\n#flavor Совершенствующийся одним криком высвобождает своё П'о, приводя в неистовство находящихся поблизости существ.#!"
  CHI_ARTS_SILENT_SCREAM_PERK_EFFECT: "Бонусный шанс изувечить вражеских [Concept('knights', 'рыцарей')|E] при нахождении в [Concept('combat_phase', 'бою')|E] в качестве [Concept('knight', 'рыцаря')|E].\n#flavor Совершенствующийся может использовать все предыдущие способности Киаи одним лишь шёпотом.#!"
 
  chi_arts_divine_cry_perk_name: "Крик, пронзающий небеса"
@@ -143,7 +143,7 @@
 
  chi_arts_joss_weaving_perk_name: "Кружева удачи"
  chi_arts_fate_of_star_perk_name: "Несчастливая судьба"
- CHI_ARTS_JOSS_WEAVING_PERK_EFFECT: "Разблокировано взаимодействие персонажа, позволяющее наделить цель модификатором удачи.\n\n#flavor Совершенствующийся вплетает чистую удачу в свои желания.#!"
+ CHI_ARTS_JOSS_WEAVING_PERK_EFFECT: "Разблокировано взаимодействие персонажа, позволяющее наделить цель модификатором удачи.\n[PODUnlocksCombatMove('POD_combat_move_kueijin_grand_dukes_theorem')].\n#flavor Совершенствующийся вплетает чистую удачу в свои желания.#!"
  CHI_ARTS_FATE_OF_STAR_PERK_EFFECT: "#flavor Совершенствующийся может предсказать, что произойдёт с его целью.#!"
 
  chi_arts_realigning_the_stars_perk_name: "Подстановка звёзд"
@@ -159,7 +159,7 @@
 
  chi_arts_celestial_curse_perk_name: "Проклятие небес"
  chi_arts_read_the_twelve_perk_name: "Чтение двенадцати"
- CHI_ARTS_CELESTIAL_CURSE_PERK_EFFECT: "Улучшает достоинство «[GetPerk('chi_arts_cursing_the_star_perk').GetName(GetPlayer)]», нанося [Multiply_CFixedPoint(EmptyScope.ScriptValue('POD_base_wound_damage'),'(CFixedPoint)2')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#!.\n#flavor Совершенствующийся может наложить небесное проклятие на весь гороскоп цели.#!"
+ CHI_ARTS_CELESTIAL_CURSE_PERK_EFFECT: "Улучшает достоинство «[GetPerk('chi_arts_cursing_the_star_perk').GetName(GetPlayer)]», нанося [Multiply_CFixedPoint(EmptyScope.ScriptValue('POD_base_wound_damage'),'(CFixedPoint)2')|V0] ед. #TOOLTIP:game_concept_POD_superficial_damage_desc #E поверхностного урона#!#!.\n[PODUnlocksCombatMove('POD_combat_move_kueijin_celestial_curse')].\n#flavor Совершенствующийся может наложить небесное проклятие на весь гороскоп цели.#!"
  CHI_ARTS_READ_THE_TWELVE_PERK_EFFECT: "#flavor Совершенствующийся может с большой точностью предсказать будущее своей цели, используя для гадания весь её гороскоп целиком.#!"
 
  chi_arts_substitution_of_the_twelve_perk_name: "Перерождение"

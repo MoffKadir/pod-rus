@@ -34,7 +34,7 @@
  POD_fleshcrafting_button_clear: "#I Нажмите, чтобы отменить все выбранные изменения#!"
  # invisible bullet so that the text is aligned with the other invisible bullets from the custom_tooltips in POD_fleshcrafting_list_all_perk_effects_on_character
  # this necessary trust me bro
- POD_fleshcrafting_button_reset: "#color:{0.0,0.0,0.0,0.0} $EFFECT_LIST_BULLET$#!#I Нажмите, чтобы повторно применить текущие изменения плоти персонажа [GetPlayer.MakeScope.Var('fleshcraft_target').Char.GetFirstName]#!\n\n#color:{0.0,0.0,0.0,0.0} [GetScriptedGui('POD_fleshcrafting_trait_tooltip').BuildTooltip( GuiScope.AddScope('character',GetPlayer.MakeScope.Var('fleshcraft_target').Char.MakeScope).End )]#!"
+ POD_fleshcrafting_button_reset: "#h $EFFECT_LIST_BULLET$#!#I Нажмите, чтобы повторно применить текущие изменения плоти персонажа [GetPlayer.MakeScope.Var('fleshcraft_target').Char.GetFirstName]#!\n\n#h [GetScriptedGui('POD_fleshcrafting_trait_tooltip').BuildTooltip( GuiScope.AddScope('character',GetPlayer.MakeScope.Var('fleshcraft_target').Char.MakeScope).End )]#!"
 
  POD_fleshcrafting_perk_name: "[Perk.GetNameNoTooltip( GetPlayer.MakeScope.Var('fleshcraft_target').Char.Self )]: @vicissitude_icon! #bold [EmptyScope.ScriptValue(Concatenate(Scope.GetFlagKey,'_complexity'))|0]#!"
  POD_fleshcrafting_perk_complexity: "@vicissitude_icon! #bold [EmptyScope.ScriptValue(Concatenate(Scope.GetFlagKey,'_complexity'))|0]#!"
@@ -53,5 +53,5 @@
 
  POD_fleshcrafting_need_to_select_perk: "Вам необходимо изменить хотя бы одну часть тела"
 
- POD_fleshcraft_trait_tt_header: "#bold;clickable;glow_color:{0.0,0.0,0.0,1.0} [Localize(SCOPE.GetFlagName('saved_tooltip'))]:#!"
+ POD_fleshcraft_trait_tt_header: "#bold;clickable;outline [Localize(SCOPE.GetFlagName('saved_tooltip'))]:#!"
  POD_fleshcraft_trait_tt_no_perks: "#weak [character.GetFirstNameNoTooltip] в настоящее время не имеет [Concept('fleshcrafting', 'изменений плоти')|E]#!"

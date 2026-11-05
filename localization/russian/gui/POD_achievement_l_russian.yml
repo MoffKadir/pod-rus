@@ -131,6 +131,11 @@
  achiev_unprovendharma: "Исследователь дхармы"
  achiev_unprovendharma_tt: "Получить свойство «[GetTrait('dharma10').GetName(GetNullCharacter)]» за персонажа с доктриной [GetDoctrine('special_doctrine_unproven_dharma').GetBaseName]."
 
+ lesson_achiev_dirtysecret: "$POD_achievement_gained$"
+ lesson_achiev_dirtysecret_desc: "Вы получили достижение: $achiev_dirtysecret$"
+ achiev_dirtysecret: "Грязные тайны Чёрной Руки"
+ achiev_dirtysecret_tt: "Cокрушить Тал'махе'Ра и покончить с элиудами, завершив личную историю Анделеона."
+
 
  ##### Hard Achievements
 
@@ -148,6 +153,11 @@
  lesson_achiev_nomnom_desc: "Вы получили достижение: $achiev_nomnom$"
  achiev_nomnom: "Я прогрызу свой путь вверх по лестнице"
  achiev_nomnom_tt: "Стать представителем четвёртого [Glossary('поколения','game_concept_vampgeneration_desc')] через [Glossary('диаблеризацию','game_concept_diablerie_desc')], начав за вампира тринадцатого поколения."
+
+ lesson_achiev_war_of_roses: "$POD_achievement_gained$"
+ lesson_achiev_war_of_roses_desc: "Вы получили достижение: $achiev_war_of_roses$"
+ achiev_war_of_roses: "Война роз"
+ achiev_war_of_roses_tt: "Поговорить или «поговорить» с Арикель, завершив личную историю Елены Троянской."
 
  lesson_achiev_noddist: "$POD_achievement_gained$"
  lesson_achiev_noddist_desc: "Вы получили достижение: $achiev_noddist$"
@@ -189,6 +199,11 @@
  achiev_anda: "Опережая время"
  achiev_anda_tt: "Выполнить весь контент, связанный с Анда, приводящий к полному завоеванию Китая, за персонажа из династии [GetDynastyHouseByID('house_anda').GetName]."
 
+ lesson_achiev_smile: "$POD_achievement_gained$"
+ lesson_achiev_smile_desc: "Вы получили достижение: $achiev_smile$"
+ achiev_smile: "...и Михаил улыбнулся"
+ achiev_smile_tt: "Завершить историю Мэри Чёрной возвращением Михаила и возрождением его Мечты."
+
 
  ##### Very Hard Achievements
 
@@ -211,6 +226,16 @@
  lesson_achiev_yukio_desc: "Вы получили достижение: $achiev_yukio$"
  achiev_yukio: "Месть куклы"
  achiev_yukio_tt: "Убить Эмма-О во время охоты на повелителя Яма за Юкио."
+
+ lesson_achiev_goratrix: "$POD_achievement_gained$"
+ lesson_achiev_goratrix_desc: "Вы получили достижение: $achiev_goratrix$"
+ achiev_goratrix: "Со второй попытки"
+ achiev_goratrix_tt: "Овладеть заклинанием Жизни за Горатрикса."
+
+ lesson_achiev_elixir: "$POD_achievement_gained$"
+ lesson_achiev_elixir_desc: "Вы получили достижение: $achiev_elixir$"
+ achiev_elixir: "Лучше перестраховаться, чем потом сожалеть"
+ achiev_elixir_tt: "Овладеть эликсиром Вечной жизни за [GetTrait('kueijin').GetName(GetNullCharacter)}l] со свойством  «[GetTrait('dharma10').GetName(GetNullCharacter)]»."
 
 
 

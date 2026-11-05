@@ -1,0 +1,61 @@
+﻿l_russian:
+
+
+ maeljingifts_lifestyle_name: "Дары маэлджинов"
+ maeljingifts_lifestyle_desc: "Этими тёмными дарами импульсы наделяют тех, кто стремится к могуществу, но за это всегда приходится платить."
+ maeljingifts_lifestyle_highlight_desc: "Из-за вашего модификатора «[GetModifier('POD_gnosis_5_modifier').GetNameWithTooltip]» ваш прирост [Concept('experience', 'опыта')|E] для этого образа жизни увеличен на #P [GetPlayer.Custom('GetEducationLifestylePercentageBoost')]#!."
+ monthly_maeljingifts_lifestyle_xp_gain_mult: "Ежемесячный прирост [Concept('experience', 'опыта')|E] на [Concept('lifestyle', 'пути')|E] даров маэлджинов"
+
+
+ maeljingifts_physical_visible: "Физиология"
+ maeljingifts_mental_visible: "Ментальность"
+
+ MAELJINGIFTS_REQ: "@warning_icon!#X [Concept('lifestyle_experience', 'Опыт образа жизни')|E] даров маэлджинов можно получить, исследуя определённые измерения в [UmbraGlossaryLocalized('malfeas','Малфеасе')]#!"
+
+
+ ###Physical
+ malformed_flesh_perk_name: "Искажённая плоть"
+ MALFORMED_FLESH_PERK_EFFECT: "#flavor Плоть высыхает и затвердевает, образуя защитный панцирь.#!"
+ malformed_muscle_perk_name: "Искажённые мышцы"
+ MALFORMED_MUSCLE_PERK_EFFECT: "#flavor Мышцы становятся непропорционально большими и мощными, что позволяет проявлять огромную силу.#!"
+ malformed_bone_perk_name: "Искажённые кости"
+ MALFORMED_BONE_PERK_EFFECT: "#flavor Кости становятся сильными и крепкими, что бросает вызов разрушительному воздействию времени.#!"
+ bestial_limbs_perk_name: "Звериные конечности"
+ BESTIAL_LIMBS_PERK_EFFECT: "Превращение в естественную звериную форму [Glossary('фера', 'glossary_fera_tt')] больше не требует затрат @gnosis_icon!гнозиса.\n#flavor Даже в форме Хомид ваши конечности сохраняют звериный облик, который меняется при смене облика.#!"
+ forked_tongue_perk_name: "Раздвоенный язык"
+ FORKED_TONGUE_PERK_EFFECT: "Можно выучить #V 1#! дополнительный [Concept('language', 'язык')|E] без штрафов.\n#flavor Никто не может сказать, где заканчивается одна ложь и начинается другая.#!"
+ reversed_eye_perk_name: "Вывернутый глаз"
+ REVERSED_EYE_PERK_EFFECT: "$countermeasures_unlocks_t2_all_seeing_eye$\n#flavor Когда вы в полной боевой готовности, ничто не сможет застать вас врасплох.#!"
+ bane_stomach_perk_name: "Брюхо бэйна"
+ BANE_STOMACH_PERK_EFFECT: "Открывает способ [Concept('execution', 'казни')|E] «Каннибализм».\nПоедание персонажа приносит [Concept('trait_level_track_xp', 'опыт пути развития свойства')|E] одному из ваших [Concept('spirit_companions', 'спутников')|E]-бэйнов.\n#flavor Сущность поглощённого будет питать не только ваше тело.#!"
+ BANE_STOMACH_REASON: "$bane_stomach_perk_name$: $VALUE|+=0$"
+ thundering_throat_perk_name: "Грохочущее горло"
+ THUNDERING_THROAT_PERK_EFFECT: "Принятие приглашения ко [Concept('court', 'двору')|E]: #P +10#!\nВражеские [Concept('knights', 'рыцари')|E], выступающие в роли [Concept('commander', 'командиров')|E] в [Concept('combat_phase', 'бою')|E] или ваши противники в [Concept('single_combat_duel_plural', 'поединках')|E] получат модификатор «[GetModifier('wyrm_thundering_throat_modifier').GetNameWithTooltip]» и #V 30#! [Concept('stress', 'стресса')|E], если они [Concept('intimidated', 'запуганы')|E] вами.\n#flavor Ваш голос, сотрясающий землю, будет услышан.#!"
+ THUNDERING_THROAT_INVITE: "[GetPerk('thundering_throat_perk').GetName(GetPlayer)]: $VALUE|=+0$"
+ profaned_lungs_perk_name: "Нечестивые лёгкие"
+ PROFANED_LUNGS_PERK_EFFECT: "Скорость [Concept('journey', 'странствия')|E] «Тренировка с группой ([GetPlayer.Custom('PODCoterieNoTooltip')])»: #P +25%#!\n#flavor Когда воздух устремляется в ваши огромные легкие, достигается идеальная выносливость, но не для вас.#!"
+ unholy_heart_perk_name: "Нечестивое сердце"
+ UNHOLY_HEART_PERK_EFFECT: "Ячейки [Concept('POD_health_track', 'здоровья')|E]: #P +1#!\nСнижает время преобразования [Concept('POD_aggravated_damage', 'серьёзного урона')|E] в [Concept('POD_superficial_damage', 'поверхностный')|E] на #V 1#! год.\n#flavor Очередной сосуд, захваченный Вирмом.#!"
+
+ ###Mental
+ dominance_perk_name: "Превосходство"
+ DOMINANCE_PERK_EFFECT: "#flavor Покажите им, чем вы лучше.#!"
+ indulgence_perk_name: "Снисхождение"
+ INDULGENCE_PERK_EFFECT: "#flavor Вперёд, вы это заслужили.#!"
+ obsession_perk_name: "Мания"
+ OBSESSION_PERK_EFFECT: "Открывает [Concept('scheme', 'происки')|E] «[GetScheme('abduct').GetTypeName]».\n#flavor Это должно быть у вас, чего бы это ни стоило.#!"
+ warped_reflection_perk_name: "Искажённое отражение"
+ WARPED_REFLECTION_PERK_EFFECT: "#flavor Ваше отражение стало нечётким, но вы уверены, что выглядите как никогда потрясающе.#!"
+ dancing_shadows_perk_name: "Танцующие тени"
+ DANCING_SHADOWS_PERK_EFFECT: "[character_interaction|E]: Наносит персонажу #V 1-3#! ед. [Concept('POD_superficial_damage', 'поверхностного урона')|E].\n#flavor Иногда ваша тень покидает вас, чтобы напасть на ваших врагов, по крайней мере так вам кажется.#!"
+ fragmented_psyche_perk_name: "Отколовшаяся психика"
+ FRAGMENTED_PSYCHE_PERK_EFFECT: "#flavor Обладая отколовшейся психикой, вы бы гораздо эффективнее достигали своих целей — разумеется, собственных.#!"
+ splintered_soul_perk_name: "Расщеплённая душа"
+ SPLINTERED_SOUL_PERK_EFFECT: "[character_interaction|E]: Создаёт собственный клон [Concept('ancestor_spirit', 'духа-предка')|E].\n#flavor Душа обретает собственную форму, чтобы лучше служить своему хозяину.#!"
+ maniacal_mind_perk_name: "Маниакальный ум"
+ MANIACAL_MIND_PERK_EFFECT: "[character_interaction|E]: Повышает [Concept('opinion', 'мнение')|E] персонажа о вас, одновременно увеличивая его [Concept('stress', 'стресс')|E].\n$countermeasures_unlocks_t3_mental_fortress$\n#flavor Разум в безопасности в своих заблуждениях, он изолирован от реальности.#!"
+ sanguine_spirit_perk_name: "Жизнерадостный дух"
+ SANGUINE_SPIRIT_PERK_EFFECT: "Усиление бэйнов теперь наносит вам только #V 1#! ед. [Concept('POD_aggravated_damage', 'серьёзного урона')|E].\nДоступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('nexus_crawlers').GetName].\n#flavor Дух сияет мрачным светом, притягивая родственные души.#!"
+ embrace_oblivion_perk_name: "Объятия Забвения"
+ EMBRACE_OBLIVION_PERK_EFFECT: "[character_interaction|E]: Позволяет заставить [Concept('wyrm_tainted', 'запятнанного')|E] [Glossary('фера', 'glossary_fera_tt')] полностью подчиниться власти [Glossary('Вирма', 'glossary_wyrm_tt')].\nОткрывает [Concept('lifestyle', 'путь')|E] [Concept('investiture_lifestyle', 'инвеституры')|E].\n#flavor Очередная душа, захваченная Вирмом.#!"
+ #\nUnlocks a unique level 4 [mental_break|E]. TODO Wyrm: add this back in once the stress stuff is done

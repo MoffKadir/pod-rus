@@ -1,0 +1,14 @@
+﻿l_russian:
+ POD_claimleadership_events.1.t: "Притязания на титул осеннего автократора"
+ POD_claimleadership_events.1.desc: "План прост: показать, кто действительно достоин титула осеннего автократора. Это можно сделать разными способами, и каждый из них будет использован, кроме убийства. Ведь я не [Select_CString(ROOT.Char.IsFemale, 'дикарка', 'дикарь' )]..."
+ POD_claimleadership_events.1.a: "Сделаем это!"
+ POD_claimleadership_events.1.b: "Не будем торопиться."
+
+ POD_claimleadership_events.2.t: "Притязания на титул осеннего автократора"
+ POD_claimleadership_events.2.desc: "Всё пошло по плану, и [target.GetName] [Select_CString(target.IsFemale, 'лишилась', 'лишился' )] последних крох репутации. Теперь все знают, что я, [GetPlayer.GetName], истинный осенний автократор."
+ POD_claimleadership_events.2.a: "Завтра [target.GetHerHis] ждёт приятный сюрприз!"
+ POD_claimleadership_events.2.b: "Какая разница, что они знают? Я всё равно [Select_CString(ROOT.Char.IsFemale, 'победила', 'победил' )]!"
+
+ POD_claimleadership_events.3.t: "Притязания на титул осеннего автократора: неудача"
+ POD_claimleadership_events.3.desc: "НЕТ, НЕТ, НЕТ, ну что за болваны! Они потерпели неудачу! [target.GetName] сохраняет свою репутацию незапятнанной, несмотря все мои различные попытки! И что хуже всего? Я выгляжу жалко!"
+ POD_claimleadership_events.3.a: "О нет..."

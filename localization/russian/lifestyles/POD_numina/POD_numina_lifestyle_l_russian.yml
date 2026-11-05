@@ -98,11 +98,11 @@
  anti_psi_4_perk_name: "Антиэкстрасенсорика/Щиты разума 4"
  anti_psi_5_perk_name: "Антиэкстрасенсорика/Щиты разума 5"
 
- ANTI_PSI_1_PERK_EFFECT: "#P +10#! вероятность защититься от эффектов, изменяющих сознание\nУвеличивает стоимость всех #TOOLTIP:GAME_TRAIT,psychic,[GetPlayer] #L ментальных#!#! [Concept('character_interaction', 'взаимодействий персонажа')|E], нацеленных на вас, на 25%\n#weak Антиэкстрасенсорика - это редкая способность блокировать другие ментальные нумины.\nПсихик может воздвигнуть ментальную защиту от сверхъестественного вторжения.\nПсихик подавляет другие психические способности в радиусе пяти метров вокруг пользователя.#!"
+ ANTI_PSI_1_PERK_EFFECT: "#P +10#! вероятность защититься от эффектов, изменяющих сознание\nУвеличивает стоимость всех #TOOLTIP:GAME_TRAIT,psychic,[GetPlayer] #L ментальных#!#! [Concept('character_interaction', 'взаимодействий персонажа')|E], нацеленных на вас, на 25%\n[PODUnlocksCombatMove('POD_combat_move_psychic_mind_shield')]\n#weak Антиэкстрасенсорика - это редкая способность блокировать другие ментальные нумины.\nПсихик может воздвигнуть ментальную защиту от сверхъестественного вторжения.\nПсихик подавляет другие психические способности в радиусе пяти метров вокруг пользователя.#!"
  ANTI_PSI_2_PERK_EFFECT: "#P +10#! вероятность защититься от эффектов, изменяющих сознание\nУвеличивает стоимость всех #TOOLTIP:GAME_TRAIT,psychic,[GetPlayer] #L ментальных#!#! [Concept('character_interaction', 'взаимодействий персонажа')|E], нацеленных на вас, на 25%\n#weak Психик подавляет другие психические способности в радиусе десяти метров вокруг пользователя.#!"
- ANTI_PSI_3_PERK_EFFECT: "#P +10#! вероятность защититься от эффектов, изменяющих сознание\nУвеличивает стоимость всех #TOOLTIP:GAME_TRAIT,psychic,[GetPlayer] #L ментальных#!#! [Concept('character_interaction', 'взаимодействий персонажа')|E], нацеленных на вас, на 25%\n#weak Психик подавляет другие психические способности в радиусе пятнадцати метров вокруг пользователя.#!"
+ ANTI_PSI_3_PERK_EFFECT: "#P +10#! вероятность защититься от эффектов, изменяющих сознание\nУвеличивает стоимость всех #TOOLTIP:GAME_TRAIT,psychic,[GetPlayer] #L ментальных#!#! [Concept('character_interaction', 'взаимодействий персонажа')|E], нацеленных на вас, на 25%\n[PODUnlocksCombatMove('POD_combat_move_psychic_interference')]\n#weak Психик подавляет другие психические способности в радиусе пятнадцати метров вокруг пользователя.#!"
  ANTI_PSI_4_PERK_EFFECT: "#P +10#! вероятность защититься от эффектов, изменяющих сознание\nИммунитет ко всем #TOOLTIP:GAME_TRAIT,psychic,[GetPlayer] #L ментальным#!#! [Concept('character_interaction', 'взаимодействиям персонажа')|E]\n#weak Психик подавляет другие психические способности в радиусе двадцати метров вокруг пользователя.#!"
- ANTI_PSI_5_PERK_EFFECT: "#P +10#! вероятность защититься от эффектов, изменяющих сознание\nСильная ментальная защита\n#weak Психик подавляет другие психические способности в радиусе двадцати пяти метров вокруг пользователя.#!"
+ ANTI_PSI_5_PERK_EFFECT: "#P +10#! вероятность защититься от эффектов, изменяющих сознание\nСильная ментальная защита\n[PODUnlocksCombatMove('POD_combat_move_psychic_null_field')]\n#weak Психик подавляет другие психические способности в радиусе двадцати пяти метров вокруг пользователя.#!"
 
  astral_projection_1_perk_name: "Астральная проекция 1"
  astral_projection_2_perk_name: "Астральная проекция 2"
@@ -122,11 +122,11 @@
  biocontrol_4_perk_name: "Игнорирование болевых реакций"
  biocontrol_5_perk_name: "Разум превыше материи"
 
- BIOCONTROL_1_PERK_EFFECT: "Разблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E] смены облика.\nРазблокирует косметические опции смены облика.\n#weak Психик может управлять своим собственным телом.\nПсихик может контролировать незначительные функции своего тела, такие как задержка дыхания, входя в транс.#!"
+ BIOCONTROL_1_PERK_EFFECT: "Разблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E] смены облика.\nРазблокирует косметические опции смены облика.\n[PODUnlocksCombatMove('POD_combat_move_psychic_biocontrol_mindfulness')]\n#weak Психик может управлять своим собственным телом.\nПсихик может контролировать незначительные функции своего тела, такие как задержка дыхания, входя в транс.#!"
  BIOCONTROL_2_PERK_EFFECT: "Позволяет мгновенно вылечить свойство «[GetTrait('ill').GetName( GetNullCharacter )]» через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#weak Психик может ускорить свой собственный процесс исцеления с помощью медитации.#!"
- BIOCONTROL_3_PERK_EFFECT: "Позволяет мгновенно залечивать раны через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#weak Взяв под контроль свои адреналиновые железы, психик может войти в период повышенной силы и скорости.#!"
- BIOCONTROL_4_PERK_EFFECT: "Позволяет мгновенно излечивать смертные хвори через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#weak Психик может стереть боль из своего сознания.#!"
- BIOCONTROL_5_PERK_EFFECT: "Позволяет мгновенно излечивать любые хвори через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#weak Психик может приказать своему собственному сердцебиению остановиться, если это необходимо, напрямую регулировать свою иммунную систему и принимать неестественные позы.#!"
+ BIOCONTROL_3_PERK_EFFECT: "Позволяет мгновенно залечивать раны через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_psychic_biocontrol_adrenal_surge')]\n#weak Взяв под контроль свои адреналиновые железы, психик может войти в период повышенной силы и скорости.#!"
+ BIOCONTROL_4_PERK_EFFECT: "Позволяет мгновенно излечивать смертные хвори через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_psychic_biocontrol_toggle_nerves')]\n#weak Психик может стереть боль из своего сознания.#!"
+ BIOCONTROL_5_PERK_EFFECT: "Позволяет мгновенно излечивать любые хвори через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_psychic_biocontrol_biological_mastery')]\n#weak Психик может приказать своему собственному сердцебиению остановиться, если это необходимо, напрямую регулировать свою иммунную систему и принимать неестественные позы.#!"
 
  necro_psi_1_perk_name: "Паранекротизм 1"
  necro_psi_2_perk_name: "Паранекротизм 2"
@@ -134,11 +134,11 @@
  necro_psi_4_perk_name: "Паранекротизм 4"
  necro_psi_5_perk_name: "Паранекротизм 5"
 
- NECRO_PSI_1_PERK_EFFECT: "Позволяет призвать к вашему двору #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#weak Паранекротизм, также называемый направлением, - это способность, которая позволяет психику вступать в контакт с призраками умерших.\nПсихик может слышать любых призраков поблизости.#!"
- NECRO_PSI_2_PERK_EFFECT: "Позволяет взаимодействовать с существами из [Concept('umbra', 'Умбры')|E], пока вы находитесь в материальном мире.\n$POD_can_summon_on_death_trigger_loca$\n$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n#weak Психик может общаться с призраками в районе.#!"
- NECRO_PSI_3_PERK_EFFECT: "$POD_can_command_wraith_trigger_loca$\nВы можете позволить связанному призраку направлять вас, увеличив все атрибуты на 2, получив при этом свойство «[GetTrait('possessed_1').GetName( GetNullCharacter )]», через [Concept('character_interaction', 'взаимодействие персонажа')|E]\n#weak Психик может заглянуть в [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
+ NECRO_PSI_1_PERK_EFFECT: "Позволяет призвать к вашему двору #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призрака#!#! через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_psychic_channeling_borrowed_battlecraft')]\n#weak Паранекротизм, также называемый направлением, - это способность, которая позволяет психику вступать в контакт с призраками умерших.\nПсихик может слышать любых призраков поблизости.#!"
+ NECRO_PSI_2_PERK_EFFECT: "Позволяет взаимодействовать с существами из [Concept('umbra', 'Умбры')|E], пока вы находитесь в материальном мире.\n$POD_can_summon_on_death_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n#weak Психик может общаться с призраками в районе.#!"
+ NECRO_PSI_3_PERK_EFFECT: "$POD_can_command_wraith_trigger_loca$\nВы можете позволить связанному призраку направлять вас, увеличив все атрибуты на 2, получив при этом свойство «[GetTrait('possessed_1').GetName( GetNullCharacter )]», через [Concept('character_interaction', 'взаимодействие персонажа')|E]\n[PODUnlocksCombatMove('POD_combat_move_psychic_channeling_dead_masters_guard')]\n#weak Психик может заглянуть в [UmbraGlossaryLocalized('shadowlands','Загробный мир')].#!"
  NECRO_PSI_4_PERK_EFFECT: "Вы можете позволить связанному призраку направлять вас, увеличив все атрибуты на 2, не получив свойство «[GetTrait('possessed_1').GetName( GetNullCharacter )]», через [Concept('character_interaction', 'взаимодействие персонажа')|E]\n#weak Психик становится маяком для духов, которых он привлекает. Когда в него вселяется призрак, он может соперничать с ним за контроль.#!"
- NECRO_PSI_5_PERK_EFFECT: "Позволяет получить направление двух призраков вместо одного от [Concept('character_interaction', 'взаимодействия персонажа')|E] достоинств «[GetPerk('necro_psi_3_perk').GetName( GetNullCharacter )]» и «[GetPerk('necro_psi_4_perk').GetName( GetNullCharacter )]»\n#weak Психик может свободно общаться с призраками и направлять двоих одновременно.#!"
+ NECRO_PSI_5_PERK_EFFECT: "Позволяет получить направление двух призраков вместо одного от [Concept('character_interaction', 'взаимодействия персонажа')|E] достоинств «[GetPerk('necro_psi_3_perk').GetName( GetNullCharacter )]» и «[GetPerk('necro_psi_4_perk').GetName( GetNullCharacter )]»\n[PODUnlocksCombatMove('POD_combat_move_psychic_channeling_legion_of_dead_masters')]\n#weak Психик может свободно общаться с призраками и направлять двоих одновременно.#!"
 
  clairvoyance_1_perk_name: "Ясновидение 1"
  clairvoyance_2_perk_name: "Ясновидение 2"
@@ -148,7 +148,7 @@
 
  CLAIRVOYANCE_1_PERK_EFFECT: "#weak Психик может отбросить свои чувства, сохраняя при этом своё сознание внутри тела.\nПсихик видит предметы в здании, в котором они находятся, сквозь туман, похожий на сон.#!"
  CLAIRVOYANCE_2_PERK_EFFECT: "#weak Психик может видеть события в радиусе пятидесяти миль вокруг себя, при этом звуки приглушаются и искажаются.#!"
- CLAIRVOYANCE_3_PERK_EFFECT: "#weak Психик может ясно видеть и слышать на расстоянии, а также обретать способность ощущать прикосновения. Радиус действия расширяется до 250 миль.#!"
+ CLAIRVOYANCE_3_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_clairvoyance_sight_beyond_sight')]\n#weak Психик может ясно видеть и слышать на расстоянии, а также обретать способность ощущать прикосновения. Радиус действия расширяется до 250 миль.#!"
  CLAIRVOYANCE_4_PERK_EFFECT: "#weak Психик может ощущать осязание, зрение и слух, а также смутно ощущать обоняние. Радиус действия расширяется до 2000 миль.#!"
  CLAIRVOYANCE_5_PERK_EFFECT: "#weak Психик может использовать все пять чувств, теоретически проецируя себя по всему миру.#!"
 
@@ -182,10 +182,10 @@
  ectoplasmic_generation_4_perk_name: "Скульптор грёз"
  ectoplasmic_generation_5_perk_name: "Тульпа"
 
- ECTOPLASMIC_GENERATION_1_PERK_EFFECT: "#weak Психик может создавать плазму - липкую субстанцию, которая через несколько минут испаряется обратно в Загробный мир.\nПсихик создаёт несколько потоков плазмы из своих отверстий, которые он может использовать вручную.#!"
- ECTOPLASMIC_GENERATION_2_PERK_EFFECT: "#weak Психик может притягивать плазму в виде тумана.#!"
- ECTOPLASMIC_GENERATION_3_PERK_EFFECT: "$unlock_forging_node$, позволяющий владельцу артефакта причинять вред духам\n#weak Психик может по своему желанию уплотнить эктоплазменный туман и придать ему форму вручную.#!"
- ECTOPLASMIC_GENERATION_4_PERK_EFFECT: "Улучшает [Concept('artifact', 'артефакт')|E], созданный достоинством «[GetPerk('ectoplasmic_generation_3_perk').GetName( GetNullCharacter )]», добавляя [Concept('modifier', 'модификатор')|E] в зависимости от типа [Concept('artifact', 'артефакта')|E]\n#weak Психик может формировать свои эктоплазматические конструкции силой мысли в момент их создания.#!"
+ ECTOPLASMIC_GENERATION_1_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_ectoplasm_spirit_wrapped_blow')]\n#weak Психик может создавать плазму - липкую субстанцию, которая через несколько минут испаряется обратно в Загробный мир.\nПсихик создаёт несколько потоков плазмы из своих отверстий, которые он может использовать вручную.#!"
+ ECTOPLASMIC_GENERATION_2_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_ectoplasm_shroud')]\n#weak Психик может притягивать плазму в виде тумана.#!"
+ ECTOPLASMIC_GENERATION_3_PERK_EFFECT: "$unlock_forging_node$, позволяющий владельцу артефакта причинять вред духам\n[PODUnlocksCombatMove('POD_combat_move_psychic_ectoplasm_solid_fog')]\n#weak Психик может по своему желанию уплотнить эктоплазменный туман и придать ему форму вручную.#!"
+ ECTOPLASMIC_GENERATION_4_PERK_EFFECT: "Улучшает [Concept('artifact', 'артефакт')|E], созданный достоинством «[GetPerk('ectoplasmic_generation_3_perk').GetName( GetNullCharacter )]», добавляя [Concept('modifier', 'модификатор')|E] в зависимости от типа [Concept('artifact', 'артефакта')|E]\n[PODUnlocksCombatMove('POD_combat_move_psychic_ectoplasm_bulwark')]\n#weak Психик может формировать свои эктоплазматические конструкции силой мысли в момент их создания.#!"
  ECTOPLASMIC_GENERATION_5_PERK_EFFECT: "Улучшает [Concept('artifact', 'артефакт')|E], созданный достоинством «[GetPerk('ectoplasmic_generation_4_perk').GetName( GetNullCharacter )]», добавляя [Concept('modifier', 'модификатор')|E] в зависимости от типа [Concept('artifact', 'артефакта')|E]\n$unlock_forging_node$, позволяющий пожертвовать [Concept('prisoner', 'узника')|E]-призрака, чтобы улучшить [Concept('artifact', 'артефакт')|E] в зависимости от [Concept('traits', 'свойств')|E] жертвы\nДаёт доступ к большинству #TOOLTIP:game_concept_POD_plasmic_maa_desc #E плазмических#!#! [Concept('men_at_arms', 'профессионалов')|E]\n#weak Психик может создать из эктоплазмы элементарную разумную конструкцию, которая подчиняется его воле.#!"
 
  empathic_healing_1_perk_name: "Успокоение духа"
@@ -208,9 +208,9 @@
 
  PSYCHIC_HEALING_1_PERK_EFFECT: "#weak Психик может исцелять раны и другие увечья силой своего разума.\nПсихик может почувствовать, чего не хватает пациенту.#!"
  PSYCHIC_HEALING_2_PERK_EFFECT: "Позволяет наделить цель модификатором [GetModifier('psi_treatment').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E]\n#weak Психик может ускорить естественный процесс исцеления своего пациента, погрузив его в сон, после которого излечиваются большинство незначительных заболеваний.#!"
- PSYCHIC_HEALING_3_PERK_EFFECT: "Позволяет заживлять шрамы и увечья через [Concept('character_interaction', 'взаимодействие персонажа')|E]\nПозволяет наделить цель модификатором [GetModifier('psi_good_treatment').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E]\n#weak Психик может залечивать раны и избавлять от более тяжелых болезней.#!"
+ PSYCHIC_HEALING_3_PERK_EFFECT: "Позволяет заживлять шрамы и увечья через [Concept('character_interaction', 'взаимодействие персонажа')|E]\nПозволяет наделить цель модификатором [GetModifier('psi_good_treatment').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E]\n[PODUnlocksCombatMove('POD_combat_move_psychic_healing_urgent_care')]\n#weak Психик может залечивать раны и избавлять от более тяжелых болезней.#!"
  PSYCHIC_HEALING_4_PERK_EFFECT: "Позволяет заживлять раны и хвори через [Concept('character_interaction', 'взаимодействие персонажа')|E]\n#weak Психик может сращивать сломанные кости и избавлять от более серьезных заболеваний.#!"
- PSYCHIC_HEALING_5_PERK_EFFECT: "Позволяет излечивать болезни и негативные физические свойства через [Concept('character_interaction', 'взаимодействие персонажа')|E]\n#weak Психик может вылечить рак или инфекцию.#!"
+ PSYCHIC_HEALING_5_PERK_EFFECT: "Позволяет излечивать болезни и негативные физические свойства через [Concept('character_interaction', 'взаимодействие персонажа')|E]\n[PODUnlocksCombatMove('POD_combat_move_psychic_healing_psychic_surgery')]\n#weak Психик может вылечить рак или инфекцию.#!"
 
  precognition_1_perk_name: "Интуиция"
  precognition_2_perk_name: "Прозрение"
@@ -220,9 +220,9 @@
 
  PRECOGNITION_1_PERK_EFFECT: "#weak Психик может получить представление о наиболее вероятном развитии событий, а иногда даже увидеть будущее.\nПредсказания психика относительно случайных событий, подобных броску игральных костей, становятся более точными.#!"
  PRECOGNITION_2_PERK_EFFECT: "У ваших узников меньше шансов на побег из темницы.\n#weak Психик может медитировать, чтобы получить видения возможного будущего. Эти видения расплывчаты и метафоричны, и для того, чтобы быть полезными, им требуется множество интерпретаций.#!"
- PRECOGNITION_3_PERK_EFFECT: "Вы получите уведомление, если кто-то задумает убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то задумает соблазнить ваших любовников или консортов.\n#weak Психик может почувствовать, когда они находятся в опасности.#!"
- PRECOGNITION_4_PERK_EFFECT: "#weak Психик может видеть, какую немедленную реакцию вызовет то или иное действие.#!"
- PRECOGNITION_5_PERK_EFFECT: "Вы можете раскрыть через [Concept('character_interaction', 'взаимодействие персонажа')|E] все враждебные происки, нацеленные на вас, и сорвать те, которые уже раскрыты.\n#weak Психик может видеть наиболее вероятное будущее на данный момент.#!"
+ PRECOGNITION_3_PERK_EFFECT: "Вы получите уведомление, если кто-то задумает убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то задумает соблазнить ваших любовников или консортов.\n[PODUnlocksCombatMove('POD_combat_move_psychic_precognition_danger_sense')]\n#weak Психик может почувствовать, когда они находятся в опасности.#!"
+ PRECOGNITION_4_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_precognition_clarity')]\n#weak Психик может видеть, какую немедленную реакцию вызовет то или иное действие.#!"
+ PRECOGNITION_5_PERK_EFFECT: "Вы можете раскрыть через [Concept('character_interaction', 'взаимодействие персонажа')|E] все враждебные происки, нацеленные на вас, и сорвать те, которые уже раскрыты.\n[PODUnlocksCombatMove('POD_combat_move_psychic_precognition_roads_of_time')]\n#weak Психик может видеть наиболее вероятное будущее на данный момент.#!"
 
  psychic_hypnosis_1_perk_name: "Трансовое состояние"
  psychic_hypnosis_2_perk_name: "Побочное внушение"
@@ -233,7 +233,7 @@
  PSYCHIC_HYPNOSIS_1_PERK_EFFECT: "Вы можете наделить цель модификатором [GetModifier('psi_hypnosis_stress_buff').GetNameWithTooltip] на 5 лет через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Доступно только если цель имеет #V 0+#! мнения о психике и находится в той же локации.\n#weak Психик может отдавать приказы и внушения своей цели, вводя её в транс и затем гипнотизируя.\nПсихик может ввести цель в гипнотический транс.#!"
  PSYCHIC_HYPNOSIS_2_PERK_EFFECT: "[Concept('character_interaction', 'Взаимодействие персонажа')|E] от достоинства «[GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )]» теперь также позволяет вам увеличить мнение цели о вас через поединок навыка дипломатии.\n#weak Психик может сделать небольшое внушение, пока объект находится в трансе.#!"
  PSYCHIC_HYPNOSIS_3_PERK_EFFECT: "[Concept('character_interaction', 'Взаимодействие персонажа')|E] от достоинства «[GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )]» теперь также позволяет вам избавиться от вредных привычек, связанных со стрессом, или получить слабое влияние после победы в поединке навыка дипломатии.\n#weak Психик может делать внушения, которые остаются даже после того, как транс закончился.#!"
- PSYCHIC_HYPNOSIS_4_PERK_EFFECT: "[Concept('character_interaction', 'Взаимодействие персонажа')|E] от достоинства «[GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )]» теперь также позволяет вам лечить большинство ментальных проблем.\nПовышает шанс успеха гипноза.\n#weak Психик может ввести цель в транс одним лишь взглядом.#!"
+ PSYCHIC_HYPNOSIS_4_PERK_EFFECT: "[Concept('character_interaction', 'Взаимодействие персонажа')|E] от достоинства «[GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )]» теперь также позволяет вам лечить большинство ментальных проблем.\nПовышает шанс успеха гипноза.\n[PODUnlocksCombatMove('POD_combat_move_psychic_hypnosis_fast_trance')]\n#weak Психик может ввести цель в транс одним лишь взглядом.#!"
  PSYCHIC_HYPNOSIS_5_PERK_EFFECT: "Можно использовать [Concept('character_interaction', 'взаимодействие персонажа')|E] «[GetPerk('psychic_hypnosis_1_perk').GetName( GetNullCharacter )]» без наличия мнения цели 0+ о вашем персонаже. Повышает шанс успеха и может улучшить влияние, полученное с помощью гипноза, до сильного.\n#weak Психик может глубоко запрограммировать цель, пока она находится в трансе, даже воздействуя на её память.#!"
 
  psychic_invisibility_1_perk_name: "Прятка"
@@ -243,10 +243,10 @@
  psychic_invisibility_5_perk_name: "Забудь, что когда-нибудь меня видел"
 
  PSYCHIC_INVISIBILITY_1_PERK_EFFECT: "#weak Подобно вампирской дисциплине Затемнения, психик может маскировать своё присутствие, не привлекая внимания посторонних.\nПсихика никто не замечает, пока он стоит совершенно неподвижно.#!"
- PSYCHIC_INVISIBILITY_2_PERK_EFFECT: "#weak Психика не замечают до тех пор, пока он движется достаточно медленно.#!"
+ PSYCHIC_INVISIBILITY_2_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_invisibility_slink')]\n#weak Психика не замечают до тех пор, пока он движется достаточно медленно.#!"
  PSYCHIC_INVISIBILITY_3_PERK_EFFECT: "#weak Психик может становиться невидимым и двигаться до тех пор, пока на него не смотрят, когда он активирует эту способность.#!"
  PSYCHIC_INVISIBILITY_4_PERK_EFFECT: "#weak Психик может заставить определённых людей увидеть себя, находясь в плаще.#!"
- PSYCHIC_INVISIBILITY_5_PERK_EFFECT: "Вы можете замедлить враждебные происки, нацеленные на вас, на 2 этапа через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#weak Психик может становиться невидимым прямо у кого-то на глазах.#!"
+ PSYCHIC_INVISIBILITY_5_PERK_EFFECT: "Вы можете замедлить враждебные происки, нацеленные на вас, на 2 этапа через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n[PODUnlocksCombatMove('POD_combat_move_psychic_invisibility_never_here')]\n#weak Психик может становиться невидимым прямо у кого-то на глазах.#!"
 
  psychic_vampirism_1_perk_name: "Приход"
  psychic_vampirism_2_perk_name: "Выкачивание воли"
@@ -254,10 +254,10 @@
  psychic_vampirism_4_perk_name: "Пиявка жизни"
  psychic_vampirism_5_perk_name: "Водоворот эмоций"
 
- PSYCHIC_VAMPIRISM_1_PERK_EFFECT: "Вы можете уменьшить свой стресс, «поглощая» чужие эмоции через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Требуется, чтобы цель находилась в том же месте, что и вы, и имела #V 0#! [Concept('stress', 'стресса')|E] или #V 3#! [Concept('stress_level', 'уровень стресса')|E].\n#weak Психик может черпать энергию более чем из одного человека.\nПсихик может истощать сильные эмоции, чтобы испытать их самому.#!"
- PSYCHIC_VAMPIRISM_2_PERK_EFFECT: "Улучшает [Concept('character_interaction', 'взаимодействие персонажа')|E] достоинства «[GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )]», увеличивая снижение стресса и изменяя требования до #V 0#! [Concept('stress', 'стресса')|E] или #V 2#! [Concept('stress_level', 'уровень стресса')|E].\n#weak Психик может истощить силу воли цели, чтобы восполнить свою собственную.#!"
- PSYCHIC_VAMPIRISM_3_PERK_EFFECT: "Улучшает [Concept('character_interaction', 'взаимодействие персонажа')|E] достоинства «[GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )]», также наделяя складывающимся модификатором [GetModifier('psi_vampirism_health').GetNameWithTooltip] на 20 лет.\n#weak Психик может истощать жизненную силу, чтобы залечить незначительные травмы.#!"
- PSYCHIC_VAMPIRISM_4_PERK_EFFECT: "Улучшает [Concept('character_interaction', 'взаимодействие персонажа')|E] достоинства «[GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )]», сокращая время восстановления с 5 до 2 лет.\n#weak Психик может истощить ещё больше жизненной силы, чтобы залечить серьёзные травмы.#!"
+ PSYCHIC_VAMPIRISM_1_PERK_EFFECT: "Вы можете уменьшить свой стресс, «поглощая» чужие эмоции через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Требуется, чтобы цель находилась в том же месте, что и вы, и имела #V 0#! [Concept('stress', 'стресса')|E] или #V 3#! [Concept('stress_level', 'уровень стресса')|E].\n[PODUnlocksCombatMove('POD_combat_move_psychic_vampirism_tap_energy')]\n#weak Психик может черпать энергию более чем из одного человека.\nПсихик может истощать сильные эмоции, чтобы испытать их самому.#!"
+ PSYCHIC_VAMPIRISM_2_PERK_EFFECT: "Улучшает [Concept('character_interaction', 'взаимодействие персонажа')|E] достоинства «[GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )]», увеличивая снижение стресса и изменяя требования до #V 0#! [Concept('stress', 'стресса')|E] или #V 2#! [Concept('stress_level', 'уровень стресса')|E].\n[PODUnlocksCombatMove('POD_combat_move_psychic_vampirism_invigorate')]\n#weak Психик может истощить силу воли цели, чтобы восполнить свою собственную.#!"
+ PSYCHIC_VAMPIRISM_3_PERK_EFFECT: "Улучшает [Concept('character_interaction', 'взаимодействие персонажа')|E] достоинства «[GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )]», также наделяя складывающимся модификатором [GetModifier('psi_vampirism_health').GetNameWithTooltip] на 20 лет.\n[PODUnlocksCombatMove('POD_combat_move_psychic_vampirism_leech_vitality')]\n#weak Психик может истощать жизненную силу, чтобы залечить незначительные травмы.#!"
+ PSYCHIC_VAMPIRISM_4_PERK_EFFECT: "Улучшает [Concept('character_interaction', 'взаимодействие персонажа')|E] достоинства «[GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )]», сокращая время восстановления с 5 до 2 лет.\n[PODUnlocksCombatMove('POD_combat_move_psychic_vampirism_essence_feast')]\n#weak Психик может истощить ещё больше жизненной силы, чтобы залечить серьёзные травмы.#!"
  PSYCHIC_VAMPIRISM_5_PERK_EFFECT: "Отменяет требование достоинства «[GetPerk('psychic_vampirism_1_perk').GetName( GetNullCharacter )]» к местоположению, если вы ранее высасывали жизненную силу цели.\n#weak Психик может черпать энергию более чем из одного человека.#!"
 
  psychokinesis_1_perk_name: "Психокинез 1"
@@ -267,10 +267,10 @@
  psychokinesis_5_perk_name: "Психокинез 5"
 
  PSYCHOKINESIS_1_PERK_EFFECT: "#weak Психокинез, также называемый телекинезом, позволяет психику перемещать предметы, не прикасаясь к ним.\nПсихик может поднять вес в полкилограмма.#!"
- PSYCHOKINESIS_2_PERK_EFFECT: "#weak Психик может поднять вес в 10 килограммов.#!"
- PSYCHOKINESIS_3_PERK_EFFECT: "#weak Психик может поднять вес в 100 килограммов.#!"
- PSYCHOKINESIS_4_PERK_EFFECT: "#weak Психик может поднять вес в 250 килограммов.#!"
- PSYCHOKINESIS_5_PERK_EFFECT: "#weak Психик может поднять вес в 500 килограммов.#!"
+ PSYCHOKINESIS_2_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_psychokinesis_hurl_object')]\n#weak Психик может поднять вес в 10 килограммов.#!"
+ PSYCHOKINESIS_3_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_psychokinesis_kinetic_blow')]\n#weak Психик может поднять вес в 100 килограммов.#!"
+ PSYCHOKINESIS_4_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_psychokinesis_levitation')]\n#weak Психик может поднять вес в 250 килограммов.#!"
+ PSYCHOKINESIS_5_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_psychokinesis_lethal_force')]\n#weak Психик может поднять вес в 500 килограммов.#!"
 
  psychometry_1_perk_name: "Психометрия 1"
  psychometry_2_perk_name: "Психометрия 2"
@@ -290,10 +290,10 @@
  psychoportation_4_perk_name: "Очень дальний прыжок"
  psychoportation_5_perk_name: "Прыжок вслепую"
 
- PSYCHOPORTATION_1_PERK_EFFECT: "#weak Используя свой разум, психик может телепортироваться на небольшое расстояние.\nПсихик может телепортироваться на небольшое расстояние в пределах видимости.#!"
+ PSYCHOPORTATION_1_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_psychoportation_short_hop')]\n#weak Используя свой разум, психик может телепортироваться на небольшое расстояние.\nПсихик может телепортироваться на небольшое расстояние в пределах видимости.#!"
  PSYCHOPORTATION_2_PERK_EFFECT: "Позволяет телепортировать вашу армию к месту нахождения цели или телепортироваться к следующему пункту назначения во время путешествия через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Максимальное расстояние эквивалентно небольшой державе (пример: Уэльс сверху вниз).\n#weak Психик может телепортироваться на значительные расстояния.#!"
- PSYCHOPORTATION_3_PERK_EFFECT: "Увеличивает максимальное расстояние достоинства «[GetPerk('psychoportation_2_perk').GetName( GetNullCharacter )]» до большой державы (пример: Франция сверху вниз).\n#weak Психик может телепортироваться на большие расстояния.#!"
- PSYCHOPORTATION_4_PERK_EFFECT: "Увеличивает максимальное расстояние достоинства «[GetPerk('psychoportation_2_perk').GetName( GetNullCharacter )]» до огромной державы (пример: Священная Римская империя слева направо).\n#weak Психик может телепортироваться на ещё большие расстояния.#!"
+ PSYCHOPORTATION_3_PERK_EFFECT: "Увеличивает максимальное расстояние достоинства «[GetPerk('psychoportation_2_perk').GetName( GetNullCharacter )]» до большой державы (пример: Франция сверху вниз).\n[PODUnlocksCombatMove('POD_combat_move_psychic_psychoportation_rescue_jump')]\n#weak Психик может телепортироваться на большие расстояния.#!"
+ PSYCHOPORTATION_4_PERK_EFFECT: "Увеличивает максимальное расстояние достоинства «[GetPerk('psychoportation_2_perk').GetName( GetNullCharacter )]» до огромной державы (пример: Священная Римская империя слева направо).\n[PODUnlocksCombatMove('POD_combat_move_psychic_psychoportation_forced_dislocation')]\n#weak Психик может телепортироваться на ещё большие расстояния.#!"
  PSYCHOPORTATION_5_PERK_EFFECT: "Снимает ограничение достоинства «[GetPerk('psychoportation_2_perk').GetName( GetNullCharacter )]» на расстояние.\n#weak Психику больше не нужно видеть пункт назначения для своей телепортации.#!"
 
  pyrokinesis_1_perk_name: "Спички"
@@ -302,11 +302,11 @@
  pyrokinesis_4_perk_name: "Пиротехника"
  pyrokinesis_5_perk_name: "Инферно"
 
- PYROKINESIS_1_PERK_EFFECT: "#weak Психик может призвать огонь.\nПсихик может создать крошечное пламя, которого достаточно, чтобы зажечь свечу или сигарету.#!"
- PYROKINESIS_2_PERK_EFFECT: "#weak Психик может вызвать возгорание легковоспламеняющихся предметов.#!"
- PYROKINESIS_3_PERK_EFFECT: "#weak Психик может создавать небольшие вспышки пламени из разреженного воздуха.#!"
+ PYROKINESIS_1_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_pyrokinesis_spark')]\n#weak Психик может призвать огонь.\nПсихик может создать крошечное пламя, которого достаточно, чтобы зажечь свечу или сигарету.#!"
+ PYROKINESIS_2_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_pyrokinesis_combustion')]\n#weak Психик может вызвать возгорание легковоспламеняющихся предметов.#!"
+ PYROKINESIS_3_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_pyrokinesis_suns_fury')]\n#weak Психик может создавать небольшие вспышки пламени из разреженного воздуха.#!"
  PYROKINESIS_4_PERK_EFFECT: "#weak Психик может задать вызванному пламени общее направление.#!"
- PYROKINESIS_5_PERK_EFFECT: "#weak Психик может вызывать более крупные вспышки пламени и направлять их по своему желанию.#!"
+ PYROKINESIS_5_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_pyrokinesis_inferno')]\n#weak Психик может вызывать более крупные вспышки пламени и направлять их по своему желанию.#!"
 
  soulstealing_1_perk_name: "Вторжение в сны"
  soulstealing_2_perk_name: "Подточение воли"
@@ -338,8 +338,8 @@
  telepathy_4_perk_name: "Телепатия 4"
  telepathy_5_perk_name: "Телепатия 5"
 
- TELEPATHY_1_PERK_EFFECT: "#weak Телепатия - это способность воздействовать на сознание другого человека с помощью психика.\nПсихик может ощутить основные эмоции цели, послать ей незначительный импульс или заставить её дёрнуться.#!"
+ TELEPATHY_1_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_psychic_telepathy_read_intent')]\n#weak Телепатия - это способность воздействовать на сознание другого человека с помощью психика.\nПсихик может ощутить основные эмоции цели, послать ей незначительный импульс или заставить её дёрнуться.#!"
  TELEPATHY_2_PERK_EFFECT: "#weak Психик может читать поверхностные мысли, передавать одну-единственную идею или вызывать одно короткое представление.#!"
- TELEPATHY_3_PERK_EFFECT: "Позволяет начать поединок навыка дипломатии против цели через [Concept('character_interaction', 'взаимодействие персонажа')|E], чтобы получить на неё слабое влияние.\n#weak Психик может читать недавние воспоминания или планы на будущее, передавать сложные эмоции или идеи или совершать необычные действия.#!"
+ TELEPATHY_3_PERK_EFFECT: "Позволяет начать поединок навыка дипломатии против цели через [Concept('character_interaction', 'взаимодействие персонажа')|E], чтобы получить на неё слабое влияние.\n[PODUnlocksCombatMove('POD_combat_move_psychic_telepathy_deep_probe')]\n#weak Психик может читать недавние воспоминания или планы на будущее, передавать сложные эмоции или идеи или совершать необычные действия.#!"
  TELEPATHY_4_PERK_EFFECT: "Новая опция для [Concept('character_interaction', 'взаимодействия персонажа')|E] телепатии, позволяющая получить сильное влияние вместо слабого.\n#weak Психик может читать глубокие мысли, посылать несколько предложений или временно захватывать контроль над телом цели.#!"
- TELEPATHY_5_PERK_EFFECT: "Новая опция для [Concept('character_interaction', 'взаимодействия персонажа')|E] телепатии, позволяющая получить вечное сильное влияние.\n#weak Психик может проникнуть в самые глубокие, подсознательные тайны цели, вести с ней беседу или полностью контролировать её тело, включая переписывание воспоминаний.#!"
+ TELEPATHY_5_PERK_EFFECT: "Новая опция для [Concept('character_interaction', 'взаимодействия персонажа')|E] телепатии, позволяющая получить вечное сильное влияние.\n[PODUnlocksCombatMove('POD_combat_move_psychic_telepathy_implanted_impulse')]\n#weak Психик может проникнуть в самые глубокие, подсознательные тайны цели, вести с ней беседу или полностью контролировать её тело, включая переписывание воспоминаний.#!"

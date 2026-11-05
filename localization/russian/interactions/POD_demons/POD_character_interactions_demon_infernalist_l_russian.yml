@@ -18,7 +18,7 @@
  POD_summon_demon_demonology_interaction_success: "Призыв прошёл успешно!"
 
  POD_bind_demon_interaction: "Связать демона"
- POD_bind_demon_interaction_desc: "Связать персонажа [recipient.GetFirstName] с [Concept('artifact', 'артефактом')|E] силой [recipient.GetHerHis] [Glossary('истинного имени','podgloss.truename')]."
+ POD_bind_demon_interaction_desc: "@infernalist_icon! #S Вы станете инферналистом!#!.\nСвязать персонажа [recipient.GetFirstName] с [Concept('artifact', 'артефактом')|E] силой [recipient.GetHerHis] [Glossary('истинного имени','podgloss.truename')]."
  POD_bind_demon_interaction_no_artifact: "У вас нет артефакта, в который можно вселиться"
  POD_bind_demon_interaction_already_bound: "[recipient.GetShortUIName|U] уже [Select_CString(recipient.IsFemale, 'связана', 'связан' )] с артефактом [recipient.MakeScope.Var('bound_demon_artifact').Artifact.Custom('ColorizedArtifactName')], который не принадлежит вам"
  POD_bind_demon_interaction_invalid_artifact: "В этот артефакт нельзя вселиться"

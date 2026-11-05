@@ -29,7 +29,7 @@
  POD_hunger_window_herdify_suffix: "Выберите любого безземельного вампира и начните [Concept('scheme', 'происки')|E] «Добавить к [Concept('POD_herd', 'стаду')|E]» через [character_interaction|El]."
  POD_hunger_window_herdify_vampire: "#help При вашем дворе нет потенциальных членов [Concept('POD_herd', 'стада')|E]. Попробуйте поохотиться на смертных в своей столице.#!"
 
- POD_hunger_window_prisoners_invalid: "#help В данный момент у вас нет пленников, которых можно обескровить или добавить к стаду.#!"
+ POD_hunger_window_prisoners_invalid: "#help В данный момент у вас нет пленников, которых можно обескровить или добавить к вашему [Concept('POD_herd', 'стаду')|E].#!"
  POD_hunger_window_prisoners: "У вас есть пленники.\n#help Возможно, вы можете осушить их кровь или добавить их к своему [Concept('POD_herd', 'стаду')|E].#!"
 
  POD_hunger_window_ghoul_bound: "Поскольку вы являетесь [Concept('bound_ghoul', 'связанным гулем')|E], ваш единственный способ снизить @blood_icon![Concept('hunger', 'голод')|E] - выполнить @ghoul_icon![Concept('bound_ghoul_missions', 'миссии')|E] вашего [Glossary('домитора','game_concept_domitor_desc')]."
@@ -41,13 +41,11 @@
 
  POD_hunger_window_artifacts: "У вас есть [artifacts|El], в которых можно хранить кровь."
 
- POD_glamour_window_regen: "[GetPlayer.Custom('PODGlamourRegenHint')]"
- POD_glamour_window_regen_fae: "Поскольку у вас имеется свойство «[GetTrait('fae').GetName(GetPlayer)]», вы восстанавливаете #V 1#! ед. гламура в месяц."
- POD_glamour_window_regen_changeling: "Поскольку у вас имеется свойство «[GetTrait('changeling').GetName(GetPlayer)]», вы восстанавливаете #V 1#! ед. гламура в месяц."
- POD_glamour_window_regen_building: "#help У вас имеется #V [GetPlayer.MakeScope.ScriptValue('chance_for_extra_glamour_regen')]%#! шанс восстановить дополнительно гламур от постройки #TOOLTIP:BUILDING,glade_freehold_01 #L Поляна#!#! в вашей столице.#!"
- POD_glamour_window_dreamer: "Вы можете добавить одного из своих [Concept('courtiers', 'придворных')|E] в качестве мечтателя."
- POD_glamour_window_dreamer_help: "#help Мечтатели дадут вам [lifestyle_experience|El] и небольшую вероятность восстановить ваш гламур.#!"
- POD_glamour_window_reverie: "Вы получаете #V 2#! ед. гламура через грёзы каждый раз, когда завершаете [Concept('scheme', 'происки')|E] типа «[GetScheme('sway').GetTypeName()]», «[GetScheme('befriend').GetTypeName()]» или «[GetScheme('courting').GetTypeName()]»."
+ POD_glamour_window: "Будучи китэйн, вы используете [Concept('epiphanies', 'прозрения')|E] для получения гламура."
+ POD_glamour_window_reverie: "[reverie|E]: Заведите больше [Concept('relations', 'отношений')|E] со #TOOLTIP:GAME_TRAIT,mortal,[GetNullCharacter] #L смертными#!#! с хорошим [Concept('epiphanies_quality', 'качеством')|E]."
+ POD_glamour_window_revelry: "[revelry|E]: Выполните требования, описанные в [Concept('trait', 'свойстве')|E] вашего кита."
+ POD_glamour_window_ravaging: "[Concept('ravaging', 'Опустошите')|E] творческий потенциал этого смертного ради гламура."
+ POD_glamour_window_ravaging_no_targets: "Вам недоступны #TOOLTIP:GAME_TRAIT,mortal,[GetNullCharacter] #L смертные#!#! для [Concept('ravaging', 'опустошения')|E]."
  POD_glamour_window_artifacts: "У вас есть [artifacts|El], в которых можно хранить гламур."
 
  #POD_resolve_window: "[GetPlayer.Custom('PODResolveHint')]"
@@ -125,3 +123,10 @@
  POD_ren_plants: "#bold Флора#!"
  POD_ren_animals: "#bold Животные#!"
  POD_ren_metals: "#bold Металлы#!"
+
+ POD_true_name_widget_select_all: "Выбрать все свойства"
+
+ EPIPHANIES_QUALITY_1_TT: "#bold [epiphanies_quality|E]: 1#!\nЭтот персонаж плохо подходит для [Concept('reverie', 'мечтания')|E] и [Concept('ravaging', 'опустошения')|E]"
+ EPIPHANIES_QUALITY_2_TT: "#bold [epiphanies_quality|E]: 2#!\nЭтот персонаж хорошо подходит для [Concept('reverie', 'мечтания')|E] и [Concept('ravaging', 'опустошения')|E]"
+ EPIPHANIES_QUALITY_3_TT: "#bold [epiphanies_quality|E]: 3#!\nЭтот персонаж отлично подходит для [Concept('reverie', 'мечтания')|E] и [Concept('ravaging', 'опустошения')|E]"
+ EPIPHANIES_QUALITY_4_TT: "#bold [epiphanies_quality|E]: 4#!\nЭтот персонаж идеально подходит для [Concept('reverie', 'мечтания')|E] и [Concept('ravaging', 'опустошения')|E]"

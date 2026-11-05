@@ -111,3 +111,5 @@
  death_accident_murder: "[Select_CString(CHARACTER.IsFemale, 'была', 'был' )] случайно [Select_CString(CHARACTER.IsFemale, 'убита', 'убит' )] своим сиром"
  death_cold: "[Select_CString(CHARACTER.IsFemale, 'замёрзла', 'замёрз' )] насмерть"
  death_cold_killer: "[Select_CString(CHARACTER.IsFemale, 'была заморожена', 'был заморожен' )] насмерть [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажем ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'им персонажем', '' )]"
+ death_cold_iron: "[Select_CString(CHARACTER.IsFemale, 'была убита', 'был убит' )] холодным железом"
+ death_cold_iron_killer: "[Select_CString(CHARACTER.IsFemale, 'была убита', 'был убит' )] холодным железом [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажем ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'им персонажем', '' )]"

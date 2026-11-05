@@ -26,7 +26,7 @@
  title_held_duchy: "Владеет герцогским титулом"
  court_position_possessed_trait: "[GetTrait('possessed_1').GetName( ROOT.Char )]"
  court_position_lunatic_trait: "[GetTrait('lunatic_1').GetName( ROOT.Char )]"
- court_position_possessed_lunatic_trait: "[GetTrait('possessed_1').GetName( ROOT.Char )] [GetTrait('lunatic_1').GetName( ROOT.Char )]"
+ court_position_possessed_lunatic_trait: "[GetTrait('possessed_1').GetName( ROOT.Char )] и [GetTrait('lunatic_1').GetName( ROOT.Char )]"
  court_position_yin_imbalanced_trait: "[GetTrait('yin_imbalanced').GetName( ROOT.Char )]"
  court_position_yang_imbalanced_trait: "[GetTrait('yang_imbalanced').GetName( ROOT.Char )]"
  court_position_animalism_trait: "[GetTrait('animalism').GetName( ROOT.Char )]"
@@ -45,6 +45,23 @@
  court_position_tremere_trait: "[GetTrait('tremere').GetName( ROOT.Char )]"
  court_position_art_wayfare_trait: "[GetTrait('art_wayfare').GetName( ROOT.Char )]"
  court_position_art_wayfare_advanced_trait: "[GetTrait('art_wayfare_advanced').GetName( ROOT.Char )]"
+ court_position_eshu_trait: "[GetTrait('eshu').GetName( ROOT.Char )]"
+ court_position_troll_trait: "[GetTrait('troll').GetName( ROOT.Char )]"
+ court_position_sluagh_trait: "[GetTrait('sluagh').GetName( ROOT.Char )]"
+ court_position_satyr_trait: "[GetTrait('satyr').GetName( ROOT.Char )]"
+ court_position_redcap_trait: "[GetTrait('redcap').GetName( ROOT.Char )]"
+ court_position_nocker_trait: "[GetTrait('nocker').GetName( ROOT.Char )]"
+ court_position_boggan_trait: "[GetTrait('boggan').GetName( ROOT.Char )]"
+ court_position_pooka_trait: "[GetTrait('pooka').GetName( ROOT.Char )]"
+ court_position_djedi_trait: "[GetTrait('djedi').GetName( ROOT.Char )]"
+ court_position_swanmaiden_trait: "[GetTrait('swanmaiden').GetName( ROOT.Char )]"
+ court_position_clurichaun_trait: "[GetTrait('clurichaun').GetName( ROOT.Char )]"
+ court_position_ifrit_trait: "[GetTrait('ifrit').GetName( ROOT.Char )]"
+ court_position_qareen_trait: "[GetTrait('qareen').GetName( ROOT.Char )]"
+ court_position_shaytan_trait: "[GetTrait('shaytan').GetName( ROOT.Char )]"
+ court_position_ondine_trait: "[GetTrait('ondine').GetName( ROOT.Char )]"
+ court_position_paroseme_trait: "[GetTrait('paroseme').GetName( ROOT.Char )]"
+ court_position_okubili_trait: "[GetTrait('okubili').GetName( ROOT.Char )]"
  court_position_sorcerer_trait: "[GetTrait('sorcerer').GetName( ROOT.Char )]"
  court_position_forge_affinity_perk: "[GetPerk( 'forge_affinity_perk' ).GetName( ROOT.Char )]"
  court_position_opinion: "Ваше мнение о персонаже [ROOT.Char.GetShortUIName]"
@@ -70,6 +87,140 @@
  fc_arm_l_precise_hand_perk_aptitude: "[GetPerk('fc_arm_l_precise_hand_perk').GetName(ROOT.Char)]"
  fc_leg_r_muscle_mass_perk_aptitude: "[GetPerk('fc_leg_r_muscle_mass_perk').GetName(ROOT.Char)]"
  fc_leg_l_muscle_mass_perk_aptitude: "[GetPerk('fc_leg_l_muscle_mass_perk').GetName(ROOT.Char)]"
+ court_position_belial_throne_elite_cults: "В [Concept('domicile','убежище')|E] нанимателя есть [GetDomicileBuilding('belial_throne_elite_cults').GetName]"
+ court_position_forgiving_trait: "[GetTrait('forgiving').GetName( ROOT.Char )]"
+ court_position_lustful_trait: "[GetTrait('lustful').GetName( ROOT.Char )]"
+
+
+ ##### MISSING FACTORS
+
+ # Personality traits
+ court_position_ambitious_trait_not: "#weak Нет свойства «[GetTrait('ambitious').GetName( ROOT.Char )]»#!"
+ court_position_arbitrary_trait_not: "#weak Нет свойства «[GetTrait('arbitrary').GetName( ROOT.Char )]»#!"
+ court_position_arrogant_trait_not: "#weak Нет свойства «[GetTrait('arrogant').GetName( ROOT.Char )]»#!"
+ court_position_content_trait_not: "#weak Нет свойства «[GetTrait('content').GetName( ROOT.Char )]»#!"
+ court_position_just_trait_not: "#weak Нет свойства «[GetTrait('just').GetName( ROOT.Char )]»#!"
+ court_position_brave_trait_not: "#weak Нет свойства «[GetTrait('brave').GetName( ROOT.Char )]»#!"
+ court_position_craven_trait_not: "#weak Нет свойства «[GetTrait('craven').GetName( ROOT.Char )]»#!"
+ court_position_callous_trait_not: "#weak Нет свойства «[GetTrait('callous').GetName( ROOT.Char )]»#!"
+ court_position_calm_trait_not: "#weak Нет свойства «[GetTrait('calm').GetName( ROOT.Char )]»#!"
+ court_position_compassionate_trait_not: "#weak Нет свойства «[GetTrait('compassionate').GetName( ROOT.Char )]»#!"
+ court_position_deceitful_trait_not: "#weak Нет свойства «[GetTrait('deceitful').GetName( ROOT.Char )]»#!"
+ court_position_paranoid_trait_not: "#weak Нет свойства «[GetTrait('paranoid').GetName( ROOT.Char )]»#!"
+ court_position_diligent_trait_not: "#weak Нет свойства «[GetTrait('diligent').GetName( ROOT.Char )]»#!"
+ court_position_eccentric_trait_not: "#weak Нет свойства «[GetTrait('eccentric').GetName( ROOT.Char )]»#!"
+ court_position_fickle_trait_not: "#weak Нет свойства «[GetTrait('fickle').GetName( ROOT.Char )]»#!"
+ court_position_forgiving_trait_not: "#weak Нет свойства «[GetTrait('forgiving').GetName( ROOT.Char )]»#!"
+ court_position_generous_trait_not: "#weak Нет свойства «[GetTrait('generous').GetName( ROOT.Char )]»#!"
+ court_position_greedy_trait_not: "#weak Нет свойства «[GetTrait('greedy').GetName( ROOT.Char )]»#!"
+ court_position_gregarious_trait_not: "#weak Нет свойства «[GetTrait('gregarious').GetName( ROOT.Char )]»#!"
+ court_position_shy_trait_not: "#weak Нет свойства «[GetTrait('shy').GetName( ROOT.Char )]»#!"
+ court_position_trusting_trait_not: "#weak Нет свойства «[GetTrait('trusting').GetName( ROOT.Char )]»#!"
+ court_position_honest_trait_not: "#weak Нет свойства «[GetTrait('honest').GetName( ROOT.Char )]»#!"
+ court_position_humble_trait_not: "#weak Нет свойства «[GetTrait('humble').GetName( ROOT.Char )]»#!"
+ court_position_impatient_trait_not: "#weak Нет свойства «[GetTrait('impatient').GetName( ROOT.Char )]»#!"
+ court_position_lazy_trait_not: "#weak Нет свойства «[GetTrait('lazy').GetName( ROOT.Char )]»#!"
+ court_position_patient_trait_not: "#weak Нет свойства «[GetTrait('patient').GetName( ROOT.Char )]»#!"
+ court_position_sadistic_trait_not: "#weak Нет свойства «[GetTrait('sadistic').GetName( ROOT.Char )]»#!"
+ court_position_strong_trait_not: "#weak Нет свойства «[GetTrait('strong').GetName( ROOT.Char )]»#!"
+ court_position_stubborn_trait_not: "#weak Нет свойства «[GetTrait('stubborn').GetName( ROOT.Char )]»#!"
+ court_position_temperate_trait_not: "#weak Нет свойства «[GetTrait('temperate').GetName( ROOT.Char )]»#!"
+ court_position_vengeful_trait_not: "#weak Нет свойства «[GetTrait('vengeful').GetName( ROOT.Char )]»#!"
+ court_position_wrathful_trait_not: "#weak Нет свойства «[GetTrait('wrathful').GetName( ROOT.Char )]»#!"
+ court_position_zealous_trait_not: "#weak Нет свойства «[GetTrait('zealous').GetName( ROOT.Char )]»#!"
+ court_position_lustful_trait_not: "#weak Нет свойства «[GetTrait('lustful').GetName( ROOT.Char )]»#!"
+
+ # Education traits
+ court_position_education_diplomacy_not: "#weak Нет #TOOLTIP:GAME_TRAIT,education_diplomacy_1,[GetNullCharacter] #L дипломатического образования#!#!#!#!"
+ court_position_education_intrigue_not: "#weak Нет #TOOLTIP:GAME_TRAIT,education_intrigue_1,[GetNullCharacter] #L образования в искусстве интриг#!#!#!#!"
+ court_position_education_learning_not: "#weak No #TOOLTIP:GAME_TRAIT,education_learning_1,[GetNullCharacter] #L образования в учёности#!#!#!#!"
+ court_position_education_learning_4_not: "#weak Нет высокой степени #TOOLTIP:GAME_TRAIT,education_learning_4,[GetNullCharacter] #L образования в учёности#!#!#!#!"
+ court_position_education_martial_not: "#weak Нет #TOOLTIP:GAME_TRAIT,education_martial_1,[GetNullCharacter] #L образования в военном деле#!#!#!#!"
+ court_position_education_martial_prowess_not: "#weak Нет #TOOLTIP:GAME_TRAIT,education_martial_prowess_1,[GetNullCharacter] #L образования в доблести#!#!#!#!"
+ court_position_education_stewardship_not: "#weak Нет #TOOLTIP:GAME_TRAIT,education_stewardship_1,[GetNullCharacter] #L управленческого образования#!#!#!#!"
+
+ # Lifestyle (capstone) traits
+ court_position_administrator_trait_not: "#weak Нет свойства «[GetTrait('administrator').GetName( ROOT.Char )]»#!"
+ court_position_architect_trait_not: "#weak Нет свойства «[GetTrait('architect').GetName( ROOT.Char )]»#!"
+ court_position_avaricious_trait_not: "#weak Нет свойства «[GetTrait('avaricious').GetName( ROOT.Char )]»#!"
+ court_position_diplomat_trait_not: "#weak Нет свойства «[GetTrait('diplomat').GetName( ROOT.Char )]»#!"
+ court_position_gallant_trait_not: "#weak Нет свойства «[GetTrait('gallant').GetName( ROOT.Char )]»#!"
+ court_position_overseer_trait_not: "#weak Нет свойства «[GetTrait('overseer').GetName( ROOT.Char )]»#!"
+ court_position_schemer_trait_not: "#weak Нет свойства «[GetTrait('schemer').GetName( ROOT.Char )]»#!"
+ court_position_scholar_trait_not: "#weak Нет свойства «[GetTrait('erudite').GetName( ROOT.Char )]»#!"
+ court_position_strategist_trait_not: "#weak Нет свойства «[GetTrait('strategist').GetName( ROOT.Char )]»#!"
+ court_position_theologian_trait_not: "#weak Нет свойства «[GetTrait('theologian').GetName( ROOT.Char )]»#!"
+ court_position_torturer_trait_not: "#weak Нет свойства «[GetTrait('torturer').GetName( ROOT.Char )]»#!"
+ court_position_whole_of_body_trait_not: "#weak Нет свойства «[GetTrait('whole_of_body').GetName( ROOT.Char )]»#!"
+
+ # Other lifestyle traits
+ court_position_blademaster_1_trait_not: "#weak Не #TOOLTIP:GAME_TRAIT,lifestyle_blademaster,[GetNullCharacter] #L мастер клинка#!#!#!"
+ court_position_herbalist_trait_not: "#weak Нет свойства «[GetTrait('lifestyle_herbalist').GetName( ROOT.Char )]»#!"
+ court_position_hunter_1_trait_not: "#weak Не #TOOLTIP:GAME_TRAIT,lifestyle_hunter,[GetNullCharacter] #L охотник#!#!#!"
+ court_position_mystic_1_trait_not: "#weak Не #TOOLTIP:GAME_TRAIT,lifestyle_mystic,[GetNullCharacter] #L мистик#!#!#!"
+ court_position_physician_1_trait_not: "#weak Не #TOOLTIP:GAME_TRAIT,lifestyle_physician,[GetNullCharacter] #L врач#!#!#!"
+ court_position_traveler_1_trait_not: "#weak Не #TOOLTIP:GAME_TRAIT,lifestyle_traveler,[GetNullCharacter] #L путешественник#!#!#!"
+ court_position_poet_trait_not: "#weak Нет свойства «[GetTrait('lifestyle_poet').GetName( ROOT.Char )]»#!"
+ court_position_infirm_trait_not: "#weak Нет свойства «[GetTrait('infirm').GetName( ROOT.Char )]»#!"
+ court_position_clubfooted_trait_not: "#weak Нет свойства «[GetTrait('clubfooted').GetName( ROOT.Char )]»#!"
+ court_position_commander_traits_not: "#weak Нет [Concept('commander_traits', 'свойств командира')|E]#!"
+
+ # Physical traits
+ court_position_blind_trait_not: "#weak Нет свойства «[GetTrait('blind').GetName( ROOT.Char )]»#!"
+ court_position_intellect_good_1_trait_not: "#weak Нет свойства «[GetTrait('intellect_good_1').GetName( ROOT.Char )]»#!"
+ court_position_intellect_good_2_trait_not: "#weak Нет свойства «[GetTrait('intellect_good_2').GetName( ROOT.Char )]»#!"
+ court_position_physique_good_1_trait_not: "#weak Нет свойства «[GetTrait('physique_good_1').GetName( ROOT.Char )]»#!"
+ court_position_possessed_lunatic_trait_not: "#weak Нет свойства «[GetTrait('possessed_1').GetName( ROOT.Char )] or [GetTrait('lunatic_1').GetName( ROOT.Char )]»#!"
+ court_position_shrewd_trait_not: "#weak Нет свойства «[GetTrait('shrewd').GetName( ROOT.Char )]»#!"
+ court_position_shrewd_or_intellect_trait_not: "#weak Нет свойства «[GetTrait('intellect_good_1').GetName( ROOT.Char )]» или «[GetTrait('shrewd').GetName( ROOT.Char )]»#!"
+
+ # Commander traits
+ court_position_faith_warrior_trait_not: "#weak Нет свойства «[GetTrait('faith_warrior').GetName( ROOT.Char )]»#!"
+
+ # Stress traits
+ court_position_reclusive_trait_not: "#weak Нет свойства «[GetTrait('reclusive').GetName( ROOT.Char )]»#!"
+
+ # Vampire traits
+ court_position_animalism_trait_not: "#weak Нет свойства «[GetTrait('animalism').GetName( ROOT.Char )]»#!"
+ court_position_auspex_trait_not: "#weak Нет свойства «[GetTrait('auspex').GetName( ROOT.Char )]»#!"
+ court_position_auspexadvanced_trait_not: "#weak Нет свойства «[GetTrait('auspexadvanced').GetName( ROOT.Char )]»#!"
+ court_position_celerity_trait_not: "#weak Нет свойства «[GetTrait('celerity').GetName( ROOT.Char )]»#!"
+ court_position_dominate_trait_not: "#weak Нет свойства «[GetTrait('dominate').GetName( ROOT.Char )]»#!"
+ court_position_golconda_seeker_trait_not: "#weak Нет свойства «[GetTrait('golconda_seeker').GetName( ROOT.Char )]»#!"
+ court_position_malkavian_trait_not: "#weak Нет свойства «[GetTrait('malkavian').GetName( ROOT.Char )]»#!"
+ court_position_obfuscate_trait_not: "#weak Нет свойства «[GetTrait('obfuscate').GetName( ROOT.Char )]»#!"
+ court_position_obfuscateadvanced_trait_not: "#weak Нет свойства «[GetTrait('obfuscateadvanced').GetName( ROOT.Char )]»#!"
+ court_position_potence_trait_not: "#weak Нет свойства «[GetTrait('potence').GetName( ROOT.Char )]»#!"
+ court_position_tremere_trait_not: "#weak Нет свойства «[GetTrait('tremere').GetName( ROOT.Char )]»#!"
+
+ # Fae traits
+ court_position_art_wayfare_trait_not: "#weak Нет свойства «[GetTrait('art_wayfare').GetName( ROOT.Char )]»#!"
+
+ # Numina
+ court_position_sorcerer_trait_not: "#weak Нет свойства «[GetTrait('sorcerer').GetName( ROOT.Char )]»#!"
+ court_position_truefaith_trait_not: "#weak Нет свойства «[GetTrait('truefaith').GetName( ROOT.Char )]»#!"
+
+ # Misc traits
+ court_position_hajjaj_trait_not: "#weak Нет свойства «[GetTrait('hajjaj').GetName( ROOT.Char )]»#!"
+ court_position_loyal_trait_not: "#weak Нет свойства «[GetTrait('loyal').GetName( ROOT.Char )]»#!"
+ court_position_shieldmaiden_trait_not: "#weak Нет свойства «[GetTrait('shieldmaiden').GetName( ROOT.Char )]»#!"
+
+ # Domicile
+ court_position_belial_throne_elite_cults_not: "#weak В [Concept('domicile','убежище')|E] нанимателя нет постройки «[GetDomicileBuilding('belial_throne_elite_cults').GetName]»#!"
+ court_position_mokole_melodies_destruction_01_not: "#weak В [Concept('domicile','пруду')|E] нанимателя нет постройки «[GetDomicileBuilding('mokole_melodies_destruction_01').GetName]»#!"
+ court_position_mokole_verses_unity_01_not: "#weak В [Concept('domicile','пруду')|E] нанимателя нет постройки «[GetDomicileBuilding('mokole_verses_unity_01').GetName]»#!"
+
+ # Misc requirements
+ court_position_auspice_trait_not: "#weak Не совпадающее покровительство#!"
+ court_position_employer_family_not: "#weak Не член вашей семьи#!"
+ court_position_friend_relation_not: "#weak [ROOT.Char.GetSheHe|U] не является [Concept('friend', Select_CString(ROOT.Char.IsFemale, 'вашей подругой', 'вашим другом' ))|E]#!"
+ court_position_high_skills_trait_not: "#weak Значение не всех [Concept('skills', 'навыков')|E] равняется [EmptyScope.ScriptValue('high_skill_rating')|0] или выше#!"
+ court_position_is_powerful_vassal_not: "#weak Не является [Concept('powerful_vassal', 'могущественным вассалом')|E]#!"
+ court_position_languages_not: "#weak Не знает других [Concept('languages', 'языков')|E]#!"
+ court_position_lover_relation_not: "#weak [ROOT.Char.GetSheHe|U] не является [Concept('lover', Select_CString(ROOT.Char.IsFemale, 'вашей любовницей', 'вашим любовником' ))|E]#!"
+ court_position_tradition_poetry_not: "#weak Нет [Concept('culture_tradition', 'культурной традиции')|E], которая ценит #TOOLTIP:GAME_TRAIT,lifestyle_poet,[GetNullCharacter] #L поэзию#!#!#!"
+ court_position_travel_skills_not: "#weak Нет #TOOLTIP:court_position_travel_skills_not_tt #L навыков путешественника#!#!#!"
+ court_position_travel_skills_not_tt: "Одно из следующего:\n$BULLET_WITH_TAB$[GetTrait('art_wayfare').GetName(GetNullCharacter)]\n$BULLET_WITH_TAB$[GetTrait('lifestyle_traveler').GetName(GetNullCharacter)]\n$BULLET_WITH_TAB$[GetTrait('pilgrim').GetName(GetNullCharacter)]\n$BULLET_WITH_TAB$[GetTrait('adventurer').GetName(GetNullCharacter)]"
 
 
  brujah_primogen_court_position: "Примоген Бруха"
@@ -111,7 +262,7 @@
  #lack_primogen_opinion: "Feels Marginalized"
  #
  #POD_primogens.0003.t: "Mood of the Clans"
- #POD_primogens.0003.desc: "As a powerful ruler of the night, you are constantly judged by the various [Glossary('Clans','game_concept_Clan_desc')] of the undead society. Those that you haven't favored with a [primogen|E] seat are considered marginalized in your court, perhaps because of their political insignificance in your realm, or simply because of your current fancy.\nIn any case, you can now feel the mood of the Clans towards your rule shifting again."
+ #POD_primogens.0003.desc: "As a powerful ruler of the night, you are constantly judged by the various $pod_clans$ of the undead society. Those that you haven't favored with a [primogen|E] seat are considered marginalized in your court, perhaps because of their political insignificance in your realm, or simply because of your current fancy.\nIn any case, you can now feel the mood of the Clans towards your rule shifting again."
  #POD_primogens.0003.a: "What do they truly think?"
  #lack_brujah_primogen_tt: "The Brujah feel marginalized."
  #lack_cappadocian_primogen_tt: "The Cappadocian feel marginalized."
@@ -134,6 +285,12 @@
 
  lord_of_misrule_court_position: "Владыка бесчинства"
  lord_of_misrule_court_position_desc: "Избранный во время сатурналий, владыка бесчинства имеет полную неприкосновенность и пользуется ей для насмешек и принижения всех устоявшихся каинитских порядков в округе."
+
+ kertilsveinr_court_position: "Кертильсвейн"
+ kertilsveinr_court_position_desc: "Кертильсвейн, избранный из смертных воинов, которые не отведали каинитской крови, отвечает за выполнение церемониальных и религиозных обязанностей."
+
+ skutilsveinr_court_position: "Скутильсвейн"
+ skutilsveinr_court_position_desc: "Скутильсвейн выступает в качестве каинитского командира в войсках смертных своего повелителя, превосходя по рангу большинство других воинов."
 
  hidden_minister_of_jade_court_position: "Тайный министр нефрита"
  hidden_minister_of_jade_court_position_desc: "Тайный министр нефрита собирает и распределяет средства для двора, как в виде традиционной смертной валюты, так и в виде нефрита."
@@ -275,6 +432,14 @@
  POD_organize_faerie_desc: "Этот персонаж помогает организовывать и тренировать фей своего сюзерена."
  POD_manage_estate: "Управлять поместьем"
  POD_manage_estate_desc: "Этот персонаж сосредоточен на управлении личным [Concept('domicile', 'поместьем')|E] своего сюзерена."
+ POD_kertilsveinr_piety_task: "Организовать блот"
+ POD_kertilsveinr_piety_task_desc: "Этот персонаж сосредоточен на организации религиозных ритуалов для своего повелителя."
+ POD_kertilsveinr_lifestyle_task: "Обучать хирд"
+ POD_kertilsveinr_lifestyle_task_desc: "Этот персонаж сосредоточен на обучении жителей державы."
+ POD_skutilsveinr_raiding_task: "Подготовить набеги"
+ POD_skutilsveinr_raiding_task_desc: "Этот персонаж сосредоточен на организации набегов на чужие берега."
+ POD_skutilsveinr_combat_task: "Подготовка к сражениям"
+ POD_skutilsveinr_combat_task_desc: "Этот персонаж сосредоточен на подготовке хирдманов к битве."
 
 
  imperial_envoy_court_position: "Имперский посланник"
@@ -287,7 +452,7 @@
  hanshii_arbiter_court_position: "Арбитр ханши"
  hanshii_arbiter_court_position_desc: "Основной элемент культуры бастет, ханщи - это ритуальные поединки, используемые для развлечения или определения территориальных прав. Это могут быть игры с загадками, официальные дуэли или война на клыках и когтях."
  seline_oracle_court_position: "Оракул Селены"
- seline_oracle_court_position_desc: "Сочувствующая сестра Геи, Луна, явно благоволит к оборотням-котам и считает их своими лучшими творениями. Она породила меняющих породу как дар Земле, и ее тело считается последним прибежищем для всех бастет."
+ seline_oracle_court_position_desc: "Сочувствующая сестра Геи, [Glossary('Луна', 'glossary_luna_tt')], явно благоволит к оборотням-котам и считает их своими лучшими творениями. Она породила меняющих породу как дар Земле, и ее тело считается последним прибежищем для всех бастет."
  master_taghairm_court_position: "Мастер тагейрма"
  master_taghairm_court_position_desc: "Тагейрм - это кошачье сборище, которое часто созывается для обмена информацией или любезностями. Обычно проводится в разгар полнолуния."
  warleader_taklah_court_position: "Воитель Таклы"
@@ -330,3 +495,76 @@
 
  majordomo_court_position: "Мажордом"
  majordomo_court_position_desc: "Мажордом - это особая роль, предназначенная для #TOOLTIP:GAME_TRAIT,ghoul,[GetNullCharacter] #L гуля#!#!, который обычно служит своему [Glossary('домитору','game_concept_domitor_desc')] в качестве главного управляющего его имуществом и делами. Мажордом будет выполнять приказы своего хозяина, раздавая задания и распоряжения, начиная от найма внешних слуг и заканчивая контролем за другими гулями."
+
+
+ POD_call_to_arms: "Призыв к оружию"
+ POD_call_to_arms_desc: "Этому персонажу велено призвать и организовать силы державы, включая любые учреждения смертных, в которые было совершено проникновение."
+
+
+ jerusalem_crown_speaker_court_position: "Глашатай короны"
+ jerusalem_crown_speaker_court_position_desc: "В таких неспокойных землях, как Иерусалим, каждому князю нужен кто-то, кто представлял бы и продвигал его интересы, независимо от того, присутствует ли он здесь."
+ POD_crown_speaker_passive_influence_christian: "Повысить [Localize('POD_christian_influence')|l]"
+ POD_crown_speaker_passive_influence_christian_desc: "Ваш $jerusalem_crown_speaker_court_position$ использует свой политический капитал, чтобы постепенно усилить [Localize('POD_christian_influence')|l]."
+ POD_crown_speaker_passive_influence_muslim: "Повысить [Localize('POD_muslim_influence')|l]"
+ POD_crown_speaker_passive_influence_muslim_desc: "Ваш $jerusalem_crown_speaker_court_position$ использует свой политический капитал, чтобы постепенно усилить [Localize('POD_muslim_influence')|l]."
+ POD_crown_speaker_passive_influence_jewish: "Increase [Localize('POD_jewish_influence')|l]"
+ POD_crown_speaker_passive_influence_jewish_desc: "Ваш $jerusalem_crown_speaker_court_position$ использует свой политический капитал, чтобы постепенно усилить [Localize('POD_jewish_influence')|l]."
+
+ jerusalem_puppeteer_grand_masters_court_position: "Кукловод великих магистров"
+ jerusalem_puppeteer_grand_masters_court_position_desc: "Христианские рыцарские ордена, существовавшие ещё до крестовых походов, обладали огромной властью. В результате они были перегружены конкурирующими сверхъестественными влияниями. Чтобы создать пространство для себя, вам понадобится специальный представитель, ответственный за контроль над ними и манипулирование ими."
+
+ jerusalem_ashen_muhtasib_court_position: "Пепельный мухтасиб"
+ jerusalem_ashen_muhtasib_court_position_desc: "Сборщик податей с другой публики, распорядитель теневой логистики, надзиратель за тайными базарами, расследователь всевозможных подделок, инспектор мест, открытых для публики другого типа. Пепельный мухтасиб отвечает за множество задач, от проверки весов до обслуживания общественных бань. Как правитель Иерусалима, вы имеете право назначать одного из них, получив очередной рычаг воздействия на городскую торговлю."
+
+ jerusalem_socher_court_position: "Сочер"
+ jerusalem_socher_court_position_desc: "Соединяя Восток и Запад, христиан и мусульман, еврейские купцы и их торговые пути охватывают большую часть известного мира, соединяя общины от Испании до Китая. Независимо от того, являются ли они мурашу, раданитами или авкалийцами, они служат гонцами, шпионами, посланниками, торговцами и ростовщиками. Их караваны перевозят специи, стеклянную посуду, векселя, личную корреспонденцию, религиозные документы и многое другое. Благодаря влиянию вашего ставленника, по этим торговым маршрутам могут перевозиться ваши приказы и товары."
+
+
+
+ # Mary the Black content — Triumvir court positions. Unlocked by the
+ # Codex of Legacies tenet "Legacy of Trinity" (tenet_legacyoftrinity).
+ # Single position type with max_available_positions = 2 — both seats
+ # share these strings.
+ triumvir_court_position: "Триумвир"
+ triumvir_court_position_desc: "Один из двух соправителей, которые делят трон с правителем. Триумвир осуществляет полномочия основателей в совете, при дворе и на поле боя. Должность, которая имеет вес, только если её занимает тот, чьи навыки соответствуют ей.\n\n#help Требования к [Concept('aptitude', 'пригодности')|E] см. в «[triumvir|E]».#!"
+
+ # Aptitude concept linked from the desc above (mirrors the primogen concepts).
+ game_concept_triumvir: "$triumvir_court_position$"
+ game_concept_triumvir_desc: "[Concept('court_position', 'Придворная должность')|E] триумвира опирается на все аспекты правления, выставляя требования к хорошему показателю навыков [Concept('diplomacy', 'дипломатии')|E], [Concept('martial', 'военного дела')|E], [Concept('stewardship', 'управления')|E], [Concept('intrigue', 'искусства интриг')|E] и [Concept('learning', 'учёности')|E] — настоящий эрудит подойдёт на эту должность лучше всего.\n\nСвойства «[GetTrait('administrator').GetName(GetNullCharacter)]», «[GetTrait('erudite').GetName(GetNullCharacter)]», «[GetTrait('schemer').GetName(GetNullCharacter)]», «[GetTrait('diligent').GetName(GetNullCharacter)]», «[GetTrait('patient').GetName(GetNullCharacter)]» и/или «[GetTrait('ambitious').GetName(GetNullCharacter)]» повышают пригодность.\n\nСвойства «[GetTrait('lazy').GetName(GetNullCharacter)]», «[GetTrait('content').GetName(GetNullCharacter)]», «[GetTrait('arrogant').GetName(GetNullCharacter)]», «[GetTrait('craven').GetName(GetNullCharacter)]» и/или «[GetTrait('trusting').GetName(GetNullCharacter)]» ухудшают пригодность."
+
+ ######################################################
+ # Mary the Black — Inverted Trinity pillars (Synthesis path)
+ ######################################################
+ pillar_of_darkness_court_position: "Столп тьмы"
+ pillar_of_darkness_court_position_desc: "У мрака Троицы появился лик: древнее, откровенно проклятое существо, восседающее при дворе.\n\n#help Требования к [Concept('aptitude', 'пригодности')|E] см. в «[pillar_of_darkness|E]».#!"
+ pillar_of_light_court_position: "Столп света"
+ pillar_of_light_court_position_desc: "#shinygold У света Троицы появился лик: лучезарный, верный, скорбящий, приближённый и низвергнутый. Они верят, что достигнут восхождения. Суть в этой вере.#!\n\n#help Требования к [Concept('aptitude', 'пригодности')|E] см. в «[pillar_of_light|E]».#!"
+
+ # Aptitude concepts linked from the pillar descs above (mirror the primogen concepts).
+ game_concept_pillar_of_darkness: "$pillar_of_darkness_court_position$"
+ game_concept_pillar_of_darkness_desc: "$pillar_of_darkness_court_position$ вознаграждает кандидата - чем старше, чем более проклят, чем более разрушителен, тем лучше.\n\nОн сильнее всего проявляется у явно проклятых: тех, кто почитает Via Diabolis, [GetTrait('baali').GetName(GetNullCharacter)|l] и тех, кто уже связан инфернальными договорами.\n\nДревняя жестокость помогает: старшая кровь в четвёртом-шестом поколении, мастера демонизма и #TOOLTIP:GAME_TRAIT,sadistic,[GetNullCharacter] #L садисты#!#!. Деструктивный темперамент даёт немного больше: высокое значение навыка [Concept('martial', 'военного дела')|E], #TOOLTIP:GAME_TRAIT,callous,[GetNullCharacter] #L бесчувственные#!#! и представители воинственных кланов, такие как #TOOLTIP:GAME_TRAIT,assamite,[GetNullCharacter] #L Ассамиты#!#! и [GetTrait('brujah').GetName(GetNullCharacter)]."
+ game_concept_pillar_of_light: "$pillar_of_light_court_position$"
+ game_concept_pillar_of_light_desc: "$pillar_of_light_court_position$ вознаграждает обольщённого новообращённого, сияющего, верующего или скорбящего.\n\nОн сильнее всего действует на набожных (тех, кто следует Кодексу наследия, Via Caeli или Via Divinitatis, а также на #TOOLTIP:GAME_TRAIT,zealous,[GetNullCharacter] #L ревностных#!#!) и на тех, кто связан с вами любовью.\n\nСияние помогает #TOOLTIP:GAME_TRAIT,toreador,[GetNullCharacter] #L тореадорам#!#! и тем, кто наделён Присутствием. То же самое можно сказать о мягкой харизме: хорошим показателям навыков [Concept('diplomacy', 'дипломатии')|E] или [Concept('learning', 'учёности')|E], #TOOLTIP:GAME_TRAIT,gregarious,[GetNullCharacter] #L общительности#!#!, красоте и душе, затаившей обиду."
+
+ # Pillar of Ash — aptitude breakdown reasons.
+ pillar_of_darkness_apt_viadiabolis: "Следует дороге Дьявола"
+ pillar_of_darkness_apt_baali: "Из клана Баали с демонической кровью"
+ pillar_of_darkness_apt_pacts: "Уже связан инфернальными договорами"
+ pillar_of_darkness_apt_daimonion: "Владеет Демонизмом"
+ pillar_of_darkness_apt_elder: "Древняя кровь"
+ pillar_of_darkness_apt_sadistic: "Садизм"
+ pillar_of_darkness_apt_martial: "Способный разрушитель"
+ pillar_of_darkness_apt_callous: "Бесчувственность"
+ pillar_of_darkness_apt_warrior_clan: "Из клана воинов"
+ pillar_of_darkness_apt_eshmunazar: "Эшмуназар - второй из самой тёмной троицы"
+
+ # Pillar of Gold — aptitude breakdown reasons.
+ pillar_of_light_apt_faith: "Следует дороге Небес"
+ pillar_of_light_apt_believer: "Истинно верующий"
+ pillar_of_light_apt_lover: "Связан любовью с основателем"
+ pillar_of_light_apt_toreador: "Из клана Тореадор, к которому принадлежит основатель"
+ pillar_of_light_apt_presence: "Владеет Присутствием"
+ pillar_of_light_apt_diplomat: "Одарённый дипломат"
+ pillar_of_light_apt_charisma: "Красота и очарование"
+ pillar_of_light_apt_learned: "Учёность"
+ pillar_of_light_apt_grief: "Таит обиды, которые нужно разобрать"

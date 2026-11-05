@@ -7,11 +7,17 @@
  CHARACTER_IS_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "[CHARACTER.GetShortUIName|U] #bold не#! [Select_CString( CHARACTER.IsLocalPlayer, 'являетесь', 'является')] [Concept('courtier', 'придворным')|E] или [Concept('direct_vassal', 'прямым вассалом')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
  I_AM_NOT_A_COURTIER_OR_VASSAL_OF_CHARACTER: "Вы #bold не#! являетесь [Concept('courtier', 'придворным')|E] или [Concept('direct_vassal', 'прямым вассалом')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
 
+ IS_A_NETERU_OR_IMPRISONED_BY_CHARACTER: "Является [Concept('neteru', 'нетеру')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] или находится в темнице [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ CHARACTER_IS_A_NETERU_OR_IMPRISONED_BY_CHARACTER: "[CHARACTER.GetShortUIName] [Select_CString( CHARACTER.IsLocalPlayer, 'являетесь', 'является')] [Concept('neteru', 'нетеру')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] или [Select_CString( CHARACTER.IsLocalPlayer, 'находитесь', 'находится')] в темнице [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ I_AM_A_NETERU_OR_IMPRISONED_BY_CHARACTER: "Вы являетесь [Concept('neteru', 'нетеру')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] или находитесь в темнице [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ IS_NOT_A_NETERU_OR_IMPRISONED_BY_CHARACTER: "#bold Не#! является [Concept('neteru', 'нетеру')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] или находится в темнице [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ CHARACTER_IS_NOT_A_NETERU_OR_IMPRISONED_BY_CHARACTER: "[CHARACTER.GetShortUIName|U] #bold не#! [Select_CString( CHARACTER.IsLocalPlayer, 'являетесь', 'является')] [Concept('neteru', 'нетеру')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] или [Select_CString( CHARACTER.IsLocalPlayer, 'находитесь', 'находится')] в темнице [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+ I_AM_NOT_A_NETERU_OR_IMPRISONED_BY_CHARACTER: "Вы #bold не#! являетесь [Concept('neteru', 'нетеру')|E] [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )] или находитесь в темнице [Select_CString(TARGET_CHARACTER.IsLocalPlayer, '', 'персонажа ' )][TARGET_CHARACTER.GetShortUINamePossessive][Select_CString(TARGET_CHARACTER.IsLocalPlayer, 'его персонажа', '' )]"
+
  NUM_OF_RELATION_DEMONIC_MASTER_TARGET_TRIGGER: "Количество демонических хозяев - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_DEMONIC_THRALL_TARGET_TRIGGER: "Количество демонических рабов - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_POSSESSED_TARGET_TRIGGER: "Количество марионеток - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_EFFIGY_CHARACTER_TARGET_TRIGGER: "Количество эффигий $COMPARATOR$ $NUM|V0$"
- NUM_OF_RELATION_DREAMER_MEMBER_TARGET_TRIGGER: "Количество мечтателей - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_WORSHIPPING_CULTIST_TARGET_TRIGGER: "Количество культистов - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_SPIRIT_COMPANION_TARGET_TRIGGER: "Количество спутников-духов - $COMPARATOR$ $NUM|V0$"
  NUM_OF_RELATION_INNOCENT_TORMENTOR_TARGET_TRIGGER: "Количество [Concept('tormentors', 'истязателей')|E] - $COMPARATOR$ $NUM|V0$"
@@ -33,6 +39,7 @@
  vamp_cant_follow_you_faith_tooltip: "[GetTrait('vampire').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  ghoul_cant_follow_you_faith_tooltip: "[GetTrait('ghoul').GetName( GetNullCharacter )]/[GetTrait('revenant').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  fera_cant_follow_you_faith_tooltip: "[GetTraitGroup('fera').GetName()] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
+ abomination_cant_follow_you_faith_tooltip: "[GetTraitGroup('abomination').GetName()] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  hunter_cant_follow_you_faith_tooltip: "[GetTrait('superhunter').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  mortal_cant_follow_you_faith_tooltip: "[GetTrait('mortal').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
  mummy_cant_follow_you_faith_tooltip: "[GetTrait('mummy').GetName( GetNullCharacter )] не может обратиться в [GetPlayer.GetFaith.GetAdjective|l]!"
@@ -86,6 +93,33 @@
 
  POD_splat_has_landless_mechanics: "Ваш [Concept('splat', 'вид')|E] имеет #TOOLTIP:game_concept_POD_landless_mechanics_desc #E механики авантюристов#!#!"
 
+ POD_splat_has_disease_immunity_global: "[Concept('splat', 'Вид')|E] невосприимчив к хворям"
+ POD_splat_has_disease_immunity_global_not: "[Concept('splat', 'Вид')|E] #bold восприимчив#! к хворям"
+ POD_splat_has_disease_immunity_first: "Ваш [Concept('splat', 'вид')|E] невосприимчив к хворям"
+ POD_splat_has_disease_immunity_first_not: "Ваш [Concept('splat', 'вид')|E] #bold восприимчив#! к хворям"
+ POD_splat_has_disease_immunity_third: "[Concept('splat', 'Вид')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] невосприимчив к хворям"
+ POD_splat_has_disease_immunity_third_not: "[Concept('splat', 'Вид')|E] [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )][CHARACTER.GetShortUINamePossessive][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] #bold восприимчив#! к хворям"
+
  POD_IS_TRAIT_PERMANENT: "Свойство «[TRAIT.GetName(GetPlayer)]» не может быть исцелено."
 
  POD_has_any_healable_maim_trigger_tooltip: "#bold Не#! искалечен каким-либо образом."
+
+ # listing all the traits manually instead of using the reusable customdesc
+ # because this makes the diffs with the vanilla trigger file cleaner
+ # also the reusable loc doesn't work anyway since some stress traits are nouns and some are adjectives
+ can_be_drunkard_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('drunkard').GetName(CHARACTER.Self)]»"
+ can_be_hashishiyah_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('hashishiyah').GetName(CHARACTER.Self)]»"
+ can_be_rakish_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('rakish').GetName(CHARACTER.Self)]»"
+ can_be_reclusive_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('reclusive').GetName(CHARACTER.Self)]»"
+ can_be_irritable_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('irritable').GetName(CHARACTER.Self)]»"
+ can_be_flagellant_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('flagellant').GetName(CHARACTER.Self)]»"
+ can_be_profligate_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('profligate').GetName(CHARACTER.Self)]»"
+ can_be_improvident_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('improvident').GetName(CHARACTER.Self)]»"
+ can_be_contrite_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('contrite').GetName(CHARACTER.Self)]»"
+ can_be_comfort_eater_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('comfort_eater').GetName(CHARACTER.Self)]»"
+ can_be_inappetetic_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('inappetetic').GetName(CHARACTER.Self)]»"
+ can_be_journaller_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('journaller').GetName(CHARACTER.Self)]»"
+ can_be_confider_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('confider').GetName(CHARACTER.Self)]»"
+ can_be_athletic_tt: "[CHARACTER.GetFirstName] #bold не [Select_CString(CHARACTER.IsFemale, 'должна', 'должен' )]#! иметь свойство «[GetTrait('athletic').GetName(CHARACTER.Self)]»"
+
+ #can_be_coping_trait: "[CHARACTER.GetFirstName] cannot be [TRAIT.GetName(GetPlayer)]"

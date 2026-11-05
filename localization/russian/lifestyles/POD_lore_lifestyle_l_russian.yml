@@ -4,7 +4,8 @@
 
  lore_lifestyle_name: "Знания"
  lore_lifestyle_desc: "Фокус на силах, которые исходят из остатков божественных способностей."
- monthly_lore_lifestyle_xp_gain_mult: "Ежемесячный прирост опыта на [Concept('lifestyle', 'пути')|E] знаний"
+ monthly_lore_lifestyle_xp_gain_mult: "Ежемесячный прирост [Concept('experience', 'опыта')|E] на [Concept('lifestyle', 'пути')|E] знаний"
+ monthly_lore_lifestyle_xp_gain_add: "Ежемесячный прирост [Concept('experience', 'опыта')|E] на [Concept('lifestyle', 'пути')|E] знаний"
 
  lore_focus: "Знания"
  lore_focus_modifier: "[GetFocus('lore_focus').GetName]"
@@ -44,9 +45,9 @@
  lore_fade_perk_name: "Исчезновение"
 
  LORE_TRANSLATE_PERK_EFFECT: "#flavor Падшие могут переводить любой разговорный язык смертных, а также превращать одно состояние материи (воду) в другое (лёд).#!"
- LORE_MANIPULATE_ADHESION_PERK_EFFECT: "Открывает движение в [Concept('single_combat_duel', 'поединке')|E].\nВы можете усилить случайные отношения вашей цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут манипулировать притяжением предметов и людей.#!"
- LORE_MANIPULATE_INERTIA_PERK_EFFECT: "Открывает движение в [Concept('single_combat_duel', 'поединке')|E].\nВы можете разорвать случайные отношения цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут управлять инерцией как предметов, так и людей.#!"
- LORE_MANIPULATE_COHESION_PERK_EFFECT: "Открывает движение в [Concept('single_combat_duel', 'поединке')|E].\nВы можете изменить личность или ориентацию цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nОткрывает новый вариант казни.\n#flavor Падшие могут манипулировать сцеплением предметов и людей.#!"
+ LORE_MANIPULATE_ADHESION_PERK_EFFECT: "Вы можете усилить случайные отношения вашей цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут манипулировать притяжением предметов и людей.#!"
+ LORE_MANIPULATE_INERTIA_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_manipulate_inertia')]\nВы можете разорвать случайные отношения цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут управлять инерцией как предметов, так и людей.#!"
+ LORE_MANIPULATE_COHESION_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_manipulate_cohesion')]\nВы можете изменить личность или ориентацию цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nОткрывает новый вариант казни.\n#flavor Падшие могут манипулировать сцеплением предметов и людей.#!"
  LORE_FADE_PERK_EFFECT: "Вы можете заставить цель потерять весь [Concept('prestige', 'престиж')|E] и [Concept('piety', 'благочестие')|E] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут заставить исчезнуть что угодно, будь то человек или законы физики.#!"
 
  lore_reality_tremors_perk_name: "Дрожь реальности"
@@ -55,9 +56,9 @@
  lore_summon_outsider_perk_name: "Вызов чужака"
  lore_unspeakable_survivor_perk_name: "Чудовищный служитель"
 
- LORE_REALITY_TREMORS_PERK_EFFECT: "Накладывает на каждого правителя противоположной стороны модификатор [GetModifier('lore_reality_tremors_modifier').GetNameWithTooltip] при начале [Concept('war', 'войны')|E] в качестве основного атакующего или защитника.\n#flavor Привязанные к земле могут поколебать основы реальности.#!"
+ LORE_REALITY_TREMORS_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_reality_tremors')]\nНакладывает на каждого правителя противоположной стороны модификатор [GetModifier('lore_reality_tremors_modifier').GetNameWithTooltip] при начале [Concept('war', 'войны')|E] в качестве основного атакующего или защитника.\n#flavor Привязанные к земле могут поколебать основы реальности.#!"
  LORE_LASH_OF_CORRUPTION_PERK_EFFECT: "Улучшает [Concept('modifier', 'модификатор')|E] достоинства «[GetPerk('lore_reality_tremors_perk').GetName(GetPlayer)]» до [GetModifier('lore_lash_of_corruption_modifier').GetNameWithTooltip].\n#flavor Привязанные к земле могут искажать реальность до тех пор, пока она не затрещит по швам.#!"
- LORE_WAVE_OF_MUTILATION_PERK_EFFECT: "Улучшает [Concept('modifier', 'модификатор')|E] достоинства «[GetPerk('lore_reality_tremors_perk').GetName(GetPlayer)]» до [GetModifier('lore_wave_of_mutilation_modifier').GetNameWithTooltip].\n#flavor Привязанные к земле могут кромсать реальность, пока она не рухнет.#!"
+ LORE_WAVE_OF_MUTILATION_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_wave_of_mutilation')]\nУлучшает [Concept('modifier', 'модификатор')|E] достоинства «[GetPerk('lore_reality_tremors_perk').GetName(GetPlayer)]» до [GetModifier('lore_wave_of_mutilation_modifier').GetNameWithTooltip].\n#flavor Привязанные к земле могут кромсать реальность, пока она не рухнет.#!"
  LORE_SUMMON_OUTSIDER_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('the_unnamable').GetName].\nВы можете уничтожить все постройки во владении в вашем текущем местоположении через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Привязанные к земле могут открыть путь для существ не из этой реальности.#!"
  LORE_UNSPEAKABLE_SURVIVOR_PERK_EFFECT: "Может улучшить Ритуал разделённой души до ранее недоступного уровня.\n#flavor Привязанные к земле могут сосредоточить свой контроль над реальностью в идеальном, вечном сосуде.#!"
 
@@ -67,10 +68,10 @@
  lore_hand_of_faith_perk_name: "Рука веры"
  lore_revelation_perk_name: "Откровение"
 
- LORE_COMMAND_THE_FLAME_PERK_EFFECT: "Накладывает на каждого правителя противоположной стороны модификатор [GetModifier('lore_command_the_flame_modifier').GetNameWithTooltip] при начале [Concept('war', 'войны')|E] в качестве основного атакующего или защитника.\n#flavor Падшие могут повелевать пламенем божественности.#!"
+ LORE_COMMAND_THE_FLAME_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_command_the_flame')]\nНакладывает на каждого правителя противоположной стороны модификатор [GetModifier('lore_command_the_flame_modifier').GetNameWithTooltip] при начале [Concept('war', 'войны')|E] в качестве основного атакующего или защитника.\n#flavor Падшие могут повелевать пламенем божественности.#!"
  LORE_AURA_OF_LEGEND_PERK_EFFECT: "#flavor Падшие могут предстать в образе живой легенды или даже бога.#!"
  LORE_THE_MARK_OF_THE_CELESITALS_PERK_EFFECT: "Вы можете наделить себя и вашу цель модификатором [GetModifier('lore_the_mark_of_the_celesitals_good_modifier').GetNameWithTooltip] или [GetModifier('lore_the_mark_of_the_celesitals_bad_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут оставить божественную метку на другом человеке, наделив его удачей или невезением.#!"
- LORE_HAND_OF_FAITH_PERK_EFFECT: "Можно [Concept('POD_banish', 'изгонять')|E] призраков, фей или демонов в их родные миры [Concept('umbra', 'Умбры')|E].\n#flavor Падшие могут изгнать существ, не созданных Богом.#!"
+ LORE_HAND_OF_FAITH_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_hand_of_faith')]\nМожно [Concept('POD_banish', 'изгонять')|E] призраков, фей или демонов в их родные миры [Concept('umbra', 'Умбры')|E].\n#flavor Падшие могут изгнать существ, не созданных Богом.#!"
  LORE_REVELATION_PERK_EFFECT: "Вы можете узнать все секреты и происки цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут читать существ на Божьей Земле как открытую книгу.#!"
 
  lore_cleanse_perk_name: "Очищение"
@@ -79,8 +80,8 @@
  lore_animate_perk_name: "Одушевление"
  lore_restore_life_perk_name: "Восстановление жизни"
 
- LORE_CLEANSE_PERK_EFFECT: "Вы можете снять все ранения, хвори и душевные расстройства через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут очистить живое существо от всего, что его тяготит.#!"
- LORE_COMMAND_THE_WIND_PERK_EFFECT: "#flavor Падшие могут повелевать ветрами.#!"
+ LORE_CLEANSE_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_cleanse')]\nВы можете снять все ранения, хвори и душевные расстройства через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут очистить живое существо от всего, что его тяготит.#!"
+ LORE_COMMAND_THE_WIND_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_wall_of_air')]\n#flavor Падшие могут повелевать ветрами.#!"
  LORE_MANY_PLACES_AT_ONCE_PERK_EFFECT: "$countermeasures_unlocks_t4_supernatural_high_alert$\n#flavor Падшие могут видеть глазами ближайших живых существ.#!"
  LORE_ANIMATE_PERK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('golems').GetName], [GetMaA('guardians').GetName] и [GetMaA('homunculus').GetName].\n#flavor Падшие могут вдохнуть жизнь в неживую материю.#!"
  LORE_RESTORE_LIFE_PERK_EFFECT: "Вы можете вновь сделать связанного призрака смертным и получить 10 решимости в процессе через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут вернуть мёртвым дыхание жизни.#!"
@@ -91,11 +92,11 @@
  lore_mold_earth_perk_name: "Ваяние земли"
  lore_alter_path_perk_name: "Изменение пути"
 
- LORE_EARTH_MELD_PERK_EFFECT: "#flavor Падшие могут превращать камни и минералы в оружие.#!"
+ LORE_EARTH_MELD_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_earth_meld')]\n#flavor Падшие могут превращать камни и минералы в оружие.#!"
  LORE_CREATE_OBJECT_PERK_EFFECT: "$unlock_forging_node$, добавляющий [Concept('modifier', 'модификатор')|E], основанный на типе [Concept('artifact', 'артефакта')|E], за 3 ед. решимости.\n#flavor Падшие могут создавать предметы из ничего.#!"
  LORE_ENCHANT_OBJECT_PERK_EFFECT: "Улучшает достоинство «[GetPerk('lore_create_object_perk').GetName(GetPlayer)]», давая 2 [Concept('modifiers', 'модификатора')|E] вместо 1.\n#flavor Падшие могут зачаровывать обычные предметы, наделяя их сверхъестественными способностями.#!"
  LORE_MOLD_EARTH_PERK_EFFECT: "Улучшает достоинство «[GetPerk('lore_enchant_object_perk').GetName(GetPlayer)]»,снижая цену с 3 ед. решимости до 2.\n#flavor Падшие могут придавать форму металлам и сплавам, как глине.#!"
- LORE_ALTER_PATH_PERK_EFFECT: "Накладывает на каждого правителя противоположной стороны модификатор [GetModifier('lore_alter_path_modifier').GetNameWithTooltip] при начале [Concept('war', 'войны')|E] в качестве основного атакующего или защитника.\n#flavor Падшие могут искажать пространственные отношения между объектами.#!"
+ LORE_ALTER_PATH_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_alter_path')]\nНакладывает на каждого правителя противоположной стороны модификатор [GetModifier('lore_alter_path_modifier').GetNameWithTooltip] при начале [Concept('war', 'войны')|E] в качестве основного атакующего или защитника.\n#flavor Падшие могут искажать пространственные отношения между объектами.#!"
 
  lore_foresee_perk_name: "Предвидение"
  lore_teleport_perk_name: "Телепортация"
@@ -103,9 +104,9 @@
  lore_causal_influence_perk_name: "Причинное влияние"
  lore_coherent_light_perk_name: "Когерентное излучение"
 
- LORE_FORESEE_PERK_EFFECT: "$countermeasures_unlocks_t4_all_seeing_eye$\nВы получите уведомление, если кто-то задумает убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то задумает соблазнить ваших любовников или консортов.\n#flavor Падшие могут улавливать нити судьбы.#!"
+ LORE_FORESEE_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_foresee')]\n$countermeasures_unlocks_t4_all_seeing_eye$\nВы получите уведомление, если кто-то задумает убить ваших друзей или членов семьи.\nВы получите уведомление, если кто-то задумает соблазнить ваших любовников или консортов.\n#flavor Падшие могут улавливать нити судьбы.#!"
  LORE_TELEPORT_PERK_EFFECT: "Позволяет телепортировать вашу армию к месту нахождения цели или телепортироваться к следующему пункту назначения во время путешествия через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут путешествовать по нитям судьбы.#!"
- LORE_ILLUSION_PERK_EFFECT: "#flavor Падшие могут создавать иллюзии, похожие на жизнь.#!"
+ LORE_ILLUSION_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_illusion')]\n#flavor Падшие могут создавать иллюзии, похожие на жизнь.#!"
  LORE_CAUSAL_INFLUENCE_PERK_EFFECT: "#flavor Падшие могут напрямую управлять нитями судьбы.#!"
  LORE_COHERENT_LIGHT_PERK_EFFECT: "#flavor Падшие могут создавать настоящие иллюзии.#!"
 
@@ -116,9 +117,9 @@
  lore_shapechange_perk_name: "Изменение формы"
 
  LORE_MANIPULATE_WEATHER_PERK_EFFECT: "Вы можете наделить [Concept('county', 'графство')|E] в вашем текущем местоположении модификатором [GetModifier('lore_manipulate_weather_good_modifier').GetNameWithTooltip] или [GetModifier('lore_manipulate_weather_bad_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут внушать трепет, управляя погодой.#!"
- LORE_INSPIRE_PERK_EFFECT: "Вы можете наделить кого-либо вдохновением через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут вдохновлять других существ, чтобы принести в мир больше красоты.#!"
+ LORE_INSPIRE_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_inspire')]\nВы можете наделить кого-либо вдохновением через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут вдохновлять других существ, чтобы принести в мир больше красоты.#!"
  LORE_ALTER_APPEARANCE_PERK_EFFECT: "Вы можете сделать вашу цель более красивой или уродливой через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут дарить красоту другим существам или отнимать её.#!"
- LORE_COMMAND_THE_STORM_PERK_EFFECT: "Улучшает достоинство «[GetPerk('lore_manipulate_weather_perk').GetName(GetPlayer)]», позволяя влиять на целое [Concept('duchy', 'герцогство')|E].\n#flavor Падшие могут внушать величие, управляя сильными штормами.#!"
+ LORE_COMMAND_THE_STORM_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_command_the_storm')]\nУлучшает достоинство «[GetPerk('lore_manipulate_weather_perk').GetName(GetPlayer)]», позволяя влиять на целое [Concept('duchy', 'герцогство')|E].\n#flavor Падшие могут внушать величие, управляя сильными штормами.#!"
  LORE_SHAPECHANGE_PERK_EFFECT: "Вы можете изменить свои физические свойства и вашей цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут создавать необычную красоту, изменяя форму других существ.#!"
 
  lore_command_animals_perk_name: "Повелевание животными"
@@ -128,8 +129,8 @@
  lore_create_chimera_perk_name: "Создание химер"
 
  LORE_COMMAND_ANIMALS_PERK_EFFECT: "Доступны различные звериные [men_at_arms|El].\n#flavor Падшие могут управлять существами Земли.#!"
- LORE_MANIPULATE_FLESH_PERK_EFFECT: "#flavor Падшие могут манипулировать плотью живых существ.#!"
- LORE_COMMAND_THE_WILD_PERK_EFFECT: "Вы можете наделить [Concept('county', 'графство')|E] в вашем текущем местоположении модификатором [GetModifier('lore_command_the_wild_good_modifier').GetNameWithTooltip] или [GetModifier('lore_command_the_wild_bad_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут манипулировать жизненной силой растений и культур.#!"
+ LORE_MANIPULATE_FLESH_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_manipulate_flesh')]\n#flavor Падшие могут манипулировать плотью живых существ.#!"
+ LORE_COMMAND_THE_WILD_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_command_the_wild')]\nВы можете наделить [Concept('county', 'графство')|E] в вашем текущем местоположении модификатором [GetModifier('lore_command_the_wild_good_modifier').GetNameWithTooltip] или [GetModifier('lore_command_the_wild_bad_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#flavor Падшие могут манипулировать жизненной силой растений и культур.#!"
  LORE_MUTATE_PLANT_PERK_EFFECT: "Улучшает достоинство «[GetPerk('lore_command_the_wild_perk').GetName(GetPlayer)]», позволяя влиять на целое [Concept('duchy', 'герцогство')|E].\n#flavor Падшие могут мутировать растения в новые формы.#!"
  LORE_CREATE_CHIMERA_PERK_EFFECT: "#flavor Падшие могут свободно менять и создавать новых животных.#!"
 
@@ -139,8 +140,8 @@
  lore_anchor_the_soul_perk_name: "Якорь душ"
  lore_pierce_the_barrier_perk_name: "Пронзание барьера"
 
- LORE_COMMAND_THE_DEAD_PERK_EFFECT: "$POD_can_weaken_fetter_trigger_loca$\n$POD_can_bind_wraith_trigger_loca$\n$POD_can_command_wraith_trigger_loca$\nДоступны призрачные и мёртвые профессионалы.\n#flavor Падшие могут повелевать бесплотными существами, находящимися за пределами Савана.#!"
+ LORE_COMMAND_THE_DEAD_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_command_the_dead')]\n$POD_can_bind_wraith_trigger_loca$\n$POD_can_command_wraith_trigger_loca$\nДоступны призрачные и мёртвые профессионалы.\n#flavor Падшие могут повелевать бесплотными существами, находящимися за пределами Савана.#!"
  LORE_STEP_BEYOND_THE_VEIL_PERK_EFFECT: "Сохраняет облик при путешествии по [Concept('umbra', 'Умбре')|E].\n#flavor Падшие могут становиться бесплотными и перемещаться за пределы.#!"
- LORE_EXTINGUISH_LIFE_PERK_EFFECT: "Накладывает на каждого правителя противоположной стороны модификатор [GetModifier('lore_extinguish_life_modifier').GetNameWithTooltip] при начале [Concept('war', 'войны')|E] в качестве основного атакующего или защитника.\n#flavor Падшие могут заставить других существ столкнуться с понятием смерти.#!"
+ LORE_EXTINGUISH_LIFE_PERK_EFFECT: "[PODUnlocksCombatMove('POD_combat_move_demon_extinguish_life')]\nНакладывает на каждого правителя противоположной стороны модификатор [GetModifier('lore_extinguish_life_modifier').GetNameWithTooltip] при начале [Concept('war', 'войны')|E] в качестве основного атакующего или защитника.\n#flavor Падшие могут заставить других существ столкнуться с понятием смерти.#!"
  LORE_ANCHOR_THE_SOUL_PERK_EFFECT: "#flavor Падшие могут привязывать бесплотных существ к реальности.#!"
  LORE_PIERCE_THE_BARRIER_PERK_EFFECT: "Можно манипулировать Барьером и Латной рукавицей.#flavor Падшие могут пробивать барьеры между реальностями.#!"
