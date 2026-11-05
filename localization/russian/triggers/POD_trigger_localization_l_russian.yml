@@ -160,6 +160,13 @@
  POD_mortal_race_trigger: "[TARGET_CHARACTER.GetFirstName] #Bold не#! является сверхъестественным созданием."
  NOT_POD_mortal_race_trigger: "[TARGET_CHARACTER.GetFirstName] является сверхъестественным созданием."
 
+ POD_GRANT_TITLES_ITEM_CANT_GIVE_HAVEN_TITLE: "[puppet_or_actor.GetShortUIName|U] не [Select_CString( puppet_or_actor.IsLocalPlayer, 'можете', 'может')] передать [Concept('title', 'титул')|E] [Concept('domicile', 'убежища')|E] [Select_CString(puppet_or_actor.IsLocalPlayer, '', 'персонажа ' )][puppet_or_actor.GetShortUINamePossessive][Select_CString(puppet_or_actor.IsLocalPlayer, 'его персонажа', '' )]"
+ POD_BUY_CLAIM_HAVEN_TITLE: "Вы не можете купить [Concept('claim', 'претензию')|E] на титул [Concept('domicile', 'убежища')|E]"
+ POD_title_is_haven_landed_domicile_tt: "Является [Concept('title', 'титулом')|E] [Concept('domicile', 'убежища')|E]"
+ POD_title_is_haven_landed_domicile_tt_not: "#bold Не#! является [Concept('title', 'титулом')|E] [Concept('domicile', 'убежища')|E]"
+ POD_title_is_haven_landed_domicile_tt_third: "[TITLE.GetDefinitiveName] является [Concept('title', 'титулом')|E] [Concept('domicile', 'убежища')|E]"
+ POD_title_is_haven_landed_domicile_tt_third_not: "[TITLE.GetDefinitiveName] #bold не#! является [Concept('title', 'титулом')|E] [Concept('domicile', 'убежища')|E]"
+
  GLOBAL_ANATHEMA_TRIGGER: "Этот персонаж признан Камарильей #TOOLTIP:game_concept_blood_hunt_desc #E анафемой#!#!"
  FIRST_ANATHEMA_TRIGGER: "Вы признаны Камарильей #TOOLTIP:game_concept_blood_hunt_desc #E анафемой#!#!"
  THIRD_ANATHEMA_TRIGGER: "[CHARACTER.GetShortUIName] [Select_CString(CHARACTER.IsFemale, 'признана', 'признан' )] Камарильей #TOOLTIP:game_concept_blood_hunt_desc #E анафемой#!#!"
@@ -174,7 +181,7 @@
  HAS_TRUE_FAITH_FIRST_NOT: "Вы #bold не#! обладаете [Glossary('истинной верой','game_concept_true_faith_desc')]"
  HAS_TRUE_FAITH_THIRD_NOT: "[CHARACTER.GetShortUIName] #bold не#! обладает [Glossary('истинной верой','game_concept_true_faith_desc')]"
 
- INCOMPATIBLE_TENET_WARMONGER_TRIGGER: "Несовместимый [core_tenet|El] — [GetFaithDoctrine('tenet_warmonger').GetName( GetPlayer.GetFaith )]"
+ INCOMPATIBLE_TENET_WARMONGER_TRIGGER: "Несовместимый [core_tenet|El] — [GetDoctrineType('tenet_warmonger').GetName( GetPlayer.GetFaith )]"
 
  IS_ARMY_IN_COMBAT_TRIGGER: "Армия участвует в бою"
  NOT_IS_ARMY_IN_COMBAT_TRIGGER: "Армия #bold не#! участвует в бою"

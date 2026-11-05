@@ -251,7 +251,7 @@
 
  pod1230objectives_fera.125.desc: "Хотя большинство оборотней было возмущено ростом христианства, некоторые из них увидели возможность, а еще меньше - намек на Гею в почитании Марии смертными. Поначалу эти фракции использовали быстрый рост могущества церкви и тонко влияли на теологические дебаты, чтобы по возможности склонить их в пользу поклонения Марии.\nЭто заняло много времени и много неудач, но результаты начинают проявляться. С помощью этого, казалось бы, тонкого влияния «Церкви Геи» удалось создать каскадный эффект, в результате которого католическая церковь стала потихоньку отворачиваться от оборотней и обращать внимание на другие проблемы."
  pod1230objectives_fera.125.a: "Все под одной Матерью."
- gaiachurch_objective_decision_custom_roma: "Владелец владения [GetTitleByKey('c_roma').GetNameNoTier] должен иметь доктрину «[GetFaithDoctrine('special_doctrine_ecumenical_hunters').GetBaseName]» или исповедовать вашу конфессию."
+ gaiachurch_objective_decision_custom_roma: "Владелец владения [GetTitleByKey('c_roma').GetNameNoTier] должен иметь доктрину «[GetDoctrineType('special_doctrine_ecumenical_hunters').GetBaseName]» или исповедовать вашу конфессию."
 
  bagheera_objective_decision: "Акари, пурра, дуйяла"
  bagheera_objective_decision_tooltip: "Поиск, становление, переход"
@@ -441,11 +441,11 @@
  zhong_guo_objective_decision_tooltip: "Нам суждено вести за собой."
  zhong_guo_objective_decision_desc: "Чжун-лун - потомки королей-драконов. Нам выпало возглавить младших [Glossary('фера', 'glossary_fera_tt')] в Поднебесной, наш возраст и мудрость приведут к эпохе бесконечного процветания."
  zhong_guo_objective_decision_confirm: "Мы станем верховными драконами."
- zhong_guo_objective_decision_requirement: "В вашей группе ([GetPlayer.Custom('PODCoterie')]) состоит как [GetTrait('werewolf').GetName(GetNullCharacter)|l], так и [GetTrait('bastet').GetName(GetNullCharacter)|l], которые имеют доктрину «[GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName]»"
+ zhong_guo_objective_decision_requirement: "В вашей группе ([GetPlayer.Custom('PODCoterie')]) состоит как [GetTrait('werewolf').GetName(GetNullCharacter)|l], так и [GetTrait('bastet').GetName(GetNullCharacter)|l], которые имеют доктрину «[GetDoctrineType('doctrine_fera_beast_courts').GetBaseName]»"
  zhong_guo_objective_decision_requirement2: "Ваша группа ([GetPlayer.Custom('PODCoterie')]) должна иметь не менее 30 ед. во всех [Concept('skills', 'навыках')|E]"
  zhong_guo_objective_decision_requirement3: "Ваша группа ([GetPlayer.Custom('PODCoterie')]) должна иметь не менее 75 [Concept('prowess', 'доблести')|E]"
  zhong_guo_objective_decision_effect: "Вы получите [Concept('title', 'титул')|E] [GetTitleByKey('h_zhong_guo').GetNameNoTier], который охватит весь регион [GetGeographicalRegion('world_asia_china').GetName]"
- zhong_guo_objective_decision_effect2: "Все [Concept('faiths', 'конфессии')|E] с доктриной «[GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName]» получат доктрину «[GetFaithDoctrine('special_zhong_guo_reward_doctrine').GetBaseName]»"
+ zhong_guo_objective_decision_effect2: "Все [Concept('faiths', 'конфессии')|E] с доктриной «[GetDoctrineType('doctrine_fera_beast_courts').GetBaseName]» получат доктрину «[GetDoctrineType('special_zhong_guo_reward_doctrine').GetBaseName]»"
  pod1230objectives_fera.54.t: "Чжун-го"
  pod1230objectives_fera.54.desc: "Подавляющее большинство течений моколе уже давно считают, что их время королей давно прошло, и они по большей части сдались. Но не Чжун-лун. Там, где другие течения были уничтожены, чжун-лун остались сильными и обрели новую роль философов и учёных. Они изменились и приспособились. Так же, как и вы сейчас. Вы, возможно, одно из сильнейших созданий в мире, живое воплощение древних королей-драконов. Звериные дворы, Луна и Солнце - все признали вас новым воплощением королей в этом повороте Колеса эпох. Не войной, а величием и дипломатией только что началась новая Эпоха королей. Мир лежит перед вами, а Колыбель Уани - неприступное сердце страны. Наступила вторая Эпоха королей."
  pod1230objectives_fera.54.a: "Я [Select_CString(ROOT.Char.IsFemale, 'стала истинной принцессой', 'стал истинным принцем' )] Уани."

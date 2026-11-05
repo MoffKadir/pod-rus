@@ -18,4 +18,4 @@
  special_doctrine_set_corrupted_kindred_name: "Культ Сета"
  special_doctrine_set_corrupted_kindred_desc: "Эта конфессия, сохранившая фасад прежних времён, была основательно пропитана культом Сета."
  corrupted_set_name: "Культ Сета"
- doctrine_parameter_hostility_override_special_doctrine_set_corrupted_kindred: "Другие [faiths|El] сородичей с доктриной «[GetFaithDoctrine('special_doctrine_set_corrupted_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
+ doctrine_parameter_hostility_override_special_doctrine_set_corrupted_kindred: "Другие [faiths|El] сородичей с доктриной «[GetDoctrineType('special_doctrine_set_corrupted_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"

@@ -59,7 +59,7 @@
  talmahera_edict_setite_corruption: "Использование Сетитов"
  talmahera_setite_doctrine_name: "Рука Змеи"
  talmahera_setite_doctrine_desc: "Кукловоды заставляют Сетитов плясать под свою дудку по непонятным мотивам."
- doctrine_parameter_hostility_override_talmahera_setite_doctrine: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] [GetFaithDoctrine('talmahera_setite_doctrine').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_talmahera_setite_doctrine: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] [GetDoctrineType('talmahera_setite_doctrine').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  talmahera_edict_ashirra_edict_army: "Манипулировать войсками Аширры"
  talmahera_edict_ashirra_edict_tax: "Украсть золото Аширры"

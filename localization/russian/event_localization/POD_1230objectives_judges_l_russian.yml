@@ -296,7 +296,7 @@
  doctrine_prioritized_hunting_name: "Приоритетная охота"
  golconda_repentance_name: "Истина о Проклятых"
  golconda_repentance_desc: "После столь тщательных исследований мы достигли истинного понимания природы Проклятых, что позволит нам работать вместе с теми, кого коснулась милость Б-га, в погоне за отродьем Лилит. Кроме того, все наши еврейские братья — Проклятые и смертные — теперь могут работать сообща для достижения наших истинных целей."
- doctrine_parameter_hostility_override_golconda_repentance: "Другие [Concept('faiths', 'конфессии')|E], как [Glossary('каинитские','game_concept_cainite_desc')], так и охотнические, имеющие [Concept('doctrine', 'доктрину')|E] «[GetFaithDoctrine('golconda_repentance').GetBaseName]», воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не $hostility_evil_tooltippable$"
+ doctrine_parameter_hostility_override_golconda_repentance: "Другие [Concept('faiths', 'конфессии')|E], как [Glossary('каинитские','game_concept_cainite_desc')], так и охотнические, имеющие [Concept('doctrine', 'доктрину')|E] «[GetDoctrineType('golconda_repentance').GetBaseName]», воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не $hostility_evil_tooltippable$"
 
  judge_research_origins_mummies_objective_decision_giza: "Вы [Concept('completely_control', 'полностью контролируете')|E] Долину царей ([GetTitleByKey('c_giza').GetNameNoTier]), местонахождение некрополя фараонов и Великой пирамиды"
  judge_research_origins_mummies_objective_decision_osiris_flail: "[GetPODArtifact('osiris_flail_link').GetName], в котором записана вся история мумий, принадлежит вам"

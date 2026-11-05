@@ -601,8 +601,8 @@
  nick_the_virgin: "Дева"
  envy: "Завистьск"
  gluttony: "Чревоугодск"
- trait_kami: "Ками"
- trait_kami_desc: "Этого персонажа коснулась сама Гея."
+ POD_trait_kami: "Ками"
+ POD_trait_kami_desc: "Этого персонажа коснулась сама Гея."
  
  # Changed tenet parameters
  doctrine_parameter_tenet_carnal_exaltation_sensual_bonus: "[Concept('characters', 'Персонажи')|E] со свойствами «[GetTrait('lustful').GetName( GetNullCharacter )]», «[GetTrait('rakish').GetName( GetNullCharacter )]» или «[GetTrait('deviant').GetName( GetNullCharacter )]» получают дополнительные бонусы от этих свойств"
@@ -663,3 +663,13 @@
  tenet_anachoresis_default_name: "Уединённая медитация"
  tenet_anachoresis_default_desc: "Удалившись от мирского общества в глухомань, верующие могут достичь духовной чистоты, победить страсти и приблизиться к истине через уединённую молитву и аскетическое дисциплинирование."
  tenet_mortification_of_the_flesh_default_desc: "Верующие умерщвляют плоть и её греховные похоти, превознося свои страдания для очищения души и достижения духовного совершенства."
+
+
+
+
+ hostility_override_same_religion: "[faiths|E] той же [Concept('religion', 'религии')|E] воспринимаются как $HOSTILITY_NAME|V$"
+ hostility_override_same_family: "[faiths|E] той же [Concept('religious_family', 'религиозной концепции')|E] воспринимаются как $HOSTILITY_NAME|V$"
+ hostility_override_unrelated: "[faiths|E] #bold других#! [Concept('religious_family', 'религиозных концепций')|E] воспринимаются как $HOSTILITY_NAME|V$"
+ hostility_override_with_doctrine: "[Concept('rites', 'Течения')|E] с доктриной [DoctrineType.GetBaseName|V] воспринимаются как $HOSTILITY_NAME|V$"
+ hostility_override_with_tenet: "[Concept('rites', 'Течения')|E] с догматом [TenetType.GetBaseName|V] воспринимаются как $HOSTILITY_NAME|V$"
+ hostility_override_same_hof: "Воспринимает другие [faiths|El] с общим [Concept('head_of_faith', 'главой конфессии')|E] как $HOSTILITY_NAME|V$"

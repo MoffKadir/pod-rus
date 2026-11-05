@@ -505,7 +505,7 @@
  POD_journey_progress_spirit_companions: "[Concept('spirit_companions', 'Духовные спутники')|E]"
  POD_journey_progress_harpy_companion: "[GetModifier('spirit_harpy_pact_modifier').GetNameWithTooltip]"
 
- POD_journey_progress_tenet_physical_ascension: "Ваше [Concept('rite', 'течение')|E] имеет [Concept('core_tenet', 'догмат')|E] «[GetFaithDoctrine('tenet_physical_ascension').GetBaseName]» #weak (+25%)"
+ POD_journey_progress_tenet_physical_ascension: "Ваше [Concept('rite', 'течение')|E] имеет [Concept('core_tenet', 'догмат')|E] «[GetDoctrineType('tenet_physical_ascension').GetBaseName]» #weak (+25%)"
 
  POD_journey_progress_fc_arm_r_runed_arm: "[GetPerk('fc_arm_r_runed_arm_perk').GetName(GetPlayer)]"
  POD_journey_progress_fc_arm_l_runed_arm: "[GetPerk('fc_arm_l_runed_arm_perk').GetName(GetPlayer)]"

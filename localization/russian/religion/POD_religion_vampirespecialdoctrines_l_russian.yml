@@ -56,7 +56,7 @@
  under_wufeng_cause_doctrine_desc: "Мир приносит надежду, надежда - исцеление, исцеление - жизнь. Во всем этом ад побежден."
  special_doctrine_is_wufeng_faith_name: "Ву Фэн"
  special_doctrine_is_wufeng_faith_desc: "Мир приносит надежду, надежда - исцеление, исцеление - жизнь. Во всем этом ад побежден."
- doctrine_parameter_hostility_override_special_doctrine_is_wufeng_faith: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('under_wufeng_cause_doctrine').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]."
+ doctrine_parameter_hostility_override_special_doctrine_is_wufeng_faith: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('under_wufeng_cause_doctrine').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]."
  hostility_override_under_wufeng_cause_doctrine: "[faiths|E], следующие Ву Фэну, воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]."
 
  hunter_schism_mended_name: "Раскол охотников преодолён"

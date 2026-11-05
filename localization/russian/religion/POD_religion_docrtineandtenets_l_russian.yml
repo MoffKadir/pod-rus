@@ -812,40 +812,40 @@
 
  special_doctrine_three_pillars_kindred_name: "Три столпа"
  special_doctrine_three_pillars_kindred_desc: "Основа феодального общества - замок, церковь и город. Общество сородичей зеркально отражает это: Дорога Королей, Дорога Небес и Дорога Человечества, которые проявляют взаимную терпимость."
- doctrine_parameter_hostility_override_special_doctrine_three_pillars_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_three_pillars_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
+ doctrine_parameter_hostility_override_special_doctrine_three_pillars_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_three_pillars_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
 
  special_doctrine_sin_pillars_kindred_name: "Столпы желания"
  special_doctrine_sin_pillars_kindred_desc: "После исчезновения Сахара каждый из его учеников пошёл своим путем, но они по-прежнему остаются братьями и сестрами по вере."
- doctrine_parameter_hostility_override_special_doctrine_sin_pillars_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_sin_pillars_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
+ doctrine_parameter_hostility_override_special_doctrine_sin_pillars_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_sin_pillars_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
 
  special_doctrine_set_pillars_kindred_name: "Столпы Сета"
  special_doctrine_set_pillars_kindred_desc: "У Сета много форм, много имен и много историй происхождения. Но в конечном итоге он все равно остается Великим освободителем."
- doctrine_parameter_hostility_override_special_doctrine_set_pillars_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_set_pillars_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
+ doctrine_parameter_hostility_override_special_doctrine_set_pillars_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_set_pillars_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
 
  special_doctrine_ashirra_pillars_kindred_name: "Столпы Аширры"
  special_doctrine_ashirra_pillars_kindred_desc: "Хотя те, кто шел по стопам ислама, были выходцами из самых разных кланов и сословий, все они верили в нечто большее, чем они сами."
- doctrine_parameter_hostility_override_special_doctrine_ashirra_pillars_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_ashirra_pillars_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_evil_tooltippable$"
+ doctrine_parameter_hostility_override_special_doctrine_ashirra_pillars_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_ashirra_pillars_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_evil_tooltippable$"
  doctrine_parameter_ashirra_khitta_building_province_bonuses: "Связанные с Аширрой [Glossary('хитты', 'glossary_khitta_tt')] в [Concept('victorious_cairo', 'Победоносном Каире')|E] предоставляют дополнительные налоги, если Каир исповедует эту конфессию"
  doctrine_parameter_ashirra_khitta_building_character_bonuses: "Связанные с Аширрой [Glossary('хитты', 'glossary_khitta_tt')] в [Concept('victorious_cairo', 'Победоносном Каире')|E] предоставляют благочестие, если владелец исповедует эту конфессию"
 
  special_doctrine_lilith_pillars_kindred_name: "Столпы Лилим"
  special_doctrine_lilith_pillars_kindred_desc: "Лилит жаждет мести детям Каина. Но в случае необходимости она примет жаждущих новообращенных или полезных пешек."
- doctrine_parameter_hostility_override_special_doctrine_lilith_pillars_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_lilith_pillars_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_evil_tooltippable$"
+ doctrine_parameter_hostility_override_special_doctrine_lilith_pillars_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_lilith_pillars_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_evil_tooltippable$"
 
  special_doctrine_heretical_paradox_name: "Разорванный цикл"
  special_doctrine_heretical_paradox_desc: "Восточные Равнос (и многие другие сородичи) считают эту ветвь еретической и оправдывающей воровство, диаблери и другие преступления против общества. Было предпринято множество попыток очистить этот Путь, но ни одна из них до сих пор не увенчалась успехом."
- doctrine_parameter_hostility_override_tenet_svadharma: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('tenet_svadharma').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_tenet_svadharma: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('tenet_svadharma').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  special_doctrine_main_paradox_name: "Понимание цикла"
  special_doctrine_main_paradox_desc: "Дорога Парадокса в значительной степени опирается на некоторые догматы индуизма и широко распространен среди индийских вампиров. А вот его искаженная западная версия - нет."
- doctrine_parameter_hostility_override_special_doctrine_heretical_paradox: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_heretical_paradox').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_heretical_paradox: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_heretical_paradox').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
 
 
  special_doctrine_ecumenical_hunters_name: "Вселенские охотники"
  special_doctrine_ecumenical_hunters_desc: "Несмотря на то, что охотники бывают разного происхождения и вероисповедания, их объединяет борьба со сверхъестественными ужасами мира Тьмы."
- doctrine_parameter_hostility_override_special_doctrine_ecumenical_hunters: "Другие [faiths|El] охотников с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_ecumenical_hunters').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
+ doctrine_parameter_hostility_override_special_doctrine_ecumenical_hunters: "Другие [faiths|El] охотников с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_ecumenical_hunters').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
 
  special_doctrine_heretical_hunters_name: "Еретические охотники"
  special_doctrine_heretical_hunters_desc: "Эти охотники, как и остальные, бросили свой жребий врагу и должны преследоваться с тем же предубеждением."
@@ -857,7 +857,7 @@
 
  special_doctrine_fivefold_path_kindred_name: "Пятикратный путь"
  special_doctrine_fivefold_path_kindred_desc: "Пять традиционных [Glossary('дхарм','podgloss.dharma')], созданных первым [Glossary('архатом','podgloss.arhat')], [GetScriptedCharacterByHistoryID('791111').GetFirstName]. Они составляют традиционное ядро общества [Glossary('куэй-дзин','game_concept_kuei_jin_desc')].\nПоследователи Пятикратного пути считают еретические [Glossary('дхармы','podgloss.dharma')] болезненно заблуждающимися глупцами или опасными предателями, которых необходимо уничтожить навсегда."
- doctrine_parameter_hostility_override_special_doctrine_fivefold_path_kindred: "[faiths|E] [GetTrait('kueijin').GetName( GetNullCharacter )|l] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_fivefold_path_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_fivefold_path_kindred: "[faiths|E] [GetTrait('kueijin').GetName( GetNullCharacter )|l] с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_fivefold_path_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  anda_hostility_name: "Отношение к [Glossary('Анда','podgloss.anda')]"
  special_doctrine_is_anda_faith_name: "[Glossary('Анда','podgloss.anda')]"
@@ -870,15 +870,15 @@
  special_doctrine_allied_to_anda_hostility_name: "Оппортунистские союзники"
  special_doctrine_allied_to_anda_hostility_desc: "[Concept('akuma', 'Акума')|E] рассматривают [Glossary('Анда','podgloss.anda')] как благодатную почву для проникновения и косвенно помогают им разрушить традиционные дворы."
  doctrine_parameter_allied_to_anda_opinion_active: "" # Make loca empty to hidden this like vanilla
- doctrine_parameter_opinion_of_allied_to_anda_opinion_active: "$VALUE|+=0$ Бонус к [Concept('opinion', 'мнению')|E] с [Concept('faiths', 'конфессиями')|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_allied_to_anda_hostility').GetBaseName]»"
- doctrine_parameter_hostility_override_special_doctrine_allied_to_anda_hostility: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_allied_to_anda_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
+ doctrine_parameter_opinion_of_allied_to_anda_opinion_active: "$VALUE|+=0$ Бонус к [Concept('opinion', 'мнению')|E] с [Concept('faiths', 'конфессиями')|E] с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_allied_to_anda_hostility').GetBaseName]»"
+ doctrine_parameter_hostility_override_special_doctrine_allied_to_anda_hostility: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_allied_to_anda_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
  allied_to_anda_opinion_active_county_opinion_name: "Соратники"
  allied_to_anda_opinion_active_opinion_name: "Приспешники"
  special_doctrine_against_to_anda_hostility_name: "Мстительные [Glossary('Ван-куэй','game_concept_kuei_jin_desc')]"
  special_doctrine_against_to_anda_hostility_desc: "Когда монгольские племена объединились, [Glossary('Анда','podgloss.anda')] последовали за ними подобно вихрю, разрушив владения [Glossary('Ван-куэй','game_concept_kuei_jin_desc')] и начав вражду, которая закончится только с гибелью одной из сторон."
  doctrine_parameter_against_to_anda_opinion_active: "" # Make loca empty to hidden this like vanilla
- doctrine_parameter_opinion_of_against_to_anda_opinion_active: "$VALUE|+=0$ Штраф к [Concept('opinion', 'мнению')|E] с [Concept('faiths', 'конфессиями')|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_against_to_anda_hostility').GetBaseName]»"
- doctrine_parameter_hostility_override_special_doctrine_against_to_anda_hostility: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_against_to_anda_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
+ doctrine_parameter_opinion_of_against_to_anda_opinion_active: "$VALUE|+=0$ Штраф к [Concept('opinion', 'мнению')|E] с [Concept('faiths', 'конфессиями')|E] с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_against_to_anda_hostility').GetBaseName]»"
+ doctrine_parameter_hostility_override_special_doctrine_against_to_anda_hostility: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_against_to_anda_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
  against_to_anda_opinion_active_opinion_name: "Двуногий агнец"
  against_to_anda_opinion_active_county_opinion_name: "Монгольское нашествие"
 
@@ -1147,7 +1147,7 @@
  wyrm_tainted_name: "Порча [Glossary('Вирма', 'glossary_wyrm_tt')]"
  wyrm_tainted_doctrine_name: "Порча [Glossary('Вирма', 'glossary_wyrm_tt')]"
  wyrm_tainted_doctrine_desc: "Многие [Glossary('фера', 'glossary_fera_tt')], почитающие Гею, обладают даром, позволяющим им чувствовать, как на других накладывает порчу [Glossary('Вирм', 'glossary_wyrm_tt')]. Дороги и пути просвещения многих вампиров считаются настолько порочными, что последователи этих верований по своей сути считаются запятнанными Вирмом."
- doctrine_parameter_hostility_override_wyrm_tainted_doctrine: "[faiths|E] с доктриной [GetFaithDoctrine('wyrm_tainted_doctrine').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_wyrm_tainted_doctrine: "[faiths|E] с доктриной [GetDoctrineType('wyrm_tainted_doctrine').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  #tenet_bacchanal_name: "Вакханалия"
  #tenet_bacchanal_desc: "Посвященный пьяным гулянкам, этот догмат позволяет вдвойне увеличить снятие стресса во время распития алкоголя. Некоторые считают употребление таких токсинов опасной зависимостью."
@@ -1223,9 +1223,9 @@
  doctrine_parameter_hostility_override_doctrine_fae_agenda_militant: "[Concept('faiths', 'Конфессии')|E] с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('doctrine_fae_agenda_militant').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_doctrine_fae_agenda_humanist: "[Concept('faiths', 'Конфессии')|E] с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('doctrine_fae_agenda_humanist').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_hostility_override_doctrine_fae_agenda_none: "[Concept('faiths', 'Конфессии')|E] с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('doctrine_fae_agenda_none').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_doctrine_fae_agenda_constantinian: "[Concept('faiths', 'Конфессии')|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('doctrine_fae_agenda_constantinian').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_tenet_constantinian: "[Concept('faiths', 'Конфессии')|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('tenet_constantinian').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_constantinian_catechism: "[Concept('faiths', 'Конфессии')|E] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_constantinian_catechism').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fae_agenda_constantinian: "[Concept('faiths', 'Конфессии')|E] с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('doctrine_fae_agenda_constantinian').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_tenet_constantinian: "[Concept('faiths', 'Конфессии')|E] с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('tenet_constantinian').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_constantinian_catechism: "[Concept('faiths', 'Конфессии')|E] с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_constantinian_catechism').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_parameter_fae_agenda_militant_opinion_active: ""
  fae_agenda_militant_opinion_active_opinion_name: "Стремление фей-агрессоров"
@@ -1296,23 +1296,23 @@
  special_doctrine_gaia_church_pact_hostility_name: "Договоры Константинианцев и Блудных"
  special_doctrine_gaia_church_pact_hostility_desc: "Договоры Константинианцев и Блудных"
 
- doctrine_parameter_hostility_override_special_doctrine_wyrm_to_unseelie_hostility: "Другие [faiths|El] гару с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_wyrm_to_unseelie_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_unseelie_to_wyrm_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_unseelie_to_wyrm_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_unseelie_splat_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_unseelie_splat_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_garou_to_seelie_hostility: "Другие [faiths|El] гару с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_garou_to_seelie_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_seelie_to_garou_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_seelie_to_garou_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_unseelie_blood_pact_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_unseelie_blood_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_vampire_blood_pact_hostility: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_vampire_blood_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_fianna_fiona_pact_hostility: "Другие [faiths|El] гару с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_fianna_fiona_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_fiona_fianna_pact_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_fiona_fianna_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_gaia_trucebearer_pact_hostility: "Другие [faiths|El] гару с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_gaia_trucebearer_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_trucebearer_gaia_pact_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_trucebearer_gaia_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_gaia_church_pact_hostility: "Другие [faiths|El] гару с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_gaia_church_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
- doctrine_parameter_hostility_override_special_doctrine_seelie_splat_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_seelie_splat_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_wyrm_to_unseelie_hostility: "Другие [faiths|El] гару с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_wyrm_to_unseelie_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_unseelie_to_wyrm_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_unseelie_to_wyrm_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_unseelie_splat_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_unseelie_splat_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_garou_to_seelie_hostility: "Другие [faiths|El] гару с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_garou_to_seelie_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_seelie_to_garou_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_seelie_to_garou_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_unseelie_blood_pact_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_unseelie_blood_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_vampire_blood_pact_hostility: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_vampire_blood_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_fianna_fiona_pact_hostility: "Другие [faiths|El] гару с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_fianna_fiona_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_fiona_fianna_pact_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_fiona_fianna_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_gaia_trucebearer_pact_hostility: "Другие [faiths|El] гару с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_gaia_trucebearer_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_trucebearer_gaia_pact_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_trucebearer_gaia_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_gaia_church_pact_hostility: "Другие [faiths|El] гару с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_gaia_church_pact_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_special_doctrine_seelie_splat_hostility: "Другие [faiths|El] фей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_seelie_splat_hostility').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  special_doctrine_conspiracy_of_rebels_kindred_name: "Заговор бунтарей"
  special_doctrine_conspiracy_of_rebels_kindred_desc: "Объединившись в солидарности против сложившегося порядка в обществе сородичей, эти бунтари замышляют свергнуть старейшин."
- doctrine_parameter_hostility_override_special_doctrine_conspiracy_of_rebels_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_conspiracy_of_rebels_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
+ doctrine_parameter_hostility_override_special_doctrine_conspiracy_of_rebels_kindred: "Другие [faiths|El] сородичей с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_conspiracy_of_rebels_kindred').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$"
 
  tenet_philosophical_combat_name: "Философский поединок"
  tenet_philosophical_combat_desc: "Проигрыш в дебатах на форуме может быть таким же смертельно опасным, как и поражение в битве."
@@ -1447,7 +1447,7 @@
  
  tenet_obeisance_to_devils_name: "Почитание дьяволов"
  tenet_obeisance_to_devils_desc: "Мы существуем в тени Малых богов. Мы должны быть незаметны, вне контроля, чтобы не навлечь на себя уничтожение."
- doctrine_parameter_hostility_override_tenet_obeisance_to_devils: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] [GetFaithDoctrine('tenet_obeisance_to_devils').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$" 
+ doctrine_parameter_hostility_override_tenet_obeisance_to_devils: "[faiths|E] с [Concept('doctrine', 'доктриной')|E] [GetDoctrineType('tenet_obeisance_to_devils').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как $hostility_hostile_tooltippable$" 
 
 
  tenet_fera_innovative_name: "Инновационность"
@@ -1465,6 +1465,7 @@
  tenet_soldiers_of_the_wyrm_name: "Воины Вирма"
  tenet_soldiers_of_the_wyrm_desc: "Мы воины [Glossary('Вирма', 'glossary_wyrm_tt')], а не его ничтожные слуги, преследующие собственные интересы. Наша слава будет замечена, наша вера вознаграждена."
  doctrine_parameter_reduced_maeljingifts_xp: "Снижает прирост [Concept('lifestyle_experience', 'опыта')|E] [Concept('maeljingifts_lifestyle', 'даров маэлджинов')|E] на #N -25%#!"
+ doctrine_parameter_fera_rank_fulfillment: "Повышение ранга [Glossary('фера', 'glossary_fera_tt')] приносит @spiritual_fulfillment_icon![Concept('spiritual_fulfillment', 'духовную реализацию')|E]"
 
  tenet_secrets_of_flesh_name: "Тайны плоти"
  tenet_secrets_of_flesh_desc: "Во плоти дремлет много мудрости. [Glossary('Литания', 'glossary_werewolf_litany_tt')] больше не будет отвергать нас."
@@ -1474,10 +1475,12 @@
  tenet_centipede_embrace_name: "Объятия Многоножки"
  tenet_centipede_embrace_desc: "[Glossary('Многоножка', 'glossary_wyrm_tt')] будет расти бесконечно, питаясь самой землёй."
  doctrine_parameter_ignore_dragon_nest_requirements: "Все требования к [Concept('development', 'развитию')|E] в [Concept('duchy_buildings', 'герцогской постройке')|E] «Драконье гнездо» игнорируются"
+ doctrine_parameter_pack_training_efficient_development_loss: "Повышает эффективность уничтожения [Concept('development', 'развития')|E] от [Concept('journey', 'странствия')|E] #V Тренировка со стаей#!"
 
  tenet_wyrm_seekers_name: "Искатели Вирма"
  tenet_wyrm_seekers_desc: "[Glossary('Вирм', 'glossary_wyrm_tt')] хранит много знаний и силы, нужно просто найти его."
  doctrine_parameter_increased_maeljingifts_xp: "Повышает прирост [Concept('lifestyle_experience', 'опыта')|E] [Concept('maeljingifts_lifestyle', 'даров маэлджинов')|E] на #P +25%#!"
+ doctrine_parameter_wyrm_expedition_boost_parameter: "Повышает вероятность нахождения @wyrm_icon![Concept('umbra_expeditions', 'экспедиций в Умбру')|E]"
 
  tenet_channel_darkness_name: "Направление тьмы"
  tenet_channel_darkness_desc: "Мы едины с тьмой, всего лишь фантомы в темноте. Мы движемся невидимыми, пока наши тени не падают на глупцов, стоящих у нас на пути."
@@ -1548,7 +1551,7 @@
 
  doctrine_fera_triat_alignment_balanced_name: "Равновесие"
  doctrine_fera_triat_alignment_balanced_desc: "Хотя [Glossary('Триада', 'glossary_triat_tt')] больше не находится в равновесии, многие [Glossary('фера', 'glossary_fera_tt')] всё ещё верят в старый порядок."
- doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_balanced: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_balanced').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_balanced: "[faiths|E] с доктриной [GetDoctrineType('doctrine_fera_triat_alignment_balanced').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_fera_triat_alignment_wyld_name: "Вильд"
  doctrine_fera_triat_alignment_wyld_desc: "Из-за угрозы, исходящей от [Glossary('Вирма', 'glossary_wyrm_tt')] и [Glossary('Ткачихи', 'glossary_weaver_tt')], большинство [Glossary('фера', 'glossary_fera_tt')] почитают [Glossary('Вильда', 'glossary_wyld_tt')] выше других членов [Glossary('Триады', 'glossary_triat_tt')], видя, что он и Гея нуждаются в защите."
@@ -1560,41 +1563,41 @@
 
  doctrine_fera_triat_alignment_wyrm_name: "Вирм"
  doctrine_fera_triat_alignment_wyrm_desc: "Подобно своему павшему хозяину, слуги [Glossary('Вирма', 'glossary_wyrm_tt')] стремятся только к хаосу и разрушению."
- doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_wyrm: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_wyrm').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_wyrm: "[faiths|E] с доктриной [GetDoctrineType('doctrine_fera_triat_alignment_wyrm').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
  doctrine_parameter_can_recruit_wyrm_maa: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('scrags').GetName] и [GetMaA('skull_pigs').GetName]"
 
  doctrine_fera_triat_alignment_triatic_wyrm_name: "Триадический Вирм"
  doctrine_fera_triat_alignment_triatic_wyrm_desc: "[Glossary('Триадический Вирм', 'glossary_wyrm_tt')] является насмешкой над оригинальной [Glossary('Триадой', 'glossary_triat_tt')]. Три головы Вирма наделяют своих ближайших слуг великой нечестивой силой."
- doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_triatic_wyrm: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_triatic_wyrm').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_triatic_wyrm: "[faiths|E] с доктриной [GetDoctrineType('doctrine_fera_triat_alignment_triatic_wyrm').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
  doctrine_fera_triat_alignment_gaia_name: "Гея"
  doctrine_fera_triat_alignment_gaia_desc: "Гея – одна из самых могущественных духов, о существовании которых известно, возможно, первая и самая могущественная. Считается, что именно она создала гару и большинство фера, которые служили ей воинами и агентами как в материальном, так и в духовном мирах. Она - Мать-природа, заботливая и полная жизни, но в то же время дикая и бессердечная, когда ей перечат."
- doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_gaia: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_triat_alignment_gaia').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fera_triat_alignment_gaia: "[faiths|E] с доктриной [GetDoctrineType('doctrine_fera_triat_alignment_gaia').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
  doctrine_fera_litany_group_name: "Фера"
 
  doctrine_fera_werewolf_litany_name: "Литания"
  doctrine_fera_werewolf_litany_desc: "Законы этого народа очень древние. Их традиции варьируются от племени к племени, но все гару должны помнить и придерживаться главного свода законов, называемого [Glossary('Литанией', 'glossary_werewolf_litany_tt')]. В своей полной форме это такая же эпическая поэма, как и юридический кодекс. Несмотря на то, что для полного усвоения Литании требуются величайшие ученые, большинство оборотней усваивают её в виде основных предписаний. Каждое предписание имеет практическую основу, но не все из них считаются бесспорно моральными."
- doctrine_parameter_hostility_override_doctrine_fera_werewolf_litany: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_werewolf_litany').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fera_werewolf_litany: "[faiths|E] с доктриной [GetDoctrineType('doctrine_fera_werewolf_litany').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_fera_werewolf_dark_litany_name: "Тёмная Литания"
  doctrine_fera_werewolf_dark_litany_desc: "[Glossary('Тёмная Литания', 'glossary_werewolf_dark_litany_tt')] - это [Glossary('Литания', 'glossary_werewolf_litany_tt')] [Glossary('Вирма', 'glossary_wyrm_tt')], которой следуют Танцоры Чёрной спирали. Несмотря на то, что Чёрная спираль воспринимается как племя беззаконного хаоса, их Литания зачастую соблюдается более строго, чем среди нации Гару."
- doctrine_parameter_hostility_override_doctrine_fera_werewolf_dark_litany: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_werewolf_dark_litany').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
+ doctrine_parameter_hostility_override_doctrine_fera_werewolf_dark_litany: "[faiths|E] с доктриной [GetDoctrineType('doctrine_fera_werewolf_dark_litany').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]" 
 
  doctrine_fera_bastet_karoush_name: "Каруш"
  doctrine_fera_bastet_karoush_desc: "[Glossary('Каруш', 'glossary_bastet_karoush_tt')] - это свод законов оборотней-кошек, похожий на [Glossary('Литанию', 'glossary_werewolf_litany_tt')] гару. Переданные от их предков, эти законы важнее, чем любой бастет, и значимее, чем любой ранг или титул. Таковы их кодексы чести, и бастет верят, что они отделяют их от человечества, оберегая от человеческих ошибок. Каруш - это кодекс, составленный их предками, закон Луны и Солнца, закон формирования тайн и закон перемен."
- doctrine_parameter_hostility_override_doctrine_fera_bastet_karoush: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_bastet_karoush').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fera_bastet_karoush: "[faiths|E] с доктриной [GetDoctrineType('doctrine_fera_bastet_karoush').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_fera_mokole_duties_name: "Обязательства"
  doctrine_fera_mokole_duties_desc: "[Glossary('Гелиос', 'glossary_helios_tt')] дал своим детям ряд моральных и личных принципов, в соответствии с которыми они должны жить. Они называются [Glossary('Обязательствами', 'glossary_mokole_duties_tt')], и свойственны моколе, предшествуя [Glossary('Литании', 'glossary_werewolf_litany_tt')] гару. Каждая обязанность связана с одним солнечным покровительством, хотя все моколе связаны ими. Нарушение Обязанностей влечёт за собой выговоры, потерю статуса и другие виды наказания. Серьёзных нарушителей съедают. Полуденные солнца следят за соблюдением законов, хотя даже Полуночные солнца накажут непослушных моколе."
- doctrine_parameter_hostility_override_doctrine_fera_mokole_duties: "[faiths|E] с доктриной «[GetFaithDoctrine('doctrine_fera_mokole_duties').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fera_mokole_duties: "[faiths|E] с доктриной «[GetDoctrineType('doctrine_fera_mokole_duties').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
  doctrine_fera_fallen_tribe_name: "Падшее племя"
  doctrine_fera_fallen_tribe_desc: "Некоторые племена фера отступили от своих первоначальных целей. Это может быть вызвано различными причинами, от идеологических разногласий до духовных пороков, но результат один и тот же. Изолированные (в лучшем случае) или преследуемые (в худшем) своим родительским племенем, эти падшие прячутся в тени в страхе перед теми, кого они когда-то называли своими соплеменниками."
- doctrine_parameter_hostility_override_doctrine_fera_fallen_tribe: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_fallen_tribe').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fera_fallen_tribe: "[faiths|E] с доктриной [GetDoctrineType('doctrine_fera_fallen_tribe').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
 
@@ -1603,37 +1606,37 @@
 
  doctrine_fera_werewolf_pact_name: "Соглашения гару"
  doctrine_fera_werewolf_pact_desc: "По той или иной причине приверженцы этой конфессии установили тесные связи с #TOOLTIP:GAME_TRAIT,werewolf,[GetNullCharacter] #L гару#!. С дикими и жестокими племенами нелегко подружиться, но когда это происходит, они очень серьёзно относятся к своим клятвам."
- doctrine_parameter_hostility_override_doctrine_fera_werewolf_pact: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_werewolf_pact').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fera_werewolf_pact: "[faiths|E] с доктриной [GetDoctrineType('doctrine_fera_werewolf_pact').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  doctrine_fera_bastet_pact_name: "Соглашения бастет"
  doctrine_fera_bastet_pact_desc: "По той или иной причине приверженцы этой конфессии установили тесные связи с [GetTrait('bastet').GetName( GetPlayer )|l]. Любознательный характер кошачьего народа подарил им много неожиданных друзей... хотя некоторые из них вообще не заслуживают доверия."
- doctrine_parameter_hostility_override_doctrine_fera_bastet_pact: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_bastet_pact').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fera_bastet_pact: "[faiths|E] с доктриной [GetDoctrineType('doctrine_fera_bastet_pact').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
  doctrine_fera_mokole_pact_name: "Соглашения моколе"
  doctrine_fera_mokole_pact_desc: "По той или иной причине приверженцы этой конфессии установили тесные связи с [GetTrait('mokole').GetName( GetNullCharacter )|l]. Верзавры - живучие существа, благодаря своему воображению они хорошо помнят своих друзей, а врагов - ещё лучше."
- doctrine_parameter_hostility_override_doctrine_fera_mokole_pact: "[faiths|E] с доктриной «[GetFaithDoctrine('doctrine_fera_mokole_pact').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fera_mokole_pact: "[faiths|E] с доктриной «[GetDoctrineType('doctrine_fera_mokole_pact').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
  doctrine_fera_wyrm_pact_name: "Соглашения Вирма"
  doctrine_fera_wyrm_pact_desc: "По какой-то причине приверженцы этой конфессии в некоторой степени терпимо относятся к последователям [Glossary('Вирма', 'glossary_wyrm_tt')]. Верно ли обратное, зависит от прихотей другой стороны. В конце концов, в спирали не так уж много места для танцев."
- doctrine_parameter_hostility_override_doctrine_fera_wyrm_pact: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_wyrm_pact').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fera_wyrm_pact: "[faiths|E] с доктриной [GetDoctrineType('doctrine_fera_wyrm_pact').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
 
  doctrine_fera_alliance_group_name: "Альянсы фера"
 
  doctrine_fera_beast_courts_name: "Звериные дворы"
  doctrine_fera_beast_courts_desc: "Среди [Glossary('фера', 'glossary_fera_tt')] межвидовые союзы редки. Наиболее заметным исключением являются Звериные дворы, поклявшиеся защищать Изумрудную мать (Гею). При дворах существует общество, похожее на имперские культуры мифической Азии, в котором есть регенты, придворные и простолюдины. Любой хенгейокай ([Glossary('фера', 'glossary_fera_tt')]) может свободно присоединиться к Звериным дворам, при условии, что он поклянётся следовать общественной системе чести и известности, известной как Путь Изумрудной добродетели."
- doctrine_parameter_hostility_override_doctrine_fera_beast_courts: "[faiths|E] с доктриной [GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
+ doctrine_parameter_hostility_override_doctrine_fera_beast_courts: "[faiths|E] с доктриной [GetDoctrineType('doctrine_fera_beast_courts').GetBaseName] воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V]"
 
  bastet_nation_tolerance_name: ""
  special_doctrine_bastet_nation_name: "Нация бастет"
  special_doctrine_bastet_nation_desc: "Мать [Glossary('Селин', 'glossary_luna_tt')] с гордостью наблюдает за тем, как ее любимые кошачьи дети наконец-то объединяются в одно целое."
- doctrine_parameter_hostility_override_special_doctrine_bastet_nation: "Другие [faiths|El] с [Concept('doctrine', 'доктриной')|E] «[GetFaithDoctrine('special_doctrine_bastet_nation').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как [faith_astray|V]"
+ doctrine_parameter_hostility_override_special_doctrine_bastet_nation: "Другие [faiths|El] с [Concept('doctrine', 'доктриной')|E] «[GetDoctrineType('special_doctrine_bastet_nation').GetBaseName]» воспринимаются как [GetHostilityLevelName( TOKEN_PARAMETER.GetIntValue )|V], а не как [faith_astray|V]"
 
  zhong_guo_reward_doctrine_name: ""
  special_zhong_guo_reward_doctrine_name: "Ведомые драконами"
- special_zhong_guo_reward_doctrine_desc: "Чжун-лун привели [GetFaithDoctrine('doctrine_fera_beast_courts').GetBaseName] к вновь обретённому процветанию."
+ special_zhong_guo_reward_doctrine_desc: "Чжун-лун привели [GetDoctrineType('doctrine_fera_beast_courts').GetBaseName] к вновь обретённому процветанию."
 
  masterless_ghoul_dispossessed_doctrine_name: ""
  special_masterless_ghoul_dispossessed_doctrine_name: "Союз с обездоленными"

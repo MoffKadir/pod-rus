@@ -1802,10 +1802,10 @@
  POD_aye_orun_value_outsider_clan: "Клан, не принадлежащий к Лайбон"
  POD_aye_orun_value_recent_frenzy: "Недавнее [Glossary('неистовство','game_concept_beast_desc')]"
 
- POD_aye_value_faith: "[Concept('faith', 'Конфессия')|E] с доктриной «[GetFaithDoctrine( 'doctrine_enlightenment_virtues_aye' ).GetBaseName]»"
+ POD_aye_value_faith: "[Concept('faith', 'Конфессия')|E] с доктриной «[GetDoctrineType( 'doctrine_enlightenment_virtues_aye' ).GetBaseName]»"
  POD_aye_value_mortal_herd: "Смертный член стада"
 
- POD_orun_value_faith: "[Concept('faith', 'Конфессия')|E] с доктриной «[GetFaithDoctrine( 'doctrine_enlightenment_virtues_orun' ).GetBaseName]»"
+ POD_orun_value_faith: "[Concept('faith', 'Конфессия')|E] с доктриной «[GetDoctrineType( 'doctrine_enlightenment_virtues_orun' ).GetBaseName]»"
  POD_orun_value_vampire_herd: "Вампир в стаде"
 
  # Andeleon/Asakku Content
