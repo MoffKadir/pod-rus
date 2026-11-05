@@ -1,0 +1,111 @@
+﻿l_english:
+ PoD_war_of_seasons: "Война времён года"
+ PoD_war_of_seasons_desc: "Война времён года это затяжной конфликт между четырьмя дворами времён года, сражающимися за владычество над Осенним миром. Хотя был заключён Клятвенный мир, срок уже истёк и сражения могут продолжиться. Но случится ли это?"
+ situation_type_PoD_war_of_seasons: "$PoD_war_of_seasons$"
+ situation_type_PoD_war_of_seasons_desc: "$PoD_war_of_seasons_desc$"
+ situation_PoD_war_of_seasons: "$PoD_war_of_seasons$"
+ situation_PoD_war_of_seasons_desc: "$PoD_war_of_seasons_desc$"
+
+ PoD_war_of_seasons_sub_region_core: "$PoD_war_of_seasons$"
+ PoD_war_of_seasons_sub_region_core_desc: "$PoD_war_of_seasons_desc$"
+
+ PoD_war_of_seasons_situation_status_quo: "Статус-кво"
+ PoD_war_of_seasons_situation_status_quo_icon: "@fae_icon! $PoD_war_of_seasons_situation_status_quo$"
+ PoD_war_of_seasons_situation_status_quo_desc_short: "Статус-кво"
+ PoD_war_of_seasons_situation_status_quo_desc: "Клятвенный мир должен был кончиться в 1230 году. Но мы не очень желаем ни возвращаться к Войне, ни отбросить наш праведный гнев.\n\n...Но долго так продолжаться не может, рано или поздно ненависть выльется в войну, или, может, окончательно утечёт?"
+ PoD_war_of_seasons_PoD_war_of_seasons_situation_status_quo_situation_phase: "[SITUATION_PHASE_TYPE.GetName]"
+
+ PoD_war_of_seasons_situation_war: "Война за времена года"
+ PoD_war_of_seasons_situation_war_icon: "@fae_icon! $PoD_war_of_seasons_situation_war$"
+ PoD_war_of_seasons_situation_war_desc_short: "Война"
+ PoD_war_of_seasons_situation_war_desc: "Клятвенный мир истёк. Война пришла, сражения между [Concept('religion', 'дворами')|E] разгораются праведным пламенем. И будет только один победитель! Хватайте мечи, произносите [Concept('cantrips', 'заклятия')|E] и убивайте всех!\n\n...Но, возможно, лишь возможно, мы можем примириться снова? Вновь навязать Клятвенный мир?"
+ PoD_war_of_seasons_PoD_war_of_seasons_situation_war_situation_phase: "[SITUATION_PHASE_TYPE.GetName]"
+
+ PoD_war_of_seasons_situation_peace: "Гармония"
+ PoD_war_of_seasons_situation_peace_icon: "@fae_icon! $PoD_war_of_seasons_situation_peace$"
+ PoD_war_of_seasons_situation_peace_desc_short: "Статус-кво"
+ PoD_war_of_seasons_situation_peace_desc: "Клятвенный мир возымел успех, ненависть между [Concept('religion', 'дворами')|E] медленно выветрилась. Однажды считавшаяся невозможной дружба между членами разных [Concept('religion', 'дворов')|E] расцвела, и мы можем объединиться? Как в старые добрые, да? Друзья?\n\n... Но ненависть ещё не ушла полностью, тлеют малые огни конфликта. Что случится, если они вспыхнут? Вернётся ли война?"
+ PoD_war_of_seasons_PoD_war_of_seasons_situation_peace_situation_phase: "[SITUATION_PHASE_TYPE.GetName]"
+
+ PoD_war_of_seasons_participant_group_spring_fae: "Феи @changeling_icon! Весеннего двора"
+ PoD_war_of_seasons_participant_group_spring_fae_desc: "$spring_court_religion_desc$"
+
+ PoD_war_of_seasons_participant_group_summer_fae: "Феи @changeling_icon! Летнего двора"
+ PoD_war_of_seasons_participant_group_summer_fae_desc: "$summer_court_religion_desc$"
+
+ PoD_war_of_seasons_participant_group_autumn_fae: "Феи @changeling_icon! Осеннего двора"
+ PoD_war_of_seasons_participant_group_autumn_fae_desc: "$autumn_court_religion_desc$"
+
+ PoD_war_of_seasons_participant_group_winter_fae: "Феи @changeling_icon! Зимнего двора"
+ PoD_war_of_seasons_participant_group_winter_fae_desc: "$winter_court_religion_desc$"
+
+ PoD_war_of_seasons_participant_group_solstice_fae: "Феи @changeling_icon! Двора Солнцестояния"
+ PoD_war_of_seasons_participant_group_solstice_fae_desc: "$solstice_court_religion_desc$"
+
+ PoD_war_of_seasons_character_effects: "#bold Персонаж#!"
+ PoD_war_of_seasons_character_effects_concept: "[GetSituationType('PoD_war_of_seasons').GetName]"
+ PoD_war_of_seasons_court_effects: "#bold Дворы#!"
+ PoD_war_of_seasons_court_effects_concept: "[GetSituationType('PoD_war_of_seasons').GetName]"
+
+ situation_parameter_war_of_seasons_situation_war_active: "Все [Concept('faith', 'конфессии')|E] китэйн получат доктрину «[GetDoctrine('special_doctrine_war_of_seasons_hostility_war').GetBaseName]», пока продолжается [GetSituationType('PoD_war_of_seasons').GetPhaseType('PoD_war_of_seasons_situation_war').GetName]"
+ situation_parameter_war_of_seasons_situation_peace_active_active: "Все [Concept('faith', 'конфессии')|E] китэйн получат «[GetDoctrine('special_doctrine_war_of_seasons_hostility_peace').GetBaseName]», пока продолжается [GetSituationType('PoD_war_of_seasons').GetPhaseType('PoD_war_of_seasons_situation_peace').GetName]"
+
+ situation_parameter_war_of_seasons_convert_to_militant_fraction: "[Concept('court_leader', 'Лидеру двора')|E] доступно [Concept('character_interaction', 'взаимодействие персонажа')|E], позволяющее обратить #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L фей#!#! того же [Concept('religion', 'двора')|E], приняв доктрину «[GetFaithDoctrine('doctrine_fae_agenda_militant').GetBaseName]»"
+ situation_parameter_war_of_seasons_convert_to_truce_bearer_fraction: "[Concept('court_leader', 'Лидеру двора')|E] доступно [Concept('character_interaction', 'взаимодействие персонажа')|E], позволяющее обратить #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L фей#!#! того же [Concept('religion', 'двора')|E], приняв доктрину «[GetFaithDoctrine('doctrine_fae_agenda_trucebearer').GetBaseName]»"
+
+ situation_parameter_war_of_seasons_unlock_peace_objective: "[Concept('court_leader', 'Лидеру двора')|E] доступна цель, чтобы [GetSituationType('PoD_war_of_seasons').GetName] завершилась раз и навсегда."
+ situation_parameter_war_of_seasons_unlock_war_objective: "[Concept('court_leader', 'Лидеру двора')|E] доступна цель, позволяющее объявить своё время года победителем в противостоянии «[GetSituationType('PoD_war_of_seasons').GetName]»."
+
+ PoD_war_of_seasons_return_to_base_desc: "Медленно возвращается к #bold 0#! очкам"
+
+ PoD_war_of_seasons_kill_court: "Убийство"
+ PoD_war_of_seasons_kill_court_desc: "Убить #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L фею#!#! из другого [Concept('religion', 'двора')|E]"
+ PoD_war_of_seasons_start_war_court: "Начало [Concept('war', 'войну')|E]"
+ PoD_war_of_seasons_start_war_court_desc: "Начать [Concept('war', 'войну')|E] против #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L феи#!#! из другого [Concept('religion', 'двора')|E]"
+ PoD_war_of_seasons_win_war_court: "Победа в [Concept('war', 'войне')|E]"
+ PoD_war_of_seasons_win_war_court_desc: "Выиграть [Concept('war', 'войну')|E] против #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L феи#!#! из другого [Concept('religion', 'двора')|E]"
+ PoD_war_of_seasons_gain_rival_court: "Заведение [Concept('rival', 'соперника')|E]"
+ PoD_war_of_seasons_gain_rival_court_desc: "Завести [Concept('rival', 'соперника')|E]-#TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L фею#!#! из другого [Concept('religion', 'двора')|E]"
+ PoD_war_of_seasons_usurp_title_court: "Узурпация [Concept('title', 'титула')|E]"
+ PoD_war_of_seasons_usurp_title_court_desc: "Узурпировать/получить претензии на [Concept('title','титул')|E] #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L феи#!#! из другого [Concept('religion', 'двора')|E]"
+
+ PoD_war_of_seasons_gift_court: "Подарок"
+ PoD_war_of_seasons_gift_court_desc: "Подарить [Concept('gold', 'золото')|E] или [Concept('artifact', 'артефакт')|E] #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L фее#!#! из другого [Concept('religion', 'двора')|E]"
+ PoD_war_of_seasons_befriend_court: "Начало дружбы"
+ PoD_war_of_seasons_befriend_court_desc: "Подружиться с #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L феей#!#! из другого [Concept('religion', 'двора')|E]"
+ PoD_war_of_seasons_seduce_court: "Соблазнение"
+ PoD_war_of_seasons_seduce_court_desc: "Соблазнить #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L фею#!#! из другого [Concept('religion', 'двора')|E]"
+ PoD_war_of_seasons_sign_truce_outside_war__court: "Перемирие вне [Concept('war', 'войны')|E]"
+ PoD_war_of_seasons_sign_truce_outside_war_court_desc: "Заключить [Concept('truce', 'перемирие')|E] вне [Concept('war', 'войны')|E] с #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L феей#!#! из другого [Concept('religion', 'двора')|E]"
+ PoD_war_of_seasons_pay_random_court: "Выкуп"
+ PoD_war_of_seasons_pay_random_court_desc: "Выкупить из темницы #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L фею#!#! из другого [Concept('religion', 'двора')|E]"
+
+ WINDOW_POD_WAR_OF_SEASONS_LEADERS: "Лидер [Concept('religion', 'двора')|E]"
+ PODWarOfSeasonsLeader_spring: "Предводитель Весны" #Lady/Lord caused too much errors.
+ PODWarOfSeasonsLeader_summer: "Властелин Лета"
+ PODWarOfSeasonsLeader_autumn: "Правитель Осени"
+ PODWarOfSeasonsLeader_winter: "Воевода Зимы"
+ PODWarOfSeasonsLeader_solstice: "Лидер Солнцестояния"
+
+ WINDOW_POD_WAR_OF_SEASONS_PROGRESSBAR_WAR: "Эта шкала показывает прогресс ситуации «[GetSituationType('PoD_war_of_seasons').GetPhaseType('PoD_war_of_seasons_situation_war').GetName]». В настоящее время [GetSituation('PoD_war_of_seasons').GetTopCurrentPhase.GetFuturePhaseByType(GetSituationType('PoD_war_of_seasons').GetPhaseType('PoD_war_of_seasons_situation_war')).GetProgress]/[GetSituation('PoD_war_of_seasons').GetTopCurrentPhase.GetFuturePhaseByType(GetSituationType('PoD_war_of_seasons').GetPhaseType('PoD_war_of_seasons_situation_war')).GetTakeoverPoints]$WINDOW_POD_WAR_OF_SEASONS_PROGRESSBAR_GENERAL$"
+ WINDOW_POD_WAR_OF_SEASONS_PROGRESSBAR_PEACE: "Эта шкала показывает прогресс ситуации «[GetSituationType('PoD_war_of_seasons').GetPhaseType('PoD_war_of_seasons_situation_peace').GetName]». В настоящее время [GetSituation('PoD_war_of_seasons').GetTopCurrentPhase.GetFuturePhaseByType(GetSituationType('PoD_war_of_seasons').GetPhaseType('PoD_war_of_seasons_situation_peace')).GetProgress]/[GetSituation('PoD_war_of_seasons').GetTopCurrentPhase.GetFuturePhaseByType(GetSituationType('PoD_war_of_seasons').GetPhaseType('PoD_war_of_seasons_situation_peace')).GetTakeoverPoints]$WINDOW_POD_WAR_OF_SEASONS_PROGRESSBAR_GENERAL$"
+ WINDOW_POD_WAR_OF_SEASONS_PROGRESSBAR_STATUS_QUO: "Эта шкала показывает прогресс ситуации «[GetSituationType('PoD_war_of_seasons').GetPhaseType('PoD_war_of_seasons_situation_status_quo').GetName]». В настоящее время [GetSituation('PoD_war_of_seasons').GetTopCurrentPhase.GetFuturePhaseByType(GetSituationType('PoD_war_of_seasons').GetPhaseType('PoD_war_of_seasons_situation_status_quo')).GetProgress]/[GetSituation('PoD_war_of_seasons').GetTopCurrentPhase.GetFuturePhaseByType(GetSituationType('PoD_war_of_seasons').GetPhaseType('PoD_war_of_seasons_situation_status_quo')).GetTakeoverPoints]"
+ WINDOW_POD_WAR_OF_SEASONS_PROGRESSBAR_GENERAL: "\n\nКогда любая шкала заполнится, [GetSituationType('PoD_war_of_seasons').GetName] сдвинется к соответствующей [Concept('situation_phase', 'фазе')|E]. Заполнение прочих показателей не имеет значения, важна лишь первая заполнившаяся."
+ WINDOW_POD_WAR_OF_SEASONS_FUTURE_EFFECTS: "Эффекты следующей фазы"
+
+ WINDOW_POD_WAR_OF_SEASONS_LEADERS_SPRING: "#L [GetReligionByKey('spring_court_religion').GetName]ие#! лидеры избираются большинством голосов [Concept('independent_rulers', 'независимых правителей')|E].\n\nВыборы происходят каждые #V 10 лет#!, но могут начаться за счёт [Concept('prestige', 'престижа')|E]."
+ WINDOW_POD_WAR_OF_SEASONS_LEADERS_SPRING_BUTTON: "Начать выборы!"
+
+ WINDOW_POD_WAR_OF_SEASONS_LEADERS_SUMMER: "#L [GetReligionByKey('summer_court_religion').GetName]ие#! лидеры избираются в зависимости от числа [Concept('vassals', 'вассалов')|E]. #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L Фея#!#! с наибольшим количеством [Concept('vassals', 'вассалов')|E] побеждает.\n\n\n"
+
+ WINDOW_POD_WAR_OF_SEASONS_LEADERS_AUTUMN: "#L [GetReligionByKey('autumn_court_religion').GetName]ие#! лидеры не избираются, но могут быть смещены. Каждая осенняя #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L фея#!#! может начать [Concept('scheme', 'происки')|E] против действующего лидера с целью смещения.[AddTextIf(Not(ObjectsEqual(GetPlayer.Self,Situation.MakeScope.GetVariable('autumn_leader').Char)), Localize('WINDOW_POD_WAR_OF_SEASONS_LEADERS_AUTUMN_BUTTON_TEXT'))]"
+ WINDOW_POD_WAR_OF_SEASONS_LEADERS_AUTUMN_BUTTON_TEXT: "\n\nНажав кнопку, вы откроете [Concept('character_interaction', 'взаимодействие персонажа')|E] для начала [Concept('scheme', 'происков')|E]"
+ WINDOW_POD_WAR_OF_SEASONS_LEADERS_AUTUMN_BUTTON: "Пора [Concept('scheming', 'плести интриги')|E]"
+ autumn_button_script: "Это откроет [Concept('character_interaction', 'взаимодействие персонажа')|E] #V $PODClaimLeadership_scheme_interaction$#! против персонажа [GetSituation('PoD_war_of_seasons').MakeScope.GetVariable('autumn_leader').Char.GetName]"
+
+ WINDOW_POD_WAR_OF_SEASONS_LEADERS_WINTER: "#L [GetReligionByKey('winter_court_religion').GetName]ие#! лидеры избираются в зависимости от показателя [Concept('dread', 'ужаса')|E]. #TOOLTIP:GAME_TRAIT,fae,[GetNullCharacter] #L Фея#!#! с наивысшим [Concept('dread', 'ужасом')|E] среди [Concept('independent_rulers', 'независимых правителей')|E] будет избрана зимним воеводой\n\nПроверяется каждый #V год#!"
+
+ WINDOW_POD_WAR_OF_SEASONS_LEADERS_SOLSTICE: "[GetReligionByKey('solstice_court_religion').GetAdjective] не имеет лидера. Они слишком малы, слишком чужды друг для друга и других [Concept('religion', 'дворов')|E], чтобы думать о них как о равных.\n\nНо вы можете изменить это. С достаточным размером [Concept('realm', 'державы')|E] и числом [Concept('vassals', 'вассалов')|E] вы можете заявить о себе с позиции силы."
+ WINDOW_POD_WAR_OF_SEASONS_LEADERS_SOLSTICE_BUTTON: "Нам нужно быть услышанными!"
+ solstice_button_script_vassal: "У вас должно быть #V 25#! [Concept('vassals', 'вассалов')|E]! #weak (#V [SCOPE.GetValue('vassal_num')]#!)#!"
+ WINDOW_POD_WAR_OF_SEASONS_LEADERS_SOLSTICE_LEADER: "#L [GetReligionByKey('solstice_court_religion').GetName]ому#! лидеру наследуют дети первого лидера Солнцестояния.\n\nЕсли основная линия прервется, случайный правитель Солнцестояния примет власть."
