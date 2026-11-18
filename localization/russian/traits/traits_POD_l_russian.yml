@@ -753,7 +753,7 @@
  trait_beatific_character_desc: "Ходячее воплощение избранного [Select_CString(ROOT.Char.IsFemale, 'ей', 'им' )] бога, [ROOT.Char.GetFirstNameNoTooltip] - [Select_CString(ROOT.Char.IsFemale, 'чудотворица', 'чудотворец' )], образец [Glossary('истинной веры','game_concept_true_faith_desc')] в мире тьмы. Это дает [ROOT.Char.GetHerHim] доступ к способностям, которые некоторые могут назвать неестественными. Но берегитесь, грешные личности могут быть лишены своих божественных даров."
  #trait_beatific_player_desc: "#medium См. [Concept('decision', 'решение')|E] «[GetDecision('advance_beatific_decision').GetName]» для получения подробной информации о получении [Concept('trait_level_track_xp', 'опыта пути развития свойства')|E].#!\n\n$trait_beatific_character_desc$"
  #trait_track_beatific: "Чудотворство"
- #trait_track_beatific_desc: "#bold Уровень 1:#! Делает [Concept('decision', 'решение')|E] $POD_demon_unearthbound_decision$ бесплатным. Позволяет изгнать призрака/демона в [Glossary('Тёмное королевство','game_concept_dark_kingdom_desc')]/[UmbraGlossaryLocalized('abyss','Бездну')] через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Открывает особую постройку [GetBuilding('sanctified_area_01').GetName]. \n#bold Уровень 2:#! Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел ремесла#!#!, который добавляет [Concept('modifier', 'модификатор')|E] [GetModifier('bless_modifier').GetNameWithTooltip] в зависимости от типа [Concept('artifact', 'артефакта')|E]. Даёт иммунитет к убийству. Даёт иммунитет к делириуму. Вы больше не можете быть одержимы призраком.\n#bold Уровень 3:#! Цели всегда будут принимать требования об обращении.\n#bold Уровень 4:#! Позволяет снять все [Concept('Fetter', 'оковы')|E] у призраков через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Позволяет убить сверхъестественное существо за малое количество благочестия через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Вам больше не нужно влияние, чтобы изгнать духа.\n#bold Уровень 5:#! Позволяет вам снова сделать вампира смертным или достичь Голконды через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Доступны [men_at_arms|El] - [GetMaA('minion_of_the_divine').GetName]. Позволяет тратить силу воли вместо получения ран. Позволяет не умирать от ран.\n#italic Самое сильное орудие в руках верующих - это сила истинных чудес. Целые религии рождаются из таких проявлений истинной веры.#!"
+ #trait_track_beatific_desc: "#bold Уровень 1:#! Делает [Concept('decision', 'решение')|E] $POD_demon_unearthbound_decision$ бесплатным. Позволяет изгнать призрака/демона в [Glossary('Тёмное королевство','game_concept_dark_kingdom_desc')]/[UmbraGlossaryLocalized('abyss','Бездну')] через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Открывает особую постройку [GetBuildingType('sanctified_area_01').GetName]. \n#bold Уровень 2:#! Разблокирует #TOOLTIP:game_concept_crafting_node_desc #E узел ремесла#!#!, который добавляет [Concept('modifier', 'модификатор')|E] [GetModifier('bless_modifier').GetNameWithTooltip] в зависимости от типа [Concept('artifact', 'артефакта')|E]. Даёт иммунитет к убийству. Даёт иммунитет к делириуму. Вы больше не можете быть одержимы призраком.\n#bold Уровень 3:#! Цели всегда будут принимать требования об обращении.\n#bold Уровень 4:#! Позволяет снять все [Concept('Fetter', 'оковы')|E] у призраков через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Позволяет убить сверхъестественное существо за малое количество благочестия через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Вам больше не нужно влияние, чтобы изгнать духа.\n#bold Уровень 5:#! Позволяет вам снова сделать вампира смертным или достичь Голконды через [Concept('character_interaction', 'взаимодействие персонажа')|E]. Доступны [men_at_arms|El] - [GetMaA('minion_of_the_divine').GetName]. Позволяет тратить силу воли вместо получения ран. Позволяет не умирать от ран.\n#italic Самое сильное орудие в руках верующих - это сила истинных чудес. Целые религии рождаются из таких проявлений истинной веры.#!"
 
  trait_holy_seal: "Святая печать"
  trait_holy_seal_desc: "Реликвии и артефакты божественной силы, жестоко, но умело вживлённые в раны этого несчастного создания, не дают им затянуться."
@@ -1011,16 +1011,16 @@
  DHARMA_PASSIVE_SOUL_ARTS_BREAKING_THE_DRAGONS_NECK_PERK: "У вас есть достоинство «[GetPerk('soul_arts_breaking_the_dragons_neck_perk').GetName(GetPlayer)]»"
 
  #TODO reactivate and clean for Asia culture
- DHARMA_PASSIVE_AINU_HIGH_DEVELOPMENT: "Общее [Concept('development', 'развитие')|E] провинций с айнской культурой в вашей [Concept('realm', 'державе')|E] превышает #V 50#!"
- DHARMA_PASSIVE_HIGH_DEVELOPMENT: "Общее [Concept('development', 'развитие')|E] провинций в вашей [Concept('realm', 'державе')|E] превышает #V 100#!"
+ DHARMA_PASSIVE_AINU_HIGH_PROSPERITY: "Общее [Concept('prosperity', 'процветание')|E] провинций с айнской культурой в вашей [Concept('realm', 'державе')|E] превышает #V 50#!"
+ DHARMA_PASSIVE_HIGH_PROSPERITY: "Общее [Concept('prosperity', 'процветание')|E] провинций в вашей [Concept('realm', 'державе')|E] превышает #V 100#!"
  DHARMA_PASSIVE_ILL_COURTIER: "По крайней мере, один из ваших придворных болен"
  DHARMA_PASSIVE_LOW_LEGITIMACY: "Ваш уровень легитимности - #V $legitimacy_level_0_name$#! или #V $legitimacy_level_1_name$#!"
  DHARMA_PASSIVE_HAVE_TYRANNY: "У вас не менее 1 ед. [Concept('tyranny', 'тирании')|E]"
  DHARMA_PASSIVE_COASTAL_CAPITAL: "Ваша столица расположена на побережье"
- DHARMA_PASSIVE_HAN_HIGH_DEVELOPMENT: "Общее [Concept('development', 'развитие')|E] #L [GetCultureByKey('han').GetCollectiveNoun|l]их#! провинций в вашей [Concept('realm', 'державе')|E] превышает #V 50#!"
+ DHARMA_PASSIVE_HAN_HIGH_PROSPERITY: "Общее [Concept('prosperity', 'процветание')|E] #L [GetCultureByKey('han').GetCollectiveNoun|l]их#! провинций в вашей [Concept('realm', 'державе')|E] превышает #V 50#!"
 
- DHARMA_PASSIVE_GARDEN_OF_SAMCHOK_01: "[GetBuilding('garden_of_samchok_01').GetName] находится под вашим контролем"
- DHARMA_PASSIVE_TEMPLE_OF_THE_LOTUS_POND_IN_WINTER_01: "[GetBuilding('temple_of_the_lotus_pond_in_winter_01').GetName] находится под вашим контролем"
+ DHARMA_PASSIVE_GARDEN_OF_SAMCHOK_01: "[GetBuildingType('garden_of_samchok_01').GetName] находится под вашим контролем"
+ DHARMA_PASSIVE_TEMPLE_OF_THE_LOTUS_POND_IN_WINTER_01: "[GetBuildingType('temple_of_the_lotus_pond_in_winter_01').GetName] находится под вашим контролем"
 
  DHARMA_PASSIVE_KI_CHUAN: "[GetPODArtifactName('ki_chuan')] принадлежит вам"
  DHARMA_PASSIVE_RED_BOOK_OF_THE_IRON_BRIDGE: "[GetPODArtifactName('red_book_of_the_iron_bridge')] принадлежит вам"
@@ -1032,8 +1032,8 @@
  DHARMA_PASSIVE_SEVEN_SCRIPTURES_OF_IMMORTAL_INIQUITY: "[GetPODArtifactName('seven_scriptures_of_immortal_iniquity')] принадлежит вам"
  DHARMA_PASSIVE_DELECTATIONS_OF_THE_FLOWERS_OF_BLOOD: "[GetPODArtifactName('delectations_of_the_flowers_of_blood')] принадлежит вам"
 
- DHARMA_PASSIVE_BLACK_LOTUS_TEMPLE_01: "[GetBuilding('black_lotus_temple_01').GetName] находится под вашим контролем"
- DHARMA_PASSIVE_MT_MERU_01: "[GetBuilding('mt_meru_01').GetName] находится под вашим контролем"
+ DHARMA_PASSIVE_BLACK_LOTUS_TEMPLE_01: "[GetBuildingType('black_lotus_temple_01').GetName] находится под вашим контролем"
+ DHARMA_PASSIVE_MT_MERU_01: "[GetBuildingType('mt_meru_01').GetName] находится под вашим контролем"
 
  DHARMA_XP_DOMICILE_MULT: "От ваших [Concept('domicile_buildings', 'построек поместья')|E] #weak (складывающееся значение)#!"
 
@@ -1555,8 +1555,8 @@
  MUMMY_SOL_PASSIVE_FAITH_KNOWLEDGE_ABOVE_ALL: "Ваша [Concept('faith', 'конфессия')|E] ценит #TOOLTIP:GAME_FAITH_DOCTRINE,tenet_knowledge_above_all #L Знание превыше всего#!#!"
  MUMMY_SOL_PASSIVE_FAITH_PURSUIT_OF_KNOWLEDGE: "Ваша [Concept('faith', 'конфессия')|E] ценит #TOOLTIP:GAME_FAITH_DOCTRINE,tenet_pursuit_of_knowledge #L Стремление к знаниям#!#!"
  MUMMY_SOL_PASSIVE_CULTURE_PHILOSOPHER_CULTURE: "Ваша [Concept('culture', 'культура')|E] имеет [Concept('tradition', 'традицию')|E] #TOOLTIP:CULTURE_TRADITION,tradition_philosopher_culture #L уважения к философам#!#!"
- MUMMY_SOL_PASSIVE_HIGH_DEVELOPMENT: "Общее [Concept('development', 'развитие')|E] вашей [Concept('realm', 'державы')|E] превышает #V 350#!"
- MUMMY_SOL_PASSIVE_SUPER_HIGH_DEVELOPMENT: "Общее [Concept('development', 'развитие')|E] вашей [Concept('realm', 'державы')|E] превышает #V 700#!"
+ MUMMY_SOL_PASSIVE_HIGH_PROSPERITY: "Общее [Concept('prosperity', 'процветание')|E] вашей [Concept('realm', 'державы')|E] превышает #V 350#!"
+ MUMMY_SOL_PASSIVE_SUPER_HIGH_PROSPERITY: "Общее [Concept('prosperity', 'процветание')|E] вашей [Concept('realm', 'державы')|E] превышает #V 700#!"
  MUMMY_SOL_PASSIVE_HOMELAND: "Вы находитесь на своей [Concept('POD_homeland', 'родине')|E]"
  MUMMY_SOL_PASSIVE_EGYPTIAN_ARTIFACTS: "У вас есть #TOOLTIP:MUMMY_SOL_PASSIVE_list_of_egyptian_artifacts #L артефакты, связанные с мумиями#!#! #weak (зависит от количества)#!"
  MUMMY_SOL_PASSIVE_list_of_egyptian_artifacts: "Некоторые из следующих [Concept('artifacts', 'артефактов')|E] принадлежат вам:\n$EFFECT_LIST_BULLET$[GetPODArtifactName('writings_cabirus_link')]\n$EFFECT_LIST_BULLET$[GetPODArtifactName('sets_emasculation_link')]\n$EFFECT_LIST_BULLET$[GetPODArtifactName('set_phallus_link')]\n$EFFECT_LIST_BULLET$[GetPODArtifactName('isis_fragments_link')]\n$EFFECT_LIST_BULLET$[GetPODArtifactName('book_thoth_link')]\n$EFFECT_LIST_BULLET$[GetPODArtifactName('uraeus_osiris_link')]\n$EFFECT_LIST_BULLET$[GetPODArtifactName('bone_osiris_link')]\n$EFFECT_LIST_BULLET$[GetPODArtifactName('mithras_ring_link')]\n$EFFECT_LIST_BULLET$[GetPODArtifactName('mithras_dagger_link')]"
@@ -1593,8 +1593,8 @@
  MUMMY_SOL_PASSIVE_UNCONNECTED_FAITH: "Ваша [Concept('faith', 'конфессия')|E] #TOOLTIP:MUMMY_SOL_PASSIVE_unconcerned_faith #L не интересуется#!#! заклинанием Жизни"
  MUMMY_SOL_PASSIVE_unconcerned_faith: "Ваша конфессия #bold не#! относится к следующим:\n$EFFECT_LIST_BULLET$[GetReligionByKey('amenti_religion').GetAdjective]\n$EFFECT_LIST_BULLET$#TOOLTIP:GAME_FAITH_DOCTRINE,special_doctrine_osirian_league #L Часть Осирианской лиги#!#!\n$EFFECT_LIST_BULLET$#TOOLTIP:GAME_FAITH_DOCTRINE,special_doctrine_against_to_apophis_hostility #L Противники Апопа#!#!\n$EFFECT_LIST_BULLET$#TOOLTIP:GAME_FAITH_DOCTRINE,special_doctrine_allied_to_apophis_hostility #L Союзники Апопа#!#!\n$EFFECT_LIST_BULLET$#TOOLTIP:GAME_FAITH_DOCTRINE,special_doctrine_set_pillars_kindred #L Последователи Сета#!#!\n$EFFECT_LIST_BULLET$#TOOLTIP:GAME_FAITH_DOCTRINE,special_doctrine_set_corrupted_kindred #L Под влиянием культа Сета#!#!"
  MUMMY_SOL_PASSIVE_LEARNING_DUCHY: "У вас есть #TOOLTIP:MUMMY_SOL_PASSIVE_learning_duchy_building #L герцогская постройка, связанная с магией или [Concept('learning', 'учёностью')|E]#!#!"
- MUMMY_SOL_PASSIVE_learning_duchy_building: "Одно из следующих зданий или его улучшенная версия:\n$EFFECT_LIST_BULLET$[GetBuilding('web_of_faith_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('occult_affiliation_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('caern_wisdom_03').GetName]"
- MUMMY_SOL_PASSIVE_MESTHA_FARMSTEAD: "У вас есть [GetBuilding('mestha_farmstead_02').GetName] или улучшенная версия"
+ MUMMY_SOL_PASSIVE_learning_duchy_building: "Одно из следующих зданий или его улучшенная версия:\n$EFFECT_LIST_BULLET$[GetBuildingType('web_of_faith_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuildingType('occult_affiliation_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuildingType('caern_wisdom_03').GetName]"
+ MUMMY_SOL_PASSIVE_MESTHA_FARMSTEAD: "У вас есть [GetBuildingType('mestha_farmstead_02').GetName] или улучшенная версия"
  MUMMY_SOL_PASSIVE_PLACE_OF_LEARNING: "Вы контролируете университет или центр учёности"
 
  MUMMY_EOEL_PASSIVE_NOURISHING: "Ваши последователи и держава усовершенствованы"
@@ -1620,9 +1620,9 @@
  MUMMY_EOEL_PASSIVE_FAITH_KNOWLEDGE_ABOVE_ALL: "Ваша [Concept('faith', 'конфессия')|E] ценит #TOOLTIP:GAME_FAITH_DOCTRINE,tenet_knowledge_above_all #L Знание превыше всего#!#!"
  MUMMY_EOEL_PASSIVE_FAITH_PURSUIT_OF_KNOWLEDGE: "Ваша [Concept('faith', 'конфессия')|E] ценит #TOOLTIP:GAME_FAITH_DOCTRINE,tenet_pursuit_of_knowledge #L Стремление к знаниям#!#!"
  MUMMY_EOEL_PASSIVE_CULTURE_PHILOSOPHER_CULTURE: "Ваша [Concept('culture', 'культура')|E] имеет [Concept('tradition', 'традицию')|E] #TOOLTIP:CULTURE_TRADITION,tradition_philosopher_culture #L уважения к философам#!#!"
- MUMMY_EOEL_PASSIVE_HIGH_DEVELOPMENT: "Общее [Concept('development', 'развитие')|E] вашей [Concept('realm', 'державы')|E] превышает #V 750#!"
- MUMMY_EOEL_PASSIVE_SUPER_HIGH_DEVELOPMENT: "Общее [Concept('development', 'развитие')|E] вашей [Concept('realm', 'державы')|E] превышает #V 1500#!"
- MUMMY_EOEL_PASSIVE_INSANE_DEVELOPMENT: "Общее [Concept('development', 'развитие')|E] вашей [Concept('realm', 'державы')|E] превышает #V 2500#!"
+ MUMMY_EOEL_PASSIVE_HIGH_PROSPERITY: "Общее [Concept('prosperity', 'процветание')|E] вашей [Concept('realm', 'державы')|E] превышает #V 750#!"
+ MUMMY_EOEL_PASSIVE_SUPER_HIGH_PROSPERITY: "Общее [Concept('prosperity', 'процветание')|E] вашей [Concept('realm', 'державы')|E] превышает #V 1500#!"
+ MUMMY_EOEL_PASSIVE_INSANE_PROSPERITY: "Общее [Concept('prosperity', 'процветание')|E] вашей [Concept('realm', 'державы')|E] превышает #V 2500#!"
  MUMMY_EOEL_PASSIVE_MAX_MUMMY_MEMORIES: "Имеет #P 90#! [Concept('trait_level_track_xp', 'опыт')|E] воспоминаний #TOOLTIP:GAME_TRAIT,mummy,[GetNullCharacter] #L мумии#!#!"
  MUMMY_EOEL_PASSIVE_UNCONNECTED_FAITH: "Ваша [Concept('faith', 'конфессия')|E] #TOOLTIP:MUMMY_EOEL_PASSIVE_unconcerned_faith #L не интересуется#!#! эликсиром Вечной жизни"
  MUMMY_EOEL_PASSIVE_unconcerned_faith: "Ваша конфессия не относится к следующим:\n$EFFECT_LIST_BULLET$[GetReligionByKey('wutian_religion').GetAdjective]\n$EFFECT_LIST_BULLET$[Concept('religion', 'Религия')|E] из #L [GetReligionFamily('rf_kueijin').GetName|l]ого#! семейства\n$EFFECT_LIST_BULLET$[GetReligionByKey('demon_hunters_religion').GetAdjective]\n$EFFECT_LIST_BULLET$[GetReligionByKey('stargazer_religion').GetAdjective]\n$EFFECT_LIST_BULLET$[GetReligionByKey('shinma_religion').GetAdjective]\n$EFFECT_LIST_BULLET$[GetReligionByKey('mu_religion').GetAdjective]\n$EFFECT_LIST_BULLET$[GetReligionByKey('raktasadhus_religion').GetAdjective]\n$EFFECT_LIST_BULLET$[GetReligionByKey('roadofunexaminedhorizons_religion').GetAdjective]\n$EFFECT_LIST_BULLET$[GetReligionByKey('talmahera_religion').GetAdjective]\n$EFFECT_LIST_BULLET$#TOOLTIP:GAME_FAITH_DOCTRINE,doctrine_fera_beast_courts #L Часть Звериных дворов#!#!\n$EFFECT_LIST_BULLET$#TOOLTIP:GAME_FAITH_DOCTRINE,special_doctrine_against_to_yomi_wan_hostility #L Противники повелителей Яма#!#!\n$EFFECT_LIST_BULLET$#TOOLTIP:GAME_FAITH_DOCTRINE,special_doctrine_allied_to_yomi_wan_hostility #L Союзники повелителей Яма#!#!"

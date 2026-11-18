@@ -7,7 +7,7 @@
  blackfury_objective_decision_confirm: "Матери, дочери и предводительницы."
  blackfury_decision_custom: "Каэрн Славы солнца во владении [GetTitleByKey('b_montbelliard').GetNameNoTier] должен быть полностью отстроен"
  blackfury_decision_custom_a: "У вас должно 5 или более воительниц-женщин со значением доблести 50 или выше."
- blackfury_decision_custom_c: "Уровень развития как минимум 5 графств - 10 или ниже."
+ blackfury_decision_custom_c: "Уровень процветания как минимум 5 графств - 10 или ниже."
 
  pod1230objectives_fera.1.t: "Дочери Геи"
  pod1230objectives_fera.1.desc: "Чёрные фурии давно привязаны к своей исконной средиземноморской родине. Возвышение Рима и рост городов, сопровождавший его, ознаменовали конец их господства над регионом и помогли вампирам постепенно ослабить влияние Фурий. Но не более.\nБлагодаря череде могущественных матриархов, хитроумному использованию смертных институтов против вампиров и дерзким нападениям, достойным амазонок, Чёрные фурии вновь укрепили свой плацдарм.\nДругие племена наблюдают за происходящим, гадая, смогут ли фурии воспользоваться этой неожиданной победой. Возможно, Гея и вправду хочет, чтобы её воители объединились под властью её дочерей?"
@@ -405,7 +405,7 @@
  mokole_mbembe_spear_objective_decision_tooltip: "Благодаря хитроумному шиминажу и исследованию затерянных мест можно найти священную реликвию."
  mokole_mbembe_spear_objective_decision_desc: "Копьё [GetScriptedCharacterByHistoryID('795111').GetFirstName] было утеряно на века. В последний раз его видели в [Concept('umbra', 'Умбре')|E], но из-за того, что повсюду бродят [Concept('innocents', 'невинные')|E], многие моколе не рискуют его искать. С другой стороны, наши [Concept('spirit_companions', 'духи-спутники')|E] гораздо лучше подходят для этой задачи."
  mokole_mbembe_spear_objective_decision_confirm: "Снова в руках моколе."
- mokole_mbembe_spear_objective_decision_requirement: "[GetBuilding('umbral_lake_tele_03').GetName] должно быть полностью отстроено"
+ mokole_mbembe_spear_objective_decision_requirement: "[GetBuildingType('umbral_lake_tele_03').GetName] должно быть полностью отстроено"
  mokole_mbembe_spear_objective_decision_requirement2: "Получен модификатор «[GetModifier('paleontologist_modifier').GetNameWithTooltip]» из [UmbraGlossaryLocalized('pangaea','Пангеи')]"
  mokole_mbembe_spear_objective_decision_requirement3: "У вас есть [Concept('spirit_companion', 'спутник-дух')|E] с максимальным рангом"
  mokole_mbembe_spear_objective_decision_requirement4: "У вас есть два [Concept('spirit_companions', 'спутника-духа')|E] с максимальным рангом"

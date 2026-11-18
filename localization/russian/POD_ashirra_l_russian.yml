@@ -42,19 +42,19 @@
  ####Cairo related####
  POD_mullah_zealots_cairo_tooltip: "Каждый год этот персонаж может удалить свойство «[GetTrait('cynical').GetName(GetNullCharacter)]» у своего [Concept('liege', 'сюзерена')|E], его [Concept('courtiers', 'придворных')|E] или [Concept('vassals', 'вассалов')|E]. Этот шанс повышается за счёт его [Concept('aptitude', 'пригодности')|E]."
  court_mullah_zealots_cairo_effect_title: "Мулла развеивает сомнения"
- cairo_mullah_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_lama_04').GetName]"
+ cairo_mullah_aptitude_reward_tooltip: "[GetBuildingType('cairo_khitta_lama_04').GetName]"
 
  POD_qadi_judge_cairo_tooltip: "Каждый год этот персонаж может ускорить [de_jure_drift|El] в державе. Этот шанс повышается за счёт его [Concept('aptitude', 'пригодности')|E]."
  court_qadi_judge_cairo_effect_title: "Кади ускоряет интеграцию"
- cairo_qadi_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_yashkur_04').GetName]"
+ cairo_qadi_aptitude_reward_tooltip: "[GetBuildingType('cairo_khitta_yashkur_04').GetName]"
 
  POD_imam_sadaqah_cairo_tooltip: "Каждый год этот персонаж может обратить в вашу [Concept('faith', 'конфессию')|E] не-аширритские графства. Этот шанс повышается за счёт его [Concept('aptitude', 'пригодности')|E]."
  court_imam_sadaqah_cairo_effect_title: "Имам обращает графство"
- cairo_imam_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_hajj_04').GetName]"
+ cairo_imam_aptitude_reward_tooltip: "[GetBuildingType('cairo_khitta_hajj_04').GetName]"
 
  POD_ulama_teachings_cairo_tooltip: "Каждый год этот персонаж может удалить одно из ваших [Concept('fame_trait','свойств репутации')|E] от [Concept('mental_break', 'нервных срывов')|E]. Этот шанс повышается за счёт его [Concept('aptitude', 'пригодности')|E]."
  court_ulama_teachings_cairo_effect_title: "Алим предлагает новый взгляд на жизнь"
- cairo_ulama_aptitude_reward_tooltip: "[GetBuilding('cairo_khitta_fen_04').GetName]"
+ cairo_ulama_aptitude_reward_tooltip: "[GetBuildingType('cairo_khitta_fen_04').GetName]"
 
 
 

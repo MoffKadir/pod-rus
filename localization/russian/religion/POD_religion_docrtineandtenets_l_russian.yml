@@ -696,11 +696,11 @@
 
  tenet_legacyofshadow_name: "Наследие теней"
  tenet_legacyofshadow_desc: "Трое - повелители ночи и, следовательно, должны править во тьме. Их следует почитать как божеств, но их истинная природа никогда не должна раскрываться; точно так же, как природа Отца, Сына и Святого Духа неизвестна, неизвестна и природа Троицы."
- doctrine_parameter_legacy_of_shadows_unlock_bonus: "Постройка «[GetBuilding('open_rule_04').GetName]» получает дополнительный ежемесячный доход"
+ doctrine_parameter_legacy_of_shadows_unlock_bonus: "Постройка «[GetBuildingType('open_rule_04').GetName]» получает дополнительный ежемесячный доход"
 
  # Custom parameter localizations.
  doctrine_parameter_legacy_of_trinity_unlock: "Можно назначить двух персонажей на должности «[GetCourtPositionType('triumvir_court_position').GetName()]»"
- doctrine_parameter_legacy_of_shadows_unlock: "Открывает столичную постройку «[GetBuilding('open_rule_04').GetName]» — четвёртую ступень цепочки открытого правления"
+ doctrine_parameter_legacy_of_shadows_unlock: "Открывает столичную постройку «[GetBuildingType('open_rule_04').GetName]» — четвёртую ступень цепочки открытого правления"
 
  tenet_oaths_name: "Верность клятвам"
  tenet_oaths_desc: "Наши законы - это наказы наших старейшин и повеления Каина над всеми. Клятвы - основа феодального порядка."
@@ -756,7 +756,7 @@
  doctrine_enlightenment_virtues_conscience_and_instinct_name: "Совесть и инстинкты"
  doctrine_enlightenment_virtues_conscience_and_instinct_desc: "Теряют благочестие при нанесении тяжелых ран или убийстве смертных жертв. Не теряют благочестие от ярости."
  doctrine_parameter_hurt_mortal_lose_piety: "Теряют [piety_i][Concept('piety', 'благочестие')|E] при нанесении тяжелых ран или убийстве смертных жертв"
- #doctrine_parameter_east_building_parameter: "[Glossary('Дхарма','podgloss.dharma')] Востока получает бонус, связанный с развитием и устойчивостью к поветриям в герцогских постройках драконьего гнезда"
+ #doctrine_parameter_east_building_parameter: "[Glossary('Дхарма','podgloss.dharma')] Востока получает бонус, связанный с процветанием и устойчивостью к поветриям в герцогских постройках драконьего гнезда"
  #doctrine_parameter_south_building_parameter: "[Glossary('Дхарма','podgloss.dharma')] Юга получает бонус, связанный с ведением боевых действий в герцогских постройках драконьего гнезда"
  #doctrine_parameter_west_building_parameter: "[Glossary('Дхарма','podgloss.dharma')] Запада получает бонус, связанный с интригами в герцогских постройках драконьего гнезда"
  #doctrine_parameter_north_building_parameter: "[Glossary('Дхарма','podgloss.dharma')] Севера получает бонус, связанный с легитимностью в герцогских постройках драконьего гнезда"
@@ -1386,7 +1386,7 @@
  doctrine_parameter_oathtruce_alliances_active: "Хранителям Мира легче заключать союзы"
 
  doctrine_parameter_can_perform_vaulderie: "Доступно [Concept('decision', 'решение')|E] «[GetDecision('vaulderie_decision').GetName]» с членами #TOOLTIP:game_concept_coterie_desc #E котерии#!#!"
- doctrine_parameter_overwork_capital_unlocked: "Разблокировано [Concept('decision', 'решение')|E] #V $overwork_capital_decision$#!, увеличивающее [Concept('development', 'развитие')|E] в обмен на [Concept('prestige', 'престиж')|E] и #TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! раскрытие Маскарада#!#!"
+ doctrine_parameter_overwork_capital_unlocked: "Разблокировано [Concept('decision', 'решение')|E] #V $overwork_capital_decision$#!, увеличивающее [Concept('prosperity', 'процветание')|E] в обмен на [Concept('prestige', 'престиж')|E] и #TOOLTIP:game_concept_the_masquerade_desc #E @masquerade_icon! раскрытие Маскарада#!#!"
 
  stygia_hostility_name: "Отношение к Стигии"
  special_doctrine_is_legion_faith_name: "Легион"
@@ -1426,6 +1426,9 @@
  tenet_burn_the_inferno_name: "Сожжение преисподней"
  tenet_burn_the_inferno_desc: "Оружие [Concept('akuma', 'акума')|E] будет обращено против них самих. Ни одна жертва не бывает слишком большой, ни одно предательство - слишком мелким."
  doctrine_parameter_recruit_deviltiger_banes: "Доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('rat_headed_dragonfly_demon').GetName], [GetMaA('sleeper_seducing_bane').GetName] и [GetMaA('face_robe_demon').GetName]"
+
+ tenet_piyau_teachings_name: "Учения Пияу"
+ tenet_piyau_teachings_desc: "Обманчиво простую философию Пияу можно описать как нескончаемую оргию секса, насилия и необузданных эмоций — первобытный способ для нежити вновь ощутить себя живыми. Слабовольные, милосердные и мужчины здесь не приветствуются. Только чистейшая женская ярость способна свергнуть [Glossary('повелителей Яма','podgloss.yamaking')]."
 
  tenet_sanbenito_creed_name: "Путь милосердия"
  tenet_sanbenito_creed_desc: "Наша миссия должна нести милосердие, а не ненависть."
@@ -1474,8 +1477,8 @@
 
  tenet_centipede_embrace_name: "Объятия Многоножки"
  tenet_centipede_embrace_desc: "[Glossary('Многоножка', 'glossary_wyrm_tt')] будет расти бесконечно, питаясь самой землёй."
- doctrine_parameter_ignore_dragon_nest_requirements: "Все требования к [Concept('development', 'развитию')|E] в [Concept('duchy_buildings', 'герцогской постройке')|E] «Драконье гнездо» игнорируются"
- doctrine_parameter_pack_training_efficient_development_loss: "Повышает эффективность уничтожения [Concept('development', 'развития')|E] от [Concept('journey', 'странствия')|E] #V Тренировка со стаей#!"
+ doctrine_parameter_ignore_dragon_nest_requirements: "Все требования к [Concept('prosperity', 'процветанию')|E] в [Concept('duchy_buildings', 'герцогской постройке')|E] «Драконье гнездо» игнорируются"
+ doctrine_parameter_pack_training_efficient_prosperity_loss: "Повышает эффективность уничтожения [Concept('prosperity', 'процветания')|E] от [Concept('journey', 'странствия')|E] #V Тренировка со стаей#!"
 
  tenet_wyrm_seekers_name: "Искатели Вирма"
  tenet_wyrm_seekers_desc: "[Glossary('Вирм', 'glossary_wyrm_tt')] хранит много знаний и силы, нужно просто найти его."
@@ -1558,8 +1561,8 @@
 
  doctrine_fera_triat_alignment_weaver_name: "Ткачиха"
  doctrine_fera_triat_alignment_weaver_desc: "Пока существует человечество, процветание [Glossary('Ткачихи', 'glossary_weaver_tt')] никогда не прекратится."
- doctrine_parameter_ignore_fera_dev_requirements: "Требования к низкому уровню [Concept('development', 'развития')|E] для зданий [Glossary('фера', 'glossary_fera_tt')] игнорируются"
- doctrine_parameter_no_fera_dev_reduction: "Постройки [Glossary('фера', 'glossary_fera_tt')] в провинциях, следующих этой [Concept('faith', 'конфессии')|E], не снижают [Concept('development', 'развитие')|E]"
+ doctrine_parameter_ignore_fera_dev_requirements: "Требования к низкому уровню [Concept('prosperity', 'процветания')|E] для зданий [Glossary('фера', 'glossary_fera_tt')] игнорируются"
+ doctrine_parameter_no_fera_dev_reduction: "Постройки [Glossary('фера', 'glossary_fera_tt')] в провинциях, следующих этой [Concept('faith', 'конфессии')|E], не снижают [Concept('prosperity', 'процветание')|E]"
 
  doctrine_fera_triat_alignment_wyrm_name: "Вирм"
  doctrine_fera_triat_alignment_wyrm_desc: "Подобно своему павшему хозяину, слуги [Glossary('Вирма', 'glossary_wyrm_tt')] стремятся только к хаосу и разрушению."

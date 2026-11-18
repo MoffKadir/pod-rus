@@ -745,7 +745,7 @@
  domicile_building_parameter_domicile_impundulu_recruit_bomkazi: "Открывает [Concept('decision', 'решение')|E], позволяющее нанять ещё одну #TOOLTIP:GAME_TRAIT,bomkazi_witch,GetNullCharacter #L ведьму Бомкази#!#!."
 
  # Salubri Healer — The Mending Cell
- domicile_building_parameter_domicile_salubri_development: "Открывает [Concept('decision', 'решение')|E], позволяющее потратить [Concept('piety', 'благочестие')|E] для повышения развития графства. Результат зависит от навыка [Concept('learning', 'учёности')|E] и уровня улучшения"
+ domicile_building_parameter_domicile_salubri_prosperity: "Открывает [Concept('decision', 'решение')|E], позволяющее потратить [Concept('piety', 'благочестие')|E] для повышения [Concept('prosperity', 'процветания')|E] графства. Результат зависит от навыка [Concept('learning', 'учёности')|E] и уровня улучшения"
 
  # Salubri Warrior — The Reliquary
  domicile_building_parameter_domicile_salubri_recruit_warriors: "Открывает [Concept('decision', 'решение')|E], позволяющее нанять смертных с военным образованием. Уровень образования зависит от уровня улучшения"
@@ -1840,7 +1840,7 @@
 
  mokole_main_meditation_chamber_01_domicile_building: "Палата медитации"
  mokole_main_meditation_chamber_01_domicile_building_desc: ""
- mokole_main_meditation_chamber_01_requirement: "В вашей [Concept('capital', 'столице')|E] должна быть постройка [GetBuilding('mokole_wallow_05').GetName]"
+ mokole_main_meditation_chamber_01_requirement: "В вашей [Concept('capital', 'столице')|E] должна быть постройка [GetBuildingType('mokole_wallow_05').GetName]"
  mokole_main_meditation_chamber_02_domicile_building: "$mokole_main_meditation_chamber_01_domicile_building$"
  mokole_main_meditation_chamber_02_domicile_building_desc: "$mokole_main_meditation_chamber_01_domicile_building_desc$"
  mokole_main_meditation_chamber_03_domicile_building: "$mokole_main_meditation_chamber_01_domicile_building$"

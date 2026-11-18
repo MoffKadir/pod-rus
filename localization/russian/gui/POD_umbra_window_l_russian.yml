@@ -578,7 +578,7 @@
  umbra_place_shadowlands_tooltip: "[GetTrait('wraith').GetName( GetNullCharacter )] без [Concept('Fetter', 'оков')|E] получает умеренный [stress|El] каждый год, поддерживая себя в [UmbraGlossaryLocalized('shadowlands','Загробном мире')]. (10% вероятности за каждые неразрешённые или потерянные [Concept('Fetter', 'оковы')|E])"
  umbra_place_dark_kingdom_tooltip: "Оставайтесь в [Glossary('Тёмном королевстве','game_concept_dark_kingdom_desc')], чтобы не получить [stress|El] из-за отсутствия [Concept('Fetter', 'оков')|E]"
 
- broken_mirror_valid_tooltip: "Ваша локация ([GetPlayer.GetCurrentLocation.GetName]) #bold не#! имеет постройки [GetBuilding('wyrm_taint_01').GetName] или [Concept('faith', 'конфессии')|E], которая принимает инфернализм."
+ broken_mirror_valid_tooltip: "Ваша локация ([GetPlayer.GetCurrentLocation.GetName]) #bold не#! имеет постройки [GetBuildingType('wyrm_taint_01').GetName] или [Concept('faith', 'конфессии')|E], которая принимает инфернализм."
  labyrinth_progress_effect_tooltip: "Вы получаете #V 100#! прогресса в исследовании [UmbraGlossaryLocalized('pod_realm_labyrinth','Лабиринта')] (При расположении)."
 
  glen_desc: "Лощина - это область [UmbraGlossaryLocalized('penumbra','Пенумбры')], насыщенная энергиями [Glossary('Вильда', 'glossary_wyld_tt')]. Лощины обычно связаны с участками нетронутой дикой природы в материальном мире (что делает их все более редкими и недоступными)."

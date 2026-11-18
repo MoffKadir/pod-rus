@@ -160,7 +160,6 @@
  # Vanilla CK3 typo fix :|
  activity_pulse_action_local_baron_tax: "[first.GetShortUIName|U] вынужденно [Select_CString(first.IsLocalPlayer, 'заплатили', Select_CString(first.IsFemale, 'заплатила', 'заплатил' ))] налог"
  county_opinion: "Мнение графства: $NUM|=V$"
- msg_house_unity_change_stage_desc: "[Concept( 'house_unity', 'Единство' )|E] вашего дома сдвинулось на уровень «[Localize('$HOUSE_UNITY_STAGE_NAME$')]»"
 
  # Meditation activity
  religious_decision.0201.basilica: "Базилика Сан-Микеле."
@@ -219,10 +218,10 @@
  #You wouldn't believe the horrors I saw
 
  epidemic_ruler_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]"
- epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]"
  #epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]"
  #epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]"
- #epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetAdjectiveNoTooltip|U]"
+ #epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetHolder.GetTopLiege.GetPrimaryTitle.GetAdjectiveNoTooltip|U]"
+ epidemic_province_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetAdjectiveNoTooltip|U]"
  epidemic_devils_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetAdjectiveNoTooltip|U]"
  epidemic_random_saint_loc: "[ROOT.Epidemic.GetStartingOutbreakProvince.GetCounty.GetTitle.GetAdjectiveNoTooltip|U]"
  epidemic_rulers_plague: "$epidemic_province_loc$ая чума"
@@ -305,7 +304,7 @@
 
  #Replace only the strong for Enochian
  tradition_only_the_strong_name: "Первый город"
- tradition_only_the_strong_desc: "Место, где все началось, наследие величайших воинов, государственных деятелей и философов, которые направляли первые неуверенные шаги человечества под пристальным взглядом Каина."
+ tradition_only_the_strong_desc: "Место, где все началось, наследие величайших воинов, государственных деятелей и философов, которые направляли первые неуверенные шаги человечества под нашим пристальным взглядом."
 
  # House Customization (for Coteries)
  CUSTOMIZE_HOUSE_HEADER: "Настроить [AddTextIf(Not(DynastyHouse.GetHeadOfHouse.MakeScope.Var('is_coa_dummy').IsSet), 'дом ')][Select_CString( Not(DynastyHouse.GetHeadOfHouse.MakeScope.Var('is_coa_dummy').IsSet), DynastyHouse.GetBaseNameNoTooltip, GetPlayer.Custom('PODGetCoterieName') )]"
@@ -478,7 +477,6 @@
  intrigue_skill_focus_tt: "За этим [Concept('activity', 'занятием')|E] вы повысите опыт [intrigue_i|E][Concept('intrigue', 'интриг')|E]"
  journey_skill_gain_final_log_title: "Опыт повысился"
  journey_skill_gain_final_log: "Опыт [Select_CString(CHARACTER.IsLocalPlayer, '', 'персонажа ' )|U][CHARACTER.GetShortUINamePossessive|U][Select_CString(CHARACTER.IsLocalPlayer, 'его персонажа', '' )] повысился"
- activity_journey_host_desc: "#indent_newline:8 $BULLET_WITH_TAB$[intrigue_i|E][diplomacy_i|E][martial_i|E][learning_i|E][stewardship_i|E]#V 1#! опыт образа жизни гарантировано, шанс получить #V 1#! очко опыта дополнительно\n#weak (Очки навыков зависят от вида посещенной [Concept('special_building', 'особой постройки')|E])#!#!\n$BULLET_WITH_TAB$[court_position_i]Претенденты на [Concept('court_positions', 'придворные должности')|E] с превосходным уровнем [Concept('aptitude', 'пригодности')|E] для этих должностей\n$BULLET_WITH_TAB$[prestige_i|E][Concept('prestige', 'Престиж')|E]\n\n#weak Ваши [Concept('children', 'дети')|E] и [Concept('spouses', 'супруги')|E] войдут в вашу [Concept('entourage', 'свиту')|E].#!"
  journey_skilled_scribes_desc: "#indent_newline:8 $BULLET_WITH_TAB$ К свите присоединятся два очень искусных персонажа со свойством «[GetTrait('devoted').GetName( GetNullCharacter )]». По завершении [Concept('activity', 'занятия')|E] они останутся у вас [Concept('courtiers', 'при дворе')|E], а вы получите [Concept('hooks', 'влияние')|E] «#EMP Обязательство#!» на них, которое снизит их жалование на [Concept('court_positions', 'придворных должностях')|E].#!\n\n#flavor Помощь извне никогда не бывает лишней — в конце концов, не могу же я в одиночку предусмотреть #EMP всё#!.#!"
  journey_skill_desc: "#weak Шанс дополнительного повышения опыта образа жизни по завершении: #V [Activity.MakeScope.Var('skill_chance').GetValue|0]%#!#!"
  extra_skill_gained_tt: "Вы получили дополнительный опыт образа жизни #weak (шанс - [activity.MakeScope.Var( 'skill_chance' ).GetValue|0]%)#!"
@@ -561,7 +559,6 @@
  ARMY_VIEW_LEVIES: "Смертный сброд"
  ARMY_VIEW_LEVIES_TOOLTIP: "#T Смертный сброд#!"
  APPOINTMENT_THEME_SORT_LEVIES: "Смертный сброд"
- #APPOINTMENT_THEME_SORT_LEVIES: "Смертный сброд"
  LV_HEADER: "Смертный сброд"
  LV_FLAVOR: "Смертный сброд составляют крестьяне, головорезы, вольные на`мники и разорившиеся дворяне с самым разнородным вооружением."
  LV_NO_COUNTERS: "Смертный сброд никогда не [Concept('counter', 'противостоит')|E] другим типам"
@@ -673,3 +670,10 @@
  hostility_override_with_doctrine: "[Concept('rites', 'Течения')|E] с доктриной [DoctrineType.GetBaseName|V] воспринимаются как $HOSTILITY_NAME|V$"
  hostility_override_with_tenet: "[Concept('rites', 'Течения')|E] с догматом [TenetType.GetBaseName|V] воспринимаются как $HOSTILITY_NAME|V$"
  hostility_override_same_hof: "Воспринимает другие [faiths|El] с общим [Concept('head_of_faith', 'главой конфессии')|E] как $HOSTILITY_NAME|V$"
+
+
+ bureaucratic_district_desc: "Гражданский и экономический центр этого графства"
+ ducal_residence_district_desc: "Центр власти в этом регионе"
+
+ #do not translate, but also used in vanilla so it's here instead of the do no translate file 
+ merchant_name: "merchant_visible"
