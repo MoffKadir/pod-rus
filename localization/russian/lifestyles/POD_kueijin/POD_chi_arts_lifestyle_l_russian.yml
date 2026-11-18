@@ -27,18 +27,18 @@
  chi_arts_inwards_harmonious_aligment_perk_name: "Внутреннее гармоничное сродство"
  chi_arts_outwards_harmonious_aligment_perk_name: "Внешнее гармоничное сродство"
  CHI_ARTS_INWARDS_HARMONIOUS_ALIGMENT_PERK_EFFECT: "#flavor Совершенствующийся направляет свою внутреннюю ци на близлежащие драконьи линии, получая незначительные блага.#!"
- CHI_ARTS_OUTWARDS_HARMONIOUS_ALIGMENT_PERK_EFFECT: "Разблокирована постройка «[GetBuilding('feng_shui_harmonized_area_01').GetName]».\n[PODUnlocksCombatMove('POD_combat_move_kueijin_hand_of_darkness')].\n#flavor Совершенствующийся выравнивает ци по ближайшей драконьей линии, обеспечивая спокойный поток энергии.#!"
+ CHI_ARTS_OUTWARDS_HARMONIOUS_ALIGMENT_PERK_EFFECT: "Разблокирована постройка «[GetBuildingType('feng_shui_harmonized_area_01').GetName]».\n[PODUnlocksCombatMove('POD_combat_move_kueijin_hand_of_darkness')].\n#flavor Совершенствующийся выравнивает ци по ближайшей драконьей линии, обеспечивая спокойный поток энергии.#!"
 
  chi_arts_chi_ward_perk_name: "Стена ци"
- CHI_ARTS_CHI_WARD_PERK_EFFECT: "Разблокирована постройка «[GetBuilding('feng_shui_harmonized_area_02').GetName]».\n#flavor Совершенствующийся направляет поток ци из города в драконье гнездо.#!"
+ CHI_ARTS_CHI_WARD_PERK_EFFECT: "Разблокирована постройка «[GetBuildingType('feng_shui_harmonized_area_02').GetName]».\n#flavor Совершенствующийся направляет поток ци из города в драконье гнездо.#!"
 
  chi_arts_demon_ward_perk_name: "Демоническая стена"
  chi_arts_dragon_flow_perk_name: "Драконий поток"
  CHI_ARTS_DEMON_WARD_PERK_EFFECT: "#flavor Совершенствующийся связывает целый город с драконьим гнездом, чтобы очистить его от демонической ци.#!"
- CHI_ARTS_DRAGON_FLOW_PERK_EFFECT: "Разблокирована постройка «[GetBuilding('feng_shui_harmonized_area_03').GetName]».\n#flavor Совершенствующийся усмиряет поток ци в своём местоположении.#!"
+ CHI_ARTS_DRAGON_FLOW_PERK_EFFECT: "Разблокирована постройка «[GetBuildingType('feng_shui_harmonized_area_03').GetName]».\n#flavor Совершенствующийся усмиряет поток ци в своём местоположении.#!"
 
  chi_arts_transcendend_aligment_perk_name: "Трансцендентное сродство"
- CHI_ARTS_TRANSCENDEND_ALIGMENT_PERK_EFFECT: "Разблокирована постройка «[GetBuilding('feng_shui_harmonized_area_04').GetName]».\n#flavor Совершенствующийся связывает целый город с драконьими вратами.#!"
+ CHI_ARTS_TRANSCENDEND_ALIGMENT_PERK_EFFECT: "Разблокирована постройка «[GetBuildingType('feng_shui_harmonized_area_04').GetName]».\n#flavor Совершенствующийся связывает целый город с драконьими вратами.#!"
 
 
  chi_arts_evaluate_yin_soul_perk_name: "Взгляд в душу Инь"
@@ -72,7 +72,7 @@
  CHI_ARTS_CHI_NEST_PERK_EFFECT: "#flavor Совершенствующийся может направить небольшую часть драконьей линии в их логово.#!"
 
  chi_arts_chi_shaping_perk_name: "Формирование ци"
- CHI_ARTS_CHI_SHAPING_PERK_EFFECT: "Разблокирована постройка «[GetBuilding('extended_dragon_nest_01').GetName]».\n[PODUnlocksCombatMove('POD_combat_move_kueijin_chi_shaping')].\n#flavor Совершенствующийся может формировать то, как ци течёт по драконьим линиям.#!"
+ CHI_ARTS_CHI_SHAPING_PERK_EFFECT: "Разблокирована постройка «[GetBuildingType('extended_dragon_nest_01').GetName]».\n[PODUnlocksCombatMove('POD_combat_move_kueijin_chi_shaping')].\n#flavor Совершенствующийся может формировать то, как ци течёт по драконьим линиям.#!"
 
  chi_arts_yin_wall_perk_name: "Стена Инь"
  chi_arts_yang_wall_perk_name: "Стена Ян"
@@ -80,12 +80,12 @@
  CHI_ARTS_YANG_WALL_PERK_EFFECT: "Можно манипулировать Стеной.\n#flavor Совершенствующийся может манипулировать энергией ци, отделяющей мир Ян от Поднебесной.#!"
 
  chi_arts_dragon_shaping_perk_name: "Формирование дракона"
- CHI_ARTS_DRAGON_SHAPING_PERK_EFFECT: "Разблокирована постройка «[GetBuilding('extended_dragon_nest_02').GetName]».\n#flavor Совершенствующийся может формировать то, как течёт драконья линия.#!"
+ CHI_ARTS_DRAGON_SHAPING_PERK_EFFECT: "Разблокирована постройка «[GetBuildingType('extended_dragon_nest_02').GetName]».\n#flavor Совершенствующийся может формировать то, как течёт драконья линия.#!"
 
  chi_arts_open_dragon_gate_perk_name: "Открытие драконьих врат"
  chi_arts_expand_dragon_river_perk_name: "Расширение драконьей реки"
- CHI_ARTS_OPEN_DRAGON_GATE_PERK_EFFECT: "Требования к [Concept('development', 'развитию')|E] для драконьих гнёзд снижены на #V 10#!.\n[PODUnlocksCombatMove('POD_combat_move_kueijin_ride_the_dragon')].\n#flavor Совершенствующийся может силой вскрыть драконье гнездо.#!"
- CHI_ARTS_EXPAND_DRAGON_RIVER_PERK_EFFECT: "Требования к [Concept('development', 'развитию')|E] для драконьих гнёзд снижены на #V 10#!.\n#flavor Совершенствующийся может раздуть размеры драконьей реки.#!"
+ CHI_ARTS_OPEN_DRAGON_GATE_PERK_EFFECT: "Требования к [Concept('prosperity', 'процветанию')|E] для драконьих гнёзд снижены на #V 10#!.\n[PODUnlocksCombatMove('POD_combat_move_kueijin_ride_the_dragon')].\n#flavor Совершенствующийся может силой вскрыть драконье гнездо.#!"
+ CHI_ARTS_EXPAND_DRAGON_RIVER_PERK_EFFECT: "Требования к [Concept('prosperity', 'процветанию')|E] для драконьих гнёзд снижены на #V 10#!.\n#flavor Совершенствующийся может раздуть размеры драконьей реки.#!"
 
  chi_arts_sapping_the_dragon_nest_perk_name: "Истощение драконьего гнезда"
  CHI_ARTS_SAPPING_THE_DRAGON_NEST_PERK_EFFECT: "Вы можете использовать построенное драконье гнездо , чтобы получить модификатор [GetModifier('chi_arts_sapping_the_dragon_nest_modifier').GetNameWithTooltip], варьирующийся от уровня использованного драконьего гнезда.\n#flavor Совершенствующийся может направлять части драконьих врат внутрь себя, тем самым значительно усиливая их.#!"

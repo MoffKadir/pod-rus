@@ -83,7 +83,7 @@
  spell_of_life_stage1_cabirus_phase1_decision_confirm: "Означает ли «эбол» «выход» или «смерть»?"
  spell_of_life_stage1_cabirus_phase1_decision_alt_confirm: "Мало какие знания утрачены безвозвратно."
  spell_of_life_stage1_cabirus_phase1_decision_writing_access: "[GetPODArtifactName('writings_cabirus_link')] находится в вашей досягаемости"
- spell_of_life_stage1_cabirus_phase1_decision_university: "В одном из ваших [Concept('counties', 'графств')|E] находится [Concept('building', 'постройка')|E] университета, [GetBuilding('black_college_01').GetName], [GetBuilding('library_malta_01').GetName], [GetBuilding('vienna_chantry_01').GetName], [GetBuilding('erciyes_01').GetName] или одно из их улучшений"
+ spell_of_life_stage1_cabirus_phase1_decision_university: "В одном из ваших [Concept('counties', 'графств')|E] находится [Concept('building', 'постройка')|E] университета, [GetBuildingType('black_college_01').GetName], [GetBuildingType('library_malta_01').GetName], [GetBuildingType('vienna_chantry_01').GetName], [GetBuildingType('erciyes_01').GetName] или одно из их улучшений"
 
  request_access_writings_cabirus_decision: "Попросить доступ к тайным письменам Кабира"
  request_access_writings_cabirus_decision_desc: "Чтобы продолжить наши исследования способов вечного возрождения, нам придётся заглянуть в тайные письмена Кабира. К счастью, мы можем либо убедить их нынешнего владельца, либо использовать наше влияние, чтобы потребовать доступа. Однако за это могут потребовать плату."

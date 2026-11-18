@@ -997,7 +997,7 @@
  PHOBIA_PERK_EFFECT: "[PODImprovesCombatMove('POD_combat_move_majesty')]\nУчаствуя в [Concept('combat_phase', 'битве')|E] как [Concept('commander', 'командир')|E], вы получите модификатор [GetModifier('phobia_5_modifier').GetNameWithTooltip].\nСила этого модификатора зависит от текущего значения [Concept('dread', 'ужаса')|E]."
  MASK_OF_EMPATHY_PERK_EFFECT: "Вы можете оборвать отношения цели через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Разрыв эмоциональных связей между людьми.#!"
  BLOODLUST_PERK_EFFECT: "Улучшает модификатор достоинства «[GetPerk('phobia_perk').GetName(GetPlayer)]» до максимума в [GetModifier('bloodlust_5_modifier').GetNameWithTooltip]. Значение модификатора зависит от вашего показателя ужаса."
- PERFECT_WORLD_PERK_EFFECT: "Вы можете улучшить свою столицу модификатором [GetModifier('perfect_world_development_modifier').GetNameWithTooltip] или [GetModifier('perfect_world_war_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Ваше эмоциональное мастерство достигло таких масштабов, что охватывает весь город, заставляя всех его жителей работать над тем, чтобы сделать его вашим идеальным городом.#!"
+ PERFECT_WORLD_PERK_EFFECT: "Вы можете улучшить свою столицу модификатором [GetModifier('perfect_world_prosperity_modifier').GetNameWithTooltip] или [GetModifier('perfect_world_war_modifier').GetNameWithTooltip] через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Ваше эмоциональное мастерство достигло таких масштабов, что охватывает весь город, заставляя всех его жителей работать над тем, чтобы сделать его вашим идеальным городом.#!"
 
  # Kai # 
 
@@ -1009,7 +1009,7 @@
  KAI_ELDER_1_PERK_EFFECT: "Опция [Concept('prowess', 'доблести')|E] «Прилива крови» предоставляет дополнительные 5 ед. доблести.\n#F Когда вы направляете свою кровь на борьбу, это вызывает головокружительное состояние, похожее на транс, в котором вы сражаетесь с яростью и честью, подобающими истинному даймё.#!"
  KAI_ELDER_2_PERK_EFFECT: "Открывает решение, позволяющее разблокировать один полк [Concept('men_at_arms', 'профессионалов')|E] из следующего списка:\n$BULLET_WITH_TAB$[GetMaA('POD_ronin_hatamoto').GetName]\n$BULLET_WITH_TAB$[GetMaA('POD_ronin').GetName]\n$BULLET_WITH_TAB$[GetMaA('POD_yumihiki').GetName]\n$BULLET_WITH_TAB$[GetMaA('POD_yumihiki_riders').GetName]\n$BULLET_WITH_TAB$[GetMaA('POD_sojutsuka').GetName]\n$BULLET_WITH_TAB$[GetMaA('POD_sojutsuka_riders').GetName]\n#F Само присутствие вашей крови вызывает эффекты, сходные с законом даймё, однако эта сила, когда она сосредоточена на определённом подходе к ведению боя, из которого проистекают корни дисциплины, оказывает необычное и существенное влияние на смертных, заставляя их перенимать боевые стили, характерные для тех земель, из которых она произошла, а также, в частности, дает возможность сражаться в одиночку. они обладают сверхъестественными способностями и оказывают вам честь в бою.#!"
  KAI_ELDER_3_PERK_EFFECT: "Предоставляет сильную ментальную защиту.\n#F Обладая силой воли, вы можете яростно сражаться до победного конца, а сосредоточив свой разум, вы легко сможете отмахнуться от попыток ментального обмана.#!"
- KAI_ELDER_4_PERK_EFFECT: "Вы можете ранить себя и принести в жертву пленённого члена клана или одного из своих гулей, чтобы попытаться убить свою цель. Если цель обладает защитными способностями, это приведет к ранению.\n#F Вырвав из себя частичку своей силы и пожертвовав жизненной силой того, в ком течёт ваша кровь, вы можете нанести ошеломляющий по мощи удар. Этот удар найдет и уничтожит вашу цель на расстоянии сотен километров.#!"
+ KAI_ELDER_4_PERK_EFFECT: "Вы можете ранить себя и принести в жертву пленённого члена клана или одного из своих гулей, чтобы попытаться нанести цели серьёзный урон.\n#F Вырвав из себя частичку своей силы и пожертвовав жизненной силой того, в ком течёт ваша кровь, вы можете нанести ошеломляющий по мощи удар. Этот удар найдет и уничтожит вашу цель на расстоянии сотен километров.#!"
  KAI_ELDER_5_PERK_EFFECT: "Разблокировано взаимодействие персонажа, позволяющее саботировать командиров цели.\n#F Выпустите на волю огромный, кажущийся бесконечным поток крови, чтобы злобно преследовать и обстреливать тех, против кого вы решите использовать эту силу, и те, кто будет окружен, столкнутся с большими трудностями при перемещении и пополнении запасов своей армии.#!"
  KAI_ELDER_6_PERK_EFFECT: "Улучшает взаимодействие персонажа «Багровый шторм».\n#F Потоки вашей крови теперь могут объединяться в по-настоящему мощные удары, имитирующие как устрашающий внешний вид, так и разрушительный эффект цунами.#!"
 
@@ -1302,7 +1302,7 @@
  CONVERSION_PERK_EFFECT: "Вы можете мгновенно обратить державу в свою конфессию за немалое количество благочестия через [Concept('decision', 'решение')|E].\n#F В ярком проявлении внутреннего света верующий является живым, дышащим маяком того, что он считает правильным и благим.#!"
  MIRACLE_OF_FAITH_PERK_EFFECT: "Вы можете сделать вампира смертным или заставить достичь Голконды через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nОткрывает [Concept('crafting_node', 'узел ремесла')|E], добавляющий [Concept('modifier', 'модификатор')|E] «[GetModifier('bless_modifier').GetNameWithTooltip]», а также модификатор, основанный на типе [Concept('artifact', 'артефакта')|E].\n#F Верующий благословляет икону, наполняя её частичкой своей веры.\nСама сила убеждения верующих заставляет других пересмотреть свой жизненный путь.#!"
  MIRACLE_OF_DEVOTION_PERK_EFFECT: "Если вы являетесь охотников, не являющимся инферналистом, доступны [Concept('men_at_arms', 'профессионалы')|E] — [GetMaA('minion_of_the_divine').GetName].\n#F Вдохновлённые, следуя за благословенным, ягнята сражаются как львы, а мужчины - как демоны.#!"
- MIRACLE_OF_TRANQUILITY_PERK_EFFECT: "Открывает особую постройку «[GetBuilding('sanctified_area_01').GetName]».\nВы можете разрешить все [Concept('Fetter', 'оковы')|E] призрака через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Благословляя небольшую территорию силой своих убеждений, верующие значительно затрудняют проникновение враждебных существ или духов.#!"
+ MIRACLE_OF_TRANQUILITY_PERK_EFFECT: "Открывает особую постройку «[GetBuildingType('sanctified_area_01').GetName]».\nВы можете разрешить все [Concept('Fetter', 'оковы')|E] призрака через [Concept('character_interaction', 'взаимодействие персонажа')|E].\n#F Благословляя небольшую территорию силой своих убеждений, верующие значительно затрудняют проникновение враждебных существ или духов.#!"
  MIRACLE_OF_PROTECTION_PERK_EFFECT: "Вы можете [Concept('POD_banish', 'изгнать')|E] призрака/демона/фею через [Concept('character_interaction', 'взаимодействие персонажа')|E].\nВ вас больше не могут вселиться #TOOLTIP:GAME_TRAIT,wraith,[GetNullCharacter] #L призраки#!#!.\n[PODUnlocksCombatMove('POD_combat_move_truefaith_miracle_of_protection')].\nПолучен иммунитет к первобытному ужасу.\n#F Верующий способен отталкивать вампиров, мертвецов и других существ, живущих рядом с миром или в его тени, силой своего внутреннего света. Он может использовать молитвы, святые символы или просто силу своего присутствия, чтобы отогнать их.#!"
  SHIELD_OF_FAITH_PERK_EFFECT: "#F Присутствие истинно верующих защищает тех, кто следует за ними, будь то от духовного или физического вреда.#!"
 
@@ -1400,7 +1400,7 @@
  SETITE_LEGACY_1_PERK_EFFECT: "$SNAKES_LEGACY_PERK_UNLOCK_DESC$\n#F Первый сын, самый преданный, является примером для всех сетитов.#!"
  SETITE_LEGACY_2_PERK_EFFECT: "Разблокирует [Concept('schemes', 'происки')|E] «[GetScheme('befriend').GetTypeName]».\n#F Нет ничего постыдного в том, чтобы вкусить запретный плод в хорошей компании.#!"
  SETITE_LEGACY_3_PERK_EFFECT: "#F В объятиях Сета всегда можно найти искупление, даже для самых упрямых «сородичей».#!"
- SETITE_LEGACY_4_PERK_EFFECT: "Разблокирует особое здание [GetBuilding('founding_temple_01').GetName].\n#F Наслаждайтесь его славой и молитесь, ибо он вернётся, чтобы спасти всех нас.#!"
+ SETITE_LEGACY_4_PERK_EFFECT: "Разблокирует особое здание [GetBuildingType('founding_temple_01').GetName].\n#F Наслаждайтесь его славой и молитесь, ибо он вернётся, чтобы спасти всех нас.#!"
  SETITE_LEGACY_5_PERK_EFFECT: "#F Потерянная дочь, проклятая, Великий враг... её ждёт возмездие.#!"
 
  #Baali legacy #
@@ -1533,43 +1533,43 @@
 
  # Ashen Nobles #
 
- ASHEN_NOBLES_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_court_01').GetName]."
+ ASHEN_NOBLES_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuildingType('ashen_court_01').GetName]."
  ASHEN_NOBLES_LEGACY_2_PERK_EFFECT: "Разблокирует особое событие воспитания дитя."
- ASHEN_NOBLES_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_court_02').GetName]."
+ ASHEN_NOBLES_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuildingType('ashen_court_02').GetName]."
  ASHEN_NOBLES_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для [Concept('journey', 'странствия')|E] охоты в столице."
- ASHEN_NOBLES_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuilding('ashen_court_03').GetName]."
+ ASHEN_NOBLES_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuildingType('ashen_court_03').GetName]."
 
  # Ashen Knights #
 
- ASHEN_KNIGHTS_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_commandery_01').GetName]."
+ ASHEN_KNIGHTS_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuildingType('ashen_commandery_01').GetName]."
  ASHEN_KNIGHTS_LEGACY_2_PERK_EFFECT: "Разблокирует особое событие воспитания дитя."
- ASHEN_KNIGHTS_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_commandery_02').GetName]."
+ ASHEN_KNIGHTS_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuildingType('ashen_commandery_02').GetName]."
  ASHEN_KNIGHTS_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для [Concept('journey', 'странствия')|E] охоты в столице."
- ASHEN_KNIGHTS_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuilding('ashen_commandery_03').GetName]."
+ ASHEN_KNIGHTS_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuildingType('ashen_commandery_03').GetName]."
 
  # Ashen seneschals #
 
- ASHEN_SENESCHALS_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_office_01').GetName]."
+ ASHEN_SENESCHALS_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuildingType('ashen_office_01').GetName]."
  ASHEN_SENESCHALS_LEGACY_2_PERK_EFFECT: "Разблокирует особое событие воспитания дитя."
- ASHEN_SENESCHALS_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_office_02').GetName]."
+ ASHEN_SENESCHALS_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuildingType('ashen_office_02').GetName]."
  ASHEN_SENESCHALS_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для [Concept('journey', 'странствия')|E] охоты в столице."
- ASHEN_SENESCHALS_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuilding('ashen_office_03').GetName]."
+ ASHEN_SENESCHALS_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuildingType('ashen_office_03').GetName]."
 
  # Ashen Thieves #
 
- ASHEN_THIEVES_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_ring_01').GetName]."
+ ASHEN_THIEVES_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuildingType('ashen_ring_01').GetName]."
  ASHEN_THIEVES_LEGACY_2_PERK_EFFECT: "Разблокирует особое событие воспитания дитя."
- ASHEN_THIEVES_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_ring_02').GetName]."
+ ASHEN_THIEVES_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuildingType('ashen_ring_02').GetName]."
  ASHEN_THIEVES_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для [Concept('journey', 'странствия')|E] охоты в столице."
- ASHEN_THIEVES_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuilding('ashen_ring_03').GetName]."
+ ASHEN_THIEVES_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuildingType('ashen_ring_03').GetName]."
 
  # Ashen Cults #
 
- ASHEN_CULTS_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_cult_site_01').GetName]."
+ ASHEN_CULTS_LEGACY_1_PERK_EFFECT: "Разблокирует здание [GetBuildingType('ashen_cult_site_01').GetName]."
  ASHEN_CULTS_LEGACY_2_PERK_EFFECT: "Разблокирует особое событие воспитания дитя."
- ASHEN_CULTS_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuilding('ashen_cult_site_02').GetName]."
+ ASHEN_CULTS_LEGACY_3_PERK_EFFECT: "Разблокирует здание [GetBuildingType('ashen_cult_site_02').GetName]."
  ASHEN_CULTS_LEGACY_4_PERK_EFFECT: "Разблокирует особую опцию для [Concept('journey', 'странствия')|E] охоты в столице."
- ASHEN_CULTS_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuilding('ashen_cult_site_03').GetName]."
+ ASHEN_CULTS_LEGACY_5_PERK_EFFECT: "Разблокирует особое [Concept('decision', 'решение')|E] для приглашения блюстителя пепла и здание [GetBuildingType('ashen_cult_site_03').GetName]."
 
  # KJ legacy #
 
@@ -1756,7 +1756,7 @@
  SISTERS_CHORALE_PERK_TEXT: "Разблокирует решение «Испытание веры», позволяющее вам избавиться от своих греховных свойств и заменить их благочестивыми аналогами.\n[PODUnlocksCombatMove('POD_combat_move_hunter_sisters_chorale')]\n#flavor Черпая силу, знания или защиту из общего песнопения.#!"
  RED_MARCH_PERK_EFFECT_TEXT: "#flavor Этот обряд позволяет быстро отправиться в путь, несмотря на усталость и трудные условия, после достаточной молитвы перед Богом.#!"
  OCULI_SHEPHERD_PERK_TEXT: "Позволяет принять [deceitful_progress_hostile_schemes_decision|El].\n[PODUnlocksCombatMove('POD_combat_move_hunter_oculi_heavenly_shepherd')]\n#flavor Позволяет Оку Божьему скрываться у всех на виду, когда он совершает небесную работу, и затуманивать умы тех, кто хотел бы помешать его святой миссии.#!"
- MURNAU_OBLIGE_PERK_TEXT: "Позволяет принять [diligent_development_focus_decision|El].\n#flavor Оставаясь благородным домом по своей сути, Мурнау смотрят на других как на своих подопечных. Процветание их земель - долг не менее священный, чем их преданность Инквизиции.#!"
+ MURNAU_OBLIGE_PERK_TEXT: "Позволяет принять [diligent_prosperity_focus_decision|El].\n#flavor Оставаясь благородным домом по своей сути, Мурнау смотрят на других как на своих подопечных. Процветание их земель - долг не менее священный, чем их преданность Инквизиции.#!"
  ACRE_RESURRECTION_PERK_TEXT: "Доступны [men_at_arms|El] - [GetMaA('vampires_hunters').GetName].\nРазблокирует [Concept('character_interaction', 'взаимодействие персонажа')|E], позволяющее исцелять большинство обычных недугов персонажа.\n#flavor Некоторые рыцари божественно наделены способностью контролировать приливы и отливы жизненной силы в себе и других людях. Они могут даже использовать силу самой жизни, чтобы выжечь адскую сущность проклятых.#!"
  RED_FORTUNES_PERK_TEXT: "Доступны [men_at_arms|El] - [GetMaA('demons_hunters').GetName].\n#flavor Посредством этого священного обряда практикующий может благословить группу вооружённых бойцов, отправляющихся на битву с врагом.#!"
  MURNAU_MIRROR_PERK_TEXT: "Доступны [men_at_arms|El] - [GetMaA('monsters_hunters').GetName].\n[PODUnlocksCombatMove('POD_combat_move_hunter_murnau_mirror_of_evil')]\n#flavor Способность противостоять сверхъестественному на равных, вооружившись силой и знаниями, которых у человека быть не должно. Мурнау называют это божественным вдохновением, другие используют менее лестные термины.#!"

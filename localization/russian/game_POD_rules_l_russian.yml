@@ -195,7 +195,7 @@
 
  rule_black_death: "$POD_gamerule$ Чёрная смерть"
  setting_black_death_default: "Черная смерть по умолчанию"
- setting_black_death_default_desc: "В XIV веке произойдёт Чёрная смерть, которая опустошит мир и отбросит его развитие назад."
+ setting_black_death_default_desc: "В XIV веке произойдёт Чёрная смерть, которая опустошит мир и отбросит его процветание назад."
  setting_black_death_disabled: "#high Черная смерть отключена#!"
  setting_black_death_disabled_desc: "Черная смерть не произойдёт"
 
@@ -340,6 +340,12 @@
  setting_POD_uncursed_gargoyles_unchanged_desc: "#TOOLTIP:GAME_TRAIT,gargoyle,[GetNullCharacter] #L Гаргульи#!#!, излечившиеся от [Glossary('проклятия своего клана', 'glossary_clan_curse_tt')] (например, с помощью [Concept('golconda', 'Голконды')|E]), продолжат выглядеть как статуи."
  setting_POD_uncursed_gargoyles_human: "#high Человеческий облик#!"
  setting_POD_uncursed_gargoyles_human_desc: "#TOOLTIP:GAME_TRAIT,gargoyle,[GetNullCharacter] #L Гаргульи#!#!, излечившиеся от [Glossary('проклятия своего клана', 'glossary_clan_curse_tt')] (например, с помощью [Concept('golconda', 'Голконды')|E]), перестанут быть похожими на статуи и вернутся к человеческому облику."
+
+ rule_POD_moonlit_characters: "$POD_gamerule$ Moonlit Characters"
+ setting_POD_moonlit_characters_disabled: "Disabled"
+ setting_POD_moonlit_characters_disabled_desc: "Characters are lit with warm lighting in the character window, even if the background is a nighttime scene."
+ setting_POD_moonlit_characters_enabled: "#high Enabled#!"
+ setting_POD_moonlit_characters_enabled_desc: "Characters in nighttime scenes receive cool lighting in the character window."
 
  rule_pod_experimental_game_rules: "$POD_gamerule$ #clickable Экспериментальные#! правила игры"
  setting_pod_experimental_game_rules_disabled: "Отключены"

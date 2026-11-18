@@ -381,7 +381,7 @@
  occupy_san_michele_decision_tooltip: "Создать штаб-квартиру инквизиции"
  occupy_san_michele_decision_desc: "[st_peters_city|E] находится в рабстве. Если нам удастся освободить его, мы поселимся в одном из его монастырей, чтобы он мог служить штабом против сил тьмы."
  occupy_san_michele_decision_confirm: "Освободить святой город."
- occupy_san_michele_decision_effect_tooltip: "#TOOLTIP:game_concept_grand_city_desc #E Великий город#!#! Рим получит 5 уникальных [Concept('buildings', 'построек')|E].\nВы сможете полностью улучшить их, когда поможете другим орденам инквизиции:\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_library_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_aedificium_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_reliquary_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_basilica_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuilding('rome_san_michele_cloisters_03').GetName]"
+ occupy_san_michele_decision_effect_tooltip: "#TOOLTIP:game_concept_grand_city_desc #E Великий город#!#! Рим получит 5 уникальных [Concept('buildings', 'построек')|E].\nВы сможете полностью улучшить их, когда поможете другим орденам инквизиции:\n$EFFECT_LIST_BULLET$[GetBuildingType('rome_san_michele_library_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuildingType('rome_san_michele_aedificium_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuildingType('rome_san_michele_reliquary_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuildingType('rome_san_michele_basilica_03').GetName]\n$EFFECT_LIST_BULLET$[GetBuildingType('rome_san_michele_cloisters_03').GetName]"
  restore_red_order: "Восстановить Красный орден"
  restore_red_order_tooltip: "Мы познали Ад. Мы приняли его нечестивое знание, чтобы дополнить слово божественного."
  restore_red_order_desc: "Падение наших основных владений не остановит наши исследования. Благодаря святому и нечестивому благословению мы вернем себе наши земли."
@@ -1901,8 +1901,8 @@
  protecting_people_objective_decision_tooltip: "Герои эпохи зла"
  protecting_people_objective_decision_confirm: "Наставлять следующее поколение."
  protecting_people_objective_decision_extra1: "Эту цель могут выполнить только [Concept('characters', 'персонажи')|E]-[Concept('landed', 'землевладельцы')|E]"
- protecting_people_objective_decision_custom1: "В вашей [Concept('realm', 'державе')|E] должно быть [Concept('county', 'графство')|E] с [Concept('development', 'развитием')|E] не менее #V 50#!"
- protecting_people_objective_decision_custom2: "В вашей [Concept('realm', 'державе')|E] должно быть [Concept('holding', 'владение')|E] с [Concept('duchy_building', 'герцогской постройкой')|E] [GetBuilding('dragon_nested_alchemy_laboratory_05').GetName]"
+ protecting_people_objective_decision_custom1: "В вашей [Concept('realm', 'державе')|E] должно быть [Concept('county', 'графство')|E] с [Concept('prosperity', 'процветанием')|E] не менее #V 50#!"
+ protecting_people_objective_decision_custom2: "В вашей [Concept('realm', 'державе')|E] должно быть [Concept('holding', 'владение')|E] с [Concept('duchy_building', 'герцогской постройкой')|E] [GetBuildingType('dragon_nested_alchemy_laboratory_05').GetName]"
  protecting_people_objective_decision_custom3: "Вы должны контроль столько [Concept('counties', 'графств')|E], сколько позволяет ваш [Concept('domain_limit', 'предел домена')|E] #weak (на [SCOPE.GetValue('player_domain_limit_still_available')] ниже предела)#!"
  protecting_people_objective_decision_custom4: "Все [Concept('county', 'графства')|E] в ваших личных [Concept('realm', 'владениях')|E] должны иметь #V 100#! [Concept('county_control', 'контроля')|E]"
  protecting_people_objective_decision_custom5: "Не менее 50% [Concept('counties', 'графств')|E] в вашей [Concept('realm', 'державе')|E] должны иметь #V 100#! [Concept('county_control', 'контроля')|E]"
@@ -2092,8 +2092,8 @@
 
  # SALUBRI HEALER — Develop County
  POD_salubri_healer_develop_county: "Содействовать развитию домена"
- POD_salubri_healer_develop_county_desc: "Через Валерен и тихие советы целители Салюбри способствуют развитию самой земли. Чума отступает, урожаи улучшаются, и люди процветают под бдительным взором третьего глаза."
- POD_salubri_healer_develop_county_tooltip: "Потратить благочестие, чтобы повысить развитие вашего столичного графства. Величина прироста зависит от учёности и уровня целительской кельи."
+ POD_salubri_healer_develop_county_desc: "Через Валерен и тихие советы целители Салюбри способствуют процветанию самой земли. Чума отступает, урожаи улучшаются, и люди процветают под бдительным взором третьего глаза."
+ POD_salubri_healer_develop_county_tooltip: "Потратить благочестие, чтобы повысить процветание вашего столичного графства. Величина прироста зависит от учёности и уровня целительской кельи."
  POD_salubri_healer_develop_county_confirm: "Земля исцеляется и вновь процветает."
 
  # SALUBRI WARRIOR — Recruit Martial Mortals
@@ -2105,7 +2105,7 @@
  # ASSAMITE VIZIER — Enrich Province
  POD_assamite_vizier_enrich_province: "Оценка визиря"
  POD_assamite_vizier_enrich_province_desc: "Архив учёного хранит знания об управлении, о которых большинство князей могут лишь мечтать. Визирь воплощает эти знания в деле: налаживает налогообложение, улучшает инфраструктуру и ускоряет развитие провинции."
- POD_assamite_vizier_enrich_province_tooltip: "На ваше столичное графство будет применён на 10 лет модификатор провинции:\nБонусы #bold к налогам и приросту развития#!, величина которых зависит от уровня архива."
+ POD_assamite_vizier_enrich_province_tooltip: "На ваше столичное графство будет применён на 10 лет модификатор провинции:\nБонусы #bold к налогам и приросту процветания#!, величина которых зависит от уровня архива."
  POD_assamite_vizier_enrich_province_confirm: "Провинция процветает под властью визиря."
 
  ######################################################
@@ -2219,7 +2219,7 @@
 
  POD_maryb_well_sacrifice_decision: "Принести город в жертву Колодцу"
  POD_maryb_well_sacrifice_decision_desc: "Колодец вырыт под собором Святой Софии. Его питают не золотом и молитвами, а самим городом: его развитием, его ремёслами, всей тяжестью его живой плоти, низвергаемой в шахту, которая каждую ночь всё ближе к иному миру.\n\nНаверху Константинополь остаётся светочем веры смертных. Внизу же, обряд за обрядом, его чрево становится отражением ада на земле. Совершите ещё один обряд: обескровьте город, и полученное приношение позволит углубить Колодец.\n\n#shinygold Что наверху, то и внизу, любимый. Ещё немного их — во имя нас.#!"
- POD_maryb_well_sacrifice_decision_custom: "Мэри полностью контролирует [GetTitleByKey('c_byzantion').GetNameNoTier], и у города ещё есть [Concept('development','развитие')|E], которое можно отнять."
+ POD_maryb_well_sacrifice_decision_custom: "Мэри полностью контролирует [GetTitleByKey('c_byzantion').GetNameNoTier], и у города ещё есть [Concept('prosperity','процветание')|E], которое можно отнять."
  POD_maryb_well_sacrifice_decision_tooltip: "Скормить город Колодцу."
  POD_maryb_well_no_pending_offering_tooltip: "В шахте не должно быть подношений. Сначала нужно израсходовать уже приготовленные подношения."
  POD_maryb_well_sacrifice_decision_confirm: "Обескровить город"

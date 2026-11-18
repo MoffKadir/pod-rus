@@ -98,8 +98,8 @@
 
  #Galliard
  primal_song_perk_name: "Первобытная песня"
- PRIMAL_SONG_PERK_EFFECT: "[character_interaction|E]: Сплетите #clickable куплеты песен#! вместе для создания различных эффектов.\n#clickable Куплет: [GetModifier('galliard_song_development_decline_modifier').GetNameWithTooltip]#!\n#clickable Куплет: Призывает случайного духа#!\n#flavor Галлиард сплетает мощные песни со своим гнозисом. Казалось бы, обычная песня может иметь самые непредсказуемые последствия.#!"
- galliard_song_development_decline_modifier: "Возвращение к первобытности"
+ PRIMAL_SONG_PERK_EFFECT: "[character_interaction|E]: Сплетите #clickable куплеты песен#! вместе для создания различных эффектов.\n#clickable Куплет: [GetModifier('galliard_song_prosperity_decline_modifier').GetNameWithTooltip]#!\n#clickable Куплет: Призывает случайного духа#!\n#flavor Галлиард сплетает мощные песни со своим гнозисом. Казалось бы, обычная песня может иметь самые непредсказуемые последствия.#!"
+ galliard_song_prosperity_decline_modifier: "Возвращение к первобытности"
  song_of_valor_perk_name: "Песня доблести"
  SONG_OF_VALOR_PERK_EFFECT: "#clickable Куплет: Исцеляет 2 [POD_aggravated_box|E]#!\n#clickable Куплет: [GetModifier('galliard_song_prowess_modifier').GetNameWithTooltip]#!\n[PODUnlocksCombatMove('POD_combat_move_werewolf_song_of_valor')]\n#flavor Песня о героических подвигах древних гару, чтобы поддержать слушателей. Жажда героизма гонит их вперёд.#!"
  galliard_song_prowess_modifier: "Доблестная сила"

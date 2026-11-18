@@ -25,11 +25,11 @@
  blackfuries_legacy_4_name: "От матерей к дочерям"
  blackfuries_legacy_5_name: "Гнев Геи"
 
- BLACKFURIES_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('amazon_camp_03').GetName]"
+ BLACKFURIES_LEGACY_2_PERK: "Доступна новая постройка - [GetBuildingType('amazon_camp_03').GetName]"
  AMAZONS_LEGACY_PERK_UNLOCK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('amazons').GetName]"
  BLACKFURIES_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к военному делу и доблести."
 
- BONEGNAWERS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('scavengers_03').GetName]"
+ BONEGNAWERS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuildingType('scavengers_03').GetName]"
  BONEGNAWERS_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к интригам и управлению."
 
  bonegnawers_legacy_track_name: "Наследие Грызущих Костей"
@@ -48,7 +48,7 @@
  childrenofgaia_legacy_4_name: "Учение о терпимости"
  childrenofgaia_legacy_5_name: "Любовь Геи"
 
- CHILDRENOFGAIA_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('gaia_refuge_03').GetName]."
+ CHILDRENOFGAIA_LEGACY_2_PERK: "Доступна новая постройка - [GetBuildingType('gaia_refuge_03').GetName]."
  DEFENDERS_LEGACY_PERK_UNLOCK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('kinfolk_defenders').GetName]"
  CHILDRENOFGAIA_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к дипломатии и управлению."
 
@@ -60,7 +60,7 @@
  blackspiraldancers_legacy_4_name: "Учение безумия"
  blackspiraldancers_legacy_5_name: "Многослойный страх"
 
- BLACKSPIRALDANCERS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('black_spiral_03').GetName]."
+ BLACKSPIRALDANCERS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuildingType('black_spiral_03').GetName]."
  BLACKSPIRALDANCERS_LEGACY_3_PERK: "Доступны [men_at_arms|El] - [GetMaA('children_of_cluid_maa').GetName]"
  BLACKSPIRALDANCERS_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к интригам и военному делу."
 
@@ -73,7 +73,7 @@
  fianna_legacy_4_name: "Учение жизни"
  fianna_legacy_5_name: "Любовь к сражениям"
 
- FIANNA_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('bard_gathering_03').GetName]."
+ FIANNA_LEGACY_2_PERK: "Доступна новая постройка - [GetBuildingType('bard_gathering_03').GetName]."
  HERNE_LEGACY_PERK_UNLOCK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('herne').GetName]"
  FIANNA_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к дипломатии и доблести."
 
@@ -85,7 +85,7 @@
  whitehowler_legacy_4_name: "Учение доблести"
  whitehowler_legacy_5_name: "Судьбоносное возрождение"
 
- WHITEHOWLER_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('boderia_ritual_stones_03').GetName]."
+ WHITEHOWLER_LEGACY_2_PERK: "Доступна новая постройка - [GetBuildingType('boderia_ritual_stones_03').GetName]."
  MACTIRE_LEGACY_PERK_UNLOCK_EFFECT: "Доступны [Concept('men_at_arms', 'профессионалы')|E] - [GetMaA('mactire').GetName]"
  WHITEHOWLER_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к учёности и доблести."
 
@@ -97,7 +97,7 @@
  getoffenris_legacy_4_name: "Учение битвы"
  getoffenris_legacy_5_name: "Вальхалла!"
 
- GETOFENRIS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('heroes_summit_03').GetName]."
+ GETOFENRIS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuildingType('heroes_summit_03').GetName]."
  MJOLNIR_LEGACY_PERK_UNLOCK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('mjolnir').GetName]"
  GETOFENRIS_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - 10 очков к доблести."
 
@@ -109,7 +109,7 @@
  warderofmen_legacy_4_name: "Учения человечества"
  warderofmen_legacy_5_name: "Раскидистая [Glossary('Ткачиха', 'glossary_weaver_tt')]"
 
- WARDEROFMEN_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('city_wolves_03').GetName]."
+ WARDEROFMEN_LEGACY_2_PERK: "Доступна новая постройка - [GetBuildingType('city_wolves_03').GetName]."
  WARDEROFMEN_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к учёности и управлению."
 
  uktena_legacy_track_name: "Наследие Уктена"
@@ -120,7 +120,7 @@
  uktena_legacy_4_name: "Оккультные учения"
  uktena_legacy_5_name: "Сибирские волки"
 
- uktena_legacy_2_perk: "Доступна новая постройка - [GetBuilding('uktena_hunter_lodge_03').GetName]."
+ uktena_legacy_2_perk: "Доступна новая постройка - [GetBuildingType('uktena_hunter_lodge_03').GetName]."
  wendigo_maa_legacy_perk_unlock_effect: "Доступны [Concept('men_at_arms', 'профессионалы')|E] - [GetMaA('wendigo_maa').GetName]"
  uktena_legacy_4_perk: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к учёности и доблести."
 
@@ -132,7 +132,7 @@
  redtalon_legacy_4_name: "Учения [Glossary('Вильда', 'glossary_wyld_tt')]"
  redtalon_legacy_5_name: "Отбор стада"
 
- REDTALON_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('constant_impergium_03').GetName]."
+ REDTALON_LEGACY_2_PERK: "Доступна новая постройка - [GetBuildingType('constant_impergium_03').GetName]."
  REDTALON_LEGACY_4_PERK: "По достижении совершеннолетия детёныши вашей династии получат бонус к навыкам - 10 очков в доблести."
 
  shadowlords_legacy_track_name: "Наследие Теневых владык"
@@ -143,7 +143,7 @@
  shadowlords_legacy_4_name: "Учения уважения"
  shadowlords_legacy_5_name: "Истинные правители?"
 
- SHADOWLORDS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('shadowy_summit_03').GetName]."
+ SHADOWLORDS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuildingType('shadowy_summit_03').GetName]."
  STORMCROWS_LEGACY_PERK_UNLOCK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('stormcrows').GetName]"
  SHADOWLORDS_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к интригам и управлению."
 
@@ -155,7 +155,7 @@
  silentstriders_legacy_4_name: "Учения Тропы"
  silentstriders_legacy_5_name: "Вместе в изгнании"
 
- SILENTSTRIDERS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('travelers_lodging_03').GetName]."
+ SILENTSTRIDERS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuildingType('travelers_lodging_03').GetName]."
  SCORPIONS_LEGACY_PERK_UNLOCK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('scorpions').GetName]"
  SILENTSTRIDERS_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к интригам и дипломатии."
 
@@ -167,7 +167,7 @@
  silverfangs_legacy_4_name: "Учения благородства"
  silverfangs_legacy_5_name: "Долг вассала"
 
- SILVERFANGS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('noble_trappings_03').GetName]."
+ SILVERFANGS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuildingType('noble_trappings_03').GetName]."
  WHITEWOLVES_LEGACY_PERK_UNLOCK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('whitewolves').GetName]"
  SILVERFANGS_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к управлению и дипломатии."
 
@@ -179,7 +179,7 @@
  stargazers_legacy_4_name: "Учение о созерцании"
  stargazers_legacy_5_name: "Око Бури"
 
- STARGAZERS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuilding('hidden_retreat_03').GetName]."
+ STARGAZERS_LEGACY_2_PERK: "Доступна новая постройка - [GetBuildingType('hidden_retreat_03').GetName]."
  HEAVENLYSUCCESSORS_LEGACY_PERK_UNLOCK_EFFECT: "Доступны [men_at_arms|El] - [GetMaA('heavenlysuccessors_maa').GetName]"
  STARGAZERS_LEGACY_4_PERK: "По достижении совершеннолетия дети вашей династии получат бонус к навыкам - по 5 очков к учёности и дипломатии."
 
