@@ -354,7 +354,7 @@
 
  underworld_ambassador_court_position: "Посол Загробного мира"
  underworld_ambassador_court_position_desc: "Посол [UmbraGlossaryLocalized('shadowlands','Загробного мира')] служит местному правителю в качестве связующего звена с местными измерениями [UmbraGlossaryLocalized('shadowlands','Загробного мира')]."
- umbra_ambassador_court_position: "Посол [Concept('umbra', 'Умбры')|E]"
+ umbra_ambassador_court_position: "Посол Умбры"
  umbra_ambassador_court_position_desc: "Посол [Concept('umbra', 'Умбры')|E] служит местному правителю в качестве связующего звена с местными измерениями [Concept('umbra', 'Умбры')|E]."
  trod_wayfarer_court_position: "Обходчик тродов"
  trod_wayfarer_court_position_desc: "Троды - ближайшая связь фей с [UmbraGlossaryLocalized('dreaming','Грёзами')] и [UmbraGlossaryLocalized('arcadia','Аркадией')] извне. Они также являются могуществом. Те, кто управляет тродами, имеют огромный контроль над обществом фей."
@@ -484,7 +484,7 @@
  scarlet_screen_merchants_court_position_desc: "Шпионы делятся на две группы.\nКупцы заботятся о финансовых нуждах куэй-дзин.\n\n#help [Concept('aptitude', 'Пригодность')|E] этой [Concept('court_position', 'придворной должности')|E] зависит от уровня [Concept('education', 'образования')|E] [Concept('stewardship', 'управления')|E]."
 
  cult_leader_court_position: "Глава культа"
- cult_leader_court_position_desc: "Лидер и гуру личного культа демона, собирающего веру. Эти культисты занимают особое положение в культе своего хозяина и выполняют повседневные задачи, позволяя демону сосредоточиться на более важных делах.\n#help [Concept('aptitude', 'Пригодность')|E] этой [Concept('court_position', 'придворной должности')|E] зависит от навыков [Concept('stewardship', 'управления')|E], [Concept('intrigue', 'интриг')|E] и [learning[Concept('aptitude', 'учёности')|E], а также [Concept('traits', 'свойств')|E] «[GetTrait('schemer').GetName(GetNullCharacter)]» и «[GetTrait('diligent').GetName(GetNullCharacter)]»."
+ cult_leader_court_position_desc: "Лидер и гуру личного культа демона, собирающего веру. Эти культисты занимают особое положение в культе своего хозяина и выполняют повседневные задачи, позволяя демону сосредоточиться на более важных делах.\n#help [Concept('aptitude', 'Пригодность')|E] этой [Concept('court_position', 'придворной должности')|E] зависит от навыков [Concept('stewardship', 'управления')|E], [Concept('intrigue', 'интриг')|E] и [Concept('learning', 'учёности')|E], а также [Concept('traits', 'свойств')|E] «[GetTrait('schemer').GetName(GetNullCharacter)]» и «[GetTrait('diligent').GetName(GetNullCharacter)]»."
 
  fell_knight_court_position: "Падший рыцарь"
  fell_knight_court_position_desc: "Наделённые властью руководить в соответствии с обрядами, восходящими к Сотворению, падшие рыцари являются закованными в броню кулаками своих повелителей - падших ангелов."
