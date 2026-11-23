@@ -1,4 +1,4 @@
-﻿﻿l_russian:
+﻿l_russian:
  grand_city_holding: "Великий город"
  grand_city_holding_concept_key: "#TOOLTIP:game_concept_grand_city_desc #E Великий город#!#!"
  building_type_grand_city_01: "Великий город"
@@ -1219,7 +1219,7 @@
  cairo_temple_bast_03_desc: "Вместе с проклятием мерзкие Сетиты захватили кошачью родню Бубасти, кифурских котов, и либо убили их, либо накормили кровью, чтобы превратить в чудовищ-отступников."
  cairo_temple_bast_04: "Великий храм Баст"
  cairo_temple_bast_04_desc: "С возвращением Каира и изгнанием сетитов кифурские коты снова стали свободными. Теперь бубасти воюют против сетитов с новой силой."
- POD_cairo_temple_bast_bonus: "#help Если вы являетесь [Glossary('фера', 'glossary_fera_tt')]:#!\n#TOOLTIP:game_concept_infiltration_desc #E Миссии проникновения#!#! начинаются с [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] ед. #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрения#!#!\n\n#help Если же нет:#!\nРазблокирует решение, позволяющее призвать [GetTrait('bastet').GetName(GetNullCharacter)l] со свойством «[GetTrait('beast_born').GetName(GetNullCharacter)]»"
+ POD_cairo_temple_bast_bonus: "#help Если вы являетесь [Glossary('фера', 'glossary_fera_tt')]:#!\n#TOOLTIP:game_concept_infiltration_desc #E Миссии проникновения#!#! начинаются с [EmptyScope.ScriptValue('infiltration_small_perk_suspicion_offset')|V0] ед. #TOOLTIP:game_concept_suspicion_desc #E @masquerade_icon:color_goldy_yellow! подозрения#!#!\n\n#help Если же нет:#!\nРазблокирует решение, позволяющее призвать [GetTrait('bastet').GetName(GetNullCharacter)|l] со свойством «[GetTrait('beast_born').GetName(GetNullCharacter)]»"
 
 
  building_type_cairo_temple_sobek_01: "Храм Собека"
@@ -1258,7 +1258,7 @@
  cairo_canton_children_04: "Огромный кантон верующих"
  cairo_canton_children_04_desc: "$cairo_canton_children_01_desc$"
  POD_cairo_canton_children_bonus: "#help Если у вас имеется свойство «[GetTrait('bardo').GetName(GetNullCharacter)]»:#!\nЗначительно повышает шанс успеха [Concept('character_interaction', 'взаимодействия персонажа')|E] [GetPerk('mummification_ritual_perk').GetName(GetPlayer)].\n\n#help Если же нет:#!\nДаёт доступ к [Concept('character_interaction', 'взаимодействию персонажа')|E] [GetPerk('mummification_ritual_perk').GetName(GetPlayer)]."
- requirement_cairo_children_no_vamps: "#TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L Вампиры#! не рассматриваются вашей [Concept('faith', 'конфессией')|E] как [Concept('criminals', 'преступники')|E]"
+ building_requirement_cairo_children_no_vamps: "#TOOLTIP:GAME_TRAIT,vampire,[GetNullCharacter] #L Вампиры#! не рассматриваются вашей [Concept('faith', 'конфессией')|E] как [Concept('criminals', 'преступники')|E]"
 
  building_type_cairo_canton_disciples_01: "Кантон Мстителей"
  building_type_cairo_canton_disciples_01_desc: "#F Кантон, построенный для учеников Анубиса.\nОни представляют собой древнюю секту каинитов в Египте. Во главе с мафусаилом гангрелов Анпу они выступают вместе с [Glossary('Осирианской лигой', 'glossary_osirian_league_tt')] против сетитов в вечной [Glossary('Войне равновесия','podgloss.warofbalance')].#!"

@@ -133,7 +133,7 @@
  solar_auspicegifts_lifestyle_name: "Солнечные дары"
  solar_auspicegifts_lifestyle_desc: "Фокус на дарах, исходящих от солнечного покровительства."
  solar_auspicegifts_lifestyle_highlight_desc: "Из-за вашего @gnosis_icon!гнозиса ваш прирост [Concept('experience', 'опыта')|E] для этого образа жизни увеличен на #P [GetPlayer.MakeScope.ScriptValue('gnosis_lifestyle_xp_mult')|%0]#!."
- monthly_solar_auspicegifts_lifestyle_xp_gain_mult: "Ежемесячный прирост [Concept('experience','опыта')E] на [Concept('lifestyle','пути')E] даров солнечного покровительства"
+ monthly_solar_auspicegifts_lifestyle_xp_gain_mult: "Ежемесячный прирост [Concept('experience','опыта')E] на [Concept('lifestyle','пути')|E] даров солнечного покровительства"
  solar_auspicegifts_rising_sun_visible: "Восход"
  solar_auspicegifts_noonday_sun_visible: "Полдень"
  solar_auspicegifts_setting_sun_visible: "Закат"
@@ -330,7 +330,7 @@
  ####Mnesis####
  mnesis_lifestyle_name: "Мнезис"
  mnesis_lifestyle_desc: "Воспоминания о способностях и ремёслах древних моколе."
- monthly_mnesis_lifestyle_xp_gain_mult: "Ежемесячный прирост [Concept('experience','опыта')E] на [Concept('lifestyle','пути')E] Мнезиса"
+ monthly_mnesis_lifestyle_xp_gain_mult: "Ежемесячный прирост [Concept('experience','опыта')E] на [Concept('lifestyle','пути')|E] Мнезиса"
  mnesis_lifestyle_tree_visible: "Мнезис"
 
  MNESIS_PERK_COST_EFFECT: "#clickable Это достоинство стоит $VALUE|V0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE|q$', '(CFixedPoint)1' ), 'оч', 'оч' )]. достоинств#!"
